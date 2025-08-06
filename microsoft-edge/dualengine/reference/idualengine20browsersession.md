@@ -222,13 +222,17 @@ Sets site permissions for the session.
 
 > public HRESULT [SetSitePermissions](#setsitepermissions)(SITE_PERMISSION_KIND sitePermissionKind, LPCWSTR pszPermissionData)
 
+
+<!-- ---------- -->
 ###### Parameters
+
 * `sitePermissionKind` The type of site permission that is being set. 
 
 * `pszPermissionData` A serialized string of the permission data to set.
 
-`pszPermissionData` is a string in the following BNF format: 
-```
+`pszPermissionData` is a string in the following BNF format:
+
+```bnf
 permission-data     = default-action CRLF site-permissions
 
 ; Indicates the default action to take if there is no specific rule for the URI.
@@ -277,6 +281,8 @@ See also:
 
 * [Appendix A. Collected ABNF for URI](https://www.rfc-editor.org/rfc/rfc3986#appendix-A) in _RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax_.
 
+
+<!-- ------------------------------ -->
 #### SetUseAdditionalHangDetection
 
 Sets whether to enable additional hang detections.

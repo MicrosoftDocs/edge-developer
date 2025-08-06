@@ -53,7 +53,7 @@ Clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/wo
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use the git bash command prompt:
 
-   ```Shell
+   ```console
    # Example location where the repo directory will be added:
    cd ~/GitHub
    git clone https://github.com/MicrosoftEdge/Demos.git
@@ -78,7 +78,7 @@ Continue with the next section.
 
 1. Change to the `Demos` repo directory's `workspaces` directory:
 
-   ```Shell
+   ```console
    cd ~/GitHub/Demos/workspaces
    pwd
    ```
@@ -87,13 +87,13 @@ Continue with the next section.
 
 1. Create a working branch named "test" and switch to it (to avoid altering the demo's files in the "main" branch):
 
-   ```Shell
+   ```console
    git checkout -b test
    ```
 
    That's equivalent to:
 
-   ```Shell
+   ```console
    git branch test
    git switch test
    ```
