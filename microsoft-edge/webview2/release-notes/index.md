@@ -67,6 +67,10 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
   - [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3405.78&preserve-view=true#get_allowhostinputprocessing)
   - [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3405.78&preserve-view=true#put_allowhostinputprocessing)
 
+
+---
+
+
 <!-- ------------------------------ -->
 
 ###### Customize the Find behavior (Find API)
@@ -232,82 +236,6 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 <!-- end of Aug 2025 Prerelease SDK -->
 
-
-<!-- Aug 2025 Prerelease SDK -->
-<!-- ====================================================================== -->
-## 1.0.####-prerelease
-
-Release Date: August 11, 2025
-
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Aug 2025 Prerelease SDK -->
 
 
 <!-- Jul 2025 Release SDK -->
