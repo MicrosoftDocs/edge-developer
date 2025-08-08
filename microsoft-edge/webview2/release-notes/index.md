@@ -225,7 +225,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 - Fixes Crash in Devtools in Windows server and win10
 - Browser process tracking removed after calling remove_BrowserProcessExited
 - Fix memory leak issue in hostObject async function calls
-- Fix after log tap touch stop working in visual hosting
+- Fixed touch not working in visual hosting after a long tap
 
 <!-- ---------- -->
 
