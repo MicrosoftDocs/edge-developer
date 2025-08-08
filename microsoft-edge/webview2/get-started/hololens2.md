@@ -290,7 +290,7 @@ Now that we have our UI designed, we will now create the code to hook up the but
 
 1. Replace the contents of that file with the following code:
 
-   ```C#
+   ```csharp
    using Microsoft.MixedReality.WebView;
    using UnityEngine.UI;
    using UnityEngine;
@@ -380,7 +380,7 @@ One important event is `IWithPostMessage.MessageReceived`, which is raised when 
 
 Here is an example of how to use these events and methods for working with the webview:
 
-```C#
+```csharp
 using Microsoft.MixedReality.WebView;
 
 public class WebViewExample : MonoBehaviour, IWithPostMessage

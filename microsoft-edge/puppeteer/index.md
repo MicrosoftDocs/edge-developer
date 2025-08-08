@@ -26,11 +26,11 @@ Puppeteer is a [Node](https://nodejs.org) library.
 
 You can add `puppeteer-core` to your website or app by using one of the following commands:
 
-```shell
+```console
 npm i puppeteer-core
 ```
 
-```shell
+```console
 yarn add puppeteer-core
 ```
 
@@ -67,11 +67,11 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
 1.  Or, to programmatically find the executable path, first install the [edge-paths](https://www.npmjs.com/package/edge-paths) package by running one of the following commands:
 
-    ```shell
+    ```console
     npm i edge-paths
     ```
     
-    ```shell
+    ```console
     yarn add edge-paths
     ```
     
@@ -87,7 +87,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
 1.  Run `example.js` from the command line:
 
-    ```shell
+    ```console
     node example.js
     ```
 
