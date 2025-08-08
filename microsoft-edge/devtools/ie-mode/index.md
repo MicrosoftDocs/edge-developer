@@ -57,7 +57,7 @@ To debug the content of an IE mode tab, use IEChooser to open Internet Explorer 
 
 Launch Microsoft Edge with remote debugging turned on from the command-line interface.  Microsoft Visual Studio, Microsoft Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.
 
-```console
+```shell
 start msedge --remote-debugging-port=9222
 ```
 

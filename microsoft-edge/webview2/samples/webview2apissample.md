@@ -656,7 +656,7 @@ The following steps show how the Win32 Host can modify a WebView.  In this examp
 
 1. Within the web application, event listeners are used to receive and respond to the web message.  The code snippet below is from `ScenarioWebMessage.html`.  The event listener changes the color of the text if the argument is "SetColor":
 
-   ```javascript
+   ```js
    window.chrome.webview.addEventListener('message', arg => {
       if ("SetColor" in arg.data) {
          document.getElementById("colorable").style.color = arg.data.SetColor;
@@ -684,7 +684,7 @@ The following steps show how the WebView can modify the Win32 Host App by changi
 
 1. In `ScenarioWebMessage.html`, [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) sends the user input to the host application:
 
-   ```javascript
+   ```js
    function SetTitleText() {
       let titleText = document.getElementById("title-text");
       window.chrome.webview.postMessage(`SetTitleText ${titleText.value}`);
@@ -738,7 +738,7 @@ The following steps show how the WebView can get information from the Win32 Host
 
 1. When the **Get window bounds** button is clicked, the `GetWindowBounds` function in `ScenarioWebMessage.html` gets called.  `GetWindowBounds` calls [window.chrome.webview.postMessage()](https://developer.mozilla.org/docs/Web/API/Window/postMessage) to send a message to the host application:
 
-   ```javascript
+   ```js
    function GetWindowBounds() {
        window.chrome.webview.postMessage("GetWindowBounds");
    }
@@ -762,7 +762,7 @@ The following steps show how the WebView can get information from the Win32 Host
 
 1. In `ScenarioWebMessage.html`, an event listener responds to the `WindowBounds` message and displays the bounds of the window:
 
-   ```javascript
+   ```js
    window.chrome.webview.addEventListener('message', arg => {
       if ("WindowBounds" in arg.data) {
          document.getElementById("window-bounds").value = arg.data.WindowBounds;

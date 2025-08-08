@@ -40,7 +40,7 @@ Host permissions and content script matching are based on a set of URLs defined 
 
 The basic syntax:
 
-```console
+```shell
 <url-pattern> := <scheme>://<host><path>
 <scheme> := '*' | 'http' | 'https' | 'file' | 'ftp'
 <host> := '*' | '*.' <any char except '/' and '*'>+

@@ -181,7 +181,7 @@ To create a basic DevTools extension with a sample panel:
 
    The `create` method has the following signature:
 
-   ```javascript
+   ```js
    chrome.devtools.panels.create(
        title: string, // Tool tab's label in Activity bar.
        iconPath: string, // Icon to display in tool's tab.

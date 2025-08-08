@@ -121,7 +121,7 @@ To interact with `sessionStorage` by using the **Console**:
 
    The above screenshot shows the following JavaScript expressions, and the resulting output:
 
-   ```javascript
+   ```js
    > sessionStorage.key(0)
    <· 'my-key-01'
    > sessionStorage.key(1)

@@ -21,13 +21,13 @@ To attach a custom tooling client to the DevTools Server in Microsoft Edge:
 
 1.  Launch Microsoft Edge with the remote debugging port.
 
-    ```console
+    ```shell
     msedge.exe --remote-debugging-port=9222
     ```
 
 1.  Optionally, you can start a separate instance of Microsoft Edge using a distinct user profile.
 
-    ```console
+    ```shell
     msedge.exe --user-data-dir=<some directory>
     ```
 

@@ -67,7 +67,7 @@ To start developing your PWA, you can use a local web server instead. To start a
 
     You can do this by opening a command prompt and typing:
     
-    ```console
+    ```shell
     cd path/to/your/dev/folder
     mkdir MySamplePWA
     cd MySamplePWA
@@ -75,7 +75,7 @@ To start developing your PWA, you can use a local web server instead. To start a
 
 1. Start the server by using the `http-server` Node.js library:
 
-   ```console
+   ```shell
    npx http-server
    ```
 

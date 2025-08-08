@@ -387,7 +387,6 @@ When you use a web browser to request a page, the server returns HTML code like 
 
 The browser then parses the HTML and creates a tree of objects based on the HTML like this:
 
-<!-- DOM not at https://learn.microsoft.com/contribute/content/code-in-docs#fenced-code-blocks, renders OK -->
 ```DOM
 html
     head

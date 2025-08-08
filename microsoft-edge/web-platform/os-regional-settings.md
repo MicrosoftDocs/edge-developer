@@ -122,7 +122,7 @@ When the `Intl` object's constructors (such as `DateTimeFormat`) are provided wi
 
 For example, a `DateTimeFormat` can be created with the user's default regional code (and inspected) via the following expression:
 
-```javascript
+```js
 Intl.DateTimeFormat().resolvedOptions().locale
 ```
 

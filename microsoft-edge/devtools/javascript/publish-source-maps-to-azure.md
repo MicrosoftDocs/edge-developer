@@ -73,7 +73,7 @@ At the final step of your application's build process, for every source map you 
 
 Build systems vary from application to application, so there isn't a clear single way to apply this. But here is a sample [Webpack 5 plugin](https://webpack.js.org/), which can be added to your Webpack configuration if you're using it:
 
-```javascript
+```js
 // file: webpack.plugin-symbols.js
 // Copyright (C) Microsoft Corporation. All rights reserved.
 // Licensed under the BSD 3-clause license.
@@ -130,7 +130,7 @@ module.exports = class PrepareSourceMapsForSymbolServerPlugin {
 
 You can then add the plugin to the `plugins` section in your `webpack.config.js` configuration file:
 
-```javascript
+```js
 const PrepareSourceMapsForSymbolServerPlugin = require('./webpack.plugin-symbols.js');
 
 // ...
@@ -181,7 +181,7 @@ When configuring this task, set the `indexableFileFormats` parameter to either `
 
 The Symbol Server team publishes a .NET Core application, `symbol.exe`, which can be downloaded automatically.  To programmatically download `symbol.exe`, use the `GET` method of the `Client` endpoint in the Symbol Service REST API, as described in [Client - Get](/rest/api/azure/devops/symbol/client/get).  Then run the following command to publish your source maps to the Azure Artifacts symbol server:
 
-```console
+```cmd
 symbol publish
         -d {root directory containing your source maps}
         -n {a unique name for this job}

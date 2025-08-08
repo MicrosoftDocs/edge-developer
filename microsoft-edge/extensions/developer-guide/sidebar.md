@@ -126,7 +126,7 @@ This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/ex
 
 In `service-worker.js`, in `addListener()`, test `url.origin` to see if it's the desired tab, and then in `sidePanel.setOptions()`, set `enabled` to `true` or `false`:
 
-```javascript
+```js
 const BING_ORIGIN = 'https://www.bing.com';
 
 chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
@@ -174,7 +174,7 @@ To allow users to open the sidebar by clicking the action toolbar icon, use [sid
 
 Then, add the following code to the `service-worker.js` code listing that's in [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only), above:
 
-```javascript
+```js
 // Allow users to open the sidebar by clicking the action toolbar icon
 chrome.sidePanel
   .setPanelBehavior({ openPanelOnActionClick: true })
@@ -189,7 +189,7 @@ An extension can use [sidepanel.getOptions()](https://developer.chrome.com/docs/
 
 This example sets a sidebar containing a welcome message on [runtime.onInstalled()](https://developer.chrome.com/docs/extensions/reference/runtime/#event-onInstalled).  When the user navigates to a different tab, the sidebar is replaced with the browser-level sidebar.
 
-```javascript
+```js
 // service-worker.js:
 const welcomePage = 'sidebar/welcome-sb.html';
 const mainPage = 'sidebar/main-sb.html';
@@ -216,7 +216,7 @@ The following code shows how to open a global sidebar on the current window when
 * Use `windowId` to open a global sidebar, as shown in the following example.
 * Or, set the `tabId` to open the sidebar only on a specific tab.
 
-```javascript
+```js
 // service-worker.js:
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({

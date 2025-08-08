@@ -43,19 +43,19 @@ These steps explain how to start http-server by using the cross-platform git bas
 
 1. If you haven't already, set up and start a web server for the first time, serving out the **demo-to-do** app from the Demos repo.  To do this, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. Open git bash, or another command prompt.  For example, on Windows, press **Start** and then enter **git bash**.
+1. Open git bash.  For example, on Windows, press **Start** and then enter **git bash**.
 
 1. `cd` into the the specific folder you want to serve via http, `Demos\demo-to-do\`:
 
    In git bash, use forward slashes for file paths.  For example:
 
-   ```bash
+   ```
    cd C:/Users/username/Documents/GitHub/Demos/demo-to-do
    ```
 
 1. Enter the command `npx http-server`.  A local webserver starts on port 8080.
 
-   ```bash
+   ```
    npx http-server
    ```
    
@@ -63,7 +63,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```bash
+   ```
    Starting up http-server, serving ./
    
    Available on:
@@ -96,7 +96,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right , and note the comment, "Provide your project's url":
 
-   ```javascript
+   ```js
    "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
    // Provide your project's url to finish configuring
    ```
@@ -107,7 +107,7 @@ This section is in support of clicking the **Launch Project** button.
 
 1. In `launch.json`, in each URL string, paste the URL for your cloned copy of the **demo-to-do** app, such as: `http://localhost:8080`.  Paste the path inside the quoted path string in one of the `"url"` strings.  For example:
 
-   ```javascript
+   ```js
    "url": "http://localhost:8080", // Provide your project's url to finish configuring
    ```
 

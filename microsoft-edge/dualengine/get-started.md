@@ -39,7 +39,7 @@ The DualEngine API is accessed by providing a plugin DLL to Internet Explorer at
 
 Finally, Internet Explorer must be launched and told where and how to load the adapter that you created.  This can be done by launching Internet Explorer with the correct command-line arguments, as follows:
 
-```console
+```
 C:\Program Files\Internet Explorer\iexplore.exe -DualEngineAdapter=C:\temp\TestApp\TestAdapter.dll -DualEnginePipe=784 APPID:TESTAPP
 ```
 

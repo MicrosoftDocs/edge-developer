@@ -80,7 +80,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
 
-   ```console
+   ```Shell
    # example location where the repo directory will be added:
    cd ~/GitHub
    git clone https://github.com/MicrosoftEdge/Demos.git
@@ -107,13 +107,13 @@ Continue with the next section.
 
 1. Create a working branch named "test" and switch to it (to avoid altering the demo's files in the "main" branch):
 
-   ```console
+   ```Shell
    git checkout -b test
    ```
 
    That's equivalent to:
 
-   ```console
+   ```Shell
    git branch test
    git switch test
    ```

@@ -73,7 +73,7 @@ See also:
 
 The `IWebView` interface exposes a few methods, events, and properties related to page navigation.  The main functionality exposed here is the ability to navigate to a given URL, by using `Load(Uri url)`:
 
-```csharp
+```C#
 public interface IWebView
 {
     // Non-navigation methods are removed for clarity.
@@ -94,7 +94,7 @@ public interface IWebView
 
 The `IWithBrowserHistory` interface exposes a few methods and events related to page navigation.  This mainly allows developers to navigate forward and backward, as you would expect with a typical web-browsing experience:
 
-```csharp
+```C#
 public interface IWithBrowserHistory : IWebView
 {
     // Non-navigation methods are removed for clarity.
@@ -117,7 +117,7 @@ The [CoreWebView2.SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsof
 
 The WebView plugin for Unity exposes this functionality through the `IWithVirtualHost` interface, which has a single method, `SetVirtualHostMapping(string hostName, string folderPath)`:
 
-```csharp
+```C#
 public interface IWithVirtualHost : IWebView
 {
     void SetVirtualHostMapping(string hostName, string folderPath);
@@ -128,7 +128,7 @@ To use the `SetVirtualHostMapping` method, set `hostName` to any valid URL confo
 
 Assuming we have an HTML file called `demo.html` under `Assets\Html`, the following code snippet demonstrates loading `demo.html` by using the WebView plugin for Unity:
 
-```csharp
+```C#
 using Microsoft.MixedReality.WebView;
 
 public class WebViewExample : MonoBehaviour
@@ -160,7 +160,7 @@ There are various ways to handle input in Unity for mixed reality applications.
 
 Regardless of the input system used within your Unity application, interop code between the various application input events and the WebView plugin for Unity is required.  This means translating those events (such as Pointer events) into a `WebViewMouseEventData` object and then forwarding those events to the plugin via the `IWithMouseEvent` interface:
 
-```csharp
+```C#
 public interface IWithMouseEvents : IWithInputEvents
 {
     void MouseEvent(WebViewMouseEventData mouseEvent);
@@ -171,7 +171,7 @@ WebView2 is unaware of Unity's input system and likely has a different coordinat
 
 Simple example:
 
-```csharp
+```C#
 using Microsoft.MixedReality.WebView;
 
 public class WebViewExample : MonoBehaviour, IPointerDownHandler
