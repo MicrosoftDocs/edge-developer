@@ -92,11 +92,6 @@ To sign up for the **Ad Selection API** origin trial for a domain:
    The `ad-selection-attestations.json` file must be published within **30 days** of receiving the OT token.  Hosting this JSON file is required, in order to complete your attestation and allow your code to access the Ad Selection API, to test the Ad Selection API with supported Microsoft Edge clients.
 
 
-<!-- ------------------------------ 
-#### Renewing the origin trial token
-todo -->
-
-
 <!-- ------------------------------ -->
 #### Example JSON file
 
