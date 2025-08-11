@@ -83,36 +83,9 @@ For each top-level domain that you intend to use with the Ad Selection API, fill
 
 To sign up for the **Ad Selection API** origin trial for a domain:
 
-1. Open [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks) in a new window or tab.
+1. First, do the steps in [Use origin trials in Microsoft Edge](../origin-trials/index.md).
 
-1. Click the **Start now** button.
-
-1. Read and agree to the terms of use, and then click the **Next** button.  The **Ad Selection API Origin Trial Registration** form opens:
-
-   ![Registration form](./ad-selection-api-images/reg-form.png)
-
-1. In the **Domain** text box, enter a single top-level domain:
-
-   You can configure the origin trial to support any of the following:
-   * A single domain, such as `https://example.com`, without supporting its subdomains.
-   * A single subdomain, such as `https://beta.example.com`.
-   * A domain, such as `https://example.com`, and its subdomains, such as `https://beta.example.com`.
-
-   Trailing paths and query parameters aren't supported.  If a URI is entered that has a trailing path or a query parameter, such as `https://example.com/path/new-feature`, the root domain (such as `https://example.com`) or subdomain will be registered, ignoring any trailing path or query parameters.
-
-1. In the **Subdomain Support** section, select the **Yes** or **No** option button:
-
-   * To use the origin trial at a domain (such as `https://example.com`) without supporting its subdomains (such as `https://beta.example.com`), select **No**.
-   * To use the origin trial only at a specific subdomain (such as `https://beta.example.com`), select **No**.
-   * To use the origin trial at a domain (such as `https://example.com`) and its subdomains (such as `https://beta.example.com`), select **Yes**.
-
-1. In the **Email Address** text box, provide a valid developer contact for the domain.
-
-1. Click the **Submit** button.
-
-   An origin trial token is generated for the top-level domain and is sent to you.
-
-1. Create a file that's named `ad-selection-attestations.json`, and host the file at the top-level domain, in the `/.well-known/` directory.  For example:
+1. Then create a file that's named `ad-selection-attestations.json`, and host the file at the top-level domain, in the `/.well-known/` directory.  For example:
 
    `https://contoso.example/.well-known/ad-selection-attestations.json`
 
