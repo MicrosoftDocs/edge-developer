@@ -44,19 +44,47 @@ No code is required for automatic link handling to work, but end users can opt-o
 <!-- ====================================================================== -->
 ## Handle links from other origins by using scope extensions
 
-Scope extensions make it possible for a Progressive Web App (PWA) to capture navigation to paths, subdomains, or even sites other than its own scope.  Scope extensions allow web apps that rely on multiple subdomains and top-level domains to be presented as a single web app.  This can be useful for PWAs that span multiple domains for localization purposes.
+Scope extensions make it possible for a Progressive Web App (PWA) to capture navigation to domains, subdomains, or paths other than its own scope.  Scope extensions allow web apps that rely on multiple top-level domains, multiple subdomains, or multiple paths to be presented as a single web app.
 
-For example, a PWA may span all of the following top-level domains:
+Scope extension can be useful for localization purposes, for a PWA that spans multiple domains, subdomains, or paths.
+
+
+<!-- ------------------------------ -->
+#### PWA scope when not using scope extensions
+
+The manifest of a PWA defines which part of the hosting domain, such as a specific path, the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under the path `www.contoso.com/app`, with its scope set to `/app`.
+
+In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However, if you don't use scope extensions:
+
+* Webpages at a different domain, such as `www.contoso.co.uk`, are not part of that PWA scope.
+* Webpages at a different subdomain, such as `bar.contoso.com/app`, are not part of that PWA scope.
+* Webpages at a different path, such as `www.contoso.com/foo`, are not part of the PWA scope.
+
+
+<!-- ------------------------------ -->
+#### Extending scope to other domains
+
+By using scope extensions, a PWA may span all of the following top-level domains:
 * `contoso.com`
 * `contoso.co.uk`
 * `contoso.fr`
 
-The manifest of a PWA defines which part of the hosting domain the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under `www.contoso.com/app`, with its scope set to `/app`.
 
-In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However:
+<!-- ------------------------------ -->
+#### Extending scope to other subdomains
 
-* Webpages within the `www.contoso.com/foo` path are not part of the PWA scope.
-* Webpages that are available at `bar.contoso.com/app` or `www.contoso.co.uk` are not part of the PWA scope.
+By using scope extensions, a PWA may span all of the following subdomains:
+* `www.contoso.com`
+* `bar.contoso.com`
+* `www.contoso.co.uk`
+
+
+<!-- ------------------------------ -->
+#### Extending scope to other paths
+
+By using scope extensions, a PWA may span all of the following paths:
+* `www.contoso.com/app`
+* `www.contoso.com/foo`
 
 
 <!-- ------------------------------ -->
