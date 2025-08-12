@@ -76,7 +76,6 @@ By using scope extensions, a PWA may span all of the following top-level domains
 By using scope extensions, a PWA may span all of the following subdomains:
 * `www.contoso.com`
 * `bar.contoso.com`
-* `www.contoso.co.uk`
 
 
 <!-- ------------------------------ -->
