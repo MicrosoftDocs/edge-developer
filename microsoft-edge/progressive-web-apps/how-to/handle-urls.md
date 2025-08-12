@@ -54,11 +54,11 @@ Scope extension can be useful for localization purposes, for a PWA that spans mu
 
 The manifest of a PWA defines which part of the hosting domain, such as a specific path, the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under the path `www.contoso.com/app`, with its scope set to `/app`.
 
-In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However, if you don't use scope extensions:
+In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However, if you don't use scope extensions, the following webpages are not part of that PWA scope:
 
-* Webpages at a different domain, such as `www.contoso.co.uk`, are not part of that PWA scope.
-* Webpages at a different subdomain, such as `bar.contoso.com`, are not part of that PWA scope.
-* Webpages at a different path, such as `www.contoso.com/foo`, are not part of the PWA scope.
+* Webpages at a different domain, such as `www.contoso.co.uk`.
+* Webpages at a different subdomain, such as `bar.contoso.com`.
+* Webpages at a different path, such as `www.contoso.com/foo`.
 
 
 <!-- ------------------------------ -->
