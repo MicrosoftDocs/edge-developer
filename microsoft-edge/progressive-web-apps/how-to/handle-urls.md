@@ -57,7 +57,7 @@ The manifest of a PWA defines which part of the hosting domain, such as a specif
 In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However, if you don't use scope extensions:
 
 * Webpages at a different domain, such as `www.contoso.co.uk`, are not part of that PWA scope.
-* Webpages at a different subdomain, such as `bar.contoso.com/app`, are not part of that PWA scope.
+* Webpages at a different subdomain, such as `bar.contoso.com`, are not part of that PWA scope.
 * Webpages at a different path, such as `www.contoso.com/foo`, are not part of the PWA scope.
 
 
