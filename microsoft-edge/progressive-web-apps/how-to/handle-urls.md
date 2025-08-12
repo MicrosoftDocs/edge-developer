@@ -118,7 +118,7 @@ For example, this `.well-known/web-app-origin-association` configuration file re
 ```
 
 See also:
-* [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md) - explainer.
+* [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md)
 
 
 <!-- ====================================================================== -->
