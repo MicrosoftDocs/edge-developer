@@ -62,7 +62,7 @@ In that case, all webpages within the `www.contoso.com/app` path are part of the
 <!-- ------------------------------ -->
 #### The `scope_extensions` web app manifest member
 
-The `scope_extensions` web app manifest member enables a web app to extend its scope to other origins.
+The `scope_extensions` web app manifest member enables a web app to extend its scope to other origins.  For example, this web app manifest file resides at `sample-app.com`, and extends the scope to a different origin, `example.com`:
 
 ```json
 {
@@ -78,7 +78,9 @@ The `scope_extensions` web app manifest member enables a web app to extend its s
 }
 ```
 
-The origins that are listed in the `scope_extensions` member must confirm that they are associated with the web app by hosting a configuration file named `.well-known/web-app-origin-association`.  The file must list the web app's origin:
+The origins that are listed in the `scope_extensions` member must confirm that they are associated with the web app by hosting a configuration file named `.well-known/web-app-origin-association`.  The configuration file must list the web app's origin.
+
+For example, this `.well-known/web-app-origin-association` configuration file resides at `example.com`, and lists the web app's origin as `sample-app.com`:
 
 ```json
 {
