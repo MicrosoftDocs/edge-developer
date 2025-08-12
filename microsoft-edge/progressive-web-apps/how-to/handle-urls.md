@@ -89,7 +89,9 @@ By using scope extensions, a PWA can span the following paths:
 <!-- ------------------------------ -->
 #### The `scope_extensions` web app manifest member
 
-The `scope_extensions` web app manifest member enables a web app to extend its scope to other origins.  For example, this web app manifest file resides at the domain `sample-app.com`, and extends the scope to a different domain, `example.com`:
+The `scope_extensions` web app manifest member enables a web app to extend its scope to other origins.
+
+For example, this web app manifest file resides at the domain `sample-app.com`, and extends the scope to a different domain, `example.com`:
 
 ```json
 {
