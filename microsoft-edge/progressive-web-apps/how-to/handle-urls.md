@@ -62,26 +62,20 @@ In that case, all webpages within the `www.contoso.com/app` path are part of the
 
 
 <!-- ------------------------------ -->
-#### Extending scope to other domains
+#### Extending scope to other domains, subdomains, or paths
 
-By using scope extensions, a PWA can span the following top-level domains:
+By using scope extensions, a PWA can span other domains, subdomains, or paths.  For example:
+
+A PWA can span the following top-level domains:
 * `contoso.com`
 * `contoso.co.uk`
 * `contoso.fr`
 
-
-<!-- ------------------------------ -->
-#### Extending scope to other subdomains
-
-By using scope extensions, a PWA can span the following subdomains:
+A PWA can span the following subdomains:
 * `www.contoso.com`
 * `bar.contoso.com`
 
-
-<!-- ------------------------------ -->
-#### Extending scope to other paths
-
-By using scope extensions, a PWA can span the following paths:
+A PWA can span the following paths:
 * `www.contoso.com/app`
 * `www.contoso.com/foo`
 
