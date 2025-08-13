@@ -48,15 +48,20 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
 The setting applies to all of the Android WebViews of the app.
 
-> [!TIP]
-> Android WebView debugging isn't affected by the state of the `debuggable` flag in the manifest of the app.  If you want to turn on Android WebView debugging only when the `debuggable` flag is `true`, test the flag at runtime.
->
-> ```java
-> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
->     if (0 != (getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE))
->    { WebView.setWebContentsDebuggingEnabled(true); }
-> }
-> ```
+
+<!-- ------------------------------ -->
+#### Testing the flag at runtime
+
+Android WebView debugging isn't affected by the state of the `debuggable` flag in the manifest of the app.
+
+If you want to turn on Android WebView debugging only when the `debuggable` flag is `true`, test the flag at runtime:
+
+```java
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+    if (0 != (getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE))
+        { WebView.setWebContentsDebuggingEnabled(true); }
+}
+```
 
 
 <!-- ====================================================================== -->
