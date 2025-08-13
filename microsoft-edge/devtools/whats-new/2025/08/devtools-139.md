@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 139)
-description: Add request headers to the table in Network. Miscellaneous highlights. And more.
+description: Added request headers to the table in the Network tool. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
