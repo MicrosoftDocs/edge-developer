@@ -33,15 +33,13 @@ Unlike generic Microsoft Store badges — the Microsoft Edge Add-ons badge provi
 
 These badges are available in 41 languages.  Please follow the required specifications for image usage, fonts, and color palette.  Detailed usage examples and guidelines are available in the downloadable PDF.
 
-[Add working Download button: Microsoft Store Badge Guidelines (PDF, English)]
+* Download Microsoft Store Badge Guidelines PDF: [microsoft-store-badge-guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-store-badge-guidelines.pdf)
 
 
 <!-- ====================================================================== -->
 ## All Badge images
 
-* Download the complete set of badge images (PNG formats) from the link below.
-
-[Add working Download button: Microsoft Edge Badge Guidelines (PDF, English)]
+* Download the complete set of badge `.png` images: [microsoft-edge-add-ons-badges.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)
 
 
 <!-- ====================================================================== -->
