@@ -1203,6 +1203,9 @@
             - name: Publish a Microsoft Edge extension
               href: ./extensions/publish/publish-extension.md
 
+            - name: Microsoft Edge Add-ons Marketing Guidelines
+              href: ./extensions/publish/badges.md
+
             - name: Extension hosting
               href: ./extensions/publish/hosting-and-updating.md
 
@@ -1311,9 +1314,6 @@
           items:
             - name: Publish a PWA to the Microsoft Store
               href: ./progressive-web-apps/how-to/microsoft-store.md
-
-            - name: Microsoft Store marketing guidelines for apps
-              href: ./progressive-web-apps/how-to/badges.md
 
             - name: Provide in-app purchases with the Digital Goods API
               href: ./progressive-web-apps/how-to/digital-goods-api.md
