@@ -260,7 +260,7 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 <!-- ====================================================================== -->
 ## Package a store PWA in Edge Stable
 
-At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
+At the current stage, your PWA needs to be packaged as a [Microsoft Store](https://apps.microsoft.com) PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
 
 1. Upgrade to Edge Stable 137 version.
 
@@ -356,9 +356,9 @@ If you want to try out the latest capabilities of App Actions in Edge Canary, yo
 
 1. Click the **Details** button.
 
-   Your PWA is indicated as installed from Microsoft Store.
+   Your PWA is indicated as installed from the [Microsoft Store](https://apps.microsoft.com).
 
-Your PWA has now been installed as a Store PWA in Edge Canary.
+Your PWA has now been installed as a store PWA in Edge Canary.
 
 
 <!-- ====================================================================== -->
