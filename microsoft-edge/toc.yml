@@ -1207,6 +1207,9 @@
             - name: Publish a Microsoft Edge extension
               href: ./extensions/publish/publish-extension.md
 
+            - name: Marketing guidelines for Microsoft Edge Add-ons
+              href: ./extensions/publish/marketing-guidelines.md
+
             - name: Extension hosting
               href: ./extensions/publish/hosting-and-updating.md
 
