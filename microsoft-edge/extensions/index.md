@@ -11,7 +11,20 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
-A Microsoft Edge _extension_, also called an _add-on_, is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+<!-- todo: establish terminology:
+mention 'theme'
+terminology/glossary: establish that "add-on" is a superset of "extension":
+Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) include extensions, themes, and web apps.
+
+potential problem: this article is scoped to all stores/browsers, but in the case of Edge Add-ons, an add-on can be a theme or "more" aka web app, not necessarily an extension - is this terminology valid across stores/browsers?
+
+* add-ons / items
+   * extensions
+   * themes
+   * web apps / more
+-->
+
+A Microsoft Edge _extension_, also called an _add-on_,<!-- todo: no, 'add-ons' is a superset of 'extensions', at least in the case of [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site --> is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes Microsoft Edge Add-ons.
 
@@ -129,6 +142,10 @@ After you've successfully submitted your extension, your extension undergoes a r
 
 <!-- ====================================================================== -->
 ## The Featured badge
+<!-- todo: mention
+Microsoft Edge Add-on badge
+Microsoft Edge Add-ons Badge
+-->
 
 A **Featured** badge is displayed on some extension listings at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  The **Featured** badge indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
 
