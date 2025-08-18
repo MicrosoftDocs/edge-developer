@@ -34,11 +34,11 @@ These policies are supported in Edge 140+ and provide granular control over whic
 ### Which requests are impacted?
 For the first milestone of Local Network Access, a "local network request" is any request from the public network to a local network or loopback destination.
 
-    - A local network is any destination that resolves to the private address space (e.g., 192.168.0.0/16), an IPv4-mapped IPv6 address where the mapped IPv4 address is itself private, or an IPv6 address outside the ::1/128, 2000::/3, and ff00::/8 subnets.
-    - Loopback is any destination that resolves to the "loopback" space (127.0.0.0/8), the "link-local" space (169.254.0.0/16), the "Unique Local Address" prefix (fcc00::/7), or the "link-local" prefix (fe80::/10).
-    - A public network is any other destination.
+   - A local network is any destination that resolves to the private address space (e.g., 192.168.0.0/16), an IPv4-mapped IPv6 address where the mapped IPv4 address is itself private, or an IPv6 address outside the ::1/128, 2000::/3, and ff00::/8 subnets.
+   - Loopback is any destination that resolves to the "loopback" space (127.0.0.0/8), the "link-local" space (169.254.0.0/16), the "Unique Local Address" prefix (fcc00::/7), or the "link-local" prefix (fe80::/10).
+   - A public network is any other destination.
 
 ### How we check if a request is going to the local network:
-    - The request hostname is a private IP literal (e.g., 192.168.0.1).
-    - The request hostname is a .local domain.
-    - The fetch() call is annotated with the option targetAddressSpace: "local".
+   - The request hostname is a private IP literal (e.g., 192.168.0.1).
+   - The request hostname is a .local domain.
+   - The fetch() call is annotated with the option targetAddressSpace: "local".
