@@ -44,9 +44,9 @@ Use the provided badge `.png` files that are in the `.zip` file (below), rather 
 
 Follow the required specifications for image usage, fonts, and color palette.  Detailed usage examples and guidelines are available in the downloadable PDF:
 
-[![Download button](./marketing-guidelines-images/downloadbutton.png)](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) **Microsoft Store Badge Guidelines (PDF, English)**
+[![Download button](./marketing-guidelines-images/download-button.png)](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) **Microsoft Store Badge Guidelines (PDF, English)**
 
-The PDF includes the following guidelines:<!-- todo: review that statement -->
+For example, here are some of the guidelines from the PDF:<!-- todo: review that statement -->
 
 * Always use the official badge artwork provided by Microsoft.
 
@@ -77,7 +77,7 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 Download the complete set of badge images (PNG format) from the link below:
 
 <!-- todo: upload .zip to download.microsoft.com (www.microsoft.com/download), or https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365 -->
-[![Download button](./marketing-guidelines-images/downloadbutton.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
+[![Download button](./marketing-guidelines-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
 
 These badges are available in 41 languages.
 
