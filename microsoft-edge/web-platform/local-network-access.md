@@ -1,6 +1,16 @@
+---
+title: Introducing Local Network Access in Microsoft Edge
+description: Introducing Local Network Access in Microsoft Edge, which provides users the ability to grant or deny sites' access to your local network.
+author: MSEdgeTeam
+ms.author: murphys
+ms.topic: conceptual
+ms.service: microsoft-edge
+ms.date: 08/18/2025
+---
+
 # Introducing Local Network Access in Microsoft Edge
 
-Microsoft Edge is committed to delivering secure, privacy-respecting browsing experiences while maintaining compatibility with modern web standards. One of the latest enhancements in Edge version 140+ is support for **Local Network Access**, a feature that enables websites to request access to your local network.
+Microsoft Edge is committed to delivering secure, privacy-respecting browsing experiences while maintaining compatibility with modern web standards. One of the latest enhancements in Edge version 140+ is support for **Local Network Access**, a feature that enables users to grant or deny sites' access to your local network.
 
 ## What is Local Network Access?
 
