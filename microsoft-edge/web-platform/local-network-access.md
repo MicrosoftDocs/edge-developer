@@ -1,5 +1,5 @@
 ---
-title: Controlling Local Network Access in Microsoft Edge
+title: Control a website's access to the local network
 description: Local Network Access in Microsoft Edge enables users to grant or deny sites' access to your local network.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 08/18/2025
 ---
-# Controlling Local Network Access in Microsoft Edge
+# Control a website's access to the local network
 <!-- todo: improve "description:" above, after clarify intro -->
 
 Use the Local Network Access feature to grant or deny sites' access to your<!-- todo: who is "your"?  the (end-)user's? --> local network.
@@ -22,7 +22,7 @@ what admin must configure the policies, for this to work?
 
 This feature delivers secure, privacy-respecting browsing experiences, while maintaining compatibility with modern web standards.
 
-This feature is introduced in Microsoft Edge 140.
+This feature requires Microsoft Edge 140 or later.
 
 <!-- todo:
 See also:
@@ -63,9 +63,11 @@ Users<!-- todo: which type of users, in which scenario?  network admins?  devs? 
 
    ![The All sites page in Edge Settings](./local-network-access-images/settings-all-sites.png) 
 
+   The sites that are listed are sites that requested access to your local network, such as by a dialog requesting permission.
+
    The Address bar shows `edge://settings/privacy/sitePermissions/allSitePermissions/localNetworkAccess`.<!-- todo: in some cases, might not end up there.  can comment-out, but keep this special url, for Maint -->
 
-1. For a listed site requests access to your local network, turn on the **[todo]** toggle:
+1. For a listed site, turn on the **[todo]** toggle:
 
    ![Settings for a selected site](./local-network-access-images/settings-for-a-site.png)<!-- todo: improve png, this is Edge 139 not 140 -->
 
@@ -81,7 +83,7 @@ Enterprise administrators can configure access by using the following policies:
 * `LocalNetworkAccessAllowedForUrls`
 * `LocalNetworkAccessBlockedForUrls`
 
-These policies are supported in Edge 140+.<!-- todo: omit version discussion here?  try to put "140" only at top of article & clearly indicate there that it applies to entire article -->
+These policies are supported in Microsoft Edge 140 or later.<!-- todo: omit version discussion here?  try to put "140" only at top of article & clearly indicate there that it applies to entire article -->
 
 These policies provide granular control over which URLs are permitted or blocked from accessing local network resources.
 
