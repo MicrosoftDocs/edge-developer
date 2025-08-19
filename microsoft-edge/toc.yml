@@ -1833,6 +1833,9 @@
 
         - name: Cross-browser API samples
           href: ./web-platform/samples.md
+
+        - name: Introducing Local Network Access in Microsoft Edge
+          href: ./web-platform/local-network-access.md
 # /Edge-specific web development tips (/web-platform/)
 # =============================================================================
 # Microsoft Edge IDE integration
