@@ -1,5 +1,5 @@
 ---
-title: Introducing Local Network Access in Microsoft Edge
+title: Controlling Local Network Access in Microsoft Edge
 description: Local Network Access in Microsoft Edge enables users to grant or deny sites' access to your local network.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,23 +7,24 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 08/18/2025
 ---
+# Controlling Local Network Access in Microsoft Edge
+<!-- todo: improve "description:" above, after clarify intro -->
 
-# Introducing Local Network Access in Microsoft Edge
+Use the Local Network Access feature to grant or deny sites' access to your<!-- todo: who is "your"?  the (end-)user's? --> local network.
 <!-- todo:
-is the audience Dev, or end-users?  present repo is for Dev, not end-users
+As an end-user, you can use the Local Network Access feature to grant or deny a website access to your local network.
 
-maybe move article out from this repo, to a place for end-user audience instead of Dev audience
-
-'intro' article usually is too time-oriented for present repo, per
-https://developers.google.com/style/timeless-documentation
-the present repo does have some time-oriented docs, eg What's New, RelNotes, Origin Trials.
+state the audience; clarify the audience and scenario.  Admins?  Devs?  End-users?
+what admin must configure the policies, for this to work?
+* `LocalNetworkAccessAllowedForUrls`
+* `LocalNetworkAccessBlockedForUrls`
 -->
 
-Microsoft Edge is committed to delivering secure, privacy-respecting browsing experiences while maintaining compatibility with modern web standards.
+This feature delivers secure, privacy-respecting browsing experiences, while maintaining compatibility with modern web standards.
 
-One of the latest enhancements in Edge version 140+ is support for **Local Network Access**, a feature that enables users to grant or deny sites' access to your local network.
+This feature is introduced in Microsoft Edge 140.
 
-<!-- todo: add links
+<!-- todo:
 See also:
 * []()
 -->
@@ -32,7 +33,7 @@ See also:
 <!-- ====================================================================== -->
 ## What is Local Network Access?
 
-Local Network Access is a feature in Microsoft Edge that restricts websites' ability to send requests to servers on a user's local network.  This feature will display a prompt to users, requiring them to grant or deny the site permission before these requests can be made.
+Local Network Access is a feature in Microsoft Edge that restricts a website's ability to send requests to servers on a user's local network.  This feature displays a prompt to end-users, requiring the end-user to grant or deny the site permission before these requests can be made.
 
 The ability to request this permission is restricted to secure contexts.
 
@@ -40,19 +41,55 @@ The ability to request this permission is restricted to secure contexts.
 <!-- ====================================================================== -->
 ## How to Enable Local Network Access in Microsoft Edge
 
-Starting with Edge 140, users can enable and manage Local Network Access permissions through the browser settings:
+Users<!-- todo: which type of users, in which scenario?  network admins?  devs?  end-users? --> can enable and manage Local Network Access permissions through the browser settings:
 
-1. Open Microsoft Edge.
+<!-- todo: when steps are accurate, maybe condense: select x > y > z. -->
 
-1. Navigate to `edge://settings/privacy/sitePermissions/allSitePermissions/localNetworkAccess`.
+1. In Microsoft Edge, select **Settings and more** (...) > **Settings**.
 
-1. Toggle the permission settings for sites that request access to your local network.
+   The **Settings** page opens.
+
+1. Select **Privacy, search, and services**.
+
+   The **Privacy, search, and services** page is displayed.
+
+1. Select **Site permissions**.
+
+   The **Site permissions** page is displayed.
+
+1. Select **All sites**.
+
+   The **All sites** page is displayed:
+
+   ![The All sites page in Edge Settings](./local-network-access-images/settings-all-sites.png) 
+
+   The Address bar shows `edge://settings/privacy/sitePermissions/allSitePermissions/localNetworkAccess`.<!-- todo: in some cases, might not end up there.  can comment-out, but keep this special url, for Maint -->
+
+1. For a listed site requests access to your local network, turn on the **[todo]** toggle:
+
+   ![Settings for a selected site](./local-network-access-images/settings-for-a-site.png)<!-- todo: improve png, this is Edge 139 not 140 -->
+
+
+<!-- ====================================================================== -->
+## Configuring policies
+<!-- todo:
+does the article's audience change from end-users to admins, here?
+in each h2 section that has action steps, state the audience
+-->
 
 Enterprise administrators can configure access by using the following policies:
 * `LocalNetworkAccessAllowedForUrls`
 * `LocalNetworkAccessBlockedForUrls`
 
-These policies are supported in Edge 140+.  These policies provide granular control over which URLs are permitted or blocked from accessing local network resources.
+These policies are supported in Edge 140+.<!-- todo: omit version discussion here?  try to put "140" only at top of article & clearly indicate there that it applies to entire article -->
+
+These policies provide granular control over which URLs are permitted or blocked from accessing local network resources.
+
+<!-- todo:
+See also:
+* []()
+https://learn.microsoft.com/deployedge/
+-->
 
 
 <!-- ====================================================================== -->
