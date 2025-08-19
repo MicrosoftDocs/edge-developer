@@ -45,6 +45,12 @@ Users<!-- todo: which type of users, in which scenario?  network admins?  devs? 
 
 <!-- todo: when steps are accurate, maybe condense: select x > y > z. -->
 
+1. In Microsoft Edge, go to `edge://flags/#local-network-access-check`.
+
+1. In the dropdown list for **Local Network Access Checks**, select **Enabled**.
+
+1. Click the **Restart** button in the lower right.
+
 1. In Microsoft Edge, select **Settings and more** (...) > **Settings**.
 
    The **Settings** page opens.
