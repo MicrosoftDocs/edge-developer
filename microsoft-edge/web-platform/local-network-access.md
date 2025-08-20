@@ -55,6 +55,11 @@ To grant or deny a website permission to access your local network:
 
    The Address bar shows `edge://settings/privacy/sitePermissions/allSitePermissions/localNetworkAccess`.
 
+1. Scroll the **All permissions** page and click the **Local network access** section:
+
+   ![The Local Network Access section on the All permissions page in Edge Settings](./local-network-access-images/settings-all-permissions-local-network-access.png)
+
+
 1. For the Local Network Access website permission, turn on the **Ask before accessing (recommended)** toggle:
 
    ![Settings for the Local Network Access website permission](./local-network-access-images/settings-for-local-network-access.png)
