@@ -19,9 +19,9 @@ Microsoft Edge Add-ons badge
 Edge Add-ons badge - short form not currently used
 -->
 
-To promote your Microsoft Edge extension, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations, to ensure consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
+To promote your Microsoft Edge extension, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
-The Microsoft Edge Add-ons badge is provided to you as a set of `.png` files.
+The Microsoft Edge Add-ons badge is provided to you as a set of `.png` files in a `.zip` file; see [Download the badge image files](#download-the-badge-image-files) below.
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 
 
 <!-- ====================================================================== -->
-## Badge image .png files ZIP file
+## Download the badge image files
 
 Download the complete set of badge images (PNG format) from the link below:
 
