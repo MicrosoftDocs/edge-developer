@@ -36,8 +36,6 @@ The Microsoft Edge Add-ons badge lets you showcase your extensions with Edge-spe
 
 Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your add-on directly to the Microsoft Edge ecosystem.
 
-Use the provided badge `.png` files that are in the `.zip` file (below), rather than creating your own image files.
-
 
 <!-- ====================================================================== -->
 ## Badge usage guidelines

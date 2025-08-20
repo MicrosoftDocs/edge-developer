@@ -11,22 +11,9 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
-<!-- todo: establish terminology:
-mention 'theme'
-terminology/glossary: establish that "add-on" is a superset of "extension":
-Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) include extensions, themes, and web apps.
+_Microsoft Edge Add-ons_ include extensions, themes, and web apps.  A Microsoft Edge _extension_ is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
 
-potential problem: this article is scoped to all stores/browsers, but in the case of Edge Add-ons, an add-on can be a theme or "more" aka web app, not necessarily an extension - is this terminology valid across stores/browsers?
-
-* add-ons / items
-   * extensions
-   * themes
-   * web apps / more
--->
-
-A Microsoft Edge _extension_, also called an _add-on_,<!-- todo: no, 'add-ons' is a superset of 'extensions', at least in the case of [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) site --> is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that is important to a target audience.  You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
-
-In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes Microsoft Edge Add-ons.
+You publish a Microsoft Edge extension (or theme or web app) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
 
@@ -68,9 +55,11 @@ The following table isn't exhaustive or definitive; it's just a starting point f
 
 
 <!-- ====================================================================== -->
-## Why Chromium?
+## Benefits of Chromium extensions
 
-If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.  The last four browsers in the previous table use the same code package and minimize the need to maintain parallel versions.  These browsers are based on the [Chromium open-source project](https://www.chromium.org/Home).
+If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.
+
+The last four browsers in the previous table use the same code package and minimize the need to maintain parallel versions.  These browsers are based on the [Chromium open-source project](https://www.chromium.org/Home).
 
 Benefits of creating a Chromium extension: 
 * Enables writing the fewest lines of code.
@@ -142,10 +131,6 @@ After you've successfully submitted your extension, your extension undergoes a r
 
 <!-- ====================================================================== -->
 ## The Featured badge
-<!-- todo: mention
-Microsoft Edge Add-on badge
-Microsoft Edge Add-ons Badge
--->
 
 A **Featured** badge is displayed on some extension listings at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  The **Featured** badge indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
 
@@ -161,22 +146,30 @@ To help protect your browser settings, extensions that don't comply with the Bes
 
 Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
+See also:
+* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for Microsoft Edge Add-ons_.
+
 
 <!-- ====================================================================== -->
 ## See also
+<!-- todo: copy of all links in the article -->
 
-*  [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
-*  [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026) - support steps for users.
-*  [Extension concepts and architecture](getting-started/index.md)
-*  [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
+* [Best practices for extensions](./developer-guide/best-practices.md)
+* [Extension concepts and architecture](./getting-started/index.md)
+* [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
+* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for Microsoft Edge Add-ons_.
 
-External links:
-*  [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
-*  [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-*  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
-*  [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
-*  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
+End-user docs:
+* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
+* [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026) - support steps for users.
 
-Extensions for Visual Studio Code rather than for Microsoft Edge:
-*  [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
-*  [webhint extension for Visual Studio Code](../visual-studio-code/webhint.md)
+External:
+* [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
+* [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+* [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
+* [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
+* [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
+
+Extensions for Visual Studio Code:
+* [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
+* [webhint extension for Visual Studio Code](../visual-studio-code/webhint.md)
