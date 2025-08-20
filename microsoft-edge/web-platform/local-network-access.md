@@ -13,8 +13,6 @@ As a user of Microsoft Edge, you can use the Local Network Access feature to gra
 
 An enterprise administrator can configure the Local Network Access policies to grant or deny a website access to an enterprise's devices.
 
-The Local Network Access feature delivers secure, privacy-respecting browsing experiences, while maintaining compatibility with modern web standards.
-
 This feature requires Microsoft Edge 140 or later.
 
 
@@ -22,6 +20,8 @@ This feature requires Microsoft Edge 140 or later.
 ## What is Local Network Access?
 
 _Local Network Access_ is a feature in Microsoft Edge that restricts a website's ability to send requests to servers on a user's local network.  This feature displays a prompt to users (website visitors), requiring the user to grant or deny the website permission before these requests can be made.
+
+This feature delivers secure, privacy-respecting browsing experiences, while maintaining compatibility with modern web standards.
 
 The ability of a website to request this permission from users is restricted to secure contexts.
 
@@ -55,7 +55,7 @@ To grant or deny a website permission to access your local network:
 
    The Address bar shows `edge://settings/privacy/sitePermissions/allSitePermissions/localNetworkAccess`.
 
-1. For the Local Network Access website permission, turn on the **Ask before accessing** toggle:
+1. For the Local Network Access website permission, turn on the **Ask before accessing (recommended)** toggle:
 
    ![Settings for the Local Network Access website permission](./local-network-access-images/settings-for-local-network-access.png)
 
@@ -63,16 +63,16 @@ To grant or deny a website permission to access your local network:
 <!-- ====================================================================== -->
 ## Configuring policies
 
-Enterprise administrators can configure access on a per-site basis by using the following policies:
+Enterprise administrators can configure access on a per-site basis, by using the following policies:
 * [LocalNetworkAccessAllowedForUrls](/deployedge/microsoft-edge-browser-policies/localnetworkaccessallowedforurls)
 * [LocalNetworkAccessBlockedForUrls](/deployedge/microsoft-edge-browser-policies/localnetworkaccessblockedforurls)
 
 These policies provide granular control over which URLs are permitted or blocked from accessing local network resources.
 
-Enterprise administrators can configure access on a per-device basis by using the following policy:
+Enterprise administrators can configure access on a per-device basis, by using the following policy:
 * [LocalNetworkAccessRestrictionsEnabled](/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled)
 
-This policy will deny all local network requests without prompting the user.
+This policy will deny all local network requests, without prompting the user.
 
 
 <!-- ====================================================================== -->
@@ -96,6 +96,8 @@ For the first milestone of Local Network Access, a _local network request_ is an
 
 <!-- ====================================================================== -->
 ## How it's checked whether a request is going to the local network
+
+Microsoft Edge checks whether a request is going to the local network, as follows:
 
 * The request hostname is a private IP literal (such as `192.168.0.1`).
 
