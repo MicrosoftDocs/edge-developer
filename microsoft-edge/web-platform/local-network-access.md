@@ -32,6 +32,7 @@ End users can enable and manage Local Network Access permissions through the bro
 1. In Microsoft Edge, go to `edge://flags/#local-network-access-check`.
 
 1. In the dropdown list for **Local Network Access Checks**, select **Enabled (Blocking)**.
+
    Selecting **Enabled** will show the end-user a warning, rather than blocking the network request.
 
 1. Click the **Restart** button in the lower right.
@@ -62,8 +63,8 @@ Enterprise administrators can configure access on a per-site basis by using the 
 These policies provide granular control over which URLs are permitted or blocked from accessing local network resources.
 
 See also:
-* [LocalNetworkAccessAllowedForUrls](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessallowedforurls)
-* [LocalNetworkAccessBlockedForUrls](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessblockedforurls)
+* [LocalNetworkAccessAllowedForUrls](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessallowedforurls)
+* [LocalNetworkAccessBlockedForUrls](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessblockedforurls)
 
 Enterprise administrators can configure access on a per-device basis by using the following policy:
 * `LocalNetworkAccessRestrictionsEnabled`
@@ -71,7 +72,7 @@ Enterprise administrators can configure access on a per-device basis by using th
 This policy will deny all local network requests without prompting the user.
 
 See also:
-* [LocalNetworkAccessRestrictionsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled)
+* [LocalNetworkAccessRestrictionsEnabled](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled)
 
 <!-- ====================================================================== -->
 ## Which requests are impacted
@@ -105,7 +106,7 @@ For the first milestone of Local Network Access, a _local network request_ is an
 <!-- ====================================================================== -->
 <!-- ## See also -->
 <!-- 
-[LocalNetworkAccessAllowedForUrls](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessallowedforurls)
-[LocalNetworkAccessBlockedForUrls](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessblockedforurls)
-[LocalNetworkAccessRestrictionsEnabled](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled)
+[LocalNetworkAccessAllowedForUrls](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessallowedforurls)
+[LocalNetworkAccessBlockedForUrls](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessblockedforurls)
+[LocalNetworkAccessRestrictionsEnabled](https://learn.microsoft.com/deployedge/microsoft-edge-browser-policies/localnetworkaccessrestrictionsenabled)
 -->
