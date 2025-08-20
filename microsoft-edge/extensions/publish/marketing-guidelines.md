@@ -1,5 +1,5 @@
 ---
-title: Marketing guidelines for Microsoft Edge Add-ons
+title: Marketing guidelines for the Microsoft Edge Add-ons badge
 description: Marketing guidelines for publishing an extension, theme, or web app, such as using badges, at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,34 +7,34 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.date: 08/13/2025
 ---
-# Marketing guidelines for Microsoft Edge Add-ons
+# Marketing guidelines for the Microsoft Edge Add-ons badge
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines -->
-<!-- focus concretely on "badge", though potentially can broaden later to cover add'l assets; at that time, can use more abstract umbrella wording -->
-
-<!-- lexicon:
-Microsoft Edge Add-ons - mainly means the site
-Edge Add-ons - short form not currently used
-
-Microsoft Edge Add-ons badge
-Edge Add-ons badge - short form not currently used
--->
 
 To promote your Microsoft Edge extension, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
-The Microsoft Edge Add-ons badge is provided to you as a set of `.png` files in a `.zip` file; see [Download the badge image files](#download-the-badge-image-files) below.
-
-
-<!-- ====================================================================== -->
-## The Microsoft Edge Add-ons badge
-<!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#store-badges -->
-
-The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge Add-ons, such as extensions, and build user trust.  The badge `.png` files are provided in 41 languages.
+The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge Add-ons, such as extensions, and build user trust.
 
 ![The Microsoft Edge Add-ons badge](./marketing-guidelines-images/microsoft-edge-add-ons-badge.png)
+
+The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border.  The badge `.png` files are provided in 41 languages.
 
 The Microsoft Edge Add-ons badge lets you showcase your extensions with Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons (such as extensions, themes, or web apps) that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
 
 Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your add-on directly to the Microsoft Edge ecosystem.
+
+The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
+
+
+<!-- ====================================================================== -->
+## Download the badge image files
+
+Download the complete set of badge `.png` files.
+
+<!-- todo: upload the .zip file to either:
+download.microsoft.com (www.microsoft.com/download)
+https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+-->
+[![Download button](./marketing-guidelines-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Follow the required specifications for image usage, fonts, and color palette.  D
 
 [![Download button](./marketing-guidelines-images/download-button.png)](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) **Microsoft Store Badge Guidelines (PDF, English)**
 
-For example, here are some of the guidelines from the PDF:<!-- todo: review that statement -->
+For example, here are some of the guidelines from the PDF:
 
 * Always use the official badge artwork provided by Microsoft.
 
@@ -70,15 +70,6 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 
 
 <!-- ====================================================================== -->
-## Download the badge image files
-
-Download the complete set of badge images (PNG format) from the link below:
-
-<!-- todo: upload .zip to download.microsoft.com (www.microsoft.com/download), or https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365 -->
-[![Download button](./marketing-guidelines-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
-
-
-<!-- ====================================================================== -->
 ## License to Microsoft Marks
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#license-to-microsoft-marks -->
 
@@ -91,15 +82,7 @@ Microsoft is the sole owner of the Microsoft Marks and associated goodwill, and 
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge Add-ons badge vs. Microsoft brand logo
-
-The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
-
-The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border.
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [The Featured badge](../index.md#the-featured-badge) in _Overview of Microsoft Edge extensions_.
-* Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) include extensions, themes, and web apps.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) - site includes extensions, themes, and web apps.
