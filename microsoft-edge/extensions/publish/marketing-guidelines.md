@@ -28,7 +28,7 @@ The Microsoft Edge Add-ons badge is provided to you as a set of `.png` files in 
 ## The Microsoft Edge Add-ons badge
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#store-badges -->
 
-The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge Add-ons, such as extensions, and build user trust.
+The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge Add-ons, such as extensions, and build user trust.  The badge `.png` files are provided in 41 languages.
 
 ![The Microsoft Edge Add-ons badge](./marketing-guidelines-images/microsoft-edge-add-ons-badge.png)
 
@@ -76,8 +76,6 @@ Download the complete set of badge images (PNG format) from the link below:
 
 <!-- todo: upload .zip to download.microsoft.com (www.microsoft.com/download), or https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365 -->
 [![Download button](./marketing-guidelines-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
-
-These badges are available in 41 languages.
 
 
 <!-- ====================================================================== -->
