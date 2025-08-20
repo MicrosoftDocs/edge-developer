@@ -147,7 +147,7 @@ To help protect your browser settings, extensions that don't comply with the Bes
 Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
 
 See also:
-* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for Microsoft Edge Add-ons_.
+* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for the Microsoft Edge Add-ons badge_.
 
 
 <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ See also:
 * [Best practices for extensions](./developer-guide/best-practices.md)
 * [Extension concepts and architecture](./getting-started/index.md)
 * [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
-* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for Microsoft Edge Add-ons_.
+* [The Microsoft Edge Add-ons badge](./publish/marketing-guidelines.md) in _Marketing guidelines for the Microsoft Edge Add-ons badge_.
 
 End-user docs:
 * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
