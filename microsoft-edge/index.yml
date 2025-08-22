@@ -5,7 +5,7 @@ summary: Explore documentation, references, and code samples to help you deploy,
 brand: m365
 metadata:
   title: Microsoft Edge documentation
-  description: Microsoft Edge information for developers, IT admins, and browser users; including DevTools, Extensions, PWAs, WebDriver, and more.
+  description: Microsoft Edge information for developers, IT admins, and browser users; including DevTools, Edge Add-ons (such as extensions), PWAs, WebDriver, and more.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -168,7 +168,7 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card r2c3
-        - title: Extensions for enterprise
+        - title: Extensions for enterprise  # add-ons include extensions, themes, web apps
           links:
             - text: Manage extensions for Microsoft Edge for Business
               url: /deployedge/microsoft-edge-manage-extensions  # https://learn.microsoft.com/deployedge/microsoft-edge-manage-extensions
@@ -252,9 +252,9 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 4 - r1c3
-        - title: Microsoft Edge extensions
+        - title: Microsoft Edge Add-ons
           links:
-            - text: Microsoft Edge extensions documentation  # extensions landing page
+            - text: Microsoft Edge Add-ons documentation  # add-ons landing page
               url: ./extensions/landing/index.yml
               itemType: overview
 

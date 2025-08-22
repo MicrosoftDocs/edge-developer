@@ -5,7 +5,7 @@
 # Experimental web platform features
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
-# Microsoft Edge extensions
+# Microsoft Edge Add-ons
 # Progressive Web Apps
 # WebView2
 # Test and automation
@@ -22,8 +22,6 @@
     - name: Develop for the web with Microsoft Edge
       href: ./develop-web-microsoft-edge.md
 
-    - name: Marketing guidelines for the Microsoft Edge Add-ons badge
-      href: ./extensions/publish/marketing-guidelines.md
 # /top leaf nodes
 # =============================================================================
 # Release notes
@@ -1088,10 +1086,10 @@
 #   /DevTools for Visual Studio Code
 # /Microsoft Edge DevTools
 # =============================================================================
-# Microsoft Edge extensions
-    - name: Microsoft Edge extensions
+# Microsoft Edge Add-ons
+    - name: Microsoft Edge Add-ons
       items:
-        - name: Microsoft Edge extensions documentation
+        - name: Microsoft Edge Add-ons documentation
           href: ./extensions/landing/index.yml  # landing page
           displayName: add-ons, landing
 
@@ -1217,6 +1215,9 @@
 
             - name: Curation and review process for extensions at Microsoft Edge Add-ons
               href: ./extensions/publish/add-ons-curation.md
+
+            - name: Marketing guidelines for the Microsoft Edge Add-ons badge
+              href: ./extensions/publish/marketing-guidelines.md
 
 # -------------------------------------
         - name: Update an extension

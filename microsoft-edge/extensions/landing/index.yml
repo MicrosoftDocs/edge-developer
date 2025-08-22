@@ -1,7 +1,7 @@
 ### YamlMime:Landing
-# Extensions landing page; https://learn.microsoft.com/microsoft-edge/extensions/landing/
-title: Microsoft Edge extensions documentation
-summary: Develop an extension (add-on) for Microsoft Edge.
+# Add-ons landing page; https://learn.microsoft.com/microsoft-edge/extensions/landing/
+title: Microsoft Edge Add-ons documentation
+summary: Develop add-ons for Microsoft Edge, including extensions, themes, and web apps.
 
 metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
