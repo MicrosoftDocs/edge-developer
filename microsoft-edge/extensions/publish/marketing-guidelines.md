@@ -1,7 +1,6 @@
 ---
 title: Marketing guidelines for the Microsoft Edge Add-ons badge
-description: 
-Marketing guidelines for using the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations when publishing an extension, theme, or web app at Microsoft Edge Add-ons.  # key words before col 158
+description: Using the Microsoft Edge Add-ons badge in your websites, documentation, or tutorials when publishing an extension, theme, or web app at Microsoft Edge Add-ons.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
