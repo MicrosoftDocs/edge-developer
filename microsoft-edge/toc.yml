@@ -21,6 +21,9 @@
   items:
     - name: Develop for the web with Microsoft Edge
       href: ./develop-web-microsoft-edge.md
+
+    - name: Marketing guidelines for the Microsoft Edge Add-ons badge
+      href: ./extensions/publish/marketing-guidelines.md
 # /top leaf nodes
 # =============================================================================
 # Release notes
@@ -1202,9 +1205,6 @@
           items:
             - name: Publish a Microsoft Edge extension
               href: ./extensions/publish/publish-extension.md
-
-            - name: Marketing guidelines for the Microsoft Edge Add-ons badge
-              href: ./extensions/publish/marketing-guidelines.md
 
             - name: Extension hosting
               href: ./extensions/publish/hosting-and-updating.md
