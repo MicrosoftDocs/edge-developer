@@ -10,9 +10,7 @@ ms.date: 08/13/2025
 # Marketing guidelines for the Microsoft Edge Add-ons badge
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines -->
 
-_Microsoft Edge Add-ons_ include extensions, themes, and web apps.  You publish Microsoft Edge Add-ons at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
-
-To promote your Microsoft Edge Add-ons, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
+To promote your Microsoft Edge Add-ons (such as extensions, themes, or web apps), use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
 The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge Add-ons and build user trust.
 
@@ -25,6 +23,8 @@ for promoting <!--todo-->add-ons (extensions, themes, or web apps) that are avai
 <!-- todo: orig draft docx:
 for promoting            add-ons and extensions                    that are available for Microsoft Edge. 
 -->
+
+You publish an add-on at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and then link to your add-on's page at that site from your websites, documentation, tutorials, and other services or integrations.
 
 Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted 
 visual cue that connects your add-ons directly to the Microsoft Edge ecosystem.
