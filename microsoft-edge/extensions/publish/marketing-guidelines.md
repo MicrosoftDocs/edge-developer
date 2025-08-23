@@ -1,6 +1,6 @@
 ---
 title: Marketing guidelines for the Microsoft Edge Add-ons badge
-description: Using the Microsoft Edge Add-ons badge in your websites, documentation, or tutorials when publishing an extension, theme, or web app at Microsoft Edge Add-ons.  # key words before col 158
+description: Use the Microsoft Edge Add-ons badge in your websites, documentation, or tutorials when publishing an extension, theme, or web app at the Microsoft Edge Add-ons site.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,19 +18,9 @@ The Microsoft Edge Add-ons badge is a visual asset designed to help you promote 
 
 The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border.  The badge `.png` files are provided in 41 languages.
 
-The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge Add-ons with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively 
-for promoting <!--todo-->add-ons (extensions, themes, or web apps) that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
-<!-- todo: orig draft docx:
-for promoting            add-ons and extensions                    that are available for Microsoft Edge. 
--->
+The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge Add-ons with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
 
-You publish an add-on at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and then link to your add-on's page at that site from your websites, documentation, tutorials, and other services or integrations.
-
-Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted 
-visual cue that connects your add-ons directly to the Microsoft Edge ecosystem.
-<!-- todo: orig draft docx:
-visual cue that connects your add-ons such as extensions, webapps directly to the Edge ecosystem
--->
+Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your Edge Add-ons directly to the Microsoft Edge ecosystem.
 
 The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
 
@@ -64,35 +54,12 @@ For example, here are some of the guidelines from the PDF:
 
 * Do not use the badge as a decorative element in any context.
 
-* The badge must always be an active, clickable link that directs users to your add-on's page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
-  <!-- todo:
-  orig draft docx: 
-  The badge must always be an active, clickable link that directs users to your extension page on the Add-ons store.
-  your item's page
-  your Microsoft Edge Add-ons page
-  your Add-ons page
-  your add-on's page
-  your Add-on's page
-  your Microsoft Edge Add-on's page
-  the page for your add-on
-  the page for your Add-on
-  the page for your Microsoft Edge Add-on (extension, theme, or web app)
-  the page for your Microsoft Edge Add-ons (extensions, themes, or web apps)
-  the page for your extension, theme, or web app
-  the page for your item
-  -->
+* The badge must always be an active, clickable link that directs users to your product detail page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 * Do not use the badge in static marketing materials, such as posters, flyers, or non-clickable images in presentations or videos.
 
-* The badge is intended solely to facilitate direct access to your content on the Microsoft Edge Add-ons platform.
-<!-- todo:
-* The badge is intended solely to facilitate direct access to your add-on on the Microsoft Edge Add-ons platform.
-* The badge is intended solely to facilitate direct access to your add-on (extension, theme, or web app) on the Microsoft Edge Add-ons platform.
-* The badge is intended solely to facilitate direct access to your your extension, theme, or web app on the Microsoft Edge Add-ons platform.
-* The badge is intended solely to facilitate direct access to your item on the Microsoft Edge Add-ons platform.
+* The badge is intended solely to facilitate direct access to your Edge Add-ons at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
-"content" is per orig doc draft.  upstream:
--->
 
 
 <!-- ====================================================================== -->
