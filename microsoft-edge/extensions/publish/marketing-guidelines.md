@@ -61,9 +61,8 @@ For example, here are some of the guidelines from the PDF:
 * The badge is intended solely to facilitate direct access to your Edge Add-ons at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
 
 
-
-<!-- ====================================================================== -->
-## Minimum size for badges
+<!-- ------------------------------ -->
+#### Minimum size for badges
 
 To ensure that the badge text remains readable, display it at a minimum size of 32px.  Avoid using smaller sizes.
 
