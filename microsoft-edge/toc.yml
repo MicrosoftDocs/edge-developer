@@ -5,7 +5,7 @@
 # Experimental web platform features
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
-# Microsoft Edge Add-ons
+# Microsoft Edge extensions
 # Progressive Web Apps
 # WebView2
 # Test and automation
@@ -1086,10 +1086,10 @@
 #   /DevTools for Visual Studio Code
 # /Microsoft Edge DevTools
 # =============================================================================
-# Microsoft Edge Add-ons
-    - name: Microsoft Edge Add-ons
+# Microsoft Edge extensions
+    - name: Microsoft Edge extensions
       items:
-        - name: Microsoft Edge Add-ons documentation
+        - name: Microsoft Edge extensions documentation
           href: ./extensions/landing/index.yml  # landing page
           displayName: add-ons, landing
 

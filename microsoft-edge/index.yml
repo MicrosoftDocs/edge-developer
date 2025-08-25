@@ -252,9 +252,9 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 4 - r1c3
-        - title: Microsoft Edge Add-ons
+        - title: Microsoft Edge extensions
           links:
-            - text: Microsoft Edge Add-ons documentation  # add-ons landing page
+            - text: Microsoft Edge extensions documentation  # extensions landing page
               url: ./extensions/landing/index.yml
               itemType: overview
 
