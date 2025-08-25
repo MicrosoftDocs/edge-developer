@@ -10,7 +10,7 @@ ms.date: 11/04/2022
 ---
 # Update a Microsoft Edge extension
 
-You can update or remove a published extension listing that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) at any time.
+You can update or remove a published extension listing that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) at any time.
 
 See also:
 * [Set an externally installed extension to automatically update](./auto-update.md) - for an extension that doesn't use Partner Center and isn't at Microsoft Edge Add-ons.
@@ -27,7 +27,7 @@ To update an extension that's at Microsoft Edge Add-ons:
 
 1.  After you make the changes, click **Publish** to update your extension listing and start the certification process.  The certification process for an update to an extension can take up to 7 business days.
 
-1.  After the `Status` column displays `In the store`, your extension update is available at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+1.  After the `Status` column displays `In the store`, your extension update is available at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 After your extension has been created initially, you can update your extension by [Use the REST API to update an extension at Microsoft Edge Add-ons](./api/using-addons-api.md).
 
@@ -35,7 +35,7 @@ After your extension has been created initially, you can update your extension b
 <!-- ====================================================================== -->
 ## Update your extension during the certification step
 
-While your extension is in the certification stage, and before it gets published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
+While your extension is in the certification stage, and before it gets published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
 
 To check the status of your extension:
 
@@ -80,13 +80,13 @@ To remove an extension:
 
 1. Select **Unpublish** to remove the listing.
 
-The extension is now removed and is no longer present at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
+The extension is now removed and is no longer present at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Set an externally installed extension to automatically update](./auto-update.md) - for an extension that doesn't use Partner Center and isn't at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+* [Set an externally installed extension to automatically update](./auto-update.md) - for an extension that doesn't use Partner Center and isn't at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 * [Use the REST API to update an extension at Microsoft Edge Add-ons](./api/using-addons-api.md)
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
