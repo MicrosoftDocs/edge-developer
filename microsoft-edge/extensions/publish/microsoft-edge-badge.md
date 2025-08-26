@@ -27,7 +27,7 @@ The generic Microsoft Store badge reads **Get it from Microsoft**:
 
 ![The generic Microsoft Store badge](./microsoft-edge-badge-images/generic-microsoft-store-badge.png)
 
-Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges),<!-- todo: png showing "generic" Microsoft Store badge --> the Get it from Microsoft Edge badge provides a distinct, trusted visual cue (adding the words **Edge Add-ons**) that connects your Edge add-ons directly to the Microsoft Edge ecosystem.
+Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges),<!-- todo: png showing "generic" Microsoft Store badge --> the Get it from Microsoft Edge badge provides a distinct, trusted visual cue that connects your Edge add-ons directly to the Microsoft Edge ecosystem.
 
 The Get it from Microsoft Edge badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
 
@@ -79,10 +79,16 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 <!-- ====================================================================== -->
 ## License for Microsoft Marks
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#license-to-microsoft-marks -->
+<!-- todo: avoid introducing "Microsoft Marks" term, use "assets" -->
+<!-- todo: delete "logo" -->
 
 _Microsoft Marks_ means the Get it from Microsoft Edge badge and Microsoft Edge logos.  To use these assets:
+
 * Your product or content must reference Microsoft Edge or its features.
-* You must follow the logo usage specifications described in the [Microsoft Store Badge Guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf).
+
+* You must follow the logo usage specifications described in the [Microsoft Store Badge Guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf).<!-- todo: link to Edge-specific pdf -->
+<!-- todo: confirm: are there logo usage specifications in the Edge-specific pdf?  where? what section?  specify more detail here.  what does "logo" mean? what logo are we talking about? -->
+
 * Microsoft reserves the right to revoke usage at any time.
 
 Microsoft is the sole owner of the Microsoft Marks and associated goodwill, and the sole beneficiary of the goodwill associated with your use of the Microsoft Marks.  Microsoft may revoke this license at any time and at its sole discretion.
