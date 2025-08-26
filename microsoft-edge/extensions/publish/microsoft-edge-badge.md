@@ -17,7 +17,7 @@ To promote your Microsoft Edge extension, theme, or web app, use the Get it from
 
 The Get it from Microsoft Edge badge is a visual asset designed to help you promote your Microsoft Edge add-ons and build user trust.
 
-![The "Get it from Microsoft Edge" badge](./marketing-guidelines-images/get-it-from-microsoft-edge-badge.png)
+![The "Get it from Microsoft Edge" badge](./microsoft-edge-badge-images/get-it-from-microsoft-edge-badge.png)
 
 The Get it from Microsoft Edge badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
 
@@ -25,7 +25,7 @@ The Get it from Microsoft Edge badge lets you showcase your Microsoft Edge add-o
 
 The generic Microsoft Store badge reads **Get it from Microsoft**:
 
-![The generic Microsoft Store badge](./marketing-guidelines-images/generic-microsoft-store-badge.png)
+![The generic Microsoft Store badge](./microsoft-edge-badge-images/generic-microsoft-store-badge.png)
 
 Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges),<!-- todo: png showing "generic" Microsoft Store badge --> the Get it from Microsoft Edge badge provides a distinct, trusted visual cue (adding the words **Edge Add-ons**) that connects your Edge add-ons directly to the Microsoft Edge ecosystem.
 
@@ -41,7 +41,7 @@ Download the complete set of badge `.png` files.
 download.microsoft.com (www.microsoft.com/download)
 https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
 -->
-[![Download button](./marketing-guidelines-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
+[![Download button](./microsoft-edge-badge-images/download-button.png)](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip)<!-- todo: 404 --> **All badge images**
 
 
 <!-- ====================================================================== -->
@@ -49,7 +49,7 @@ https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
 
 Follow the required specifications for image usage, fonts, and color palette.  Detailed usage examples and guidelines are available in the downloadable PDF:
 
-[![Download button](./marketing-guidelines-images/download-button.png)](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) **Microsoft Store Badge Guidelines (PDF, English)**
+[![Download button](./microsoft-edge-badge-images/download-button.png)](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) **Microsoft Store Badge Guidelines (PDF, English)**
 
 For example, here are some of the guidelines from the PDF:
 
