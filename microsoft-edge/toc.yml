@@ -1215,9 +1215,6 @@
             - name: Curation and review process for extensions at Microsoft Edge Add-ons
               href: ./extensions/publish/add-ons-curation.md
 
-            - name: Use the Microsoft Edge Add-ons badge to promote your extension
-              href: ./extensions/publish/marketing-guidelines.md
-
 # -------------------------------------
         - name: Update an extension
           items:
@@ -1900,6 +1897,9 @@
     - name: Videos about web development with Microsoft Edge
       href: ./dev-videos/index.md
       displayName: youtube
+
+    - name: Use the Get it from Microsoft Edge badge to promote your extension
+      href: ./extensions/publish/marketing-guidelines.md
 
     - name: Microsoft Edge Privacy Whitepaper
       href: /legal/microsoft-edge/privacy

@@ -1,6 +1,6 @@
 ---
-title: Use the Microsoft Edge Add-ons badge to promote your extension
-description: Use the Microsoft Edge Add-ons badge in your websites, documentation, or tutorials when publishing an extension, theme, or web app at the Microsoft Edge Add-ons site.  # key words before col 158
+title: Use the Get it from Microsoft Edge badge to promote your extension
+description: Use the Get it from Microsoft Edge badge in your websites, documentation, or tutorials when publishing an extension, theme, or web app at the Microsoft Edge Add-ons site.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,30 +8,28 @@ ms.service: microsoft-edge
 ms.date: 08/13/2025
 ---
 <!-- todo: in desc above, web app ok? -->
-# Use the Microsoft Edge Add-ons badge to promote your extension
+# Use the Get it from Microsoft Edge badge to promote your extension
 <!-- todo: note title of upstream article, toc bucket/nav, & docset name  https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines -->
 
-To promote your Microsoft Edge add-ons (such as extensions, themes, or web apps),<!-- todo: web app ok? --> use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
+<!-- todo: in this article, globally delete "add-ons" -->
 
-The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-ons and build user trust.
+To promote your Microsoft Edge extension, theme, or web app, use the Get it from Microsoft Edge badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
-The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge Add-ons**:
+The Get it from Microsoft Edge badge is a visual asset designed to help you promote your Microsoft Edge add-ons and build user trust.
 
-![The Microsoft Edge Add-ons badge](./marketing-guidelines-images/microsoft-edge-add-ons-badge.png)
+![The "Get it from Microsoft Edge" badge](./marketing-guidelines-images/get-it-from-microsoft-edge-badge.png)
 
-<!-- todo: in the .zip, change .pngs to read: Get it from Microsoft Edge Add-ons -->
+The Get it from Microsoft Edge badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
 
-The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
-
-The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge add-ons with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
+The Get it from Microsoft Edge badge lets you showcase your Microsoft Edge add-ons with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Get it from Microsoft Edge badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
 
 The generic Microsoft Store badge reads **Get it from Microsoft**:
 
 ![The generic Microsoft Store badge](./marketing-guidelines-images/generic-microsoft-store-badge.png)
 
-Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges),<!-- todo: png showing "generic" Microsoft Store badge --> the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue (adding the words **Edge Add-ons**) that connects your Edge add-ons directly to the Microsoft Edge ecosystem.
+Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges),<!-- todo: png showing "generic" Microsoft Store badge --> the Get it from Microsoft Edge badge provides a distinct, trusted visual cue (adding the words **Edge Add-ons**) that connects your Edge add-ons directly to the Microsoft Edge ecosystem.
 
-The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
+The Get it from Microsoft Edge badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
 
 
 <!-- ====================================================================== -->
@@ -79,10 +77,10 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 
 
 <!-- ====================================================================== -->
-## License to Microsoft Marks
+## License for Microsoft Marks
 <!-- https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#license-to-microsoft-marks -->
 
-_Microsoft Marks_ means the Microsoft Edge Add-ons badge and Microsoft Edge logos.  To use these assets:
+_Microsoft Marks_ means the Get it from Microsoft Edge badge and Microsoft Edge logos.  To use these assets:
 * Your product or content must reference Microsoft Edge or its features.
 * You must follow the logo usage specifications described in the [Microsoft Store Badge Guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf).
 * Microsoft reserves the right to revoke usage at any time.
