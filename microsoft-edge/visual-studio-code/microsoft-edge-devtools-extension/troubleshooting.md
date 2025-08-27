@@ -59,13 +59,13 @@ The DevTools browser uses the URL or file path that you specify any of the vario
 
 | Way of opening DevTools | Where the file path or URL is specified |
 |---|---|
-| Click the **Launch Instance** button. | The URL or file path that you specify in the DevTools browser's address bar. |
+| Click the **Launch Instance** button. | The URL or file path that you specify in the DevTools browser's Address bar. |
 | Right-click an `.html` file. | The path of the `.html` file that you right-click. |
 | Click the **Launch Project** button. | The URL or file path that you specify in `launch.json`. |
 
-If you enter a different URL or file path in the address bar of the DevTools browser, for DevTools to provide automatic CSS mirror editing of local source files, you must also open a folder that contains files that match the webpage (file path or URL) that you specify in the DevTools browser.
+If you enter a different URL or file path in the Address bar of the DevTools browser, for DevTools to provide automatic CSS mirror editing of local source files, you must also open a folder that contains files that match the webpage (file path or URL) that you specify in the DevTools browser.
 
-Suppose you click the **Launch Instance** button, then paste a localhost URL into the address bar, such as `http://localhost:8080`, but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  Error messages might appear, such as:
+Suppose you click the **Launch Instance** button, then paste a localhost URL into the Address bar, such as `http://localhost:8080`, but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  Error messages might appear, such as:
 
 *  **Error while mirroring css content to document.  Could not mirror css changes to document.  No workspace mapping was found.**
 

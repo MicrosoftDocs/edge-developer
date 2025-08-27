@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/16/2024
+ms.date: 07/17/2025
 ---
 # Sample code for DevTools
 
@@ -24,44 +24,48 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 
 <!-- ====================================================================== -->
 ## List of DevTools samples
+<!-- 
+sync:
+https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#list-of-devtools-samples
+https://github.com/MicrosoftEdge/Demos#readme
+sync'd July 30, 2025
+-->
 
 The following demos demonstrate DevTools features.
 
-<!-- 
-keep DevTools table sync'd:
-https://github.com/MicrosoftEdge/Demos#readme
-https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#list-of-devtools-samples
-last sync'd April 16, 2024
--->
-
-| Demo name | Description | Repo directory | Live demo page |
-|:---|:---|:---|:---|
+| Demo name | Description and docs | Source code & Readme | Live demo page |
+|---|---|---|---|
 | CSS mirroring sourcemaps | Used for [Update .css files from within the Styles tab (CSS mirror editing)](../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) for the DevTools extension for Visual Studio Code. | [/css-mirroring-sourcemaps-demo/](https://github.com/MicrosoftEdge/Demos/tree/main/css-mirroring-sourcemaps-demo) | n/a |
-| TODO app | Simple To Do app with vanilla JavaScript.  Used for screenshots in the [Microsoft Edge DevTools documentation](/microsoft-edge/devtools/landing/), and for [Opening DevTools and the DevTools browser](../../visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) for the DevTools extension for Visual Studio Code. | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) |
-| Detached elements | Chat-like demo.  Used for [Debug DOM memory leaks ("Detached elements" profiling type)](../memory-problems/dom-leaks-memory-tool-detached-elements.md). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Simulate traffic](https://microsoftedge.github.io/Demos/detached-elements/) |
-| 3D View | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [Microsoft Edge DevTools 3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
-| Accessibility testing | Used for [Accessibility-testing features](../accessibility/reference.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) |
-| DevTools issue: animating a CSS property that requires layout | Illustrates the **Issues** and **Elements** tools warning when CSS properties that require layout are animated. | [/devtools-animated-property-issue/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-animated-property-issue) | [Animated CSS property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) |
-| Console panel demo pages | Used for [Console overview](../console/index.md), [Log messages in the Console tool](../console/console-log.md), and [Fix JavaScript errors that are reported in the Console](../console/console-debug-javascript.md). | [/devtools-console/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) | [DevTools Console panel demo pages](https://microsoftedge.github.io/Demos/devtools-console/) |
-| DOM interaction from the Console demo page | Used for [Interact with the DOM using the Console](../console/console-dom-interaction.md). | [/devtools-console-dom-interactions/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console-dom-interactions) | [DevTools Console tool DOM interactions demo](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) |
-| Contrast bug fix | Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) |
-| CSS Examples | Used for [Get started viewing and changing CSS](../css/index.md). | [/devtools-css-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) | [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) |
-| DOM Examples | Used for [Get started viewing and changing the DOM](../dom/index.md). | [/devtools-dom-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) | [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) |
-| Explain Console errors and warnings in Copilot in Edge | Generates errors in the Console that can then be explained by using Copilot in Edge. | [/devtools-explain-error/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-explain-error) | [Explaining console errors demo](https://microsoftedge.github.io/Demos/devtools-explain-error/) |
-| Inspect tool | Used for [Analyze pages using the Inspect tool](../css/inspect.md). | [/devtools-inspect/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-inspect) | [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect/) |
-| Debugging JavaScript that adds two numbers | Used for [Get started debugging JavaScript](../javascript/index.md). | [/devtools-js-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) | [Demo: Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) |
+| To Do app | Simple To Do app with vanilla JavaScript.  Used for various articles in the [Microsoft Edge DevTools documentation](../landing/index.yml). | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) demo |
+| Detached DOM elements | Chat-like demo.  Used for [Debug DOM memory leaks ("Detached elements" profiling type)](../memory-problems/dom-leaks-memory-tool-detached-elements.md). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Detached DOM elements](https://microsoftedge.github.io/Demos/detached-elements/) demo |
+| 3D View tool | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
+| Accessibility testing | Used for [Accessibility-testing features](../accessibility/reference.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo |
+| Warning when animating a CSS property that requires layout | Illustrates the **Issues** and **Elements** tools warning when CSS properties that require layout are animated.  Used for [Edit animation and transition timings with the Easing Editor](../css/reference.md#edit-animation-and-transition-timings-with-the-easing-editor) in _CSS features reference_. | [/devtools-animated-property-issue/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-animated-property-issue) | [Animated CSS property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) |
+| Console panel demo pages | Used for [Console overview](../console/index.md), [Log messages in the Console tool](../console/console-log.md), and [Fix JavaScript errors reported in the Console](../console/console-debug-javascript.md). | [/devtools-console/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) | [DevTools Console panel demo pages](https://microsoftedge.github.io/Demos/devtools-console/) |
+| Interact with the DOM using the Console | Used for [Interact with the DOM using the Console](../console/console-dom-interaction.md). | [/devtools-console-dom-interactions/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console-dom-interactions) | [Interact with the DOM using the Console](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) demo |
+| Contrast bug fix | Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) demo |
+| Crash Analyzer tool demo | Used for [Enter a stack trace in the Crash analyzer tool](../crash-analyzer/index.md#enter-a-stack-trace-in-the-crash-analyzer-tool) in _Crash analyzer tool_. | [/devtools-crash-analyzer/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-crash-analyzer) | [Readme](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-crash-analyzer/README.md) |
+| CSS Examples | Used for [Get started viewing and changing CSS](../css/index.md). | [/devtools-css-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) | [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo |
+| DOM Examples | Used for [Get started viewing and changing the DOM](../dom/index.md). | [/devtools-dom-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) | [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo |
+| Explain Console errors and warnings in Copilot in Edge | Generates errors in the Console that can then be explained by using Copilot in Edge. | [/devtools-explain-error/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-explain-error) | [Explain Console errors and warnings in Copilot in Edge](https://microsoftedge.github.io/Demos/devtools-explain-error/) demo |
+| Inspect tool | Used for [Analyze pages using the Inspect tool](../css/inspect.md). | [/devtools-inspect/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-inspect) | [Inspect tool demo](https://microsoftedge.github.io/Demos/devtools-inspect/) |
+| Inspect CSS Grid | Used for [Inspect CSS Grid](../css/grid.md). | [/devtools-grid/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-grid) | [Inspect CSS Grid](https://microsoftedge.github.io/Demos/devtools-grid/) demo |
+| Debugging JavaScript that adds two numbers | Used for [Get started debugging JavaScript](../javascript/index.md). | [/devtools-js-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) | [Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) demo |
 | Memory heap snapshot | Used for [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md). | [/devtools-memory-heap-snapshot/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) | n/a |
-| Performance Activity Tabs | Used for [View activities in a table](../performance/reference.md#view-activities-in-a-table), about the **Performance** tool's **Bottom-up**, **Call tree**, and **Event log** tabs. | [/devtools-performance-activitytabs/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) | [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) |
-| Sluggish Animation | Used for [Analyze runtime performance (tutorial)](../performance/index.md). | [/devtools-performance-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) | [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) |
+| **Performance** tool Activity Tabs | Used for [View activities in a table](../performance/reference.md#view-activities-in-a-table) in _Performance features reference_, about the **Performance** tool's **Bottom-up**, **Call tree**, and **Event log** tabs. | [/devtools-performance-activitytabs/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) | [Activity Tabs demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) |
+| Sluggish Animation | Used for [Analyze runtime performance (tutorial)](../performance/index.md). | [/devtools-performance-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) | [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo |
 | postMessage Trace Events | Tests `postMessage` trace events in the **Performance** tool.  Used for [View messages between windows, iframes, and dedicated workers](../performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_. | [/devtools-postmessage-perf-timeline/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline) | [postMessage Trace Events demo](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/) |
-| CSS :target pseudo-class | Used for [Support forcing the :target CSS state](../whats-new/2021/01/devtools.md#support-forcing-the-target-css-state). | [/devtools-target-pseudo/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-target-pseudo) | [CSS :target pseudo-class demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/) |
-| Exploring the universe | Webpage used to demo the [Monitor Core Web Vitals metrics](../performance/overview.md#monitor-core-web-vitals-metrics) section in the _Performance tool: Analyze your website's performance_ article. | [/exploring-the-universe/](https://github.com/MicrosoftEdge/Demos/tree/main/exploring-the-universe) | [Exploring the universe webpage](https://microsoftedge.github.io/Demos/exploring-the-universe/) |
-| Heap Snapshot Visualizer | Source code for the [Heap Snapshot Visualizer](https://microsoftedge.microsoft.com/addons/detail/heap-snapshot-visualizer/fceldlhognbemkgfacnffkdanocidgce) extension for DevTools. | [/heap-snapshot-visualizer/](https://github.com/MicrosoftEdge/Demos/tree/main/heap-snapshot-visualizer) | n/a |
-| JSON dummy data | Simple JSON files.  Used for [View a JSON file or server response with formatting](../../web-platform/json-viewer.md). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) |
-| Inspect Network Activity | Used for [Inspect network activity](../network/index.md). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
-| Photo gallery | Used for [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) |
-| Slow Calendar | Simple calendar demo app to test various DevTools features such as the **Performance** tool and source map support. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar](https://microsoftedge.github.io/Demos/slow-calendar/public) |
-| Workspaces | Used for [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md), in the **Sources** tool. | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces Demo](https://microsoftedge.github.io/Demos/workspaces/) |
+| CSS :target pseudo-class | Used for [Support forcing the :target CSS state](../whats-new/2021/01/devtools.md#support-forcing-the-target-css-state) in _What's New in DevTools (Microsoft Edge 89)_. | [/devtools-target-pseudo/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-target-pseudo) | [CSS :target pseudo-class demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/) |
+| Exploring the universe | Used for [Monitor Core Web Vitals metrics](../performance/overview.md#monitor-core-web-vitals-metrics) in _Performance tool: Analyze your website's performance_. | [/exploring-the-universe/](https://github.com/MicrosoftEdge/Demos/tree/main/exploring-the-universe) | [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo |
+| Heap Snapshot Visualizer | Used for [Heap Snapshot visualizer extension for DevTools](../whats-new/2023/01/devtools-109.md#heap-snapshot-visualizer-extension-for-devtools) in _What's New in DevTools (Microsoft Edge 109)_. | [/heap-snapshot-visualizer/](https://github.com/MicrosoftEdge/Demos/tree/main/heap-snapshot-visualizer) | n/a |
+| JSON dummy data | Simple JSON files.  Used for [View a JSON file or server response with formatting](../../web-platform/json-viewer.md). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) (Readme) |
+| Inspect Network Activity | Used for [Inspect network activity](../network/index.md). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
+| Network tool reference | Used for [Network features reference](../network/reference.md). | [/devtools-network-reference/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-network-reference) | [Network tool reference demo](https://microsoftedge.github.io/Demos/devtools-network-reference/) |
+| Photo gallery | Used for [View your custom data in the performance profile](../performance/extension.md#view-your-custom-data-in-the-performance-profile) in _Customize performance profile with extensibility APIs_, and [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo |
+| Slow Calendar | Simple calendar demo app to test DevTools features such as the **Performance** tool and source map support.  Used for [Added source map support in the Coverage tool](../whats-new/2024/01/devtools-121.md#added-source-map-support-in-the-coverage-tool) in _What's New in DevTools (Microsoft Edge 121)_. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar](https://microsoftedge.github.io/Demos/slow-calendar/public/) demo |
+| Margie's Travel | Demonstrates how to optimize a webpage's resources to make it load, appear, and be interactive faster.  Used for [Optimize website speed using Lighthouse](../speed/get-started.md). | [/travel-site/](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site) | [Margie's Travel](https://microsoftedge.github.io/Demos/travel-site/) demo |
+| Workspaces | Used for [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md). | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces demo](https://microsoftedge.github.io/Demos/workspaces/) |
+| Idle detection | Used for [Emulate idle detector state](../sensors/index.md#emulate-idle-detector-state) in _Emulate device sensors_. | [/idle-detection/](https://github.com/MicrosoftEdge/Demos/tree/main/idle-detection) | [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/) |
 
 A few of these samples are shown below.
 
@@ -181,7 +185,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo.  If you use a command prompt:
 
-   ```Shell
+   ```console
    # example location where the repo directory will be added:
    cd ~/GitHub
    cd c:/users/localAccount/GitHub/  # alt format
@@ -306,7 +310,7 @@ If you start the localhost server from a specific demo folder, such as `\Demos\d
 
 Starting the server from within a specific demo directory:
 
-```
+```bash
 $ cd ~/GitHub/Demos/demo-to-do
 $ npx http-server
 ```
@@ -325,7 +329,7 @@ If you start the localhost server from within the entire `\Demos\` folder and th
 
 Starting the server from within the entire `\Demos\` directory:
 
-```
+```bash
 $ cd ~/GitHub/Demos
 $ cd "C:\Users\localAccount\GitHub\Demos"  # alt syntax
 $ npx http-server
@@ -349,7 +353,7 @@ To edit files in the **Sources** tool, before doing the steps in this section, y
 
    The Address bar displays: **File | C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html**
 
-   Selecting the URL in the address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
+   Selecting the URL in the Address bar shows the URL format: `file:///C:/Users/localAccount/GitHub/Demos/demo-to-do/index.html`
 
 1. Right-click the rendered webpage, and then select **Inspect**.
 

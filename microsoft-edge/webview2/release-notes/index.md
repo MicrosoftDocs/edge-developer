@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/01/2025
+ms.date: 08/11/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -15,19 +15,195 @@ These Release Notes provide information about new features and bug fixes that ar
 <!--
 the templates to copy for incoming sections are in ./includes/templates.md
 
-this webpage covers the most recent ~5 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
-Jun B 2025
+this webpage covers the most recent 6 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers: 
+Aug 2025
+Jul 2025
 Jun 2025
 May 2025
 Apr 2025
 Mar 2025
 
 moved to archive:
-Feb 2025
+none b/c changed from 5 mo to 6 mo
 -->
 
 
-<!-- Jun B 2025 Release SDK -->
+<!-- Aug 2025 Release SDK -->
+<!-- ====================================================================== -->
+## 1.0.3405.78
+
+Release Date: August 11, 2025
+
+[NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 139.0.3405.78 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ------------------------------ -->
+###### Customize the Find behavior (Find API)
+
+The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
+* Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
+* Find text strings and navigate among them within a WebView2 control.
+* Programmatically initiate **Find** operations, and navigate **Find** results.
+* Suppress the default **Find** UI.
+* Track the status of **Find** operations.
+
+There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
+
+We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createfindoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* [CoreWebView2Find Class](/dotnet/api/microsoft.web.webview2.core.corewebview2find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindex?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindexchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.FindPrevious Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findprevious?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.MatchCount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcount?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.MatchCountChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcountchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.StartAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.startasync?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.stop?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* [CoreWebView2FindOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.FindTerm Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.findterm?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.iscasesensitive?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldhighlightallmatches?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldmatchword?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.suppressdefaultfinddialog?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3405.78&preserve-view=true#find)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.3405.78&preserve-view=true#createfindoptions)
+
+* [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindex)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindexchanged)
+   * [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findnext)
+   * [CoreWebView2Find.FindPrevious Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findprevious)
+   * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcount)
+   * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcountchanged)
+   * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#startasync)
+   * [CoreWebView2Find.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#stop)
+
+* [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#findterm)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#iscasesensitive)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldhighlightallmatches)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldmatchword)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#suppressdefaultfinddialog)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true#get_find)
+
+* [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true#createfindoptions)
+
+* [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_activematchindexchanged)
+   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_matchcountchanged)
+   * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findnext)
+   * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findprevious)
+   * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_activematchindex)
+   * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_matchcount)
+   * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_activematchindexchanged)
+   * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_matchcountchanged)
+   * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#start)
+   * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#stop)
+
+* [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
+
+* [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
+
+* [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_findterm)
+   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_iscasesensitive)
+   * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldmatchword)
+   * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_suppressdefaultfinddialog)
+   * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_findterm)
+   * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_iscasesensitive)
+   * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldmatchword)
+   * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_suppressdefaultfinddialog)
+
+* [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3405.78&preserve-view=true)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed a crash in Devtools on Windows Server and Windows 10.
+
+<!-- end of Aug 2025 Release SDK -->
+
+
+<!-- Aug 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.3477-prerelease
+
+Release Date: August 11, 2025
+
+[NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed `put_UserAgent` not working for service workers.
+* Fixed a crash in Devtools on Windows Server and Windows 10.
+* Removed browser process tracking after calling `remove_BrowserProcessExited`.
+* Fixed a memory leak issue in `hostObject` async function calls.
+* Fixed touch not working in visual hosting after a long tap.
+
+<!-- end of Aug 2025 Prerelease SDK -->
+
+
+<!-- Jul 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3351.48
 
@@ -89,10 +265,10 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 
 <!-- * Fixed behavior.  ([Issue #]()) -->
 
-<!-- end of Jun B 2025 Release SDK -->
+<!-- end of Jul 2025 Release SDK -->
 
 
-<!-- Jun B 2025 Prerelease SDK -->
+<!-- Jul 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3415-prerelease
 
@@ -522,6 +698,7 @@ We're actively investigating these issues, and we encourage you to report any pr
    * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#matchcount)
    * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#matchcountchanged)
    * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#startasync)
+   * [CoreWebView2Find.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#stop)
 
 * [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#findterm)
@@ -536,35 +713,35 @@ We're actively investigating these issues, and we encourage you to report any pr
    * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3415-prerelease&preserve-view=true#get_find)
 
 * [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3415-prerelease&preserve-view=true)
-  * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3415-prerelease&preserve-view=true#createfindoptions)
+   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3415-prerelease&preserve-view=true#createfindoptions)
 
 * [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true)
-  * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#add_activematchindexchanged)
-  * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#add_matchcountchanged)
-  * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#findnext)
-  * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#findprevious)
-  * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#get_activematchindex)
-  * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#get_matchcount)
-  * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_activematchindexchanged)
-  * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_matchcountchanged)
-  * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#start)
-  * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#stop)
+   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#add_activematchindexchanged)
+   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#add_matchcountchanged)
+   * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#findnext)
+   * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#findprevious)
+   * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#get_activematchindex)
+   * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#get_matchcount)
+   * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_activematchindexchanged)
+   * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_matchcountchanged)
+   * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#start)
+   * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3415-prerelease&preserve-view=true#stop)
 
 * [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 * [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 * [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true)
-  * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_findterm)
-  * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_iscasesensitive)
-  * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_shouldhighlightallmatches)
-  * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_shouldmatchword)
-  * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_suppressdefaultfinddialog)
-  * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_findterm)
-  * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_iscasesensitive)
-  * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_shouldhighlightallmatches)
-  * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_shouldmatchword)
-  * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_suppressdefaultfinddialog)
+   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_findterm)
+   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_iscasesensitive)
+   * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_shouldmatchword)
+   * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#get_suppressdefaultfinddialog)
+   * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_findterm)
+   * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_iscasesensitive)
+   * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_shouldmatchword)
+   * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3415-prerelease&preserve-view=true#put_suppressdefaultfinddialog)
 
 * [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
@@ -594,7 +771,7 @@ We're actively investigating these issues, and we encourage you to report any pr
 
 <!-- * Fixed behavior.  ([Issue #]()) -->
 
-<!-- end of Jun B 2025 Prerelease SDK -->
+<!-- end of Jul 2025 Prerelease SDK -->
 
 
 <!-- Jun 2025 Release SDK -->

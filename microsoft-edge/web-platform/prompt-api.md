@@ -54,7 +54,7 @@ The Prompt API is intended to help discover use cases and understand challenges 
 
 * [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
 
-* The [webmachinelearning/translation-api](https://github.com/webmachinelearning/translation-api) repo.
+* The [webmachinelearning / translation-api](https://github.com/webmachinelearning/translation-api) repo.
 
 
 <!-- ====================================================================== -->
@@ -150,9 +150,9 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. [Enable the Prompt API](#enable-the-prompt-api), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Built-in AI playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/prompt-api/).
+1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Prompt API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/prompt-api/).
 
-1. Under the left navigation, click **Prompt**.
+   In the **Built-in AI playgrounds** navigation on the left, **Prompt** is selected.
 
 1. In the information banner at the top, check the status: it initially reads **Model downloading, please wait**:
 
@@ -182,7 +182,8 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. To stop generating the response, at any time, click the **Stop** button.
 
-To view the source code of the Prompt API playground, see the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) repo at GitHub.
+See also:
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
 
 
 <!-- ====================================================================== -->
@@ -588,5 +589,5 @@ You can also contribute to the discussion about the design of the Prompt API at 
 ## See also
 
 * [Explainer for the Prompt API](https://github.com/webmachinelearning/prompt-api), on the Web Machine Learning GitHub repo.
-
 * [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
