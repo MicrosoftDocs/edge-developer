@@ -32,7 +32,7 @@ none b/c changed from 5 mo to 6 mo
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
-Release Date: Monthname nn, 2025
+Release Date: September 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 
@@ -88,7 +88,7 @@ description
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: September 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
