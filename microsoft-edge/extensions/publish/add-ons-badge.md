@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 08/13/2025
+ms.date: 08/28/2025
 ---
 # Use the Microsoft Edge Add-ons badge to promote your add-on
 <!-- upstream:
@@ -18,21 +18,21 @@ docset: Windows > App development
 
 To promote your Microsoft Edge extension, theme, or web app, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
-The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-ons and build user trust.
+The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-on and build user trust.
 
 The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**:
 
-![The "Microsoft Edge Add-ons" badge](./microsoft-edge-badge-images/get-it-from-microsoft-edge-badge.png)
+![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/get-it-from-microsoft-edge-badge.png)
 
 The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
 
-The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge add-ons with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
+The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge add-on with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
 
 The generic Microsoft Store badge reads **Get it from Microsoft**:
 
-![The generic Microsoft Store badge](./microsoft-edge-badge-images/generic-microsoft-store-badge.png)
+![The generic Microsoft Store badge](./add-ons-badge-images/generic-microsoft-store-badge.png)
 
-Unlike generic Microsoft [Store badges](/windows/apps/publish/app-marketing-guidelines#store-badges), the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your Microsoft Edge add-ons directly to the Microsoft Edge ecosystem.
+Unlike the generic Microsoft Store badge, the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your Microsoft Edge add-on directly to the Microsoft Edge ecosystem.
 
 The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
 
