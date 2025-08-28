@@ -53,7 +53,7 @@ Download the complete set of `.png` files: [Microsoft Edge Add-ons Badges.zip](h
 <!-- ====================================================================== -->
 ## Badge usage guidelines
 
-Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the [Microsoft Edge Badge Guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) (PDF).
+Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the [Microsoft Edge Add-ons badge guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) (PDF).
 <!-- todo:
 1. upload the Edge-specific .pdf file to either:
    download.microsoft.com (www.microsoft.com/download)
