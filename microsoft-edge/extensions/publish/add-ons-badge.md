@@ -98,9 +98,7 @@ _Microsoft Marks_ means the Microsoft Edge Add-ons badge and Microsoft Edge logo
 
 * Your product or content must reference Microsoft Edge or its features.
 
-* You must follow the logo usage specifications described in the [Microsoft Store Badge Guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf); that is:<!-- all relevant instances of 'logo' above and in pdf: -->
-   * Do not create your own version, alter the text color, extract the Microsoft Edge logo, or modify the provided Microsoft Edge Add-ons badge in any way.
-   * The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, and they cannot be used interchangeably.
+* You must follow the logo usage specifications described in the Microsoft Edge Add-ons badge guidelines.
 
 * Microsoft reserves the right to revoke usage of the Microsoft Edge Add-ons badge at any time.
 
