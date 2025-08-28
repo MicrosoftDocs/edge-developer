@@ -1260,6 +1260,9 @@
               href: ./extensions/samples.md
 
 # -------------------------------------
+        - name: Use the Microsoft Edge Add-ons badge to promote your add-on
+          href: ./extensions/publish/add-ons-badge.md
+
         - name: Contact the Microsoft Edge extensions team
           href: ./extensions/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
@@ -1897,9 +1900,6 @@
     - name: Videos about web development with Microsoft Edge
       href: ./dev-videos/index.md
       displayName: youtube
-
-    - name: Use the Get it from Microsoft Edge badge to promote your extension
-      href: ./extensions/publish/microsoft-edge-badge.md
 
     - name: Microsoft Edge Privacy Whitepaper
       href: /legal/microsoft-edge/privacy
