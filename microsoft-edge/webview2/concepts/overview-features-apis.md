@@ -744,7 +744,6 @@ The Find API allows you to programmatically control **Find** operations, and ena
 
 There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
 
-<!-- todo: del? -->
 We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1363,7 +1362,6 @@ To experiment with Fluent overlay scrollbars, in Microsoft Edge, go to `edge://f
 
 See also:
 * [WebView2 browser flags](./webview-features-flags.md) - `msEdgeFluentOverlayScrollbar` and `msOverlayScrollbarWinStyle` flags.
-<!-- todo: article to link to? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
