@@ -41,12 +41,12 @@ The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, an
 ## Download the badge image files
 
 Download the complete set of `.png` files: [Microsoft Edge Add-ons Badges.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip).
-<!-- todo: 404; update the url -->
 <!-- todo:
 1. remove hidden macOS dir from the .zip file
 2. upload the .zip file to either:
    download.microsoft.com (www.microsoft.com/download)
    https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+3. update the url above
 -->
 
 
