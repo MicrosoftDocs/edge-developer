@@ -45,9 +45,9 @@ Download the complete set of `.png` files:
 * [Microsoft_Edge_Add-ons_badge_image_files.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 <!-- todo:
 1. remove hidden macOS dir from the .zip file
-2. upload the Edge-specific .zip file to either:
-   download.microsoft.com (www.microsoft.com/download)
-   https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+2. upload the .zip file to either:
+   * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+   * download.microsoft.com (www.microsoft.com/download)
 3. update the url above
 -->
 
@@ -57,9 +57,9 @@ Download the complete set of `.png` files:
 
 Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 <!-- todo:
-1. upload the Edge-specific .pdf file to either:
-   download.microsoft.com (www.microsoft.com/download)
-   https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+1. upload the .pdf file to either:
+   * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
+   * download.microsoft.com (www.microsoft.com/download)
 2. update the url above
 -->
 
