@@ -49,18 +49,22 @@ Download the complete set of `.png` files:
    * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
    * download.microsoft.com (www.microsoft.com/download)
 3. update the url above
+4. test the above link - what happens, downloaded in Edge Downloads dialog?
 -->
 
 
 <!-- ====================================================================== -->
 ## Badge usage guidelines
 
-Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
+Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the PDF file:
+
+* [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 <!-- todo:
 1. upload the .pdf file to either:
    * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
    * download.microsoft.com (www.microsoft.com/download)
 2. update the url above
+3. test the above link - what happens, downloaded in Edge Downloads dialog?
 -->
 
 For example, the PDF includes the following guidelines:
