@@ -1,4 +1,4 @@
-<!-- Jul 2025 Release SDK -->
+<!-- Oct 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
@@ -51,10 +51,10 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Release SDK -->
+<!-- end of Oct 2025 Release SDK -->
 
 
-<!-- Jul 2025 Prerelease SDK -->
+<!-- Oct 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
@@ -128,4 +128,4 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Prerelease SDK -->
+<!-- end of Oct 2025 Prerelease SDK -->
