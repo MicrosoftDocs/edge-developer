@@ -197,7 +197,7 @@ async function main() {
   const chromeOTs = chromeOTsData.origin_trials
     .filter((ot) => {
       // Only active origin trials that start in the next beta version.
-      return ot.status === "ACTIVE" && ot.startMilestone === nextBetaVersion;
+      return ot.status === "ACTIVE" && ot.start_milestone === nextBetaVersion;
     })
     .map((ot) => {
       return {
