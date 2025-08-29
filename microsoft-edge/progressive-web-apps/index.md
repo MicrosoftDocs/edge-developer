@@ -33,7 +33,7 @@ When installed on a device, PWAs function just like other apps. For example:
 *  PWAs have their own application icons that can be added to a device's home screen or task bar.
 *  PWAs can be launched automatically when an associated file type is opened.
 *  PWAs can run when the user signs in.
-*  PWAs can be submitted to application stores, such as the Microsoft Store.
+*  PWAs can be submitted to app stores, such as the [Microsoft Store](https://apps.microsoft.com).
 
 #### Advanced capabilities
 
@@ -88,7 +88,7 @@ There isn't much you can't do today with web technologies. Many features that we
 
 Thanks to Microsoft Edge, PWAs on desktop can take full advantage of these capabilities to deliver what users expect desktop apps to be able to do.  These capabilities provide more engaging experiences across web and desktop platforms.
 
-To find examples of what PWAs can do, see [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
+To find examples of what PWAs can do, see [Myth Busting PWAs – The New Edge Edition](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ Because Progressive Web Apps (PWAs) are just like other apps in the [Microsoft S
 
 The Microsoft Store provides a trustworthy and familiar experience for users to install your app.  Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
-See [Publish a PWA to the Microsoft Store](how-to/microsoft-store.md).
+See [Publish a PWA to the Microsoft Store](./how-to/microsoft-store.md).
 
 
 <!-- ====================================================================== -->

@@ -10,9 +10,6 @@ ms.date: 11/03/2022
 ---
 # Add users to the Microsoft Edge program
 
-<!-- better? # Add users to your Partner Center account -->
-<!-- todo globally: "Microsoft Edge program", or other term? -->
-
 To help manage your Microsoft Edge extensions, you can add more users to an existing Partner Center account.  To manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
 
 A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  For a summary of the types of accounts used to publish extensions, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
@@ -38,7 +35,6 @@ Also see these articles in the Partner Center documentation:
 
 <!-- ====================================================================== -->
 ## Step 1: Enroll in the Microsoft Edge program on Partner Center
-
 <!-- todo: consider moving entire Step 1 section into create-dev-account.md -->
 
 First, determine whether you have a Partner Center account.  If you have a Partner Center account, determine whether the Primary Owner is a Microsoft Account (MSA), which is required for joining the Microsoft Edge program, to manage Microsoft Edge extensions.  Then follow the steps in the section that applies to your type of Partner Center account.
@@ -89,14 +85,25 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
 
 To enable managing Microsoft Edge extensions, you'll link your Microsoft Entra tenants to your Microsoft Edge Program account.  You can use Microsoft Entra ID to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Microsoft Entra ID applications.
 
+Microsoft Entra ID was formerly called Azure Active Directory (Azure AD).  Some linked docs still say "Azure AD" instead of "Microsoft Entra ID".
+
 To be able to add users to your Microsoft Edge Program account, and to manage the users in that account, you must first associate your Microsoft Edge Program account with your organization's Microsoft Entra tenant.  If your organization already uses Office 365 or other business services from Microsoft, you already have a Microsoft Entra tenant.  Otherwise, you can create a new Microsoft Entra tenant for free.
 
-To create an AD tenant, see [Create a new Microsoft Entra tenant to associate with your Partner Center account](/windows/apps/publish/partner-center/create-new-azure-ad-tenant).
+To create a Microsoft Entra tenant, see [Create a new Azure AD tenant to associate with your Partner Center account](/windows/apps/publish/partner-center/create-new-azure-ad-tenant).<!-- todo: update link text to "Entra" after dest text is updated -->
 
-Also see [Associate an existing Microsoft Entra tenant with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating a Microsoft Entra tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
+See also [Associate an existing Azure AD tenant with your Partner Center account](/windows/apps/publish/partner-center/associate-existing-azure-ad-tenant-with-partner-center-account).<!-- todo: update link text to "Entra" after dest text is updated -->  Associating a Microsoft Entra tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
-> [!IMPORTANT]
-> If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center, changing user roles or permissions isn't supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
+
+<!-- ------------------------------ -->
+#### Changing user roles or permissions
+
+**Important:** If you added users after associating your Microsoft Entra tenant with your Microsoft account on Partner Center:
+
+* Changing user roles or permissions isn't supported.
+
+* Adding users is supported.
+
+* You can locate admins of specific roles, by using the filter option of the [User management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section.
 
 
 <!-- ====================================================================== -->
@@ -104,7 +111,7 @@ Also see [Associate an existing Microsoft Entra tenant with your Partner Center 
 
 After you've set up the Microsoft Entra ID association, you can add users at **Account settings** > **User management** on the Partner Center.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Microsoft Entra ID applications, to grant them access to your Partner Center account.
 
-For more information about adding users, see [Users, groups, and applications in Microsoft Entra ID](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) in the Windows UWP documentation.
+For more information about adding users, see [Users, groups, and applications in Azure Active Directory](/windows/apps/publish/partner-center/overview-users-groups-azure-ad-applications).<!-- todo: update link text to "Entra" after dest text is updated -->
 
 
 <!-- ====================================================================== -->
