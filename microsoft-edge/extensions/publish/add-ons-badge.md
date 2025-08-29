@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 08/28/2025
+ms.date: 08/29/2025
 ---
 # Use the Microsoft Edge Add-ons badge to promote your add-on
 <!-- upstream:
@@ -40,7 +40,9 @@ The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, an
 <!-- ====================================================================== -->
 ## Download the badge image files
 
-Download the complete set of `.png` files: [Microsoft Edge Add-ons Badges.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/microsoft-edge-add-ons-badges.zip).
+Download the complete set of `.png` files: 
+
+* [Microsoft_Edge_Add-ons_badge_image_files.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 <!-- todo:
 1. remove hidden macOS dir from the .zip file
 2. upload the Edge-specific .zip file to either:
@@ -53,7 +55,7 @@ Download the complete set of `.png` files: [Microsoft Edge Add-ons Badges.zip](h
 <!-- ====================================================================== -->
 ## Badge usage guidelines
 
-Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the [Microsoft Edge Add-ons badge guidelines](https://download.microsoft.com/download/0/7/D/07DF43D4-B1A8-4D38-BC02-4903BB36CEE8/Microsoft_Store_Badge_Guidelines.pdf) (PDF).
+Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 <!-- todo:
 1. upload the Edge-specific .pdf file to either:
    download.microsoft.com (www.microsoft.com/download)
