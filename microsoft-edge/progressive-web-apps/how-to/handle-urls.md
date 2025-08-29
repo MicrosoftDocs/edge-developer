@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 08/12/2025
+ms.date: 08/29/2025
 ---
 # Handle links to a PWA
 
@@ -46,7 +46,7 @@ No code is required for automatic link handling to work, but end users can opt-o
 
 Scope extensions make it possible for a Progressive Web App (PWA) to capture navigation to domains, subdomains, or paths other than its own scope.  Scope extensions allow web apps that rely on multiple top-level domains, multiple subdomains, or multiple paths to be presented as a single web app.
 
-Scope extension can be useful for localization purposes, for a PWA that spans multiple domains, subdomains, or paths.
+Scope extension can be useful for cases such as PWAs that handle localization by using multiple domains, subdomains, or paths.
 
 
 <!-- ------------------------------ -->
@@ -94,7 +94,7 @@ For example, this web app manifest file resides at the domain `sample-app.com`, 
   "start_url": "/index.html",
   "scope_extensions": [
     {
-      "type": "type",
+      "type": "origin",
       "origin": "https://example.com"
     }
   ]
@@ -114,10 +114,5 @@ For example, this `.well-known/web-app-origin-association` configuration file re
 ```
 
 See also:
+* [scope_extensions](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/scope_extensions) at MDN.
 * [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md)
-
-
-<!-- ====================================================================== -->
-## See also
-
-* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
