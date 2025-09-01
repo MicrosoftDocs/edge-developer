@@ -702,7 +702,7 @@ Covers:
 * Breakpoint icons are displayed when using Visual Studio Code themes.
 * DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links.  JavaScript Debugger connection to remote workspaces.
 
-Update: Starting with Microsoft Edge 131, the Visual Studio Code themes feature is removed, and such themes revert to the default themes:
+Update: The Visual Studio Code themes feature is removed, and such themes revert to the default themes:
 * Light+
 * Dark+
 

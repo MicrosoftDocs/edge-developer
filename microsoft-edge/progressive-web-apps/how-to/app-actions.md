@@ -260,9 +260,7 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 <!-- ====================================================================== -->
 ## Package a store PWA in Edge Stable
 
-At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
-
-1. Upgrade to Edge Stable 137 version.
+At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.
 
 1. Package your PWA for [PWABuilder.com](https://www.pwabuilder.com); see [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 
