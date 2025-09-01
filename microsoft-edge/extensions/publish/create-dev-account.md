@@ -10,7 +10,7 @@ ms.date: 11/01/2022
 ---
 # Register as a Microsoft Edge extension developer
 
-This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
+This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
 
@@ -33,7 +33,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 <!-- ====================================================================== -->
 ## Create a Microsoft account 
 
-To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to sign in to  Partner Center. Follow the prompts displayed in the dialogs to automatically create a Microsoft account (MSA).
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to sign in to  Partner Center. Follow the prompts displayed in the dialogs to automatically create a Microsoft account (MSA).
 
 There is no registration fee for submitting extensions to the Microsoft Edge program.
 
@@ -92,7 +92,7 @@ This field is either where you live, or where your business is located.
 <!-- ------------------------------ -->
 #### Account types
 
-The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 > [!IMPORTANT]
 > After enrollment, you aren't able to change the value of this field.
@@ -109,13 +109,13 @@ An individual account is appropriate for a developer not associated with a compa
 
 A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
-For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  See [Verify your company account information](./verify-microsoft-edge-program.md).
+For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  See [Verify your company account information](./verify-microsoft-edge-program.md).
 
 
 <!-- ------------------------------ -->
 #### Publisher display name
 
-This field contains the name that's displayed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+This field contains the name that's displayed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
 
 The maximum length for this field is fifty (50) characters.
 
@@ -162,4 +162,4 @@ Other sites:
 * [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 * [account.microsoft.com](https://account.microsoft.com/account)
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
