@@ -97,7 +97,7 @@ The `env()` CSS function takes a second parameter that's useful for defining the
 
 When the title bar is hidden, only the system-critical window controls remain visible (the **Maximize**, **Minimize**, **Close**, and **App Info** icons).  This means that there is very little space available for users to move the application window around.
 
-You can use the `-webkit-app-region` CSS property to offer more ways for users to drag the app.  For example, if your app has its own titlebar, you can turn its titlebar into a window drag handle:
+You can use the `app-region` CSS property to offer more ways for users to drag the app.  For example, if your app has its own titlebar, you can turn its titlebar into a window drag handle:
 
 ```css
 #title-bar {
@@ -106,7 +106,7 @@ You can use the `-webkit-app-region` CSS property to offer more ways for users t
   top: env(titlebar-area-y, 0);
   height: env(titlebar-area-height, 50px);
   width: env(titlebar-area-width, 100%);
-  -webkit-app-region: drag;
+  app-region: drag;
 }
 ```
 
