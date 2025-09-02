@@ -23,6 +23,8 @@ ms.date: 02/15/2023
    limitations under the License.  -->
 # Optimize website speed using Lighthouse
 
+<!-- todo: mdn links -->
+
 This tutorial teaches you how to use **Lighthouse** and other tools in DevTools to find ways to make your websites load faster.
 
 The **Lighthouse** tool provides links to content that's hosted on third-party websites.  Microsoft isn't responsible for and has no control over the content of these sites and any data that may be collected.
@@ -230,7 +232,7 @@ For a small app, doing a one-off resize like this might be good enough. But for 
 
 *  Automatically resize images during your build process.
 
-*  Create multiple sizes of each image during the build process and then use `srcset` in your code. At runtime, the browser takes care of choosing which size is best for the device. To learn more, see [Responsive images](https://web.dev/responsive-images/) at web.dev.
+*  Create multiple sizes of each image during the build process and then use `srcset` in your code. At runtime, the browser takes care of choosing which size is best for the device. To learn more, see [Responsive images](https://web.dev/responsive-images/)<!-- todo: mdn link --> at web.dev.
 
 *  Use an image CDN that lets you dynamically resize an image when you request it.
 
