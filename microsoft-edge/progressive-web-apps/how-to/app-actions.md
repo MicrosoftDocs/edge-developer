@@ -286,7 +286,7 @@ To package your PWA as a Microsoft Store PWA:
 
    Before publishing your package, we recommend the above step.  If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.
 
-   Setting the initial availability to `false` is needed because Microsoft Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps`, and is disabled by default, because this is a new feature in the Edge browser and is currently in Developer Trial<!-- not Origin Trial--> stage, as of June 26, 2025.<!-- todo: maintain date & "currently" -->
+   Setting the initial availability to `false` is needed because Microsoft Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps`, and is disabled by default, because this feature is currently in Developer Trial.
 
    When the feature flag `#edge-app-actions-on-windows-for-web-apps` is officially rolled out (later in 2025),<!-- todo: update after rolled out --> Microsoft Edge will automatically switch the actions that you defined in the action definition manifest file from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
 
