@@ -48,13 +48,12 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 <!-- ---------- -->
 ###### Customize the Find behavior (Find API)
-<!-- todo: 
+<!-- todo:
 delete dup h6 section, a dup w/ August, where this set of apis already reached Phase 3
 first, check that the content is identical in the two tabsets
 -->
 
 The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
-
 * Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
 * Find text strings and navigate among them within a WebView2 control.
 * Programmatically initiate **Find** operations, and navigate **Find** results.
@@ -64,7 +63,6 @@ The Find API allows you to programmatically control **Find** operations, and ena
 There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
 
 We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -243,7 +241,6 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 ###### Customize the Find behavior (Find API)
 
 The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
-
 * Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
 * Find text strings and navigate among them within a WebView2 control.
 * Programmatically initiate **Find** operations, and navigate **Find** results.
@@ -473,7 +470,6 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 The WebView2 Worker APIs allow host applications to interact with Web Workers to offload tasks from the main thread, improve responsiveness, and support background operations.  These Web Workers include Dedicated Workers, Shared Workers, and Service Workers.
 
 These APIs provide:
-
 * **Lifecycle Events:** Monitor creation and destruction of workers.
 * **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`.
 * **Worker Management:** Query and retrieve worker registrations and instances.
@@ -481,12 +477,10 @@ These APIs provide:
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- 1 -->
-
 * `CoreWebView2` Class:
    * [CoreWebView2.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.dedicatedworkercreated?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 2 -->
-
 * [CoreWebView2DedicatedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.dedicatedworkercreated?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.destroying?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
@@ -496,24 +490,20 @@ These APIs provide:
    * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.webmessagereceived?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 3 -->
-
 * [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.worker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 4 -->
-
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.dedicatedworkercreated?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 5 -->
-
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.ServiceWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.serviceworkermanager?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2Profile.SharedWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.sharedworkermanager?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 6 -->
-
 * [CoreWebView2ServiceWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.destroying?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorker.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.postwebmessageasjson?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
@@ -522,24 +512,20 @@ These APIs provide:
    * [CoreWebView2ServiceWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.webmessagereceived?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 7 -->
-
 * [CoreWebView2ServiceWorkerActivatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs.activeserviceworker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 8 -->
-
 * [CoreWebView2ServiceWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 9 -->
-
 * [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs.serviceworkerregistration?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 10 -->
-
 * [CoreWebView2ServiceWorkerRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.activeserviceworker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerRegistration.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.origin?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
@@ -549,7 +535,6 @@ These APIs provide:
    * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.unregistering?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 11 -->
-
 * [CoreWebView2SharedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.destroying?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorker.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.origin?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
@@ -557,12 +542,10 @@ These APIs provide:
    * [CoreWebView2SharedWorker.TopLevelOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.toplevelorigin?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 12 -->
-
 * [CoreWebView2SharedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs.worker?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 13 -->
-
 * [CoreWebView2SharedWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.getsharedworkersasync?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.sharedworkercreated?view=webview2-dotnet-1.0.3415-prerelease&preserve-view=true)
@@ -570,12 +553,10 @@ These APIs provide:
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- 1 -->
-
 * `CoreWebView2` Class:
    * [CoreWebView2.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#dedicatedworkercreated)
 
 <!-- 2 -->
-
 * [CoreWebView2DedicatedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#dedicatedworkercreated)
    * [CoreWebView2DedicatedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#destroying)
@@ -585,24 +566,20 @@ These APIs provide:
    * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#webmessagereceived)
 
 <!-- 3 -->
-
 * [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#worker)
    * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#originalsourceframeinfo)
 
 <!-- 4 -->
-
 * `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#dedicatedworkercreated)
 
 <!-- 5 -->
-
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.ServiceWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#serviceworkermanager)
    * [CoreWebView2Profile.SharedWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#sharedworkermanager)
 
 <!-- 6 -->
-
 * [CoreWebView2ServiceWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#destroying)
    * [CoreWebView2ServiceWorker.PostWebMessageAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#postwebmessageasjson)
@@ -611,24 +588,20 @@ These APIs provide:
    * [CoreWebView2ServiceWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#webmessagereceived)
 
 <!-- 7 -->
-
 * [CoreWebView2ServiceWorkerActivatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#activeserviceworker)
 
 <!-- 8 -->
-
 * [CoreWebView2ServiceWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#getserviceworkerregistrationsasync)
    * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#getserviceworkerregistrationsasync)
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#serviceworkerregistered)
 
 <!-- 9 -->
-
 * [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#serviceworkerregistration)
 
 <!-- 10 -->
-
 * [CoreWebView2ServiceWorkerRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#activeserviceworker)
    * [CoreWebView2ServiceWorkerRegistration.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#origin)
@@ -638,7 +611,6 @@ These APIs provide:
    * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#unregistering)
 
 <!-- 11 -->
-
 * [CoreWebView2SharedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#destroying)
    * [CoreWebView2SharedWorker.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#origin)
@@ -646,12 +618,10 @@ These APIs provide:
    * [CoreWebView2SharedWorker.TopLevelOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#toplevelorigin)
 
 <!-- 12 -->
-
 * [CoreWebView2SharedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#worker)
 
 <!-- 13 -->
-
 * [CoreWebView2SharedWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true)
    * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#getsharedworkersasync)
    * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.3415-prerelease&preserve-view=true#sharedworkercreated)
@@ -659,13 +629,11 @@ These APIs provide:
 ##### [Win32/C++](#tab/win32cpp)
 
 <!-- 1 -->
-
 * [ICoreWebView2Experimental30](/microsoft-edge/webview2/reference/win32/icorewebview2experimental30?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2Experimental30::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimental30?view=webview2-1.0.3415-prerelease&preserve-view=true#add_dedicatedworkercreated)
    * [ICoreWebView2Experimental30::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimental30?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_dedicatedworkercreated)
 
 <!-- 2 -->
-
 * [ICoreWebView2ExperimentalDedicatedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalDedicatedWorker::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#add_dedicatedworkercreated)
    * [ICoreWebView2ExperimentalDedicatedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#add_destroying)
@@ -678,53 +646,42 @@ These APIs provide:
    * [ICoreWebView2ExperimentalDedicatedWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_webmessagereceived)
 
 <!-- 3 -->
-
 * [ICoreWebView2ExperimentalDedicatedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkercreatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalDedicatedWorkerCreatedEventArgs::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkercreatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true#get_originalsourceframeinfo)
    * [ICoreWebView2ExperimentalDedicatedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkercreatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true#get_worker)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkercreatedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalDedicatedWorkerDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkerdedicatedworkercreatedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalDedicatedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkerdestroyingeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalDedicatedWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldedicatedworkerwebmessagereceivedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 4 -->
-
 * [ICoreWebView2ExperimentalFrame9](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe9?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalFrame9::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe9?view=webview2-1.0.3415-prerelease&preserve-view=true#add_dedicatedworkercreated)
    * [ICoreWebView2ExperimentalFrame9::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe9?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_dedicatedworkercreated)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalFrameDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframededicatedworkercreatedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalGetServiceWorkerRegistrationsCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgetserviceworkerregistrationscompletedhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalGetSharedWorkersCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgetsharedworkerscompletedhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 5 -->
-
 * [ICoreWebView2ExperimentalProfile13](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile13?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProfile13::get_ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile13?view=webview2-1.0.3415-prerelease&preserve-view=true#get_serviceworkermanager)
    * [ICoreWebView2ExperimentalProfile13::get_SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile13?view=webview2-1.0.3415-prerelease&preserve-view=true#get_sharedworkermanager)
 
 <!-- 6 -->
-
 * [ICoreWebView2ExperimentalServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker?view=webview2-1.0.3415-prerelease&preserve-view=true#add_destroying)
    * [ICoreWebView2ExperimentalServiceWorker::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker?view=webview2-1.0.3415-prerelease&preserve-view=true#add_webmessagereceived)
@@ -735,20 +692,16 @@ These APIs provide:
    * [ICoreWebView2ExperimentalServiceWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_webmessagereceived)
 
 <!-- 7 -->
-
 * [ICoreWebView2ExperimentalServiceWorkerActivatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorkerActivatedEventArgs::get_ActiveServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true#get_activeserviceworker)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerActivatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerdestroyingeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 8 -->
-
 * [ICoreWebView2ExperimentalServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true#add_serviceworkerregistered)
    * [ICoreWebView2ExperimentalServiceWorkerManager::GetServiceWorkerRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true#getserviceworkerregistrations)
@@ -756,16 +709,13 @@ These APIs provide:
    * [ICoreWebView2ExperimentalServiceWorkerManager::remove_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_serviceworkerregistered)
 
 <!-- 9 -->
-
 * [ICoreWebView2ExperimentalServiceWorkerRegisteredEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorkerRegisteredEventArgs::get_ServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true#get_serviceworkerregistration)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerRegisteredEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 10 -->
-
 * [ICoreWebView2ExperimentalServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorkerRegistration::add_ServiceWorkerActivated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration?view=webview2-1.0.3415-prerelease&preserve-view=true#add_serviceworkeractivated)
    * [ICoreWebView2ExperimentalServiceWorkerRegistration::add_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration?view=webview2-1.0.3415-prerelease&preserve-view=true#add_unregistering)
@@ -777,21 +727,17 @@ These APIs provide:
    * [ICoreWebView2ExperimentalServiceWorkerRegistration::remove_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_unregistering)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerRegistrationCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationcollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalServiceWorkerRegistrationCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationcollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true#get_count)
    * [ICoreWebView2ExperimentalServiceWorkerRegistrationCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationcollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true#getvalueatindex)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerRegistrationUnregisteringEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationunregisteringeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalServiceWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerwebmessagereceivedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 11 -->
-
 * [ICoreWebView2ExperimentalSharedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworker?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalSharedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#add_destroying)
    * [ICoreWebView2ExperimentalSharedWorker::get_Origin](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#get_origin)
@@ -800,26 +746,21 @@ These APIs provide:
    * [ICoreWebView2ExperimentalSharedWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworker?view=webview2-1.0.3415-prerelease&preserve-view=true#remove_destroying)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalSharedWorkerCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalSharedWorkerCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true#get_count)
    * [ICoreWebView2ExperimentalSharedWorkerCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercollectionview?view=webview2-1.0.3415-prerelease&preserve-view=true#getvalueatindex)
 
 <!-- 12 -->
-
 * [ICoreWebView2ExperimentalSharedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercreatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalSharedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercreatedeventargs?view=webview2-1.0.3415-prerelease&preserve-view=true#get_worker)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalSharedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkercreatedeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- win32-only -->
-
 * [ICoreWebView2ExperimentalSharedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkerdestroyingeventhandler?view=webview2-1.0.3415-prerelease&preserve-view=true)
 
 <!-- 13 -->
-
 * [ICoreWebView2ExperimentalSharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalSharedWorkerManager::add_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true#add_sharedworkercreated)
    * [ICoreWebView2ExperimentalSharedWorkerManager::GetSharedWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedworkermanager?view=webview2-1.0.3415-prerelease&preserve-view=true#getsharedworkers)
@@ -881,11 +822,11 @@ This API is ideal for apps that require a modern, immersive UI experience.
 
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
+
 <!-- ---------- -->
 ###### Customize the Find behavior (Find API)
 
 The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
-
 * Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
 * Find text strings and navigate among them within a WebView2 control.
 * Programmatically initiate **Find** operations, and navigate **Find** results.
@@ -1168,7 +1109,6 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
-
    * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
    * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
 
@@ -1331,7 +1271,6 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
-
    * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
    * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
 
@@ -1455,7 +1394,6 @@ No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 
 API Reference:
-
 * [WebView2 API Reference](../webview2-api-reference.md)
    * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
    * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
