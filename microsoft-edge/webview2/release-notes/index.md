@@ -45,6 +45,34 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
+
+<!-- ------------------------------ -->
+#### Bug fixes
+<!-- todo: 
+expect at least 1 bug fix for Release SDK
+are there any functional differences between Aug Release SDK vs. Sep Release SDK?
+make a visible statement for Maintainers & Users, to that effect
+-->
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+
 <!-- end of Sep 2025 Release SDK -->
 
 
