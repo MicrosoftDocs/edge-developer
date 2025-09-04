@@ -33,6 +33,9 @@ description
 <!-- ------------------------------ -->
 #### Bug fixes
 
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
 
 <!-- ---------- -->
 ###### Runtime and SDK
@@ -109,6 +112,9 @@ description
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
+There are no bug fixes in this Prerelease SDK.
+This Prerelease SDK includes the following bug fixes.
 
 
 <!-- ---------- -->

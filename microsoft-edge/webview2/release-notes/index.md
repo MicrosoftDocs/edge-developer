@@ -54,6 +54,9 @@ are there any functional differences between Aug Release SDK vs. Sep Release SDK
 make a visible statement for Maintainers & Users, to that effect
 -->
 
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
 
 <!-- ---------- -->
 ###### Runtime and SDK
@@ -101,6 +104,8 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 <!-- ------------------------------ -->
 #### Bug fixes
+
+This Prerelease SDK includes the following bug fixes.
 
 
 <!-- ---------- -->
