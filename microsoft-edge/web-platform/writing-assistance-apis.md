@@ -556,6 +556,7 @@ You can also contribute to the discussion about the design of the Writing Assist
 
 * [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis), on the Web Machine Learning GitHub repo.
 * [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+* [Translate text with the Translator API](./translator-api.md).
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
 <!-- todo: reveal draft-demo link?
 * [/webnn/](https://github.com/MicrosoftEdge/Demos/tree/main/webnn/) - Source code and Readme for the WebNN demo in the `MicrosoftEdge / Demos` repo. -->
