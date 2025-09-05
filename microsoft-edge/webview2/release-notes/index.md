@@ -72,6 +72,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### General changes
+<!-- todo: polish like in Release section -->
+
+This release contains internal improvements that have been made to make the APIs robust.  The testing infrastructure has been made robust, to ensure that the APIs work correctly.  The APIs have been tested for quality, to meet various scenarios.
+
+
+<!-- ------------------------------ -->
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
