@@ -260,9 +260,9 @@ The above code is not in [Demos/wami/manifest.json](https://github.com/Microsoft
 <!-- ====================================================================== -->
 ## Package a store PWA in Edge Stable
 
-At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.  You must use Microsoft Edge 137 or greater.
+Next, your PWA needs to be packaged as a Microsoft Store PWA, to be called by the Windows App Actions framework.
 
-1. Upgrade to Edge Stable 137 version.
+To package your PWA as a Microsoft Store PWA:
 
 1. Package your PWA for [PWABuilder.com](https://www.pwabuilder.com); see [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 
@@ -286,7 +286,7 @@ At the current stage, your PWA needs to be packaged as a Microsoft Store PWA, to
 
    Before publishing your package, we recommend the above step.  If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.
 
-   Setting the initial availability to `false` is needed because Microsoft Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps`, and is disabled by default, because this is a new feature in the Edge browser and is currently in Developer Trial<!-- not Origin Trial--> stage, as of June 26, 2025.
+   Setting the initial availability to `false` is needed because Microsoft Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps`, and is disabled by default, because this feature is currently in Developer Trial.
 
    When the feature flag `#edge-app-actions-on-windows-for-web-apps` is officially rolled out (later in 2025),<!-- todo: update after rolled out --> Microsoft Edge will automatically switch the actions that you defined in the action definition manifest file from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
 
