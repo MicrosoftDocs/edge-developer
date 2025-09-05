@@ -10,6 +10,11 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
@@ -66,6 +71,11 @@ Release Date: Monthname nn, 2025
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
