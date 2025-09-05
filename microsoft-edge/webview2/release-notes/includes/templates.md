@@ -1,4 +1,4 @@
-<!-- Jul 2025 Release SDK -->
+<!-- Oct 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
@@ -7,6 +7,11 @@ Release Date: Monthname nn, 2025
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -33,6 +38,9 @@ description
 <!-- ------------------------------ -->
 #### Bug fixes
 
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
 
 <!-- ---------- -->
 ###### Runtime and SDK
@@ -51,10 +59,10 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Release SDK -->
+<!-- end of Oct 2025 Release SDK -->
 
 
-<!-- Jul 2025 Prerelease SDK -->
+<!-- Oct 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
@@ -63,6 +71,11 @@ Release Date: Monthname nn, 2025
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -110,6 +123,9 @@ description
 <!-- ------------------------------ -->
 #### Bug fixes
 
+There are no bug fixes in this Prerelease SDK.
+This Prerelease SDK includes the following bug fixes.
+
 
 <!-- ---------- -->
 ###### Runtime and SDK
@@ -128,4 +144,4 @@ description
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jul 2025 Prerelease SDK -->
+<!-- end of Oct 2025 Prerelease SDK -->
