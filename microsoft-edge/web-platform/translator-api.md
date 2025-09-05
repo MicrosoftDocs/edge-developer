@@ -18,7 +18,8 @@ For introductory information, see [Translator and Language Detector APIs](https:
 **Detailed contents:**
 
 * [Availability of the Translator API](#availability-of-the-translator-api)
-* [Alternatives to and benefits of the Translator API](#alternatives-to-and-benefits-of-the-translator-api)
+* [Benefits of the Translator API](#benefits-of-the-translator-api)
+* [Alternatives to the Translator API](#alternatives-to-the-translator-api)
 * [The Phi-4-mini model](#the-phi-4-mini-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
@@ -48,20 +49,11 @@ The Translator API is available as a developer preview in the Microsoft Edge Can
 
 The Translator API is optimized for translating text content.
 
-As an alternative, the Prompt API serves more custom prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
-
 
 <!-- ====================================================================== -->
-## Alternatives to and benefits of the Translator API
+## Benefits of the Translator API
 
-To leverage AI capabilities in websites and browser extensions, you can also use the following methods:
-
-* Send network requests to cloud-based AI services, such as [Azure AI solutions](https://azure.microsoft.com/solutions/ai).
-
-* Run local AI models by using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
-
-
-The Translator API use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
+The Translator API uses a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud AI service.
 
@@ -74,6 +66,18 @@ The Translator API use a model that's provided by Microsoft Edge and is built in
 * **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser.  This reduces network costs for the developer and user.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise, or using third-party frameworks.
+
+
+<!-- ====================================================================== -->
+## Alternatives to the Translator API
+
+As an alternative, the Prompt API serves more custom prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+
+To leverage AI capabilities in websites and browser extensions, you can instead use the following methods:
+
+* Send network requests to cloud-based AI services, such as [Azure AI solutions](https://azure.microsoft.com/solutions/ai).
+
+* Run local AI models by using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
 
 
 <!-- ====================================================================== -->
