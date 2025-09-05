@@ -5,14 +5,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 09/04/2025
+ms.date: 09/05/2025
 ---
 # Translate text with the Translator API
 <!-- todo: create a short link like https://aka.ms/edge-translator-api-docs -->
 
-The Translator API is an experimental web API that allows you to translate text between two different languages by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code
+The Translator API is an experimental web API that allows you to translate text between two different languages by using a small language model (SLM) that is built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
-For introductory information about the Translator API, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
+For introductory information, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
 
 
 **Detailed contents:**
@@ -44,9 +44,11 @@ For introductory information about the Translator API, see [Translator and Langu
 <!-- ====================================================================== -->
 ## Availability of the Translator API
 
-The Translator API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version <!-- todo add correct version --> XYZ.
+The Translator API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 1234<!-- todo: fix version # -->.
 
-The Translator API is optimized for translating text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by this API, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+The Translator API is optimized for translating text content.
+
+As an alternative, the Prompt API serves more custom prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 
 <!-- ====================================================================== -->
@@ -56,35 +58,37 @@ To leverage AI capabilities in websites and browser extensions, you can also use
 
 * Send network requests to cloud-based AI services, such as [Azure AI solutions](https://azure.microsoft.com/solutions/ai).
 
-* Run local AI models using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
+* Run local AI models by using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
 
 
-The Translator API use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
+The Translator API use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud AI service.
 
-* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and <!-- todo: specify subject word: this API? --> may also be used when the device is offline.
 
-* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
+* **Improved privacy:** The data that's input into the model never leaves the device, and isn't collected to train AI models.
 
-The Translator API use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
+The Translator API use a model that's provided by Microsoft Edge and is built into the browser.  This model has some additional benefits over custom local solutions such as WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser.  This reduces network costs for the developer and user.
 
-* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise, or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
+<!-- todo: is the Translator API also using Phi-4-mini?  is this section relevant? -->
 
-<!-- todo: is the Translator API also using Phi-4-mini? Is this section relevant? -->
-The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Prompt API allows you to prompt Phi-4-mini.  Phi-4-mini is a powerful small language model (SLM) that excels at text-based tasks, and is built into Microsoft Edge.
+
+To learn more about Phi-4-mini and its capabilities, see the [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct) Model Card.
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
+Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations) in the Model Card for Phi-4-mini-instruct.
 
 
 <!-- ------------------------------ -->
@@ -119,7 +123,7 @@ An initial download of the model will be required the first time a website calls
 
 To use any of the Translator API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer<!-- todo add correct version -->).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer<!-- todo: add correct version -->).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 
@@ -147,21 +151,21 @@ To see the Translator API in action, and review existing code that uses these AP
 
 1. [Enable the Translator API](#enable-the-translator-api), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/).
+1. In Microsoft Edge Canary or Dev, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
-1. In the information banner at the top, check the status: it initially reads **On-device API and model downloadable. The model will be downloaded the first time the API is used.**.
+1. In the information banner at the top, check the status: it initially reads **On-device API and model downloadable. The model will be downloaded the first time the API is used.**
 
-1. Enter text to translate in the **Text to translate** and optionally change the **Source language** and **Target language** values.
+1. Enter text to translate in the **Text to translate** text box, and optionally change the **Source language** and **Target language** values.
 
 1. Click the **Translate** button.
 
-   If the model has not been downloaded before, the downlad starts.
+   If the model hasn't been downloaded before, the download starts.
    
    ![Status indicator showing model downloading progress](./translator-api-images/model-downloading.png)
    
    If the model download doesn't start, restart Microsoft Edge and try again.
 
-   The Translator API is only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
+   The Translator API is only supported on devices that meet certain hardware requirements.  See [Hardware requirements](#hardware-requirements), above.
 
    After the model has downloaded, the model starts generating a translation of the text from the source language into the target language.
 
@@ -196,13 +200,13 @@ if (!Translator) {
 <!-- ------------------------------ -->
 #### Check if the model can be used
 
-The Translator API can only be used in the following cases:
+The Translator API has the following requirements:
 
-* If the device supports running the model.
-* Once the language model and the model runtime have been downloaded by Microsoft Edge.
-* If translating from the source language to the target is supported by the model.
+* The device must support running the model.
+* The language model and the model runtime must already have been downloaded by Microsoft Edge.
+* Translating from the specified source language to the specified target language must be supported by the model.
 
-To check if the API can be used, use the API's `availability()` method:
+To check if the API can be used, call `availability()`:
 
 ```javascript
 const availability = await Translator.availability({
@@ -237,7 +241,7 @@ const session = await Translator.create({
 });
 ```
 
-You can also monitor the model download by using the `monitor` option, documented below.
+You can also monitor the model download by using the `monitor` option, as follows.
 
 
 <!-- ---------- -->
@@ -271,9 +275,17 @@ const session = await Translator.create({
 <!-- ------------------------------ -->
 #### Run the Translator API
 
-To translate text, after you have created a model session, use the `translatorSession.translate()`.
+To translate text, after you have created a model session, call `translatorSession.translate()`.
+<!-- todo: alt:
+To display the translated text after you have created a model session, after translation is complete, call `translatorSession.translate()`.
+-->
 
-Or, to display the text as it's getting translated, use the streaming versions of the method: `translatorSession.translateStreaming()`.
+Or, to display the text while it's being translated, use the streaming versions of the method: `translatorSession.translateStreaming()`.
+<!-- todo: 
+make the two paragraphs structurally parallel - reconcile w/ the intro paragraphs on two sections below
+
+design/extract a clearly contrasting pair of <summary> sentences
+-->
 
 These two methods are documented below.
 
@@ -301,7 +313,7 @@ console.log(translatedText);
 <!-- ---------- -->
 ###### Display tokens as they are generated
 
-To display the tokens as they are being generated, use the streaming versions of the above method instead.  The `translateStreaming()` method returns a stream object right away.  Use the returned stream object to display the response tokens as they are being generated:
+To display the tokens as they are being generated, use the streaming versions of the above method instead.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
 
 ```javascript
 // Create a Translator session.
@@ -402,7 +414,7 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or language model, and whether other task-specific APIs, such as for proofreading, would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- TODO: create a new feedback issue -->.
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue -->.
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
 
