@@ -43,7 +43,11 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### General changes
 
-This release contains internal improvements that have been made to make the APIs robust.  The testing infrastructure has been made robust, to ensure that the APIs work correctly.  The APIs have been tested for quality, to meet various scenarios.
+This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+* The testing infrastructure has been strengthened.
+* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
+
+These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
 
 
 <!-- ------------------------------ -->
@@ -73,9 +77,12 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### General changes
-<!-- todo: polish like in Release section -->
 
-This release contains internal improvements that have been made to make the APIs robust.  The testing infrastructure has been made robust, to ensure that the APIs work correctly.  The APIs have been tested for quality, to meet various scenarios.
+This Prerelease SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+* The testing infrastructure has been strengthened.
+* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
+
+These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
 
 
 <!-- ------------------------------ -->
