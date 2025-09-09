@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 09/08/2025
+ms.date: 09/07/2025
 ---
 # Translate text with the Translator API
 <!-- todo: create a short link like https://aka.ms/edge-translator-api-docs -->
