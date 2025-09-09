@@ -31,13 +31,9 @@ During a recalculate style event, the browser may invalidate many DOM nodes depe
 
 Microsoft Edge 140 also includes the following updates from the Chromium project:
 
-* [Debug more insights with Gemini](https://developer.chrome.com/blog/new-in-devtools-140#ai-insights)
 * [Emulate the 'Save-Data' header in 'Network conditions'](https://developer.chrome.com/blog/new-in-devtools-140#save-data)
 * [See the Baseline status in a CSS property tooltip](https://developer.chrome.com/blog/new-in-devtools-140#baseline-tooltip)
 * [Override form factors in user agent client hints](https://developer.chrome.com/blog/new-in-devtools-140#form-factors)
-* [Lighthouse 12.8.0](https://developer.chrome.com/blog/new-in-devtools-140#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-140#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
