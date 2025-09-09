@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 140)
-description: "DOM tree in Elements tool highlights semantic errors. And more."
+description: Invalidation count in CSS selector stats, in the Performance tool.  And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -16,18 +16,28 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- ====================================================================== -->
 ## Invalidation count in CSS selector stats
 
-<!-- Subtitle: Identify expensive selectors with the new column in CSS selctor stats (Performance panel) to reduce costly style recalculations. -->
+<!-- Subtitle: Identify expensive selectors with the new column in CSS selector stats (Performance tool) to reduce costly style recalculations. -->
 
-We updated the Selector stats table view in the Performance panel with a new column: Invalidation count. This indicates an aggregated count of DOM nodes matched by a selector that were invalidated and had their style recalculated. Note. a node can be invalidated multiple times and by multiple selectors.
- 
-During a recalculate style event, the browser may invalidate many DOM nodes depending on the selector. Inefficient selectors can impact your webpage's performance and if you have high style recalculation costs, then it may be due to over-invalidation. You can use this new insight to identify selectors that have a high invalidation count and reduce over-invalidation by refining your style rules.
+We updated the CSS **Selector stats** table view in the **Performance** tool with a new column: **Invalidation count**.  The **Invalidation count** column shows an aggregated count of DOM nodes that are matched by a selector that were invalidated and had their style recalculated.  A node can be invalidated multiple times and by multiple selectors.
+
+<!-- todo: png -->
+
+During a recalculate style event, the browser may invalidate many DOM nodes depending on the selector.  Inefficient selectors can impact your webpage's performance.  If you have high style-recalculation costs, that might be caused by over-invalidation.  You can use this new insight to identify selectors that have a high invalidation count, and reduce over-invalidation by refining your CSS style rules.
 
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
+<!-- https://developer.chrome.com/blog/new-in-devtools-140 -->
 
 Microsoft Edge 140 also includes the following updates from the Chromium project:
 
+* [Debug more insights with Gemini](https://developer.chrome.com/blog/new-in-devtools-140#ai-insights)
+* [Emulate the 'Save-Data' header in 'Network conditions'](https://developer.chrome.com/blog/new-in-devtools-140#save-data)
+* [See the Baseline status in a CSS property tooltip](https://developer.chrome.com/blog/new-in-devtools-140#baseline-tooltip)
+* [Override form factors in user agent client hints](https://developer.chrome.com/blog/new-in-devtools-140#form-factors)
+* [Lighthouse 12.8.0](https://developer.chrome.com/blog/new-in-devtools-140#lighthouse)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-140#misc)
+<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
