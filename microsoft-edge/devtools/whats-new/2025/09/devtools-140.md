@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 136)
+title: What's New in DevTools (Microsoft Edge 140)
 description: "DOM tree in Elements tool highlights semantic errors. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
