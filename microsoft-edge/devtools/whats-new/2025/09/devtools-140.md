@@ -18,7 +18,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: Identify expensive selectors with the new column in CSS selector stats (Performance tool) to reduce costly style recalculations. -->
 
-In the **Performance** tool, the CSS **Selector stats** table has a new column: **Invalidation count**.  The **Invalidation count** column shows an aggregated count of DOM nodes that are matched by a selector that were invalidated and had their style recalculated.  A node can be invalidated multiple times and by multiple selectors.
+In the **Performance** tool, the CSS **Selector stats** tab's table has a new column: **Invalidation count**.  The **Invalidation count** column shows an aggregated count of DOM nodes that are matched by a selector that were invalidated and had their style recalculated.  A node can be invalidated multiple times and by multiple selectors.
 
 ![Invalidation count in Selector stats](./devtools-140-images/selector-stats-invalidations.jpg)
 
