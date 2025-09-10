@@ -16,29 +16,29 @@ For introductory information, see [Translator and Language Detector APIs](https:
 
 
 **Detailed contents:**
-<!-- todo: update -->
+<!-- https://github.com/captainbrosset/WebToc -->
 
-* [Availability of the Translator API](#availability-of-the-translator-api)
-* [Benefits of the Translator API](#benefits-of-the-translator-api)
-* [Alternatives to the Translator API](#alternatives-to-the-translator-api)
-* [Disclaimer](#disclaimer)
-* [Model availability](#model-availability)
-* [Enable the Translator API](#enable-the-translator-api)
-* [See a working example](#see-a-working-example)
-* [Use the Translator API](#use-the-translator-api)
-* [Check if the API is enabled](#check-if-the-api-is-enabled)
-* [Check if the model can be used](#check-if-the-model-can-be-used)
-* [Create a new session](#create-a-new-session)
-    * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
-* [Run the Translator API](#run-the-translator-api)
-    * [Wait for the text to be translated](#wait-for-the-text-to-be-translated)
-    * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
-* [Stop translating text](#stop-translating-text)
-* [Destroy a session](#destroy-a-session)
-    * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
-    * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
-* [Send feedback](#send-feedback)
-* [See also](#see-also)
+  * [Availability of the Translator API](#availability-of-the-translator-api)
+  * [Benefits of the Translator API](#benefits-of-the-translator-api)
+  * [Alternatives to the Translator API](#alternatives-to-the-translator-api)
+  * [Disclaimer](#disclaimer)
+  * [Model availability](#model-availability)
+  * [Enable the Translator API](#enable-the-translator-api)
+  * [See a working example](#see-a-working-example)
+  * [Use the Translator API](#use-the-translator-api)
+  * [Check if the Translator API is enabled](#check-if-the-translator-api-is-enabled)
+  * [Check if the model can be used (availability())](#check-if-the-model-can-be-used-availability)
+  * [Create a new session (create())](#create-a-new-session-create)
+  * [Monitor the progress of the model download (monitor:)](#monitor-the-progress-of-the-model-download-monitor)
+  * [Run the Translator API (translate())](#run-the-translator-api-translate)
+      * [Wait for the text to be translated (translate())](#wait-for-the-text-to-be-translated-translate)
+      * [Display tokens as they are generated (translateStreaming())](#display-tokens-as-they-are-generated-translatestreaming)
+  * [Stop translating text (abortController.signal)](#stop-translating-text-abortcontrollersignal)
+  * [Destroy a session (destroy())](#destroy-a-session-destroy)
+      * [Destroy a session by calling destroy()](#destroy-a-session-by-calling-destroy)
+      * [Destroy a session by using AbortController](#destroy-a-session-by-using-abortcontroller)
+  * [Send feedback](#send-feedback)
+  * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
