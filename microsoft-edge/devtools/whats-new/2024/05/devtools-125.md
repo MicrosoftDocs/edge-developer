@@ -26,7 +26,7 @@ todo video
 
 <!-- Subtitle: Use the "Enable CSS selector stats" setting instead of the "Enable advanced rendering instrumentation (slow)" to capture CSS selector statistics for Recalculate Style events-->
 
-In the **Performance** tool, the **Enable advanced rendering instrumentation (slow)** checkbox has been replaced by the **Enable CSS selector stats** checkbox.  This checkbox controls the CSS selector statistics feature.
+In the **Performance** tool, the **Enable advanced rendering instrumentation (slow)** checkbox has been replaced by the **Enable CSS selector stats** checkbox.  (Update: As of Edge 140, the checkbox label is **Enable CSS selector stats (slow)**, and the checkboxes are on the right.)  This checkbox controls the CSS selector statistics feature.
 
 ![Selector stats tab](./devtools-125-images/selector-stats.png)
 
