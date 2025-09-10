@@ -10,34 +10,33 @@ ms.date: 09/09/2025
 # Translate text with the Translator API
 <!-- todo: create a short link like https://aka.ms/edge-translator-api-docs -->
 
-The Translator API is an experimental web API that allows you to translate text between two different languages by using a small language model (SLM) that is built into Microsoft Edge, from JavaScript code in your website or browser extension.
+The Translator API is an experimental web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
 For introductory information, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
 
 
 **Detailed contents:**
+<!-- todo: update -->
 
 * [Availability of the Translator API](#availability-of-the-translator-api)
 * [Benefits of the Translator API](#benefits-of-the-translator-api)
 * [Alternatives to the Translator API](#alternatives-to-the-translator-api)
-* [The Phi-4-mini model](#the-phi-4-mini-model)
-    * [Disclaimer](#disclaimer)
-    * [Hardware requirements](#hardware-requirements)
-    * [Model availability](#model-availability)
+* [Disclaimer](#disclaimer)
+* [Model availability](#model-availability)
 * [Enable the Translator API](#enable-the-translator-api)
 * [See a working example](#see-a-working-example)
 * [Use the Translator API](#use-the-translator-api)
-    * [Check if the API is enabled](#check-if-the-api-is-enabled)
-    * [Check if the model can be used](#check-if-the-model-can-be-used)
-    * [Create a new session](#create-a-new-session)
-        * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
-    * [Run the Translator API](#run-the-translator-api)
-        * [Wait for the text to be translated](#wait-for-the-text-to-be-translated)
-        * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
-    * [Stop translating text](#stop-translating-text)
-    * [Destroy a session](#destroy-a-session)
-        * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
-        * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
+* [Check if the API is enabled](#check-if-the-api-is-enabled)
+* [Check if the model can be used](#check-if-the-model-can-be-used)
+* [Create a new session](#create-a-new-session)
+    * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
+* [Run the Translator API](#run-the-translator-api)
+    * [Wait for the text to be translated](#wait-for-the-text-to-be-translated)
+    * [Display tokens as they are generated](#display-tokens-as-they-are-generated)
+* [Stop translating text](#stop-translating-text)
+* [Destroy a session](#destroy-a-session)
+    * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
+    * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
 * [Send feedback](#send-feedback)
 * [See also](#see-also)
 
@@ -47,85 +46,45 @@ For introductory information, see [Translator and Language Detector APIs](https:
 
 The Translator API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 1234<!-- todo: fix version # -->.
 
-The Translator API is optimized for translating text content.
-
 
 <!-- ====================================================================== -->
 ## Benefits of the Translator API
 
-The Translator API uses a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
+The Translator API uses an expert model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
 
-* **Reduced cost:** There's no cost associated with using a cloud AI service.
+* **Reduced cost:** There's no cost associated with using a cloud translation service.
 
-* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and <!-- todo: specify subject word: this API? --> may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and <!-- todo: specify subject word: the model? this API? --> may also be used when the device is offline.
 
 * **Improved privacy:** The data that's input into the model never leaves the device, and isn't collected to train AI models.
 
-The Translator API use a model that's provided by Microsoft Edge and is built into the browser.  This model has some additional benefits over custom local solutions such as WebGPU, WebNN, or WebAssembly:
-
-* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser.  This reduces network costs for the developer and user.
-
-* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise, or using third-party frameworks.
+The translation models for specified language pairs are downloaded the first time the API is used in Microsoft Edge, and are subsequently shared across all websites in the browser.  The models are accessed via a straightforward web API that doesn't require knowledge of third-party frameworks, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise.
 
 
 <!-- ====================================================================== -->
 ## Alternatives to the Translator API
 
-As an alternative, the Prompt API serves more custom prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+You can send network requests to cloud-based translation services with more sophisticated capabilities, including neural translation; see [Azure AI Translator documentation](/azure/ai-services/translator/).
 
-To leverage AI capabilities in websites and browser extensions, you can instead use the following methods:
-
-* Send network requests to cloud-based AI services, such as [Azure AI solutions](https://azure.microsoft.com/solutions/ai).
-
-* Run local AI models by using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
+As an on-device alternative, the Prompt API serves more custom, multi-lingual<!-- todo: multi-language --> prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 
 <!-- ====================================================================== -->
-## The Phi-4-mini model
-<!-- todo: is the Translator API also using Phi-4-mini?  is this section relevant? -->
+## Disclaimer
 
-The Prompt API allows you to prompt Phi-4-mini.  Phi-4-mini is a powerful small language model (SLM) that excels at text-based tasks, and is built into Microsoft Edge.
-
-To learn more about Phi-4-mini and its capabilities, see the [Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct) Model Card.
+Like other machine translation models, the expert models in Microsft Edge can potentially produce translations that are unfair, unreliable, or offensive.  To learn more about the limitations of these machine translation models, see [Limitations](/azure/ai-foundry/responsible-ai/translator/transparency-note#limitations) in _Azure AI Translator Transparency Note_.
 
 
-<!-- ------------------------------ -->
-#### Disclaimer
+<!-- ====================================================================== -->
+## Model availability
 
-Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations) in the Model Card for Phi-4-mini-instruct.
-
-
-<!-- ------------------------------ -->
-#### Hardware requirements
-
-The Translator API developer preview is intended to work on devices with hardware capabilities that produce SLM outputs with predictable quality and latency.
-
-<!-- todo: any other requirements? -->
-The Translator API is currently limited to:
-
-* **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
-
-* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 10 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
-
-* **GPU:** 5.5 GB of VRAM or more.
-
-* **Network:** Unlimited data plan or unmetered connection.  The model is not downloaded if using a metered connection.
-
-To check if your device supports the Translator API developer preview, see [Enable the Translator API](#enable-the-translator-api) below and check your device performance class.
-
-Due to the experimental nature of the Translator API, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md) at the MSEdgeExplainers repository.
-
-
-<!-- ------------------------------ -->
-#### Model availability
-
-An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
 ## Enable the Translator API
 
-To use any of the Translator API in Microsoft Edge:
+To use the Translator API in Microsoft Edge:
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer<!-- todo: add correct version -->).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -143,10 +102,6 @@ To use any of the Translator API in Microsoft Edge:
 
 1. Restart Microsoft Edge Canary or Dev.
 
-1. To check if your device meets the hardware requirements for the Translator API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
-
-   If your device performance class is **High** or greater, the Translator API should be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
-
 
 <!-- ====================================================================== -->
 ## See a working example
@@ -157,19 +112,17 @@ To see the Translator API in action, and review existing code that uses these AP
 
 1. In Microsoft Edge Canary or Dev, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
-1. In the information banner at the top, check the status: it initially reads **On-device API and model downloadable. The model will be downloaded the first time the API is used.**
+1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable. The model for a specified language pair will be downloaded the first time the API is used.**
 
-1. Enter text to translate in the **Text to translate** text box, and optionally change the **Source language** and **Target language** values.
+1. In the **Text to translate** text box, enter text to translate, and optionally change the **Source language** and **Target language** values.
 
 1. Click the **Translate** button.
 
-   If the model hasn't been downloaded before, the download starts.
+   If the model for the specified language pair hasn't been downloaded before, the download starts.
    
    ![Status indicator showing model downloading progress](./translator-api-images/model-downloading.png)
    
    If the model download doesn't start, restart Microsoft Edge and try again.
-
-   The Translator API is only supported on devices that meet certain hardware requirements.  See [Hardware requirements](#hardware-requirements), above.
 
    After the model has downloaded, the model starts generating a translation of the text from the source language into the target language.
 
@@ -185,10 +138,13 @@ See also:
 
 <!-- ====================================================================== -->
 ## Use the Translator API
+<!-- leverage high-value h2s below -->
+
+The next sections are about using the Translator API.
 
 
-<!-- ------------------------------ -->
-#### Check if the API is enabled
+<!-- ====================================================================== -->
+## Check if the Translator API is enabled
 
 Before using the Translator API in your website's code, check that the API is enabled by testing the presence of the `Translator` object:
 
@@ -201,8 +157,8 @@ if (!Translator) {
 ```
 
 
-<!-- ------------------------------ -->
-#### Check if the model can be used
+<!-- ====================================================================== -->
+## Check if the model can be used (`availability()`)
 
 The Translator API has the following requirements:
 
@@ -215,7 +171,7 @@ To check if the API can be used, call `availability()`:
 ```javascript
 const availability = await Translator.availability({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 
 if (availability == "unavailable") {
@@ -232,8 +188,8 @@ if (availability == "available") {
 ```
 
 
-<!-- ------------------------------ -->
-#### Create a new session
+<!-- ====================================================================== -->
+## Create a new session (`create()`)
 
 Creating a session instructs the browser to load the language model in memory, so that it can be used.  Before you can translate text, create a new session by using the `create()` method and specify the source and target languages:
 
@@ -241,15 +197,15 @@ Creating a session instructs the browser to load the language model in memory, s
 // Create a Translator session.
 const session = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 ```
 
-You can also monitor the model download by using the `monitor` option, as follows.
+You can monitor the model download by using the `monitor` option, as follows.
 
 
-<!-- ---------- -->
-###### Monitor the progress of the model download
+<!-- ====================================================================== -->
+## Monitor the progress of the model download (`monitor:`)
 
 You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
 
@@ -258,7 +214,7 @@ You can follow the progress of the model download by using the `monitor` option.
 // download.
 const session = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh",
+  targetLanguage: "es",
   monitor: m => {
     // Use the monitor object argument to add an listener for the 
     // downloadprogress event.
@@ -276,8 +232,8 @@ const session = await Translator.create({
 ```
 
 
-<!-- ------------------------------ -->
-#### Run the Translator API
+<!-- ====================================================================== -->
+## Run the Translator API (`translate()`)
 
 To translate text, after you have created a model session, call `translatorSession.translate()`.
 <!-- todo: alt:
@@ -294,8 +250,8 @@ design/extract a clearly contrasting pair of <summary> sentences
 These two methods are documented below.
 
 
-<!-- ---------- -->
-###### Wait for the text to be translated
+<!-- ------------------------------ -->
+#### Wait for the text to be translated (`translate()`)
 
 To wait for the text to be fully translated before continuing to run code, use the `translate()` asynchronous method.  This method returns a promise that resolves once the API has finished generating text:
 
@@ -303,7 +259,7 @@ To wait for the text to be fully translated before continuing to run code, use t
 // Create a Translator session.
 const translatorSession = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 
 // Translate the text and wait for the translation to be done.
@@ -314,8 +270,8 @@ console.log(translatedText);
 ```
 
 
-<!-- ---------- -->
-###### Display tokens as they are generated
+<!-- ------------------------------ -->
+#### Display tokens as they are generated (`translateStreaming()`)
 
 To display the tokens as they are being generated, use the streaming versions of the above method instead.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
 
@@ -323,7 +279,7 @@ To display the tokens as they are being generated, use the streaming versions of
 // Create a Translator session.
 const translatorSession = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 
 // Ask the model to translate text.
@@ -337,8 +293,8 @@ for await (const chunk of stream) {
 ```
 
 
-<!-- ------------------------------ -->
-#### Stop translating text
+<!-- ====================================================================== -->
+## Stop translating text (`abortController.signal`)
 
 To stop translating text before the promise or stream returned by the above methods have resolved or ended, use an `AbortController` signal:
 
@@ -346,7 +302,7 @@ To stop translating text before the promise or stream returned by the above meth
 // Create a Translator session.
 const translatorSession = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 
 // Create an AbortController object.
@@ -364,8 +320,8 @@ abortController.abort();
 ```
 
 
-<!-- ------------------------------ -->
-#### Destroy a session
+<!-- ====================================================================== -->
+## Destroy a session (`destroy()`)
 
 Destroy the session to let the browser know that you don't need the language model anymore, so that the model can be unloaded from memory.
 
@@ -374,15 +330,15 @@ You can destroy a session in two different ways:
 * By using an `AbortController`.
 
 
-<!-- ---------- -->
-###### Destroy a session by using the destroy() method
+<!-- ------------------------------ -->
+#### Destroy a session by calling `destroy()`
 
 You can use the `destroy()` method with a `Translator` session:
 
 ```javascript
 const session = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh"
+  targetLanguage: "es"
 });
 
 // Later, destroy the session by using the destroy method.
@@ -390,8 +346,8 @@ session.destroy();
 ```
 
 
-<!-- ---------- -->
-###### Destroy a session by using an AbortController
+<!-- ------------------------------ -->
+#### Destroy a session by using `AbortController`
 
 Alternatively, you can create an `AbortController` object, create a `Translator` session, and then call `abort()`:
 
@@ -403,7 +359,7 @@ const controller = new AbortController();
 // AbortController object by using the signal option.
 const session = await Translator.create({
   sourceLanguage: "en",
-  targetLanguage: "zh",
+  targetLanguage: "es",
   signal: controller.signal
 });
 
@@ -416,9 +372,9 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or language model, and whether other task-specific APIs, such as for proofreading, would be useful.
+We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or expert model, and whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue -->.
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template -->.
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
 
