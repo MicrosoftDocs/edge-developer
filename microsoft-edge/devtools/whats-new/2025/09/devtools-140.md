@@ -24,6 +24,9 @@ In the **Performance** tool, the CSS **Selector stats** table has a new column: 
 
 During a recalculate style event, the browser may invalidate many DOM nodes depending on the selector.  Inefficient selectors can impact your webpage's performance.  If you have high style-recalculation costs, that might be caused by over-invalidation.  You can use this new insight to identify selectors that have a high invalidation count, and reduce over-invalidation by refining your CSS style rules.
 
+See also:
+* [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
