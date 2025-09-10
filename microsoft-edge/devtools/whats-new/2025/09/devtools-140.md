@@ -20,9 +20,9 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 In the **Performance** tool, the CSS **Selector stats** tab's table has a new column: **Invalidation count**.  The **Invalidation count** column shows an aggregated count of DOM nodes that are matched by a selector that were invalidated and had their style recalculated.  A node can be invalidated multiple times and by multiple selectors.
 
-![Invalidation count in Selector stats](./devtools-140-images/selector-stats-invalidations.jpg)
-
 During a recalculate style event, the browser may invalidate many DOM nodes depending on the selector.  Inefficient selectors can impact your webpage's performance.  If you have high style-recalculation costs, that might be caused by over-invalidation.  You can use this new insight to identify selectors that have a high invalidation count, and reduce over-invalidation by refining your CSS style rules.
+
+![Invalidation count in Selector stats](./devtools-140-images/selector-stats-invalidations.jpg)
 
 See also:
 * [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
