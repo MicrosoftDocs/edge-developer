@@ -98,7 +98,6 @@ To use the Translator API in Microsoft Edge:
 
    ![Flags page of browser](./translator-api-images/flags-translator-api.png)
 
-
 1. Restart Microsoft Edge Canary or Dev.
 
 
@@ -234,17 +233,10 @@ const session = await Translator.create({
 <!-- ====================================================================== -->
 ## Run the Translator API (`translate()`)
 
-To translate text, after you have created a model session, call `translatorSession.translate()`.
-<!-- todo: alt:
-To display the translated text after you have created a model session, after translation is complete, call `translatorSession.translate()`.
--->
+After you have created a model session, you can translate text. The Translation API provides two methods to translate text:
 
-Or, to display the text while it's being translated, use the streaming versions of the method: `translatorSession.translateStreaming()`.
-<!-- todo: 
-make the two paragraphs structurally parallel - reconcile w/ the intro paragraphs on two sections below
-
-design/extract a clearly contrasting pair of <summary> sentences
--->
+* `translatorSession.translate()` returns a promise which resolves once the text has been translated.
+* `translatorSession.translateStreaming()` immediately returns a stream object, which you can use to display the translated text, token by token, as it is being generated.
 
 These two methods are documented below.
 
