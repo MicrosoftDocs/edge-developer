@@ -12,7 +12,7 @@ ms.date: 09/09/2025
 
 The Translator API is an experimental web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
-For introductory information, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
+For more information, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
 
 
 **Detailed contents:**
@@ -54,9 +54,9 @@ The Translator API uses an expert model for machine translation that runs on the
 
 * **Reduced cost:** There's no cost associated with using a cloud translation service.
 
-* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and <!-- todo: specify subject word: the model? this API? --> may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when using this API to translate text, and the API can also be used when the device is offline.
 
-* **Improved privacy:** The data that's input into the model never leaves the device, and isn't collected to train AI models.
+* **Improved privacy:** The data input into the model never leaves the device, and isn't collected to train AI models.
 
 The translation models for specified language pairs are downloaded the first time the API is used in Microsoft Edge, and are subsequently shared across all websites in the browser.  The models are accessed via a straightforward web API that doesn't require knowledge of third-party frameworks, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise.
 
@@ -66,7 +66,7 @@ The translation models for specified language pairs are downloaded the first tim
 
 You can send network requests to cloud-based translation services with more sophisticated capabilities, including neural translation; see [Azure AI Translator documentation](/azure/ai-services/translator/).
 
-As an on-device alternative, the Prompt API serves more custom, multi-lingual<!-- todo: multi-language --> prompt-engineering scenarios; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+As an on-device alternative, the Prompt API serves more custom, multi-language prompt-engineering scenarios, with a small language model that's built into Microsoft Edge; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,6 @@ To use the Translator API in Microsoft Edge:
 
    ![Flags page of browser](./translator-api-images/flags-translator-api.png)
 
-1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
 1. Restart Microsoft Edge Canary or Dev.
 
@@ -162,9 +161,9 @@ if (!Translator) {
 
 The Translator API has the following requirements:
 
-* The device must support running the model.
-* The language model and the model runtime must already have been downloaded by Microsoft Edge.
-* Translating from the specified source language to the specified target language must be supported by the model.
+* Translating from the specified source language to the specified target language must be supported.
+* The translation model for the language pair and the model runtime must already have been downloaded by Microsoft Edge.
+* The source and target languages must be provided to the API as language tag strings, as decribed in [Tags for Identifying Languages](https://datatracker.ietf.org/doc/html/rfc5646), by IETF. For example, `en` for English or `es` for Spanish.
 
 To check if the API can be used, call `availability()`:
 
@@ -273,7 +272,7 @@ console.log(translatedText);
 <!-- ------------------------------ -->
 #### Display tokens as they are generated (`translateStreaming()`)
 
-To display the tokens as they are being generated, use the streaming versions of the above method instead.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
+To display the tokens as they are being generated, use the streaming version of the above method instead.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
 
 ```javascript
 // Create a Translator session.
