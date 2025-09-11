@@ -245,10 +245,10 @@ Details are below.
 <!-- ------------------------------ -->
 #### Wait for the text to be translated (`translate()`)
 
-<!-- summary -->
+<!-- <summary> -->
 Translates text.  Returns a promise, which resolves after the text has been translated.
 
-<!-- description -->
+<!-- <description> -->
 To wait for the text to be fully translated before continuing to run code, use the `translate()` asynchronous method.  This method returns a promise that resolves after the API has finished generating text:
 
 ```javascript
@@ -269,10 +269,10 @@ console.log(translatedText);
 <!-- ------------------------------ -->
 #### Display tokens as they are generated (`translateStreaming()`)
 
-<!-- summary -->
+<!-- <summary> -->
 Translates text.  Immediately returns a stream object, which you can use to display the translated text, token-by-token, as it is being generated.
 
-<!-- description -->
+<!-- <description> -->
 To display the tokens as they are being generated, use this streaming method.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
 
 ```javascript
@@ -323,17 +323,19 @@ abortController.abort();
 <!-- ====================================================================== -->
 ## Destroy a session (`destroy()`)
 
-Destroy the session to let the browser know that you don't need the language model anymore, so that the model can be unloaded from memory.
+After translating text, destroy the session to let the browser know that you don't need the language model anymore, so that the model can be unloaded from memory.
 
 You can destroy a session in two different ways:
 * By using the `destroy()` method.
 * By using an `AbortController`.
 
+Details are below.
+
 
 <!-- ------------------------------ -->
 #### Destroy a session by calling `destroy()`
 
-You can use the `destroy()` method with a `Translator` session:
+To destroy a session by calling `destroy()` with a `Translator` session:
 
 ```javascript
 const session = await Translator.create({
@@ -349,7 +351,7 @@ session.destroy();
 <!-- ------------------------------ -->
 #### Destroy a session by using `AbortController`
 
-Alternatively, you can create an `AbortController` object, create a `Translator` session, and then call `abort()`:
+To destroy a session by creating an `AbortController` object, create a `Translator` session, and then call `abort()`:
 
 ```javascript
 // Create an AbortController object.
