@@ -77,11 +77,6 @@ The Writing Assistance APIs use a model that's provided by Microsoft Edge and bu
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
-<!-- todo: reveal draft-demo link?
-See also:
-* [/webnn/](https://github.com/MicrosoftEdge/Demos/tree/main/webnn/) - Source code and Readme for the WebNN demo in the `MicrosoftEdge / Demos` repo.
--->
-
 
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
@@ -558,5 +553,3 @@ You can also contribute to the discussion about the design of the Writing Assist
 * [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 * [Translate text with the Translator API](./translator-api.md).
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
-<!-- todo: reveal draft-demo link?
-* [/webnn/](https://github.com/MicrosoftEdge/Demos/tree/main/webnn/) - Source code and Readme for the WebNN demo in the `MicrosoftEdge / Demos` repo. -->

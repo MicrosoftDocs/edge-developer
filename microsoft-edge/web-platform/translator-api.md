@@ -233,18 +233,23 @@ const session = await Translator.create({
 <!-- ====================================================================== -->
 ## Run the Translator API (`translate()`)
 
-After you have created a model session, you can translate text. The Translation API provides two methods to translate text:
+After you have created a model session, you can translate text.  The Translation API provides two methods to translate text:
 
-* `translatorSession.translate()` returns a promise which resolves once the text has been translated.
-* `translatorSession.translateStreaming()` immediately returns a stream object, which you can use to display the translated text, token by token, as it is being generated.
+<!-- <summary> bubbled up from sections below -->
+* `translatorSession.translate()` returns a promise, which resolves after the text has been translated.
+* `translatorSession.translateStreaming()` immediately returns a stream object, which you can use to display the translated text, token-by-token, as it is being generated.
 
-These two methods are documented below.
+Details are below.
 
 
 <!-- ------------------------------ -->
 #### Wait for the text to be translated (`translate()`)
 
-To wait for the text to be fully translated before continuing to run code, use the `translate()` asynchronous method.  This method returns a promise that resolves once the API has finished generating text:
+<!-- summary -->
+Translates text.  Returns a promise, which resolves after the text has been translated.
+
+<!-- description -->
+To wait for the text to be fully translated before continuing to run code, use the `translate()` asynchronous method.  This method returns a promise that resolves after the API has finished generating text:
 
 ```javascript
 // Create a Translator session.
@@ -264,7 +269,11 @@ console.log(translatedText);
 <!-- ------------------------------ -->
 #### Display tokens as they are generated (`translateStreaming()`)
 
-To display the tokens as they are being generated, use the streaming version of the above method instead.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
+<!-- summary -->
+Translates text.  Immediately returns a stream object, which you can use to display the translated text, token-by-token, as it is being generated.
+
+<!-- description -->
+To display the tokens as they are being generated, use this streaming method.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
 
 ```javascript
 // Create a Translator session.
