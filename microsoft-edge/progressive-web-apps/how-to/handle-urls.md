@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/15/2022
+ms.date: 08/29/2025
 ---
 # Handle links to a PWA
 
@@ -44,23 +44,75 @@ No code is required for automatic link handling to work, but end users can opt-o
 <!-- ====================================================================== -->
 ## Handle links from other origins by using scope extensions
 
-Scope extensions make it possible for a PWA to capture navigation to paths, subdomains, or even sites other than its own scope.  This can be useful for PWAs that span multiple domains for localization purposes.  For example, a PWA may span `contoso.com`, `contoso.co.uk`, and `contoso.fr`.
+Scope extensions make it possible for a Progressive Web App (PWA) to capture navigation to domains, subdomains, or paths other than its own scope.  Scope extensions allow web apps that rely on multiple top-level domains, multiple subdomains, or multiple paths to be presented as a single web app.
 
-The manifest of a PWA defines which part of the hosting domain the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under `www.contoso.com/app` with its scope set to `/app`.  In this case, all the web pages available within the `www.contoso.com/app` path are part of the PWA scope.  However, the web pages within the `www.contoso.com/foo` path are not part of the PWA scope.  Furthermore, web pages that are available at `bar.contoso.com/app` or `www.contoso.co.uk` are also not part of the PWA scope.
+Scope extension can be useful for cases such as PWAs that handle localization by using multiple domains, subdomains, or paths.
 
 
 <!-- ------------------------------ -->
-#### Origin trial
+#### PWA scope when not using scope extensions
 
-As of October 17, 2024, the scope extensions feature is an origin trial.  For status, see [Web app scope extensions feature](https://chromestatus.com/feature/5746537956114432) at Chrome Platform Status.
+The manifest of a PWA defines which part of the hosting domain, such as a specific path, the PWA is scoped to.  For example, the `www.contoso.com` domain name may have a PWA defined under the path `www.contoso.com/app`, with its scope set to `/app`.
 
-When the feature can be used in Microsoft Edge and is no longer in origin trial, the feature will be documented in the present article.  See [Scope Extensions for Web Apps](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), an Explainer in the **manifest-incubations** repo.
+In that case, all webpages within the `www.contoso.com/app` path are part of the PWA scope.  However, if you don't use scope extensions, the following webpages are not part of that PWA scope:
+
+* Webpages at a different domain, such as `www.contoso.co.uk`.
+* Webpages at a different subdomain, such as `bar.contoso.com`.
+* Webpages at a different path, such as `www.contoso.com/foo`.
+
+
+<!-- ------------------------------ -->
+#### Extending scope to other domains, subdomains, or paths
+
+By using scope extensions, a PWA can span other domains, subdomains, or paths.  For example:
+
+A PWA can span the following top-level domains:
+* `contoso.com`
+* `contoso.co.uk`
+* `contoso.fr`
+
+A PWA can span the following subdomains:
+* `www.contoso.com`
+* `bar.contoso.com`
+
+A PWA can span the following paths:
+* `www.contoso.com/app`
+* `www.contoso.com/foo`
+
+
+<!-- ------------------------------ -->
+#### The `scope_extensions` web app manifest member
+
+The `scope_extensions` web app manifest member enables a web app to extend its scope to other origins.
+
+For example, this web app manifest file resides at the domain `sample-app.com`, and extends the scope to a different domain, `example.com`:
+
+```json
+{
+  "name": "Example app",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "scope_extensions": [
+    {
+      "type": "origin",
+      "origin": "https://example.com"
+    }
+  ]
+}
+```
+
+The origins that are listed in the `scope_extensions` member must confirm that they are associated with the web app by hosting a configuration file named `.well-known/web-app-origin-association`.  The configuration file must list the web app's origin.
+
+For example, this `.well-known/web-app-origin-association` configuration file resides at the domain `example.com`, and lists the web app's origin as the domain `sample-app.com`:
+
+```json
+{
+  "https://sample-app.com/": {
+    "scope": "/"
+  }
+}
+```
 
 See also:
-* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
-
-
-<!-- ====================================================================== -->
-## See also
-
-* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)
+* [scope_extensions](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/scope_extensions) at MDN.
+* [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md)
