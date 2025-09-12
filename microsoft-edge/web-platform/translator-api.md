@@ -5,10 +5,10 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 09/11/2025
+ms.date: 09/12/2025
 ---
 # Translate text with the Translator API
-<!-- todo: create a short link like https://aka.ms/edge-translator-api-docs -->
+<!-- aka.ms/translatorapi -->
 
 The Translator API is an experimental web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
