@@ -356,9 +356,9 @@ If you want to try out the latest capabilities of App Actions in Edge Canary, yo
 
 1. Click the **Details** button.
 
-   Your PWA is indicated as installed from Microsoft Store.
+   Your PWA is indicated as installed from the [Microsoft Store](https://apps.microsoft.com).
 
-Your PWA has now been installed as a Store PWA in Edge Canary.
+Your PWA has now been installed as a store PWA in Edge Canary.
 
 
 <!-- ====================================================================== -->

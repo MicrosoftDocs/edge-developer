@@ -23,7 +23,7 @@ https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#issues
 Use the [Issues](https://github.com/microsoft/MicrosoftEdge-Extensions/issues) page of the **MicrosoftEdge-Extensions** repo for:
 
 * Communicating with the Extensions team:
-  * Report bugs or issues about [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) (the store) that affect all Edge extension developers or all Microsoft Edge extension users.
+  * Report bugs or issues about [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) (the store) that affect all Edge extension developers or all Microsoft Edge extension users.
   * Report bugs or issues about Microsoft Partner Center that affect all Edge extension developers or all Microsoft Edge extension users.
   * Suggest new features that could impact or benefit all Microsoft Edge extension developers.
   * Inquire about your Partner Center developer account for Microsoft Edge extensions.
@@ -50,7 +50,7 @@ Use the [Discussions](https://github.com/microsoft/MicrosoftEdge-Extensions/disc
 * Discussions with the Extensions team:
    * Follow the latest announcements and updates from the Microsoft Edge extensions team.
    * Request a feature for Edge extensions.
-   * Discuss how to improve UI features that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+   * Discuss how to improve UI features that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
    * Discuss how to improve extension publishing, management and listing processes or workflows.
    * Provide feedback about features for extensions publishing, extensions management, or processes or workflows for extensions listings.
 
@@ -67,7 +67,7 @@ See also:
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
 
-If you think an item at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
+If you think an item at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) violates a copyright or trademark, complete the [Reporting Infringement](https://www.microsoft.com/concern/dmca) form.  When filling in **Step 3: Where can the infringing material be found?**, in the **Product/Service/App** option, make sure to select **Microsoft Store on Windows**.  The Microsoft Edge extensions team will review your report and then take the necessary action.
 
 
 <!-- ====================================================================== -->

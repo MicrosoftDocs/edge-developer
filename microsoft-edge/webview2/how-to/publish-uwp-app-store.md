@@ -10,23 +10,21 @@ ms.date: 04/27/2022
 ---
 # Publish a UWP WebView2 app to the Microsoft Store
 
-A _UWP WebView2 app_ is a Universal Windows Platform (UWP) app that hosts the WebView2 control.  To make a UWP WebView2 app widely available, you can publish it to the Microsoft Store, by following the steps below.
+A _UWP WebView2 app_ is a Universal Windows Platform (UWP) app that hosts the WebView2 control.  To make a UWP WebView2 app widely available, you can publish it to the [Microsoft Store](https://apps.microsoft.com), by following the steps below.
 
-For general background information about publishing to the Windows Store, see [Publish Windows apps and games](/windows/uwp/publish/), at Windows App Development documentation > UWP.  The steps below provide the specific details about how to publish a UWP WebView2 app.
+For general background information about publishing to the Windows Store, see [Get started: Publish your first app in the Microsoft Store](/windows/apps/publish/).  The steps below provide the specific details about how to publish a UWP WebView2 app.
 
 
 <!-- ====================================================================== -->
 ## Step 1: Configure a Microsoft Store account in Visual Studio
 
-*  Make sure you have a Microsoft Store account configured in Microsoft Visual Studio.
-
-   If needed, see [Get registered](https://developer.microsoft.com/microsoft-store/register/), about developer accounts for the Microsoft Store.  Then continue with the steps below.
+Make sure you have a [Microsoft Store](https://apps.microsoft.com) account configured in Microsoft Visual Studio.  See [Enroll as a developer for Microsoft Store](https://developer.microsoft.com/microsoft-store/register/).
 
 
 <!-- ====================================================================== -->
 ## Step 2: Test the non-packaged host app
 
-Test for these common basic issues before submitting your app to the Microsoft Store.  This will help prevent Store certification failures, which would delay your app from becoming available.
+Test for these common basic issues before submitting your app to the [Microsoft Store](https://apps.microsoft.com).  This will help prevent Store certification failures, which would delay your app from becoming available.
 
 1. Make sure the app runs correctly on startup.
 
@@ -36,7 +34,7 @@ Test for these common basic issues before submitting your app to the Microsoft S
 <!-- ====================================================================== -->
 ## Step 3: Package the host app
 
-The Microsoft Store requires submitting a packaged app.  Package your app as follows:
+The [Microsoft Store](https://apps.microsoft.com) requires submitting a packaged app.  Package your app as follows:
 
 1. Update the `package.appxmanifest` with all needed content, such as Visual Assets, Packaging name, and Application information.  If you don't do this, the Microsoft Store validation step will fail.  Then continue with the steps below.
 
@@ -74,7 +72,7 @@ To make sure that all required content files are present in the package, and to 
 
 <!-- * [Windows App Certification Kit](https://learn.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
 
-Windows App Certification Kit (WACK) is an app that's a certification tool.  This tool evaluates your host app against the Microsoft Store's requirements.
+Windows App Certification Kit (WACK) is an app that's a certification tool.  This tool evaluates your host app against the [Microsoft Store](https://apps.microsoft.com)'s requirements.
 
 Once you're satisfied that your packaged app works, run the Windows App Certification Kit (WACK):
 
@@ -112,7 +110,7 @@ If your app failed the **Branding** checks, update all the Visual Assets in the 
 <!-- ---------- -->
 ###### App Capabilities
 
-If your app failed the **App Capabilities** tests, turn off any unneeded capabilities.  If you need a special use capability you will need to get Microsoft Store approval or use non-Store distribution methods.
+If your app failed the **App Capabilities** tests, turn off any unneeded capabilities.  If you need a special use capability you will need to get [Microsoft Store](https://apps.microsoft.com) approval or use non-Store distribution methods.
 
 
 <!-- ---------- -->
@@ -142,7 +140,7 @@ If your app failed the **Supported API** test, update the Windows SDK to version
 <!-- ====================================================================== -->
 ## See also
 
-* [Get registered](https://developer.microsoft.com/microsoft-store/register/) - Creating a developer account for the Microsoft Store.
-* [Publish Windows apps and games](/windows/uwp/publish/), at Windows App Development documentation > UWP.  General background information about publishing to the Windows Store.
+* [Enroll as a developer for Microsoft Store](https://developer.microsoft.com/microsoft-store/register/)
+* [Get started: Publish your first app in the Microsoft Store](/windows/apps/publish/)
 * [Windows App Certification Kit](/windows/uwp/debug-test-perf/windows-app-certification-kit)
 * [Partner Center (partner.microsoft.com)](https://partner.microsoft.com).
