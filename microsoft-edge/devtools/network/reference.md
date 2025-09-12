@@ -30,6 +30,7 @@ The **Network** tool has the following features, to inspect network activity for
 
 
 **Detailed contents:**
+<!-- https://github.com/captainbrosset/WebToc -->
 
 * [Record network requests](#record-network-requests)
    * [Stop recording network requests](#stop-recording-network-requests)

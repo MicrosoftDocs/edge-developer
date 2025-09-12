@@ -87,6 +87,9 @@
 
         - name: Summarize, write, and rewrite text with the Writing Assistance APIs
           href: ./web-platform/writing-assistance-apis.md
+
+        - name: Translate text with the Translator API
+          href: ./web-platform/translator-api.md
 # /Experimental web platform features
 # =============================================================================
 # Microsoft Edge DevTools
