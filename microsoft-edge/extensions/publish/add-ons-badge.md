@@ -1,6 +1,6 @@
 ---
 title: Use the Microsoft Edge Add-ons badge to promote your add-on
-description: Use this badge in your websites, documentation, or tutorials, to promote your extension, theme, or web app that's at the Microsoft Edge Add-ons site.  # key words before col 158
+description: Use this badge in your websites, documentation, or tutorials, to promote your extension (or theme) that's at the Microsoft Edge Add-ons site.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -16,7 +16,7 @@ not in TOC
 docset: Windows > App development
 -->
 
-To promote your Microsoft Edge extension, theme, or web app, use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
+To promote your Microsoft Edge extension (or theme), use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
 The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-on and build user trust.
 
@@ -28,9 +28,7 @@ The Microsoft Edge Add-ons badge appears in full color with a dark background, a
 
 The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge add-on with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
 
-The generic Microsoft Store badge reads **Get it from Microsoft**, and shows the Microsoft logo:
-
-![The generic Microsoft Store badge](./add-ons-badge-images/generic-microsoft-store-badge.png)
+The generic Microsoft Store badge reads **Get it from Microsoft**, and shows the Microsoft logo.
 
 Unlike the generic Microsoft Store badge, the Microsoft Edge Add-ons badge provides a distinct, trusted visual cue that connects your Microsoft Edge add-on directly to the Microsoft Edge ecosystem.
 
@@ -43,14 +41,6 @@ The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, an
 Download the complete set of `.png` files: 
 
 * [Microsoft_Edge_Add-ons_badge_image_files.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
-<!-- todo:
-1. remove hidden macOS dir from the .zip file
-2. upload the .zip file to either:
-   * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
-   * download.microsoft.com (www.microsoft.com/download)
-3. update the url above
-4. test the above link - what happens, downloaded in Edge Downloads dialog?
--->
 
 
 <!-- ====================================================================== -->
@@ -59,13 +49,6 @@ Download the complete set of `.png` files:
 Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the PDF file:
 
 * [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
-<!-- todo:
-1. upload the .pdf file to either:
-   * https://github.com/microsoft/MicrosoftEdge-Extensions/pull/365
-   * download.microsoft.com (www.microsoft.com/download)
-2. update the url above
-3. test the above link - what happens, downloaded in Edge Downloads dialog?
--->
 
 For example, the PDF includes the following guidelines:
 
@@ -114,4 +97,4 @@ Microsoft is the sole owner of the Microsoft Marks and associated goodwill, and 
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - site includes extensions, themes, and web apps.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - site includes extensions and themes.

@@ -10,9 +10,9 @@ ms.date: 10/13/2023
 ---
 # Curation and review process for extensions at Microsoft Edge Add-ons
 
-The Microsoft Edge extensions team curates the experience at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) so that users can find all the items to customize their browser in one place, such as extensions, themes, and web apps.<!-- todo: web apps ok? -->
+The Microsoft Edge extensions team curates the experience at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) so that users can find all the items to customize their browser in one place, such as extensions or themes.
 
-Available _items_ to customize the user's browser include extensions, themes, and web apps.<!-- todo: web apps ok? -->
+Available _items_ to customize the user's browser include extensions and themes.
 
 Before installing an item from Microsoft Edge Add-ons, users can learn more about the functionality, data permissions, and publisher by viewing the item's description and listing.
 
@@ -20,7 +20,7 @@ Before installing an item from Microsoft Edge Add-ons, users can learn more abou
 <!-- ====================================================================== -->
 ## How items are organized at Microsoft Edge Add-ons
 
-Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), including extensions, themes, and web apps,<!-- todo: web apps ok? --> are organized to help users discover the add-ons that are relevant to their interests.
+Items at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), including extensions and themes, are organized to help users discover the add-ons that are relevant to their interests.
 
 Users can discover extensions they're interested in at Microsoft Edge Add-ons in several ways, including:
 * The home page.
@@ -51,7 +51,7 @@ See also:
 <!-- ====================================================================== -->
 ## Ranking
 
-Every item (such as an extension, theme, or web app)<!-- todo: web app ok? --> that's published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) has detailed information about the item's characteristics, such as:
+Every item (such as an extension or theme) that's published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) has detailed information about the item's characteristics, such as:
 
 * Screenshots.
 * The description of the item's features and functionality.

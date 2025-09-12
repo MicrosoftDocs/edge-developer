@@ -97,7 +97,7 @@ Details are below.
 | _operation_ | A REST operation such as GET or POST. |
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge extension. |
-| _product_, _add-on_ | A Microsoft Edge extension, theme, or web app<!-- todo: web app ok? --> that's published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com). |
+| _product_, _add-on_ | A Microsoft Edge extension or theme that's published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com). |
 | _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 128-bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
