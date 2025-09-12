@@ -161,8 +161,10 @@ if (!Translator) {
 The Translator API has the following requirements:
 
 * Translating from the specified source language to the specified target language must be supported.
+
 * The translation model for the language pair and the model runtime must already have been downloaded by Microsoft Edge.
-* The source and target languages must be provided to the API as language tag strings, as decribed in [Tags for Identifying Languages](https://datatracker.ietf.org/doc/html/rfc5646), by IETF. For example, `en` for English or `es` for Spanish.
+
+* For `sourceLanguage` and `targetLanguage`, use the language codes in [Tags for Identifying Languages](https://datatracker.ietf.org/doc/html/rfc5646), as strings.
 
 To check if the API can be used, call `availability()`:
 
