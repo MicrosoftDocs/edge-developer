@@ -239,7 +239,7 @@ To view the statistics of your CSS rule selectors during long-running **Recalcul
 
 1. Click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  See [Show recording settings](#show-recording-settings), above.
 
-1. Select the **Enable CSS selector stats** checkbox.
+1. Select the **Enable CSS selector stats (slow)** checkbox.
 
 For details, see [Analyze CSS selector performance during Recalculate Style events](./selector-stats.md).
 
