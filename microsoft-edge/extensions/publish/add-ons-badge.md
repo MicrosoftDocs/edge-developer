@@ -24,7 +24,7 @@ The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**, and shows
 
 ![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/microsoft-edge-add-ons-badge.png)
 
-![Test file name lowercase hyphens](./add-ons-badge-images/english-get-it-from-ms-edge.png)
+![Test file name for uppercase with hyphens](./add-ons-badge-images/English-Get-it-from-MS-Edge.png)
 
 The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
 
