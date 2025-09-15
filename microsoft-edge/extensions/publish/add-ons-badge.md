@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 08/29/2025
+ms.date: 09/15/2025
 ---
 # Use the Microsoft Edge Add-ons badge to promote your add-on
 <!-- upstream:
@@ -20,7 +20,7 @@ To promote your Microsoft Edge extension (or theme), use the Microsoft Edge Add-
 
 The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-on and build user trust.
 
-The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge Add-ons**, and shows the Microsoft Edge logo:
+The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**, and shows the Microsoft Edge logo:
 
 ![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/microsoft-edge-add-ons-badge.png)
 
@@ -68,30 +68,11 @@ For example, the PDF includes the following guidelines:
 
 
 <!-- ------------------------------ -->
-#### Minimum size for badges
+#### Minimum size for the badge
 
 To ensure that the badge text remains readable, display it at a minimum size of 32px.  Avoid using smaller sizes.
 
 When scaling the badge, always maintain its aspect ratio; do not stretch or compress the badge image.  This helps preserve visual quality and reinforces your product's credibility.
-
-
-<!-- ====================================================================== -->
-## License for Microsoft Marks
-<!-- upstream:
-License to Microsoft Marks
-https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines#license-to-microsoft-marks
-https://web.archive.org/web/20250727064821/https://learn.microsoft.com/en-us/windows/apps/publish/app-marketing-guidelines#license-to-microsoft-marks
--->
-
-_Microsoft Marks_ means the Microsoft Edge Add-ons badge and Microsoft Edge logos.  To use these assets:
-
-* Your product or content must reference Microsoft Edge or its features.
-
-* You must follow the logo usage specifications described in the Microsoft Edge Add-ons badge guidelines.
-
-* Microsoft reserves the right to revoke usage of the Microsoft Edge Add-ons badge at any time.
-
-Microsoft is the sole owner of the Microsoft Marks and associated goodwill, and the sole beneficiary of the goodwill associated with your use of the Microsoft Marks.  Microsoft may revoke this license at any time and at its sole discretion.
 
 
 <!-- ====================================================================== -->
