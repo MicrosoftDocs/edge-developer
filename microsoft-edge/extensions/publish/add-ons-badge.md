@@ -24,8 +24,6 @@ The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**, and shows
 
 ![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/microsoft-edge-add-ons-badge.png)
 
-![Test file name for uppercase with hyphens](./add-ons-badge-images/English-Get-it-from-MS-Edge.png)
-
 The Microsoft Edge Add-ons badge appears in full color with a dark background, and includes a gray border and transparent corners.  The badge `.png` files are provided in 41 languages.
 
 The Microsoft Edge Add-ons badge lets you showcase your Microsoft Edge add-on with Microsoft Edge-specific branding.  To prevent confusion with the broader [Microsoft Store](https://apps.microsoft.com), the Microsoft Edge Add-ons badge is intended exclusively for promoting add-ons that are available for Microsoft Edge.  This badge helps users clearly identify content that is built specifically for the Microsoft Edge browser.
