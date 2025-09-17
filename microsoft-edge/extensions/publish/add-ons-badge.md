@@ -8,13 +8,6 @@ ms.service: microsoft-edge
 ms.date: 09/15/2025
 ---
 # Use the Microsoft Edge Add-ons badge to promote your add-on
-<!-- upstream:
-Microsoft Store marketing guidelines for apps
-https://learn.microsoft.com/windows/apps/publish/app-marketing-guidelines
-https://web.archive.org/web/20250727064821/https://learn.microsoft.com/en-us/windows/apps/publish/app-marketing-guidelines
-not in TOC
-docset: Windows > App development
--->
 
 To promote your Microsoft Edge extension (or theme), use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
@@ -46,7 +39,7 @@ Download the complete set of `.png` files:
 <!-- ====================================================================== -->
 ## Badge usage guidelines
 
-Follow the required specifications for image usage, fonts, and color palette.  For detailed usage examples and guidelines, download and read the PDF file:
+Follow these guidelines for using the Microsoft Edge Add-ons badge.  For detailed usage examples and guidelines, download and read the PDF file:
 
 * [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 
@@ -78,4 +71,4 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - site includes extensions and themes.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
