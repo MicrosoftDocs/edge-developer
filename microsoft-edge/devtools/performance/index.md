@@ -186,9 +186,7 @@ Continuing from above:
    ![The line of code that caused the forced layout](./index-images/sources-app-update.png)
 
    The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
-   <!--
-   > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
-   --><!-- todo: mdn link -->
+   <!-- To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts). todo: mdn link -->
 
 
 <!-- ------------------------------ -->
@@ -276,7 +274,7 @@ To learn more, see [Use transform and opacity changes for animations](https://we
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
+To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). todo: mdn link -->
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
@@ -286,15 +284,16 @@ Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/Micr
 
 In your feedback, include screenshots or links to reproducible pages, if possible.
 
-There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
+There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.
 
 <!--
-* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/)
-* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/)
-* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/)
-* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/)
-* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/)
-* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/)
+The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:
+* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/) todo: mdn link
+* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/) todo: mdn link
+* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/) todo: mdn link
+* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/) todo: mdn link
+* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/) todo: mdn link
+* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/) todo: mdn link
 -->
 
 

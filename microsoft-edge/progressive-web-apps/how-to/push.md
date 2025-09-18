@@ -109,7 +109,7 @@ The `userVisibleOnly` configuration option of the `registration.pushManager.subs
 
 Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
-Once you have a VAPID key, you can send push messages to your PWA clients by using [the Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
+Once you have a VAPID key, you can send push messages to your PWA clients by using [the Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).<!-- todo: mdn link -->
 
 You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
 
@@ -147,5 +147,5 @@ If your PWA doesn't display a notification when a push message is received, Micr
 <!-- ====================================================================== -->
 ## See also
 
-* [Push notifications overview](https://web.dev/push-notifications-overview/).
-* [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push).
+* [Push notifications overview](https://web.dev/push-notifications-overview/)<!-- todo: mdn link -->
+* [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push)

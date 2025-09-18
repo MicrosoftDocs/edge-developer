@@ -379,7 +379,7 @@ See also:
 <!-- ---------- -->
 ###### Security and isolation information
 
-Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep), and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep) are now displayed in the frame details.
+Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep),<!-- todo: mdn link --> and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep)<!-- todo: mdn link --> are now displayed in the frame details.
 
 ![Security and isolation information](./devtools-images/coep-coop.png)
 

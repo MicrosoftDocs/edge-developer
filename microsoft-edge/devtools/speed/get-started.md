@@ -238,7 +238,7 @@ For a small app, doing a one-off resize like this might be good enough. But for 
 
 *  At least, optimize each image.  This can often create huge savings.
 
-_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Optimize your images](https://web.dev/fast/#optimize-your-images) in _Fast load times_ at web.dev.
+_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Optimize your images](https://web.dev/fast/#optimize-your-images)<!-- todo: mdn link --> in _Fast load times_ at web.dev.
 
 #### Reduce unused JavaScript
 
@@ -374,9 +374,9 @@ The webpage uses the remaining CSS files so you can't remove them. However, it's
 
 To automatically split your CSS code this way, you can use the _Critical_ tool. To learn more, see the [Critical project repo](https://github.com/addyosmani/critical).
 
-You can then load your non-critical CSS code in a way that doesn't block the initial render of the page. To learn more, see [Defer non-critical CSS](https://web.dev/defer-non-critical-css/) at web.dev.
+You can then load your non-critical CSS code in a way that doesn't block the initial render of the page. To learn more, see [Defer non-critical CSS](https://web.dev/defer-non-critical-css/)<!-- todo: mdn link --> at web.dev.
 
-It's also good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/) at web.dev.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/)<!-- todo: mdn link --> at web.dev.
 
 #### Reduce layout shift by setting explicit width and height on images
 
@@ -393,7 +393,7 @@ To prevent layout shifts caused by loading images on a webpage, do either of the
 * Define each image's `width` and `height` attributes in the HTML code.
 * Reserve the space in CSS by using the `aspect-ratio` CSS property.
 
-To learn more, see [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions) in _Optimize Cumulative Layout Shift_ at web.dev.
+To learn more, see [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions)<!-- todo: mdn link --> in _Optimize Cumulative Layout Shift_ at web.dev.
 
 In the following steps, you use the `aspect-ratio` CSS property to avoid layout shifts:
 

@@ -204,6 +204,6 @@ See [Simulate the Window Controls Overlay API without installing your PWA](../..
 
 * [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
 * [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
+* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)<!-- todo: mdn link -->
 * [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
 * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
