@@ -41,7 +41,7 @@ Download the complete set of `.png` files:
 
 Follow these guidelines for using the Microsoft Edge Add-ons badge.  For detailed usage examples and guidelines, download and read the PDF file:
 
-* [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Store_Badge_Guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
+* [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 
 For example, the PDF includes the following guidelines:
 
