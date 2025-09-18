@@ -33,7 +33,7 @@ The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, an
 
 Download the complete set of `.png` files: 
 
-* [Microsoft_Edge_Add-ons_badge_image_files.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
+* [Microsoft_Edge_Add-ons_badge_image_files.zip](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).  Click the **Download raw file** (![Download raw file icon](./add-ons-badge-images/download-raw-file-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -41,7 +41,7 @@ Download the complete set of `.png` files:
 
 Follow these guidelines for using the Microsoft Edge Add-ons badge.  For detailed usage examples and guidelines, download and read the PDF file:
 
-* [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
+* [Microsoft_Edge_Add-ons_badge_guidelines.pdf](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/assets/Microsoft_Edge_Add-ons_badge_guidelines.pdf) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).  Click the **Download raw file** (![Download raw file icon](./add-ons-badge-images/download-raw-file-icon.png)) button.
 
 For example, the PDF includes the following guidelines:
 
