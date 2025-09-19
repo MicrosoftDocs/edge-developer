@@ -30,7 +30,7 @@ CSS styles need to be recalculated whenever the applicability of CSS rules may h
 <!-- ====================================================================== -->
 ## Record a performance trace with Selector Stats enabled
 
-To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.  You enable the Selector Stats feature by selecting the **Enable CSS selector stats** checkbox, which displays the **Selector Stats** tab.
+To view the statistics of your CSS rule selectors during long-running **Recalculate Style** events, first record a performance trace with the Selector Stats feature enabled.  You enable the Selector Stats feature by selecting the **Enable CSS selector stats (slow)** checkbox, which displays the **Selector stats** tab.
 
 The Selector Stats feature isn't always enabled, because it adds more overhead to your performance recordings.  You should only leave it turned on when you need to investigate the performance of **Recalculate Style** events and other rendering information.
 
@@ -44,7 +44,7 @@ To record a performance trace with selector statistics:
 
 1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button.
 
-1. Select the **Enable CSS selector stats** checkbox:
+1. Select the **Enable CSS selector stats (slow)** checkbox:
 
    ![The "Enable CSS selector stats" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
  
@@ -83,7 +83,7 @@ The **Selector Stats** tab in the **Performance** tool contains a table of CSS s
 | **Selector** | The CSS selector that was matched. |
 | **Style Sheet** | The CSS style sheet that contains the CSS selector. | 
 
-When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats (slow)** checkbox.
 
 
 <!-- ====================================================================== -->
@@ -105,7 +105,7 @@ To view aggregate statistics of the CSS rule selectors that are involved in mult
 
 1. Repeat the previous steps with the other **Recalculate Style** events you're interested in.
 
-When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats (slow)** checkbox.
 
 
 <!-- ====================================================================== -->
@@ -123,7 +123,7 @@ To view aggregate statistics of the CSS rule selectors that are involved in the 
 
    ![The Selector Stats table for the full recording](./selector-stats-images/full-recording.png)
 
-When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats** checkbox.
+When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats (slow)** checkbox.
 
 
 <!-- ====================================================================== -->
