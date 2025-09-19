@@ -104,7 +104,7 @@ See also:
 Microsoft Edge version 97 also includes the following updates from the Chromium project:
 
 * [Refresh device list in Device Mode](https://developer.chrome.com/blog/new-in-devtools-97/#device)
-* [Autocomplete with Edit as HTML](https://developer.chrome.com/blog/new-in-devtools-97/#code-completion)<!-- todo: developer.chrome.com ok? -->
+* [Autocomplete with Edit as HTML](https://developer.chrome.com/blog/new-in-devtools-97/#code-completion)
 * [Improved code debugging experience](https://developer.chrome.com/blog/new-in-devtools-97/#debugging)
 
 

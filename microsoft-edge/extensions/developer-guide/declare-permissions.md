@@ -25,7 +25,7 @@ ms.date: 06/23/2023
 
 To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
-If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the [Storage API](https://developer.chrome.com/docs/extensions/reference/storage/)<!-- todo: developer.chrome.com ok? --> page describes how to declare the `storage` permission.
+If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the [Storage API](https://developer.chrome.com/docs/extensions/reference/storage/) page describes how to declare the `storage` permission.
 
 
 <!-- ====================================================================== -->

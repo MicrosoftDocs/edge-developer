@@ -13,7 +13,7 @@ ms.date: 04/01/2022
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture)<!-- todo: developer.chrome.com ok? --> in _Inside look at modern web browser (part 1)_.
+The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) in _Inside look at modern web browser (part 1)_.
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ The number and presence of processes in a WebView2 process group can change as a
 
 The number of renderer processes can vary based on the following conditions:
 
-*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation).<!-- todo: developer.chrome.com ok? -->
+*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation).
 
 *  The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
 
@@ -94,7 +94,7 @@ All processes that are associated with the browser process of your WebView2 are 
 <!-- ====================================================================== -->
 ## See also
 
-* [Inside look at modern web browser (part 1)](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture)<!-- todo: developer.chrome.com ok? --> - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
+* [Inside look at modern web browser (part 1)](https://developer.chrome.com/blog/inside-browser-part1/#browser-architecture) - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
 * [Get started with WebView2](../get-started/get-started.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
