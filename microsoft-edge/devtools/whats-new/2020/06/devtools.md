@@ -172,7 +172,7 @@ See also:
 <!-- ---------- -->
 ###### First Meaningful Paint deprecation
 
-First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** tool.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).--><!-- todo: mdn link -->
+First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** tool.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).--><!-- todo: web.dev ok, or developer.mozilla.org? -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->

@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
-<!-- todo: mdn links -->
+<!-- todo: web.dev ok, or developer.mozilla.org?s -->
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -264,7 +264,7 @@ See also:
 <!-- ------------------------------ -->
 #### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection)<!-- todo: mdn link --> allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
+The [Idle Detection API](https://web.dev/idle-detection)<!-- todo: web.dev ok, or developer.mozilla.org? --> allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 
@@ -379,7 +379,7 @@ See also:
 <!-- ---------- -->
 ###### Security and isolation information
 
-Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep),<!-- todo: mdn link --> and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep)<!-- todo: mdn link --> are now displayed in the frame details.
+Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep),<!-- todo: web.dev ok, or developer.mozilla.org? --> and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep)<!-- todo: web.dev ok, or developer.mozilla.org? --> are now displayed in the frame details.
 
 ![Security and isolation information](./devtools-images/coep-coop.png)
 

@@ -25,7 +25,7 @@ ms.date: 03/31/2025
 <!-- https://developer.chrome.com/docs/devtools/performance/overview -->
 <!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 
-<!-- todo: mdn links -->
+<!-- todo: web.dev ok, or developer.mozilla.org?s -->
 
 Use the **Performance** tool to analyze your website's performance.  There are two main views:
 
@@ -164,11 +164,11 @@ Use the **Performance** tool to view Core Web Vitals metrics in the initial, **L
 
 | Term | Description | Docs |
 |---|---|---|
-| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals)<!-- todo: mdn link --> |
-| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals)<!-- todo: mdn link --> in _Web Vitals_ |
-| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp),<!-- todo: mdn link --> [Optimize LCP](https://web.dev/articles/optimize-lcp)<!-- todo: mdn link --> |
-| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls),<!-- todo: mdn link --> [Optimize CLS](https://web.dev/articles/optimize-cls)<!-- todo: mdn link --> |
-| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp),<!-- todo: mdn link --> [Optimize INP](https://web.dev/articles/optimize-inp)<!-- todo: mdn link --> |
+| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals)<!-- todo: web.dev ok, or developer.mozilla.org? --> |
+| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals)<!-- todo: web.dev ok, or developer.mozilla.org? --> in _Web Vitals_ |
+| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp),<!-- todo: web.dev ok, or developer.mozilla.org? --> [Optimize LCP](https://web.dev/articles/optimize-lcp)<!-- todo: web.dev ok, or developer.mozilla.org? --> |
+| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls),<!-- todo: web.dev ok, or developer.mozilla.org? --> [Optimize CLS](https://web.dev/articles/optimize-cls)<!-- todo: web.dev ok, or developer.mozilla.org? --> |
+| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp),<!-- todo: web.dev ok, or developer.mozilla.org? --> [Optimize INP](https://web.dev/articles/optimize-inp)<!-- todo: web.dev ok, or developer.mozilla.org? --> |
 | local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
 
 

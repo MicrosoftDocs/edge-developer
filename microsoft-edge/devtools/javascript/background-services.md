@@ -109,7 +109,7 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 <!-- ====================================================================== -->
 ## Payment Handler
 
-The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/)<!-- todo: mdn link --> allows web applications to handle payment requests on behalf of users. To log the payment request and response events for 3 days, even when DevTools isn't open:
+The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/)<!-- todo: web.dev ok, or developer.mozilla.org? --> allows web applications to handle payment requests on behalf of users. To log the payment request and response events for 3 days, even when DevTools isn't open:
 
 1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 

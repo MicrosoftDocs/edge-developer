@@ -313,5 +313,5 @@ self.addEventListener('fetch', event => {
 <!-- ====================================================================== -->
 ## See also
 
-*  [Integrate with the OS sharing UI with the Web Share API](https://web.dev/web-share/)<!-- todo: mdn link -->
-*  [Receiving shared data with the Web Share Target API](https://web.dev/web-share-target/)<!-- todo: mdn link -->
+*  [Integrate with the OS sharing UI with the Web Share API](https://web.dev/web-share/)<!-- todo: web.dev ok, or developer.mozilla.org? -->
+*  [Receiving shared data with the Web Share Target API](https://web.dev/web-share-target/)<!-- todo: web.dev ok, or developer.mozilla.org? -->

@@ -117,6 +117,6 @@ Read more success stories on the [PWA Stats](https://www.pwastats.com/) website.
 ## See also
 
 *  [Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps) at MDN Web Docs.
-*  [Progressive Web Apps](https://web.dev/progressive-web-apps/)<!-- todo: mdn link --> at web.dev.
+*  [Progressive Web Apps](https://web.dev/progressive-web-apps/)<!-- todo: web.dev ok, or developer.mozilla.org? --> at web.dev.
 *  [Progressive Web Apps](https://wikipedia.org/wiki/Progressive_web_app) at Wikipedia.
 *  [PWA Q&A](https://www.aaron-gustafson.com/notebook/pwa-qa)

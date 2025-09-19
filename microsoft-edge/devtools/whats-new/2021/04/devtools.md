@@ -98,7 +98,7 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or servic
 For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
 See also:
-* [Updating the service worker](https://web.dev/service-worker-lifecycle#updates)<!-- todo: mdn link --> in _The service worker lifecycle_ at web.dev.
+* [Updating the service worker](https://web.dev/service-worker-lifecycle#updates)<!-- todo: web.dev ok, or developer.mozilla.org? --> in _The service worker lifecycle_ at web.dev.
 * [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
 
 

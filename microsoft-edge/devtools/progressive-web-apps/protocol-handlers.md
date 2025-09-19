@@ -65,4 +65,4 @@ In the following screenshot, the `web+amp://files.freemusicarchive.org/storage-f
 *  [Debug a Progressive Web App (PWA)](./index.md)
 *  [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md)
 *  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
-*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: mdn link -->
+*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: web.dev ok, or developer.mozilla.org? -->
