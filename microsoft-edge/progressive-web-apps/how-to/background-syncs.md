@@ -289,7 +289,7 @@ navigator.serviceWorker.ready.then(async registration => {
 
 Above, `my-download-id` should be a unique string identifier for this background fetch. `fileUrls` is the list of files to download, this will be an array of string URLs. And `options` is an object that can be used to customize the appearance of the download activity in the browser.
 
-For more information about the `fetch` function, see [BackgroundFetchManager.fetch()](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) and [Introducing Background Fetch](https://developer.chrome.com/blog/background-fetch/).
+For more information about the `fetch` function, see [BackgroundFetchManager.fetch()](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) and [Introducing Background Fetch](https://developer.chrome.com/blog/background-fetch/).<!-- todo: developer.chrome.com ok? -->
 
 
 <!-- ====================================================================== -->

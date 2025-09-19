@@ -45,7 +45,7 @@ To avoid pausing on extension code:
 ## See also
 
 * [Step 4: Step through the code](../index.md#step-4-step-through-the-code) in _Get started debugging JavaScript_
-* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in Chrome Extensions docs.
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)<!-- todo: developer.chrome.com ok? --> in Chrome Extensions docs.
 
 
 <!-- ====================================================================== -->

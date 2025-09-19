@@ -138,7 +138,7 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 
 * [Preview feature: Full-page accessibility tree](https://developer.chrome.com/blog/new-in-devtools-98/#a11y-tree)
 
-* [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes)
+* [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes)<!-- todo: developer.chrome.com ok? -->
 
 * [Ensure your pages are cacheable with the Back/forward cache tab](https://developer.chrome.com/blog/new-in-devtools-98/#bfcache)
 

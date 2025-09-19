@@ -14,7 +14,7 @@ Microsoft Edge extensions use a subset of the JavaScript methods for the Chromiu
 
 | API | Description | Manifest versions | Platforms |
 |---|---|---|---|
-| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures) | Manages the browser's accessibility features. | MV2, MV3 | Windows, Linux, Mac |
+| [accessibilityFeatures](https://developer.chrome.com/docs/extensions/reference/api/accessibilityFeatures)<!-- todo: developer.chrome.com ok? --> | Manages the browser's accessibility features. | MV2, MV3 | Windows, Linux, Mac |
 | [action](https://developer.chrome.com/docs/extensions/reference/api/action) | Controls the extension's icon in the browser's toolbar. | MV3 | Windows, Linux, Mac, Android |
 | [alarms](https://developer.chrome.com/docs/extensions/reference/api/alarms) | Schedules code to run periodically or at a specified time in the future. | MV2, MV3 | Windows, Linux, Mac, Android |
 | [bookmarks](https://developer.chrome.com/docs/extensions/reference/api/bookmarks) | Creates, organizes, and manipulates bookmarks. | MV2, MV3 | Windows, Linux, Mac |
@@ -87,7 +87,7 @@ These Extensions APIs are not supported for Microsoft Edge.
 
 | API | Notes |
 |---|---|
-| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio) | ChromeOS only. |
+| [audio](https://developer.chrome.com/docs/extensions/reference/api/audio)<!-- todo: developer.chrome.com ok? --> | ChromeOS only. |
 | [certificateProvider](https://developer.chrome.com/docs/extensions/reference/api/certificateProvider) | ChromeOS only. |
 | [devtools.recorder](https://developer.chrome.com/docs/extensions/reference/api/devtools/recorder) | Chrome DevTools only. |
 | [documentScan](https://developer.chrome.com/docs/extensions/reference/api/documentScan) | ChromeOS only. |

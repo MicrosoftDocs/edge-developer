@@ -49,9 +49,9 @@ Browser emulators don't emulate differences in web API support or CSS support.  
 
 Here are some browser emulators you can use to test your website on other browsers:
 
-* [Firefox Responsive Design Mode](https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/index.html).
-* [Chrome Device Mode](https://developer.chrome.com/docs/devtools/device-mode).
-* [Safari Responsive Design Mode](https://developer.apple.com/documentation/safari-developer-tools/responsive-design-mode).
+* [Firefox Responsive Design Mode](https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/index.html)
+* [Chrome Device Mode](https://developer.chrome.com/docs/devtools/device-mode)<!-- todo: developer.chrome.com ok? -->
+* [Safari Responsive Design Mode](https://developer.apple.com/documentation/safari-developer-tools/responsive-design-mode)
 
 
 <!-- ====================================================================== -->
@@ -141,7 +141,7 @@ See [Emulators](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross
 
 Responsive design:
 * [Responsive Design Mode](https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/index.html) - Firefox.
-* [Simulate mobile devices with device mode](https://developer.chrome.com/docs/devtools/device-mode) - Chrome.
+* [Simulate mobile devices with device mode](https://developer.chrome.com/docs/devtools/device-mode) - Chrome.<!-- todo: developer.chrome.com ok? -->
 * [Responsive Design Mode](https://developer.apple.com/documentation/safari-developer-tools/responsive-design-mode) - Safari.
 
 Android:

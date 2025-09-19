@@ -191,8 +191,8 @@ To create a basic DevTools extension with a sample panel:
    ```
     
    Reference:
-   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/devtools_panels/)
-      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/devtools_panels/)<!-- todo: developer.chrome.com ok? -->
+      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)<!-- todo: developer.chrome.com ok? -->
 
 
    **devtools.html:**
@@ -272,7 +272,7 @@ In this step, you will use extension APIs to display memory information in your 
     ]
     ```
 
-    The `system-memory` permission is required, in order to use the extension APIs that you'll use later in this tutorial.  To learn more about the available APIs and associated permissions, see [API reference](https://developer.chrome.com/docs/extensions/reference/) for extension APIs.
+    The `system-memory` permission is required, in order to use the extension APIs that you'll use later in this tutorial.  To learn more about the available APIs and associated permissions, see [API reference](https://developer.chrome.com/docs/extensions/reference/)<!-- todo: developer.chrome.com ok? --> for extension APIs.
 
 
     **panel.html:**
@@ -350,7 +350,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
    ![The new extension panel in DevTools, showing memory information](./devtools-extension-images/devtools-extension-with-memory-info.png)
 
 See also: 
-* [API Reference](https://developer.chrome.com/docs/extensions/reference/)
+* [API Reference](https://developer.chrome.com/docs/extensions/reference/)<!-- todo: developer.chrome.com ok? -->
 
 
 <!-- ====================================================================== -->
@@ -561,13 +561,13 @@ To test the new `sayHello` button:
 This completes the tutorial and code walkthrough for creating a DevTools extension that adds a tool tab and panel in DevTools in Microsoft Edge.
 
 See also:
-* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) in the Chrome Extensions docs.
+* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/)<!-- todo: developer.chrome.com ok? --> in the Chrome Extensions docs.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 * [Samples for Microsoft Edge extensions](../samples.md)
-* [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
-* [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
-* [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)
+* [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)<!-- todo: developer.chrome.com ok? -->
+* [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)<!-- todo: developer.chrome.com ok? -->
+* [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)<!-- todo: developer.chrome.com ok? -->

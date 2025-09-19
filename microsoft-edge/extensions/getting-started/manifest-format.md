@@ -34,7 +34,7 @@ The following code shows the fields that are supported in `manifest.json` for ex
 
 ##### [Manifest V3](#tab/v3)
 
-For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_, and then click the links on the fields.
+For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest)<!-- todo: developer.chrome.com ok? --> in _Chrome Extensions_ > _Reference_, and then click the links on the fields.
 
 ```json
 {
@@ -120,7 +120,7 @@ For reference information about each field, see [Manifest file format](https://d
 
 <!-- todo: move aside/ demote section eg move to a single article gathering all info about v2; change from tabset to simple code listing for v3 only -->
 
-For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
+For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest)<!-- todo: developer.chrome.com ok? --> and then select the links on the fields.
 
 ```json
 {
@@ -229,8 +229,8 @@ For reference information about each field, see [Manifest file format (V2)](http
 
 <!-- all the links in article body: -->
 * [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
-* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) - V3, in _Chrome Extensions_ > _Reference_.
-* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info, remove "V3, " from above item -->
+* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest)<!-- todo: developer.chrome.com ok? --> - V3, in _Chrome Extensions_ > _Reference_.
+* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest)<!-- todo: developer.chrome.com ok? --> in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info, remove "V3, " from above item -->
 
 
 <!-- ====================================================================== -->

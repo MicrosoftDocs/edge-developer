@@ -161,7 +161,7 @@ To select this checkbox and then open the **Protocol monitor** tool:
 
 See also:
 * [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../../webview2/how-to/chromium-devtools-protocol.md)
-* [[Experimental] Protocol monitor](https://developer.chrome.com/blog/new-in-devtools-92#protocol-monitor) in _What's New In DevTools (Chrome 92)_.
+* [[Experimental] Protocol monitor](https://developer.chrome.com/blog/new-in-devtools-92#protocol-monitor)<!-- todo: developer.chrome.com ok? --> in _What's New In DevTools (Chrome 92)_.
 <!--
 * [Protocol monitor tool](../protocol-monitor/index.md) - article will exist if/when this Experimental Feature becomes non-experimental
 -->
@@ -361,8 +361,8 @@ In the **Sources** tool's tree view, omits code that's included in the Ignore li
 
 See also:
 * [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md)
-* [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)
-* [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
+* [Enhanced ignore listing](https://developer.chrome.com/blog/new-in-devtools-120#ignore-listing)<!-- todo: developer.chrome.com ok? -->
+* [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)<!-- todo: developer.chrome.com ok? -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 140.

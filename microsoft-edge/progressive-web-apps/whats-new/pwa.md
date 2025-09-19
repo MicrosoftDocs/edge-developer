@@ -186,7 +186,7 @@ The origin trial has been concluded.  The URL Protocol Handlers capability is no
 See also:
 *  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
 *  [Handle protocols in a PWA](../how-to/handle-protocols.md)
-*  [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) in Chrome Dev > Web Platform > Best Practices.
+*  [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: developer.chrome.com ok? --> in Chrome Dev > Web Platform > Best Practices.
 
 
 <!-- ------------------------------ -->

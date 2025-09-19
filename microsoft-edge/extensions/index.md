@@ -45,7 +45,7 @@ The following table isn't exhaustive or definitive; it's just a starting point f
 |:--- |:--- |:--- |
 | Safari | No | [Safari App Extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
 | Firefox | No | [Browser Extensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
-| Chrome | Yes | [API Reference](https://developer.chrome.com/extensions) |
+| Chrome | Yes | [API Reference](https://developer.chrome.com/extensions)<!-- todo: developer.chrome.com ok? --> |
 | Opera | Yes | [Extensions Documentation](https://dev.opera.com/extensions) |
 | Brave | Yes | Uses [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) |
 | Microsoft Edge | Yes | [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions) |
@@ -71,7 +71,7 @@ The following content focuses mostly on Chromium extensions.
 
 Occasionally, API parity doesn't exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To make sure your extension meets customer expectations, review API status through the following official browser documentation:
 
-*   [Chrome APIs](https://developer.chrome.com/extensions/api_index)
+*   [Chrome APIs](https://developer.chrome.com/extensions/api_index)<!-- todo: developer.chrome.com ok? -->
 *   [Extension APIs supported in Opera](https://dev.opera.com/extensions/apis)
 *   [Port Chrome extension to Microsoft Edge](developer-guide/port-chrome-extension.md)
 
@@ -156,7 +156,7 @@ Just because an extension doesn't have a **Featured** badge, doesn't mean the ex
 External links:
 *  [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
 *  [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-*  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
+*  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)<!-- todo: developer.chrome.com ok? -->
 *  [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
 *  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
 

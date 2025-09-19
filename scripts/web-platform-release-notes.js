@@ -206,7 +206,7 @@ async function main() {
         expiration: longDate(ot.end_time),
         explainer: ot.documentation_url,
         feedback: ot.feedback_url,
-        registration: `https://developer.chrome.com/origintrials/#/register_trial/${ot.id}`,
+        registration: `https://developer.chrome.com/origintrials/#/register_trial/${ot.id}`,// todo: developer.chrome.com ok?
       };
     });
 
