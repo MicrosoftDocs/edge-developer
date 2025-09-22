@@ -148,9 +148,9 @@ For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsof
 
 The **Featured** badge indicates that:
 
-* The extension aligns with Microsoft’s best practices for security, privacy, performance, and user experience.
+* The extension aligns with Microsoft's best practices for security, privacy, performance, and user experience.
 
-* The extension has been reviewed and selected through a combination of automated systems. 
+* The extension has been reviewed and selected through an automated system.
 
 * The extension offers a reliable and high-quality experience for Microsoft Edge users. 
 
