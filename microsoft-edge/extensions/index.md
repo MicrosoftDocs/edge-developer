@@ -132,11 +132,11 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## The Featured badge
 
-The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
+Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
 
 ![The Featured badge](./index-images/featured-badge.png)
 
-The **Featured** badge is awarded to select extensions that align with Microsoft's evolving standards, per [Best practices for extensions](./developer-guide/best-practices.md).  Extensions are curated to help users discover trustworthy and high-performing extensions.  When you hover on the **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified.**
+The **Featured** badge is awarded to select extensions that align with [Best practices for extensions](./developer-guide/best-practices.md).  When you hover over the **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified.**
 
 For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge:
 
@@ -146,13 +146,13 @@ For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsof
 <!-- ------------------------------ -->
 #### What the Featured badge represents
 
-The **Featured** badge indicates that an extension: 
+The **Featured** badge indicates that:
 
-* Aligns with Microsoft’s best practices for security, privacy, performance, and user experience.
+* The extension aligns with Microsoft’s best practices for security, privacy, performance, and user experience.
 
-* Has been reviewed and selected through a combination of automated systems. 
+* The extension has been reviewed and selected through a combination of automated systems. 
 
-* Offers a reliable and high-quality experience for Microsoft Edge users. 
+* The extension offers a reliable and high-quality experience for Microsoft Edge users. 
 
 The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status. 
 
