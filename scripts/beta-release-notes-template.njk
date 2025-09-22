@@ -18,27 +18,25 @@ To stay up-to-date and get the latest web platform features, download a preview 
 
 * [Edge DevTools](#edge-devtools)
 * [WebView2](#webview2)
-* [Web platform features](#web-platform-features)
-  * [Enabled features](#enabled-features)
-    {% for feature in data.csFeatures["Enabled by default"] %}
-    * [{{ feature.name }}](#{{ feature.name | slugify }})
-    {% endfor %}
-  * [Deprecated and removed features](#deprecated-and-removed-features)
-    {% for feature in data.csFeatures["Deprecated"] %}
-    * [{{ feature.name }}](#{{ feature.name | slugify }})
-    {% endfor %}
-    {% for feature in data.csFeatures["Removed"] %}
-    * [{{ feature.name }}](#{{ feature.name | slugify }})
-    {% endfor %}
-* [Origin trials](#origin-trials)
-  * [Active Chromium origin trials](#active-chromium-origin-trials)
-    {% for trial in data.chromeOTs %}
-    * [{{ trial.title }}](#{{ trial.title | slugify }})
-    {% endfor %}
-  * [Microsoft Edge-only origin trials](#microsoft-edge-only-origin-trials)
-    {% for trial in data.edgeOTs %}
-    * [{{ trial.title }}](#{{ trial.title | slugify }})
-    {% endfor %}
+* [CSS/SVG/Web API features](#csssvgweb-api-features)
+  {% for feature in data.csFeatures["Enabled by default"] %}
+  * [{{ feature.name }}](#{{ feature.name | slugify }})
+  {% endfor %}
+* [Deprecated or removed features](#deprecated-or-removed-features)
+  {% for feature in data.csFeatures["Deprecated"] %}
+  * [{{ feature.name }}](#{{ feature.name | slugify }})
+  {% endfor %}
+  {% for feature in data.csFeatures["Removed"] %}
+  * [{{ feature.name }}](#{{ feature.name | slugify }})
+  {% endfor %}
+* [Origin trials in Microsoft Edge](#origin-trials-in-microsoft-edge)
+  {% for trial in data.edgeOTs %}
+  * [{{ trial.title }}](#{{ trial.title | slugify }})
+  {% endfor %}
+* [Chromium origin trials](#chromium-origin-trials)
+  {% for trial in data.chromeOTs %}
+  * [{{ trial.title }}](#{{ trial.title | slugify }})
+  {% endfor %}
 
 
 <!-- ====================================================================== -->
@@ -60,15 +58,12 @@ For WebView2, see [1.0.n.n](../../webview2/release-notes/index.md#10nnnnnn) in _
 
 
 <!-- ====================================================================== -->
-## Web platform features
+## CSS/SVG/Web API features
 
-
-<!-- ------------------------------ -->
-#### Enabled features
 {% for feature in data.csFeatures["Enabled by default"] %}
 
-<!-- ---------- -->
-###### {{ feature.name }}
+<!-- ------------------------------ -->
+#### {{ feature.name }}
 
 {{ feature.summary | safe }}
 
@@ -77,59 +72,41 @@ See also:
 {% endfor %}
 
 <!-- ------------------------------ -->
-#### Deprecated and removed features
+#### Deprecated or removed features
 
 **TODO: CHECK THE FEATURES LISTED BELOW AND ADD THEM TO THE SITE-COMPAT-IMPACTING-CHANGES ARTICLE.**
 
 {% for feature in data.csFeatures["Deprecated"] %}
 
-<!-- ---------- -->
-###### {{ feature.name }}
+<!-- ------------------------------ -->
+#### {{ feature.name }}
 
 {{ feature.summary | safe }}
 {% endfor %}
 {% for feature in data.csFeatures["Removed"] %}
 
-<!-- ---------- -->
-###### {{ feature.name }}
+<!-- ------------------------------ -->
+#### {{ feature.name }}
 
 {{ feature.summary | safe }}
 {% endfor %}
 
 
 <!-- ====================================================================== -->
-## Origin trials
+## Origin trials in Microsoft Edge
 
-The following are new experimental APIs which you can try on your own live website for a limited time.
+The following are origin trials for new experimental APIs that are available in Microsoft Edge.
+
+Origin trials let you try experimental APIs on your own live website for a limited time.
 
 To learn more about origin trials, see [Use origin trials in Microsoft Edge](../../origin-trials/index.md).
 
 To see the full list of available origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials/).
 
-
-<!-- ------------------------------ -->
-#### Active Chromium origin trials
-{% for trial in data.chromeOTs %}
-
-<!-- ---------- -->
-###### {{ trial.title }}
-
-Expires on {{ trial.expiration }}.
-
-{{ trial.description }}
-
-* [Explainer]({{ trial.explainer }})
-* [Feedback]({{ trial.feedback }})
-* [Register]({{ trial.registration }})
-{% endfor %}
-
-
-<!-- ------------------------------ -->
-#### Microsoft Edge-only origin trials
 {% for trial in data.edgeOTs %}
 
-<!-- ---------- -->
-###### {{ trial.title }}
+<!-- ------------------------------ -->
+#### {{ trial.title }}
 
 Expires on {{ trial.expiration }}.
 
@@ -139,6 +116,27 @@ Expires on {{ trial.expiration }}.
 * [Feedback]({{ trial.feedback }})
 * [Register]({{ trial.registration }})
 
+{% endfor %}
+
+<!-- ====================================================================== -->
+## Chromium origin trials
+
+Below are active Chromium origin trials which you can try in Microsoft Edge.
+
+To see the full list of Chromium origin trials that are available in Microsoft Edge, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials/).
+
+{% for trial in data.chromeOTs %}
+
+<!-- ------------------------------ -->
+#### {{ trial.title }}
+
+Expires on {{ trial.expiration }}.
+
+{{ trial.description }}
+
+* [Explainer]({{ trial.explainer }})
+* [Feedback]({{ trial.feedback }})
+* [Register]({{ trial.registration }})
 {% endfor %}
 
 
