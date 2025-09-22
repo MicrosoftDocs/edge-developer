@@ -14,9 +14,9 @@ Follow these best practices to implement your extension and list it at [Microsof
 
 The Microsoft Edge extensions team continues to gather feedback from developers and users to evolve these best practices.  To ensure that your extension remains compliant and competitive, review this guidance regularly.
 
-Following these best practices helps improve the quality, reliability, and user experience of your extension.  Meeting these guidelines doesn't guarantee that your extension will receive the **Featured** badge; see [The Featured badge](../index.md#the-featured-badge) in _Overview of Microsoft Edge extensions_.
+Meeting these guidelines doesn't guarantee that your extension will receive the **Featured** badge; see [The Featured badge](../index.md#the-featured-badge) in _Overview of Microsoft Edge extensions_.
 
-To maximize your extension's visibility, follow these best practices.
+Follow these best practices, to improve the quality, reliability, and user experience of your extension, and to maximize your extension's visibility.
 
 
 <!-- ====================================================================== -->
@@ -79,3 +79,14 @@ To maximize your extension's visibility, follow these best practices.
 * Address bugs and usability issues in a timely manner.
 
 * Maintain a regular update cadence, to improve reliability and user trust.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [The Featured badge](../index.md#the-featured-badge) in _Overview of Microsoft Edge extensions_.
+* [Minimize an extension's impact on page load time](./minimize-page-load-time-impact.md)
+
+External:
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
