@@ -10,7 +10,7 @@ ms.date: 09/05/2024
 ---
 # REST API Reference for updating an extension at Microsoft Edge Add-ons
 
-This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to an extension that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to an extension that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 For an overview, see [Use the REST API to update an extension at Microsoft Edge Add-ons](./using-addons-api.md).
 
@@ -227,7 +227,7 @@ See also:
 ## Publish the product draft submission
 <!-- endpoint 3: POST /submissions -->
 
-Publishes the current draft of the product at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+Publishes the current draft of the product at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
 

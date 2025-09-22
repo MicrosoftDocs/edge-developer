@@ -10,13 +10,13 @@ ms.date: 06/04/2025
 ---
 # Provide in-app purchases with the Digital Goods API
 
-If your Progressive Web App (PWA) is listed in the Microsoft Store, you can provide in-app products and subscriptions by using the Digital Goods API and the Payment Request API.
+If your Progressive Web App (PWA) is listed in the [Microsoft Store](https://apps.microsoft.com), you can provide in-app products and subscriptions by using the Digital Goods API and the Payment Request API.
 
 
 <!-- ====================================================================== -->
 ## Digital Goods API
 
-The Digital Goods API is an interface between your PWA app and the Microsoft Store.  The Digital Goods API supports:
+The Digital Goods API is an interface between your PWA app and the [Microsoft Store](https://apps.microsoft.com).  The Digital Goods API supports:
 * Querying the details of a digital item from the Microsoft Store backend, such as the item's name, description, and regional price.
 * Consuming or acknowledging purchases.
 * Checking the digital items that are currently owned by the user.
@@ -30,7 +30,7 @@ See:
 <!-- ====================================================================== -->
 ## Payment Request API
 
-The Payment Request API⁠⁠ handles the actual payment transaction when a purchase is made by a user.  The Payment Request API uses the item details that the Digital Goods API provides, to make the in-app purchase by using whichever billing payment method the user has set up at the Microsoft Store.
+The Payment Request API⁠⁠ handles the actual payment transaction when a purchase is made by a user.  The Payment Request API uses the item details that the Digital Goods API provides, to make the in-app purchase by using whichever billing payment method the user has set up at the [Microsoft Store](https://apps.microsoft.com).
 
 See:
 * [Payment Request API](https://developer.mozilla.org/docs/Web/API/Payment_Request_API) at MDN.
@@ -85,7 +85,7 @@ try {
 }
 ```
 
-This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` is available only for a PWA that's installed from the Microsoft Store, on Windows.  No other settings are needed.
+This payment method `getDigitalGoodsService("https://store.microsoft.com/billing")` is available only for a PWA that's installed from the [Microsoft Store](https://apps.microsoft.com), on Windows.  No other settings are needed.
 
 See also:
 * [getDigitalGoodsService() method](https://wicg.github.io/digital-goods/#getdigitalgoodsservice-method) of the `Window` interface.
@@ -97,7 +97,7 @@ See also:
 
 Use the `getDetails` method of the `DigitalGoodsService` interface to query item details.
 
-After connecting the Digital Goods service to Microsoft Store, you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you've set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
+After connecting the Digital Goods service to [Microsoft Store](https://apps.microsoft.com), you can use the API to access product and purchase information.  The `getDetails` method lets you get information about the items you've set up in the Partner Center.  Display information such as the product title, description, and price in your app UI, so the user knows what's available for purchase.
 
 The `getDetails` method takes a list of item IDs, which correspond to the product IDs of the in-app products and subscriptions you created in the Partner Center.
 
@@ -117,7 +117,7 @@ for (item of itemDetails) {
 
 The returned `itemDetails` sequence may be in any order, and might not include an item if the item doesn't exist on the server (that is, if there's not a 1:1 correspondence between the input list and output list).
 
-The item ID is a string that represents the primary key of the items.  In the Microsoft Store, the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
+The item ID is a string that represents the primary key of the items.  In the [Microsoft Store](https://apps.microsoft.com), the item ID is `InAppOfferToken`.  There is no function to get a list of item IDs; item IDs should be hardcoded in the client code or fetched from your own server (the developer's server).
 
 The item's `price` is a `PaymentCurrencyAmount` that contains the current price of the item in the user's current region and currency.  The `price` is designed to be formatted for the user's current locale by using `Intl.NumberFormat`, as shown above.
 
@@ -246,6 +246,8 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article: -->
+
+* [Microsoft Store](https://apps.microsoft.com)
 
 GitHub:
 * [Digital Goods API For Microsoft Store PWA Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PwaDigitalGoods/explainer.md)
