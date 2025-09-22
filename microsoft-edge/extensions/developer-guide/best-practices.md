@@ -14,7 +14,7 @@ Follow these best practices to implement your extension and list it at [Microsof
 
 The Microsoft Edge extensions team continues to gather feedback from developers and users to evolve these best practices.  To ensure that your extension remains compliant and competitive, review this guidance regularly.
 
-Following these best practices helps improve the quality, reliability, and user experience of your extension.  However, meeting these guidelines does not guarantee that your extension will receive or retain the **Featured** badge.  The **Featured** badge is awarded based on internal automated evaluations, and is subject to change as Microsoft's standards and quality signals evolve.  Decisions about the **Featured** badge are final and are not subject to individual review.
+Following these best practices helps improve the quality, reliability, and user experience of your extension.  Meeting these guidelines doesn't guarantee that your extension will receive the **Featured** badge; see [The Featured badge](../index.md#the-featured-badge) in _Overview of Microsoft Edge extensions_.
 
 To maximize your extension's visibility, follow these best practices.
 
