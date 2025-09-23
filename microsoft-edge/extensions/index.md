@@ -25,7 +25,7 @@ An extension should include at least the following features:
 
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
-<!-- todo: equivalent of landing page cards -->
+A Microsoft Edge extension:
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
 
@@ -132,19 +132,49 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## The Featured badge
 
-A **Featured** badge is displayed on some extension listings at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  The **Featured** badge indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
+Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
 
-![The Featured badge to the right of the extension name](./index-images/featured-badge.png)
+![The Featured badge](./index-images/featured-badge.png)
 
-When you hover on a **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified**.
+The **Featured** badge is awarded to select extensions that align with [Best practices for extensions](./developer-guide/best-practices.md).  When you hover over the **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified.**
 
-For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at Microsoft Edge Add-ons.
+For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge:
 
-The Microsoft Edge extensions team reviews each extension for adherence to [Best practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
+![The Featured badge to the right of the extension name](./index-images/featured-badge-on-page.png)
 
-To help protect your browser settings, extensions that don't comply with the Best Practices for extensions are not badged.
 
-Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
+<!-- ------------------------------ -->
+#### What the Featured badge represents
+
+The **Featured** badge indicates that:
+
+* The extension aligns with Microsoft's best practices for security, privacy, performance, and user experience.
+
+* The extension has been reviewed and selected through an automated system.
+
+* The extension offers a reliable and high-quality experience for Microsoft Edge users. 
+
+The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status. 
+
+
+<!-- ------------------------------ -->
+#### Why the Featured badge might be revoked 
+
+The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meets the evolving standards, or if the extension's quality signals degrade over time. 
+
+To maintain a high-quality ecosystem, Microsoft periodically re-evaluates all badged extensions.  A **Featured** badge might be removed due to: 
+
+* Decline in user experience or performance metrics. 
+
+* Outdated or incomplete store listing information. 
+
+* Security or privacy concerns. 
+
+* Changes in Microsoft's evaluation criteria. 
+
+All decisions about the **Featured** badge are final and not subject to individual review.  There is no manual application or appeal process.  The **Featured** badge is awarded and revoked based on internal evaluation criteria and tooling. 
+
+To improve your extension's quality and eligibility for the **Featured** badge, see [Best practices for extensions](./developer-guide/best-practices.md).
 
 
 <!-- ====================================================================== -->
