@@ -160,7 +160,7 @@ The **Featured** badge is not a judgment of safety.  An extension that doesn't h
 <!-- ------------------------------ -->
 #### Why the Featured badge might be revoked 
 
-The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meet the evolving standards, or if the extension's quality signals degrade over time. 
+The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meets the evolving standards, or if the extension's quality signals degrade over time. 
 
 To maintain a high-quality ecosystem, Microsoft periodically re-evaluates all badged extensions.  A **Featured** badge might be removed due to: 
 
