@@ -10,7 +10,7 @@ ms.date: 09/22/2025
 ---
 # Best practices for extensions
 
-Follow these best practices to implement your extension and list it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Build an extension that conforms to Microsoft's standards for security, privacy, transparency, and user experience.  These principles help ensure your extension is safe, reliable, and valuable to users.
+Follow these best practices to implement your extension and list it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Build an extension that conforms to Microsoft's standards for security, privacy, performance, and user experience.  These principles help ensure your extension is safe, reliable, and valuable to users.
 
 The Microsoft Edge extensions team continues to gather feedback from developers and users to evolve these best practices.  To ensure that your extension remains compliant and competitive, review this guidance regularly.
 
