@@ -685,8 +685,8 @@ The Microsoft Edge team specified and implemented the new EyeDropper API in coll
 Many creative applications enable users to pick colors from parts of an app window or even from the entire screen, typically using an eyedropper metaphor. The EyeDropper API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
 
 See also:
-* [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/)<!-- todo: web.dev ok, or developer.mozilla.org? -->
-* [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/docs/Web/API/EyeDropper_API)
+* [EyeDropper API](https://developer.mozilla.org/docs/Web/API/EyeDropper_API) at MDN.
+* [Picking colors of any pixel on the screen with the EyeDropper API](https://web.dev/eyedropper/)<!-- todo: web.dev ok - keep, or only have the https://developer.mozilla.org link above? --> at web.dev.
 * [EyeDropper API demos](https://github.com/MicrosoftEdge/Demos/tree/main/eyedropper)
 
 

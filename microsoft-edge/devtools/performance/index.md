@@ -24,14 +24,16 @@ ms.date: 09/04/2023
 # Analyze runtime performance (tutorial)
 <!-- https://developer.chrome.com/docs/devtools/performance -->
 
-<!-- todo: web.dev ok, or developer.mozilla.org?s -->
+<!-- todo: web.dev ok, or link to https://developer.mozilla.org?s -->
 
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
-The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for [Core Web Vitals](https://web.dev/vitals/).<!-- todo: web.dev ok, or developer.mozilla.org? -->  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
+The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-- [Optimize website speed using Lighthouse](../speed/get-started.md)
+<!-- * [todo](https://developer.mozilla.org) at MDN. -->
+* [Web Vitals](https://web.dev/vitals/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+* [Optimize website speed using Lighthouse](../speed/get-started.md)
 
 
 <!-- ====================================================================== -->
@@ -186,7 +188,10 @@ Continuing from above:
    ![The line of code that caused the forced layout](./index-images/sources-app-update.png)
 
    The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
-   <!-- To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts). todo: web.dev ok, or developer.mozilla.org? -->
+
+   See also:
+   <!-- * [todo](https://developer.mozilla.org) at MDN.  https://developer.mozilla.org/search?q=forced+synchronous -->
+   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts) in _Avoid large, complex layouts and layout thrashing_ at web.dev.<!-- todo: web.dev ok? -->
 
 
 <!-- ------------------------------ -->
@@ -267,14 +272,11 @@ We then adjust the direction of the icon, but this time we don't read `element.o
 
 Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
-To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).<!-- todo: web.dev ok, or developer.mozilla.org? -->
+To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
 
 
 <!-- ====================================================================== -->
 ## Next steps
-
-<!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). todo: web.dev ok, or developer.mozilla.org? -->
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
@@ -288,12 +290,12 @@ There are many ways to improve runtime performance.  This article focused on one
 
 <!--
 The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:
-* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/) todo: web.dev ok, or developer.mozilla.org?
-* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/) todo: web.dev ok, or developer.mozilla.org?
-* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/) todo: web.dev ok, or developer.mozilla.org?
-* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/) todo: web.dev ok, or developer.mozilla.org?
-* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/) todo: web.dev ok, or developer.mozilla.org?
-* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/) todo: web.dev ok, or developer.mozilla.org?
+* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/) todo: web.dev ok, or link to https://developer.mozilla.org?
 -->
 
 

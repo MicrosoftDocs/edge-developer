@@ -18,7 +18,7 @@ This link handling is like how native apps handle links on many operating system
 link handling vs. url handling:
 Although the present file name is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
 The PWA URL handlers feature was removed from Chromium.
-See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/). todo: web.dev ok, or developer.mozilla.org?
+See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/). todo: web.dev ok, or link to https://developer.mozilla.org?
 -->
 
 

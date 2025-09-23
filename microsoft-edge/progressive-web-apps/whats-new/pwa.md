@@ -292,7 +292,7 @@ _2023 update: This feature is no longer an origin trial, and has been removed, s
 
 See also:
 * [Handle links to a PWA](../how-to/handle-urls.md)
-* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)<!-- todo: web.dev ok, or developer.mozilla.org? -->
+* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
 
 
 <!-- ------------------------------ -->

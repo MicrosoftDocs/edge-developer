@@ -51,5 +51,5 @@ You can use the **Application** tool in Microsoft Edge DevTools to verify that M
 ## See also
 
 *  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
-*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: web.dev ok, or developer.mozilla.org? -->
+*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
 *  [Test Progressive Web App (PWA) protocol handling](../../devtools/progressive-web-apps/protocol-handlers.md)
