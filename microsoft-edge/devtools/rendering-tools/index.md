@@ -98,7 +98,7 @@ Select a `Recalculate Style` event to view more information about it in the **De
 
 To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/).<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
 
-<!--todo: add Stick to compositor-only properties and manage layer count section when available -->
+<!--todo: when available, add section "Stick to compositor-only properties and manage layer count" -->
 
 
 <!-- ------------------------------ -->

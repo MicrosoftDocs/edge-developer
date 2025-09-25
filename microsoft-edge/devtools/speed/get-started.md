@@ -22,8 +22,8 @@ ms.date: 02/15/2023
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Optimize website speed using Lighthouse
-
-<!-- todo: web.dev ok, or link to https://developer.mozilla.org?s -->
+<!-- Lighthouse: Optimize website speed  https://developer.chrome.com/docs/devtools/lighthouse -->
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#goal_of_tutorial -->
 
 This tutorial teaches you how to use **Lighthouse** and other tools in DevTools to find ways to make your websites load faster.
 
@@ -32,6 +32,7 @@ The **Lighthouse** tool provides links to content that's hosted on third-party w
 
 <!-- ====================================================================== -->
 ## Prerequisites
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#prerequisites -->
 
 * Install [Visual Studio Code](https://code.visualstudio.com) to edit source code.
 
@@ -40,14 +41,17 @@ The **Lighthouse** tool provides links to content that's hosted on third-party w
 
 <!-- ====================================================================== -->
 ## Introduction
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#intro -->
 
 In this tutorial, you improve the performance of [Margie's travel](https://microsoftedge.github.io/Demos/travel-site/), a fictitious travel website that contains travel images, text descriptions, a few JavaScript-based user interactions, and an interactive map.
 
 The source files for the website are at [MicrosoftEdge / Demos > travel-site](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site). 
 
 
+<!-- next two sections are reverse order vs upstream -->
 <!-- ====================================================================== -->
 ## Step 1: Set up the website locally
+<!-- Set up  https://developer.chrome.com/docs/devtools/lighthouse#setup -->
 
 First, set up the website locally, so that you can make changes to it later:
 
@@ -72,6 +76,7 @@ First, set up the website locally, so that you can make changes to it later:
 
 <!-- ====================================================================== -->
 ## Step 2: Audit the site
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#audit -->
 
 Whenever you set out to improve the load performance of a site, always start with an audit.
 
@@ -81,7 +86,10 @@ The audit has two important functions:
 
 *  It gives you **actionable tips** on what changes improve performance the most.
 
+
+<!-- ------------------------------ -->
 #### Establish a baseline
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#baseline -->
 
 The baseline is a record of how the site performed before you made any performance improvements.
 
@@ -105,7 +113,10 @@ The baseline is a record of how the site performed before you made any performan
 
    ![The report for the Lighthouse tool about the performance of the site](./get-started-images/lighthouse-report.png)
 
+
+<!-- ------------------------------ -->
 #### Handling report errors
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#errors -->
 
 If the **Lighthouse** report shows errors, try running **Lighthouse** again from an **InPrivate** window, with no other tabs open. Running **Lighthouse** from an **InPrivate** window ensures that the auditing process runs without interference.
 
@@ -121,15 +132,23 @@ To open an **InPrivate** window:
 
    ![The report for the Lighthouse tool about the performance of the site in a InPrivate window](./get-started-images/private-lighthouse-report.png)
 
-#### Understand your report
 
+<!-- ------------------------------ -->
+#### Understand your report
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#report -->
+
+
+<!-- ---------- -->
 ###### Overall performance score
 
 The number at the top of your report is the overall performance score for the webpage.  Later, as you make changes to the code, the number displayed should increase.  A higher score means better performance.
 
 ![The overall performance score](./get-started-images/overall-score.png)
 
+
+<!-- ---------- -->
 ###### Metrics
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#metrics -->
 
 The **Metrics** section provides quantitative measurements of the performance of the webpage:
 
@@ -144,13 +163,19 @@ Click **Expand view** to display a description for each metric.  Then click **Le
 
 ![The expanded metrics section](./get-started-images/metrics-learn-more.png)
 
+
+<!-- ---------- -->
 ###### Screenshots
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#screenshots -->
 
 Below the **Metrics** section is a collection of screenshots that show you how the page looked while it was loading:
 
 ![Series of screenshots showing how the page looked while loading](./get-started-images/report-screenshots.png)
 
+
+<!-- ---------- -->
 ###### Opportunities
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#opportunities -->
 
 The **Opportunities** section provides specific tips on how to improve the load performance of this particular webpage:
 
@@ -160,13 +185,19 @@ Click an opportunity to display more information about it, and then click **Lear
 
 ![An expanded opportunity, with more information, and a 'Learn more' link](./get-started-images/expanded-opportunity.png)
 
+
+<!-- ---------- -->
 ###### Diagnostics
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#diagnostics -->
 
 The **Diagnostics** section provides more information about factors that contribute to the load time of the page:
 
 ![The Diagnostics section](./get-started-images/diagnostics-section.png)
 
+
+<!-- ---------- -->
 ###### Passed audits
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#passed-audits -->
 
 The **Passed audits** section shows you what the site is doing correctly.  Click **Show** to expand the section:
 
@@ -175,10 +206,28 @@ The **Passed audits** section shows you what the site is doing correctly.  Click
 
 <!-- ====================================================================== -->
 ## Step 3: Experiment
+<!-- Step 2: Experiment  https://developer.chrome.com/docs/devtools/lighthouse#experiment -->
 
 The **Opportunities** section of your report gives you tips on how to improve the performance of the webpage.  In this section, you implement the recommended changes to the code base, auditing the site again after each change to measure how that change affects site speed.
 
+
+<!-- ------------------------------ -->
+<!-- #### Enable text compression -->
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#compression -->
+
+<!-- todo: add this section? 2025/09/24 -->
+
+
+<!-- ---------- -->
+<!-- ###### Text compression in the real world -->
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#real-world-compression -->
+
+<!-- todo: add this section? 2025/09/24 -->
+
+
+<!-- ------------------------------ -->
 #### Resize images
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#images -->
 
 Your report indicates that serving appropriately sized images is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500 pixels wide, there's really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.
 
@@ -226,21 +275,32 @@ Your score increased from 18 to 26. To verify how much data you saved, use the *
 
 Now, the images on the webpage only require transferring 360 KB of data, instead of 16.4 MB.
 
+
+<!-- ---------- -->
 ###### Automatically resize images
+<!-- Resizing images in the real world  https://developer.chrome.com/docs/devtools/lighthouse#real-world-resizing -->
 
 For a small app, doing a one-off resize like this might be good enough. But for a large app, consider these strategies for managing images:
 
 *  Automatically resize images during your build process.
 
-*  Create multiple sizes of each image during the build process and then use `srcset` in your code. At runtime, the browser takes care of choosing which size is best for the device. To learn more, see [Responsive images](https://web.dev/responsive-images/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+*  Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.
 
 *  Use an image CDN that lets you dynamically resize an image when you request it.
 
 *  At least, optimize each image.  This can often create huge savings.
 
-_Optimization_ means running an image through a program that reduces the size of the image file.  For more tips, see [Optimize your images](https://web.dev/fast/#optimize-your-images)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> in _Fast load times_ at web.dev.
+   _Optimization_ means running an image through a program that reduces the size of the image file.
 
+See also:
+* [Using responsive images in HTML](https://developer.mozilla.org/docs/Web/HTML/Guides/Responsive_images) at MDN.
+* [Responsive images](https://web.dev/responsive-images/)<!-- todo: web.dev ok, or only link to MDN? --> at web.dev.
+* [Optimize your images](https://web.dev/fast/#optimize-your-images)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> in _Fast load times_ at web.dev.
+
+
+<!-- ------------------------------ -->
 #### Reduce unused JavaScript
+<!-- not in upstream -->
 
 Your latest **Lighthouse** report says that the webpage contains unused JavaScript code and that loading this code only when required would decrease the amount of data transferred when the page loads.
 
@@ -318,7 +378,10 @@ Use the Intersection Observer API to detect when the map becomes visible to the 
 
     Your **Lighthouse** score is now at 31, which is an improvement from before, but there are more things to optimize.
 
+
+<!-- ------------------------------ -->
 #### Eliminate render-blocking resources
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#render -->
 
 The next opportunity displayed in the **Opportunities** section of the **Lighthouse** tool is related to eliminating render-blocking resources.
 
@@ -358,7 +421,10 @@ Now, remove the references to these files from the code:
 
 1. Save your changes in Visual Studio Code, then refresh the webpage in Microsoft Edge, and run a new audit in the **Lighthouse** tool again to see how your changes affect the load performance.
 
+
+<!-- ---------- -->
 ###### Automatically remove non-critical CSS
+<!-- Optimizing the Critical Rendering Path in the real-world  https://developer.chrome.com/docs/devtools/lighthouse#crp -->
 
 In the previous step, your score improved slightly, but **Lighthouse** still flags other CSS files as blocking the initial render of the page.
 
@@ -374,11 +440,18 @@ The webpage uses the remaining CSS files so you can't remove them. However, it's
 
 To automatically split your CSS code this way, you can use the _Critical_ tool. To learn more, see the [Critical project repo](https://github.com/addyosmani/critical).
 
-You can then load your non-critical CSS code in a way that doesn't block the initial render of the page. To learn more, see [Defer non-critical CSS](https://web.dev/defer-non-critical-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+You can then load your non-critical CSS code in a way that doesn't block the initial render of the page.  See [Defer non-critical CSS](https://web.dev/defer-non-critical-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org?  "see also", below --> at web.dev.
 
-It's also good to minify your CSS code and remove unneeded whitespace characters and comments. To learn more, see [Minify CSS](https://web.dev/minify-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://web.dev/minify-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org?  "see also", below --> at web.dev.
 
+See also:
+* [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.
+* [CSS performance optimization](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS) at MDN.
+
+
+<!-- ------------------------------ -->
 #### Reduce layout shift by setting explicit width and height on images
+<!-- not in upstream -->
 
 In your **Lighthouse** report, the **Diagnostics** section suggests defining explicit `width` and `height` for image elements. Click on **Image elements do not have explicit width and height**  to display more information:
 
@@ -393,7 +466,11 @@ To prevent layout shifts caused by loading images on a webpage, do either of the
 * Define each image's `width` and `height` attributes in the HTML code.
 * Reserve the space in CSS by using the `aspect-ratio` CSS property.
 
-To learn more, see [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> in _Optimize Cumulative Layout Shift_ at web.dev.
+See also:
+* [Rendering strategy: preventing jank when loading images](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia#rendering_strategy_preventing_jank_when_loading_images) in _Multimedia: Images_ at MDN.
+* [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions)<!-- todo: web.dev ok, or just link to MDN? --> in _Optimize Cumulative Layout Shift_ at web.dev.
+<!-- https://developer.mozilla.org/en-US/search?q=Images+without+dimensions -->
+
 
 In the following steps, you use the `aspect-ratio` CSS property to avoid layout shifts:
 
@@ -436,7 +513,10 @@ In the following steps, you use the `aspect-ratio` CSS property to avoid layout 
 
     ![The Lighthouse tool report showing a better score after the aspect-ratio changes](./get-started-images/lighthouse-report-with-aspect-ratio.png)
 
+
+<!-- ------------------------------ -->
 #### Do less work in the main thread
+<!-- Do less main thread work  https://developer.chrome.com/docs/devtools/lighthouse#main -->
 
 Your latest report shows high **Time to Interactive** and **Total Blocking Time** metric values, which means that there's still something on the webpage that takes a long time to run and prevents the page from being usable for several seconds.
 
@@ -474,11 +554,11 @@ Optimize the `initRatings` function to make the page load faster:
 
 1. In Visual Studio Code, open the `/travel-site/assets/rating.js` file and read through the code.
 
-    The code in this file is responsible for displaying five customer reviews on the webpage. Each review has a rating consisting of several stars, a quote, and an author. These reviews come from a server-side API used in the `getRatings` function. The `initRatings` function creates DOM elements in the page for each review.
+    The code in this file is responsible for displaying five customer reviews on the webpage.  Each review has a rating consisting of several stars, a quote, and an author.  These reviews come from a server-side API used in the `getRatings` function.  The `initRatings` function creates DOM elements in the page for each review.
 
 1. In the `initRatings` function, find a way to make the JavaScript code faster.
 
-    This webpage is just a demo, and a `for` loop was introduced to slow down the code. In practice, there are many ways for a JavaScript file like this one to cause slow page loads, such as:
+    This webpage is just a demo, and a `for` loop was introduced to slow down the code.  In practice, there are many ways for a JavaScript file like this one to cause slow page loads, such as:
 
     * Accessing the DOM too frequently.
     * Running heavy computation tasks.
@@ -496,7 +576,10 @@ Optimize the `initRatings` function to make the page load faster:
 
 To learn more about how to analyze page performance, see [Performance features reference)](../performance/reference.md).
 
+
+<!-- ---------- -->
 ###### Doing less work in the main thread, in the real world
+<!-- Doing less main thread work in the real world  https://developer.chrome.com/docs/devtools/lighthouse#real-world-main-thread -->
 
 The **Performance** tool is the most common way to understand what activity your webpage does as it loads, and to find ways to remove unnecessary activity.
 
@@ -507,9 +590,11 @@ Webpages often load slowly when they use JavaScript for generating most of their
 
 <!-- ====================================================================== -->
 ## Summary
+<!-- https://developer.chrome.com/docs/devtools/lighthouse#summary -->
 
-*  Whenever you set out to optimize the load performance of a site, always start with an audit. The audit establishes a baseline, and gives you tips on how to improve.
-*  Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.
+* Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.
+
+* Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.
 
 
 <!-- ====================================================================== -->

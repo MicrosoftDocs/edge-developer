@@ -23,8 +23,6 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
-<!-- todo: web.dev ok, or link to https://developer.mozilla.org?s -->
-
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
@@ -264,13 +262,15 @@ See also:
 <!-- ------------------------------ -->
 #### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
+The Idle Detection API allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool in the [Quick View](../../../customize/index.md#quick-view) panel at the bottom of DevTools.
 
 ![Emulate inactive users](./devtools-images/emulate-idle.png)
 
 Chromium issue: [#1090802](https://crbug.com/1090802)
 
 See also:
+* [Idle Detection API](https://developer.mozilla.org/en-US/docs/Web/API/Idle_Detection_API) at MDN.
+* [Idle Detection API](https://web.dev/idle-detection)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
 * [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
@@ -379,7 +379,7 @@ See also:
 <!-- ---------- -->
 ###### Security and isolation information
 
-Secure context, [Cross-Origin-Embedder-Policy (COEP)](https://web.dev/coop-coep),<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> and [Cross-Origin-Opener-Policy (COOP)](https://web.dev/coop-coep)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> are now displayed in the frame details.
+Secure context, Cross-Origin-Embedder-Policy (COEP), and Cross-Origin-Opener-Policy (COOP) are now displayed in the frame details:
 
 ![Security and isolation information](./devtools-images/coep-coop.png)
 
@@ -388,12 +388,14 @@ The Chromium project plans to add more security information to the frame details
 Chromium issue: [#1051466](https://crbug.com/1051466)
 
 See also:
+* [Cross-Origin-Embedder-Policy (COEP) header](https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy) at MDN.
+* [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 * [Understand security issues using the Security tool](../../../security/index.md)
 
 
 <!-- ------------------------------ -->
-#### Elements and Network panel updates
+#### Updates to Elements tool and Network tool
 
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)

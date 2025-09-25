@@ -275,7 +275,8 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
 See also:
-* [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+* [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) at MDN.
+* [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2)<!-- todo: web.dev ok, or just link to MDN? -->
 * [Analyze a performance recording](../../../performance/reference.md#analyze-a-performance-recording)
 
 For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
