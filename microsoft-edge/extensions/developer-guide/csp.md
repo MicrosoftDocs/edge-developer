@@ -1,4 +1,4 @@
----
+f---
 title: Using Content Security Policy (CSP) to control which resources can be run
 description: Using Content Security Policy (CSP) to control which resources can be loaded and run by a Microsoft Edge extension.
 author: MSEdgeTeam
@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 11/09/2022
 ---
 # Using Content Security Policy (CSP) to control which resources can be run
+<!-- https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy -->
 
 To control which content can be run by your extension, in the extension's `manifest.json` file, use the `content_security_policy` key and its policy string value, per the following syntax:
 

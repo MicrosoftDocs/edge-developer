@@ -79,4 +79,4 @@ MDN:
 * [Navigator: registerProtocolHandler() method](https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler) at MDN.
 
 developer.chrome.com:
-* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: developer.chrome.com ok?  this is the only web.dev link in this article --> at developer.chrome.com.
+* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: developer.chrome.com ok? --> at developer.chrome.com.

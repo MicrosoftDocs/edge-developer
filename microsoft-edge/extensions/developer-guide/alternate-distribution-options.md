@@ -9,10 +9,7 @@ ms.subservice: extensions
 ms.date: 05/05/2023
 ---
 # Alternative ways to distribute an extension
-<!-- alts:
-# Use alternative installation methods 
-per https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions
--->
+<!-- ~= Use alternative installation methods  https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions -->
 
 Generally, a Microsoft Edge extension is distributed by publishing it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
 
@@ -33,6 +30,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Gather initial information
+<!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#prereqs -->
 
 Make sure that you publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/)<!-- todo: but Intro says other scenarios -->, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
 
@@ -49,6 +47,7 @@ The following examples use `1.0` as the version, and `aaaaaaaabbbbbbbbccccccccdd
 
 <!-- ====================================================================== -->
 ## Using the Windows registry (Windows only)
+<!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#registry -->
 
 To distribute your extension using the Windows registry:
 
@@ -73,6 +72,7 @@ To distribute your extension using the Windows registry:
 
 <!-- ====================================================================== -->
 ## Using a preferences JSON file (macOS and Linux)
+<!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#preferences -->
 
 To distribute your extension by using a preferences JSON file:
 
@@ -146,6 +146,7 @@ To distribute your extension by using a preferences JSON file:
 
 <!-- ====================================================================== -->
 ## Update and uninstall externally installed extensions
+<!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#updating -->
 
 Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any changes to the externally installed extensions.
 
@@ -160,6 +161,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Blocking of extensions
+<!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#faq-blocklist -->
 
 The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
 
@@ -181,7 +183,7 @@ Microsoft Edge Enterprise docs:
    * [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions)
 
 Chrome Extensions docs:
-* [Use alternative installation methods](https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions)<!-- todo: developer.chrome.com ok? --><!-- todo: maybe remove link after update present article.  = [here] link below -->
+* [Use alternative installation methods](https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions)<!-- todo: developer.chrome.com ok?  maybe remove link after update present article per [here] link below -->
 
 
 <!-- ====================================================================== -->

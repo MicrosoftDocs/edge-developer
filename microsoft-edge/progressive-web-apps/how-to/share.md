@@ -319,6 +319,7 @@ self.addEventListener('fetch', event => {
 
 MDN:
 * [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API)<!-- 2x -->
+* [share_target](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target) manifest member.
 * [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<!-- 2x -->
 * [File interface](https://developer.mozilla.org/docs/Web/API/File)<!-- 2x -->
 
