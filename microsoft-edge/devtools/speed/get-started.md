@@ -442,11 +442,11 @@ To automatically split your CSS code this way, you can use the _Critical_ tool. 
 
 You can then load your non-critical CSS code in a way that doesn't block the initial render of the page.  See [Defer non-critical CSS](https://web.dev/articles/defer-non-critical-css)<!-- todo: web.dev ok, or just link to MDN per "See also" below? --> at web.dev.
 
-It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- todo: web.dev ok, or just link to MDN per "See also" below? --> at web.dev.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- todo: developer.chrome.com ok, or just link to MDN per "See also" below? --> at developer.chrome.com.
 
 See also:
-* [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.
-* [CSS performance optimization](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS) at MDN.
+* [CSS Object Model](https://developer.mozilla.org/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.
+* [CSS performance optimization](https://developer.mozilla.org/docs/Learn_web_development/Extensions/Performance/CSS) at MDN.
 
 
 <!-- ------------------------------ -->
@@ -468,7 +468,7 @@ To prevent layout shifts caused by loading images on a webpage, do either of the
 
 See also:
 * [Rendering strategy: preventing jank when loading images](https://developer.mozilla.org/docs/Learn_web_development/Extensions/Performance/Multimedia#rendering_strategy_preventing_jank_when_loading_images/) in _Multimedia: Images_ at MDN.
-* [Images without dimensions](https://web.dev/articles/optimize-cls#images-without-dimensions/)<!-- todo: web.dev ok, or just link to MDN?  https://developer.mozilla.org/en-US/search?q=Images+without+dimensions --> in _Optimize Cumulative Layout Shift_ at web.dev.
+* [Images without dimensions](https://web.dev/articles/optimize-cls#images-without-dimensions/)<!-- todo: web.dev ok, or just link to MDN?  https://developer.mozilla.org/search?q=Images+without+dimensions --> in _Optimize Cumulative Layout Shift_ at web.dev.
 
 In the following steps, you use the `aspect-ratio` CSS property to avoid layout shifts:
 

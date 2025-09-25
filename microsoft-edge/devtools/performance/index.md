@@ -29,7 +29,8 @@ _Runtime performance_ is how your page performs when it's running, as opposed to
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-* [Web Vitals](https://web.dev/vitals/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+* [Web Vitals](https://web.dev/articles/vitals)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
+   * [Terminology](./overview.md#terminology) in _Performance tool: Analyze your website's performance_.
 * [Optimize website speed using Lighthouse](../speed/get-started.md)
 
 
@@ -289,12 +290,12 @@ There are many ways to improve runtime performance.  This article focused on one
 
 <!--
 The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:
-* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Optimize JavaScript execution](https://web.dev/articles/optimize-javascript-execution) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Reduce the scope and complexity of style calculations](https://web.dev/articles/reduce-the-scope-and-complexity-of-style-calculations) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Avoid large, complex layouts and layout thrashing](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Simplify paint complexity and reduce paint areas](https://web.dev/articles/simplify-paint-complexity-and-reduce-paint-areas) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/articles/stick-to-compositor-only-properties-and-manage-layer-count) todo: web.dev ok, or link to https://developer.mozilla.org?
+* [Debounce your input handlers](https://web.dev/articles/debounce-your-input-handlers) todo: web.dev ok, or link to https://developer.mozilla.org?
 -->
 
 

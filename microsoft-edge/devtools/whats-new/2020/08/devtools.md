@@ -269,8 +269,8 @@ The Idle Detection API allows developers to detect inactive users and react on i
 Chromium issue: [#1090802](https://crbug.com/1090802)
 
 See also:
-* [Idle Detection API](https://developer.mozilla.org/en-US/docs/Web/API/Idle_Detection_API) at MDN.
-* [Idle Detection API](https://web.dev/idle-detection)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
+* [Idle Detection API](https://developer.mozilla.org/docs/Web/API/Idle_Detection_API) at MDN.
+* [Idle Detection API](https://developer.chrome.com/docs/capabilities/web-apis/idle-detection)<!-- todo: developer.chrome.com ok, or just link to MDN? --> at developer.chrome.com.
 * [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
