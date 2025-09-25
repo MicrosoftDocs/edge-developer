@@ -31,16 +31,14 @@ Use the **Performance** tool to analyze your website's performance.  There are t
 * Record a profile and view a performance timeline.
 
 **Detailed contents:**
-* [Overview](#overview)
+<!-- https://github.com/captainbrosset/WebToc -->
 
+* [Overview](#overview)
    * [Open the Performance tool](#open-the-performance-tool)
       * [Using the Command Menu](#using-the-command-menu)
-
    * [Local metrics for page interactions](#local-metrics-for-page-interactions)
    * [Recorded profile timeline](#recorded-profile-timeline)
    * [Switching to viewing local metrics or another profile](#switching-to-viewing-local-metrics-or-another-profile)
-
-
 * [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
    * [Terminology](#terminology)
    * [Use the demo page](#use-the-demo-page)

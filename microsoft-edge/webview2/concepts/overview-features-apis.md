@@ -20,6 +20,8 @@ when adding an h4 heading, add nav link below the h2
 -->
 
 **Detailed contents:**
+<!-- https://github.com/captainbrosset/WebToc -->
+
 * [Overview of top-level feature areas](#overview-of-top-level-feature-areas)
 * [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core)
 * [Web/native interop](#webnative-interop)
