@@ -24,14 +24,11 @@ ms.date: 09/04/2023
 # Analyze runtime performance (tutorial)
 <!-- https://developer.chrome.com/docs/devtools/performance -->
 
-<!-- todo: web.dev ok, or link to https://developer.mozilla.org?s -->
-
 _Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-<!-- * [todo](https://developer.mozilla.org) at MDN. -->
 * [Web Vitals](https://web.dev/vitals/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
 * [Optimize website speed using Lighthouse](../speed/get-started.md)
 
@@ -272,7 +269,9 @@ We then adjust the direction of the icon, but this time we don't read `element.o
 
 Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
-To learn more, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations).<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+See also:
+* [Use transform and opacity changes for animations](https://web.dev/articles/stick-to-compositor-only-properties-and-manage-layer-count#use-transform-and-opacity-changes-for-animations)<!-- todo: web.dev ok, or just link to MDN? --> in _Stick to Compositor-Only Properties and Manage Layer Count_ at web.dev.
+* [Transitioning opacity](https://developer.mozilla.org/docs/Web/CSS/opacity#transitioning_opacity) in _opacity_ at MDN.<!-- todo: relevant? -->
 
 
 <!-- ====================================================================== -->

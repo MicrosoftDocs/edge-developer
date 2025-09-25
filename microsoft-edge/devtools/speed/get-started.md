@@ -294,8 +294,8 @@ For a small app, doing a one-off resize like this might be good enough. But for 
 
 See also:
 * [Using responsive images in HTML](https://developer.mozilla.org/docs/Web/HTML/Guides/Responsive_images) at MDN.
-* [Responsive images](https://web.dev/responsive-images/)<!-- todo: web.dev ok, or only link to MDN? --> at web.dev.
-* [Optimize your images](https://web.dev/fast/#optimize-your-images)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> in _Fast load times_ at web.dev.
+* [Responsive images](https://web.dev/articles/responsive-images/)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
+* [Optimize your images](https://web.dev/explore/fast#optimize-your-images)<!-- todo: web.dev ok, or just link to MDN? --> in _Fast load times_ at web.dev.
 
 
 <!-- ------------------------------ -->
@@ -440,9 +440,9 @@ The webpage uses the remaining CSS files so you can't remove them. However, it's
 
 To automatically split your CSS code this way, you can use the _Critical_ tool. To learn more, see the [Critical project repo](https://github.com/addyosmani/critical).
 
-You can then load your non-critical CSS code in a way that doesn't block the initial render of the page.  See [Defer non-critical CSS](https://web.dev/defer-non-critical-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org?  "see also", below --> at web.dev.
+You can then load your non-critical CSS code in a way that doesn't block the initial render of the page.  See [Defer non-critical CSS](https://web.dev/articles/defer-non-critical-css)<!-- todo: web.dev ok, or just link to MDN per "See also" below? --> at web.dev.
 
-It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://web.dev/minify-css/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org?  "see also", below --> at web.dev.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- todo: web.dev ok, or just link to MDN per "See also" below? --> at web.dev.
 
 See also:
 * [CSS Object Model](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.
@@ -467,10 +467,8 @@ To prevent layout shifts caused by loading images on a webpage, do either of the
 * Reserve the space in CSS by using the `aspect-ratio` CSS property.
 
 See also:
-* [Rendering strategy: preventing jank when loading images](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia#rendering_strategy_preventing_jank_when_loading_images) in _Multimedia: Images_ at MDN.
-* [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions)<!-- todo: web.dev ok, or just link to MDN? --> in _Optimize Cumulative Layout Shift_ at web.dev.
-<!-- https://developer.mozilla.org/en-US/search?q=Images+without+dimensions -->
-
+* [Rendering strategy: preventing jank when loading images](https://developer.mozilla.org/docs/Learn_web_development/Extensions/Performance/Multimedia#rendering_strategy_preventing_jank_when_loading_images/) in _Multimedia: Images_ at MDN.
+* [Images without dimensions](https://web.dev/articles/optimize-cls#images-without-dimensions/)<!-- todo: web.dev ok, or just link to MDN?  https://developer.mozilla.org/en-US/search?q=Images+without+dimensions --> in _Optimize Cumulative Layout Shift_ at web.dev.
 
 In the following steps, you use the `aspect-ratio` CSS property to avoid layout shifts:
 

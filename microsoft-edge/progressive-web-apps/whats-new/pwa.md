@@ -291,8 +291,8 @@ Developers can now use the experimental feature Web App URL Handlers, in an orig
 _2023 update: This feature is no longer an origin trial, and has been removed, so the following no longer applies, and the PWA URL Handlers feature was removed from the Chromium browser engine:_ Register your domain for the **Web App URL Handlers** trial at [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 See also:
-* [Handle links to a PWA](../how-to/handle-urls.md)
-* [PWAs as URL Handlers](https://web.dev/pwa-url-handler/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+* [Handle links to a PWA](../how-to/handle-urls.md)<!-- doesn't mention `handle_links` -->
+* [PWAs as URL Handlers](https://developer.chrome.com/docs/capabilities/pwa-url-handler)<!-- todo: developer.chrome.com ok?  https://developer.mozilla.org/search?q=handle_links - `url_handlers` was replaced by `handle_links` -->
 
 
 <!-- ------------------------------ -->
@@ -361,6 +361,10 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 <!-- ====================================================================== -->
 ## See also
+<!-- general links not specific to a given What's New entry -->
 
 * [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
+
+External:
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider)

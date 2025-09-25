@@ -272,7 +272,7 @@ MDN:
    * [Pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states) in _Compute Pressure API_.
 
 Web.dev:
-* [User Location](https://web.dev/user-location/)<!-- todo: web.dev ok, or only link to https://developer.mozilla.org?  see MDN links above.  this is the only web.dev link in the present article -->
+* [User Location](https://web.dev/articles/user-location)<!-- todo: web.dev ok, or only link to https://developer.mozilla.org?  see MDN links above.  this is the only web.dev link in the present article -->
 
 Demos:
 * [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 

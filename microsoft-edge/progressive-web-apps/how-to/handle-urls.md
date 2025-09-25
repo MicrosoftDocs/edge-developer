@@ -16,9 +16,11 @@ This link handling is like how native apps handle links on many operating system
 
 <!--
 link handling vs. url handling:
-Although the present file name is handle-urls.md, this file was repurposed to cover link handling rather than URL handlers.
+Although the present file name is handle-urls.md, this file was repurposed to cover link handling (= `handle_links` manifest member?) rather than URL handlers (`url_handlers` manifest member).
 The PWA URL handlers feature was removed from Chromium.
-See also [PWAs as URL Handlers](https://web.dev/pwa-url-handler/). todo: web.dev ok, or link to https://developer.mozilla.org?
+* [PWAs as URL Handlers](https://developer.chrome.com/docs/capabilities/pwa-url-handler) - "Warning: PWAs as URL Handlers was part of the capabilities project https://developer.chrome.com/docs/capabilities/status and support for the experimental `url_handlers` manifest member, documented below, is being phased out.  The `url_handlers` manifest member is being replaced by the new `handle_links` manifest member, which is currently being standardized and implemented. See the handle_links explainer. https://github.com/WICG/pwa-url-handler/blob/main/handle_links/explainer.md "
+
+`handle_links` doesn't occur below:
 -->
 
 
@@ -115,4 +117,16 @@ For example, this `.well-known/web-app-origin-association` configuration file re
 
 See also:
 * [scope_extensions](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/scope_extensions) at MDN.
+* [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md) explainer.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article body -->
+
+MDN:
+* [scope_extensions](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/scope_extensions)
+
+Explainers:
 * [Scope Extensions for Web App Manifest](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md)
+* [Web App Link Handling Manifest Options](https://github.com/WICG/pwa-url-handler/blob/main/handle_links/explainer.md) - `handle_links` explainer.<!-- todo: relevant? the present article's body doesn't cover `handle_links` -->

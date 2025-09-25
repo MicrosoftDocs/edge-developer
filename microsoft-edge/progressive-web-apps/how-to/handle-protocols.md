@@ -38,7 +38,7 @@ To use Protocol Handling, declare which protocols your app handles. This is done
 In the above example, the app is registered to handle the `mailto` protocol.  When the operating system launches the app in response to the `mailto` protocol, the app navigates to the `/newEmail` URL, replacing the `%s` placeholder with the full URL that's being handled.
 
 See also:
-* [protocol_handlers](https://developer.mozilla.org/docs/Web/Manifest/protocol_handlers) at MDN > References > Web app manifests.
+* [protocol_handlers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) for PWAs, at MDN.
 
 
 <!-- ====================================================================== -->
@@ -49,7 +49,20 @@ You can use the **Application** tool in Microsoft Edge DevTools to verify that M
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article body, plus addl -->
 
-*  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
-*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
-*  [Test Progressive Web App (PWA) protocol handling](../../devtools/progressive-web-apps/protocol-handlers.md)
+* [Test Progressive Web App (PWA) protocol handling](../../devtools/progressive-web-apps/protocol-handlers.md)<!-- link is in article body -->
+
+Blog:
+* [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)<!-- link not in article body -->
+
+MDN:
+* [protocol_handlers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) for PWA manifest.<!-- link is in article body -->
+* [Best practices for PWAs](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Best_practices)<!-- link not in article body -->
+* [Navigator: registerProtocolHandler() method](https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler)<!-- link not in article body -->
+
+developer.chrome.com:
+* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- link not in article body -->
+
+Wikipedia:
+* [List of URI schemes](https://wikipedia.org/wiki/List_of_URI_schemes)<!-- link is in article body -->

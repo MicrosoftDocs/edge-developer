@@ -106,17 +106,39 @@ See [Publish a PWA to the Microsoft Store](how-to/microsoft-store.md).
 
 Using Progressive Web App (PWA) technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**.  Many businesses have had success with PWAs.  For example:
 
-*   The Starbucks PWA has increased daily active users twice.  Orders on desktop are nearly the same rate as mobile ([source](https://twitter.com/davidbrunelle/status/993960071406080000)).
-*   Trivago saw an increase of 150% for people who add its PWA to the home screen.  The increased engagement led to a 97% increase in clockouts to hotel offers ([source](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/)).
-*   Tinder cut load times from 11.91 seconds to 4.68 seconds with their PWA.  The app is 90% smaller than the compiled Android app ([source](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)).
+* The Starbucks PWA has increased daily active users twice.  Orders on desktop are nearly the same rate as mobile ([source](https://twitter.com/davidbrunelle/status/993960071406080000)).<!-- todo: 404-like -->
+
+* Trivago saw an increase of 150% for people who add its PWA to the home screen.  The increased engagement led to a 97% increase in clockouts to hotel offers ([source](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/)).
+
+* Tinder cut load times from 11.91 seconds to 4.68 seconds with their PWA.  The app is 90% smaller than the compiled Android app ([source](https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0)).
 
 Read more success stories on the [PWA Stats](https://www.pwastats.com/) website.
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article (except stats sources) -->
 
-*  [Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps) at MDN.
-*  [Progressive Web Apps](https://web.dev/progressive-web-apps/)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
-*  [Progressive Web Apps](https://wikipedia.org/wiki/Progressive_web_app) at Wikipedia.
-*  [PWA Q&A](https://www.aaron-gustafson.com/notebook/pwa-qa)
+* [Get started with PWAs](./how-to/index.md)
+* [Installing a PWA](./ux.md#installing-a-pwa)
+* [Publish a PWA to the Microsoft Store](./how-to/microsoft-store.md)
+   * [Microsoft Store](https://apps.microsoft.com)
+
+MDN:
+* [Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps) at MDN.
+
+web.dev:
+* [Progressive Web Apps](https://web.dev/explore/progressive-web-apps)<!-- todo: web.dev ok, or just link to MDN? -->
+
+Wikipedia:
+* [Progressive Web Apps](https://wikipedia.org/wiki/Progressive_web_app)
+
+Blog:
+* [PWA Q&A](https://www.aaron-gustafson.com/notebook/pwa-qa)
+* [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
+
+YouTube:
+* [Ignite | March 2021 | Igniting the Web Apps Story](https://www.youtube.com/watch?v=xUNC8MjW_iI)
+
+Stats:
+* [PWA Stats](https://www.pwastats.com)

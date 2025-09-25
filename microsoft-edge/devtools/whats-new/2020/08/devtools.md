@@ -389,7 +389,7 @@ Chromium issue: [#1051466](https://crbug.com/1051466)
 
 See also:
 * [Cross-Origin-Embedder-Policy (COEP) header](https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy) at MDN.
-* [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/coop-coep)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
+* [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/articles/coop-coep)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 * [Understand security issues using the Security tool](../../../security/index.md)
 

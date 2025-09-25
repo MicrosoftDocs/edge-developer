@@ -20,7 +20,7 @@ ms.date: 2/22/2023
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->
+   limitations under the License. -->
 # Troubleshooting common performance issues
 
 <!-- not able to find this article or its strings in other repo; the [here] link redirects.  "todo" items might not be actionable -->
@@ -49,10 +49,11 @@ JavaScript calculations, especially ones that trigger extensive visual changes, 
 <!-- ------------------------------ -->
 #### JavaScript: Tools
 
-Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
+Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took. -->
 
-<!--todo: add Recording section when available  -->
-<!--todo: add Profile JavaScript (JS Profiler) section when available  -->
+<!-- todo: add section "Recording" when available -->
+
+<!-- todo: add section "Profile JavaScript (JS Profiler)" when available -->
 
 If you notice quite a bit of jank (interruptions of rendering) in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed up JavaScript runtime ("Allocation sampling" profiling type)](js-runtime.md).
 
@@ -64,12 +65,12 @@ The following are common JavaScript problems and potential solutions.
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/#7_expensive_input_handlers) in _The Runtime Performance Checklist_ by Paul Lewis. |
-| Badly timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  |
-| Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event) stalls, because it's swamped with JavaScript work.  | Move pure computational work to Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!-- See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution). -->  |
-| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animations](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist#6_garbage_collection_in_animations) in _The Runtime Performance Checklist_ by Paul Lewis. |
+| Expensive input handlers affecting response or animation. | Touch, parallax scrolling. | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/#7_expensive_input_handlers) in _The Runtime Performance Checklist_ by Paul Lewis. |
+| Badly timed JavaScript affecting response, animation, load. | User scrolls right after page load, setTimeout / setInterval. | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers). |
+| Long-running JavaScript affecting response. | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event) stalls, because it's swamped with JavaScript work. | Move pure computational work to Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!-- See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution). --> |
+| Garbage-y scripts affecting response or animation. | Garbage collection may happen anywhere. | Write less garbage-y scripts.  See [Garbage Collection in Animations](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist#6_garbage_collection_in_animations) in _The Runtime Performance Checklist_ by Paul Lewis. |
 
-<!--todo: add "Optimize JavaScript runtime" section when available  -->
+<!-- todo: add section "Optimize JavaScript runtime" when available -->
 
 
 <!-- ====================================================================== -->
@@ -77,12 +78,12 @@ The following are common JavaScript problems and potential solutions.
 
 Style changes are costly, especially if those changes affect more than one element in the DOM.  Any time you apply styles to an element, the browser figures out the impact on all related elements, recalculates the layout, and repaints.
 
-<!--Related Guides:
-
+<!--
+Related Guides:
 * [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
 -->
 
-<!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
+<!-- todo: add section "Reduce the Scope and Complexity of Styles Calculations" when available -->
 
 
 <!-- ------------------------------ -->
@@ -90,15 +91,15 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 Take a recording in the **Performance** tool.  Check the recording for large `Recalculate Style` events (displayed in purple).
 
-<!--todo: add Recording section when available  -->
+<!-- todo: add section "Recording" when available -->
 
 Select a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.
 
 ![Long recalculate style](./index-images/rendering-tools-performance-recalculate-style-summary.png)
 
-To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/).<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/articles/stick-to-compositor-only-properties-and-manage-layer-count).<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
 
-<!--todo: when available, add section "Stick to compositor-only properties and manage layer count" -->
+<!-- todo: when available, add section "Stick to compositor-only properties and manage layer count" -->
 
 
 <!-- ------------------------------ -->
@@ -108,33 +109,34 @@ The following table describes some common style problems and potential solutions
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Expensive style calculations affecting response or animation.  | Any CSS property that changes the geometry of an element, like the width, height, or position; the browser checks all other elements and recalculates the layout.  | Avoid CSS that triggers layouts |
-| Complex selectors affecting response or animation.  | Nested selectors force the browser to know everything about all the other elements, including parents and children.  | Reference an element in your CSS with just a class.  |
+| Expensive style calculations affecting response or animation. | Any CSS property that changes the geometry of an element, like the width, height, or position; the browser checks all other elements and recalculates the layout. | Avoid CSS that triggers layouts. |
+| Complex selectors affecting response or animation. | Nested selectors force the browser to know everything about all the other elements, including parents and children. | Reference an element in your CSS with just a class. |
 
-<!--todo: add Avoid CSS that triggers layouts section when available -->
-<!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->
+<!-- todo: add section "Avoid CSS that triggers layouts" when available -->
 
-<!--Related Guides:
-
-* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)  -->
-
-<!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
+<!-- todo: add section "Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class)" when available
+Related Guides:
+* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+https://learn.microsoft.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations - 404
+-->
 
 
 <!-- ====================================================================== -->
 ## Layout
 
-Layout (or reflow in Firefox) is the process by which the browser calculates the positions and sizes of all the elements on a page.  The layout model of the web means that one element may affect others; for example, the width of the `<body>` element typically affects the widths of any child elements, and so on, all the way up and down the tree.  The process may be quite involved for the browser.
+Layout (or _reflow_ in Firefox) is the process by which the browser calculates the positions and sizes of all the elements on a page.  The layout model of the web means that one element may affect others; for example, the width of the `<body>` element typically affects the widths of any child elements, and so on, all the way up and down the tree.  The process may be quite involved for the browser.
 
 As a general rule of thumb, if you ask for a geometric value back from the DOM before a frame is complete, you are going to find yourself with "forced synchronous layouts", which may be a big performance bottleneck if repeated frequently or performed for a large DOM tree.
 
-<!--Related Guides:
-
+<!--
+Related Guides:
 * [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-* [Diagnose Forced Synchronous Layouts](rendering-tools/forced-synchronous-layouts.md)  -->
+* [Diagnose Forced Synchronous Layouts](./rendering-tools/forced-synchronous-layouts.md)
+-->
 
-<!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->
-<!--todo: add Diagnose Forced Synchronous Layouts section when available  -->
+<!-- todo: add section "Avoid CSS that triggers layouts (Avoid Layout Thrashing)" when available -->
+
+<!-- todo: add section "Diagnose Forced Synchronous Layouts" when available -->
 
 
 <!-- ------------------------------ -->
@@ -154,10 +156,10 @@ The following table describes some common layout problems and potential solution
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Forced synchronous layout affecting response or animation.  | Forcing the browser to perform layout earlier in the pixel pipeline, resulting in repeating steps in the rendering process.  | Batch your style reads first, then do any writes.  <!--See [Avoid large, complex layouts and layout thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).  -->  |
-| Layout thrashing affecting response or animation.  | A loop that puts the browser into a read-write-read-write cycle, forcing the browser to recalculate layout over and over again.  | Automatically batch read-write operations using [FastDom library](https://github.com/wilsonpage/fastdom).  |
+| Forced synchronous layout affecting response or animation. | Forcing the browser to perform layout earlier in the pixel pipeline, resulting in repeating steps in the rendering process. | Batch your style reads first, then do any writes.  <!-- See [Avoid large, complex layouts and layout thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing). --> |
+| Layout thrashing affecting response or animation. | A loop that puts the browser into a read-write-read-write cycle, forcing the browser to recalculate layout over and over again. | Automatically batch read-write operations using [FastDom library](https://github.com/wilsonpage/fastdom). |
 
-<!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->
+<!-- todo: add section "Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing)" when available -->
 
 
 <!-- ====================================================================== -->
@@ -165,9 +167,9 @@ The following table describes some common layout problems and potential solution
 
 Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page isn't working as designed in any way, it is likely that you have paint problems.
 
-Compositing is where the painted parts of the page are put together for displaying on screen.  For the most part, if you stick to compositor-only properties and avoid paint altogether, you should notice a major improvement in performance, but you need to watch out for excessive layer counts.  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+Compositing is where the painted parts of the page are put together for displaying on screen.  For the most part, if you stick to compositor-only properties and avoid paint altogether, you should notice a major improvement in performance, but you need to watch out for excessive layer counts.  <!-- See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count). -->
 
-<!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
+<!-- todo: add section "Stick to compositor-only properties and manage layer count" when available -->
 
 
 <!-- ------------------------------ -->
@@ -181,14 +183,13 @@ To find out how long painting takes, or how often painting occurs:
 
 If most of your rendering time is spent painting, you have paint problems.  For more information, see [Enable advanced paint instrumentation](../performance/reference.md#enable-advanced-paint-instrumentation) in _Performance features reference_.
 
-
 <!--
 ![Long paint times in timeline recording](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.png)
 -->
 
 <!--
 Check out the **Rendering** panel for further configurations that can help you diagnose paint problems.
-todo: link Rendering panel in ../performance/timeline-tool  sub-section when live.
+todo: link to # Rendering panel in (../performance/timeline-tool.md) sub-section when live.
 The Timeline Tool page is deprecated.
 -->
 
@@ -200,11 +201,12 @@ The following table describes some common paint and composite problems and poten
 
 | Problem | Example | Solution |
 |:--- |:--- |:--- |
-| Paint storms affecting response or animation.  | Big paint areas or expensive paints affecting response or animation.  | Avoid paint, promote elements that are moving to their own layer, use transforms and opacity.  <!--See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas).  -->  |
-| Layer explosions affecting animations.  | Overpromotion of too many elements with `translateZ(0)` greatly affects animation performance.  | Promote to layers sparingly, and only when you know it offers tangible improvements.  <!--See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->  |
+| Paint storms affecting response or animation. | Big paint areas or expensive paints affecting response or animation. | Avoid paint, promote elements that are moving to their own layer, use transforms and opacity.  <!-- See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas). --> |
+| Layer explosions affecting animations. | Overpromotion of too many elements with `translateZ(0)` greatly affects animation performance. | Promote to layers sparingly, and only when you know it offers tangible improvements.  <!-- See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count). --> |
 
-<!--todo: add Simplify paint complexity and reduce paint areas section when available  -->
-<!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
+<!-- todo: add section "Simplify paint complexity and reduce paint areas" when available -->
+
+<!-- todo: add section "Stick to compositor-only properties and manage layer count" when available -->
 
 
 <!-- ====================================================================== -->

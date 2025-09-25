@@ -71,8 +71,12 @@ In the following screenshot, the URI `web+amp://files.freemusicarchive.org/stora
 * [Debug a Progressive Web App (PWA)](./index.md)
 * [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md)
 
-External:
-* [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/) at Windows Blogs.
+Windows blog:
+* [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
+
+MDN:
+* [protocol_handlers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) at MDN > PWA manifest.
 * [Navigator: registerProtocolHandler() method](https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler) at MDN.
-   * [protocol_handlers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) at MDN.
-* [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)<!-- todo: web.dev ok, or just link to https://developer.mozilla.org above? --> at web.dev.<!-- this is the only web.dev link in this article -->
+
+developer.chrome.com:
+* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: developer.chrome.com ok?  this is the only web.dev link in this article --> at developer.chrome.com.
