@@ -441,7 +441,7 @@ To automatically split your CSS code this way, you can use the _Critical_ tool. 
 
 You can then load your non-critical CSS code in a way that doesn't block the initial render of the page.
 
-It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- Ok to keep this dev.chrome.com link since it's from the Lighthouse docs, which this article is about. --> at developer.chrome.com.
+It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- chrome link ok, it's from Lighthouse docs --> at developer.chrome.com.
 
 See also:
 * [CSS Object Model](https://developer.mozilla.org/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.

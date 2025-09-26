@@ -97,7 +97,7 @@ Select a `Recalculate Style` event to view more information about it in the **De
 
 ![Long recalculate style](./index-images/rendering-tools-performance-recalculate-style-summary.png)
 
-To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers) in _How to create high-performance CSS animations_, at web.dev.<!-- Ok to keep this web.dev link. MDN doesn't have docs on CSS properties rendering performance. -->
+To reduce the impact of `Recalculate Style` events, minimize use of CSS properties that trigger layout, paint, and composite.  These properties have the greatest impact on rendering performance.  For more information, see [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers) in _How to create high-performance CSS animations_, at web.dev.<!-- web.dev link ok, no "css properties rendering perf" doc'n at mdn -->
 
 <!-- todo: when available, add section "Stick to compositor-only properties and manage layer count" -->
 

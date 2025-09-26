@@ -29,7 +29,7 @@ _Runtime performance_ is how your page performs when it's running, as opposed to
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-* [Web Vitals](https://web.dev/articles/vitals) at web.dev<!-- Ok to keep this web.dev link. CWV is only documented there. -->.
+* [Web Vitals](https://web.dev/articles/vitals)<!-- web.dev link ok, only doc'd there --> at web.dev.
 * [Terminology](./overview.md#terminology) in _Performance tool: Analyze your website's performance_.
 * [Optimize website speed using Lighthouse](../speed/get-started.md)
 
@@ -188,7 +188,7 @@ Continuing from above:
    The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
 
    See also:
-   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts) in _Avoid large, complex layouts and layout thrashing_ at web.dev.<!-- Ok to keep this web.dev link. MDN doesn't have performance documentation about it. -->
+   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
 
 
 <!-- ------------------------------ -->
@@ -270,7 +270,7 @@ We then adjust the direction of the icon, but this time we don't read `element.o
 Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 See also:
-* [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers) in _How to create high-performance CSS animations_ at web.dev.<!-- Ok to keep this web.dev link. MDN doesn't have docs about this. -->
+* [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers)<!-- web.dev link ok, not doc'd at mdn --> in _How to create high-performance CSS animations_ at web.dev.
 * [Transitioning opacity](https://developer.mozilla.org/docs/Web/CSS/opacity#transitioning_opacity) in _opacity_ at MDN.
 
 

@@ -10,7 +10,7 @@ ms.date: 05/26/2021
 ---
 # Migrate an extension from Manifest V2 to V3
 
-This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate).<!-- Ok to keep this Chrome link. -->
+This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
 
 
 <!-- ====================================================================== -->
@@ -20,7 +20,7 @@ Today, some parts of the extensions code are hosted remotely, and aren't include
 
 To ensure that the extensions at Microsoft Edge Add-ons are validated, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
-Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a sandboxed iframe. See [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval).<!-- Ok to keep this Chrome link. This is where the extension ref docs are. -->
+Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a sandboxed iframe. See [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval)<!-- chrome link ok, extension ref docs are there -->.
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ To perform cross-origin requests, you need to use background scripts to relay re
 <!-- ====================================================================== -->
 ## Web Request API
 
-The Microsoft Edge extensions team replaces the [Web Request API](https://developer.chrome.com/docs/extensions/reference/webRequest)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> by the [Declarative Net Request API](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. -->, but we continue to keep the observational capabilities of the Web Request API.  We recommend using the Declarative Net Request (DNR) APIs only, rather than the Web Request API, except in some specific scenarios where observational capabilities of the Web Request API are required by the extension.
+The Microsoft Edge extensions team replaces the [Web Request API](https://developer.chrome.com/docs/extensions/reference/webRequest)<!-- chrome link ok, extension ref docs are there --> by the [Declarative Net Request API](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest)<!-- chrome link ok, extension ref docs are there -->, but we continue to keep the observational capabilities of the Web Request API.  We recommend using the Declarative Net Request (DNR) APIs only, rather than the Web Request API, except in some specific scenarios where observational capabilities of the Web Request API are required by the extension.
 
 This change will have positive impact on extensions that use feature-rich declarative capabilities.  As more extensions transition to the Declarative Net Request APIs, this change will improve user privacy, which contributes to trust in the use of extensions.
 
@@ -50,7 +50,7 @@ Enterprises can continue to use the blocking behavior of the Web Request API for
 <!-- ====================================================================== -->
 ## Background service workers
 
-To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers).<!-- Ok to keep this Chrome link -->
+To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->.
 
 
 <!-- ====================================================================== -->

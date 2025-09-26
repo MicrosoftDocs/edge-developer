@@ -120,9 +120,9 @@ The file you specified as the default, such as `sidebar.html`, appears in all th
 <!-- ------------------------------ -->
 #### Enable a sidebar for a specific site only
 
-An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> to enable a sidebar on a specific tab.  This can be a particular website, so the extension opens in the sidebar when the user goes to this website.
+An extension can use [sidepanel.setOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setOptions)<!-- chrome link ok, extension ref docs are there --> to enable a sidebar on a specific tab.  This can be a particular website, so the extension opens in the sidebar when the user goes to this website.
 
-This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/extensions/reference/tabs/#event-onUpdated)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> to listen for any updates made to the tab.  It checks whether the URL is `www.bing.com` and if so, enables the sidebar.  Otherwise, it disables the sidebar.
+This example uses [chrome.tabs.onUpdated()](https://developer.chrome.com/docs/extensions/reference/tabs/#event-onUpdated)<!-- chrome link ok, extension ref docs are there --> to listen for any updates made to the tab.  It checks whether the URL is `www.bing.com` and if so, enables the sidebar.  Otherwise, it disables the sidebar.
 
 In `service-worker.js`, in `addListener()`, test `url.origin` to see if it's the desired tab, and then in `sidePanel.setOptions()`, set `enabled` to `true` or `false`:
 
@@ -159,7 +159,7 @@ For a complete example, see [Site-specific side panel example](https://github.co
 <!-- ------------------------------ -->
 #### Enable the extension's shortcut icon to open the sidebar
 
-To allow users to open the sidebar by clicking the action toolbar icon, use [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. -->  First, declare the `"action"` key in `manifest.json`:
+To allow users to open the sidebar by clicking the action toolbar icon, use [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior)<!-- chrome link ok, extension ref docs are there -->.  First, declare the `"action"` key in `manifest.json`:
 
 ```json
 {
@@ -185,9 +185,9 @@ chrome.sidePanel
 <!-- ------------------------------ -->
 #### Switch to a different sidebar
 
-An extension can use [sidepanel.getOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-getOptions)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> to retrieve the current sidebar, and then enable a different sidebar for a specific tab.
+An extension can use [sidepanel.getOptions()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-getOptions)<!-- chrome link ok, extension ref docs are there --> to retrieve the current sidebar, and then enable a different sidebar for a specific tab.
 
-This example sets a sidebar containing a welcome message on [runtime.onInstalled()](https://developer.chrome.com/docs/extensions/reference/runtime/#event-onInstalled).<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. -->  When the user navigates to a different tab, the sidebar is replaced with the browser-level sidebar.
+This example sets a sidebar containing a welcome message on [runtime.onInstalled()](https://developer.chrome.com/docs/extensions/reference/runtime/#event-onInstalled)<!-- chrome link ok, extension ref docs are there -->.  When the user navigates to a different tab, the sidebar is replaced with the browser-level sidebar.
 
 ```javascript
 // service-worker.js:
@@ -210,7 +210,7 @@ chrome.tabs.onActivated.addListener(async ({ tabId }) => {
 <!-- ------------------------------ -->
 #### Opening the sidebar upon user interaction
 
-[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> allows extensions to open the sidebar through a user gesture, such as clicking the action icon, or through any user interaction on an extension page or content script, such as clicking a button.
+[sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open)<!-- chrome link ok, extension ref docs are there --> allows extensions to open the sidebar through a user gesture, such as clicking the action icon, or through any user interaction on an extension page or content script, such as clicking a button.
 
 The following code shows how to open a global sidebar on the current window when the user clicks on a context menu.  When using `sidePanel.open()`, choose the context in which the sidebar should open:
 * Use `windowId` to open a global sidebar, as shown in the following example.
@@ -276,10 +276,10 @@ The extension's icon appears in the toolbar if the user has clicked the **Show i
 
 Users can press a keyboard shortcut, if the action command is enabled and the action icon is enabled to open the sidebar.
 
-* To enable the action command, see [Action commands](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> in _chrome.commands_ in API reference.
-* To enable the action icon, see [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> in _chrome.sidePanel_ in API reference.
+* To enable the action command, see [Action commands](https://developer.chrome.com/docs/extensions/reference/commands/#action-commands)<!-- chrome link ok, extension ref docs are there --> in _chrome.commands_ in API reference.
+* To enable the action icon, see [Open the side panel by clicking the toolbar icon](https://developer.chrome.com/docs/extensions/reference/sidePanel/#open-action-icon)<!-- chrome link ok, extension ref docs are there --> in _chrome.sidePanel_ in API reference.
 
-If the `openPanelOnActionClick()` property of the [PanelBehavior](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> type is set to `true`, the user can open the sidebar by using a keyboard shortcut.  To enable this, you specify an action command in the manifest.
+If the `openPanelOnActionClick()` property of the [PanelBehavior](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type-PanelBehavior)<!-- chrome link ok, extension ref docs are there --> type is set to `true`, the user can open the sidebar by using a keyboard shortcut.  To enable this, you specify an action command in the manifest.
 
 
 <!-- ---------- -->
@@ -287,9 +287,9 @@ If the `openPanelOnActionClick()` property of the [PanelBehavior](https://develo
 
 The sidebar can also be opened through the following interactions:
 
-* Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open).<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. -->  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction), above.
+* Open the sidebar by an extension user gesture, such as clicking the action icon.  This approach uses [sidePanel.open()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-open)<!-- chrome link ok, extension ref docs are there -->.  See [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction), above.
 
-* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior).<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. -->  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar", above.
+* Open the sidebar by clicking the toolbar icon.  This approach uses [sidePanel.setPanelBehavior()](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method-setPanelBehavior)<!-- chrome link ok, extension ref docs are there -->.  See [By clicking an icon](#by-clicking-an-icon) in section "Opening the extension in the sidebar", above.
 
 
 <!-- ====================================================================== -->
@@ -307,7 +307,7 @@ For more Sidebar API extensions demos, explore any of the following extensions:
 <!-- ====================================================================== -->
 ## Types and methods
 
-See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> and [Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method)<!-- Ok to keep this Chrome link. The ref docs for extensions in Chromium is there. --> in the _chrome.sidePanel_ API reference page at `developer.chrome.com`.
+See [Types](https://developer.chrome.com/docs/extensions/reference/sidePanel/#type)<!-- chrome link ok, extension ref docs are there --> and [Methods](https://developer.chrome.com/docs/extensions/reference/sidePanel/#method)<!-- chrome link ok, extension ref docs are there --> in the _chrome.sidePanel_ API reference page at `developer.chrome.com`.
 
 
 <!-- ====================================================================== -->
