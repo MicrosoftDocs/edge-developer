@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 11/09/2022
 ---
 # Using Content Security Policy (CSP) to control which resources can be run
+<!-- https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy -->
 
 To control which content can be run by your extension, in the extension's `manifest.json` file, use the `content_security_policy` key and its policy string value, per the following syntax:
 
@@ -38,7 +39,7 @@ In contrast, in a webpage, such a policy is defined via an HTTP header or via a 
 
 See:
 * [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
-* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy) in _Chrome Extensions_ > _Reference_.
+* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy)<!-- chrome link ok, extension ref docs are there --> in _Chrome Extensions_ > _Reference_.
 
 
 <!-- ====================================================================== -->
@@ -340,7 +341,7 @@ Since content scripts aren't affected by the CSP of the page, this a great reaso
 ## See also
 
 * [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP) at MDN.
-* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy) in _Chrome Extensions_ > _Reference_.
+* [Manifest - Content Security Policy](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy)<!-- chrome link ok, extension ref docs are there --> in _Chrome Extensions_ > _Reference_.
 
 
 <!-- ====================================================================== -->

@@ -196,4 +196,3 @@ To provide feedback about an origin trial:
 
 External:
 * [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) - MDN.
-* [Get started with origin trials](https://developer.chrome.com/docs/web-platform/origin-trials) - Chrome docs.<!-- not in article body -->

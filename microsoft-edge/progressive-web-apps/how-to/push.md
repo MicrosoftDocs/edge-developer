@@ -18,10 +18,10 @@ Push message notifications take part in the system's notification center, and th
 
 To create a PWA that supports push notifications:
 
-1.  Request the user's permission to receive push notifications in the client-side code of your PWA.
-1.  Subscribe to your server's push messages.
-1.  Send push messages from the server-side code of your PWA.
-1.  Display notifications when push messages are received.
+1. Request the user's permission to receive push notifications in the client-side code of your PWA.
+1. Subscribe to your server's push messages.
+1. Send push messages from the server-side code of your PWA.
+1. Display notifications when push messages are received.
 
 
 <!-- ====================================================================== -->
@@ -109,9 +109,9 @@ The `userVisibleOnly` configuration option of the `registration.pushManager.subs
 
 Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
-Once you have a VAPID key, you can send push messages to your PWA clients by using [the Web Push Protocol](https://web.dev/push-notifications-web-push-protocol/).
+Once you have a VAPID key, you can send push messages to your PWA clients by using the Web Push protocol.  See [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) at MDN.
 
-You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js. Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
+You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js.  Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
 
 
 <!-- ====================================================================== -->
@@ -146,6 +146,16 @@ If your PWA doesn't display a notification when a push message is received, Micr
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article body -->
 
-* [Push notifications overview](https://web.dev/push-notifications-overview/).
-* [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push).
+MDN:
+* [Push API](https://developer.mozilla.org/docs/Web/API/Push_API)<!-- 3x -->
+* [Notification.requestPermission API](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static)<!-- 2x -->
+* [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push)<!-- 1x; not in article body -->
+
+GitHub:
+* [WebPush libraries](https://github.com/web-push-libs/)<!-- 4x -->
+   * [web-push](https://github.com/web-push-libs/web-push) library, if your server uses Node.js.<!-- 2x -->
+
+External:
+* [Vapidkeys.com](https://vapidkeys.com) - example of a VAPID key generator.<!-- 4x -->

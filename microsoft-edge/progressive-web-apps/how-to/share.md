@@ -27,8 +27,7 @@ PWAs that register as share targets feel natively integrated into the OS, and ar
 
 PWAs can use the [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) to trigger displaying the operating system share dialog.
 
-> [!NOTE]
-> Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked in response to a user action.
+Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked in response to a user action.
 
 To share content such as links, text, or files, use the `navigator.share` function, as shown below.  The `navigator.share` function accepts an object that should have at least one of the following properties:
 
@@ -127,7 +126,7 @@ To test the Sharing feature:
 
 1. In the right side of the Address bar, click the **App available. Install** (![PWA 'App available, Install' icon](./share-images/app-available-install-icon.png)) button to install PWAmp as a PWA.
 
-1. In the installed PWAmp PWA, import a local audio file (by dragging it onto the app window). For example, if you've cloned the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo, you have a local copy of `.mp3` files in the ([Demos repo > pwamp/songs directory](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/songs)), such as `C:\Users\username\GitHub\Demos\pwamp\songs`.
+1. In the installed PWAmp PWA, import a local audio file (by dragging it onto the app window). For example, if you've cloned the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo, you have a local copy of `.mp3` files in the [/pwamp/songs/](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/songs) directory, such as `C:\Users\localAccount\GitHub\Demos\pwamp\songs\`.
 
 1. Next to the newly imported song, click the **Song actions** (**...**) button, and then select **Share**.  The Windows **Share** dialog is displayed:
 
@@ -143,8 +142,7 @@ You can find the [PWAmp source code](https://github.com/MicrosoftEdge/Demos/tree
 
 By using the [Web Share Target](https://w3c.github.io/web-share-target/level-2/) API, a PWA can register to be displayed as an app in the system share dialog.  The PWA can then use the Web Share Target API to handle shared content coming in from other apps.
 
-> [!NOTE]
-> Only installed PWAs can register as share targets.
+Only installed PWAs can register as share targets.
 
 
 <!-- ------------------------------ -->
@@ -251,7 +249,10 @@ In the above code:
 
 1. Uses the data in some way (such as to store the content locally).
 
-1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](background-syncs.md)).
+1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using background sync).
+
+See also:
+* [Synchronize and update a PWA in the background](./background-syncs.md)
 
 
 <!-- ------------------------------ -->
@@ -312,6 +313,22 @@ self.addEventListener('fetch', event => {
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article body -->
 
-*  [Integrate with the OS sharing UI with the Web Share API](https://web.dev/web-share/)
-*  [Receiving shared data with the Web Share Target API](https://web.dev/web-share-target/)
+* [Synchronize and update a PWA in the background](./background-syncs.md)
+
+MDN:
+* [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API)<!-- 2x -->
+* [share_target](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target) manifest member.
+* [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<!-- 2x -->
+* [File interface](https://developer.mozilla.org/docs/Web/API/File)<!-- 2x -->
+
+W3C:
+* [Web Share Target](https://w3c.github.io/web-share-target/level-2/)<!-- 2x -->
+
+PWAmp demo:
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.<!-- 2x -->
+* [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) - live app webpage.<!-- 2x -->
+   * [PWAmp source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp)<!-- 2x -->
+   * [/pwamp/songs/ directory](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/songs)<!-- 2x -->
+   * [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/app.js#L328-L341) - a use of the Web Share API.<!-- 2x -->

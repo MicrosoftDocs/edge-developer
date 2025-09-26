@@ -133,9 +133,9 @@ If your extension is small enough, you won't need a build tool to split your cod
 
 Your extension might not need to run on every webpage that the user visits. To reduce the amount of code that runs when webpages load, configure your extension to load content scripts only on the pages and frames where they are needed.
 
-To configure the pages and frames where your content scripts are loaded, define URL patterns in your extension manifest file by using the `matches` property in the `content_scripts` section. To learn more, see [Inject scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts#functionality) in _Content scripts_ in the Chrome Extensions documentation.
+To configure the pages and frames where your content scripts are loaded, define URL patterns in your extension manifest file by using the `matches` property in the `content_scripts` section. To learn more, see [Inject with static declarations](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts#static-declarative)<!-- chrome link ok, extension ref docs are there --> in _Content scripts_ in the Chrome Extensions documentation.
 
-You can also use the `chrome.scripting` extensions API to programmatically inject your content script into the webpage. This API allows you to inject your content script based on the user's actions, the webpage content, or the extension logic. To learn more, see [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting) in the Chrome Extensions documentation.
+You can also use the `chrome.scripting` extensions API to programmatically inject your content script into the webpage. This API allows you to inject your content script based on the user's actions, the webpage content, or the extension logic. To learn more, see [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting)<!-- chrome link ok, extension ref docs are there --> in the Chrome Extensions documentation.
 
 Use the following best practices when configuring where your content scripts are loaded:
 
@@ -264,9 +264,9 @@ onmessage = event => {
 * [Analyze runtime performance (tutorial)](../../devtools/performance/index.md)
 
 Chrome Extension docs:
-* [Manifest - content scripts](https://developer.chrome.com/docs/extensions/reference/manifest/content-scripts)
-* [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting)
-* [chrome.storage](https://developer.chrome.com/docs/extensions/reference/api/storage)
+* [Manifest - content scripts](https://developer.chrome.com/docs/extensions/reference/manifest/content-scripts)<!-- chrome link ok, extension ref docs are there -->
+* [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting)<!-- chrome link ok, extension ref docs are there -->
+* [chrome.storage](https://developer.chrome.com/docs/extensions/reference/api/storage)<!-- chrome link ok, extension ref docs are there -->
 
 MDN:
 * [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers)<!-- https://developer.mozilla.org/docs/Web/API/Service_Worker_API -->
