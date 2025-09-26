@@ -233,7 +233,7 @@ See also:
 <!-- ---------- -->
 ###### PWA installability warning in the Console
 
-The **Console** now displays a more detailed installability warning message for Progressive Web Apps (PWAs), with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).<!-- Ok to keep this chrome link as this is where the warning message links to. -->
+The **Console** now displays a more detailed installability warning message for Progressive Web Apps (PWAs), with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).<!-- Ok to keep this chrome link. This is where the warning message links to. -->
 
 ![PWA installability warning in Console tool](./devtools-images/console-pwa-installability.png)
 
