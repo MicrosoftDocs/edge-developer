@@ -118,7 +118,7 @@ A user can toggle the title bar or change the window dimensions while the app is
 
 To listen for changes, use the `geometrychange` event on the `navigator.windowControlsOverlay` object.  To detect whether the title bar is visible, use the `visible` property on the `navigator.windowControlsOverlay` object.
 
-The `geometrychange` is fired very frequently when the user resizes the window.  To avoid running layout-changing code too often and causing performance problems in your app, use a `debounce` function to limit how many times the event is handled.  See [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
+The `geometrychange` event is fired very frequently when the user resizes the window.  To avoid running layout-changing code too often and causing performance problems in your app, use a `debounce` function to limit how many times the event is handled.  See [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
 
 ```javascript
 const debounce = (func, wait) => {
@@ -218,7 +218,7 @@ Blog:
 * [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)<!-- 2x -->
 
 YouTube:
-* [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)<!-- 1x; link is not in article body -->
+* [Display content in the title bar of your desktop PWA](https://www.youtube.com/watch?v=NvClp35dFVI)<!-- 1x; link is not in article body -->
 
 Demo:
 * [1DIV live](https://microsoftedge.github.io/Demos/1DIV/dist/)<!-- 2x -->

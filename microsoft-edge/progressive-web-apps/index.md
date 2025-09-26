@@ -106,7 +106,7 @@ See [Publish a PWA to the Microsoft Store](./how-to/microsoft-store.md).
 
 Using Progressive Web App (PWA) technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**.  Many businesses have had success with PWAs.  For example:
 
-* The Starbucks PWA has increased daily active users twice.  Orders on desktop are nearly the same rate as mobile ([source](https://twitter.com/davidbrunelle/status/993960071406080000)).<!-- todo: 404-like -->
+* The Starbucks PWA has increased daily active users twice.  Orders on desktop are nearly the same rate as mobile ([source](https://twitter.com/davidbrunelle/status/993960071406080000)).<!-- todo: 404 -->
 
 * Trivago saw an increase of 150% for people who add its PWA to the home screen.  The increased engagement led to a 97% increase in clockouts to hotel offers ([source](https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/)).
 
