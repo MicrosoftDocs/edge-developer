@@ -323,12 +323,6 @@ MDN:
 * [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<!-- 2x -->
 * [File interface](https://developer.mozilla.org/docs/Web/API/File)<!-- 2x -->
 
-developer.chrome.com:
-* [Receiving shared data with the Web Share Target API](https://developer.chrome.com/docs/capabilities/web-apis/web-share-target)<!-- todo: developer.chrome.com ok? --><!-- 1x; link is not in article body -->
-
-web.dev:
-* [Integrate with the OS sharing UI with the Web Share API](https://web.dev/articles/web-share)<!-- todo: web.dev ok, or just link to MDN? --><!-- 2x -->
-
 W3C:
 * [Web Share Target](https://w3c.github.io/web-share-target/level-2/)<!-- 2x -->
 

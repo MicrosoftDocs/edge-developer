@@ -213,9 +213,6 @@ MDN:
    * [display](https://developer.mozilla.org/docs/Web/Manifest/display) in manifest.<!-- 2x -->
 * [`env()`](https://developer.mozilla.org/docs/Web/CSS/env) CSS function.<!-- 2x -->
 
-web.dev:
-* [Customize the window controls overlay of your PWA's title bar](https://web.dev/articles/window-controls-overlay)<!-- todo: web.dev ok, or just link to MDN? --><!-- 1x; link is not in article body -->
-
 Blog:
 * [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)<!-- 1x; link is not in article body -->
 * [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)<!-- 2x -->

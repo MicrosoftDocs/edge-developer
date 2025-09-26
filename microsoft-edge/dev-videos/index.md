@@ -686,7 +686,6 @@ Many creative applications enable users to pick colors from parts of an app wind
 
 See also:
 * [EyeDropper API](https://developer.mozilla.org/docs/Web/API/EyeDropper_API) at MDN.
-* [Picking colors of any pixel on the screen with the EyeDropper API](https://developer.chrome.com/docs/capabilities/web-apis/eyedropper)<!-- todo: developer.chrome.com ok, or just link to MDN? --> at developer.chrome.com.
 * [EyeDropper API demos](https://github.com/MicrosoftEdge/Demos/tree/main/eyedropper)
 
 

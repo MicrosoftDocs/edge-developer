@@ -177,9 +177,9 @@ First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been
 Chromium issue [#1096008](https://crbug.com/1096008)
 
 See also:
+* [First Meaningful Paint (FMP)](https://developer.mozilla.org/docs/Glossary/First_meaningful_paint) in Glossary at MDN.
+* [Largest Contentful Paint (LCP)](https://developer.mozilla.org/docs/Glossary/Largest_contentful_paint) in Glossary at MDN.
 * [LargestContentfulPaint](https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint) at MDN.
-   * [Largest Contentful Paint (LCP)](https://developer.mozilla.org/docs/Glossary/Largest_contentful_paint) in Glossary at MDN.
-* [First Meaningful Paint](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint)<!-- todo: developer.chrome.com ok, or just link to MDN? --> at developer.chrome.com.
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 

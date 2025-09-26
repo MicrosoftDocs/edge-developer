@@ -182,9 +182,6 @@ Microsoft Edge Enterprise docs:
    * [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings)
    * [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions)
 
-Chrome Extensions docs:
-* [Use alternative installation methods](https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions)<!-- todo: developer.chrome.com ok?  maybe remove link after update present article per [here] link below -->
-
 
 <!-- ====================================================================== -->
 > [!NOTE]

@@ -29,8 +29,8 @@ _Runtime performance_ is how your page performs when it's running, as opposed to
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
 See also:
-* [Web Vitals](https://web.dev/articles/vitals)<!-- todo: web.dev ok, or link to https://developer.mozilla.org? --> at web.dev.
-   * [Terminology](./overview.md#terminology) in _Performance tool: Analyze your website's performance_.
+* [Web Vitals](https://web.dev/articles/vitals) at web.dev<!-- ok to keep this web.dev link as CWV are only documented there -->.
+* [Terminology](./overview.md#terminology) in _Performance tool: Analyze your website's performance_.
 * [Optimize website speed using Lighthouse](../speed/get-started.md)
 
 
@@ -188,8 +188,7 @@ Continuing from above:
    The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
 
    See also:
-   <!-- * [todo](https://developer.mozilla.org) at MDN.  https://developer.mozilla.org/search?q=forced+synchronous -->
-   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts) in _Avoid large, complex layouts and layout thrashing_ at web.dev.<!-- todo: web.dev ok? -->
+   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts) in _Avoid large, complex layouts and layout thrashing_ at web.dev.<!-- ok to keep this web.dev link because MDN does not have performance documentation about it. -->
 
 
 <!-- ------------------------------ -->
@@ -271,8 +270,8 @@ We then adjust the direction of the icon, but this time we don't read `element.o
 Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 See also:
-* [Use transform and opacity changes for animations](https://web.dev/articles/stick-to-compositor-only-properties-and-manage-layer-count#use-transform-and-opacity-changes-for-animations)<!-- todo: web.dev ok, or just link to MDN? --> in _Stick to Compositor-Only Properties and Manage Layer Count_ at web.dev.
-* [Transitioning opacity](https://developer.mozilla.org/docs/Web/CSS/opacity#transitioning_opacity) in _opacity_ at MDN.<!-- todo: relevant? -->
+* [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers) in _How to create high-performance CSS animations_ at web.dev.<!-- ok to keep this web.dev link because MDN doesn't have docs about this. -->
+* [Transitioning opacity](https://developer.mozilla.org/docs/Web/CSS/opacity#transitioning_opacity) in _opacity_ at MDN.
 
 
 <!-- ====================================================================== -->
@@ -287,16 +286,6 @@ Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/Micr
 In your feedback, include screenshots or links to reproducible pages, if possible.
 
 There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.
-
-<!--
-The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:
-* [Optimize JavaScript execution](https://web.dev/articles/optimize-javascript-execution) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Reduce the scope and complexity of style calculations](https://web.dev/articles/reduce-the-scope-and-complexity-of-style-calculations) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Avoid large, complex layouts and layout thrashing](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Simplify paint complexity and reduce paint areas](https://web.dev/articles/simplify-paint-complexity-and-reduce-paint-areas) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/articles/stick-to-compositor-only-properties-and-manage-layer-count) todo: web.dev ok, or link to https://developer.mozilla.org?
-* [Debounce your input handlers](https://web.dev/articles/debounce-your-input-handlers) todo: web.dev ok, or link to https://developer.mozilla.org?
--->
 
 
 <!-- ====================================================================== -->

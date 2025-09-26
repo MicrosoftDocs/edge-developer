@@ -292,7 +292,6 @@ _2023 update: This feature is no longer an origin trial, and has been removed, s
 
 See also:
 * [Handle links to a PWA](../how-to/handle-urls.md)<!-- doesn't mention `handle_links` -->
-* [PWAs as URL Handlers](https://developer.chrome.com/docs/capabilities/pwa-url-handler)<!-- todo: developer.chrome.com ok?  https://developer.mozilla.org/search?q=handle_links - `url_handlers` was replaced by `handle_links` -->
 
 
 <!-- ------------------------------ -->

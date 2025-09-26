@@ -22,7 +22,7 @@ In October 2020, Microsoft announced the [decision to embrace Manifest V3](https
 
 Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
-An overview of the changes involved, as described in [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate):<!-- todo: developer.chrome.com ok? -->
+An overview of the changes involved, as described in [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md):
 
 * Background pages have been replaced by service workers.
 
@@ -40,8 +40,8 @@ An overview of the changes involved, as described in [Migrate to Manifest V3](ht
 
 Chromium has revised the timelines for ending support for Manifest V2.  See:
 
-* [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- todo: developer.chrome.com ok? -->
-* [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- todo: developer.chrome.com ok? --> in _Resuming the transition to Manifest V3_.
+* [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- Ok to keep this Chrome link. This section is about the v2-v3 migration in Chromium. -->
+* [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- Ok to keep this Chrome link. This section is about the v2-v3 migration in Chromium. --> in _Resuming the transition to Manifest V3_.
 
 
 <!-- ---------------------------------------------------------------------- -->
@@ -73,6 +73,6 @@ Microsoft continues to iteratively improve the platform and address the feedback
 <!-- ---------------------------------------------------------------------- -->
 ## See also
 
-* [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- todo: developer.chrome.com ok? -->
-* [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- todo: developer.chrome.com ok? -->
-* [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- todo: developer.chrome.com ok? --> in _Resuming the transition to Manifest V3_.
+* [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
+* [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- Ok to keep this Chrome link. This section is about the v2-v3 migration in Chromium. -->
+* [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- Ok to keep this Chrome link. This section is about the v2-v3 migration in Chromium. --> in _Resuming the transition to Manifest V3_.

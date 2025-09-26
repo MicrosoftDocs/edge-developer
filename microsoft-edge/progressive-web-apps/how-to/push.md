@@ -109,9 +109,7 @@ The `userVisibleOnly` configuration option of the `registration.pushManager.subs
 
 Your application needs VAPID (Voluntary Application Server Identification) keys in order to send push messages from your server to your PWA clients.  There are several VAPID key generators available online (for example, [Vapidkeys.com](https://vapidkeys.com)).
 
-Once you have a VAPID key, you can send push messages to your PWA clients by using the Web Push protocol.  See:
-* [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) at MDN.
-* [The Web Push Protocol](https://web.dev/articles/push-notifications-web-push-protocol).<!-- todo: web.dev ok, or just link to MDN? -->
+Once you have a VAPID key, you can send push messages to your PWA clients by using the Web Push protocol.  See [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) at MDN.
 
 You can use a library to send push messages from your server, depending on the programming language you use.  For example, you can use the [web-push](https://github.com/web-push-libs/web-push) library if your server uses Node.js.  Other libraries are available on the [WebPush libraries repo](https://github.com/web-push-libs/).
 
@@ -154,10 +152,6 @@ MDN:
 * [Push API](https://developer.mozilla.org/docs/Web/API/Push_API)<!-- 3x -->
 * [Notification.requestPermission API](https://developer.mozilla.org/docs/Web/API/Notification/requestPermission_static)<!-- 2x -->
 * [How to make PWAs re-engageable using Notifications and Push](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Re-engageable_Notifications_Push)<!-- 1x; not in article body -->
-
-web.dev:
-* [Push notifications overview](https://web.dev/articles/push-notifications-overview)<!-- todo: web.dev ok, or just link to MDN? --><!-- 1x; not in article body -->
-* [The Web Push Protocol](https://web.dev/articles/push-notifications-web-push-protocol)<!-- todo: web.dev ok, or just link to MDN? --><!-- 2x -->
 
 GitHub:
 * [WebPush libraries](https://github.com/web-push-libs/)<!-- 4x -->

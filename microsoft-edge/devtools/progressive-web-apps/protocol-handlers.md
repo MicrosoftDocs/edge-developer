@@ -77,6 +77,3 @@ Windows blog:
 MDN:
 * [protocol_handlers](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/protocol_handlers) at MDN > PWA manifest.
 * [Navigator: registerProtocolHandler() method](https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler) at MDN.
-
-developer.chrome.com:
-* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: developer.chrome.com ok? --> at developer.chrome.com.

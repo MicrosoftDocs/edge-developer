@@ -270,7 +270,6 @@ Chromium issue: [#1090802](https://crbug.com/1090802)
 
 See also:
 * [Idle Detection API](https://developer.mozilla.org/docs/Web/API/Idle_Detection_API) at MDN.
-* [Idle Detection API](https://developer.chrome.com/docs/capabilities/web-apis/idle-detection)<!-- todo: developer.chrome.com ok, or just link to MDN? --> at developer.chrome.com.
 * [Override geolocation](../../../sensors/index.md#override-geolocation) in _Emulate device sensors_.
 
 
@@ -389,7 +388,7 @@ Chromium issue: [#1051466](https://crbug.com/1051466)
 
 See also:
 * [Cross-Origin-Embedder-Policy (COEP) header](https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy) at MDN.
-* [Making your website "cross-origin isolated" using COOP and COEP](https://web.dev/articles/coop-coep)<!-- todo: web.dev ok, or just link to MDN? --> at web.dev.
+* [Cross-Origin-Opener-Policy (COOP) header](https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy) at MDN.
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 * [Understand security issues using the Security tool](../../../security/index.md)
 

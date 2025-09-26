@@ -787,11 +787,10 @@ In an overlay with vertical lines across the performance trace, you can see impo
    * [First Paint (FP)](https://developer.mozilla.org/docs/Glossary/First_paint) in Glossary at MDN.
 * First Contentful Paint (FCP)
    * [First Contentful Paint (FCP)](https://developer.mozilla.org/docs/Glossary/First_contentful_paint) in Glossary at MDN.
-   * [First Contentful Paint (FCP)](https://web.dev/articles/fcp)<!-- todo: web.dev ok? --> at web.dev.
+   * [PerformancePaintTiming](https://developer.mozilla.org/docs/Web/API/PerformancePaintTiming) at MDN.
 * Largest Contentful Paint (LCP)
    * [Largest Contentful Paint (LCP)](https://developer.mozilla.org/docs/Glossary/Largest_contentful_paint) in Glossary at MDN.
    * [LargestContentfulPaint](https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint) at MDN.
-   * [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp)<!-- todo: web.dev ok? --> at web.dev.
 * DOMContentLoaded Event (DCL)
    * [DOMContentLoaded Event (DCL)](https://developer.mozilla.org/docs/Web/API/Window/DOMContentLoaded_event) at MDN.
 * Onload Event (L)
@@ -835,7 +834,7 @@ Click an interaction to view more information about it in the **Summary** tab.
 #### View layout shifts
 <!-- https://developer.chrome.com/docs/devtools/performance/reference#layout-shifts -->
 
-View layout shifts on the **Layout shifts** track.  Shifts are shown as purple diamonds and are grouped in clusters (purple lines) based on their proximity on the timeline.  For information about clusters, see [Evolving the CLS metric](https://web.dev/blog/evolving-cls)<!-- 0 hits on 'cluster' --> at web.dev.<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+View layout shifts on the **Layout shifts** track.  Shifts are shown as purple diamonds and are grouped in clusters (purple lines) based on their proximity on the timeline.
 
 <!-- ![The Layout shifts track](todo: layout-shifts.png) -->
 
@@ -843,7 +842,7 @@ To highlight an element that caused a layout shift in the viewport, hover over t
 
 To see more information about a layout shift or shifts in the **Summary** tab with timings, scores, elements, and potential culprits, click the corresponding diamond or cluster.
 
-For more information, see [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls) at web.dev.<!-- todo: web.dev ok, or link to https://developer.mozilla.org? -->
+For more information, see [Cumulative Layout Shift (CLS)](https://developer.mozilla.org/docs/Glossary/CLS) at MDN.
 
 
 <!-- ------------------------------ -->

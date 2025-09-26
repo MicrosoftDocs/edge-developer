@@ -28,11 +28,7 @@ To enhance web security and performance, Native Client (NaCl) is no longer suppo
 
 NaCl is a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
 
-See also:
-* [Manifest - Nacl Modules](https://developer.chrome.com/docs/extensions/mv2/manifest/nacl-modules)<!-- todo: developer.chrome.com ok? -->
-* [Native Client](https://developer.chrome.com/docs/native-client)<!-- todo: developer.chrome.com ok? --> - deprecation notice for Chrome browser.
-
 To Run compiled code in an extension, we recommend using WebAssembly instead of NaCl.  See: 
-* [WebAssembly Migration Guide](https://developer.chrome.com/docs/native-client/migration)<!-- todo: developer.chrome.com ok? --> in Chrome docs.
+* [WebAssembly Migration Guide](https://developer.chrome.com/docs/native-client/migration)<!-- Ok to keep this Chrome link. We don't have similar docs at LMC. --> in Chrome docs.
 * [WebAssembly](https://developer.mozilla.org/docs/WebAssembly) at MDN.
 * [webassembly.org](https://webassembly.org)
