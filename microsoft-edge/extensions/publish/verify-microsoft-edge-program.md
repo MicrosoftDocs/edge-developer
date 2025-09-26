@@ -16,7 +16,7 @@ When you enroll in the Microsoft Edge program on Partner Center to publish exten
 
 You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) in Partner Center to monitor verification status for the Microsoft Edge Developer program.
 
-When account verification is complete, you can use your Partner Center dashboard to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+When account verification is complete, you can use your Partner Center dashboard to publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 Verification usually takes three to five business days.  If more than five days have passed, you can [Contact the Microsoft Edge extensions team](../contact.md) for help.
 
