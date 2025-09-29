@@ -1,85 +1,362 @@
 ---
 title: Temperature convertor sample
-description: How to obtain, install, and run the Temperature convertor Progressive Web App sample.
+description: How to obtain, install, and run the Temperature convertor Progressive Web App sample, and how the sample works.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 06/17/2025
+ms.date: 09/29/2025
 ---
 # Temperature convertor sample
 
-<!-- todo: convert from:
-tut article (action steps to build-up the app) 
-to:
-sample article (steps to obtain/install/run it; explain how it works)
--->
+The Temperature Convertor sample is a Progressive Web App (PWA).
 
-<!-- ====================================================================== -->
-## About the sample
-
-This Temperature Convertor sample is a Progressive Web App (PWA).  Obtain, install, and run the sample app, as follows.
-
-A Progressive Web App is an app that's built by using web technologies.  A PWA can be installed and run on all devices, from a single codebase.
-
-To learn more about what PWAs are and their benefits, see [Overview of Progressive Web Apps (PWAs)](../index.md).
-
-<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
-This sample is for web developers who want to learn to build PWAs.  To learn more about installing and running PWAs, see [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
-
-You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
+This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.
 
 
 <!-- ====================================================================== -->
 ## Preview the sample
 
-1. 
+To examine the user interface of the app:
 
+1. On Windows, in Microsoft Edge, go to the [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) live sample web app in a new window or tab.
 
-![]()
+   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a PWA.  Your own, actual PWA, after testing it, would be hosted at your web server that your users can access.
 
+1. In the **temperature** text box, type **22**.
 
-See also:
-* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - sample app hosted at github.io (rather than localhost).
-* [Temperature converter - PWA getting started demo app](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) - source code.
+   As you type, the displayed temperature is updated to **71.6 F**.
+
+1. Click the **from** and **to** dropdown lists.
+
+   Available units are:
+   * **Celsius**
+   * **Fahrenheit**
+   * **Kelvin**
+
+1. Go to [Temperature converter - PWA getting started demo app](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) in a new window or tab, and briefly inspect the source code files.
+
+   The sample consists of the following files:
+   * `README.md` - brief information about the app: a link to open the app webpage, and a link to the present article.
+   * `converter.css` - styling for the webpage of the app.
+   * `converter.js` - app logic.
+   * `icon512.png` - image file to represent the app.
+   * `index.html` - webpage layout of the app.
+   * `manifest.json` - basic information about the app, for the device's operating system to use.
+   * `sw.js` - service worker.
+
+These code in these files is explained later, in [How the sample code works](#how-the-sample-code-works), below.
+
+Follow the steps in the next sections to obtain a local copy of the code and install and run the sample on your local server.
 
 
 <!-- ====================================================================== -->
-## Clone the Demos repo
+## Install Visual Studio Code
+
+Visual Studio Code enables modifying the sample, or copying the sample and modifying it to create your own PWA.
+
+Start or install Visual Studio Code, as follows:
+
+1. Press the **Windows** key, enter **Visual Studio Code**, and then click **Open**.
+
+1. If Visual Studio Code isn't installed, go to [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
+
+Continue with the next section.
+
+
+<!-- ====================================================================== -->
+## Install or update Node.js
+
+Node.js includes a web server that you'll use to run and test the sample locally.
+
+Install or update Node.js as follows:
+
+<!-- todo: use Windows Command Prompt, not PowerShell, not git bash - or maybe Terminal within VS Code -->
+
+1. Press the **Windows** key, type **PowerShell**, and then for Windows PowerShell, click **Run as Administrator**.
+
+   Windows PowerShell command prompt opens.
+
+1. Enter the command: `node -v`
+
+   If Node.js has been installed, a version number is output, such as v22.14.0.
+
+1. Go to [Node.js](https://nodejs.org).
+
+   Note the version number in the lower left **Latest LTS** button, such as v22.20.0.
+
+1. Click the **Get Node.js** button.
+
+   You end up at a page such as [Download Node.js](https://nodejs.org/download).
+
+1. Click the **Windows Installer (.msi)** button.
+
+   The **Downloads** window of Microsoft Edge opens, and displays a file name such as `node-v22.20.0-x64.msi`.
+
+1. Click the **open file** link under the file name.
+
+   The **Node.js Setup Wizard** window opens.
+
+1. Click the **Next** button, and follow the prompts.  You can accept the defaults, then click the **Install** button.
+
+1. Follow the prompts.
+
+   The **Node.js Setup Wizard** window closes.
+
+1. In PowerShell, enter the command: `node -v`
+
+   The latest version number is displayed, such as v22.20.0.
+
+Continue with the next section.
+
+
+<!-- ====================================================================== -->
+## Clone the Edge Demos repo to your drive
+<!-- derived from 
+https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
+-->
+
+Clone the **MicrosoftEdge / Demos** repo to your local drive, as follows:
+
+1. See whether the repo is already cloned to your local drive: 
+
+1. Press **Windows+E**.
+
+   File Explorer opens.
+
+1. Navigate to where you want the repo cloned to, such as:
+
+   `C:\Users\localAccount\GitHub`
+
+1. See whether the `\Demos\` repo is listed.
+
+1. In PowerShell that's opened using **Run as Administrator**, enter `git`.
+
+   If git has been installed, usage instructions are displayed.
+
+1. If git is not installed, go to [Download git](https://git-scm.com/downloads) and install it.
+
+1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+
+1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
+
+   The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
+
+1. In PowerShell, change to the directory where you want to clone the Demos repo:
+
+   ```console
+   cd ~/GitHub
+   cd c:/users/localAccount/GitHub/  # alt format
+   ```
+
+1. Enter `git clone` followed by the copied URL for the Demos repo, and then press **Enter**:
+
+   ```console
+   git clone https://github.com/MicrosoftEdge/Demos.git
+   ```
+
+1. In File Explorer, go to the new, `/Demos/` repo directory, such as:
+
+   `C:\Users\localAccount\GitHub\Demos`
+
+1. In File Explorer, open the `/Demos/pwa-getting-started/` directory.
+
+   Files are listed, such as `converter.js`.
+
+See also:
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+
+Continue with the next section.
 
 
 <!-- ====================================================================== -->
 ## Start the localhost server
 
+While developing or testing a PWA, you use a local web server.  `http-server` is a local web server that's included with the Node.js library.
+
+Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
+
+1. In PowerShell that's opened using **Run as Administrator**, change to the directory where you want to clone the Demos repo:
+
+   ```console
+   cd Demos
+   cd pwa-getting-started
+   ```
+
+   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\pwa-getting-started`.
+
+1. In PowerShell, enter the following command:
+
+   ```console
+   npx http-server
+   ```
+
+1. If you get the message "File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled on this system", you can run a command such as:
+
+   ```console
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+   ```
+
+  For details, see [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5) in the PowerShell docs.
+
+  Then again enter the command:
+
+   ```console
+   npx http-server
+   ```
+
+   Output is displayed, such as:
+
+   ```console
+   Starting up http-server, serving ./
+   Available on:
+     http://10.0.1.12:8080
+     http://127.0.0.1:8080
+   ```
+
+1. In Microsoft Edge, go to: `http://localhost:8080`
+
+   The URL starts with http, not https.  Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the PWA APIs without HTTPS.
+
+Continue with the next section.
+
 
 <!-- ====================================================================== -->
 ## Install the sample
 
+Install the sample on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, as follows:
+
+1. In the Address bar, click the **App available. Install temperature convertor app** (![App available icon](./index-images/app-available-icon.png)) button.
+
+   An **Install app** dialog opens:
+
+   ![The installation prompt](./index-images/sample-pwa-app-available-button.png)
+
+   The sample's web app manifest enables the browser to install the app as a PWA.  The **App available** button installs the app locally.
+
+1. Click the **Install** button.
+
+   The app is installed locally.  The **App installed** dialog opens within the app:
+
+   ![The App installed" dialog in the standalone app window](./index-images/app-installed-dialog.png)
+
+1. In the **App installed** dialog, click the **Allow** button, and then click the **Close** (X) button.
+
+   The app is displayed within its own app window:
+
+   ![The sample PWA, installed and running in its own window](./index-images/sample-pwa-installed.png)
+
+   The app's icon is displayed in the Windows taskbar:
+
+   ![The app's icon in the Windows taskbar](./index-images/icon-in-taskbar.png)
+
+1. Close the standalone **Temperature converter app** window.
+
+See also:
+* [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+
+Continue with the next section.
+
 
 <!-- ====================================================================== -->
-## Run the sample
+## Run the sample as a local app
+
+1. Press the **Windows** key, start typing **Temperature convertor app**, and then click **Open**.
+
+   The installed **Temperature converter app** opens.
+
+1. In the **temperature** text box, type **22**.
+
+   As you type, the displayed temperature is updated to **71.6 F**.
+
+1. Click the **from** and **to** dropdown lists.
+
+   Available units are:
+   * **Celsius**
+   * **Fahrenheit**
+   * **Kelvin**
+
+Continue with the next section.
 
 
 <!-- ====================================================================== -->
 ## How the sample code works
 
+The remaining sections of this article explain how the temperature convertor PWA sample works.
+
+This PWA sample is built by using web technologies.  This sample, being a PWA, can be installed and run on all devices, from a single codebase.
+
+The sample consists of the following files:
+
+* `README.md` - brief information about the app: a link to open the app webpage, and a link to the present article.
+* `converter.css` - styling for the webpage of the app.
+* `converter.js` - app logic.
+* `icon512.png` - image file to represent the app.
+* `index.html` - webpage layout of the app.
+* `manifest.json` - basic information about the app, for the device's operating system to use.
+* `sw.js` - service worker.
+
+These files are explained below.
+
 
 <!-- ====================================================================== -->
-## SORT
+## `README.md`
+
+Brief information about the app: a link to open the app webpage, and a link to the present article.
+
+
+<!-- ====================================================================== -->
+## `converter.css`
+
+Styling for the webpage of the app.
+
+* `converter.css` uses CSS to organize the HTML content in a layout, and to provide styles for elements.
+
+
+<!-- ====================================================================== -->
+## `converter.js`
+
+App logic.
+
+* `converter.js` uses JavaScript to add user interactions to the user interface.
+
+
+<!-- ====================================================================== -->
+## `icon512.png`
+
+image file to represent the app.
+
+A 512x512 pixel app icon image named `icon512.png`.
+
+You can use the [sample image](./index-images/icon512.png) for testing purposes.
 
 
 
 <!-- ====================================================================== -->
-## Prerequisites
+## `index.html`
 
-*   Install [Visual Studio Code](https://code.visualstudio.com) to edit your PWA source code.
-*   Install [Node.js](https://nodejs.org) to use it as your local web server.
-*   Working knowledge of HTML, CSS, and JavaScript is also a plus.
+webpage layout of the app.
+
+`index.html` uses HTML to describe the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
 
 
 <!-- ====================================================================== -->
-## The architecture of a PWA
+## `manifest.json`
+
+basic information about the app, for the device's operating system to use.
+
+`manifest.json` uses JSON to describe the app to the host operating system.
+
+
+<!-- ====================================================================== -->
+## `sw.js`
+
+A service worker.
+
+
+<!-- ====================================================================== -->
+## PWA architecture
 
 Progressive Web Apps are written using the programming languages of the web: HTML, CSS, and JavaScript, and are distributed to your users by using web servers.
 
@@ -88,15 +365,21 @@ To make your app available to users, you deploy it on a web server that's access
 * **Back-end code**: the endpoints needed by your app, when connected to the internet, to retrieve dynamic content that may be stored in a database on your server.
 * **Front-end code**: the resources needed for the app to be installed on the user's device, such as HTML, CSS, and JavaScript code.
 
-Your back-end code can use the server-side languages of your choice such as ASP.NET, Java, Node.js, or PHP. Note, however, that server-side endpoints may not even be required depending on the app your're building. The PWA that you create in this tutorial doesn't have any server-side code, because the app exclusively runs on the device it's installed on, and doesn't need any server-side data.
+Your back-end code can use the server-side languages of your choice such as ASP.NET, Java, Node.js, or PHP.  Server-side endpoints might not be required, depending on the app your're building.  This temperature convertor sample app doesn't have any server-side code, because the app exclusively runs on the device it's installed on, and doesn't need any server-side data.
 
-Your front-end code uses HTML, CSS, JavaScript, and a JSON manifest only.
+The app's front-end code uses HTML, CSS, JavaScript, and a JSON manifest:
 
-You use HTML to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface. You then use CSS to organize the HTML content in a layout, and provide styles to elements. You use JavaScript to add user interactions to your user interface. And finally, you use a JSON manifest file that describes your application to the host operating system.
+* `index.html` uses HTML to describe the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
+
+* `converter.css` uses CSS to organize the HTML content in a layout, and to provide styles for elements.
+
+* `converter.js` uses JavaScript to add user interactions to the user interface.
+
+* `manifest.json` uses JSON to describe the app to the host operating system.
 
 Although your front-end code runs by using the device's web browser, the browser user interface might not be visible, because your app can choose to run in a standalone window.
 
-On top of the user interface code, you can also use JavaScript to make your application faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your application to the host operating system.
+On top of the user interface code, you can also use JavaScript to make the app faster, more reliable, and network-independent by using a service worker file. Finally, your front-end code also contains a JSON manifest file that describes your app to the host operating system.
 
 The following diagram shows the high-level architecture of a PWA.  The web server is on one side of the PWA, and the device is on the other side. The device contains the front-end code, including HTML, CSS, JavaScript, the service worker, and the manifest:
 
@@ -104,72 +387,54 @@ The following diagram shows the high-level architecture of a PWA.  The web serve
 
 
 <!-- ====================================================================== -->
-## Step 1 - Start a web server
+## The app start page
 
-PWAs are distributed to users by using web servers. Once your app is ready, deploy it to the web by using a web hosting provider. You can then update your app simply by deploying the new version to your web server again.
+`index.html` defines the layout of the temperature converter app, as a webpage:
 
-To start developing your PWA, you can use a local web server instead. To start a local server:
-
-1. Create a new folder on your computer where the web server will run.
-
-    You can do this by opening a command prompt and typing:
-    
-    ```console
-    cd path/to/your/dev/folder
-    mkdir MySamplePWA
-    cd MySamplePWA
-    ```
-
-1. Start the server by using the `http-server` Node.js library:
-
-   ```console
-   npx http-server
-   ```
-
-You now have a simple local web server running at `http://localhost:8080`.
-
-Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
-
-For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
-
-You can also host your website on [GitHub Pages](https://pages.github.com/) which supports HTTPS too.
-
-For debugging purposes, Microsoft Edge also permits a `localhost` web server to use the PWA APIs without HTTPS.
-
-
-<!-- ====================================================================== -->
-## Step 2 - Create your app start page
-
-So far, there is no content available on your web server. Start by creating the first page that users will see when they access your temperature converter app.
-
-1. Open Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePWA` directory you created in the previous step.
-
-1. Create a new file in the project by pressing **Ctrl+N**, add the following content, and save the file as `index.html`:
-
-   ```html
-   <!DOCTYPE html>
-   <html lang="en-US" dir="ltr">
-     <head>
-       <meta charset="UTF-8" />
-       <meta name="viewport" content="width=device-width,initial-scale=1" />
-       <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" />
-       <title>Temperature converter</title>
-     </head>
-     <body>
-       <h1>Temperature converter</h1>
-     </body>
-   </html>
-   ```
-
-1. Go to `http://localhost:8080` to view your app:
-
-   ![Running your new PWA on localhost](./index-images/sample-pwa-app.png)
-
-The app runs in the browser for now, and can't be installed. To make the app installable, the app needs a web app manifest.
+```html
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="stylesheet" href="./converter.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+  </head>
+  <body>
+    <form id="converter">
+      <label for="input-temp">temperature</label>
+      <input type="text" id="input-temp" name="input-temp" value="20" />
+      <label for="input-unit">from</label>
+      <select id="input-unit" name="input-unit">
+        <option value="c" selected>Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <label for="output-unit">to</label>
+      <select id="output-unit" name="output-unit">
+        <option value="c">Celsius</option>
+        <option value="f" selected>Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>
+    <script src="./converter.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js', { scope: './' });
+      }
+    </script>
+  </body>
+</html>
+```
 
 
 <!-- ====================================================================== -->
-## Step 3 - Create a web app manifest
+## The web app manifest
+
+For the app to be installable, the app has a web app manifest.
 
 A _web app manifest_ is a JSON file containing metadata about your app, such as its name, description, icons, and the various operating system features it uses.
 
@@ -183,21 +448,21 @@ To add an app manifest to your app:
 
     ```json
     {
-        "lang": "en-us",
-        "name": "Temperature converter app",
-        "short_name": "Temperature converter",
-        "description": "A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit",
-        "start_url": "/",
-        "background_color": "#2f3d58",
-        "theme_color": "#2f3d58",
-        "orientation": "any",
-        "display": "standalone",
-        "icons": [
-            {
-                "src": "/icon512.png",
-                "sizes": "512x512"
-            }
-        ]
+      "lang": "en-us",
+      "name": "Temperature converter app",
+      "short_name": "Temperature converter",
+      "description": "A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit",
+      "start_url": "./",
+      "background_color": "#2f3d58",
+      "theme_color": "#2f3d58",
+      "orientation": "any",
+      "display": "standalone",
+      "icons": [
+          {
+              "src": "./icon512.png",
+              "sizes": "512x512"
+          }
+      ]
     }
     ```
 
@@ -217,7 +482,7 @@ Your VS Code project should now look somewhat like this:
 
 
 <!-- ====================================================================== -->
-## Step 4 - Continue building the user interface of your app
+## The user interface
 
 Now that your app has a web app manifest file, and a start page, it's time to build out the main app functionality.
 
@@ -361,7 +626,7 @@ Your app does something useful now, and it can be installed as a standalone app 
 
 
 <!-- ====================================================================== -->
-## Step 5 - Add a service worker
+## The service worker
 
 Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
@@ -437,7 +702,7 @@ To confirm that your service worker is running:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. Open the **Application** tool, then click **Service workers**.  If the service worker isn't displayed, refresh the page.
+1. Open the **Application** tool, and then click **Service workers**.  If the service worker isn't displayed, refresh the page.
 
     ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
 
@@ -453,34 +718,34 @@ To confirm that your service worker is running:
 
 
 <!-- ====================================================================== -->
-## Step 6 - Install the app
+## Uninstall the sample
 
-Now that your app has a web app manifest, supporting browsers can install your app as a PWA.
-
-In Microsoft Edge, once you refresh your app, the **App available** button appears in the Address bar. Clicking the **App available** button prompts you to install the app locally.
-
-![Microsoft Edge, with the sample PWA in a tab. The App available button in the Address bar has been clicked and the installation prompt is displayed](./index-images/sample-pwa-app-available-button.png)
-
-Click **Install** to install the app locally. After the installation completes, your app is displayed in its own window, and its own application icon in the Taskbar.
-
-![The sample PWA, installed and running in its own window](./index-images/sample-pwa-installed.png)
-
-To learn more about installing PWAs, see [Use PWAs in Microsoft Edge](../ux.md).
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-The temperature converter PWA that you built so far is only a small sample of what PWAs can do. The previous steps are important prerequisites for any PWA, but there are important best practices that will make your PWA feel like a real app when installed.
+To modify the sample, you can change to a different branch of the Demos repo.
 
-When users install applications, they have certain expectations of what these applications can do; for example:
+To create your own PWA, you can copy, paste, and modify the `Demos\pwa-getting-started` directory.
 
-* Users expect apps to work offline.
-* Users expect apps to integrate within the operating system, such as by handling files.
-* Users expect apps to perform non-trivial computing tasks.
-* Users expect to find apps in app stores.
 
-To build a great PWA, see [Best practices for PWAs](./best-practices.md).
+The above steps show how to run and test the sample PWA on your local server.  When your own PWA app has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
+
+After that, to update your PWA, you deploy the new version to your web server again.
+
+
+<!-- ------------------------------ -->
+#### Hosting a PWA on a web server
+<!-- informational beyond the sample, out of scope? -->
+
+Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the PWA APIs without HTTPS.
+
+When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
+
+For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
+
+You can also host your website on [GitHub Pages](https://pages.github.com/) which supports HTTPS too.
 
 
 <!-- ====================================================================== -->
