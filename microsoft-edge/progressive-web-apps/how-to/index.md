@@ -22,7 +22,7 @@ To examine the user interface of the app:
 
 1. On Windows, in Microsoft Edge, go to the [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) live sample web app in a new window or tab.
 
-   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a PWA.  Your own, actual PWA, after testing it, would be hosted at your web server that your users can access.
+   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a PWA.  Your own, actual PWA, after testing it, would be hosted at your web server that users can access.
 
 1. In the **temperature** text box, type **22**.
 
@@ -48,13 +48,16 @@ To examine the user interface of the app:
 
 These code in these files is explained later, in [How the sample code works](#how-the-sample-code-works), below.
 
-Follow the steps in the next sections to obtain a local copy of the code and install and run the sample on your local server.
+Follow the steps in the next sections to:
+1. Obtain a local copy of the code.
+1. Run and test the sample on your local server, in Microsoft Edge.
+1. Install the sample as an app on Windows, by clicking the **App available. Install temperature convertor app** (![App available icon](./index-images/app-available-icon.png)) button in the Address bar.
 
 
 <!-- ====================================================================== -->
 ## Install Visual Studio Code
 
-Visual Studio Code enables modifying the sample, or copying the sample and modifying it to create your own PWA.
+Visual Studio Code enables viewing the sample code, modifying the sample, and creating your own PWA by using the sample as a starting point.
 
 Start or install Visual Studio Code, as follows:
 
@@ -72,7 +75,12 @@ Node.js includes a web server that you'll use to run and test the sample locally
 
 Install or update Node.js as follows:
 
-<!-- todo: use Windows Command Prompt, not PowerShell, not git bash - or maybe Terminal within VS Code -->
+<!-- todo: which shell?
+Terminal within VS Code
+Windows Command Prompt
+PowerShell
+git bash
+-->
 
 1. Press the **Windows** key, type **PowerShell**, and then for Windows PowerShell, click **Run as Administrator**.
 
@@ -682,7 +690,12 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     });
     ```
 
-    The `sw.js` file will act as your PWA's service worker. The code above listens to the `install` event, which is triggered when the user installs your app, and uses it to cache the resources that your app needs to function offline, such as the initial HTML page, the converter JavaScript file, and the converter CSS file.
+    The `sw.js` file is the PWA's service worker.  The service worker code (above) listens to the `install` event.  The `install` event is triggered when the user installs your app.
+
+    When the service worker receives the `install` event, the service worker caches the resources that your app needs to function offline, such as:
+    * The app's initial HTML page.
+    * The app's CSS file.
+    * The app's JavaScript file.
 
     The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
 
@@ -696,7 +709,7 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     </script>
     ```
 
-To confirm that your service worker is running:
+To confirm that the service worker is running:
 
 1. In Microsoft Edge, go to `http://localhost:8080`.
 
@@ -720,15 +733,32 @@ To confirm that your service worker is running:
 <!-- ====================================================================== -->
 ## Uninstall the sample
 
+Uninstalling the sample by starting from the running **Temperature converter app** window:
+
+1. Select **Settings and more** (**...**) > **App settings**.
+
+   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**.
+
+1. Click the **Uninstall** button.
+
+
+Uninstalling the sample by starting from Microsoft Edge:
+
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps** > **Installed apps**.
+
+1. In the **Temperature converter app** section, select **Details**, and then click the **Uninstall** button.
+
+
+<!-- ====================================================================== -->
+## Modify the sample
+
+To modify the sample, you can change to a different branch of the Demos repo.
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-To modify the sample, you can change to a different branch of the Demos repo.
-
 To create your own PWA, you can copy, paste, and modify the `Demos\pwa-getting-started` directory.
-
 
 The above steps show how to run and test the sample PWA on your local server.  When your own PWA app has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
 
