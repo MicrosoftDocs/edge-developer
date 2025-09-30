@@ -635,6 +635,7 @@ Your app does something useful now, and it can be installed as a standalone app 
 
 <!-- ====================================================================== -->
 ## The service worker
+<!-- before/live: https://learn.microsoft.com/microsoft-edge/progressive-web-apps/how-to/#step-5---add-a-service-worker -->
 
 Service workers are a key technology that help make PWAs fast and independent of network conditions.
 
@@ -645,50 +646,50 @@ A service worker is a specialized web worker that can intercept network requests
 
 See [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
-A PWA doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend adding a service worker to your PWA to make it faster, and to make your PWA more reliable, such as when your device has an intermittent network connection or is offline.
+A PWA doesn't need to have a service worker, for Microsoft Edge to be able to install the app locally.  A service worker is recommended for a PWA:
+* To make the PWA faster.
+* To make the PWA more reliable, such as when your device has an intermittent network connection or is offline.
 
-A service worker is defined in a JavaScript file that's loaded by your app. To add a service worker to your project:
+`sw.js`:
 
-1. In Visual Studio Code, create a new file (**Ctrl+N**), add the following content, and save the file as `sw.js`:
+```javascript
+const CACHE_NAME = `temperature-converter-v1`;
 
-    ```javascript
-    const CACHE_NAME = `temperature-converter-v1`;
+// Use the install event to pre-cache all initial resources.
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    cache.addAll([
+      '/',
+      '/converter.js',
+      '/converter.css'
+    ]);
+  })());
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+
+    // Get the resource from the cache.
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    } else {
+        try {
+          // If the resource was not in the cache, try the network.
+          const fetchResponse = await fetch(event.request);
     
-    // Use the install event to pre-cache all initial resources.
-    self.addEventListener('install', event => {
-      event.waitUntil((async () => {
-        const cache = await caches.open(CACHE_NAME);
-        cache.addAll([
-          '/',
-          '/converter.js',
-          '/converter.css'
-        ]);
-      })());
-    });
-    
-    self.addEventListener('fetch', event => {
-      event.respondWith((async () => {
-        const cache = await caches.open(CACHE_NAME);
-    
-        // Get the resource from the cache.
-        const cachedResponse = await cache.match(event.request);
-        if (cachedResponse) {
-          return cachedResponse;
-        } else {
-            try {
-              // If the resource was not in the cache, try the network.
-              const fetchResponse = await fetch(event.request);
-        
-              // Save the resource in the cache and return it.
-              cache.put(event.request, fetchResponse.clone());
-              return fetchResponse;
-            } catch (e) {
-              // The network failed.
-            }
+          // Save the resource in the cache and return it.
+          cache.put(event.request, fetchResponse.clone());
+          return fetchResponse;
+        } catch (e) {
+          // The network failed.
         }
-      })());
-    });
-    ```
+    }
+  })());
+});
+```
 
     The `sw.js` file is the PWA's service worker.  The service worker code (above) listens to the `install` event.  The `install` event is triggered when the user installs your app.
 
@@ -697,37 +698,68 @@ A service worker is defined in a JavaScript file that's loaded by your app. To a
     * The app's CSS file.
     * The app's JavaScript file.
 
-    The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy. The service worker returns cached resources so your app can work offline, and if that fails attempts to download from the server.
+    The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.  The service worker returns cached resources so your app can work offline, and if that fails, attempts to download<!-- todo: download what? --> from the server.
 
-1.  Open `index.html` and add the following code at the end of the `<body>` tag to register your service worker:
 
-    ```html
-    <script>
-    if('serviceWorker' in navigator) {
+<!-- ------------------------------ -->
+#### How the service worker is registered, in `index.html`
+
+1. Open `index.html`.  It includes the following code, at the end of the `<body>` tag, to register the service worker:
+
+   ```html
+   <script>
+   if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js', { scope: '/' });
-    }
-    </script>
-    ```
+   }
+   </script>
+   ```
 
-To confirm that the service worker is running:
+
+<!-- ------------------------------ -->
+#### Confirming that the service worker is running
+
+To confirm that the service worker (`sw.js`) is running:
 
 1. In Microsoft Edge, go to `http://localhost:8080`.
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+   The initial webpage of the sample app appears.
 
-1. Open the **Application** tool, and then click **Service workers**.  If the service worker isn't displayed, refresh the page.
+1. Right-click the webpage, and then select **Inspect**.
 
-    ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
+   DevTools opens.
 
-1.  View the service worker cache by expanding **Cache Storage** and selecting **temperature-converter-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
+1. In DevTools, open the **Application** tool.
 
-    ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
+1. In the tree on the left, select **Application** > **Service workers**.
 
-1.  Try your PWA as an offline app. In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**.
+   Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
 
-1.  Refresh your app. It should still appear correctly in the browser, using cached resources served by the service worker.
+    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./index-images/devtools-sw-overview.png)
 
-    ![DevTools, showing where to switch the Throttling value to Offline](./index-images/devtools-offline.png)
+   If the service worker isn't displayed, refresh the page.
+
+1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**.
+
+   The service worker cache is displayed.  All of the resources that are cached by the service worker are listed:
+   * `/` (`index.html`) - The HTML page of the app; the initial page of the app - `index.html` - webpage layout of the app.
+   * `/converter.css` - The styling for the webpage of the app.
+   * `/converter.js` - The JavaScript file containing the app logic.
+   * `/icon512.png` - The app icon image file to represent the app.
+   * `/manifest.json` - The app manifest, containing basic information about the app, for the device's operating system to use.
+
+   ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
+
+The sample's directory includes two files that aren't cached by the service worker: 
+
+   `README.md` - brief information about the app.
+   `sw.js` - the service worker that manages caching of needed files.
+    
+1. Try the PWA as an offline app.  In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**:
+
+   ![DevTools, showing where to switch the Throttling value to Offline](./index-images/devtools-offline.png)
+
+1. Refresh the app.  The app still appears correctly in the browser, by using cached resources that are served out by the service worker.
+
 
 
 <!-- ====================================================================== -->
