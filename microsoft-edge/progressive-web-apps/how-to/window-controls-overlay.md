@@ -118,7 +118,7 @@ A user can toggle the title bar or change the window dimensions while the app is
 
 To listen for changes, use the `geometrychange` event on the `navigator.windowControlsOverlay` object.  To detect whether the title bar is visible, use the `visible` property on the `navigator.windowControlsOverlay` object.
 
-Note that the `geometrychange` is fired very frequently when the user resizes the window.  To avoid running layout-changing code too often and causing performance problems in your app, use a `debounce` function to limit how many times the event is handled.  See [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
+The `geometrychange` event is fired very frequently when the user resizes the window.  To avoid running layout-changing code too often and causing performance problems in your app, use a `debounce` function to limit how many times the event is handled.  See [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
 
 ```javascript
 const debounce = (func, wait) => {
@@ -201,9 +201,28 @@ See [Simulate the Window Controls Overlay API without installing your PWA](../..
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article body -->
 
-* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.
-* [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-* [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
-* [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)
-* [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN.
+* [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md) - DevTools feature.<!-- 2x -->
+
+MDN:
+* [Window Controls Overlay API](https://developer.mozilla.org/docs/Web/API/Window_Controls_Overlay_API)<!-- 1x; link is not in article body -->
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.<!-- 2x -->
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.<!-- 2x -->
+   * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) in manfest.<!-- 2x -->
+   * [display](https://developer.mozilla.org/docs/Web/Manifest/display) in manifest.<!-- 2x -->
+* [`env()`](https://developer.mozilla.org/docs/Web/CSS/env) CSS function.<!-- 2x -->
+
+Blog:
+* [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)<!-- 1x; link is not in article body -->
+* [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)<!-- 2x -->
+
+YouTube:
+* [Display content in the title bar of your desktop PWA](https://www.youtube.com/watch?v=NvClp35dFVI)<!-- 1x; link is not in article body -->
+
+Demo:
+* [1DIV live](https://microsoftedge.github.io/Demos/1DIV/dist/)<!-- 2x -->
+* [/1DIV/ source code](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV)<!-- 2x -->
+   * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/1DIV/dist/manifest.json)<!-- 2x -->
+   * [app.js](https://github.com/MicrosoftEdge/Demos/blob/main/1DIV/src/app.js)<!-- 2x --> - uses the `navigator.windowControlsOverlay` object.
+   * [app.css](https://github.com/MicrosoftEdge/Demos/blob/main/1DIV/dist/app.css)<!-- 2x --> - uses the `titlebar-area-*` CSS environment variables.
