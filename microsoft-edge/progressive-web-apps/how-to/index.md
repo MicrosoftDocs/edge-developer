@@ -6,10 +6,308 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 11/24/2022
+ms.date: 10/01/2025
 ---
 # Get started with PWAs
 <!-- todo: remove action steps about creating sample app from scratch -->
+
+
+<!-- ====================================================================== -->
+## How the sample code works
+<!-- specific about this sample, not how PWAs work -->
+<!-- todo: maybe move/merge the below sections into "Get started with PWAs" \progressive-web-apps\how-to\index.md -->
+
+This article explains how the temperature converter PWA sample works.
+
+To run the sample as you would during development, and to explore the user experience (UX) of a PWA, see [Temperature converter sample](../samples/temperature-converter.md).
+
+By reading that article and the present article, you'll be able to:
+* Customize the sample by making minor modifications of the sample's code.
+* Create your own, different PWA by copying and pasting the entire sample directory and extensively modifying the code.
+
+This PWA sample is built by using web technologies.  This sample, being a PWA, can be installed and run on all devices, from a single codebase.
+
+The sample consists of the following files:
+
+* `README.md` - brief information about the app: a link to open the app webpage, and a link to the present article.
+* `converter.css` - styling for the webpage of the app.
+* `converter.js` - app logic.
+* `icon512.png` - image file to represent the app.
+* `index.html` - webpage layout of the app.
+* `manifest.json` - basic information about the app, for the device's operating system to use.
+* `sw.js` - service worker.
+
+These files are explained below.
+
+
+<!-- ====================================================================== -->
+## `README.md`
+
+[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme) is technically not part of the sample's source code.
+
+The Readme contains brief information about the app: a link to open the app webpage, and a link to the present article.
+
+
+<!-- ====================================================================== -->
+## `converter.css`
+
+[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css) defines the styling for the webpage of the app, by using CSS to organize the HTML content in a layout, and to provide styles for elements.
+
+```css
+html {
+  background: rgb(243, 243, 243);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15pt;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+#converter {
+  width: 15rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 2rem 0 #0001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#converter input, #converter select {
+  font-family: inherit;
+  font-size: inherit;
+  margin-block-end: 1rem;
+  text-align: center;
+  width: 10rem;
+}
+
+#converter #output-temp {
+  font-size: 2rem;
+  font-weight: bold;
+}
+```
+
+
+<!-- ====================================================================== -->
+## `converter.js`
+
+[converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js) contains app logic.  It uses JavaScript to add user interactions to the user interface.
+
+```javascript
+const inputField = document.getElementById('input-temp');
+const fromUnitField = document.getElementById('input-unit');
+const toUnitField = document.getElementById('output-unit');
+const outputField = document.getElementById('output-temp');
+const form = document.getElementById('converter');
+
+function convertTemp(value, fromUnit, toUnit) {
+  if (fromUnit === 'c') {
+    if (toUnit === 'f') {
+      return value * 9 / 5 + 32;
+    } else if (toUnit === 'k') {
+      return value + 273.15;
+    }
+    return value;
+  }
+  if (fromUnit === 'f') {
+    if (toUnit === 'c') {
+      return (value - 32) * 5 / 9;
+    } else if (toUnit === 'k') {
+      return (value + 459.67) * 5 / 9;
+    }
+    return value;
+  }
+  if (fromUnit === 'k') {
+    if (toUnit === 'c') {
+      return value - 273.15;
+    } else if (toUnit === 'f') {
+      return value * 9 / 5 - 459.67;
+    }
+    return value;
+  }
+  throw new Error('Invalid unit');
+}
+
+form.addEventListener('input', () => {
+  const inputTemp = parseFloat(inputField.value);
+  const fromUnit = fromUnitField.value;
+  const toUnit = toUnitField.value;
+
+  const outputTemp = convertTemp(inputTemp, fromUnit, toUnit);
+  outputField.value = (Math.round(outputTemp * 100) / 100) + ' ' + toUnit.toUpperCase();
+});
+```
+
+
+<!-- ====================================================================== -->
+## `icon512.png`
+
+[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the app, such as in the Windows taskbar and Windows Start Menu:
+
+![Icon file](./temperature-converter-images/icon-in-taskbar.png)
+
+
+<!-- ====================================================================== -->
+## `index.html`
+
+[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) defines the webpage layout of the app.  It uses HTML to describe the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="stylesheet" href="./converter.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+  </head>
+  <body>
+    <form id="converter">
+      <label for="input-temp">temperature</label>
+      <input type="text" id="input-temp" name="input-temp" value="20" />
+      <label for="input-unit">from</label>
+      <select id="input-unit" name="input-unit">
+        <option value="c" selected>Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <label for="output-unit">to</label>
+      <select id="output-unit" name="output-unit">
+        <option value="c">Celsius</option>
+        <option value="f" selected>Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>
+    <script src="./converter.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js', { scope: './' });
+      }
+    </script>
+  </body>
+</html>
+```
+
+
+<!-- ====================================================================== -->
+## `manifest.json`
+
+[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json) provides basic information about the app, for the device's operating system to use.  It uses JSON to describe the app to the host operating system.
+
+```json
+{
+  "lang": "en-us",
+  "name": "Temperature converter app",
+  "short_name": "Temperature converter",
+  "description": "A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit",
+  "start_url": "./",
+  "background_color": "#2f3d58",
+  "theme_color": "#2f3d58",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "./icon512.png",
+          "sizes": "512x512"
+      }
+  ]
+}
+```
+
+
+<!-- ====================================================================== -->
+## `sw.js`
+
+[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) is a service worker that manages caching files that are part of the app, caching them to the local drive and serving them out if there's no internet connection.
+
+```javascript
+const CACHE_NAME = `temperature-converter-v1`;
+    
+// Use the install event to pre-cache all initial resources.
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    cache.addAll([
+      './',
+      './converter.js',
+      './converter.css'
+    ]);
+  })());
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+
+    // Get the resource from the cache.
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    } else {
+        try {
+          // If the resource was not in the cache, try the network.
+          const fetchResponse = await fetch(event.request);
+    
+          // Save the resource in the cache and return it.
+          cache.put(event.request, fetchResponse.clone());
+          return fetchResponse;
+        } catch (e) {
+          // The network failed
+        }
+    }
+  })());
+});
+```
+
+The service worker explicitly caches three files:
+* `./` means `index.html`
+*  `./converter.js`
+* `./converter.css`
+
+Two additional files are are cached automatically by the browser: 
+* The icon file (`.png`).
+* The manifest file (`.json`).
+
+See [Monitor the service worker handling offline caching](#monitor-the-service-worker-handling-offline-caching), above.
+
+
+<!-- ====================================================================== -->
+## Next steps
+
+To create your own PWA, you can copy, paste, and modify the `Demos\pwa-getting-started` directory.
+
+The above steps show how to run and test the sample PWA on your local server.  When your own PWA app has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
+
+After that, to update your PWA, you deploy the new version to your web server again.
+
+
+<!-- ------------------------------ -->
+#### Hosting a PWA on a web server for users
+<!-- informational beyond the sample, out of scope? -->
+
+Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the PWA APIs without HTTPS.
+
+When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
+
+For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
+
+You can also host your website on [GitHub Pages](https://pages.github.com/) which supports HTTPS too.
+
+
+<!-- ====================================================================== -->
+## Intro (old)
+
+todo: merge all of the below content into the above sections/ headings outline
 
 Progressive Web Apps (PWAs) are applications that you build by using web technologies, and that can be installed and can run on all devices, from one codebase.
 
@@ -21,7 +319,6 @@ This guide is targeted at web developers who want to learn to build PWAs. To lea
 In this guide, you first learn how PWAs work, then create your first simple PWA, which will be a temperature converter app, and then learn more about how to make great PWAs.
 
 You can find the final source code of the app you will be building in this guide on the [PWA getting started demo app repository](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
-
 
 
 <!-- ====================================================================== -->

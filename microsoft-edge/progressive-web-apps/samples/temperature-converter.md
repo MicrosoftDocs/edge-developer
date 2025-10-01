@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/29/2025
+ms.date: 10/01/2025
 ---
 # Temperature converter sample
 
@@ -14,13 +14,25 @@ The Temperature converter sample is a Progressive Web App (PWA).
 
 This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.
 
+The sample PWA is initially shown in the browser, with an **App available** button in the Address bar:
+
+![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
+
+Below, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.
+
+The sample PWA installed locally:
+
+![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+
 
 <!-- ====================================================================== -->
 ## Preview the sample
 
 To examine the user interface of the app:
 
-1. On Windows, in Microsoft Edge, go to the [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) live sample web app in a new window or tab.
+1. On Windows, in Microsoft Edge, go to the [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) live sample web app in a new window or tab:
+
+   ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
 
    This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a PWA.  Your own, actual PWA, after testing it, would be hosted at your web server that users can access.
 
@@ -46,8 +58,6 @@ In the sections below, you'll:
 1. Run and test the sample on your localhost server, in Microsoft Edge.
 
 1. Install the sample as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
-
-1. Study the code.
 
 
 <!-- ====================================================================== -->
@@ -169,7 +179,7 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Start the localhost server
+## Start the localhost server and web app
 
 While developing or testing a PWA, you use a local web server.  `http-server` is a local web server that's included with the Node.js library.
 
@@ -221,7 +231,7 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Install the sample
+## Install the web app as a local app
 
 Install the sample on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, as follows:
 
@@ -258,11 +268,15 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Run the sample as a local app
+## Open the sample as a local app
 
 1. Press the **Windows** key, start typing **Temperature converter app**, and then click **Open**.
 
-   The installed **Temperature converter app** opens.
+   The installed **Temperature converter app** opens:
+
+   ![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+
+   The service worker (`sw.js`) is running.  The localhost server is automatically running<!-- todo: is npx server auto-started? -->.  When you first open the local app, the right side of the title bar displays **localhost:8080** for a few seconds.
 
 1. In the **temperature** text box, type **22**.
 
@@ -278,20 +292,16 @@ Continue with the next section.
 Continue with the next section.
 
 
-<!-- ------------------------------ -->
-#### Confirming that the service worker is running
+<!-- ====================================================================== -->
+## Monitor the service worker handling offline caching
 
 To confirm that the service worker (`sw.js`) is running:
 
-1. In Microsoft Edge, go to `http://localhost:8080`.
+1. Right-click the app, and then select **Inspect**.
 
-   The initial webpage of the sample app appears.
+   DevTools opens, in a separate window<!-- todo: what type of window is this?  browser yet not browser - a webview? -->; undocked.  Other docking options are dimmed and not available.
 
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. In DevTools, open the **Application** tool.
+1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
 
 1. In the tree on the left, select **Application** > **Service workers**.
 
@@ -299,9 +309,11 @@ To confirm that the service worker (`sw.js`) is running:
 
     ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-converter-images/devtools-service-workers.png)
 
+   todo: change png, or add new png: show the DevTools undocked window.
+
    If the service worker isn't displayed, refresh the page.
 
-1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**.
+1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1 - http://localhost:8080/**.
 
    The service worker cache is displayed.  All of the resources that are cached by the service worker are listed:
    * `/` (`index.html`) - The HTML page of the app; the initial page of the app - `index.html` - webpage layout of the app.
@@ -351,118 +363,19 @@ Uninstalling the sample by starting from Microsoft Edge:
 To modify the sample, you can change to a different branch of the Demos repo.
 
 
-
 <!-- ====================================================================== -->
-#### Re-install the sample, modified
+## Re-install the sample, modified
 <!-- todo -->
-
-
-<!-- ====================================================================== -->
-## How the sample code works
-<!-- specific about this sample, not how PWAs work -->
-
-The remaining sections of this article explain how the temperature converter PWA sample works.
-
-This PWA sample is built by using web technologies.  This sample, being a PWA, can be installed and run on all devices, from a single codebase.
-
-The sample consists of the following files:
-
-* `README.md` - brief information about the app: a link to open the app webpage, and a link to the present article.
-* `converter.css` - styling for the webpage of the app.
-* `converter.js` - app logic.
-* `icon512.png` - image file to represent the app.
-* `index.html` - webpage layout of the app.
-* `manifest.json` - basic information about the app, for the device's operating system to use.
-* `sw.js` - service worker.
-
-These files are explained below.
-
-
-<!-- ====================================================================== -->
-## `README.md`
-
-Brief information about the app: a link to open the app webpage, and a link to the present article.
-
-<!-- todo: code listing -->
-
-
-<!-- ====================================================================== -->
-## `converter.css`
-
-Styling for the webpage of the app.
-
-* `converter.css` uses CSS to organize the HTML content in a layout, and to provide styles for elements.
-
-<!-- todo: code listing -->
-
-
-<!-- ====================================================================== -->
-## `converter.js`
-
-App logic.
-
-* `converter.js` uses JavaScript to add user interactions to the user interface.
-
-<!-- todo: code listing -->
-
-
-<!-- ====================================================================== -->
-## `icon512.png`
-
-A 512x512 pixel app icon image named `icon512.png`.  This image file represents the app, such as in the Windows taskbar and Windows Start Menu:
-
-![Icon file](./temperature-converter-images/icon-in-taskbar.png)
-
-
-<!-- ====================================================================== -->
-## `index.html`
-
-webpage layout of the app.
-
-`index.html` uses HTML to describe the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
-
-<!-- todo: code listing -->
-
-
-<!-- ====================================================================== -->
-## `manifest.json`
-
-basic information about the app, for the device's operating system to use.
-
-`manifest.json` uses JSON to describe the app to the host operating system.
-
-<!-- todo: code listing -->
-
-
-<!-- ====================================================================== -->
-## `sw.js`
-
-A service worker.
-
-<!-- todo: code listing -->
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-To create your own PWA, you can copy, paste, and modify the `Demos\pwa-getting-started` directory.
+Study the code of this sample by reading [Get started with PWAs](../how-to/index.md).
 
-The above steps show how to run and test the sample PWA on your local server.  When your own PWA app has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
-
-After that, to update your PWA, you deploy the new version to your web server again.
-
-
-<!-- ------------------------------ -->
-#### Hosting a PWA on a web server for users
-<!-- informational beyond the sample, out of scope? -->
-
-Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the PWA APIs without HTTPS.
-
-When your PWA goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
-
-For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
-
-You can also host your website on [GitHub Pages](https://pages.github.com/) which supports HTTPS too.
+Then you can:
+* Make minor modifications of the sample's code.
+* Copy and paste the entire sample directory and extensively modify the code to create your own PWA.
 
 
 <!-- ====================================================================== -->
