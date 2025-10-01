@@ -31,8 +31,14 @@ function longDate(dateString) {
 }
 
 async function execute(cmd) {
-  const stdout = await execSync(cmd);
-  return stdout.toString();
+  try {
+    const stdout = await execSync(cmd);
+    return stdout.toString();
+  } catch (error) {
+    console.error(`Error executing command "${cmd}": ${error.message}`);
+    console.log(error.stdout.toString());
+    process.exit(1);
+  }
 }
 
 async function releaseNotesAlreadyExists(version) {
@@ -326,15 +332,15 @@ async function main() {
 
   console.log(`Committing the new file to branch ${branchName}...`);
 
-  console.log("Configuring git");
-  await execute(`git config --local user.email "${ process.env.action }@users.noreply.github.com"`);
-  await execute(`git config --local user.name "${ process.env.action }"`);
+  console.log(`Configuring git with ${ process.env.actor }`);
+  await execute(`git config --local user.email "${ process.env.actor }@users.noreply.github.com"`);
+  await execute(`git config --local user.name "${ process.env.actor }"`);
   
   console.log(`Creating branch ${branchName}`);
   await execute(`git checkout -b ${branchName}`);
   
   console.log(`Adding and committing the new file`);
-  await execute(`git add .`);
+  await execute(`git add ${releaseNotesPath}`);
   await execute(`git commit -m "New web platform release notes for ${nextBetaVersion}"`);
   
   console.log(`Pushing the file to the remote repo`);
