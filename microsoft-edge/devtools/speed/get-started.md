@@ -444,7 +444,6 @@ You can then load your non-critical CSS code in a way that doesn't block the ini
 It's also good to minify your CSS code and remove unneeded whitespace characters and comments.  See [Minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css)<!-- chrome link ok, it's from Lighthouse docs --> at developer.chrome.com.
 
 See also:
-* [CSS Object Model](https://developer.mozilla.org/docs/Web/Performance/Guides/Critical_rendering_path#css_object_model) in _Critical rendering path_ at MDN.
 * [CSS performance optimization](https://developer.mozilla.org/docs/Learn_web_development/Extensions/Performance/CSS) at MDN.
 
 
