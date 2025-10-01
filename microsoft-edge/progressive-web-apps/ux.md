@@ -24,7 +24,7 @@ When Microsoft Edge determines that a website is an installable Progressive Web 
 
 1.  Click **Install** to complete the installation and run the PWA in Windows.
 
-Many PWAs are also present on the Microsoft Store, and can be installed directly from there, without needing to open Microsoft Edge.
+Many PWAs are also present on the [Microsoft Store](https://apps.microsoft.com), and can be installed directly from there, without needing to open Microsoft Edge.
 
 To install a PWA from the Microsoft Store, select **Get** on the app page:
 

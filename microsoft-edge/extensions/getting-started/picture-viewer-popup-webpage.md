@@ -148,7 +148,7 @@ See also:
 <!-- ====================================================================== -->
 ## Install the sample locally
 
-Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
+Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 
 1. In Microsoft Edge, click the **Extensions** (![Extensions icon](./picture-viewer-popup-webpage-images/extensions-icon.png)) button, next to the Address bar, if this icon is displayed.  Or, select **Settings and more** (![The "Settings and more" icon](./picture-viewer-popup-webpage-images/settings-and-more-icon.png)) > **Extensions**.  The **Extensions** pop-up opens:
 
