@@ -29,7 +29,7 @@ followed by other repos
 
 1DIV is a CSS editor that lets users create drawings by creating just one HTML element and CSS code.
 
-![The 1DIV app](./demo-pwas-images/1div-demo.png)
+![The 1DIV app](./index-images/1div-demo.png)
 
 [App](https://microsoftedge.github.io/Demos/1DIV/dist/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/).
 
@@ -59,7 +59,7 @@ Email client uses the following features:
 
 This simple PWA demo lets you search for made-up movies and store them locally.
 
-![The My Movie List app](./demo-pwas-images/my-movies.png)
+![The My Movie List app](./index-images/my-movies.png)
 
 [App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists --><!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md -->
 
@@ -83,7 +83,7 @@ My Movies uses the following features:
 
 My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
 
-![The My Tracks app](./demo-pwas-images/my-tracks.png)
+![The My Tracks app](./index-images/my-tracks.png)
 
 [App](https://captainbrosset.github.io/mytracks/),<!-- todo: move demo to Demos repo--> [source code and Readme file](https://github.com/captainbrosset/mytracks/).
 
@@ -114,7 +114,7 @@ Application Title Meta Tag uses the following features:
 <!-- ====================================================================== -->
 ## Temperature converter
 
-A simple PWA demo app that converts temperatures.  Used for [Get started with PWAs](./how-to/index.md).<!-- todo: change from [Get started with PWAs] to [Temperature convertor sample] after merge https://github.com/MicrosoftDocs/edge-developer/pull/3476 -->
+A simple PWA demo app that converts temperatures.  See [Temperature convertor sample](./temperature-convertor.md).
 
 [App](https://microsoftedge.github.io/Demos/pwa-getting-started/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
 
@@ -158,7 +158,7 @@ Create lists of tasks locally in your browser, or by installing the app.  Click 
 
 PWAmp is a desktop music player that plays local and remote audio files.
 
-![The PWAmp app, showing playback buttons and a list of songs](./demo-pwas-images/pwamp.png)
+![The PWAmp app, showing playback buttons and a list of songs](./index-images/pwamp.png)
 
 [App](https://microsoftedge.github.io/Demos/pwamp/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/).
 
@@ -180,7 +180,7 @@ PWAmp uses the following features:
 
 wami can apply a sequence of image manipulation steps such as cropping, resizing, rotating, or adding effects on batch of images.
 
-![The wami app](./demo-pwas-images/wami.png)
+![The wami app](./index-images/wami.png)
 
 [App](https://microsoftedge.github.io/Demos/wami/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/wami/).
 
@@ -203,7 +203,7 @@ wami uses the following features:
 
 BPM Techno analyzes audio via the device microphone and displays a real-time beats-per-minute (BPM) counter.
 
-![The BPM Techno app](./demo-pwas-images/bpm-techno.png)
+![The BPM Techno app](./index-images/bpm-techno.png)
 
 [App](https://bpmtech.no/), [source code and Readme file](https://github.com/webmaxru/bpm-counter/).
 
@@ -224,7 +224,7 @@ BPM Techno uses the following features:
 
 Webboard is a drawing application.
 
-![Webboard is a Progressive Web App for drawing and intelligent whiteboarding](./demo-pwas-images/webboard.png)
+![Webboard is a Progressive Web App for drawing and intelligent whiteboarding](./index-images/webboard.png)
 
 [App](https://webboard.app/), [source code and Readme file](https://github.com/pwa-builder/web-whiteboard/).
 
