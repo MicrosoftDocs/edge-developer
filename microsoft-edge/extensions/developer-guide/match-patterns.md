@@ -23,7 +23,7 @@ See the License for the specific language governing permissions and
 limitations under the License.  -->
 # Defining match patterns for an extension to access file URLs
 
-A Microsoft Edge extension can request access to `file` URLs.  To enable this feature, you need to explicitly configure this access.  Access to `file` URLs isn't automatic.  You must visit the **Extensions management** page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/) to opt into `file` access for each Microsoft Edge extension that requests access to `file` URLs.
+A Microsoft Edge extension can request access to `file` URLs.  To enable this feature, you need to explicitly configure this access.  Access to `file` URLs isn't automatic.  You must visit the **Extensions management** page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) to opt into `file` access for each Microsoft Edge extension that requests access to `file` URLs.
 
 For Microsoft Edge extension, host permission and content script pattern matching works as follows.
 

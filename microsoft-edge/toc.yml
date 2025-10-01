@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 142
+          href: ./web-platform/release-notes/142.md
+          displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
+
         - name: Microsoft Edge 141
           href: ./web-platform/release-notes/141.md
           displayName: Microsoft Edge 141 web platform release notes (Oct. 2025)  # page title
@@ -1222,7 +1226,10 @@
 
             - name: Curation and review process for extensions at Microsoft Edge Add-ons
               href: ./extensions/publish/add-ons-curation.md
-# -----------------------------------------------------------------------------
+
+            - name: Use the Microsoft Edge Add-ons badge to promote your add-on
+              href: ./extensions/publish/add-ons-badge.md
+# -------------------------------------
         - name: Update an extension
           items:
             - name: Update a Microsoft Edge extension
@@ -1388,7 +1395,7 @@
               displayName: GettingStartedGuides  # repo dir name
 
             - name: WebView2 sample apps
-              href: ./webview2/code-samples-links.md
+              href: ./webview2/samples/index.md
 # -------------------------------------
             - name: Win32
               items:
@@ -1476,7 +1483,7 @@
                   href: ./webview2/get-started/hololens2.md
                   displayName: HoloLens2_GettingStarted  # repo dir name
 # -------------------------------------
-            - name: Deployment samples  # move up to wv2 > Samples bucket?
+            - name: Deployment samples
               items:
                 - name: WebView2 deployment samples
                   href: ./webview2/samples/deployment-samples.md
