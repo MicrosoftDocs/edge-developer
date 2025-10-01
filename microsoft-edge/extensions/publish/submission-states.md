@@ -12,7 +12,7 @@ ms.date: 11/04/2022
 
 The overview page on the Partner Center displays the state of your extension in the overall submission flow.  This article describes the different states your extension can be in at any time during the submission and certification process.
 
-In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/).
+In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 | # | State | Details |
 |---|---|---|

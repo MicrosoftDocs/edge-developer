@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 142
+          href: ./web-platform/release-notes/142.md
+          displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
+
         - name: Microsoft Edge 141
           href: ./web-platform/release-notes/141.md
           displayName: Microsoft Edge 141 web platform release notes (Oct. 2025)  # page title
@@ -1106,7 +1110,6 @@
 
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
-
 # -------------------------------------
         - name: What's new
           items:
@@ -1115,7 +1118,6 @@
 
             - name: Roadmap for Microsoft Edge extensions
               href: ./extensions/whats-new/roadmap.md
-
 # -------------------------------------
         - name: Get started
           items:
@@ -1130,13 +1132,11 @@
 
             - name: Sideload an extension to install and test it locally
               href: ./extensions/getting-started/extension-sideloading.md
-
 # -------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
             - name: Port a Chrome extension to Microsoft Edge
               href: ./extensions/developer-guide/port-chrome-extension.md
-
 # -------------------------------------
         - name: Develop an extension
           items:
@@ -1188,7 +1188,6 @@
                 - name: Developer policies for extensions at Microsoft Edge Add-ons
                   href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
-
 # -------------------------------------
         - name: Register as an extension developer
           items:
@@ -1208,7 +1207,6 @@
 
             - name: Manage account settings
               href: ./extensions/publish/manage-settings.md
-
 # -------------------------------------
         - name: Publish an extension
           items:
@@ -1227,6 +1225,8 @@
             - name: Curation and review process for extensions at Microsoft Edge Add-ons
               href: ./extensions/publish/add-ons-curation.md
 
+            - name: Use the Microsoft Edge Add-ons badge to promote your add-on
+              href: ./extensions/publish/add-ons-badge.md
 # -------------------------------------
         - name: Update an extension
           items:
@@ -1246,7 +1246,6 @@
 
             - name: Transfer ownership of an extension
               href: ./extensions/update/transfer-ownership.md
-
 # -------------------------------------
         - name: Analytics and user reviews
           items:
@@ -1256,7 +1255,6 @@
             - name: Reply to user reviews of an extension
               href: ./extensions/publish/reply-user-reviews.md
               displayName: Respond to user reviews
-
 # -------------------------------------
         - name: Best practices
           items:
@@ -1264,13 +1262,11 @@
               href: ./extensions/developer-guide/best-practices.md
             - name: Minimize an extension's impact on page load time
               href: ./extensions/developer-guide/minimize-page-load-time-impact.md
-
 # -------------------------------------
         - name: Samples
           items:
             - name: Samples for Microsoft Edge extensions
               href: ./extensions/samples.md
-
 # -------------------------------------
         - name: Contact the Microsoft Edge extensions team
           href: ./extensions/contact.md
@@ -1392,7 +1388,6 @@
 
             - name: Set up your Dev environment for WebView2
               href: ./webview2/how-to/machine-setup.md
-
 # -----------------------------------------------------------------------------
         - name: Platforms and samples
           items:
@@ -1488,7 +1483,6 @@
 
             - name: WebView2 sample apps
               href: ./webview2/code-samples-links.md
-
 # -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
           items:
@@ -1501,7 +1495,6 @@
 
             - name: Basic authentication for WebView2 apps
               href: ./webview2/concepts/basic-authentication.md
-
 # -----------------------------------------------------------------------------
         - name: Customization and UI
           items:
@@ -1531,7 +1524,6 @@
 
             - name: WebView2 browser flags
               href: ./webview2/concepts/webview-features-flags.md
-
 # -----------------------------------------------------------------------------
         - name: Web and native interop
           items:
@@ -1553,7 +1545,6 @@
 
             - name: How WinRT types and members are represented in JavaScript
               href: ./webview2/how-to/winrt-js-conversion.md
-
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
           items:
@@ -1595,7 +1586,6 @@
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: ./webview2/how-to/publish-uwp-app-store.md
               displayName: Partner Center, Microsoft Store
-
 # -----------------------------------------------------------------------------
         - name: Best practices
           items:
@@ -1604,7 +1594,6 @@
 
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
-
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps
           items:
@@ -1627,7 +1616,6 @@
             - name: Self-host by deploying preview channels
               href: ./webview2/how-to/self-hosting.md
               displayName: self-hosting
-
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items:
@@ -1660,7 +1648,6 @@
                 - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
                   href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: remotely debug
-
 # -----------------------------------------------------------------------------
         - name: Process and threading model
           items:
@@ -1672,7 +1659,6 @@
 
             - name: Threading model for WebView2 apps
               href: ./webview2/concepts/threading-model.md
-
 # -----------------------------------------------------------------------------
         - name: User data and history
           items:
@@ -1688,7 +1674,6 @@
 
             - name: Data and privacy in WebView2
               href: ./webview2/concepts/data-privacy.md
-
 # -----------------------------------------------------------------------------
         - name: Release Notes
           items:
@@ -1701,7 +1686,6 @@
 
             - name: Archived Release Notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
-
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
           items:
