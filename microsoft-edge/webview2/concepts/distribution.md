@@ -68,7 +68,7 @@ Cons:
 <!-- ====================================================================== -->
 ## Understanding the options at the Runtime download page
 
-The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
+The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
 ![Options for distributing and updating the WebView2 Runtime](./distribution-images/runtime-distrib-options.png)
 
@@ -158,7 +158,7 @@ See also:
 <!-- ------------------------------ -->
 #### Deploying the Evergreen WebView2 Runtime
 
-Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to help you deploy the Evergreen Runtime.
+Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) section of the **Microsoft Edge WebView2** page, to help you deploy the Evergreen Runtime.
 
 *  For online clients: _WebView2 Runtime Bootstrapper_ is a tiny (approximately 2 MB) installer.  The WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
 
@@ -247,7 +247,7 @@ Alternatively, instead of programmatically downloading the bootstrapper on-deman
 
 If you have an offline deployment scenario, where app deployment has to work entirely offline, use the following workflow.
 
-1. Download the Evergreen Standalone Installer from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to your development machine.  The Evergreen Standalone Installer installs the Evergreen WebView2 Runtime on the client.
+1. Download the Evergreen Standalone Installer from the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) section of the **Microsoft Edge WebView2** page to your development machine.  The Evergreen Standalone Installer installs the Evergreen WebView2 Runtime on the client.
 
 1. Include the Evergreen Standalone Installer in your app installer or updater.
 
@@ -294,6 +294,13 @@ To use the new version of the WebView2 Runtime, you need to either release all r
 
 In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
+Microsoft Edge preview channels (Beta, Dev, and Canary) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a Microsoft Edge preview channel, and update your app or [report issues](https://github.com/MicrosoftEdge/WebViewFeedback) if issues arise.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+
+To help you decide which channel is right, see [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels).  You can [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
+
+See [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).  You can also use WebDriver to automate WebView2 testing, as described in [Automate, and test WebView2 with Microsoft Edge WebDriver](../how-to/webdriver.md).
+
 For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
@@ -318,7 +325,7 @@ The Fixed Version binaries are over 250 MB and will make your app package larger
 
 To use the Fixed Version distribution mode:
 
-1. Download the Fixed Version of the WebView2 Runtime from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section), as a package.
+1. Download the Fixed Version of the WebView2 Runtime from the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) section of the **Microsoft Edge WebView2** page, as a package.
 
    The most-patched version of the latest and second-latest major releases are available for download at this site.  Keep an archived copy of any versions you need.
 
@@ -423,5 +430,5 @@ Example managed app folder structure:
 <!-- ====================================================================== -->
 ## See also
 
-<!-- External: -->
+* [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - a section of the **Microsoft Edge WebView2** page, which links to the present article.
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
