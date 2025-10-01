@@ -1295,10 +1295,10 @@
         - name: Samples
           items:
             - name: Progressive Web App demos
-              href: ./progressive-web-apps/demo-pwas.md
+              href: ./progressive-web-apps/samples/index.md
 
             - name: Temperature converter sample
-              href: ./progressive-web-apps/how-to/sample.md
+              href: ./progressive-web-apps/samples/temperature-converter.md
 # -----------------------------------------------------------------------------
         - name: Integrate a PWA into Windows
           items:

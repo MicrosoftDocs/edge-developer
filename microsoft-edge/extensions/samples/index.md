@@ -23,8 +23,8 @@ sync'd July 30, 2025
 
 | Demo name | Description | Source code & Readme | Docs |
 |---|---|---|---|
-| Picture viewer pop-up webpage | A browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab. | [/picture-viewer-popup-webpage/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-viewer-popup-webpage) | [Sample: Picture viewer pop-up webpage](../getting-started/picture-viewer-popup-webpage.md) |
-| Picture inserter using content script | Uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element. | [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-inserter-content-script) | [Sample: Picture inserter using content script](../getting-started/picture-inserter-content-script.md) |
+| Picture viewer pop-up webpage | A browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab. | [/picture-viewer-popup-webpage/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-viewer-popup-webpage) | [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md) |
+| Picture inserter using content script | Uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element. | [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-inserter-content-script) | [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md) |
 
 
 <!-- ====================================================================== -->
