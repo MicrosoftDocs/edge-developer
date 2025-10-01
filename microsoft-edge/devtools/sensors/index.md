@@ -264,20 +264,16 @@ To emulate CPU pressure on your website:
 MDN:
 * [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation_API)
 * [Device orientation events](https://developer.mozilla.org/docs/Web/API/Device_orientation_events)
-* [DeviceOrientationEvent: alpha property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha)
-* [DeviceOrientationEvent: beta property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta)
-* [DeviceOrientationEvent: gamma property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma)
-
+   * [DeviceOrientationEvent: alpha property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/alpha)
+   * [DeviceOrientationEvent: beta property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/beta)
+   * [DeviceOrientationEvent: gamma property](https://developer.mozilla.org/docs/Web/API/DeviceOrientationEvent/gamma)
 * [Navigator: hardwareConcurrency property](https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency)
-* [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API) at MDN.
+* [Compute Pressure API](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API)
    * [Pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states) in _Compute Pressure API_.
 
 Demos:
 * [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 
 * [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/)
-
-Web.dev:
-* [User Location](https://web.dev/user-location/)
 
 Emscripten:
 * [Pthreads support](https://emscripten.org/docs/porting/pthreads.html)
