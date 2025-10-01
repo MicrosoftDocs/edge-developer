@@ -117,7 +117,7 @@ So far, there is no content available on your web server. Start by creating the 
 
 1. Go to `http://localhost:8080` to view your app:
 
-   ![Running your new PWA on localhost](./index-images/sample-pwa-app.png)
+   <!-- ![Running your new PWA on localhost](./index-images/sample-pwa-app.png) removed -->
 
 The app runs in the browser for now, and can't be installed. To make the app installable, the app needs a web app manifest.
 

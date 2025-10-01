@@ -221,4 +221,4 @@ landingContent:
       - linkListType: sample
         links:
           - text: Samples for Microsoft Edge extensions
-            url: ../samples.md
+            url: ../samples/index.md

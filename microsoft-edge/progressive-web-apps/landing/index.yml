@@ -152,4 +152,4 @@ landingContent:
       - linkListType: sample
         links:
           - text: Progressive Web App demos
-            url: ../demo-pwas.md
+            url: ../samples/index.md

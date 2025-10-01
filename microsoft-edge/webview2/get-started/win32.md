@@ -580,6 +580,6 @@ Congratulations, you've built a Win32 app that hosts and uses the WebView2 contr
 <!-- ====================================================================== -->
 ## See also
 
-* [WebView2 sample apps](../code-samples-links.md)
+* [WebView2 sample apps](../samples/index.md)
 * [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl)
 * [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo.

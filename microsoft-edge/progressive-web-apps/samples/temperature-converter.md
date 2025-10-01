@@ -1,6 +1,6 @@
 ---
-title: Temperature convertor sample
-description: How to obtain, install, and run the Temperature convertor Progressive Web App sample, and how the sample works.
+title: Temperature converter sample
+description: How to obtain, install, and run the Temperature converter Progressive Web App sample, and how the sample works.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/29/2025
 ---
-# Temperature convertor sample
+# Temperature converter sample
 
-The Temperature Convertor sample is a Progressive Web App (PWA).
+The Temperature converter sample is a Progressive Web App (PWA).
 
 This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.
 
@@ -35,14 +35,14 @@ To examine the user interface of the app:
    * **Fahrenheit**
    * **Kelvin**
 
-   In the Address bar, the button **App available. Install temperature convertor app** (![App available icon](./temperature-convertor-images/app-available-icon.png)) is present, for this web app that's served at `github.io` - but we'll click that button later, when running the web app from your localhost server, which is the workflow while developing and testing a PWA.
+   In the Address bar, the button **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) is present, for this web app that's served at `github.io` - but we'll click that button later, when running the web app from your localhost server, which is the workflow while developing and testing a PWA.
 
 1. Go to the [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) source code directory in a new window or tab, and briefly inspect the source code files in the repo at GitHub.
 
 In the sections below, you'll:
 1. Clone the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code.
 1. Run and test the sample on your localhost server, in Microsoft Edge.
-1. Install the sample as an app on Windows, by clicking the **App available. Install temperature convertor app** (![App available icon](./temperature-convertor-images/app-available-icon.png)) button in the Address bar.
+1. Install the sample as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
 1. Study the code.
 
 
@@ -192,7 +192,7 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
    ```
 
-  For details, see [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5) in the PowerShell docs.
+  For details, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) in the PowerShell docs.
 
   Then again enter the command:
 
@@ -221,11 +221,11 @@ Continue with the next section.
 
 Install the sample on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, as follows:
 
-1. In the Address bar, click the **App available. Install temperature convertor app** (![App available icon](./temperature-convertor-images/app-available-icon.png)) button.
+1. In the Address bar, click the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button.
 
    An **Install app** dialog opens:
 
-   ![The installation prompt](./temperature-convertor-images/sample-pwa-app-available-button.png)
+   ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)
 
    The sample's web app manifest enables the browser to install the app as a PWA.  The **App available** button installs the app locally.
 
@@ -233,17 +233,17 @@ Install the sample on Windows<!-- per https://github.com/MicrosoftDocs/edge-deve
 
    The app is installed locally.  The **App installed** dialog opens within the app:
 
-   ![The App installed" dialog in the standalone app window](./temperature-convertor-images/app-installed-dialog.png)
+   ![The App installed" dialog in the standalone app window](./temperature-converter-images/app-installed-dialog.png)
 
 1. In the **App installed** dialog, click the **Allow** button, and then click the **Close** (X) button.
 
    The app is displayed within its own app window:
 
-   ![The sample PWA, installed and running in its own window](./temperature-convertor-images/sample-pwa-installed.png)
+   ![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
    The app's icon is displayed in the Windows taskbar:
 
-   ![The app's icon in the Windows taskbar](./temperature-convertor-images/icon-in-taskbar.png)
+   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
 
 1. Close the standalone **Temperature converter app** window.
 
@@ -256,7 +256,7 @@ Continue with the next section.
 <!-- ====================================================================== -->
 ## Run the sample as a local app
 
-1. Press the **Windows** key, start typing **Temperature convertor app**, and then click **Open**.
+1. Press the **Windows** key, start typing **Temperature converter app**, and then click **Open**.
 
    The installed **Temperature converter app** opens.
 
@@ -293,7 +293,7 @@ To confirm that the service worker (`sw.js`) is running:
 
    Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
 
-    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-convertor-images/devtools-sw-overview.png)
+    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-converter-images/devtools-sw-overview.png)
 
    If the service worker isn't displayed, refresh the page.
 
@@ -306,7 +306,7 @@ To confirm that the service worker (`sw.js`) is running:
    * `/icon512.png` - The app icon image file to represent the app.
    * `/manifest.json` - The app manifest, containing basic information about the app, for the device's operating system to use.
 
-   ![DevTools, showing where to view the cached resources](./temperature-convertor-images/devtools-cache.png)
+   ![DevTools, showing where to view the cached resources](./temperature-converter-images/devtools-cache.png)
 
 The sample's directory includes two files that aren't cached by the service worker: 
 
@@ -315,7 +315,7 @@ The sample's directory includes two files that aren't cached by the service work
     
 1. Try the PWA as an offline app.  In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**:
 
-   ![DevTools, showing where to switch the Throttling value to Offline](./temperature-convertor-images/devtools-offline.png)
+   ![DevTools, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
 
 1. Refresh the app.  The app still appears correctly in the browser, by using cached resources that are served out by the service worker.
 
@@ -356,7 +356,7 @@ To modify the sample, you can change to a different branch of the Demos repo.
 ## How the sample code works
 <!-- specific about this sample, not how PWAs work -->
 
-The remaining sections of this article explain how the temperature convertor PWA sample works.
+The remaining sections of this article explain how the temperature converter PWA sample works.
 
 This PWA sample is built by using web technologies.  This sample, being a PWA, can be installed and run on all devices, from a single codebase.
 
@@ -402,7 +402,7 @@ image file to represent the app.
 
 A 512x512 pixel app icon image named `icon512.png`.
 
-You can use the [sample image](./temperature-convertor-images/icon512.png) for testing purposes.
+You can use the [sample image](./temperature-converter-images/icon512.png) for testing purposes.
 
 
 
@@ -460,7 +460,7 @@ You can also host your website on [GitHub Pages](https://pages.github.com/) whic
 * [Overview of Progressive Web Apps (PWAs)](../index.md)
 * [Use PWAs in Microsoft Edge](../ux.md)
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
-* [Best practices for PWAs](./best-practices.md)
+* [Best practices for PWAs](../how-to/best-practices.md)
 
 Demos repo:
 * [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - sample app hosted at github.io (rather than localhost).

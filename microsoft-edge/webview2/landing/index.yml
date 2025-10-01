@@ -72,7 +72,7 @@ landingContent:
       - linkListType: sample
         links:
           - text: WebView2 sample apps
-            url: ../code-samples-links.md  # delete & redir?
+            url: ../samples/index.md
 
           - text: Win32 sample app
             url: ../samples/webview2apissample.md
