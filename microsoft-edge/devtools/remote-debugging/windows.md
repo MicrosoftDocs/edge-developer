@@ -70,9 +70,9 @@ To set up the host (debuggee) machine, use the following sub-sections, in order.
 
 1. Open the **Settings** app.  In **Find a setting**, enter `Developer settings` and select it.  Toggle on **Developer Mode**.  You can now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You can then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.
 
-1. If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).
+1. If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt).
 
-   If  a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
+   If a **For developers** section isn't displayed in **Settings**, **Device Portal** may already be turned on, so try restarting the Windows 10 or later device instead.
 
    ![The Settings app with Developer Mode and Device Portal configured](./windows-images/remote-debugging-windows-media-host-settings.png)
 

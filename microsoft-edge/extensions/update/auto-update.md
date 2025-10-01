@@ -40,7 +40,7 @@ When you set your extension to automatically update on users' machines, your ext
 *   Add new features or performance enhancements.
 *   Improve the user interface.
 
-Your extensions are hosted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/), and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.
+Your extensions are hosted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.
 
 (Previously, non-store-based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.)
 

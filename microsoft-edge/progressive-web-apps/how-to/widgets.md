@@ -27,7 +27,7 @@ An existing PWA cannot simply be placed into the widget dashboard as-is, like yo
 See also:
 * [Build a PWA for the sidebar in Microsoft Edge](./sidebar.md)
 
-To build a PWA-driven widget and deliver it via the Microsoft Store, no C++/C# code is required.  Once you've produced the widget, and can successfully install and run the widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft Store without requiring any additional code.  The PWA backing the widget must be installable from a public endpoint, because PWABuilder doesn't support packing apps from `localhost`.
+To build a PWA-driven widget and deliver it via the [Microsoft Store](https://apps.microsoft.com), no C++/C# code is required.  Once you've produced the widget, and can successfully install and run the widget from a public endpoint, you can package the app by using [PWABuilder.com](https://www.pwabuilder.com) and ship the app to the Microsoft Store without requiring any additional code.  The PWA backing the widget must be installable from a public endpoint, because PWABuilder doesn't support packing apps from `localhost`.
 <!-- The PWA (not the widget) is what is installable and packaged, because it's a standalone entity (unlike a widget). -->
 
 See also:
