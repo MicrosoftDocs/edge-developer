@@ -50,7 +50,7 @@ Enterprises can continue to use the blocking behavior of the Web Request API for
 <!-- ====================================================================== -->
 ## Background service workers
 
-To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->.
+Service workers are available for testing in the Canary preview channel of Microsoft Edge.  To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->.  The Microsoft Edge extensions team is evaluating and investigating the impact that this change brings to both developers and users.
 
 
 <!-- ====================================================================== -->
