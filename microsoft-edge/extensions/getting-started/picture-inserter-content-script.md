@@ -517,8 +517,8 @@ To develop your own Microsoft Edge extension, you can copy and modify the sample
 <!-- all links in article -->
 
 * [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md)
-* [Sideload an extension to install and test it locally](extension-sideloading.md)
-* [Samples for Microsoft Edge extensions](../samples.md)
+* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+* [Samples for Microsoft Edge extensions](../samples/index.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

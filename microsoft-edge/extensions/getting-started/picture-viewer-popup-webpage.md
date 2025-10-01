@@ -330,7 +330,7 @@ After running and testing this extension sample, you can continue on to [Sample:
 
 * [Sideload an extension to install and test it locally](./extension-sideloading.md)
 * [Sample: Picture inserter using content script](./picture-inserter-content-script.md)
-* [Samples for Microsoft Edge extensions](../samples.md)
+* [Samples for Microsoft Edge extensions](../samples/index.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

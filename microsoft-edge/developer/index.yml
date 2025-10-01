@@ -190,7 +190,7 @@ landingContent:
       - linkListType: download
         links:
           - text: WebView2 sample apps
-            url: ../webview2/code-samples-links.md
+            url: ../webview2/samples/index.md
       - linkListType: whats-new
         links:
           - text: Release Notes for the WebView2 SDK
