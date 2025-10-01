@@ -208,7 +208,7 @@ async function main() {
 
   const draftAlreadyExists = await releaseNotesDraftAlreadyExists(nextBetaVersion, branchName);
   if (draftAlreadyExists) {
-    console.error(`A draft release notes for the next beta version ${nextBetaVersion} already exist on the ${branchName} branch.`);
+    console.error(`Draft release notes for the next beta version ${nextBetaVersion} already exist on the ${branchName} branch.`);
     process.exit(0);
   }
 
