@@ -244,8 +244,8 @@ https://developer.chrome.com/docs/devtools/settings/ignore-list
 When the debugger steps into code that you don't recognize, you might want to add that code to the **Ignore List**, to avoid stepping into that code. See [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md).
 
 See also:
-* [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-* [Sample: Picture inserter using content script](../../extensions/getting-started/picture-inserter-content-script.md)
+* [Content scripts](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_scripts)
+* [Sample: Picture inserter using content script](../../extensions/samples/picture-inserter-content-script.md)
 
 
 <!-- ------------------------------ -->

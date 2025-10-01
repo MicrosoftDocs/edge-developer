@@ -40,9 +40,13 @@ To examine the user interface of the app:
 1. Go to the [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) source code directory in a new window or tab, and briefly inspect the source code files in the repo at GitHub.
 
 In the sections below, you'll:
+
 1. Clone the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code.
+
 1. Run and test the sample on your localhost server, in Microsoft Edge.
+
 1. Install the sample as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
+
 1. Study the code.
 
 
@@ -293,7 +297,7 @@ To confirm that the service worker (`sw.js`) is running:
 
    Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
 
-    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-converter-images/devtools-sw-overview.png)
+    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-converter-images/devtools-service-workers.png)
 
    If the service worker isn't displayed, refresh the page.
 
@@ -306,12 +310,13 @@ To confirm that the service worker (`sw.js`) is running:
    * `/icon512.png` - The app icon image file to represent the app.
    * `/manifest.json` - The app manifest, containing basic information about the app, for the device's operating system to use.
 
-   ![DevTools, showing where to view the cached resources](./temperature-converter-images/devtools-cache.png)
+   ![DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage.png)
 
-The sample's directory includes two files that aren't cached by the service worker: 
+   The service worker adds three files to the cache, explicitly (`.html`, `.css`, and `.js`).  The icon (`.png`) and manifest (`.json`) are cached automatically by the browser.
 
-   `README.md` - brief information about the sample.
-   `sw.js` - the service worker that manages caching of needed files.
+   The sample's directory includes two files that aren't cached by the service worker: 
+   * `README.md` - brief information about the sample.
+   * `sw.js` - the service worker that manages caching of needed files.
     
 1. Try the PWA as an offline app.  In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**:
 
@@ -378,6 +383,8 @@ These files are explained below.
 
 Brief information about the app: a link to open the app webpage, and a link to the present article.
 
+<!-- todo: code listing -->
+
 
 <!-- ====================================================================== -->
 ## `converter.css`
@@ -385,6 +392,8 @@ Brief information about the app: a link to open the app webpage, and a link to t
 Styling for the webpage of the app.
 
 * `converter.css` uses CSS to organize the HTML content in a layout, and to provide styles for elements.
+
+<!-- todo: code listing -->
 
 
 <!-- ====================================================================== -->
@@ -394,16 +403,15 @@ App logic.
 
 * `converter.js` uses JavaScript to add user interactions to the user interface.
 
+<!-- todo: code listing -->
+
 
 <!-- ====================================================================== -->
 ## `icon512.png`
 
-image file to represent the app.
+A 512x512 pixel app icon image named `icon512.png`.  This image file represents the app, such as in the Windows taskbar and Windows Start Menu:
 
-A 512x512 pixel app icon image named `icon512.png`.
-
-You can use the [sample image](./temperature-converter-images/icon512.png) for testing purposes.
-
+![Icon file](./temperature-converter-images/icon-in-taskbar.png)
 
 
 <!-- ====================================================================== -->
@@ -413,6 +421,8 @@ webpage layout of the app.
 
 `index.html` uses HTML to describe the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
 
+<!-- todo: code listing -->
+
 
 <!-- ====================================================================== -->
 ## `manifest.json`
@@ -421,11 +431,15 @@ basic information about the app, for the device's operating system to use.
 
 `manifest.json` uses JSON to describe the app to the host operating system.
 
+<!-- todo: code listing -->
+
 
 <!-- ====================================================================== -->
 ## `sw.js`
 
 A service worker.
+
+<!-- todo: code listing -->
 
 
 <!-- ====================================================================== -->
@@ -439,7 +453,7 @@ After that, to update your PWA, you deploy the new version to your web server ag
 
 
 <!-- ------------------------------ -->
-#### Hosting a PWA on a web server
+#### Hosting a PWA on a web server for users
 <!-- informational beyond the sample, out of scope? -->
 
 Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the PWA APIs without HTTPS.

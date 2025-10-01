@@ -155,7 +155,7 @@ To add an app manifest to your app:
     }
     ```
 
-1.  Add a 512x512 pixel app icon image named `icon512.png` to your project. You can use the [sample image](./index-images/icon512.png) for testing purposes.
+1.  Add a 512x512 pixel app icon image named `icon512.png` to your project. <!-- You can use the [sample image](./index-images/icon512.png) for testing purposes. -->
 
 1.  In Visual Studio Code, open `index.html`, and add the following code inside the `<head>` tag.
 
