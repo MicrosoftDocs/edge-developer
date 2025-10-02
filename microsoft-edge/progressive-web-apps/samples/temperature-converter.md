@@ -49,7 +49,17 @@ To examine the user interface of the app:
 
    In the Address bar, the button **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) is present, for this web app that's served at `github.io` - but we'll click that button later, when running the web app from your localhost server, which is the workflow while developing and testing a PWA.
 
-1. Go to the [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) source code directory in a new window or tab, and briefly inspect the source code files in the repo at GitHub.
+1. Go to the [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started) source code directory in a new window or tab, and briefly inspect the source code files in the repo at GitHub:
+
+   * `README.md` - Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.
+   * `converter.css` - Cascading Style Sheets (CSS) file, defining layout styling of each UI control in the main page of the app.
+   * `converter.js` - App logic, as JavaScript code.
+   * `icon512.png` - The icon file to represent this app within the browser and on the local device.
+   * `index.html` - The initial webpage defining the UI controls.  This app only has a single webpage.
+   * `manifest.json` - Manifest file that makes the Progressive Web App (PWA) installable on the device, unlike a regular web app.
+   * `sw.js` - Service worker that caches files on the local device and serves out the cached files when there's no internet connection.
+
+   These files are explained in [Get started with PWAs](../how-to/index.md).
 
 In the sections below, you'll:
 
@@ -380,10 +390,10 @@ Then you can:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- all links in article -->
-<!-- todo: trim section to focus on this sample -->
+<!-- todo: all links in article -->
 
 <!-- Local: -->
+* [Get started with PWAs](../how-to/index.md).
 * [Overview of Progressive Web Apps (PWAs)](../index.md)
 * [Use PWAs in Microsoft Edge](../ux.md)
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
