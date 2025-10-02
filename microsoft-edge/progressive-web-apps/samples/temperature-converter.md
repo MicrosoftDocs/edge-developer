@@ -94,46 +94,39 @@ Continue with the next section.
 
 1. Open Visual Studio Code.
 
-1. In the **View** menu, select **Terminal**.
+1. In the **View** menu, select **Terminal**. <!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
 
 1. In a command prompt, enter `git -v` to check whether git is installed, and which version is installed.
 
-   If git is installed, a version number is displayed, such as `git version 2.51.0.windows.1`.
+   If git is installed, a version number is displayed, such as `git version 2.51.0.windows.2`.
 
-   <!-- option: clone git repo: If you already have Git installed, you can get the latest development version, by entering: -->
+1. If not done yet, download and install the latest version of git, from [Downloads](https://git-scm.com/downloads) at git-scm.com.
 
-   <!-- git clone https://github.com/git/git -->
-
-1. If not done yet, [download git](https://git-scm.com/downloads) and install the latest version.
-
-1. During installation, change the default editor from vim to Visual Studio Code:
+1. During installation, you can accept the defaults, except it's recommended that you change the default editor from vim to Visual Studio Code:
 
    ![git installer with Visual Studio Code selected as default editor](./temperature-converter-images/git-default-editor.png)
-
-   ![git can't create dir](./temperature-converter-images/git-cant-create-dir.png)
 
 
 <!-- ====================================================================== -->
 ## Install or update Node.js
-<!-- todo: which shell: change article from PowerShell to Terminal within VS Code -->
 
 Node.js includes a web server that you'll use to run and test the sample locally.
 
 Install or update Node.js as follows:
 
-1. Press the **Windows** key, type **PowerShell**, and then for Windows PowerShell, click **Run as Administrator**.
+1. Open Visual Studio Code.
 
-   Windows PowerShell command prompt opens.
+1. In the **View** menu, select **Terminal**.
 
 1. Enter the command: `node -v`
 
-   If Node.js has been installed, a version number is output, such as v22.14.0.
+   If Node.js has been installed, a version number is output, such as v22.19.0.
 
 1. Go to [Node.js](https://nodejs.org).
 
    Note the version number in the lower left **Latest LTS** button, such as v22.20.0.
 
-1. Click the **Get Node.js** button.
+1. If you want to update Node.js, click the **Get Node.js** button.  Otherwise, skip to the next section, below.
 
    You end up at a page such as [Download Node.js](https://nodejs.org/download).
 
@@ -151,7 +144,7 @@ Install or update Node.js as follows:
 
    The **Node.js Setup Wizard** window closes.
 
-1. In PowerShell, enter the command: `node -v`
+1. In VS Code's terminal, enter the command: `node -v`
 
    The latest version number is displayed, such as v22.20.0.
 
@@ -164,11 +157,14 @@ Continue with the next section.
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
 
-Clone the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code.
+Next, you'll clone (or update) the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code in the `/Demos/pwa-getting-started/` directory.
 
-Clone the **MicrosoftEdge / Demos** repo to your local drive, as follows:
+Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
 
-1. See whether the repo is already cloned to your local drive: 
+
+If the Demos repo has already been cloned to your drive (for use by your current local machine account), you'll use VS Code > Source Control UI) fetch/pull commits, in the "main" branch?
+
+1. See whether the repo is already cloned to your local drive, as follows:
 
 1. Press **Windows+E**.
 
@@ -180,19 +176,13 @@ Clone the **MicrosoftEdge / Demos** repo to your local drive, as follows:
 
 1. See whether the `\Demos\` repo is listed.
 
-1. In PowerShell that's opened using **Run as Administrator**, enter `git`.
-
-   If git has been installed, usage instructions are displayed.
-
-1. If git is not installed, go to [Download git](https://git-scm.com/downloads) and install it.
-
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
-1. In PowerShell, change to the directory where you want to clone the Demos repo:
+1. In VS Code's terminal, change to the directory where you want to clone the Demos repo:
 
    ```console
    cd ~/GitHub
@@ -230,7 +220,7 @@ While developing or testing a PWA, you use a local web server.  `http-server` is
 
 Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 
-1. In PowerShell that's opened using **Run as Administrator**, change to the directory where you want to clone the Demos repo:
+1. In VS Code's terminal, change to the directory where you want to clone the Demos repo:
 
    ```console
    cd Demos
@@ -239,21 +229,7 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
 
    You're now in a directory such as `C:\users\localAccount\GitHub\Demos\pwa-getting-started`.
 
-1. In PowerShell, enter the following command:
-
-   ```console
-   npx http-server
-   ```
-
-1. If you get the message "File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled on this system", you can run a command such as:
-
-   ```console
-   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
-   ```
-
-  For details, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) in the PowerShell docs.
-
-  Then again enter the command:
+1. In VS Code's terminal, enter the following command:
 
    ```console
    npx http-server
