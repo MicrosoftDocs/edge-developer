@@ -26,6 +26,9 @@ A Progressive Web App (PWA) is a web app that you build by using web technologie
 
 This guide is about writing code for PWAs.  To learn about installing and running an existing PWA, see [Installing a PWA](../ux.md#installing-a-pwa)<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 --> in _Use PWAs in Microsoft Edge_.
 
+See also:
+* [Temperature converter sample](../samples/temperature-converter.md) - steps to use the sample that's explained below.
+
 
 <!-- ====================================================================== -->
 ## The architecture of a PWA

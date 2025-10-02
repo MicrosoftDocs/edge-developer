@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 07/18/2025
+ms.date: 10/01/2025
 ---
 # Progressive Web App demos
 <!-- sync:
@@ -16,6 +16,8 @@ sync'd July 30, 2025
 -->
 
 These demo PWAs show how to use features and APIs that can progressively enhance your apps when installed on devices.
+
+The first sample to use when getting started is the [Temperature converter sample](./temperature-converter.md).
 
 Most of these demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 <!-- section order:
