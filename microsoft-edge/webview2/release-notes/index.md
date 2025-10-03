@@ -6,13 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 ---
 # Release Notes for the WebView2 SDK
-<!-- todo: Monday dates:
-ms.date: 10/06/2025
-ms.date: 10/13/2025
--->
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
@@ -34,87 +30,51 @@ Apr 2025
 
 <!-- Oct 2025 Release SDK -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## 1.0.3537.50
 
-Release Date: Monthname nn, 2025
-<!-- todo:
-Monday, October 6, 2025?
-Monday, October 13, 2025?
--->
+Release Date: October 7, 2025
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-<!-- candidate:                                                                                        141.0.3537.50 -->
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed an issue where a "local access network alert" popup was sometimes hidden.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed a BinSkim error for `WebView2Loader.dll`.
 
 <!-- end of Oct 2025 Release SDK -->
 
 
 <!-- Oct 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.3590-prerelease
 
-Release Date: Monthname nn, 2025
-<!-- todo:
-Monday, October 6, 2025?
-Monday, October 13, 2025?
--->
+Release Date: October 7, 2025
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 142.0.3590.0 or higher.
+                                                                                                                                            
 
 <!-- ------------------------------ -->
 #### General changes
