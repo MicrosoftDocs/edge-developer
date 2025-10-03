@@ -521,7 +521,7 @@ Congratulations, you've built a WebView2 WinUI 3 (Windows App SDK) app!
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../samples/index.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 
 developer.microsoft.com:

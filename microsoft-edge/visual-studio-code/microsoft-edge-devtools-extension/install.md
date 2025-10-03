@@ -239,5 +239,5 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
-* [Sample code for DevTools](../../devtools/sample-code/sample-code.md)
+* [Sample code for DevTools](../../devtools/samples/index.md)
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.

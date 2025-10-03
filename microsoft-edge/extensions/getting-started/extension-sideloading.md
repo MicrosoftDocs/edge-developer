@@ -18,7 +18,7 @@ To test an extension quickly and safely, sideload the extension in your own copy
 
 This article assumes that your local drive contains an extension that you want to load, such as a sample from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.
 
-To obtain the samples, see [Clone the MicrosoftEdge-Extensions repo](./picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
+To obtain the samples, see [Clone the MicrosoftEdge-Extensions repo](../samples/picture-viewer-popup-webpage.md#clone-the-microsoftedge-extensions-repo) in _Sample: Picture viewer pop-up webpage_.
 
 
 <!-- ====================================================================== -->
@@ -134,5 +134,5 @@ If running an extension causes an error, in some cases, an **Error** link is add
 ## See also
 <!-- all links in article -->
 
-* [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md)
-* [Sample: Picture inserter using content script](./picture-inserter-content-script.md)
+* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
+* [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md)
