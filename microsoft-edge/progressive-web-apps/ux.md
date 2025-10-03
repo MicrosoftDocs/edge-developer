@@ -41,7 +41,9 @@ To find the list of installed Progressive Web Apps (PWAs) in Microsoft Edge, go 
 You can also manage PWAs in the **Apps & features** system setting, like other Windows apps.
 
 1.  In Windows, select **Start** > **Settings**.
+
 1.  Type "apps" in the **Find a setting** search field, and then select **Add or remove programs**.
+
 1.  Find the PWA you want to manage in the list of apps and select it to find more information or remove it.
 
 ![The list of installed apps on Windows also display PWAs](./ux-images/pwa-in-apps-and-features-settings.png)
@@ -50,32 +52,64 @@ You can also manage PWAs in the **Apps & features** system setting, like other W
 <!-- ====================================================================== -->
 ## Windows integration
 
-Progressive Web Apps (PWAs) are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start menu, or when switching between apps with **Alt+Tab**.
+A Progressive Web App (PWA) is displayed like a native app on Windows.  When running, the PWA appears:
 
-PWAs and native apps can reside side-by-side in the Taskbar (PWAs are indicated here by a red box):
+* In the Taskbar (where it can be pinned).
+* In the Start menu.
+* When switching between apps with **Alt+Tab**.
+
+
+<!-- ====================================================================== -->
+## Windows Taskbar
+
+PWAs and native apps can reside side-by-side in the Taskbar:
 
 ![PWAs and native apps side-by-side in the Taskbar](./ux-images/pwas-in-the-taskbar.png)
 
-PWAs and native apps are displayed when switching between windows with **Alt+Tab** (PWAs are indicated here by a red box):
+PWAs are indicated in this screenshot by red boxes.
+
+
+<!-- ====================================================================== -->
+## Alt+Tab
+
+PWAs and native apps are displayed when switching between windows with **Alt+Tab**:
 
 ![PWAs and native apps are displayed when switching between windows with Alt+Tab](./ux-images/pwas-in-alttab.png)
 
-PWAs can also expose common tasks to users as shortcuts that appear in the app's right-click menu:
+PWAs are indicated in this screenshot by red boxes.
+
+
+<!-- ====================================================================== -->
+## Shortcut on a right-click menu
+
+PWAs can also expose common tasks to users as shortcuts that appear in the app's right-click menu (context menu):
 
 ![Common tasks are listed in the Taskbar's right-click menu](./ux-images/pwa-shortcuts-in-taskbar.png)
 
-Learn more about [defining shortcuts](how-to/shortcuts.md).
+See:
+* [Define app shortcuts (long-press or right-click menus)](how-to/shortcuts.md)
 
-PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges](how-to/notifications-badges.md).
 
-#### Starting PWAs when the user signs in
+<!-- ====================================================================== -->
+## Notifications
 
-PWAs on Windows can launch automatically when the user signs in, so they can immediately engage with the app.
+A PWA can display notifications in the operating system's own notification service.  This helps users re-engage with your app.
+
+See:
+* [Re-engage users with badges and notifications](how-to/notifications-badges.md)
+
+
+<!-- ====================================================================== -->
+## Starting a PWA automatically during startup
+
+A PWA on Windows can launch automatically when the user signs in, so they can immediately engage with the app.
 
 To set an already installed PWA to automatically start when you sign in to Windows:
 
 1.  Open Microsoft Edge.
+
 1.  Go to `edge://apps`.  The **Apps** page lists the installed apps.
+
 1.  On the app you want to configure, click the **More options** (![The More options button](./ux-images/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
 
 ![Use the More Options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge](./ux-images/turn-on-run-on-os-login-flag.png)
@@ -98,7 +132,17 @@ When a user selects the ellipses (**...**) button in the title bar of a Progress
 
 The **App info** menu contains useful information about the app, such as:
 
-*  The app icon, name, and publisher.
-*  The various app permissions that have been granted.
-*  Privacy information such as the number of cookies used.
-*  Lists of extensions and tools that can be used in the app.
+* The app icon, name, and publisher.
+
+* The various app permissions that have been granted.
+
+* Privacy information such as the number of cookies used.
+
+* Lists of extensions and tools that can be used in the app.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article -->
+
+* [Temperature converter sample](./samples/temperature-converter.md)
