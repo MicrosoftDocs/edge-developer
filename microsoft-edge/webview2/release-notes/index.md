@@ -54,7 +54,7 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert (pop-up).
+* Fixed local network access triggering a permission alert pop-up window.
 
 
 <!-- ---------- -->
