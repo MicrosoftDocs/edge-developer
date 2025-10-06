@@ -23,7 +23,6 @@ ms.date: 03/31/2025
    limitations under the License.  -->
 # Performance tool: Analyze your website's performance
 <!-- https://developer.chrome.com/docs/devtools/performance/overview -->
-<!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 
 Use the **Performance** tool to analyze your website's performance.  There are two main views:
 
@@ -32,15 +31,11 @@ Use the **Performance** tool to analyze your website's performance.  There are t
 
 **Detailed contents:**
 * [Overview](#overview)
-
    * [Open the Performance tool](#open-the-performance-tool)
       * [Using the Command Menu](#using-the-command-menu)
-
    * [Local metrics for page interactions](#local-metrics-for-page-interactions)
    * [Recorded profile timeline](#recorded-profile-timeline)
    * [Switching to viewing local metrics or another profile](#switching-to-viewing-local-metrics-or-another-profile)
-
-
 * [Monitor Core Web Vitals metrics](#monitor-core-web-vitals-metrics)
    * [Terminology](#terminology)
    * [Use the demo page](#use-the-demo-page)
@@ -50,7 +45,7 @@ Use the **Performance** tool to analyze your website's performance.  There are t
    * [Record a performance profile](#record-a-performance-profile)
    * [Change capture settings](#change-capture-settings)
    * [Analyze a performance report](#analyze-a-performance-report)
-* [Improve performance with these tools](#improve-performance-with-these-tools) -->
+* [Improve performance with these tools](#improve-performance-with-these-tools)
 
 For a walkthrough of using the **Performance** tool to improve your website's performance, see [Analyze runtime performance (tutorial)](./index.md).
 
@@ -58,7 +53,6 @@ For a walkthrough of using the **Performance** tool to improve your website's pe
 <!-- ====================================================================== -->
 ## Overview
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#overview -->
-<!-- https://microsoftedge.github.io/Demos/exploring-the-universe/ -->
 <!-- covers basic nav between the two states, and what to use them for, not how to use either view -->
 
 The **Performance** tool displays local metrics for page interactions, and lets you record CPU performance profiles of your web applications.  Analyze profiles to find potential performance bottlenecks and ways that you can optimize resource use.
@@ -159,14 +153,15 @@ Use the **Performance** tool to view Core Web Vitals metrics in the initial, **L
 
 <!-- ---------------------------------- -->
 #### Terminology
+<!-- not in upstream -->
 
 | Term | Description | Docs |
 |---|---|---|
-| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals) |
-| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals) in _Web Vitals_ |
-| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://web.dev/articles/lcp), [Optimize LCP](https://web.dev/articles/optimize-lcp) |
-| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://web.dev/articles/cls), [Optimize CLS](https://web.dev/articles/optimize-cls) |
-| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://web.dev/articles/inp), [Optimize INP](https://web.dev/articles/optimize-inp) |
+| Web Vitals | A large set of metrics giving unified guidance to delivering a great user experience on the web. | [Web Vitals](https://web.dev/articles/vitals)<!-- web.dev link ok, cwv not doc'd at mdn --> at web.dev. |
+| Core Web Vitals | The subset of Web Vitals that apply to all web pages, and should be measured by all site owners.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome. | [Core Web Vitals](https://web.dev/articles/vitals#core-web-vitals)<!-- web.dev link ok, cwv not doc'd at mdn --> in _Web Vitals_ at web.dev. |
+| Largest Contentful Paint (LCP) | Measures _loading_ performance. To provide a good user experience, LCP should occur within 2.5 seconds of when the page first starts loading.  The render time of the largest image, text block, or video visible in the viewport, relative to when the user first navigated to the page. | [Largest Contentful Paint (LCP)](https://developer.mozilla.org/docs/Glossary/Largest_contentful_paint) in Glossary at MDN.  [LargestContentfulPaint](https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint) at MDN. |
+| Cumulative Layout Shift (CLS) | Measures _visual stability_. To provide a good user experience, pages should maintain a CLS of 0.1. or less.  The largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifecycle of a page. | [Cumulative Layout Shift (CLS)](https://developer.mozilla.org/docs/Glossary/CLS) in Glossary at MDN.  [LayoutShift](https://developer.mozilla.org/docs/Web/API/LayoutShift) at MDN. |
+| Interaction to Next Paint (INP) | Measures _interactivity_. To provide a good user experience, pages should have a INP of 200 milliseconds or less.  The page's overall responsiveness to user interactions, based on the latency of all click, tap, and keyboard interactions that occur throughout the lifespan of a user's visit to a page. | [Interaction to Next Paint (INP)](https://developer.mozilla.org/docs/Glossary/Interaction_to_next_paint) in Glossary at MDN.  [PerformanceEventTiming](https://developer.mozilla.org/docs/Web/API/PerformanceEventTiming) at MDN. |
 | local metrics, local data | The LCP, CLS, and INP metrics.  They are captured locally on the inspected webpage, and are updated as you interact with the page. | |
 
 
@@ -177,7 +172,7 @@ To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, a
 
 1. Open a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
 
-   The [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the **Performance** tool to identify and fix performance issues.
+   The "Exploring the universe" demo page is designed to load and handle interactions slowly on purpose, in order to illustrate how the LCP, CLS, and INP metrics can be used in the **Performance** tool to identify and fix performance issues.
 
 1. Right-click the webpage and then select **Inspect**.
 
@@ -364,6 +359,12 @@ Discover other tools that can help you improve your website's performance:
 | **Rendering** tool | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md) |
 | **Issues** tool | [Find and fix problems using the Issues tool](../issues/index.md) |
 | **Performance** tool | [View layers information](../performance/reference.md#view-layers-information) in _Performance features reference_ |
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo page
 
 
 <!-- ====================================================================== -->

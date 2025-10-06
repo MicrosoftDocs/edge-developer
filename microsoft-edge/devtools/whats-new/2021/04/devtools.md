@@ -98,7 +98,7 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or servic
 For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
 See also:
-* [Updating the service worker](https://web.dev/service-worker-lifecycle#updates) in _The service worker lifecycle_ at web.dev.
+* [Updating your service worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers#updating_your_service_worker) in _Using Service Workers_ at MDN.
 * [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
 
 
@@ -350,15 +350,12 @@ See also:
 Permissions Policy is a web platform API that gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds.
 To display the details on why a feature is blocked:
 
-1. Go to [OOPIF Permissions Policy](http://permission-policy-demo.glitch.me).
+1. Go to a web page that embeds cross-origin `iframe` elements.
 1. Open the **Application** tool.
-1. Click a frame.
-1. Go to the **Permissions Policy** section.
-1. Locate the **Disabled Features** property.
+1. Under **Frames**, select the cross-origin `iframe`.
+1. To review the list of features that are disabled for this `iframe`, scroll to the **Permissions Policy** > **Disabled Features** section.
 1. Click **Show details**.
 1. Click the icon next to each policy to go to the `iframe` or network request that blocked the feature.
-
-![Blocked features in the Frame details view](./devtools-images/application-frames-top-permission-policy-disabled-features-show-details-highlight.png)
 
 See also:
 * [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
