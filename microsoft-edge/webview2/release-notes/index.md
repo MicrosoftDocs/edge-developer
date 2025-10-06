@@ -6,9 +6,8 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/08/2025
+ms.date: 10/06/2025
 ---
-
 # Release Notes for the WebView2 SDK
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
@@ -17,16 +16,53 @@ These Release Notes provide information about new features and bug fixes that ar
 the templates to copy for incoming sections are in ./includes/templates.md
 
 this webpage covers the most recent 6 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
+Oct 2025
 Sep 2025
 Aug 2025
 Jul 2025
 Jun 2025
 May 2025
-Apr 2025
 
 moved to archive:
-Mar 2025
+Apr 2025
 -->
+
+
+<!-- Oct 2025 Release SDK -->
+<!-- ====================================================================== -->
+## 1.0.3537.50
+
+Release Date: October 6, 2025
+
+[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed local network access triggering a permission alert pop-up window.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed a BinSkim error for `WebView2Loader.dll`.
+
+<!-- end of Oct 2025 Release SDK -->
 
 
 <!-- Sep 2025 Release SDK -->
@@ -1071,116 +1107,6 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
 <!-- end of May 2025 Prerelease SDK -->
-
-
-<!-- Apr 2025 Release SDK -->
-<!-- ====================================================================== -->
-## 1.0.3179.45
-
-Release Date: April 07, 2025
-
-[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-No additional APIs have been promoted to Stable and added in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-
-<!-- end of Apr 2025 Release SDK -->
-
-
-<!-- Apr 2025 Prerelease SDK -->
-<!-- ====================================================================== -->
-## 1.0.3230-prerelease
-
-Release Date: April 07, 2025
-
-[NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 136.0.3230.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions
-
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### Track navigation history for nested iframes (FrameCreatedEvent API)
-
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
-
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
-
-* Only the main page and first-level iframes (the default behavior).
-* A partial WebView2 frames tree with specific iframes of interest.
-* The full WebView2 frames tree.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3230-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true#framecreated)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
-   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
-   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
-
-* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- win32 only --><!-- vs. ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler -->
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed an issue in WPF where the \<datalist\> dropdown closed when the mouse moved outside the WebView2 control bounds.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed bug where users unable to type in input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-* Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
-
-<!-- end of Apr 2025 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->

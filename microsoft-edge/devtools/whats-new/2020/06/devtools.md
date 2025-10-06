@@ -172,14 +172,14 @@ See also:
 <!-- ---------- -->
 ###### First Meaningful Paint deprecation
 
-First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** tool.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
-
-<!--todo: add Largest Contentful Paint when section available  -->
-<!--todo: add First Meaningful Paint link and note when available  -->
+First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** tool.  **Largest Contentful Paint** is the recommended replacement for FMP.
 
 Chromium issue [#1096008](https://crbug.com/1096008)
 
 See also:
+* [First Meaningful Paint (FMP)](https://developer.mozilla.org/docs/Glossary/First_meaningful_paint) in Glossary at MDN.
+* [Largest Contentful Paint (LCP)](https://developer.mozilla.org/docs/Glossary/Largest_contentful_paint) in Glossary at MDN.
+* [LargestContentfulPaint](https://developer.mozilla.org/docs/Web/API/LargestContentfulPaint) at MDN.
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
@@ -190,9 +190,9 @@ DevTools now has better support for some of the latest JavaScript language featu
 
 * [Optional chaining](https://v8.dev/features/optional-chaining) syntax autocompletion.  Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.
 
-*  Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields).  Private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
+* Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields).  Private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
 
-*  Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing).  DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
+* Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing).  DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
 
 Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.com/1083214), [#1083797](https://crbug.com/1083797)
 
@@ -210,8 +210,8 @@ In the **Application** tool, **App shortcuts** help users quickly start common o
 
 In the **Application** tool, the **Manifest** pane now shows warnings for the following conditions:
 
-*  When the app shortcut icons are smaller than 96x96 pixels.
-*  When the app shortcut icons and manifest icons aren't square (since the icons are ignored).
+* When the app shortcut icons are smaller than 96x96 pixels.
+* When the app shortcut icons and manifest icons aren't square (since the icons are ignored).
 
 ![App shortcut warnings](./devtools-images/app-shortcut-warnings.png)
 
