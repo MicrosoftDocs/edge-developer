@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -32,7 +32,7 @@ Apr 2025
 <!-- ====================================================================== -->
 ## 1.0.3537.50
 
-Release Date: October 6, 2025
+Release Date: October 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
