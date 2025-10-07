@@ -85,16 +85,15 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 <!-- ---------- -->
 ###### Sensitivity label support
 
-A new Sensitivity Info API in WebView2 enables applications to access sensitivity label information communicated by webpages through the Page Interaction Restriction Manager.  This feature helps host applications detect and respond to sensitive content.  Key capabilities:
+A new Sensitivity Info API in WebView2 enables applications to access sensitivity label information communicated by webpages through the [Page Interaction Restriction Manager](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PageInteractionRestrictionManager/explainer.md).  This feature helps host applications detect and respond to sensitive content.
 
-* **Configure Page Interaction Restriction Manager Availability** - Configure a list of URL filters for the Page Interaction Restriction Manager.  Once configured, the Page Interaction Restriction Manager becomes available on pages in the allow list.  These pages can send sensitivity labels to the platform via the API.
+Key capabilities:
 
-* **Sensitivity Info Exposure** - `CoreWebView2` now exposes a `SensitivityInfo` property and a `SensitivityInfoChanged` event, allowing applications to listen for updates to sensitivity label information.
+* **Configure Page Interaction Restriction Manager availability** - Configure a list of URL filters for the Page Interaction Restriction Manager.  After the list has been configured, the Page Interaction Restriction Manager becomes available on pages in the allow list.  These pages can send sensitivity labels to the platform via the API.
 
-Sensitivity label support is initially available on Win32 only.  Support for .NET and WinRT is planned for the subsequent release.
+* **Sensitivity Info exposure** - `CoreWebView2` now exposes a `SensitivityInfo` property and a `SensitivityInfoChanged` event, allowing applications to listen for updates to sensitivity label information.
 
-See also:
-* [Page Interaction Restriction Manager](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PageInteractionRestrictionManager/explainer.md)
+Sensitivity label support is initially available on Win32 only.  Support for .NET and WinRT is planned for a future release.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -141,7 +140,7 @@ Pending.
 <!-- enums -->
 <!-- CoreWebView2SensitivityLabelKind -->
 * [COREWEBVIEW2_SENSITIVITY_LABEL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_label_kind)
-  * `COREWEBVIEW2_SENSITIVITY_LABEL_KIND_MIP`<!-- todo: 1 member only? -->
+  * `COREWEBVIEW2_SENSITIVITY_LABEL_KIND_MIP`
 
 <!-- CoreWebView2SensitivityLabelState -->
 * [COREWEBVIEW2_SENSITIVITY_LABELS_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_labels_state)
@@ -167,7 +166,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed a dangling pointer in `embedded_browser_file_system_access_permission_context`.
+* Fixed a dangling pointer in file system access permission context.
 * Fixed the UI hanging during drag-and-drop in WinUI3.
 * Fixed local network access triggering a permission alert pop-up window.
 * Resolved an issue where an extra region was appearing in the accessibility tree.
