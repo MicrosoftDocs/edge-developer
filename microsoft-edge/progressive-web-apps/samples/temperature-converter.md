@@ -15,7 +15,7 @@ The Temperature converter sample is a Progressive Web App (PWA).
 This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.
 
 See also:
-* [Get started with PWAs](../how-to/index.md) - explains the source code of the Temperature converter sample.
+* [Get started developing a PWA](../how-to/index.md) - explains the source code of the Temperature converter sample.
 
 
 <!-- ====================================================================== -->
@@ -254,6 +254,13 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
+1. If needed (such as to reflect custom edits of the sample code), Refresh the page.
+
+   Use whichever level of Refresh is required to refresh the PWA UI during development:
+   * Refresh (**F5**).
+   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
+   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+
 Continue with the next section.
 
 
@@ -284,6 +291,8 @@ Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.c
 
    ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
+   The window is a browser window without most of the browser UI.
+
    The app's icon is displayed in the Windows taskbar:
 
    ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
@@ -292,27 +301,6 @@ Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.c
 
 See also:
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
-
-Continue with the next section.
-
-
-<!-- ------------------------------ -->
-#### Install the app on the device (MERGE INTO ABOVE)
-<!-- todo: dissolve section; merge/move into
-[Install the web app as a local app](../samples/temperature-converter.md#install-the-web-app-as-a-local-app) in _Temperature converter sample_.
--->
-
-The sample's web app manifest enables browsers that support Progressive Web App (PWA) to install the web app as a Progressive Web App (PWA) on the device.
-
-In Microsoft Edge, once you refresh your app, the **App available** button appears in the Address bar.  Clicking the **App available** button prompts you to install the app locally.
-
-![Microsoft Edge, with the sample Progressive Web App (PWA) in a tab.  The App available button in the Address bar has been clicked and the installation prompt is displayed](./index-images/sample-pwa-app-available-button.png)
-
-Click **Install** to install the app locally. After the installation completes, your app is displayed in its own window, and its own app icon in the Taskbar.
-
-![The sample Progressive Web App (PWA), installed and running in its own window](./index-images/sample-pwa-installed.png)
-
-To learn more about installing Progressive Web Apps (PWAs), see [Use PWAs in Microsoft Edge](../ux.md).
 
 Continue with the next section.
 
@@ -353,66 +341,102 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Use DevTools to examine the service worker handling offline caching
+## Examine the service worker handling offline caching
 
 The local app window for a Progressive Web App (PWA) is a browser-based window, so Microsoft Edge DevTools can be used to work with the PWA.
 
-Confirm that the service worker (`sw.js`) is running after you open the PWA as a local app, as follows:
 
-1. Right-click the app, and then select **Inspect**.
+<!-- ------------------------------ -->
+#### When viewing the app as a web app in the browser
 
-   DevTools opens, in a separate window; undocked.  Other docking options are dimmed and not available.
+Confirm that the service worker (`sw.js`) is running when you view the sample PWA as a web app in the browser:
 
-1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
+1. In Microsoft Edge, go to `http://localhost:8080`.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
+
+   **Service workers:**
 
 1. In the tree on the left, select **Application** > **Service workers**.
 
    Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
 
-    ![The Application tool (in DevTools), showing the "Service workers" panel, with the `sw.js` worker running](./temperature-converter-images/devtools-service-workers.png)
+   ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
 
-   todo: change png, or add new png: show the DevTools undocked window.
+   If the service worker isn't displayed, refresh the page.  Use whichever level of Refresh is required to refresh the PWA UI during development:
+   * Refresh (**F5**).
+   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
+   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
 
-   If the service worker isn't displayed, refresh the page.
+   **Cache storage:**
 
 1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1 - http://localhost:8080/**.
 
-   The service worker cache is displayed.  All of the resources that are cached by the service worker are listed:
+   All of the resources that are cached by the service worker are displayed:
+
+   ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
+
+   The resources cached by the service worker include the app icon, app manifest, and the initial page.
+
+   The app as a web app within the browser, with DevTools' **Application** tool showing the **Service workers** panel, with the `sw.js` worker running:
+
+   ![The PWA as a web app in the browser, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-web-app.png)
+
+   DevTools when viewing the sample as a web app in the browser: 
+
+   ![Web app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-web-app.png)
+
+
+<!-- ------------------------------ -->
+#### When viewing the sample PWA as an installed app
+
+Confirm that the service worker (`sw.js`) is running when you open the PWA as a local app:
+
+1. Open the installed **Temperature converter** sample PWA.
+
+1. Right-click in white space in the window, or right-click a specific UI control, and then select **Inspect**.
+
+   The window is a minimal browser window, supporting the DevTools **Inspect** command.
+
+   DevTools opens, in a separate window; undocked.  Other docking options are dimmed and not available.
+
+1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
+
+   **Service workers:**
+
+1. In the tree on the left, select **Application** > **Service workers**.
+
+   Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
+
+   ![The PWA as an installed local app, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-installed-app.png)
+
+   If the service worker isn't displayed, refresh the page.  Use whichever level of Refresh is required to refresh the PWA UI during development:
+   * Refresh (**F5**).
+   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
+   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+
+   **Cache storage:**
+
+1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1 - http://localhost:8080/**.
+
+   ![Installed app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-installed-app.png)
+
+   The service worker cache is displayed.  All of the resources that are cached by the service worker (or cached automatically by the browser) are listed:
    * `/` (`index.html`) - The HTML page of the app; the initial page of the app - `index.html` - webpage layout of the app.
    * `/converter.css` - The styling for the webpage of the app.
    * `/converter.js` - The JavaScript file containing the app logic.
    * `/icon512.png` - The app icon image file to represent the app.
    * `/manifest.json` - The app manifest, containing basic information about the app, for the device's operating system to use.
 
-   ![DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage.png)
-
    The service worker adds three files to the cache, explicitly (`.html`, `.css`, and `.js`).  The icon (`.png`) and manifest (`.json`) are cached automatically by the browser.
 
    The sample's directory includes two files that aren't cached by the service worker: 
    * `README.md` - brief information about the sample.
    * `sw.js` - the service worker that manages caching of needed files.
-
-Continue with the next section.
-
-
-<!-- ------------------------------ -->
-#### Confirming that the service worker is running (MERGE INTO ABOVE)
-<!-- todo: this is action steps, so dissolve/move/merge into [Use DevTools to examine the service worker handling offline caching](../samples/temperature-converter.md#use-devtools-to-examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
--->
-
-To confirm that the service worker is running:
-
-1. In Microsoft Edge, go to `http://localhost:8080`.
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
-
-1. Open the **Application** tool, then click **Service workers**.  If the service worker isn't displayed, refresh the page.
-
-    ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
-
-1.  View the service worker cache by expanding **Cache Storage** and selecting **temperature-converter-v1**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, and the initial page.
-
-    ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
 
 Continue with the next section.
 
@@ -428,20 +452,12 @@ Try the Progressive Web App (PWA) as an offline app, as follows.
 
 1. Refresh the app.
 
+   Use whichever level of Refresh is required to refresh the PWA UI during development:
+   * Refresh (**F5**).
+   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
+   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+
    The app still appears correctly in the browser-based local app window, by using cached resources that are served out by the service worker.
-
-Continue with the next section.
-
-
-<!-- ------------------------------ -->
-#### Try the PWA as an offline app (MERGE INTO ABOVE)
-<!-- todo: this is action steps, so dissolve/move/merge into [Use DevTools to turn off the internet connection and test the PWA offline](../samples/temperature-converter.md#use-devtools-to-turn-off-the-internet-connection-and-test-the-pwa-offline) in _Temperature converter sample_. -->
-
-1.  Try the Progressive Web App (PWA) as an offline app.  In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**.
-
-1.  Refresh the app. It should still appear correctly in the browser, using cached resources served by the service worker.
-
-    ![DevTools, showing where to switch the Throttling value to Offline](./index-images/devtools-offline.png)
 
 Continue with the next section.
 
@@ -494,7 +510,12 @@ Create a working branch and switch to it, as follows:
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
-1. Press **Shift+F5** (or **Ctrl+F5**) to hard-refresh the webpage.
+1. Refresh the webpage.
+
+   Use whichever level of Refresh is required to refresh the PWA UI during development:
+   * Refresh (**F5**).
+   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
+   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
 
    The tab text changes from **Temperature converter** to **My temperature converter**.
 
@@ -585,7 +606,7 @@ You could also uninstall the sample PWA by starting from Microsoft Edge; you'd d
 <!-- ====================================================================== -->
 ## Next steps
 
-Study the code of this sample by reading [Get started with PWAs](../how-to/index.md).
+Study the code of this sample by reading [Get started developing a PWA](../how-to/index.md).
 
 Then you can:
 

@@ -1,16 +1,21 @@
 ---
 title: Use PWAs in Microsoft Edge
-description: How to use Progressive Web Apps (PWAs) in Microsoft Edge, including installing a PWA, managing PWAs, Windows integration, and the App info menu.
+description: How to use Progressive Web Apps (PWAs) in Microsoft Edge, including installing a PWA, managing PWAs, Windows integration, and the App info (Settings and more) menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/15/2021
+ms.date: 10/06/2025
 ---
 # Use PWAs in Microsoft Edge
 
 Any device that's running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps (PWAs).  On Windows, PWAs are just like other apps.
+
+This article covers preliminary, end-user information about how to use PWAs.
+
+See also:
+* [Get started developing a PWA](./how-to/index.md)
 
 
 <!-- ====================================================================== -->
@@ -58,6 +63,8 @@ A Progressive Web App (PWA) is displayed like a native app on Windows.  When run
 * In the Start menu.
 * When switching between apps with **Alt+Tab**.
 
+The following sections cover details.
+
 
 <!-- ====================================================================== -->
 ## Windows Taskbar
@@ -67,6 +74,18 @@ PWAs and native apps can reside side-by-side in the Taskbar:
 ![PWAs and native apps side-by-side in the Taskbar](./ux-images/pwas-in-the-taskbar.png)
 
 PWAs are indicated in this screenshot by red boxes.
+
+
+<!-- ====================================================================== -->
+## Start menu
+
+When installing a PWA, there's a **Pin to Start** checkbox:
+
+![The "Pin to start" command in an installed PWA's "Settings and more" menu](./ux-images/pin-to-start-during-install.png)
+
+An installed PWA has a **Settings and more** (**...**) menu that includes a **Pin to start** command:
+
+![The "Pin to start" command in an installed PWA's "Settings and more" menu](./ux-images/pin-to-start.png)
 
 
 <!-- ====================================================================== -->
@@ -82,9 +101,11 @@ PWAs are indicated in this screenshot by red boxes.
 <!-- ====================================================================== -->
 ## Shortcut on a right-click menu
 
-PWAs can also expose common tasks to users as shortcuts that appear in the app's right-click menu (context menu):
+A PWA can expose a common task as a shortcut that appears in the app's right-click menu (context menu):
 
 ![Common tasks are listed in the Taskbar's right-click menu](./ux-images/pwa-shortcuts-in-taskbar.png)
+
+The above screenshot shows **Start Live Session**, a custom menuitem.
 
 See:
 * [Define app shortcuts (long-press or right-click menus)](how-to/shortcuts.md)
@@ -114,7 +135,11 @@ To set an already installed PWA to automatically start when you sign in to Windo
 
 ![Use the More Options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge](./ux-images/turn-on-run-on-os-login-flag.png)
 
-During installing a PWA, users are also given a chance to set a PWA to automatically start.
+
+<!-- ------------------------------ -->
+#### During installing a PWA
+
+During installing a PWA, users are given a chance to set a PWA to automatically start.
 
 To set a PWA to automatically start when you sign in to Windows, while installing the PWA:
 
@@ -124,22 +149,45 @@ To set a PWA to automatically start when you sign in to Windows, while installin
 
 
 <!-- ====================================================================== -->
-## App info menu
+## App info menu (Settings and more)
 
-When a user selects the ellipses (**...**) button in the title bar of a Progressive Web Apps (PWA), the **App info** menu is displayed:
+When a user selects the **Settings and more** (**...**) button in the title bar of a Progressive Web App (PWA), the **App info** menu/dialog is displayed:
 
 ![The 'App info' menu](./ux-images/app-info-menu.png)
 
-The **App info** menu contains useful information about the app, such as:
+The **App info** menu contains the following:
 
-* The app icon, name, and publisher.
+* Basic information about the app:
+   * The app icon.
+   * The app name.
+   * The app publisher, such as:
+      * During development: **localhost:8080**
+      * During production: **microsoftedge.github.io** or your own production server's domain.
 
-* The various app permissions that have been granted.
+* Commands:
 
-* Privacy information such as the number of cookies used.
+   * **Pin to taskbar**
 
-* Lists of extensions and tools that can be used in the app.
+   * **Pin to Start**
 
+   * **App settings**
+
+* Submenus:
+   * **Privacy** - Privacy information such as the number of cookies used:
+
+      ![The Privacy submenu of the 'App info' menu](./ux-images/app-info-menu-privacy.png)
+
+   * **Extensions** - List of extensions that Microsoft Edge has installed.
+
+   * **More tools** menu, containing commands such as:
+      * **Zoom %**
+      * **Copy link**
+      * **Open in Microsoft Edge**
+      * **Print**
+      * **Share**
+      * **Find on page**
+      * **Cast media to device**
+    
 
 <!-- ====================================================================== -->
 ## See also

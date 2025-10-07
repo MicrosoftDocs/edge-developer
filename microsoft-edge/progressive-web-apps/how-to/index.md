@@ -1,6 +1,6 @@
 ---
-title: Get started with PWAs
-description: Learn to build your first Progressive Web App.
+title: Get started developing a PWA
+description: Learn to build a web app that's a Progressive Web App so that it can be installed as a local app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/01/2025
 ---
-# Get started with PWAs
+# Get started developing a PWA
 
 A Progressive Web App (PWA) is a web app that you build by using web technologies such as HTML, CSS, and JavaScript, and can also be installed and run on various device operating systems, from a single codebase.
 
@@ -103,15 +103,15 @@ The sample Progressive Web App (PWA) consists of the following files, in the `/D
 
 | File | Description | Section below |
 |---|---|---|
+| `index.html` | The initial webpage defining the UI controls.  The webpage layout of the app.  This sample PWA has a single webpage. | [The app's initial webpage (`index.html`)](#the-apps-initial-webpage-indexhtml) |
 | `converter.css` | The Cascading Style Sheets (CSS) file defines styling for the webpage of the app; the layout styling of each UI control in the main page of the app. | [The JavaScript app logic file (`converter.js`)](#the-css-style-sheet-file-convertercss) |
 | `converter.js` | App logic, as JavaScript code. | [The JavaScript app logic file (`converter.js`)](#the-javascript-app-logic-file-converterjs) |
-| `icon512.png` | Image file to represent the app within the browser and on the local device. | [The image file to represent the app (`icon512.png`)](#the-image-file-to-represent-the-app-icon512png) |
-| `index.html` | The initial webpage defining the UI controls.  The webpage layout of the app.  This sample PWA has a single webpage. | [The app's initial webpage (`index.html`)](#the-apps-initial-webpage-indexhtml) |
 | `manifest.json` | Basic information about the app, for the device's operating system to use.  Manifest file that makes the Progressive Web App (PWA) installable on the device, unlike a regular web app. | [The web app manifest (`manifest.json`)](#the-web-app-manifest-manifestjson) |
-| `README.md` | Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.  Brief information about the app: a link to open the app webpage, and a link to the present article. | [The Readme file to explain the directory of source files (`README.md`)](#the-readme-file-to-explain-the-directory-of-source-files-readmemd) |
+| `icon512.png` | Image file to represent the app within the browser and on the local device. | [The image file to represent the app (`icon512.png`)](#the-image-file-to-represent-the-app-icon512png) |
 | `sw.js` | Service worker that caches front-end files on the local device and serves out the cached files when there's no internet connection. | [The service worker to cache the app's files on the local device (`sw.js`)](#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) |
+| `README.md` | Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.  Brief information about the app: a link to open the app webpage, and a link to the present article. | [The Readme file to explain the directory of source files (`README.md`)](#the-readme-file-to-explain-the-directory-of-source-files-readmemd) |
 
-Details about each of these front-end files are in the sections below.
+Details about each file are below.
 
 
 <!-- ====================================================================== -->
@@ -397,6 +397,8 @@ form.addEventListener('input', () => {
 ## The web app manifest (`manifest.json`)
 
 A regular web app only runs in the browser.  By adding a web app manifest, the web app becomes a Progressive Web App (PWA) and thus becomes installable on the device.
+
+The web app manifest enables browsers that support Progressive Web App (PWA) to install the web app as a Progressive Web App (PWA) on the device.
 
 A _web app manifest_ is a JSON file containing metadata about the Progressive Web App (PWA), such as its name, description, icons, and the various operating system features it uses.
 

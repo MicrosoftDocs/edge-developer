@@ -309,7 +309,7 @@ conceptualContent:
               url: ./progressive-web-apps/whats-new/pwa.md
               itemType: whats-new
 
-            - text: Get started with PWAs
+            - text: Get started developing a PWA
               url: ./progressive-web-apps/how-to/index.md
               itemType: get-started
 

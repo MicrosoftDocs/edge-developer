@@ -423,5 +423,7 @@ Example managed app folder structure:
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 deployment samples](../samples/deployment-samples.md)
+
 <!-- External: -->
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
