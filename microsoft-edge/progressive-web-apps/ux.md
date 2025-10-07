@@ -143,7 +143,7 @@ During installing a PWA, users are given a chance to set a PWA to automatically 
 
 To set a PWA to automatically start when you sign in to Windows, while installing the PWA:
 
-1.  During installing an app, in the post-installation dialog, select **Auto-start on device login**:
+1.  During installing an app, in the post-installation dialog, select the **Auto-start on device login** checkbox:
 
 ![The post-installation dialog automatically opens after an app is installed](./ux-images/post-install-run-on-os-login.png)
 
@@ -153,7 +153,7 @@ To set a PWA to automatically start when you sign in to Windows, while installin
 
 When a user selects the **Settings and more** (**...**) button in the title bar of a Progressive Web App (PWA), the **App info** menu/dialog is displayed:
 
-![The 'App info' menu](./ux-images/app-info-menu.png)
+![The 'App info' menu](./ux-images/app-info-menu.png)<!-- todo: redo png served from github.io not localhost -->
 
 The **App info** menu contains the following:
 

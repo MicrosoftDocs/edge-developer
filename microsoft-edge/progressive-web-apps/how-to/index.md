@@ -212,7 +212,7 @@ The `index.html` file contains a form:
     <script src="./converter.js"></script>
 ```
 
-The script element loads `converter.js`, which references the form's `id`: `converter` in the following line:
+The \<script\> element loads `converter.js`, which references the form's `id`: `converter` in the following line:
 
 ```javascript
 const form = document.getElementById('converter');
