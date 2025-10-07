@@ -365,7 +365,7 @@ Confirm that the service worker (`sw.js`) is running when you view the sample PW
 
    Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
 
-   ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./index-images/devtools-sw-overview.png)
+   ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./temperature-converter-images/devtools-service-workers-web-app.png)
 
    If the service worker isn't displayed, refresh the page.  Use whichever level of Refresh is required to refresh the PWA UI during development:
    * Refresh (**F5**).
@@ -378,15 +378,7 @@ Confirm that the service worker (`sw.js`) is running when you view the sample PW
 
    All of the resources that are cached by the service worker are displayed:
 
-   ![DevTools, showing where to view the cached resources](./index-images/devtools-cache.png)
-
    The resources cached by the service worker include the app icon, app manifest, and the initial page.
-
-   The app as a web app within the browser, with DevTools' **Application** tool showing the **Service workers** panel, with the `sw.js` worker running:
-
-   ![The PWA as a web app in the browser, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-web-app.png)
-
-   DevTools when viewing the sample as a web app in the browser: 
 
    ![Web app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-web-app.png)
 

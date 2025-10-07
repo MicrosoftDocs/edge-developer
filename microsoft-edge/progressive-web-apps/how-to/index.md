@@ -434,7 +434,7 @@ See also:
 
 [icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
 
-![Icon file](./temperature-converter-images/icon-in-taskbar.png)
+![Icon file](./index-images/icon-in-taskbar.png)
 
 
 <!-- ====================================================================== -->
@@ -515,7 +515,7 @@ In the sample PWA, the `sw.js` file acts as the Progressive Web App (PWA)'s serv
 The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.  The service worker returns cached resources so your app can work offline, and if that fails, the service worker attempts to download the file from the server instead.
 
 See also:
-* [Monitor the service worker handling offline caching](../samples/temperature-converter.md#monitor-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
+* [Examine the service worker handling offline caching](../samples/temperature-converter.md#examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
 

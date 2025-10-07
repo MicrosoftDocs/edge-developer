@@ -81,7 +81,7 @@ PWAs are indicated in this screenshot by red boxes.
 
 When installing a PWA, there's a **Pin to Start** checkbox:
 
-![The "Pin to start" command in an installed PWA's "Settings and more" menu](./ux-images/pin-to-start-during-install.png)
+![The "Pin to start" checkbox when installing a PWA](./ux-images/pin-to-start-during-install.png)
 
 An installed PWA has a **Settings and more** (**...**) menu that includes a **Pin to start** command:
 
