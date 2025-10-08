@@ -139,14 +139,14 @@ Pending.
 
 <!-- enums -->
 <!-- CoreWebView2SensitivityLabelKind -->
-* [COREWEBVIEW2_SENSITIVITY_LABEL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_label_kind)
+* [COREWEBVIEW2_SENSITIVITY_LABEL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_label_kind)
   * `COREWEBVIEW2_SENSITIVITY_LABEL_KIND_MIP`
 
 <!-- CoreWebView2SensitivityLabelState -->
-* [COREWEBVIEW2_SENSITIVITY_LABELS_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_labels_state)
-  * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_AVAILABLE`
+* [COREWEBVIEW2_SENSITIVITY_LABELS_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_labels_state)
   * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_NOT_APPLICABLE`
   * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_PENDING`
+  * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_AVAILABLE`
 
 ---
 
