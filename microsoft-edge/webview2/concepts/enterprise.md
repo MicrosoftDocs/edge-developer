@@ -35,7 +35,7 @@ IT admins can follow [Microsoft Edge's guide](/deployedge/configure-microsoft-ed
 <!-- ------------------------------ -->
 #### Suppressing updating of the WebView2 Runtime
 
-An admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the admin forcefully pushes WebView2 Runtime updates again.  However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.
+An IT admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the IT admin forcefully pushes WebView2 Runtime updates again.  However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.
 
 Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, it's likely that you won't receive the latest quality and security updates.
 
@@ -70,9 +70,11 @@ Security fixes address vulnerabilities such as:
 <!-- ---------- -->
 ###### Microsoft Edge Lifecycle Policy
 
-Microsoft WebView2 follows the Modern Lifecycle Policy.  See:
-* [Modern Lifecycle Policy](/lifecycle/policies/modern) in the Modern Lifecycle Policy documentation.
-* [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) in the Microsoft Edge Enterprise documentation.
+Microsoft WebView2 follows the Modern Lifecycle Policy.
+
+See:
+* [Modern Lifecycle Policy](/lifecycle/policies/modern), in the Modern Lifecycle Policy documentation.
+* [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
