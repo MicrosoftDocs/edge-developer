@@ -11,12 +11,9 @@ ms.date: 11/12/2021
 # Enterprise management of WebView2 Runtimes
 <!-- old title: # Manage WebView2 applications -->
 
-This article discusses how IT admins can manage WebView2 applications and the WebView2 Runtime.  WebView2 is a component that developers use to build their applications.  Developers can deploy a self-updating Evergreen WebView2 Runtime onto user devices, to power their applications.
+This article discusses how IT admins can manage<!-- todo: define --> WebView2 applications and the WebView2 Runtime.  A developer can integrate the WebView2 component into their app, and then deploy the self-updating Evergreen WebView2 Runtime (along with the app) onto user devices, to power the latest WebView2 features of the app and get the latest security improvements.
 
 Feedback from IT admins and developers is welcome, through the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
-
-See also:
-* [Introduction to Microsoft Edge WebView2](../index.md)
 
 
 <!-- ====================================================================== -->
@@ -115,7 +112,6 @@ See [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update
 ## See also
 <!-- all links in article -->
 
-* [Introduction to Microsoft Edge WebView2](../index.md)
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Evergreen vs. fixed version of the WebView2 Runtime.
 
 <!-- TOC order -->
