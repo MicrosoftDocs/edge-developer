@@ -25,7 +25,7 @@ IT admins can use group policy objects (GPO) to configure policy settings for We
 <!-- ------------------------------ -->
 #### Update policies
 
-[Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies) are available for IT admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  Unless a policy, such as `Update`, is channel-specific, the policy applies to both the browser and WebView2 Runtime.
+[Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies) are available for IT admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  The policy applies to both Microsoft Edge and the WebView2 Runtime, unless the policy is channel-specific, such as [`Update`](/deployedge/microsoft-edge-update-policies#update).
 
 To configure update policies for Microsoft Edge (and the WebView2 Runtime), see [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge), in the Microsoft Edge Enterprise documentation.
 
@@ -33,7 +33,7 @@ To configure update policies for Microsoft Edge (and the WebView2 Runtime), see 
 <!-- ------------------------------ -->
 #### Suppressing updating of the WebView2 Runtime
 
-An IT admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT admin to set the time during each day at which to suppress auto-update for both the browser and WebView2 Runtime.  This enables an IT admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
+An IT admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [`UpdatesSuppressed`](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
 
 However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
 
