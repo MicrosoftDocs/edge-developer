@@ -33,9 +33,7 @@ To configure update policies for Microsoft Edge (and the WebView2 Runtime), see 
 <!-- ------------------------------ -->
 #### Suppressing updating of the WebView2 Runtime
 
-The `UpdateSuppressed` policy allows an IT admin to set the time during each day at which to suppress auto-update for both the browser and WebView2 Runtime.  This enables an IT admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
-
-An IT admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the IT admin forcefully pushes WebView2 Runtime updates again.
+An IT admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT admin to set the time during each day at which to suppress auto-update for both the browser and WebView2 Runtime.  This enables an IT admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
 
 However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
 
