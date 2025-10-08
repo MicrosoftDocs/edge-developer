@@ -88,20 +88,18 @@ Applying browser policies on WebView2 would have unintended consequences.  For e
 
 
 <!-- ====================================================================== -->
-## Windows Server Update Services (WSUS)
-<!-- todo: WSUS is deprecated, per
-https://review.learn.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus?branch=main&branchFallbackFrom=pr-en-us-3597
--->
+## Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-Windows Server Update Services (WSUS) enables IT admins to deploy the latest Microsoft product updates. You can use WSUS to fully manage the distribution of updates of WebView2 that are released through Microsoft Update to computers on your network.
+Windows Server Update Services (WSUS) enables IT admins to deploy the latest Microsoft product updates. You can use WSUS to fully manage the distribution of updates of WebView2 that are released through Microsoft Update<!-- todo: "Microsoft Update" vs. "Microsoft Edge updater" --> to computers on your network.
 
 See [Windows Server Update Services (WSUS) overview](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 
-The recommended way of receiving WebView2 updates is by using the default Microsoft Edge updater.  Any modification of update and servicing paths should be done with caution.
+The recommended way of receiving WebView2 updates is by using the default Microsoft Edge updater<!-- todo: "Microsoft Update" vs. "Microsoft Edge updater" -->.  Any modification of update and servicing paths should be done with caution.
 
 
 <!-- ------------------------------ -->
 #### WebView2 deployment and update using Configuration Manager
+<!-- is this option recommended?  is this section details about the above section?  is Configuration Manager indep from WSUS? -->
 
 In Configuration Manager, WebView2 options exist under the **Microsoft Edge Management** node.
 
