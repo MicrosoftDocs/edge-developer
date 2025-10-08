@@ -61,9 +61,7 @@ To help maintain a secure browsing environment, Microsoft Edge addresses Chromiu
 Security fixes address vulnerabilities such as:
 
 * **Remote code execution** – Mitigates risks of arbitrary code execution via malicious content.
-
 * **Privilege escalation** – Reduces chances of unauthorized system access.
-
 * **Information disclosure and spoofing** – Protects sensitive data, and helps prevent phishing attacks.
 
 
