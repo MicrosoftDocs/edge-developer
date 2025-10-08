@@ -43,7 +43,7 @@ However, users should not stop updating their WebView2 Runtime; users should not
 <!-- ---------- -->
 ###### Evergreen Runtime is recommended, rather than a fixed version
 
-Using the **Evergreen** WebView2 Runtime is recommended, unless business-critical requirements necessitate a **fixed** version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
+Using the Evergreen WebView2 Runtime is recommended, unless business-critical requirements necessitate a fixed version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
 * Helps minimize exposure to known vulnerabilities.
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
