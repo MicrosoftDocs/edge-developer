@@ -33,28 +33,35 @@ IT admins can follow [Microsoft Edge's guide](/deployedge/configure-microsoft-ed
 
 
 <!-- ------------------------------ -->
-#### new section
+#### Suppress updating of the WebView2 Runtime
 
-Staying on **Evergreen** ensures that WebView2 benefits from continuous security updates delivered through Microsoft Edge releases.  For details on security fixes included in Edge releases (which apply to WebView2 as well), refer to [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security).
+<!-- context paragraph from pm -->
+An admin can suppress updates of the WebView2 Runtime, if they need to be suppressed for a short time such as during a single update, but users should not stop updating their WebView2 Runtime.
+An admin can suppress updates of the WebView2 Runtime for a short time, and then forcefully push updates again, but users should not remain on an older version of the Runtime.
+
+Staying on **Evergreen** ensures that WebView2 benefits from continuous security updates delivered through Microsoft Edge releases.  For details on security fixes included in Edge releases (which apply to WebView2 as well), see [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security).
 
 
 <!-- ---------- -->
-###### Rapid Response to Chromium Zero-Days
+###### Rapid Response to Chromium vulnerabilities
 
-Microsoft Edge **consistently works to address** engine-level vulnerabilities soon after disclosure, helping maintain a secure browsing environment.
+Microsoft Edge consistently works to address Chromium engine-level vulnerabilities (such as the zero-day vulnerability) soon after disclosure, helping to maintain a secure browsing environment.
 
-**Security Fixes Commonly Address:**
+Such security fixes commonly address the following:
 
-* **Remote Code Execution** – Mitigates risks of arbitrary code execution via malicious content.
-* **Privilege Escalation** – Reduces chances of unauthorized system access.
-* **Information Disclosure & Spoofing** – Protects sensitive data and helps prevent phishing attacks.
+* **Remote code execution** – Mitigates risks of arbitrary code execution via malicious content.
+* **Privilege escalation** – Reduces chances of unauthorized system access.
+* **Information disclosure and spoofing** – Protects sensitive data and helps prevent phishing attacks.
 
 **Recommendation:**
 
-Adopt Evergreen unless business-critical requirements necessitate a fixed version.  This approach helps minimize exposure to known vulnerabilities and ensures timely security improvements.
+Use the Evergreen WebView2 Runtime, unless business-critical requirements necessitate a fixed version of the WebView2 Runtime.  This approach helps minimize exposure to known vulnerabilities and ensures timely security improvements.
 
-Microsoft WebView2 follows the [Modern Lifecycle Policy](/lifecycle/policies/modern) (in the Modern Lifecycle Policy docs).  Security updates and servicing updates are only available on the latest Stable channel release and the latest Beta channel release.  If you use older releases of Microsoft WebView2, it's likely that you miss the latest quality and security updates.  Using older versions isn't recommended.  For more details on lifecycle policy refer to [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) (in the Microsoft Edge Enterprise documentation).
- 
+<!--
+todo: does the following paragraph belong within the "Recommendation" pseudo-heading?
+What topic is being discussed in this paragraph? [= the heading] -->
+Microsoft WebView2 follows the [Modern Lifecycle Policy](/lifecycle/policies/modern) (in the Modern Lifecycle Policy docs).  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of Microsoft WebView2, it's likely that you will miss the latest quality and security updates.  Using older versions of the WebView2 Runtime isn't recommended.  For more details on lifecycle policy, see [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) (in the Microsoft Edge Enterprise documentation).
+
 
 <!-- ------------------------------ -->
 #### Browser policies
