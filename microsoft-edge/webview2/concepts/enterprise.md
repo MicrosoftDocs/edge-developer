@@ -33,34 +33,46 @@ IT admins can follow [Microsoft Edge's guide](/deployedge/configure-microsoft-ed
 
 
 <!-- ------------------------------ -->
-#### Suppress updating of the WebView2 Runtime
+#### Suppressing updating of the WebView2 Runtime
 
-<!-- context paragraph from pm -->
-An admin can suppress updates of the WebView2 Runtime, if they need to be suppressed for a short time such as during a single update, but users should not stop updating their WebView2 Runtime.
-An admin can suppress updates of the WebView2 Runtime for a short time, and then forcefully push updates again, but users should not remain on an older version of the Runtime.
+An admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the admin forcefully pushes WebView2 Runtime updates again.  However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.
 
-Staying on **Evergreen** ensures that WebView2 benefits from continuous security updates delivered through Microsoft Edge releases.  For details on security fixes included in Edge releases (which apply to WebView2 as well), see [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security).
+Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, it's likely that you won't receive the latest quality and security updates.
+
+
+<!-- ---------- -->
+###### Evergreen Runtime is recommended, rather than a fixed version
+
+Using the **Evergreen** WebView2 Runtime is recommended, unless business-critical requirements necessitate a **fixed** version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime (instead of a fixed version of the Runtime):
+* Helps minimize exposure to known vulnerabilities.
+* Ensures timely security improvements.
+* Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
+
+For information about Evergreen vs. fixed version of the Runtime, see [Distribute your app and the WebView2 Runtime](./distribution.md).
+
+For details about security fixes in Microsoft Edge (which apply to WebView2 as well), see [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ---------- -->
 ###### Rapid Response to Chromium vulnerabilities
 
-Microsoft Edge consistently works to address Chromium engine-level vulnerabilities (such as the zero-day vulnerability) soon after disclosure, helping to maintain a secure browsing environment.
+To help maintain a secure browsing environment, Microsoft Edge addresses Chromium engine-level vulnerabilities soon after the vulnerabilities are disclosed.
 
-Such security fixes commonly address the following:
+Security fixes address vulnerabilities such as:
 
 * **Remote code execution** – Mitigates risks of arbitrary code execution via malicious content.
+
 * **Privilege escalation** – Reduces chances of unauthorized system access.
-* **Information disclosure and spoofing** – Protects sensitive data and helps prevent phishing attacks.
 
-**Recommendation:**
+* **Information disclosure and spoofing** – Protects sensitive data, and helps prevent phishing attacks.
 
-Use the Evergreen WebView2 Runtime, unless business-critical requirements necessitate a fixed version of the WebView2 Runtime.  This approach helps minimize exposure to known vulnerabilities and ensures timely security improvements.
 
-<!--
-todo: does the following paragraph belong within the "Recommendation" pseudo-heading?
-What topic is being discussed in this paragraph? [= the heading] -->
-Microsoft WebView2 follows the [Modern Lifecycle Policy](/lifecycle/policies/modern) (in the Modern Lifecycle Policy docs).  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of Microsoft WebView2, it's likely that you will miss the latest quality and security updates.  Using older versions of the WebView2 Runtime isn't recommended.  For more details on lifecycle policy, see [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) (in the Microsoft Edge Enterprise documentation).
+<!-- ---------- -->
+###### Microsoft Edge Lifecycle Policy
+
+Microsoft WebView2 follows the Modern Lifecycle Policy.  See:
+* [Modern Lifecycle Policy](/lifecycle/policies/modern) in the Modern Lifecycle Policy documentation.
+* [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
