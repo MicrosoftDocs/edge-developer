@@ -35,15 +35,15 @@ IT admins can follow [Microsoft Edge's guide](/deployedge/configure-microsoft-ed
 <!-- ------------------------------ -->
 #### Suppressing updating of the WebView2 Runtime
 
-An IT admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the IT admin forcefully pushes WebView2 Runtime updates again.  However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.
+An IT admin can suppress updating of the WebView2 Runtime, if updates need to be suppressed for a short time, such as during a single update.  Afterwards, the IT admin forcefully pushes WebView2 Runtime updates again.
 
-Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, it's likely that you won't receive the latest quality and security updates.
+However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
 
 
 <!-- ---------- -->
 ###### Evergreen Runtime is recommended, rather than a fixed version
 
-Using the **Evergreen** WebView2 Runtime is recommended, unless business-critical requirements necessitate a **fixed** version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime (instead of a fixed version of the Runtime):
+Using the **Evergreen** WebView2 Runtime is recommended, unless business-critical requirements necessitate a **fixed** version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
 * Helps minimize exposure to known vulnerabilities.
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
