@@ -33,6 +33,30 @@ IT admins can follow [Microsoft Edge's guide](/deployedge/configure-microsoft-ed
 
 
 <!-- ------------------------------ -->
+#### new section
+
+Staying on **Evergreen** ensures that WebView2 benefits from continuous security updates delivered through Microsoft Edge releases.  For details on security fixes included in Edge releases (which apply to WebView2 as well), refer to [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security).
+
+
+<!-- ---------- -->
+###### Rapid Response to Chromium Zero-Days
+
+Microsoft Edge **consistently works to address** engine-level vulnerabilities soon after disclosure, helping maintain a secure browsing environment.
+
+**Security Fixes Commonly Address:**
+
+* **Remote Code Execution** – Mitigates risks of arbitrary code execution via malicious content.
+* **Privilege Escalation** – Reduces chances of unauthorized system access.
+* **Information Disclosure & Spoofing** – Protects sensitive data and helps prevent phishing attacks.
+
+**Recommendation:**
+
+Adopt Evergreen unless business-critical requirements necessitate a fixed version.  This approach helps minimize exposure to known vulnerabilities and ensures timely security improvements.
+
+Microsoft WebView2 follows the [Modern Lifecycle Policy](/lifecycle/policies/modern) (in the Modern Lifecycle Policy docs).  Security updates and servicing updates are only available on the latest Stable channel release and the latest Beta channel release.  If you use older releases of Microsoft WebView2, it's likely that you miss the latest quality and security updates.  Using older versions isn't recommended.  For more details on lifecycle policy refer to [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle) (in the Microsoft Edge Enterprise documentation).
+ 
+
+<!-- ------------------------------ -->
 #### Browser policies
 
 [Microsoft Edge - Browser policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT admins might not be aware of what applications use WebView2.  
