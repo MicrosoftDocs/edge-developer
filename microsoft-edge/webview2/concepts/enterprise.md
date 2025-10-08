@@ -112,7 +112,7 @@ See [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update
 
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Evergreen vs. fixed version of the WebView2 Runtime.
 
-<!-- TOC order -->
+<!-- toc order -->
 Microsoft Edge Enterprise documentation:
 * [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle)<!-- bucket 2 -->
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- bucket 3 top -->
@@ -136,4 +136,3 @@ Windows Server Management documentation:
 
 GitHub:
 * [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
-n
