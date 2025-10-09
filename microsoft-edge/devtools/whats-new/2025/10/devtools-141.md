@@ -18,21 +18,35 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: Inspect masonry layout in the Layout tab and adorners in the DOM tree. -->
 
-CSS masonry layout is supported in the Layout tab. It displays masonry layout elements alongside grid layouts and supports displaying line numbers, line names, track sizes, and area names.
-![Masonry in layout tab](./devtools-141-images/masonry-layout-tab.png)
+CSS masonry layout is supported in the **Layout** tab of the **Elements** tool.  Masonry layout elements are displayed alongside grid layout elements:
 
-Also, masonry adorners appear next to elements in the DOM tree, similar to the grid and flex adorners.
-![Masonry adorner in Elements DOM tree](./devtools-141-images/masonry-adorner.png)
+![The Grid/Masonry section in the Layout tab](./devtools-141-images/masonry-layout-tab.png)
 
-## See also
+In the **Overlay display settings** section, you can control whether to display:
+* Line numbers and line names.
+* Track sizes.
+* Area names.
 
-* [CSS Masonry demos](https://microsoftedge.github.io/Demos/css-masonry/)
+The **masonry** adorner appears next to elements in the DOM tree, similar to the **grid** or **flex** adorners:
+
+![The "masonry" adorner on the body tag in the DOM tree](./devtools-141-images/masonry-adorner.png)
+
+See also:
+* [CSS Masonry demos](https://github.com/MicrosoftEdge/Demos/tree/main/css-masonry)
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge 141 also includes the following updates from the Chromium project:
 
+* [Debug more insights with Gemini](https://developer.chrome.com/blog/new-in-devtools-140#ai-insights)
+* [Emulate the 'Save-Data' header in 'Network conditions'](https://developer.chrome.com/blog/new-in-devtools-140#save-data)
+* [See the Baseline status in a CSS property tooltip](https://developer.chrome.com/blog/new-in-devtools-140#baseline-tooltip)
+* [Override form factors in user agent client hints](https://developer.chrome.com/blog/new-in-devtools-140#form-factors)
+* [Lighthouse 12.8.0](https://developer.chrome.com/blog/new-in-devtools-140#lighthouse)
+* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-140#misc)
+<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
