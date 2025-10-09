@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 10/01/2025
+ms.date: 10/09/2025
 ---
 # Get started developing a PWA
 

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 10/01/2025
+ms.date: 10/09/2025
 ---
 # Temperature converter sample
 
@@ -19,27 +19,23 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Preview the app running as a web app at the github.io web server
+## Step 1 - Preview the app running as a web app at the github.io web server
+
+**TODO: RESUME HERE, TESTING THE STEPS**
 
 To examine the user interface of the app:
 
-1. On Windows, in Microsoft Edge, go to the [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) live sample web app in a new window or tab:
+1. On Windows,<!-- todo: does this sample and tut support macOS, Linux? --> in Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app in a new window or tab (hosted at github.io):
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
 
-   The sample Progressive Web App (PWA) is initially shown in the browser, with an **App available** button in the Address bar.
+   The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** button in the Address bar.
 
-   Below, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.
+1. In the Address bar, hover over the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button, but don't click it yet.
 
-   The sample Progressive Web App (PWA) runs in its own window when it's installed locally:
+   In a later step, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.  You'll click the **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button later, when running the web app from your localhost server, which is the workflow while developing and testing a Progressive Web App (PWA).
 
-   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
-
-   The window is a browser-based window, without most of the browser UI.
-
-   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a Progressive Web App (PWA) while developing it.  Your own, actual Progressive Web App (PWA), after testing it, would be hosted at your web server that users can access.
-
-1. In the preview of the web app at the `github.io` server, in the **temperature** text box, type **22**.
+1. In the **temperature** text box, type **22**.
 
    As you type, the displayed temperature is updated to **71.6 F**.
 
@@ -50,13 +46,19 @@ To examine the user interface of the app:
    * **Fahrenheit**
    * **Kelvin**
 
-   The sample is a Progressive Web App, rather than a regular web app.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
+   In a later step, after the sample Progressive Web App (PWA) is installed as a local app, the app runs in its own window:
 
-   In the Address bar, the button **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) is present, for this web app that's served at `github.io`.  You'll click that button later, when running the web app from your localhost server, which is the workflow while developing and testing a Progressive Web App (PWA).
+   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+
+   The window is a browser-based window, without most of the browser UI.
+
+   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a Progressive Web App (PWA) while developing it.  Your own, actual Progressive Web App (PWA), after testing it, would be hosted at your web server that users can access.
+
+   The sample is a _Progressive_ Web App, rather than a regular web app.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
 
 
 <!-- ====================================================================== -->
-## Install or update Visual Studio Code
+## Step 2 - Install or update Visual Studio Code
 
 Visual Studio Code enables viewing the sample code, modifying the sample, and creating your own Progressive Web App (PWA) by using the sample as a starting point.
 
@@ -66,11 +68,9 @@ Install or update VS Code, as follows:
 
 1. If Visual Studio Code isn't installed, go to [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Install or update git
+## Step 3 - Install or update git
 
 Install or update git, as follows:
 
@@ -88,11 +88,9 @@ Install or update git, as follows:
 
    ![git installer with Visual Studio Code selected as default editor](./temperature-converter-images/git-default-editor.png)
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Install or update Node.js
+## Step 4 - Install or update Node.js
 
 Node.js includes a web server that you'll use to run and test the sample locally.
 
@@ -132,11 +130,9 @@ Install or update Node.js, as follows:
 
    The latest version number is displayed, such as v22.20.0.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Clone the Edge Demos repo, to get a local copy of the code
+## Step 5 - Clone the Edge Demos repo, to get a local copy of the code
 
 <!-- derived from 
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
@@ -191,11 +187,9 @@ If the Demos repo has already been cloned to your drive (for use by your current
 See also:
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Run the PWA as a web app on your localhost web server; Start the development web server
+## Step 6 - Run the PWA as a web app on your localhost web server; Start the development web server
 
 Run and test the sample Progressive Web App (PWA) as a web app on your localhost web server, in Microsoft Edge.
 
@@ -261,11 +255,9 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
    * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
    * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Install the PWA from your localhost web server as a local app
+## Step 7 - Install the PWA from your localhost web server as a local app
 
 Install the sample Progressive Web App (PWA) from your localhost web server as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
 
@@ -302,11 +294,9 @@ Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.c
 See also:
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Run the sample PWA as a local app
+## Step 8 - Run the sample PWA as a local app
 
 Run the sample Progressive Web App (PWA) as a local app on the device.
 
@@ -337,11 +327,9 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
    * **Fahrenheit**
    * **Kelvin**
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Examine the service worker handling offline caching
+## Step 9 - Examine the service worker handling offline caching
 
 The local app window for a Progressive Web App (PWA) is a browser-based window, so Microsoft Edge DevTools can be used to work with the PWA.
 
@@ -430,11 +418,9 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
    * `README.md` - brief information about the sample.
    * `sw.js` - the service worker that manages caching of needed files.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Use DevTools to turn off the internet connection and test the PWA offline
+## Step 10 - Use DevTools to turn off the internet connection and test the PWA offline
 
 Try the Progressive Web App (PWA) as an offline app, as follows.   
  
@@ -451,11 +437,9 @@ Try the Progressive Web App (PWA) as an offline app, as follows.
 
    The app still appears correctly in the browser-based local app window, by using cached resources that are served out by the service worker.
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Modify the sample
+## Step 11 - Modify the sample
 
 Switching from the **main** branch to a working branch preserves the original code in the "main" branch, so that you can modify a copy of the sample code.
 
@@ -498,7 +482,7 @@ Create a working branch and switch to it, as follows:
 
 
 <!-- ====================================================================== -->
-## View the modified web app in the browser
+## Step 12 - View the modified web app in the browser
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
@@ -513,11 +497,9 @@ Create a working branch and switch to it, as follows:
 
    Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Re-install the modified sample as a local app
+## Step 13 - Re-install the modified sample as a local app
 
 At this point, your device still has the original version of the sample Progressive Web App (PWA) installed (from localhost, not from github.io).  To update the local app after you modified the code, you don't need to uninstall and reinstall; just open the modified web app from the address bar, as follows.
 
@@ -539,11 +521,9 @@ At this point, your device still has the original version of the sample Progress
 
    1. `index.html`: `<title>My temperature converter</title>`
 
-Continue with the next section.
-
 
 <!-- ====================================================================== -->
-## Switch back to the "main" branch of the Demos repo
+## Step 14 - Switch back to the "main" branch of the Demos repo
 
 1. In the lower left corner of Visual Studio Code, look at the branch name.
 
@@ -563,7 +543,7 @@ Continue with the next section.
 
 
 <!-- ====================================================================== -->
-## Uninstall the local app
+## Step 15 - Uninstall the local app
 
 You can uninstall the sample as a local app on the device, by starting from the running **Temperature converter app** window.
 
@@ -586,7 +566,7 @@ You could also uninstall the sample PWA by starting from Microsoft Edge; you'd d
 
 
 <!-- ====================================================================== -->
-## Stop the development web server
+## Step 16 - Stop the development web server
 
 1. In Visual Studio Code, in the **View** menu, select **Terminal**.
 
@@ -609,4 +589,25 @@ Then you can:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+* [Use PWAs in Microsoft Edge](../ux.md)
+* [Get started developing a PWA](../how-to/index.md)
+
+Localhost:
+* [http://localhost:8080](http://localhost:8080) - or equivalent URLs output by the `npx http-server` command.
+
+GitHub:
+* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample hosted at github.io.
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+VS Code:
+* [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
+
+git:
+* [Downloads](https://git-scm.com/downloads) at git-scm.com.
+
+Node.js:
+* [Node.js](https://nodejs.org).
+* [Download Node.js](https://nodejs.org/download)
