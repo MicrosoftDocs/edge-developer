@@ -1129,7 +1129,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/sample-code/sample-code.md",
-      "redirect_url": "/microsoft-edge/devtools/sample-code/sample-code",
+      "redirect_url": "/microsoft-edge/devtools/samples/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/sample-code/sample-code.md",
+      "redirect_url": "/microsoft-edge/devtools/samples/index",
       "redirect_document_id": false
     },
     {
