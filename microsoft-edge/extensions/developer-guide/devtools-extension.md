@@ -191,7 +191,7 @@ To create a basic DevTools extension with a sample panel:
    ```
     
    Reference:
-   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/devtools_panels/)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
       * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
 
 
@@ -272,7 +272,7 @@ In this step, you will use extension APIs to display memory information in your 
     ]
     ```
 
-    The `system-memory` permission is required, in order to use the extension APIs that you'll use later in this tutorial.  To learn more about the available APIs and associated permissions, see [API reference](https://developer.chrome.com/docs/extensions/reference/) for extension APIs.
+    The `system-memory` permission is required, in order to use the extension APIs that you'll use later in this tutorial.  To learn more about the available APIs and associated permissions, see [Reference](https://developer.chrome.com/docs/extensions/reference/) for extension APIs.
 
 
     **panel.html:**
@@ -350,7 +350,7 @@ To test your changes in Microsoft Edge, reload your extension from the `edge://e
    ![The new extension panel in DevTools, showing memory information](./devtools-extension-images/devtools-extension-with-memory-info.png)
 
 See also: 
-* [API Reference](https://developer.chrome.com/docs/extensions/reference/)
+* [Reference](https://developer.chrome.com/docs/extensions/reference/)
 
 
 <!-- ====================================================================== -->
@@ -561,13 +561,33 @@ To test the new `sayHello` button:
 This completes the tutorial and code walkthrough for creating a DevTools extension that adds a tool tab and panel in DevTools in Microsoft Edge.
 
 See also:
-* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) in the Chrome Extensions docs.
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-* [Samples for Microsoft Edge extensions](../samples.md)
-* [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
-* [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
-* [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)
+* [Overview of DevTools](../../devtools/overview.md)
+* [Samples for Microsoft Edge extensions](../samples/index.md)
+* [Overview and timelines for migrating to Manifest V3](./manifest-v3.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
+
+developer.chrome.com:
+* [Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+* [Extend DevTools](https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools)
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
+* [Reference](https://developer.chrome.com/docs/extensions/reference/)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
+      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+
+GitHub:
+* [Demos-main.zip](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main) - Downloads the **MicrosoftEdge > Demos** repo, rather than cloning it.
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Source code of the sample.
+   * [/devtools-extension/sample 1/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%201) - Phase 1 of the sample.
+   * [/devtools-extension/sample 2/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%202) - Phase 2 of the sample.
+   * [/devtools-extension/sample 3/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203) - Phase 3 of the sample.
+   * [/devtools-extension/sample 4/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%204) - Phase 4 of the sample.
+  
+Tools:
+* [Visual Studio Code](https://code.visualstudio.com)

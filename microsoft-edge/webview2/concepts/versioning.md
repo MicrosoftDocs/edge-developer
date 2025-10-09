@@ -188,5 +188,7 @@ If your code determines that an API is unavailable in the client's installed Web
 <!-- ====================================================================== -->
 ## See also
 
+* [WebView2 deployment samples](../samples/deployment-samples.md)
+
 <!-- External: -->
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

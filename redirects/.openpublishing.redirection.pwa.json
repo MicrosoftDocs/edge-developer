@@ -168,7 +168,12 @@
     },
     {
       "source_path": "../microsoft-edge/progressive-web-apps-chromium/demo-pwas.md",
-      "redirect_url": "/microsoft-edge/progressive-web-apps/demo-pwas",
+      "redirect_url": "/microsoft-edge/progressive-web-apps/samples/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/progressive-web-apps/demo-pwas.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps/samples/index",
       "redirect_document_id": false
     }
     // /pwa toc 2025/06/19

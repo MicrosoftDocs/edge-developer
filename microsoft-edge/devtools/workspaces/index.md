@@ -212,7 +212,7 @@ See also:
 ## See also
 
 * [Workspace tutorial (Sources tool Workspace tab)](./workspace-tutorial.md)
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 
