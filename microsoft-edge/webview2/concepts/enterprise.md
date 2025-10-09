@@ -31,7 +31,7 @@ To configure update policies for Microsoft Edge (and the WebView2 Runtime), see 
 
 
 <!-- ------------------------------ -->
-#### Suppressing updating of the WebView2 Runtime
+#### Suppressing WebView2 Runtime updates
 
 An IT admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
 
@@ -41,7 +41,7 @@ However, users should not stop updating their WebView2 Runtime; users should not
 <!-- ---------- -->
 ###### Evergreen Runtime is recommended, rather than a fixed version
 
-Using the Evergreen WebView2 Runtime is recommended, unless business-critical requirements necessitate a fixed version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
+Using the Evergreen WebView2 Runtime is recommended, unless business-critical requirements necessitate using a fixed version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
 * Helps minimize exposure to known vulnerabilities.
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
