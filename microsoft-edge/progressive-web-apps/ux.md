@@ -153,7 +153,7 @@ To set a PWA to automatically start when you sign in to Windows, while installin
 
 When a user selects the **Settings and more** (**...**) button in the title bar of a Progressive Web App (PWA), the **App info** menu/dialog is displayed:
 
-![The 'App info' menu](./ux-images/app-info-menu.png)<!-- todo: redo png served from github.io not localhost -->
+![The 'App info' menu](./ux-images/app-info-menu.png)
 
 The **App info** menu contains the following:
 
