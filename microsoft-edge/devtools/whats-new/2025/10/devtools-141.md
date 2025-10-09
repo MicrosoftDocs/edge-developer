@@ -23,7 +23,7 @@ CSS masonry layout is supported in the **Layout** tab of the **Elements** tool. 
 ![The Grid/Masonry section in the Layout tab](./devtools-141-images/masonry-layout-tab.png)
 
 In the **Overlay display settings** section, you can control whether to display:
-* Line numbers and line names.
+* Line numbers or line names.
 * Track sizes.
 * Area names.
 
@@ -32,7 +32,10 @@ The **masonry** adorner appears next to elements in the DOM tree, similar to the
 ![The "masonry" adorner on the body tag in the DOM tree](./devtools-141-images/masonry-adorner.png)
 
 See also:
+* [Inspect CSS Grid](/microsoft-edge/devtools/css/grid)
 * [CSS Masonry demos](https://github.com/MicrosoftEdge/Demos/tree/main/css-masonry)
+* [Brick by brick: Help us build CSS Masonry](https://developer.chrome.com/blog/masonry-update) - Blog post.
+* [Elements > Layout tab adds masonry layout support](https://developer.chrome.com/blog/new-in-devtools-141#masonry) - Chromium What's New.
 
 
 <!-- ====================================================================== -->
