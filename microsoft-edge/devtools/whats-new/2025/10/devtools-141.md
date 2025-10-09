@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 141)
-description: CSS masonry layout support in the Elements tool. And more.  # key words before col 158
+description: CSS masonry layout support in the Elements tool. Persisted track configuration in the Performance panel. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -40,13 +40,9 @@ See also:
 
 Microsoft Edge 141 also includes the following updates from the Chromium project:
 
-* [Debug more insights with Gemini](https://developer.chrome.com/blog/new-in-devtools-140#ai-insights)
-* [Emulate the 'Save-Data' header in 'Network conditions'](https://developer.chrome.com/blog/new-in-devtools-140#save-data)
-* [See the Baseline status in a CSS property tooltip](https://developer.chrome.com/blog/new-in-devtools-140#baseline-tooltip)
-* [Override form factors in user agent client hints](https://developer.chrome.com/blog/new-in-devtools-140#form-factors)
-* [Lighthouse 12.8.0](https://developer.chrome.com/blog/new-in-devtools-140#lighthouse)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-140#misc)
-<!-- todo: maybe remove some links -->
+* [Persisted track configuration in the Performance panel](https://developer.chrome.com/blog/new-in-devtools-141#persisted-track-config)
+* [Filter IP protected network requests](https://developer.chrome.com/blog/new-in-devtools-141#ipp)
+* [Elements > Layout tab adds masonry layout support](https://developer.chrome.com/blog/new-in-devtools-141#masonry)
 
 
 <!-- ====================================================================== -->
