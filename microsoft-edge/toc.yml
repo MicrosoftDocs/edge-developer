@@ -1574,7 +1574,7 @@
               displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Evergreen vs. fixed version of the WebView2 Runtime
-              href: ./webview2/concepts/evergreeen-vs-fixed-version.md
+              href: ./webview2/concepts/evergreen-vs-fixed-version.md
 
             - name: Distribute your app and the WebView2 Runtime
               href: ./webview2/concepts/distribution.md
