@@ -242,6 +242,9 @@ landingContent:
           - text: Prerelease and Release SDKs for WebView2
             url: ../concepts/versioning.md
 
+          - text: Evergreen vs. fixed version of the WebView2 Runtime
+            url: ../concepts/evergreen-vs-fixed-version.md
+
           - text: Distribute your app and the WebView2 Runtime
             url: ../concepts/distribution.md
 
