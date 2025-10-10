@@ -21,19 +21,13 @@ See also:
 <!-- ====================================================================== -->
 ## Step 1 - Preview the app running as a web app at the github.io web server
 
-**TODO: RESUME HERE, TESTING THE STEPS**
-
 To examine the user interface of the app:
 
 1. On Windows,<!-- todo: does this sample and tut support macOS, Linux? --> in Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app in a new window or tab (hosted at github.io):
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
 
-   The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** button in the Address bar.
-
-1. In the Address bar, hover over the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button, but don't click it yet.
-
-   In a later step, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.  You'll click the **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button later, when running the web app from your localhost server, which is the workflow while developing and testing a Progressive Web App (PWA).
+   The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button (don't click it yet).
 
 1. In the **temperature** text box, type **22**.
 
@@ -50,11 +44,15 @@ To examine the user interface of the app:
 
    ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
-   The window is a browser-based window, without most of the browser UI.
+   The window is a browser-based window, without most of the browser UI.  The local app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
 
    This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a Progressive Web App (PWA) while developing it.  Your own, actual Progressive Web App (PWA), after testing it, would be hosted at your web server that users can access.
 
    The sample is a _Progressive_ Web App, rather than a regular web app.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
+
+1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app (hosted at github.io).
+
+   In a later step, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.  You'll click the **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button later, when running the web app from your localhost server.  That's the workflow while developing and testing a Progressive Web App (PWA).
 
 
 <!-- ====================================================================== -->
@@ -68,6 +66,10 @@ Install or update VS Code, as follows:
 
 1. If Visual Studio Code isn't installed, go to [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
 
+1. If Visual Studio Code prompts you with a dialog saying **Restart Visual Studio Code to apply the latest update**, click the **Update Now** button:
+
+   ![Update VS Code](./temperature-converter-images/update-vs-code.png)
+
 
 <!-- ====================================================================== -->
 ## Step 3 - Install or update git
@@ -78,7 +80,7 @@ Install or update git, as follows:
 
 1. In the **View** menu, select **Terminal**. <!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
 
-1. In a command prompt, enter `git -v` to check whether git is installed, and which version is installed.
+1. Enter the command: `git -v`
 
    If git is installed, a version number is displayed, such as `git version 2.51.0.windows.2`.
 
@@ -133,10 +135,11 @@ Install or update Node.js, as follows:
 
 <!-- ====================================================================== -->
 ## Step 5 - Clone the Edge Demos repo, to get a local copy of the code
-
 <!-- derived from 
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
+
+**TODO: RESUME HERE, TESTING THE STEPS**
 
 Next, you'll clone (or update) the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code in the `/Demos/pwa-getting-started/` directory.
 
