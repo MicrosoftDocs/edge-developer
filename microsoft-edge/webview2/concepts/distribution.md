@@ -9,97 +9,16 @@ ms.subservice: webview
 ms.date: 06/27/2024
 ---
 # Distribute your app and the WebView2 Runtime
-<!-- todo: mention key words in title:
-# Distribute your app and the WebView2 Runtime (Evergreen vs. fixed)
--->
-
-When releasing an app that uses Microsoft Edge WebView2, you need to distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
-
-A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
-
-
-<!-- ====================================================================== -->
-## The WebView2 Runtime
-
-The WebView2 Runtime is a redistributable runtime and serves as the underlying (or _backing_) web platform for WebView2 apps.  The concept is similar to Visual C++ or the .NET Runtime for C++/.NET apps.  The WebView2 Runtime contains modified Microsoft Edge binaries that are fine-tuned and tested for WebView2 apps.  After the WebView2 Runtime is installed, it doesn't appear as a user-visible browser app.  For example, a user doesn't have a browser desktop shortcut or an entry in the **Start** menu.
-
-There are two different ways of distributing and updating the WebView2 Runtime to client machines: the Evergreen distribution mode, and the Fixed Version distribution mode.
-
-
-<!-- ====================================================================== -->
-## The Evergreen Runtime distribution mode
-
-In the _Evergreen_ distribution mode, the WebView2 Runtime isn't packaged with your app, but is initially installed onto clients using an online bootstrapper or an offline installer.  Afterwards, the WebView2 Runtime is automatically updated on client machines.  You can then distribute updates of your WebView2 app that use the latest WebView2 APIs, from the latest WebView2 SDK.  The Evergreen distribution mode is recommended for most developers.
-
-Pros:
-
-*  The underlying web platform (WebView2 Runtime) updates automatically without more effort from you.
-
-*  Less disk space is required for the WebView2 Runtime on client systems, because the WebView2 Runtime is shared by all WebView2 apps that are on the client.
-
-*  On eligible systems, binaries for Microsoft Edge and the Evergreen WebView2 Runtime are hard-linked together when they are on the same version.  This linking provides benefits for disk footprint, memory, and performance.
-
-Cons:
-
-*  Your WebView2 app cannot specify that a particular version of the WebView2 Runtime is required.
-
-
-<!-- ------------------------------ -->
-#### Windows 11 devices and Windows 10 devices
-<!-- #### Which devices already have WebView2 Runtime installed and how to distribute for edge cases -->
-
-The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 operating system.  Microsoft installed the WebView2 Runtime to all eligible Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.  See [Details about the Evergreen Runtime distribution mode](#details-about-the-evergreen-runtime-distribution-mode) below.
-
-
-<!-- ====================================================================== -->
-## The Fixed Version runtime distribution mode
-
-In the _Fixed Version_ distribution mode, you download a specific version of the WebView2 Runtime and package it together with your WebView2 app in your app package.  The WebView2 Runtime that you package with your app is used only by your WebView2 app, not by any other apps on the client's machine.
-
-Pros:
-*  You have more control over versioning of the WebView2 Runtime.  You know which WebView2 APIs are available to your app, because you control which version of the WebView2 Runtime is available to your app.  Your app doesn't need to test whether the latest APIs are present.
-
-Cons:
-
-*  You need to manage the WebView2 Runtime yourself.  The WebView2 Runtime isn't automatically updated on clients, so to use the latest WebView2 APIs, you must periodically update your app together with the updated WebView2 Runtime.
-
-*  More disk space is required on the client, if there are multiple WebView2 apps installed.
-
-*  The Fixed Version runtime can't be installed by using an installer.
-
-
-<!-- ====================================================================== -->
-## Understanding the options at the Runtime download page
-
-The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
-
-![Options for distributing and updating the WebView2 Runtime](./distribution-images/runtime-distrib-options.png)
-
-The Evergreen distribution mode is recommended for most apps.
-
-*  The **Evergreen Bootstrapper** section of the page provides a small Evergreen Runtime bootstrapper that runs on the client machine, for online users.  The bootstrapper downloads and installs the appropriate Evergreen WebView2 Runtime onto the client.  You can use the bootstrapper a couple different ways:
-
-   *  Link to the bootstrapper, using a link that you obtain from the **Get the Link** button.  Your app uses this link to programmatically download the bootstrapper onto the client and invoke the bootstrapper.  This approach avoids the need to package the bootstrapper with your app.  This approach has a dependency on Microsoft's Content Delivery Network (CDN), to get the bootstrapper.
-
-   *  Download the bootstrapper (using the **Download** button in the **Bootstrapper** section) and then distribute the bootstrapper with your app.  In this approach, you package the bootstrapper with your app installer/updater or with your app itself, and invoke the bootstrapper that you included with your app.  This approach avoids dependency on Microsoft's CDN, to get the bootstrapper.
-
-*  The **Evergreen Standalone Installer** section of the page provides a large, standalone Evergreen installer, primarily for offline users.  In this approach, you package the standalone installer with your app installer/updater or app itself, and invoke the Evergreen Standalone installer.  This approach avoids dependency on Microsoft's CDN, to get the Runtime.
-
-*  The **Fixed Version** section of the page provides a Fixed Version runtime, which is a specific version of the WebView2 Runtime that you distribute along with your app.
-
-
-<!-- ====================================================================== -->
-## Details about the WebView2 Runtime
 
 When distributing your WebView2 app, make sure that the WebView2 Runtime is present on the client machine.  This requirement applies to both the Evergreen and Fixed Version distribution modes.
 
-If you want to use the Fixed Version distribution mode, you can skip the next couple of sections and jump ahead to [Details about the Fixed Version runtime distribution mode](#details-about-the-fixed-version-runtime-distribution-mode).
+For background information, see [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md).
 
 
 <!-- ------------------------------ -->
-#### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
+#### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 
 
 <!-- ------------------------------ -->
@@ -131,7 +50,7 @@ Before your app creates a WebView2, the app should check whether the WebView2 Ru
 
 
 <!-- ====================================================================== -->
-## Details about the Evergreen Runtime distribution mode
+## The Evergreen Runtime distribution mode
 
 The Evergreen distribution mode ensures that your WebView2 app is taking advantage of the latest WebView2 features and security updates.  The Evergreen distribution mode has the following characteristics:
 
@@ -154,7 +73,7 @@ The vast majority of Windows 10 devices have the WebView2 Runtime installed alre
 *  Redirect your end users to the Microsoft site: [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/), and have end users download the Evergreen WebView2 Runtime installer from the site and install the Runtime themselves.
 
 See also:
-* [Prerelease and Release SDKs for WebView2](versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
+* [Prerelease and Release SDKs for WebView2](./versioning.md) - Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge; or use a Release version of the SDK along with the Evergreen WebView2 Runtime.
 * [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
 
 
@@ -210,7 +129,7 @@ To verify that a WebView2 Runtime is installed, use one of the following approac
       HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
       ```
 
-   *  Approach 2: Run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the WebView2 Runtime isn't installed.  This API returns version information for the WebView2 Runtime or for any installed preview channels of Microsoft Edge (Beta, Dev, or Canary).
+   *  Approach 2: Run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring)<!-- todo: try std link format --> and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the WebView2 Runtime isn't installed.  This API returns version information for the WebView2 Runtime or for any installed preview channels of Microsoft Edge (Beta, Dev, or Canary).
 
 
 <!-- ---------- -->
@@ -305,13 +224,13 @@ For best practices about how to test your app for forward-compatibility, see [Pr
 
 When using Evergreen mode in WebView2 apps, it's crucial to check for the presence of new APIs on the client's machine, by using methods like `QueryInterface` or `try-catch`, because the client machine might not have the latest WebView2 Runtime, containing the new APIs.  Updates to the WebView2 Runtime might not occur if an IT Admin disables updating, or if the client is offline.
 
-For details, see [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
+For details, see [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
 There are separate update policies for Microsoft Edge and the WebView2 Runtime.  Disabling updates for Microsoft Edge doesn't impact the availability of the latest WebView2 APIs, because the WebView2 Runtime can still update automatically (unless updating the WebView2 Runtime is disabled by an Admin).
 
 
 <!-- ====================================================================== -->
-## Details about the Fixed Version runtime distribution mode
+## The Fixed Version runtime distribution mode
 
 For constrained environments that have strict compatibility requirements, consider using the Fixed Version distribution mode.  (The Fixed Version distribution mode was previously called _bring-your-own_.)
 
@@ -331,7 +250,7 @@ To use the Fixed Version distribution mode:
 
 1. Indicate the path to the Fixed Version binaries when creating the WebView2 environment.
 
-   *  For Win32 C/C++, you can create the environment using the [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) function.  Use the `browserExecutableFolder` parameter to indicate the path to the folder that contains `msedgewebview2.exe`.
+   *  For Win32 C/C++, you can create the environment using the [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)<!-- todo: try std link format --> function.  Use the `browserExecutableFolder` parameter to indicate the path to the folder that contains `msedgewebview2.exe`.
 
    *  For .NET, you must specify the environment before the WebView2 `Source` property takes effect.  For .NET, you can use either of the following approaches to specify the environment:
 
@@ -392,7 +311,7 @@ To use the Fixed Version distribution mode:
 <!-- ====================================================================== -->
 ## Files to ship with the app
 
-The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there might be cases when you need to manually specify what files to publish with your app.
+The `WebView2Loader` code needs to be shipped with the app.  This can be done by statically linking `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there might be cases when you need to manually specify what files to publish with your app.  To statically link the WebView2 loader library, see [Distribute a WebView2 app as a single executable file](../how-to/static.md).
 
 `WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example:
 
@@ -425,6 +344,64 @@ Example managed app folder structure:
 
 <!-- ====================================================================== -->
 ## See also
+<!-- links in the article -->
 
-<!-- External: -->
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+<!-- Local: toc order -->
+* [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
+   * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
+* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
+* [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
+* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
+* [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
+* [Distribute a WebView2 app as a single executable file](../how-to/static.md) - statically linking the WebView2 loader library.
+
+Enterprise docs:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- link not in article body -->
+* [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel)
+* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security)
+
+developer.microsoft.com:
+* [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - Developers.
+* [Download Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/consumer/) - End users.
+
+Blogs:
+* [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/)
+* [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/)
+
+Windows:
+* [Install Windows 10 apps with App Installer](/windows/msix/app-installer/app-installer-root)
+
+GitHub:
+* [Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment)
+
+Windows Runtime API:
+* [win32dependencies:ExternalDependency (Windows 10, Windows 11)](/uwp/schemas/appxpackage/uapmanifestschema/element-win32dependencies-externaldependency) in the App package manifest docs.
+
+.NET Reference:
+* the `CreationProperties` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2)) property on the `WebView2` element.
+* the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms))
+* `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) to specify the environment
+* the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync)
+
+WebView2 Reference:
+* [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring)<!-- todo: try std link format -->
+* [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions)<!-- todo: try std link format -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Environment` Class:
+   * [NewBrowserVersionAvailable Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#newbrowserversionavailable)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+   * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)
+   * [remove_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
+
+---

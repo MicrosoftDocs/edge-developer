@@ -66,6 +66,7 @@ Preview channels of Microsoft Edge provide the implementations of Experimental W
 For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 See also:
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)
 
@@ -81,7 +82,9 @@ The Release SDK package contains the following components:
 *  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
 *  .NET APIs:  [WPF](/dotnet/api/microsoft.web.webview2.wpf), [WinForms](/dotnet/api/microsoft.web.webview2.winforms), and [Core](/dotnet/api/microsoft.web.webview2.core).
 
-For more information about automatic updating of the Evergreen Runtime, see [Distribute your app and the WebView2 Runtime](distribution.md).
+For more information about automatic updating of the Evergreen Runtime, see:
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+* [Distribute your app and the WebView2 Runtime](distribution.md)
 
 
 <!-- ====================================================================== -->
@@ -143,6 +146,9 @@ The WebView2 team is seeking feedback on Experimental WebView2 APIs that might b
 
 To help you evaluate the Experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
+See also:
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+
 
 <!-- ------------------------------ -->
 #### Moving from Experimental APIs to Stable APIs
@@ -171,7 +177,6 @@ To check the compatibility between specific build numbers of the SDK and the Run
 <!-- ====================================================================== -->
 ## Feature-detecting to test whether the installed Runtime supports recently added APIs
 
-
 If your app uses the Evergreen Runtime rather than Fixed Version, you should wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.  There are edge cases where a client's Evergreen Runtime isn't the latest build and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline.
 
 When you develop a WebView2 app using a recent version of the WebView2 SDK, if you use a recently added API, you should test or "feature-detect" whether that API is present in the client's installed WebView2 Runtime.  How your app programmatically tests for API support depends on the coding platform.
@@ -187,6 +192,8 @@ If your code determines that an API is unavailable in the client's installed Web
 
 <!-- ====================================================================== -->
 ## See also
+
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 
 <!-- External: -->
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
