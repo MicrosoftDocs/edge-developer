@@ -30,6 +30,8 @@ Use the **Performance** tool to analyze your website's performance.  There are t
 * Record a profile and view a performance timeline.
 
 **Detailed contents:**
+<!-- https://github.com/captainbrosset/WebToc -->
+
 * [Overview](#overview)
    * [Open the Performance tool](#open-the-performance-tool)
       * [Using the Command Menu](#using-the-command-menu)
