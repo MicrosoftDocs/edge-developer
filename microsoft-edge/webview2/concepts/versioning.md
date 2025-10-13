@@ -182,7 +182,7 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, if y
 
 
 <!-- ------------------------------ -->
-#### .NET and WinUI, and WinRT<!-- todo: review addition of WinRT -->
+#### .NET and WinUI, and WinRT
 
 Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
 
