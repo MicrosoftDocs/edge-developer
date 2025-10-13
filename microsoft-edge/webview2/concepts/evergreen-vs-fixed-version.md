@@ -42,15 +42,22 @@ Cons:
 
 *  Your WebView2 app cannot specify that a particular version of the WebView2 Runtime is required.
 
+See also:
+* [The Evergreen Runtime distribution mode](./distribution.md#the-evergreen-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
+
 
 <!-- ------------------------------ -->
 #### Windows 11 devices and Windows 10 devices
-<!-- #### Which devices already have WebView2 Runtime installed and how to distribute for edge cases -->
+<!--
+#### Which devices already have WebView2 Runtime installed and how to distribute for edge cases
+-->
 
-The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 operating system.  Microsoft installed the WebView2 Runtime to all eligible Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).  Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.
+The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of the Windows 11 operating system.  Microsoft installed the WebView2 Runtime to all eligible Windows 10 devices, as described in [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/).
 
-See:
-* [The Evergreen Runtime distribution mode](./distribution.md#the-evergreen-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
+Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.
+
+For details, see:
+* [Windows 11 devices and Windows 10 devices (details)](./distribution.md#windows-11-devices-and-windows-10-devices-details) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
@@ -68,6 +75,9 @@ Cons:
 *  More disk space is required on the client, if there are multiple WebView2 apps installed.
 
 *  The Fixed Version runtime can't be installed by using an installer.
+
+See also:
+* [The Fixed Version runtime distribution mode](./distribution.md#the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
@@ -95,6 +105,8 @@ The Evergreen distribution mode is recommended for most apps.
 <!-- all links in the article -->
 
 * [Distribute your app and the WebView2 Runtime](./distribution.md)
+   * [The Evergreen Runtime distribution mode](./distribution.md#the-evergreen-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
+   * [The Fixed Version runtime distribution mode](./distribution.md#the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
 
 External:
 * [Delivering Microsoft Edge WebView2 Runtime to managed Windows 10 devices](https://blogs.windows.com/msedgedev/2022/12/14/delivering-microsoft-edge-webview2-runtime-to-managed-windows-10-devices/)

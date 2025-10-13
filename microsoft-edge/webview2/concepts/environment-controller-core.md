@@ -18,10 +18,12 @@ ms.date: 06/24/2022
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
 *  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+
 *  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+
 *  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
-<!-- / keep sync'd -->
+<!-- / end of keep sync'd -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -44,10 +46,14 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 ---
 
 
-Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
+<!-- ====================================================================== -->
+## Cross-platform API implementation
+
+Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
 
 
-#### Overview of the top-level classes
+<!-- ====================================================================== -->
+## Overview of the top-level classes
 
 Overview of:
 * `CoreWebView2Environment`
@@ -69,17 +75,9 @@ From the `CoreWebView2Environment`, you create `CoreWebView2Controller` and `Cor
 *  The `CoreWebView2` is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 
-#### UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
+<!-- ====================================================================== -->
+## UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
 
 It's different if you are using a UI framework-specific WebView2 element class like our WPF, WinForms, or WinUI WebView2 classes. 
 
 Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use, and otherwise it will create a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.  The `WebView2` exposes its `CoreWebView2` as a `CoreWebView2` property, but the `CoreWebView2Controller` is kept private to the `WebView2` class.  This is because the `WebView2` class is responsible for connecting all of the `CoreWebView2Controller` functionality to the UI framework.
-
-
-<!-- ====================================================================== -->
-<!-- ## See also -->
-
-<!--
-* []()
-* []()
--->

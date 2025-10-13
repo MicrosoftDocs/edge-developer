@@ -100,18 +100,19 @@ If any of your app's event handlers on the `CoreWebView2Environment` object hold
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [CoreWebView2Environment.CreateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+   * [CoreWebView2Environment.CreateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
-* [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) in _Globals_.
+* [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) in _Globals_.<!-- the original lone link instead of this tabset -->
 
 ---
-
 
 To prevent such a memory leak:
 
