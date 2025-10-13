@@ -9,6 +9,9 @@ ms.subservice: webview
 ms.date: 06/27/2024
 ---
 # Distribute your app and the WebView2 Runtime
+<!-- todo: mention key words in title:
+# Distribute your app and the WebView2 Runtime (Evergreen vs. fixed)
+-->
 
 When releasing an app that uses Microsoft Edge WebView2, you need to distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
