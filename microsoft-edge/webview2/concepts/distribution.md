@@ -9,6 +9,7 @@ ms.subservice: webview
 ms.date: 06/27/2024
 ---
 # Distribute your app and the WebView2 Runtime
+<!-- https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime links to this article -->
 <!-- could break out articles per scenario:
 # Distribute your app and the WebView2 Runtime - Evergreen
 # Distribute your app and the WebView2 Runtime - fixed version
@@ -87,7 +88,7 @@ See also:
 <!-- ------------------------------ -->
 #### Deploying the Evergreen WebView2 Runtime
 
-Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to help you deploy the Evergreen Runtime.
+Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) to help you deploy the Evergreen Runtime.
 
 *  For online clients: _WebView2 Runtime Bootstrapper_ is a tiny (approximately 2 MB) installer.  The WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
 
@@ -176,7 +177,7 @@ Alternatively, instead of programmatically downloading the bootstrapper on-deman
 
 If you have an offline deployment scenario, where app deployment has to work entirely offline, use the following workflow.
 
-1. Download the Evergreen Standalone Installer from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) to your development machine.  The Evergreen Standalone Installer installs the Evergreen WebView2 Runtime on the client.
+1. Download the Evergreen Standalone Installer from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) to your development machine.  The Evergreen Standalone Installer installs the Evergreen WebView2 Runtime on the client.
 
 1. Include the Evergreen Standalone Installer in your app installer or updater.
 
@@ -247,7 +248,7 @@ The Fixed Version binaries are over 250 MB and will make your app package larger
 
 To use the Fixed Version distribution mode:
 
-1. Download the Fixed Version of the WebView2 Runtime from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section), as a package.
+1. Download the Fixed Version of the WebView2 Runtime from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime), as a package.
 
    The most-patched version of the latest and second-latest major releases are available for download at this site.  Keep an archived copy of any versions you need.
 
