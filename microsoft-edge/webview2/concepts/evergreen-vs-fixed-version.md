@@ -56,7 +56,7 @@ The Evergreen Runtime is preinstalled onto all Windows 11 devices as a part of t
 
 Even if your app uses the Evergreen distribution mode, we recommend that you distribute the WebView2 Runtime, to cover edge cases where the Runtime wasn't already installed.
 
-For details, see:
+See:
 * [Windows 11 devices and Windows 10 devices (details)](./distribution.md#windows-11-devices-and-windows-10-devices-details) in _Distribute your app and the WebView2 Runtime_.
 
 
