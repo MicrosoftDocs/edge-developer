@@ -111,4 +111,4 @@ Progressive Web Apps (PWAs) don't work in FSLogix environments.  In an FSLogix e
 
 This is a known restriction.
 
-FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  FSLogix isn't limited to virtual desktop environments, but could be used on physical desktops where a more portable user experience is desired.  For more information, see [FSLogix documentation](https://learn.microsoft.com/fslogix/).
+FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  FSLogix isn't limited to virtual desktop environments, but could be used on physical desktops where a more portable user experience is desired.  For more information, see [FSLogix documentation](/fslogix/).
