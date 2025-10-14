@@ -102,3 +102,13 @@ The **App info** menu contains useful information about the app, such as:
 *  The various app permissions that have been granted.
 *  Privacy information such as the number of cookies used.
 *  Lists of extensions and tools that can be used in the app.
+
+
+<!-- ====================================================================== -->
+## Restrictions: PWAs aren't supported in FSLogix environments
+
+Progressive Web Apps (PWAs) don't work in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.
+
+This is a known restriction.
+
+FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  FSLogix isn't limited to virtual desktop environments, but could be used on physical desktops where a more portable user experience is desired.  For more information, see [FSLogix documentation](https://learn.microsoft.com/fslogix/).
