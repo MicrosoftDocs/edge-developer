@@ -140,10 +140,12 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
 *  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+
 *  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+
 *  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
-<!-- / keep sync'd -->
+<!-- / end of keep sync'd -->
 
 See also:
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md)
