@@ -1568,20 +1568,25 @@
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
           items:
-            - name: Distribute your app and the WebView2 Runtime
-              href: ./webview2/concepts/distribution.md
-
             - name: Prerelease and Release SDKs for WebView2
               href: ./webview2/concepts/versioning.md
               displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
-            - name: Enterprise management of WebView2 Runtimes
-              href: ./webview2/concepts/enterprise.md
-              displayName: Manage WebView2 applications  # old title
+            - name: Distribute the app and Runtime
+              items:
+                - name: Evergreen vs. fixed version of the WebView2 Runtime
+                  href: ./webview2/concepts/evergreen-vs-fixed-version.md
 
-            - name: Distribute an app as a single executable file
-              href: ./webview2/how-to/static.md
-              displayName: Statically link the WebView2 loader library, single-file app  # old title
+                - name: Distribute your app and the WebView2 Runtime
+                  href: ./webview2/concepts/distribution.md
+
+                - name: Enterprise management of WebView2 Runtimes
+                  href: ./webview2/concepts/enterprise.md
+                  displayName: Manage WebView2 applications  # old title
+
+                - name: Distribute an app as a single executable file
+                  href: ./webview2/how-to/static.md
+                  displayName: Statically link the WebView2 loader library, single-file app  # old title
 
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: ./webview2/how-to/publish-uwp-app-store.md
