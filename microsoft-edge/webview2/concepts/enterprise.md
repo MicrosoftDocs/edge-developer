@@ -46,9 +46,10 @@ Using the Evergreen WebView2 Runtime is recommended, unless business-critical re
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
 
-For information about Evergreen vs. fixed version of the Runtime, see [Distribute your app and the WebView2 Runtime](./distribution.md).
-
 For details about security fixes in Microsoft Edge (which apply to WebView2 as well), see [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
+
+See also:
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 
 
 <!-- ---------- -->
