@@ -19,7 +19,8 @@ These demo PWAs show how to use features and APIs that can progressively enhance
 
 The first sample to use when getting started is the [Temperature converter sample](./temperature-converter.md).
 
-Most of these demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas) repo.
+
 <!-- section order:
 by repo dir, per https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
 followed by other repos
