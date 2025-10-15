@@ -21,7 +21,7 @@ By using this article along with [Temperature converter sample](../samples/tempe
 This sample Progressive Web App (PWA) is built by using web technologies.  A Progressive Web App (PWA) can be installed and run on all devices, from a single codebase.
 
 See also:
-* [Temperature converter sample](../samples/temperature-converter.md) - steps to use the sample that's explained below.
+* [Temperature converter sample](../samples/temperature-converter.md)
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 
 
@@ -57,13 +57,11 @@ If the Progressive Web App (PWA) has no backend code, the Progressive Web App (P
 
 Some parts of the Progressive Web Apps (PWAs) platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the Progressive Web App (PWA) APIs without HTTPS.
 
-When your own Progressive Web App (PWA) goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
+When your Progressive Web App (PWA) goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
 
 For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
-You can also host your website on [GitHub Pages](https://pages.github.com/) (`pages.github.com`) which supports HTTPS too.
-
-todo: capabilities of pages.github.com vs. github.io - just a different URL?
+You can also host your website on GitHub Pages (`pages.github.com`) which supports HTTPS too.  See [GitHub Pages documentation](https://docs.github.com/pages).<!-- todo: capabilities of pages.github.com vs. github.io - just a different URL? -->
 
 
 <!-- ------------------------------ -->
@@ -72,12 +70,6 @@ todo: capabilities of pages.github.com vs. github.io - just a different URL?
 When using localhost web server, the URL begins with `http`, not `https`.  Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS, not HTTP.
 
 For development and debugging purposes, Microsoft Edge (or a window hosting a PWA local app) permits a `localhost` web server to use the Progressive Web App (PWA) APIs without HTTPS.
-
-When your Progressive Web App (PWA) goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
-
-For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
-
-You can also host your website on [GitHub Pages](https://pages.github.com/) which supports HTTPS too.
 
 
 <!-- ====================================================================== -->
@@ -229,13 +221,20 @@ Two additional files are are cached automatically by the browser:
 <!-- ------------------------------ -->
 #### Listening for the `install` event
 
-The service worker listens to the `install` event, which is triggered when the user installs the app, and uses it to cache the resources that your app needs to function offline, such as the initial HTML page, the converter JavaScript file, and the converter CSS file.  To enable installing the app, a JavaScript service worker file makes the app able to work offline (without always having an internet connection), by caching needed front-end files on the local device.
+The service worker listens to the `install` event, which is triggered when the user installs the app, and uses it to cache the resources that your app needs to function offline, such as:
+* The initial HTML page.
+* The app's JavaScript file that contains the app logic.
+* The app's CSS file.
+
+To enable installing the app, a JavaScript service worker file makes the app able to work offline (without always having an internet connection), by caching needed front-end files on the local device.
 
 
 <!-- ------------------------------ -->
 #### Listening for the `fetch` event
 
-The service worker intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.  The service worker returns cached resources so your app can work offline, and if that fails, the service worker attempts to download the file from the server instead.
+The service worker intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.
+
+The service worker returns cached resources so your app can work offline, and if that fails, the service worker attempts to download the file from the server instead.
 
 
 <!-- ------------------------------ -->
@@ -260,11 +259,35 @@ The temperature converter sample demonstrates only a small sample of what Progre
 
 There are additional [Best practices for PWAs](./best-practices.md) to make a Progressive Web App (PWA) feel like a native app:
 
-* Integrate within the operating system, such as by handling files.
-* Perform non-trivial computing tasks.
-* Get the app from app stores.
+* Integrate the app into the operating system, such as by handling files.
+
+* Perform nontrivial computing tasks.
+
+* Upload the app to app stores.
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+<!-- Local: in toc order -->
+* [Use PWAs in Microsoft Edge](../ux.md)
+   * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+* [Temperature converter sample](../samples/temperature-converter.md)
+   * [Step 9: Examine the service worker handling offline caching](../samples/temperature-converter.md#step-9-examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
+* [Best practices for PWAs](./best-practices.md)
+
+MDN:
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
+
+Hosting:
+* [GitHub Pages documentation](https://docs.github.com/pages)
+* [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web)
+   * [Azure free account](https://azure.microsoft.com/free)
+* [Let's Encrypt](https://letsencrypt.org)
+
+Sample:
+* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - live demo.
+   * [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) - source file.
