@@ -10,20 +10,20 @@ ms.date: 10/09/2025
 ---
 # Temperature converter sample
 
-The Temperature converter sample is a Progressive Web App (PWA).
+The Temperature converter sample is a Progressive Web App (PWA) that demonstrates the basics of how to build a PWA.  You can modify this sample to start creating your own PWA.
 
-This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.
+This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.  This sample works with multiple operating systems, including Windows.  This article provides steps for Windows; other platforms have similar steps.
 
 See also:
-* [Get started developing a PWA](../how-to/index.md) - explains the source code of the Temperature converter sample.
+* [Get started developing a PWA](../how-to/index.md).
 
 
 <!-- ====================================================================== -->
-## Step 1 - Preview the app running as a web app at the github.io web server
+## Step 1 - Preview the app running in a browser window
 
 To examine the user interface of the app:
 
-1. On Windows,<!-- todo: does this sample and tut support macOS, Linux? --> in Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app in a new window or tab (hosted at github.io):
+1. In Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app in a new window or tab (hosted at github.io):
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
 
@@ -46,29 +46,25 @@ To examine the user interface of the app:
 
    The window is a browser-based window, without most of the browser UI.  The local app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
 
-   This instance of the sample app is hosted at github.io.  The sections below use your own, localhost server, instead, to show how to locally test a Progressive Web App (PWA) while developing it.  Your own, actual Progressive Web App (PWA), after testing it, would be hosted at your web server that users can access.
+   This instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.
 
-   The sample is a _Progressive_ Web App, rather than a regular web app.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
+   The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
 
-1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app (hosted at github.io).
+1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app.
 
-   In a later step, you'll access the web app from `localhost` (as you'd do during development) instead of from `github.io`, and install it to the local machine from there.  You'll click the **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button later, when running the web app from your localhost server.  That's the workflow while developing and testing a Progressive Web App (PWA).
+   In a later step, you'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install or update Visual Studio Code
+## Step 2 - Install Visual Studio Code
 
 Visual Studio Code enables viewing the sample code, modifying the sample, and creating your own Progressive Web App (PWA) by using the sample as a starting point.
 
-Install or update VS Code, as follows:
+Install (or optionally update) VS Code, as follows:
 
 1. Press the **Windows** key, enter **Visual Studio Code**, and then click **Open**.
 
 1. If Visual Studio Code isn't installed, go to [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
-
-1. If Visual Studio Code prompts you with a dialog saying **Restart Visual Studio Code to apply the latest update**, click the **Update Now** button:
-
-   ![Update VS Code](./temperature-converter-images/update-vs-code.png)
 
 
 <!-- ====================================================================== -->
@@ -194,13 +190,11 @@ See also:
 <!-- ====================================================================== -->
 ## Step 6 - Run the PWA as a web app on your localhost web server; Start the development web server
 
-Run and test the sample Progressive Web App (PWA) as a web app on your localhost web server, in Microsoft Edge.
+Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.
 
-While developing or testing a Progressive Web App (PWA), you use a local web server.  `http-server` is a local web server that's included with the Node.js library.
+While developing or testing a web site or app, including a PWA, you can use a local web server.  However, when the app is ready for users, you deploy the app to the web by using a web hosting provider.  Like a regular web site or app, a PWA is distributed to users by using a web server.
 
-Like a regular web app, a Progressive Web App (PWA) is distributed to users by using a web server.  When the app is ready for users, you deploy the app to the web by using a web hosting provider.  You can then update the app by deploying the new version of the app to your web server.
-
-To start developing a Progressive Web App (PWA), you can use a local web server instead of a production web server.
+In this section, you use `http-server`, a local development web server that can be run in Node.js.
 
 Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 
@@ -219,7 +213,7 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
    npx http-server
    ```
 
-   The above command starts the local development web server by using the `http-server` Node.js library.
+   The above command starts the local development web server by using the `http-server` NPM package.
 
 1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command and then issue the npx command again:
 
@@ -250,13 +244,6 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
    ```
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
-
-1. If needed (such as to reflect custom edits of the sample code), Refresh the page.
-
-   Use whichever level of Refresh is required to refresh the PWA UI during development:
-   * Refresh (**F5**).
-   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
-   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
 
 
 <!-- ====================================================================== -->
@@ -309,8 +296,6 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
    ![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
-   The service worker (`sw.js`) is running.  The localhost server is automatically running<!-- todo: is npx server auto-started? -->.
-
    Because you installed the app from `localhost`, when you start the app, the right side of the title bar displays **localhost:8080** for a few seconds:
 
    ![The installed sample Progressive Web App (PWA) if installed from localhost](./temperature-converter-images/installed-from-localhost.png)
@@ -336,54 +321,13 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
 The local app window for a Progressive Web App (PWA) is a browser-based window, so Microsoft Edge DevTools can be used to work with the PWA.
 
-
-<!-- ------------------------------ -->
-#### When viewing the app as a web app in the browser
-
-Confirm that the service worker (`sw.js`) is running when you view the sample PWA as a web app in the browser:
-
-1. In Microsoft Edge, go to `http://localhost:8080`.
-
-1. Right-click the webpage, and then select **Inspect**.
-
-   DevTools opens.
-
-1. Select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
-
-   **Service workers:**
-
-1. In the tree on the left, select **Application** > **Service workers**.
-
-   Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
-
-   ![The DevTools Application tool, showing the Service workers panel, with the new sw.js worker running](./temperature-converter-images/devtools-service-workers-web-app.png)
-
-   If the service worker isn't displayed, refresh the page.  Use whichever level of Refresh is required to refresh the PWA UI during development:
-   * Refresh (**F5**).
-   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
-   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
-
-   **Cache storage:**
-
-1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1 - http://localhost:8080/**.
-
-   All of the resources that are cached by the service worker are displayed:
-
-   The resources cached by the service worker include the app icon, app manifest, and the initial page.
-
-   ![Web app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-web-app.png)
-
-
-<!-- ------------------------------ -->
-#### When viewing the sample PWA as an installed app
-
 Confirm that the service worker (`sw.js`) is running when you open the PWA as a local app:
 
 1. Open the installed **Temperature converter** sample PWA.
 
 1. Right-click in white space in the window, or right-click a specific UI control, and then select **Inspect**.
 
-   The window is a minimal browser window, supporting the DevTools **Inspect** command.
+   The app window is a browser window, so supports the DevTools **Inspect** command, even though the app window doesn't have the UI which normally appears in a browser window.
 
    DevTools opens, in a separate window; undocked.  Other docking options are dimmed and not available.
 
@@ -397,10 +341,7 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
    ![The PWA as an installed local app, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-installed-app.png)
 
-   If the service worker isn't displayed, refresh the page.  Use whichever level of Refresh is required to refresh the PWA UI during development:
-   * Refresh (**F5**).
-   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
-   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+   If the service worker isn't displayed, refresh the page by using **Hard refresh** (**Ctrl+F5**, or **Shift+F5**).
 
    **Cache storage:**
 
@@ -431,12 +372,7 @@ Try the Progressive Web App (PWA) as an offline app, as follows.
 
    ![DevTools, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
 
-1. Refresh the app.
-
-   Use whichever level of Refresh is required to refresh the PWA UI during development:
-   * Refresh (**F5**).
-   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
-   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+1. Refresh the app (**F5**).<!-- If you were to empty the cache, the app would stop working.  The job of a service worker is to put resources in the cache so that the app can work offline.  If you empty the cache, the files that the app needs aren't there anymore, and need to be downloaded again. -->
 
    The app still appears correctly in the browser-based local app window, by using cached resources that are served out by the service worker.
 
@@ -466,8 +402,7 @@ Create a working branch and switch to it, as follows:
 1. In VS Code's terminal, enter the following commands, to create a working branch of the repo and switch to it:
 
    ```console
-   git branch test1
-   git checkout test1
+   git checkout -b test1
    ```
 
    Example output: `Switched to branch 'test1'`
@@ -489,12 +424,7 @@ Create a working branch and switch to it, as follows:
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
-1. Refresh the webpage.
-
-   Use whichever level of Refresh is required to refresh the PWA UI during development:
-   * Refresh (**F5**).
-   * Hard refresh (**Ctrl+F5**, or **Shift+F5**).
-   * Empty cache and hard refresh (**F12** > right-click the **Refresh** button, and then select **Empty cache and hard reset** > **F12**).
+1. Refresh the webpage.<!-- Refresh (**F5**).  Hard refresh (**Ctrl+F5**, or **Shift+F5**).  Press **F12** to open DevTools, right-click the **Refresh** button, select **Empty cache and hard reset**, and then press **F12** to close DevTools. -->
 
    The tab text changes from **Temperature converter** to **My temperature converter**.
 
@@ -577,13 +507,303 @@ You could also uninstall the sample PWA by starting from Microsoft Edge; you'd d
 
    The npx localhost web server stops, with output message: `http-server stopped.`
 
+This is the end of the steps for the sample.  The remainder of this article describes the source code of the sample.
+
+
+<!-- ====================================================================== -->
+## Overview of source code files
+
+The sample Progressive Web App (PWA) consists of the following files, in the `/Demos/pwa-getting-started/` source code directory:
+
+| File | Description | Section below |
+|---|---|---|
+| `index.html` | The initial webpage defining the UI controls.  The webpage layout of the app.  This sample PWA has a single webpage. | [The app's initial webpage (`index.html`)](#the-apps-initial-webpage-indexhtml) |
+| `converter.css` | The Cascading Style Sheets (CSS) file defines styling for the webpage of the app; the layout styling of each UI control in the main page of the app. | [The JavaScript app logic file (`converter.js`)](#the-css-style-sheet-file-convertercss) |
+| `converter.js` | App logic, as JavaScript code. | [The JavaScript app logic file (`converter.js`)](#the-javascript-app-logic-file-converterjs) |
+| `manifest.json` | Basic information about the app, for the device's operating system to use.  Manifest file that makes the Progressive Web App (PWA) installable on the device, unlike a regular web app. | [The web app manifest (`manifest.json`)](#the-web-app-manifest-manifestjson) |
+| `icon512.png` | Image file to represent the app within the browser and on the local device. | [The image file to represent the app (`icon512.png`)](#the-image-file-to-represent-the-app-icon512png) |
+| `sw.js` | Service worker that caches front-end files on the local device and serves out the cached files when there's no internet connection. | [The service worker to cache the app's files on the local device (`sw.js`)](#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) |
+| `README.md` | Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.  Brief information about the app: a link to open the app webpage, and a link to the present article. | [The Readme file to explain the directory of source files (`README.md`)](#the-readme-file-to-explain-the-directory-of-source-files-readmemd) |
+
+Details about each file are below.
+
+
+<!-- ====================================================================== -->
+## The app's initial webpage (`index.html`)
+
+`index.html` defines the first page that users see when they access the Progressive Web App (PWA).
+
+[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) defines the webpage layout of the Progressive Web App (PWA).  The HTML describes the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="stylesheet" href="./converter.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+  </head>
+  <body>
+    <form id="converter">
+       ...
+    </form>
+    <script src="./converter.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js', { scope: './' });
+      }
+    </script>
+  </body>
+</html>
+```
+
+
+<!-- ------------------------------ -->
+#### How index.html references the CSS file
+
+`index.html` references the `converter.css` CSS file via a line of code that's inside the `<head>` tag:
+
+```html
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="stylesheet" href="./converter.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+  </head>
+```
+
+
+<!-- ------------------------------ -->
+#### How index.html loads the JavaScript file
+
+In `index.html`, after the closing `</form>` tag, a `<script>` element loads `converter.js`:
+
+```html
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>
+    <script src="./converter.js"></script>
+```
+
+Conversely, `converter.js` references the form's `id`: `converter` in the following line:
+
+```javascript
+const form = document.getElementById('converter');
+```
+
+
+<!-- ------------------------------ -->
+#### How `index.html` references the manifest
+
+Inside the `<head>` tag, a `<link>` element references `manifest.json`:
+
+```html
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="stylesheet" href="./converter.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Temperature converter</title>
+  </head>
+```
+
+This `<link rel="manifest" href="./manifest.json">` element links the web app manifest file to the app, making the web app a Progressive Web App (PWA).
+
+
+<!-- ------------------------------ -->
+#### How index.html references the service worker
+
+Within a `<script>` element at the end of the `<body>` tag, the service worker file `sw.js` is registered by calling `navigator.serviceWorker.register()`:
+
+```html
+      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>
+    <script src="./converter.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js', { scope: './' });
+      }
+    </script>
+  </body>
+```
+
+
+<!-- ====================================================================== -->
+## The CSS style sheet file (`converter.css`)
+
+[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css) defines the styling for the webpage of the Progressive Web App (PWA), by using Cascading Style Sheet (CSS) rules to organize the HTML content in a layout, and to provide styles for elements.
+
+The web app has CSS style rules, to make the app visually appealing.
+
+The CSS file is `converter.css` in the sample's directory (`/Demos/pwa-getting-started/`), including the following code:
+
+```css
+html {
+  background: rgb(243, 243, 243);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15pt;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+#converter {
+  ...
+}
+
+#converter input, #converter select {
+  ...
+}
+
+#converter #output-temp {
+  ...
+}
+```
+
+
+<!-- ====================================================================== -->
+## The JavaScript app logic file (`converter.js`)
+
+To make the temperature converter work, the sample uses JavaScript code, in `converter.js`.  [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js) contains the app logic for the Progressive Web App (PWA).  The JavaScript code adds user interactions to the user interface.
+
+```javascript
+const inputField = document.getElementById('input-temp');
+const fromUnitField = document.getElementById('input-unit');
+const toUnitField = document.getElementById('output-unit');
+const outputField = document.getElementById('output-temp');
+const form = document.getElementById('converter');
+
+function convertTemp(value, fromUnit, toUnit) {
+  if (fromUnit === 'c') {
+    ...
+    return value;
+  }
+  throw new Error('Invalid unit');
+}
+
+form.addEventListener('input', () => {
+  const inputTemp = parseFloat(inputField.value);
+  ...
+  outputField.value = (Math.round(outputTemp * 100) / 100) + ' ' + toUnit.toUpperCase();
+});
+```
+
+
+<!-- ====================================================================== -->
+## The web app manifest (`manifest.json`)
+<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
+
+[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json) provides basic information about the Progressive Web App (PWA), for the device's operating system to use.  The JSON code describes the app to the host operating system.
+
+```json
+{
+  "lang": "en-us",
+  "name": "Temperature converter app",
+  "short_name": "Temperature converter",
+  "description": "A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit",
+  "start_url": "./",
+  "background_color": "#2f3d58",
+  "theme_color": "#2f3d58",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "./icon512.png",
+          "sizes": "512x512"
+      }
+  ]
+}
+```
+
+See also:
+* [The web app manifest (`manifest.json`)](../how-to/index.md#the-web-app-manifest-manifestjson) in _Get started developing a PWA_.
+
+
+<!-- ====================================================================== -->
+## The image file to represent the app (`icon512.png`)
+
+[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
+
+![Icon file](./index-images/icon-in-taskbar.png)
+
+
+<!-- ====================================================================== -->
+## The service worker to cache the app's files on the local device (`sw.js`)
+<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
+
+[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+
+```javascript
+const CACHE_NAME = `temperature-converter-v1`;
+    
+// Use the install event to pre-cache all initial resources.
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    cache.addAll([
+      './',
+      './converter.js',
+      './converter.css'
+    ]);
+  })());
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+
+    // Get the resource from the cache.
+    const cachedResponse = await cache.match(event.request);
+    if (cachedResponse) {
+      return cachedResponse;
+    } else {
+        try {
+          // If the resource was not in the cache, try the network.
+          const fetchResponse = await fetch(event.request);
+    
+          // Save the resource in the cache and return it.
+          cache.put(event.request, fetchResponse.clone());
+          return fetchResponse;
+        } catch (e) {
+          // The network failed
+        }
+    }
+  })());
+});
+```
+
+See also:
+* [The service worker to cache the app's files on the local device (`sw.js`)](../how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
+
+
+><!-- ====================================================================== -->
+## The Readme file to explain the directory of source files (`README.md`)
+
+[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme) is technically not part of the sample's source code.
+
+The Readme contains brief information about the Progressive Web App (PWA):
+* A link to open the app webpage.
+* A link to the [Temperature converter sample](../samples/temperature-converter.md) article.
+
+The main directory for a Progressive Web App (PWA)'s source code can contain a Readme file.  The app's end-users don't see the source code directory or the Readme file.
+
 
 <!-- ====================================================================== -->
 ## Next steps
 
-Study the code of this sample by reading [Get started developing a PWA](../how-to/index.md).
-
-Then you can:
+Next, you can:
 
 * Make additional minor modifications of the sample's code.
 

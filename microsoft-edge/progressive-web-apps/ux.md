@@ -39,19 +39,51 @@ To install a PWA from the Microsoft Store, select **Get** on the app page:
 <!-- ====================================================================== -->
 ## Managing PWAs
 
-To find the list of installed Progressive Web Apps (PWAs) in Microsoft Edge, go to `edge://apps`.  On this page, you can open any app by clicking **Open**.  To learn more about an app or uninstall it, click **Details**.
+There are several ways to view the list of installed PWAs, view information about the PWAs, or uninstall them.
 
-![The list of installed apps in edge://apps](./ux-images/edge-apps-listing.png)
 
-You can also manage PWAs in the **Apps & features** system setting, like other Windows apps.
+<!-- ------------------------------ -->
+#### From "Settings and more" (...) in Microsoft Edge
 
-1.  In Windows, select **Start** > **Settings**.
+To find the list of installed Progressive Web Apps (PWAs) in Microsoft Edge:
 
-1.  Type "apps" in the **Find a setting** search field, and then select **Add or remove programs**.
+1. Select **Settings and more** > **More tools** > **Apps** > **View apps**.
 
-1.  Find the PWA you want to manage in the list of apps and select it to find more information or remove it.
+1. Right-click an app, and then select **Manage app**:
 
-![The list of installed apps on Windows also display PWAs](./ux-images/pwa-in-apps-and-features-settings.png)
+   ![The Manage app command](./ux-images/manage-app.png)
+
+1. View information about the app, or uninstall the app.
+
+
+<!-- ------------------------------ -->
+#### From the `edge://apps` special page
+
+1. In Microsoft Edge, go to `edge://apps`.
+
+1. On an app, click **Open**, and then click **Details**:
+
+   ![The list of installed apps in edge://apps](./ux-images/edge-apps-listing.png)
+
+1. View information about the app, or uninstall the app.
+
+
+<!-- ------------------------------ -->
+#### From Settings on Windows
+
+You can manage PWAs in the **Apps & features** system setting, like other Windows apps:
+
+1. In Windows, select **Start**, type **Settings**, and then click **Open**.
+
+   The **Settings** window opens.
+
+1. In the **Find a setting** text box, start typing **Add or remove programs**, and then select **Add or remove programs**.
+
+   The list of installed apps is displayed:
+
+   ![The list of installed apps on Windows also display PWAs](./ux-images/pwa-in-apps-and-features-settings.png)
+
+1. Select a PWA, and then view its information or uninstall it.
 
 
 <!-- ====================================================================== -->
@@ -160,16 +192,11 @@ The **App info** menu contains the following:
 * Basic information about the app:
    * The app icon.
    * The app name.
-   * The app publisher, such as:
-      * During development: **localhost:8080**
-      * During production: **microsoftedge.github.io** or your own production server's domain.
+   * The app publisher, such as the app server's domain.
 
 * Commands:
-
    * **Pin to taskbar**
-
    * **Pin to Start**
-
    * **App settings**
 
 * Submenus:
@@ -179,14 +206,7 @@ The **App info** menu contains the following:
 
    * **Extensions** - List of extensions that Microsoft Edge has installed.
 
-   * **More tools** menu, containing commands such as:
-      * **Zoom %**
-      * **Copy link**
-      * **Open in Microsoft Edge**
-      * **Print**
-      * **Share**
-      * **Find on page**
-      * **Cast media to device**
+   * **More tools**
     
 
 <!-- ====================================================================== -->

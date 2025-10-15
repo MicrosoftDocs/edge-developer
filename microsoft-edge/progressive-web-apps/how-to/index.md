@@ -10,7 +10,7 @@ ms.date: 10/09/2025
 ---
 # Get started developing a PWA
 
-A Progressive Web App (PWA) is a web app that you build by using web technologies such as HTML, CSS, and JavaScript, and can also be installed and run on various device operating systems, from a single codebase.
+A Progressive Web App (PWA) is an app that you build by using web technologies such as HTML, CSS, and JavaScript, and that can also be installed and run on various device operating systems, from a single codebase.
 
 By using this article along with [Temperature converter sample](../samples/temperature-converter.md), you'll be able to:
 
@@ -99,20 +99,6 @@ A Progressive Web App (PWA) includes the following front-end code files:
 
 The front-end code for a Progressive Web App (PWA) runs by using the device's web browser.  The browser's own UI is not visible when the app is run in a standalone window, which is a streamlined browser window with minimal browser UI controls.
 
-The sample Progressive Web App (PWA) consists of the following files, in the `/Demos/pwa-getting-started/` source code directory:
-
-| File | Description | Section below |
-|---|---|---|
-| `index.html` | The initial webpage defining the UI controls.  The webpage layout of the app.  This sample PWA has a single webpage. | [The app's initial webpage (`index.html`)](#the-apps-initial-webpage-indexhtml) |
-| `converter.css` | The Cascading Style Sheets (CSS) file defines styling for the webpage of the app; the layout styling of each UI control in the main page of the app. | [The JavaScript app logic file (`converter.js`)](#the-css-style-sheet-file-convertercss) |
-| `converter.js` | App logic, as JavaScript code. | [The JavaScript app logic file (`converter.js`)](#the-javascript-app-logic-file-converterjs) |
-| `manifest.json` | Basic information about the app, for the device's operating system to use.  Manifest file that makes the Progressive Web App (PWA) installable on the device, unlike a regular web app. | [The web app manifest (`manifest.json`)](#the-web-app-manifest-manifestjson) |
-| `icon512.png` | Image file to represent the app within the browser and on the local device. | [The image file to represent the app (`icon512.png`)](#the-image-file-to-represent-the-app-icon512png) |
-| `sw.js` | Service worker that caches front-end files on the local device and serves out the cached files when there's no internet connection. | [The service worker to cache the app's files on the local device (`sw.js`)](#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) |
-| `README.md` | Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.  Brief information about the app: a link to open the app webpage, and a link to the present article. | [The Readme file to explain the directory of source files (`README.md`)](#the-readme-file-to-explain-the-directory-of-source-files-readmemd) |
-
-Details about each file are below.
-
 
 <!-- ====================================================================== -->
 ## Back-end code, files, endpoints, and data (server-side code)
@@ -135,274 +121,16 @@ The remaining sections explain the files that make up the PWA sample.
 
 
 <!-- ====================================================================== -->
-## The app's initial webpage (`index.html`)
-
-`index.html` defines the first page that users see when they access the Progressive Web App (PWA).
-
-[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) defines the webpage layout of the Progressive Web App (PWA).  The HTML describes the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
-
-```html
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-  <body>
-    <form id="converter">
-      <label for="input-temp">temperature</label>
-      <input type="text" id="input-temp" name="input-temp" value="20" />
-      <label for="input-unit">from</label>
-      <select id="input-unit" name="input-unit">
-        <option value="c" selected>Celsius</option>
-        <option value="f">Fahrenheit</option>
-        <option value="k">Kelvin</option>
-      </select>
-      <label for="output-unit">to</label>
-      <select id="output-unit" name="output-unit">
-        <option value="c">Celsius</option>
-        <option value="f" selected>Fahrenheit</option>
-        <option value="k">Kelvin</option>
-      </select>
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
-</html>
-```
-
-
-<!-- ------------------------------ -->
-#### The app's user interface defined as a form in index.html
-
-The app's user interface defined in `index.html` defines the main app functionality.
-
-This form defines input controls as elements that your app will use to convert a temperature value from one unit to another unit.
-
-The `index.html` file contains a form:
-
-```html
-  <body>
-    <form id="converter">
-      <label for="input-temp">temperature</label>
-      <input type="text" id="input-temp" name="input-temp" value="20" />
-      <label for="input-unit">from</label>
-      <select id="input-unit" name="input-unit">
-        <option value="c" selected>Celsius</option>
-        <option value="f">Fahrenheit</option>
-        <option value="k">Kelvin</option>
-      </select>
-      <label for="output-unit">to</label>
-      <select id="output-unit" name="output-unit">
-        <option value="c">Celsius</option>
-        <option value="f" selected>Fahrenheit</option>
-        <option value="k">Kelvin</option>
-      </select>
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-```
-
-The \<script\> element loads `converter.js`, which references the form's `id`: `converter` in the following line:
-
-```javascript
-const form = document.getElementById('converter');
-```
-
-
-<!-- ------------------------------ -->
-#### How index.html references the CSS file
-
-`index.html` references the `converter.css` CSS file via a line of code that's inside the `<head>` tag:
-
-```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-```
-
-
-<!-- ------------------------------ -->
-#### How index.html loads the JavaScript file
-
-The `index.html` file loads the `converter.js` app logic JavaScript file via a line of code after the closing `</form>` tag:
-
-```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
-```
-
-
-<!-- ------------------------------ -->
-#### How `index.html` references the manifest
-
-`index.html` has a line of code inside the `<head>` tag to reference `manifest.json`.  This line of code links the new web app manifest file to your web app, making the web app a Progressive Web App (PWA).
-
-```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-```
-
-
-<!-- ------------------------------ -->
-#### How index.html references the service worker
-
-The `index.html` file registers the service worker file `sw.js` via a line of code at the end of the `<body>` tag:
-
-```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
-```
-
-
-<!-- ====================================================================== -->
-## The CSS style sheet file (`converter.css`)
-
-[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css) defines the styling for the webpage of the Progressive Web App (PWA), by using Cascading Style Sheet (CSS) rules to organize the HTML content in a layout, and to provide styles for elements.
-
-The web app has CSS style rules, to make the app visually appealing.
-
-The CSS file is `converter.css` in the sample's directory (`/Demos/pwa-getting-started/`), including the following code:
-
-```css
-html {
-  background: rgb(243, 243, 243);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15pt;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: grid;
-  place-items: center;
-}
-
-#converter {
-  width: 15rem;
-  padding: 2rem;
-  border-radius: .5rem;
-  box-shadow: 0 0 2rem 0 #0001;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#converter input, #converter select {
-  font-family: inherit;
-  font-size: inherit;
-  margin-block-end: 1rem;
-  text-align: center;
-  width: 10rem;
-}
-
-#converter #output-temp {
-  font-size: 2rem;
-  font-weight: bold;
-}
-```
-
-
-<!-- ====================================================================== -->
-## The JavaScript app logic file (`converter.js`)
-
-To make the temperature converter work, the sample uses JavaScript code, in `converter.js`, in the `/Demos/pwa-getting-started/` directory.
-
-[converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js) contains the app logic for the Progressive Web App (PWA).  The JavaScript code adds user interactions to the user interface.
-
-```javascript
-const inputField = document.getElementById('input-temp');
-const fromUnitField = document.getElementById('input-unit');
-const toUnitField = document.getElementById('output-unit');
-const outputField = document.getElementById('output-temp');
-const form = document.getElementById('converter');
-
-function convertTemp(value, fromUnit, toUnit) {
-  if (fromUnit === 'c') {
-    if (toUnit === 'f') {
-      return value * 9 / 5 + 32;
-    } else if (toUnit === 'k') {
-      return value + 273.15;
-    }
-    return value;
-  }
-  if (fromUnit === 'f') {
-    if (toUnit === 'c') {
-      return (value - 32) * 5 / 9;
-    } else if (toUnit === 'k') {
-      return (value + 459.67) * 5 / 9;
-    }
-    return value;
-  }
-  if (fromUnit === 'k') {
-    if (toUnit === 'c') {
-      return value - 273.15;
-    } else if (toUnit === 'f') {
-      return value * 9 / 5 - 459.67;
-    }
-    return value;
-  }
-  throw new Error('Invalid unit');
-}
-
-form.addEventListener('input', () => {
-  const inputTemp = parseFloat(inputField.value);
-  const fromUnit = fromUnitField.value;
-  const toUnit = toUnitField.value;
-
-  const outputTemp = convertTemp(inputTemp, fromUnit, toUnit);
-  outputField.value = (Math.round(outputTemp * 100) / 100) + ' ' + toUnit.toUpperCase();
-});
-```
-
-
-<!-- ====================================================================== -->
 ## The web app manifest (`manifest.json`)
+<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
 
-A regular web app only runs in the browser.  By adding a web app manifest, the web app becomes a Progressive Web App (PWA) and thus becomes installable on the device.
+A regular web app only runs in the browser.  By adding a web app manifest, the web app becomes a Progressive Web App (PWA).  The web app manifest enables browsers that support PWAs to install the web app as a Progressive Web App on the device.
 
-The web app manifest enables browsers that support Progressive Web App (PWA) to install the web app as a Progressive Web App (PWA) on the device.
+A _web app manifest_ is a JSON file containing metadata about the Progressive Web App, such as its name, description, icons, and the various operating system features it uses.  The JSON code describes the app to the host operating system.  The manifest file provides basic information about the Progressive Web App, for the device's operating system to use.  
 
-A _web app manifest_ is a JSON file containing metadata about the Progressive Web App (PWA), such as its name, description, icons, and the various operating system features it uses.
+The file name `manifest.json` is merely a common convention, not a strict requirement.<!-- todo: is the file name `manifest.json` merely a common convention, or a strict requirement? -->
 
-[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json) provides basic information about the Progressive Web App (PWA), for the device's operating system to use.  The JSON code describes the app to the host operating system.
+Example `manifest.json`:
 
 ```json
 {
@@ -425,29 +153,29 @@ A _web app manifest_ is a JSON file containing metadata about the Progressive We
 ```
 
 See also:
-* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
-* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
-
-
-<!-- ====================================================================== -->
-## The image file to represent the app (`icon512.png`)
-
-[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
-
-![Icon file](./index-images/icon-in-taskbar.png)
+* [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN.
+* [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 
 
 <!-- ====================================================================== -->
 ## The service worker to cache the app's files on the local device (`sw.js`)
+<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
 
-The sample Progressive Web App (PWA) uses a service worker JavaScript file (such as `sw.js`), to cache front-end, UI files to the local device.
+A Progressive Web App (PWA) can use a service worker JavaScript file (such as `sw.js`), to cache front-end, UI files to the local device.  A service worker is defined in a JavaScript file that's loaded by the app.
 
-The service worker makes the app:
+A service worker is a specialized web worker that can intercept network requests from your Progressive Web App (PWA), and enables scenarios such as:
+* Offline support, including intermittent connection to the internet.
+* Advanced caching on the device.
+* Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
+
+A service worker is a key technology that help make a Progressive Web App (PWA) fast and independent of network conditions.  The service worker makes the app:
 * Faster.
 * More reliable.
 * Network-independent; the app continues to work (in some way), even with a missing or intermittent internet connection.
 
-[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) file is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+
+`sw.js`:
 
 ```javascript
 const CACHE_NAME = `temperature-converter-v1`;
@@ -488,7 +216,7 @@ self.addEventListener('fetch', event => {
 });
 ```
 
-The service worker explicitly caches three files:
+This service worker explicitly caches three files:
 * `./` means `index.html`
 *  `./converter.js`
 * `./converter.css`
@@ -497,38 +225,28 @@ Two additional files are are cached automatically by the browser:
 * The icon file (`.png`).
 * The manifest file (`.json`).
 
-This sample PWA does something useful without requiring an internet connection and server-side processing such as database operations.  The PWA can be installed as a standalone app by users.  To enable installing the app, a JavaScript service worker file makes the app able to work offline (without always having an internet connection), by caching needed front-end files on the local device.
 
-A service worker is a key technology that help make a Progressive Web App (PWA) fast and independent of network conditions.
+<!-- ------------------------------ -->
+#### Listening for the `install` event
 
-A service worker is a specialized web worker that can intercept network requests from your Progressive Web App (PWA), and enables scenarios such as:
-* Offline support, including intermittent connection to the internet.
-* Advanced caching on the device.
-* Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
+The service worker listens to the `install` event, which is triggered when the user installs the app, and uses it to cache the resources that your app needs to function offline, such as the initial HTML page, the converter JavaScript file, and the converter CSS file.  To enable installing the app, a JavaScript service worker file makes the app able to work offline (without always having an internet connection), by caching needed front-end files on the local device.
+
+
+<!-- ------------------------------ -->
+#### Listening for the `fetch` event
+
+The service worker intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.  The service worker returns cached resources so your app can work offline, and if that fails, the service worker attempts to download the file from the server instead.
+
+
+<!-- ------------------------------ -->
+#### A service worker is optional
 
 A Progressive Web App (PWA) doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend including a service worker in your own Progressive Web App (PWA) to make it faster, and to make your Progressive Web App (PWA) more reliable, such as when your device has an intermittent network connection or is offline.
 
-A service worker is defined in a JavaScript file that's loaded by the app.
-
-In the sample PWA, the `sw.js` file acts as the Progressive Web App (PWA)'s service worker.  The service worker listens to the `install` event, which is triggered when the user installs the app, and uses it to cache the resources that your app needs to function offline, such as the initial HTML page, the converter JavaScript file, and the converter CSS file.
-
-The code also intercepts `fetch` events, which happen every time your app sends a request to the server, and applies a cache-first strategy.  The service worker returns cached resources so your app can work offline, and if that fails, the service worker attempts to download the file from the server instead.
 
 See also:
 * [Examine the service worker handling offline caching](../samples/temperature-converter.md#examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
-
-
-<!-- ====================================================================== -->
-## The Readme file to explain the directory of source files (`README.md`)
-
-[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme) is technically not part of the sample's source code.
-
-The Readme contains brief information about the Progressive Web App (PWA):
-* A link to open the app webpage.
-* A link to the [Temperature converter sample](../samples/temperature-converter.md) article.
-
-It's recommended that the main directory for a Progressive Web App (PWA)'s source code contain a Readme file.  The app's end-users don't see the source code directory or the Readme file.
 
 
 <!-- ====================================================================== -->
