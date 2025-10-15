@@ -45,9 +45,11 @@ The **Memory inspector** tool provides greater ability than the **Sources** tool
 ## Open Memory inspector while debugging
 <!-- some initial content was from [New Memory inspector tool](../whats-new/2021/04/devtools.md#new-memory-inspector-tool) in _What's New in DevTools (Microsoft Edge 91)_. -->
 
+For example:
+
 1. Start Microsoft Edge.
 
-1. Open the test site [Inspect ArrayBuffers in JS (Memory in JS)](http://memory-inspector.glitch.me/demo-js.html). <!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there -->
+1. Open the test site **Inspect ArrayBuffers in JS (Memory in JS)** (`http://memory-inspector.glitch.me/demo-js.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
@@ -177,7 +179,9 @@ Complete the following steps to debug a webpage in Memory inspector.
 
 For WebAssembly (Wasm) memory inspection, the process is similar to inspecting JavaScript memory.
 
-1. Open the Wasm test site [Inspect Wasm memories (Memory in Wasm)](http://memory-inspector.glitch.me/demo-wasm.html). <!-- To do item: copy to Microsoft Repo and reference there -->
+For example:
+
+1. Open the test site **Inspect Wasm memories (Memory in Wasm)** (`http://memory-inspector.glitch.me/demo-wasm.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
