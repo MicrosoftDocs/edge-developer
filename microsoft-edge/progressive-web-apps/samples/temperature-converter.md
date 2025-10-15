@@ -19,7 +19,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 1 - Preview the app running in a browser window
+## Step 1: Preview the app running in a browser window
 
 To examine the user interface of the app:
 
@@ -56,7 +56,7 @@ To examine the user interface of the app:
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install Visual Studio Code
+## Step 2: Install Visual Studio Code
 
 Visual Studio Code enables viewing the sample code, modifying the sample, and creating your own Progressive Web App (PWA) by using the sample as a starting point.
 
@@ -68,7 +68,7 @@ Install (or optionally update) VS Code, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install or update git
+## Step 3: Install or update git
 
 Install or update git, as follows:
 
@@ -88,7 +88,7 @@ Install or update git, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 4 - Install or update Node.js
+## Step 4: Install or update Node.js
 
 Node.js includes a web server that you'll use to run and test the sample locally.
 
@@ -130,7 +130,7 @@ Install or update Node.js, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 5 - Clone the Edge Demos repo, to get a local copy of the code
+## Step 5: Clone the Edge Demos repo, to get a local copy of the code
 <!-- derived from 
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
@@ -188,7 +188,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 6 - Run the PWA as a web app on your localhost web server; Start the development web server
+## Step 6: Run the PWA as a web app on your localhost web server; Start the development web server
 
 Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.
 
@@ -247,7 +247,7 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
 
 
 <!-- ====================================================================== -->
-## Step 7 - Install the PWA from your localhost web server as a local app
+## Step 7: Install the PWA from your localhost web server as a local app
 
 Install the sample Progressive Web App (PWA) from your localhost web server as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
 
@@ -286,7 +286,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 8 - Run the sample PWA as a local app
+## Step 8: Run the sample PWA as a local app
 
 Run the sample Progressive Web App (PWA) as a local app on the device.
 
@@ -317,7 +317,7 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Examine the service worker handling offline caching
+## Step 9: Examine the service worker handling offline caching
 
 The local app window for a Progressive Web App (PWA) is a browser-based window, so Microsoft Edge DevTools can be used to work with the PWA.
 
@@ -364,7 +364,7 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
 
 <!-- ====================================================================== -->
-## Step 10 - Use DevTools to turn off the internet connection and test the PWA offline
+## Step 10: Use DevTools to turn off the internet connection and test the PWA offline
 
 Try the Progressive Web App (PWA) as an offline app, as follows.   
  
@@ -378,7 +378,7 @@ Try the Progressive Web App (PWA) as an offline app, as follows.
 
 
 <!-- ====================================================================== -->
-## Step 11 - Modify the sample
+## Step 11: Modify the sample
 
 Switching from the **main** branch to a working branch preserves the original code in the "main" branch, so that you can modify a copy of the sample code.
 
@@ -420,7 +420,7 @@ Create a working branch and switch to it, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 12 - View the modified web app in the browser
+## Step 12: View the modified web app in the browser
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
@@ -432,7 +432,7 @@ Create a working branch and switch to it, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 13 - Re-install the modified sample as a local app
+## Step 13: Re-install the modified sample as a local app
 
 At this point, your device still has the original version of the sample Progressive Web App (PWA) installed (from localhost, not from github.io).  To update the local app after you modified the code, you don't need to uninstall and reinstall; just open the modified web app from the address bar, as follows.
 
@@ -456,7 +456,7 @@ At this point, your device still has the original version of the sample Progress
 
 
 <!-- ====================================================================== -->
-## Step 14 - Switch back to the "main" branch of the Demos repo
+## Step 14: Switch back to the "main" branch of the Demos repo
 
 1. In the lower left corner of Visual Studio Code, look at the branch name.
 
@@ -476,7 +476,7 @@ At this point, your device still has the original version of the sample Progress
 
 
 <!-- ====================================================================== -->
-## Step 15 - Uninstall the local app
+## Step 15: Uninstall the local app
 
 You can uninstall the sample as a local app on the device, by starting from the running **Temperature converter app** window.
 
@@ -499,7 +499,7 @@ You could also uninstall the sample PWA by starting from Microsoft Edge; you'd d
 
 
 <!-- ====================================================================== -->
-## Step 16 - Stop the development web server
+## Step 16: Stop the development web server
 
 1. In Visual Studio Code, in the **View** menu, select **Terminal**.
 
