@@ -21,14 +21,12 @@ The first sample to use when getting started is the [Temperature converter sampl
 
 Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas) repo.
 
-<!-- section order:
-by repo dir, per https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
-followed by other repos
--->
+<!-- sort h2's by repo then by dir name, to match https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas -->
 
 
 <!-- ====================================================================== -->
 ## 1DIV
+<!-- "MicrosoftEdge / Demos" repo -->
 
 1DIV is a CSS editor that lets users create drawings by creating just one HTML element and CSS code.
 
@@ -45,6 +43,7 @@ followed by other repos
 
 <!-- ====================================================================== -->
 ## Email client
+<!-- "MicrosoftEdge / Demos" repo -->
 
 A simulated email client PWA that demonstrates how to use PWA protocol handlers.
 
@@ -58,50 +57,8 @@ Email client uses the following features:
 
 
 <!-- ====================================================================== -->
-## My Movie List
-
-This simple PWA demo lets you search for made-up movies and store them locally.
-
-![The My Movie List app](./index-images/my-movies.png)
-
-[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists --><!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md -->
-
-
-[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).
-
- [My Movie List](https://quirky-rosalind-ac1e65.netlify.app/)
-[/movies-db-pwa/](https://github.com/captainbrosset/movies-db-pwa/)
-
-
-My Movies uses the following features:
-
-| Feature | Description | Documentation |
-|:--- |:--- |:--- |
-| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Use the Background Sync API to synchronize data with the server](../how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server) |
-| Notifications | When the information about a movie is retrieved, a notification is sent so the user can re-engage with the app. | [Display notifications in the action center](../how-to/notifications-badges.md#display-notifications-in-the-action-center) |
-
-
-<!-- ====================================================================== -->
-## My Tracks
-
-My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
-
-![The My Tracks app](./index-images/my-tracks.png)
-
-[App](https://captainbrosset.github.io/mytracks/),<!-- todo: move demo to Demos repo--> [source code and Readme file](https://github.com/captainbrosset/mytracks/).
-
-My Tracks uses the following features:
-
-| Feature | Description | Documentation |
-|:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
-| Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
-| File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
-| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
-
-
-<!-- ====================================================================== -->
 ## Application Title Meta Tag
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 A demo web app to showcase the `application-title` meta tag.
 
@@ -116,6 +73,7 @@ Application Title Meta Tag uses the following features:
 
 <!-- ====================================================================== -->
 ## Temperature converter
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
 
@@ -124,6 +82,7 @@ A simple PWA demo app that converts temperatures.  See [Temperature converter sa
 
 <!-- ====================================================================== -->
 ## PWA installer
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 A PWA that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
@@ -142,6 +101,7 @@ PWA installer uses the following features:
 
 <!-- ====================================================================== -->
 ## Timer PWA
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 Has a **Set timer** button, and you can set the duration of the timer.
 
@@ -150,6 +110,7 @@ Has a **Set timer** button, and you can set the duration of the timer.
 
 <!-- ====================================================================== -->
 ## PWA To Do
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 Create lists of tasks locally in your browser, or by installing the app.  Click the **About** link in the rendered demo.
 
@@ -158,6 +119,7 @@ Create lists of tasks locally in your browser, or by installing the app.  Click 
 
 <!-- ====================================================================== -->
 ## PWAmp
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 PWAmp is a desktop music player that plays local and remote audio files.
 
@@ -180,6 +142,7 @@ PWAmp uses the following features:
 
 <!-- ====================================================================== -->
 ## wami
+<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 wami can apply a sequence of image manipulation steps such as cropping, resizing, rotating, or adding effects on batch of images.
 
@@ -194,7 +157,7 @@ wami uses the following features:
 | Window Controls Overlay | The space normally reserved to the title bar can be used by wami. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
 | File System Access | wami can save transformed images back to disk. | [File System Access API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API) |
 
-<!-- /Demos repo -->
+<!-- end of "MicrosoftEdge / Demos" repo -->
 
 
 <!-- ====================================================================== -->
@@ -202,7 +165,48 @@ wami uses the following features:
 
 
 <!-- ====================================================================== -->
+## My Movie List
+<!-- "captainbrosset / movies-db-pwa" repo -->
+<!-- planned: "MicrosoftEdge / Demos" repo -->
+
+This simple PWA demo lets you search for made-up movies and store them locally.
+
+![The My Movie List app](./index-images/my-movies.png)
+
+[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists --><!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md; move this section up -->
+
+My Movie List uses the following features:
+
+| Feature | Description | Documentation |
+|:--- |:--- |:--- |
+| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Use the Background Sync API to synchronize data with the server](../how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server) |
+| Notifications | When the information about a movie is retrieved, a notification is sent so the user can re-engage with the app. | [Display notifications in the action center](../how-to/notifications-badges.md#display-notifications-in-the-action-center) |
+
+
+<!-- ====================================================================== -->
+## My Tracks
+<!-- "captainbrosset / mytracks" repo -->
+<!-- planned: "MicrosoftEdge / Demos" repo -->
+
+My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
+
+![The My Tracks app](./index-images/my-tracks.png)
+
+[App](https://captainbrosset.github.io/mytracks/),<!-- todo: move demo to Demos repo; move this section up --> [source code and Readme file](https://github.com/captainbrosset/mytracks/).
+
+My Tracks uses the following features:
+
+| Feature | Description | Documentation |
+|:--- |:--- |:--- |
+| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
+| Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
+| File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
+| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
+
+
+<!-- ====================================================================== -->
 ## BPM Techno
+<!-- "webmaxru / bpm-counter" repo -->
 
 BPM Techno analyzes audio via the device microphone and displays a real-time beats-per-minute (BPM) counter.
 
@@ -224,6 +228,7 @@ BPM Techno uses the following features:
 
 <!-- ====================================================================== -->
 ## Webboard
+<!-- "pwa-builder / web-whiteboard" repo -->
 
 Webboard is a drawing application.
 
