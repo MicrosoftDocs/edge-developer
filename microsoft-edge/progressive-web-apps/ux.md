@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/15/2021
+ms.date: 10/15/2025
 ---
 # Use PWAs in Microsoft Edge
 
@@ -105,10 +105,8 @@ The **App info** menu contains useful information about the app, such as:
 
 
 <!-- ====================================================================== -->
-## Restrictions: PWAs aren't supported in FSLogix environments
+## PWAs aren't supported in FSLogix environments
 
-Progressive Web Apps (PWAs) don't work in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.
+Progressive Web Apps (PWAs) don't work in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.  This is a known restriction.
 
-This is a known restriction.
-
-FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  FSLogix isn't limited to virtual desktop environments, but could be used on physical desktops where a more portable user experience is desired.  For more information, see [FSLogix documentation](/fslogix/).
+FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  For more information, see [FSLogix documentation](/fslogix/).
