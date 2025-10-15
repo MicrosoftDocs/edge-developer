@@ -19,6 +19,8 @@ These demo PWAs show how to use features and APIs that can progressively enhance
 
 The first sample to use when getting started is the [Temperature converter sample](./temperature-converter.md).
 
+See the Readme file for the sample; some samples require setup and don't work if you just click the app's link below.
+
 Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas) repo.
 
 <!-- sort h2's by repo then by dir name, to match https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas -->
@@ -32,7 +34,9 @@ Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/Mi
 
 ![The 1DIV app](./index-images/1div-demo.png)
 
-[App](https://microsoftedge.github.io/Demos/1DIV/dist/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/).
+* [App](https://microsoftedge.github.io/Demos/1DIV/dist/)
+* [/1DIV/](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/1DIV/README.md)
 
 1DIV uses the following features:
 
@@ -47,7 +51,9 @@ Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/Mi
 
 A simulated email client PWA that demonstrates how to use PWA protocol handlers.
 
-[App](https://microsoftedge.github.io/Demos/email-client/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/email-client/).
+* [App](https://microsoftedge.github.io/Demos/email-client/)
+* [/email-client/](https://github.com/MicrosoftEdge/Demos/tree/main/email-client/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/email-client/README.md)
 
 Email client uses the following features:
 
@@ -62,7 +68,9 @@ Email client uses the following features:
 
 A demo web app to showcase the `application-title` meta tag.
 
-[App](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title), [source code and Readme file](https://microsoftedge.github.io/Demos/pwa-application-title/).
+* [App](https://microsoftedge.github.io/Demos/pwa-application-title/)
+* [/pwa-application-title/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-application-title/README.md)
 
 Application Title Meta Tag uses the following features:
 
@@ -77,19 +85,29 @@ Application Title Meta Tag uses the following features:
 
 A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
 
-[App](https://microsoftedge.github.io/Demos/pwa-getting-started/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started).
+* [App](https://microsoftedge.github.io/Demos/pwa-getting-started/)
+* [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/README.md)
 
 
 <!-- ====================================================================== -->
 ## PWA installer
+<!-- 
+## PWA store
+-->
 <!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 A PWA that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
-[App](https://microsoftedge.github.io/Demos/pwa-pwastore/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore).
-<!-- todo: new:
-[App](https://microsoftedge.github.io/Demos/pwa-installer/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/).
--->
+Original version:<!-- todo: which should the user use?  why 2 dirs? -->
+* [PWA store app](https://microsoftedge.github.io/Demos/pwa-pwastore/)
+* [/pwa-pwastore/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-pwastore/README.md)
+
+Newer version:
+* [PWA installer app](https://microsoftedge.github.io/Demos/pwa-installer/)
+* [/pwa-installer/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-installer/README.md)
 
 PWA installer uses the following features:
 
@@ -105,7 +123,9 @@ PWA installer uses the following features:
 
 Has a **Set timer** button, and you can set the duration of the timer.
 
-[App](https://microsoftedge.github.io/Demos/pwa-timer/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-timer).
+* [App](https://microsoftedge.github.io/Demos/pwa-timer/)
+* [/pwa-timer/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-timer/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-timer/README.md)
 
 
 <!-- ====================================================================== -->
@@ -114,7 +134,9 @@ Has a **Set timer** button, and you can set the duration of the timer.
 
 Create lists of tasks locally in your browser, or by installing the app.  Click the **About** link in the rendered demo.
 
-[App](https://microsoftedge.github.io/Demos/pwa-to-do/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-to-do).
+* [App](https://microsoftedge.github.io/Demos/pwa-to-do/)
+* [/pwa-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-to-do/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-to-do/README.md)
 
 
 <!-- ====================================================================== -->
@@ -125,7 +147,9 @@ PWAmp is a desktop music player that plays local and remote audio files.
 
 ![The PWAmp app, showing playback buttons and a list of songs](./index-images/pwamp.png)
 
-[App](https://microsoftedge.github.io/Demos/pwamp/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/).
+* [App](https://microsoftedge.github.io/Demos/pwamp/)
+* [/pwamp/](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/README.md)
 
 PWAmp uses the following features:
 
@@ -148,7 +172,9 @@ wami can apply a sequence of image manipulation steps such as cropping, resizing
 
 ![The wami app](./index-images/wami.png)
 
-[App](https://microsoftedge.github.io/Demos/wami/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/wami/).
+* [App](https://microsoftedge.github.io/Demos/wami/)
+* [/wami/](https://github.com/MicrosoftEdge/Demos/tree/main/wami/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/wami/README.md)
 
 wami uses the following features:
 
@@ -173,7 +199,9 @@ This simple PWA demo lets you search for made-up movies and store them locally.
 
 ![The My Movie List app](./index-images/my-movies.png)
 
-[App](https://quirky-rosalind-ac1e65.netlify.app/), [source code](https://github.com/captainbrosset/movies-db-pwa/).<!-- todo: link to readme when exists --><!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md; move this section up -->
+* [App](https://quirky-rosalind-ac1e65.netlify.app)<!-- - see Readme for setup. -->
+* [/movies-db-pwa/](https://github.com/captainbrosset/movies-db-pwa/)<!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md; move this section up --> - source code directory.
+   * No Readme file.<!-- https://github.com/captainbrosset/movies-db-pwa/issues/1 --><!-- todo: link to readme -->
 
 My Movie List uses the following features:
 
@@ -192,7 +220,9 @@ My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
 
 ![The My Tracks app](./index-images/my-tracks.png)
 
-[App](https://captainbrosset.github.io/mytracks/),<!-- todo: move demo to Demos repo; move this section up --> [source code and Readme file](https://github.com/captainbrosset/mytracks/).
+* [App](https://captainbrosset.github.io/mytracks/)<!-- todo: move demo to Demos repo; move this section up --> - see Readme for setup.
+* [/mytracks/](https://github.com/captainbrosset/mytracks/) - source code directory.
+   * [Readme file](https://github.com/captainbrosset/mytracks/blob/main/README.md)
 
 My Tracks uses the following features:
 
@@ -212,7 +242,9 @@ BPM Techno analyzes audio via the device microphone and displays a real-time bea
 
 ![The BPM Techno app](./index-images/bpm-techno.png)
 
-[App](https://bpmtech.no/), [source code and Readme file](https://github.com/webmaxru/bpm-counter/).
+* [App](https://bpmtech.no)
+* [/bpm-counter/](https://github.com/webmaxru/bpm-counter/) - source code directory.
+   * [Readme file](https://github.com/webmaxru/bpm-counter/blob/main/README.md)
 
 This demo is in the [webmaxru / bpm-counter](https://github.com/webmaxru/bpm-counter/) repo.
 
@@ -234,7 +266,9 @@ Webboard is a drawing application.
 
 ![Webboard is a Progressive Web App for drawing and intelligent whiteboarding](./index-images/webboard.png)
 
-[App](https://webboard.app/), [source code and Readme file](https://github.com/pwa-builder/web-whiteboard/).
+* [App](https://webboard.app)
+* [/web-whiteboard/](https://github.com/pwa-builder/web-whiteboard/) - source code directory.
+   * [Readme file](https://github.com/pwa-builder/web-whiteboard/blob/main/readme.md)
 
 This demo is in the [pwa-builder / web-whiteboard](https://github.com/pwa-builder/web-whiteboard/) repo.
 
