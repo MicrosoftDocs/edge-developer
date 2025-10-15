@@ -228,7 +228,7 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 
 ![CORS issues in the Issues tab](./devtools-images/cors-debugging-support.png)
 
-<!-- screenshot uses http://cors-errors.glitch.me -->
+<!-- screenshot uses http://cors-errors.glitch.me - glitch.me project hosting ended July 8, 2025; could move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io -->
 
 See also:
 * [Report CORS errors in the Network tool](../../2020/11/devtools.md#report-cors-errors-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 88)_
@@ -258,7 +258,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
 ![Filter by Wasm](./devtools-images/wasm-network-requests.png)
-<!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
+<!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html - glitch.me project hosting ended July 8, 2025; could move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io -->
 
 See also:
 * [Filter resources](../../../network/index.md#filter-resources) in _Inspect network activity_
