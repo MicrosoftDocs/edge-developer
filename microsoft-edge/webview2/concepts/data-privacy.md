@@ -10,9 +10,9 @@ ms.date: 06/02/2023
 ---
 # Data and privacy in WebView2
 
-WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2.  By agreeing to the Microsoft Software License Terms for the Microsoft Edge WebView2 Runtime, you acknowledge (as a WebView2 developer) that WebView2 will collect the data that's described in this article.
+WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up-to-date, diagnose issues, and improve WebView2.  By agreeing to the Microsoft Software License Terms for the Microsoft Edge WebView2 Runtime, you acknowledge (as a WebView2 developer) that WebView2 will collect the data that's described in this article.
 
-To view the license terms, go to the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) section of the **Microsoft Edge WebView2** page, and then click any of the download buttons, such as **Get the Link**, **Download**, or **x64**.  The license terms are shown in a dialog.
+To view the license terms, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime), and then click any of the download buttons, such as **Get the Link**, **x64**, or **Download**.  The license terms are shown in a dialog.
 
 Additionally, WebView2 follows the standards that are outlined in [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge.  For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
