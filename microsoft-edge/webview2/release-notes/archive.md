@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/08/2025
+ms.date: 10/07/2025
 ---
 # Archived Release Notes for the WebView2 SDK
 
@@ -3675,7 +3675,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 #### Breaking changes
 
 > [!IMPORTANT]
-> **Breaking Change**: If you're developing an unpackaged Win32 app using Fixed Version Runtime v120 or above and targeting Windows 10 devices, you need to run a couple of ACL shell commands (`icacls`), to avoid crashing, because of a new security feature implemented in WebView2.  See [[Breaking Change] Unpackaged Win32 app using Fixed Version v120+ on Win10 need ACL](https://github.com/MicrosoftEdge/WebView2Announcements/issues/82).  The fix is in the article _Distribute your app and the WebView2 Runtime_, section [Details about the Fixed Version runtime distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode), step "On Windows 10 devices, starting with Fixed Version 120, developers of unpackaged Win32 applications using Fixed Version are required to run the following commands."
+> **Breaking Change**: If you're developing an unpackaged Win32 app using Fixed Version Runtime v120 or above and targeting Windows 10 devices, you need to run a couple of ACL shell commands (`icacls`), to avoid crashing, because of a new security feature implemented in WebView2.  See [[Breaking Change] Unpackaged Win32 app using Fixed Version v120+ on Win10 need ACL](https://github.com/MicrosoftEdge/WebView2Announcements/issues/82).  The fix is in the article _Distribute your app and the WebView2 Runtime_, section [The Fixed Version runtime distribution mode](../concepts/distribution.md#the-fixed-version-runtime-distribution-mode), step "On Windows 10 devices, starting with Fixed Version 120, developers of unpackaged Win32 applications using Fixed Version are required to run the following commands."
 
 
 <!-- ------------------------------ -->
