@@ -375,8 +375,10 @@
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
 # -----------------------------------------------------------------------------
         - name: Samples
-          href: ./devtools/samples/index.md
-          displayName: sample code, demo
+          items:
+            - name: Sample code for DevTools
+              href: ./devtools/samples/index.md
+              displayName: sample code, demo
 # -----------------------------------------------------------------------------
         - name: Tools
           items:
