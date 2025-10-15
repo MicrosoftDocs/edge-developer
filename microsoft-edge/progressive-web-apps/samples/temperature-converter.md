@@ -736,7 +736,7 @@ See also:
 
 [icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
 
-![Icon file](./index-images/icon-in-taskbar.png)
+![Icon file](./temperature-converter-images/icon-in-taskbar.png)
 
 
 <!-- ====================================================================== -->

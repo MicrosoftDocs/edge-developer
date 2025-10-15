@@ -245,7 +245,7 @@ A Progressive Web App (PWA) doesn't need to have a service worker for Microsoft 
 
 
 See also:
-* [Examine the service worker handling offline caching](../samples/temperature-converter.md#examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
+* [Step 9: Examine the service worker handling offline caching](../samples/temperature-converter.md#step-9-examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) at MDN.
 
 
