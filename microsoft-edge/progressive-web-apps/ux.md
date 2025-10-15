@@ -105,8 +105,14 @@ The **App info** menu contains useful information about the app, such as:
 
 
 <!-- ====================================================================== -->
-## PWAs aren't supported in FSLogix environments
+## Limitations
 
-Progressive Web Apps (PWAs) don't work in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.  This is a known restriction.
+Progressive Web Apps (PWAs) have the following limitations.
+
+
+<!-- ------------------------------ -->
+#### FSLogix environments
+
+Progressive Web Apps (PWAs) aren't supported in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.  This is a known restriction.
 
 FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  For more information, see [FSLogix documentation](/fslogix/).
