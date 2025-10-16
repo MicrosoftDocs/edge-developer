@@ -388,8 +388,7 @@ Status:
 
 _new as of Microsoft Edge 141_
 
-In the **Performance** tool, shows an option to save a performance trace as a `.gz` file format.
-<!-- todo: need sentence, UI description -->
+In the **Performance** tool, shows an option to save a performance trace as a `.gz` file.
 
 See also:
 * [Save and share a recording](../performance/reference.md#save-and-share-a-recording) in _Performance features reference_.
@@ -405,8 +404,7 @@ Status:
 
 _new as of Microsoft Edge 141_
 
-In the **Performance** tool, in the trace view, shows an option to **Ask AI**.
-<!-- todo: need sentence, UI description -->
+In the **Performance** tool, in the trace view, shows an option for a more powerful version of **Ask AI**.
 
 See also:
 * [Analyze a performance recording](../performance/reference.md#analyze-a-performance-recording) in _Performance features reference_.
