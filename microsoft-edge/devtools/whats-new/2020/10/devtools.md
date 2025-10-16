@@ -306,9 +306,13 @@ See also:
 <!-- ------------------------------ -->
 #### View and fix color contrast issues in the CSS overview tool
 
-The **CSS overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
+The **CSS overview** tool now displays a list of elements on your page that have color contrast issues.
 
-To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
+For example, the **CSS overview Accessible Colors Demo** (`https://css-overview-accessible-colors-demo.glitch.me`) (404) page has an example of a color contrast issue.  (Glitch.me project hosting ended July 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+
+To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.
+
+To help fix contrast issues, Microsoft Edge DevTools automatically provides color suggestions; see [Accessible color suggestion in the Styles pane](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane) in _What's New in DevTools (Microsoft Edge 86)_.
 
 ![Color contrast issues](./devtools-images/css-overview.png)
 
