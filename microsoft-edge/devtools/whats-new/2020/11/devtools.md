@@ -285,9 +285,21 @@ For more information, see [Emulate mobile devices (Device Emulation)](../../../d
 <!-- ------------------------------ -->
 #### Report CORS errors in the Network tool
 
-Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.
+The **Network** tool now displays specific status for CORS errors.  For example:
 
-![CORS errors](./devtools-images/cors-err.png)
+1. Go to **CORS error demo** (`https://cors-errors.glitch.me`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+
+1. Open the **Network** tool, refresh the page, and observe the failed CORS network request.
+
+   The status column displays the **CORS error**.
+
+1. Hover over the error.
+
+   The tooltip now displays the error code:
+
+   ![CORS errors](./devtools-images/cors-err.png)
+
+   In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.
 
 For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
