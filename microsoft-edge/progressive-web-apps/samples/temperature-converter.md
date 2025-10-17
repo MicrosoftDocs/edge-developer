@@ -31,7 +31,7 @@ To examine the user interface of the app:
 
 1. In the **temperature** text box, type **22**.
 
-   As you type, the displayed temperature is updated to **71.6 F**.
+   The displayed temperature changes to **71.6 F**.
 
 1. Click the **from** and **to** dropdown lists.
 
@@ -74,7 +74,7 @@ Install or update git, as follows:
 
 1. Open Visual Studio Code.
 
-1. In the **View** menu, select **Terminal**. <!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
+1. In the **View** menu, select **Terminal**.<!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
 
 1. Enter the command: `git -v`
 
@@ -135,16 +135,7 @@ Install or update Node.js, as follows:
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
 
-**TODO: RESUME HERE, TESTING THE STEPS**
-
-Next, you'll clone (or update) the **MicrosoftEdge / Demos** repo, to obtain a local copy of the code in the `/Demos/pwa-getting-started/` directory.
-
 Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
-
-
-If the Demos repo has already been cloned to your drive (for use by your current local machine account), you'll use VS Code > Source Control UI) fetch/pull commits, in the "main" branch?
-
-1. See whether the repo is already cloned to your local drive, as follows:
 
 1. Press **Windows+E**.
 
@@ -152,9 +143,11 @@ If the Demos repo has already been cloned to your drive (for use by your current
 
 1. Navigate to where you want the repo cloned to, such as:
 
-   `C:\Users\localAccount\GitHub`
+   `C:\Users\localAccount\GitHub\`
 
 1. See whether the `\Demos\` repo is listed.
+
+   The following steps assume that the Demos repo hasn't been cloned yet.
 
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
@@ -162,11 +155,20 @@ If the Demos repo has already been cloned to your drive (for use by your current
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
-1. In VS Code's terminal, change to the directory where you want to clone the Demos repo:
+1. Open Visual Studio Code.
+
+1. In the **View** menu, select **Terminal**.<!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
+
+1. Change to the directory where you want to clone the Demos repo:
 
    ```console
    cd ~/GitHub
-   cd c:/users/localAccount/GitHub/  # alt format
+   ```
+
+   Or enter the following command, specifying your local account:
+
+   ```console
+   cd c:/users/localAccount/GitHub/
    ```
 
 1. Enter `git clone` followed by the copied URL for the Demos repo, and then press **Enter**:
@@ -179,7 +181,7 @@ If the Demos repo has already been cloned to your drive (for use by your current
 
    `C:\Users\localAccount\GitHub\Demos`
 
-1. In File Explorer, open the `/Demos/pwa-getting-started/` directory.
+1. In File Explorer, open the `/Demos/pwa-getting-started/` directory, such as `C:\Users\localAccount\GitHub\Demos\pwa-getting-started\`.
 
    Files are listed, such as `converter.js`.
 
@@ -190,15 +192,13 @@ See also:
 <!-- ====================================================================== -->
 ## Step 6: Run the PWA as a web app on your localhost web server; Start the development web server
 
-Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.
+Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.  You'll use `http-server`, a local development web server that can be run in Node.js.
 
 While developing or testing a web site or app, including a PWA, you can use a local web server.  However, when the app is ready for users, you deploy the app to the web by using a web hosting provider.  Like a regular web site or app, a PWA is distributed to users by using a web server.
 
-In this section, you use `http-server`, a local development web server that can be run in Node.js.
-
 Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 
-1. In VS Code's terminal, change to the directory where you want to start the localhost npx web server as `./`:
+1. In VS Code's terminal, change to the `\Demos\pwa-getting-started\` directory:
 
    ```console
    cd Demos
@@ -215,7 +215,7 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
 
    The above command starts the local development web server by using the `http-server` NPM package.
 
-1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command and then issue the npx command again:
+1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command, and then issue the npx command again:
 
    ```console
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
@@ -245,21 +245,21 @@ Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and st
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
+   The temperature convertor app is displayed in the browser at `localhost:8080`:
+
+   ![The temperature convertor app in the browser at localhost](./temperature-converter-images/localhost.png)
+
 
 <!-- ====================================================================== -->
 ## Step 7: Install the PWA from your localhost web server as a local app
 
-Install the sample Progressive Web App (PWA) from your localhost web server as an app on Windows, by clicking the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar.
+Install the sample Progressive Web App (PWA) from your localhost web server as an app on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, as follows:
 
-Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, as follows:
-
-1. In the Address bar, click the **App available. Install temperature converter app** (![App available icon](./temperature-converter-images/app-available-icon.png)) button.
+1. In the Address bar, click the **App available. Install temperature converter** (![App available icon](./temperature-converter-images/app-available-icon.png)) button.
 
    An **Install app** dialog opens:
 
    ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)
-
-   The sample's web app manifest enables the browser to install the app as a Progressive Web App (PWA).  The **App available** button installs the app locally.
 
 1. Click the **Install** button.
 
@@ -267,7 +267,15 @@ Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.c
 
    ![The App installed" dialog in the standalone app window](./temperature-converter-images/app-installed-dialog.png)
 
-1. In the **App installed** dialog, click the **Allow** button, and then click the **Close** (X) button.
+1. Click the **Allow** button.
+
+   A Windows **Apps** dialog asks "Would you like to pin Temperature convertor to your taskbar?  This request is coming from Temperature convertor."
+
+1. Click the **Yes** button.
+
+   The **Temperature convertor** app's icon appears on the Windows taskbar:
+
+   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
 
    The app is displayed within its own app window:
 
@@ -275,11 +283,7 @@ Install the sample Progressive Web App (PWA) on Windows<!-- per https://github.c
 
    The window is a browser window without most of the browser UI.
 
-   The app's icon is displayed in the Windows taskbar:
-
-   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
-
-1. Close the standalone **Temperature converter app** window.
+1. Close the **Temperature converter app** window.
 
 See also:
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
@@ -290,9 +294,9 @@ See also:
 
 Run the sample Progressive Web App (PWA) as a local app on the device.
 
-1. Press the **Windows** key, start typing **Temperature converter app**, and then click **Open**.
+1. Press the **Windows** key, start typing **Temperature converter**, and then click **Open**.
 
-   The installed **Temperature converter app** opens:
+   The installed **Temperature converter** opens:
 
    ![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
@@ -304,9 +308,9 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
    ![The installed sample Progressive Web App (PWA) if installed from github.io server](./temperature-converter-images/installed-from-github-io.png)
 
-1. In the **temperature** text box, type **22**.
+1. In the **temperature** text box, enter **22**.
 
-   As you type, the displayed temperature is updated to **71.6 F**.
+   The displayed temperature is updated to **71.6 F**.
 
 1. Click the **from** and **to** dropdown lists.
 
@@ -321,36 +325,34 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
 The local app window for a Progressive Web App (PWA) is a browser-based window, so Microsoft Edge DevTools can be used to work with the PWA.
 
-Confirm that the service worker (`sw.js`) is running when you open the PWA as a local app:
+Confirm that the service worker (`sw.js`) is running when you open the PWA as a local app, as follows:
 
-1. Open the installed **Temperature converter** sample PWA.
+1. Open the installed **Temperature converter** app.
 
-1. Right-click in white space in the window, or right-click a specific UI control, and then select **Inspect**.
+1. Right-click in the app window (below the title bar), and then select **Inspect**.
 
-   The app window is a browser window, so supports the DevTools **Inspect** command, even though the app window doesn't have the UI which normally appears in a browser window.
+   DevTools opens, in a separate window; undocked.  (Other docking options are dimmed and not available.)  The app window is a browser window, so supports the DevTools **Inspect** command, even though the app window doesn't have the UI which normally appears in a browser window.
 
-   DevTools opens, in a separate window; undocked.  Other docking options are dimmed and not available.
+   <!-- png here? but which tool to show? depends on history -->
 
 1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
 
-   **Service workers:**
-
 1. In the tree on the left, select **Application** > **Service workers**.
 
-   Information about the service worker is displayed.  The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**:
+   Information about the service worker is displayed:
 
    ![The PWA as an installed local app, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-installed-app.png)
 
-   If the service worker isn't displayed, refresh the page by using **Hard refresh** (**Ctrl+F5**, or **Shift+F5**).
+   The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**.
 
-   **Cache storage:**
+   If the service worker isn't displayed, right-click in the Temperature convertor window and then select **Refresh**.
 
-1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1 - http://localhost:8080/**.
+1. In the DevTools window, in the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**:
 
    ![Installed app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-installed-app.png)
 
    The service worker cache is displayed.  All of the resources that are cached by the service worker (or cached automatically by the browser) are listed:
-   * `/` (`index.html`) - The HTML page of the app; the initial page of the app - `index.html` - webpage layout of the app.
+   * `/` (`index.html`) - The HTML webpage of the app, defining layout of controls.
    * `/converter.css` - The styling for the webpage of the app.
    * `/converter.js` - The JavaScript file containing the app logic.
    * `/icon512.png` - The app icon image file to represent the app.
@@ -358,37 +360,85 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
    The service worker adds three files to the cache, explicitly (`.html`, `.css`, and `.js`).  The icon (`.png`) and manifest (`.json`) are cached automatically by the browser.
 
-   The sample's directory includes two files that aren't cached by the service worker: 
-   * `README.md` - brief information about the sample.
-   * `sw.js` - the service worker that manages caching of needed files.
-
 
 <!-- ====================================================================== -->
 ## Step 10: Use DevTools to turn off the internet connection and test the PWA offline
 
-Try the Progressive Web App (PWA) as an offline app, as follows.   
+Try the Progressive Web App (PWA) as an offline app, as follows:
  
-1. In DevTools, open the **Network** tool, and change the **Throttling** value to **Offline**:
+1. In DevTools, open the **Network** (![The Network icon](./temperature-converter-images/network-icon.png)) tool.
+
+1. Near the top, in the menu to the right of the **Disable cache** checkbox, change from **No throttling** to **Offline**:
 
    ![DevTools, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
 
-1. Refresh the app (**F5**).<!-- If you were to empty the cache, the app would stop working.  The job of a service worker is to put resources in the cache so that the app can work offline.  If you empty the cache, the files that the app needs aren't there anymore, and need to be downloaded again. -->
+   The **Network** tab adds a warning icon to remind you of this throttling.
 
-   The app still appears correctly in the browser-based local app window, by using cached resources that are served out by the service worker.
+1. In the Temperature convertor window, right-click and then select **Refresh**.<!-- Don't select  Not "Hard refresh and empty cache", because if you were to empty the cache, the app would stop working.  The job of a service worker is to put resources in the cache so that the app can work offline.  If you empty the cache, the files that the app needs aren't there anymore, and need to be downloaded again. -->
+
+1. In the **temperature** text box, type **22**.
+
+   The displayed temperature changes to **71.6 F**.  The app is still displayed correctly and still works correctly, by using locally cached resources that are served out by the service worker.
+
+1. In the DevTools window, near the top, in the menu to the right of the **Disable cache** checkbox, change from **Offline** back to **No throttling**.
+
+   The throttling warning icon is removed from the **Network** tab.
+
+1. Close the DevTools window.
 
 
 <!-- ====================================================================== -->
-## Step 11: Modify the sample
+## Step 11: Uninstall the sample
 
-Switching from the **main** branch to a working branch preserves the original code in the "main" branch, so that you can modify a copy of the sample code.
+Uninstall the sample as a local app on the device, by starting from the running **Temperature converter app** window, as follows:
+
+1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
+
+   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**:
+
+   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
+
+1. At the bottom, click the **Uninstall** button.
+
+   The **Uninstall app from Microsoft Edge on all synced devices?** dialog opens.
+
+1. Select the **Delete app history and data** checkbox, and then click the **Uninstall** button.
+
+Note: As an alternative, you could uninstall the sample PWA by starting from Microsoft Edge, as follows:
+
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps** > **Installed apps**.
+
+1. In the **Temperature converter app** section, select **Details**, and then click the **Uninstall** button.
+
+
+<!-- ====================================================================== -->
+## Step 12: Modify the sample
+
+You can modify the sample as a starting point for your own Progressive Web App (PWA).  You'll change the name of the app from "Temperature converter" to "TC", in a working branch of the repo, and then install the modified app locally.
 
 Create a working branch and switch to it, as follows:
 
+   **Open the folder in VS Code**
+
+1. Open Visual Studio.
+
+1. Click the **File** menu, and then click **Open folder**.
+
+   The **Open Folder** dialog opens.
+
+1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the **Demos** folder, and then click the **Select Folder** button.
+
+1. In the **Explorer** pane, open `\Demos\pwa-getting-started\index.html`.
+
+   **Create a working branch and switch to it**
+
 1. In Visual Studio Code, in the **View** menu, select **Terminal**.
 
-   The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos>`
+1. Press **Ctrl+C** to stop the `http-server` localhost server.
 
-1. Change to the `/Demos/pwa-getting-started/` directory, by entering commands such as the following:
+   The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\pwa-getting-started>`
+
+1. If you aren't in that directory already, change to the `/Demos/pwa-getting-started/` directory, by entering commands such as the following:
 
    ```console
    cd Demos
@@ -402,49 +452,138 @@ Create a working branch and switch to it, as follows:
 1. In VS Code's terminal, enter the following commands, to create a working branch of the repo and switch to it:
 
    ```console
+   git branch test1
+   git checkout test1
+   ```
+
+   Or, enter the combined command:
+
+   ```console
    git checkout -b test1
    ```
 
-   Example output: `Switched to branch 'test1'`
+   If the branch already exists, the "create branch" command or option outputs "fatal: a branch named 'test1' already exists".
 
-   The lower left corner of Visual Studio Code now shows the branch name **test1** instead of **main**.
+   Example output: `Switched to a new branch 'test1'`
 
-1. In Visual Studio Code, open `/Demos/pwa-getting-started/index.html`.
+1. Close the **Terminal** pane.
 
-   Change the title element text from:
-   `<title>Temperature converter</title>`
+   The lower left corner of Visual Studio Code now shows the branch name **test1** instead of **main**:
+
+   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/branch-in-vs-code.png)
+
+   **Modify the files**
+
+1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/pwa-getting-started/index.html`.
+
+1. In `index.html`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
+
+   Change from:
+
+   ```html
+    <title>Temperature converter</title>
+    <meta name="application-name" content="Temperature converter">
+   ```
+
    to:
-   `<title>My temperature converter</title>`
+
+   ```html
+    <title>TC</title>
+    <meta name="application-name" content="TC">
+   ```
+
+1. Save the file.
+
+1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/pwa-getting-started/manifest.json`.
+
+1. In `manifest.json`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
+   
+   Change from:
+
+   ```json
+   "name": "Temperature converter",
+   "short_name": "Temperature converter",
+   ```
+
+   to:
+
+   ```json
+   "name": "TC",
+   "short_name": "TC",
+   ```
 
 1. Save the file.
 
 
 <!-- ====================================================================== -->
-## Step 12: View the modified web app in the browser
+## Step 13: View the modified web app in the browser
+
+<!-- todo: is server running, or not?  address both scenarios -->
+
+1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
+
+1. Refresh the page.
+
+   If the page isn't available, start the server as follows.
+
+1. In Visual Studio Code, in the **View** menu, select **Terminal**.
+
+1. In VS Code's terminal, change to the `\Demos\pwa-getting-started\` directory:
+
+   ```console
+   cd Demos
+   cd pwa-getting-started
+   ```
+
+   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\pwa-getting-started\`.
+
+1. In VS Code's terminal, enter the following command:
+
+   ```console
+   npx http-server
+   ```
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
 1. Refresh the webpage.<!-- Refresh (**F5**).  Hard refresh (**Ctrl+F5**, or **Shift+F5**).  Press **F12** to open DevTools, right-click the **Refresh** button, select **Empty cache and hard reset**, and then press **F12** to close DevTools. -->
 
-   The tab text changes from **Temperature converter** to **My temperature converter**.
+   The tab text changes from **Temperature converter** to **TC**:
 
-   Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).
+   ![The app renamed to TC in the browser](./temperature-converter-images/tc-app-in-browser.png)
 
 
 <!-- ====================================================================== -->
-## Step 13: Re-install the modified sample as a local app
+## Step 14: Re-install the modified sample as a local app
 
-At this point, your device still has the original version of the sample Progressive Web App (PWA) installed (from localhost, not from github.io).  To update the local app after you modified the code, you don't need to uninstall and reinstall; just open the modified web app from the address bar, as follows.
+Install the modified app from `localhost` in the browser onto the device, as follows:
 
-1. In the Address bar, click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button.
+1. In Microsoft Edge, in the Address bar, click the **App available. Install TC** (![The "App available. Install TC" icon](./temperature-converter-images/app-available-icon.png) button.
 
-   A dialog opens within the browser, titled **Open Temperature converter a...**:
+   An **Install TC app** dialog opens within the browser:
 
-   ![The "Open Temperature converter a..." dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)
+   ![The "Install TC app" dialog in the browser](./temperature-converter-images/install-tc-app.png)
 
-1. Click the **Open** button.
+1. Click the **Install** button.
 
-   The local app's title bar now reads **Temperature converter app - My temperature converter**, since you added the word "My":
+   The modified app is installed locally.  The **App installed** dialog opens within the app:
+
+   ![The App installed" dialog in the standalone app window (modified)](./temperature-converter-images/app-installed-dialog-modified.png)
+
+1. Click the **Allow** button.  TODO: resume testing here
+
+   A Windows **Apps** dialog asks "Would you like to pin Temperature convertor to your taskbar?  This request is coming from Temperature convertor."
+
+1. Click the **Yes** button.
+
+   The **Temperature convertor** app's icon appears on the Windows taskbar:
+
+   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
+
+   The app is displayed within its own app window:
+
+   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+
+   The local app's title bar now reads **TC**:
 
    ![The modified local app](./temperature-converter-images/modified-local-app.png)
 
@@ -456,7 +595,31 @@ At this point, your device still has the original version of the sample Progress
 
 
 <!-- ====================================================================== -->
-## Step 14: Switch back to the "main" branch of the Demos repo
+## Step 15: Uninstall the modified local app
+
+Uninstall the modified local app as follows:
+
+1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
+
+   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**:
+
+   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
+
+1. Click the **Uninstall** button.
+
+
+<!-- ====================================================================== -->
+## Step 16: Stop the development web server
+
+1. In Visual Studio Code, in the **View** menu, select **Terminal**.
+
+1. Press **Ctrl+C**.
+
+   The npx localhost web server stops, with output message: `http-server stopped.`
+
+
+<!-- ====================================================================== -->
+## Step 17: Switch back to the "main" branch of the Demos repo
 
 1. In the lower left corner of Visual Studio Code, look at the branch name.
 
@@ -474,40 +637,23 @@ At this point, your device still has the original version of the sample Progress
 
    The lower left corner of Visual Studio Code now shows the branch name **main** instead of **test1**.
 
-
-<!-- ====================================================================== -->
-## Step 15: Uninstall the local app
-
-You can uninstall the sample as a local app on the device, by starting from the running **Temperature converter app** window.
-
-Uninstall the local app as follows:
-
-1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
-
-   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**:
-
-   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
-
-1. Click the **Uninstall** button.
-
-
-You could also uninstall the sample PWA by starting from Microsoft Edge; you'd do the following:
-
-1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps** > **Installed apps**.
-
-1. In the **Temperature converter app** section, select **Details**, and then click the **Uninstall** button.
-
-
-<!-- ====================================================================== -->
-## Step 16: Stop the development web server
-
-1. In Visual Studio Code, in the **View** menu, select **Terminal**.
-
-1. Press **Ctrl+C**.
-
-   The npx localhost web server stops, with output message: `http-server stopped.`
-
 This is the end of the steps for the sample.  The remainder of this article describes the source code of the sample.
+
+
+<!-- ====================================================================== -->
+## Speeding up the modify/re-install cycle
+
+You might be able to skip some of the above steps each time you modify the app, depending on which files you modify:
+
+* If you modify an HTML file, CSS file, or the main JavaScript file, you might be able to skip some of the above steps such as uninstalling the app.
+
+* If you modify the manifest file or the service worker file, you might not be able to skip some of the above steps.
+
+After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).
+
+1. In Microsoft Edge, in the Address bar, click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button.
+
+   ![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)
 
 
 <!-- ====================================================================== -->
@@ -783,6 +929,8 @@ self.addEventListener('fetch', event => {
   })());
 });
 ```
+
+The service worker adds three files to the cache, explicitly (`.html`, `.css`, and `.js`).  The icon (`.png`) and manifest (`.json`) are cached automatically by the browser.
 
 See also:
 * [The service worker to cache the app's files on the local device (`sw.js`)](../how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.

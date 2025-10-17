@@ -64,7 +64,7 @@ Email client uses the following features:
 
 <!-- ====================================================================== -->
 ## Application Title Meta Tag
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 A demo web app to showcase the `application-title` meta tag.
 
@@ -81,7 +81,7 @@ Application Title Meta Tag uses the following features:
 
 <!-- ====================================================================== -->
 ## Temperature converter
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
 
@@ -92,19 +92,9 @@ A simple PWA demo app that converts temperatures.  See [Temperature converter sa
 
 <!-- ====================================================================== -->
 ## PWA installer
-<!-- 
-## PWA store
--->
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
 
 A PWA that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
-Original version:<!-- todo: which should the user use?  why 2 dirs? -->
-* [PWA store app](https://microsoftedge.github.io/Demos/pwa-pwastore/)
-* [/pwa-pwastore/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-pwastore/README.md)
-
-Newer version:
 * [PWA installer app](https://microsoftedge.github.io/Demos/pwa-installer/)
 * [/pwa-installer/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/) - source code directory.
    * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-installer/README.md)
@@ -117,9 +107,43 @@ PWA installer uses the following features:
 | CSS Masonry | Instead of a strict grid that has gaps below shorter items, the items in the following row are raised up to fill the gaps. | [Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout) |
 
 
+<!-- -------------------------------- -->
+#### /pwa-pwastore/
+
+The `/Demos/pwa-pwastore/` directory is temporary and contains a copy of the PWA installer sample.
+
+* [PWA store app](https://microsoftedge.github.io/Demos/pwa-pwastore/)
+* [/pwa-pwastore/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-pwastore/README.md)
+
+See also:
+* [Microsoft Edge: Web Install API Dev Trial Live](https://www.linkedin.com/feed/update/urn:li:activity:7348768177993998337/)
+* [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) - explainer
+
+<!-- todo: after Dev Trial, delete these links and the dir in the Demos repo -->
+
+<!-- todo: mention both sample dirs, in:
+* main readme for demos repo
+* readme for orig sample
+* readme for revised sample
+* article section about the sample - done
+-->
+
+
+<!-- ======================================================================
+## Web Install Sample
+"Kbhlee2121 / pwa" repo
+
+* [App](https://kbhlee2121.github.io/pwa/web-install/index.html)
+* [/web-install/](https://github.com/Kbhlee2121/pwa/tree/master/web-install) - source code directory.  no readme
+* [/pwa-web-install-api/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-web-install-api/)
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-web-install-api/README.md)
+-->
+
+
 <!-- ====================================================================== -->
 ## Timer PWA
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 Has a **Set timer** button, and you can set the duration of the timer.
 
@@ -130,7 +154,7 @@ Has a **Set timer** button, and you can set the duration of the timer.
 
 <!-- ====================================================================== -->
 ## PWA To Do
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 Create lists of tasks locally in your browser, or by installing the app.  Click the **About** link in the rendered demo.
 
@@ -141,7 +165,7 @@ Create lists of tasks locally in your browser, or by installing the app.  Click 
 
 <!-- ====================================================================== -->
 ## PWAmp
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 PWAmp is a desktop music player that plays local and remote audio files.
 
@@ -166,7 +190,7 @@ PWAmp uses the following features:
 
 <!-- ====================================================================== -->
 ## wami
-<!-- "MicrosoftEdge / Demos" repo; repo dir: __ -->
+<!-- "MicrosoftEdge / Demos" repo -->
 
 wami can apply a sequence of image manipulation steps such as cropping, resizing, rotating, or adding effects on batch of images.
 

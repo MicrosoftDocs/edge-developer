@@ -140,7 +140,7 @@ A PWA can expose a common task as a shortcut that appears in the app's right-cli
 The above screenshot shows **Start Live Session**, a custom menuitem.
 
 See:
-* [Define app shortcuts (long-press or right-click menus)](how-to/shortcuts.md)
+* [Define app shortcuts (long-press or right-click menus)](./how-to/shortcuts.md)
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ See:
 A PWA can display notifications in the operating system's own notification service.  This helps users re-engage with your app.
 
 See:
-* [Re-engage users with badges and notifications](how-to/notifications-badges.md)
+* [Re-engage users with badges and notifications](./how-to/notifications-badges.md)
 
 
 <!-- ====================================================================== -->
@@ -211,6 +211,13 @@ The **App info** menu contains the following:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
-* [Temperature converter sample](./samples/temperature-converter.md)
+<!-- toc order -->
+* [Get started developing a PWA](./how-to/index.md)<!-- bucket 1 sibling 2 -->
+* [Temperature converter sample](./samples/temperature-converter.md)<!-- link not in article --><!-- bucket 1 sibling 3 -->
+* [Define app shortcuts (long-press or right-click menus)](./how-to/shortcuts.md)<!-- bucket 3 -->
+* [Re-engage users with badges and notifications](./how-to/notifications-badges.md)<!-- bucket 5 -->
+
+External:
+* [Microsoft Store](https://apps.microsoft.com)
