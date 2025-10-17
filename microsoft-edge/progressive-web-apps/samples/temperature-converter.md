@@ -10,6 +10,17 @@ ms.date: 10/09/2025
 ---
 # Temperature converter sample
 
+<!-- todo: 
+rename sample in Demos repo from /pwa-getting-started/ to /temperature-converter/
+update this article
+update Demos repo main readme
+update /temperature-converter/ Readme
+-->
+
+<!-- todo: figure out git add or git commit in test1 branch to not affect "main" branch, using VS Code > Terminal (not GH Desktop) -->
+
+<!-- todo: 3rd test pass of steps -->
+
 The Temperature converter sample is a Progressive Web App (PWA) that demonstrates the basics of how to build a PWA.  You can modify this sample to start creating your own PWA.
 
 This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.  This sample works with multiple operating systems, including Windows.  This article provides steps for Windows; other platforms have similar steps.
@@ -141,6 +152,8 @@ Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
 
    File Explorer opens.
 
+   **Check whether Demos repo has been cloned:**
+
 1. Navigate to where you want the repo cloned to, such as:
 
    `C:\Users\localAccount\GitHub\`
@@ -149,9 +162,11 @@ Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
 
    The following steps assume that the Demos repo hasn't been cloned yet.
 
+   **Clone (fork) the repo:**
+
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
-1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
+1. In the upper right, click the down-arrow on the **Fork** button, and then select ... TODO<!-- 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button. -->
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
@@ -273,17 +288,15 @@ Install the sample Progressive Web App (PWA) from your localhost web server as a
 
 1. Click the **Yes** button.
 
-   The **Temperature convertor** app's icon appears on the Windows taskbar:
+   The **Temperature convertor** app's icon (![The "Temperature convertor" icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)) appears on the Windows taskbar.
 
-   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
+   The Temperature convertor app is displayed within its own app window:
 
-   The app is displayed within its own app window:
-
-   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+   ![The installed Temperature convertor app running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
    The window is a browser window without most of the browser UI.
 
-1. Close the **Temperature converter app** window.
+1. Close the **Temperature converter** app window.
 
 See also:
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
@@ -296,9 +309,7 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
 
 1. Press the **Windows** key, start typing **Temperature converter**, and then click **Open**.
 
-   The installed **Temperature converter** opens:
-
-   ![The sample PWA, installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+   The installed **Temperature converter** app opens in its own window.
 
    Because you installed the app from `localhost`, when you start the app, the right side of the title bar displays **localhost:8080** for a few seconds:
 
@@ -366,11 +377,11 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
 Try the Progressive Web App (PWA) as an offline app, as follows:
  
-1. In DevTools, open the **Network** (![The Network icon](./temperature-converter-images/network-icon.png)) tool.
+1. In the DevTools window, open the **Network** (![The Network icon](./temperature-converter-images/network-icon.png)) tool.
 
 1. Near the top, in the menu to the right of the **Disable cache** checkbox, change from **No throttling** to **Offline**:
 
-   ![DevTools, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
+   ![The DevTools window, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
 
    The **Network** tab adds a warning icon to remind you of this throttling.
 
@@ -390,13 +401,13 @@ Try the Progressive Web App (PWA) as an offline app, as follows:
 <!-- ====================================================================== -->
 ## Step 11: Uninstall the sample
 
-Uninstall the sample as a local app on the device, by starting from the running **Temperature converter app** window, as follows:
+Uninstall the sample as a local app on the device, by starting from the running **Temperature converter** window, as follows:
 
 1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
 
-   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**:
+   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter** app:
 
-   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
+   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)<!-- todo: redo w/o "app" in name -->
 
 1. At the bottom, click the **Uninstall** button.
 
@@ -404,11 +415,35 @@ Uninstall the sample as a local app on the device, by starting from the running 
 
 1. Select the **Delete app history and data** checkbox, and then click the **Uninstall** button.
 
+
+<!-- ------------------------------ -->
+#### Other ways to uninstall a PWA
+
 Note: As an alternative, you could uninstall the sample PWA by starting from Microsoft Edge, as follows:
 
-1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps** > **Installed apps**.
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps**.<!-- need png showing UI, which varies depending on approach -->
 
+   The **Apps** dialog opens within Microsoft Edge.
+
+1. Right-click the **Temperature converter** card, and then click **Manage app**.
+
+   The **All apps / Temperature converter** page opens, at `edge://apps`.
+
+1. Scroll down, and then click the **Uninstall** button.
+
+<!--
 1. In the **Temperature converter app** section, select **Details**, and then click the **Uninstall** button.
+-->
+
+Note: As an example of OS integration, you could uninstall the app via the Windows Start menu, as follows:
+
+1. Press the **Windows** key.
+
+1. Start typing "temperature converter".
+
+1. Click **Uninstall**:
+
+   ![Windows Start menu showing the Uninstall command for the app](./temperature-converter-images/uninstall-via-start-menu.png)
 
 
 <!-- ====================================================================== -->
@@ -430,6 +465,10 @@ Create a working branch and switch to it, as follows:
 
 1. In the **Explorer** pane, open `\Demos\pwa-getting-started\index.html`.
 
+   ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
+
+   In the lower left corner of Visual Studio Code, the **main** branch is indicated.
+
    **Create a working branch and switch to it**
 
 1. In Visual Studio Code, in the **View** menu, select **Terminal**.
@@ -444,10 +483,6 @@ Create a working branch and switch to it, as follows:
    cd Demos
    cd pwa-getting-started
    ```
-
-1. In the lower left corner of Visual Studio Code, look at the branch name.
-
-   The **main** branch is indicated.
 
 1. In VS Code's terminal, enter the following commands, to create a working branch of the repo and switch to it:
 
@@ -468,9 +503,9 @@ Create a working branch and switch to it, as follows:
 
 1. Close the **Terminal** pane.
 
-   The lower left corner of Visual Studio Code now shows the branch name **test1** instead of **main**:
+   In the lower left corner of Visual Studio Code, the **test1** branch is indicated:
 
-   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/branch-in-vs-code.png)
+   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-vs-code.png)
 
    **Modify the files**
 
@@ -513,6 +548,12 @@ Create a working branch and switch to it, as follows:
    ```
 
 1. Save the file.
+
+1. Enter the command: `git add .`
+
+1. Enter the command: `git commit`
+
+<!-- todo: test: switch to "main", expect VS Code to show name 4x "Temperature converter" not "TC" like in test1 branch -->
 
 
 <!-- ====================================================================== -->
@@ -557,7 +598,7 @@ Create a working branch and switch to it, as follows:
 
 Install the modified app from `localhost` in the browser onto the device, as follows:
 
-1. In Microsoft Edge, in the Address bar, click the **App available. Install TC** (![The "App available. Install TC" icon](./temperature-converter-images/app-available-icon.png) button.
+1. Continuing from above: In Microsoft Edge, in the Address bar, click the **App available. Install TC** (![The "App available. Install TC" icon](./temperature-converter-images/app-available-icon.png) button.
 
    An **Install TC app** dialog opens within the browser:
 
@@ -571,27 +612,15 @@ Install the modified app from `localhost` in the browser onto the device, as fol
 
 1. Click the **Allow** button.  TODO: resume testing here
 
-   A Windows **Apps** dialog asks "Would you like to pin Temperature convertor to your taskbar?  This request is coming from Temperature convertor."
+   A Windows **Apps** dialog asks "Would you like to pin TC to your taskbar?  This request is coming from TC."
 
 1. Click the **Yes** button.
 
-   The **Temperature convertor** app's icon appears on the Windows taskbar:
+   The **TC** app's icon (![The TC icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)) appears on the Windows taskbar.
 
-   ![The app's icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)
+   The TC app is displayed within its own window, and the title bar now reads **TC**:
 
-   The app is displayed within its own app window:
-
-   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
-
-   The local app's title bar now reads **TC**:
-
-   ![The modified local app](./temperature-converter-images/modified-local-app.png)
-
-   The title bar of the local app is populated by strings from two files:
-
-   1. `manifest.json`: `"name": "Temperature converter app",`
-
-   1. `index.html`: `<title>My temperature converter</title>`
+   ![The installed TC app running in its own window](./temperature-converter-images/tc-app-installed.png)
 
 
 <!-- ====================================================================== -->
@@ -599,13 +628,15 @@ Install the modified app from `localhost` in the browser onto the device, as fol
 
 Uninstall the modified local app as follows:
 
-1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
+1. In the TC app window, select **Settings and more** (**...**) > **App settings**.
 
-   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter app**:
+   In Microsoft Edge, the **Apps** tab opens, displaying details about the **TC** app.
 
-   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
+1. At the bottom, click the **Uninstall** button.
 
-1. Click the **Uninstall** button.
+   The **Uninstall app from Microsoft Edge on all synced devices?** dialog opens.
+
+1. Select the **Delete app history and data** checkbox, and then click the **Uninstall** button.
 
 
 <!-- ====================================================================== -->
@@ -620,6 +651,8 @@ Uninstall the modified local app as follows:
 
 <!-- ====================================================================== -->
 ## Step 17: Switch back to the "main" branch of the Demos repo
+
+<!-- todo: test: expect VS Code to show name 4x "Temperature converter" not "TC" like in test1 branch -->
 
 1. In the lower left corner of Visual Studio Code, look at the branch name.
 
@@ -637,7 +670,7 @@ Uninstall the modified local app as follows:
 
    The lower left corner of Visual Studio Code now shows the branch name **main** instead of **test1**.
 
-This is the end of the steps for the sample.  The remainder of this article describes the source code of the sample.
+This is the end of the steps for the sample.
 
 
 <!-- ====================================================================== -->
@@ -657,301 +690,11 @@ After the app has been installed and you go to the web app in the browser, the P
 
 
 <!-- ====================================================================== -->
-## Overview of source code files
-
-The sample Progressive Web App (PWA) consists of the following files, in the `/Demos/pwa-getting-started/` source code directory:
-
-| File | Description | Section below |
-|---|---|---|
-| `index.html` | The initial webpage defining the UI controls.  The webpage layout of the app.  This sample PWA has a single webpage. | [The app's initial webpage (`index.html`)](#the-apps-initial-webpage-indexhtml) |
-| `converter.css` | The Cascading Style Sheets (CSS) file defines styling for the webpage of the app; the layout styling of each UI control in the main page of the app. | [The JavaScript app logic file (`converter.js`)](#the-css-style-sheet-file-convertercss) |
-| `converter.js` | App logic, as JavaScript code. | [The JavaScript app logic file (`converter.js`)](#the-javascript-app-logic-file-converterjs) |
-| `manifest.json` | Basic information about the app, for the device's operating system to use.  Manifest file that makes the Progressive Web App (PWA) installable on the device, unlike a regular web app. | [The web app manifest (`manifest.json`)](#the-web-app-manifest-manifestjson) |
-| `icon512.png` | Image file to represent the app within the browser and on the local device. | [The image file to represent the app (`icon512.png`)](#the-image-file-to-represent-the-app-icon512png) |
-| `sw.js` | Service worker that caches front-end files on the local device and serves out the cached files when there's no internet connection. | [The service worker to cache the app's files on the local device (`sw.js`)](#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) |
-| `README.md` | Brief information about the app, for people who are looking at the directory of source code; contains a link to access the live app from the github.io web server, and a link to the present article.  Brief information about the app: a link to open the app webpage, and a link to the present article. | [The Readme file to explain the directory of source files (`README.md`)](#the-readme-file-to-explain-the-directory-of-source-files-readmemd) |
-
-Details about each file are below.
-
-
-<!-- ====================================================================== -->
-## The app's initial webpage (`index.html`)
-
-`index.html` defines the first page that users see when they access the Progressive Web App (PWA).
-
-[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) defines the webpage layout of the Progressive Web App (PWA).  The HTML describes the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
-
-```html
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-  <body>
-    <form id="converter">
-       ...
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
-</html>
-```
-
-
-<!-- ------------------------------ -->
-#### How index.html references the CSS file
-
-`index.html` references the `converter.css` CSS file via a line of code that's inside the `<head>` tag:
-
-```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-```
-
-
-<!-- ------------------------------ -->
-#### How index.html loads the JavaScript file
-
-In `index.html`, after the closing `</form>` tag, a `<script>` element loads `converter.js`:
-
-```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-```
-
-Conversely, `converter.js` references the form's `id`: `converter` in the following line:
-
-```javascript
-const form = document.getElementById('converter');
-```
-
-
-<!-- ------------------------------ -->
-#### How `index.html` references the manifest
-
-Inside the `<head>` tag, a `<link>` element references `manifest.json`:
-
-```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
-```
-
-This `<link rel="manifest" href="./manifest.json">` element links the web app manifest file to the app, making the web app a Progressive Web App (PWA).
-
-
-<!-- ------------------------------ -->
-#### How index.html references the service worker
-
-Within a `<script>` element at the end of the `<body>` tag, the service worker file `sw.js` is registered by calling `navigator.serviceWorker.register()`:
-
-```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
-```
-
-
-<!-- ====================================================================== -->
-## The CSS style sheet file (`converter.css`)
-
-[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css) defines the styling for the webpage of the Progressive Web App (PWA), by using Cascading Style Sheet (CSS) rules to organize the HTML content in a layout, and to provide styles for elements.
-
-The web app has CSS style rules, to make the app visually appealing.
-
-The CSS file is `converter.css` in the sample's directory (`/Demos/pwa-getting-started/`), including the following code:
-
-```css
-html {
-  background: rgb(243, 243, 243);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15pt;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: grid;
-  place-items: center;
-}
-
-#converter {
-  ...
-}
-
-#converter input, #converter select {
-  ...
-}
-
-#converter #output-temp {
-  ...
-}
-```
-
-
-<!-- ====================================================================== -->
-## The JavaScript app logic file (`converter.js`)
-
-To make the temperature converter work, the sample uses JavaScript code, in `converter.js`.  [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js) contains the app logic for the Progressive Web App (PWA).  The JavaScript code adds user interactions to the user interface.
-
-```javascript
-const inputField = document.getElementById('input-temp');
-const fromUnitField = document.getElementById('input-unit');
-const toUnitField = document.getElementById('output-unit');
-const outputField = document.getElementById('output-temp');
-const form = document.getElementById('converter');
-
-function convertTemp(value, fromUnit, toUnit) {
-  if (fromUnit === 'c') {
-    ...
-    return value;
-  }
-  throw new Error('Invalid unit');
-}
-
-form.addEventListener('input', () => {
-  const inputTemp = parseFloat(inputField.value);
-  ...
-  outputField.value = (Math.round(outputTemp * 100) / 100) + ' ' + toUnit.toUpperCase();
-});
-```
-
-
-<!-- ====================================================================== -->
-## The web app manifest (`manifest.json`)
-<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
-
-[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json) provides basic information about the Progressive Web App (PWA), for the device's operating system to use.  The JSON code describes the app to the host operating system.
-
-```json
-{
-  "lang": "en-us",
-  "name": "Temperature converter app",
-  "short_name": "Temperature converter",
-  "description": "A basic temperature converter application that can convert to and from Celsius, Kelvin, and Fahrenheit",
-  "start_url": "./",
-  "background_color": "#2f3d58",
-  "theme_color": "#2f3d58",
-  "orientation": "any",
-  "display": "standalone",
-  "icons": [
-      {
-          "src": "./icon512.png",
-          "sizes": "512x512"
-      }
-  ]
-}
-```
-
-See also:
-* [The web app manifest (`manifest.json`)](../how-to/index.md#the-web-app-manifest-manifestjson) in _Get started developing a PWA_.
-
-
-<!-- ====================================================================== -->
-## The image file to represent the app (`icon512.png`)
-
-[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
-
-![Icon file](./temperature-converter-images/icon-in-taskbar.png)
-
-
-<!-- ====================================================================== -->
-## The service worker to cache the app's files on the local device (`sw.js`)
-<!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
-
-[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
-
-```javascript
-const CACHE_NAME = `temperature-converter-v1`;
-    
-// Use the install event to pre-cache all initial resources.
-self.addEventListener('install', event => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    cache.addAll([
-      './',
-      './converter.js',
-      './converter.css'
-    ]);
-  })());
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith((async () => {
-    const cache = await caches.open(CACHE_NAME);
-
-    // Get the resource from the cache.
-    const cachedResponse = await cache.match(event.request);
-    if (cachedResponse) {
-      return cachedResponse;
-    } else {
-        try {
-          // If the resource was not in the cache, try the network.
-          const fetchResponse = await fetch(event.request);
-    
-          // Save the resource in the cache and return it.
-          cache.put(event.request, fetchResponse.clone());
-          return fetchResponse;
-        } catch (e) {
-          // The network failed
-        }
-    }
-  })());
-});
-```
-
-The service worker adds three files to the cache, explicitly (`.html`, `.css`, and `.js`).  The icon (`.png`) and manifest (`.json`) are cached automatically by the browser.
-
-See also:
-* [The service worker to cache the app's files on the local device (`sw.js`)](../how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
-
-
-><!-- ====================================================================== -->
-## The Readme file to explain the directory of source files (`README.md`)
-
-[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme) is technically not part of the sample's source code.
-
-The Readme contains brief information about the Progressive Web App (PWA):
-* A link to open the app webpage.
-* A link to the [Temperature converter sample](../samples/temperature-converter.md) article.
-
-The main directory for a Progressive Web App (PWA)'s source code can contain a Readme file.  The app's end-users don't see the source code directory or the Readme file.
-
-
-<!-- ====================================================================== -->
 ## Next steps
 
 Next, you can:
+
+* Study the code; see [Temperature converter source files](./temperature-converter-source-files.md).
 
 * Make additional minor modifications of the sample's code.
 
@@ -964,6 +707,7 @@ Next, you can:
 
 * [Use PWAs in Microsoft Edge](../ux.md)
 * [Get started developing a PWA](../how-to/index.md)
+* [Temperature converter source files](./temperature-converter-source-files.md)
 
 Localhost:
 * [http://localhost:8080](http://localhost:8080) - or equivalent URLs output by the `npx http-server` command.
@@ -971,7 +715,7 @@ Localhost:
 GitHub:
 * [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample hosted at github.io.
 * [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
-* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+* [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 VS Code:
 * [Visual Studio Code](https://code.visualstudio.com) and then download and install it.
@@ -980,5 +724,5 @@ git:
 * [Downloads](https://git-scm.com/downloads) at git-scm.com.
 
 Node.js:
-* [Node.js](https://nodejs.org).
+* [Node.js](https://nodejs.org)
 * [Download Node.js](https://nodejs.org/download)

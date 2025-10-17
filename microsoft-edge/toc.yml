@@ -1301,6 +1301,9 @@
 
             - name: Temperature converter sample
               href: ./progressive-web-apps/samples/temperature-converter.md
+
+            - name: Temperature converter source files
+              href: ./progressive-web-apps/samples/temperature-converter-source-files.md
 # -----------------------------------------------------------------------------
         - name: Samples
           items:
