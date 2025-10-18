@@ -10,12 +10,7 @@ ms.date: 10/09/2025
 ---
 # Temperature converter sample
 
-<!-- todo: 
-rename sample in Demos repo from /pwa-getting-started/ to /temperature-converter/
-update this article
-update Demos repo main readme
-update /temperature-converter/ Readme
--->
+<!-- todo: update pngs: renamed sample in Demos repo from /temperature-converter/ to /temperature-converter/ -->
 
 <!-- todo: figure out git add or git commit in test1 branch to not affect "main" branch, using VS Code > Terminal (not GH Desktop) -->
 
@@ -34,9 +29,11 @@ See also:
 
 To examine the user interface of the app:
 
-1. In Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app in a new window or tab (hosted at github.io):
+1. In Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample web app in a new window or tab (hosted at github.io):
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
+
+   todo: update png to show new dir name
 
    The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button (don't click it yet).
 
@@ -61,7 +58,7 @@ To examine the user interface of the app:
 
    The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
 
-1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample web app.
+1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample web app.
 
    In a later step, you'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
 
@@ -79,7 +76,7 @@ Install (or optionally update) VS Code, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 3: Install or update git
+## Step 3: Install git
 
 Install or update git, as follows:
 
@@ -99,7 +96,7 @@ Install or update git, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 4: Install or update Node.js
+## Step 4: Install Node.js
 
 Node.js includes a web server that you'll use to run and test the sample locally.
 
@@ -141,12 +138,14 @@ Install or update Node.js, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 5: Clone the Edge Demos repo, to get a local copy of the code
+## Step 5: Clone (fork) the Edge Demos repo
 <!-- derived from 
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
 
-Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
+Next, you'll get a local copy of the sample code, by forking the Microsoft Edge / Demos repo.
+
+Fork the **MicrosoftEdge / Demos** repo, as follows:
 
 1. Press **Windows+E**.
 
@@ -166,7 +165,9 @@ Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
 
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
-1. In the upper right, click the down-arrow on the **Fork** button, and then select ... TODO<!-- 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button. -->
+1. In the upper right, click the down-arrow on the **Fork** button, and then select **Create a new fork**.<!-- 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button. -->
+
+   todo: update steps
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
@@ -196,7 +197,7 @@ Clone (or update) the **MicrosoftEdge / Demos** repo, as follows:
 
    `C:\Users\localAccount\GitHub\Demos`
 
-1. In File Explorer, open the `/Demos/pwa-getting-started/` directory, such as `C:\Users\localAccount\GitHub\Demos\pwa-getting-started\`.
+1. In File Explorer, open the `/Demos/temperature-converter/` directory, such as `C:\Users\localAccount\GitHub\Demos\temperature-converter\`.
 
    Files are listed, such as `converter.js`.
 
@@ -211,16 +212,16 @@ Next, you'll run and test the sample Progressive Web App (PWA) on your local web
 
 While developing or testing a web site or app, including a PWA, you can use a local web server.  However, when the app is ready for users, you deploy the app to the web by using a web hosting provider.  Like a regular web site or app, a PWA is distributed to users by using a web server.
 
-Change to the `/pwa-getting-started/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
+Change to the `/temperature-converter/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 
-1. In VS Code's terminal, change to the `\Demos\pwa-getting-started\` directory:
+1. In VS Code's terminal, change to the `\Demos\temperature-converter\` directory:
 
    ```console
    cd Demos
-   cd pwa-getting-started
+   cd temperature-converter
    ```
 
-   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\pwa-getting-started\`.
+   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`.
 
 1. In VS Code's terminal, enter the following command:
 
@@ -344,11 +345,9 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
    DevTools opens, in a separate window; undocked.  (Other docking options are dimmed and not available.)  The app window is a browser window, so supports the DevTools **Inspect** command, even though the app window doesn't have the UI which normally appears in a browser window.
 
-   <!-- png here? but which tool to show? depends on history -->
-
 1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
 
-1. In the tree on the left, select **Application** > **Service workers**.
+1. In the tree on the left, in the **Application** section, select **Service workers**.
 
    Information about the service worker is displayed:
 
@@ -358,7 +357,7 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
    If the service worker isn't displayed, right-click in the Temperature convertor window and then select **Refresh**.
 
-1. In the DevTools window, in the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**:
+1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**:
 
    ![Installed app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-installed-app.png)
 
@@ -463,9 +462,11 @@ Create a working branch and switch to it, as follows:
 
 1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the **Demos** folder, and then click the **Select Folder** button.
 
-1. In the **Explorer** pane, open `\Demos\pwa-getting-started\index.html`.
+1. In the **Explorer** pane, open `\Demos\temperature-converter\index.html`.
 
    ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
+
+   todo: update png to show new dir name
 
    In the lower left corner of Visual Studio Code, the **main** branch is indicated.
 
@@ -475,13 +476,13 @@ Create a working branch and switch to it, as follows:
 
 1. Press **Ctrl+C** to stop the `http-server` localhost server.
 
-   The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\pwa-getting-started>`
+   The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\temperature-converter>`
 
-1. If you aren't in that directory already, change to the `/Demos/pwa-getting-started/` directory, by entering commands such as the following:
+1. If you aren't in that directory already, change to the `/Demos/temperature-converter/` directory, by entering commands such as the following:
 
    ```console
    cd Demos
-   cd pwa-getting-started
+   cd temperature-converter
    ```
 
 1. In VS Code's terminal, enter the following commands, to create a working branch of the repo and switch to it:
@@ -507,9 +508,11 @@ Create a working branch and switch to it, as follows:
 
    ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-vs-code.png)
 
+   todo: update png to show new dir name
+
    **Modify the files**
 
-1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/pwa-getting-started/index.html`.
+1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/temperature-converter/index.html`.
 
 1. In `index.html`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
 
@@ -529,7 +532,7 @@ Create a working branch and switch to it, as follows:
 
 1. Save the file.
 
-1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/pwa-getting-started/manifest.json`.
+1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/temperature-converter/manifest.json`.
 
 1. In `manifest.json`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
    
@@ -569,14 +572,14 @@ Create a working branch and switch to it, as follows:
 
 1. In Visual Studio Code, in the **View** menu, select **Terminal**.
 
-1. In VS Code's terminal, change to the `\Demos\pwa-getting-started\` directory:
+1. In VS Code's terminal, change to the `\Demos\temperature-converter\` directory:
 
    ```console
    cd Demos
-   cd pwa-getting-started
+   cd temperature-converter
    ```
 
-   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\pwa-getting-started\`.
+   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`.
 
 1. In VS Code's terminal, enter the following command:
 
@@ -698,7 +701,7 @@ Next, you can:
 
 * Make additional minor modifications of the sample's code.
 
-* Copy and paste the entire sample directory `/Demos/pwa-getting-started/` and modify the code to create your own Progressive Web App (PWA).
+* Copy and paste the entire sample directory `/Demos/temperature-converter/` and modify the code to create your own Progressive Web App (PWA).
 
 
 <!-- ====================================================================== -->
@@ -713,7 +716,7 @@ Localhost:
 * [http://localhost:8080](http://localhost:8080) - or equivalent URLs output by the `npx http-server` command.
 
 GitHub:
-* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) sample hosted at github.io.
+* [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample hosted at github.io.
 * [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 * [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository)
 

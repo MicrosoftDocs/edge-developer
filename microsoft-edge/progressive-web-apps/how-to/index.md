@@ -47,7 +47,7 @@ Like a regular web app, a Progressive Web App is written using the programming l
 
 To make a Progressive Web App (PWA) available to users, you deploy the Progressive Web App (PWA) on a web server that's accessible via HTTPS (unlike localhost).  The web server contains front-end code and back-end code for the web app.
 
-If the Progressive Web App (PWA) has no backend code, the Progressive Web App (PWA) can be served out from github.io, such as [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) at `https://microsoftedge.github.io/Demos/pwa-getting-started/`.
+If the Progressive Web App (PWA) has no backend code, the Progressive Web App (PWA) can be served out from github.io, such as [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) at `https://microsoftedge.github.io/Demos/temperature-converter/`.
 
 [Temperature converter sample](../samples/temperature-converter.md) has you run and test the sample Progressive Web App (PWA) on your local server.  When your own Progressive Web App (PWA) has been tested and is ready to distribute, you distribute the tested Progressive Web App (PWA) to your users via a web server (a web hosting provider).
 
@@ -165,7 +165,7 @@ A service worker is a key technology that help make a Progressive Web App (PWA) 
 * More reliable.
 * Network-independent; the app continues to work (in some way), even with a missing or intermittent internet connection.
 
-This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) file is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js) file is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
 
 `sw.js`:
 
@@ -251,7 +251,7 @@ See also:
 <!-- ====================================================================== -->
 ## Next steps
 
-To create your own Progressive Web App (PWA), you can copy, paste, and modify the `Demos\pwa-getting-started` directory.
+To create your own Progressive Web App (PWA), you can copy, paste, and modify the `Demos\temperature-converter` directory.
 
 After that, to update your Progressive Web App (PWA), you deploy the new version to your web server again.
 
@@ -289,5 +289,5 @@ Hosting:
 * [Let's Encrypt](https://letsencrypt.org)
 
 Sample:
-* [Temperature converter](https://microsoftedge.github.io/Demos/pwa-getting-started/) - live demo.
-   * [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) - source file.
+* [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) - live demo.
+   * [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js) - source file.

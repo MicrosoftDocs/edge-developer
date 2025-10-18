@@ -13,13 +13,13 @@ ms.date: 10/09/2025
 The sample Temperature converter Progressive Web App (PWA) 
 
 See also:
-* [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started/) - source code directory.
+* [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/) - source code directory.
 
 
 <!-- ====================================================================== -->
 ## Overview of source code files
 
-The sample Progressive Web App (PWA) consists of the following files, in the `/Demos/pwa-getting-started/` source code directory:
+The sample Progressive Web App (PWA) consists of the following files, in the `/Demos/temperature-converter/` source code directory:
 
 | File | Description | Section below |
 |---|---|---|
@@ -39,7 +39,7 @@ Details about each file are below.
 
 `index.html` defines the first page that users see when they access the Progressive Web App (PWA).
 
-[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) defines the webpage layout of the Progressive Web App (PWA).  The HTML describes the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
+[index.html](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/index.html) defines the webpage layout of the Progressive Web App (PWA).  The HTML describes the content in the app, including the text, images, text fields, and buttons that appear in the user interface.
 
 ```html
 <!DOCTYPE html>
@@ -142,11 +142,11 @@ Within a `<script>` element at the end of the `<body>` tag, the service worker f
 <!-- ====================================================================== -->
 ## The CSS style sheet file (`converter.css`)
 
-[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css) defines the styling for the webpage of the Progressive Web App (PWA), by using Cascading Style Sheet (CSS) rules to organize the HTML content in a layout, and to provide styles for elements.
+[converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.css) defines the styling for the webpage of the Progressive Web App (PWA), by using Cascading Style Sheet (CSS) rules to organize the HTML content in a layout, and to provide styles for elements.
 
 The web app has CSS style rules, to make the app visually appealing.
 
-The CSS file is `converter.css` in the sample's directory (`/Demos/pwa-getting-started/`), including the following code:
+The CSS file is `converter.css` in the sample's directory (`/Demos/temperature-converter/`), including the following code:
 
 ```css
 html {
@@ -182,7 +182,7 @@ body {
 <!-- ====================================================================== -->
 ## The JavaScript app logic file (`converter.js`)
 
-To make the temperature converter work, the sample uses JavaScript code, in `converter.js`.  [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js) contains the app logic for the Progressive Web App (PWA).  The JavaScript code adds user interactions to the user interface.
+To make the temperature converter work, the sample uses JavaScript code, in `converter.js`.  [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.js) contains the app logic for the Progressive Web App (PWA).  The JavaScript code adds user interactions to the user interface.
 
 ```javascript
 const inputField = document.getElementById('input-temp');
@@ -211,7 +211,7 @@ form.addEventListener('input', () => {
 ## The web app manifest (`manifest.json`)
 <!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
 
-[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json) provides basic information about the Progressive Web App (PWA), for the device's operating system to use.  The JSON code describes the app to the host operating system.
+[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/manifest.json) provides basic information about the Progressive Web App (PWA), for the device's operating system to use.  The JSON code describes the app to the host operating system.
 
 ```json
 {
@@ -240,7 +240,7 @@ See also:
 <!-- ====================================================================== -->
 ## The image file to represent the app (`icon512.png`)
 
-[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
+[icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/icon512.png) is a 512x512 pixel app icon image.  This image file represents the Progressive Web App (PWA), such as in the Windows taskbar and Windows Start Menu:
 
 ![Icon file](./temperature-converter-images/icon-in-taskbar.png)
 
@@ -249,7 +249,7 @@ See also:
 ## The service worker to cache the app's files on the local device (`sw.js`)
 <!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
 
-[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js) is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+[sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js) is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
 
 ```javascript
 const CACHE_NAME = `temperature-converter-v1`;
@@ -299,7 +299,7 @@ See also:
 ><!-- ====================================================================== -->
 ## The Readme file to explain the directory of source files (`README.md`)
 
-[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme) contains brief information about the Progressive Web App (PWA):
+[README.md](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter#readme) contains brief information about the Progressive Web App (PWA):
 * A link to open the app webpage.
 * A link to the [Temperature converter sample](../samples/temperature-converter.md) article.
 
@@ -316,11 +316,11 @@ The main directory for a Progressive Web App (PWA)'s source code can contain a R
 * [Temperature converter sample](../samples/temperature-converter.md) article.
 
 Source code:
-* [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started/)
-   * [index.html](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/index.html) 
-   * [converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.css)
-   * [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/converter.js)
-   * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/manifest.json)
-   * [icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/icon512.png)
-   * [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/sw.js)
-   * [README.md](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started#readme)
+* [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/)
+   * [index.html](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/index.html) 
+   * [converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.css)
+   * [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.js)
+   * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/manifest.json)
+   * [icon512.png](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/icon512.png)
+   * [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js)
+   * [README.md](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter#readme)

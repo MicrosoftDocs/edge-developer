@@ -10,9 +10,9 @@ ms.date: 10/01/2025
 ---
 # Progressive Web App samples
 <!-- sync:
-https://learn.microsoft.com/microsoft-edge/progressive-web-apps/demo-pwas
+https://learn.microsoft.com/microsoft-edge/progressive-web-apps/samples/index
 https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
-sync'd July 30, 2025
+sync'd Oct. 17, 2025
 -->
 
 These demo PWAs show how to use features and APIs that can progressively enhance your apps when installed on devices.
@@ -85,9 +85,9 @@ Application Title Meta Tag uses the following features:
 
 A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
 
-* [App](https://microsoftedge.github.io/Demos/pwa-getting-started/)
-* [/pwa-getting-started/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-getting-started/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-getting-started/README.md)
+* [App](https://microsoftedge.github.io/Demos/temperature-converter/)
+* [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/) - source code directory.
+   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/README.md)
 
 
 <!-- ====================================================================== -->
@@ -118,7 +118,7 @@ The `/Demos/pwa-pwastore/` directory is temporary and contains a copy of the PWA
 
 See also:
 * [Microsoft Edge: Web Install API Dev Trial Live](https://www.linkedin.com/feed/update/urn:li:activity:7348768177993998337/)
-* [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) - explainer
+* [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) - explainer.
 
 <!-- todo: after Dev Trial, delete these links and the dir in the Demos repo -->
 
@@ -224,7 +224,7 @@ This simple PWA demo lets you search for made-up movies and store them locally.
 ![The My Movie List app](./index-images/my-movies.png)
 
 * [App](https://quirky-rosalind-ac1e65.netlify.app)<!-- - see Readme for setup. -->
-* [/movies-db-pwa/](https://github.com/captainbrosset/movies-db-pwa/)<!-- todo: move to Demos repo, then update repo's Readme and the article and demo-pwas.md; move this section up --> - source code directory.
+* [/movies-db-pwa/](https://github.com/captainbrosset/movies-db-pwa/)<!-- todo: move to Demos repo, then update repo's Readme and this article; move this section up --> - source code directory.
    * No Readme file.<!-- https://github.com/captainbrosset/movies-db-pwa/issues/1 --><!-- todo: link to readme -->
 
 My Movie List uses the following features:
