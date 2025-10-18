@@ -1,12 +1,12 @@
 ---
 title: Temperature converter source files
-description: How to obtain, install, and run the Temperature converter Progressive Web App sample, and how the sample works.
+description: How the code works in the Temperature converter Progressive Web App (PWA) sample.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 10/09/2025
+ms.date: 10/17/2025
 ---
 # Temperature converter source files
 
