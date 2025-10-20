@@ -98,6 +98,14 @@ To use the Translator API in Microsoft Edge:
 
    ![Flags page of browser](./translator-api-images/flags-translator-api.png)
 
+<!-- todo: not present in Edge Canary 143
+1. In the search box, at the top of the page, enter **Translation API streaming split by sentence**.
+1. In the search box, at the top of the page, enter **Edge Translation API streaming split by sentence**.
+
+   The page is filtered to show the matching flag, `#edge-translation-api-streaming-by-sentence`.
+
+1. Under **Experimental translation API**, select **Enabled**.-->
+
 1. Restart Microsoft Edge Canary or Dev.
 
 
