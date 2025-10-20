@@ -92,7 +92,7 @@ To use the Translator API in Microsoft Edge:
 
 1. In the search box, at the top of the page, enter **Experimental translation API**.
 
-   The page is filtered to show the matching flag.
+   The page is filtered to show the matching flag, `#edge-translation-api`.
 
 1. Under **Experimental translation API**, select **Enabled**:
 
