@@ -12,6 +12,8 @@ ms.date: 07/29/2022
 
 <!-- TODO: Rewrite to start from a project template? -->
 
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
+
 In this article, you set up your development tools (if not done already), learn how to add WebView2 code to a Win32 app project, and learn about WebView2 concepts along the way.
 
 This tutorial starts by opening an existing Win32 app project that has WebView2 code added.  The project uses the [Win32_GettingStarted (WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
@@ -58,9 +60,9 @@ The existing Visual Studio project we'll start with is part of the sample code f
 
 Clone or download the WebView2Samples repo, as follows:
 
-1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If you haven't already, clone (or download) the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone the WebView2Samples repo](../how-to/machine-setup.md#clone-the-webview2samples-repo) (or in [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo)), in in _Set up your Dev environment for WebView2_.
 
-Then return here after you've copied the repo to your local drive, and continue with the steps below.
+Then continue with the steps below.
 
 
 <!-- ====================================================================== -->
@@ -579,5 +581,5 @@ Congratulations, you've built a Win32 app that hosts and uses the WebView2 contr
 ## See also
 
 * [WebView2 sample apps](../code-samples-links.md)
-* [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true)
+* [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl)
 * [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo.

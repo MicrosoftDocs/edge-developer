@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/11/2022
+ms.date: 03/25/2025
 ---
 # Debug WebView2 apps with Visual Studio Code
 
@@ -17,9 +17,9 @@ Visual Studio Code has a built-in debugger for browser debugging.  See [Browser 
 <!-- ====================================================================== -->
 ## Create a launch.json file
 
-To debug your code, your project is required to have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger. One of the properties that's needed to configure the debugger is the `request` property. There are two `request` types, `launch` and `attach`.
+To debug your code, your project must have a `launch.json` file.  A `launch.json` file is a debugger configuration file to configure and customize the Visual Studio Code debugger.  One of the properties that's needed to configure the debugger is the `request` property.  There are two `request` types: `launch` and `attach`.
 
-The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app). To do this, the app must have been built previously. If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project and paste the following code into it:
+The following code demonstrates launching the app from Visual Studio Code (rather than attaching the debugger to a running instance of the app).  To do this, the app must have been built previously.  If your project doesn't have a `launch.json` file, create a new `launch.json` file in the `.vscode` subfolder in your current project, and paste the following code into it:
 
 ```json
 "name": "Hello debug world",
@@ -28,15 +28,24 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "request": "launch",
 "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
 "env": {
-   // Customize for your app location if needed
+   // The following variable is needed when the "runtimeExecutable" property is set.
+   // The port number below must match the value of the "port" property above.
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
+   // Customize for your app location.
    "Path": "%path%;e:/path/to/your/app/location; "
 },
 "useWebView": true,
-// The following two lines set up source path mapping, where `url` is the start page
-// of your app, and `webRoot` is the top level directory with all your code files.
+// The following two lines set up source path mapping, where "url" is the start page
+// of your app, and "webRoot" is the top-level directory containing all your code files.
 "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
+
+
+<!-- ---------------------------------- -->
+#### Using a registry value
+
+Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ---------------------------------- -->
@@ -87,7 +96,7 @@ Open `launch.json` and complete the following actions to use targeted WebView2 d
 "urlFilter": "file://C:/path/to/my/index.ts",
 ```
 
-When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
+When debugging your app, you might need to step through the code from the beginning of the rendering process.  If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
 
 <!-- ---------------------------------- -->
@@ -109,8 +118,7 @@ You might need to attach the debugger to running WebView2 processes.  To do that
 "runtimeExecutable": "C:/path/to/your/webview2/myApp.exe",
 "env": {
    "Path": "%path%;e:/path/to/your/build/location; "
-},
-"useWebView": true
+}
 ```
 
 Your WebView2 control must open the Chrome Developer Protocol (CDP) port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before starting the debugger.
@@ -144,6 +152,12 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
    ![The resulting registry key in the Registry Editor](./debug-visual-studio-code-images/set-debugging-port-registry-key.png)
 
 
+<!-- ---------------------------------- -->
+#### Using an environment variable
+
+Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+
+
 <!-- ====================================================================== -->
 ## Debug tracing options
 
@@ -172,7 +186,7 @@ Saving debug output to a log file:
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
 ```
 
-Visual Studio Code Debug Output with verbose tracing turned on:
+Visual Studio Code output in the **DEBUG CONSOLE** pane, with verbose tracing turned on:
 
 ![Visual Studio Code Debug Output with verbose tracing turned on](./debug-visual-studio-code-images/verbose.png)
 
@@ -217,6 +231,24 @@ If you're debugging Office Add-ins, open the add-in source code in a separate in
 1. Click the **Start Debugging** button to attach to the process and begin debugging.
 
    ![Run and Debug](./debug-visual-studio-code-images/attach-uwp.png)
+
+
+<!-- ====================================================================== -->
+## Source maps with the `WebResourceRequested` event or virtual host name mapping
+
+Source maps are needed to debug the source code of compiled content, including:
+* Transpiled JavaScript, such as TypeScript or minified JavaScript.
+* Compiled CSS, such as SASS or SCSS.
+
+WebView2 doesn't load source maps that are referenced by content which was loaded by using either approach:
+
+* The `WebResourceRequested` event.  See:
+   * [Loading local content by handling the `WebResourceRequested` event](../concepts/working-with-local-content.md#loading-local-content-by-handling-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+   * [Source maps with the `WebResourceRequested` event](../concepts/working-with-local-content.md#source-maps-with-the-webresourcerequested-event) in _Using local content in WebView2 apps_.
+
+* Virtual host name mapping.  See:
+   * [Loading local content by using virtual host name mapping](../concepts/working-with-local-content.md#loading-local-content-by-using-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
+   * [Source maps with virtual host name mapping](../concepts/working-with-local-content.md#source-maps-with-virtual-host-name-mapping) in _Using local content in WebView2 apps_.
 
 
 <!-- ====================================================================== -->

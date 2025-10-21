@@ -6,16 +6,100 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/18/2024
+ms.date: 08/11/2025
 ---
 # Overview of WebView2 APIs
 
-Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.  WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
+Embedding the WebView2 control in your app gives your app access to various methods and properties that are provided through the WebView2 classes or interfaces.
+
+WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
 
 <!-- maintenance notes:
 when adding an h2 heading, add row in table
 when adding an h4 heading, add nav link below the h2
 -->
+
+**Detailed contents:**
+* [Overview of top-level feature areas](#overview-of-top-level-feature-areas)
+* [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core)
+* [Web/native interop](#webnative-interop)
+   * [Host/web object sharing](#hostweb-object-sharing)
+   * [Script execution](#script-execution)
+   * [Web messaging](#web-messaging)
+   * [Script dialogs](#script-dialogs)
+   * [Shared buffer](#shared-buffer)
+* [Browser features](#browser-features)
+   * [Printing](#printing)
+   * [Cookies](#cookies)
+   * [Image capture](#image-capture)
+      * [Control whether the screen capture UI is shown](#control-whether-the-screen-capture-ui-is-shown)
+   * [Find](#find)
+   * [Downloads](#downloads)
+   * [Save as](#save-as)
+      * [Configure the security warning when saving a file](#configure-the-security-warning-when-saving-a-file)
+   * [Web notification handling](#web-notification-handling)
+   * [Permissions](#permissions)
+   * [Context menus](#context-menus)
+   * [Status bar](#status-bar)
+   * [Fluent overlay scrollbars](#fluent-overlay-scrollbars)
+   * [User Agent](#user-agent)
+   * [Autofill](#autofill)
+   * [Audio](#audio)
+   * [Hit-testing of mouse-clicks in regions](#hit-testing-of-mouse-clicks-in-regions)
+   * [Swipe gesture navigation](#swipe-gesture-navigation)
+   * [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
+   * [Fullscreen](#fullscreen)
+   * [PDF toolbar](#pdf-toolbar)
+   * [Theming](#theming)
+   * [Language](#language)
+   * [New window](#new-window)
+   * [Close window](#close-window)
+   * [Document title](#document-title)
+   * [Favicon](#favicon)
+   * [Security and privacy](#security-and-privacy)
+      * [Tracking prevention](#tracking-prevention)
+      * [SmartScreen](#smartscreen)
+      * [Custom crash reporting](#custom-crash-reporting)
+   * [Browser extensions](#browser-extensions)
+* [Process management](#process-management)
+   * [Frame process info](#frame-process-info)
+* [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content)
+   * [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
+   * [Navigation history](#navigation-history)
+   * [Navigation kind](#navigation-kind)
+   * [Block unwanted navigating](#block-unwanted-navigating)
+   * [Navigation events](#navigation-events)
+   * [Manage network requests in WebView2](#manage-network-requests-in-webview2)
+   * [Custom scheme registration](#custom-scheme-registration)
+   * [Client certificates](#client-certificates)
+   * [Server certificates](#server-certificates)
+   * [Launch an external URI scheme](#launch-an-external-uri-scheme)
+* [iframes](#iframes)
+* [Authentication](#authentication)
+* [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps)
+   * [When to use these APIs](#when-to-use-these-apis)
+   * [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
+   * [Zooming](#zooming)
+   * [Rasterization scale](#rasterization-scale)
+   * [Focus and tabbing](#focus-and-tabbing)
+   * [Parent window](#parent-window)
+   * [Keyboard accelerators](#keyboard-accelerators)
+   * [Default background color](#default-background-color)
+* [Rendering WebView2 using Composition](#rendering-webview2-using-composition)
+   * [Connecting to the visual tree](#connecting-to-the-visual-tree)
+   * [Forwarding input](#forwarding-input)
+   * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
+   * [Drag and drop](#drag-and-drop)
+   * [Accessibility](#accessibility)
+* [Environment options](#environment-options)
+   * [User data](#user-data)
+      * [Multiple profiles](#multiple-profiles)
+      * [Delete a profile](#delete-a-profile)
+   * [Runtime selection](#runtime-selection)
+* [Performance and debugging](#performance-and-debugging)
+   * [Memory usage target](#memory-usage-target)
+* [Chrome DevTools Protocol (CDP)](#chrome-devtools-protocol-cdp)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -54,10 +138,12 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
 *  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+
 *  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+
 *  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
-<!-- / keep sync'd -->
+<!-- / end of keep sync'd -->
 
 See also:
 * [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md)
@@ -87,13 +173,6 @@ See also:
 ## Web/native interop
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can communicate between native code and web code using simple messages, JavaScript code, and native objects.  The following are the main APIs for communicating between web and native code.
-
-**Subsections below:**
-* [Host/web object sharing](#hostweb-object-sharing)
-* [Script execution](#script-execution)
-* [Web messaging](#web-messaging)
-* [Script dialogs](#script-dialogs)
-* [Shared buffer](#shared-buffer)
 
 Common use cases for web/native interop:
 *  Update the native host window title after navigating to a different website.
@@ -464,38 +543,6 @@ See also:
 
 The WebView2 control gives your app access to many browser features.  You can modify these browser features and turn them on or off.
 
-**Subsections below:**
-* [Printing](#printing)
-* [Cookies](#cookies)
-* [Image capture](#image-capture)
-   * [Control whether the screen capture UI is shown](#control-whether-the-screen-capture-ui-is-shown)
-* [Downloads](#downloads)
-* [Save as](#save-as)
-* [Web notification handling](#web-notification-handling)
-* [Permissions](#permissions)
-* [Context menus](#context-menus)
-* [Status bar](#status-bar)
-* [Fluent overlay scrollbars](#fluent-overlay-scrollbars)
-* [User Agent](#user-agent)
-* [Autofill](#autofill)
-* [Audio](#audio)
-* [Hit-testing of mouse-clicks in regions](#hit-testing-of-mouse-clicks-in-regions)
-* [Swipe gesture navigation](#swipe-gesture-navigation)
-* [Enable or disable the browser responding to accelerator keys (shortcut keys)](#enable-or-disable-the-browser-responding-to-accelerator-keys-shortcut-keys)
-* [Fullscreen](#fullscreen)
-* [PDF toolbar](#pdf-toolbar)
-* [Theming](#theming)
-* [Language](#language)
-* [New window](#new-window)
-* [Close window](#close-window)
-* [Document title](#document-title)
-* [Favicon](#favicon)
-* [Security and privacy](#security-and-privacy)
-   * [Tracking prevention](#tracking-prevention)
-   * [SmartScreen](#smartscreen)
-   * [Custom crash reporting](#custom-crash-reporting)
-* [Browser extensions](#browser-extensions)
-
 
 <!-- ------------------------------ -->
 #### Printing
@@ -558,7 +605,7 @@ See also:
 You can use cookies in WebView2 to manage user sessions, store user personalization preferences, and track user behavior.
 
 See also:
-* [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
+* [View, edit, and delete cookies](../../devtools/storage/cookies.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -683,6 +730,111 @@ The `ScreenCaptureStarting` event is raised whenever the WebView2 and/or iframe 
   * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_MINIMIZE](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_non_client_region_kind)
   * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_MAXIMIZE](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_non_client_region_kind)
   * [COREWEBVIEW2_NON_CLIENT_REGION_KIND_CLOSE](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_non_client_region_kind)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Find
+
+The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
+* Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
+* Find text strings and navigate among them within a WebView2 control.
+* Programmatically initiate **Find** operations, and navigate **Find** results.
+* Suppress the default **Find** UI.
+* Track the status of **Find** operations.
+
+There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
+
+We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createfindoptions)
+
+* [CoreWebView2Find Class](/dotnet/api/microsoft.web.webview2.core.corewebview2find)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindex)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindexchanged)
+   * [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext)
+   * [CoreWebView2Find.FindPrevious Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findprevious)
+   * [CoreWebView2Find.MatchCount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcount)
+   * [CoreWebView2Find.MatchCountChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcountchanged)
+   * [CoreWebView2Find.StartAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.startasync)
+   * [CoreWebView2Find.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.stop)
+
+* [CoreWebView2FindOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions)
+   * [CoreWebView2FindOptions.FindTerm Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.findterm)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.iscasesensitive)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldhighlightallmatches)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldmatchword)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.suppressdefaultfinddialog)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#find)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#createfindoptions)
+
+* [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#activematchindex)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#activematchindexchanged)
+   * [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#findnext)
+   * [CoreWebView2Find.FindPrevious Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#findprevious)
+   * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#matchcount)
+   * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#matchcountchanged)
+   * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#startasync)
+   * [CoreWebView2Find.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find#stop)
+
+* [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions)
+   * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions#findterm)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions#iscasesensitive)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions#shouldhighlightallmatches)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions#shouldmatchword)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions#suppressdefaultfinddialog)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28)
+   * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28#get_find)
+
+* [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15)
+   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15#createfindoptions)
+
+* [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find)
+   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find#add_activematchindexchanged)
+   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find#add_matchcountchanged)
+   * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find#findnext)
+   * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find#findprevious)
+   * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find#get_activematchindex)
+   * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find#get_matchcount)
+   * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find#remove_activematchindexchanged)
+   * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find#remove_matchcountchanged)
+   * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find#start)
+   * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find#stop)
+
+* [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler)
+
+* [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler)
+
+* [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions)
+   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#get_findterm)
+   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#get_iscasesensitive)
+   * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#get_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#get_shouldmatchword)
+   * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#get_suppressdefaultfinddialog)
+   * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#put_findterm)
+   * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#put_iscasesensitive)
+   * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#put_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#put_shouldmatchword)
+   * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions#put_suppressdefaultfinddialog)
+
+* [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler)
 
 ---
 
@@ -1212,7 +1364,6 @@ To experiment with Fluent overlay scrollbars, in Microsoft Edge, go to `edge://f
 
 See also:
 * [WebView2 browser flags](./webview-features-flags.md) - `msEdgeFluentOverlayScrollbar` and `msOverlayScrollbarWinStyle` flags.
-<!-- todo: article to link to? -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1252,8 +1403,8 @@ See also:
 The user agent is a string that represents the identity of the program on behalf of the user, such as the browser name. In WebView2, you can set the user agent.
 
 See also:
-* [Detect Windows 11 using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
-* [Override the user agent string](../../devtools-guide-chromium/device-mode/override-user-agent.md)
+* [Detect Windows 11 and CPU architecture using User-Agent Client Hints](../../web-platform/how-to-detect-win11.md)
+* [Override the user agent string](../../devtools/device-mode/override-user-agent.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1806,10 +1957,10 @@ See also:
 <!-- ------------------------------ -->
 #### Browser extensions
 
-Your app can embed a WebView2 control that uses browser extensions (add-ons).  A Microsoft Edge *extension* is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
+Your app can embed a WebView2 control that uses a Microsoft Edge extension.  A Microsoft Edge extension is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.
 
 See also:
-* [Overview of Microsoft Edge extensions](../../extensions-chromium/index.md)
+* [Overview of Microsoft Edge extensions](../../extensions/index.md)
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -1880,9 +2031,6 @@ See also:
 ## Process management
 
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
-
-**Subsections below:**
-* [Frame process info](#frame-process-info)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2021,18 +2169,6 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 ## Navigate to pages and manage loaded content
 
 Through the WebView2 control, your app can manage navigation to webpages and manage content that's loaded in the webpages.
-
-**Subsections below:**
-* [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
-* [Navigation history](#navigation-history)
-* [Navigation kind](#navigation-kind)
-* [Block unwanted navigating](#block-unwanted-navigating)
-* [Navigation events](#navigation-events)
-* [Manage network requests in WebView2](#manage-network-requests-in-webview2)
-* [Custom scheme registration](#custom-scheme-registration)
-* [Client certificates](#client-certificates)
-* [Server certificates](#server-certificates)
-* [Launch an external URI scheme](#launch-an-external-uri-scheme)
 
 
 <!-- ------------------------------ -->
@@ -2474,39 +2610,56 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 *  Find out when iframes are navigating.
 *  Allow bypassing x-frame options.
 
-<!-- wording per overview table:
-Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. -->
-
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/index.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Release Notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
+
 * [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2` Class:
    * [CoreWebView2.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#framecreated)
+
 * [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame)
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#framecreated)
+
 * [CoreWebView2FrameCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2framecreatedeventargs)
+
 * [CoreWebView2FrameInfo Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frameinfo)
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2_4` interface:
-   * [ICoreWebView2_4::add_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
-   * [ICoreWebView2_4::remove_FrameCreated method](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
-* [ICoreWebView2Frame interface](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
-* [ICoreWebView2FrameCreatedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
-* [ICoreWebView2FrameInfo interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
-* [ICoreWebView2FrameInfoCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
-* [ICoreWebView2FrameInfoCollectionIterator interface](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
+   * [ICoreWebView2_4::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)
+   * [ICoreWebView2_4::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_framecreated)
+
+* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7)
+  * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#add_framecreated)
+  * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler)<!-- win32 only -->
+
+* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)
+
+* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)
+
+* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!--C++ only-->
+
+* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!--C++ only-->
 
 ---
 
@@ -2571,17 +2724,6 @@ Use these APIs to set up the WebView2 rendering system if your host app doesn't 
 * **No UI framework, and not using Composition** - If you're not using a UI framework for your app (for example, if you're using pure Win32 directly), or if your UI framework doesn't have a WebView2 element, then you need to create `CoreWebView2Controller` and render it into your app, using these APIs in this section.
 
 * **No UI framework, and using Composition** - If your app UI is built using [DirectComposition](/windows/win32/directcomp/directcomposition-portal) or [Windows.UI.Composition](/uwp/api/Windows.UI.Composition), you should use `CoreWebView2CompositionController` rather than using these APIs; see [Rendering WebView2 using Composition](#rendering-webview2-using-composition), below.
-
-
-**Subsections below:**
-* [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
-* [Zooming](#zooming)
-* [Rasterization scale](#rasterization-scale)
-* [Focus and tabbing](#focus-and-tabbing)
-* [Parent window](#parent-window)
-* [Keyboard accelerators](#keyboard-accelerators)
-* [Default background color](#default-background-color)
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2826,21 +2968,34 @@ See also [Enable or disable the browser responding to accelerator keys (shortcut
 
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
+See also:
+* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/index.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Release Notes for the WebView2 SDK_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Controller` Class:
    * [CoreWebView2Controller.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor)
+
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Controller` Class:
    * [CoreWebView2Controller.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controller#defaultbackgroundcolor)
 
+* `CoreWebView2ControllerOptions` Class:
+  * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions#defaultbackgroundcolor)
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Controller2` interface:
-   * [ICoreWebView2Controller2::get_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
-   * [ICoreWebView2Controller2::put_DefaultBackgroundColor method](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+   * [ICoreWebView2Controller2::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)
+   * [ICoreWebView2Controller2::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
+
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3)
+  * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3#get_defaultbackgroundcolor)
+  * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3#put_defaultbackgroundcolor)
 
 ---
 
@@ -2849,13 +3004,6 @@ WebView2 can specify a default background color.  The color can be any opaque co
 ## Rendering WebView2 using Composition
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  `CoreWebView2CompositionController` provides the same APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
-
-**Subsections below:**
-* [Connecting to the visual tree](#connecting-to-the-visual-tree)
-* [Forwarding input](#forwarding-input)
-* [Drag and drop](#drag-and-drop)
-* [Accessibility](#accessibility)
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2955,6 +3103,30 @@ https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_we
 
 
 <!-- ------------------------------ -->
+#### Allow input event messages to pass through the browser window
+
+Allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4)
+   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4#get_allowhostinputprocessing)
+   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4#put_allowhostinputprocessing)
+
+---
+
+
+<!-- ------------------------------ -->
 #### Drag and drop
 
 Dragging from a WebView2 control to another application is supported by default. However, dragging _to_ a WebView2 control requires that when the host app receives an `IDropTarget` event from the system, the host app must forward the event to the WebView2 control.  Dragging to a WebView2 control includes drag-and-drop operations that are entirely within a WebView2 control.
@@ -2986,6 +3158,7 @@ Use the following APIs to forward `IDropTarget` events from the system to the We
 
 ---
 
+
 <!-- ------------------------------ -->
 #### Accessibility
 
@@ -3012,19 +3185,11 @@ Not applicable.
 <!-- ====================================================================== -->
 ## Environment options
 
-**Subsections below:**
-* [User data](#user-data)
-* [Runtime selection](#runtime-selection)
-
 
 <!-- ------------------------------ -->
 #### User data
 
 Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
-
-**Subsections below:**
-* [Multiple profiles](#multiple-profiles)
-* [Delete a profile](#delete-a-profile)
 
 See also:
 * [Manage user data folders](./user-data-folder.md)
@@ -3260,10 +3425,6 @@ See also:
 ## Performance and debugging
 
 Analyze and debug performance, handle performance-related events, and manage memory usage to increase the responsiveness of your app.
-
-**Subsections below:**
-* [Memory usage target](#memory-usage-target)
-
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

@@ -1,0 +1,33 @@
+# This workflow checks if it's time to generate the next beta relnotes.
+# And if so, it generates a draft and opens an issue to notify the team.
+
+name: Generate beta relnotes
+
+on:
+  workflow_dispatch:
+  schedule:
+    # once a day
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+          npx playwright install
+
+      - name: Generate release notes
+        run: |
+          cd scripts
+          actor=${{ github.actor }} token=${{ secrets.GITHUB_TOKEN }} node web-platform-release-notes.js

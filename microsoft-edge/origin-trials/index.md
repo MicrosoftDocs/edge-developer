@@ -39,8 +39,6 @@ To register for an origin trial:
 
 1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
-   To sign up for the Ad Selection API origin trial, instead see [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
-
 1. Select an active trial.
 
 1. Click the **I Accept the Terms of Use** button.
@@ -139,8 +137,6 @@ To renew an origin trial token:
 
 1. Go to [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
-   For the Ad Selection API origin trial, instead see [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md).
-
 1. In the **My Registered Trials** section, select an origin trial.
 
 1. In the **Registrations** section, in a token row that contains an **Expired** badge, click the **Renew** button:
@@ -192,19 +188,11 @@ To provide feedback about an origin trial:
 1. If a new issue is needed, click the **New issue** button.
 
 
-For the Ad Selection API origin trial, instead see [Provide feedback about the origin trial](../web-platform/ad-selection-api.md#provide-feedback-about-the-origin-trial) in _Sign up for the Ad Selection API_.
-
-
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in the article -->
 
 * [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials) - Developer.microsoft.com.
 
-Ad Selection API:
-* [Sign up for the Ad Selection API](../web-platform/ad-selection-api.md)
-   * [Microsoft Edge Origin Trials](https://microsoftedge.github.io/MSEdgeExplainers/origin-trials/) - portal at Github.io, for the Ad Selection API origin trial only.
-
 External:
 * [Implementing feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) - MDN.
-* [Get started with origin trials](https://developer.chrome.com/docs/web-platform/origin-trials) - Chrome docs.<!-- not in article body -->

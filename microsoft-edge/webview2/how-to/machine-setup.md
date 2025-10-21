@@ -30,7 +30,7 @@ Install any Microsoft Edge preview channel (Beta, Dev, or Canary) on a supported
    *  Windows 10
    *  Windows 11
 
-To do this, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 
@@ -161,7 +161,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo:
 
-   ```Shell
+   ```console
    # example location where the repo directory will be added:
    cd c:/users/myusername/documents/github/
    git clone https://github.com/MicrosoftEdge/WebView2Samples.git
@@ -177,7 +177,8 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 See also:
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
-* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Clone the Edge Demos repo to your drive](../../devtools/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+
 * [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
 
@@ -307,5 +308,5 @@ To update the WebView2 Runtime on your development machine and on user machines,
 ## See also
 
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
-* [Downloading or cloning the Demos repo](../../devtools-guide-chromium/sample-code/sample-code.md#download-or-clone-the-demos-repo) in _Sample code for DevTools_.
+* [Clone the Edge Demos repo to your drive](../../devtools/sample-code/sample-code.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
 * [Step 6: Set up a localhost server](../../visual-studio-code/microsoft-edge-devtools-extension/install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.

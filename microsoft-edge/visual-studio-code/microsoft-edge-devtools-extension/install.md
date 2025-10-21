@@ -74,15 +74,15 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
 
 1. At the command prompt, enter `npm version`.  Version numbers are displayed for `npm` and for `node`, indicating that Node Package Manager and Node.js are installed, to support inline and live issue analysis.  For example:
 
-   ```
+   ```bash
    $ npm version
    {
-      npm: '9.6.7',
-      node: '18.17.1',
+      npm: '10.9.2',
+      node: '22.14.0',
       ...
    }
    ```
-   <!-- Sep. 12, 2023 -->
+   <!-- Apr. 9, 2025 -->
 
 See also:
 * [Inline and live issue analysis](./inline-live-issue-analysis.md)
@@ -147,8 +147,8 @@ If you installed Node.js and npm, as described above, `npx http-server` is a sim
 
 In many cases, you don't need to enter a URL or run a localhost server.  For example, you can:
 *  Open a folder that contains webpage source files, and then right-click an `.html` file.
-*  Enter a local file path in the address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
-*  Enter a remote server URL in the address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+*  Enter a local file path in the Address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
+*  Enter a remote server URL in the Address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 
@@ -171,13 +171,13 @@ For information about http-server, see [http-server: a simple static HTTP server
 
    In the git bash shell, use forward slashes, such as:
 
-   ```
+   ```bash
    cd C:/Users/username/Documents/GitHub/Demos/demo-to-do/
    ```
 
    Or, if you are using a different command prompt on Windows, use backslashes, such as:
 
-   ```
+   ```console
    cd C:\Users\username\Documents\GitHub\Demos\demo-to-do\
    ```
 
@@ -191,7 +191,7 @@ These steps start the server for the first time.
 
 1. Enter the command `npx http-server`:
 
-   ```
+   ```console
    npx http-server
    ```
 
@@ -199,7 +199,7 @@ These steps start the server for the first time.
 
    You might receive a message like:
 
-   ```
+   ```console
    Need to install the following packages:
      http-server@14.1.1
    Ok to proceed? (y)
@@ -217,7 +217,7 @@ These steps start the server for the first time.
 
    Information about the server and localhost URL is displayed, such as:
 
-   ```
+   ```console
    Starting up http-server, serving ./
    
    Available on:
@@ -239,5 +239,5 @@ Next, see [Get started using the DevTools extension for Visual Studio Code](./ge
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Opening DevTools and the DevTools browser](./open-devtools-and-embedded-browser.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
-* [Sample code for DevTools](../../devtools-guide-chromium/sample-code/sample-code.md)
+* [Sample code for DevTools](../../devtools/sample-code/sample-code.md)
 * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.

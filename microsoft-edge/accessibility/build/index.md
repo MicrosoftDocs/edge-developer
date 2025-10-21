@@ -117,7 +117,7 @@ If an assistive technology isn't available on your OS or you not possible to ins
 
 *  [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
 
-See also [Cloud-based emulators and simulators](../../devtools-guide-chromium/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
+See also [Cloud-based emulators and simulators](../../devtools/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
 
 
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ JavaScript library to help modern web applications with accessibility concerns b
 <!-- ------------------------------ -->
 #### OpenAjax examples
 
-The [OpenAjax Alliance website](http://oaa-accessibility.org) is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.
+[OpenAjax Alliance](http://www.openajax.org) is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.
 
 
 <!-- ------------------------------ -->

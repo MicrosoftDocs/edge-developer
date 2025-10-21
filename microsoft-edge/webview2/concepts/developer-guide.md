@@ -20,7 +20,7 @@ We recommend using the Evergreen WebView2 Runtime for most WebView2 apps, rather
 
 The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime.  Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements.
 
-For more information about the benefits of the Evergreen Runtime, see [Details about the Evergreen Runtime distribution mode](../concepts/distribution.md#details-about-the-evergreen-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.  
+See [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md).
 
 To help ensure that your WebView2 app works well with the Evergreen WebView2 Runtime, use the recommended practices in the subsections below:
 * [Check to make sure the WebView2 Runtime is installed](#check-to-make-sure-the-webview2-runtime-is-installed).
@@ -34,7 +34,7 @@ To help ensure that your WebView2 app works well with the Evergreen WebView2 Run
 
 When using the Evergreen WebView2 Runtime, before your app uses the WebView2 control, programmatically check to make sure that the Evergreen WebView2 Runtime is installed on the client.
 
-See [Detect if a WebView2 Runtime is already installed](../concepts/distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
+See [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ------------------------------ -->
@@ -42,7 +42,7 @@ See [Detect if a WebView2 Runtime is already installed](../concepts/distribution
 
 When using the Evergreen WebView2 Runtime, handle Evergreen WebView2 Runtime updates.  Updates of the Evergreen WebView2 Runtime are automatically downloaded, but a running WebView2 app will continue using its current version of the WebView2 Runtime, potentially missing security updates.  To adopt the new version, an app must release all references to previous WebView2 objects or restart.  Implementing a `NewBrowserVersionAvailable` event handler can prompt users to restart the app for updates, with a recommendation to save user state before exiting for a seamless transition. 
 
-See [Handle Evergreen WebView2 Runtime updates](../concepts/distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
+See [Handle Evergreen WebView2 Runtime updates](./distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ------------------------------ -->
@@ -62,7 +62,7 @@ When using the Evergreen WebView2 Runtime, use feature detection to test whether
 
 When using the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  Additionally, some group policies pause updating of the runtime.  As a result, when you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.  Therefore, you should use feature detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client. 
 
-See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
+See [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,9 @@ See [Feature-detecting to test whether the installed Runtime supports recently a
 
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  To determine how often you should update the Fixed Version Runtime, you should consider your app's threat model.  For example, when using third-party content in Webview2 apps, always consider the content to be untrusted.
 
-See [Details about the Fixed Version runtime distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
+See:
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+* [The Fixed Version runtime distribution mode](./distribution.md#the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
@@ -78,7 +80,8 @@ See [Details about the Fixed Version runtime distribution mode](../concepts/dist
 
 WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the user data folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.
 
-See [Manage user data folders](../concepts/user-data-folder.md) for further guidance on managing the user data folder.
+See:
+* [Manage user data folders](./user-data-folder.md)
 
 
 <!-- ====================================================================== -->
@@ -86,13 +89,30 @@ See [Manage user data folders](../concepts/user-data-folder.md) for further guid
 
 WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  Your WebView2 app should handle these process-related events, to ensure that the app can recover from failures and continue to run smoothly.
 
-See [Handling process-related events in WebView2](../concepts/process-related-events.md).
+See [Handling process-related events in WebView2](./process-related-events.md).
 
 
 <!-- ====================================================================== -->
 ## Event handlers on the environment object
 
-If any of your app's event handlers on the [environment object](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
+If any of your app's event handlers on the `CoreWebView2Environment` object hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [CoreWebView2Environment.CreateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+   * [CoreWebView2Environment.CreateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+* [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) in _Globals_.<!-- the original lone link instead of this tabset -->
+
+---
 
 To prevent such a memory leak:
 
@@ -110,4 +130,42 @@ WebView2 enables you to host web content in your native applications, providing 
 
 However, hosting web content can also introduce vulnerabilities.  To avoid vulnerabilities that can arise from hosting web content within a native application, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
 
-Follow the guidance in [Develop secure WebView2 apps](../concepts/security.md).
+Follow the guidance in [Develop secure WebView2 apps](./security.md).
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article body -->
+
+<!-- toc order -->
+* [Handling process-related events in WebView2](./process-related-events.md)<!-- bucket 3 -->
+* [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.<!-- bucket 6 -->
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- bucket 6 middle -->
+* [Distribute your app and the WebView2 Runtime](./distribution.md)<!-- link not in article --><!-- bucket 6 middle -->
+   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
+   * [The Fixed Version runtime distribution mode](./distribution.md#the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
+   * [Handle Evergreen WebView2 Runtime updates](./distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
+* [Develop secure WebView2 apps](./security.md)<!-- bucket 7 -->
+* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
+* [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- bucket 8 very bottom -->
+* [Manage user data folders](./user-data-folder.md)<!-- bucket 11 -->
+
+WebView2 Reference:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Environment](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+* [CreateCoreWebView2Environment](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) in _Globals_.
+
+---
+
+Microsoft Edge Enterprise documentation:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- link not in article body -->

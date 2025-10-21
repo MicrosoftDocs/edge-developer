@@ -10,6 +10,8 @@ ms.date: 10/26/2022
 ---
 # Get started with WebView2 in WinForms apps
 
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinForms sample app](../samples/webview2windowsformsbrowser.md).
+
 <!--
 todo: errors experienced with vs2022 by following these instructions:
 *  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
@@ -306,7 +308,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 <!-- ====================================================================== -->
 ## Step 7 - Navigation
 
-Enable users to change the URL that the WebView2 control displays, by reading the text entered in the text box, to serve as an address bar.
+Enable users to change the URL that the WebView2 control displays, by reading the text entered in the text box, to serve as an Address bar.
 
 1. Select **View** > **Code** so that `Form1.cs` is open in the code editor.
 
@@ -330,19 +332,19 @@ Enable users to change the URL that the WebView2 control displays, by reading th
    }
    ```
 
-   Now the `goButton_Click` function will navigate the WebView2 control to the URL that's entered in the address bar text box.
+   Now the `goButton_Click` function will navigate the WebView2 control to the URL that's entered in the Address bar text box.
 
 1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
 1. Press **F5** to build and run the project.
 
-1. In the address bar, enter a URL that starts with `https`, such as `https://www.bing.com`, and then click the **Go!** button:
+1. In the Address bar, enter a URL that starts with `https`, such as `https://www.bing.com`, and then click the **Go!** button:
 
    ![bing.com](./winforms-images/winforms-bing.png)
 
    The WebView2 control shows the webpage content for the URL.
 
-1. In the address bar, enter a string that doesn't start with `http`, such as `www.bing.com`, and then click the **Go!** button.
+1. In the Address bar, enter a string that doesn't start with `http`, such as `www.bing.com`, and then click the **Go!** button.
 
    ![Argument exception due to entering a non-URL](./winforms-images/winforms-non-url-arg-exception.png)
 
@@ -411,15 +413,15 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 1. Press **F5** to build and run the project.
 
-1. In the address bar, enter a URL that starts with `https`, such as `https://www.bing.com`, and then click the **Go!** button.
+1. In the Address bar, enter a URL that starts with `https`, such as `https://www.bing.com`, and then click the **Go!** button.
 
    The https URL loads; the web content changes from the default, Microsoft.com, to Bing.com.
 
-1. In the address bar, enter a URL that starts with `http`, such as `http://www.microsoft.com`, and then click the **Go!** button.
+1. In the Address bar, enter a URL that starts with `http`, such as `http://www.microsoft.com`, and then click the **Go!** button.
 
    The http URL doesn't load; the Bing.com webpage remains displayed.  In contrast, entering `http://www.microsoft.com` into Microsoft Edge works; it redirects to the https site for Microsoft.com.
 
-1. In the address bar, enter a URL that starts with `https`, such as `https://www.microsoft.com`, and then click the **Go!** button.
+1. In the Address bar, enter a URL that starts with `https`, such as `https://www.microsoft.com`, and then click the **Go!** button.
 
    The https URL loads; the Microsoft.com webpage now appears, since you added the 's' after 'http'.
 
@@ -477,7 +479,7 @@ The host and web content can use `postMessage` to communicate with each other as
 
 The communication mechanism passes messages from web content to the host using native capabilities.
 
-In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.
+In your project, when the WebView2 control navigates to a URL, it displays the URL in the Address bar and alerts the user of the URL displayed in the WebView2 control.
 
 1. In `Form1.cs`, update the `Form1()` constructor and create an `InitializeAsync()` function below it, matching the following code:
 
@@ -542,15 +544,15 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Enter a URL, such as `https://www.bing.com`:
 
-   ![The updated address bar URL initially is displayed in an alert box](./winforms-images/winforms-update-addr-bar-alert.png)
+   ![The updated Address bar URL initially is displayed in an alert box](./winforms-images/winforms-update-addr-bar-alert.png)
 
    An alert initially appears, showing the resulting URL that's sent from the host website.
 
 1. Click the **OK** button.
 
-   The WebView2 control now displays the new URL in the address bar, and webpage content from the URL is displayed in the WebView2 control in the WinForms window:
+   The WebView2 control now displays the new URL in the Address bar, and webpage content from the URL is displayed in the WebView2 control in the WinForms window:
 
-   ![The application displays the URL in the address bar](./winforms-images/winforms-final-app.png)
+   ![The application displays the URL in the Address bar](./winforms-images/winforms-final-app.png)
 
    * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.<!--keep /en-us here-->
 

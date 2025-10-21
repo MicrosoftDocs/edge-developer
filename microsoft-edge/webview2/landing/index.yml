@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-# WebView2 landing page
+# WebView2 landing page; https://learn.microsoft.com/microsoft-edge/webview2/landing/
 title: WebView2 documentation
 summary: Embed web technologies (HTML, CSS, and JavaScript) in your native apps.
 
@@ -59,11 +59,7 @@ landingContent:
         links:
           - text: Release Notes for the WebView2 SDK
             url: ../release-notes/index.md
-
-          - text: WebView2 Roadmap
-            url: ../roadmap.md
-
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Card r1c2
   - title: Platforms and samples
     linkLists:
@@ -239,6 +235,9 @@ landingContent:
 
           - text: Prerelease and Release SDKs for WebView2
             url: ../concepts/versioning.md
+
+          - text: Evergreen vs. fixed version of the WebView2 Runtime
+            url: ../concepts/evergreen-vs-fixed-version.md
 
           - text: Distribute your app and the WebView2 Runtime
             url: ../concepts/distribution.md

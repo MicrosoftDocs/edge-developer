@@ -56,7 +56,9 @@ We recommend that you test upcoming changes using preview channels to ensure you
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-Preview channels of Microsoft Edge include the preview WebView2 Runtime.  Preview channels are also called _Insider channels_.  After being installed, the preview channels stay up-to-date; the latest version of each preview channel is automatically installed.  For example, this means the Canary channel will update itself almost daily.  To download a Microsoft Edge preview channel (Canary, Dev, or Beta), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+Preview channels of Microsoft Edge include the preview WebView2 Runtime.  Preview channels are also called _Insider channels_.  After being installed, the preview channels stay up-to-date; the latest version of each preview channel is automatically installed.  For example, this means the Canary channel will update itself almost daily.
+
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 To deploy the preview channel to multiple machines, see [How to deploy preview channels](#how-to-deploy-preview-channels), below.
 
@@ -424,5 +426,22 @@ In your app's code, write your own custom logic to deploy the latest version of 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article body -->
 
+* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Self-host by deploying preview channels](./self-hosting.md)
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
+* [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)
+* [Prerelease and Release SDKs for WebView2](../concepts/versioning.md)
+
+Enterprise docs:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+* [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge)
+
+Microsoft Intune:
+* [Configure Microsoft Edge policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-configure-edge)
+* [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune)
+
+Versions and preview channels of Microsoft Edge:
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider)
+* [Download and configure Microsoft Edge for Business](https://www.microsoft.com/edge/business/download)

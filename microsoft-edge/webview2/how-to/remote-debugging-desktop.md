@@ -10,7 +10,7 @@ ms.date: 09/27/2023
 ---
 # Remote debugging desktop WebView2 WinUI 2 (UWP) apps
 
-To use [Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
+To use [Microsoft Edge DevTools](/microsoft-edge/devtools/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
 
 <!-- ========================================================================== -->
@@ -40,7 +40,7 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
 
     ![Remote Debugging URL](./remote-debugging-desktop-images/remote-debugging-url.png)
 
-1.  Install [Remote Tools for Microsoft Edge](https://www.microsoft.com/store/productId/9P6CMFV44ZLT) from the Microsoft Store.
+1.  Install [Remote Tools for Microsoft Edge](https://apps.microsoft.com/detail/9p6cmfv44zlt) from the Microsoft Store.
 
 1.  In Microsoft Edge, go to the Device Portal URL that you previously noted.  Verify that the **Confirm security settings** page is loaded (in the **Windows Device Portal** tab):
 

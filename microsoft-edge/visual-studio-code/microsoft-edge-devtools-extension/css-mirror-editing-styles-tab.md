@@ -30,7 +30,7 @@ CSS mirror editing also works for an `.html` file that contains a `<style>` elem
 
 #### The CSS Mirror Editing checkbox
 
-If you use a URL (instead of a file path), CSS mirror editing requires opening a folder of webpage source files in Visual Studio Code that the extension can map to the webpage resources of the URL that's entered into the address bar or a `launch.json` file.  If you don't have the local source files, but want to change CSS in DevTools, clear the **CSS mirror editing** checkbox, to prevent error messages about mapping and mirror editing.  See [Enabling CSS mirror editing](#enabling-css-mirror-editing), below.
+If you use a URL (instead of a file path), CSS mirror editing requires opening a folder of webpage source files in Visual Studio Code that the extension can map to the webpage resources of the URL that's entered into the Address bar or a `launch.json` file.  If you don't have the local source files, but want to change CSS in DevTools, clear the **CSS mirror editing** checkbox, to prevent error messages about mapping and mirror editing.  See [Enabling CSS mirror editing](#enabling-css-mirror-editing), below.
 
 
 #### Saving the changes to the .css file
@@ -59,7 +59,7 @@ As a result of CSS mirror editing, Visual Studio Code also automatically navigat
 
 If you have writable, trusted source files, and you want your CSS changes in DevTools to be automatically edited in the source files, select the **CSS mirror editing** checkbox.  It is selected by default.
 
-Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via **Activity Bar** > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
+Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the Address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via **Activity Bar** > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
 
 To enable or disable CSS mirror editing:
 
@@ -69,7 +69,7 @@ To enable or disable CSS mirror editing:
 
    ![Checkbox in the Styles panel of the Elements tool to enable or disable CSS mirroring](./css-mirror-editing-styles-tab-images/css-mirror-editing-checkbox.png)
 
-   Or, open the Command Menu, start typing the word **mirror**, and then select **Microsoft Edge Tools: Toggle mirror editing on|off for CSS files in workspace**:
+   Or, open the **Command Menu**, start typing the word **mirror**, and then select **Microsoft Edge Tools: Toggle mirror editing on|off for CSS files in workspace**:
 
    ![Using the Command Menu to focus the CSS mirror editing view and turn CSS mirror editing on or off](./css-mirror-editing-styles-tab-images/css-mirror-editing-command.png)
 

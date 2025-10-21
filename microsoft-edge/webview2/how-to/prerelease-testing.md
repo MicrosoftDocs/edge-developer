@@ -22,7 +22,9 @@ Conduct both automated and manual testing:
 
 Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
-To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the preview WebView2 Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).  To manually install the preview channels, go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  The preview channels are also called _Insider channels_.
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the preview WebView2 Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).
+
+To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
@@ -59,8 +61,9 @@ Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedb
 
 * [Self-host by deploying preview channels](./self-hosting.md)
 * [Test upcoming APIs and features](./set-preview-channel.md)
-* [Automate and test WebView2 apps with Microsoft Edge WebDriver](/microsoft-edge/webdriver)
+* [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md)
+* [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)
-* [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 * [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels)
-* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download Edge Canary, Edge Dev, or Edge Beta.
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).

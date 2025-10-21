@@ -18,17 +18,37 @@ Generally, release notes apply across the supported platforms, which are listed 
 
 Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
+See also:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
 
 <!-- ====================================================================== -->
 ## Phases of adding APIs
 
-New APIs are added in phases, as follows:
-1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.
-1. Then they become Stable APIs in a Prerelease SDK package.
-1. Soon after, they become Stable APIs in a Release SDK package.  Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
+New APIs are added in three phases, as follows:
+
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.  In Win32, the type name includes the word "Experimental".
+
+1. Then the APIs become Stable APIs in a Prerelease SDK package.  In Win32, the type name omits the word "Experimental".
+
+1. Soon after, the APIs become Stable APIs in a Release SDK package.  Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
 
 ![Diagram of phases of introducing new APIs](./about-images/phases-of-adding-apis.png)
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
+
+Shorthand names of the phases:
+
+1. Experimental in Prerelease
+1. Stable in Prerelease
+1. Stable in Release
+
+Release Notes sections use this wording for the phases:
+
+* The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+* The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+* The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 See also:
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
@@ -54,7 +74,7 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 *  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
 
-*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
+*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
 *  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
@@ -100,3 +120,5 @@ Async methods:
 * [Archived Release Notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

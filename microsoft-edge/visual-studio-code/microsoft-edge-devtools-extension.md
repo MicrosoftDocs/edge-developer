@@ -37,14 +37,15 @@ The DevTools extension for Visual Studio Code enables you to:
 
 <!-- ====================================================================== -->
 ## Approaches compared
+<!-- todo: x-link -->
 
 The DevTools extension for Visual Studio Code is one of several different ways to use DevTools to change your local files.
 
 | Approach | Pros and Cons | Article |
 |---|---|---|
-| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools-guide-chromium/elements-tool/elements-tool.md)| 
-| Browser > DevTools > **Sources** tool > **Filesystem** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Using the Filesystem tab to define a local Workspace](../devtools-guide-chromium/sources/index.md) in _Sources tool overview_ |
-| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](../devtools-guide-chromium/sources/opening-sources-in-vscode.md). |
+| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements-tool/elements-tool.md)| 
+| Browser > DevTools > **Sources** tool > **Workspace** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Select a local Workspace, to use DevTools to edit files and save changes to disk](../devtools/sources/index.md) in _Sources tool overview_ |
+| Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](../devtools/sources/opening-sources-in-vscode.md). |
 | Microsoft Edge DevTools extension for Visual Studio Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to save the edits. | The present article. |
 
 
@@ -96,17 +97,17 @@ The following tools are included in the DevTools extension for Visual Studio Cod
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
-| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools-guide-chromium/elements-tool/elements-tool.md) |
-| **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](../devtools-guide-chromium/console/index.md) |
-| **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](../devtools-guide-chromium/network/index.md) |
-| **Application** tool | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](../devtools-guide-chromium/storage/application-tool.md) |
-| **Issues** tool | The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues. | [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md) |
-| **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](../devtools-guide-chromium/network-conditions/network-conditions-tool.md) |
-| **Network request blocking** tool | Use the **Network request blocking** tool to test blocking network requests to a specified URL pattern and see how a webpage behaves. | [Network request blocking tool](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) |
-| **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](../devtools-guide-chromium/css/inspect.md) |
-| **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](../devtools-guide-chromium/device-mode/index.md) |
+| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements-tool/elements-tool.md) |
+| **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](../devtools/console/index.md) |
+| **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](../devtools/network/index.md) |
+| **Application** tool | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](../devtools/storage/application-tool.md) |
+| **Issues** tool | The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues. | [Find and fix problems using the Issues tool](../devtools/issues/index.md) |
+| **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](../devtools/network-conditions/network-conditions-tool.md) |
+| **Network request blocking** tool | Use the **Network request blocking** tool to test blocking network requests to a specified URL pattern and see how a webpage behaves. | [Network request blocking tool](../devtools/network-request-blocking/network-request-blocking-tool.md) |
+| **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](../devtools/css/inspect.md) |
+| **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](../devtools/device-mode/index.md) |
 
-For the list of all tools that are in the Microsoft Edge browser version of DevTools, see [Overview of all tools](../devtools-guide-chromium/about-tools.md#overview-of-all-tools) in _About the list of tools_.
+For the list of all tools that are in the Microsoft Edge browser version of DevTools, see [About the list of tools](../devtools/about-tools.md).
 
 
 <!-- ====================================================================== -->

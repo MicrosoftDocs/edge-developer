@@ -60,7 +60,7 @@ WebView2 apps use user data folders (UDFs) to store browser data, such as cookie
 | `LocalStorage` | Data stored by the localStorage DOM API. |
 | `PasswordAutosave` | Password autosave data. |
 | `Settings` | Settings data. |
-| `WebSql` | Data stored by the Web SQL database DOM API. |
+| `WebSql` | Data stored by the Web SQL database DOM API.  (Web SQL support was removed starting with Microsoft Edge 124; see [High-impact changes](../../web-platform/site-impacting-changes.md?tabs=earlier) in _Site compatibility-impacting changes coming to Microsoft Edge_.) |
 
 The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
 
@@ -78,16 +78,12 @@ The UDF is created on startup of the WebView2 host app, if the UDF doesn't exist
 <!-- ====================================================================== -->
 ## How many UDFs are created?
 
-Each instance of a WebView2 control is associated with a user data folder (UDF).
+Each instance of a WebView2 control is associated with a WebView2 session.
 
-Each WebView2 session must have a UDF.  There's only 1 active UDF per WebView2 session.
+* Each WebView2 session has exactly one UDF.
+* A UDF can only have at most one WebView2 session at a time.
 
-There is at least one UDF per app WebView2 session.  It's possible for your host app to overlap them, by specifying a custom UDF location.
-Or, you can have one UDF per machine.  This depends on how your host app configs the UDF.
-
-A UDF can be either per user, if the app was installed per-user.
-If the host app is installed per-user, each UDF is unique to a user, if not otherwise specified.
-
+A WebView2 control shares its WebView2 session with any other WebView2 control that uses the same UDF. This is true whether the WebView2 controls are in the same host app or different host apps. However, a UDF may only be shared among host apps that are in the same logon session (more specifically, only one HDESKTOP). See [Process model for WebView2 apps](../concepts/process-model.md).
 
 <!-- ====================================================================== -->
 ## How to move the UDF
@@ -96,7 +92,9 @@ To move a user data folder (UDF):
 
 1. Shut down all WebView2 sessions.
 
-1. Start a new WebView2 host app session, specifying a new custom UDF location.
+1. Move the contents of the UDF to the new custom UDF location.
+
+1. Start a new WebView2 host app session, specifying the new custom UDF location.
 
 
 <!-- ====================================================================== -->
@@ -434,7 +432,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 <!-- ====================================================================== -->
 ## Retrieving the UDF location
 
-To find out what the user data folder (UDF) location was set to, use the `UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 app.
+To find out what the user data folder (UDF) location was set to, use the `CoreWebView2Environment.UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 session.
 
 Reasons you might want to read the UDF location:
 
@@ -549,7 +547,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 <!-- ====================================================================== -->
 ## Clearing space in the UDF
 
-Instead of deleting the user data folder (UDF), clear browsing data from the UDF.  For example, clear user data and history when a user signs out.
+Instead of deleting the entire user data folder (UDF), you can use WebView2 APIs to clear specific browsing data from the UDF.  For example, you can clear user data and history when a user signs out of your app.
 
 See [Clear browsing data from the user data folder](clear-browsing-data.md).
 

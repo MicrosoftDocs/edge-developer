@@ -96,7 +96,7 @@ User-Agent Client Hints are only sent over secure connections using `HTTPS`.
 
 You can access User-Agent Client Hints by using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.
 
-```JSON
+```json
 {
   "brands": [
     {
@@ -275,13 +275,13 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 1. Copy the following code:
 
-    ```shell
+    ```console
     --disable-domain-action-user-agent-override
     ```
 
 1. Run the Microsoft Edge app using the copied code as follows:
 
-    ```shell
+    ```console
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
 
@@ -305,4 +305,4 @@ Legacy browser considerations:
 <!-- ====================================================================== -->
 ## See also
 
-[Detect Windows 11 using User-Agent Client Hints](/microsoft-edge/web-platform/how-to-detect-win11)
+[Detect Windows 11 and CPU architecture using User-Agent Client Hints](./how-to-detect-win11.md)

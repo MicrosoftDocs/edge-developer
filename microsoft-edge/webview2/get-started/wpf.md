@@ -10,6 +10,8 @@ ms.date: 09/19/2022
 ---
 # Get started with WebView2 in WPF apps
 
+This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WPF sample app](../samples/webview2wpfbrowser.md).
+
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
 In this tutorial, you use the **WPF Application** or **WPF App (.NET Framework)** project template to create a WPF app, and then install the WebView2 SDK for the project to add WebView2.
@@ -273,9 +275,9 @@ Add a WebView2 control to your app.
 <!-- ====================================================================== -->
 ## Step 6 - Navigation
 
-Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
+Enable users to change the URL that the WebView2 control displays, by adding an Address bar to the app.
 
-1. In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView2 control.  Keep the existing code below the new snippet.
+1. In the `MainWindow.xaml` file, add an Address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView2 control.  Keep the existing code below the new snippet.
 
    ```xml
    <DockPanel DockPanel.Dock="Top">
@@ -308,7 +310,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
    using Microsoft.Web.WebView2.Core;
    ```
 
-1. In the `MainWindow.xaml.cs`file, copy the following code to create the `ButtonGo_Click` method.  This code navigates the WebView2 control to the URL entered in the address bar.
+1. In the `MainWindow.xaml.cs`file, copy the following code to create the `ButtonGo_Click` method.  This code navigates the WebView2 control to the URL entered in the Address bar.
 
    ```csharp
    private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -349,13 +351,13 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
 1. Press **F5** to build and run the project.
 
-1. Type a new URL in the address bar and choose **Go**.  For example, type `https://www.bing.com`.
+1. Type a new URL in the Address bar and choose **Go**.  For example, type `https://www.bing.com`.
 
 1. Make sure the WebView2 control opens the URL you entered.
 
-   Make sure you enter a complete URL in the address bar.  The app generates an `ArgumentException` if the URL doesn't start with `http://` or `https://`.
+   Make sure you enter a complete URL in the Address bar.  The app generates an `ArgumentException` if the URL doesn't start with `http://` or `https://`.
 
-   The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
+   The sample app displays the Bing website with the URL `https://www.bing.com` in the Address bar:
 
    ![The app displays the Bing website](./wpf-images/wpf-getting-started-bing.png)
 
@@ -492,7 +494,7 @@ The host and web content can communicate in the following ways using `postMessag
 
 The communication mechanism passes messages from web content to the host using native capabilities.
 
-In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.
+In your project, when the WebView2 control navigates to a URL, it displays the URL in the Address bar and alerts the user of the URL displayed in the WebView2 control.
 
 1. In `MainWindow.xaml.cs`, update your constructor and create an `InitializeAsync` function to match the following code.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async), because the initialization of `CoreWebView2` is asynchronous.
 
@@ -548,11 +550,11 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Press **F5** to build and run the project.
 
-1. When you open a new URI, the WebView2 control displays the URI in the address bar.
+1. When you open a new URI, the WebView2 control displays the URI in the Address bar.
 
-   The sample app displays the URI in the address bar and the Microsoft website, https://www.microsoft.com:
+   The sample app displays the URI in the Address bar and the Microsoft website, https://www.microsoft.com:
 
-   ![The sample app displays the URI in the address bar and the Microsoft website](./wpf-images/wpf-getting-started-searchbar.png)
+   ![The sample app displays the URI in the Address bar and the Microsoft website](./wpf-images/wpf-getting-started-searchbar.png)
 
 Congratulations, you built your first WebView2 app!
 
