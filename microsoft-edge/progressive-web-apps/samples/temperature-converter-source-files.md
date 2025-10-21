@@ -73,14 +73,14 @@ Details about each file are below.
 `index.html` references the `converter.css` CSS file via a line of code that's inside the `<head>` tag:
 
 ```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+  <link rel="stylesheet" href="./converter.css">
+  <link rel="manifest" href="./manifest.json">
+  <title>Temperature converter</title>
+</head>
 ```
 
 
@@ -90,9 +90,9 @@ Details about each file are below.
 In `index.html`, after the closing `</form>` tag, a `<script>` element loads `converter.js`:
 
 ```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
+  <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+</form>
+<script src="./converter.js"></script>
 ```
 
 Conversely, `converter.js` references the form's `id`: `converter` in the following line:
@@ -108,17 +108,23 @@ const form = document.getElementById('converter');
 Inside the `<head>` tag, a `<link>` element references `manifest.json`:
 
 ```html
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
-    <link rel="stylesheet" href="./converter.css">
-    <link rel="manifest" href="./manifest.json">
-    <title>Temperature converter</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+  <link rel="stylesheet" href="./converter.css">
+  <link rel="manifest" href="./manifest.json">
+  <title>Temperature converter</title>
+</head>
 ```
 
 This `<link rel="manifest" href="./manifest.json">` element links the web app manifest file to the app, making the web app a Progressive Web App (PWA).
+
+The file name `manifest.json` is merely a common convention, not a strict requirement.  For example, you can change the manifest file name to `abcd.json`, and modify the line in `index.html` as:
+
+```html
+<link rel="manifest" href="./abcd.json">
+```
 
 
 <!-- ------------------------------ -->
@@ -127,15 +133,15 @@ This `<link rel="manifest" href="./manifest.json">` element links the web app ma
 Within a `<script>` element at the end of the `<body>` tag, the service worker file `sw.js` is registered by calling `navigator.serviceWorker.register()`:
 
 ```html
-      <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
-    </form>
-    <script src="./converter.js"></script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
-      }
-    </script>
-  </body>
+    <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+  </form>
+  <script src="./converter.js"></script>
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js', { scope: './' });
+    }
+  </script>
+</body>
 ```
 
 

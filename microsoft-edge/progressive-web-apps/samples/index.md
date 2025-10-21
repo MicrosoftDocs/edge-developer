@@ -106,28 +106,16 @@ PWA installer uses the following features:
 | Web Install API | PWA installer uses the `navigator.install()` API to install other PWAs on the device. | [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) |
 | CSS Masonry | Instead of a strict grid that has gaps below shorter items, the items in the following row are raised up to fill the gaps. | [Masonry layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Masonry_layout) |
 
-
-<!-- -------------------------------- -->
-#### /pwa-pwastore/
-
-The `/Demos/pwa-pwastore/` directory is temporary and contains a copy of the PWA installer sample.
-
-* [PWA store app](https://microsoftedge.github.io/Demos/pwa-pwastore/)
-* [/pwa-pwastore/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-pwastore/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-pwastore/README.md)
-
 See also:
 * [Microsoft Edge: Web Install API Dev Trial Live](https://www.linkedin.com/feed/update/urn:li:activity:7348768177993998337/)
 * [Web Install API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer.md) - explainer.
-
-<!-- todo: after Dev Trial, delete these links and the dir in the Demos repo -->
 
 
 <!-- ======================================================================
 ## Web Install Sample
 "Kbhlee2121 / pwa" repo
 
-* [App](https://kbhlee2121.github.io/pwa/web-install/index.html)
+* [App](https://kbhlee2121.github.io/pwa/web-install/index.html) - requires the web-app-installation-api flag.
 * [/web-install/](https://github.com/Kbhlee2121/pwa/tree/master/web-install) - source code directory.  no readme
 * [/pwa-web-install-api/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-web-install-api/)
    * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-web-install-api/README.md)

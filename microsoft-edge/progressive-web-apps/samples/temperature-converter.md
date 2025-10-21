@@ -374,7 +374,7 @@ Try the Progressive Web App (PWA) as an offline app, as follows:
 
    The **Network** tab adds a warning icon to remind you of this throttling.
 
-1. In the Temperature convertor window, right-click and then select **Refresh**.<!-- Don't select  Not "Hard refresh and empty cache", because if you were to empty the cache, the app would stop working.  The job of a service worker is to put resources in the cache so that the app can work offline.  If you empty the cache, the files that the app needs aren't there anymore, and need to be downloaded again. -->
+1. In the Temperature convertor window, right-click and then select **Refresh**.<!-- Detail: Don't select "Hard refresh and empty cache", because if you were to empty the cache, the app would stop working.  The job of a service worker is to put resources in the cache so that the app can work offline.  If you empty the cache, the files that the app needs aren't there anymore, and need to be downloaded again. -->
 
 1. In the **temperature** text box, type **22**.
 

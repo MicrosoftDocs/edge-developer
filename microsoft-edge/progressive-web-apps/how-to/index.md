@@ -120,7 +120,7 @@ A regular web app only runs in the browser.  By adding a web app manifest, the w
 
 A _web app manifest_ is a JSON file containing metadata about the Progressive Web App, such as its name, description, icons, and the various operating system features it uses.  The JSON code describes the app to the host operating system.  The manifest file provides basic information about the Progressive Web App, for the device's operating system to use.  
 
-The file name `manifest.json` is merely a common convention, not a strict requirement.<!-- todo: is the file name `manifest.json` merely a common convention, or a strict requirement? -->
+The file name `manifest.json` is a common convention, not a strict requirement.
 
 Example `manifest.json`:
 
