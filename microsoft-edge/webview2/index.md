@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.subservice: webview
-ms.date: 10/21/2025
+ms.date: 06/10/2025
 ---
 # Introduction to Microsoft Edge WebView2
 
