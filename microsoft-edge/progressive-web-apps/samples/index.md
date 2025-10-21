@@ -122,13 +122,6 @@ See also:
 
 <!-- todo: after Dev Trial, delete these links and the dir in the Demos repo -->
 
-<!-- todo: mention both sample dirs, in:
-* main readme for demos repo
-* readme for orig sample
-* readme for revised sample
-* article section about the sample - done
--->
-
 
 <!-- ======================================================================
 ## Web Install Sample

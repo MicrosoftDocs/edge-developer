@@ -61,7 +61,7 @@ When your Progressive Web App (PWA) goes live, you must publish it to an HTTPS U
 
 For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
-You can also host your website on GitHub Pages (`pages.github.com`) which supports HTTPS too.  See [GitHub Pages documentation](https://docs.github.com/pages).<!-- todo: capabilities of pages.github.com vs. github.io - just a different URL? -->
+You can also host your website on GitHub Pages (`pages.github.com`) which supports HTTPS too.  See [GitHub Pages documentation](https://docs.github.com/pages).
 
 
 <!-- ------------------------------ -->
