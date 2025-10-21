@@ -10,6 +10,7 @@
     // Reference > .NET
     // Reference > WinForms
     // Reference > WPF
+    // Bottom leaf nodes
 
     // ======================================================================
     // Top matter
@@ -595,8 +596,16 @@
       "source_path": "../microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md",
       "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
       "redirect_document_id": false
-    }
+    },
     // /Reference > WPF
     // /Reference
+    // ======================================================================
+    // Bottom leaf nodes
+    {
+      "source_path": "microsoft-edge/webview2/concepts/end-user-faq.md",
+      "redirect_url": "/microsoft-edge/webview2/landing/",  // todo: point to SMC article location
+      "redirect_document_id": false
+    }
+    // /Bottom leaf nodes
   ]
 }
