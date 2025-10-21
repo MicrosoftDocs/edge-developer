@@ -10,12 +10,6 @@ ms.date: 10/09/2025
 ---
 # Temperature converter sample
 
-<!-- todo: update pngs: renamed sample in Demos repo from /temperature-converter/ to /temperature-converter/ -->
-
-<!-- todo: figure out git add or git commit in test1 branch to not affect "main" branch, using VS Code > Terminal (not GH Desktop) -->
-
-<!-- todo: 3rd test pass of steps -->
-
 The Temperature converter sample is a Progressive Web App (PWA) that demonstrates the basics of how to build a PWA.  You can modify this sample to start creating your own PWA.
 
 This article covers how to obtain the sample, install it on Windows<!-- per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->, and run the sample.  This sample works with multiple operating systems, including Windows.  This article provides steps for Windows; other platforms have similar steps.
@@ -32,8 +26,6 @@ To examine the user interface of the app:
 1. In Microsoft Edge, go to the live [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample web app in a new window or tab (hosted at github.io):
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
-
-   todo: update png to show new dir name
 
    The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button (don't click it yet).
 
@@ -161,19 +153,17 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
    The following steps assume that the Demos repo hasn't been cloned yet.
 
-   **Clone (fork) the repo:**
+   **Fork the repo:**
 
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
-1. In the upper right, click the down-arrow on the **Fork** button, and then select **Create a new fork**.<!-- 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button. -->
-
-   todo: update steps
+1. In the upper right, click the down-arrow on the **Fork** button, and then select **Create a new fork**.
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 
 1. Open Visual Studio Code.
 
-1. In the **View** menu, select **Terminal**.<!-- For details, see [Terminal Basics](https://code.visualstudio.com/docs/terminal/basics) in the VS Code docs. -->
+1. In the **View** menu, select **Terminal**.
 
 1. Change to the directory where you want to clone the Demos repo:
 
@@ -406,7 +396,7 @@ Uninstall the sample as a local app on the device, by starting from the running 
 
    In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter** app:
 
-   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)<!-- todo: redo w/o "app" in name -->
+   ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
 
 1. At the bottom, click the **Uninstall** button.
 
@@ -420,9 +410,11 @@ Uninstall the sample as a local app on the device, by starting from the running 
 
 Note: As an alternative, you could uninstall the sample PWA by starting from Microsoft Edge, as follows:
 
-1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps**.<!-- need png showing UI, which varies depending on approach -->
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps**.
 
-   The **Apps** dialog opens within Microsoft Edge.
+   The **Apps** dialog opens within Microsoft Edge:
+
+   ![Edge Settings > View apps listing the temperature converter](./temperature-converter-images/settings-view-apps.png)
 
 1. Right-click the **Temperature converter** card, and then click **Manage app**.
 
@@ -430,9 +422,6 @@ Note: As an alternative, you could uninstall the sample PWA by starting from Mic
 
 1. Scroll down, and then click the **Uninstall** button.
 
-<!--
-1. In the **Temperature converter app** section, select **Details**, and then click the **Uninstall** button.
--->
 
 Note: As an example of OS integration, you could uninstall the app via the Windows Start menu, as follows:
 
@@ -465,8 +454,6 @@ Create a working branch and switch to it, as follows:
 1. In the **Explorer** pane, open `\Demos\temperature-converter\index.html`.
 
    ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
-
-   todo: update png to show new dir name
 
    In the lower left corner of Visual Studio Code, the **main** branch is indicated.
 
@@ -507,8 +494,6 @@ Create a working branch and switch to it, as follows:
    In the lower left corner of Visual Studio Code, the **test1** branch is indicated:
 
    ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-vs-code.png)
-
-   todo: update png to show new dir name
 
    **Modify the files**
 
@@ -556,13 +541,9 @@ Create a working branch and switch to it, as follows:
 
 1. Enter the command: `git commit`
 
-<!-- todo: test: switch to "main", expect VS Code to show name 4x "Temperature converter" not "TC" like in test1 branch -->
-
 
 <!-- ====================================================================== -->
 ## Step 13: View the modified web app in the browser
-
-<!-- todo: is server running, or not?  address both scenarios -->
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
@@ -613,7 +594,7 @@ Install the modified app from `localhost` in the browser onto the device, as fol
 
    ![The App installed" dialog in the standalone app window (modified)](./temperature-converter-images/app-installed-dialog-modified.png)
 
-1. Click the **Allow** button.  TODO: resume testing here
+1. Click the **Allow** button.
 
    A Windows **Apps** dialog asks "Would you like to pin TC to your taskbar?  This request is coming from TC."
 
@@ -654,8 +635,6 @@ Uninstall the modified local app as follows:
 
 <!-- ====================================================================== -->
 ## Step 17: Switch back to the "main" branch of the Demos repo
-
-<!-- todo: test: expect VS Code to show name 4x "Temperature converter" not "TC" like in test1 branch -->
 
 1. In the lower left corner of Visual Studio Code, look at the branch name.
 
