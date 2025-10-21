@@ -602,7 +602,7 @@
     // ======================================================================
     // Bottom leaf nodes
     {
-      "source_path": "microsoft-edge/webview2/concepts/end-user-faq.md",
+      "source_path": "../microsoft-edge/webview2/concepts/end-user-faq.md",
       "redirect_url": "/microsoft-edge/webview2/landing/",  // todo: point to SMC article location
       "redirect_document_id": false
     }
