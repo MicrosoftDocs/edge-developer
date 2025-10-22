@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/15/2021
+ms.date: 10/15/2025
 ---
 # Use PWAs in Microsoft Edge
 
@@ -102,3 +102,17 @@ The **App info** menu contains useful information about the app, such as:
 *  The various app permissions that have been granted.
 *  Privacy information such as the number of cookies used.
 *  Lists of extensions and tools that can be used in the app.
+
+
+<!-- ====================================================================== -->
+## Limitations
+
+Progressive Web Apps (PWAs) have the following limitations.
+
+
+<!-- ------------------------------ -->
+#### FSLogix environments
+
+Progressive Web Apps (PWAs) aren't supported in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.  This is a known restriction.
+
+FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  For more information, see [FSLogix documentation](/fslogix/).

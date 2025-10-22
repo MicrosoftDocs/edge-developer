@@ -60,7 +60,7 @@ WebView2 apps use user data folders (UDFs) to store browser data, such as cookie
 | `LocalStorage` | Data stored by the localStorage DOM API. |
 | `PasswordAutosave` | Password autosave data. |
 | `Settings` | Settings data. |
-| `WebSql` | Data stored by the Web SQL database DOM API. |
+| `WebSql` | Data stored by the Web SQL database DOM API.  (Web SQL support was removed starting with Microsoft Edge 124; see [High-impact changes](../../web-platform/site-impacting-changes.md?tabs=earlier) in _Site compatibility-impacting changes coming to Microsoft Edge_.) |
 
 The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
 

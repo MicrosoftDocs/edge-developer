@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 07/07/2025
+ms.date: 10/13/2025
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -135,8 +135,8 @@ See also:
 * [Get started viewing and changing the DOM](../dom/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -167,8 +167,8 @@ See also:
 -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -185,24 +185,8 @@ See also:
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
-
-
-<!-- ====================================================================== -->
-## Enable vertical drawer configuration
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 139_
-
-This checkbox has no effect.  To move the **Quick View** panel, on the **Quick View** toolbar, click the **Dock Quick View to the right** (!["Dock Quick View to the right" icon](./index-images/dock-quick-view-to-the-right-icon.png)) button.
-
-See also:
-* [Features of the Quick View toolbar](../overview.md#features-of-the-quick-view-toolbar) in _Overview of DevTools_.
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is not present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -223,8 +207,8 @@ See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -250,8 +234,8 @@ See also:
 * [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -281,8 +265,8 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -296,8 +280,8 @@ See also:
 * [Find and fix problems using the Issues tool](../issues/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -311,8 +295,8 @@ See also:
 * [View, edit, and delete cookies](../storage/cookies.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -328,8 +312,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is not present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -347,8 +331,8 @@ See also:
 * [Using the Page tab to explore resources that construct the current webpage](../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -365,8 +349,8 @@ See also:
 * [Improved Ignore list setting](https://developer.chrome.com/blog/new-in-devtools-108/#ignore-list)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -395,26 +379,39 @@ See also:
 * [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's New in DevTools (Microsoft Edge 124)_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
-## Performance panel: enable experimental performance insights
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
+## Performance panel: enable saving traces as .gz
 
-_new as of Microsoft Edge Canary 133_
+_new as of Microsoft Edge 141_
 
-Enables additional insights within the **Insights** side panel.
-
-To use this experiment, first select the **Performance panel: enable performance insights** checkbox, and then, if you want to see even more insights, also select the **Performance panel: enable experimental performance insights** checkbox.
+In the **Performance** tool, shows an option to save a performance trace as a `.gz` file.
 
 See also:
-* [Analyze runtime performance (tutorial)](../performance/index.md)
+* [Save and share a recording](../performance/reference.md#save-and-share-a-recording) in _Performance features reference_.
+* [Export a trace from the Performance tool](./share-traces.md#export-a-trace-from-the-performance-tool) in _Share enhanced performance and memory traces_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is not present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
+
+
+<!-- ====================================================================== -->
+## Performance panel: enable new, more powerful Ask AI in trace view
+
+_new as of Microsoft Edge 141_
+
+In the **Performance** tool, in the trace view, shows an option for a more powerful version of **Ask AI**.
+
+See also:
+* [Analyze a performance recording](../performance/reference.md#analyze-a-performance-recording) in _Performance features reference_.
+
+Status:
+* This checkbox is not present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -430,8 +427,8 @@ See also:
 * [Console overview](../console/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -457,8 +454,8 @@ See also:
 * [Find and fix problems using the Issues tool](../issues/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -473,8 +470,8 @@ See also:
 * [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's New in DevTools (Microsoft Edge 91)_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -495,8 +492,8 @@ See also:
 * [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md) - setting up your workspace.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ======================================================================
@@ -514,26 +511,9 @@ See also:
 * [Troubleshooting common performance issues](../rendering-tools/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 -->
-
-
-<!-- ====================================================================== -->
-## Enable Adaptive CPU throttling
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 114_
-
-Enables Adaptive CPU throttling.
-<!-- todo old: need text -->
-
-See also:
-* [Throttle the CPU while recording](../performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
 
 
 <!-- ====================================================================== -->
@@ -552,8 +532,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ============================================================================================================================================ -->
@@ -572,8 +552,8 @@ See also:
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -587,8 +567,8 @@ See also:
 * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -603,8 +583,8 @@ See also:
 * [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -617,8 +597,8 @@ See also:
 * [Analyze runtime performance (tutorial)](../performance/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -628,8 +608,8 @@ Status:
 In the **Performance** tool, displays V8 JavaScript browser engine runtime call stats.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -641,8 +621,8 @@ _new as of Microsoft Edge 128_
 This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in the upstream Chromium project.  This experiment doesn't affect the capabilities of Microsoft Edge to capture enhanced traces and doesn't impact DevTools user's experience.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -661,8 +641,8 @@ In the **Performance** tool, when exporting the trace file, stores the source co
 This experiment makes the **Performance** tool record script source text in traces.  This feature is being implemented in the upstream Chromium project.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -679,8 +659,8 @@ _new as of Microsoft Edge 128_
 Adds a **Trace Event** section to the **Summary** tab of the **Performance** tool.  The **Trace Event** section is displayed when you select an event in a recorded performance trace.  The **Trace Event** section displays debugging information about the selected trace event, such as its name and duration.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
 * [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
@@ -699,8 +679,8 @@ See also:
 * [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
@@ -717,8 +697,8 @@ See also:
 * [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 140.
-* This checkbox is present in Microsoft Edge Stable 138.
+* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is present in Microsoft Edge Stable 141.
 
 
 <!-- ====================================================================== -->
