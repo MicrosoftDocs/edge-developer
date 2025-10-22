@@ -1,4 +1,4 @@
-<!-- Oct 2025 Release SDK -->
+<!-- Dec 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
@@ -59,10 +59,10 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Oct 2025 Release SDK -->
+<!-- end of Dec 2025 Release SDK -->
 
 
-<!-- Oct 2025 Prerelease SDK -->
+<!-- Dec 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
@@ -144,4 +144,4 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Oct 2025 Prerelease SDK -->
+<!-- end of Dec 2025 Prerelease SDK -->
