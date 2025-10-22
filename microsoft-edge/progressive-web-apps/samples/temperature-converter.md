@@ -27,32 +27,34 @@ To examine the user interface of the app:
 
    ![The PWA as a web app within the browser, served from github.io](./temperature-converter-images/preview-sample-at-github.png)
 
-   The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button (don't click it yet).
+   The sample Progressive Web App (PWA) is initially shown in the browser, as a web app, but also has an **App available** (![App available icon](./temperature-converter-images/app-available-icon.png)) button in the Address bar (don't click it yet).
 
 1. In the **temperature** text box, type **22**.
 
    The displayed temperature changes to **71.6 F**.
 
-1. Click the **from** and **to** dropdown lists.
+1. Click the **from** dropdown list, and then click outside of it.
+
+1. Click the **to** dropdown list, and then click outside of it.
 
    Available units are:
    * **Celsius**
    * **Fahrenheit**
    * **Kelvin**
 
-   In a later step, after the sample Progressive Web App (PWA) is installed as a local app, the app runs in its own window:
-
-   ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
-
-   The window is a browser-based window, without most of the browser UI.  The local app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
-
-   This instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.
-
-   The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
-
 1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample web app.
 
-   In a later step, you'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
+In a later step, after the sample Progressive Web App (PWA) is installed as a local app, the app runs in its own window:
+
+![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
+
+The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
+
+The installed app's window is a browser-based window, without most of the browser UI.  The installed app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
+
+The installed app's window supports Microsoft Edge DevTools (in an undocked window).  The app continues to work when you use DevTools to turn off the internet connection.
+
+This instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.  You'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
 
 
 <!-- ====================================================================== -->
@@ -80,7 +82,11 @@ Install or update git, as follows:
 
    If git is installed, a version number is displayed, such as `git version 2.51.0.windows.2`.
 
-1. If not done yet, download and install the latest version of git, from [Downloads](https://git-scm.com/downloads) at git-scm.com.
+1. Go to [Downloads](https://git-scm.com/downloads) at git-scm.com.
+
+   In the upper right, note the **Latest version** number, such as **2.51.1**.
+
+1. If git isn't installed yet, or you want to update it, download and install the latest version of git, from [Downloads](https://git-scm.com/downloads) at git-scm.com.  Otherwise, skip to the next section, below.
 
 1. During installation, you can accept the defaults, except it's recommended that you change the default editor from vim to Visual Studio Code:
 
@@ -104,9 +110,9 @@ Install or update Node.js, as follows:
 
 1. Go to [Node.js](https://nodejs.org).
 
-   Note the version number in the lower left **Latest LTS** button, such as v22.20.0.
+1. In the lower left, in the **Latest LTS** button, note the version number, such as v22.20.0.
 
-1. If you want to update Node.js, click the **Get Node.js** button.  Otherwise, skip to the next section, below.
+1. If Node.js isn't installed yet, or you want to update it, click the **Get Node.js** button.  Otherwise, skip to the next section, below.
 
    You end up at a page such as [Download Node.js](https://nodejs.org/download).
 
@@ -118,9 +124,7 @@ Install or update Node.js, as follows:
 
    The **Node.js Setup Wizard** window opens.
 
-1. Click the **Next** button, and follow the prompts.  You can accept the defaults, then click the **Install** button.
-
-1. Follow the prompts.
+1. Click the **Next** button, and follow the prompts.  You can accept the defaults, and then click the **Install** button.
 
    The **Node.js Setup Wizard** window closes.
 
@@ -135,7 +139,7 @@ Install or update Node.js, as follows:
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
 -->
 
-Next, you'll get a local copy of the sample code, by forking the Microsoft Edge / Demos repo.
+Next, you'll get a local copy of the sample code, by forking the Microsoft Edge / Demos repo.  Because you don't have permissions to directly push commits to the Demos open-source repo, you'll _fork_ the Demos repo to create your own copy of the repo, instead of _cloning_ the Demos repo.
 
 Fork the **MicrosoftEdge / Demos** repo, as follows:
 
@@ -149,9 +153,9 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
    `C:\Users\localAccount\GitHub\`
 
-1. See whether the `\Demos\` repo is listed.
+1. See whether the `\Demos\` repo is listed, such as `C:\Users\localAccount\GitHub\Demos`.
 
-   The following steps assume that the Demos repo hasn't been cloned yet.
+   If the Demos repo hasn't been cloned yet, continue with the following steps.  Otherwise, skip to the next section, below.
 
    **Fork the repo:**
 
@@ -159,7 +163,21 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
 1. In the upper right, click the down-arrow on the **Fork** button, and then select **Create a new fork**.
 
-   The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
+   For more information, see [Forking a repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) in _Fork a repository_ in GitHub Docs.
+
+1. Click the **Create fork** button.
+
+   **Clone your fork to the local drive:**
+
+1. On GitHub, navigate to your fork of the **MicrosoftEdge / Demos** repository.
+
+1. Above the list of files, click the **Code** button.
+
+1. In the **HTTPS** tab, click the **Copy to clipboard** (![Copy to clipboard icon](./temperature-converter-images/copy-to-clipboard-icon.png)) button.
+
+   <!-- Or, to clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click the **SSH** tab, and then click the **Copy to clipboard** (![Copy to clipboard icon](./temperature-converter-images/copy-to-clipboard-icon.png)) button. -->
+
+   <!-- Or, to clone a repository using GitHub command-line interface, click the **GitHub CLI** tab, and then click the **Copy to clipboard** (![Copy to clipboard icon](./temperature-converter-images/copy-to-clipboard-icon.png)) button. -->
 
 1. Open Visual Studio Code.
 
@@ -177,11 +195,17 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
    cd c:/users/localAccount/GitHub/
    ```
 
-1. Enter `git clone` followed by the copied URL for the Demos repo, and then press **Enter**:
+1. Type `git clone`, and then paste the URL you copied earlier.  It will look like this, with your GitHub username instead of YOUR-USERNAME:
 
    ```console
-   git clone https://github.com/MicrosoftEdge/Demos.git
+   git clone https://github.com/YOUR-USERNAME/Demos.git
    ```
+
+1. Press **Enter**.
+
+   Your local clone of the forked Demos repo is created.
+
+   For more information, see [Cloning your forked repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) in _Fork a repository_ in GitHub Docs.
 
 1. In File Explorer, go to the new, `/Demos/` repo directory, such as:
 
@@ -192,7 +216,8 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
    Files are listed, such as `converter.js`.
 
 See also:
-* [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
+* [Fork a repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) - GitHub docs.
+* [Cloning a repository](https://docs.github.com/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
 
 <!-- ====================================================================== -->
@@ -204,14 +229,16 @@ While developing or testing a web site or app, including a PWA, you can use a lo
 
 Change to the `/temperature-converter/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 
-1. In VS Code's terminal, change to the `\Demos\temperature-converter\` directory:
+1. Open Visual Studio Code.
+
+1. In the **View** menu, select **Terminal**.
+
+1. Change to the `\Demos\temperature-converter\` directory, such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`, by entering commands such as:
 
    ```console
    cd Demos
    cd temperature-converter
    ```
-
-   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`.
 
 1. In VS Code's terminal, enter the following command:
 
@@ -289,12 +316,13 @@ Install the sample Progressive Web App (PWA) from your localhost web server as a
 
 1. Close the **Temperature converter** app window.
 
-See also:
+<!-- See also:
 * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+-->
 
 
 <!-- ====================================================================== -->
-## Step 8: Run the sample PWA as a local app
+## Step 8: Open the installed app
 
 Run the sample Progressive Web App (PWA) as a local app on the device.
 
@@ -309,6 +337,8 @@ Run the sample Progressive Web App (PWA) as a local app on the device.
    If you had installed the app from the `github.io` server, when you start the app, the right side of the title bar would instead display **microsoftedge.github.io** for a few seconds:
 
    ![The installed sample Progressive Web App (PWA) if installed from github.io server](./temperature-converter-images/installed-from-github-io.png)
+
+   You can also open the installed app by other ways that are supported by the device, such as the **Temperature convertor** (![The "Temperature convertor" icon in the Windows taskbar](./temperature-converter-images/icon-in-taskbar.png)) button pinned to the Windows taskbar.
 
 1. In the **temperature** text box, enter **22**.
 
@@ -333,7 +363,7 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
 1. Right-click in the app window (below the title bar), and then select **Inspect**.
 
-   DevTools opens, in a separate window; undocked.  (Other docking options are dimmed and not available.)  The app window is a browser window, so supports the DevTools **Inspect** command, even though the app window doesn't have the UI which normally appears in a browser window.
+   DevTools opens, in a separate window; undocked.  (Other docking options are dimmed and not available.)  The app window is a browser window that includes the DevTools **Inspect** command.
 
 1. In DevTools, select the **Application** (![Application icon](./temperature-converter-images/application-tool-icon.png)) tool.
 
@@ -345,9 +375,9 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 
    The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**.
 
-   If the service worker isn't displayed, right-click in the Temperature convertor window and then select **Refresh**.
+   If the service worker isn't displayed, right-click in the Temperature convertor window and then select **Refresh**.<!-- todo: omit paragraph?  did dev hit this issue? -->
 
-1. In the tree on the left, in the **Storage** section, expand **Cache storage**, and then select **temperature-converter-v1**:
+1. In the tree on the left, in the **Storage** major section, expand **Cache storage**, and then select **temperature-converter-v1**:
 
    ![Installed app: DevTools > Application tool > Cache storage, showing cached resources](./temperature-converter-images/devtools-cache-storage-installed-app.png)
 
@@ -368,7 +398,7 @@ Try the Progressive Web App (PWA) as an offline app, as follows:
  
 1. In the DevTools window, open the **Network** (![The Network icon](./temperature-converter-images/network-icon.png)) tool.
 
-1. Near the top, in the menu to the right of the **Disable cache** checkbox, change from **No throttling** to **Offline**:
+1. Near the top, in the **Throttling**<!-- no tooltip --> menu to the right of the **Disable cache** checkbox, change from **No throttling** to **Offline**:
 
    ![The DevTools window, showing where to switch the Throttling value to Offline](./temperature-converter-images/devtools-offline.png)
 
@@ -378,23 +408,31 @@ Try the Progressive Web App (PWA) as an offline app, as follows:
 
 1. In the **temperature** text box, type **22**.
 
-   The displayed temperature changes to **71.6 F**.  The app is still displayed correctly and still works correctly, by using locally cached resources that are served out by the service worker.
+   The displayed temperature changes to **71.6 F**.  The app is still displayed correctly and still works correctly, by using locally cached resources that are managed by the service worker.
 
-1. In the DevTools window, near the top, in the menu to the right of the **Disable cache** checkbox, change from **Offline** back to **No throttling**.
+1. In the DevTools window, in the **Throttling**<!-- no tooltip --> menu to the right of the **Disable cache** checkbox, change from **Offline** back to **No throttling**.
 
    The throttling warning icon is removed from the **Network** tab.
 
 1. Close the DevTools window.
 
+1. Close the **Temperature converter** app window.
+
+This same use of DevTools also works when the app is in Microsoft Edge as a web app, rather than an installed app.  For more information, see [Emulate offline](../../devtools/network/reference.md#emulate-offline) in _Network features reference_.
+
 
 <!-- ====================================================================== -->
-## Step 11: Uninstall the sample
+## Step 11: Uninstall the installed app
 
-Uninstall the sample as a local app on the device, by starting from the running **Temperature converter** window, as follows:
+Uninstall the Progressive Web App (PWA), as follows:
 
-1. In the running local app window, select **Settings and more** (**...**) > **App settings**.
+1. Click the **Temperature converter** button pinned on the Windows taskbar.
 
-   In Microsoft Edge, the **Apps** tab opens, displaying details about the **Temperature converter** app:
+   The installed **Temperature converter** app opens.
+
+1. In the title bar, click the **Settings and more** (![Settings and more icon on the dark blue title bar](./temperature-converter-images/settings-and-more-blue-icon.png)) button, and then click **App settings**.
+
+   In Microsoft Edge, the **Apps** tab opens (`edge://apps`), displaying details about the **Temperature converter** app:
 
    ![The Uninstall button in the Apps page of Microsoft Edge](./temperature-converter-images/uninstall-button.png)
 
@@ -406,22 +444,7 @@ Uninstall the sample as a local app on the device, by starting from the running 
 
 
 <!-- ------------------------------ -->
-#### Other ways to uninstall a PWA
-
-Note: As an alternative, you could uninstall the sample PWA by starting from Microsoft Edge, as follows:
-
-1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps**.
-
-   The **Apps** dialog opens within Microsoft Edge:
-
-   ![Edge Settings > View apps listing the temperature converter](./temperature-converter-images/settings-view-apps.png)
-
-1. Right-click the **Temperature converter** card, and then click **Manage app**.
-
-   The **All apps / Temperature converter** page opens, at `edge://apps`.
-
-1. Scroll down, and then click the **Uninstall** button.
-
+#### Uninstalling a local app from the Windows Start menu
 
 Note: As an example of OS integration, you could uninstall the app via the Windows Start menu, as follows:
 
@@ -434,10 +457,30 @@ Note: As an example of OS integration, you could uninstall the app via the Windo
    ![Windows Start menu showing the Uninstall command for the app](./temperature-converter-images/uninstall-via-start-menu.png)
 
 
+<!-- ------------------------------ -->
+#### Uninstalling a local app by starting from Microsoft Edge
+
+Note: As an alternative, you could uninstall the sample Progressive Web App (PWA) by starting from Microsoft Edge, as follows:
+
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Apps** > **View apps**.
+
+   The **Apps** dialog opens within Microsoft Edge, listing any installed PWAs:
+
+   ![Edge Settings > View apps listing the temperature converter](./temperature-converter-images/settings-view-apps.png)
+
+1. Right-click the **Temperature converter** card, and then click **Manage app**.
+
+   The **All apps / Temperature converter** page opens, at `edge://apps`.
+
+1. At the bottom, click the **Uninstall** button.
+
+Continue with the steps below.
+
+
 <!-- ====================================================================== -->
 ## Step 12: Modify the sample
 
-You can modify the sample as a starting point for your own Progressive Web App (PWA).  You'll change the name of the app from "Temperature converter" to "TC", in a working branch of the repo, and then install the modified app locally.
+You can modify the sample as a starting point for your own Progressive Web App (PWA).  You'll change the name of the app from "Temperature converter" to "TC", in a working branch of the repo, and then install the modified app locally.  TODO: resume here testing
 
 Create a working branch and switch to it, as follows:
 
