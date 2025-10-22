@@ -291,7 +291,8 @@ To hide annotations from the performance trace, select **Hide annotations** at t
 
 <!-- ------------------------------ -->
 #### Save and share a recording
-<!-- https://developer.chrome.com/docs/devtools/performance/reference#save -->
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#save - moved parent section content; parent section now links to new article containing:
+     https://developer.chrome.com/docs/devtools/performance/annotations#save -->
 
 To save a recording as a file on your device and later share it with your annotated performance findings, in the action bar at the top of the **Performance** tool, click the **Save profile** (![The Save profile icon](./reference-images/save-profile-icon.png)) button, and then select **Save trace**.
 
@@ -307,7 +308,9 @@ Instead of clicking the **Save profile** (![The Save profile icon](./reference-i
 
 <!-- ------------------------------ -->
 #### Load a recording
-<!-- https://developer.chrome.com/docs/devtools/performance/reference#load -->
+<!-- https://developer.chrome.com/docs/devtools/performance/reference#load - moved parent section content; parent section now links to new article containing:
+https://developer.chrome.com/docs/devtools/performance/annotations#load
+-->
 
 To load a recording from a file, click the **Load profile** (![The Load profile icon](./reference-images/load-profile-icon.png)) button in the action bar at the top of the **Performance** tool.
 
