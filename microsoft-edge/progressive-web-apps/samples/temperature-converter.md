@@ -547,7 +547,7 @@ Create a working branch and switch to it, as follows:
 
    In the lower left corner of Visual Studio Code, the **test1** branch is indicated:
 
-   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-vs-code.png)
+   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-code.png)
 
    **Modify the files**
 
