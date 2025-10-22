@@ -9,6 +9,6 @@
     "@octokit/request": "^9.2.1",
     "glob": "^7.1.7",
     "node-fetch": "3.2.10",
-    "playwright": "^1.54.1"
+    "playwright": "^1.55.1"
   }
 }
