@@ -48,13 +48,13 @@ In a later step, after the sample Progressive Web App (PWA) is installed as a lo
 
 ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
-The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same UI as within the full web browser.
+The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same app UI as within the full web browser.
 
 The installed app's window is a browser-based window, without most of the browser UI.  The installed app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
 
 The installed app's window supports Microsoft Edge DevTools (in an undocked window).  The app continues to work when you use DevTools to turn off the internet connection.
 
-This instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.  You'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
+The above instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.  You'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
 
 
 <!-- ====================================================================== -->
@@ -134,10 +134,8 @@ Install or update Node.js, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 5: Clone (fork) the Edge Demos repo
-<!-- derived from 
-https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive
--->
+## Step 5: Fork and clone the "MicrosoftEdge / Demos" repo
+<!-- compare: https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#clone-the-edge-demos-repo-to-your-drive -->
 
 Next, you'll get a local copy of the sample code, by forking the Microsoft Edge / Demos repo.  Because you don't have permissions to directly push commits to the Demos open-source repo, you'll _fork_ the Demos repo to create your own copy of the repo, instead of _cloning_ the Demos repo.
 
@@ -227,7 +225,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 6: Run the PWA as a web app on your localhost web server; Start the development web server
+## Step 6: Run the PWA as a web app on your local web server
 
 Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.  You'll use `http-server`, a local development web server that can be run in Node.js.
 
@@ -547,7 +545,7 @@ Create a working branch and switch to it, as follows:
 
    In the lower left corner of Visual Studio Code, the **test1** branch is indicated:
 
-   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch-in-code.png)
+   ![The test1 branch indicated in lower left of VS Code](./temperature-converter-images/test1-branch.png)
 
    **Modify the files**
 
