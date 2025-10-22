@@ -52,7 +52,7 @@ To export memory information from the **Memory** tool:
 
 1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar:
 
-   ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-traces-images/exporting-memory-trace.png)
+   <!-- TODO: replace with updated UI ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-traces-images/exporting-memory-trace.png) -->
 
 1. Choose the trace type and a location to save the trace file on your disk. Select `.devtools` if you want to include console messages, script sources, and DOM elements. Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
 
