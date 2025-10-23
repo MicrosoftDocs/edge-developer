@@ -68,9 +68,7 @@ To import a trace in the **Memory** tool:
 
    ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-memory-traces-images/importing-memory-trace.png)
 
-1. Click the **Load profile** (![](./share-memory-traces-images/load-profile-icon.png)) button at the top.
-
-   Or, click the **Load profile** button at the bottom.
+1. Click the **Load profile** (![Load profile icon](./share-memory-traces-images/load-profile-icon.png)) button at the top.  Or, click the **Load profile** button at the bottom.
 
 1. Locate the trace file on your disk. It's either a `.devtools` file, or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file.
 
