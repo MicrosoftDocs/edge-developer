@@ -8,13 +8,14 @@ ms.service: microsoft-edge
 ms.date: 10/23/2025
 ---
 # Translate text with the Translator API
-<!-- aka.ms/translatorapi -->
+<!-- https://aka.ms/translatorapi -->
 
 The Translator API is an experimental web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
-See:
+For introductory information about the Translator API, see:
 * [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
 * [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api)
+
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
@@ -392,11 +393,14 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or expert model, and whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template -->, or [Report an issue about the Translator API in Microsoft Edge](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template; https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->.
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/11nn).
+<!-- todo: Post a new feedback Issue and link to it, like
+Prompt API feedback issue https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012
+Writing Assistance APIs feedback issue https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031 -->
 
-If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
+If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).<!-- todo: first merge https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->
 
-You can also contribute to the discussion about the design of the Translator API at the W3C Web Machine Learning Working Group repository, [webmachinelearning / translation-api](https://github.com/webmachinelearning/translation-api).
+You can also contribute to the discussion about the design of the Translator API at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
 
 
 <!-- ====================================================================== -->
@@ -424,6 +428,4 @@ Demos repo:
 * [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/)
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
 
-Feedback:
-* [Report an issue about the Translator API in Microsoft Edge](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template; https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->.
-* [Report a Translator API issue on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md)<!-- todo: https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158/files --> - issues when using the API.
+<!-- omitted Feedback section links b/c must describe how to use
