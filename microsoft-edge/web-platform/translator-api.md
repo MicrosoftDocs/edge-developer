@@ -1,19 +1,20 @@
 ---
 title: Translate text with the Translator API
-description: Translate text with the Translator API
+description: Translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
-ms.date: 09/12/2025
+ms.date: 10/23/2025
 ---
 # Translate text with the Translator API
 <!-- aka.ms/translatorapi -->
 
 The Translator API is an experimental web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
-For more information, see [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/).
-
+See:
+* [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
+* [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api)
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
@@ -44,7 +45,7 @@ For more information, see [Translator and Language Detector APIs](https://webmac
 <!-- ====================================================================== -->
 ## Availability of the Translator API
 
-The Translator API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 1234<!-- todo: fix version # -->.
+The Translator API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 143.0.3636.0.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
@@ -84,29 +85,35 @@ An initial download of the model will be required the first time a website calls
 <!-- ====================================================================== -->
 ## Enable the Translator API
 
-To use the Translator API in Microsoft Edge:
+To use the Translator API in Microsoft Edge, set two flags, as follows:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer<!-- todo: add correct version -->).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. In Microsoft Edge, go to `edge://version`, and make sure you're using version 143.0.3636.0 or later of Microsoft Edge, such as the Canary or Dev preview channel of Microsoft Edge.
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
+   To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In the search box, at the top of the page, enter **Experimental translation API**.
+1. In that version of Microsoft Edge, open a new tab or window and go to `edge://flags`.
 
-   The page is filtered to show the matching flag, `#edge-translation-api`.
-
-1. Under **Experimental translation API**, select **Enabled**:
+1. In the **Search flags** text box at the top, start typing **translation api**:
 
    ![Flags page of browser](./translator-api-images/flags-translator-api.png)
 
-<!-- todo: not present in Edge Canary 143
-1. In the search box, at the top of the page, enter **Translation API streaming split by sentence**.
-1. In the search box, at the top of the page, enter **Edge Translation API streaming split by sentence**.
+   The following flags are listed:
 
-   The page is filtered to show the matching flag, `#edge-translation-api-streaming-by-sentence`.
+   * **Experimental translation API** - Enables the on-device language translation API.  See [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api/blob/main/README.md).
 
-1. Under **Experimental translation API**, select **Enabled**.-->
+      This entry shows `#edge-translation-api`, which goes to `edge://flags/#edge-translation-api`.
 
-1. Restart Microsoft Edge Canary or Dev.
+   * **Translation API streaming split by sentence** - When enabled, the translation API will split text by sentence and stream each translated sentence as it completes, providing better responsiveness for long text translation.
+
+      This entry shows `#edge-translation-api-streaming-by-sentence`, which goes to `edge://flags/#edge-translation-api-streaming-by-sentence`.
+
+1. Under **Experimental translation API**, select **Enabled**.
+
+1. Under **Translation API streaming split by sentence**, select **Enabled**.
+
+   In the lower right, a **Restart** button is displayed.
+
+1. Click the **Restart** button.
 
 
 <!-- ====================================================================== -->
@@ -385,18 +392,38 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or expert model, and whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template -->.
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template -->, or [Report an issue about the Translator API in Microsoft Edge](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template; https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->.
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
 
-You can also contribute to the discussion about the design of the Translator API at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
+You can also contribute to the discussion about the design of the Translator API at the W3C Web Machine Learning Working Group repository, [webmachinelearning / translation-api](https://github.com/webmachinelearning/translation-api).
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-* [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api), on the Web Machine Learning GitHub repo.
-* [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/), on the Web Machine Learning GitHub repo.
-* [Prompt a built-in language model with the Prompt API](./prompt-api.md).
-* [Summarize, write, and rewrite text with the Writing Assistance APIs](./writing-assistance-apis.md).
+<!-- Local: -->
+* [Prompt a built-in language model with the Prompt API](./prompt-api.md)
+* [Summarize, write, and rewrite text with the Writing Assistance APIs](./writing-assistance-apis.md)
+
+Get Microsoft Edge:
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).
+
+GitHub:
+* [webmachinelearning / translation-api](https://github.com/webmachinelearning/translation-api) repo.
+   * [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api/blob/main/README.md)
+* [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
+   * [Tags for Identifying Languages](https://datatracker.ietf.org/doc/html/rfc5646) - for `sourceLanguage` and `targetLanguage`.
+
+Azure docs:
+* [Azure AI Translator documentation](/azure/ai-services/translator/)
+* [Limitations](/azure/ai-foundry/responsible-ai/translator/transparency-note#limitations) in _Azure AI Translator Transparency Note_.
+
+Demos repo:
+* [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/)
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
+
+Feedback:
+* [Report an issue about the Translator API in Microsoft Edge](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a new feedback issue url/template; https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->.
+* [Report a Translator API issue on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md)<!-- todo: https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158/files --> - issues when using the API.
