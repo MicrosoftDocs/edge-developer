@@ -12,21 +12,18 @@ ms.date: 10/09/2025
 
 A Progressive Web App (PWA) is an app that you build by using web technologies such as HTML, CSS, and JavaScript, and that can also be installed and run on various device operating systems, from a single codebase.
 
-By using this article along with [Temperature converter sample](../samples/temperature-converter.md), you'll be able to:
+By using this article along with the Temperature converter sample, you'll be able to:
 
-* Customize the sample Progressive Web App (PWA) by making minor modifications of the sample's code.
+* Customize the Temperature converter PWA by making minor modifications of the sample's code.
 
-* Create your own, different Progressive Web App (PWA) by copying and pasting the entire sample directory and extensively modifying the code.
-
-This sample Progressive Web App (PWA) is built by using web technologies.  A Progressive Web App (PWA) can be installed and run on all devices, from a single codebase.
+* Create your own PWA by copying and pasting the entire sample directory and extensively modifying the code.
 
 See also:
 * [Temperature converter sample](../samples/temperature-converter.md)
-* [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
 
 
 <!-- ====================================================================== -->
-## The architecture of a Progressive Web App (PWA)
+## The architecture of a Progressive Web App
 <!-- https://learn.microsoft.com/microsoft-edge/progressive-web-apps/how-to/#the-architecture-of-a-pwa -->
 
 The following diagram shows the high-level architecture of a Progressive Web App (PWA):
@@ -47,21 +44,23 @@ Like a regular web app, a Progressive Web App is written using the programming l
 
 To make a Progressive Web App (PWA) available to users, you deploy the Progressive Web App (PWA) on a web server that's accessible via HTTPS (unlike localhost).  The web server contains front-end code and back-end code for the web app.
 
+Some parts of the Progressive Web Apps (PWAs) platform, such as service workers, require using HTTPS.
+
 If the Progressive Web App (PWA) has no backend code, the Progressive Web App (PWA) can be served out from github.io, such as [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) at `https://microsoftedge.github.io/Demos/temperature-converter/`.
 
-[Temperature converter sample](../samples/temperature-converter.md) has you run and test the sample Progressive Web App (PWA) on your local server.  When your own Progressive Web App (PWA) has been tested and is ready to distribute, you distribute the tested Progressive Web App (PWA) to your users via a web server (a web hosting provider).
+The article [Temperature converter sample](../samples/temperature-converter.md) has you run and test the sample Progressive Web App on your local server.  When your own Progressive Web App has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
+
+To update your Progressive Web App, you deploy the new version to your web server again.
 
 
 <!-- ------------------------------ -->
-#### Hosting the Progressive Web App (PWA) on a web server for users
-
-Some parts of the Progressive Web Apps (PWAs) platform, such as service workers, require using HTTPS.  For debugging purposes, Microsoft Edge permits a `localhost` web server to use the Progressive Web App (PWA) APIs without HTTPS.
+#### Example web server hosts
 
 When your Progressive Web App (PWA) goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
 
 For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
-You can also host your website on GitHub Pages (`pages.github.com`) which supports HTTPS too.  See [GitHub Pages documentation](https://docs.github.com/pages).
+You can also host your website on GitHub Pages (`pages.github.com`), which supports HTTPS.  See [GitHub Pages documentation](https://docs.github.com/pages).
 
 
 <!-- ------------------------------ -->
@@ -79,7 +78,7 @@ A Progressive Web App (PWA) has front-end code files that are sent by the web se
 
 Front-end code is the resources needed for the app to be installed on the user's device, such as HTML, CSS, and JavaScript code.
 
-A Progressive Web App (PWA) includes the following front-end code files:
+A Progressive Web App (PWA) typically includes the following front-end code files:
 
 * An HTML file to describe the content in your app, such as the text, images, text fields, or buttons that appear in the user interface.
 
@@ -95,19 +94,19 @@ The front-end code for a Progressive Web App (PWA) runs by using the device's we
 <!-- ====================================================================== -->
 ## Back-end code, files, endpoints, and data (server-side code)
 
-A PWA potentially has back-end code that resides and runs on the web server.
+A Progressive Web App (PWA) potentially has back-end code that resides and runs on the web server.
 
-The temperature converter sample Progressive Web App (PWA) doesn't have any server-side code, because the app exclusively runs on the device it's installed on, and doesn't need any server-side data.
+Like a web app, a Progressive Web App can include some _back-end code_ (_server-side code_) that implements any web service API endpoints that are needed by your app, when connected to the internet, to retrieve dynamic content that may be stored in a database on your server.
 
-Like a web app, a Progressive Web App (PWA) can include some _back-end code_ (_server-side code_) that implements any web service API endpoints that are needed by your app, when connected to the internet, to retrieve dynamic content that may be stored in a database on your server.
-
-The back-end code for a Progressive Web App (PWA) can use the server-side languages of your choice, such as:
+The back-end code for a Progressive Web App can use the server-side languages of your choice, such as:
 * ASP.NET
 * Java
 * Node.js
 * PHP
 
 Server-side web service API endpoints might not be required, depending on the app your're building.
+
+The [Temperature converter sample](../samples/temperature-converter.md) PWA doesn't have any server-side code, because the app exclusively runs on the device it's installed on, and doesn't need any server-side data.
 
 The remaining sections explain the files that make up the PWA sample.
 
@@ -153,19 +152,19 @@ See also:
 ## The service worker to cache the app's files on the local device (`sw.js`)
 <!-- a modified version of this section is in /how-to/index.md & /samples/temperature-converter.md -->
 
-A Progressive Web App (PWA) can use a service worker JavaScript file (such as `sw.js`), to cache front-end, UI files to the local device.  A service worker is defined in a JavaScript file that's loaded by the app.
+A Progressive Web App (PWA) can use a service worker JavaScript file (such as `sw.js`), to cache front-end, UI files to the local device.  A service worker is defined in a dedicated JavaScript file that's loaded by the app (distinct from the main `.js` file containing app logic).
 
-A service worker is a specialized web worker that can intercept network requests from your Progressive Web App (PWA), and enables scenarios such as:
+A service worker is a specialized web worker that can intercept network requests from your Progressive Web App.  The service worker enables scenarios such as:
 * Offline support, including intermittent connection to the internet.
 * Advanced caching on the device.
 * Running background tasks such as receiving PUSH messages, adding badges to the app icon, or fetching data from a server.
 
-A service worker is a key technology that help make a Progressive Web App (PWA) fast and independent of network conditions.  The service worker makes the app:
+A service worker is a key technology that help make a Progressive Web App fast and independent of network conditions.  The service worker makes the app:
 * Faster.
 * More reliable.
 * Network-independent; the app continues to work (in some way), even with a missing or intermittent internet connection.
 
-This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js) file is a service worker that manages caching files that are part of the Progressive Web App (PWA), caching the files to the local drive and serving them out when there's no internet connection.
+This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/sw.js) file is a service worker that manages caching files that are part of the Temperature converter PWA, caching the files to the local drive and serving them out when there's no internet connection.
 
 `sw.js`:
 
@@ -223,7 +222,7 @@ Two additional files are are cached automatically by the browser:
 
 The service worker listens to the `install` event, which is triggered when the user installs the app, and uses it to cache the resources that your app needs to function offline, such as:
 * The initial HTML page.
-* The app's JavaScript file that contains the app logic.
+* The app's main JavaScript file that contains the app logic.
 * The app's CSS file.
 
 To enable installing the app, a JavaScript service worker file makes the app able to work offline (without always having an internet connection), by caching needed front-end files on the local device.
@@ -240,7 +239,7 @@ The service worker returns cached resources so your app can work offline, and if
 <!-- ------------------------------ -->
 #### A service worker is optional
 
-A Progressive Web App (PWA) doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend including a service worker in your own Progressive Web App (PWA) to make it faster, and to make your Progressive Web App (PWA) more reliable, such as when your device has an intermittent network connection or is offline.
+A Progressive Web App (PWA) doesn't need to have a service worker for Microsoft Edge to be able to install the app.  However, we recommend including a service worker in your own Progressive Web App to make it faster, and to make the app more reliable, such as when your device has an intermittent network connection or is offline.
 
 
 See also:
@@ -251,11 +250,7 @@ See also:
 <!-- ====================================================================== -->
 ## Next steps
 
-To create your own Progressive Web App (PWA), you can copy, paste, and modify the `Demos\temperature-converter` directory.
-
-After that, to update your Progressive Web App (PWA), you deploy the new version to your web server again.
-
-The temperature converter sample demonstrates only a small sample of what Progressive Web Apps (PWAs) can do.  The sample demonstrates code that's important for any Progressive Web App (PWA), such as working when there's no internet connection.
+Do the steps in [Temperature converter sample](../samples/temperature-converter.md).  Then to create your own Progressive Web App (PWA), you can copy, paste, and modify the `Demos\temperature-converter` directory.  The temperature converter sample demonstrates only a small sample of what Progressive Web Apps (PWAs) can do.  The sample demonstrates code that's important for any Progressive Web App (PWA), such as working when there's no internet connection.
 
 There are additional [Best practices for PWAs](./best-practices.md) to make a Progressive Web App (PWA) feel like a native app:
 

@@ -47,7 +47,7 @@ Details about each file are below.
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+    <link rel="icon" type="image/png" href="./icon512.png">
     <link rel="stylesheet" href="./converter.css">
     <link rel="manifest" href="./manifest.json">
     <title>Temperature converter</title>
@@ -76,7 +76,7 @@ Details about each file are below.
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+  <link rel="icon" type="image/png" href="./icon512.png">
   <link rel="stylesheet" href="./converter.css">
   <link rel="manifest" href="./manifest.json">
   <title>Temperature converter</title>
@@ -111,7 +111,7 @@ Inside the `<head>` tag, a `<link>` element references `manifest.json`:
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" type="image/png" href="https://edgestatic.azureedge.net/welcome/static/favicon.png">
+  <link rel="icon" type="image/png" href="./icon512.png">
   <link rel="stylesheet" href="./converter.css">
   <link rel="manifest" href="./manifest.json">
   <title>Temperature converter</title>
