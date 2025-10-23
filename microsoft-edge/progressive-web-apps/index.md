@@ -14,7 +14,7 @@ Progressive Web Apps (PWAs) are applications that you build by using web technol
 
 PWAs provide native-like experiences to your users on supporting devices. They adapt to the capabilities supported by each device and they can also run in web browsers, like websites.
 
-To start building a PWA, see [Get started with PWAs](./how-to/index.md).
+To start building a PWA, see [Get started developing a PWA](./how-to/index.md).
 
 
 <!-- ------------------------------ -->
@@ -119,7 +119,7 @@ Read more success stories on the [PWA Stats](https://www.pwastats.com/) website.
 ## See also
 <!-- all links in article (except stats sources) -->
 
-* [Get started with PWAs](./how-to/index.md)
+* [Get started developing a PWA](./how-to/index.md)
 * [Installing a PWA](./ux.md#installing-a-pwa)
 * [Publish a PWA to the Microsoft Store](./how-to/microsoft-store.md)
    * [Microsoft Store](https://apps.microsoft.com)

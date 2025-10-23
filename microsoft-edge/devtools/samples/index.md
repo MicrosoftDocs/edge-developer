@@ -75,7 +75,7 @@ A few of these samples are shown below.
 
 This simple To Do list webpage is used to demonstrate various DevTools features.  It has an `.html` file, a `.js` file, and `.css` files:
 
-![To Do demo and DevTools with the Sources tool selected](./sample-code-images/demo-to-do.png)
+![To Do demo and DevTools with the Sources tool selected](./index-images/demo-to-do.png)
 
 * Rendered page: [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
@@ -93,7 +93,7 @@ This Animal Shelter demo webpage is useful for exploring various DevTools featur
 
    <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
-![The 'Demo webpage with accessibility issues'](./sample-code-images/demo-page-with-accessibility-issues.png)
+![The 'Demo webpage with accessibility issues'](./index-images/demo-page-with-accessibility-issues.png)
 
 
 <!-- ------------------------------ -->
@@ -133,7 +133,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
    <!-- Or, press **F12**, **Ctrl+Shift+I** (on Windows/Linux), or **Command+Option+I** (on macOS). -->
 
-![The 'Get started Debugging JavaScript with DevTools' demo webpage](./sample-code-images/using-debug-js-demo-page.png)
+![The 'Get started Debugging JavaScript with DevTools' demo webpage](./index-images/using-debug-js-demo-page.png)
 
 
 <!-- ------------------------------ -->
@@ -207,19 +207,19 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. Click the **Code** dropdown button, and then click **Open with Visual Studio** if it appears.  A list of **Handler Selector** items is offered, one per Visual Studio instance installed.  This option appears only if you're logged in.
 
-   ![Cloning the MicrosoftEdge/Demos repo](./sample-code-images/clone-repo.png)
+   ![Cloning the MicrosoftEdge/Demos repo](./index-images/clone-repo.png)
 
-1. In Visual Studio Code, in the **Activity Bar**, click the **Source Control** (![Source Control icon](./sample-code-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
+1. In Visual Studio Code, in the **Activity Bar**, click the **Source Control** (![Source Control icon](./index-images/source-control-icon.png)) button, and then click the **Clone Repository** button.
 
 1. In the **Provide repository URL** text box, paste the copied URL: **https://github.com/MicrosoftEdge/Demos.git** and then press **Enter**.  A folder selection dialog opens.
 
-   ![The Clone Repository button in Visual Studio Code](./sample-code-images/clone-repository-button.png)
+   ![The Clone Repository button in Visual Studio Code](./index-images/clone-repository-button.png)
 
 1. Navigate to your desired path, such as `C:\Users\localAccount\Documents\GitHub` or `Users/username/GitHub`, and then click the **Select Repository Location** button.
 
 1. The message **Cloning git repository** appears, then you're prompted to open the cloned repository.  Click the **Open** button:
 
-   ![Prompted to open the cloned repo](./sample-code-images/prompt-open-cloned-repo.png)
+   ![Prompted to open the cloned repo](./index-images/prompt-open-cloned-repo.png)
 
 1. If prompted **Do you trust...**, click the **Yes** button.  Or, click the **No** button and continue with most parts of this walkthrough.
 
@@ -288,19 +288,19 @@ After cloning (or downloading) the Edge Demos repo:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./sample-code-images/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon](./index-images/more-tabs-icon-light-theme.png)) button.
 
-1. In the **Sources** tab, on the left, select the **Workspace** tab, which is grouped with the **Page** tab.  If the **Workspace** tab isn't displayed, click the **More tabs** (![More tabs button](./sample-code-images/more-tabs-icon-light-theme.png)) button.
+1. In the **Sources** tab, on the left, select the **Workspace** tab, which is grouped with the **Page** tab.  If the **Workspace** tab isn't displayed, click the **More tabs** (![More tabs button](./index-images/more-tabs-icon-light-theme.png)) button.
 
 1. Click **+ Add folder to workspace**.  A folder selection dialog opens.
 
 1. Select a specific folder, such as **demo-to-do**, or select the **Demos** root folder:
 
-   ![Selecting the demo-to-do directory](./sample-code-images/select-demo-to-do-folder.png)
+   ![Selecting the demo-to-do directory](./index-images/select-demo-to-do-folder.png)
 
 1. Above DevTools, your're prompted "DevTools requests full access to (directory)".  Click the **Allow** button:
 
-   ![DevTools requests access to add a folder to the Workspace](./sample-code-images/devtools-requests-access.png)
+   ![DevTools requests access to add a folder to the Workspace](./index-images/devtools-requests-access.png)
 
 
 <!-- ====================================================================== -->
@@ -319,7 +319,7 @@ Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\U
 
 Result of going to `localhost:8080`:
 
-![Server started from the \Demos\demo-to-do directory](./sample-code-images/server-started-from-a-demo-dir.png)
+![Server started from the \Demos\demo-to-do directory](./index-images/server-started-from-a-demo-dir.png)
 
 
 <!-- ------------------------------ -->
@@ -339,7 +339,7 @@ Example directory to add to the **Workspace** tab of the **Sources** tool: `C:\U
 
 Result of going to `localhost:8080`:
 
-![Server started from /demos/ directory instead of a specific demo subdirectory](./sample-code-images/server-started-from-demos-dir.png)
+![Server started from /demos/ directory instead of a specific demo subdirectory](./index-images/server-started-from-demos-dir.png)
 
 
 <!-- ====================================================================== -->
@@ -376,13 +376,13 @@ To open an `.html` file and edit it:
 
 1. Right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](./sample-code-images/more-tabs-icon-light-theme.png)) button.
+1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![The More tabs icon](./index-images/more-tabs-icon-light-theme.png)) button.
 
 1. In DevTools, on the left, select the **Page** tab, and then select the HTML file, such as `index.html` or **(index)**.
 
 1. Press **Esc** to open the **Quick View** panel at the bottom of DevTools.
 
-1. In the **Quick View** toolbar, click the **More Tools** (![More Tools icon](./sample-code-images/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
+1. In the **Quick View** toolbar, click the **More Tools** (![More Tools icon](./index-images/more-tools-icon-light-theme.png)) button, and then select the **Changes** tool.
 
 1. In the middle, editor pane of the **Sources** tool, edit the `.html` file.  For example, in `demo-to-do/index.html` folder, in the `<h1>` heading line, change **My tasks** to **My modified tasks**:
 
@@ -394,13 +394,13 @@ To open an `.html` file and edit it:
 
    The change is displayed in the **Changes** tool in the **Quick View** panel, and an asterisk is added to the file name in the **index.html** tab in the **Sources** tool:
 
-   ![The modified demo-to-do page before saving changes](./sample-code-images/modified-demo-to-do-before-save.png)
+   ![The modified demo-to-do page before saving changes](./index-images/modified-demo-to-do-before-save.png)
 
 1. Press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS) to save the change.  The asterisk is removed from the **index.html** tab in the **Sources** tool.
 
 1. Refresh the page.  The change is displayed in the rendered webpage; for example, the word **modified** is added to the title:
 
-   ![The modified demo-to-do page after saving changes and refreshing](./sample-code-images/modified-demo-to-do-after-save-refresh.png)
+   ![The modified demo-to-do page after saving changes and refreshing](./index-images/modified-demo-to-do-after-save-refresh.png)
 
 
 <!-- ====================================================================== -->
@@ -408,15 +408,15 @@ To open an `.html` file and edit it:
 
 After cloning (or downloading) the Edge Demos repo:
 
-1. In Visual Studio Code, in the **Activity Bar**, click the **Explorer** (![Explorer icon](./sample-code-images/explorer-icon.png)) button.  The **Explorer** pane opens.
+1. In Visual Studio Code, in the **Activity Bar**, click the **Explorer** (![Explorer icon](./index-images/explorer-icon.png)) button.  The **Explorer** pane opens.
 
 1. In the **Explorer** pane, click the **Open Folder** button.  The **Open Folder** dialog opens.  Navigate to the `demo-to-do` folder in the Demo repo that you cloned, select the folder or go into it, and then click the **Select Folder** button:
 
-   ![Selecting the demo-to-do folder](./sample-code-images/select-demo-to-do-folder.png)
+   ![Selecting the demo-to-do folder](./index-images/select-demo-to-do-folder.png)
 
    An example of a repo location where the **Demos** repo has been cloned is shown above.  The `demo-to-do` folder of the cloned **Demos** repo opens in the Explorer of Visual Studio Code:
 
-   ![Opened the demo-to-do folder initially](./sample-code-images/opened-demo-to-do-folder-initially.png)
+   ![Opened the demo-to-do folder initially](./index-images/opened-demo-to-do-folder-initially.png)
 
 Or, you can open the root folder of the Demos repo, to explore all of the demo folders in the **Explorer** pane.
 

@@ -14,13 +14,13 @@ This article lists best practices to make your PWA a great application for your 
 
 Read the best practices on this page to learn to make your PWA look and feel like what users expect.
 
-This page assumes that you already have a PWA. To learn more about building a simple PWA first, see [Get started with PWAs](./index.md).
+This page assumes that you already have a PWA. To learn more about building a simple PWA first, see [Get started developing a PWA](./index.md).
 
 
 <!-- ====================================================================== -->
 ## Provide a custom installation
 
-Your app can already be installed using the **App available** button in the browser Address bar if you follow the steps in [Get started with PWAs](./index.md).
+Your app can already be installed using the **App available** button in the browser Address bar if you follow the steps in [Get started developing a PWA](./index.md).
 
 A custom installation experience, in the app user interface, can be more obvious to your users and lead to more installations.
 
@@ -222,7 +222,7 @@ Local: PWA:
 * [Display a badge on the app icon](./notifications-badges.md#display-a-badge-on-the-app-icon) in _Re-engage users with badges, notifications, and push messages_.
 * [Display a PWA widget in the Windows Widgets Board](./widgets.md)
 * [Display content in the title bar area using Window Controls Overlay](./window-controls-overlay.md)
-* [Get started with PWAs](./index.md)
+* [Get started developing a PWA](./index.md)
 * [Handle files in a PWA](./handle-files.md)
 * [Handle links to a PWA](./handle-urls.md)
 * [Handle protocols in a PWA](./handle-protocols.md)

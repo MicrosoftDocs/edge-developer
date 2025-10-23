@@ -129,7 +129,7 @@ To start learning WebView2, use the following recommended sequence:
 
 1. Install Visual Studio, install preview channels of Microsoft Edge, and clone the `WebView2Samples` repo.  See [Set up your Dev environment for WebView2](./how-to/machine-setup.md).
 1. Install and run the main sample.  See [Win32 sample app](./samples/webview2apissample.md).
-1. Install and run the sample for your target platform, if it's a platform other than Win32.  See [Sample apps](./code-samples-links.md).
+1. Install and run the sample for your target platform, if it's a platform other than Win32.  See [WebView2 sample apps](./samples/index.md).
 1. Install and run the finished Getting Started tutorial for your target platform (if the finished project is provided).  See [Getting Started tutorials](./get-started/get-started.md).
 1. Do the Getting Started steps to add WebView2 code to the Visual Studio starter project for your platform.  See [Getting Started tutorials](./get-started/get-started.md).
 

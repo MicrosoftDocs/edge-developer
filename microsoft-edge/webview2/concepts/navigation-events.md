@@ -84,7 +84,7 @@ For example code showing how to handle navigation events, see:
 * [Step 8 - Navigation events](../get-started/winforms.md#step-8---navigation-events) in _Get started with WebView2 in WinForms apps_.
 * [Step 13 - Navigation events](../get-started/win32.md#step-13---navigation-events) in _Get started with WebView2 in Win32 apps_.
 
-The [WebView2 sample apps](../code-samples-links.md) also demonstrate handling navigation events.
+The [WebView2 sample apps](../samples/index.md) also demonstrate handling navigation events.
 
 
 <!-- ====================================================================== -->
