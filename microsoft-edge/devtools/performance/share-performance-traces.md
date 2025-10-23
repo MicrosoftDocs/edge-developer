@@ -77,8 +77,12 @@ To export a performance recording from the **Performance** tool:
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-Chrome:
-* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)<!-- Leah TODO: confirm chrome link -->
-<!-- https://developer.chrome.com/s/results?q=trace#gsc.tab=0&gsc.q=trace&gsc.sort= -->
-<!-- https://developer.chrome.com/blog/devtools-tips-39 -->
+* [Share memory traces with more data](../experimental-features/share-memory-traces.md)<!-- link not in article -->
+
+<!--
+* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)
+Leah TODO: confirm chrome link
+link not in article
+-->

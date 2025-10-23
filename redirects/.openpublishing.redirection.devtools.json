@@ -464,7 +464,14 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/experimental-features/share-traces.md",
-      "redirect_url": "/microsoft-edge/devtools/experimental-features/share-traces",
+      "redirect_url": "/microsoft-edge/devtools/performance/share-performance-traces",
+      // "redirect_url": "/microsoft-edge/devtools/experimental-features/share-memory-traces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/experimental-features/share-traces.md",
+      "redirect_url": "/microsoft-edge/devtools/performance/share-performance-traces",
+      // "redirect_url": "/microsoft-edge/devtools/experimental-features/share-memory-traces",
       "redirect_document_id": false
     },
     {

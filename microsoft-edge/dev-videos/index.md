@@ -183,7 +183,8 @@ Covers:
 
 See also:
 * [What's New in DevTools (Microsoft Edge 109)](../devtools/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
-* [Share enhanced performance and memory traces](../devtools/experimental-features/share-traces.md)
+* [Share memory traces with more data](../devtools/experimental-features/share-memory-traces.md)
+* [Share performance traces with more data](../devtools/performance/share-performance-traces.md)
 * [Analyze CSS selector performance during Recalculate Style events](../devtools/performance/selector-stats.md) - selector stats.
 * [Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)](../devtools/rendering-tools/js-runtime.md#investigate-memory-allocation-with-reduced-garbage-include-objects-checkboxes) in _Speed up JavaScript runtime ("Allocation sampling" profiling type)_.
 * [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)

@@ -370,9 +370,9 @@
               href: ./devtools/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Share enhanced performance and memory traces
-              href: ./devtools/experimental-features/share-traces.md
-              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
+            - name: Share memory traces with more data
+              href: ./devtools/experimental-features/share-memory-traces.md
+              displayName: Experimental features, Memory tool
 # TOOLS =======================================================================
         - name: Tools
           items:
@@ -583,6 +583,10 @@
                 - name: Performance features reference  # = Performance > Features reference
                   href: ./devtools/performance/reference.md
                   displayName: Performance tool, Rendering tool
+
+                - name: Share performance traces with more data
+                  href: ./devtools/performance/share-performance-traces.md
+                  displayName: Performance tool
 
                 - name: Performance recording event reference  # = Performance > Timeline event reference
                   href: ./devtools/performance/performance-reference.md

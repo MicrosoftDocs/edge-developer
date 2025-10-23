@@ -63,7 +63,8 @@ To try the enhanced traces feature:
 You can also export from the **Memory** tool with the new `.devtools` file format.  This is a new feature that the DevTools team is actively experimenting with, so please send us your feedback in [[Feedback] Enhanced Traces experiment #122](https://github.com/MicrosoftEdge/DevTools/issues/122).
 
 See also:
-* [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
+* [Share memory traces with more data](../../../experimental-features/share-memory-traces.md)
+* [Share performance traces with more data](../../../performance/share-performance-traces.md)
 
 
 <!-- ====================================================================== -->

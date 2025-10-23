@@ -14,7 +14,7 @@ The **Memory** tool records runtime data about your webpage. Exploring the recor
 
 Additionally, the recorded data can be exported to files on disk. The exported files are called _traces_.
 
-Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage. 
+Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage.
 
 Memory traces can also be saved as a `.devtools` file which contains much more runtime data from the traced webpage. This makes it easier to resolve memory issues, by recreating the environment in which the trace was recorded, and by providing original source files. Also, this makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it will also be possible to resolve code references to their original source code.
 
@@ -81,3 +81,10 @@ To import a trace in the **Memory** tool:
    Otherwise, the memory information appears in the **Memory** tool, and the rest of the DevTools tabs continue to show information related to the current webpage.
 
 
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Share performance traces with more data](../performance/share-performance-traces.md)
+* [Fix memory problems](../memory-problems/index.md)
+* [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md)
