@@ -64,7 +64,7 @@ You can also host your website on GitHub Pages (`pages.github.com`), which suppo
 
 
 <!-- ------------------------------ -->
-#### About localhost http vs. production server https
+#### About localhost (http) vs. production server (https)
 
 When using localhost web server, the URL begins with `http`, not `https`.  Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS, not HTTP.
 
