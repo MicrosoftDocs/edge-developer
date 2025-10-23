@@ -9,6 +9,7 @@ ms.subservice: devtools
 ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
+<!-- todo: desc: scrub "enhanced traces" -->
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -73,7 +74,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Memory tool can load enhanced traces larger than 1 GB
+## The Memory tool can load enhanced traces<!-- todo: scrub "enhanced traces" --> larger than 1 GB
 
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 
@@ -88,7 +89,8 @@ Enhanced traces is an experimental feature in Microsoft Edge that allows you to 
 ![An enhanced trace](./devtools-114-images/enhanced-trace-1gb.png)
 
 See also:
-* [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
+* [Share memory traces with more data](../../../experimental-features/share-memory-traces.md)
+* [Share performance traces with more data](../../../performance/share-performance-traces.md)
 * [GitHub Issue #122: \[Feedback\] Enhanced Traces experiment](https://github.com/MicrosoftEdge/DevTools/issues/122)
 
 
