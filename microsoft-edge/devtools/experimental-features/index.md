@@ -616,7 +616,7 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable collecting enhanced traces
+## Performance panel: Enable collecting enhanced traces<!-- todo: scrub "enhanced traces" -->
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
