@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 01/06/2023
+ms.date: 10/23/2025
 ---
 # Share memory traces with more data
 
@@ -16,9 +16,19 @@ Additionally, the recorded data can be exported to files on disk. The exported f
 
 Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage.
 
-Memory traces can also be saved as a `.devtools` file which contains much more runtime data from the traced webpage. This makes it easier to resolve memory issues, by recreating the environment in which the trace was recorded, and by providing original source files. Also, this makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool. Additionally, if source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it will also be possible to resolve code references to their original source code.
+Memory traces can also be saved as a `.devtools` file, which contains much more runtime data from the traced webpage.  Advantages of the `.devtools` file format:
 
-`.devtools` traces can only be imported in Microsoft Edge, while other traces are compatible with other browsers based on the Chromium engine.
+* This makes it easier to resolve memory issues, by recreating the environment in which the trace was recorded, and by providing original source files.
+
+* This makes it possible to reliably resolve source code references found in imported traces to the actual runtime code in the **Sources** tool.
+
+* If source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it's also possible to resolve code references to their original source code.
+
+Browser compatibility:
+
+* `.heapsnapshot`, `.heapprofile`, and `.heaptimeline` trace files are compatible with Microsoft Edge and other browsers that are based on the Chromium engine.
+
+* `.devtools` traces can only be imported in Microsoft Edge.
 
 
 <!-- ====================================================================== -->
