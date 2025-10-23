@@ -1,6 +1,6 @@
 ---
 title: Share performance traces with more data
-description: Learn to export and import performance traces in DevTools to resolve low performance and high memory usage issues in your webpages
+description: Learn to export and import performance traces in DevTools to resolve low performance and high memory usage issues in your webpages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -22,26 +22,40 @@ When a trace with script content or source maps is imported in DevTools, a new D
 
 Exported trace files are compatible with other browsers based on the Chromium engine.
 
+
 <!-- ====================================================================== -->
 ## Options for trace export
 
 When you export a trace from the Performance tool, you can choose to include more data.
 
+
+<!-- ------------------------------ -->
 #### Include annotations
+
 This could be helpful if you want to leave annotations for others.
 
+
+<!-- ------------------------------ -->
 #### Include script content
+
 This includes the contents of JavaScript scripts which can be viewed in the **Sources** tool. The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code. Some Performance insights require script contents for analysis.
 
-Note. Extension scripts contents are never included even when this option is enabled. However, profiling data from extension scripts is still saved in the trace because they can still impact performance.
+Extension scripts contents are never included even when this option is enabled. However, profiling data from extension scripts is still saved in the trace because they can still impact performance.
 
+
+<!-- ------------------------------ -->
 #### Include script source maps
+
 This includes minified production content files and the mappings back to the original source code files. Source maps are used by DevTools to load your original files and replace minified code with original code. The Performance tool will display original function names and Sources tool will show all original files. Some Performance insights require source maps for analysis.
 
-Note. Script content must be included too for this to work.
+Script content must be included too for this to work.
 
+
+<!-- ------------------------------ -->
 #### Compress with gzip
+
 This option is selected by default. This helps compress large performance traces to save disk space and makes the importing and processing faster in DevTools. 
+
 
 <!-- ====================================================================== -->
 ## Export a trace from the Performance tool
@@ -60,5 +74,11 @@ To export a performance recording from the **Performance** tool:
 
    ![The Windows save dialog, showing the performance trace file being saved in a traces folder](./share-performance-traces-images/saving-perf-trace.png)
 
+
+<!-- ====================================================================== -->
 ## See also
-* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/) <!-- Leah TODO: confirm chrome link -->
+
+Chrome:
+* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)<!-- Leah TODO: confirm chrome link -->
+<!-- https://developer.chrome.com/s/results?q=trace#gsc.tab=0&gsc.q=trace&gsc.sort= -->
+<!-- https://developer.chrome.com/blog/devtools-tips-39 -->

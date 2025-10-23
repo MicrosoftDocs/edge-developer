@@ -28,7 +28,7 @@ Memory traces that are `.devtools` files can optionally include console messages
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. In DevTools, in the upper right, click **Settings** (![Settings button](./share-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
+1. In DevTools, in the upper right, select **Customize and control DevTools** > **Settings** (![Settings button](./share-memory-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
 
 1. In the **Persistence** section of the **Preferences** page, use these checkboxes to control what to include:
 
@@ -36,7 +36,7 @@ Memory traces that are `.devtools` files can optionally include console messages
    * **Include script sources in .devtools traces**.
    * **Include DOM snapshots in .devtools traces (experimental)**.
 
-   <!-- TODO: replace once new UI is in canary ![The Settings panel in DevTools, showing the trace options](./share-traces-images/enhanced-trace-options.png) -->
+   <!-- TODO: replace once new UI is in canary ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png) -->
 
 
 <!-- ====================================================================== -->
@@ -52,11 +52,11 @@ To export memory information from the **Memory** tool:
 
 1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar:
 
-   <!-- TODO: replace with updated UI ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-traces-images/exporting-memory-trace.png) -->
+   <!-- TODO: replace with updated UI ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png) -->
 
 1. Choose the trace type and a location to save the trace file on your disk. Select `.devtools` if you want to include console messages, script sources, and DOM elements. Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
 
-   <!-- TOOD: replace once new UI is in canary ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-traces-images/saving-memory-trace.png) -->
+   <!-- TOOD: replace once new UI is in canary ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
 
 
 <!-- ====================================================================== -->
@@ -68,11 +68,11 @@ To import a trace in the **Memory** tool:
 
 1. Click the **Load profile** button:
 
-   ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-traces-images/importing-memory-trace.png)
+   ![Microsoft Edge, showing the Memory tool in DevTools, with the Load button](./share-memory-traces-images/importing-memory-trace.png)
 
 1. Locate the trace file on your disk. It's either a `.devtools` file, or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file.
 
-   ![The Windows open dialog, showing a memory trace file](./share-traces-images/opening-memory-trace.png)
+   ![The Windows open dialog, showing a memory trace file](./share-memory-traces-images/opening-memory-trace.png)
 
 1. Open the file.
 
