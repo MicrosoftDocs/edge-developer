@@ -1025,7 +1025,6 @@
 #   DevTools for Visual Studio Code
         - name: DevTools for Visual Studio Code
           items:
-
             - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: ./visual-studio-code/microsoft-edge-devtools-extension.md
 
@@ -1163,8 +1162,17 @@
                 - name: Declare API permissions in the manifest
                   href: ./extensions/developer-guide/declare-permissions.md
 
-            - name: Create a DevTools extension, adding a custom tool tab and panel
-              href: ./extensions/developer-guide/devtools-extension.md
+            - name: Custom DevTools tool
+              items:
+
+                - name: Create a DevTools extension, adding a custom tool tab and panel
+                  href: ./extensions/developer-guide/devtools-extension.md
+
+                - name: "Sample: Custom DevTools tool"
+                  href: ./extensions/developer-guide/custom-devtools-tool.md
+
+                - name: Code for Custom DevTools tool
+                  href: ./extensions/developer-guide/custom-devtools-tool-code.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
               href: ./extensions/developer-guide/sidebar.md

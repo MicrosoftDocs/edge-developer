@@ -6,30 +6,15 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/24/2025
+ms.date: 10/27/2025
 ---
-# Sample: Custom DevTools tool tab and panel
-<!-- task = use the sample, not create the sample -->
+# Create a DevTools extension, adding a custom tool tab and panel
 
-todo: Start by showing and saying and linking to, the finished sample
-
-The DevTools Extension sample is a Microsoft Edge extension that adds a tool tab and panel in Microsoft Edge DevTools.
-
-fix png of Foo sample - get rid of the specific Tasks.
-
-live url of Foo sample
-
-source code dir for Foo sample
-
-
-If you have a cloned fork of Demos repo, install and run as follows:
-
-
-
-
-This sample is a Microsoft Edge extension that adds a custom tool tab and panel in DevTools.  This article gives steps to use and then modify the sample
+This article provides a sample and code walkthrough for a Microsoft Edge extension that adds a tool tab and panel in DevTools.
 
 This article first shows how to install and run the provided DevTools extension sample, which adds a **Sample Panel** tool tab in DevTools within Microsoft Edge.  The sample is a working DevTools extension that creates its own panel, and interacts with the DevTools APIs.
+
+This article then presents a tutorial that shows how you can optionally create that sample from scratch, and explains each step of developing the sample, and how the added code works.  These tutorial steps are a good way to experience everything that's needed for typical development.
 
 See also:
 * [Overview of DevTools](../../devtools/overview.md)
@@ -40,9 +25,9 @@ See also:
 
 To download, install, run, and test the provided, finished DevTools extension sample:
 
-1. Download the final extension code by clicking [Demos-main.zip](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main) and then extracting its content to a folder on your computer.<!-- todo: which folder is relevant? -->
+1. Download the final extension code by clicking [Demos-main.zip](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main) and then extracting its content to a folder on your computer.
 
-1. Open Microsoft Edge and go to `edge://extensions/`.<!-- todo: no special urls; give UI nav path -->
+1. Open Microsoft Edge and go to `edge://extensions/`.
 
 1. Turn on the  **Developer mode** toggle.
 
@@ -581,6 +566,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## See also
+<!-- todo: all links in article -->
 
 * [Samples for Microsoft Edge extensions](../samples.md)
 * [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
