@@ -32,16 +32,11 @@ May 2025
 <!-- ====================================================================== -->
 ## 1.0.3595.46
 
-Release Date: September 3, 2025
+Release Date: November 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -57,22 +52,10 @@ This Release SDK includes the following bug fixes.
 
 
 <!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Disable creation of "Speculative Renderer" process.
-* Enabled EmbeddedBrowserBrowserProcessExitedTest for ARM64
-
-
-<!-- ---------- -->
-##### Other
-
-* Enabled EmbeddedBrowserBrowserProcessExitedTest
+* Disabled creation of a "Speculative Renderer" process.
+* Enabled `EmbeddedBrowserBrowserProcessExitedTest` for ARM64.
 
 <!-- end of Nov 2025 Release SDK -->
 
