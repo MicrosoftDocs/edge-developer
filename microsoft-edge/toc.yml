@@ -1169,10 +1169,10 @@
                   href: ./extensions/developer-guide/devtools-extension.md
 
                 - name: "Sample: Custom DevTools tool"
-                  href: ./extensions/developer-guide/custom-devtools-tool.md
+                  href: ./extensions/samples/custom-devtools-tool.md
 
                 - name: Code for Custom DevTools tool
-                  href: ./extensions/developer-guide/custom-devtools-tool-code.md
+                  href: ./extensions/samples/custom-devtools-tool-code.md
 
             - name: Develop an extension for the Microsoft Edge sidebar
               href: ./extensions/developer-guide/sidebar.md

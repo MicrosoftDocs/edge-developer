@@ -11,6 +11,12 @@ ms.date: 10/27/2025
 # Code for Custom DevTools tool
 
 
+See also:
+* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
+* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
+
+
 <!-- ====================================================================== -->
 ## Files in the sample
 <!-- https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%204 -->
@@ -47,7 +53,7 @@ Content script and service worker:
 
 The DevTools page, inspected page, content script, and background service worker fit together in an extension:
 
-![Diagram showing the anatomy of a DevTools extension](./custom-devtools-tool-images/architecture.png)
+![Diagram showing the anatomy of a DevTools extension](./custom-devtools-tool-code-images/architecture.png)
 
 The `content_script.js` detects where the user clicks on the inspected webpage.  The content script relays this info to the `devtools.js` file, where the data is displayed in DevTools in the **Sample Panel** tool and in the **Console** tool.
 
