@@ -9,6 +9,8 @@ ms.subservice: extensions
 ms.date: 10/27/2025
 ---
 # Create a DevTools extension, adding a custom tool tab and panel
+<!-- live: https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension -->
+<!-- equiv: https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools#devtools_extension_examples -->
 
 This article provides a sample and code walkthrough for a Microsoft Edge extension that adds a tool tab and panel in DevTools.
 
@@ -35,7 +37,7 @@ To download, install, run, and test the provided, finished DevTools extension sa
 
 1. Click **Load unpacked** and navigate to the folder where you extracted the zip file.  In this folder, select **Demos-main** > **devtools-extension** > **sample 4**, and then click **Select Folder**.
 
-   ![The edge://extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extension-images/edge-extensions-page.png)
+   ![The Extensions page in Microsoft Edge, showing the Developer mode and Load unpacked buttons](./devtools-extension-images/edge-extensions-page.png)
 
    The DevTools extension is loaded.
 
@@ -567,10 +569,53 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Troubleshooting
+<!-- add to [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md) ? -->
+
+If the **Custom** tab isn't visible in DevTools, or it's outdated and doesn't show your code changes:
+
+* Make DevTools wide, to show many tools in the **Activity Bar**.
+
+* Close and reopen DevTools.
+
+* Refresh or hard-refresh the inspected page.
+
+* In Microsoft Edge, in the **Extensions** page, click **Reload** for the extension.
+
+* If no icon is provided in such an extension, the tab when not selected is narrow and gray, on the right side of the **Activity Bar**.  Click the narrow gray tab.
+
+* Go to a webpage, not an empty tab.  The code in the **Custom** DevTools tool requires a webpage.
+
+Custom Devtools tools are added to the **More tools** menu on the **Activity Bar** when the **Activity Bar** is narrow.  The tool's tab doesn't have a **Remove from Activity Bar** command on the right-click menu.
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- todo: all links in article -->
 
 * [Samples for Microsoft Edge extensions](../samples.md)
+* [Samples for Microsoft Edge extensions](../samples.md)<!-- link not in article -->
 * [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
 * [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
 * [CDP API Reference](https://developer.chrome.com/docs/extensions/reference/)
+* [Overview of DevTools](../../devtools/overview.md)
+* [Sample: Picture viewer pop-up webpage](../getting-started/picture-viewer-popup-webpage.md)
+* [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
+
+Chrome docs:
+* [Manifest reference](https://developer.chrome.com/docs/extensions/reference#manifest-reference)
+* [Extend DevTools](https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools)
+* [Chrome Extensions Reference](https://developer.chrome.com/docs/extensions/reference/)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
+      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
+
+GitHub:
+* [Download Demos-main.zip](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main)
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - source code.
+
+Tools:
+* [Visual Studio Code](https://code.visualstudio.com)
+
+<!-- https://developer.chrome.com/docs/extensions/reference/api/system/memory#method-getInfo -->

@@ -9,12 +9,6 @@ ms.subservice: extensions
 ms.date: 10/27/2025
 ---
 # Sample: Custom DevTools tool
-<!-- live: https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension -->
-<!-- equiv: https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools#devtools_extension_examples -->
-
-<!-- todo:
-global: show todo page, not Demos page
--->
 
 The DevTools Extension sample is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, including a tab in the **Activity Bar**, and a panel below the tab.
 
@@ -35,11 +29,23 @@ The "DevTools Extension" sample adds a **Custom** tool tab and panel in DevTools
 
 ![Custom tool](./custom-devtools-tool-images/custom-tool.png)
 
-The **Custom** tool calls the DevTools API to retrieve and display memory information.
+
+<!-- ------------------------------ -->
+#### Display memory information
+
+The **Custom** tool calls the DevTools API (`chrome.system.memory.getInfo((data)`) to retrieve and display memory information.
+
+
+<!-- ------------------------------ -->
+#### Send message from DevTools to inspected page
 
 The **Custom** tool in DevTools has a button that sends a message to the inspected webpage.  The inspected webpage then displays a JavaScript alert dialog:
 
 ![Alert](./custom-devtools-tool-images/alert.png)
+
+
+<!-- ------------------------------ -->
+#### Send message from inspected page to DevTools
 
 Clicking around within the inspected webpage sends a message to DevTools.  The sample uses a content script to send a message (the clicked coordinates) from the inspected webpage (any webpage) to the **Custom** DevTools tool and the **Console** tool in DevTools.
 
@@ -51,11 +57,13 @@ The **Console** tool displays the coordinates information from the message:
 
 ![Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
 
+Download, install, use, and modify the sample, per the below sections.
+
 
 <!-- ====================================================================== -->
 ## Step 1: Download the sample
 
-If not done yet, download the "main" branch of the Demos repo, or clone (or fork and clone) the repo.  Downloading is simplest and is described below.
+If not done yet, download the "main" branch of the Demos repo, or clone (or fork and clone) the repo.  Downloading the repo is simplest, and is described below.
 
 Download the "main" branch of the Demos repo, as follows:
 
@@ -91,7 +99,7 @@ Download the "main" branch of the Demos repo, as follows:
 
    The **Select the extension directory** dialog opens.
 
-1. Navigate to the `/Demos-main/devtools-extension` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir which has latest sample -->
+1. Navigate to the `/Demos-main/devtools-extension` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir, a working branch, which has latest version of sample -->
 
    The **Custom DevTools Tool** card is displayed:
 
@@ -115,6 +123,12 @@ Download the "main" branch of the Demos repo, as follows:
 
    ![Custom tab](./custom-devtools-tool-images/custom-tab-activity-bar.png)
 
+   If the **Custom** (![The Custom tool icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab isn't visible, do any of the following:
+
+   * Click the **More tools** (![More tools icon](./custom-devtools-tool-images/more-tools-icon.png)) button, and then select ![Custom icon](./custom-devtools-tool-images/custom-icon.png) **Custom**.
+
+   * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
+
    The custom DevTools page has several sections:
 
    * Memory display information.
@@ -125,7 +139,7 @@ Download the "main" branch of the Demos repo, as follows:
 <!-- ====================================================================== -->
 ## Step 4: View memory information from a DevTools API call
 
-* In the **Custom** tool in DevTools, observe the once-per-second updating of the **Available Memory Capacity** value.
+* In the **Custom** tool, next to **Available Memory Capacity**, observe the once-per-second updating of the value.
 
 
 <!-- ====================================================================== -->
@@ -170,7 +184,7 @@ Download the "main" branch of the Demos repo, as follows:
 
    The **Open Folder** dialog opens.
 
-1. Navigate to the `/Demos-main/devtools-extension/` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir which has latest sample -->
+1. Navigate to the `/Demos-main/devtools-extension/` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir, a working branch, which has latest version of sample -->
 
    A dialog opens, asking whether to open the repo in the parent folder.
 
@@ -180,7 +194,7 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. Click `panel.html`.
 
-   The file is opened for editing:
+   `panel.html` is opened for editing:
 
    ![/devtools-extension/ folder in Visual Studio Code](./custom-devtools-tool-images/panel-html.png)
 
@@ -198,13 +212,9 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. Save the file.
 
-
-<!-- ====================================================================== -->
-## Step 8: Use the modified Custom tool
-
 1. In the **Explorer** pane, click `manifest.json`.
 
-   The file is opened for editing.
+   `manifest.json` is opened for editing.
 
 1. Add "My" to the `name`; change from:
 
@@ -220,69 +230,60 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. Save the file.
 
+
+<!-- ====================================================================== -->
+## Step 8: Reload the modified Custom tool
+
 1. In Microsoft Edge, select **Settings and more** (![The Settings and more icon](./custom-devtools-tool-images/settings-and-more-icon.png)), hover over **Extensions**, and then select **Manage extensions**.
 
    The **Extensions** tab and page opens (`edge://extensions`).
 
-1. In the **My Custom DevTools Tool** card, click the the **Reload** link.
+1. In the **Custom DevTools Tool** card (or **My Custom DevTools Tool** card), click the **Reload** link:
 
-1. Go to a webpage (not an empty tab), such as the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo, in a new window or tab.
+   ![Reload](./custom-devtools-tool-images/reload-modified-sample.png)
+
+   An **Errors** link might appear in the card, displaying "Uncaught Error: Extension context invalidated", because the sample was modified while still in use.  If you want to prevent this, you can click **Remove** in the **Custom DevTools Tool** card, and then click **Load unpacked**.
+
+
+<!-- ====================================================================== -->
+## Step 9: Use the modified Custom tool
+
+1. Go to a webpage, such as the [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
+
+   The **Custom** DevTools tool requires a webpage, not an empty tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
-1. In the **Activity Bar** of DevTools, click the **More tools** button, and then in the **Add tool to Activity Bar** menu, select (![The Custom tool icon](./custom-devtools-tool-images/custom-icon.png)) **Custom**.
+1. In the **Activity Bar** of DevTools, click the **Custom** (![The Custom tool icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
 
-   The heading in the panel is now **My Custom DevTools Tool**:
+   The **Custom** tool is displayed, with the word **My** added to the heading in the panel:
 
-   ![Custom tab](./custom-devtools-tool-images/custom-tab-activity-bar.png)
+   ![Modified Custom tool](./custom-devtools-tool-images/modified-custom-tool.png)
 
+   If the title still says **Custom DevTools Tool** instead of **My Custom DevTools Tool**, close and reopen DevTools.
 
-<!-- ====================================================================== -->
-## Troubleshooting
-<!-- add to [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md) ? -->
+   If the **Custom** (![The Custom tool icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab isn't visible, do any of the following:
 
-If the **Custom** tab isn't visible in DevTools, or it's outdated and doesn't show your code changes:
+   * Click the **More tools** (![More tools icon](./custom-devtools-tool-images/more-tools-icon.png)) button, and then select ![Custom icon](./custom-devtools-tool-images/custom-icon.png) **Custom**.
 
-* Make DevTools wide, to show many tools in the **Activity Bar**.
+   * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
 
-* Refresh or hard-refresh the inspected page.
-
-* Close and reopen DevTools.
-
-* In Microsoft Edge, in the **Extensions** page, click **Reload** for the extension.
-
-* If no icon is provided in such an extension, the tab when not selected is narrow and gray, on the right side of the **Activity Bar**.  Click the narrow gray tab.
-
-* Go to a webpage, not an empty tab.  The code in the **Custom** DevTools tool requires a webpage.
-
-Custom Devtools tools are added to the **More tools** menu on the **Activity Bar** when the **Activity Bar** is narrow.  The tool's tab doesn't have a **Remove from Activity Bar** command on the right-click menu.
+This is the end of the steps to use and modify the DevTools Extension sample.  Next, you can study [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md).
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
-* [Samples for Microsoft Edge extensions](../samples.md)<!-- link not in article -->
 * [Overview of DevTools](../../devtools/overview.md)
-* [Sample: Picture viewer pop-up webpage](../getting-started/picture-viewer-popup-webpage.md)
-* [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md)
-* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
-
-Chrome docs:
-* [Manifest reference](https://developer.chrome.com/docs/extensions/reference#manifest-reference)
-* [Extend DevTools](https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools)
-* [Chrome Extensions Reference](https://developer.chrome.com/docs/extensions/reference/)
-   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
-      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
-* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
+* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
 
 GitHub:
-* [Download Demos-main.zip](https://codeload.github.com/MicrosoftEdge/Demos/zip/refs/heads/main)
-* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - source code.
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
 
 Tools:
 * [Visual Studio Code](https://code.visualstudio.com)
-
-<!-- https://developer.chrome.com/docs/extensions/reference/api/system/memory#method-getInfo -->
