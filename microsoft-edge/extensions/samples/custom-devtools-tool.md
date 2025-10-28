@@ -41,7 +41,7 @@ The **Custom** tool calls the DevTools API (`chrome.system.memory.getInfo((data)
 
 The **Custom** tool in DevTools has a button that sends a message to the inspected webpage.  The inspected webpage then displays a JavaScript alert dialog:
 
-![Alert](./custom-devtools-tool-images/alert.png)
+![Alert dialog](./custom-devtools-tool-images/alert.png)
 
 
 <!-- ------------------------------ -->
@@ -51,11 +51,11 @@ Clicking around within the inspected webpage sends a message to DevTools.  The s
 
 The **Custom** tool displays the coordinates information from the message:
 
-![Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
+![Coordinates in the Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
 
 The **Console** tool displays the coordinates information from the message:
 
-![Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
+![Coordinates in the Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
 
 Download, install, use, and modify the sample, per the below sections.
 
@@ -165,12 +165,11 @@ Download the "main" branch of the Demos repo, as follows:
 
    In the **Custom** DevTools tool, in the **Coordinates** section, the coordinates are displayed and updated while you click around:
 
-   ![Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
+   ![Coordinates in Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
 
 1. In DevTools, in the **Activity Bar**, select the **Console** tool.
 
-   ![Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
-
+   ![Coordinates in Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
 
 
 <!-- ====================================================================== -->

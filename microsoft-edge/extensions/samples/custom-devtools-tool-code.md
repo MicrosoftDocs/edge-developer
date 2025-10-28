@@ -192,7 +192,7 @@ backgroundPageConnection.postMessage({
 
 Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu:
 
-![Icon file](./custom-devtools-tool-images/icon.png)
+![Icon file](./custom-devtools-tool-code-images/icon.png)
 
 
 <!-- ====================================================================== -->
