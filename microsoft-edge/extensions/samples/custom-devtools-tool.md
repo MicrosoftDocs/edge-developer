@@ -149,7 +149,7 @@ Download the "main" branch of the Demos repo, as follows:
 
    A JavaScript `alert` dialog opens, with message: "Hello from the DevTools extension!"
 
-   ![Alert](./custom-devtools-tool-images/alert.png)
+   ![The Alert](./custom-devtools-tool-images/alert.png)
 
    DevTools sends a message to the inspected webpage, causing JavaScript to display an alert.
 

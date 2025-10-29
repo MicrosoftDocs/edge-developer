@@ -9,7 +9,6 @@ ms.subservice: extensions
 ms.date: 10/27/2025
 ---
 # Code for Custom DevTools tool
-<!-- todo: arrange file sections to group by type -->
 
 [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md) consists of the following files and code.
 
@@ -80,7 +79,7 @@ The manifest file contains key/value pairs.  The top-level keys are called _memb
 | `name` | The name of the extension that will appear under `edge://extensions/`. |
 | `description` | The description of the extension that will be displayed under the name of the extension. |
 | `version` | The version of the extension that will appear next to the name of the extension. |
-| `manifest_version` | Determines the set of features that the extension will be using, such as service workers or network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](./manifest-v3.md). |
+| `manifest_version` | Determines the set of features that the extension will be using, such as service workers or network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md). |
 | `devtools_page` | The path to an HTML file that's run every time DevTools is opened, and loads the extension's JavaScript files.  This page isn't rendered in DevTools. |
 | `content_scripts` | foo |
 | `background` | foo |
