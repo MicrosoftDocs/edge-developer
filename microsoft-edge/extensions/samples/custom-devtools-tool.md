@@ -169,6 +169,10 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. In DevTools, in the **Activity Bar**, select the **Console** tool.
 
+1. In the inspected webpage, click various spots.
+
+   The clicked coordinates are displayed:
+
    ![Coordinates in Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
 
 
