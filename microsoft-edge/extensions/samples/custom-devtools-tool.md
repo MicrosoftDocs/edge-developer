@@ -129,25 +129,31 @@ Download the "main" branch of the Demos repo, as follows:
 
    * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
 
+   * Close and reopen DevTools.
+
    The custom DevTools page has several sections:
 
    * Memory display information.
+
    * A button to send a message from DevTools to the inspected webpage, to make the page display a JavaScript `alert` dialog.
+
    * A **Coordinates** display area, to send a message from the inspected webpage to the DevTools **Console** and **Custom** tools.
 
 
 <!-- ====================================================================== -->
 ## Step 4: View memory information from a DevTools API call
 
-* In the **Custom** tool, next to **Available Memory Capacity**, observe the once-per-second updating of the value.
+* In the **Custom** tool, next to **Available Memory Capacity**, observe the once-per-second updating of the value:
+
+   ![Updating Available Memory Capacity](./custom-devtools-tool-images/memory-updating.png)
 
 
 <!-- ====================================================================== -->
 ## Step 5: Send message from DevTools to inspected page
 
-1. Click the **Say Hello** button.
+1. In the **Custom** tool, click the **Say Hello** button.
 
-   A JavaScript `alert` dialog opens, with message: "Hello from the DevTools extension!"
+   A JavaScript `alert` dialog opens, displaying the message: "Hello from the DevTools extension!"
 
    ![The Alert](./custom-devtools-tool-images/alert.png)
 
@@ -163,15 +169,15 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. In the inspected webpage, click various spots.
 
-   In the **Custom** DevTools tool, in the **Coordinates** section, the coordinates are displayed and updated while you click around:
+   In the **Custom** tool, next to **Coordinates**, the coordinates are displayed and updated while you click around:
 
    ![Coordinates in Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
 
-1. In DevTools, in the **Activity Bar**, select the **Console** tool.
+1. In DevTools, in the **Activity Bar**, select the **Console** (![Console icon](./custom-devtools-tool-images/console-icon.png)) tool.
 
 1. In the inspected webpage, click various spots.
 
-   The clicked coordinates are displayed:
+   The clicked coordinates are displayed in the **Console**:
 
    ![Coordinates in Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
 
@@ -213,7 +219,7 @@ Download the "main" branch of the Demos repo, as follows:
    <h2>My Custom DevTools Tool</h2>
    ```
 
-1. Save the file.
+1. Save `panel.html`.
 
 1. In the **Explorer** pane, click `manifest.json`.
 
@@ -231,7 +237,7 @@ Download the "main" branch of the Demos repo, as follows:
    "name": "My Custom DevTools Tool",
    ```
 
-1. Save the file.
+1. Save `manifest.json`.
 
 
 <!-- ====================================================================== -->
@@ -241,11 +247,13 @@ Download the "main" branch of the Demos repo, as follows:
 
    The **Extensions** tab and page opens (`edge://extensions`).
 
-1. In the **Custom DevTools Tool** card (or **My Custom DevTools Tool** card), click the **Reload** link:
+1. In the **Custom DevTools Tool** card, click the **Reload** link.
+
+   The card now shows **My Custom DevTools Tool** as the name of the extension:
 
    ![Reload](./custom-devtools-tool-images/reload-modified-sample.png)
 
-   An **Errors** link might appear in the card, displaying "Uncaught Error: Extension context invalidated", because the sample was modified while still in use.  If you want to prevent this, you can click **Remove** in the **Custom DevTools Tool** card, and then click **Load unpacked**.
+   An **Errors** link might appear in the card, displaying "Uncaught Error: Extension context invalidated", because the sample was modified while still in use.  If you want to avoid this error, you can click **Remove** in the **Custom DevTools Tool** card, and then click **Load unpacked**.
 
 
 <!-- ====================================================================== -->
@@ -272,6 +280,8 @@ Download the "main" branch of the Demos repo, as follows:
    * Click the **More tools** (![More tools icon](./custom-devtools-tool-images/more-tools-icon.png)) button, and then select ![Custom icon](./custom-devtools-tool-images/custom-icon.png) **Custom**.
 
    * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
+
+   * Close and reopen DevTools.
 
 This is the end of the steps to use and modify the DevTools Extension sample.  Next, you can study [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md).
 
