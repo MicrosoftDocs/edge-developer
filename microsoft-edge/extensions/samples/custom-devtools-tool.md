@@ -129,8 +129,6 @@ Download the "main" branch of the Demos repo, as follows:
 
    * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
 
-   * Close and reopen DevTools.
-
    The custom DevTools page has several sections:
 
    * Memory display information.
@@ -280,8 +278,6 @@ Download the "main" branch of the Demos repo, as follows:
    * Click the **More tools** (![More tools icon](./custom-devtools-tool-images/more-tools-icon.png)) button, and then select ![Custom icon](./custom-devtools-tool-images/custom-icon.png) **Custom**.
 
    * Make DevTools wider, and then click the **Custom** (![Custom icon](./custom-devtools-tool-images/custom-icon.png)) tool's tab.
-
-   * Close and reopen DevTools.
 
 This is the end of the steps to use and modify the DevTools Extension sample.  Next, you can study [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md).
 
