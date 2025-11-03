@@ -616,7 +616,7 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable collecting enhanced traces<!-- todo: scrub "enhanced traces" -->
+## Performance panel: Enable collecting enhanced traces
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
 _new as of Microsoft Edge 128_
@@ -624,13 +624,17 @@ _new as of Microsoft Edge 128_
 This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in the upstream Chromium project.  This experiment doesn't affect the capabilities of Microsoft Edge to capture enhanced traces and doesn't impact DevTools user's experience.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is not present in Microsoft Edge Canary 143.
 * This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
 * [Share performance traces with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
+
+<!--
+the retired term "enhanced traces" remains in this entry for 141, entry then gets removed
+-->
 
 
 <!-- ====================================================================== -->
@@ -644,7 +648,7 @@ In the **Performance** tool, when exporting the trace file, stores the source co
 This experiment makes the **Performance** tool record script source text in traces.  This feature is being implemented in the upstream Chromium project.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 143.
+* This checkbox is not present in Microsoft Edge Canary 143.
 * This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
