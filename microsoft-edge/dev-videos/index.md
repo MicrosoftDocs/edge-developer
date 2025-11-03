@@ -173,7 +173,7 @@ January 17, 2023
 [![Thumbnail image for video "What's new in DevTools 109"](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
 
 Covers:
-* Enhanced traces to share memory and performance recordings.<!-- todo: scrub "enhanced traces" -->
+* Share memory and performance traces with more data.
 * Selector Stats in the **Performance** tool.
 * Track garbage-collected (GC'd) objects in the **Memory** tool.
 * Heap Snapshot visualizer extension.
