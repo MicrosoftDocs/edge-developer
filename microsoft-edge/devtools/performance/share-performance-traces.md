@@ -68,7 +68,7 @@ To export a performance recording from the **Performance** tool:
 
 1. When the performance profile appears, click **Save trace** and choose any information you'd like to include:
 
-   <!-- TODO: find a demo site that has script content and source maps ![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button]() -->
+   ![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button](./share-performance-traces-images/save-performance-trace-dialog.png)
 
 1. Choose a location to save the trace file on your disk:
 
