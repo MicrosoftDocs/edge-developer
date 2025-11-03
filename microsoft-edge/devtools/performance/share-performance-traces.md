@@ -36,9 +36,9 @@ This could be helpful if you want to leave annotations for others.
 
 
 <!-- ------------------------------ -->
-#### Include script content
+#### Include resource content
 
-This includes the contents of JavaScript scripts which can be viewed in the **Sources** tool. The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code. Some Performance insights require script contents for analysis.
+This includes the contents of HTML, CSS, and JavaScript scripts which can be viewed in the **Sources** tool. The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code. Some Performance insights require script contents for analysis.
 
 Extension scripts contents are never included even when this option is enabled. However, profiling data from extension scripts is still saved in the trace because they can still impact performance.
 
@@ -48,7 +48,7 @@ Extension scripts contents are never included even when this option is enabled. 
 
 This includes minified production content files and the mappings back to the original source code files. Source maps are used by DevTools to load your original files and replace minified code with original code. The Performance tool will display original function names and Sources tool will show all original files. Some Performance insights require source maps for analysis.
 
-Script content must be included too for this to work.
+Resource content must be included too for this to work.
 
 
 <!-- ------------------------------ -->
@@ -68,7 +68,7 @@ To export a performance recording from the **Performance** tool:
 
 1. When the performance profile appears, click **Save trace** and choose any information you'd like to include:
 
-   ![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button](./share-performance-traces-images/save-performance-trace-dialog.png)
+   <!-- Leah TODO: get new png of dialog to show annotations and resource content ![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button](./share-performance-traces-images/save-performance-trace-dialog.png) -->
 
 1. Choose a location to save the trace file on your disk:
 
