@@ -165,7 +165,7 @@ To open a saved trace file in DevTools:
 
 1. Click the **Open** button.
 
-   A special DevTools tab opens in the browser, entirely filled with DevTools, consisting only of the **Sources** and **Performance** tabs:
+   A special DevTools tab opens in the browser, entirely filled with DevTools, consisting only of the **Sources** and **Performance** tools:
 
    ![Special DevTools tab](./share-performance-traces-images/devtools-tab.png)
 
