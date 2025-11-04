@@ -49,7 +49,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. Interact with the webpage, to run the scenario that you want to investigate the performance of.
 
-   For example, in the demo page, add tasks.
+   For example, in the demo page, in the **Add a task** text box, type `task 1`, and then press **Enter**.
 
 1. Click the **Stop** (![Stop icon](./share-performance-traces-images/stop-icon.png)) button.
 
