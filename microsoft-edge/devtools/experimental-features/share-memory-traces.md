@@ -95,6 +95,6 @@ To import a trace in the **Memory** tool:
 ## See also
 <!-- all links in article -->
 
-* [Share performance traces with more data](../performance/share-performance-traces.md)
+* [Share performance traces with more data](../performance/share-performance-traces.md)<!-- link not in article -->
 * [Fix memory problems](../memory-problems/index.md)
 * [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md)
