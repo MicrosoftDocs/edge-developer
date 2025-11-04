@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 142)
-description: todo. And more.  # key words before col 158
+description: Activity Bar will only appear horizontally in Edge 144. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -14,12 +14,11 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
-## heading
+## Activity Bar will only appear horizontally in Edge 144
 
-<!-- Subtitle: todo. -->
+<!-- Subtitle: Starting with Microsoft Edge 144, the vertical Activity Bar will no longer be supported.-->
 
-See also:
-* []
+Starting with Microsoft Edge 144, the Activity Bar will only appear horizontally, at the top of the DevTools window. Displaying the Activity Bar vertically will no longer be possible.
 
 
 <!-- ====================================================================== -->
@@ -27,14 +26,7 @@ See also:
 
 Microsoft Edge 142 also includes the following updates from the Chromium project:
 
-* [Code suggestions from Gemini](https://developer.chrome.com/blog/new-in-devtools-142#code-suggestions)
-* [Enhancements for the DevTools MCP server](https://developer.chrome.com/blog/new-in-devtools-142#mcp)
-* [Quicker access to AI assistance](https://developer.chrome.com/blog/new-in-devtools-142#ai-assistance)
-* [Debug the full performance trace with Gemini](https://developer.chrome.com/blog/new-in-devtools-142#performance)
-* [Toggle drawer orientation](https://developer.chrome.com/blog/new-in-devtools-142#drawer-orientation)
-* [https://developer.chrome.com/blog/new-in-devtools-142#google-developer-program](https://developer.chrome.com/blog/new-in-devtools-142#google-developer-program)
 * [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-142#misc)
-<!-- todo: maybe remove some links -->
 
 
 <!-- ====================================================================== -->
