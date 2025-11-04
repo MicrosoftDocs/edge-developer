@@ -73,7 +73,7 @@
         # keep 10 items above
         - name: Archive
           items:
-            - name: Archived release notes for Microsoft Edge web platform  # todo: delete article?
+            - name: Archived web platform release notes
               href: ./web-platform/release-notes/archive.md
 
             - name: Microsoft Edge 133
