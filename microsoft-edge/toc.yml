@@ -70,9 +70,15 @@
           href: ./web-platform/release-notes/134.md
           displayName: Microsoft Edge 134 web platform release notes (Mar. 2025)  # page title
 
-        - name: Microsoft Edge 133
-          href: ./web-platform/release-notes/133.md
-          displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
+        # keep 10 items above
+        - name: Archive
+          items:
+            - name: Archived release notes for Microsoft Edge web platform  # todo: delete article?
+              href: ./web-platform/release-notes/archive.md
+
+            - name: Microsoft Edge 133
+              href: ./web-platform/release-notes/133.md
+              displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
