@@ -37,7 +37,7 @@ To try the enhanced traces feature:
 
 1. In DevTools, click the **Settings** (![Settings icon](./devtools-109-images/settings-gear-icon-light-theme.png)) button.
 
-1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces**<!-- todo: scrub "enhanced traces" --> checkbox:
+1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces** checkbox:
 
    ![Settings > Preferences > Persistence checkboxes](./devtools-109-images/enhanced-trace-settings.png)
 
