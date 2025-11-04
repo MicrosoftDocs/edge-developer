@@ -67,7 +67,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. Select or clear the checkboxes, to control what information to include in the trace file:
 
-   <!-- * The **Include annotations** checkbox? -->
+   * The **Include annotations** checkbox.
    * The **Include resource content** checkbox.
    * The **Include script source maps** checkbox.
 
@@ -94,7 +94,7 @@ The **Include annotations** checkbox controls whether to include annotations tha
 Annotations can be helpful when you want to leave annotations for others.
 
 See also:
-* [Annotate a recording and share it](https://learn.microsoft.com/en-us/microsoft-edge/devtools/performance/reference#annotate-a-recording-and-share-it) in _Performance features reference_.
+* [Annotate a recording and share it](./reference.md#annotate-a-recording-and-share-it) in _Performance features reference_.
 
 
 <!-- ====================================================================== -->

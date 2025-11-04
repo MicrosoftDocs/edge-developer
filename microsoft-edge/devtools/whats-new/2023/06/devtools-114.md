@@ -9,7 +9,6 @@ ms.subservice: devtools
 ms.date: 06/15/2023
 ---
 # What's New in DevTools (Microsoft Edge 114)
-<!-- todo: desc: scrub "enhanced traces" -->
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -74,7 +73,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Memory tool can load enhanced traces<!-- todo: scrub "enhanced traces" --> larger than 1 GB
+## The Memory tool can load enhanced traces larger than 1 GB
+
+<!-- keep use of old term "enhanced traces" in this entry -->
 
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 

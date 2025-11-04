@@ -20,7 +20,9 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
-## Import and export your DevTools instances with the new enhanced traces<!-- todo: scrub "enhanced traces" --> feature
+## Import and export your DevTools instances with the new enhanced traces feature
+
+<!-- keep use of old term "enhanced traces" in this entry -->
 
 <!-- Subtitle: Use enhanced traces to preserve Console messages, DOM snapshots, and the JavaScript running on the page when exporting a heap snapshot or performance trace. -->
 
