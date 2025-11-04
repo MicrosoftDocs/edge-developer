@@ -392,9 +392,9 @@ In the **Performance** tool, shows an option to save a performance trace as a `.
 
 See also:
 * [Save and share a recording](../performance/reference.md#save-and-share-a-recording) in _Performance features reference_.
-* [Export a trace from the Performance tool](../performance/share-performance-traces.md#export-a-trace-from-the-performance-tool) in _Share performance traces with more data_.
+* [Export a trace from the Performance tool](../performance/share-performance-traces.md#export-a-trace-from-the-performance-tool) in _Share a performance trace with more data_.
 <!--
-* [Export a trace from the Memory tool](./share-memory-traces.md#export-a-trace-from-the-memory-tool) in _Share memory traces with more data_.
+* [Export a trace from the Memory tool](./share-memory-traces.md#export-a-trace-from-the-memory-tool) in _Share a memory trace with more data_.
 -->
 
 Status:
@@ -628,7 +628,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
-* [Share performance traces with more data](../performance/share-performance-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 
@@ -652,7 +652,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
-* [Share performance traces with more data](../performance/share-performance-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 
@@ -670,7 +670,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 141.
 
 See also:
-* [Share performance traces with more data](../performance/share-performance-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 

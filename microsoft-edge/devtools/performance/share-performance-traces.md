@@ -1,5 +1,5 @@
 ---
-title: Share performance traces with more data
+title: Share a performance trace with more data
 description: Export and import performance traces in DevTools to resolve slow performance or excess memory usage issues in your webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/06/2025
 ---
-# Share performance traces with more data
+# Share a performance trace with more data
 
 The data that's recorded by the **Performance** tool can be exported to files on disk, which can also include annotations, resource content (HTML, CSS, and JavaScript content), and source maps.  The exported files are called _traces_.  An exported trace is a `.json` file that can be imported in DevTools at any time.
 
@@ -141,13 +141,11 @@ The **Compress with gzip** checkbox is selected by default.  This option helps c
 
 
 <!-- ====================================================================== -->
-## Open a saved trace file and use the Performance and Sources tools
+## Open a saved trace file in DevTools
 
-When a trace that includes annotations, resource content (such as script content) or source maps is imported in DevTools, a new DevTools window appears.
+When a trace file is opened (imported) in DevTools, a new, specialized DevTools tab opens in the browser, containing only the **Performance** and **Sources** tools.  The trace can include annotations, resource content (such as script content), and source maps.  This new tab isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
 
-This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
-
-This DevTools instance only contains the **Performance** and **Sources** tools.
+To open a saved trace file in DevTools:
 
 1. Open Microsoft Edge or another Chromium-based browser.
 
@@ -182,7 +180,7 @@ This DevTools instance only contains the **Performance** and **Sources** tools.
 ## See also
 <!-- all links in article -->
 
-* [Share memory traces with more data](../experimental-features/share-memory-traces.md)<!-- link not in article -->
+* [Share a memory trace with more data](../experimental-features/share-memory-traces.md)<!-- link not in article -->
 
 <!--
 * [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)

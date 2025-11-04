@@ -1,5 +1,5 @@
 ---
-title: Share memory traces with more data
+title: Share a memory trace with more data
 description: Learn to export and import memory traces with more data in DevTools to resolve low performance and high memory usage issues in your webpages
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/23/2025
 ---
-# Share memory traces with more data
+# Share a memory trace with more data
 
 The **Memory** tool records runtime data about your webpage. Exploring the recorded data makes it possible to improve your webpage's memory usage.
 

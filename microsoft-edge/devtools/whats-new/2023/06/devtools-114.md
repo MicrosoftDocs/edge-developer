@@ -90,8 +90,8 @@ Enhanced traces is an experimental feature in Microsoft Edge that allows you to 
 ![An enhanced trace](./devtools-114-images/enhanced-trace-1gb.png)
 
 See also:
-* [Share memory traces with more data](../../../experimental-features/share-memory-traces.md)
-* [Share performance traces with more data](../../../performance/share-performance-traces.md)
+* [Share a memory trace with more data](../../../experimental-features/share-memory-traces.md)
+* [Share a performance trace with more data](../../../performance/share-performance-traces.md)
 * [GitHub Issue #122: \[Feedback\] Enhanced Traces experiment](https://github.com/MicrosoftEdge/DevTools/issues/122)
 
 
