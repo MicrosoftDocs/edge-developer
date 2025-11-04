@@ -19,23 +19,19 @@ When you export a trace from the Performance tool, you can choose whether to inc
 
 You can also control whether the trace file is compressed.
 
-![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button](./share-performance-traces-images/save-performance-trace-dialog.png)<!-- 2nd use of png -->
-
 The **Performance** tool records runtime data about your webpage.  Exploring the recorded data makes it possible to improve your webpage's runtime performance.
 
 Exporting performance traces is useful when you want to share these files with other people, to get help with investigating issues.
 
 Traces can be saved to include annotations, resource content (such as script content), and source maps from the webpage.  This additional information makes it easier to analyze an imported trace file, by recreating the environment in which the trace was recorded, and by providing original source files.
 
-When a trace that includes annotations, resource content (such as script content) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance only contains the **Performance** and **Sources** tools.
-
-<!-- todo: png showing add'l 2-tool DevTools window -->
-
 Exported trace files are compatible with other browsers that are based on the Chromium engine.
+
+When a trace that includes annotations, resource content (such as script content) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance only contains the **Performance** and **Sources** tools.
 
 
 <!-- ====================================================================== -->
-## Export a trace from the Performance tool
+## Export a performance trace from the Performance tool
 
 To record performance for aspects of a webpage, and then export a performance recording:
 
@@ -69,7 +65,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
    * The **Include annotations** checkbox.
    * The **Include resource content** checkbox.
-   * The **Include script source maps** checkbox.
+   * The **Include script source maps** checkbox.  (Must first select the **Include resource content** checkbox.)
 
    Optionally, clear the **Compress with gzip** checkbox.
 
@@ -77,19 +73,25 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. Click the **Save** button.
 
-   The **Save As** dialog opens.
+   The small dialog in the **Performance** tool closes, and the **Save As** dialog opens.
 
 1. Navigate to a folder in which to save the trace file on your disk.
 
-   For example, on Windows, in the `/Downloads/` directory, you can click the **New folder** button, and then create a `/traces/` directory, in which to save the performance trace file:
+   For example, on Windows, in the `/Downloads/` directory, click the **New folder** button, and then create a `/traces/` directory, in which to save the performance trace file:
 
-   ![Traces folder](./share-performance-traces-images/saving-perf-trace.png)
+   ![Traces folder](./share-performance-traces-images/saving-perf-trace.png)<!-- todo: issue: png shows .. in filename; extension shown is .devtools not .gz -->
+
+1. Accept or modify the file name, such as `Trace-20251103T154500.json.gz`.
+
+1. Click the **Save** button.
+
+   The performance trace file is saved, such as `C:\Users\localAccount\Downloads\traces\Trace-20251103T154500.json.gz`.
 
 
 <!-- ====================================================================== -->
 ## Include annotations
 
-The **Include annotations** checkbox controls whether to include annotations that were manually added to a performance profile.
+In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were manually added to a performance profile.
 
 Annotations can be helpful when you want to leave annotations for others.
 
@@ -100,7 +102,7 @@ See also:
 <!-- ====================================================================== -->
 ## Include resource content
 
-Selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts, which can then be viewed in the **Sources** tool.
+In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts, which can then be viewed in the **Sources** tool.
 
 The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code.
 
@@ -115,17 +117,13 @@ See also:
 <!-- ====================================================================== -->
 ## Include script source maps
 
-Selecting the **Include script source maps** checkbox includes minified production content files and the mappings back to the original source code files.  Source maps are used by DevTools to load your original files and replace minified code with original code.
+In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include script source maps** checkbox includes minified production content files and the mappings back to the original source code files.  Source maps are used by DevTools to load your original files and replace minified code with original code.
 
-The **Performance** tool will display the original function names, and the **Sources** tool will show all the original files<!-- todo: original file names -->.
+When the resulting trace file is subsequently opened, the **Performance** tool will display the original function names, and the **Sources** tool will show the original file names.
 
-Some Performance insights require source maps for analysis.
+Some Performance insights require source maps for analysis.  See [Get actionable insights](./reference.md#get-actionable-insights) in _Performance features reference_.
 
-Resource content (such as script content) must be included too, for this checkbox to work.
-<!-- todo: which one is meant?
-The profile data must include resource content (such as script content), for this checkbox to work.
-The **Include resource content** checkbox must also be selected, for this checkbox to work.
--->
+To make this checkbox available instead of dimmed, you must select the **Include resource content** checkbox, which includes script content in the trace file.
 
 <!-- todo:
 See also:
@@ -136,7 +134,48 @@ See also:
 <!-- ====================================================================== -->
 ## Compress with gzip
 
-The **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing faster in DevTools. 
+The **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools. 
+
+* If this checkbox is selected, the default file name extension is `.gz`.
+* If this checkbox is cleared, the default file name extension is `.devtools`.
+
+
+<!-- ====================================================================== -->
+## Open a saved trace file and use the Performance and Sources tools
+
+When a trace that includes annotations, resource content (such as script content) or source maps is imported in DevTools, a new DevTools window appears.
+
+This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
+
+This DevTools instance only contains the **Performance** and **Sources** tools.
+
+1. Open Microsoft Edge or another Chromium-based browser.
+
+1. Right-click the webpage or empty tab, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Performance** (![Performance icon](./share-performance-traces-images/performance-icon.png)) tool.
+
+1. Click the **Load trace** (![Load trace icon](./share-performance-traces-images/load-trace-icon.png)) button.
+
+   The **Open** dialog opens.
+
+1. Navigate to a shared trace file, such as `C:\Users\localAccount\Downloads\traces\Trace-20251103T154500.json.gz`.
+
+1. Select the file, such as the zipped file `Trace-20251103T154500.json.gz`.
+
+1. Click the **Open** button.
+
+   A special DevTools tab opens in the browser, entirely filled with DevTools, consisting only of the **Sources** and **Performance** tabs:
+
+   ![Special DevTools tab](./share-performance-traces-images/devtools-tab.png)
+
+   This is a special DevTools-dedicated tab of the browser, rather than the undocked DevTools window.
+
+   The Address bar displays a special URL, such as:
+   * `devtools://devtools/bundled/trace_app.html`
+   * `devtools://devtools/bundled/rehydrated_devtools_app.html`
 
 
 <!-- ====================================================================== -->
