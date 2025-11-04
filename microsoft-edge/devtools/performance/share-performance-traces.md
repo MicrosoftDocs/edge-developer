@@ -31,7 +31,7 @@ When a trace that includes annotations, resource content (such as script content
 
 
 <!-- ====================================================================== -->
-## Export a performance trace from the Performance tool
+## Export a trace from the Performance tool
 
 To record performance for aspects of a webpage, and then export a performance recording:
 
