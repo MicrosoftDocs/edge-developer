@@ -27,7 +27,7 @@ Traces can be saved to include annotations, resource content (such as scripts), 
 
 Exported trace files are compatible with other browsers that are based on the Chromium engine.
 
-When a trace that includes annotations, resource content (such as scripts) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance only contains the **Performance** and **Sources** tools.
+When a trace that includes annotations, resource content (such as scripts) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance contains only the **Performance** and **Sources** tools.
 
 
 <!-- ====================================================================== -->
@@ -134,7 +134,7 @@ See also:
 <!-- ====================================================================== -->
 ## Compress with gzip
 
-The **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools. 
+In the **Save performance trace** dialog within the **Performance** tool, the **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools. 
 
 * If this checkbox is selected, the default file name extension is `.gz`.
 * If this checkbox is cleared, the default file name extension is `.devtools`.
