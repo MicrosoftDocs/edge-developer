@@ -23,11 +23,11 @@ The **Performance** tool records runtime data about your webpage.  Exploring the
 
 Exporting performance traces is useful when you want to share these files with other people, to get help with investigating issues.
 
-Traces can be saved to include annotations, resource content (such as script content), and source maps from the webpage.  This additional information makes it easier to analyze an imported trace file, by recreating the environment in which the trace was recorded, and by providing original source files.
+Traces can be saved to include annotations, resource content (such as scripts), and source maps from the webpage.  This additional information makes it easier to analyze an imported trace file, by recreating the environment in which the trace was recorded, and by providing original source files.
 
 Exported trace files are compatible with other browsers that are based on the Chromium engine.
 
-When a trace that includes annotations, resource content (such as script content) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance only contains the **Performance** and **Sources** tools.
+When a trace that includes annotations, resource content (such as scripts) or source maps is imported in DevTools, a new DevTools window appears.  This new window isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.  This DevTools instance only contains the **Performance** and **Sources** tools.
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ In the **Save performance trace** dialog within the **Performance** tool, select
 
 The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code.
 
-Some Performance insights require resource content (such as script contents) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.  However, the profiling data from extension scripts is still saved in the trace, because extension scripts can impact performance.
+Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.  However, the profiling data from extension scripts is still saved in the trace, because extension scripts can impact performance.
 
 <!-- todo:
 See also:
@@ -141,9 +141,9 @@ The **Compress with gzip** checkbox is selected by default.  This option helps c
 
 
 <!-- ====================================================================== -->
-## Open a saved trace file in DevTools
+## Open a performance trace file in DevTools
 
-When a trace file is opened (imported) in DevTools, a new, specialized DevTools tab opens in the browser, containing only the **Performance** and **Sources** tools.  The trace can include annotations, resource content (such as script content), and source maps.  This new tab isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
+When a trace file is opened (imported) in DevTools, a new, specialized DevTools tab opens in the browser, containing only the **Performance** and **Sources** tools.  The trace can include annotations, resource content (such as scripts), and source maps.  This new tab isn't connected to the webpage that's running in your browser, and instead re-creates part of the environment in which the trace was originally recorded.
 
 To open a saved trace file in DevTools:
 
