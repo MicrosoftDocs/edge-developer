@@ -91,7 +91,10 @@ To record performance for aspects of a webpage, and then export a performance re
 <!-- ====================================================================== -->
 ## Include annotations
 
-In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were manually added to a performance profile.
+<!-- tooltip on (i) info button:
+todo: __ -->
+
+In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were added to a performance profile.
 
 Annotations can be helpful when you want to leave annotations for others.
 
@@ -102,33 +105,44 @@ See also:
 <!-- ====================================================================== -->
 ## Include resource content
 
+<!-- tooltip on (i) info button:
+Includes the full content of all loaded scripts (except extensions).
+
+todo: add "HTML" & "CSS" to that tooltip
+-->
+
 In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts, which can then be viewed in the **Sources** tool.
+
+All loaded scripts (except extensions) are saved in the trace file.
 
 The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code.
 
 Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.  However, the profiling data from extension scripts is still saved in the trace, because extension scripts can impact performance.
 
-<!-- todo:
 See also:
-* []()
--->
+* [JavaScript debugging features](../javascript/reference.md)
+* [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
+* [Using the Snippets tab to run JavaScript code snippets on any webpage](../sources/index.md#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage) in _Sources tool overview_.
+* [Using the Content scripts tab for Microsoft Edge extensions](../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->
 ## Include script source maps
 
+<!-- tooltip on (i) info button:
+Includes available source maps, which may expose authored code.
+-->
+
 In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include script source maps** checkbox includes minified production content files and the mappings back to the original source code files.  Source maps are used by DevTools to load your original files and replace minified code with original code.
 
-When the resulting trace file is subsequently opened, the **Performance** tool will display the original function names, and the **Sources** tool will show the original file names.
+When the resulting trace file is subsequently opened, the **Performance** tool will display the original function names, and the **Sources** tool will show the original file names.  Caution: This may expose source code to the trace file recipient.
 
 Some Performance insights require source maps for analysis.  See [Get actionable insights](./reference.md#get-actionable-insights) in _Performance features reference_.
 
 To make this checkbox available instead of dimmed, you must select the **Include resource content** checkbox, which includes script content in the trace file.
 
-<!-- todo:
 See also:
-* []()
--->
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
 
 
 <!-- ====================================================================== -->
@@ -175,12 +189,23 @@ To open a saved trace file in DevTools:
    * `devtools://devtools/bundled/trace_app.html`
    * `devtools://devtools/bundled/rehydrated_devtools_app.html`
 
+See also:
+* [Performance tool: Analyze your website's performance](./overview.md)
+* [Sources tool overview](../sources/index.md)
+
 
 <!-- ====================================================================== -->
 ## See also
-<!-- all links in article -->
+<!-- todo: all links in article -->
 
 * [Share a memory trace with more data](../experimental-features/share-memory-traces.md)<!-- link not in article -->
+* [Performance tool: Analyze your website's performance](./overview.md)
+* [Sources tool overview](../sources/index.md)
+   * [Using the Content scripts tab for Microsoft Edge extensions](../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
+   * [Using the Snippets tab to run JavaScript code snippets on any webpage](../sources/index.md#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage) in _Sources tool overview_.
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
+* [JavaScript debugging features](../javascript/reference.md)
+* [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
 
 <!--
 * [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)
