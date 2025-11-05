@@ -70,9 +70,12 @@
           href: ./web-platform/release-notes/134.md
           displayName: Microsoft Edge 134 web platform release notes (Mar. 2025)  # page title
 
-        - name: Microsoft Edge 133
-          href: ./web-platform/release-notes/133.md
-          displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
+        # keep 10 items above
+        - name: Archive
+          items:
+            - name: Microsoft Edge 133
+              href: ./web-platform/release-notes/133.md
+              displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
@@ -156,9 +159,6 @@
             # keep 10 items above
             - name: Archive
               items:
-                - name: What's New in DevTools archive
-                  href: ./devtools/whats-new/whats-new-archive.md
-
                 - name: Microsoft Edge 131
                   href: ./devtools/whats-new/2024/11/devtools-131.md
                   displayName: What's New in DevTools (Microsoft Edge 131)  # page title
