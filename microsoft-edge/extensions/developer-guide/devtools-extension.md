@@ -332,11 +332,11 @@ In this step, you will use extension APIs to display memory information in your 
 
 1. Update the `devtools.js` file with the following code.
 
-chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", (panel) => {
-  console.log('devtools: panel created');
-  panel.onShown.addListener(() => console.log('devtools: panel shown'));
-  panel.onHidden.addListener(() => console.log('devtools: panel hidden'));
-});
+    chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", (panel) => {
+        console.log('devtools: panel created');
+        panel.onShown.addListener(() => console.log('devtools: panel shown'));
+        panel.onHidden.addListener(() => console.log('devtools: panel hidden'));
+    });
     ```
 
 The above code snippet does the following:
