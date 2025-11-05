@@ -2615,7 +2615,7 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
-* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/index.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Release Notes for the WebView2 SDK_.
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/archive.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Archived Release Notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
