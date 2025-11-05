@@ -289,6 +289,7 @@ In this step, you will use extension APIs to display memory information in your 
     <script src="panel.js"></script>
     ```
     **panel.js**
+    ```javascript
       let memInterval = null;
       
       function startMemoryPolling() {
