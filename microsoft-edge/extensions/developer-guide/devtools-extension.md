@@ -288,7 +288,11 @@ In this step, you will use extension APIs to display memory information in your 
     </div>
     <script src="panel.js"></script>
     ```
+
+1. Create the following file:
+
     **panel.js**
+
     ```javascript
         let memInterval = null;
         
@@ -328,11 +332,13 @@ In this step, you will use extension APIs to display memory information in your 
         window.addEventListener('DOMContentLoaded', () => {
             if (document.visibilityState === 'visible') startMemoryPolling();
         });
+    ```
 
     **devtools.js:**
 
 1. Update the `devtools.js` file with the following code.
 
+    ```javascript 
     chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", (panel) => {
         console.log('devtools: panel created');
         panel.onShown.addListener(() => console.log('devtools: panel shown'));
@@ -344,9 +350,10 @@ The above code snippet does the following:
 
 1. Creates a new panel `Sample Panel` in DevTools.
    
-2. When the panel is displayed the panel.js sets a timer to run code every second after the panel is shown.
+1. When the panel is displayed the panel.js sets a timer to run code every second after the panel is shown.
 
-3. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
+1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
+
 
 <!-- ---------------------------------------------------------------------- -->
 #### Reload and test the DevTools extension
