@@ -286,47 +286,66 @@ In this step, you will use extension APIs to display memory information in your 
     <div>
       Total Memory Capacity: <span id="totalMemoryCapacity"></span>
     </div>
+    <script src="panel.js"></script>
     ```
-
+    **panel.js**
+      let memInterval = null;
+      
+      function startMemoryPolling() {
+        if (memInterval) return;
+        const availableEl = document.getElementById('availableMemoryCapacity');
+        const totalEl = document.getElementById('totalMemoryCapacity');
+      
+        console.log('panel: startMemoryPolling');
+        memInterval = setInterval(() => {
+          if (chrome.system?.memory?.getInfo) {
+            chrome.system.memory.getInfo((data) => {
+              availableEl && (availableEl.textContent = String(data?.availableCapacity ?? 'n/a'));
+              totalEl && (totalEl.textContent = String(data?.capacity ?? 'n/a'));
+            });
+          } else {
+            console.warn('panel: chrome.system.memory not available');
+            availableEl && (availableEl.textContent = 'API not available in this browser');
+            totalEl && (totalEl.textContent = 'API not available in this browser');
+          }
+        }, 1000);
+      }
+      
+      function stopMemoryPolling() {
+        if (memInterval) {
+          clearInterval(memInterval);
+          memInterval = null;
+          console.log('panel: stopMemoryPolling');
+        }
+      }
+      
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') startMemoryPolling();
+        else stopMemoryPolling();
+      });
+      
+      window.addEventListener('DOMContentLoaded', () => {
+        if (document.visibilityState === 'visible') startMemoryPolling();
+      });
 
     **devtools.js:**
 
 1. Update the `devtools.js` file with the following code.
 
-    ```javascript
-    let availableMemoryCapacity;
-    let totalMemoryCapacity;
-
-    chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", panel => {
-        // code invoked on panel creation
-        panel.onShown.addListener((extPanelWindow) => {
-            availableMemoryCapacity = extPanelWindow.document.querySelector('#availableMemoryCapacity');
-            totalMemoryCapacity = extPanelWindow.document.querySelector('#totalMemoryCapacity');
-        });
-    });
-
-    setInterval(() => {
-        chrome.system.memory.getInfo((data) => {
-            if (availableMemoryCapacity) {
-                availableMemoryCapacity.innerHTML = data.availableCapacity;
-            }
-            if (totalMemoryCapacity) {
-                totalMemoryCapacity.innerHTML = data.capacity;
-            }
-        });
-    }, 1000);
+chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", (panel) => {
+  console.log('devtools: panel created');
+  panel.onShown.addListener(() => console.log('devtools: panel shown'));
+  panel.onHidden.addListener(() => console.log('devtools: panel hidden'));
+});
     ```
 
 The above code snippet does the following:
 
 1. Creates a new panel `Sample Panel` in DevTools.
+   
+2. When the panel is displayed the panel.js sets a timer to run code every second after the panel is shown.
 
-1. When the panel is displayed (`panel.onShown` listener), the `availableMemoryCapacity` and `totalMemoryCapacity` elements are retrieved from the DOM.
-
-1. Sets a timer to run code every second after the panel is shown.
-
-1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
-
+3. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
 
 <!-- ---------------------------------------------------------------------- -->
 #### Reload and test the DevTools extension
