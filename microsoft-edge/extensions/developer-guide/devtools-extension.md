@@ -290,44 +290,44 @@ In this step, you will use extension APIs to display memory information in your 
     ```
     **panel.js**
     ```javascript
-      let memInterval = null;
-      
-      function startMemoryPolling() {
-        if (memInterval) return;
-        const availableEl = document.getElementById('availableMemoryCapacity');
-        const totalEl = document.getElementById('totalMemoryCapacity');
-      
-        console.log('panel: startMemoryPolling');
-        memInterval = setInterval(() => {
-          if (chrome.system?.memory?.getInfo) {
-            chrome.system.memory.getInfo((data) => {
-              availableEl && (availableEl.textContent = String(data?.availableCapacity ?? 'n/a'));
-              totalEl && (totalEl.textContent = String(data?.capacity ?? 'n/a'));
-            });
-          } else {
-            console.warn('panel: chrome.system.memory not available');
-            availableEl && (availableEl.textContent = 'API not available in this browser');
-            totalEl && (totalEl.textContent = 'API not available in this browser');
-          }
-        }, 1000);
-      }
-      
-      function stopMemoryPolling() {
-        if (memInterval) {
-          clearInterval(memInterval);
-          memInterval = null;
-          console.log('panel: stopMemoryPolling');
+        let memInterval = null;
+        
+        function startMemoryPolling() {
+            if (memInterval) return;
+            const availableEl = document.getElementById('availableMemoryCapacity');
+            const totalEl = document.getElementById('totalMemoryCapacity');
+        
+            console.log('panel: startMemoryPolling');
+            memInterval = setInterval(() => {
+                if (chrome.system?.memory?.getInfo) {
+                    chrome.system.memory.getInfo((data) => {
+                        availableEl && (availableEl.textContent = String(data?.availableCapacity ?? 'n/a'));
+                        totalEl && (totalEl.textContent = String(data?.capacity ?? 'n/a'));
+                    });
+                } else {
+                    console.warn('panel: chrome.system.memory not available');
+                    availableEl && (availableEl.textContent = 'API not available in this browser');
+                    totalEl && (totalEl.textContent = 'API not available in this browser');
+                }
+            }, 1000);
         }
-      }
-      
-      document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') startMemoryPolling();
-        else stopMemoryPolling();
-      });
-      
-      window.addEventListener('DOMContentLoaded', () => {
-        if (document.visibilityState === 'visible') startMemoryPolling();
-      });
+        
+        function stopMemoryPolling() {
+            if (memInterval) {
+                clearInterval(memInterval);
+                memInterval = null;
+                console.log('panel: stopMemoryPolling');
+            }
+        }
+        
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') startMemoryPolling();
+            else stopMemoryPolling();
+        });
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            if (document.visibilityState === 'visible') startMemoryPolling();
+        });
 
     **devtools.js:**
 
