@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 143
+          href: ./web-platform/release-notes/143.md
+          displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
+
         - name: Microsoft Edge 142
           href: ./web-platform/release-notes/142.md
           displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
@@ -662,10 +666,6 @@
               # - name: View Application Cache data  # deprecated
               #   href: ./devtools/storage/application.md  # deprecated feature  # keep comment for inventory while article remains in other repo's TOC
               #   displayName: Application tool
-
-                - name: View Web SQL data
-                  href: ./devtools/storage/websql.md
-                  displayName: Application tool
 
                 - name: View Cache data
                   href: ./devtools/storage/cache.md
