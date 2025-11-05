@@ -1,6 +1,6 @@
 ---
 title: What's New in DevTools (Microsoft Edge 142)
-description: Activity Bar will only appear horizontally in Edge 144. And more.  # key words before col 158
+description: Activity Bar horizontal in Edge 144. Application tool storage inspection for all worker types.  :target-current in Elements tool Styles tab.  Network tool filters requests on Is ad-related boolean. # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -18,7 +18,11 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: Starting with Microsoft Edge 144, the vertical Activity Bar will no longer be supported.-->
 
-Starting with Microsoft Edge 144, the Activity Bar will only appear horizontally, at the top of the DevTools window. Displaying the Activity Bar vertically will no longer be possible.
+Upcoming change:
+
+Starting with Microsoft Edge 144, the **Activity Bar** will always be displayed horizontally, at the top of the DevTools window.  Displaying the **Activity Bar** vertically will no longer be supported.
+
+![Horizontal Activity Bar](./devtools-142-images/activity-bar.png)
 
 
 <!-- ====================================================================== -->
