@@ -283,7 +283,7 @@ Install the sample Progressive Web App (PWA) from your localhost web server as a
 
    An **Install app** dialog opens:
 
-   ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)
+   ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
 
 1. Click the **Install** button.
 
@@ -624,7 +624,7 @@ Install the modified app from `localhost` in the browser onto the device, as fol
 
    An **Install TC app** dialog opens within the browser:
 
-   ![The "Install TC app" dialog in the browser](./temperature-converter-images/install-tc-app.png)
+   ![The "Install TC app" dialog in the browser](./temperature-converter-images/install-tc-app.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
 
 1. Click the **Install** button.
 
@@ -682,11 +682,9 @@ You can skip some of the above steps each time you modify the app, depending on 
 
 * If you modify the manifest file, you must uninstall and re-install the app.
 
-After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).
+After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).  If you click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button, the **Open Temperature converter** dialog opens:
 
-1. In Microsoft Edge, in the Address bar, click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button.
-
-   ![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)
+![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
 
 
 <!-- ====================================================================== -->
