@@ -12,7 +12,7 @@ ms.date: 10/09/2025
 
 A Progressive Web App (PWA) is an app that you build by using web technologies such as HTML, CSS, and JavaScript, and that can also be installed and run on various device operating systems, from a single codebase.
 
-By using this article along with the Temperature converter sample, you'll be able to:
+By using this article along with the Temperature converter sample, which is made for learning how to build a PWA, you'll be able to:
 
 * Customize the Temperature converter PWA by making minor modifications of the sample's code.
 
@@ -30,9 +30,9 @@ The following diagram shows the high-level architecture of a Progressive Web App
 
 ![Architecture diagram of a PWA](./index-images/pwa-architecture.png)
 
-On the left, the device has some files of a PWA.
+On the left, the device that runs the front-end of the PWA has the files for the front-end code of a PWA.
 
-On the right, the web server has back-end files (or database content) of a PWA.
+On the right, the web server runs the back-end code (or database content) of a PWA.
 
 The device contains the front-end code, including HTML, CSS, JavaScript, the service worker, and the manifest.  This is true regardless of whether the Progressive Web App (PWA) is used as a web app in the browser, or as a local app that's installed on the device.
 
@@ -42,11 +42,11 @@ Like a regular web app, a Progressive Web App is written using the programming l
 <!-- ====================================================================== -->
 ## Deploying a PWA on a production web server
 
-To make a Progressive Web App (PWA) available to users, you deploy the Progressive Web App (PWA) on a web server that's accessible via HTTPS (unlike localhost).  The web server contains front-end code and back-end code for the web app.
+To make a Progressive Web App (PWA) available to users, you deploy the Progressive Web App (PWA) on a web server that's accessible via HTTPS (unlike a local development environment).  The web server sends the front-end code to users, and runs the back-end code for the web app.
 
 Some parts of the Progressive Web Apps (PWAs) platform, such as service workers, require using HTTPS.
 
-If the Progressive Web App (PWA) has no backend code, the Progressive Web App (PWA) can be served out from github.io, such as [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) at `https://microsoftedge.github.io/Demos/temperature-converter/`.
+If the Progressive Web App (PWA) has no backend code, the Progressive Web App (PWA) can be served out from a static web server.  For example, the [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) at `https://microsoftedge.github.io/Demos/temperature-converter/` uses the github.io static server from GitHub.
 
 The article [Temperature converter sample](../samples/temperature-converter.md) has you run and test the sample Progressive Web App on your local server.  When your own Progressive Web App has been tested and is ready to distribute, you distribute the tested PWA to your users via a web server (a web hosting provider).
 
@@ -66,9 +66,9 @@ You can also host your website on GitHub Pages (`pages.github.com`), which suppo
 <!-- ------------------------------ -->
 #### About localhost (http) vs. production server (https)
 
-When using localhost web server, the URL begins with `http`, not `https`.  Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS, not HTTP.
+When using a local development web server at the `localhost` address, the URL usually begins with `http`, not `https`.  Key parts of the Progressive Web Apps platform, such as service workers, require using HTTPS, not HTTP.
 
-For development and debugging purposes, Microsoft Edge (or a window hosting a PWA local app) permits a `localhost` web server to use the Progressive Web App (PWA) APIs without HTTPS.
+For development and debugging purposes, Microsoft Edge (or a window hosting a PWA local app) permits the `localhost` address to run the Progressive Web App (PWA) APIs without HTTPS.
 
 
 <!-- ====================================================================== -->
@@ -87,6 +87,8 @@ A Progressive Web App (PWA) typically includes the following front-end code file
 * A JavaScript file to add user interactions to your user interface.
 
 * A JSON manifest file to describe your app to the host operating system.
+
+* A JavaScript service worker file to cache the app's front-end code files and run background tasks.
 
 The front-end code for a Progressive Web App (PWA) runs by using the device's web browser.  The browser's own UI is not visible when the app is run in a standalone window, which is a streamlined browser window with minimal browser UI controls.
 

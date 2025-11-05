@@ -12,7 +12,7 @@ ms.date: 10/09/2025
 
 The Temperature converter sample is a Progressive Web App (PWA) that demonstrates the basics of how to build a PWA.  You can modify this sample to start creating your own PWA.
 
-This article covers how to obtain the sample, install it on Windows, and run the sample.  This sample works with multiple operating systems, including Windows.  This article provides steps for Windows; other platforms have similar steps.
+This article covers how to obtain the sample, install it on Windows, run the sample, and modify it.  This sample works with multiple operating systems, including Windows.  This article provides steps for Windows; other platforms have similar steps.
 
 See also:
 * [Get started developing a PWA](../how-to/index.md).
@@ -51,8 +51,6 @@ In a later step, after the sample Progressive Web App (PWA) is installed as a lo
 The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same app UI as within the full web browser.
 
 The installed app's window is a browser-based window, without most of the browser UI.  The installed app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
-
-The installed app's window supports Microsoft Edge DevTools (in an undocked window).  The app continues to work when you use DevTools to turn off the internet connection.
 
 The above instance of the sample app is hosted at `github.io`.  In the sections below, you use a local server instead, to show how to locally test a Progressive Web App (PWA) while developing it.  You'll access the web app from your local server (`localhost`) instead, and install it to your device from there.
 
@@ -153,12 +151,6 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
    `C:\Users\localAccount\GitHub\`
 
-1. See whether the `\Demos\` repo is listed, such as `C:\Users\localAccount\GitHub\Demos`.
-
-   If the Demos repo hasn't been cloned yet, continue with the following steps.  Otherwise, skip to the next section, below.
-
-   **Fork the repo:**
-
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. In the upper right, click the down-arrow on the **Fork** button, and then select **Create a new fork**.
@@ -207,16 +199,6 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
    For more information, see [Cloning your forked repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) in _Fork a repository_ in GitHub Docs.
 
-   <!-- todo: don't just use File Explorer here; open the folder & dir & file in VS Code -->
-
-1. In File Explorer, go to the new, `/Demos/` repo directory, such as:
-
-   `C:\Users\localAccount\GitHub\Demos`
-
-1. In File Explorer, open the `/Demos/temperature-converter/` directory, such as `C:\Users\localAccount\GitHub\Demos\temperature-converter\`.
-
-   Files are listed, such as `converter.js`.
-
 See also:
 * [Fork a repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
    * [Forking a repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) in _Fork a repository_.
@@ -235,22 +217,23 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
 
 1. Open Visual Studio Code.
 
+1. In the **File** menu, select **Open Folder**.
+
+   The **Open Folder** dialog opens.
+
+1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `\Demos\` folder, and then click the **Select Folder** button.
+
 1. In the **View** menu, select **Terminal**.
 
-1. Change to the `\Demos\temperature-converter\` directory, such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`, by entering commands such as:
+   The **Terminal** pane opens, with the prompt at `Demos\`, such as `C:\users\localAccount\GitHub\Demos`.
 
-   ```console
-   cd Demos
-   cd temperature-converter
-   ```
-
-1. In VS Code's terminal, enter the following command:
+1. Enter the following command:
 
    ```console
    npx http-server
    ```
 
-   The above command starts the local development web server by using the `http-server` NPM package.
+   The local development web server starts, using the `http-server` NPM package.
 
 1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command, and then issue the npx command again:
 
@@ -282,7 +265,11 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
-   The temperature convertor app is displayed in the browser at `localhost:8080`:
+   An **Index of /** page lists the demo directories.
+
+1. Click the **temperature-converter/** folder link.
+
+   The temperature convertor app is displayed in the browser:
 
    ![The temperature convertor app in the browser at localhost](./temperature-converter-images/localhost.png)
 
@@ -484,23 +471,25 @@ Continue with the steps below.
 <!-- ====================================================================== -->
 ## Step 12: Modify the sample
 
+<!-- todo: open the /tempcon/ dir or /demos/ dir, to open the git repo and display the branch in lower left?  Step 6 opened /td/ dir and no repo, with no branch displayed -->
+
 You can modify the sample as a starting point for your own Progressive Web App (PWA).  You'll change the name of the app from "Temperature converter" to "TC", in a working branch of the repo, and then install the modified app locally.
 
 Create a working branch and switch to it, as follows:
 
-1. Open Visual Studio.
+1. Open Visual Studio Code.
 
    **Open the folder in VS Code**
 
-1. Click the **File** menu, and then click **Open Folder**.
+1. In the **File** menu, select **Open Folder**.
 
    The **Open Folder** dialog opens.
 
-1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the **Demos** folder, and then click the **Select Folder** button.
+1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `Demos` folder, and then click the **Select Folder** button.
 
 1. In the **Explorer** pane, open `\Demos\temperature-converter\index.html`.
 
-   ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
+   ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)<!-- todo: redo showing opening the sample folder not the Demos folder -->
 
    In the lower left corner of Visual Studio Code, the **main** branch is indicated.
 
@@ -510,36 +499,23 @@ Create a working branch and switch to it, as follows:
 
 1. Press **Ctrl+C**.
 
-   The localhost web server (http-server) stops.  The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\temperature-converter>`
+   The localhost web server (http-server) stops, if it was running.  The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\temperature-converter>`
 
-1. If you aren't in that directory already, change to the `/Demos/temperature-converter/` directory, by entering commands such as the following:
-
-   ```console
-   cd Demos
-   cd temperature-converter
-   ```
-
-1. Enter the following command, to create a working branch of the repo:
+1. Enter the following command, to create a working branch of the repo and switch to it:
 
    ```console
-   git branch test1
+   git checkout -b test1
    ```
 
-   If the branch already exists, the command outputs: "fatal: a branch named 'test1' already exists"
+   If the branch already exists, the command outputs: "fatal: a branch named 'test1' already exists".
 
-1. Enter the following command, to switch to the working branch:
+1. If the branch already exists, enter the following command, to switch to the branch:
 
    ```console
    git checkout test1
    ```
 
    Example output: `Switched to a new branch 'test1'`
-
-   Or, instead of the above two commands, enter the combined command:
-
-   ```console
-   git checkout -b test1
-   ```
 
 1. Close the **Terminal** pane.
 
@@ -614,15 +590,6 @@ View the modified app in the browser, as follows:
 
    **Start the server**
 
-1. In VS Code's terminal, change to the `\Demos\temperature-converter\` directory, such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`, by entering commands such as:
-
-   ```console
-   cd Demos
-   cd temperature-converter
-   ```
-
-   You're now in a directory such as `C:\users\localAccount\GitHub\Demos\temperature-converter\`.
-
 1. Enter the following command:
 
    ```console
@@ -634,6 +601,10 @@ View the modified app in the browser, as follows:
    **View the web app**
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
+
+   An **Index of /** page lists the demo directories.
+
+1. Click the **temperature-converter/** folder link.
 
 1. Refresh the webpage.
 
@@ -699,59 +670,17 @@ Uninstall the modified local app as follows:
 
    The server stops, with output message: `http-server stopped.`
 
-
-<!-- ====================================================================== -->
-## Step 17: Switch back to the "main" branch of the Demos repo
-
-1. In the lower left corner of Visual Studio Code, look at the branch name.
-
-   The **test1** branch is indicated.
-
-1. In Visual Studio Code, in the **View** menu, select **Terminal**.
-
-1. Enter the following command:
-
-   ```console
-   git checkout main
-   ```
-
-   Example output: `Switched to branch 'main'`
-
-   The lower left corner of Visual Studio Code now shows the branch name **main** instead of **test1**.
-
-1. Enter the following command:
-
-   ```console
-   npx http-server
-   ```
-
-   The local development web server starts.
-
-   **View the web app**
-
-1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
-
-1. Refresh the webpage.
-
-   The tab text might not change to **Temperature converter**.
-
-1. Hard-refresh the webpage (**Ctrl+F5** or **Shift+F5**).
-
-   The tab text changes from **TC** back to **Temperature converter**:
-
-   ![The app renamed to TC in the browser](./temperature-converter-images/tc-app-in-browser.png)
-
 This is the end of the steps for the sample.
 
 
 <!-- ====================================================================== -->
 ## Speeding up the modify/re-install cycle
 
-You might be able to skip some of the above steps each time you modify the app, depending on which files you modify:
+You can skip some of the above steps each time you modify the app, depending on which files you modify:
 
-* If you modify an HTML file, CSS file, or the main JavaScript file, you might be able to skip some of the above steps such as uninstalling the app.
+* If you modify an HTML file, CSS file, or the main JavaScript file, you can skip uninstalling and re-installing the app.  Empyting the cache and refreshing the page is enough to reload HTML, CSS, and JavaScript changes.
 
-* If you modify the manifest file or the service worker file, you might not be able to skip some of the above steps.
+* If you modify the manifest file, you must uninstall and re-install the app.
 
 After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).
 
