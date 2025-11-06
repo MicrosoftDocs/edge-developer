@@ -221,11 +221,11 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
 
    The **Open Folder** dialog opens.
 
-1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `\Demos\` folder, and then click the **Select Folder** button.
+1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `\temperature-converter\` folder in it, and then click the **Select Folder** button.
 
 1. In the **View** menu, select **Terminal**.
 
-   The **Terminal** pane opens, with the prompt at `Demos\`, such as `C:\users\localAccount\GitHub\Demos`.
+   The **Terminal** pane opens, with the prompt at `Demos\temperature-converter\`, such as `C:\users\localAccount\GitHub\Demos\temperature-converter`.
 
 1. Enter the following command:
 
@@ -264,10 +264,6 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
    ```
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
-
-   An **Index of /** page lists the demo directories.
-
-1. Click the **temperature-converter/** folder link.
 
    The temperature convertor app is displayed in the browser:
 
@@ -481,9 +477,9 @@ Create a working branch and switch to it, as follows:
 
    The **Open Folder** dialog opens.
 
-1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `Demos` folder, and then click the **Select Folder** button.
+1. Navigate to the cloned Demos repo folder, such as `C:\Users\localAccount\GitHub\Demos\`, select the `temperature-converter` folder inside it, and then click the **Select Folder** button.
 
-1. In the **Explorer** pane, open `\Demos\temperature-converter\index.html`.
+1. In the **Explorer** pane, open `\temperature-converter\index.html`.
 
    ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
 
@@ -523,7 +519,7 @@ Create a working branch and switch to it, as follows:
 
    **Modify the files**
 
-1. In Visual Studio Code, in the **Explorer** pane, open `/Demos/temperature-converter/index.html`.
+1. In Visual Studio Code, in the **Explorer** pane, open `/temperature-converter/index.html`.
 
 1. In `index.html`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
 
@@ -543,7 +539,7 @@ Create a working branch and switch to it, as follows:
 
 1. Save the file.
 
-1. In the **Explorer** pane, open `/Demos/temperature-converter/manifest.json`.
+1. In the **Explorer** pane, open `/temperature-converter/manifest.json`.
 
 1. In `manifest.json`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
    
@@ -584,10 +580,6 @@ View the modified app in the browser, as follows:
    **View the web app**
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
-
-   An **Index of /** page lists the demo directories.
-
-1. Click the **temperature-converter/** folder link.
 
 1. Refresh the webpage.
 
