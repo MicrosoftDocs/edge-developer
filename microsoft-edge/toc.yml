@@ -116,6 +116,10 @@
               href: ./devtools/whats-new/whats-new.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 142
+              href: ./devtools/whats-new/2025/10/devtools-142.md
+              displayName: What's New in DevTools (Microsoft Edge 142)  # page title
+
             - name: Microsoft Edge 141
               href: ./devtools/whats-new/2025/10/devtools-141.md
               displayName: What's New in DevTools (Microsoft Edge 141)  # page title
@@ -152,13 +156,13 @@
               href: ./devtools/whats-new/2025/02/devtools-133.md
               displayName: What's New in DevTools (Microsoft Edge 133)  # page title
 
-            - name: Microsoft Edge 132
-              href: ./devtools/whats-new/2025/01/devtools-132.md
-              displayName: What's New in DevTools (Microsoft Edge 132)  # page title
-
             # keep 10 items above
             - name: Archive
               items:
+                - name: Microsoft Edge 132
+                  href: ./devtools/whats-new/2025/01/devtools-132.md
+                  displayName: What's New in DevTools (Microsoft Edge 132)  # page title
+
                 - name: Microsoft Edge 131
                   href: ./devtools/whats-new/2024/11/devtools-131.md
                   displayName: What's New in DevTools (Microsoft Edge 131)  # page title
