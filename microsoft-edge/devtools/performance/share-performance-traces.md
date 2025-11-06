@@ -111,13 +111,18 @@ Includes the full content of all loaded scripts (except extensions).
 todo: add "HTML" & "CSS" to that tooltip
 -->
 
-In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts, which can then be viewed in the **Sources** tool.
+In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts in the exported trace file.  All loaded scripts (except extensions) are saved in the trace file.
 
-All loaded scripts (except extensions) are saved in the trace file.
+When the trace file is subsequently imported into DevTools, these resources can then be viewed in the **Sources** tool.  The **Sources** tool resolves source code references that are found in the imported trace, to display the actual runtime code.
 
-The **Sources** tool will reliably resolve source code references found in imported traces to the actual runtime code.
 
-Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.  However, the profiling data from extension scripts is still saved in the trace, because extension scripts can impact performance.
+<!-- ------------------------------ -->
+#### Extension scripts
+
+Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.
+
+However, the profiling data from extension scripts is still saved in the trace file, because extension scripts can impact performance.
+
 
 See also:
 * [JavaScript debugging features](../javascript/reference.md)
@@ -183,12 +188,17 @@ To open a saved trace file in DevTools:
 
    ![Special DevTools tab](./share-performance-traces-images/devtools-tab.png)
 
-   This is a special DevTools-dedicated tab of the browser, rather than the undocked DevTools window. A few other relevant tools that could be useful for analyzing the trace can be accessed by clicking the "More tools" button. 
-
    The Address bar displays a special URL, such as:
    * `devtools://devtools/bundled/trace_app.html`
    * `devtools://devtools/bundled/rehydrated_devtools_app.html`
 
+   This is a special DevTools-dedicated tab of the browser, rather than the undocked DevTools window.  A few other relevant tools that may be useful for analyzing the trace can be accessed by clicking the **More tools** button, such as:
+   * **Developer resources**
+   * **Quick source**
+   * **Rendering**
+   * **Search**
+   * **Sensors**
+    
 See also:
 * [Performance tool: Analyze your website's performance](./overview.md)
 * [Sources tool overview](../sources/index.md)
@@ -208,8 +218,8 @@ See also:
 * [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
 
 <!--
-* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/)
+* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/) - 404 - todo: chrome link
+maybe copy valid link into article body
+
 https://developer.chrome.com/s/results?q=Save%20performance%20trace
-Leah TODO: confirm chrome link
-link not in article
 -->

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/23/2025
+ms.date: 11/06/2025
 ---
 # Share a memory trace with more data
 
@@ -46,7 +46,8 @@ Memory traces that are `.devtools` files can optionally include console messages
    * **Include script sources in .devtools traces**.
    * **Include DOM snapshots in .devtools traces (experimental)**.
 
-   <!-- TODO: replace once new UI is in canary ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png) -->
+   <!-- todo: create png & un-comment after new ui is in canary: -->
+   <!-- ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png) -->
 
 
 <!-- ====================================================================== -->
@@ -62,11 +63,13 @@ To export memory information from the **Memory** tool:
 
 1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar:
 
-   <!-- TODO: replace with updated UI ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png) -->
+   <!-- todo: create png & un-comment after new ui is in canary: -->
+   <!-- ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png) -->
 
 1. Choose the trace type and a location to save the trace file on your disk. Select `.devtools` if you want to include console messages, script sources, and DOM elements. Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
 
-   <!-- TOOD: replace once new UI is in canary ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
+   <!-- todo: create png & un-comment after new ui is in canary: -->
+   <!-- ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
 
 
 <!-- ====================================================================== -->
