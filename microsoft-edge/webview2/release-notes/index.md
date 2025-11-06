@@ -71,12 +71,13 @@ Release Date: November 07, 2025
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 143.0.3650.0 or higher.
 
 
+
 <!-- ------------------------------ -->
-#### General changes
+#### Breaking changes
 
 
 <!-- ---------- -->
-###### Breaking change: Don't start navigation until `NewWindowRequested` completes
+###### Don't start navigation until `NewWindowRequested` completes
 
 Don't start webview navigation until the `NewWindowRequested` event is completed, because the event blocks the parent frame's JavaScript until completion.
 
