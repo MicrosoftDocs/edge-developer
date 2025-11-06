@@ -237,7 +237,7 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
 
    The local development web server starts, using the `http-server` NPM package:
 
-   ![Output of npx http-server command in Terminal in VS Code](./temperature-converter-images/npx-http-server.png)
+   ![Output of npx http-server command in Terminal in VS Code](./temperature-converter-images/start-server.png)
 
 1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command, and then issue the npx command again:
 
@@ -279,7 +279,7 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
 
 Install the sample Progressive Web App (PWA) from your localhost web server as an app on Windows, as follows:
 
-1. In the Address bar, click the **App available. Install temperature converter** (![App available icon](./temperature-converter-images/app-available-icon.png)) button.
+1. In the Address bar, click the **App available. Install temperature converter** (![App available icon.](./temperature-converter-images/app-available-icon.png)) button.
 
    An **Install app** dialog opens:
 
@@ -669,9 +669,15 @@ You can skip some of the above steps each time you modify the app, depending on 
 
 * If you modify the manifest file, you must uninstall and re-install the app.
 
-After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).  If you click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button, the **Open Temperature converter** dialog opens:
 
-![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)
+<!-- ------------------------------ -->
+#### PWA button in the Address bar
+
+After the app has been installed, if you go to the web app in the browser, the PWA button in the Address bar has changed from an **App available** (!["App available" icon](./temperature-converter-images/app-available-icon.png)) button to an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button.
+
+If you click the **Open in app** (![Open in app icon.](./temperature-converter-images/open-in-app-icon.png)) button, the **Open Temperature converter** dialog opens in the browser:
+
+![The "Open Temperature converter" dialog](./temperature-converter-images/open-temp-converter-app-dialog.png)
 
 
 <!-- ====================================================================== -->
