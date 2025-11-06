@@ -42,7 +42,7 @@ To examine the user interface of the app:
    * **Fahrenheit**
    * **Kelvin**
 
-1. Close the tab that contains the live [Temperature converter](https://microsoftedge.github.io/Demos/temperature-converter/) sample web app.
+1. Close the browser tab for the app.
 
 In a later step, after the sample Progressive Web App (PWA) is installed as a local app, the app runs in its own window:
 
@@ -139,7 +139,7 @@ Next, you'll get a local copy of the sample code, by forking the Microsoft Edge 
 
 You might be able to download the "main" branch of the Demos repo, and edit the files in the "main" branch, rather than forking and cloning the repo and then creating a working branch (test1) in which to edit the files.  This article shows the more complex but flexible way: forking the repo.
 
-Fork the **MicrosoftEdge / Demos** repo, as follows:
+Fork and clone the **MicrosoftEdge / Demos** repo, as follows:
 
 1. Press **Windows+E**.
 
@@ -150,6 +150,10 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 1. Navigate to where you want the repo cloned to, such as:
 
    `C:\Users\localAccount\GitHub\`
+
+   If the repo hasn't been cloned yet, such as ``C:\Users\localAccount\GitHub\Demos\``, do the following steps; otherwise, skip to the next section.
+
+   **Fork the repo:**
 
 1. Open the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
@@ -195,9 +199,7 @@ Fork the **MicrosoftEdge / Demos** repo, as follows:
 
 1. Press **Enter**.
 
-   Your local clone of the forked Demos repo is created.
-
-   For more information, see [Cloning your forked repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) in _Fork a repository_ in GitHub Docs.
+   A local clone of your forked Demos repo is created.
 
 See also:
 * [Fork a repository](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
@@ -233,7 +235,9 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
    npx http-server
    ```
 
-   The local development web server starts, using the `http-server` NPM package.
+   The local development web server starts, using the `http-server` NPM package:
+
+   ![Output of npx http-server command in Terminal in VS Code](./temperature-converter-images/npx-http-server.png)
 
 1. If you get a "running scripts is disabled" error (if VS Code's Terminal is using PowerShell), enter the execution policy PowerShell command, and then issue the npx command again:
 
@@ -258,7 +262,7 @@ Change to the `/temperature-converter/` directory of the cloned Demos repo, and 
    Starting up http-server, serving ./
    ...
    Available on:
-     http://10.0.1.12:8080
+     http://10.0.1.2:8080
      http://127.0.0.1:8080
    Hit CTRL-C to stop the server
    ```
@@ -493,6 +497,8 @@ Create a working branch and switch to it, as follows:
 
    The localhost web server (http-server) stops, if it was running.  The prompt shows the current path, such as: `PS C:\Users\localAccount\GitHub\Demos\temperature-converter>`
 
+   It's not necessary to stop the server, to modify the code and view the result.  We're just temporarily stopping the server in **Terminal** in order to return to the prompt, to enter some git commands.
+
 1. Enter the following command, to create a working branch of the repo and switch to it:
 
    ```console
@@ -569,25 +575,31 @@ View the modified app in the browser, as follows:
 
    **Start the server**
 
+   We previously stopped the web server in **Terminal**, just to enter some git commands to switch to a working branch.
+
 1. Enter the following command:
 
    ```console
    npx http-server
    ```
 
-   The local development web server starts.
+   The local development web server starts again.
 
    **View the web app**
 
 1. In Microsoft Edge, go to [http://localhost:8080](http://localhost:8080) (or an equivalent URL that was output in the terminal, from the `npx http-server` command).
 
-1. Refresh the webpage.
+1. Refresh (**F5**) the webpage.
 
-   The tab text changes from **Temperature converter** to **TC**:
+   This doesn't give the desired result.  Refresh reloads the webpage from the browser's cache, so you see the app that was cached before at that URL (the tab title is **Temperature converter**).
+
+1. Hard refresh (**Shift+F5**) the webpage.
+
+   Hard refresh shows the current content directly from the web server.
+
+   The tab title changes from **Temperature converter** to **TC**:
 
    ![The app renamed to TC in the browser](./temperature-converter-images/tc-app-in-browser.png)
-
-   If the title still reads **Temperature converter** instead of **TC**, use hard refresh (**Ctrl+F5** or **Shift+F5**).
 
 
 <!-- ====================================================================== -->
