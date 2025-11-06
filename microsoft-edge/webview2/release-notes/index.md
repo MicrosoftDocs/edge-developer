@@ -73,7 +73,14 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ------------------------------ -->
 #### General changes
-<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### Breaking change: Don't start navigation until `NewWindowRequested` completes
+
+Don't start webview navigation until the `NewWindowRequested` event is completed, because the event blocks the parent frame's JavaScript until completion.
+
+This is a potentially breaking change; you might need to revise your code.
 
 
 <!-- ------------------------------ -->
@@ -82,12 +89,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 No Experimental APIs have been added in this Prerelease SDK.
 
 
-
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
 
 
 <!-- ------------------------------ -->
@@ -96,17 +101,12 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 This Prerelease SDK includes the following bug fixes.
 
 
-
 <!-- ---------- -->
 ###### Runtime-only
 
-* Enabled EmbeddedBrowserBrowserProcessExitedTest for ARM64.
-* Fix find dialogue synchronisation issue while doing programmatic find.
-* Disable creation of "Speculative Renderer" process.
-* Fix find dialogue synchronisation issue while doing programmatic find.
-* [Potentially breaking change] Don't start webview navigation until the NewWindowRequested Event is completed. The event will block parent frame's javascript till completion.
-
-
+* Disabled creation of a "Speculative Renderer" process.
+* Enabled `EmbeddedBrowserBrowserProcessExitedTest` for ARM64.
+* Fixed a **Find** dialog synchronization issue while programmatically doing a Find.
 
 <!-- end of Nov 2025 Prerelease SDK -->
 
