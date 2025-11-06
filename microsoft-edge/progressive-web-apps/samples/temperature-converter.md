@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 10/09/2025
+ms.date: 11/05/2025
 ---
 # Temperature converter sample
 
@@ -283,7 +283,7 @@ Install the sample Progressive Web App (PWA) from your localhost web server as a
 
    An **Install app** dialog opens:
 
-   ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
+   ![The installation prompt](./temperature-converter-images/sample-pwa-app-available-button.png)
 
 1. Click the **Install** button.
 
@@ -365,8 +365,6 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
    ![The PWA as an installed local app, with DevTools showing the Service workers panel, with the sw.js worker running](./temperature-converter-images/devtools-service-workers-installed-app.png)
 
    The service worker's **Source** is `sw.js`, with **Status** of **activated and is running**.
-
-   If the service worker isn't displayed, right-click in the Temperature convertor window and then select **Refresh**.<!-- todo: omit paragraph?  did dev hit this issue? -->
 
 1. In the tree on the left, in the **Storage** major section, expand **Cache storage**, and then select **temperature-converter-v1**:
 
@@ -471,8 +469,6 @@ Continue with the steps below.
 <!-- ====================================================================== -->
 ## Step 12: Modify the sample
 
-<!-- todo: open the /tempcon/ dir or /demos/ dir, to open the git repo and display the branch in lower left?  Step 6 opened /td/ dir and no repo, with no branch displayed -->
-
 You can modify the sample as a starting point for your own Progressive Web App (PWA).  You'll change the name of the app from "Temperature converter" to "TC", in a working branch of the repo, and then install the modified app locally.
 
 Create a working branch and switch to it, as follows:
@@ -489,7 +485,7 @@ Create a working branch and switch to it, as follows:
 
 1. In the **Explorer** pane, open `\Demos\temperature-converter\index.html`.
 
-   ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)<!-- todo: redo showing opening the sample folder not the Demos folder -->
+   ![The main branch indicated in lower left of VS Code](./temperature-converter-images/main-branch-in-vs-code.png)
 
    In the lower left corner of Visual Studio Code, the **main** branch is indicated.
 
@@ -516,6 +512,8 @@ Create a working branch and switch to it, as follows:
    ```
 
    Example output: `Switched to a new branch 'test1'`
+
+   In the lower left of Visual Studio Code, the branch changes from **main** to **test1**.
 
 1. Close the **Terminal** pane.
 
@@ -566,21 +564,6 @@ Create a working branch and switch to it, as follows:
 1. Save the file.
 
 
-1. In the **View** menu, select **Terminal**.
-
-   <!-- todo: avoid add & commit? -->
-
-1. Enter the command: `git add .`
-
-   In the lower left, **test1\*** changes to **test1+**.
-
-1. Enter the command: `git commit`
-
-1. In the **COMMIT_EDITMSG** editor window, in line 1, enter: **rename app**.
-
-1. Save and close the editor window.
-
-
 <!-- ====================================================================== -->
 ## Step 13: View the modified app in the browser
 
@@ -624,7 +607,7 @@ Install the modified app from `localhost` in the browser onto the device, as fol
 
    An **Install TC app** dialog opens within the browser:
 
-   ![The "Install TC app" dialog in the browser](./temperature-converter-images/install-tc-app.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
+   ![The "Install TC app" dialog in the browser](./temperature-converter-images/install-tc-app.png)
 
 1. Click the **Install** button.
 
@@ -684,7 +667,7 @@ You can skip some of the above steps each time you modify the app, depending on 
 
 After the app has been installed and you go to the web app in the browser, the PWA icon in the Address bar is no longer "App available", it's changed to "Open in app".  Because you have installed the sample as a local app, the Address bar contains an **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button instead of an **App available** button (regardless of whether the local app is open).  If you click the **Open in app** (![Open in app icon](./temperature-converter-images/open-in-app-icon.png)) button, the **Open Temperature converter** dialog opens:
 
-![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)<!-- todo: make win wider, add /t-c/ dir in Addr bar -->
+![The "Open Temperature converter" dialog in the browser](./temperature-converter-images/open-temp-converter-app-dialog.png)
 
 
 <!-- ====================================================================== -->
