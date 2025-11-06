@@ -62,13 +62,13 @@ This Release SDK includes the following bug fixes.
 
 <!-- Nov 2025 Prerelease SDK -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## 1.0.3650-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: November 07, 2025
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 143.0.3650.0 or higher.
 
 
 <!-- ------------------------------ -->
@@ -80,67 +80,33 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Experimental APIs
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Promotions
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
 
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Enabled EmbeddedBrowserBrowserProcessExitedTest for ARM64.
+* Fix find dialogue synchronisation issue while doing programmatic find.
+* Disable creation of "Speculative Renderer" process.
+* Fix find dialogue synchronisation issue while doing programmatic find.
+* [Potentially breaking change] Don't start webview navigation until the NewWindowRequested Event is completed. The event will block parent frame's javascript till completion.
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
 
 <!-- end of Nov 2025 Prerelease SDK -->
 
