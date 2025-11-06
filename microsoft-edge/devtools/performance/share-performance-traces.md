@@ -79,13 +79,13 @@ To record performance for aspects of a webpage, and then export a performance re
 
    For example, on Windows, in the `/Downloads/` directory, click the **New folder** button, and then create a `/traces/` directory, in which to save the performance trace file:
 
-   ![Traces folder](./share-performance-traces-images/saving-perf-trace.png)<!-- todo: issue: png shows .. in filename; extension shown is .devtools not .gz -->
+   ![Traces folder](./share-performance-traces-images/saving-perf-trace.png)
 
-1. Accept or modify the file name, such as `Trace-20251103T154500.json.gz`.
+1. Accept or modify the file name, such as `Trace-20251103T154500.json`.
 
 1. Click the **Save** button.
 
-   The performance trace file is saved, such as `C:\Users\localAccount\Downloads\traces\Trace-20251103T154500.json.gz`.
+   The performance trace file is saved, such as `C:\Users\localAccount\Downloads\traces\Trace-20251103T154500.json`.
 
 
 <!-- ====================================================================== -->
