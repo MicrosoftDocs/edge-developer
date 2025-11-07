@@ -63,9 +63,9 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. Select or clear the checkboxes, to control what information to include in the trace file:
 
-   * The **Include annotations** checkbox.
-   * The **Include resource content** checkbox.
-   * The **Include script source maps** checkbox.  (Must first select the **Include resource content** checkbox.)
+   * The **Include annotations** checkbox.<!-- tooltip: todo; none? -->
+   * The **Include resource content** checkbox.<!-- tooltip: todo -->
+   * The **Include script source maps** checkbox.  (Must first select the **Include resource content** checkbox.)<!-- tooltip: todo -->
 
    Optionally, clear the **Compress with gzip** checkbox.
 
