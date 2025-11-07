@@ -6,9 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/19/2021
+ms.date: 11/07/2025
 ---
 # Service worker improvements
+<!-- todo:
+change from "what's new" wording to regular description
+
+ensure that all of the improvements that are described in this article are already covered in other, regular, articles
+if not, update those other articles to cover the improvements
+
+ideally, this "What's New"-style article should eventually get deleted
+-->
 
 The **Network**, **Application**, and **Sources** tools have been improved to help you work with [service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and the network requests that pass through each service worker.
 
