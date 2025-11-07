@@ -13,6 +13,17 @@ metadata:
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
   ms.date: 02/15/2024 #Required; mm/dd/yyyy format.
   
+# How to create or update a landing page
+# https://review.learn.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
+
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+# Limits:
+# Number of cards in a landing page: 1-12
+# Number of linkListType in a card: 1-6
+# Number of links in a linkListType: 1-10
+
       # - linkListType: architecture
       # - linkListType: concept
       # - linkListType: deploy
@@ -29,18 +40,6 @@ metadata:
       # - linkListType: whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-
-# =============================================================================
-# Limits
-
-# Number of cards in a landing page: 1-12
-# Number of linkListType in a card: 1-6
-# Number of links in a linkListType: 1-10
-
-# https://review.learn.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
-
 # =============================================================================
 # Row 1
 # -----------------------------------------------------------------------------
@@ -103,16 +102,25 @@ landingContent:
           - text: Microsoft Edge extensions documentation  # extensions landing page
             url: ../extensions/landing/index.yml
 
-          - text: Extensions overview
+          - text: Overview of Microsoft Edge extensions
             url: ../extensions/index.md
 
-          - text: Getting started tutorial
+          - text: Extension concepts and architecture
             url: ../extensions/getting-started/index.md
 
-          - text: Port a Chrome extension to Microsoft Edge
-            url: ../extensions/developer-guide/port-chrome-extension.md
+      - linkListType: sample
+        links:
+          - text: "Sample: Picture viewer pop-up webpage"
+            url: ../extensions/samples/picture-viewer-popup-webpage.md
+
+          - text: "Sample: Picture inserter using content script"
+            url: ../extensions/samples/picture-inserter-content-script.md
+
       - linkListType: how-to-guide
         links:
+          - text: Port a Chrome extension to Microsoft Edge
+            url: ../extensions/developer-guide/port-chrome-extension.md
+
           - text: Alternative ways to distribute an extension
             url: ../extensions/developer-guide/alternate-distribution-options.md
 
@@ -121,9 +129,6 @@ landingContent:
 
           - text: Register as a Microsoft Edge extension developer
             url: ../extensions/publish/create-dev-account.md
-
-          - text: "Sample: Picture viewer pop-up webpage"
-            url: ../extensions/getting-started/picture-viewer-popup-webpage.md
 
 # =============================================================================
 # Row 2
@@ -146,7 +151,7 @@ landingContent:
 
       - linkListType: get-started
         links:
-          - text: Get started with PWAs
+          - text: Get started developing a PWA
             url: ../progressive-web-apps/how-to/index.md
 
           - text: Using Service Workers
@@ -190,7 +195,7 @@ landingContent:
       - linkListType: download
         links:
           - text: WebView2 sample apps
-            url: ../webview2/code-samples-links.md
+            url: ../webview2/samples/index.md
       - linkListType: whats-new
         links:
           - text: Release Notes for the WebView2 SDK

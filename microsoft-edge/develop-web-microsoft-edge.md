@@ -11,6 +11,8 @@ ms.date: 02/06/2025
 
 Develop for the web with Microsoft Edge by using standards-based web platform features, Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
+For end-user documentation about how to use Microsoft Edge, see [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge).
+
 
 <!-- ====================================================================== -->
 ## Release notes
