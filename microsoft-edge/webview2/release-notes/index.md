@@ -55,7 +55,6 @@ This Release SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Disabled creation of a "Speculative Renderer" process.
-* Enabled `EmbeddedBrowserBrowserProcessExitedTest` for ARM64.
 
 <!-- end of Nov 2025 Release SDK -->
 
