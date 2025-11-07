@@ -52,7 +52,7 @@ landingContent:
 
       - linkListType: get-started
         links:
-          - text: Get started with PWAs
+          - text: Get started developing a PWA
             url: ../how-to/index.md
 
           - text: Using Service Workers
@@ -151,5 +151,5 @@ landingContent:
 
       - linkListType: sample
         links:
-          - text: Progressive Web App demos
-            url: ../demo-pwas.md
+          - text: Progressive Web App samples
+            url: ../samples/index.md
