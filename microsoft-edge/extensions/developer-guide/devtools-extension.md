@@ -350,7 +350,7 @@ The above code snippet does the following:
 
 1. Creates a new panel `Sample Panel` in DevTools.
    
-1. When the panel is displayed the panel.js sets a timer to run code every second after the panel is shown.
+1. When the panel is displayed, `panel.js` sets a timer to run code every second after the panel is shown.
 
 1. When the timer fires, the `chrome.system.memory.getInfo` method is used to retrieve the available and total memory capacity of the device and these values are displayed in the corresponding DOM elements.
 
