@@ -203,7 +203,7 @@ Workspaces work well when the JavaScript code that's returned by the server is t
 
 See also:
 * [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md)
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -244,8 +244,8 @@ https://developer.chrome.com/docs/devtools/settings/ignore-list
 When the debugger steps into code that you don't recognize, you might want to add that code to the **Ignore List**, to avoid stepping into that code. See [Add content scripts to the Ignore List](../javascript/guides/mark-content-scripts-library-code.md).
 
 See also:
-* [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-* [Sample: Picture inserter using content script](../../extensions/getting-started/picture-inserter-content-script.md)
+* [Content scripts](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_scripts)
+* [Sample: Picture inserter using content script](../../extensions/samples/picture-inserter-content-script.md)
 
 
 <!-- ------------------------------ -->
@@ -333,7 +333,7 @@ The following subsections cover the Editor pane:
 * [Quick source tool, to display source files when using a different tool](#quick-source-tool-to-display-source-files-when-using-a-different-tool)
 
 See also:
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -346,7 +346,7 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
 To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (**...**) and then select **Open File**.
 
 See also:
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 
 
 <!-- ---------- -->
@@ -471,7 +471,7 @@ See also:
 * [Get started viewing and changing CSS](../css/index.md).
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -496,7 +496,7 @@ To undo an edit, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
 See also:
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 
 
 <!-- ------------------------------ -->
@@ -667,7 +667,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 ## See also
 
-* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/sample-code/sample-code.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool)
+* [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_.
 * [Display or edit source files using the Quick source tool](../quick-source/quick-source-tool.md)
 * [Track changes to files using the Changes tool](../changes/changes-tool.md)

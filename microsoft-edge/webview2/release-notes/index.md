@@ -55,9 +55,59 @@ This Release SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Disabled creation of a "Speculative Renderer" process.
-* Enabled `EmbeddedBrowserBrowserProcessExitedTest` for ARM64.
 
 <!-- end of Nov 2025 Release SDK -->
+
+
+<!-- Nov 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.3650-prerelease
+
+Release Date: November 07, 2025
+
+[NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 143.0.3650.0 or higher.
+
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+
+
+<!-- ---------- -->
+###### Don't start navigation until `NewWindowRequested` event completes
+
+Don't start WebView2 navigation until the `NewWindowRequested` event is completed, because the event blocks the parent frame's JavaScript until completion.
+
+This is a potentially breaking change; you might need to revise your code.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Disabled creation of a "Speculative Renderer" process.
+* Fixed a **Find** dialog synchronization issue while programmatically doing a Find.
+
+<!-- end of Nov 2025 Prerelease SDK -->
 
 
 <!-- Oct 2025 Release SDK -->
