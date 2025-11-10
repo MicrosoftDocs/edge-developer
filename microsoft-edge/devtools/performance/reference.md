@@ -24,6 +24,30 @@ ms.date: 02/24/2025
 # Performance features reference
 <!-- https://developer.chrome.com/docs/devtools/performance/reference -->
 
+
+<!-- todo:
+Add WebSocket documentation in the Performance reference article.
+The Perf tool can now show WebSocket messages.
+
+The Perf tool reference article
+https://learn.microsoft.com/microsoft-edge/devtools/performance/performance-reference
+should document that the Perf tool can now show WebSocket messages.
+
+Sources for the info to add:
+* Does upstream have docs for that?
+* What's New 128 entry about Perf tool:
+View WebSocket message activities in the Performance tool =
+https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2024/08/devtools-128#view-websocket-message-activities-in-the-performance-tool
+* Related live docs (Network tool Ref):
+https://learn.microsoft.com/microsoft-edge/devtools/network/reference#analyze-the-messages-of-a-websocket-connection
+* Related Piehost docs:
+https://piehost.com/websocket-tester
+
+We should be able to use the piehost/piesocket site.
+Let mgmt know if piehost will work, w/o paying/account for API key.
+Else we can try using a new websocket server, containing a proper websocket demo for this & other articles.
+-->
+
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
 For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Analyze runtime performance (tutorial)](index.md).
