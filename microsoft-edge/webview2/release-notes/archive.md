@@ -17,7 +17,7 @@ These Release Notes provide information about added features and bug fixes that 
 <!-- ====================================================================== -->
 ## 1.0.3296.44
 
-Release Date: June 03, 2025
+Release Date: June 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
 
@@ -70,7 +70,7 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ====================================================================== -->
 ## 1.0.3344-prerelease
 
-Release Date: June 03, 2025
+Release Date: June 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
@@ -133,7 +133,7 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- ====================================================================== -->
 ## 1.0.3240.44
 
-Release Date: May 05, 2025
+Release Date: May 5, 2025
 
 [NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
 
@@ -257,7 +257,7 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ====================================================================== -->
 ## 1.0.3179.45
 
-Release Date: April 07, 2025
+Release Date: April 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
 
@@ -289,7 +289,7 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.3230-prerelease
 
-Release Date: April 07, 2025
+Release Date: April 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
 
@@ -8980,7 +8980,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
 <!-- ====================================================================== -->
 ## 0.9.430
 
-<!-- Release Date: February 24, 2020 -->
+Release Date: February 24, 2020
 
 [NuGet package for WebView2 SDK 0.9.430](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430)
 

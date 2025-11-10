@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/03/2025
+ms.date: 12/01/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -32,9 +32,12 @@ Jun 2025
 <!-- ====================================================================== -->
 ## 1.0.####.##
 
-Release Date: Monthname nn, 2025
+Release Date: December 1, 2025
 
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add righmost part of url:
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+-->
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
 
@@ -109,9 +112,12 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.####-prerelease
 
-Release Date: Monthname nn, 2025
+Release Date: December 1, 2025
 
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add righmost part of url:
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+-->
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
 
@@ -225,7 +231,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3650-prerelease
 
-Release Date: November 07, 2025
+Release Date: November 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
