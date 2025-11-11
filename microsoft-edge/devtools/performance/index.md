@@ -95,9 +95,7 @@ Use the demo's UI, as follows:
 
    **Show few icons, and compare Slow vs. Optimized**
 
-   There are 10 blue icons by default.
-
-   The **Slow** option button is selected by default.
+   There are 10 blue icons by default.  The **Slow** option button is selected by default.
 
 1. Watch a specific blue icon move up and down.
 
@@ -129,17 +127,13 @@ Use the demo's UI, as follows:
 
 1. Click the **Remove elements** button around 10 times.
 
-   The remaining blue icons move faster and more smoothly.
-
-   There are always at least 10 blue icons remaining.
+   The remaining blue icons move faster and more smoothly.  There are always at least 10 blue icons remaining.
 
 1. Switch to the undocked DevTools window.
 
 1. In the **Performance** tool, in the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
 
-   DevTools stops throttling the CPU.
-
-   The warning icon is removed from the **Performance** tool's tab.
+   DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
 
 
 <!-- ------------------------------ -->
