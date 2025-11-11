@@ -89,7 +89,7 @@ Use the demo's UI, as follows:
 
 1. Switch to the Sluggish Animation webpage.
 
-   **Show few icons, and compare Optimized vs. Slow**
+   **Show few icons, and compare Slow vs. Optimized**
 
    There are 10 blue icons by default.
 
@@ -105,7 +105,7 @@ Use the demo's UI, as follows:
 
    The 10 blue icons move a little more slowly.
 
-   **Show many icons, and compare Optimized vs. Slow**
+   **Show many icons, and compare Slow vs. Optimized**
 
    Initially, the **Slow** option button is selected.
 
@@ -125,9 +125,9 @@ Use the demo's UI, as follows:
 
 1. Click the **Remove elements** button around 10 times.
 
-   There are always at least 10 blue icons remaining.
-
    The remaining blue icons move faster and more smoothly.
+
+   There are always at least 10 blue icons remaining.
 
 1. Switch to the undocked DevTools window.
 
