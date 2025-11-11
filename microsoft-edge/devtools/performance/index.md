@@ -85,9 +85,9 @@ Continue with the steps below.
 
 In the Sluggish Animation webpage:
 
-1. First we'll show _few_ icons, and compare selecting the **Slow** option button vs. the **Optimized** option button, producing _little_ difference in the speed and smoothness of animation.
+1. First we'll show _few_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing _little_ difference in the speed and smoothness of animation.
 
-1. Then we'll show _many_ icons, and compare selecting the **Slow** option button vs. the **Optimized** option button, producing a _great_ difference in the speed and smoothness of animation.
+1. Then we'll show _many_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing a _great_ difference in the speed and smoothness of animation.
 
 Use the demo's UI, as follows:
 
