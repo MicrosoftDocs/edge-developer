@@ -35,13 +35,15 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Get started
+## Open the demo in InPrivate mode, and open DevTools
 
 In the following tutorial, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**<!-- todo: why inprivate? -->.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.
 
-   If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   You'll profile this demo page, which shows a variable number of icons moving up and down.  If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+
+   InPrivate mode ensures that the browser runs in a clean state.  For example, if you have a lot of extensions installed, those extensions might create noise in your performance measurements.  If you want more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
 1. Right-click the demo webpage and then select **Inspect**.
 
@@ -51,9 +53,11 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo pa
 
 In this article, most screenshots show DevTools undocked as a separate window.  See [Undock DevTools into a separate window](../customize/placement.md) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
 
+Continue with the steps below.
 
-<!-- ------------------------------ -->
-#### Simulate a mobile CPU
+
+<!-- ====================================================================== -->
+## Simulate a mobile CPU
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
@@ -80,8 +84,8 @@ If you want to ensure that pages work well on low-end mobile devices, set **CPU*
 Continue with the steps below.
 
 
-<!-- ------------------------------ -->
-#### Use the demo's UI
+<!-- ====================================================================== -->
+## Use the demo's UI to compare Slow vs. Optimized code with few or many animated icons
 
 In the Sluggish Animation webpage, first we'll show _few_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing _little_ difference in the speed and smoothness of animation.  Then we'll show _many_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing a _great_ difference in the speed and smoothness of animation.
 
@@ -131,15 +135,19 @@ Use the demo's UI, as follows:
 
    DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
 
+Continue with the steps below.
 
-<!-- ------------------------------ -->
-#### Record runtime performance
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the unoptimized version.
+<!-- ====================================================================== -->
+## Record the unoptimized code performance
 
-Continuing from above:
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.
 
-1. In the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.  DevTools captures performance metrics as the page runs.
+Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the _unoptimized_ version.
+
+1. In the demo page, select the **Slow** option button.
+
+1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.  DevTools captures performance metrics as the page runs.
 
    ![Profile the page](./index-images/profiling.png)
 
@@ -151,25 +159,35 @@ Continuing from above:
 
 These performance results show an overwhelming amount of data, but it will all make more sense shortly.
 
+Continue with the steps below.
+
 
 <!-- ====================================================================== -->
 ## Analyze the results
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
-Continuing from above:
-
-1. The **CPU** chart is displayed along the top.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
+1. In the top of the **Performance** tool, examine the **CPU** chart:
 
    ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
 
-1. Hover over the **CPU** or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
+   The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
+
+1. Hover over the **CPU** or **NET** charts:
 
    ![Hover on a frame](./index-images/frame-hover.png)
 
+   DevTools shows a screenshot of the page at that point in time.
 
-<!-- ------------------------------ -->
-#### Bonus: Open the Frame Rendering Stats overlay
+1. Move your mouse left and right to replay the recording.
+
+   This action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
+
+Continue with the steps below.
+
+
+<!-- ====================================================================== -->
+## Bonus: Open the Frame Rendering Stats overlay
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
 
@@ -185,9 +203,11 @@ Continuing from above:
 
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
+Continue with the steps below.
 
-<!-- ------------------------------ -->
-#### Find the bottleneck
+
+<!-- ====================================================================== -->
+## Find the bottleneck
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
 
@@ -238,15 +258,23 @@ Continuing from above:
    See also:
    * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
 
-
-<!-- ------------------------------ -->
-#### Analyze the optimized version
-
-Using the workflows and tools that you just learned, click **Optimized** on the demo webpage to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
+Continue with the steps below.
 
 
-<!-- ------------------------------ -->
-#### Unoptimized version
+<!-- ====================================================================== -->
+## Record the optimized code performance
+
+1. Click **Optimized** on the demo webpage to turn on the optimized code.
+
+1. Using the workflows and tools that you just learned, take another performance recording, and then analyze the results.
+
+   From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
+
+This is the end of the tutorial action steps.
+
+
+<!-- ====================================================================== -->
+## Analyze the unoptimized code
 
 Compare this snippet of JavaScript from the unoptimized version of the app:
 
@@ -285,8 +313,8 @@ After making sure that the icon is still within the bounds of the page, we set i
 Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
 
-<!-- ------------------------------ -->
-#### Optimized version
+<!-- ====================================================================== -->
+## Analyze the optimized code
 
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
