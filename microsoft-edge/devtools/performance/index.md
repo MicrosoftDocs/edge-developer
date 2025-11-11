@@ -39,7 +39,7 @@ See also:
 
 In the following tutorial, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
-1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
+1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**<!-- todo: why inprivate? -->.  You'll profile this page, which shows a variable number of icons moving up and down.  See also [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
    If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
@@ -49,7 +49,7 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo pa
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-Most screenshots of the **Performance** tool show DevTools [undocked to a separate window](../customize/placement.md).
+In this article, most screenshots show DevTools undocked as a separate window.  See [Undock DevTools into a separate window](../customize/placement.md) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
 
 
 <!-- ------------------------------ -->
@@ -57,13 +57,19 @@ Most screenshots of the **Performance** tool show DevTools [undocked to a separa
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
-1. In DevTools, open the **Performance** tool.
+1. In DevTools, open the **Performance** (![Performance icon](./index-images/performance-tool-icon.png)) tool.
 
-1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).  DevTools reveals settings related to how it captures performance metrics.
+1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).
 
-1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.
+   DevTools reveals settings related to how it captures performance metrics.
+
+1. In the **CPU throttling** dropdown menu in the upper left, select **4x slowdown - recommended**:
 
    ![CPU throttle](./index-images/capture-settings.png)
+
+   Or, in the **Environment settings** section in the lower right, in the **CPU throttling** dropdown menu, select **4x slowdown - recommended**.  The two instances of the dropdown menu are linked.
+
+   DevTools throttles your CPU so that it's 4 times slower than usual.  For example, the DevTools UI becomes sluggish when using these menus.
 
    A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
@@ -71,17 +77,65 @@ If you want to ensure that pages work well on low-end mobile devices, set **CPU*
 
 
 <!-- ------------------------------ -->
-#### Set up the demo
+#### Use the demo's UI
 
-In the following section, continuing from above, you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions.
+In the Sluggish Animation webpage:
 
-1. Click the **Add elements** button until the blue icons move noticeably slower than before.  On a high-end machine, you can click it about 20 times.
+1. First we'll show _few_ icons, and compare selecting the **Slow** option button vs. the **Optimized** option button, producing _little_ difference in the speed and smoothness of animation.
 
-1. Click **Optimized**.  The blue icons should move faster and more smoothly.
+1. Then we'll show _many_ icons, and compare selecting the **Slow** option button vs. the **Optimized** option button, producing a _great_ difference in the speed and smoothness of animation.
 
-1. To better display a difference between the optimized and unoptimized versions, click the **Remove elements** button a few times and try again.  If you add too many blue icons, you could max out the CPU, and then you might not observe a major difference in the results for the two versions.
+Use the demo's UI, as follows:
 
-1. Click **Slow**.  The blue icons move slower and with more sluggishness again.
+1. Switch to the Sluggish Animation webpage.
+
+   **Show few icons, and compare Optimized vs. Slow**
+
+   There are 10 blue icons by default.
+
+   The **Slow** option button is selected by default.
+
+1. Watch a specific blue icon move up and down.
+
+1. Select the **Optimized** option button.
+
+   The 10 blue icons move a little more quickly and smoothly.
+
+1. Select the **Slow** option button.
+
+   The 10 blue icons move a little more slowly.
+
+   **Show many icons, and compare Optimized vs. Slow**
+
+   Initially, the **Slow** option button is selected.
+
+1. Click the **Add elements** button around 10 times.
+
+   More blue icons are added and animated.  The more blue icons are shown, the slower and more erratic their motion.
+
+   If you add too many blue icons, such as by clicking the **Add elements** button around 20 times, you could max out the CPU, and then you might not observe a major difference in the results for the **Slow** vs. **Optimized** code.
+
+1. Select the **Optimized** option button.
+
+   The blue icons move much more quickly and smoothly.
+
+1. Select the **Slow** option button.
+
+   The blue icons move much more slowly.
+
+1. Click the **Remove elements** button around 10 times.
+
+   There are always at least 10 blue icons remaining.
+
+   The remaining blue icons move faster and more smoothly.
+
+1. Switch to the undocked DevTools window.
+
+1. In the **Performance** tool, in the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
+
+   DevTools stops throttling the CPU.
+
+   The warning icon is removed from the **Performance** tool's tab.
 
 
 <!-- ------------------------------ -->
@@ -91,7 +145,7 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
 Continuing from above:
 
-1. In DevTools, click **Record** (![Record](./index-images/record-icon.png)).  DevTools captures performance metrics as the page runs.
+1. In the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.  DevTools captures performance metrics as the page runs.
 
    ![Profile the page](./index-images/profiling.png)
 
