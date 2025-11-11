@@ -57,6 +57,8 @@ In this article, most screenshots show DevTools undocked as a separate window.  
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
+Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
+
 1. In DevTools, open the **Performance** (![Performance icon](./index-images/performance-tool-icon.png)) tool.
 
 1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).
@@ -74,6 +76,8 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
    A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
 If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
+
+Continue with the steps below.
 
 
 <!-- ------------------------------ -->
