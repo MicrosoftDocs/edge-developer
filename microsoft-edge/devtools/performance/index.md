@@ -24,7 +24,7 @@ ms.date: 09/04/2023
 # Analyze runtime performance (tutorial)
 <!-- https://developer.chrome.com/docs/devtools/performance -->
 
-_Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
+_Runtime performance_ is how your webpage performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
 The skills you learn in this tutorial are useful for analyzing loading, interactivity, and visual stability of your web content, which are also key indicators for Core Web Vitals.  Each of the Core Web Vitals represents a distinct facet of the user experience, is measurable in the field, and reflects the real-world experience of a critical user-centric outcome.  You can see these Core Web Vitals in the **Performance** tool.
 
@@ -38,11 +38,11 @@ See also:
 ## Open the demo in InPrivate mode, and open DevTools
 <!-- https://developer.chrome.com/docs/devtools/performance#get-started -->
 
-In the following tutorial, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
+In the following tutorial, you open DevTools on the "Sluggish Animation" demo webpage and use the **Performance** tool to find a performance bottleneck on the webpage.
 
 1. Right-click the link [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) and then select **Open link in InPrivate window**.
 
-   You'll profile this demo page, which shows a variable number of icons moving up and down.  If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
+   You'll profile this demo webpage, which shows a variable number of icons moving up and down.  If you want to view the source code for the demo, see [MicrosoftEdge / Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started).
 
    InPrivate mode ensures that the browser runs in a clean state.  For example, if you have a lot of extensions installed, those extensions might create noise in your performance measurements.  If you want more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2).
 
@@ -59,7 +59,7 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo pa
 ## Simulate a mobile CPU
 <!-- https://developer.chrome.com/docs/devtools/performance#simulate_a_mobile_cpu -->
 
-Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
+Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a webpage, use CPU throttling to simulate how your webpage performs on mobile devices.
 
 Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
@@ -75,7 +75,7 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
    Or, in the **Environment settings** section in the lower right, in the **CPU throttling** dropdown menu, select the recommended slowdown value, such as **4x slowdown - recommended**.  The two instances of the dropdown menu are linked.
 
-   The recommended throttling factor is calculated by DevTools, based on your machine.  To ensure that pages work well on even lower-end mobile devices, select a greater slowdown in the **CPU throttling** dropdown, such as **6x slowdown**.
+   The recommended throttling factor is calculated by DevTools, based on your machine.  To ensure that a webpage works well on even lower-end mobile devices, select a greater slowdown in the **CPU throttling** dropdown, such as **6x slowdown**.
 
    DevTools throttles your CPU so that it's slower than usual.
 
@@ -86,11 +86,11 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 ## Display the ideal number of icons to compare unoptimized vs. optimized code
 <!-- https://developer.chrome.com/docs/devtools/performance#set_up_the_demo -->
 
-To create a pair of performance recordings to compare the unoptimized vs. optimized code, the demo page first needs to be displaying a certain number of moving icons, depending on your machine.  There should be enough icons so that you can clearly see a difference in speed and smoothness of animation when you alternate between selecting the unoptimized (**Slow**) code and the **Optimized** code.
+To create a pair of performance recordings to compare the unoptimized vs. optimized code, the demo webpage first needs to be displaying a certain number of moving icons, depending on your machine.  There should be enough icons so that you can clearly see a difference in speed and smoothness of animation when you alternate between selecting the unoptimized (**Slow**) code and the **Optimized** code.
 
-To display the ideal number of icons to compare the unoptimized vs. optimized code:
+To fill the demo webpage with an ideal number of icons:
 
-1. Switch to the Sluggish Animation demo page.
+1. Switch to the Sluggish Animation demo webpage.
 
    The **Slow** option button is initially selected, by default, so that the unoptimized code is used.
 
@@ -107,19 +107,19 @@ To display the ideal number of icons to compare the unoptimized vs. optimized co
 ## Record the unoptimized code performance
 <!-- https://developer.chrome.com/docs/devtools/performance#record -->
 
-When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.
+When you run the optimized version of the webpage code, the blue icons move faster.  Why is that?  Both versions of the code are supposed to move the icons the same amount of space in the same amount of time.
 
 Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the _unoptimized_ (**Slow**) version of the code:
 
-1. In the demo page, select the **Slow** option button.
+1. In the demo webpage, select the **Slow** option button.
 
    The icons move more slowly and erratically.  The unoptimized code is running and will be profiled, and there is an ideal number of icons to demonstrate poor performance and help find the performance bottleneck.
 
 1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.
 
-   DevTools captures performance metrics as the page runs:
+   DevTools captures performance metrics as the webpage runs:
 
-   ![Profile the page](./index-images/profiling.png)
+   ![Profile the webpage](./index-images/profiling.png)
 
    The CPU is still throttled.  (These screenshots<!-- todo: redo --> should show the throttling warning icon (![Throttling warning icon](./index-images/throttling-warning-icon.png)) in the **Performance** tool's tab in the **Activity Bar**.)
 
@@ -136,19 +136,19 @@ These performance results show an overwhelming amount of data, but it will all m
 ## Analyze the results
 <!-- https://developer.chrome.com/docs/devtools/performance#analyze -->
 
-Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
+Once you have a recording of the webpage's performance, you can assess the webpage's performance and find the cause of any performance issues.
 
 1. In the top of the **Performance** tool, examine the **CPU** chart:
 
    ![The CPU chart and Summary panel](./index-images/cpu-chart.png)
 
-   The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the page is not performing well.
+   The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The **CPU** chart shows that these regions make up a large area, meaning that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that the webpage isn't performing well.
 
 1. Hover over the **CPU** or **NET** charts:
 
    ![Hover on a frame](./index-images/frame-hover.png)
 
-   DevTools shows a screenshot of the page at that point in time.
+   DevTools shows a screenshot of the webpage at that point in time.
 
 1. Move your mouse left and right to replay the recording.
 
@@ -159,7 +159,7 @@ Once you have a recording of the page's performance, you can assess the page's p
 ## Bonus: Open the Frame Rendering Stats overlay
 <!-- https://developer.chrome.com/docs/devtools/performance#bonus_analyze_the_optimized_version -->
 
-Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
+Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the webpage runs.  The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
 
 Continuing from above:
 
@@ -182,7 +182,7 @@ After you verified that the animation isn't performing well, the next step is to
 
 Continuing from above:
 
-1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
+1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The webpage spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
    ![The Summary panel](./index-images/summary-tab.png)
 
@@ -222,7 +222,7 @@ Continuing from above:
 
    ![The line of code that caused the forced layout](./index-images/sources-app-update.png)
 
-   The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+   The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the webpage. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
 
    See also:
    * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
@@ -239,7 +239,7 @@ Record the optimized code performance, as follows:
 
 1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.
 
-   DevTools captures performance metrics as the page runs.
+   DevTools captures performance metrics as the webpage runs.
 
 1. Wait a few seconds, and then click the **Stop** icon (![Stop icon](./index-images/stop-icon.png)) or the **Stop** button.
 
@@ -293,11 +293,11 @@ if (element.offsetTop === 0) {
 }
 ```
 
-The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the page.  The `element` variable references a single blue icon.
+The above code snippet runs on every frame of the browser rendering loop, for each blue icon on the webpage.  The `element` variable references a single blue icon.
 
 In this unoptimized version, we create a `nextPos` variable that's set to the current position of the icon, to which we add some distance.  The current position of the icon is read by using `element.offsetTop`.
 
-After making sure that the icon is still within the bounds of the page, we set its new position by using `element.style.top`, which sets inline styles on the element.
+After making sure that the icon is still within the bounds of the webpage, we set its new position by using `element.style.top`, which sets inline styles on the element.
 
 Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
@@ -328,11 +328,11 @@ if (nextPos < 0) {
 element.style.transform = `translateY(${nextPos}vh)`;
 ```
 
-In the optimized version, we first set the value of the `nextPos` variable by reading `element.style.transform` instead of using `element.offsetTop`.  Using the element's inline style is faster, because reading `element.offsetTop` forces the browser engine to know where all the elements are on the page, which requires the engine to recalculate the styles and the layout.
+In the optimized version, we first set the value of the `nextPos` variable by reading `element.style.transform` instead of using `element.offsetTop`.  Using the element's inline style is faster, because reading `element.offsetTop` forces the browser engine to know where all the elements are on the webpage, which requires the engine to recalculate the styles and the layout.
 
 We then adjust the direction of the icon, but this time we don't read `element.offsetTop` again like done in the unoptimized version.
 
-Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the page. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
+Finally, we set the new position of the icon, but this time we use `element.style.transform` instead of `element.style.top`. Using `element.style.transform` is faster, because the CSS `transform` property can be applied by the browser rendering engine without having to recalculate the layout of the webpage. When using the `transform` property, the browser considers each icon as an individual layer, and then displays these layers in the correct positions by re-compositing the final image.
 
 See also:
 * [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers)<!-- web.dev link ok, not doc'd at mdn --> in _How to create high-performance CSS animations_ at web.dev.
@@ -343,13 +343,13 @@ See also:
 ## Next steps
 <!-- https://developer.chrome.com/docs/devtools/performance#next_steps -->
 
-To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
+To get more comfortable with the **Performance** tool, practice profiling your webpages and analyzing the results.
 
 If you have any questions about your results, in the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar](./index-images/help-icon.png)) > **Feedback**.  Or, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS).
  
 Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 
-In your feedback, include screenshots or links to reproducible pages, if possible.
+In your feedback, include screenshots or links to reproducible webpages, if possible.
 
 There are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.
 
