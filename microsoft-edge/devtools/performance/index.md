@@ -83,8 +83,10 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
 
 <!-- ====================================================================== -->
-## Display the ideal number of icons to compare unoptimized vs. optimized code
+## Fill the webpage with an ideal number of icons
 <!-- https://developer.chrome.com/docs/devtools/performance#set_up_the_demo -->
+
+Before recording the performance, fill the demo webpage with an ideal number of icons to help compare the unoptimized vs. optimized code.
 
 To create a pair of performance recordings to compare the unoptimized vs. optimized code, the demo webpage first needs to be displaying a certain number of moving icons, depending on your machine.  There should be enough icons so that you can clearly see a difference in speed and smoothness of animation when you alternate between selecting the unoptimized (**Slow**) code and the **Optimized** code.
 
