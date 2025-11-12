@@ -36,6 +36,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Open the demo in InPrivate mode, and open DevTools
+<!-- https://developer.chrome.com/docs/devtools/performance#get-started -->
 
 In the following tutorial, you open DevTools on the "Sluggish Animation" demo page and use the **Performance** tool to find a performance bottleneck on the page.
 
@@ -51,13 +52,12 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo pa
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-In this article, most screenshots show DevTools undocked as a separate window.  See [Undock DevTools into a separate window](../customize/placement.md) in _Change DevTools placement (Undock, Dock to bottom, Dock to left)_.
-
-Continue with the steps below.
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
 
 
 <!-- ====================================================================== -->
 ## Simulate a mobile CPU
+<!-- https://developer.chrome.com/docs/devtools/performance#simulate_a_mobile_cpu -->
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.
 
@@ -67,103 +67,74 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
 1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).
 
-   DevTools reveals settings related to how it captures performance metrics.
+   DevTools displays settings dropdown menus and checkboxes related to capturing performance metrics.
 
-1. In the **CPU throttling** dropdown menu in the upper left, select **4x slowdown - recommended**:
+1. In the **CPU throttling** dropdown menu in the upper left, select the recommended slowdown value, such as **4x slowdown - recommended**:
 
    ![CPU throttle](./index-images/capture-settings.png)
 
-   Or, in the **Environment settings** section in the lower right, in the **CPU throttling** dropdown menu, select **4x slowdown - recommended**.  The two instances of the dropdown menu are linked.
+   Or, in the **Environment settings** section in the lower right, in the **CPU throttling** dropdown menu, select the recommended slowdown value, such as **4x slowdown - recommended**.  The two instances of the dropdown menu are linked.
 
-   DevTools throttles your CPU so that it's 4 times slower than usual.  For example, the DevTools UI becomes sluggish when using these menus.
+   The recommended throttling factor is calculated by DevTools, based on your machine.  To ensure that pages work well on even lower-end mobile devices, select a greater slowdown in the **CPU throttling** dropdown, such as **6x slowdown**.
 
-   A warning icon is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
+   DevTools throttles your CPU so that it's slower than usual.
 
-If you want to ensure that pages work well on low-end mobile devices, set **CPU** to **6x slowdown**.
-
-Continue with the steps below.
+   A throttling warning icon (![Throttling warning icon](./index-images/throttling-warning-icon.png)) is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
 
 <!-- ====================================================================== -->
-## Use the demo's UI to compare Slow vs. Optimized code with few or many animated icons
+## Display the ideal number of icons to compare unoptimized vs. optimized code
+<!-- https://developer.chrome.com/docs/devtools/performance#set_up_the_demo -->
 
-In the Sluggish Animation webpage, first we'll show _few_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing _little_ difference in the speed and smoothness of animation.  Then we'll show _many_ icons, and compare selecting the demo's **Slow** option button vs. the **Optimized** option button, producing a _great_ difference in the speed and smoothness of animation.
+To create a pair of performance recordings to compare the unoptimized vs. optimized code, the demo page first needs to be displaying a certain number of moving icons, depending on your machine.  There should be enough icons so that you can clearly see a difference in speed and smoothness of animation when you alternate between selecting the unoptimized (**Slow**) code and the **Optimized** code.
 
-Use the demo's UI, as follows:
+To display the ideal number of icons to compare the unoptimized vs. optimized code:
 
-1. Switch to the Sluggish Animation webpage.
+1. Switch to the Sluggish Animation demo page.
 
-   **Show few icons, and compare Slow vs. Optimized**
+   The **Slow** option button is initially selected, by default, so that the unoptimized code is used.
 
-   There are 10 blue icons by default.  The **Slow** option button is selected by default.
-
-1. Watch a specific blue icon move up and down.
-
-1. Select the **Optimized** option button.
-
-   The 10 blue icons move a little more quickly and smoothly.
-
-1. Select the **Slow** option button.
-
-   The 10 blue icons move a little more slowly.
-
-   **Show many icons, and compare Slow vs. Optimized**
-
-   Initially, the **Slow** option button is selected.
-
-1. Click the **Add elements** button around 10 times.
-
-   More blue icons are added and animated.  The more blue icons are shown, the slower and more erratic their motion.
-
-   If you add too many blue icons, such as by clicking the **Add elements** button around 20 times, you could max out the CPU, and then you might not observe a major difference in the results for the **Slow** vs. **Optimized** code.
+1. Click the **Add elements** button one or more times, until the blue icons start moving very slowly and erratically.
 
 1. Select the **Optimized** option button.
 
-   The blue icons move much more quickly and smoothly.
+   The icons move more quickly and smoothly.
 
-1. Select the **Slow** option button.
-
-   The blue icons move much more slowly.
-
-1. Click the **Remove elements** button around 10 times.
-
-   The remaining blue icons move faster and more smoothly.  There are always at least 10 blue icons remaining.
-
-1. Switch to the undocked DevTools window.
-
-1. In the **Performance** tool, in the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
-
-   DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
-
-Continue with the steps below.
+1. If you don't see a noticeable difference between using the unoptimized (**Slow**) and **Optimized** code, try clicking the **Remove elements** button.  If there are too many icons, that maxes out the CPU and you don't see a major difference in the results for the two versions of the code.
 
 
 <!-- ====================================================================== -->
 ## Record the unoptimized code performance
+<!-- https://developer.chrome.com/docs/devtools/performance#record -->
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.
 
-Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the _unoptimized_ version.
+Take a recording in the **Performance** tool to learn how to detect the performance bottleneck in the _unoptimized_ (**Slow**) version of the code:
 
 1. In the demo page, select the **Slow** option button.
 
-1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.  DevTools captures performance metrics as the page runs.
+   The icons move more slowly and erratically.  The unoptimized code is running and will be profiled, and there is an ideal number of icons to demonstrate poor performance and help find the performance bottleneck.
+
+1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.
+
+   DevTools captures performance metrics as the page runs:
 
    ![Profile the page](./index-images/profiling.png)
 
-1. Wait a few seconds.
+   The CPU is still throttled.  (These screenshots<!-- todo: redo --> should show the throttling warning icon (![Throttling warning icon](./index-images/throttling-warning-icon.png)) in the **Performance** tool's tab in the **Activity Bar**.)
 
-1. Click **Stop**.  DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
+1. Wait a few seconds, and then click the **Stop** icon (![Stop icon](./index-images/stop-icon.png)) or the **Stop** button.
+
+   DevTools stops recording, processes the data, then displays the results in the **Performance** tool:
 
    ![The results of the profile](./index-images/capture-results.png)
 
 These performance results show an overwhelming amount of data, but it will all make more sense shortly.
 
-Continue with the steps below.
-
 
 <!-- ====================================================================== -->
 ## Analyze the results
+<!-- https://developer.chrome.com/docs/devtools/performance#analyze -->
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
@@ -183,11 +154,10 @@ Once you have a recording of the page's performance, you can assess the page's p
 
    This action is called _scrubbing_, and it's useful for manually analyzing the progression of the performance recording.
 
-Continue with the steps below.
-
 
 <!-- ====================================================================== -->
 ## Bonus: Open the Frame Rendering Stats overlay
+<!-- https://developer.chrome.com/docs/devtools/performance#bonus_analyze_the_optimized_version -->
 
 Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the page runs. The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
 
@@ -203,11 +173,10 @@ Continuing from above:
 
 1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
 
-Continue with the steps below.
-
 
 <!-- ====================================================================== -->
 ## Find the bottleneck
+<!-- https://developer.chrome.com/docs/devtools/performance#find_the_bottleneck -->
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
 
@@ -258,17 +227,37 @@ Continuing from above:
    See also:
    * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
 
-Continue with the steps below.
-
 
 <!-- ====================================================================== -->
 ## Record the optimized code performance
 
+You recorded the _unoptimized_ code performance, above.
+
+Record the optimized code performance, as follows:
+
 1. Click **Optimized** on the demo webpage to turn on the optimized code.
 
-1. Using the workflows and tools that you just learned, take another performance recording, and then analyze the results.
+1. In the DevTools window, in the **Performance** tool, click the **Record** (![Record](./index-images/record-icon.png)) button.
+
+   DevTools captures performance metrics as the page runs.
+
+1. Wait a few seconds, and then click the **Stop** icon (![Stop icon](./index-images/stop-icon.png)) or the **Stop** button.
+
+   DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
+
+1. Using the workflows and tools that you just learned, analyze the results in the performance, like in [Analyze the results](#analyze-the-results), above.
 
    From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
+
+   **Clean up:**
+
+1. Switch to the undocked DevTools window.
+
+1. In the **Performance** tool, in the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
+
+   DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
+
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Dock to right** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
 
 This is the end of the tutorial action steps.
 
@@ -352,6 +341,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Next steps
+<!-- https://developer.chrome.com/docs/devtools/performance#next_steps -->
 
 To get more comfortable with the **Performance** tool, practice profiling your pages and analyzing the results.
 
