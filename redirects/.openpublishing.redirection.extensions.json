@@ -8,16 +8,6 @@
     // ======================================================================
     // entries older than 2025/06/19
     {
-      "source_path": "../microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
-      "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "../microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
-      "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "../microsoft-edge/extensions-chromium/store-policies/csp.md",
       "redirect_url": "/microsoft-edge/extensions/developer-guide/csp",
       "redirect_document_id": false
@@ -113,18 +103,38 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "../microsoft-edge/extensions-chromium/getting-started/extension-sideloading.md",
+      "redirect_url": "/microsoft-edge/extensions/getting-started/extension-sideloading",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions-chromium/getting-started/part1-simple-extension.md",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-viewer-popup-webpage",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "../microsoft-edge/extensions-chromium/getting-started/picture-viewer-popup-webpage.md",
-      "redirect_url": "/microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-viewer-popup-webpage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions/getting-started/picture-viewer-popup-webpage.md",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-viewer-popup-webpage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions-chromium/getting-started/part2-content-scripts.md",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-inserter-content-script",
       "redirect_document_id": false
     },
     {
       "source_path": "../microsoft-edge/extensions-chromium/getting-started/picture-inserter-content-script.md",
-      "redirect_url": "/microsoft-edge/extensions/getting-started/picture-inserter-content-script",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-inserter-content-script",
       "redirect_document_id": false
     },
     {
-      "source_path": "../microsoft-edge/extensions-chromium/getting-started/extension-sideloading.md",
-      "redirect_url": "/microsoft-edge/extensions/getting-started/extension-sideloading",
+      "source_path": "../microsoft-edge/extensions/getting-started/picture-inserter-content-script.md",
+      "redirect_url": "/microsoft-edge/extensions/samples/picture-inserter-content-script",
       "redirect_document_id": false
     },
     {
@@ -295,7 +305,12 @@
     },
     {
       "source_path": "../microsoft-edge/extensions-chromium/samples.md",
-      "redirect_url": "/microsoft-edge/extensions/samples",
+      "redirect_url": "/microsoft-edge/extensions/samples/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions/samples.md",
+      "redirect_url": "/microsoft-edge/extensions/samples/index",
       "redirect_document_id": false
     },
     {

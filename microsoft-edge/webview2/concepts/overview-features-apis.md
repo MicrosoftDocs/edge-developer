@@ -1896,7 +1896,7 @@ Tracking prevention enables the host app to control the level of tracking preven
 
 Microsoft Defender SmartScreen ("SmartScreen") is enabled by default.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.
 
-If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _Microsoft Edge Privacy Whitepaper_.
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _User data and privacy in Microsoft Edge_.
 
 See also:
 * [SmartScreen](./data-privacy.md#smartscreen) in _Data and privacy in WebView2_.
