@@ -305,7 +305,7 @@ Record the optimized code performance, as follows:
 <!-- ====================================================================== -->
 ## Step 9: Analyze the optimized code's performance
 
-*  Using the workflows and tools that you just learned, analyze the results in the performance, like in [Analyze the results](#analyze-the-results), above.
+*  Using the workflows and tools that you just learned, analyze the results in the performance, like in [Step 5: Analyze the unoptimized code's performance](#step-5-analyze-the-unoptimized-codes-performance), above.
 
    From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
