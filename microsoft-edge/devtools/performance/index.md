@@ -106,7 +106,9 @@ To fill the demo webpage with an ideal number of icons:
 
    The icons move more quickly and smoothly.
 
-1. If you don't see a noticeable difference between using the unoptimized (**Slow**) and **Optimized** code, try clicking the **Remove elements** button.  If there are too many icons, that maxes out the CPU and you don't see a major difference in the results for the two versions of the code.
+1. If you don't see a noticeable difference between using the unoptimized (**Slow**) and **Optimized** code, try clicking the **Remove elements** button.
+
+   If there are too many icons, that maxes out the CPU and you don't see a major difference in the results for the two versions of the code.
 
 
 <!-- ====================================================================== -->
