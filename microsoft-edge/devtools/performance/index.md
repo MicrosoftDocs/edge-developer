@@ -52,7 +52,7 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo we
 
    ![The demo on the left, and DevTools on the right](./index-images/get-started-side-by-side.png)
 
-1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Undock into separate window** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, click the **Undock into separate window** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -129,7 +129,7 @@ Take a recording in the **Performance** tool to learn how to detect the performa
 
    The CPU is still throttled.  (These screenshots<!-- todo: redo --> should show the throttling warning icon (![Throttling warning icon](./index-images/throttling-warning-icon.png)) in the **Performance** tool's tab in the **Activity Bar**.)
 
-1. Wait a few seconds, and then click the **Stop** icon (![Stop icon](./index-images/stop-icon.png)) or the **Stop** button.
+1. Wait a few seconds, and then click the **Stop** (![Stop icon](./index-images/stop-icon.png)) icon, or the **Stop** button.
 
    DevTools stops recording, processes the data, then displays the results in the **Performance** tool:
 
@@ -400,7 +400,7 @@ See also:
 
    DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
 
-1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Dock to right** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, click the **Dock to right** (![Dock to right icon](./index-images/dock-to-right-icon.png)) button.
 
 
 <!-- ====================================================================== -->
