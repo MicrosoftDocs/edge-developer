@@ -13,6 +13,9 @@ metadata:
   ms.localizationpriority: high
   ms.service: microsoft-edge
 
+# How to create or update a hub page
+# https://review.learn.microsoft.com/en-us/help/platform/navigation-how-create-hub-page?branch=main
+
 # =============================================================================
 # topmost section of hub page; 2 rows of 4 cards
 # Maximum of 8 items
@@ -258,17 +261,25 @@ conceptualContent:
               url: ./extensions/landing/index.yml
               itemType: overview
 
-            - text: Extensions overview
+            - text: Overview of Microsoft Edge extensions
               url: ./extensions/index.md
               itemType: overview
 
-            - text: Getting started tutorial
+            - text: Extension concepts and architecture
               url: ./extensions/getting-started/index.md
               itemType: overview
 
+            - text: "Sample: Picture viewer pop-up webpage"
+              url: ./extensions/samples/picture-viewer-popup-webpage.md
+              itemType: sample
+
+            - text: "Sample: Picture inserter using content script"
+              url: ./extensions/samples/picture-inserter-content-script.md
+              itemType: sample
+
             - text: Port a Chrome extension to Microsoft Edge
               url: ./extensions/developer-guide/port-chrome-extension.md
-              itemType: overview
+              itemType: how-to-guide
 
             - text: Alternative ways to distribute an extension
               url: ./extensions/developer-guide/alternate-distribution-options.md
@@ -280,10 +291,6 @@ conceptualContent:
 
             - text: Register as a Microsoft Edge extension developer
               url: ./extensions/publish/create-dev-account.md
-              itemType: how-to-guide
-
-            - text: "Sample: Picture viewer pop-up webpage"
-              url: ./extensions/getting-started/picture-viewer-popup-webpage.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
@@ -302,7 +309,7 @@ conceptualContent:
               url: ./progressive-web-apps/whats-new/pwa.md
               itemType: whats-new
 
-            - text: Get started with PWAs
+            - text: Get started developing a PWA
               url: ./progressive-web-apps/how-to/index.md
               itemType: get-started
 
@@ -349,7 +356,7 @@ conceptualContent:
               itemType: get-started
 
             - text: WebView2 sample apps
-              url: ./webview2/code-samples-links.md
+              url: ./webview2/samples/index.md
               itemType: download
 
             - text: Release Notes for the WebView2 SDK
@@ -536,7 +543,7 @@ additionalContent:
             - text: Visual Studio Code
               url: ./visual-studio-code/index.md
 
-            - text: Microsoft Edge Privacy Whitepaper
+            - text: User data and privacy in Microsoft Edge
               url: /legal/microsoft-edge/privacy  # https://learn.microsoft.com/legal/microsoft-edge/privacy
 # -----------------------------------------------------------------------------
 # Card

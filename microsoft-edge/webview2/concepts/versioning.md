@@ -207,6 +207,7 @@ If your code determines that an API is unavailable in the client's installed Web
 
 <!-- Local: toc order -->
 * [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.<!-- bucket 1 -->
+* [WebView2 deployment samples](../samples/deployment-samples.md)<!-- link not in article --><!-- bucket 2 -->
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- bucket 6 -->
 * [Distribute your app and the WebView2 Runtime](./distribution.md)<!-- bucket 6 -->
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- bucket 8 top -->
