@@ -15,7 +15,7 @@ The tracking prevention feature is built to uphold the Microsoft Edge browser pr
 
 See also:
 * [Welcome to Microsoft Edge - A smarter way to protect](https://www.microsoft.com/edge/welcome)<!-- redir'd to this from [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy) -->
-* [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy)
+* [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy)
 
 
 <!-- ====================================================================== -->
@@ -220,7 +220,7 @@ The **Block** and **Allow** options on the `edge://settings/content/cookies` pag
 <!-- all links in article -->
 
 * [Welcome to Microsoft Edge - A smarter way to protect](https://www.microsoft.com/edge/welcome)
-* [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy)
+* [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy)
 * [Storage Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)
 
 disconnect.me:
