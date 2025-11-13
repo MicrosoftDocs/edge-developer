@@ -35,7 +35,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Open the demo in InPrivate mode, and open DevTools
+## Step 1: Open the demo in InPrivate mode, and open DevTools
 <!-- https://developer.chrome.com/docs/devtools/performance#get-started -->
 
 In the following tutorial, you open DevTools on the "Sluggish Animation" demo webpage and use the **Performance** tool to find a performance bottleneck on the webpage.
@@ -56,7 +56,7 @@ In the following tutorial, you open DevTools on the "Sluggish Animation" demo we
 
 
 <!-- ====================================================================== -->
-## Simulate a mobile CPU
+## Step 2: Throttle the CPU, to simulate a mobile CPU
 <!-- https://developer.chrome.com/docs/devtools/performance#simulate_a_mobile_cpu -->
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a webpage, use CPU throttling to simulate how your webpage performs on mobile devices.
@@ -65,7 +65,7 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
 1. In DevTools, open the **Performance** (![Performance icon](./index-images/performance-tool-icon.png)) tool.
 
-1. Click **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)).
+1. Click the **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)) button.
 
    DevTools displays settings dropdown menus and checkboxes related to capturing performance metrics.
 
@@ -81,9 +81,13 @@ Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
    A throttling warning icon (![Throttling warning icon](./index-images/throttling-warning-icon.png)) is displayed on the **Performance** tool's tab, to remind you that throttling is enabled.
 
+1. Click the **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)) button.
+
+   The settings dropdown menus and checkboxes related to capturing performance metrics are hidden.
+
 
 <!-- ====================================================================== -->
-## Fill the webpage with an ideal number of icons
+## Step 3: Fill the webpage with an ideal number of icons
 <!-- https://developer.chrome.com/docs/devtools/performance#set_up_the_demo -->
 
 Before recording the performance, fill the demo webpage with an ideal number of icons to help compare the unoptimized vs. optimized code.
@@ -96,7 +100,7 @@ To fill the demo webpage with an ideal number of icons:
 
    The **Slow** option button is initially selected, by default, so that the unoptimized code is used.
 
-1. Click the **Add elements** button one or more times, until the blue icons start moving very slowly and erratically.
+1. Click the **Add elements** button multiple times, until the blue icons start moving very slowly and erratically.
 
 1. Select the **Optimized** option button.
 
@@ -106,7 +110,7 @@ To fill the demo webpage with an ideal number of icons:
 
 
 <!-- ====================================================================== -->
-## Record the unoptimized code performance
+## Step 4: Record the unoptimized code's performance
 <!-- https://developer.chrome.com/docs/devtools/performance#record -->
 
 When you run the optimized version of the webpage code, the blue icons move faster.  Why is that?  Both versions of the code are supposed to move the icons the same amount of space in the same amount of time.
@@ -135,7 +139,7 @@ These performance results show an overwhelming amount of data, but it will all m
 
 
 <!-- ====================================================================== -->
-## Analyze the results
+## Step 5: Analyze the unoptimized code's performance
 <!-- https://developer.chrome.com/docs/devtools/performance#analyze -->
 
 Once you have a recording of the webpage's performance, you can assess the webpage's performance and find the cause of any performance issues.
@@ -158,47 +162,87 @@ Once you have a recording of the webpage's performance, you can assess the webpa
 
 
 <!-- ====================================================================== -->
-## Bonus: Open the Frame Rendering Stats overlay
+## Step 6: Open the Frame Rendering Stats overlay
 <!-- https://developer.chrome.com/docs/devtools/performance#bonus_analyze_the_optimized_version -->
 
-Another handy tool is the **Frame Rendering Stats** overlay, which provides real-time estimates for FPS as the webpage runs.  The **Frame Rendering Stats** overlay is not required for this tutorial but may provide helpful insight.
+Another handy tool is the **Frame Rendering Stats** overlay, sometimes called the _FPS meter_.  The **Frame Rendering Stats** overlay provides realtime estimates for frames per second (FPS) while the webpage runs.  The **Frame Rendering Stats** overlay is not required for this tutorial, but may provide helpful insight.
 
-Continuing from above:
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then select **Toggle Quick View panel**.
 
-1. In DevTools, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS) to open the **Command Menu**.
+   Or, press **Esc** once or twice.
 
-1. Start typing `Rendering` in the **Command Menu** and click **Show Rendering**.
+   The **Quick View** panel is displayed at the bottom of DevTools.
 
-1. In the **Rendering** tool, turn on **Frame Rendering Stats**.  A new overlay appears in the top-left of your webpage.
+1. In the **Quick View** toolbar, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button, and then select **Rendering**.
 
-   ![The FPS overlay](./index-images/fps-meter-overlay.png)
+   The **Rendering** tool opens in the **Quick View** panel.
 
-1. When you are done reviewing the FPS data, clear the **Frame Rendering Stats** checkbox to hide the overlay.
+1. In the **Rendering** tool, select the **Frame Rendering Stats** checkbox:
+
+   ![Rendering tool with Frame Rendering Stats checkbox](./index-images/frame-rendering-stats-checkbox.png)
+
+1. Switch to the demo webpage.
+
+   The Frame Rendering Stats overlay is displayed:
+
+   ![The Frame Rendering Stats overlay](./index-images/fps-meter-overlay.png)
+
+   The overlay has the following sections:
+   * **Frame Rate**
+   * **GPU raster**
+   * **GPU memory**
+
+   **Turn off the overlay:**
+
+1. Switch to the DevTools window.
+
+1. In the **Rendering** tool, clear the **Frame Rendering Stats** checkbox.
+
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then select **Toggle Quick View panel**.
+
+   Or, press **Esc**.
+
+   The **Quick View** panel is hidden.
+
+See also:
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
 
 
 <!-- ====================================================================== -->
-## Find the bottleneck
+## Step 7: Find the bottleneck
 <!-- https://developer.chrome.com/docs/devtools/performance#find_the_bottleneck -->
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
 
-Continuing from above:
+1. At the bottom of the **Performance** tool, select the **Summary** tab:
 
-1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The webpage spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
+   ![The Summary tab](./index-images/summary-tab.png)
 
-   ![The Summary panel](./index-images/summary-tab.png)
+   When no events are selected, the **Summary** tab displays a breakdown of activity.  The webpage spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
-1. Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.
+1. In the **Performance** tool, click the **Main** row, to expand it.
+
+   DevTools displays a flame chart of activity on the main thread, over time:
 
    ![The Main section](./index-images/main.png)
 
-1. There is a lot of data in the recording.  To zoom into a portion of the recording, click and drag in the **Overview** area toward the top of the **Performance** tool.  The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
+   * The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.
+
+   * The y-axis represents the call stack.  When events are stacked on top of each other, it means that the upper events caused the lower events.
+
+   There's a lot of data in the recording.
+
+1. In the **Overview** area below the toolbar, click and drag horizontally, to zoom into a portion of the recording:
 
    ![Zoom into a section](./index-images/main-zoomed.png)
 
+   The **Overview** area includes the **CPU** and **NET** charts (indicated on the right).
+
+   The **Main** section (below the **Overview**) and the **Summary** tab only display information for the selected portion of the recording.
+
    Another way to change the selected area is to put focus on the **Main** section, click the background or an event, and then press:
-   * `W` to zoom in, `S` to zoom out.
-   * `A` to move selection left, `D` to move selection right.
+   * `W` to zoom in, or `S` to zoom out.
+   * `A` to move the selection left, or `D` to move the selection right.
 
 1. Click an **Animation Frame Fired** event.
 
@@ -208,30 +252,40 @@ Continuing from above:
 
    ![More information about the Animation Frame Fired event](./index-images/animation-frame-fired.png)
 
-1. Click the **Reveal** link.  DevTools highlights the event that initiated the **Animation Frame Fired** event.
+1. Click the **Reveal** link.
 
-1. Click the **app.js:125** link.  The relevant line of source code is displayed in the **Sources** tool.
+   DevTools highlights the event that initiated the **Animation Frame Fired** event.
 
-1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad. Or, press **W**.
+1. Click the **app.js:125** link.
+
+   The relevant line of source code is displayed in the **Sources** tool.
+
+1. Zoom in on the **Animation Frame Fired** event and its child events, by using the mouse wheel or trackpad.
+
+   Or, press **W**.
 
    You can now see the events that occur when a single frame of the animation is rendered. The **update** function is called, which, in turn, calls the **updateSlow** function, which triggers many **Recalculate Style** and **Layout** events:
    
    ![The Animation Frame Fired event and its child events](./index-images/animation-frame-children.png)
 
-1. Click one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  There's a warning about "forced reflows" (re-layout).
+1. Click one of the purple **Layout** events.
 
-1. In the **Summary** panel, click the **app.js:104** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout in the **Sources** tool:
+   DevTools provides more information about the event in the **Summary** panel.  There's a warning about "forced reflows" (re-layout).
+
+1. In the **Summary** panel, click the **app.js:104** link under **Layout Forced**.
+
+   DevTools takes you to the line of code that forced the layout in the **Sources** tool:
 
    ![The line of code that caused the forced layout](./index-images/sources-app-update.png)
 
-   The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the webpage. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+The problem with the unoptimized code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the webpage. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
 
-   See also:
-   * [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
+See also:
+* [Avoid forced synchronous layouts](https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts)<!-- web.dev link ok, no perf doc'n at mdn --> in _Avoid large, complex layouts and layout thrashing_ at web.dev.
 
 
 <!-- ====================================================================== -->
-## Record the optimized code performance
+## Step 8: Record the optimized code's performance
 
 You recorded the _unoptimized_ code performance, above.
 
@@ -247,25 +301,17 @@ Record the optimized code performance, as follows:
 
    DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
 
-1. Using the workflows and tools that you just learned, analyze the results in the performance, like in [Analyze the results](#analyze-the-results), above.
+
+<!-- ====================================================================== -->
+## Step 9: Analyze the optimized code's performance
+
+*  Using the workflows and tools that you just learned, analyze the results in the performance, like in [Analyze the results](#analyze-the-results), above.
 
    From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
-   **Clean up:**
-
-1. Switch to the undocked DevTools window.
-
-1. In the **Performance** tool, in the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
-
-   DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
-
-1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Dock to right** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
-
-This is the end of the tutorial action steps.
-
 
 <!-- ====================================================================== -->
-## Analyze the unoptimized code
+## Step 10: Analyze the unoptimized code
 
 Compare this snippet of JavaScript from the unoptimized version of the app:
 
@@ -305,7 +351,7 @@ Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 
 
 <!-- ====================================================================== -->
-## Analyze the optimized code
+## Step 11: Analyze the optimized code
 
 The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
 
@@ -339,6 +385,22 @@ Finally, we set the new position of the icon, but this time we use `element.styl
 See also:
 * [Avoid properties that trigger layout or paint](https://web.dev/articles/animations-guide#triggers)<!-- web.dev link ok, not doc'd at mdn --> in _How to create high-performance CSS animations_ at web.dev.
 * [Transitioning opacity](https://developer.mozilla.org/docs/Web/CSS/opacity#transitioning_opacity) in _opacity_ at MDN.
+
+
+<!-- ====================================================================== -->
+## Step 12: Reset DevTools settings
+
+1. Switch to the undocked DevTools window.
+
+1. In the **Performance** tool, click the **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)) button.
+
+   DevTools displays settings dropdown menus and checkboxes related to capturing performance metrics.
+
+1. In the **CPU throttling** dropdown menu in the upper left, select **No throttling**.
+
+   DevTools stops throttling the CPU.  The warning icon is removed from the **Performance** tool's tab.
+
+1. In the upper right of DevTools, click the **Customize and control DevTools** (![Customize and control DevTools icon](./index-images/customize-and-control-devtools-icon.png)) button, and then next to **Dock location**, select **Dock to right** (![Undock into separate window icon](./index-images/undock-into-separate-window-icon.png)).
 
 
 <!-- ====================================================================== -->
