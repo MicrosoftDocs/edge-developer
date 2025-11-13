@@ -197,7 +197,7 @@ landingContent:
       - linkListType: sample
         links:
           - text: Sample code for DevTools
-            url: ../sample-code/sample-code.md
+            url: ../samples/index.md
 
 # =============================================================================
 # Row 3
