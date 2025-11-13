@@ -162,7 +162,7 @@ Once you have a recording of the webpage's performance, you can assess the webpa
 
 
 <!-- ====================================================================== -->
-## Step 6: Open the Frame Rendering Stats overlay
+## Step 6: Display the Frame Rendering Stats overlay
 <!-- https://developer.chrome.com/docs/devtools/performance#bonus_analyze_the_optimized_version -->
 
 Another handy tool is the **Frame Rendering Stats** overlay, sometimes called the _FPS meter_.  The **Frame Rendering Stats** overlay provides realtime estimates for frames per second (FPS) while the webpage runs.  The **Frame Rendering Stats** overlay is not required for this tutorial, but may provide helpful insight.
@@ -209,7 +209,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Step 7: Find the bottleneck
+## Step 7: Find the performance bottleneck
 <!-- https://developer.chrome.com/docs/devtools/performance#find_the_bottleneck -->
 
 After you verified that the animation isn't performing well, the next step is to answer the question "why?"
