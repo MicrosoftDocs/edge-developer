@@ -133,7 +133,7 @@ To test background syncing:
 
 1.  Reload the app. The movie details now appear.
 
-To see the sample code, check out the [movies-db-pwa](https://github.com/captainbrosset/movies-db-pwa/) repo.<!-- todo: move to Demos repo -->
+To see the sample code, check out the [movies-db-pwa](https://github.com/captainbrosset/movies-db-pwa/) repo.<!-- todo: move to Demos repo, then update repo's Readme and this article and pwa/samples/index.md -->
 
 
 <!-- ------------------------------ -->

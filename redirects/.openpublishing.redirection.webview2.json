@@ -40,6 +40,11 @@
     // ======================================================================
     // Getting started
     {
+      "source_path": "../microsoft-edge/webview2/code-samples-links.md",
+      "redirect_url": "/microsoft-edge/webview2/samples/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "../microsoft-edge/webview2/gettingstarted/win32.md",
       "redirect_url": "/microsoft-edge/webview2/get-started/win32",
       "redirect_document_id": false
@@ -62,6 +67,11 @@
     // /Getting started
     // ======================================================================
     // How-to
+    {
+      "source_path": "../microsoft-edge/webview2/concepts/deployment-distribution.md",
+      "redirect_url": "/microsoft-edge/webview2/concepts/distribution",
+      "redirect_document_id": false
+    },
     {
       "source_path": "../microsoft-edge/webview2/howto/chromium-devtools-protocol.md",
       "redirect_url": "/microsoft-edge/webview2/how-to/chromium-devtools-protocol",
