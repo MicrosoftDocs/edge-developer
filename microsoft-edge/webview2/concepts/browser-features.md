@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
-ms.date: 03/14/2022
+ms.date: 11/14/2025
 ---
 # Differences between Microsoft Edge and WebView2
 
@@ -38,10 +38,9 @@ The following table displays the WebView2 features that differ from the Microsof
 *  **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.
 
 *  **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
+   * This article doesn't cover turning a feature on or off by using a command-line switch.  See [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
-> [!NOTE]
-> This article doesn't cover modifying features by using command-line switches.  For more information about turning on and off features by using command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
-
+<!-- todo: update -->
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
 | Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
@@ -76,11 +75,13 @@ The following table displays the WebView2 features that differ from the Microsof
 
 The following WebView2 platform features are currently unavailable:
 
+<!-- todo: update -->
 | Feature | Details |
 |:--- | :--- |
 | Push Notifications | This feature isn't implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
 | Periodic Background Sync | Periodic Background Sync events will never trigger. |
+
 
 <!-- ====================================================================== -->
 ## Blocked internal URLs
