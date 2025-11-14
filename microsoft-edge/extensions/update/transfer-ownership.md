@@ -13,8 +13,8 @@ ms.date: 11/14/2025
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension to another party.  Transferring ownership of an extension can be essential for various reasons, such as organizational changes, project handovers, or streamlining management processes.  Your Microsoft Edge extension can continue to thrive under new ownership without any disruptions.
 
 
-<!-- ---------------------------------------------------------------------- -->
-## Initiating the ownership transfer request
+<!-- ====================================================================== -->
+## Initiate the ownership transfer request
 
 The current owner of the extension must send an email, as follows:
 
@@ -38,8 +38,8 @@ The current owner of the extension must send an email, as follows:
 1. Send the email.
 
 
-<!-- ---------------------------------------------------------------------- -->
-## Processing the ownership transfer request
+<!-- ====================================================================== -->
+## Processing of the ownership transfer request
 
 The Microsoft Edge extensions team will review the request and, to ensure legal compliance, will initiate an explicit confirmation process with both the source and target publishers before proceeding with the original request.
 
@@ -58,8 +58,8 @@ This process typically takes approximately three weeks to complete, depending on
 For any questions, contact [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 
 
-<!-- ------------------------------ -->
-#### Update the extension after ownership transfer
+<!-- ====================================================================== -->
+## Update the extension after ownership transfer
 
 After the ownership transfer, the new owner should publish an update of the extension promptly, to ensure that accurate and up-to-date information is displayed.
 
