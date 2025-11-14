@@ -70,9 +70,12 @@
           href: ./web-platform/release-notes/134.md
           displayName: Microsoft Edge 134 web platform release notes (Mar. 2025)  # page title
 
-        - name: Microsoft Edge 133
-          href: ./web-platform/release-notes/133.md
-          displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
+        # keep 10 items above
+        - name: Archive
+          items:
+            - name: Microsoft Edge 133
+              href: ./web-platform/release-notes/133.md
+              displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: ./web-platform/site-impacting-changes.md
@@ -97,22 +100,26 @@
           href: ./web-platform/writing-assistance-apis.md
 # /Experimental web platform features
 # =============================================================================
-# Microsoft Edge DevTools
+# -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
       items:
-# Landing page -----------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Microsoft Edge DevTools documentation
-          href: ./devtools/landing/index.yml
-# Overview of DevTools --------------------------------------------------------
+          href: ./devtools/landing/index.yml  # landing page
+# -----------------------------------------------------------------------------
         - name: Overview of DevTools
           href: ./devtools/overview.md
-# What's New ------------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: What's New
           items:
             - name: What's New in Microsoft Edge DevTools
               href: ./devtools/whats-new/whats-new.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 142
+              href: ./devtools/whats-new/2025/10/devtools-142.md
+              displayName: What's New in DevTools (Microsoft Edge 142)  # page title
+
             - name: Microsoft Edge 141
               href: ./devtools/whats-new/2025/10/devtools-141.md
               displayName: What's New in DevTools (Microsoft Edge 141)  # page title
@@ -149,15 +156,13 @@
               href: ./devtools/whats-new/2025/02/devtools-133.md
               displayName: What's New in DevTools (Microsoft Edge 133)  # page title
 
-            - name: Microsoft Edge 132
-              href: ./devtools/whats-new/2025/01/devtools-132.md
-              displayName: What's New in DevTools (Microsoft Edge 132)  # page title
-
             # keep 10 items above
+# -------------------------------------
             - name: Archive
               items:
-                - name: What's New in DevTools archive
-                  href: ./devtools/whats-new/whats-new-archive.md
+                - name: Microsoft Edge 132
+                  href: ./devtools/whats-new/2025/01/devtools-132.md
+                  displayName: What's New in DevTools (Microsoft Edge 132)  # page title
 
                 - name: Microsoft Edge 131
                   href: ./devtools/whats-new/2024/11/devtools-131.md
@@ -366,10 +371,9 @@
                 - name: Microsoft Edge 80
                   href: ./devtools/whats-new/2019/12/devtools.md
                   displayName: What's New in DevTools (Microsoft Edge 80)  # page title
-# Experimental features ------------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Experimental features
           items:
-
             - name: Experimental features in Microsoft Edge DevTools
               href: ./devtools/experimental-features/index.md
               displayName: Experimental features, settings
@@ -377,19 +381,26 @@
             - name: Share enhanced performance and memory traces
               href: ./devtools/experimental-features/share-traces.md
               displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
-# TOOLS =======================================================================
+# -----------------------------------------------------------------------------
+        - name: Samples
+          items:
+            - name: Sample code for DevTools
+              href: ./devtools/samples/index.md
+              displayName: sample code, demo
+# -----------------------------------------------------------------------------
         - name: Tools
           items:
             - name: About the list of tools
               href: ./devtools/about-tools.md
-# Default tools ===============================================================
-# Inspect tool ----------------------------------------------------------------
+# =============================================================================
+# Default tools 
+# -----------------------------------------------------------------------------
             - name: Inspect tool
               items:
                 - name: Analyze pages using the Inspect tool
                   href: ./devtools/css/inspect.md
                   displayName: Inspect tool
-# Device Emulation ------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Device Emulation
               items:
                 - name: Emulate mobile devices (Device Emulation)
@@ -403,13 +414,13 @@
                 - name: Emulate and test other browsers
                   href: ./devtools/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
-# Welcome tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Welcome tool
               items:
                 - name: Welcome tool
                   href: ./devtools/welcome/welcome-tool.md
                   displayName: Welcome tool
-# Elements tool ---------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
@@ -439,7 +450,7 @@
                 - name: Get started viewing and changing the DOM
                   href: ./devtools/dom/index.md
                   displayName: Elements tool
-# Console tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Console tool
               items:
                 - name: Console overview
@@ -485,7 +496,7 @@
                 - name: Filter Console messages
                   href: ./devtools/console/console-filters.md
                   displayName: Console tool
-# Sources tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Sources tool, for editing files and debugging JavaScript
               items:
                 - name: Sources tool overview
@@ -543,7 +554,7 @@
                 - name: Securely debug original code by using Azure Artifacts symbol server source maps
                   href: ./devtools/javascript/consume-source-maps-from-azure.md
                   displayName: Sources tool, source maps, Azure Artifacts symbol server
-# Network tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Network tool
               items:
                 - name: Inspect network activity
@@ -565,7 +576,7 @@
                 - name: Service worker improvements
                   href: ./devtools/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
-# Performance tool ------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
                 - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
@@ -603,7 +614,7 @@
                 - name: Customize performance profile with extensibility APIs
                   href: ./devtools/performance/extension.md
                   displayName: Performance tool
-# Memory tool -----------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Memory tool
               items:
                 - name: Fix memory problems
@@ -636,7 +647,7 @@
                 - name: The heap snapshot file format
                   href: ./devtools/memory-problems/heap-snapshot-schema.md
                   displayName: Memory tool
-# Application tool ------------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Application tool, for storage and PWAs
               items:
                 - name: Application tool, to manage storage
@@ -683,75 +694,76 @@
                   href: ./devtools/javascript/background-services.md
                   displayName: Application tool
 # /Default tools
-# More tools ==================================================================
+# =============================================================================
+# More tools
             - name: More tools
               items:
-# 3D View tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: 3D View tool
                   items:
                     - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
                       href: ./devtools/3d-view/index.md
                       displayName: 3D View tool, composited layers
-# Animations tool -------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Animations tool
                   items:
                     - name: Inspect and modify CSS animation effects
                       href: ./devtools/inspect-styles/animations.md
                       displayName: Animations tool
-# Changes tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Changes tool
                   items:
                     - name: Track changes to files using the Changes tool
                       href: ./devtools/changes/changes-tool.md
                       displayName: Changes tool
-# Coverage tool ---------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Coverage tool
                   items:
                     - name: Find unused JavaScript and CSS code with the Coverage tool
                       href: ./devtools/coverage/index.md
                       displayName: Coverage tool
-# Crash analyzer tool ---------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Crash analyzer tool
                   items:
                     - name: Crash analyzer tool
                       href: ./devtools/crash-analyzer/index.md
-# CSS overview tool -----------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: CSS overview tool
                   items:
                     - name: Optimize CSS styles with the CSS overview tool
                       href: ./devtools/css/css-overview-tool.md
                       displayName: CSS overview tool
-# Developer resources tool ----------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Developer resources tool
                   items:
                     - name: Developer resources tool
                       href: ./devtools/developer-resources/developer-resources.md
                       displayName: Developer resources tool
-# Issues tool -----------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Issues tool
                   items:
                     - name: Find and fix problems using the Issues tool
                       href: ./devtools/issues/index.md
                       displayName: Issues tool
-# Lighthouse tool -------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Lighthouse tool  # jump page; main article is in Accessibility
                   items:
                     - name: Lighthouse tool
                       href: ./devtools/lighthouse/lighthouse-tool.md
                       displayName: Lighthouse tool
-# Media tool ------------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
                     - name: View and debug media players information
                       href: ./devtools/media-panel/index.md
                       displayName: Media tool
-# Memory inspector tool -------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Memory inspector tool
                   items:
                     - name: Inspect a JavaScript ArrayBuffer with the Memory inspector tool  # real content pending
                       href: ./devtools/memory-inspector/memory-inspector-tool.md
                       displayName: Memory inspector tool
-# Network conditions tool -----------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Network conditions tool
                   items:
                     - name: Network conditions tool  # starter page w/ png and links
@@ -761,36 +773,36 @@
                     - name: Override the user agent string
                       href: ./devtools/device-mode/override-user-agent.md
                       displayName: Network Conditions tool, Device Emulation, Device Emulator
-# Network Console tool -----------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Network Console tool
                   items:
                     - name: Compose and send web API requests using the Network Console tool
                       href: ./devtools/network-console/network-console-tool.md
-# Network request blocking tool -----------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Network request blocking tool
                   items:
                     - name: Block network requests
                       href: ./devtools/network-request-blocking/network-request-blocking-tool.md
                       displayName: Network request blocking tool
-# Performance monitor tool ----------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Performance monitor tool
                   items:
                     - name: Measure runtime performance of a page using the Performance monitor tool
                       href: ./devtools/performance-monitor/performance-monitor-tool.md
                       displayName: Performance monitor tool
-# Quick source tool -----------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Quick source tool
                   items:
                     - name: Display or edit source files using the Quick source tool
                       href: ./devtools/quick-source/quick-source-tool.md
                       displayName: Quick source tool  # also indexed in "Sources tool overview"
-# Recorder tool -----------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Recorder tool
                   items:
                     - name: Record and replay user flows and measure performance
                       href: ./devtools/recorder/index.md
                       displayName: Recorder tool
-# Rendering tool --------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 # some Rendering articles are in Accessibility section
                 - name: Rendering tool
                   items:
@@ -805,37 +817,37 @@
                     - name: Force print preview mode
                       href: ./devtools/css/print-preview.md
                       displayName: Rendering tool
-# Search tool -----------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Search tool
                   items:
                     - name: Find source files for a page using the Search tool
                       href: ./devtools/search/search-tool.md
                       displayName: Search tool
-# Security tool ---------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Security tool
                   items:
                     - name: Understand security issues using the Security tool
                       href: ./devtools/security/index.md
                       displayName: Security tool
-# Sensors tool ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Sensors tool
                   items:
                     - name: Emulate device sensors
                       href: ./devtools/sensors/index.md
                       displayName: Device Emulation
-# Source Maps Monitor tool ----------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool
                       href: ./devtools/source-maps-monitor/source-maps-monitor-tool.md
                       displayName: Source maps monitor tool
-# WebAudio tool ---------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: WebAudio tool
                   items:
                     - name: WebAudio tool
                       href: ./devtools/webaudio/webaudio-tool.md
                       displayName: WebAudio tool
-# WebAuthn tool ---------------------------------------------------------------
+# -----------------------------------------------------------------------------
                 - name: WebAuthn tool
                   items:
                     - name: Emulate authenticators and debug WebAuthn
@@ -843,17 +855,17 @@
                       displayName: WebAuthn tool
 # /More tools
 # /Tools
-# Command Menu ----------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Command Menu and keyboard shortcuts
           items:
             - name: Run commands in the Command Menu
               href: ./devtools/command-menu/index.md
               displayName: Command Menu
-# Keyboard shortcuts ----------------------------------------------------------
+# -----------------------------------------------------------------------------
             - name: Keyboard shortcuts
               href: ./devtools/shortcuts/index.md
               displayName: Keyboard shortcuts
-# Settings pages and Customize menu -------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Settings and customization UI
           items:
             - name: Customize DevTools  # orig: "Customization"
@@ -879,7 +891,7 @@
             - name: Throttling
               href: ./devtools/settings/throttling.md
               displayName: Settings
-# Remote debugging ------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Remote debugging
           items:
             - name: Remotely debug Android devices
@@ -901,23 +913,23 @@
             - name: Remotely debug Windows devices
               href: ./devtools/remote-debugging/windows.md
               displayName: Remote debugging, remote debugger
-# Accessibility testing & features --------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Accessibility
           items:
             - name: Accessibility-testing features  # orig: Accessibility features reference (broken up & replaced)
               href: ./devtools/accessibility/reference.md
               displayName: Elements tool, Accessibility tab
-
+# -------------------------------------
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
               href: ./devtools/accessibility/test-inspect-tool.md
               displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast
-
+# -------------------------------------
 # Lighthouse tool (distinct from Tools > Lighthouse tool bucket)
             - name: Test accessibility using Lighthouse  # was part of "Accessibility features reference"
               href: ./devtools/accessibility/lighthouse.md
               displayName: Lighthouse tool
-
+# -------------------------------------
 # Elements tool > Accessibility tab
             - name: Navigate DevTools with assistive technology
               href: ./devtools/accessibility/navigation.md
@@ -926,13 +938,13 @@
             - name: Track which element has focus  # orig: "Track element focus"
               href: ./devtools/accessibility/focus.md
               displayName: Elements tool, Accessibility tab
-
+# -------------------------------------
             - name: Alt-text for images
               items:
                 - name: Automatically test a webpage for accessibility issues
                   href: ./devtools/accessibility/test-issues-tool.md
                   displayName: Issues tool
-
+# -------------------------------------
             - name: Keyboard support
               items:
                 - name: Check for keyboard support by using the Tab and Enter keys
@@ -950,7 +962,7 @@
                 - name: Test keyboard support using the Source Order Viewer
                   href: ./devtools/accessibility/test-tab-key-source-order-viewer.md
                   displayName: Elements tool, Accessibility tab
-
+# -------------------------------------
             - name: Text contrast
               items:
                 - name: Test text-color contrast using the Color Picker  # was part of "Accessibility features reference"
@@ -968,7 +980,7 @@
                 - name: Check for contrast issues with dark theme and light theme
                   href: ./devtools/accessibility/test-dark-mode.md
                   displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
-
+# -------------------------------------
             - name: Screen reader support
               items:
                 - name: Test accessibility using the Accessibility tab  # was part of "Accessibility features reference"
@@ -978,7 +990,7 @@
                 - name: Check the Accessibility Tree for keyboard and screen reader support
                   href: ./devtools/accessibility/test-accessibility-tree.md
                   displayName: Elements tool, Accessibility tab, screen readers
-
+# -------------------------------------
 # Rendering tool (distinct from Tools > Rendering tool)
             - name: Vision deficiencies (Rendering tool)
               items:
@@ -1001,7 +1013,7 @@
                 - name: Verify that a page is usable with UI animation turned off
                   href: ./devtools/accessibility/test-reduced-ui-motion.md
                   displayName: Rendering tool
-
+# -------------------------------------
 # Device Emulation (distinct from Tools > Device Emulation)
             - name: Usable when narrow (Device Emulation)
               items:
@@ -1009,19 +1021,15 @@
                   href: ./devtools/accessibility/narrow.md
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
-# Sample code -----------------------------------------------------------------
-        - name: Sample code for DevTools
-          href: ./devtools/sample-code/sample-code.md
-          displayName: sample code, demo
-# IE mode ---------------------------------------------------------------------
+# -----------------------------------------------------------------------------
         - name: Use DevTools in Internet Explorer mode (IE mode)
           href: ./devtools/ie-mode/index.md
           displayName: IE mode
-# DevTools Protocol -----------------------------------------------------------
+
         - name: Microsoft Edge DevTools Protocol
           href: ./devtools/protocol/index.md
           displayName: DevTools Protocol
-# Contact ---------------------------------------------------------------------
+
         - name: Contact the Microsoft Edge DevTools team
           href: ./devtools/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
@@ -1031,10 +1039,7 @@
           items:
             - name: Microsoft Edge DevTools extension for Visual Studio Code
               href: ./visual-studio-code/microsoft-edge-devtools-extension.md
-
-          # - name: Use DevTools as an IDE
-          #   href: 
-
+# -----------------------------------------------------------------------------
             - name: Get started
               items:
                 - name: Installing the DevTools extension for Visual Studio Code
@@ -1056,7 +1061,7 @@
 
                 - name: Opening DevTools and the DevTools browser
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md
-
+# -----------------------------------------------------------------------------
             - name: Tools and features
               items:
                 - name: Integration with Visual Studio Code debugging
@@ -1083,7 +1088,7 @@
 
                 - name: Application tool integration
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/application-tool-integration.md
-
+# -----------------------------------------------------------------------------
             - name: Customize
               items:
                 - name: Changing the extension settings
@@ -1098,7 +1103,7 @@
                 - name: Troubleshooting the DevTools extension
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/troubleshooting.md
                   displayName: error messages
-
+# -----------------------------------------------------------------------------
             - name: Getting in touch with the Microsoft Edge DevTools Extension team
               href: ./visual-studio-code/microsoft-edge-devtools-extension/contact-devtools-extension-team.md
 #   /DevTools for Visual Studio Code
@@ -1113,7 +1118,7 @@
 
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge extensions
@@ -1121,26 +1126,31 @@
 
             - name: Roadmap for Microsoft Edge extensions
               href: ./extensions/whats-new/roadmap.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Get started
           items:
             - name: Extension concepts and architecture
               href: ./extensions/getting-started/index.md
 
-            - name: "Sample: Picture viewer pop-up webpage"
-              href: ./extensions/getting-started/picture-viewer-popup-webpage.md
-
-            - name: "Sample: Picture inserter using content script"
-              href: ./extensions/getting-started/picture-inserter-content-script.md
-
             - name: Sideload an extension to install and test it locally
               href: ./extensions/getting-started/extension-sideloading.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
+        - name: Samples
+          items:
+            - name: Samples for Microsoft Edge extensions
+              href: ./extensions/samples/index.md
+
+            - name: "Sample: Picture viewer pop-up webpage"
+              href: ./extensions/samples/picture-viewer-popup-webpage.md
+
+            - name: "Sample: Picture inserter using content script"
+              href: ./extensions/samples/picture-inserter-content-script.md
+# -----------------------------------------------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
             - name: Port a Chrome extension to Microsoft Edge
               href: ./extensions/developer-guide/port-chrome-extension.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Develop an extension
           items:
             - name: Manifest files
@@ -1157,7 +1167,7 @@
 
                 - name: Migrate an extension from Manifest V2 to V3
                   href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-
+# -------------------------------------
             - name: JavaScript APIs
               items:
                 - name: Supported APIs for Microsoft Edge extensions
@@ -1190,7 +1200,7 @@
 
             - name: Defining match patterns for an extension to access file URLs
               href: ./extensions/developer-guide/match-patterns.md
-
+# -------------------------------------
             - name: Policies for extensions
               items:
                 - name: App Developer Agreement Addendum for Microsoft Edge program users
@@ -1200,12 +1210,12 @@
                 - name: Developer policies for extensions at Microsoft Edge Add-ons
                   href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Register as an extension developer
           items:
             - name: Register as a Microsoft Edge extension developer
               href: ./extensions/publish/create-dev-account.md
-
+# -------------------------------------
             - name: Register as an enterprise developer
               items:
                 - name: Verify your company account information
@@ -1213,13 +1223,13 @@
 
                 - name: Add users to the Microsoft Edge program
                   href: ./extensions/publish/aad-account.md
-
+# -------------------------------------
             - name: Register and sign in to Partner Center using a GitHub account
               href: ./extensions/publish/github.md
 
             - name: Manage account settings
               href: ./extensions/publish/manage-settings.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Publish an extension
           items:
             - name: Publish a Microsoft Edge extension
@@ -1244,7 +1254,7 @@
           items:
             - name: Update a Microsoft Edge extension
               href: ./extensions/update/update-extension.md
-
+# -------------------------------------
             - name: REST API for updating an extension
               items:
                 - name: Use the REST API to update an extension at Microsoft Edge Add-ons
@@ -1252,13 +1262,13 @@
 
                 - name: REST API Reference for updating an extension at Microsoft Edge Add-ons
                   href: ./extensions/update/api/addons-api-reference.md
-
+# -------------------------------------
             - name: Set an externally installed extension to automatically update
               href: ./extensions/update/auto-update.md
 
             - name: Transfer ownership of an extension
               href: ./extensions/update/transfer-ownership.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Analytics and user reviews
           items:
             - name: View Microsoft Edge extensions analytics dashboard
@@ -1267,19 +1277,14 @@
             - name: Reply to user reviews of an extension
               href: ./extensions/publish/reply-user-reviews.md
               displayName: Respond to user reviews
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Best practices
           items:
             - name: Best practices for extensions
               href: ./extensions/developer-guide/best-practices.md
             - name: Minimize an extension's impact on page load time
               href: ./extensions/developer-guide/minimize-page-load-time-impact.md
-# -------------------------------------
-        - name: Samples
-          items:
-            - name: Samples for Microsoft Edge extensions
-              href: ./extensions/samples.md
-# -------------------------------------
+# -----------------------------------------------------------------------------
         - name: Contact the Microsoft Edge extensions team
           href: ./extensions/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues
@@ -1292,21 +1297,32 @@
           href: ./progressive-web-apps/landing/index.yml
           displayName: landing
 
-        - name: Overview and getting started
+        - name: Overview of Progressive Web Apps (PWAs)
+          href: ./progressive-web-apps/index.md
+# -----------------------------------------------------------------------------
+        - name: What's New in PWAs
+          href: ./progressive-web-apps/whats-new/pwa.md
+          displayName: release notes, announcements
+# -----------------------------------------------------------------------------
+        - name: Get started
           items:
-            - name: Overview of Progressive Web Apps (PWAs)
-              href: ./progressive-web-apps/index.md
-
-            - name: What's New in PWAs
-              href: ./progressive-web-apps/whats-new/pwa.md
-              displayName: release notes, announcements
-
-            - name: Get started with PWAs
-              href: ./progressive-web-apps/how-to/index.md
-
             - name: Use PWAs in Microsoft Edge
               href: ./progressive-web-apps/ux.md
 
+            - name: Get started developing a PWA
+              href: ./progressive-web-apps/how-to/index.md
+
+            - name: Temperature converter sample
+              href: ./progressive-web-apps/samples/temperature-converter.md
+
+            - name: Temperature converter source files
+              href: ./progressive-web-apps/samples/temperature-converter-source-files.md
+# -----------------------------------------------------------------------------
+        - name: Samples
+          items:
+            - name: Progressive Web App samples
+              href: ./progressive-web-apps/samples/index.md
+# -----------------------------------------------------------------------------
         - name: Integrate a PWA into Windows
           items:
             - name: Display content in the title bar area using Window Controls Overlay  # todo: add "Share dialog" to title
@@ -1326,7 +1342,7 @@
 
             - name: Enable App Actions on Windows for a PWA
               href: ./progressive-web-apps/how-to/app-actions.md
-
+# -----------------------------------------------------------------------------
         - name: Distribute a PWA with the Microsoft Store
           items:
             - name: Publish a PWA to the Microsoft Store
@@ -1334,7 +1350,7 @@
 
             - name: Provide in-app purchases with the Digital Goods API
               href: ./progressive-web-apps/how-to/digital-goods-api.md
-
+# -----------------------------------------------------------------------------
         - name: Update a PWA, show badges, notifications, push messages
           items:
             - name: Synchronize and update a PWA in the background
@@ -1345,7 +1361,7 @@
 
             - name: Re-engage users with push messages
               href: ./progressive-web-apps/how-to/push.md
-
+# -----------------------------------------------------------------------------
         - name: Handle files, links, and protocols
           items:
             - name: Handle files in a PWA
@@ -1357,7 +1373,7 @@
 
             - name: Handle protocols in a PWA
               href: ./progressive-web-apps/how-to/handle-protocols.md
-
+# -----------------------------------------------------------------------------
         - name: Define icons and a theme color
           href: ./progressive-web-apps/how-to/icon-theme-color.md
 
@@ -1369,9 +1385,6 @@
 
         - name: Debug a PWA
           href: ./progressive-web-apps/how-to/debug.md
-
-        - name: Progressive Web App demos
-          href: ./progressive-web-apps/demo-pwas.md
 # /Progressive Web Apps
 # =============================================================================
 # WebView2
@@ -1380,12 +1393,12 @@
         - name: WebView2 documentation
           href: ./webview2/landing/index.yml
           displayName: landing
-# -----------------------------------------------------------------------------
-        - name: Introduction and overview
-          items:
-            - name: Introduction to Microsoft Edge WebView2
-              href: ./webview2/index.md
 
+        - name: Introduction to Microsoft Edge WebView2
+          href: ./webview2/index.md
+# -----------------------------------------------------------------------------
+        - name: Get started
+          items:
             - name: Overview of WebView2 APIs
               href: ./webview2/concepts/overview-features-apis.md
 
@@ -1398,8 +1411,15 @@
             - name: Set up your Dev environment for WebView2
               href: ./webview2/how-to/machine-setup.md
 # -----------------------------------------------------------------------------
-        - name: Platforms and samples
+        - name: Samples
           items:
+            - name: Getting Started tutorials
+              href: ./webview2/get-started/get-started.md
+              displayName: GettingStartedGuides  # repo dir name
+
+            - name: WebView2 sample apps
+              href: ./webview2/samples/index.md
+# -------------------------------------
             - name: Win32
               items:
                 - name: WebView2 in Win32 apps
@@ -1420,7 +1440,7 @@
                 - name: Win32 sample WebView2Browser
                   href: ./webview2/samples/webview2browser.md
                   displayName: WebView2Browser  # repo dir name
-
+# -------------------------------------
             - name: WinUI 2 (UWP)
               items:
                 - name: WebView2 in WinUI 2 (UWP) apps
@@ -1433,7 +1453,7 @@
                 - name: WinUI 2 (UWP) sample app
                   href: ./webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
-
+# -------------------------------------
             - name: WinUI 3 (Windows App SDK)
               items:
                 - name: WebView2 in WinUI 3 (Windows App SDK) apps
@@ -1446,7 +1466,7 @@
                 - name: WinUI 3 (Windows App SDK) sample app
                   href: ./webview2/samples/webview2-winui3-sample.md
                   displayName: WebView2_WinUI3_Sample  # repo dir name
-
+# -------------------------------------
             - name: WPF
               items:
                 - name: WebView2 in WPF apps
@@ -1463,7 +1483,7 @@
                 - name: WPF sample app with CDP extension
                   href: ./webview2/samples/wv2cdpextensionwpfsample.md
                   displayName: WV2CDPExtensionWPFSample  # repo dir name
-
+# -------------------------------------
             - name: WinForms
               items:
                 - name: WebView2 in WinForms apps
@@ -1476,7 +1496,7 @@
                 - name: WinForms sample app
                   href: ./webview2/samples/webview2windowsformsbrowser.md
                   displayName: WebView2WindowsFormsBrowser  # repo dir name
-
+# -------------------------------------
             - name: HoloLens 2 Unity
               items:
                 - name: WebView2 in HoloLens 2 Unity apps
@@ -1485,17 +1505,26 @@
                 - name: Get started with WebView2 in HoloLens 2 Unity apps (Preview)
                   href: ./webview2/get-started/hololens2.md
                   displayName: HoloLens2_GettingStarted  # repo dir name
+# -------------------------------------
+            - name: Deployment samples
+              items:
+                - name: WebView2 deployment samples
+                  href: ./webview2/samples/deployment-samples.md
 
-            - name: Getting Started tutorials
-              href: ./webview2/get-started/get-started.md
-              displayName: GettingStartedGuides  # repo dir name
+                - name: WebView2 Deployment Visual Studio installer
+                  href: ./webview2/samples/wv2deploymentvsinstallersample.md
+                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
 
-            - name: WebView2 sample apps
-              href: ./webview2/code-samples-links.md
+                - name: WiX Burn Bundle to deploy the WebView2 Runtime
+                  href: ./webview2/samples/wv2deploymentwixburnbundlesample.md
+                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
+
+                - name: WiX Custom Action to deploy the WebView2 Runtime
+                  href: ./webview2/samples/wv2deploymentwixcustomactionsample.md
+                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
 # -----------------------------------------------------------------------------
         - name: Navigation, events, and authentication
           items:
-
             - name: Navigation events for WebView2 apps
               href: ./webview2/concepts/navigation-events.md
 
@@ -1557,43 +1586,25 @@
 # -----------------------------------------------------------------------------
         - name: Distribution and SDK versions
           items:
-            - name: Deployment and distribution
-              href: ./webview2/concepts/deployment-distribution.md
-
-            - name: Deployment samples
-              items:
-                - name: WebView2 deployment samples
-                  href: ./webview2/samples/deployment-samples.md
-
-                - name: WebView2 Deployment Visual Studio installer
-                  href: ./webview2/samples/wv2deploymentvsinstallersample.md
-                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
-
-                - name: WiX Burn Bundle to deploy the WebView2 Runtime
-                  href: ./webview2/samples/wv2deploymentwixburnbundlesample.md
-                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
-
-                - name: WiX Custom Action to deploy the WebView2 Runtime
-                  href: ./webview2/samples/wv2deploymentwixcustomactionsample.md
-                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
-
             - name: Prerelease and Release SDKs for WebView2
               href: ./webview2/concepts/versioning.md
               displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
-            - name: Evergreen vs. fixed version of the WebView2 Runtime
-              href: ./webview2/concepts/evergreen-vs-fixed-version.md
+            - name: Distribute the app and Runtime
+              items:
+                - name: Evergreen vs. fixed version of the WebView2 Runtime
+                  href: ./webview2/concepts/evergreen-vs-fixed-version.md
 
-            - name: Distribute your app and the WebView2 Runtime
-              href: ./webview2/concepts/distribution.md
+                - name: Distribute your app and the WebView2 Runtime
+                  href: ./webview2/concepts/distribution.md
 
-            - name: Enterprise management of WebView2 Runtimes
-              href: ./webview2/concepts/enterprise.md
-              displayName: Manage WebView2 applications  # old title
+                - name: Enterprise management of WebView2 Runtimes
+                  href: ./webview2/concepts/enterprise.md
+                  displayName: Manage WebView2 applications  # old title
 
-            - name: Distribute an app as a single executable file
-              href: ./webview2/how-to/static.md
-              displayName: Statically link the WebView2 loader library, single-file app  # old title
+                - name: Distribute an app as a single executable file
+                  href: ./webview2/how-to/static.md
+                  displayName: Statically link the WebView2 loader library, single-file app  # old title
 
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: ./webview2/how-to/publish-uwp-app-store.md
@@ -1704,27 +1715,27 @@
             - name: WebView2 API Reference
               href: ./webview2/webview2-api-reference.md
               displayName: functions, methods, .NET, HoloLens, WinRT, Win32, JavaScript  # toc bucket names
-
+# -------------------------------------
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /dotnet/api/microsoft.web.webview2.core
                   displayName: functions, methods
-
+# -------------------------------------
                 - name: Microsoft.Web.WebView2.Wpf
                   href: /dotnet/api/microsoft.web.webview2.wpf
                   displayName: functions, methods
-
+# -------------------------------------
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
                   displayName: functions, methods
-
+# -------------------------------------
                 - name: HoloLens 2
                   items:
                     - name: Unity Plugin
                       href: /windows/mixed-reality/develop/advanced-concepts/webview2-unity-plugin
                       displayName: functions, methods
-
+# -------------------------------------
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
@@ -1734,7 +1745,7 @@
                 - name: COM Interop/C++
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
                   displayName: functions, methods
-
+# -------------------------------------
             - name: Win32/C++
               items:
                 - name: Win32 C++ WebView2 API conventions
@@ -1743,7 +1754,7 @@
                 - name: Win32 C++ API Reference
                   href: /microsoft-edge/webview2/reference/win32/index
                   displayName: functions, methods
-
+# -------------------------------------
             - name: JavaScript
               uid: WebView2Script!
               items:
@@ -1786,7 +1797,7 @@
 
         - name: Puppeteer overview
           href: ./puppeteer/index.md
-
+# -------------------------------------
         - name: WebDriver
           items:
             - name: Use WebDriver to automate Microsoft Edge
@@ -1800,7 +1811,7 @@
 
             - name: Contact the Microsoft Edge WebDriver team
               href: ./webdriver/contact.md
-
+# -------------------------------------
         - name: webhint extension for Visual Studio Code
           href: ./test-and-automation/webhint.md
 # /Test and automation
@@ -1909,7 +1920,7 @@
       href: ./dev-videos/index.md
       displayName: youtube
 
-    - name: Microsoft Edge Privacy Whitepaper
+    - name: User data and privacy in Microsoft Edge
       href: /legal/microsoft-edge/privacy
 
     - name: The Web We Want initiative

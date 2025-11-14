@@ -199,7 +199,7 @@ Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoft
 1. Click the extension's button next to the Address bar.  The pop-up window closes.
 
 See also:
-* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
 
 
 <!-- ====================================================================== -->
@@ -328,9 +328,9 @@ After running and testing this extension sample, you can continue on to [Sample:
 ## See also
 <!-- all links in article -->
 
-* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
 * [Sample: Picture inserter using content script](./picture-inserter-content-script.md)
-* [Samples for Microsoft Edge extensions](../samples.md)
+* [Samples for Microsoft Edge extensions](../samples/index.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

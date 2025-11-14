@@ -107,7 +107,6 @@ Custom Devtools tools are added to the **More tools** menu on the **Activity Bar
 ## See also
 <!-- todo: all links in article -->
 
-* [Samples for Microsoft Edge extensions](../samples.md)
 * [Samples for Microsoft Edge extensions](../samples.md)<!-- link not in article -->
 * [Manifest V3](https://developer.chrome.com/docs/extensions/mv3)
 * [Extending DevTools](https://developer.chrome.com/docs/extensions/mv3/devtools/)
@@ -123,6 +122,9 @@ Chrome docs:
 * [Chrome Extensions Reference](https://developer.chrome.com/docs/extensions/reference/)
    * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
       * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+   * [chrome.system.memory](https://developer.chrome.com/docs/extensions/reference/api/system/memory)
+      * [getInfo()](https://developer.chrome.com/docs/extensions/reference/api/system/memory#method-getInfo)
+
 * [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
 
 GitHub:
@@ -131,5 +133,3 @@ GitHub:
 
 Tools:
 * [Visual Studio Code](https://code.visualstudio.com)
-
-<!-- https://developer.chrome.com/docs/extensions/reference/api/system/memory#method-getInfo -->

@@ -161,6 +161,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "../microsoft-edge/devtools-guide-chromium/whats-new/whats-new-archive.md",
+      "redirect_url": "/microsoft-edge/devtools/whats-new/whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/whats-new/whats-new-archive.md",
+      "redirect_url": "/microsoft-edge/devtools/whats-new/whats-new",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "../microsoft-edge/devtools-guide-chromium/whats-new/2025/06/devtools-137.md",
       "redirect_url": "/microsoft-edge/devtools/whats-new/2025/06/devtools-137",
       "redirect_document_id": false
@@ -208,12 +218,6 @@
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/whats-new/2024/08/devtools-128.md",
       "redirect_url": "/microsoft-edge/devtools/whats-new/2024/08/devtools-128",
-      "redirect_document_id": false
-    },
-    // movable, sits 10 below whats-new.md:
-    {
-      "source_path": "../microsoft-edge/devtools-guide-chromium/whats-new/whats-new-archive.md",
-      "redirect_url": "/microsoft-edge/devtools/whats-new/whats-new-archive",
       "redirect_document_id": false
     },
     {
@@ -1134,7 +1138,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/sample-code/sample-code.md",
-      "redirect_url": "/microsoft-edge/devtools/sample-code/sample-code",
+      "redirect_url": "/microsoft-edge/devtools/samples/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/sample-code/sample-code.md",
+      "redirect_url": "/microsoft-edge/devtools/samples/index",
       "redirect_document_id": false
     },
     {

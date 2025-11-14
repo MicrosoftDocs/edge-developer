@@ -355,6 +355,7 @@ Example managed app folder structure:
 <!-- all links in the article -->
 
 <!-- Local: toc order -->
+* [WebView2 deployment samples](../samples/deployment-samples.md)<!-- link not in article body --><!-- toc bucket 2 -->
 * [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->

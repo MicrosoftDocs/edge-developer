@@ -72,7 +72,7 @@ landingContent:
       - linkListType: sample
         links:
           - text: WebView2 sample apps
-            url: ../code-samples-links.md  # delete & redir?
+            url: ../samples/index.md
 
           - text: Win32 sample app
             url: ../samples/webview2apissample.md
@@ -236,9 +236,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Deployment and distribution
-            url: ../concepts/deployment-distribution.md
-
           - text: Prerelease and Release SDKs for WebView2
             url: ../concepts/versioning.md
 

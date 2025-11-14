@@ -10,8 +10,21 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
 #### General changes
 <!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
 
 
 <!-- ------------------------------ -->

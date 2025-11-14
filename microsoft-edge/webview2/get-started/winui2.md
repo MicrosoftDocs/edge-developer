@@ -306,7 +306,7 @@ Next, learn about navigation events, which are essential for WebView2 apps.  The
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
    * [Manage user data folders](../concepts/user-data-folder.md)
-* [WebView2 sample apps](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [WebView2 sample apps](../samples/index.md) - a guide to the `WebView2Samples` repo.
    * [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md) - steps to download, update, build, and run the WinUI 2 WebView2 sample.
 * Get Started tutorial finished project: Unlike some of the other tutorials, there isn't a completed version of this Getting Started tutorial in the WebView2Samples repo.
 
