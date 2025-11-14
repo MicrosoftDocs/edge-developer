@@ -39,7 +39,7 @@ To start learning WebView2, use this suggested sequence of articles and sample p
 
 1. Get this **WebView2APISample** to build and run, using the present article, even if your own app is for a different platform.
 
-1. If you're most interested in a platform other than Win32, use the Sample article for your platform; see [Sample apps](../code-samples-links.md).
+1. If you're most interested in a platform other than Win32, use the Sample article for your platform; see [Sample apps](../samples/index.md).
 
 1. Use the Get Started article for the platform you're interested in; see [Getting Started tutorials](../get-started/get-started.md).
 

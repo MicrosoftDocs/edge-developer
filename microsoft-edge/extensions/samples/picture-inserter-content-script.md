@@ -232,7 +232,7 @@ Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoft
 The extension sends a message from the extension icon's pop-up, and dynamically inserts JavaScript running as content in the browser tab.  The injected content sets the image element to display `stars.jpeg` in the top of the current webpage, and then removes the image when you click the image.
 
 See also:
-* [Sideload an extension to install and test it locally](./extension-sideloading.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
 
 
 <!-- ====================================================================== -->
@@ -517,8 +517,8 @@ To develop your own Microsoft Edge extension, you can copy and modify the sample
 <!-- all links in article -->
 
 * [Sample: Picture viewer pop-up webpage](./picture-viewer-popup-webpage.md)
-* [Sideload an extension to install and test it locally](extension-sideloading.md)
-* [Samples for Microsoft Edge extensions](../samples.md)
+* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
+* [Samples for Microsoft Edge extensions](../samples/index.md)
 
 GitHub:
 * [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo.

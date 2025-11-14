@@ -14,8 +14,16 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 09/17/2024
 
-# =============================================================================
-# Valid article types (sections of a card)
+# How to create or update a landing page
+# https://review.learn.microsoft.com/help/contribute/contribute-how-to-write-landing-page?branch=main
+
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+# Limits:
+# Number of cards in a landing page: 1-12
+# Number of linkListType in a card: 1-6
+# Number of links in a linkListType: 1-10
 
       # - linkListType: architecture
       # - linkListType: concept
@@ -32,9 +40,7 @@ metadata:
       # - linkListType: video
       # - linkListType: whats-new
 
-# =============================================================================
 landingContent:
-
 # =============================================================================
 # Row 1
 # -----------------------------------------------------------------------------
@@ -49,14 +55,19 @@ landingContent:
           - text: Extension concepts and architecture
             url: ../getting-started/index.md
 
-          - text: "Sample: Picture viewer pop-up webpage"
-            url: ../getting-started/picture-viewer-popup-webpage.md
-
-          - text: "Sample: Picture inserter using content script"
-            url: ../getting-started/picture-inserter-content-script.md
-
           - text: Sideload an extension to install and test it locally
             url: ../getting-started/extension-sideloading.md
+
+      - linkListType: sample
+        links:
+          - text: Samples for Microsoft Edge extensions
+            url: ../samples/index.md
+
+          - text: "Sample: Picture viewer pop-up webpage"
+            url: ../samples/picture-viewer-popup-webpage.md
+
+          - text: "Sample: Picture inserter using content script"
+            url: ../samples/picture-inserter-content-script.md
 
       - linkListType: whats-new
         links:
@@ -208,7 +219,7 @@ landingContent:
 
 # -----------------------------------------------------------------------------
 # Card r3c2
-  - title: Best practices and samples
+  - title: Best practices
     linkLists:
       - linkListType: overview
         links:
@@ -217,8 +228,3 @@ landingContent:
 
           - text: Minimize an extension's impact on page load time
             url: ../developer-guide/minimize-page-load-time-impact.md
-
-      - linkListType: sample
-        links:
-          - text: Samples for Microsoft Edge extensions
-            url: ../samples.md

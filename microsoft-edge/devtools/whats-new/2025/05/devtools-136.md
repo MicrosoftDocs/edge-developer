@@ -27,11 +27,6 @@ Each DOM node that has a semantic issue displays a red wavy line, and has a tool
 
 ![DOM adorner in Elements](./devtools-136-images/dom-adorner.png)
 
-To enable this feature, in DevTools experiments, select the checkbox [Highlights a violating node or attribute in the Elements panel DOM tree](../../../experimental-features/index.md#highlights-a-violating-node-or-attribute-in-the-elements-panel-dom-tree).
-
-See also:
-* [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) in _Experimental features in Microsoft Edge DevTools_.
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
