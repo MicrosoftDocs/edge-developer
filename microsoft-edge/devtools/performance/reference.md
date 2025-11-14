@@ -29,12 +29,16 @@ ms.date: 02/24/2025
 Add WebSocket documentation in the Performance reference article.
 The Perf tool can now show WebSocket messages.
 
+## View WebSocket messages
+
 The Perf tool reference article
 https://learn.microsoft.com/microsoft-edge/devtools/performance/performance-reference
 should document that the Perf tool can now show WebSocket messages.
 
 Sources for the info to add:
-* Does upstream have docs for that?
+* Does upstream have docs for that?  3 hits on "WebSocket" in this upstream article:
+  https://developer.chrome.com/docs/devtools/performance/reference#event-initiators
+  which is already in [Track event initiators](#track-event-initiators) below.
 * What's New 128 entry about Perf tool:
 View WebSocket message activities in the Performance tool =
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2024/08/devtools-128#view-websocket-message-activities-in-the-performance-tool
