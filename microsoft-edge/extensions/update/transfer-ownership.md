@@ -59,8 +59,17 @@ For any questions, contact [ext_dev_support@microsoft.com](mailto:ext_dev_suppor
 
 
 <!-- ------------------------------ -->
-#### After Ownership Transfer
+#### Update the extension after ownership transfer
 
-Once the ownership of an extension is successfully transferred, the new owner gains full control over the extension’s listing and updates. Changes to certain store fields—such as the extension’s description, screenshots, Privacy policy URL, Owner name, and website link—will not immediately appear in the Microsoft Edge Add-ons store. These updates will only be reflected after the new owner publishes the next extension update. Until then, the previous information may remain visible to users.
+After the ownership transfer, the new owner should publish an update of the extension promptly, to ensure that accurate and up-to-date information is displayed.
 
-To ensure accurate and up-to-date information is displayed, we recommend that the new owner plans and publishes an update promptly after the transfer.
+Changes to the following fields of the extension's listing don't automatically appear in the Microsoft Edge Add-ons site when the ownership is transferred:
+* Description.
+* Screenshots.
+* Privacy policy URL.
+* Owner name.
+* Website link.
+
+These updates are reflected after the new owner publishes an extension update.  Until the extension is updated, the previous owner's information remains visible to users.
+
+After the ownership of an extension has been successfully transferred, the new owner gains full control over the extension's listing and updates.
