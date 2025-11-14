@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 07/23/2025
+ms.date: 11/14/2025
 ---
 # Transfer ownership of an extension
 
@@ -56,3 +56,11 @@ The Microsoft Edge extensions team will keep you informed of progress or any add
 This process typically takes approximately three weeks to complete, depending on the response times from all parties involved.
 
 For any questions, contact [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+
+
+<!-- ------------------------------ -->
+#### After Ownership Transfer
+
+Once the ownership of an extension is successfully transferred, the new owner gains full control over the extension’s listing and updates. Changes to certain store fields—such as the extension’s description, screenshots, Privacy policy URL, Owner name, and website link—will not immediately appear in the Microsoft Edge Add-ons store. These updates will only be reflected after the new owner publishes the next extension update. Until then, the previous information may remain visible to users.
+
+To ensure accurate and up-to-date information is displayed, we recommend that the new owner plans and publishes an update promptly after the transfer.
