@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/28/2025
+ms.date: 11/10/2025
 ---
 # WebView2 browser flags
 <!-- lexicon:
@@ -126,17 +126,18 @@ If the flag takes a value other than true|false, give an example. -->
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
 | `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
 | `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser flag, to enable single sign-on (SSO) with default credential flow or ambient authentication flow. |
+| `msEdgeDesignerDriverFix` | Enables getting content and automatically showing the Designer feature.  The Designer feature is not supported in WebView2. |
 | `msEdgeDesignerUI` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |
-| `msEdgeHubAppDesigner ` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |
-| `msEdgeDesignerDriverFix ` | Enables getting content and automatically showing the Designer feature.  The Designer feature is not supported in WebView2. |
-| `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
 | `msEdgeDevToolsWdpRemoteDebugging` | Enables remote debugging.  See [Remote debugging WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging.md), [Remotely debug Windows devices](../../devtools/remote-debugging/windows.md). |
+| `msEdgeFluentOverlayScrollbar` | Force-enables Fluent Overlay scrollbars, overriding whatever value `kFluentScrollbar` may hold at the moment. |
+| `msEdgeHubAppDesigner` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |
 | `msEdgeWebViewApplyWebResourceRequestedFilterForOOPIFs` | Makes the `AddWebResourceRequestedFilter` method (including overloads) also apply to out-of-process iframes. <br/>.NET: [AddWebResourceRequestedFilter](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter) <br/>WinRT: [AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addwebresourcerequestedfilter) <br/>Win32: [AddWebResourceRequestedFilterWithRequestSourceKinds](/microsoft-edge/webview2/reference/win32/icorewebview2_22#addwebresourcerequestedfilterwithrequestsourcekinds) |
 | `msEnhancedTextContrast` | Improves text contrast enhancement and gamma correction to match the quality and clarity of other native Windows applications.  When this flag is used, font rendering respects user ClearType Tuner settings when applying text contrast enhancement and gamma correction. |
 | `msEnhancedTrackingPreventionEnabled` | Enables native privacy protection features, such as blocking cookies and web requests that reside in domains that are known to be tracking domains. |
 | `msFloatyMode` | Takes a `true` or `false` value.  If `true`, enables the Floaty feature.  If `false`, disables the Floaty feature.  Use this flag to disable the Floaty feature, because WebView doesn't support browser retention experiments. |
 | `msFloatyShouldHonorIndiaHoldout` | Takes a `true` or `false` value.  If `true`, honors the India holdout group.  If `false`, disables the Floaty feature that's enabled if the user is part of the India holdout group, because WebView doesn't support browser retention experiments. |
 | `msOverlayScrollbarWinStyle` | Whether the users can change between overlay and non-overlay modes for Fluent scrollbars. |
+| `msPageInteractionManagerWebview2` | By default, the [Page Interaction Restriction Manager](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PageInteractionRestrictionManager/explainer.md) API is disabled for WebView2.  If an app needs to enable configuration of this API in WebView2, the app must enable this flag. |
 | `msPdfEnableAsPreview` | This features enables the PDF viewer to launch with a minimal toolbar and in read-only preview mode. |
 | `msSingleSignOnForInPrivateWebView2` | This flag enables the single sign-on (SSO) flow for InPrivate (Incognito) sessions of WebView2.  Enables browser-based SSO in InPrivate (Incognito) mode. |
 | `msSingleSignOnOSForPrimaryAccountIsShared` | Allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
@@ -146,10 +147,10 @@ If the flag takes a value other than true|false, give an example. -->
 | `msWebView2CancelInitialNavigation` | Cancels the initial navigation in WebView2, to improve startup performance. |
 | `msWebView2CodeCache` | Makes JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
 | `msWebView2EnableDownloadContentInWebResourceResponseReceived` | Allows responses of navigations that become downloads to be available in `WebResourceResponseReceived`. |
-| `msWebView2TextureStream` | Allows streaming captured or composed video frames to the WebView2 control, where JavaScript can render or otherwise interact with the frames via W3C standard [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) APIs, including the [Video Embed element](https://developer.mozilla.org/docs/Web/HTML/Element/video) and [MediaStream](https://developer.mozilla.org/docs/Web/API/MediaStream). |
 | `msWebView2EnableDraggableRegions` | Takes a `true` or `false` value.  If `true`, enables webpages within WebView2 make use of the `app-region: drag\|nodrag` CSS style, which causes elements with that style to behave like a titlebar.  If `false`, or without this flag, the `app-region: drag\|nodrag` CSS style has no effect. |
 | `msWebView2NativeEventDispatch` | Uses a native mojo connection to dispatch internal events, such as web messages to a renderer process. |
 | `msWebView2SimulateMemoryPressureWhenInactive` | Simulates memory pressure for an inactive WebView. |
+| `msWebView2TextureStream` | Allows streaming captured or composed video frames to the WebView2 control, where JavaScript can render or otherwise interact with the frames via W3C standard [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) APIs, including the [Video Embed element](https://developer.mozilla.org/docs/Web/HTML/Element/video) and [MediaStream](https://developer.mozilla.org/docs/Web/API/MediaStream). |
 | `msWebView2TreatAppSuspendAsDeviceSuspend` | When all WebViews are suspended, makes WebView2 treat the app as if the device is suspended, and pauses all delayed tasks and timers. |
 | `no-proxy-server` | Overrides any other proxy server flags that are passed. |
 | `net-log-capture-mode` | Sets the granularity of events to capture in the network log.  Valid values: `Default`, `IncludeSensitive`, `Everything`. |
@@ -179,6 +180,7 @@ If the flag takes a value other than true|false, give an example. -->
 | `V8Maglev` | Enables the Maglev compiler.  This only sets the V8 flag when manually overridden; otherwise, it defers to whatever the V8 default is. |
 
 ---
+
 
 <!-- ====================================================================== -->
 ## See also

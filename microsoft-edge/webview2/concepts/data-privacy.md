@@ -12,7 +12,7 @@ ms.date: 06/02/2023
 
 WebView2 collects a set of optional and required diagnostic data to keep WebView2 secure and up to date, diagnose issues, and improve WebView2. By agreeing to the WebView2 Runtime Terms and Conditions License, WebView2 developers acknowledge that WebView2 will collect the data that's described in this article. To view the license, go to [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime), where clicking any of the download buttons, such as **Get the Link**, **Download**, or **x64**, shows the license in a dialog.
 
-Additionally, WebView2 follows the standards that are outlined in [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge.  For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
+Additionally, WebView2 follows the standards that are outlined in [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge.  For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 The main diagnostic data sources are:
 *  Chromium and Microsoft Edge telemetry infrastructure.
@@ -55,7 +55,7 @@ These features are described below.
 
 Microsoft Defender SmartScreen ("SmartScreen") is a security feature that is enabled by default to help users safely browse the web.  The `IsReputationCheckingRequired` property controls whether SmartScreen is enabled.  Generally, all other services in `edge://settings/privacy` are turned off, for WebView2.
 
-If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _Microsoft Edge Privacy Whitepaper_.
+If you don't disable SmartScreen, you must provide notice to all users that your software includes Microsoft Defender SmartScreen, and collects and sends the user's information to Microsoft as disclosed in [Microsoft Privacy Statement](https://aka.ms/privacy) and in [SmartScreen](/legal/microsoft-edge/privacy#smartscreen) in _User data and privacy in Microsoft Edge_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
