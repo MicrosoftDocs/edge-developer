@@ -543,7 +543,7 @@ additionalContent:
             - text: Visual Studio Code
               url: ./visual-studio-code/index.md
 
-            - text: Microsoft Edge Privacy Whitepaper
+            - text: User data and privacy in Microsoft Edge
               url: /legal/microsoft-edge/privacy  # https://learn.microsoft.com/legal/microsoft-edge/privacy
 # -----------------------------------------------------------------------------
 # Card
