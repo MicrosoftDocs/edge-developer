@@ -30,6 +30,19 @@ Browser compatibility:
 
 * `.devtools` traces can only be imported in Microsoft Edge.
 
+<!-- ====================================================================== -->
+## Set the default memory trace type
+
+By default, the **Memory** tool exports data as `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` trace files. To change the default trace type to `.devtools`:
+
+1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+1. In DevTools, in the upper right, select **Customize and control DevTools** > **Settings** (![Settings button](./share-memory-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
+
+1. In the **Persistence** section of the **Preferences** page, use the **Export .devtools memory traces** checkbox to control the default type.
+
+   ![The Settings panel in DevTools, showing the export type option](./share-memory-traces-images/set-default-memory-trace-type.png)
+
 
 <!-- ====================================================================== -->
 ## Set the export options for memory traces
@@ -42,12 +55,12 @@ Memory traces that are `.devtools` files can optionally include console messages
 
 1. In the **Persistence** section of the **Preferences** page, use these checkboxes to control what to include:
 
-   * **Include console message in .devtools traces**.
-   * **Include script sources in .devtools traces**.
-   * **Include DOM snapshots in .devtools traces (experimental)**.
+   * **Include console message in .devtools memory traces**.
+   * **Include script sources in .devtools memory traces**.
+   * **Include DOM snapshots in .devtools memory traces (experimental)**.
 
-   <!-- todo: create png & un-comment after new ui is in canary: -->
-   <!-- ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png) -->
+
+   ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +79,7 @@ To export memory information from the **Memory** tool:
    <!-- todo: create png & un-comment after new ui is in canary: -->
    <!-- ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png) -->
 
-1. Choose the trace type and a location to save the trace file on your disk. Select `.devtools` if you want to include console messages, script sources, and DOM elements. Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
+1. Choose a location to save the trace file on your disk.
 
    <!-- todo: create png & un-comment after new ui is in canary: -->
    <!-- ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
