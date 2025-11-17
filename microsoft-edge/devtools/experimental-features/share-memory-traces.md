@@ -6,15 +6,15 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/06/2025
+ms.date: 11/17/2025
 ---
 # Share a memory trace with more data
 
-The **Memory** tool records runtime data about your webpage. Exploring the recorded data makes it possible to improve your webpage's memory usage.
+The **Memory** tool records runtime data about your webpage.  Exploring the recorded data makes it possible to improve your webpage's memory usage.
 
-Additionally, the recorded data can be exported to files on disk. The exported files are called _traces_.
+Additionally, the recorded data can be exported to files on disk.  The exported files are called _traces_.
 
-Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues. An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage.
+Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues.  An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage.
 
 Memory traces can also be saved as a `.devtools` file, which contains much more runtime data from the traced webpage.  Advantages of the `.devtools` file format:
 
@@ -34,20 +34,31 @@ Browser compatibility:
 <!-- ====================================================================== -->
 ## Set the export options for memory traces
 
-Memory traces that are `.devtools` files can optionally include console messages, script sources, and DOM elements.  To control what is included in these traces:
+Memory traces that are `.devtools` files can optionally include console messages, script sources, and DOM elements.
+
+To control whether console messages, script sources, or DOM elements are included in memory traces:
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
 1. In DevTools, in the upper right, select **Customize and control DevTools** > **Settings** (![Settings button](./share-memory-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
 
-1. In the **Persistence** section of the **Preferences** page, use these checkboxes to control what to include:
+1. Scroll down to the **Persistence** section:
 
-   * **Include console message in .devtools traces**.
-   * **Include script sources in .devtools traces**.
-   * **Include DOM snapshots in .devtools traces (experimental)**.
+   ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png)
 
-   <!-- todo: create png & un-comment after new ui is in canary: -->
-   <!-- ![The Settings panel in DevTools, showing the trace options](./share-memory-traces-images/enhanced-trace-options.png) -->
+1. Use these checkboxes to control what to include:
+
+   <!-- todo: The **Export .devtools memory traces** checkbox is cleared by default.  If this checkbox is cleared, __.  If this checkbox is selected, __. -->
+
+   * **Include console messages in .devtools memory traces**
+
+   * **Include script sources in .devtools memory traces**
+
+   * **Include DOM snapshots in .devtools memory traces (experimental)**
+
+   <!-- todo: The **Enable Local Overrides** checkbox is cleared by default.  If this checkbox is cleared, __.  If this checkbox is selected, __. -->
+
+1. In the upper right of DevTools, click the **Close** (![Close icon](./share-memory-traces-images/close-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -57,16 +68,30 @@ To export memory information from the **Memory** tool:
 
 1. Open the **Memory** tool.
 
-1. Choose the type of memory recording you're interested in, such as **Heap Snapshot**. The following instructions are similar if you choose a different memory recording type. To learn more about the different memory recording types, see [Fix memory problems](../memory-problems/index.md).
+1. Select the option button for the type of memory recording you're interested in, such as the **Heap snapshot** option button.
 
-1. Click **Take Snapshot**.
+   The following instructions are similar if you choose a different memory recording type, per [Fix memory problems](../memory-problems/index.md).
 
-1. When the snapshot is recorded, click the **Save** button in the **Memory** tool sidebar:
+   **In the case of a heap snapshot:**
 
-   <!-- todo: create png & un-comment after new ui is in canary: -->
-   <!-- ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png) -->
+1. Click the **Take heap snapshot** (![Take heap snapshot icon](./share-memory-traces-images/take-heap-snapshot-icon.png)) button at top, or the **Take snapshot** button at bottom.
 
-1. Choose the trace type and a location to save the trace file on your disk. Select `.devtools` if you want to include console messages, script sources, and DOM elements. Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
+   The snapshot is recorded and displayed.
+
+1. In the toolbar, select the **Save profile** button.
+
+   Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**.
+
+   <!-- Or, click the **Save all to file** button that's in the **(string)** row. -->
+
+   ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png)
+
+   The **Save As** dialog opens.
+
+1. Choose the trace type and a location to save the trace file on your disk.
+
+   * Select `.devtools` if you want to include console messages, script sources, and DOM elements.
+   * Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
 
    <!-- todo: create png & un-comment after new ui is in canary: -->
    <!-- ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
