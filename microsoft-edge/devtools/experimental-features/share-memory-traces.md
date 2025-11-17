@@ -14,9 +14,17 @@ The **Memory** tool records runtime data about your webpage.  Exploring the reco
 
 Additionally, the recorded data can be exported to files on disk.  The exported files are called _traces_.
 
-Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues.  An exported trace is a `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file which can be imported in DevTools at any time. By default, these traces contain minimal information about the runtime data from the traced webpage.
+Exporting memory traces is useful when you want to share these files with other people to get help with investigating issues.
 
-Memory traces can also be saved as a `.devtools` file, which contains much more runtime data from the traced webpage.  Advantages of the `.devtools` file format:
+
+<!-- ------------------------------ -->
+#### File formats
+
+A trace file can be imported in DevTools at any time.  By default, these traces contain minimal information about the runtime data from the traced webpage.
+
+An exported trace can be a basic `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` file.
+
+A memory trace can also be saved as a `.devtools` file, which contains much more runtime data from the traced webpage.  Advantages of the `.devtools` file format:
 
 * This makes it easier to resolve memory issues, by recreating the environment in which the trace was recorded, and by providing original source files.
 
@@ -24,11 +32,14 @@ Memory traces can also be saved as a `.devtools` file, which contains much more 
 
 * If source maps were present when a trace was recorded, or if they are stored on the [Azure Artifacts Symbol Server](../javascript/consume-source-maps-from-azure.md), it's also possible to resolve code references to their original source code.
 
-Browser compatibility:
+
+<!-- ------------------------------ -->
+#### Browser compatibility
 
 * `.heapsnapshot`, `.heapprofile`, and `.heaptimeline` trace files are compatible with Microsoft Edge and other browsers that are based on the Chromium engine.
 
 * `.devtools` traces can only be imported in Microsoft Edge.
+
 
 <!-- ====================================================================== -->
 ## Set the default memory trace type
@@ -61,15 +72,11 @@ To control whether console messages, script sources, or DOM elements are include
 
 1. Use these checkboxes to control what to include:
 
-   <!-- todo: The **Export .devtools memory traces** checkbox is cleared by default.  If this checkbox is cleared, __.  If this checkbox is selected, __. -->
-
    * **Include console messages in .devtools memory traces**
 
    * **Include script sources in .devtools memory traces**
 
    * **Include DOM snapshots in .devtools memory traces (experimental)**
-
-   <!-- todo: The **Enable Local Overrides** checkbox is cleared by default.  If this checkbox is cleared, __.  If this checkbox is selected, __. -->
 
 1. In the upper right of DevTools, click the **Close** (![Close icon](./share-memory-traces-images/close-icon.png)) button.
 
@@ -94,8 +101,6 @@ To export memory information from the **Memory** tool:
 1. In the toolbar, select the **Save profile** button.
 
    Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**:
-
-   <!-- Or, click the **Save all to file** button that's in the **(string)** row. -->
 
    ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png)
 
