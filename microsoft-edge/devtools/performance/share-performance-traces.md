@@ -43,8 +43,6 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. In DevTools, open the **Performance** (![Performance icon](./share-performance-traces-images/performance-icon.png)) tool.
 
-   <!-- Leah TODO: get new png of dialog to show annotations and resource content ![Microsoft Edge with DevTools, showing the Performance tool, with the Save trace button](./share-performance-traces-images/save-performance-trace-dialog.png) -->
-
 1. Click the **Record** (![Record icon](./share-performance-traces-images/record-icon.png)) button.
 
 1. Interact with the webpage, to run the scenario that you want to investigate the performance of.
@@ -63,9 +61,11 @@ To record performance for aspects of a webpage, and then export a performance re
 
 1. Select or clear the checkboxes, to control what information to include in the trace file:
 
-   * The **Include annotations** checkbox.<!-- tooltip: todo; none? -->
-   * The **Include resource content** checkbox.<!-- tooltip: todo -->
-   * The **Include script source maps** checkbox.  (Must first select the **Include resource content** checkbox.)<!-- tooltip: todo -->
+   * The **Include annotations** checkbox.  This checkbox only appears if there are annotations.
+
+   * The **Include resource content** checkbox.
+
+   * The **Include script source maps** checkbox.  (Must first select the **Include resource content** checkbox.)
 
    Optionally, clear the **Compress with gzip** checkbox.
 
@@ -91,8 +91,7 @@ To record performance for aspects of a webpage, and then export a performance re
 <!-- ====================================================================== -->
 ## Include annotations
 
-<!-- tooltip on (i) info button:
-todo: __ -->
+<!-- no (i) info button -->
 
 In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were added to a performance profile.
 
@@ -106,9 +105,7 @@ See also:
 ## Include resource content
 
 <!-- tooltip on (i) info button:
-Includes the full content of all loaded scripts (except extensions).
-
-todo: add "HTML" & "CSS" to that tooltip
+Includes the full content of all loaded HTML, CSS, and scripts (except extensions).
 -->
 
 In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts in the exported trace file.  All loaded scripts (except extensions) are saved in the trace file.
@@ -206,18 +203,29 @@ See also:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
-* [Share a memory trace with more data](../experimental-features/share-memory-traces.md)<!-- link not in article -->
-* [Performance tool: Analyze your website's performance](./overview.md)
-* [Sources tool overview](../sources/index.md)
+* [Share a memory trace with more data](../experimental-features/share-memory-traces.md)<!-- link not in article --><!-- toc: DevTools > Experimental -->
+
+**Sources** tool:
+* [Sources tool overview](../sources/index.md)<!-- Sources article 1 -->
    * [Using the Content scripts tab for Microsoft Edge extensions](../sources/index.md#using-the-content-scripts-tab-for-microsoft-edge-extensions) in _Sources tool overview_.
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](../sources/index.md#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage) in _Sources tool overview_.
-* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
-* [JavaScript debugging features](../javascript/reference.md)
-* [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
+* [JavaScript debugging features](../javascript/reference.md)<!-- Sources article 4 -->
+* [Run snippets of JavaScript on any webpage](../javascript/snippets.md)<!-- Sources article 6 -->
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)<!-- toc bucket Sources article 12; Tools 6 -->
+
+**Performance** tool:
+* [Performance tool: Analyze your website's performance](./overview.md)<!-- Perf article 1 -->
+* Performance features reference
+   * [Annotate a recording and share it](./reference.md#annotate-a-recording-and-share-it) in _Performance features reference_.<!-- Perf article 5 -->
+   * [Get actionable insights](./reference.md#get-actionable-insights) in _Performance features reference_.<!-- Perf article 5 -->
+
+GitHub:
+* [To do](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
 
 <!--
+Chrome docs:
 * [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/) - 404 - todo: chrome link
 maybe copy valid link into article body
 
