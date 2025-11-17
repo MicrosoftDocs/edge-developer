@@ -30,6 +30,19 @@ Browser compatibility:
 
 * `.devtools` traces can only be imported in Microsoft Edge.
 
+<!-- ====================================================================== -->
+## Set the default memory trace type
+
+By default, the **Memory** tool exports data as `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` trace files. To change the default trace type to `.devtools`:
+
+1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+1. In DevTools, in the upper right, select **Customize and control DevTools** > **Settings** (![Settings button](./share-memory-traces-images/settings-button-icon.png)).  **Settings** opens, with the **Preferences** page selected.
+
+1. In the **Persistence** section of the **Preferences** page, use the **Export .devtools memory traces** checkbox to control the default type.
+
+   ![The Settings panel in DevTools, showing the export type option](./share-memory-traces-images/set-default-memory-trace-type.png)
+
 
 <!-- ====================================================================== -->
 ## Set the export options for memory traces
@@ -80,21 +93,29 @@ To export memory information from the **Memory** tool:
 
 1. In the toolbar, select the **Save profile** button.
 
-   Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**.
+   Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**:
 
    <!-- Or, click the **Save all to file** button that's in the **(string)** row. -->
 
    ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png)
 
-   The **Save As** dialog opens.
+   The **Save As** dialog opens:
 
-1. Choose the trace type and a location to save the trace file on your disk.
+   ![The Save As dialog in Windows, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png)
+
+1. Navigate to a folder in which to save the trace file on your disk.
+
+1. In the **File name** text box, adjust the file name if desired.
+
+1. In the **Save as type** dropdown menu, select a trace type.
 
    * Select `.devtools` if you want to include console messages, script sources, and DOM elements.
+
    * Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
 
-   <!-- todo: create png & un-comment after new ui is in canary: -->
-   <!-- ![The Windows save dialog, showing the memory trace file being saved in a traces folder](./share-memory-traces-images/saving-memory-trace.png) -->
+1. Click the **Save** button.
+
+   The **Save As** dialog closes, and the file is saved to disk.
 
 
 <!-- ====================================================================== -->
