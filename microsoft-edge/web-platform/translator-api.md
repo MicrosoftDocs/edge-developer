@@ -393,12 +393,9 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Translator API, any issues with the API or expert model, and whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/11nn).
-<!-- todo: Post a new feedback Issue and link to it, like
-Prompt API feedback issue https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012
-Writing Assistance APIs feedback issue https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031 -->
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1157).
 
-If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).<!-- todo: first merge https://github.com/MicrosoftEdge/MSEdgeExplainers/pull/1158 -->
+If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=translator-api.md).
 
 You can also contribute to the discussion about the design of the Translator API at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
 
