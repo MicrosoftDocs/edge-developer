@@ -44,7 +44,9 @@ A memory trace can also be saved as a `.devtools` file, which contains much more
 <!-- ====================================================================== -->
 ## Set the default memory trace type
 
-By default, the **Memory** tool exports data as `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` trace files. To change the default trace type to `.devtools`:
+By default, the **Memory** tool exports data as `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` trace files.
+
+To change the default trace type to `.devtools`:
 
 1. Open DevTools by pressing **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
@@ -98,11 +100,11 @@ To export memory information from the **Memory** tool:
 
    The snapshot is recorded and displayed.
 
-1. In the toolbar, select the **Save profile** button.
-
-   Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**:
+1. In the toolbar, select the **Save profile** (![Save profile icon](./share-memory-traces-images/save-profile-icon.png)) button:
 
    ![Microsoft Edge with DevTools, showing the Memory tool, with the Save button](./share-memory-traces-images/exporting-memory-trace.png)
+
+   Or, in the **Memory** tool sidebar, hover over the new snapshot's entry, and then select **Save profile**.
 
    The **Save As** dialog opens:
 
@@ -112,11 +114,22 @@ To export memory information from the **Memory** tool:
 
 1. In the **File name** text box, adjust the file name if desired.
 
-1. In the **Save as type** dropdown menu, select a trace type.
+1. In the **File name** text box, keep or modify the extension that's specified after the file name.
 
-   * Select `.devtools` if you want to include console messages, script sources, and DOM elements.
+   <!-- todo: expect the File type dropdown to have not just 1 item, but 2
 
-   * Otherwise, select `.heapsnapshot`, `.heapprofile`, or `.heaptimeline`.
+   when DevTools Settings > **Export .devtools memory traces** checkbox is cleared, **Save as type**'s lone item is 
+   **Performance traces (*.devtools; *.json; *.heapsnapshot)**
+
+   when DevTools Settings > **Export .devtools memory traces** checkbox is selected, **Save as type**'s lone item is 
+   **Performance traces (*.devtools; *.json; *.devtools)**
+   -->
+
+   * `.devtools` includes console messages, script sources, and DOM elements.
+
+   * `.heapsnapshot`, `.heapprofile`, or `.heaptimeline` omits console messages, script sources, and DOM elements.
+
+   Which extension is initially displayed is controlled by a DevTools setting; see [Set the default memory trace type](#set-the-default-memory-trace-type), above.
 
 1. Click the **Save** button.
 
@@ -134,11 +147,22 @@ To import a trace in the **Memory** tool:
 
 1. Click the **Load profile** (![Load profile icon](./share-memory-traces-images/load-profile-icon.png)) button at the top.  Or, click the **Load profile** button at the bottom.
 
-1. Locate the trace file on your disk. It's either a `.devtools` file, or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file.
+   The **Open** dialog is displayed.
+
+1. In the lower left dropdown list (a filter), select file types to display:
+
+   * **Performance traces (*.devtools; *.json)** - _Used with the **Performance** tool._
+   * **Heap snapshots (*.devtools; *.heapsnapshot)**
+   * **Heap timelines (*.devtools; *.heaptimeline)**
+   * **Sampled heap profiles (*.devtools; *.heapprofile)**
+
+1. Locate the trace file on your disk, and then select it.
+
+   The trace file is either a `.devtools` file, or a `.heapsnapshot`, `.heaptimeline`, or `.heapprofile` file.
 
    ![The Windows open dialog, showing a memory trace file](./share-memory-traces-images/opening-memory-trace.png)
 
-1. Open the file.
+1. Click the **Open** button.
 
    If it's a `.devtools` file, a new DevTools window appears, showing the memory information and the extra runtime information that was recorded displayed in the **Sources**, **Console**, and **Elements** tools.
 
