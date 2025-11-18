@@ -10,9 +10,10 @@ ms.date: 11/17/2025
 ---
 # Publish a Microsoft Edge extension
 
-After you develop and test your Microsoft Edge extension, you're ready to distribute your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To release your existing Chromium extension for Microsoft Edge users, see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
+After you develop and test your Microsoft Edge extension, you're ready to distribute your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To increase the extension's reach and make it available to other Microsoft Edge users, publish the extension at Microsoft Edge Add-ons.  This article provides the process to submit an extension at Microsoft Edge Add-ons.
 
-Publish your extension at Microsoft Edge Add-ons to increase its reach and make it available to other Microsoft Edge users.  This article provides the process to submit your extension at Microsoft Edge Add-ons.
+<!-- todo: low relevance, dilutes focus, omit?  put in See Also only? -->
+If you have an existing Chrome extension and you want to release it for Microsoft Edge users, see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
 
 <!-- ========================================================================== -->
@@ -22,9 +23,9 @@ To prepare an extension to be submitted via Partner Center, to be published at [
 
 
 <!-- ---------------------------------- -->
-#### Have a working prototype of your extension
+#### Have a working prototype of the extension
 
-Before publishing your extension, you should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+Before publishing your extension, you should have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
 
 
 <!-- ---------------------------------- -->
@@ -32,17 +33,17 @@ Before publishing your extension, you should have a working prototype of your ex
 
 To get started, visit [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  This is where every developer (new or existing) must go to publish or manage their extensions.
 
-Use your active developer account to submit your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Register as a Microsoft Edge extension developer](./create-dev-account.md).
+Use your active developer account to submit the extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Register as a Microsoft Edge extension developer](./create-dev-account.md).
 
 
 <!-- ---------------------------------- -->
-#### Create a zip file for your extension package
+#### Create a zip file for the extension package
 
-Create a zip file for your extension package.  Your extension package must include the following files:
+Create a zip file for your extension package.  The extension package must include the following files:
 
 * The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
 
-* Images and other files required by your extension.
+* Images and other files required by the extension.
 
 
 <!-- ---------------------------------- -->
@@ -58,7 +59,7 @@ The following fields in the manifest file are automatically included in your ext
 
 *  The `Description` field, which populates the **Short description** on the store details page.
    
-   Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for your extension.
+   Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for the extension.
 
    * If you include a `short description` in the extension manifest file, that short description is displayed in your store listing.
 
@@ -73,13 +74,13 @@ Later, after you upload your package, you'll have an opportunity to modify some 
 
 After doing the above steps, the extension is ready to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
-To submit your extension to Partner Center:
+To submit an extension to Partner Center:
 
 * [Step 1: Start a new submission](#step-1-start-a-new-submission).
 * [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
 * [Step 3: Provide availability details](#step-3-provide-availability-details).
-* [Step 4: Enter properties describing your extension](#step-4-enter-properties-describing-your-extension).
-* [Step 5: Add store listing details for your extension](#step-5-add-store-listing-details-for-your-extension).
+* [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension).
+* [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension).
 * [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes).
 
 Details are below.
@@ -158,7 +159,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 4: Enter properties describing your extension
+## Step 4: Enter properties describing the extension
 
 1. On the left, click **Properties**.
 
@@ -185,7 +186,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 5: Add store listing details for your extension
+## Step 5: Add store listing details for the extension
 
 1. On the left, click **Store listings**.
 
@@ -202,11 +203,11 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
    | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
-   | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
-   | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload a promotional tile. |
+   | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
+   | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Screenshots** | - | You can submit a maximum of 6 screenshots describing the functionality of the extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload at least one screenshot. |
-   | **YouTube video URL** | - | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the store listing page of the extension. |
-   | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package and reupload it. |
+   | **YouTube video URL** | - | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the extension's store listing page. |
+   | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package and reupload it<!--todo: the manifest file? the extension package? -->. |
    | **Search terms** | - | Single words or phrases that help discover the extension when a user searches at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
    The information that's provided in the **Store Listings** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
@@ -216,17 +217,17 @@ Define the specific markets in which you plan to offer your extension.  The defa
 -->
 
 
-<!-- todo: keep the remaining h4 sections, in the h2 section "Step 5: Add store listing details for your extension"? -->
+<!-- todo: keep the remaining h4 sections, in the h2 section "Step 5: Add store listing details for the extension"? -->
 <!-- ------------------------------ -->
 #### Required properties
 
 To list your extension in the store, properties that are not indicated as Required in the above table are Optional.
 
-The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in your extension zip package:
+The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's zip package:
 * **Description**
 * **Extension Store logo**
 
-The following Required properties must be filled in for _at least one_ of the languages that's listed in your extension zip package:
+The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's zip package:
 * **Display name**
 * **Short description**
 
@@ -288,7 +289,7 @@ To submit the YouTube video URL of your video:
 <!-- ========================================================================== -->
 ## Step 6: Complete the submission by providing testing notes
 
-On the **Submit your extension** page, you can optionally add notes for certification to help test your extension.  When you submit your extension, use the **Notes for certification** text box to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
+On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.  The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might fail certification.
 
 To add notes for certification:
 
@@ -314,11 +315,11 @@ To add notes for certification:
 
 1. Click the **Publish** button, in the upper right.
 
-   Your extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+   The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
-   Your submission then proceeds to the certification step.  The certification process can take up to seven business days after your submission.
+   The submission then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
-   After your submission passes certification, your extension is published at Microsoft Edge Add-ons.  The status of your extension in the Partner Center dashboard changes to **In the Store**.
+   After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
 
 
 <!-- ========================================================================== -->
