@@ -12,8 +12,7 @@ ms.date: 11/17/2025
 
 After you develop and test your Microsoft Edge extension, you're ready to distribute your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To increase the extension's reach and make it available to other Microsoft Edge users, publish the extension at Microsoft Edge Add-ons.  This article provides the process to submit an extension at Microsoft Edge Add-ons.
 
-<!-- todo: low relevance, dilutes focus, omit?  put in See Also only? -->
-If you have an existing Chrome extension and you want to release it for Microsoft Edge users, see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
+If you have an existing Chrome extension and you want to release it for Microsoft Edge users, first see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
 
 <!-- ========================================================================== -->
