@@ -207,7 +207,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Screenshots** | - | You can submit a maximum of 6 screenshots describing the functionality of the extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy the asset from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload at least one screenshot. |
    | **YouTube video URL** | - | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the extension's store listing page. |
    | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package and reupload it<!--todo: the manifest file? the extension package? -->. |
-   | **Search terms** | - | Single words or phrases that help discover the extension when a user searches at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
+   | **Search terms** | - | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
    The information that's provided in the **Store Listings** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
 
@@ -324,7 +324,11 @@ To add notes for certification:
 <!-- ========================================================================== -->
 ## Support for issues
 
-If you experience issues during the submission or registration process, submit a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4), or [Contact the Microsoft Edge extensions team](../contact.md).
+If you experience issues when registering as an extension developer or when submitting an extension, you can:
+
+* Enter a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4).
+
+* [Contact the Microsoft Edge extensions team](../contact.md).
 
 
 <!-- ========================================================================== -->
