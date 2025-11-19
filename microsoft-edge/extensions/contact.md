@@ -89,6 +89,18 @@ You can follow what's happening with Microsoft Edge extensions via [#EdgeExtensi
 For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://x.com/msedgedev/) team on X (Twitter).
 
 
+<!-- todo: include email section?
+<!-- ====================================================================== 
+## Email
+
+[ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com)
+
+the only (live) articles that include that email address are:
+https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/port-chrome-extension - Intro, step 5, [contact us] ( ext_dev_support@microsoft.com )
+https://learn.microsoft.com/microsoft-edge/extensions/update/transfer-ownership - 2x
+-->
+
+
 <!-- ====================================================================== -->
 ## See also
 
