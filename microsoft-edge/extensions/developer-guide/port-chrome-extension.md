@@ -28,8 +28,6 @@ To port your Chrome extension:
    * Debug the extension in Microsoft Edge by using DevTools; see [Overview of DevTools](../../devtools/overview.md).
    * [Contact the Microsoft Edge extensions team](../contact.md).
 
-1. Publish the extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com); see [Publish a Microsoft Edge extension](../publish/publish-extension.md).
-
 
 <!-- ====================================================================== -->
 ## Setting allowed_origins for a native app
@@ -38,8 +36,10 @@ If your extension exchanges messages with a native app by using `chrome.runtime.
 
 
 <!-- ====================================================================== -->
-## Next steps
+## Publish the extension
 
 After your extension package is ready to publish at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
-1. [Register as a Microsoft Edge extension developer](../publish/create-dev-account.md)
-1. [Publish a Microsoft Edge extension](../publish/publish-extension.md)
+
+1. [Register as a Microsoft Edge extension developer](../publish/create-dev-account.md).
+
+1. [Publish a Microsoft Edge extension](../publish/publish-extension.md).
