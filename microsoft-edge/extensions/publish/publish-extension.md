@@ -110,7 +110,7 @@ To upload the extension package:
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** page.
 
-1. To upload your package, drag and drop the zip file to the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
+1. To upload your package, drag and drop the `.zip` file to the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
@@ -197,26 +197,29 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 1. In the **Language details** section, fill in the following properties:
 
+   <!-- todo: show screenshot showing the following fields -->
+
    | Property name | Required? | Description |
    |---|---|---|
-   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload it. |
+   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
    | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Screenshots** | - | You can submit a maximum of 6 screenshots describing the functionality of the extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy a screenshot from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload at least one screenshot. |
    | **YouTube video URL** | - | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the extension's store listing page. |
-   | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package and reupload it<!--todo: the manifest file? the extension package? -->. |
+   | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package, and then re-upload the package. |
    | **Search terms** | - | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
    The information that's provided in the **Store Listings** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
+
+   The extension package contains the manifest file; to re-upload the manifest, you must re-upload the extension package.  All the other items (such as logo or tiles) are uploaded separately by using the **Store Listings** page.
 
 <!-- 
 1. Click **Save** in the upper right. todo: confirm UI
 -->
 
 
-<!-- todo: keep the remaining h4 sections, in the h2 section "Step 5: Add store listing details for the extension"? -->
 <!-- ------------------------------ -->
 #### Required properties
 
@@ -236,13 +239,19 @@ The following Required properties must be filled in for _at least one_ of the la
 
 To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
 
-To add or remove languages in your store listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), use the **Add a language** dropdown list on the **Store Listings** page:
+To add or remove languages in your store listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
 
-![Add a language, in the Store Listings page](./publish-extension-images/store-listings-page.png)
+1. Go to the **Store Listings** page.
 
-You can duplicate assets (such as logos, tiles, or screenshots) from one language across other languages by using the **Duplicate functionality**<!-- todo: strike "functionality"? --> button on the **Language details** page.
-<!-- example of wording from above: 
-You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. -->
+1. Select an item from the **Add a language** dropdown list:
+
+   ![Add a language, in the Store Listings page](./publish-extension-images/store-listings-page.png)
+
+To duplicate a asset (such as a logo, tile, or screenshot) from one language across other languages:
+
+1. Go to the **Language details** page.<!-- todo: how? -->
+
+1. Click **Duplicate this logo for all languages** or **Duplicate these screenshots for all languages**.
 
 
 <!-- ------------------------------ -->

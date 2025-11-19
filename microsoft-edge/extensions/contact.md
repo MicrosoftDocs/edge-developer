@@ -12,6 +12,8 @@ ms.date: 05/30/2025
 
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
 
+<!-- email is only used for [Transfer ownership of an extension](./update/transfer-ownership.md) -->
+
 
 <!-- ====================================================================== -->
 ## Issues page in the MicrosoftEdge-Extensions repo
@@ -87,18 +89,6 @@ You can follow what's happening with Microsoft Edge extensions via [#EdgeExtensi
 <!-- not specific to extensions -->
 
 For news and updates about developing for the web with Microsoft Edge, follow the [Microsoft Edge Dev (@MSEdgeDev)](https://x.com/msedgedev/) team on X (Twitter).
-
-
-<!-- todo: include email section?
-<!-- ====================================================================== 
-## Email
-
-[ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com)
-
-the only (live) articles that include that email address are:
-https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/port-chrome-extension - Intro, step 5, [contact us] ( ext_dev_support@microsoft.com )
-https://learn.microsoft.com/microsoft-edge/extensions/update/transfer-ownership - 2x
--->
 
 
 <!-- ====================================================================== -->

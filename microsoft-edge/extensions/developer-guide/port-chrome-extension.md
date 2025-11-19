@@ -24,7 +24,7 @@ To port your Chrome extension:
 
 1. Test the extension to check if it works in Microsoft Edge by sideloading the extension.  See [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md).
 
-1. If you face any issues, you can:
+1. If you encounter any issues, you can:
    * Debug the extension in Microsoft Edge by using DevTools; see [Overview of DevTools](../../devtools/overview.md).
    * [Contact the Microsoft Edge extensions team](../contact.md).
 
