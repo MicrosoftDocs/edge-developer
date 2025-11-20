@@ -98,6 +98,9 @@
 
         - name: Summarize, write, and rewrite text with the Writing Assistance APIs
           href: ./web-platform/writing-assistance-apis.md
+
+        - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+          href: ./web-platform/proofreader-api.md
 # /Experimental web platform features
 # =============================================================================
 # -----------------------------------------------------------------------------

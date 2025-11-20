@@ -590,4 +590,5 @@ You can also contribute to the discussion about the design of the Prompt API at 
 
 * [Explainer for the Prompt API](https://github.com/webmachinelearning/prompt-api), on the Web Machine Learning GitHub repo.
 * [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)
+* [Correct grammar, spelling, and punctuation errors in text with the Proofreader API](./proofreader-api.md).
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
