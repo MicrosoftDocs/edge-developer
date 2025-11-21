@@ -54,9 +54,9 @@ Before uploading your package to Partner Center, inspect the manifest file to ma
 
 The following fields in the manifest file are automatically included in your extension's product listing at Microsoft Edge Add-ons.  The fields are read-only on the **Store Listings** page, which is described below.
 
-*  The `Name` field, which populates the **Display name** on the store details page.
+*  The `Name` field, which populates the **Extension name** on the **Details for \<Language\>** page.
 
-*  The `Description` field, which populates the **Short description** on the store details page.
+*  The `Description` field, which populates the **Description** on the **Details for \<Language\>** page.
    
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for the extension.
 
@@ -193,11 +193,13 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    ![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
 
-1. Click the **Edit details** button.<!-- The **Details** page opens.  todo: confirm UI -->
+1. Click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
-1. In the **Language details** section, fill in the following properties:
+   The **Details for \<Language\>** page opens:
 
-   <!-- todo: show screenshot showing the following fields -->
+   ![Details page](./publish-extension-images/details-page.png)
+
+1. Fill in the following properties:
 
    | Property name | Required? | Description |
    |---|---|---|
@@ -211,13 +213,11 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package, and then re-upload the package. |
    | **Search terms** | - | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
-   The information that's provided in the **Store Listings** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
+   The information that's provided in the **Details for \<Language\>** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
 
-   The extension package contains the manifest file; to re-upload the manifest, you must re-upload the extension package.  All the other items (such as logo or tiles) are uploaded separately by using the **Store Listings** page.
+   The extension package contains the manifest file; to re-upload the manifest, you must re-upload the extension package.  All the other items (such as logo or tiles) are uploaded separately by using the **Details for \<Language\>** page.
 
-<!-- 
-1. Click **Save** in the upper right. todo: confirm UI
--->
+1. Click **Save draft** in the upper right.
 
 
 <!-- ------------------------------ -->
@@ -227,10 +227,10 @@ To list your extension in the store, properties that are not indicated as Requir
 
 The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's zip package:
 * **Description**
-* **Extension Store logo**
+* **Extension logo**
 
 The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's zip package:
-* **Display name**
+* **Extension name**
 * **Short description**
 
 
@@ -247,11 +247,11 @@ To add or remove languages in your store listing at [Microsoft Edge Add-ons](htt
 
    ![Add a language, in the Store Listings page](./publish-extension-images/store-listings-page.png)
 
-To duplicate a asset (such as a logo, tile, or screenshot) from one language across other languages:
-
-1. Go to the **Language details** page.<!-- todo: how? -->
-
-1. Click **Duplicate this logo for all languages** or **Duplicate these screenshots for all languages**.
+You can duplicate assets from one language to other languages by using the **Duplicate** option that's under each asset on the **Details for \<Language\>** page, such as:
+* **Extension logo**
+* **Small promotional tile**
+* **Large promotional tile**
+* **Screenshots**
 
 
 <!-- ------------------------------ -->
