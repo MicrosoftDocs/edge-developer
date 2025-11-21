@@ -236,7 +236,7 @@ The following Required properties must be filled in for _at least one_ of the la
 <!-- ------------------------------ -->
 #### Generate description with AI
 
-To help you create high-quality, detailed, and accurate descriptions for your extension, Partner Center offers an AI-powered description generation feature.  This capability ensures that your extension listings are clear, complete, and informative, improving discoverability and user trust.
+To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.
 
 ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
 
