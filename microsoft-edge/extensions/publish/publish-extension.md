@@ -64,7 +64,6 @@ The following fields in the manifest file are automatically included in your ext
 
    * If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing page.
 
-
 Later, after you upload your package, you'll have an opportunity to modify some fields at Partner Center.
 
 
@@ -204,7 +203,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | Property name | Required? | Description |
    |---|---|---|
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
-   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content. |
+   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate description with AI](#generate-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -232,6 +231,86 @@ The following Required properties must be provided for _each_ language (such as 
 The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's zip package:
 * **Extension name**
 * **Short description**
+
+
+<!-- ------------------------------ -->
+#### Generate description with AI
+
+To help you create high-quality, detailed, and accurate descriptions for your extension, Partner Center offers an AI-powered description generation feature.  This capability ensures that your extension listings are clear, complete, and informative, improving discoverability and user trust.
+
+![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
+
+To generate the description by using AI:
+
+1. Below the **Description** text box, click the **Generate with AI** button.
+
+   The **Generate description with AI** pane opens on the right.
+
+1. In the **Provide inputs to generate description (optional)** text box, you can enter key words or text.
+
+1. Click the **Generate** button.
+
+1. If you don't like the result, click the **Discard** button.
+
+1. When the result is close to what you want, click the **Apply** button.
+
+   The side pane closes, and the generated content is displayed in the **Description** text box on the **Details for \<Language\>** page.
+
+1. In the **Description** text box, edit the description as needed.
+
+
+<!-- ---------- -->
+###### Input sources
+
+The AI model analyzes the uploaded extension package to understand its functionality.
+
+Optionally, you can provide: 
+
+* A custom prompt (such as key features or the intended audience).
+
+* A previous description or any additional details.
+
+
+<!-- ---------- -->
+###### Output
+
+The generated description combines insights from the package and any input that you provide.
+
+You can **Apply** or **Discard** the generated description.
+
+The generated description is displayed in the **Generate description using AI** side pane for review.
+
+To edit the generated description, click the **Apply** button.  The generated content is transferred into the main **Description** input field, where you can edit the description as needed.
+
+
+<!-- ---------- -->
+###### Edit before submitting
+
+Even if you use the AI-generated description, you are free to modify it to ensure accuracy and alignment with your extension's purpose.
+
+
+<!-- ---------- -->
+###### Disclaimer
+
+You're responsible for the quality and accuracy of the final description.  Validate the description before submitting the extension.
+
+
+<!-- ---------- -->
+###### Attempt limit
+
+You can generate descriptions up to 10 times per hour.  If you exceed this limit, an error message appears, and you can retry later:
+
+![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)
+
+
+<!-- ---------- -->
+###### Error handling
+
+If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
+ 
+![The Provide inputs text box with an error message](./publish-extension-images/generation.png)
+
+You can retry after some time.
 
 
 <!-- ------------------------------ -->
