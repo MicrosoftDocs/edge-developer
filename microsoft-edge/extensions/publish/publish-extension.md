@@ -203,7 +203,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | Property name | Required? | Description |
    |---|---|---|
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
-   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate description with AI](#generate-description-with-ai) button. |
+   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -244,11 +244,18 @@ To generate the description by using AI:
 
 1. Below the **Description** text box, click the **Generate with AI** button.
 
-   The **Generate description with AI** pane opens on the right.
+   The **Generate description using AI** pane opens on the right.
 
-1. In the **Provide inputs to generate description (optional)** text box, you can enter key words or text.
+1. In the **Provide inputs to generate description (optional)** text box, you can enter AI prompt text, such as:
+
+   * Key features.
+   * The intended audience.
+   * A previous description.
+   * Additional details.
 
 1. Click the **Generate** button.
+
+   The AI model analyzes the uploaded extension package to understand its functionality.  The generated description combines insights from the package and any input that you provide.
 
 1. If you don't like the result, click the **Discard** button.
 
@@ -258,59 +265,17 @@ To generate the description by using AI:
 
 1. In the **Description** text box, edit the description as needed.
 
+   Even if you use the AI-generated description, you're free to modify it to ensure accuracy and alignment with your extension's purpose.
 
-<!-- ---------- -->
-###### Input sources
-
-The AI model analyzes the uploaded extension package to understand its functionality.
-
-Optionally, you can provide: 
-
-* A custom prompt (such as key features or the intended audience).
-
-* A previous description or any additional details.
-
-
-<!-- ---------- -->
-###### Output
-
-The generated description combines insights from the package and any input that you provide.
-
-You can **Apply** or **Discard** the generated description.
-
-The generated description is displayed in the **Generate description using AI** side pane for review.
-
-To edit the generated description, click the **Apply** button.  The generated content is transferred into the main **Description** input field, where you can edit the description as needed.
-
-
-<!-- ---------- -->
-###### Edit before submitting
-
-Even if you use the AI-generated description, you are free to modify it to ensure accuracy and alignment with your extension's purpose.
-
-
-<!-- ---------- -->
-###### Disclaimer
-
-You're responsible for the quality and accuracy of the final description.  Validate the description before submitting the extension.
-
-
-<!-- ---------- -->
-###### Attempt limit
+   You're responsible for the quality and accuracy of the final description.  Validate the description before submitting the extension.
 
 You can generate descriptions up to 10 times per hour.  If you exceed this limit, an error message appears, and you can retry later:
 
 ![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)
 
-
-<!-- ---------- -->
-###### Error handling
-
 If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
  
 ![The Provide inputs text box with an error message](./publish-extension-images/generation.png)
-
-You can retry after some time.
 
 
 <!-- ------------------------------ -->
