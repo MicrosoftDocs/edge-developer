@@ -190,9 +190,9 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    The **Store Listings** page opens:
 
-   ![Store listing section for an extension](./publish-extension-images/store-listing-section-for-extension.png)
+   ![Store listing section for an extension](./publish-extension-images/store-listings-page.png)
 
-1. Click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
+1. In the row for a language, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
    The **Details for \<Language\>** page opens:
 
@@ -287,19 +287,42 @@ If generation fails, an error message is displayed, such as "Something went wron
 
 To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
 
-To add or remove languages in your store listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
 
-1. Go to the **Store Listings** page.
+<!-- ---------- -->
+###### Add or remove a language
 
-1. Select an item from the **Add a language** dropdown list:
+To add or remove a language in your store listing that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
 
-   ![Add a language, in the Store Listings page](./publish-extension-images/store-listings-page.png)
+1. In Partner Center, go to the **Store Listings** page:
 
-You can duplicate assets from one language to other languages by using the **Duplicate** option that's under each asset on the **Details for \<Language\>** page, such as:
-* **Extension logo**
-* **Small promotional tile**
-* **Large promotional tile**
-* **Screenshots**
+   ![Add a language, in the Store Listings page](./publish-extension-images/add-a-language.png)
+
+1. In the **Add a language** dropdown list, select a language.
+
+   A new **Details for \<Language\>** page opens, for the selected language.
+
+
+<!-- ---------- -->
+###### Duplicate an asset from one language to other languages
+
+To duplicate an asset (such as a logo, tile, or snapshot) from one language to other languages:
+
+1. At Partner Center, go to the **Store Listings** page.
+
+1. In a row for a language that already has the asset, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
+
+   The **Details for \<Language\>** page opens:
+
+   ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)
+
+1. Click the **Duplicate** option that's under an asset such as:
+
+   * **Extension logo**
+   * **Small promotional tile**
+   * **Large promotional tile**
+   * **Screenshots**
+
+   For example, click **Duplicate this logo for all languages**.
 
 
 <!-- ------------------------------ -->
