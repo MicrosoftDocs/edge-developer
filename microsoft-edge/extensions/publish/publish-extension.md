@@ -386,7 +386,7 @@ To provide search terms:
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
 
-The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might fail certification.
+The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might not pass certification.
 
 To add notes for certification:
 
