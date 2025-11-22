@@ -242,7 +242,7 @@ To help you create a high-quality, detailed, and accurate description of your ex
 
 To generate the description by using AI:
 
-1. Below the **Description** text box, click the **Generate with AI** button.
+1. On the **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
 
    The **Generate description using AI** pane opens on the right.
 
@@ -255,9 +255,13 @@ To generate the description by using AI:
 
 1. Click the **Generate** button.
 
-   The AI model analyzes the uploaded extension package to understand its functionality.  The generated description combines insights from the package and any input that you provide.
+   The AI model analyzes the uploaded extension package, to describe its functionality.  The generated description combines insights from this package analysis and any input that you provide.
 
-1. If you don't like the result, click the **Discard** button.
+1. If you want to try again, to get a better result:
+
+   1. Click the **Discard** button.
+
+   1. In the **Provide inputs to generate description (optional)** text box, enter different prompt text, and then click the **Generate** button again.
 
 1. When the result is close to what you want, click the **Apply** button.
 
@@ -265,9 +269,9 @@ To generate the description by using AI:
 
 1. In the **Description** text box, edit the description as needed.
 
-   Even if you use the AI-generated description, you're free to modify it to ensure accuracy and alignment with your extension's purpose.
+   You can modify the AI-generated description, to ensure accuracy and alignment with your extension's purpose.
 
-   You're responsible for the quality and accuracy of the final description.  Validate the description before submitting the extension.
+   You're responsible for the quality and accuracy of the final description.  Make sure that the description is valid, before submitting the extension.
 
 You can generate descriptions up to 10 times per hour.  If you exceed this limit, an error message appears, and you can retry later:
 
