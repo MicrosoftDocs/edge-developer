@@ -16,12 +16,12 @@ If you have an existing Chrome extension and you want to release it for Microsof
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-* [Prepare an extension to be submitted via Partner Center](#prepare-an-extension-to-be-submitted-via-partner-center)
+* [Prepare the extension to be submitted](#prepare-the-extension-to-be-submitted)
    * [Have a working prototype of the extension](#have-a-working-prototype-of-the-extension)
    * [Create a developer account](#create-a-developer-account)
    * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
-* [Submit the extension at Microsoft Edge Add-ons](#submit-the-extension-at-microsoft-edge-add-ons)
+* [Submit the extension at Partner Center](#submit-the-extension-at-partner-center)
 * [Step 1: Start a new submission](#step-1-start-a-new-submission)
 * [Step 2: Upload the extension package](#step-2-upload-the-extension-package)
 * [Step 3: Provide availability details](#step-3-provide-availability-details)
@@ -42,7 +42,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
 
 
 <!-- ========================================================================== -->
-## Prepare an extension to be submitted via Partner Center
+## Prepare the extension to be submitted
 
 To prepare an extension to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), do the following steps.
 
@@ -94,7 +94,7 @@ Later, after you upload your package, you'll have an opportunity to modify some 
 
 
 <!-- ========================================================================== -->
-## Submit the extension at Microsoft Edge Add-ons
+## Submit the extension at Partner Center
 
 After doing the above steps, the extension is ready to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
