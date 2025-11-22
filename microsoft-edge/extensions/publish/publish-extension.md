@@ -29,7 +29,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Markets](#markets)
 * [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension)
 * [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension)
-   * [Required properties](#required-properties)
+   * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
    * [Duplicate an asset from one language to the other languages](#duplicate-an-asset-from-one-language-to-the-other-languages)
@@ -200,8 +200,6 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Support contact details** | Optional | The URL to your support webpage, or the email address to contact your support team. |
    | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
    
-   Properties that are not indicated as Required are Optional.
-
    The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users at Microsoft Edge Add-ons.
 
 1. Click the **Save & Continue** button.
@@ -211,6 +209,12 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 <!-- ========================================================================== -->
 ## Step 5: Add store listing details for the extension
+
+In one or more **Details for \<Language\>** pages, fill in the properties.
+
+
+<!-- ------------------------------ -->
+#### Enter properties for a language
 
 1. In Partner Center, on the left, click **Store listings**.
 
@@ -224,7 +228,9 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    ![Details page](./publish-extension-images/details-page.png)
 
-1. Fill in the properties, as follows:
+1. Fill in the properties, as follows.
+
+   This information is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
 
    | Property name | Required? | Description |
    |---|---|---|
@@ -238,25 +244,17 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package, and then re-upload the package. |
    | **Search terms** | Optional | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
-   The information that's provided in the **Details for \<Language\>** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
+   The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's `.zip` package:
+   * **Description**
+   * **Extension logo**
 
-   The extension package contains the manifest file; to re-upload the manifest, you must re-upload the extension package.  All the other items (such as logo or tiles) are uploaded separately by using the **Details for \<Language\>** page.
+   The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's `.zip` package:
+   * **Extension name**
+   * **Short description**
 
 1. Click **Save draft** in the upper right.
 
-
-<!-- ------------------------------ -->
-#### Required properties
-
-To list your extension in the store, properties that are not indicated as Required in the above table are Optional.
-
-The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's `.zip` package:
-* **Description**
-* **Extension logo**
-
-The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's `.zip` package:
-* **Extension name**
-* **Short description**
+The extension's `.zip` package contains the manifest file; to re-upload the manifest, you must re-upload the extension's `.zip` package.  All the other items (such as logo or tiles) are uploaded separately, by using the **Details for \<Language\>** page.
 
 
 <!-- ------------------------------ -->
