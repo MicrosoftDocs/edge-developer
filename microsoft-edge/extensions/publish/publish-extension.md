@@ -19,7 +19,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
 * [Prepare an extension to be submitted via Partner Center](#prepare-an-extension-to-be-submitted-via-partner-center)
    * [Have a working prototype of the extension](#have-a-working-prototype-of-the-extension)
    * [Create a developer account](#create-a-developer-account)
-   * [Create a zip file for the extension package](#create-a-zip-file-for-the-extension-package)
+   * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
 * [Submit the extension at Microsoft Edge Add-ons](#submit-the-extension-at-microsoft-edge-add-ons)
 * [Step 1: Start a new submission](#step-1-start-a-new-submission)
@@ -62,9 +62,9 @@ Use your active developer account to submit the extension at [Microsoft Edge Add
 
 
 <!-- ---------------------------------- -->
-#### Create a zip file for the extension package
+#### Create a .zip file for the extension package
 
-Create a zip file for your extension package.  The extension package must include the following files:
+Create a `.zip` file that's your extension package.  The extension package must include the following files:
 
 * The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
 
