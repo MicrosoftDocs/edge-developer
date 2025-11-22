@@ -12,6 +12,8 @@ ms.date: 05/30/2025
 
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
 
+<!-- email is only used for [Transfer ownership of an extension](./update/transfer-ownership.md) -->
+
 
 <!-- ====================================================================== -->
 ## Issues page in the MicrosoftEdge-Extensions repo
