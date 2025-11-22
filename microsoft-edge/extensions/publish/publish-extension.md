@@ -79,7 +79,7 @@ To submit an extension to Partner Center:
 * [Step 3: Provide availability details](#step-3-provide-availability-details).
 * [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension).
 * [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension).
-* [Step 6: Complete the submission by providing testing notes](#step-6-complete-the-submission-by-providing-testing-notes).
+* [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
 
 Details are below.
 
@@ -203,7 +203,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | Property name | Required? | Description |
    |---|---|---|
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
-   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-description-with-ai) button. |
+   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-the-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | Optional | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Large promotional tile** | Optional | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -234,7 +234,7 @@ The following Required properties must be filled in for _at least one_ of the la
 
 
 <!-- ------------------------------ -->
-#### Generate the description by using AI
+#### Generate the description with AI
 
 To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.
 
