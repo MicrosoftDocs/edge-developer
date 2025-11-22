@@ -224,11 +224,11 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 To list your extension in the store, properties that are not indicated as Required in the above table are Optional.
 
-The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's zip package:
+The following Required properties must be provided for _each_ language (such as U.S. English; `en-US`) that's listed in the extension's `.zip` package:
 * **Description**
 * **Extension logo**
 
-The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's zip package:
+The following Required properties must be filled in for _at least one_ of the languages that's listed in the extension's `.zip` package:
 * **Extension name**
 * **Short description**
 
