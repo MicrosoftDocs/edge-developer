@@ -36,7 +36,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
-* [Support for issues](#support-for-issues)
+* [Support](#support)
 * [See also](#see-also)
 
 
