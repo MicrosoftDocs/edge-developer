@@ -28,7 +28,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Visibility](#visibility)
    * [Markets](#markets)
 * [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension)
-* [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension)
+* [Step 5: Add store listing details for each language](#step-5-add-store-listing-details-for-each-language)
    * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
@@ -208,7 +208,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 5: Add store listing details for the extension
+## Step 5: Add store listing details for each language
 
 In one or more **Details for \<Language\>** pages, fill in the properties.
 
