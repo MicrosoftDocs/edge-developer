@@ -135,7 +135,7 @@ To upload the extension package:
 
    You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** page.
 
-1. To upload your package, drag and drop the `.zip` file to the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
+1. To upload your package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
    After your package is uploaded, it's validated. If there's a validation error, resolve the issue and try uploading your package again.
 
