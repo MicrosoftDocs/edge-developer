@@ -427,7 +427,7 @@ To add notes for certification:
 
 
 <!-- ========================================================================== -->
-## Support for issues
+## Support
 
 If you experience issues when registering as an extension developer or when submitting an extension, you can:
 
