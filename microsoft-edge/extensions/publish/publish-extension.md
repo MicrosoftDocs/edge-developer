@@ -14,6 +14,32 @@ After you develop and test your Microsoft Edge extension, you're ready to distri
 
 If you have an existing Chrome extension and you want to release it for Microsoft Edge users, first see [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md).
 
+**Detailed contents:**
+<!-- https://github.com/captainbrosset/WebToc -->
+* [Prepare an extension to be submitted via Partner Center](#prepare-an-extension-to-be-submitted-via-partner-center)
+   * [Have a working prototype of the extension](#have-a-working-prototype-of-the-extension)
+   * [Create a developer account](#create-a-developer-account)
+   * [Create a zip file for the extension package](#create-a-zip-file-for-the-extension-package)
+   * [Review manifest field values](#review-manifest-field-values)
+* [Submit the extension at Microsoft Edge Add-ons](#submit-the-extension-at-microsoft-edge-add-ons)
+* [Step 1: Start a new submission](#step-1-start-a-new-submission)
+* [Step 2: Upload the extension package](#step-2-upload-the-extension-package)
+* [Step 3: Provide availability details](#step-3-provide-availability-details)
+   * [Visibility](#visibility)
+   * [Markets](#markets)
+* [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension)
+* [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension)
+   * [Required properties](#required-properties)
+   * [Generate the description with AI](#generate-the-description-with-ai)
+   * [Add or remove a language](#add-or-remove-a-language)
+   * [Duplicate an asset from one language to the other languages](#duplicate-an-asset-from-one-language-to-the-other-languages)
+   * [Form field checking](#form-field-checking)
+   * [Provide a YouTube video](#provide-a-youtube-video)
+   * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
+* [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
+* [Support for issues](#support-for-issues)
+* [See also](#see-also)
+
 
 <!-- ========================================================================== -->
 ## Prepare an extension to be submitted via Partner Center
