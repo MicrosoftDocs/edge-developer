@@ -163,7 +163,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    The **Properties** page for the extension opens.
 
-1. Enter the following information:
+1. Fill in the properties, as follows:
 
    | Property name | Required? | Description |
    |---|---|---|
@@ -186,7 +186,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 <!-- ========================================================================== -->
 ## Step 5: Add store listing details for the extension
 
-1. On the left, click **Store listings**.
+1. In Partner Center, on the left, click **Store listings**.
 
    The **Store Listings** page opens:
 
@@ -234,17 +234,17 @@ The following Required properties must be filled in for _at least one_ of the la
 
 
 <!-- ------------------------------ -->
-#### Generate description with AI
+#### Generate the description by using AI
 
 To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.
-
-![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
 
 To generate the description by using AI:
 
 1. On the **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
 
-   The **Generate description using AI** pane opens on the right.
+   The **Generate description using AI** pane opens on the right:
+
+   ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
 
 1. In the **Provide inputs to generate description (optional)** text box, you can enter AI prompt text, such as:
 
@@ -261,7 +261,7 @@ To generate the description by using AI:
 
    1. Click the **Discard** button.
 
-   1. In the **Provide inputs to generate description (optional)** text box, enter different prompt text, and then click the **Generate** button again.
+   1. In the **Provide inputs to generate description (optional)** text box, modify your prompt text, and then click the **Generate** button again.
 
 1. When the result is close to what you want, click the **Apply** button.
 
@@ -283,13 +283,9 @@ If generation fails, an error message is displayed, such as "Something went wron
 
 
 <!-- ------------------------------ -->
-#### Supporting multiple languages
+#### Add or remove a language
 
 To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
-
-
-<!-- ---------- -->
-###### Add or remove a language
 
 To add a language in your store listing:
 
@@ -309,8 +305,8 @@ To remove a language from your store listing:
 1. In the row for a language, click **Remove**.
 
 
-<!-- ---------- -->
-###### Duplicate an asset from one language to the other languages
+<!-- ------------------------------ -->
+#### Duplicate an asset from one language to the other languages
 
 You can duplicate an asset (such as a logo, tile, or snapshot) from one language to all the other languages that you've added.
 
@@ -335,19 +331,24 @@ To duplicate an asset across languages:
 
 
 <!-- ------------------------------ -->
-#### YouTube video URL requirements
+#### Form field checking
 
-Fill in required fields in the **Details for English (United States)** page, scrolling down as needed:
+In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
 
 ![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
 
-If you are linking to a video, make sure your video meets the following requirements.
+
+<!-- ------------------------------ -->
+#### Provide a YouTube video
+
+If you are linking to a video, make sure your video meets the following requirements:
 
 * Verify that the content of the YouTube video follows the [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies).
 
 * Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
-To submit the YouTube video URL of your video:
+
+To enter the URL of your YouTube video:
 
 1. On YouTube, locate the video that you want to add to your store listing page.
 
@@ -359,9 +360,13 @@ To submit the YouTube video URL of your video:
 
 
 <!-- ------------------------------ -->
-#### Search terms requirements
+#### Enter search terms for the extension
 
-1. In the **Details for English (United States)** page (or equivalent language/market page), in the **Search terms** text box, enter search terms:
+Providing search terms for your extension is optional.  Each **Details for \<Language\>** page can specify different, localized search terms.
+
+To provide search terms:
+
+1. In a **Details for \<Language\>** page, in the **Search terms** text box, enter search terms for that language:
 
    ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)
 
@@ -377,9 +382,11 @@ To submit the YouTube video URL of your video:
 
 
 <!-- ========================================================================== -->
-## Step 6: Complete the submission by providing testing notes
+## Step 6: Provide testing notes and submit the extension
 
-On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.  The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might fail certification.
+On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
+
+The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might fail certification.
 
 To add notes for certification:
 
@@ -403,7 +410,7 @@ To add notes for certification:
 
    * Any additional information that testers must understand about your submission.
 
-1. Click the **Publish** button, in the upper right.
+ 1. Click the **Publish** button, in the upper right.
 
    The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
