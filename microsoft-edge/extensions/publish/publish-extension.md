@@ -264,7 +264,7 @@ To help you create a high-quality, detailed, and accurate description of your ex
 
 To generate the description by using AI:
 
-1. On the **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
+1. On a **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
 
    The **Generate description using AI** pane opens on the right:
 
@@ -309,7 +309,7 @@ If generation fails, an error message is displayed, such as "Something went wron
 <!-- ------------------------------ -->
 #### Add or remove a language
 
-To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
+To support multiple languages in your code, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
 
 To add a language in your store listing:
 
