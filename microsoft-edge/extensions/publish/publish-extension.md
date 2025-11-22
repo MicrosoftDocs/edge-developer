@@ -33,9 +33,9 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
    * [Duplicate an asset from one language to the other languages](#duplicate-an-asset-from-one-language-to-the-other-languages)
-   * [Form field checking](#form-field-checking)
    * [Provide a YouTube video](#provide-a-youtube-video)
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
+   * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
 * [Support for issues](#support-for-issues)
 * [See also](#see-also)
@@ -355,14 +355,6 @@ To duplicate an asset across languages:
 
 
 <!-- ------------------------------ -->
-#### Form field checking
-
-In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
-
-![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
-
-
-<!-- ------------------------------ -->
 #### Provide a YouTube video
 
 If you are linking to a video, make sure your video meets the following requirements:
@@ -403,6 +395,14 @@ To provide search terms:
 1. Click the **Close** button.  
 
    The **Store listing** page reappears.
+
+
+<!-- ------------------------------ -->
+#### Fix any form field errors
+
+In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
+
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
 
 
 <!-- ========================================================================== -->
