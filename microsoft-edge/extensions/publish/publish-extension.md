@@ -309,8 +309,6 @@ If generation fails, an error message is displayed, such as "Something went wron
 <!-- ------------------------------ -->
 #### Add or remove a language
 
-To support multiple languages in your code, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
-
 To add a language in your store listing:
 
 1. In Partner Center, go to the **Store Listings** page:
@@ -327,6 +325,9 @@ To remove a language from your store listing:
 1. In Partner Center, go to the **Store Listings** page.
 
 1. In the row for a language, click **Remove**.
+
+
+To support multiple languages in your extension's code, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
 
 
 <!-- ------------------------------ -->
