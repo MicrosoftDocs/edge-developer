@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/17/2025
+ms.date: 11/24/2025
 ---
 # Publish a Microsoft Edge extension
 
@@ -16,19 +16,18 @@ If you have an existing Chrome extension and you want to release it for Microsof
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-* [Prepare the extension to be submitted](#prepare-the-extension-to-be-submitted)
+* [Step 1: Prepare the extension to be submitted](#step-1-prepare-the-extension-to-be-submitted)
    * [Have a working prototype of the extension](#have-a-working-prototype-of-the-extension)
    * [Create a developer account](#create-a-developer-account)
    * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
-* [Submit the extension at Partner Center](#submit-the-extension-at-partner-center)
-* [Step 1: Start a new submission](#step-1-start-a-new-submission)
-* [Step 2: Upload the extension package](#step-2-upload-the-extension-package)
-* [Step 3: Provide availability details](#step-3-provide-availability-details)
+* [Step 2: Start a new submission at Partner Center](#step-2-start-a-new-submission-at-partner-center)
+* [Step 3: Upload the extension package](#step-3-upload-the-extension-package)
+* [Step 4: Provide availability information](#step-4-provide-availability-information)
    * [Visibility](#visibility)
    * [Markets](#markets)
-* [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension)
-* [Step 5: Add store listing details for each language](#step-5-add-store-listing-details-for-each-language)
+* [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
+* [Step 6: Add store listing details for each language](#step-6-add-store-listing-details-for-each-language)
    * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
@@ -36,13 +35,13 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Provide a YouTube video](#provide-a-youtube-video)
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
-* [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
+* [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
 * [Support for issues](#support-for-issues)
 * [See also](#see-also)
 
 
 <!-- ========================================================================== -->
-## Prepare the extension to be submitted
+## Step 1: Prepare the extension to be submitted
 
 To prepare an extension to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), do the following steps.
 
@@ -94,36 +93,19 @@ Later, after you upload your package, you'll have an opportunity to modify some 
 
 
 <!-- ========================================================================== -->
-## Submit the extension at Partner Center
+## Step 2: Start a new submission at Partner Center
 
-After doing the above steps, the extension is ready to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) at Partner Center.
 
-To submit an extension to Partner Center:
+   The **Overview** page opens:
 
-* [Step 1: Start a new submission](#step-1-start-a-new-submission).
-* [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
-* [Step 3: Provide availability details](#step-3-provide-availability-details).
-* [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension).
-* [Step 5: Add store listing details for each language](#step-5-add-store-listing-details-for-each-language)
-* [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
-
-Details are below.
-
-
-<!-- ========================================================================== -->
-## Step 1: Start a new submission
-
-1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
-
-   The Partner Center **Overview** page opens:
-
-   ![Partner Center extension home](./publish-extension-images/partner-center-extension-home.png)
+   ![Overview page](./publish-extension-images/partner-center-extension-home.png)
 
 1. Click **Create new extension**.
 
 
 <!-- ========================================================================== -->
-## Step 2: Upload the extension package
+## Step 3: Upload the extension package
 
 The **Extension overview** page shows information for a specific extension:
 
@@ -147,7 +129,7 @@ To upload the extension package:
 
 
 <!-- ========================================================================== -->
-## Step 3: Provide availability details
+## Step 4: Provide availability information
 
 On the **Availability** page for the extension, fill in the **Visibility** and **Markets** sections as follows.
 
@@ -183,7 +165,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 4: Enter properties describing the extension
+## Step 5: Enter properties describing the extension
 
 1. On the left, click **Properties**.
 
@@ -208,7 +190,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 5: Add store listing details for each language
+## Step 6: Add store listing details for each language
 
 In one or more **Details for \<Language\>** pages, fill in the properties.
 
@@ -407,7 +389,7 @@ In the **Details for \<Language\>** page, a message might say "Fields require yo
 
 
 <!-- ========================================================================== -->
-## Step 6: Provide testing notes and submit the extension
+## Step 7: Provide testing notes and submit the extension
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
 
