@@ -279,7 +279,7 @@ You can generate descriptions up to 10 times per hour.  If you exceed this limit
 
 If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
  
-![The Provide inputs text box with an error message](./publish-extension-images/generation.png)
+![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)
 
 
 <!-- ------------------------------ -->
