@@ -557,9 +557,13 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 142.
 
 See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
+
+<!--
+the retired term "enhanced traces" remains in this entry for 141, entry then gets removed
+-->
 
 
 <!-- ====================================================================== -->
@@ -577,7 +581,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 142.
 
 See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 
@@ -595,7 +599,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 142.
 
 See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 
