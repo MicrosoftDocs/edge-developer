@@ -104,7 +104,7 @@ To submit an extension to Partner Center:
 * [Step 2: Upload the extension package](#step-2-upload-the-extension-package).
 * [Step 3: Provide availability details](#step-3-provide-availability-details).
 * [Step 4: Enter properties describing the extension](#step-4-enter-properties-describing-the-extension).
-* [Step 5: Add store listing details for the extension](#step-5-add-store-listing-details-for-the-extension).
+* [Step 5: Add store listing details for each language](#step-5-add-store-listing-details-for-each-language)
 * [Step 6: Provide testing notes and submit the extension](#step-6-provide-testing-notes-and-submit-the-extension)
 
 Details are below.
