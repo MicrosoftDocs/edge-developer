@@ -170,9 +170,9 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Category** | Required | The category that best describes the extension.  Listing the extension in the right category helps users find the extension easily and understand more about it.  |
    | **Privacy policy requirements** | Required | Specify whether the extension accesses, collects, or transmits any personal information.  If you select **No** but it's later determined that the extension does handle personal information, the certification process might fail.  If you select **Yes**, you must provide a Privacy policy URL, because this is a required field and submitting the extension won't be allowed without it. |
    | **Privacy policy URL** | Required if the extension collects any privacy information | A valid privacy policy URL to communicate how the extension follows privacy laws and regulations.  You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.  To determine if the extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
-   | **Website URL** | - | A webpage that provides additional information about the extension.  The `Website URL` must point to a webpage on your own website, not the web listing for the extension at Microsoft Edge Add-ons.  The `Website URL` helps users learn more about the extension, its features, and any other relevant information. |
-   | **Support contact details** | - | The URL to your support webpage, or the email address to contact your support team. |
-   | **Mature content** | - | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
+   | **Website URL** | Optional | A webpage that provides additional information about the extension.  The `Website URL` must point to a webpage on your own website, not the web listing for the extension at Microsoft Edge Add-ons.  The `Website URL` helps users learn more about the extension, its features, and any other relevant information. |
+   | **Support contact details** | Optional | The URL to your support webpage, or the email address to contact your support team. |
+   | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
    
    Properties that are not indicated as Required are Optional.
 
@@ -198,19 +198,19 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    ![Details page](./publish-extension-images/details-page.png)
 
-1. Fill in the following properties:
+1. Fill in the properties, as follows:
 
    | Property name | Required? | Description |
    |---|---|---|
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
    | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
-   | **Small promotional tile** | - | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
-   | **Large promotional tile** | - | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
-   | **Screenshots** | - | You can submit a maximum of 6 screenshots describing the functionality of the extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy a screenshot from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload at least one screenshot. |
-   | **YouTube video URL** | - | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the extension's store listing page. |
+   | **Small promotional tile** | Optional | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
+   | **Large promotional tile** | Optional | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
+   | **Screenshots** | Optional | You can submit a maximum of 6 screenshots describing the functionality of the extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  You can copy a screenshot from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload at least one screenshot. |
+   | **YouTube video URL** | Optional | You can include a promotional YouTube video of the extension.  The URL and thumbnail of the YouTube video is displayed on the extension's store listing page. |
    | **Short description** | Required for at least one language | To edit the short description, you must update the description field in the manifest file of the extension package, and then re-upload the package. |
-   | **Search terms** | - | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
+   | **Search terms** | Optional | Single words or phrases that help users discover the extension when searching at Microsoft Edge Add-ons.  The search terms aren't displayed to users. |
 
    The information that's provided in the **Details for \<Language\>** page is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
 
@@ -291,7 +291,7 @@ To support multiple languages, you can use the internationalization API ([chrome
 <!-- ---------- -->
 ###### Add or remove a language
 
-To add or remove a language in your store listing that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
+To add a language in your store listing:
 
 1. In Partner Center, go to the **Store Listings** page:
 
@@ -302,10 +302,19 @@ To add or remove a language in your store listing that's at [Microsoft Edge Add-
    A new **Details for \<Language\>** page opens, for the selected language.
 
 
-<!-- ---------- -->
-###### Duplicate an asset from one language to other languages
+To remove a language from your store listing:
 
-To duplicate an asset (such as a logo, tile, or snapshot) from one language to other languages:
+1. In Partner Center, go to the **Store Listings** page.
+
+1. In the row for a language, click **Remove**.
+
+
+<!-- ---------- -->
+###### Duplicate an asset from one language to the other languages
+
+You can duplicate an asset (such as a logo, tile, or snapshot) from one language to all the other languages that you've added.
+
+To duplicate an asset across languages:
 
 1. At Partner Center, go to the **Store Listings** page.
 
