@@ -68,7 +68,7 @@ The translation models for specified language pairs are downloaded the first tim
 
 You can send network requests to cloud-based translation services with more sophisticated capabilities, including neural translation; see [Azure AI Translator documentation](/azure/ai-services/translator/).
 
-As an on-device alternative, the Prompt API serves more custom, multi-language prompt-engineering scenarios, with a small language model that's built into Microsoft Edge; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+As an on-device alternative, the Prompt API serves more custom, multi-language prompting scenarios, with a small language model that's built into Microsoft Edge; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 
 <!-- ====================================================================== -->
