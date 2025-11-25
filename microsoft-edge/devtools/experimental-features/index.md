@@ -3,7 +3,6 @@ title: Experimental features in Microsoft Edge DevTools
 description: The latest experimental features in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
 ms.date: 11/10/2025

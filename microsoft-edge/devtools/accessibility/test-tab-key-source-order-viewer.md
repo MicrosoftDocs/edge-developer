@@ -3,7 +3,6 @@ title: Test keyboard support using the Source Order Viewer
 description: To quickly see the tab order of the sections of a page, use the Source Order Viewer in the Accessibility tool, to the right of the Styles tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/05/2023

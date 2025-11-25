@@ -3,7 +3,6 @@ title: Display original function names in performance profiles
 description: Make function names in the flame chart of a performance profile more readable by using source maps, in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/08/2022

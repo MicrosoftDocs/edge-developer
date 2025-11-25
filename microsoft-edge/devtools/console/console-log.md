@@ -3,7 +3,6 @@ title: Log messages in the Console tool
 description: How to log messages and run JavaScript in the Microsoft Edge DevTools Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/27/2023

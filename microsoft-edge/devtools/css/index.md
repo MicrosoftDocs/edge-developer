@@ -3,7 +3,6 @@ title: Get started viewing and changing CSS
 description: Learn how to use Microsoft Edge DevTools to view and change the CSS of a page.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/19/2023

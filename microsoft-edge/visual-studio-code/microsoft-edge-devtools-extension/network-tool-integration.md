@@ -3,7 +3,6 @@ title: Network tool integration
 description: Network tool integration in the Microsoft Edge Developer Tools extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

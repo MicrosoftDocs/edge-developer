@@ -3,7 +3,6 @@ title: Win32 C++ WebView2 API conventions
 description: Win32 C++ WebView2 API conventions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 05/06/2021

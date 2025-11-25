@@ -3,7 +3,6 @@ title: Use the Microsoft Edge Add-ons badge to promote your add-on
 description: Use this badge in your websites, documentation, or tutorials, to promote your extension (or theme) that's at the Microsoft Edge Add-ons site.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 09/15/2025
 ---

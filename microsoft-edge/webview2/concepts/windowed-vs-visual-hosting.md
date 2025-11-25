@@ -3,7 +3,6 @@ title: Windowed vs. Visual hosting of WebView2
 description: Deciding whether to have your app use Windowed, Window to Visual, or Visual hosting of the WebView2 control.  Hosting WebView2 in Windowed or Visual environments.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 10/02/2024

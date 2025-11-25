@@ -3,7 +3,6 @@ title: Launching Internet Explorer
 description: Launching Internet Explorer for DualEngine API Use
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.localizationpriority: high

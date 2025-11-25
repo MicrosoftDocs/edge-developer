@@ -3,7 +3,6 @@ title: Emulate device sensors
 description: Use the Sensors tool in DevTools to emulate sensor input of a device, such as override geolocation, simulate device orientation, force touch events when clicking, and emulate device idle state.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/23/2025

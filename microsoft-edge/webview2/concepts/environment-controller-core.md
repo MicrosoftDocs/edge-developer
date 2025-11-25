@@ -3,7 +3,6 @@ title: "Main classes for WebView2: Environment, Controller, and Core"
 description: "Overview of how the top-level WebView2 classes or interfaces work together: CoreWebView2Environment, CoreWebView2Controller, and CoreWebView2."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/24/2022

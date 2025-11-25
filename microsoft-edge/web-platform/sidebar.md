@@ -3,7 +3,6 @@ title: Develop experiences for the sidebar in Microsoft Edge
 description: Develop experiences for the sidebar in Microsoft Edge, by either installing a Progressive Web App, or using the extension sidebar API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 08/04/2023
 ---

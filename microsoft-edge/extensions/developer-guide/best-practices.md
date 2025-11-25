@@ -3,7 +3,6 @@ title: Best practices for extensions
 description: Best Practices to implement an extension and list it at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/22/2025

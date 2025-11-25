@@ -3,7 +3,6 @@ title: Fix JavaScript errors reported in the Console
 description: Debugging and resolving JavaScript-related errors that are reported in the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/12/2023

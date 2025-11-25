@@ -3,7 +3,6 @@ title: Use Playwright to automate and test in Microsoft Edge
 description: Use Playwright to automate and test in Microsoft Edge.  The Playwright library provides cross-browser automation through a single API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 06/05/2023
 ---

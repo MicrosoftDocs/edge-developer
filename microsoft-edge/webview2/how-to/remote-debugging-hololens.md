@@ -3,7 +3,6 @@ title: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
 description: How to remotely debug HoloLens 2 WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge. 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 09/27/2023

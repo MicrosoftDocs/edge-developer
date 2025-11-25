@@ -3,7 +3,6 @@ title: Evergreen vs. fixed version of the WebView2 Runtime
 description: About the Evergreen vs. fixed version of the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 10/10/2025

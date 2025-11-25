@@ -3,7 +3,6 @@ title: Add users to the Microsoft Edge program
 description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish extensions at Microsoft Edge Add-ons using your Partner Center account.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/03/2022

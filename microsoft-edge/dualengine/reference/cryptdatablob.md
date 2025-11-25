@@ -3,7 +3,6 @@ title: DualEngine Win32 C++ CryptDataBlob
 description: Represents an SSL Certificate.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024

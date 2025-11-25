@@ -3,7 +3,6 @@ title: View Microsoft Edge extensions analytics dashboard
 description: View extension metrics from your Partner Center dashboard and evaluate an extension's performance at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/07/2022

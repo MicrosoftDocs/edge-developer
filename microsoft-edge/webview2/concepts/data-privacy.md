@@ -3,7 +3,6 @@ title: Data and privacy in WebView2
 description: WebView2 data collection and practices, privacy, and the 'Diagnostic data' setting.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/02/2023

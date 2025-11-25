@@ -3,7 +3,6 @@ title: Register as a Microsoft Edge extension developer
 description: How to register a Partner Center developer account to publish an extension at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/01/2022

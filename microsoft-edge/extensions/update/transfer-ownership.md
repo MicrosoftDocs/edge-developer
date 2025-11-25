@@ -3,7 +3,6 @@ title: Transfer ownership of an extension
 description: How to transfer ownership of a Microsoft Edge Extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/14/2025

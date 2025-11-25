@@ -3,7 +3,6 @@ title: "Performance tool: Analyze your website's performance"
 description: Analyze your website's load and runtime performance.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/31/2025

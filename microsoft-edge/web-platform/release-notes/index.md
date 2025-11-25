@@ -3,7 +3,6 @@ title: Release notes for Microsoft Edge web platform
 description: New web platform features and updates in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 03/03/2025
 ---

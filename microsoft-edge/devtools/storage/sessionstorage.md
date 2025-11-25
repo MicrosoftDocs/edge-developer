@@ -3,7 +3,6 @@ title: View and edit session storage
 description: How to view and edit sessionStorage with the Session Storage pane and the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/06/2023

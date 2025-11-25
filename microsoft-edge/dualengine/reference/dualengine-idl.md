@@ -3,7 +3,6 @@ title: Globals
 description: DualEngine Win32 Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024

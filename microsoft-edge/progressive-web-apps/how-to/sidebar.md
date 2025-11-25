@@ -3,7 +3,6 @@ title: Build a PWA for the sidebar in Microsoft Edge
 description: How to build your PWA for installation in the Microsoft Edge sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 02/20/2024

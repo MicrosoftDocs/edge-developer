@@ -3,7 +3,6 @@ title: Run commands in the Command Menu
 description: A guide on how to open the Command Menu, run commands, see other actions, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/12/2023

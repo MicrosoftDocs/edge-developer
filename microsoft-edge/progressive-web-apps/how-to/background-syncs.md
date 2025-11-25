@@ -3,7 +3,6 @@ title: Synchronize and update a PWA in the background
 description: How to do work in the background when the app isn't running, to synchronize content with the server, fetch new resources, or handle long-duration downloads.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/14/2021

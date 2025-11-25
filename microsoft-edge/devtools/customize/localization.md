@@ -3,7 +3,6 @@ title: Change DevTools language settings
 description: How to change the DevTools language settings, such as using English in the UI.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/17/2023

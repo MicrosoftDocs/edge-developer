@@ -3,7 +3,6 @@ title: Reply to user reviews of an extension
 description: You can view your Microsoft Edge extension's reviews and ratings and reply to user reviews from the Partner Center dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/07/2022

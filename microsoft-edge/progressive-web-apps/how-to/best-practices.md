@@ -3,7 +3,6 @@ title: Best practices for PWAs
 description: Learn best practices to build great PWAs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/24/2022

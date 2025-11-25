@@ -3,7 +3,6 @@ title: Contact the WebView2 team
 description: Contacting the Microsoft Edge WebView2 team to submit feature requests or bug reports.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 09/29/2021

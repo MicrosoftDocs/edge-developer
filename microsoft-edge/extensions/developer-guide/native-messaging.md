@@ -3,7 +3,6 @@ title: Native messaging
 description: To communicate with a native Win32 app that's installed on a user's device, an extension uses message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/09/2024

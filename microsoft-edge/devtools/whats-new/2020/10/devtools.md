@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 87)
 description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

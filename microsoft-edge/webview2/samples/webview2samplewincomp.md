@@ -3,7 +3,6 @@ title: Win32 sample app with Visual Composition
 description: This WebView2 sample demonstrates creating an application that embeds a WebView2 control within a Win32 native application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/14/2022

@@ -3,7 +3,6 @@ title: Overview of WebView2 APIs
 description: Overview of WebView2 APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/11/2025

@@ -3,7 +3,6 @@ title: Support multiple profiles under a single user data folder
 description: How to have different profiles of a WebView2 app running with different profiles under a single user data folder to achieve browsing data separation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 10/25/2022

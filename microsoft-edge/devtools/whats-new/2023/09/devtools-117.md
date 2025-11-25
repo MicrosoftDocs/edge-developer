@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 117)
 description: "New Experiment: Explain console errors/warnings with Copilot in Sidebar. Console has content when re-opened in Quick View. Accessibility fixes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/14/2023

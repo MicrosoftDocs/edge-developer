@@ -3,7 +3,6 @@ title: "Sample: Picture inserter using content script"
 description: Uses JavaScript to insert a .jpeg image file inside the <body> element of the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/16/2025

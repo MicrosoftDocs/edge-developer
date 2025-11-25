@@ -3,7 +3,6 @@ title: Call web-side code from native-side code
 description: Learn how to use JavaScript in complex scenarios in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 4/1/2022

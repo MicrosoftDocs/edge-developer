@@ -3,7 +3,6 @@ title: WebView2 Deployment Visual Studio installer
 description: This WebView2 sample demonstrates how to deploy a WebView2 app by using the Visual Studio installer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/17/2022

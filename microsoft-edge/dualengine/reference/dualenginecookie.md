@@ -3,7 +3,6 @@ title: DualEngine Win32 C++ DualEngineCookie
 description: Represents the constituent parts of a cookie.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024

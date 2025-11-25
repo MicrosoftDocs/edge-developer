@@ -3,7 +3,6 @@ title: Re-engage users with push messages
 description: Learn how to use the Push API to provide re-engaging functionality in your Progressive Web App (PWA).
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/13/2023

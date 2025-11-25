@@ -3,7 +3,6 @@ title: Handle protocols in a PWA
 description: How to register your PWA as a protocol handler to more deeply integrate it in the operating system with other applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 01/12/2022

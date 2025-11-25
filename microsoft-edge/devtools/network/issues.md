@@ -3,7 +3,6 @@ title: Network issues guide
 description: How to detect network issues in the Network panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

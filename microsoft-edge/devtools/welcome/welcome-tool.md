@@ -3,7 +3,6 @@ title: Welcome tool
 description: How to use the Welcome tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/15/2022

@@ -3,7 +3,6 @@ title: Prerelease and Release SDKs for WebView2
 description: Prerelease SDKs vs. Release SDKs for WebView2, and version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/25/2023

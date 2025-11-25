@@ -3,7 +3,6 @@ title: REST API Reference for updating an extension at Microsoft Edge Add-ons
 description: The Add-ons API Reference, for REST endpoints to automate updating an extension that's at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/05/2024

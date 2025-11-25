@@ -3,7 +3,6 @@ title: Simulate reduced motion
 description: Simulate reduced motion using developer tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2023

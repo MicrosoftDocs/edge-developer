@@ -3,7 +3,6 @@ title: Sample code for DevTools
 description: Sample code for Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/17/2025

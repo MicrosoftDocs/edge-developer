@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 89)
 description: The What's New tool is now Welcome, Visual Font Editor in the Styles pane, CSS Flexbox debugging tools, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 05/04/2021

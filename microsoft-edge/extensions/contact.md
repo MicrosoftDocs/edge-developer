@@ -3,7 +3,6 @@ title: Contact the Microsoft Edge extensions team
 description: Contacting the support team for Microsoft Edge extension development.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 05/30/2025

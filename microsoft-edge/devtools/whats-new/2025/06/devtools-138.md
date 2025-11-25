@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 138)
 description: Server response and redirection times in 'Document request latency' insight. Redirects in Summary of network requests. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/01/2025

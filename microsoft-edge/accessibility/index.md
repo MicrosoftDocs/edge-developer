@@ -3,7 +3,6 @@ title: Accessibility in Microsoft Edge
 description: Learn how to build, design, and test accessible websites within Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020

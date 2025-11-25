@@ -3,7 +3,6 @@ title: Test text-color contrast using the Color Picker
 description: Testing text-color contrast using the Color Picker.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/01/2023

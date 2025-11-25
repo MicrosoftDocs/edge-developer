@@ -3,7 +3,6 @@ title: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
 description: A starting point to inspect webpage memory issues.  A realtime monitor that tells you how much memory a webpage is currently using.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/21/2024

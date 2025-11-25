@@ -3,7 +3,6 @@ title: Tracking prevention in Microsoft Edge
 description: The Microsoft Edge tracking prevention feature.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 01/07/2021
 ---

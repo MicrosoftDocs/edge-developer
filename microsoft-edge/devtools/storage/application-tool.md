@@ -3,7 +3,6 @@ title: Application tool, to manage storage
 description: The Application tool, to manage storage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/17/2023

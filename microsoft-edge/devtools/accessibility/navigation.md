@@ -3,7 +3,6 @@ title: Navigate DevTools with assistive technology
 description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/07/2021

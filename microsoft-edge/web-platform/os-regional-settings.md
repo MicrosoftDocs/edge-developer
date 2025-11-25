@@ -3,7 +3,6 @@ title: Display regional versions of your site, based on OS settings
 description: How users and web developers can use the OS regional format in Microsoft Edge for improved site experiences
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 08/19/2022
 ---

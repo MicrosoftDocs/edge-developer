@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 140)
 description: Invalidation count in CSS selector stats, in the Performance tool. Emulate the 'Save-Data' header in Network conditions. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/04/2025

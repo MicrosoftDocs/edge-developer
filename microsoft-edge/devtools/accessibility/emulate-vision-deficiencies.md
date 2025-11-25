@@ -3,7 +3,6 @@ title: Emulate vision deficiencies
 description: Emulating vision deficiencies in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2023

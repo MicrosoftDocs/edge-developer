@@ -3,7 +3,6 @@ title: Console features reference
 description: A comprehensive reference for every feature and behavior of the Console UI in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/21/2024

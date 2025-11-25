@@ -3,7 +3,6 @@ title: Use the REST API to update an extension at Microsoft Edge Add-ons
 description: REST endpoints to automate updating an extension that's been published at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/19/2024

@@ -3,7 +3,6 @@ title: Roadmap for Microsoft Edge extensions
 description: The latest updates about new Partner Center features for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/14/2025

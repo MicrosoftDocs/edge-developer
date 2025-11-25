@@ -3,7 +3,6 @@ title: Videos about web development with Microsoft Edge
 description: Watch announcement and demo videos about Microsoft Edge web development technologies such as DevTools, Progressive Web App, Web platform features, WebView2, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 06/20/2024
 ---

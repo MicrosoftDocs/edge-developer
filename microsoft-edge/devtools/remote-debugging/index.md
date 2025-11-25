@@ -3,7 +3,6 @@ title: Remotely debug Android devices
 description: Remote debug live content on an Android device from a Windows or macOS computer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

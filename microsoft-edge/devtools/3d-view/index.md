@@ -3,7 +3,6 @@ title: Navigate webpage layers, z-index, and DOM using the 3D View tool
 description: How to use the 3D View tool, including navigating the 3D canvas and using the Composited Layers tab, Z-index tab, and DOM tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/30/2023

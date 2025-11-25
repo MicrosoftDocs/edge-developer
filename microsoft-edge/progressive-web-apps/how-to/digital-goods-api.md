@@ -3,7 +3,6 @@ title: Provide in-app purchases with the Digital Goods API
 description: How to provide in-app purchases in a Progressive Web App by using the Digital Goods API and the Payment Request API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 06/04/2025

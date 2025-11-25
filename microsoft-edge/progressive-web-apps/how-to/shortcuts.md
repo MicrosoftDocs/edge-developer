@@ -3,7 +3,6 @@ title: Define app shortcuts (long-press or right-click menus)
 description: How to make your app's common tasks available in the Windows Taskbar's context menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/13/2021

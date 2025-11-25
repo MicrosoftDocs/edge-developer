@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 119)
 description: "Increased text color contrast for Error pills (badges) in the Issues tool. Increased text color contrast for tree items on the left side of the Application tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/02/2023

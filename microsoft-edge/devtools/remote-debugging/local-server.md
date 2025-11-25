@@ -3,7 +3,6 @@ title: Access local servers
 description: How to host a site on a development machine web server, and then access the content from an Android device.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/11/2021

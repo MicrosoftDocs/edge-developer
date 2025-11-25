@@ -3,7 +3,6 @@ title: Accessibility-testing features
 description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/05/2023

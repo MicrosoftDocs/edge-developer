@@ -3,7 +3,6 @@ title: Get started with WebView2 in WPF apps
 description: Get started guide with WebView2 for Windows Presentation Foundation (WPF) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 09/19/2022

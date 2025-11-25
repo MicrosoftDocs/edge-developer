@@ -3,7 +3,6 @@ title: Rendering tool, to see what a webpage looks like with different display o
 description: Using the Rendering tool in Microsoft Edge DevTools, to see what a webpage looks like with different display options or vision deficiencies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/29/2023

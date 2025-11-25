@@ -3,7 +3,6 @@ title: WebView2 API Reference
 description: API Reference for Microsoft Edge WebView2 SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/23/2024

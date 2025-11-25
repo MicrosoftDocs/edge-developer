@@ -3,7 +3,6 @@ title: Microsoft Edge DevTools extension for Visual Studio Code
 description: Using the Microsoft Edge Developer Tools extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---

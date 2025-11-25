@@ -3,7 +3,6 @@ title: Using frames in WebView2 apps
 description: Using frames, such as iframes, in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 11/16/2022

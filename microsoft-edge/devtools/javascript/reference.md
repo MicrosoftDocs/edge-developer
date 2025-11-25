@@ -3,7 +3,6 @@ title: JavaScript debugging features
 description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/20/2024

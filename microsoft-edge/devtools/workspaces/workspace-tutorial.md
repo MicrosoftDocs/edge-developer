@@ -3,7 +3,6 @@ title: Workspace tutorial (Sources tool Workspace tab)
 description: Steps to use DevTools as an IDE, such as making webpage edits in the Sources tool's Workspace tab, saving changes to the source files on disk.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/22/2025

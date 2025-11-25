@@ -3,7 +3,6 @@ title: Custom management of network requests
 description: Using the WebResourceRequested event and the WebResourceResponseReceived event in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/03/2023

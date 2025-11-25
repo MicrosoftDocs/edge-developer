@@ -3,7 +3,6 @@ title: Overview of Microsoft Edge extensions
 description: An overview of building and publishing Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 08/20/2024

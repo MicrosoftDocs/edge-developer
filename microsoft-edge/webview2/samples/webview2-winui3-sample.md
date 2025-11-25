@@ -3,7 +3,6 @@ title: WinUI 3 (Windows App SDK) sample app
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 3 (Windows App SDK) sample app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 11/05/2024

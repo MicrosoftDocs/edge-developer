@@ -3,7 +3,6 @@ title: View and debug media players information
 description: Use the Media tool to view information and debug the media players per browser tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

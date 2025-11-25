@@ -3,7 +3,6 @@ title: Set up your Dev environment for WebView2
 description: Set up your Dev environment for WebView2 development.  Set up git, Visual Studio, and a preview channel of Microsoft Edge, and clone the WebView2Samples repo.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/01/2024

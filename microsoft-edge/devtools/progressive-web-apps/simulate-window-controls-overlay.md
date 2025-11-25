@@ -3,7 +3,6 @@ title: Simulate the Window Controls Overlay API without installing your PWA
 description: Simulate enabling the Window Controls Overlay API in your Progressive Web App (PWA), to test your CSS styles, without having to install the PWA first.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/22/2024

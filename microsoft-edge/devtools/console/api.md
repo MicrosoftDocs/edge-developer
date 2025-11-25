@@ -3,7 +3,6 @@ title: Console object API Reference
 description: Use the Console API to write messages to the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

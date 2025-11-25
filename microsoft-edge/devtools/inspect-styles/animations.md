@@ -3,7 +3,6 @@ title: Inspect and modify CSS animation effects
 description: Inspect and modify CSS animation effects by using the Animation Inspector in the Animations tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/11/2021

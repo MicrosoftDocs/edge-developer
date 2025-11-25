@@ -3,7 +3,6 @@ title: Curation and review process for extensions at Microsoft Edge Add-ons
 description: How an extension that's submitted at Microsoft Edge Add-ons is curated and reviewed by the Microsoft Edge extensions team.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/13/2023

@@ -3,7 +3,6 @@ title: DualEngine Win32 C++ Reference
 description: DualEngine Win32 C++ Reference. The Microsoft DualEngine API enables you to host and control an Internet Explorer in your application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode

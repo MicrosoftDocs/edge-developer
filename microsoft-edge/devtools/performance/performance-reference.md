@@ -3,7 +3,6 @@ title: Performance recording event reference
 description: Describes each event type in the Performance tool, for all events that are triggered while making a recording.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

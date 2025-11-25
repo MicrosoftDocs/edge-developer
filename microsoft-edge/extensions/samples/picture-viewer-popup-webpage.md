@@ -3,7 +3,6 @@ title: "Sample: Picture viewer pop-up webpage"
 description: An extension that displays an image file in a webpage in a pop-up, without JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/16/2025

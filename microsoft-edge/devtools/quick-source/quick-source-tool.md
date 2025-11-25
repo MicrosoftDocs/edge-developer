@@ -3,7 +3,6 @@ title: Display or edit source files using the Quick source tool
 description: Use the Quick source tool to display or edit source files when using a tool other than the Sources tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/07/2025

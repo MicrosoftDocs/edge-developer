@@ -3,7 +3,6 @@ title: Manifest file format for extensions
 description: Learn about the format of the manifest file in an extension package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 06/23/2023

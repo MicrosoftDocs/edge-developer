@@ -3,7 +3,6 @@ title: What's New in DevTools (Microsoft Edge 139)
 description: Added request headers to the table in the Network tool. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/07/2025

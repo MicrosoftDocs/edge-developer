@@ -3,7 +3,6 @@ title: Puppeteer overview
 description: Use Puppeteer to automate and test in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/17/2021

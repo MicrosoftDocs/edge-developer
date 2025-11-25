@@ -3,7 +3,6 @@ title: Verify that the webpage layout is usable when narrow
 description: Verifying that the webpage layout is usable when narrow, as part of accessibility testing.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2023
