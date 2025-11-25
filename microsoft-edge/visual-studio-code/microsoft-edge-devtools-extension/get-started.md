@@ -3,7 +3,7 @@ title: Get started using the DevTools extension for Visual Studio Code
 description: Step-by-step tutorial about opening and closing DevTools and using it to modify CSS and debug JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---

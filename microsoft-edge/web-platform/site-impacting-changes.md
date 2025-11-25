@@ -3,7 +3,7 @@ title: Site compatibility-impacting changes coming to Microsoft Edge
 description: Summary of high-impact changes that are planned for Microsoft Edge that may impact website compatibility.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 03/31/2025
 ---

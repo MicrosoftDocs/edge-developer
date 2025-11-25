@@ -3,7 +3,7 @@ title: Emulate mobile devices (Device Emulation)
 description: Use virtual devices in Microsoft Edge to build mobile-first websites.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/30/2025

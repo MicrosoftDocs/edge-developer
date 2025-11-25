@@ -3,7 +3,7 @@ title: WebView2 sample apps
 description: Sample apps for WebView2, for various frameworks or platforms including WinUI 2 (UWP), WinUI 3 (Windows App SDK), WPF, WPF with Chrome DevTools Protocol extension, WinForms, Win32/C++, and Win32 with Visual Composition.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/29/2022

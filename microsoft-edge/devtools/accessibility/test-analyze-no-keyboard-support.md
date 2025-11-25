@@ -3,7 +3,7 @@ title: Analyze keyboard support on forms
 description: Analyzing the lack of keyboard support on a form that uses the div element with the Inspect tool and Event Listeners tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/07/2021
