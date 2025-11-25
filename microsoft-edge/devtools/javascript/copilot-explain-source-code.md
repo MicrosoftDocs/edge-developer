@@ -3,6 +3,7 @@ title: Explain source code using Copilot in Edge
 description: Learn to use Copilot in Edge to explain source code displayed in the DevTools Sources tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/20/2024

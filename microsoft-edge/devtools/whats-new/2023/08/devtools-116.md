@@ -3,6 +3,7 @@ title: What's New in DevTools (Microsoft Edge 116)
 description: "Activity Bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/17/2023

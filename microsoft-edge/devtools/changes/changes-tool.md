@@ -3,6 +3,7 @@ title: Track changes to files using the Changes tool
 description: The Changes tool tracks any changes you've made to CSS or JavaScript in Microsoft Edge DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify your webpage files sent from the server.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/30/2023

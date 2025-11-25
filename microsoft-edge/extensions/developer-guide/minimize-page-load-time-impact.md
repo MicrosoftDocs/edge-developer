@@ -3,6 +3,7 @@ title: Minimize an extension's impact on page load time
 description: Best Practices to minimize the impact your extension has on the page load time.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/18/2024

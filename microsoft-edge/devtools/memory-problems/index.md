@@ -3,6 +3,7 @@ title: Fix memory problems
 description: Use Microsoft Edge DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/18/2024

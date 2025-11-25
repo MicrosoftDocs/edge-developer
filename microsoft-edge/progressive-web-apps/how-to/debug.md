@@ -3,6 +3,7 @@ title: Debug a PWA
 description: Using Microsoft Edge DevTools to inspect and debug a Progressive Web App (PWA), including its service workers and local storage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/25/2022

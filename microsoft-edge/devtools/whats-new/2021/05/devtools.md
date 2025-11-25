@@ -3,6 +3,7 @@ title: What's New in DevTools (Microsoft Edge 92)
 description: The More Tools button, in-context documentation to get started using the DevTools extension, increased support for screen readers in the Console, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021

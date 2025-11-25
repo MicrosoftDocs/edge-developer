@@ -3,6 +3,7 @@ title: Threading model for WebView2 apps
 description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 09/21/2021

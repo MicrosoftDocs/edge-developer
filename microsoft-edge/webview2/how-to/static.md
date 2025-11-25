@@ -3,6 +3,7 @@ title: Distribute a WebView2 app as a single executable file
 description: How to statically link the WebView2 loader library.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 05/06/2021

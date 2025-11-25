@@ -3,6 +3,7 @@ title: Released features for Microsoft Edge extensions
 description: Released features that have been launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/05/2025

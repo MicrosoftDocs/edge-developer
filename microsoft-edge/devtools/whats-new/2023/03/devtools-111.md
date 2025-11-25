@@ -3,6 +3,7 @@ title: What's New in DevTools (Microsoft Edge 111)
 description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on HoloLens 2 devices. Device Mode toolbar has emulation controls for themes and vision deficiencies. Performance tool unminifies file and function names while profiling. Styles tab easier to use in Focus Mode. Copy Selector Stats table from Performance tool. In Focus Mode, assistive tech announces tool moved to Quick View. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/15/2023

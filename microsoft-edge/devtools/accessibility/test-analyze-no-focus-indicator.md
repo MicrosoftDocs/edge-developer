@@ -3,6 +3,7 @@ title: Analyze the lack of indication of keyboard focus
 description: Analyzing the lack of indication of keyboard focus, due to missing a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2023

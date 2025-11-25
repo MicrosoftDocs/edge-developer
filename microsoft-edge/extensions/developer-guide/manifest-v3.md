@@ -3,6 +3,7 @@ title: Overview and timelines for migrating to Manifest V3
 description: Timelines for migration from Manifest V2 to V3, and overview of V3, which reduces fragmentation of the web for developers and enhances privacy, security, and performance for end users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 04/26/2024

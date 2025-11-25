@@ -3,6 +3,7 @@ title: WebView2 browser flags
 description: Overview of browser flags (arguments, or switches) that affect the WebView2 control, for testing forthcoming features or diagnosing issues.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 11/10/2025

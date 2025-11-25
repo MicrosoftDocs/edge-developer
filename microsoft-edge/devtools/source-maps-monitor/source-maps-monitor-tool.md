@@ -3,6 +3,7 @@ title: Source Maps Monitor tool
 description: How to use the Source Maps Monitor tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/05/2023

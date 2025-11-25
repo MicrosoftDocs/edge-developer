@@ -3,6 +3,7 @@ title: Develop an extension for the Microsoft Edge sidebar
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 12/11/2024

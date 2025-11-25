@@ -3,6 +3,7 @@ title: Emulate and test other browsers
 description: Learn to test your website on other browsers, to make sure your website works well for all users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/17/2024

@@ -3,6 +3,7 @@ title: Prompt a built-in language model with the Prompt API
 description: Prompt a built-in language model with the Prompt API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 05/19/2025
 ---

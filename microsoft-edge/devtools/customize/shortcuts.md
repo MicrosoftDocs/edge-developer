@@ -3,6 +3,7 @@ title: Customize keyboard shortcuts
 description: Customize keyboard shortcuts, including matching shortcuts from Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/20/2023

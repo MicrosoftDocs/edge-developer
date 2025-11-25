@@ -3,6 +3,7 @@ title: Temperature converter sample
 description: How to obtain, install, and run the Temperature converter Progressive Web App sample, and how the sample works.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/05/2025

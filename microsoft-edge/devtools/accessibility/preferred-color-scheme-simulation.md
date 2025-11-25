@@ -3,6 +3,7 @@ title: Emulate dark or light schemes in the rendered page
 description: Render a webpage emulating the user's dark or light scheme operating-system setting or browser setting, without having to change your own machine's setting.  Use a CSS media query for prefers-color-scheme, together with a DevTools rendering option.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/22/2023

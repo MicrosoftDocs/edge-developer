@@ -3,6 +3,7 @@ title: Explain Console errors and warnings using Copilot in Edge
 description: Learn to use Copilot in Edge to explain DevTools Console errors and warnings.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/20/2024

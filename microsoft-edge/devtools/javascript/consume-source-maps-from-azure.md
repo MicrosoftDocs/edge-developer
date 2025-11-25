@@ -3,6 +3,7 @@ title: Securely debug original code by using Azure Artifacts symbol server sourc
 description: Learn how to configure DevTools to use source maps from the Azure Artifacts symbol server to securely debug your original source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/19/2023

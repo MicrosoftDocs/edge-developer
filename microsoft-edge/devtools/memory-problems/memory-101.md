@@ -3,6 +3,7 @@ title: Memory terminology
 description: Common terms used in memory analysis, applicable to the Memory tool, and to a variety of memory profiling tools for different languages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/30/2024

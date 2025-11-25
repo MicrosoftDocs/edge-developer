@@ -3,6 +3,7 @@ title: Introduction to Microsoft Edge WebView2
 description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.subservice: webview

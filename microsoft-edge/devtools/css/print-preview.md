@@ -3,6 +3,7 @@ title: Force print preview mode
 description: Emulate the print CSS media on your webpage to debug your print styles
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/29/2023

@@ -3,6 +3,7 @@ title: Interact with the DOM using the Console
 description: How to interact with the current webpage in the browser by using the Console tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/18/2023

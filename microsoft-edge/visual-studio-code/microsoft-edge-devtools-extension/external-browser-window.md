@@ -3,6 +3,7 @@ title: Using an external browser window
 description: "Using an external browser window rather than the embedded (headless) Edge DevTools: Browser tab in the Microsoft Edge Developer Tools extension for Visual Studio Code."
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

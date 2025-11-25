@@ -3,6 +3,7 @@ title: Run snippets of JavaScript on any webpage
 description: Snippets are small scripts that you can author and run within the Sources tool of Microsoft Edge DevTools.  You can access and run resources from any webpage.  When you run a Snippet, it runs from the context of the currently open webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/17/2023

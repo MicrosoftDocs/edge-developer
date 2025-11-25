@@ -3,6 +3,7 @@ title: Enable App Actions on Windows for a PWA
 description: How to author and test an App Action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 06/24/2025

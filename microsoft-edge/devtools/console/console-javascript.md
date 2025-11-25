@@ -3,6 +3,7 @@ title: Run JavaScript in the Console
 description: An introduction to using the Console tool inside the Microsoft Edge Developer Tools as a JavaScript environment.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/06/2025

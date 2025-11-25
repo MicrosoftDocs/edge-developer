@@ -3,6 +3,7 @@ title: Sideload an extension to install and test it locally
 description: Test an extension locally by sideloading it, so that it's locally installed in your instance of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/16/2025

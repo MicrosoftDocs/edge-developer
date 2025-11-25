@@ -3,6 +3,7 @@ title: Use PWAs in Microsoft Edge
 description: How to use Progressive Web Apps (PWAs) in Microsoft Edge, including installing a PWA, managing PWAs, Windows integration, and the App info (Settings and more) menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/15/2025

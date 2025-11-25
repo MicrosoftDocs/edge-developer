@@ -3,6 +3,7 @@ title: webhint extension for Visual Studio Code
 description: The webhint extension for Visual Studio Code is a customizable linting tool to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The extension checks your code for best practices and common errors.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 02/02/2023
 ---

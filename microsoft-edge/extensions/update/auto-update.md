@@ -3,6 +3,7 @@ title: Set an externally installed extension to automatically update
 description: Set up an externally installed extension (an extension that doesn't use Partner Center and isn't published at Microsoft Edge Add-ons) to automatically update in users' instances of Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/04/2022

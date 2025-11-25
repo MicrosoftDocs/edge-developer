@@ -3,6 +3,7 @@ title: The heap snapshot file format
 description: How the heap snapshot files are structured, when exported from the Memory tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 9/16/2022

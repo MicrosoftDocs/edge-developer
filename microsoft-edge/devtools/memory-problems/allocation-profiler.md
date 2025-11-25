@@ -3,6 +3,7 @@ title: Use Allocation instrumentation on timeline ("Allocations on timeline" pro
 description: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type) to find objects that aren't being properly garbage collected, and continue to retain memory.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/21/2023

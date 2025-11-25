@@ -3,6 +3,7 @@ title: Register and sign in to Partner Center using a GitHub account
 description: Optionally sign in to Partner Center by using your GitHub account credentials, to publish Microsoft Edge extensions (add-ons).
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/14/2024

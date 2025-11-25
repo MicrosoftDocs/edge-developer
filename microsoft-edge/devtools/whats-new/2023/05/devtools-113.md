@@ -3,6 +3,7 @@ title: What's New in DevTools (Microsoft Edge 113)
 description: "Debug JavaScript error stack traces with the experimental Crash analyzer tool. The Memory tool can now unminify object names in heap snapshots. The Issues tool has better support for keyboard navigation. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/25/2023

@@ -3,6 +3,7 @@ title: Installing the DevTools extension for Visual Studio Code
 description: Installing the Microsoft Edge Developer Tools extension for Visual Studio Code, cloning the Demos repo, and setting up a localhost server to use the Demos repo.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

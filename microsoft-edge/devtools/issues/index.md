@@ -3,6 +3,7 @@ title: Find and fix problems using the Issues tool
 description: Use the Issues tool to identify and fix problems with the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/25/2023

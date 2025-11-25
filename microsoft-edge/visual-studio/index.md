@@ -3,6 +3,7 @@ title: Visual Studio for web development
 description: Microsoft Edge and Visual Studio web development.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 07/27/2021
 ---

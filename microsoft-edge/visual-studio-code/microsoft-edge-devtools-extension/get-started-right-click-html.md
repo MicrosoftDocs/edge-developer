@@ -3,6 +3,7 @@ title: Get started by right-clicking an HTML file
 description: Get started using the DevTools extension for Visual Studio Code by right-clicking an HTML file in Explorer in Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---

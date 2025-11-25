@@ -3,6 +3,7 @@ title: Resources about building accessible websites
 description: How best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 ms.custom: seodec18

@@ -3,6 +3,7 @@ title: Add custom UI to DevTools using extensions
 description: Add a tab for a custom tool in the Activity Bar of DevTools by installing or creating a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/18/2023

@@ -3,6 +3,7 @@ title: Enterprise management of WebView2 Runtimes
 description: How IT admins can manage WebView2 applications and the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 11/12/2021

@@ -3,6 +3,7 @@ title: DualEngine Win32 C++ DualEngineNewWindowOptions
 description: Represents the requested state of a new window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024

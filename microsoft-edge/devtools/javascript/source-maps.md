@@ -3,6 +3,7 @@ title: Map the processed code to your original source code, for debugging
 description: Keep your client-side code readable and debuggable even after you combine, minify, or compile it.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/29/2024

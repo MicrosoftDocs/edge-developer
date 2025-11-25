@@ -3,6 +3,7 @@ title: WPF sample app with CDP extension
 description: This WebView2 sample demonstrates how to use the Chrome DevTools Protocol (CDP) in a WPF app by using the WebView2 CDP extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 07/20/2022

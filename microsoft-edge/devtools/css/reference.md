@@ -3,6 +3,7 @@ title: CSS features reference
 description: Features for viewing and changing CSS rules in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/29/2021

@@ -3,6 +3,7 @@ title: Microsoft Edge IDE integration
 description: IDE integration of Microsoft Edge, Visual Studio Code, and Visual Studio.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 07/05/2022
 ---

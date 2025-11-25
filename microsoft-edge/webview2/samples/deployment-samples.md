@@ -3,6 +3,7 @@ title: WebView2 deployment samples
 description: Deployment samples for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 07/11/2022

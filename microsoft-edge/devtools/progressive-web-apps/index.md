@@ -3,6 +3,7 @@ title: Debug a Progressive Web App (PWA)
 description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/12/2023

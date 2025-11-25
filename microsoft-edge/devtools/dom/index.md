@@ -3,6 +3,7 @@ title: Get started viewing and changing the DOM
 description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/20/2023

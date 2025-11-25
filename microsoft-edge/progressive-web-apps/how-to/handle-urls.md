@@ -3,6 +3,7 @@ title: Handle links to a PWA
 description: How links to your Progressive Web App (PWA) can be handled by your app rather than by the web browser.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 08/29/2025

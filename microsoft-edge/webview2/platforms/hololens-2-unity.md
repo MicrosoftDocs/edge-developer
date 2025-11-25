@@ -3,6 +3,7 @@ title: WebView2 in HoloLens 2 Unity apps
 description: How to include a WebView2 control within your immersive HoloLens 2 Unity app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/24/2025

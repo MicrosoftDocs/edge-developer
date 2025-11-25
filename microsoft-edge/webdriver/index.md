@@ -3,6 +3,7 @@ title: Use WebDriver to automate Microsoft Edge
 description: How to test your website or app in Microsoft Edge, and how to automate the browser with WebDriver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/12/2024

@@ -3,6 +3,7 @@ title: Changing the extension settings
 description: Article 1 about the Microsoft Edge Developer Tools extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

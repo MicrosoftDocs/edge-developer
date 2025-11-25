@@ -3,6 +3,7 @@ title: The launch.json file for the DevTools extension
 description: The launch.json file for the Microsoft Edge DevTools extension for Visual Studio Code, for advanced customization of debug configurations.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

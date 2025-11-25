@@ -3,6 +3,7 @@ title: Update .css files from within the Styles tab (CSS mirror editing)
 description: Syncing live changes from the Styles tab by using CSS mirror editing in the Microsoft Edge Developer Tools extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

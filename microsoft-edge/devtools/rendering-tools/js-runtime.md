@@ -3,6 +3,7 @@ title: Speed up JavaScript runtime ("Allocation sampling" profiling type)
 description: Identify expensive, inefficient functions by using the Memory panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

@@ -3,6 +3,7 @@ title: View a JSON file or server response with formatting
 description: How to view a minified JSON file or JSON response with formatting for readability, in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/05/2025

@@ -3,6 +3,7 @@ title: Check for contrast issues with dark theme and light theme
 description: Check for contrast issues with dark theme and light theme (for dark mode and light mode) using the \"Emulate CSS media feature prefers-color-scheme\" dropdown list in the Rendering tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/07/2021

@@ -3,6 +3,7 @@ title: Track which element has focus
 description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
 author: MSEdgeTeam 
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2023

@@ -3,6 +3,7 @@ title: View and edit local storage
 description: How to view and edit localStorage key-value pairs by using the Local Storage pane and the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

@@ -3,6 +3,7 @@ title: Temperature converter source files
 description: How the code works in the Temperature converter Progressive Web App (PWA) sample.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/17/2025

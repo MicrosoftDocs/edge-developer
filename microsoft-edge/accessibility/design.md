@@ -3,6 +3,7 @@ title: Designing accessible websites
 description: Resources for inclusive design tools and best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 ms.date: 10/27/2020

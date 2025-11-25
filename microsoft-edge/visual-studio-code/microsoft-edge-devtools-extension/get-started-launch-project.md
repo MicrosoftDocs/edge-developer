@@ -3,6 +3,7 @@ title: Get started by clicking the Launch Project button
 description: Get started using the DevTools extension for Visual Studio Code by clicking the Launch Project button.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---

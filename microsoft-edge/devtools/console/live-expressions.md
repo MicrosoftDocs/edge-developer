@@ -3,6 +3,7 @@ title: Monitor changes in JavaScript using Live Expressions
 description: Watch JavaScript expression values in real time with Live Expressions.  If you find yourself typing the same JavaScript expressions into the Console tool repeatedly, try Live Expressions instead.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/29/2023

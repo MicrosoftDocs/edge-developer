@@ -3,6 +3,7 @@ title: Override webpage resources with local copies (Overrides tab)
 description: The Overrides feature is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools doesn't load the resource, but replaces it with your local copy instead.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/25/2023

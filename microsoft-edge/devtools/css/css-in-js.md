@@ -3,6 +3,7 @@ title: Style editing for CSS-in-JS frameworks
 description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/25/2021

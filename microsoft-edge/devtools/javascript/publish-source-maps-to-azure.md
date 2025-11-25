@@ -3,6 +3,7 @@ title: Securely debug original code by publishing source maps to the Azure Artif
 description: Learn how to publish source maps to the Azure Artifacts symbol server to securely debug your original source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/26/2022

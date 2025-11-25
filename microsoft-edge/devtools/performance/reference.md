@@ -3,6 +3,7 @@ title: Performance features reference
 description: A reference on all the ways to record and analyze performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/24/2025

@@ -3,6 +3,7 @@ title: About the list of tools
 description: About the list of tools in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/24/2025

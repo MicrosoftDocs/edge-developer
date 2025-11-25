@@ -3,6 +3,7 @@ title: Resources for accessibility testing
 description: Check out tools and testing procedures that help evaluate a website's accessibility.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 ms.date: 02/06/2024

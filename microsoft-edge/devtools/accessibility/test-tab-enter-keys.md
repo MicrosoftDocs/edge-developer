@@ -3,6 +3,7 @@ title: Check for keyboard support by using the Tab and Enter keys
 description: Check for keyboard support by using the Tab and Enter keys.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/05/2023

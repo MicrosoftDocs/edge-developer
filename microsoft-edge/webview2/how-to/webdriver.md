@@ -3,6 +3,7 @@ title: Automate and test WebView2 apps with Microsoft Edge WebDriver
 description: Automate and test the WebView2 Control using Microsoft Edge WebDriver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/27/2022

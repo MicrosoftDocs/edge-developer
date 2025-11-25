@@ -3,6 +3,7 @@ title: Record and replay user flows and measure performance
 description: Use the Recorder tool to record a series of steps in a browser window, and then replay them automatically, while optionally also measuring performance.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/21/2024

@@ -3,6 +3,7 @@ title: Inspect, edit, and debug HTML and CSS with the Elements tool
 description: How to use the Elements tool in Microsoft Edge DevTools to inspect, edit, and debug HTML and CSS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/15/2022

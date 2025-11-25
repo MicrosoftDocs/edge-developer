@@ -3,6 +3,7 @@ title: Test accessibility using Lighthouse
 description: Testing accessibility using Lighthouse from within DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/20/2023

@@ -3,6 +3,7 @@ title: Move users to Microsoft Edge from Internet Explorer
 description: Move users to Microsoft Edge from Internet Explorer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 2/8/2022
 ---

@@ -3,6 +3,7 @@ title: WebView2 end-user FAQ
 description: Information for end users about WebView2 processes, memory and CPU usage, and automatic installation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 03/30/2023

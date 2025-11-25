@@ -3,6 +3,7 @@ title: Debug WebView2 apps with Visual Studio
 description: How to debug WebView2 apps with Microsoft Visual Studio.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 02/21/2025

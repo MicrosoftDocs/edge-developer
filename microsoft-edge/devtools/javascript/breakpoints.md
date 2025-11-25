@@ -3,6 +3,7 @@ title: Pause code with breakpoints
 description: Learn all the ways to pause your code in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/20/2023

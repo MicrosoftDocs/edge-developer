@@ -3,6 +3,7 @@ title: What's New in DevTools (Microsoft Edge 91)
 description: Wavy underlines highlight code issues in the Elements tool, service worker update timeline, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/06/2021

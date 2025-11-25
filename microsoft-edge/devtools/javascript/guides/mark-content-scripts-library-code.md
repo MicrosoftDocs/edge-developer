@@ -3,6 +3,7 @@ title: Add content scripts to the Ignore List
 description: Enable "Add content scripts to ignore list" from Settings > Ignore List.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2021

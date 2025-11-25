@@ -3,6 +3,7 @@ title: Use the Inspect tool to detect accessibility issues by hovering over the 
 description: Using the Inspect tool to detect accessibility issues by hovering over the webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/05/2023

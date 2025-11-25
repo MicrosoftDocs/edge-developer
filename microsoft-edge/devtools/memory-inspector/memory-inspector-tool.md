@@ -3,6 +3,7 @@ title: Inspect a JavaScript ArrayBuffer with the Memory inspector tool
 description: The Memory inspector tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/04/2022

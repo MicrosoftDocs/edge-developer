@@ -3,6 +3,7 @@ title: Change DevTools placement (Undock, Dock to bottom, Dock to left)
 description: How to move Microsoft Edge DevTools to the bottom or left of the browser window, or undock DevTools into a separate window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/17/2023

@@ -3,6 +3,7 @@ title: Use origin trials in Microsoft Edge
 description: Safely experiment for a fixed period of time and provide feedback on new platform features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/18/2024
 ---

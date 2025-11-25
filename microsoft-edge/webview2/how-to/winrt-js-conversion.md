@@ -3,6 +3,7 @@ title: How WinRT types and members are represented in JavaScript
 description: How to use WinRT types and members from within web-side JavaScript code in a WebView2 app, when calling native-side WinRT code from web-side code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/13/2023

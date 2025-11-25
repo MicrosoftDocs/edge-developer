@@ -3,6 +3,7 @@ title: Publish a UWP WebView2 app to the Microsoft Store
 description: How to publish a Universal Windows Platform (UWP) app that hosts the WebView2 control to the Microsoft Store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/27/2022

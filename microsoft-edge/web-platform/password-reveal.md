@@ -3,6 +3,7 @@ title: Customize the password reveal button
 description: Guidance on customizing the display of the password reveal button.
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 02/23/2022
 ---
