@@ -3,7 +3,7 @@ title: DualEngine Win32 C++ IDualEngine20BrowserSession
 description: Represents an Internet Explorer process session.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024

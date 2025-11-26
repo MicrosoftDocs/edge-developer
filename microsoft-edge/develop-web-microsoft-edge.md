@@ -3,7 +3,7 @@ title: Develop for the web with Microsoft Edge
 description: Develop for the web with Microsoft Edge by using standards-based web platform features, Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 02/06/2025
 ---
@@ -145,11 +145,11 @@ See [Accessibility in Microsoft Edge](./accessibility/index.md).
 
 <!-- leaf node (article; omit per PR review) -->
 <!-- ====================================================================== -->
-<!-- ## Microsoft Edge Privacy Whitepaper
+<!-- ## User data and privacy in Microsoft Edge
 
 The Microsoft Edge _browser privacy promise_ provides you with protection, transparency, control, and respect.  Microsoft Edge has many features and services associated with privacy.  This whitepaper explains how your data is used, how to control the different features, and how to manage your collected data.
 
-See [Microsoft Edge Privacy Whitepaper](/legal/microsoft-edge/privacy).
+See [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy).
 -->
 
 

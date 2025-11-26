@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 144
+          href: ./web-platform/release-notes/144.md
+          displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
+
         - name: Microsoft Edge 143
           href: ./web-platform/release-notes/143.md
           displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
@@ -66,13 +70,13 @@
           href: ./web-platform/release-notes/135.md
           displayName: Microsoft Edge 135 web platform release notes (Apr. 2025)  # page title
 
-        - name: Microsoft Edge 134
-          href: ./web-platform/release-notes/134.md
-          displayName: Microsoft Edge 134 web platform release notes (Mar. 2025)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 134
+              href: ./web-platform/release-notes/134.md
+              displayName: Microsoft Edge 134 web platform release notes (Mar. 2025)  # page title
+
             - name: Microsoft Edge 133
               href: ./web-platform/release-notes/133.md
               displayName: Microsoft Edge 133 web platform release notes (Feb. 2025)  # page title
@@ -1914,7 +1918,7 @@
       href: ./dev-videos/index.md
       displayName: youtube
 
-    - name: Microsoft Edge Privacy Whitepaper
+    - name: User data and privacy in Microsoft Edge
       href: /legal/microsoft-edge/privacy
 
     - name: The Web We Want initiative

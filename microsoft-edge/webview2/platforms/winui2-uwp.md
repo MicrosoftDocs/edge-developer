@@ -3,7 +3,7 @@ title: WebView2 in WinUI 2 (UWP) apps
 description: How to include a WebView2 control within your WinUI 2 (UWP) app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/27/2025

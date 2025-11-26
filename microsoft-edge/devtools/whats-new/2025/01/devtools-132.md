@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 132)
 description: "CSS selector costs include links in Insights sidebar. Right-click a tab to move it left or right in Quick View. Heap snapshot objects categorized by constructor names and source locations in Memory tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 1/16/2025

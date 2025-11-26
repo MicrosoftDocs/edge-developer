@@ -3,7 +3,7 @@ title: Win32 sample WebView2Browser
 description: "A web browser built with the Microsoft Edge WebView2 control."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 07/18/2022
