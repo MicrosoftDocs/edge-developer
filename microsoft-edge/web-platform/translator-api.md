@@ -3,7 +3,7 @@ title: Translate text with the Translator API
 description: Translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/23/2025
 ---
