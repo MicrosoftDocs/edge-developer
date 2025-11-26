@@ -3,7 +3,7 @@ title: "Sample: Custom DevTools tool"
 description: Microsoft Edge extension adding a Custom tool in DevTools, including Activity Bar tab and panel.  Call DevTools API; send message to any inspected page; send message from inspected page to DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/27/2025

@@ -3,7 +3,7 @@ title: Code for Custom DevTools tool
 description: Files and code in the Custom DevTools tool sample, which is a Microsoft Edge extension you can modify.  How the sample creates its own panel and interacts with the DevTools extension APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 10/27/2025
