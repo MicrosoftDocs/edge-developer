@@ -3,7 +3,7 @@ title: Define icons and a theme color
 description: Learn how to define an app icon for your PWA, a theme color for the title bar, and a background color for the app window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 09/27/2021

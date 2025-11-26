@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 102)
 description: "DevTools extension: browser preview device/mode emulation and sourcemaps to debug/edit Sass/React.  Save heap snapshot strings to JSON.  Retainers filters in Memory tool.  Inspect tooltip persists.  Better high-contrast display.  Experiments have Help icons.  Improved Network tool layout. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/24/2022

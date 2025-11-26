@@ -3,7 +3,7 @@ title: Capabilities and EdgeOptions
 description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 06/09/2022
 ---

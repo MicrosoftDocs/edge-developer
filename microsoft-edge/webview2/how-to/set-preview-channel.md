@@ -3,7 +3,7 @@ title: Test upcoming APIs and features
 description: How to specify a Microsoft Edge preview channel to use, to test experimental APIs in a prerelease package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/22/2024

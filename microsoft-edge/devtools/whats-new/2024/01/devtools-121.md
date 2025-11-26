@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 121)
 description: "Z-index and DOM tabs in 3D View tool working correctly. Correct Hide debugger or Show debugger icon in Sources tool. Source map support in Coverage tool. Advanced filtering in Bottom-up, Call tree, and Event log tabs in Performance tool. Window Controls Overlay section for PWAs, in Application tool's Manifest section. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/25/2024
