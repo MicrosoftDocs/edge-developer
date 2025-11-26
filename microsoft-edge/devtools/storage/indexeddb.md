@@ -3,7 +3,7 @@ title: View and change IndexedDB data
 description: How to view and change IndexedDB data by using the Application tool and snippets.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/17/2023

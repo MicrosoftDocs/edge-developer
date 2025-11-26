@@ -3,7 +3,7 @@ title: Get started developing a PWA
 description: Learn to build a web app that's a Progressive Web App so that it can be installed as a local app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/09/2025

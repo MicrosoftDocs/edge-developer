@@ -3,7 +3,7 @@ title: Interop of native and web code
 description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 2/24/2022
