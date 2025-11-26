@@ -3,7 +3,7 @@ title: Optimize CSS styles with the CSS overview tool
 description: The CSS overview tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/07/2022

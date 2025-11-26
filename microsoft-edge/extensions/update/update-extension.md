@@ -3,7 +3,7 @@ title: Update a Microsoft Edge extension
 description: How to update or remove an extension that's at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/04/2022

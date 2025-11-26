@@ -3,7 +3,7 @@ title: Verify your company account information
 description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions at Microsoft Edge Add-ons.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 11/02/2022

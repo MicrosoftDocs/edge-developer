@@ -3,7 +3,7 @@ title: Getting started with the DualEngine API
 description: Get started using the Microsoft DualEngine API to embed and control an Internet Explorer instance within your app, to provide a browsing experience that's equivalent to a normal Internet Explorer tab, providing increased compatibility with legacy websites.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.localizationpriority: high
