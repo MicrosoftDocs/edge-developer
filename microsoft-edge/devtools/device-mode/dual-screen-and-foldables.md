@@ -3,7 +3,7 @@ title: Emulate dual-screen and foldable devices
 description: Use virtual devices in Microsoft Edge to enhance your website for dual-screen and foldable devices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/21/2023

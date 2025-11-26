@@ -3,7 +3,7 @@ title: Display a PWA widget in the Windows Widgets Board
 description: How to build lightweight PWA-driven widgets that integrate in the operating system widgets dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 08/10/2023

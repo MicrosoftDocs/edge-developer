@@ -3,7 +3,7 @@ title: Sign up for the Ad Selection API
 description: Sign up for the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/10/2024
 ---
