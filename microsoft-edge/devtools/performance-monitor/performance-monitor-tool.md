@@ -3,7 +3,7 @@ title: Measure runtime performance of a page using the Performance monitor tool
 description: The Performance monitor tool in DevTools provides real-time performance metrics to help investigate performance issues.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/22/2023

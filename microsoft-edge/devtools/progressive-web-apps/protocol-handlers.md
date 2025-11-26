@@ -3,7 +3,7 @@ title: Test Progressive Web App (PWA) protocol handling
 description: Use the Application tool to test protocols you've defined in your PWA web app manifest.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/23/2022

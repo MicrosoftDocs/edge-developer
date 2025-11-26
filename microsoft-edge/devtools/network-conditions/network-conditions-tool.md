@@ -3,7 +3,7 @@ title: Network conditions tool
 description: Use the Network Conditions tool in DevTools to disable the browser cache, set network throttling, set the user agent string, or set Content-Encodings such as deflate, gzip, and br.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/18/2023

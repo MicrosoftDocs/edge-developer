@@ -3,7 +3,7 @@ title: Summarize, write, and rewrite text with the Writing Assistance APIs
 description: Summarize, write, and rewrite text with the Writing Assistance APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 05/19/2025
 ---

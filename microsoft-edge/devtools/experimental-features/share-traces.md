@@ -3,7 +3,7 @@ title: Share enhanced performance and memory traces
 description: Learn to export and import enhanced performance and memory traces in DevTools to resolve low performance and high memory usage issues in your webpages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/06/2023
