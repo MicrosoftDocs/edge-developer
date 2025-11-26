@@ -3,7 +3,7 @@ title: Customize performance profile with extensibility APIs
 description: Customize performance data with the extensibility API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/29/2025

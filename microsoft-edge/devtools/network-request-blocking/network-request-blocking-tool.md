@@ -3,7 +3,7 @@ title: Network request blocking tool
 description: Use the Network request blocking tool in Microsoft Edge DevTools to block selected network requests, to find out how webpages look and behave when some resources are not available.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/23/2013
