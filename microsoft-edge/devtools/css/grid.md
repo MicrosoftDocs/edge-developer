@@ -3,7 +3,7 @@ title: Inspect CSS Grid
 description: Using Microsoft Edge DevTools to view and change CSS grid properties on a webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/14/2024

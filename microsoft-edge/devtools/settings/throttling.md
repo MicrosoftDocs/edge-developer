@@ -3,7 +3,7 @@ title: Throttling
 description: The Throttling page of DevTools Settings, to control and customize network and CPU speed settings.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/12/2025
