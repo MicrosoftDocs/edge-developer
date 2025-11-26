@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 110)
 description: "Faster heap snapshots in Memory tool. Move tools between Activity Bar and Quick View in Focus Mode. Screen readers report when More Tools is expanded. Change Dock and Activity Bar location via keyboard. Screen readers announce which theme is selected. Improved support for contrast themes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/09/2023

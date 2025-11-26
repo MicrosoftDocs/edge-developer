@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 118)
 description: "DevTools defaults to no throttling instead of offline. Updates to the 'Explain console errors/warnings with Copilot in Sidebar' experiment. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/12/2023

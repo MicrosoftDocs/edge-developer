@@ -3,7 +3,7 @@ title: Test and automation in Microsoft Edge
 description: DevTools Protocol instruments, debugs, profiles browsers.  Origin trials to try experimental APIs.  Playwright cross-browser automation via 1 API.  Puppeteer API automates via DevTools Protocol.  WebDriver simulates user interaction.  webhint linting checks for errors, best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/02/2023

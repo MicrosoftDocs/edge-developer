@@ -3,7 +3,7 @@ title: Crash analyzer tool
 description: How to use the Crash analyzer tool in Microsoft Edge DevTools to analyze and diagnose crashes of your production web app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/04/2024

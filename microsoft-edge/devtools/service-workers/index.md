@@ -3,7 +3,7 @@ title: Service worker improvements
 description: How to use each service worker improvement in the Network, Application, and Sources tools in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/19/2021

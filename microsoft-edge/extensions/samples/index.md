@@ -3,7 +3,7 @@ title: Samples for Microsoft Edge extensions
 description: Samples for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 07/03/2025
