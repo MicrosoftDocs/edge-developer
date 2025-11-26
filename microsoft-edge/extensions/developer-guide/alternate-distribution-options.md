@@ -3,7 +3,7 @@ title: Alternative ways to distribute an extension
 description: How to distribute a Microsoft Edge extension by using alternate methods that don't use verified browser extension stores.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 05/05/2023

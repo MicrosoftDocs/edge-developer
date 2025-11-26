@@ -3,7 +3,7 @@ title: Application tool integration
 description: Application tool integration in the Microsoft Edge Developer Tools extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

@@ -3,7 +3,7 @@ title: View the resource files that make up a webpage
 description: Browse and inspect the resource files that make up a webpage, and filter them by file type, frame, domain, or other criteria.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/30/2023

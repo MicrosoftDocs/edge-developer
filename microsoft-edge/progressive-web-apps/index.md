@@ -3,7 +3,7 @@ title: Overview of Progressive Web Apps (PWAs)
 description: Progressive Web Apps (PWAs) run natively on Windows 10 or later.  Here's everything you need to know about PWAs, as a web developer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 11/24/2022
