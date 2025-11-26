@@ -3,7 +3,7 @@ title: Introduction to the Microsoft DualEngine API
 description: Host web content in your Win32 apps with the Microsoft DualEngine interface.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.localizationpriority: high

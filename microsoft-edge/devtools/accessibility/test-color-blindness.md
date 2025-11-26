@@ -3,7 +3,7 @@ title: Verify that a page is usable by people with color blindness
 description: Check that webpages are usable by people with color blindness using the Emulate Vision Deficiencies dropdown list in the Rendering tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/17/2023

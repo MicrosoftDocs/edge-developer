@@ -3,7 +3,7 @@ title: Call native-side code from web-side code
 description: How to pass host objects to JavaScript using the AddHostObjectToScript API for WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 11/16/2022

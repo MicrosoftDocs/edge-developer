@@ -3,7 +3,7 @@ title: Run compiled code in an extension
 description: How to run compiled code in your extension at near-native speed, by using WebAssembly (Wasm).
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 02/12/2025

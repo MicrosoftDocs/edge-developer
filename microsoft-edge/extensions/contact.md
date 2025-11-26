@@ -3,7 +3,7 @@ title: Contact the Microsoft Edge extensions team
 description: Contacting the support team for Microsoft Edge extension development.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 05/30/2025
@@ -11,6 +11,8 @@ ms.date: 05/30/2025
 # Contact the Microsoft Edge extensions team
 
 You can contact the Microsoft Edge extensions support team to request help, submit feedback, or report a copyright or trademark infringement.
+
+<!-- email is only used for [Transfer ownership of an extension](./update/transfer-ownership.md) -->
 
 
 <!-- ====================================================================== -->

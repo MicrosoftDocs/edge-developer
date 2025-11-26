@@ -3,7 +3,7 @@ title: Analyze CSS selector performance during Recalculate Style events
 description: Use the Selector Stats tab in the Performance tool to understand which of your CSS selectors are taking up the most time during Recalculate Style events.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/15/2024
