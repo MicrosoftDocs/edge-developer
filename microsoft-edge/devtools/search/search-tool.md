@@ -3,7 +3,7 @@ title: Find source files for a page using the Search tool
 description: The Search tool in Microsoft Edge DevTools helps find source files.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/11/2023

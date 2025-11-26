@@ -3,7 +3,7 @@ title: Defining match patterns for an extension to access file URLs
 description: How host permission and content script pattern matching works, with examples.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 03/17/2021

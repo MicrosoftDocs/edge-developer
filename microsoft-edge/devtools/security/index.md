@@ -3,7 +3,7 @@ title: Understand security issues using the Security tool
 description: How to use the Security panel in DevTools to make sure that a page is fully protected by HTTPS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/22/2023

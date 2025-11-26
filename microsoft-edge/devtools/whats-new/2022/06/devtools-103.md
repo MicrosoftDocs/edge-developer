@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 103)
 description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high contrast mode. Welcome tool redesign. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/23/2022

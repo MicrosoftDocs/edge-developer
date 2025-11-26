@@ -3,7 +3,7 @@ title: Contact the Microsoft Edge WebDriver team
 description: Contacting the Microsoft Edge WebDriver team to submit feature requests or bug reports of issues about automating Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 02/28/2022
 ---

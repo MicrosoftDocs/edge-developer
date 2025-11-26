@@ -3,7 +3,7 @@ title: Process model for WebView2 apps
 description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/01/2022
