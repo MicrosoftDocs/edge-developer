@@ -3,7 +3,7 @@ title: Overview of the components of the WebView2 platform
 description: Which parts of WebView2 reside on the Dev and user machine.  How native code and controls interact with web code and the WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/21/2023
