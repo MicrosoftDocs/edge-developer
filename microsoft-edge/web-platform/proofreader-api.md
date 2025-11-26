@@ -3,7 +3,7 @@ title: Correct grammar, spelling, and punctuation errors in text with the Proofr
 description: Correct grammar, spelling, and punctuation errors in text with the Proofreader API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 11/19/2025
 ---
