@@ -3,7 +3,7 @@ title: WiX Custom Action to deploy the WebView2 Runtime
 description: A WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/27/2022

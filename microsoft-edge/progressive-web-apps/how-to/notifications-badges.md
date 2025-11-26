@@ -3,7 +3,7 @@ title: Re-engage users with badges and notifications
 description: Learn how to use the Notifications and Badging APIs to provide re-engaging functionality in your Progressive Web App (PWA).
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 06/16/2023

@@ -3,7 +3,7 @@ title: Troubleshooting the DevTools extension
 description: Error messages and how to restart DevTools in ways that avoid them.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---

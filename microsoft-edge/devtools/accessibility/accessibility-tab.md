@@ -3,7 +3,7 @@ title: Test accessibility using the Accessibility tab
 description: Testing accessibility using the Accessibility tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/01/2023
