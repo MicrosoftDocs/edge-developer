@@ -3,7 +3,7 @@ title: Optimize website speed using Lighthouse
 description: How to use Lighthouse and other tools in DevTools to find ways to make your websites load faster.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/15/2023

@@ -3,7 +3,7 @@ title: Store data on the device
 description: How to use the different data storage options in Progressive Web Apps to enable users to continue working even if the network connection becomes unstable or goes offline.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 12/02/2022

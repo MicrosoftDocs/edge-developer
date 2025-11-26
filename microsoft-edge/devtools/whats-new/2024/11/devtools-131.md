@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 131)
 description: "Can disable Edge experiment settings. View CSS selector stats information in Insights tab of sidebar panel in Performance tool. Fixed edit field to exit after pressing tab after auto-completion. Removed Visual Studio Code themes. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/14/2024

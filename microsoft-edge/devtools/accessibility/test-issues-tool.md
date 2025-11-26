@@ -3,7 +3,7 @@ title: Automatically test a webpage for accessibility issues
 description: Automatically test a webpage for accessibility issues by using the Accessibility section of the Issues tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/07/2021

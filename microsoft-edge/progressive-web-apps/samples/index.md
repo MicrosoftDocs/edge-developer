@@ -3,7 +3,7 @@ title: Progressive Web App samples
 description: Sample Progressive Web Apps that demonstrate how to use PWA features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/01/2025

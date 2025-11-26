@@ -3,7 +3,7 @@ title: WebAudio tool
 description: How to use the WebAudio tool in Microsoft Edge DevTools to monitor WebAudio calls and traffic, for a webpage that uses the WebAudio API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/24/2022
