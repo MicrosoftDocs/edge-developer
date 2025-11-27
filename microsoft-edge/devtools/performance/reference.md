@@ -103,11 +103,17 @@ The images in this page show DevTools undocked into its own, dedicated window. T
 1. Right-click a webpage, select **Inspect**, and then in DevTools, click the **Performance** tab in the **Activity Bar**.
 -->
 
-To use the sections in this page, open the **Performance** tool in DevTools:
+To open the **Performance** tool in DevTools:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS). DevTools opens.
+1. Right-click a webpage, and then select **Inspect**.
 
-1. In DevTools, on the **Activity Bar**, select the **Performance** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
+   Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+
+   DevTools opens.
+
+1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tab.
+
+   If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -123,7 +129,11 @@ To analyze the performance of a webpage while it's running (rather than while it
 
 1. Go to the webpage that you want to analyze, such as the [Photo Gallery demo](https://microsoftedge.github.io/Demos/photo-gallery/).
 
-1. In DevTools, open the **Performance** tool.
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. On the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
 
 1. Click the **Record** (![Record icon](./reference-images/record-icon.png)) button.
 
@@ -143,7 +153,11 @@ To analyze the performance of a webpage while it's loading (rather than while it
 
 1. Go to the webpage that you want to analyze, such as the [Photo Gallery demo](https://microsoftedge.github.io/Demos/photo-gallery/).
 
-1. In DevTools, open the **Performance** tool.
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. On the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
 
 1. Click the **Refresh page** (![Refresh Page](./reference-images/refresh-page-icon.png)) button:
 
@@ -175,9 +189,13 @@ To force garbage collection while you are recording a page, click the **Collect 
 <!-- ------------------------------ -->
 #### Show recording settings
 
-To expose more settings related to how DevTools captures performance recordings, in the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.  Checkboxes and dropdown lists are displayed at the top of the **Performance** tool:
+To expose more settings related to how DevTools captures performance recordings:
 
-![The Capture Settings section at top of the Performance tool](./reference-images/capture-settings.png)
+* In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button.
+
+  Checkboxes and dropdown lists are displayed at the top of the **Performance** tool:
+
+  ![The Capture Settings section at top of the Performance tool](./reference-images/capture-settings.png)
 
 
 <!-- ------------------------------ -->
@@ -388,27 +406,34 @@ To closely inspect your performance recording, you can select a portion of a rec
 <!-- ---------- -->
 ###### Use keyboard shortcuts to navigate
 
-To use keyboard shortcuts to quickly navigate the recording, first, choose your preferred style of keyboard navigation.
+To use keyboard shortcuts to quickly navigate the recording, first, choose your preferred style of keyboard navigation, as follows:
 
-In the top-right corner of the **Performance** tool, click the **Show shortcuts** (![The Show shortcuts icon](./reference-images/show-shortcuts-icon.png)) button, and then select the **Modern** or **Classic** option button.  The **Keyboard shortcuts** dialog displays the available shortcuts for the selected mapping option.
+* In the top-right corner of the **Performance** tool, click the **Show shortcuts** (![The Show shortcuts icon](./reference-images/show-shortcuts-icon.png)) button, and then select the **Modern** or **Classic** option button.
 
-With the **Modern** option button selected:
+  The **Keyboard shortcuts** dialog displays the available shortcuts for the selected mapping option.
+
+
+When the **Modern** option button is selected:
 
 ![Keyboard shortcuts popup with Modern selected](./reference-images/perf-shortcuts-style.png)
 
 * To zoom: **Command/Ctrl** + mouse wheel.
-* To vertical scroll: Mouse wheel.
+* To vertical scroll<!-- todo: pan = scroll? -->: Mouse wheel.
 * To horizontal scroll: **Shift** + mouse wheel.
 
 
-With the **Classic** option button selected:
+When the **Classic** option button is selected:
 
 * To zoom: Mouse wheel, or touchpad up or down.
 * To vertical scroll: **Shift** + mouse wheel.
 * To horizontal scroll: **Shift** + **Left arrow**|**Right arrow**
 
 
-You can also pan left and right by pressing the **A** and **D** keys, and zoom by pressing the **W** or **S** keys.
+Additional shortcuts:
+
+* Zoom, by pressing **W** or **S**.
+
+* Pan<!-- todo: pan = scroll? --> left and right, by pressing **A** or **D**.
 
 
 <!-- ---------- -->
@@ -1084,13 +1109,48 @@ To view WebSocket messages:
 
 1. Go to [Simple chat app](https://azure.github.io/azure-webpubsub/demos/chat) in a new window or tab.
 
-1. etc.
+1. Right-click the webpage, and then select **Inspect**.
 
-<!-- add content from: -->
+   DevTools opens.
+
+1. In the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
+
+1. In the upper left of the **Performance** tool, click the **Record** (![Record icon](./reference-images/record-icon.png)) button.
+
+1. In the chat webpage, in the **User Name** text box, enter a name, such as "John", and then click the **Connect** button.
+
+   At the bottom of the chat form, a message is displayed, such as "John:v8g... connected."
+
+1. In the **Send a message** text box, enter a message, such as "Hello", and then click the **Send** button.
+ 
+   In the chat app, the message is displayed, such as "Hello":
+
+   ![WebSocket messages in the Performance tool](./reference-images/websocket-messages.png)
+
+   WebSocket traffic is generated.
+
+1. In the upper left of the **Performance** tool, click the **Stop** (![Stop icon](./reference-images/stop-icon.png)) button.
+
+   Or, in the middle of the **Performance** tool, click the **Stop** button.
+
+   In the **Performance** tool, the timeline is displayed.
+
+1. Expand the **Network** track.
+
+1. Click a vertical gold line.
+
+1. At the bottom of the **Performance** tool, in the **Summary** tab, information about the selected WebSocket message is displayed, such as:
+
+   * **Send WebSocket handshake**
+   * **Receive WebSocket handshake**
+   * **Receive WebSocket message**:
+
+   ![Receive WebSocket message](./reference-images/receive-websocket-message.png)
+
 See also:
+* [Track event initiators](#track-event-initiators), below; Find "WebSocket".
 * [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's New in DevTools (Microsoft Edge 128)_.
 * [Analyze the messages of a WebSocket connection](../network/reference.md#analyze-the-messages-of-a-websocket-connection) in _Network features reference_.
-* [Track event initiators](https://developer.chrome.com/docs/devtools/performance/reference#event-initiators) in _Performance features reference_ in Chrome docs.
 
 
 <!-- ====================================================================== -->
@@ -1101,13 +1161,21 @@ Use the **Rendering** tool to help visualize the rendering performance of your p
 
 To open the **Rendering** tool:
 
-1. Right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
+1. Open a webpage, such as [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/), in a new window or tab.
 
-1. On the **Activity Bar** (or **Quick View**), click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button, and then select **Rendering**.
+1. Right-click the webpage, and then select **Inspect**.
 
-   The **Rendering** tool opens:
+   DevTools opens.
 
-   ![The Rendering tool](./reference-images/rendering-tool.png)
+1. If the **Quick View** panel isn't shown, select **Customize and control DevTools** (![The Customize and control DevTools icon](./reference-images/customize-and-control-devtools-icon.png)) > **Toggle Quick View panel**.
+
+   Or, press **Esc**.
+
+1. On the **Quick View** toolbar, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button, and then select **Rendering**.
+
+   The **Rendering** tool opens in the **Quick View** panel:
+
+   ![The Rendering tool](./reference-images/rendering-tool.png)<!-- todo: show in Quick View -->
 
 See also:
 * [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
