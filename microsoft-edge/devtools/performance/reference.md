@@ -1103,11 +1103,11 @@ See also:
 <!-- ------------------------------ -->
 #### View WebSocket messages
 
-The **Performance** tool can show WebSocket messages.
+WebSocket activities are displayed in the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
 
-To view WebSocket messages:
+To view WebSocket messages in the **Performance** tool:
 
-1. Go to [Simple chat app](https://azure.github.io/azure-webpubsub/demos/chat) in a new window or tab.
+1. Go to a webpage that sends WebSocket messages, such as [Simple chat app](https://azure.github.io/azure-webpubsub/demos/chat), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -1148,9 +1148,12 @@ To view WebSocket messages:
    ![Receive WebSocket message](./reference-images/receive-websocket-message.png)
 
 See also:
-* [Track event initiators](#track-event-initiators), below; Find "WebSocket".
-* [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's New in DevTools (Microsoft Edge 128)_.
 * [Analyze the messages of a WebSocket connection](../network/reference.md#analyze-the-messages-of-a-websocket-connection) in _Network features reference_.
+* [Track event initiators](#track-event-initiators), below.
+* [Analyze runtime performance (tutorial)](./index.md)
+<!--
+* [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's New in DevTools (Microsoft Edge 128)_.
+-->
 
 
 <!-- ====================================================================== -->
