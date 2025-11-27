@@ -1102,6 +1102,7 @@ See also:
 
 <!-- ------------------------------ -->
 #### View WebSocket messages
+<!-- not upstream -->
 
 WebSocket activities are displayed in the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
 
