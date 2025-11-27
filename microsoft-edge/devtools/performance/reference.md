@@ -1150,7 +1150,7 @@ To view WebSocket messages in the **Performance** tool:
 
 See also:
 * [Analyze the messages of a WebSocket connection](../network/reference.md#analyze-the-messages-of-a-websocket-connection) in _Network features reference_.
-* [Track event initiators](#track-event-initiators), below.
+* [Track event initiators](#track-event-initiators), above.
 * [Analyze runtime performance (tutorial)](./index.md)
 <!--
 * [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's New in DevTools (Microsoft Edge 128)_.
