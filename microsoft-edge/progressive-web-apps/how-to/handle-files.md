@@ -99,9 +99,53 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 <!-- ====================================================================== -->
 ## Demo
 
+![PWA file handlers demo app](./handle-files-images/pwa-file-handlers-demo-app.png)
+
+* [/pwa-file-handlers/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-file-handlers/) - Readme and source code.
+* [PWA file handlers demo](https://microsoftedge.github.io/Demos/pwa-file-handlers/) - live demo.
+
+To use the demo:
+
+1. Go to the [PWA file handlers demo](https://microsoftedge.github.io/Demos/pwa-file-handlers/) in a new window or tab.
+
+1. In the Address bar, click the **App available. Install PWA file handlers demo** (![App available icon](./handle-files-images/app-available-icon.png)) button.
+
+   The **Install PWA file handlers demo app** dialog opens in Edge.
+
+1. Click the **Install** button.
+
+   The **PWA file handlers demo** app window opens.  The **App installed** dialog opens.
+
+1. Click the **Allow** button.
+
+   The Windows **Apps** dialog prompts whether to pin the demo to the taskbar.
+
+1. Click the **Yes** button.
+
+1. Close the **PWA file handlers demo** app.
+
+1. In File Explorer, find a `.txt` file.
+
+   Or, create a `.txt` file.
+
+1. In File Explorer, double-click the `.txt` file.
+
+   Or, right-click the `.txt` file, and then select **Open with**.
+
+   Windows prompts you, asking which app to use to view the file.
+
+1. If it doesn't on double-click, right-click and then select **Open with PWA file handlers demo**.
+
+1. If prompted by a second permission dialog, select the checkbox to avoid seeing this dialog next time, and then click the **todo** button.
+
+   The **PWA file handlers demo** app opens, and displays the `.txt` file name and its text content.
+
+
+#### old
+
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
-*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/)<!-- todo: move demo to Demos repo--> and install the app.
+*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 *  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
 *  Open the downloaded GPX file.
 
@@ -113,7 +157,7 @@ If you allow the app to handle the file, a new entry appears in the app's sideba
 
 ![The new GPS track handled by the My Tracks app](./handle-files-images/my-tracks-new-file.png)
 
-The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).<!-- todo: move demo to Demos repo-->
+The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 
 * The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
 * The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.
