@@ -109,11 +109,74 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 <!-- ------------------------------ -->
 #### Demo app
 
-[My Movie List PWA](https://quirky-rosalind-ac1e65.netlify.app/) is a demo app that uses the Background Sync API to fetch movie information later, if the user is offline.
+**PWA Background Sync** is a demo app that uses the Background Sync API to fetch information later, if the user is offline:
 
-![My Movie List PWA demo app](./background-syncs-images/my-movie-list-pwa-demo.png)
+![My Movies demo](./background-syncs-images/my-movie-list-pwa-demo.png)
 
-To test background syncing:
+![PWA Background Sync API demo](./background-syncs-images/pwa-background-sync-api-demo.png)
+
+* [/pwa-background-sync/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/) - Readme and source code.
+* [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) - live demo.
+
+To use the demo:
+
+1. Go to the [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) in a new window or tab.
+
+1. In the Address bar, click the **App available. Install PWA Background Sync API demo** (![App available icon](./background-syncs-images/app-available-icon.png)) button.
+
+   The **Install PWA file handlers demo app** dialog opens in Edge.
+
+1. Click the **Install** button.
+
+   The **PWA file handlers demo** app window opens.  The **App installed** dialog opens.
+
+1. Click the **Allow** button.
+
+   The Windows **Apps** dialog prompts whether to pin the demo to the taskbar.
+
+1. Click the **Yes** button.
+
+1. Try sending a message: Enter a comment, such as todo, and then press **Enter**.
+
+   Message appears in the list, with the status: **Sent**✅.
+
+1. Right-click within the app window, and then select **Inspect**.
+
+   DevTools opens in a dedicated window.
+
+1. In DevTools, select the **Network** tool.
+
+1. In the **network throttling** dropdown list, select **Offline**.
+
+1. Try sending another message: Enter a comment, such as todo, and then press **Enter**.
+
+   A message appears, with the status of **Sending**, and eventually with the status of **Failed** ❌.
+
+   The **Try sending again** button appears.
+
+1. Remain offline, and click the **Try sending again** button.
+
+   The status **Will try later🛜** appears
+
+1. In DevTools, remove the **Offline** mode, and go back to **No throttling**.
+
+   The message is sent.  The displayed status is **Sent**✅.
+
+
+<!-- ------------------------------ -->
+#### Troubleshooting
+
+If the above steps don't work<!-- todo: in what way? -->:
+
+1. In DevTools, open the **Application** tool.
+
+1. Under **Service workers**, click **Unregister**.
+
+1. In the app's window, refresh the page.
+
+
+<!-- ------------------------------ -->
+#### To test background syncing:
 
 1.  Install the app.
 
