@@ -47,7 +47,10 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 <!-- ---------- -->
 ###### script output including Find APIs & AllowHostInputProcessing
-<!-- todo: delete all these APIs; already reported reaching Phase 3 -->
+
+todo: delete section, b/c these APIs from the script already reached Phase 3:
+* https://learn.microsoft.com/microsoft-edge/webview2/release-notes/?tabs=win32cpp#customize-the-find-behavior-find-api - Aug 11
+* https://learn.microsoft.com/microsoft-edge/webview2/release-notes/?tabs=win32cpp#allow-input-event-messages-to-pass-through-the-browser-window - Jul 1
 
 description
 
