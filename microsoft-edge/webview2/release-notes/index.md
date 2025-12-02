@@ -53,7 +53,7 @@ description
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- already in Phase 3: Find section below -->
+<!-- todo: delete b/c already in Phase 3 "Customize the Find behavior (Find API)" section below, August 2025 -->
 * `CoreWebView2` Class
    * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
 
@@ -156,6 +156,7 @@ description
 * [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3650.58&preserve-view=true)
 
 ---
+<!-- /end of: delete all these APIs; already reported reaching Phase 3 -->
 
 
 <!-- ------------------------------ -->
@@ -181,11 +182,6 @@ Release Date: December 2, 2025
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 144.0.3712.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
