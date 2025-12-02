@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 12/01/2025
+ms.date: 12/02/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -46,16 +46,18 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ---------- -->
-###### heading
-<!-- todo: multiple such sections? -->
+###### script output including Find APIs & AllowHostInputProcessing
+<!-- todo: delete all these APIs; already reported reaching Phase 3 -->
 
 description
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!-- already in Phase 3: Find section below -->
 * `CoreWebView2` Class
    * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
 
+<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
 * `CoreWebView2ControllerOptions` Class
    * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
 
@@ -84,13 +86,13 @@ description
 * `CoreWebView2` Class
    * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3650.58&preserve-view=true#find)
 
+<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
 * `CoreWebView2ControllerOptions` Class
    * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#allowhostinputprocessing)
 
 * `CoreWebView2Environment` Class
    * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.3650.58&preserve-view=true#createfindoptions)
 
-<!-- todo: Property, or Method? -->
 * [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true)<!-- todo: un-link? -->
    * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#activematchindex)
    * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#activematchindexchanged)
@@ -111,9 +113,11 @@ description
    
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- todo: delete b/c already in Phase 3 "Customize the Find behavior (Find API)" section below, August 2025 -->
 * [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3650.58&preserve-view=true)
   * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3650.58&preserve-view=true#get_find)
 
+<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
 * [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true)
   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true#get_allowhostinputprocessing)
   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true#put_allowhostinputprocessing)
@@ -121,7 +125,6 @@ description
 * [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3650.58&preserve-view=true)
   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3650.58&preserve-view=true#createfindoptions)
 
-<!-- todo: match sort order of Ref docs -->
 * [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true)
   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#add_activematchindexchanged)
   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#add_matchcountchanged)
@@ -138,7 +141,6 @@ description
 
 * [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3650.58&preserve-view=true)
 
-<!-- todo: match sort order of Ref docs -->
 * [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true)
   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_findterm)
   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_iscasesensitive)
@@ -193,55 +195,88 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### heading
-<!-- todo: multiple such sections? -->
+###### Allowed port range, transport protocol
+<!-- todo: 2 separate sections? -->
 
-description
+Allowed port range.  Also Transport Protocol.<!-- todo: lead-in -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!-- port range -->
 * [CoreWebView2AllowedPortRangeScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
    * `CoreWebView2AllowedPortRangeScope.Default`
    * `CoreWebView2AllowedPortRangeScope.WebRtc`
 
-* [CoreWebView2CompositionController Class]<!-- todo -->
-
-* [CoreWebView2DragStartingEventArgs]<!-- todo -->
-  * [CoreWebView2DragStartingEventArgs.AllowedDropEffects]
-  * [CoreWebView2DragStartingEventArgs.Data]
-  * [CoreWebView2DragStartingEventArgs.Handled]
-  * [CoreWebView2DragStartingEventArgs.Position]
-  * [CoreWebView2DragStartingEventArgs.GetDeferral]
-
+<!-- port range -->
 * `CoreWebView2EnvironmentOptions` Class
-   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)<!-- todo: win32 type contains "Experimental" -->
-   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)<!-- todo: win32 type contains "Experimental" -->
+   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 
+<!-- protocol kind -->
 * [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
    * `CoreWebView2TransportProtocolKind.Udp`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- port range -->
 * [CoreWebView2AllowedPortRangeScope Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2allowedportrangescope?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
    * `CoreWebView2AllowedPortRangeScope.Default`
    * `CoreWebView2AllowedPortRangeScope.WebRtc`
 
-* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
+<!-- drag? -->
+* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)<!-- todo: delete?  probably Win32-only, Drag API per https://learn.microsoft.com/microsoft-edge/webview2/release-notes/archive?tabs=win32cpp#customize-the-drag-and-drop-behavior-dragstarting-api -->
 
-* [CoreWebView2DragStartingEventArgs]<!-- todo -->
-  * [CoreWebView2DragStartingEventArgs.AllowedDropEffects]
-  * [CoreWebView2DragStartingEventArgs.Data]
-  * [CoreWebView2DragStartingEventArgs.Handled]
-  * [CoreWebView2DragStartingEventArgs.Position]
-  * [CoreWebView2DragStartingEventArgs.GetDeferral]
-
-<!-- win32 type contains "Experimental": -->
+<!-- port range -->
 * [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
-   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method]<!-- todo: win32 type contains "Experimental" -->
-   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method]<!-- todo: win32 type contains "Experimental" -->
+   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method]<!-- todo -->
+   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method]<!-- todo -->
 
+<!-- protocol kind -->
 * [CoreWebView2TransportProtocolKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2transportprotocolkind?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
    * `CoreWebView2TransportProtocolKind.Udp`
+
+##### [Win32/C++](#tab/win32cpp)
+
+<!-- port range -->
+* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
+  * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
+
+<!-- port range -->
+* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
+  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
+  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
+
+<!-- protocol kind -->
+* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
+  * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2: Stable in Prerelease
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Customize the drag and drop behavior (DragStarting API)
+
+The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+
+* Use `DragStarting` on the `ICoreWebView2CompositionController` to add an event handler that's invoked when the drag operation is starting.
+* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
+   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
+   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+n/a
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+n/a
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -258,41 +293,6 @@ description
   * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3712-prerelease&preserve-view=true#put_handled)
 
 * [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3712-prerelease&preserve-view=true)
-
-* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
-  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
-  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
-
-* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
-  * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
-
-<!-- win32 type contains "Experimental": -->
-
-* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
-  * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2: Stable in Prerelease
-
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-<!-- todo: multiple such sections? -->
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-<!-- todo: move some APIs from Experimental section to here? -->
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
 
 ---
 
@@ -313,8 +313,8 @@ This Prerelease SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Fixed local network access triggering a permission alert pop-up window.<!-- todo: already reported in Oct 6 & Oct 7 sections.  orig draft from script: Hiding local access network alert pop up -->
-* Fixed regression of setColorScheme API not working.  ([Issue #5392](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5392))
-* Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` under the command-line switch `enable-new-window-requested-deferred-initialization`.
+* Fixed a regression of the `setColorScheme` API.  ([Issue #5392](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5392))
+* Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
 <!-- end of Dec 2025 Prerelease SDK -->
 
