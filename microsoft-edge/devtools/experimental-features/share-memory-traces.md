@@ -3,7 +3,7 @@ title: Share a memory trace with more data
 description: Learn to export and import memory traces with more data in DevTools to resolve low performance and high memory usage issues in your webpages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/17/2025

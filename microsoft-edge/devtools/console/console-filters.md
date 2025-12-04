@@ -3,7 +3,7 @@ title: Filter Console messages
 description: Use the filter options of the DevTools Console to reduce the noise from excessive console log messages, to better see the type of log messages that you're looking for.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/13/2021

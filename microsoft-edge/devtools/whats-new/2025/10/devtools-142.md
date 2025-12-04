@@ -3,7 +3,7 @@ title: What's New in DevTools (Microsoft Edge 142)
 description: Activity Bar horizontal in Edge 144. Application tool storage inspection for all worker types.  :target-current in Elements tool Styles tab.  Network tool filters requests on Is ad-related boolean. # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/30/2025

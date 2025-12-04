@@ -3,7 +3,7 @@ title: Share a performance trace with more data
 description: Export and import performance traces in DevTools to resolve slow performance or excess memory usage issues in your webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/06/2025
