@@ -224,10 +224,6 @@ See also:
 GitHub:
 * [To do](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
 
-<!--
-Chrome docs:
-* [Save performance traces](https://developer.chrome.com/docs/performance/save-trace/) - 404 - todo: chrome link
-maybe copy valid link into article body
 
-https://developer.chrome.com/s/results?q=Save%20performance%20trace
--->
+Chrome docs:
+* [Save performance traces](https://developer.chrome.com/docs/devtools/performance/save-trace)
