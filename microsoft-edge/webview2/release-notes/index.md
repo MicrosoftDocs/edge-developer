@@ -50,7 +50,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.
+* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
 <!-- end of Dec 2025 Release SDK -->
 
@@ -86,8 +86,9 @@ todo: Description.
 * [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 *  `CoreWebView2TransportProtocolKind.Udp`
 
-* [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-* [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+* `CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange` Class
+   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -163,7 +164,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.
+* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 * Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
