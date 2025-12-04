@@ -42,136 +42,18 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions to Phase 3: Stable in Release
 
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
-<!-- ---------- -->
-###### script output including Find APIs & AllowHostInputProcessing
-
-todo: delete section, b/c these APIs from the script already reached Phase 3:
-* https://learn.microsoft.com/microsoft-edge/webview2/release-notes/?tabs=win32cpp#customize-the-find-behavior-find-api - Aug 11
-* https://learn.microsoft.com/microsoft-edge/webview2/release-notes/?tabs=win32cpp#allow-input-event-messages-to-pass-through-the-browser-window - Jul 1
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-<!-- todo: delete b/c already in Phase 3 "Customize the Find behavior (Find API)" section below, August 2025 -->
-* `CoreWebView2` Class
-   * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-
-<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
-* `CoreWebView2ControllerOptions` Class
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-
-* `CoreWebView2Environment` Class
-   * [CoreWebView2Environment.CreateFindOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createfindoptions?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-
-* [CoreWebView2Find Class](/dotnet/api/microsoft.web.webview2.core.corewebview2find?view=webview2-dotnet-1.0.3650.58&preserve-view=true)<!-- todo: un-link? -->
-   * [CoreWebView2Find.ActiveMatchIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindex?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindexchanged?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.FindPrevious Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findprevious?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.MatchCount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcount?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.MatchCountChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcountchanged?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.StartAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.startasync?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2Find.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.stop?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   
-* [CoreWebView2FindOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions?view=webview2-dotnet-1.0.3650.58&preserve-view=true)<!-- todo: un-link? -->
-   * [CoreWebView2FindOptions.FindTerm Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.findterm?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2FindOptions.IsCaseSensitive Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.iscasesensitive?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldhighlightallmatches?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2FindOptions.ShouldMatchWord Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldmatchword?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.suppressdefaultfinddialog?view=webview2-dotnet-1.0.3650.58&preserve-view=true)
-   
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class
-   * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3650.58&preserve-view=true#find)
-
-<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
-* `CoreWebView2ControllerOptions` Class
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#allowhostinputprocessing)
-
-* `CoreWebView2Environment` Class
-   * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.3650.58&preserve-view=true#createfindoptions)
-
-* [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true)<!-- todo: un-link? -->
-   * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#activematchindex)
-   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#activematchindexchanged)
-   * [CoreWebView2Find.FindNext Property](/microsoft-
-   edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#findnext)
-   * [CoreWebView2Find.FindPrevious Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#findprevious)
-   * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#matchcount)
-   * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#matchcountchanged)
-   * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#startasync)
-   * [CoreWebView2Find.Stop Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3650.58&preserve-view=true#stop)
-   
-* [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true)<!-- todo: un-link? -->
-   * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#findterm)
-   * [CoreWebView2FindOptions.IsCaseSensitive Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#iscasesensitive)
-   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#shouldhighlightallmatches)
-   * [CoreWebView2FindOptions.ShouldMatchWord Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#shouldmatchword)
-   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3650.58&preserve-view=true#suppressdefaultfinddialog)
-   
-##### [Win32/C++](#tab/win32cpp)
-
-<!-- todo: delete b/c already in Phase 3 "Customize the Find behavior (Find API)" section below, August 2025 -->
-* [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3650.58&preserve-view=true)
-  * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3650.58&preserve-view=true#get_find)
-
-<!-- todo: delete b/c already in Phase 3 "Allow input event messages to pass through the browser window" section below, July 2025 -->
-* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true)
-  * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true#get_allowhostinputprocessing)
-  * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3650.58&preserve-view=true#put_allowhostinputprocessing)
-
-* [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3650.58&preserve-view=true)
-  * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3650.58&preserve-view=true#createfindoptions)
-
-* [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true)
-  * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#add_activematchindexchanged)
-  * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#add_matchcountchanged)
-  * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#findnext)
-  * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#findprevious)
-  * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#get_activematchindex)
-  * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#get_matchcount)
-  * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#remove_activematchindexchanged)
-  * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#remove_matchcountchanged)
-  * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#start)
-  * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3650.58&preserve-view=true#stop)
-
-* [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler?view=webview2-1.0.3650.58&preserve-view=true)
-
-* [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3650.58&preserve-view=true)
-
-* [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true)
-  * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_findterm)
-  * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_iscasesensitive)
-  * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_shouldhighlightallmatches)
-  * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_shouldmatchword)
-  * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#get_suppressdefaultfinddialog)
-  * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#put_findterm)
-  * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#put_iscasesensitive)
-  * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#put_shouldhighlightallmatches)
-  * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#put_shouldmatchword)
-  * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3650.58&preserve-view=true#put_suppressdefaultfinddialog)
-
-* [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3650.58&preserve-view=true)
-
----
-<!-- /end of: delete all these APIs; already reported reaching Phase 3 -->
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.<!-- todo: already reported in Oct 6 & Oct 7 sections.  orig draft from script: Hiding local access network alert pop up -->
+* Fixed local network access triggering a permission alert pop-up window.
 
 <!-- end of Dec 2025 Release SDK -->
 
@@ -193,64 +75,38 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-###### Allowed port range, transport protocol
-<!-- todo: 2 separate sections? -->
-
-Allowed port range.  Also Transport Protocol.<!-- todo: lead-in -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- port range -->
-* [CoreWebView2AllowedPortRangeScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-   * `CoreWebView2AllowedPortRangeScope.Default`
-   * `CoreWebView2AllowedPortRangeScope.WebRtc`
-
-<!-- port range -->
-* `CoreWebView2EnvironmentOptions` Class
-   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-
-<!-- protocol kind -->
+* [CoreWebView2AllowedPortRangeScope Class](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+* [CoreWebView2AllowedPortRangeScope.Default Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+* [CoreWebView2AllowedPortRangeScope.WebRtc Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 * [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-   * `CoreWebView2TransportProtocolKind.Udp`
+* [CoreWebView2TransportProtocolKind.Udp Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+
+* [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+* [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- port range -->
-* [CoreWebView2AllowedPortRangeScope Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2allowedportrangescope?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
-   * `CoreWebView2AllowedPortRangeScope.Default`
-   * `CoreWebView2AllowedPortRangeScope.WebRtc`
-
-<!-- drag? -->
-* [CoreWebView2CompositionController Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2compositioncontroller?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)<!-- todo: delete?  probably Win32-only, Drag API per https://learn.microsoft.com/microsoft-edge/webview2/release-notes/archive?tabs=win32cpp#customize-the-drag-and-drop-behavior-dragstarting-api -->
-
-<!-- port range -->
-* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
-   * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method]<!-- todo -->
-   * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method]<!-- todo -->
-
-<!-- protocol kind -->
-* [CoreWebView2TransportProtocolKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2transportprotocolkind?view=webview2-winrt-1.0.3712-prerelease&preserve-view=true)
-   * `CoreWebView2TransportProtocolKind.Udp`
+N/A
 
 ##### [Win32/C++](#tab/win32cpp)
 
-<!-- port range -->
+
+* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
+  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
+  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
+* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
+  * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
+
 * [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true)
   * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
   * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
 
-<!-- port range -->
-* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
-  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
-  * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
-
-<!-- protocol kind -->
-* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
-  * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
-
 ---
+
 
 
 <!-- ------------------------------ -->
@@ -270,18 +126,20 @@ The `DragStarting` API overrides the default drag and drop behavior when running
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
-
-n/a
+N/A
 
 ##### [WinRT/C#](#tab/winrtcsharp)
-
-n/a
+N/A
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3712-prerelease&preserve-view=true)
   * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3712-prerelease&preserve-view=true#add_dragstarting)
   * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3712-prerelease&preserve-view=true#remove_dragstarting)
+
+* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontrollerinterop3?view=webview2-1.0.3712-prerelease&preserve-view=true)
+  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontrollerinterop3?view=webview2-1.0.3712-prerelease&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontrollerinterop3?view=webview2-1.0.3712-prerelease&preserve-view=true#remove_dragstarting)
 
 * [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3712-prerelease&preserve-view=true)
   * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3712-prerelease&preserve-view=true#get_alloweddropeffects)
@@ -295,24 +153,16 @@ n/a
 
 ---
 
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
 
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed "Creation success rate" in the WebView2 Titan chart, by using Histogram Analytics instead of FSM Analytics table.
-
-
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.<!-- todo: already reported in Oct 6 & Oct 7 sections.  orig draft from script: Hiding local access network alert pop up -->
-* Fixed a regression of the `setColorScheme` API.  ([Issue #5392](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5392))
+* Fixed local network access triggering a permission alert pop-up window.
+* Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
 <!-- end of Dec 2025 Prerelease SDK -->
