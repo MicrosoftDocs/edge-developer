@@ -721,7 +721,7 @@ There are known issues with the Find API for PDF documents.  When you view a PDF
 
 The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
 
-* Use `DragStarting` on the `ICoreWebView2ExperimentalCompositionController6` to add an event handler that's invoked when the drag operation is starting.
+* Use `DragStarting` on the `ICoreWebView2ExperimentalCompositionController` to add an event handler that's invoked when the drag operation is starting.
 * Use `ICoreWebView2ExperimentalDragStartingEventArgs` to start your own drag operation.
    * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.

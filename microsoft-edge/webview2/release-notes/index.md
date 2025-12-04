@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 12/02/2025
+ms.date: 12/08/2025
 ---
 # Release Notes for the WebView2 SDK
 
@@ -32,7 +32,7 @@ Jun 2025
 <!-- ====================================================================== -->
 ## 1.0.3650.58
 
-Release Date: December 2, 2025
+Release Date: December 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
@@ -42,10 +42,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions to Phase 3: Stable in Release
 
-
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
 
 
 <!-- ------------------------------ -->
@@ -62,7 +59,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.3712-prerelease
 
-Release Date: December 2, 2025
+Release Date: December 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
@@ -75,38 +72,41 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
+<!-- ---------- -->
+###### PortRange
+
+todo: Description.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2AllowedPortRangeScope Class](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-* [CoreWebView2AllowedPortRangeScope.Default Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-* [CoreWebView2AllowedPortRangeScope.WebRtc Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+   * `CoreWebView2AllowedPortRangeScope.Default`
+   * `CoreWebView2AllowedPortRangeScope.WebRtc`
+
 * [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-* [CoreWebView2TransportProtocolKind.Udp Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+*  `CoreWebView2TransportProtocolKind.Udp`
 
 * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-N/A
+N/A<!-- todo: are these eventually planned? -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
+* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
+   * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
 
 * [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
+
 * [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
   * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
 
-* [ICoreWebView2ExperimentalEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
-  * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
-
 ---
-
 
 
 <!-- ------------------------------ -->
@@ -126,9 +126,11 @@ The `DragStarting` API overrides the default drag and drop behavior when running
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
 N/A
 
 ##### [WinRT/C#](#tab/winrtcsharp)
+
 N/A
 
 ##### [Win32/C++](#tab/win32cpp)
