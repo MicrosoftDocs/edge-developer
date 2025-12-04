@@ -224,6 +224,5 @@ See also:
 GitHub:
 * [To do](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
 
-
 Chrome docs:
-* [Save performance traces](https://developer.chrome.com/docs/devtools/performance/save-trace)
+* [Save and share performance traces](https://developer.chrome.com/docs/devtools/performance/save-trace)
