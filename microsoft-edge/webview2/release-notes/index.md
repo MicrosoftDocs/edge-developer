@@ -114,13 +114,11 @@ N/A
    * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
    * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
 
-<!-- todo:                                                                              webview2experimental-idl -->
-* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
+* [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
 
-<!-- todo:                                                                             webview2experimental-idl -->
-* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
+* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
   * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
 
 ---
@@ -137,7 +135,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
 
-* Use `DragStarting` on the `ICoreWebView2CompositionController` to add an event handler that's invoked when the drag operation is starting.
+* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
 * Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
    * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
