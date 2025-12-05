@@ -13,11 +13,127 @@ ms.date: 11/03/2025
 These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
 
 
+<!-- Jun 2025 Release SDK -->
+<!-- ====================================================================== -->
+## 1.0.3296.44
+
+Release Date: June 3, 2025
+
+[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
+
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
+   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
+   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the margins in the printed PDF.
+
+<!-- end of Jun 2025 Release SDK -->
+
+
+<!-- Jun 2025 Prerelease SDK -->
+<!-- ====================================================================== -->
+## 1.0.3344-prerelease
+
+Release Date: June 3, 2025
+
+[NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 138.0.3344.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Allow input event messages to pass through the browser window
+
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3344-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3344-prerelease&preserve-view=true#allowhostinputprocessing)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true)
+   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true#get_allowhostinputprocessing)
+   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3344-prerelease&preserve-view=true#put_allowhostinputprocessing)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed a bug where a mouse event doesn't fire after a touch event.
+* Disabled Web capture on the WebView2 control.
+* Fixed the **Downloads** dialog.
+* Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed the margins in the printed PDF.
+
+<!-- end of June 2025 Prerelease SDK -->
+
+
 <!-- May 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3240.44
 
-Release Date: May 05, 2025
+Release Date: May 5, 2025
 
 [NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
 
@@ -25,9 +141,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -87,15 +203,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -141,7 +257,7 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ====================================================================== -->
 ## 1.0.3179.45
 
-Release Date: April 07, 2025
+Release Date: April 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
 
@@ -149,9 +265,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -173,7 +289,7 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.3230-prerelease
 
-Release Date: April 07, 2025
+Release Date: April 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
 
@@ -181,15 +297,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -259,9 +375,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -290,15 +406,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -342,9 +458,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -372,16 +488,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
-
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -429,9 +544,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -494,7 +609,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -699,9 +814,9 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -781,9 +896,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -889,15 +1004,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -933,9 +1048,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -1029,7 +1144,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -1083,9 +1198,9 @@ Added a new `RestartRequested` event.  The `RestartRequested` event is raised wh
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -1231,9 +1346,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -1260,15 +1375,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1309,9 +1424,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -1556,15 +1671,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -1616,9 +1731,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -1729,7 +1844,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -1781,9 +1896,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -1951,6 +2066,7 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 <!-- end of July/August 2024 Prerelease SDK -->
 
 
+<!-- June 2024 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.2592.51
 
@@ -1962,9 +2078,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -2011,7 +2127,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -2146,9 +2262,9 @@ Not applicable.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -2251,9 +2367,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -2330,15 +2446,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -2379,9 +2495,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -2477,7 +2593,7 @@ The minimum .NET Framework version requirement for .NET WebView2, including WPF 
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -2582,9 +2698,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -2681,9 +2797,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -2797,7 +2913,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -2914,9 +3030,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -3025,9 +3141,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -3189,7 +3305,7 @@ New member names:
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -3215,9 +3331,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -3325,9 +3441,9 @@ Navigations to `about:blank` are now cancellable via the `NavigationStarting` ev
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -3423,7 +3539,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -3521,9 +3637,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ---
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -3815,9 +3931,9 @@ The fix is in the article _Distribute your app and the WebView2 Runtime_, sectio
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4040,9 +4156,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 * Added source frame info to the `NewWindowRequested` event arguments, to identify the source of the request:
 
@@ -4117,9 +4233,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 * Support for browser extensions in WebView2:
 
@@ -4176,10 +4292,10 @@ The following APIs have been promoted from Experimental to Stable in this Prerel
 
 * Fixed an issue causing the `ScaleFactor` setting to not work properly for all WebView2 Print APIs.  (Runtime-only)  ([Issue #4082](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4082))
 
-
 <!-- end of Nov 2023 Prerelease SDK -->
 
 
+<!-- Oct 2023 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.2088.41
 
@@ -4191,9 +4307,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4205,10 +4321,10 @@ No additional APIs have been promoted to Stable and added in this Release SDK.
 
 * Fixed a Dialog Position Offset bug in WebView2.  (Runtime-only)  ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
 
-
 <!-- end of Oct 2023 Release SDK -->
 
 
+<!-- Oct 2023 Prerelease SDK -->
 <!-- ====================================================================== -->
 ## 1.0.2164-prerelease
 
@@ -4220,7 +4336,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4278,9 +4394,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4307,7 +4423,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4369,9 +4485,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -4478,9 +4594,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted to Stable and added in this Release SDK.
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4509,7 +4625,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4559,9 +4675,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4629,7 +4745,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4841,9 +4957,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -4952,15 +5068,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -5097,9 +5213,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -5189,9 +5305,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -5274,9 +5390,9 @@ WebView2 SDK 1.0.1722.32 is deprecated, and that package has been removed from t
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -5333,15 +5449,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -5428,9 +5544,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -5652,7 +5768,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -5958,9 +6074,9 @@ Add support for managing profile deletion:
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -6008,9 +6124,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -6055,7 +6171,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6095,9 +6211,9 @@ The above interface is currently being used for:
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -6258,9 +6374,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -6349,7 +6465,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6438,9 +6554,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -6546,7 +6662,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6594,9 +6710,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
@@ -6721,7 +6837,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6837,9 +6953,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -6878,7 +6994,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7013,9 +7129,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 *  The drag and drop API:
@@ -7068,9 +7184,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 * The Favicon API:
@@ -7104,7 +7220,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7189,9 +7305,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 *  Added `ContextMenuRequested`API to enable host app to create or modify their own context menu.
@@ -7222,9 +7338,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 * The Favicon API:
@@ -7282,9 +7398,9 @@ There is no corresponding prerelease package.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
@@ -7324,9 +7440,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.39&preserve-view=true) in WebView2.
 
@@ -7352,9 +7468,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
@@ -7396,9 +7512,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 * The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1185.39&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports `sessionId` for CDP method calls.
 
@@ -7431,6 +7547,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Experimental APIs for 1.0.1222-prerelease
 <!-- another section links to here -->
+<!-- todo: use this unique heading instead, and update where the other section(s) links to here:
+#### Promotions to Phase 1 (Experimental in Prerelease) for 1.0.1222-prerelease -->
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7440,9 +7558,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
 
@@ -7480,9 +7598,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
 
@@ -7498,7 +7616,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7506,9 +7624,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *    The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
 *   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
@@ -7543,9 +7661,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  The [AdditionalAllowedFrameAncestors API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2?view=webview2-1.0.1108.44&preserve-view=true) that enable developers to provide additional allowed frame ancestors.
 
@@ -7578,7 +7696,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7588,9 +7706,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  Rename ICoreWebView2ClientCertificate to [ICoreWebView2Certificate](/microsoft-edge/webview2/reference/win32/icorewebview2certificate?view=webview2-1.0.1158-prerelease&preserve-view=true).
 *  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1158-prerelease&preserve-view=true):
@@ -7621,9 +7739,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 
@@ -7644,7 +7762,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7658,9 +7776,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe2?view=webview2-1.0.1133-prerelease&preserve-view=true):
    *  `PostWebMessageAsJson`
@@ -7704,7 +7822,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7718,9 +7836,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1083-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1083-prerelease&preserve-view=true).  This API enables:
@@ -7780,7 +7898,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7821,9 +7939,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
@@ -7847,9 +7965,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  [OpenTaskManagerWindow API](/microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.992.28&preserve-view=true#summary).
 *  [isSwipeNavigationEnabled property](/microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary).
@@ -7874,7 +7992,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7912,7 +8030,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7938,9 +8056,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  `IsSwipeNavigationEnabled`
 *  `BrowserProcessExited`
@@ -7980,9 +8098,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  [Client Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested).
 
@@ -8023,7 +8141,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 *  Added [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow) to launch a WebView2 browser task manager.
 
@@ -8035,9 +8153,9 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested)
 
@@ -8091,9 +8209,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902.49&preserve-view=true#add_framecreated).
 *  [get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled).
@@ -8133,7 +8251,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -8145,9 +8263,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting).
 *  [PinchZoom API](/microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled).
@@ -8225,9 +8343,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 *  [UserAgent API](/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent)
 *  [AreBrowserkeysenabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled)
@@ -8254,7 +8372,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -8290,7 +8408,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### Experimental APIs
+###### Promotions to Phase 1 (Experimental in Prerelease)
 
 The following Experimental APIs for .NET have been added in this Prerelease SDK.
 
@@ -8353,9 +8471,9 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  [UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived).
 
@@ -8398,9 +8516,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
    *  [DPI support](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.774.44&preserve-view=true#add_webresourceresponsereceived) related APIs
    *  Visual hosting APIs
@@ -8453,9 +8571,9 @@ WebView2 prerelease package 0.9.430 is deprecated, and is removed with the next 
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  Visual Hosting APIs
 *  [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping)
@@ -8512,9 +8630,9 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted to Stable and are now included in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
    *  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
    *  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
@@ -8560,9 +8678,9 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 
 
 <!-- ------------------------------ -->
-#### Promotions
+#### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Experimental to Stable in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 *  [WebResourceResponseReceived API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_webresourceresponsereceived)
 *  [NavigateWithWebResourceRequest API](/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease&preserve-view=true#createwebresourcerequest)
@@ -8864,7 +8982,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
 <!-- ====================================================================== -->
 ## 0.9.430
 
-<!-- Release Date: February 24, 2020 -->
+Release Date: February 24, 2020
 
 [NuGet package for WebView2 SDK 0.9.430](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430)
 
