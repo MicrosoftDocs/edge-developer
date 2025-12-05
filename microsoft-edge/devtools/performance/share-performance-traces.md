@@ -14,7 +14,7 @@ The data that's recorded by the **Performance** tool can be exported to files on
 
 When you export a trace from the Performance tool, you can choose whether to include additional data:
 * Annotations.
-* Resource content (such as JavaScript content).
+* Resource content (such as HTML, CSS, and JavaScript content).
 * Script source maps.
 
 You can also control whether the trace file is compressed.
@@ -95,7 +95,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
 In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were added to a performance profile.
 
-Annotations can be helpful when you want to leave annotations for others.
+Annotations help draw attention to and highlight specific sections of a trace, making it easier for you and anyone you share it with to understand details.
 
 See also:
 * [Annotate a recording and share it](./reference.md#annotate-a-recording-and-share-it) in _Performance features reference_.
@@ -110,13 +110,13 @@ Includes the full content of all loaded HTML, CSS, and scripts (except extension
 
 In the **Save performance trace** dialog within the **Performance** tool, selecting the **Include resource content** checkbox includes the contents of HTML files, CSS files, and JavaScript scripts in the exported trace file.  All loaded scripts (except extensions) are saved in the trace file.
 
-When the trace file is subsequently imported into DevTools, these resources can then be viewed in the **Sources** tool.  The **Sources** tool resolves source code references that are found in the imported trace, to display the actual runtime code.
+When the trace file is subsequently imported into DevTools, these resources can then be viewed in the **Sources** tool.  The **Sources** tool resolves source code references that are found in the imported trace, to display the original source code.
 
 
 <!-- ------------------------------ -->
 #### Extension scripts
 
-Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected.
+Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected as they may contain sensitive information.
 
 However, the profiling data from extension scripts is still saved in the trace file, because extension scripts can impact performance.
 
@@ -153,7 +153,7 @@ See also:
 In the **Save performance trace** dialog within the **Performance** tool, the **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools. 
 
 * If this checkbox is selected, the default file name extension is `.gz`.
-* If this checkbox is cleared, the default file name extension is `.devtools`.
+* If this checkbox is cleared, the default file name extension is `.json`.
 
 
 <!-- ====================================================================== -->
