@@ -75,6 +75,8 @@ See also:
 <!-- ====================================================================== -->
 ## The Memory tool can load enhanced traces larger than 1 GB
 
+<!-- keep use of old term "enhanced traces" in this entry -->
+
 <!-- Subtitle: In previous versions of Microsoft Edge, loading enhanced traces larger than 1 GB produced an error. In Microsoft Edge 114, this issue has been fixed. -->
 
 In previous versions of Microsoft Edge, loading an enhanced trace larger than 1 GB failed.  In Microsoft Edge 114, this issue has been fixed.  You can now successfully load enhanced traces of any size.
@@ -88,7 +90,8 @@ Enhanced traces is an experimental feature in Microsoft Edge that allows you to 
 ![An enhanced trace](./devtools-114-images/enhanced-trace-1gb.png)
 
 See also:
-* [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
+* [Share a memory trace with more data](../../../experimental-features/share-memory-traces.md)
+* [Share a performance trace with more data](../../../performance/share-performance-traces.md)
 * [GitHub Issue #122: \[Feedback\] Enhanced Traces experiment](https://github.com/MicrosoftEdge/DevTools/issues/122)
 
 
