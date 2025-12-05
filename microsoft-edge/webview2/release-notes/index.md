@@ -77,7 +77,7 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 The Allowed Port Range APIs enables restricting or customizing the network port ranges that WebView2 can use for various transport protocols and scopes.  This provides enhanced security control.
 
-* Use `SetAllowedPortRange` on the `CoreWebView2ExperimentalEnvironmentOptions` instance to configure port restrictions during environment creation.
+* Use `SetAllowedPortRange` on the `CoreWebView2EnvironmentOptions` (or `ICoreWebView2ExperimentalEnvironmentOptions`) instance to configure port restrictions during environment creation.
 
    * Use the `scope` parameter to specify whether the configuration applies to all components (`Default`) or only to WebRTC peer-to-peer connections (`WebRtc`).  Currently only `WebRtc` is supported.
 
@@ -85,7 +85,7 @@ The Allowed Port Range APIs enables restricting or customizing the network port 
 
    * Specify `minPort` and `maxPort` values between 1025-65535 (inclusive), or use (0,0) to reset/remove restrictions.
 
-* Use `GetEffectiveAllowedPortRange` on the `CoreWebView2ExperimentalEnvironmentOptions` instance to retrieve the active port range configuration for a specific scope and protocol.
+* Use `GetEffectiveAllowedPortRange` on the `CoreWebView2EnvironmentOptions` (or `ICoreWebView2ExperimentalEnvironmentOptions`) instance to retrieve the active port range configuration for a specific scope and protocol.
 
    * Returns the explicitly set range for the given scope, or inherits from the `Default` scope if not set.
 
@@ -93,16 +93,16 @@ The Allowed Port Range APIs enables restricting or customizing the network port 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2AllowedPortRangeScope Class](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+* [CoreWebView2AllowedPortRangeScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
    * `CoreWebView2AllowedPortRangeScope.Default`
    * `CoreWebView2AllowedPortRangeScope.WebRtc`
-
-* [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-*  `CoreWebView2TransportProtocolKind.Udp`
 
 * `CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange` Class
    * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
    * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+
+* [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+*  `CoreWebView2TransportProtocolKind.Udp`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -114,10 +114,12 @@ N/A<!-- todo: are these eventually planned? -->
    * [ICoreWebView2ExperimentalEnvironmentOptions::GetEffectiveAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#geteffectiveallowedportrange)
    * [ICoreWebView2ExperimentalEnvironmentOptions::SetAllowedPortRange](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.3712-prerelease&preserve-view=true#setallowedportrange)
 
+<!-- todo:                                                                              webview2experimental-idl -->
 * [COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_allowed_port_range_scope)
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
 
+<!-- todo:                                                                             webview2experimental-idl -->
 * [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
   * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
 
