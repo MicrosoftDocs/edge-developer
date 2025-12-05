@@ -73,9 +73,23 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### PortRange
+###### Customize port range behavior
 
-todo: Description.
+The Allowed Port Range APIs enables restricting or customizing the network port ranges that WebView2 can use for various transport protocols and scopes.  This provides enhanced security control.
+
+* Use `SetAllowedPortRange` on the `CoreWebView2ExperimentalEnvironmentOptions` instance to configure port restrictions during environment creation.
+
+   * Use the `scope` parameter to specify whether the configuration applies to all components (`Default`) or only to WebRTC peer-to-peer connections (`WebRtc`).  Currently only `WebRtc` is supported.
+
+   * Use the `protocol` parameter to specify the transport protocol (currently supports `Udp`).
+
+   * Specify `minPort` and `maxPort` values between 1025-65535 (inclusive), or use (0,0) to reset/remove restrictions.
+
+* Use `GetEffectiveAllowedPortRange` on the `CoreWebView2ExperimentalEnvironmentOptions` instance to retrieve the active port range configuration for a specific scope and protocol.
+
+   * Returns the explicitly set range for the given scope, or inherits from the `Default` scope if not set.
+
+   * Returns (0,0) if no restrictions are configured for the specified scope.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
