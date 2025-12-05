@@ -31,7 +31,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 3: Stable in Release
+#### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
@@ -98,7 +98,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Experimental APIs
+#### Promotions to Phase 1 (Experimental in Prerelease)
+<!-- 
+#### Experimental APIs (Phase 1)
+-->
 
 No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
@@ -119,7 +122,7 @@ description
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 2: Stable in Prerelease
+#### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
