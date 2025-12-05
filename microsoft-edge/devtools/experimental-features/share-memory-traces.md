@@ -60,7 +60,7 @@ To change the default trace type to `.devtools`:
 <!-- ====================================================================== -->
 ## Set the export options for memory traces
 
-Memory traces that are `.devtools` files will always include source maps when they're available and can optionally include console messages, script sources, and DOM elements.
+Memory traces that are `.devtools` files always include source maps when they're available, and can optionally include console messages, script sources, and DOM elements.
 
 To control whether console messages, script sources, or DOM elements are included in memory traces:
 

@@ -95,7 +95,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
 In the **Save performance trace** dialog within the **Performance** tool, the **Include annotations** checkbox controls whether to include annotations that were added to a performance profile.
 
-Annotations help draw attention to and highlight specific sections of a trace, making it easier for you and anyone you share it with to understand details.
+Annotations help draw attention to and highlight specific sections of a trace, making it easier to understand details when viewing the trace.
 
 See also:
 * [Annotate a recording and share it](./reference.md#annotate-a-recording-and-share-it) in _Performance features reference_.
@@ -116,7 +116,7 @@ When the trace file is subsequently imported into DevTools, these resources can 
 <!-- ------------------------------ -->
 #### Extension scripts
 
-Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected as they may contain sensitive information.
+Some Performance insights require resource content (such as scripts) for analysis.  The contents of extension scripts are not included in the trace file, even when this checkbox is selected, because extension scripts might contain sensitive information.
 
 However, the profiling data from extension scripts is still saved in the trace file, because extension scripts can impact performance.
 
