@@ -54,7 +54,7 @@ Release Notes sections use this wording for the phases:
 
 See also:
 * [Prerelease and Release SDKs for WebView2](../concepts/versioning.md#phases-of-introducing-apis)
-   * [Moving from Experimental APIs to Stable APIs](../concepts/versioning#moving-from-experimental-apis-to-stable-apis) in _Prerelease and Release SDKs for WebView2_.
+   * [Moving from Experimental APIs to Stable APIs](../concepts/versioning.md#moving-from-experimental-apis-to-stable-apis) in _Prerelease and Release SDKs for WebView2_.
    * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 
 <!-- terminology:
