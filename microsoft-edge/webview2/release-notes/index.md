@@ -75,7 +75,7 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 <!-- ---------- -->
 ###### Customize port range behavior
 
-The Allowed Port Range APIs enables restricting or customizing the network port ranges that WebView2 can use for various transport protocols and scopes.  This provides enhanced security control.
+The Allowed Port Range APIs enable restricting or customizing the network port ranges that WebView2 can use for various transport protocols and scopes.  This provides enhanced security control.
 
 * Use `SetAllowedPortRange` on the `CoreWebView2EnvironmentOptions` (or `ICoreWebView2ExperimentalEnvironmentOptions`) instance to configure port restrictions during environment creation.
 
@@ -93,16 +93,16 @@ The Allowed Port Range APIs enables restricting or customizing the network port 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2AllowedPortRangeScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-   * `CoreWebView2AllowedPortRangeScope.Default`
-   * `CoreWebView2AllowedPortRangeScope.WebRtc`
-
 * `CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange` Class
    * [CoreWebView2EnvironmentOptions.GetEffectiveAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.geteffectiveallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
    * [CoreWebView2EnvironmentOptions.SetAllowedPortRange Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.setallowedportrange?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
 
+* [CoreWebView2AllowedPortRangeScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2allowedportrangescope?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
+   * `CoreWebView2AllowedPortRangeScope.Default`
+   * `CoreWebView2AllowedPortRangeScope.WebRtc`
+
 * [CoreWebView2TransportProtocolKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2transportprotocolkind?view=webview2-dotnet-1.0.3712-prerelease&preserve-view=true)
-*  `CoreWebView2TransportProtocolKind.Udp`
+   * `CoreWebView2TransportProtocolKind.Udp`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
