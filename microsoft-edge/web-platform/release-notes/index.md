@@ -25,7 +25,7 @@ Microsoft Edge DevTools
 * [Experimental features in Microsoft Edge DevTools](../../devtools/experimental-features/index.md)
 
 Microsoft Edge extensions
-* [Released features for Microsoft Edge extensions](../../extensions/whats-new/released-features.md)
+* [Release Notes for Microsoft Edge extensions](../../extensions/whats-new/released-features.md)
 * [Roadmap for Microsoft Edge extensions](../../extensions/whats-new/roadmap.md)
 
 Progressive Web Apps

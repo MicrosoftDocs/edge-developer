@@ -1,15 +1,19 @@
 ---
-title: Released features for Microsoft Edge extensions
+title: Release Notes for Microsoft Edge extensions
 description: Released features that have been launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 02/05/2025
+ms.date: 12/09/2025
 ---
-# Released features for Microsoft Edge extensions
+# Release Notes for Microsoft Edge extensions
 <!-- https://aka.ms/EdgeAddonsReleaseNotes -->
+<!-- todo: alts:
+# What's New for Microsoft Edge extensions
+the aka link has "ReleaseNotes"
+-->
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 

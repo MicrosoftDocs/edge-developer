@@ -1128,8 +1128,14 @@
 # -----------------------------------------------------------------------------
         - name: What's new
           items:
-            - name: Released features for Microsoft Edge extensions
+            - name: Release Notes for Microsoft Edge extensions
               href: ./extensions/whats-new/released-features.md
+
+            - name: Release Notes for Microsoft Edge extensions [new dir]
+              href: ./extensions/release-notes/index.md
+
+            - name: Release Notes for Microsoft Edge extensions 144
+              href: ./extensions/release-notes/144.md
 
             - name: Roadmap for Microsoft Edge extensions
               href: ./extensions/whats-new/roadmap.md
