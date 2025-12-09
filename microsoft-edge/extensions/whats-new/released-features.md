@@ -25,7 +25,7 @@ The version of Edge is shown as an approximate timeframe and point of reference,
 
 
 <!-- ====================================================================== -->
-## February 2025 (Edge 133)
+## Edge 133 (February 2025)
 <!-- 133: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10306539 -->
 
 
@@ -36,7 +36,7 @@ As an extension developer, you can now seamlessly transfer ownership of your Mic
 
 
 <!-- ====================================================================== -->
-## September 2024 (Edge 129)
+## Edge 129 (September 2024)
 <!-- 129: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10279245 -->
 
 
@@ -53,7 +53,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## June 2023 (Edge 114)
+## Edge 114 (June 2023)
 <!-- 114: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10182332 -->
 
 
@@ -64,7 +64,7 @@ The sidebar feature of Microsoft Edge extensions enables an extension to display
 
 
 <!-- ====================================================================== -->
-## July 2022 (Edge 103)
+## Edge 103 (July 2022)
 <!-- 103: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10126442 -->
 
 
@@ -75,7 +75,7 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 
 
 <!-- ====================================================================== -->
-## May 2022 (Edge 101)
+## Edge 101 (May 2022)
 <!-- 101: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10121039 -->
 
 
@@ -88,7 +88,7 @@ To share your feedback and comments about this feature, see [You can now respond
 
 
 <!-- ====================================================================== -->
-## March 2022 (Edge 99)
+## Edge 99 (March 2022)
 <!-- 99: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10115038 -->
 
 
@@ -108,7 +108,7 @@ You can view the navigation bar / tree path while using Partner Center to track 
 
 
 <!-- ====================================================================== -->
-## January 2022 (Edge 97)
+## Edge 97 (January 2022)
 <!-- 97: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#10107254 -->
 
 
@@ -119,7 +119,7 @@ The new edition of the developer portal contains resources and documentation for
 
 
 <!-- ====================================================================== -->
-## September 2021 (Edge 94)
+## Edge 94 (September 2021)
 <!-- 94, Sep 27: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1099228 -->
 
 
@@ -130,7 +130,7 @@ The Extensions Analytics Dashboard enables you to view your extension's usage, a
 
 
 <!-- ====================================================================== -->
-## August 2021 (Edge 93)
+## Edge 93 (August 2021)
 <!-- 93, Sep 8: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1096133 -->
 
 
@@ -147,7 +147,7 @@ You can use your personal GitHub account credentials to sign into Microsoft Part
 
 
 <!-- ====================================================================== -->
-## May 2021 (Edge 91)
+## Edge 91 (May 2021)
 <!-- 91: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1086435 -->
 
 <!-- ------------------------------ -->
@@ -157,7 +157,7 @@ This feature allows you to view your extension submission from the [Partner Cent
 
 
 <!-- ====================================================================== -->
-## April 2021 (Edge 90)
+## Edge 90 (April 2021)
 <!-- https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1081841 -->
 
 
@@ -168,7 +168,7 @@ Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest 
 
 
 <!-- ====================================================================== -->
-## February 2021 (Edge 89)
+## Edge 89 (February 2021)
 <!-- 89: Mar 8: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1077444 -->
 
 
@@ -181,7 +181,7 @@ See [Partner Center improvements related to Microsoft Edge extensions store list
 
 
 <!-- ====================================================================== -->
-## January 2021 (Edge 86)
+## Edge 86 (January 2021)
 <!-- jan 25: 86: https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/archive?tabs=dotnetcsharp#1070550 -->
 
 
