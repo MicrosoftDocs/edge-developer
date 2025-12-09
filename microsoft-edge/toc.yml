@@ -1137,8 +1137,9 @@
             - name: Release Notes for Microsoft Edge extensions 144
               href: ./extensions/release-notes/144.md
 
-            - name: Roadmap for Microsoft Edge extensions
-              href: ./extensions/whats-new/roadmap.md
+            - name: Release Notes for Microsoft Edge extensions 143
+              href: ./extensions/release-notes/143.md
+
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
