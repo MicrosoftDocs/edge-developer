@@ -13,29 +13,16 @@ ms.date: 12/08/2025
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
-<!--
-the templates to copy for incoming sections are in ./includes/templates.md
+<!-- the templates to copy for incoming sections are in ./includes/templates.md -->
 
-this webpage covers the most recent 10 months/releases; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
-Dec 2025
-Nov 2025
-Oct 2025
-Sep 2025
-Aug 2025
-
-Jul 2025
-Jun 2025
-May 2025
-Apr 2025
-Mar 2025
--->
+<!-- this article covers the most recent 10 months/releases; move h2 sections [latest Edge version - 10] from bottom of present file to archive.md -->
 
 
-<!-- Dec 2025 Release SDK -->
+<!-- Release SDK 143 -->
 <!-- ====================================================================== -->
 ## 1.0.3650.58
 
-Release Date: December 8, 2025, Runtime 143
+Release Date: Dec. 8, 2025, Runtime 143
 
 [NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
@@ -55,14 +42,14 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 * Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
-<!-- end of Dec 2025 Release SDK -->
+<!-- end of Release SDK 143 -->
 
 
-<!-- Dec 2025 Prerelease SDK -->
+<!-- Prerelease SDK 144 -->
 <!-- ====================================================================== -->
 ## 1.0.3712-prerelease
 
-Release Date: December 8, 2025, Runtime 144
+Release Date: Dec. 8, 2025, Runtime 144
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
@@ -185,14 +172,14 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
-<!-- end of Dec 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 144 -->
 
 
-<!-- Nov 2025 Release SDK -->
+<!-- Release SDK 142 -->
 <!-- ====================================================================== -->
 ## 1.0.3595.46
 
-Release Date: November 3, 2025, Runtime 142
+Release Date: Nov. 3, 2025, Runtime 142
 
 [NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
@@ -216,14 +203,14 @@ This Release SDK includes the following bug fixes.
 
 * Disabled creation of a "Speculative Renderer" process.
 
-<!-- end of Nov 2025 Release SDK -->
+<!-- end of Release SDK 142 -->
 
 
-<!-- Nov 2025 Prerelease SDK -->
+<!-- Prerelease SDK 143 -->
 <!-- ====================================================================== -->
 ## 1.0.3650-prerelease
 
-Release Date: November 7, 2025, Runtime 143
+Release Date: Nov. 7, 2025, Runtime 143
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
@@ -254,14 +241,14 @@ This Prerelease SDK includes the following bug fixes.
 * Disabled creation of a "Speculative Renderer" process.
 * Fixed a **Find** dialog synchronization issue while programmatically doing a Find.
 
-<!-- end of Nov 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 143 -->
 
 
-<!-- Oct 2025 Release SDK -->
+<!-- Release SDK 141 -->
 <!-- ====================================================================== -->
 ## 1.0.3537.50
 
-Release Date: October 6, 2025, Runtime 141
+Release Date: Oct. 6, 2025, Runtime 141
 
 [NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
@@ -291,14 +278,14 @@ This Release SDK includes the following bug fixes.
 
 * Fixed a BinSkim error for `WebView2Loader.dll`.
 
-<!-- end of Oct 2025 Release SDK -->
+<!-- end of Release SDK 141 -->
 
 
-<!-- Oct 2025 Prerelease SDK -->
+<!-- Prerelease SDK 142 -->
 <!-- ====================================================================== -->
 ## 1.0.3590-prerelease
 
-Release Date: October 7, 2025, Runtime 142
+Release Date: Oct. 7, 2025, Runtime 142
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
@@ -407,14 +394,14 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a BinSkim error for `WebView2Loader.dll`.
 
-<!-- end of Oct 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 142 -->
 
 
-<!-- Sep 2025 Release SDK -->
+<!-- Release SDK 140 -->
 <!-- ====================================================================== -->
 ## 1.0.3485.44
 
-Release Date: September 8, 2025, Runtime 140
+Release Date: Sep. 8, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
 
@@ -442,14 +429,14 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 There are no bug fixes in this Release SDK.
 
-<!-- end of Sep 2025 Release SDK -->
+<!-- end of Release SDK 140 -->
 
 
-<!-- Sep 2025 Prerelease SDK -->
+<!-- Prerelease SDK 141 -->
 <!-- ====================================================================== -->
 ## 1.0.3530-prerelease
 
-Release Date: September 8, 2025, Runtime 141
+Release Date: Sep. 8, 2025, Runtime 141
 
 [NuGet package for WebView2 SDK 1.0.3530-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3530-prerelease)
 
@@ -489,14 +476,14 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a memory leak in WPF Composition Controller.
 
-<!-- end of Sep 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 141 -->
 
 
-<!-- Aug 2025 Release SDK -->
+<!-- Release SDK 139 -->
 <!-- ====================================================================== -->
 ## 1.0.3405.78
 
-Release Date: August 11, 2025, Runtime 139
+Release Date: Aug. 11, 2025, Runtime 139
 
 [NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
 
@@ -623,14 +610,14 @@ We're actively investigating these issues, and we encourage you to report any pr
 
 * Fixed a crash in Devtools on Windows Server and Windows 10.
 
-<!-- end of Aug 2025 Release SDK -->
+<!-- end of Release SDK 139 -->
 
 
-<!-- Aug 2025 Prerelease SDK -->
+<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
 ## 1.0.3477-prerelease
 
-Release Date: August 11, 2025, Runtime 140
+Release Date: Aug. 11, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
 
@@ -664,14 +651,14 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Fixed a memory leak issue in `hostObject` async function calls.
 * Fixed touch not working in visual hosting after a long tap.
 
-<!-- end of Aug 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 140 -->
 
 
-<!-- Jul 2025 Release SDK -->
+<!-- Release SDK 138 -->
 <!-- ====================================================================== -->
 ## 1.0.3351.48
 
-Release Date: July 1, 2025, Runtime 138
+Release Date: Jul. 1, 2025, Runtime 138
 
 [NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
 
@@ -717,14 +704,14 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 
 * Fixed a blackbox issue on dialogs in visual hosting.
 
-<!-- end of Jul 2025 Release SDK -->
+<!-- end of Release SDK 138 -->
 
 
-<!-- Jul 2025 Prerelease SDK -->
+<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
 ## 1.0.3415-prerelease
 
-Release Date: July 14, 2025, Runtime 140
+Release Date: Jul. 14, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3415-prerelease)
 
@@ -1211,14 +1198,14 @@ We're actively investigating these issues, and we encourage you to report any pr
 * Fixed `put_UserAgent` not working for service workers.
 * Fixed crash in DevTools on Windows Server and Windows 10.
 
-<!-- end of Jul 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 140 -->
 
 
-<!-- Jun 2025 Release SDK -->
+<!-- Release SDK 137 -->
 <!-- ====================================================================== -->
 ## 1.0.3296.44
 
-Release Date: June 3, 2025
+Release Date: Jun. 3, 2025, Runtime 137
 
 [NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
 
@@ -1264,14 +1251,14 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 
 * Fixed the margins in the printed PDF.
 
-<!-- end of Jun 2025 Release SDK -->
+<!-- end of Release SDK 137 -->
 
 
-<!-- Jun 2025 Prerelease SDK -->
+<!-- Prerelease SDK 138 -->
 <!-- ====================================================================== -->
 ## 1.0.3344-prerelease
 
-Release Date: June 3, 2025
+Release Date: Jun. 3, 2025, Runtime 138
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
@@ -1327,14 +1314,14 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 * Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed the margins in the printed PDF.
 
-<!-- end of June 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 138 -->
 
 
-<!-- May 2025 Release SDK -->
+<!-- Release SDK 136 -->
 <!-- ====================================================================== -->
 ## 1.0.3240.44
 
-Release Date: May 5, 2025
+Release Date: May 5, 2025, Runtime 136
 
 [NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
 
@@ -1389,14 +1376,14 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 * Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- end of May 2025 Release SDK -->
+<!-- end of Release SDK 136 -->
 
 
-<!-- May 2025 Prerelease SDK -->
+<!-- Prerelease SDK 137 -->
 <!-- ====================================================================== -->
 ## 1.0.3296-prerelease
 
-Release Date: May 12, 2025
+Release Date: May 12, 2025, Runtime 137
 
 [NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
 
@@ -1451,14 +1438,14 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 * Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- end of May 2025 Prerelease SDK -->
+<!-- Prerelease SDK 137 -->
 
 
-<!-- Apr 2025 Release SDK -->
+<!-- Release SDK 135 -->
 <!-- ====================================================================== -->
 ## 1.0.3179.45
 
-Release Date: April 7, 2025
+Release Date: Apr. 7, 2025, Runtime 135
 
 [NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
 
@@ -1483,14 +1470,14 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-<!-- end of Apr 2025 Release SDK -->
+<!-- end of Release SDK 135 -->
 
 
-<!-- Apr 2025 Prerelease SDK -->
+<!-- Prerelease SDK 136 -->
 <!-- ====================================================================== -->
 ## 1.0.3230-prerelease
 
-Release Date: April 7, 2025
+Release Date: Apr. 7, 2025, Runtime 136
 
 [NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
 
@@ -1561,14 +1548,14 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 * Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
-<!-- end of Apr 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 136 -->
 
 
-<!-- Mar 2025 Release SDK -->
+<!-- Release SDK 134 -->
 <!-- ====================================================================== -->
 ## 1.0.3124.44
 
-Release Date: March 10, 2025
+Release Date: Mar. 10, 2025, Runtime 134
 
 [NuGet package for WebView2 SDK 1.0.3124.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3124.44)
 
@@ -1592,14 +1579,14 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
 * Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
-<!-- end of Mar 2025 Release SDK -->
+<!-- end of Release SDK 134 -->
 
 
-<!-- Mar 2025 Prerelease SDK -->
+<!-- Prerelease SDK 135 -->
 <!-- ====================================================================== -->
 ## 1.0.3171-prerelease
 
-Release Date: March 10, 2025
+Release Date: Mar. 10, 2025, Runtime 135
 
 [NuGet package for WebView2 SDK 1.0.3171-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3171-prerelease)
 
@@ -1644,7 +1631,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 * Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
 
-<!-- end of Mar 2025 Prerelease SDK -->
+<!-- end of Prerelease SDK 135 -->
 
 
 <!-- ====================================================================== -->
