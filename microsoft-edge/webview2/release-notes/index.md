@@ -9,6 +9,7 @@ ms.subservice: webview
 ms.date: 12/08/2025
 ---
 # Release Notes for the WebView2 SDK
+<!-- https://aka.ms/webviewrelease -->
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
@@ -27,12 +28,81 @@ moved to archive:
 Jun 2025
 -->
 
+**Detailed contents:**
+<!-- https://github.com/captainbrosset/WebToc -->
+* [1.0.3650.58](#10365058)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release)
+   * [Bug fixes](#bug-fixes)
+      * [`Runtime-only](#runtime-only)
+* [1.0.3712-prerelease](#103712-prerelease)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease)
+      * [Customize port range behavior](#customize-port-range-behavior)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+      * [Customize the drag and drop behavior (DragStarting API)](#customize-the-drag-and-drop-behavior-dragstarting-api)
+   * [Bug fixes](#bug-fixes-1)
+      * [Runtime-only](#runtime-only-1)
+* [1.0.3595.46](#10359546)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release-1)
+   * [Bug fixes](#bug-fixes-2)
+      * [Runtime-only](#runtime-only-2)
+* [1.0.3650-prerelease](#103650-prerelease)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease-1)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease-1)
+   * [Bug fixes](#bug-fixes-3)
+      * [Runtime-only](#runtime-only-3)
+* [1.0.3537.50](#10353750)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release-2)
+   * [Bug fixes](#bug-fixes-4)
+      * [Runtime-only](#runtime-only-4)
+      * [SDK-only](#sdk-only)
+* [1.0.3590-prerelease](#103590-prerelease)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease-2)
+      * [Sensitivity label support](#sensitivity-label-support)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease-2)
+   * [Bug fixes](#bug-fixes-5)
+      * [Runtime-only](#runtime-only-5)
+      * [SDK-only](#sdk-only-1)
+* [1.0.3485.44](#10348544)
+   * [General changes](#general-changes)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release-3)
+   * [Bug fixes](#bug-fixes-6)
+* [1.0.3530-prerelease](#103530-prerelease)
+   * [General changes](#general-changes-1)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease-3)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease-3)
+   * [Bug fixes](#bug-fixes-7)
+      * [SDK-only](#sdk-only-2)
+* [1.0.3405.78](#10340578)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release-4)
+      * [Customize the Find behavior (Find API)](#customize-the-find-behavior-find-api)
+   * [Bug fixes](#bug-fixes-8)
+      * [Runtime-only](#runtime-only-6)
+* [1.0.3477-prerelease](#103477-prerelease)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease-4)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease-4)
+   * [Bug fixes](#bug-fixes-9)
+      * [Runtime-only](#runtime-only-7)
+* [1.0.3351.48](#10335148)
+   * [Promotions to Phase 3 (Stable in Release)](#promotions-to-phase-3-stable-in-release-5)
+      * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
+   * [Bug fixes](#bug-fixes-10)
+      * [Runtime-only](#runtime-only-8)
+* [1.0.3415-prerelease](#103415-prerelease)
+   * [Promotions to Phase 1 (Experimental in Prerelease)](#promotions-to-phase-1-experimental-in-prerelease-5)
+      * [Enable background processing and offline support (WebView2 Worker APIs)](#enable-background-processing-and-offline-support-webview2-worker-apis)
+      * [Render custom title bars (Window Controls Overlay API)](#render-custom-title-bars-window-controls-overlay-api)
+   * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease-5)
+      * [Customize the Find behavior (Find API)](#customize-the-find-behavior-find-api-1)
+   * [Bug fixes](#bug-fixes-11)
+      * [Runtime-only](#runtime-only-9)
+* [See also](#see-also)
+
 
 <!-- Dec 2025 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.3650.58
 
-Release Date: December 8, 2025
+Release Date: December 8, 2025, Runtime 143
 
 [NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
@@ -59,7 +129,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.3712-prerelease
 
-Release Date: December 8, 2025
+Release Date: December 8, 2025, Runtime 144
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
@@ -189,7 +259,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3595.46
 
-Release Date: November 3, 2025
+Release Date: November 3, 2025, Runtime 142
 
 [NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
@@ -220,7 +290,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3650-prerelease
 
-Release Date: November 7, 2025
+Release Date: November 7, 2025, Runtime 143
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
@@ -258,7 +328,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3537.50
 
-Release Date: October 6, 2025
+Release Date: October 6, 2025, Runtime 141
 
 [NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
@@ -295,7 +365,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3590-prerelease
 
-Release Date: October 7, 2025
+Release Date: October 7, 2025, Runtime 142
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
@@ -411,7 +481,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3485.44
 
-Release Date: September 8, 2025
+Release Date: September 8, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
 
@@ -446,7 +516,7 @@ There are no bug fixes in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.3530-prerelease
 
-Release Date: September 8, 2025
+Release Date: September 8, 2025, Runtime 141
 
 [NuGet package for WebView2 SDK 1.0.3530-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3530-prerelease)
 
@@ -493,7 +563,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## 1.0.3405.78
 
-Release Date: August 11, 2025
+Release Date: August 11, 2025, Runtime 139
 
 [NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
 
@@ -627,7 +697,7 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- ====================================================================== -->
 ## 1.0.3477-prerelease
 
-Release Date: August 11, 2025
+Release Date: August 11, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
 
@@ -668,7 +738,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## 1.0.3351.48
 
-Release Date: July 1, 2025
+Release Date: July 1, 2025, Runtime 138
 
 [NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
 
@@ -721,7 +791,7 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- ====================================================================== -->
 ## 1.0.3415-prerelease
 
-Release Date: July 14, 2025
+Release Date: July 14, 2025, Runtime 140
 
 [NuGet package for WebView2 SDK 1.0.3415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3415-prerelease)
 
