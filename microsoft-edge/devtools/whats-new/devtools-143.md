@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/30/2025
+ms.date: 12/04/2025
 ---
 # What's New in DevTools (Microsoft Edge 143)
 
@@ -40,5 +40,5 @@ Microsoft Edge 143 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)
-* [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
+* [What's New in Microsoft Edge DevTools](./whats-new.md)
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
