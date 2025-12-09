@@ -18,11 +18,12 @@ the aka link has "ReleaseNotes"
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
-The version of Edge is shown as an approximate timeframe and point of reference, to describe Partner Center changes as well.  For official Edge version numbers and dates, see the **Version** and **Stable Channel** columns in [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases) in _Microsoft Edge release schedule_.
+The version of Edge is shown as an approximate timeframe and point of reference, to describe Partner Center changes.
+
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-* [Edge 144 (Jan. 15, 2025)](#edge-144-jan-15-2025)
+* [Edge 144 (Jan. 15, 2026)](#edge-144-jan-15-2026)
 * [Edge 143 (Dec. 4, 2025)](#edge-143-dec-4-2025)
 * [Edge 142 (Oct. 31, 2025)](#edge-142-oct-31-2025)
 * [Edge 141 (Oct. 2, 2025)](#edge-141-oct-2-2025)
@@ -65,7 +66,7 @@ The version of Edge is shown as an approximate timeframe and point of reference,
 
 
 <!-- ====================================================================== -->
-## Edge 144 (Jan. 15, 2025)
+## Edge 144 (Jan. 15, 2026)
 
 Content pending.
 
@@ -289,4 +290,4 @@ By clicking the extension certification report link, you can view and download t
 ## See also
 
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+* [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases) (**Version** and **Stable Channel** columns) in _Microsoft Edge release schedule_.
