@@ -1131,8 +1131,6 @@
             - name: Released features for Microsoft Edge extensions
               href: ./extensions/whats-new/released-features.md
 
-            - name: Roadmap for Microsoft Edge extensions
-              href: ./extensions/whats-new/roadmap.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
