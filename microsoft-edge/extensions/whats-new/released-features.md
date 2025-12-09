@@ -21,7 +21,35 @@ The version of Edge is shown as an approximate timeframe and point of reference,
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-<!-- todo -->
+* [Edge 133 (February 2025)](#edge-133-february-2025)
+   * [Transfer ownership of a Microsoft Edge extension](#transfer-ownership-of-a-microsoft-edge-extension)
+* [Edge 129 (September 2024)](#edge-129-september-2024)
+   * [Microsoft Edge Add-ons Update API, v1.1](#microsoft-edge-add-ons-update-api-v11)
+* [Edge 114 (June 2023)](#edge-114-june-2023)
+   * [Sidebar](#sidebar)
+* [Edge 103 (July 2022)](#edge-103-july-2022)
+   * [Retirement of submitting new Microsoft Edge extensions with Manifest V2](#retirement-of-submitting-new-microsoft-edge-extensions-with-manifest-v2)
+* [Edge 101 (May 2022)](#edge-101-may-2022)
+   * [You can respond to user reviews about your Microsoft Edge extension](#you-can-respond-to-user-reviews-about-your-microsoft-edge-extension)
+* [Edge 99 (March 2022)](#edge-99-march-2022)
+   * [Update an extension by using the Microsoft Edge Add-ons API](#update-an-extension-by-using-the-microsoft-edge-add-ons-api)
+   * [Addition of breadcrumbs to Microsoft Partner Center](#addition-of-breadcrumbs-to-microsoft-partner-center)
+* [Edge 97 (January 2022)](#edge-97-january-2022)
+   * [Microsoft Edge extensions developer portal](#microsoft-edge-extensions-developer-portal)
+* [Edge 94 (September 2021)](#edge-94-september-2021)
+   * [Extension Analytics Dashboard on Microsoft Partner Center](#extension-analytics-dashboard-on-microsoft-partner-center)
+* [Edge 93 (August 2021)](#edge-93-august-2021)
+   * [Add team members to your Partner Center account](#add-team-members-to-your-partner-center-account)
+   * [Sign into Microsoft Partner Center using your GitHub account](#sign-into-microsoft-partner-center-using-your-github-account)
+* [Edge 91 (May 2021)](#edge-91-may-2021)
+   * [Manage your extension submissions on Partner Center](#manage-your-extension-submissions-on-partner-center)
+* [Edge 90 (April 2021)](#edge-90-april-2021)
+   * [Support for Manifest V3 extensions](#support-for-manifest-v3-extensions)
+* [Edge 89 (February 2021)](#edge-89-february-2021)
+   * [Localization of extension listings at Microsoft Edge Add-ons](#localization-of-extension-listings-at-microsoft-edge-add-ons)
+* [Edge 86 (January 2021)](#edge-86-january-2021)
+   * [Extension certification report link](#extension-certification-report-link)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
