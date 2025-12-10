@@ -9,6 +9,7 @@ ms.subservice: extensions
 ms.date: 12/10/2025
 ---
 # Register as a Microsoft Edge extension developer
+<!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/create-dev-account -->
 
 This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
 
