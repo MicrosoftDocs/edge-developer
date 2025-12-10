@@ -70,8 +70,7 @@ Exporting a trace that includes this additional data is useful when sharing trac
 ![Save performance trace dialog](./devtools-143-images/save-performance-trace-dialog.png)
 
 See also:
-<!-- 
-* [Share performance traces with more data](../../../performance/share-performance-traces.md) - todo: uncomment link after https://github.com/MicrosoftDocs/edge-developer/pull/3615 is in "main" -->
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Improved trace sharing](https://developer.chrome.com/blog/new-in-devtools-143#trace-sharing)
 
 
