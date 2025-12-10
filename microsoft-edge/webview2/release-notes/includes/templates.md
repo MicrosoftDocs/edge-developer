@@ -1,6 +1,6 @@
 <!-- Jan 2026 Release SDK (123) -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## Release SDK 1.0.####.##, for Runtime ###
 
 Release Date: Monthname nn, 2025, Runtime ###
 
@@ -80,7 +80,7 @@ This Release SDK includes the following bug fixes.
 
 <!-- Jan 2026 Prerelease SDK (123) -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## Prerelease SDK 1.0.####-prerelease, for Runtime ###
 
 Release Date: Monthname nn, 2025, Runtime ###
 
