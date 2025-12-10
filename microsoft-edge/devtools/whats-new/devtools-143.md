@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 143)
+title: What's new in DevTools (Microsoft Edge 143)
 description: Activity Bar will only appear horizontally in Edge 144. View objects retained by event handlers in the Memory tool. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/04/2025
 ---
-# What's New in DevTools (Microsoft Edge 143)
+# What's new in DevTools (Microsoft Edge 143)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -30,11 +30,12 @@ Starting with Microsoft Edge 144, the **Activity Bar** will always be displayed 
 
 <!-- Subtitle: Use the new heap snapshot filter to show objects retained by event handlers.-->
 
-Use the new filter in the **Memory tool** to identify heap snapshot objects that are retained by event handlers. 
+In the **Memory tool**, to identify heap snapshot objects that are retained by event handlers, use the new **Objects retained by event handlers** filter (a dropdown list item):
 
 ![Objects retained by event handlers filter](./devtools-143-images/objects-retained-by-event-handlers-filter.png)
+<!-- todo: show repro steps -->
 
-Exmaple use case: Components that call `addEventListener` and forget to call `removeEventListener` are a common cause of memory leaks. This filter makes it easier to debug memory leaks related to event listeners.
+The **Objects retained by event handlers** filter makes it easier to debug memory leaks that are related to event listeners.  For example, a common cause of memory leaks is when a component calls `addEventListener`, but doesn't call `removeEventListener` afterwards.
 
 
 <!-- ====================================================================== -->
@@ -42,19 +43,20 @@ Exmaple use case: Components that call `addEventListener` and forget to call `re
 
 <!-- Subtitle: Export and share performance traces with annotations, resource content, and source maps.-->
 
-When you export a performance trace, you can choose to include 
-* Annotations
-* Resource content (HTML, CSS, and JavaScript content)
-* Script source maps
+When you export a performance trace, you can choose to include:
+* Annotations.
+* Resource content (HTML, CSS, and JavaScript content).
+* Script source maps.
 
 You can also choose whether the trace file is compressed. 
 
-Exporting a trace with this additional data is useful when sharing traces with others for debugging.
+Exporting a trace that includes this additional data is useful when sharing traces with others for debugging.
 
 ![Save performance trace dialog](./devtools-143-images/save-performance-trace-dialog.png)
 
 See also:
-* [Share performance traces with more data](../../../performance/share-performance-traces.md) <!-- Waiting on PR 3615 to go live. -->
+<!-- 
+* [Share performance traces with more data](../../../performance/share-performance-traces.md) - todo: uncomment link after https://github.com/MicrosoftDocs/edge-developer/pull/3615 is in "main" -->
 * [Improved trace sharing](https://developer.chrome.com/blog/new-in-devtools-143#trace-sharing)
 
 
@@ -63,9 +65,9 @@ See also:
 
 Microsoft Edge 143 also includes the following updates from the Chromium project:
 
-* [Improved trace sharing](https://developer.chrome.com/blog/new-in-devtools-143#trace-sharing) <!-- Do we need to include this again here? -->
 * [Support for @starting-style](https://developer.chrome.com/blog/new-in-devtools-143#starting-style)
 * [Editor widget for display: masonry](https://developer.chrome.com/blog/new-in-devtools-143#masonry)
+
 
 <!-- ====================================================================== -->
 ## See also

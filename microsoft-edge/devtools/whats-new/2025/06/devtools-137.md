@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 137)
+title: What's new in DevTools (Microsoft Edge 137)
 description: The Enable settings sync checkbox lets you sync your DevTools settings across devices. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/29/2025
 ---
-# What's New in DevTools (Microsoft Edge 137)
+# What's new in DevTools (Microsoft Edge 137)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

@@ -153,7 +153,7 @@ Try to change your CSS selectors so they require less time to calculate, and mat
 <!-- ====================================================================== -->
 ## See also
 
-* [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
+* [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's new in DevTools (Microsoft Edge 131)_.
 * [Analyze runtime performance (tutorial)](./index.md) - An introduction to analyzing runtime performance in DevTools.
 * [Performance features reference](./reference.md) - Covers many of the features in the **Performance** tool.
 * [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/) - Windows blog post.

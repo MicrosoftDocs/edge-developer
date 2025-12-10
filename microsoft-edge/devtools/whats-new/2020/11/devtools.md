@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 88)
+title: What's new in DevTools (Microsoft Edge 88)
 description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, new service worker debugging features, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 88)
+# What's new in DevTools (Microsoft Edge 88)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -304,7 +304,7 @@ The **Network** tool now displays specific status for CORS errors.  For example:
 For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 See also:
-* [Enhanced CORS debugging support](../../2021/05/devtools.md#enhanced-cors-debugging-support) in _What's New in DevTools (Microsoft Edge 92)_
+* [Enhanced CORS debugging support](../../2021/05/devtools.md#enhanced-cors-debugging-support) in _What's new in DevTools (Microsoft Edge 92)_
 * [Network features reference](../../../network/reference.md)
 
 

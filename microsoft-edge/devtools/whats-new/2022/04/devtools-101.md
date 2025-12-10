@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 101)
+title: What's new in DevTools (Microsoft Edge 101)
 description: Console tool in VS Code.  Source maps cached with IndexedDB.  Track pending network requests when exporting HAR files.  Updated UI and camera controls in 3D View.  Switch themes without reloading DevTools.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/28/2022
 ---
-# What's New in DevTools (Microsoft Edge 101)
+# What's new in DevTools (Microsoft Edge 101)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

@@ -127,5 +127,5 @@ Be sure to unmount components.  For long-running apps, small memory leaks of onl
    * [MicrosoftEdge/Demos > detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) repo folder - source code.<!-- link not in article -->
 
 <!-- possibly uncomment after PR https://github.com/MicrosoftDocs/edge-developer/pull/3290 is merged
-* [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's New in DevTools (Microsoft Edge 130)_.
+* [Detached Elements profiling type in Memory tool](../whats-new/2024/10/devtools-130.md#detached-elements-profiling-type-in-memory-tool) in _What's new in DevTools (Microsoft Edge 130)_.
 -->

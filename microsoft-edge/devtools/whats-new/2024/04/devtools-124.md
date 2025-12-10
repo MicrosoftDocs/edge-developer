@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 124)
+title: What's new in DevTools (Microsoft Edge 124)
 description: "postMessage events and handlers are distinguished from other events on the timeline. Move a tab left or right in the Activity bar by right-clicking it. Network tab shows a warning icon when using overrides or throttling. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/18/2024
 ---
-# What's New in DevTools (Microsoft Edge 124)
+# What's new in DevTools (Microsoft Edge 124)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

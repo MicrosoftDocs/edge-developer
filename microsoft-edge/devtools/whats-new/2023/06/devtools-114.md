@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 114)
+title: What's new in DevTools (Microsoft Edge 114)
 description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/15/2023
 ---
-# What's New in DevTools (Microsoft Edge 114)
+# What's new in DevTools (Microsoft Edge 114)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -44,7 +44,7 @@ Thank you for using the **Selector Stats** feature and sharing your feedback wit
 See also:
 * [Analyze CSS selector performance during Recalculate Style events](../../../performance/selector-stats.md)
 * [GitHub Issue #98: \[Feedback\] Selector Performance Tracing Explainer](https://github.com/MicrosoftEdge/DevTools/issues/98)
-* [Debug long-running Recalculate Style events with new selector stats](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's New in DevTools (Microsoft Edge 109)_.
+* [Debug long-running Recalculate Style events with new selector stats](../01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ When you click a selector, or navigate to a selector and then press **Enter**, s
 ![Navigating the CSS overview tool with the keyboard](./devtools-114-images/non-simple-selectors-css-overview-a11y.png)
 
 See also:
-* [CSS overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's New in DevTools (Microsoft Edge 112)_.
+* [CSS overview tool displays non-simple selectors for quick performance gains](../04/devtools-112.md#css-overview-tool-displays-non-simple-selectors-for-quick-performance-gains) in _What's new in DevTools (Microsoft Edge 112)_.
 * [Non-simple selectors](../../../css/css-overview-tool.md#non-simple-selectors) in _Optimize CSS styles with the CSS overview tool_.
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
