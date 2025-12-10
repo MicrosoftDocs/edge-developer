@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 98)
+title: What's new in DevTools (Microsoft Edge 98)
 description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 02/02/2022
 ---
-# What's New in DevTools (Microsoft Edge 98)
+# What's new in DevTools (Microsoft Edge 98)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

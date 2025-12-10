@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 85)
+title: What's new in DevTools (Microsoft Edge 85)
 description: CSS grid debugging features, Edit and Replay requests with the Network Console, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 85)
+# What's new in DevTools (Microsoft Edge 85)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

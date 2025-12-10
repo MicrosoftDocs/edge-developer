@@ -208,4 +208,4 @@ To learn more about the **Source Maps Monitor** tool and how it can help monitor
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](publish-source-maps-to-azure.md)
 * [Map the processed code to your original source code, for debugging](source-maps.md)
 * [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool.md)
-* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's new in DevTools (Microsoft Edge 115)_.

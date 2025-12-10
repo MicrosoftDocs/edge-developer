@@ -174,7 +174,7 @@ Status:
 <!-- ====================================================================== -->
 ## Show option to expose internals in heap snapshots
 <!-- checkbox has no "(?)" link pointing to this anchor wording
-[Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's New in DevTools (Microsoft Edge 128)_ links to here -->
+[Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's new in DevTools (Microsoft Edge 128)_ links to here -->
 
 _new as of Microsoft Edge 105_
 
@@ -202,7 +202,7 @@ APCA is a new way to compute contrast.  It is based on modern research on color 
 *  Spatial properties of context that include ambient light, surroundings, and intended purpose.
 
 See also:
-* [New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) in _What's New in DevTools (Microsoft Edge 89)_.
+* [New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) in _What's new in DevTools (Microsoft Edge 89)_.
 * [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
@@ -231,7 +231,7 @@ The Accessibility Tree view in the **Elements** tool:
 
 See also:
 * [Test accessibility using the Accessibility tab](../accessibility/accessibility-tab.md)
-* [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
+* [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's new in DevTools (Microsoft Edge 90)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
@@ -359,7 +359,7 @@ See also:
 * [Performance recording event reference](../performance/performance-reference.md)
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
-* [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's New in DevTools (Microsoft Edge 124)_.
+* [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's new in DevTools (Microsoft Edge 124)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
@@ -419,7 +419,7 @@ pointing to this anchor wording -->
 Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
 
 See also:
-* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's New in DevTools (Microsoft Edge 91)_.
+* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's new in DevTools (Microsoft Edge 91)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
