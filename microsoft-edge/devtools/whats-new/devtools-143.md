@@ -30,10 +30,25 @@ Starting with Microsoft Edge 144, the **Activity Bar** will always be displayed 
 
 <!-- Subtitle: Use the new heap snapshot filter to show objects retained by event handlers.-->
 
-In the **Memory tool**, to identify heap snapshot objects that are retained by event handlers, use the new **Objects retained by event handlers** filter (a dropdown list item):
+In the **Memory tool**, to identify heap snapshot objects that are retained by event handlers, in the **Filter** dropdown list, use the new **Objects retained by event handlers** list item.
 
-![Objects retained by event handlers filter](./devtools-143-images/objects-retained-by-event-handlers-filter.png)
-<!-- todo: show repro steps -->
+For example:
+
+1. Go to [To do app](https://microsoftedge.github.io/Demos/demo-to-do/) in a new tab or window.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Memory** (![Memory icon](./devtools-143-images/memory-icon.png)) tool.
+
+1. Click the **Take snapshot** button.
+
+1. In the **Filter** dropdown list, instead of **All objects**, select **Objects retained by event handlers**:
+
+   ![Objects retained by event handlers filter](./devtools-143-images/objects-retained-by-event-handlers-filter.png)
+
+   The list of objects in the table becomes shorter.
 
 The **Objects retained by event handlers** filter makes it easier to debug memory leaks that are related to event listeners.  For example, a common cause of memory leaks is when a component calls `addEventListener`, but doesn't call `removeEventListener` afterwards.
 
