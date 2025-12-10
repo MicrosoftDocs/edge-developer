@@ -390,16 +390,16 @@
               href: ./devtools/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Share enhanced performance and memory traces
-              href: ./devtools/experimental-features/share-traces.md
-              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
+            - name: Share a memory trace with more data
+              href: ./devtools/experimental-features/share-memory-traces.md
+              displayName: Experimental features, Memory tool
 # -----------------------------------------------------------------------------
         - name: Samples
           items:
             - name: Sample code for DevTools
               href: ./devtools/samples/index.md
               displayName: sample code, demo
-# -----------------------------------------------------------------------------
+# TOOLS =======================================================================
         - name: Tools
           items:
             - name: About the list of tools
@@ -610,6 +610,10 @@
                 - name: Performance features reference  # = Performance > Features reference
                   href: ./devtools/performance/reference.md
                   displayName: Performance tool, Rendering tool
+
+                - name: Share a performance trace with more data
+                  href: ./devtools/performance/share-performance-traces.md
+                  displayName: Performance tool
 
                 - name: Performance recording event reference  # = Performance > Timeline event reference
                   href: ./devtools/performance/performance-reference.md
@@ -1136,8 +1140,6 @@
             - name: Released features for Microsoft Edge extensions
               href: ./extensions/whats-new/released-features.md
 
-            - name: Roadmap for Microsoft Edge extensions
-              href: ./extensions/whats-new/roadmap.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
