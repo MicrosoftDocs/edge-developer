@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/01/2022
+ms.date: 12/10/2025
 ---
 # Register as a Microsoft Edge extension developer
 
@@ -63,6 +63,8 @@ The Microsoft Edge program doesn't currently support registering with a work or 
 
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Partner Center**.
 
+   ![Sign in](./create-dev-account-images/sign-in.png)
+
 1. If you have a Microsoft account (MSA), use it to sign into Partner Center.  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  Then fill in the Microsoft Edge program registration form, using the registration form in the next section.
 
 1. If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Register and sign in to Partner Center using a GitHub account](./github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
@@ -85,6 +87,8 @@ Fill in the fields of the registration form as follows.
 
 This field is either where you live, or where your business is located.
 
+![Country region](./create-dev-account-images/country-region.png)
+
 > [!IMPORTANT]
 > After enrollment, the value of this field is read-only.
 
@@ -93,6 +97,8 @@ This field is either where you live, or where your business is located.
 #### Account types
 
 The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+
+![Account type](./create-dev-account-images/account-type.png)
 
 > [!IMPORTANT]
 > After enrollment, you aren't able to change the value of this field.
@@ -119,11 +125,15 @@ This field contains the name that's displayed at [Microsoft Edge Add-ons](https:
 
 The maximum length for this field is fifty (50) characters.
 
+![Company name](./create-dev-account-images/company-name.png)
+
 
 <!-- ------------------------------ -->
 #### Contact details
 
 This field contains any contact information that Microsoft uses to contact you about any account issues.  After registration is complete, you receive an email confirmation.  For a company account, you must use the registered email address associated with your organization.
+
+![Contact info](./create-dev-account-images/contact-info.png)
 
 
 <!-- ------------------------------ -->
@@ -135,7 +145,11 @@ For a company account, you must provide the contact information of your company 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
+
+![Open account settings](./create-dev-account-images/open-account-settings.png)
+
+Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 * [Publish a Microsoft Edge extension](./publish-extension.md)
 
