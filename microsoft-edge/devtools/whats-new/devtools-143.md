@@ -50,7 +50,7 @@ For example:
 
    The list of objects in the table becomes shorter.
 
-The **Objects retained by event handlers** filter makes it easier to debug memory leaks that are related to event listeners.  For example, a common cause of memory leaks is when a component calls `addEventListener`, but doesn't call `removeEventListener` afterwards.
+The **Objects retained by event handlers** filter makes it easier to debug memory leaks that are related to event listeners, such as when a component calls `addEventListener`, but doesn't call `removeEventListener` afterwards.
 
 
 <!-- ====================================================================== -->
