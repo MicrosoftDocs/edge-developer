@@ -201,13 +201,11 @@ For such errors, try the following fixes:
 
 
 <!-- ====================================================================== -->
-## If the extension is flagged for malware or PUA
+## If the extension is flagged as malware or a potentially unwanted application
 
-If the extension is flagged for malware or Potentially Unwanted Applications (PUA), here’s how you can try to fix it:
+If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
 
-Review Policy 1.2.2 and ensure that your extension complies with all requirements.
-
-Microsoft does not disclose exact triggers, for security reasons, so make sure that your code and functionality adhere strictly to the guidelines.
+Make sure that your extension's code and functionality complies with all requirements and guidelines.  Microsoft does not disclose exact triggers, for security reasons.  
 
 
 <!-- ====================================================================== -->
@@ -264,12 +262,15 @@ Continue to build, test, and prepare your submissions while you wait for the ver
 * [Publish a Microsoft Edge extension](./publish-extension.md)
 * [Extension concepts and architecture](../getting-started/index.md)
 
+Policies:
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
+* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
+
 Entra:
 * [What is Microsoft Entra ID?](/entra/fundamentals/whatis)
 * [Quickstart: Set up a Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant)<!-- dest titles -->
 
-Other sites:
+Other Microsoft.com sites:
 * [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
 * [account.microsoft.com](https://account.microsoft.com/account)
-* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
