@@ -43,6 +43,27 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 * [See also](#see-also)
 
 
+**Detailed contents, alt design:**
+<!-- https://github.com/captainbrosset/WebToc -->
+* [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
+* [Create a Microsoft account](#create-a-microsoft-account)
+* [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center)
+* [Filling in the registration form](#filling-in-the-registration-form)
+* [Account country/region](#account-countryregion)
+* [Account type](#account-type)
+   * [Individual account](#individual-account)
+   * [Company account](#company-account)
+* [Publisher display name (Company name)](#publisher-display-name-company-name)
+* [Contact info](#contact-info)
+* Support and troubleshooting
+   * [Resolving Partner Center errors](#resolving-partner-center-errors)
+   * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
+   * [If your verification is delayed](#if-your-verification-is-delayed)
+   * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
+* [Next steps](#next-steps)
+* [See also](#see-also)
+
+
 <!-- ====================================================================== -->
 ## Types of accounts related to publishing Microsoft Edge extensions
 
