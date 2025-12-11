@@ -234,8 +234,6 @@ Add users to the Edge program only after verification is complete.
 
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension to another party.
 
-Transferring ownership of an extension can be essential for various reasons, such as organizational changes, project handovers, or streamlining management processes.  Your Microsoft Edge extension can continue to thrive under new ownership without any disruptions.
-
 See [Transfer ownership of an extension](../update/transfer-ownership.md).
 
 
