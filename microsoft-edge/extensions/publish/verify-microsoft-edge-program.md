@@ -10,7 +10,7 @@ ms.date: 11/02/2022
 ---
 # Verify your company account information
 
-Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.  Information specifically about company accounts starts in the [Account types](./create-dev-account.md#account-types) section within that article.
+Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.
 
 When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide.  This information can include your company name, company address, and primary contact details.  During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 

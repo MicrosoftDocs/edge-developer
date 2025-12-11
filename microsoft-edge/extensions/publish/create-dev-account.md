@@ -23,18 +23,20 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-<!-- todo: update -->
 * [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
 * [Create a Microsoft account](#create-a-microsoft-account)
 * [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center)
 * [Filling in the registration form](#filling-in-the-registration-form)
    * [Account country/region](#account-countryregion)
-   * [Account types](#account-types)
+   * [Account type](#account-type)
       * [Individual account](#individual-account)
       * [Company account](#company-account)
-   * [Publisher display name](#publisher-display-name)
-   * [Contact details](#contact-details)
-   * [Company approver](#company-approver)
+   * [Publisher display name (Company name)](#publisher-display-name-company-name)
+   * [Contact info](#contact-info)
+* [Resolving Partner Center errors](#resolving-partner-center-errors)
+* [If the extension is flagged for malware or PUA](#if-the-extension-is-flagged-for-malware-or-pua)
+* [If your verification is delayed](#if-your-verification-is-delayed)
+* [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
 * [Next steps](#next-steps)
 * [See also](#see-also)
 
@@ -93,7 +95,7 @@ To enroll in the Microsoft Edge program on Partner Center:
 
    ![Sign in](./create-dev-account-images/sign-in.png)
 
-   A registration form is displayed.
+   The **Microsoft Edge Developer Account Registration** form is displayed.
 
 1. Fill in the registration form; see [Filling in the registration form](#filling-in-the-registration-form), below.
 
@@ -107,7 +109,7 @@ To enroll in the Microsoft Edge program on Partner Center:
 <!-- ====================================================================== -->
 ## Filling in the registration form
 
-Fill in the fields of the registration form as follows.
+Fill in the sections of the **Microsoft Edge Developer Account Registration** form, as follows.
 
 
 <!-- ------------------------------ -->
@@ -181,10 +183,7 @@ The **Contact info** section contains the following fields:
 After registration is complete, you receive a confirmation email.  For a company account, as a part of the verification process, Microsoft contacts the specified company approver, to make sure that the extension belongs to your organization.
 
 
-<!-- ------------------------------ -->
-#### Agreement and submitting the form
-
-After filling in the form, accept the Agreement and then submit the form, per [Filling in the registration form](#filling-in-the-registration-form), above.
+After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Filling in the registration form](#filling-in-the-registration-form), above.
 
 
 <!-- ====================================================================== -->
