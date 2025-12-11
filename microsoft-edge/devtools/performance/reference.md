@@ -1077,7 +1077,7 @@ See also:
 <!-- ------------------------------ -->
 #### View messages between windows, iframes, and dedicated workers
 <!-- section in downstream doc only.  copied from edge what's new:
-[postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's New in DevTools (Microsoft Edge 124)_
+[postMessage events and handlers are distinguished from other events on the timeline](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events-on-the-timeline) in _What's new in DevTools (Microsoft Edge 124)_
 -->
 
 The DevTools experiment **Performance panel: show postMessage dispatch and handling flows** improves the **Performance** tool's **Main** section to help you quickly identify `postMessage` events and handlers, by distinguishing events that are triggered by the `postMessage` method from other events that are displayed in the **Performance** tool.  This experiment helps you investigate performance issues that are related to posting messages across various threads of an application.
@@ -1153,7 +1153,7 @@ See also:
 * [Track event initiators](#track-event-initiators), above.
 * [Analyze runtime performance (tutorial)](./index.md)
 <!--
-* [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's New in DevTools (Microsoft Edge 128)_.
+* [View WebSocket message activities in the Performance tool](../whats-new/2024/08/devtools-128.md#view-websocket-message-activities-in-the-performance-tool) in _What's new in DevTools (Microsoft Edge 128)_.
 -->
 
 
@@ -1263,7 +1263,7 @@ See also:
 <!-- ------------------------------ -->
 #### Disable local fonts
 <!-- in edge doc only.  copied from
-[Emulate missing local fonts](../whats-new/2020/08/devtools.md#emulate-missing-local-fonts) in _What's New in DevTools (Microsoft Edge 86)_ -->
+[Emulate missing local fonts](../whats-new/2020/08/devtools.md#emulate-missing-local-fonts) in _What's new in DevTools (Microsoft Edge 86)_ -->
 
 In the **Rendering** tool, use the **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
 

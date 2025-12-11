@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 111)
+title: What's new in DevTools (Microsoft Edge 111)
 description: "Remote debugging of Microsoft Edge, PWAs, and WebView2 controls on HoloLens 2 devices. Device Mode toolbar has emulation controls for themes and vision deficiencies. Performance tool unminifies file and function names while profiling. Styles tab easier to use in Focus Mode. Copy Selector Stats table from Performance tool. In Focus Mode, assistive tech announces tool moved to Quick View. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/15/2023
 ---
-# What's New in DevTools (Microsoft Edge 111)
+# What's new in DevTools (Microsoft Edge 111)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -73,7 +73,7 @@ See also:
 
 <!-- Subtitle: As long as the Performance tool can find sourcemaps from Symbol Server, the Performance tool automatically presents the original file and function names in the flame chart. -->
 
-Microsoft Edge 99 added a new feature to the **Performance** tool called **Unminify**. This **Unminify** feature applied sourcemaps to a profile that was recorded with the **Performance** tool, and then downloaded the unminified profile to your machine. The **Unminify** feature is described in [Use your source maps to display original function names in performance profiles](../../2022/03/devtools.md#use-your-source-maps-to-display-original-function-names-in-performance-profiles) in _What's New in DevTools (Microsoft Edge 99)_.
+Microsoft Edge 99 added a new feature to the **Performance** tool called **Unminify**. This **Unminify** feature applied sourcemaps to a profile that was recorded with the **Performance** tool, and then downloaded the unminified profile to your machine. The **Unminify** feature is described in [Use your source maps to display original function names in performance profiles](../../2022/03/devtools.md#use-your-source-maps-to-display-original-function-names-in-performance-profiles) in _What's new in DevTools (Microsoft Edge 99)_.
 
 In Microsoft Edge 111, this feature has been removed, because the Performance tool now automatically provides the original file and function names while profiling production code, as long as source maps are loaded.  Source maps can be loaded reliably and securely by hosting them on Azure Artifacts Symbol Server.
 
@@ -113,7 +113,7 @@ See also:
 
 <!-- Subtitle: In Microsoft Edge 111, you can copy and paste Selector Stats data from the Performance tool for aggregate selector performance analysis. -->
 
-Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's New in DevTools (Microsoft Edge 109)_.
+Microsoft Edge 109 introduced the **Selector Stats** feature in the **Performance** tool.  With the **Enable advanced rendering instrumentation (slow)** setting turned on in the **Performance** tool, selecting any **Recalculate Styles** event in the flame chart adds a **Selector Stats** tab in the bottom pane.  See [Debug long-running Recalculate Style events with new selector stats](../../2023/01/devtools-109.md#debug-long-running-recalculate-style-events-with-new-selector-stats) in _What's new in DevTools (Microsoft Edge 109)_.
 
 In Microsoft Edge 111, you can now export the **Selector Stats** table for each **Recalculate Styles** event to a Microsoft Excel workbook.  You can then use Excel to do aggregate selector performance analysis, and identify the most costly selectors over the lifetime of the profile.
 

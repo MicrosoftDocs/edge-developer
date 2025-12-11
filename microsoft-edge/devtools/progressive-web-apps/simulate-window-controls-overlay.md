@@ -51,4 +51,4 @@ To simulate the WCO feature for Windows, Linux, and macOS in your PWA without ha
 ## See also
 
 * [Display content in the title bar area using Window Controls Overlay](../../progressive-web-apps/how-to/window-controls-overlay.md) - the Window Controls Overlay feature for PWAs.
-* [Tooling for PWA Window Controls Overlay](../whats-new/2024/01/devtools-121.md#tooling-for-pwa-window-controls-overlay) in _What's New in DevTools (Microsoft Edge 121)_.
+* [Tooling for PWA Window Controls Overlay](../whats-new/2024/01/devtools-121.md#tooling-for-pwa-window-controls-overlay) in _What's new in DevTools (Microsoft Edge 121)_.
