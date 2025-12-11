@@ -34,7 +34,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
    * [Publisher display name (Company name)](#publisher-display-name-company-name)
    * [Contact info](#contact-info)
 * [Resolving Partner Center errors](#resolving-partner-center-errors)
-* [If the extension is flagged for malware or PUA](#if-the-extension-is-flagged-for-malware-or-pua)
+* [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [If your verification is delayed](#if-your-verification-is-delayed)
 * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
 * [Next steps](#next-steps)
@@ -189,19 +189,22 @@ After filling in the **Microsoft Edge Developer Account Registration** form, acc
 <!-- ====================================================================== -->
 ## Resolving Partner Center errors
 
-After submitting the form, Partner Center might display errors such as:
-* **Something went wrong**.
+After submitting the form, Partner Center might display errors, such as:
+* Something went wrong.
 * Undefined correlation IDs.
-* UI glitches.
+* UI glitches.<!-- todo: in your app? in Partner Center? -->
 
 For such errors, try the following fixes:
+
 * Clear the browser cache and cookies.
+
 * Switch to a different browser, such as Microsoft Edge, Google Chrome, or Firefox.
+
 * Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
 
 
 <!-- ====================================================================== -->
-## If the extension is flagged as malware or a potentially unwanted application
+## If the extension is flagged as potentially malware
 
 If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
 
