@@ -92,7 +92,9 @@ The Microsoft Edge program doesn't support registering with a work or school acc
 
 
 <!-- ====================================================================== -->
-## Enroll in the Microsoft Edge program on Partner Center
+## Enroll in the Microsoft Edge program on Partner Center<!-- todo: elim heading -->
+
+<!-- todo: move first half of steps into h2 "Fill in the registration form" -->
 
 To enroll in the Microsoft Edge program on Partner Center:
 
@@ -105,6 +107,8 @@ To enroll in the Microsoft Edge program on Partner Center:
    The **Microsoft Edge Developer Account Registration** form is displayed.
 
 1. Fill in the registration form; see [Filling in the registration form](#filling-in-the-registration-form), below.
+
+   <!-- todo: move remaining steps into h2 "Finishing the form" -->
 
 1. Read and accept the terms and conditions of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
 
@@ -160,7 +164,7 @@ In the **Publisher display name (Company name)** text box, enter the company nam
 
 ![Company name](./create-dev-account-images/company-name.png)
 
-To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+To use a particular name, that name must be available, and you must have the rights to use it.  For a company account, this must be the registered business name of your organization.
 
 The maximum length for this field is fifty (50) characters.
 
@@ -172,23 +176,23 @@ In the **Contact info** section, enter contact information that Microsoft will u
 
 ![Contact info](./create-dev-account-images/contact-info.png)
 
-For a company account (rather than an individual account), you must provide the contact information of your company approver, in all of the fields in this section.
+For a company account, you must use the registered email address that's associated with your organization.
 
-The **Contact info** section contains the following fields:
-* **First name** - For a company account, this must be the company approver name that's associated with your organization.
-* **Last name** - For a company account, this must be the company approver name that's associated with your organization.
-* **Email address** - For a company account, this must be the registered email address that's associated with your organization.
-* **Phone number** - For a company account, this must be the phone number that's associated with your organization.
-* **Website**
-* **Address line 1**
-* **Address line 2**
-* **City**
-* **State/province**
-* **Postal code**
-* **Preferred email language**
+After registration is complete, you receive a confirmation email.  
 
-After registration is complete, you receive a confirmation email.  For a company account, as a part of the verification process, Microsoft contacts the specified company approver, to make sure that the extension belongs to your organization.
 
+<!-- ------------------------------ -->
+#### Company approver
+
+For a company account, you must provide the contact information of your company approver.  If you selected the **Company** option button in the **Account type** section, the **Company approver** section appears:
+
+![Company approver](./create-dev-account-images/company-approver.png)
+
+The contact information includes name, email address, and phone number.  As a part of the account verification process, Microsoft contacts the specified company approver, to verify that you are authorized to create and manage this account on behalf of your organization.
+
+
+<!-- ------------------------------ -->
+#### Finishing the form
 
 After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center), above.
 
@@ -200,18 +204,17 @@ After filling in the **Microsoft Edge Developer Account Registration** form, acc
 <!-- ------------------------------ -->
 #### Resolving Partner Center errors
 
-After submitting the form, Partner Center might display errors, such as:
-* Something went wrong.
-* Undefined correlation IDs.
-* UI glitches.<!-- todo: in your app? in Partner Center? -->
+After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined":
+
+![Error message](./create-dev-account-images/error-message.png)
 
 For such errors, try the following fixes:
 
 * Clear the browser cache and cookies.
 
-* Switch to a different browser, such as Microsoft Edge, Google Chrome, or Firefox.
-
 * Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
+
+* Try another browser, such as Microsoft Edge, Google Chrome, or Firefox.
 
 
 <!-- ------------------------------ -->
