@@ -38,9 +38,9 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 * [Support and troubleshooting](#support-and-troubleshooting)
    * [Resolving Partner Center errors](#resolving-partner-center-errors)
    * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
+   * [Check enrollment verification status](#check-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
    * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
-* [Next steps](#next-steps)
 * [See also](#see-also)
 
 
@@ -219,6 +219,16 @@ Make sure that your extension's code and functionality complies with all require
 
 
 <!-- ------------------------------ -->
+#### Check enrollment verification status
+
+To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
+
+![Open account settings](./create-dev-account-images/open-account-settings.png)
+
+Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+
+
+<!-- ------------------------------ -->
 #### If account verification is delayed
 
 If your company account enrollment is stuck in "Pending" or "Action Required" status, try the following fixes.
@@ -242,16 +252,6 @@ Add users to the Edge program only after verification is complete.
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension to another party.
 
 See [Transfer ownership of an extension](../update/transfer-ownership.md).
-
-
-<!-- ====================================================================== -->
-## Next steps
-
-To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
-
-![Open account settings](./create-dev-account-images/open-account-settings.png)
-
-Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 
 <!-- ====================================================================== -->
