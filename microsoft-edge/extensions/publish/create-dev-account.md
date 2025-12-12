@@ -35,30 +35,10 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
       * [Company account](#company-account)
    * [Publisher display name (Company name)](#publisher-display-name-company-name)
    * [Contact info](#contact-info)
-* [Resolving Partner Center errors](#resolving-partner-center-errors)
-* [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
-* [If your verification is delayed](#if-your-verification-is-delayed)
-* [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
-* [Next steps](#next-steps)
-* [See also](#see-also)
-
-
-**Detailed contents, alt design:**
-<!-- https://github.com/captainbrosset/WebToc -->
-* [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
-* [Create a Microsoft account](#create-a-microsoft-account)
-* [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center)
-* [Filling in the registration form](#filling-in-the-registration-form)
-* [Account country/region](#account-countryregion)
-* [Account type](#account-type)
-   * [Individual account](#individual-account)
-   * [Company account](#company-account)
-* [Publisher display name (Company name)](#publisher-display-name-company-name)
-* [Contact info](#contact-info)
-* Support and troubleshooting
+* [Support and troubleshooting](#support-and-troubleshooting)
    * [Resolving Partner Center errors](#resolving-partner-center-errors)
    * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
-   * [If your verification is delayed](#if-your-verification-is-delayed)
+   * [If account verification is delayed](#if-account-verification-is-delayed)
    * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
 * [Next steps](#next-steps)
 * [See also](#see-also)
@@ -184,7 +164,7 @@ The maximum length for this field is fifty (50) characters.
 <!-- ------------------------------ -->
 #### Contact info
 
-The **Contact info** section contains any contact information that Microsoft uses to contact you about any account issues:
+In the **Contact info** section, enter contact information that Microsoft will use to contact you about any account issues:
 
 ![Contact info](./create-dev-account-images/contact-info.png)
 
@@ -210,7 +190,11 @@ After filling in the **Microsoft Edge Developer Account Registration** form, acc
 
 
 <!-- ====================================================================== -->
-## Resolving Partner Center errors
+## Support and troubleshooting
+
+
+<!-- ------------------------------ -->
+#### Resolving Partner Center errors
 
 After submitting the form, Partner Center might display errors, such as:
 * Something went wrong.
@@ -226,18 +210,18 @@ For such errors, try the following fixes:
 * Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
 
 
-<!-- ====================================================================== -->
-## If the extension is flagged as potentially malware
+<!-- ------------------------------ -->
+#### If the extension is flagged as potentially malware
 
 If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
 
 Make sure that your extension's code and functionality complies with all requirements and guidelines.  Microsoft does not disclose exact triggers, for security reasons.  
 
 
-<!-- ====================================================================== -->
-## If your verification is delayed
+<!-- ------------------------------ -->
+#### If account verification is delayed
 
-If your company account is stuck in “Pending” or “Action Required” status, try the following fixes.
+If your company account enrollment is stuck in "Pending" or "Action Required" status, try the following fixes.
 
 Ensure that all documents (such as utility bills, DUNS ID, or government records) are:
 * Clear, complete, and match your legal business profile.
@@ -252,8 +236,8 @@ Switching from a company to an individual account is not supported.
 Add users to the Edge program only after verification is complete.
 
 
-<!-- ====================================================================== -->
-## Transferring ownership of an extension
+<!-- ------------------------------ -->
+#### Transferring ownership of an extension
 
 As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension to another party.
 
@@ -263,28 +247,22 @@ See [Transfer ownership of an extension](../update/transfer-ownership.md).
 <!-- ====================================================================== -->
 ## Next steps
 
-To check your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
+To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
 
 ![Open account settings](./create-dev-account-images/open-account-settings.png)
 
 Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
-
-* [Publish a Microsoft Edge extension](./publish-extension.md)
-
-* [Extension concepts and architecture](../getting-started/index.md)
-
-* [Add users to the Microsoft Edge program](./aad-account.md) - Add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
+* [Publish a Microsoft Edge extension](./publish-extension.md)
+* [Add users to the Microsoft Edge program](./aad-account.md)
+* [Extension concepts and architecture](../getting-started/index.md)
 * [Register and sign in to Partner Center using a GitHub account](./github.md)
 * [Verify your company account information](./verify-microsoft-edge-program.md)
-* [Add users to the Microsoft Edge program](./aad-account.md)
-* [Publish a Microsoft Edge extension](./publish-extension.md)
-* [Extension concepts and architecture](../getting-started/index.md)
 
 Policies:
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
