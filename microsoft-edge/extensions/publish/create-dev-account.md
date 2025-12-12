@@ -11,20 +11,10 @@ ms.date: 12/11/2025
 # Register as a Microsoft Edge extension developer
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/create-dev-account -->
 
-To submit an extension at Microsoft Edge Add-ons, you must be registered as a developer with the Microsoft Edge program. You can register for the Microsoft Edge program at Partner Center. 
-
-There is no registration fee for submitting extensions to the Microsoft Edge program.
-
-To register for the Microsoft Edge program, you need a Microsoft account (MSA).  This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account type](#account-type) below.
-
-If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article helps you create and link to a suitable account.  You'll learn:
-* How to create a Microsoft account (MSA), if you don't have one.
-* How to link the MSA to your Partner Center account.
-
-To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Microsoft Entra tenant.
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at Partner Center. 
 
 **Detailed contents:**
-<!-- https://github.com/captainbrosset/WebToc -->
+* [Introduction](#introduction)
 * [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
 * [Create a Microsoft account](#create-a-microsoft-account)
 * [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center)
@@ -42,6 +32,20 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
    * [If account verification is delayed](#if-account-verification-is-delayed)
    * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
 * [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+There is no registration fee for submitting extensions to the Microsoft Edge program.
+
+To register for the Microsoft Edge program, you need a Microsoft account (MSA).  This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account type](#account-type) below.
+
+If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article helps you create and link to a suitable account.  You'll learn:
+* How to create a Microsoft account (MSA), if you don't have one.
+* How to link the MSA to your Partner Center account.
+
+To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Microsoft Entra tenant.
 
 
 <!-- ====================================================================== -->
