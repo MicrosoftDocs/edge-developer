@@ -190,7 +190,7 @@ The **Contact info** section contains the following fields:
 After registration is complete, you receive a confirmation email.  For a company account, as a part of the verification process, Microsoft contacts the specified company approver, to make sure that the extension belongs to your organization.
 
 
-After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Filling in the registration form](#filling-in-the-registration-form), above.
+After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center), above.
 
 
 <!-- ====================================================================== -->
