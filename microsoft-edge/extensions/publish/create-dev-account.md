@@ -229,7 +229,7 @@ To check the verification status of your account enrollment, go to [Partner Cent
 
 ![Open account settings](./create-dev-account-images/open-account-settings.png)
 
-While you wait for the account verification process to complete, continue to develop, test, and prepare your Microsoft Edge extension.  See [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
+While you wait for the account verification process to complete, you can continue to develop, test, and prepare your Microsoft Edge extension.  See [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
 
 
 <!-- ------------------------------ -->
