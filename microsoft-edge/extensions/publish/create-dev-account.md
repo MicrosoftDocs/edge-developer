@@ -108,7 +108,7 @@ To enroll in the Microsoft Edge program on Partner Center:
 
 1. Read and accept the terms and conditions of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
 
-1. In the registration form, click the **Finish** button.
+1. In the **Microsoft Edge Developer Account Registration** form, click the **Finish** button.
 
 1. If Partner Center displays errors, see [Resolving Partner Center errors](#resolving-partner-center-errors), below.
 
