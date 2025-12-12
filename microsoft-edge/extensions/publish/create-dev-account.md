@@ -38,7 +38,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 * [Support and troubleshooting](#support-and-troubleshooting)
    * [Resolving Partner Center errors](#resolving-partner-center-errors)
    * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
-   * [Check enrollment verification status](#check-enrollment-verification-status)
+   * [Checking enrollment verification status](#checking-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
    * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
 * [See also](#see-also)
@@ -219,7 +219,7 @@ Make sure that your extension's code and functionality complies with all require
 
 
 <!-- ------------------------------ -->
-#### Check enrollment verification status
+#### Checking enrollment verification status
 
 To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
 
