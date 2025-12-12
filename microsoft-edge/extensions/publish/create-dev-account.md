@@ -219,7 +219,7 @@ For such errors, try the following fixes:
 
 If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
 
-Make sure that your extension's code and functionality complies with all requirements and guidelines.  Microsoft does not disclose exact triggers, for security reasons.  
+Make sure that your extension's code and functionality complies with all requirements and guidelines.  Microsoft doesn't disclose exact triggers, for security reasons.  
 
 
 <!-- ------------------------------ -->
