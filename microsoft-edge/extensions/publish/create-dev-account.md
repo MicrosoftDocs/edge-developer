@@ -11,7 +11,7 @@ ms.date: 12/11/2025
 # Register as a Microsoft Edge extension developer
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/create-dev-account -->
 
-To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at Partner Center. 
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login).
 
 **Detailed contents:**
 * [Introduction](#introduction)
@@ -39,7 +39,7 @@ To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microso
 
 There is no registration fee for submitting extensions to the Microsoft Edge program.
 
-To register for the Microsoft Edge program, you need a Microsoft account (MSA).  This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account type](#account-type) below.
+To register for the Microsoft Edge program, you need a Microsoft account (MSA).  This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account type](#account-type), below.
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article helps you create and link to a suitable account.  You'll learn:
 * How to create a Microsoft account (MSA), if you don't have one.
@@ -104,6 +104,8 @@ To enroll in the Microsoft Edge program on Partner Center:
 
    ![Sign in](./create-dev-account-images/sign-in.png)
 
+   <!-- todo: missing step? 1. Go to [Account settings | Programs](https://partner.microsoft.com/en-us/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link. -->
+
    The **Microsoft Edge Developer Account Registration** form is displayed.
 
 1. Fill in the registration form; see [Filling in the registration form](#filling-in-the-registration-form), below.
@@ -138,9 +140,7 @@ In the **Account type** section, select the **Individual** or **Company** option
 
 ![Account type](./create-dev-account-images/account-type.png)
 
-The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) offers both individual and company accounts:
-
-Individual and company accounts are described below.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) offers both individual and company accounts, described below.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 
 <!-- ---------- -->
@@ -225,7 +225,7 @@ Make sure that your extension's code and functionality complies with all require
 <!-- ------------------------------ -->
 #### Checking enrollment verification status
 
-To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) and then select **Open Account Settings**:
+To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) and then click the **Open Account Settings** link:
 
 ![Open account settings](./create-dev-account-images/open-account-settings.png)
 
@@ -239,7 +239,7 @@ If your company account enrollment is stuck in "Pending" or "Action Required" st
 
 Ensure that all documents (such as utility bills, DUNS ID, or government records) are:
 * Clear, complete, and match your legal business profile.
-* Uploaded in the correct section under Account Settings > Legal Info
+* Uploaded in the correct section at Partner Center, under [Account settings | Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo).
 
 If your application was rejected: 
 * In the **Legal Info** tab, click **Fix now**.
