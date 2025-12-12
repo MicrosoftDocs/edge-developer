@@ -122,7 +122,7 @@ Fill in the sections of the **Microsoft Edge Developer Account Registration** fo
 <!-- ------------------------------ -->
 #### Account country/region
 
-In the **Account country/region** field, select either where you live, or where your business is located.  **Important:** After enrollment, the value of this field is read-only.
+In the **Account country/region** dropdown list, select either where you live, or where your business is located.  **Important:** After enrollment, the value of this field is read-only.
 
 ![Country region](./create-dev-account-images/country-region.png)
 
@@ -156,7 +156,7 @@ For a company account, it's crucial to verify your Microsoft Edge program inform
 <!-- ------------------------------ -->
 #### Publisher display name (Company name)
 
-In the **Publisher display name (Company name)** field, enter the company name to display at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
+In the **Publisher display name (Company name)** text box, enter the company name to display at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
 
 ![Company name](./create-dev-account-images/company-name.png)
 
