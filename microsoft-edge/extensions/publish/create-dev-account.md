@@ -101,13 +101,16 @@ To enroll in the Microsoft Edge program on Partner Center:
 
    ![Sign in](./create-dev-account-images/sign-in.png)
 
-1. Go to [Account settings | Programs](https://partner.microsoft.com/en-us/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link.
+   The **Microsoft Edge Developer Account Registration** form might immediately appear.  If not:
+
+1. In Partner Center, navigate to [Account settings | Programs](https://partner.microsoft.com/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link.
 
    The **Microsoft Edge Developer Account Registration** form opens in a new tab, showing the **Account country/region** dropdown list and a **Finish** button.
 
 
 <!-- ------------------------------ -->
 #### Account country/region
+<!-- depending how/when you enter into the form page: -->
 <!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo -->
 <!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo?accountProgram=MSEdgeAddons -->
 
