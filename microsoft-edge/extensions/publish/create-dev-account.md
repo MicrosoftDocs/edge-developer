@@ -58,7 +58,7 @@ Supported account types:
 | _Partner Center account_, _Partner Center developer account_ | A _Partner Center account_ is an account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a _Partner Center developer account_, which is a Partner Center account that has a Microsoft account (MSA) as the Primary Owner. |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
 | _Microsoft Entra ID_ | A Microsoft Entra ID account; see [What is Microsoft Entra ID?](/entra/fundamentals/whatis) |
-| _Microsoft Entra tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Microsoft Entra ID that an organization or app developer receives at the beginning of a relationship with Microsoft.  See [Quickstart: Set up a Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant).<!-- dest titles --> |
+| _Microsoft Entra tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Microsoft Entra ID that an organization or app developer receives at the beginning of a relationship with Microsoft.  See [Set up a new Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant). |
 
 
 <!-- ====================================================================== -->
@@ -130,7 +130,7 @@ In the **Account type** section, select the **Individual** or **Company** option
 
 ![Account type](./create-dev-account-images/account-type.png)
 
-The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts:
+The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) offers both individual and company accounts:
 
 Individual and company accounts are described below.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
@@ -221,11 +221,11 @@ Make sure that your extension's code and functionality complies with all require
 <!-- ------------------------------ -->
 #### Checking enrollment verification status
 
-To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Open Account Settings**:
+To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) and then select **Open Account Settings**:
 
 ![Open account settings](./create-dev-account-images/open-account-settings.png)
 
-Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+Continue to build, test, and prepare your Microsoft Edge extension, while you wait for the account verification process to complete.
 
 
 <!-- ------------------------------ -->
@@ -258,9 +258,7 @@ See [Transfer ownership of an extension](../update/transfer-ownership.md).
 ## See also
 <!-- all links in article -->
 
-* [Publish a Microsoft Edge extension](./publish-extension.md)
 * [Add users to the Microsoft Edge program](./aad-account.md)
-* [Extension concepts and architecture](../getting-started/index.md)
 * [Register and sign in to Partner Center using a GitHub account](./github.md)
 * [Verify your company account information](./verify-microsoft-edge-program.md)
 
@@ -270,9 +268,9 @@ Policies:
 
 Entra:
 * [What is Microsoft Entra ID?](/entra/fundamentals/whatis)
-* [Quickstart: Set up a Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant)<!-- dest titles -->
+* [Set up a new Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant)
 
 Other Microsoft.com sites:
-* [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
+* [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login)
 * [account.microsoft.com](https://account.microsoft.com/account)
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
