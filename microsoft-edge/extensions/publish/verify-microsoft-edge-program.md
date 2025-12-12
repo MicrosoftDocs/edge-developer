@@ -142,7 +142,7 @@ Switching back to an individual account from an enterprise account isn't possibl
 <!-- ====================================================================== -->
 ## Next steps
 
-To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can keep building, testing, and preparing your submissions while you wait for the verification process to finish. Review the following extension documents:
+To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can continue to build and test the extension and prepare it to be submitted, while you wait for the verification process to finish.  See the following extension documents:
 
 *  [Extension concepts and architecture](../getting-started/index.md) - Gives an overview of extensions and basic publishing information.
 

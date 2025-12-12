@@ -115,7 +115,7 @@ To upload the extension package:
 
 1. On the left, click **Packages**.  The **Packages** page opens.
 
-   You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** page.
+   You can only upload one package at a time. Your submitted extension is blocked if the package upload isn't successful on the **Packages** page.
 
 1. To upload your package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
@@ -413,9 +413,9 @@ To add notes for certification:
 
    * Expected differences in functionality based on region or other user settings.
 
-   * If your submission is an update to an existing extension, include information about the changes made to the extension.
+   * If your submitted extension is an update to an existing extension, include information about the changes made to the extension.
 
-   * Any additional information that testers must understand about your submission.
+   * Any additional information that testers must understand about your submitted extension.
 
  1. Click the **Publish** button, in the upper right.
 
