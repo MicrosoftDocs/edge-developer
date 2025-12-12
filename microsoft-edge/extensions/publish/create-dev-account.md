@@ -191,9 +191,6 @@ For a company account, you must provide the contact information of your company 
 The contact information includes name, email address, and phone number.  As a part of the account verification process, Microsoft contacts the specified company approver, to verify that you are authorized to create and manage this account on behalf of your organization.
 
 
-<!-- ------------------------------ -->
-#### Finishing the form
-
 After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center), above.
 
 
