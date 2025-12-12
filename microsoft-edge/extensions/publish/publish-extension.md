@@ -427,6 +427,14 @@ To add notes for certification:
 
 
 <!-- ========================================================================== -->
+## If the extension is flagged as potentially malware
+
+If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
+
+Make sure that your extension's code and functionality complies with all requirements and guidelines.  For security reasons, Microsoft doesn't disclose exact triggers.
+
+
+<!-- ========================================================================== -->
 ## Support
 
 If you experience issues when registering as an extension developer or when submitting an extension, you can:

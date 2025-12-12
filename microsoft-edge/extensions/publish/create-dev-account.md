@@ -6,31 +6,30 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 12/11/2025
+ms.date: 12/12/2025
 ---
 # Register as a Microsoft Edge extension developer
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/create-dev-account -->
 
-To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login).
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login), as described below.
 
 **Detailed contents:**
 * [Introduction](#introduction)
 * [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
-* [Create a Microsoft account](#create-a-microsoft-account)
-* [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center)
-* [Filling in the registration form](#filling-in-the-registration-form)
+* [Step 1: Create a Microsoft account (MSA)](#step-1-create-a-microsoft-account-msa)
+* [Step 2: Fill in the Edge Developer Account Registration form](#step-2-fill-in-the-edge-developer-account-registration-form)
    * [Account country/region](#account-countryregion)
    * [Account type](#account-type)
       * [Individual account](#individual-account)
       * [Company account](#company-account)
    * [Publisher display name (Company name)](#publisher-display-name-company-name)
    * [Contact info](#contact-info)
-* [Support and troubleshooting](#support-and-troubleshooting)
-   * [Resolving Partner Center errors](#resolving-partner-center-errors)
-   * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
-   * [Checking enrollment verification status](#checking-enrollment-verification-status)
+   * [Company approver](#company-approver)
+   * [Finishing the form](#finishing-the-form)
+* [Step 3: Resolve any Partner Center errors](#step-3-resolve-any-partner-center-errors)
+* [Step 4: Check enrollment verification status](#step-4-check-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
-   * [Transferring ownership of an extension](#transferring-ownership-of-an-extension)
+* [Step 5: Add users to the account](#step-5-add-users-to-the-account)
 * [See also](#see-also)
 
 
@@ -66,9 +65,9 @@ Supported account types:
 
 
 <!-- ====================================================================== -->
-## Create a Microsoft account 
+## Step 1: Create a Microsoft account (MSA)
 
-To register for the Microsoft Edge program, you need a Microsoft account (MSA).   A _Microsoft account_ (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
+To register for the Microsoft Edge program, you need a Microsoft account (MSA).  A _Microsoft account_ (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
 If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't an MSA, you must either:
 
@@ -92,9 +91,7 @@ The Microsoft Edge program doesn't support registering with a work or school acc
 
 
 <!-- ====================================================================== -->
-## Enroll in the Microsoft Edge program on Partner Center<!-- todo: elim heading -->
-
-<!-- todo: move first half of steps into h2 "Fill in the registration form" -->
+## Step 2: Fill in the Edge Developer Account Registration form
 
 To enroll in the Microsoft Edge program on Partner Center:
 
@@ -104,33 +101,21 @@ To enroll in the Microsoft Edge program on Partner Center:
 
    ![Sign in](./create-dev-account-images/sign-in.png)
 
-   <!-- todo: missing step? 1. Go to [Account settings | Programs](https://partner.microsoft.com/en-us/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link. -->
+1. Go to [Account settings | Programs](https://partner.microsoft.com/en-us/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link.
 
-   The **Microsoft Edge Developer Account Registration** form is displayed.
-
-1. Fill in the registration form; see [Filling in the registration form](#filling-in-the-registration-form), below.
-
-   <!-- todo: move remaining steps into h2 "Finishing the form" -->
-
-1. Read and accept the terms and conditions of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
-
-1. In the **Microsoft Edge Developer Account Registration** form, click the **Finish** button.
-
-1. If Partner Center displays errors, see [Resolving Partner Center errors](#resolving-partner-center-errors), below.
-
-
-<!-- ====================================================================== -->
-## Filling in the registration form
-
-Fill in the sections of the **Microsoft Edge Developer Account Registration** form, as follows.
+   The **Microsoft Edge Developer Account Registration** form opens in a new tab, showing the **Account country/region** dropdown list and a **Finish** button.
 
 
 <!-- ------------------------------ -->
 #### Account country/region
+<!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo -->
+<!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo?accountProgram=MSEdgeAddons -->
 
 In the **Account country/region** dropdown list, select either where you live, or where your business is located.  **Important:** After enrollment, the value of this field is read-only.
 
 ![Country region](./create-dev-account-images/country-region.png)
+
+Additional sections are added below the dropdown list, and the **Finish** button is pushed down out of view.
 
 
 <!-- ------------------------------ -->
@@ -191,19 +176,24 @@ For a company account, you must provide the contact information of your company 
 The contact information includes name, email address, and phone number.  As a part of the account verification process, Microsoft contacts the specified company approver, to verify that you are authorized to create and manage this account on behalf of your organization.
 
 
-After filling in the **Microsoft Edge Developer Account Registration** form, accept the Agreement and then submit the form, per [Enroll in the Microsoft Edge program on Partner Center](#enroll-in-the-microsoft-edge-program-on-partner-center), above.
+<!-- ------------------------------ -->
+#### Finishing the form
+
+1. Click the **App Developer Agreement** link, and then read the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
+
+   ![Developer agreement section and Finish button](./create-dev-account-images/agreement-finish.png)
+
+1. In the **Microsoft Edge Developer Account Registration** form, select the **I accept the terms and conditions** checkbox.
+
+1. Click the **Finish** button.
 
 
 <!-- ====================================================================== -->
-## Support and troubleshooting
-
-
-<!-- ------------------------------ -->
-#### Resolving Partner Center errors
+## Step 3: Resolve any Partner Center errors
 
 After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined":
 
-![Error message](./create-dev-account-images/error-message.png)
+![Error message](./create-dev-account-images/error-message.png)<!-- todo: redo -->
 
 For such errors, try the following fixes:
 
@@ -214,16 +204,8 @@ For such errors, try the following fixes:
 * Try another browser, such as Microsoft Edge, Google Chrome, or Firefox.
 
 
-<!-- ------------------------------ -->
-#### If the extension is flagged as potentially malware
-
-If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
-
-Make sure that your extension's code and functionality complies with all requirements and guidelines.  For security reasons, Microsoft doesn't disclose exact triggers.
-
-
-<!-- ------------------------------ -->
-#### Checking enrollment verification status
+<!-- ====================================================================== -->
+## Step 4: Check enrollment verification status
 
 To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) and then click the **Open Account Settings** link:
 
@@ -247,28 +229,25 @@ If your application was rejected:
 
 Switching from a company to an individual account is not supported.
 
-Add users to the Edge program only after verification is complete.
 
+<!-- ====================================================================== -->
+## Step 5: Add users to the account
 
-<!-- ------------------------------ -->
-#### Transferring ownership of an extension
+After account verification is complete, you can add users to the Edge program.
 
-As an extension developer, you can seamlessly transfer ownership of your Microsoft Edge extension to another party.
-
-See [Transfer ownership of an extension](../update/transfer-ownership.md).
+See [Add users to the Microsoft Edge program](./aad-account.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Add users to the Microsoft Edge program](./aad-account.md)
 * [Register and sign in to Partner Center using a GitHub account](./github.md)
 * [Verify your company account information](./verify-microsoft-edge-program.md)
 * [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
+* [Add users to the Microsoft Edge program](./aad-account.md)
 
 Policies:
-* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
 
 Entra:
