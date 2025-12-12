@@ -25,7 +25,7 @@ To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microso
    * [Publisher display name (Company name)](#publisher-display-name-company-name)
    * [Contact info](#contact-info)
    * [Company approver](#company-approver)
-   * [Finishing the form](#finishing-the-form)
+   * [Developer agreement](#developer-agreement)
 * [Step 3: Resolve any Partner Center errors](#step-3-resolve-any-partner-center-errors)
 * [Step 4: Check enrollment verification status](#step-4-check-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
@@ -180,9 +180,9 @@ The contact information includes name, email address, and phone number.  As a pa
 
 
 <!-- ------------------------------ -->
-#### Finishing the form
+#### Developer agreement
 
-1. Click the **App Developer Agreement** link, and then read the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
+1. In the **Developer agreement** section, click the **App Developer Agreement** link, and then read the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
 
    ![Developer agreement section and Finish button](./create-dev-account-images/agreement-finish.png)
 
