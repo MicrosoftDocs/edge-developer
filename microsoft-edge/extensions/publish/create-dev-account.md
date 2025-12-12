@@ -225,7 +225,7 @@ To check the verification status of your account enrollment, go to [Partner Cent
 
 ![Open account settings](./create-dev-account-images/open-account-settings.png)
 
-Continue to build, test, and prepare your Microsoft Edge extension, while you wait for the account verification process to complete.
+While you wait for the account verification process to complete, continue to develop, test, and prepare your Microsoft Edge extension.  See [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
 
 
 <!-- ------------------------------ -->
@@ -261,6 +261,7 @@ See [Transfer ownership of an extension](../update/transfer-ownership.md).
 * [Add users to the Microsoft Edge program](./aad-account.md)
 * [Register and sign in to Partner Center using a GitHub account](./github.md)
 * [Verify your company account information](./verify-microsoft-edge-program.md)
+* [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
 
 Policies:
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
