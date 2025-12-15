@@ -36,6 +36,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
+* [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [Support](#support)
 * [See also](#see-also)
@@ -425,6 +426,20 @@ To add notes for certification:
    The submission then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
    After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
+
+
+<!-- ========================================================================== -->
+## Resolve any Partner Center errors
+
+After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined".
+
+For such errors, try the following fixes:
+
+* Clear the browser cache and cookies.
+
+* Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
+
+* Try another browser, such as Microsoft Edge, Google Chrome, or Firefox.
 
 
 <!-- ========================================================================== -->

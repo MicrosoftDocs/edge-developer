@@ -26,7 +26,6 @@ To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microso
    * [Contact info](#contact-info)
    * [Company approver](#company-approver)
    * [Developer agreement](#developer-agreement)
-   * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [Step 4: Check enrollment verification status](#step-4-check-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
 * [Step 5: Add users to the account](#step-5-add-users-to-the-account)
@@ -195,20 +194,6 @@ The contact information includes name, email address, and phone number.  As a pa
 1. Click the **Finish** button.
 
 You've now registered as a developer.  Microsoft verifies your account enrollment, and then sends you a confirmation email.
-
-
-<!-- ------------------------------ -->
-#### Resolve any Partner Center errors
-
-After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined".
-
-For such errors, try the following fixes:
-
-* Clear the browser cache and cookies.
-
-* Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
-
-* Try another browser, such as Microsoft Edge, Google Chrome, or Firefox.
 
 
 <!-- ====================================================================== -->
