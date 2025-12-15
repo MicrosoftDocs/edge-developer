@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 113)
+title: What's new in DevTools (Microsoft Edge 113)
 description: "Debug JavaScript error stack traces with the experimental Crash analyzer tool. The Memory tool can now unminify object names in heap snapshots. The Issues tool has better support for keyboard navigation. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/25/2023
 ---
-# What's New in DevTools (Microsoft Edge 113)
+# What's new in DevTools (Microsoft Edge 113)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -145,7 +145,7 @@ In the **Containment** and **Statistics** views, the **Node Types** filter is no
 ![The Node Types filter is not displayed in the Containment view of a heap snapshot](./devtools-113-images/memory-tool-node-filter-containment.png)
 
 See also:
-* [Filter heap snapshots summary by node type](../../2022/03/devtools-100.md#filter-heap-snapshots-summary-by-node-type)  in _What's New in DevTools (Microsoft Edge 100)_
+* [Filter heap snapshots summary by node type](../../2022/03/devtools-100.md#filter-heap-snapshots-summary-by-node-type)  in _What's new in DevTools (Microsoft Edge 100)_
 * [Take a snapshot](../../../memory-problems/heap-snapshots.md#take-a-snapshot) in _Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)_.
 
 

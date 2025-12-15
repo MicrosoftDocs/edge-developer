@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 132)
+title: What's new in DevTools (Microsoft Edge 132)
 description: "CSS selector costs include links in Insights sidebar. Right-click a tab to move it left or right in Quick View. Heap snapshot objects categorized by constructor names and source locations in Memory tool. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 1/16/2025
 ---
-# What's New in DevTools (Microsoft Edge 132)
+# What's new in DevTools (Microsoft Edge 132)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -25,7 +25,7 @@ Some selectors might have more than one link when they are defined in multiple l
 ![CSS selector costs links](./devtools-132-images/selector-stats-links.png)
 
 See also:
-* [View CSS selector costs in the Performance tool sidebar](../../2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's New in DevTools (Microsoft Edge 131)_.
+* [View CSS selector costs in the Performance tool sidebar](../../2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's new in DevTools (Microsoft Edge 131)_.
 
 
 <!-- ====================================================================== -->

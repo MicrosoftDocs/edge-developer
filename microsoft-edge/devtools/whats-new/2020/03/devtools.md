@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 83)
+title: What's new in DevTools (Microsoft Edge 83)
 description: Emulate color vision deficiencies, Dock To Left in the Command Menu, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 83)
+# What's new in DevTools (Microsoft Edge 83)
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post](https://blogs.windows.com/msedgedev/2020/03/20) for more info.
 
@@ -298,7 +298,7 @@ To check that your maskable icon looks good on Android Oreo devices, in the **Ma
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->
 
-This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 weren't covered in [What's New in DevTools (Microsoft Edge 81)](../01/devtools.md).
+This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 weren't covered in [What's new in DevTools (Microsoft Edge 81)](../01/devtools.md).
 
 See also:
 * [View, edit, and delete cookies](../../../storage/cookies.md) - Articles about the **Application** tool.

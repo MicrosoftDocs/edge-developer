@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 108)
+title: What's new in DevTools (Microsoft Edge 108)
 description: "Microsoft Edge WebDriver is now available for macOS running on Apple M1. Improved DevTools navigation via Command Palette. Better support for high contrast mode in DevTools. In Focus Mode, disabling JavaScript now produces a warning icon for the Sources tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 12/01/2022
 ---
-# What's New in DevTools (Microsoft Edge 108)
+# What's new in DevTools (Microsoft Edge 108)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 106)
+title: What's new in DevTools (Microsoft Edge 106)
 description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 09/29/2022
 ---
-# What's New in DevTools (Microsoft Edge 106)
+# What's new in DevTools (Microsoft Edge 106)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -104,7 +104,7 @@ To clear the IndexedDB cache and force DevTools to re-load sourcemaps, run the *
 For history, see [Issue 89](https://github.com/MicrosoftEdge/DevTools/issues/89).
 
 See also:
-* [Source maps are now cached with IndexedDB](../../2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb) in _What's New in DevTools (Microsoft Edge 101)_
+* [Source maps are now cached with IndexedDB](../../2022/04/devtools-101.md#source-maps-are-now-cached-with-indexeddb) in _What's new in DevTools (Microsoft Edge 101)_
 
 
 <!-- ====================================================================== -->
@@ -143,7 +143,7 @@ Screen readers now announce which **Dock location** button or which **Activity B
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's New in DevTools (Microsoft Edge 105)_.
+* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's new in DevTools (Microsoft Edge 105)_.
 
 
 #### Computed styles are easier to see in high contrast mode
