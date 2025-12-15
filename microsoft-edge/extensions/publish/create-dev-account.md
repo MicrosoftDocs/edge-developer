@@ -26,7 +26,7 @@ To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microso
    * [Contact info](#contact-info)
    * [Company approver](#company-approver)
    * [Developer agreement](#developer-agreement)
-* [Step 3: Resolve any Partner Center errors](#step-3-resolve-any-partner-center-errors)
+   * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [Step 4: Check enrollment verification status](#step-4-check-enrollment-verification-status)
    * [If account verification is delayed](#if-account-verification-is-delayed)
 * [Step 5: Add users to the account](#step-5-add-users-to-the-account)
@@ -194,7 +194,7 @@ The contact information includes name, email address, and phone number.  As a pa
 
 1. Click the **Finish** button.
 
-You've now registered as a developer.
+You've now registered as a developer.  Microsoft verifies your account enrollment, and then sends you a confirmation email.
 
 
 <!-- ------------------------------ -->
