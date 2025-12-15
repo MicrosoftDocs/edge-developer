@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 128)
+title: What's new in DevTools (Microsoft Edge 128)
 description: "Updated labels for selector stats. Fixed whitespace in Activity Bar right-click menus. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/22/2024
 ---
-# What's New in DevTools (Microsoft Edge 128)
+# What's new in DevTools (Microsoft Edge 128)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

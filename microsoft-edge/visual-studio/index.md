@@ -175,7 +175,7 @@ See also:
 * [Network conditions tool](../devtools/network-conditions/network-conditions-tool.md)
 * [Network request blocking tool](../devtools/network-request-blocking/network-request-blocking-tool.md)
 * [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/edge-developer-tools-for-visual-studio-preview/), at Visual Studio DevBlogs.<!-- todo: update from preview to release (this link is Sep 16, 2024) -->
-* [Microsoft Edge DevTools extension for Visual Studio](../devtools/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
+* [Microsoft Edge DevTools extension for Visual Studio](../devtools/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's new in DevTools (Microsoft Edge 99)_.
 
 
 <!-- ====================================================================== -->
@@ -190,7 +190,7 @@ The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about h
 ## See also
 <!-- all links in article: -->
 
-* [Microsoft Edge DevTools extension for Visual Studio](../devtools/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
+* [Microsoft Edge DevTools extension for Visual Studio](../devtools/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's new in DevTools (Microsoft Edge 99)_.
 * [Find and fix problems using the Issues tool](../devtools/issues/index.md)
 * [Network conditions tool](../devtools/network-conditions/network-conditions-tool.md)
 * [Network request blocking tool](../devtools/network-request-blocking/network-request-blocking-tool.md)
