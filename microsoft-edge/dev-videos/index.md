@@ -42,17 +42,17 @@ Covers:
 * 
 
 See also:
-* [What's New in DevTools (Microsoft Edge 125)](../devtools/whats-new/2024/05/devtools-125.md)
-* [What's New in DevTools (Microsoft Edge 124)](../devtools/whats-new/2024/04/devtools-124.md)
-* [What's New in DevTools (Microsoft Edge 123)](../devtools/whats-new/2024/03/devtools-123.md)
-* [What's New in DevTools (Microsoft Edge 122)](../devtools/whats-new/2024/02/devtools-122.md)
-* [What's New in DevTools (Microsoft Edge 121)](../devtools/whats-new/2024/01/devtools-121.md)
-* [What's New in DevTools (Microsoft Edge 120)](../devtools/whats-new/2023/12/devtools-120.md)
-* [What's New in DevTools (Microsoft Edge 119)](../devtools/whats-new/2023/11/devtools-119.md)
-* [What's New in DevTools (Microsoft Edge 118)](../devtools/whats-new/2023/10/devtools-118.md)
-* [What's New in DevTools (Microsoft Edge 117)](../devtools/whats-new/2023/09/devtools-117.md)
-* [What's New in DevTools (Microsoft Edge 116)](../devtools/whats-new/2023/08/devtools-116.md)
-* [What's New in DevTools (Microsoft Edge 115)](../devtools/whats-new/2023/07/devtools-115.md)
+* [What's new in DevTools (Microsoft Edge 125)](../devtools/whats-new/2024/05/devtools-125.md)
+* [What's new in DevTools (Microsoft Edge 124)](../devtools/whats-new/2024/04/devtools-124.md)
+* [What's new in DevTools (Microsoft Edge 123)](../devtools/whats-new/2024/03/devtools-123.md)
+* [What's new in DevTools (Microsoft Edge 122)](../devtools/whats-new/2024/02/devtools-122.md)
+* [What's new in DevTools (Microsoft Edge 121)](../devtools/whats-new/2024/01/devtools-121.md)
+* [What's new in DevTools (Microsoft Edge 120)](../devtools/whats-new/2023/12/devtools-120.md)
+* [What's new in DevTools (Microsoft Edge 119)](../devtools/whats-new/2023/11/devtools-119.md)
+* [What's new in DevTools (Microsoft Edge 118)](../devtools/whats-new/2023/10/devtools-118.md)
+* [What's new in DevTools (Microsoft Edge 117)](../devtools/whats-new/2023/09/devtools-117.md)
+* [What's new in DevTools (Microsoft Edge 116)](../devtools/whats-new/2023/08/devtools-116.md)
+* [What's new in DevTools (Microsoft Edge 115)](../devtools/whats-new/2023/07/devtools-115.md)
 -->
 
 
@@ -99,8 +99,8 @@ Covers:
 * `console.table()`.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 114)](../devtools/whats-new/2023/06/devtools-114.md)<!-- has Video section -->
-* [What's New in DevTools (Microsoft Edge 113)](../devtools/whats-new/2023/05/devtools-113.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 114)](../devtools/whats-new/2023/06/devtools-114.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 113)](../devtools/whats-new/2023/05/devtools-113.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -119,7 +119,7 @@ Covers:
 * How to change themes in DevTools.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 112)](../devtools/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 112)](../devtools/whats-new/2023/04/devtools-112.md)<!-- has Video section -->
 * [Analyze CSS selector performance during Recalculate Style events](../devtools/performance/selector-stats.md) - CSS selector stats.
 * [View a JSON file or server response with formatting](../web-platform/json-viewer.md)
 
@@ -142,7 +142,7 @@ Covers:
 * Customize the **Network** tool's columns.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 111)](../devtools/whats-new/2023/03/devtools-111.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 111)](../devtools/whats-new/2023/03/devtools-111.md)<!-- has Video section -->
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../devtools/javascript/publish-source-maps-to-azure.md)
 
 
@@ -161,7 +161,7 @@ Covers:
 * Simulate `prefers-color-scheme`.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 110)](../devtools/whats-new/2023/02/devtools-110.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 110)](../devtools/whats-new/2023/02/devtools-110.md)<!-- has Video section -->
 * [Overview of DevTools](../devtools/overview.md)
 
 
@@ -173,7 +173,7 @@ January 17, 2023
 [![Thumbnail image for video "What's new in DevTools 109"](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
 
 Covers:
-* Enhanced traces to share memory and performance recordings.
+* Share memory and performance traces with more data.
 * Selector Stats in the **Performance** tool.
 * Track garbage-collected (GC'd) objects in the **Memory** tool.
 * Heap Snapshot visualizer extension.
@@ -182,8 +182,9 @@ Covers:
 * Inspecting elements.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 109)](../devtools/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
-* [Share enhanced performance and memory traces](../devtools/experimental-features/share-traces.md)
+* [What's new in DevTools (Microsoft Edge 109)](../devtools/whats-new/2023/01/devtools-109.md)<!-- has Video section -->
+* [Share a memory trace with more data](../devtools/experimental-features/share-memory-traces.md)
+* [Share a performance trace with more data](../devtools/performance/share-performance-traces.md)
 * [Analyze CSS selector performance during Recalculate Style events](../devtools/performance/selector-stats.md) - selector stats.
 * [Investigate memory allocation, with reduced garbage ("Include objects" checkboxes)](../devtools/rendering-tools/js-runtime.md#investigate-memory-allocation-with-reduced-garbage-include-objects-checkboxes) in _Speed up JavaScript runtime ("Allocation sampling" profiling type)_.
 * [Trash talk: the Orinoco garbage collector](https://v8.dev/blog/trash-talk)
@@ -207,7 +208,7 @@ Covers:
 * Use Detached Elements to find DOM leaks.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 108)](../devtools/whats-new/2022/12/devtools-108.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 108)](../devtools/whats-new/2022/12/devtools-108.md)<!-- has Video section -->
 * [Create a DevTools extension, adding a custom tool tab and panel](../extensions/developer-guide/devtools-extension.md)
 * [The heap snapshot file format](../devtools/memory-problems/heap-snapshot-schema.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
@@ -232,7 +233,7 @@ Covers:
 * Customize shortcuts.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 107)](../devtools/whats-new/2022/10/devtools-107.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 107)](../devtools/whats-new/2022/10/devtools-107.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -278,7 +279,7 @@ Covers:
 * Using Snippets.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 106)](../devtools/whats-new/2022/09/devtools-106.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 106)](../devtools/whats-new/2022/09/devtools-106.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
@@ -728,7 +729,7 @@ Covers:
 * The Visual Studio Code debugger integrates with the DevTools Extension for VS Code.
 
 See also:
-* [What's New in DevTools (Microsoft Edge 93)](../devtools/whats-new/2021/07/devtools.md)<!-- has Video section -->
+* [What's new in DevTools (Microsoft Edge 93)](../devtools/whats-new/2021/07/devtools.md)<!-- has Video section -->
 
 
 <!-- ====================================================================== -->

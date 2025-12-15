@@ -74,9 +74,6 @@ landingContent:
           - text: Release Notes for Microsoft Edge extensions
             url: ../whats-new/released-features.md
 
-          - text: Roadmap for Microsoft Edge extensions
-            url: ../whats-new/roadmap.md
-
           - text: Contact the Microsoft Edge extensions team
             url: ../contact.md
 

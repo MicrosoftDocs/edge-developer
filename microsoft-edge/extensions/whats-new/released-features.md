@@ -201,6 +201,8 @@ You can integrate REST API endpoints directly into your continuous integration/c
 See also:
 * [Deprecation of the Update REST API v1](../whats-new/roadmap.md#deprecation-of-the-update-rest-api-v1) in _Roadmap for Microsoft Edge extensions_.
 
+Update September 2024: v1.1 of this REST API provides increased security.
+
 
 <!-- ------------------------------ -->
 #### Addition of breadcrumbs to Microsoft Partner Center

@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 134)
+title: What's new in DevTools (Microsoft Edge 134)
 description: "Forced reflow in the Performance Insights sidebar. Heap snapshot statistics account for every byte. Simplified DevTools Themes menu. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/06/2025
 ---
-# What's New in DevTools (Microsoft Edge 134)
+# What's new in DevTools (Microsoft Edge 134)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

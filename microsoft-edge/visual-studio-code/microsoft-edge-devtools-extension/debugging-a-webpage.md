@@ -197,7 +197,7 @@ Which webpage opens is in DevTools is set by `launch.json` if that file exists i
 * [The launch.json file for the DevTools extension](./launch-json.md)
 * [Debug Microsoft Edge in Visual Studio Code](../debugger-for-edge.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)
-* [The Visual Studio Code debugger now integrates with the DevTools extension](../../devtools/whats-new/2021/07/devtools.md#the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension) in _What's New in DevTools (Microsoft Edge 93)_.
+* [The Visual Studio Code debugger now integrates with the DevTools extension](../../devtools/whats-new/2021/07/devtools.md#the-visual-studio-code-debugger-now-integrates-with-the-devtools-extension) in _What's new in DevTools (Microsoft Edge 93)_.
 <!--todo: incorporate pov from what's new; update present article, then remove this link.  Explain: The tools refresh automatically when you switch between different debugging targets.-->
 
 **External pages:**

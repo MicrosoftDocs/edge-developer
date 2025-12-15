@@ -120,264 +120,269 @@
         - name: What's New
           items:
             - name: What's New in Microsoft Edge DevTools
-              href: ./devtools/whats-new/whats-new.md
+              href: ./devtools/whats-new/whats-new.md  # todo: ought to be index.md
               displayName: release notes, announcements
 # latest 10 What's New
+            - name: Microsoft Edge 143
+              href: ./devtools/whats-new/143.md
+              displayName: What's new in DevTools (Microsoft Edge 143)  # page title
+
             - name: Microsoft Edge 142
               href: ./devtools/whats-new/2025/10/devtools-142.md
-              displayName: What's New in DevTools (Microsoft Edge 142)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 142)  # page title
 
             - name: Microsoft Edge 141
               href: ./devtools/whats-new/2025/10/devtools-141.md
-              displayName: What's New in DevTools (Microsoft Edge 141)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 141)  # page title
 
             - name: Microsoft Edge 140
               href: ./devtools/whats-new/2025/09/devtools-140.md
-              displayName: What's New in DevTools (Microsoft Edge 140)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 140)  # page title
 
             - name: Microsoft Edge 139
               href: ./devtools/whats-new/2025/08/devtools-139.md
-              displayName: What's New in DevTools (Microsoft Edge 139)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 139)  # page title
 
             - name: Microsoft Edge 138
               href: ./devtools/whats-new/2025/06/devtools-138.md
-              displayName: What's New in DevTools (Microsoft Edge 138)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 138)  # page title
 
             - name: Microsoft Edge 137
               href: ./devtools/whats-new/2025/06/devtools-137.md
-              displayName: What's New in DevTools (Microsoft Edge 137)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 137)  # page title
 
             - name: Microsoft Edge 136
               href: ./devtools/whats-new/2025/05/devtools-136.md
-              displayName: What's New in DevTools (Microsoft Edge 136)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 136)  # page title
 
             - name: Microsoft Edge 135
               href: ./devtools/whats-new/2025/04/devtools-135.md
-              displayName: What's New in DevTools (Microsoft Edge 135)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 135)  # page title
 
             - name: Microsoft Edge 134
               href: ./devtools/whats-new/2025/03/devtools-134.md
-              displayName: What's New in DevTools (Microsoft Edge 134)  # page title
-
-            - name: Microsoft Edge 133
-              href: ./devtools/whats-new/2025/02/devtools-133.md
-              displayName: What's New in DevTools (Microsoft Edge 133)  # page title
+              displayName: What's new in DevTools (Microsoft Edge 134)  # page title
 
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+
+                - name: Microsoft Edge 133
+                  href: ./devtools/whats-new/2025/02/devtools-133.md
+                  displayName: What's new in DevTools (Microsoft Edge 133)  # page title
+
                 - name: Microsoft Edge 132
                   href: ./devtools/whats-new/2025/01/devtools-132.md
-                  displayName: What's New in DevTools (Microsoft Edge 132)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 132)  # page title
 
                 - name: Microsoft Edge 131
                   href: ./devtools/whats-new/2024/11/devtools-131.md
-                  displayName: What's New in DevTools (Microsoft Edge 131)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 131)  # page title
 
                 - name: Microsoft Edge 130
                   href: ./devtools/whats-new/2024/10/devtools-130.md
-                  displayName: What's New in DevTools (Microsoft Edge 130)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 130)  # page title
 
                 - name: Microsoft Edge 129
                   href: ./devtools/whats-new/2024/09/devtools-129.md
-                  displayName: What's New in DevTools (Microsoft Edge 129)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 129)  # page title
 
                 - name: Microsoft Edge 128
                   href: ./devtools/whats-new/2024/08/devtools-128.md
-                  displayName: What's New in DevTools (Microsoft Edge 128)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 128)  # page title
 
                 - name: Microsoft Edge 127
                   href: ./devtools/whats-new/2024/07/devtools-127.md
-                  displayName: What's New in DevTools (Microsoft Edge 127)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 127)  # page title
 
                 - name: Microsoft Edge 126
                   href: ./devtools/whats-new/2024/06/devtools-126.md
-                  displayName: What's New in DevTools (Microsoft Edge 126)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 126)  # page title
 
                 - name: Microsoft Edge 125
                   href: ./devtools/whats-new/2024/05/devtools-125.md
-                  displayName: What's New in DevTools (Microsoft Edge 125)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 125)  # page title
 
                 - name: Microsoft Edge 124
                   href: ./devtools/whats-new/2024/04/devtools-124.md
-                  displayName: What's New in DevTools (Microsoft Edge 124)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 124)  # page title
 
                 - name: Microsoft Edge 123
                   href: ./devtools/whats-new/2024/03/devtools-123.md
-                  displayName: What's New in DevTools (Microsoft Edge 123)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 123)  # page title
 
                 - name: Microsoft Edge 122
                   href: ./devtools/whats-new/2024/02/devtools-122.md
-                  displayName: What's New in DevTools (Microsoft Edge 122)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 122)  # page title
 
                 - name: Microsoft Edge 121
                   href: ./devtools/whats-new/2024/01/devtools-121.md
-                  displayName: What's New in DevTools (Microsoft Edge 121)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 121)  # page title
 
                 - name: Microsoft Edge 120
                   href: ./devtools/whats-new/2023/12/devtools-120.md
-                  displayName: What's New in DevTools (Microsoft Edge 120)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 120)  # page title
 
                 - name: Microsoft Edge 119
                   href: ./devtools/whats-new/2023/11/devtools-119.md
-                  displayName: What's New in DevTools (Microsoft Edge 119)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 119)  # page title
 
                 - name: Microsoft Edge 118
                   href: ./devtools/whats-new/2023/10/devtools-118.md
-                  displayName: What's New in DevTools (Microsoft Edge 118)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 118)  # page title
 
                 - name: Microsoft Edge 117
                   href: ./devtools/whats-new/2023/09/devtools-117.md
-                  displayName: What's New in DevTools (Microsoft Edge 117)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 117)  # page title
 
                 - name: Microsoft Edge 116
                   href: ./devtools/whats-new/2023/08/devtools-116.md
-                  displayName: What's New in DevTools (Microsoft Edge 116)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 116)  # page title
 
                 - name: Microsoft Edge 115
                   href: ./devtools/whats-new/2023/07/devtools-115.md
-                  displayName: What's New in DevTools (Microsoft Edge 115)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 115)  # page title
 
                 - name: Microsoft Edge 114
                   href: ./devtools/whats-new/2023/06/devtools-114.md
-                  displayName: What's New in DevTools (Microsoft Edge 114)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 114)  # page title
 
                 - name: Microsoft Edge 113
                   href: ./devtools/whats-new/2023/05/devtools-113.md
-                  displayName: What's New in DevTools (Microsoft Edge 113)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 113)  # page title
 
                 - name: Microsoft Edge 112
                   href: ./devtools/whats-new/2023/04/devtools-112.md
-                  displayName: What's New in DevTools (Microsoft Edge 112)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 112)  # page title
 
                 - name: Microsoft Edge 111
                   href: ./devtools/whats-new/2023/03/devtools-111.md
-                  displayName: What's New in DevTools (Microsoft Edge 111)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 111)  # page title
 
                 - name: Microsoft Edge 110
                   href: ./devtools/whats-new/2023/02/devtools-110.md
-                  displayName: What's New in DevTools (Microsoft Edge 110)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 110)  # page title
 
                 - name: Microsoft Edge 109
                   href: ./devtools/whats-new/2023/01/devtools-109.md
-                  displayName: What's New in DevTools (Microsoft Edge 109)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 109)  # page title
 
                 - name: Microsoft Edge 108
                   href: ./devtools/whats-new/2022/12/devtools-108.md
-                  displayName: What's New in DevTools (Microsoft Edge 108)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 108)  # page title
 
                 - name: Microsoft Edge 107
                   href: ./devtools/whats-new/2022/10/devtools-107.md
-                  displayName: What's New in DevTools (Microsoft Edge 107)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 107)  # page title
 
                 - name: Microsoft Edge 106
                   href: ./devtools/whats-new/2022/09/devtools-106.md
-                  displayName: What's New in DevTools (Microsoft Edge 106)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 106)  # page title
 
                 - name: Microsoft Edge 105
                   href: ./devtools/whats-new/2022/09/devtools-105.md
-                  displayName: What's New in DevTools (Microsoft Edge 105)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 105)  # page title
 
                 - name: Microsoft Edge 104
                   href: ./devtools/whats-new/2022/08/devtools-104.md
-                  displayName: What's New in DevTools (Microsoft Edge 104)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 104)  # page title
 
                 - name: Microsoft Edge 103
                   href: ./devtools/whats-new/2022/06/devtools-103.md
-                  displayName: What's New in DevTools (Microsoft Edge 103)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 103)  # page title
 
                 - name: Microsoft Edge 102
                   href: ./devtools/whats-new/2022/05/devtools-102.md
-                  displayName: What's New in DevTools (Microsoft Edge 102)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 102)  # page title
 
                 - name: Microsoft Edge 101
                   href: ./devtools/whats-new/2022/04/devtools-101.md
-                  displayName: What's New in DevTools (Microsoft Edge 101)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 101)  # page title
 
                 - name: Microsoft Edge 100
                   href: ./devtools/whats-new/2022/03/devtools-100.md
-                  displayName: What's New in DevTools (Microsoft Edge 100)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 100)  # page title
 
                 - name: Microsoft Edge 99
                   href: ./devtools/whats-new/2022/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 99)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 99)  # page title
 
                 - name: Microsoft Edge 98
                   href: ./devtools/whats-new/2022/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 98)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 98)  # page title
 
                 - name: Microsoft Edge 97
                   href: ./devtools/whats-new/2022/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 97)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 97)  # page title
 
                 - name: Microsoft Edge 96
                   href: ./devtools/whats-new/2021/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 96)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 96)  # page title
 
                 - name: Microsoft Edge 95
                   href: ./devtools/whats-new/2021/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 95)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 95)  # page title
 
                 - name: Microsoft Edge 94
                   href: ./devtools/whats-new/2021/09/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 94)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 94)  # page title
 
                 - name: Microsoft Edge 93
                   href: ./devtools/whats-new/2021/07/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 93)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 93)  # page title
 
                 - name: Microsoft Edge 92
                   href: ./devtools/whats-new/2021/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 92)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 92)  # page title
 
                 - name: Microsoft Edge 91
                   href: ./devtools/whats-new/2021/04/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 91)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 91)  # page title
 
                 - name: Microsoft Edge 90
                   href: ./devtools/whats-new/2021/02/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 90)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 90)  # page title
 
                 - name: Microsoft Edge 89
                   href: ./devtools/whats-new/2021/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 89)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 89)  # page title
 
                 - name: Microsoft Edge 88
                   href: ./devtools/whats-new/2020/11/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 88)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 88)  # page title
 
                 - name: Microsoft Edge 87
                   href: ./devtools/whats-new/2020/10/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 87)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 87)  # page title
 
                 - name: Microsoft Edge 86
                   href: ./devtools/whats-new/2020/08/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 86)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 86)  # page title
 
                 - name: Microsoft Edge 85
                   href: ./devtools/whats-new/2020/06/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 85)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 85)  # page title
 
                 - name: Microsoft Edge 84
                   href: ./devtools/whats-new/2020/05/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 84)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 84)  # page title
 
                 - name: Microsoft Edge 83
                   href: ./devtools/whats-new/2020/03/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 83)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 83)  # page title
 
 #               - name: Microsoft Edge 82
 #                 href: ./devtools/whats-new/2020/02/devtools.md  # no such file
-#                 displayName: What's New in DevTools (Microsoft Edge 82)  # page title
+#                 displayName: What's new in DevTools (Microsoft Edge 82)  # page title
 
                 - name: Microsoft Edge 81
                   href: ./devtools/whats-new/2020/01/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 81)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 81)  # page title
 
                 - name: Microsoft Edge 80
                   href: ./devtools/whats-new/2019/12/devtools.md
-                  displayName: What's New in DevTools (Microsoft Edge 80)  # page title
+                  displayName: What's new in DevTools (Microsoft Edge 80)  # page title
 # -----------------------------------------------------------------------------
         - name: Experimental features
           items:
@@ -385,16 +390,16 @@
               href: ./devtools/experimental-features/index.md
               displayName: Experimental features, settings
 
-            - name: Share enhanced performance and memory traces
-              href: ./devtools/experimental-features/share-traces.md
-              displayName: Experimental features, Enhanced traces, Memory tool, Performance tool
+            - name: Share a memory trace with more data
+              href: ./devtools/experimental-features/share-memory-traces.md
+              displayName: Experimental features, Memory tool
 # -----------------------------------------------------------------------------
         - name: Samples
           items:
             - name: Sample code for DevTools
               href: ./devtools/samples/index.md
               displayName: sample code, demo
-# -----------------------------------------------------------------------------
+# TOOLS =======================================================================
         - name: Tools
           items:
             - name: About the list of tools
@@ -605,6 +610,10 @@
                 - name: Performance features reference  # = Performance > Features reference
                   href: ./devtools/performance/reference.md
                   displayName: Performance tool, Rendering tool
+
+                - name: Share a performance trace with more data
+                  href: ./devtools/performance/share-performance-traces.md
+                  displayName: Performance tool
 
                 - name: Performance recording event reference  # = Performance > Timeline event reference
                   href: ./devtools/performance/performance-reference.md
@@ -1178,7 +1187,6 @@
 
                 - name: Release Notes for Microsoft Edge extensions 114
                   href: ./extensions/release-notes/114.md
-
 # -----------------------------------------------------------------------------
         - name: Get started
           items:

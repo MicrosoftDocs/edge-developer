@@ -174,7 +174,7 @@ Status:
 <!-- ====================================================================== -->
 ## Show option to expose internals in heap snapshots
 <!-- checkbox has no "(?)" link pointing to this anchor wording
-[Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's New in DevTools (Microsoft Edge 128)_ links to here -->
+[Heap snapshot improvements](../whats-new/2024/08/devtools-128.md#heap-snapshot-improvements) in _What's new in DevTools (Microsoft Edge 128)_ links to here -->
 
 _new as of Microsoft Edge 105_
 
@@ -202,7 +202,7 @@ APCA is a new way to compute contrast.  It is based on modern research on color 
 *  Spatial properties of context that include ambient light, surroundings, and intended purpose.
 
 See also:
-* [New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) in _What's New in DevTools (Microsoft Edge 89)_.
+* [New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) in _What's new in DevTools (Microsoft Edge 89)_.
 * [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
@@ -231,7 +231,7 @@ The Accessibility Tree view in the **Elements** tool:
 
 See also:
 * [Test accessibility using the Accessibility tab](../accessibility/accessibility-tab.md)
-* [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's New in DevTools (Microsoft Edge 90)_.
+* [Full accessibility tree view in the Elements tool](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) in _What's new in DevTools (Microsoft Edge 90)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
@@ -359,7 +359,7 @@ See also:
 * [Performance recording event reference](../performance/performance-reference.md)
 * [postMessage Trace Events demo (rendered)](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/)
 * [postMessage Trace Events demo (source code)](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline)
-* [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's New in DevTools (Microsoft Edge 124)_.
+* [postMessage events and handlers are distinguished from other events](../whats-new/2024/04/devtools-124.md#postmessage-events-and-handlers-are-distinguished-from-other-events) in _What's new in DevTools (Microsoft Edge 124)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
@@ -419,7 +419,7 @@ pointing to this anchor wording -->
 Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
 
 See also:
-* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's New in DevTools (Microsoft Edge 91)_.
+* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's new in DevTools (Microsoft Edge 91)_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
@@ -545,44 +545,6 @@ Status:
 
 
 <!-- ====================================================================== -->
-## Performance panel: Enable collecting enhanced traces
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 128_
-
-This experiment makes the **Performance** tool capture newly added traces, to support enhanced traces v2.  This feature is being implemented in the upstream Chromium project.  This experiment doesn't affect the capabilities of Microsoft Edge to capture enhanced traces and doesn't impact DevTools user's experience.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 144.
-* This checkbox is present in Microsoft Edge Stable 142.
-
-See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
-* [Performance features reference](../performance/reference.md)
-* [Performance recording event reference](../performance/performance-reference.md)
-
-
-<!-- ====================================================================== -->
-## Performance panel: Enable collecting source text for compiled script
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 128_
-
-In the **Performance** tool, when exporting the trace file, stores the source code of compiled scripts in the trace file.
-
-This experiment makes the **Performance** tool record script source text in traces.  This feature is being implemented in the upstream Chromium project.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 144.
-* This checkbox is present in Microsoft Edge Stable 142.
-
-See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
-* [Performance features reference](../performance/reference.md)
-* [Performance recording event reference](../performance/performance-reference.md)
-
-
-<!-- ====================================================================== -->
 ## Performance panel: Enable debug mode (trace event details, etc)
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
@@ -595,7 +557,7 @@ Status:
 * This checkbox is present in Microsoft Edge Stable 142.
 
 See also:
-* [Share enhanced performance and memory traces](../experimental-features/share-traces.md)
+* [Share a performance trace with more data](../performance/share-performance-traces.md)
 * [Performance features reference](../performance/reference.md)
 * [Performance recording event reference](../performance/performance-reference.md)
 
