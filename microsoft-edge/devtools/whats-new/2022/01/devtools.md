@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 97)
+title: What's new in DevTools (Microsoft Edge 97)
 description: Detached Elements tool is now on by default.  Improvements and bug fixes for Focus Mode.  3D View tool now supports changing color themes in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/14/2022
 ---
-# What's New in DevTools (Microsoft Edge 97)
+# What's new in DevTools (Microsoft Edge 97)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 86)
+title: What's new in DevTools (Microsoft Edge 86)
 description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Galaxy Fold, CSS grid overlay improvements, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 86)
+# What's new in DevTools (Microsoft Edge 86)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -77,7 +77,7 @@ The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on add
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
 See also:
-* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's New in DevTools (Microsoft Edge 85)_.
+* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's new in DevTools (Microsoft Edge 85)_.
 * [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
 Chromium issue: [#1047356](https://crbug.com/1047356)
@@ -202,7 +202,7 @@ For example, to take a screenshot of the table of contents, right-click the elem
 Chromium issue: [#1100253](https://crbug.com/1100253)
 
 See also:
-* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's New in DevTools (Microsoft Edge 89)_
+* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's new in DevTools (Microsoft Edge 89)_
 
 
 <!-- ------------------------------ -->

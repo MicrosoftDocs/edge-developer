@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 116)
+title: What's new in DevTools (Microsoft Edge 116)
 description: "Activity Bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/17/2023
 ---
-# What's New in DevTools (Microsoft Edge 116)
+# What's new in DevTools (Microsoft Edge 116)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
