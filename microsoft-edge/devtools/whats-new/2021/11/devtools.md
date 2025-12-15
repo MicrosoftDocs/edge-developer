@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 96)
+title: What's new in DevTools (Microsoft Edge 96)
 description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/16/2021
 ---
-# What's New in DevTools (Microsoft Edge 96)
+# What's new in DevTools (Microsoft Edge 96)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -63,7 +63,7 @@ If you want to only allow the Console tool to open in a single place, you can co
 
 See also:
 * [Activity Bar tools vs. Quick View tools](../../../about-tools.md#activity-bar-tools-vs-quick-view-tools) in _About the list of tools_
-* [Move tools between top and bottom panels](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) in _What's New in DevTools (Microsoft Edge 87)_.
+* [Move tools between top and bottom panels](../../2020/10/devtools.md#move-tools-between-top-and-bottom-panels) in _What's new in DevTools (Microsoft Edge 87)_.
 
 
 <!-- ====================================================================== -->

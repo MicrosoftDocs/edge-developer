@@ -94,7 +94,12 @@
     },
     {
       "source_path": "../microsoft-edge/extensions-chromium/whats-new/roadmap.md",
-      "redirect_url": "/microsoft-edge/extensions/whats-new/roadmap",
+      "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions/whats-new/roadmap.md",
+      "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
       "redirect_document_id": false
     },
     {

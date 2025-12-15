@@ -43,7 +43,7 @@ The **Memory inspector** tool provides greater ability than the **Sources** tool
 
 <!-- ====================================================================== -->
 ## Open Memory inspector while debugging
-<!-- some initial content was from [New Memory inspector tool](../whats-new/2021/04/devtools.md#new-memory-inspector-tool) in _What's New in DevTools (Microsoft Edge 91)_. -->
+<!-- some initial content was from [New Memory inspector tool](../whats-new/2021/04/devtools.md#new-memory-inspector-tool) in _What's new in DevTools (Microsoft Edge 91)_. -->
 
 For example:
 
