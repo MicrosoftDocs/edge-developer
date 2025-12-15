@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 109)
+title: What's new in DevTools (Microsoft Edge 109)
 description: "Export DevTools instances with enhanced traces.  Debug Recalculate Styles events in Performance tool with selector stats.  Track GC'd objects when Allocation sampling in Memory tool.  Heap Snapshot Visualizer.  Quick View in Focus Mode has all tools.  Navigate directly to Styles in Elements tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 01/13/2023
 ---
-# What's New in DevTools (Microsoft Edge 109)
+# What's new in DevTools (Microsoft Edge 109)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -21,6 +21,8 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- ====================================================================== -->
 ## Import and export your DevTools instances with the new enhanced traces feature
+
+<!-- keep use of old term "enhanced traces" in this entry -->
 
 <!-- Subtitle: Use enhanced traces to preserve Console messages, DOM snapshots, and the JavaScript running on the page when exporting a heap snapshot or performance trace. -->
 
@@ -63,7 +65,8 @@ To try the enhanced traces feature:
 You can also export from the **Memory** tool with the new `.devtools` file format.  This is a new feature that the DevTools team is actively experimenting with, so please send us your feedback in [[Feedback] Enhanced Traces experiment #122](https://github.com/MicrosoftEdge/DevTools/issues/122).
 
 See also:
-* [Share enhanced performance and memory traces](../../../experimental-features/share-traces.md)
+* [Share a memory trace with more data](../../../experimental-features/share-memory-traces.md)
+* [Share a performance trace with more data](../../../performance/share-performance-traces.md)
 
 
 <!-- ====================================================================== -->

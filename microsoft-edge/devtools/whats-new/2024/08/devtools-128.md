@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 128)
+title: What's new in DevTools (Microsoft Edge 128)
 description: "Updated labels for selector stats. Fixed whitespace in Activity Bar right-click menus. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/22/2024
 ---
-# What's New in DevTools (Microsoft Edge 128)
+# What's new in DevTools (Microsoft Edge 128)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -76,6 +76,7 @@ See also:
 WebSocket activities have been added to the **Network** track in the **Performance** tool, to help correlate JavaScript activity with WebSocket messages.  This can help identify whether latency issues are coming from the client's parsing of a message, or from the server's response.
 
 See also:
+* [View WebSocket messages](../../../performance/reference.md#view-websocket-messages) in _Performance features reference_.
 * [Analyze runtime performance (tutorial)](../../../performance/index.md)
 
 

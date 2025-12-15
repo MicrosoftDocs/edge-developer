@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 92)
+title: What's new in DevTools (Microsoft Edge 92)
 description: The More Tools button, in-context documentation to get started using the DevTools extension, increased support for screen readers in the Console, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
 ---
-# What's New in DevTools (Microsoft Edge 92)
+# What's new in DevTools (Microsoft Edge 92)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -231,7 +231,7 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 <!-- screenshot uses http://cors-errors.glitch.me - glitch.me project hosting ended July 8, 2025; could move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io -->
 
 See also:
-* [Report CORS errors in the Network tool](../../2020/11/devtools.md#report-cors-errors-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 88)_
+* [Report CORS errors in the Network tool](../../2020/11/devtools.md#report-cors-errors-in-the-network-tool) in _What's new in DevTools (Microsoft Edge 88)_
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
 
 For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).

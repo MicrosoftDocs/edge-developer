@@ -198,4 +198,4 @@ The `-n` parameter must be unique.  Job names that are repeated will be rejected
 
 * [Securely debug original code by using Azure Artifacts symbol server source maps](consume-source-maps-from-azure.md)
 * [Map the processed code to your original source code, for debugging](source-maps.md)
-* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+* [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's new in DevTools (Microsoft Edge 115)_.
