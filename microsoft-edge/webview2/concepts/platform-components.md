@@ -12,8 +12,7 @@ ms.date: 04/21/2023
 
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
-![Full diagram of WebView2](../index-images/full-diagram.png)
-<!-- .png is owned by index.md, also linked to by platform-components.md -->
+![Full diagram of WebView2](./platform-components-images/full-diagram.png)
 
 Developing a WebView2 app involves software residing in the following places:
 
@@ -217,7 +216,7 @@ The above approaches are listed in the same sequence as in the [Download the Web
 _Your app's installer_ means your app's installer/updater, which can be separate from your app, or a part of your app.
 
 See also:
-* [Understanding the options at the Runtime download page](./distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+* [Understanding the options at the Runtime download page](../concepts/evergreen-vs-fixed-version.md#understanding-the-options-at-the-runtime-download-page) in _Evergreen vs. fixed version of the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
@@ -243,9 +242,8 @@ The WebView2 control acts as an intermediary for communication between the host 
 * A Prerelease version of the WebView2 SDK uses a preview channel of Microsoft Edge (Beta, Dev, or Canary).
 * A Release version of the WebView2 SDK uses the WebView2 Runtime.
 
-
 See also:
-* [Understanding the options at the Runtime download page](./distribution.md#understanding-the-options-at-the-runtime-download-page) in _Distribute your app and the WebView2 Runtime_.
+* [Understanding the options at the Runtime download page](../concepts/evergreen-vs-fixed-version.md#understanding-the-options-at-the-runtime-download-page) in _Evergreen vs. fixed version of the WebView2 Runtime_.
 * [Prerelease and release SDKs for WebView2](./versioning.md)
 * [Distribute your app and the WebView2 Runtime](./distribution.md)
 

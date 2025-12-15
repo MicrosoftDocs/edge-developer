@@ -29,7 +29,7 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-hybrid-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
@@ -68,7 +68,6 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
 ![Full diagram of WebView2](./index-images/full-diagram.png)
-<!-- .png is owned by index.md, also linked to by platform-components.md -->
 
 Developing a WebView2 app involves software residing in the following places:
 
