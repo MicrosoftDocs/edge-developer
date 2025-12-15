@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 81)
+title: What's new in DevTools (Microsoft Edge 81)
 description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 81)
+# What's new in DevTools (Microsoft Edge 81)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

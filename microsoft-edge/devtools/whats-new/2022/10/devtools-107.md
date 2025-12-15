@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 107)
+title: What's new in DevTools (Microsoft Edge 107)
 description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/31/2022
 ---
-# What's New in DevTools (Microsoft Edge 107)
+# What's new in DevTools (Microsoft Edge 107)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

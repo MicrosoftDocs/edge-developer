@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 95)
+title: What's new in DevTools (Microsoft Edge 95)
 description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web icon.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/20/2021
 ---
-# What's New in DevTools (Microsoft Edge 95)
+# What's new in DevTools (Microsoft Edge 95)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 

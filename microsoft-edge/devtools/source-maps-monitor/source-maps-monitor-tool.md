@@ -39,7 +39,7 @@ The **Source Maps Monitor** tool shows which URL lookups have or haven't been at
 
    * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
    * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
-   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's New in DevTools (Microsoft Edge 115)_.
+   * [Improvements for connecting DevTools to Azure Artifacts symbol server](../whats-new/2023/07/devtools-115.md#improvements-for-connecting-devtools-to-azure-artifacts-symbol-server) in _What's new in DevTools (Microsoft Edge 115)_.
 
 1. In the **Filter behavior** text box, enter a domain with wildcard to exclude (or, to include), such as: `https://ryanseddon.com/*`
 
@@ -58,4 +58,4 @@ The **Source Maps Monitor** tool shows which URL lookups have or haven't been at
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
 * [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
-* [Sources tool now notifies you when sourcemaps can't be loaded](../whats-new/2021/11/devtools.md#sources-tool-now-notifies-you-when-sourcemaps-cant-be-loaded) in _What's New in DevTools (Microsoft Edge 96)_.
+* [Sources tool now notifies you when sourcemaps can't be loaded](../whats-new/2021/11/devtools.md#sources-tool-now-notifies-you-when-sourcemaps-cant-be-loaded) in _What's new in DevTools (Microsoft Edge 96)_.

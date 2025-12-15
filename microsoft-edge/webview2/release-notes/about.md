@@ -27,6 +27,8 @@ See also:
 
 New APIs are added in three phases, as follows:
 
+<!-- apis are first promoted from Staging (Phase 0) to Experimental (Phase 1)  -->
+
 1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.  In Win32, the type name includes the word "Experimental".
 
 1. Then the APIs become Stable APIs in a Prerelease SDK package.  In Win32, the type name omits the word "Experimental".
@@ -51,7 +53,9 @@ Release Notes sections use this wording for the phases:
 * The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 See also:
-* [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
+* [Prerelease and Release SDKs for WebView2](../concepts/versioning.md#phases-of-introducing-apis)
+   * [Moving from Experimental APIs to Stable APIs](../concepts/versioning.md#moving-from-experimental-apis-to-stable-apis) in _Prerelease and Release SDKs for WebView2_.
+   * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 
 <!-- terminology:
 APIs are Experimental or Stable

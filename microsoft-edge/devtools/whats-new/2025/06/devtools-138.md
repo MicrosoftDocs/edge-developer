@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 138)
+title: What's new in DevTools (Microsoft Edge 138)
 description: Server response and redirection times in 'Document request latency' insight. Redirects in Summary of network requests. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/01/2025
 ---
-# What's New in DevTools (Microsoft Edge 138)
+# What's new in DevTools (Microsoft Edge 138)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 138 includes the following updates from the Chromium project:
 
