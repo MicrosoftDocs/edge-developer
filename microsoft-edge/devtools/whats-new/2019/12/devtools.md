@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 80)
+title: What's new in DevTools (Microsoft Edge 80)
 description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 12/13/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 80)
+# What's new in DevTools (Microsoft Edge 80)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -246,7 +246,7 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 -->
 
 See also:
-* [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 92)_.
+* [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) in _What's new in DevTools (Microsoft Edge 92)_.
 
 
 <!-- ------------------------------ -->

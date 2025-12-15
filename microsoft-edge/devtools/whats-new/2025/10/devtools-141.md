@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 141)
+title: What's new in DevTools (Microsoft Edge 141)
 description: CSS masonry layout support in the Elements tool. Persisted track configuration in the Performance panel. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/02/2025
 ---
-# What's New in DevTools (Microsoft Edge 141)
+# What's new in DevTools (Microsoft Edge 141)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
