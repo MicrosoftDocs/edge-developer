@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 139)
+title: What's new in DevTools (Microsoft Edge 139)
 description: Added request headers to the table in the Network tool. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 08/07/2025
 ---
-# What's New in DevTools (Microsoft Edge 139)
+# What's new in DevTools (Microsoft Edge 139)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 139 includes the following updates from the Chromium project:
 

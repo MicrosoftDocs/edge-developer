@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 87)
+title: What's new in DevTools (Microsoft Edge 87)
 description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New in DevTools (Microsoft Edge 87)
+# What's new in DevTools (Microsoft Edge 87)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -283,7 +283,7 @@ In the **Security & Isolation** section of the frame detail page, view the Cross
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's New in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -299,7 +299,7 @@ The **Security & Isolation** section of the frame detail page now displays the `
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's New in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -312,7 +312,7 @@ For example, the **CSS overview Accessible Colors Demo** (`https://css-overview-
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.
 
-To help fix contrast issues, Microsoft Edge DevTools automatically provides color suggestions; see [Accessible color suggestion in the Styles pane](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane) in _What's New in DevTools (Microsoft Edge 86)_.
+To help fix contrast issues, Microsoft Edge DevTools automatically provides color suggestions; see [Accessible color suggestion in the Styles pane](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane) in _What's new in DevTools (Microsoft Edge 86)_.
 
 ![Color contrast issues](./devtools-images/css-overview.png)
 

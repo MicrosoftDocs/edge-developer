@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 123)
+title: What's new in DevTools (Microsoft Edge 123)
 description: "Memory tool reports backing store sizes as part of an object's shallow size. Crash analyzer tool is available by default. Command Palette experimental feature has been removed. Undocked DevTools window is kept focused as the topmost window while inspecting a page. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/21/2024
 ---
-# What's New in DevTools (Microsoft Edge 123)
+# What's new in DevTools (Microsoft Edge 123)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
@@ -69,10 +69,10 @@ See also:
 The Command Palette experimental feature has been removed from Microsoft Edge, starting with version 123.
 
 See also:
-* [Introducing the Command Palette](../../2022/09/devtools-106.md#introducing-the-command-palette) in _What's New in DevTools (Microsoft Edge 106)_.
-* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107.md#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's New in DevTools (Microsoft Edge 107)_.
-* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108.md#improved-devtools-navigation-via-command-palette) in _What's New in DevTools (Microsoft Edge 108)_.
-* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109.md#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's New in DevTools (Microsoft Edge 109)_.
+* [Introducing the Command Palette](../../2022/09/devtools-106.md#introducing-the-command-palette) in _What's new in DevTools (Microsoft Edge 106)_.
+* [New keyboard shortcut for the Command Palette experiment](../../2022/10/devtools-107.md#new-keyboard-shortcut-for-the-command-palette-experiment) in _What's new in DevTools (Microsoft Edge 107)_.
+* [Improved DevTools navigation via Command Palette](../../2022/12/devtools-108.md#improved-devtools-navigation-via-command-palette) in _What's new in DevTools (Microsoft Edge 108)_.
+* [Navigate directly to the Styles and Computed Styles tabs of the Elements tool](../../2023/01/devtools-109.md#navigate-directly-to-the-styles-and-computed-styles-tabs-of-the-elements-tool) in _What's new in DevTools (Microsoft Edge 109)_.
 
 
 <!-- ====================================================================== -->

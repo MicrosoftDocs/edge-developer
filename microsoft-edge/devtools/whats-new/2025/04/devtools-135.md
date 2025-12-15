@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 135)
+title: What's new in DevTools (Microsoft Edge 135)
 description: Origin and script links for profile and function calls. 'Network dependency tree' insight. Heaviest stack highlighting. Improved empty tools. And more.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 04/03/2025
 ---
-# What's New in DevTools (Microsoft Edge 135)
+# What's new in DevTools (Microsoft Edge 135)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 135 includes the following updates from the Chromium project:
 

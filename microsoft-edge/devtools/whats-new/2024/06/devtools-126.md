@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 126)
+title: What's new in DevTools (Microsoft Edge 126)
 description: "Icons for browser extensions are displayed instead of blank squares. The DevTools UI in Chinese has changed back to the original font. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 06/13/2024
 ---
-# What's New in DevTools (Microsoft Edge 126)
+# What's new in DevTools (Microsoft Edge 126)
 
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
