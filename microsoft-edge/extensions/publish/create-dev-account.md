@@ -134,11 +134,15 @@ The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/das
 <!-- ---------- -->
 ###### Individual account
 
+Develop and publish extensions as an individual or unincorporated group.
+
 An individual account is appropriate for a developer who isn't associated with a company.  The account verification process is shorter, and involves verifying that the publisher display name is available.
 
 
 <!-- ---------- -->
 ###### Company account
+
+Develop and publish extensions using your registered business name.
 
 A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
@@ -190,13 +194,13 @@ The contact information includes name, email address, and phone number.  As a pa
 
 1. Click the **Finish** button.
 
+You've now registered as a developer.
 
-<!-- ====================================================================== -->
-## Step 3: Resolve any Partner Center errors
 
-After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined":
+<!-- ------------------------------ -->
+#### Resolve any Partner Center errors
 
-![Error message](./create-dev-account-images/error-message.png)<!-- todo: redo -->
+After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined".
 
 For such errors, try the following fixes:
 
