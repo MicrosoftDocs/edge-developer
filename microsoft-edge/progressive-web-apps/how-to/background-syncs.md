@@ -107,7 +107,7 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 
 
 <!-- ------------------------------ -->
-#### Demo app
+#### PWA Background Sync demo app
 
 **PWA Background Sync** is a demo app that uses the Background Sync API to fetch information later, if the user is offline:
 
@@ -326,7 +326,7 @@ For more information about the `PeriodicSync` event, the `ServiceWorkerRegistrat
 
 
 <!-- ------------------------------ -->
-#### Demo app
+#### DevTools Tips demo app
 
 [DevTools Tips](https://devtoolstips.org/) is a PWA that uses the Periodic Background Sync API.  The [DevTools Tips] PWA fetches new developer tools tips daily and stores them in cache, so that users can access them next time they open the app, whether they are online or not.
 
