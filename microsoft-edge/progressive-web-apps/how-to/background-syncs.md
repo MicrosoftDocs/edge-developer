@@ -111,9 +111,7 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 
 **PWA Background Sync** is a demo app that uses the Background Sync API to fetch information later, if the user is offline:
 
-![Will try later](./background-syncs-images/will-try-later.png)
-
-<!-- 2nd use -->
+![PWA Background Sync demo app](./background-syncs-images/will-try-later.png)<!-- 2nd use -->
 
 * [/pwa-background-sync/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/) - Readme and source code.
 * [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) - live demo.
@@ -142,7 +140,7 @@ To use the demo:
 
 1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello**, and then click the **Send** button.
 
-   A message is sent.  The message that you entered appears below the **Comment** text box, with initial status of **Sending**, and then the status: **Sent**✅:
+   A message is sent.  The message that you entered appears below the **Comment** text box, with initial status of **Sending**, and then the status: *Sent*✅:
 
    ![Comment entered in the demo app](./background-syncs-images/enter-comment.png)
 
@@ -164,16 +162,16 @@ To use the demo:
 
 1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello again**, and then click the **Send** button.
 
-   The message that you entered appears, momentarily with the status of **Sending**, and then with the status of **Failed** ❌.  The **Try sending again** button appears within the message rectangle:
+   The message that you entered appears, momentarily with the status of **Sending**, and then with the status of *Failed*❌.  The **Try sending again** button appears within the message rectangle:
 
    ![Try sending again button](./background-syncs-images/enter-comment-offline.png)
 
 1. Click the **Try sending again** button.
 
-   Within the message rectangle, the status remains **Failed** ❌.
-   Or, the status changes to **Will try later🛜**, and the **Try sending again** button goes away:
+   Within the message rectangle, the status remains *Failed*❌.
+   Or, the status changes to *Will try later*🛜, and the **Try sending again** button goes away:
 
-   ![Will try later](./background-syncs-images/will-try-later.png)<!-- main use -->
+   ![Will try later](./background-syncs-images/will-try-later.png)<!-- 1st use -->
 
    **Connect to the network:**
 
@@ -187,9 +185,9 @@ To use the demo:
 
 1. If the **Try sending again** button still appears, click it.
 
-   The displayed status is **Sent**✅.
+   The displayed status is *Sent*✅.
 
-   Or, as soon as you restored the network connection, the message was sent, and the displayed status is now **Sent**✅:
+   Or, as soon as you restored the network connection, the message was sent, and the displayed status is now *Sent*✅:
 
    ![Sent](./background-syncs-images/sent-after-removed-throttling.png)
 
@@ -201,9 +199,9 @@ To use the demo:
 <!-- ------------------------------ -->
 #### Troubleshooting
 
-In the above steps, you might click the **Try sending again** button, but the status remains **Failed** ❌ (and the **Try sending again** button remains), instead of the status becoming **Will try later🛜** as intended.
+In the above steps, you might click the **Try sending again** button, but the status remains *Failed*❌ (and the **Try sending again** button remains), instead of the status becoming *Will try later*🛜 as intended.
 
-To reset the service worker so that the status becomes **Will try later🛜** when appropriate:
+To reset the service worker so that the status becomes *Will try later*🛜 when appropriate:
 
 1. In DevTools, open the **Application** (![Application icon](./background-syncs-images/application-icon.png)) tool.
 
