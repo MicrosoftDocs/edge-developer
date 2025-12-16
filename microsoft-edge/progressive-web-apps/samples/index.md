@@ -79,7 +79,7 @@ Application Title Meta Tag uses the following features:
 
 This simple PWA demo lets you search for made-up movies and store them locally.
 
-![PWA Background Sync API demo](./index-images/will-try-later.png)
+![PWA Background Sync API demo](./index-images/background-sync.png)
 
 [Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/), [App](https://microsoftedge.github.io/Demos/pwa-background-sync/).
 
@@ -87,7 +87,7 @@ My Movie List uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Use the Background Sync API to synchronize data with the server](../how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server) |
+| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Synchronize and update a PWA in the background](../how-to/background-syncs.md) |
 | Notifications | When the information about a movie is retrieved, a notification is sent so the user can re-engage with the app. | [Display notifications in the action center](../how-to/notifications-badges.md#display-notifications-in-the-action-center) |
 
 
@@ -97,18 +97,19 @@ My Movie List uses the following features:
 
 The `file_handlers` web app manifest member enables a PWA to handle file types like a native application does.
 
-![The "PWA file handlers" demo app](./index-images/todo.png)
+![The "PWA file handlers" demo app](./index-images/file-handlers.png)
 
 [Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-file-handlers/), [App](https://microsoftedge.github.io/Demos/pwa-file-handlers/).
 
-My Tracks uses the following features:
+The PWA file handlers app uses the following features:
 
+<!-- todo: check each row for relevance, maybe delete rows.  table rows were originally for https://github.com/captainbrosset/mytracks/ but now for PWA file handlers demo app: -->
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
-| Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
-| File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
-| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
+| File Handling | The PWA file handlers app natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
+| Window Controls Overlay | The space normally reserved to the title bar is used by the PWA file handlers app Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
+| Protocol Handling | The PWA file handlers app handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
+| Shortcuts | The PWA file handlers app defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
 
 
 <!-- ====================================================================== -->
