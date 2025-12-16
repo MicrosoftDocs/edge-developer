@@ -79,7 +79,7 @@ Application Title Meta Tag uses the following features:
 
 This simple PWA demo lets you search for made-up movies and store them locally.
 
-![PWA Background Sync API demo](./index-images/todo.png)
+![PWA Background Sync API demo](./index-images/will-try-later.png)
 
 [Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/), [App](https://microsoftedge.github.io/Demos/pwa-background-sync/).
 
