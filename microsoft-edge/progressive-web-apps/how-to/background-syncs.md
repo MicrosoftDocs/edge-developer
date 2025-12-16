@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 09/14/2021
+ms.date: 12/15/2025
 ---
 # Synchronize and update a PWA in the background
 
@@ -25,6 +25,27 @@ All three of these use cases are possible with PWAs, by using the following APIs
 *  Background Fetch API
 
 Although these APIs have similar names, they are different in nature.
+
+**Detailed contents:**
+* [Use the Background Sync API to synchronize data with the server](#use-the-background-sync-api-to-synchronize-data-with-the-server)
+   * [Check for support](#check-for-support)
+   * [Request a sync](#request-a-sync)
+   * [React to the sync event](#react-to-the-sync-event)
+   * [PWA Background Sync demo app](#pwa-background-sync-demo-app)
+   * [Troubleshooting](#troubleshooting)
+   * [Debug background syncs with DevTools](#debug-background-syncs-with-devtools)
+* [Use the Periodic Background Sync API to regularly get fresh content](#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
+   * [Periodic sync when on a known network](#periodic-sync-when-on-a-known-network)
+   * [Check for support](#check-for-support-1)
+   * [Ask the user for permission](#ask-the-user-for-permission)
+   * [Register a periodic sync](#register-a-periodic-sync)
+   * [React to periodic sync events](#react-to-periodic-sync-events)
+   * [DevTools Tips demo app](#devtools-tips-demo-app)
+   * [Debug periodic background syncs with DevTools](#debug-periodic-background-syncs-with-devtools)
+* [Use the Background Fetch API to fetch large files when the app or service worker isn't running](#use-the-background-fetch-api-to-fetch-large-files-when-the-app-or-service-worker-isnt-running)
+   * [Check for support](#check-for-support-2)
+   * [Start a background fetch](#start-a-background-fetch)
+* [Use the App Badging API and Notifications API to re-engage users](#use-the-app-badging-api-and-notifications-api-to-re-engage-users)
 
 
 <!-- ====================================================================== -->
