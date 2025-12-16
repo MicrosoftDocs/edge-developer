@@ -111,9 +111,9 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 
 **PWA Background Sync** is a demo app that uses the Background Sync API to fetch information later, if the user is offline:
 
-![My Movies demo](./background-syncs-images/my-movie-list-pwa-demo.png)
+![Will try later](./background-syncs-images/will-try-later.png)
 
-![PWA Background Sync API demo](./background-syncs-images/pwa-background-sync-api-demo.png)
+<!-- 2nd use -->
 
 * [/pwa-background-sync/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/) - Readme and source code.
 * [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) - live demo.
@@ -122,9 +122,11 @@ To use the demo:
 
 1. Go to the [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) in a new window or tab.
 
+   **Install the app:**
+
 1. In the Address bar, click the **App available. Install PWA Background Sync API demo** (![App available icon](./background-syncs-images/app-available-icon.png)) button.
 
-   The **Install PWA file handlers demo app** dialog opens in Edge.
+   The **Install PWA Background Sync API demo** dialog opens in Edge.
 
 1. Click the **Install** button.
 
@@ -132,71 +134,82 @@ To use the demo:
 
 1. Click the **Allow** button.
 
-   The Windows **Apps** dialog prompts whether to pin the demo to the taskbar.
+   The PWA Background Sync API demo app opens in a dedicated window.  The Windows **Apps** dialog prompts whether to pin the app to the taskbar.
 
 1. Click the **Yes** button.
 
-1. Try sending a message: Enter a comment, such as todo, and then press **Enter**.
+   **Use the app, connected to the network:**
 
-   Message appears in the list, with the status: **Sent**✅.
+1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello**, and then click the **Send** button.
+
+   A message is sent.  The message that you entered appears below the **Comment** text box, with initial status of **Sending**, and then the status: **Sent**✅:
+
+   ![Comment entered in the demo app](./background-syncs-images/enter-comment.png)
+
+   **Disconnect from the network:**
 
 1. Right-click within the app window, and then select **Inspect**.
 
    DevTools opens in a dedicated window.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the **Network** (![Network icon](./background-syncs-images/network-icon.png)) tool.
 
-1. In the **network throttling** dropdown list, select **Offline**.
+1. In the **Network throttling** dropdown list, instead of **No throttling**, select **Offline**:
 
-1. Try sending another message: Enter a comment, such as todo, and then press **Enter**.
+   ![DevTools Network throttling: offline](./background-syncs-images/devtools-offline.png)
 
-   A message appears, with the status of **Sending**, and eventually with the status of **Failed** ❌.
+   A warning icon is added to the **Network** tab, to remind you that there's network throttling.
 
-   The **Try sending again** button appears.
+   **Use the app, disconnected from the network:**
 
-1. Remain offline, and click the **Try sending again** button.
+1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello again**, and then click the **Send** button.
 
-   The status **Will try later🛜** appears
+   The message that you entered appears, momentarily with the status of **Sending**, and then with the status of **Failed** ❌.  The **Try sending again** button appears within the message rectangle:
 
-1. In DevTools, remove the **Offline** mode, and go back to **No throttling**.
+   ![Try sending again button](./background-syncs-images/enter-comment-offline.png)
 
-   The message is sent.  The displayed status is **Sent**✅.
+1. Click the **Try sending again** button.
+
+   Within the message rectangle, the status remains **Failed** ❌.
+   Or, the status changes to **Will try later🛜**, and the **Try sending again** button goes away:
+
+   ![Will try later](./background-syncs-images/will-try-later.png)<!-- main use -->
+
+   **Connect to the network:**
+
+1. In the dedicated DevTools window, in the **Network throttling** dropdown list, instead of **Offline**, select **No throttling**.
+
+   The throttling warning icon is removed from the **Network** tab.
+
+   **Use the app, connected to the network again:**
+
+1. Switch to the installed **PWA Background Sync API demo** app.
+
+1. If the **Try sending again** button still appears, click it.
+
+   The displayed status is **Sent**✅.
+
+   Or, as soon as you restored the network connection, the message was sent, and the displayed status is now **Sent**✅:
+
+   ![Sent](./background-syncs-images/sent-after-removed-throttling.png)
+
+1. Optionally, right-click in the webpage, and then select **Refresh**.
+
+   The messages are removed.
 
 
 <!-- ------------------------------ -->
 #### Troubleshooting
 
-If the above steps don't work<!-- todo: in what way? -->:
+In the above steps, you might click the **Try sending again** button, but the status remains **Failed** ❌ (and the the **Try sending again** button remains), instead of the status becoming **Will try later🛜** as intended.
 
-1. In DevTools, open the **Application** tool.
+To reset the service worker so that the status becomes **Will try later🛜** when appropriate:
 
-1. Under **Service workers**, click **Unregister**.
+1. In DevTools, open the **Application** (![Application icon](./background-syncs-images/application-icon.png)) tool.
 
-1. In the app's window, refresh the page.
+1. In the navigation pane on the left, select **Service workers**, and then in the upper right, click **Unregister**.
 
-
-<!-- ------------------------------ -->
-#### To test background syncing:
-
-1.  Install the app.
-
-1.  Search for movies using the search input field.
-
-1.  Go offline.  To do this, open DevTools (**F12**), and then select the **Application** > **Service Workers**<!-- todo: when the below .png is updated to show "Service workers", change to "w" --> > **Offline** checkbox.
-
-    ![Simulate being offline with DevTools](./background-syncs-images/devtools-go-offline.png)
-
-1.  In one of the movie results, select **More info**.
-
-1.  A message appears in the app informing you that you are offline, and that the movie details will be retrieved automatically later.
-
-    ![The offline message](./background-syncs-images/my-movie-list-pwa-demo-offline.png)
-
-1.  Go online.  To do this, in DevTools, clear the **Application** > **Service Workers**<!-- todo: when the above .png is updated to show "Service workers", change to "w" --> > **Offline** checkbox.
-
-1.  Reload the app. The movie details now appear.
-
-To see the sample code, check out the [movies-db-pwa](https://github.com/captainbrosset/movies-db-pwa/) repo.<!-- todo: move to Demos repo, then update repo's Readme and this article and pwa/samples/index.md -->
+1. In the app window, right-click in the webpage, and then select **Refresh**.
 
 
 <!-- ------------------------------ -->
@@ -211,7 +224,7 @@ To simulate a `sync` event:
 1. Type the tag name you used when registering the sync in the **Sync** input field.
 1. Select the **Sync** button.
 
-![Simulate a background sync in the Application panel](./background-syncs-images/devtools-simulate-background-sync.png)
+![Simulate a background sync in the Application panel](./background-syncs-images/devtools-simulate-background-sync.png)<!-- todo: redo -->
 
 You can also log the background sync activity generated by your app in DevTools, as follows:
 
@@ -221,7 +234,7 @@ You can also log the background sync activity generated by your app in DevTools,
 
 Sync registrations and dispatches appear in the event log table:
 
-![Log background sync events](./background-syncs-images/devtools-background-sync-log.png)
+![Log background sync events](./background-syncs-images/devtools-background-sync-log.png)<!-- todo: redo -->
 
 
 <!-- ====================================================================== -->
@@ -231,8 +244,13 @@ The Periodic Background Sync API lets PWAs retrieve fresh content periodically, 
 
 Using the Periodic Background Sync API, PWAs don't have to download new content (such as new articles) while the user is using the app.  Downloading content could slow down the experience, so instead, retrieve the content at a more convenient time.
 
-> [!NOTE]
-> The periodic sync only occurs when the device is on a known network (that is, a network that the device has already been connected to before).  Microsoft Edge limits the frequency of the syncs to match how often the person uses the app.
+
+<!-- ------------------------------ -->
+#### Periodic sync when on a known network
+
+The periodic sync only occurs when the device is on a known network (that is, a network that the device has already been connected to before).
+
+Microsoft Edge limits the frequency of the syncs to match how often the person uses the app.
 
 
 <!-- ------------------------------ -->
