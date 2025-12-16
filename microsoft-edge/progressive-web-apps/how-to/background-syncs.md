@@ -201,7 +201,7 @@ To use the demo:
 <!-- ------------------------------ -->
 #### Troubleshooting
 
-In the above steps, you might click the **Try sending again** button, but the status remains **Failed** ❌ (and the the **Try sending again** button remains), instead of the status becoming **Will try later🛜** as intended.
+In the above steps, you might click the **Try sending again** button, but the status remains **Failed** ❌ (and the **Try sending again** button remains), instead of the status becoming **Will try later🛜** as intended.
 
 To reset the service worker so that the status becomes **Will try later🛜** when appropriate:
 
