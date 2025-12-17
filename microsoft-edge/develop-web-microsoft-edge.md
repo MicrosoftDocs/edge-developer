@@ -28,8 +28,7 @@ To stay up to date with web platform feature changes in Microsoft Edge and the C
 Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
 See:
-* [Experimental APIs for Microsoft Edge](./web-platform/index.md)<!-- todo: 1 link here only, depends whether keep new short page -->
-* [Use origin trials in Microsoft Edge](./origin-trials/index.md)
+* [Use origin trials of experimental APIs in Microsoft Edge](./origin-trials/index.md)
 
 
 <!-- ====================================================================== -->

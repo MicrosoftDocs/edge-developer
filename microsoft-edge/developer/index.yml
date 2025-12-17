@@ -55,7 +55,7 @@ landingContent:
           - text: Site compatibility-impacting changes
             url: ../web-platform/site-impacting-changes.md
 
-          - text: Use origin trials in Microsoft Edge
+          - text: Use origin trials of experimental APIs in Microsoft Edge
             url: ../origin-trials/index.md
 
           - text: Prompt a built-in language model with the Prompt API

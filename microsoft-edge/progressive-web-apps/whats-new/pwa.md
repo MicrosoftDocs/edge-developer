@@ -362,7 +362,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 ## See also
 <!-- general links not specific to a given What's New entry -->
 
-* [Use origin trials in Microsoft Edge](../../origin-trials/index.md)
+* [Use origin trials of experimental APIs in Microsoft Edge](../../origin-trials/index.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 
 External:

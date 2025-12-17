@@ -83,7 +83,7 @@ For each top-level domain that you intend to use with the Ad Selection API, fill
 
 To sign up for the **Ad Selection API** origin trial for a domain:
 
-1. First, do the steps in [Use origin trials in Microsoft Edge](../origin-trials/index.md).
+1. First, do the steps in [Use origin trials of experimental APIs in Microsoft Edge](../origin-trials/index.md).
 
 1. Then create a file that's named `ad-selection-attestations.json`, and host the file at the top-level domain, in the `/.well-known/` directory.  For example:
 
@@ -300,7 +300,7 @@ See [Data Protection Addendum for the Ad Selection API](/legal/microsoft-edge/ad
 Origin trials:
 
 * [Ad Selection API Origin Trial Registration in Microsoft Edge](https://forms.office.com/r/eBhJt58Lks)
-* [Use origin trials in Microsoft Edge](../origin-trials/index.md)<!-- not in article body -->
+* [Use origin trials of experimental APIs in Microsoft Edge](../origin-trials/index.md)<!-- not in article body -->
 
 Design and technical documents:
 
