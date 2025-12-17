@@ -1,6 +1,6 @@
 ---
 title: Use origin trials of experimental APIs in Microsoft Edge
-description: Safely experiment for a fixed period of time and provide feedback on new platform features.
+description: Safely experiment with experimental APIs for a fixed period of time, and provide feedback on new platform features (APIs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -9,7 +9,7 @@ ms.date: 10/18/2024
 ---
 # Use origin trials of experimental APIs in Microsoft Edge
 
-Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
+Use origin trials to try out experimental APIs (features) on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
 
 To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).  To assess the suitability of using the experimental APIs on your website, check the minimum version requirements for Microsoft Edge, and check the trial expiration date.
 
