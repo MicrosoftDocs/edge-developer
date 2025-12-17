@@ -88,9 +88,9 @@
 # Experimental APIs for Microsoft Edge
     - name: Experimental APIs for Microsoft Edge
       items:
-        - name: Experimental web platform features
+        - name: Experimental APIs for Microsoft Edge
           href: ./web-platform/index.md
-          displayName: Experimental APIs for Microsoft Edge  # enable look up the toc bucket name
+          displayName: Experimental web platform features  # standard term eg in edge://flags
 
         - name: Use origin trials in Microsoft Edge
           href: ./origin-trials/index.md
@@ -1129,25 +1129,25 @@
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
-          href: ./extensions/landing/index.yml  ## added site link  # landing page
+          href: ./extensions/landing/index.yml
           displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
-          href: ./extensions/index.md  ## added site link top & bottom
+          href: ./extensions/index.md
 # -----------------------------------------------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge extensions
-              href: ./extensions/whats-new/released-features.md  # added site link top & bottom
+              href: ./extensions/whats-new/released-features.md
 
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
             - name: Extension concepts and architecture
-              href: ./extensions/getting-started/index.md  # added site link top & bottom
+              href: ./extensions/getting-started/index.md
 
             - name: Sideload an extension to install and test it locally
-              href: ./extensions/getting-started/extension-sideloading.md  # added site link top & bottom
+              href: ./extensions/getting-started/extension-sideloading.md
 
 # -----------------------------------------------------------------------------
         - name: Samples

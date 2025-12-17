@@ -1,5 +1,6 @@
 ### YamlMime:Landing
 # docset landing page; https://learn.microsoft.com/microsoft-edge/developer/
+# todo: update docset landing page design to reflect new topmost buckets (Release notes; Experimental APIs for Microsoft Edge)
 title: Microsoft Edge Developer documentation # < 60 chars
 summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
 
@@ -43,7 +44,7 @@ landingContent:
 # =============================================================================
 # Row 1
 # -----------------------------------------------------------------------------
-# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
   - title: Web platform updates
     linkLists:
       - linkListType: whats-new
@@ -265,7 +266,7 @@ landingContent:
           - text: View a JSON file or server response with formatting
             url: ../web-platform/json-viewer.md
 
-          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
+          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?  update landing page design to reflect new topmost buckets (Release notes; Experimental APIs for Microsoft Edge)
             url: ../web-platform/ad-selection-api.md
 
 # -----------------------------------------------------------------------------
