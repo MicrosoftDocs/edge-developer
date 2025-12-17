@@ -244,6 +244,9 @@ The extension's `.zip` package contains the manifest file; to re-upload the mani
 
 To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.
 
+See also:
+* [Responsible AI FAQ for AI-Generated Extensions Description](#responsible-ai-faq-for-ai-generated-extensions-description), below.
+
 To generate the description by using AI:
 
 1. On a **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
@@ -434,6 +437,49 @@ If you experience issues when registering as an extension developer or when subm
 * Enter a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4).
 
 * [Contact the Microsoft Edge extensions team](../contact.md).
+
+
+<!-- ========================================================================== -->
+## Responsible AI FAQ for AI-Generated Extensions Description
+
+
+<!-- ---------------------------------- -->
+#### What is AI-Generated Description?
+
+Developers visit Microsoft Partner Center to bring their Extensions to Edge. The listing data like extension name, description, screenshots, etc. are provided by the developer in the listing page as part of the submission process. 
+
+High-quality descriptions for the extensions are important for the users to understand the features & functionality of the Extension and make informed decision while installing the extension.
+
+AI-Generated description is a feature powered by Azure OpenAI which recommends description to the developer. For this feature:
+
+* The AI uses the extension package (e.g., manifest, code files) and an optional developer prompt to generate a high-quality and policy compliant description.
+
+* Developers can apply, edit, or discard the generated text before submission.
+
+* While the goal is to reduce misleading or incomplete descriptions, and enhance user experience and extension submission turn around time, it is strongly recommended that Developers verify the AI-generated description before allowing the description to be published for the users.
+
+* The description can be generated for multiple languages. 
+
+This process ensures transparency, and compliance with [Responsible AI principles](https://www.microsoft.com/ai/principles-and-approach)<!-- todo: [Responsible AI Principles and Approach] --> while helping developers craft accurate and user-friendly descriptions. However, AI generated content could be inaccurate sometimes and we recommend developers to verify before publishing.
+
+
+<!-- ---------------------------------- -->
+#### What is AI-Generated description intended use?
+
+AI-Generated description will be displayed in the product detail page in the Edge Add-ons store. A high-quality description will help users understand the extension’s functionality and make informed decision.
+
+
+<!-- ---------------------------------- -->
+#### How was AI-Generated description feature evaluated?
+
+AI-Generated description underwent substantial testing prior to being released to identify failure modes and scenarios that might cause AI-Generated keywords to do or say things outside of its intended uses or that don't support the [Microsoft AI Principles](https://www.microsoft.com/ai/responsible-ai).
+<!-- todo:                                 that don't support the principles at [Responsible AI at Microsoft: Ethical policies and practices](https://www.microsoft.com/ai/responsible-ai). -->
+
+
+<!-- ---------------------------------- -->
+#### What are the safeguards in place for AI-Generated description?
+
+The description is based completely on the extension package and the prompt provided by the developer. Providing a prompt is optional for developers. We send the package uploaded, prompt (if any), and language selected to the AI model and ask to generate description. The developer has full control over AI-Generated description and can choose to use/ edit/ or discard it.  
 
 
 <!-- ========================================================================== -->
