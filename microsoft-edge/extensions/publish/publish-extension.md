@@ -37,6 +37,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
 * [Support](#support)
+* [Responsible AI FAQ for AI-Generated Extensions Description](#responsible-ai-faq-for-ai-generated-extensions-description)
 * [See also](#see-also)
 
 
