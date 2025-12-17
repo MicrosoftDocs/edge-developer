@@ -1,5 +1,5 @@
 ---
-title: Sign up for the Ad Selection API
+title: Sign up for the Ad Selection API  # todo: task-oriented title re: what the API does; what you can do w/ the API - like sibling articles titles
 description: Sign up for the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
