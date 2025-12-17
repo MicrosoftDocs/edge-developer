@@ -28,7 +28,7 @@ Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-
    * [Launching the extension server](#launching-the-extension-server)
    * [Communication with tabs and browser toolbar](#communication-with-tabs-and-browser-toolbar)
    * [Opt-in permissions at install time](#opt-in-permissions-at-install-time)
-* [Next steps](#next-steps)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
