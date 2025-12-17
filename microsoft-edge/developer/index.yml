@@ -266,7 +266,7 @@ landingContent:
           - text: View a JSON file or server response with formatting
             url: ../web-platform/json-viewer.md
 
-          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?  update landing page design to reflect new topmost buckets (Release notes; Experimental APIs for Microsoft Edge)
+          - text: Provide user-relevant ads with the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?  update landing page design to reflect new topmost buckets (Release notes; Experimental APIs for Microsoft Edge)
             url: ../web-platform/ad-selection-api.md
 
 # -----------------------------------------------------------------------------

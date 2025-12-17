@@ -1,19 +1,20 @@
 ---
-title: Sign up for the Ad Selection API  # todo: task-oriented title re: what the API does; what you can do w/ the API - like sibling articles titles
-description: Sign up for the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
+title: Provide user-relevant ads with the Ad Selection API
+description: Provide user-relevant ads with the Ad Selection API, which provides user-relevant ads on your site without using third-party cookies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/10/2024
 ---
-# Sign up for the Ad Selection API
+# Provide user-relevant ads with the Ad Selection API
 <!-- https://go.microsoft.com/fwlink/?linkid=2289906 -->
 
-The Ad Selection API provides user-relevant ads on your site without using third-party cookies.  See [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the `privacy-preserving-ads` repo.
+The Ad Selection API provides user-relevant ads on your site, without using third-party cookies.
 
 **Detailed contents:**
 
+* [Introduction](#introduction)
 * [Attestation enrollment and alpha sign-up](#attestation-enrollment-and-alpha-sign-up)
     * [When and where is the preview available?](#when-and-where-is-the-preview-available)
     * [Flags for testing](#flags-for-testing)
@@ -34,20 +35,31 @@ The Ad Selection API provides user-relevant ads on your site without using third
 * [Data Protection Addendum](#data-protection-addendum)
 * [See also](#see-also)
 
+
+<!-- ====================================================================== -->
+## Introduction
+
+The Ad Selection API provides user-relevant ads on your site, without using third-party cookies.
+
 The Ad Selection API can be used by:
+
 * **Sellers** running a supply-side platform (SSP), who can use the API to provide higher-quality ads for their publishers.
+
 * **Buyers** running a demand-side platform (DSP), who can use the API to improve the effectiveness of advertising campaigns.
 
 To get started using the Ad Selection API and test out the end-to-end flow, sign up for the limited preview of the Ad Selection API.
 
 As a seller operating a supply-side platform or a buyer operating a demand-side platform, use this guide to:
-* Sign up for the Ad Selection API limited preview by registering for the origin trial.
+* Provide user-relevant ads with the Ad Selection API limited preview by registering for the origin trial.
 * Complete the API attestation by publishing your attestations JSON file.
 * Set up an evaluation environment with a supported cloud provider.
 * View the Ad Selection API documentation.
 * Prepare your User-Defined Functions (UDFs).
 * Deploy your services to Azure.
 * Test the Ad Selection API on your site.
+
+See also:
+* [Ad Selection Overview](https://github.com/WICG/privacy-preserving-ads/blob/main/Ad%20Selection%20Overview.md) in the `privacy-preserving-ads` repo.
 
 
 <!-- ====================================================================== -->
