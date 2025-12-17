@@ -225,7 +225,7 @@ Switching from a company to an individual account is not supported.
 <!-- ====================================================================== -->
 ## Step 5: Add users to the account
 
-After account verification is complete, you can add users to the Edge program.
+For a company account, after account verification is complete, you can add users to the Edge program.
 
 See [Add users to the Microsoft Edge program](./aad-account.md).
 
