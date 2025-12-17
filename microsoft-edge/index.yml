@@ -510,39 +510,40 @@ additionalContent:
   # Supports up to 4 sections
   sections:
 # =============================================================================
-    - title: Help and support # for which audience? Admin, Dev, or Users? < 60 chars (optional)
+# Section
+    - title: Help and support for end-users
     # summary:  < 160 chars (optional)
       items:
 # -----------------------------------------------------------------------------
-# Card
+# Card - audience: End-users
         - title: Community Support on Microsoft Q&A
-          summary: For end-users to get advice and answers from community experts.
+          summary: Get advice and answers from community experts.
           url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
-# Card
+# Card - audience: End-users
+        - title: Microsoft Edge help & learning
+          summary: How to use Microsoft Edge features.
+          url: https://support.microsoft.com/microsoft-edge
+# -----------------------------------------------------------------------------
+# Card - audience: End-users
+        - title: Get to know Microsoft Edge
+          summary: Browser features and capabilities.
+          url: https://www.microsoft.com/edge/
+# -----------------------------------------------------------------------------
+# Card - audience: End-users
+        - title: Microsoft Edge Features & Tips
+          summary: End-user information.
+          url: https://www.microsoft.com/edge/features  # deeper than above url  # todo: remove a card?
+# =============================================================================
+# Section
+    - title: Help and support for IT administrators
+    # summary:  < 160 chars (optional)
+      items:
+# -----------------------------------------------------------------------------
+# Card - audience: Admins
         - title: Microsoft Support for business
           summary: IT Admins, if your business needs technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-# =============================================================================
-    - title: Help and support for end-users # for which audience? Admin, Dev, or Users? < 60 chars (optional)
-      summary: For Users.  # < 160 chars (optional)
-      items:
-# -----------------------------------------------------------------------------
-# Card
-        - title: Microsoft Edge help & learning
-          summary: Support for end users about how to use Microsoft Edge features.
-          url: https://support.microsoft.com/microsoft-edge
-# -----------------------------------------------------------------------------
-# Card
-        - title: Get to know Microsoft Edge
-          summary: Overview of browser features and capabilities.
-          url: https://www.microsoft.com/edge/
-
-# -----------------------------------------------------------------------------
-# Card
-        - title: Microsoft Edge Features & Tips
-          summary: End-user information.
-          url: https://www.microsoft.com/edge/features
 
 # =============================================================================
 # "Reference and Legacy Docs" section of hub page - 1 row of 2 cards
