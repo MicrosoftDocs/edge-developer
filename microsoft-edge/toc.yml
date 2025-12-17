@@ -2,7 +2,7 @@
 # TOC sections:
 # top leaf nodes
 # Release notes
-# Experimental web platform features
+# Experimental APIs for Microsoft Edge
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
 # Microsoft Edge extensions
@@ -85,11 +85,12 @@
           href: ./web-platform/site-impacting-changes.md
 # /Release notes
 # =============================================================================
-# Experimental web platform features
-    - name: Experimental web platform features
+# Experimental APIs for Microsoft Edge
+    - name: Experimental APIs for Microsoft Edge
       items:
-#       - name: Experimental web platform features
-#         href: ./dir/filename.md
+        - name: Experimental web platform features
+          href: ./web-platform/index.md
+          displayName: Experimental APIs for Microsoft Edge  # enable look up the toc bucket name
 
         - name: Use origin trials in Microsoft Edge
           href: ./origin-trials/index.md
@@ -105,7 +106,7 @@
 
         - name: Translate text with the Translator API
           href: ./web-platform/translator-api.md
-# /Experimental web platform features
+# /Experimental APIs for Microsoft Edge
 # =============================================================================
 # -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
@@ -167,7 +168,6 @@
 # -------------------------------------
             - name: Archive
               items:
-
                 - name: Microsoft Edge 133
                   href: ./devtools/whats-new/2025/02/devtools-133.md
                   displayName: What's new in DevTools (Microsoft Edge 133)  # page title
@@ -1129,25 +1129,26 @@
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
-          href: ./extensions/landing/index.yml  # landing page
+          href: ./extensions/landing/index.yml  ## added site link  # landing page
           displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
-          href: ./extensions/index.md
+          href: ./extensions/index.md  ## added site link top & bottom
 # -----------------------------------------------------------------------------
         - name: What's new
           items:
             - name: Released features for Microsoft Edge extensions
-              href: ./extensions/whats-new/released-features.md
+              href: ./extensions/whats-new/released-features.md  # added site link top & bottom
 
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
             - name: Extension concepts and architecture
-              href: ./extensions/getting-started/index.md
+              href: ./extensions/getting-started/index.md  # added site link top & bottom
 
             - name: Sideload an extension to install and test it locally
-              href: ./extensions/getting-started/extension-sideloading.md
+              href: ./extensions/getting-started/extension-sideloading.md  # added site link top & bottom
+
 # -----------------------------------------------------------------------------
         - name: Samples
           items:

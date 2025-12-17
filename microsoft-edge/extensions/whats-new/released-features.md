@@ -13,6 +13,8 @@ ms.date: 02/05/2025
 
 The following features or updates have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for Microsoft Edge extensions.
 
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+
 
 <!-- ====================================================================== -->
 ## Transfer ownership of a Microsoft Edge extension
@@ -136,3 +138,4 @@ By clicking the extension certification report link, you can view and download t
 ## See also
 
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.

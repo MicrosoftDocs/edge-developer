@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 # hub page for Enterprise docset & Edge Dev docset; https://learn.microsoft.com/microsoft-edge/
 title: Microsoft Edge documentation
-summary: Explore documentation, references, and code samples to help you deploy, manage, and build with Microsoft Edge.
+summary: Explore documentation, references, and code samples to help Admins deploy Microsoft Edge, and to help Developers develop with Microsoft Edge.   # < 400 chars
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -52,7 +52,7 @@ highlightedContent:
 # =============================================================================
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
-# Card r2c1
+# Card r2c1   todo: these two cards nav down to 2 major sections, should be row 1, not row 2
     - title: Microsoft Edge for Business  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
       itemType: training
@@ -65,7 +65,7 @@ highlightedContent:
 
 # -----------------------------------------------------------------------------
 # Card r2c3
-    - title: Help and Support  # scrolls down to hub page section
+    - title: Help and support  # scrolls down to hub page section
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
       itemType: training
 
@@ -82,7 +82,7 @@ conceptualContent:
 # Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Business # < 60 chars (optional)
-      # summary:  # < 160 chars (optional)
+      summary: For IT Administrators.  Enterprise = Business = Deploy. # < 160 chars (optional)
       items:
 
 # =============================================================================
@@ -192,7 +192,7 @@ conceptualContent:
 # =============================================================================
 # "Microsoft Edge for Developers" section of hub page - 2 rows of 4 cards
     - title: Microsoft Edge for Developers # < 60 chars (optional)
-    # summary:  # < 160 chars (optional)
+      summary: Develop for the web with Microsoft Edge.  # < 160 chars (optional)
       items:
 
 # =============================================================================
@@ -509,8 +509,9 @@ conceptualContent:
 additionalContent:
   # Supports up to 4 sections
   sections:
-    - title: Help and Support # < 60 chars (optional)
-      # summary: sectionsummary # < 160 chars (optional)
+# =============================================================================
+    - title: Help and support # for which audience? Admin, Dev, or Users? < 60 chars (optional)
+      summary: For IT Admins, also Devs.  # < 160 chars (optional)
       items:
 # -----------------------------------------------------------------------------
 # Card
@@ -520,13 +521,28 @@ additionalContent:
 # -----------------------------------------------------------------------------
 # Card
         - title: Microsoft Support for business
-          summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
+          summary: IT Admins, if your business needs technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
+# =============================================================================
+    - title: Help and support for end-users # for which audience? Admin, Dev, or Users? < 60 chars (optional)
+      summary: For Users.  # < 160 chars (optional)
+      items:
 # -----------------------------------------------------------------------------
 # Card
         - title: Microsoft Edge help & learning
           summary: Support for end users about how to use Microsoft Edge features.
           url: https://support.microsoft.com/microsoft-edge
+# -----------------------------------------------------------------------------
+# Card
+        - title: Get to know Microsoft Edge
+          summary: Overview of browser features and capabilities.
+          url: https://www.microsoft.com/edge/
+
+# -----------------------------------------------------------------------------
+# Card
+        - title: Microsoft Edge Features & Tips
+          summary: End-user information.
+          url: https://www.microsoft.com/edge/features
 
 # =============================================================================
 # "Reference and Legacy Docs" section of hub page - 1 row of 2 cards
