@@ -88,7 +88,7 @@
 # Experimental APIs for Microsoft Edge
     - name: Experimental APIs for Microsoft Edge
       items:
-        - name: Use origin trials of experimental APIs in Microsoft Edge
+        - name: Test experimental APIs and features by using origin trials
           href: ./origin-trials/index.md
           displayName: Experimental web platform features  # standard term eg in edge://flags
 

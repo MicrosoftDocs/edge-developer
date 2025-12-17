@@ -209,7 +209,7 @@ conceptualContent:
               url: ./web-platform/site-impacting-changes.md
               itemType: whats-new
 
-            - text: Use origin trials of experimental APIs in Microsoft Edge
+            - text: Test experimental APIs and features by using origin trials
               url: ./origin-trials/index.md
               itemType: whats-new
 
