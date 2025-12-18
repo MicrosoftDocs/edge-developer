@@ -20,7 +20,6 @@ The following features or updates have been launched on [Partner Center](https:/
 
 The version of Edge is shown as an approximate timeframe and point of reference, to describe Partner Center changes.
 
-
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
 * [Edge 144 (Jan. 15, 2026)](#edge-144-jan-15-2026)
@@ -63,6 +62,8 @@ The version of Edge is shown as an approximate timeframe and point of reference,
 * [Edge 86 (January 2021)](#edge-86-january-2021)
    * [Extension certification report link](#extension-certification-report-link)
 * [See also](#see-also)
+
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 
 <!-- ====================================================================== -->
@@ -293,3 +294,4 @@ By clicking the extension certification report link, you can view and download t
 
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 * [Microsoft Edge releases](/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases) (**Version** and **Stable Channel** columns) in _Microsoft Edge release schedule_.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.

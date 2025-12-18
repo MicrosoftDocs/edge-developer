@@ -10,7 +10,7 @@ ms.date: 11/02/2022
 ---
 # Verify your company account information
 
-Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.  Information specifically about company accounts starts in the [Account types](./create-dev-account.md#account-types) section within that article.
+Before using this article, do the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md), for a company account rather than for an individual account.
 
 When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide.  This information can include your company name, company address, and primary contact details.  During the verification process, Microsoft might send email to your primary contact to request confirmation of the information that was provided.
 
@@ -142,7 +142,7 @@ Switching back to an individual account from an enterprise account isn't possibl
 <!-- ====================================================================== -->
 ## Next steps
 
-To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can keep building, testing, and preparing your submissions while you wait for the verification process to finish. Review the following extension documents:
+To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can continue to build and test the extension and prepare it to be submitted, while you wait for the verification process to finish.  See the following extension documents:
 
 *  [Extension concepts and architecture](../getting-started/index.md) - Gives an overview of extensions and basic publishing information.
 

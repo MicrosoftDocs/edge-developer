@@ -12,6 +12,8 @@ ms.date: 04/26/2024
 
 A _manifest file_ is the blueprint of an extension.  A manifest file for an extension includes information such as the version number of the extension, the title of the extension, and permissions needed to run the extension.  The manifest file follows the format specified by Manifest V2 or Manifest V3.
 
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+
 
 <!-- ---------------------------------------------------------------------- -->
 ## Overview of changes in Manifest V3
@@ -76,3 +78,4 @@ Microsoft continues to iteratively improve the platform and address the feedback
 * [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
 * [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- chrome link ok, section is re: v2-v3 migration in chromium -->
 * [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- chrome link ok, section is re: v2-v3 migration in chromium --> in _Resuming the transition to Manifest V3_.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.

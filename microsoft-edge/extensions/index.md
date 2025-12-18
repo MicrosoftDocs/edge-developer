@@ -11,9 +11,11 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+
 _Microsoft Edge Add-ons_ include extensions and themes.  A Microsoft Edge _extension_ is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
 
-You publish a Microsoft Edge extension (or theme) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
+As a browser extension developer, you publish a Microsoft Edge extension (or theme) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
 
@@ -184,6 +186,7 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 * [Best practices for extensions](./developer-guide/best-practices.md)
 * [Extension concepts and architecture](./getting-started/index.md)
 * [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.
 
 End-user docs:
 * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf) - introduction for users.
