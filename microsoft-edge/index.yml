@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 # hub page for Enterprise docset & Edge Dev docset; https://learn.microsoft.com/microsoft-edge/
 title: Microsoft Edge documentation
-summary: Explore documentation, references, and code samples to help you deploy, manage, and build with Microsoft Edge.
+summary: Documentation, references, and code samples to help IT administrators deploy Microsoft Edge, and to help developers develop with Microsoft Edge.  # < 400 chars
 brand: m365
 metadata:
   title: Microsoft Edge documentation
-  description: Microsoft Edge information for developers, IT admins, and browser users; including DevTools, Edge Add-ons (such as extensions), PWAs, WebDriver, and more.
+  description: Microsoft Edge information for developers, IT administrators, and browser users; including DevTools, Edge Add-ons (such as extensions), PWAs, WebDriver, and more.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -27,53 +27,53 @@ highlightedContent:
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-    - title: Microsoft Edge for Business
-      url: https://www.microsoft.com/edge/business/download
-      itemType: download
+    - title: Microsoft Edge for Business⏬  # scrolls down to hub page section
+      url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c2
-    - title: Microsoft Edge Insider Channels
-      url: https://www.microsoft.com/edge/download/insider
-      itemType: download
+    - title: Microsoft Edge for Developers⏬  # scrolls down to hub page section  # todo: space before emoji?
+      url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c3
-    - title: WebView2
-      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
-      itemType: download
+    - title: Help and support⏬ # scrolls down to hub page section
+      url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c4
-    - title: Microsoft Edge Roadmap
-      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
-      itemType: reference
+    - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
+      url: https://support.microsoft.com/microsoft-edge
+      itemType: how-to-guide
 
 # =============================================================================
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r2c1
-    - title: Microsoft Edge for Business  # scrolls down to hub page section
-      url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
-      itemType: training
+    - title: Microsoft Edge for Business
+      url: https://www.microsoft.com/edge/business/download
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c2
-    - title: Microsoft Edge for Developers  # scrolls down to hub page section
-      url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
-      itemType: training
+    - title: Microsoft Edge Insider preview channels
+      url: https://www.microsoft.com/edge/download/insider
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c3
-    - title: Help and Support  # scrolls down to hub page section
-      url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
-      itemType: training
+    - title: WebView2 Runtime
+      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
+      itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c4
-    - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
-      url: https://support.microsoft.com/microsoft-edge
-      itemType: training
+    - title: Roadmap entries for Microsoft Edge
+      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
+      itemType: whats-new
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
@@ -82,7 +82,7 @@ conceptualContent:
 # Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Business # < 60 chars (optional)
-      # summary:  # < 160 chars (optional)
+      summary: IT administrators, deploy and configure Microsoft Edge for Business. # < 160 chars (optional)
       items:
 
 # =============================================================================
@@ -192,13 +192,13 @@ conceptualContent:
 # =============================================================================
 # "Microsoft Edge for Developers" section of hub page - 2 rows of 4 cards
     - title: Microsoft Edge for Developers # < 60 chars (optional)
-    # summary:  # < 160 chars (optional)
+      summary: Develop for the web with Microsoft Edge.  # < 160 chars (optional)
       items:
 
 # =============================================================================
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
-# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
         - title: Web platform updates
           links:
             - text: Release notes for Microsoft Edge web platform
@@ -209,8 +209,12 @@ conceptualContent:
               url: ./web-platform/site-impacting-changes.md
               itemType: whats-new
 
-            - text: Use origin trials in Microsoft Edge
+            - text: Test experimental APIs and features by using origin trials
               url: ./origin-trials/index.md
+              itemType: whats-new
+
+            - text: Provide user-relevant ads with the Ad Selection API
+              url: ./web-platform/ad-selection-api.md
               itemType: whats-new
 
             - text: Prompt a built-in language model with the Prompt API
@@ -219,6 +223,10 @@ conceptualContent:
 
             - text: Summarize, write, and rewrite text with the Writing Assistance APIs
               url: ./web-platform/writing-assistance-apis.md
+              itemType: whats-new
+
+            - text: Translate text with the Translator API
+              url: ./web-platform/translator-api.md
               itemType: whats-new
 
 # -----------------------------------------------------------------------------
@@ -509,24 +517,41 @@ conceptualContent:
 additionalContent:
   # Supports up to 4 sections
   sections:
-    - title: Help and Support # < 60 chars (optional)
-      # summary: sectionsummary # < 160 chars (optional)
+# =============================================================================
+# Section
+    - title: Help and support
+      summary: Resources for end-users. # < 160 chars (optional)
       items:
 # -----------------------------------------------------------------------------
-# Card
+# Card - audience: End-users
         - title: Community Support on Microsoft Q&A
           summary: Get advice and answers from community experts.
           url: /answers/topics/ms-edge.html  # https://learn.microsoft.com/answers/tags/781/microsoft-edge
 # -----------------------------------------------------------------------------
-# Card
-        - title: Microsoft Support for business
-          summary: If your business needs immediate technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
-          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-# -----------------------------------------------------------------------------
-# Card
+# Card - audience: End-users
         - title: Microsoft Edge help & learning
-          summary: Support for end users about how to use Microsoft Edge features.
+          summary: How to use Microsoft Edge features.
           url: https://support.microsoft.com/microsoft-edge
+# -----------------------------------------------------------------------------
+# Card - audience: End-users
+        - title: Get to know Microsoft Edge
+          summary: Browser features and capabilities.
+          url: https://www.microsoft.com/edge/
+# -----------------------------------------------------------------------------
+# Card - audience: End-users
+        - title: Microsoft Edge Features & Tips
+          summary: End-user information.
+          url: https://www.microsoft.com/edge/features  # deeper than above url  # todo: remove a card?
+# =============================================================================
+# Section
+    - title: Help and support for IT administrators
+    # summary:  < 160 chars (optional)
+      items:
+# -----------------------------------------------------------------------------
+# Card - audience: Admins
+        - title: Microsoft Support for business
+          summary: If your business needs technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
+          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 
 # =============================================================================
 # "Reference and Legacy Docs" section of hub page - 1 row of 2 cards
