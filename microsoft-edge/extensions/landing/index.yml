@@ -131,7 +131,7 @@ landingContent:
           - text: App Developer Agreement Addendum for Microsoft Edge program users
             url: /legal/microsoft-edge/extensions/ada-addendum
 
-          - text: Developer policies for extensions at Microsoft Edge Add-ons
+          - text: Developer policies for the Microsoft Edge Add-ons store
             url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
@@ -225,3 +225,18 @@ landingContent:
 
           - text: Minimize an extension's impact on page load time
             url: ../developer-guide/minimize-page-load-time-impact.md
+
+# -----------------------------------------------------------------------------
+# Card r3c3
+  - title: User docs and resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Edge Add-ons site  # store
+            url: https://microsoftedge.microsoft.com
+
+          - text: Everything to know about browser extensions  # introduction for users
+            url: https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions
+
+          - text: Add, turn off, or remove extensions in Microsoft Edge  # support steps for users
+            url: https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026
