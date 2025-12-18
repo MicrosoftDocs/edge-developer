@@ -72,4 +72,4 @@ Items are ranked for popularity based on user ratings at Microsoft Edge Add-ons.
 <!-- ====================================================================== -->
 ## See also
 
-* [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
