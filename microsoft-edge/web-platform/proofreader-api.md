@@ -32,7 +32,7 @@ For introductory information about the Proofreader API, see [Proofreader API Exp
     * [Create a new session](#create-a-new-session)
         * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
     * [Run the Proofreader API](#run-the-proofreader-api)
-    * [USe the result of the Proofreader API](#use-the-result-of-the-proofreader-api)
+    * [Use the result of the Proofreader API](#use-the-result-of-the-proofreader-api)
     * [Destroy a session](#destroy-a-session)
         * [Destroy a session by using the destroy() method](#destroy-a-session-by-using-the-destroy-method)
         * [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller)
@@ -62,13 +62,13 @@ The Proofreader API uses a small language model (SLM) that runs on the same devi
 
 * **Reduced cost:** There's no cost associated with using a cloud AI service.
 
-* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
+* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and the model can also be used when the device is offline.
 
 * **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
 
 The Proofreader API use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for the user and developer.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
@@ -127,7 +127,7 @@ To use any of the Proofreader API in Microsoft Edge:
 
 1. Select **Enabled** next to the **Proofreader API for Phi mini** flag:
 
-   ![Flags page of browser](./proofreader-api-images/flags-proofreader-api.png)
+   ![Flags page of browser](./proofreader-api-images/flags-proofreader-api.png)<!-- todo: populate png -->
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
@@ -139,7 +139,7 @@ To use any of the Proofreader API in Microsoft Edge:
 
 
 <!-- ====================================================================== -->
-## See working a example
+## See a working example
 
 To see the Proofreader API in action, and review existing code that uses these APIs:
 
@@ -149,11 +149,11 @@ To see the Proofreader API in action, and review existing code that uses these A
 
 1. In the information banner at the top, check the status: it initially reads **Model downloading, please wait**:
 
-   ![Status indicator showing model downloading progress](./proofreader-api-images/model-downloading.png)
+   ![Status indicator showing model downloading progress](./proofreader-api-images/model-downloading.png)<!-- todo: populate png -->
 
    After the model has downloaded, the information banner reads **API and model ready**, indicating that the API and model can be used:
 
-   ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)
+   ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)<!-- todo: populate png -->
 
    If the model download doesn't start, restart Microsoft Edge and try again.
 
@@ -165,7 +165,7 @@ To see the Proofreader API in action, and review existing code that uses these A
 
    The output is generated in the response section of the page:
 
-   ![The Proofreader demo page with settings and a Proorfread button](./proofreader-api-images/proofreading.png)
+   ![The Proofreader demo page with settings and a Proorfread button](./proofreader-api-images/proofreading.png)<!-- todo: populate png -->
 
 See also:
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
