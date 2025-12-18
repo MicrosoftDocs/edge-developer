@@ -36,6 +36,8 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
+* [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
+* [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [Support](#support)
 * [See also](#see-also)
 
@@ -115,7 +117,7 @@ To upload the extension package:
 
 1. On the left, click **Packages**.  The **Packages** page opens.
 
-   You can only upload one package at a time. Your submission is blocked if the package upload isn't successful on the **Packages** page.
+   You can only upload one package at a time. Your submitted extension is blocked if the package upload isn't successful on the **Packages** page.
 
 1. To upload your package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page. Or you can select **Browse your files** to open a dialog to select the package to upload.
 
@@ -177,10 +179,10 @@ Define the specific markets in which you plan to offer your extension.  The defa
    |---|---|---|
    | **Category** | Required | The category that best describes the extension.  Listing the extension in the right category helps users find the extension easily and understand more about it.  |
    | **Privacy policy requirements** | Required | Specify whether the extension accesses, collects, or transmits any personal information.  If you select **No** but it's later determined that the extension does handle personal information, the certification process might fail.  If you select **Yes**, you must provide a Privacy policy URL, because this is a required field and submitting the extension won't be allowed without it. |
-   | **Privacy policy URL** | Required if the extension collects any privacy information | A valid privacy policy URL to communicate how the extension follows privacy laws and regulations.  You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.  To determine if the extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
+   | **Privacy policy URL** | Required if the extension collects any privacy information | A valid privacy policy URL to communicate how the extension follows privacy laws and regulations.  You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.  To determine if the extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
    | **Website URL** | Optional | A webpage that provides additional information about the extension.  The `Website URL` must point to a webpage on your own website, not the web listing for the extension at Microsoft Edge Add-ons.  The `Website URL` helps users learn more about the extension, its features, and any other relevant information. |
    | **Support contact details** | Optional | The URL to your support webpage, or the email address to contact your support team. |
-   | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies). |
+   | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
    
    The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users at Microsoft Edge Add-ons.
 
@@ -342,7 +344,7 @@ To duplicate an asset across languages:
 
 If you are linking to a video, make sure your video meets the following requirements:
 
-* Verify that the content of the YouTube video follows the [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies).
+* Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
 * Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
@@ -413,9 +415,9 @@ To add notes for certification:
 
    * Expected differences in functionality based on region or other user settings.
 
-   * If your submission is an update to an existing extension, include information about the changes made to the extension.
+   * If your submitted extension is an update to an existing extension, include information about the changes made to the extension.
 
-   * Any additional information that testers must understand about your submission.
+   * Any additional information that testers must understand about your submitted extension.
 
  1. Click the **Publish** button, in the upper right.
 
@@ -424,6 +426,28 @@ To add notes for certification:
    The submission then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
    After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
+
+
+<!-- ========================================================================== -->
+## Resolve any Partner Center errors
+
+After submitting the form, Partner Center might display an error in the **Properties** page, such as "Something went wrong.  Please try again. correlationId : undefined".
+
+For such errors, try the following fixes:
+
+* Clear the browser cache and cookies.
+
+* Try using InPrivate mode in Microsoft Edge, or Incognito mode in Google Chrome.
+
+* Try another browser, such as Microsoft Edge, Google Chrome, or Firefox.
+
+
+<!-- ========================================================================== -->
+## If the extension is flagged as potentially malware
+
+If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
+
+Make sure that your extension's code and functionality complies with all requirements and guidelines.  For security reasons, Microsoft doesn't disclose exact triggers.
 
 
 <!-- ========================================================================== -->
@@ -453,7 +477,7 @@ Microsoft Edge extensions:
 
 Developer Agreement & Legal:
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
-* [Developer policies for extensions at Microsoft Edge Add-ons](/legal/microsoft-edge/extensions/developer-policies)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 
 Support.microsoft.com:
 * [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 
