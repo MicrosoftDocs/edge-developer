@@ -229,6 +229,10 @@ conceptualContent:
               url: ./web-platform/translator-api.md
               itemType: whats-new
 
+            - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+              url: ./web-platform/proofreader-api.md
+              itemType: whats-new
+
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
         - title: Microsoft Edge DevTools
