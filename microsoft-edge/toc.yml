@@ -92,7 +92,7 @@
           href: ./origin-trials/index.md
           displayName: Experimental web platform features  # standard term eg in edge://flags
 
-        - name: Provide user-relevant ads with the Ad Selection API  # todo: make title parallel w/ siblings: use this api to do x
+        - name: Provide user-relevant ads with the Ad Selection API
           href: ./web-platform/ad-selection-api.md
 
         - name: Prompt a built-in language model with the Prompt API

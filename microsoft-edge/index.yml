@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 # hub page for Enterprise docset & Edge Dev docset; https://learn.microsoft.com/microsoft-edge/
 title: Microsoft Edge documentation
-summary: Explore documentation, references, and code samples to help IT administrators deploy Microsoft Edge, and to help developers develop with Microsoft Edge.  # < 400 chars
+summary: Documentation, references, and code samples to help IT administrators deploy Microsoft Edge, and to help developers develop with Microsoft Edge.  # < 400 chars
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -27,53 +27,53 @@ highlightedContent:
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-    - title: Microsoft Edge for Business
-      url: https://www.microsoft.com/edge/business/download
-      itemType: download
-
-# -----------------------------------------------------------------------------
-# Card r1c2
-    - title: Microsoft Edge Insider Channels
-      url: https://www.microsoft.com/edge/download/insider
-      itemType: download
-
-# -----------------------------------------------------------------------------
-# Card r1c3
-    - title: WebView2
-      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
-      itemType: download
-
-# -----------------------------------------------------------------------------
-# Card r1c4
-    - title: Microsoft Edge Roadmap
-      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
-      itemType: reference
-
-# =============================================================================
-# Row 2 (4 cards)
-# -----------------------------------------------------------------------------
-# Card r2c1   todo: these two cards nav down to two major sections, should be row 1, not row 2
-    - title: Microsoft Edge for Business  # scrolls down to hub page section
+    - title: Microsoft Edge for Business ⏬  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
       itemType: training
 
 # -----------------------------------------------------------------------------
-# Card r2c2
-    - title: Microsoft Edge for Developers  # scrolls down to hub page section
+# Card r1c2
+    - title: Microsoft Edge for Developers⏬  # scrolls down to hub page section  # todo: space before emoji?
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
       itemType: training
 
 # -----------------------------------------------------------------------------
-# Card r2c3
-    - title: Help and support  # scrolls down to hub page section
+# Card r1c3
+    - title: Help and support ⏬ # scrolls down to hub page section
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
       itemType: training
 
 # -----------------------------------------------------------------------------
-# Card r2c4
+# Card r1c4
     - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
       url: https://support.microsoft.com/microsoft-edge
       itemType: training
+
+# =============================================================================
+# Row 2 (4 cards)
+# -----------------------------------------------------------------------------
+# Card r2c1
+    - title: Download Microsoft Edge for Business
+      url: https://www.microsoft.com/edge/business/download
+      itemType: download
+
+# -----------------------------------------------------------------------------
+# Card r2c2
+    - title: Download preview (Insider) channels of Microsoft Edge
+      url: https://www.microsoft.com/edge/download/insider
+      itemType: download
+
+# -----------------------------------------------------------------------------
+# Card r2c3
+    - title: Download the WebView2 control
+      url: https://developer.microsoft.com/microsoft-edge/webview2/#download
+      itemType: download
+
+# -----------------------------------------------------------------------------
+# Card r2c4
+    - title: Roadmap for Microsoft Edge
+      url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
+      itemType: reference
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
@@ -82,7 +82,7 @@ conceptualContent:
 # Supports up to 3 subsections
   sections:
     - title: Microsoft Edge for Business # < 60 chars (optional)
-      summary: Deploy and configure Microsoft Edge for Business. # < 160 chars (optional)
+      summary: IT administrators, deploy and configure Microsoft Edge for Business. # < 160 chars (optional)
       items:
 
 # =============================================================================
@@ -213,12 +213,20 @@ conceptualContent:
               url: ./origin-trials/index.md
               itemType: whats-new
 
+            - text: Provide user-relevant ads with the Ad Selection API
+              url: ./web-platform/ad-selection-api.md
+              itemType: whats-new
+
             - text: Prompt a built-in language model with the Prompt API
               url: ./web-platform/prompt-api.md
               itemType: whats-new
 
             - text: Summarize, write, and rewrite text with the Writing Assistance APIs
               url: ./web-platform/writing-assistance-apis.md
+              itemType: whats-new
+
+            - text: Translate text with the Translator API
+              url: ./web-platform/translator-api.md
               itemType: whats-new
 
 # -----------------------------------------------------------------------------
@@ -512,7 +520,7 @@ additionalContent:
 # =============================================================================
 # Section
     - title: Help and support
-      summary: Help and support for end-users # < 160 chars (optional)
+      summary: Resources for end-users. # < 160 chars (optional)
       items:
 # -----------------------------------------------------------------------------
 # Card - audience: End-users
@@ -542,7 +550,7 @@ additionalContent:
 # -----------------------------------------------------------------------------
 # Card - audience: Admins
         - title: Microsoft Support for business
-          summary: IT Admins, if your business needs technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
+          summary: If your business needs technical support for Microsoft Edge, 1-on-1 support is available using a variety of plans.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
 
 # =============================================================================

@@ -16,7 +16,7 @@ Use origin trials to try out experimental APIs (features) on your own live site 
    * [How the origin trial token works](#how-the-origin-trial-token-works)
 * [Registering for an origin trial](#registering-for-an-origin-trial)
 * [Using the origin trial token at your website](#using-the-origin-trial-token-at-your-website)
-   * [Option 1: A <meta> tag within the <head> element of a webpage](#option-1-a-meta-tag-within-the-head-element-of-a-webpage)
+   * [Option 1: A \<meta\> tag within the \<head\> element of a webpage](#option-1-a-meta-tag-within-the-head-element-of-a-webpage)
    * [Option 2: An HTTP header in your HTTP server response](#option-2-an-http-header-in-your-http-server-response)
    * [Opting out of an origin trial experiment](#opting-out-of-an-origin-trial-experiment)
 * [Performing feature detection and providing graceful fallback](#performing-feature-detection-and-providing-graceful-fallback)

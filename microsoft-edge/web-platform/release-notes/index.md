@@ -13,8 +13,6 @@ These release notes cover the new web platform features and updates in Microsoft
 
 To stay up-to-date and get the latest web platform features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
-
 
 <!-- ====================================================================== -->
 ## See also
@@ -34,6 +32,3 @@ Progressive Web Apps
 
 WebView2
 * [Release Notes for the WebView2 SDK](../../webview2/release-notes/index.md)
-
-Store
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.
