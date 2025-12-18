@@ -1,15 +1,36 @@
 ---
-title: Use origin trials in Microsoft Edge
-description: Safely experiment for a fixed period of time and provide feedback on new platform features.
+title: Test experimental APIs and features by using origin trials
+description: Safely experiment with experimental APIs for a fixed period of time, and provide feedback on new platform features (APIs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.date: 10/18/2024
 ---
-# Use origin trials in Microsoft Edge
+# Test experimental APIs and features by using origin trials
 
-Use origin trials to try out experimental APIs on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
+Use origin trials to try out experimental APIs (features) on your own live site for a limited period of time.  When using origin trials, users of Microsoft Edge that visit your site can run code that uses experimental APIs.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+   * [How the origin trial token works](#how-the-origin-trial-token-works)
+* [Registering for an origin trial](#registering-for-an-origin-trial)
+* [Using the origin trial token at your website](#using-the-origin-trial-token-at-your-website)
+   * [Option 1: A \<meta\> tag within the \<head\> element of a webpage](#option-1-a-meta-tag-within-the-head-element-of-a-webpage)
+   * [Option 2: An HTTP header in your HTTP server response](#option-2-an-http-header-in-your-http-server-response)
+   * [Opting out of an origin trial experiment](#opting-out-of-an-origin-trial-experiment)
+* [Performing feature detection and providing graceful fallback](#performing-feature-detection-and-providing-graceful-fallback)
+* [Testing an origin trial at localhost](#testing-an-origin-trial-at-localhost)
+* [Renewing an origin trial token](#renewing-an-origin-trial-token)
+* [Duration of an origin trial](#duration-of-an-origin-trial)
+   * [Scheduled expiration date](#scheduled-expiration-date)
+   * [Early end](#early-end)
+* [Providing feedback about an origin trial](#providing-feedback-about-an-origin-trial)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 To see a list of the available origin trials and register your origin to try out any of the origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials).  To assess the suitability of using the experimental APIs on your website, check the minimum version requirements for Microsoft Edge, and check the trial expiration date.
 

@@ -43,7 +43,7 @@ landingContent:
 # =============================================================================
 # Row 1
 # -----------------------------------------------------------------------------
-# Card for toc bucket 1 (Release notes) & 2 (Experimental web platform features) - r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
   - title: Web platform updates
     linkLists:
       - linkListType: whats-new
@@ -54,14 +54,20 @@ landingContent:
           - text: Site compatibility-impacting changes
             url: ../web-platform/site-impacting-changes.md
 
-          - text: Use origin trials in Microsoft Edge
+          - text: Test experimental APIs and features by using origin trials
             url: ../origin-trials/index.md
+
+          - text: Provide user-relevant ads with the Ad Selection API
+            url: ../web-platform/ad-selection-api.md
 
           - text: Prompt a built-in language model with the Prompt API
             url: ../web-platform/prompt-api.md
 
           - text: Summarize, write, and rewrite text with the Writing Assistance APIs
             url: ../web-platform/writing-assistance-apis.md
+
+          - text: Translate text with the Translator API
+            url: ../web-platform/translator-api.md
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
@@ -264,9 +270,6 @@ landingContent:
 
           - text: View a JSON file or server response with formatting
             url: ../web-platform/json-viewer.md
-
-          - text: Sign up for the Ad Selection API  # todo: moved to "Experimental web platform features" toc bucket, delete?
-            url: ../web-platform/ad-selection-api.md
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 9 - r3c2
