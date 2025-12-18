@@ -27,7 +27,7 @@ highlightedContent:
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r1c1
-    - title: Microsoft Edge for Business ⏬  # scrolls down to hub page section
+    - title: Microsoft Edge for Business⏬  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
       itemType: training
 
@@ -39,7 +39,7 @@ highlightedContent:
 
 # -----------------------------------------------------------------------------
 # Card r1c3
-    - title: Help and support ⏬ # scrolls down to hub page section
+    - title: Help and support⏬ # scrolls down to hub page section
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
       itemType: training
 
@@ -53,25 +53,25 @@ highlightedContent:
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
 # Card r2c1
-    - title: Download Microsoft Edge for Business
+    - title: Microsoft Edge for Business
       url: https://www.microsoft.com/edge/business/download
       itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c2
-    - title: Download preview (Insider) channels of Microsoft Edge
+    - title: Insider preview channels of Microsoft Edge
       url: https://www.microsoft.com/edge/download/insider
       itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c3
-    - title: Download the WebView2 control
+    - title: WebView2 Runtime
       url: https://developer.microsoft.com/microsoft-edge/webview2/#download
       itemType: download
 
 # -----------------------------------------------------------------------------
 # Card r2c4
-    - title: Roadmap for Microsoft Edge
+    - title: Roadmap entries for Microsoft Edge
       url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
       itemType: reference
 
