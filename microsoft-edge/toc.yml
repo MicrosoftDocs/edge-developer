@@ -2,7 +2,7 @@
 # TOC sections:
 # top leaf nodes
 # Release notes
-# Experimental web platform features
+# Experimental APIs for Microsoft Edge
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
 # Microsoft Edge extensions
@@ -85,16 +85,14 @@
           href: ./web-platform/site-impacting-changes.md
 # /Release notes
 # =============================================================================
-# Experimental web platform features
-    - name: Experimental web platform features
+# Experimental APIs for Microsoft Edge
+    - name: Experimental APIs for Microsoft Edge
       items:
-#       - name: Experimental web platform features
-#         href: ./dir/filename.md
-
-        - name: Use origin trials in Microsoft Edge
+        - name: Test experimental APIs and features by using origin trials
           href: ./origin-trials/index.md
+          displayName: Experimental web platform features  # standard term eg in edge://flags
 
-        - name: Sign up for the Ad Selection API
+        - name: Provide user-relevant ads with the Ad Selection API
           href: ./web-platform/ad-selection-api.md
 
         - name: Prompt a built-in language model with the Prompt API
@@ -105,7 +103,7 @@
 
         - name: Translate text with the Translator API
           href: ./web-platform/translator-api.md
-# /Experimental web platform features
+# /Experimental APIs for Microsoft Edge
 # =============================================================================
 # -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
@@ -167,7 +165,6 @@
 # -------------------------------------
             - name: Archive
               items:
-
                 - name: Microsoft Edge 133
                   href: ./devtools/whats-new/2025/02/devtools-133.md
                   displayName: What's new in DevTools (Microsoft Edge 133)  # page title
@@ -1129,7 +1126,7 @@
     - name: Microsoft Edge extensions
       items:
         - name: Microsoft Edge extensions documentation
-          href: ./extensions/landing/index.yml  # landing page
+          href: ./extensions/landing/index.yml
           displayName: add-ons, landing
 
         - name: Overview of Microsoft Edge extensions
@@ -1148,6 +1145,7 @@
 
             - name: Sideload an extension to install and test it locally
               href: ./extensions/getting-started/extension-sideloading.md
+
 # -----------------------------------------------------------------------------
         - name: Samples
           items:
@@ -1212,7 +1210,7 @@
                   href: /legal/microsoft-edge/extensions/ada-addendum
                   displayName: policy, policies
 
-                - name: Developer policies for extensions at Microsoft Edge Add-ons
+                - name: Developer policies for the Microsoft Edge Add-ons store
                   href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
 # -----------------------------------------------------------------------------
