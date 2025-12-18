@@ -77,7 +77,7 @@ Application Title Meta Tag uses the following features:
 ## PWA Background Sync
 <!-- "MicrosoftEdge / Demos" repo -->
 
-The PWA Background Sync demo lets you send messages even when offline.  If you're offline when sending a message, the app uses Background Sync to send the message later, when you're back online.<!-- todo: update/sync main Readme to be less general, more specific to this demo: https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas -->
+The PWA Background Sync demo lets you send chat messages even when offline.  If you're offline when sending a message, the app uses Background Sync to send the message later, when you're back online.<!-- todo: update/sync main Readme to be less general, more specific to this demo: https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas -->
 
 ![PWA Background Sync API demo](./index-images/background-sync.png)
 

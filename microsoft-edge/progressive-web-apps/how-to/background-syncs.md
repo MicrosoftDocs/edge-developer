@@ -32,7 +32,6 @@ Although these APIs have similar names, they are different in nature.
    * [Request a sync](#request-a-sync)
    * [React to the sync event](#react-to-the-sync-event)
    * [PWA Background Sync demo app](#pwa-background-sync-demo-app)
-   * [Troubleshooting](#troubleshooting)
    * [Debug background syncs with DevTools](#debug-background-syncs-with-devtools)
 * [Use the Periodic Background Sync API to regularly get fresh content](#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
    * [Periodic sync when on a known network](#periodic-sync-when-on-a-known-network)
