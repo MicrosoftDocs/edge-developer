@@ -31,7 +31,7 @@ Although these APIs have similar names, they are different in nature.
    * [Check for support](#check-for-support)
    * [Request a sync](#request-a-sync)
    * [React to the sync event](#react-to-the-sync-event)
-   * [PWA Background Sync demo app](#pwa-background-sync-demo-app)
+   * [Demo app: PWA Background Sync](#demo-app-pwa-background-sync)
    * [Debug background syncs with DevTools](#debug-background-syncs-with-devtools)
 * [Use the Periodic Background Sync API to regularly get fresh content](#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
    * [Periodic sync when on a known network](#periodic-sync-when-on-a-known-network)
@@ -39,7 +39,7 @@ Although these APIs have similar names, they are different in nature.
    * [Ask the user for permission](#ask-the-user-for-permission)
    * [Register a periodic sync](#register-a-periodic-sync)
    * [React to periodic sync events](#react-to-periodic-sync-events)
-   * [DevTools Tips demo app](#devtools-tips-demo-app)
+   * [Demo app: DevTools Tips](#demo-app-devtools-tips)
    * [Debug periodic background syncs with DevTools](#debug-periodic-background-syncs-with-devtools)
 * [Use the Background Fetch API to fetch large files when the app or service worker isn't running](#use-the-background-fetch-api-to-fetch-large-files-when-the-app-or-service-worker-isnt-running)
    * [Check for support](#check-for-support-2)
@@ -127,7 +127,7 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 
 
 <!-- ------------------------------ -->
-#### PWA Background Sync demo app
+#### Demo app: PWA Background Sync
 
 **PWA Background Sync** is a demo app that uses the Background Sync API to fetch information later, if the user is offline:
 
@@ -339,7 +339,7 @@ For more information about the `PeriodicSync` event, the `ServiceWorkerRegistrat
 
 
 <!-- ------------------------------ -->
-#### DevTools Tips demo app
+#### Demo app: DevTools Tips
 
 [DevTools Tips](https://devtoolstips.org/) is a PWA that uses the Periodic Background Sync API.  The [DevTools Tips] PWA fetches new developer tools tips daily and stores them in cache, so that users can access them next time they open the app, whether they are online or not.
 
