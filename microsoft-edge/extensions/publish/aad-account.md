@@ -10,7 +10,9 @@ ms.date: 11/03/2022
 ---
 # Add users to the Microsoft Edge program
 
-To help manage your Microsoft Edge extensions, you can add more users to an existing Partner Center account.  To manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
+To help manage your Microsoft Edge extensions, you can add more users to your Microsoft Edge program and your existing Partner Center developer account.
+
+To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.  To manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
 
 A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  For a summary of the types of accounts used to publish extensions, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
 
