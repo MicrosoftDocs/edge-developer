@@ -6,13 +6,42 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/01/2022
+ms.date: 12/12/2025
 ---
 # Register as a Microsoft Edge extension developer
+<!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/create-dev-account -->
 
-This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account types](#account-types) below.
+To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login), as described below.
 
-If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link to a suitable account. You'll learn how to create a Microsoft account (MSA) if you don't have one, and help you link the Microsoft account (MSA) to your Partner Center account.
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Types of accounts related to publishing Microsoft Edge extensions](#types-of-accounts-related-to-publishing-microsoft-edge-extensions)
+* [Step 1: Create a Microsoft account (MSA)](#step-1-create-a-microsoft-account-msa)
+* [Step 2: Fill in the Edge Developer Account Registration form](#step-2-fill-in-the-edge-developer-account-registration-form)
+   * [Account country/region](#account-countryregion)
+   * [Account type](#account-type)
+      * [Individual account](#individual-account)
+      * [Company account](#company-account)
+   * [Publisher display name (Company name)](#publisher-display-name-company-name)
+   * [Contact info](#contact-info)
+   * [Company approver](#company-approver)
+   * [Developer agreement](#developer-agreement)
+* [Step 4: Check enrollment verification status](#step-4-check-enrollment-verification-status)
+   * [If account verification is delayed](#if-account-verification-is-delayed)
+* [Step 5: Add users to the account](#step-5-add-users-to-the-account)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+There is no registration fee for submitting extensions to the Microsoft Edge program.
+
+To register for the Microsoft Edge program, you need a Microsoft account (MSA).  This article helps you create a Partner Center account that you can use to submit a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  This article covers company accounts (for enterprise developers), and individual accounts (for individual developers), as described in [Account type](#account-type), below.
+
+If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article helps you create and link to a suitable account.  You'll learn:
+* How to create a Microsoft account (MSA), if you don't have one.
+* How to link the MSA to your Partner Center account.
 
 To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Microsoft Entra tenant.
 
@@ -22,128 +51,185 @@ Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-
 <!-- ====================================================================== -->
 ## Types of accounts related to publishing Microsoft Edge extensions
 
+To publish a Microsoft Edge extension, you need a Partner Center developer account that has a Microsoft account (MSA) as the Primary Owner.
+
+Supported account types:
+
 | Type of account | Description |
 |---|---|
 | _Microsoft account (MSA)_ | An Outlook.com, Live.com, or Hotmail.com account. |
 | _GitHub account_ | A user account at GitHub.com.  You can use your personal GitHub account to sign in to Partner Center — a Microsoft account (MSA) will be created for you. |
 | _Partner Center account_, _Partner Center developer account_ | A _Partner Center account_ is an account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a _Partner Center developer account_, which is a Partner Center account that has a Microsoft account (MSA) as the Primary Owner. |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
-| _Microsoft Entra ID_ | A Microsoft Entra ID account; see [What is Microsoft Entra ID?](/entra/fundamentals/whatis) |
-| _Microsoft Entra tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Microsoft Entra ID that an organization or app developer receives at the beginning of a relationship with Microsoft.  See [Quickstart: Set up a Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant).<!-- dest titles --> |
+| _Microsoft Entra ID_ | A Microsoft Entra ID account; see [What is Microsoft Entra?](/entra/fundamentals/whatis) |
+| _Microsoft Entra tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Microsoft Entra ID that an organization or app developer receives at the beginning of a relationship with Microsoft.  See [Set up a new Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant). |
 
 
 <!-- ====================================================================== -->
-## Create a Microsoft account 
+## Step 1: Create a Microsoft account (MSA)
 
-To submit an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to sign in to  Partner Center. Follow the prompts displayed in the dialogs to automatically create a Microsoft account (MSA).
+To register for the Microsoft Edge program, you need a Microsoft account (MSA).  A _Microsoft account_ (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
-There is no registration fee for submitting extensions to the Microsoft Edge program.
+If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't an MSA, you must either:
 
-If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't a Microsoft account (MSA), you must either:
-*  Use an existing Microsoft account (MSA) to register with the Microsoft Edge program.
-*  Create a new Microsoft account (MSA).  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
+*  Use an existing MSA to register with the Microsoft Edge program.
 
-To create a Microsoft account (MSA):
-
-1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Register and sign in to Partner Center using a GitHub account](./github.md).
-
-1. If you aren't using your GitHub account to create the Microsoft account (MSA), see [account.microsoft.com](https://account.microsoft.com/account).
-
-1. Select **Create a Microsoft account**.
-
-1. Complete the registration steps.
-
-If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
-
-The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Microsoft Entra tenants with that account, to be able to manage extensions.
+*  Create a new MSA.
 
 
-<!-- ====================================================================== -->
-## Enroll in the Microsoft Edge program on Partner Center
+If you don't have an MSA:
 
-<!-- 1. Go to the [webpage about Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.  Select the **Become a partner** button or the **Visit Partner Center** button. -->
+1. Decide if you want to use your existing GitHub account to create an MSA.  See [Register and sign in to Partner Center using a GitHub account](./github.md).
 
-1. Go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Partner Center**.
+1. If you aren't using your GitHub account to create the MSA, go to [Microsoft account](https://account.microsoft.com/account).
 
-1. If you have a Microsoft account (MSA), use it to sign into Partner Center.  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  Then fill in the Microsoft Edge program registration form, using the registration form in the next section.
+   1. At the bottom of the page, click **Create a Microsoft account**.
+   1. Complete the registration steps.
 
-1. If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or sign in to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to sign in to Partner Center using your existing personal GitHub account, open [Register and sign in to Partner Center using a GitHub account](./github.md) in a new tab or window, and follow the steps in the article.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
+If you have a Partner Center account for which the Primary Owner is an MSA, use that account to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
-1. After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  To help you fill in the registration form, see the next section.
-
-1. Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
-
-1. To complete your enrollment, select **Finish**.
+The Microsoft Edge program doesn't support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Microsoft Entra tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
-## Filling in the registration form
+## Step 2: Fill in the Edge Developer Account Registration form
 
-Fill in the fields of the registration form as follows.
+To enroll in the Microsoft Edge program on Partner Center:
+
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login).
+
+1. If you have an existing Microsoft account (MSA) or you created a new MSA, use it to sign into Partner Center:
+
+   ![Sign in](./create-dev-account-images/sign-in.png)
+
+   The **Microsoft Edge Developer Account Registration** form might immediately appear.  If not:
+
+1. In Partner Center, navigate to [Account settings | Programs](https://partner.microsoft.com/dashboard/account/v3/settings/programs), and then in the **Microsoft Edge** card, click the **Get started** link.
+
+   The **Microsoft Edge Developer Account Registration** form opens in a new tab, showing the **Account country/region** dropdown list and a **Finish** button.
 
 
 <!-- ------------------------------ -->
 #### Account country/region
+<!-- depending how/when you enter into the form page: -->
+<!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo -->
+<!-- https://partner.microsoft.com/en-US/dashboard/Registration/AccountInfo?accountProgram=MSEdgeAddons -->
 
-This field is either where you live, or where your business is located.
+In the **Account country/region** dropdown list, select either where you live, or where your business is located.  **Important:** After enrollment, the value of this field is read-only.
 
-> [!IMPORTANT]
-> After enrollment, the value of this field is read-only.
+![Country region](./create-dev-account-images/country-region.png)
+
+Additional sections are added below the dropdown list, and the **Finish** button is pushed down out of view.
 
 
 <!-- ------------------------------ -->
-#### Account types
+#### Account type
 
-The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+In the **Account type** section, select the **Individual** or **Company** option button.  **Important:** After enrollment, the value of this field can't be changed.
 
-> [!IMPORTANT]
-> After enrollment, you aren't able to change the value of this field.
+![Account type](./create-dev-account-images/account-type.png)
+
+The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) offers both individual and company accounts, described below.  Both account types enable you to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
 
 <!-- ---------- -->
 ###### Individual account
 
-An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter and involves verifying that the publisher display name is available.
+Develop and publish extensions as an individual or unincorporated group.
+
+An individual account is appropriate for a developer who isn't associated with a company.  The account verification process is shorter, and involves verifying that the publisher display name is available.
 
 
 <!-- ---------- -->
 ###### Company account
 
-A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
+Develop and publish extensions using your registered business name.
+
+A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you're authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
 For a company account, it's crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program.  This verification is needed to publish an extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  See [Verify your company account information](./verify-microsoft-edge-program.md).
 
 
 <!-- ------------------------------ -->
-#### Publisher display name
+#### Publisher display name (Company name)
 
-This field contains the name that's displayed at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+In the **Publisher display name (Company name)** text box, enter the company name to display at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
+
+![Company name](./create-dev-account-images/company-name.png)
+
+To use a particular name, that name must be available, and you must have the rights to use it.  For a company account, this must be the registered business name of your organization.
 
 The maximum length for this field is fifty (50) characters.
 
 
 <!-- ------------------------------ -->
-#### Contact details
+#### Contact info
 
-This field contains any contact information that Microsoft uses to contact you about any account issues.  After registration is complete, you receive an email confirmation.  For a company account, you must use the registered email address associated with your organization.
+In the **Contact info** section, enter contact information that Microsoft will use to contact you about any account issues:
+
+![Contact info](./create-dev-account-images/contact-info.png)
+
+For a company account, you must use the registered email address that's associated with your organization.
+
+After registration is complete, you receive a confirmation email.  
 
 
 <!-- ------------------------------ -->
 #### Company approver
 
-For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.
+For a company account, you must provide the contact information of your company approver.  If you selected the **Company** option button in the **Account type** section, the **Company approver** section appears:
+
+![Company approver](./create-dev-account-images/company-approver.png)
+
+The contact information includes name, email address, and phone number.  As a part of the account verification process, Microsoft contacts the specified company approver, to verify that you are authorized to create and manage this account on behalf of your organization.
+
+
+<!-- ------------------------------ -->
+#### Developer agreement
+
+1. In the **Developer agreement** section, click the **App Developer Agreement** link, and then read the [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905).
+
+   ![Developer agreement section and Finish button](./create-dev-account-images/agreement-finish.png)
+
+1. In the **Microsoft Edge Developer Account Registration** form, select the **I accept the terms and conditions** checkbox.
+
+1. Click the **Finish** button.
+
+You've now registered as a developer.  Microsoft verifies your account enrollment, and then sends you a confirmation email.
 
 
 <!-- ====================================================================== -->
-## Next steps
+## Step 4: Check enrollment verification status
 
-To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To check the verification status of your account enrollment, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login) and then click the **Open Account Settings** link:
 
-* [Publish a Microsoft Edge extension](./publish-extension.md)
+![Open account settings](./create-dev-account-images/open-account-settings.png)
 
-* [Extension concepts and architecture](../getting-started/index.md)
+While you wait for the account verification process to complete, you can continue to develop, test, and prepare your Microsoft Edge extension.  See [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
 
-* [Add users to the Microsoft Edge program](./aad-account.md) - Add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
+
+<!-- ------------------------------ -->
+#### If account verification is delayed
+
+If your company account enrollment is stuck in "Pending" or "Action Required" status, try the following fixes.
+
+Ensure that all documents (such as utility bills, DUNS ID, or government records) are:
+* Clear, complete, and match your legal business profile.
+* Uploaded in the correct section at Partner Center, under [Account settings | Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo).
+
+If your application was rejected: 
+* In the **Legal Info** tab, click **Fix now**.
+* Re-upload documents with comments explaining your appeal.
+
+Switching from a company to an individual account is not supported.
+
+
+<!-- ====================================================================== -->
+## Step 5: Add users to the account
+
+For a company account, after account verification is complete, you can add users to the Edge program.
+
+See [Add users to the Microsoft Edge program](./aad-account.md).
 
 
 <!-- ====================================================================== -->
@@ -152,16 +238,18 @@ To display your verification status, go to [Partner Center](https://partner.micr
 
 * [Register and sign in to Partner Center using a GitHub account](./github.md)
 * [Verify your company account information](./verify-microsoft-edge-program.md)
+* [Step 1: Prepare the extension to be submitted](./publish-extension.md#step-1-prepare-the-extension-to-be-submitted) in _Publish a Microsoft Edge extension_.
 * [Add users to the Microsoft Edge program](./aad-account.md)
-* [Publish a Microsoft Edge extension](./publish-extension.md)
-* [Extension concepts and architecture](../getting-started/index.md)
+
+Policies:
+* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
 
 Entra:
-* [What is Microsoft Entra ID?](/entra/fundamentals/whatis)
-* [Quickstart: Set up a Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant)<!-- dest titles -->
+* [What is Microsoft Entra?](/entra/fundamentals/whatis)
+* [Set up a new Microsoft Entra tenant](/azure/active-directory/develop/quickstart-create-new-tenant)
 
-Other sites:
-* [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
+Other Microsoft.com sites:
+* [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login)
+   * [Account settings | Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo)
 * [account.microsoft.com](https://account.microsoft.com/account)
-* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.
