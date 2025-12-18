@@ -108,7 +108,7 @@ To submit your app to the [Microsoft Store](https://apps.microsoft.com):
 
 1.  On the **Packages** prompt, select the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.
 
-After you complete your submission, your app is reviewed, typically within 24 to 48 hours.  After you receive approval, your PWA is available in the Microsoft Store.
+After you submit the app, the app is reviewed, typically within 24 to 48 hours.  After the app is approved, your PWA is available in the Microsoft Store.
 
 
 <!-- ====================================================================== -->
