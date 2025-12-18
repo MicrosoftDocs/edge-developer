@@ -77,25 +77,24 @@ Application Title Meta Tag uses the following features:
 ## PWA Background Sync
 <!-- "MicrosoftEdge / Demos" repo -->
 
-This simple PWA demo lets you search for made-up movies and store them locally.
+The PWA Background Sync demo lets you send messages even when offline.  If you're offline when sending a message, the app uses Background Sync to send the message later, when you're back online.<!-- todo: update/sync main Readme to be less general, more specific to this demo: https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas -->
 
 ![PWA Background Sync API demo](./index-images/background-sync.png)
 
 [Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/), [App](https://microsoftedge.github.io/Demos/pwa-background-sync/).
 
-My Movie List uses the following features:
+The PWA Background Sync API demo uses the following features:
 
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Synchronize and update a PWA in the background](../how-to/background-syncs.md) |
-| Notifications | When the information about a movie is retrieved, a notification is sent so the user can re-engage with the app. | [Display notifications in the action center](../how-to/notifications-badges.md#display-notifications-in-the-action-center) |
+| Background Sync | Enables using the PWA when offline; synchronizes data with the server when the network connection is restored. | [Synchronize and update a PWA in the background](../how-to/background-syncs.md) |
 
 
 <!-- ====================================================================== -->
 ## PWA file handlers
 <!-- "MicrosoftEdge / Demos" repo -->
 
-The `file_handlers` web app manifest member enables a PWA to handle file types like a native application does.
+The PWA file handlers app handles `*.txt` files like a native application does.
 
 ![The "PWA file handlers" demo app](./index-images/file-handlers.png)
 
@@ -103,13 +102,9 @@ The `file_handlers` web app manifest member enables a PWA to handle file types l
 
 The PWA file handlers app uses the following features:
 
-<!-- todo: check each row for relevance, maybe delete rows.  table rows were originally for https://github.com/captainbrosset/mytracks/ but now for PWA file handlers demo app: -->
 | Feature | Description | Documentation |
 |:--- |:--- |:--- |
-| File Handling | The PWA file handlers app natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
-| Window Controls Overlay | The space normally reserved to the title bar is used by the PWA file handlers app Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
-| Protocol Handling | The PWA file handlers app handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
-| Shortcuts | The PWA file handlers app defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
+| File Handling | The `file_handlers` web app manifest member enables a PWA to handle file types like a native application does. | [Handle files in a PWA](../how-to/handle-files.md) |
 
 
 <!-- ====================================================================== -->

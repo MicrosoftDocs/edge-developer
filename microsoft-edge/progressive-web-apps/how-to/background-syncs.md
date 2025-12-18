@@ -141,6 +141,7 @@ To use the demo:
 
 1. Go to the [PWA Background Sync API demo](https://microsoftedge.github.io/Demos/pwa-background-sync/) in a new window or tab.
 
+   <!-- ---------- -->
    **Install the app:**
 
 1. In the Address bar, click the **App available. Install PWA Background Sync API demo** (![App available icon](./background-syncs-images/app-available-icon.png)) button.
@@ -157,6 +158,7 @@ To use the demo:
 
 1. Click the **Yes** button.
 
+   <!-- ---------- -->
    **Use the app, connected to the network:**
 
 1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello**, and then click the **Send** button.
@@ -165,6 +167,7 @@ To use the demo:
 
    ![Comment entered in the demo app](./background-syncs-images/enter-comment.png)
 
+   <!-- ---------- -->
    **Disconnect from the network:**
 
 1. Right-click within the app window, and then select **Inspect**.
@@ -179,6 +182,7 @@ To use the demo:
 
    A warning icon is added to the **Network** tab, to remind you that there's network throttling.
 
+   <!-- ---------- -->
    **Use the app, disconnected from the network:**
 
 1. In the installed **PWA Background Sync API demo** app, in the **Comment** text box, enter a comment, such as **Hello again**, and then click the **Send** button.
@@ -189,46 +193,37 @@ To use the demo:
 
 1. Click the **Try sending again** button.
 
-   Within the message rectangle, the status remains *Failed*❌.
-   Or, the status changes to *Will try later*🛜, and the **Try sending again** button goes away:
+   Within the message rectangle, the status changes to *Will try later*🛜, and the **Try sending again** button goes away:
 
    ![Will try later](./background-syncs-images/will-try-later.png)<!-- 1st use -->
 
+   If the status remains *Failed*❌, you can reset the service worker so that the status becomes *Will try later*🛜 when appropriate:<!-- todo: when fixed, remove or comment out -->
+
+   1. In DevTools, select the **Application** (![Application icon](./background-syncs-images/application-icon.png)) tool.
+
+   1. In the navigation pane on the left, select **Service workers**, and then in the upper right, click **Unregister**.
+
+   1. In the app window, right-click in the webpage, and then select **Refresh**.<!-- todo: maybe comment out (keep for maintainers), and file bug to investigate if this is an issue with the demo page, or with the implementation of Background Sync in Edge -->
+
+   <!-- ---------- -->
    **Connect to the network:**
 
 1. In the dedicated DevTools window, in the **Network throttling** dropdown list, instead of **Offline**, select **No throttling**.
 
    The throttling warning icon is removed from the **Network** tab.
 
+   <!-- ---------- -->
    **Use the app, connected to the network again:**
 
 1. Switch to the installed **PWA Background Sync API demo** app.
 
-1. If the **Try sending again** button still appears, click it.
-
-   The displayed status is *Sent*✅.
-
-   Or, as soon as you restored the network connection, the message was sent, and the displayed status is now *Sent*✅:
+   The displayed status is *Sent*✅:
 
    ![Sent](./background-syncs-images/sent-after-removed-throttling.png)
 
 1. Optionally, right-click in the webpage, and then select **Refresh**.
 
    The messages are removed.
-
-
-<!-- ------------------------------ -->
-#### Troubleshooting
-
-In the above steps, you might click the **Try sending again** button, but the status remains *Failed*❌ (and the **Try sending again** button remains), instead of the status becoming *Will try later*🛜 as intended.
-
-To reset the service worker so that the status becomes *Will try later*🛜 when appropriate:
-
-1. In DevTools, open the **Application** (![Application icon](./background-syncs-images/application-icon.png)) tool.
-
-1. In the navigation pane on the left, select **Service workers**, and then in the upper right, click **Unregister**.
-
-1. In the app window, right-click in the webpage, and then select **Refresh**.
 
 
 <!-- ------------------------------ -->
