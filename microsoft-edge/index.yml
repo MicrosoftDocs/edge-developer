@@ -29,25 +29,25 @@ highlightedContent:
 # Card r1c1
     - title: Microsoft Edge for Business⏬  # scrolls down to hub page section
       url: /microsoft-edge/index#microsoft-edge-for-business  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-business
-      itemType: training
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c2
     - title: Microsoft Edge for Developers⏬  # scrolls down to hub page section  # todo: space before emoji?
       url: /microsoft-edge/index#microsoft-edge-for-developers  # https://learn.microsoft.com/microsoft-edge/#microsoft-edge-for-developers
-      itemType: training
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c3
     - title: Help and support⏬ # scrolls down to hub page section
       url: /microsoft-edge/index#help-and-support  # https://learn.microsoft.com/microsoft-edge/#help-and-support
-      itemType: training
+      itemType: overview
 
 # -----------------------------------------------------------------------------
 # Card r1c4
     - title: Microsoft Edge help & learning  # end-user info at SMC (member of above)
       url: https://support.microsoft.com/microsoft-edge
-      itemType: training
+      itemType: how-to-guide
 
 # =============================================================================
 # Row 2 (4 cards)
@@ -59,7 +59,7 @@ highlightedContent:
 
 # -----------------------------------------------------------------------------
 # Card r2c2
-    - title: Insider preview channels of Microsoft Edge
+    - title: Microsoft Edge Insider preview channels
       url: https://www.microsoft.com/edge/download/insider
       itemType: download
 
@@ -73,7 +73,7 @@ highlightedContent:
 # Card r2c4
     - title: Roadmap entries for Microsoft Edge
       url: https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Edge   # https://www.microsoft.com/edge/update/latest (shows 1 at a time)
-      itemType: reference
+      itemType: whats-new
 
 # =============================================================================
 # "Microsoft Edge for Enterprise" section of hub page: 2 rows of up to 4 cards
