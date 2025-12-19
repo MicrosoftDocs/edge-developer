@@ -34,9 +34,7 @@ Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/Mi
 
 ![The 1DIV app](./index-images/1div-demo.png)
 
-* [App](https://microsoftedge.github.io/Demos/1DIV/dist/)
-* [/1DIV/](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/1DIV/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/), [App](https://microsoftedge.github.io/Demos/1DIV/dist/).
 
 1DIV uses the following features:
 
@@ -51,9 +49,7 @@ Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/Mi
 
 A simulated email client PWA that demonstrates how to use PWA protocol handlers.
 
-* [App](https://microsoftedge.github.io/Demos/email-client/)
-* [/email-client/](https://github.com/MicrosoftEdge/Demos/tree/main/email-client/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/email-client/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/email-client/), [App](https://microsoftedge.github.io/Demos/email-client/).
 
 Email client uses the following features:
 
@@ -68,9 +64,7 @@ Email client uses the following features:
 
 A demo web app to showcase the `application-title` meta tag.
 
-* [App](https://microsoftedge.github.io/Demos/pwa-application-title/)
-* [/pwa-application-title/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-application-title/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-application-title), [App](https://microsoftedge.github.io/Demos/pwa-application-title/).
 
 Application Title Meta Tag uses the following features:
 
@@ -80,14 +74,37 @@ Application Title Meta Tag uses the following features:
 
 
 <!-- ====================================================================== -->
-## Temperature converter
+## PWA Background Sync
 <!-- "MicrosoftEdge / Demos" repo -->
 
-A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
+The PWA Background Sync demo lets you send chat messages even when offline.  If you're offline when sending a message, the app uses Background Sync to send the message later, when you're back online.
 
-* [App](https://microsoftedge.github.io/Demos/temperature-converter/)
-* [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/README.md)
+![PWA Background Sync API demo](./index-images/background-sync.png)
+
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-background-sync/), [App](https://microsoftedge.github.io/Demos/pwa-background-sync/).
+
+The PWA Background Sync API demo uses the following features:
+
+| Feature | Description | Documentation |
+|:--- |:--- |:--- |
+| Background Sync | Enables using the PWA when offline; synchronizes data with the server when the network connection is restored. | [Synchronize and update a PWA in the background](../how-to/background-syncs.md) |
+
+
+<!-- ====================================================================== -->
+## PWA file handlers
+<!-- "MicrosoftEdge / Demos" repo -->
+
+The PWA file handlers app handles `*.txt` files like a native application does.
+
+![The "PWA file handlers" demo app](./index-images/file-handlers.png)
+
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-file-handlers/), [App](https://microsoftedge.github.io/Demos/pwa-file-handlers/).
+
+The PWA file handlers app uses the following features:
+
+| Feature | Description | Documentation |
+|:--- |:--- |:--- |
+| File Handling | The `file_handlers` web app manifest member enables a PWA to handle file types like a native application does. | [Handle files in a PWA](../how-to/handle-files.md) |
 
 
 <!-- ====================================================================== -->
@@ -95,9 +112,7 @@ A simple PWA demo app that converts temperatures.  See [Temperature converter sa
 
 A PWA that uses the Web Install API to install other PWAs.  Also uses CSS Masonry.
 
-* [PWA installer app](https://microsoftedge.github.io/Demos/pwa-installer/)
-* [/pwa-installer/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-installer/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-installer/), [App](https://microsoftedge.github.io/Demos/pwa-installer/).
 
 PWA installer uses the following features:
 
@@ -128,9 +143,7 @@ See also:
 
 Has a **Set timer** button, and you can set the duration of the timer.
 
-* [App](https://microsoftedge.github.io/Demos/pwa-timer/)
-* [/pwa-timer/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-timer/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-timer/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-timer/), [App](https://microsoftedge.github.io/Demos/pwa-timer/).
 
 
 <!-- ====================================================================== -->
@@ -139,9 +152,7 @@ Has a **Set timer** button, and you can set the duration of the timer.
 
 Create lists of tasks locally in your browser, or by installing the app.  Click the **About** link in the rendered demo.
 
-* [App](https://microsoftedge.github.io/Demos/pwa-to-do/)
-* [/pwa-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-to-do/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwa-to-do/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-to-do/), [App](https://microsoftedge.github.io/Demos/pwa-to-do/).
 
 
 <!-- ====================================================================== -->
@@ -152,9 +163,7 @@ PWAmp is a desktop music player that plays local and remote audio files.
 
 ![The PWAmp app, showing playback buttons and a list of songs](./index-images/pwamp.png)
 
-* [App](https://microsoftedge.github.io/Demos/pwamp/)
-* [/pwamp/](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/pwamp/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/pwamp/), [App](https://microsoftedge.github.io/Demos/pwamp/).
 
 PWAmp uses the following features:
 
@@ -170,6 +179,15 @@ PWAmp uses the following features:
 
 
 <!-- ====================================================================== -->
+## Temperature converter
+<!-- "MicrosoftEdge / Demos" repo -->
+
+A simple PWA demo app that converts temperatures.  See [Temperature converter sample](./temperature-converter.md).
+
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/), [App](https://microsoftedge.github.io/Demos/temperature-converter/).
+
+
+<!-- ====================================================================== -->
 ## wami
 <!-- "MicrosoftEdge / Demos" repo -->
 
@@ -177,9 +195,7 @@ wami can apply a sequence of image manipulation steps such as cropping, resizing
 
 ![The wami app](./index-images/wami.png)
 
-* [App](https://microsoftedge.github.io/Demos/wami/)
-* [/wami/](https://github.com/MicrosoftEdge/Demos/tree/main/wami/) - source code directory.
-   * [Readme file](https://github.com/MicrosoftEdge/Demos/blob/main/wami/README.md)
+[Readme and source code](https://github.com/MicrosoftEdge/Demos/tree/main/wami/), [App](https://microsoftedge.github.io/Demos/wami/).
 
 wami uses the following features:
 
@@ -188,57 +204,12 @@ wami uses the following features:
 | Window Controls Overlay | The space normally reserved to the title bar can be used by wami. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
 | File System Access | wami can save transformed images back to disk. | [File System Access API](https://developer.mozilla.org/docs/Web/API/File_System_Access_API) |
 
+
 <!-- end of "MicrosoftEdge / Demos" repo -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Demos in a repo other than the Demos repo -->
-
-
-<!-- ====================================================================== -->
-## My Movie List
-<!-- "captainbrosset / movies-db-pwa" repo -->
-<!-- planned: "MicrosoftEdge / Demos" repo -->
-
-This simple PWA demo lets you search for made-up movies and store them locally.
-
-![The My Movie List app](./index-images/my-movies.png)
-
-* [App](https://quirky-rosalind-ac1e65.netlify.app)<!-- - see Readme for setup. -->
-* [/movies-db-pwa/](https://github.com/captainbrosset/movies-db-pwa/)<!-- todo: move to Demos repo, then update repo's Readme and this article; move this section up --> - source code directory.
-   * No Readme file.<!-- https://github.com/captainbrosset/movies-db-pwa/issues/1 --><!-- todo: link to readme -->
-
-My Movie List uses the following features:
-
-| Feature | Description | Documentation |
-|:--- |:--- |:--- |
-| Background Sync | If the user is offline when displaying more information about a movie, the app uses Background Sync to retrieve the information later when the user is back online. | [Use the Background Sync API to synchronize data with the server](../how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server) |
-| Notifications | When the information about a movie is retrieved, a notification is sent so the user can re-engage with the app. | [Display notifications in the action center](../how-to/notifications-badges.md#display-notifications-in-the-action-center) |
-
-
-<!-- ====================================================================== -->
-## My Tracks
-<!-- "captainbrosset / mytracks" repo -->
-<!-- planned: "MicrosoftEdge / Demos" repo -->
-
-My Tracks is useful for visualizing GPS tracks (`*.gpx` files) on a map.
-
-![The My Tracks app](./index-images/my-tracks.png)
-
-* [App](https://captainbrosset.github.io/mytracks/)<!-- todo: move demo to Demos repo; move this section up --> - see Readme for setup.
-* [/mytracks/](https://github.com/captainbrosset/mytracks/) - source code directory.
-   * [Readme file](https://github.com/captainbrosset/mytracks/blob/main/README.md)
-
-My Tracks uses the following features:
-
-| Feature | Description | Documentation |
-|:--- |:--- |:--- |
-| Window Controls Overlay | The space normally reserved to the title bar is used by My Tracks to display its own search bar. | [Display content in the title bar area using Window Controls Overlay](../how-to/window-controls-overlay.md) |
-| Protocol Handling | My Tracks handles URIs that start with the `geo:` protocol to show locations on the map. | [Handle protocols in a PWA](../how-to/handle-protocols.md) |
-| File Handling | My Tracks natively handles `*.gpx` files. | [Handle files in a PWA](../how-to/handle-files.md) |
-| Shortcuts | My Tracks defines shortcuts to easily hide and show all tracks from the map. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
-
-
 <!-- ====================================================================== -->
 ## BPM Techno
 <!-- "webmaxru / bpm-counter" repo -->
@@ -247,9 +218,7 @@ BPM Techno analyzes audio via the device microphone and displays a real-time bea
 
 ![The BPM Techno app](./index-images/bpm-techno.png)
 
-* [App](https://bpmtech.no)
-* [/bpm-counter/](https://github.com/webmaxru/bpm-counter/) - source code directory.
-   * [Readme file](https://github.com/webmaxru/bpm-counter/blob/main/README.md)
+[Readme and source code](https://github.com/webmaxru/bpm-counter/), [App](https://bpmtech.no).
 
 This demo is in the [webmaxru / bpm-counter](https://github.com/webmaxru/bpm-counter/) repo.
 
@@ -271,9 +240,7 @@ Webboard is a drawing application.
 
 ![Webboard is a Progressive Web App for drawing and intelligent whiteboarding](./index-images/webboard.png)
 
-* [App](https://webboard.app)
-* [/web-whiteboard/](https://github.com/pwa-builder/web-whiteboard/) - source code directory.
-   * [Readme file](https://github.com/pwa-builder/web-whiteboard/blob/main/readme.md)
+[Readme and source code](https://github.com/pwa-builder/web-whiteboard/), [App](https://webboard.app).
 
 This demo is in the [pwa-builder / web-whiteboard](https://github.com/pwa-builder/web-whiteboard/) repo.
 
