@@ -226,7 +226,7 @@ The DevTools **Workspace** tab is similar to using an editor to edit the HTML so
 
    The **index.html** tab opens in the **Sources** tool.
 
-1. In the the `<h1>` tag, replace "DevTools Workspaces Demo" with "I Love Cake".
+1. In the `<h1>` tag, replace "DevTools Workspaces Demo" with "I Love Cake".
 
    An asterisk appears next to `index.html`.
 
