@@ -97,23 +97,94 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 
 
 <!-- ====================================================================== -->
-## Demo
+## PWA file handlers demo app
 
-My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
+The **PWA file handlers** demo app:
 
-*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/)<!-- todo: move demo to Demos repo--> and install the app.
-*  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
-*  Open the downloaded GPX file.
+![PWA file handlers demo app](./handle-files-images/text-in-the-demo.png)
 
-Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
+* [/pwa-file-handlers/](https://github.com/MicrosoftEdge/Demos/tree/main/pwa-file-handlers/) - Readme and source code.
+* [PWA file handlers demo](https://microsoftedge.github.io/Demos/pwa-file-handlers/) - live demo.
 
-![The 'Open file?' permission request dialog](./handle-files-images/my-tracks-allow-file-handling.png)
 
-If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
+To use the demo:
 
-![The new GPS track handled by the My Tracks app](./handle-files-images/my-tracks-new-file.png)
+1. Go to the [PWA file handlers demo](https://microsoftedge.github.io/Demos/pwa-file-handlers/) in a new window or tab.
 
-The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).<!-- todo: move demo to Demos repo-->
 
-* The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
-* The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.
+   **Install the demo app:**
+
+1. In the Address bar, click the **App available. Install PWA file handlers demo** (![App available icon](./handle-files-images/app-available-icon.png)) button.
+
+   The **Install PWA file handlers demo app** dialog opens in Edge.
+
+1. Click the **Install** button.
+
+   The **PWA file handlers demo** app window opens.  The **App installed** dialog opens.
+
+1. Click the **Allow** button.
+
+   The Windows **Apps** dialog prompts you whether to pin the demo to the taskbar.
+
+1. Click the **Yes** button.
+
+1. Close the **PWA file handlers demo** app.
+
+
+   **Create a text file:**
+
+   If you have an existing text file, you can use it.  In the following steps, we'll use Visual Studio Code to create a text file named `test.txt` in the `Documents` folder.
+
+1. Open Visual Studio Code.
+
+1. Click the **File** menu, and then click **New Text File**.
+
+1. Add text in the file, such as:
+
+   ```
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+   * Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+   * Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+   ```
+
+1. Click the **File** menu, and then click **Save**.
+
+   The **Save As** dialog opens.
+
+1. Navigate to a directory such as `C:\Users\localAccount\Documents\`.
+
+1. In the **File name** combo box, type `test`.
+
+1. In the **Save as type** combo box, select **Plain text (*.txt)**.
+
+1. Click the **Save** button.
+
+   The dialog closes.
+
+1. On the **test.txt** tab, click the **Close** (![Close icon](./handle-files-images/close-icon.png)) button.
+
+
+   **Open the text file and specify the Open With app:**
+
+1. In the Windows Taskbar, click the **Start** button, type **File Explorer**, and then click **Open**.
+
+   **File Explorer** opens.
+
+1. Navigate to the directory that contains the text file, such as `C:\Users\localAccount\Documents\`.
+
+1. Right-click the text file (such as `test.txt`), and then select **Open with** > **PWA file handlers demo**.
+
+   Or, double-click the text file.
+
+   A **Microsoft Edge** dialog opens, asking whether to open and edit the text file in this web app:
+
+   ![Dialog asking whether to open in web app](./handle-files-images/open-in-web-app.png)
+
+1. Click the **Open** button.
+
+   The **PWA file handlers demo** app opens, displaying the `.txt` file name and the file's text content:
+
+   ![Text file opened in the demo](./handle-files-images/text-in-the-demo.png)
