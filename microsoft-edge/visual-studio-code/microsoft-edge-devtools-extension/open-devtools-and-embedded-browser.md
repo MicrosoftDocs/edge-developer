@@ -1,6 +1,6 @@
 ---
 title: Opening DevTools and the DevTools browser
-description: "Opening the Edge DevTools tab and the the Edge DevTools: Browser tab (an embedded browser) in the Microsoft Edge Developer Tools extension for Visual Studio Code."
+description: "Opening the Edge DevTools tab and the Edge DevTools: Browser tab (an embedded browser) in the Microsoft Edge Developer Tools extension for Visual Studio Code."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

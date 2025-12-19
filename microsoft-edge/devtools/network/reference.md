@@ -858,7 +858,7 @@ The **Requests** table displays the following columns by default:
 - **Time**. The total duration, from the start of the request to the receipt of the final byte in the response.
 - **Fulfilled by**. Whether the request was fulfilled by the HTTP cache or the app's service worker.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 
 <!-- ---------- -->
@@ -931,7 +931,7 @@ To group requests by iframes:
 
 Use the **Waterfall** column of the **Requests** pane to view the timing relationships of requests.  The default organization of the **Waterfall** column uses the start time of the requests.  So, requests that are farther to the left started earlier than the requests that are farther to the right.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 To see the different ways that you can sort the Waterfall, see [Sort by activity phase](#sort-by-activity-phase), above.
 
@@ -1365,7 +1365,7 @@ For more information about each of the phases that may be displayed in the **Tim
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the **Requests** table, hover on the entry for the request.
 
-The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+The **Waterfall** column is off by default.  To turn on the **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
@@ -1428,7 +1428,7 @@ DevTools displays the timing of the `DOMContentLoaded` and `load` events in mult
 
 * In the **Overview** pane with vertical lines.
 
-* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the The **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
+* In the **Waterfall** column of the Request table with vertical lines.  The **Waterfall** column is off by default.  To turn on the **Waterfall** column, right-click a **Requests** table header, and then select the plain **Waterfall** menuitem that doesn't have a submenu.
 
 * In the **Summary** pane, at the bottom of the **Network** tool, with timing labels.
 
