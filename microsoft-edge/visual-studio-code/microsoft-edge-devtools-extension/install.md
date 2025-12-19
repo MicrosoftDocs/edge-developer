@@ -167,7 +167,7 @@ For information about http-server, see [http-server: a simple static HTTP server
 
 1. In Visual Studio Code, select **View** > **Terminal**.  Or, to keep the web server running regardless of Visual Studio's state, open a command prompt outside of Visual Studio Code, such as `git bash`.
 
-1. `cd` into the the folder you want to serve via http.
+1. `cd` into the folder that you want to serve via http.
 
    In the git bash shell, use forward slashes, such as:
 
