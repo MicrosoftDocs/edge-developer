@@ -43,7 +43,7 @@ To see a list of the available origin trials and register your origin to try out
 
 You can provide feedback to browser feature engineers and the web standards community about the design of the feature's API, your use-cases, or your experience with using the feature's API, by using the **Issues** tab in the browser feature's repo.
 
-See [Use origin trials in Microsoft Edge](../origin-trials/index.md).
+See [Test experimental APIs and features by using origin trials](../origin-trials/index.md).
 
 
 <!-- ====================================================================== -->

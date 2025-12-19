@@ -45,6 +45,8 @@ If you have a Partner Center account, but the Primary Owner of the account isn't
 
 To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Microsoft Entra tenant.
 
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+
 
 <!-- ====================================================================== -->
 ## Types of accounts related to publishing Microsoft Edge extensions
@@ -248,5 +250,6 @@ Entra:
 
 Other Microsoft.com sites:
 * [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login)
+   * [Account settings | Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo)
 * [account.microsoft.com](https://account.microsoft.com/account)
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.

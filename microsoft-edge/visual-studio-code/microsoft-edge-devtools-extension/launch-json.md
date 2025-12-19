@@ -162,7 +162,7 @@ This configuration name doesn't appear directly in the UI.  This configuration i
 
 #### Configuration 2: Launch Microsoft Edge in headless mode
 
-This is a "launch browser"-type configuration.  This configuration controls the browser component, such as which `.html` file to display, when **Headless** is selected in the the Edge DevTools > **Settings** page, as it is by default.
+This is a "launch browser"-type configuration.  This configuration controls the browser component, such as which `.html` file to display, when **Headless** is selected in the Edge DevTools > **Settings** page, as it is by default.
 
 This configuration name **Launch Microsoft Edge in headless mode** appears in the UI, such as in the Debug toolbar and in the **Debug Console**.  If you launch multiple instances, a number is appended to the additional instances in the UI, such as **Launch Microsoft Edge in headless mode 2**.  This configuration is used by a compound configuration, below.
 

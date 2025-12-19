@@ -45,7 +45,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 
 1. Open git bash, or another command prompt.  For example, on Windows, press **Start** and then enter **git bash**.
 
-1. `cd` into the the specific folder you want to serve via http, `Demos\demo-to-do\`:
+1. `cd` into the specific folder that you want to serve via http, `Demos\demo-to-do\`:
 
    In git bash, use forward slashes for file paths.  For example:
 
