@@ -129,7 +129,7 @@ Click the **Restore all functions** (![Restore all functions](./js-runtime-image
 
 The **Chart** view provides a visual representation of the Sampling Profile over time.
 
-After you record a memory allocation sampling profile, view the recording as a flame chart.  Select **Chart** in the the **Profile view mode** dropdown list (which initially says **Heavy (Bottom Up)**):
+After you record a memory allocation sampling profile, view the recording as a flame chart.  Select **Chart** in the **Profile view mode** dropdown list (which initially says **Heavy (Bottom Up)**):
 
 ![Flame chart view](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.png)
 
