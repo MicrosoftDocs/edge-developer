@@ -29,11 +29,11 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-hybrid-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
-*  In the middle are hybrid apps, such as WebViews and Electron.
+*  In the middle are hybrid apps, such as WebViews and [Electron](https://en.wikipedia.org/wiki/Electron_(software_framework)).
 
 *  Maximum **power** is native apps.
 
@@ -63,6 +63,24 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 
 <!-- ====================================================================== -->
+## Overview of the components of the WebView2 platform
+
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
+
+![Full diagram of WebView2](./index-images/full-diagram.png)
+
+Developing a WebView2 app involves software residing in the following places:
+
+| Location | Description |
+|---|---|
+| Dev machine | You use a Visual Studio project that includes the WebView2 SDK.  The SDK includes the WebView2 Runtime, which is an embedded web browser component used for the WebView2 control instances in your host app. |
+| Distributing the app and Runtime | There are several ways to deliver the always up-to-date Evergreen version of the WebView2 Runtime to user machines, with several levels of Internet connectivity supported.  Some scenarios benefit from distributing a specific, fixed-version WebView2 Runtime. |
+| User machine | Your host app on user machines includes instances of the WebView2 control, which uses the WebView2 Runtime. |
+| Resources | The product documentation; the WebView2Samples repo including basic Getting Started WebView2 projects and more full-featured Sample projects; the WebView2Announcements repo; and the WebView2Feedback repo. |
+
+For details, see [Overview of the components of the WebView2 platform](./concepts/platform-components.md).
+
+
 ## Supported Windows versions
 
 The Windows operating systems that are supported by Webview2 are the same as those supported by Microsoft Edge.
@@ -141,6 +159,7 @@ After your environment is set up and the samples build and run on your machine, 
 <!-- ====================================================================== -->
 ## See also
 
+* [Overview of the components of the WebView2 platform](./concepts/platform-components.md)
 * [Overview of WebView2 APIs](concepts/overview-features-apis.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 
