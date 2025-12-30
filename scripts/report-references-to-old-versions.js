@@ -10,7 +10,7 @@ const REPO_NAME = "edge-developer";
 // Patterns to find references to Microsoft Edge versions.
 // When a file is being checked for references to old versions, the file
 // is split by line, and these patterns are used to find Edge versions on each line.
-// All patterns below must have parenthesis (to extract the version) and g flags.
+// All patterns below must have parentheses (to extract the version) and g flags.
 const PATTERNS_TO_LOOK_FOR = [
   /Microsoft Edge version ([0-9]{2,3})/g,
   /Microsoft Edge ([0-9]{2,3})/g,
