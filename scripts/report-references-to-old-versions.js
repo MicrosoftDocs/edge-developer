@@ -24,7 +24,7 @@ const PATTERNS_TO_LOOK_FOR = [
 // We need to check them all for references to old Edge versions.
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 
-// Out of the above files, we ignore some specific files as they are known
+// Out of the above files, we ignore some specific files, because they are known
 // to contain references to old Edge versions that we don't want to report.
 // These are mostly release notes and "what's new" files.
 // They are organized by TOC buckets below.
