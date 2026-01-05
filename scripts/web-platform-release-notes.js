@@ -1,4 +1,5 @@
-// Script runs daily.
+// This script generates the web platform release notes draft for the next Microsoft Edge Beta version.
+// This script runs daily.
 
 import github from '@actions/github';
 import Eleventy from "@11ty/eleventy";
@@ -6,11 +7,13 @@ import fs from "fs/promises";
 import playwright from "playwright";
 import { execSync } from 'child_process';
 
+// Where to find Edge-only origin trials info.
 const EDGE_OT_ROOT = "https://developer.microsoft.com/en-us";
 const EDGE_OT_PAGE = `${EDGE_OT_ROOT}/microsoft-edge/origin-trials/trials`;
 // If Beta becomes stable within the next N coming days, generate the release notes for Canary.
 // This way, the release notes are ready for when Canary becomes Beta.
 const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 15;
+// The prefix to use when creating a new git branch for the release notes draft.
 const BRANCH_NAME_PREFIX = "web-platform-release-notes-";
 
 async function fetchChromeStatusAPI(url) {
@@ -82,12 +85,21 @@ async function getActiveEdgeOTs() {
   // Wait for the OTs to have loaded. We check for the existence of a trial-card
   // that has a __tags element in it. This element is used to display the
   // "Microsoft Edge Only" tag.
-  await page.waitForSelector(".trial-card .trial-card__tags");
+  const tagsLocator = page.locator(".trial-card .trial-card__tags");
+  try {
+    await tagsLocator.waitFor({ timeout: 15000 });
+    console.log("Edge-only OT tags are present, proceeding.");
+  } catch (e) {
+    console.error("Timed out waiting for Edge-only OT tags to appear.");
+    await page.close();
+    await scrapingBrowser.close();
+    return [];
+  }
 
   // Get the list of all origin trial elements
   const microsoftOriginTrialEls = await page.locator("css=.trial-card", { hasText: "Microsoft Edge Only" });
   const otCards = await microsoftOriginTrialEls.all();
-  console.log(`Found ${otCards.length} MS-only origin trials`);
+  console.log(`Found ${otCards.length} Edge-only OTs.`);
 
   const otLinks = [];
   for (const otCard of otCards) {
