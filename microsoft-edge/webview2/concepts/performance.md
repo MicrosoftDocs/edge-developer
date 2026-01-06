@@ -14,7 +14,7 @@ Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.
 
 WebView2 uses Edge's multi-process architecture, so each control launches multiple browser engine processes that add memory and startup overhead.
 
-This article outlines key practices to optimize WebView2’s startup time, memory, CPU, and network use, and provides tools and workflows for troubleshooting.
+This article outlines key practices to optimize WebView2's startup time, memory, CPU, and network use, and provides tools and workflows for troubleshooting.
 
 **Detailed contents:**
 * [Use the Evergreen Runtime](#use-the-evergreen-runtime)
@@ -47,10 +47,9 @@ This article outlines key practices to optimize WebView2’s startup time, memor
    * [Optimize communication](#optimize-communication)
 * [Telemetry and profiling tools](#telemetry-and-profiling-tools)
    * [WebView2 ETW tracing](#webview2-etw-tracing)
-   * [Browser DevTools and Task Manager](#browser-devtools-and-task-manager)
-      * [Microsoft Edge DevTools](#microsoft-edge-devtools)
-      * [Inspect with Edge Developer Tools](#inspect-with-edge-developer-tools)
-      * [Browser Task Manager](#browser-task-manager)
+   * [Microsoft Edge DevTools](#microsoft-edge-devtools)
+   * [Inspect with Edge Developer Tools](#inspect-with-edge-developer-tools)
+   * [Browser Task Manager](#browser-task-manager)
 * [Troubleshooting workflows for performance issues](#troubleshooting-workflows-for-performance-issues)
    * [Identify the bottleneck type](#identify-the-bottleneck-type)
    * [Test with simple content](#test-with-simple-content)
@@ -71,7 +70,7 @@ If you must use a fixed runtime for offline or compatibility reasons, update it 
 
 Many past performance issues, like memory leaks and high CPU usage, have been addressed in newer versions.
 
-Keep the runtime evergreen (that is, updated), to “future-proof” your app.
+Keep the WebView2 Runtime evergreen (that is, updated), to future-proof your app.
 
 Test your app using the latest WebView2 preview channels (Beta, Dev, or Canary), to prepare for upcoming changes.
 
@@ -115,7 +114,7 @@ Avoid slow drives or network shares; put the data on a faster, physical disk.
 <!-- ------------------------------ -->
 #### Avoid redundant WebView2 instances
 
-Plan your UI so that you don’t create more WebView2 controls than necessary.
+Plan your UI so that you don't create more WebView2 controls than necessary.
 
 For example, if navigating between multiple web pages, it may be faster to reuse a single WebView2 and simply navigate it, rather than destroying and re-creating controls repeatedly.
 
@@ -159,7 +158,7 @@ If you use `AddHostObjectToScript` to expose .NET objects to the web, be mindful
 
 The entire object is effectively referenced if the script context lives, which could prevent garbage collection of that object on the .NET side.
 
-Don’t expose a very large object graph, if only a small part is needed for scripting.
+Don't expose a very large object graph, if only a small part is needed for scripting.
 
 When the page that needed the object graph is gone, call `CoreWebView2.RemoveHostObjectFromScript` to release the object graph.
 
@@ -183,7 +182,7 @@ Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactiv
 
 Restore the target level to `Normal` for full performance when the WebView2 instance is active.
 
-If the WebView2 instance won’t be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.
+If the WebView2 instance won't be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.
 
 Resume with `Resume()` when needed. **These operations are best effort.**
 
@@ -219,7 +218,7 @@ The following practices ensure efficient CPU usage and smooth rendering.
 
 By default, WebView2 uses the GPU for rendering.
 
-Avoid disabling this unless troubleshooting, because it’s critical for performance.
+Avoid disabling this unless troubleshooting, because it's critical for performance.
 
 GPU drivers and additional buffers must be allocated, which requires additional memory.
 
@@ -323,28 +322,24 @@ The following are tools and telemetry techniques for WebView2.
 
 Use Microsoft's `WebView2.wprp` ([Gathering an ETW Trace](https://aka.ms/wv2etw)) profile with Windows Performance Recorder to capture and analyze detailed WebView2 events, such as process launches and navigation timings.
 
-You can record “Edge/WebView2” provider events, by using Event Tracing for Windows (ETW); see [Gathering an ETW Trace](https://aka.ms/wv2etw).
+You can record **Edge/WebView2** provider events, by using Event Tracing for Windows (ETW); see [Gathering an ETW Trace](https://aka.ms/wv2etw).
 
 Analyze traces in Windows Performance Analyzer for CPU, disk, and memory data.
 
 
 <!-- ------------------------------ -->
-#### Browser DevTools and Task Manager<!-- todo: correct tool names? -->
+#### Microsoft Edge DevTools
 
-Use Microsoft Edge DevTools, and Browser Task Manager at `edge://inspect`, to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
-
-
-<!-- ---------- -->
-###### Microsoft Edge DevTools
+Use Microsoft Edge DevTools to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
 
 See also:
 * [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml)
 
 
-<!-- ---------- -->
-###### Inspect with Edge Developer Tools
+<!-- ------------------------------ -->
+#### Inspect with Edge Developer Tools
 
-`edge://inspect` opens the **Inspect with Edge Developer Tools** tab:
+Use `edge://inspect`, which opens the **Inspect with Edge Developer Tools** tab, to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
 
 ![Inspect with Edge Developer Tools](./performance-images/inspect.png)
 
@@ -353,8 +348,10 @@ See also:
 -->
 
 
-<!-- ---------- -->
-###### Browser Task Manager<!-- todo: is this tool what's meant? -->
+<!-- ------------------------------ -->
+#### Browser Task Manager<!-- todo: is this tool what's meant? -->
+
+Use Browser Task Manager to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
 
 In Microsoft Edge, select **Settings and more** (...) > **More tools** > **Browser Task Manager**.  Or, press **Shift+Esc**.
 
@@ -393,7 +390,7 @@ Load a minimal HTML page.
 <!-- ------------------------------ -->
 #### Verify the WebView2 Runtime version
 
-Make sure you’re running the latest WebView2 runtime, not an outdated version or fallback Edge install.
+Make sure you're running the latest WebView2 runtime, not an outdated version or fallback Edge install.
 
 Update as needed.
 
