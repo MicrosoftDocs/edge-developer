@@ -9,6 +9,10 @@ ms.service: microsoft-edge
 ms.date: 
 ---
 # Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
+<!-- todo: update date: field to:
+ms.date: 
+per build report, must be < 30 days in future
+-->
 
 The following are the new web platform features and updates in Microsoft Edge {{ data.nextBetaVersion }}, which releases on {% monthDayYear data.nextBetaReleaseDate %}.
 
@@ -43,7 +47,7 @@ To stay up-to-date and get the latest web platform features, download a preview 
 ## Edge DevTools
 
 See [What's New in Microsoft Edge DevTools](../../devtools/whats-new/whats-new.md).
-<!-- todo: when it exists in {% monthYear data.nextBetaReleaseDate %}, use instead:
+<!-- todo: when exists, use instead:
 See [What's New in DevTools (Microsoft Edge {{ data.nextBetaVersion }})](../../devtools/whats-new/{{ data.nextBetaVersion }}.md).
 -->
 
@@ -52,13 +56,18 @@ See [What's New in DevTools (Microsoft Edge {{ data.nextBetaVersion }})](../../d
 ## WebView2
 
 See [Release Notes for the WebView2 SDK](../../webview2/release-notes/index.md).
-<!-- todo: when exists in {% monthYear data.nextBetaReleaseDate %}, use instead:
+<!-- todo: when exists, use instead:
 See [1.0.n.n](../../webview2/release-notes/index.md#10nnnnnn) ({% monthYear data.nextBetaReleaseDate %}) in _Release Notes for the WebView2 SDK_.
 -->
 
 
 <!-- ====================================================================== -->
-## CSS/SVG/Web API features
+## CSS/SVG/Web API features<!-- old pattern -->
+## CSS features
+## Web APIs
+
+Below are the new Cascading Style Sheets (CSS) features in Microsoft Edge.
+Below are the new Web API features in Microsoft Edge.
 
 {% for feature in data.csFeatures["Enabled by default"] %}
 
