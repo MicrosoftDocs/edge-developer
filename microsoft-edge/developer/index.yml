@@ -69,6 +69,9 @@ landingContent:
           - text: Translate text with the Translator API
             url: ../web-platform/translator-api.md
 
+          - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+            url: ../web-platform/proofreader-api.md
+
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
   - title: Microsoft Edge DevTools
