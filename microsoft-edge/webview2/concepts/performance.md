@@ -348,9 +348,15 @@ See also:
 
 ![Inspect with Edge Developer Tools](./performance-images/inspect.png)
 
+<!-- todo: that tool is used for:
+[Attach DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app](../how-to/remote-debugging-desktop.md#attach-devtools-remotely-to-a-desktop-webview2-winui-2-uwp-app) in _Remote debugging desktop WebView2 WinUI 2 (UWP) apps_
+-->
+
 
 <!-- ---------- -->
 ###### Browser Task Manager<!-- todo: is this tool what's meant? -->
+
+In Microsoft Edge, select **Settings and more** (...) > **More tools** > **Browser Task Manager**.  Or, press **Shift+Esc**.
 
 ![Browser Task Manager window](./performance-images/browser-task-manager.png)
 
