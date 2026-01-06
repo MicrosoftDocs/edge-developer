@@ -10,6 +10,8 @@ ms.date: 01/06/2026
 ---
 # WebView2 Performance Best Practices
 
+<!-- todo: titlecase headings -->
+
 Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.
 
 WebView2 uses Edge's multi-process architecture, so each control launches multiple browser engine processes that add memory and startup overhead.
@@ -18,15 +20,44 @@ This article outlines key practices to optimize WebView2’s startup time, memor
 
 **Detailed contents:**
 <!-- todo: update -->
-* [Introduction](#introduction)
 * [Use the Evergreen Runtime](#use-the-evergreen-runtime)
    * [Launch performance](#launch-performance)
 * [Optimize Startup Performance](#optimize-startup-performance)
+   * [Cold start (cold launch)](#cold-start-cold-launch)
+   * [Don’t use WebView2 for initial UI](#dont-use-webview2-for-initial-ui)
+   * [Optimize User Data Folder (UDF) location](#optimize-user-data-folder-udf-location)
+   * [Avoid Redundant Instances](#avoid-redundant-instances)
 * [Memory Usage and Process Management](#memory-usage-and-process-management)
+   * [Share WebView2 environments](#share-webview2-environments)
+   * [App-level process sharing](#app-level-process-sharing)
+   * [Avoid Large-Scope Host Objects](#avoid-large-scope-host-objects)
+   * [Prevent memory leaks](#prevent-memory-leaks)
+   * [Use memory management APIs](#use-memory-management-apis)
+   * [Optimize web content](#optimize-web-content)
+   * [Periodically refresh the WebView2](#periodically-refresh-the-webview)
+* [CPU and Rendering Performance](#cpu-and-rendering-performance)
+   * [Enable hardware acceleration](#enable-hardware-acceleration)
+   * [Streamline web content](#streamline-web-content)
+   * [Reduce unnecessary communication](#reduce-unnecessary-communication)
+   * [Manage process priority](#manage-process-priority)
+   * [Test real scenarios](#test-real-scenarios)
 * [Network and Loading Performance](#network-and-loading-performance)
-* [Communication with Host Application (WebView2 ⇄ .NET)](#communication-with-host-application-webview2--net)
+   * [Utilize caching and service workers](#utilize-caching-and-service-workers)
+   * [Check network bottlenecks](#check-network-bottlenecks)
+   * [Reduce initial payloads](#reduce-initial-payloads)
+* [Communication with Host Application (WebView2 communicating with .NET)](#communication-with-host-application-webview2-communicating-with-net)
+   * [Choose the Right Communication Channel](#choose-the-right-communication-channel)
+   * [Optimize communication](#optimize-communication)
 * [Telemetry and Profiling Tools](#telemetry-and-profiling-tools)
+   * [WebView2 ETW tracing](#webview2-etw-tracing)
+   * [Browser DevTools and Task Manager](#browser-devtools-and-task-manager)
 * [Troubleshooting Workflows for Performance Issues](#troubleshooting-workflows-for-performance-issues)
+   * [Identify bottleneck type](#identify-bottleneck-type)
+   * [Test with simple content](#test-with-simple-content)
+   * [Verify runtime version](#verify-runtime-version)
+   * [Monitor memory usage](#monitor-memory-usage)
+   * [Compare WebView2 with Microsoft Edge](#compare-webview2-with-microsoft-edge)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +83,7 @@ If Microsoft Edge and WebView2 versions match and Edge is running, the required 
 
 
 <!-- ====================================================================== -->
-## Optimize Startup Performance
+## Optimize startup performance
 
 
 <!-- ------------------------------ -->
@@ -66,7 +97,7 @@ To optimize startup, use the following best practices.
 
 
 <!-- ------------------------------ -->
-#### Don’t use WebView2 for initial UI
+#### Don't use WebView2 for initial UI
 
 Avoid rendering splash screens or simple dialogs with WebView2 due to startup costs and resource contention.
 
@@ -74,7 +105,7 @@ Use lightweight XAML or Win32 screens instead, initializing WebView2 only when d
 
 
 <!-- ------------------------------ -->
-#### Optimize User Data Folder (UDF) location
+#### Optimize the User Data Folder (UDF) location
 
 Keep the UDF in the default local app data folder for performance.
 
@@ -82,7 +113,7 @@ Avoid slow drives or network shares; put the data on a faster, physical disk.
 
 
 <!-- ------------------------------ -->
-#### Avoid Redundant Instances
+#### Avoid redundant WebView2 instances
 
 Plan your UI so that you don’t create more WebView2 controls than necessary.
 
@@ -90,7 +121,7 @@ For example, if navigating between multiple web pages, it may be faster to reuse
 
 
 <!-- ====================================================================== -->
-## Memory Usage and Process Management
+## Memory usage and process management
 
 Each WebView2 control creates its own set of processes, such as browser, renderer, and GPU.
 
@@ -122,7 +153,7 @@ Keep in mind that with sharing UDF, underlying data is being shared between diff
 
 
 <!-- ------------------------------ -->
-#### Avoid Large-Scope Host Objects
+#### Avoid large-scope host objects
 
 If you use `AddHostObjectToScript` to expose .NET objects to the web, be mindful of what those objects hold in memory.
 
@@ -150,9 +181,9 @@ Call `webView.Dispose()` to dispose of WebView2 objects when no longer needed.
 
 Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactive WebViews to reduce memory usage—this may prompt **Chromium to drop cached data** or swap memory to disk.
 
-Restore it to Normal for full performance when the WebView is active.
+Restore the target level to `Normal` for full performance when the WebView2 instance is active.
 
-If the WebView won’t be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.
+If the WebView2 instance won’t be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.
 
 Resume with `Resume()` when needed. **These operations are best effort.**
 
@@ -166,17 +197,17 @@ See [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml).
 
 
 <!-- ------------------------------ -->
-#### Periodically refresh the WebView
+#### Periodically refresh the WebView2
 
 Some long-running pages might retain resources over time, depending on the web content and application design.
 
 If memory usage grows unexpectedly, review JavaScript heap usage, event listeners, and DOM retention using DevTools.
 
-In scenarios where the page lifecycle naturally accumulates state, a periodic refresh can help return the process to a clean baseline.
+In scenarios where the page lifecycle naturally accumulates state, a periodic refresh of the WebView2 instance can help return the process to a clean baseline.
 
 
 <!-- ====================================================================== -->
-## CPU and Rendering Performance
+## CPU and rendering performance
 
 WebView2 offloads web content rendering to the Chromium engine, so performance characteristics are like running a site in Edge.
 
@@ -228,7 +259,7 @@ To understand how Chromium isolates work to reduce memory and improve stability,
 
 
 <!-- ====================================================================== -->
-## Network and Loading Performance
+## Network and loading performance
 
 Network latency and bandwidth can dominate user-perceived performance, especially when loading web content in a WebView2.
 
@@ -258,15 +289,11 @@ Keep HTML light, defer heavy components, and lazy-load images or scripts after i
 
 
 <!-- ====================================================================== -->
-## Communication with Host Application (WebView2 communicating with .NET<!-- todo: Win32, WinRT -->)
-<!--
-## Communication with Host Application (WebView2 communicating with the OS)
-## Communication with Host Application (WebView2 communicating with native-side code)
--->
+## Communication between the WebView2 control and the host app
 
 
 <!-- ------------------------------ -->
-#### Choose the Right Communication Channel
+#### Choose the right communication channel
 
 WebView2 provides various web-to-host and host-to-web communication options.
 
@@ -284,7 +311,7 @@ It is recommended to implement asynchronous, batched communication, to minimize 
 
 
 <!-- ====================================================================== -->
-## Telemetry and Profiling Tools
+## Telemetry and profiling tools
 
 Gathering data is key to identifying and fixing performance problems.
 
@@ -296,25 +323,55 @@ The following are tools and telemetry techniques for WebView2.
 
 Use Microsoft's `WebView2.wprp` ([Gathering an ETW Trace](https://aka.ms/wv2etw)) profile with Windows Performance Recorder to capture and analyze detailed WebView2 events, such as process launches and navigation timings.
 
-You can record “Edge/WebView2” provider events; see [Gathering an ETW Trace](https://aka.ms/wv2etw). Analyze traces in Windows Performance Analyzer for CPU, disk, and memory data.
+You can record “Edge/WebView2” provider events, by using Event Tracing for Windows (ETW); see [Gathering an ETW Trace](https://aka.ms/wv2etw).
+
+Analyze traces in Windows Performance Analyzer for CPU, disk, and memory data.
 
 
 <!-- ------------------------------ -->
-#### Browser DevTools and Task Manager
+#### Browser DevTools and Task Manager<!-- todo: correct tool names? -->
 
-Use Edge DevTools and Browser Task Manager at `edge://inspect` for monitoring WebView2 content and processes, identifying issues such as high CPU or memory leaks.
+Use Microsoft Edge DevTools, and Browser Task Manager at `edge://inspect`, to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
+
+
+<!-- ---------- -->
+###### Microsoft Edge DevTools
+
+See also:
+* [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml)
+
+
+<!-- ---------- -->
+###### Inspect with Edge Developer Tools
+
+`edge://inspect` opens the **Inspect with Edge Developer Tools** tab:
+
+![Inspect with Edge Developer Tools](./performance-images/inspect.png)
+
+
+<!-- ---------- -->
+###### Browser Task Manager<!-- todo: is this tool what's meant? -->
+
+![Browser Task Manager window](./performance-images/browser-task-manager.png)
+
+See also:
+* [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](../../devtools/memory-problems/microsoft-edge-browser-task-manager.md)
 
 
 <!-- ====================================================================== -->
-## Troubleshooting Workflows for Performance Issues
+## Troubleshooting workflows for performance issues
 
 When performance issues arise in a WebView2 app, use a structured approach to troubleshoot, per the following strategies.
 
 
 <!-- ------------------------------ -->
-#### Identify bottleneck type
+#### Identify the bottleneck type
 
-Determine if the issue is startup lag, slow page load, high memory use, or sustained CPU load by observing symptoms.
+Observe symptoms, to determine whether the issue is:
+* Startup lag.
+* Slow page load.
+* High memory use.
+* Sustained CPU load.
 
 
 <!-- ------------------------------ -->
@@ -328,7 +385,7 @@ Load a minimal HTML page.
 
 
 <!-- ------------------------------ -->
-#### Verify runtime version
+#### Verify the WebView2 Runtime version
 
 Make sure you’re running the latest WebView2 runtime, not an outdated version or fallback Edge install.
 
