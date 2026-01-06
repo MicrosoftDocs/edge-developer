@@ -323,8 +323,13 @@ Analyze traces in Windows Performance Analyzer for CPU, disk, and memory data.
 
 Use Microsoft Edge DevTools to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
 
+The **Performance** tool (initial state):
+
+![Performance tool in Edge DevTools](./performance-images/performance-tool.png)
+
 See also:
-* [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml)
+* [Performance tool: Analyze your website's performance](../../devtools/performance/overview.md)
+* [Fix memory problems](../../devtools/memory-problems/index.md) - the **Memory** tool.
 
 
 <!-- ------------------------------ -->
