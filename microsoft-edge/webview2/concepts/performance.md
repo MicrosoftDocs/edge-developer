@@ -1,5 +1,5 @@
 ---
-title: WebView2 Performance Best Practices
+title: Performance best practices for WebView2 apps
 description: How to increase the performance of your WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/06/2026
 ---
-# WebView2 Performance Best Practices
-
-<!-- todo: titlecase headings -->
+# Performance best practices for WebView2 apps
 
 Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.
 
@@ -19,42 +17,44 @@ WebView2 uses Edge's multi-process architecture, so each control launches multip
 This article outlines key practices to optimize WebView2’s startup time, memory, CPU, and network use, and provides tools and workflows for troubleshooting.
 
 **Detailed contents:**
-<!-- todo: update -->
 * [Use the Evergreen Runtime](#use-the-evergreen-runtime)
    * [Launch performance](#launch-performance)
-* [Optimize Startup Performance](#optimize-startup-performance)
+* [Optimize startup performance](#optimize-startup-performance)
    * [Cold start (cold launch)](#cold-start-cold-launch)
-   * [Don’t use WebView2 for initial UI](#dont-use-webview2-for-initial-ui)
-   * [Optimize User Data Folder (UDF) location](#optimize-user-data-folder-udf-location)
-   * [Avoid Redundant Instances](#avoid-redundant-instances)
-* [Memory Usage and Process Management](#memory-usage-and-process-management)
+   * [Don't use WebView2 for initial UI](#dont-use-webview2-for-initial-ui)
+   * [Optimize the User Data Folder (UDF) location](#optimize-the-user-data-folder-udf-location)
+   * [Avoid redundant WebView2 instances](#avoid-redundant-webview2-instances)
+* [Memory usage and process management](#memory-usage-and-process-management)
    * [Share WebView2 environments](#share-webview2-environments)
    * [App-level process sharing](#app-level-process-sharing)
-   * [Avoid Large-Scope Host Objects](#avoid-large-scope-host-objects)
+   * [Avoid large-scope host objects](#avoid-large-scope-host-objects)
    * [Prevent memory leaks](#prevent-memory-leaks)
    * [Use memory management APIs](#use-memory-management-apis)
    * [Optimize web content](#optimize-web-content)
-   * [Periodically refresh the WebView2](#periodically-refresh-the-webview)
-* [CPU and Rendering Performance](#cpu-and-rendering-performance)
+   * [Periodically refresh the WebView2](#periodically-refresh-the-webview2)
+* [CPU and rendering performance](#cpu-and-rendering-performance)
    * [Enable hardware acceleration](#enable-hardware-acceleration)
    * [Streamline web content](#streamline-web-content)
    * [Reduce unnecessary communication](#reduce-unnecessary-communication)
    * [Manage process priority](#manage-process-priority)
    * [Test real scenarios](#test-real-scenarios)
-* [Network and Loading Performance](#network-and-loading-performance)
+* [Network and loading performance](#network-and-loading-performance)
    * [Utilize caching and service workers](#utilize-caching-and-service-workers)
    * [Check network bottlenecks](#check-network-bottlenecks)
    * [Reduce initial payloads](#reduce-initial-payloads)
-* [Communication with Host Application (WebView2 communicating with .NET)](#communication-with-host-application-webview2-communicating-with-net)
-   * [Choose the Right Communication Channel](#choose-the-right-communication-channel)
+* [Communication between the WebView2 control and the host app](#communication-between-the-webview2-control-and-the-host-app)
+   * [Choose the right communication channel](#choose-the-right-communication-channel)
    * [Optimize communication](#optimize-communication)
-* [Telemetry and Profiling Tools](#telemetry-and-profiling-tools)
+* [Telemetry and profiling tools](#telemetry-and-profiling-tools)
    * [WebView2 ETW tracing](#webview2-etw-tracing)
    * [Browser DevTools and Task Manager](#browser-devtools-and-task-manager)
-* [Troubleshooting Workflows for Performance Issues](#troubleshooting-workflows-for-performance-issues)
-   * [Identify bottleneck type](#identify-bottleneck-type)
+      * [Microsoft Edge DevTools](#microsoft-edge-devtools)
+      * [Inspect with Edge Developer Tools](#inspect-with-edge-developer-tools)
+      * [Browser Task Manager](#browser-task-manager)
+* [Troubleshooting workflows for performance issues](#troubleshooting-workflows-for-performance-issues)
+   * [Identify the bottleneck type](#identify-the-bottleneck-type)
    * [Test with simple content](#test-with-simple-content)
-   * [Verify runtime version](#verify-runtime-version)
+   * [Verify the WebView2 Runtime version](#verify-the-webview2-runtime-version)
    * [Monitor memory usage](#monitor-memory-usage)
    * [Compare WebView2 with Microsoft Edge](#compare-webview2-with-microsoft-edge)
 * [See also](#see-also)

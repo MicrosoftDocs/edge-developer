@@ -1622,7 +1622,7 @@
             - name: Development best practices for WebView2 apps
               href: ./webview2/concepts/developer-guide.md
 
-            - name: WebView2 Performance Best Practices
+            - name: Performance best practices for WebView2 apps
               href: ./webview2/concepts/performance.md
 
             - name: Develop secure WebView2 apps
