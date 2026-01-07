@@ -42,6 +42,10 @@ If you have an existing Chrome extension and you want to release it for Microsof
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [Support](#support)
 * [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension)
+   * [Process of using the AI-generated description feature](#process-of-using-the-ai-generated-description-feature)
+   * [Intended use for the AI-generated description](#intended-use-for-the-ai-generated-description)
+   * [How the AI-generated description feature was evaluated](#how-the-ai-generated-description-feature-was-evaluated)
+   * [Safeguards for the AI-generated description](#safeguards-for-the-ai-generated-description)
 * [See also](#see-also)
 
 
