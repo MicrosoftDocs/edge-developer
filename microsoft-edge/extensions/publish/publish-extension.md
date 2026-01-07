@@ -82,7 +82,7 @@ Create a `.zip` file that's your extension package.  The extension package must 
 <!-- ---------------------------------- -->
 #### Review manifest field values
 
-In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.
 
 Before uploading your package to Partner Center, inspect the manifest file to make sure that the field values match your preferred display on the **Store Listings** page, as follows.
 
