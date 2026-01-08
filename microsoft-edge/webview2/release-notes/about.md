@@ -1,5 +1,5 @@
 ---
-title: About Release Notes for the WebView2 SDK
+title: About Release notes for the WebView2 SDK
 description: About Release Notes for Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 03/20/2024
 ---
-# About Release Notes for the WebView2 SDK
+# About Release notes for the WebView2 SDK
 
 The WebView2 team updates the WebView2 Release SDK and the WebView2 Prerelease SDK on a four-week cadence.  These Release Notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
@@ -120,8 +120,8 @@ Async methods:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release Notes for the WebView2 SDK](./index.md)
-* [Archived Release Notes for the WebView2 SDK](./archive.md)
+* [Release notes for the WebView2 SDK](./index.md)
+* [Archived Release notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

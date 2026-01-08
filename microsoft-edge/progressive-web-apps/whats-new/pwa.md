@@ -1,5 +1,5 @@
 ---
-title: What's New in PWAs
+title: What's new in PWAs
 description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/24/2023
 ---
-# What's New in PWAs
+# What's new in PWAs
 
 The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  
 

@@ -1307,7 +1307,7 @@
         - name: Overview of Progressive Web Apps (PWAs)
           href: ./progressive-web-apps/index.md
 # -----------------------------------------------------------------------------
-        - name: What's New in PWAs
+        - name: What's new in PWAs
           href: ./progressive-web-apps/whats-new/pwa.md
           displayName: release notes, announcements
 # -----------------------------------------------------------------------------
@@ -1707,14 +1707,14 @@
 # -----------------------------------------------------------------------------
         - name: Release Notes
           items:
-            - name: About Release Notes for the WebView2 SDK
+            - name: About Release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md
 
-            - name: Release Notes for the WebView2 SDK
+            - name: Release notes for the WebView2 SDK
               href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Archived Release Notes for the WebView2 SDK
+            - name: Archived Release notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference

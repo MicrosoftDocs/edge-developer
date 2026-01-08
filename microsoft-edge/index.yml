@@ -313,7 +313,7 @@ conceptualContent:
               url: ./progressive-web-apps/index.md
               itemType: overview
 
-            - text: What's New in PWAs
+            - text: What's new in PWAs
               url: ./progressive-web-apps/whats-new/pwa.md
               itemType: whats-new
 
@@ -367,7 +367,7 @@ conceptualContent:
               url: ./webview2/samples/index.md
               itemType: download
 
-            - text: Release Notes for the WebView2 SDK
+            - text: Release notes for the WebView2 SDK
               url: ./webview2/release-notes/index.md
               itemType: whats-new
 
