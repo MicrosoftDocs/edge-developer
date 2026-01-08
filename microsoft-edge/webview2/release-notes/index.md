@@ -1216,7 +1216,7 @@ We're actively investigating these issues, and we encourage you to report any pr
 ## See also
 
 * [About Release notes for the WebView2 SDK](./about.md)
-* [Archived Release notes for the WebView2 SDK](./archive.md)
+* [Archived release notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

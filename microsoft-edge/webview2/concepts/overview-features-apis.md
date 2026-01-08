@@ -2615,7 +2615,7 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
-* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/archive.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Archived Release notes for the WebView2 SDK_.
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/archive.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Archived release notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2971,7 +2971,7 @@ See also [Enable or disable the browser responding to accelerator keys (shortcut
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
 See also:
-* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/archive.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Archived Release notes for the WebView2 SDK_.
+* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/archive.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Archived release notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
