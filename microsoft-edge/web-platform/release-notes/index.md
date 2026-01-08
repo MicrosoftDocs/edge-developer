@@ -21,11 +21,11 @@ To stay up-to-date and get the latest web platform features, download a preview 
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 Microsoft Edge DevTools
-* [What's New in Microsoft Edge DevTools](../../devtools/whats-new/whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../devtools/whats-new/whats-new.md)
 * [Experimental features in Microsoft Edge DevTools](../../devtools/experimental-features/index.md)
 
 Microsoft Edge extensions
-* [Release Notes for Microsoft Edge extensions](../../extensions/whats-new/released-features.md)
+* [Release notes for Microsoft Edge extensions](../../extensions/release-notes/index.md)
 
 Progressive Web Apps
 * [What's New in PWAs](../../progressive-web-apps/whats-new/pwa.md)

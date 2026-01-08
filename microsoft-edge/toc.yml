@@ -117,7 +117,7 @@
 # -----------------------------------------------------------------------------
         - name: What's New
           items:
-            - name: What's New in Microsoft Edge DevTools
+            - name: What's new in Microsoft Edge DevTools
               href: ./devtools/whats-new/whats-new.md  # todo: ought to be index.md
               displayName: release notes, announcements
 # latest 10 What's New

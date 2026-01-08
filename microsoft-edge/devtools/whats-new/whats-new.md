@@ -1,5 +1,5 @@
 ---
-title: What's New in Microsoft Edge DevTools
+title: What's new in Microsoft Edge DevTools
 description: New features and fixes in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 03/20/2024
 ---
-# What's New in Microsoft Edge DevTools
+# What's new in Microsoft Edge DevTools
 
 To check out the latest features of Microsoft Edge DevTools and the Microsoft Edge DevTools extension for Microsoft Visual Studio Code and Visual Studio, read these announcements.
 

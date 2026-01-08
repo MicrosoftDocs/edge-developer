@@ -1,5 +1,5 @@
 ---
-title: Release Notes for Microsoft Edge extensions
+title: Release notes for Microsoft Edge extensions
 description: Enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/01/2026
 ---
-# Release Notes for Microsoft Edge extensions
+# Release notes for Microsoft Edge extensions
 <!-- https://aka.ms/EdgeAddonsReleaseNotes = \extensions\whats-new\released-features.md not the present file; the redir can handle -->
 
 <!-- Edge versions and dates: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases -->
