@@ -16,7 +16,40 @@ ms.date: 01/01/2026
 The following updates have been deployed to production, addressing key issues and enhancements for the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and Microsoft Edge Add-ons experience.
 
 **Detailed contents:**
-<!-- todo -->
+* [January 2026](#january-2026)
+   * [Enhanced Status Indicators for Ongoing Processes](#enhanced-status-indicators-for-ongoing-processes)
+   * [Alerts & Banner Handling Enhancements](#alerts--banner-handling-enhancements)
+   * [URL Validation & Security](#url-validation--security)
+   * [Miscellaneous Fixes](#miscellaneous-fixes)
+* [February 2025](#february-2025)
+   * [Transfer ownership of a Microsoft Edge extension](#transfer-ownership-of-a-microsoft-edge-extension)
+* [September 2024](#september-2024)
+   * [Microsoft Edge Add-ons Update API, v1.1](#microsoft-edge-add-ons-update-api-v11)
+* [June 2023](#june-2023)
+   * [Sidebar](#sidebar)
+* [July 2022](#july-2022)
+   * [Retirement of submitting new Microsoft Edge extensions with Manifest V2](#retirement-of-submitting-new-microsoft-edge-extensions-with-manifest-v2)
+* [May 2022](#may-2022)
+   * [You can respond to user reviews about your Microsoft Edge extension](#you-can-respond-to-user-reviews-about-your-microsoft-edge-extension)
+* [March 2022](#march-2022)
+   * [Update an extension by using the Microsoft Edge Add-ons API](#update-an-extension-by-using-the-microsoft-edge-add-ons-api)
+   * [Addition of breadcrumbs to Microsoft Partner Center](#addition-of-breadcrumbs-to-microsoft-partner-center)
+* [January 2022](#january-2022)
+   * [Microsoft Edge extensions developer portal](#microsoft-edge-extensions-developer-portal)
+* [September 2021](#september-2021)
+   * [Extension Analytics Dashboard on Microsoft Partner Center](#extension-analytics-dashboard-on-microsoft-partner-center)
+* [August 2021](#august-2021)
+   * [Add team members to your Partner Center account](#add-team-members-to-your-partner-center-account)
+   * [Sign into Microsoft Partner Center using your GitHub account](#sign-into-microsoft-partner-center-using-your-github-account)
+* [May 2021](#may-2021)
+   * [Manage your extension submissions on Partner Center](#manage-your-extension-submissions-on-partner-center)
+* [April 2021](#april-2021)
+   * [Support for Manifest V3 extensions](#support-for-manifest-v3-extensions)
+* [February 2021](#february-2021)
+   * [Localization of extension listings at Microsoft Edge Add-ons](#localization-of-extension-listings-at-microsoft-edge-add-ons)
+* [January 2021](#january-2021)
+   * [Extension certification report link](#extension-certification-report-link)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
