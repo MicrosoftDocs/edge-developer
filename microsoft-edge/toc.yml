@@ -119,12 +119,12 @@
         - name: Overview of DevTools
           href: ./devtools/overview.md
 # -----------------------------------------------------------------------------
-        - name: What's New
+        - name: What's new
           items:
             - name: What's new in Microsoft Edge DevTools
               href: ./devtools/whats-new/whats-new.md  # todo: ought to be index.md
               displayName: release notes, announcements
-# latest 10 What's New
+# latest 10 What's new
             - name: Microsoft Edge 143
               href: ./devtools/whats-new/143.md
               displayName: What's new in DevTools (Microsoft Edge 143)  # page title
@@ -1705,7 +1705,7 @@
             - name: Data and privacy in WebView2
               href: ./webview2/concepts/data-privacy.md
 # -----------------------------------------------------------------------------
-        - name: Release Notes
+        - name: Release notes
           items:
             - name: About Release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md

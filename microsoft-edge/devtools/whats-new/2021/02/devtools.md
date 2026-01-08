@@ -292,7 +292,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 See also:
 * [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-<!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's New items cover the Frame node/page in lower left of Application tool -->
+<!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's new items cover the Frame node/page in lower left of Application tool -->
 
 
 <!-- ------------------------------ -->

@@ -10,7 +10,7 @@ ms.date: 12/08/2025
 ---
 # Release notes for the WebView2 SDK
 
-These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
+These release notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
 <!--
 the templates to copy for incoming sections are in ./includes/templates.md

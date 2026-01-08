@@ -12,7 +12,7 @@ ms.date: 03/20/2024
 
 To check out the latest features of Microsoft Edge DevTools and the Microsoft Edge DevTools extension for Microsoft Visual Studio Code and Visual Studio, read these announcements.
 
-What's New articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
+What's new articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
 
 
 <!-- ====================================================================== -->
@@ -34,7 +34,7 @@ To report a problem with DevTools or ask for a new feature, file an issue in the
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in DevTools archive](./whats-new-archive.md)
+* [What's new in DevTools archive](./whats-new-archive.md)
 * [Experimental features in Microsoft Edge DevTools](../experimental-features/index.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
