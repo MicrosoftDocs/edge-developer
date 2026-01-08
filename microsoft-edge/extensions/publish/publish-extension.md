@@ -480,7 +480,7 @@ When you click the **Generate with AI** button, the **Generate description using
 <!-- ---------------------------------- -->
 #### Process of using the AI-generated description feature
 
-To use AI to help generate the description of the extension, you provide prompt input text, generate a description, and then edit the resulting AI-generated description.  The steps are detailed in [Generate the description with AI](#generate-the-description-with-ai), above.
+To use AI to help generate a description of the extension for a particular language, you provide prompt input text, generate a description, and then edit the resulting AI-generated description.  The steps are detailed in [Generate the description with AI](#generate-the-description-with-ai), above.
 
 As a Microsoft Edge extension developer, you use Microsoft Partner Center to make your extension available to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To submit an extension, you provide data for the extension's listing page, including the extension name, description, and screenshots.
 
