@@ -1132,58 +1132,11 @@
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
 # -----------------------------------------------------------------------------
-        - name: What's new
+        - name: Release notes
           items:
-            - name: Release Notes for Microsoft Edge extensions
-              href: ./extensions/whats-new/released-features.md
-
-            - name: Release Notes for Microsoft Edge extensions [in new dir]
+            - name: Release notes for Microsoft Edge extensions
               href: ./extensions/release-notes/index.md
 
-            - name: Release Notes for Microsoft Edge extensions 144
-              href: ./extensions/release-notes/144.md
-
-            - name: Release Notes for Microsoft Edge extensions 143
-              href: ./extensions/release-notes/143.md
-
-            - name: Release Notes for Microsoft Edge extensions 142
-              href: ./extensions/release-notes/142.md
-
-            - name: Release Notes for Microsoft Edge extensions 141
-              href: ./extensions/release-notes/141.md
-
-            - name: Release Notes for Microsoft Edge extensions 140
-              href: ./extensions/release-notes/140.md
-
-            - name: Release Notes for Microsoft Edge extensions 139
-              href: ./extensions/release-notes/139.md
-
-            - name: Release Notes for Microsoft Edge extensions 138
-              href: ./extensions/release-notes/138.md
-
-            - name: Release Notes for Microsoft Edge extensions 137
-              href: ./extensions/release-notes/137.md
-
-            - name: Release Notes for Microsoft Edge extensions 136
-              href: ./extensions/release-notes/136.md
-
-            - name: Release Notes for Microsoft Edge extensions 135
-              href: ./extensions/release-notes/135.md
-
-            # keep 10 items above
-            - name: Archive
-              items:
-                - name: Release Notes for Microsoft Edge extensions 134
-                  href: ./extensions/release-notes/134.md
-
-                - name: Release Notes for Microsoft Edge extensions 133
-                  href: ./extensions/release-notes/133.md
-
-                - name: Release Notes for Microsoft Edge extensions 129
-                  href: ./extensions/release-notes/129.md
-
-                - name: Release Notes for Microsoft Edge extensions 114
-                  href: ./extensions/release-notes/114.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
