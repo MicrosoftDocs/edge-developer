@@ -10,7 +10,7 @@ ms.date: 11/24/2025
 ---
 # Publish a Microsoft Edge extension
 
-After you develop and test your Microsoft Edge extension, you're ready to distribute your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To increase the extension's reach and make it available to other Microsoft Edge users, publish the extension at Microsoft Edge Add-ons, through Partner Center.
+After you develop and test your Microsoft Edge extension, you're ready to distribute your extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  To increase the extension's reach and make it available to other Microsoft Edge users, publish the extension at Microsoft Edge Add-ons, through Partner Center.
 
 Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
@@ -52,7 +52,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
 <!-- ========================================================================== -->
 ## Step 1: Prepare the extension to be submitted
 
-To prepare an extension to be submitted via Partner Center, to be published at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), do the following steps.
+To prepare an extension to be submitted via Partner Center, to be published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site, do the following steps.
 
 
 <!-- ---------------------------------- -->
@@ -66,7 +66,7 @@ Before publishing your extension, you should have a working prototype of the ext
 
 To get started, visit [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  This is where every developer (new or existing) must go to publish or manage their extensions.
 
-Use your active developer account to submit the extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Register as a Microsoft Edge extension developer](./create-dev-account.md).
+Use your active developer account to submit the extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  If you don't have a developer account, create a new developer account.  To open a new developer account and register for the Microsoft Edge program, see [Register as a Microsoft Edge extension developer](./create-dev-account.md).
 
 
 <!-- ---------------------------------- -->
@@ -148,7 +148,7 @@ On the **Availability** page for the extension, fill in the **Visibility** and *
 <!-- ------------------------------ -->
 #### Visibility
 
-Select one of the following visibility options to define whether your extension is discoverable at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
+Select one of the following visibility options to define whether your extension is discoverable at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site:
 
 * `Public` (default) - Allows everyone to discover your extension through search, browsing at Microsoft Edge Add-ons, or using the listing URL for your extension at Microsoft Edge Add-ons.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.
 
@@ -166,7 +166,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 1. Toggle individual markets to exclude each one or select **Unselect all** and then add individual markets of your choice.
 
-   You can change the markets where your extension is offered.  A user who installs your extension while it's available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+   You can change the markets where your extension is offered.  A user who installs your extension while it's available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.
 
 1. Click the **Save & Continue** button.
 
@@ -191,7 +191,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Support contact details** | Optional | The URL to your support webpage, or the email address to contact your support team. |
    | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
    
-   The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users at Microsoft Edge Add-ons.
+   The properties are displayed to users at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users at Microsoft Edge Add-ons.
 
 1. Click the **Save & Continue** button.
 
@@ -221,7 +221,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
 1. Fill in the properties, as follows.
 
-   This information is displayed to users who view the extension's listing at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Even though some fields are optional, you should provide as much information as possible.
+   This information is displayed to users who view the extension's listing at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  Even though some fields are optional, you should provide as much information as possible.
 
    | Property name | Required? | Description |
    |---|---|---|
@@ -428,7 +428,7 @@ To add notes for certification:
 
 1. Click the **Publish** button, in the upper right.
 
-   The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+   The extension is submitted at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.
 
    The submission then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
@@ -470,7 +470,7 @@ If you experience issues when registering as an extension developer or when subm
 <!-- ========================================================================== -->
 ## Responsible AI for the AI-generated description of an extension
 
-The description of your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) can optionally be generated by using AI.  You can compose the description manually, or you can use AI to help generate the description.  This AI-generated description feature uses responsible AI, as described below.
+The description of your extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site can optionally be generated by using AI.  You can compose the description manually, or you can use AI to help generate the description.  This AI-generated description feature uses responsible AI, as described below.
 
 When you click the **Generate with AI** button, the **Generate description using AI** pane opens on the right:
 
@@ -482,7 +482,7 @@ When you click the **Generate with AI** button, the **Generate description using
 
 To use AI to help generate the description of the extension, you provide prompt input text, generate a description, and then edit the resulting AI-generated description.  The steps are detailed in [Generate the description with AI](#generate-the-description-with-ai), above.
 
-As a Microsoft Edge extension developer, you use Microsoft Partner Center to make your extension available to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  To submit an extension, you provide data for the extension's listing page, including the extension name, description, and screenshots.
+As a Microsoft Edge extension developer, you use Microsoft Partner Center to make your extension available to users at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  To submit an extension, you provide data for the extension's listing page, including the extension name, description, and screenshots.
 
 A high-quality description for the extension is important, for the users to understand the features and functionality of the extension, and to make an informed decision whether to install the extension.
 
