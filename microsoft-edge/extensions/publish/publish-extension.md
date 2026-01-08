@@ -498,7 +498,7 @@ This process ensures transparency, and compliance with [Microsoft Responsible AI
 <!-- ---------------------------------- -->
 #### Intended use for the AI-generated description
 
-Your final, edited version of the AI-generated description will be displayed in the extension's product detail page in the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  A high-quality description helps users understand the extension's functionality and make an informed decision about whether to install the extension.
+Your final, edited version of the AI-generated description will be displayed in the extension's product detail page at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  A high-quality description helps users understand the extension's functionality and make an informed decision about whether to install the extension.
 
 The goals of this feature are to:
 * Avoid a misleading or incomplete description of the extension.
