@@ -57,12 +57,6 @@ The following updates have been deployed to production, addressing key issues an
 
    * The **Support contact details** field in the **Properties** page.
 
-   * The following fields continue to have "unreachable URL" detection:
-
-      * The **YouTube video URL** field in the **Details for \<Language\>** page.
-
-      * The **Website URL** field in the **Properties** page.
-
 
 <!-- ====================================================================== -->
 ## Duplicating images
