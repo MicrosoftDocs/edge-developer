@@ -1,6 +1,6 @@
 ---
 title: Manifest V2 file format for extensions (deprecated)
-description: Learn about the format of the manifest file in an extension package.
+description: Earlier format of the manifest file in an extension package for a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

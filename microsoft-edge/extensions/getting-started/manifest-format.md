@@ -1,6 +1,6 @@
 ---
 title: Manifest file format for extensions
-description: Learn about the format of the manifest file in an extension package.
+description: The format of the manifest file in an extension package for a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
