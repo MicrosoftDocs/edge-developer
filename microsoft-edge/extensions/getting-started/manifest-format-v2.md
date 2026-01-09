@@ -1,5 +1,5 @@
 ---
-title: Manifest V2 file format for extensions (deprecated)
+title: Manifest V2 file format for extensions
 description: Earlier format of the manifest file in an extension package for a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 06/23/2023
 ---
-# Manifest V2 file format for extensions (deprecated)
+# Manifest V2 file format for extensions
 
-Use Manifest V3 for new code, per [Manifest file format for extensions](./manifest-format.md).  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
+For new code, use Manifest V3 instead of V2.  For Manifest V3, see [Manifest file format for extensions](./manifest-format.md).
+
+To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->

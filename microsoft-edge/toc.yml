@@ -1177,9 +1177,6 @@
                 - name: Manifest file format for extensions
                   href: ./extensions/getting-started/manifest-format.md
 
-                - name: Manifest V2 file format for extensions (deprecated)
-                  href: ./extensions/getting-started/manifest-format.md
-
                 - name: Using Content Security Policy (CSP) to control which resources can be run
                   href: ./extensions/developer-guide/csp.md
                   displayName: policies
@@ -1189,6 +1186,9 @@
 
                 - name: Migrate an extension from Manifest V2 to V3
                   href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+
+                - name: Manifest V2 file format for extensions
+                  href: ./extensions/getting-started/manifest-format.md
 # -------------------------------------
             - name: JavaScript APIs
               items:
