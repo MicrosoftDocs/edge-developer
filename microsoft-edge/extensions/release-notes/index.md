@@ -49,15 +49,19 @@ The following updates have been deployed to production, addressing key issues an
 
 * URL-related error messages have clearer wording. 
 
-* Added "unreachable URL" detection for the **Long Description**, **Privacy policy URL**, and **Support contact details** fields.
-<!-- todo: change from **Long Description** to **Website URL**?  if so, move to be 2nd
-look for field in:
-* [Step 5: Enter properties describing the extension](../publish/publish-extension.md#step-5-enter-properties-describing-the-extension) in _Publish a Microsoft Edge extension_ 
-https://learn.microsoft.com/microsoft-edge/extensions/publish/publish-extension#step-5-enter-properties-describing-the-extension
+* Added "unreachable URL" detection for the following fields:
 
-* [Manifest file format for extensions](../getting-started/manifest-format.md)
-https://learn.microsoft.com/microsoft-edge/extensions/getting-started/manifest-format
--->
+   * The **Description** field in the **Details for \<Language\>** page.
+
+   * The **Privacy policy URL** field in the **Properties** page.
+
+   * The **Support contact details** field in the **Properties** page.
+
+   * The following fields continue to have "unreachable URL" detection:
+
+      * The **YouTube video URL** field in the **Details for \<Language\>** page.
+
+      * The **Website URL** field in the **Properties** page.
 
 
 <!-- ====================================================================== -->
