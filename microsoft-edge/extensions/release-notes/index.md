@@ -35,11 +35,11 @@ The following updates have been deployed to production, addressing key issues an
 <!-- ====================================================================== -->
 ## Better alerts and banners
 
-The banners are now more intuitive across pages.
+* The banners are now more intuitive across pages.
 
-* Success banners on the **Store Listings** page are automatically dismissed after five seconds.
+   * Success banners on the **Store Listings** page are automatically dismissed after five seconds.
 
-* Error and warning banners now specify the exact field names, with clear messaging.
+   * Error and warning banners now specify the exact field names, with clear messaging.
 
 * Image upload errors on the **Store Listings** page now provide clearer _retry_ instructions.
 
@@ -63,13 +63,9 @@ https://learn.microsoft.com/microsoft-edge/extensions/getting-started/manifest-f
 
 
 <!-- ====================================================================== -->
-## Save captions when duplicating images
+## Duplicating images
 
-* You can now save captions while duplicating images on the **Store Listings** page.
-
-
-<!-- ====================================================================== -->
-## Fixed duplicating a logo image
+* You can now save captions when duplicating images on the **Store Listings** page.
 
 * Resolved an issue when duplicating a logo image.  ([Issue 255](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/255))
 
