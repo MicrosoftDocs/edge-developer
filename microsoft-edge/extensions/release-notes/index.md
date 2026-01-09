@@ -27,21 +27,21 @@ The following updates have been deployed to production, addressing key issues an
 
 * The progress bar for image asset uploads on **Store Listings** pages is now displayed inline, indicating real-time upload progress.
 
-* Added progress indication for long page load operation
+* Added progress indication for a long page load operation.
 
-* The **Save Draft** button is disabled after a successful save on the **Store Listings** page.
+* The **Save Draft** button is now disabled (grayed out) after a successful save on the **Store Listings** page.
 
 
 <!-- ====================================================================== -->
 ## Better alerts and banners
 
-* The banners are more intuitive across pages.
+The banners are now more intuitive across pages.
 
-* Success banners on the **Store Listings** page auto-dismiss after five seconds.
+* Success banners on the **Store Listings** page are automatically dismissed after five seconds.
 
-* Error and warning banners now specify exact field names with clear messaging.
+* Error and warning banners now specify the exact field names, with clear messaging.
 
-* Image upload errors on the **Store Listings** page now provide clearer retry instructions.
+* Image upload errors on the **Store Listings** page now provide clearer _retry_ instructions.
 
 
 <!-- ====================================================================== -->
@@ -49,7 +49,17 @@ The following updates have been deployed to production, addressing key issues an
 
 * URL-related error messages have clearer wording. 
 
-* Added unreachable URL detection for the **Long Description**, **Privacy Policy**, and **Support URL** fields.
+* Added "unreachable URL" detection for the **Long Description**, **Privacy Policy**, and **Support URL** fields.
+<!-- todo: where is the **Long Description** field? -->
+<!-- todo: where is the **Privacy Policy** field? -->
+<!-- todo: where is the **Support URL** field? -->
+<!-- not found in:
+* [Step 5: Enter properties describing the extension](../publish/publish-extension.md#step-5-enter-properties-describing-the-extension) in _Publish a Microsoft Edge extension_ 
+https://learn.microsoft.com/microsoft-edge/extensions/publish/publish-extension#step-5-enter-properties-describing-the-extension
+
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+https://learn.microsoft.com/microsoft-edge/extensions/getting-started/manifest-format
+-->
 
 
 <!-- ====================================================================== -->
@@ -61,7 +71,7 @@ The following updates have been deployed to production, addressing key issues an
 <!-- ====================================================================== -->
 ## Fixed duplicate logo images
 
-* Resolved a duplicate logo/image issue.  ([Issue 255](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/255))
+* Resolved an issue when duplicating a logo image.  ([Issue 255](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/255))
 
 
 <!-- ====================================================================== -->
