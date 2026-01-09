@@ -19,5 +19,5 @@ These are the latest features in the Stable release of Microsoft Edge DevTools. 
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../whats-new.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

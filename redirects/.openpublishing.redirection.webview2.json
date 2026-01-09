@@ -5,7 +5,7 @@
     // Concepts
     // Getting started
     // How-to
-    // Release Notes
+    // Release notes
     // Reference
     // Reference > .NET
     // Reference > WinForms
@@ -99,7 +99,7 @@
     },
     // /How-to
     // ======================================================================
-    // Release Notes
+    // Release notes
     {
       "source_path": "../microsoft-edge/hosting/webview2/releasenotes.md",
       "redirect_url": "/microsoft-edge/webview2/release-notes/index",
@@ -125,7 +125,7 @@
       "redirect_url": "/microsoft-edge/webview2/release-notes/index",
       "redirect_document_id": false
     },
-    // /Release Notes
+    // /Release notes
     // ======================================================================
     // Reference
     {

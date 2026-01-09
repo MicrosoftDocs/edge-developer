@@ -22,7 +22,7 @@ In this article, you walk through the process of remotely debugging your web con
 <!-- ====================================================================== -->
 ## Step 1: Go to edge://inspect
 
-*  Open a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge), and go to `edge://inspect`:
+*  Open a desktop instance of Microsoft Edge, and go to `edge://inspect`:
 
 > [!div class="mx-imgBorder"]
 > ![The edge://inspect page in Microsoft Edge on the desktop](./surface-duo-emulator-images/remote-debugging-surface-duo-inspect-page.png)
@@ -53,7 +53,7 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 <!-- ====================================================================== -->
 ## Step 4: Debug your web content from the Surface Duo emulator
 
-1. Switch back to the desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).
+1. Switch back to the desktop instance of Microsoft Edge.
 
    The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../progressive-web-apps/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 

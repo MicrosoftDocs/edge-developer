@@ -307,7 +307,7 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
    <package id="Microsoft.Windows.ImplementationLibrary" version="1.0.220201.1" targetFramework="native" />
    ```
 
-1. Check what's the latest Prerelease version number, at [Release Notes for the WebView2 SDK](../release-notes/index.md).
+1. Check what's the latest Prerelease version number, at [Release notes for the WebView2 SDK](../release-notes/index.md).
 
 1. In Visual Studio, in **Solution Explorer**, right-click the **WebView2APISample** project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -336,7 +336,7 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
    The latest prerelease version of the WebView2 SDK is now installed for this project.
 
 See also:
-* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.
 
 
 <!-- ====================================================================== -->
@@ -777,4 +777,4 @@ The following steps show how the WebView can get information from the Win32 Host
 * [WebView2 API Reference](../webview2-api-reference.md)
 * [Get started with WebView2 in Win32 apps](../get-started/win32.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
-* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.

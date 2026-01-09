@@ -38,7 +38,7 @@ New APIs are introduced in phases as follows:
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
 See also:
-* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.
 
 
 <!-- ------------------------------ -->
@@ -103,7 +103,7 @@ On a development machine, the client must have either the Microsoft Edge preview
 <!-- ====================================================================== -->
 ## Forward compatibility of APIs
 
-The WebView2 _release_ SDK has been forward-compatible ever since version 1 (Release SDK [1.0.622.22](../release-notes/archive.md#1062222) in _Archived Release Notes for the WebView2 SDK_).  You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest Evergreen WebView2 Runtime.
+The WebView2 _release_ SDK has been forward-compatible ever since version 1 (Release SDK [1.0.622.22](../release-notes/archive.md#1062222) in _Archived release notes for the WebView2 SDK_).  You can update your WebView2 app to use the latest APIs from the most recent Release version of the SDK.  Your app will continue to work on clients because clients automatically have the latest Evergreen WebView2 Runtime.
 
 The WebView2 APIs in a Release SDK package are stable and forward-compatible.  A WebView2 API works when using a WebView2 Runtime that has an equal or higher build number as the SDK build number in which the API was introduced.  The build number is the third part of the four-part version number for the Webview2 SDK, and of the four-part version number for Microsoft Edge and the WebView2 Runtime.
 
@@ -170,7 +170,7 @@ In the Evergreen distribution approach, the client's WebView2 Runtime automatica
 
 In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
 
-To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release Notes for the WebView2 SDK](../release-notes/index.md).
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for the WebView2 SDK](../release-notes/index.md).
 
 
 <!-- ====================================================================== -->
@@ -213,11 +213,11 @@ If your code determines that an API is unavailable in the client's installed Web
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- bucket 8 top -->
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- bucket 8 very bottom -->
-* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release Notes for the WebView2 SDK_.<!-- bucket 12 -->
-* [Release Notes for the WebView2 SDK](../release-notes/index.md)<!-- bucket 12 -->
+* [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.<!-- bucket 12 -->
+* [Release notes for the WebView2 SDK](../release-notes/index.md)<!-- bucket 12 -->
 * [WebView2 API Reference](../webview2-api-reference.md)<!-- bucket 13 -->
 <!--
-* [1.0.622.22](../release-notes/archive.md#1062222) in _Archived Release Notes for the WebView2 SDK_.  bucket 12 -->
+* [1.0.622.22](../release-notes/archive.md#1062222) in _Archived release notes for the WebView2 SDK_.  bucket 12 -->
 
 Microsoft Edge Enterprise documentation:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- not in article body -->
