@@ -23,7 +23,7 @@ The following updates have been deployed to production, addressing key issues an
 <!-- ====================================================================== -->
 ## Enhanced status indicators for ongoing processes
 
-* The **Create New Extension** button now provides clearer feedback during the creation process. Instead of greying out, it now displays **Creating...**, along with a loading indicator. This prevents multiple submissions and clearly communicates that the process is in progress.
+* The **Create New Extension** button now provides clearer feedback during the creation process.  Instead of the button being grayed-out, the button now displays **Creating...**, along with a loading indicator.  This prevents multiple submissions, and clearly communicates that the process is in-progress.
 
 * The progress bar for image asset uploads on **Store Listings** pages is now displayed inline, indicating real-time upload progress.
 

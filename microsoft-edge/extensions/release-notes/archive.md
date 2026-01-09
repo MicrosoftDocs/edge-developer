@@ -1,6 +1,6 @@
 ---
 title: Archived release notes for Microsoft Edge extensions
-description: Enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons site.
+description: Previous enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons site.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
