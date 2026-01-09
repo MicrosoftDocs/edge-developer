@@ -69,7 +69,7 @@ https://learn.microsoft.com/microsoft-edge/extensions/getting-started/manifest-f
 
 
 <!-- ====================================================================== -->
-## Fixed duplicate logo images
+## Fixed duplicating a logo image
 
 * Resolved an issue when duplicating a logo image.  ([Issue 255](https://github.com/microsoft/MicrosoftEdge-Extensions/issues/255))
 
