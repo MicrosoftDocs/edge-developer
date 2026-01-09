@@ -20,7 +20,7 @@ To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension fro
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
 
-For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/mv2/manifest) (V2) and then select the links on the fields.
+For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/mv2/manifest) (V2) and then click the links on the fields.
 
 ```json
 {
