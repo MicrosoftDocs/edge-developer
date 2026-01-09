@@ -1181,7 +1181,7 @@
                   href: ./extensions/developer-guide/csp.md
                   displayName: policies
 
-                - name: Previous manifest
+                - name: Migrating to V3
                   items:
                     - name: Overview and timelines for migrating to Manifest V3
                       href: ./extensions/developer-guide/manifest-v3.md
