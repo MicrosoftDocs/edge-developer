@@ -49,9 +49,8 @@ The following updates have been deployed to production, addressing key issues an
 
 * URL-related error messages have clearer wording. 
 
-* Added "unreachable URL" detection for the **Long Description**, **Privacy Policy**, and **Support URL** fields.
+* Added "unreachable URL" detection for the **Long Description**<!-- **Website URL**? if so, move to be 2nd -->, **Privacy policy URL**, and **Support contact details** fields.
 <!-- todo: where is the **Long Description** field? -->
-<!-- todo: where is the **Privacy Policy** field? -->
 <!-- todo: where is the **Support URL** field? -->
 <!-- not found in:
 * [Step 5: Enter properties describing the extension](../publish/publish-extension.md#step-5-enter-properties-describing-the-extension) in _Publish a Microsoft Edge extension_ 
