@@ -1172,7 +1172,7 @@
 # -----------------------------------------------------------------------------
         - name: Develop an extension
           items:
-            - name: Manifest files
+            - name: Manifest file
               items:
                 - name: Manifest file format for extensions
                   href: ./extensions/getting-started/manifest-format.md
