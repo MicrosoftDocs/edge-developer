@@ -1,8 +1,8 @@
-<!-- Jan 2026 Release SDK -->
+<!-- Jan 2026 Release SDK (123) -->
 <!-- ====================================================================== -->
-## 1.0.####.##
+## Release SDK 1.0.####.##, for Runtime ###
 
-Release Date: Monthname nn, 2025
+Release Date: Monthname nn, 2025, Runtime ###
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add righmost part of url:
@@ -75,14 +75,14 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jan 2026 Release SDK -->
+<!-- end of Jan 2026 Release SDK (123) -->
 
 
-<!-- Jan 2026 Prerelease SDK -->
+<!-- Jan 2026 Prerelease SDK (123) -->
 <!-- ====================================================================== -->
-## 1.0.####-prerelease
+## Prerelease SDK 1.0.####-prerelease, for Runtime ###
 
-Release Date: Monthname nn, 2025
+Release Date: Monthname nn, 2025, Runtime ###
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add righmost part of url:
@@ -166,4 +166,4 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jan 2026 Prerelease SDK -->
+<!-- end of Jan 2026 Prerelease SDK (123) -->
