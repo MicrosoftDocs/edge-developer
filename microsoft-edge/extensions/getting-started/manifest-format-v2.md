@@ -110,19 +110,6 @@ For reference information about each field, see [Manifest file format](https://d
 
 
 <!-- ====================================================================== -->
-## Changes in manifest.json V3 vs. V2
-
-| V3 | V2 |
-|---|---|
-| `  "manifest_version": 3,` | `"manifest_version": 2,` |
-| `"action": {...},` | `"browser_action": {...},` |
-| `"action": {...},` | `"page_action": {...},` |
-| removed | `"persistent": false,` |
-| If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
-| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
-
-
-<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
