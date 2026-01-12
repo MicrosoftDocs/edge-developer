@@ -23,11 +23,11 @@ The following updates have been deployed to production, addressing key issues an
 <!-- ====================================================================== -->
 ## Enhanced status indicators for ongoing processes
 
-* The **Create New Extension** button now provides clearer feedback during the creation process.  Instead of the button being grayed-out, the button now displays **Creating...**, along with a loading indicator.  This prevents multiple submissions, and clearly communicates that the process is in-progress.
+* The **Create new extension** (**+**) button now provides clearer feedback during the creation process.  Instead of the button being grayed-out, after you click **Create new extension**, the button is replaced by an hourglass cursor and **Creating...**.  This prevents multiple submissions, and clearly communicates that the processing is in-progress.
 
 * The progress bar for image asset uploads on **Store Listings** pages is now displayed inline, indicating real-time upload progress.
 
-* Added progress indication for a long page load operation.
+* Added progress indication when there's a long page load operation.
 
 * The **Save Draft** button is now disabled (grayed out) after a successful save on the **Store Listings** page.
 
@@ -49,7 +49,7 @@ The following updates have been deployed to production, addressing key issues an
 
 * URL-related error messages have clearer wording. 
 
-* Added "unreachable URL" detection for the following fields:
+* Unreachable URLs are now detected in the following fields:
 
    * The **Description** field in the **Details for \<Language\>** page.
 
