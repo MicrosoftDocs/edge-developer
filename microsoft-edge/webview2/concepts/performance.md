@@ -300,12 +300,6 @@ WebView2 offloads web content rendering to the browser engine that Edge uses, so
 
 The following practices ensure efficient CPU usage and smooth rendering.
 
-<!--
-todo:
-See also:
-* []()
--->
-
 
 <!-- ------------------------------ -->
 #### Enable hardware acceleration
