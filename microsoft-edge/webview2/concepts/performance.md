@@ -68,17 +68,20 @@ Using a fixed version risks missing out on recent optimizations.  If you must us
 
 Test your app using the latest WebView2 preview channels (Beta, Dev, or Canary), to prepare for upcoming changes.
 
-<!--
-todo:
 See also:
-* []()
--->
+* [The Evergreen Runtime distribution mode](./distribution.md#the-evergreen-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
 
 
 <!-- ------------------------------ -->
 #### Launch performance
 
 If Microsoft Edge and WebView2 versions match and Edge is running, the required WebView2 binaries are already in memory, improving launch performance.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -98,6 +101,12 @@ To optimize startup, use the following best practices.
 
 Avoid rendering splash screens or simple dialogs with WebView2, due to startup costs and resource contention.  Use lightweight XAML or Win32 screens instead, initializing WebView2 only when displaying actual web content.
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Optimize the User Data Folder (UDF) location
@@ -106,6 +115,12 @@ Keep the UDF in the default local app data folder, for performance.
 
 Avoid slow drives or network shares; put the data on a faster, physical disk.
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Avoid redundant WebView2 instances
@@ -113,6 +128,12 @@ Avoid slow drives or network shares; put the data on a faster, physical disk.
 Plan your UI so that you don't create more WebView2 controls than necessary.
 
 For example, if navigating between multiple web pages, it might be faster to reuse a single WebView2 and simply navigate it to a new URL, rather than destroying and re-creating a WebView2 control.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -128,9 +149,26 @@ Below are best practices to manage and reduce the memory footprint.
 <!-- ------------------------------ -->
 #### Share WebView2 environments
 
-To save memory, use one `CoreWebView2Environment` across all WebView2 controls in an app, ensuring consistent parameters for sharing.
+* To save memory, use one `CoreWebView2Environment` across all WebView2 controls in an app, ensuring consistent parameters for sharing.
 
-Reuse the same environment in tabbed interfaces, rather than creating multiple environments.
+* Reuse the same environment in tabbed interfaces, rather than creating multiple environments.
+
+See also:
+* [Main classes for WebView2: Environment, Controller, and Core](./environment-controller-core.md)
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2Environment Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+
+---
 
 
 <!-- ------------------------------ -->
@@ -142,15 +180,43 @@ This reduces memory usage, but requires careful management of profiles and thoro
 
 Keep in mind that with sharing a User Data Folder (UDF), underlying data (such as cookies, caches, and databases) is being shared between different applications.
 
+See also:
+* [Manage user data folders](./user-data-folder.md)
+
+<!-- no envOptions section; use tabset: -->
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2EnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions)
+
+---
+
 
 <!-- ------------------------------ -->
 #### Avoid large-scope host objects
 
 If you use `AddHostObjectToScript` to expose .NET objects to the web, be mindful of what those objects hold in memory.  The entire object is effectively referenced as long as the script context continues to live, which could prevent garbage collection of that object on the .NET side.
 
-Don't expose a very large object graph, if only a small part is needed for scripting.  When the page that needed the object graph is gone, call `CoreWebView2.RemoveHostObjectFromScript` to release the object graph.
+Don't expose a very large object graph, if only a small part is needed for scripting.  Prefer creating narrow, purpose‑specific host objects, instead of passing full application models.  For example:
 
-For example, if you navigate away from a page that was using a host object, remove that object, to avoid keeping it alive behind the scenes.
+* Expose only the operations and data the page actually needs.  For example, expose a `FileService` object, instead of your entire `AppContext`.
+
+* Wrap complex objects behind small façades to avoid unintentionally exposing deep object hierarchies.
+
+* For collections, provide filtered or paged results rather than exposing the full data structure.
+
+When the page that needed the object is gone, call `CoreWebView2.RemoveHostObjectFromScript` to release the object graph.  For example, if you navigate away from a page that was using a host object, remove that object, to avoid keeping it alive behind the scenes.
+
+See also:
+* [Host/web object sharing](./overview-features-apis.md#hostweb-object-sharing) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -162,13 +228,22 @@ Avoid closures that strongly reference WebView2; use weak references when necess
 
 Call `webView.Dispose()` to dispose of WebView2 objects when they're no longer needed.
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Use memory management APIs
 
-Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactive WebViews to reduce memory usage—this may prompt **Chromium to drop cached data** or swap memory to disk.  When the WebView2 instance is again active, restore the target level to `Normal`, for full performance.
+Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactive WebViews to reduce memory usage—this may prompt the browser engine to drop cached data or swap memory to disk.  When the WebView2 instance is again active, restore the target level to `Normal`, for full performance.
 
 If the WebView2 instance won't be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.  Resume with `Resume()` when needed.  These `Try` operations are best-effort.
+
+See also:
+* [Memory usage target](./overview-features-apis.md#memory-usage-target) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
@@ -178,6 +253,12 @@ Optimize the rendered content if you observe excessive memory is being utilized 
 
 See [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml).
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Periodically refresh the WebView2
@@ -186,13 +267,24 @@ Some long-running pages might retain resources over time, depending on the web c
 
 In scenarios where the page lifecycle naturally accumulates state, a periodic refresh of the WebView2 instance can help return the process to a clean baseline.
 
+See also:
+* [todo] - to check heap usage.
+* [todo]() - to check event listeners.
+* [todo]() - to check DOM retention.
+
 
 <!-- ====================================================================== -->
 ## CPU and rendering performance
 
-WebView2 offloads web content rendering to the Chromium engine, so performance characteristics are like running a site in Edge.
+WebView2 offloads web content rendering to the browser engine that Edge uses, so performance characteristics are like running a site in Edge.
 
 The following practices ensure efficient CPU usage and smooth rendering.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ------------------------------ -->
@@ -201,6 +293,9 @@ The following practices ensure efficient CPU usage and smooth rendering.
 By default, WebView2 uses the GPU for rendering.  Avoid disabling this use of the GPU, unless troubleshooting, because it's critical for performance.
 
 GPU drivers and additional buffers must be allocated, which requires additional memory.
+
+See also
+* [WebView2 browser flags](./webview-features-flags.md) - `disable-gpu`
 
 
 <!-- ------------------------------ -->
@@ -220,13 +315,25 @@ Optimize pages by using the following techniques:
 
 * Use typical web optimization: avoid excessive layout thrashing, where a script alternates between reading and writing DOM properties, causing multiple reflows.
 
+See also:
+* [Performance tool: Analyze your website's performance](../../devtools/performance/overview.md)
+* [Analyze runtime performance (tutorial)](../../devtools/performance/index.md)
+* [Troubleshooting common performance issues](../../devtools/rendering-tools/index.md)
+* [Optimize website speed using Lighthouse](../../devtools/speed/get-started.md)
+
 
 <!-- ------------------------------ -->
 #### Reduce unnecessary communication
 
-To improve performance, reduce unnecessary communication between the host and WebView2.
+* Reduce unnecessary communication between native code and web code running in WebView2<!-- todo: orig: between the host and WebView2 -->.
 
-Frequent message passing can increase CPU usage, so batch messages wherever possible.
+* Batch messages wherever possible, because frequent message passing can increase CPU usage.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ------------------------------ -->
@@ -234,19 +341,26 @@ Frequent message passing can increase CPU usage, so batch messages wherever poss
 
 WebView2 creates separate renderer processes.  In apps with heavy native workloads, assign thread priorities carefully to avoid starving WebView2 threads.
 
+See also:
+* [Process model for WebView2 apps](./process-model.md)
+
 
 <!-- ------------------------------ -->
 #### Test real scenarios
 
 Always test your actual content on target hardware, using Microsoft Edge DevTools to find and optimize performance issues.
 
-To understand how Chromium isolates work to reduce memory and improve stability, see [Process Model and Site Isolation](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md).
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
 ## Network and loading performance
 
-Network latency and bandwidth can dominate user-perceived performance, especially when loading web content in a WebView2.
+Network latency and limited bandwidth can cause user-perceived performance problems, especially when loading web content in a WebView2 control.
 
 The following best practices overlap with general web development.
 
@@ -256,7 +370,14 @@ The following best practices overlap with general web development.
 
 WebView2 supports browser caching; serve proper cache headers, so that repeated resource requests use cached versions.
 
+See also:
+* [HTTP caching](https://developer.mozilla.org/docs/Web/HTTP/Guides/Caching) at MDN.
+
 Consider pre-caching static files by using a service worker, for offline access; but monitor the cache size.
+
+See also:
+* [View Cache data](../../devtools/storage/cache.md)
+* [Using Service Workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers) at MDN.
 
 
 <!-- ------------------------------ -->
@@ -272,11 +393,17 @@ Optimize or asynchronously load slow third-party scripts or APIs, as needed.
 
 To improve perceived speed:
 
-* Keep HTML light.
+* Keep HTML light.  With modern single-page-app frameworks, the initial HTML payload is very small.  HTML usually loads, parses, and renders much faster than the equivalent UI written with a single-page-app JavaScript framework.
 
 * Defer heavy components.
 
 * Lazy-load images or scripts after the initial UI appears.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -297,7 +424,13 @@ See also:
 <!-- ------------------------------ -->
 #### Optimize communication
 
-It is recommended to implement asynchronous, batched communication, to minimize IPC communication and reduce data copying.
+Implement asynchronous, batched communication, to minimize IPC communication and reduce data copying.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -374,6 +507,12 @@ Observe symptoms, to determine whether the issue is:
 * High memory use.
 * Sustained CPU load.
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Test with simple content
@@ -384,11 +523,23 @@ Load a minimal HTML page.
 
 * If performance is faster with simple content, focus on optimizing your web content.
 
+<!--
+todo:
+See also:
+* []()
+-->
+
 
 <!-- ------------------------------ -->
 #### Verify the WebView2 Runtime version
 
 Make sure you're running the latest WebView2 Runtime, not an outdated version or fallback Edge install.  Update the WebView2 Runtime as needed.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ------------------------------ -->
@@ -399,6 +550,12 @@ Use Windows Task Manager to check WebView2 process memory.
 <!-- todo: Browser Task Manager?  In Microsoft Edge, select **Settings and more** (...) > **More tools** > **Browser Task Manager**. -->
 
 Unusual growth may indicate a leak—use WPR recordings to debug this further.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ------------------------------ -->

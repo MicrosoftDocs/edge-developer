@@ -148,7 +148,7 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 <!-- / end of keep sync'd -->
 
 See also:
-* [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md)
+* [Main classes for WebView2: Environment, Controller, and Core](./environment-controller-core.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2350,7 +2350,7 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigation in WebView2.  A _navigation_ is the process for loading a new URL.
 
 See also:
-* [Navigation events for WebView2 apps](navigation-events.md)
+* [Navigation events for WebView2 apps](./navigation-events.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2676,7 +2676,7 @@ Your app can handle basic authentication using the WebView2 control.  _Basic aut
 <!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
 See also:
-* [Basic authentication for WebView2 apps](basic-authentication.md)
+* [Basic authentication for WebView2 apps](./basic-authentication.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
