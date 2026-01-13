@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/06/2026
+ms.date: 01/12/2026
 ---
 # Performance best practices for WebView2 apps
 
@@ -62,16 +62,34 @@ Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  
 ## Identify the type of performance bottleneck
 
 Observe the symptoms of the slow performance, to determine whether the issue is:
-* Startup lag.
-* Slow page load.
-* High memory use.
-* Sustained CPU load.
 
-<!--
-todo:
-See also:
-* []()
--->
+<!-- all top-level sections: -->
+
+<!-- * Foo.  See [Identify the type of performance bottleneck](#identify-the-type-of-performance-bottleneck), below. -->
+
+<!-- * Foo.  See [Use the Evergreen Runtime](#use-the-evergreen-runtime), below. -->
+
+<!-- * Foo.  See [Optimize startup performance](#optimize-startup-performance), below. -->
+
+* Startup lag.  See [Optimize startup performance](#optimize-startup-performance), below.
+
+<!-- * Foo.  See [Memory usage and process management](#memory-usage-and-process-management), below. -->
+
+* High memory use.  See [Memory usage and process management](#memory-usage-and-process-management), below.
+
+<!-- * Foo.  See [CPU and rendering performance](#cpu-and-rendering-performance), below. -->
+
+* Sustained CPU load.  See [CPU and rendering performance](#cpu-and-rendering-performance), below.
+
+<!-- * Foo.  See [Network and loading performance](#network-and-loading-performance), below. -->
+
+* Slow page load.  See [Network and loading performance](#network-and-loading-performance), below.
+
+<!-- * Foo.  See [Communication between the WebView2 control and the host app](#communication-between-the-webview2-control-and-the-host-app), below. -->
+
+<!-- * Foo.  See [Telemetry and profiling tools](#telemetry-and-profiling-tools), below. -->
+
+<!-- * Foo.  See [Troubleshooting workflows for performance issues](#troubleshooting-workflows-for-performance-issues), below. -->
 
 
 <!-- ====================================================================== -->
