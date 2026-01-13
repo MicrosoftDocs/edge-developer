@@ -117,7 +117,8 @@ See also:
 <!-- ------------------------------ -->
 #### Cold start (cold launch)
 
-A common performance bottleneck is the time to create a WebView2 and navigate it the first time.  On a cold launch, WebView2 must spin up its processes and disk caches, which can introduce a noticeable delay (which can vary by hardware and content complexity).
+A common performance bottleneck is the time to create a WebView2 control and navigate to a webpage for the first time.  On a cold launch, WebView2 must spin up its processes and disk caches, which can introduce a noticeable delay (which can vary by hardware and content complexity).
+
 
 To optimize startup, use the following best practices.
 
@@ -147,7 +148,7 @@ See also:
 
 Plan your UI so that you don't create more WebView2 controls than necessary.
 
-For example, if navigating between multiple web pages, it might be faster to reuse a single WebView2 and simply navigate it to a new URL, rather than destroying and re-creating a WebView2 control.
+For example, if navigating between multiple webpages, it might be faster to reuse a single WebView2 and simply navigate it to a new URL, rather than destroying and re-creating a WebView2 control.
 
 <!--
 todo:

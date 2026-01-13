@@ -106,7 +106,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## Service workers
 
-Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
+Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  These scripts enable you to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
 
 <!--Related Guides:
 

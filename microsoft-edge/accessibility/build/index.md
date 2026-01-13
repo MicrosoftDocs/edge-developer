@@ -225,7 +225,7 @@ This W3C mapping document explains how the semantics of web content languages ar
 <!-- ------------------------------ -->
 #### Easy Checks – A First Review of Web Accessibility
 
-A series of quick checks by the WAI that help you assess the accessibility of a web page.  For more information, go to [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html).
+A series of quick checks by the WAI that help you assess the accessibility of a webpage.  For more information, go to [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html).
 
 
 <!-- ------------------------------ -->
