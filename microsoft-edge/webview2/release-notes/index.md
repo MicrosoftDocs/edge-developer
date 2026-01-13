@@ -105,21 +105,20 @@ This Release SDK includes the following bug fixes.
 
 <!-- Jan 2026 Prerelease SDK (145) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.####-prerelease, for Runtime ###
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145.0.3796.0
 
-Release Date: Monthname nn, 2025, Runtime ###
+Release Date: January 19, 2026, Runtime 145.0.3796.0
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+
+[NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 <!-- todo: add righmost part of url:
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 -->
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 145.0.3796.0 or higher.
 
 
 <!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -128,20 +127,38 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Experimental APIs (Phase 1)
 -->
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Enhanced Security Mode Level
 
-description
+The Enhanced Security Mode Level API enables configuring Enhanced Security Mode (ESM) for WebView2 instances. ESM reduces the risk of memory-related vulnerabilities by disabling JavaScript Just-in-Time (JIT) compilation and enabling additional operating system protections.
+Use the EnhancedSecurityModeLevel property on CoreWebView2Profile (or ICoreWebView2ExperimentalProfile9) to control the ESM level for all WebView2 instances sharing the same profile.
+Use the Off value to completely disable Enhanced Security Mode (default behavior).
+Use the Strict value to enable enhanced security for all sites. This disables JIT compilation and applies additional OS-level protections, improving security but potentially reducing JavaScript performance.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2EnhancedSecurityModeLevel Class](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+   * [CoreWebView2EnhancedSecurityModeLevel.Off Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+   * [CoreWebView2EnhancedSecurityModeLevel.Strict Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.EnhancedSecurityModeLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2EnhancedSecurityModeLevel Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2enhancedsecuritymodelevel?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true)
+* [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.EnhancedSecurityModeLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true#enhancedsecuritymodelevel)
+
 ##### [Win32/C++](#tab/win32cpp)
+
+* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3796-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_level)
+  * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_OFF`
+  * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_STRICT`
+* [ICoreWebView2ExperimentalProfile9](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProfile9::get_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#get_enhancedsecuritymodelevel)
+  * [ICoreWebView2ExperimentalProfile9::put_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#put_enhancedsecuritymodelevel)
 
 ---
 
@@ -150,46 +167,20 @@ description
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed chrome.webview unavailability
+* Disable background update of network time
 
 
-<!-- ---------- -->
-###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
 
 <!-- end of Jan 2026 Prerelease SDK (145) -->
 
