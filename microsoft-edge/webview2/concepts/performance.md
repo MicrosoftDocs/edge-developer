@@ -15,6 +15,8 @@ Use the following practices to optimize WebView2's startup time, memory, CPU, an
 Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  WebView2 uses Edge's multi-process architecture, so each control launches multiple browser engine processes that add memory and startup overhead.
 
 **Detailed contents:**
+
+* [Identify the type of performance bottleneck](#identify-the-type-of-performance-bottleneck)
 * [Use the Evergreen Runtime](#use-the-evergreen-runtime)
    * [Launch performance](#launch-performance)
 * [Optimize startup performance](#optimize-startup-performance)
@@ -49,12 +51,27 @@ Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  
    * [Inspect with Edge Developer Tools](#inspect-with-edge-developer-tools)
    * [Browser Task Manager](#browser-task-manager)
 * [Troubleshooting workflows for performance issues](#troubleshooting-workflows-for-performance-issues)
-   * [Identify the bottleneck type](#identify-the-bottleneck-type)
    * [Test with simple content](#test-with-simple-content)
    * [Verify the WebView2 Runtime version](#verify-the-webview2-runtime-version)
    * [Monitor memory usage](#monitor-memory-usage)
    * [Compare WebView2 with Microsoft Edge](#compare-webview2-with-microsoft-edge)
 * [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Identify the type of performance bottleneck
+
+Observe the symptoms of the slow performance, to determine whether the issue is:
+* Startup lag.
+* Slow page load.
+* High memory use.
+* Sustained CPU load.
+
+<!--
+todo:
+See also:
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -111,15 +128,9 @@ See also:
 <!-- ------------------------------ -->
 #### Optimize the User Data Folder (UDF) location
 
-Keep the UDF in the default local app data folder, for performance.
+* Keep the UDF in the default local app data folder, for performance.  See [Manage user data folders](./user-data-folder.md).
 
-Avoid slow drives or network shares; put the data on a faster, physical disk.
-
-<!--
-todo:
-See also:
-* []()
--->
+* Avoid slow drives or network shares; put the data on a faster, physical disk.
 
 
 <!-- ------------------------------ -->
@@ -426,11 +437,9 @@ See also:
 
 Implement asynchronous, batched communication, to minimize IPC communication and reduce data copying.
 
-<!--
-todo:
 See also:
-* []()
--->
+* [Web/native interop](./overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.
+* [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
 
 
 <!-- ====================================================================== -->
@@ -496,22 +505,6 @@ See also:
 ## Troubleshooting workflows for performance issues
 
 When performance issues arise in a WebView2 app, use a structured approach to troubleshoot, per the following strategies.
-
-
-<!-- ------------------------------ -->
-#### Identify the bottleneck type
-
-Observe symptoms, to determine whether the issue is:
-* Startup lag.
-* Slow page load.
-* High memory use.
-* Sustained CPU load.
-
-<!--
-todo:
-See also:
-* []()
--->
 
 
 <!-- ------------------------------ -->
