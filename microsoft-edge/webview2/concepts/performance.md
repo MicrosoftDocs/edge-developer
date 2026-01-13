@@ -10,6 +10,8 @@ ms.date: 01/12/2026
 ---
 # Performance best practices for WebView2 apps
 
+<!-- todo: global: state the recomm action (best practice) first, then explain why/details -->
+
 Use the following practices to optimize WebView2's startup time, memory, CPU, and network use.  Use these tools and workflows for troubleshooting performance.
 
 Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  WebView2 uses Edge's multi-process architecture, so each control launches multiple browser engine processes that add memory and startup overhead.
@@ -118,7 +120,6 @@ See also:
 #### Cold start (cold launch)
 
 A common performance bottleneck is the time to create a WebView2 control and navigate to a webpage for the first time.  On a cold launch, WebView2 must spin up its processes and disk caches, which can introduce a noticeable delay (which can vary by hardware and content complexity).
-
 
 To optimize startup, use the following best practices.
 
@@ -243,11 +244,15 @@ See also:
 <!-- ------------------------------ -->
 #### Prevent memory leaks
 
-Remove event handlers before disposing WebView2 objects, to avoid reference cycles and leaks.
+* Remove event handlers before disposing WebView2 objects, to avoid reference cycles and leaks.
+  <!-- todo: clarify whether native or web; is this asking devs to:
+  * Remove event handlers that are set in their JavaScript web code that's running inside wv2 objects.
+  * Remove native event handlers.
+  -->
 
-Avoid closures that strongly reference WebView2; use weak references when necessary.
+* Avoid closures that strongly reference WebView2; use weak references when necessary.
 
-Call `webView.Dispose()` to dispose of WebView2 objects when they're no longer needed.
+* Call `webView.Dispose()` to dispose of WebView2 objects when they're no longer needed.
 
 <!--
 todo:
@@ -259,34 +264,38 @@ See also:
 <!-- ------------------------------ -->
 #### Use memory management APIs
 
-Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactive WebViews to reduce memory usage—this may prompt the browser engine to drop cached data or swap memory to disk.  When the WebView2 instance is again active, restore the target level to `Normal`, for full performance.
+* Set `MemoryUsageTargetLevel = CoreWebView2MemoryUsageTargetLevel.Low` on inactive WebViews to reduce memory usage—this may prompt the browser engine to drop cached data or swap memory to disk.  When the WebView2 instance is again active, restore the target level to `Normal`, for full performance.  See [Memory usage target](./overview-features-apis.md#memory-usage-target) in _Overview of WebView2 APIs_.
 
-If the WebView2 instance won't be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.  Resume with `Resume()` when needed.  These `Try` operations are best-effort.
-
-See also:
-* [Memory usage target](./overview-features-apis.md#memory-usage-target) in _Overview of WebView2 APIs_.
+* If the WebView2 instance won't be used for a while, call `CoreWebView2.TrySuspendAsync()` to suspend the renderer process, which pauses scripts and further decreases resource use.  Resume with `Resume()` when needed.  These `Try` operations are best-effort.  See [Performance and debugging](./overview-features-apis.md#performance-and-debugging) in _Overview of WebView2 APIs_.
 
 
 <!-- ------------------------------ -->
 #### Optimize web content
 
-Optimize the rendered content if you observe excessive memory is being utilized in the JS heap, use Microsoft Edge DevTools to monitor usage of resources by web content.
-
-See [Microsoft Edge DevTools documentation](../../devtools/landing/index.yml).
-
-<!--
-todo:
-See also:
-* []()
+Optimize the rendered content.  Observe whether excessive memory is being used in the JavaScript heap.  Use Microsoft Edge DevTools, such as the **Memory** tool, to monitor usage of memory resources by various web content.
+<!-- todo:
+how to check the js heap; how do devs see how much js heap is used?
+can they see that in visual studio?
 -->
+
+To check the JS heap:
+
+1. Right-click the WebView2 app, and then select **Inspect**.
+
+   DevTools opens in a dedicated, undocked window.
+
+1. Select the **Memory** (![Memory icon](./performance-images/memory-icon.png)) tool.
+
+See also:
+* [Fix memory problems](../../devtools/memory-problems/index.md)
 
 
 <!-- ------------------------------ -->
 #### Periodically refresh the WebView2
 
-Some long-running pages might retain resources over time, depending on the web content and application design.  If memory usage grows unexpectedly, review JavaScript heap usage, event listeners, and DOM retention using DevTools.
+In scenarios where the page lifecycle naturally accumulates state, such as a long-running webpage, periodically refresh the WebView2 instance, to help return the WebView2 process to a clean baseline.
 
-In scenarios where the page lifecycle naturally accumulates state, a periodic refresh of the WebView2 instance can help return the process to a clean baseline.
+Some long-running pages might retain resources over time, depending on the web content and application design.  If memory usage grows unexpectedly, review JavaScript heap usage, event listeners, and DOM retention using DevTools.
 
 See also:
 * [todo] - to check heap usage.
@@ -408,7 +417,9 @@ Optimize or asynchronously load slow third-party scripts or APIs, as needed.
 
 To improve perceived speed:
 
-* Keep HTML light.  With modern single-page-app frameworks, the initial HTML payload is very small.  HTML usually loads, parses, and renders much faster than the equivalent UI written with a single-page-app JavaScript framework.
+* Keep the initial payload light.  Prefer sending static HTML initially, because it usually loads, parses, and renders faster than JavaScript.  Be cautious about initially using JavaScript along with a single-page-app framework; such a framework typically loads a lot of code on startup, which can delay the initial rendering of the web content.
+
+   HTML loads, parses, and renders very fast—faster than the time it would've taken JavaScript to produce the same UI.  That's a problem some single-page-app JS frameworks face: they make the initial HTML small, because there's no HTML content in there.  The HTML is created by the framework dynamically, later.  But that means the entire framework code must be downloaded, parsed, and run, before anything can be displayed.
 
 * Defer heavy components.
 
@@ -428,7 +439,7 @@ See also:
 <!-- ------------------------------ -->
 #### Choose the right communication channel
 
-WebView2 provides various web-to-host and host-to-web communication options.  Typically, Web Messages are best, due to their simplicity and reliability.
+WebView2 provides various web-to-host and host-to-web communication options.  Typically, Web Messages are faster because of both memory usage and time, due to their simplicity and reliability.
 
 Use Host Objects only when you need capabilities that Web Messages can't easily express, such as:
 
@@ -500,12 +511,11 @@ See also:
 <!-- ------------------------------ -->
 #### Inspect with Edge Developer Tools
 
-Use `edge://inspect`, which opens the **Inspect with Edge Developer Tools** tab, to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks.
+Use `edge://inspect`, which opens the **Inspect with Edge Developer Tools** tab, to monitor WebView2 content and processes, to identify issues such as high CPU or memory leaks:
 
 ![Inspect with Edge Developer Tools](./performance-images/inspect.png)
 
-See also:
-* [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging-desktop.md)
+To learn more about how to inspect a WebView2 process by using `edge://inspect`, see [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](../how-to/remote-debugging-desktop.md).
 
 
 <!-- ------------------------------ -->
