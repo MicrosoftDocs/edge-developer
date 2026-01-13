@@ -426,7 +426,23 @@ See also:
 
 WebView2 provides various web-to-host and host-to-web communication options.  Typically, Web Messages are best, due to their simplicity and reliability.
 
-Use Host Objects only when you need a more complex API, as they can be less stable if the object changes or if there are COM marshalling issues.
+Use Host Objects only when you need capabilities that Web Messages can't easily express, such as:
+
+* Rich, object‑like APIs (methods, properties, events) you want to expose directly to JavaScript.
+
+* Stateful interactions where maintaining host-side context is simpler than passing structured messages back and forth.
+
+* Large or binary data flows where repeatedly string‑serializing payloads into Web Messages becomes inefficient.
+
+However, Host Objects have the following tradeoffs:
+
+* Host Objects require COM marshalling, which can introduce instability if the object graph changes or isn’t marshalled correctly.
+
+* Host Objects are generally slower for chatty, frequent calls compared to a single batched WebMessage because each method/property access crosses the boundary individually.
+
+* Host Objects create a tighter coupling between web and host code, reducing portability.
+
+Web Messages tend to be more efficient than Host Objects, unless your API surface truly needs the richer semantics of Host Objects.<!-- todo: delete? -->
 
 See also:
 * [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
