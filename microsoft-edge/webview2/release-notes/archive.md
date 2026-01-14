@@ -10,6 +10,8 @@ ms.date: 11/03/2025
 ---
 # Archived Release Notes for the WebView2 SDK
 
+<!-- h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from index.md to archive.md so user must manually nav to archive page -->
+
 These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
 
 

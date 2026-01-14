@@ -14,20 +14,22 @@ ms.date: 12/08/2025
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
 <!-- maintenance:
-
 the templates to copy for incoming sections are in ./includes/templates.md
 
 move h2 sections older than 1 year from present file to archive.md
 presently covers: Feb 2025 - Jan 2026
-then update the announcement https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release to add "archive" in url(s)
+todo: enter ado: pm: update > 1 year old announcements at https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release to add "archive" suffix in urls
+
+don't update pattern for older h2 headings, b/c would break auto-scrolling; they're linked to from Issues announcement, re: past year
+h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from index.md to archive.md, so user must manually nav to archive page
 -->
 
 
 <!-- Jan 2026 Release SDK (144) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime ###
+## Release SDK 1.0.####.##, for Runtime 144
 
-Release Date: Monthname nn, 2025, Runtime ###
+Release Date: Monthname nn, 2025
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add righmost part of url:
@@ -105,15 +107,11 @@ This Release SDK includes the following bug fixes.
 
 <!-- Jan 2026 Prerelease SDK (145) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3796-prerelease, for Runtime 145.0.3796.0
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
 
-Release Date: January 19, 2026, Runtime 145.0.3796.0
-
+Release Date: January 19, 2026
 
 [NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
-<!-- todo: add righmost part of url:
-[NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
--->
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 145.0.3796.0 or higher.
 
@@ -133,32 +131,41 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 <!-- ---------- -->
 ###### Enhanced Security Mode Level
 
-The Enhanced Security Mode Level API enables configuring Enhanced Security Mode (ESM) for WebView2 instances. ESM reduces the risk of memory-related vulnerabilities by disabling JavaScript Just-in-Time (JIT) compilation and enabling additional operating system protections.
-Use the EnhancedSecurityModeLevel property on CoreWebView2Profile (or ICoreWebView2ExperimentalProfile9) to control the ESM level for all WebView2 instances sharing the same profile.
-Use the Off value to completely disable Enhanced Security Mode (default behavior).
-Use the Strict value to enable enhanced security for all sites. This disables JIT compilation and applies additional OS-level protections, improving security but potentially reducing JavaScript performance.
+The Enhanced Security Mode Level API enables configuring Enhanced Security Mode (ESM) for WebView2 instances.  ESM reduces the risk of memory-related vulnerabilities by disabling JavaScript Just-in-Time (JIT) compilation and enabling additional operating system protections.
+
+To control the ESM level for all WebView2 instances that share the same profile, use the `EnhancedSecurityModeLevel` property on `CoreWebView2Profile` (or `ICoreWebView2ExperimentalProfile9`):
+
+* Use the `Off` value to completely disable Enhanced Security Mode (default behavior).
+
+* Use the `Strict` value to enable enhanced security for all sites.  This disables JIT compilation and applies additional OS-level protections, improving security but potentially reducing JavaScript performance.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2EnhancedSecurityModeLevel Class](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
-   * [CoreWebView2EnhancedSecurityModeLevel.Off Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
-   * [CoreWebView2EnhancedSecurityModeLevel.Strict Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+* [CoreWebView2EnhancedSecurityModeLevel Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
+   * `CoreWebView2EnhancedSecurityModeLevel.Off`
+   * `CoreWebView2EnhancedSecurityModeLevel.Strict`
+
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.EnhancedSecurityModeLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.enhancedsecuritymodelevel?view=webview2-dotnet-1.0.3796-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2EnhancedSecurityModeLevel Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2enhancedsecuritymodelevel?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true)
-* [CoreWebView2Profile Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true)
+   * `CoreWebView2EnhancedSecurityModeLevel.Off`
+   * `CoreWebView2EnhancedSecurityModeLevel.Strict`
+
+* `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.EnhancedSecurityModeLevel Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3796-prerelease&preserve-view=true#enhancedsecuritymodelevel)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3796-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_level)
-  * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_OFF`
-  * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_STRICT`
 * [ICoreWebView2ExperimentalProfile9](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalProfile9::get_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#get_enhancedsecuritymodelevel)
-  * [ICoreWebView2ExperimentalProfile9::put_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#put_enhancedsecuritymodelevel)
+   * [ICoreWebView2ExperimentalProfile9::get_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#get_enhancedsecuritymodelevel)
+   * [ICoreWebView2ExperimentalProfile9::put_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#put_enhancedsecuritymodelevel)
+
+* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3796-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_level)
+   * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_OFF`
+   * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_STRICT`
 
 ---
 
@@ -168,6 +175,7 @@ Use the Strict value to enable enhanced security for all sites. This disables JI
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
+
 <!-- ------------------------------ -->
 #### Bug fixes
 
@@ -176,11 +184,8 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed chrome.webview unavailability
-* Disable background update of network time
-
-
-
+* Fixed `chrome.webview` unavailability.
+* Disabled background update of network time.
 
 <!-- end of Jan 2026 Prerelease SDK (145) -->
 

@@ -2,7 +2,7 @@
 <!-- ====================================================================== -->
 ## Release SDK 1.0.####.##, for Runtime ###
 
-Release Date: Monthname nn, 2025, Runtime ###
+Release Date: Monthname nn, 2025
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add righmost part of url:
@@ -82,7 +82,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.####-prerelease, for Runtime ###
 
-Release Date: Monthname nn, 2025, Runtime ###
+Release Date: Monthname nn, 2025
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add righmost part of url:
