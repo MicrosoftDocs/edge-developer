@@ -1400,6 +1400,18 @@
         - name: Introduction to Microsoft Edge WebView2
           href: ./webview2/index.md
 # -----------------------------------------------------------------------------
+        - name: Release Notes
+          items:
+            - name: About Release Notes for the WebView2 SDK
+              href: ./webview2/release-notes/about.md
+
+            - name: Release Notes for the WebView2 SDK
+              href: ./webview2/release-notes/index.md
+              displayName: what's new, announcements
+
+            - name: Archived Release Notes for the WebView2 SDK
+              href: ./webview2/release-notes/archive.md
+# -----------------------------------------------------------------------------
         - name: Get started
           items:
             - name: Overview of WebView2 APIs
@@ -1700,18 +1712,6 @@
 
             - name: Data and privacy in WebView2
               href: ./webview2/concepts/data-privacy.md
-# -----------------------------------------------------------------------------
-        - name: Release Notes
-          items:
-            - name: About Release Notes for the WebView2 SDK
-              href: ./webview2/release-notes/about.md
-
-            - name: Release Notes for the WebView2 SDK
-              href: ./webview2/release-notes/index.md
-              displayName: what's new, announcements
-
-            - name: Archived Release Notes for the WebView2 SDK
-              href: ./webview2/release-notes/archive.md
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference
           items:
