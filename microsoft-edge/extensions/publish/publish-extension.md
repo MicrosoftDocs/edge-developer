@@ -43,6 +43,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
 * [Support](#support)
 * [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension)
    * [Process of using the AI-generated description feature](#process-of-using-the-ai-generated-description-feature)
+   * [Inputs used for the AI-generated description](#inputs-used-for-the-ai-generated-description)
    * [How the AI-generated description feature was evaluated](#how-the-ai-generated-description-feature-was-evaluated)
    * [Safeguards for the AI-generated description](#safeguards-for-the-ai-generated-description)
 * [See also](#see-also)
@@ -250,7 +251,9 @@ The extension's `.zip` package contains the manifest file; to re-upload the mani
 <!-- ------------------------------ -->
 #### Generate the description with AI
 
-To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an optional AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.  See also [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension), below.
+To help you create a high-quality, detailed, and accurate description of your extension, Partner Center offers an optional AI-powered description generation feature.  This capability helps ensure that your extension listing is clear, complete, and informative, improving discoverability and user trust.
+
+See also [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension), below.
 
 To generate the description by using AI:
 
@@ -269,7 +272,12 @@ To generate the description by using AI:
 
 1. Click the **Generate** button.
 
-   The AI model analyzes the uploaded extension package, to describe its functionality.  The generated description combines insights from this package analysis and any input that you provide.
+   The AI model analyzes the uploaded extension package, to describe its functionality.  The generated description combines insights from analyzing:
+
+   * The uploaded extension package, including the manifest, code files, and image files.
+   * Any screenshots of the running extension that you've uploaded via the **Details for \<Language\>** page.
+   * Any input prompt text that you provide.
+   * The language, such as English.
 
 1. If you want to try again, to get a better result:
 
@@ -491,6 +499,20 @@ This process ensures transparency, and compliance with [Microsoft Responsible AI
 
 
 <!-- ---------------------------------- -->
+#### Inputs used for the AI-generated description
+
+The AI-generated description is based on the following inputs for the AI model:
+
+* The uploaded extension package, including the manifest, code files, and image files.  These image files are part of the extension.
+
+* Any screenshots of the running extension that you've uploaded via the **Details for \<Language\>** page.  These screenshots are displayed at the Microsoft Edge Add-ons site.
+
+* Any input prompt text that you enter.
+
+* The language, such as English.
+
+
+<!-- ---------------------------------- -->
 #### How the AI-generated description feature was evaluated
 
 The AI-generated description feature has undergone substantial testing, to identify failure modes and scenarios that might cause AI-generated keywords to do or say things outside of the feature's intended uses or that don't support the principles at [Responsible AI at Microsoft: Ethical policies and practices](https://www.microsoft.com/ai/responsible-ai).
@@ -498,12 +520,6 @@ The AI-generated description feature has undergone substantial testing, to ident
 
 <!-- ---------------------------------- -->
 #### Safeguards for the AI-generated description
-
-The AI-generated description is based on the extension package and the optional prompt text that you provide.  The inputs for the AI model are:
-
-* The uploaded package, including the manifest, code files, and screenshots.
-* Any input prompt text that you enter.
-* The language, such as English.
 
 You have full control over the AI-generated description, and can choose to use it as-is, edit it, or discard it.
 
