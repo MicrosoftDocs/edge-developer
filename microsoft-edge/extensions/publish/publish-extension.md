@@ -445,6 +445,34 @@ For such errors, try the following fixes:
 
 
 <!-- ========================================================================== -->
+## If a single locale appears in Store Listings but the package includes multiple languages
+
+Sometimes only one locale appears in the **Store Listings** tab at Partner Center, even though an extension's package includes multiple languages.  This happens when the manifest file uses hardcoded strings instead of localized message references.
+
+To ensure that all supported locales are detected:
+
+* Update your `manifest.json` file by replacing the name and description fields with i18n placeholders:
+
+   ```
+   {
+      "manifest_version": 3,
+      "name": "__MSG_extensionName__",
+      "description": "__MSG_extensionDescription__"
+   }
+   ```
+<!-- todo: Ref page instead shows:
+      "name": "__MSG_extName__",
+https://developer.chrome.com/docs/extensions/reference/api/i18n#support_multiple_languages 
+-->
+
+* Include a `default_locale` in your manifest, such as `"default_locale": "en"`.
+
+* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message IDs to identify available languages.  If these message IDs are missing, the language will be skipped.
+
+For more information, see [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n), which is an API to implement internationalization throughout your app or extension.
+
+
+<!-- ========================================================================== -->
 ## If the extension is flagged as potentially malware
 
 If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
