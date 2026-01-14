@@ -277,7 +277,6 @@ To generate the description by using AI:
    * The uploaded extension package, including the manifest, code files, and image files.
    * Any screenshots of the running extension that you've uploaded via the **Details for \<Language\>** page.
    * Any input prompt text that you provide.
-   * The language, such as English.
 
 1. If you want to try again, to get a better result:
 
