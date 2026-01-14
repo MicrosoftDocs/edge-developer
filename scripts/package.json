@@ -7,8 +7,7 @@
     "@actions/github": "^6.0.0",
     "@octokit/auth-action": "^5.1.1",
     "@octokit/request": "^9.2.1",
-    "glob": "^7.1.7",
-    "node-fetch": "3.2.10",
+    "glob": "^13.0.0",
     "playwright": "^1.55.1"
   }
 }
