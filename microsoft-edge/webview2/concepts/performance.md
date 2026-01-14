@@ -17,7 +17,6 @@ Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  
 **Detailed contents:**
 * [Identify the type of performance bottleneck](#identify-the-type-of-performance-bottleneck)
 * [Use the Evergreen Runtime](#use-the-evergreen-runtime)
-   * [Launch performance](#launch-performance)
 * [Optimize startup performance](#optimize-startup-performance)
    * [Cold start (cold launch)](#cold-start-cold-launch)
    * [Don't use WebView2 for initial UI](#dont-use-webview2-for-initial-ui)
@@ -62,7 +61,7 @@ Embedding Microsoft Edge WebView2 in Windows apps enables modern web features.  
 
 Observe the symptoms of the slow performance, to determine whether the issue is:
 
-<!-- all h2s, in order: -->
+<!-- all h2s (other than present nav section), in order: -->
 
 <!--
 * Foo.  See [Use the Evergreen Runtime](#use-the-evergreen-runtime), below. -->

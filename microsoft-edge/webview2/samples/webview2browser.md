@@ -195,7 +195,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 
 * [The basics](#the-basics)<!-- h2 -->
   * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)<!-- h4 -->
-  * [Navigate to webpage](#navigate-to-web-page)
+  * [Navigate to webpage](#navigate-to-webpage)
   * [Updating the Address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
   * [Reloading, stop navigation](#reloading-stop-navigation)
