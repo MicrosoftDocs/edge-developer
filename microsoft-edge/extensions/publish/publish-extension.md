@@ -452,7 +452,7 @@ Sometimes only one locale appears in the **Store Listings** tab at Partner Cente
 
 To ensure that all supported locales are detected:
 
-* Update your `manifest.json` file by replacing the name and description fields with i18n placeholders:
+* Update your `manifest.json` file by replacing the `name` and `description` fields with i18n placeholders:
 
    ```
    {
@@ -468,7 +468,7 @@ https://developer.chrome.com/docs/extensions/reference/api/i18n#support_multiple
 
 * Include a `default_locale` in your manifest, such as `"default_locale": "en"`.
 
-* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message IDs to identify available languages.  If these message IDs are missing, the language will be skipped.
+* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message IDs<!-- todo: which message IDs, in which files? --> to identify available languages.  If these message IDs are missing, the language will be skipped.
 
 For more information, see [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n), which is an API to implement internationalization throughout your app or extension.
 
