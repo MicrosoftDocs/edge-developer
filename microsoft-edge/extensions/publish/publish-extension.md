@@ -521,7 +521,15 @@ The AI-generated description feature has undergone substantial testing, to ident
 <!-- ---------------------------------- -->
 #### Safeguards for the AI-generated description
 
-You have full control over the AI-generated description, and can choose to use it as-is, edit it, or discard it.
+The following safeguards are in place for the AI-generated description:
+
+* The AI-generated description is based completely on the extension package and any prompt text that you provide.  See [Inputs used for the AI-generated description](#inputs-used-for-the-ai-generated-description), above.
+
+* Providing input prompt text is optional.
+
+* The inputs are sent to the AI model, which then generates a description.
+
+* You have full control over the AI-generated description, and can choose to use it as-is, edit it, or discard it.
 
 
 <!-- ========================================================================== -->
