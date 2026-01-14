@@ -39,6 +39,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
+* [If a single locale appears but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [Support](#support)
 * [See also](#see-also)
@@ -445,7 +446,7 @@ For such errors, try the following fixes:
 
 
 <!-- ========================================================================== -->
-## If a single locale appears in Store Listings but the package includes multiple languages
+## If a single locale appears but the package includes multiple languages
 
 Sometimes only one locale appears in the **Store Listings** tab at Partner Center, even though an extension's package includes multiple languages.  This happens when the manifest file uses hardcoded strings instead of localized message references.
 
