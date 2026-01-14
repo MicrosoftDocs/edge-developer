@@ -1814,7 +1814,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 ## 1.0.3065.39
 <!-- ## Release SDK 1.0.3065.39, for Runtime 133 -->
 
-Release Date: February 10, 2025
+Release Date: February 10, 2025, Runtime 133
 
 [NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
 
@@ -1845,7 +1845,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 ## 1.0.3116-prerelease
 <!-- ## Prerelease SDK 1.0.3116-prerelease, for Runtime 134 -->
 
-Release Date: February 10, 2025
+Release Date: February 10, 2025, Runtime 134
 
 [NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
 
