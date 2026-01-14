@@ -642,7 +642,7 @@
                   href: ./devtools/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+                - name: Monitor memory use in realtime (Browser Task Manager)
                   href: ./devtools/memory-problems/microsoft-edge-browser-task-manager.md
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)

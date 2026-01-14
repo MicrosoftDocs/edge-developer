@@ -16,6 +16,19 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 
 ![The Elements tool](./elements-tool-images/elements-tool.png)
 
+The **Elements** tool contains the following tabs:
+<!--
+| Tool | Description | Article |
+|---|---|---|
+-->
+* **Styles**<!-- todo: link each -->
+* **Computed**
+* **Layout**
+* **Event Listeners**
+* **DOM Breakpoints**
+* **Properties**
+* **Accessibility**
+
 
 <!-- ====================================================================== -->
 ## See also
