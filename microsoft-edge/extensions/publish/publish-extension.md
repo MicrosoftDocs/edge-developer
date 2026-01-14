@@ -488,7 +488,7 @@ As a Microsoft Edge extension developer, you use Microsoft Partner Center to mak
 
 A high-quality description for the extension is important, for the users to understand the features and functionality of the extension, and to make an informed decision whether to install the extension.
 
-* The AI-generated description is a feature powered by Azure OpenAI, which recommends a description, for you to inspect and edit as needed.  This AI feature uses the extension package (including the manifest and code files) and an optional prompt (input prompt text) to generate a high-quality and policy-compliant description.
+* The AI-generated description is a feature powered by Azure OpenAI, which recommends a description, for you to inspect and edit as needed.  This AI feature uses the extension package (including the manifest, code files, and image files), uploaded screenshots, and optional prompt text to generate a high-quality and policy-compliant description.
 
 * You can apply, edit, or discard the generated text before submitting the extension.  It is strongly recommended that you verify the AI-generated description, editing it as needed, before publishing the description for users.
 
