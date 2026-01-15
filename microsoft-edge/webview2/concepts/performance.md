@@ -228,11 +228,12 @@ See also:
 
 * Avoid closures that strongly reference WebView2; use weak references when necessary.
 
-* Call `webView.Dispose()` to dispose of WebView2 objects when they're no longer needed.
+* Call `WebView2.Dispose()` to release WebView2 objects when they're no longer needed.
 
 See also:
+* [WebView2.Dispose(Boolean) Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2.dispose) - WPF.
+* [WebView2.Dispose(Boolean) Method](https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.webview2.dispose) - WinForms.
 * [Fix memory problems](../../devtools/memory-problems/index.md)
-* [WebView2.Dispose(Boolean) Method](/dotnet/api/microsoft.web.webview2.wpf.webview2.dispose)<!-- todo: correct link? -->
 
 
 <!-- ------------------------------ -->
@@ -384,7 +385,7 @@ To improve perceived speed:
 * Lazy-load images or scripts after the initial UI appears.
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../devtools/elements-tool/elements-tool.md)<!-- todo: better link? -->
+* [Eliminate render-blocking resources](https://learn.microsoft.com/en-us/microsoft-edge/devtools/speed/get-started#eliminate-render-blocking-resources) in _Optimize website speed using Lighthouse_.
 
 
 <!-- ====================================================================== -->
