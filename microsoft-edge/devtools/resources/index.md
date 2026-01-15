@@ -23,7 +23,7 @@ ms.date: 10/30/2023
    limitations under the License.  -->
 # View the resource files that make up a webpage
 
-You can view the resources that make up a web page from within several tools (or _panels_) in Microsoft Edge DevTools, including:
+You can view the resources that make up a webpage from within several tools (or _panels_) in Microsoft Edge DevTools, including:
 *  **Network** tool
 *  **Sources** tool
 *  **Application** tool

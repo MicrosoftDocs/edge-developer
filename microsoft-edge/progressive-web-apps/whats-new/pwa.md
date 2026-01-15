@@ -1,5 +1,5 @@
 ---
-title: What's New in PWAs
+title: What's new in PWAs
 description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/24/2023
 ---
-# What's New in PWAs
+# What's new in PWAs
 
 The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  
 
@@ -18,13 +18,13 @@ Sections of this document correspond to historical releases of Microsoft Edge, a
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 121
+## What's new in Microsoft Edge 121
 
 Starting with Microsoft Edge 121, in DevTools, you can simulate the Window Controls Overlay feature that Progressive Web Apps (PWAs) have, without having to install the PWA.  See [Simulate the Window Controls Overlay API without installing your PWA](../../devtools/progressive-web-apps/simulate-window-controls-overlay.md).
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 114
+## What's new in Microsoft Edge 114
 
 Starting with Microsoft Edge 114, you can detect when your PWA runs in the sidebar in Microsoft Edge by using User-Agent Client Hints.
 
@@ -35,7 +35,7 @@ To learn more, check out these resources:
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 112
+## What's new in Microsoft Edge 112
 
 Starting with Microsoft Edge 112, Progressive Web Apps can experimentally opt-in to be pinned to the sidebar in Microsoft Edge.
 
@@ -49,7 +49,7 @@ To learn more, see [Build a PWA for the sidebar in Microsoft Edge](../how-to/sid
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 108
+## What's new in Microsoft Edge 108
 
 Microsoft Edge 108 introduces experimental support for Progressive Web Apps to define their own widgets in the Widgets Board in Windows 11.
 
@@ -63,7 +63,7 @@ To learn more, see [Display a PWA widget in the Windows Widgets Board](../how-to
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 105
+## What's new in Microsoft Edge 105
 
 Microsoft Edge 105 brings the following new features for Progressive Web Apps.
 
@@ -94,7 +94,7 @@ With Microsoft Edge 105, notifications from a PWA now display the name and icon 
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 101
+## What's new in Microsoft Edge 101
 
 Microsoft Edge 101 introduces the **sidebar search** feature for PWAs. **Sidebar search** lets users of installed PWAs search for and browse web content in a sidebar located in the PWA window.
 
@@ -104,13 +104,13 @@ To access **sidebar search**:
 
    ![The sidebar search icon, shown in the app title bar](./pwa-images/sidebar-search.png)
 
-1. Type a search query, and then press **Enter**. The search results are displayed, and you can go to a web page from there:
+1. Type a search query, and then press **Enter**. The search results are displayed, and you can go to a webpage from there:
 
    ![The sidebar search, opened on the side of a PWA, with some search results displayed](./pwa-images/sidebar-search-results.png)
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 100
+## What's new in Microsoft Edge 100
 
 Microsoft Edge Dev and Canary channels moved to version 100 on February 9, 2022.  In this milestone, we're testing the following new web app features.  We expect to see these new features rolling out to Stable following the testing period.
 
@@ -163,7 +163,7 @@ Users can choose the sort order of their apps:
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 97
+## What's new in Microsoft Edge 97
 
 Microsoft Edge version 96 is scheduled to become the Stable release on November 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
 
@@ -175,7 +175,7 @@ Store-installed PWAs that are participating in the [URL Handlers origin trial](#
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 96
+## What's new in Microsoft Edge 96
 
 
 <!-- ------------------------------ -->
@@ -232,7 +232,7 @@ The app details page:
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 95
+## What's new in Microsoft Edge 95
 
 Microsoft Edge version 95 moved to Beta channel on September 28, 2021.  The origin trials remain active for the following features:
 *  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
@@ -242,7 +242,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 94
+## What's new in Microsoft Edge 94
 
 Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short — just 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
 
@@ -256,7 +256,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 93
+## What's new in Microsoft Edge 93
 
 Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021.  This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
@@ -303,7 +303,7 @@ Learn more about the [navigator.share() API](https://developer.mozilla.org/docs/
 
 
 <!-- ====================================================================== -->
-## What's New in Microsoft Edge 92
+## What's new in Microsoft Edge 92
 
 Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
@@ -360,7 +360,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 <!-- ====================================================================== -->
 ## See also
-<!-- general links not specific to a given What's New entry -->
+<!-- general links not specific to a given What's new entry -->
 
 * [Test experimental APIs and features by using origin trials](../../origin-trials/index.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

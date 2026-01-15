@@ -72,6 +72,6 @@ You can also use the assessment feature of [Accessibility Insights](https://acce
 
 *  [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html) - Approaches for evaluating websites for accessibility.
 
-*  [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a web page.
+*  [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a webpage.
 
 *  [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - A quick reference to Web Content Accessibility Guidelines (WCAG), requirements, success criteria, and techniques.

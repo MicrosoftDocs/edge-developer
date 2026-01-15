@@ -174,7 +174,7 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 <!-- ====================================================================== -->
 ## Zoom DevTools in or out
 
-The DevTools UI is implemented using HTML and CSS, like web pages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
+The DevTools UI is implemented using HTML and CSS, like webpages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
 
 **To zoom the DevTools portion of the browser:**
 
@@ -483,7 +483,7 @@ The **Help** (![Help icon](./overview-images/help-icon.png)) button opens a drop
 
 * **Documentation** - Opens [Microsoft Edge DevTools documentation](./landing/index.yml).
 
-* **Release notes** - Opens [What's New in Microsoft Edge DevTools](./whats-new/whats-new.md).
+* **Release notes** - Opens [What's new in Microsoft Edge DevTools](./whats-new/whats-new.md).
 
 * **Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) - Opens the **Send feedback** dialog.  To connect with the Microsoft Edge DevTools team to report a problem or issue (or to suggest an idea), describe what happened, and include a screenshot.  See [Contact the Microsoft Edge DevTools team](contact.md).
 
@@ -610,7 +610,7 @@ To preview the latest features coming to DevTools, download [Microsoft Edge Cana
 
 See also:
 * [Experimental features](experimental-features/index.md)
-* [What's New in Microsoft Edge DevTools](./whats-new/whats-new.md)
+* [What's new in Microsoft Edge DevTools](./whats-new/whats-new.md)
 
 
 <!-- ====================================================================== -->
@@ -633,7 +633,7 @@ See also:
 * [Use a development environment](./sources/index.md)<!--keep link?-->
 * [Sync changes in DevTools with the file system](./workspaces/index.md)<!--keep link?-->
 * [Override files from the web](./javascript/overrides.md)<!--keep link?-->
-* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a web page.
+* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a webpage.
 
 
 <!-- ====================================================================== -->

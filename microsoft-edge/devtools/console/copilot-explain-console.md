@@ -53,17 +53,17 @@ To use Copilot to explain an error or warning in the **Console** tool:
 
 1. If not done already, [enable Copilot in Edge](#enable-copilot-in-edge), as described above.
 
-1. Open a web page that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/) in a new window or tab.
+1. Open a webpage that contains the errors you want to explain. For example, open the [Console error explainer test page](https://microsoftedge.github.io/Demos/devtools-explain-error/) in a new window or tab.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
 1. In DevTools, on the **Activity Bar**, select the **Console** tab.
 
-1. In the rendered web page, click the **Run** button next to one or more error descriptions.
+1. In the rendered webpage, click the **Run** button next to one or more error descriptions.
 
    The demo page then generates errors, which are shown in the **Console**:
 
-   ![The demo web page in Edge, with the DevTools Console next to it, showing a few error messages](./copilot-explain-console-images/some-console-errors.png)
+   ![The demo webpage in Edge, with the DevTools Console next to it, showing a few error messages](./copilot-explain-console-images/some-console-errors.png)
 
 1. In the **Console** tool, click the **ask Copilot: "Explain this error"** (![The explain error icon in the Console](./copilot-explain-console-images/explain-icon.png)) button next to one of the error messages.
 

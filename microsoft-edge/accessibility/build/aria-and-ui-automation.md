@@ -15,7 +15,7 @@ The W3C defines Accessible Rich Internet Applications (ARIA) as a syntax for mak
 
 Visit [HTML5Accessibility](https://html5accessibility.com) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
-The Microsoft Edge rendering engine builds an accessible projection of web pages, conforming to the following W3C specifications.
+The Microsoft Edge rendering engine builds an accessible projection of webpages, conforming to the following W3C specifications.
 
 
 <!-- ====================================================================== -->
