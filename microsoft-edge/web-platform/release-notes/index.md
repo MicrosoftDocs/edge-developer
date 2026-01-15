@@ -31,4 +31,4 @@ Progressive Web Apps
 * [What's New in PWAs](../../progressive-web-apps/whats-new/pwa.md)
 
 WebView2
-* [Release Notes for the WebView2 SDK](../../webview2/release-notes/index.md)
+* [Release notes for the WebView2 SDK](../../webview2/release-notes/index.md)

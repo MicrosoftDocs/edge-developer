@@ -1,6 +1,6 @@
 ---
-title: Archived Release Notes for the WebView2 SDK
-description: Release Notes for older releases of Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
+title: Archived release notes for the WebView2 SDK
+description: Release notes for older releases of Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/03/2025
 ---
-# Archived Release Notes for the WebView2 SDK
+# Archived release notes for the WebView2 SDK
 <!--
 https://learn.microsoft.com/microsoft-edge/webview2/release-notes/archive
 
@@ -18,7 +18,7 @@ https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20sta
 if change h2 headings pattern, enter work item: update links in announcements
 -->
 
-These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
+The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs over one year old.
 
 
 <!-- Jan 2025 Release SDK -->
@@ -8630,7 +8630,7 @@ Initial developer preview release.
 <!-- ====================================================================== -->
 ## See also
 
-* [About Release Notes for the WebView2 SDK](./about.md)
-* [Release Notes for the WebView2 SDK](./index.md)
+* [About release notes for the WebView2 SDK](./about.md)
+* [Release notes for the WebView2 SDK](./index.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)

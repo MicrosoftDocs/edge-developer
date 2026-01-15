@@ -1404,16 +1404,16 @@
         - name: Introduction to Microsoft Edge WebView2
           href: ./webview2/index.md
 # -----------------------------------------------------------------------------
-        - name: Release Notes
+        - name: Release notes
           items:
-            - name: About Release Notes for the WebView2 SDK
+            - name: About release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md
 
-            - name: Release Notes for the WebView2 SDK
+            - name: Release notes for the WebView2 SDK
               href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Archived Release Notes for the WebView2 SDK
+            - name: Archived release notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
 # -----------------------------------------------------------------------------
         - name: Get started
