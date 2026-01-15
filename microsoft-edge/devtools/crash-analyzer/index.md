@@ -257,7 +257,7 @@ External links:
 
 <!--
 not used in .md above:
-What's New entries:
+What's new entries:
 * [Crash analyzer tool is available by default](../whats-new/2024/03/devtools-123.md#crash-analyzer-tool-is-available-by-default) in _What's new in DevTools (Microsoft Edge 123)_.
 * [Debug JavaScript error stack traces by using the Crash Analyzer tool](../whats-new/2023/05/devtools-113.md#debug-javascript-error-stack-traces-by-using-the-crash-analyzer-tool) in _What's new in DevTools (Microsoft Edge 113)_.
 -->

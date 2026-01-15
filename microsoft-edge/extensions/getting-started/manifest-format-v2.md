@@ -1,6 +1,6 @@
 ---
-title: Manifest file format for extensions
-description: The format of the manifest file in an extension package for a Microsoft Edge extension.
+title: Manifest V2 file format for extensions
+description: Earlier format of the manifest file in an extension package for a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,41 +8,44 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 06/23/2023
 ---
-# Manifest file format for extensions
+# Manifest V2 file format for extensions
 
-Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
+For new code, use Manifest V3 instead of V2.  For Manifest V3, see [Manifest file format for extensions](./manifest-format.md).
 
-*  The version number of the extension.
-*  The title of the extension.
-*  The permissions that are needed for the extension to run.
+To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
 ## Format of manifest.json for extensions
 
-The following code shows the fields that are supported in `manifest.json` for extensions.
+The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
 
-For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_, and then click the links on the fields.
+For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/mv2/manifest) (V2) and then click the links on the fields.
 
 ```json
 {
   // Required
-  "manifest_version": 3,
-  "name": "My V3 Extension",
+  "manifest_version": 2,
+  "name": "My V2 Extension",
   "version": "versionString",
 
   // Recommended
-  "action": {...},
   "default_locale": "en",
   "description": "A plain-text description",
   "icons": {...},
+
+  // Pick one or none
+  "browser_action": {...},
+  "page_action": {...},
 
   // Optional
   "action": ...,
   "author": ...,
   "automation": ...,
   "background": {
-    // If `background` is included, `service_ worker` is required
+    // If `background` is included, `persistent` is recommended
+    "persistent": false,
+    // If `background` is included, `service_worker` is optional
     "service_worker": ...
   },
   "chrome_settings_overrides": {...},
@@ -67,7 +70,7 @@ For reference information about each field, see [Manifest file format](https://d
     "source": "network"
   },
   "homepage_url": "http://path/to/homepage",
-  "host_permissions": [...],
+  "host_permissions": ...,
   "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
   "incognito": "spanning, split, or not_allowed",
   "input_components": ...,
@@ -86,30 +89,33 @@ For reference information about each field, see [Manifest file format](https://d
     "chrome_style": true,
     "page": "options.html"
   },
-  "permissions": ["..."],
+  "permissions": ["tabs"],
   "platforms": ...,
   "replacement_web_app": ...,
   "requirements": {...},
   "sandbox": [...],
   "short_name": "Short Name",
-  "side_panel": {...},
   "storage": {
     "managed_schema": "schema.json"
   },
   "system_indicator": ...,
   "tts_engine": {...},
   "update_url": "http://path/to/updateInfo.xml",
-  "version_name": "aString",
+  "version_name": ...,
   "web_accessible_resources": [...]
 }
 ```
+
+---
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) - _Chrome Extensions_ > _Reference_.
+* [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
+* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) (V3) - _Chrome Extensions_ > _Reference_.
+* [Manifest file format](https://developer.chrome.com/docs/extensions/mv2/manifest) (V2) in _Chrome Extensions_ > _Reference_.
 
 
 <!-- ====================================================================== -->
