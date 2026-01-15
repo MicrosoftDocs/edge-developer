@@ -104,7 +104,7 @@ To access **sidebar search**:
 
    ![The sidebar search icon, shown in the app title bar](./pwa-images/sidebar-search.png)
 
-1. Type a search query, and then press **Enter**. The search results are displayed, and you can go to a web page from there:
+1. Type a search query, and then press **Enter**. The search results are displayed, and you can go to a webpage from there:
 
    ![The sidebar search, opened on the side of a PWA, with some search results displayed](./pwa-images/sidebar-search-results.png)
 

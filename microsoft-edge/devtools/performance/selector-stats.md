@@ -133,7 +133,7 @@ To sort the data that's displayed in the **Selector Stats** table in ascending o
 
 ![The Selector Stats table with the CSS selectors sorted by elapsed time, in descending order](./selector-stats-images/sort-by-elapsed-time.png)
 
-To try to improve the performance of your web page, focus on the CSS selectors that:
+To try to improve the performance of your webpage, focus on the CSS selectors that:
 
 * took a long time to calculate (high **Elapsed (ms)** value),
 * and which the browser attempted to match many times (high **Match Attempts** value),

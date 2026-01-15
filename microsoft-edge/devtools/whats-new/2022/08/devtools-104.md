@@ -42,7 +42,7 @@ See also:
 <!-- Title: In Issues tool, long request URLs have been shortened -->
 <!-- Subtitle: Links to network request URLs have been truncated, making issues easier to read. -->
 
-The **Issues** tool provides recommendations to improve a web page's accessibility, performance, security, and more.  Some of these recommendations include a link to a network request that opens in the **Network** tool.
+The **Issues** tool provides recommendations to improve a webpage's accessibility, performance, security, and more.  Some of these recommendations include a link to a network request that opens in the **Network** tool.
 
 Previously, issues related to network requests displayed the entire URL for the network request.  When these URLs were lengthy, they took up a lot of space, making the list of issues difficult to browse.  In Microsoft Edge 104, these long request URL links have been truncated to take up less space.  The links still direct to the relevant part of the **Network** tool.
 

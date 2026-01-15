@@ -642,7 +642,7 @@
                   href: ./devtools/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+                - name: Monitor memory use in realtime (Browser Task Manager)
                   href: ./devtools/memory-problems/microsoft-edge-browser-task-manager.md
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
@@ -1629,6 +1629,9 @@
           items:
             - name: Development best practices for WebView2 apps
               href: ./webview2/concepts/developer-guide.md
+
+            - name: Performance best practices for WebView2 apps
+              href: ./webview2/concepts/performance.md
 
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md

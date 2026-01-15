@@ -1293,7 +1293,7 @@ Moved this h2 section from downstream (redesigned) "Fix memory problems" article
 It would be best to match the upstream location ("Fix memory problems" > "Visualize memory leaks with Performance recordings") - requires revisit design of "Fix memory problems" vs. the upstream Memory > Overview page.
 This section is about the **Performance** tool >  **Memory** checkbox - which is doc'd in [View memory metrics](#view-memory-metrics), above. -->
 
-As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](../memory-problems/microsoft-edge-browser-task-manager.md).)
+As a starting point to investigate webpage memory usage, use the **Performance** tool's **Memory** checkbox.  (Or, [Monitor memory use in realtime (Browser Task Manager)](../memory-problems/microsoft-edge-browser-task-manager.md).)
 
 The **Performance** tool helps you visualize the memory use of a page over time.
 

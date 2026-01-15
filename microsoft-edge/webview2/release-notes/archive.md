@@ -7580,7 +7580,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed log in issue caused by a password regression in WebView2. ([Issue #2291](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2291))
 
-* Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
+* Fixed a failure caused when a user opens a new app window and the webpage does not have a navigation entry assigned.
 
 * Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
 
