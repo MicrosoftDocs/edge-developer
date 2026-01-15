@@ -522,7 +522,7 @@ The AI-generated description feature has undergone substantial testing, to ident
 
 The following safeguards are in place for the AI-generated description:
 
-* The AI-generated description is based completely on the extension package, uploaded screenshots, and any prompt text that you provide.  See [Inputs used for the AI-generated description](#inputs-used-for-the-ai-generated-description), above.
+* The AI-generated description is based exclusively on the extension package, uploaded screenshots, and any prompt text that you provide.  See [Inputs used for the AI-generated description](#inputs-used-for-the-ai-generated-description), above.
 
 * Providing input prompt text is optional.
 
