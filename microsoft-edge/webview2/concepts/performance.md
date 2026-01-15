@@ -185,7 +185,7 @@ See also:
 See also:
 * [Manage user data folders](./user-data-folder.md)
 
-<!-- no envOptions section; use tabset: -->
+<!-- no EnvOptions section in overview-apis, so inline tabset -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -224,11 +224,7 @@ See also:
 <!-- ------------------------------ -->
 #### Prevent memory leaks
 
-* Remove event handlers before disposing WebView2 objects, to avoid reference cycles and leaks.
-  <!-- todo: clarify whether native or web; is this asking devs to:
-  * Remove event handlers that are set in their JavaScript web code that's running inside wv2 objects.
-  * Remove native event handlers.
-  -->
+* Remove native event handlers before disposing WebView2 objects, to avoid reference cycles and leaks.
 
 * Avoid closures that strongly reference WebView2; use weak references when necessary.
 
@@ -250,22 +246,7 @@ See also:
 <!-- ------------------------------ -->
 #### Optimize web content
 
-* Optimize the rendered web content.  Observe whether excessive memory is being used in the JavaScript heap.  Use Microsoft Edge DevTools, such as the **Memory** tool, to monitor usage of memory resources by various web content.
-<!-- todo:
-how to check the js heap; how do devs see how much js heap is used?
-can they see that in visual studio?
--->
-
-To check the JS heap:
-
-1. Right-click the WebView2 app, and then select **Inspect**.
-
-   DevTools opens in a dedicated, undocked window.
-
-1. Select the **Memory** (![Memory icon](./performance-images/memory-icon.png)) tool.
-
-See also:
-* [Fix memory problems](../../devtools/memory-problems/index.md)
+* Optimize the rendered web content.  Observe whether excessive memory is being used in the JavaScript heap.  Use Microsoft Edge DevTools, such as the **Memory** tool, to monitor usage of memory resources by various web content.  See [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../devtools/memory-problems/heap-snapshots.md).
 
 
 <!-- ------------------------------ -->
@@ -273,7 +254,7 @@ See also:
 
 * Periodically refresh the WebView2 instance.  In scenarios where the page lifecycle naturally accumulates state, such as a long-running webpage, refreshing the WebView2 instance helps return the WebView2 process to a clean baseline.
 
-* Some long-running pages might retain resources over time, depending on the web content and application design.  If memory usage grows unexpectedly, review the following by using DevTools:
+* Some long-running pages might retain resources over time, depending on the web content and application design.  If memory usage grows unexpectedly, inspect the following by using DevTools:
 
    * JavaScript heap usage.  See:
       * [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../../devtools/memory-problems\heap-snapshots.md)
@@ -283,6 +264,7 @@ See also:
       * [Select performance metrics to monitor](../../devtools/performance-monitor/performance-monitor-tool.md#select-performance-metrics-to-monitor) in _Measure runtime performance of a page using the Performance monitor tool_, about the **JS event listeners** metric.
 
    * DOM retention. See:
+      * [Debug DOM memory leaks ("Detached elements" profiling type)](../../devtools/memory-problems/dom-leaks-memory-tool-detached-elements.md)
       * [Get started viewing and changing the DOM](../../devtools/dom/index.md)
 
 
@@ -332,16 +314,9 @@ See also:
 <!-- ------------------------------ -->
 #### Reduce unnecessary communication
 
-* Reduce unnecessary communication between native code and web code running in WebView2.
-<!--
-* Reduce unnecessary communication between between the host and WebView2.
-todo: which?
--->
+* Reduce unnecessary communication between the host application and web content that's hosted in WebView2.  This avoids excessive inter-process communication, along with the accompanying overhead.  See [Interop of native and web code](../how-to/communicate-btwn-web-native.md).
 
 * Batch messages wherever possible, because frequent message passing can increase CPU usage.
-
-See also:
-* [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
 
 
 <!-- ------------------------------ -->
