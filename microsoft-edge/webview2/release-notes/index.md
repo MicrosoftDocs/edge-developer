@@ -18,10 +18,8 @@ the templates to copy for incoming sections are in ./includes/templates.md
 
 move h2 sections older than 1 year from present file to archive.md
 presently covers: Feb 2025 - Jan 2026
-todo: enter ado: pm: update > 1 year old announcements at https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release to add "archive" suffix in urls
 
-don't update pattern for older h2 headings, b/c would break auto-scrolling; they're linked to from Issues announcement, re: past year
-h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from index.md to archive.md, so user must manually nav to archive page
+if update pattern of older h2 headings, update links in announcements
 -->
 
 
@@ -110,6 +108,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- Release SDK 143 -->
 <!-- ====================================================================== -->
 ## 1.0.3650.58
+<!-- if update pattern of older h2 headings, update links in announcements -->
 
 Release Date: Dec. 8, 2025, Runtime 143
 
