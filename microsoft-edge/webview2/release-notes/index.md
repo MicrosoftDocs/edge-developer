@@ -9,18 +9,19 @@ ms.subservice: webview
 ms.date: 12/08/2025
 ---
 # Release Notes for the WebView2 SDK
-<!-- https://aka.ms/webviewrelease -->
+<!--
+https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
+https://aka.ms/webviewrelease
+
+./includes/templates.md
+
+move sections older than 1 year from ./index.md to ./archive.md, & enter work item: update links in announcements
+https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release
+
+if change h2 headings pattern, enter work item: update links in announcements
+-->
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
-
-<!-- maintenance:
-the templates to copy for incoming sections are in ./includes/templates.md
-
-move h2 sections older than 1 year from present file to archive.md
-presently covers: Feb 2025 - Jan 2026
-
-if update pattern of older h2 headings, update links in announcements
--->
 
 
 <!-- Jan 2026 Prerelease SDK (145) -->
