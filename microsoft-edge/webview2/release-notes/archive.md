@@ -14,6 +14,8 @@ https://learn.microsoft.com/microsoft-edge/webview2/release-notes/archive
 
 move sections older than 1 year from ./index.md to ./archive.md, & enter work item: update links in announcements
 https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release
+
+if change h2 headings pattern, enter work item: update links in announcements
 -->
 
 These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
