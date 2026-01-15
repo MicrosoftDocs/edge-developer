@@ -12,20 +12,96 @@ ms.date: 12/08/2025
 
 These Release Notes provide information about new features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK.
 
-<!--
+<!-- maintenance:
 the templates to copy for incoming sections are in ./includes/templates.md
 
-this webpage covers the most recent 6 months; periodically move oldest h2 sections from bottom of present file to archive.md.  eg covers:
-Dec 2025
-Nov 2025
-Oct 2025
-Sep 2025
-Aug 2025
-Jul 2025
+move h2 sections older than 1 year from present file to archive.md
+presently covers: Feb 2025 - Jan 2026
+todo: enter ado: pm: update > 1 year old announcements at https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release to add "archive" suffix in urls
 
-moved to archive: 
-Jun 2025
+don't update pattern for older h2 headings, b/c would break auto-scrolling; they're linked to from Issues announcement, re: past year
+h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from index.md to archive.md, so user must manually nav to archive page
 -->
+
+
+<!-- Jan 2026 Release SDK (144) -->
+<!-- ====================================================================== -->
+## Release SDK 1.0.####.##, for Runtime 144
+
+Release Date: Monthname nn, 2025
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add righmost part of url:
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+-->
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Jan 2026 Release SDK (144) -->
 
 
 <!-- Dec 2025 Release SDK -->
