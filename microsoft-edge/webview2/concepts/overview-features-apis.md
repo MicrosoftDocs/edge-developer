@@ -126,7 +126,7 @@ When hosting the WebView2 control, your app has access to the following features
 
 <!-- maintenance notes: add table rows for any new h2 sections -->
 
-This page only lists APIs that are in Release SDKs; it doesn't list Experimental APIs, or Stable APIs that are not yet available in Release SDKs.  For a comprehensive list of APIs including Experimental APIs, see [Release Notes for the WebView2 SDK](../release-notes/index.md).
+This page only lists APIs that are in Release SDKs; it doesn't list Experimental APIs, or Stable APIs that are not yet available in Release SDKs.  For a comprehensive list of APIs including Experimental APIs, see [Release notes for the WebView2 SDK](../release-notes/index.md).
 
 
 <!-- ====================================================================== -->
@@ -148,7 +148,7 @@ The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` clas
 <!-- / end of keep sync'd -->
 
 See also:
-* [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md)
+* [Main classes for WebView2: Environment, Controller, and Core](./environment-controller-core.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2350,7 +2350,7 @@ The `NavigationStarting` event allows the app to cancel navigating to specified 
 With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigation in WebView2.  A _navigation_ is the process for loading a new URL.
 
 See also:
-* [Navigation events for WebView2 apps](navigation-events.md)
+* [Navigation events for WebView2 apps](./navigation-events.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2615,7 +2615,7 @@ iframes allow you to embed other webpages into your own webpage.  In WebView2, y
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above
 * [Using frames in WebView2 apps](./frames.md)
-* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/archive.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Archived Release Notes for the WebView2 SDK_.
+* [Track navigation history for nested iframes (FrameCreatedEvent API)](../release-notes/archive.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Archived release notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2676,7 +2676,7 @@ Your app can handle basic authentication using the WebView2 control.  _Basic aut
 <!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
 See also:
-* [Basic authentication for WebView2 apps](basic-authentication.md)
+* [Basic authentication for WebView2 apps](./basic-authentication.md)
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2971,7 +2971,7 @@ See also [Enable or disable the browser responding to accelerator keys (shortcut
 WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
 See also:
-* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/archive.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Archived Release Notes for the WebView2 SDK_.
+* [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](../release-notes/archive.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Archived release notes for the WebView2 SDK_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

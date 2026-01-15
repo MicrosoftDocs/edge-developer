@@ -9,8 +9,10 @@ ms.subservice: extensions
 ms.date: 05/26/2021
 ---
 # Migrate an extension from Manifest V2 to V3
+<!-- todo: update tense, per https://developers.google.com/style/timeless-documentation
+"now" = v3; "in the past" = v2 -->
 
-This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
+This article lists important aspects of Manifest V3, which is the current version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
 
 
 <!-- ====================================================================== -->
@@ -59,3 +61,16 @@ Service workers are available for testing in the Canary preview channel of Micro
 The current Declarative Net Request API implementation is available in the Microsoft Edge Stable and Beta channels.  Please test the changes and provide feedback.
 
 The Microsoft Edge extensions team publishes updates at our blog.  You can provide feedback on the changes through Microsoft Tech Community; see [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
+
+
+<!-- ====================================================================== -->
+## Changes in manifest.json V3 vs. V2
+
+| V3 | V2 |
+|---|---|
+| `  "manifest_version": 3,` | `"manifest_version": 2,` |
+| `"action": {...},` | `"browser_action": {...},` |
+| `"action": {...},` | `"page_action": {...},` |
+| removed | `"persistent": false,` |
+| If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
+| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |

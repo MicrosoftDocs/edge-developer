@@ -1,6 +1,6 @@
 ---
 title: Manifest file format for extensions
-description: Learn about the format of the manifest file in an extension package.
+description: The format of the manifest file in an extension package for a Microsoft Edge extension.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,8 +10,6 @@ ms.date: 06/23/2023
 ---
 # Manifest file format for extensions
 
-<!-- todo: move all V2 info to a single page gathering/separating out all V2 info -->
-
 Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
 *  The version number of the extension.
@@ -19,20 +17,10 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The permissions that are needed for the extension to run.
 
 
-<!-- ------------------------------ -->
-#### Manifest V2 is deprecated
-
-<!-- todo: move aside/ demote section eg move to a single article gathering all info about v2 -->
-
-Use Manifest V3 for new code.  The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
-
-
 <!-- ====================================================================== -->
 ## Format of manifest.json for extensions
 
-The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 or V2 package.
-
-##### [Manifest V3](#tab/v3)
+The following code shows the fields that are supported in `manifest.json` for extensions.
 
 For reference information about each field, see [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in _Chrome Extensions_ > _Reference_, and then click the links on the fields.
 
@@ -116,121 +104,12 @@ For reference information about each field, see [Manifest file format](https://d
 }
 ```
 
-##### [Manifest V2](#tab/v2)
-
-<!-- todo: move aside/ demote section eg move to a single article gathering all info about v2; change from tabset to simple code listing for v3 only -->
-
-For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
-
-```json
-{
-  // Required
-  "manifest_version": 2,
-  "name": "My V2 Extension",
-  "version": "versionString",
-
-  // Recommended
-  "default_locale": "en",
-  "description": "A plain-text description",
-  "icons": {...},
-
-  // Pick one or none
-  "browser_action": {...},
-  "page_action": {...},
-
-  // Optional
-  "action": ...,
-  "author": ...,
-  "automation": ...,
-  "background": {
-    // If `background` is included, `persistent` is recommended
-    "persistent": false,
-    // If `background` is included, `service_worker` is optional
-    "service_worker": ...
-  },
-  "chrome_settings_overrides": {...},
-  "chrome_url_overrides": {...},
-  "commands": {...},
-  "content_capabilities": ...,
-  "content_scripts": [{...}],
-  "content_security_policy": "policyString",
-  "converted_from_user_script": ...,
-  "current_locale": ...,
-  "declarative_net_request": ...,
-  "devtools_page": "devtools.html",
-  "differential_fingerprint": ...,
-  "event_rules": [{...}],
-  "externally_connectable": {
-    "matches": ["*://*.contoso.com/*"]
-  },
-  "file_browser_handlers": [...],
-  "file_system_provider_capabilities": {
-    "configurable": true,
-    "multiple_mounts": true,
-    "source": "network"
-  },
-  "homepage_url": "http://path/to/homepage",
-  "host_permissions": ...,
-  "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
-  "incognito": "spanning, split, or not_allowed",
-  "input_components": ...,
-  "key": "publicKey",
-  "minimum_chrome_version": "versionString",
-  "nacl_modules": [...],
-  "natively_connectable": ...,
-  "oauth2": ...,
-  "offline_enabled": true,
-  "omnibox": {
-    "keyword": "aString"
-  },
-  "optional_permissions": ["tabs"],
-  "options_page": "options.html",
-  "options_ui": {
-    "chrome_style": true,
-    "page": "options.html"
-  },
-  "permissions": ["tabs"],
-  "platforms": ...,
-  "replacement_web_app": ...,
-  "requirements": {...},
-  "sandbox": [...],
-  "short_name": "Short Name",
-  "storage": {
-    "managed_schema": "schema.json"
-  },
-  "system_indicator": ...,
-  "tts_engine": {...},
-  "update_url": "http://path/to/updateInfo.xml",
-  "version_name": ...,
-  "web_accessible_resources": [...]
-}
-```
-
----
-
-
-<!-- ====================================================================== -->
-## Changes in manifest.json V3 vs. V2
-
-<!-- todo: move section to be only in a single page containing all V2 info -->
-
-| V3 | V2 |
-|---|---|
-| `  "manifest_version": 3,` | `"manifest_version": 2,` |
-| `"action": {...},` | `"browser_action": {...},` |
-| `"action": {...},` | `"page_action": {...},` |
-| removed | `"persistent": false,` |
-| If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
-| Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
-
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-<!-- all the links in article body: -->
-* [Migrate an extension from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md)
-* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) - V3, in _Chrome Extensions_ > _Reference_.
-* [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) in _Chrome Extensions_ > _Reference_.<!-- todo: move link to be only on a single page about all V2 info, remove "V3, " from above item -->
+* [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) - _Chrome Extensions_ > _Reference_.
 
 
 <!-- ====================================================================== -->
