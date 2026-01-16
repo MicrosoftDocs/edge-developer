@@ -99,7 +99,6 @@ The WebView2 control is powered by Microsoft Edge, and enables you to embed web 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
 ![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./develop-web-microsoft-edge-images/web-hybrid-native.png)
-<!-- png copy used in main article is named "web-native.png" -->
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 

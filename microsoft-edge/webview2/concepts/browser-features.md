@@ -108,6 +108,8 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 Google has disabled Google Authentication in embedded webviews, which includes WebView2, due to a security policy they have set.  See [Upcoming security changes to Google's OAuth 2.0 authorization endpoint in embedded webviews](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html).
 
 To stay up-to-date on the latest discussion, in the WebView2Feedback repo, see [Google Auth Flows and WebView2](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1647).
+
+
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
@@ -213,3 +215,10 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 #### Customizing an individual key
 
 To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed) event.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches)
+* [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event
