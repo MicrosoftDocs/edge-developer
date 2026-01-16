@@ -37,7 +37,7 @@ A powerful way of restarting DevTools is to close and reopen the folder:
 
 1. If you started a web server by using Terminal in Visual Studio Code, restart the web server, such as by running `npx http-server`.  Or instead, you can start the web server from a command prompt outside of Visual Studio Code, so it keeps running.  For more information, see [Step 6: Set up a localhost server](./install.md#step-6-set-up-a-localhost-server) in _Installing the DevTools extension for Visual Studio Code_.
 
-1. In Visual Studio Code, select **File** > **Open Recent**, and open a folder that contains web page source files.
+1. In Visual Studio Code, select **File** > **Open Recent**, and open a folder that contains webpage source files.
 
 
 <!-- ====================================================================== -->

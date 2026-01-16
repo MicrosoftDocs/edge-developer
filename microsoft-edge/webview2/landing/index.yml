@@ -57,7 +57,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: Release Notes for the WebView2 SDK
+          - text: Release notes for the WebView2 SDK
             url: ../release-notes/index.md
 # -----------------------------------------------------------------------------
 # Card r1c2

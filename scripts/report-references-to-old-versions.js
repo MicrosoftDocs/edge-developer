@@ -72,7 +72,7 @@ const FILES_TO_IGNORE = [
 // This is required to avoid flagging link text for links that point to ignored release notes.
 const STRINGS_TO_IGNORE = [
   // DevTools what's new link text.
-  "What's New in DevTools (Microsoft Edge",
+  "What's new in DevTools (Microsoft Edge",
 
   // Web platform release notes link text.
   "web platform release notes (",
