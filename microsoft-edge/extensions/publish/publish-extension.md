@@ -477,7 +477,7 @@ To ensure that all supported locales are detected:
 
 * Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message references to identify available languages.  If these message references are missing, the language will be skipped.
 
-   The message references are the i18n `"name"` and `"description"` keys in each `/_locales/messages.json` file.  These message references (i18n keys) correspond to the `MSG_extensionName` and `MSG_extensionDescription` placeholders that are used in the `"name"` and `"description"` fields of the `manifest.json` file.  Partner Center uses these message references to determine which languages are available.
+   The message references are the i18n `"name"` and `"description"` keys in each `/_locales/messages.json` file.  These message references (i18n keys) correspond to the `"__MSG_extensionName__"` and `"__MSG_extensionDescription__"` placeholders that are used in the `"name"` and `"description"` fields of the `manifest.json` file.  Partner Center uses these message references to determine which languages are available.
 
 See also:
 * [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) - API to implement internationalization throughout an app or extension.
