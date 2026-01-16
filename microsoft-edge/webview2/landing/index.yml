@@ -59,12 +59,6 @@ landingContent:
         links:
           - text: Release notes for the WebView2 SDK
             url: ../release-notes/index.md
-
-      - linkListType: how-to-guide
-        links:
-          - text: WebView2 end-user FAQ
-            url: ../concepts/end-user-faq.md
-
 # -----------------------------------------------------------------------------
 # Card r1c2
   - title: Platforms and samples
