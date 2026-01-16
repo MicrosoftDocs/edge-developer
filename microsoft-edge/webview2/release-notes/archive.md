@@ -1,6 +1,6 @@
 ---
-title: Archived Release Notes for the WebView2 SDK
-description: Release Notes for older releases of Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
+title: Archived release notes for the WebView2 SDK
+description: Release notes for older releases of Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/03/2025
 ---
-# Archived Release Notes for the WebView2 SDK
+# Archived release notes for the WebView2 SDK
 
-These Release Notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
+These release notes provide information about added features and bug fixes that are included in the WebView2 Release SDK and the WebView2 Prerelease SDK, for older releases.
 
 
 <!-- Jun 2025 Release SDK -->
@@ -7580,7 +7580,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed log in issue caused by a password regression in WebView2. ([Issue #2291](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2291))
 
-* Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
+* Fixed a failure caused when a user opens a new app window and the webpage does not have a navigation entry assigned.
 
 * Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
 
@@ -9141,7 +9141,7 @@ Initial developer preview release.
 <!-- ====================================================================== -->
 ## See also
 
-* [About Release Notes for the WebView2 SDK](./about.md)
-* [Release Notes for the WebView2 SDK](./index.md)
+* [About Release notes for the WebView2 SDK](./about.md)
+* [Release notes for the WebView2 SDK](./index.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)

@@ -43,7 +43,7 @@ To use this explanation feature, enable Copilot in Edge:
 
 To use Copilot to explain code in the **Sources** tool:
 
-1. Open a web page that contains the source code you want to explain. For example, open the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page in a new window or tab.
+1. Open a webpage that contains the source code you want to explain. For example, open the [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) demo page in a new window or tab.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 

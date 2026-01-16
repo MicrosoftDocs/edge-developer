@@ -133,7 +133,7 @@ This example follows the `Receiving Messages` section of the webpage, to change 
 
 The C++ file handles the title text and communicates it to the host app as a string.
 
-1. When the button is clicked, WebView2 transmits a message from the web page to the native application using `window.chrome.webview.postMessage` in [ScenarioWebMessage.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html).
+1. When the button is clicked, WebView2 transmits a message from the webpage to the native application using `window.chrome.webview.postMessage` in [ScenarioWebMessage.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html).
 
    ```html
    function SetTitleText() {
@@ -214,7 +214,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
    <textarea id="window-bounds" rows="4" readonly></textarea>
    ```
 
-1. When the user clicks the button, WebView2 transmits a message from the web page to the native application using `window.chrome.webview.postMessage`.
+1. When the user clicks the button, WebView2 transmits a message from the webpage to the native application using `window.chrome.webview.postMessage`.
 
    ```html
    function GetWindowBounds() {
@@ -262,7 +262,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
    }).Get(), &m_webMessageReceivedToken));
    ```
 
-   The window bounds are displayed on the web page.
+   The window bounds are displayed on the webpage.
 
 
 <!-- ====================================================================== -->
