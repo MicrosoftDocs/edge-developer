@@ -472,16 +472,17 @@ To ensure that all supported locales are detected:
       "description": "__MSG_extensionDescription__"
    }
    ```
-<!-- todo: Ref page instead shows:
-      "name": "__MSG_extName__",
-https://developer.chrome.com/docs/extensions/reference/api/i18n#support_multiple_languages 
--->
 
 * Include a `default_locale` in your manifest, such as `"default_locale": "en"`.
 
-* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message IDs<!-- todo: which message IDs, in which files? --> to identify available languages.  If these message IDs are missing, the language will be skipped.
+* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message references to identify available languages.  If these message references are missing, the language will be skipped.
 
-For more information, see [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n), which is an API to implement internationalization throughout your app or extension.
+   The message references are the i18n `"name"` and `"description"` keys in each `/_locales/messages.json` file.  These message references (i18n keys) correspond to the `MSG_extensionName` and `MSG_extensionDescription` placeholders that are used in the name and description fields of the `manifest.json` file.  Partner Center uses these message references to determine which languages are available.
+
+See also:
+* [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) - API to implement internationalization throughout an app or extension.
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+   * [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in Chrome docs.
 
 
 <!-- ========================================================================== -->
