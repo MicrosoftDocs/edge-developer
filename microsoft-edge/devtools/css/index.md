@@ -173,7 +173,7 @@ To debug or test the media queries that you defined in your CSS:
 
    The colored bars above the webpage represent the different media queries.
        
-1. Hover over the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
+1. Hover over the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the webpage to match.
 
    ![Selecting a media query from the preview bar](./index-images/media-queries-select-bar.png)
 

@@ -86,7 +86,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools
+          - text: What's new in Microsoft Edge DevTools
             url: ../devtools/whats-new/whats-new.md
 
       - linkListType: how-to-guide
@@ -155,7 +155,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's New in PWAs
+          - text: What's new in PWAs
             url: ../progressive-web-apps/whats-new/pwa.md
 
       - linkListType: get-started
@@ -207,7 +207,7 @@ landingContent:
             url: ../webview2/samples/index.md
       - linkListType: whats-new
         links:
-          - text: Release Notes for the WebView2 SDK
+          - text: Release notes for the WebView2 SDK
             url: ../webview2/release-notes/index.md
       - linkListType: reference
         links:

@@ -48,7 +48,7 @@ In a later step, after the sample Progressive Web App (PWA) is installed as a lo
 
 ![The sample Progressive Web App (PWA), installed and running in its own window](./temperature-converter-images/sample-pwa-installed.png)
 
-The sample is a Progressive Web App, rather than a regular web site.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same app UI as within the full web browser.
+The sample is a Progressive Web App, rather than a regular website.  Therefore, you can install the Progressive Web App (PWA) as an app on the device, and the app's window contains the same app UI as within the full web browser.
 
 The installed app's window is a browser-based window, without most of the browser UI.  The installed app is integrated into the device's UI, such as the Windows taskbar and Windows Start menu.
 
@@ -213,7 +213,7 @@ See also:
 
 Next, you'll run and test the sample Progressive Web App (PWA) on your local web server, in Microsoft Edge.  You'll use `http-server`, a local development web server that can be run in Node.js.
 
-While developing or testing a web site or app, including a PWA, you can use a local web server.  However, when the app is ready for users, you deploy the app to the web by using a web hosting provider.  Like a regular web site or app, a PWA is distributed to users by using a web server.
+While developing or testing a website or app, including a PWA, you can use a local web server.  However, when the app is ready for users, you deploy the app to the web by using a web hosting provider.  Like a regular website or app, a PWA is distributed to users by using a web server.
 
 Change to the `/temperature-converter/` directory of the cloned Demos repo, and start the `http-server` from there, as follows:
 

@@ -484,7 +484,7 @@ When loading local content via `WebResourceRequested`, you specify the local con
 
 When loading content via a file URL or a virtual host name mapping, the resolution happens in the WebView2 processes. However, the `WebResourceRequested` event is raised on the WebView2 UI thread of your host app process, which may lead to slower loading of the resulting document.
 
-1. WebView2 first pauses loading the web page in order to wait for the event to be sent to your host app process.
+1. WebView2 first pauses loading the webpage in order to wait for the event to be sent to your host app process.
 1. WebView2 then waits for your UI thread to be available.
 1. WebView2 then waits for your app code to handle the event.
 

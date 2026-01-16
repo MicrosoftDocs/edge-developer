@@ -56,7 +56,7 @@ Here's a typical scenario for using a workspace:
 
   Your website might use a build system which you need to run before you can see the changes.  Web developers often use a build system that watches for saved changes in the source code files.  When you save a change to a source code file, the build system builds those changes and then automatically refreshes the page in the browser.
 
-  If you use such an automated build system, when you make a change to a source file in the **Sources** tool and save it, you automatically see those changes applied to the rendered web page.
+  If you use such an automated build system, when you make a change to a source file in the **Sources** tool and save it, you automatically see those changes applied to the rendered webpage.
 
 
 <!-- ====================================================================== -->
@@ -102,7 +102,7 @@ Such a project might generate source maps, so that DevTools allows you to see an
 
 When that happens, any changes you make in the **Elements** tool's **Styles** tab are not saved to the workspace files.  In that case, edit your source files in the **Sources** tool instead.  In the above scenario, the files that use a different language are visible in the **Workspace** tab of the **Sources** tool, and you can edit the source files there.
 
-Then, behind the scenes, any saved changes need to be re-built and compiled (which may happen automatically), and then the changes are visible in the rendered web page after a page refresh (which may happen automatically).
+Then, behind the scenes, any saved changes need to be re-built and compiled (which may happen automatically), and then the changes are visible in the rendered webpage after a page refresh (which may happen automatically).
 
 
 <!-- ====================================================================== -->

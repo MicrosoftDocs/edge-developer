@@ -90,7 +90,7 @@ To set up the host (debuggee) machine, use the following sub-sections, in order.
 
 The client or debugger machine is the device you want to debug from.  This device may be your daily development machine, or it may just be your PC or MacBook when working from home.
 
-1. To set up the client (debugger) machine, install Microsoft Edge from [this page](https://www.microsoft.com/edge) if you haven't already.
+1. To set up the client (debugger) machine, install Microsoft Edge from [Get to know Microsoft Edge](https://www.microsoft.com/edge) if you haven't already.
 
 1. If you're using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
