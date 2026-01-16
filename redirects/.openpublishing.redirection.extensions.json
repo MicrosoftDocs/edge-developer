@@ -23,6 +23,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "../microsoft-edge/extensions/enterprise/match-patterns.md",
+      "redirect_url": "/microsoft-edge/extensions/developer-guide/match-patterns",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "../microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
       "redirect_url": "/microsoft-edge/extensions/publish/hosting-and-updating",
       "redirect_document_id": false
@@ -89,17 +94,22 @@
     },
     {
       "source_path": "../microsoft-edge/extensions-chromium/whats-new/released-features.md",
-      "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
+      "redirect_url": "/microsoft-edge/extensions/release-notes/index",
       "redirect_document_id": false
     },
     {
       "source_path": "../microsoft-edge/extensions-chromium/whats-new/roadmap.md",
-      "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
+      "redirect_url": "/microsoft-edge/extensions/release-notes/index",
       "redirect_document_id": false
     },
     {
       "source_path": "../microsoft-edge/extensions/whats-new/roadmap.md",
-      "redirect_url": "/microsoft-edge/extensions/whats-new/released-features",
+      "redirect_url": "/microsoft-edge/extensions/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/extensions/whats-new/released-features.md",
+      "redirect_url": "/microsoft-edge/extensions/release-notes/index",
       "redirect_document_id": false
     },
     {

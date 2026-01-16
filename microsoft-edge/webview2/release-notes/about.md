@@ -1,6 +1,6 @@
 ---
-title: About Release Notes for the WebView2 SDK
-description: About Release Notes for Microsoft Edge WebView2, covering new features, APIs, and fixes for Win32, WPF, and WinForms.
+title: About release notes for the WebView2 SDK
+description: New features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,15 +8,15 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 03/20/2024
 ---
-# About Release Notes for the WebView2 SDK
+# About release notes for the WebView2 SDK
 
-The WebView2 team updates the WebView2 Release SDK and the WebView2 Prerelease SDK on a four-week cadence.  These Release Notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+The WebView2 team updates the WebView2 Release SDK and the WebView2 Prerelease SDK on a four-week cadence.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../concepts/overview-features-apis.md).
 
-Release Notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
 See also:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
@@ -44,7 +44,7 @@ Shorthand names of the phases:
 1. Stable in Prerelease
 1. Stable in Release
 
-Release Notes sections use this wording for the phases:
+Release notes sections use this wording for the phases:
 
 * The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -120,8 +120,8 @@ Async methods:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release Notes for the WebView2 SDK](./index.md)
-* [Archived Release Notes for the WebView2 SDK](./archive.md)
+* [Release notes for the WebView2 SDK](./index.md)
+* [Archived release notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

@@ -39,7 +39,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 ![The Performance tool in the DevTools with keyboard navigation and screen reader improvements](./devtools-images/a11y-performance-tool.png)
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
+Want to learn how to make your webpage accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
 
 If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting](https://aka.ms/tweet/edgedevtools) at us or selecting the [Send Feedback](../../../contact.md) icon!
 
@@ -95,7 +95,7 @@ See also:
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://aka.ms/webhint).
+The webhint Microsoft Edge extension allows you to easily scan your webpage and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://aka.ms/webhint).
 
 ![The Hints tool in the DevTools when the webhint browser extension is installed](./devtools-images/webhint-browser-extension.png)
 
@@ -162,7 +162,7 @@ Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extensi
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
+The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `webhint` to improve your webpage while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
 
 ![The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code](./devtools-images/webhint-vscode-extension.png)
 
@@ -192,7 +192,7 @@ To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Stu
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.
+Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your webpage when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.
 
 ![Messages in the Console when tracking prevention blocks access to storage for a tracker](./devtools-images/tracking-prevention.png)
 
@@ -376,5 +376,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../whats-new.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

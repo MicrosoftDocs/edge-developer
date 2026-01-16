@@ -16,6 +16,19 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 
 ![The Elements tool](./elements-tool-images/elements-tool.png)
 
+The **Elements** tool contains the following tabs:
+<!--
+| Tool | Description | Article |
+|---|---|---|
+-->
+* **Styles**<!-- todo: link each -->
+* **Computed**
+* **Layout**
+* **Event Listeners**
+* **DOM Breakpoints**
+* **Properties**
+* **Accessibility**
+
 
 <!-- ====================================================================== -->
 ## See also
@@ -26,4 +39,4 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
 * [Get started viewing and changing the DOM](../dom/index.md)
-* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a web page.
+* [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a webpage.
