@@ -40,7 +40,7 @@ To simulate the WCO feature for Windows, Linux, and macOS in your PWA without ha
 
 1. In the **Window Controls Overlay** section on the right, select the checkbox **Emulate the Window Controls Overlay on** \<platform\>, and then select a platform, such as Windows, macOS, or Linux.
 
-   The simulated Window Controls Overlay is added to the rendered web page: 
+   The simulated Window Controls Overlay is added to the rendered webpage: 
 
    ![Overlay of window controls in upper right of demo webpage](./simulate-window-controls-overlay-images/demo-with-overlay.png)
 

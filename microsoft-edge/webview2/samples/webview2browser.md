@@ -195,7 +195,7 @@ The sections below describe how some of the features in WebView2Browser were imp
 
 * [The basics](#the-basics)<!-- h2 -->
   * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)<!-- h4 -->
-  * [Navigate to web page](#navigate-to-web-page)
+  * [Navigate to webpage](#navigate-to-webpage)
   * [Updating the Address bar](#updating-the-address-bar)
   * [Going back, going forward](#going-back-going-forward)
   * [Reloading, stop navigation](#reloading-stop-navigation)
@@ -312,9 +312,9 @@ We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/
 
 
 <!-- ------------------------------ -->
-#### Navigate to web page
+#### Navigate to webpage
 
-You can navigate to a web page by entering its URI in the Address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
+You can navigate to a webpage by entering its URI in the Address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
 
 ```cpp
         case MG_NAVIGATE:
