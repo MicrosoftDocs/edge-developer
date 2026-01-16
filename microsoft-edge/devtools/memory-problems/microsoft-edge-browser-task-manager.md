@@ -1,5 +1,5 @@
 ---
-title: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+title: Monitor memory use in realtime (Browser Task Manager)
 description: A starting point to inspect webpage memory issues.  A realtime monitor that tells you how much memory a webpage is currently using.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,17 +8,19 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 10/21/2024
 ---
-# Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+# Monitor memory use in realtime (Browser Task Manager)
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
 
-1. In Microsoft Edge, press **Shift+Esc**.  Or, select **Settings and more** (**...**) > **More tools** > **Browser Task Manager**:
+1. In Microsoft Edge, select **Settings and more** (**...**) > **More tools** > **Browser Task Manager**.
 
-   ![Opening the Microsoft Edge Browser Task Manager](./microsoft-edge-browser-task-manager-images/bing-settings-more-tools-browser-task-manager.png)
+   Or press **Shift+Esc**.
 
-   Microsoft Edge Browser Task Manager opens.
+   Browser Task Manager opens:
 
-1. Right-click the table header, and then enable **JavaScript memory**:
+   ![Browser Task Manager window](./microsoft-edge-browser-task-manager-images/browser-task-manager.png)
+
+1. Right-click, and then select **JavaScript memory**:
 
    ![Enabling JavaScript memory](./microsoft-edge-browser-task-manager-images/bing-browser-task-manager-javascript-memory.png)
 

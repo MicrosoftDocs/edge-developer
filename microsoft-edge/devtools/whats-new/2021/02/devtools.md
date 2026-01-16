@@ -292,7 +292,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 See also:
 * [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-<!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's New items cover the Frame node/page in lower left of Application tool -->
+<!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's new items cover the Frame node/page in lower left of Application tool -->
 
 
 <!-- ------------------------------ -->
@@ -364,5 +364,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../whats-new.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

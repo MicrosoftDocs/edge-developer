@@ -63,7 +63,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's New in PWAs
+          - text: What's new in PWAs
             url: ../whats-new/pwa.md
 
 # -----------------------------------------------------------------------------

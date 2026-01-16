@@ -41,7 +41,7 @@ The **Performance monitor** tool shows three performance metrics by default, and
 
 | Performance metric | Description |
 |---|---|
-| **CPU usage** | The percentage of CPU used by the web page.  Shown by default. |
+| **CPU usage** | The percentage of CPU used by the webpage.  Shown by default. |
 | **JS heap size** | The amount of memory used by the JavaScript program on the page.  Shown by default. |
 | **DOM Nodes** | The number of DOM nodes in the browser (across tabs).  Shown by default. |
 | **JS event listeners** | The number of JavaScript event listeners in the browser (across tabs). |

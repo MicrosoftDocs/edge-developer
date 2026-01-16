@@ -71,8 +71,8 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: Released features for Microsoft Edge extensions
-            url: ../whats-new/released-features.md
+          - text: Release notes for Microsoft Edge extensions
+            url: ../release-notes/index.md
 
           - text: Contact the Microsoft Edge extensions team
             url: ../contact.md

@@ -100,6 +100,9 @@ The following fields in the manifest file are automatically included in your ext
 
 Later, after you upload your package, you'll have an opportunity to modify some fields at Partner Center.
 
+See also:
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+
 
 <!-- ========================================================================== -->
 ## Step 2: Start a new submission at Partner Center
@@ -535,6 +538,7 @@ If you experience issues when registering as an extension developer or when subm
 ## See also
 <!-- all links in article -->
 
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
 * [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
 * [Extension concepts and architecture](../getting-started/index.md)
 * [Register as a Microsoft Edge extension developer](./create-dev-account.md)
