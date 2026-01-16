@@ -34,7 +34,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 
 | Use case | Tool | Article |
 |---|---|---|
-| Monitor how much memory a webpage uses, in realtime. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
+| Monitor how much memory a webpage uses, in realtime. | Microsoft Edge Browser Task Manager | [Monitor memory use in realtime (Browser Task Manager)](./microsoft-edge-browser-task-manager.md) |
 | Visualize the memory usage of a webpage over a period of time. | **Performance** tool > **Memory** checkbox | [Visualize memory leaks (Performance tool: Memory checkbox)](../performance/reference.md#visualize-memory-leaks-performance-tool-memory-checkbox) in _Performance features reference_. |
 | Spot frequent garbage collections. | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-performance-tools-memory-checkbox), below. |
 | Inspect the contents of the memory used by a webpage. | **Memory** tool > **Heap snapshot** | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
@@ -88,7 +88,7 @@ The key here is to use the RAIL model and focus on your users.  Find out what de
 
 If your page appears to pause frequently, then you may have garbage collection issues.  To spot frequent garbage collection, you can use either:
 
-* Microsoft Edge Browser Task Manager.  Frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  See [Monitor memory use in realtime (Microsoft Edge Browser Task Manager)](./microsoft-edge-browser-task-manager.md).
+* Microsoft Edge Browser Task Manager.  Frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  See [Monitor memory use in realtime (Browser Task Manager)](./microsoft-edge-browser-task-manager.md).
 
 * The **Performance** tool's **Memory** checkbox.  In Performance memory recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.  See [View memory metrics](../performance/reference.md#view-memory-metrics) in _Performance features reference_.
 

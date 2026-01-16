@@ -350,7 +350,7 @@ See also:
 Permissions Policy is a web platform API that gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds.
 To display the details on why a feature is blocked:
 
-1. Go to a web page that embeds cross-origin `iframe` elements.
+1. Go to a webpage that embeds cross-origin `iframe` elements.
 1. Open the **Application** tool.
 1. Under **Frames**, select the cross-origin `iframe`.
 1. To review the list of features that are disabled for this `iframe`, scroll to the **Permissions Policy** > **Disabled Features** section.
@@ -490,5 +490,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's New in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../whats-new.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
