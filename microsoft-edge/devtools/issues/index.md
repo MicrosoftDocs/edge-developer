@@ -209,7 +209,7 @@ To change the list of browsers that are tested for compatibility issues:
 <!-- ------------------------------ -->
 #### Filter issues by origin
 
-By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox:
+By default, the **Issues** tool only lists issues that pertain to the current webpage's code. To include issues that are caused by third-party libraries or frameworks loaded by the webpage too, select the **Include third-party issues** checkbox:
 
 ![The Issues panel with the 'Include third-party issues' checkbox](./index-images/third-party-checkbox.png)
 

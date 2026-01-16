@@ -64,7 +64,7 @@ The **Console** reports network errors.
 
 1. Click the link to the webpage and line of code where the error occurs, to open the Sources tool.  That is, click the `network-error.html:40` link in the **Console**:
 
-   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool](./console-debug-javascript-images/network-error-code-line.png)
+   ![Console tool error with clickable filename and line number](./console-debug-javascript-images/network-error-code-line.png)
 
    The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` (`x`) button.
 
