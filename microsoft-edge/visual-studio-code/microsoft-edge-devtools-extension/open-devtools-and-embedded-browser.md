@@ -216,7 +216,7 @@ If DevTools can't map the files in the **Edge DevTools: Browser** tab to the fil
 
 *  Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes.
 
-*  Open a folder that contains source files that match the web page.
+*  Open a folder that contains source files that match the webpage.
 
 *  Grant trust to a folder by opening it in Visual Studio Code.
 
@@ -262,7 +262,7 @@ Options in this case include:
 
 *  Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes (without automatic editing of CSS in source files).  This prevents further error messages about mapping to source files for CSS mirror editing.
 
-*  Open a folder that contains source files that match the web page, to have automatic editing of CSS in source files.
+*  Open a folder that contains source files that match the webpage, to have automatic editing of CSS in source files.
 
 *  Grant trust to a folder by opening it in Visual Studio Code, in case DevTools is attempting to edit a source file but Visual Studio Code hasn't granted trust to the containing folder.
 

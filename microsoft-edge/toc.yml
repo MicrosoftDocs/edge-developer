@@ -119,12 +119,12 @@
         - name: Overview of DevTools
           href: ./devtools/overview.md
 # -----------------------------------------------------------------------------
-        - name: What's New
+        - name: What's new
           items:
-            - name: What's New in Microsoft Edge DevTools
+            - name: What's new in Microsoft Edge DevTools
               href: ./devtools/whats-new/whats-new.md  # todo: ought to be index.md
               displayName: release notes, announcements
-# latest 10 What's New
+# latest 10 What's new
             - name: Microsoft Edge 143
               href: ./devtools/whats-new/143.md
               displayName: What's new in DevTools (Microsoft Edge 143)  # page title
@@ -642,7 +642,7 @@
                   href: ./devtools/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Monitor memory use in realtime (Microsoft Edge Browser Task Manager)
+                - name: Monitor memory use in realtime (Browser Task Manager)
                   href: ./devtools/memory-problems/microsoft-edge-browser-task-manager.md
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
@@ -1136,10 +1136,13 @@
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
 # -----------------------------------------------------------------------------
-        - name: What's new
+        - name: Release notes
           items:
-            - name: Released features for Microsoft Edge extensions
-              href: ./extensions/whats-new/released-features.md
+            - name: Release notes for Microsoft Edge extensions
+              href: ./extensions/release-notes/index.md
+
+            - name: Archived release notes for Microsoft Edge extensions
+              href: ./extensions/release-notes/archive.md
 
 # -----------------------------------------------------------------------------
         - name: Get started
@@ -1169,7 +1172,7 @@
 # -----------------------------------------------------------------------------
         - name: Develop an extension
           items:
-            - name: Manifest files
+            - name: Manifest file
               items:
                 - name: Manifest file format for extensions
                   href: ./extensions/getting-started/manifest-format.md
@@ -1178,11 +1181,16 @@
                   href: ./extensions/developer-guide/csp.md
                   displayName: policies
 
-                - name: Overview and timelines for migrating to Manifest V3
-                  href: ./extensions/developer-guide/manifest-v3.md
+                - name: Migrating to V3
+                  items:
+                    - name: Overview and timelines for migrating to Manifest V3
+                      href: ./extensions/developer-guide/manifest-v3.md
 
-                - name: Migrate an extension from Manifest V2 to V3
-                  href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+                    - name: Migrate an extension from Manifest V2 to V3
+                      href: ./extensions/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+
+                    - name: Manifest V2 file format for extensions
+                      href: ./extensions/getting-started/manifest-format-v2.md
 # -------------------------------------
             - name: JavaScript APIs
               items:
@@ -1316,7 +1324,7 @@
         - name: Overview of Progressive Web Apps (PWAs)
           href: ./progressive-web-apps/index.md
 # -----------------------------------------------------------------------------
-        - name: What's New in PWAs
+        - name: What's new in PWAs
           href: ./progressive-web-apps/whats-new/pwa.md
           displayName: release notes, announcements
 # -----------------------------------------------------------------------------
@@ -1631,6 +1639,9 @@
             - name: Development best practices for WebView2 apps
               href: ./webview2/concepts/developer-guide.md
 
+            - name: Performance best practices for WebView2 apps
+              href: ./webview2/concepts/performance.md
+
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
 # -----------------------------------------------------------------------------
@@ -1714,16 +1725,16 @@
             - name: Data and privacy in WebView2
               href: ./webview2/concepts/data-privacy.md
 # -----------------------------------------------------------------------------
-        - name: Release Notes
+        - name: Release notes
           items:
-            - name: About Release Notes for the WebView2 SDK
+            - name: About Release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md
 
-            - name: Release Notes for the WebView2 SDK
+            - name: Release notes for the WebView2 SDK
               href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Archived Release Notes for the WebView2 SDK
+            - name: Archived release notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
 # -----------------------------------------------------------------------------
         - name: WebView2 Reference

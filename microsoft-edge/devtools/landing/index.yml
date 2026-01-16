@@ -56,7 +56,7 @@ landingContent:
             url: ../console/index.md
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools
+          - text: What's new in Microsoft Edge DevTools
             url: ../whats-new/whats-new.md
 
           - text: Contact the Microsoft Edge DevTools team
