@@ -457,7 +457,7 @@ For such errors, try the following fixes:
 
 
 <!-- ========================================================================== -->
-## If a single locale appears but the package includes multiple languages
+## If a single locale appears, but the package includes multiple languages
 
 Sometimes only one locale appears in the **Store Listings** tab at Partner Center, even though an extension's package includes multiple languages.  This happens when the manifest file uses hardcoded strings instead of localized message references.
 
