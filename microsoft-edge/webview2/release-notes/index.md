@@ -109,11 +109,6 @@ This Prerelease SDK includes the following bug fixes.
 ###### SDK-only
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
-<!-- todo: update desc yaml from:
-How to increase the performance of your WebView2 application.
-to: 
-How to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
--->
 
 <!-- end of Jan 2026 Prerelease SDK (145) -->
 
