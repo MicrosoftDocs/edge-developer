@@ -1135,6 +1135,9 @@
 
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
+
+        - name: End-user docs about Microsoft Edge extensions
+          href: ./extensions/getting-started/user-docs.md
 # -----------------------------------------------------------------------------
         - name: Release notes
           items:
