@@ -97,7 +97,10 @@ This Release SDK includes the following bug fixes.
 
 * Fixed chrome.webview unavailability
 
+<!-- ---------- -->
+###### SDK-only
 
+* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
 
 <!-- end of Jan 2026 Release SDK (144) -->
