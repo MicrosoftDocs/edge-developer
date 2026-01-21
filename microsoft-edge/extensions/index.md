@@ -53,9 +53,8 @@ A Microsoft Edge extension:
 <!-- ====================================================================== -->
 ## End-user docs
 
-The present documentation is for extension Devs, rather than Edge end-users.
-
-For user docs about extensions for Microsoft Edge, see:
+The present documentation is for extension Devs, rather than Edge end-users.  For user docs about extensions for Microsoft Edge, see:
+* [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md)
 * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions) - introduction for users, at Microsoft Learning Center.
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Nav page at support.microsoft.com.
    * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge --> - support steps for users, at support.microsoft.com.
@@ -162,6 +161,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 ## The Featured badge
 
 The present documentation is for extension Devs, rather than Edge end-users.  For user docs about extensions for Microsoft Edge, see:
+* [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md)
 * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions) - introduction for users, at Microsoft Learning Center.
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Nav page at support.microsoft.com.
    * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge --> - support steps for users, at support.microsoft.com.
