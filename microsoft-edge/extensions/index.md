@@ -13,7 +13,7 @@ ms.date: 08/20/2024
 
 A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  _Microsoft Edge Add-ons_ include extensions and themes.
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  _Add-ons_ include extensions and themes.
 
 The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
