@@ -28,7 +28,7 @@ h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from in
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3719.77 for Runtime 144
 
-Release Date: January 23, 2026
+Release Date: January 26, 2026
 
 [NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 <!-- todo: add righmost part of url:
