@@ -11,13 +11,14 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
 
-_Microsoft Edge Add-ons_ include extensions and themes.  A Microsoft Edge _extension_ is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
+Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  _Microsoft Edge Add-ons_ include extensions and themes.
+
+The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 **Detailed contents:**
 * [Introduction](#introduction)
-* [End-user docs](#end-user-docs)
 * [Basic guidance](#basic-guidance)
 * [Benefits of Chromium extensions](#benefits-of-chromium-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
@@ -48,18 +49,6 @@ To work directly with a specific part of the browser, such as a window or tab, y
 A Microsoft Edge extension:
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
-
-
-<!-- ====================================================================== -->
-## End-user docs
-
-The present documentation is for extension Devs, rather than Edge end-users.  For user docs about extensions for Microsoft Edge, see:
-* [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md)
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions) - introduction for users, at Microsoft Learning Center.
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Nav page at support.microsoft.com.
-   * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge --> - support steps for users, at support.microsoft.com.
-   * [Microsoft Edge Extensions: Frequently Asked Questions](https://support.microsoft.com/topic/microsoft-edge-extensions-frequently-asked-questions-a3ae1ebb-8e7f-49df-a5f8-8c3f56c8078b)<!-- not possible to nav from home nav page to this article --> - support.microsoft.com.
-   * The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d) at support.microsoft.com.
 
 
 <!-- ====================================================================== -->
@@ -160,13 +149,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## The Featured badge
 
-The present documentation is for extension Devs, rather than Edge end-users.  For user docs about extensions for Microsoft Edge, see:
-* [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md)
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions) - introduction for users, at Microsoft Learning Center.
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Nav page at support.microsoft.com.
-   * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge --> - support steps for users, at support.microsoft.com.
-   * [Microsoft Edge Extensions: Frequently Asked Questions](https://support.microsoft.com/topic/microsoft-edge-extensions-frequently-asked-questions-a3ae1ebb-8e7f-49df-a5f8-8c3f56c8078b)<!-- not possible to nav from home nav page to this article --> - support.microsoft.com.
-   * The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d) at support.microsoft.com.
+The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
 
