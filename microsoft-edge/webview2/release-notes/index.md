@@ -26,80 +26,34 @@ h2's in archive.md (> 1 year old) became non-scrolled-to, and also moved from in
 
 <!-- Jan 2026 Release SDK (144) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime 144
+## Release SDK 1.0.3719.77 for Runtime 144
 
-Release Date: Monthname nn, 2025
+Release Date: January 23, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 <!-- todo: add righmost part of url:
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 -->
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
+* Fixed chrome.webview unavailability
 
 <!-- end of Jan 2026 Release SDK (144) -->
 
