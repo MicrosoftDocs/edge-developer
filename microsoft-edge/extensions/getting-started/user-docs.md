@@ -1,6 +1,6 @@
 ---
 title: User docs about Microsoft Edge extensions
-description: End-user docs about Microsoft Edge extensions.
+description: Links to end-user documentation about how to install and use Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
