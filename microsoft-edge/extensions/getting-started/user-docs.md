@@ -63,20 +63,8 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
 
 <!-- ====================================================================== -->
-## Support pages about specific extensions
-
-* [Getting Started with the OneNote Web Clipper](https://support.microsoft.com/office/getting-started-with-the-onenote-web-clipper-5696609d-c5ae-4591-b3af-1f897cb6eda6)
-
-* [Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/en-us/office/microsoft-editor-checks-grammar-and-more-in-documents-mail-and-the-web-91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)
-
-   * [Check grammar and spelling with the Microsoft Editor browser extension](https://support.microsoft.com/en-us/office/check-grammar-and-spelling-with-the-microsoft-editor-browser-extension-49dd8e1b-3dfa-4ba7-a40e-1bc120f9a71c)
-
-
-<!-- ====================================================================== -->
 ## Search for Support articles about extensions
 
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at Microsoft Support.<!-- doesn't contain "extension" -->
 
    * [Search the Support site for "extension" articles](https://support.microsoft.com/search/results?query=extension)
-
-   * [Search the Support site for "extensions" articles](https://support.microsoft.com/search/results?query=extensions)
