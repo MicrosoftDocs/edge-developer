@@ -38,8 +38,8 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 * [Get to know Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea) - covers extensions.
 
 
-<!-- ------------------------------ -->
-#### Search for Support articles about extensions
+<!-- ====================================================================== -->
+## Search for Support articles about extensions
 
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at support.microsoft.com.<!-- doesn't contain "extension" -->
 
@@ -60,8 +60,8 @@ Those searches return pages such as the following:
 * [Developer mode extension notification](https://support.microsoft.com/topic/developer-mode-extension-notification-b8c45464-6245-4137-94cb-f478aa6c9ab1)
 
 
-<!-- ------------------------------ -->
-#### Specific extensions
+<!-- ====================================================================== -->
+## Support pages about specific extensions
 
 These articles at Microsoft Support (support.microsoft.com) are about specific extensions.
 
