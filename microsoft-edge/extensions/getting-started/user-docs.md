@@ -44,7 +44,7 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
 * [Get to know Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea) - covers extensions.
 
-* The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d).
+* The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d)
 
 * [Why does Microsoft Edge turn off extensions I've installed?](https://support.microsoft.com/microsoft-edge/why-does-microsoft-edge-turn-off-extensions-i-ve-installed-56664742-3979-e938-4f2e-8ddb2eac8453)
 
@@ -60,9 +60,9 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
 These articles at Microsoft Support are about specific extensions.
 
-* [Getting Started with the OneNote Web Clipper](https://support.microsoft.com/office/getting-started-with-the-onenote-web-clipper-5696609d-c5ae-4591-b3af-1f897cb6eda6) - an extension.
+* [Getting Started with the OneNote Web Clipper](https://support.microsoft.com/office/getting-started-with-the-onenote-web-clipper-5696609d-c5ae-4591-b3af-1f897cb6eda6)
 
-* [Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/en-us/office/microsoft-editor-checks-grammar-and-more-in-documents-mail-and-the-web-91ecbe1b-d021-4e9e-a82e-abc4cd7163d7) - an extension.
+* [Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/en-us/office/microsoft-editor-checks-grammar-and-more-in-documents-mail-and-the-web-91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)
 
    * [Check grammar and spelling with the Microsoft Editor browser extension](https://support.microsoft.com/en-us/office/check-grammar-and-spelling-with-the-microsoft-editor-browser-extension-49dd8e1b-3dfa-4ba7-a40e-1bc120f9a71c)
 
