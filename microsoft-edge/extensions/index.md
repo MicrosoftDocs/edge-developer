@@ -107,10 +107,10 @@ See also:
 
 You can submit and seek browser extensions in the following browser extension stores.
 
-*   [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
-*   [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
-*   [Opera addons](https://addons.opera.com/extensions)
 *   [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
+*   [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
+*   [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
+*   [Opera addons](https://addons.opera.com/extensions)
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
