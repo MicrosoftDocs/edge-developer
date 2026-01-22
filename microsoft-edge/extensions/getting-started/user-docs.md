@@ -9,16 +9,6 @@ ms.subservice: extensions
 ms.date: 01/21/2026
 ---
 # User docs about Microsoft Edge extensions
-<!-- alts:
-# Use Microsoft Edge extensions
-# User docs about Microsoft Edge extensions
-# User documentation about Microsoft Edge extensions
-# User documentation about extensions
-# Documentation for users of Microsoft Edge extensions
-# End-user docs about Microsoft Edge extensions
-# How to use extensions for Microsoft Edge
-# Use extensions for Microsoft Edge
--->
 
 The present documentation (at learn.microsoft.com) is for extension developers, rather than end-users of Microsoft Edge extensions.
 
