@@ -11,9 +11,28 @@ ms.date: 08/20/2024
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to extend the User Experience (UX) for end-users in a specialized way.  An extension provides a niche experience or function that's important to a target audience.
 
-_Microsoft Edge Add-ons_ include extensions and themes.  A Microsoft Edge _extension_ is a small app that developers use to add or modify features of Microsoft Edge to improve a user's browsing experience.  An extension provides a niche experience or function that's important to a target audience.
+Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  _Add-ons_ include extensions and themes.
+
+The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Basic guidance](#basic-guidance)
+* [Benefits of Chromium extensions](#benefits-of-chromium-extensions)
+* [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
+* [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
+   * [Migrate an existing extension to Microsoft Edge](#migrate-an-existing-extension-to-microsoft-edge)
+   * [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons)
+* [The Featured badge](#the-featured-badge)
+   * [What the Featured badge represents](#what-the-featured-badge-represents)
+   * [Why the Featured badge might be revoked](#why-the-featured-badge-might-be-revoked)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 As a browser extension developer, you publish a Microsoft Edge extension (or theme) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
 
@@ -30,10 +49,6 @@ To work directly with a specific part of the browser, such as a window or tab, y
 A Microsoft Edge extension:
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
-
-See also:
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions) - introduction for users.
-* [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026) - support steps for users.
 
 
 <!-- ====================================================================== -->
@@ -92,10 +107,10 @@ See also:
 
 You can submit and seek browser extensions in the following browser extension stores.
 
-*   [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
-*   [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
-*   [Opera addons](https://addons.opera.com/extensions)
 *   [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
+*   [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
+*   [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
+*   [Opera addons](https://addons.opera.com/extensions)
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
@@ -133,6 +148,8 @@ After you've successfully submitted your extension, your extension undergoes a r
 
 <!-- ====================================================================== -->
 ## The Featured badge
+
+At the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site, the **Featured** badge links to this section.  The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
 
