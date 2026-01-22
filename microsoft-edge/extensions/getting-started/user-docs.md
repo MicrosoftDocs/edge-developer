@@ -71,8 +71,6 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
    * [Check grammar and spelling with the Microsoft Editor browser extension](https://support.microsoft.com/en-us/office/check-grammar-and-spelling-with-the-microsoft-editor-browser-extension-49dd8e1b-3dfa-4ba7-a40e-1bc120f9a71c)
 
-* [Get started using third-party extensions with the Xbox app for PC](https://support.xbox.com/help/games-apps/troubleshooting/xbox-app-for-pc-extensions)
-
 
 <!-- ====================================================================== -->
 ## Search for Support articles about extensions
