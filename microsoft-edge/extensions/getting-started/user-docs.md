@@ -41,7 +41,7 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 <!-- ------------------------------ -->
 #### Search for Support articles about extensions
 
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at support.microsoft.com.  (Doesn't contain "extension".)
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at support.microsoft.com.<!-- doesn't contain "extension" -->
 
    * [Search the Support site for "extension" articles](https://support.microsoft.com/search/results?query=extension)
 
@@ -49,16 +49,13 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
 Those searches return pages such as the following:
 
-* The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d)
+* The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d).
 
 * [Why does Microsoft Edge turn off extensions I've installed?](https://support.microsoft.com/microsoft-edge/why-does-microsoft-edge-turn-off-extensions-i-ve-installed-56664742-3979-e938-4f2e-8ddb2eac8453)
 
    * [Why are some of my extensions missing on the new Microsoft Edge?](https://support.microsoft.com/microsoft-edge/why-are-some-of-my-extensions-missing-on-the-new-microsoft-edge-2cb5d2e3-72ce-0019-3fbf-ae4efd414d3a)
 
 * [Change site access permissions for extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/change-site-access-permissions-for-extensions-in-microsoft-edge-7d1c889d-e267-4be0-15d4-3ed5d0c82ef5)
-
-
-* [Get started using third-party extensions with the Xbox app for PC](https://support.xbox.com/help/games-apps/troubleshooting/xbox-app-for-pc-extensions)
 
 * [Developer mode extension notification](https://support.microsoft.com/topic/developer-mode-extension-notification-b8c45464-6245-4137-94cb-f478aa6c9ab1)
 
@@ -73,3 +70,5 @@ These articles at Microsoft Support (support.microsoft.com) are about specific e
 * [Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/en-us/office/microsoft-editor-checks-grammar-and-more-in-documents-mail-and-the-web-91ecbe1b-d021-4e9e-a82e-abc4cd7163d7) - an extension.
 
    * [Check grammar and spelling with the Microsoft Editor browser extension](https://support.microsoft.com/en-us/office/check-grammar-and-spelling-with-the-microsoft-editor-browser-extension-49dd8e1b-3dfa-4ba7-a40e-1bc120f9a71c)
+
+* [Get started using third-party extensions with the Xbox app for PC](https://support.xbox.com/help/games-apps/troubleshooting/xbox-app-for-pc-extensions)
