@@ -16,9 +16,9 @@ For end-user documentation about how to use extensions for Microsoft Edge, see t
 
 
 <!-- ====================================================================== -->
-## Microsoft Learning Center
+## Microsoft Learning Center<!-- /learning-center/ -->
 
-* [Learning Center](https://www.microsoft.com/edge/learning-center/) - searching for "extension" returns articles such as the following:
+* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - searching for "extension" returns articles such as the following:
 
   * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions)
 
@@ -28,16 +28,13 @@ For end-user documentation about how to use extensions for Microsoft Edge, see t
 <!-- ====================================================================== -->
 ## Microsoft Support
 
-The following pages are at Microsoft Support (support.microsoft.com).
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page for Microsoft Edge at Microsoft Support.<!-- doesn't contain "extension" -->
+
+Microsoft Support (support.microsoft.com) includes the following articles about Microsoft Edge extensions:
 
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge -->
 
-* [Microsoft Edge Extensions: Frequently Asked Questions](https://support.microsoft.com/topic/microsoft-edge-extensions-frequently-asked-questions-a3ae1ebb-8e7f-49df-a5f8-8c3f56c8078b)
-<!-- not possible to nav from home nav page to this article -->
-<!-- not found via general search:
-https://support.microsoft.com/search/results?query=extension
-found via specific search:
-https://support.microsoft.com/search/results?query=extension+frequently -->
+* [Microsoft Edge Extensions: Frequently Asked Questions](https://support.microsoft.com/topic/microsoft-edge-extensions-frequently-asked-questions-a3ae1ebb-8e7f-49df-a5f8-8c3f56c8078b)<!-- no nav from home nav page to this article -->
 
 * [Get to know Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea) - covers extensions.
 
@@ -55,6 +52,6 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 <!-- ====================================================================== -->
 ## Search for Support articles about extensions
 
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at Microsoft Support.<!-- doesn't contain "extension" -->
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page for Microsoft Edge at Microsoft Support.<!-- doesn't contain "extension" -->
 
-   * [Search the Support site for "extension" articles](https://support.microsoft.com/search/results?query=extension)
+   * [Search the Support site for "extensions"](https://support.microsoft.com/search/results?query=extensions)
