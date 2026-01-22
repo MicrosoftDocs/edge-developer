@@ -1,5 +1,5 @@
 ---
-title: End-user docs about Microsoft Edge extensions
+title: User docs about Microsoft Edge extensions
 description: End-user docs about Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,18 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 01/21/2026
 ---
+# User docs about Microsoft Edge extensions
+<!-- alts:
+# User docs about Microsoft Edge extensions
+# User documentation about Microsoft Edge extensions
+# User documentation about extensions
+# Documentation for users of Microsoft Edge extensions
 # End-user docs about Microsoft Edge extensions
+-->
 
 The present documentation (at learn.microsoft.com) is for extension Devs, rather than Edge end-users.
 
-For user docs about extensions for Microsoft Edge, see the following resources.
+For end-user documentation about how to use extensions for Microsoft Edge, see the following resources.
 
 
 <!-- ====================================================================== -->
@@ -24,7 +31,7 @@ For user docs about extensions for Microsoft Edge, see the following resources.
 <!-- ====================================================================== -->
 ## Microsoft Support
 
-The following pages are at Microsoft Support (support.microsoft.com).
+The following pages are at Microsoft Support.
 
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge -->
 
@@ -36,18 +43,6 @@ found via specific search:
 https://support.microsoft.com/search/results?query=extension+frequently -->
 
 * [Get to know Microsoft Edge](https://support.microsoft.com/en-us/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea) - covers extensions.
-
-
-<!-- ====================================================================== -->
-## Search for Support articles about extensions
-
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at support.microsoft.com.<!-- doesn't contain "extension" -->
-
-   * [Search the Support site for "extension" articles](https://support.microsoft.com/search/results?query=extension)
-
-   * [Search the Support site for "extensions" articles](https://support.microsoft.com/search/results?query=extensions)
-
-Those searches return pages such as the following:
 
 * The **Extensions** section in [Microsoft Edge for mobile FAQs](https://support.microsoft.com/microsoft-edge/microsoft-edge-for-mobile-faqs-29296eab-b76f-4a87-ac9c-9835da53465d).
 
@@ -63,7 +58,7 @@ Those searches return pages such as the following:
 <!-- ====================================================================== -->
 ## Support pages about specific extensions
 
-These articles at Microsoft Support (support.microsoft.com) are about specific extensions.
+These articles at Microsoft Support are about specific extensions.
 
 * [Getting Started with the OneNote Web Clipper](https://support.microsoft.com/office/getting-started-with-the-onenote-web-clipper-5696609d-c5ae-4591-b3af-1f897cb6eda6) - an extension.
 
@@ -72,3 +67,13 @@ These articles at Microsoft Support (support.microsoft.com) are about specific e
    * [Check grammar and spelling with the Microsoft Editor browser extension](https://support.microsoft.com/en-us/office/check-grammar-and-spelling-with-the-microsoft-editor-browser-extension-49dd8e1b-3dfa-4ba7-a40e-1bc120f9a71c)
 
 * [Get started using third-party extensions with the Xbox app for PC](https://support.xbox.com/help/games-apps/troubleshooting/xbox-app-for-pc-extensions)
+
+
+<!-- ====================================================================== -->
+## Search for Support articles about extensions
+
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Navigation page at Microsoft Support.<!-- doesn't contain "extension" -->
+
+   * [Search the Support site for "extension" articles](https://support.microsoft.com/search/results?query=extension)
+
+   * [Search the Support site for "extensions" articles](https://support.microsoft.com/search/results?query=extensions)
