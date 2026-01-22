@@ -25,13 +25,17 @@ For end-user documentation about how to use extensions for Microsoft Edge, see t
 <!-- ====================================================================== -->
 ## Microsoft Learning Center
 
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions)
+* [Learning Center](https://www.microsoft.com/edge/learning-center/) - searching for "extension" returns articles such as the following:
+
+  * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions)
+
+  * [The best browser extensions for daily life](https://www.microsoft.com/edge/learning-center/browser-extensions)
 
 
 <!-- ====================================================================== -->
 ## Microsoft Support
 
-The following pages are at Microsoft Support.
+The following pages are at Microsoft Support (support.microsoft.com).
 
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- in card 3, Personalize, at nav page https://support.microsoft.com/microsoft-edge -->
 
@@ -57,8 +61,6 @@ https://support.microsoft.com/search/results?query=extension+frequently -->
 
 <!-- ====================================================================== -->
 ## Support pages about specific extensions
-
-These articles at Microsoft Support are about specific extensions.
 
 * [Getting Started with the OneNote Web Clipper](https://support.microsoft.com/office/getting-started-with-the-onenote-web-clipper-5696609d-c5ae-4591-b3af-1f897cb6eda6)
 
