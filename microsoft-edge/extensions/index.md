@@ -13,7 +13,7 @@ ms.date: 08/20/2024
 
 A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to extend the User Experience (UX) for end-users in a specialized way.  An extension provides a niche experience or function that's important to a target audience.
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  _Add-ons_ include extensions and themes.
+Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  _Add-ons_ include extensions and themes.
 
 The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
@@ -149,7 +149,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## The Featured badge
 
-The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
+At  the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site, the **Featured** badge links to this section.  The present documentation is for extension Devs, rather than Edge end-users.  For user docs, see [End-user docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
 
