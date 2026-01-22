@@ -19,7 +19,7 @@ ms.date: 01/21/2026
 
 The present documentation (at learn.microsoft.com) is for extension Devs, rather than Edge end-users.
 
-For end-user documentation about how to use extensions for Microsoft Edge, see the following resources.
+For end-user documentation about how to use extensions for Microsoft Edge, see the following articles.
 
 
 <!-- ====================================================================== -->
