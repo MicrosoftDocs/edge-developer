@@ -586,7 +586,7 @@
                   href: ./devtools/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 
-                - name: Service worker improvements
+                - name: Service workers
                   href: ./devtools/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # -----------------------------------------------------------------------------

@@ -99,7 +99,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 See also:
 * [Updating your service worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers#updating_your_service_worker) in _Using Service Workers_ at MDN.
-* [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
+* [Service workers](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
 
 
 <!-- ====================================================================== -->

@@ -1,6 +1,6 @@
 ---
-title: Service worker improvements
-description: How to use each service worker improvement in the Network, Application, and Sources tools in Microsoft Edge DevTools.
+title: Service workers
+description: How to work on service workers in the Network tool, Application tool, and Sources tools in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,19 +8,34 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/07/2025
 ---
-# Service worker improvements
+# Service workers
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/service-workers/ -->
+
 <!-- todo:
-change from "what's new" wording to regular description
-
-ensure that all of the improvements that are described in this article are already covered in other, regular, articles
-if not, update those other articles to cover the improvements
-
-ideally, this "What's New"-style article should eventually get deleted
+dissolve this article
+make sure this content is covered in regular articles
 -->
 
-The **Network**, **Application**, and **Sources** tools have been improved to help you work with [service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and the network requests that pass through each service worker.
+The **Network**, **Application**, and **Sources** tools help you work with service workers and the network requests that pass through each service worker.
 
-The improvements simplify the following tasks:
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Network tool](#network-tool)
+   * [Request routing](#request-routing)
+   * [Fetch events](#fetch-events)
+* [Application tool](#application-tool)
+   * [Service worker update timeline](#service-worker-update-timeline)
+   * [Request routing and fetch events](#request-routing-and-fetch-events)
+* [Sources tool](#sources-tool)
+
+See also:
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - about service workers.
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+For example, the following tasks are supported:
 
 *  Debug based on service worker timelines.
     *  The start of a request and duration of the bootstrap.
@@ -30,7 +45,7 @@ The improvements simplify the following tasks:
 *  Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.
 *  Step into and out of fetch event handler with [page script information](#sources).
 
-The improvements span the following tools:
+Features for working on service workers are in the following tools:
 
 *  The [Network](#network) tool.  Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool.
 
@@ -40,7 +55,7 @@ The improvements span the following tools:
 
 
 <!-- ====================================================================== -->
-## Network
+## Network tool
 
 ![Service worker timeline in the Network tool](./index-images/sw-network-timeline.png)
 
@@ -53,7 +68,9 @@ You can access the service worker debugging features in the **Network** tool in 
 <!-- ------------------------------ -->
 #### Request routing
 
-To make request routing easier to visualize, timelines now display the service worker start-up and the `respondWith` fetch events.  To debug and visualize a network request that passed through a service worker:
+To visualize request routing, timelines display the service worker start-up and the `respondWith` fetch events.
+
+To debug and visualize a network request that passed through a service worker:
 
 1. Select the network request that went through a service worker.
 1. Open the **Timing** tool.
@@ -62,11 +79,13 @@ To make request routing easier to visualize, timelines now display the service w
 <!-- ------------------------------ -->
 #### Fetch events
 
-To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
+To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.
+
+To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
 
 
 <!-- ====================================================================== -->
-## Application
+## Application tool
 
 ![Application view](./index-images/sw-application-timeline.png)
 
@@ -74,13 +93,17 @@ To learn more about the `respondWith` fetch events, click the dropdown arrow to 
 <!-- ------------------------------ -->
 #### Service worker update timeline
 
-The Microsoft Edge DevTools team added a timeline in the **Application** tool to reflect the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
+A timeline in the **Application** tool reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.
+
+Each of the events have a corresponding dropdown arrow to give you more details.
 
 
 <!-- ------------------------------ -->
 #### Request routing and fetch events
 
-You can now access the service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
+You can access the service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
+
+To access the service worker timelines:
 
 1. Open the service worker that you're debugging.
 
@@ -90,11 +113,12 @@ You can now access the service worker timelines through the **Network** tool.  T
 
 The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
 
-See also [Application tool, to manage storage](../storage/application-tool.md).
+See also:
+* [Application tool, to manage storage](../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
-## Sources
+## Sources tool
 
 ![The DOM tree](./index-images/sw-sources.png)
 
@@ -103,7 +127,7 @@ To find more stack information, set a break point in the fetch handler.  The det
 When the debugger pauses inside a fetch handler, a combined stack information is displayed in the panel to the right.  After that, you can move around in the stack frames.
 
 
-<!-- ------------------------------ -->
-#### Future work
+<!-- ====================================================================== -->
+## See also
 
-The Microsoft Edge DevTools team plans to further develop the cache detail, and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application (PWA)](https://developer.mozilla.org/docs/Web/Progressive_web_apps) developers.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - about service workers.
