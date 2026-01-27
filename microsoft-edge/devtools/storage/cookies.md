@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/21/2023
+ms.date: 01/27/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,6 +22,8 @@ ms.date: 07/21/2023
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # View, edit, and delete cookies
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/storage/cookies -->
+<!-- https://developer.chrome.com/docs/devtools/application/cookies -->
 
 _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage.
 
@@ -30,20 +32,24 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 <!-- ====================================================================== -->
 ## Open the Cookies pane
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#open -->
 
-1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
+1. Go to a webpage, such [Bing.com](https://www.bing.com).
 
-1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./cookies-images/more-tools-icon.png)) button, and then click **Application**. The **Manifest** pane usually opens by default:
+1. Right-click the webpage, and then select **Inpsect**.
 
-   ![The Manifest pane](./cookies-images/pick-application-no-manifest.png)
+   DevTools opens.
 
-1. Under **Storage**, expand **Cookies**, then select an origin:
+1. In the **Activity Bar**, select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
+
+1. In the outline on the left, in the **Storage** section, expand **Cookies**, then select an origin, such as `https://www.bing.com`:
 
    ![The Cookies pane](./cookies-images/open-cookies-select-source.png)
 
 
 <!-- ====================================================================== -->
 ## Fields
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#fields -->
 
 The **Cookies** table contains the following fields:
 
@@ -74,22 +80,44 @@ The **Cookies** table contains the following fields:
 
 <!-- ====================================================================== -->
 ## Filter cookies
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#filter -->
 
 To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
 ![Filtering out any cookies that don't contain the text ID](./cookies-images/filter-cookies-name.png)
 
-**Note:** Filtering by other fields isn't supported.
+Filtering by other fields isn't supported.  Filter is case-insensitive.
+
+
+<!-- ====================================================================== -->
+## Add a cookie
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#add-cookie -->
+
+To add an arbitrary cookie:
+
+1. [Open the Cookies pane](#open-the-cookies-pane), as described above.
+
+1. In the empty row at the bottom of the table, double-click the **Name** column, enter a name for the cookie, and then press **Enter**.
+
+1. In the **Value** column of that row, enter a value for the cookie, and then press **Enter**.
+
+![Adding text in the Name and Value cells of an empty row](./cookies-images/add-cookie.png)
+
+DevTools populates other required fields automatically.  You can edit them as described next.
+
 
 <!-- ====================================================================== -->
 ## Edit a cookie
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#edit -->
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
 ![Setting the name of a cookie to 'DEVTOOLS!'](./cookies-images/rename-cookie.png)
 
+
 <!-- ====================================================================== -->
 ## Delete cookies
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#delete -->
 
 To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected](./cookies-images/delete-cookie-icon.png)):
 
@@ -99,6 +127,22 @@ To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](./
 
 ![Clearing all cookies](./cookies-images/clear-all-cookies.png)
 
+
+<!-- ====================================================================== -->
+## Identify and inspect third-party cookies
+<!-- https://developer.chrome.com/docs/devtools/application/cookies#3pc -->
+
+Third-party cookies are those set by a site that's different from the current top-level page.  Third-party cookies have the `SameSite=None` attribute.
+
+DevTools lists such cookies in **Application** > **Storage** > **Cookies** and shows a (![Warning icon](./cookies-images/warning-icon.png)) icon next to them.  Hover over the icon to see a tooltip, and click the tooltip to go to the **Issues** panel for more information.
+
+<!-- ![Cookies with the `SameSite=None` attribute in the Storage section](todo) -->
+
+You can also find third-party cookies in [Network > click request > Cookies]<!-- https://developer.chrome.com/docs/devtools/network/reference#cookies -->.
+
+<!-- ![Cookies with the SameSite=None attribute in the Network pane.](todo) -->
+
+The **Network** panel [highlights cookies with issues](https://developer.chrome.com/docs/devtools/network/reference#show-blocked-cookies) and shows a warning (![Warning icon](./cookies-images/warning-icon.png)) icon next to cookies affected where [third-party cookies are not available](https://privacysandbox.google.com/cookies).
 
 
 <!-- ====================================================================== -->
