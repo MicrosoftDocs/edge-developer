@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 12/08/2025
+ms.date: 01/27/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -22,6 +22,88 @@ if change h2 headings pattern, enter work item: update links in announcements
 -->
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+
+
+<!-- Jan 2026 Release SDK (144) -->
+<!-- ====================================================================== -->
+## Release SDK 1.0.3719.77, for Runtime 144
+
+Release Date: January 27, 2026
+
+[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Customize the drag and drop behavior (DragStarting API)
+
+The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+
+<!-- todo: still 5 suffix, like previous phase?  https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=win32cpp#promotions-to-phase-2-stable-in-prerelease-1 -->
+* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
+* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
+   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
+   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+N/A
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+N/A
+
+##### [Win32/C++](#tab/win32cpp)
+
+<!-- todo: still 5 suffix, like previous phase?  https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=win32cpp#promotions-to-phase-2-stable-in-prerelease-1 -->
+* [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77e&preserve-view=true#remove_dragstarting)
+
+<!-- exception: rt interop docs -->
+<!-- todo: still 3 suffix, like previous phase?  https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=win32cpp#promotions-to-phase-2-stable-in-prerelease-1 -->
+* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#remove_dragstarting)
+
+* [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_alloweddropeffects)
+  * [ICoreWebView2DragStartingEventArgs::get_Data](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_data)
+  * [ICoreWebView2DragStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_handled)
+  * [ICoreWebView2DragStartingEventArgs::get_Position](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_position)
+  * [ICoreWebView2DragStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#getdeferral)
+  * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#put_handled)
+
+* [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3719.77&preserve-view=true)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed `chrome.webview` unavailability.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
+
+<!-- end of Jan 2026 Release SDK (144) -->
 
 
 <!-- Jan 2026 Prerelease SDK (145) -->
@@ -101,6 +183,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
+* Fixed `chrome.webview` unavailability.
 * Disabled background update of network time.
 
 
