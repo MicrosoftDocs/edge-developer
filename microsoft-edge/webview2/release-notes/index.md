@@ -183,6 +183,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
+* Fixed `chrome.webview` unavailability.
 * Disabled background update of network time.
 
 
