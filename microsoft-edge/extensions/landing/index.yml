@@ -52,6 +52,9 @@ landingContent:
           - text: Overview of Microsoft Edge extensions
             url: ../index.md
 
+          - text: User docs about Microsoft Edge extensions
+            url: ../getting-started/user-docs.md
+
           - text: Extension concepts and architecture
             url: ../getting-started/index.md
 
