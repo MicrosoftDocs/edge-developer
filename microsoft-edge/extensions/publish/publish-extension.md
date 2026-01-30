@@ -39,13 +39,14 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
+* [If a single locale appears but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
-* [Support](#support)
 * [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension)
    * [Process of using the AI-generated description feature](#process-of-using-the-ai-generated-description-feature)
    * [Inputs used for the AI-generated description](#inputs-used-for-the-ai-generated-description)
    * [How the AI-generated description feature was evaluated](#how-the-ai-generated-description-feature-was-evaluated)
    * [Safeguards for the AI-generated description](#safeguards-for-the-ai-generated-description)
+* [Support](#support)
 * [See also](#see-also)
 
 
@@ -459,21 +460,40 @@ For such errors, try the following fixes:
 
 
 <!-- ========================================================================== -->
+## If a single locale appears, but the package includes multiple languages
+
+Sometimes only one locale appears in the **Store Listings** tab at Partner Center, even though an extension's package includes multiple languages.  This happens when the manifest file uses hardcoded strings instead of localized message references.
+
+To ensure that all supported locales are detected:
+
+* Update your `manifest.json` file by replacing the `name` and `description` fields with i18n placeholders:
+
+   ```
+   {
+      "manifest_version": 3,
+      "name": "__MSG_extensionName__",
+      "description": "__MSG_extensionDescription__"
+   }
+   ```
+
+* Include a `default_locale` in your manifest, such as `"default_locale": "en"`.
+
+* Make sure your `_locales` folder contains a properly structured `messages.json` file for each language.  Partner Center uses these message references to identify available languages.  If these message references are missing, the language will be skipped.
+
+   The message references are the i18n `"name"` and `"description"` keys in each `/_locales/messages.json` file.  These message references (i18n keys) correspond to the `"__MSG_extensionName__"` and `"__MSG_extensionDescription__"` placeholders that are used in the `"name"` and `"description"` fields of the `manifest.json` file.  Partner Center uses these message references to determine which languages are available.
+
+See also:
+* [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) - API to implement internationalization throughout an app or extension.
+* [Manifest file format for extensions](../getting-started/manifest-format.md)
+   * [Manifest file format](https://developer.chrome.com/docs/extensions/reference/manifest) in Chrome docs.
+
+
+<!-- ========================================================================== -->
 ## If the extension is flagged as potentially malware
 
 If the extension is flagged as malware or a potentially unwanted application (PUA), review [1.2.2 Unwanted and malicious software](/legal/microsoft-edge/extensions/developer-policies#122-unwanted-and-malicious-software) in _Developer policies for the Microsoft Edge Add-ons store_.
 
 Make sure that your extension's code and functionality complies with all requirements and guidelines.  For security reasons, Microsoft doesn't disclose exact triggers.
-
-
-<!-- ========================================================================== -->
-## Support
-
-If you experience issues when registering as an extension developer or when submitting an extension, you can:
-
-* Enter a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4).
-
-* [Contact the Microsoft Edge extensions team](../contact.md).
 
 
 <!-- ========================================================================== -->
@@ -532,6 +552,16 @@ The following safeguards are in place for the AI-generated description:
 * The inputs are sent to the AI model, which then generates a description.
 
 * You have full control over the AI-generated description, and can choose to use it as-is, edit it, or discard it.
+
+
+<!-- ========================================================================== -->
+## Support
+
+If you experience issues when registering as an extension developer or when submitting an extension, you can:
+
+* Enter a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4).
+
+* [Contact the Microsoft Edge extensions team](../contact.md).
 
 
 <!-- ========================================================================== -->
