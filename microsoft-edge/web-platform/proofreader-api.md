@@ -5,11 +5,9 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 11/19/2025
+ms.date: 01/30/2026
 ---
 # Correct grammar, spelling, and punctuation errors in text with the Proofreader API
-<!-- todo: create the below short link: -->
-<!-- https://aka.ms/edge-proofreader-api-docs -->
 
 The Proofreader API is an experimental web API that allows you to correct grammar, spelling, and punctuation errors in text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.
 
@@ -43,7 +41,7 @@ For introductory information about the Proofreader API, see [Proofreader API Exp
 <!-- ====================================================================== -->
 ## Availability of the Proofreader API
 
-The Proofreader API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 143<!-- todo: add the correct version. -->.
+The Proofreader API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 142.
 
 The Proofreader API is optimized to correct grammar, spelling, and punctuation errors in text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -103,7 +101,6 @@ The Proofreader API is currently limited to:
 To check if your device supports the Proofreader API developer preview, see [Enable the Proofreader API](#enable-the-proofreader-api) below and check your device performance class.
 
 Due to the experimental nature of the Proofreader API, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md) at the MSEdgeExplainers repository.
-<!-- todo: create the above bug template. -->
 
 
 <!-- ------------------------------ -->
@@ -117,7 +114,7 @@ An initial download of the model will be required the first time a website calls
 
 To use any of the Proofreader API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 143 <!-- todo add correct version --> or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 142 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 
@@ -127,7 +124,7 @@ To use any of the Proofreader API in Microsoft Edge:
 
 1. Select **Enabled** next to the **Proofreader API for Phi mini** flag:
 
-   ![Flags page of browser](./proofreader-api-images/flags-proofreader-api.png)<!-- todo: populate png -->
+   ![Flags page of browser](./proofreader-api-images/flags-proofreader-api.png)
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
@@ -147,25 +144,25 @@ To see the Proofreader API in action, and review existing code that uses these A
 
 1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Proofreader API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/proofreader-api/).
 
-1. In the information banner at the top, check the status: it initially reads **Model downloading, please wait**:
+1. In the information banner at the top, check the status: it initially reads **On-device API and model downloading.**:
 
-   ![Status indicator showing model downloading progress](./proofreader-api-images/model-downloading.png)<!-- todo: populate png -->
+   ![Status indicator showing model downloading progress](./proofreader-api-images/model-downloading.png)
 
-   After the model has downloaded, the information banner reads **API and model ready**, indicating that the API and model can be used:
+   After the model has downloaded, the information banner reads **On-device API and model available**, indicating that the API and model can be used:
 
-   ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)<!-- todo: populate png -->
+   ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)
 
    If the model download doesn't start, restart Microsoft Edge and try again.
 
    The Proofreader API is only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. Optionally change the settings in the playground pages, such as the text and expected languages.
+1. Optionally change the settings in the page, such as the text to proofread and the expected input language.
 
 1. Click the **Proofread** button, at the bottom of the page.
 
    The output is generated in the response section of the page:
 
-   ![The Proofreader demo page with settings and a Proorfread button](./proofreader-api-images/proofreading.png)<!-- todo: populate png -->
+   ![The Proofreader demo page with settings and a Proorfread button](./proofreader-api-images/proofreading.png)
 
 See also:
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
@@ -364,7 +361,7 @@ controller.abort();
 
 We're very interested in learning about the range of scenarios for which you intend to use the Proofreader API, any issues with the API or language model, and whether new task-specific APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Proofreader API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/XYZ)<!-- todo: create a feedback issue -->.
+To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Proofreader API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1238).
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md).
 
