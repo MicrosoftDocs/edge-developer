@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/10/2025
+ms.date: 02/02/2026
 ---
 # WebView2 browser flags
 <!-- lexicon:
