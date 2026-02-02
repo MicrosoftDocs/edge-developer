@@ -24,6 +24,86 @@ if change h2 headings pattern, enter work item: update links in announcements
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
 
+<!-- Feb 2026 Release SDK (145) -->
+<!-- ====================================================================== -->
+## Release SDK 1.0.####.##, for Runtime ###
+
+Release Date: Monthname nn, 2025
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add righmost part of url:
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+-->
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Feb 2026 Release SDK (145) -->
+
+
 <!-- Jan 2026 Release SDK (144) -->
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3719.77, for Runtime 144
@@ -1810,94 +1890,6 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
 
 <!-- end of Mar 2025 Prerelease SDK (135) -->
-
-
-<!-- Feb 2025 Release SDK (133) -->
-<!-- ====================================================================== -->
-## 1.0.3065.39
-<!-- ## Release SDK 1.0.3065.39, for Runtime 133 -->
-
-Release Date: February 10, 2025, Runtime 133
-
-[NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 133.0.3065.39 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-<!-- end of Feb 2025 Release SDK (133) -->
-
-
-<!-- Feb 2025 Prerelease SDK (134) -->
-<!-- ====================================================================== -->
-## 1.0.3116-prerelease
-<!-- ## Prerelease SDK 1.0.3116-prerelease, for Runtime 134 -->
-
-Release Date: February 10, 2025, Runtime 134
-
-[NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 134.0.3116.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed .NET and Win32 documentation of the `CoreWebView2Find.FindNext` method that incorrectly mentioned `FindPrevious`.  The method summary now mentions `FindNext` instead.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3116-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalFind::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfind?view=webview2-1.0.3116-prerelease&preserve-view=true#findnext)
-
----
-
-<!-- end of Feb 2025 Prerelease SDK (134) -->
 
 
 <!-- ====================================================================== -->
