@@ -47,7 +47,7 @@ The Proofreader API is optimized to correct grammar, spelling, and punctuation e
 
 
 <!-- ====================================================================== -->
-## Alternatives to and benefits of the Proofreader API
+## Decide which API to use
 
 To leverage AI capabilities in websites and browser extensions, you can also use the following methods:
 
