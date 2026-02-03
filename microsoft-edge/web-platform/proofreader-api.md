@@ -62,7 +62,7 @@ The Proofreader API uses a small language model (SLM) that runs on the same devi
 
 * **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and the model can also be used when the device is offline.
 
-* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
+* **Improved privacy:** The data that's input to the model never leaves the device, and isn't collected (such as to train AI models).
 
 The Proofreader API use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
