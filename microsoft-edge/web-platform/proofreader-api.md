@@ -74,13 +74,13 @@ The Proofreader API use a model that's provided by Microsoft Edge and built into
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Proofreader API uses the Phi-4-mini model — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Proofreader API uses the Phi-4-mini model built into Microsoft Edge. Phi-4-mini is a powerful small language model that excels at text-based tasks.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more about the model's AI considerations, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
+Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
 
 
 <!-- ------------------------------ -->
@@ -150,7 +150,7 @@ To see the Proofreader API in action, and examine existing code that uses these 
 
    After the model has been downloaded, the information banner reads **On-device API and model available**, indicating that the API and model can be used:
 
-   ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)
+   ![Information banner showing the message: On-device API and model ready.](./proofreader-api-images/api-and-model-ready.png)
 
    If the model doesn't start downloading, restart Microsoft Edge and try again.
 
@@ -230,7 +230,7 @@ The available options are listed below:
 | **Option** | **Description** |
 | --- | --- |
 | `monitor` | A function that's used to monitor the progress of the model download. See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below. |
-| `expectedInputLanguages` | An array of strings listing the languages which the input text is expected to contain. For example: `["en"]`. |
+| `expectedInputLanguages` | An array of strings. Each string is a language that the input text is expected to contain. For example: `["en", "es"]`. |
 
 
 <!-- ---------- -->
