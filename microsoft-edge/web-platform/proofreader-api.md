@@ -1,5 +1,5 @@
 ---
-title: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+title: Correct grammar and spelling with the Proofreader API
 description: Correct grammar, spelling, and punctuation errors in text with the Proofreader API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
