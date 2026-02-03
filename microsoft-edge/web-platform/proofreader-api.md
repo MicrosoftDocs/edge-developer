@@ -17,7 +17,7 @@ For introductory information about the Proofreader API, see [Proofreader API Exp
 **Detailed contents:**
 
 * [Availability of the Proofreader API](#availability-of-the-proofreader-api)
-* [Alternatives to and benefits of the Proofreader API](#alternatives-to-and-benefits-of-the-proofreader-api)
+* [Decide which API to use](#decide-which-api-to-use)
 * [The Phi-4-mini model](#the-phi-4-mini-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
