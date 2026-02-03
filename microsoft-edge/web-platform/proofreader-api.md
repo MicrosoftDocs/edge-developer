@@ -350,7 +350,7 @@ const controller = new AbortController();
 // AbortController signal object by using the signal option.
 const session = await Proofreader.create({ signal: controller.signal });
 
-// Later, perhaps when the user interacts with the UI, destroy the session by
+// Later, such as when the user interacts with the UI, destroy the session by
 // calling the abort() function of the AbortController object.
 controller.abort();
 ```
