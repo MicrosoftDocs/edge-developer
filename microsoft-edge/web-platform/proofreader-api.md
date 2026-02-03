@@ -116,7 +116,7 @@ To use any of the Proofreader API in Microsoft Edge:
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 142 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
+1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
 1. In the search box, at the top of the page, enter **Proofreader API for Phi mini**.
 
