@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: microsoft-edge
 ms.date: 01/30/2026
 ---
-# Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+# Correct grammar and spelling with the Proofreader API
 
 The Proofreader API is an experimental web API that allows you to correct grammar, spelling, and punctuation errors in text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.
 
@@ -86,9 +86,9 @@ Like other language models, the Phi family of models can potentially behave in w
 <!-- ------------------------------ -->
 #### Hardware requirements
 
-The Proofreader API developer preview is intended to work on devices with hardware capabilities that produce SLM outputs with predictable quality and latency.
+The Proofreader API developer preview is intended to work on devices that have hardware capabilities that produce Small Language Model (SLM) outputs that have predictable quality and latency.
 
-The Proofreader API is currently limited to:
+The Proofreader API has the following requirements:
 
 * **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
 
@@ -106,7 +106,7 @@ Due to the experimental nature of the Proofreader API, you might observe issues 
 <!-- ------------------------------ -->
 #### Model availability
 
-An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Proofreader API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the model is required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
@@ -132,40 +132,40 @@ To use any of the Proofreader API in Microsoft Edge:
 
 1. To check if your device meets the hardware requirements for the Proofreader API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Proofreader API should be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md).
+   If your device performance class is **High** or greater, the Proofreader API is expected to be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md).
 
 
 <!-- ====================================================================== -->
 ## See a working example
 
-To see the Proofreader API in action, and review existing code that uses these APIs:
+To see the Proofreader API in action, and examine existing code that uses these APIs:
 
 1. [Enable the Proofreader API](#enable-the-proofreader-api), as described above.
 
 1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Proofreader API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/proofreader-api/).
 
-1. In the information banner at the top, check the status: it initially reads **On-device API and model downloading.**:
+1. In the information banner at the top, check the status.  The status initially reads **On-device API and model downloading**:
 
    ![Status indicator showing model downloading progress](./proofreader-api-images/model-downloading.png)
 
-   After the model has downloaded, the information banner reads **On-device API and model available**, indicating that the API and model can be used:
+   After the model has been downloaded, the information banner reads **On-device API and model available**, indicating that the API and model can be used:
 
    ![Status indicator showing API and model ready](./proofreader-api-images/api-and-model-ready.png)
 
-   If the model download doesn't start, restart Microsoft Edge and try again.
+   If the model doesn't start downloading, restart Microsoft Edge and try again.
 
    The Proofreader API is only supported on devices that meet certain hardware requirements.  For more information, see [Hardware requirements](#hardware-requirements), above.
 
-1. Optionally change the settings in the page, such as the text to proofread and the expected input language.
+1. Optionally change the content and settings in the page.  For example, modify the text to proofread, or change the expected input language.
 
 1. Click the **Proofread** button, at the bottom of the page.
 
    The output is generated in the response section of the page:
 
-   ![The Proofreader demo page with settings and a Proorfread button](./proofreader-api-images/proofreading.png)
+   ![The Proofreader demo page, containing settings and a Proofread button](./proofreader-api-images/proofreading.png)
 
 See also:
-* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Readme and source code for the Built-in AI playgrounds demo.
 
 
 <!-- ====================================================================== -->
@@ -175,7 +175,7 @@ See also:
 <!-- ------------------------------ -->
 #### Check if the API is enabled
 
-Before using the Proofreader API in your website's code, check that the API is enabled by testing the presence of the `Proofreader` object:
+Before using the Proofreader API in your website's code, check that the API is enabled, by testing for the presence of the `Proofreader` object:
 
 ```javascript
 if (!Proofreader) {
@@ -187,9 +187,9 @@ if (!Proofreader) {
 <!-- ------------------------------ -->
 #### Check if the model can be used
 
-The Proofreader API can only be used if the device supports running the model, and once the language model and model runtime have been downloaded by Microsoft Edge.
+The Proofreader API can only be used if the device supports running the model, and after the language model and model runtime have been downloaded by Microsoft Edge.
 
-To check if the API can be used, use the API's `availability()` method:
+To check if the API can be used, use the `availability()` method:
 
 ```javascript
 const availability = await Proofreader.availability();
@@ -236,7 +236,7 @@ The available options are listed below:
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users to wait.
 
 ```javascript
 // Create a Proofreader session with the monitor option to monitor the model
@@ -262,7 +262,7 @@ const session = await Proofreader.create({
 <!-- ------------------------------ -->
 #### Run the Proofreader API
 
-To generate text, by using the Proofreader API, after you have created the corresponding model session, use the `session.proofread()` method. This method returns a promise that resolves once the Proofreader API has finished generating corrected text.
+To generate revised text by using the Proofreader API, after you have created the corresponding model session, use the `session.proofread()` method. This method returns a promise that resolves after the Proofreader API has finished generating corrected text.
 
 ```javascript
 // Create a Proofreader session.
@@ -279,7 +279,7 @@ console.log(result);
 <!-- ------------------------------ -->
 #### Use the result of the Proofreader API
 
-The `session.proofread()` method returns a promise that resolves to an object with the following properties:
+The `session.proofread()` method returns a promise that resolves to an object that has the following properties:
 
 | **Property** | **Description** |
 | --- | --- |
