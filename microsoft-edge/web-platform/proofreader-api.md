@@ -286,7 +286,7 @@ The `session.proofread()` method returns a promise that resolves to an object th
 | `correctedInput` | The corrected text, as a string. |
 | `corrections` | An array of correction objects. |
 
-The properties of the correction objects are listed below:
+A correction object has the following properties:
 
 | **Property** | **Description** |
 | --- | --- |
