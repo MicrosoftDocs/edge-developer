@@ -68,7 +68,7 @@ The Proofreader API use a model that's provided by Microsoft Edge and built into
 
 * **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for the user and developer.
 
-* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require AI/ML expertise or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
