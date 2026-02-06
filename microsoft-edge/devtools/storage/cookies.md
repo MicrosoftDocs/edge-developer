@@ -134,15 +134,71 @@ To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](./
 
 Third-party cookies are those set by a site that's different from the current top-level page.  Third-party cookies have the `SameSite=None` attribute.
 
-DevTools lists such cookies in **Application** > **Storage** > **Cookies** and shows a (![Warning icon](./cookies-images/warning-icon.png)) icon next to them.  Hover over the icon to see a tooltip, and click the tooltip to go to the **Issues** panel for more information.
+DevTools lists such cookies in **Application** > **Storage** > **Cookies** and shows a (![Information icon](./cookies-images/information-icon.png)) icon next to them.  Hover over the icon to see a tooltip.<!-- todo: no such ui: , and click the tooltip to go to the **Issues** panel for more information. -->  Details are below.
 
-<!-- ![Cookies with the `SameSite=None` attribute in the Storage section](todo) -->
 
-You can also find third-party cookies in [Network > click request > Cookies]<!-- https://developer.chrome.com/docs/devtools/network/reference#cookies -->.
+To view blocked third-party cookies:
 
-<!-- ![Cookies with the SameSite=None attribute in the Network pane.](todo) -->
+1. Go to a webpage that uses third-party cookies, such as [Bing.com](https://www.bing.com), in a new window or tab.
 
-The **Network** panel [highlights cookies with issues](https://developer.chrome.com/docs/devtools/network/reference#show-blocked-cookies) and shows a warning (![Warning icon](./cookies-images/warning-icon.png)) icon next to cookies affected where [third-party cookies are not available](https://privacysandbox.google.com/cookies).
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+
+1. Temporarily turn on the **Block third-party cookies** toggle:
+
+   ![The "Block third-party cookies" toggle in Edge Settings](./cookies-images/block-third-party-cookies-toggle.png)
+
+   If you don't want to turn on the **Block third-party cookies** toggle for your main, working browser:
+
+   1. Download a preview channel of Microsoft Edge (Beta, Dev, or Canary) from [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
+   1. Turn on the **Block third-party cookies** toggle in that browser.
+
+   You can keep the Edge **Settings** tab open.
+
+1. Switch back to the webpage's tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+   **Application tool:**
+
+1. Select the **Application** tab.
+
+1. Expand the **Storage** major section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
+
+1. In the table of cookies, scroll to a row that has an **Information** icon (![Nnformation icon](./cookies-images/information-icon.png)).
+
+1. Hover over the **Information** icon (![Nnformation icon](./cookies-images/information-icon.png)).
+
+   A tooltip reads **This attempt to set a cookie via a Set-Cookie header was blocked due to user preferences.**
+
+   ![Cookies in Application tool that are blocked have an info icon](./cookies-images/cookie-blocked-application-tool.png)
+
+   **Network tool:**
+
+1. In DevTools, select the **Network** tool. 
+
+1. In the **Name** list, scroll up to the topmost entry for the domain, such as the topmost **Bing.com** entry, and then select it.
+
+1. In the sidebar, select the **Cookies** tab:
+
+   ![Blocked cookies in the Network tool](./cookies-images/network-tool-blocked-cookies.png)
+
+1. In the **Same site** column, look for **None**, which means a third-party cookie.
+
+   The **Network** tool highlights cookies that have issues, and shows an information (![Information icon](./cookies-images/information-icon.png)) icon next to cookies that are affected, where third-party cookies are not available.<!-- todo: confirm & clarify upstream sentence -->
+
+   **Cleanup:**
+
+1. Select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+
+1. Turn off the **Block third-party cookies** toggle.
+
+See also:
+* [View cookies](https://developer.chrome.com/docs/devtools/network/reference#cookies)<!-- todo: local url --> in _Network features reference_.
+* [Show only the requests with blocked response cookies](https://developer.chrome.com/docs/devtools/network/reference#show-blocked-cookies)<!-- todo: update url --> in _Network features reference_.
+* [Third-party cookies](https://privacysandbox.google.com/cookies)<!-- todo: update url --> at Privacy Sandbox.
 
 
 <!-- ====================================================================== -->
