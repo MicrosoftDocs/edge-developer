@@ -196,8 +196,8 @@ To view blocked third-party cookies:
 1. Turn off the **Block third-party cookies** toggle.
 
 See also:
-* [View cookies](https://developer.chrome.com/docs/devtools/network/reference#cookies)<!-- todo: local url --> in _Network features reference_.
-* [Show only the requests with blocked response cookies](https://developer.chrome.com/docs/devtools/network/reference#show-blocked-cookies)<!-- todo: update url --> in _Network features reference_.
+* [Display cookies](../network/reference.md#display-cookies) in _Network features reference_.
+* [Show only the requests with blocked response cookies](../network/reference.md#show-only-the-requests-with-blocked-response-cookies) in _Network features reference_.
 * [Third-party cookies](https://privacysandbox.google.com/cookies)<!-- todo: update url --> at Privacy Sandbox.
 
 
