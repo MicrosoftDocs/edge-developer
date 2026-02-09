@@ -1,8 +1,8 @@
-// This script compares the last 5 release notes with the features from chromestatus.com
+// This script compares the last few release notes files with the features from chromestatus.com
 // and uses GitHub Models (via the GITHUB_TOKEN) to analyze the differences.
-// This script can run as part of a GitHub Actions workflow or locally.
+// This script can be run as part of a GitHub Actions workflow, or can be run locally.
 //
-// For local use, create a .env file in the scripts folder with:
+// For local use, create a .env file in the scripts folder containing the following key/value pair:
 //   GITHUB_TOKEN=ghp_your_personal_access_token
 
 import 'dotenv/config';
@@ -14,7 +14,7 @@ import { glob } from "glob";
 // The release notes folder relative to this script.
 const RELEASE_NOTES_FOLDER = "../microsoft-edge/web-platform/release-notes";
 
-// The number of recent release notes to analyze.
+// The number of recent release notes files to analyze.
 const NUMBER_OF_RELEASE_NOTES = 3;
 
 // GitHub Models API endpoint (available in GitHub Actions with GITHUB_TOKEN).
@@ -37,7 +37,7 @@ async function fetchChromeStatusAPI(url) {
 // File names are like "145.md", so we extract "145".
 function getVersionFromFileName(fileName) {
   const baseName = path.basename(fileName, ".md");
-  // Filter out non-numeric file names like "index.md".
+  // Filter out non-numeric file names, such as "index.md".
   const version = parseInt(baseName, 10);
   return isNaN(version) ? null : version;
 }
@@ -45,13 +45,13 @@ function getVersionFromFileName(fileName) {
 // Get the last N release notes files by version number.
 async function getLastReleaseNotesFiles(count) {
   const scriptDir = path.dirname(new URL(import.meta.url).pathname);
-  // Fix Windows path (remove leading / if present on Windows paths like /C:/...)
+  // Remove the leading / if present on Windows paths, such as /C:/... .
   const fixedScriptDir = scriptDir.replace(/^\/([A-Za-z]:)/, "$1");
   const releaseNotesPath = path.resolve(fixedScriptDir, RELEASE_NOTES_FOLDER);
   
   const files = await glob("*.md", { cwd: releaseNotesPath });
   
-  // Extract versions and filter out non-version files (like index.md).
+  // Extract versions and filter out non-version files (such as index.md).
   const versionFiles = files
     .map(file => ({
       file,
@@ -60,7 +60,7 @@ async function getLastReleaseNotesFiles(count) {
     }))
     .filter(item => item.version !== null);
 
-  // Sort by version number descending and take the last N.
+  // Sort by version number descending and take the last N files.
   versionFiles.sort((a, b) => b.version - a.version);
   
   return versionFiles.slice(0, count);
@@ -81,8 +81,8 @@ async function fetchChromeStatusFeatures(version) {
       `https://chromestatus.com/api/v0/features?milestone=${version}`
     );
     
-    // The API returns features_by_type which can be an array or object depending on the response.
-    // Return the whole data object so we can inspect its structure.
+    // The API returns features_by_type, which can be an array or an object, depending on the response.
+    // Return the whole data object, so that we can inspect its structure.
     return data;
   } catch (error) {
     console.error(`Error fetching chromestatus.com data for version ${version}:`, error.message);
@@ -104,7 +104,7 @@ function formatChromeStatusFeatures(data) {
 
   const lines = [];
   
-  // Handle both array format and object format
+  // Handle both array format and object format.
   if (Array.isArray(featuresByType)) {
     for (const category of featuresByType) {
       if (category.features && category.features.length > 0) {
@@ -115,7 +115,7 @@ function formatChromeStatusFeatures(data) {
       }
     }
   } else if (typeof featuresByType === 'object') {
-    // If it's an object with category keys
+    // Do if it's an object that has category keys.
     for (const [categoryName, features] of Object.entries(featuresByType)) {
       if (Array.isArray(features) && features.length > 0) {
         lines.push(`\n## ${categoryName}:`);
@@ -156,10 +156,10 @@ async function compareWithAI(version, releaseNotesContent, chromeStatusData) {
 - chromestatus.com tracks Chromium features by milestone/version.
 - The Edge release notes document features for the same milestone as the Chromium version.
 - Some sections are **Edge-specific and won't appear in chromestatus.com**:
-  - "Edge DevTools" section
-  - "WebView2" section  
-  - "Origin trials in Microsoft Edge" section (Edge-only origin trials)
-  - Any features explicitly marked as Microsoft Edge-specific
+  - The "Edge DevTools" section.
+  - The "WebView2" section.
+  - The "Origin trials in Microsoft Edge" section (Edge-only origin trials).
+  - Any features that are explicitly marked as Microsoft Edge-specific.
 
 ## YOUR TASK
 Compare the Microsoft Edge ${version} release notes with chromestatus.com data for the same milestone.
@@ -169,13 +169,13 @@ Provide your analysis in these sections:
 
 ### 1. Missing from Release Notes (High Priority)
 List Chromium features from chromestatus.com that should probably be documented but are missing from the Edge Release Notes.
-- Focus on user-facing web platform features (CSS, Web APIs, JavaScript)
-- Ignore internal/infrastructure changes
-- Ignore origin trials
-- Note: Feature names and descriptions may differ (e.g., "scroll-driven" vs "scroll-triggered")
+- Focus on user-facing web platform features (such as CSS, Web APIs, or JavaScript).
+- Ignore internal/infrastructure changes.
+- Ignore origin trials.
+- Note: Feature names and descriptions may differ (e.g., "scroll-driven" vs. "scroll driven").
 
 ### 2. Missing from Release Notes (Low Priority)
-Features that might be intentionally omitted (minor changes, already deprecated, etc.)
+Features that might be intentionally omitted (such as minor changes, or already deprecated).
 
 ### 3. Edge-Specific Features (Expected)
 Features in release notes that correctly don't appear in chromestatus.com (Edge-only features).
@@ -184,8 +184,8 @@ Features in release notes that correctly don't appear in chromestatus.com (Edge-
 Any inconsistencies in descriptions, categorization, or feature scope.
 
 ### 5. Summary
-- **Completeness**: [Complete | Mostly Complete | Needs Review | Incomplete]
-- **Action items**: Brief list of recommended changes (if any)
+- **Completeness**: [Complete | Mostly Complete | Needs Review | Incomplete].
+- **Action items**: Brief list of recommended changes (if any).
 
 ---
 ## MICROSOFT EDGE ${version} RELEASE NOTES:
@@ -337,7 +337,7 @@ async function main() {
   
   const report = generateReport(results);
 
-  // Write the report to a file only when running locally (not in GitHub Actions).
+  // Write the report to a file only if running locally (not when running via GitHub Actions).
   if (!process.env.GITHUB_ACTIONS) {
     const reportPath = "release-notes-comparison-report.md";
     await fs.writeFile(reportPath, report);
