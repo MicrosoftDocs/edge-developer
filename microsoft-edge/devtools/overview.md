@@ -210,7 +210,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 The DevTools user interface has the following main areas:
 
-* The **Activity Bar** at the top, or on the left side, which contains icons used to access tools, settings, documentation, and more.
+* The **Activity Bar** at the top which contains icons used to access tools, settings, documentation, and more.
    * The current tool area, where the tool that's currently selected in the **Activity Bar** appears.
 
 * The **Quick View** toolbar, at the bottom, which contains tabs used to access tools.
@@ -247,42 +247,6 @@ By default, the **Quick View** toolbar contains the following tools:
 *  **Issues** tool (![Issues tool icon](./overview-images/issues.png)).
 
 In the **Activity Bar**, tool tabs either contain the tool name and icon, or just the tool icon, depending on the width of the DevTools window. If the window is wide enough, the tool name and icon appear. If the window is too narrow, only the tool icon appears and the tool name appears when you hover over the tool icon.
-
-If the **Activity Bar** is located on the left side of the DevTools window, vertically, only the tool icons appear, and the tool names appear when you hover over the tool icons.
-
-
-<!-- ------------------------------ -->
-#### Change the location of the Activity Bar
-
-By default, the **Activity Bar** is displayed horizontally at the top of the DevTools window. To maximize usable screen space in a variety of DevTools window size and locations, you can change the location of the **Activity Bar** to the left side of the DevTools window or to be automatically set depending on the DevTools window docking location.
-
-The **Activity Bar** can be in one of the following locations:
-
-* **Top** (default): The **Activity Bar** will always be horizontal.
-
-* **Left side**: The **Activity Bar** will always be vertical.
-
-* **Adapt to dock location**: The **Activity Bar** will be in a horizontal or vertical orientation depending on where DevTools is docked.
-
-  * When DevTools is docked to the left or right side of the browser window, the **Activity Bar** is vertical.
-
-  * When DevTools is docked to the bottom side of the browser window, or undocked in its own window, the **Activity Bar** is horizontal.
-
-When the **Activity Bar** is horizontal, tool names appear next to tool icons if there is enough space to display them.
-
-If there isn't enough space to display all tool names, the horizontal **Activity Bar** shows some tabs with tool icons and names, and some tabs with icons that have a tooltip instead:
-
-![The horizontal Activity Bar with limited width, so some tools don't have a label, but only an icon with tooltip](./overview-images/horizontal.png)
-
-To change the location of the **Activity Bar**, do either of the following:
-
-* Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select a location in **Activity Bar location**:
-
-  ![The 'Customize and control DevTools' menu of DevTools, showing the various Activity Bar location options](./overview-images/move-activity-bar-from-customize-menu.png)
-
-* In the **Activity Bar**, click **Move Activity Bar to left** (![The Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) or **Move Activity Bar to top** (![The Move Activity Bar to top icon](./overview-images/move-activity-bar-to-top-icon.png)).
-
-* Use the **Command Menu**.  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), enter the words **activity bar**, and then select **Move Activity Bar to left** or **Move Activity Bar to top**. See [Power tip: Use the Command Menu](#power-tip-use-the-command-menu).
 
 
 <!-- ------------------------------ -->
@@ -343,7 +307,6 @@ Present if Experiments > "Emulate Microsoft-recommended hardware and network per
    *  **Application** tool.
 
 * Icons:
-   *  **Move Activity Bar to left** (![Move Activity Bar to left icon](./overview-images/move-activity-bar-to-left-icon.png)) button.
    *  **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
    *  **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
    *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
@@ -533,7 +496,7 @@ The **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) b
 | --- | --- |
 | Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then select a tool. |
 | Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button, and then select a tool. |
-| Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar** or **Move to left Activity Bar**. |
+| Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar**. |
 | Move a tool from the **Activity Bar** to the **Quick View** toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
 | Open a tool in its default toolbar (**Activity Bar** or **Quick View**) | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select a **Show \<tool\>** command. |
 
