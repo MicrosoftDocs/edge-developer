@@ -27,6 +27,9 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new **Activity Bar** allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
 
+> [!NOTE]
+> The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
+
 To give this new UI a try in Microsoft Edge version 96, select **Settings** (![the Settings gear icon in DevTools](./devtools-images/settings-gear-icon-light-mode.png)) > **Experiments** > **Focus Mode**.
 
 Starting with Microsoft Edge version 96, the experiment's checkbox is labeled **Focus Mode** rather than **Focus Mode and DevTools Tooltips**.

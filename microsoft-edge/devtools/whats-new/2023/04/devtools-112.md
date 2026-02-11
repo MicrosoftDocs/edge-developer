@@ -145,6 +145,10 @@ $ node --inspect app.js
 <!-- ------------------------------ -->
 #### With the vertical Activity Bar, only one label is shown for each tool icon when hovering
 
+> [!NOTE]
+> The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
+
+
 In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a tool name label is displayed when you hover over an icon or select an icon with the keyboard.  These labels help you learn the icon for each tool in the **Activity Bar**.
 
 Previously, selecting an icon with the keyboard or hovering over an icon with the mouse displayed two labels simultaneously.  This issue has now been fixed; only one label is displayed:

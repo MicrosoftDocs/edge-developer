@@ -78,6 +78,8 @@ In Microsoft Edge 105, several improvements to location controls have been made,
 The **Customize and control DevTools** (**...**) menu now directly contains buttons to set the docking location of DevTools, instead of requiring opening a submenu.  The **Dock location** icons now have greater contrast, and the currently selected **Dock location** button is now highlighted.
 
 This menu also now directly contains buttons to set and indicate where the **Activity Bar** is displayed, instead of using a submenu.
+> [!NOTE]
+> The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
 
 Selecting the docking location in Focus Mode, in previous versions of Microsoft Edge:
 
