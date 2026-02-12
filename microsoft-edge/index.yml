@@ -229,6 +229,10 @@ conceptualContent:
               url: ./web-platform/translator-api.md
               itemType: whats-new
 
+            - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+              url: ./web-platform/proofreader-api.md
+              itemType: whats-new
+
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
         - title: Microsoft Edge DevTools
@@ -351,6 +355,10 @@ conceptualContent:
               url: ./webview2/index.md
               itemType: overview
 
+            - text: Release notes for the WebView2 SDK
+              url: ./webview2/release-notes/index.md
+              itemType: whats-new
+
             - text: Differences between Microsoft Edge and WebView2
               url: ./webview2/concepts/browser-features.md
               itemType: concept
@@ -366,10 +374,6 @@ conceptualContent:
             - text: WebView2 sample apps
               url: ./webview2/samples/index.md
               itemType: download
-
-            - text: Release notes for the WebView2 SDK
-              url: ./webview2/release-notes/index.md
-              itemType: whats-new
 
             - text: WebView2 API Reference
               url: ./webview2/webview2-api-reference.md
