@@ -6,21 +6,21 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/17/2023
+ms.date: 02/11/2026
 ---
 # Overview of DevTools
 
 <!-- icon clipboard below -->
 
-<!-- ====================================================================== -->
 <!-- keep sync'd:
 * [Overview of DevTools](overview.md) - intro section
 * [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
 -->
 
-The Microsoft Edge browser comes with built-in web development tools, called Microsoft Edge DevTools.  DevTools is a set of web development tools that appears next to a rendered webpage in the browser.  DevTools provides a powerful way to inspect and debug webpages and web apps.  You can even edit source files and create website projects, all within the DevTools environment.
+The Microsoft Edge browser comes with built-in web development tools, called Microsoft Edge DevTools.  DevTools is a set of web development tools that appears next to a rendered webpage in the browser.
 
 **Detailed contents:**
+* [Introduction](#introduction)
    * [Video: Understand the DevTools user interface](#video-understand-the-devtools-user-interface)
 * [Open DevTools](#open-devtools)
    * [Open DevTools by right-clicking an item in a webpage](#open-devtools-by-right-clicking-an-item-in-a-webpage)
@@ -32,7 +32,6 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
 * [Change where DevTools is docked in the browser](#change-where-devtools-is-docked-in-the-browser)
 * [Zoom DevTools in or out](#zoom-devtools-in-or-out)
 * [Overview of the user interface](#overview-of-the-user-interface)
-   * [Change the location of the Activity Bar](#change-the-location-of-the-activity-bar)
    * [Change the location of Quick View](#change-the-location-of-quick-view)
 * [Features of the Activity Bar](#features-of-the-activity-bar)
    * [Tabbed tool panels containing tabs and pages](#tabbed-tool-panels-containing-tabs-and-pages)
@@ -66,6 +65,8 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
 <!-- ====================================================================== -->
 ## Introduction
 
+DevTools provides a powerful way to inspect and debug webpages and web apps.  You can even edit source files and create website projects, all within the DevTools environment.
+
 With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
@@ -78,7 +79,7 @@ With DevTools, you can do the following:
 
 *  Use a development environment to sync changes in DevTools with the file system and from the web.
 
-<!-- /keep sync'd -->
+<!-- /end of "keep sync'd", at top of file -->
 
 
 <!-- ------------------------------ -->
