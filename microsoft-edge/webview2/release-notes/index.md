@@ -26,80 +26,32 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 <!-- Feb 2026 Release SDK (145) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime ###
+## Release SDK 1.0.3800.47, for Runtime 145
 
-Release Date: Monthname nn, 2025
+Release Date: February 10, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add righmost part of url:
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
--->
+[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
 <!-- end of Feb 2026 Release SDK (145) -->
 
