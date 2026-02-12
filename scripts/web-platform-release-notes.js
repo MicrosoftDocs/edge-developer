@@ -1,7 +1,7 @@
 // This script generates the web platform release notes draft for the next Microsoft Edge Beta version.
 // This script runs daily.
 
-import github from '@actions/github';
+import * as github from '@actions/github';
 import Eleventy from "@11ty/eleventy";
 import fs from "fs/promises";
 import playwright from "playwright";
