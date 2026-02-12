@@ -1,7 +1,7 @@
 import { glob } from 'glob';
 import fs from 'fs/promises';
 import path from 'path';
-import github from '@actions/github';
+import * as github from '@actions/github';
 
 // The GitHub repository information, to create issues if needed.
 const REPO_OWNER = "MicrosoftDocs";
