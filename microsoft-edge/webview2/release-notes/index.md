@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/27/2026
+ms.date: 02/12/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -28,7 +28,7 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3800.47, for Runtime 145
 
-Release Date: February 10, 2026
+Release Date: February 12, 2026
 
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
