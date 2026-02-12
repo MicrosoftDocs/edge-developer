@@ -216,8 +216,7 @@ If your code determines that an API is unavailable in the client's installed Web
 * [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.<!-- bucket 12 -->
 * [Release notes for the WebView2 SDK](../release-notes/index.md)<!-- bucket 12 -->
 * [WebView2 API Reference](../webview2-api-reference.md)<!-- bucket 13 -->
-<!--
-* [1.0.622.22](../release-notes/archive.md#1062222) in _Archived release notes for the WebView2 SDK_.  bucket 12 -->
+* [1.0.622.22](../release-notes/archive.md#1062222) in _Archived release notes for the WebView2 SDK_.<!-- bucket 12 -->
 
 Microsoft Edge Enterprise documentation:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- not in article body -->
