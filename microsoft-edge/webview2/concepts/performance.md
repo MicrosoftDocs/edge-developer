@@ -1,6 +1,6 @@
 ---
 title: Performance best practices for WebView2 apps
-description: How to increase the performance of your WebView2 application.
+description: How to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
