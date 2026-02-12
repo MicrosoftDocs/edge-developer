@@ -1,21 +1,28 @@
 // This script generates the web platform release notes draft for the next Microsoft Edge Beta version.
 // This script runs daily.
 
-import github from '@actions/github';
+import * as github from '@actions/github';
 import Eleventy from "@11ty/eleventy";
 import fs from "fs/promises";
 import playwright from "playwright";
 import { execSync } from 'child_process';
 
+// If the number of days before the next Beta is lower or equal to DAYS_NUMBER_BEFORE_RELNOTES_NOTICE
+// then we start generating the Beta release notes.
+// This gives us time to edit, review, and publish the Beta release notes before Beta comes out.
+// This number used to be 15, which was too much because features were still moving in and out of
+// the next Beta milestone on chromestatus.com.
+// The number is now set to 7 days, which should reduce the number of last-minute changes we need to do.
+const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 7;
+
 // Where to find Edge-only origin trials info.
 const EDGE_OT_ROOT = "https://developer.microsoft.com/en-us";
 const EDGE_OT_PAGE = `${EDGE_OT_ROOT}/microsoft-edge/origin-trials/trials`;
-// If Beta becomes stable within the next N coming days, generate the release notes for Canary.
-// This way, the release notes are ready for when Canary becomes Beta.
-const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 15;
+
 // The prefix to use when creating a new git branch for the release notes draft.
 const BRANCH_NAME_PREFIX = "web-platform-release-notes-";
 
+// Call a chromestatus.com API endpoint and return the parsed JSON data.
 async function fetchChromeStatusAPI(url) {
   const response = await fetch(url);
   let text = await response.text();
@@ -24,6 +31,7 @@ async function fetchChromeStatusAPI(url) {
   return data;
 }
 
+// Format a date string as "Month Day, Year", e.g., "January 15, 2024".
 function longDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleString("en-US", {
@@ -33,6 +41,7 @@ function longDate(dateString) {
   });
 }
 
+// Execute a shell command and return the stdout as a string.
 async function execute(cmd) {
   try {
     const stdout = await execSync(cmd);
@@ -44,7 +53,8 @@ async function execute(cmd) {
   }
 }
 
-async function releaseNotesAlreadyExists(version) {
+// Check if the release notes for the given version already exist in the main branch.
+async function doesReleaseNotesAlreadyExist(version) {
   const response = await fetch(`https://raw.githubusercontent.com/MicrosoftDocs/edge-developer/refs/heads/main/microsoft-edge/web-platform/release-notes/${version}.md`);
 
   // Github.com normally responds with 404 if the file doesn't exist. So this should catch it.
@@ -57,7 +67,8 @@ async function releaseNotesAlreadyExists(version) {
   return text.includes(`Microsoft Edge ${version} web platform release notes`);
 }
 
-async function releaseNotesDraftAlreadyExists(version, branchName) {
+// Check if a draft release notes for the given version already exist in the given branch.
+async function doesReleaseNotesDraftExist(version, branchName) {
   const response = await fetch(`https://raw.githubusercontent.com/MicrosoftDocs/edge-developer/refs/heads/${branchName}/microsoft-edge/web-platform/release-notes/${version}.md`);
 
   // Github.com normally responds with 404 if the file doesn't exist. So this should catch it.
@@ -70,10 +81,7 @@ async function releaseNotesDraftAlreadyExists(version, branchName) {
   return text.includes(`Microsoft Edge ${version} web platform release notes`);
 }
 
-function getReleaseNoteMDFilePath(version, branchName) {
-  return `https://github.com/MicrosoftDocs/edge-developer/blob/${branchName}/microsoft-edge/web-platform/release-notes/${version}.md`;
-}
-
+// Get the list of currently active Edge-only origin trials by scraping the Edge OT page.
 async function getActiveEdgeOTs() {
   const scrapingBrowser = await playwright.chromium.launch({ headless: true });
   const context = await scrapingBrowser.newContext();
@@ -158,6 +166,7 @@ async function getActiveEdgeOTs() {
   return ots;
 }
 
+// Main entry point to this script.
 async function main() {
   // --------------------------------------------------
   // 1. Check which is the next release (first date that's in the future compared to today).
@@ -212,13 +221,13 @@ async function main() {
   // 2. Check if there isn't already a published or draft release notes for the next beta version.
   // --------------------------------------------------
 
-  const alreadyExists = await releaseNotesAlreadyExists(nextBetaVersion);
+  const alreadyExists = await doesReleaseNotesAlreadyExist(nextBetaVersion);
   if (alreadyExists) {
     console.error(`Release notes for the next beta version ${nextBetaVersion} already exist.`);
     process.exit(0);
   }
 
-  const draftAlreadyExists = await releaseNotesDraftAlreadyExists(nextBetaVersion, branchName);
+  const draftAlreadyExists = await doesReleaseNotesDraftExist(nextBetaVersion, branchName);
   if (draftAlreadyExists) {
     console.error(`Draft release notes for the next beta version ${nextBetaVersion} already exist on the ${branchName} branch.`);
     process.exit(0);
@@ -363,8 +372,12 @@ async function main() {
   // --------------------------------------------------
 
   console.log("Opening an issue to notify the team about the new release notes draft.");
+  
+  const fileSourceLink = `https://github.com/MicrosoftDocs/edge-developer/blob/${branchName}/microsoft-edge/web-platform/release-notes/${nextBetaVersion}.md`;
+  
   const title = `Microsoft Edge Beta ${nextBetaVersion} web platform release notes ready for review`;
-  const body = `The release notes draft for the next Microsoft Edge beta version ${nextBetaVersion} has been generated in [${nextBetaVersion}.md](${getReleaseNoteMDFilePath(nextBetaVersion, branchName)}) on the ${branchName} branch.\n\nPlease [create a pull request](https://github.com/MicrosoftDocs/edge-developer/compare/main...${branchName}), update the content as needed, and close this issue.`;
+  let body = `The release notes draft for the next Microsoft Edge beta version ${nextBetaVersion} has been generated in [${nextBetaVersion}.md](${fileSourceLink}) on the ${branchName} branch.\n\n`;
+  body += `Please [create a pull request](https://github.com/MicrosoftDocs/edge-developer/compare/main...${branchName}), update the content as needed, and then close this issue.`;
 
   const octokit = github.getOctokit(process.env.token);
   await octokit.rest.issues.create({
