@@ -106,7 +106,7 @@ Under macOS, if you want to test with an assistive technology only available for
 
 [Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) from the GooglePlay store.
 
-> [!NOTE]
+> [!NOTE]<!-- todo: reformat to avoid Alert box, per corp Markdown guide https://learn.microsoft.com/en-us/help/platform/markdown-reference?toc=%2Fhelp%2Fget-started%2Ftoc.json&bc=%2Fhelp%2Fget-started%2Fbreadcrumb%2Ftoc.json#alerts-note-tip-important-caution-warning -->
 > The iOS Simulator doesn't currently include VoiceOver.
 
 

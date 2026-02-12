@@ -24,8 +24,7 @@ todo video
 <!-- ====================================================================== -->
 ## New "Move Activity Bar" button directly on the Activity Bar
 
-> [!NOTE]
-> The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
+**Update:** The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
 
 In Focus Mode, you now can quickly move the **Activity Bar** with a single mouse-click.  In the upper left of DevTools, next to the **Inspect** button and **Device Emulation** button, there's now a **Move Activity Bar to left** or **Move Activity Bar to top** button:
 

@@ -20,6 +20,52 @@ ms.date: 07/17/2023
 
 The Microsoft Edge browser comes with built-in web development tools, called Microsoft Edge DevTools.  DevTools is a set of web development tools that appears next to a rendered webpage in the browser.  DevTools provides a powerful way to inspect and debug webpages and web apps.  You can even edit source files and create website projects, all within the DevTools environment.
 
+**Detailed contents:**
+   * [Video: Understand the DevTools user interface](#video-understand-the-devtools-user-interface)
+* [Open DevTools](#open-devtools)
+   * [Open DevTools by right-clicking an item in a webpage](#open-devtools-by-right-clicking-an-item-in-a-webpage)
+   * [Open DevTools by using the Microsoft Edge toolbar](#open-devtools-by-using-the-microsoft-edge-toolbar)
+   * [Have DevTools automatically open when you open a new tab](#have-devtools-automatically-open-when-you-open-a-new-tab)
+      * [Disabling startup boost](#disabling-startup-boost)
+   * [Turning off the F12 keyboard shortcut](#turning-off-the-f12-keyboard-shortcut)
+* [Keyboard support](#keyboard-support)
+* [Change where DevTools is docked in the browser](#change-where-devtools-is-docked-in-the-browser)
+* [Zoom DevTools in or out](#zoom-devtools-in-or-out)
+* [Overview of the user interface](#overview-of-the-user-interface)
+   * [Change the location of the Activity Bar](#change-the-location-of-the-activity-bar)
+   * [Change the location of Quick View](#change-the-location-of-quick-view)
+* [Features of the Activity Bar](#features-of-the-activity-bar)
+   * [Tabbed tool panels containing tabs and pages](#tabbed-tool-panels-containing-tabs-and-pages)
+   * [The Activity Bar and the Quick View toolbar](#the-activity-bar-and-the-quick-view-toolbar)
+   * [Pin and rearrange tools in the Activity Bar](#pin-and-rearrange-tools-in-the-activity-bar)
+   * [Inspect tool](#inspect-tool)
+   * [Device Emulation](#device-emulation)
+   * [Welcome tool](#welcome-tool)
+   * [Elements tool](#elements-tool)
+   * [Console tool](#console-tool)
+   * [Sources tool](#sources-tool)
+   * [Network tool](#network-tool)
+   * [Performance tool](#performance-tool)
+   * [Memory tool](#memory-tool)
+   * [Application tool](#application-tool)
+   * [More Tools button](#more-tools-button)
+   * [Customize and control DevTools menu](#customize-and-control-devtools-menu)
+   * [Help button](#help-button)
+   * [Close DevTools button](#close-devtools-button)
+* [Features of the Quick View toolbar](#features-of-the-quick-view-toolbar)
+* [Overview of all tools](#overview-of-all-tools)
+* [Tool, tab, or panel](#tool-tab-or-panel)
+* [About Activity Bar and Quick View tools](#about-activity-bar-and-quick-view-tools)
+   * [See also](#see-also)
+* [Power tip: Use the Command Menu](#power-tip-use-the-command-menu)
+* [Customizing DevTools](#customizing-devtools)
+* [Trying experimental features](#trying-experimental-features)
+* [See also](#see-also-1)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
 With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
