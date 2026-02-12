@@ -79,7 +79,7 @@ The **Customize and control DevTools** (**...**) menu now directly contains butt
 
 This menu also now directly contains buttons to set and indicate where the **Activity Bar** is displayed, instead of using a submenu.
 
-**Update:** The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
 
 Selecting the docking location in Focus Mode, in previous versions of Microsoft Edge:
 

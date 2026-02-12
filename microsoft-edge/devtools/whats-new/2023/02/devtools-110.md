@@ -51,7 +51,7 @@ The right-click menu command for moving a tool between the **Quick View** panel 
 * **Move to top Activity Bar**
 * **Move to left Activity Bar**
 
-**Update:** The vertical Activity Bar is no longer supported in Microsoft Edge 144 and future versions.
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
 
 ![Right-click menu showing 'Move to bottom Quick View'](./devtools-110-images/move-to-bottom-quick-view.png)
 
