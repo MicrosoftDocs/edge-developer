@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 11/10/2025
+ms.date: 02/02/2026
 ---
 # WebView2 browser flags
 <!-- lexicon:
@@ -143,6 +143,7 @@ If the flag takes a value other than true|false, give an example. -->
 | `msSingleSignOnOSForPrimaryAccountIsShared` | Allows implicit sign-in to Microsoft webpages using any account, by using the information from the primary OS account. |
 | `msSmartScreenProtection` | Makes SmartScreen protection available. |
 | `msUseSpellCheckCorrectionsCard` | Causes a corrections card UI to be shown when the user clicks a misspelled word. |
+| `msWebViewAllowLocalNetworkAccessChecks` | Enables Local Network Access security checks that restrict web content from public origins from accessing local and loopback network resources unless explicitly permitted.  Disabled by default; must be enabled by the app to configure Local Network Access behavior in WebView2. <br/>Note: This feature flag will be applicable until the APIs are fully onboarded and their adoption reaches a stable state, after which this flag will be deprecated. |
 | `msWebView2BrowserHitTransparent` | Causes mouse and keyboard events to pass through the WebView2 control to the underlying app, to allow the app to handle these events instead of the WebView2 control handling the events.  When this flag is not enabled, the WebView2 control handles mouse and keyboard events; the events don't pass through to the underlying app.  This flag allows testing how the app behaves when the WebView2 control doesn't intercept input events, for scenarios where the app needs to handle input events directly.  This flag doesn't take a value.  This flag might cause the app to crash or freeze.|
 | `msWebView2CancelInitialNavigation` | Cancels the initial navigation in WebView2, to improve startup performance. |
 | `msWebView2CodeCache` | Makes JavaScript resources that are loaded in a WebView2 app via `SetVirtualHostNameToFolderMapping` or `add_WebResourceRequested` eligible for bytecode caching, which should speed up the third and subsequent loads.  This feature also enables bytecode caching for any other components that use the DevTools network interception mechanism to provide custom responses; see [Custom management of network requests](..\how-to\webresourcerequested.md). |
