@@ -52,6 +52,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
 * Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+* Fixed WebView2 transparency.
 
 <!-- end of Feb 2026 Release SDK (145) -->
 
