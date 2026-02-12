@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/27/2026
+ms.date: 02/12/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -26,43 +26,45 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 <!-- Feb 2026 Release SDK (146) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.####-prerelease, for Runtime ###
+## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
 
-Release Date: Monthname nn, 2025
+Release Date: February 12, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add righmost part of url:
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
--->
+[NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 1 (Experimental in Prerelease)
-<!-- 
-#### Experimental APIs (Phase 1)
--->
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Whether WebView Script Apis are enabled for service workers<!-- todo: finalize wording -->
 
-description
+Whether WebView Script Apis are enabled for service workers.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+todo: pending links
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property]
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property]
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
+
 ##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 ---
 
@@ -71,46 +73,26 @@ description
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
 
+* Fix a white flash for Windows Search on becoming visible after hiding.
 
-<!-- ---------- -->
-###### SDK-only
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
 
-* Fixed behavior.  ([Issue #]())
+* Fixed WebView2 transparency.
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
 <!-- end of Feb 2026 Prerelease SDK (146) -->
 
