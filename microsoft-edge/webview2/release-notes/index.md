@@ -42,22 +42,18 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### Whether WebView Script Apis are enabled for service workers<!-- todo: finalize wording -->
+###### Control whether WebView Script APIs are enabled for service workers
 
-Whether WebView Script Apis are enabled for service workers.
+Use the `AreWebViewScriptApisEnabledForServiceWorkers` property on `CoreWebView2Profile` to control whether WebView Script APIs are enabled for service workers.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-todo: pending links
-
 * `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property]
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property]
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
    * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
 
 ##### [Win32/C++](#tab/win32cpp)
