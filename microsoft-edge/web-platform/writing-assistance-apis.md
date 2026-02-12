@@ -10,7 +10,7 @@ ms.date: 05/19/2025
 # Summarize, write, and rewrite text with the Writing Assistance APIs
 <!-- https://aka.ms/edge-writing-assistance-api-docs -->
 
-The Writing Assistance APIs are experimental web APIs that allow you to summarize, write, and rewrite text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code
+The Writing Assistance APIs are experimental web APIs that allow you to summarize, write, and rewrite text by using a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.
 
 For introductory information about the Summarizer API, Writer API, and Rewriter API, see [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis).
 
@@ -81,7 +81,7 @@ The Writing Assistance APIs use a model that's provided by Microsoft Edge and bu
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Writing Assistance APIs uses the Phi-4-mini model — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
@@ -93,9 +93,9 @@ Like other language models, the Phi family of models can potentially behave in w
 <!-- ------------------------------ -->
 #### Hardware requirements
 
-The Prompt API developer preview is intended to work on devices with hardware capabilities that produce SLM outputs with predictable quality and latency.
+The Writing Assistance APIs developer preview is intended to work on devices with hardware capabilities that produce SLM outputs with predictable quality and latency.
 
-The Prompt API is currently limited to:
+The Writing Assistance APIs are currently limited to:
 
 * **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
 
@@ -537,7 +537,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new task-specific APIs, such as for proofreading or translation, would be useful.
+We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new task-specific APIs, such as for translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031).
 
@@ -550,6 +550,9 @@ You can also contribute to the discussion about the design of the Writing Assist
 ## See also
 
 * [Writing Assistance APIs Explainer](https://github.com/webmachinelearning/writing-assistance-apis), on the Web Machine Learning GitHub repo.
-* [Prompt a built-in language model with the Prompt API](./prompt-api.md).
-* [Translate text with the Translator API](./translator-api.md).
-* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
+* [Prompt a built-in language model with the Prompt API](./prompt-api.md)
+* [Correct grammar, spelling, and punctuation errors in text with the Proofreader API](./proofreader-api.md)
+* [Translate text with the Translator API](./translator-api.md)
+
+GitHub:
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo
