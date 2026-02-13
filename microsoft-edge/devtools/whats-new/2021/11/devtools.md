@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 96)
-description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
+description: Focus Mode.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -26,6 +26,8 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- Subtitle: A more minimal, modern UI is coming to Microsoft Edge DevTools. Enable the "Focus Mode" experiment to preview new UI features such a more compact toolbar that keeps DevTools uncluttered and better adapts to small window sizes. -->
 
 The Microsoft Edge DevTools team is experimenting with a new DevTools UI: **Focus Mode**.  Focus Mode reduces distractions and clutter with a more modern and simplified layout.  The new **Activity Bar** allows you to pin your favorite tools in a horizontal or vertical toolbar to use screen space more efficiently.
+
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
 
 To give this new UI a try in Microsoft Edge version 96, select **Settings** (![the Settings gear icon in DevTools](./devtools-images/settings-gear-icon-light-mode.png)) > **Experiments** > **Focus Mode**.
 

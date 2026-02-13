@@ -108,6 +108,7 @@ Under macOS, if you want to test with an assistive technology only available for
 
 > [!NOTE]
 > The iOS Simulator doesn't currently include VoiceOver.
+<!-- todo: reformat to avoid Alert box, per corp Markdown guide https://learn.microsoft.com/en-us/help/platform/markdown-reference?toc=%2Fhelp%2Fget-started%2Ftoc.json&bc=%2Fhelp%2Fget-started%2Fbreadcrumb%2Ftoc.json#alerts-note-tip-important-caution-warning -->
 
 
 <!-- ------------------------------ -->
