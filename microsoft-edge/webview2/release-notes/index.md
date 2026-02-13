@@ -44,21 +44,17 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents web pages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
 
-LNA is currently disabled for WebView2 apps that have `msWebViewAllowLocalNetworkAccessChecks`.  For such apps, no action is required at this time.
+LNA is currently disabled for WebView2 apps that have the `msWebViewAllowLocalNetworkAccessChecks` flag.  For such apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
 
 We plan to add WebView2 permission APIs (`SetPermissionState`<!-- todo: what type? what member? -->, `add_PermissionRequested`<!-- todo: what type? what member? -->), to give apps explicit control over LNA, after the upstream, Chromium code base stabilizes.
 
-
-To test your app with the LNA feature:
-
-You can proactively test the Local Network Access (LNA) feature in your WebView2 app, by launching the app with the following flag:
+You can proactively test the Local Network Access (LNA) feature in your WebView2 app.  To test your app with the LNA feature, launch your WebView2 app with the following flag:
 
 ```
 --enable-features=LocalNetworkAccessChecks,msWebViewAllowLocalNetworkAccessChecks
 ```
 
 By testing your app when launched with this flag, you can then identify any workflows that might be affected by the LNA feature.
-
 
 After the LNA feature stabilizes, we'll share an updated timeline for enabling the LNA feature.  For details, see [[Breaking Change] Local Network Access (LNA) in WebView2 - Rollout Plan](https://github.com/MicrosoftEdge/WebView2Announcements/issues/126).
 
