@@ -2168,22 +2168,60 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 ---
 
 
-<!-- ====================================================================== -->
+<!-- todo: un-comment & update when reaches Stable in Release
+<!-- ====================================================================== --
 ## Service workers
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2ServiceWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker)
+
+* [CoreWebView2ServiceWorkerActivatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs)
+
 * [CoreWebView2ServiceWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager)
+
+* [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs)
+
+* [CoreWebView2ServiceWorkerRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2ServiceWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker)
+
+* [CoreWebView2ServiceWorkerActivatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs)
+
 * [CoreWebView2ServiceWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager)
+
+* [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs)
+
+* [CoreWebView2ServiceWorkerRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration)
 
 ##### [Win32/C++](#tab/win32cpp)
 
+* [ICoreWebView2ExperimentalServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker)
+
+* [ICoreWebView2ExperimentalServiceWorkerActivatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventargs)
+
+   * [ICoreWebView2ExperimentalServiceWorkerActivatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventhandler)
+
+   * [ICoreWebView2ExperimentalServiceWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerdestroyingeventhandler)
+
 * [ICoreWebView2ExperimentalServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager)
 
+* [interface ICoreWebView2ExperimentalServiceWorkerRegisteredEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventargs)
+
+* [ICoreWebView2ExperimentalServiceWorkerRegisteredEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventhandler)
+
+* [ICoreWebView2ExperimentalServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration)
+
+   * [ICoreWebView2ExperimentalServiceWorkerRegistrationCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationcollectionview)
+
+   * [ICoreWebView2ExperimentalServiceWorkerRegistrationUnregisteringEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationunregisteringeventhandler)
+
+* [ICoreWebView2ExperimentalServiceWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerwebmessagereceivedeventhandler)
+
 ---
+-->
 
 
 <!-- ====================================================================== -->
