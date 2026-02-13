@@ -48,7 +48,17 @@ LNA is currently disabled for WebView2 apps that have `msWebViewAllowLocalNetwor
 
 We plan to add WebView2 permission APIs (`SetPermissionState`<!-- todo: what type? what member? -->, `add_PermissionRequested`<!-- todo: what type? what member? -->), to give apps explicit control over LNA, after the upstream, Chromium code base stabilizes.
 
-You can proactively test the Local Network Access (LNA) feature in your WebView2 app, by launching the app with `--enable-features=LocalNetworkAccessChecks,msWebViewAllowLocalNetworkAccessChecks`.  You can then identify any workflows that might be affected by the LNA feature.
+
+To test your app with the LNA feature:
+
+You can proactively test the Local Network Access (LNA) feature in your WebView2 app, by launching the app with the following flag:
+
+```
+--enable-features=LocalNetworkAccessChecks,msWebViewAllowLocalNetworkAccessChecks
+```
+
+By testing your app when launched with this flag, you can then identify any workflows that might be affected by the LNA feature.
+
 
 After the LNA feature stabilizes, we'll share an updated timeline for enabling the LNA feature.  For details, see [[Breaking Change] Local Network Access (LNA) in WebView2 - Rollout Plan](https://github.com/MicrosoftEdge/WebView2Announcements/issues/126).
 
