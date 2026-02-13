@@ -2181,7 +2181,7 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager)
+* [ICoreWebView2ExperimentalServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager)
 
 ---
 

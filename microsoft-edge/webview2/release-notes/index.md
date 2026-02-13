@@ -86,8 +86,8 @@ Currently, the `chrome` and `chrome.webview` objects are available to service wo
 ##### [Win32/C++](#tab/win32cpp)
 
 * `AreWebViewScriptApisEnabledForServiceWorkers`
-* `ICoreWebView2ServiceWorkerManager`
-   * [ICoreWebView2ServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
+* `ICoreWebView2ExperimentalServiceWorkerManager`
+   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
 * `chrome`
 * `chrome.webview`
    * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
