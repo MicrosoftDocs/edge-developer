@@ -64,8 +64,7 @@ when adding an h4 heading, add nav link below the h2
       * [Custom crash reporting](#custom-crash-reporting)
    * [Browser extensions](#browser-extensions)
 * [Process management](#process-management)
-   * [Frame process info](#frame-process-info)
-   * [Service workers](#service-workers)
+   * [Frame process info](#frame-process-info)<!-- * [Service workers](#service-workers) -->
 * [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content)
    * [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
    * [Navigation history](#navigation-history)
