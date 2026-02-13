@@ -10,8 +10,6 @@ ms.date: 08/11/2025
 ---
 # Overview of WebView2 APIs
 
-<!-- todo: add `ServiceWorker` or "service worker"? -->
-
 Embedding the WebView2 control in your app gives your app access to various browser features, via methods and properties that are provided through the WebView2 classes or interfaces.
 
 WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
@@ -67,6 +65,7 @@ when adding an h4 heading, add nav link below the h2
    * [Browser extensions](#browser-extensions)
 * [Process management](#process-management)
    * [Frame process info](#frame-process-info)
+   * [Service workers](#service-workers)
 * [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content)
    * [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
    * [Navigation history](#navigation-history)
@@ -2165,6 +2164,24 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
    * [ICoreWebView2FrameInfo2::get_ParentFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo2#get_parentframeinfo)
 
 * [COREWEBVIEW2_FRAME_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_frame_kind)
+
+---
+
+
+<!-- ====================================================================== -->
+## Service workers
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2ServiceWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2ServiceWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager)
 
 ---
 
