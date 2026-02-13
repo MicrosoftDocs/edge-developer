@@ -40,13 +40,117 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ---------- -->
+###### Enable WebView2-specific Javascript APIs for service workers
+
+<!-- todo: say "flag"? -->
+
+WebView2 is introducing `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value -->, a new setting<!-- todo: flag|property --> that provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
+
+This setting<!-- todo: flag|property --> is disabled by default for WebView2 applications.
+
+Apps that don't explicitly enable this setting<!-- todo: flag|property --> won't have access to WebView2‑specific JavaScript APIs in service worker scripts.
+
+As a result, service worker–based `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication with the WebView2 host application will not function unless the setting<!-- todo: flag|property --> is enabled.
+
+Going forward, WebView2 will rely on `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.
+
+This ensures predictable, secure, and deterministic behavior.
+
+You can proactively validate your WebView2 app's behavior by enabling service worker JavaScript API exposure in your WebView2 app.
+To do so, configure your app to enable the following setting<!-- todo: flag|property -->:
+ 
+```
+AreWebViewScriptApisEnabledForServiceWorkers = true
+```
+
+By testing your WebView2 app with this setting<!-- todo: flag|property --> enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication between service workers and the host application.
+
+Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.
+
+However, starting with the next release, `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> will be the sole mechanism that determines whether these objects are exposed to service worker scripts.
+
+Please try testing this<!-- todo: feature|flag|property|setting|behavior --> before the next release, and report any issues you encounter at the [MicrosoftEdge / WebView2Feedback](https://github.com/MicrosoftEdge/WebView2Feedback) repo.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: all tabs: link -->
+
+* `AreWebViewScriptApisEnabledForServiceWorkers`<!-- flag|property -->
+* `CoreWebView2ServiceWorkerManager` Class:
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
+* `chrome`
+* `chrome.webview`
+   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `AreWebViewScriptApisEnabledForServiceWorkers`
+* `CoreWebView2ServiceWorkerManager` Class:
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
+* `chrome`
+* `chrome.webview`
+   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `AreWebViewScriptApisEnabledForServiceWorkers`
+* `ICoreWebView2ServiceWorkerManager`
+   * [ICoreWebView2ServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
+* `chrome`
+* `chrome.webview`
+   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+---
+
+
+<!-- ---------- -->
 ###### Local Network Access (LNA) in WebView2
 
 The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents web pages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
 
-LNA is currently disabled for WebView2 apps that have the `msWebViewAllowLocalNetworkAccessChecks` flag.  For such apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
+LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
 
-We plan to add WebView2 permission APIs (`SetPermissionState`<!-- todo: what type? what member? -->, `add_PermissionRequested`<!-- todo: what type? what member? -->), to give apps explicit control over LNA, after the upstream, Chromium code base stabilizes.
+After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: all tabs: un-comment enum members -->
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync)
+
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
+   <!-- * `Abc` -->
+   <!-- * `Abc` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync)
+
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
+   <!-- * `Abc` -->
+   <!-- * `Abc` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile4`:
+   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
+
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_ABC` -->
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_ABC` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+---
 
 You can proactively test the Local Network Access (LNA) feature in your WebView2 app.  To test your app with the LNA feature, launch your WebView2 app with the following flag:
 

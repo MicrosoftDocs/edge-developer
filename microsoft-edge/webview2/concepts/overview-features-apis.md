@@ -10,6 +10,8 @@ ms.date: 08/11/2025
 ---
 # Overview of WebView2 APIs
 
+<!-- todo: add `ServiceWorker` or "service worker"? -->
+
 Embedding the WebView2 control in your app gives your app access to various browser features, via methods and properties that are provided through the WebView2 classes or interfaces.
 
 WebView2 has hundreds of APIs that provide a vast set of capabilities, ranging from enhancing your app's native-platform capabilities, to enabling your app to modify browser experiences.  This article provides a high-level grouping of the WebView2 APIs to help you understand the different things you can do using WebView2.
