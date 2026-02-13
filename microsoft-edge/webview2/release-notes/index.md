@@ -46,15 +46,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 WebView2 is introducing `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value -->, a new setting<!-- todo: flag|property --> that provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
 
-This setting<!-- todo: flag|property --> is disabled by default for WebView2 applications.
+This setting<!-- todo: flag|property --> is disabled by default for WebView2 applications.  Apps that don't explicitly enable this setting<!-- todo: flag|property --> won't have access to WebView2‑specific JavaScript APIs in service worker scripts.  As a result, service worker–based `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication with the WebView2 host application will not function unless the setting<!-- todo: flag|property --> is enabled.
 
-Apps that don't explicitly enable this setting<!-- todo: flag|property --> won't have access to WebView2‑specific JavaScript APIs in service worker scripts.
-
-As a result, service worker–based `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication with the WebView2 host application will not function unless the setting<!-- todo: flag|property --> is enabled.
-
-Going forward, WebView2 will rely on `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.
-
-This ensures predictable, secure, and deterministic behavior.
+Going forward, WebView2 will rely on `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.  This ensures predictable, secure, and deterministic behavior.
 
 You can proactively validate your WebView2 app's behavior by enabling service worker JavaScript API exposure in your WebView2 app.
 To do so, configure your app to enable the following setting<!-- todo: flag|property -->:
@@ -65,11 +59,7 @@ AreWebViewScriptApisEnabledForServiceWorkers = true
 
 By testing your WebView2 app with this setting<!-- todo: flag|property --> enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication between service workers and the host application.
 
-Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.
-
-However, starting with the next release, `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> will be the sole mechanism that determines whether these objects are exposed to service worker scripts.
-
-Please try testing this<!-- todo: feature|flag|property|setting|behavior --> before the next release, and report any issues you encounter at the [MicrosoftEdge / WebView2Feedback](https://github.com/MicrosoftEdge/WebView2Feedback) repo.
+Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please try testing this<!-- todo: feature|flag|property|setting|behavior --> before the next release, and report any issues you encounter at the [MicrosoftEdge / WebView2Feedback](https://github.com/MicrosoftEdge/WebView2Feedback) repo.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
