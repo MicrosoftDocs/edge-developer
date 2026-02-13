@@ -100,7 +100,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
 
-* Fixed a white flash for Windows Search on becoming visible after hiding.
+* Fixed a white flash that occurred when Windows Search became visible after being hidden.
 
 * Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
 
