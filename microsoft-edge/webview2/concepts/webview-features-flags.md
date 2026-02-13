@@ -99,7 +99,7 @@ If the flag takes a value other than true|false, give an example. -->
 | `edge-webview-foreground-boost-opt-out` | Opts-out of foreground boost. |
 | `edge-webview-force-personal-context` | Forces Edge WebView browser processes to run in WIP personal context. |
 | `edge-webview-interactive-dragging` | Enables pointer events and focus events to occur on elements that have the `--app-region: drag` attribute. Drag elements are interactive by default. |
-| `edge-webview-disable-interactive-dragging` | Disables pointer events and focus events from occuring on elements that have the `--app-region: drag` attribute. If this flag isn't set, drag elements are interactive by default. |
+| `edge-webview-disable-interactive-dragging` | Disables pointer events and focus events from occurring on elements that have the `--app-region: drag` attribute. If this flag isn't set, drag elements are interactive by default. |
 | `edge-webview-is-background` | Indicates that WebView is being launched in the background. |
 | `edge-webview-no-dpi-workaround` | Disables the "DPI awareness app compatibility shim" workaround, which launches Edge WebView browser process via a shell, so that the process doesn't inherit the "app compat" shim. |
 | `edge-webview-run-with-package-id` | Runs WebView processes with a package identity (package ID) for a bridged Desktop app. |
