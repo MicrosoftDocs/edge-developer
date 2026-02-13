@@ -80,7 +80,7 @@ Please try testing this<!-- todo: feature|flag|property|setting|behavior --> bef
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
 * `chrome`
 * `chrome.webview`
-   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
@@ -90,7 +90,7 @@ Please try testing this<!-- todo: feature|flag|property|setting|behavior --> bef
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
 * `chrome`
 * `chrome.webview`
-   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [Win32/C++](#tab/win32cpp)
@@ -100,7 +100,7 @@ Please try testing this<!-- todo: feature|flag|property|setting|behavior --> bef
    * [ICoreWebView2ServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
 * `chrome`
 * `chrome.webview`
-   * [WebView class](../reference/javascript/webview)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ---
