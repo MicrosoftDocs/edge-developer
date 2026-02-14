@@ -11,3 +11,4 @@ _themes*/
 .openpublishing.buildcore.ps1
 .DS_Store
 node_modules
+.env
