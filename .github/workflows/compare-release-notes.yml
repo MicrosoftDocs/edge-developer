@@ -8,6 +8,10 @@ on:
 jobs:
   compare:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      models: read
     steps:
       - uses: actions/checkout@v4
       
