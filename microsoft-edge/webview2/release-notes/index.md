@@ -59,6 +59,8 @@ By testing your WebView2 app with this setting enabled, you can identify any wor
 
 Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, the `AreWebViewScriptApisEnabledForServiceWorkers` setting will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please test this setting before the next release, and report any issues you encounter.  For details, see [[Breaking Change] Enabling WebView2 specific JavaScript API's for Service Workers](https://github.com/MicrosoftEdge/WebView2Announcements/issues/127).
 
+See also [Control whether WebView Script APIs are enabled for service workers](#control-whether-webview-script-apis-are-enabled-for-service-workers), below.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Profile` Class
@@ -166,6 +168,8 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 ###### Control whether WebView Script APIs are enabled for service workers
 
 Use the `AreWebViewScriptApisEnabledForServiceWorkers` property on `CoreWebView2Profile` to control whether WebView Script APIs are enabled for service workers.
+
+See also [Enable WebView2-specific Javascript APIs for service workers](#enable-webview2-specific-javascript-apis-for-service-workers), above.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
