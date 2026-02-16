@@ -6,7 +6,7 @@
 //   GITHUB_TOKEN=ghp_your_personal_access_token
 
 import 'dotenv/config';
-import github from '@actions/github';
+import { getOctokit } from '@actions/github';
 import fs from "fs/promises";
 import path from "path";
 import { glob } from "glob";
@@ -360,7 +360,7 @@ async function main() {
     const token = process.env.GITHUB_TOKEN || process.env.token;
     if (token) {
       try {
-        const octokit = github.getOctokit(token);
+        const octokit = getOctokit(token);
         
         // Build a title that includes the versions being compared.
         const versions = results.map(r => r.version).join(', ');

@@ -12,3 +12,5 @@ _themes*/
 .DS_Store
 node_modules
 .env
+
+release-notes-comparison-report.md
