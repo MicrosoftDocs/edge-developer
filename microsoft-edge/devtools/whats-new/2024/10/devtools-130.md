@@ -60,6 +60,8 @@ See also:
 
 <!-- Subtitle: Icons in the Activity Bar are properly aligned horizontally. -->
 
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
+
 When the **Activity Bar** was vertical, the icons were left-aligned:
 
 ![Broken activity bar icons](./devtools-130-images/misaligned-icons.png)
