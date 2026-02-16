@@ -23,8 +23,42 @@ if change h2 headings pattern, enter work item: update links in announcements
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
+<!-- Feb 2026 Release SDK (145) -->
+<!-- ====================================================================== -->
+## Release SDK 1.0.3800.47, for Runtime 145
 
-<!-- Feb 2026 Release SDK (146) -->
+Release Date: February 16, 2026
+
+[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+* Fixed WebView2 transparency.
+
+<!-- end of Feb 2026 Release SDK (145) -->
+
+
+<!-- Feb 2026 Prerelease SDK (146) -->
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
 
