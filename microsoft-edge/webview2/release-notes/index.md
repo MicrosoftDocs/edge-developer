@@ -61,7 +61,8 @@ Currently, the `chrome` and `chrome.webview` objects are available to service wo
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `AreWebViewScriptApisEnabledForServiceWorkers` setting<!-- todo: link -->
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
@@ -72,7 +73,8 @@ Currently, the `chrome` and `chrome.webview` objects are available to service wo
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `AreWebViewScriptApisEnabledForServiceWorkers` setting<!-- todo: link -->
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
 
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
@@ -83,7 +85,9 @@ Currently, the `chrome` and `chrome.webview` objects are available to service wo
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: link -->
+* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 * `ICoreWebView2ExperimentalServiceWorkerManager`
    * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
