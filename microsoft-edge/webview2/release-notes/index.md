@@ -42,55 +42,54 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ---------- -->
 ###### Enable WebView2-specific Javascript APIs for service workers
 
-<!-- todo: say "flag"? -->
+The new `AreWebViewScriptApisEnabledForServiceWorkers` setting provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
 
-WebView2 is introducing `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value -->, a new setting<!-- todo: flag|property --> that provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
+This setting is disabled by default for WebView2 applications.  Apps that don't explicitly enable this setting won't have access to WebView2‑specific JavaScript APIs in service worker scripts.  As a result, service worker–based `chrome.webview.postMessage` communication with the WebView2 host application will not function unless the setting is enabled.
 
-This setting<!-- todo: flag|property --> is disabled by default for WebView2 applications.  Apps that don't explicitly enable this setting<!-- todo: flag|property --> won't have access to WebView2‑specific JavaScript APIs in service worker scripts.  As a result, service worker–based `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication with the WebView2 host application will not function unless the setting<!-- todo: flag|property --> is enabled.
-
-Going forward, WebView2 will rely on `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.  This ensures predictable, secure, and deterministic behavior.
+Going forward, WebView2 will rely on the `AreWebViewScriptApisEnabledForServiceWorkers` setting as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.  This ensures predictable, secure, and deterministic behavior.
 
 You can proactively validate your WebView2 app's behavior by enabling service worker JavaScript API exposure in your WebView2 app.
-To do so, configure your app to enable the following setting<!-- todo: flag|property -->:
+To do so, configure your app to enable the following setting:
  
 ```
 AreWebViewScriptApisEnabledForServiceWorkers = true
 ```
 
-By testing your WebView2 app with this setting<!-- todo: flag|property --> enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `postMessage`<!-- todo: `chrome.webview.postMessage`? --> communication between service workers and the host application.
+By testing your WebView2 app with this setting enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `chrome.webview.postMessage` communication between service workers and the host application.
 
-Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: the Foo property method|enum value --> will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please try testing this<!-- todo: feature|flag|property|setting|behavior --> before the next release, and report any issues you encounter at the [MicrosoftEdge / WebView2Feedback](https://github.com/MicrosoftEdge/WebView2Feedback) repo.
+Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, the `AreWebViewScriptApisEnabledForServiceWorkers` setting will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please test this setting before the next release, and report any issues you encounter.  For details, see [[Breaking Change] Enabling WebView2 specific JavaScript API's for Service Workers](https://github.com/MicrosoftEdge/WebView2Announcements/issues/127).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: all tabs: link -->
+* `AreWebViewScriptApisEnabledForServiceWorkers` setting<!-- todo: link -->
 
-* `AreWebViewScriptApisEnabledForServiceWorkers`<!-- flag|property -->
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
-* `chrome`
-* `chrome.webview`
-   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `AreWebViewScriptApisEnabledForServiceWorkers`
+* `AreWebViewScriptApisEnabledForServiceWorkers` setting<!-- todo: link -->
+
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
-* `chrome`
-* `chrome.webview`
-   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `AreWebViewScriptApisEnabledForServiceWorkers`
+* `AreWebViewScriptApisEnabledForServiceWorkers`<!-- todo: link -->
+
 * `ICoreWebView2ExperimentalServiceWorkerManager`
    * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
-* `chrome`
-* `chrome.webview`
-   * [WebView class](../reference/javascript/webview.yml)<!-- todo: correct link? what link text? --> in the JavaScript Reference.
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ---
@@ -113,8 +112,8 @@ After the upstream, Chromium code base stabilizes, we plan to add additional enu
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync)
 
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-   <!-- * `Abc` -->
-   <!-- * `Abc` -->
+   <!-- * `EnumMemberName` -->
+   <!-- * `EnumMemberName` -->
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
@@ -124,8 +123,8 @@ After the upstream, Chromium code base stabilizes, we plan to add additional enu
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync)
 
 * [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
-   <!-- * `Abc` -->
-   <!-- * `Abc` -->
+   <!-- * `EnumMemberName` -->
+   <!-- * `EnumMemberName` -->
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
@@ -135,8 +134,8 @@ After the upstream, Chromium code base stabilizes, we plan to add additional enu
    * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
 
 * [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
-   <!-- * `COREWEBVIEW2_PERMISSION_KIND_ABC` -->
-   <!-- * `COREWEBVIEW2_PERMISSION_KIND_ABC` -->
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
