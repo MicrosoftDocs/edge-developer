@@ -1658,6 +1658,9 @@
             - name: Performance best practices for WebView2 apps
               href: ./webview2/concepts/performance.md
 
+            - name: Prevent antivirus/EDR/DLP tools from blocking or crashing WebView2-hosted apps
+              href: ./webview2/concepts/measures.md
+
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
 # -----------------------------------------------------------------------------
