@@ -27,9 +27,13 @@ todo video
 <!-- Subtitle: Introducing the all-new Edge DevTools user interface.  Check out our blog post to learn about the new Activity Bar, Quick View, and how to customize your developer tools in the redesigned DevTools UI. -->
 
 DevTools has a new look, starting with Microsoft Edge 120!  The major design updates are:
+
 * The new **Activity Bar** with icons.
+
 * The **Quick View** panel in place of the **Drawer** at the bottom of DevTools.
-* The **Activity Bar** and **Quick View** can be switched to a vertical orientation.
+
+* The **Activity Bar** and **Quick View** can be switched to a vertical orientation.  **Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
+
 * You can easily open, close, and move tools around.
 
 ![Updated DevTools UI](./devtools-120-images/new-devtools-ui.png)
