@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/27/2026
+ms.date: 02/16/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -22,6 +22,234 @@ if change h2 headings pattern, enter work item: update links in announcements
 -->
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+
+<!-- Feb 2026 Release SDK (145) -->
+<!-- ====================================================================== -->
+## Release SDK 1.0.3800.47, for Runtime 145
+
+Release Date: February 16, 2026
+
+[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+* Fixed WebView2 transparency.
+
+<!-- end of Feb 2026 Release SDK (145) -->
+
+
+<!-- Feb 2026 Prerelease SDK (146) -->
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
+
+Release Date: February 16, 2026
+
+[NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+
+
+<!-- ---------- -->
+###### Enable WebView2-specific Javascript APIs for service workers
+
+The new `AreWebViewScriptApisEnabledForServiceWorkers` setting provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
+
+This setting is disabled by default for WebView2 applications.  Apps that don't explicitly enable this setting won't have access to WebView2‑specific JavaScript APIs in service worker scripts.  As a result, service worker–based `chrome.webview.postMessage` communication with the WebView2 host application will not function unless the setting is enabled.
+
+Going forward, WebView2 will rely on the `AreWebViewScriptApisEnabledForServiceWorkers` setting as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.  This ensures predictable, secure, and deterministic behavior.
+
+You can proactively validate your WebView2 app's behavior by enabling service worker JavaScript API exposure in your WebView2 app.
+To do so, configure your app to enable the following setting:
+ 
+```
+AreWebViewScriptApisEnabledForServiceWorkers = true
+```
+
+By testing your WebView2 app with this setting enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `chrome.webview.postMessage` communication between service workers and the host application.
+
+Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, the `AreWebViewScriptApisEnabledForServiceWorkers` setting will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please test this setting before the next release, and report any issues you encounter.  For details, see [[Breaking Change] Enabling WebView2 specific JavaScript API's for Service Workers](https://github.com/MicrosoftEdge/WebView2Announcements/issues/127).
+
+See also [Control whether WebView Script APIs are enabled for service workers](#control-whether-webview-script-apis-are-enabled-for-service-workers), below.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
+
+* `CoreWebView2ServiceWorkerManager` Class:
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
+
+* `CoreWebView2ServiceWorkerManager` Class:
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
+
+* `ICoreWebView2ExperimentalServiceWorkerManager`
+   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
+
+* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+
+* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+
+---
+
+
+<!-- ---------- -->
+###### Local Network Access (LNA) in WebView2
+
+The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents web pages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
+
+LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
+
+After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: all tabs: un-comment enum members -->
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync)
+
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
+   <!-- * `EnumMemberName` -->
+   <!-- * `EnumMemberName` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync)
+
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
+   <!-- * `EnumMemberName` -->
+   <!-- * `EnumMemberName` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2Profile4`:
+   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
+
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
+   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
+
+* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
+
+---
+
+You can proactively test the Local Network Access (LNA) feature in your WebView2 app.  To test your app with the LNA feature, launch your WebView2 app with the following flag:
+
+```
+--enable-features=LocalNetworkAccessChecks,msWebViewAllowLocalNetworkAccessChecks
+```
+
+By testing your app when launched with this flag, you can then identify any workflows that might be affected by the LNA feature.
+
+After the LNA feature stabilizes, we'll share an updated timeline for enabling the LNA feature.  For details, see [[Breaking Change] Local Network Access (LNA) in WebView2 - Rollout Plan](https://github.com/MicrosoftEdge/WebView2Announcements/issues/126).
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Control whether WebView Script APIs are enabled for service workers
+
+Use the `AreWebViewScriptApisEnabledForServiceWorkers` property on `CoreWebView2Profile` to control whether WebView Script APIs are enabled for service workers.
+
+See also [Enable WebView2-specific Javascript APIs for service workers](#enable-webview2-specific-javascript-apis-for-service-workers), above.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
+
+* Fixed a white flash that occurred when Windows Search became visible after being hidden.
+
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed WebView2 transparency.
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+<!-- end of Feb 2026 Prerelease SDK (146) -->
 
 
 <!-- Jan 2026 Release SDK (144) -->
@@ -1810,94 +2038,6 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
 
 <!-- end of Mar 2025 Prerelease SDK (135) -->
-
-
-<!-- Feb 2025 Release SDK (133) -->
-<!-- ====================================================================== -->
-## 1.0.3065.39
-<!-- ## Release SDK 1.0.3065.39, for Runtime 133 -->
-
-Release Date: February 10, 2025, Runtime 133
-
-[NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 133.0.3065.39 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-<!-- end of Feb 2025 Release SDK (133) -->
-
-
-<!-- Feb 2025 Prerelease SDK (134) -->
-<!-- ====================================================================== -->
-## 1.0.3116-prerelease
-<!-- ## Prerelease SDK 1.0.3116-prerelease, for Runtime 134 -->
-
-Release Date: February 10, 2025, Runtime 134
-
-[NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 134.0.3116.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed .NET and Win32 documentation of the `CoreWebView2Find.FindNext` method that incorrectly mentioned `FindPrevious`.  The method summary now mentions `FindNext` instead.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3116-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalFind::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalfind?view=webview2-1.0.3116-prerelease&preserve-view=true#findnext)
-
----
-
-<!-- end of Feb 2025 Prerelease SDK (134) -->
 
 
 <!-- ====================================================================== -->
