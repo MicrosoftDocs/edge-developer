@@ -77,7 +77,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 By default, such as from the **Command Menu**, the **Issues** tool opens in the **Quick View** panel.  You can instead open it in the **Activity Bar**, or move it to the **Activity Bar**: 
 
-*  In the **Quick View** toolbar, right-click the **Inspect** tab and then select **Move to top Activity Bar** or **Move to left Activity Bar**.
+*  In the **Quick View** toolbar, right-click the **Inspect** tab and then select **Move to top Activity Bar**.
 
 <!-- legacy ui
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
