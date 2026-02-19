@@ -124,7 +124,7 @@ The **Command Menu** first lists the **Activity Bar** tools (indicated by the **
 
 ![The Command Menu, showing the Panel tools grouped together, and then the Quick View tools](./about-tools-images/command-menu-panel-vs-quick-view-tools.png)
 
-To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to side Quick View**, **Move to top Activity Bar**, or **Move to left Activity Bar**:
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom Quick View**, **Move to side Quick View**, or **Move to top Activity Bar**:
 
 ![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' command](./about-tools-images/move-from-quickview-to-activitybar.png)
 

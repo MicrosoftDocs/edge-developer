@@ -132,6 +132,8 @@ If the **Quick View** toolbar is currently displayed (whether the **Quick View**
 
 In Focus Mode, when DevTools detects that a Node.js server is running, the Node icon is displayed.  Clicking this icon opens the dedicated DevTools for Node.
 
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
+
 Before Microsoft Edge 112, the Node icon overlaps the first tool icon when the **Activity Bar** is in vertical orientation, making it harder to select the first tool.  This issue has now been fixed; there's no overlapping of the Node icon and the first tool icon when the **Activity Bar** is vertical:
 
 ![The Node icon no longer overlaps the first tool icon in the Activity Bar](./devtools-112-images/focus-mode-node-icon-vertical-activity-bar.png)
@@ -144,6 +146,8 @@ $ node --inspect app.js
 
 <!-- ------------------------------ -->
 #### With the vertical Activity Bar, only one label is shown for each tool icon when hovering
+
+**Update:** The vertical Activity Bar is no longer supported, in Microsoft Edge 144 and future versions.
 
 In **Focus Mode**, when the **Activity Bar** is in the vertical orientation, a tool name label is displayed when you hover over an icon or select an icon with the keyboard.  These labels help you learn the icon for each tool in the **Activity Bar**.
 
