@@ -40,7 +40,7 @@ Such security tools include:
    * [Use Edge security connectors instead of dynamic-link library (DLL) injection](#use-edge-security-connectors-instead-of-dynamic-link-library-dll-injection)
    * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
    * [Don't block Runtime updates](#dont-block-runtime-updates)
-* [Troubleshooting issues](#troubleshooting-issues)
+* [Troubleshooting](#troubleshooting)
    * [Blank or white embedded window](#blank-or-white-embedded-window)
    * [Initialization error](#initialization-error)
    * [Sign-in loops; state not persisted](#sign-in-loops-state-not-persisted)
@@ -302,7 +302,7 @@ See:
 
 
 <!-- ====================================================================== -->
-## Troubleshooting issues
+## Troubleshooting
 
 Audience: IT administrators.
 
