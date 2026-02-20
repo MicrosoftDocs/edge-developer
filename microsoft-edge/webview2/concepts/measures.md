@@ -1,17 +1,14 @@
 ---
-title: Prevent security tools from blocking or crashing WebView2-hosted apps
+title: Prevent security tools from blocking WebView2-hosted apps
 description: Prevent antivirus, Endpoint Detection and Response (EDR), or Data Loss Prevention (DLP) tools from blocking or crashing WebView2-hosted apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/17/2026
+ms.date: 02/20/2026
 ---
-# Prevent security tools from blocking or crashing WebView2-hosted apps
-<!-- compare title:
-* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
--->
+# Prevent security tools from blocking WebView2-hosted apps
 
 <!-- todo:
 use h4's
@@ -25,9 +22,9 @@ change from "vendors" to "you"?
 todo: define more, audience in terms of "vendors", at start.  can we say always you?  define 'vendors'; clarify the audiences
 -->
 
-These are best practices for IT administrators and security vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
+These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
-IT admins and security vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
+IT administrators and security software vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
 
 Such security tools include:
 
@@ -37,6 +34,9 @@ Such security tools include:
 
 
 **Detailed contents:**
+
+todo: update
+
 * [Applicability](#applicability)
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
@@ -94,9 +94,12 @@ Such security tools include:
 
 
 <!-- ====================================================================== -->
-## Applicability
+## Applicability to tools
+<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
 
-This article applies to the following:
+Audience: IT administrators and security software vendors.
+
+This article applies to the following tools or software:
 
 * The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
 
@@ -107,11 +110,13 @@ This article applies to the following:
 * Non-Microsoft antivirus, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), and proxy or Transport Layer Security (TLS) interception products that might interfere with WebView2 processes.
 
 See:
-* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
 
 
 <!-- ====================================================================== -->
 ## Overview
+
+Audience: IT administrators and security software vendors.
 
 Enterprise security tools include:
 
@@ -148,6 +153,8 @@ WebView2 doesn't bypass enterprise security policies.
 <!-- ====================================================================== -->
 ## Why WebView2 appears in enterprise workloads
 
+Audience: IT administrators and security software vendors.
+
 Many **Microsoft 365 Apps** and **Windows features** use WebView2 to deliver a modern, consistent UI.
 
 For example, Outlook features rely on the WebView2 Runtime to function.
@@ -156,11 +163,13 @@ Windows Search uses WebView2 for parts of its UI.
 
 See:
 * [WebView2 documentation](../landing/index.yml)
-* [WebView2 for Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
 
 
 <!-- ====================================================================== -->
-## Best practices for IT admins
+## Best practices for IT administrators
+
+Audience: IT administrators.
 
 
 <!-- ------------------------------ -->
@@ -169,12 +178,12 @@ See:
 Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and the app's host executables.
 
 See:
-* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp) - in Microsoft Teams troubleshooting.
 
 Prefer publisher rules.
 
 See:
-* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker)
+* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
 
 
 <!-- ------------------------------ -->
@@ -210,7 +219,7 @@ See:
 Don't inject dynamic-link libraries (DLLs) into WebView2 processes.  Use Microsoft Edge security connectors instead.
 
 See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
@@ -232,7 +241,7 @@ Avoid dynamic-link library (DLL) injection.
 Use Microsoft Edge connectors.
 
 See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
@@ -295,9 +304,11 @@ Most such policies don't affect WebView2, and unsupported policies can break Web
 
 
 <!-- ====================================================================== -->
-## Troubleshooting issues that are reported in tools
+## Troubleshooting issues
 
-The following symptoms are important, for IT admins.
+Audience: IT administrators.
+
+The following symptoms are important, for IT administrators.
 
 
 <!-- ------------------------------ -->
@@ -384,12 +395,12 @@ Issue: Runtime initialization is blocked, for any of the following tools:
 Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and host executables.
 
 See:
-* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp) - in Microsoft Teams troubleshooting.
 
 Use publisher rules.
 
 See:
-* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker)
+* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
 
 Restore default Access Control Lists (ACLs).
 
@@ -413,7 +424,7 @@ Avoid dynamic-link library (DLL) injection.
 Prefer Edge connectors.
 
 See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 * [Handling process-related events in WebView2](./process-related-events.md)
 * [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
 
@@ -517,7 +528,9 @@ See:
 <!-- ====================================================================== -->
 ## Tools in which to check for the symptoms and causes
 
-Admins can use standard Windows tools to quickly validate whether the listed symptoms are caused by WebView2 being blocked, failing to initialize, or crashing.
+Audience: IT administrators.
+
+IT administrators can use standard Windows tools to quickly validate whether the listed symptoms are caused by WebView2 being blocked, failing to initialize, or crashing.
 
 
 <!-- ------------------------------ -->
@@ -604,18 +617,14 @@ These process crashes are correlated with:
 <!-- ====================================================================== -->
 ## Required executables and folders
 
-Overview list:
-* WebView2 Runtime
-* Evergreen WebView2 Runtime folder
-* System-provided WebView2 Runtime binary files
-* App data
+Audience: IT administrators.
 
 
 <!-- ------------------------------ -->
 #### WebView2 Runtime
 
 To obtain the WebView2 Runtime (`msedgewebview2.exe`), see:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) at Developer.microsoft.com.
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - Developer.microsoft.com.
 
 
 <!-- ------------------------------ -->
@@ -660,6 +669,10 @@ See:
 <!-- ====================================================================== -->
 ## Performance impact<!-- todo: create heading -->
 
+<!-- todo: audience: is this for IT administrators, or security software vendors? -->
+
+Audience: IT administrators and security software vendors.
+
 Extensive scanning or hooking into processes can slow down startup and page loading times.
 
 Instead, use scoped exclusions for WebView2<!-- todo: review --> Runtime binaries and user data folder (UDF), rather than opting for wide-ranging, high-risk disables.
@@ -680,13 +693,15 @@ See:
 
 
 <!-- ====================================================================== -->
-## Best practices for security vendors for Antivirus, EDR, or DLP providers<!-- todo: where does the word "providers" apply? -->
+## Best practices for security software vendors for Antivirus, EDR, or DLP
 
-Security vendors should follow these practices for:
+Audience: Security software vendors.
+
+Security software vendors should follow these practices for:
 
 * Antivirus (AV).
 * Endpoint Detection and Response (EDR).
-* Data Loss Prevention (DLP) providers<!-- todo: vendors?  providers?  same?  define "providers" -->.
+* Data Loss Prevention (DLP).
 
 
 <!-- ------------------------------ -->
@@ -701,11 +716,11 @@ Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; al
 Avoid dynamic-link library (DLL) injection; prefer Edge security connectors for Data Loss Prevention (DLP), reporting, or device trust.
 
 See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 
 Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
 
-Security vendors<!-- todo: global: you? define 'vendors'; clarify the audiences --> should use supported Edge security connectors instead of low-level hooks.
+Security software vendors should use supported Edge security connectors instead of low-level hooks.
 
 
 <!-- ------------------------------ -->
@@ -740,12 +755,11 @@ See:
 * [Manage user data folders](./user-data-folder.md)<!-- toc bucket 12 -->
 
 Learn.microsoft.com:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
-* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
-* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
-* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker)
-* [WebView2 for Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
+* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp) - in Microsoft Teams troubleshooting.
 
 External:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) at Developer.microsoft.com.
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - Developer.microsoft.com.
 * [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
