@@ -9,39 +9,97 @@ ms.subservice: webview
 ms.date: 02/17/2026
 ---
 # Prevent security tools from blocking or crashing WebView2-hosted apps
+<!-- compare title:
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
+-->
+
 <!-- todo:
-re-create all links
-   local links: add .md
 use h4's
    uniform doc design all sections
-1. rewrite/reformat
+1. rewrite/reformat - done
 2. check logic against draft doc
 3. finalize wording & formatting
-in rendered page make sure link text match dest
 -->
 <!-- todo: global:
 change from "vendors" to "you"?  
 todo: define more, audience in terms of "vendors", at start.  can we say always you?  define 'vendors'; clarify the audiences
 -->
 
-These security measures affect WebView2.
-
-These are best practices for IT administrators re: Antivirus, Data Loss Prevention (DLP), and Endpoint Detection and Response (EDR) tools, to ensure that they are not blocking WebView2 App functionality.
+These are best practices for IT administrators and security vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
 IT admins and security vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
 
+Such security tools include:
+
+* Antivirus tools.
+* Data Loss Prevention (DLP) tools.
+* Endpoint Detection and Response (EDR) tools.
+
+
 **Detailed contents:**
+* [Applicability](#applicability)
 * [Overview](#overview)
+   * [Platform boundary disclaimer](#platform-boundary-disclaimer)
 * [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
 * [Quick guidance for IT admins](#quick-guidance-for-it-admins)
+   * [Allowlist WebView2 Runtime and app's host executables](#allowlist-webview2-runtime-and-apps-host-executables)
+   * [Preserve default ACLs on Runtime folders and app's UDF](#preserve-default-acls-on-runtime-folders-and-apps-udf)
+   * [Don't inject DLLs into WebView2 processes](#dont-inject-dlls-into-webview2-processes)
+   * [Permit child processes (renderer, Graphics Processing Unit (GPU), network, Crashpad)](#permit-child-processes-renderer-graphics-processing-unit-gpu-network-crashpad)
+   * [Avoid broad, global exclusions](#avoid-broad-global-exclusions)
+   * [Trust internal proxy Certificate Authorities (CAs), and allow essential sign-in or Content Delivery Network (CDN) endpoints](#trust-internal-proxy-certificate-authorities-cas-and-allow-essential-sign-in-or-content-delivery-network-cdn-endpoints)
 * [Symptoms](#symptoms)
+   * [1. Blank or white embedded window](#1-blank-or-white-embedded-window)
+   * [2. Initialization error](#2-initialization-error)
+   * [3. Sign-in loops; state not persisted](#3-sign-in-loops-state-not-persisted)
+   * [4. Transport Layer Security (TLS) errors](#4-transport-layer-security-tls-errors)
+   * [5. Crashes or freezing](#5-crashes-or-freezing)
+   * [6. Slow startup](#6-slow-startup)
 * [Common causes and how to fix them](#common-causes-and-how-to-fix-them)
-* [Where to check these symptoms](#where-to-check-these-symptoms)
+   * [Row 1: Runtime initialization blocked (Windows Defender Application Control (WDAC) or AppLocker deny or hardened Access Control Lists (ACLs))](#row-1-runtime-initialization-blocked-windows-defender-application-control-wdac-or-applocker-deny-or-hardened-access-control-lists-acls)
+      * [Symptoms](#symptoms-1)
+      * [Solutions](#solutions)
+   * [Row 2: Spawning of child processes is blocked or hooked](#row-2-spawning-of-child-processes-is-blocked-or-hooked)
+      * [Symptoms](#symptoms-2)
+      * [Solutions](#solutions-1)
+   * [Row 3. User data folder (UDF) writes are blocked](#row-3-user-data-folder-udf-writes-are-blocked)
+      * [Symptoms](#symptoms-3)
+      * [Solutions](#solutions-2)
+   * [Row 4. Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#row-4-network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
+      * [Symptoms](#symptoms-4)
+      * [Solutions](#solutions-3)
+   * [Row 5. An Access Control List (ACL) mismatch with the Integrity level](#row-5-an-access-control-list-acl-mismatch-with-the-integrity-level)
+      * [Symptoms](#symptoms-5)
+      * [Solutions](#solutions-4)
+   * [Row 6. Aggressive real-time scanning](#row-6-aggressive-real-time-scanning)
+      * [Symptoms](#symptoms-6)
+      * [Solutions](#solutions-5)
+* [Tools in which to check for the symptoms](#tools-in-which-to-check-for-the-symptoms)
+   * [Task Manager](#task-manager)
+   * [Event Viewer](#event-viewer)
+   * [Security logs](#security-logs)
+   * [Reliability Monitor](#reliability-monitor)
 * [Required executables and folders](#required-executables-and-folders)
+   * [WebView2 Runtime](#webview2-runtime)
+   * [Evergreen WebView2 Runtime folder](#evergreen-webview2-runtime-folder)
+   * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
+   * [App data](#app-data)
 * [Performance impact](#performance-impact)
 * [Admin checklist](#admin-checklist)
-* [Vendor guidance (AV/EDR/DLP providers)](#vendor-guidance-avedrdlp-providers)
-* [Diagnostics](#diagnostics)
+   * [Allowlist** msedgewebview2.exe and host executables](#allowlist-msedgewebview2exe-and-host-executables)
+   * [Preserve Access Control Lists (ACLs) and Low IL (LowIL)](#preserve-access-control-lists-acls-and-low-il-lowil)
+   * [Permit child processes](#permit-child-processes)
+   * [Enable writes to the user data folder (UDF)](#enable-writes-to-the-user-data-folder-udf)
+   * [Align Transport Layer Security (TLS) and Proxy](#align-transport-layer-security-tls-and-proxy)
+   * [Allow updates of the Evergreen WebView2 Runtime](#allow-updates-of-the-evergreen-webview2-runtime)
+   * [Policy hygiene](#policy-hygiene)
+* [Security vendor guidance for Antivirus (AV), Endpoint Detection and Response (EDR), or Data Loss Prevention (DLP) providers](#security-vendor-guidance-for-antivirus-av-endpoint-detection-and-response-edr-or-data-loss-prevention-dlp-providers)
+   * [Trust the WebView2 Runtime by signature](#trust-the-webview2-runtime-by-signature)
+   * [Use Edge security connectors instead of dynamic-link library (DLL) injection](#use-edge-security-connectors-instead-of-dynamic-link-library-dll-injection)
+   * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
+   * [Don't block Runtime updates](#dont-block-runtime-updates)
+* [Diagnostics, crash reports, and process events](#diagnostics-crash-reports-and-process-events)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -149,8 +207,12 @@ See:
 <!-- ------------------------------ -->
 #### Permit child processes (renderer, Graphics Processing Unit (GPU), network, Crashpad)
 
-<!-- todo: move the list out -->
-Permit child processes (including renderer, Graphics Processing Unit (GPU), network, or Crashpad) and don't terminate them.
+Permit child processes and don't terminate them.  The child processes include:
+
+* Renderer
+* Graphics Processing Unit (GPU)
+* Network
+* Crashpad
 
 See:
 * [Handling process-related events in WebView2](./process-related-events.md)
@@ -332,7 +394,6 @@ Sign-in loops; settings don't persist; blank initial page.
 <!-- ---------- -->
 ###### Solutions
 
-<!-- todo: glo: udf U D F? capzn -->
 Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
 
 Avoid placing the WebView2 user data folder (UDF) on network shares, and ensure Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.
@@ -539,8 +600,6 @@ See:
 <!-- ------------------------------ -->
 #### System-provided WebView2 Runtime binary files
 
-<!-- todo: define "binaries", binary files? -->
-
 Some Windows components might load WebView2 Runtime binary files directly from `C:\Windows\System32`.  These binary files are owned by the operating system.
 
 These OS-owned WebView2 Runtime binary files:
@@ -595,7 +654,6 @@ Use the following practices.
 
 <!-- ------------------------------ -->
 #### Allowlist** `msedgewebview2.exe` and host executables
-<!-- Admin checklist -->
 
 Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and host executables.
 
@@ -607,7 +665,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Preserve Access Control Lists (ACLs) and Low IL (LowIL)
-<!-- Admin checklist -->
 
 Preserve Access Control Lists (ACLs) and IL<!-- todo: LowIL? --> on WebView2 Runtime folders.<!-- Low integrity level process (LowIL) -->
 
@@ -619,7 +676,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Permit child processes
-<!-- Admin checklist -->
 
 Permit child processes.
 
@@ -634,7 +690,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Enable writes to the user data folder (UDF)
-<!-- Admin checklist -->
 
 Enable user data folder (UDF) writes for the user data folder (UDF).
 
@@ -648,7 +703,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Align Transport Layer Security (TLS) and Proxy<!-- todo: clarify -->
-<!-- Admin checklist -->
 
 Align Transport Layer Security (TLS) and Proxy<!-- todo: clarify --> as for Chromium.
 
@@ -659,7 +713,6 @@ Allow required endpoints.
 
 <!-- ------------------------------ -->
 #### Allow updates of the Evergreen WebView2 Runtime
-<!-- Admin checklist -->
 
 Allow updates of the Evergreen WebView2 Runtime; don't block servicing.
 
@@ -670,7 +723,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Policy hygiene
-<!-- Admin checklist -->
 
 Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
 
@@ -703,8 +755,7 @@ See:
 
 Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
 
-
-Vendors<!-- todo: global: you? define 'vendors'; clarify the audiences --> should use supported Edge security connectors instead of low-level hooks.
+Security vendors<!-- todo: global: you? define 'vendors'; clarify the audiences --> should use supported Edge security connectors instead of low-level hooks.
 
 
 <!-- ------------------------------ -->
@@ -740,5 +791,23 @@ See:
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in page -->
 
-todo: all links in page
+* [WebView2 documentation](../landing/index.yml)<!-- toc bucket 0 -->
+* [Handling process-related events in WebView2](./process-related-events.md)<!-- toc bucket 6 -->
+* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 7 node 1 -->
+* [Distribute your app and the WebView2 Runtime](./distribution.md)<!-- toc bucket 7 node 2 -->
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)<!-- toc bucket 7 node 3 -->
+* [Process model for WebView2 apps](./process-model.md)<!-- toc bucket 11 -->
+* [Manage user data folders](./user-data-folder.md)<!-- toc bucket 12 -->
+
+Learn.microsoft.com:
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview)
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp)
+* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker)
+* [WebView2 for Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install)
+
+External:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) at Developer.microsoft.com.
+* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
