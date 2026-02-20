@@ -86,7 +86,7 @@ Such security tools include:
    * [App data](#app-data)
 * [Performance impact](#performance-impact)
 * [Admin checklist](#admin-checklist)
-   * [Allowlist** msedgewebview2.exe and host executables](#allowlist-msedgewebview2exe-and-host-executables)
+   * [Allowlist msedgewebview2.exe and host executables](#allowlist-msedgewebview2exe-and-host-executables)
    * [Preserve Access Control Lists (ACLs) and Low IL (LowIL)](#preserve-access-control-lists-acls-and-low-il-lowil)
    * [Permit child processes](#permit-child-processes)
    * [Enable writes to the user data folder (UDF)](#enable-writes-to-the-user-data-folder-udf)
@@ -653,7 +653,7 @@ Use the following practices.
 
 
 <!-- ------------------------------ -->
-#### Allowlist** `msedgewebview2.exe` and host executables
+#### Allowlist `msedgewebview2.exe` and host executables
 
 Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and host executables.
 
