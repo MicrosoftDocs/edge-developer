@@ -113,6 +113,8 @@ WebView2 doesn't implement app-specific logic.
 
 WebView2 doesn't bypass enterprise security policies.
 
+This article's guidance is for IT administrators and security software vendors to configure their environments without breaking WebView2's multi-process architecture.
+
 
 <!-- ====================================================================== -->
 ## Best practices for IT administrators
