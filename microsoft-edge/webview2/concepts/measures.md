@@ -56,22 +56,22 @@ Such security tools include:
    * [5. Crashes or freezing](#5-crashes-or-freezing)
    * [6. Slow startup](#6-slow-startup)
 * [Common causes and how to fix them](#common-causes-and-how-to-fix-them)
-   * [Row 1: Runtime initialization blocked (Windows Defender Application Control (WDAC) or AppLocker deny or hardened Access Control Lists (ACLs))](#row-1-runtime-initialization-blocked-windows-defender-application-control-wdac-or-applocker-deny-or-hardened-access-control-lists-acls)
+   * [Runtime initialization blocked (Windows Defender Application Control (WDAC) or AppLocker deny or hardened Access Control Lists (ACLs))](#runtime-initialization-blocked-windows-defender-application-control-wdac-or-applocker-deny-or-hardened-access-control-lists-acls)
       * [Symptoms](#symptoms-1)
       * [Solutions](#solutions)
-   * [Row 2: Spawning of child processes is blocked or hooked](#row-2-spawning-of-child-processes-is-blocked-or-hooked)
+   * [Spawning of child processes is blocked or hooked](#spawning-of-child-processes-is-blocked-or-hooked)
       * [Symptoms](#symptoms-2)
       * [Solutions](#solutions-1)
-   * [Row 3. User data folder (UDF) writes are blocked](#row-3-user-data-folder-udf-writes-are-blocked)
+   * [User data folder (UDF) writes are blocked](#user-data-folder-udf-writes-are-blocked)
       * [Symptoms](#symptoms-3)
       * [Solutions](#solutions-2)
-   * [Row 4. Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#row-4-network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
+   * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
       * [Symptoms](#symptoms-4)
       * [Solutions](#solutions-3)
-   * [Row 5. An Access Control List (ACL) mismatch with the Integrity level](#row-5-an-access-control-list-acl-mismatch-with-the-integrity-level)
+   * [An Access Control List (ACL) mismatch with the Integrity level](#an-access-control-list-acl-mismatch-with-the-integrity-level)
       * [Symptoms](#symptoms-5)
       * [Solutions](#solutions-4)
-   * [Row 6. Aggressive real-time scanning](#row-6-aggressive-real-time-scanning)
+   * [Aggressive real-time scanning](#aggressive-real-time-scanning)
       * [Symptoms](#symptoms-6)
       * [Solutions](#solutions-5)
 * [Tools in which to check for the symptoms](#tools-in-which-to-check-for-the-symptoms)
@@ -85,7 +85,7 @@ Such security tools include:
    * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
    * [App data](#app-data)
 * [Performance impact](#performance-impact)
-* [Admin checklist](#admin-checklist)
+* [Checklist for IT admins](#checklist-for-it-admins)
    * [Allowlist msedgewebview2.exe and host executables](#allowlist-msedgewebview2exe-and-host-executables)
    * [Preserve Access Control Lists (ACLs) and Low IL (LowIL)](#preserve-access-control-lists-acls-and-low-il-lowil)
    * [Permit child processes](#permit-child-processes)
@@ -170,6 +170,11 @@ See:
 
 <!-- ====================================================================== -->
 ## Quick guidance for IT admins<!-- todo: flatten low-value heading -->
+<!--
+## Best practices
+## Best practices for IT admins
+-->
+<!-- todo: combine section with "Checklist for IT admins" -->
 
 
 <!-- ------------------------------ -->
@@ -308,7 +313,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Row 1: Runtime initialization blocked (Windows Defender Application Control (WDAC) or AppLocker deny or hardened Access Control Lists (ACLs))
+#### Runtime initialization blocked (Windows Defender Application Control (WDAC) or AppLocker deny or hardened Access Control Lists (ACLs))
 
 Runtime initialization is blocked, for any of the following:
 
@@ -353,7 +358,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Row 2: Spawning of child processes is blocked or hooked
+#### Spawning of child processes is blocked or hooked
 
 
 <!-- ---------- -->
@@ -378,7 +383,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Row 3. User data folder (UDF) writes are blocked
+#### User data folder (UDF) writes are blocked
 
 * Controlled Folder Access<!-- todo: lead-in -->
 
@@ -405,7 +410,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Row 4. Network inspection vs. Transport Layer Security (TLS) inspection is misaligned
+#### Network inspection vs. Transport Layer Security (TLS) inspection is misaligned
 
 
 <!-- ---------- -->
@@ -432,7 +437,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Row 5. An Access Control List (ACL) mismatch with the Integrity level
+#### An Access Control List (ACL) mismatch with the Integrity level
 
 
 <!-- ---------- -->
@@ -464,7 +469,7 @@ The System32-based WebView2<!-- todo: review --> Runtime's default Access Contro
 
 
 <!-- ------------------------------ -->
-#### Row 6. Aggressive real-time scanning
+#### Aggressive real-time scanning
 
 
 <!-- ---------- -->
@@ -647,9 +652,10 @@ See:
 
 
 <!-- ====================================================================== -->
-## Admin checklist<!-- todo: flatten low-value heading -->
+## Checklist for IT admins<!-- todo: flatten low-value heading -->
+<!-- merge with "Quick guidance for IT admins" -->
 
-Use the following practices.
+As an IT admin, use the following practices.
 
 
 <!-- ------------------------------ -->
