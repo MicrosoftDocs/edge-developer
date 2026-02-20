@@ -91,26 +91,6 @@ Such security tools include:
 
 
 <!-- ====================================================================== -->
-## Applicability to tools
-<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
-
-Audience: IT administrators and security software vendors.
-
-This article applies to the following tools or software:
-
-* The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
-
-* Windows desktop applications that embed the WebView2 control.
-
-* Windows components that use WebView2 for the web-based portion of the UI.
-
-* Non-Microsoft antivirus, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), and proxy or Transport Layer Security (TLS) interception products that might interfere with WebView2 processes.
-
-See:
-* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
-
-
-<!-- ====================================================================== -->
 ## Overview
 
 Audience: IT administrators and security software vendors.
@@ -145,22 +125,6 @@ See:
 WebView2 doesn't implement app-specific logic.
 
 WebView2 doesn't bypass enterprise security policies.
-
-
-<!-- ====================================================================== -->
-## Why WebView2 appears in enterprise workloads
-
-Audience: IT administrators and security software vendors.
-
-Many **Microsoft 365 Apps** and **Windows features** use WebView2 to deliver a modern, consistent UI.
-
-For example, Outlook features rely on the WebView2 Runtime to function.
-
-Windows Search uses WebView2 for parts of its UI.
-
-See:
-* [WebView2 documentation](../landing/index.yml)
-* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
 
 
 <!-- ====================================================================== -->
@@ -298,6 +262,56 @@ See:
 Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
 
 Most such policies don't affect WebView2, and unsupported policies can break WebView2 features.
+
+
+<!-- ====================================================================== -->
+## Best practices for security software vendors
+
+Audience: Security software vendors.
+
+Security software vendors should follow these practices for:
+
+* Antivirus (AV).
+* Endpoint Detection and Response (EDR).
+* Data Loss Prevention (DLP).
+
+
+<!-- ------------------------------ -->
+#### Trust the WebView2 Runtime by signature
+
+Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; allow child processes.
+
+
+<!-- ------------------------------ -->
+#### Use Edge security connectors instead of dynamic-link library (DLL) injection
+
+Avoid dynamic-link library (DLL) injection; prefer Edge security connectors for Data Loss Prevention (DLP), reporting, or device trust.
+
+See:
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
+
+Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
+
+Security software vendors should use supported Edge security connectors instead of low-level hooks.
+
+
+<!-- ------------------------------ -->
+#### Runtime folder access and child process creation
+
+Keep WebView2<!-- todo: review added word --> Runtime folder access and child process creation unrestricted; permit Crashpad.
+
+See:
+* [Handling process-related events in WebView2](./process-related-events.md).
+* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
+
+
+<!-- ------------------------------ -->
+#### Don't block Runtime updates
+
+Do not block Evergreen WebView2 Runtime updates.
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -527,7 +541,10 @@ See:
 
 Audience: IT administrators.
 
-IT administrators can use standard Windows tools to quickly validate whether the listed symptoms are caused by WebView2 being blocked, failing to initialize, or crashing.
+IT administrators can use standard Windows tools to determine whether the listed symptoms are caused by:
+* WebView2 being blocked.
+* WebView2 failing to initialize.
+* WebView2 crashing.
 
 
 <!-- ------------------------------ -->
@@ -664,6 +681,26 @@ See:
 
 
 <!-- ====================================================================== -->
+## Applicability to tools
+<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
+
+Audience: IT administrators and security software vendors.
+
+This article applies to the following tools or software:
+
+* The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
+
+* Windows desktop applications that embed the WebView2 control.
+
+* Windows components that use WebView2 for the web-based portion of the UI.
+
+* Non-Microsoft antivirus, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), and proxy or Transport Layer Security (TLS) interception products that might interfere with WebView2 processes.
+
+See:
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
+
+
+<!-- ====================================================================== -->
 ## Performance impact<!-- todo: create heading -->
 
 <!-- todo: audience: is this for IT administrators, or security software vendors? -->
@@ -690,53 +727,19 @@ See:
 
 
 <!-- ====================================================================== -->
-## Best practices for security software vendors for Antivirus, EDR, or DLP
+## Why WebView2 appears in enterprise workloads
 
-Audience: Security software vendors.
+Audience: IT administrators and security software vendors.
 
-Security software vendors should follow these practices for:
+Many **Microsoft 365 Apps** and **Windows features** use WebView2 to deliver a modern, consistent UI.
 
-* Antivirus (AV).
-* Endpoint Detection and Response (EDR).
-* Data Loss Prevention (DLP).
+For example, Outlook features rely on the WebView2 Runtime to function.
 
-
-<!-- ------------------------------ -->
-#### Trust the WebView2 Runtime by signature
-
-Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; allow child processes.
-
-
-<!-- ------------------------------ -->
-#### Use Edge security connectors instead of dynamic-link library (DLL) injection
-
-Avoid dynamic-link library (DLL) injection; prefer Edge security connectors for Data Loss Prevention (DLP), reporting, or device trust.
+Windows Search uses WebView2 for parts of its UI.
 
 See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
-
-Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
-
-Security software vendors should use supported Edge security connectors instead of low-level hooks.
-
-
-<!-- ------------------------------ -->
-#### Runtime folder access and child process creation
-
-Keep WebView2<!-- todo: review added word --> Runtime folder access and child process creation unrestricted; permit Crashpad.
-
-See:
-* [Handling process-related events in WebView2](./process-related-events.md).
-* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
-
-
-<!-- ------------------------------ -->
-#### Don't block Runtime updates
-
-Do not block Evergreen WebView2 Runtime updates.
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [WebView2 documentation](../landing/index.yml)
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
 
 
 <!-- ====================================================================== -->
