@@ -64,7 +64,7 @@ Such security tools include:
       * [Solutions](#solutions-1)
    * [User data folder (UDF) writes are blocked](#user-data-folder-udf-writes-are-blocked)
       * [Solutions](#solutions-2)
-   * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs.-transport-layer-security-tls-inspection-is-misaligned)
+   * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
       * [Solutions](#solutions-3)
    * [An Access Control List (ACL) mismatch with the Integrity level](#an-access-control-list-acl-mismatch-with-the-integrity-level)
       * [Solutions](#solutions-4)
