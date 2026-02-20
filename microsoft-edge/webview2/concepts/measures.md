@@ -10,18 +10,6 @@ ms.date: 02/20/2026
 ---
 # Prevent security tools from blocking WebView2-hosted apps
 
-<!-- todo:
-use h4's
-   uniform doc design all sections
-1. rewrite/reformat - done
-2. check logic against draft doc
-3. finalize wording & formatting
--->
-<!-- todo: global:
-change from "vendors" to "you"?  
-todo: define more, audience in terms of "vendors", at start.  can we say always you?  define 'vendors'; clarify the audiences
--->
-
 These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
 IT administrators and security software vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
@@ -32,12 +20,9 @@ Such security tools include:
 * Data Loss Prevention (DLP) tools.
 * Endpoint Detection and Response (EDR) tools.
 
-
 **Detailed contents:**
-* [Applicability to tools](#applicability-to-tools)
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
-* [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
 * [Best practices for IT administrators](#best-practices-for-it-administrators)
    * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
    * [Preserve default ACLs on Runtime folders and app's UDF](#preserve-default-acls-on-runtime-folders-and-apps-udf)
@@ -50,6 +35,11 @@ Such security tools include:
    * [Align Transport Layer Security (TLS) and Proxy](#align-transport-layer-security-tls-and-proxy)
    * [Allow updates of the Evergreen WebView2 Runtime](#allow-updates-of-the-evergreen-webview2-runtime)
    * [Don't apply Edge browser–only group policies](#dont-apply-edge-browseronly-group-policies)
+* [Best practices for security software vendors](#best-practices-for-security-software-vendors)
+   * [Trust the WebView2 Runtime by signature](#trust-the-webview2-runtime-by-signature)
+   * [Use Edge security connectors instead of dynamic-link library (DLL) injection](#use-edge-security-connectors-instead-of-dynamic-link-library-dll-injection)
+   * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
+   * [Don't block Runtime updates](#dont-block-runtime-updates)
 * [Troubleshooting issues](#troubleshooting-issues)
    * [Blank or white embedded window](#blank-or-white-embedded-window)
    * [Initialization error](#initialization-error)
@@ -58,18 +48,18 @@ Such security tools include:
    * [Crashes or freezing](#crashes-or-freezing)
    * [Slow startup](#slow-startup)
    * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
-      * [Symptoms](#symptoms)
-      * [Solutions](#solutions)
+         * [Symptoms](#symptoms)
+         * [Solutions](#solutions)
    * [Spawning of child processes is blocked or hooked](#spawning-of-child-processes-is-blocked-or-hooked)
-      * [Solutions](#solutions-1)
+         * [Solutions](#solutions-1)
    * [User data folder (UDF) writes are blocked](#user-data-folder-udf-writes-are-blocked)
-      * [Solutions](#solutions-2)
+         * [Solutions](#solutions-2)
    * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
-      * [Solutions](#solutions-3)
+         * [Solutions](#solutions-3)
    * [An Access Control List (ACL) mismatch with the Integrity level](#an-access-control-list-acl-mismatch-with-the-integrity-level)
-      * [Solutions](#solutions-4)
+         * [Solutions](#solutions-4)
    * [Aggressive real-time scanning](#aggressive-real-time-scanning)
-      * [Solutions](#solutions-5)
+         * [Solutions](#solutions-5)
 * [Tools in which to check for the symptoms and causes](#tools-in-which-to-check-for-the-symptoms-and-causes)
    * [Task Manager](#task-manager)
    * [Event Viewer](#event-viewer)
@@ -81,12 +71,9 @@ Such security tools include:
    * [Evergreen WebView2 Runtime folder](#evergreen-webview2-runtime-folder)
    * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
    * [App data](#app-data)
+* [Applicability to tools](#applicability-to-tools)
 * [Performance impact](#performance-impact)
-* [Best practices for security software vendors for Antivirus, EDR, or DLP](#best-practices-for-security-software-vendors-for-antivirus-edr-or-dlp)
-   * [Trust the WebView2 Runtime by signature](#trust-the-webview2-runtime-by-signature)
-   * [Use Edge security connectors instead of dynamic-link library (DLL) injection](#use-edge-security-connectors-instead-of-dynamic-link-library-dll-injection)
-   * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
-   * [Don't block Runtime updates](#dont-block-runtime-updates)
+* [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
 * [See also](#see-also)
 
 
