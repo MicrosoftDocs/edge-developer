@@ -444,9 +444,9 @@ Issue: Sign-in loops; settings don't persist; blank initial page.
 
 Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
 
-Avoid placing the WebView2 user data folder (UDF) on network shares, and ensure Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.
+Avoid placing the WebView2 user data folder (UDF) on a network share.
 
-_Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
+Ensure that Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.  _Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
 
 See:
 * [Manage user data folders](./user-data-folder.md)
