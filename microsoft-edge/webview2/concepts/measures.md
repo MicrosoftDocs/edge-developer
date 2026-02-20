@@ -66,12 +66,12 @@ Such security tools include:
    * [Security logs](#security-logs)
    * [Diagnostics, crash reports, and process events](#diagnostics-crash-reports-and-process-events)
    * [Reliability Monitor](#reliability-monitor)
+* [Applicability to tools](#applicability-to-tools)
 * [Required executables and folders](#required-executables-and-folders)
    * [WebView2 Runtime](#webview2-runtime)
    * [Evergreen WebView2 Runtime folder](#evergreen-webview2-runtime-folder)
    * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
    * [App data](#app-data)
-* [Applicability to tools](#applicability-to-tools)
 * [Performance impact](#performance-impact)
 * [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
 * [See also](#see-also)
@@ -616,6 +616,26 @@ These process crashes are correlated with:
 
 
 <!-- ====================================================================== -->
+## Applicability to tools
+<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
+
+Audience: IT administrators and security software vendors.
+
+This article applies to the following tools or software:
+
+* The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
+
+* Windows desktop applications that embed the WebView2 control.
+
+* Windows components that use WebView2 for the web-based portion of the UI.
+
+* Non-Microsoft antivirus, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), and proxy or Transport Layer Security (TLS) interception products that might interfere with WebView2 processes.
+
+See:
+* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
+
+
+<!-- ====================================================================== -->
 ## Required executables and folders
 
 Audience: IT administrators.
@@ -665,26 +685,6 @@ Web content state lives in the app's user data folder.  Web content state includ
 
 See:
 * [Manage user data folders](./user-data-folder.md)
-
-
-<!-- ====================================================================== -->
-## Applicability to tools
-<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
-
-Audience: IT administrators and security software vendors.
-
-This article applies to the following tools or software:
-
-* The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
-
-* Windows desktop applications that embed the WebView2 control.
-
-* Windows components that use WebView2 for the web-based portion of the UI.
-
-* Non-Microsoft antivirus, Endpoint Detection and Response (EDR), Data Loss Prevention (DLP), and proxy or Transport Layer Security (TLS) interception products that might interfere with WebView2 processes.
-
-See:
-* [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/deploy/webview2-install) - in Deployment guide for Microsoft 365 Apps.
 
 
 <!-- ====================================================================== -->
