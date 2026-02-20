@@ -34,14 +34,11 @@ Such security tools include:
 
 
 **Detailed contents:**
-
-todo: update
-
-* [Applicability](#applicability)
+* [Applicability to tools](#applicability-to-tools)
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
 * [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
-* [Best practices for IT admins](#best-practices-for-it-admins)
+* [Best practices for IT administrators](#best-practices-for-it-administrators)
    * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
    * [Preserve default ACLs on Runtime folders and app's UDF](#preserve-default-acls-on-runtime-folders-and-apps-udf)
    * [Enable writes to the user data folder (UDF)](#enable-writes-to-the-user-data-folder-udf)
@@ -53,7 +50,7 @@ todo: update
    * [Align Transport Layer Security (TLS) and Proxy](#align-transport-layer-security-tls-and-proxy)
    * [Allow updates of the Evergreen WebView2 Runtime](#allow-updates-of-the-evergreen-webview2-runtime)
    * [Don't apply Edge browser–only group policies](#dont-apply-edge-browseronly-group-policies)
-* [Troubleshooting issues that are reported in tools](#troubleshooting-issues-that-are-reported-in-tools)
+* [Troubleshooting issues](#troubleshooting-issues)
    * [Blank or white embedded window](#blank-or-white-embedded-window)
    * [Initialization error](#initialization-error)
    * [Sign-in loops; state not persisted](#sign-in-loops-state-not-persisted)
@@ -67,7 +64,7 @@ todo: update
       * [Solutions](#solutions-1)
    * [User data folder (UDF) writes are blocked](#user-data-folder-udf-writes-are-blocked)
       * [Solutions](#solutions-2)
-   * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs-transport-layer-security-tls-inspection-is-misaligned)
+   * [Network inspection vs. Transport Layer Security (TLS) inspection is misaligned](#network-inspection-vs.-transport-layer-security-tls-inspection-is-misaligned)
       * [Solutions](#solutions-3)
    * [An Access Control List (ACL) mismatch with the Integrity level](#an-access-control-list-acl-mismatch-with-the-integrity-level)
       * [Solutions](#solutions-4)
@@ -85,7 +82,7 @@ todo: update
    * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
    * [App data](#app-data)
 * [Performance impact](#performance-impact)
-* [Best practices for security vendors for Antivirus, EDR, or DLP providers](#best-practices-for-security-vendors-for-antivirus-edr-or-dlp-providers)
+* [Best practices for security software vendors for Antivirus, EDR, or DLP](#best-practices-for-security-software-vendors-for-antivirus-edr-or-dlp)
    * [Trust the WebView2 Runtime by signature](#trust-the-webview2-runtime-by-signature)
    * [Use Edge security connectors instead of dynamic-link library (DLL) injection](#use-edge-security-connectors-instead-of-dynamic-link-library-dll-injection)
    * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
