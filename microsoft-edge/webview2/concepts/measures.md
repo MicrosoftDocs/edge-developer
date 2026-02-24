@@ -12,14 +12,6 @@ ms.date: 02/20/2026
 
 These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
-IT administrators and security software vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
-
-Such security tools include:
-
-* Antivirus tools.
-* Data Loss Prevention (DLP) tools.
-* Endpoint Detection and Response (EDR) tools.
-
 **Detailed contents:**
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
@@ -82,22 +74,22 @@ Such security tools include:
 
 Audience: IT administrators and security software vendors.
 
-Enterprise security tools include:
+IT administrators and security software vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
 
-* Antivirus (AV).
+Such security tools include:
 
-* Endpoint Detection and Response (EDR).
+* Antivirus (AV) tools.
+* Data Loss Prevention (DLP) tools.
+* Endpoint Detection and Response (EDR) tools.
 
-* Data Loss Prevention (DLP).
+Enterprise security tools also include:
 
 * Transport Layer Security (TLS) inspection.
 
-Enterprise security tools can disrupt WebView2's multi-process architecture by:
+Enterprise security tools, when not following these guidelines, can disrupt WebView2's multi-process architecture by:
 
 * Blocking child processes.
-
 * Tightening folder Access Control Lists (ACLs).
-
 * Injecting dynamic-link libraries (DLLs).
 
 When such disruption occurs, WebView2-hosted experiences might blank-screen, freeze, or fail to initialize.
@@ -113,17 +105,9 @@ WebView2 doesn't implement app-specific logic.
 
 WebView2 doesn't bypass enterprise security policies.
 
-This article's guidance is for IT administrators and security software vendors to configure their environments without breaking WebView2's multi-process architecture.
-
 
 <!-- ====================================================================== -->
-## Best practices for IT administrators
-
-Audience: IT administrators.
-
-
-<!-- ------------------------------ -->
-#### Allowlist the WebView2 Runtime and app's host executables
+## Allowlist the WebView2 Runtime and app's host executables
 
 Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and the app's host executables.
 
@@ -136,13 +120,40 @@ See:
 * [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
 
 
-<!-- ------------------------------ -->
-#### Preserve default ACLs on Runtime folders and app's UDF
+<!-- ====================================================================== -->
+## Obtain the WebView2 Runtime
+<!-- entry 1 in "Required executables and folders" section -->
+
+To obtain the WebView2 Runtime (`msedgewebview2.exe`), see:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - Developer.microsoft.com.
+
+
+<!-- ====================================================================== -->
+## Preserve default ACLs on Runtime folders and app's UDF
 
 Preserve default Access Control Lists (ACLs) on WebView2 Runtime folders and the app's user data folder.
 
-The `LowIL/AppContainer`<!-- todo: clarify LowIL, clarify AppContainer --> must Read/Execute the WebView2 Runtime and write to the user data folder (UDF).
-<!-- Low integrity level process (LowIL) -->
+The `LowIL/AppContainer` must have the permission to:
+
+* Read and execute the WebView2 Runtime.
+
+* Write to the user data folder (UDF).
+
+WebView2 runs certain child processes at a Low Integrity Level (`LowIL`) or inside an `AppContainer` sandbox to limit their access to system resources.
+
+These sandboxed processes must still be able to:
+
+* Read and execute the WebView2 Runtime binaries.
+
+* Write to the app's user data folder (UDF).
+
+If security tools tighten the Access Control Lists (ACLs) on these folders, sandboxed processes might lose the access they need, which can cause blank screens, initialization failures, or crashes.
+
+* **Low Integrity Level (LowIL):** A Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
+
+* **AppContainer:** A more restrictive Windows sandbox that limits a process's access to only explicitly granted resources.  On supported OS versions, WebView2 may run renderer processes inside an `AppContainer` for additional isolation.
+
+Don't modify the default Access Control Lists (ACLs) that Windows sets on the WebView2 Runtime folders or the user data folder.  Modifying those ACLs can prevent LowIL and AppContainer processes from functioning correctly.
 
 System locations that are managed by the operating system (OS) are handled entirely by Windows, and must not be modified.
 
@@ -150,30 +161,68 @@ See:
 * [Manage user data folders](./user-data-folder.md)
 
 
-<!-- ------------------------------ -->
-#### Enable writes to the user data folder (UDF)
+<!-- ====================================================================== -->
+## App data
+<!-- entry 4 in "Required executables and folders" section -->
 
-Enable user data folder (UDF) writes for the user data folder (UDF).
+Web content state lives in the app's user data folder (UDF).  Web content state includes:
 
-These UDF writes can be from:
+* Cookies.
+* Cache.
+* Local storage.
+
+See:
+* [Manage user data folders](./user-data-folder.md)
+
+
+<!-- ====================================================================== -->
+## Grant permission to write to the user data folder (UDF)
+
+Give write permission to allow the WebView2 app<!-- todo: to allow x --> to write to the user data folder (UDF).
+
+These writes to the UDF can be from:
+
 * Per-app Controlled Folder Access (CFA) exceptions.
+
 * Per-app Data Loss Prevention (DLP) exceptions.
 
 See:
 * [Manage user data folders](./user-data-folder.md)
 
 
-<!-- ------------------------------ -->
-#### Don't inject DLLs into WebView2 processes
+<!-- ====================================================================== -->
+## Runtime folder access and child process creation
+
+Audience: Security software vendors.
+
+Keep WebView2 Runtime folder access and child process creation unrestricted; permit Crashpad.
+
+See:
+* [Handling process-related events in WebView2](./process-related-events.md).
+* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
+
+
+<!-- ====================================================================== -->
+## Don't inject DLLs into WebView2 processes
+
+Use Microsoft Edge security connectors.
+
+Avoid dynamic-link library (DLL) injection.
 
 Don't inject dynamic-link libraries (DLLs) into WebView2 processes.  Use Microsoft Edge security connectors instead.
+
+Prefer Microsoft Edge security connectors for Data Loss Prevention (DLP), reporting, or device trust.
+
+Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
+
+Security software vendors should use supported Edge security connectors instead of low-level hooks.
 
 See:
 * [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 
 
-<!-- ------------------------------ -->
-#### Permit child processes
+<!-- ====================================================================== -->
+## Permit child processes
 
 Permit child processes and don't terminate them.  The child processes include:
 
@@ -186,38 +235,65 @@ See:
 * [Handling process-related events in WebView2](./process-related-events.md)
 * [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
 
-Avoid dynamic-link library (DLL) injection.
 
-Use Microsoft Edge connectors.
-
-See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
-
-
-<!-- ------------------------------ -->
-#### Avoid broad, global exclusions
+<!-- ====================================================================== -->
+## Avoid broad, global exclusions
 
 Tune scanning with scoped exclusions for the WebView2 Runtime directory and user data folder (UDF).
 
 Avoid broad, global exclusions.
 
 
-<!-- ------------------------------ -->
-#### Trust internal proxy Certificate Authorities (CAs), and allow essential sign-in or Content Delivery Network (CDN) endpoints
+<!-- ====================================================================== -->
+## Trust internal proxy Certificate Authorities (CAs), and allow essential sign-in or Content Delivery Network (CDN) endpoints
 
 Align Transport Layer Security (TLS) policies with Chromium:
 
-* Trust internal proxy Certificate Authorities (CAs).
+* Trust internal proxy Certificate Authorities (CAs); install trusted Certificate Authorities (CAs).
 
-* Allow essential sign-in endpoints.
+* Allow essential sign-in endpoints, or other required endpoints.
 
 * Allow essential Content Delivery Network (CDN) endpoints.
 
+Preserve the default Access Control Lists (ACLs) and Low Integrity Level (LowIL) settings on WebView2 Runtime folders.
 
-<!-- ------------------------------ -->
-#### Preserve Access Control Lists (ACLs) and Low IL (LowIL)
+* A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
 
-Preserve Access Control Lists (ACLs) and IL<!-- todo: LowIL? --> on WebView2 Runtime folders.<!-- Low integrity level process (LowIL) -->
+* Don't modify the default ACLs that the operating system sets on the Runtime folders.  WebView2's sandboxed renderer processes run at Low Integrity Level, and require these permissions, to function correctly.
+
+
+<!-- ====================================================================== -->
+## Trust the WebView2 Runtime by signature
+
+Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; allow child processes.
+
+
+<!-- ====================================================================== -->
+## System-provided WebView2 Runtime binary files
+<!-- entry 3 in "Required executables and folders" section -->
+
+Some Windows components might load WebView2 Runtime binary files directly from `C:\Windows\System32`.  These binary files are owned by the operating system.
+
+These OS-owned WebView2 Runtime binary files:
+
+* Must not be modified, quarantined, or replaced.
+
+* Might not match the Evergreen WebView2 Runtime version that's used by desktop apps.
+
+* Are serviced exclusively through Windows Update, not through WebView2 installers.
+
+
+<!-- ====================================================================== -->
+## Preserve Access Control Lists (ACLs) and Low Integrity Level (LowIL)
+
+Preserve the default Access Control Lists (ACLs) and Low Integrity Level (LowIL) settings on WebView2 Runtime folders.
+
+WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
+
+If security tools modify the ACLs on Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
+
+A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
+Don't modify the default ACLs that the operating system sets on these folders.
 
 A Low integrity level process (LowIL) must Read/Execute enterprise management<!-- todo: clarify -->.
 
@@ -225,28 +301,44 @@ See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
-<!-- ------------------------------ -->
-#### Align Transport Layer Security (TLS) and Proxy<!-- todo: clarify -->
+<!-- ====================================================================== -->
+## Align Transport Layer Security (TLS) inspection and proxy configuration
 
-Align Transport Layer Security (TLS) and Proxy<!-- todo: clarify --> as for Chromium.
+Align Transport Layer Security (TLS) inspection and proxy configuration with Chromium-based browser requirements.
 
-Install trusted Certificate Authorities (CAs).
-
-Allow required endpoints.
+If your environment uses TLS inspection, ensure that the inspection certificates are trusted by the operating system's certificate store. 
 
 
 <!-- ------------------------------ -->
-#### Allow updates of the Evergreen WebView2 Runtime
+#### SSL decryption by a firewall or proxy
+
+An example of using TLS inspection is SSL decryption by a firewall or proxy.
+
+If your environment routes traffic through a proxy server, ensure that WebView2 processes can reach the required endpoints through the proxy.
+
+
+<!-- ====================================================================== -->
+## Allow updates of the Evergreen WebView2 Runtime
+
+Do not block updates of the Evergreen WebView2 Runtime.
 
 Allow updates of the Evergreen WebView2 Runtime; don't block servicing.
+
+Microsoft Edge servicing updates the following versioned subfolders:
+
+`C:\Program Files (x86)\Microsoft\EdgeWebView\Application\<version>\`
 
 See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+* [Distribute your app and the WebView2 Runtime](./distribution.md)
+
+<!-- #### Evergreen WebView2 Runtime folder -->
+<!-- entry 2 in "Required executables and folders" section -->
 
 
-<!-- ------------------------------ -->
-#### Don't apply Edge browser–only group policies
+<!-- ====================================================================== -->
+## Don't apply Edge browser–only group policies
 
 Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
 
@@ -254,57 +346,8 @@ Most such policies don't affect WebView2, and unsupported policies can break Web
 
 
 <!-- ====================================================================== -->
-## Best practices for security software vendors
-
-Audience: Security software vendors.
-
-Security software vendors should follow these practices for:
-
-* Antivirus (AV).
-* Endpoint Detection and Response (EDR).
-* Data Loss Prevention (DLP).
-
-
-<!-- ------------------------------ -->
-#### Trust the WebView2 Runtime by signature
-
-Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; allow child processes.
-
-
-<!-- ------------------------------ -->
-#### Use Edge security connectors instead of dynamic-link library (DLL) injection
-
-Avoid dynamic-link library (DLL) injection; prefer Edge security connectors for Data Loss Prevention (DLP), reporting, or device trust.
-
-See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
-
-Dynamic-link library (DLL) injection into renderer or Graphics Processing Unit (GPU) processes breaks Chromium's sandboxing model, and commonly causes renderer crashes.
-
-Security software vendors should use supported Edge security connectors instead of low-level hooks.
-
-
-<!-- ------------------------------ -->
-#### Runtime folder access and child process creation
-
-Keep WebView2<!-- todo: review added word --> Runtime folder access and child process creation unrestricted; permit Crashpad.
-
-See:
-* [Handling process-related events in WebView2](./process-related-events.md).
-* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
-
-
-<!-- ------------------------------ -->
-#### Don't block Runtime updates
-
-Do not block Evergreen WebView2 Runtime updates.
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-
-
-<!-- ====================================================================== -->
-## Troubleshooting
+## Troubleshooting (Symptoms)
+<!-- draft doc: ## Symptoms -->
 
 Audience: IT administrators.
 
@@ -313,8 +356,9 @@ The following symptoms are important, for IT administrators.
 
 <!-- ------------------------------ -->
 #### Blank or white embedded window
+<!-- draft doc: ## Symptoms -->
 
-If there is a blank or white embedded window, make sure WebView2 processes are present in Task Manager process model.
+If there is a blank or white embedded window, make sure WebView2 processes are present in Task Manager.
 
 See:
 * [Process model for WebView2 apps](./process-model.md)
@@ -322,21 +366,32 @@ See:
 
 <!-- ------------------------------ -->
 #### Initialization error
+<!-- draft doc: ## Symptoms -->
 
-There might be an initialization error, such as `E_FAIL`.  In this case, app content never loads enterprise management.<!-- todo: clarify, standardize wording -->
+There might be an initialization error, such as `E_FAIL`.  In this case, the WebView2 control fails to initialize, and the app content never loads.
+
+<!-- todo
+###### Solutions -->
 
 See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ------------------------------ -->
-#### Sign-in loops; state not persisted
+#### Sign-in loop; state not persisted; settings don't persist; blank initial page
+<!-- draft doc: ## Symptoms -->
 
 In the case of a sign-in loop, state is not persisted when user data folder (UDF) writes are blocked.
 
-* Controlled Folder Access (CFA).<!-- todo: lead-in for list -->
 
-* Data Loss Prevention (DLP).
+<!-- ---------- -->
+###### Solutions
+
+Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
+
+Avoid placing the WebView2 user data folder (UDF) on a network share.
+
+Ensure that Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.  _Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
 
 See:
 * [Manage user data folders](./user-data-folder.md)
@@ -344,16 +399,25 @@ See:
 
 <!-- ------------------------------ -->
 #### Transport Layer Security (TLS) errors
+<!-- draft doc: ## Symptoms -->
 
-Transport Layer Security (TLS) errors (such as `ERR_CERT_*`)
+Transport Layer Security (TLS) errors (such as `ERR_CERT_*`).
 
-Along with login redirect failures under interception.<!-- todo: clarify "under" -->
+Login redirect failures under interception.<!-- todo: clarify "under" -->
+
+
+<!-- todo
+###### Solutions -->
 
 
 <!-- ------------------------------ -->
 #### Crashes or freezing
+<!-- draft doc: ## Symptoms -->
 
 Crash or freeze tied to dynamic-link library (DLL) injection or blocked renderer, Graphics Processing Unit (GPU), or Crashpad.
+
+<!-- todo
+###### Solutions -->
 
 See:
 * [Handling process-related events in WebView2](./process-related-events.md)
@@ -362,8 +426,12 @@ See:
 
 <!-- ------------------------------ -->
 #### Slow startup
+<!-- draft doc: ## Symptoms -->
 
 Issue: Slow startup due to deep real-time scanning of the WebView2 Runtime and the user data folder (UDF).
+
+<!-- todo
+###### Solutions -->
 
 See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
@@ -409,9 +477,11 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Spawning of child processes is blocked or hooked
+#### Content never loads
 
 Issue: The main process starts, but content never loads, and the app freezes.
+
+Spawning of child processes is blocked or hooked.
 
 
 <!-- ---------- -->
@@ -430,34 +500,13 @@ See:
 
 
 <!-- ------------------------------ -->
-#### User data folder (UDF) writes are blocked
+#### `ERR_CERT_*` error
 
-Issue: Sign-in loops; settings don't persist; blank initial page.
-
-* Controlled Folder Access<!-- todo: lead-in -->
-
-* Data Loss Prevention (DLP)
-
-
-<!-- ---------- -->
-###### Solutions
-
-Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
-
-Avoid placing the WebView2 user data folder (UDF) on a network share.
-
-Ensure that Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.  _Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
-
-See:
-* [Manage user data folders](./user-data-folder.md)
-
-
-<!-- ------------------------------ -->
-#### Network inspection vs. Transport Layer Security (TLS) inspection is misaligned
+Network inspection vs. Transport Layer Security (TLS) inspection is misaligned.
 
 Issues:
 
-* `ERR_CERT_*`<!-- todo: elaborate -->
+* `ERR_CERT_*` errors.
 
 * Sign-in loops (login loops).
 
@@ -478,16 +527,17 @@ See:
 
 
 <!-- ------------------------------ -->
-#### An Access Control List (ACL) mismatch with the Integrity level
+#### App only works with higher privilege
 
-Issue: The App works<!-- todo: what works? --> only at higher privilege; fails<!-- todo: what fails? --> for UWP/AppContainer<!-- todo: is this one item, or two items? -->.
+There's an Access Control List (ACL) mismatch with the Integrity level.
+
+Issue: The App works only at higher privilege; the app fails for UWP/AppContainer<!-- todo: is this one item, or two items? -->.
 
 Universal Windows Platform (UWP)<!-- todo: use above? -->
 
 
 <!-- ---------- -->
 ###### Solutions
-
 
 Keep default `ALL APPLICATION PACKAGES` permissions on WebView2 Runtime directories; a Low integrity level process (LowIL) must **read/execute**.
 
@@ -496,23 +546,23 @@ See:
 
 This includes the Evergreen WebView2 Runtime path under `C:\Program Files (x86)\Microsoft\EdgeWebView\Application\<version>\`, which must retain `ALL APPLICATION PACKAGES` Read/Execute permissions.
 
-<!-- todo: clarify, break up; the modifier is confusing: the *System32-based*, as opposed to a non-System32-based Runtime?  or make sep aside that the whatever Runtime is s32-based? -->
+The System32-based WebView2 Runtime is owned and serviced by Windows.
 
-The System32-based WebView2<!-- todo: global: delete "wv2"? --> Runtime is owned and serviced by Windows.
+The System32-based WebView2 Runtime must not be modified, replaced, quarantined, or cleaned by Antivirus (AV), Endpoint Detection and Response (EDR), or Data Loss Prevention (DLP) tools.
 
-The System32-based WebView2<!-- todo: review --> Runtime must not be modified, replaced, quarantined, or cleaned by Antivirus (AV), Endpoint Detection and Response (EDR), or Data Loss Prevention (DLP) tools.
-
-The System32-based WebView2<!-- todo: review --> Runtime's default Access Control Lists (ACLs) must be preserved exactly as shipped.
+The System32-based WebView2 Runtime's default Access Control Lists (ACLs) must be preserved exactly as shipped.
 
 
 <!-- ------------------------------ -->
-#### Aggressive real-time scanning
+#### Slow startup
 
 Issues:
 
 * Slow startup.
 
 * A transient white screen, when perform a navigation.
+
+* Aggressive real-time scanning.
 
 
 <!-- ---------- -->
@@ -638,59 +688,10 @@ See:
 
 
 <!-- ====================================================================== -->
-## Required executables and folders
-
-Audience: IT administrators.
-
-
-<!-- ------------------------------ -->
-#### WebView2 Runtime
-
-To obtain the WebView2 Runtime (`msedgewebview2.exe`), see:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - Developer.microsoft.com.
-
-
-<!-- ------------------------------ -->
-#### Evergreen WebView2 Runtime folder
-
-Typical path of versioned subfolders: `C:\Program Files (x86)\Microsoft\EdgeWebView\Application\<version>\`
-
-These are versioned subfolders that are updated via Microsoft Edge servicing.
-
-See:
-* [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
-* [Distribute your app and the WebView2 Runtime](./distribution.md)
-
-
-<!-- ------------------------------ -->
-#### System-provided WebView2 Runtime binary files
-
-Some Windows components might load WebView2 Runtime binary files directly from `C:\Windows\System32`.  These binary files are owned by the operating system.
-
-These OS-owned WebView2 Runtime binary files:
-
-* Must not be modified, quarantined, or replaced.
-
-* Might not match the Evergreen WebView2 Runtime version that's used by desktop apps.
-
-* Are serviced exclusively through Windows Update, not through WebView2 installers.
-
-
-<!-- ------------------------------ -->
-#### App data
-
-Web content state lives in the app's user data folder.  Web content state includes:
-
-* Cookies.
-* Cache.
-* Local storage.
-
-See:
-* [Manage user data folders](./user-data-folder.md)
-
-
-<!-- ====================================================================== -->
-## Performance impact<!-- todo: create heading -->
+## Performance impact
+<!-- todo: better heading?  alts:
+## Performance impact
+-->
 
 <!-- todo: audience: is this for IT administrators, or security software vendors? -->
 
@@ -698,7 +699,7 @@ Audience: IT administrators and security software vendors.
 
 Extensive scanning or hooking into processes can slow down startup and page loading times.
 
-Instead, use scoped exclusions for WebView2<!-- todo: review --> Runtime binaries and user data folder (UDF), rather than opting for wide-ranging, high-risk disables.
+Instead, use scoped exclusions for WebView2 Runtime binaries and user data folder (UDF), rather than opting for wide-ranging, high-risk disables.
 
 Treat child processes like browser processes; avoid terminating such child processes.
 
