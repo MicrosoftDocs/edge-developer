@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/24/2026
+ms.date: 02/25/2026
 ---
 # Prevent security tools from blocking WebView2-hosted apps
 
