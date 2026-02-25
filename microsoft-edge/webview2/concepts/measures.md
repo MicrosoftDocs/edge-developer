@@ -10,6 +10,11 @@ ms.date: 02/25/2026
 ---
 # Prevent security tools from blocking WebView2-hosted apps
 
+<!--
+specify "the IT administrator" or "the security software vendor"
+instead of "you", b/c article has two distinct audiences
+-->
+
 These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
 **Detailed contents:**
@@ -88,12 +93,14 @@ See:
 * [Process model for WebView2 apps](./process-model.md)
 
 
-<!-- ------------------------------ -->
-#### Platform boundary disclaimer
+<!-- ====================================================================== -->
+## Update the Enterprise security policies
+
+WebView2 honors all Enterprise security policies.
+
+If any tools or policies don't allow some of the WebView2 DLLs to load, the Enterprise IT administrator needs to update the Enterprise security policies.
 
 WebView2 doesn't implement app-specific logic.
-
-WebView2 honors all Enterprise security policies.  If there are tools or policies which don't allow certain WebView2 DLLs to load, the Enterprise IT administrator needs to ensure that they update their policies.
 
 
 <!-- ====================================================================== -->
