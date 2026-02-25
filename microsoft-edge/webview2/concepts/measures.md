@@ -16,7 +16,6 @@ These are best practices for IT administrators and security software vendors, to
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
 * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
-   * [Initialization error](#initialization-error)
    * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
       * [Symptoms](#symptoms)
       * [Solutions](#solutions)
