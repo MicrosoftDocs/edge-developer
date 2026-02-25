@@ -17,8 +17,11 @@ instead of "you", b/c article has two distinct audiences
 
 These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
+IT administrators and security software vendors should use the practices and procedures below to configure their environments and security tools to avoid breaking WebView2's multi-process architecture.
+
 **Detailed contents:**
-* [Overview](#overview)
+* [Security tools to configure](#security-tools-to-configure)
+   * [Symptoms of Enterprise configuration problems](#symptoms-of-enterprise-configuration-problems)
 * [Update Enterprise security policies if needed](#update-enterprise-security-policies-if-needed)
 * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
    * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
@@ -65,13 +68,9 @@ These are best practices for IT administrators and security software vendors, to
 
 
 <!-- ====================================================================== -->
-## Overview
+## Security tools to configure
 
-Audience: IT administrators and security software vendors.
-
-IT administrators and security software vendors should use the practices and procedures below to configure their environments without breaking WebView2's multi-process architecture.
-
-Such security tools include:
+Security tools to configure appropriately include:
 
 * Antivirus (AV) tools.
 * Data Loss Prevention (DLP) tools.
@@ -81,7 +80,11 @@ Enterprise security tools also include:
 
 * Transport Layer Security (TLS) inspection.
 
-Enterprise security tools, when not following these guidelines, can disrupt WebView2's multi-process architecture by:
+
+<!-- ------------------------------ -->
+#### Symptoms of Enterprise configuration problems
+
+Enterprise security tools, if not following the best practices below, can disrupt WebView2's multi-process architecture by:
 
 * Blocking child processes.
 * Tightening folder Access Control Lists (ACLs).
@@ -340,7 +343,6 @@ See:
 
 <!-- ------------------------------ -->
 #### Slow startup
-<!-- draft doc: ## Symptoms ~~ -->
 
 Issues:
 * Slow startup due to deep real-time scanning of the WebView2 Runtime and the user data folder (UDF).
