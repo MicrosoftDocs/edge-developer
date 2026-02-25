@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/23/2026
+ms.date: 02/24/2026
 ---
 # Prevent security tools from blocking WebView2-hosted apps
 
@@ -97,7 +97,7 @@ See:
 
 WebView2 doesn't implement app-specific logic.
 
-WebView2 doesn't bypass enterprise security policies.
+WebView2 honors all Enterprise security policies.  If there are tools or policies which don't allow certain WebView2 DLLs to load, the Enterprise IT administrator needs to ensure that they update their policies.
 
 
 <!-- ====================================================================== -->
@@ -112,6 +112,57 @@ Prefer publisher rules.
 
 See:
 * [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
+
+
+<!-- ------------------------------ -->
+#### Initialization error
+
+There might be an initialization error, such as `E_FAIL`.  In this case, the WebView2 control fails to initialize, and the app content never loads.
+
+<!-- todo
+###### Solutions -->
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+
+
+<!-- ------------------------------ -->
+#### Runtime initialization is blocked
+
+Issue: Runtime initialization is blocked, for any of the following tools:
+
+* Windows Defender Application Control (WDAC).
+
+* AppLocker deny or hardened<!-- todo: clarify "deny or hardened --> Access Control Lists (ACLs).
+
+
+<!-- ---------- -->
+###### Symptoms
+
+* An immediate initialization error.
+
+* There are no child processes.
+
+* The view is blank.
+
+
+<!-- ---------- -->
+###### Solutions
+
+Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and host executables.
+
+See:
+* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp) - in Microsoft Teams troubleshooting.
+
+Use publisher rules.
+
+See:
+* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
+
+Restore default Access Control Lists (ACLs).
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -184,6 +235,25 @@ See:
 * [Manage user data folders](./user-data-folder.md)
 
 
+<!-- ------------------------------ -->
+#### Sign-in loop; state not persisted; settings don't persist; blank initial page
+
+In the case of a sign-in loop, state is not persisted when user data folder (UDF) writes are blocked.
+
+
+<!-- ---------- -->
+###### Solutions
+
+Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
+
+Avoid placing the WebView2 user data folder (UDF) on a network share.
+
+Ensure that Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.  _Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
+
+See:
+* [Manage user data folders](./user-data-folder.md)
+
+
 <!-- ====================================================================== -->
 ## Runtime folder access and child process creation
 
@@ -215,6 +285,45 @@ See:
 * [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
 
 
+<!-- ------------------------------ -->
+#### Crashes or freezing
+
+Crash or freeze tied to dynamic-link library (DLL) injection or blocked renderer, Graphics Processing Unit (GPU), or Crashpad.
+
+See:
+* [Handling process-related events in WebView2](./process-related-events.md)
+* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
+
+
+<!-- ------------------------------ -->
+#### Content never loads
+
+Issue: The main process starts, but content never loads, and the app freezes.
+
+Spawning of child processes is blocked or hooked.
+
+
+<!-- ---------- -->
+###### Solutions
+
+Permit WebView2 child processes:
+* Renderer.
+* Graphics Processing Unit (GPU).
+* Network.
+* Crashpad.
+
+These are the child processes that WebView2 instantiates.
+
+Avoid dynamic-link library (DLL) injection.
+
+Prefer Edge connectors.
+
+See:
+* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
+* [Handling process-related events in WebView2](./process-related-events.md)
+* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
+
+
 <!-- ====================================================================== -->
 ## Permit child processes
 
@@ -233,9 +342,29 @@ See:
 <!-- ====================================================================== -->
 ## Avoid broad, global exclusions
 
+
+<!-- ------------------------------ -->
+#### Slow startup
+<!-- draft doc: ## Symptoms ~~ -->
+
+Issues:
+* Slow startup due to deep real-time scanning of the WebView2 Runtime and the user data folder (UDF).
+* A transient white screen, when perform a navigation.
+* Aggressive real-time scanning.
+
+
+<!-- ---------- -->
+###### Solutions
+
+Configure **scoped exclusions** for WebView2 Runtime binaries and user data folder (UDF); avoid broad exclusions.
+
 Tune scanning with scoped exclusions for the WebView2 Runtime directory and user data folder (UDF).
 
 Avoid broad, global exclusions.
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Manage user data folders](./user-data-folder.md)
 
 
 <!-- ====================================================================== -->
@@ -298,6 +427,10 @@ See:
 <!-- ====================================================================== -->
 ## Align Transport Layer Security (TLS) inspection and proxy configuration
 
+Symptoms:
+* Transport Layer Security (TLS) errors (such as `ERR_CERT_*`).
+* Login redirect failures under interception.<!-- todo: clarify "under" -->
+
 Align Transport Layer Security (TLS) inspection and proxy configuration with Chromium-based browser requirements.
 
 If your environment uses TLS inspection, ensure that the inspection certificates are trusted by the operating system's certificate store. 
@@ -309,6 +442,33 @@ If your environment uses TLS inspection, ensure that the inspection certificates
 An example of using TLS inspection is SSL decryption by a firewall or proxy.
 
 If your environment routes traffic through a proxy server, ensure that WebView2 processes can reach the required endpoints through the proxy.
+
+
+<!-- ------------------------------ -->
+#### `ERR_CERT_*` error
+
+Issues:
+
+* `ERR_CERT_*` errors.
+
+* Sign-in loops (login loops).
+
+* Service workers failing.
+
+Network inspection vs. Transport Layer Security (TLS) inspection is misaligned.
+
+
+<!-- ---------- -->
+###### Solutions
+
+Install the enterprise proxy's root Certificate Authority (CA) so that WebView2 trusts intercepted HTTPS traffic.
+
+Ensure that authentication endpoints and Content Delivery Network (CDN) endpoints that are used by the WebView2 app are explicitly allowed.
+
+Validate authentication endpoints and Content Delivery Network (CDN) endpoints.
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -326,198 +486,6 @@ See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 * [Distribute your app and the WebView2 Runtime](./distribution.md)
-
-<!-- #### Evergreen WebView2 Runtime folder -->
-<!-- entry 2 in "Required executables and folders" section -->
-
-
-<!-- ====================================================================== -->
-## Don't apply Edge browser–only group policies
-
-Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
-
-Most such policies don't affect WebView2, and unsupported policies can break WebView2 features.
-
-
-<!-- ====================================================================== -->
-## Troubleshooting (Symptoms)
-<!-- draft doc: ## Symptoms -->
-
-Audience: IT administrators.
-
-The following symptoms are important, for IT administrators.
-
-
-<!-- ------------------------------ -->
-#### Blank or white embedded window
-<!-- draft doc: ## Symptoms -->
-
-If there is a blank or white embedded window, make sure WebView2 processes are present in Task Manager.
-
-See:
-* [Process model for WebView2 apps](./process-model.md)
-
-
-<!-- ------------------------------ -->
-#### Initialization error
-<!-- draft doc: ## Symptoms -->
-
-There might be an initialization error, such as `E_FAIL`.  In this case, the WebView2 control fails to initialize, and the app content never loads.
-
-<!-- todo
-###### Solutions -->
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-
-
-<!-- ------------------------------ -->
-#### Sign-in loop; state not persisted; settings don't persist; blank initial page
-<!-- draft doc: ## Symptoms -->
-
-In the case of a sign-in loop, state is not persisted when user data folder (UDF) writes are blocked.
-
-
-<!-- ---------- -->
-###### Solutions
-
-Allow writes to the app's user data folder; use per-app Controlled Folder Access (CFA) exceptions or Data Loss Prevention (DLP) exceptions.
-
-Avoid placing the WebView2 user data folder (UDF) on a network share.
-
-Ensure that Data Loss Prevention (DLP) policies do not misclassify normal browser data (such as cookies, cache, or local storage) as exfiltration attempts.  _Exfiltration_ is the unauthorized transfer of data from a system, network, or cloud environment to an external destination without permission.
-
-See:
-* [Manage user data folders](./user-data-folder.md)
-
-
-<!-- ------------------------------ -->
-#### Transport Layer Security (TLS) errors
-<!-- draft doc: ## Symptoms -->
-
-Transport Layer Security (TLS) errors (such as `ERR_CERT_*`).
-
-Login redirect failures under interception.<!-- todo: clarify "under" -->
-
-
-<!-- todo
-###### Solutions -->
-
-
-<!-- ------------------------------ -->
-#### Crashes or freezing
-<!-- draft doc: ## Symptoms -->
-
-Crash or freeze tied to dynamic-link library (DLL) injection or blocked renderer, Graphics Processing Unit (GPU), or Crashpad.
-
-<!-- todo
-###### Solutions -->
-
-See:
-* [Handling process-related events in WebView2](./process-related-events.md)
-* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
-
-
-<!-- ------------------------------ -->
-#### Slow startup
-<!-- draft doc: ## Symptoms -->
-
-Issue: Slow startup due to deep real-time scanning of the WebView2 Runtime and the user data folder (UDF).
-
-<!-- todo
-###### Solutions -->
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-
-
-<!-- ------------------------------ -->
-#### Runtime initialization is blocked
-
-Issue: Runtime initialization is blocked, for any of the following tools:
-
-* Windows Defender Application Control (WDAC).
-
-* AppLocker deny or hardened<!-- todo: clarify "deny or hardened --> Access Control Lists (ACLs).
-
-
-<!-- ---------- -->
-###### Symptoms
-
-* An immediate init<!-- todo: initialization? --> error.
-
-* There are no child processes.
-
-* The view is blank.
-
-
-<!-- ---------- -->
-###### Solutions
-
-Allowlist the WebView2 Runtime (`msedgewebview2.exe`) and host executables.
-
-See:
-* [Prevent antivirus and DLP tools from blocking or crashing Microsoft Teams](/troubleshoot/microsoftteams/teams-administration/include-exclude-teams-from-antivirus-dlp) - in Microsoft Teams troubleshooting.
-
-Use publisher rules.
-
-See:
-* [Understanding the publisher rule condition in AppLocker](/windows/security/application-security/application-control/app-control-for-business/applocker/understanding-the-publisher-rule-condition-in-applocker) - in Windows Security (Application Control for Windows).
-
-Restore default Access Control Lists (ACLs).
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-
-
-<!-- ------------------------------ -->
-#### Content never loads
-
-Issue: The main process starts, but content never loads, and the app freezes.
-
-Spawning of child processes is blocked or hooked.
-
-
-<!-- ---------- -->
-###### Solutions
-
-Permit renderer<!-- todo: what renderer? clarify -->, Graphics Processing Unit (GPU), network<!-- todo: what network? clarify -->, and Crashpad.
-
-Avoid dynamic-link library (DLL) injection.
-
-Prefer Edge connectors.
-
-See:
-* [Microsoft Edge for Business Security Connectors](/deployedge/microsoft-edge-connectors-overview) - in Microsoft Edge Enterprise documentation.
-* [Handling process-related events in WebView2](./process-related-events.md)
-* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
-
-
-<!-- ------------------------------ -->
-#### `ERR_CERT_*` error
-
-Network inspection vs. Transport Layer Security (TLS) inspection is misaligned.
-
-Issues:
-
-* `ERR_CERT_*` errors.
-
-* Sign-in loops (login loops).
-
-* Service workers failing.
-
-
-<!-- ---------- -->
-###### Solutions
-
-Install the enterprise proxy's root Certificate Authority (CA) so that WebView2 trusts intercepted HTTPS traffic.
-
-Ensure that authentication endpoints and Content Delivery Network (CDN) endpoints that are used by the WebView2 app are explicitly allowed.
-
-Validate authentication endpoints and Content Delivery Network (CDN) endpoints.
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ------------------------------ -->
@@ -547,26 +515,12 @@ The System32-based WebView2 Runtime must not be modified, replaced, quarantined,
 The System32-based WebView2 Runtime's default Access Control Lists (ACLs) must be preserved exactly as shipped.
 
 
-<!-- ------------------------------ -->
-#### Slow startup
+<!-- ====================================================================== -->
+## Don't apply Edge browser–only group policies
 
-Issues:
+Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
 
-* Slow startup.
-
-* A transient white screen, when perform a navigation.
-
-* Aggressive real-time scanning.
-
-
-<!-- ---------- -->
-###### Solutions
-
-Configure **scoped exclusions** for WebView2 Runtime binaries and user data folder (UDF); avoid broad exclusions.
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-* [Manage user data folders](./user-data-folder.md)
+Most such policies don't affect WebView2, and unsupported policies can break WebView2 features.
 
 
 <!-- ====================================================================== -->
@@ -592,21 +546,30 @@ The child processes include:
 * Network.
 * Crashpad.
 
-If no WebView2 child processes appear, the WebView2 Runtime or child process spawning is blocked: 
+If no WebView2 child processes appear, the WebView2 Runtime or child process spawning is blocked, due to one of the following being enabled on the machine:
 
-* Windows Defender Application Control (WDAC) injection.<!-- todo: what's this list? need lead-in/transition -->
+* Windows Defender Application Control (WDAC).
 
-* Endpoint Detection and Response (EDR) injection.
+* Endpoint Detection and Response (EDR).
 
 * Dynamic-link library (DLL) injection.
 
-If renderer (Graphics Processing Unit (GPU)) processes appear briefly and then disappear, the following might be terminating the renderer (Graphics Processing Unit (GPU)) processes:
+If renderer (or Graphics Processing Unit (GPU)) processes appear briefly and then disappear, the following might be terminating the renderer (or Graphics Processing Unit (GPU)) processes:
 
 * Endpoint Detection and Response (EDR) hooking.
 
 * Antivirus (AV) hooking.
 
 * Dynamic-link library (DLL) injection.
+
+
+<!-- ------------------------------ -->
+#### Blank or white embedded window
+
+If there is a blank or white embedded window, make sure WebView2 processes are present in Task Manager.
+
+See:
+* [Process model for WebView2 apps](./process-model.md)
 
 
 <!-- ------------------------------ -->
@@ -667,6 +630,8 @@ These process crashes are correlated with:
 
 Audience: IT administrators and security software vendors.
 
+Various types of apps can interact with WebView2.  The following are the applicability to different forms of WebView2.
+
 This article applies to the following tools or software:
 
 * The Microsoft Edge WebView2 Runtime (Evergreen and fixed-version).
@@ -682,14 +647,15 @@ See:
 
 
 <!-- ====================================================================== -->
-## Performance impact
-<!-- todo: better heading?  alts:
-## Performance impact
--->
+## Resolving performance issues
 
-<!-- todo: audience: is this for IT administrators, or security software vendors? -->
+Audience: IT administrators and security software vendors.  To use this section:
 
-Audience: IT administrators and security software vendors.
+1. The IT administrator uses this information to identify an issue that the IT administrator is seeing with launching or using WebView2 in their app, and figure out which security software is causing the issue.
+
+1. The IT administrator contacts the security software vendor.
+
+1. The security software vendor uses this content to figure out what they need to do to ensure that WebView2 is not blocked.
 
 Extensive scanning or hooking into processes can slow down startup and page loading times.
 
