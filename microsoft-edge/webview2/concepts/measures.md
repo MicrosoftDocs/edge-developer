@@ -16,49 +16,46 @@ These are best practices for IT administrators and security software vendors, to
 * [Overview](#overview)
    * [Platform boundary disclaimer](#platform-boundary-disclaimer)
 * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
+   * [Initialization error](#initialization-error)
+   * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
+      * [Symptoms](#symptoms)
+      * [Solutions](#solutions)
 * [Obtain the WebView2 Runtime](#obtain-the-webview2-runtime)
 * [Preserve default ACLs on Runtime folders and app's UDF](#preserve-default-acls-on-runtime-folders-and-apps-udf)
 * [App data](#app-data)
 * [Grant permission to write to the user data folder (UDF)](#grant-permission-to-write-to-the-user-data-folder-udf)
+   * [Sign-in loop; state not persisted; settings don't persist; blank initial page](#sign-in-loop-state-not-persisted-settings-dont-persist-blank-initial-page)
+      * [Solutions](#solutions-1)
 * [Runtime folder access and child process creation](#runtime-folder-access-and-child-process-creation)
 * [Don't inject DLLs into WebView2 processes](#dont-inject-dlls-into-webview2-processes)
+   * [Crashes or freezing](#crashes-or-freezing)
+   * [Content never loads](#content-never-loads)
+      * [Solutions](#solutions-2)
 * [Permit child processes](#permit-child-processes)
 * [Avoid broad, global exclusions](#avoid-broad-global-exclusions)
+   * [Slow startup](#slow-startup)
+      * [Solutions](#solutions-3)
 * [Trust internal proxy Certificate Authorities (CAs), and allow essential sign-in or Content Delivery Network (CDN) endpoints](#trust-internal-proxy-certificate-authorities-cas-and-allow-essential-sign-in-or-content-delivery-network-cdn-endpoints)
 * [Trust the WebView2 Runtime by signature](#trust-the-webview2-runtime-by-signature)
 * [System-provided WebView2 Runtime binary files](#system-provided-webview2-runtime-binary-files)
 * [Preserve Access Control Lists (ACLs) and Low Integrity Level (LowIL)](#preserve-access-control-lists-acls-and-low-integrity-level-lowil)
 * [Align Transport Layer Security (TLS) inspection and proxy configuration](#align-transport-layer-security-tls-inspection-and-proxy-configuration)
    * [SSL decryption by a firewall or proxy](#ssl-decryption-by-a-firewall-or-proxy)
-* [Allow updates of the Evergreen WebView2 Runtime](#allow-updates-of-the-evergreen-webview2-runtime)
-* [Don't apply Edge browser–only group policies](#dont-apply-edge-browseronly-group-policies)
-* [Troubleshooting (Symptoms)](#troubleshooting-symptoms)
-   * [Blank or white embedded window](#blank-or-white-embedded-window)
-   * [Initialization error](#initialization-error)
-   * [Sign-in loop; state not persisted; settings don't persist; blank initial page](#sign-in-loop-state-not-persisted-settings-dont-persist-blank-initial-page)
-      * [Solutions](#solutions)
-   * [Transport Layer Security (TLS) errors](#transport-layer-security-tls-errors)
-   * [Crashes or freezing](#crashes-or-freezing)
-   * [Slow startup](#slow-startup)
-   * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
-      * [Symptoms](#symptoms)
-      * [Solutions](#solutions-1)
-   * [Content never loads](#content-never-loads)
-      * [Solutions](#solutions-2)
    * [ERR_CERT_* error](#err_cert_-error)
-      * [Solutions](#solutions-3)
-   * [App only works with higher privilege](#app-only-works-with-higher-privilege)
       * [Solutions](#solutions-4)
-   * [Slow startup](#slow-startup-1)
+* [Allow updates of the Evergreen WebView2 Runtime](#allow-updates-of-the-evergreen-webview2-runtime)
+   * [App only works with higher privilege](#app-only-works-with-higher-privilege)
       * [Solutions](#solutions-5)
+* [Don't apply Edge browser–only group policies](#dont-apply-edge-browseronly-group-policies)
 * [Tools in which to check for the symptoms and causes](#tools-in-which-to-check-for-the-symptoms-and-causes)
    * [Task Manager](#task-manager)
+   * [Blank or white embedded window](#blank-or-white-embedded-window)
    * [Event Viewer](#event-viewer)
    * [Security logs](#security-logs)
    * [Diagnostics, crash reports, and process events](#diagnostics-crash-reports-and-process-events)
    * [Reliability Monitor](#reliability-monitor)
 * [Applicability to tools](#applicability-to-tools)
-* [Performance impact](#performance-impact)
+* [Resolving performance issues](#resolving-performance-issues)
 * [Why WebView2 appears in enterprise workloads](#why-webview2-appears-in-enterprise-workloads)
 * [See also](#see-also)
 
@@ -115,25 +112,17 @@ See:
 
 
 <!-- ------------------------------ -->
-#### Initialization error
-
-There might be an initialization error, such as `E_FAIL`.  In this case, the WebView2 control fails to initialize, and the app content never loads.
-
-<!-- todo
-###### Solutions -->
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
-
-
-<!-- ------------------------------ -->
 #### Runtime initialization is blocked
 
-Issue: Runtime initialization is blocked, for any of the following tools:
+Issues:
 
-* Windows Defender Application Control (WDAC).
+* There might be an initialization error, such as `E_FAIL`.  In this case, the WebView2 control fails to initialize, and the app content never loads.
 
-* AppLocker deny or hardened<!-- todo: clarify "deny or hardened --> Access Control Lists (ACLs).
+* Runtime initialization is blocked, for any of the following tools:
+
+   * Windows Defender Application Control (WDAC).
+
+   * AppLocker deny or hardened<!-- todo: clarify "deny or hardened --> Access Control Lists (ACLs).
 
 
 <!-- ---------- -->
@@ -223,7 +212,7 @@ See:
 <!-- ====================================================================== -->
 ## Grant permission to write to the user data folder (UDF)
 
-Give write permission to allow the WebView2 app<!-- todo: to allow x --> to write to the user data folder (UDF).
+Give write permission to allow the WebView2 app to write to the user data folder (UDF).
 
 These writes to the UDF can be from:
 
@@ -428,7 +417,9 @@ See:
 ## Align Transport Layer Security (TLS) inspection and proxy configuration
 
 Symptoms:
+
 * Transport Layer Security (TLS) errors (such as `ERR_CERT_*`).
+
 * Login redirect failures under interception.<!-- todo: clarify "under" -->
 
 Align Transport Layer Security (TLS) inspection and proxy configuration with Chromium-based browser requirements.
@@ -626,7 +617,6 @@ These process crashes are correlated with:
 
 <!-- ====================================================================== -->
 ## Applicability to tools
-<!-- todo: delete section?  was this list (at start of Doc) internal-only? -->
 
 Audience: IT administrators and security software vendors.
 
