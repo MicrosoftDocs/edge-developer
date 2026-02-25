@@ -19,7 +19,7 @@ These are best practices for IT administrators and security software vendors, to
 
 **Detailed contents:**
 * [Overview](#overview)
-   * [Platform boundary disclaimer](#platform-boundary-disclaimer)
+* [Update Enterprise security policies if needed](#update-enterprise-security-policies-if-needed)
 * [Allowlist the WebView2 Runtime and app's host executables](#allowlist-the-webview2-runtime-and-apps-host-executables)
    * [Runtime initialization is blocked](#runtime-initialization-is-blocked)
       * [Symptoms](#symptoms)
@@ -94,7 +94,7 @@ See:
 
 
 <!-- ====================================================================== -->
-## Update the Enterprise security policies
+## Update Enterprise security policies if needed
 
 WebView2 honors all Enterprise security policies.
 
