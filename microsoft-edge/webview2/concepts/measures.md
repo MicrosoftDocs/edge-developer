@@ -163,15 +163,12 @@ See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
-
 <!-- ====================================================================== -->
 ## Preserve default Access Control Lists (ACLs) on Runtime folders
 
-Preserve the default Access Control Lists (ACLs) on WebView2 Runtime folders.
-
 Don't modify the default Access Control Lists (ACLs) that Windows sets on the WebView2 Runtime folders.
 
-If security tools modify the ACLs on Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
+If security tools modify the ACLs on WebView2 Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
 
 See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
@@ -180,11 +177,11 @@ See:
 <!-- ====================================================================== -->
 ## Preserve Low Integrity Level (LowIL) on Runtime folders
 
-Preserve the Low Integrity Level (LowIL) settings on WebView2 Runtime folders.  WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
+Don't modify the Low Integrity Level (LowIL) settings on WebView2 Runtime folders.  WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
 
 A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
 
-* **Low Integrity Level (LowIL):** A Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
+_Low Integrity Level (LowIL)_ is a Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
 
 See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
@@ -195,7 +192,7 @@ See:
 
 Don't modify the default Access Control Lists (ACLs) that Windows sets on the app's user data folder (UDF).  Modifying these ACLs can prevent LowIL and AppContainer processes from functioning correctly.
 
-**AppContainer** is a more restrictive Windows sandbox that limits a process's access to only explicitly granted resources.  On supported OS versions, WebView2 might run renderer processes inside an `AppContainer`, for additional isolation.
+`AppContainer` is a more restrictive Windows sandbox that limits a process's access to only explicitly granted resources.  On supported OS versions, WebView2 might run renderer processes inside an `AppContainer`, for additional isolation.
 
 The `LowIL/AppContainer` must have the permission to:
 
@@ -211,7 +208,7 @@ These sandboxed processes must still be able to:
 
 * Write to the app's user data folder (UDF).
 
-If security tools tighten the Access Control Lists (ACLs) on these folders, sandboxed processes might lose the access they need, which can cause blank screens, initialization failures, or crashes.
+If security tools tighten the Access Control Lists (ACLs) on the app's user data folder (UDF), sandboxed processes might lose the access they need, which can cause blank screens, initialization failures, or crashes.
 
 System locations that are managed by the operating system (OS) are handled entirely by Windows, and must not be modified.
 
@@ -471,7 +468,7 @@ See:
 <!-- ------------------------------ -->
 #### App only works with higher privilege
 
-There's an Access Control List (ACL) mismatch with the Integrity Level
+There's an Access Control List (ACL) mismatch with the Integrity Level.
 
 Issue: The app works only at higher privilege.  The app fails in the following environments:
 
