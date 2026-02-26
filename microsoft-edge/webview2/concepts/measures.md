@@ -6,14 +6,10 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/25/2026
+ms.date: 02/26/2026
 ---
 # Prevent security tools from blocking WebView2-hosted apps
-
-<!--
-specify "the IT administrator" or "the security software vendor"
-instead of "you", b/c article has two distinct audiences
--->
+<!-- audience: specify "the IT administrator" or "the security software vendor" instead of "you"; article has two audiences -->
 
 These are best practices for IT administrators and security software vendors, to ensure that security tools are not blocking WebView2 App functionality or crashing WebView2-hosted apps.
 
@@ -131,11 +127,17 @@ Issues:
 
    * Windows Defender Application Control (WDAC).
 
-   * AppLocker deny or hardened<!-- todo: clarify "deny or hardened --> Access Control Lists (ACLs).
+   * AppLocker deny rules; policies that explicitly block execution.
+
+   * Access Control Lists (ACLs) that have been tightened beyond the default settings; permissions that have been made more restrictive than the OS defaults.
 
 
 <!-- ---------- -->
 ###### Symptoms
+
+* Transport Layer Security (TLS) errors, such as `ERR_CERT_*`.
+
+* Login redirect failures that occur when Transport Layer Security (TLS) inspection is enabled.
 
 * An immediate initialization error.
 
@@ -163,18 +165,39 @@ See:
 * [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
-<!-- ====================================================================== -->
-## Obtain the WebView2 Runtime
-<!-- entry 1 in "Required executables and folders" section -->
-
-To obtain the WebView2 Runtime (`msedgewebview2.exe`), see:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - Developer.microsoft.com.
-
 
 <!-- ====================================================================== -->
-## Preserve default ACLs on Runtime folders and app's UDF
+## Preserve default Access Control Lists (ACLs) on Runtime folders
 
-Preserve default Access Control Lists (ACLs) on WebView2 Runtime folders and the app's user data folder.
+Preserve the default Access Control Lists (ACLs) on WebView2 Runtime folders.
+
+Don't modify the default Access Control Lists (ACLs) that Windows sets on the WebView2 Runtime folders.
+
+If security tools modify the ACLs on Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+
+
+<!-- ====================================================================== -->
+## Preserve Low Integrity Level (LowIL) on Runtime folders
+
+Preserve the Low Integrity Level (LowIL) settings on WebView2 Runtime folders.  WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
+
+A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
+
+* **Low Integrity Level (LowIL):** A Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
+
+See:
+* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+
+
+<!-- ====================================================================== -->
+## Preserve default Access Control Lists (ACLs) on the app's user data folder (UDF)
+
+Don't modify the default Access Control Lists (ACLs) that Windows sets on the app's user data folder (UDF).  Modifying these ACLs can prevent LowIL and AppContainer processes from functioning correctly.
+
+**AppContainer** is a more restrictive Windows sandbox that limits a process's access to only explicitly granted resources.  On supported OS versions, WebView2 might run renderer processes inside an `AppContainer`, for additional isolation.
 
 The `LowIL/AppContainer` must have the permission to:
 
@@ -192,27 +215,7 @@ These sandboxed processes must still be able to:
 
 If security tools tighten the Access Control Lists (ACLs) on these folders, sandboxed processes might lose the access they need, which can cause blank screens, initialization failures, or crashes.
 
-* **Low Integrity Level (LowIL):** A Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
-
-* **AppContainer:** A more restrictive Windows sandbox that limits a process's access to only explicitly granted resources.  On supported OS versions, WebView2 may run renderer processes inside an `AppContainer` for additional isolation.
-
-Don't modify the default Access Control Lists (ACLs) that Windows sets on the WebView2 Runtime folders or the user data folder.  Modifying those ACLs can prevent LowIL and AppContainer processes from functioning correctly.
-
 System locations that are managed by the operating system (OS) are handled entirely by Windows, and must not be modified.
-
-See:
-* [Manage user data folders](./user-data-folder.md)
-
-
-<!-- ====================================================================== -->
-## App data
-<!-- entry 4 in "Required executables and folders" section -->
-
-Web content state lives in the app's user data folder (UDF).  Web content state includes:
-
-* Cookies.
-* Cache.
-* Local storage.
 
 See:
 * [Manage user data folders](./user-data-folder.md)
@@ -228,6 +231,11 @@ These writes to the UDF can be from:
 * Per-app Controlled Folder Access (CFA) exceptions.
 
 * Per-app Data Loss Prevention (DLP) exceptions.
+
+Web content state lives in the app's user data folder (UDF).  Web content state includes:
+* Cookies.
+* Cache.
+* Local storage.
 
 See:
 * [Manage user data folders](./user-data-folder.md)
@@ -253,14 +261,23 @@ See:
 
 
 <!-- ====================================================================== -->
-## Runtime folder access and child process creation
+## Allow Runtime folder access, child processes, and child process creation
 
 Audience: Security software vendors.
 
-Keep WebView2 Runtime folder access and child process creation unrestricted; permit Crashpad.
+Keep WebView2 Runtime folder access unrestricted.
+
+Permit child processes and don't terminate them.  The child processes include:
+
+* Renderer
+* Graphics Processing Unit (GPU)
+* Network
+* Crashpad
+
+Keep WebView2 Runtime child process creation unrestricted; permit Crashpad.
 
 See:
-* [Handling process-related events in WebView2](./process-related-events.md).
+* [Handling process-related events in WebView2](./process-related-events.md)
 * [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
 
 
@@ -323,21 +340,6 @@ See:
 
 
 <!-- ====================================================================== -->
-## Permit child processes
-
-Permit child processes and don't terminate them.  The child processes include:
-
-* Renderer
-* Graphics Processing Unit (GPU)
-* Network
-* Crashpad
-
-See:
-* [Handling process-related events in WebView2](./process-related-events.md)
-* [Crash Dumps](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/diagnostics/crash.md) - WebView2Feedback repo.
-
-
-<!-- ====================================================================== -->
 ## Avoid broad, global exclusions
 
 
@@ -389,36 +391,17 @@ Recognize and trust the WebView2 Runtime (`msedgewebview2.exe`) by signature; al
 
 
 <!-- ====================================================================== -->
-## System-provided WebView2 Runtime binary files
-<!-- entry 3 in "Required executables and folders" section -->
+## Don't modify WebView2 Runtime files that Windows components load from `C:\Windows\System32`
+
+Don't modify, quarantine, or replace WebView2 Runtime binary files that Windows components load directly from `C:\Windows\System32`.
 
 Some Windows components might load WebView2 Runtime binary files directly from `C:\Windows\System32`.  These binary files are owned by the operating system.
 
 These OS-owned WebView2 Runtime binary files:
 
-* Must not be modified, quarantined, or replaced.
-
 * Might not match the Evergreen WebView2 Runtime version that's used by desktop apps.
 
 * Are serviced exclusively through Windows Update, not through WebView2 installers.
-
-
-<!-- ====================================================================== -->
-## Preserve Access Control Lists (ACLs) and Low Integrity Level (LowIL)
-
-Preserve the default Access Control Lists (ACLs) and Low Integrity Level (LowIL) settings on WebView2 Runtime folders.
-
-WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
-
-If security tools modify the ACLs on Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
-
-A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
-Don't modify the default ACLs that the operating system sets on these folders.
-
-A Low integrity level process (LowIL) must Read/Execute enterprise management<!-- todo: clarify -->.
-
-See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -428,7 +411,7 @@ Symptoms:
 
 * Transport Layer Security (TLS) errors (such as `ERR_CERT_*`).
 
-* Login redirect failures under interception.<!-- todo: clarify "under" -->
+* Login redirect failures that occur when TLS inspection is enabled.
 
 Align Transport Layer Security (TLS) inspection and proxy configuration with Chromium-based browser requirements.
 
@@ -490,11 +473,13 @@ See:
 <!-- ------------------------------ -->
 #### App only works with higher privilege
 
-There's an Access Control List (ACL) mismatch with the Integrity level.
+There's an Access Control List (ACL) mismatch with the Integrity Level
 
-Issue: The App works only at higher privilege; the app fails for UWP/AppContainer<!-- todo: is this one item, or two items? -->.
+Issue: The app works only at higher privilege.  The app fails in the following environments:
 
-Universal Windows Platform (UWP)<!-- todo: use above? -->
+* **Universal Windows Platform (UWP)** — Apps that run inside the Windows app sandbox with restricted permissions.
+
+* **AppContainer** — A Windows security sandbox that limits a process's access to only explicitly granted resources.
 
 
 <!-- ---------- -->
@@ -517,9 +502,9 @@ The System32-based WebView2 Runtime's default Access Control Lists (ACLs) must b
 <!-- ====================================================================== -->
 ## Don't apply Edge browser–only group policies
 
-Do not apply Edge browser–only group policies just because of assuming that those policies affect WebView2.
-
-Most such policies don't affect WebView2, and unsupported policies can break WebView2 features.
+Most group policies that apply to Microsoft Edge don't affect WebView2, and unsupported policies can break WebView2 features.
+    
+Don't use Microsoft Edge–only group policies to affect WebView2.
 
 
 <!-- ====================================================================== -->
@@ -647,7 +632,12 @@ See:
 <!-- ====================================================================== -->
 ## Resolving performance issues
 
-Audience: IT administrators and security software vendors.  To use this section:
+Audience: IT administrators and security software vendors.
+
+
+<!-- ~~ -->
+
+To use this section:
 
 1. The IT administrator uses this information to identify an issue that the IT administrator is seeing with launching or using WebView2 in their app, and figure out which security software is causing the issue.
 
