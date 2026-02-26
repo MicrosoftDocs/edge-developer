@@ -1810,9 +1810,6 @@
                 - name: WebView
                   uid: 'WebView2Script!WebView:class'
 # -----------------------------------------------------------------------------
-        - name: WebView2 end-user FAQ
-          href: ./webview2/concepts/end-user-faq.md
-
         - name: Contact the WebView2 team
           href: ./webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
