@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/06/2026
+ms.date: 02/26/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,14 +25,22 @@ ms.date: 02/06/2026
 <!-- https://learn.microsoft.com/microsoft-edge/devtools/storage/cookies -->
 <!-- https://developer.chrome.com/docs/devtools/application/cookies -->
 
-
-<!-- todo: organize the new sections within the bottom h2 section "Identify and inspect third-party cookies" -->
-
-
 _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage.
 
 See also:
 * [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies) at MDN.
+
+**Detailed contents:**
+* [Open the Cookies pane](#open-the-cookies-pane)
+* [Fields](#fields)
+* [Filter cookies](#filter-cookies)
+* [Add a cookie](#add-a-cookie)
+* [Edit a cookie](#edit-a-cookie)
+* [Delete cookies](#delete-cookies)
+* [Identify and inspect third-party cookies](#identify-and-inspect-third-party-cookies)
+   * [View third-party cookies in the Application tool](#view-third-party-cookies-in-the-application-tool)
+   * [View blocked third-party cookies in the Application tool](#view-blocked-third-party-cookies-in-the-application-tool)
+   * [View blocked third-party cookies in the Network tool](#view-blocked-third-party-cookies-in-the-network-tool)
 
 
 <!-- ====================================================================== -->
@@ -47,7 +55,7 @@ See also:
 
 1. In the **Activity Bar**, select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
 
-1. In the outline on the left, in the **Storage** section, expand **Cookies**, then select an origin, such as `https://www.bing.com`:
+1. In the outline on the left, in the major **Storage** section, expand **Cookies**, then select an origin, such as `https://www.bing.com`:
 
    ![The Cookies pane](./cookies-images/open-cookies-select-source.png)
 
@@ -138,15 +146,10 @@ To delete all cookies, click **Clear all cookies** (![Clear all cookies icon](./
 <!-- https://developer.chrome.com/docs/devtools/application/cookies#3pc -->
 
 Third-party cookies are those set by a site that's different from the current top-level page.  Third-party cookies have the `SameSite=None` attribute.
-<!-- 
-this section is about third-party cookies in general
-the rest of the text is about blocked third-party cookies, which is a special kind of third-party cookies
-before discussing blocked third-party cookies, explain how to view third-party cookies generally, here
--->
 
-<!-- new: -->
 
-Third-party cookies are those set by a site that's different from the current top-level page.  Third-party cookies have the `SameSite=None` attribute.
+<!-- ------------------------------ -->
+#### View third-party cookies in the Application tool
 
 To view third-party cookies:
 
@@ -158,37 +161,29 @@ To view third-party cookies:
 
 1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
 
-1. Under the **Storage** section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
+1. On the left, under the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
 
    Third-party cookies are indicated in the table by the presence of the value **None** in the **SameSite** column.
 
-   ![todo image](./cookies-images/todo.png)
-
-<!-- / end of new -->
+   ![Third-party cookies in the Application tool](./cookies-images/3rd-party-cookies-application-tool.png)
 
 
 <!-- ------------------------------ -->
-#### View third-party cookies in the Application tool
-
-
-<!-- ------------------------------ -->
-#### View blocked third-party cookies
+#### View blocked third-party cookies in the Application tool
 
 Depending on your privacy settings, Microsoft Edge might prevent sites from using third-party cookies.
 
 DevTools lists blocked third-party cookies in **Application** > **Storage** > **Cookies** and shows a (![Information icon](./cookies-images/information-icon.png)) icon next to them.  Hover over the icon to see a tooltip.  Details are below.
 
-To view third-party cookies in the **Application** tool:
+To view third-party cookies in the **Application** tool:<!-- ok 2026/02/26 -->
 
 1. Go to a webpage that uses third-party cookies, such as [Bing.com](https://www.bing.com), in a new window or tab.
 
-1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
-   That step is to show the UI when Microsoft Edge blocks third-party cookies.
+   The Edge **Settings** tab opens, showing the **Privacy, search, and services** page.
 
-1. Temporarily turn on the **Block third-party cookies** toggle:
-
-   ![The "Block third-party cookies" toggle in Edge Settings](./cookies-images/block-third-party-cookies-toggle.png)
+1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
    If you don't want to turn on the **Block third-party cookies** toggle for your main, working browser:
 
@@ -202,11 +197,19 @@ To view third-party cookies in the **Application** tool:
 
    DevTools opens.
 
+<!-- 1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./cookies-images/customize-and-control-devtools-icon.png)), and then click **Doc location** > **Undock into separate window**. -->
+
+   <!-- DevTools moves to a dedicated window. -->
+
 1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
+
+1. Switch to the webpage window, such as Bing.com.
 
 1. Refresh the page.
 
-1. On the left, in the **Storage** major section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
+<!-- 1. Switch to the DevTools window. -->
+
+1. On the left, in the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
 
 1. In the table of cookies, scroll to a row that has an **Information** icon (![Information icon](./cookies-images/information-icon.png)).
 
@@ -218,25 +221,25 @@ To view third-party cookies in the **Application** tool:
   
    **Cleanup:**
 
-1. Select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
-1. Turn off the **Block third-party cookies** toggle.
+   The Edge **Settings** tab opens, showing the **Privacy, search, and services** page.
+
+1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
 
 <!-- ------------------------------ -->
-#### View third-party cookies in the Network tool
+#### View blocked third-party cookies in the Network tool
 
-To view third-party cookies in the **Network** tool:
+To view blocked third-party cookies in the **Network** tool:<!-- ok 2026/02/26, except no info icons -->
 
 1. Go to a webpage that uses third-party cookies, such as [Bing.com](https://www.bing.com), in a new window or tab.
 
-1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
-   That step is to show the UI when Microsoft Edge blocks third-party cookies.
+   The Edge **Settings** tab opens, showing the **Privacy, search, and services** page.
 
-1. Temporarily turn on the **Block third-party cookies** toggle:
-
-   ![The "Block third-party cookies" toggle in Edge Settings](./cookies-images/block-third-party-cookies-toggle.png)
+1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
    If you don't want to turn on the **Block third-party cookies** toggle for your main, working browser:
 
@@ -258,7 +261,7 @@ To view third-party cookies in the **Network** tool:
 
 1. In the **Name** list, scroll up to the topmost entry for the domain, such as the topmost **Bing.com** entry, and then select it.
 
-1. In the sidebar, select the **Cookies** tab:
+1. In the sidebar to the right, select the **Cookies** tab:
 
    ![Blocked cookies in the Network tool](./cookies-images/network-tool-blocked-cookies.png)
 
@@ -276,10 +279,11 @@ To view third-party cookies in the **Network** tool:
    
    **Cleanup:**
 
-1. Select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services** > **Cookies**.
+1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
-1. Turn off the **Block third-party cookies** toggle.
+   The Edge **Settings** tab opens, showing the **Privacy, search, and services** page.
 
+1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
 See also:
 * [Display cookies](../network/reference.md#display-cookies) in _Network features reference_.
