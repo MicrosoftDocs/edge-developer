@@ -23,7 +23,7 @@ WebView2 is a way for app developers to embed web content (such as HTML, JavaScr
 <!-- ====================================================================== -->
 ## What's the purpose of the WebView2 executable?
 
-WebView2 (`msedgewebview2.exe`) is a Microsoft product that is updated automatically (by using the _Evergreen_ distribution method) to ensure that your applications have the latest feature support and security fixes.
+The WebView2 executable (`msedgewebview2.exe`) is a Microsoft product that is updated automatically (by using the _Evergreen_ distribution method) to ensure that your applications have the latest feature support and security fixes.
 
 Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, and many more applications. Any application can use WebView2.
 
