@@ -24,11 +24,10 @@ ms.date: 02/26/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays, by using the [Inspect CSS Grid layouts](https://microsoftedge.github.io/Demos/devtools-grid/) demo webpage.
+This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.
 
 **Detailed contents:**
-* [Discover CSS grids](#discover-css-grids)
-   * [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage)
+* [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage)
 * [Align grid items and their content with the Grid Editor](#align-grid-items-and-their-content-with-the-grid-editor)
 * [Grid viewing options](#grid-viewing-options)
 * [Overlay display settings](#overlay-display-settings)
@@ -48,18 +47,14 @@ This article walks you through identifying CSS grids on a website and debugging 
 
 
 <!-- ====================================================================== -->
-## Discover CSS grids
-<!-- https://developer.chrome.com/docs/devtools/css/grid/#discover -->
+## Display the grid overlay in a rendered webpage
+<!-- Discover CSS grids  https://developer.chrome.com/docs/devtools/css/grid/#discover -->
 
 CSS Grid is a powerful layout paradigm for the web.  A good webpage to learn about CSS Grid and its features is [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
 
-
-<!-- ------------------------------ -->
-#### Display the grid overlay in a rendered webpage
-
 To use the grid overlay in a rendered webpage:
 
-1. Go to [Inspect CSS Grid layouts](https://microsoftedge.github.io/Demos/devtools-grid/) demo page in a new window or tab.
+1. Go to a page that uses CSS Grid layout, such as the [Inspect CSS Grid layouts](https://microsoftedge.github.io/Demos/devtools-grid/) demo page, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -79,7 +74,12 @@ To use the grid overlay in a rendered webpage:
 
    ![Toggle grid badge](./grid-images/grid-highlight-grid.png)
 
-   When grids are included on a webpage, the **Layout** tab in the **Elements** tool includes a **Grid / Grid Lanes** section that lists the grid containers:
+   Similarly, you can toggle the overlay of a subgrid with the **subgrid** badge.  See [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.
+   <!--
+   * [Subgrid](https://developer.chrome.com/docs/devtools/elements/badges#subgrid) in _Badges reference_ in Chrome DevTools docs.
+   -->
+
+   When a CSS grid is included on a webpage, the **Layout** tab in the **Elements** tool includes a **Grid / Grid Lanes** section that lists the grid containers:
 
    ![Layout pane](./grid-images/grid-layout-pane.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
 
