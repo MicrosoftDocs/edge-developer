@@ -225,7 +225,7 @@ For an example webpage, see [Scroll Snap Demo](https://mathiasbynens.github.io/c
 For the history of this feature in the Chromium open-source project, see Issue [862450](https://crbug.com/862450).
 
 See also:
-* [Inspect CSS Grid](../../../css/grid.md)
+* [Inspect CSS Grid layouts](../../../css/grid.md)
 * [CSS features reference](../../../css/reference.md)
 <!-- todo: it seems that related regular docs are needed for grid (has a page), flexbox, & scroll-snap.  the present section is all there is for scroll-snap per FTS of repo -->
 

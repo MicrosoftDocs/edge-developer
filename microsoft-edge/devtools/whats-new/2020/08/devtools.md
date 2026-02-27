@@ -78,7 +78,7 @@ Update: This feature has been released and is no longer experimental.<!-- To tur
 
 See also:
 * [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's new in DevTools (Microsoft Edge 85)_.
-* [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
+* [Inspect CSS Grid layouts](../../../css/grid.md)
 
 Chromium issue: [#1047356](https://crbug.com/1047356)
 

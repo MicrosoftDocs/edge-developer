@@ -181,7 +181,7 @@ When an HTML element on your page has `display: grid` or `display: inline-grid` 
 For the history of this feature in the Chromium open-source project, see Issue [1203241](https://crbug.com/1203241).
 
 See also:
-* [Inspect CSS Grid](../../../css/grid.md)
+* [Inspect CSS Grid layouts](../../../css/grid.md)
 
 
 <!-- ------------------------------ -->
