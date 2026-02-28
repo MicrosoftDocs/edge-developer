@@ -44,7 +44,7 @@ To try out the experiment with a sample, see [CSS Grid planner example](https://
 Chromium issue [#1047356](https://crbug.com/1047356)
 
 See also:
-* [Inspect CSS Grid](../../../css/grid.md)
+* [Inspect CSS Grid layouts](../../../css/grid.md)
 
 
 <!-- ------------------------------ -->

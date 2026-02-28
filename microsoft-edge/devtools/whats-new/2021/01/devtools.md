@@ -120,7 +120,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Inspect CSS Grid](../../../css/grid.md).
+* [Inspect CSS Grid layouts](../../../css/grid.md).
 
 
 <!-- ------------------------------ -->
@@ -147,7 +147,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Inspect CSS Grid](../../../css/grid.md).
+* [Inspect CSS Grid layouts](../../../css/grid.md).
 
 
 <!-- ====================================================================== -->
