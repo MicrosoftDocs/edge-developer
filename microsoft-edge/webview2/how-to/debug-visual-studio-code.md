@@ -99,7 +99,7 @@ Open `launch.json` and complete the following actions to use targeted WebView2 d
 When debugging your app, you might need to step through the code from the beginning of the rendering process.  If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Cannot debug two WebView2 controls at the same time
 
 After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time, because the CDP port is shared by all WebView2 controls, and uses a single port number.
@@ -257,7 +257,7 @@ WebView2 doesn't load source maps that are referenced by content which was loade
 You might encounter these scenarios when using the debugger.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Doesn't stop at breakpoint
 
 If the debugger doesn't stop at the breakpoint, and you have debug output: 
@@ -265,7 +265,7 @@ If the debugger doesn't stop at the breakpoint, and you have debug output:
 To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Can't attach to running process
 
 If you can't attach to a running process, and you get a timeout error:

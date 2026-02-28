@@ -314,7 +314,7 @@ We're setting up a few things here. The [ICoreWebView2Settings](/microsoft-edge/
 <!-- ------------------------------ -->
 #### Navigate to webpage
 
-You can navigate to a webpage by entering its URI in the Address bar. When pressing Enter, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location. Code below shows how the host Win32 application will handle that message.
+You can navigate to a webpage by entering its URI in the Address bar.  When pressing **Enter**, the controls WebView will post a web message to the host app so it can navigate the active tab to the specified location.  The following code shows how the host Win32 application will handle that message.
 
 ```cpp
         case MG_NAVIGATE:
@@ -525,9 +525,9 @@ function reloadActiveTabContent() {
 <!-- ------------------------------ -->
 #### Communicating the WebViews
 
-We need to communicate the WebViews that power the tabs and UI, so that user interactions in one tab's WebView have the desired effect in the other WebView.  WebView2Browser makes use of set of very useful WebView2 APIs for this purpose, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler).
+We need to communicate the WebViews that power the tabs and UI, so that user interactions in one tab's WebView have the desired effect in the other WebView.  To do this,  WebView2Browser uses WebView2 APIs, including [PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson), [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived) and [ICoreWebView2WebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventhandler).
 
-On the JavaScript side, we're making use of the `window.chrome.webview` object exposed to call the `postMessage` method and add an event lister for received messages.
+On the JavaScript side, we use the exposed `window.chrome.webview` object to call the `postMessage` method and add an event lister for received messages.
 
 ```cpp
 HRESULT BrowserWindow::CreateBrowserControlsWebView()
@@ -592,7 +592,7 @@ function reloadActiveTabContent() {
 <!-- ------------------------------ -->
 #### Tab handling
 
-A new tab will be created whenever the user clicks on the **new tab** button to the right of the open tabs. The control's WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
+A new tab is created whenever the user clicks the **New tab** button to the right of the open tabs. The control's WebView will post a message to the host application to create the WebView for that tab and create an object tracking its state.
 
 ```javascript
 function createNewTab(shouldBeActive) {

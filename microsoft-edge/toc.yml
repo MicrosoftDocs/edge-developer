@@ -1446,6 +1446,9 @@
             - name: Overview of WebView2 APIs
               href: ./webview2/concepts/overview-features-apis.md
 
+            - name: Overview of the components of the WebView2 platform
+              href: webview2/concepts/platform-components.md
+
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: ./webview2/concepts/environment-controller-core.md
 

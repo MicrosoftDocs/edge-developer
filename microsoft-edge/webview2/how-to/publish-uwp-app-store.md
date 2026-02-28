@@ -87,7 +87,7 @@ Once you're satisfied that your packaged app works, run the Windows App Certific
 1. After a few minutes, the Windows App Certification Kit (WACK) shows a results page.  If the app failed, click the link to review the results.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Resolving tests
 
 The results page of the Windows App Certification Kit (WACK) app shows any tests that need to be resolved.
