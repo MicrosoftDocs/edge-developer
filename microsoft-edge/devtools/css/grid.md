@@ -99,7 +99,7 @@ To align grid items and their content:
 
 1. In the DOM tree, select a node that has a **grid** badge, such as `<div class="fruit-box">`.
 
-1. In the **Elements** > **Styles** pane, find a CSS rule that has the **Open grid editor** button, such as the `.fruit-box` rule.
+1. In the **Elements** > **Styles** tab, find a CSS rule that has the **Open grid editor** button, such as the `.fruit-box` rule.
 
 1. In the CSS rule, next to `display: grid`, click the **Open grid editor** button.
 
@@ -219,7 +219,7 @@ The **Overlay display settings** section within the **Grid / Grid Lanes** sectio
 | **Show area names** | Displays or hides the names of the area, when names are provided. |
 | **Extend grid lines** | Displays or hides the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |
 
-The following sections explain these checkboxes.
+Details are below.
 
 
 <!-- ---------- -->
