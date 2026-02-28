@@ -84,12 +84,7 @@ To use the grid overlay in a rendered webpage:
    ![Layout pane](./grid-images/grid-layout-pane.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
 
 
-Use the **Grid / Grid Lanes** section to configure which information to display in grid overlays on the rendered webpage.  The **Grid / Grid Lanes** section in the **Layout** pane contains the following subsections:
-
-| Subsection | Purpose |
-| --- | --- |
-| **Overlay display settings** | Configures which information is displayed in the grid overlay. |
-| **Grid / Grid Lanes overlays** | Shows or hides the grid overlay for each grid container that's present on the webpage, and temporarily highlights a grid in the webpage. |
+Use the **Grid / Grid Lanes** section to configure which information to display in grid overlays on the rendered webpage.
 
 
 <!-- ====================================================================== -->
@@ -100,13 +95,25 @@ You can align grid items and their content with a click of a button instead of t
 
 To align grid items and their content:
 
-1. In the **Elements** > **Styles** pane, click the **Grid Editor** button next to `display: grid`.
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
-   <!--![Grid Editor button](grid-editor-button.png) todo -->
+1. In the DOM tree, select a node that has a **grid** badge, such as `<div class="fruit-box">`.
 
-1. In the **Grid Editor**, click the corresponding buttons to set the `align-*` and `justify-*` CSS properties for the grid items and their content.
+1. In the **Elements** > **Styles** pane, find a CSS rule that has the **Open grid editor** button, such as the `.fruit-box` rule.
 
-   <!--![Setting CSS properties](setting-css-properties.png) todo -->
+1. In the CSS rule, next to `display: grid`, click the **Open grid editor** button.
+
+   ![Grid Editor button](./grid-images/grid-editor-button.png)
+
+   The **Grid editor** pop-up opens, containing four sets of buttons as options:
+   * **align-content**
+   * **justify-content**
+   * **align-items**
+   * **justify-items**
+
+1. In the **Grid editor**, click the corresponding buttons to set the `align-*` and `justify-*` CSS properties for the grid items and their content.
+
+   ![Setting CSS properties](./grid-images//setting-css-properties.png)
 
 1. Observe the adjusted grid items and content in the viewport.
 
@@ -149,7 +156,7 @@ Select one of the following options from the dropdown list:
 | **Show line numbers** | Displays the numbers of the rows and columns for each grid overlay.  Selected by default. |
 | **Show line names** | Displays the names of the lines for each grid overlay when names are provided. |
 
-_Line numbers_ in CSS Grid are not line numbers in the HTML file; they are track numbers, like row and column numbering.
+In CSS Grid, _line numbers_ are used to identify the vertical and horizontal lines that separate rows and columns of a grid.  These line numbers are not for the lines of code in the HTML source file.
 
 The following sections explain the **Overlay display settings** dropdown list commands.
 
@@ -158,7 +165,7 @@ The following sections explain the **Overlay display settings** dropdown list co
 ###### Show line numbers
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#line-numbers -->
 
-_Line numbers_ in CSS Grid are not line numbers in the HTML file; they are track numbers, like row and column numbering.
+In CSS Grid, _line numbers_ are used to identify the vertical and horizontal lines that separate rows and columns of a grid.  These line numbers are not for the lines of code in the HTML source file.
 
 To show or hide line numbers (rows and columns):
 
