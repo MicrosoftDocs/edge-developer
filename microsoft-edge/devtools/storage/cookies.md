@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/26/2026
+ms.date: 02/27/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,8 +22,8 @@ ms.date: 02/26/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # View, edit, and delete cookies
-<!-- https://learn.microsoft.com/microsoft-edge/devtools/storage/cookies -->
 <!-- https://developer.chrome.com/docs/devtools/application/cookies -->
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/storage/cookies -->
 
 _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage.
 
@@ -150,6 +150,7 @@ Third-party cookies are those set by a site that's different from the current to
 
 <!-- ------------------------------ -->
 #### View third-party cookies in the Application tool
+<!-- not in upstream -->
 
 To view third-party cookies:
 
@@ -170,12 +171,13 @@ To view third-party cookies:
 
 <!-- ------------------------------ -->
 #### View blocked third-party cookies in the Application tool
+<!-- not in upstream -->
 
 Depending on your privacy settings, Microsoft Edge might prevent sites from using third-party cookies.
 
 DevTools lists blocked third-party cookies in **Application** > **Storage** > **Cookies** and shows a (![Information icon](./cookies-images/information-icon.png)) icon next to them.  Hover over the icon to see a tooltip.  Details are below.
 
-To view third-party cookies in the **Application** tool:<!-- ok 2026/02/26 -->
+To view third-party cookies in the **Application** tool:
 
 1. Go to a webpage that uses third-party cookies, such as [Bing.com](https://www.bing.com), in a new window or tab.
 
@@ -230,8 +232,9 @@ To view third-party cookies in the **Application** tool:<!-- ok 2026/02/26 -->
 
 <!-- ------------------------------ -->
 #### View blocked third-party cookies in the Network tool
+<!-- not in upstream -->
 
-To view blocked third-party cookies in the **Network** tool:<!-- ok 2026/02/26, except no info icons -->
+To view blocked third-party cookies in the **Network** tool:
 
 1. Go to a webpage that uses third-party cookies, such as [Bing.com](https://www.bing.com), in a new window or tab.
 
@@ -265,25 +268,29 @@ To view blocked third-party cookies in the **Network** tool:<!-- ok 2026/02/26, 
 
    ![Blocked cookies in the Network tool](./cookies-images/network-tool-blocked-cookies.png)
 
-1. In the **Same site** column, look for **None**, which means a third-party cookie.
+1. Select the **Show filtered-out request cookies** checkbox.
 
-   The **Network** tool highlights cookies that have issues, and shows an information (![Information icon](./cookies-images/information-icon.png)) icon next to cookies that are affected (blocked), where third-party cookies are not available.  For example, the information (![Information icon](./cookies-images/information-icon.png)) icon might appear in the **Domain** column and **Path** column.
-   <!-- no info icons appear
-   Tried Stable & Canary.
-   Tried turn Block Cookies toggle on/off.
-   Tried Refresh the page, wait, then blick bing under Names.
-   Tried widening columns.
-   Tried Disable cache selected or cleared.
-   Tried turning on/off optional page content in Bing page UI.
-   -->
-   
+   The **Network** tool highlights cookies that have issues, and shows an information (![Information icon](./cookies-images/information-icon.png)) icon next to cookies that are affected (blocked), where third-party cookies are not available.  For example, the information (![Information icon](./cookies-images/information-icon.png)) icon might appear in the **Domain** column and **Path** column:
+
+   ![Information icon tooltip on blocked cookie rows](./cookies-images/info-icon-tooltip.png)
+
+   The tooltip in the **Domain** column reads, for example:
+
+   "This cookie was blocked because neither did the request URL's domain exactly match the cookie's domain, nor was the request URL's domain a subdomain of the cookie's Domain attribute value."
+
+   The tooltip in the **Path** column reads, for example:
+
+   "This cookie was blocked because its path was not an exact match for or a superdirectory of the request url's path."
+
    **Cleanup:**
+
+1. In the **Network** tool, in the **Cookies** tab, clear the **Show filtered-out request cookies** checkbox.
 
 1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
    The Edge **Settings** tab opens, showing the **Privacy, search, and services** page.
 
-1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
+1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn off the **Block third-party cookies** toggle.
 
 See also:
 * [Display cookies](../network/reference.md#display-cookies) in _Network features reference_.
