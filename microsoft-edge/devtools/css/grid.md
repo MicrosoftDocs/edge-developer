@@ -37,7 +37,7 @@ This article walks you through identifying CSS grids on a website and debugging 
    * [Show track sizes](#show-track-sizes)
    * [Show area names](#show-area-names)
    * [Extend grid lines](#extend-grid-lines)
-* [Grid overlays](#grid--grid-lanes-overlays)
+* [Grid overlays](#grid-overlays)
    * [Enable overlay views of multiple grids](#enable-overlay-views-of-multiple-grids)
    * [Customize the grid overlay color](#customize-the-grid-overlay-color)
    * [Highlight the grid element in the webpage and DOM tree](#highlight-the-grid-element-in-the-webpage-and-dom-tree)
@@ -137,7 +137,7 @@ To align CSS grid items and their content:
 The **Grid / Grid Lanes** section in the **Layout** pane contains two subsections:
 
 * [Overlay display settings](#overlay-display-settings)
-* [Grid / Grid Lanes overlays](#grid--grid-lanes-overlays)
+* [Grid overlays](#grid-overlays)
 
 Details are below.
 
