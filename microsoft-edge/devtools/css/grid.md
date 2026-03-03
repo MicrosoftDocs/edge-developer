@@ -31,15 +31,13 @@ This article walks you through identifying CSS grids on a website and debugging 
 * [Align grid items and their content with the Grid Editor](#align-grid-items-and-their-content-with-the-grid-editor)
 * [Grid viewing options](#grid-viewing-options)
 * [Overlay display settings](#overlay-display-settings)
-   * [Dropdown list](#dropdown-list)
-      * [Show line numbers](#show-line-numbers)
-      * [Hide line labels](#hide-line-labels)
-      * [Show line names](#show-line-names)
-   * [Checkboxes](#checkboxes)
-      * [Show track sizes](#show-track-sizes)
-      * [Show area names](#show-area-names)
-      * [Extend grid lines](#extend-grid-lines)
-* [Grid / Grid Lanes overlays](#grid--grid-lanes-overlays)
+   * [Show line numbers](#show-line-numbers)
+   * [Hide line labels](#hide-line-labels)
+   * [Show line names](#show-line-names)
+   * [Show track sizes](#show-track-sizes)
+   * [Show area names](#show-area-names)
+   * [Extend grid lines](#extend-grid-lines)
+* [Grid overlays](#grid--grid-lanes-overlays)
    * [Enable overlay views of multiple grids](#enable-overlay-views-of-multiple-grids)
    * [Customize the grid overlay color](#customize-the-grid-overlay-color)
    * [Highlight the grid element in the webpage and DOM tree](#highlight-the-grid-element-in-the-webpage-and-dom-tree)
@@ -62,60 +60,74 @@ To use the grid overlay in a rendered webpage:
 
 1. In the DOM tree, expand **body** > **main**.
 
-   `<body>` and a couple of `<div>` elements have a **grid** badge on them.
-
-   When an HTML element in the webpage has `display: grid` or `display: inline-grid` applied to it, a **grid** badge is displayed next to the element in the DOM tree in the **Elements** tool:
+   The `<div>` elements have a **grid** badge:
 
    ![Discover grid](./grid-images/grid-discover-grid.png)
 
-1. Click the **grid** badge next to an element, such as `<div class="fruit-box">`.
-      
-   A grid overlay is displayed over that element in the rendered webpage.  The overlay appears over the element, and shows the position of the grid lines (rows and columns) and tracks:
+   When an HTML element in the webpage has `display: grid` or `display: inline-grid` applied to it, a **grid** badge is displayed next to the element in the DOM tree in the **Elements** tool.
+
+1. Click the **grid** badge next to an element, such as `<div class="fruit-box">`:
 
    ![Toggle grid badge](./grid-images/grid-highlight-grid.png)
 
-   Similarly, you can toggle the overlay of a subgrid with the **subgrid** badge.  See [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.
-   <!--
-   * [Subgrid](https://developer.chrome.com/docs/devtools/elements/badges#subgrid) in _Badges reference_ in Chrome DevTools docs.
-   -->
+   A grid overlay is displayed over the element in the rendered webpage.  The **grid** badge changes from blue text on white background, to white text on blue background.
 
-   When a CSS grid is included on a webpage, the **Layout** tab in the **Elements** tool includes a **Grid / Grid Lanes** section that lists the grid containers:
+   In the rendered webpage, the CSS Grid overlay appears on a layer in front of the webpage element.  The CSS Grid overlay shows the position of the grid lines (rows and columns) and tracks.
 
-   ![Layout pane](./grid-images/grid-layout-pane.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+   If you click the **grid** badge multiple times, it turns on and off.
 
+   Similarly, sometimes there's a **subgrid** badge.  You can toggle the GSS Grid overlay on a subgrid, by clicking the **subgrid** badge.  See [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.<!-- [Subgrid](https://developer.chrome.com/docs/devtools/elements/badges#subgrid) in _Badges reference_ in Chrome DevTools docs. -->
 
-Use the **Grid / Grid Lanes** section to configure which information to display in grid overlays on the rendered webpage.
+1. Click the **Layout** tab, which is grouped with the **Styles** tab in the **Elements** tool:
+
+   ![Layout pane](./grid-images/grid-layout-pane.png)<!-- 1st use -->
+
+   The **Layout** tab includes a **Grid / Grid Lanes** section, which includes:
+
+   * A dropdown list.
+   * Checkboxes for display options.
+   * A checkbox for each element that contains a CSS grid.
+
+   When a webpage uses a CSS grid, the **Layout** tab includes the **Grid / Grid Lanes** section.  Use the **Grid / Grid Lanes** section to configure which information to display in grid overlays on the rendered webpage.
 
 
 <!-- ====================================================================== -->
 ## Align grid items and their content with the Grid Editor
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#grid-editor -->
 
-You can align grid items and their content with a click of a button instead of typing CSS rules.
+You can align CSS grid items and their content by just clicking a button, rather than having to directly define CSS rules.
 
-To align grid items and their content:
+To align CSS grid items and their content:
 
 1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
-1. In the DOM tree, select a node that has a **grid** badge, such as `<div class="fruit-box">`.
+   As a result, the **Layout** tab is selected, for an element in the DOM tree (such as `<div class="fruit-box">`) that has a **grid** badge.
 
-1. In the **Elements** > **Styles** tab, find a CSS rule that has the **Open grid editor** button, such as the `.fruit-box` rule.
+1. Select the **Styles** tab.
 
-1. In the CSS rule, next to `display: grid`, click the **Open grid editor** button.
+1. Find a CSS rule that has the **Open grid editor** button, such as the `.fruit-box` rule:
 
    ![Grid Editor button](./grid-images/grid-editor-button.png)
 
-   The **Grid editor** pop-up opens, containing four sets of buttons as options:
+1. In the CSS rule, next to `display: grid`, click the **Open grid editor** button.
+
+   The **Grid editor** popup opens:
+
+   ![Setting CSS properties](./grid-images//setting-css-properties.png)
+
+   The **Grid editor** popup contains four sets of buttons as options:
    * **align-content**
    * **justify-content**
    * **align-items**
    * **justify-items**
 
-1. In the **Grid editor**, click the corresponding buttons to set the `align-*` and `justify-*` CSS properties for the grid items and their content.
+   Within each set of buttons, the buttons are mutually exclusive option buttons.  If you click an option button twice, no option button is selected in that set, and the value returns to **normal**.
 
-   ![Setting CSS properties](./grid-images//setting-css-properties.png)
+1. In the **Grid editor**, in any set of buttons, click a button.  To return to **normal**, click a button twice.
 
-1. Observe the adjusted grid items and content in the viewport.
+   The button's foreground color changes from black to blue, and the value changes from **normal** to the selected value.
+
+   The grid items and content are re-rendered in the viewport.
 
 
 <!-- ====================================================================== -->
@@ -134,44 +146,36 @@ Details are below.
 ## Overlay display settings
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#display-settings -->
 
-In the **Layout** pane, in the expandable **Grid / Grid Lanes** section, the **Overlay display settings** section contains the following UI:
+In the **Element** tool's **Layout** pane, in the expandable **Grid / Grid Lanes** section, there' an **Overlay display settings** section:
 
-* [Dropdown list](#dropdown-list)
-* [Checkboxes](#checkboxes)
+   ![Layout pane](./grid-images/grid-layout-pane.png)<!-- 2nd use -->
+
+The **Overlay display settings** section consists of two parts:
+
+* A dropdown list, containing the following commands:
+
+   * **Hide line labels** - Hide the line labels for each grid overlay.
+   * **Show line numbers** - Show the line numbers for each grid overlay (selected by default).
+   * **Show line names** - Show the line names for each grid overlay in the case of grids with line names.
+
+* Checkboxes:
+
+   * **Show track sizes** - Toggle to show or hide track sizes.
+   * **Show area names** - Toggle to show or hide area names, in the case of grids with named grid areas.
+   * **Extend grid lines** - By default, grid lines are only shown inside the element that has `display: grid` or `display: inline-grid` set on it.  When you turn on this option, the grid lines extend to the edge of the viewport along each axis.
 
 Details are below.
 
-To get started, see [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
-
 
 <!-- ------------------------------ -->
-#### Dropdown list
-<!-- https://developer.chrome.com/docs/devtools/css/grid/#display-settings -->
-
-Select one of the following options from the dropdown list:
-
-| List item | Description |
-|:--- |:--- |
-| **Hide line labels** | Hides the labels of the lines for each grid overlay. |
-| **Show line numbers** | Displays the numbers of the rows and columns for each grid overlay.  Selected by default. |
-| **Show line names** | Displays the names of the lines for each grid overlay when names are provided. |
-
-In CSS Grid, _line numbers_ are used to identify the vertical and horizontal lines that separate rows and columns of a grid.  These line numbers are not for the lines of code in the HTML source file.
-
-The following sections explain the **Overlay display settings** dropdown list commands.
-
-
-<!-- ---------- -->
-###### Show line numbers
+#### Show line numbers
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#line-numbers -->
 
-In CSS Grid, _line numbers_ are used to identify the vertical and horizontal lines that separate rows and columns of a grid.  These line numbers are not for the lines of code in the HTML source file.
+You can show or hide line numbers (rows and columns) in the grid overlay in the rendered webpage.  In CSS Grid, _line numbers_ are used to identify the vertical and horizontal lines that separate rows and columns of a CSS grid.  These line numbers are not for the lines of code in the HTML source file.
 
-To show or hide line numbers (rows and columns):
+To show or hide line numbers (rows and columns) in the grid overlay:
 
 1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
-
-1. In **Elements** tool, select the **Layout** tab.
 
 1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection > **Show line labels** dropdown list, select **Show line numbers**.  This is selected by default.
 
@@ -183,127 +187,186 @@ To show or hide line numbers (rows and columns):
 By default, the positive and negative line numbers (rows and columns) are displayed on the grid overlay.  For information about negative numbers in the grid overlay, see [Counting backwards](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement#counting_backwards) in _Grid layout using line-based placement_ at MDN.
 
 
-<!-- ---------- -->
-###### Hide line labels
+<!-- ------------------------------ -->
+#### Hide line labels
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#line-labels -->
 
-In the dropdown list, select **Hide line labels** to hide the labels of the lines for each grid overlay:
+To hide line labels in the grid overlay:
 
-![Hide line labels](./grid-images/grid-hide-line-labels.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
+1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection > **Show line labels** dropdown list, select **Hide line labels**:
 
-<!-- ---------- -->
-###### Show line names
-<!-- https://developer.chrome.com/docs/devtools/css/grid/#line-names -->
+   ![Hide line labels](./grid-images/grid-hide-line-labels.png)
 
-In the dropdown list, select **Show line names** to view the line names instead of numbers; this displays the names of the lines for each grid overlay when names are provided:
-
-![Show line names](./grid-images/grid-show-line-names.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
-
-In the above example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
-
-For more information about line names in the grid overlay, see [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) at MDN.
-
-<!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->
+   The labels of the lines (rows/columns) are hidden, on every grid overlay.
 
 
 <!-- ------------------------------ -->
-#### Checkboxes
-<!-- https://developer.chrome.com/docs/devtools/css/grid/#display-settings -->
+#### Show line names
+<!-- https://developer.chrome.com/docs/devtools/css/grid/#line-names -->
 
-The **Overlay display settings** section within the **Grid / Grid Lanes** section in the **Layout** pane contains the following checkboxes:
+In the grid overlay in the rendered webpage, you can show line names.  This makes it easier to visualize the start and end position of an element.
 
-| Checkbox | Description |
-|:--- |:--- |
-| **Show track sizes**  | Displays or hides the sizes of the tracks. |
-| **Show area names** | Displays or hides the names of the area, when names are provided. |
-| **Extend grid lines** | Displays or hides the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |
+To show line names in the grid overlay:
 
-Details are below.
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
+1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection > **Show line labels** dropdown list, select **Show line names**:
 
-<!-- ---------- -->
-###### Show track sizes
+   ![Show line names](./grid-images/grid-show-line-names.png)
+
+   Line names instead of numbers are displayed.  This option displays the names of the lines for each grid overlay, if names are provided.
+
+   In the above example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
+
+   In the demo, the **Orange** element spans from left to right, via `grid-column: left` and `grid-column: right` CSS rules.
+
+See also:
+* [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) at MDN.
+   
+
+<!-- ------------------------------ -->
+#### Show track sizes
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#track-sizes -->
 
-To view the track sizes of the grid, select the **Show track sizes** checkbox:
+In the grid overlay in the rendered webpage, you can show track sizes.<!-- todo: clarify the overlay ui -->
 
-![Show track sizes](./grid-images/grid-show-track-sizes.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+To show track sizes in the grid overlay:
 
-The `[authored size]` and `[computed size]` are then displayed in each line label.
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
-| Size | Details |
-|:--- |:--- |
-| **authored size** | The size defined in stylesheet (omitted if not defined). |
-| **computed size** | The actual size on screen. |
+1. In the **Elements** tool's **Layout** tab, in the **Grid / Grid Lanes** section, in the **Grid / Grid Lanes overlays** subsection, select the checkbox for each element on which to show the grid overlay.  For example, select the checkbox next to `div.fruit-box` and `div.snack-box`.
 
-In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.  Therefore, the column line labels display both authored and computed sizes:
+1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection, select the **Show track sizes** checkbox:
 
-| Track size | Authored size | Computed size |
-|:--- |:--- |:--- |
-| **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
-| **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
+   ![Show track sizes](./grid-images/grid-show-track-sizes.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
-The line labels on the rows display only computed sizes, since there are no row sizes defined in the stylesheet:
+   The `[authored size]` and `[computed size]` are then displayed in each line label.
 
-| Track size | Authored size | Computed size |
-|:--- |:--- |:--- |
-| **40px** | &nbsp;| 40px |
-| **40px** | &nbsp;| 40px |
+   | Size | Details |
+   |:--- |:--- |
+   | **authored size** | The size defined in stylesheet (omitted if not defined). |
+   | **computed size** | The actual size on screen. |
+
+  In the demo, the column sizes are defined as follows, in the CSS property `grid-template-columns`:
+
+   ```css
+   .fruit-box {
+   display: grid;
+   grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
+   ...
+   }
+
+   .snack-box {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   ...
+   }
+   ```
+
+   Line labels on the grid columns, for the demo's element `<div class="snack-box">`:
+
+   | Track size | Authored size | Computed size |
+   |:--- |:--- |:--- |
+   | **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
+   | **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
+
+   The line labels on the grid columns display both authored and computed sizes, because column sizes have been authored (specified), in the CSS property `grid-template-columns`.
+
+   Line labels on the grid rows, for the demo's element `<div class="snack-box">`:
+
+   | Track size | Authored size | Computed size |
+   |:--- |:--- |:--- |
+   | **40px** | n/a | 40px |
+   | **40px** | n/a | 40px |
+
+   The line labels on the grid rows display only computed sizes, not authored sizes, since there are no row sizes defined in the CSS stylesheet (via the CSS property `grid-template-rows`)
+
+See also:
+* [grid-template-columns](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-columns) at MDN.
+* [grid-template-rows](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-rows) at MDN.
 
 
-<!-- ---------- -->
-###### Show area names
+<!-- ------------------------------ -->
+#### Show area names
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#area-names -->
 
-To view the area names, select the **Show area names** checkbox:
+In the grid overlay in the rendered webpage, you can show area names, such as **top**, **bottom1** and **bottom2**.<!-- todo: clarify the resulting overlay UI -->
 
-![Show area names](./grid-images/grid-show-area-names.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+To show area names:
+
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
+
+1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection, select the **Show area names** checkbox:
+
+   ![Show area names](./grid-images/grid-show-area-names.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
 In the above example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.
 
 
-<!-- ---------- -->
-###### Extend grid lines
+<!-- ------------------------------ -->
+#### Extend grid lines
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#extend-grid-lines -->
 
-To extend the grid lines to the edge of the viewport along each axis, select the **Extend grid lines** checkbox:
+You can extend the grid overlay's grid lines to the edge of the viewport, along each axis.
 
-![Extend grid lines](./grid-images/grid-extend-grid-lines.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+To extend the grid lines:
+
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
+
+1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection, select the **Extend grid lines** checkbox:
+
+   ![Extend grid lines](./grid-images/grid-extend-grid-lines.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
 
 <!-- ====================================================================== -->
-## Grid / Grid Lanes overlays
+## Grid overlays
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#overlays -->
 
-The **Grid / Grid Lanes overlays** section contains a list of grids that are present on the webpage, each with a checkbox, along with various options.
-
-To get started, see [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
+In the **Elements** tool's **Layout** tab (grouped with the **Styles** tab), the **Grid / Grid Lanes overlays** section contains a list of elements that have a CSS grid.  Each grid has checkbox, along with various options.
 
 
 <!-- ------------------------------ -->
 #### Enable overlay views of multiple grids
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#view-multiple-grids -->
 
+To enable overlay views of multiple grids:
 
-To display the overlay grid for multiple grids, select the checkbox next to each name of the grid:
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
-![Enable overlay views of multiple grids](./grid-images/grid-grid-overlays.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+1. In the **Grid / Grid Lanes** section > **Grid / Grid Lanes overlays** subsection, select the checkbox next to each name of multiple grids:
 
-In the above example, there are three grid overlays enabled, each grid represented with a different color in the rendered webpage:
+   ![Enable overlay views of multiple grids](./grid-images/grid-grid-overlays.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
-*  `body` - the gold grid overlay.
-*  `div.fruit-box` - the pink grid overlay.
-*  `div.snack-box` - the blue grid overlay.
+   A CSS Grid overlay is displayed for each selected element that has a CSS grid.  In the above example, three grid overlays are enabled.  Each CSS grid has a different color in the rendered webpage:
+
+   * `body` - the gold grid overlay.
+   * `div.fruit-box` - the pink grid overlay.
+   * `div.snack-box` - the blue grid overlay.
 
 
 <!-- ------------------------------ -->
 #### Customize the grid overlay color
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#customize-overlay-color -->
 
-To open the color picker and customize the grid overlay color, click the box next to the name of the grid overlay:
+To customize the grid overlay color:
 
-![Customize the grid overlay color](./grid-images/grid-grid-overlays-color.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
+
+1. In the **Grid / Grid Lanes** section > **Grid / Grid Lanes overlays** subsection, click the **Choose the overlay color for this element** box next to an element name:
+
+   ![Customize the grid overlay color](./grid-images/grid-grid-overlays-color.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
+
+   The color picker opens.
+
+See also:
+* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 
 
 <!-- ------------------------------ -->
@@ -312,11 +375,14 @@ To open the color picker and customize the grid overlay color, click the box nex
 
 To scroll to a grid layout in the rendered webpage and select the element that has the grid layout in the DOM tree:
 
-* In the **Grid / Grid Lanes overlays** section, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to the element name:
+1. Do the steps in [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage), above.
 
-![Highlight the grid on the rendered webpage](./grid-images/grid-grid-overlays-highlight.png)<!-- todo: give steps to repro this screenshot on user's machine: -->
+1. In the **Grid / Grid Lanes** section > **Grid / Grid Lanes overlays** subsection, click the **Show element in the Elements panel** (![Show element in the Elements panel icon](./grid-images/show-element-in-element-panel-icon.png)) button next to an element name:
 
-This works regardless of whether the element's checkbox is selected or cleared.
+   ![Highlight the grid on the rendered webpage](./grid-images/grid-grid-overlays-highlight.png)
+   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
+
+   This works regardless of whether the element's checkbox is selected or cleared.
 
 
 <!-- ====================================================================== -->
@@ -330,6 +396,8 @@ MDN:
 * [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
    * [Grid layout using line-based placement](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid)
    * [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
+* [grid-template-columns](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-columns)
+* [grid-template-rows](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-rows)
 
 
 <!-- ====================================================================== -->
