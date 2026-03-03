@@ -146,23 +146,23 @@ Details are below.
 ## Overlay display settings
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#display-settings -->
 
-In the **Element** tool's **Layout** pane, in the expandable **Grid / Grid Lanes** section, there' an **Overlay display settings** section:
+In the **Element** tool's **Layout** pane, in the expandable **Grid / Grid Lanes** section, there' an **Overlay display settings** subsection:
 
-   ![Layout pane](./grid-images/grid-layout-pane.png)<!-- 2nd use -->
+![Layout pane](./grid-images/grid-layout-pane.png)<!-- 2nd use -->
 
-The **Overlay display settings** section consists of two parts:
+The **Overlay display settings** subsection consists of two parts:
 
 * A dropdown list, containing the following commands:
 
-   * **Hide line labels** - Hide the line labels for each grid overlay.
-   * **Show line numbers** - Show the line numbers for each grid overlay (selected by default).
-   * **Show line names** - Show the line names for each grid overlay in the case of grids with line names.
+   * [Hide line labels](#hide-line-labels) - Hide the line labels for each grid overlay.
+   * [Show line numbers](#show-line-numbers) - Show the line numbers for each grid overlay (selected by default).
+   * [Show line names](#show-line-names) - Show the line names for each grid overlay in the case of grids with line names.
 
 * Checkboxes:
 
-   * **Show track sizes** - Toggle to show or hide track sizes.
-   * **Show area names** - Toggle to show or hide area names, in the case of grids with named grid areas.
-   * **Extend grid lines** - By default, grid lines are only shown inside the element that has `display: grid` or `display: inline-grid` set on it.  When you turn on this option, the grid lines extend to the edge of the viewport along each axis.
+   * [Show track sizes](#show-track-sizes) - Toggle to show or hide track sizes.
+   * [Show area names](#show-area-names) - Toggle to show or hide area names, in the case of grids with named grid areas.
+   * [Extend grid lines](#extend-grid-lines) - By default, grid lines are only shown inside the element that has `display: grid` or `display: inline-grid` set on it.  When you turn on this option, the grid lines extend to the edge of the viewport along each axis.
 
 Details are below.
 
