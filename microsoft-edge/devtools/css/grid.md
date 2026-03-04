@@ -282,8 +282,8 @@ The following track-size line labels are displayed on the grid rows, for the dem
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **40px** | n/a | 40px |
-| **40px** | n/a | 40px |
+| **80px** | n/a | 80px |
+| **80px** | n/a | 80px |
 
 The line labels on the grid rows do not display the `authored size`, only the `computed size`, because row sizes have not been authored (specified) in the CSS property `grid-template-rows` in the CSS stylesheet.
 
