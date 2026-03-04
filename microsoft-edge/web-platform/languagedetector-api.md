@@ -120,7 +120,7 @@ To see the Language Detector API in action, and review existing code that uses t
 
 1. Optionally change the text to detect in the **Text to analyze** text box.
 
-1. Click the **Detect the language** button.
+1. Click the **Detect language** button.
 
    The model starts detecting the language of the text.
 
