@@ -249,19 +249,19 @@ To show track sizes in the grid overlay:
    | **authored size** | The size defined in stylesheet (omitted if not defined). |
    | **computed size** | The actual size on screen. |
 
-  In the demo, the column sizes are defined as follows, in the CSS property `grid-template-columns`:
+   In the demo, the column sizes are defined as follows, in the CSS property `grid-template-columns`:
 
    ```css
    .fruit-box {
-   display: grid;
-   grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
-   ...
+     display: grid;
+     grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
+     ...
    }
 
    .snack-box {
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-   ...
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     ...
    }
    ```
 
