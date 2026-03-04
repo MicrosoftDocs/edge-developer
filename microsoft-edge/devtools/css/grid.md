@@ -271,10 +271,12 @@ The following track-size line labels are displayed on the grid columns, for the 
 
 | Track size | Authored size | Computed size |
 |:--- |:--- |:--- |
-| **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
-| **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
+| **1fr** &#x2022; **96.66px** | 1fr | 96.66px |
+| **2fr** &#x2022; **193.34px** | 2fr | 193.34px |
 
-The line labels on the grid columns display the `authored size` in addition to the `computed size`, because column sizes have been authored (specified), in the CSS property `grid-template-columns` in the CSS stylesheet.
+If your machine's display is set to a different pixel density, the demo might produce different values, such as half as many pixels.
+
+The line label on each grid column displays the `authored size` in addition to the `computed size`, because column sizes have been authored (specified), in the CSS property `grid-template-columns` in the CSS stylesheet.
 
 **Row labels:**
 
@@ -285,7 +287,9 @@ The following track-size line labels are displayed on the grid rows, for the dem
 | **80px** | n/a | 80px |
 | **80px** | n/a | 80px |
 
-The line labels on the grid rows do not display the `authored size`, only the `computed size`, because row sizes have not been authored (specified) in the CSS property `grid-template-rows` in the CSS stylesheet.
+If your machine's display is set to a different pixel density, the demo might produce different values, such as half as many pixels.
+
+The line label on each grid row doesn't display an `authored size`, only the `computed size`, because row sizes have not been authored (specified) in the CSS property `grid-template-rows` in the CSS stylesheet.
 
 See also:
 * [grid-template-columns](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-columns) at MDN.
