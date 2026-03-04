@@ -242,46 +242,50 @@ To show track sizes in the grid overlay:
 
    ![Show track sizes](./grid-images/show-track-sizes.png)
 
-   The `[authored size]` and `[computed size]` are then displayed in each line label.
+Each line label shows the `authored size` (if defined in the CSS) and the `computed size`:
 
-   | Size | Details |
-   |:--- |:--- |
-   | **authored size** | The size defined in stylesheet (omitted if not defined). |
-   | **computed size** | The actual size on screen. |
+| Size | Details |
+|:--- |:--- |
+| `authored size` | The size defined in the CSS stylesheet.  Omitted from the label, if not defined. |
+| `computed size` | The actual size on screen. |
 
-   In the demo, the column sizes are defined as follows, in the CSS property `grid-template-columns`:
+In the demo, the column sizes are defined as follows, in the CSS property `grid-template-columns`:
 
-   ```css
-   .fruit-box {
-     display: grid;
-     grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
-     ...
-   }
+```css
+.fruit-box {
+  display: grid;
+  grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
+  ...
+}
 
-   .snack-box {
-     display: grid;
-     grid-template-columns: 1fr 2fr;
-     ...
-   }
-   ```
+.snack-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  ...
+}
+```
 
-   Line labels on the grid columns, for the demo's element `<div class="snack-box">`:
+**Column labels:**
 
-   | Track size | Authored size | Computed size |
-   |:--- |:--- |:--- |
-   | **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
-   | **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
+The following track-size line labels are displayed on the grid columns, for the demo's element `<div class="snack-box">`:
 
-   The line labels on the grid columns display both authored and computed sizes, because column sizes have been authored (specified), in the CSS property `grid-template-columns`.
+| Track size | Authored size | Computed size |
+|:--- |:--- |:--- |
+| **1fr** &#x2022; **48.33px** | 1fr | 48.33px |
+| **2fr** &#x2022; **96.67px** | 2fr | 96.67px |
 
-   Line labels on the grid rows, for the demo's element `<div class="snack-box">`:
+The line labels on the grid columns display the `authored size` in addition to the `computed size`, because column sizes have been authored (specified), in the CSS property `grid-template-columns` in the CSS stylesheet.
 
-   | Track size | Authored size | Computed size |
-   |:--- |:--- |:--- |
-   | **40px** | n/a | 40px |
-   | **40px** | n/a | 40px |
+**Row labels:**
 
-   The line labels on the grid rows display only computed sizes, not authored sizes, since there are no row sizes defined in the CSS stylesheet (via the CSS property `grid-template-rows`)
+The following track-size line labels are displayed on the grid rows, for the demo's element `<div class="snack-box">`:
+
+| Track size | Authored size | Computed size |
+|:--- |:--- |:--- |
+| **40px** | n/a | 40px |
+| **40px** | n/a | 40px |
+
+The line labels on the grid rows do not display the `authored size`, only the `computed size`, because row sizes have not been authored (specified) in the CSS property `grid-template-rows` in the CSS stylesheet.
 
 See also:
 * [grid-template-columns](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/grid-template-columns) at MDN.
