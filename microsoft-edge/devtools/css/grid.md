@@ -92,10 +92,10 @@ To use the grid overlay in a rendered webpage:
 
 
 <!-- ====================================================================== -->
-## Align grid items and their content: the Grid Editor popup
+## Align grid items and their content: the grid editor popup
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#grid-editor -->
 
-You can align CSS grid items and their content by just clicking a button (to open the Grid Editor popup), rather than having to directly define CSS rules.
+You can align CSS grid items and their content by just clicking a button (to open the grid editor popup), rather than having to directly define CSS rules.
 
 To align CSS grid items and their content:
 
@@ -111,11 +111,11 @@ To align CSS grid items and their content:
 
 1. In the CSS rule, next to `display: grid`, click the **Open grid editor** button.
 
-   The **Grid editor** popup opens:
+   The **grid editor** popup opens:
 
-   ![The Grid editor popup](./grid-images/grid-editor-popup.png)
+   ![The grid editor popup](./grid-images/grid-editor-popup.png)
 
-   The **Grid editor** popup contains four sets of buttons as options:
+   The **grid editor** popup contains four sets of buttons as options:
    * **align-content**
    * **justify-content**
    * **align-items**
@@ -123,7 +123,7 @@ To align CSS grid items and their content:
 
    Within each set of buttons, the buttons are mutually exclusive option buttons.  If you click an option button twice, no option button is selected in that set, and the value returns to **normal**.
 
-1. In the **Grid editor**, in any set of buttons, click a button.  To return to **normal**, click a button twice.
+1. In the **grid editor** popup, in any set of buttons, click a button.  To return to **normal**, click a button twice.
 
    The button's foreground color changes from black to blue, and the value changes from **normal** to the selected value.
 
