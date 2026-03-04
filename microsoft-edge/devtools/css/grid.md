@@ -80,7 +80,7 @@ To use the grid overlay in a rendered webpage:
 
 1. Click the **Layout** tab, which is grouped with the **Styles** tab in the **Elements** tool:
 
-   ![Layout pane](./grid-images/grid-layout-pane.png)<!-- 1st use -->
+   ![Layout pane](./grid-images/grid-layout-pane.png)
 
    The **Layout** tab includes a **Grid / Grid Lanes** section, which includes:
 
@@ -148,7 +148,7 @@ Details are below.
 
 In the **Element** tool's **Layout** pane, in the expandable **Grid / Grid Lanes** section, there' an **Overlay display settings** subsection:
 
-![Layout pane](./grid-images/grid-layout-pane.png)<!-- 2nd use -->
+![The "Overlay display settings" subsection](./grid-images/overlay-display-settings.png)
 
 The **Overlay display settings** subsection consists of two parts:
 
@@ -241,7 +241,6 @@ To show track sizes in the grid overlay:
 1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection, select the **Show track sizes** checkbox:
 
    ![Show track sizes](./grid-images/grid-show-track-sizes.png)
-   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
    The `[authored size]` and `[computed size]` are then displayed in each line label.
 
@@ -302,7 +301,6 @@ To show area names:
 1. In the **Grid / Grid Lanes** section > **Overlay display settings** subsection, select the **Show area names** checkbox:
 
    ![Show area names](./grid-images/grid-show-area-names.png)
-   <!-- todo: update from **Grid** and **Grid overlays**, to **Grid / Grid Lanes** and **Grid / Grid Lanes overlays** -->
 
 In the above example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.
 
@@ -328,6 +326,8 @@ To extend the grid lines:
 <!-- https://developer.chrome.com/docs/devtools/css/grid/#overlays -->
 
 In the **Elements** tool's **Layout** tab (grouped with the **Styles** tab), the **Grid / Grid Lanes overlays** section contains a list of elements that have a CSS grid.  Each grid has checkbox, along with various options.
+
+![The "Grid / Grid Lanes overlays" subsection](./grid-images/grid-grid-lanes-overlays.png)
 
 
 <!-- ------------------------------ -->
