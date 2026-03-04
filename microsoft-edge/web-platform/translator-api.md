@@ -31,7 +31,7 @@ For introductory information about the Translator API, see:
   * [Check if the Translator API is enabled](#check-if-the-translator-api-is-enabled)
   * [Check if the model can be used (availability())](#check-if-the-model-can-be-used-availability)
   * [Create a new session (create())](#create-a-new-session-create)
-  * [Monitor the progress of the model download (monitor:)](#monitor-the-progress-of-the-model-download-monitor)
+  * [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor)
   * [Run the Translator API (translate())](#run-the-translator-api-translate)
       * [Wait for the text to be translated (translate())](#wait-for-the-text-to-be-translated-translate)
       * [Display tokens as they are generated (translateStreaming())](#display-tokens-as-they-are-generated-translatestreaming)
@@ -80,7 +80,7 @@ Like other machine translation models, the expert models in Microsft Edge can po
 <!-- ====================================================================== -->
 ## Model availability
 
-An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor:)](#monitor-the-progress-of-the-model-download-monitor), below.
+An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
 
 
 <!-- ====================================================================== -->
@@ -220,7 +220,7 @@ You can monitor the model download by using the `monitor` option, as follows.
 
 
 <!-- ====================================================================== -->
-## Monitor the progress of the model download (`monitor:`)
+## Monitor the progress of the model download (`monitor`)
 
 You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
 

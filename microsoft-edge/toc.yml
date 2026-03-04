@@ -114,6 +114,9 @@
 
         - name: Translate text with the Translator API
           href: ./web-platform/translator-api.md
+
+        - name: Detect languages with the Language Detector API
+          href: ./web-platform/languagedetector-api.md
 # /Experimental APIs for Microsoft Edge
 # =============================================================================
 # -----------------------------------------------------------------------------
