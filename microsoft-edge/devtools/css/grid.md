@@ -28,7 +28,7 @@ This article walks you through identifying CSS grids on a website and debugging 
 
 **Detailed contents:**
 * [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage)
-* [Align grid items and their content: the Grid Editor popup](#align-grid-items-and-their-content-the-grid-editor-popup)
+* [Align grid items and their content: the grid editor popup](#align-grid-items-and-their-content-the-grid-editor-popup)
 * [Grid viewing options](#grid-viewing-options)
 * [Overlay display settings](#overlay-display-settings)
    * [Show line numbers](#show-line-numbers)
