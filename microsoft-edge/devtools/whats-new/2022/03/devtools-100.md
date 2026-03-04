@@ -75,7 +75,7 @@ If you don't have the **Fulfilled by** column, right-click the table headers in 
 
 See also:
 * [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.
-* [Service worker improvements](../../../service-workers/index.md).
+* [Service workers](../../../service-workers/index.md).
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 
