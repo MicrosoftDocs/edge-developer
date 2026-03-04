@@ -406,7 +406,7 @@ See also:
 
 DevTools now provides color suggestions for low color contrast text.
 
-In the example below, `h1` has low-contrast text.  To fix the contrast, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color, to apply the color.
+In the example below, `h1` has low-contrast text.  To fix the contrast, open the Color Picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color, to apply the color.
 
 ![Color picker suggests AA and AAA color suggestions](./devtools-images/contrast-color-suggestion.png)
 
