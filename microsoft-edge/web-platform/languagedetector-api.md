@@ -354,7 +354,7 @@ Azure docs:
 * [Azure AI Language documentation](/azure/ai-services/language-service/)
 
 Demos repo:
-* [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/language-detector-api/)
+* [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/languagedetector-api/)
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for the Built-in AI playgrounds demo.
 
 <!-- omitted Feedback section links b/c must describe how to use
