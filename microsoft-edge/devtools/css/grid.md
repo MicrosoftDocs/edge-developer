@@ -24,7 +24,7 @@ ms.date: 02/26/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.
+Use the **Layout** tab within the **Elements** tool to identify CSS grids on a website and debug grid layout issues by using customizable grid overlays.
 
 **Detailed contents:**
 * [Display the grid overlay in a rendered webpage](#display-the-grid-overlay-in-a-rendered-webpage)
@@ -86,7 +86,7 @@ To use the grid overlay in a rendered webpage:
 
    * A dropdown list.
    * Checkboxes for display options.
-   * A checkbox for each element that contains a CSS grid.
+   * A checkbox for each element that uses CSS Grid layout.
 
    When a webpage uses a CSS grid, the **Layout** tab includes the **Grid / Grid Lanes** section.  Use the **Grid / Grid Lanes** section to configure which information to display in grid overlays on the rendered webpage.
 
