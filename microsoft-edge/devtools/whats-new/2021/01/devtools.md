@@ -120,7 +120,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Inspect CSS Grid](../../../css/grid.md).
+* [Inspect CSS Grid layouts](../../../css/grid.md).
 
 
 <!-- ------------------------------ -->
@@ -147,7 +147,7 @@ Update: This feature has been released and is no longer experimental.<!-- valid.
 
 See also:
 * [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Inspect CSS Grid](../../../css/grid.md).
+* [Inspect CSS Grid layouts](../../../css/grid.md).
 
 
 <!-- ====================================================================== -->
@@ -288,7 +288,7 @@ See also:
 
 ###### Color pickers for custom CSS properties
 
-The **Styles** pane now displays color pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold **Shift** and then click the color picker:
+The **Styles** pane now displays Color Pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold **Shift** and then click the Color Picker:
 
 ![Color pickers for custom CSS properties](./devtools-images/elements-styles-change-color-format.png)
 
