@@ -11,6 +11,8 @@ ms.date: 03/04/2026
 
 The Language Detector API is an experimental web API that allows you to detect the language of text by using a model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
+To facilitate translating user-provided text to another language, use the Language Detector API in conjunction with the Translator API. To learn about the Translator API see: [Translate text with the Translator API](./translator-api.md).
+
 For introductory information about the Language Detector API, see:
 * [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
 * [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api)
@@ -48,15 +50,15 @@ The Language Detector API is available as a developer preview in the Microsoft E
 <!-- ====================================================================== -->
 ## Benefits of the Language Detector API
 
-The Language Detector API uses a model that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
+The Language Detector API uses a language detection model that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud language detection service.
 
 * **Network independence:** Beyond the initial model download, there's no network latency when using this API to detect languages, and the API can also be used when the device is offline.
 
-* **Improved privacy:** The data input into the model never leaves the device, and isn't collected to train AI models.
+* **Improved privacy:** The data input into the model never leaves the device, and isn't collected to train other AI models.
 
-The language detection models are downloaded the first time the API is used in Microsoft Edge, and are subsequently shared across all websites in the browser.  The models are accessed via a straightforward web API that doesn't require knowledge of third-party frameworks, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise.
+The language detection model is downloaded the first time the API is used in Microsoft Edge, and is subsequently shared across all websites in the browser.  The model is accessed via a straightforward web API that doesn't require knowledge of third-party frameworks, and doesn't require Artificial Intelligence (AI) or Machine Learning (ML) expertise.
 
 
 <!-- ====================================================================== -->
