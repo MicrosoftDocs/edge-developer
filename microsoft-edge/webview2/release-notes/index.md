@@ -23,11 +23,103 @@ if change h2 headings pattern, enter work item: update links in announcements
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
-<!-- Feb 2026 Release SDK (145) -->
+
+<!-- Prerelease SDK 147 (Mar. nn, 2026) -->
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.####-prerelease, for Runtime 147
+
+Release Date: Mth. nn, 2026
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add rightmost part of url:
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+-->
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+<!-- 
+#### Experimental APIs (Phase 1)
+-->
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Prerelease SDK.
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Prerelease SDK 147 (Mar. nn, 2026) -->
+
+
+<!-- Release SDK 145 (Feb. 16, 2026) -->
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3800.47, for Runtime 145
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
@@ -55,14 +147,14 @@ This Release SDK includes the following bug fixes.
 
 * Fixed WebView2 transparency.
 
-<!-- end of Feb 2026 Release SDK (145) -->
+<!-- end of Release SDK 145 (Feb. 16, 2026) -->
 
 
-<!-- Feb 2026 Prerelease SDK (146) -->
+<!-- Prerelease SDK 146 (Feb. 16, 2026) -->
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
@@ -249,14 +341,14 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
-<!-- end of Feb 2026 Prerelease SDK (146) -->
+<!-- end of Prerelease SDK 146 (Feb. 16, 2026) -->
 
 
-<!-- Jan 2026 Release SDK (144) -->
+<!-- Release SDK 144 (Jan. 27, 2026) -->
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3719.77, for Runtime 144
 
-Release Date: January 27, 2026
+Release Date: Jan. 27, 2026
 
 [NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
@@ -328,14 +420,14 @@ This Release SDK includes the following bug fixes.
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
-<!-- end of Jan 2026 Release SDK (144) -->
+<!-- end of Release SDK 144 (Jan. 27, 2026) -->
 
 
-<!-- Jan 2026 Prerelease SDK (145) -->
+<!-- Prerelease SDK 145 (Jan. 19, 2026) -->
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
 
-Release Date: January 19, 2026
+Release Date: Jan. 19, 2026
 
 [NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 
@@ -417,7 +509,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
-<!-- end of Jan 2026 Prerelease SDK (145) -->
+<!-- end of Prerelease SDK 145 (Jan. 19, 2026) -->
 
 
 <!-- Release SDK 143 -->
@@ -1783,7 +1875,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- end of Release SDK 136 -->
 
 
-<!-- Prerelease SDK 137 -->
+<!-- Prerelease SDK 137 (May. 12, 2025) -->
 <!-- ====================================================================== -->
 ## 1.0.3296-prerelease
 
@@ -1842,10 +1934,10 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 * Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- Prerelease SDK 137 -->
+<!-- Prerelease SDK 137 (May. 12, 2025) -->
 
 
-<!-- Release SDK 135 -->
+<!-- Release SDK 135 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
 ## 1.0.3179.45
 
@@ -1874,10 +1966,10 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-<!-- end of Release SDK 135 -->
+<!-- end of Release SDK 135 (Apr. 7, 2025) -->
 
 
-<!-- Prerelease SDK 136 -->
+<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
 ## 1.0.3230-prerelease
 
@@ -1952,92 +2044,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 * Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
-<!-- end of Prerelease SDK 136 -->
-
-
-<!-- Mar 2025 Release SDK (134) -->
-<!-- ====================================================================== -->
-## 1.0.3124.44
-<!-- ## Release SDK 1.0.3124.44, for Runtime ### -->
-
-Release Date: Mar. 10, 2025, Runtime 134
-
-[NuGet package for WebView2 SDK 1.0.3124.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3124.44)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 134.0.3124.44 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
-* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
-* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
-
-<!-- end of Mar 2025 Release SDK (134) -->
-
-
-<!-- Mar 2025 Prerelease SDK (135) -->
-<!-- ====================================================================== -->
-## 1.0.3171-prerelease
-<!-- ## Prerelease SDK 1.0.3171-prerelease, for Runtime 135 -->
-
-Release Date: Mar. 10, 2025, Runtime 135
-
-[NuGet package for WebView2 SDK 1.0.3171-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3171-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 135.0.3171.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed host object async method exception handling.  ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
-* Fixed documentation for `CoreWebVIew2.Navigate`.  ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed an "Add to Chrome" store installation regression.
-* Fixed folder uploads in UWP and WinUI.  ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
-* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
-* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
-* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
-
-<!-- end of Mar 2025 Prerelease SDK (135) -->
+<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
