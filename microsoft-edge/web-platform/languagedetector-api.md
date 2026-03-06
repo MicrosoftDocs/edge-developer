@@ -345,7 +345,7 @@ We're interested in learning about:
 * Any issues you encounter with the API or language detection model.
 * Whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, add a comment to [the Language Detector API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/NNNN). <!-- TODO: create a new issue -->
+To send feedback about your scenarios and the tasks you want to achieve, add a comment to [the Language Detector API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1274).
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=language-detector-api.md). <!-- TODO: create a new issue template -->
 
