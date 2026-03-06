@@ -83,13 +83,13 @@ As an on-device alternative, the Prompt API serves more custom scenarios, with a
 <!-- ====================================================================== -->
 ## Disclaimer
 
-Like other machine learning models, the language detection model in Microsoft Edge can potentially produce results that are inaccurate or unreliable for certain inputs, particularly very short text or single words.
+Like other machine learning models, the language detection model in Microsoft Edge can potentially produce results that are inaccurate or unreliable for certain inputs, such as short text or single words.
 
 
 <!-- ====================================================================== -->
 ## Model availability
 
-An initial download of the model will be required the first time a website calls the Language Detector API.  You can monitor the model download by using the monitor option when creating a new Language Detector API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
+An initial download of the model is required the first time a website calls the Language Detector API.  You can monitor the model download by using the monitor option when creating a new Language Detector API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
 
 
 <!-- ====================================================================== -->
@@ -111,9 +111,9 @@ To use the Language Detector API in Microsoft Edge, set the flag, as follows:
 
    * **Language detection web platform API**
 
-      This entry shows `#edge-language-detection-api`, which goes to `edge://flags/#edge-language-detection-api`.
+      This entry shows `#edge-language-detection-api` (which links to `edge://flags/#edge-language-detection-api`).
 
-1. Under **Language Detector API**, select **Enabled**.
+1. Under **Language detection web platform API**, select **Enabled**.
 
    In the lower right, a **Restart** button is displayed.
 
@@ -123,7 +123,7 @@ To use the Language Detector API in Microsoft Edge, set the flag, as follows:
 <!-- ====================================================================== -->
 ## See a working example
 
-To see the Language Detector API in action, and review existing code that uses this API:
+To see the Language Detector API in action, and view existing code that uses this API:
 
 1. [Enable the Language Detector API](#enable-the-language-detector-api), as described above.
 
@@ -131,7 +131,7 @@ To see the Language Detector API in action, and review existing code that uses t
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model available.**
 
-1. Optionally change the text to detect in the **Text to analyze** text box.
+1. In the **Text to analyze** text box, you can optionally change the text.
 
 1. Click the **Detect language** button.
 
@@ -154,7 +154,7 @@ The next sections are about using the Language Detector API.
 <!-- ====================================================================== -->
 ## Check if the Language Detector API is enabled
 
-Before using the Language Detector API in your website's code, check that the API is enabled by testing the presence of the `LanguageDetector` object:
+Before using the Language Detector API in your website's code, check that the API is enabled, by testing for the presence of the `LanguageDetector` object:
 
 ```javascript
 if (!LanguageDetector) {
@@ -192,7 +192,7 @@ if (availability == "available") {
 <!-- ====================================================================== -->
 ## Create a new session (`create()`)
 
-Creating a session instructs the browser to load the language detection model in memory, so that it can be used.  Before you can detect languages, create a new session by using the `create()` method:
+Creating a session instructs the browser to load the language detection model in memory, so that the model can be used.  Before you can detect the language, create a new session by using the `create()` method:
 
 ```javascript
 // Create a Language Detector session.
@@ -268,29 +268,29 @@ The `detect()` method returns a promise that resolves to an array of language de
 | **Property** | **Description** |
 | --- | --- |
 | `detectedLanguage` | The BCP 47 language tag of the detected language (for example, `"en"` for English, `"es"` for Spanish, or `"und"` for undetermined). |
-| `confidence` | A number between 0.0 and 1.0 indicating the confidence level of the detection. Higher values indicate higher confidence. |
+| `confidence` | A number between 0.0 and 1.0, indicating the confidence level of the detection. Higher values indicate higher confidence. |
 
-The results are sorted by confidence in descending order, with the most likely language first.  The last entry in the results array is always the undetermined language (`"und"`), which represents the confidence that the text is not in any of the languages the model knows.
+The results are sorted by confidence in descending order, with the most likely language first.  The last entry in the results array is always the _undetermined_ language (`"und"`).  The `undetermined` member in the array represents the percent confidence that the text is not in any of the languages that the model knows.
 
 
 <!-- ====================================================================== -->
 ## Understanding the confidence scores
 
-The confidence scores returned by the Language Detector API have the following characteristics:
+The confidence scores that are returned by the Language Detector API have the following characteristics:
 
-* **Range:** Each confidence score is a number between 0 (lowest confidence) and 1 (highest confidence).
+* **Range:** Each confidence score is a number between 0 (lowest confidence) and 1 (highest confidence), inclusive.
 
-* **Sorted results:** The results are always sorted from highest to lowest confidence.
+* **Sorted results:** The results are sorted from highest to lowest confidence.
 
-* **Low-confidence filtering:** Languages with very low confidence (typically less than 1%, or less confident than the "undetermined" category) are automatically filtered out to reduce noise.
+* **Low-confidence filtering:** Languages that have very low confidence are automatically filtered out, to reduce noise.  _Low confidence_ is typically less than 1%, or less confident than the "undetermined" category.
 
-* **Sum of scores:** The sum of all confidence scores may be less than 1 because low-probability languages are omitted from the results.
+* **Sum of scores:** The sum of all confidence scores might be less than 1, because low-probability languages are omitted from the results.
 
 
 <!-- ====================================================================== -->
 ## Destroy a session (`destroy()`)
 
-After detecting languages, destroy the session to let the browser know that you don't need the language model anymore, so that the model can be unloaded from memory.
+After detecting languages, destroy the session.  This lets the browser know that you don't need the language model anymore, so that the model can be unloaded from memory.
 
 You can destroy a session in two different ways:
 * By using the `destroy()` method.
@@ -336,9 +336,12 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Language Detector API, any issues with the API or language detection model, and whether other task-specific, built-in APIs would be useful.
+We're interested in learning about:
+* The range of scenarios for which you intend to use the Language Detector API.
+* Any issues you encounter with the API or language detection model.
+* Whether other task-specific, built-in APIs would be useful.
 
-To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Language Detector API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/NNNN). <!-- TODO: create a new issue -->
+To send feedback about your scenarios and the tasks you want to achieve, add a comment to [the Language Detector API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/NNNN). <!-- TODO: create a new issue -->
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=language-detector-api.md). <!-- TODO: create a new issue template -->
 

@@ -80,7 +80,7 @@ Like other machine translation models, the expert models in Microsft Edge can po
 <!-- ====================================================================== -->
 ## Model availability
 
-An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
+An initial download of the model is required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
 
 
 <!-- ====================================================================== -->
