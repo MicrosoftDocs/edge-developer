@@ -47,3 +47,9 @@ For end-user documentation about how to use extensions for Microsoft Edge, see t
    * [Change site access permissions for extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/change-site-access-permissions-for-extensions-in-microsoft-edge-7d1c889d-e267-4be0-15d4-3ed5d0c82ef5)
 
    * [Developer mode extension notification](https://support.microsoft.com/topic/developer-mode-extension-notification-b8c45464-6245-4137-94cb-f478aa6c9ab1)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [View end-user docs about Microsoft Edge](../../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.

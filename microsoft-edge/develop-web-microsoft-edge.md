@@ -184,6 +184,7 @@ Microsoft Edge Developer docs are at the Microsoft Learn website.  Microsoft Edg
 
 See also:
 * [User docs about Microsoft Edge extensions](./extensions/getting-started/user-docs.md)
+* [Use PWAs in Microsoft Edge](./progressive-web-apps/ux.md)
 
 
 <!-- ====================================================================== -->
