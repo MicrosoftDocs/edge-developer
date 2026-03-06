@@ -11,15 +11,10 @@ ms.date: 03/04/2026
 
 The Language Detector API is an experimental web API that allows you to detect the language of text by using a model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
 
-To facilitate translating user-provided text to another language, use the Language Detector API in conjunction with the Translator API. To learn about the Translator API see: [Translate text with the Translator API](./translator-api.md).
-
-For introductory information about the Language Detector API, see:
-* [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
-* [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api)
-
-
 **Detailed contents:**
 
+* [Introduction](#introduction)
+* [Use the Language Detector API with the Translator API](#use-the-language-detector-api-with-the-translator-api)
 * [Availability of the Language Detector API](#availability-of-the-language-detector-api)
 * [Benefits of the Language Detector API](#benefits-of-the-language-detector-api)
 * [Alternatives to the Language Detector API](#alternatives-to-the-language-detector-api)
@@ -39,6 +34,22 @@ For introductory information about the Language Detector API, see:
     * [Destroy a session by using AbortController](#destroy-a-session-by-using-abortcontroller)
 * [Send feedback](#send-feedback)
 * [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+For introductory information about the Language Detector API, see:
+* [Translator and Language Detector APIs](https://webmachinelearning.github.io/translation-api/)
+* [Explainer for the Translator and Language Detector APIs](https://github.com/webmachinelearning/translation-api)
+
+
+<!-- ====================================================================== -->
+## Use the Language Detector API with the Translator API
+
+To facilitate translating user-provided text to another language, use the Language Detector API in conjunction with the Translator API.
+
+To learn about the Translator API see: [Translate text with the Translator API](./translator-api.md).
 
 
 <!-- ====================================================================== -->
