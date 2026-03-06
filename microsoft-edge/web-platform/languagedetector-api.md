@@ -44,7 +44,7 @@ For introductory information about the Language Detector API, see:
 <!-- ====================================================================== -->
 ## Availability of the Language Detector API
 
-The Language Detector API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 147.0.3882.0.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+The Language Detector API is available as a developer preview in the Microsoft Edge Canary or Dev channels, starting with version 147.0.3897.0.  To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ An initial download of the model will be required the first time a website calls
 
 To use the Language Detector API in Microsoft Edge, set the flag, as follows:
 
-1. In Microsoft Edge, go to `edge://version`, and make sure you're using version 147.0.3882.0 or later of Microsoft Edge, such as the Canary or Dev preview channel of Microsoft Edge.
+1. In Microsoft Edge, go to `edge://version`, and make sure you're using version 147.0.3897.0 or later of Microsoft Edge, such as the Canary or Dev preview channel of Microsoft Edge.
 
    To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
