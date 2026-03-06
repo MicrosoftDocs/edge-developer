@@ -14,33 +14,33 @@ ms.date: 01/01/2026
 The following updates have been deployed to production, addressing key issues and enhancements for the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and Microsoft Edge Add-ons experience.
 
 **Detailed contents:**
-* [Feb. 2025](#Feb.-2025)
+* [Feb. 2025](#feb-2025)
    * [Transfer ownership of a Microsoft Edge extension](#transfer-ownership-of-a-microsoft-edge-extension)
-* [Sep. 2024](#Sep.-2024)
+* [Sep. 2024](#sep-2024)
    * [Microsoft Edge Add-ons Update API, v1.1](#microsoft-edge-add-ons-update-api-v11)
-* [Jun. 2023](#Jun.-2023)
+* [Jun. 2023](#jun-2023)
    * [Sidebar](#sidebar)
-* [Jul. 2022](#Jul.-2022)
+* [Jul. 2022](#jul-2022)
    * [Retirement of submitting new Microsoft Edge extensions with Manifest V2](#retirement-of-submitting-new-microsoft-edge-extensions-with-manifest-v2)
 * [May 2022](#may-2022)
    * [You can respond to user reviews about your Microsoft Edge extension](#you-can-respond-to-user-reviews-about-your-microsoft-edge-extension)
-* [Mar. 2022](#Mar.-2022)
+* [Mar. 2022](#mar-2022)
    * [Update an extension by using the Microsoft Edge Add-ons API](#update-an-extension-by-using-the-microsoft-edge-add-ons-api)
    * [Addition of breadcrumbs to Microsoft Partner Center](#addition-of-breadcrumbs-to-microsoft-partner-center)
-* [Jan. 2022](#Jan.-2022)
+* [Jan. 2022](#jan-2022)
    * [Microsoft Edge extensions developer portal](#microsoft-edge-extensions-developer-portal)
-* [Sep. 2021](#Sep.-2021)
+* [Sep. 2021](#sep-2021)
    * [Extension Analytics Dashboard on Microsoft Partner Center](#extension-analytics-dashboard-on-microsoft-partner-center)
-* [Aug. 2021](#Aug.-2021)
+* [Aug. 2021](#aug-2021)
    * [Add team members to your Partner Center account](#add-team-members-to-your-partner-center-account)
    * [Sign into Microsoft Partner Center using your GitHub account](#sign-into-microsoft-partner-center-using-your-github-account)
 * [May 2021](#may-2021)
    * [Manage your extension submissions on Partner Center](#manage-your-extension-submissions-on-partner-center)
-* [Apr. 2021](#Apr.-2021)
+* [Apr. 2021](#apr-2021)
    * [Support for Manifest V3 extensions](#support-for-manifest-v3-extensions)
-* [Feb. 2021](#Feb.-2021)
+* [Feb. 2021](#feb-2021)
    * [Localization of extension listings at Microsoft Edge Add-ons](#localization-of-extension-listings-at-microsoft-edge-add-ons)
-* [Jan. 2021](#Jan.-2021)
+* [Jan. 2021](#jan-2021)
    * [Extension certification report link](#extension-certification-report-link)
 * [See also](#see-also)
 
@@ -276,8 +276,8 @@ The sidebar feature of Microsoft Edge extensions enables an extension to display
 
 <!-- ====================================================================== -->
 ## Jul. 2022
-<!-- Edge 104 = Aug 5, 2022 -->
-<!-- Edge 103 = Jun 23, 2022 -->
+<!-- Edge 104 = Aug. 5, 2022 -->
+<!-- Edge 103 = Jun. 23, 2022 -->
 
 
 <!-- ------------------------------ -->
@@ -288,12 +288,12 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 
 <!-- ====================================================================== -->
 <!-- ## Jun. 2022 -->
-<!-- Edge 103 (Jun. 23, 2022) -->
+<!-- Edge 103 = Jun. 23, 2022 -->
 
 
 <!-- ====================================================================== -->
 ## May 2022
-<!-- Edge 102 = 31-May-2022 -->
+<!-- Edge 102 = May 31, 2022 -->
 
 
 <!-- ------------------------------ -->
@@ -306,12 +306,12 @@ To share your feedback and comments about this feature, see [You can now respond
 
 <!-- ====================================================================== -->
 <!-- ## Apr. 2022 -->
-<!-- Edge 101 (Apr. 28, 2022) -->
+<!-- Edge 101 = Apr. 28, 2022 -->
 
 
 <!-- ====================================================================== -->
 ## Mar. 2022
-<!-- Edge 99 (Mar. 3, 2022) -->
+<!-- Edge 99 = Mar. 3, 2022 -->
 
 
 <!-- ------------------------------ -->
@@ -375,8 +375,8 @@ The Extensions Analytics Dashboard enables you to view your extension's usage, a
 
 <!-- ====================================================================== -->
 ## Aug. 2021
-<!-- Edge 93 = 02-Sep-2021 -->
-<!-- Edge 92 = 22-Jul.-2021 -->
+<!-- Edge 93 = Sep. 2, 2021 -->
+<!-- Edge 92 = Jul. 22, 2021 -->
 
 
 <!-- ------------------------------ -->
@@ -413,7 +413,7 @@ This feature allows you to view your extension submission from the [Partner Cent
 
 <!-- ====================================================================== -->
 ## Apr. 2021
-<!-- Edge 90 = Apr 15, 2021 -->
+<!-- Edge 90 = Apr. 15, 2021 -->
 
 
 <!-- ------------------------------ -->
@@ -430,8 +430,8 @@ Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest 
 
 <!-- ====================================================================== -->
 ## Feb. 2021
-<!-- Edge 89 = Mar 8, 2021 -->
-<!-- Edge 88 = Jan 21, 2021 -->
+<!-- Edge 89 = Mar. 8, 2021 -->
+<!-- Edge 88 = Jan. 21, 2021 -->
 
 
 <!-- ------------------------------ -->
