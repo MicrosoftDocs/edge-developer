@@ -16,7 +16,7 @@ This article covers preliminary, end-user information about how to use PWAs.
 
 See also:
 * [Get started developing a PWA](./how-to/index.md)
-* [View end-user docs about Microsoft Edge](../../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
+* [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
 
 
 <!-- ====================================================================== -->
