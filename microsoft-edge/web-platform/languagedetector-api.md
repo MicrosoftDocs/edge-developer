@@ -347,7 +347,7 @@ We're interested in learning about:
 
 To send feedback about your scenarios and the tasks you want to achieve, add a comment to [the Language Detector API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1274).
 
-If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=language-detector-api.md). <!-- TODO: create a new issue template -->
+If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=languagedetector-api.md).
 
 You can also contribute to the discussion about the design of the Language Detector API, at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
 
