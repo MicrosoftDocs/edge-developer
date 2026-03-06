@@ -137,7 +137,11 @@ To see the Language Detector API in action, and view existing code that uses thi
 
    The model starts detecting the language of the text.
 
-   The output is generated in the response section of the page:
+   The output is generated in the response section of the page.
+   
+   The output displays:
+   * The name of the detected language.
+   * The percent certainty of which language.
 
    ![The Language Detector demo page with settings and a Detect button](./languagedetector-api-images/detected.png)
 
@@ -345,7 +349,7 @@ To send feedback about your scenarios and the tasks you want to achieve, add a c
 
 If you notice any issues when using the API instead, please [report it on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=language-detector-api.md). <!-- TODO: create a new issue template -->
 
-You can also contribute to the discussion about the design of the Language Detector API at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
+You can also contribute to the discussion about the design of the Language Detector API, at the [W3C Web Machine Learning Working Group repository](https://github.com/webmachinelearning/translation-api).
 
 
 <!-- ====================================================================== -->
