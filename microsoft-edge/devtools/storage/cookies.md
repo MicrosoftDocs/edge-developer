@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 02/27/2026
+ms.date: 03/05/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -55,7 +55,7 @@ See also:
 
 1. In the **Activity Bar**, select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
 
-1. In the outline on the left, in the major **Storage** section, expand **Cookies**, then select an origin, such as `https://www.bing.com`:
+1. In the outline on the left, in the major **Storage** section, expand **Cookies**, then select an origin, such as **https://<span>www.bing.com</span>**:
 
    ![The Cookies pane](./cookies-images/open-cookies-select-source.png)
 
@@ -162,7 +162,7 @@ To view third-party cookies:
 
 1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
 
-1. On the left, under the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
+1. On the left, under the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://<span>www.bing.com</span>**.
 
    Third-party cookies are indicated in the table by the presence of the value **None** in the **SameSite** column.
 
@@ -187,21 +187,11 @@ To view third-party cookies in the **Application** tool:
 
 1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
-   If you don't want to turn on the **Block third-party cookies** toggle for your main, working browser:
-
-   1. Download a preview channel of Microsoft Edge (Beta, Dev, or Canary) from [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
-
-   1. Turn on the **Block third-party cookies** toggle in that browser.
-
 1. Switch back to the webpage's tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
-
-<!-- 1. Click **Customize and control DevTools** (![Customize and control DevTools icon](./cookies-images/customize-and-control-devtools-icon.png)), and then click **Doc location** > **Undock into separate window**. -->
-
-   <!-- DevTools moves to a dedicated window. -->
 
 1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
 
@@ -209,9 +199,7 @@ To view third-party cookies in the **Application** tool:
 
 1. Refresh the page.
 
-<!-- 1. Switch to the DevTools window. -->
-
-1. On the left, in the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://www.bing.com**.
+1. On the left, in the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://<span>www.bing.com</span>**.
 
 1. In the table of cookies, scroll to a row that has an **Information** icon (![Information icon](./cookies-images/information-icon.png)).
 
@@ -221,7 +209,7 @@ To view third-party cookies in the **Application** tool:
 
    ![Cookies in Application tool that are blocked have an info icon](./cookies-images/cookie-blocked-application-tool.png)
   
-   **Cleanup:**
+   **Stop blocking third-party cookies:**
 
 1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
 
@@ -244,12 +232,6 @@ To view blocked third-party cookies in the **Network** tool:
 
 1. Select **Cookies**<!-- edge://settings/privacy/cookies -->, and then turn on the **Block third-party cookies** toggle.
 
-   If you don't want to turn on the **Block third-party cookies** toggle for your main, working browser:
-
-   1. Download a preview channel of Microsoft Edge (Beta, Dev, or Canary) from [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
-
-   1. Turn on the **Block third-party cookies** toggle in that browser.
-
 1. Switch back to the webpage's tab.
 
 1. Right-click the webpage, and then select **Inspect**.
@@ -262,7 +244,7 @@ To view blocked third-party cookies in the **Network** tool:
 
    The **Name** list displays more items.
 
-1. In the **Name** list, scroll up to the topmost entry for the domain, such as the topmost **Bing.com** entry, and then select it.
+1. In the **Name** list, scroll up to the topmost entry for the domain, such as the topmost **<span>www.bing.com</span>** entry, and then select it.
 
 1. In the sidebar to the right, select the **Cookies** tab:
 
@@ -282,7 +264,7 @@ To view blocked third-party cookies in the **Network** tool:
 
    "This cookie was blocked because its path was not an exact match for or a superdirectory of the request url's path."
 
-   **Cleanup:**
+   **Stop blocking third-party cookies:**
 
 1. In the **Network** tool, in the **Cookies** tab, clear the **Show filtered-out request cookies** checkbox.
 
