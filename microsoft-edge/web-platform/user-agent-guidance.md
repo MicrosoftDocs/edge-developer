@@ -291,7 +291,7 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 Legacy browser considerations:
 
-*  The Microsoft Edge Legacy browser is no longer supported. See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224).
+*  The Microsoft Edge Legacy browser is no longer supported. See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-Apr.-s/ba-p/2114224).
 
 *  Microsoft Edge Legacy was only available on Windows 10.
 

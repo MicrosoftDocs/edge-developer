@@ -30,7 +30,7 @@ To submit suggestions and feedback, enter an [Issue about the Add-ons API](https
 <!-- ------------------------------ -->
 #### Versions of the Update REST API
 
-As of September 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Support for v1 will end on December 31, 2024.
+As of Sep. 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Support for v1 will end on Dec. 31, 2024.
 
 
 <!-- ---------- -->

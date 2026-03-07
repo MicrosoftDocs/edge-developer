@@ -268,8 +268,8 @@ There are additional [Best practices for PWAs](./best-practices.md) to make a Pr
 <!-- all links in article -->
 
 <!-- Local: in toc order -->
-* [Use PWAs in Microsoft Edge](../ux.md)
-   * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+* [Use Progressive Web Apps (PWAs) in Microsoft Edge](../ux.md)
+   * [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps (PWAs) in Microsoft Edge_.
 * [Temperature converter sample](../samples/temperature-converter.md)
    * [Step 9: Examine the service worker handling offline caching](../samples/temperature-converter.md#step-9-examine-the-service-worker-handling-offline-caching) in _Temperature converter sample_.
 * [Best practices for PWAs](./best-practices.md)

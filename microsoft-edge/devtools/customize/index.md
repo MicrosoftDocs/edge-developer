@@ -129,7 +129,7 @@ This video covers how to dock or undock DevTools, open new tools, and close thos
 <!-- ------------------------------ -->
 #### Understand the DevTools user interface
 
-_Published on 1 September 2022._
+_Published on 1 Sep. 2022._
 
 [![Thumbnail image for the Understand the DevTools UI video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 

@@ -339,7 +339,7 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 * [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
 <!-- 
-todo: at next SDK release early December 2022, update enum link when it changes to a Globals page section/anchor eg:
+todo: at next SDK release early Dec. 2022, update enum link when it changes to a Globals page section/anchor eg:
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.1418.22
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1418.22
 compare links in [Manage network requests in WebView2](./overview-features-apis?tabs=win32cpp#manage-network-requests-in-webview2)
