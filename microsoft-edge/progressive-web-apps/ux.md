@@ -1,5 +1,5 @@
 ---
-title: Use PWAs in Microsoft Edge
+title: Use Progressive Web Apps (PWAs) in Microsoft Edge
 description: How to use Progressive Web Apps (PWAs) in Microsoft Edge, including installing a PWA, managing PWAs, Windows integration, and the App info (Settings and more) menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/15/2025
 ---
-# Use PWAs in Microsoft Edge
+# Use Progressive Web Apps (PWAs) in Microsoft Edge
 
 Any device that's running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps (PWAs).  On Windows, PWAs are just like other apps.
 
@@ -222,6 +222,24 @@ Progressive Web Apps (PWAs) have the following limitations.
 Progressive Web Apps (PWAs) aren't supported in FSLogix environments.  In an FSLogix environment, you can install a PWA, but when you log off and then log back in, the installed PWA is gone.  This is a known restriction.
 
 FSLogix enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments.  For more information, see [FSLogix documentation](/fslogix/).
+
+
+<!-- ====================================================================== -->
+# User docs about Progressive Web Apps (PWAs)
+<!-- todo: provide all direct links to articles, do not rely on search -->
+
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - searching for [PWA](https://support.microsoft.com/search/results?query=PWA) or ["Progressive Web Apps"](https://support.microsoft.com/search/results?query=%22Progressive+Web+Apps%22) returns articles such as the following:
+
+   * [Apps and widgets that depend on Microsoft Edge](https://support.microsoft.com/en-gb/topic/apps-and-widgets-that-depend-on-microsoft-edge-f4be5fbd-bebf-4eeb-b988-93cb395f3204)
+
+Searching for "PWA" returns articles about Project Web App, more than Progressive Web Apps.
+
+
+<!-- ------------------------------ --
+#### Microsoft Learning Center
+!-- /learning-center/ --
+
+* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - searching for [PWA] !-- todo: "No Production Found", ie 0 hits -- or ["Progressive Web Apps"]!-- todo: "No Production Found", ie 0 hits -- returns articles such as the following:
 
 
 <!-- ====================================================================== -->

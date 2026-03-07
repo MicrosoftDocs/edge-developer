@@ -79,6 +79,33 @@ Many apps that are built on WebView2 perform checks to re-install WebView2 when 
 
 
 <!-- ====================================================================== -->
+# User docs about WebView2
+<!-- todo: provide all direct links to articles, do not rely on search -->
+
+
+<!-- ------------------------------ -->
+#### Microsoft Learning Center
+<!-- /learning-center/ -->
+
+* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - searching for "WebView2" returns articles such as the following:
+
+   * [todo]
+
+   * [todo]
+
+
+<!-- ------------------------------ -->
+#### Microsoft Support
+<!-- support.microsoft.com -->
+
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - searching for [WebView2](https://support.microsoft.com/search/results?query=webview2) returns articles such as the following:
+
+   * [todo]
+
+   * [todo]
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [View end-user docs about Microsoft Edge](../../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
