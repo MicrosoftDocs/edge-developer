@@ -88,33 +88,36 @@ async function getActiveEdgeOTs() {
 
   const page = await context.newPage();
   console.log(`Navigating to ${EDGE_OT_PAGE}`);
-  await page.goto(EDGE_OT_PAGE);
+  await page.goto(EDGE_OT_PAGE, { waitUntil: "networkidle" });
 
-  // Wait for the OTs to have loaded. We check for the existence of a trial-card
-  // that has a __tags element in it. This element is used to display the
-  // "Microsoft Edge Only" tag.
-  const tagsLocator = page.locator(".trial-card .trial-card__tags");
+  // Wait for the OTs to have loaded. Try multiple selectors to be more robust.
+  // First, wait for the page to fully load.
   try {
-    await tagsLocator.waitFor({ timeout: 15000 });
-    console.log("Edge-only OT tags are present, proceeding.");
+    // Try to find a details link which indicates trials are present
+    const detailsLinkLocator = page.locator("a:has-text('Details')");
+    await detailsLinkLocator.first().waitFor({ timeout: 15000 });
+    console.log("Edge OTs are present, proceeding.");
   } catch (e) {
-    console.error("Timed out waiting for Edge-only OT tags to appear.");
+    console.error("Timed out waiting for Edge OTs to appear.");
+    console.error(`Page title: ${await page.title()}`);
+    console.error(`Page content length: ${(await page.content()).length}`);
     await page.close();
     await scrapingBrowser.close();
     return [];
   }
 
-  // Get the list of all origin trial elements
-  const microsoftOriginTrialEls = await page.locator("css=.trial-card", { hasText: "Microsoft Edge Only" });
-  const otCards = await microsoftOriginTrialEls.all();
-  console.log(`Found ${otCards.length} Edge-only OTs.`);
+  // Get the list of all origin trial elements by finding all "Details" links
+  // Each trial has a Details link
+  const detailsLinks = await page.locator("a:has-text('Details')").all();
+  console.log(`Found ${detailsLinks.length} OTs.`);
 
   const otLinks = [];
-  for (const otCard of otCards) {
-    const otLink = await otCard.locator("css=a", { hasText: "Details" });
-    const href = await otLink.getAttribute("href");
-    console.log(href);
-    otLinks.push(EDGE_OT_ROOT + href);
+  for (const detailsLink of detailsLinks) {
+    const href = await detailsLink.getAttribute("href");
+    if (href) {
+      console.log(href);
+      otLinks.push(EDGE_OT_ROOT + href);
+    }
   }
 
   await page.close();
@@ -168,6 +171,11 @@ async function getActiveEdgeOTs() {
 
 // Main entry point to this script.
 async function main() {
+  const isDryRun = process.argv.includes('--dry-run');
+  if (isDryRun) {
+    console.log('Running in dry-run mode. Release notes will be written to test-release-notes.md');
+  }
+
   // --------------------------------------------------
   // 1. Check which is the next release (first date that's in the future compared to today).
   //    Note this release as N. N is the next stable.
@@ -221,16 +229,18 @@ async function main() {
   // 2. Check if there isn't already a published or draft release notes for the next beta version.
   // --------------------------------------------------
 
-  const alreadyExists = await doesReleaseNotesAlreadyExist(nextBetaVersion);
-  if (alreadyExists) {
-    console.error(`Release notes for the next beta version ${nextBetaVersion} already exist.`);
-    process.exit(0);
-  }
+  if (!isDryRun) {
+    const alreadyExists = await doesReleaseNotesAlreadyExist(nextBetaVersion);
+    if (alreadyExists) {
+      console.error(`Release notes for the next beta version ${nextBetaVersion} already exist.`);
+      process.exit(0);
+    }
 
-  const draftAlreadyExists = await doesReleaseNotesDraftExist(nextBetaVersion, branchName);
-  if (draftAlreadyExists) {
-    console.error(`Draft release notes for the next beta version ${nextBetaVersion} already exist on the ${branchName} branch.`);
-    process.exit(0);
+    const draftAlreadyExists = await doesReleaseNotesDraftExist(nextBetaVersion, branchName);
+    if (draftAlreadyExists) {
+      console.error(`Draft release notes for the next beta version ${nextBetaVersion} already exist on the ${branchName} branch.`);
+      process.exit(0);
+    }
   }
 
   // --------------------------------------------------
@@ -246,37 +256,7 @@ async function main() {
   const csFeatures = csMilestoneData.features_by_type;
 
   // --------------------------------------------------
-  // 4. Fetch Chrome Status new origin trials in N+1.
-  // --------------------------------------------------
-
-  console.log(
-    `Fetching the chromium OTs which are new with ${nextBetaVersion}.`
-  );
-  const chromeOTsData = await fetchChromeStatusAPI(
-    "https://chromestatus.com/api/v0/origintrials"
-  );
-  const chromeOTs = chromeOTsData.origin_trials
-    .filter((ot) => {
-      // Only active origin trials that start in the next beta version.
-      return ot.status === "ACTIVE"
-        // Should start no later than the next beta version, otherwise it's not active.
-        && parseInt(ot.start_milestone, 10) <= parseInt(nextBetaVersion, 10)
-        // Should end at least one milestone after the next beta version, so that people have time to try it.
-        && parseInt(ot.end_milestone, 10) >= parseInt(nextBetaVersion, 10) + 1;
-    })
-    .map((ot) => {
-      return {
-        title: ot.display_name,
-        description: ot.description,
-        expiration: longDate(ot.end_time),
-        explainer: ot.documentation_url,
-        feedback: ot.feedback_url,
-        registration: `https://developer.chrome.com/origintrials/#/register_trial/${ot.id}`,
-      };
-    });
-
-  // --------------------------------------------------
-  // 5. Fetch current Edge origin trials.
+  // 4. Fetch current Edge origin trials.
   // --------------------------------------------------
 
   console.log(
@@ -285,7 +265,7 @@ async function main() {
   const edgeOTs = await getActiveEdgeOTs();
 
   // --------------------------------------------------
-  // 6. Generate the release notes draft content.
+  // 5. Generate the release notes draft content.
   // --------------------------------------------------
   // Write the fetched data locally for 11ty to use, run 11ty, and then delete the file.
 
@@ -300,7 +280,6 @@ async function main() {
       nextBetaReleaseDateMonth,
       csFeatures,
       edgeOTs,
-      chromeOTs,
     })
   );
 
@@ -338,17 +317,25 @@ async function main() {
   await fs.rmdir("_data", { recursive: true, force: true });
 
   // --------------------------------------------------
-  // 7. Write the release notes draft content to a file.
+  // 6. Write the release notes draft content to a file.
   // --------------------------------------------------
   // All release notes go into /microsoft-edge/web-platform/release-notes/.
   // The file name should be the next beta version number.
 
   console.log("Writing the release notes content to a new md file in the repo.");
-  const releaseNotesPath = `../microsoft-edge/web-platform/release-notes/${nextBetaVersion}.md`;
+  const releaseNotesPath = isDryRun 
+    ? `test-release-notes.md`
+    : `../microsoft-edge/web-platform/release-notes/${nextBetaVersion}.md`;
   await fs.writeFile(releaseNotesPath, releaseNotesContent);
 
+  // If we are doing a dry run, stop here. No need to commit or open an issue.
+  if (isDryRun) {
+    console.log(`Dry run complete. The release notes draft has been written to ${releaseNotesPath}.`);
+    return;
+  }
+
   // --------------------------------------------------
-  // 8. Commit the new file to a new branch.
+  // 7. Commit the new file to a new branch.
   // --------------------------------------------------
 
   console.log(`Committing the new file to branch ${branchName}...`);
@@ -368,7 +355,7 @@ async function main() {
   await execute(`git push origin ${branchName}`);
 
   // --------------------------------------------------
-  // 9. Open an issue on the repo to notify the team about the new release notes draft.
+  // 8. Open an issue on the repo to notify the team about the new release notes draft.
   // --------------------------------------------------
 
   console.log("Opening an issue to notify the team about the new release notes draft.");
