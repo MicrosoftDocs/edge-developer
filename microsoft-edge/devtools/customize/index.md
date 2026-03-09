@@ -117,8 +117,6 @@ See [Customize keyboard shortcuts](../customize/shortcuts.md).
 <!-- ------------------------------ -->
 #### Customizing Microsoft Edge Developer Tools and quick feature access
 
-_Published on 5 May 2022._
-
 [![Thumbnail image for the DevTools customization video](./index-images/customize-devtools.png)](https://www.youtube.com/watch?v=ypRzEBYNptQ)
 
 Learn how to customize DevTools to fit your needs.
@@ -128,8 +126,6 @@ This video covers how to dock or undock DevTools, open new tools, and close thos
 
 <!-- ------------------------------ -->
 #### Understand the DevTools user interface
-
-_Published on 1 Sep. 2022._
 
 [![Thumbnail image for the Understand the DevTools UI video](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 

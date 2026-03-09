@@ -31,14 +31,15 @@ async function fetchChromeStatusAPI(url) {
   return data;
 }
 
-// Format a date string as "Month Day, Year", e.g., "Jan. 15, 2024".
+// Format a date string as "Mth. Day, Year", e.g., "Jan. 15, 2024".
 function longDate(dateString) {
   const date = new Date(dateString);
-  return date.toLocaleString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
+  
+  const month = date.toLocaleString("en-US", {month: "short"});
+  const day = date.toLocaleString("en-US", {day: "numeric"});
+  const year = date.toLocaleString("en-US", {year: "numeric"});
+  
+  return month === "May" ? `${month} ${day}, ${year}` : `${month}. ${day}, ${year}`;
 }
 
 // Execute a shell command and return the stdout as a string.

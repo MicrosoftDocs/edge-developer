@@ -225,21 +225,9 @@ FSLogix enhances and enables a consistent experience for Windows user profiles i
 
 
 <!-- ====================================================================== -->
-# User docs about Progressive Web Apps (PWAs)
-<!-- todo: provide all direct links to articles, do not rely on search -->
+## User docs about Progressive Web Apps (PWAs)
 
-* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - searching for [PWA](https://support.microsoft.com/search/results?query=PWA) or ["Progressive Web Apps"](https://support.microsoft.com/search/results?query=%22Progressive+Web+Apps%22) returns articles such as the following:
-
-   * [Apps and widgets that depend on Microsoft Edge](https://support.microsoft.com/en-gb/topic/apps-and-widgets-that-depend-on-microsoft-edge-f4be5fbd-bebf-4eeb-b988-93cb395f3204)
-
-Searching for "PWA" returns articles about Project Web App, more than Progressive Web Apps.
-
-
-<!-- ------------------------------ --
-#### Microsoft Learning Center
-!-- /learning-center/ --
-
-* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - searching for [PWA] !-- todo: "No Production Found", ie 0 hits -- or ["Progressive Web Apps"]!-- todo: "No Production Found", ie 0 hits -- returns articles such as the following:
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113)
 
 
 <!-- ====================================================================== -->
@@ -248,6 +236,7 @@ Searching for "PWA" returns articles about Project Web App, more than Progressiv
 
 <!-- toc order -->
 * [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
+   * [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113)
 * [Get started developing a PWA](./how-to/index.md)<!-- bucket 1 sibling 2 -->
 * [Temperature converter sample](./samples/temperature-converter.md)<!-- link not in article --><!-- bucket 1 sibling 3 -->
 * [Define app shortcuts (long-press or right-click menus)](./how-to/shortcuts.md)<!-- bucket 3 -->
