@@ -31,7 +31,7 @@ async function fetchChromeStatusAPI(url) {
   return data;
 }
 
-// Format a date string as "Mth. Day, Year", e.g., "Jan. 15, 2024".
+// Format a date string as "Mth. Day, Year", e.g., "Jan. 15, 2026".
 function longDate(dateString) {
   const date = new Date(dateString);
   
