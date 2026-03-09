@@ -16,7 +16,7 @@ This article covers preliminary, end-user information about how to use PWAs.
 
 See also:
 * [Get started developing a PWA](./how-to/index.md)
-* [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113) - Support.microsoft.com.
 
 
 <!-- ====================================================================== -->
@@ -235,12 +235,12 @@ FSLogix enhances and enables a consistent experience for Windows user profiles i
 <!-- all links in article -->
 
 <!-- toc order -->
-* [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
-   * [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113)
 * [Get started developing a PWA](./how-to/index.md)<!-- bucket 1 sibling 2 -->
 * [Temperature converter sample](./samples/temperature-converter.md)<!-- link not in article --><!-- bucket 1 sibling 3 -->
 * [Define app shortcuts (long-press or right-click menus)](./how-to/shortcuts.md)<!-- bucket 3 -->
 * [Re-engage users with badges and notifications](./how-to/notifications-badges.md)<!-- bucket 5 -->
+* [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
 
 External:
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113) - Support.microsoft.com.
 * [Microsoft Store](https://apps.microsoft.com)
