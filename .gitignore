@@ -14,3 +14,4 @@ node_modules
 .env
 
 release-notes-comparison-report.md
+test-release-notes.md
