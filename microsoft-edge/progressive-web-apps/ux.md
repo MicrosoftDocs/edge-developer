@@ -1,5 +1,5 @@
 ---
-title: Use PWAs in Microsoft Edge
+title: Use Progressive Web Apps (PWAs) in Microsoft Edge
 description: How to use Progressive Web Apps (PWAs) in Microsoft Edge, including installing a PWA, managing PWAs, Windows integration, and the App info (Settings and more) menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: pwa
 ms.date: 10/15/2025
 ---
-# Use PWAs in Microsoft Edge
+# Use Progressive Web Apps (PWAs) in Microsoft Edge
 
 Any device that's running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps (PWAs).  On Windows, PWAs are just like other apps.
 
@@ -16,6 +16,7 @@ This article covers preliminary, end-user information about how to use PWAs.
 
 See also:
 * [Get started developing a PWA](./how-to/index.md)
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113) - Support.microsoft.com.
 
 
 <!-- ====================================================================== -->
@@ -224,6 +225,12 @@ FSLogix enhances and enables a consistent experience for Windows user profiles i
 
 
 <!-- ====================================================================== -->
+## User docs about Progressive Web Apps (PWAs)
+
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113)
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
@@ -232,6 +239,8 @@ FSLogix enhances and enables a consistent experience for Windows user profiles i
 * [Temperature converter sample](./samples/temperature-converter.md)<!-- link not in article --><!-- bucket 1 sibling 3 -->
 * [Define app shortcuts (long-press or right-click menus)](./how-to/shortcuts.md)<!-- bucket 3 -->
 * [Re-engage users with badges and notifications](./how-to/notifications-badges.md)<!-- bucket 5 -->
+* [View end-user docs about Microsoft Edge](../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
 
 External:
+* [Install, manage, or uninstall apps in Microsoft Edge](https://support.microsoft.com/topic/install-manage-or-uninstall-apps-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113) - Support.microsoft.com.
 * [Microsoft Store](https://apps.microsoft.com)

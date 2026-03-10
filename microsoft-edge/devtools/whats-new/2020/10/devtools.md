@@ -308,7 +308,7 @@ See also:
 
 The **CSS overview** tool now displays a list of elements on your page that have color contrast issues.
 
-For example, the **CSS overview Accessible Colors Demo** (`https://css-overview-accessible-colors-demo.glitch.me`) (404) page has an example of a color contrast issue.  (Glitch.me project hosting ended July 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+For example, the **CSS overview Accessible Colors Demo** (`https://css-overview-accessible-colors-demo.glitch.me`) (404) page has an example of a color contrast issue.  (Glitch.me project hosting ended Jul. 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.
 
