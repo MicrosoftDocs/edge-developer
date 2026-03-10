@@ -89,7 +89,7 @@ Your download is a `.zip` archive that contains an `.msixbundle` file and a `.cl
 
 See also:
 
-* [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of August 11, 2023 -->
+* [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of Aug. 11, 2023 -->
 * [Bundling MSIX packages](/windows/msix/package/bundling-overview).
 
 

@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 147
+          href: ./web-platform/release-notes/147.md
+          displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
+
         - name: Microsoft Edge 146
           href: ./web-platform/release-notes/146.md
           displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
@@ -66,13 +70,13 @@
           href: ./web-platform/release-notes/138.md
           displayName: Microsoft Edge 138 web platform release notes (Jun. 2025)  # page title
 
-        - name: Microsoft Edge 137
-          href: ./web-platform/release-notes/137.md
-          displayName: Microsoft Edge 137 web platform release notes (May 2025)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 137
+              href: ./web-platform/release-notes/137.md
+              displayName: Microsoft Edge 137 web platform release notes (May 2025)  # page title
+
             - name: Microsoft Edge 136
               href: ./web-platform/release-notes/136.md
               displayName: Microsoft Edge 136 web platform release notes (May 2025)  # page title
@@ -114,6 +118,9 @@
 
         - name: Translate text with the Translator API
           href: ./web-platform/translator-api.md
+
+        - name: Detect languages with the Language Detector API
+          href: ./web-platform/languagedetector-api.md
 # /Experimental APIs for Microsoft Edge
 # =============================================================================
 # -----------------------------------------------------------------------------
@@ -1338,7 +1345,7 @@
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
-            - name: Use PWAs in Microsoft Edge
+            - name: Use Progressive Web Apps (PWAs) in Microsoft Edge
               href: ./progressive-web-apps/ux.md
 
             - name: Get started developing a PWA

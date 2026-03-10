@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/09/2025
+ms.date: 03/16/2025
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -25,9 +25,9 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 9, 2025 -->
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2025 -->
 
-Release Date: Mar. 9, 2025
+Release Date: Mar. 16, 2025
 
 [NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
@@ -56,7 +56,7 @@ This Release SDK includes the following bug fixes.
 <!-- todo: same or different issue?
 * Fixed a white flash that occurred when Windows Search became visible after being hidden. -->
 
-<!-- end of Release SDK 146 (Mar. 9, 2025) -->
+<!-- end of Release SDK 146 (Mar. 16, 2025) -->
 
 
 <!-- ====================================================================== -->

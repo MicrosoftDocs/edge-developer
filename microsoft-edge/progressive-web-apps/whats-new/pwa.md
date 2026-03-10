@@ -112,7 +112,7 @@ To access **sidebar search**:
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 100
 
-Microsoft Edge Dev and Canary channels moved to version 100 on February 9, 2022.  In this milestone, we're testing the following new web app features.  We expect to see these new features rolling out to Stable following the testing period.
+Microsoft Edge Dev and Canary channels moved to version 100 on Feb. 9, 2022.  In this milestone, we're testing the following new web app features.  We expect to see these new features rolling out to Stable following the testing period.
 
 
 <!-- ------------------------------ -->
@@ -165,7 +165,7 @@ Users can choose the sort order of their apps:
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 97
 
-Microsoft Edge version 96 is scheduled to become the Stable release on November 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
+Microsoft Edge version 96 is scheduled to become the Stable release on Nov. 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
 
 
 <!-- ------------------------------ -->
@@ -191,7 +191,7 @@ See also:
 <!-- ------------------------------ -->
 #### New hub design for managing your installed web apps
 
-Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
+Microsoft Edge Canary reached version 96 on Oct. 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
 
 <!-- ---------- -->
@@ -234,17 +234,17 @@ The app details page:
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 95
 
-Microsoft Edge version 95 moved to Beta channel on September 28, 2021.  The origin trials remain active for the following features:
+Microsoft Edge version 95 moved to Beta channel on Sep. 28, 2021.  The origin trials remain active for the following features:
 *  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
 *  [URL Handlers](#url-handlers-origin-trial).
 
-We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end on October 21, 2021.
+We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end on Oct. 21, 2021.
 
 
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 94
 
-Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short — just 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
+Microsoft Edge version 94 moved to Stable on Sep. 23, 2021. This release cycle was short — just 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
@@ -258,7 +258,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 93
 
-Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021.  This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
+Microsoft Edge version 93 became the Stable channel of Microsoft Edge on Sep. 2, 2021.  This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 
 <!-- ------------------------------ -->
@@ -305,7 +305,7 @@ Learn more about the [navigator.share() API](https://developer.mozilla.org/docs/
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 92
 
-Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
+Microsoft Edge version 92 became the stable channel of Microsoft Edge on Jul. 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 
 <!-- ------------------------------ -->
