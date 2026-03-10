@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/16/2026
+ms.date: 03/16/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -24,45 +24,42 @@ if change h2 headings pattern, enter work item: update links in announcements
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
 
-<!-- Prerelease SDK 147 (Mar. nn, 2026) -->
+<!-- Prerelease SDK 147 (Mar. 16, 2026) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.####-prerelease, for Runtime 147
+## Prerelease SDK 1.0.3908-prerelease, for Runtime 147
 
-Release Date: Mth. nn, 2026
+Release Date: Mar. 16, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
--->
+[NuGet package for WebView2 SDK 1.0.3908-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3908-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 1 (Experimental in Prerelease)
-<!-- 
-#### Experimental APIs (Phase 1)
--->
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### Persistent storage
 
-description
+The `PersistentStorage` enum value.<!-- todo: real heading & lead-in -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2PermissionKind.PersistentStorage Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
+   * `PersistentStorage`
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2PermissionKind.PersistentStorage Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true)
+   * `PersistentStorage`
+
 ##### [Win32/C++](#tab/win32cpp)
+
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
+   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
 
 ---
 
@@ -71,48 +68,27 @@ description
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed the bug where disconnecting a screen does not change screen resolution correctly.
+* Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
+* Disabling<!-- todo: disabled the? --> domain actions component for WebView2.
+* Fixed print-to-PDF APIs not working for PDF after using composite for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+* Fixed narrator announcing structural `HWND`.
+* Fixed WebView2 transparency.
+* Fixed White Flash in Dark mode for Search.
+* Fixed Caption controls background color setting API
 
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Prerelease SDK 147 (Mar. nn, 2026) -->
+<!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
 
 
 <!-- Release SDK 145 (Feb. 16, 2026) -->
