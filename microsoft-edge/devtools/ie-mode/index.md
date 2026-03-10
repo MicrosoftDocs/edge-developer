@@ -69,7 +69,7 @@ IE mode remains unavailable until you close and restart Microsoft Edge.
 <!-- ====================================================================== -->
 ## Replace Internet Explorer automation
 
-If you have an existing application that uses the [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on June 15, 2022.  See [The future of Internet Explorer on Windows 10 is in Microsoft Edge](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
+If you have an existing application that uses the [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on Jun. 15, 2022.  See [The future of Internet Explorer on Windows 10 is in Microsoft Edge](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
 Microsoft Edge doesn't support automating IE mode through the `InternetExplorer` object, so applications that rely on this object will need to be updated, by using one of the recommended alternatives below.  Applications that use the [WebBrowser](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)) control will continue to work, and won't be affected by the removal of Internet Explorer 11.
 

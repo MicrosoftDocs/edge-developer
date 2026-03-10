@@ -23,7 +23,7 @@ See:
 * "Removal of Native Client (NaCl)" table row in [Earlier versions](../../web-platform/site-impacting-changes?tabs=earlier#high-impact-changes) in _Site compatibility-impacting changes coming to Microsoft Edge_.
 -->
 
-To enhance web security and performance, Native Client (NaCl) is no longer supported by Microsoft Edge (along with other browsers).  Native Client (NaCl) was supported through Edge version 115.  In 116 to 119, NaCl was only usable by enabling an enterprise policy.  Starting with 120 (December 2023), support for NaCl was completely removed.
+To enhance web security and performance, Native Client (NaCl) is no longer supported by Microsoft Edge (along with other browsers).
 
 NaCl is a sandbox for running compiled C and C++ code in browsers efficiently and securely, independently of the user's operating system.  WebAssembly (Wasm) is recommended instead of NaCl.
 
