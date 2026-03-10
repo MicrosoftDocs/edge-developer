@@ -79,14 +79,14 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the bug where disconnecting a screen does not change screen resolution correctly.
+* Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
 * Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
 * Disabling<!-- todo: disabled the? --> domain actions component for WebView2.
-* Fixed print-to-PDF APIs not working for PDF after using composite for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-* Fixed narrator announcing structural `HWND`.
+* Fixed print-to-PDF APIs not working for PDF<!-- todo: "for PDF" is redundant, remove? --> after using composite<!-- todo: clarify 'composite' --> for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+* Fixed narrator announcing structural `HWND`.<!-- todo: fixed in what way? -->
 * Fixed WebView2 transparency.
-* Fixed White Flash in Dark mode for Search.
-* Fixed Caption controls background color setting API
+* Fixed a white flash in Dark mode for Search.
+* Fixed the API for setting the background color of the **Caption** control.
 
 <!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
 
