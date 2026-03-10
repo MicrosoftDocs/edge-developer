@@ -14,7 +14,7 @@ ms.date: 01/01/2026
 <!-- Edge versions and dates: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases -->
 
 <!-- ====================================================================== -->
-## January 2026
+## Jan. 2026
 <!-- Edge 144 = Jan. 15, 2026 -->
 
 The following updates have been deployed to production, addressing key issues and enhancements for the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and Microsoft Edge Add-ons experience.

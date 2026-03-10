@@ -173,4 +173,4 @@ Microsoft.com:
 * [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider) - download a preview channel of Microsoft Edge (Beta, Dev, or Canary).
 
 YouTube:
-* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - March 2, 2021.
+* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - Mar. 2, 2021.

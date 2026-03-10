@@ -40,7 +40,7 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
    The Color Picker opens:
 
-   ![The color picker, opened in the Styles tab, next to the color property of the element](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color.png)
+   ![The Color Picker, opened in the Styles tab, next to the color property of the element](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color.png)
 
 1. Examine the **Contrast ratio** section of the Color Picker:
 

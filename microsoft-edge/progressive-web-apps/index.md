@@ -18,7 +18,7 @@ To start building a PWA, see [Get started developing a PWA](./how-to/index.md).
 
 
 <!-- ------------------------------ -->
-#### Video: Ignite | March 2021 | Igniting the Web Apps Story
+#### Video: Ignite | Mar. 2021 | Igniting the Web Apps Story
 
 [![Thumbnail image for video "Igniting the Web Apps Story"](./index-images/igniting-web-apps-story.png)](https://www.youtube.com/watch?v=xUNC8MjW_iI)
 
@@ -135,7 +135,7 @@ Blog:
 * [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition).
 
 YouTube:
-* [Ignite | March 2021 | Igniting the Web Apps Story](https://www.youtube.com/watch?v=xUNC8MjW_iI)
+* [Ignite | Mar. 2021 | Igniting the Web Apps Story](https://www.youtube.com/watch?v=xUNC8MjW_iI)
 
 Stats:
 * [PWA Stats](https://www.pwastats.com)

@@ -287,7 +287,7 @@ For more information, see [Emulate mobile devices (Device Emulation)](../../../d
 
 The **Network** tool now displays specific status for CORS errors.  For example:
 
-1. Go to **CORS error demo** (`https://cors-errors.glitch.me`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+1. Go to **CORS error demo** (`https://cors-errors.glitch.me`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended Jul. 8, 2025.  This test site might move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 1. Open the **Network** tool, refresh the page, and observe the failed CORS network request.
 

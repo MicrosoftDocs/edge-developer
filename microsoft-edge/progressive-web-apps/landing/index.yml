@@ -47,7 +47,7 @@ landingContent:
           - text: Overview of Progressive Web Apps (PWAs)
             url: ../index.md
 
-          - text: Use PWAs in Microsoft Edge
+          - text: Use Progressive Web Apps (PWAs) in Microsoft Edge
             url: ../ux.md
 
       - linkListType: get-started

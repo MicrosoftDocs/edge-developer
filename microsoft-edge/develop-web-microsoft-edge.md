@@ -174,6 +174,20 @@ The following sections are tips for using the Microsoft Learn website.
 
 
 <!-- ====================================================================== -->
+## View end-user docs about Microsoft Edge
+
+Microsoft Edge Developer docs are at the Microsoft Learn website.  Microsoft Edge end-user docs are at the following, other websites:
+
+* [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - Support.microsoft.com.
+* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - Learning center at Microsoft.com.
+
+See also:
+* [User docs about Microsoft Edge extensions](./extensions/getting-started/user-docs.md)
+* [Use Progressive Web Apps (PWAs) in Microsoft Edge](./progressive-web-apps/ux.md)
+* [WebView2 end-user FAQ](./webview2/concepts/end-user-faq.md)
+
+
+<!-- ====================================================================== -->
 ## Zoom an image in an article
 
 To see details of a screenshot or diagram:
