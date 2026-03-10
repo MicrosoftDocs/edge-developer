@@ -54,7 +54,7 @@ Download and install a version of Microsoft Edge WebDriver that matches your bro
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge, a four-part number:
 
-    ![The build number for Microsoft Edge on September 28, 2024](./index-images/microsoft-edge-version.png)
+    ![The build number for Microsoft Edge on Sep. 28, 2024](./index-images/microsoft-edge-version.png)
 
 1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
 

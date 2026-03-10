@@ -59,7 +59,7 @@ See also:
 <!-- ====================================================================== -->
 ## Explain DevTools Console errors using Copilot in Edge
 
-February 8, 2024
+Feb. 8, 2024
 
 [![Thumbnail image for video "Explain DevTools Console errors using Copilot in Edge"](./index-images/console-errors-copilot.png)](https://www.youtube.com/watch?v=vfVsAmNFLik)
 
@@ -72,7 +72,7 @@ See also:
 <!-- ====================================================================== -->
 ## The JSON viewer
 
-August 17, 2023
+Aug. 17, 2023
 
 [![Thumbnail image for video "The JSON viewer"](./index-images/json-viewer.png)](https://www.youtube.com/watch?v=DO7V6lw1SWA)
 
@@ -85,7 +85,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 113 and 114
 
-July 24, 2023
+Jul. 24, 2023
 
 [![Thumbnail image for video "What's New in DevTools 113 and 114"](./index-images/devtools-whatsnew-113-114.png)](https://www.youtube.com/watch?v=jtKVcLaA5Yw)
 
@@ -106,7 +106,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 112
 
-April 26, 2023
+Apr. 26, 2023
 
 [![Thumbnail image for the "What's New in DevTools 112" video](./index-images/devtools-whatsnew-112.png)](https://www.youtube.com/watch?v=xuICl66F-Ik)
 
@@ -127,7 +127,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 111
 
-March 28, 2023
+Mar. 28, 2023
 
 [![Thumbnail image for video "What's new in DevTools 111"](./index-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
 
@@ -149,7 +149,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 110
 
-February 16, 2023
+Feb. 16, 2023
 
 [![Thumbnail image for video "What's new in DevTools 110"](./index-images/devtools-whatsnew-110.png)](https://www.youtube.com/watch?v=qrzq3bN_1BY)
 
@@ -168,7 +168,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 109
 
-January 17, 2023
+Jan. 17, 2023
 
 [![Thumbnail image for video "What's new in DevTools 109"](./index-images/devtools-whatsnew-109.png)](https://www.youtube.com/watch?v=b-q-PLmO-ns)
 
@@ -194,7 +194,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 108
 
-December 16, 2022
+Dec. 16, 2022
 
 [![Thumbnail image for video "What's new in DevTools 108"](./index-images/devtools-whatsnew-108.png)](https://www.youtube.com/watch?v=KmGXnsSCtI4)
 
@@ -213,13 +213,13 @@ See also:
 * [The heap snapshot file format](../devtools/memory-problems/heap-snapshot-schema.md)
 * [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
 
-<!-- The [initial, December 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead. -->
+<!-- The [initial, Dec. 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead. -->
 
 
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 107
 
-November 8, 2022
+Nov. 8, 2022
 
 [![Thumbnail image for video "What's new in DevTools 107"](./index-images/devtools-whatsnew-107.png)](https://www.youtube.com/watch?v=QcAnrbfJN0s)
 
@@ -239,7 +239,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | Learn to Use the Network Tool
 
-October 6, 2022
+Oct. 6, 2022
 
 [![Thumbnail image for video "Learn to Use the Network Tool"](./index-images/network-tool.png)](https://www.youtube.com/watch?v=niG_Ck6E5L8)
 
@@ -265,7 +265,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 106
 
-October 3, 2022
+Oct. 3, 2022
 
 [![Thumbnail image for video "What's new in DevTools 106"](./index-images/devtools-whatsnew-106.png)](https://www.youtube.com/watch?v=LJxjFo4DuA0)
 
@@ -285,7 +285,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 105
 
-September 6, 2022
+Sep. 6, 2022
 
 [![Thumbnail image for video "What's new in DevTools 105"](./index-images/devtools-whatsnew-105.png)](https://www.youtube.com/watch?v=h0XJH_iLoUk)
 
@@ -304,11 +304,11 @@ See also:
 <!-- ====================================================================== -->
 ## Understand the DevTools user interface
 
-September 1, 2022
+Sep. 1, 2022
 
 [![Thumbnail image for video "Understand the DevTools user interface"](./index-images/learn-devtools-ui.png)](https://www.youtube.com/watch?v=ayemJLeE55c)
 
-This slightly older (September 2022) video shows the legacy UI for DevTools:
+This slightly older (Sep. 2022) video shows the legacy UI for DevTools:
 * Instead of the **Activity Bar**, the video shows the main toolbar.
 * Instead of the **Quick View** panel, the video shows the **Drawer** at bottom of DevTools.
 
@@ -336,7 +336,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 104
 
-August 5, 2022
+Aug. 5, 2022
 
 [![Thumbnail image for video "What's new in DevTools 104"](./index-images/devtools-whatsnew-104.png)](https://www.youtube.com/watch?v=0_ZprFX8x0I)
 
@@ -356,7 +356,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 103
 
-July 5, 2022
+Jul. 5, 2022
 
 [![Thumbnail image for video "What's new in DevTools 103"](./index-images/devtools-whatsnew-103.png)](https://www.youtube.com/watch?v=aa0C6BRdaPA)
 
@@ -374,7 +374,7 @@ See also:
 <!-- ====================================================================== -->
 ## Debug the web in 3D
 
-June 21, 2022
+Jun. 21, 2022
 
 [![Thumbnail image for video "Debug the web in 3D"](./index-images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
 
@@ -393,7 +393,7 @@ See also:
 <!-- ====================================================================== -->
 ## Use your preferred language in Microsoft Edge DevTools
 
-June 9, 2022
+Jun. 9, 2022
 
 [![Thumbnail image for video "Use your preferred language in Microsoft Edge DevTools"](./index-images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
 
@@ -406,7 +406,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 102
 
-June 1, 2022
+Jun. 1, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 102"](./index-images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
 
@@ -430,7 +430,7 @@ May 31, 2022
 
 Styling `<select>` elements has been challenging. The experimental `<selectmenu>` (or `<selectlist>`) element promises to overcome the remaining limitations, by enabling web developers to style all parts of the element.
 
-June 2024 update: This element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023.
+Jun. 2024 update: This element is still experimental.  The `<selectmenu>` element was renamed to `<selectlist>` in 2023.
 
 See also:
 * [Open UI's `<selectlist>` demos](https://microsoftedge.github.io/Demos/selectlist/)
@@ -467,7 +467,7 @@ May 12, 2022
 
 Learn about the CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a webpage, without using JavaScript.  This is a feature of the web platform as a whole, not only Microsoft Edge.
 
-As of July 21, 2023, this feature is no longer experimental, and is now supported in Microsoft Edge without a flag.  From 2022 description: CSS scroll-linked animations is an experimental feature in Microsoft Edge; to try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.
+As of Jul. 21, 2023, this feature is no longer experimental, and is now supported in Microsoft Edge without a flag.  From 2022 description: CSS scroll-linked animations is an experimental feature in Microsoft Edge; to try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.
 
 See also:
 * [Reader demo](https://microsoftedge.github.io/Demos/reader/) - demo app that's shown in the video.
@@ -500,7 +500,7 @@ See also:
 <!-- ====================================================================== -->
 ## Highlight text on the web with the CSS Custom Highlighting API
 
-April 28, 2022
+Apr. 28, 2022
 
 [![Thumbnail image for video "Highlight text on the web with the CSS Custom Highlighting API"](./index-images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
 
@@ -516,7 +516,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 101
 
-April 28, 2022
+Apr. 28, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 101"](./index-images/devtools-whatsnew-101.png)](https://www.youtube.com/watch?v=kv6Q8a9bsbA)
 
@@ -535,7 +535,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 100
 
-April 19, 2022
+Apr. 19, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 100"](./index-images/devtools-whatsnew-100.png)](https://www.youtube.com/watch?v=aP6d2PIU7hc)
 
@@ -554,7 +554,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 99
 
-March 21, 2022
+Mar. 21, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 99"](./index-images/devtools-whatsnew-99.png)](https://www.youtube.com/watch?v=Z5-tEE_cNTo)
 
@@ -572,7 +572,7 @@ See also:
 <!-- ====================================================================== -->
 ## Automatic image descriptions in Microsoft Edge
 
-March 17, 2022
+Mar. 17, 2022
 
 [![Thumbnail image for video "Automatic image descriptions in Microsoft Edge"](./index-images/automatic-image-descriptions.png)](https://www.youtube.com/watch?v=GhyLc8X_6Mg)
 
@@ -587,7 +587,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 98
 
-February 23, 2022
+Feb. 23, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 98"](./index-images/devtools-whatsnew-98.png)](https://www.youtube.com/watch?v=HpaRDwU_AZI)
 
@@ -606,7 +606,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 97
 
-February 1, 2022
+Feb. 1, 2022
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 97"](./index-images/devtools-whatsnew-97.png)](https://www.youtube.com/watch?v=qbDLtE0a_yQ)
 
@@ -626,11 +626,11 @@ See also:
 <!-- ====================================================================== -->
 ## Debug memory leaks with the Microsoft Edge Detached Elements tool
 
-December 9, 2021
+Dec. 9, 2021
 
 [![Thumbnail image for video "Debug memory leaks with the Microsoft Edge Detached Elements tool"](./index-images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
-March 2025 update: The **Detached Elements** tool has been removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
+Mar. 2025 update: The **Detached Elements** tool has been removed.  To debug DOM memory leaks, use the **Detached elements** profiling type in the **Memory** tool.
 
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage-collect.  We built the **Detached Elements** tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
@@ -642,7 +642,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 96
 
-December 9, 2021
+Dec. 9, 2021
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 96"](./index-images/devtools-whatsnew-96.png)](https://www.youtube.com/watch?v=H6dYeoGOIDk)
 
@@ -661,7 +661,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 95
 
-December 8, 2021
+Dec. 8, 2021
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 95"](./index-images/devtools-whatsnew-95.png)](https://www.youtube.com/watch?v=JsnW0CU1l80)
 
@@ -677,7 +677,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | The EyeDropper API
 
-November 22, 2021
+Nov. 22, 2021
 
 [![Thumbnail image for video "The EyeDropper API"](./index-images/eyedropper-api.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
 
@@ -693,7 +693,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 94
 
-November 12, 2021
+Nov. 12, 2021
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 94"](./index-images/devtools-whatsnew-94.png)](https://www.youtube.com/watch?v=S-g1E_W9wQQ)
 
@@ -714,7 +714,7 @@ See also:
 <!-- ====================================================================== -->
 ## Microsoft Edge | What's New in DevTools 93
 
-October 11, 2021
+Oct. 11, 2021
 
 [![Thumbnail image for video "Microsoft Edge | What's New in DevTools 93"](./index-images/devtools-whatsnew-93.png)](https://www.youtube.com/watch?v=rDB_a4bUeeA)
 
@@ -754,9 +754,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Ignite | March 2021 | Igniting the Web Apps Story
+## Ignite | Mar. 2021 | Igniting the Web Apps Story
 
-March 2, 2021
+Mar. 2, 2021
 
 [![Thumbnail image for video "Igniting the Web Apps Story"](./index-images/igniting-web-apps-story.png)](https://www.youtube.com/watch?v=xUNC8MjW_iI)
 
@@ -777,9 +777,9 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Ignite | September 2020 | The latest in developer tooling
+## Ignite | Sep. 2020 | The latest in developer tooling
 
-September 22, 2020
+Sep. 22, 2020
 
 [![Thumbnail image for video "The latest in developer tooling"](./index-images/latest-developer-tooling.png)](https://www.youtube.com/watch?v=BHeF7GV6nUM)
 
@@ -804,4 +804,4 @@ YouTube:
    * [Developer](https://www.youtube.com/playlist?list=PL4z1-7pjJU6zvxxsa2GzzuaXf1neBzrmI) - playlist.
    * [What's New in DevTools](https://www.youtube.com/playlist?list=PL4z1-7pjJU6wCla3QZuWuWjsCB2hCnTvr) - playlist.
    * [Extensions](https://www.youtube.com/playlist?list=PL4z1-7pjJU6ykO2iptfxT7T68W5WEK4ff) - playlist.
-* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - March 2, 2021.<!-- video partly outdated by more recent WebView2 developments, and no longer represents an up-to-date intro -->
+* [Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) - Mar. 2, 2021.<!-- video partly outdated by more recent WebView2 developments, and no longer represents an up-to-date intro -->

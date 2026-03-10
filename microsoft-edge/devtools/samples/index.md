@@ -28,7 +28,7 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 sync:
 https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#list-of-devtools-samples
 https://github.com/MicrosoftEdge/Demos#readme
-sync'd July 30, 2025
+sync'd Jul. 30, 2025
 -->
 
 The following demos demonstrate DevTools features.

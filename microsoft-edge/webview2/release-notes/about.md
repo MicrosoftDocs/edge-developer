@@ -66,7 +66,7 @@ SDKs/packages are Prerelease or Release
 <!-- ====================================================================== -->
 ## Updating the Runtime and SDK
 
-WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the February 2023 release, the update requirement for each bug fix is indicated as follows:
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the Feb. 2023 release, the update requirement for each bug fix is indicated as follows:
 
 | Indicator | Meaning |
 |---|---|

@@ -1345,7 +1345,7 @@
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
-            - name: Use PWAs in Microsoft Edge
+            - name: Use Progressive Web Apps (PWAs) in Microsoft Edge
               href: ./progressive-web-apps/ux.md
 
             - name: Get started developing a PWA
