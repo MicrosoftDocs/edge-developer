@@ -10,7 +10,7 @@ ms.date: 11/07/2022
 ---
 # View Microsoft Edge extensions analytics dashboard
 
-Microsoft announced the launch of the Extensions Analytics Dashboard on September 8, 2021. For more information, see the blog post [Track your add-on's performance: extension analytics now available on Partner center](https://techcommunity.microsoft.com/t5/articles/track-your-add-on-s-performance-extension-analytics-now/m-p/2733351).
+Microsoft announced the launch of the Extensions Analytics Dashboard on Sep. 8, 2021. For more information, see the blog post [Track your add-on's performance: extension analytics now available on Partner center](https://techcommunity.microsoft.com/t5/articles/track-your-add-on-s-performance-extension-analytics-now/m-p/2733351).
 
 You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
@@ -34,9 +34,9 @@ From the analytics dashboard you can view metrics for the **Last month**, **3 mo
 
 The **Weekly users** metric tracks the number of users that have your extension turned on, turned off and status unknown on Microsoft Edge over the past seven days.
 
-The following screenshot shows the **Weekly users** from the date the extension was published until the day the report was run on February 18.
+The following screenshot shows the **Weekly users** from the date the extension was published until the day the report was run on Feb. 18.
 
-![Weekly users from the date the extension was published until February 18](./extensions-analytics-images/extensions-analytics-weekly-users.png)
+![Weekly users from the date the extension was published until Feb. 18](./extensions-analytics-images/extensions-analytics-weekly-users.png)
 
 
 <!-- ------------------------------ -->

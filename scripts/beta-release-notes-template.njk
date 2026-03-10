@@ -33,12 +33,8 @@ To stay up-to-date and get the latest web platform features, download a preview 
   {% for feature in data.csFeatures["Removed"] %}
   * [{{ feature.name }}](#{{ feature.name | slugify }})
   {% endfor %}
-* [Origin trials in Microsoft Edge](#origin-trials-in-microsoft-edge)
+* [Origin trials](#origin-trials)
   {% for trial in data.edgeOTs %}
-  * [{{ trial.title }}](#{{ trial.title | slugify }})
-  {% endfor %}
-* [Chromium origin trials](#chromium-origin-trials)
-  {% for trial in data.chromeOTs %}
   * [{{ trial.title }}](#{{ trial.title | slugify }})
   {% endfor %}
 
@@ -105,7 +101,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Origin trials in Microsoft Edge
+## Origin trials
 
 The following are origin trials for new experimental APIs that are available in Microsoft Edge.
 
@@ -126,27 +122,6 @@ Expires on {{ trial.expiration }}.
 * [Feedback]({{ trial.feedback }})
 * [Register]({{ trial.registration }})
 
-{% endfor %}
-
-<!-- ====================================================================== -->
-## Chromium origin trials
-
-Below are active Chromium origin trials which you can try in Microsoft Edge.
-
-For the full list of Chromium origin trials that are available in Microsoft Edge, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials/).
-
-{% for trial in data.chromeOTs %}
-
-<!-- ------------------------------ -->
-#### {{ trial.title }}
-
-Expires on {{ trial.expiration }}.
-
-{{ trial.description }}
-
-* [Explainer]({{ trial.explainer }})
-* [Feedback]({{ trial.feedback }})
-* [Register]({{ trial.registration }})
 {% endfor %}
 
 
