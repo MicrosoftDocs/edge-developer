@@ -20,7 +20,7 @@ Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-
 
 Migrating from Manifest V2 to Manifest V3 brings several structural changes to how extensions are handled by the browser.
 
-In October 2020, Microsoft announced the [decision to embrace Manifest V3](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
+In Oct. 2020, Microsoft announced the [decision to embrace Manifest V3](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
 
 Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
@@ -58,7 +58,7 @@ The Microsoft Edge team will independently decide on MV3 migration timelines for
 
 | Timeframe | Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
-| July 2022 (already in effect) | Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
+| Jul. 2022 (already in effect) | Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
 | TBD | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge, by using enterprise policies. |
 | TBD | No change. | Manifest V2 extensions will no longer function in Microsoft Edge, even with the use of enterprise policies. |
 

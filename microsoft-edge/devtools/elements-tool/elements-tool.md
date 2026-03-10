@@ -35,7 +35,7 @@ The **Elements** tool contains the following tabs:
 
 * [CSS features reference](../css/reference.md)
 * [Get started viewing and changing CSS](../css/index.md)
-* [Inspect CSS Grid](../css/grid.md)
+* [Inspect CSS Grid layouts](../css/grid.md)
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 * [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
 * [Get started viewing and changing the DOM](../dom/index.md)

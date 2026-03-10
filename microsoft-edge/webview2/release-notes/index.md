@@ -27,7 +27,7 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3800.47, for Runtime 145
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
@@ -62,7 +62,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
@@ -256,7 +256,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## Release SDK 1.0.3719.77, for Runtime 144
 
-Release Date: January 27, 2026
+Release Date: Jan. 27, 2026
 
 [NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
@@ -335,7 +335,7 @@ This Release SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
 
-Release Date: January 19, 2026
+Release Date: Jan. 19, 2026
 
 [NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 
