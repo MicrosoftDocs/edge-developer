@@ -24,91 +24,45 @@ if change h2 headings pattern, enter work item: update links in announcements
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
 
-<!-- Mar. 2026 Release SDK (146) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime 146
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 9, 2025 -->
 
-Release Date: Monthname nn, 2025
+Release Date: Mar. 9, 2025
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
--->
+[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed Print to PDF APIs not working for PDF after using composite for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+<!-- todo: clarify.  linked issue lacks "composite" -->
+
+* Fixed a white flash in Dark mode for Search.
+<!-- todo: same or different issue?
+* Fixed a white flash that occurred when Windows Search became visible after being hidden. -->
+
+<!-- end of Release SDK 146 (Mar. 9, 2025) -->
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Mar. 2026 Release SDK (123) -->
-
-
-<!-- Feb 2026 Release SDK (145) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.3800.47, for Runtime 145
+## Release SDK 1.0.3800.47, for Runtime 145<!-- Feb. 16, 2026 -->
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
@@ -136,14 +90,13 @@ This Release SDK includes the following bug fixes.
 
 * Fixed WebView2 transparency.
 
-<!-- end of Feb 2026 Release SDK (145) -->
+<!-- end of Release SDK 145 (Feb. 16, 2026) -->
 
 
-<!-- Feb 2026 Prerelease SDK (146) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3848-prerelease, for Runtime 146
+## Prerelease SDK 1.0.3848-prerelease, for Runtime 146<!-- Feb. 16, 2026 -->
 
-Release Date: February 16, 2026
+Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
@@ -330,14 +283,13 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
-<!-- end of Feb 2026 Prerelease SDK (146) -->
+<!-- end of Prerelease SDK 146 (Feb. 16, 2026) -->
 
 
-<!-- Jan 2026 Release SDK (144) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.3719.77, for Runtime 144
+## Release SDK 1.0.3719.77, for Runtime 144<!-- Jan. 27, 2026 -->
 
-Release Date: January 27, 2026
+Release Date: Jan. 27, 2026
 
 [NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
@@ -409,14 +361,13 @@ This Release SDK includes the following bug fixes.
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
-<!-- end of Jan 2026 Release SDK (144) -->
+<!-- end of Release SDK 144 (Jan. 27, 2026) -->
 
 
-<!-- Jan 2026 Prerelease SDK (145) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145<!-- Jan. 19, 2026 -->
 
-Release Date: January 19, 2026
+Release Date: Jan. 19, 2026
 
 [NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 
@@ -498,13 +449,12 @@ This Prerelease SDK includes the following bug fixes.
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
-<!-- end of Jan 2026 Prerelease SDK (145) -->
+<!-- end of Prerelease SDK 145 (Jan. 19, 2026) -->
 
 
-<!-- Release SDK 143 -->
+<!-- if update pattern of older h2 headings, must update links in announcements -->
 <!-- ====================================================================== -->
-## 1.0.3650.58
-<!-- if update pattern of older h2 headings, update links in announcements -->
+## 1.0.3650.58<!-- Release SDK 143 (Dec. 8, 2025) -->
 
 Release Date: Dec. 8, 2025, Runtime 143
 
@@ -526,12 +476,11 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 * Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
-<!-- end of Release SDK 143 -->
+<!-- end of Release SDK 143 (Dec. 8, 2025) -->
 
 
-<!-- Prerelease SDK 144 -->
 <!-- ====================================================================== -->
-## 1.0.3712-prerelease
+## 1.0.3712-prerelease<!-- Prerelease SDK 144 (Dec. 8, 2025) -->
 
 Release Date: Dec. 8, 2025, Runtime 144
 
@@ -657,12 +606,11 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
-<!-- end of Prerelease SDK 144 -->
+<!-- end of Prerelease SDK 144 (Dec. 8, 2025) -->
 
 
-<!-- Release SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3595.46
+## 1.0.3595.46<!-- Release SDK 142 (Nov. 3, 2025) -->
 
 Release Date: Nov. 3, 2025, Runtime 142
 
@@ -691,9 +639,8 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 142 -->
 
 
-<!-- Prerelease SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650-prerelease
+## 1.0.3650-prerelease<!-- Prerelease SDK 143 (Nov. 7, 2025) -->
 
 Release Date: Nov. 7, 2025, Runtime 143
 
@@ -729,9 +676,8 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 143 -->
 
 
-<!-- Release SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3537.50
+## 1.0.3537.50<!-- Release SDK 141 (Oct. 6, 2025) -->
 
 Release Date: Oct. 6, 2025, Runtime 141
 
@@ -766,9 +712,8 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 141 -->
 
 
-<!-- Prerelease SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3590-prerelease
+## 1.0.3590-prerelease<!-- Prerelease SDK 142 (Oct. 7, 2025) -->
 
 Release Date: Oct. 7, 2025, Runtime 142
 
@@ -882,9 +827,8 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 142 -->
 
 
-<!-- Release SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3485.44
+## 1.0.3485.44<!-- Release SDK 140 (Sep. 8, 2025) -->
 
 Release Date: Sep. 8, 2025, Runtime 140
 
@@ -917,9 +861,8 @@ There are no bug fixes in this Release SDK.
 <!-- end of Release SDK 140 -->
 
 
-<!-- Prerelease SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3530-prerelease
+## 1.0.3530-prerelease<!-- Prerelease SDK 141 (Sep. 8, 2025) -->
 
 Release Date: Sep. 8, 2025, Runtime 141
 
@@ -964,9 +907,8 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 141 -->
 
 
-<!-- Release SDK 139 -->
 <!-- ====================================================================== -->
-## 1.0.3405.78
+## 1.0.3405.78<!-- Release SDK 139 (Aug. 11, 2025) -->
 
 Release Date: Aug. 11, 2025, Runtime 139
 
@@ -1098,9 +1040,8 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- end of Release SDK 139 -->
 
 
-<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3477-prerelease
+## 1.0.3477-prerelease<!-- Prerelease SDK 140 (Aug. 11, 2025) -->
 
 Release Date: Aug. 11, 2025, Runtime 140
 
@@ -1139,9 +1080,8 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- end of Prerelease SDK 140 -->
 
 
-<!-- Release SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3351.48
+## 1.0.3351.48<!-- Release SDK 138 (Jul. 1, 2025) -->
 
 Release Date: Jul. 1, 2025, Runtime 138
 
@@ -1192,9 +1132,8 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- end of Release SDK 138 -->
 
 
-<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3415-prerelease
+## 1.0.3415-prerelease<!-- Prerelease SDK 140 (Jul. 14, 2025) -->
 
 Release Date: Jul. 14, 2025, Runtime 140
 
@@ -1686,9 +1625,8 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- end of Prerelease SDK 140 -->
 
 
-<!-- Release SDK 137 -->
 <!-- ====================================================================== -->
-## 1.0.3296.44
+## 1.0.3296.44<!-- Release SDK 137 (Jun. 3, 2025) -->
 
 Release Date: Jun. 3, 2025, Runtime 137
 
@@ -1739,9 +1677,8 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- end of Release SDK 137 -->
 
 
-<!-- Prerelease SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3344-prerelease
+## 1.0.3344-prerelease<!-- Prerelease SDK 138 (Jun. 3, 2025) -->
 
 Release Date: Jun. 3, 2025, Runtime 138
 
@@ -1802,9 +1739,8 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- end of Prerelease SDK 138 -->
 
 
-<!-- Release SDK 136 -->
 <!-- ====================================================================== -->
-## 1.0.3240.44
+## 1.0.3240.44<!-- Release SDK 136 (May 5, 2025) -->
 
 Release Date: May 5, 2025, Runtime 136
 
@@ -1864,9 +1800,8 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- end of Release SDK 136 -->
 
 
-<!-- Prerelease SDK 137 -->
 <!-- ====================================================================== -->
-## 1.0.3296-prerelease
+## 1.0.3296-prerelease<!-- Prerelease SDK 137 (May 12, 2025) -->
 
 Release Date: May 12, 2025, Runtime 137
 
@@ -1926,9 +1861,8 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- Prerelease SDK 137 -->
 
 
-<!-- Release SDK 135 -->
 <!-- ====================================================================== -->
-## 1.0.3179.45
+## 1.0.3179.45<!-- Release SDK 135 (Apr. 7, 2025) -->
 
 Release Date: Apr. 7, 2025, Runtime 135
 
@@ -1958,9 +1892,8 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- end of Release SDK 135 -->
 
 
-<!-- Prerelease SDK 136 -->
 <!-- ====================================================================== -->
-## 1.0.3230-prerelease
+## 1.0.3230-prerelease<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
 
 Release Date: Apr. 7, 2025, Runtime 136
 
@@ -2033,7 +1966,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 * Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
-<!-- end of Prerelease SDK 136 -->
+<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
