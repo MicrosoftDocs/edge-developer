@@ -103,6 +103,11 @@ function formatChromeStatusFeatures(data) {
   }
 
   const lines = [];
+
+  function getChromeStatusFeatureUrl(feature) {
+    const featureId = feature?.id ?? feature?.feature_id ?? feature?.featureId;
+    return featureId ? `https://chromestatus.com/feature/${featureId}` : null;
+  }
   
   // Handle both array format and object format.
   if (Array.isArray(featuresByType)) {
@@ -110,7 +115,12 @@ function formatChromeStatusFeatures(data) {
       if (category.features && category.features.length > 0) {
         lines.push(`\n## ${category.category}:`);
         for (const feature of category.features) {
-          lines.push(`- ${feature.name}: ${feature.summary || "No summary available."}`);
+          const chromeStatusUrl = getChromeStatusFeatureUrl(feature);
+          lines.push(
+            `- ${feature.name}: ${feature.summary || "No summary available."}${
+              chromeStatusUrl ? ` (ChromeStatus: ${chromeStatusUrl})` : ""
+            }`
+          );
         }
       }
     }
@@ -120,7 +130,12 @@ function formatChromeStatusFeatures(data) {
       if (Array.isArray(features) && features.length > 0) {
         lines.push(`\n## ${categoryName}:`);
         for (const feature of features) {
-          lines.push(`- ${feature.name}: ${feature.summary || "No summary available."}`);
+          const chromeStatusUrl = getChromeStatusFeatureUrl(feature);
+          lines.push(
+            `- ${feature.name}: ${feature.summary || "No summary available."}${
+              chromeStatusUrl ? ` (ChromeStatus: ${chromeStatusUrl})` : ""
+            }`
+          );
         }
       }
     }
@@ -173,9 +188,11 @@ List Chromium features from chromestatus.com that should probably be documented 
 - Ignore internal/infrastructure changes.
 - Ignore origin trials.
 - Note: Feature names and descriptions may differ (e.g., "scroll-driven" vs. "scroll driven").
+- For each missing feature, include the chromestatus.com URL from the provided feature list.
 
 ### 2. Missing from Release Notes (Low Priority)
 Features that might be intentionally omitted (such as minor changes, or already deprecated).
+- For each missing feature, include the chromestatus.com URL from the provided feature list.
 
 ### 3. Edge-Specific Features (Expected)
 Features in release notes that correctly don't appear in chromestatus.com (Edge-only features).

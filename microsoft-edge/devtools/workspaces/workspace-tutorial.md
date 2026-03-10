@@ -205,7 +205,7 @@ To make a change in the CSS file and save it to disk by using the **Elements** t
 
 The color of the `<h1>` element is still set to the new color.  The change remains across a refresh, because when you made the change, DevTools saved the change to disk.  When you refreshed the page, your local server served the modified copy of the file from disk.
 
-**Tip:** You can also change the color by clicking the fucshia-colored swatch to open the color picker to pick a new color. The HEX value for the color you pick is the color name.
+**Tip:** You can also change the color by clicking the fucshia-colored swatch to open the Color Picker to pick a new color. The HEX value for the color you pick is the color name.
 
 Continue with the next section.
 

@@ -44,7 +44,7 @@ Once you have a service worker which caches static files, pressing **F5** might 
 * Open DevTools, right-click **Refresh** in the browser toolbar, and click **Empty cache and hard refresh**.
 * Open DevTools, open the **Application** Tool, click **Service workers**, and then select the **Bypass for network** checkbox.
 
-To test PWA features that are enabled by adding code in your web app manifest, you must install your PWA. If you then make further changes to your web app manifest, you must uninstall and reinstall the PWA. To learn how to uninstall your PWA, see [Managing PWAs](../ux.md#managing-pwas) in _Use PWAs in Microsoft Edge_.
+To test PWA features that are enabled by adding code in your web app manifest, you must install your PWA. If you then make further changes to your web app manifest, you must uninstall and reinstall the PWA. To learn how to uninstall your PWA, see [Managing PWAs](../ux.md#managing-pwas) in _Use Progressive Web Apps (PWAs) in Microsoft Edge_.
 
 
 <!-- ====================================================================== -->
