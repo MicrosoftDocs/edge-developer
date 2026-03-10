@@ -26,7 +26,7 @@ The following features and bug fixes are in the WebView2 Release SDK and Prerele
 ## 1.0.3065.39
 <!-- ## Release SDK 1.0.3065.39, for Runtime 133 -->
 
-Release Date: February 10, 2025, Runtime 133
+Release Date: Feb. 10, 2025, Runtime 133
 
 [NuGet package for WebView2 SDK 1.0.3065.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3065.39)
 
@@ -57,7 +57,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 ## 1.0.3116-prerelease
 <!-- ## Prerelease SDK 1.0.3116-prerelease, for Runtime 134 -->
 
-Release Date: February 10, 2025, Runtime 134
+Release Date: Feb. 10, 2025, Runtime 134
 
 [NuGet package for WebView2 SDK 1.0.3116-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3116-prerelease)
 
@@ -113,7 +113,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## 1.0.2957.106
 
-Release Date: January 20, 2025
+Release Date: Jan. 20, 2025
 
 [NuGet package for WebView2 SDK 1.0.2957.106](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2957.106)
 
@@ -178,7 +178,7 @@ n/a
 <!-- ====================================================================== -->
 ## 1.0.3079-prerelease
 
-Release Date: January 24, 2025
+Release Date: Jan. 24, 2025
 
 [NuGet package for WebView2 SDK 1.0.3079-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3079-prerelease)
 
@@ -465,7 +465,7 @@ n/a
 <!-- ====================================================================== -->
 ## 1.0.2903.40
 
-Release Date: November 18, 2024
+Release Date: Nov. 18, 2024
 
 [NuGet package for WebView2 SDK 1.0.2903.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2903.40)
 
@@ -573,7 +573,7 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 <!-- ====================================================================== -->
 ## 1.0.2950-prerelease
 
-Release Date: November 18, 2024
+Release Date: Nov. 18, 2024
 
 [NuGet package for WebView2 SDK 1.0.2950-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2950-prerelease)
 
@@ -617,7 +617,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## 1.0.2849.39
 
-Release Date: October 21, 2024
+Release Date: Oct. 21, 2024
 
 [NuGet package for WebView2 SDK 1.0.2849.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2849.39)
 
@@ -713,7 +713,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 <!-- ====================================================================== -->
 ## 1.0.2895-prerelease
 
-Release Date: October 21, 2024
+Release Date: Oct. 21, 2024
 
 [NuGet package for WebView2 SDK 1.0.2895-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2895-prerelease)
 
@@ -915,7 +915,7 @@ Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a hand
 <!-- ====================================================================== -->
 ## 1.0.2792.45
 
-Release Date: September 23, 2024
+Release Date: Sep. 23, 2024
 
 [NuGet package for WebView2 SDK 1.0.2792.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2792.45)
 
@@ -944,7 +944,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2839-prerelease
 
-Release Date: September 23, 2024
+Release Date: Sep. 23, 2024
 
 [NuGet package for WebView2 SDK 1.0.2839-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2839-prerelease)
 
@@ -993,7 +993,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## 1.0.2739.15
 
-Release Date: August 26, 2024
+Release Date: Aug. 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2739.15](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2739.15)
 
@@ -1240,7 +1240,7 @@ There are no bug fixes in this Release SDK.
 <!-- ====================================================================== -->
 ## 1.0.2783-prerelease
 
-Release Date: August 26, 2024
+Release Date: Aug. 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2783-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2783-prerelease)
 
@@ -1297,10 +1297,10 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 
 <!-- ====================================================================== -->
-<!-- July/August 2024 Release SDK -->
+<!-- Jul./Aug. 2024 Release SDK -->
 ## 1.0.2651.64
 
-Release Date: August 13, 2024
+Release Date: Aug. 13, 2024
 
 [NuGet package for WebView2 SDK 1.0.2651.64](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2651.64)
 
@@ -1406,14 +1406,14 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed x86 for WinRT C# projection.
 
 
-<!-- end of July/August 2024 Release SDK -->
+<!-- end of Jul./Aug. 2024 Release SDK -->
 
 
 <!-- ====================================================================== -->
-<!-- July/August 2024 Prerelease SDK -->
+<!-- Jul./Aug. 2024 Prerelease SDK -->
 ## 1.0.2730-prerelease
 
-Release Date: August 7, 2024
+Release Date: Aug. 7, 2024
 
 [NuGet package for WebView2 SDK 1.0.2730-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2730-prerelease)
 
@@ -1640,14 +1640,14 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 * Made `CreateCoreWebView2Environment` and `GetAvailableCoreWebView2BrowserVersionString` more robust against potential race condition during Runtime update.
 
 
-<!-- end of July/August 2024 Prerelease SDK -->
+<!-- end of Jul./Aug. 2024 Prerelease SDK -->
 
 
-<!-- June 2024 Release SDK -->
+<!-- Jun. 2024 Release SDK -->
 <!-- ====================================================================== -->
 ## 1.0.2592.51
 
-Release Date: June 19, 2024
+Release Date: Jun. 19, 2024
 
 [NuGet package for WebView2 SDK 1.0.2592.51](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2592.51)
 
@@ -1684,7 +1684,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2646-prerelease
 
-Release Date: June 19, 2024
+Release Date: Jun. 19, 2024
 
 [NuGet package for WebView2 SDK 1.0.2646-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2646-prerelease)
 
@@ -2064,7 +2064,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## 1.0.2478.35
 
-Release Date: April 22, 2024
+Release Date: Apr. 22, 2024
 
 [NuGet package for WebView2 SDK 1.0.2478.35](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2478.35)
 
@@ -2152,7 +2152,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2526-prerelease
 
-Release Date: April 22, 2024
+Release Date: Apr. 22, 2024
 
 [NuGet package for WebView2 SDK 1.0.2526-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2526-prerelease)
 
@@ -2366,7 +2366,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.2420.47
 
-Release Date: March 25, 2024
+Release Date: Mar. 25, 2024
 
 [NuGet package for WebView2 SDK 1.0.2420.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2420.47)
 
@@ -2481,7 +2481,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2470-prerelease
 
-Release Date: March 25, 2024
+Release Date: Mar. 25, 2024
 
 [NuGet package for WebView2 SDK 1.0.2470-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2470-prerelease)
 
@@ -2710,7 +2710,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.2365.46
 
-Release Date: February 26, 2024
+Release Date: Feb. 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2365.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2365.46)
 
@@ -2801,7 +2801,7 @@ N/A
 <!-- ====================================================================== -->
 ## 1.0.2415-prerelease
 
-Release Date: February 26, 2024
+Release Date: Feb. 26, 2024
 
 [NuGet package for WebView2 SDK 1.0.2415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2415-prerelease)
 
@@ -3000,7 +3000,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.2277.86
 
-Release Date: February 5, 2024
+Release Date: Feb. 5, 2024
 
 [NuGet package for WebView2 SDK 1.0.2277.86](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2277.86)
 
@@ -3108,7 +3108,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2357-prerelease
 
-Release Date: January 30, 2024
+Release Date: Jan. 30, 2024
 
 [NuGet package for WebView2 SDK 1.0.2357-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2357-prerelease)
 
@@ -3488,7 +3488,7 @@ N/A
 <!-- ====================================================================== -->
 ## 1.0.2210.55
 
-Release Date: December 11, 2023
+Release Date: Dec. 11, 2023
 
 [NuGet package for WebView2 SDK 1.0.2210.55](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2210.55)
 
@@ -3718,7 +3718,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2151.40
 
-Release Date: November 6, 2023
+Release Date: Nov. 6, 2023
 
 [NuGet package for WebView2 SDK 1.0.2151.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2151.40)
 
@@ -3729,7 +3729,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 #### General Availability
 
 > [!IMPORTANT]
-> **Announcement**: Xbox WebView2 SDK is now Generally Available (GA) and is available on Xbox October 2310 version (231018-2200). For more details, see [WebView2 for Xbox announcement](https://blogs.windows.com/msedgedev/2023/11/01/webview2-for-xbox-announcement/).
+> **Announcement**: Xbox WebView2 SDK is now Generally Available (GA) and is available on Xbox Oct. 2310 version (231018-2200). For more details, see [WebView2 for Xbox announcement](https://blogs.windows.com/msedgedev/2023/11/01/webview2-for-xbox-announcement/).
 
 
 <!-- ------------------------------ -->
@@ -3802,7 +3802,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2194-prerelease
 
-Release Date: November 6, 2023
+Release Date: Nov. 6, 2023
 
 [NuGet package for WebView2 SDK 1.0.2194-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2194-prerelease)
 
@@ -3876,7 +3876,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.2088.41
 
-Release Date: October 16, 2023
+Release Date: Oct. 16, 2023
 
 [NuGet package for WebView2 SDK 1.0.2088.41](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2088.41)
 
@@ -3905,7 +3905,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2164-prerelease
 
-Release Date: October 18, 2023
+Release Date: Oct. 18, 2023
 
 [NuGet package for WebView2 SDK 1.0.2164-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2164-prerelease)
 
@@ -3963,7 +3963,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.2045.28
 
-Release Date: September 18, 2023
+Release Date: Sep. 18, 2023
 
 [NuGet package for WebView2 SDK 1.0.2045.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2045.28)
 
@@ -3992,7 +3992,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.2106-prerelease
 
-Release Date: September 20, 2023
+Release Date: Sep. 20, 2023
 
 [NuGet package for WebView2 SDK 1.0.2106-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2106-prerelease)
 
@@ -4163,7 +4163,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1938.49
 
-Release Date: August 28, 2023
+Release Date: Aug. 28, 2023
 
 [NuGet package for WebView2 SDK 1.0.1938.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1938.49)
 
@@ -4188,13 +4188,13 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed a bug where a bluescreen happens when using WebView2 apps on certain hardware configurations.  (Runtime-only)  ([Issue #3679](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3679))
 
 
-<!-- end of August 2023 Release SDK -->
+<!-- end of Aug. 2023 Release SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.2065-prerelease
 
-Release Date: August 30, 2023
+Release Date: Aug. 30, 2023
 
 [NuGet package for WebView2 SDK 1.0.2065-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2065-prerelease)
 
@@ -4238,13 +4238,13 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
 
 
-<!-- end of August 2023 Prerelease SDK -->
+<!-- end of Aug. 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.1901.177
 
-Release Date: July 24, 2023
+Release Date: Jul. 24, 2023
 
 [NuGet package for WebView2 SDK 1.0.1901.177](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1901.177)
 
@@ -4308,13 +4308,13 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed a bug where the entire toolbar is blank when hiding the Bookmarks, Search, and PageSelector buttons simultaneously.  (Runtime-only)  [Issue 2866](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2866)
 
 
-<!-- end of July 2023 Release SDK -->
+<!-- end of Jul. 2023 Release SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.1988-prerelease
 
-Release Date: July 24, 2023
+Release Date: Jul. 24, 2023
 
 [NuGet package for WebView2 SDK 1.0.1988-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1988-prerelease)
 
@@ -4520,13 +4520,13 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * Removed the **Show all saved passwords** context menu item.  (Runtime-only)
 
 
-<!-- end of July 2023 Prerelease SDK -->
+<!-- end of Jul. 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.1823.32
 
-Release Date: June 5, 2023
+Release Date: Jun. 5, 2023
 
 [NuGet package for WebView2 SDK 1.0.1823.32](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1823.32)
 
@@ -4631,13 +4631,13 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 ---
 
-<!-- end of June 2023 Release SDK -->
+<!-- end of Jun. 2023 Release SDK -->
 
 
 <!-- ====================================================================== -->
 ## 1.0.1905-prerelease
 
-Release Date: June 12, 2023
+Release Date: Jun. 12, 2023
 
 [NuGet package for WebView2 SDK 1.0.1905-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1905-prerelease)
 
@@ -4776,7 +4776,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 * In code that's generated by the **wv2winrt** tool, when calling an async method, it would crash if it succeeded but returned `null` instead of an `IAsyncAction`.  (SDK-only)
 
 
-<!-- end of June 2023 Prerelease SDK -->
+<!-- end of Jun. 2023 Prerelease SDK -->
 
 
 <!-- ====================================================================== -->
@@ -4953,7 +4953,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1722.45
 
-Release Date: April 13, 2023
+Release Date: Apr. 13, 2023
 
 [NuGet package for WebView2 SDK 1.0.1722.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1722.45)
 
@@ -5018,7 +5018,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1777-prerelease
 
-Release Date: April 10, 2023
+Release Date: Apr. 10, 2023
 
 [NuGet package for WebView2 SDK 1.0.1777-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1777-prerelease)
 
@@ -5113,7 +5113,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1661.34
 
-Release Date: March 20, 2023
+Release Date: Mar. 20, 2023
 
 [NuGet package for WebView2 SDK 1.0.1661.34](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1661.34)
 
@@ -5337,7 +5337,7 @@ APIs for managing tracking prevention:
 <!-- ====================================================================== -->
 ## 1.0.1724-prerelease
 
-Release Date: March 20, 2023
+Release Date: Mar. 20, 2023
 
 [NuGet package for WebView2 SDK 1.0.1724-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1724-prerelease)
 
@@ -5693,7 +5693,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1587.40
 
-Release Date: February 15, 2023
+Release Date: Feb. 15, 2023
 
 [NuGet package for WebView2 SDK 1.0.1587.40](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1587.40)
 
@@ -5740,7 +5740,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1671-prerelease
 
-Release Date: February 15, 2023
+Release Date: Feb. 15, 2023
 
 [NuGet package for WebView2 SDK 1.0.1671-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1671-prerelease)
 
@@ -5943,7 +5943,7 @@ Previous name in 1619-prerelease:
 <!-- ====================================================================== -->
 ## 1.0.1518.46
 
-Release Date: January 17, 2023
+Release Date: Jan. 17, 2023
 
 [NuGet package for WebView2 SDK 1.0.1518.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1518.46)
 
@@ -6034,7 +6034,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1619-prerelease
 
-Release Date: January 19, 2023
+Release Date: Jan. 19, 2023
 
 [NuGet package for WebView2 SDK 1.0.1619-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1619-prerelease)
 
@@ -6215,7 +6215,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1462.37
 
-Release Date: December 12, 2022
+Release Date: Dec. 12, 2022
 
 [NuGet package for WebView2 SDK 1.0.1462.37](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1462.37)
 
@@ -6231,7 +6231,7 @@ This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1466-prer
 <!-- ====================================================================== -->
 ## 1.0.1549-prerelease
 
-Release Date: December 12, 2022
+Release Date: Dec. 12, 2022
 
 [NuGet package for WebView2 SDK 1.0.1549-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1549-prerelease)
 
@@ -6390,7 +6390,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1418.22
 
-Release Date: October 31, 2022
+Release Date: Oct. 31, 2022
 
 [NuGet package for WebView2 SDK 1.0.1418.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1418.22)
 
@@ -6406,7 +6406,7 @@ This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1414-prer
 <!-- ====================================================================== -->
 ## 1.0.1466-prerelease
 
-Release Date: October 31, 2022
+Release Date: Oct. 31, 2022
 
 [NuGet package for WebView2 SDK 1.0.1466-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1466-prerelease)
 
@@ -6522,7 +6522,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.1370.28
 
-Release Date: October 11, 2022
+Release Date: Oct. 11, 2022
 
 [NuGet package for WebView2 SDK 1.0.1370.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1370.28)
 
@@ -6563,7 +6563,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1414-prerelease
 
-Release Date: October 11, 2022
+Release Date: Oct. 11, 2022
 
 [NuGet package for WebView2 SDK 1.0.1414-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1414-prerelease)
 
@@ -6682,7 +6682,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.1343.22
 
-Release Date: September 6, 2022
+Release Date: Sep. 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1343.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1343.22)
 
@@ -6698,7 +6698,7 @@ This WebView2 SDK release has the same bug fixes as [Bug fixes for 1.0.1369-prer
 <!-- ====================================================================== -->
 ## 1.0.1369-prerelease
 
-Release Date: September 6, 2022
+Release Date: Sep. 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
@@ -6753,7 +6753,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1293.44
 
-Release Date: August 8, 2022
+Release Date: Aug. 8, 2022
 
 [NuGet package for WebView2 SDK 1.0.1293.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1293.44)
 
@@ -6789,7 +6789,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1340-prerelease
 
-Release Date: August 8, 2022
+Release Date: Aug. 8, 2022
 
 [NuGet package for WebView2 SDK 1.0.1340-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1340-prerelease)
 
@@ -6874,7 +6874,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.1264.42
 
-Release Date: July 4, 2022
+Release Date: Jul. 4, 2022
 
 [NuGet package for WebView2 SDK 1.0.1264.42](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1264.42)
 
@@ -6907,7 +6907,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1305-prerelease
 
-Release Date: July 4, 2022
+Release Date: Jul. 4, 2022
 
 [NuGet package for WebView2 SDK 1.0.1305-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1305-prerelease)
 
@@ -6965,7 +6965,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1245.22
 
-Release Date: June 14, 2022
+Release Date: Jun. 14, 2022
 
 [NuGet package for WebView2 SDK 1.0.1245.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)
 
@@ -7075,7 +7075,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1185.39
 
-Release Date: April 12, 2022
+Release Date: Apr. 12, 2022
 
 [NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)
 
@@ -7114,7 +7114,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1222-prerelease
 
-Release Date: April 12, 2022
+Release Date: Apr. 12, 2022
 
 [NuGet package for WebView2 SDK 1.0.1222-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)
 
@@ -7167,7 +7167,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1150.38
 
-Release Date: March 10, 2022
+Release Date: Mar. 10, 2022
 
 [NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)
 
@@ -7185,7 +7185,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1189-prerelease
 
-Release Date: March 10, 2022
+Release Date: Mar. 10, 2022
 
 [NuGet package for WebView2 SDK 1.0.1189-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)
 
@@ -7230,7 +7230,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1108.44
 
-Release Date: February 6, 2022
+Release Date: Feb. 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1108.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1108.44)
 
@@ -7265,7 +7265,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1158-prerelease
 
-Release Date: February 6, 2022
+Release Date: Feb. 6, 2022
 
 [NuGet package for WebView2 SDK 1.0.1158-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1158-prerelease)
 
@@ -7308,7 +7308,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1072.54
 
-Release Date: January 13, 2022
+Release Date: Jan. 13, 2022
 
 [NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54)
 
@@ -7331,7 +7331,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1133-prerelease
 
-Release Date: January 13, 2022
+Release Date: Jan. 13, 2022
 
 [NuGet package for WebView2 SDK 1.0.1133-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1133-prerelease)
 
@@ -7391,7 +7391,7 @@ handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues
 <!-- ====================================================================== -->
 ## 1.0.1083-prerelease
 
-Release Date: November 29, 2021
+Release Date: Nov. 29, 2021
 
 [NuGet package for WebView2 SDK 1.0.1083-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1083-prerelease)
 
@@ -7443,7 +7443,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.1054.31
 
-Release Date: November 29, 2021
+Release Date: Nov. 29, 2021
 
 [NuGet package for WebView2 SDK 1.0.1054.31](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1054.31)
 
@@ -7467,7 +7467,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ====================================================================== -->
 ## 1.0.1056-prerelease
 
-Release Date: October 29, 2021
+Release Date: Oct. 29, 2021
 
 [NuGet package for WebView2 SDK 1.0.1056-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1056-prerelease)
 
@@ -7508,7 +7508,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.1020.30
 
-Release Date: October 25, 2021
+Release Date: Oct. 25, 2021
 
 [NuGet package for WebView2 SDK 1.0.1020.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1020.30)
 
@@ -7534,7 +7534,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.992.28
 
-Release Date: September 27, 2021
+Release Date: Sep. 27, 2021
 
 [NuGet package for WebView2 SDK 1.0.992.28](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.992.28)
 
@@ -7561,7 +7561,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.1018-prerelease
 
-Release Date: September 20, 2021
+Release Date: Sep. 20, 2021
 
 [NuGet package for WebView2 SDK 1.0.1018-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1018-prerelease)
 
@@ -7591,7 +7591,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.1010-prerelease
 
-Release Date: September 14, 2021
+Release Date: Sep. 14, 2021
 
 [NuGet package for WebView2 SDK 1.0.1010-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1010-prerelease)
 
@@ -7667,7 +7667,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.961.33
 
-Release Date: September 8, 2021
+Release Date: Sep. 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.961.33](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33)
 
@@ -7701,7 +7701,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.955-prerelease
 
-Release Date: July 26, 2021
+Release Date: Jul. 26, 2021
 
 [NuGet package for WebView2 SDK 1.0.955-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease)
 
@@ -7778,7 +7778,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.902.49
 
-Release Date: July 26, 2021
+Release Date: Jul. 26, 2021
 
 [NuGet package for WebView2 SDK 1.0.902.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49)
 
@@ -7814,7 +7814,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.902-prerelease
 
-Release Date: June 1, 2021
+Release Date: Jun. 1, 2021
 
 [NuGet package for WebView2 SDK 1.0.902-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902-prerelease)
 
@@ -7941,7 +7941,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.865-prerelease
 
-Release Date: April 26, 2021
+Release Date: Apr. 26, 2021
 
 [NuGet package for WebView2 SDK 1.0.865-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease)
 
@@ -8013,7 +8013,7 @@ The following Experimental APIs for .NET have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## 1.0.818.41
 
-Release Date: April 21, 2021
+Release Date: Apr. 21, 2021
 
 [NuGet package for WebView2 SDK 1.0.818.41](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41)
 
@@ -8032,7 +8032,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ====================================================================== -->
 ## 1.0.824-prerelease
 
-Release Date: March 8, 2021
+Release Date: Mar. 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.824-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease)
 
@@ -8078,7 +8078,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.774.44
 
-Release Date: March 8, 2021
+Release Date: Mar. 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.774.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44)
 
@@ -8113,7 +8113,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.790-prerelease
 
-Release Date: February 10, 2021
+Release Date: Feb. 10, 2021
 
 [NuGet package for WebView2 SDK 1.0.790-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease)
 
@@ -8199,7 +8199,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.705.50
 
-Release Date: January 25, 2021
+Release Date: Jan. 25, 2021
 
 [NuGet package for WebView2 SDK 1.0.705.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50)
 
@@ -8221,7 +8221,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## 1.0.721-prerelease
 
-Release Date: December 8, 2020
+Release Date: Dec. 8, 2020
 
 [NuGet package for WebView2 SDK 1.0.721-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease)
 
@@ -8291,7 +8291,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## 1.0.664.37
 
-Release Date: November 20, 2020
+Release Date: Nov. 20, 2020
 
 [NuGet package for WebView2 SDK 1.0.664.37](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.37)
 
@@ -8325,7 +8325,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 <!-- ====================================================================== -->
 ## 1.0.674-prerelease
 
-Release Date: October 19, 2020
+Release Date: Oct. 19, 2020
 
 [NuGet package for WebView2 SDK 1.0.674-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease)
 
@@ -8363,7 +8363,7 @@ This prerelease version of the WebView2 SDK requires WebView2 Runtime version 86
 <!-- ====================================================================== -->
 ## 1.0.622.22
 
-Release Date: October 19, 2020
+Release Date: Oct. 19, 2020
 
 [NuGet package for WebView2 SDK 1.0.622.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22)
 
@@ -8380,7 +8380,7 @@ For more information about the Runtime, Evergreen distribution, and Fixed Versio
 <!-- ====================================================================== -->
 ## 0.9.622.11
 
-Release Date: September 10, 2020
+Release Date: Sep. 10, 2020
 
 [NuGet package for WebView2 SDK 0.9.622.11](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11)
 
@@ -8400,7 +8400,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 <!-- ====================================================================== -->
 ## 0.9.579
 
-Release Date: July 20, 2020
+Release Date: Jul. 20, 2020
 
 [NuGet package for WebView2 SDK 0.9.579](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579)
 
@@ -8442,7 +8442,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 <!-- ====================================================================== -->
 ## 0.9.538
 
-Release Date: June 8, 2020
+Release Date: Jun. 8, 2020
 
 [NuGet package for WebView2 SDK 0.9.538](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538)
 
@@ -8507,7 +8507,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 <!-- ====================================================================== -->
 ## 0.9.488
 
-Release Date: April 20, 2020
+Release Date: Apr. 20, 2020
 
 [NuGet package for WebView2 SDK 0.9.488](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488)
 
@@ -8559,7 +8559,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
 <!-- ====================================================================== -->
 ## 0.9.430
 
-Release Date: February 24, 2020
+Release Date: Feb. 24, 2020
 
 [NuGet package for WebView2 SDK 0.9.430](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430)
 
@@ -8598,7 +8598,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 <!-- ====================================================================== -->
 ## 0.8.355
 
-Release Date: December 9, 2019
+Release Date: Dec. 9, 2019
 
 [NuGet package for WebView2 SDK 0.8.355](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355)
 
@@ -8614,7 +8614,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.355.0 or h
 <!-- ====================================================================== -->
 ## 0.8.314
 
-Release Date: October 28, 2019
+Release Date: Oct. 28, 2019
 
 [NuGet package for WebView2 SDK 0.8.314](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314)
 
@@ -8640,7 +8640,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or h
 <!-- ====================================================================== -->
 ## 0.8.270
 
-Release Date: September 10, 2019
+Release Date: Sep. 10, 2019
 
 [NuGet package for WebView2 SDK 0.8.270](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270)
 
@@ -8668,7 +8668,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or h
 <!-- ====================================================================== -->
 ## 0.8.230
 
-Release Date: July 29, 2019
+Release Date: Jul. 29, 2019
 
 [NuGet package for WebView2 SDK 0.8.230](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230)
 
@@ -8686,7 +8686,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 77.0.230.0 or h
 <!-- ====================================================================== -->
 ## 0.8.190
 
-Release Date: June 17, 2019
+Release Date: Jun. 17, 2019
 
 [NuGet package for WebView2 SDK 0.8.190](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190)
 
