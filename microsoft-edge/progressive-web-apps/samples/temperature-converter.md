@@ -308,7 +308,7 @@ Install the sample Progressive Web App (PWA) from your localhost web server as a
 1. Close the **Temperature converter** app window.
 
 <!-- See also:
-* [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+* [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps (PWAs) in Microsoft Edge_.
 -->
 
 
@@ -696,8 +696,8 @@ Next, you can:
 ## See also
 <!-- all links in article -->
 
-* [Use PWAs in Microsoft Edge](../ux.md)
-   * [Installing a PWA](../ux.md#installing-a-pwa) in _Use PWAs in Microsoft Edge_.
+* [Use Progressive Web Apps (PWAs) in Microsoft Edge](../ux.md)
+   * [Installing a PWA](../ux.md#installing-a-pwa) in _Use Progressive Web Apps (PWAs) in Microsoft Edge_.
 * [Get started developing a PWA](../how-to/index.md)
 * [Temperature converter source files](./temperature-converter-source-files.md)
 * [Emulate offline](../../devtools/network/reference.md#emulate-offline) in DevTools _Network features reference_.

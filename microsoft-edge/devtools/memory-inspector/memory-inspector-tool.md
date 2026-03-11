@@ -49,7 +49,7 @@ For example:
 
 1. Start Microsoft Edge.
 
-1. Open the test site **Inspect ArrayBuffers in JS (Memory in JS)** (`http://memory-inspector.glitch.me/demo-js.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+1. Open the test site **Inspect ArrayBuffers in JS (Memory in JS)** (`http://memory-inspector.glitch.me/demo-js.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended Jul. 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
@@ -181,7 +181,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
 For example:
 
-1. Open the test site **Inspect Wasm memories (Memory in Wasm)** (`http://memory-inspector.glitch.me/demo-wasm.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended July 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
+1. Open the test site **Inspect Wasm memories (Memory in Wasm)** (`http://memory-inspector.glitch.me/demo-wasm.html`)<!-- todo: copy code to https://github.com/MicrosoftEdge/Demos and link to there --> (404).  (Glitch.me project hosting ended Jul. 8, 2025.  This test site is planned to move to https://github.com/MicrosoftEdge/Demos, including hosting at github.io.)
 
 1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 

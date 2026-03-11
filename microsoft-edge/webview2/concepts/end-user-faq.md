@@ -81,5 +81,6 @@ Many apps that are built on WebView2 perform checks to re-install WebView2 when 
 <!-- ====================================================================== -->
 ## See also
 
+* [View end-user docs about Microsoft Edge](../../develop-web-microsoft-edge.md) in _Develop for the web with Microsoft Edge_.
 * [Introduction to Microsoft Edge WebView2](../index.md)
 * [Contact the WebView2 team](../contact.md)
