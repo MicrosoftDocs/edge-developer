@@ -64,27 +64,25 @@ For example:
 
 
 <!-- ====================================================================== -->
-## Scenario: Running a dedicated script file
+## Scenario: Running a dedicated JavaScript file
 
-In this section, you access a dedicated JavaScript file from your WebView2 control.
-<!-- todo: clarify the scenario.  from native code? "from" is ambiguous.  is the file a web-side file?
-what does "dedicated" mean? -->
+You can access a dedicated JavaScript file from your WebView2 control.
 
-
-> [!NOTE]
-> Although writing JavaScript inline may be efficient for quick JavaScript commands, you lose JavaScript color themes and line formatting that makes it difficult to write large sections of code in Visual Studio.
+Inline JavaScript code works well for quick JavaScript commands.  However, inline JavaScript code doesn't support color themes and line formatting in the code editor.  That makes it difficult to write large sections of code, such as in Visual Studio.
 
 To solve the problem, create a separate JavaScript file that contains your code, and then pass a reference to that file by using the `ExecuteScriptAsync` parameters.
 
+To create and use a separate, dedicated JS file:
+
 1. Create a `.js` file in your project, and add the JavaScript code that you want to run.  For example, create a file called `script.js`.
 
-1. Convert the JavaScript file to a string that is passed to `ExecuteScriptAsync`, by pasting the following code after the page is done navigating:
+1. Convert the JavaScript file to a string that's passed to `ExecuteScriptAsync`, by pasting the following code after the page is done navigating:
 
    ```csharp
    string text = System.IO.File.ReadAllText(@"C:\PATH_TO_YOUR_FILE\script.js");
    ```
 
-1. Pass your text variable using `ExecuteScriptAsync`:
+1. Pass the `text` variable to `ExecuteScriptAsync`:
 
    ```csharp
    await webView.CoreWebView2.ExecuteScriptAsync(text);

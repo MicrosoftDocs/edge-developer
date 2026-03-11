@@ -63,7 +63,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 
 <!-- ====================================================================== -->
-## Overview of the components of the WebView2 platform
+## Components of the WebView2 platform
 
 To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
 
@@ -78,7 +78,7 @@ Developing a WebView2 app involves software residing in the following places:
 | User machine | Your host app on user machines includes instances of the WebView2 control, which uses the WebView2 Runtime. |
 | Resources | The product documentation; the WebView2Samples repo including basic Getting Started WebView2 projects and more full-featured Sample projects; the WebView2Announcements repo; and the WebView2Feedback repo. |
 
-For details, see [Overview of the components of the WebView2 platform](./concepts/platform-components.md).
+For details, see [Components of the WebView2 platform](./concepts/platform-components.md).
 
 
 ## Supported Windows versions
@@ -159,7 +159,7 @@ After your environment is set up and the samples build and run on your machine, 
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of the components of the WebView2 platform](./concepts/platform-components.md)
+* [Components of the WebView2 platform](./concepts/platform-components.md)
 * [Overview of WebView2 APIs](concepts/overview-features-apis.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 
