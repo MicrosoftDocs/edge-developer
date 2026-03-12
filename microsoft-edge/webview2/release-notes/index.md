@@ -42,9 +42,11 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### Persistent storage
+###### Manage persistent storage permissions for web content
 
-The `PersistentStorage` enum value.<!-- todo: real heading & lead-in -->
+The `PersistentStorage` permission (an enum value) allows a WebView2 app to handle requests from web content to persist data that's created by Storage APIs, service workers, and related technologies.  When this permission is granted, the browser doesn't evict stored data during low-disk-space scenarios.  This ensures reliable offline and caching behavior for the site.
+
+The `PersistentStorage` permission supports Local Network Access (LNA) via the `SetPermissionState` method.  This enum value is used by the UWP `WebView.PermissionRequested` event, to give the WebView2 app explicit control over the LNA feature.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -80,12 +82,17 @@ This Prerelease SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
+
 * Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
-* Disabling<!-- todo: disabled the? --> domain actions component for WebView2.
-* Fixed print-to-PDF APIs not working for PDF<!-- todo: "for PDF" is redundant, remove? --> after using composite<!-- todo: clarify 'composite' --> for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-* Fixed narrator announcing structural `HWND`.<!-- todo: fixed in what way? -->
+
+* Disabled the domain actions component for WebView2.
+
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+
+* Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
+
 * Fixed WebView2 transparency.
-* Fixed a white flash in Dark mode for Search.
+
 * Fixed the API for setting the background color of the **Caption** control.
 
 <!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
