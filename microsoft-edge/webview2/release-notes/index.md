@@ -37,7 +37,32 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Manage persistent storage permissions for web content
+
+The `PersistentStorage` permission (an enum value) allows a WebView2 app to handle requests from web content to persist data that's created by Storage APIs, service workers, and related technologies.  When this permission is granted, the browser doesn't evict stored data during low-disk-space scenarios.  This ensures reliable offline and caching behavior for the site.
+
+The `PersistentStorage` permission supports Local Network Access (LNA) via the `SetPermissionState` method.  This enum value is used by the UWP `WebView.PermissionRequested` event, to give the WebView2 app explicit control over the LNA feature.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3856.49&preserve-view=true)
+   * `PersistentStorage`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3856.49&preserve-view=true)
+   * `PersistentStorage`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3856.49&preserve-view=true#corewebview2_permission_kind)
+   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
+
+---
 
 
 <!-- ------------------------------ -->
@@ -49,12 +74,7 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed Print to PDF APIs not working for PDF after using composite for printing.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-<!-- todo: clarify.  linked issue lacks "composite" -->
-
-* Fixed a white flash in Dark mode for Search.
-<!-- todo: same or different issue?
-* Fixed a white flash that occurred when Windows Search became visible after being hidden. -->
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
 
 <!-- end of Release SDK 146 (Mar. 16, 2025) -->
 
@@ -176,40 +196,35 @@ The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a
 
 LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
 
-After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
+After the upstream, Chromium code base stabilizes, we plan to add an additional `PersistentStorage` enum value in the `CoreWebView2PermissionKind` enum, to support Local Network Access (LNA) via the `SetPermissionState` method.  This new enum value is used by the UWP `WebView.PermissionRequested` event, to give a WebView2 app explicit control over the LNA feature.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-<!-- todo: all tabs: un-comment enum members -->
-
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
-* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-   <!-- * `EnumMemberName` -->
-   <!-- * `EnumMemberName` -->
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
+   * `PersistentStorage`
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
 
-* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind)
-   <!-- * `EnumMemberName` -->
-   <!-- * `EnumMemberName` -->
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
+   * `PersistentStorage`
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Profile4`:
-   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate)
+   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate?view=webview2-1.0.3848-prerelease&preserve-view=true)
 
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind)
-   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
-   <!-- * `COREWEBVIEW2_PERMISSION_KIND_MEMBERNAME` -->
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind?view=webview2-1.0.3848-prerelease&preserve-view=true)
+   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
