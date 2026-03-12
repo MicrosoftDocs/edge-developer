@@ -10,7 +10,32 @@ ms.date: 04/27/2022
 ---
 # Customize context menus in WebView2
 
-The WebView2 control provides a default context menu, and you can create your own context menu when using a WebView2 control.  Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.  For example, you can do any of the following:
+The WebView2 control provides a default context menu, and you can create your own context menu when using a WebView2 control.  Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Adding a custom context menu](#adding-a-custom-context-menu)
+* [Example: Adding a custom context menu](#example-adding-a-custom-context-menu)
+* [Adding menu items to a context menu](#adding-menu-items-to-a-context-menu)
+   * [Adding custom menu items to a default context menu](#adding-custom-menu-items-to-a-default-context-menu)
+* [Example: Adding custom menu items to a default context menu](#example-adding-custom-menu-items-to-a-default-context-menu)
+* [Removing menu items from a default context menu](#removing-menu-items-from-a-default-context-menu)
+* [Example: Removing menu items from a default context menu](#example-removing-menu-items-from-a-default-context-menu)
+* [Detecting when the user requests a context menu](#detecting-when-the-user-requests-a-context-menu)
+* [Detecting when the user selects a custom menu item](#detecting-when-the-user-selects-a-custom-menu-item)
+* [Reporting a selected command menu item to WebView2](#reporting-a-selected-command-menu-item-to-webview2)
+   * [Custom menu items](#custom-menu-items)
+* [Disabling context menus](#disabling-context-menus)
+* [API Reference overview](#api-reference-overview)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+The WebView2 control provides a default context menu, and you can create your own context menu when using a WebView2 control.  Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
+
+For example, you can do any of the following:
 
 *  Add a custom context menu.
 

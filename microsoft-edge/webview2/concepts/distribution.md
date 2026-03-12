@@ -19,9 +19,33 @@ When distributing your WebView2 app, make sure that the WebView2 Runtime is pres
 
 For introductory information, see [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md).
 
+**Detailed contents:**
+* [Introductory notes](#introductory-notes)
+   * [Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)](#servicing-the-webview2-runtime-through-windows-server-update-services-wsus)
+   * [Runtime or browser support during development or production](#runtime-or-browser-support-during-development-or-production)
+      * [Microsoft Edge Stable channel isn't supported for WebView2](#microsoft-edge-stable-channel-isnt-supported-for-webview2)
+* [The Evergreen Runtime distribution mode](#the-evergreen-runtime-distribution-mode)
+   * [Windows 11 devices and Windows 10 devices (details)](#windows-11-devices-and-windows-10-devices-details)
+   * [Deploying the Evergreen WebView2 Runtime](#deploying-the-evergreen-webview2-runtime)
+   * [Installing the Runtime as per-machine or per-user](#installing-the-runtime-as-per-machine-or-per-user)
+      * [Detect if a WebView2 Runtime is already installed](#detect-if-a-webview2-runtime-is-already-installed)
+      * [Online-only deployment](#online-only-deployment)
+      * [Offline deployment](#offline-deployment)
+   * [Handle Evergreen WebView2 Runtime updates](#handle-evergreen-webview2-runtime-updates)
+   * [Test your app for forward-compatibility](#test-your-app-for-forward-compatibility)
+   * [Feature-detect when using recent APIs](#feature-detect-when-using-recent-apis)
+* [The Fixed Version runtime distribution mode](#the-fixed-version-runtime-distribution-mode)
+   * [Known issues for Fixed Version](#known-issues-for-fixed-version)
+* [Files to ship with the app](#files-to-ship-with-the-app)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introductory notes
+
 
 <!-- ------------------------------ -->
-#### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
+#### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated; modify? -->
 
 See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 

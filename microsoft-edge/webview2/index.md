@@ -13,6 +13,24 @@ ms.date: 06/10/2025
 
 The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Hybrid app approach](#hybrid-app-approach)
+* [WebView2 benefits](#webview2-benefits)
+* [Components of the WebView2 platform](#components-of-the-webview2-platform)
+* [Supported Windows versions](#supported-windows-versions)
+   * [Windows Client](#windows-client)
+   * [Windows Server](#windows-server)
+* [Supported programming environments and devices](#supported-programming-environments-and-devices)
+* [Sequence of samples to install and run](#sequence-of-samples-to-install-and-run)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
+
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
 ![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)

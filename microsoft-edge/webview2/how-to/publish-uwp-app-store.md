@@ -12,6 +12,28 @@ ms.date: 04/27/2022
 
 A _UWP WebView2 app_ is a Universal Windows Platform (UWP) app that hosts the WebView2 control.  To make a UWP WebView2 app widely available, you can publish it to the [Microsoft Store](https://apps.microsoft.com), by following the steps below.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Step 1: Configure a Microsoft Store account in Visual Studio](#step-1-configure-a-microsoft-store-account-in-visual-studio)
+* [Step 2: Test the non-packaged host app](#step-2-test-the-non-packaged-host-app)
+* [Step 3: Package the host app](#step-3-package-the-host-app)
+* [Step 4: Test the package](#step-4-test-the-package)
+* [Step 5: Run Windows App Certification Kit (WACK)](#step-5-run-windows-app-certification-kit-wack)
+   * [Resolving tests](#resolving-tests)
+      * [Restricted name-space](#restricted-name-space)
+      * [Branding](#branding)
+      * [App Capabilities](#app-capabilities)
+      * [General metadata correctness](#general-metadata-correctness)
+      * [Supported API](#supported-api)
+* [Step 6: Upload the app package](#step-6-upload-the-app-package)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+A _UWP WebView2 app_ is a Universal Windows Platform (UWP) app that hosts the WebView2 control.  To make a UWP WebView2 app widely available, you can publish it to the [Microsoft Store](https://apps.microsoft.com), by following the steps below.
+
 For general background information about publishing to the Windows Store, see [Get started: Publish your first app in the Microsoft Store](/windows/apps/publish/).  The steps below provide the specific details about how to publish a UWP WebView2 app.
 
 

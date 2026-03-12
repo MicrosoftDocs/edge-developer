@@ -11,6 +11,32 @@ ms.date: 03/25/2025
 # Debug WebView2 apps with Visual Studio Code
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Create a launch.json file](#create-a-launchjson-file)
+   * [Using a registry value](#using-a-registry-value)
+   * [Command-line URL parameter passed in](#command-line-url-parameter-passed-in)
+* [Debug your code](#debug-your-code)
+* [Targeted WebView2 debugging](#targeted-webview2-debugging)
+   * [Cannot debug two WebView2 controls at the same time](#cannot-debug-two-webview2-controls-at-the-same-time)
+* [Debug running processes](#debug-running-processes)
+   * [Using an environment variable](#using-an-environment-variable)
+* [Debug tracing options](#debug-tracing-options)
+* [Debug Office Add-ins](#debug-office-add-ins)
+* [Debug WebView2 WinUI 2 (UWP) apps](#debug-webview2-winui-2-uwp-apps)
+* [Source maps with the WebResourceRequested event or virtual host name mapping](#source-maps-with-the-webresourcerequested-event-or-virtual-host-name-mapping)
+* [Troubleshoot the debugger](#troubleshoot-the-debugger)
+   * [Doesn't stop at breakpoint](#doesnt-stop-at-breakpoint)
+   * [Can't attach to running process](#cant-attach-to-running-process)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
+
 Visual Studio Code has a built-in debugger for browser debugging.  See [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging).
 
 

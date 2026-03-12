@@ -9,12 +9,44 @@ ms.subservice: webview
 ms.date: 07/18/2022
 ---
 # Win32 sample WebView2Browser
-
 <!-- copied from:
 https://github.com/MicrosoftEdge/WebView2Browser#readme
 aka
 https://github.com/MicrosoftEdge/WebView2Browser/blob/main/README.md
 -->
+
+This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Step 1: Install Visual Studio](#step-1-install-visual-studio)
+* [Step 2: Clone the WebView2Samples repo](#step-2-clone-the-webview2samples-repo)
+* [Step 3: Open the solution in Visual Studio](#step-3-open-the-solution-in-visual-studio)
+   * [Using versions below Windows 10](#using-versions-below-windows-10)
+* [Step 4: Build and run the app](#step-4-build-and-run-the-app)
+* [Step 5: Update the WebView2 SDK](#step-5-update-the-webview2-sdk)
+* [Step 6: Build and run the app with updated WebView2 SDK](#step-6-build-and-run-the-app-with-updated-webview2-sdk)
+* [Browser layout](#browser-layout)
+* [Features](#features)
+* [WebView2 APIs](#webview2-apis)
+* [Implementing the features](#implementing-the-features)
+* [The basics](#the-basics)
+   * [Set up the environment, create a WebView](#set-up-the-environment-create-a-webview)
+   * [Navigate to webpage](#navigate-to-webpage)
+   * [Updating the Address bar](#updating-the-address-bar)
+   * [Going back, going forward](#going-back-going-forward)
+   * [Reloading, stop navigation](#reloading-stop-navigation)
+* [Some interesting features](#some-interesting-features)
+   * [Communicating the WebViews](#communicating-the-webviews)
+   * [Tab handling](#tab-handling)
+   * [Updating the security icon](#updating-the-security-icon)
+   * [Populating the history](#populating-the-history)
+* [Handling JSON and URIs](#handling-json-and-uris)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 This sample, **WebView2Browser**, is a web browser built with the [Microsoft Edge WebView2](https://aka.ms/webview2) control.
 

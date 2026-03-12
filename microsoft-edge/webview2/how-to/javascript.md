@@ -13,6 +13,8 @@ ms.date: 4/1/2022
 
 Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functions.
 
+<!-- no **Detailed contents:**, b/c flat h2s outline -->
+
 
 <!-- ====================================================================== -->
 ## Before you begin

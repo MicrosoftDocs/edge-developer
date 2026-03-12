@@ -12,6 +12,8 @@ ms.date: 03/20/2024
 
 The WebView2 team updates the WebView2 Release SDK and the WebView2 Prerelease SDK on a four-week cadence.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
+<!-- no **Detailed contents:**, b/c flat h2s outline -->
+
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../concepts/overview-features-apis.md).
