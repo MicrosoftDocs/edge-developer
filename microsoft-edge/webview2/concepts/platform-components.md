@@ -10,9 +10,14 @@ ms.date: 04/21/2023
 ---
 # Components of the WebView2 platform
 
-To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.
 
 **Detailed contents:**
+* [Diagram](#diagram)
+   * [Dev machine](#dev-machine)
+   * [Distributing the app and Runtime](#distributing-the-app-and-runtime)
+   * [User machine](#user-machine)
+   * [Resources](#resources)
 * [Top-level WebView2 components](#top-level-webview2-components)
 * [The WebView2 control, SDK, and Runtime](#the-webview2-control-sdk-and-runtime)
    * [Diagram: Relationship between the WebView2 control, SDK, and Runtime](#diagram-relationship-between-the-webview2-control-sdk-and-runtime)
@@ -28,15 +33,17 @@ To add WebView2 to your app, you use the WebView2 SDK on your development machin
 * [Prerelease SDK with preview browser channel, or Release SDK with Runtime](#prerelease-sdk-with-preview-browser-channel-or-release-sdk-with-runtime)
 * [Using a Prerelease SDK and experimental APIs with a Preview channel of Microsoft Edge](#using-a-prerelease-sdk-and-experimental-apis-with-a-preview-channel-of-microsoft-edge)
 * [Using a Release SDK and stable APIs with the Runtime](#using-a-release-sdk-and-stable-apis-with-the-runtime)
-* [How the WebView2 SDK is laid out in relation to how the WebView2 Runtime is laid out](#how-the-webview2-sdk-is-laid-out-in-relation-to-how-the-webview2-runtime-is-laid-out)
-* [Differences in the Runtime and the SDK across the frameworks](#differences-in-the-runtime-and-the-sdk-across-the-frameworks)
-* [Resources](#resources)
+* [Resources](#resources-1)
    * [Diagram: Resources](#diagram-resources)
 * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
 ## Diagram
+
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.
+
+The following diagram shows the high-level WebView2 components on your development machine and user machines:
 
 ![Full diagram of WebView2](./platform-components-images/full-diagram.png)
 
