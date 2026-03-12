@@ -204,27 +204,27 @@ After the upstream, Chromium code base stabilizes, we plan to add an additional 
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-   * `PersistentStorage`
+   * `PersistentStorage` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#setpermissionstateasync)
 
 * [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
-   * `PersistentStorage`
+   * `PersistentStorage` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * `ICoreWebView2Profile4`:
-   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4#setpermissionstate?view=webview2-1.0.3848-prerelease&preserve-view=true)
+   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.3848-prerelease&preserve-view=true#setpermissionstate)
 
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl#corewebview2_permission_kind?view=webview2-1.0.3848-prerelease&preserve-view=true)
-   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3848-prerelease&preserve-view=true#corewebview2_permission_kind)
+   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
