@@ -17,7 +17,7 @@ To add WebView2 to your app, you use the WebView2 SDK on your development machin
    * [Dev machine](#dev-machine)
    * [Distributing the app and Runtime](#distributing-the-app-and-runtime)
    * [User machine](#user-machine)
-   * [Resources for WebView2 app development](#resources-for-webview2-app-development)
+   * [Resources](#resources)
 * [Top-level WebView2 components](#top-level-webview2-components)
 * [The WebView2 control, SDK, and Runtime](#the-webview2-control-sdk-and-runtime)
    * [Relationship between the WebView2 control, SDK, and Runtime](#relationship-between-the-webview2-control-sdk-and-runtime)
@@ -131,7 +131,7 @@ On the end-user machine are the following components that are involved in runnin
 
 
 <!-- ------------------------------ -->
-#### Resources for WebView2 app development
+#### Resources
 
 ![Diagram: Resources](./platform-components-images/resources.png)
 
