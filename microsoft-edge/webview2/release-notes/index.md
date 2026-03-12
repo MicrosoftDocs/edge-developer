@@ -63,7 +63,7 @@ The `PersistentStorage` permission supports Local Network Access (LNA) via the `
    * `PersistentStorage`
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true#setpermissionstateasync)
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
@@ -188,7 +188,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
    * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
@@ -200,7 +200,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
    * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
 
 * `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#serviceworkerregistered)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
@@ -213,7 +213,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
   * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 * `ICoreWebView2ExperimentalServiceWorkerManager`
-   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
+   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3848-prerelease&preserve-view=true#add_serviceworkerregistered)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
