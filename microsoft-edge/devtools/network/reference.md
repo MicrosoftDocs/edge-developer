@@ -26,8 +26,7 @@ ms.date: 07/17/2025
 
 <!-- for each png, decide whether to create screenshot -->
 
-The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
-
+The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](./index.md).
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
@@ -99,6 +98,11 @@ The **Network** tool has the following features, to inspect network activity for
    * [Hide the Filters pane](#hide-the-filters-pane)
    * [Use big request rows](#use-big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
+* [Service workers](#service-workers)
+   * [Service worker timeline](#service-worker-timeline)
+   * [Request routing and fetch events](#request-routing-and-fetch-events)
+   * [Request routing](#request-routing)
+   * [Fetch events](#fetch-events)
 * [See also](#see-also)
 
 
@@ -1723,6 +1727,96 @@ By default, DevTools displays the **Overview** pane.  To hide the **Overview** p
 
 
 <!-- ====================================================================== -->
+## Service workers
+<!-- not in upstream -->
+
+The **Network** tool helps you work with service workers and the network requests that pass through each service worker.
+
+For example, the following tasks are supported:<!-- todo: how? where? -->
+
+* Debug based on service worker timelines.<!-- todo: how? where? -->
+    * The start of a request and duration of the bootstrap.
+    * Update to service worker registration.<!-- todo: how? where? -->
+    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
+    * The runtime of all fetch events for loading a client.
+* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
+* Step into and out of fetch event handler with page script information, in the **Sources** tool.
+
+Features for working on service workers are in the following tools:
+
+* The **Network** tool:
+
+   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.
+
+* The **Application** tool:
+
+   * To debug a service worker, use the **Service workers** page in the **Application** tool.  See [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
+
+* The **Sources** tool:
+
+   * Access page script information when stepping into fetch event handlers.  See [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
+
+
+<!-- ------------------------------ -->
+#### Service worker timeline
+
+![Service worker timeline in the Network tool](./reference-images/sw-network-timeline.png)
+
+You can access the service worker debugging features in the **Network** tool in either of the following ways:
+
+*  Directly in the **Network** tool.
+*  Started in the **Application** tool.
+
+See also:
+* [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
+* [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
+
+
+<!-- ------------------------------ -->
+#### Request routing and fetch events
+
+You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
+
+To access the service worker timelines:
+
+1. Open a service worker.
+
+1. Click the **Network** button.
+
+   The **Timing** tab opens within the **Network** tool, showing information about request routing.
+
+1. Use the **respondWith** dropdown arrows for fetch event request and response information.
+
+The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
+
+See also:
+* [Inspect network activity](./index.md)
+
+
+<!-- ------------------------------ -->
+#### Request routing
+<!-- not in upstream -->
+
+To visualize request routing, timelines display the service worker start-up and the `respondWith` fetch events.
+
+To debug and visualize a network request that passed through a service worker:
+
+1. Select the network request that went through a service worker.
+
+1. Click the **Network** button to open the **Timing** tool.<!-- todo: what is the Timing tool, how to nav to it, how to use it? -->
+
+
+<!-- ------------------------------ -->
+#### Fetch events
+<!-- not in upstream -->
+
+To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.
+
+To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- not in upstream -->
 
@@ -1741,3 +1835,6 @@ Demo webpages:
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+

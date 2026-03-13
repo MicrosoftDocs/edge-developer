@@ -27,7 +27,6 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -58,6 +57,8 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
    * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
    * [Articles about debugging](#articles-about-debugging)
+* [Service workers](#service-workers)
+   * [Viewing stack information for a service worker](#viewing-stack-information-for-a-service-worker)
 * [See also](#see-also)
 
 
@@ -663,6 +664,53 @@ The following articles cover the **Debugger** pane and breakpoints:
 * [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 
 * [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
+
+
+<!-- ====================================================================== -->
+## Service workers
+
+The **Sources** tool helps you work with service workers and the network requests that pass through each service worker.
+
+For example, the following tasks are supported:<!-- todo: how? where? -->
+
+* Debug based on service worker timelines.<!-- todo: how? where? -->
+    * The start of a request and duration of the bootstrap.
+    * Update to service worker registration.<!-- todo: how? where? -->
+    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
+    * The runtime of all fetch events for loading a client.
+* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
+* Step into and out of fetch event handler with page script information, in the **Sources** tool.
+
+Features for working on service workers are in the following tools:
+
+* The **Network** tool:
+
+   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.  See [Service workers](../network/reference.md#service-workers) in _Network features reference_.
+
+* The **Application** tool:
+
+   * To debug a service worker, use the **Service workers** page in the **Application** tool.  See [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
+
+* The **Sources** tool:
+
+   * Access page script information when stepping into fetch event handlers.  See [Viewing stack information for a service worker](#viewing-stack-information-for-a-service-worker), below.
+
+
+<!-- ------------------------------ -->
+#### Viewing stack information for a service worker
+
+You can step into and out of a fetch event handler to find where a resource is requested in the page script.
+
+![The DOM tree](./index-images/sw-sources.png)<!-- todo: redo -->
+
+To find stack information for a service worker that's a fetch handler, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.
+
+When the debugger pauses inside a fetch handler, combined stack information is displayed in the panel to the right.  After that, you can move around in the stack frames.
+
+See also:
+* [Service workers](../network/reference.md#service-workers) in _Network features reference_.
+* [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
 
 
 <!-- ====================================================================== -->
