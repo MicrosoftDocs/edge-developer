@@ -98,11 +98,6 @@ The **Network** tool has the following features, to inspect network activity for
    * [Hide the Filters pane](#hide-the-filters-pane)
    * [Use big request rows](#use-big-request-rows)
    * [Hide the Overview pane](#hide-the-overview-pane)
-* [Service workers](#service-workers)
-   * [Service worker timeline](#service-worker-timeline)
-   * [Request routing and fetch events](#request-routing-and-fetch-events)
-   * [Request routing](#request-routing)
-   * [Fetch events](#fetch-events)
 * [See also](#see-also)
 
 
@@ -1360,7 +1355,7 @@ To display the timing breakdown of a request:
 
 For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown).
 
-For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained).
+For information about each of the phases that might be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained), below.
 
 
 <!-- ---------- -->
@@ -1373,7 +1368,7 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
-To view the data without hovering, see the top of the present section, [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
+To view the data without hovering, see [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request), above.
 
 
 <!-- ---------- -->
@@ -1382,32 +1377,77 @@ To view the data without hovering, see the top of the present section, [Display 
 
 Each of these phases may appear in the **Timing** tab:
 
-- **Queueing**. The browser queues requests when any of the following are true
-  - There are higher priority requests.
-  - There are already six TCP connections open for this origin, which is the limit. Applies to HTTP/1.0 and HTTP/1.1 only.
-  - The browser is briefly allocating space in the disk cache.
+* **Queueing**. The browser queues requests when any of the following are true
+  * There are higher priority requests.
+  * There are already six TCP connections open for this origin, which is the limit. Applies to HTTP/1.0 and HTTP/1.1 only.
+  * The browser is briefly allocating space in the disk cache.
 
-- **Stalled**. The request could be stalled for any of the reasons described in **Queueing**.
+* **Stalled**. The request could be stalled for any of the reasons described in **Queueing**.
 
-- **DNS Lookup**. The browser is resolving the IP address for the request.
+* **Startup**.<!-- todo: define -->
 
-- **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
+* **respondWith**.<!-- todo: define and say can expand section (png is below) -->
 
-- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
+* **DNS Lookup**. The browser is resolving the IP address for the request.
 
-- **Request sent**. The request is being sent.
+* **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
 
-- **ServiceWorker Preparation**. The browser is starting up the service worker.
+* **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
 
-- **Request to ServiceWorker**. The request is being sent to the service worker.
+* **Request sent**. The request is being sent.
 
-- **Waiting (TTFB)**. The browser is waiting for the first byte of a response. TTFB stands for _Time To First Byte_. This timing includes one round trip of latency and the time the server took to prepare the response.
+* **ServiceWorker Preparation**. The browser is starting up the service worker.
 
-- **Content Download**. The browser is receiving the response.
+* **Request to ServiceWorker**. The request is being sent to the service worker.
 
-- **Receiving Push**. The browser is receiving data for this response via HTTP/2 Server Push.
+* **Waiting (TTFB)**. The browser is waiting for the first byte of a response. TTFB stands for _Time To First Byte_. This timing includes one round trip of latency and the time the server took to prepare the response.
 
-- **Reading Push**. The browser is reading the local data that was previously received.
+* **Content Download**. The browser is receiving the response.
+
+* **Receiving Push**. The browser is receiving data for this response via HTTP/2 Server Push.
+
+* **Reading Push**. The browser is reading the local data that was previously received.
+
+
+<!-- ---------- -->
+###### Analyze a service worker request routing
+<!--
+#### Display the timing breakdown of a service worker request
+-->
+
+To visualize request routing, timelines display the service worker `Startup` event and the `respondWith` fetch events.  You can debug and visualize a network request that passed through a service worker.
+
+To display the timing breakdown of a service worker request:
+
+1. Go to a page that uses a service worker, such as the [pwamp](https://microsoftedge.github.io/Demos/pwamp/) demo page, in a new window or tab.
+
+1. Right-click the page, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Network** tool.
+
+1. Reload the page.
+
+1. In the list of requests, select a network request that went through a service worker file.  For example, select **about.css**.
+
+   The sidebar appears.
+
+1. In the sidebar, click the **Timing** tab:
+
+   ![The Timing tab within the Network tool](./reference-images/timing-tab.png)
+
+   The **Service Worker** section displays timing information about the **Startup** and **respondWith** phases.
+
+1. Click the expander arrow on the **respondWith** section:
+
+   ![The expanded respondWith section](./reference-images/respondwith-expanded.png)
+
+1. Within the **respondWith** section, click the expander arrow on **Original Request**:
+
+   ![The fully expanded respondWith section](./reference-images/respondwith-expanded-fully.png)
+
+1. Click the expander arrow on **Response Received**.
 
 
 <!-- ------------------------------ -->
@@ -1724,116 +1764,6 @@ To enable big rows:
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
 ![The Show Overview checkbox](./reference-images/show-overview-off.png)
-
-
-<!-- ====================================================================== -->
-## Service workers
-<!-- not in upstream -->
-
-<!-- todo: 
-The Request routing https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#request-routing and Fetch events https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#fetch-events sections
-should go to:
-[Timing breakdown phases explained](https://learn.microsoft.com/en-us/microsoft-edge/devtools/network/reference#timing-breakdown-phases-explained) in Network features reference: 
-
-add the `Startup` and `respondWith` phases to 
-the bullet list that's in this section, 
-and define the two phases.
--->
-
-<!-- todo: 
-Add new h6 section after 
-[Timing breakdown phases explained](https://learn.microsoft.com/en-us/microsoft-edge/devtools/network/reference#timing-breakdown-phases-explained)
-eg [Analyze a service worker request routing]
-In the section, display 
-a screenshot of the Timing tab 
-which contains a Service Worker section, 
-including the Startup and respondWith phases.
--->
-
-The **Network** tool helps you work with service workers and the network requests that pass through each service worker.
-
-For example, the following tasks are supported:<!-- todo: how? where? -->
-
-* Debug based on service worker timelines.<!-- todo: how? where? -->
-    * The start of a request and duration of the bootstrap.
-    * Update to service worker registration.<!-- todo: how? where? -->
-    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
-    * The runtime of all fetch events for loading a client.
-* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
-* Step into and out of fetch event handler with page script information, in the **Sources** tool.
-
-Features for working on service workers are in the following tools:
-
-* The **Network** tool:
-
-   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.
-
-* The **Application** tool:
-
-   * To debug a service worker, use the **Service workers** page in the **Application** tool.  See [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
-
-* The **Sources** tool:
-
-   * Access page script information when stepping into fetch event handlers.  See [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
-
-
-<!-- ------------------------------ -->
-#### Service worker timeline
-
-![Service worker timeline in the Network tool](./reference-images/sw-network-timeline.png)
-
-You can access the service worker debugging features in the **Network** tool in either of the following ways:
-
-*  Directly in the **Network** tool.
-*  Started in the **Application** tool.
-
-See also:
-* [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
-* [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
-* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
-
-
-<!-- ------------------------------ -->
-#### Request routing and fetch events
-
-You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
-
-To access the service worker timelines:
-
-1. Open a service worker.
-
-1. Click the **Network** button.
-
-   The **Timing** tab opens within the **Network** tool, showing information about request routing.
-
-1. Use the **respondWith** dropdown arrows for fetch event request and response information.
-
-The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
-
-See also:
-* [Inspect network activity](./index.md)
-
-
-<!-- ------------------------------ -->
-#### Request routing
-<!-- not in upstream -->
-
-To visualize request routing, timelines display the service worker start-up and the `respondWith` fetch events.
-
-To debug and visualize a network request that passed through a service worker:
-
-1. Select the network request that went through a service worker.
-
-1. Click the **Network** button to open the **Timing** tool.<!-- todo: what is the Timing tool, how to nav to it, how to use it? -->
-
-
-<!-- ------------------------------ -->
-#### Fetch events
-<!-- not in upstream -->
-
-To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.
-
-To see more details about the **Original Request** and **Response Received**, click the corresponding dropdown arrows.
 
 
 <!-- ====================================================================== -->

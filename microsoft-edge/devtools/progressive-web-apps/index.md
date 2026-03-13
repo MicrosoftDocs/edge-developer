@@ -210,6 +210,102 @@ Related Guides:
 
 
 <!-- ====================================================================== -->
+## Service worker update timeline
+
+<!-- todo: 
+The [Service worker update timeline] section:
+https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#service-worker-update-timeline
+will become a bullet point in 
+the list that describes the UI in 
+[Service workers](https://learn.microsoft.com/en-us/microsoft-edge/devtools/progressive-web-apps/#service-workers) in _Debug a Progressive Web App (PWA)_.
+At the end of the list, 
+after the bullet that says 
+"The Clients line tells you the ...", 
+add a list item that describes the Update Cycle section, eg:
+
+The **Update Cycle** section reflects the update lifecycle of the service worker.
+This timeline displays the installation and activation events.
+Each event has a corresponding dropdown arrow to display more details.
+-->
+
+<!-- todo: 
+The [Request routing and fetch events] section:
+https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#service-worker-update-timeline
+
+Should become a new h4 section at the end of [Service workers](https://learn.microsoft.com/en-us/microsoft-edge/devtools/progressive-web-apps/#service-workers) in _Debug a Progressive Web App (PWA)_, called eg [Display network requests handled by a service worker].
+
+This new section will describe how to
+click on the **Network requests** button that's in 
+the **Service workers** pane of the **Application** tool 
+to open the **Network** tool, 
+with a filter that only shows 
+the requests that were handled by this service worker.
+-->
+
+The **Application** tool helps you work with service workers and the network requests that pass through each service worker.
+
+For example, the following tasks are supported:<!-- todo: how? where? -->
+
+* Debug based on service worker timelines.<!-- todo: how? where? -->
+    * The start of a request and duration of the bootstrap.
+    * Update to service worker registration.<!-- todo: how? where? -->
+    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
+    * The runtime of all fetch events for loading a client.
+* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
+* Step into and out of fetch event handler with page script information, in the **Sources** tool.
+
+Features for working on service workers are in the following tools:
+
+* The **Network** tool:
+
+   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.  See [Service workers](../network/reference.md#service-workers) in _Network features reference_.
+
+* The **Application** tool:
+
+   * To debug a service worker, use the **Service workers** page in the **Application** tool.
+
+* The **Sources** tool:
+
+   * Access page script information when stepping into fetch event handlers.  See [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
+
+
+<!-- ------------------------------ -->
+#### Timeline
+
+![Application view](./application-tool-images/sw-application-timeline.png)
+
+A timeline in the **Application** tool reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.
+
+Each of the events have a corresponding dropdown arrow to give you more details.
+
+See also:
+* [Viewing stack information for a service worker](../sources/index.md#viewing-stack-information-for-a-service-worker) in _Sources tool overview_.
+* [Service workers](../network/reference.md#service-workers) in _Network features reference_.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
+
+
+<!-- ------------------------------ -->
+#### Request routing and fetch events
+
+You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
+
+To access the service worker timelines:
+
+1. Open a service worker.
+
+1. Click the **Network requests** button, in the **Application** tool.
+
+   The **Timing** tab opens within the **Network** tool, showing information about request routing, filtering on `is:service-worker-intercepted` in the **Filter** text box.
+
+1. Use the **respondWith** dropdown arrows for fetch event request and response information.
+
+The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
+
+See also:
+* [Inspect network activity](./index.md)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/progressive-web-apps/) and is authored by Kayce Basques.

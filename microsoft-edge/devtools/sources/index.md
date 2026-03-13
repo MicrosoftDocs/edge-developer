@@ -667,60 +667,6 @@ The following articles cover the **Debugger** pane and breakpoints:
 
 
 <!-- ====================================================================== -->
-## Service workers
-
-<!-- todo: 
-no need to move the content from the 
-[Sources](https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#sources) section in _Service worker improvements_
-the feature is already covered enough by 
-[Change the thread context](https://learn.microsoft.com/en-us/microsoft-edge/devtools/javascript/reference#change-the-thread-context) in _JavaScript debugging features_.
--->
-
-The **Sources** tool helps you work with service workers and the network requests that pass through each service worker.
-
-For example, the following tasks are supported:<!-- todo: how? where? -->
-
-* Debug based on service worker timelines.<!-- todo: how? where? -->
-    * The start of a request and duration of the bootstrap.
-    * Update to service worker registration.<!-- todo: how? where? -->
-    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
-    * The runtime of all fetch events for loading a client.
-* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
-* Step into and out of fetch event handler with page script information, in the **Sources** tool.
-
-Features for working on service workers are in the following tools:
-
-* The **Network** tool:
-
-   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.  See [Service workers](../network/reference.md#service-workers) in _Network features reference_.
-
-* The **Application** tool:
-
-   * To debug a service worker, use the **Service workers** page in the **Application** tool.  See [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
-
-* The **Sources** tool:
-
-   * Access page script information when stepping into fetch event handlers.  See [Viewing stack information for a service worker](#viewing-stack-information-for-a-service-worker), below.
-
-
-<!-- ------------------------------ -->
-#### Viewing stack information for a service worker
-
-You can step into and out of a fetch event handler to find where a resource is requested in the page script.
-
-![The DOM tree](./index-images/sw-sources.png)<!-- todo: redo -->
-
-To find stack information for a service worker that's a fetch handler, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.
-
-When the debugger pauses inside a fetch handler, combined stack information is displayed in the panel to the right.  After that, you can move around in the stack frames.
-
-See also:
-* [Service workers](../network/reference.md#service-workers) in _Network features reference_.
-* [Service worker update timeline](../storage/application-tool.md#service-worker-update-timeline) in _Application tool, to manage storage_.
-* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
