@@ -57,8 +57,6 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
    * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
    * [Articles about debugging](#articles-about-debugging)
-* [Service workers](#service-workers)
-   * [Viewing stack information for a service worker](#viewing-stack-information-for-a-service-worker)
 * [See also](#see-also)
 
 
