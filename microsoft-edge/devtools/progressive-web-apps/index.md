@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 09/12/2023
+ms.date: 03/13/2026
 ---
 <!-- Copyright Kayce Basques
 
