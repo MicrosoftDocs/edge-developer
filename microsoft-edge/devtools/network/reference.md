@@ -30,7 +30,6 @@ The **Network** tool has the following features, to inspect network activity for
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [Record network requests](#record-network-requests)
    * [Stop recording network requests](#stop-recording-network-requests)
    * [Clear requests](#clear-requests)
@@ -83,6 +82,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
       * [Preview a timing breakdown](#preview-a-timing-breakdown)
       * [Timing breakdown phases explained](#timing-breakdown-phases-explained)
+      * [Analyze a service worker request routing](#analyze-a-service-worker-request-routing)
    * [Display initiators and dependencies](#display-initiators-and-dependencies)
    * [Display load events](#display-load-events)
    * [Display the total number of requests](#display-the-total-number-of-requests)
@@ -91,6 +91,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource)
 * [Export requests data](#export-requests-data)
    * [Save all network requests to a HAR file](#save-all-network-requests-to-a-har-file)
+   * [Import a HAR file into DevTools for analysis](#import-a-har-file-into-devtools-for-analysis)
    * [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard)
    * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
