@@ -1730,6 +1730,26 @@ By default, DevTools displays the **Overview** pane.  To hide the **Overview** p
 ## Service workers
 <!-- not in upstream -->
 
+<!-- todo: 
+The Request routing https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#request-routing and Fetch events https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#fetch-events sections
+should go to:
+[Timing breakdown phases explained](https://learn.microsoft.com/en-us/microsoft-edge/devtools/network/reference#timing-breakdown-phases-explained) in Network features reference: 
+
+add the `Startup` and `respondWith` phases to 
+the bullet list that's in this section, 
+and define the two phases.
+-->
+
+<!-- todo: 
+Add new h6 section after 
+[Timing breakdown phases explained](https://learn.microsoft.com/en-us/microsoft-edge/devtools/network/reference#timing-breakdown-phases-explained)
+eg [Analyze a service worker request routing]
+In the section, display 
+a screenshot of the Timing tab 
+which contains a Service Worker section, 
+including the Startup and respondWith phases.
+-->
+
 The **Network** tool helps you work with service workers and the network requests that pass through each service worker.
 
 For example, the following tasks are supported:<!-- todo: how? where? -->

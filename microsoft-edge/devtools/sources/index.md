@@ -669,6 +669,13 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 ## Service workers
 
+<!-- todo: 
+no need to move the content from the 
+[Sources](https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#sources) section in _Service worker improvements_
+the feature is already covered enough by 
+[Change the thread context](https://learn.microsoft.com/en-us/microsoft-edge/devtools/javascript/reference#change-the-thread-context) in _JavaScript debugging features_.
+-->
+
 The **Sources** tool helps you work with service workers and the network requests that pass through each service worker.
 
 For example, the following tasks are supported:<!-- todo: how? where? -->
