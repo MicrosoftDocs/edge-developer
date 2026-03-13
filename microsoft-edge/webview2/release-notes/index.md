@@ -78,7 +78,7 @@ The `PersistentStorage` permission supports Local Network Access (LNA) via the `
 * `ICoreWebView2Profile4`:
    * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.3908-prerelease&preserve-view=true#setpermissionstate)
 
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
    * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
