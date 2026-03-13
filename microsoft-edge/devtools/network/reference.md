@@ -26,12 +26,10 @@ ms.date: 07/17/2025
 
 <!-- for each png, decide whether to create screenshot -->
 
-The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](index.md).
-
+The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](./index.md).
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [Record network requests](#record-network-requests)
    * [Stop recording network requests](#stop-recording-network-requests)
    * [Clear requests](#clear-requests)
@@ -84,6 +82,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request)
       * [Preview a timing breakdown](#preview-a-timing-breakdown)
       * [Timing breakdown phases explained](#timing-breakdown-phases-explained)
+      * [Analyze a service worker request routing](#analyze-a-service-worker-request-routing)
    * [Display initiators and dependencies](#display-initiators-and-dependencies)
    * [Display load events](#display-load-events)
    * [Display the total number of requests](#display-the-total-number-of-requests)
@@ -92,6 +91,7 @@ The **Network** tool has the following features, to inspect network activity for
    * [Display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource)
 * [Export requests data](#export-requests-data)
    * [Save all network requests to a HAR file](#save-all-network-requests-to-a-har-file)
+   * [Import a HAR file into DevTools for analysis](#import-a-har-file-into-devtools-for-analysis)
    * [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard)
    * [Copy formatted response JSON to the clipboard](#copy-formatted-response-json-to-the-clipboard)
    * [Copy property values from network requests to your clipboard](#copy-property-values-from-network-requests-to-your-clipboard)
@@ -1356,7 +1356,7 @@ To display the timing breakdown of a request:
 
 For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown).
 
-For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained).
+For information about each of the phases that might be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained), below.
 
 
 <!-- ---------- -->
@@ -1369,7 +1369,7 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 
 ![Previewing the timing breakdown of a request](./reference-images/resources-waterfall-hover.png)
 
-To view the data without hovering, see the top of the present section, [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
+To view the data without hovering, see [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request), above.
 
 
 <!-- ---------- -->
@@ -1378,32 +1378,77 @@ To view the data without hovering, see the top of the present section, [Display 
 
 Each of these phases may appear in the **Timing** tab:
 
-- **Queueing**. The browser queues requests when any of the following are true
-  - There are higher priority requests.
-  - There are already six TCP connections open for this origin, which is the limit. Applies to HTTP/1.0 and HTTP/1.1 only.
-  - The browser is briefly allocating space in the disk cache.
+* **Queueing**. The browser queues requests when any of the following are true
+  * There are higher priority requests.
+  * There are already six TCP connections open for this origin, which is the limit. Applies to HTTP/1.0 and HTTP/1.1 only.
+  * The browser is briefly allocating space in the disk cache.
 
-- **Stalled**. The request could be stalled for any of the reasons described in **Queueing**.
+* **Stalled**. The request could be stalled for any of the reasons described in **Queueing**.
 
-- **DNS Lookup**. The browser is resolving the IP address for the request.
+* **Startup**.<!-- todo: define -->
 
-- **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
+* **respondWith**.<!-- todo: define and say can expand section (png is below) -->
 
-- **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
+* **DNS Lookup**. The browser is resolving the IP address for the request.
 
-- **Request sent**. The request is being sent.
+* **Initial connection**. The browser is establishing a connection, including TCP handshakes and retries and negotiating a Secure Socket Layer (SSL).
 
-- **ServiceWorker Preparation**. The browser is starting up the service worker.
+* **Proxy negotiation**. The browser is negotiating the request with a [proxy server](https://wikipedia.org/wiki/Proxy_server).
 
-- **Request to ServiceWorker**. The request is being sent to the service worker.
+* **Request sent**. The request is being sent.
 
-- **Waiting (TTFB)**. The browser is waiting for the first byte of a response. TTFB stands for _Time To First Byte_. This timing includes one round trip of latency and the time the server took to prepare the response.
+* **ServiceWorker Preparation**. The browser is starting up the service worker.
 
-- **Content Download**. The browser is receiving the response.
+* **Request to ServiceWorker**. The request is being sent to the service worker.
 
-- **Receiving Push**. The browser is receiving data for this response via HTTP/2 Server Push.
+* **Waiting (TTFB)**. The browser is waiting for the first byte of a response. TTFB stands for _Time To First Byte_. This timing includes one round trip of latency and the time the server took to prepare the response.
 
-- **Reading Push**. The browser is reading the local data that was previously received.
+* **Content Download**. The browser is receiving the response.
+
+* **Receiving Push**. The browser is receiving data for this response via HTTP/2 Server Push.
+
+* **Reading Push**. The browser is reading the local data that was previously received.
+
+
+<!-- ---------- -->
+###### Analyze a service worker request routing
+<!--
+#### Display the timing breakdown of a service worker request
+-->
+
+To visualize request routing, timelines display the service worker `Startup` event and the `respondWith` fetch events.  You can debug and visualize a network request that passed through a service worker.
+
+To display the timing breakdown of a service worker request:
+
+1. Go to a page that uses a service worker, such as the [pwamp](https://microsoftedge.github.io/Demos/pwamp/) demo page, in a new window or tab.
+
+1. Right-click the page, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Network** tool.
+
+1. Reload the page.
+
+1. In the list of requests, select a network request that went through a service worker file.  For example, select **about.css**.
+
+   The sidebar appears.
+
+1. In the sidebar, click the **Timing** tab:
+
+   ![The Timing tab within the Network tool](./reference-images/timing-tab.png)
+
+   The **Service Worker** section displays timing information about the **Startup** and **respondWith** phases.
+
+1. Click the expander arrow on the **respondWith** section:
+
+   ![The expanded respondWith section](./reference-images/respondwith-expanded.png)
+
+1. Within the **respondWith** section, click the expander arrow on **Original Request**:
+
+   ![The fully expanded respondWith section](./reference-images/respondwith-expanded-fully.png)
+
+1. Click the expander arrow on **Response Received**.
 
 
 <!-- ------------------------------ -->
@@ -1741,3 +1786,6 @@ Demo webpages:
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+
+

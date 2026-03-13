@@ -28,7 +28,7 @@ Use the **Network** tool to make sure the resources your webpage needs to run ar
 
 This is a step-by-step tutorial walkthrough of the **Network** tool, for inspecting network activity for a page.
 
-For an overview of the network-related DevTools features, see [Network features reference](reference.md).
+For an overview of the network-related DevTools features, see [Network features reference](./reference.md).
 
 
 <!-- ------------------------------ -->
