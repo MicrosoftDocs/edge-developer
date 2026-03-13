@@ -37,8 +37,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Promotions to Phase 1 (Experimental in Prerelease)
 
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 <!-- ---------- -->
 ###### Manage persistent storage permissions for web content
@@ -52,38 +57,7 @@ The `PersistentStorage` permission supports Local Network Access (LNA) via the `
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
    * `PersistentStorage`
 
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true)
-   * `PersistentStorage`
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true#setpermissionstateasync)
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2Profile4`:
-   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.3908-prerelease&preserve-view=true#setpermissionstate)
-
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
-   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+* [CoreWebView2PermissionKind.PersistentStorage Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
 
 
 <!-- ------------------------------ -->
