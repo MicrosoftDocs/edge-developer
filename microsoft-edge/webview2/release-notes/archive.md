@@ -22,7 +22,7 @@ The following features and bug fixes are in the WebView2 Release SDK and Prerele
 
 
 <!-- ====================================================================== -->
-## 1.0.3124.44<!-- Release SDK 134 (Mar. 10, 2025) -->
+## 1.0.3124.44<!-- Release SDK, for Runtime 134 (Mar. 10, 2025) -->
 
 Release Date: Mar. 10, 2025, Runtime 134
 
@@ -48,11 +48,11 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
 * Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
 
-<!-- end of Release SDK 134 (Mar. 10, 2025) -->
+<!-- end of Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025) -->
 
 
 <!-- ====================================================================== -->
-## 1.0.3171-prerelease<!-- Prerelease SDK 135 (Mar. 10, 2025) -->
+## 1.0.3171-prerelease<!-- Runtime 135 (Mar. 10, 2025) -->
 
 Release Date: Mar. 10, 2025, Runtime 135
 
@@ -99,7 +99,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 * Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
 
-<!-- end of Prerelease SDK 135 (Mar. 10, 2025) -->
+<!-- end of Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025) -->
 
 
 <!-- ====================================================================== -->

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/16/2025
+ms.date: 03/16/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -22,6 +22,79 @@ if change h2 headings pattern, enter work item: update links in announcements
 -->
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3908-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
+
+Release Date: Mar. 16, 2026
+
+[NuGet package for WebView2 SDK 1.0.3908-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3908-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
+
+
+<!-- ---------- -->
+###### Manage persistent storage permissions for web content
+
+The `PersistentStorage` permission allows a WebView2 app to handle requests from web content to persist data that's created by Storage APIs, service workers, and related technologies.  The `PersistentStorage` permission is an enum member in the `CoreWebView2PermissionKind` enum.
+
+When this permission is granted, the browser doesn't evict stored data during low-disk-space scenarios.  This ensures reliable offline and caching behavior for the site.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
+   * `PersistentStorage`
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true)
+   * `PersistentStorage`
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
+   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
+
+* Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
+
+* Disabled the domain actions component for WebView2.
+
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+
+* Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
+
+* Fixed WebView2 transparency.
+
+* Fixed the API for setting the background color of the **Caption** control.
+
+<!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
 
 
 <!-- ====================================================================== -->
@@ -130,7 +203,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
    * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
@@ -142,7 +215,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
    * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
 
 * `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#serviceworkerregistered)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
@@ -155,7 +228,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
   * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 * `ICoreWebView2ExperimentalServiceWorkerManager`
-   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager#add_serviceworkerregistered)
+   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3848-prerelease&preserve-view=true#add_serviceworkerregistered)
 
 * [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
 
@@ -273,8 +346,9 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 146 (Feb. 16, 2026) -->
 
 
+<!-- Release SDK 144 (Jan. 27, 2026) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.3719.77, for Runtime 144<!-- Jan. 27, 2026 -->
+## Release SDK 1.0.3719.77, for Runtime 144
 
 Release Date: Jan. 27, 2026
 
@@ -351,8 +425,9 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 144 (Jan. 27, 2026) -->
 
 
+<!-- Prerelease SDK 145 (Jan. 19, 2026) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3796-prerelease, for Runtime 145<!-- Jan. 19, 2026 -->
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
 
 Release Date: Jan. 19, 2026
 
@@ -439,9 +514,10 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 145 (Jan. 19, 2026) -->
 
 
-<!-- if update pattern of older h2 headings, must update links in announcements -->
+<!-- Release SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650.58<!-- Release SDK 143 (Dec. 8, 2025) -->
+## 1.0.3650.58
+<!-- if update pattern of older h2 headings, update links in announcements -->
 
 Release Date: Dec. 8, 2025, Runtime 143
 
@@ -463,11 +539,12 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 * Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
-<!-- end of Release SDK 143 (Dec. 8, 2025) -->
+<!-- end of Release SDK 143 -->
 
 
+<!-- Prerelease SDK 144 -->
 <!-- ====================================================================== -->
-## 1.0.3712-prerelease<!-- Prerelease SDK 144 (Dec. 8, 2025) -->
+## 1.0.3712-prerelease
 
 Release Date: Dec. 8, 2025, Runtime 144
 
@@ -593,11 +670,12 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
-<!-- end of Prerelease SDK 144 (Dec. 8, 2025) -->
+<!-- end of Prerelease SDK 144 -->
 
 
+<!-- Release SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3595.46<!-- Release SDK 142 (Nov. 3, 2025) -->
+## 1.0.3595.46
 
 Release Date: Nov. 3, 2025, Runtime 142
 
@@ -626,8 +704,9 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 142 -->
 
 
+<!-- Prerelease SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650-prerelease<!-- Prerelease SDK 143 (Nov. 7, 2025) -->
+## 1.0.3650-prerelease
 
 Release Date: Nov. 7, 2025, Runtime 143
 
@@ -663,8 +742,9 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 143 -->
 
 
+<!-- Release SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3537.50<!-- Release SDK 141 (Oct. 6, 2025) -->
+## 1.0.3537.50
 
 Release Date: Oct. 6, 2025, Runtime 141
 
@@ -699,8 +779,9 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 141 -->
 
 
+<!-- Prerelease SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3590-prerelease<!-- Prerelease SDK 142 (Oct. 7, 2025) -->
+## 1.0.3590-prerelease
 
 Release Date: Oct. 7, 2025, Runtime 142
 
@@ -814,8 +895,9 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 142 -->
 
 
+<!-- Release SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3485.44<!-- Release SDK 140 (Sep. 8, 2025) -->
+## 1.0.3485.44
 
 Release Date: Sep. 8, 2025, Runtime 140
 
@@ -848,8 +930,9 @@ There are no bug fixes in this Release SDK.
 <!-- end of Release SDK 140 -->
 
 
+<!-- Prerelease SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3530-prerelease<!-- Prerelease SDK 141 (Sep. 8, 2025) -->
+## 1.0.3530-prerelease
 
 Release Date: Sep. 8, 2025, Runtime 141
 
@@ -894,8 +977,9 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 141 -->
 
 
+<!-- Release SDK 139 -->
 <!-- ====================================================================== -->
-## 1.0.3405.78<!-- Release SDK 139 (Aug. 11, 2025) -->
+## 1.0.3405.78
 
 Release Date: Aug. 11, 2025, Runtime 139
 
@@ -1027,8 +1111,9 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- end of Release SDK 139 -->
 
 
+<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3477-prerelease<!-- Prerelease SDK 140 (Aug. 11, 2025) -->
+## 1.0.3477-prerelease
 
 Release Date: Aug. 11, 2025, Runtime 140
 
@@ -1067,8 +1152,9 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- end of Prerelease SDK 140 -->
 
 
+<!-- Release SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3351.48<!-- Release SDK 138 (Jul. 1, 2025) -->
+## 1.0.3351.48
 
 Release Date: Jul. 1, 2025, Runtime 138
 
@@ -1119,8 +1205,9 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- end of Release SDK 138 -->
 
 
+<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3415-prerelease<!-- Prerelease SDK 140 (Jul. 14, 2025) -->
+## 1.0.3415-prerelease
 
 Release Date: Jul. 14, 2025, Runtime 140
 
@@ -1612,8 +1699,9 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- end of Prerelease SDK 140 -->
 
 
+<!-- Release SDK 137 -->
 <!-- ====================================================================== -->
-## 1.0.3296.44<!-- Release SDK 137 (Jun. 3, 2025) -->
+## 1.0.3296.44
 
 Release Date: Jun. 3, 2025, Runtime 137
 
@@ -1664,8 +1752,9 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- end of Release SDK 137 -->
 
 
+<!-- Prerelease SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3344-prerelease<!-- Prerelease SDK 138 (Jun. 3, 2025) -->
+## 1.0.3344-prerelease
 
 Release Date: Jun. 3, 2025, Runtime 138
 
@@ -1726,8 +1815,9 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- end of Prerelease SDK 138 -->
 
 
+<!-- Release SDK 136 -->
 <!-- ====================================================================== -->
-## 1.0.3240.44<!-- Release SDK 136 (May 5, 2025) -->
+## 1.0.3240.44
 
 Release Date: May 5, 2025, Runtime 136
 
@@ -1787,8 +1877,9 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- end of Release SDK 136 -->
 
 
+<!-- Prerelease SDK 137 (May. 12, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3296-prerelease<!-- Prerelease SDK 137 (May 12, 2025) -->
+## 1.0.3296-prerelease
 
 Release Date: May 12, 2025, Runtime 137
 
@@ -1845,11 +1936,12 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 * Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- Prerelease SDK 137 -->
+<!-- Prerelease SDK 137 (May. 12, 2025) -->
 
 
+<!-- Release SDK 135 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3179.45<!-- Release SDK 135 (Apr. 7, 2025) -->
+## 1.0.3179.45
 
 Release Date: Apr. 7, 2025, Runtime 135
 
@@ -1876,11 +1968,12 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-<!-- end of Release SDK 135 -->
+<!-- end of Release SDK 135 (Apr. 7, 2025) -->
 
 
+<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3230-prerelease<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
+## 1.0.3230-prerelease
 
 Release Date: Apr. 7, 2025, Runtime 136
 
