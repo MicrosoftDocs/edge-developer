@@ -1,8 +1,7 @@
-<!-- Release SDK 123 (Mth. nn, 2026) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime ###
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 9, 2025 -->
 
-Release Date: Mth. nn, 2026
+Release Date: Mar. 9, 2025
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add rightmost part of url:
@@ -75,14 +74,13 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Release SDK 123 (Mth. nn, 2026) -->
+<!-- end of Release SDK 146 (Mar. 9, 2025) -->
 
 
-<!-- Prerelease SDK 123 (Mth. nn, 2026) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.####-prerelease, for Runtime ###
+## Prerelease SDK 1.0.1234-prerelease, for Runtime 147<!-- Mar. 9, 2025 -->
 
-Release Date: Mth. nn, 2026
+Release Date: Mar. 9, 2025
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add rightmost part of url:
@@ -126,8 +124,7 @@ description
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs have been directly added to Stable in Prerelease, and are included in this Prerelease SDK.  These APIs didn't go through the Experimental phase.
-<!-- scenario: what if the same section includes both of the above scenarios?  the statement "These APIs didn't go through the Experimental phase" might not apply to of the APIs -->
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
 
 
 <!-- ---------- -->
@@ -168,4 +165,4 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Prerelease SDK 123 (Mth. nn, 2026) -->
+<!-- end of Prerelease SDK 147 (Mar. 9, 2026) -->
