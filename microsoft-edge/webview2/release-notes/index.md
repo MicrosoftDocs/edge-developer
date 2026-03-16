@@ -228,7 +228,7 @@ After the upstream, Chromium code base stabilizes, we plan to add additional enu
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setpermissionstateasync?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#setpermissionstateasync)
 
 * [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
 
