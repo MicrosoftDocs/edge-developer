@@ -117,12 +117,13 @@ See also:
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->
 
-The following new features in the **Network** tool, **Application** tool, and **Sources** tool help you build your [PWA](../../../../progressive-web-apps/index.md).  Use the following features when you have difficulty debugging your service worker.
+The following new features in the **Network** tool, **Application** tool, and **Sources** tool help you build your progressive web application (PWA).  Use the following features when you have difficulty debugging your service worker.
 
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
 See also:
-* [Service worker improvements](../../../service-workers/index.md)
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps/index.md)
+* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ------------------------------ -->
@@ -151,7 +152,7 @@ To display additional context when debugging a service worker:
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Service worker improvements](../../../service-workers/index.md)
+* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ------------------------------ -->
@@ -168,7 +169,7 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
-* [Service worker improvements](../../../service-workers/index.md)
+* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ------------------------------ -->
@@ -186,7 +187,7 @@ In the following figure, the reference is selected, and has opened the initiator
 
 See also:
 * [View the call stack](../../../javascript/reference.md#view-the-call-stack) in _JavaScript debugging features_
-* [Service worker improvements](../../../service-workers/index.md)
+* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ====================================================================== -->
