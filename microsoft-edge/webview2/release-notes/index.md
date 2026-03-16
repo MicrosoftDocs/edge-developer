@@ -25,6 +25,36 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2025 -->
+
+Release Date: Mar. 16, 2025
+
+[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+
+<!-- end of Release SDK 146 (Mar. 16, 2025) -->
+
+
+<!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3908-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
 
 Release Date: Mar. 16, 2026
@@ -95,36 +125,6 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the API for setting the background color of the **Caption** control.
 
 <!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
-
-
-<!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2025 -->
-
-Release Date: Mar. 16, 2025
-
-[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
-<!-- end of Release SDK 146 (Mar. 16, 2025) -->
 
 
 <!-- ====================================================================== -->
