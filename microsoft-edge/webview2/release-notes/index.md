@@ -171,7 +171,7 @@ The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a
 
 LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
 
-After the upstream, Chromium code base stabilizes, we plan to add an additional `PersistentStorage` enum value in the `CoreWebView2PermissionKind` enum, to support Local Network Access (LNA) via the `SetPermissionState` method.  This new enum value is used by the UWP `WebView.PermissionRequested` event, to give a WebView2 app explicit control over the LNA feature.
+After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -179,7 +179,6 @@ After the upstream, Chromium code base stabilizes, we plan to add an additional 
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
 * [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-   * `PersistentStorage` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
@@ -189,7 +188,6 @@ After the upstream, Chromium code base stabilizes, we plan to add an additional 
    * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#setpermissionstateasync)
 
 * [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
-   * `PersistentStorage` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
@@ -199,7 +197,6 @@ After the upstream, Chromium code base stabilizes, we plan to add an additional 
    * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.3848-prerelease&preserve-view=true#setpermissionstate)
 
 * [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3848-prerelease&preserve-view=true#corewebview2_permission_kind)
-   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE` - planned.
 
 * [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
 
