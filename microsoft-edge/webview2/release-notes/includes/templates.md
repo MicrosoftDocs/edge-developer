@@ -126,6 +126,8 @@ description
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs have been directly added to Stable in Prerelease, and are included in this Prerelease SDK.  These APIs didn't go through the Experimental phase.
+<!-- scenario: what if the same section includes both of the above scenarios?  the statement "These APIs didn't go through the Experimental phase" might not apply to of the APIs -->
 
 
 <!-- ---------- -->

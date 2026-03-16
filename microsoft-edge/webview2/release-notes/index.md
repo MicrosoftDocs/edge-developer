@@ -43,7 +43,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ------------------------------ -->
 #### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs have been directly added to Stable in Prerelease, and are included in this Prerelease SDK.  These APIs didn't go through the Experimental phase.
 
 
 <!-- ---------- -->
