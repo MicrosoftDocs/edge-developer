@@ -25,9 +25,9 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2025 -->
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2026 -->
 
-Release Date: Mar. 16, 2025
+Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
@@ -51,7 +51,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
 
-<!-- end of Release SDK 146 (Mar. 16, 2025) -->
+<!-- end of Release SDK 146 (Mar. 16, 2026) -->
 
 
 <!-- ====================================================================== -->
