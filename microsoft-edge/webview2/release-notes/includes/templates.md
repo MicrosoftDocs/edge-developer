@@ -1,11 +1,10 @@
-<!-- Jan 2026 Release SDK (123) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.####.##, for Runtime ###
+## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2026 -->
 
-Release Date: Monthname nn, 2025
+Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add righmost part of url:
+<!-- todo: add rightmost part of url:
 [NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
 -->
 
@@ -75,17 +74,16 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jan 2026 Release SDK (123) -->
+<!-- end of Release SDK 146 (Mar. 16, 2026) -->
 
 
-<!-- Jan 2026 Prerelease SDK (123) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.####-prerelease, for Runtime ###
+## Prerelease SDK 1.0.1234-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
 
-Release Date: Monthname nn, 2025
+Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add righmost part of url:
+<!-- todo: add rightmost part of url:
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
 -->
 
@@ -126,6 +124,7 @@ description
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
 
 
 <!-- ---------- -->
@@ -166,4 +165,4 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Jan 2026 Prerelease SDK (123) -->
+<!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->

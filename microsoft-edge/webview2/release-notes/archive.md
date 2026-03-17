@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/03/2025
+ms.date: 03/16/2026
 ---
 # Archived release notes for the WebView2 SDK
 <!--
@@ -21,10 +21,89 @@ if change h2 headings pattern, enter work item: update links in announcements
 The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs over one year old.
 
 
-<!-- Feb 2025 Release SDK (133) -->
 <!-- ====================================================================== -->
-## 1.0.3065.39
-<!-- ## Release SDK 1.0.3065.39, for Runtime 133 -->
+## 1.0.3124.44<!-- Release SDK, for Runtime 134 (Mar. 10, 2025) -->
+
+Release Date: Mar. 10, 2025, Runtime 134
+
+[NuGet package for WebView2 SDK 1.0.3124.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3124.44)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 134.0.3124.44 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
+* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
+
+<!-- end of Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025) -->
+
+
+<!-- ====================================================================== -->
+## 1.0.3171-prerelease<!-- Runtime 135 (Mar. 10, 2025) -->
+
+Release Date: Mar. 10, 2025, Runtime 135
+
+[NuGet package for WebView2 SDK 1.0.3171-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3171-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 135.0.3171.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed host object async method exception handling.  ([Issue #3402](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3402))
+* Fixed documentation for `CoreWebVIew2.Navigate`.  ([Issue #5091](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5091))
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed an "Add to Chrome" store installation regression.
+* Fixed folder uploads in UWP and WinUI.  ([Issue #3275](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3275))
+* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
+* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
+* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixes a crash that could occur when the Garbage Collector calls `Finalize` on a thread other than the main thread.
+
+<!-- end of Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025) -->
+
+
+<!-- ====================================================================== -->
+## 1.0.3065.39<!-- Release SDK 133 (Feb. 10, 2025) -->
 
 Release Date: Feb. 10, 2025, Runtime 133
 
@@ -8684,7 +8763,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 77.0.230.0 or h
 
 
 <!-- ====================================================================== -->
-## 0.8.190
+## 0.8.190<!-- Release SDK 77 (Jun. 17, 2019) -->
 
 Release Date: Jun. 17, 2019
 
@@ -8702,9 +8781,11 @@ This version of the WebView2 SDK requires Microsoft Edge version 77.0.190.0 or h
 *  Added include path, linking, and autocopying of DLL files to NuGet `TARGET` file in SDK.
 *  Turned on requesting `window.open()` in script.
 
+<!-- end of Release SDK 77 (Jun. 17, 2019) -->
+
 
 <!-- ====================================================================== -->
-## 0.8.149
+## 0.8.149<!-- Release SDK 76 (May 6, 2019) -->
 
 Release Date: May 6, 2019
 
@@ -8713,6 +8794,8 @@ Release Date: May 6, 2019
 This version of the WebView2 SDK requires Microsoft Edge version 76.0.149.0 or higher.
 
 Initial developer preview release.
+
+<!-- end of Release SDK 76 (May 6, 2019) -->
 
 
 <!-- ====================================================================== -->
