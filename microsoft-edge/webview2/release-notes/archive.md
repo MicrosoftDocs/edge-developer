@@ -8593,7 +8593,7 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 86.0.57
 *  > [!IMPORTANT]
    > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
    >
-   > *  [0.8.190](#08190)
+   > *  [Release SDK 0.8.190, for Runtime 77 (Jun. 17, 2019)](#release-sdk-08190-for-runtime-77-jun-17-2019)
    > *  [0.8.230](#08230)
    > *  [0.8.270](#08270)
    > *  [0.8.314](#08314)
