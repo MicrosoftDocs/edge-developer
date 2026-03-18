@@ -112,7 +112,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Prerelease SDK 148 (Apr. 13, 2026) -->
+<!-- end of Prerelease SDK 1.0.39nn-prerelease, for Runtime 148 (Apr. 13, 2026) -->
 
 
 <!-- ====================================================================== -->
@@ -191,7 +191,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Release SDK 147 (Apr. 13, 2026) -->
+<!-- end of Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026) -->
 
 
 <!-- ====================================================================== -->
