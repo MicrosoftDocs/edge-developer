@@ -25,7 +25,7 @@ if change h2 headings pattern, enter work item: update links in announcements
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
-The sequence of entries matches [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2/) at NuGet.
+<!-- sequence of entries matches [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2/) -->
 
 
 <!-- ====================================================================== -->
