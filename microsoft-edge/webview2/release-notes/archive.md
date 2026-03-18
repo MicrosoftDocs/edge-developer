@@ -7148,7 +7148,13 @@ May 2 was therefore probably 102
 Apr 12 was 102
 -->
 
-pending
+This SDK was last updated May 2, 2022.
+
+[NuGet package for WebView2 SDK 1.0.1243-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1243-prerelease)
+
+This package has been deprecated, because it has critical bugs.  See [Issue 2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414).
+
+<!-- end of Prerelease SDK 1.0.1243-prerelease, for Runtime 102 (May 2, 2022) -->
 
 
 <!-- ====================================================================== -->
@@ -7238,7 +7244,13 @@ May 5 was therefore 100 or 101
 Apr 12 was 100
 -->
 
-pending
+This SDK was last updated May 5, 2022.
+
+[NuGet package for WebView2 SDK 1.0.1210.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.30)
+
+This package has been deprecated, because it has critical bugs.  See [Issue 2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414).
+
+<!-- end of Release SDK 1.0.1210.30, for Runtime 101 (May 5, 2022) -->
 
 
 <!-- ====================================================================== -->
@@ -8625,7 +8637,11 @@ Jul 20 was therefore likely 85
 May 14 was 84
 -->
 
-pending
+This SDK was last updated Jul. 20, 2020.
+
+[NuGet package for WebView2 SDK 0.9.579-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579-prerelease)
+
+<!-- end of Prerelease SDK 0.9.579-prerelease, for Runtime 85 (Jul. 20, 2020) -->
 
 
 <!-- ====================================================================== -->
@@ -8681,7 +8697,11 @@ June 8 was therefore likely 85
 May 14 was 84
 -->
 
-pending
+This SDK was last updated Jun. 8, 2020.
+
+[NuGet package for WebView2 SDK 0.9.538-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538-prerelease)
+
+<!-- end of Prerelease SDK 0.9.538-prerelease, for Runtime 85 (Jun. 8, 2020) -->
 
 
 <!-- ====================================================================== -->
@@ -8771,7 +8791,11 @@ no earlier prerelease
 feb 20 Release was 82
 -->
 
-pending
+This SDK was last updated Apr. 20, 2020.
+
+[NuGet package for WebView2 SDK 0.9.488-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488-prerelease)
+
+<!-- end of Prerelease SDK 0.9.488-prerelease, for Runtime 83 (Apr. 20, 2020) -->
 
 
 <!-- the below releases are not at https://www.nuget.org/packages/Microsoft.Web.WebView2/ -->
