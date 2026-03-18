@@ -7141,7 +7141,12 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.1243-prerelease, for Runtime nnn (May 2, 2022) (missing)
+## Prerelease SDK 1.0.1243-prerelease, for Runtime 102 (May 2, 2022)
+<!--
+May 9 was 102
+May 2 was therefore probably 102
+Apr 12 was 102
+-->
 
 pending
 
@@ -7226,7 +7231,12 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.1210.30, for Runtime nnn (May 5, 2022) (missing)
+## Release SDK 1.0.1210.30, for Runtime 101 (May 5, 2022)
+<!--
+May 9 was 101
+May 5 was therefore 100 or 101
+Apr 12 was 100
+-->
 
 pending
 
@@ -8608,7 +8618,12 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 86.0.57
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 0.9.579-prerelease, for Runtime nn (Jul. 20, 2020) (missing)
+## Prerelease SDK 0.9.579-prerelease, for Runtime 85 (Jul. 20, 2020)
+<!--
+Oct. 19 was 86
+Jul 20 was therefore likely 85
+May 14 was 84
+-->
 
 pending
 
@@ -8659,7 +8674,12 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 85.0.53
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 0.9.538-prerelease, for Runtime nn (Jun. 8, 2020) (missing)
+## Prerelease SDK 0.9.538-prerelease, for Runtime 85 (Jun. 8, 2020)
+<!--
+Oct 19 was 86
+June 8 was therefore likely 85
+May 14 was 84
+-->
 
 pending
 
@@ -8743,10 +8763,15 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 84.0.48
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 0.9.488-prerelease, for Runtime nn (Apr. 20, 2020) (missing)
+## Prerelease SDK 0.9.488-prerelease, for Runtime 83 (Apr. 20, 2020)
+<!--
+May 14 was 84
+Apr 20 was therefore likely 83
+no earlier prerelease
+feb 20 Release was 82
+-->
 
 pending
-<!-- maybe Runtime 83 or 84 -->
 
 
 <!-- the below releases are not at https://www.nuget.org/packages/Microsoft.Web.WebView2/ -->
