@@ -21,41 +21,183 @@ https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20sta
 if change h2 headings pattern, enter work item: update links in announcements
 -->
 
+<!-- todo: update links in announcements -->
+
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2026 -->
+## Prerelease SDK 1.0.39nn-prerelease, for Runtime 148 (Apr. 13, 2026)
 
-Release Date: Mar. 16, 2026
+Release Date: Apr. 13, 2026
 
-[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add rightmost part of url:
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+-->
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+<!-- 
+#### Experimental APIs (Phase 1)
+-->
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Prerelease SDK.
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Prerelease SDK 148 (Apr. 13, 2026) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026)
+
+Release Date: Apr. 13, 2026
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add rightmost part of url:
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+-->
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
+There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+* Fixed behavior.  ([Issue #]())
 
-<!-- end of Release SDK 146 (Mar. 16, 2026) -->
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Release SDK 147 (Apr. 13, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3908-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
+## Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
 
 Release Date: Mar. 16, 2026
 
@@ -128,13 +270,13 @@ This Prerelease SDK includes the following bug fixes.
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3800.47, for Runtime 145<!-- Feb. 16, 2026 -->
+## Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
 
-Release Date: Feb. 16, 2026
+Release Date: Mar. 16, 2026
 
-[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
+[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
 
 
 <!-- ------------------------------ -->
@@ -152,17 +294,13 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
 
-* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
-
-* Fixed WebView2 transparency.
-
-<!-- end of Release SDK 145 (Feb. 16, 2026) -->
+<!-- end of Release SDK 146 (Mar. 16, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3848-prerelease, for Runtime 146<!-- Feb. 16, 2026 -->
+## Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
 
 Release Date: Feb. 16, 2026
 
@@ -346,63 +484,20 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 146 (Feb. 16, 2026) -->
 
 
-<!-- Release SDK 144 (Jan. 27, 2026) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.3719.77, for Runtime 144
+## Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
 
-Release Date: Jan. 27, 2026
+Release Date: Feb. 16, 2026
 
-[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
+[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Customize the drag and drop behavior (DragStarting API)
-
-The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
-
-* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
-* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
-   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
-   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-N/A
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-N/A
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#add_dragstarting)
-  * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#remove_dragstarting)
-
-<!-- exception: rt interop docs -->
-* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#add_dragstarting)
-  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#remove_dragstarting)
-
-* [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_alloweddropeffects)
-  * [ICoreWebView2DragStartingEventArgs::get_Data](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_data)
-  * [ICoreWebView2DragStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_handled)
-  * [ICoreWebView2DragStartingEventArgs::get_Position](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_position)
-  * [ICoreWebView2DragStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#getdeferral)
-  * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#put_handled)
-
-* [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3719.77&preserve-view=true)
-
----
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -414,20 +509,17 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed `chrome.webview` unavailability.
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+* Fixed WebView2 transparency.
+
+<!-- end of Release SDK 145 (Feb. 16, 2026) -->
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
-
-<!-- end of Release SDK 144 (Jan. 27, 2026) -->
-
-
-<!-- Prerelease SDK 145 (Jan. 19, 2026) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
 
 Release Date: Jan. 19, 2026
 
@@ -514,39 +606,88 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 145 (Jan. 19, 2026) -->
 
 
-<!-- Release SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650.58
-<!-- if update pattern of older h2 headings, update links in announcements -->
+## Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
 
-Release Date: Dec. 8, 2025, Runtime 143
+Release Date: Jan. 27, 2026
 
-[NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
+[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Customize the drag and drop behavior (DragStarting API)
+
+The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+
+* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
+* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
+   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
+   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+N/A
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+N/A
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#remove_dragstarting)
+
+<!-- exception: rt interop docs -->
+* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#remove_dragstarting)
+
+* [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_alloweddropeffects)
+  * [ICoreWebView2DragStartingEventArgs::get_Data](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_data)
+  * [ICoreWebView2DragStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_handled)
+  * [ICoreWebView2DragStartingEventArgs::get_Position](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_position)
+  * [ICoreWebView2DragStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#getdeferral)
+  * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#put_handled)
+
+* [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3719.77&preserve-view=true)
+
+---
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
-
-<!-- end of Release SDK 143 -->
+* Fixed `chrome.webview` unavailability.
 
 
-<!-- Prerelease SDK 144 -->
+<!-- ---------- -->
+###### SDK-only
+
+* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
+
+<!-- end of Release SDK 144 (Jan. 27, 2026) -->
+
+
 <!-- ====================================================================== -->
-## 1.0.3712-prerelease
+## Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
 
-Release Date: Dec. 8, 2025, Runtime 144
+Release Date: Dec. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
@@ -673,15 +814,14 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 144 -->
 
 
-<!-- Release SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3595.46
+## Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
 
-Release Date: Nov. 3, 2025, Runtime 142
+Release Date: Dec. 8, 2025
 
-[NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
+[NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or higher.
 
 
 <!-- ------------------------------ -->
@@ -693,22 +833,17 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ------------------------------ -->
 #### Bug fixes
 
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Disabled creation of a "Speculative Renderer" process.
+* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
-<!-- end of Release SDK 142 -->
+<!-- end of Release SDK 143 -->
 
 
-<!-- Prerelease SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650-prerelease
+## Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
 
-Release Date: Nov. 7, 2025, Runtime 143
+Release Date: Nov. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
@@ -742,15 +877,14 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 143 -->
 
 
-<!-- Release SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3537.50
+## Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
 
-Release Date: Oct. 6, 2025, Runtime 141
+Release Date: Nov. 3, 2025
 
-[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
+[NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
 
 
 <!-- ------------------------------ -->
@@ -768,22 +902,15 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.
+* Disabled creation of a "Speculative Renderer" process.
+
+<!-- end of Release SDK 142 -->
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed a BinSkim error for `WebView2Loader.dll`.
-
-<!-- end of Release SDK 141 -->
-
-
-<!-- Prerelease SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3590-prerelease
+## Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
 
-Release Date: Oct. 7, 2025, Runtime 142
+Release Date: Oct. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
@@ -895,25 +1022,14 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 142 -->
 
 
-<!-- Release SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3485.44
+## Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)
 
-Release Date: Sep. 8, 2025, Runtime 140
+Release Date: Oct. 6, 2025
 
-[NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
+[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-
-This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
-* The testing infrastructure has been strengthened.
-* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
-
-These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
 
 
 <!-- ------------------------------ -->
@@ -925,16 +1041,27 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
-
-<!-- end of Release SDK 140 -->
+This Release SDK includes the following bug fixes.
 
 
-<!-- Prerelease SDK 141 -->
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed local network access triggering a permission alert pop-up window.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed a BinSkim error for `WebView2Loader.dll`.
+
+<!-- end of Release SDK 141 -->
+
+
 <!-- ====================================================================== -->
-## 1.0.3530-prerelease
+## Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)
 
-Release Date: Sep. 8, 2025, Runtime 141
+Release Date: Sep. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3530-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3530-prerelease)
 
@@ -977,11 +1104,84 @@ This Prerelease SDK includes the following bug fixes.
 <!-- end of Prerelease SDK 141 -->
 
 
-<!-- Release SDK 139 -->
 <!-- ====================================================================== -->
-## 1.0.3405.78
+## Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
 
-Release Date: Aug. 11, 2025, Runtime 139
+Release Date: Sep. 8, 2025
+
+[NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+
+This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+* The testing infrastructure has been strengthened.
+* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
+
+These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+
+<!-- end of Release SDK 140 -->
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
+
+Release Date: Aug. 11, 2025
+
+[NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed `put_UserAgent` not working for service workers.
+* Fixed a crash in Devtools on Windows Server and Windows 10.
+* Removed browser process tracking after calling `remove_BrowserProcessExited`.
+* Fixed a memory leak issue in `hostObject` async function calls.
+* Fixed touch not working in visual hosting after a long tap.
+
+<!-- end of 1.0.3477-prerelease Prerelease SDK 140 (Aug. 11, 2025) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
+
+Release Date: Aug. 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
 
@@ -1111,105 +1311,10 @@ We're actively investigating these issues, and we encourage you to report any pr
 <!-- end of Release SDK 139 -->
 
 
-<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3477-prerelease
+## Prerelease SDK 1.0.3415-prerelease, for Runtime 140<!-- exception: not 139 --> (Jul. 14, 2025)
 
-Release Date: Aug. 11, 2025, Runtime 140
-
-[NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed `put_UserAgent` not working for service workers.
-* Fixed a crash in Devtools on Windows Server and Windows 10.
-* Removed browser process tracking after calling `remove_BrowserProcessExited`.
-* Fixed a memory leak issue in `hostObject` async function calls.
-* Fixed touch not working in visual hosting after a long tap.
-
-<!-- end of Prerelease SDK 140 -->
-
-
-<!-- Release SDK 138 -->
-<!-- ====================================================================== -->
-## 1.0.3351.48
-
-Release Date: Jul. 1, 2025, Runtime 138
-
-[NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Allow input event messages to pass through the browser window
-
-The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
-   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
-   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed a blackbox issue on dialogs in visual hosting.
-
-<!-- end of Release SDK 138 -->
-
-
-<!-- Prerelease SDK 140 -->
-<!-- ====================================================================== -->
-## 1.0.3415-prerelease
-
-Release Date: Jul. 14, 2025, Runtime 140
+Release Date: Jul. 14, 2025
 
 [NuGet package for WebView2 SDK 1.0.3415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3415-prerelease)
 
@@ -1696,18 +1801,17 @@ We're actively investigating these issues, and we encourage you to report any pr
 * Fixed `put_UserAgent` not working for service workers.
 * Fixed crash in DevTools on Windows Server and Windows 10.
 
-<!-- end of Prerelease SDK 140 -->
+<!-- end of 1.0.3415-prerelease Prerelease SDK 140 (Jul. 14, 2025) -->
 
 
-<!-- Release SDK 137 -->
 <!-- ====================================================================== -->
-## 1.0.3296.44
+## Release SDK 1.0.3351.48, for Runtime 138 (Jul. 1, 2025)
 
-Release Date: Jun. 3, 2025, Runtime 137
+Release Date: Jul. 1, 2025
 
-[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
+[NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or higher.
 
 
 <!-- ------------------------------ -->
@@ -1717,25 +1821,25 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
+###### Allow input event messages to pass through the browser window
 
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
+   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
+   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
 
 ---
 
@@ -1747,16 +1851,15 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the margins in the printed PDF.
+* Fixed a blackbox issue on dialogs in visual hosting.
 
-<!-- end of Release SDK 137 -->
+<!-- end of Release SDK 138 -->
 
 
-<!-- Prerelease SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3344-prerelease
+## Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025)
 
-Release Date: Jun. 3, 2025, Runtime 138
+Release Date: Jun. 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
@@ -1815,15 +1918,14 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 <!-- end of Prerelease SDK 138 -->
 
 
-<!-- Release SDK 136 -->
 <!-- ====================================================================== -->
-## 1.0.3240.44
+## Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025)
 
-Release Date: May 5, 2025, Runtime 136
+Release Date: Jun. 3, 2025
 
-[NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
+[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 136.0.3240.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
 
 
 <!-- ------------------------------ -->
@@ -1833,33 +1935,25 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ---------- -->
-###### Track navigation history for nested iframes (FrameCreatedEvent API)
+###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
 
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
-
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
-
-* Only the main page and first-level iframes (the default behavior).
-* A partial WebView2 frames tree with specific iframes of interest.
-* The full WebView2 frames tree.
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3240.44&preserve-view=true)
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3240.44&preserve-view=true#framecreated)
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
-   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
-   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
-
-* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
+   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
+   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
 
 ---
 
@@ -1871,17 +1965,15 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
+* Fixed the margins in the printed PDF.
 
-<!-- end of Release SDK 136 -->
+<!-- end of Release SDK 137 -->
 
 
-<!-- Prerelease SDK 137 (May. 12, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3296-prerelease
+## Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
 
-Release Date: May 12, 2025, Runtime 137
+Release Date: May 12, 2025
 
 [NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
 
@@ -1939,59 +2031,20 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- Prerelease SDK 137 (May. 12, 2025) -->
 
 
-<!-- Release SDK 135 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3179.45
+## Release SDK 1.0.3240.44, for Runtime 136 (May 5, 2025)
 
-Release Date: Apr. 7, 2025, Runtime 135
+Release Date: May 5, 2025
 
-[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
+[NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 136.0.3240.44 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-
-<!-- end of Release SDK 135 (Apr. 7, 2025) -->
-
-
-<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
-<!-- ====================================================================== -->
-## 1.0.3230-prerelease
-
-Release Date: Apr. 7, 2025, Runtime 136
-
-[NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 136.0.3230.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
 <!-- ---------- -->
@@ -2008,20 +2061,20 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3230-prerelease&preserve-view=true)
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3240.44&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true#framecreated)
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3240.44&preserve-view=true#framecreated)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
-   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
-   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
+   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
+   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
 
-* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- win32 only --><!-- vs. ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler -->
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
 
 ---
 
@@ -2033,20 +2086,10 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed an issue in WPF where the \<datalist\> dropdown closed when the mouse moved outside the WebView2 control bounds.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed bug where users unable to type in input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-* Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
+* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
-
-<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
+<!-- end of Release SDK 136 -->
 
 
 <!-- ====================================================================== -->
