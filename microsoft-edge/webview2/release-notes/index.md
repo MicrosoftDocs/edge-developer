@@ -27,176 +27,6 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.39nn-prerelease, for Runtime 148 (Apr. 13, 2026)
-
-Release Date: Apr. 13, 2026
-
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
--->
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-<!-- 
-#### Experimental APIs (Phase 1)
--->
-
-No Experimental APIs have been added in this Prerelease SDK.
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-There are no bug fixes in this Prerelease SDK.
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Prerelease SDK 148 (Apr. 13, 2026) -->
-
-
-<!-- ====================================================================== -->
-## Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026)
-
-Release Date: Apr. 13, 2026
-
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
--->
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-There are no bug fixes in this Release SDK.
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Release SDK 147 (Apr. 13, 2026) -->
-
-
-<!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
 
 Release Date: Mar. 16, 2026
@@ -2090,6 +1920,114 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
 <!-- end of Release SDK 136 -->
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
+
+Release Date: Apr. 7, 2025, Runtime 136
+
+[NuGet package for WebView2 SDK 1.0.3230-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3230-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 136.0.3230.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 1 (Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Track navigation history for nested iframes (FrameCreatedEvent API)
+
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
+
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
+* Only the main page and first-level iframes (the default behavior).
+* A partial WebView2 frames tree with specific iframes of interest.
+* The full WebView2 frames tree.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3230-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3230-prerelease&preserve-view=true#framecreated)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- vs. ICoreWebView2ExperimentalFrame8 -->
+   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#add_framecreated)
+   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3230-prerelease&preserve-view=true#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3230-prerelease&preserve-view=true)<!-- win32 only --><!-- vs. ICoreWebView2ExperimentalFrameChildFrameCreatedEventHandler -->
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed an issue in WPF where the \<datalist\> dropdown closed when the mouse moved outside the WebView2 control bounds.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed bug where users unable to type in input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
+
+<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025)
+
+Release Date: Apr. 7, 2025, Runtime 135
+
+[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+
+<!-- end of Release SDK 135 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
