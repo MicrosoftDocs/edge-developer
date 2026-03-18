@@ -8594,10 +8594,10 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 86.0.57
    > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
    >
    > *  [Release SDK 0.8.190, for Runtime 77 (Jun. 17, 2019)](#release-sdk-08190-for-runtime-77-jun-17-2019)
-   > *  [0.8.230](#08230)
-   > *  [0.8.270](#08270)
-   > *  [0.8.314](#08314)
-   > *  [0.8.355](#08355)
+   > *  [Release SDK 0.8.230, for Runtime 77 (Jul. 29, 2019)](#release-sdk-08230-for-runtime-77-jul-29-2019)
+   > *  [Release SDK 0.8.270, for Runtime 78 (Sep. 10, 2019)](#release-sdk-08270-for-runtime-78-sep-10-2019)
+   > *  [Release SDK 0.8.314, for Runtime 80 (Oct. 28, 2019)](#release-sdk-08314-for-runtime-80-oct-28-2019)
+   > *  [Release SDK 0.8.355, for Runtime 80 (Dec. 9, 2019)](#release-sdk-08355-for-runtime-80-dec-9-2019)
    >
    > The WebView2 SDK Versions are also marked deprecated on nuget.org.  WebView2 recommends staying up to date with the latest version of WebView2.
 
@@ -8629,7 +8629,7 @@ This Release version of the WebView2 SDK requires Microsoft Edge version 85.0.53
 <!-- ------------------------------ -->
 #### All platforms
 
-*  Dropping support for WebView2 SDK Version [0.8.149](#08149).  WebView2 recommends staying up to date with the latest version of WebView2.
+*  Dropping support for WebView2 [Release SDK 0.8.149, for Runtime 76 (May 6, 2019)](#release-sdk-08149-for-runtime-76-may-6-2019).  We recommend staying up to date with the latest version of WebView2.
 *  Updated group policy to account for when the profile path of the Microsoft Edge browser is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179)).
 
 
