@@ -1453,6 +1453,9 @@
             - name: Overview of WebView2 APIs
               href: ./webview2/concepts/overview-features-apis.md
 
+            - name: Components of the WebView2 platform
+              href: webview2/concepts/platform-components.md
+
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: ./webview2/concepts/environment-controller-core.md
 
@@ -1639,7 +1642,6 @@
           items:
             - name: Prerelease and Release SDKs for WebView2
               href: ./webview2/concepts/versioning.md
-              displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute the app and Runtime
               items:
