@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/16/2026
+ms.date: 03/18/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -21,41 +21,15 @@ https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20sta
 if change h2 headings pattern, enter work item: update links in announcements
 -->
 
+<!-- todo: update links in announcements -->
+
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
-
-<!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2026 -->
-
-Release Date: Mar. 16, 2026
-
-[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
-<!-- end of Release SDK 146 (Mar. 16, 2026) -->
+<!-- sequence of entries matches [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2/) -->
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3908-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
+## Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
 
 Release Date: Mar. 16, 2026
 
@@ -124,17 +98,17 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed the API for setting the background color of the **Caption** control.
 
-<!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
+<!-- end of Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3800.47, for Runtime 145<!-- Feb. 16, 2026 -->
+## Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
 
-Release Date: Feb. 16, 2026
+Release Date: Mar. 16, 2026
 
-[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
+[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
 
 
 <!-- ------------------------------ -->
@@ -152,17 +126,13 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
 
-* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
-
-* Fixed WebView2 transparency.
-
-<!-- end of Release SDK 145 (Feb. 16, 2026) -->
+<!-- end of Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3848-prerelease, for Runtime 146<!-- Feb. 16, 2026 -->
+## Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
 
 Release Date: Feb. 16, 2026
 
@@ -343,66 +313,23 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
-<!-- end of Prerelease SDK 146 (Feb. 16, 2026) -->
+<!-- end of Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026) -->
 
 
-<!-- Release SDK 144 (Jan. 27, 2026) -->
 <!-- ====================================================================== -->
-## Release SDK 1.0.3719.77, for Runtime 144
+## Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
 
-Release Date: Jan. 27, 2026
+Release Date: Feb. 16, 2026
 
-[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
+[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Customize the drag and drop behavior (DragStarting API)
-
-The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
-
-* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
-* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
-   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
-   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-N/A
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-N/A
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#add_dragstarting)
-  * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#remove_dragstarting)
-
-<!-- exception: rt interop docs -->
-* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#add_dragstarting)
-  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#remove_dragstarting)
-
-* [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true)
-  * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_alloweddropeffects)
-  * [ICoreWebView2DragStartingEventArgs::get_Data](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_data)
-  * [ICoreWebView2DragStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_handled)
-  * [ICoreWebView2DragStartingEventArgs::get_Position](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_position)
-  * [ICoreWebView2DragStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#getdeferral)
-  * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#put_handled)
-
-* [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3719.77&preserve-view=true)
-
----
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
@@ -414,20 +341,17 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed `chrome.webview` unavailability.
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+* Fixed WebView2 transparency.
+
+<!-- end of Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026) -->
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
-
-<!-- end of Release SDK 144 (Jan. 27, 2026) -->
-
-
-<!-- Prerelease SDK 145 (Jan. 19, 2026) -->
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3796-prerelease, for Runtime 145
+## Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
 
 Release Date: Jan. 19, 2026
 
@@ -511,42 +435,91 @@ This Prerelease SDK includes the following bug fixes.
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
-<!-- end of Prerelease SDK 145 (Jan. 19, 2026) -->
+<!-- end of Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026) -->
 
 
-<!-- Release SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650.58
-<!-- if update pattern of older h2 headings, update links in announcements -->
+## Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
 
-Release Date: Dec. 8, 2025, Runtime 143
+Release Date: Jan. 27, 2026
 
-[NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
+[NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Customize the drag and drop behavior (DragStarting API)
+
+The `DragStarting` API overrides the default drag and drop behavior when running in visual hosting mode.  The `DragStarting` event notifies your app when the user starts a drag operation in the WebView2, and provides the state that's necessary to override the default WebView2 drag operation with your own logic.
+
+* Use `DragStarting` on the `ICoreWebView2CompositionController5` to add an event handler that's invoked when the drag operation is starting.
+* Use `ICoreWebView2DragStartingEventArgs` to start your own drag operation.
+   * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
+   * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+N/A
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+N/A
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2CompositionController5](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionController5::add_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionController5::remove_DragStarting](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller5?view=webview2-1.0.3719.77&preserve-view=true#remove_dragstarting)
+
+<!-- exception: rt interop docs -->
+* [ICoreWebView2CompositionControllerInterop3](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2CompositionControllerInterop3::add_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#add_dragstarting)
+  * [ICoreWebView2CompositionControllerInterop3::remove_DragStarting](/microsoft-edge/webview2/reference/winrt/interop/icorewebview2compositioncontrollerinterop3?view=webview2-winrt-1.0.3719.77&preserve-view=true#remove_dragstarting)
+
+* [ICoreWebView2DragStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true)
+  * [ICoreWebView2DragStartingEventArgs::get_AllowedDropEffects](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_alloweddropeffects)
+  * [ICoreWebView2DragStartingEventArgs::get_Data](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_data)
+  * [ICoreWebView2DragStartingEventArgs::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_handled)
+  * [ICoreWebView2DragStartingEventArgs::get_Position](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#get_position)
+  * [ICoreWebView2DragStartingEventArgs::GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#getdeferral)
+  * [ICoreWebView2DragStartingEventArgs::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventargs?view=webview2-1.0.3719.77&preserve-view=true#put_handled)
+
+* [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3719.77&preserve-view=true)
+
+---
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
-
-<!-- end of Release SDK 143 -->
+* Fixed `chrome.webview` unavailability.
 
 
-<!-- Prerelease SDK 144 -->
+<!-- ---------- -->
+###### SDK-only
+
+* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
+
+<!-- end of Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026) -->
+
+
 <!-- ====================================================================== -->
-## 1.0.3712-prerelease
+## Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
 
-Release Date: Dec. 8, 2025, Runtime 144
+Release Date: Dec. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
@@ -670,18 +643,17 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression of the `setColorScheme` API.
 * Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
-<!-- end of Prerelease SDK 144 -->
+<!-- end of Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025) -->
 
 
-<!-- Release SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3595.46
+## Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
 
-Release Date: Nov. 3, 2025, Runtime 142
+Release Date: Dec. 8, 2025
 
-[NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
+[NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or higher.
 
 
 <!-- ------------------------------ -->
@@ -693,22 +665,17 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ------------------------------ -->
 #### Bug fixes
 
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
 ###### Runtime-only
 
-* Disabled creation of a "Speculative Renderer" process.
+* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
 
-<!-- end of Release SDK 142 -->
+<!-- end of Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025) -->
 
 
-<!-- Prerelease SDK 143 -->
 <!-- ====================================================================== -->
-## 1.0.3650-prerelease
+## Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
 
-Release Date: Nov. 7, 2025, Runtime 143
+Release Date: Nov. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
@@ -739,18 +706,17 @@ This Prerelease SDK includes the following bug fixes.
 * Disabled creation of a "Speculative Renderer" process.
 * Fixed a **Find** dialog synchronization issue while programmatically doing a Find.
 
-<!-- end of Prerelease SDK 143 -->
+<!-- end of Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025) -->
 
 
-<!-- Release SDK 141 -->
 <!-- ====================================================================== -->
-## 1.0.3537.50
+## Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
 
-Release Date: Oct. 6, 2025, Runtime 141
+Release Date: Nov. 3, 2025
 
-[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
+[NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
 
 
 <!-- ------------------------------ -->
@@ -768,22 +734,15 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed local network access triggering a permission alert pop-up window.
+* Disabled creation of a "Speculative Renderer" process.
+
+<!-- end of Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025) -->
 
 
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed a BinSkim error for `WebView2Loader.dll`.
-
-<!-- end of Release SDK 141 -->
-
-
-<!-- Prerelease SDK 142 -->
 <!-- ====================================================================== -->
-## 1.0.3590-prerelease
+## Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
 
-Release Date: Oct. 7, 2025, Runtime 142
+Release Date: Oct. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
@@ -892,28 +851,17 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a BinSkim error for `WebView2Loader.dll`.
 
-<!-- end of Prerelease SDK 142 -->
+<!-- end of Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025) -->
 
 
-<!-- Release SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3485.44
+## Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)
 
-Release Date: Sep. 8, 2025, Runtime 140
+Release Date: Oct. 6, 2025
 
-[NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
+[NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-
-This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
-* The testing infrastructure has been strengthened.
-* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
-
-These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
 
 
 <!-- ------------------------------ -->
@@ -925,16 +873,27 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
-
-<!-- end of Release SDK 140 -->
+This Release SDK includes the following bug fixes.
 
 
-<!-- Prerelease SDK 141 -->
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed local network access triggering a permission alert pop-up window.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed a BinSkim error for `WebView2Loader.dll`.
+
+<!-- end of Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025) -->
+
+
 <!-- ====================================================================== -->
-## 1.0.3530-prerelease
+## Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)
 
-Release Date: Sep. 8, 2025, Runtime 141
+Release Date: Sep. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3530-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3530-prerelease)
 
@@ -974,148 +933,47 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed a memory leak in WPF Composition Controller.
 
-<!-- end of Prerelease SDK 141 -->
+<!-- end of Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025) -->
 
 
-<!-- Release SDK 139 -->
 <!-- ====================================================================== -->
-## 1.0.3405.78
+## Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
 
-Release Date: Aug. 11, 2025, Runtime 139
+Release Date: Sep. 8, 2025
 
-[NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
+[NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 139.0.3405.78 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or higher.
+
+
+<!-- ------------------------------ -->
+#### General changes
+
+This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+* The testing infrastructure has been strengthened.
+* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
+
+These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ------------------------------ -->
-###### Customize the Find behavior (Find API)
-
-The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
-* Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
-* Find text strings and navigate among them within a WebView2 control.
-* Programmatically initiate **Find** operations, and navigate **Find** results.
-* Suppress the default **Find** UI.
-* Track the status of **Find** operations.
-
-There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
-
-We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.CreateFindOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createfindoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-
-* [CoreWebView2Find Class](/dotnet/api/microsoft.web.webview2.core.corewebview2find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.ActiveMatchIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindex?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindexchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.FindPrevious Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findprevious?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.MatchCount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcount?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.MatchCountChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcountchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.StartAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.startasync?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.stop?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-
-* [CoreWebView2FindOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.FindTerm Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.findterm?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.IsCaseSensitive Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.iscasesensitive?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldhighlightallmatches?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.ShouldMatchWord Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldmatchword?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.suppressdefaultfinddialog?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3405.78&preserve-view=true#find)
-
-* `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.3405.78&preserve-view=true#createfindoptions)
-
-* [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindex)
-   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindexchanged)
-   * [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findnext)
-   * [CoreWebView2Find.FindPrevious Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findprevious)
-   * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcount)
-   * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcountchanged)
-   * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#startasync)
-   * [CoreWebView2Find.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#stop)
-
-* [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true)
-   * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#findterm)
-   * [CoreWebView2FindOptions.IsCaseSensitive Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#iscasesensitive)
-   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldhighlightallmatches)
-   * [CoreWebView2FindOptions.ShouldMatchWord Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldmatchword)
-   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#suppressdefaultfinddialog)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true)
-   * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true#get_find)
-
-* [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true)
-   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true#createfindoptions)
-
-* [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true)
-   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_activematchindexchanged)
-   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_matchcountchanged)
-   * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findnext)
-   * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findprevious)
-   * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_activematchindex)
-   * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_matchcount)
-   * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_activematchindexchanged)
-   * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_matchcountchanged)
-   * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#start)
-   * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#stop)
-
-* [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
-
-* [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
-
-* [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true)
-   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_findterm)
-   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_iscasesensitive)
-   * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldhighlightallmatches)
-   * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldmatchword)
-   * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_suppressdefaultfinddialog)
-   * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_findterm)
-   * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_iscasesensitive)
-   * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldhighlightallmatches)
-   * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldmatchword)
-   * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_suppressdefaultfinddialog)
-
-* [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3405.78&preserve-view=true)
-
----
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
+There are no bug fixes in this Release SDK.
 
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed a crash in Devtools on Windows Server and Windows 10.
-
-<!-- end of Release SDK 139 -->
+<!-- end of Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025) -->
 
 
-<!-- Prerelease SDK 140 -->
 <!-- ====================================================================== -->
-## 1.0.3477-prerelease
+## Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
 
-Release Date: Aug. 11, 2025, Runtime 140
+Release Date: Aug. 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
 
@@ -1149,67 +1007,13 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Fixed a memory leak issue in `hostObject` async function calls.
 * Fixed touch not working in visual hosting after a long tap.
 
-<!-- end of Prerelease SDK 140 -->
+<!-- end of Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025) -->
 
 
-<!-- Release SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3351.48
+## Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)<!-- exception: not 139 -->
 
-Release Date: Jul. 1, 2025, Runtime 138
-
-[NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Allow input event messages to pass through the browser window
-
-The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
-   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
-   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed a blackbox issue on dialogs in visual hosting.
-
-<!-- end of Release SDK 138 -->
-
-
-<!-- Prerelease SDK 140 -->
-<!-- ====================================================================== -->
-## 1.0.3415-prerelease
-
-Release Date: Jul. 14, 2025, Runtime 140
+Release Date: Jul. 14, 2025
 
 [NuGet package for WebView2 SDK 1.0.3415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3415-prerelease)
 
@@ -1696,18 +1500,17 @@ We're actively investigating these issues, and we encourage you to report any pr
 * Fixed `put_UserAgent` not working for service workers.
 * Fixed crash in DevTools on Windows Server and Windows 10.
 
-<!-- end of Prerelease SDK 140 -->
+<!-- end of Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025) -->
 
 
-<!-- Release SDK 137 -->
 <!-- ====================================================================== -->
-## 1.0.3296.44
+## Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
 
-Release Date: Jun. 3, 2025, Runtime 137
+Release Date: Aug. 11, 2025
 
-[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
+[NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 139.0.3405.78 or higher.
 
 
 <!-- ------------------------------ -->
@@ -1716,26 +1519,107 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
-<!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
+<!-- ------------------------------ -->
+###### Customize the Find behavior (Find API)
 
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
+The Find API allows you to programmatically control **Find** operations, and enables adding the following functionality to your app:
+* Customize **Find** options, including **Find Term**, **Case Sensitivity**, **Word Matching**, **Match Highlighting**, and **Default UI Suppression**.
+* Find text strings and navigate among them within a WebView2 control.
+* Programmatically initiate **Find** operations, and navigate **Find** results.
+* Suppress the default **Find** UI.
+* Track the status of **Find** operations.
+
+There are known issues with the Find API for PDF documents.  When you view a PDF document within a WebView2 control, the **Find** feature currently only provides the first index and the number of matches found.  For example, if the string occurs three times in a PDF, the UI would say **1/3** and would not support programmatically calling **Next** or **Previous**.
+
+We're actively investigating these issues, and we encourage you to report any problems you encounter, by using the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createfindoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* [CoreWebView2Find Class](/dotnet/api/microsoft.web.webview2.core.corewebview2find?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindex?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.activematchindexchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.FindNext Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findnext?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.FindPrevious Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.findprevious?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.MatchCount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcount?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.MatchCountChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2find.matchcountchanged?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.StartAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.startasync?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2find.stop?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+
+* [CoreWebView2FindOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.FindTerm Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.findterm?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.iscasesensitive?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldhighlightallmatches?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.shouldmatchword?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/dotnet/api/microsoft.web.webview2.core.corewebview2findoptions.suppressdefaultfinddialog?view=webview2-dotnet-1.0.3405.78&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
+* `CoreWebView2` Class:
+   * [CoreWebView2.Find Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.3405.78&preserve-view=true#find)
+
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateFindOptions Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.3405.78&preserve-view=true#createfindoptions)
+
+* [CoreWebView2Find Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2Find.ActiveMatchIndex Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindex)
+   * [CoreWebView2Find.ActiveMatchIndexChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#activematchindexchanged)
+   * [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findnext)
+   * [CoreWebView2Find.FindPrevious Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#findprevious)
+   * [CoreWebView2Find.MatchCount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcount)
+   * [CoreWebView2Find.MatchCountChanged Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#matchcountchanged)
+   * [CoreWebView2Find.StartAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#startasync)
+   * [CoreWebView2Find.Stop Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3405.78&preserve-view=true#stop)
+
+* [CoreWebView2FindOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true)
+   * [CoreWebView2FindOptions.FindTerm Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#findterm)
+   * [CoreWebView2FindOptions.IsCaseSensitive Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#iscasesensitive)
+   * [CoreWebView2FindOptions.ShouldHighlightAllMatches Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldhighlightallmatches)
+   * [CoreWebView2FindOptions.ShouldMatchWord Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#shouldmatchword)
+   * [CoreWebView2FindOptions.SuppressDefaultFindDialog Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2findoptions?view=webview2-winrt-1.0.3405.78&preserve-view=true#suppressdefaultfinddialog)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
+* [ICoreWebView2_28](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2_28::get_Find](/microsoft-edge/webview2/reference/win32/icorewebview2_28?view=webview2-1.0.3405.78&preserve-view=true#get_find)
+
+* [ICoreWebView2Environment15](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2Environment15::CreateFindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environment15?view=webview2-1.0.3405.78&preserve-view=true#createfindoptions)
+
+* [ICoreWebView2Find](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2Find::add_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_activematchindexchanged)
+   * [ICoreWebView2Find::add_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#add_matchcountchanged)
+   * [ICoreWebView2Find::FindNext](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findnext)
+   * [ICoreWebView2Find::FindPrevious](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#findprevious)
+   * [ICoreWebView2Find::get_ActiveMatchIndex](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_activematchindex)
+   * [ICoreWebView2Find::get_MatchCount](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#get_matchcount)
+   * [ICoreWebView2Find::remove_ActiveMatchIndexChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_activematchindexchanged)
+   * [ICoreWebView2Find::remove_MatchCountChanged](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#remove_matchcountchanged)
+   * [ICoreWebView2Find::Start](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#start)
+   * [ICoreWebView2Find::Stop](/microsoft-edge/webview2/reference/win32/icorewebview2find?view=webview2-1.0.3405.78&preserve-view=true#stop)
+
+* [ICoreWebView2FindActiveMatchIndexChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findactivematchindexchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
+
+* [ICoreWebView2FindMatchCountChangedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findmatchcountchangedeventhandler?view=webview2-1.0.3405.78&preserve-view=true)
+
+* [ICoreWebView2FindOptions](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true)
+   * [ICoreWebView2FindOptions::get_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_findterm)
+   * [ICoreWebView2FindOptions::get_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_iscasesensitive)
+   * [ICoreWebView2FindOptions::get_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::get_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_shouldmatchword)
+   * [ICoreWebView2FindOptions::get_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#get_suppressdefaultfinddialog)
+   * [ICoreWebView2FindOptions::put_FindTerm](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_findterm)
+   * [ICoreWebView2FindOptions::put_IsCaseSensitive](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_iscasesensitive)
+   * [ICoreWebView2FindOptions::put_ShouldHighlightAllMatches](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldhighlightallmatches)
+   * [ICoreWebView2FindOptions::put_ShouldMatchWord](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_shouldmatchword)
+   * [ICoreWebView2FindOptions::put_SuppressDefaultFindDialog](/microsoft-edge/webview2/reference/win32/icorewebview2findoptions?view=webview2-1.0.3405.78&preserve-view=true#put_suppressdefaultfinddialog)
+
+* [ICoreWebView2FindStartCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2findstartcompletedhandler?view=webview2-1.0.3405.78&preserve-view=true)
 
 ---
 
@@ -1747,16 +1631,67 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the margins in the printed PDF.
+* Fixed a crash in Devtools on Windows Server and Windows 10.
 
-<!-- end of Release SDK 137 -->
+<!-- end of Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025) -->
 
 
-<!-- Prerelease SDK 138 -->
 <!-- ====================================================================== -->
-## 1.0.3344-prerelease
+## Release SDK 1.0.3351.48, for Runtime 138 (Jul. 1, 2025)
 
-Release Date: Jun. 3, 2025, Runtime 138
+Release Date: Jul. 1, 2025
+
+[NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Allow input event messages to pass through the browser window
+
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.allowhostinputprocessing?view=webview2-dotnet-1.0.3351.48&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.AllowHostInputProcessing Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3351.48&preserve-view=true#allowhostinputprocessing)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions4](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true)
+   * [ICoreWebView2ControllerOptions4::get_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#get_allowhostinputprocessing)
+   * [ICoreWebView2ControllerOptions4::put_AllowHostInputProcessing](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions4?view=webview2-1.0.3351.48&preserve-view=true#put_allowhostinputprocessing)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed a blackbox issue on dialogs in visual hosting.
+
+<!-- end of Release SDK 1.0.3351.48, for Runtime 138 (Jul. 1, 2025) -->
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025)
+
+Release Date: Jun. 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
@@ -1812,18 +1747,17 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 * Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed the margins in the printed PDF.
 
-<!-- end of Prerelease SDK 138 -->
+<!-- end of Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025) -->
 
 
-<!-- Release SDK 136 -->
 <!-- ====================================================================== -->
-## 1.0.3240.44
+## Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025)
 
-Release Date: May 5, 2025, Runtime 136
+Release Date: Jun. 3, 2025
 
-[NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
+[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 136.0.3240.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
 
 
 <!-- ------------------------------ -->
@@ -1833,33 +1767,25 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ---------- -->
-###### Track navigation history for nested iframes (FrameCreatedEvent API)
+###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
 
-The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
-
-Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
-
-* Only the main page and first-level iframes (the default behavior).
-* A partial WebView2 frames tree with specific iframes of interest.
-* The full WebView2 frames tree.
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3240.44&preserve-view=true)
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3240.44&preserve-view=true#framecreated)
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
-   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
-   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
-
-* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
+   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
+   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
 
 ---
 
@@ -1871,17 +1797,15 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
+* Fixed the margins in the printed PDF.
 
-<!-- end of Release SDK 136 -->
+<!-- end of Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025) -->
 
 
-<!-- Prerelease SDK 137 (May. 12, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3296-prerelease
+## Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
 
-Release Date: May 12, 2025, Runtime 137
+Release Date: May 12, 2025
 
 [NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
 
@@ -1936,24 +1860,55 @@ The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` 
 * Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
 * Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- Prerelease SDK 137 (May. 12, 2025) -->
+<!-- end of Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025) -->
 
 
-<!-- Release SDK 135 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3179.45
+## Release SDK 1.0.3240.44, for Runtime 136 (May 5, 2025)
 
-Release Date: Apr. 7, 2025, Runtime 135
+Release Date: May 5, 2025
 
-[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
+[NuGet package for WebView2 SDK 1.0.3240.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3240.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 136.0.3240.44 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Track navigation history for nested iframes (FrameCreatedEvent API)
+
+The FrameCreatedEvent API supports nested iframes, such as recording the navigation history for a second-level iframe.  Without this API, WebView2 only tracks first-level iframes, which are the direct child iframes of the main frame.  Using this API, your app can subscribe to the nested iframe creation event, giving the app access to all properties, methods, and events of `CoreWebView2Frame` for the nested iframe.
+
+Use this API to manage iframe tracking on a page that contains multiple levels of iframes.  You can choose to track any of the following:
+
+* Only the main page and first-level iframes (the default behavior).
+* A partial WebView2 frames tree with specific iframes of interest.
+* The full WebView2 frames tree.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.framecreated?view=webview2-dotnet-1.0.3240.44&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.FrameCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.3240.44&preserve-view=true#framecreated)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2Frame7](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true)
+   * [ICoreWebView2Frame7::add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#add_framecreated)
+   * [ICoreWebView2Frame7::remove_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame7?view=webview2-1.0.3240.44&preserve-view=true#remove_framecreated)
+
+* [ICoreWebView2FrameChildFrameCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framechildframecreatedeventhandler?view=webview2-1.0.3240.44&preserve-view=true)<!-- win32 only -->
+
+---
 
 
 <!-- ------------------------------ -->
@@ -1963,17 +1918,14 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
+* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
 
-<!-- end of Release SDK 135 (Apr. 7, 2025) -->
+<!-- end of Release SDK 1.0.3240.44, for Runtime 136 (May 5, 2025) -->
 
 
-<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3230-prerelease
+## Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
 
 Release Date: Apr. 7, 2025, Runtime 136
 
@@ -2046,7 +1998,38 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 * Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
-<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
+<!-- end of Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025)
+
+Release Date: Apr. 7, 2025, Runtime 135
+
+[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+
+<!-- end of Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
