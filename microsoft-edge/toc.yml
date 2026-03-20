@@ -1445,6 +1445,12 @@
             - name: Archived release notes for the WebView2 SDK
               href: ./webview2/release-notes/archive.md
 
+            - name: Archived release notes 2 for the WebView2 SDK
+              href: ./webview2/release-notes/archive-2.md
+
+            - name: Archived release notes 3 for the WebView2 SDK
+              href: ./webview2/release-notes/archive-3.md
+
             - name: About release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md
 # -----------------------------------------------------------------------------
