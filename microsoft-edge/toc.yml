@@ -1463,17 +1463,21 @@
                 - name: Archived release notes for the WebView2 SDK
                   href: ./webview2/release-notes/archive.md
 
-                - name: 1.0.3171-prerelease
-                  href: ./webview2/release-notes/1.0.3171-prerelease.md
+                - name: Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025)
+-                  href: ./webview2/release-notes/1.0.3171-prerelease.md
+                  displayName: Release notes for Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025)  # page title
 
-                - name: 1.0.3124.44
+                - name: Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025)
                   href: ./webview2/release-notes/1.0.3124.44.md
+                  displayName: Release notes for Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025)  # page title
 
-                - name: 1.0.3116-prerelease
+                - name: Prerelease SDK 1.0.3116-prerelease, for Runtime 134 (Feb. 10, 2025)
                   href: ./webview2/release-notes/1.0.3116-prerelease.md
+                  displayName: Release notes for Prerelease SDK 1.0.3116-prerelease, for Runtime 134 (Feb. 10, 2025)  # page title
 
-                - name: 1.0.3079-prerelease
+                - name: Release notes for Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)
                   href: ./webview2/release-notes/1.0.3079-prerelease.md
+                  displayName: Release notes for Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)  # page title
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
