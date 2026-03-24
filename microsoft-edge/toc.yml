@@ -1442,11 +1442,38 @@
               href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Archived release notes for the WebView2 SDK
-              href: ./webview2/release-notes/archive.md
+            - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+              href: ./webview2/release-notes/1.0.3908-prerelease.md
+              displayName: Release notes for Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) # page title
 
-            - name: About release notes for the WebView2 SDK
-              href: ./webview2/release-notes/about.md
+            - name: Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+              href: ./webview2/release-notes/1.0.3856.49.md
+              displayName: Release notes for Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026) # page title
+
+            - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+              href: ./webview2/release-notes/1.0.3848-prerelease.md
+              displayName: Release notes for Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026) # page title
+
+            - name: Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
+              href: ./webview2/release-notes/1.0.3800.47.md
+              displayName: Release notes for Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026) # page title
+
+            - name: Archive
+              items:
+                - name: Archived release notes for the WebView2 SDK
+                  href: ./webview2/release-notes/archive.md
+
+                - name: 1.0.3171-prerelease
+                  href: ./webview2/release-notes/1.0.3171-prerelease.md
+
+                - name: 1.0.3124.44
+                  href: ./webview2/release-notes/1.0.3124.44.md
+
+                - name: 1.0.3116-prerelease
+                  href: ./webview2/release-notes/1.0.3116-prerelease.md
+
+                - name: 1.0.3079-prerelease
+                  href: ./webview2/release-notes/1.0.3079-prerelease.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:

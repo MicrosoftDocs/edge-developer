@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/18/2026
+ms.date: 03/24/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -27,327 +27,124 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 <!-- sequence of entries matches [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2/) -->
 
-
-<!-- ====================================================================== -->
-## Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
-
-Release Date: Mar. 16, 2026
-
-[NuGet package for WebView2 SDK 1.0.3908-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3908-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
-
-
-<!-- ---------- -->
-###### Manage persistent storage permissions for web content
-
-The `PersistentStorage` permission allows a WebView2 app to handle requests from web content to persist data that's created by Storage APIs, service workers, and related technologies.  The `PersistentStorage` permission is an enum member in the `CoreWebView2PermissionKind` enum.
-
-When this permission is granted, the browser doesn't evict stored data during low-disk-space scenarios.  This ensures reliable offline and caching behavior for the site.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3908-prerelease&preserve-view=true)
-   * `PersistentStorage`
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3908-prerelease&preserve-view=true)
-   * `PersistentStorage`
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3908-prerelease&preserve-view=true#corewebview2_permission_kind)
-   * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
-
-* Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
-
-* Disabled the domain actions component for WebView2.
-
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
-* Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
-
-* Fixed WebView2 transparency.
-
-* Fixed the API for setting the background color of the **Caption** control.
-
-<!-- end of Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) -->
+**Detailed contents:**
+<!-- todo -->
+* [About release notes for the WebView2 SDK](#about-release-notes-for-the-webview2-sdk)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+## About release notes for the WebView2 SDK
 
-Release Date: Mar. 16, 2026
+The WebView2 team updates the WebView2 Release SDK and the WebView2 Prerelease SDK on a four-week cadence.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
-[NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
+You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../concepts/overview-features-apis.md).
 
+Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
-<!-- end of Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026) -->
+See also:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+## Phases of adding APIs
 
-Release Date: Feb. 16, 2026
+New APIs are added in three phases, as follows:
 
-[NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
+<!-- apis are first promoted from Staging (Phase 0) to Experimental (Phase 1)  -->
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or higher.
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.  In Win32, the type name includes the word "Experimental".
 
+   * Sometimes, APIs skip the Experimental phase and are added directly into a Stable in Prerelease SDK.
 
-<!-- ------------------------------ -->
-#### Breaking changes
+1. Then the APIs become Stable APIs in a Prerelease SDK package.  In Win32, the type name omits the word "Experimental".
 
+1. Soon after, the APIs become Stable APIs in a Release SDK package.
 
-<!-- ---------- -->
-###### Enable WebView2-specific Javascript APIs for service workers
+   * Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
 
-The new `AreWebViewScriptApisEnabledForServiceWorkers` setting provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
+![Diagram of phases of introducing new APIs](./about-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
-This setting is disabled by default for WebView2 applications.  Apps that don't explicitly enable this setting won't have access to WebView2‑specific JavaScript APIs in service worker scripts.  As a result, service worker–based `chrome.webview.postMessage` communication with the WebView2 host application will not function unless the setting is enabled.
+Shorthand names of the phases:
 
-Going forward, WebView2 will rely on the `AreWebViewScriptApisEnabledForServiceWorkers` setting as the authoritative mechanism for enabling WebView2‑specific JavaScript APIs in service worker scripts.  This ensures predictable, secure, and deterministic behavior.
+1. Experimental in Prerelease
+1. Stable in Prerelease
+1. Stable in Release
 
-You can proactively validate your WebView2 app's behavior by enabling service worker JavaScript API exposure in your WebView2 app.
-To do so, configure your app to enable the following setting:
- 
-```
-AreWebViewScriptApisEnabledForServiceWorkers = true
-```
+Release notes sections use this wording for the phases:
 
-By testing your WebView2 app with this setting enabled, you can identify any workflows that depend on WebView2‑specific service worker APIs, such as `chrome.webview.postMessage` communication between service workers and the host application.
+* The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
-Currently, the `chrome` and `chrome.webview` objects are available to service worker scripts when using the `ServiceWorkerRegistered` event.  However, starting with the next release, the `AreWebViewScriptApisEnabledForServiceWorkers` setting will be the sole mechanism that determines whether these objects are exposed to service worker scripts.  Please test this setting before the next release, and report any issues you encounter.  For details, see [[Breaking Change] Enabling WebView2 specific JavaScript API's for Service Workers](https://github.com/MicrosoftEdge/WebView2Announcements/issues/127).
+* The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-See also [Control whether WebView Script APIs are enabled for service workers](#control-whether-webview-script-apis-are-enabled-for-service-workers), below.
+* The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
-##### [.NET/C#](#tab/dotnetcsharp)
+See also:
+* [Prerelease and Release SDKs for WebView2](../concepts/versioning.md#phases-of-introducing-apis)
+   * [Moving from Experimental APIs to Stable APIs](../concepts/versioning.md#moving-from-experimental-apis-to-stable-apis) in _Prerelease and Release SDKs for WebView2_.
+   * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 
-* `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-
-* `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
-
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
-
-* `CoreWebView2ServiceWorkerManager` Class:
-   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#serviceworkerregistered)
-
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
-
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
-  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
-
-* `ICoreWebView2ExperimentalServiceWorkerManager`
-   * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3848-prerelease&preserve-view=true#add_serviceworkerregistered)
-
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
-
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
-
----
-
-
-<!-- ---------- -->
-###### Local Network Access (LNA) in WebView2
-
-The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents web pages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
-
-LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
-
-After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-
-* [CoreWebView2PermissionKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#setpermissionstateasync)
-
-* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true)
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2Profile4`:
-   * [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.3848-prerelease&preserve-view=true#setpermissionstate)
-
-* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3848-prerelease&preserve-view=true#corewebview2_permission_kind)
-
-* [WebView.PermissionRequested Event](/uwp/api/windows.ui.xaml.controls.webview.permissionrequested) - UWP.
-
----
-
-You can proactively test the Local Network Access (LNA) feature in your WebView2 app.  To test your app with the LNA feature, launch your WebView2 app with the following flag:
-
-```
---enable-features=LocalNetworkAccessChecks,msWebViewAllowLocalNetworkAccessChecks
-```
-
-By testing your app when launched with this flag, you can then identify any workflows that might be affected by the LNA feature.
-
-After the LNA feature stabilizes, we'll share an updated timeline for enabling the LNA feature.  For details, see [[Breaking Change] Local Network Access (LNA) in WebView2 - Rollout Plan](https://github.com/MicrosoftEdge/WebView2Announcements/issues/126).
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### Control whether WebView Script APIs are enabled for service workers
-
-Use the `AreWebViewScriptApisEnabledForServiceWorkers` property on `CoreWebView2Profile` to control whether WebView Script APIs are enabled for service workers.
-
-See also [Enable WebView2-specific Javascript APIs for service workers](#enable-webview2-specific-javascript-apis-for-service-workers), above.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2Profile` Class
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalProfile15](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalProfile15::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
-  * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
-
----
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
-
-* Fixed a white flash that occurred when Windows Search became visible after being hidden.
-
-* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
-
-* Fixed WebView2 transparency.
-
-* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
-
-<!-- end of Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026) -->
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
+## Updating the Runtime and SDK
 
-Release Date: Feb. 16, 2026
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.  Starting with the Feb. 2023 release, the update requirement for each bug fix is indicated as follows:
 
-[NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
+| Indicator | Meaning |
+|---|---|
+| **Runtime and SDK**, or no indicator | Both the Runtime and the SDK need to be updated. |
+| **Runtime-only** | Only the Runtime needs to be updated. |
+| **SDK-only** | Only the SDK needs to be updated. |
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
 
+*  For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
 
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
+*  To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-This Release SDK includes the following bug fixes.
+*  To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 
-<!-- ---------- -->
-###### Runtime-only
+<!-- ====================================================================== -->
+## Recommended browser channel and Runtime
 
-* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
-* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+* Use the Canary preview channel of Microsoft Edge when you develop using a Prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
-* Fixed WebView2 transparency.
+* Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-<!-- end of Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026) -->
+For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
+
+
+<!-- ====================================================================== -->
+## Minimum version of the browser or Runtime to load WebView2
+
+To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
+
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+
+<!--
+Cross-framework API conventions
+
+Events:
+No EventHandler or CompletedHandler in .NET or WinRT.
+General event pattern:
+- Win32: add/remove_XYZ + XYZEventHandler
+- .NET/WinRT: XYZ event
+
+Async methods:
+- Win32: XYZ method + XYZCompletedHandler
+- .NET/WinRT: XYZAsync
+-->
 
 
 <!-- ====================================================================== -->
@@ -2035,6 +1832,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ====================================================================== -->
 ## See also
 
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 * [About release notes for the WebView2 SDK](./about.md)
 * [Archived release notes for the WebView2 SDK](./archive.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
