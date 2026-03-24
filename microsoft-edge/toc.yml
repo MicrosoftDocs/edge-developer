@@ -1464,7 +1464,7 @@
                   href: ./webview2/release-notes/archive.md
 
                 - name: Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025)
--                  href: ./webview2/release-notes/1.0.3171-prerelease.md
+                  href: ./webview2/release-notes/1.0.3171-prerelease.md
                   displayName: Release notes for Prerelease SDK 1.0.3171-prerelease, for Runtime 135 (Mar. 10, 2025)  # page title
 
                 - name: Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025)
