@@ -23,19 +23,21 @@ ms.date: 03/13/2026
    limitations under the License.  -->
 # Debug a Progressive Web App (PWA)
 
-Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.  The **Application** tool includes the following panes for PWA features:
+Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.
 
-*  Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
+The **Application** tool includes the following panes for PWA features:
 
-*  Use the **Service workers** pane for service-worker-related tasks, such as:
-   * Unregistering or updating a service.
-   * Emulating push events.
-   * Going offline.
-   * Stopping a service worker.
+* Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
 
-*  Use the **Cache Storage** pane to view your service worker cache.
+* Use the **Service workers** pane for service-worker-related tasks, such as:
+  * Unregistering or updating a service.
+  * Emulating push events.
+  * Going offline.
+  * Stopping a service worker.
 
-*  Use the **Storage** pane to unregister a service worker and clear all storage and caches.
+* Use the **Cache Storage** pane to view your service worker cache.
+
+* Use the **Storage** pane to unregister a service worker and clear all storage and caches.
 
 The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
 * [View the resource files that make up a webpage](../resources/index.md)
@@ -121,29 +123,35 @@ The **Service workers** pane in the **Application** tool is the main place in De
 
 ![The Service workers pane](./index-images/service-workers-pane.png)<!-- todo: latest ui has 'w' -->
 
-*  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
+* If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
-*  The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
+* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
 
-*  The **Update on reload** checkbox forces the service worker to update on every page load.
+* The **Update on reload** checkbox forces the service worker to update on every page load.
 
-*  The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
+* The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 
-*  The **Update** button performs a one-time update of the specified service worker.
+* The **Update** button performs a one-time update of the specified service worker.
 
-*  The **Push** button emulates a push notification without a payload (also known as a **tickle**).
+* The **Push** button emulates a push notification without a payload (also known as a **tickle**).
 
-*  The **Sync** button emulates a background sync event.
+* The **Sync** button emulates a background sync event.
 
-*  The **Unregister** button unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button click.
+* The **Unregister** button unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button click.
 
-*  The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
+* The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
-*  The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active service worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+* The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in the previous figure) is for the currently active service worker.
 
-*  The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
+  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
 
-If the service worker causes any errors, a new label called **Errors** shows up.
+  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+
+* The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
+
+* The **Update Cycle** section reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
+
+If the service worker causes any errors, a new label called **Errors** is displayed.
 
 <!--
 ![Service worker with errors](../media/sw-error.png)
@@ -151,6 +159,24 @@ If the service worker causes any errors, a new label called **Errors** shows up.
 
 <!--TODO:  Capture "Service Worker Errors" sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
+
+See also:
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
+
+
+<!-- ------------------------------ -->
+#### Display network requests handled by a service worker
+
+To display network requests handled by a service worker:
+<!-- todo: test -->
+
+1. In DevTools, select the **Application** tool.
+
+1. Select the **Service workers** pane.
+
+1. Click the **Network requests** button.
+
+   The **Network** tool opens, with a filter that only shows the requests that were handled by this service worker.
 
 
 <!-- ====================================================================== -->
@@ -207,79 +233,6 @@ Related Guides:
 
 * [Inspect page resources](/iterate/manage-data/page-resources)
 * [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
-
-
-<!-- ====================================================================== -->
-## Service worker update timeline
-
-<!-- todo: 
-The [Service worker update timeline] section:
-https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#service-worker-update-timeline
-will become a bullet point in 
-the list that describes the UI in 
-[Service workers](https://learn.microsoft.com/en-us/microsoft-edge/devtools/progressive-web-apps/#service-workers) in _Debug a Progressive Web App (PWA)_.
-At the end of the list, 
-after the bullet that says 
-"The Clients line tells you the ...", 
-add a list item that describes the Update Cycle section, eg:
-
-The **Update Cycle** section reflects the update lifecycle of the service worker.
-This timeline displays the installation and activation events.
-Each event has a corresponding dropdown arrow to display more details.
--->
-
-<!-- todo: 
-The [Request routing and fetch events] section:
-https://learn.microsoft.com/en-us/microsoft-edge/devtools/service-workers/#service-worker-update-timeline
-
-Should become a new h4 section at the end of [Service workers](https://learn.microsoft.com/en-us/microsoft-edge/devtools/progressive-web-apps/#service-workers) in _Debug a Progressive Web App (PWA)_, called eg [Display network requests handled by a service worker].
-
-This new section will describe how to
-click on the **Network requests** button that's in 
-the **Service workers** pane of the **Application** tool 
-to open the **Network** tool, 
-with a filter that only shows 
-the requests that were handled by this service worker.
--->
-
-The **Application** tool helps you work with service workers and the network requests that pass through each service worker.
-
-For example, the following tasks are supported:<!-- todo: how? where? -->
-
-* Debug based on service worker timelines.<!-- todo: how? where? -->
-    * The start of a request and duration of the bootstrap.
-    * Update to service worker registration.<!-- todo: how? where? -->
-    * The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
-    * The runtime of all fetch events for loading a client.
-* Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.<!-- todo: how? where? -->
-* Step into and out of fetch event handler with page script information, in the **Sources** tool.
-
-Features for working on service workers are in the following tools:
-
-* The **Network** tool:
-
-   * Select a network request that runs through a service worker and access the corresponding timeline of the service worker in the **Timing** tool<!-- todo: what is the Timing tool, how to nav to it, how to use it? --> within the **Network** tool.
-
-* The **Application** tool:
-
-   * To debug a service worker, use the **Service workers** page in the **Application** tool.
-
-* The **Sources** tool:
-
-   * Access page script information when stepping into fetch event handlers.
-
-
-<!-- ------------------------------ -->
-#### Timeline
-
-![Application view](./index-images/sw-application-timeline.png)
-
-A timeline in the **Application** tool reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.
-
-Each of the events have a corresponding dropdown arrow to give you more details.
-
-See also:
-* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
 
 
 <!-- ------------------------------ -->
