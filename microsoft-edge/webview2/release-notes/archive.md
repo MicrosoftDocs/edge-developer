@@ -23,41 +23,8 @@ if change h2 headings pattern, enter work item: update links in announcements
 The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs over one year old.
 
 
-<!-- Release SDK 135 (Apr. 7, 2025) -->
 <!-- ====================================================================== -->
-## 1.0.3179.45
-
-Release Date: Apr. 7, 2025, Runtime 135
-
-[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
-* Fixed navigation of `edge://crashes` within a WebView2 control.
-* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
-* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
-
-<!-- end of Release SDK 135 (Apr. 7, 2025) -->
-
-
-<!-- Prerelease SDK 136 (Apr. 7, 2025) -->
-<!-- ====================================================================== -->
-## 1.0.3230-prerelease
+## Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)0
 
 Release Date: Apr. 7, 2025, Runtime 136
 
@@ -134,13 +101,13 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 
 <!-- ====================================================================== -->
-## 1.0.3124.44<!-- Release SDK, for Runtime 134 (Mar. 10, 2025) -->
+## Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025)
 
-Release Date: Mar. 10, 2025, Runtime 134
+Release Date: Apr. 7, 2025, Runtime 135
 
-[NuGet package for WebView2 SDK 1.0.3124.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3124.44)
+[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 134.0.3124.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
 
 
 <!-- ------------------------------ -->
@@ -156,11 +123,12 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 <!-- ---------- -->
 ###### Runtime-only
 
-* Extensions won't get disabled in WebView2 by using `AddBrowserExtensionAsync`, regardless of whether developer mode is on.  ([Issue #5113](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5113))
-* Disabled background update of network time.  ([Issue #5047](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5047))
-* Fixed the download popup not being displayed when `target="_blank"`.  ([Issue #5063](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5063))
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-<!-- end of Release SDK 1.0.3124.44, for Runtime 134 (Mar. 10, 2025) -->
+<!-- end of Release SDK 135 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
