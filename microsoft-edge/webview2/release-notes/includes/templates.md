@@ -1,86 +1,7 @@
 <!-- ====================================================================== -->
-## Release SDK 1.0.3856.49, for Runtime 146<!-- Mar. 16, 2026 -->
+## Prerelease SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
 
-Release Date: Mar. 16, 2026
-
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
--->
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-There are no bug fixes in this Release SDK.
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed behavior.  ([Issue #]())
-
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Release SDK 146 (Mar. 16, 2026) -->
-
-
-<!-- ====================================================================== -->
-## Prerelease SDK 1.0.1234-prerelease, for Runtime 147<!-- Mar. 16, 2026 -->
-
-Release Date: Mar. 16, 2026
+Release Date: Mmm. dd, yyyy
 
 [NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
 <!-- todo: add rightmost part of url:
@@ -165,4 +86,83 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
-<!-- end of Prerelease SDK 147 (Mar. 16, 2026) -->
+<!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
+
+Release Date: Mmm. dd, yyyy
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
+<!-- todo: add rightmost part of url:
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+-->
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Release SDK 1.0.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy) -->
