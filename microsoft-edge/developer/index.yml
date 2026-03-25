@@ -87,7 +87,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Edge DevTools
-            url: ../devtools/whats-new/whats-new.md
+            url: ../devtools/whats-new/index.md
 
       - linkListType: how-to-guide
         links:
