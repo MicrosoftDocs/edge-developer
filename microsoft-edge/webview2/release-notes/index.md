@@ -196,8 +196,6 @@ This Release SDK includes the following bug fixes.
 <!-- end of Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026) -->
 
 
-
-
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
 

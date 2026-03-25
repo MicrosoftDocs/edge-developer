@@ -24,7 +24,7 @@ The following features and bug fixes are in the WebView2 Release SDK and Prerele
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)0
+## Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
 
 Release Date: Apr. 7, 2025, Runtime 136
 
@@ -97,7 +97,7 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 
 * Fixed **Tab**, **Shift+Tab**, and **Arrow** keys in Window to Visual hosting mode.
 
-<!-- end of Prerelease SDK 136 (Apr. 7, 2025) -->
+<!-- end of Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
@@ -128,7 +128,7 @@ No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
 * Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-<!-- end of Release SDK 135 (Apr. 7, 2025) -->
+<!-- end of Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
