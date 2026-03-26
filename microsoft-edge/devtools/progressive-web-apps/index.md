@@ -66,12 +66,26 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 <!--TODO: link to sections when available -->
 
-After you have your manifest set up, you can use the **App Manifest** pane of the **Application** tool to inspect your manifest:
+To inspect a manifest:
 
-![The Manifest Pane](./index-images/manifest-pane.png)
+1. Set up the manifest.
+
+1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com).
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Application** tool.
+
+1. In the outline on the left, in the **Application** section, select **Manifest**.
+
+   The **App Manifest** pane is displayed, where you can inspect the manifest:
+
+![The App Manifest Pane](./index-images/manifest-pane.png)
 
 The **App Manifest** pane contains the following sections:
-* Manifest link
+* Top section, containing the manifest link
 * **Identity**
 * **Presentation**
 * **Protocol Handlers**
@@ -80,15 +94,17 @@ The **App Manifest** pane contains the following sections:
 * **Screenshot #1**
 * **Screenshot #2**
 
-*  To look at the manifest source, click the link below the **App Manifest** label (`manifest.json` in the previous figure, which opens `https://airhorner.com/manifest.json`).
+* To look at the manifest source, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`, for [Airhorner.com](https://airhorner.com).
 <!-- *  Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 
-*  The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
+* The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
 
-*  The **Icons** section displays every icon that's been specified in the manifest.
+* The **Icons** section displays every icon that's been specified in the manifest.
 
 
-<!--#### Simulate Add to Homescreen events  -->
+<!-- ------------------------------ --
+#### Simulate Add to Homescreen events
+-->
 
 <!--A web app may only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, the criteria is potentially inconvenient.
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -112,35 +128,35 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--TODO: link to "remote debugging" sections when available -->
 
 
-<!--
+<!-- ------------------------------ --
 #### View and check maskable icons -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#icons -->
 
 <!-- todo -->
 
 
-<!--
+<!-- ------------------------------ --
 #### Trigger installation -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#trigger-installation -->
 
 <!-- todo -->
 
 
-<!--
+<!-- ------------------------------ --
 #### Inspect shortcuts -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#shortcut -->
 
 <!-- todo -->
 
 
-<!--
+<!-- ------------------------------ --
 #### Inspect screenshots for a richer installation UI -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#screenshot -->
 
 <!-- todo -->
 
 
-<!--
+<!-- ------------------------------ --
 #### Test URL protocol handler registration -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler -->
 
@@ -151,7 +167,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 ## Service workers
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#service-workers -->
 
-Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  These scripts enable you to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
+Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  Service worker scripts enable your app to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
 
 <!--Related Guides:
 
@@ -198,10 +214,7 @@ The **Service workers** pane in the **Application** tool is the main place in De
 
 * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
-* The **Update Cycle** section<!-- table --> reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
-<!-- upstream: todo:
-* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as install, wait, and activate.  To see the exact timestamp of each activity, click the **Expand** [png: triangle pointing right] buttons.
--->
+* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as install, wait, and activate.  To see the exact timestamp of each activity, click the **Expand** buttons.<!-- todo: png of the Expand triangle pointing right -->
 
 If the service worker causes any errors, an **Errors** label is displayed.
 
