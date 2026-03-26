@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/13/2026
+ms.date: 03/25/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,8 +22,14 @@ ms.date: 03/13/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Debug a Progressive Web App (PWA)
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
 
 Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.
+
+
+<!-- ====================================================================== -->
+<!-- ## Summary -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
 The **Application** tool includes the following panes for PWA features:
 
@@ -49,6 +55,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Web app manifest
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#manifest -->
 
 If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.
 
@@ -57,7 +64,7 @@ If you want your users to be able to add your app to their mobile homescreens, y
 * [Improve user experiences with a Web App Manifest](/web/fundamentals/web-app-manifest)
 * [Using App Install Banners](/web/fundamentals/app-install-banners)  -->
 
-<!--TODO:  Link to sections when available. -->
+<!--TODO: link to sections when available -->
 
 After you have your manifest set up, you can use the **App Manifest** pane of the **Application** tool to inspect your manifest:
 
@@ -98,15 +105,51 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
-<!-- TODO: Rework content after sample app is created. -->
+<!-- TODO: rework content after sample app is created -->
 
 <!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
-<!--TODO:  Link Debug "remote debugging" sections when available. -->
+<!--TODO: link to "remote debugging" sections when available -->
+
+
+<!--
+#### View and check maskable icons -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#icons -->
+
+<!-- todo -->
+
+
+<!--
+#### Trigger installation -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#trigger-installation -->
+
+<!-- todo -->
+
+
+<!--
+#### Inspect shortcuts -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#shortcut -->
+
+<!-- todo -->
+
+
+<!--
+#### Inspect screenshots for a richer installation UI -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#screenshot -->
+
+<!-- todo -->
+
+
+<!--
+#### Test URL protocol handler registration -->
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler -->
+
+<!-- todo -->
 
 
 <!-- ====================================================================== -->
 ## Service workers
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#service-workers -->
 
 Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  These scripts enable you to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
 
@@ -117,7 +160,7 @@ Service workers are a fundamental technology in the web platform.  Service worke
 
 <!-- [How Push Works](/web/fundamentals/push-notifications/how-push-works) -->
 
-<!--TODO:  Link to sections when available. -->
+<!--TODO: link to sections when available -->
 
 The **Service workers** pane in the **Application** tool is the main place in DevTools to inspect and debug service workers:
 
@@ -131,56 +174,77 @@ The **Service workers** pane in the **Application** tool is the main place in De
 
 * The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 
+* The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).
+
 * The **Update** button performs a one-time update of the specified service worker.
 
-* The **Push** button emulates a push notification without a payload (also known as a **tickle**).
+* The **Push** button emulates a push notification without a payload (also known as a _tickle_).
 
 * The **Sync** button emulates a background sync event.
 
-* The **Unregister** button unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button click.
+* The **Unregister** link unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button-click.
 
 * The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
 * The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in the previous figure) is for the currently active service worker.
 
-  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
+  Next to the status:
+  * If the service worker is stopped, a **start** button is displayed.
+  * If the service worker is running, a **stop** button is displayed.
+
+  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
 
   Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
 
 * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
-* The **Update Cycle** section reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
+* The **Update Cycle** section<!-- table --> reflects the update lifecycle of the service worker.  This timeline displays the installation and activation events.  Each of the events have a corresponding dropdown arrow to give you more details.
+<!-- upstream: todo:
+* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as install, wait, and activate.  To see the exact timestamp of each activity, click the **Expand** [png: triangle pointing right] buttons.
+-->
 
-If the service worker causes any errors, a new label called **Errors** is displayed.
+If the service worker causes any errors, an **Errors** label is displayed.
 
 <!--
 ![Service worker with errors](../media/sw-error.png)
 -->
 
-<!--TODO:  Capture "Service Worker Errors" sample when available. -->
-<!--TODO:  Link Web "How tickle works" sections when available. -->
+<!--TODO: capture "Service Worker Errors" sample when available -->
+
+<!--TODO: link Web "How tickle works" sections when available -->
 
 See also:
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
 
 
-<!-- ------------------------------ -->
-#### Display network requests handled by a service worker
+<!-- ====================================================================== -->
+## Display network requests handled by a service worker
+<!-- not in upstream -->
+
+You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
 
 To display network requests handled by a service worker:
-<!-- todo: test -->
 
 1. In DevTools, select the **Application** tool.
+
+1. Open a service worker.
 
 1. Select the **Service workers** pane.
 
 1. Click the **Network requests** button.
 
-   The **Network** tool opens, with a filter that only shows the requests that were handled by this service worker.
+   The **Network** tool opens, displaying the **Timing** tab.
+
+   The **Filter** text box contains `is:service-worker-intercepted`.  This filter only shows the requests that were handled by this service worker, showing information about request routing.
+
+   This filter displays the network requests that went through the service worker that you are debugging.
+
+1. Use the **respondWith** dropdown arrows for fetch event request and response information.
 
 
 <!-- ====================================================================== -->
 ## Service worker caches
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#caches -->
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache):
 
@@ -193,66 +257,51 @@ All open caches are listed under the **Cache Storage** expander.
 
 <!-- ====================================================================== -->
 ## Quota usage
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#opaque-responses -->
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  This refers to a response retrieved from a different origin, like from a **CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) isn't enabled.
 
-<!--TODO:  Link Web "CDN" section when available. -->
-<!--TODO:  Link Web "opaque" section when available. -->
+<!--TODO: link Web "CDN" section when available -->
+
+<!--TODO: link Web "opaque" section when available -->
 
 In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
 
-<!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
+<!--TODO: link Estimating "`navigator.storage` API" sections when available -->
 <!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
 
 The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17).  Remember the padding when determining how many opaque responses you want to cache, since you may easily exceed storage quota limitations much sooner than you otherwise expect based on the actual size of the opaque resources.
 
 Related Guides:
-
 * [Stack Overflow: What limitations apply to opaque responses?](https://stackoverflow.com/q/39109789/385997)
-<!--* [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
+<!--
+* [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)
+-->
 
-<!--TODO:  Link Work container storage quota for opaque responses section when available. -->
+<!--TODO: link Work container storage quota for opaque responses section when available -->
 
 
 <!-- ====================================================================== -->
-## Storage
+## Clear storage
+<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
 
-The **Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
+The **Clear Storage** tab is a useful feature when developing progressive web apps.  The **Clear Storage** pane lets you unregister service workers and clear all caches and storage with a single button-click.
 
-<!--Related Guides:
 
-* [Clear Storage](/iterate/manage-data/local-storage#clear-storage)  -->
+<!-- ====================================================================== --
+## Other Application tool guides
+<!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other --
 
-<!--TODO:  Link to sections when available. -->
-
-<!--## Other Application panel guides
-
-Check out the guides below for more help on the other panes of the **Application** tool.
-
-Related Guides:
-
+For the other panes of the **Application** tool, see:
 * [Inspect page resources](/iterate/manage-data/page-resources)
-* [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
+* [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)
+<!--TODO: link to sections when available -->
 
 
-<!-- ------------------------------ -->
-#### Request routing and fetch events
+<!-- ====================================================================== -->
+## See also
+<!-- not in upstream -->
 
-You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
-
-To access the service worker timelines:
-
-1. Open a service worker.
-
-1. Click the **Network requests** button, in the **Application** tool.
-
-   The **Timing** tab opens within the **Network** tool, showing information about request routing, filtering on `is:service-worker-intercepted` in the **Filter** text box.
-
-1. Use the **respondWith** dropdown arrows for fetch event request and response information.
-
-The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
-
-See also:
 * [Inspect network activity](./index.md)
 
 
