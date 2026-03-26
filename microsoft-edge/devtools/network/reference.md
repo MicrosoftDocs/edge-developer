@@ -26,7 +26,9 @@ ms.date: 03/25/2026
 
 <!-- for each png, decide whether to create screenshot -->
 
-The **Network** tool has the following features, to inspect network activity for a webpage.  For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](./index.md).
+The **Network** tool has the following features, to inspect network activity for a webpage.
+
+For a step-by-step walkthrough and introduction to the **Network** tool, see [Inspect network activity](./index.md).
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
@@ -1448,7 +1450,7 @@ To display the timing breakdown of a service worker request:
 
    ![The fully expanded respondWith section](./reference-images/respondwith-expanded-fully.png)
 
-1. Click the expander arrow on **Response Received**.
+1. On **Response Received**, click the expander arrow.
 
 
 <!-- ------------------------------ -->
