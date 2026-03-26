@@ -182,7 +182,7 @@ The **Service workers** pane in the **Application** tool is the main place in De
 
 * The **Sync** button emulates a background sync event.
 
-* The **Unregister** link unregisters the specified service worker.  Check out [Storage](#storage) for a way to unregister a service worker and wipe storage and caches with a single button-click.
+* The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage](#clear-storage), below.
 
 * The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
@@ -285,7 +285,7 @@ Related Guides:
 ## Clear storage
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
 
-The **Clear Storage** tab is a useful feature when developing progressive web apps.  The **Clear Storage** pane lets you unregister service workers and clear all caches and storage with a single button-click.
+The **Clear Storage** tab is useful when developing a progressive web app.  Use the **Clear Storage** pane to unregister service workers and clear all caches and storage, with a single button-click.
 
 
 <!-- ====================================================================== --
