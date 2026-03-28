@@ -31,7 +31,7 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 <!-- ## Summary -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
-The **Application** tool includes the following panes for PWA features:
+The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes for PWA features:
 
 * Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
 
@@ -76,7 +76,7 @@ To inspect a manifest:
 
    DevTools opens.
 
-1. In DevTools, select the **Application** tool.
+1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
 1. In the outline on the left, in the **Application** section, select **Manifest**.
 
@@ -178,13 +178,13 @@ Service workers are a fundamental technology in the web platform.  Service worke
 
 <!--TODO: link to sections when available -->
 
-The **Service workers** pane in the **Application** tool is the main place in DevTools to inspect and debug service workers:
+The **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool is the main place in DevTools to inspect and debug service workers:
 
 ![The Service workers pane](./index-images/service-workers-pane.png)<!-- todo: latest ui has 'w' -->
 
 * If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
-* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
+* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the ![Network icon](./index-images/network-icon.png) **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
 
 * The **Update on reload** checkbox forces the service worker to update on every page load.
 
@@ -234,25 +234,29 @@ See also:
 ## Display network requests handled by a service worker
 <!-- not in upstream -->
 
-You can access service worker timelines through the **Network** tool.  This feature benefits performance, minimizes UI duplication, and creates a comprehensive debugging experience.
+From the **Service Workers** pane of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
 
-To display network requests handled by a service worker:
+To display the network requests that are handled by a service worker:
 
-1. In DevTools, select the **Application** tool.
+1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
-1. Open a service worker.
+1. In the outline on the left, in the **Application** section, select **Service workers**.
 
-1. Select the **Service workers** pane.
+   The **Service workers** pane is displayed.
 
-1. Click the **Network requests** button.
+1. In the upper right of the **Service workers** pane, click the **Network requests** button.
 
-   The **Network** tool opens, displaying the **Timing** tab.
+   The ![Network icon](./index-images/network-icon.png) **Network** tool opens.
 
-   The **Filter** text box contains `is:service-worker-intercepted`.  This filter only shows the requests that were handled by this service worker, showing information about request routing.
+   The **Filter** text box contains `is:service-worker-intercepted`.  This filter only displays the requests that were handled by this service worker.
 
-   This filter displays the network requests that went through the service worker that you are debugging.
+1. Select one of the requests, such as **main.css**.
 
-1. Use the **respondWith** dropdown arrows for fetch event request and response information.
+   The sidebar appears.
+
+1. In the sidebar, click the **Timing** tab.
+
+   The **Service Worker** section displays timing information about the **Startup** and **respondWith** phases.
 
 
 <!-- ====================================================================== -->
@@ -305,7 +309,7 @@ The **Clear Storage** tab is useful when developing a progressive web app.  Use 
 ## Other Application tool guides
 <!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other --
 
-For the other panes of the **Application** tool, see:
+For the other panes of the ![Application icon](./index-images/application-icon.png) **Application** tool, see:
 * [Inspect page resources](/iterate/manage-data/page-resources)
 * [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)
 <!--TODO: link to sections when available -->
