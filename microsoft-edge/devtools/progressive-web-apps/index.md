@@ -33,7 +33,7 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 
 The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes for PWA features:
 
-* Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
+* Use the **Manifest** pane to inspect your web app manifest.
 
 * Use the **Service workers** pane for service-worker-related tasks, such as:
   * Unregistering or updating a service.
@@ -43,7 +43,7 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
 
 * Use the **Cache Storage** pane to view your service worker cache.
 
-* Use the **Storage** pane to unregister a service worker and clear all storage and caches.
+* Use the **Storage** pane to view how much data your app is storing on the device, and clear the stored data.
 
 The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
 * [View the resource files that make up a webpage](../resources/index.md)
@@ -70,7 +70,7 @@ To inspect a manifest:
 
 1. Set up the manifest.
 
-1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com).
+1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -94,7 +94,7 @@ The **App Manifest** pane contains the following sections:
 * **Screenshot #1**
 * **Screenshot #2**
 
-* To look at the manifest source, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`, for [Airhorner.com](https://airhorner.com).
+* To look at the manifest source, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`<!-- todo: PWAmp -->, for [Airhorner.com](https://airhorner.com).
 <!-- *  Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 
 * The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
@@ -178,11 +178,25 @@ Service workers are a fundamental technology in the web platform.  Service worke
 
 <!--TODO: link to sections when available -->
 
-The **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool is the main place in DevTools to inspect and debug service workers:
+The main place in DevTools to inspect and debug service workers is the **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool.
+
+To view service workers:
+
+1. Go to a webpage, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+
+1. In the outline on the left, in the **Application** section, select **Service workers**.
+
+   The **Service workers** pane is displayed:
 
 ![The Service workers pane](./index-images/service-workers-pane.png)<!-- todo: latest ui has 'w' -->
 
-* If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
+* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.<!-- todo: update when use PWAmp instead of Airhorner -->
 
 * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the ![Network icon](./index-images/network-icon.png) **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
 
@@ -190,7 +204,7 @@ The **Service workers** pane in the ![Application icon](./index-images/applicati
 
 * The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 
-* The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).
+* The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).  See [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker), below.
 
 * The **Update** button performs a one-time update of the specified service worker.
 
@@ -214,7 +228,7 @@ The **Service workers** pane in the ![Application icon](./index-images/applicati
 
 * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
-* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as install, wait, and activate.  To see the exact timestamp of each activity, click the **Expand** buttons.<!-- todo: png of the Expand triangle pointing right -->
+* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as **Install**, **Wait**, and **Activate**.  To see the exact timestamp of each activity, click the **Expand** (![Expander triangle](./index-images/expander-icon.png)) buttons.
 
 If the service worker causes any errors, an **Errors** label is displayed.
 
@@ -234,9 +248,15 @@ See also:
 ## Display network requests handled by a service worker
 <!-- not in upstream -->
 
-From the **Service Workers** pane of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
+From the **Service workers** pane of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
 
 To display the network requests that are handled by a service worker:
+
+1. Go to a webpage, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
 
 1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
@@ -249,6 +269,8 @@ To display the network requests that are handled by a service worker:
    The ![Network icon](./index-images/network-icon.png) **Network** tool opens.
 
    The **Filter** text box contains `is:service-worker-intercepted`.  This filter only displays the requests that were handled by this service worker.
+
+1. Refresh the webpage.
 
 1. Select one of the requests, such as **main.css**.
 

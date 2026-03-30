@@ -1387,9 +1387,9 @@ Each of these phases may appear in the **Timing** tab:
 
 * **Stalled**. The request could be stalled for any of the reasons described in **Queueing**.
 
-* **Startup**.<!-- todo: define -->
+* **Startup**.  When the request is handled by a service worker, **Startup** is the time it took for the service worker to start.
 
-* **respondWith**.<!-- todo: define and say can expand section (png is below) -->
+* **respondWith**.  When the request is handled by a service worker, **respondWith** is the time that it took for the service worker to run the `fetchEvent.respondWith()` callback.
 
 * **DNS Lookup**. The browser is resolving the IP address for the request.
 
