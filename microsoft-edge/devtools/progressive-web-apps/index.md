@@ -94,7 +94,7 @@ The **App Manifest** pane contains the following sections:
 * **Screenshot #1**
 * **Screenshot #2**
 
-* To look at the manifest source, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`<!-- todo: PWAmp -->, for [Airhorner.com](https://airhorner.com).
+* To view the manifest source file, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`<!-- todo: PWAmp -->, for [Airhorner.com](https://airhorner.com).
 <!-- *  Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 
 * The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
