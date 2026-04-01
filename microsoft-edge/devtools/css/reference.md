@@ -293,8 +293,7 @@ Pending.
 #### Toggle a pseudo-class
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#pseudo-class -->
 
-To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
-<!-- :focus-within, :focus-visible, :target. -->
+To toggle a pseudo-class:
 
 1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
@@ -304,7 +303,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
 1. Select the **Elements** tool.
 
-1. Select an element.  For example, todo: give 1 specific way.
+1. Select an element.
 
    Or:
 
@@ -322,20 +321,25 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
 1. Click **:hov**.
 
-1. Select the pseudo-class that you want to enable.
-
-   The following figure shows toggling the `:hover` pseudo-class.  In the viewport, the `background-color: cornflowerblue` declaration is applied to the element, even though the element isn't actually being hovered over.
+1. Select the pseudo-class that you want to enable, such as the `:hover` pseudo-class:
 
    ![Toggle the :hover pseudo-class](./reference-images/css-elements-styles-hov-hover.png)<!-- todo: what page url is this?  to support Maintainability -->
 
+   In the rendered webpage above, the `background-color: cornflowerblue` declaration is applied to the element, even though the element isn't actually being hovered over.
 
-<!-- todo: incoming: ~~ -->
+The **Styles** tab shows the following pseudo-classes for all elements:
+* [`:active`](https://developer.mozilla.org/docs/Web/CSS/:active) - MDN.
+* [`:focus`](https://developer.mozilla.org/docs/Web/CSS/:focus)
+* [`:focus-within`](https://developer.mozilla.org/docs/Web/CSS/:focus-within)
+* [`:target`](https://developer.mozilla.org/docs/Web/CSS/:target)
+* [`:hover`](https://developer.mozilla.org/docs/Web/CSS/:hover)
+* [`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible)
 
-**Elements** tool > **Styles** tab > **Force specific element state** expander > **:read-write**  checkbox.
+Additionally, some elements may have their own pseudo-classes.  When you select such an element, the **Styles** tab shows a **Force specific element state** section that you can expand and turn on pseudo-classes that are specific to the element, such as a **:read-write**  checkbox:
 
+![The `Force specific element state` section of a 'textarea' element](./reference-images/specific-pseudo-classes.png)
 
-<!-- todo: expand section content per upstream eg "Additionally, some elements may have their own pseudo-classes. " & the png that shows the expanded section -->
-
+The above screenshot uses the [Animated CSS Property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/).
 
 For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
