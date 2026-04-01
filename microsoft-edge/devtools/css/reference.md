@@ -23,14 +23,18 @@ ms.date: 11/04/2025
    limitations under the License.  -->
 # CSS features reference
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
-<!-- todo: sync -->
+
+<!-- todo:
+sync outline including presence & level
+sync content in sections
+-->
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
 To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
 
-**Detailed contents:**
-<!-- https://github.com/captainbrosset/WebToc -->
+**Detailed contents:**<!-- https://github.com/captainbrosset/WebToc -->
+<!-- todo: update -->
 * [Select an element](#select-an-element)
 * [View the external stylesheet where a rule is defined](#view-the-external-stylesheet-where-a-rule-is-defined)
 * [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element)
@@ -82,7 +86,49 @@ There are many ways to select an element:
 
 
 <!-- ====================================================================== -->
-## View the external stylesheet where a rule is defined
+## View CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#view -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Navigate with links
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#links -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View tooltips with CSS documentation, specificity, and custom property values
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#tooltips -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View CSS documentation
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#view-docs -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View selector specificity
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#selector-specificity -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View the values of custom properties
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-css -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View the external stylesheet where a rule is defined
 <!-- not upstream -->
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
@@ -96,8 +142,15 @@ In the following figure, after you click
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 
 
-<!-- ====================================================================== -->
-## View only the CSS that is actually applied to an element
+<!-- ------------------------------ -->
+#### View invalid, overridden, inactive, and other CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#css-issues -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View only the CSS that is actually applied to an element
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#computed -->
 
 The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
@@ -117,22 +170,64 @@ The **Styles** pane shows you all of the rules that apply to an element, includi
    ![The Computed panel](./reference-images/css-elements-computed-h1.png)
 
 
-<!-- ====================================================================== -->
-## View CSS properties in alphabetical order
+<!-- ------------------------------ -->
+#### View CSS properties in alphabetical order
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#alphabetical -->
 
 Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
-<!-- ====================================================================== -->
-## View inherited CSS properties
+<!-- ------------------------------ -->
+#### View inherited CSS properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#inherited -->
 
 Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
 
 
-<!-- ====================================================================== -->
-## View an element's box model
+<!-- ------------------------------ -->
+#### View CSS at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#at-rules -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View @property at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#property -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View @supports at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#supports -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View @scope at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#scope -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View @font-palette-values at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#font-palette-values -->
+
+Pending.
+
+
+<!-- ---------- -->
+###### View @position-try at-rules
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View an element's box model
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#box-model -->
 
 To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
@@ -144,9 +239,9 @@ In the following figure, the **Box Model** diagram in the **Styles** pane shows 
 ![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
 
 
-<!-- ====================================================================== -->
-## Search and filter the CSS of an element
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+<!-- ------------------------------ -->
+#### Search and filter the CSS of an element
+<!-- Search and filter an element's CSS  https://developer.chrome.com/docs/devtools/css/reference/#filter -->
 
 Use the **Filter** text box on the **Styles** and **Computed** panes to search for specific CSS properties or values.
 
@@ -161,8 +256,15 @@ In the following figure, the **Computed** pane is filtered to only show declarat
 ![Filter the Computed panel](./reference-images/css-elements-computed-filter-100.png)
 
 
-<!-- ====================================================================== -->
-## Toggle a pseudo-class
+<!-- ------------------------------ -->
+#### Emulate a focused page
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#focus -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Toggle a pseudo-class
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#pseudo-class -->
 
 To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
@@ -200,16 +302,34 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
    ![Toggle the :hover pseudo-class](./reference-images/css-elements-styles-hov-hover.png)<!-- todo: what page url is this?  to support Maintainability -->
 
-todo: incoming: 
+
+<!-- todo: incoming: ~~ -->
 
 **Elements** tool > **Styles** tab > **Force specific element state** expander > **:read-write**  checkbox.
+
+
+<!-- todo: expand section content per upstream eg "Additionally, some elements may have their own pseudo-classes. " & the png that shows the expanded section -->
 
 
 For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 
-<!-- ====================================================================== -->
-## View a page in print mode
+<!-- ------------------------------ -->
+#### View inherited highlight pseudo-elements
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View cascade layers
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#cascade-layers -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### View a page in print mode
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#print-mode -->
 
 To view a page in print mode:
@@ -221,8 +341,8 @@ To view a page in print mode:
 1. Click the **Emulate CSS Media** dropdown list, and then select **print**.
 
 
-<!-- ====================================================================== -->
-## View used and unused CSS with the Coverage tool
+<!-- ------------------------------ -->
+#### View used and unused CSS with the Coverage tool
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#coverage -->
 
 The **Coverage** tool shows you what CSS a page actually uses.
@@ -250,28 +370,37 @@ The **Coverage** tool shows you what CSS a page actually uses.
    ![A line-by-line breakdown of used and unused CSS](./reference-images/css-sources-css-coverage.png)
 
 
-<!-- ====================================================================== -->
-## Force print preview mode
+<!-- ------------------------------ -->
+#### Force print preview mode
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#print - links to https://developer.chrome.com/docs/devtools/css/print-preview -->
 
 See [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 
 <!-- ====================================================================== -->
-<!-- ## Change CSS -->
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#change -->
+## Copy CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css -->
+
+Pending.
 
 
 <!-- ====================================================================== -->
-## Two ways to add a CSS declaration to an element
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#add-declaration -->
+## Change CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#change -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Two ways to add a CSS declaration to an element
+<!-- Add a CSS declaration to an element  https://developer.chrome.com/docs/devtools/css/reference/#add-declaration -->
 
 The order of declarations affects how an element is styled.  You can add declarations either by adding an inline declaration, or by adding a declaration to a style rule.  These two approaches are described in the following sections.
 
 
-<!-- ====================================================================== -->
-## Adding an inline CSS declaration to an element
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#add-declaration-inline -->
+<!-- ---------- -->
+###### Adding an inline CSS declaration to an element
+<!-- Add an inline declaration  https://developer.chrome.com/docs/devtools/css/reference/#add-declaration-inline -->
 
 Adding a inline declaration is equivalent to adding a `style` attribute to the HTML of an element.  For most scenarios, you probably want to use inline declarations.
 
@@ -294,9 +423,9 @@ In the following figure, the `margin-top` and `background-color` properties have
 ![Add inline declarations](./reference-images/css-elements-styles-margin-top-background-color.png)
 
 
-<!-- ====================================================================== -->
-## Adding a CSS declaration to an existing style rule
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#add-declaration-to-rule -->
+<!-- ---------- -->
+###### Adding a CSS declaration to an existing style rule
+<!-- Add a declaration to a style rule  https://developer.chrome.com/docs/devtools/css/reference/#add-declaration-to-rule -->
 
 If you're debugging an element's styles and you need to specifically test what happens when a declaration is defined in different places, add a declaration to an existing style rule.
 
@@ -313,8 +442,8 @@ To add a declaration to an existing style rule:
 ![Adding a declaration to a style rule](./reference-images/css-elements-styles-border-bottom-style.png)
 
 
-<!-- ====================================================================== -->
-## Change a declaration name or value
+<!-- ------------------------------ -->
+#### Change a declaration name or value
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-declaration -->
 
 To change the name of a CSS declaration, double-click the declaration's name.
@@ -326,8 +455,22 @@ To change the value of a CSS declaration, double-click the declaration's value. 
 To change a numerical value, type in the value, or use the arrow keys, per the next section.
 
 
-<!-- ====================================================================== -->
-## Increment numerical declaration values
+<!-- ------------------------------ -->
+#### Change enumerable values with keyboard shortcuts
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#values-shortcuts -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Change length values
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Increment numerical declaration values
 <!-- not upstream -->
 
 To change a numerical value of a CSS declaration, type in the value, or use the arrow keys to increment the value by a specific amount:
@@ -342,8 +485,8 @@ To change a numerical value of a CSS declaration, type in the value, or use the 
 To decrement, press the **Down Arrow** (or **Page Down**) key instead of the **Up Arrow** (or **Page Up**) key.
 
 
-<!-- ====================================================================== -->
-## Add a class to an element
+<!-- ------------------------------ -->
+#### Add a class to an element
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#add-class -->
 
 To add a class to an element:
@@ -359,8 +502,14 @@ To add a class to an element:
    ![The Element Classes pane](./reference-images/css-elements-styles-filter-classes.png)
 
 
-<!-- ====================================================================== -->
-## Toggle a class
+<!-- ------------------------------ -->
+#### Emulate light and dark theme preferences and enable automatic dark mode
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Toggle a class
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#toggle-class -->
 
 To enable or disable a class on an element:
@@ -372,8 +521,8 @@ To enable or disable a class on an element:
 1. Toggle the checkbox next to the class that you want to enable or disable.
 
 
-<!-- ====================================================================== -->
-## Add a style rule
+<!-- ------------------------------ -->
+#### Add a style rule
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#style-rule -->
 
 To add a new style rule:
@@ -387,9 +536,9 @@ To add a new style rule:
    ![Add a new style rule](./reference-images/css-elements-styles-style-new.png)
 
 
-<!-- ------------------------------ -->
-#### Select a stylesheet to add a rule to
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#style-rule-stylesheet -->
+<!-- ---------- -->
+###### Select a stylesheet to add a rule to
+<!-- Choose which style sheet to add a rule to  https://developer.chrome.com/docs/devtools/css/reference/#style-rule-stylesheet -->
 
 By default, when adding a style rule, DevTools creates a new stylesheet named `inspector-stylesheet` in the document and then adds the new style rule in this stylesheet.
 
@@ -400,9 +549,9 @@ To instead add the rule in an existing stylesheet:
 ![Selecting a stylesheet](./reference-images/css-elements-styles-style-new-select-existing.png)
 
 
-<!-- ------------------------------ -->
-#### Add a style rule to a specific location
-<!-- not upstream -->
+<!-- ---------- -->
+###### Add a style rule to a specific location
+<!-- not upstream - todo: merge w/ above section? -->
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
@@ -415,8 +564,8 @@ To add a style rule in a specific location of the **Styles** pane instead:
 ![Insert Style Rule Below](./reference-images/css-elements-styles-insert-style-rule-below.png)
 
 
-<!-- ====================================================================== -->
-## Toggle a declaration
+<!-- ------------------------------ -->
+#### Toggle a declaration
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#toggle-declaration -->
 
 To toggle a single declaration on or off:
@@ -432,9 +581,24 @@ To toggle a single declaration on or off:
    ![Toggle a declaration](./reference-images/css-elements-styles-rule-deactivated.png)
 
 
-<!-- ====================================================================== -->
-## Change colors with the Color Picker
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#color-picker but now links to https://developer.chrome.com/docs/devtools/css/color -->
+<!-- ------------------------------ -->
+#### Edit the ::view-transition pseudo-elements during an animation
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#view-transition -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Align grid items and their content with the Grid Editor
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#grid-editor -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Change colors with the Color Picker
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#color-picker -->
+<!-- todo: replace content by a link to https://developer.chrome.com/docs/devtools/css/color -->
 
 The **Color Picker** provides a user interface for changing `color` and `background-color` declarations.
 
@@ -489,8 +653,8 @@ See also:
 * [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 
-<!-- ====================================================================== -->
-## Change angle value with the Angle Clock
+<!-- ------------------------------ -->
+#### Change angle value with the Angle Clock
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#angle-clock -->
 
 The **Angle Clock** provides a user interface for changing the angle amounts in CSS property values.
@@ -512,8 +676,8 @@ To open the **Angle Clock**:
 There are more keyboard shortcuts to change the angle value.  Find out more in the [Styles pane keyboard shortcuts](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
 
 
-<!-- ====================================================================== -->
-## Change box and text shadows with the Shadow Editor
+<!-- ------------------------------ -->
+#### Change box and text shadows with the Shadow Editor
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#shadow-editor -->
 
 Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shadow` CSS property on an HTML element:
@@ -547,8 +711,8 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
    ![The effect of changes made in the Shadow Editor](./reference-images/shadow-editor-changes.png)
 
 
-<!-- ====================================================================== -->
-## Edit animation and transition timings with the Easing Editor
+<!-- ------------------------------ -->
+#### Edit animation and transition timings with the Easing Editor
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#edit-easing -->
 
 Use the **Easing Editor** to change the value of the [animation-timing-function](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function) or [transition-timing-function](https://developer.mozilla.org/docs/Web/CSS/transition-timing-function) property on an HTML element:
@@ -573,6 +737,27 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
    The changes are applied to the element in the rendered webpage in real time:
 
    ![The effect of changes made in the Easing Editor](./reference-images/easing-editor-changes.png)
+
+
+<!-- ------------------------------ -->
+#### Use presets to adjust timings
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#presets -->
+
+Pending.
+
+
+<!-- ------------------------------ -->
+#### Configure custom timings
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-timings -->
+
+Pending.
+
+
+<!-- ====================================================================== -->
+## (Experimental) Copy CSS changes
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
+
+Pending.
 
 
 <!-- ====================================================================== -->
