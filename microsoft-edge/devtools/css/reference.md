@@ -34,6 +34,7 @@ Discover new workflows in the following comprehensive reference of Microsoft Edg
 To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
 
 **Detailed contents:**<!-- https://github.com/captainbrosset/WebToc -->
+<!-- todo: update -->
 * [Select an element](#select-an-element)
 * [View CSS](#view-css)
    * [Navigate with links](#navigate-with-links)
@@ -115,42 +116,32 @@ There are many ways to select an element:
 ## View CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view -->
 
-Pending.
+Use the **Elements** > **Styles** and **Computed** tabs to view CSS rules and diagnose CSS issues.
 
 
 <!-- ------------------------------ -->
-#### Navigate with links
+<!-- #### Navigate with links -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#links -->
 
-Pending.
-
 
 <!-- ------------------------------ -->
-#### View tooltips with CSS documentation, specificity, and custom property values
+<!-- #### View tooltips with CSS documentation, specificity, and custom property values -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#tooltips -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View CSS documentation
+<!-- ###### View CSS documentation -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-docs -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View selector specificity
+<!-- ###### View selector specificity -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#selector-specificity -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View the values of custom properties
+<!-- ###### View the values of custom properties -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-css -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -169,10 +160,8 @@ In the following figure, after you click
 
 
 <!-- ------------------------------ -->
-#### View invalid, overridden, inactive, and other CSS
+<!-- #### View invalid, overridden, inactive, and other CSS -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#css-issues -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -211,45 +200,33 @@ Check the **Show All** checkbox in the **Computed** pane.  See [View only the CS
 
 
 <!-- ------------------------------ -->
-#### View CSS at-rules
+<!-- #### View CSS at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#at-rules -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View @property at-rules
+<!-- ###### View @property at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#property -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View @supports at-rules
+<!-- ###### View @supports at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#supports -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View @scope at-rules
+<!-- ###### View @scope at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#scope -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View @font-palette-values at-rules
+<!-- ###### View @font-palette-values at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#font-palette-values -->
 
-Pending.
-
 
 <!-- ---------- -->
-###### View @position-try at-rules
+<!-- ###### View @position-try at-rules -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -283,10 +260,8 @@ In the following figure, the **Computed** pane is filtered to only show declarat
 
 
 <!-- ------------------------------ -->
-#### Emulate a focused page
+<!-- #### Emulate a focused page -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#focus -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -297,35 +272,27 @@ To toggle a pseudo-class:
 
 1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
+1. Enter a task, such as **task 1**.
+
 1. Right-click the webpage, and then select **Inspect**.
 
    DevTools opens.
 
 1. Select the **Elements** tool.
 
-1. Select an element.
+1. In the DOM tree, select the `<li class="task">` element.
 
-   Or:
+1. Select the **Styles** tab.
 
-   *  In a rendered webpage, right-click a page element, and then click **Inspect**.
+1. In the upper right, click **:hov**.
 
-   *  In DevTools, click **Select an element** (![Select an element](./reference-images/select-an-element-icon.png)) or press **Ctrl+Shift+C** (Windows, Linux) or **Command+Shift+C** (macOS), and then click the element in the viewport.
+   Checkboxes are displayed.
 
-   *  In DevTools, click the element in the **DOM Tree**.
+1. Select the checkbox for the pseudo-class that you want to enable, such as `:hover`:
 
-   *  In DevTools, run a query such as `document.querySelector('p')` in the **Console**, right-click the result, and then select **Reveal in Elements panel**.
+   ![Selecting the :hover pseudo-class](./reference-images/css-elements-styles-hov-hover.png)
 
-   For details, see [Select an element](#select-an-element), above.
-
-1. On the **Elements** tool, go to the **Styles** pane.
-
-1. Click **:hov**.
-
-1. Select the pseudo-class that you want to enable, such as the `:hover` pseudo-class:
-
-   ![Toggle the :hover pseudo-class](./reference-images/css-elements-styles-hov-hover.png)<!-- todo: what page url is this?  to support Maintainability -->
-
-   In the rendered webpage above, the `background-color: cornflowerblue` declaration is applied to the element, even though the element isn't actually being hovered over.
+   In the rendered webpage, the circle next to the task name is filled with a checkmark, and a red X in a red circle appears in the right side of the task, as if the element is being hovered over, even though the element isn't actually being hovered over.
 
 The **Styles** tab shows the following pseudo-classes for all elements:
 * [`:active`](https://developer.mozilla.org/docs/Web/CSS/:active) - MDN.
@@ -337,25 +304,21 @@ The **Styles** tab shows the following pseudo-classes for all elements:
 
 Additionally, some elements may have their own pseudo-classes.  When you select such an element, the **Styles** tab shows a **Force specific element state** section that you can expand and turn on pseudo-classes that are specific to the element, such as a **:read-write**  checkbox:
 
-![The `Force specific element state` section of a 'textarea' element](./reference-images/specific-pseudo-classes.png)
+Additionally, some elements might have element-specific pseudo-classes.  When you select such an element, the **Styles** tab shows a **Force specific element state** section that you can expand and turn on pseudo-classes that are specific to the element, such as a **:read-write** checkbox:
 
-The above screenshot uses the [Animated CSS Property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/).
+![The `Force specific element state` section of a 'textarea' element](./reference-images/specific-pseudo-classes.png)
 
 For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 
 <!-- ------------------------------ -->
-#### View inherited highlight pseudo-elements
+<!-- #### View inherited highlight pseudo-elements -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
-#### View cascade layers
+<!-- #### View cascade layers -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#cascade-layers -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -408,17 +371,13 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 
 <!-- ====================================================================== -->
-## Copy CSS
+<!-- ## Copy CSS -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css -->
-
-Pending.
 
 
 <!-- ====================================================================== -->
-## Change CSS
+<!-- ## Change CSS -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -486,17 +445,13 @@ To change a numerical value, type in the value, or use the arrow keys, per the n
 
 
 <!-- ------------------------------ -->
-#### Change enumerable values with keyboard shortcuts
+<!-- #### Change enumerable values with keyboard shortcuts -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#values-shortcuts -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
-#### Change length values
+<!-- #### Change length values -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -533,9 +488,7 @@ To add a class to an element:
 
 
 <!-- ------------------------------ -->
-#### Emulate light and dark theme preferences and enable automatic dark mode
-
-Pending.
+<!-- #### Emulate light and dark theme preferences and enable automatic dark mode -->
 
 
 <!-- ------------------------------ -->
@@ -612,17 +565,13 @@ To toggle a single declaration on or off:
 
 
 <!-- ------------------------------ -->
-#### Edit the ::view-transition pseudo-elements during an animation
+<!-- #### Edit the ::view-transition pseudo-elements during an animation -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-transition -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
-#### Align grid items and their content with the Grid Editor
+<!-- #### Align grid items and their content with the Grid Editor -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#grid-editor -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
@@ -770,24 +719,18 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 
 
 <!-- ------------------------------ -->
-#### Use presets to adjust timings
+<!-- #### Use presets to adjust timings -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#presets -->
-
-Pending.
 
 
 <!-- ------------------------------ -->
-#### Configure custom timings
+<!-- #### Configure custom timings -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-timings -->
-
-Pending.
 
 
 <!-- ====================================================================== -->
-## (Experimental) Copy CSS changes
+<!-- ## (Experimental) Copy CSS changes -->
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
-
-Pending.
 
 
 <!-- ====================================================================== -->
