@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/04/2025
+ms.date: 04/02/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,10 +24,7 @@ ms.date: 11/04/2025
 # CSS features reference
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
 
-<!-- todo:
-sync outline including presence & level
-sync content in sections
--->
+<!-- todo: sync content in incoming, commented out sections -->
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
