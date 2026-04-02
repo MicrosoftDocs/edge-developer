@@ -376,8 +376,15 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 
 <!-- ====================================================================== -->
-<!-- ## Change CSS -->
+## Change CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change -->
+
+This section lists all the ways you can change CSS in **Elements** > **Styles**.
+
+Additionally, you can:
+
+* Override CSS across page loads.  See [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+* Save modified CSS to your local sources in a workspace.  See [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md).
 
 
 <!-- ------------------------------ -->
