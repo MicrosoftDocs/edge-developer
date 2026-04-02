@@ -99,7 +99,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 See also:
 * [Updating your service worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers#updating_your_service_worker) in _Using Service Workers_ at MDN.
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->

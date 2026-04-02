@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/25/2026
+ms.date: 04/02/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -67,8 +67,6 @@ If you want your users to be able to add your app to their mobile homescreens, y
 <!--TODO: link to sections when available -->
 
 To inspect a manifest:
-
-1. Set up the manifest.
 
 1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
 

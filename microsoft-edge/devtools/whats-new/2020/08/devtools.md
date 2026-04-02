@@ -329,7 +329,7 @@ Previously DevTools displayed a list nested under the **Application** tool > **S
 Chromium issue: [#807440](https://crbug.com/807440)
 
 See also:
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 

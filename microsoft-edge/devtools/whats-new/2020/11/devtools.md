@@ -123,7 +123,7 @@ The routing of a request displays the `startup` and `fetch` events based on the 
 
 See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps/index.md)
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ------------------------------ -->
@@ -152,7 +152,7 @@ To display additional context when debugging a service worker:
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ------------------------------ -->
@@ -169,7 +169,6 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ------------------------------ -->
@@ -187,7 +186,6 @@ In the following figure, the reference is selected, and has opened the initiator
 
 See also:
 * [View the call stack](../../../javascript/reference.md#view-the-call-stack) in _JavaScript debugging features_
-* [Synchronize and update a PWA in the background](../../../../progressive-web-apps/how-to/background-syncs.md)
 
 
 <!-- ====================================================================== -->
