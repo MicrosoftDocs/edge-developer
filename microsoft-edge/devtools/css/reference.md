@@ -274,7 +274,6 @@ The **Styles** tab shows the following pseudo-classes for all elements:
 * [`:hover`](https://developer.mozilla.org/docs/Web/CSS/:hover)
 * [`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible)
 
-Additionally, some elements may have their own pseudo-classes.  When you select such an element, the **Styles** tab shows a **Force specific element state** section that you can expand and turn on pseudo-classes that are specific to the element, such as a **:read-write**  checkbox:
 
 Additionally, some elements might have element-specific pseudo-classes.  When you select such an element, the **Styles** tab shows a **Force specific element state** section that you can expand and turn on pseudo-classes that are specific to the element, such as a **:read-write** checkbox:
 
