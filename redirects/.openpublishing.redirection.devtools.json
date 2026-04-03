@@ -693,7 +693,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/service-workers/index.md",
-      "redirect_url": "/microsoft-edge/devtools/service-workers/index",
+      "redirect_url": "/microsoft-edge/devtools/progressive-web-apps/#service-workers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/service-workers/index.md",
+      "redirect_url": "/microsoft-edge/devtools/progressive-web-apps/#service-workers",
       "redirect_document_id": false
     },
     {
