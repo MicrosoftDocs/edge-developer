@@ -45,10 +45,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-<!-- 
-#### Experimental APIs (Phase 1)
--->
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
@@ -73,7 +70,7 @@ description
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -118,82 +115,35 @@ This Prerelease SDK includes the following bug fixes.
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026)
+## Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
 
 Release Date: Apr. 13, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
--->
+[NuGet package for WebView2 SDK 1.0.3912.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3912.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 147.0.3912.50 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Disabled the domain actions component for WebView2.
 
+* Fixed WDP clients being unable to connect to a remote debugging server.
 
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Release SDK 1.0.38nn.nn, for Runtime 147 (Apr. 13, 2026) -->
+<!-- end of Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026) -->
 
 
 <!-- ====================================================================== -->
@@ -207,15 +157,15 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -425,7 +375,7 @@ After the LNA feature stabilizes, we'll share an updated timeline for enabling t
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -529,10 +479,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
-<!-- 
-#### Experimental APIs (Phase 1)
--->
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -695,7 +642,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -851,7 +798,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -918,7 +865,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -1079,7 +1026,7 @@ These foundational improvements provide stable, thoroughly tested functionality 
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -1149,11 +1096,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
-
----
 
 
 <!-- ------------------------------ -->
@@ -1189,7 +1134,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
@@ -1867,7 +1812,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -1981,7 +1926,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
