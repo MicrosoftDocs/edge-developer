@@ -27,7 +27,6 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)

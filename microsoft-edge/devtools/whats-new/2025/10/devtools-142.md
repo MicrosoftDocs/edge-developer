@@ -36,5 +36,5 @@ Microsoft Edge 142 also includes the following updates from the Chromium project
 <!-- ====================================================================== -->
 ## See also
 
-* [What's new in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../index.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)

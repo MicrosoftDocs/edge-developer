@@ -52,9 +52,3 @@ The **Application** tool has the following pages, listed on the left:
    * top
 
 To interpret the **Storage** > **Usage** section in the **Application** tool, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug a Progressive Web App (PWA)_.
-
-
-<!-- ====================================================================== -->
-<!--
-## See also
--->

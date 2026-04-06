@@ -329,7 +329,7 @@ Previously DevTools displayed a list nested under the **Application** tool > **S
 Chromium issue: [#807440](https://crbug.com/807440)
 
 See also:
-* [Service worker improvements](../../../service-workers/index.md)
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -514,5 +514,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's new in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../index.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
