@@ -34,7 +34,6 @@ To report a problem with DevTools or ask for a new feature, file an issue in the
 <!-- ====================================================================== -->
 ## See also
 
-* [What's new in DevTools archive](./whats-new-archive.md)
 * [Experimental features in Microsoft Edge DevTools](../experimental-features/index.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

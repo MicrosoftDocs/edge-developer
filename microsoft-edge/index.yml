@@ -250,7 +250,7 @@ conceptualContent:
               itemType: overview
 
             - text: What's new in Microsoft Edge DevTools
-              url: ./devtools/whats-new/whats-new.md
+              url: ./devtools/whats-new/index.md
               itemType: whats-new
 
             - text: Command Menu
