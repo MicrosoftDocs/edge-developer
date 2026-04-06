@@ -75,7 +75,6 @@ If you don't have the **Fulfilled by** column, right-click the table headers in 
 
 See also:
 * [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.
-* [Service worker improvements](../../../service-workers/index.md).
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 
@@ -180,5 +179,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's new in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../index.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
