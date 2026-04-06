@@ -6,17 +6,19 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/27/2025
+ms.date: 04/06/2026
 ---
 # Code for Custom DevTools tool
+<!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool-code -->
+<!-- article 3 of 3 -->
 
-[Sample: Custom DevTools tool](../samples/custom-devtools-tool.md) consists of the following files and code.
+The Custom DevTools Tool sample consists of the following files and code.
 
 The code that interacts with the inspected webpage does the following:
 
 1. Listens to click events that happen on the webpage and log them into the DevTools **Console** tool.
 
-1. Displays the mouse click position in the DevTools extension panel.
+1. Displays the mouse-click position in the DevTools extension panel.
 
 1. When the user clicks a button in the DevTools extension panel, displays a greeting alert in the inspected webpage.
 
@@ -45,9 +47,6 @@ document.addEventListener("click", (event) => {
 
 The content script relays this info to the `devtools.js` file, where the data is displayed in DevTools in the **Custom** tool and in the **Console** tool.
 
-```javascript
-```
-
 
 <!-- ====================================================================== -->
 ## Overview of files
@@ -59,20 +58,20 @@ The content script relays this info to the `devtools.js` file, where the data is
 | [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) | Webpage to display in the custom panel in DevTools. |
 | [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) | A non-rendered HTML file run when DevTools is opened, to load the extension's JavaScript files. |
 | [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) | Service worker that sets up event listeners for communications between the inspected page and DevTools. |
-| [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) | Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse click position in the inspected page. |
+| [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) | Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
 | [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) | Logic for the custom DevTools page. |
 | [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) | Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu. |
 | [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md) | Basic information for developers about how to use the sample. |
 
-Details about the files The sample has the following files:
+Details are below.
+
 
 <!-- ====================================================================== -->
-## manifest.json
+## `manifest.json`
 
 The manifest file contains key/value pairs.  The top-level keys are called _members_.
 
 * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) - Required.  Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools.
-
 
 | Member | Description |
 |----------|-------------|
@@ -81,8 +80,8 @@ The manifest file contains key/value pairs.  The top-level keys are called _memb
 | `version` | The version of the extension that will appear next to the name of the extension. |
 | `manifest_version` | Determines the set of features that the extension will be using, such as service workers or network request modification. The current version is version `3`. To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md). |
 | `devtools_page` | The path to an HTML file that's run every time DevTools is opened, and loads the extension's JavaScript files.  This page isn't rendered in DevTools. |
-| `content_scripts` | foo |
-| `background` | foo |
+| `content_scripts` | todo - from Ref docs |
+| `background` | todo - from Ref docs |
 | `permissions` | The local device requires permissions to view its system memory capacity, since the script calls API for that. |
 
 `manifest.json`:
@@ -147,7 +146,7 @@ Keys within the "content_scripts" member:
 
 
 <!-- ====================================================================== -->
-## panel.html
+## `panel.html`
 
 * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) - Required.  Webpage to display in the custom panel in DevTools.
 
@@ -197,11 +196,11 @@ The above elements are used to demo the interaction between the inspected page, 
 
 When the user clicks the `sayHello` button in the DevTools extension, it displays a greeting message in the inspected window.
 
-When the user clicks anywhere in the inspected page, it will display a message to show the mouse click position in the DevTools extension panel.
+When the user clicks anywhere in the inspected page, it will display a message to show the mouse-click position in the DevTools extension panel.
 
 
 <!-- ====================================================================== -->
-## devtools.html
+## `devtools.html`
 
 * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - Required.  A non-rendered HTML file that's run when DevTools is opened, to load the extension's `devtools.js` file.
 
@@ -227,7 +226,7 @@ In the manifest file (`manifest.json`), the `devtools_page` field specifies the 
 
 
 <!-- ====================================================================== -->
-## background.js
+## `background.js`
 
 [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) - Background service worker that sets up event listeners for communications between the inspected page and DevTools.
 
@@ -268,13 +267,13 @@ See also:
 
 
 <!-- ====================================================================== -->
-## content_script.js
+## `content_script.js`
 
 [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - JavaScript that's injected into the inspected webpage (any webpage).  Prints a message to the DevTools **Console** when the page is clicked.  Listens for the page click event via an event listener.  Adds a click event listener to the webpage; clicking the page sends an event, caught by the event listener, which then sends a message to the runtime.
 
 A _content script_ runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has have access to the DOM and can change it.
 
-This code prints a message to the console when the script is injected in the page.  It also adds a click event listener to the page that will send a message with mouse click position in the inspected page by using the `chrome.runtime.sendMessage` API.
+This code prints a message to the console when the script is injected in the page.  It also adds a click event listener to the page that will send a message with mouse-click position in the inspected page by using the `chrome.runtime.sendMessage` API.
 
 `content_script.js`:
 
@@ -297,7 +296,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## devtools.js
+## `devtools.js`
 
 [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Logic for the custom DevTools page.
 
@@ -418,17 +417,6 @@ setInterval(() => {
 }, 1000);
 ```
 
-See also: 
-* [Extensions API Reference](https://developer.chrome.com/docs/extensions/reference/)
-   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
-      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
-
-
-
-
-
-
-
 `devtools.js` uses the `chrome.runtime.connect` method to create a connection to the background service worker.
 
 It then sends the inspected window `tabId` to the service worker by using the `backgroundPageConnection.postMessage` method.
@@ -439,9 +427,14 @@ When the user clicks the `sayHello` button, the DevTools extension will run a co
 
 When the user clicks anywhere in the inspected window, the DevTools extension will receive a message, from the background service worker, with `request.click == true` and the mouse position information.
 
+See also: 
+* [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
+      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+
 
 <!-- ====================================================================== -->
-## icon.png
+## `icon.png`
 
 * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) - Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu.
 
@@ -451,11 +444,35 @@ Icon to display on the tool's tab in the Activity bar of DevTools and in the **M
 
 
 <!-- ====================================================================== -->
-## README.md
+## `README.md`
 
 [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md) - Basic information for developers about how to use the sample.
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
+* [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
+* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
+* [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md).
+
+GitHub:
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/)
+   * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json)
+   * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html)
+   * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html)
+   * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js)
+   * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js)
+   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js)
+   * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png)
+   * [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md)
+   
+Chrome docs:
+* [Extensions API reference](https://developer.chrome.com/docs/extensions/reference/)
+* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/)<!-- todo: diff'ate -->
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)<!-- todo: diff'ate -->
+* [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
+   * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)

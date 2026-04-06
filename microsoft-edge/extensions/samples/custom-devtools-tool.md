@@ -1,31 +1,36 @@
 ---
 title: "Sample: Custom DevTools tool"
-description: Microsoft Edge extension adding a Custom tool in DevTools, including Activity Bar tab and panel.  Call DevTools API; send message to any inspected page; send message from inspected page to DevTools.
+description: Microsoft Edge extension that adds a Custom tool in DevTools.  Sends messages between the inspected webpage and DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 10/27/2025
+ms.date: 04/06/2026
 ---
 # Sample: Custom DevTools tool
+<!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool -->
+<!-- article 2 of 3 -->
 
-The DevTools Extension sample is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, including a tab in the **Activity Bar**, and a panel below the tab.
+The sample "Custom DevTools tool" is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, including a tab in the **Activity Bar**, and a panel below the tab.  The tool name and its tab in DevTools can be something other than **Custom**.
 
 * The **Custom** DevTools tool calls the DevTools API to display memory information.
 
-* The webpage under inspection, and the **Custom** DevTools tool, send messages back and forth, in two-way communication.
+* The webpage under inspection, and the **Custom** DevTools tool, send messages to each other.
+
+Download, install, use, and modify the sample, as follows.
 
 See also:
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
 * [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
 * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code for the Custom DevTools Tool sample.
 
 
 <!-- ====================================================================== -->
 ## Preview of the sample
 
-The "DevTools Extension" sample adds a **Custom** tool tab and panel in DevTools within Microsoft Edge:
+The Custom DevTools Tool adds a **Custom** tool tab and panel in DevTools within Microsoft Edge:
 
 ![Custom tool](./custom-devtools-tool-images/custom-tool.png)
 
@@ -33,7 +38,7 @@ The "DevTools Extension" sample adds a **Custom** tool tab and panel in DevTools
 <!-- ------------------------------ -->
 #### Display memory information
 
-The **Custom** tool calls the DevTools API (`chrome.system.memory.getInfo((data)`) to retrieve and display memory information.
+The **Custom** tool in DevTools calls the DevTools API (`chrome.system.memory.getInfo((data)`) to retrieve and display memory information.
 
 
 <!-- ------------------------------ -->
@@ -47,17 +52,15 @@ The **Custom** tool in DevTools has a button that sends a message to the inspect
 <!-- ------------------------------ -->
 #### Send message from inspected page to DevTools
 
-Clicking around within the inspected webpage sends a message to DevTools.  The sample uses a content script to send a message (the clicked coordinates) from the inspected webpage (any webpage) to the **Custom** DevTools tool and the **Console** tool in DevTools.
+Clicking around within the inspected webpage sends a message to DevTools.  The **Custom** tool uses a content script to send a message (the clicked coordinates) from the inspected webpage (any webpage) to the **Custom** DevTools tool and the **Console** tool in DevTools.
 
-The **Custom** tool displays the coordinates information from the message:
+The **Custom** tool displays the mouse-click coordinates from the message:
 
 ![Coordinates in the Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
 
-The **Console** tool displays the coordinates information from the message:
+The **Console** tool also displays the mouse-click coordinates from the message:
 
 ![Coordinates in the Console tool](./custom-devtools-tool-images/console-tool-coordinates.png)
-
-Download, install, use, and modify the sample, per the below sections.
 
 
 <!-- ====================================================================== -->
@@ -283,16 +286,37 @@ This is the end of the steps to use and modify the DevTools Extension sample.  N
 
 
 <!-- ====================================================================== -->
+## Troubleshooting
+
+If the **Custom** tab isn't visible in DevTools, or it's outdated and doesn't show your latest code changes:
+
+* Make DevTools wide, to show many tools in the **Activity Bar**.
+
+* Close and reopen DevTools.
+
+* Refresh or hard-refresh the inspected page.
+
+* In Microsoft Edge, in the **Extensions** page, click **Reload** for the extension.
+
+* If no icon is provided in such an extension, the tab when not selected is narrow and gray, on the right side of the **Activity Bar**.  Click the narrow gray tab.
+
+* Go to a webpage, not an empty tab.  The code in the sample "Custom DevTools tool" requires a webpage.
+
+When the **Activity Bar** is narrow, the Custom Devtools tool is added to the **More tools** menu on the **Activity Bar**.
+
+The **Custom** tab doesn't have a **Remove from Activity Bar** command on the right-click menu.
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Overview of DevTools](../../devtools/overview.md)
+* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
 * [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
 * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-
-GitHub:
-* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code.
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos)
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
-
-Tools:
 * [Visual Studio Code](https://code.visualstudio.com)
+* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
+* [Samples for Microsoft Edge extensions](../samples.md)<!-- link not in article -->
