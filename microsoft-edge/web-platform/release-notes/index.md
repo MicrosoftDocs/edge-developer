@@ -21,7 +21,7 @@ To stay up-to-date and get the latest web platform features, download a preview 
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 Microsoft Edge DevTools
-* [What's new in Microsoft Edge DevTools](../../devtools/whats-new/whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../devtools/whats-new/index.md)
 * [Experimental features in Microsoft Edge DevTools](../../devtools/experimental-features/index.md)
 
 Microsoft Edge extensions

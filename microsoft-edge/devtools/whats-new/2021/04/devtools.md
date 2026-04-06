@@ -99,7 +99,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 See also:
 * [Updating your service worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers#updating_your_service_worker) in _Using Service Workers_ at MDN.
-* [Service worker improvements](../../../service-workers/index.md) - DevTools debugging tools for Progressive Web Apps and service workers.
+* [Service workers](../../../progressive-web-apps/index.md#service-workers), in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
@@ -490,5 +490,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 ## See also
 
-* [What's new in Microsoft Edge DevTools](../../whats-new.md)
+* [What's new in Microsoft Edge DevTools](../../index.md)
 * [Release notes for Microsoft Edge web platform](../../../../web-platform/release-notes/index.md)
