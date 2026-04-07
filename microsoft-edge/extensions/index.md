@@ -46,9 +46,9 @@ An extension should include at least the following features:
 
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
-A Microsoft Edge extension:
+In the **Search extensions, themes, and more** field, you can enter various search terms, such as the extension owner [Microsoft Corporation](https://microsoftedge.microsoft.com/addons/search/microsoft%20corporation).  Searching returns extensions and themes, such as the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
 
-![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
+![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
 
 
 <!-- ====================================================================== -->
@@ -157,9 +157,9 @@ Extensions are curated to help users discover trustworthy and high-performing ex
 
 The **Featured** badge is awarded to select extensions that align with [Best practices for extensions](./developer-guide/best-practices.md).  When you hover over the **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified.**
 
-For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge:
+For example, the [Microsoft Bing Homepage](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage/cjmjijnpnollocennnapedpaeecninea) extension has a **Featured** badge, to the right of the extension name:
 
-![The Featured badge to the right of the extension name](./index-images/featured-badge-on-page.png)
+![The Featured badge next to the extension name](./index-images/featured-badge-on-page.png)
 
 
 <!-- ------------------------------ -->
