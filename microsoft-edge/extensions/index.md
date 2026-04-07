@@ -20,7 +20,7 @@ The present documentation is for extension developers, rather than end-users of 
 **Detailed contents:**
 * [Introduction](#introduction)
 * [Basic guidance](#basic-guidance)
-* [Benefits of Chromium extensions](#benefits-of-chromium-extensions)
+* [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
    * [Browser-specific APIs](#browser-specific-apis)
 * [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
@@ -93,7 +93,7 @@ Some of the popular browsers to build extensions for are listed below.  This lis
 
 
 <!-- ====================================================================== -->
-## Benefits of Chromium extensions
+## Benefits of Chromium-based extensions
 
 If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari app extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.
 
@@ -121,7 +121,7 @@ Occasionally, API parity doesn't exist between Chromium browsers.  For example, 
 
 The APIs that you require define the changes that you must make to address the differences between each browser.  You might need to create slightly different code packages with small differences for each browser extension store.
 
-To test your extension in different environments before you submit the extension to a browser extension store, side-load the extension into your browser while you develop it.
+To test your extension in different environments before you submit the extension to a browser extension store, sideload the extension into your browser while you develop it.
 
 See also:
 * [Sideload an extension to install and test it locally](./getting-started/extension-sideloading.md)
@@ -140,10 +140,15 @@ Some tutorials for browser-specific extension store sites use browser-specific A
 
 You can submit and seek browser extensions in the following browser extension stores.
 
+<!-- ~~ todo: update per See Also h2 -->
+
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
 * [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
 * [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 * [Opera addons](https://addons.opera.com/extensions)
+
+
+
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
@@ -233,17 +238,11 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 ## See also
 <!-- all links in the article -->
 
-<!-- toc order -->
-* [User docs about Microsoft Edge extensions](./getting-started/user-docs.md)<!-- toc bucket 0 -->
-* [Extension concepts and architecture](./getting-started/index.md)<!-- link not in article --><!-- toc bucket 2.1 -->
-* [Sideload an extension to install and test it locally](./getting-started/extension-sideloading.md)<!-- toc bucket 2.2 -->
-* [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md)<!-- toc bucket 4 -->
-* [Publish a Microsoft Edge extension](./publish/publish-extension.md)<!-- toc bucket 7 -->
-* [Best practices for extensions](./developer-guide/best-practices.md)<!-- toc bucket 10 -->
+<!-- todo: update local toc -->
 
 
 <!-- ------------------------------ -->
-#### Microsoft external
+#### Microsoft Edge
 
 
 <!-- ---------- -->
@@ -258,6 +257,7 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 <!-- ---------- -->
 ###### End-user docs
 
+* [User docs about Microsoft Edge extensions](./getting-started/user-docs.md)<!-- toc bucket 0 -->
 * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf)<!-- link not in article -->
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- link not in article -->
 
@@ -265,13 +265,21 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 <!-- ---------- -->
 ###### Development
 
+<!-- toc order -->
+* [Extension concepts and architecture](./getting-started/index.md)<!-- link not in article --><!-- toc bucket 2.1 -->
+* [Sideload an extension to install and test it locally](./getting-started/extension-sideloading.md)<!-- toc bucket 2.2 -->
+* [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md)<!-- toc bucket 4 -->
+* [Publish a Microsoft Edge extension](./publish/publish-extension.md)<!-- toc bucket 7 -->
+* [Best practices for extensions](./developer-guide/best-practices.md)<!-- toc bucket 10 -->
+
+External:
 * [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions)
 * [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)<!-- link not in article -->
 * [Register for a developer account](https://developer.microsoft.com/registration) at Microsoft Partner Center.
 
 
 <!-- ------------------------------ -->
-#### Google Chrome, or Chromium engine
+#### Google Chrome, or Chromium browser engine
 
 
 <!-- ---------- -->
