@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 08/20/2024
+ms.date: 04/07/2026
 ---
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
@@ -19,7 +19,7 @@ The present documentation is for extension developers, rather than end-users of 
 
 **Detailed contents:**
 * [Introduction](#introduction)
-* [Basic guidance](#basic-guidance)
+* [Sites for extensions for various browsers](#sites-for-extensions-for-various-browsers)
 * [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
    * [Browser-specific APIs](#browser-specific-apis)
@@ -28,13 +28,13 @@ The present documentation is for extension developers, rather than end-users of 
    * [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons)
 * [The Featured badge](#the-featured-badge)
    * [What the Featured badge represents](#what-the-featured-badge-represents)
-   * [Why the Featured badge might be revoked](#why-the-featured-badge-might-be-revoked)
+   * [Reasons why the Featured badge could be revoked](#reasons-why-the-featured-badge-could-be-revoked)
 * [See also](#see-also)
-   * [Microsoft external](#microsoft-external)
+   * [Microsoft Edge](#microsoft-edge)
       * [Store](#store)
       * [End-user docs](#end-user-docs)
       * [Development](#development)
-   * [Google Chrome, or Chromium engine](#google-chrome-or-chromium-engine)
+   * [Google Chrome, or Chromium browser engine](#google-chrome-or-chromium-browser-engine)
       * [Store](#store-1)
       * [Development](#development-1)
    * [Opera](#opera)
@@ -76,7 +76,7 @@ In the **Search extensions, themes, and more** text box, you can enter various s
 
 
 <!-- ====================================================================== -->
-## Basic guidance
+## Sites for extensions for various browsers
 
 Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.
 
@@ -90,6 +90,8 @@ Some of the popular browsers to build extensions for are listed below.  This lis
 | Brave | Yes | Uses [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) |
 | Apple Safari | No | [Safari app extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
 | Mozilla Firefox | No | [Browser extensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
+
+For browser extension stores, end-user docs, and developer docs, see [See also](#see-also), below.
 
 
 <!-- ====================================================================== -->
@@ -140,15 +142,12 @@ Some tutorials for browser-specific extension store sites use browser-specific A
 
 You can submit and seek browser extensions in the following browser extension stores.
 
-<!-- ~~ todo: update per See Also h2 -->
-
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
 * [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
-* [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 * [Opera addons](https://addons.opera.com/extensions)
-
-
-
+* [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) - store for Brave extensions.
+* [Apple App Store](https://apps.apple.com)
+* [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
@@ -215,7 +214,7 @@ The **Featured** badge is not a judgment of safety.  An extension that doesn't h
 
 
 <!-- ------------------------------ -->
-#### Why the Featured badge might be revoked 
+#### Reasons why the Featured badge could be revoked
 
 The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meets the evolving standards, or if the extension's quality signals degrade over time. 
 
@@ -345,7 +344,8 @@ External:
 <!-- ---------- -->
 ###### Store
 
-* [The Best Safari Extensions](https://apps.apple.com/us/story/id1377753262)
+* [Apple App Store](https://apps.apple.com)
+   * [The Best Safari Extensions](https://apps.apple.com/us/story/id1377753262)
 
 
 <!-- ---------- -->
