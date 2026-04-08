@@ -5803,7 +5803,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-*  The SharedBuffer API:
+* The SharedBuffer API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -5875,7 +5875,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-*  APIs for managing permissions:
+* APIs for managing permissions:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -5941,7 +5941,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-APIs for managing tracking prevention:
+* APIs for managing tracking prevention:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
