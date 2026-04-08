@@ -166,7 +166,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Disabled `WebUSBDetector` notification for WebView2.
 
-* Fixed the getter of the <!-- todo: CoreWebView2Profile. --> `PreferredTrackingPreventionLevel` API.
+* Fixed `ICoreWebView2Profile3::get_PreferredTrackingPreventionLevel`.
 
 * Fixed WDP clients being unable to connect to a remote debugging server.
 
@@ -176,7 +176,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### SDK-only
 
-* Split the COM `UNEXPECTED` reason<!-- todo: `HRESULT`? --> into more granular values.
+* Split the COM `UNEXPECTED` `HRESULT` into more granular values.
 
 * Enabled histogram logging for browser process crashes in WebView2.
 
