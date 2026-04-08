@@ -118,7 +118,7 @@ For example:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -133,7 +133,7 @@ For example:
 
 To stop recording requests:
 
-1. On the **Network** tool, click **Stop recording network log** (![Stop recording network log](./reference-images/record-on-icon.png)).  It turns grey to indicate that DevTools is no longer recording requests.
+1. On the ![Network icon](./reference-images/network-icon.png) **Network** tool, click **Stop recording network log** (![Stop recording network log](./reference-images/record-on-icon.png)).  It turns grey to indicate that DevTools is no longer recording requests.
 
 1. Press **Ctrl+E** (Windows, Linux) or **Command+E** (macOS) while the **Network** tool is in focus.
 
@@ -142,11 +142,11 @@ To stop recording requests:
 #### Clear requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#clear -->
 
-To clear all requests from the **Requests** table, in the **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
+To clear all requests from the **Requests** table, in the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Clear network log** (![Clear](./reference-images/clear-requests-icon.png)) button:
 
 ![The 'Clear network log' button](./reference-images/clear-requests.png)
 
-Or, press **Ctrl+L** (Windows, Linux, macOS) or **Command+K** (macOS) while the **Network** tool has focus.
+Or, press **Ctrl+L** (Windows, Linux, macOS) or **Command+K** (macOS) while the ![Network icon](./reference-images/network-icon.png) **Network** tool has focus.
 
 See also:
 * [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
@@ -156,7 +156,7 @@ See also:
 #### Save requests across page loads
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#preserve-log -->
 
-To save requests across page loads, on the **Network** tool, select the **Preserve log** checkbox:
+To save requests across page loads, on the ![Network icon](./reference-images/network-icon.png) **Network** tool, select the **Preserve log** checkbox:
 
 ![The Preserve Log checkbox](./reference-images/preserve-log.png)
 
@@ -180,7 +180,7 @@ To enable screenshots:
 
    DevTools opens.
 
-1. In DevTools, open the **Network** tool.
+1. In DevTools, open the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
 
@@ -191,7 +191,7 @@ To enable screenshots:
 
 To capture a screenshot:
 
-1. While the **Network** tool has focus, press **Ctrl+F5** to refresh the page.  Screenshots are captured during the page load and thumbnails are shown below the row of checkboxes.
+1. While the ![Network icon](./reference-images/network-icon.png) **Network** tool has focus, press **Ctrl+F5** to refresh the page.  Screenshots are captured during the page load and thumbnails are shown below the row of checkboxes.
 
    You can interact with the screenshots as follows.
 
@@ -218,7 +218,7 @@ To replay an XHR request:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -268,7 +268,9 @@ The **Disable Cache** checkbox:
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then disable the browser cache from there:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.
+
+   The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, select the **Disable cache** checkbox:
 
@@ -319,7 +321,7 @@ You can choose from different presets, such as:
 
 To add your own custom presets, click the **Throttling** menu, and then select **Custom** > **Add**.
 
-A warning icon is displayed on the **Network** tool's tab, to remind you that throttling is enabled:
+A warning icon is displayed on the ![Network icon](./reference-images/network-icon.png) **Network** tool's tab, to remind you that throttling is enabled:
 
 ![The Throttled warning icon on the Network tab in the Activity Bar](./reference-images/throttled-icon.png)
 
@@ -342,7 +344,7 @@ To create a custom throttling profile:
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. In the **Throttling** menu, in the **Custom** section, select **Add**.
 
@@ -378,7 +380,7 @@ To create a custom throttling profile:
 
 1. In the **Settings** pane, click the **Close** (X) button.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. In the **Throttling** dropdown menu, in the **Custom** section, select your custom throttling profile, such as **10kbps**:
 
@@ -415,7 +417,7 @@ To observe WebSocket throttling:
 
    DevTools opens.
 
-1. In DevTools, in the **Network** tool, in the **Throttling** dropdown menu, select **Custom** > **10kbps**.
+1. In DevTools, in the ![Network icon](./reference-images/network-icon.png) **Network** tool, in the **Throttling** dropdown menu, select **Custom** > **10kbps**.
 
    That option was created in the previous section, [Create a custom throttling profile](#create-a-custom-throttling-profile).
 
@@ -462,7 +464,9 @@ Optional: To get red down-arrow messages (echoed from the server), as well as gr
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then throttle the network connection from there:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png)) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **More network conditions** (![The 'More network conditions' icon](./reference-images/more-network-conditions-icon.png)) button.
+
+   The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, in the **Network throttling** menu, select a connection speed.
 
@@ -497,7 +501,9 @@ See also:
 
 To manually override the user agent:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **More network conditions** (![More network conditions icon.](./reference-images/more-network-conditions-icon.png) button.
+
+   The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, clear the **Use browser default** checkbox.  The other controls become available.
 
@@ -512,7 +518,9 @@ If your site employs user agent client hints and you want to test them, you can 
 
 To set user agent client hints in the **Network conditions** tool:
 
-1. In the **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **More network conditions** (![The 'More network conditions' icon.](./reference-images/more-network-conditions-icon.png) button.
+
+   The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **User agent** section, clear the **Use browser default** checkbox, and then expand **User agent client hints**:
 
@@ -543,7 +551,9 @@ See also:
 
 To search across request headers, payloads, and responses:
 
-1. In the **Network** tool, click the **Search** (![Search icon](./reference-images/search-icon.png)) button.  Or, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Search** (![Search icon](./reference-images/search-icon.png)) button.
+
+   Or, press **Ctrl+F** (Windows, Linux) or **Command+F** (macOS).
 
    The **Search** tab opens on the left side of the **Network** tool.
 
@@ -551,7 +561,9 @@ To search across request headers, payloads, and responses:
 
    Optionally click the **Match case** button to turn on case sensitivity.  Optionally click the **Regular expression** button to turn on regular expressions.
 
-1. Click one of the search results.  The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
+1. Click one of the search results.
+
+   The **Network** tool highlights in yellow the request that matched.  The **Network** tool also opens the **Headers** or **Response** tab and highlights the string that matched there, if any.
 
 ![The Search tab on the right in the Network tool](./reference-images/search-requests.png)
 <!-- https://microsoftedge.github.io/Demos/network-tutorial/ -->
@@ -613,7 +625,7 @@ The complete list of supported properties:
 | `mixed-content` | Show all mixed content resources (`mixed-content:all`) or just the ones that are currently displayed (`mixed-content:displayed`). |
 | `priority` | Show resources whose priority level matches the specified value. |
 | `resource-type` | Show resources of a resource type, for example, image. DevTools populates the autocomplete drop-down with all resource types it has encountered. |
-| `response-header-set-cookie` | Show raw `Set-Cookie` headers in the **Issues** tab.  Malformed cookies with incorrect `Set-Cookie` headers will be flagged in the **Network** tool. |
+| `response-header-set-cookie` | Show raw `Set-Cookie` headers in the **Issues** tab.  Malformed cookies with incorrect `Set-Cookie` headers will be flagged in the ![Network icon](./reference-images/network-icon.png) **Network** tool. |
 | `scheme` | Displays resources retrieved over unprotected HTTP (`scheme:http`) or protected HTTPS (`scheme:https`). |
 | `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that are found. |
 | `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that are found. |
@@ -627,7 +639,7 @@ The complete list of supported properties:
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#filter-by-type -->
 
 <!-- horiz list -->
-To filter requests by request type, click the buttons on the **Network** tool: **All**, **Fetch/XHR**, **Doc**, **CSS**, **JS**, **Font**, **Img**, **Media**, **Manifest**, **WS** (WebSocket), **Wasm** (WebAssembly), or **Other** (any other type not listed here).
+To filter requests by request type, click the buttons on the ![Network icon](./reference-images/network-icon.png) **Network** tool: **All**, **Fetch/XHR**, **Doc**, **CSS**, **JS**, **Font**, **Img**, **Media**, **Manifest**, **WS** (WebSocket), **Wasm** (WebAssembly), or **Other** (any other type not listed here).
 
 If the buttons don't appear, the **Filters** pane might be hidden.  See [Hide the Filters pane](#hide-the-filters-pane), below.
 
@@ -690,7 +702,7 @@ For example:
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Make sure the **All** filter button is selected.
 
@@ -720,7 +732,7 @@ For example:
 
    The status bar at the bottom displays the number of the shown requests out of the total.
 
-Additionally, the **Network** tool shows a warning icon (![Warning icon](./reference-images/warning-icon-cookies-blocked.png)) next to a request with cookies blocked either because of Edge flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the **Issues** tool for more information.
+Additionally, the ![Network icon](./reference-images/network-icon.png) **Network** tool shows a warning icon (![Warning icon](./reference-images/warning-icon-cookies-blocked.png)) next to a request with cookies blocked either because of Edge flags or configuration.  Hover over the icon to see a tooltip with a clue and click it to go to the **Issues** tool for more information.
 
 <!-- ![Warning icons next to a request blocked by Edge flags or configuration](./reference-images/3pc-blocked.png) -->
 
@@ -739,7 +751,7 @@ For example:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -835,7 +847,7 @@ The following shows sorting the Waterfall by total duration.  The lighter portio
 ## Analyze requests
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#analyze -->
 
-So long as DevTools is open, it logs all requests in the **Network** tool.  Use the **Network** tool to analyze requests.
+Whenever DevTools is open, it logs all requests in the ![Network icon](./reference-images/network-icon.png) **Network** tool.  Use the **Network** tool to analyze requests.
 
 
 <!-- ------------------------------ -->
@@ -901,7 +913,7 @@ To group requests by iframes:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -916,7 +928,7 @@ To group requests by iframes:
 
    ![The network request log with requests not grouped](./reference-images/network-request-log-iframes-initial.png)
 
-1. In the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Group by frame** checkbox.
 
    In the **Requests** table, expandable frame names are displayed.
 
@@ -954,7 +966,7 @@ To view the messages of a WebSocket connection:
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
    The **All** filter button is selected by default.  The **Network** panel is empty, displaying no messages.
 
@@ -962,7 +974,7 @@ To view the messages of a WebSocket connection:
 
    In the **Network** tool's **Requests** table, many requests are listed.
 
-1. At the top of the **Network** tool, select the **Socket** filter button, with tooltip: **WebSocket | Web Transport | DirectSocket**.
+1. At the top of the ![Network icon](./reference-images/network-icon.png) **Network** tool, select the **Socket** filter button, with tooltip: **WebSocket | Web Transport | DirectSocket**.
 
    The filtered list of requests is empty.
 
@@ -973,7 +985,7 @@ To view the messages of a WebSocket connection:
    * **Connection Established**
    * **{"error":"Unknown api key"}** with a triangle pointing down; sent from the server to the browser.
 
-   In the **Network** tool, in the **Messages** tab, the request is displayed:
+   In the ![Network icon](./reference-images/network-icon.png) **Network** tool, in the **Messages** tab, the request is displayed:
 
    * **channel_123?api_key=...**
 
@@ -991,7 +1003,7 @@ To view the messages of a WebSocket connection:
 
    In the webpage, the console shows the message **Hello world!** with a triangle pointing up; sent from the browser to the server.
 
-   In the **Network** tool, in the **Messages** tab, the table shows the last 100 messages; in this case, the message is added:
+   In the ![Network icon](./reference-images/network-icon.png) **Network** tool, in the **Messages** tab, the table shows the last 100 messages; in this case, the message is added:
 
    * **Hello world!** with a green up-arrow; sent from the browser to the server:
 
@@ -1048,7 +1060,7 @@ To view the events that servers stream through the Fetch API, the EventSource AP
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1087,7 +1099,7 @@ See also:
 
 To preview the contents of an HTTP response body:
 
-1. In the **Network** tool, In the **Requests** table, in the **Name** column, click the name of a request.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, in the **Requests** table, in the **Name** column, click the name of a request.
 
 1. In the sidebar, select the **Preview** tab:
 
@@ -1144,7 +1156,7 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1178,7 +1190,7 @@ Sometimes the **Headers** tab shows the warning message **Provisional headers ar
 * The network resource isn't valid.
 * Due to security reasons.
 
-Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the **Network** tool, to see the full request headers.  For example:
+Suppose the request wasn't sent over the network but was served from a local cache, which doesn't store the original request headers.  In this case, you can select the **Disable cache** checkbox at the top of the ![Network icon](./reference-images/network-icon.png) **Network** tool, to see the full request headers.  For example:
 
 1. Go to the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page.
 
@@ -1186,7 +1198,7 @@ Suppose the request wasn't sent over the network but was served from a local cac
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1196,7 +1208,7 @@ Suppose the request wasn't sent over the network but was served from a local cac
 
    ![Provisional headers warning message](./reference-images/provisional-headers-warning.png)
 
-1. Select the **Disable cache** checkbox at the top of the **Network** tool.
+1. At the top of the ![Network icon](./reference-images/network-icon.png) **Network** tool, select the **Disable cache** checkbox.
 
 1. Refresh the webpage.
 
@@ -1226,7 +1238,7 @@ To view an HTTP request's payload (query string parameters and form data), selec
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1294,7 +1306,7 @@ To display query string parameters in a human-readable format, but with encoding
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1428,7 +1440,7 @@ To display the timing breakdown of a service worker request:
 
    DevTools opens.
 
-1. Select the **Network** tool.
+1. Select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Reload the page.
 
@@ -1539,11 +1551,13 @@ init();
 
 To see both the transferred size and the uncompressed size of a resource at the same time:
 
-1. In the upper right within the **Network** tool, click the **Network settings** (gear) icon.  A row of checkboxes appears.
+1. In the upper right within the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Network settings** (![](./reference-images/network-settings-icon.png)) icon.
+
+   A row of checkboxes appears.
 
 1. Turn on the **Big request rows** checkbox.
 
-1. Examine the **Size** column in the Request table. The top value is the transferred size, and the bottom value is the size of the resource after the browser uncompresses it:
+1. Examine the **Size** column in the Request table.  The top value is the transferred size, and the bottom value is the size of the resource after the browser uncompresses it:
 
    ![An example of uncompressed resources](./reference-images/requests-uncompressed-compare.png)
 
@@ -1571,7 +1585,7 @@ To save all network requests to a HAR file, without sensitive data:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
@@ -1600,7 +1614,7 @@ To save all network requests to a HAR file, including sensitive data:
 
 1. Click the **Close** (![Close Settings button](./reference-images/close-settings-button.png)) button.
 
-1. In the **Network** tool, right-click any request in the **Requests** table, and then select **Copy** > **Copy all as HAR (with sensitive data)**.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, right-click any request in the **Requests** table, and then select **Copy** > **Copy all as HAR (with sensitive data)**.
 
    Or, in the action bar at the top, click the **Export HAR (either sanitized or with sensitive data)** (![Export HAR icon](./reference-images/export-har-sanitized-icon.png)) button, and then select **Export HAR (with sensitive data)**:
 
@@ -1615,7 +1629,7 @@ After you have a HAR file, you can import it back into DevTools for analysis by 
 
 To import a HAR file into DevTools for analysis:
 
-* In the action bar at the top of the **Network** tool, click the **Import HAR file** (![Import HAR file icon](./reference-images/import-har-file-icon.png)) button.
+* In the action bar at the top of the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Import HAR file** (![Import HAR file icon](./reference-images/import-har-file-icon.png)) button.
 
 * Or, drag the HAR file onto the **Requests** table.
 
@@ -1747,13 +1761,13 @@ To enable big rows:
 
    DevTools opens.
 
-1. In DevTools, select the **Network** tool.
+1. In DevTools, select the ![Network icon](./reference-images/network-icon.png) **Network** tool.
 
 1. Refresh the webpage.
 
    Requests are shown in small rows.
 
-1. In the **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Big request rows** checkbox.
+1. In the ![Network icon](./reference-images/network-icon.png) **Network** tool, click the **Network settings** (![Settings icon](./reference-images/network-settings-icon.png)) button, and then select the **Big request rows** checkbox.
 
    Requests are shown in big rows:
 
