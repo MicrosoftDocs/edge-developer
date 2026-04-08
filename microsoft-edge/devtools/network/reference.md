@@ -1162,7 +1162,7 @@ By default, the **Headers** tab shows header names alphabetically.  To display t
 
    ![Headers tab > View source](./reference-images/view-http-header-source.png)
 
-1. Select the **Raw** checkbox next to the **Response Headers** or **Request Headers** section.
+1. Click **view source**, next to the **Request Header** or **Response Header** section.<!-- todo: test -->
 
 See also:
 * [Display HTTP headers](#display-http-headers), above.
