@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/18/2026
+ms.date: 04/13/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -27,40 +27,119 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.39nn-prerelease, for Runtime 148 (Apr. 13, 2026)
+## Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
 
-Release Date: Apr. 13, 2026
+Release Date: April 13, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/)
-<!-- todo: add rightmost part of url:
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
--->
+[NuGet package for WebView2 SDK 1.0.3965-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3965-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 148.0.3965.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
+<!-- todo: create sections to group APIs -->
 <!-- ---------- -->
 ###### heading
 
 description
 
+
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- todo: group APIs -->
+
+<!-- 3 -->
+* [CoreWebView2OriginFeature Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeature?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * `EnhancedSecurityMode`
+
+<!-- 1 -->
+* [CoreWebView2OriginFeatureSetting Class](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturesetting?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * [CoreWebView2OriginFeatureSetting.Feature Property](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturesetting.feature?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * [CoreWebView2OriginFeatureSetting.State Property](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturesetting.state?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+
+<!-- 4 -->
+* [CoreWebView2OriginFeatureState Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturestate?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * `Disabled`
+   * `Enabled`
+
+<!-- 5 -->
+* [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * `AbnormalExit`
+   * `IntegrityFailure`
+   * `NormalExit`
+
+<!-- 2 -->
+* `CoreWebView2Profile Class`
+   * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.geteffectivefeaturesfororiginasync?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- 3 -->
+* [CoreWebView2OriginFeature Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeature?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true)
+   * `EnhancedSecurityMode`
+
+<!-- 1 -->
+* [CoreWebView2OriginFeatureSetting Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturesetting?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true)
+   * [CoreWebView2OriginFeatureSetting.Feature Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturesetting?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#feature)
+   * [CoreWebView2OriginFeatureSetting.State Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturesetting?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#state)
+
+<!-- 4 -->
+* [CoreWebView2OriginFeatureState Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturestate?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true)
+   * `Disabled`
+   * `Enabled`
+
+<!-- 5 -->
+* [CoreWebView2ProcessFailedReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true)
+   * `AbnormalExit`
+   * `IntegrityFailure`
+   * `NormalExit`
+
+<!-- 2 -->
+* `CoreWebView2Profile Class`
+   * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#geteffectivefeaturesfororiginasync)
+   * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#setoriginfeatures)
+
 ##### [Win32/C++](#tab/win32cpp)
+
+<!-- win32 only: -->
+* [ICoreWebView2ExperimentalGetEffectiveFeaturesForOriginCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalgeteffectivefeaturesfororigincompletedhandler?view=webview2-1.0.3965-prerelease&preserve-view=true)
+
+<!-- 1 -->
+* [ICoreWebView2ExperimentalOriginFeatureSetting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesetting?view=webview2-1.0.3965-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalOriginFeatureSetting::get_Feature](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesetting?view=webview2-1.0.3965-prerelease&preserve-view=true#get_feature)
+   * [ICoreWebView2ExperimentalOriginFeatureSetting::get_State](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesetting?view=webview2-1.0.3965-prerelease&preserve-view=true#get_state)
+
+<!-- win32 only: -->
+* [ICoreWebView2ExperimentalOriginFeatureSettingCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesettingcollectionview?view=webview2-1.0.3965-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalOriginFeatureSettingCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesettingcollectionview?view=webview2-1.0.3965-prerelease&preserve-view=true#get_count)
+   * [ICoreWebView2ExperimentalOriginFeatureSettingCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaloriginfeaturesettingcollectionview?view=webview2-1.0.3965-prerelease&preserve-view=true#getvalueatindex)
+
+<!-- 2 -->
+* [ICoreWebView2ExperimentalProfile16](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalProfile16::CreateOriginFeatureSetting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#createoriginfeaturesetting)
+   * [ICoreWebView2ExperimentalProfile16::GetEffectiveFeaturesForOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#geteffectivefeaturesfororigin)
+   * [ICoreWebView2ExperimentalProfile16::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#setoriginfeatures)
+
+<!-- 3 -->
+* [COREWEBVIEW2_ORIGIN_FEATURE enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3965-prerelease&preserve-view=true#corewebview2_origin_feature)
+   * `COREWEBVIEW2_ORIGIN_FEATURE_ENHANCED_SECURITY_MODE`
+
+<!-- 4 -->
+* [COREWEBVIEW2_ORIGIN_FEATURE_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3965-prerelease&preserve-view=true#corewebview2_origin_feature_state)
+   * `COREWEBVIEW2_ORIGIN_FEATURE_STATE_DISABLED`
+   * `COREWEBVIEW2_ORIGIN_FEATURE_STATE_ENABLED`
+
+<!-- 5 -->
+* `COREWEBVIEW2_PROCESS_FAILED_REASON` enum
+   * `COREWEBVIEW2_PROCESS_FAILED_REASON_ABNORMAL_EXIT`
+   * `COREWEBVIEW2_PROCESS_FAILED_REASON_INTEGRITY_FAILURE`
+   * `COREWEBVIEW2_PROCESS_FAILED_REASON_NORMAL_EXIT`
 
 ---
 
@@ -69,49 +148,38 @@ description
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Fixed the **Print** dialog popup option not being selected in a `CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
+
+* Disabled the Domain Actions component for WebView2.
+
+* Disabled `WebUSBDetector` notification for WebView2.
+
+* Fixed the getter of the <!-- todo: CoreWebView2Profile. --> `PreferredTrackingPreventionLevel` API.
+
+* Fixed WDP clients being unable to connect to a remote debugging server.
+
+* Fixed the WPF sample app closing.
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
+* Split the COM `UNEXPECTED` reason<!-- todo: `HRESULT`? --> into more granular values.
 
-<!-- end of Prerelease SDK 1.0.39nn-prerelease, for Runtime 148 (Apr. 13, 2026) -->
+* Enabled histogram logging for browser process crashes in WebView2.
+
+<!-- end of Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026) -->
 
 
 <!-- ====================================================================== -->
@@ -139,7 +207,7 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Disabled the domain actions component for WebView2.
+* Disabled the Domain Actions component for WebView2.
 
 * Fixed WDP clients being unable to connect to a remote debugging server.
 
