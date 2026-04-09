@@ -143,6 +143,7 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 * `CoreWebView2Profile Class`
    * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.geteffectivefeaturesfororiginasync?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
    * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+   <!-- * todo: .CreateOriginFeatureSetting Method, like win32? -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -164,6 +165,7 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 * `CoreWebView2Profile Class`
    * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#geteffectivefeaturesfororiginasync)
    * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#setoriginfeatures)
+   <!-- * todo: .CreateOriginFeatureSetting Method, like win32? -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
