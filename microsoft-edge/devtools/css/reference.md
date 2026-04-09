@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/02/2026
+ms.date: 04/09/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,13 +24,12 @@ ms.date: 04/02/2026
 # CSS features reference
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
 
-<!-- todo: sync content in incoming, commented out sections -->
-
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
 To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
 
 **Detailed contents:**<!-- https://github.com/captainbrosset/WebToc -->
+<!-- todo: update -->
 * [Select an element](#select-an-element)
 * [View CSS](#view-css)
    * [View the external stylesheet where a rule is defined](#view-the-external-stylesheet-where-a-rule-is-defined)
@@ -92,28 +91,38 @@ Use the **Elements** > **Styles** and **Computed** tabs to view CSS rules and di
 
 
 <!-- ------------------------------ -->
-<!-- #### Navigate with links -->
+#### Navigate with links
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#links -->
+
+todo
 
 
 <!-- ------------------------------ -->
-<!-- #### View tooltips with CSS documentation, specificity, and custom property values -->
+#### View tooltips with CSS documentation, specificity, and custom property values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#tooltips -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View CSS documentation -->
+###### View CSS documentation
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-docs -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View selector specificity -->
+###### View selector specificity
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#selector-specificity -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View the values of custom properties -->
+###### View the values of custom properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-css -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -132,8 +141,10 @@ In the following figure, after you click
 
 
 <!-- ------------------------------ -->
-<!-- #### View invalid, overridden, inactive, and other CSS -->
+#### View invalid, overridden, inactive, and other CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#css-issues -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -172,33 +183,45 @@ Check the **Show All** checkbox in the **Computed** pane.  See [View only the CS
 
 
 <!-- ------------------------------ -->
-<!-- #### View CSS at-rules -->
+#### View CSS at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#at-rules -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View @property at-rules -->
+###### View @property at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#property -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View @supports at-rules -->
+###### View @supports at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#supports -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View @scope at-rules -->
+###### View @scope at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#scope -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View @font-palette-values at-rules -->
+###### View @font-palette-values at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#font-palette-values -->
 
+todo
+
 
 <!-- ---------- -->
-<!-- ###### View @position-try at-rules -->
+###### View @position-try at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -232,8 +255,10 @@ In the following figure, the **Computed** pane is filtered to only show declarat
 
 
 <!-- ------------------------------ -->
-<!-- #### Emulate a focused page -->
+#### Emulate a focused page
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#focus -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -283,13 +308,17 @@ For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md
 
 
 <!-- ------------------------------ -->
-<!-- #### View inherited highlight pseudo-elements -->
+#### View inherited highlight pseudo-elements
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements -->
+
+todo
 
 
 <!-- ------------------------------ -->
-<!-- #### View cascade layers -->
+#### View cascade layers
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#cascade-layers -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -342,8 +371,10 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 
 <!-- ====================================================================== -->
-<!-- ## Copy CSS -->
+## Copy CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css -->
+
+todo
 
 
 <!-- ====================================================================== -->
@@ -423,13 +454,17 @@ To change a numerical value, type in the value, or use the arrow keys, per the n
 
 
 <!-- ------------------------------ -->
-<!-- #### Change enumerable values with keyboard shortcuts -->
+#### Change enumerable values with keyboard shortcuts
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#values-shortcuts -->
+
+todo
 
 
 <!-- ------------------------------ -->
-<!-- #### Change length values -->
+#### Change length values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -466,7 +501,9 @@ To add a class to an element:
 
 
 <!-- ------------------------------ -->
-<!-- #### Emulate light and dark theme preferences and enable automatic dark mode -->
+#### Emulate light and dark theme preferences and enable automatic dark mode
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -543,13 +580,17 @@ To toggle a single declaration on or off:
 
 
 <!-- ------------------------------ -->
-<!-- #### Edit the ::view-transition pseudo-elements during an animation -->
+#### Edit the ::view-transition pseudo-elements during an animation
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-transition -->
+
+todo
 
 
 <!-- ------------------------------ -->
-<!-- #### Align grid items and their content with the Grid Editor -->
+#### Align grid items and their content with the Grid Editor
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#grid-editor -->
+
+todo
 
 
 <!-- ------------------------------ -->
@@ -697,18 +738,24 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 
 
 <!-- ------------------------------ -->
-<!-- #### Use presets to adjust timings -->
+#### Use presets to adjust timings
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#presets -->
+
+todo
 
 
 <!-- ------------------------------ -->
-<!-- #### Configure custom timings -->
+#### Configure custom timings
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-timings -->
+
+todo
 
 
 <!-- ====================================================================== -->
-<!-- ## (Experimental) Copy CSS changes -->
+## (Experimental) Copy CSS changes
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
+
+todo
 
 
 <!-- ====================================================================== -->
