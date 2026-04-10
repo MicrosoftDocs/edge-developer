@@ -60,11 +60,11 @@ The `msWebView2GranularProcessFailedReason` feature flag is disabled by default 
  
 `set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msWebView2GranularProcessFailedReason`
 
+This is a bug fix for the Runtime and SDK.  These enum members have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.  These enum members are not a new API that has been introduced; this is a modification of an existing stable<!-- todo: in Prerelease (Phase 2)? in Release? Phase 3 --> API.
+
 See also:
 * [[Breaking Change] Granular Process Failure Reasons in WebView2](https://github.com/MicrosoftEdge/WebView2Announcements/issues/todo)
  
-This is a bug fix for the Runtime and SDK.  These enum members are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
@@ -87,13 +87,13 @@ This is a bug fix for the Runtime and SDK.  These enum members are in Phase 1: E
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3965-prerelease&preserve-view=true#corewebview2_process_failed_reason)
+* `ICoreWebView2ProcessFailedEventArgs2`
+   * [ICoreWebView2ProcessFailedEventArgs2::get_Reason](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2?view=webview2-1.0.3965-prerelease&preserve-view=true#get_reason)
+
+* [COREWEBVIEW2_PROCESS_FAILED_REASON enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.3965-prerelease&preserve-view=true#corewebview2_process_failed_reason)
    * `COREWEBVIEW2_PROCESS_FAILED_REASON_ABNORMAL_EXIT`
    * `COREWEBVIEW2_PROCESS_FAILED_REASON_INTEGRITY_FAILURE`
    * `COREWEBVIEW2_PROCESS_FAILED_REASON_NORMAL_EXIT`
-
-* `ICoreWebView2ProcessFailedEventArgs2`
-   * [ICoreWebView2ProcessFailedEventArgs2::get_Reason](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs2?view=webview2-1.0.3965-prerelease&preserve-view=true#get_reason)
 
 ---
 
@@ -102,14 +102,6 @@ This is a bug fix for the Runtime and SDK.  These enum members are in Phase 1: E
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### Granular process failure reasons for the `ProcessFailed` event
-
-Replaced the `CoreWebView2ProcessFailedReason.Unexpected` enum member by more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.
-
-This is a breaking change; see [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
 
 <!-- ---------- -->
@@ -143,7 +135,6 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 * `CoreWebView2Profile Class`
    * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.geteffectivefeaturesfororiginasync?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
    * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
-   <!-- * todo: .CreateOriginFeatureSetting Method, like win32? -->
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -165,7 +156,6 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 * `CoreWebView2Profile Class`
    * [CoreWebView2Profile.GetEffectiveFeaturesForOriginAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#geteffectivefeaturesfororiginasync)
    * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#setoriginfeatures)
-   <!-- * todo: .CreateOriginFeatureSetting Method, like win32? -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -184,7 +174,7 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 
 <!-- 2 -->
 * [ICoreWebView2ExperimentalProfile16](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalProfile16::CreateOriginFeatureSetting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#createoriginfeaturesetting)
+   * [ICoreWebView2ExperimentalProfile16::CreateOriginFeatureSetting](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#createoriginfeaturesetting)<!-- win32 only -->
    * [ICoreWebView2ExperimentalProfile16::GetEffectiveFeaturesForOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#geteffectivefeaturesfororigin)
    * [ICoreWebView2ExperimentalProfile16::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.3965-prerelease&preserve-view=true#setoriginfeatures)
 
@@ -203,7 +193,15 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 <!-- ------------------------------ -->
 #### Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### Granular process failure reasons for the `ProcessFailed` event
+
+Replaced the `CoreWebView2ProcessFailedReason.Unexpected` enum member by more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.
+
+This is a breaking change; see [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
 
 <!-- ------------------------------ -->
