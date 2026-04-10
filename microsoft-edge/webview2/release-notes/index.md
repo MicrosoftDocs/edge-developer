@@ -191,9 +191,9 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
+#### Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs have been modified in Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
