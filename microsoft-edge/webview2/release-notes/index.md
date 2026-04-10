@@ -67,23 +67,23 @@ See also:
  
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* `CoreWebView2ProcessFailedEventArgs` Class
+   * [CoreWebView2ProcessFailedEventArgs.Reason Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.reason?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
+
 * [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
    * `AbnormalExit`
    * `IntegrityFailure`
    * `NormalExit`
 
-* `CoreWebView2ProcessFailedEventArgs` Class
-   * [CoreWebView2ProcessFailedEventArgs.Reason Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.reason?view=webview2-dotnet-1.0.3965-prerelease&preserve-view=true)
-
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ProcessFailedEventArgs` Class
+   * [CoreWebView2ProcessFailedEventArgs.Reason Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#reason)
 
 * [CoreWebView2ProcessFailedReason Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedreason?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true)
    * `AbnormalExit`
    * `IntegrityFailure`
    * `NormalExit`
-
-* `CoreWebView2ProcessFailedEventArgs` Class
-   * [CoreWebView2ProcessFailedEventArgs.Reason Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.3965-prerelease&preserve-view=true#reason)
 
 ##### [Win32/C++](#tab/win32cpp)
 
