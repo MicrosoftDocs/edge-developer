@@ -309,7 +309,7 @@ Only Safari supports the CIELAB color space. https://caniuse.com/?search=lab
 
 The Styles tab shows you CSS @scope at-rules if they are applied to an element.
 
-The new @scope at-rules are a part of the CSS Cascading and Inheritance Level 6 specification. These rules allow you to scope CSS styles, in other words, explicitly apply styles to specific elements.
+The `@scope` at-rules are a part of the CSS Cascading and Inheritance Level 6 specification. These rules allow you to scope CSS styles, in other words, explicitly apply styles to specific elements.
 
 The @scope at-rule feature is experimental. To test it, enable the Experimental Web Platform features flag in chrome://flags/#enable-experimental-web-platform-features. Otherwise, the next preview doesn't work.
 
