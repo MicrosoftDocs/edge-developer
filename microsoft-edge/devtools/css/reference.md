@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/09/2026
+ms.date: 04/10/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -123,34 +123,32 @@ Use the **Elements** > **Styles** and **Computed** tabs to view CSS rules and di
 
 <!-- todo: format, link, pngs -->
 
-The Styles tab displays links in various places to various other places, including but not limited to:
+The **Styles** tab displays links in various places to various other places, including but not limited to:
 
-Next to CSS rules, to style sheets and CSS sources. Such links open the Sources panel. If the style sheet is minified, see Make a minified file readable.
+* Next to CSS rules, to style sheets and CSS sources. Such links open the **Sources** tool.  If the style sheet is minified, see [Make a minified file readable].  https://developer.chrome.com/docs/devtools/javascript/reference#format
 
-In the Inherited from ... sections, to parent elements.
+* In the **Inherited from** sections, to parent elements.
 
-In var() calls, to custom property declarations.
+* In `var()` calls, to custom property declarations.
 
-In animation shorthand properties, to @keyframes.
+* In animation shorthand properties, to @keyframes.
 
-Learn more links in documentation tooltips.
+* Learn more links in documentation tooltips.
 
-And more.
+* And more.
 
 Here are some of them highlighted:
 
-Various links highlighted.
+![Various links highlighted] todo  various-links-highlighted.png
 
-Links may be styled differently. If you're not sure if something is a link, try clicking it to find out.
+Links may be styled differently.  If you're not sure if something is a link, try clicking it to find out.
 
 
 <!-- ------------------------------ -->
 #### View tooltips with CSS documentation, specificity, and custom property values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#tooltips -->
 
-<!-- todo: format, link, pngs -->
-
-Elements > Styles shows tooltips with useful information when you hover over specific elements.
+In the **Elements** tool, the **Styles** tab shows tooltips with useful information when you hover over specific elements.
 
 
 <!-- ---------- -->
@@ -159,17 +157,33 @@ Elements > Styles shows tooltips with useful information when you hover over spe
 
 <!-- todo: format, link, pngs -->
 
-To see a tooltip with a short CSS description, hover over the property name in the Styles tab.
+To see a tooltip that contains a CSS description:
 
-DevTools pulls the descriptions for tooltips from VS Code Custom Data.
+1. In DevTools, in the **Elements** tool, select the **Styles** tab.
 
-The tooltip with documentation on a CSS property.
+1. Hover over the property name.
 
-Click Learn more to go to an MDN CSS Reference on this property.
+   DevTools pulls the descriptions for tooltips from [VS Code Custom Data]. https://github.com/microsoft/vscode-custom-data
 
-To turn the tooltips off, check Checkbox. Don't show.
+   ![The tooltip with documentation on a CSS property] todo the-tooltip-documentation.png
 
-To turn them back on, check Settings. Settings > Preferences > Elements > Checkbox. Show CSS documentation tooltip.
+1. In the tooltip, click the **Learn more** link.
+
+   The [MDN CSS Reference](https://developer.mozilla.org/docs/Web/CSS/Reference) page is displayed for this property.
+
+
+To turn the tooltips off:
+
+* In the tooltip, select the **Don't show** checkbox.
+
+
+To turn the tooltips on again:
+
+1. In DevTools, select **Customize and control DevTools**, and then select **Settings**.
+
+1. In the outline on the left, select **Preferences**, and then scroll down to the **Elements** section.
+
+1. Select the **Show CSS documentation tooltip** checkbox.
 
 
 <!-- ---------- -->
@@ -178,9 +192,12 @@ To turn them back on, check Settings. Settings > Preferences > Elements > Checkb
 
 <!-- todo: format, link, pngs -->
 
-Hover over a selector to see a tooltip with its specificity weight.
+Hover over a selector to see a tooltip that shows the selector's specificity weight, such as: **Specificity: (0,0,1)**:
 
-The tooltip with specificity weight of a matched selector.
+![The tooltip with specificity weight of a matched selector] the-tooltip-specificity.png todo
+
+See also:
+* [Specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity) - MDN.
 
 
 <!-- ---------- -->
@@ -189,9 +206,12 @@ The tooltip with specificity weight of a matched selector.
 
 <!-- todo: format, link, pngs -->
 
-Hover over a --custom-property to see its value in a tooltip.
+Hover over a `--custom-property` to see its value in a tooltip.
 
-The value of a custom property in a tooltip.
+![The value of a custom property in a tooltip] the-value-a-custom-property.png todo
+
+See also:
+* [Custom properties (--*): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*) - MDN.
 
 
 <!-- ------------------------------ -->
@@ -215,9 +235,10 @@ In the following figure, after you click
 
 <!-- todo: format, link, pngs -->
 
-The Styles tab recognizes many kinds of CSS issues and highlights them in different ways.
+The **Styles** tab recognizes many kinds of CSS issues and highlights them in different ways.
 
-See Understand CSS in the Styles tab.
+See also:
+* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles) in _Find invalid, overridden, inactive, and other CSS_.
 
 
 <!-- ------------------------------ -->
@@ -262,15 +283,15 @@ Check the **Show All** checkbox in the **Computed** pane.  See [View only the CS
 #### View CSS at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#at-rules -->
 
-<!-- todo: format, link, pngs -->
+At-rules are CSS statements that let you control CSS behavior.
 
-At-rules are CSS statements that let you control CSS behavior. Elements > Styles shows the following at-rules in dedicated sections:
+In the **Elements** tool, the **Styles** tab shows the following at-rules in dedicated sections:
 
-@property
-@supports
-@scope
-@font-palette-values
-@position-try
+* `@property` - see [View `@property` at-rules](#view-property-at-rules), below.
+* `@supports` - see [View `@supports` at-rules](#view-supports-at-rules), below.
+* `@scope` - see [View `@scope` at-rules](#view-scope-at-rules), below.
+* `@font-palette-values` - see [View `@font-palette-values` at-rules](#view-font-palette-values-at-rules), below.
+* `@position-try` - see [View `@position-try` at-rules](#view-position-try-at-rules), below.
 
 
 <!-- ---------- -->
@@ -279,11 +300,13 @@ At-rules are CSS statements that let you control CSS behavior. Elements > Styles
 
 <!-- todo: format, link, pngs -->
 
-The @property CSS at-rule lets you define CSS custom properties explicitly and register them in a style sheet without running any JavaScript.
+The [@property CSS at-rule] https://web.dev/articles/at-property lets you define [CSS custom properties] https://developer.mozilla.org/docs/Web/CSS/--* explicitly and register them in a style sheet without running any JavaScript.
 
-Hover over the name of such property in the Styles tab, to see a tooltip with the property's value, descriptors, and a link to its registration in the collapsible @property section at the bottom of the Styles tab.
+Hover over the name of such property in the **Styles** tab, to see a tooltip with the property's value, descriptors, and a link to its registration in the collapsible `@property` section at the bottom of the **Styles** tab.
 
-To edit an @property rule, double-click its name or value.
+![] todo
+
+To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
 
 <!-- ---------- -->
@@ -292,13 +315,18 @@ To edit an @property rule, double-click its name or value.
 
 <!-- todo: format, link, pngs -->
 
-The Styles tab shows you the @supports CSS at-rules if they are applied to an element. For example, inspect the following element:
+The **Styles** tab shows you the `@supports` CSS at-rules, if they are applied to an element.
 
-View @supports at-rules.
+For example, inspect the following element in the present article: I support CIE LAB color space!<!-- todo: inspect upstream -->
 
-If your browser supports the lab() function, the element is green, otherwise it's purple.
+![View @supports at-rules] view-supports-rules.png todo
+<!-- png shows localhost:8080/docs/devtools/css/reference -->
 
-Only Safari supports the CIELAB color space. https://caniuse.com/?search=lab
+* If your browser supports the `lab()` function, the element is green.
+
+* If your browser doesn't support the `lab()` function, the element is purple.
+
+To see which browser versions support the CIE LAB color space, [search Caniuse.com for "lab"](https://caniuse.com/?search=lab).
 
 
 <!-- ---------- -->
@@ -307,24 +335,23 @@ Only Safari supports the CIELAB color space. https://caniuse.com/?search=lab
 
 <!-- todo: format, link, pngs -->
 
-The Styles tab shows you CSS @scope at-rules if they are applied to an element.
+The **Styles** tab shows you [CSS @scope at-rules] https://drafts.csswg.org/css-cascade-6/#scope-atrule if they are applied to an element.
 
-The `@scope` at-rules are a part of the CSS Cascading and Inheritance Level 6 specification. These rules allow you to scope CSS styles, in other words, explicitly apply styles to specific elements.
+The `@scope` at-rules are a part of the [CSS Cascading and Inheritance Level 6 specification] https://drafts.csswg.org/css-cascade-6/ . These rules allow you to scope CSS styles, in other words, explicitly apply styles to specific elements.
 
-The @scope at-rule feature is experimental. To test it, enable the Experimental Web Platform features flag in chrome://flags/#enable-experimental-web-platform-features. Otherwise, the next preview doesn't work.
+The `@scope` at-rule feature is experimental.  To test the feature, enable the **Experimental Web Platform features** flag in `edge://flags/#enable-experimental-web-platform-features`.  Otherwise, the next preview doesn't work.
 
-View the @scope rule in the following preview:
+View the `@scope` rule in the following preview:
 
+1. [Inspect the text](https://developer.chrome.com/docs/devtools/open#elements)<!-- todo: anchor doesn't exist, heading doesn't exist --> on the card in the preview.
 
-Inspect the text on the card in the preview.
+On the **Styles** tab, find the `@scope` rule.
 
-On the Styles tab, find the @scope rule.
+![The @scope rule] todo the-scope-rule.png
 
-The @scope rule.
+In this example, the `@scope` rule overrides the global CSS `background-color` declaration for all `<p>` elements inside elements with a `card` class.
 
-In this example, the @scope rule overrides the global CSS background-color declaration for all <p> elements inside elements with a card class.
-
-To edit the @scope rule, double-click it.
+To edit the `@scope` rule, double-click it.
 
 
 <!-- ---------- -->
@@ -333,17 +360,17 @@ To edit the @scope rule, double-click it.
 
 <!-- todo: format, link, pngs -->
 
-The @font-palette-values CSS at-rule lets you customize the default values of the font-palette property. Elements > Styles shows this at-rule in a dedicated section.
+The [@font-palette-values CSS at-rule] https://developer.mozilla.org/docs/Web/CSS/@font-palette-values lets you customize the default values of the `font-palette` property.  In the **Elements** tool, the **Styles** tab shows this at-rule in a dedicated section.
 
-View the @font-palette-values section in the next preview:
+View the `@font-palette-values` section in the next preview:
 
-Inspect the second line of text in the preview.
+![Inspect the second line of text in the preview] <!-- todo: embedded frame -->
 
-In Styles, find the @font-palette-values section.
+In the **Elements** tool, in the **Styles** tab, find the `@font-palette-values` rule section:
 
-The @font-palette-values rule.
+![The @font-palette-values rule] todo at-font-palette-values.png
 
-In this example, the --New font palette values override the default ones of the colored font.
+In this example, the `--New` font palette values override the default ones of the colored font.
 
 To edit your custom values, double-click them.
 
@@ -354,29 +381,36 @@ To edit your custom values, double-click them.
 
 <!-- todo: format, link, pngs -->
 
-The @position-try CSS rule along with the position-try-options property lets you define alternative anchor positions for elements. To learn more, see Introducing the CSS anchor positioning API.
+The `@position-try` CSS rule along with the `position-try-options` property lets you define alternative anchor positions for elements.  To learn more, see [Introducing the CSS anchor positioning API] https://developer.chrome.com/blog/anchor-positioning-api .
 
-Elements > Styles resolves and links the following:
+See also:
+* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
 
-position-try-options property values to a dedicated @position-try --name section.
+In the **Elements** tool, the **Styles** tab resolves and links the following:
 
-position-anchor property values and anchor() arguments to the corresponding elements with popovertarget attributes.
+* `position-try-options` property values to a dedicated `@position-try --name` section.
 
-Inspect the position-try-options values and @position-try sections in the next preview:
+* `position-anchor` property values and `anchor()` arguments to the corresponding elements with `popovertarget` attributes.
 
-Demo using anchor with popover
+Inspect the `position-try-options` values and `@position-try` sections in the next preview (demo):
 
-In the preview, open the submenu, that is, click YOUR ACCOUNT then STOREFRONT.
+todo: image: Demo using anchor with popover
 
-Inspect the element with id="submenu" in the preview.
+1. In the preview (demo), open the submenu; that is, click **YOUR ACCOUNT**, and then click **STOREFRONT**.
 
-In Styles, find the position-try-options property and click its --bottom value. The Styles tab takes you to the corresponding @position-try section.
+1. [Inspect] https://developer.chrome.com/docs/devtools/open#elements the element with `id="submenu"` in the preview.
 
-Click the position-anchor value link or the same anchor() arguments. The Elements panel selects the element with the corresponding popovertarget attribute and the Styles tab shows the element's CSS.
+1. In the **Styles** tab, find the `position-try-options` property, and click its `--bottom` value.
 
-The position-try-options property, the @position-try section, and the element with the popover target attribute.
+   The **Styles** tab takes you to the corresponding `@position-try` section.
 
-To edit values, double-click them.
+1. Click the `position-anchor` value link or the same `anchor()` arguments.
+
+   The **Elements** tool selects the element with the corresponding `popovertarget` attribute, and the **Styles** tab shows the element's CSS:
+
+   ![The position-try-options property, the @position-try section, and the element with the popover target attribute] todo at-position-try.png
+
+To edit a value, double-click the value.
 
 
 <!-- ------------------------------ -->
@@ -415,23 +449,32 @@ In the following figure, the **Computed** pane is filtered to only show declarat
 
 <!-- todo: format, link, pngs -->
 
-If you switch focus from the page to DevTools, some overlay elements automatically hide if they are triggered by focus. For example, drop-down lists, menus, or date pickers. The check_box Emulate a focused page option lets you debug such an element as if it is in focus.
+If you switch focus from the webpage to DevTools, some overlay elements automatically hide, if they are triggered by focus.  For example:
+* Dropdown lists.
+* Menus.
+* Date pickers.
 
-Caution: With this option turned on, the document.visibilityState is set to visible and the visibilitychange event doesn't fire. For more information, see Page Visibility API.
+To debug such an element as if the page has focus, select the **Emulate a focused page** checkbox.
 
-Try emulating a focused page on this demo page:
+**Caution:** When this option is on, the `document.visibilityState` is set to `visible` and the `visibilitychange` event doesn't fire.  See [Page Visibility API](https://developer.mozilla.org/docs/Web/API/Page_Visibility_API) at MDN.
 
-Focus the input element. Another element appears under it.
+Try emulating a focused page on this [demo page] https://jec.fish/demo/disappearing-pop-up:
 
-Open DevTools. The DevTools window is now in focus instead of the page, so the element disappears again.
+1. Focus the input element.
 
-In Elements > Styles, click :hov, check check_box Emulate a focused page, and make sure the input element is selected. You can now inspect the element under it.
+   Another element appears under it.
 
-Before and after turning on the 'Emulate a focused page' option.
+1. [Open DevTools] https://developer.chrome.com/docs/devtools/open .
 
-You can also find the same option on the Rendering panel.
+   The DevTools window is now in focus instead of the page, so the element disappears again.
 
-To discover more ways to freeze an element, see Freeze screen and inspect disappearing elements.
+1. In the **Elements** tool, in the **Styles** tab, click `:hov`, select the **Emulate a focused page** checkbox, and then make sure the input element is selected; see [Select an element](#select-an-element), above.  You can now inspect the element under it.
+
+   ![Before and after turning on the 'Emulate a focused page' option] todo emulate-focused-page.png
+
+You can also find [the same option on the Rendering panel] https://developer.chrome.com/docs/devtools/rendering/apply-effects#emulate_a_focused_page .
+
+To discover more ways to freeze an element, see [Freeze screen and inspect disappearing elements] https://developer.chrome.com/blog/devtools-tips-35 .
 
 
 <!-- ------------------------------ -->
@@ -485,23 +528,29 @@ For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md
 
 <!-- todo: format, link, pngs -->
 
-Pseudo-elements let you style specific parts of elements. Highlight pseudo-elements are document portions with a "selected" status and they are styled as "highlighted" to indicate this status to the user. For example, such pseudo-elements are ::selection, ::spelling-error, ::grammar-error, and ::highlight.
+[Pseudo-elements] https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements  let you style specific parts of elements.  Highlight pseudo-elements are document portions with a "selected" status and they are styled as "highlighted" to indicate this status to the user.
 
-As mentioned in the specification, when multiple styles conflict, cascade determines the winning style.
+For example, such pseudo-elements are:
+* `::selection`
+* `::spelling-error`
+* `::grammar-error`
+* `::highlight`
 
-To enable this feature, run Chrome with the --enable-blink-features=HighlightInheritance flag.
+As mentioned in the [specification] https://drafts.csswg.org/css-pseudo-4/#highlight-cascade, when multiple styles conflict, cascade determines the winning style.
+
+To enable this feature, run Microsoft Edge with the `--enable-blink-features=HighlightInheritance` flag.
 
 To better understand the inheritance and priority of the rules, you can view the inherited highlight pseudo-elements:
 
-Inspect the text below.
+1. [Inspect the text below] https://developer.chrome.com/docs/devtools/open#elements.
 
-I inherited the style of my parent's highlight pseudo-element. Select me!
+   I inherited the style of my parent's highlight pseudo-element. Select me!<!-- todo: a demo? -->
 
-Select a portion of the text above.
+1. Select a portion of the text above.
 
-In the Styles tab, scroll down to find the Inherited from ::selection pseudo of... section.
+1. In the **Elements** tool, in the **Styles** tab, scroll down to find the `Inherited from ::selection pseudo of...` section.
 
-View the Inherited section of the Styles tab.
+   ![View the Inherited section of the Styles tab] todo view-inherited-section.png
 
 
 <!-- ------------------------------ -->
@@ -510,17 +559,19 @@ View the Inherited section of the Styles tab.
 
 <!-- todo: format, link, pngs -->
 
-Cascade layers enable more explicit control of your CSS files to prevent style-specificity conflicts. This is useful for large codebases, design systems, and when managing third-party styles in applications.
+[Cascade layers] https://developer.chrome.com/blog/cascade-layers enable more explicit control of your CSS files to prevent style-specificity conflicts.  This is useful for large codebases, design systems, and when managing third-party styles in applications.
 
-To view cascade layers, inspect the next element and open Elements > Styles.
+To view cascade layers, [inspect] https://developer.chrome.com/docs/devtools/open#elements the next element and in the **Elements** tool, select the **Styles** tab:
 
-In the Styles tab, view the 3 cascade layers and their styles: page, component and base.
+todo: demo: My styles are layered!
 
-Cascade layers.
+In the **Styles** tab, view the 3 cascade layers and their styles: `page`, `component` and `base`.
 
-To view the layer order, click the layer name or the Toggle layers. Toggle CSS layers view button.
+![Cascade layers] todo cascade-layers.png
 
-The page layer has the highest specificity, therefore the element's background is green.
+To view the layer order, click the layer name or the ![the "Toggle CSS layers view" icon todo] **Toggle CSS layers view** button.
+
+The `page` layer has the highest specificity, therefore the element's background is green.
 
 
 <!-- ------------------------------ -->
@@ -529,11 +580,25 @@ The page layer has the highest specificity, therefore the element's background i
 
 To view a page in print mode:
 
-1. Open the [Command Menu](../command-menu/index.md).
+1. Go to a webpage.
 
-1. Start typing `rendering`, and then select **Show Rendering**.
+1. Right-click the webpage, and then select **Inspect**.
 
-1. Click the **Emulate CSS Media** dropdown list, and then select **print**.
+   DevTools opens.
+
+1. Press **Esc** once or twice, so that the **Quick View** toolbar appears at the bottom of DevTools.
+
+1. On the **Quick View** toolbar, select **More tools** (**+**).
+
+1. Select the **Rendering** tool.
+
+   The **Rendering** tool opens in the **Quick View** panel at the bottom of DevTools.
+
+1. In the **Rendering** tool, click the **Emulate CSS media type** dropdown list, and then select **print**.
+
+   The webpage is rendered as if printing.
+
+1. When finished, in the **Rendering** tool, click the **Emulate CSS media type** dropdown list, and then select **No emulation**.
 
 
 <!-- ------------------------------ -->
@@ -545,11 +610,11 @@ The **Coverage** tool shows you what CSS a page actually uses.
 1. Open the [Command Menu](../command-menu/index.md) by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS), while DevTools has focus.
 
 1. Start typing `coverage`, and then select **Show Coverage**:
-   
+
    ![Opening the Coverage tool from the Command Menu](./reference-images/css-console-command-menu-coverage.png)
-   
+
    The **Coverage** tool appears:
-   
+
    ![The Coverage tool](./reference-images/css-console-qs-coverage-empty.png)
 
 1. Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](./reference-images/refresh-icon.png)).  The page refreshes and the **Coverage** tool provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
@@ -578,35 +643,37 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 <!-- todo: format, link, pngs -->
 
-From a single drop-down menu in the Styles tab, you can copy separate CSS rules, declarations, properties, values
+From a single dropdown menu in the **Styles** tab, you can copy separate CSS rules, declarations, properties, or values; see [CSS syntax basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS#css_syntax_basics) in _What is CSS?_ at MDN.
 
-Additionally, you can copy CSS properties in JavaScript syntax. This option is handy if you're using CSS-in-JS libraries.
+Additionally, you can copy CSS properties in JavaScript syntax. This option is handy if you're using [CSS-in-JS] https://developer.chrome.com/blog/css-in-js libraries.
 
 To copy CSS:
 
-Select an element.
+1. [Select an element](#select-an-element), per above.
 
-In the Elements > Styles tab, right-click a CSS property. Copy CSS drop-down menu.
+1. In the **Elements** tool, in the **Styles** tab, right-click a CSS property.
 
-Select one of the following options from the drop-down menu:
+   ![Copy CSS dropdown menu] todo copy-css-dropdown-menu.png
 
-Copy declaration. Copies the property and its value in CSS syntax: css property: value;
+1. Select one of the following options from the dropdown menu:
 
-Copy property. Copies only the property name.
+   * **Copy declaration**. Copies the property and its value in CSS syntax: `css property: value;`
 
-Copy value. Copies only the value.
+   * **Copy property**. Copies only the `property` name.
 
-Copy rule. Copies the entire CSS rule: css selector[, selector] { property: value; property: value; ... }
+   * **Copy value**. Copies only the `value`.
 
-Copy declaration as JS. Copies the property and its value in JavaScript syntax: js propertyInCamelCase: 'value'
+   * **Copy rule**. Copies the entire CSS rule: `css selector[, selector] { property: value; property: value; ... }`
 
-Copy all declarations. Copies all properties and their values in the CSS rule: css property: value; property: value; ...
+   * **Copy declaration as JS**. Copies the property and its value in JavaScript syntax: `js propertyInCamelCase: 'value'`
 
-Copy all declarations as JS. Copies all properties and their values in JavaScript syntax: ```js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...
+   * **Copy all declarations**. Copies all properties and their values in the CSS rule: `css property: value; property: value; ...`
 
-Copy all CSS changes. Copies the changes you make in the Styles tab across all declarations.
+   * **Copy all declarations as JS**. Copies all properties and their values in JavaScript syntax: `js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
 
-View computed value. Takes you to the Computed tab.
+   * **Copy all CSS changes**. Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.
+
+   * **View computed value**. Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
 
 
 <!-- ====================================================================== -->
@@ -690,19 +757,18 @@ To change a numerical value, type in the value, or use the arrow keys, per the n
 #### Change enumerable values with keyboard shortcuts
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#values-shortcuts -->
 
-<!-- todo: format, link, pngs -->
+While editing an enumerable value of a declaration, for example, `font-size`, you can use the following keyboard shortcuts to increment the value by a fixed amount:
 
-While editing an enumerable value of a declaration, for example, font-size, you can use the following keyboard shortcuts to increment the value by a fixed amount:
+| Key combination | Action |
+|---|---|
+| **Alt+UpArrow** (Windows, Linux), **Option+UpArrow** (macOS) | Increment by 0.1. |
+| **UpArrow** | Increment by 1, or by 0.1 if the current value is between -1 and 1. |
+| **Shift+UpArrow** | Increment by 10. |
+| **Ctrl+Shift+PgUp** (Windows, Linux), **Shift+Command+UpArrow** (macOS) | Increment by 100. |
 
-Option+Up (Mac) or Alt+Up (Windows, Linux) to increment by 0.1.
+<!-- https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/term-collections/keys-keyboard-shortcuts -->
 
-Up to change the value by 1, or by 0.1 if the current value is between -1 and 1.
-
-Shift+Up to increment by 10.
-
-Shift+Command+Up (Mac) or Control+Shift+Page Up (Windows, Linux) to increment the value by 100.
-
-Decrementing also works. Just replace each instance of Up mentioned earlier with Down.
+To decrement, press **DownArrow** instead of **UpArrow**.
 
 
 <!-- ------------------------------ -->
@@ -711,23 +777,31 @@ Decrementing also works. Just replace each instance of Up mentioned earlier with
 
 <!-- todo: format, link, pngs -->
 
-Deprecated: This feature is deprecated in Chrome 123. To temporarily turn it back on again, clear the settings Settings > Experiments > check_box Deprecate CSS <length> authoring tool in the Styles tab. Feel free to leave feedback in crbug/1522657.
+Deprecated: This feature is deprecated in Microsoft Edge 123.  To temporarily turn this feature on,  clear the checkbox **Customize and control DevTools** > **Settings** > **Experiments** >**Deprecate CSS `<length>` authoring tool in the Styles tab**<!-- todo: no such experiment -->.  You can leave feedback in [crbug/1522657] https://issues.chromium.org/issues/41495618.
 
-You can use your pointer to change any property with length, such as width, height, padding, margin, or border.
+You can use your pointer to change any property with `length`, such as `width`, `height`, `padding`, `margin`, or `border`.
+
 
 To change the length unit:
 
-Hover over the unit name and notice that it's underlined.
+1. Hover over the unit name and notice that it's underlined.
 
-Click the unit name to select a unit from the drop-down.
+1. Click the unit name to select a unit from the dropdown list:
+
+   ![Units in dropdown list] todo
 
 To change the length value:
 
-Hover over the unit value and notice that your pointer changes to a horizontal double-headed arrow.
+1. Hover over the unit value and notice that your pointer changes to a horizontal double-headed arrow.
 
-Drag horizontally to increase or decrease the value.
+1. Drag horizontally to increase or decrease the value:
 
-To adjust the value by 10, hold Shift when dragging.
+   ![Dragging horizontally] todo
+
+
+To adjust the value by 10:
+
+* Press and hold **Shift** when dragging.
 
 
 <!-- ------------------------------ -->
@@ -768,19 +842,25 @@ To add a class to an element:
 
 <!-- todo: format, link, pngs -->
 
-To toggle automatic dark mode or emulate the user's preference of light or dark themes:
+To toggle [automatic dark mode] https://developer.chrome.com/blog/auto-dark-theme or emulate the user's preference of [light or dark themes] https://web.dev/prefers-color-scheme/ :
 
-On the Elements > Styles tab, click Toggle common rendering emulations.Toggle common rendering emulations. Toggle common rendering emulations.
+1. In the **Elements** tool, in the **Styles** tab, click (icon todo: paintbrush icon) **Toggle common rendering emulations**.
 
-Select one of the following from the drop-down list:
+   ![] todo toggle-common-rendering-emulations.png
 
-prefers-color-scheme: light. Indicates that the user prefers the light theme.
+1. Select one of the following options from the dropdown list:
 
-prefers-color-scheme: dark. Indicates that the user prefers the dark theme.
+   * **prefers-color-scheme: light**.  Indicates that the user prefers the light theme.
 
-Automatic dark mode. Displays your page in dark mode even if you didn't implement it. Additionally, sets prefers-color-scheme to dark automatically.
+   * **prefers-color-scheme: dark**.  Indicates that the user prefers the dark theme.
 
-This drop-down is a shortcut for Emulate CSS media feature prefers-color-scheme and Enable automatic dark mode options of the Rendering tab.
+   * **Automatic dark mode**.  Displays your page in dark mode even if you didn't implement it.  Additionally, sets `prefers-color-scheme` to `dark` automatically.
+
+This dropdown list is a shortcut for **Emulate CSS media feature `prefers-color-scheme`** and **Enable automatic dark mode** options of the **Rendering** tool.
+
+See also:
+* [Emulating dark or light mode using the Rendering tool](../accessibility/preferred-color-scheme-simulation.md#emulating-dark-or-light-mode-using-the-rendering-tool) in _Emulate dark or light schemes in the rendered page_.
+* [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
 
 
 <!-- ------------------------------ -->
@@ -862,9 +942,9 @@ To toggle a single declaration on or off:
 
 <!-- todo: format, link, pngs -->
 
-See the corresponding section in Animations. https://developer.chrome.com/docs/devtools/css/animations#view-transition
+See the corresponding section in [Animations] https://developer.chrome.com/docs/devtools/css/animations#view-transition.
 
-For more information, see Smooth and simple transitions with the View Transitions API. https://developer.chrome.com/docs/web-platform/view-transitions
+For more information, see [Smooth and simple transitions with the View Transitions API] https://developer.chrome.com/docs/web-platform/view-transitions.
 
 
 <!-- ------------------------------ -->
@@ -873,7 +953,7 @@ For more information, see Smooth and simple transitions with the View Transition
 
 <!-- todo: format, link, pngs -->
 
-See the corresponding section in Inspect CSS grid. https://developer.chrome.com/docs/devtools/css/grid#grid-editor
+See the corresponding [section in Inspect CSS grid] https://developer.chrome.com/docs/devtools/css/grid#grid-editor.
 
 
 <!-- ------------------------------ -->
@@ -1026,42 +1106,48 @@ Use the **Easing Editor** to change the value of the [animation-timing-function]
 
 <!-- todo: format, link, pngs -->
 
-Use presets to adjust timings
-To adjust timings with a click, use the presets in the Easing Editor:
+To adjust timings with a click, use the presets in the **Easing Editor**:
 
-In the Easing Editor, to set a keyword value, click one of the picker buttons:
-linear The linear button.
-ease-in-out The ease-in-out button.
-ease-in The ease-in button.
-ease-out The ease-out button.
-In the Presets switcher, click Left. or Right. buttons to pick one of the following presets:
+1. todo: add missing steps to open the Easing Editor.
 
-Linear presets: elastic, bounce, or emphasized.
-Cubic Bezier presets:
+1. In the **Easing Editor**, to set a keyword value, click one of the picker buttons:
 
-<!-- table: -->
-Timing keyword   Preset   Cubic Bezier
+   * **linear** - todo: The linear button.
+   * **ease-in-out** The ease-in-out button.
+   * **ease-in The ease-in button.
+   * **ease-out The ease-out button.
 
-<!-- row, or 5 rows: -->
-ease-in-out   In Out, Sine   cubic-bezier(0.45, 0.05, 0.55, 0.95)
-In Out, Quadratic   cubic-bezier(0.46, 0.03, 0.52, 0.96)
-In Out, Cubic   cubic-bezier(0.65, 0.05, 0.36, 1)
-Fast Out, Slow In   cubic-bezier(0.4, 0, 0.2, 1)
-In Out, Back   cubic-bezier(0.68, -0.55, 0.27, 1.55)
+   The **Presets switcher** opens.
 
-<!-- row, or 5 rows: -->
-ease-in   In, Sine   cubic-bezier(0.47, 0, 0.75, 0.72)
-In, Quadratic   cubic-bezier(0.55, 0.09, 0.68, 0.53)
-In, Cubic   cubic-bezier(0.55, 0.06, 0.68, 0.19)
-In, Back   cubic-bezier(0.6, -0.28, 0.74, 0.05)
-Fast Out, Linear In   cubic-bezier(0.4, 0, 1, 1)
+1. In the **Presets switcher**, click the **Left** todo: **`<`** or **Right** **`>`** buttons to pick one of the following presets:
 
-<!-- row, or 5 rows: -->
-ease-out   Out, Sine   cubic-bezier(0.39, 0.58, 0.57, 1)
-Out, Quadratic   cubic-bezier(0.25, 0.46, 0.45, 0.94)
-Out, Cubic   cubic-bezier(0.22, 0.61, 0.36, 1)
-Linear Out, Slow In   cubic-bezier(0, 0, 0.2, 1)
-Out, Back   cubic-bezier(0.18, 0.89, 0.32, 1.28)
+   * Linear presets: `elastic`, `bounce`, or `emphasized`.
+
+   * [Cubic Bezier] https://developer.mozilla.org/docs/Glossary/Bezier_curve (MDN) presets:
+
+| Timing keyword | Preset | Cubic Bezier |
+|---|---|---|
+| ease-in-out | In Out, Sine | cubic-bezier(0.45, 0.05, 0.55, 0.95) |
+| ease-in-out | In Out, Quadratic | cubic-bezier(0.46, 0.03, 0.52, 0.96) |
+| ease-in-out | In Out, Cubic | cubic-bezier(0.65, 0.05, 0.36, 1) |
+| ease-in-out | Fast Out, Slow In | cubic-bezier(0.4, 0, 0.2, 1) |
+| ease-in-out | In Out, Back | cubic-bezier(0.68, -0.55, 0.27, 1.55) |
+
+| Timing keyword | Preset | Cubic Bezier |
+|---|---|---|
+| ease-in | In, Sine | cubic-bezier(0.47, 0, 0.75, 0.72) |
+| ease-in | In, Quadratic | cubic-bezier(0.55, 0.09, 0.68, 0.53) |
+| ease-in | In, Cubic | cubic-bezier(0.55, 0.06, 0.68, 0.19) |
+| ease-in | In, Back | cubic-bezier(0.6, -0.28, 0.74, 0.05) |
+| ease-in | Fast Out, Linear In | cubic-bezier(0.4, 0, 1, 1) |
+
+| Timing keyword | Preset | Cubic Bezier |
+|---|---|---|
+| ease-out | Out, Sine | cubic-bezier(0.39, 0.58, 0.57, 1) |
+| ease-out | Out, Quadratic | cubic-bezier(0.25, 0.46, 0.45, 0.94) |
+| ease-out | Out, Cubic | cubic-bezier(0.22, 0.61, 0.36, 1) |
+| ease-out | Linear Out, Slow In | cubic-bezier(0, 0, 0.2, 1) |
+| ease-out | Out, Back | cubic-bezier(0.18, 0.89, 0.32, 1.28) |
 
 
 <!-- ------------------------------ -->
@@ -1072,15 +1158,15 @@ Out, Back   cubic-bezier(0.18, 0.89, 0.32, 1.28)
 
 To set custom values for timing functions, use the control points on the lines:
 
-For linear functions, click anywhere on the line to add a control point and drag it. Double-click to remove the point.
+* For linear functions, click anywhere on the line to add a control point and drag it. Double-click to remove the point:
 
-Dragging a control point of a linear function.
+   ![Dragging a control point of a linear function] todo dragging-control-point.png
 
-For Cubic Bezier functions, drag one of the control points.
+* For Cubic Bezier functions, drag one of the control points:
 
-Dragging the control points of a Cubic Bezier function.
+   ![Dragging the control points of a Cubic Bezier function] todo dragging-control-points.png"
 
-Any change triggers a ball animation in the Preview at the top of editor.
+Any change triggers a ball animation in the **Preview** at the top of editor.
 
 
 <!-- ====================================================================== -->
@@ -1095,19 +1181,20 @@ To copy a single CSS declaration change:
 
 * Hover over the highlighted declaration and click the [todo: Copy icon] **Copy** button:
 
-  ![Copy a CSS declaration change]() todo
+  ![Copy a CSS declaration change]() todo copy-css-declaration-change.png
 
 To copy all CSS changes across declarations at once:
 
 * Right-click on any declaration and then select **Copy all CSS changes**:
 
-   ![Copy all CSS changes]() todo
+   ![Copy all CSS changes]() todo copy-css-changes.png
 
-You can additionally track changes that you make, by using the **Changes** tool.  See [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes).
+You can additionally track changes that you make, by using the **Changes** tool.  See [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes) in Chrome docs.
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- todo: all links in article -->
 
 Demos repo:
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
