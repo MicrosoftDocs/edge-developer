@@ -60,11 +60,8 @@ The `msWebView2GranularProcessFailedReason` feature flag is disabled by default 
  
 `set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msWebView2GranularProcessFailedReason`
 
-This is a bug fix for the Runtime and SDK.  These enum members are not a new API that has been introduced; this is a modification of an existing Phase 2: Stable in Prerelease (Phase 2) API.
+This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing Phase 3: Stable in Release API.
 
-See also:
-* [[Breaking Change] Granular Process Failure Reasons in WebView2](https://github.com/MicrosoftEdge/WebView2Announcements/issues/todo)
- 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ProcessFailedEventArgs` Class
@@ -191,9 +188,9 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 
 
 <!-- ------------------------------ -->
-#### Phase 2 (Stable in Prerelease)
+#### Phase 3 (Stable in Release)
 
-The following APIs have been modified in Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs have been modified in Phase 3: Stable in Release, and are included in this Prerelease SDK.
 
 
 <!-- ---------- -->
@@ -203,7 +200,7 @@ Replaced the `CoreWebView2ProcessFailedReason.Unexpected` enum member by more gr
 
 This is a breaking change; see [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
-These enum members are not a new API that has been introduced; this is a modification of an existing Phase 2: Stable in Prerelease (Phase 2) API.
+These enum members are not a new API that has been introduced; these enum members are a modification of an existing Phase 3: Stable in Release API.
 
 
 <!-- ------------------------------ -->
