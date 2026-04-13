@@ -60,7 +60,7 @@ The `msWebView2GranularProcessFailedReason` feature flag is disabled by default 
  
 `set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msWebView2GranularProcessFailedReason`
 
-This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing Phase 3: Stable in Release API.
+This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing stable API, and are available as part of this Prerelease SDK.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -188,19 +188,17 @@ Use `GetEffectiveFeaturesForOrigin` to asynchronously retrieve the computed feat
 
 
 <!-- ------------------------------ -->
-#### Phase 3 (Stable in Release)
+#### Phase 2 (Stable in Prerelease)
 
-The following APIs have been modified in Phase 3: Stable in Release, and are included in this Prerelease SDK.
+The following enum members are a modification of an existing stable API, and are available as part of this Prerelease SDK.
 
 
 <!-- ---------- -->
 ###### Granular process failure reasons for the `ProcessFailed` event
 
-Replaced the `CoreWebView2ProcessFailedReason.Unexpected` enum member by more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.
+Supplemented the `CoreWebView2ProcessFailedReason.Unexpected` enum member by adding more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.
 
 This is a breaking change; see [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
-
-These enum members are not a new API that has been introduced; these enum members are a modification of an existing Phase 3: Stable in Release API.
 
 
 <!-- ------------------------------ -->
@@ -212,7 +210,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Replaced the `CoreWebView2ProcessFailedReason.Unexpected` enum member by more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.  This is a breaking change.  See [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
+* Supplemented the `CoreWebView2ProcessFailedReason.Unexpected` enum member by adding more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.  This is a breaking change.  See [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
 
 <!-- ---------- -->
