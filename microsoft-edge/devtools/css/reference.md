@@ -300,7 +300,11 @@ In the **Elements** tool, the **Styles** tab shows the following at-rules in ded
 
 <!-- todo: format, link, pngs -->
 
-The [@property CSS at-rule] https://web.dev/articles/at-property lets you define [CSS custom properties] https://developer.mozilla.org/docs/Web/CSS/--* explicitly and register them in a style sheet without running any JavaScript.
+The `@property` CSS at-rule lets you define CSS custom properties explicitly and register them in a style sheet without running any JavaScript.
+
+See also:
+* [@property: giving superpowers to CSS variables](https://web.dev/articles/at-property) at Web.dev.
+* [Custom properties (--*): CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*) at MDN.
 
 Hover over the name of such property in the **Styles** tab, to see a tooltip with the property's value, descriptors, and a link to its registration in the collapsible `@property` section at the bottom of the **Styles** tab.
 
