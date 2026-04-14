@@ -83,7 +83,7 @@ To provide a rich and fast experience to your users, your PWA can store data loc
 * [View and edit local storage](../../devtools/storage/localstorage.md).
 * [View and edit session storage](../../devtools/storage/sessionstorage.md).
 
-To view the total amount of stored data used by your PWA, the available quota, and delete the data, use the **Storage** pane of the **Application** tool. To learn more, see [Storage](../../devtools/progressive-web-apps/index.md#storage) in _Debug a Progressive Web App (PWA)_.
+To view the total amount of stored data used by your PWA, the available quota, and delete the data, use the **Storage** pane of the **Application** tool.  See [Clear storage](../../devtools/progressive-web-apps/index.md#clear-storage) in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
