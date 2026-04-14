@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 148
+          href: ./web-platform/release-notes/148.md
+          displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
+
         - name: Microsoft Edge 147
           href: ./web-platform/release-notes/147.md
           displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
@@ -66,13 +70,13 @@
           href: ./web-platform/release-notes/139.md
           displayName: Microsoft Edge 139 web platform release notes (Aug. 2025)  # page title
 
-        - name: Microsoft Edge 138
-          href: ./web-platform/release-notes/138.md
-          displayName: Microsoft Edge 138 web platform release notes (Jun. 2025)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 138
+              href: ./web-platform/release-notes/138.md
+              displayName: Microsoft Edge 138 web platform release notes (Jun. 2025)  # page title
+
             - name: Microsoft Edge 137
               href: ./web-platform/release-notes/137.md
               displayName: Microsoft Edge 137 web platform release notes (May 2025)  # page title
