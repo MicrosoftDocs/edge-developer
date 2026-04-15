@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/18/2026
+ms.date: 04/13/2026
 ---
 # Archived release notes for the WebView2 SDK
 <!--
@@ -22,7 +22,36 @@ if change h2 headings pattern, enter work item: update links in announcements
 
 The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs over one year old.
 
-<!-- sequence of entries matches [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2/) -->
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025)
+
+Release Date: Apr. 7, 2025, Runtime 135
+
+[NuGet package for WebView2 SDK 1.0.3179.45](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3179.45)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 135.0.3179.45 or higher.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+* Fixed navigation of `edge://crashes` within a WebView2 control.
+* Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+* Fixed a bug where users were unable to type in an input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+
+<!-- end of Release SDK 1.0.3179.45, for Runtime 135 (Apr. 7, 2025) -->
 
 
 <!-- ====================================================================== -->
@@ -36,7 +65,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -117,7 +146,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -172,7 +201,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -551,7 +580,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -701,7 +730,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -997,7 +1026,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -1073,7 +1102,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -1377,15 +1406,19 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers.  This is helpful in scenarios where a WebView2 control needs to remain visible, but needs to consume fewer resources (such as when the user isn't interacting with the content).  These Throttling Controls APIs allow you to:
-   * Customize script timers (`setTimeout` and `setInterval`) throttling under different page states (foreground, background, and background with intensive throttling).
-   * Throttle script timers in select hosted iframes.
+###### Throttling Controls APIs
+
+Added new Throttling Controls APIs which allows for efficient resource management by allowing you to throttle JavaScript timers.  This is helpful in scenarios where a WebView2 control needs to remain visible, but needs to consume fewer resources (such as when the user isn't interacting with the content).  These Throttling Controls APIs allow you to:
+
+* Customize script timers (`setTimeout` and `setInterval`) throttling under different page states (foreground, background, and background with intensive throttling).
+
+* Throttle script timers in select hosted iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1615,7 +1648,11 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ---------- -->
-* Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file system handle that can be posted to the web content to provide it with filesystem access.
+###### WebMessageObjects API: Inject DOM objects; file system handle
+
+Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.
+
+Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file system handle that can be posted to the web content to provide it with file system access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1732,16 +1769,20 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Added a new `SaveFileSecurityCheckStarting` event.  As a developer, you can register a handler on this event to get the file path, filename extension, and document origin URI information.  Then you can apply your own rules to do actions such as the following:
-   * Allow saving the file without presenting a default security-warning UI about the file-type policy.
-   * Cancel the saving.
-   * Create your own UI to manage runtime file-type policies.
+###### `SaveFileSecurityCheckStarting` event
+
+Added a new `SaveFileSecurityCheckStarting` event.  As a developer, you can register a handler on this event to get the file path, filename extension, and document origin URI information.
+
+Then you can apply your own rules to do actions such as the following:
+* Allow saving the file without presenting a default security-warning UI about the file-type policy.
+* Cancel the saving.
+* Create your own UI to manage runtime file-type policies.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1791,7 +1832,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
+###### `ScreenCaptureStarting` event
+
+Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.
+
+As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1847,7 +1892,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Added a new `GetComICoreWebView2` method to the `CoreWebView2` .NET class that enables you to convert a `CoreWebView2` between .NET and COM.  Added a new WinRT interface that enables you to convert a `CoreWebView2` between WinRT and COM.  This allows you to interoperate between libraries that are written in different languages.
+###### `GetComICoreWebView2` method
+
+Added a new `GetComICoreWebView2` method to the `CoreWebView2` .NET class that enables you to convert a `CoreWebView2` between .NET and COM.
+
+Added a new WinRT interface that enables you to convert a `CoreWebView2` between WinRT and COM.  This allows you to interoperate between libraries that are written in different languages.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1873,7 +1922,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ---------- -->
-* Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type to represent a file system handle that can be posted to the web content to provide it with filesystem access.
+###### WebMessageObjects API: Inject DOM objects; file system handle
+
+Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.
+
+Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file system handle that can be posted to the web content to provide it with file system access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2014,7 +2067,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -2144,11 +2197,17 @@ The minimum .NET Framework version requirement for .NET WebView2, including WPF 
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
+
+<!-- ---------- -->
+###### `SaveAs` APIs
+
+Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.
+
+These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2435,7 +2494,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -2475,7 +2534,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-* Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app and via the `CoreWebView2.PostWebMessage` API in the other direction.  Added a new web object type to represent a file system handle that can be posted to the web content to provide it with filesystem access.
+###### WebMessageObjects API: Inject DOM objects; file system handle
+
+Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app and via the `CoreWebView2.PostWebMessage` API in the other direction.
+
+Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file system handle that can be posted to the web content to provide it with file system access.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2849,7 +2912,7 @@ New member names:
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -3064,7 +3127,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -3852,7 +3915,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -3992,7 +4055,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4190,7 +4253,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4267,7 +4330,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -4508,7 +4571,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -4913,7 +4976,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
 
@@ -5104,7 +5167,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -5529,7 +5592,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -5740,7 +5803,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-*  The SharedBuffer API:
+* The SharedBuffer API:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -5812,7 +5875,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-*  APIs for managing permissions:
+* APIs for managing permissions:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -5878,7 +5941,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 
 <!-- ------------------------------ -->
-APIs for managing tracking prevention:
+* APIs for managing tracking prevention:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -5960,7 +6023,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6192,7 +6255,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6446,7 +6509,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6600,7 +6663,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -6839,7 +6902,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7171,7 +7234,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Experimental APIs for 1.0.1222-prerelease
 <!-- another section links to here -->
 <!-- todo: use this unique heading instead, and update where the other section(s) links to here:
-#### Promotions to Phase 1 (Experimental in Prerelease) for 1.0.1222-prerelease -->
+#### Experimental APIs (Phase 1: Experimental in Prerelease) for 1.0.1222-prerelease -->
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7264,7 +7327,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7352,7 +7415,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7417,7 +7480,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7516,7 +7579,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7595,7 +7658,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7692,7 +7755,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7732,7 +7795,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -7876,7 +7939,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 *  Added [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow) to launch a WebView2 browser task manager.
 
@@ -7990,7 +8053,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -8070,7 +8133,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
-#### Promotions to Phase 1 (Experimental in Prerelease)
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
@@ -8106,7 +8169,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### Promotions to Phase 1 (Experimental in Prerelease)
+###### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following Experimental APIs for .NET have been added in this Prerelease SDK.
 
