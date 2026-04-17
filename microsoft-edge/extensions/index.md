@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/07/2026
+ms.date: 04/17/2026
 ---
 # Overview of Microsoft Edge extensions
 <!-- https://aka.ms/AboutEdgeAddons -->
@@ -17,6 +17,7 @@ Users browse and install extensions for Microsoft Edge from the [Microsoft Edge 
 
 The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
+<!-- omit See Also children at end -->
 **Detailed contents:**
 * [Introduction](#introduction)
 * [Sites for extensions for various browsers](#sites-for-extensions-for-various-browsers)
@@ -30,27 +31,6 @@ The present documentation is for extension developers, rather than end-users of 
    * [What the Featured badge represents](#what-the-featured-badge-represents)
    * [Reasons why the Featured badge could be revoked](#reasons-why-the-featured-badge-could-be-revoked)
 * [See also](#see-also)
-   * [Microsoft Edge](#microsoft-edge)
-      * [Store](#store)
-      * [End-user docs](#end-user-docs)
-      * [Development](#development)
-   * [Google Chrome, or Chromium browser engine](#google-chrome-or-chromium-browser-engine)
-      * [Store](#store-1)
-      * [Development](#development-1)
-   * [Opera](#opera)
-      * [Store](#store-2)
-      * [Development](#development-2)
-   * [Brave](#brave)
-      * [Store](#store-3)
-      * [End-user docs](#end-user-docs-1)
-      * [Development](#development-3)
-   * [Apple Safari](#apple-safari)
-      * [Store](#store-4)
-      * [Development](#development-4)
-   * [Mozilla Firefox](#mozilla-firefox)
-      * [Store](#store-5)
-      * [Development](#development-5)
-   * [Non-browser extensions](#non-browser-extensions)
 
 
 <!-- ====================================================================== -->
@@ -58,21 +38,17 @@ The present documentation is for extension developers, rather than end-users of 
 
 As a browser extension developer, you publish a Microsoft Edge extension (or theme) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
 
-You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
+On the Microsoft Edge Add-ons site, you can enter various search terms in the **Search extensions, themes, and more** text box to find extensions and themes, such as the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
+   
+![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
 
-This article focuses mostly on Chromium-based extensions.
+You can create a Microsoft Edge extension to add features to the browser, or improve the features of specific webpages by defining a companion experience.  _Companion experiences_ include ad blockers and password managers.
 
 An extension should include at least the following features:
 
 * An app manifest JSON file that contains basic platform information.
 * A JavaScript file that defines the function.
 * HTML and CSS files that define the user interface.
-
-To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
-
-In the **Search extensions, themes, and more** text box, you can enter various search terms, such as the extension owner [Microsoft Corporation](https://microsoftedge.microsoft.com/addons/search/microsoft%20corporation).  Searching returns extensions and themes, such as the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
-
-![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
 
 
 <!-- ====================================================================== -->
@@ -97,19 +73,13 @@ For browser extension stores, end-user docs, and developer docs, see [See also](
 <!-- ====================================================================== -->
 ## Benefits of Chromium-based extensions
 
-If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari app extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.
+If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.
 
-The following browsers are based on the [Chromium](https://www.chromium.org/Home) open-source browser project:
-* Microsoft Edge
-* Google Chrome
-* Opera
-* Brave
+Microsoft Edge is based on the [Chromium](https://www.chromium.org/Home) open-source browser project.  Other browsers are also based on Chromium, such as Google Chrome, Opera, and Brave.
 
-Chromium-based browsers use the same code package, and minimize the need to maintain parallel versions.
+Chromium-based browsers use the same extension APIs and the same way to package extensions.  This minimizes the need to maintain multiple, parallel versions of an extension.
 
-Benefits of creating a Chromium extension: 
-* Enables writing the fewest lines of code.
-* Enables targeting the maximum number of extension stores and the maximum number of users who can find and acquire your extension.
+By writing a Chromium extension, you write fewer lines of code and target more browsers.
 
 
 <!-- ====================================================================== -->
@@ -145,11 +115,12 @@ You can submit and seek browser extensions in the following browser extension st
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
 * [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
 * [Opera addons](https://addons.opera.com/extensions)
-* [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) - store for Brave extensions.
 * [Apple App Store](https://apps.apple.com)
 * [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
+
+To make sure your users find your extension in Microsoft Edge, publish your extension on the Microsoft Edge Add-ons site.  See [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons), below.
 
 Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
@@ -159,7 +130,7 @@ Users might need to install your extension in different browsers. In this scenar
 
 If you've already developed an extension for another Chromium-based browser, you can submit it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
 
-For more information on porting your Chrome extension to Microsoft Edge, see [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
+For more information on porting your Chrome extension to Microsoft Edge, see [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md).  After you port your extension to the target browser, the next step is to publish it.
 
 
 <!-- ------------------------------ -->
@@ -369,10 +340,3 @@ External:
 
 * [Browser extensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions)
 * [Porting a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)<!-- link not in article --> (to Firefox).
-
-
-<!-- ------------------------------ -->
-#### Non-browser extensions
-
-* [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)<!-- link not in article -->
-* [webhint extension for Visual Studio Code](../visual-studio-code/webhint.md)<!-- link not in article -->
