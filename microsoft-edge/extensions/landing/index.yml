@@ -117,7 +117,7 @@ landingContent:
  
       - linkListType: concept
         links:
-          - text: Create a DevTools extension, adding a custom tool tab and panel
+          - text: Develop a custom tool in Microsoft Edge DevTools
             url: ../developer-guide/devtools-extension.md
 
           - text: Develop an extension for the Microsoft Edge sidebar

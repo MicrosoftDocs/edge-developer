@@ -1228,12 +1228,12 @@
                 - name: Declare API permissions in the manifest
                   href: ./extensions/developer-guide/declare-permissions.md
 # -------------------------------------
-            - name: Create a DevTools extension, adding a custom tool tab and panel
-              href: ./extensions/developer-guide/devtools-extension.md
-
             - name: Develop an extension for the Microsoft Edge sidebar
               href: ./extensions/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel
+
+            - name: Develop a custom tool in Microsoft Edge DevTools
+              href: ./extensions/developer-guide/devtools-extension.md
 
             - name: Native messaging
               href: ./extensions/developer-guide/native-messaging.md
