@@ -30,29 +30,29 @@ To start building a PWA, see [Get started developing a PWA](./how-to/index.md).
 
 When installed on a device, PWAs function just like other apps. For example:
 
-*  PWAs have their own application icons that can be added to a device's home screen or task bar.
-*  PWAs can be launched automatically when an associated file type is opened.
-*  PWAs can run when the user signs in.
-*  PWAs can be submitted to app stores, such as the [Microsoft Store](https://apps.microsoft.com).
+* PWAs have their own application icons that can be added to a device's home screen or task bar.
+* PWAs can be launched automatically when an associated file type is opened.
+* PWAs can run when the user signs in.
+* PWAs can be submitted to app stores, such as the [Microsoft Store](https://apps.microsoft.com).
 
 #### Advanced capabilities
 
 PWAs also have access to advanced capabilities. For example:
 
-*  PWAs can continue working when the device is offline.
-*  PWAs support push notifications.
-*  PWAs can perform periodic updates even when the application is not running.
-*  PWAs can access hardware features.
+* PWAs can continue working when the device is offline.
+* PWAs support push notifications.
+* PWAs can perform periodic updates even when the application is not running.
+* PWAs can access hardware features.
 
 #### Web-related advantages
 
 Finally, PWAs can run in web browsers, just like websites. Running like websites gives PWAs with advantages, such as:
 
-*  PWAs can be indexed by search engines.
-*  PWAs can be shared and launched from a standard web link.
-*  PWAs are safe for users because they use secure HTTPS endpoints and other user safeguards.
-*  PWAs adapt to the user's screen size or orientation, and input method.
-*  PWAs can use advanced web APIs such as WebBluetooth, WebUSB, WebPayment, WebAuthn, or WebAssembly.
+* PWAs can be indexed by search engines.
+* PWAs can be shared and launched from a standard web link.
+* PWAs are safe for users because they use secure HTTPS endpoints and other user safeguards.
+* PWAs adapt to the user's screen size or orientation, and input method.
+* PWAs can use advanced web APIs such as WebBluetooth, WebUSB, WebPayment, WebAuthn, or WebAssembly.
 
 #### Lower development cost
 
@@ -76,15 +76,15 @@ Desktop computing continues to be the primary productivity environment for many 
 
 There isn't much you can't do today with web technologies. Many features that were once only possible by using device-specific languages can now be achieved by using standard web technologies. For example:
 
-*   Handle files.
-*   Share content with other apps.
-*   Access the clipboard.
-*   Sync data and fetch resources in the background.
-*   Access device hardware such as Bluetooth and USB.
-*   Store content in databases.
-*   Take advantage of hardware accelerated graphics.
-*   Use CSS layouts, animations, and filters to create advanced designs.
-*   Run near-compiled performance code with WebAssembly.
+* Handle files.
+* Share content with other apps.
+* Access the clipboard.
+* Sync data and fetch resources in the background.
+* Access device hardware such as Bluetooth and USB.
+* Store content in databases.
+* Take advantage of hardware accelerated graphics.
+* Use CSS layouts, animations, and filters to create advanced designs.
+* Run near-compiled performance code with WebAssembly.
 
 Thanks to Microsoft Edge, PWAs on desktop can take full advantage of these capabilities to deliver what users expect desktop apps to be able to do.  These capabilities provide more engaging experiences across web and desktop platforms.
 

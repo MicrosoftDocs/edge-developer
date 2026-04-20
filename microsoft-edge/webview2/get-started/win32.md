@@ -32,9 +32,9 @@ This tutorial starts with the completed project that's in the repo, which alread
 
 The completed tutorial project is available in the **WebView2Samples** repo:
 
-*  Sample name: **Win32_GettingStarted**
-*  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
-*  Solution file: **WebView2GettingStarted.sln**
+* Sample name: **Win32_GettingStarted**
+* Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+* Solution file: **WebView2GettingStarted.sln**
 
 
 <!-- ====================================================================== -->
@@ -288,10 +288,10 @@ If you want to follow the steps below to add the WebView2 code to `HelloWebView.
 ## Step 10 - Include the WebView2.h header in HelloWebView.cpp
 
 Above, we did the following:
-*  Cloned or downloaded the samples repo including an existing project that contains a standard C++ Windows desktop application.
-*  Updated or installed the Windows Implementation Library (WIL).
-*  Updated or installed the WebView2 SDK, to add WebView2 features.
-*  Optionally deleted the WebView2 code from `HelloWebView.cpp`.
+* Cloned or downloaded the samples repo including an existing project that contains a standard C++ Windows desktop application.
+* Updated or installed the Windows Implementation Library (WIL).
+* Updated or installed the WebView2 SDK, to add WebView2 features.
+* Optionally deleted the WebView2 code from `HelloWebView.cpp`.
 
 ---
 
@@ -317,11 +317,11 @@ Next, add WebView2 features to the app, as follows:
 
 1. Note the headers used:
 
-   *  `wrl.h` -  Windows Runtime C++ Template Library (WRL) - A template library that provides a low-level way to author and use Windows Runtime components.
+   * `wrl.h` -  Windows Runtime C++ Template Library (WRL) - A template library that provides a low-level way to author and use Windows Runtime components.
 
    * `wil/com.h` - Windows Implementation Libraries (WIL) - A header-only C++ library to make life easier for developers on Windows through readable, type-safe C++ interfaces for common Windows coding patterns.
 
-   *  `WebView2.h` - The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
+   * `WebView2.h` - The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
 1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
@@ -354,20 +354,20 @@ Next, add a WebView2 control to the main window.
 You'll use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge browser powering the control.
 
 Note that if you want to override the following defaults, you can instead use the "with options" version of that method, `CreateCoreWebView2EnvironmentWithOptions`:
-*  Browser location
-*  User data folder
-*  Browser flags
+* Browser location
+* User data folder
+* Browser flags
 
 Upon completion of the `CreateCoreWebView2Environment` method, you'll:
 
-*  Run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback.
+* Run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback.
 
-*  Run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView2 control.
+* Run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView2 control.
 
 Now to do the above, in the callback, you'll:
-*  Set a few more settings.
-*  Resize the WebView2 control to fill 100% of the parent window.
-*  Then display the Bing.com website in the WebView2 control in your Win32 app.
+* Set a few more settings.
+* Resize the WebView2 control to fill 100% of the parent window.
+* Then display the Bing.com website in the WebView2 control in your Win32 app.
 
 ---
 
@@ -468,9 +468,9 @@ In the previous step, we discussed navigating to URL by using the `ICoreWebView2
 
 In error cases, one or more of the following events may occur, depending on whether the navigation continued to an error webpage:
 
-*  `SourceChanged`
-*  `ContentLoading`
-*  `HistoryChanged`
+* `SourceChanged`
+* `ContentLoading`
+* `HistoryChanged`
 
 If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
@@ -496,8 +496,8 @@ Use host apps to inject JavaScript code into WebView2 controls at runtime.  You 
 
 The injected JavaScript is run with specific timing:
 
-*  Run it after the creation of the global object.
-*  Run it before any other script included in the HTML document is run.
+* Run it after the creation of the global object.
+* Run it before any other script included in the HTML document is run.
 
 ---
 

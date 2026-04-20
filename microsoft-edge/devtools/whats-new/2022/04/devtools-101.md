@@ -26,10 +26,10 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in Visual Studio Code. -->
 
 The Console is one of the most popular tools in DevTools.  You can now access the Console tool in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This integrated DevTools Console allows you to see your log messages right next to your code.  Using the Console, you can also:
-*  Try out some JavaScript statements.
-*  Access the window object.
-*  Call the methods of the `Console` object, as described in [Console object API Reference](../../../console/api.md).
-*  Use the Console utilities to access the DOM, as described in [Console tool utility functions and selectors](../../../console/utilities.md).
+* Try out some JavaScript statements.
+* Access the window object.
+* Call the methods of the `Console` object, as described in [Console object API Reference](../../../console/api.md).
+* Use the Console utilities to access the DOM, as described in [Console tool utility functions and selectors](../../../console/utilities.md).
 
 You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 

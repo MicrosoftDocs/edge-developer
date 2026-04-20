@@ -162,10 +162,10 @@ See also:
 
 To emulate locales, in the **Sensors** tool, select a location from the **Location** dropdown list.  (To access the **Sensors** tool, [open the **Command Menu**](../../../command-menu/index.md) and type `Sensors`.)  After you select a location, DevTools modifies the current default locale, which affects the following code:
 
-*  `Intl.*` APIs, for example: `new Intl.NumberFormat().resolvedOptions().locale`
-*  Other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and `*.prototype.toLocaleString`, for example: `123_456..toLocaleString()`
-*  DOM APIs such as `navigator.language` and `navigator.languages`
-*  The [Accept-Language](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language) HTTP request header
+* `Intl.*` APIs, for example: `new Intl.NumberFormat().resolvedOptions().locale`
+* Other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and `*.prototype.toLocaleString`, for example: `123_456..toLocaleString()`
+* DOM APIs such as `navigator.language` and `navigator.languages`
+* The [Accept-Language](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language) HTTP request header
 
 > [!NOTE]
 > Updates to `navigator.language` and `navigator.languages` aren't visible immediately, but only after the next navigation or page refresh.  Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.
@@ -208,9 +208,9 @@ Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead o
 
 The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*  Breakpoints (![Breakpoint icon, a red circle](./devtools-images/breakpoint.png)) are represented by red circles.
-*  Conditional Breakpoints (![Conditional Breakpoint icon, a circle half red and half black](./devtools-images/conditional.png)) are represented by half-red half-white circles.
-*  Logpoints (![Logpoint icon, a red circle with a black arrow](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
+* Breakpoints (![Breakpoint icon, a red circle](./devtools-images/breakpoint.png)) are represented by red circles.
+* Conditional Breakpoints (![Conditional Breakpoint icon, a circle half red and half black](./devtools-images/conditional.png)) are represented by half-red half-white circles.
+* Logpoints (![Logpoint icon, a red circle with a black arrow](./devtools-images/logpoint.png)) are represented by red circles with Console icons.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 

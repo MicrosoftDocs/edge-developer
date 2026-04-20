@@ -31,10 +31,10 @@ Web sharing only works on sites served over HTTPS (which is the case for PWAs), 
 
 To share content such as links, text, or files, use the `navigator.share` function, as shown below.  The `navigator.share` function accepts an object that should have at least one of the following properties:
 
-*   `title`: a short title for the shared content.
-*   `text`: a longer description for the shared content.
-*   `url`: the address of a resource to be shared.
-*   `files`: an array of files to be shared.
+* `title`: A short title for the shared content.
+* `text`: A longer description for the shared content.
+* `url`: The address of a resource to be shared.
+* `files`: An array of files to be shared.
 
 ```javascript
 function shareSomeContent(title, text, url) {

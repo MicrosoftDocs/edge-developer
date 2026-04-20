@@ -16,13 +16,13 @@ In this article, you walk through the process of remotely debugging your web con
 <!-- ====================================================================== -->
 ## Before you begin
 
-*  Install the [Surface Duo SDK](https://www.microsoft.com/download/details.aspx?id=100847) before running the [Surface Duo emulator](/dual-screen/android/use-emulator).  See [Get the Surface Duo SDK](/dual-screen/android/get-duo-sdk).
+* Install the [Surface Duo SDK](https://www.microsoft.com/download/details.aspx?id=100847) before running the [Surface Duo emulator](/dual-screen/android/use-emulator).  See [Get the Surface Duo SDK](/dual-screen/android/get-duo-sdk).
 
 
 <!-- ====================================================================== -->
 ## Step 1: Go to edge://inspect
 
-*  Open a desktop instance of Microsoft Edge, and go to `edge://inspect`:
+* Open a desktop instance of Microsoft Edge, and go to `edge://inspect`:
 
 > [!div class="mx-imgBorder"]
 > ![The edge://inspect page in Microsoft Edge on the desktop](./surface-duo-emulator-images/remote-debugging-surface-duo-inspect-page.png)
@@ -33,7 +33,7 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 <!-- ====================================================================== -->
 ## Step 2: Launch the Surface Duo emulator
 
-*  Launch the [Surface Duo emulator](/dual-screen/android/use-emulator).  The emulator displays two different screens running on the emulator:
+* Launch the [Surface Duo emulator](/dual-screen/android/use-emulator).  The emulator displays two different screens running on the emulator:
 
 ![The Surface Duo emulator](./surface-duo-emulator-images/remote-debugging-surface-duo-emulator.png)
 
@@ -90,8 +90,8 @@ To understand how the hinge impacts the layout of your web content, use the [Sur
 
 The web is a great platform for the new class of foldable and dual-screen devices, because you can write your HTML, CSS, and JavaScript once, and have it look great across single-screen, dual-screen, and foldable devices.  See the following additional resources to get started building web content for these new devices.
 
-*  [Surface Duo developer documentation](/dual-screen/index) - Documentation for creating apps on dual-screen devices.
+* [Surface Duo developer documentation](/dual-screen/index) - Documentation for creating apps on dual-screen devices.
 
-*  [Web Platform Primitives for Enlightened Experiences on Foldable Devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Foldables/explainer.md) - Microsoft Edge web platform explainer for new APIs, to build web experiences on foldable and dual-screen devices.
+* [Web Platform Primitives for Enlightened Experiences on Foldable Devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Foldables/explainer.md) - Microsoft Edge web platform explainer for new APIs, to build web experiences on foldable and dual-screen devices.
 
-*  [How to build dual-screen experiences for the website and web apps](https://youtu.be/DXrZWsqXPVc) - Recording of Microsoft 365 Developer Day session.
+* [How to build dual-screen experiences for the website and web apps](https://youtu.be/DXrZWsqXPVc) - Recording of Microsoft 365 Developer Day session.

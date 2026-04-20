@@ -35,9 +35,9 @@ The Canary channel is recommended, because it offers the latest experimental API
 <!-- ------------------------------ -->
 #### Interplay between the WebView2 Prerelease SDK and Microsoft Edge Preview Channels
 
-*  **Prerelease SDK:** This version of the WebView2 SDK provides method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
+* **Prerelease SDK:** This version of the WebView2 SDK provides method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
 
-*  **Microsoft Edge Preview Channels:** These channels (Edge Beta, Edge Dev, or Edge Canary) contain the necessary Microsoft Edge binaries.  These channels allow your app to run and render using the experimental APIs.
+* **Microsoft Edge Preview Channels:** These channels (Edge Beta, Edge Dev, or Edge Canary) contain the necessary Microsoft Edge binaries.  These channels allow your app to run and render using the experimental APIs.
 
 For more information about how SDK versions interact with the WebView2 Runtime and the Microsoft Edge preview channels, see [Prerelease and Release SDKs for WebView2](../concepts/versioning.md).
 
@@ -248,9 +248,9 @@ Do either of the following:
 ## Setting the browser executable folder (for local testing)
 
 An alternative approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries.  This folder can be any of the following locations:
-*  The installed location of the WebView2 Runtime.
-*  A preview channel of Microsoft Edge.
-*  A folder containing Fixed Version binaries that you have deployed to the machine yourself.
+* The installed location of the WebView2 Runtime.
+* A preview channel of Microsoft Edge.
+* A folder containing Fixed Version binaries that you have deployed to the machine yourself.
 
 If you set the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version.  This is because the location includes the version number as part of its path.  Therefore, we recommend using this approach for local testing only.
 

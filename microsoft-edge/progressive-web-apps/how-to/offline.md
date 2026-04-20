@@ -35,8 +35,8 @@ Web Storage works synchronously in your app's main thread only. This means that 
 
 Each type of Web Storage, session and local, is maintained as a separate data store that's isolated to the domain that created it.
 
-*  `sessionStorage` persists only for the duration of the session - for example, while the browser is open, which includes when the page is refreshed.
-*  `localStorage` persists until the data is removed by the app code, the user, or the browser.
+* `sessionStorage` persists only for the duration of the session - for example, while the browser is open, which includes when the page is refreshed.
+* `localStorage` persists until the data is removed by the app code, the user, or the browser.
 
 The following code shows how to use `localStorage`, which is similar to how `sessionStorage` is used:
 

@@ -114,8 +114,11 @@ landingContent:
           - text: Overview of Microsoft Edge extensions
             url: ../extensions/index.md
 
+          - name: Get started developing an extension
+            url: ./extensions/getting-started/index.md
+
           - text: Extension concepts and architecture
-            url: ../extensions/getting-started/index.md
+            url: ../extensions/getting-started/architecture.md
 
       - linkListType: sample
         links:

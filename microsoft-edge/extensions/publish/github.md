@@ -60,4 +60,4 @@ Let us know if this article was helpful or if you have any feedback.  For help w
 <!-- ====================================================================== -->
 ## See also
 
-*  [Publish a Microsoft Edge extension](publish-extension.md)
+* [Publish a Microsoft Edge extension](publish-extension.md)

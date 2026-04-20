@@ -116,11 +116,11 @@ If any of your app's event handlers on the `CoreWebView2Environment` object hold
 
 To prevent such a memory leak:
 
-*  For any added event handler, remove the event handler before releasing the environment object.
+* For any added event handler, remove the event handler before releasing the environment object.
 
-*  Avoid holding a reference to the environment object in an event handler.  Instead, the event handler can access the environment object from the `sender` argument of the "event completed" callback.
+* Avoid holding a reference to the environment object in an event handler.  Instead, the event handler can access the environment object from the `sender` argument of the "event completed" callback.
 
-*  If you want the app to hold a reference to a WebView2 object, use a weak reference whenever possible.
+* If you want the app to hold a reference to a WebView2 object, use a weak reference whenever possible.
 
 
 <!-- ====================================================================== -->

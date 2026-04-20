@@ -1,5 +1,5 @@
 ---
-title: Create a DevTools extension, adding a custom tool tab and panel
+title: Add a custom tool in Microsoft Edge DevTools
 description: Create a Microsoft Edge extension that adds a custom tool in DevTools, including a tool tab and panel.  Communicate between DevTools and the inspected webpage, and call DevTools APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,10 +8,26 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 04/06/2026
 ---
-# Create a DevTools extension, adding a custom tool tab and panel
+# Add a custom tool in Microsoft Edge DevTools
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension -->
 <!-- upstream equiv: https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools#devtools_extension_examples -->
 <!-- article 1 of 3 -->
+
+Before using the present article, see the more basic article [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md), which is a simpler, regular extension, rather than a specialized, DevTools tool extension.
+
+Creating a DevTools custom tool extension is like creating a regular extension, but also involves differences:
+
+Like a regular extension, a DevTools extension: 
+* Has a manifest file.  [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) - Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools.
+
+Unlike a regular extension, a DevTools extension: 
+* Has the following files:
+   * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) - Webpage to display in the custom panel in DevTools.
+   * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - A non-rendered HTML file run when DevTools is opened, to load the extension's JavaScript files.
+   * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) - A service worker that sets up event listeners for communications between the inspected page and DevTools.
+   * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page.
+   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Logic for the custom DevTools page.
+   * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) - Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu.
 
 To add a custom tool in Microsoft Edge DevTools, create a Microsoft Edge extension that adds a custom tool in Microsoft Edge DevTools, including a tool tab and panel.  Communicate between DevTools and the inspected webpage, and call DevTools APIs.
 
@@ -20,6 +36,9 @@ The DevTools Extension sample displays a custom tool in DevTools, including a **
 ![Custom tab](./devtools-extension-images/custom-tab-activity-bar.png)
 
 A _panel_ is a tool page in Microsoft Edge DevTools, along with the tool's tab in the **Activity Bar**.
+
+See also:
+* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
 
 
 <!-- ====================================================================== -->
@@ -46,15 +65,6 @@ See also:
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
 * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
 * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-
-
-<!-- ====================================================================== -->
-## Sideloading an extension locally, for testing
-
-Loading and testing an Edge extension locally is sometimes called _sideloading_ an extension, as opposed to distributing an extension to users.
-
-See also:
-* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
 
 
 <!-- ====================================================================== -->
@@ -102,19 +112,10 @@ Detect the user clicks on a webpage by using a content script.  The content scri
 <!-- all links in article -->
 
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
+* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
 * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
    * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-* [Sideload an extension to install and test it locally](../getting-started/extension-sideloading.md)
 * [Supported APIs for Microsoft Edge extensions](./api-support.md)
 
 GitHub:
-* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/)
-   * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json)
-   * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html)
-   * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html)
-   * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js)
-   * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js)
-   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js)
-   * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png)
-   * [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md)
-   
+* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/) - Readme and source files.

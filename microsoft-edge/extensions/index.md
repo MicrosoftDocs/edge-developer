@@ -19,7 +19,7 @@ The present documentation is for extension developers, rather than end-users of 
 
 **Detailed contents:**
 * [Introduction](#introduction)
-* [Basic guidance](#basic-guidance)
+* [Creating an extension for various browsers](#creating-an-extension-for-various-browsers)
 * [Benefits of Chromium extensions](#benefits-of-chromium-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
 * [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
@@ -40,9 +40,9 @@ You can create a Microsoft Edge extension if you have an idea or product that is
 
 An extension should include at least the following features:
 
-*   An app manifest JSON file that contains basic platform information.
-*   A JavaScript file that defines the function.
-*   HTML and CSS files that define the user interface.
+* An app manifest JSON file that contains basic platform information.
+* A JavaScript file that defines the function.
+* HTML and CSS files that define the user interface.
 
 To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
@@ -52,7 +52,7 @@ A Microsoft Edge extension:
 
 
 <!-- ====================================================================== -->
-## Basic guidance
+## Creating an extension for various browsers
 
 Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Microsoft Edge, Safari, Firefox, Chrome, Opera, and Brave. 
 
@@ -90,9 +90,9 @@ The following content focuses mostly on Chromium extensions.
 
 Occasionally, API parity doesn't exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To make sure your extension meets customer expectations, review API status through the following official browser documentation:
 
-*   [Chrome APIs](https://developer.chrome.com/extensions/api_index)
-*   [Extension APIs supported in Opera](https://dev.opera.com/extensions/apis)
-*   [Port Chrome extension to Microsoft Edge](developer-guide/port-chrome-extension.md)
+* [Chrome APIs](https://developer.chrome.com/extensions/api_index)
+* [Extension APIs supported in Opera](https://dev.opera.com/extensions/apis)
+* [Port Chrome extension to Microsoft Edge](developer-guide/port-chrome-extension.md)
 
 The APIs that you require define the changes that you must make to address the differences between each browser.  You might need to create slightly different code packages with small differences for each browser extension store.
 
@@ -107,10 +107,10 @@ See also:
 
 You can submit and seek browser extensions in the following browser extension stores.
 
-*   [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
-*   [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
-*   [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
-*   [Opera addons](https://addons.opera.com/extensions)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
+* [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
+* [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
+* [Opera addons](https://addons.opera.com/extensions)
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
@@ -136,10 +136,10 @@ When you choose an email address to register, consider whether you must transfer
 
 To submit an extension at Microsoft Edge Add-ons, you need to provide the following items:
 
-*   An archive (`.zip`) file that contains your code files.
-*   All required visual assets, which include a logo and small promotional tile.
-*   Optional promotional media, such as screenshots, promotional tiles, and a video URL.
-*   Information that describes your extension such as the name, short description, and a privacy policy link.
+* An archive (`.zip`) file that contains your code files.
+* All required visual assets, which include a logo and small promotional tile.
+* Optional promotional media, such as screenshots, promotional tiles, and a video URL.
+* Information that describes your extension such as the name, short description, and a privacy policy link.
 
 Different stores might have different submission requirements.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
 
@@ -198,10 +198,10 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: copy of all links in the article -->
+<!-- todo: all links in article -->
 
 * [Best practices for extensions](./developer-guide/best-practices.md)
-* [Extension concepts and architecture](./getting-started/index.md)
+* [Extension concepts and architecture](./getting-started/architecture.md)
 * [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.
 

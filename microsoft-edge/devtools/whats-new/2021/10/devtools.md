@@ -59,8 +59,8 @@ See also:
 
 Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints.  You can specify User-Agent Client Hints in either of two places:
 
-*  [When defining the user agent string in the Network conditions tool](../../../device-mode/override-user-agent.md).
-*  [When adding a custom device to emulate in Settings](../../../device-mode/index.md#add-a-custom-mobile-device).
+* [When defining the user agent string in the Network conditions tool](../../../device-mode/override-user-agent.md).
+* [When adding a custom device to emulate in Settings](../../../device-mode/index.md#add-a-custom-mobile-device).
 
 In Microsoft Edge prior to version 95, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard caused the incorrect UI item to be activated.  Instead of expanding the **User agent client hints** section for you to fill it in, it selected the **Add** button.  The device you were starting to define was immediately added, using empty fields in the **User agent client hints** section.
 
@@ -109,8 +109,8 @@ The following are some of the additional features that are available in Microsof
 <!-- Chromium What's New entry: [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New in DevTools (Chrome 95)_. -->
 
 DevTools improves the display of properties by:
-*  Always bolding and sorting own properties first, in the **Console**, in the **Sources** tool, and in the **Properties** tab in the **Elements** tool.  (An _own property_ is a property that's defined directly on the object.)
-*  Flattening the properties display in the **Properties** pane.
+* Always bolding and sorting own properties first, in the **Console**, in the **Sources** tool, and in the **Properties** tab in the **Elements** tool.  (An _own property_ is a property that's defined directly on the object.)
+* Flattening the properties display in the **Properties** pane.
 
 For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`:
 

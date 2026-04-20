@@ -73,13 +73,13 @@ See [Puppeteer overview](../puppeteer/index.md).
 
 WebDriver allows you to automate Microsoft Edge by simulating user interaction.  Tests that use WebDriver have some advantages over JavaScript unit tests that run in the browser:
 
-*  Accesses functionality and information that's not available to JavaScript running in browsers.
+* Accesses functionality and information that's not available to JavaScript running in browsers.
 
-*  Simulates user events or OS-level events more accurately than JavaScript unit tests.
+* Simulates user events or OS-level events more accurately than JavaScript unit tests.
 
-*  Manages multiple windows, tabs, and webpages in a single test session.
+* Manages multiple windows, tabs, and webpages in a single test session.
 
-*  Runs multiple sessions of Microsoft Edge on a specific machine.
+* Runs multiple sessions of Microsoft Edge on a specific machine.
 
 See [Use WebDriver to automate Microsoft Edge](../webdriver/index.md).
 

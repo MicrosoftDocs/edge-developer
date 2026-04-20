@@ -59,7 +59,7 @@ To prepare an extension to be submitted via Partner Center, to be published at [
 <!-- ---------------------------------- -->
 #### Have a working prototype of the extension
 
-Before publishing your extension, you should have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+Before publishing your extension, you should have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/architecture.md).
 
 
 <!-- ---------------------------------- -->
@@ -89,9 +89,9 @@ Before uploading your package to Partner Center, inspect the manifest file to ma
 
 The following fields in the manifest file are automatically included in your extension's product listing at Microsoft Edge Add-ons.  The fields are read-only on the **Store Listings** page, which is described below.
 
-*  The `Name` field, which populates the **Extension name** on the **Details for \<Language\>** page.
+* The `Name` field, which populates the **Extension name** on the **Details for \<Language\>** page.
 
-*  The `Description` field, which populates the **Description** on the **Details for \<Language\>** page.
+* The `Description` field, which populates the **Description** on the **Details for \<Language\>** page.
    
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for the extension.
 
@@ -570,7 +570,7 @@ If you experience issues when registering as an extension developer or when subm
 
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 * [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
-* [Extension concepts and architecture](../getting-started/index.md)
+* [Extension concepts and architecture](../getting-started/architecture.md)
 * [Register as a Microsoft Edge extension developer](./create-dev-account.md)
 * [Contact the Microsoft Edge extensions team](../contact.md)
 

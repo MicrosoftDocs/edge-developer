@@ -37,7 +37,7 @@ sync'd Jul. 30, 2025
 
 | Demo name | Description | Source code & Readme | Docs |
 |---|---|---|---|
-| Custom DevTools tool | A Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools. | [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension) | [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md) |
+| Custom DevTools tool | A Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools. | [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension) | [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md) |
 
 
 <!-- ====================================================================== -->

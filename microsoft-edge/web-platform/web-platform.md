@@ -39,9 +39,9 @@ See [Tracking prevention in Microsoft Edge](./tracking-prevention.md).
 
 Microsoft Edge enables your website to retrieve user agent information.  You use the user agent information to present webpages correctly for each user's browser.  Browsers provide mechanisms for websites to detect browser information such as brand, version number, and host operating system.
 
-*  **User-Agent Client Hints** are an improved mechanism for retrieving browser information.
+* **User-Agent Client Hints** are an improved mechanism for retrieving browser information.
 
-*  **User-Agent strings** are legacy; they are outdated and have a history of causing website compatibility problems.
+* **User-Agent strings** are legacy; they are outdated and have a history of causing website compatibility problems.
 
 You may want to provide different experiences to users based on their browser.  If you include steps about how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
 
@@ -67,14 +67,14 @@ See [Develop experiences for the sidebar in Microsoft Edge](./sidebar.md).
 Websites can differentiate between users on Windows 11 and Windows 10 by using User-Agent Client Hints (UA-CH).  The User-Agent Client Hints format is used by browsers to provide user agent information to websites.
 
 Websites can use the user agent information that's sent from the browser to detect information such as:
-*  The browser brand.
-*  The browser version number.
-*  The device platform on which the browser is running.
+* The browser brand.
+* The browser version number.
+* The device platform on which the browser is running.
 
 There are two approaches for sites to access user agent information:
 
-*  User-Agent strings (legacy).
-*  User-Agent Client Hints (recommended).
+* User-Agent strings (legacy).
+* User-Agent Client Hints (recommended).
 
 See [Detect Windows 11 and CPU architecture using User-Agent Client Hints](./how-to-detect-win11.md).
 

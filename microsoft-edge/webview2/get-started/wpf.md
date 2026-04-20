@@ -21,9 +21,9 @@ In this tutorial, you use the **WPF Application** or **WPF App (.NET Framework)*
 #### Completed project
 
 A completed version<!--TODO: what date?--> of this tutorial project is available in the **WebView2Samples** repo:
-*  Sample name: **WPF_GettingStarted**
-*  Repo directory: [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
-*  Solution file: **WPFSample.sln**
+* Sample name: **WPF_GettingStarted**
+* Repo directory: [WPF_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
+* Solution file: **WPFSample.sln**
 
 
 <!-- ====================================================================== -->
@@ -371,11 +371,11 @@ maintenance link (keep)
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
-*  `NavigationStarting`
-*  `SourceChanged`
-*  `ContentLoading`
-*  `HistoryChanged`
-*  `NavigationCompleted`
+* `NavigationStarting`
+* `SourceChanged`
+* `ContentLoading`
+* `HistoryChanged`
+* `NavigationCompleted`
 
 ![Navigation events, from new document, to navigation starting, through navigation completed](./wpf-images/navigation-events.png)
 
@@ -455,8 +455,8 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 The injected JavaScript is run with specific timing:
 
-*   Run it after the creation of the global object.
-*   Run it before any other script included in the HTML document is run.
+* Run it after the creation of the global object.
+* Run it before any other script included in the HTML document is run.
 
 For example, add scripts that send an alert when a user navigates to non-HTTPS sites, as follows:
 
@@ -488,9 +488,9 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 The host and web content can communicate in the following ways using `postMessage`:
 
-*  Web content in a WebView2 control can post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.
+* Web content in a WebView2 control can post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.
 
-*  Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`. The messages are caught by handlers added to `window.chrome.webview.addEventListener`.
+* Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`. The messages are caught by handlers added to `window.chrome.webview.addEventListener`.
 
 The communication mechanism passes messages from web content to the host using native capabilities.
 

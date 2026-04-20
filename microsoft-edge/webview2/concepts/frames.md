@@ -201,8 +201,8 @@ See also:
 ## Sending and receiving messages
 
 Messages can be sent between the native app and JavaScript code that's in an iframe:
-*  You can send messages from JavaScript in an iframe in an HTML page to the host app.
-*  You can send messages from the host app to JavaScript in an iframe in an HTML page.
+* You can send messages from JavaScript in an iframe in an HTML page to the host app.
+* You can send messages from the host app to JavaScript in an iframe in an HTML page.
 
 
 #### Sending web messages from an iframe to the host app

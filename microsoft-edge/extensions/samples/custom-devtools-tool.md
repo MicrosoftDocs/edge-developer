@@ -22,7 +22,7 @@ Download, install, use, and modify the sample, as follows.
 
 See also:
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
 * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
 * [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code for the Custom DevTools Tool sample.
 
@@ -312,7 +312,7 @@ The **Custom** tab doesn't have a **Remove from Activity Bar** command on the ri
 <!-- all links in article -->
 
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
 * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
 * [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code.
 * [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos)

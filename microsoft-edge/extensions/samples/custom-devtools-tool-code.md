@@ -22,7 +22,7 @@ The Custom DevTools Tool sample consists of the following files and code.  The c
 
 See also:
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
 * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
 
 
@@ -460,7 +460,7 @@ See also:
 ## See also
 <!-- all links in article -->
 
-* [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
 * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->

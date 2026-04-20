@@ -58,10 +58,10 @@ When you work with fonts in CSS, use the new visual Font Editor.  You can define
 
 The **Font Editor** helps you to:
 
-*  Switch between units for different font properties.
-*  Switch between keywords for different font properties.
-*  Convert units.
-*  Generate accurate CSS code.
+* Switch between units for different font properties.
+* Switch between keywords for different font properties.
+* Convert units.
+* Generate accurate CSS code.
 
 To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable new Font Editor tools within Styles pane**.
 
@@ -220,12 +220,12 @@ See also:
 
 The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.2 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.2, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
 
-*  Added a **Close instance** button to each item on the target list ([#248](https://github.com/microsoft/vscode-edge-devtools/pull/248))
-*  Bumped Microsoft Edge DevTools version from 84.0.522.63 to [85.0.564.40](../../2020/06/devtools.md) ([#235](https://github.com/microsoft/vscode-edge-devtools/pull/235))
-*  Included "Debugger for Microsoft Edge" as a dependency  ([#233](https://github.com/microsoft/vscode-edge-devtools/pull/233)).  
+* Added a **Close instance** button to each item on the target list ([#248](https://github.com/microsoft/vscode-edge-devtools/pull/248))
+* Bumped Microsoft Edge DevTools version from 84.0.522.63 to [85.0.564.40](../../2020/06/devtools.md) ([#235](https://github.com/microsoft/vscode-edge-devtools/pull/235))
+* Included "Debugger for Microsoft Edge" as a dependency  ([#233](https://github.com/microsoft/vscode-edge-devtools/pull/233)).  
 <!-- todo: consult w SME on desired presentation here -->
 <!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
-*  Implemented settings option to change extension themes ([#229](https://github.com/microsoft/vscode-edge-devtools/pull/229))
+* Implemented settings option to change extension themes ([#229](https://github.com/microsoft/vscode-edge-devtools/pull/229))
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
@@ -499,9 +499,9 @@ The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver
 
 APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.
 
-*  Spatial properties of text that include font weight and size.
-*  Spatial properties of color that include perceived contrast between text and background.
-*  Spatial properties of context that include ambient light, surroundings, and intended purpose.
+* Spatial properties of text that include font weight and size.
+* Spatial properties of color that include perceived contrast between text and background.
+* Spatial properties of context that include ambient light, surroundings, and intended purpose.
 
 To turn on this experiment, select **Settings** > **Experiments** and then select the checkbox next to **Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines**.  To view the history of this feature in the Chromium open-source project, see Issue [1121900](https://crbug.com/1121900).
 
