@@ -115,7 +115,7 @@ landingContent:
             url: ../extensions/index.md
 
           - text: Get started developing an extension
-            url: ./extensions/getting-started/index.md
+            url: ../extensions/getting-started/index.md
 
           - text: Extension concepts and architecture
             url: ../extensions/getting-started/architecture.md
