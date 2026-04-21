@@ -6,28 +6,46 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/06/2026
+ms.date: 04/20/2026
 ---
 # Add a custom tool in Microsoft Edge DevTools
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension -->
 <!-- upstream equiv: https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools#devtools_extension_examples -->
-<!-- article 1 of 3 -->
+<!-- sibling 1 of 3 -->
 
-Before using the present article, see the more basic article [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md), which is a simpler, regular extension, rather than a specialized, DevTools tool extension.
+Before using the present article and the "Custom DevTools tool" sample, see the articles about a regular extension:
+* [Get started developing an extension](../getting-started/index.md)
+* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
+
+See also:
+* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)<!-- sibling 2 of 3 -->
+* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
 
 Creating a DevTools custom tool extension is like creating a regular extension, but also involves differences:
 
-Like a regular extension, a DevTools extension: 
-* Has a manifest file.  [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) - Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools.
+Like a regular extension, a DevTools extension has a manifest file:
 
-Unlike a regular extension, a DevTools extension: 
-* Has the following files:
-   * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) - Webpage to display in the custom panel in DevTools.
-   * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - A non-rendered HTML file run when DevTools is opened, to load the extension's JavaScript files.
+* [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) - Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools.
+
+An extension that extends DevTools additionally includes a rendered HTML file, and a non-rendered HTML file that's run when DevTools is opened:
+
+* [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) - Webpage to display in the custom panel in DevTools.
+
+* [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - Loads the extension's JavaScript files:
+
+   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Main logic for the custom DevTools page.  This file is more commonplace or basic than the next two JS files.
+
    * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) - A service worker that sets up event listeners for communications between the inspected page and DevTools.
-   * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page.
-   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Logic for the custom DevTools page.
-   * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) - Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu.
+
+   * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - Additional logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that sends a message containing the mouse-click position.  The content script relays the mouse-click coordinates to the `devtools.js` file, where the coordinates are displayed in both the **Console** tool and the **Custom** tool in DevTools.
+
+The "Custom DevTools tool" sample also consists of the following files:
+
+* [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) - Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu.
+
+
+<!-- ------------------------------ -->
+#### Heading
 
 To add a custom tool in Microsoft Edge DevTools, create a Microsoft Edge extension that adds a custom tool in Microsoft Edge DevTools, including a tool tab and panel.  Communicate between DevTools and the inspected webpage, and call DevTools APIs.
 
@@ -39,36 +57,12 @@ A _panel_ is a tool page in Microsoft Edge DevTools, along with the tool's tab i
 
 See also:
 * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
-
-
-<!-- ====================================================================== -->
-## Overview of files
-<!-- https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%204 -->
-
-* A basic extension for Microsoft Edge consists of a manifest file (`manifest.json`).
-* An extension that extends DevTools additionally includes a webpage file, `devtools.html`, that just loads `devtools.js`.
-
-The sample "Custom DevTools tool" consists of the following files:
-
-| File | Description |
-|---|---|
-| [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) | Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools. |
-| [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) | Webpage to display in the custom panel in DevTools. |
-| [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) | A non-rendered HTML file run when DevTools is opened, to load the extension's JavaScript files. |
-| [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) | Service worker that sets up event listeners for communications between the inspected page and DevTools. |
-| [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) | Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
-| [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) | Logic for the custom DevTools page. |
-| [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) | Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu. |
-| [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md) | Basic information for developers about how to use the sample. |
-
-See also:
 * [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
 
 
 <!-- ====================================================================== -->
 ## Display memory information by calling extension APIs
+<!-- todo: dup w/ Code article? -->
 
 Use extension APIs to display memory information in your DevTools panel.
 
@@ -85,6 +79,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Interact between the webpage and DevTools
+<!-- todo: dup w/ Code article? -->
 
 Code that interacts with the inspected webpage does the following:
 
@@ -94,24 +89,26 @@ Code that interacts with the inspected webpage does the following:
 
 1. When the user clicks a button in the Custom DevTools tool, a greeting alert is displayed in the inspected webpage.
 
-The Custom DevTools tool has direct access to the inspected webpage, and runs when DevTools is opened.  For this, the sample uses a content script and a background service worker.
+The Custom DevTools tool has direct access to the inspected webpage, and runs when DevTools is opened.  The sample uses a content script (`content_script.js`) and a background service worker (`background.js`), as well as the main JS file, `devtools.js`:<!-- todo: why are the content script `content_script.js` and the service worker script and the main js file broken out this way? -->
 
-* A _content script_ runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has access to the DOM and can change it.
+* A _content script_ (such as `content_script.js`) runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has access to the DOM and can change it.
 
-* A _background service worker_ is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
+* A _background service worker_ (such as `background.js`) is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
+
+<!-- todo: change file name from `background.js` to `background-service-worker.js`? -->
 
 The DevTools page, inspected page, content script, and background service worker fit together in an extension:
 
 ![Diagram showing the anatomy of a DevTools extension](./devtools-extension-images/architecture.png)
 
-Detect the user clicks on a webpage by using a content script.  The content script relays this info to the `devtools.js` file, where the data will be displayed in both the console and the DevTools extension panel.
+Detect the user clicks on a webpage by using a content script.  The content script relays this info to the `devtools.js` file, where the data is displayed in both the DevTools **Console** and the DevTools **Custom** tool that's a Microsoft Edge extension.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- all links in article -->
 
-* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
+* [Overview of DevTools](../../devtools/overview.md)
 * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
 * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
    * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)

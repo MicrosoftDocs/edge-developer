@@ -1,16 +1,16 @@
 ---
 title: Code for Custom DevTools tool
-description: Files and code in the Custom DevTools tool sample, which is a Microsoft Edge extension you can modify.  How the sample creates its own panel and interacts with the DevTools extension APIs.
+description: Explains the files and code in the Custom DevTools tool sample, a Microsoft Edge extension.  How the sample creates a custom tool tab and uses DevTools extension APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/06/2026
+ms.date: 04/20/2026
 ---
 # Code for Custom DevTools tool
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool-code -->
-<!-- article 3 of 3 -->
+<!-- sibling 3 of 3 -->
 
 The Custom DevTools Tool sample consists of the following files and code.  The code that interacts with the inspected webpage does the following:
 
@@ -21,9 +21,8 @@ The Custom DevTools Tool sample consists of the following files and code.  The c
 * Displays a greeting alert in the inspected webpage, when the **Say Hello** button is clicked in the **Custom** DevTools tool.
 
 See also:
-* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
-* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 of 3 -->
+* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)<!-- sibling 2 of 3 -->
 
 
 <!-- ====================================================================== -->
@@ -54,7 +53,7 @@ The content script relays this info to the `devtools.js` file, where the data is
 |---|---|
 | [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) | Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools. |
 | [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) | Webpage to display in the custom panel in DevTools. |
-| [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) | A non-rendered HTML file run when DevTools is opened, to load the extension's JavaScript files. |
+| [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) | A non-rendered HTML file that's run when DevTools is opened, to load the extension's JavaScript files. |
 | [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) | Service worker that sets up event listeners for communications between the inspected page and DevTools. |
 | [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) | Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
 | [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) | Logic for the custom DevTools page. |
@@ -206,9 +205,12 @@ When the user clicks anywhere in the inspected page, it will display a message t
 <!-- ====================================================================== -->
 ## `devtools.html`
 
-[devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) is required.  This is a non-rendered HTML file that's run when DevTools is opened, to load the extension's `devtools.js` file.
+File in repo:
+* [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html)
 
-`devtools.html` matches the `devtools_page` member in the manifest file:
+This is a non-rendered HTML file that's run when DevTools is opened, to load the extension's `devtools.js` file.  Such a file is required.
+
+The file name `devtools.html` matches the `devtools_page` member in the manifest file:
 
 A `<script>` element loads the main JavaScript file that's used directly by `panel.html`.  This `devtools.html` file isn't displayed in DevTools; only the `panel.html` file is displayed in DevTools.
 

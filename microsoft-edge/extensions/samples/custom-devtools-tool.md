@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/06/2026
+ms.date: 04/20/2026
 ---
 # Sample: Custom DevTools tool
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool -->
-<!-- article 2 of 3 -->
+<!-- sibling 2 of 3 -->
 
 The sample "Custom DevTools tool" is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, including a tab in the **Activity Bar**, and a panel below the tab.  The tool name and its tab in DevTools can be something other than **Custom**.
 
@@ -21,10 +21,8 @@ The sample "Custom DevTools tool" is a Microsoft Edge extension that adds a **Cu
 Download, install, use, and modify the sample, as follows.
 
 See also:
-* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code for the Custom DevTools Tool sample.
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 of 3 -->
+* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
 
 
 <!-- ====================================================================== -->
@@ -311,12 +309,13 @@ The **Custom** tab doesn't have a **Remove from Activity Bar** command on the ri
 ## See also
 <!-- all links in article -->
 
-* [Overview of DevTools](../../devtools/overview.md)<!-- long jump -->
-* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-* [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/) - Readme and source code.
-* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos)
-* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
+* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 -->
+* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 -->
+
+GitHub:
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+   * [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/)<!-- link not in article --> - Readme and source code.
+   * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), live.
+
+Tools:
 * [Visual Studio Code](https://code.visualstudio.com)
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)
-* [Samples for Microsoft Edge extensions](../samples.md)<!-- link not in article -->
