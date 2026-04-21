@@ -1,14 +1,46 @@
 ---
-title: Develop an extension for the Microsoft Edge sidebar
+title: Sidebar extension sample
 description: The sidebar (or side panel) feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 12/11/2024
+ms.date: 04/21/2026
 ---
-# Develop an extension for the Microsoft Edge sidebar
+# Sidebar extension sample
+
+<!-- todo:
+create sample with finished files, in MicrosoftEdge-Extensions repo, or in MicrosoftEdge/Demos repo
+-->
+
+As a Microsoft Edge extension developer, you can make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+   * [Terminology](#terminology)
+* [Features of the Sidebar API](#features-of-the-sidebar-api)
+* [Origin](#origin)
+* [Add the sidePanel permission in the extension's manifest file](#add-the-sidepanel-permission-in-the-extensions-manifest-file)
+* [Use cases for the Sidebar API](#use-cases-for-the-sidebar-api)
+   * [Display the same sidebar on every site](#display-the-same-sidebar-on-every-site)
+   * [Enable a sidebar for a specific site only](#enable-a-sidebar-for-a-specific-site-only)
+   * [Enable the extension's shortcut icon to open the sidebar](#enable-the-extensions-shortcut-icon-to-open-the-sidebar)
+   * [Switch to a different sidebar](#switch-to-a-different-sidebar)
+   * [Opening the sidebar upon user interaction](#opening-the-sidebar-upon-user-interaction)
+* [Sidebar extensions user experience](#sidebar-extensions-user-experience)
+   * [Opening the extension in the sidebar](#opening-the-extension-in-the-sidebar)
+      * [By clicking an icon](#by-clicking-an-icon)
+      * [By right-clicking the extension's icon](#by-right-clicking-the-extensions-icon)
+      * [By pressing a keyboard shortcut](#by-pressing-a-keyboard-shortcut)
+      * [Open through a gesture](#open-through-a-gesture)
+* [Extension samples](#extension-samples)
+* [Types and methods](#types-and-methods)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 As a Microsoft Edge extension developer, you can make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
@@ -53,6 +85,8 @@ All the existing extensions APIs are available for sidebar extensions, so you ca
 
 <!-- ====================================================================== -->
 ## Add the sidePanel permission in the extension's manifest file
+
+<!-- todo: in Extensions repo local dir (forked),  -->
 
 To use the Sidebar API, add a permission in your `manifest.json` file.  Include the `sidePanel` permission in the extension's `manifest.json` file:
 
@@ -238,7 +272,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 <!-- ====================================================================== -->
 ## Sidebar extensions user experience
 
-Develop an extension for the Microsoft Edge sidebar have these user experience (UX) features.
+Sidebar extension sample have these user experience (UX) features.
 
 
 <!-- ------------------------------ -->

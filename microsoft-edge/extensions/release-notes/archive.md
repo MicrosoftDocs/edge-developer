@@ -220,7 +220,7 @@ See also:
 <!-- ------------------------------ -->
 #### Sidebar
 
-The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md).
+The sidebar feature of Microsoft Edge extensions enables an extension to display custom UI content in the browser sidebar.  See [Sidebar extension sample](../developer-guide/sidebar.md).
 
 
 

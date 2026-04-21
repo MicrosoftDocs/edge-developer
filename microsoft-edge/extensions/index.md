@@ -50,6 +50,9 @@ A Microsoft Edge extension:
 
 ![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
 
+See also:
+* [Get started developing an extension](./getting-started/index.md)
+
 
 <!-- ====================================================================== -->
 ## Creating an extension for various browsers

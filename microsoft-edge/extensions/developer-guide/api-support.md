@@ -60,7 +60,7 @@ Microsoft Edge extensions use a subset of the JavaScript methods for the Chromiu
 | [scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting) | Executes scripts in different contexts. | MV3 | Windows, Linux, Mac, Android |
 | [search](https://developer.chrome.com/docs/extensions/reference/api/search) | Searches by using the default provider. | MV2, MV3 | Windows, Linux, Mac, Android |
 | [sessions](https://developer.chrome.com/docs/extensions/reference/api/sessions) | Queries and restores tabs and windows from a browsing session. | MV2, MV3 | Windows, Linux, Mac, Android |
-| [sidePanel](https://developer.chrome.com/docs/extensions/reference/api/sidePanel) | Hosts custom content in the browser's sidebar alongside the main content of a webpage.  See [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md). | MV3 | Windows, Linux, Mac |
+| [sidePanel](https://developer.chrome.com/docs/extensions/reference/api/sidePanel) | Hosts custom content in the browser's sidebar alongside the main content of a webpage.  See [Sidebar extension sample](../developer-guide/sidebar.md). | MV3 | Windows, Linux, Mac |
 | [storage](https://developer.chrome.com/docs/extensions/reference/api/storage) | Stores, retrieves, and tracks changes to user data. | MV2, MV3 | Windows, Linux, Mac, Android |
 | [system.cpu](https://developer.chrome.com/docs/extensions/reference/api/system/cpu) | Queries CPU metadata. | MV2, MV3 | Windows, Linux, Mac, Android |
 | [system.display](https://developer.chrome.com/docs/extensions/reference/api/system/display) | Queries display metadata. | MV2, MV3 | Windows, Linux, Mac |
