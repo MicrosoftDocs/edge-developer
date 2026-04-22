@@ -22,7 +22,8 @@ Download, install, use, and modify the sample, as follows.
 
 See also:
 * [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 of 3 -->
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
+* [Sample: Custom DevTools tool](./custom-devtools-tool.md)<!-- sibling 2 of 3 --> - the present article.
+* [Code for Custom DevTools tool](./custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
 
 
 <!-- ====================================================================== -->

@@ -13,13 +13,14 @@ ms.date: 04/20/2026
 <!-- upstream equiv: https://developer.chrome.com/docs/extensions/how-to/devtools/extend-devtools#devtools_extension_examples -->
 <!-- sibling 1 of 3 -->
 
-Before using the present article and the "Custom DevTools tool" sample, see the articles about a regular extension:
-* [Get started developing an extension](../getting-started/index.md)
-* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
+To immediately add a custom tool in DevTools in Microsoft Edge, you can get this sample running, and then modify the sample.
 
 See also:
-* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)<!-- sibling 2 of 3 -->
-* [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
+* [Get started developing an extension](../getting-started/index.md) - a more basic extension sample that you can start with.
+   * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
+* [Add a custom tool in Microsoft Edge DevTools](./devtools-extension.md)<!-- sibling 1 of 3 --> - the present article.
+   * [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)<!-- sibling 2 of 3 -->
+      * [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md)<!-- sibling 3 of 3 -->
 
 Creating a DevTools custom tool extension is like creating a regular extension, but also involves differences:
 
@@ -35,13 +36,15 @@ An extension that extends DevTools additionally includes a rendered HTML file, a
 
    * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Main logic for the custom DevTools page.  This file is more commonplace or basic than the next two JS files.
 
-   * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) - A service worker that sets up event listeners for communications between the inspected page and DevTools.
+   * [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) - A service worker that sets up event listeners for communications between the inspected page and DevTools.
 
    * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - Additional logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that sends a message containing the mouse-click position.  The content script relays the mouse-click coordinates to the `devtools.js` file, where the coordinates are displayed in both the **Console** tool and the **Custom** tool in DevTools.
 
-The "Custom DevTools tool" sample also consists of the following files:
+Support files:
 
 * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) - Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu.
+
+* [README.md](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/README.md)
 
 
 <!-- ------------------------------ -->
@@ -89,13 +92,11 @@ Code that interacts with the inspected webpage does the following:
 
 1. When the user clicks a button in the Custom DevTools tool, a greeting alert is displayed in the inspected webpage.
 
-The Custom DevTools tool has direct access to the inspected webpage, and runs when DevTools is opened.  The sample uses a content script (`content_script.js`) and a background service worker (`background.js`), as well as the main JS file, `devtools.js`:<!-- todo: why are the content script `content_script.js` and the service worker script and the main js file broken out this way? -->
+The Custom DevTools tool has direct access to the inspected webpage, and runs when DevTools is opened.  The sample uses a content script (`content_script.js`) and a background service worker (`service-worker.js`), as well as the main JS file, `devtools.js`:<!-- todo: why are the content script `content_script.js` and the service worker script and the main js file broken out this way? -->
 
 * A _content script_ (such as `content_script.js`) runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has access to the DOM and can change it.
 
-* A _background service worker_ (such as `background.js`) is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
-
-<!-- todo: change file name from `background.js` to `background-service-worker.js`? -->
+* A _background service worker_ (such as `service-worker.js`) is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
 
 The DevTools page, inspected page, content script, and background service worker fit together in an extension:
 

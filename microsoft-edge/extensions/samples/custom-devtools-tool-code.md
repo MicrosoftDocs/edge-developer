@@ -22,7 +22,8 @@ The Custom DevTools Tool sample consists of the following files and code.  The c
 
 See also:
 * [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 of 3 -->
-* [Sample: Custom DevTools tool](../samples/custom-devtools-tool.md)<!-- sibling 2 of 3 -->
+   * [Sample: Custom DevTools tool](./custom-devtools-tool.md)<!-- sibling 2 of 3 -->
+      * [Code for Custom DevTools tool](./custom-devtools-tool-code.md)<!-- sibling 3 of 3 --> - the present article.
 
 
 <!-- ====================================================================== -->
@@ -54,7 +55,7 @@ The content script relays this info to the `devtools.js` file, where the data is
 | [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) | Information about the extension: name, description, version, manifest version, and HTML page to show in DevTools. |
 | [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) | Webpage to display in the custom panel in DevTools. |
 | [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) | A non-rendered HTML file that's run when DevTools is opened, to load the extension's JavaScript files. |
-| [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) | Service worker that sets up event listeners for communications between the inspected page and DevTools. |
+| [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) | Service worker that sets up event listeners for communications between the inspected page and DevTools. |
 | [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) | Logic for the custom DevTools page.  Prints a message to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
 | [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) | Logic for the custom DevTools page. |
 | [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png) | Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu. |
@@ -107,7 +108,7 @@ The manifest file contains key/value pairs.  The top-level keys are called _memb
         ]
     }],
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "service-worker.js"
     },
     "permissions": [
         "system.memory"
@@ -135,7 +136,7 @@ Code from `manifest.json`:
   ]
 }],
 "background": {
-    "service_worker": "background.js"
+    "service_worker": "service-worker.js"
 }
 ```
 
@@ -232,13 +233,13 @@ In the manifest file (`manifest.json`), the `devtools_page` field specifies the 
 
 
 <!-- ====================================================================== -->
-## `background.js`
+## `service-worker.js`
 
-[background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js) is a background service worker that sets up event listeners for communications between the inspected page and DevTools.
+[service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) is a background service worker that sets up event listeners for communications between the inspected page and DevTools.
 
 A _background service worker_ is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
 
-`background.js`:
+`service-worker.js`:
 
 ```javascript
 let id = null;
@@ -473,7 +474,7 @@ GitHub:
    * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json)
    * [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html)
    * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html)
-   * [background.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/background.js)
+   * [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js)
    * [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js)
    * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js)
    * [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png)
