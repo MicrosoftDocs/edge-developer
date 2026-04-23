@@ -23,8 +23,7 @@ As a Microsoft Edge extension developer, you can make your new or existing Micro
 **Detailed contents:**
 * [Introduction](#introduction)
    * [Terminology](#terminology)
-* [Features of the Side Panel API](#features-of-the-side-panel-api)
-* [Origin](#origin)
+* [Concepts and usage](#concepts-and-usage)
 * [Add the sidePanel permission in the manifest file](#add-the-sidepanel-permission-in-the-manifest-file)
 * [Use cases for the Side Panel API](#use-cases-for-the-side-panel-api)
    * [Display the same sidebar on every site](#display-the-same-sidebar-on-every-site)
