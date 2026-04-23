@@ -424,6 +424,9 @@ For more Side Panel API extensions demos, explore any of the following extension
 
 * [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple) - used for the section [Switch to a different sidebar](#switch-to-a-different-sidebar), above.
 
+See also:
+* [Samples for Microsoft Edge extensions](../samples/index.md)
+
 
 <!-- ====================================================================== -->
 ## Types and methods
