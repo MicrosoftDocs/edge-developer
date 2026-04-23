@@ -123,7 +123,7 @@ landingContent:
           - text: Add a custom tool in Microsoft Edge DevTools
             url: ../developer-guide/devtools-extension.md
 
-          - text: Sidebar extension sample
+          - text: Develop an extension for the Microsoft Edge sidebar
             url: ../developer-guide/sidebar.md
 
           - text: Native messaging

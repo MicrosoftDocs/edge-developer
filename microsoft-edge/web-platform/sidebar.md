@@ -56,4 +56,4 @@ The Microsoft Edge team continues to evolve these sidebar extensibility models a
 
 To learn more about Microsoft Edge extensions and how to create them, see [Overview of Microsoft Edge extensions](../extensions/index.md).
 
-To learn more about using the sidebar API in your extension, see [Sidebar extension sample](../extensions/developer-guide/sidebar.md).
+To learn more about using the sidebar API in your extension, see [Develop an extension for the Microsoft Edge sidebar](../extensions/developer-guide/sidebar.md).

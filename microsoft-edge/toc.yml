@@ -1194,23 +1194,6 @@
 
             - name: "Sample: Picture inserter using content script"
               href: ./extensions/samples/picture-inserter-content-script.md
-
-            - name: Add a custom tool in Microsoft Edge DevTools
-              items:
-
-                - name: Add a custom tool in Microsoft Edge DevTools
-                  href: ./extensions/developer-guide/devtools-extension.md
-
-                - name: "Sample: Custom DevTools tool"
-                  href: ./extensions/samples/custom-devtools-tool.md
-
-                - name: Code for Custom DevTools tool
-                  href: ./extensions/samples/custom-devtools-tool-code.md
-
-            - name: Sidebar extension sample  # todo: create sample, reframe article as "Microsoft Edge sidebar sample"
-              href: ./extensions/developer-guide/sidebar.md
-              displayName: sidebar extensions, sidepanel, side panel
-
 # -----------------------------------------------------------------------------
         - name: Port an extension to Microsoft Edge
           items:
@@ -1246,6 +1229,23 @@
 
                 - name: Declare API permissions in the manifest
                   href: ./extensions/developer-guide/declare-permissions.md
+
+          # - name: Develop a regular extension  # see "Get started developing an extension"
+
+            - name: Develop an extension for the Microsoft Edge sidebar
+              href: ./extensions/developer-guide/sidebar.md
+              displayName: sidebar extensions, sidepanel, side panel
+
+            - name: Add a custom tool in Microsoft Edge DevTools
+              items:
+                - name: Add a custom tool in Microsoft Edge DevTools
+                  href: ./extensions/developer-guide/devtools-extension.md
+
+                - name: "Sample: Custom DevTools tool"
+                  href: ./extensions/samples/custom-devtools-tool.md
+
+                - name: Code for Custom DevTools tool
+                  href: ./extensions/samples/custom-devtools-tool-code.md
 
             - name: Native messaging
               href: ./extensions/developer-guide/native-messaging.md

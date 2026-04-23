@@ -26,7 +26,7 @@ sync'd Jul. 30, 2025
 | Picture viewer pop-up webpage | A browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab. | [/picture-viewer-popup-webpage/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-viewer-popup-webpage) | [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md) |
 | Picture inserter using content script | Uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element. | [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-inserter-content-script) | [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md) |
 
-* [Sidebar extension sample](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [GoogleChrome / chrome-extensions-samples repo](#googlechrome--chrome-extensions-samples-repo), below.
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [GoogleChrome / chrome-extensions-samples repo](#googlechrome--chrome-extensions-samples-repo), below.
 
 
 <!-- ====================================================================== -->
@@ -45,11 +45,22 @@ sync'd Jul. 30, 2025
 <!-- ====================================================================== -->
 ## GoogleChrome / chrome-extensions-samples repo
 
+* [GoogleChrome / chrome-extensions-samples](https://github.com/GoogleChrome/chrome-extensions-samples) repo.
+   * [README.md](https://github.com/GoogleChrome/chrome-extensions-samples/blob/main/README.md)
+   * [Samples](https://developer.chrome.com/docs/extensions/samples/) - UI to explore the Chrome Extension samples repo.
+
+
+<!-- ------------------------------ -->
+#### Sidebar samples
+
 * [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
 * [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
 * [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
 * [Opening the side panel through a user interaction](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-open)
 * [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
+
+See also:
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md)
 
 
 <!-- ====================================================================== -->

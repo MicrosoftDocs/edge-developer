@@ -93,9 +93,13 @@ Download the "main" branch of the Demos repo, as follows:
 <!-- ====================================================================== -->
 ## Step 2: Install the extension to add the tool in DevTools
 
-1. In Microsoft Edge, select **Settings and more** (![The Settings and more icon](./custom-devtools-tool-images/settings-and-more-icon.png)), hover over **Extensions**, and then select **Manage extensions**.
+1. In Microsoft Edge, open a new window or tab.
+
+1. Select **Settings and more** (![The Settings and more icon](./custom-devtools-tool-images/settings-and-more-icon.png)), hover over **Extensions**, and then select **Manage extensions**.
 
    The **Extensions** tab and page opens (`edge://extensions`).
+
+1. Turn on the **Developer mode** toggle.
 
 1. Click ![The Load unpacked icon](./custom-devtools-tool-images/load-unpacked-icon.png) **Load unpacked**.
 
@@ -174,6 +178,8 @@ Download the "main" branch of the Demos repo, as follows:
    ![Coordinates in Custom tool](./custom-devtools-tool-images/custom-tool-coordinates.png)
 
 1. In DevTools, in the **Activity Bar**, select the **Console** (![Console icon](./custom-devtools-tool-images/console-icon.png)) tool.
+
+   The message "Connected!" is displayed in the **Console** tool.<!-- todo: true?  how can we view that message? -->
 
 1. In the inspected webpage, click various spots.
 
