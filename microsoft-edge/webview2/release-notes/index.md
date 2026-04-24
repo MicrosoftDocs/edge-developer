@@ -62,6 +62,9 @@ The `msWebView2GranularProcessFailedReason` feature flag is disabled by default 
 
 This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing stable API, and are available as part of this Prerelease SDK.
 
+See also:
+* [[Breaking Change] Granular process failure reasons for the ProcessFailed event (Issue #131)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/131)
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ProcessFailedEventArgs` Class
