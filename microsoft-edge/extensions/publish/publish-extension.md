@@ -29,7 +29,8 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Visibility](#visibility)
    * [Markets](#markets)
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
-* [Step 6: Add store listing details for each language](#step-6-add-store-listing-details-for-each-language)
+* [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
+* [Step 7: Add store listing details for each language](#step-7-add-store-listing-details-for-each-language)
    * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
@@ -37,7 +38,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Provide a YouTube video](#provide-a-youtube-video)
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
-* [Step 7: Provide testing notes and submit the extension](#step-7-provide-testing-notes-and-submit-the-extension)
+* [Step 8: Provide testing notes and submit the extension](#step-8-provide-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [If a single locale appears but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
@@ -107,12 +108,13 @@ See also:
 
 <!-- ========================================================================== -->
 ## Step 2: Start a new submission at Partner Center
+<!-- todo: avoid 'submission' -->
 
 1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) at Partner Center.
 
    The **Overview** page opens:
 
-   ![Overview page](./publish-extension-images/partner-center-extension-home.png)
+   ![Overview page](./publish-extension-images/partner-center-extension-home.png)<!-- no new png -->
 
 1. Click **Create new extension**.
 
@@ -122,7 +124,7 @@ See also:
 
 The **Extension overview** page shows information for a specific extension:
 
-![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
+![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)<!-- Step3.png -->
 
 To upload the extension package:
 
@@ -146,7 +148,7 @@ To upload the extension package:
 
 On the **Availability** page for the extension, fill in the **Visibility** and **Markets** sections as follows.
 
-![The Availability page](./publish-extension-images/availability-markets.png)
+![The Availability page](./publish-extension-images/availability-markets.png)<!-- step4.png -->
 
 
 <!-- ------------------------------ -->
@@ -203,7 +205,108 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Add store listing details for each language
+## Step 6: Fill out the privacy fields
+<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
+
+The **Privacy** section in the extension submission<!-- todo: avoid 'submission' --> flow allows you to declare your extension's purpose, permissions, and data practices.  Providing accurate and complete information in these fields helps streamline the review process and ensures transparency for users.
+ 
+![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)<!-- 3.png --><!-- 5.png not used -->
+
+1. On the left, click **Privacy**.
+
+   The **Privacy** page for the extension opens.
+
+1. Fill in the Privacy fields, as follows:
+
+
+<!-- ---------- -->
+<!-- https://learn.microsoft.com/en-us/contribute/content/markdown-reference#alerts-note-tip-important-caution-warning -->
+> [!IMPORTANT]
+> All information provided in the Privacy fields must be complete, accurate, and consistent with the extension's behavior and metadata.  Any incomplete, misleading, or inaccurate disclosures may be considered a violation of [Microsoft Edge Add-ons Developer Policies](/legal/microsoft-edge/extensions/developer-policies) and can result in additional review, delayed certification, or rejection of the submission.
+
+<!-- todo: make link text match destination title, which is: Developer policies for the Microsoft Edge Add-ons store -->
+
+<!-- todo: avoid 'submission' -->
+
+
+<!-- ------------------------------ -->
+#### State the extension's purpose
+
+Extensions must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
+
+
+<!-- ---------- -->
+**Single purpose description<!-- todo: png shows "Single Purpose Description" -->:** Provide a concise description that helps reviewers understand the core functionality of your extension.  Avoid vague or overly broad descriptions.
+
+![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)<!-- 6.png -->
+
+
+<!-- ------------------------------ -->
+#### List and justify any permissions
+
+Your extension must request only the **minimum permissions** necessary to deliver its functionality. Avoid requesting excessive or unrelated permissions.
+
+
+<!-- ---------- -->
+**Permissions<!-- todo: this png shows "Permission" --> justification:** This section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission. Fill out these fields to tell the reviewers why your extension needs to use each permission. If there are permissions listed here that you don't require, remove them from your manifest and upload a new version of your extension before continuing.
+
+This information helps reviewers validate that your extension adheres to least-privilege principles.
+
+![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)<!-- 7.png -->
+
+
+<!-- ------------------------------ -->
+#### Declare any use of remote code
+
+Extensions should avoid the use of remote code unless absolutely necessary, as it requires additional review and may increase certification time.
+
+
+<!-- ---------- -->
+<!-- https://learn.microsoft.com/en-us/contribute/content/markdown-reference#alerts-note-tip-important-caution-warning -->
+> [!WARNING]
+> In Manifest V3, loading and executing remotely hosted code is not permitted.
+
+
+<!-- ---------- -->
+**Remote code:** Use this field to tell reviewers whether your extension executes remote code and, if so, why this is necessary.  If your extension doesn't need to execute remote code, make sure that it does not and select "No, I am not using remote code."<!-- todo: move period outside quotes; period not in png -->
+
+![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)<!-- 8.png  -->
+
+
+<!-- ------------------------------ -->
+#### Certify your data usage practices
+
+You must disclose how your extension collects and uses user data as part of the submission<!-- todo: avoid 'submission' --> process.
+
+**Data usage disclosure includes:**
+
+* The types of user data your extension collects
+
+* Certification that your extension complies with data usage and limited-use policies
+
+**Note:** Your disclosures are displayed to Edge users and should be consistent with the existing privacy policy URL that you provided to the Edge Web Store.
+
+
+<!-- ---------- -->
+**Data usage:** Use this field<!-- todo: this section --> to disclose and certify your data collection practices.  Use the first group of checkboxes to disclose which types of data your extension collects.  Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
+
+This information improves transparency and enables users to understand how their data is handled.
+
+![The "Data usage" section](./publish-extension-images/data-usage.png)<!-- 9.png -->
+
+ 
+<!-- ------------------------------ -->
+#### Set a privacy policy
+
+Add a link to the privacy policy for your extension. The policy should include how data is collected, used, and disclosed.
+
+Ensure that the policy is accessible and up to date, as it may be displayed to users in the store listing.
+
+![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)<!-- 10.png -->
+
+
+<!-- ========================================================================== -->
+## Step 7: Add store listing details for each language
 
 In one or more **Details for \<Language\>** pages, fill in the properties.
 
@@ -215,13 +318,13 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
    The **Store Listings** page opens:
 
-   ![Store listing section for an extension](./publish-extension-images/store-listings-page.png)
+   ![Store listing section for an extension](./publish-extension-images/store-listings-page.png)<!-- step6.1.png -->
 
 1. In the row for a language, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
    The **Details for \<Language\>** page opens:
 
-   ![Details page](./publish-extension-images/details-page.png)
+   ![Details page](./publish-extension-images/details-page.png)<!-- step6.2.png -->
 
 1. Fill in the properties, as follows.
 
@@ -229,7 +332,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
    | Property name | Required? | Description |
    |---|---|---|
-   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
+   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission<!-- todo: avoid 'submission' -->, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
    | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-the-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | Optional | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -265,7 +368,7 @@ To generate the description by using AI:
 
    The **Generate description using AI** pane opens on the right:
 
-   ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
+   ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)<!-- Generate the description with AI.1.png -->
 
 1. In the **Provide inputs to generate description (optional)** text box, you can enter AI prompt text, such as:
 
@@ -300,11 +403,11 @@ To generate the description by using AI:
 
 You can generate descriptions up to 10 times per hour.  If you exceed this limit, an error message appears, and you can retry later:
 
-![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)
+![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)<!-- no new png? -->
 
 If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
  
-![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)
+![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)<!-- no new png? -->
 
 
 <!-- ------------------------------ -->
@@ -314,7 +417,7 @@ To add a language in your store listing:
 
 1. In Partner Center, go to the **Store Listings** page:
 
-   ![Add a language, in the Store Listings page](./publish-extension-images/add-a-language.png)
+   ![Add a language, in the Store Listings page](./publish-extension-images/add-a-language.png)<!-- Add or remove a language.1.png -->
 
 1. In the **Add a language** dropdown list, select a language.
 
@@ -344,7 +447,7 @@ To duplicate an asset across languages:
 
    The **Details for \<Language\>** page opens:
 
-   ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)
+   ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)<!-- Duplicate an asset from one language to the other languages.2.png -->
 
 1. Click the **Duplicate** option that's under an asset such as:
 
@@ -374,7 +477,7 @@ To enter the URL of your YouTube video:
 
 1. On the store listing details page, paste the URL in the **YouTube video URL** field:
 
-   ![The "YouTube video URL" text box in the Details for English page](./publish-extension-images/video-url-in-details-page.png)
+   ![The "YouTube video URL" text box in the Details for English page](./publish-extension-images/video-url-in-details-page.png)<!-- "Provide a YouTube video.3.png" -->
 
 
 <!-- ------------------------------ -->
@@ -386,7 +489,7 @@ To provide search terms:
 
 1. In a **Details for \<Language\>** page, in the **Search terms** text box, enter search terms for that language:
 
-   ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)
+   ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)<!-- Enter search terms for the extension.1.png -->
 
    Search terms must meet the following requirements:
 
@@ -404,11 +507,11 @@ To provide search terms:
 
 In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
 
-![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)<!-- Fix any form field errors.png -->
 
 
 <!-- ========================================================================== -->
-## Step 7: Provide testing notes and submit the extension
+## Step 8: Provide testing notes and submit the extension
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
 
@@ -420,7 +523,7 @@ To add notes for certification:
 
    The **Submit your extension** page opens:
 
-   ![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)
+   ![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)<!-- no new png? -->
 
 1. Fill in the **Notes for certification** text box.
 
@@ -440,7 +543,7 @@ To add notes for certification:
 
    The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
-   The submission then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
+   The submission<!-- todo: avoid 'submission' --> then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
    After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
 
