@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 11/24/2025
+ms.date: 04/24/2026
 ---
 # Publish a Microsoft Edge extension
 
@@ -30,6 +30,11 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Markets](#markets)
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
 * [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
+   * [State the extension's purpose](#state-the-extensions-purpose)
+   * [List and justify any permissions](#list-and-justify-any-permissions)
+   * [Declare any use of remote code](#declare-any-use-of-remote-code)
+   * [Certify your data usage practices](#certify-your-data-usage-practices)
+   * [Set a privacy policy](#set-a-privacy-policy)
 * [Step 7: Add store listing details for each language](#step-7-add-store-listing-details-for-each-language)
    * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
@@ -40,7 +45,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Fix any form field errors](#fix-any-form-field-errors)
 * [Step 8: Provide testing notes and submit the extension](#step-8-provide-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
-* [If a single locale appears but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
+* [If a single locale appears, but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
 * [Responsible AI for the AI-generated description of an extension](#responsible-ai-for-the-ai-generated-description-of-an-extension)
    * [Process of using the AI-generated description feature](#process-of-using-the-ai-generated-description-feature)
