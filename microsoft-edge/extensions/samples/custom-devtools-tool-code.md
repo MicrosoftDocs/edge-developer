@@ -12,6 +12,8 @@ ms.date: 04/20/2026
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool-code -->
 <!-- sibling 3 of 3 -->
 
+<!-- todo: move this new file from /samples/ to /developer-guide/ -->
+
 The Custom DevTools Tool sample consists of the following files and code.  The code that interacts with the inspected webpage does the following:
 
 * Displays memory information in the **Custom** DevTools tool.
@@ -69,13 +71,8 @@ Details are below.
 
 The manifest file contains key/value pairs.  The top-level keys are called _members_.
 
-[manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json) is required.  The manifest contains the following information about the extension:
-* The name of the extension.
-* The description of the extension.
-* The version of the extension.
-* The manifest version.
-* The HTML page to show in DevTools.<!-- todo: true? which member/key? -->
-<!-- todo: delete the above list -->
+File in repo: 
+* [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json).  Required.  The manifest contains the following information about the extension:
 
 | Member | Description |
 |----------|-------------|
@@ -118,28 +115,6 @@ The manifest file contains key/value pairs.  The top-level keys are called _memb
 
 The `permissions` manifest member in `manifest.json` defines which permissions the extension requires from the user.  Some permissions are needed to use certain extension APIs.  The `system-memory` permission is required, in order to use the extension APIs.  Specific APIs have associated permissions.
 
-See also:
-* [Extensions API reference](https://developer.chrome.com/docs/extensions/reference/)
-
-
-Code from `manifest.json`:
-
-```json
-"content_scripts": [{
-  "matches": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "run_at": "document_idle",
-  "js": [
-    "content_script.js"
-  ]
-}],
-"background": {
-    "service_worker": "service-worker.js"
-}
-```
-
 Keys within the "content_scripts" member:
 
 | Key | Value |
@@ -148,11 +123,15 @@ Keys within the "content_scripts" member:
 | `run_at` | Indicates when the browser injects the script onto the page. |
 | `js` | The javascript files to be injected. |
 
+See also:
+* [Extensions API reference](https://developer.chrome.com/docs/extensions/reference/)
+
 
 <!-- ====================================================================== -->
 ## `panel.html`
 
-[panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html) is required.  This is the webpage to display in the custom panel in DevTools.
+File in repo: 
+* [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html).  Required.  This is the webpage to display in the custom panel in DevTools.
 
 `panel.html`:
 
@@ -163,7 +142,7 @@ Keys within the "content_scripts" member:
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h2>Custom DevTools Tool</h2>
+    <h2>Custom DevTools tool</h2>
 
     <h3>Memory</h3>
     <div>
@@ -174,8 +153,7 @@ Keys within the "content_scripts" member:
     </div>
 
     <h3>Send message from DevTools to inspected page</h3>
-    <input type="button" id="sayHello" value="Say Hello">
-
+    <input type="button" id="sayHello" value="Say hello to the inspected page">
     <h3>Send message from inspected page to DevTools</h3>
     <p>Click somewhere in the inspected webpage.</p>
     <div>
@@ -186,21 +164,13 @@ Keys within the "content_scripts" member:
 </html>
 ```
 
-`panel.html` is referenced in the previous `chrome.devtools.panels.create` method call.  This webpage contains the user interface of the custom tool's panel.
+`panel.html` is referenced in the `chrome.devtools.panels.create` method call in `devtools.js`.  The `panel.html` webpage contains the user interface of the custom tool's panel.
 
-Code from `panel.html`:
+The above elements demonstrate the interaction between the inspected page, the DevTools panel, and the background service worker.
 
-a `sayHello` button and a `youClickedOn` label:
+When the user clicks the `sayHello` button in the DevTools extension, an alert is displayed in the inspected window.
 
-```html
-<input type="button" id="sayHello" value="Say Hello">
-```
-
-The above elements are used to demo the interaction between the inspected page, the DevTools panel, and the background service worker.
-
-When the user clicks the `sayHello` button in the DevTools extension, it displays a greeting message in the inspected window.
-
-When the user clicks anywhere in the inspected page, it will display a message to show the mouse-click position in the DevTools extension panel.
+When the user clicks anywhere in the inspected page, the mouse-click coordinates are displayed in the DevTools custom tool.
 
 
 <!-- ====================================================================== -->
@@ -235,7 +205,8 @@ In the manifest file (`manifest.json`), the `devtools_page` field specifies the 
 <!-- ====================================================================== -->
 ## `service-worker.js`
 
-[service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) is a background service worker that sets up event listeners for communications between the inspected page and DevTools.
+File in repo: 
+* [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) - a background service worker that sets up event listeners for communications between the inspected page and DevTools.
 
 A _background service worker_ is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
 
@@ -276,10 +247,11 @@ See also:
 <!-- ====================================================================== -->
 ## `content_script.js`
 
-[content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) contains JavaScript that's injected into the inspected webpage (any webpage).  This file does the following:
-* Prints a message to the DevTools **Console** when the page is clicked.
-* Listens for the page click event via an event listener.
-* Adds a click event listener to the webpage; clicking the page sends an event, caught by the event listener, which then sends a message to the WebView2 Runtime.
+File in repo: 
+* [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js) - contains JavaScript that's injected into the inspected webpage (any webpage).  This file does the following:
+   * Prints a message to the DevTools **Console** when the page is clicked.
+   * Listens for the page click event via an event listener.
+   * Adds a click event listener to the webpage; clicking the page sends an event, caught by the event listener, which then sends a message to the WebView2 Runtime.
 
 A _content script_ runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has have access to the DOM and can change it.
 
@@ -308,7 +280,8 @@ See also:
 <!-- ====================================================================== -->
 ## `devtools.js`
 
-[devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) contains logic for the custom DevTools page.
+File in repo: 
+* [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - contains logic for the custom DevTools page.
 
 `devtools.js` does the following:
 
@@ -328,12 +301,12 @@ let totalMemoryCapacity;
 let youClickedOn;
 
 chrome.devtools.panels.create("Custom", "icon.png", "panel.html", panel => {
-    // code invoked on panel creation
+    // Code invoked on panel creation.
     panel.onShown.addListener( (extPanelWindow) => {
-        // memory
+        // Memory API.
         availableMemoryCapacity = extPanelWindow.document.querySelector('#availableMemoryCapacity');
         totalMemoryCapacity = extPanelWindow.document.querySelector('#totalMemoryCapacity');
-        // 2-way message sending
+        // 2-way message sending.
         let sayHello = extPanelWindow.document.querySelector('#sayHello');
         youClickedOn = extPanelWindow.document.querySelector('#youClickedOn');
         sayHello.addEventListener("click", () => {
@@ -343,7 +316,7 @@ chrome.devtools.panels.create("Custom", "icon.png", "panel.html", panel => {
     });
 });
 
-// Update Memory display
+// Update the Memory display.
 setInterval(() => {
     chrome.system.memory.getInfo((data) => {
         if (availableMemoryCapacity) {
@@ -355,9 +328,9 @@ setInterval(() => {
     });
 }, 1000);
 
-// Send message from inspected page to DevTools
+// Send a message from the inspected page to DevTools.
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    // Messages from content scripts should have sender.tab set
+    // Messages from content scripts should have sender.tab set.
     if (sender.tab && request.click == true) {
         console.log('I am here!');
         if (youClickedOn) {
@@ -370,19 +343,19 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     }
 });
 
-// Create a connection to the background service worker
+// Create a connection to the background service worker.
 const backgroundPageConnection = chrome.runtime.connect({
     name: "devtools-page"
 });
 
-// Relay the tab ID to the background service worker
+// Relay the tab ID to the background service worker.
 backgroundPageConnection.postMessage({
     name: 'init',
     tabId: chrome.devtools.inspectedWindow.tabId
 });
 ```
 
-Code from `devtools.js`:
+The `create` method call in `devtools.js`:
 
 ```javascript
 chrome.devtools.panels.create("Custom", "icon.png", "panel.html", panel => {
@@ -399,32 +372,6 @@ chrome.devtools.panels.create(
     pagePath: string, // Webpage to display in tool's panel.
     callback: function // Code to run when tool is opened.
 )
-```
-    
-Code from `devtools.js`:
-
-```javascript
-let availableMemoryCapacity;
-let totalMemoryCapacity;
-
-chrome.devtools.panels.create("Sample Panel", "icon.png", "panel.html", panel => {
-    // code invoked on panel creation
-    panel.onShown.addListener((extPanelWindow) => {
-        availableMemoryCapacity = extPanelWindow.document.querySelector('#availableMemoryCapacity');
-        totalMemoryCapacity = extPanelWindow.document.querySelector('#totalMemoryCapacity');
-    });
-});
-
-setInterval(() => {
-    chrome.system.memory.getInfo((data) => {
-        if (availableMemoryCapacity) {
-            availableMemoryCapacity.innerHTML = data.availableCapacity;
-        }
-        if (totalMemoryCapacity) {
-            totalMemoryCapacity.innerHTML = data.capacity;
-        }
-    });
-}, 1000);
 ```
 
 `devtools.js` does the following:

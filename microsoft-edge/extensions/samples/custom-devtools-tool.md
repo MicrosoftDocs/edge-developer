@@ -12,6 +12,8 @@ ms.date: 04/20/2026
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool -->
 <!-- sibling 2 of 3 -->
 
+<!-- todo: move this new file from /samples/ to /developer-guide/ -->
+
 The sample "Custom DevTools tool" is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, including a tab in the **Activity Bar**, and a panel below the tab.  The tool name and its tab in DevTools can be something other than **Custom**.
 
 * The **Custom** DevTools tool calls the DevTools API to display memory information.
