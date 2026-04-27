@@ -210,8 +210,8 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Fill out the Privacy page
-<!-- h1 Fill out the privacy fields  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
+## Step 6: Fill out the Privacy fields
+<!-- h1  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
 
 In the **Privacy** page for submitting an extension at Partner Center, declare your extension's purpose, permissions, and data practices:
 
@@ -227,13 +227,7 @@ To enter **Privacy** information about the extension:
 
 1. Fill in the fields in the **Privacy** page, as follows.
 
-
-<!-- ------------------------------ -->
-#### Privacy information must be complete and accurate
-
-All information provided in the **Privacy** page must be complete, accurate, and consistent with the extension's behavior and metadata.
-
-Any incomplete, misleading, or inaccurate disclosures may be considered a violation of Microsoft Edge Add-ons Developer Policies, and can result in additional review, delayed certification, or rejection of the submitted extension.
+**Important:** All information provided in the **Privacy** page must be complete, accurate, and consistent with the extension's behavior and metadata.  Any incomplete, misleading, or inaccurate disclosures may be considered a violation of Microsoft Edge Add-ons Developer Policies, and can result in additional review, delayed certification, or rejection of the submitted extension.
 
 See also: 
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
