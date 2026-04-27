@@ -129,7 +129,7 @@ See also:
 
 The **Extension overview** page shows information for a specific extension:
 
-![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)<!-- Step3.png -->
+![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
 
 To upload the extension package:
 
@@ -153,7 +153,7 @@ To upload the extension package:
 
 On the **Availability** page for the extension, fill in the **Visibility** and **Markets** sections as follows.
 
-![The Availability page](./publish-extension-images/availability-markets.png)<!-- step4.png -->
+![The Availability page](./publish-extension-images/availability-markets.png)
 
 
 <!-- ------------------------------ -->
@@ -191,7 +191,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    The **Properties** page for the extension opens:
 
-   ![The Properties page for an extension](./publish-extension-images/properties-page.png)<!-- UpdatedPropetiesSection.png -->
+   ![The Properties page for an extension](./publish-extension-images/properties-page.png)
 
 1. Fill in the properties, as follows:
 
@@ -215,7 +215,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 In the **Privacy** page for submitting an extension at Partner Center, declare your extension's purpose, permissions, and data practices:
 
-![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)<!-- NewPrivacySection.png --><!-- 3.png not used --><!-- 5.png not used -->
+![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)
 
 Providing accurate and complete information in these fields helps streamline the review process and ensures transparency for users.
 
@@ -247,7 +247,7 @@ An extension must have a clear, narrow, and well-defined purpose.  Make sure thi
 
 In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of your extension:
 
-![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)<!-- 6.png -->
+![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)
 
 Avoid a vague or overly broad description.
 
@@ -260,7 +260,7 @@ The extension must request only the **minimum permissions** necessary to deliver
 
 The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission:
 
-![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)<!-- 7.png -->
+![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)
 
 Fill out these fields to specify why the extension needs to use each permission.
 
@@ -279,7 +279,7 @@ The extension should avoid the use of remote code unless absolutely necessary, b
 
 In the **Are you using remote code?** section, specify whether the extension executes remote code and, if so, why this is necessary:
 
-![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)<!-- 8.png  -->
+![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
 If the extension doesn't need to execute remote code, make sure that it does not, and select **No, I am not using remote code**.
 
@@ -300,7 +300,7 @@ Your disclosures are displayed to Microsoft Edge users.  Your disclosures should
 
 In the **Data usage** section, disclose and certify your data collection practices:
 
-![The "Data usage" section](./publish-extension-images/data-usage.png)<!-- 9.png -->
+![The "Data usage" section](./publish-extension-images/data-usage.png)
 
 * Use the first group of checkboxes to disclose which types of data your extension collects.
 * Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
@@ -314,7 +314,7 @@ This information improves transparency and enables users to understand how their
 
 In the **Privacy Policy URL** text box, add a link to the privacy policy for your extension:
 
-![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)<!-- 10.png -->
+![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)
 
 The policy must include how data is collected, used, and disclosed.
 
@@ -342,13 +342,13 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
    The **Store Listings** page opens:
 
-   ![Store listing section for an extension](./publish-extension-images/store-listings-page.png)<!-- step6.1.png -->
+   ![Store listing section for an extension](./publish-extension-images/store-listings-page.png)
 
 1. In the row for a language, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
    The **Details for \<Language\>** page opens:
 
-   ![Details page](./publish-extension-images/details-page.png)<!-- step6.2.png -->
+   ![Details page](./publish-extension-images/details-page.png)
 
 1. Fill in the properties, as follows.
 
@@ -392,7 +392,7 @@ To generate the description by using AI:
 
    The **Generate description using AI** pane opens on the right:
 
-   ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)<!-- Generate the description with AI.1.png -->
+   ![The Generate description using AI sidebar with a Provide inputs text box](./publish-extension-images/generation.png)
 
 1. In the **Provide inputs to generate description (optional)** text box, you can enter AI prompt text, such as:
 
@@ -427,11 +427,11 @@ To generate the description by using AI:
 
 You can generate descriptions up to 10 times per hour.  If you exceed this limit, an error message appears, and you can retry later:
 
-![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)<!-- no new png? -->
+![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)
 
 If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
  
-![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)<!-- no new png? -->
+![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)
 
 
 <!-- ------------------------------ -->
@@ -441,7 +441,7 @@ To add a language in your store listing:
 
 1. In Partner Center, go to the **Store Listings** page:
 
-   ![Add a language, in the Store Listings page](./publish-extension-images/add-a-language.png)<!-- Add or remove a language.1.png -->
+   ![Add a language, in the Store Listings page](./publish-extension-images/add-a-language.png)
 
 1. In the **Add a language** dropdown list, select a language.
 
@@ -471,7 +471,7 @@ To duplicate an asset across languages:
 
    The **Details for \<Language\>** page opens:
 
-   ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)<!-- Duplicate an asset from one language to the other languages.2.png -->
+   ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)
 
 1. Click the **Duplicate** option that's under an asset such as:
 
@@ -501,7 +501,7 @@ To enter the URL of your YouTube video:
 
 1. On the store listing details page, paste the URL in the **YouTube video URL** field:
 
-   ![The "YouTube video URL" text box in the Details for English page](./publish-extension-images/video-url-in-details-page.png)<!-- "Provide a YouTube video.3.png" -->
+   ![The "YouTube video URL" text box in the Details for English page](./publish-extension-images/video-url-in-details-page.png)
 
 
 <!-- ------------------------------ -->
@@ -513,7 +513,7 @@ To provide search terms:
 
 1. In a **Details for \<Language\>** page, in the **Search terms** text box, enter search terms for that language:
 
-   ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)<!-- Enter search terms for the extension.1.png -->
+   ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)
 
    Search terms must meet the following requirements:
 
@@ -531,7 +531,7 @@ To provide search terms:
 
 In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
 
-![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)<!-- Fix any form field errors.png -->
+![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
 
 
 <!-- ========================================================================== -->
