@@ -30,7 +30,6 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Markets](#markets)
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
 * [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
-   * [Privacy information must be complete and accurate](#privacy-information-must-be-complete-and-accurate)
    * [State the extension's purpose](#state-the-extensions-purpose)
    * [List and justify any permissions](#list-and-justify-any-permissions)
    * [Declare any use of remote code](#declare-any-use-of-remote-code)
