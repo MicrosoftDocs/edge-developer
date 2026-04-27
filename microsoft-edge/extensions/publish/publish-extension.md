@@ -66,7 +66,7 @@ To prepare an extension to be submitted via Partner Center, to be published at [
 <!-- ---------------------------------- -->
 #### Have a working prototype of the extension
 
-Before publishing your extension, you should have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+Before publishing your extension, you must have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
 
 
 <!-- ---------------------------------- -->
@@ -231,12 +231,12 @@ To enter **Privacy** information about the extension:
 <!-- ------------------------------ -->
 #### Privacy information must be complete and accurate
 
-All information provided in the Privacy fields must be complete, accurate, and consistent with the extension's behavior and metadata.
+All information provided in the **Privacy** page must be complete, accurate, and consistent with the extension's behavior and metadata.
 
 Any incomplete, misleading, or inaccurate disclosures may be considered a violation of Microsoft Edge Add-ons Developer Policies, and can result in additional review, delayed certification, or rejection of the submitted extension.
 
 See also: 
-* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies) - Microsoft Edge Add-ons Developer Policies.
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 
 
 <!-- ------------------------------ -->
@@ -288,21 +288,19 @@ If the extension doesn't need to execute remote code, make sure that it does not
 #### Certify your data usage practices
 <!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#certify_your_data_use_practices -->
 
-You must disclose how your extension collects and uses user data.
+You must disclose how the extension collects and uses user data, including:
 
-**Data usage disclosure includes:**
+* The types of user data that the extension collects.
 
-* The types of user data that your extension collects.
+* Certification that the extension complies with data usage and limited-use policies.
 
-* Certification that your extension complies with data usage and limited-use policies.
-
-Your disclosures are displayed to Microsoft Edge users.  Your disclosures should be consistent with the policies that are at the **Privacy Policy URL**, below.
+These disclosures are displayed to Microsoft Edge users.  These disclosures must be consistent with the policies that are at the **Privacy Policy URL**, below.
 
 In the **Data usage** section, disclose and certify your data collection practices:
 
 ![The "Data usage" section](./publish-extension-images/data-usage.png)
 
-* Use the first group of checkboxes to disclose which types of data your extension collects.
+* Use the first group of checkboxes to disclose which types of data the extension collects.
 * Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
 
 This information improves transparency and enables users to understand how their data is handled.
@@ -357,7 +355,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
    | Property name | Required? | Description |
    |---|---|---|
    | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submitting the extension, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
-   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-the-description-with-ai) button. |
+   | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Must be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-the-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | Optional | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
    | **Large promotional tile** | Optional | The image (one per language) that's used to display the extension more prominently at Microsoft Edge Add-ons.  The image, if submitted, is visible to users.  The size of the PNG files must be 1400 x 560 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -491,7 +489,6 @@ If you are linking to a video, make sure your video meets the following requirem
 * Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
 * Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
-
 
 To enter the URL of your YouTube video:
 
