@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/24/2026
+ms.date: 04/27/2026
 ---
 # Publish a Microsoft Edge extension
 
@@ -30,6 +30,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Markets](#markets)
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
 * [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
+   * [Privacy information must be complete and accurate](#privacy-information-must-be-complete-and-accurate)
    * [State the extension's purpose](#state-the-extensions-purpose)
    * [List and justify any permissions](#list-and-justify-any-permissions)
    * [Declare any use of remote code](#declare-any-use-of-remote-code)
@@ -113,13 +114,12 @@ See also:
 
 <!-- ========================================================================== -->
 ## Step 2: Start a new submission at Partner Center
-<!-- todo: avoid 'submission' -->
 
 1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) at Partner Center.
 
    The **Overview** page opens:
 
-   ![Overview page](./publish-extension-images/partner-center-extension-home.png)<!-- no new png -->
+   ![Overview page](./publish-extension-images/partner-center-extension-home.png)<!-- todo: maybe "Test Extension" instead of Randomwordgenerator -->
 
 1. Click **Create new extension**.
 
@@ -187,22 +187,22 @@ Define the specific markets in which you plan to offer your extension.  The defa
 <!-- ========================================================================== -->
 ## Step 5: Enter properties describing the extension
 
-1. On the left, click **Properties**.
+1. In the extension's entry at Partner Center, on the left, click **Properties**.
 
-   The **Properties** page for the extension opens.
+   The **Properties** page for the extension opens:
+
+   ![The Properties page for an extension](./publish-extension-images/properties-page.png)<!-- UpdatedPropetiesSection.png -->
 
 1. Fill in the properties, as follows:
 
    | Property name | Required? | Description |
    |---|---|---|
    | **Category** | Required | The category that best describes the extension.  Listing the extension in the right category helps users find the extension easily and understand more about it.  |
-   | **Privacy policy requirements** | Required | Specify whether the extension accesses, collects, or transmits any personal information.  If you select **No** but it's later determined that the extension does handle personal information, the certification process might fail.  If you select **Yes**, you must provide a Privacy policy URL, because this is a required field and submitting the extension won't be allowed without it. |
-   | **Privacy policy URL** | Required if the extension collects any privacy information | A valid privacy policy URL to communicate how the extension follows privacy laws and regulations.  You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.  To determine if the extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
-   | **Website URL** | Optional | A webpage that provides additional information about the extension.  The `Website URL` must point to a webpage on your own website, not the web listing for the extension at Microsoft Edge Add-ons.  The `Website URL` helps users learn more about the extension, its features, and any other relevant information. |
-   | **Support contact details** | Optional | The URL to your support webpage, or the email address to contact your support team. |
+   | **Website** | Optional | A webpage that provides additional information about the extension.  The website URL must point to a webpage on your own website, not the web listing for the extension at Microsoft Edge Add-ons.  The **Website** URL helps users learn more about the extension, its features, and any other relevant information. |
+   | **Support contact detail** | Optional | The URL to your support webpage, or the email address to contact your support team. |
    | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
    
-   The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website URL**, and **Support contact details** that you submitted during registration are displayed to users at Microsoft Edge Add-ons.
+   The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website** URL, and **Support contact detail** that you submitted during registration are displayed to users at the Microsoft Edge Add-ons site.
 
 1. Click the **Save & Continue** button.
 
@@ -210,104 +210,123 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Fill out the privacy fields
-<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
+## Step 6: Fill out the Privacy page
+<!-- h1 Fill out the privacy fields  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
 
-The **Privacy** section in the extension submission<!-- todo: avoid 'submission' --> flow allows you to declare your extension's purpose, permissions, and data practices.  Providing accurate and complete information in these fields helps streamline the review process and ensures transparency for users.
- 
-![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)<!-- 3.png --><!-- 5.png not used -->
+In the **Privacy** page for submitting an extension at Partner Center, declare your extension's purpose, permissions, and data practices:
 
-1. On the left, click **Privacy**.
+![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)<!-- NewPrivacySection.png --><!-- 3.png not used --><!-- 5.png not used -->
+
+Providing accurate and complete information in these fields helps streamline the review process and ensures transparency for users.
+
+To enter **Privacy** information about the extension:
+
+1. In the extension's entry at Partner Center, on the left, click **Privacy**.
 
    The **Privacy** page for the extension opens.
 
-1. Fill in the Privacy fields, as follows:
+1. Fill in the fields in the **Privacy** page, as follows.
 
 
-<!-- ---------- -->
-<!-- https://learn.microsoft.com/en-us/contribute/content/markdown-reference#alerts-note-tip-important-caution-warning -->
-> [!IMPORTANT]
-> All information provided in the Privacy fields must be complete, accurate, and consistent with the extension's behavior and metadata.  Any incomplete, misleading, or inaccurate disclosures may be considered a violation of [Microsoft Edge Add-ons Developer Policies](/legal/microsoft-edge/extensions/developer-policies) and can result in additional review, delayed certification, or rejection of the submission.
+<!-- ------------------------------ -->
+#### Privacy information must be complete and accurate
 
-<!-- todo: make link text match destination title, which is: Developer policies for the Microsoft Edge Add-ons store -->
+All information provided in the Privacy fields must be complete, accurate, and consistent with the extension's behavior and metadata.
 
-<!-- todo: avoid 'submission' -->
+Any incomplete, misleading, or inaccurate disclosures may be considered a violation of Microsoft Edge Add-ons Developer Policies, and can result in additional review, delayed certification, or rejection of the submitted extension.
+
+See also: 
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies) - Microsoft Edge Add-ons Developer Policies.
 
 
 <!-- ------------------------------ -->
 #### State the extension's purpose
+<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#state_the_extensions_purpose -->
 
-Extensions must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
+An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
 
-
-<!-- ---------- -->
-**Single purpose description<!-- todo: png shows "Single Purpose Description" -->:** Provide a concise description that helps reviewers understand the core functionality of your extension.  Avoid vague or overly broad descriptions.
+In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of your extension:
 
 ![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)<!-- 6.png -->
+
+Avoid a vague or overly broad description.
 
 
 <!-- ------------------------------ -->
 #### List and justify any permissions
+<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions -->
 
-Your extension must request only the **minimum permissions** necessary to deliver its functionality. Avoid requesting excessive or unrelated permissions.
+The extension must request only the **minimum permissions** necessary to deliver its functionality.  Avoid requesting excessive or unrelated permissions.
 
-
-<!-- ---------- -->
-**Permissions<!-- todo: this png shows "Permission" --> justification:** This section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission. Fill out these fields to tell the reviewers why your extension needs to use each permission. If there are permissions listed here that you don't require, remove them from your manifest and upload a new version of your extension before continuing.
-
-This information helps reviewers validate that your extension adheres to least-privilege principles.
+The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission:
 
 ![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)<!-- 7.png -->
+
+Fill out these fields to specify why the extension needs to use each permission.
+
+If there are permissions listed here that the extension doesn't require, before continuing, remove the permissions from the manifest, and upload a new version of the extension.
+
+This information helps reviewers validate that the extension adheres to least-privilege principles.
 
 
 <!-- ------------------------------ -->
 #### Declare any use of remote code
+<!-- Declare any remote code  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#declare_any_remote_code -->
 
-Extensions should avoid the use of remote code unless absolutely necessary, as it requires additional review and may increase certification time.
+The extension should avoid the use of remote code unless absolutely necessary, because remote code requires additional review, and might increase certification time.
 
+**Warning:** In Manifest V3, loading and executing remotely hosted code is not permitted.
 
-<!-- ---------- -->
-<!-- https://learn.microsoft.com/en-us/contribute/content/markdown-reference#alerts-note-tip-important-caution-warning -->
-> [!WARNING]
-> In Manifest V3, loading and executing remotely hosted code is not permitted.
-
-
-<!-- ---------- -->
-**Remote code:** Use this field to tell reviewers whether your extension executes remote code and, if so, why this is necessary.  If your extension doesn't need to execute remote code, make sure that it does not and select "No, I am not using remote code."<!-- todo: move period outside quotes; period not in png -->
+In the **Are you using remote code?** section, specify whether the extension executes remote code and, if so, why this is necessary:
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)<!-- 8.png  -->
+
+If the extension doesn't need to execute remote code, make sure that it does not, and select **No, I am not using remote code**.
 
 
 <!-- ------------------------------ -->
 #### Certify your data usage practices
+<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#certify_your_data_use_practices -->
 
-You must disclose how your extension collects and uses user data as part of the submission<!-- todo: avoid 'submission' --> process.
+You must disclose how your extension collects and uses user data.
 
 **Data usage disclosure includes:**
 
-* The types of user data your extension collects
+* The types of user data that your extension collects.
 
-* Certification that your extension complies with data usage and limited-use policies
+* Certification that your extension complies with data usage and limited-use policies.
 
-**Note:** Your disclosures are displayed to Edge users and should be consistent with the existing privacy policy URL that you provided to the Edge Web Store.
+Your disclosures are displayed to Microsoft Edge users.  Your disclosures should be consistent with the policies that are at the **Privacy Policy URL**, below.
 
-
-<!-- ---------- -->
-**Data usage:** Use this field<!-- todo: this section --> to disclose and certify your data collection practices.  Use the first group of checkboxes to disclose which types of data your extension collects.  Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
-
-This information improves transparency and enables users to understand how their data is handled.
+In the **Data usage** section, disclose and certify your data collection practices:
 
 ![The "Data usage" section](./publish-extension-images/data-usage.png)<!-- 9.png -->
 
- 
+* Use the first group of checkboxes to disclose which types of data your extension collects.
+* Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
+
+This information improves transparency and enables users to understand how their data is handled.
+
+
 <!-- ------------------------------ -->
 #### Set a privacy policy
+<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#set-privacy-policy -->
 
-Add a link to the privacy policy for your extension. The policy should include how data is collected, used, and disclosed.
-
-Ensure that the policy is accessible and up to date, as it may be displayed to users in the store listing.
+In the **Privacy Policy URL** text box, add a link to the privacy policy for your extension:
 
 ![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)<!-- 10.png -->
+
+The policy must include how data is collected, used, and disclosed.
+
+Ensure that the policy is accessible and up to date.  This policy is displayed to users in the extension's listing at the Microsoft Edge Add-ons site.
+
+A privacy policy and URL is required if the extension collects any privacy information.  This is a valid privacy policy URL to communicate how the extension follows privacy laws and regulations.
+
+You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.
+
+To determine if the extension requires a privacy policy, see:
+* [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
+* [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 
 
 <!-- ========================================================================== -->
@@ -337,7 +356,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
    | Property name | Required? | Description |
    |---|---|---|
-   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submission<!-- todo: avoid 'submission' -->, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
+   | **Extension name** | Required for at least one language | The name of the extension, as specified in the manifest file of the extension.  To change the extension name after submitting the extension, you can update the name in the manifest file, create a new extension package, and then re-upload the package. |
    | **Description** | Required for each language | Explains what the extension does, why users should install it, and any other relevant information users need to know.  <br/>* **Length:** Minimum 250 characters, maximum 10,000 characters.  <br/>* **Clarity:** Must clearly describe the full functionality of the extension.  <br/>* **Completeness:** Should be thorough and include all important details.  <br/>* **Appropriateness:** Must not contain any misleading or inappropriate content.  <br/>You can use the [Generate with AI](#generate-the-description-with-ai) button. |
    | **Extension logo** | Required for each language | An image (one per language) that represents your company or extension logo, with an aspect ratio of 1:1 and a recommended size of 300 x 300 pixels, with a minimum size of 128 x 128 pixels.  You can copy the logo from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the logo. |
    | **Small promotional tile** | Optional | The image (one per language) that's used to display the extension alongside other extensions at Microsoft Edge Add-ons.  The size of the image must be 440 x 280 pixels.  You can copy the tile from one language to all other languages by using the **Duplicate** option, which is displayed below the field after you upload the tile. |
@@ -528,7 +547,7 @@ To add notes for certification:
 
    The **Submit your extension** page opens:
 
-   ![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)<!-- no new png? -->
+   ![The "Submit your extension" page (the Notes for certification page)](./publish-extension-images/submit-your-extension-page.png)<!-- todo: show Privacy in left nav; change name of extension from Wordle-random-word-generator to Test Extension -->
 
 1. Fill in the **Notes for certification** text box.
 
@@ -548,7 +567,7 @@ To add notes for certification:
 
    The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
-   The submission<!-- todo: avoid 'submission' --> then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
+   The process of submitting the extension then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
    After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
 
