@@ -34,7 +34,7 @@ An extension that extends DevTools additionally includes a rendered HTML file, a
 
 * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - Loads the extension's JavaScript files:
 
-   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Main logic for the custom DevTools page.  This file is more commonplace or basic than the next two JS files.
+   * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - Main logic for the custom DevTools page.  This file is more commonplace or basic than the next two JavaScript files.
 
    * [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) - A service worker that sets up event listeners for communications between the inspected page and DevTools.
 
@@ -48,7 +48,7 @@ Support files:
 
 
 <!-- ------------------------------ -->
-#### Heading
+#### Heading<!-- todo -->
 
 To add a custom tool in Microsoft Edge DevTools, create a Microsoft Edge extension that adds a custom tool in Microsoft Edge DevTools, including a tool tab and panel.  Communicate between DevTools and the inspected webpage, and call DevTools APIs.
 
