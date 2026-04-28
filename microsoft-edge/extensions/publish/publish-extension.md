@@ -246,7 +246,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 ## Step 6: Fill out the Privacy fields<!-- Left Nav item 5: Privacy -->
 <!-- h1  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
 
-In the **Privacy** page for submitting an extension at Partner Center, declare your extension's purpose, permissions, and data practices:
+In the extension's **Privacy** page at Partner Center, declare your extension's purpose, permissions, and data practices:
 
 ![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)
 
