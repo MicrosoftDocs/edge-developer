@@ -244,7 +244,6 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 <!-- ========================================================================== -->
 ## Step 6: Fill out the Privacy fields<!-- Left Nav item 5: Privacy -->
-<!-- h1  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy -->
 
 In the extension's **Privacy** page at Partner Center, declare your extension's purpose, permissions, and data practices:
 
@@ -273,7 +272,6 @@ To enter **Privacy** information about the extension:
 
 <!-- ------------------------------ -->
 #### State the extension's purpose
-<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#state_the_extensions_purpose -->
 
 In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
 
@@ -288,7 +286,6 @@ In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
 
 <!-- ------------------------------ -->
 #### List and justify any permissions
-<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions -->
 
 In the **Privacy** page, the **Permission justification** section<!--2--> appears:
 
@@ -311,7 +308,6 @@ The **Permission justification** section helps reviewers validate that the exten
 
 <!-- ------------------------------ -->
 #### Declare any use of remote code
-<!-- Declare any remote code  https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#declare_any_remote_code -->
 
 In the **Privacy** page, the **Are you using remote code?** section<!--3--> appears:
 
@@ -336,7 +332,6 @@ The extension should avoid the use of remote code unless absolutely necessary.  
 
 <!-- ------------------------------ -->
 #### Certify your data usage practices
-<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#certify_your_data_use_practices -->
 
 In the **Privacy** page, the **Data usage** section<!--4--> appears:
 
@@ -363,7 +358,6 @@ These disclosures are displayed to Microsoft Edge users.  This information impro
 
 <!-- ------------------------------ -->
 #### Set a privacy policy
-<!-- https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#set-privacy-policy -->
 
 In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
 
