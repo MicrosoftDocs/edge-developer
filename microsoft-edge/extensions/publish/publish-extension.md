@@ -279,7 +279,7 @@ In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
 
 ![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)
 
-* Provide a concise description that helps reviewers understand the core functionality of the extension.
+* In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of the extension.
 
   An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
 
@@ -317,13 +317,13 @@ In the **Privacy** page, the **Are you using remote code?** section<!--3--> appe
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
-Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code is not permitted.
-
-The extension should avoid the use of remote code unless absolutely necessary.  Remote code requires additional review, and might increase certification time.
-
 1. Specify whether the extension executes remote code and, if so, why this is necessary.
 
 1. If the extension doesn't need to execute remote code, make sure that the extension doesn't use any remote code, and then select **No, I am not using remote code**.
+
+Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code is not permitted.
+
+The extension should avoid the use of remote code unless absolutely necessary.  Remote code requires additional review, and might increase certification time.
 
 
 <!-- ------------------------------ -->
@@ -334,9 +334,13 @@ In the **Privacy** page, the **Data usage** section<!--4--> appears:
 
 ![The "Data usage" section](./publish-extension-images/data-usage.png)
 
-1. Use the first group of checkboxes to disclose which types of data the extension collects.
+1. In the section **What user data do you plan to collect from users now or in the future?**, select the checkboxes that apply.
 
-1. Use the second group of checkboxes to certify that you comply with each of the disclosure statements.
+   This discloses which types of data the extension collects.
+
+1. In the section **I certify that the following disclosures are true**, select the checkboxes.
+
+   This certifies that you comply with each of the disclosure statements.
 
    All of these disclosures must be consistent with the policies that are at the **Privacy Policy URL**, which is described in the next section.
 
@@ -359,8 +363,6 @@ In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
 
 1. In the **Privacy Policy URL** text box, add a link to the privacy policy for your extension.
 
-   The privacy policy must include how data is collected, used, and disclosed.
-
 1. Ensure that the policy URL can be accessed.
 
 1. Ensure that the policy content is up-to-date.
@@ -368,6 +370,8 @@ In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
    This policy is displayed to users in the extension's listing at the Microsoft Edge Add-ons site.
 
    A privacy policy and its URL is required if the extension collects any privacy information.  This is a valid privacy policy URL to communicate how the extension follows privacy laws and regulations.
+
+   The privacy policy must include how data is collected, used, and disclosed.
 
    You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.
 
