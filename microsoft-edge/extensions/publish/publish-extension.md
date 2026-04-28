@@ -210,7 +210,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    You have now filled in the **Availability** page for the extension at Partner Center.
 
-1. Click the **Save & Continue** button.
+1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
 
    The **Properties** page opens.
 
@@ -237,7 +237,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    You have now filled in the **Policies** page for the extension at Partner Center.
 
-1. Click the **Save & Continue** button.
+1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
 
    The **Privacy** page opens.
 
@@ -389,7 +389,7 @@ In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
 
    You have now filled in the sections of the **Privacy** page for the extension at Partner Center.
 
-1. Click the **Save & Continue** button.
+1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
 
    The **Store Listings** page opens.
 
@@ -441,7 +441,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
    * **Extension name**
    * **Short description**
 
-1. Click **Save draft** in the upper right.
+1. Click ![Save draft icon](./publish-extension-images/save-icon.png) **Save draft** in the upper right.
 
 The extension's `.zip` package contains the manifest file; to re-upload the manifest, you must re-upload the extension's `.zip` package.  All the other items (such as logo or tiles) are uploaded separately, by using the **Details for \<Language\>** page.
 
@@ -615,7 +615,7 @@ To add notes for certification:
 
    ![The Store Listings page with Status: Complete](./publish-extension-images/store-listings-status-complete.png)
 
-1. Click the **Publish** button in the upper right.
+1. Click the ![Publish icon](./publish-extension-images/publish-icon.png) **Publish** button in the upper right.
 
    The **Submit your extension** page opens:
 
@@ -635,7 +635,7 @@ To add notes for certification:
 
    * Any additional information that testers must understand about your submitted extension.
 
-1. Click the **Publish** button, in the upper right.
+1. Click the ![Publish icon](./publish-extension-images/publish-icon.png) **Publish** button in the upper right.
 
    The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
