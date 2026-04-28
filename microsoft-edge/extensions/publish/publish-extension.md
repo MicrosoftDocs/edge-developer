@@ -317,9 +317,17 @@ In the **Privacy** page, the **Are you using remote code?** section<!--3--> appe
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
-1. Specify whether the extension executes remote code and, if so, why this is necessary.
+If the extension doesn't need to execute remote code:
 
-1. If the extension doesn't need to execute remote code, make sure that the extension doesn't use any remote code, and then select **No, I am not using remote code**.
+1. Make sure that the extension doesn't use any remote code.
+
+1. Select the option button **No, I am not using remote code**.
+
+If the extension executes remote code:
+
+1. Select the option button **Yes, I am using remote code**.
+
+1. In the **Justification** text box, state why the extension needs to use remote code.
 
 Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code is not permitted.
 
