@@ -611,7 +611,7 @@ To add notes for certification:
 
 1. In Partner Center, on the left, click **Store listings**.
 
-   The extension's **Store Listings** page opens.  The **Status** column for each language row now says **Complete**, and the **Publish** button is no longer grayed out:
+   The extension's **Store Listings** page opens.  The **Status** column for each language row now says **Complete**, and the ![Publish icon](./publish-extension-images/publish-icon.png) **Publish** button is no longer grayed out:
 
    ![The Store Listings page with Status: Complete](./publish-extension-images/store-listings-status-complete.png)
 
