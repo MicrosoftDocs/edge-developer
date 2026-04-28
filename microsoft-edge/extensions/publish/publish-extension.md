@@ -607,9 +607,15 @@ On the **Submit your extension** page, you can optionally add notes for certific
 
 The additional information helps ensure that the extension is tested correctly.  If the extension isn't fully tested, it might not pass certification.
 
-To add notes for certification:<!-- todo: add missing prelim nav step(s) or conditions -->
+To add notes for certification:
 
-1. Click the **Submit** button.<!-- todo: where is the Submit button?  show in a png, with red box -->
+1. In Partner Center, on the left, click **Store listings**.
+
+   The extension's **Store Listings** page opens.  The **Status** column for each language row now says **Complete**, and the **Publish** button is no longer grayed out:
+
+   ![The Store Listings page with Status: Complete](./publish-extension-images/store-listings-status-complete.png)
+
+1. Click the **Publish** button in the upper right.
 
    The **Submit your extension** page opens:
 
@@ -629,11 +635,7 @@ To add notes for certification:<!-- todo: add missing prelim nav step(s) or cond
 
    * Any additional information that testers must understand about your submitted extension.
 
-   In the **Store Listings** page for the extension, the **Status** column for each language row says **Complete**, and the **Publish** button is no longer grayed out:<!-- todo: correct placement? -->
-
-   ![Store Listings page, Status = Complete, Publish button in upper right](./publish-extension-images/store-listings-status-complete.png)<!-- todo: correct placement? -->
-
-1. Click the **Publish** button, in the upper right<!-- todo: of the **Submit your extension** page? of the **Store Listings** page? -->.
+1. Click the **Publish** button, in the upper right.
 
    The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
 
