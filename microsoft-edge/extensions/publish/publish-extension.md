@@ -319,7 +319,9 @@ To determine if the extension requires a privacy policy, see:
 * [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905)
 * [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies)
 
+1. Click the **Save & Continue** button.
 
+   The **Store Listings** page opens.
 <!-- ========================================================================== -->
 ## Step 7: Add store listing details for each language
 
