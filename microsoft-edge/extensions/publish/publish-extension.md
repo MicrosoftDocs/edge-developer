@@ -635,11 +635,9 @@ To add notes for certification:
 
 1. Click the ![Publish icon](./publish-extension-images/publish-icon.png) **Publish** button in the upper right.
 
-   The extension is submitted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+   The extension proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
 
-   The process of submitting the extension then proceeds to the certification step.  The certification process can take up to seven business days after you submit the extension.
-
-   After the extension passes certification, the extension is published at Microsoft Edge Add-ons.  The status of the extension in the Partner Center dashboard changes to **In the Store**.
+   After the extension passes certification, the extension is published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site, and the status of the extension in the Partner Center dashboard changes to **In the Store**.
 
 
 <!-- ========================================================================== -->
