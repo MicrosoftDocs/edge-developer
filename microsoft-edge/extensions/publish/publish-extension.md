@@ -243,7 +243,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Fill out the Privacy fields<!-- Left Nav item 5: Privacy -->
+## Step 6: Fill out the privacy fields<!-- Left Nav item 5: Privacy -->
 
 In the extension's **Privacy** page at Partner Center, declare your extension's purpose, permissions, and data practices:
 
@@ -279,7 +279,7 @@ In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
 
 * In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of the extension.
 
-  An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
+  An extension must have a clear, narrow, and well-defined purpose<!-- todo: link equiv to [Extension Quality Guidelines](https://developer.chrome.com/docs/webstore/program-policies#extensions)?  ui has [Learn more] link.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#state_the_extensions_purpose -->.  Make sure this field accurately reflects what your extension does and why it exists.
 
   Avoid a vague or overly broad description.
 
@@ -291,7 +291,7 @@ In the **Privacy** page, the **Permission justification** section<!--2--> appear
 
 ![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)
 
-This example shows `declarativeNetRequest`.
+The above example shows a text box for justification of using the `declarativeNetRequest`<!-- https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest --> permission.
 
 The **Permission justification** section helps reviewers validate that the extension adheres to least-privilege principles.
 
@@ -299,11 +299,11 @@ The **Permission justification** section helps reviewers validate that the exten
 
    The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission.
 
-   The extension must request only the minimum permissions that are necessary to deliver its functionality.  The extension should request the minimum permissions that are consistent with the purpose of the extension.
+   The extension must request only the minimum permissions that are necessary to deliver its functionality.  The extension should request the minimum permissions<!-- todo: link equiv to [minimum permissions](https://developer.chrome.com/docs/extensions/mv3/security#permissions)?  ui has [permission] & [match pattern] links.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions --> that are consistent with the purpose of the extension.
 
    Avoid requesting excessive or unrelated permissions.  Requesting broader permissions than necessary may cause the extension to be rejected.
 
-1. If there are permissions listed here that the extension doesn't require, before continuing, remove the permissions from the manifest, and upload a new version of the extension.
+1. If there are permissions listed here that the extension doesn't require, before continuing, remove the permissions from the manifest, and upload a new version of the extension, per [Step 3: Upload the extension package](#step-3-upload-the-extension-package), above.
 
 
 <!-- ------------------------------ -->
@@ -312,6 +312,8 @@ The **Permission justification** section helps reviewers validate that the exten
 In the **Privacy** page, the **Are you using remote code?** section<!--3--> appears:
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
+
+Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code<!-- todo: add link equiv to [remotely hosted file](https://developer.chrome.com/docs/extensions/develop/migrate#remotely-hosted-code) - link is needed b/c ui appar. lacks any link eg [Learn more].  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#declare_any_remote_code --> is not permitted.
 
 If the extension doesn't need to execute remote code:
 
@@ -324,8 +326,6 @@ If the extension executes remote code:
 1. Select the option button **Yes, I am using remote code**.
 
 1. In the **Justification** text box, state why the extension needs to use remote code.
-
-Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code is not permitted.
 
 The extension should avoid the use of remote code unless absolutely necessary.  Remote code requires additional review, and might increase certification time.
 
@@ -373,7 +373,7 @@ In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
 
    A privacy policy and its URL is required if the extension collects any privacy information.  This is a valid privacy policy URL to communicate how the extension follows privacy laws and regulations.
 
-   The privacy policy must include how data is collected, used, and disclosed.
+   The privacy policy must include how data is collected, used, and disclosed.<!-- todo: add link equiv to [User Data FAQ](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq)?  ui has [Learn more] link.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#set-privacy-policy -->
 
    You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.
 
