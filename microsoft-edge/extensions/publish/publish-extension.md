@@ -45,7 +45,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
 * [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
    * [State the extension's purpose](#state-the-extensions-purpose)
-   * [List and justify any permissions](#list-and-justify-any-permissions)
+   * [Justify any permissions](#justify-any-permissions)
    * [Declare any use of remote code](#declare-any-use-of-remote-code)
    * [Certify your data usage practices](#certify-your-data-usage-practices)
    * [Set a privacy policy](#set-a-privacy-policy)
@@ -257,10 +257,10 @@ To enter **Privacy** information about the extension:
 
    The **Privacy** page for the extension opens.  The **Privacy** page contains the following sections:
 
-   | Section | Documentation below |
+   | Privacy page section | Article section |
    |---|---|
    | **Single Purpose** | [State the extension's purpose](#state-the-extensions-purpose) |
-   | **Permission justification** | [List and justify any permissions](#list-and-justify-any-permissions) |
+   | **Permission justification** | [Justify any permissions](#justify-any-permissions) |
    | **Are you using remote code?** | [Declare any use of remote code](#declare-any-use-of-remote-code) |
    | **Data usage** | [Certify your data usage practices](#certify-your-data-usage-practices) |
    | **Privacy policy** | [Set a privacy policy](#set-a-privacy-policy) |
@@ -273,7 +273,7 @@ To enter **Privacy** information about the extension:
 <!-- ------------------------------ -->
 #### State the extension's purpose
 
-In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
+The **Single Purpose**<!--1--> section of the **Privacy** page:
 
 ![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)
 
@@ -285,31 +285,28 @@ In the **Privacy** page, the **Single Purpose** section<!--1--> appears:
 
 
 <!-- ------------------------------ -->
-#### List and justify any permissions
+#### Justify any permissions
 
-In the **Privacy** page, the **Permission justification** section<!--2--> appears:
+The **Permission justification**<!--2--> section of the **Privacy** page:
 
 ![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)
 
-The above example shows a text box for justification of using the `declarativeNetRequest`<!-- https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest --> permission.
+<!-- clarifies example screenshot vs. what user sees: -->
+The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission.  The above example shows a text box for justification of using the `declarativeNetRequest` permission.
 
-The **Permission justification** section helps reviewers validate that the extension adheres to least-privilege principles.
+1. If there are permissions listed here that the extension doesn't require, before continuing, remove them from the manifest, and then upload a new version of the extension, per [Step 3: Upload the extension package](#step-3-upload-the-extension-package), above.
 
 1. In each permission text box, specify why the extension needs to use the permission.
 
-   The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission.
+The extension must request only the minimum permissions<!-- todo: link equiv to [minimum permissions](https://developer.chrome.com/docs/extensions/mv3/security#permissions)?  ui has [permission] & [match pattern] links.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions --> that are necessary to deliver its functionality.  Avoid requesting excessive or unrelated permissions.
 
-   The extension must request only the minimum permissions that are necessary to deliver its functionality.  The extension should request the minimum permissions<!-- todo: link equiv to [minimum permissions](https://developer.chrome.com/docs/extensions/mv3/security#permissions)?  ui has [permission] & [match pattern] links.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions --> that are consistent with the purpose of the extension.
-
-   Avoid requesting excessive or unrelated permissions.  Requesting broader permissions than necessary may cause the extension to be rejected.
-
-1. If there are permissions listed here that the extension doesn't require, before continuing, remove the permissions from the manifest, and upload a new version of the extension, per [Step 3: Upload the extension package](#step-3-upload-the-extension-package), above.
+This information helps reviewers validate that the extension adheres to least-privilege principles.
 
 
 <!-- ------------------------------ -->
 #### Declare any use of remote code
 
-In the **Privacy** page, the **Are you using remote code?** section<!--3--> appears:
+The **Are you using remote code?**<!--3--> section of the **Privacy** page:
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
@@ -333,7 +330,7 @@ The extension should avoid the use of remote code unless absolutely necessary.  
 <!-- ------------------------------ -->
 #### Certify your data usage practices
 
-In the **Privacy** page, the **Data usage** section<!--4--> appears:
+The **Data usage**<!--4--> section of the **Privacy** page:
 
 ![The "Data usage" section](./publish-extension-images/data-usage.png)
 
@@ -359,7 +356,7 @@ These disclosures are displayed to Microsoft Edge users.  This information impro
 <!-- ------------------------------ -->
 #### Set a privacy policy
 
-In the **Privacy** page, the **Privacy policy** section<!--5--> appears:
+The **Privacy policy**<!--5--> section of the **Privacy** page:
 
 ![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)
 
