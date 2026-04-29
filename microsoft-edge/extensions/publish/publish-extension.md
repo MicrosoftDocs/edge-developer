@@ -126,7 +126,7 @@ The following fields in the manifest file are automatically included in your ext
 
    * If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing page.
 
-Later, after you upload your package, you'll have an opportunity to modify some fields at Partner Center.  However, the above fields are read-only on the extension's **Store Listings** page at Partner Center, which is described in [Step 7: Add store listing details for each language](#step-7-add-store-listing-details-for-each-language), below.
+Later, after you upload your package, you'll have an opportunity to modify some fields at Partner Center.  However, the above fields are read-only on the extension's **Store Listings** page at Partner Center, which is described in [Step 7: Enter store listing details for each language](#step-7-enter-store-listing-details-for-each-language), below.
 
 See also:
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
@@ -301,7 +301,7 @@ The **Permission justification**<!--2--> section of the **Privacy** page:
 <!-- clarifies example screenshot vs. what user sees: -->
 The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission.  The above example shows a text box for justification of using the `declarativeNetRequest` permission.
 
-1. If there are permissions listed here that the extension doesn't require, before continuing, remove them from the manifest, and then upload a new version of the extension, per [Step 3: Upload the extension package](#step-3-upload-the-extension-package), above.
+1. If there are permissions listed here that the extension doesn't require, before continuing, remove them from the manifest, and then upload a new version of the extension, per [Step 3: Upload packages for the extension](#step-3-upload-packages-for-the-extension), above.
 
 1. In each permission text box, specify why the extension needs to use the permission.
 
