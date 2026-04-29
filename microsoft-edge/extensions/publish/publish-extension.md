@@ -64,7 +64,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Provide a YouTube video](#provide-a-youtube-video)
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
-* [Step 8: Provide certification testing notes and submit the extension](#step-8-provide-certification-testing-notes-and-submit-the-extension)
+* [Step 8: Enter certification testing notes and submit the extension](#step-8-enter-certification-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [If a single locale appears, but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
@@ -599,7 +599,7 @@ In the **Details for \<language\>** page, a message might say "Fields require yo
 
 
 <!-- ========================================================================== -->
-## Step 8: Provide certification testing notes and submit the extension
+## Step 8: Enter certification testing notes and submit the extension
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
 
