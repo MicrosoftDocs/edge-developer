@@ -109,9 +109,9 @@ Before uploading your package to Partner Center, inspect the manifest file to ma
 
 The following fields in the manifest file are automatically included in your extension's product listing at Microsoft Edge Add-ons:
 
-*  The `Name` field, which populates the **Extension name** on the **Details for \<Language\>** page.
+*  The `Name` field, which populates the **Extension name** on the **Details for \<language\>** page.
 
-*  The `Description` field, which populates the **Description** on the **Details for \<Language\>** page.
+*  The `Description` field, which populates the **Description** on the **Details for \<language\>** page.
    
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for the extension.
 
@@ -388,9 +388,9 @@ The **Privacy policy**<!--5--> section of the **Privacy** page:
 <!-- ========================================================================== -->
 ## Step 7: Add store listing details for each language<!-- Left Nav item 6: Store listings -->
 
-The **Store listings** page for the extension contains a table.  Each row in the table leads to a different **Details for \<Language\>** page.
+The **Store listings** page for the extension contains a table.  Each row in the table leads to a different **Details for \<language\>** page.
 
-In one or more **Details for \<Language\>** pages, fill in the properties.
+In one or more **Details for \<language\>** pages, fill in the properties.
 
 
 <!-- ------------------------------ -->
@@ -404,7 +404,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
 1. In the row for a language, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
-   The **Details for \<Language\>** page opens:
+   The **Details for \<language\>** page opens:
 
    ![Details page](./publish-extension-images/details-page.png)
 
@@ -434,7 +434,7 @@ In one or more **Details for \<Language\>** pages, fill in the properties.
 
 1. Click ![Save draft icon](./publish-extension-images/save-icon.png) **Save draft** in the upper right.
 
-The extension's `.zip` package contains the manifest file; to re-upload the manifest, you must re-upload the extension's `.zip` package.  All the other items (such as logo or tiles) are uploaded separately, by using the **Details for \<Language\>** page.
+The extension's `.zip` package contains the manifest file; to re-upload the manifest, you must re-upload the extension's `.zip` package.  All the other items (such as logo or tiles) are uploaded separately, by using the **Details for \<language\>** page.
 
 
 <!-- ------------------------------ -->
@@ -446,7 +446,7 @@ See also [Responsible AI for the AI-generated description of an extension](#resp
 
 To generate the description by using AI:
 
-1. On a **Details for \<Language\>** page, below the **Description** text box, click the **Generate with AI** button.
+1. On a **Details for \<language\>** page, below the **Description** text box, click the **Generate with AI** button.
 
    The **Generate description using AI** pane opens on the right:
 
@@ -464,7 +464,7 @@ To generate the description by using AI:
    The AI model analyzes the uploaded extension package, to describe its functionality.  The generated description combines insights from analyzing:
 
    * The uploaded extension package, including the manifest, code files, and image files.
-   * Any screenshots of the running extension that you've uploaded via the **Details for \<Language\>** page.
+   * Any screenshots of the running extension that you've uploaded via the **Details for \<language\>** page.
    * Any input prompt text that you provide.
 
 1. If you want to try again, to get a better result:
@@ -475,7 +475,7 @@ To generate the description by using AI:
 
 1. When the result is close to what you want, click the **Apply** button.
 
-   The side pane closes, and the generated content is displayed in the **Description** text box on the **Details for \<Language\>** page.
+   The side pane closes, and the generated content is displayed in the **Description** text box on the **Details for \<language\>** page.
 
 1. In the **Description** text box, edit the description as needed.
 
@@ -503,7 +503,7 @@ To add a language in your store listing:
 
 1. In the **Add a language** dropdown list, select a language.
 
-   A new **Details for \<Language\>** page opens, for the selected language.
+   A new **Details for \<language\>** page opens, for the selected language.
 
 
 To remove a language from your store listing:
@@ -527,7 +527,7 @@ To duplicate an asset across languages:
 
 1. In a row for a language that already has the asset, click the ![Edit details icon](./publish-extension-images/edit-details-icon.png) **Edit details** button.
 
-   The **Details for \<Language\>** page opens:
+   The **Details for \<language\>** page opens:
 
    ![The Duplicate option for a logo](./publish-extension-images/duplicate-option.png)
 
@@ -564,11 +564,11 @@ To enter the URL of your YouTube video:
 <!-- ------------------------------ -->
 #### Enter search terms for the extension
 
-Providing search terms for your extension is optional.  Each **Details for \<Language\>** page can specify different, localized search terms.
+Providing search terms for your extension is optional.  Each **Details for \<language\>** page can specify different, localized search terms.
 
 To provide search terms:
 
-1. In a **Details for \<Language\>** page, in the **Search terms** text box, enter search terms for that language:
+1. In a **Details for \<language\>** page, in the **Search terms** text box, enter search terms for that language:
 
    ![The "Search terms" text box in the Details for English page](./publish-extension-images/search-terms-text-box-details-lang-page.png)
 
@@ -578,7 +578,7 @@ To provide search terms:
 
    * Up to a maximum of seven search terms (single word or phrases).  Each search term has a character limit of 30 characters.
 
-1. In the upper right of the **Details for \<Language\>** page, click the **Close** button.
+1. In the upper right of the **Details for \<language\>** page, click the **Close** button.
 
    The **Store listing** page reappears.
 
@@ -586,7 +586,7 @@ To provide search terms:
 <!-- ------------------------------ -->
 #### Fix any form field errors
 
-In the **Details for \<Language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
+In the **Details for \<language\>** page, a message might say "Fields require your attention".  Scroll down to the fields that are flagged with an X in a circle:
 
 ![Edit details from listing page enter desc](./publish-extension-images/edit-details-from-listing-page-enter-desc.png)
 
@@ -717,7 +717,7 @@ The AI-generated description is based on the following inputs for the AI model:
 
 * The uploaded extension package, including the manifest, code files, and image files.  These image files are part of the extension.
 
-* Any screenshots of the running extension that you've uploaded via the **Details for \<Language\>** page.  These screenshots are displayed at the Microsoft Edge Add-ons site.
+* Any screenshots of the running extension that you've uploaded via the **Details for \<language\>** page.  These screenshots are displayed at the Microsoft Edge Add-ons site.
 
 * Any input prompt text that you enter.
 
