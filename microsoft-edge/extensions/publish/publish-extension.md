@@ -45,7 +45,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
 * [Step 2: Start a new submission at Partner Center](#step-2-start-a-new-submission-at-partner-center)
-* [Step 3: Upload the extension packages](#step-3-upload-the-extension-packages)
+* [Step 3: Upload packages for the extension](#step-3-upload-packages-for-the-extension)
 * [Step 4: Enter availability information](#step-4-enter-availability-information)
    * [Visibility](#visibility)
    * [Markets](#markets)
@@ -149,7 +149,7 @@ See also:
 
 
 <!-- ========================================================================== -->
-## Step 3: Upload the extension packages<!-- Left Nav item 2: Packages -->
+## Step 3: Upload packages for the extension<!-- Left Nav item 2: Packages -->
 
 <!-- todo: how do we get to this state?  resequence from system-description to task-oriented sequence -->
 
