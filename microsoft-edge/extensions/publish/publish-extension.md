@@ -6,10 +6,17 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/27/2026
+ms.date: 04/29/2026
 ---
 # Publish a Microsoft Edge extension
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/publish-extension -->
+
+<!-- todo: clarify why there would be one vs. multiple packages for an extension
+globally Find "package" in this file, make consistent
+* UI left nav is "Packages"
+* top of article says "You can only upload one package at a time." implying an extension has multiple packages
+* article says "the package"
+-->
 
 <!-- Left Nav items at Partner Center for an extension:
 Extension overview
@@ -38,18 +45,18 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
 * [Step 2: Start a new submission at Partner Center](#step-2-start-a-new-submission-at-partner-center)
-* [Step 3: Upload the extension package](#step-3-upload-the-extension-package)
-* [Step 4: Provide availability information](#step-4-provide-availability-information)
+* [Step 3: Upload the extension packages](#step-3-upload-the-extension-packages)
+* [Step 4: Enter availability information](#step-4-enter-availability-information)
    * [Visibility](#visibility)
    * [Markets](#markets)
 * [Step 5: Enter properties describing the extension](#step-5-enter-properties-describing-the-extension)
-* [Step 6: Fill out the privacy fields](#step-6-fill-out-the-privacy-fields)
+* [Step 6: Enter privacy information](#step-6-enter-privacy-information)
    * [State the extension's purpose](#state-the-extensions-purpose)
    * [Justify any permissions](#justify-any-permissions)
    * [Declare any use of remote code](#declare-any-use-of-remote-code)
    * [Certify your data usage practices](#certify-your-data-usage-practices)
    * [Set a privacy policy](#set-a-privacy-policy)
-* [Step 7: Add store listing details for each language](#step-7-add-store-listing-details-for-each-language)
+* [Step 7: Enter store listing details for each language](#step-7-enter-store-listing-details-for-each-language)
    * [Enter properties for a language](#enter-properties-for-a-language)
    * [Generate the description with AI](#generate-the-description-with-ai)
    * [Add or remove a language](#add-or-remove-a-language)
@@ -57,7 +64,7 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Provide a YouTube video](#provide-a-youtube-video)
    * [Enter search terms for the extension](#enter-search-terms-for-the-extension)
    * [Fix any form field errors](#fix-any-form-field-errors)
-* [Step 8: Provide testing notes and submit the extension](#step-8-provide-testing-notes-and-submit-the-extension)
+* [Step 8: Provide certification testing notes and submit the extension](#step-8-provide-certification-testing-notes-and-submit-the-extension)
 * [Resolve any Partner Center errors](#resolve-any-partner-center-errors)
 * [If a single locale appears, but the package includes multiple languages](#if-a-single-locale-appears-but-the-package-includes-multiple-languages)
 * [If the extension is flagged as potentially malware](#if-the-extension-is-flagged-as-potentially-malware)
@@ -142,7 +149,7 @@ See also:
 
 
 <!-- ========================================================================== -->
-## Step 3: Upload the extension package<!-- Left Nav item 2: Packages -->
+## Step 3: Upload the extension packages<!-- Left Nav item 2: Packages -->
 
 <!-- todo: how do we get to this state?  resequence from system-description to task-oriented sequence -->
 
@@ -150,19 +157,19 @@ The **Extension overview** page shows information about a specific extension:
 
 ![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
 
-To upload the extension package:
+To upload a package for the extension:
 
-1. In Partner Center, on the left, click **Packages**.  The **Packages** page opens.
+1. In Partner Center, on the left, click **Packages**<!-- todo: why would there be multiple packages? -->.  The **Packages** page opens.
 
    <!-- todo: show png: the initial, empty Packages page; above, change period to colon -->
 
-   You can only upload one package at a time. Your submitted extension is blocked if the package upload isn't successful on the **Packages** page.
+   You can only upload one package at a time<!-- todo: why would there be multiple packages? -->.  Your submitted extension is blocked if the package upload isn't successful on the **Packages** page.
 
-1. To upload your package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page.
+1. To upload a package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page.
 
    Or, click **Browse your files** to open a dialog to select the package to upload.
 
-   After your package is uploaded, it's validated.  If there's a validation error, resolve the issue and try uploading your package again.
+   After the package is uploaded, it's validated.  If there's a validation error, resolve the issue and try uploading the package again.
 
 1. When validation succeeds, review the extension details.
 
@@ -172,7 +179,7 @@ To upload the extension package:
 
 
 <!-- ========================================================================== -->
-## Step 4: Provide availability information<!-- Left Nav item 3: Availability -->
+## Step 4: Enter availability information<!-- Left Nav item 3: Availability -->
 
 1. In Partner Center, on the left, click **Availability**.
 
@@ -243,9 +250,9 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Fill out the privacy fields<!-- Left Nav item 5: Privacy -->
+## Step 6: Enter privacy information<!-- Left Nav item 5: Privacy -->
 
-In the extension's **Privacy** page at Partner Center, declare your extension's purpose, permissions, and data practices:
+In the extension's **Privacy** page at Partner Center, declare the extension's purpose, permissions, and data practices:
 
 ![The Privacy page for an extension, at Partner Center](./publish-extension-images/privacy-page.png)
 
@@ -386,7 +393,7 @@ The **Privacy policy**<!--5--> section of the **Privacy** page:
 
 
 <!-- ========================================================================== -->
-## Step 7: Add store listing details for each language<!-- Left Nav item 6: Store listings -->
+## Step 7: Enter store listing details for each language<!-- Left Nav item 6: Store listings -->
 
 The **Store listings** page for the extension contains a table.  Each row in the table leads to a different **Details for \<language\>** page.
 
@@ -592,7 +599,7 @@ In the **Details for \<language\>** page, a message might say "Fields require yo
 
 
 <!-- ========================================================================== -->
-## Step 8: Provide testing notes and submit the extension
+## Step 8: Provide certification testing notes and submit the extension
 
 On the **Submit your extension** page, you can optionally add notes for certification to help test the extension.  When you submit the extension, use the **Notes for certification** text box to provide additional information to the certification testers.
 
