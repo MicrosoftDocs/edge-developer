@@ -286,9 +286,12 @@ The **Single Purpose**<!--1--> section of the **Privacy** page:
 
 * In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of the extension.
 
-  An extension must have a clear, narrow, and well-defined purpose<!-- todo: link equiv to [Extension Quality Guidelines](https://developer.chrome.com/docs/webstore/program-policies#extensions)?  ui has [Learn more] link.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#state_the_extensions_purpose -->.  Make sure this field accurately reflects what your extension does and why it exists.
+An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
 
-  Avoid a vague or overly broad description.
+Avoid a vague or overly broad description.
+
+See also:
+* [Best practices for extensions](../developer-guide/best-practices.md)
 
 
 <!-- ------------------------------ -->
@@ -305,9 +308,13 @@ The **Permission justification** section contains a list of permissions that you
 
 1. In each permission text box, specify why the extension needs to use the permission.
 
-The extension must request only the minimum permissions<!-- todo: link equiv to [minimum permissions](https://developer.chrome.com/docs/extensions/mv3/security#permissions)?  ui has [permission] & [match pattern] links.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#list_and_justify_any_permissions --> that are necessary to deliver its functionality.  Avoid requesting excessive or unrelated permissions.
+The extension must request only the minimum permissions that are necessary to deliver its functionality.  Avoid requesting excessive or unrelated permissions.
 
 This information helps reviewers validate that the extension adheres to least-privilege principles.
+
+See also:
+* [Best practices for extensions](../developer-guide/best-practices.md)
+* [Request minimal permissions](https://developer.chrome.com/docs/extensions/develop/security-privacy/stay-secure#permissions) in _Stay secure_, in Chrome docs.
 
 
 <!-- ------------------------------ -->
@@ -317,7 +324,7 @@ The **Are you using remote code?**<!--3--> section of the **Privacy** page:
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
-Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code<!-- todo: add link equiv to [remotely hosted file](https://developer.chrome.com/docs/extensions/develop/migrate#remotely-hosted-code) - link is needed b/c ui appar. lacks any link eg [Learn more].  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#declare_any_remote_code --> is not permitted.
+Remote code is only supported for Manifest V2, not Manifest V3.  In Manifest V3, loading and executing remotely hosted code is not permitted.
 
 If the extension doesn't need to execute remote code:
 
@@ -332,6 +339,10 @@ If the extension executes remote code:
 1. In the **Justification** text box, state why the extension needs to use remote code.
 
 The extension should avoid the use of remote code unless absolutely necessary.  Remote code requires additional review, and might increase certification time.
+
+See also:
+* [Overview of changes in Manifest V3](../developer-guide/manifest-v3.md#overview-of-changes-in-manifest-v3), in _Overview and timelines for migrating to Manifest V3_.
+* [Remove remotely hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code) in _Improve extension security_, in Chrome docs.
 
 
 <!-- ------------------------------ -->
@@ -377,7 +388,7 @@ The **Privacy policy**<!--5--> section of the **Privacy** page:
 
    A privacy policy and its URL is required if the extension collects any privacy information.  This is a valid privacy policy URL to communicate how the extension follows privacy laws and regulations.
 
-   The privacy policy must include how data is collected, used, and disclosed.<!-- todo: add link equiv to [User Data FAQ](https://developer.chrome.com/docs/webstore/program-policies/user-data-faq)?  ui has [Learn more] link.  compare link in https://developer.chrome.com/docs/webstore/cws-dashboard-privacy#set-privacy-policy -->
+   The privacy policy must include how data is collected, used, and disclosed.
 
    You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.
 
@@ -390,6 +401,9 @@ The **Privacy policy**<!--5--> section of the **Privacy** page:
 1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
 
    The **Store Listings** page opens.
+
+See also:
+* [Best practices for extensions](../developer-guide/best-practices.md)
 
 
 <!-- ========================================================================== -->
@@ -519,8 +533,7 @@ To remove a language from your store listing:
 
 1. In the row for a language, click **Remove**.
 
-
-To support multiple languages in your extension's code, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).
+To support multiple languages in your extension's code, you can use the internationalization API ([chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n)<!-- todo: why defined https://go.microsoft.com/fwlink/?linkid=2167478 ? -->).
 
 
 <!-- ------------------------------ -->
@@ -555,7 +568,7 @@ If you are linking to a video, make sure your video meets the following requirem
 
 * Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
-* Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+* Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596)<!-- todo: remove links? -->.
 
 To enter the URL of your YouTube video:
 
@@ -763,11 +776,13 @@ If you experience issues when registering as an extension developer or when subm
 ## See also
 <!-- all links in article -->
 
-* [Manifest file format for extensions](../getting-started/manifest-format.md)
-* [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)
-* [Extension concepts and architecture](../getting-started/index.md)
-* [Register as a Microsoft Edge extension developer](./create-dev-account.md)
-* [Contact the Microsoft Edge extensions team](../contact.md)
+* [Extension concepts and architecture](../getting-started/index.md)<!-- bucket 2 -->
+* [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)<!-- bucket 4 -->
+* [Manifest file format for extensions](../getting-started/manifest-format.md)<!-- bucket 5 top -->
+   * [Overview of changes in Manifest V3](../developer-guide/manifest-v3.md#overview-of-changes-in-manifest-v3), in _Overview and timelines for migrating to Manifest V3_.<!-- bucket 5 -->
+* [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- bucket 6 -->
+* [Best practices for extensions](../developer-guide/best-practices.md)<!-- bucket 10 -->
+* [Contact the Microsoft Edge extensions team](../contact.md)<!-- bottom -->
 
 Partner Center:
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)
@@ -783,8 +798,10 @@ Support.microsoft.com:
 * [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 
 
 Support.google.com:
-* [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)
-* [Ads on embedded videos](https://support.google.com/youtube/answer/132596)
+* [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)<!-- todo: remove link? -->
+* [Ads on embedded videos](https://support.google.com/youtube/answer/132596)<!-- todo: remove link? -->
 
-Extensions Reference:
-* [chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478) - Chrome Extensions > Reference > API.
+Chrome docs:
+* [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n)<!-- todo: why defined https://go.microsoft.com/fwlink/?linkid=2167478 ? --> - API Reference.
+* [Request minimal permissions](https://developer.chrome.com/docs/extensions/develop/security-privacy/stay-secure#permissions) in _Stay secure_.
+* [Remove remotely hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code) in _Improve extension security_.
