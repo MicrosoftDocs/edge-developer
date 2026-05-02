@@ -46,7 +46,7 @@ As a Microsoft Edge extension developer, you can make your new or existing Micro
 ## Introduction
 <!-- Description  https://developer.chrome.com/docs/extensions/reference/api/sidePanel#description -->
 
-Use the `chrome.sidePanel` API to host content in the sidebar of Microsoft Edge (or in the _side panel_ of Google Chrome) alongside the main content of a webpage.
+Use the `chrome.sidePanel` API to host content in the sidebar of Microsoft Edge alongside the main content of a webpage.
 
 As a Microsoft Edge extension developer, you can make your new or existing Microsoft Edge extension appear in the sidebar.  Any extension can use the sidebar in addition to its other UI.
 
@@ -54,7 +54,7 @@ As a Microsoft Edge extension developer, you can make your new or existing Micro
 
 By using the Side Panel API, you can enhance the browsing experience by enabling users to view additional information alongside the main content of a webpage.
 
-The _sidebar_ is a persistent pane that's located on the side of Microsoft Edge (called _side panel_ in Google Chrome).  The sidebar pane coexists with the primary content of the browser.  The sidebar reduces the need to constantly switch between tabs, resulting in a more productive browsing experience.
+The _sidebar_ is a persistent pane that's located on the side of Microsoft Edge.  The sidebar pane coexists with the primary content of the browser.  The sidebar reduces the need to constantly switch between tabs, resulting in a more productive browsing experience.
 
 An extension can optionally use the Side Panel API to show a custom UI in the Microsoft Edge sidebar.  Additionally, the extension can continue appearing in the Microsoft Edge toolbar along with a UI such as popups, and can inject scripts.
 
@@ -69,21 +69,17 @@ An extension can optionally use the Side Panel API to show a custom UI in the Mi
 | `sidePanel` or `side_panel` | Name of the API and permission to enable any extension as a sidebar extension. |
 | _sidebar extension_ | A Microsoft Edge extension that has a UI in the sidebar. |
 
-* Microsoft Edge UI: "sidebar"
-* Chrome UI: "side panel"
-   * Chrome API: "sidepanel"
-
 
 <!-- ====================================================================== -->
 ## Concepts and usage
 <!-- https://developer.chrome.com/docs/extensions/reference/api/sidePanel#concepts_and_usage -->
 
-The Side Panel API allows an extension to display its own UI in the Microsoft Edge sidebar (or Google Chrome side panel), enabling a persistent experience that complements the user's browsing journey.
+The Side Panel API allows an extension to display its own UI in the Microsoft Edge sidebar, enabling a persistent experience that complements the user's browsing journey.
 
 ![Edge browser sidebar UI](./sidebar-images/example-sidebar.png)
 
 <!-- para not in upstream: -->
-As with other extension resources, the sidebar page commits to a trusted extension context on its origin (`extension://<id>`).  The sidebar has the same API access as other trusted extension contexts.
+As with other extension resources, the HTML page that's displayed in the sidebar runs in a trusted extension context on the extension's origin (`extension://<id>`).  The sidebar has the same API access as other trusted extension contexts.
 
 All the existing extensions APIs are available for sidebar extensions, so you can leverage all current capabilities of the extensibility framework in your sidebar-enabled extension.
 
@@ -196,7 +192,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
   if (url.origin === BING_ORIGIN) {
     await chrome.sidePanel.setOptions({
       tabId,
-      path: 'sidepanel.html', // sidebar.html for consis w/ previous initial example
+      path: 'sidepanel.html',
       enabled: true
     });
   } else {

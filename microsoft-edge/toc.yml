@@ -1246,10 +1246,7 @@
                   href: ./extensions/developer-guide/devtools-extension.md
 
                 - name: "Sample: Custom DevTools tool"
-                  href: ./extensions/samples/custom-devtools-tool.md
-
-                - name: Code for Custom DevTools tool
-                  href: ./extensions/samples/custom-devtools-tool-code.md
+                  href: ./extensions/samples/devtools-extension-sample.md
 
             - name: Native messaging
               href: ./extensions/developer-guide/native-messaging.md
