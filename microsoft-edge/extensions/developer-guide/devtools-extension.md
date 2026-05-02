@@ -14,9 +14,6 @@ ms.date: 04/20/2026
 
 This article describes the code of the Custom DevTools sample.  To first install and run the sample, see [Sample: Custom DevTools tool](./devtools-extension-sample.md).
 
-**Detailed contents:**
-<!-- todo -->
-
 
 <!-- ====================================================================== -->
 ## Introduction
@@ -27,7 +24,7 @@ An extension that extends DevTools additionally includes:
 * A rendered HTML file to display in the tool's panel in DevTools.
 * A non-rendered HTML file that's run when DevTools is opened, that just loads a DevTools .js file.
 
-The present article explains the code in [Sample: Custom DevTools tool](../samples/devtools-extension-sample.md).
+The present article explains the code in [Sample: Custom DevTools tool](./devtools-extension-sample.md).
 
 To add a custom tool in Microsoft Edge DevTools, create a Microsoft Edge extension that adds a custom tool in Microsoft Edge DevTools, including a tool tab and panel.
 
@@ -106,7 +103,7 @@ Detect the user clicks on a webpage by using a content script.  The content scri
 
 
 <!-- ====================================================================== -->
-# Code for Custom DevTools tool
+## Code for Custom DevTools tool
 
 The Custom DevTools sample consists of the following files and code.  The code that interacts with the inspected webpage does the following:
 
@@ -115,11 +112,6 @@ The Custom DevTools sample consists of the following files and code.  The code t
 * Displays the mouse-click position in the **Custom** DevTools tool, when the webpage is clicked.
 
 * Displays a greeting alert in the inspected webpage, when the **Say Hello** button is clicked in the **Custom** DevTools tool.
-
-See also:
-* [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md)<!-- sibling 1 of 3 -->
-   * [Sample: Custom DevTools tool](./devtools-extension-sample.md)<!-- sibling 2 of 3 -->
-      * [Code for Custom DevTools tool](./custom-devtools-tool-code.md)<!-- sibling 3 of 3 --> - the present article.
 
 
 <!-- ====================================================================== -->

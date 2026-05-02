@@ -9,13 +9,9 @@ ms.subservice: extensions
 ms.date: 04/20/2026
 ---
 # Sample: Custom DevTools tool
-<!-- https://learn.microsoft.com/microsoft-edge/extensions/samples/custom-devtools-tool -->
-<!-- sibling 2 of 3 -->
+<!-- https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension-sample -->
 
 The sample "Custom DevTools tool" is a Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools, which has its own tab in the **Activity Bar**.
-
-**Detailed contents:**
-<!-- todo -->
 
 
 <!-- ====================================================================== -->
@@ -257,7 +253,7 @@ Download the "main" branch of the Demos repo, as follows:
 
    * Make DevTools wider, and then click the **Custom** (![Custom icon](./devtools-extension-sample-images/custom-icon.png)) tool's tab.
 
-This is the end of the steps to use and modify the DevTools Extension sample.  Next, you can study [Code for Custom DevTools tool](../samples/custom-devtools-tool-code.md).
+This is the end of the steps to use and modify the DevTools Extension sample.
 
 
 <!-- ====================================================================== -->
