@@ -12,6 +12,31 @@ ms.date: 04/25/2023
 
 The WebView2 SDK is provided as a Prerelease or Release version of the **Microsoft.Web.WebView2** NuGet package.  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+   * [Phases of introducing APIs](#phases-of-introducing-apis)
+   * [Selecting which type of SDK to use](#selecting-which-type-of-sdk-to-use)
+* [Use a Prerelease version of the SDK along with a preview channel of Microsoft Edge](#use-a-prerelease-version-of-the-sdk-along-with-a-preview-channel-of-microsoft-edge)
+* [Use a release version of the SDK along with the Runtime](#use-a-release-version-of-the-sdk-along-with-the-runtime)
+* [Release cadence](#release-cadence)
+* [Minimum version and build number to instantiate WebView2](#minimum-version-and-build-number-to-instantiate-webview2)
+* [Forward compatibility of APIs](#forward-compatibility-of-apis)
+* [Experimental APIs](#experimental-apis)
+   * [Developing with Experimental APIs and providing feedback](#developing-with-experimental-apis-and-providing-feedback)
+   * [Moving from Experimental APIs to Stable APIs](#moving-from-experimental-apis-to-stable-apis)
+* [Matching the Runtime version with the SDK version](#matching-the-runtime-version-with-the-sdk-version)
+* [Feature-detecting to test whether the installed Runtime supports recently added APIs](#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis)
+   * [.NET and WinUI, and WinRT](#net-and-winui-and-winrt)
+   * [Win32 C/C++](#win32-cc)
+   * [Provide graceful fallback](#provide-graceful-fallback)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+The WebView2 SDK is provided as a Prerelease or Release version of the **Microsoft.Web.WebView2** NuGet package.  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
+
 _Prerelease_ SDK packages are for use during development if you want to test the latest WebView2 APIs, including the Experimental APIs, before support for those APIs is added to the Runtime.  The Canary channel is recommended, because it has the implementations of the latest APIs.  When you want to test and use Experimental WebView2 APIs, use the following combination:
 *  A _Prerelease_ version of the WebView2 SDK.
 *  A _preview channel_ of Microsoft Edge on your development client.
@@ -168,7 +193,7 @@ Once an API has been moved from Experimental to Stable status, you need to move 
 
 In the Evergreen distribution approach, the client's WebView2 Runtime automatically updates to the latest version available.  However, a user or IT admin might choose to prevent automatic updating of the WebView2 Runtime.  The resulting outdated Runtime on the client might cause compatibility issues with your updated WebView2 app that uses new APIs from a recent SDK.
 
-In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that is required by your app.  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
+In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that's required by your app.  To view or get the latest WebView2 Runtime versions, use the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) section of the _Microsoft Edge WebView2_ page at developer.microsoft.com.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
 
 To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for the WebView2 SDK](../release-notes/index.md).
 

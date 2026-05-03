@@ -13,6 +13,27 @@ ms.date: 11/14/2025
 
 WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Design guidelines](#design-guidelines)
+* [Browser features](#browser-features)
+* [Web platform features](#web-platform-features)
+* [Blocked internal URLs](#blocked-internal-urls)
+* [Google Authentication](#google-authentication)
+* [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information)
+   * [Preventing shortcuts from changing during update](#preventing-shortcuts-from-changing-during-update)
+   * [Shortcuts that are turned off](#shortcuts-that-are-turned-off)
+   * [Shortcuts turned off except when event not handled](#shortcuts-turned-off-except-when-event-not-handled)
+   * [Shortcuts turned off if AcceleratorEnabled is False](#shortcuts-turned-off-if-acceleratorenabled-is-false)
+   * [Customizing an individual key](#customizing-an-individual-key)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
+
 This article covers:
 
 *  The modified browser features and supporting information.
@@ -108,6 +129,8 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 Google has disabled Google Authentication in embedded webviews, which includes WebView2, due to a security policy they have set.  See [Upcoming security changes to Google's OAuth 2.0 authorization endpoint in embedded webviews](https://developers.googleblog.com/2021/06/upcoming-security-changes-to-googles-oauth-2.0-authorization-endpoint.html).
 
 To stay up-to-date on the latest discussion, in the WebView2Feedback repo, see [Google Auth Flows and WebView2](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1647).
+
+
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
@@ -213,3 +236,10 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 #### Customizing an individual key
 
 To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed) event.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches)
+* [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event

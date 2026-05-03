@@ -15,16 +15,44 @@ ms.date: 08/03/2023
 # Navigating with web resource request and response events
 -->
 
-<!-- todo
-writer: add arrows to diagrams
-writer: read through body content
--->
+The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `WebResourceRequested` and `WebResourceResponseReceived` events.
 
-The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `WebResourceRequested` and `WebResourceResponseReceived` events.  There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`.
+You can navigate via specific network requests by using the `NavigateWithWebResourceRequest` method.
 
-This article describes how you can modify network requests.  Use this API and approach to:
+**Detailed contents:**
+* [Introduction](#introduction)
+* [When to use custom vs. basic approaches](#when-to-use-custom-vs-basic-approaches)
+   * [How your host app, the WebView2 control, and the HTTP server interact](#how-your-host-app-the-webview2-control-and-the-http-server-interact)
+* [Intercepting a request, to monitor or modify it](#intercepting-a-request-to-monitor-or-modify-it)
+   * [What you can do with headers](#what-you-can-do-with-headers)
+   * [Filtering the WebResourceRequested event based on URL and resource type](#filtering-the-webresourcerequested-event-based-on-url-and-resource-type)
+   * [Why would you want to intercept requests that are sent from WebView2?](#why-would-you-want-to-intercept-requests-that-are-sent-from-webview2)
+   * [Sequence for modifying requests](#sequence-for-modifying-requests)
+   * [Example: Intercepting a request, to monitor or modify it](#example-intercepting-a-request-to-monitor-or-modify-it)
+* [Overriding a response, to proactively replace it](#overriding-a-response-to-proactively-replace-it)
+   * [Sequence for overriding responses](#sequence-for-overriding-responses)
+   * [Example: Overriding a response, to proactively replace it](#example-overriding-a-response-to-proactively-replace-it)
+* [Constructing a custom request and navigating using that request](#constructing-a-custom-request-and-navigating-using-that-request)
+   * [Example: Constructing a custom request and navigating using that request](#example-constructing-a-custom-request-and-navigating-using-that-request)
+* [Monitoring the requests and responses via the WebResourceResponseReceived event](#monitoring-the-requests-and-responses-via-the-webresourceresponsereceived-event)
+   * [Example: Monitoring the requests and responses via the WebResourceResponseReceived event](#example-monitoring-the-requests-and-responses-via-the-webresourceresponsereceived-event)
+* [API Reference overview](#api-reference-overview)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `WebResourceRequested` and `WebResourceResponseReceived` events.
+
+You can navigate via specific network requests by using the `NavigateWithWebResourceRequest` method.
+
+You can modify network requests, as described below.  Use the `NavigateWithWebResourceRequest` method to:
+
 * Upload local file content to your app to add support for offline functionality.
+
 * Block content in a webpage, such as specific images.
+
 * Fine-tune authentication for specific pages.
 
 **Terminology:**
@@ -108,7 +136,6 @@ Another example is if the host app is only interested in all requests that are u
 
 ---
 
-
 For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter#remarks)
 
 
@@ -143,6 +170,9 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 
 <!-- ------------------------------ -->
 #### Example: Intercepting a request, to monitor or modify it
+<!--
+#### Example: Header modification when making a request
+-->
 
 <!-- this example doesn't exist in the sample repo -->
 
@@ -483,7 +513,6 @@ m_webView->add_WebResourceResponseReceived(
 <!-- ------------------------------ -->
 
 ##### [.NET](#tab/dotnet)
-
 
 **Request:**
 
