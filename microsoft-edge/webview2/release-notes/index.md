@@ -412,7 +412,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
 * Improved error handling when Post Message<!-- todo: api name? --> is called on a service worker.
 * Reduced string allocations in `GetDefaultHostAppExeName`.
-* Fixed updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing crash in new controller creation in an already running app.
+* Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
 <!-- end of Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026) -->
 
@@ -442,8 +442,7 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing crash in new controller creation in an already running app.
-
+* Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
 <!-- end of Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026) -->
 
