@@ -125,7 +125,7 @@ These APIs provide:
 
 <!-- 5 -->
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.4015-prerelease&preserve-view=true)<!-- todo: review; this member was in phase 1 in https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=dotnetcsharp#control-whether-webview-script-apis-are-enabled-for-service-workers -->
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.4015-prerelease&preserve-view=true)
    * [CoreWebView2Profile.ServiceWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.serviceworkermanager?view=webview2-dotnet-1.0.4015-prerelease&preserve-view=true)
    * [CoreWebView2Profile.SharedWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.sharedworkermanager?view=webview2-dotnet-1.0.4015-prerelease&preserve-view=true)
 
@@ -202,7 +202,7 @@ These APIs provide:
 
 <!-- 5 -->
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)<!-- todo: review; this member was in phase 1 in https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=winrtcsharp#control-whether-webview-script-apis-are-enabled-for-service-workers -->
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
    * [CoreWebView2Profile.ServiceWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true#serviceworkermanager)
    * [CoreWebView2Profile.SharedWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true#sharedworkermanager)
 
@@ -305,10 +305,10 @@ These APIs provide:
 
 <!-- 5 -->
 * [ICoreWebView2Profile9](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true)
-  * [ICoreWebView2Profile9::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)<!-- todo: review; this member was in phase 1 in https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=win32cpp#control-whether-webview-script-apis-are-enabled-for-service-workers -->
+  * [ICoreWebView2Profile9::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
   * [ICoreWebView2Profile9::get_ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#get_serviceworkermanager)
   * [ICoreWebView2Profile9::get_SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#get_sharedworkermanager)
-  * [ICoreWebView2Profile9::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)<!-- todo: review; this member was in phase 1 in https://learn.microsoft.com/en-us/microsoft-edge/webview2/release-notes/?tabs=win32cpp#control-whether-webview-script-apis-are-enabled-for-service-workers -->
+  * [ICoreWebView2Profile9::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4015-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 <!-- 6 -->
 * [ICoreWebView2ServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4015-prerelease&preserve-view=true)
@@ -410,7 +410,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed double character in UWP.
 * Fixed Caption controls background color setting API.  After this change, apps will also have to intercept the close call and handle themselves to close the app.
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
-* Improved error handling when Post Message<!-- todo: api name? --> is called on a service worker.
+* Improved error handling when `postMessage`<!-- https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1) --> (or `postMessageWithAdditionalObjects`) is called on a service worker.
 * Reduced string allocations in `GetDefaultHostAppExeName`.
 * Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
