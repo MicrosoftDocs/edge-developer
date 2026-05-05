@@ -6,17 +6,10 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/29/2026
+ms.date: 05/05/2026
 ---
 # Publish a Microsoft Edge extension
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/publish/publish-extension -->
-
-<!-- todo: clarify why there would be one vs. multiple packages for an extension
-globally Find "package" in this file, make consistent
-* UI left nav is "Packages"
-* top of article says "You can only upload one package at a time." implying an extension has multiple packages
-* article says "the package"
--->
 
 <!-- Left Nav items at Partner Center for an extension:
 Extension overview
@@ -44,8 +37,8 @@ If you have an existing Chrome extension and you want to release it for Microsof
    * [Create a developer account](#create-a-developer-account)
    * [Create a .zip file for the extension package](#create-a-zip-file-for-the-extension-package)
    * [Review manifest field values](#review-manifest-field-values)
-* [Step 2: Start a new submission at Partner Center](#step-2-start-a-new-submission-at-partner-center)
-* [Step 3: Upload packages for the extension](#step-3-upload-packages-for-the-extension)
+* [Step 2: Create a new extension at Partner Center](#step-2-create-a-new-extension-at-partner-center)
+* [Step 3: Upload the package for the extension](#step-3-upload-the-package-for-the-extension)
 * [Step 4: Enter availability information](#step-4-enter-availability-information)
    * [Visibility](#visibility)
    * [Markets](#markets)
@@ -133,45 +126,53 @@ See also:
 
 
 <!-- ========================================================================== -->
-## Step 2: Start a new submission at Partner Center
+## Step 2: Create a new extension at Partner Center
 
 1. Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) at Partner Center.
+
+   Or, at Partner Center, click **Home** in the upper left.  The **Home** page opens.  In the **Workspaces** section, click the **Edge** card.
 
    The **Overview** page opens:
 
    ![Overview page](./publish-extension-images/partner-center-extension-home.png)
 
-1. Click **Create new extension**.
+1. Click ![Plus icon](./publish-extension-images/create-new-extension-icon.png) **Create new extension**.
 
-   <!-- todo: what happens here?  state the UI result: The **Extension overview** page opens? -->
+   The **Upload package (.zip file)** page opens:
 
-<!-- Left Nav item 1: Extension overview -->
+   ![The "Upload package" page](./publish-extension-images/upload-package-zip-file.png)
 
 
 <!-- ========================================================================== -->
-## Step 3: Upload packages for the extension<!-- Left Nav item 2: Packages -->
-
-<!-- todo: how do we get to this state?  resequence from system-description to task-oriented sequence -->
-
-The **Extension overview** page shows information about a specific extension:
-
-![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
+## Step 3: Upload the package for the extension
 
 To upload a package for the extension:
 
-1. In Partner Center, on the left, click **Packages**<!-- todo: why would there be multiple packages? -->.  The **Packages** page opens.
+1. Do the steps in the previous section, so that the **Upload package (.zip file)** page is open.
 
-   <!-- todo: show png: the initial, empty Packages page; above, change period to colon -->
+1. Drag the extension's `.zip` file from your drive onto the **Drag your package here (.zip)** section of the page.
 
-   You can only upload one package at a time<!-- todo: why would there be multiple packages? -->.  Your submitted extension is blocked if the package upload isn't successful on the **Packages** page.
+   Or, click the **Browse your files** button, to open a dialog to select the package to upload.
 
-1. To upload a package, drag the `.zip` file onto the **Drag your package here (.zip)** section of the page.
+   The package is verified, and then the package is listed in the **Upload package (.zip file)** page:
 
-   Or, click **Browse your files** to open a dialog to select the package to upload.
+   ![The "Upload package" page after package verified](./publish-extension-images/upload-package-verified.png)
 
-   After the package is uploaded, it's validated.  If there's a validation error, resolve the issue and try uploading the package again.
+   If there's a validation error, resolve the issue, and then upload the package again.
 
-1. When validation succeeds, review the extension details.
+1. Review the details in the **Upload package (.zip file)** page.
+
+1. On the left, select **Extension overview**.
+
+   The **Extension overview** page opens:
+
+   ![Extension page for a specific extension](./publish-extension-images/extension-page-for-specific-extension.png)
+
+1. Review the details in the **Extension overview** page.
+
+1. On the left, select **Packages**.
+
+   The **Upload package (.zip file)** page opens.
 
 1. Click the **Continue** button.
 
@@ -179,7 +180,7 @@ To upload a package for the extension:
 
 
 <!-- ========================================================================== -->
-## Step 4: Enter availability information<!-- Left Nav item 3: Availability -->
+## Step 4: Enter availability information
 
 1. In Partner Center, on the left, click **Availability**.
 
@@ -223,7 +224,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 5: Enter properties describing the extension<!-- Left Nav item 4: Properties -->
+## Step 5: Enter properties describing the extension
 
 1. In the extension's entry at Partner Center, on the left, click **Properties**.
 
@@ -250,7 +251,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 
 <!-- ========================================================================== -->
-## Step 6: Enter privacy information<!-- Left Nav item 5: Privacy -->
+## Step 6: Enter privacy information
 
 In the extension's **Privacy** page at Partner Center, declare the extension's purpose, permissions, and data practices:
 
@@ -280,15 +281,17 @@ To enter **Privacy** information about the extension:
 <!-- ------------------------------ -->
 #### State the extension's purpose
 
-The **Single Purpose**<!--1--> section of the **Privacy** page:
+The **Single Purpose** section of the **Privacy** page:
 
 ![The "Single Purpose Description" text box](./publish-extension-images/single-purpose-description.png)
 
-* In the **Single Purpose Description** text box, provide a concise description that helps reviewers understand the core functionality of the extension.
+1. In the **Single Purpose Description** text box, enter a concise description that helps reviewers understand the core functionality of the extension.
 
-An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
+   An extension must have a clear, narrow, and well-defined purpose.  Make sure this field accurately reflects what your extension does and why it exists.
 
-Avoid a vague or overly broad description.
+   Avoid a vague or overly broad description.
+
+1. Continue to the next section.
 
 See also:
 * [Best practices for extensions](../developer-guide/best-practices.md)
@@ -297,14 +300,14 @@ See also:
 <!-- ------------------------------ -->
 #### Justify any permissions
 
-The **Permission justification**<!--2--> section of the **Privacy** page:
+The **Permission justification** section of the **Privacy** page:
 
 ![An example "Permission justification" text box](./publish-extension-images/permission-justification.png)
 
 <!-- clarifies example screenshot vs. what user sees: -->
 The **Permission justification** section contains a list of permissions that your extension uses (as declared in your manifest), with a field for you to state the justification for each permission.  The above example shows a text box for justification of using the `declarativeNetRequest` permission.
 
-1. If there are permissions listed here that the extension doesn't require, before continuing, remove them from the manifest, and then upload a new version of the extension, per [Step 3: Upload packages for the extension](#step-3-upload-packages-for-the-extension), above.
+1. If there are permissions listed here that the extension doesn't require, before continuing, remove them from the manifest, and then upload a new version of the extension, per [Step 3: Upload the package for the extension](#step-3-upload-the-package-for-the-extension), above.
 
 1. In each permission text box, specify why the extension needs to use the permission.
 
@@ -314,13 +317,12 @@ This information helps reviewers validate that the extension adheres to least-pr
 
 See also:
 * [Best practices for extensions](../developer-guide/best-practices.md)
-* [Request minimal permissions](https://developer.chrome.com/docs/extensions/develop/security-privacy/stay-secure#permissions) in _Stay secure_, in Chrome docs.
 
 
 <!-- ------------------------------ -->
 #### Declare any use of remote code
 
-The **Are you using remote code?**<!--3--> section of the **Privacy** page:
+The **Are you using remote code?** section of the **Privacy** page:
 
 ![The "Are you using remote code?" section](./publish-extension-images/are-you-using-remote-code.png)
 
@@ -348,7 +350,7 @@ See also:
 <!-- ------------------------------ -->
 #### Certify your data usage practices
 
-The **Data usage**<!--4--> section of the **Privacy** page:
+The **Data usage** section of the **Privacy** page:
 
 ![The "Data usage" section](./publish-extension-images/data-usage.png)
 
@@ -374,7 +376,7 @@ These disclosures are displayed to Microsoft Edge users.  This information impro
 <!-- ------------------------------ -->
 #### Set a privacy policy
 
-The **Privacy policy**<!--5--> section of the **Privacy** page:
+The **Privacy policy** section of the **Privacy** page:
 
 ![The "Privacy Policy URL" text box](./publish-extension-images/privacy-policy-url.png)
 
@@ -407,7 +409,7 @@ See also:
 
 
 <!-- ========================================================================== -->
-## Step 7: Enter store listing details for each language<!-- Left Nav item 6: Store listings -->
+## Step 7: Enter store listing details for each language
 
 The **Store listings** page for the extension contains a table.  Each row in the table leads to a different **Details for \<language\>** page.
 
@@ -533,7 +535,7 @@ To remove a language from your store listing:
 
 1. In the row for a language, click **Remove**.
 
-To support multiple languages in your extension's code, you can use the internationalization API ([chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n)<!-- todo: why defined https://go.microsoft.com/fwlink/?linkid=2167478 ? -->).
+To support multiple languages in your extension's code, you can use the internationalization API ([chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n)).
 
 
 <!-- ------------------------------ -->
@@ -568,7 +570,7 @@ If you are linking to a video, make sure your video meets the following requirem
 
 * Verify that the content of the YouTube video follows the [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies).
 
-* Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596)<!-- todo: remove links? -->.
+* Turn off advertisements on your video.  For more information, see [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
 To enter the URL of your YouTube video:
 
@@ -798,10 +800,9 @@ Support.microsoft.com:
 * [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 
 
 Support.google.com:
-* [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)<!-- todo: remove link? -->
-* [Ads on embedded videos](https://support.google.com/youtube/answer/132596)<!-- todo: remove link? -->
+* [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)
+* [Ads on embedded videos](https://support.google.com/youtube/answer/132596)
 
 Chrome docs:
-* [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n)<!-- todo: why defined https://go.microsoft.com/fwlink/?linkid=2167478 ? --> - API Reference.
-* [Request minimal permissions](https://developer.chrome.com/docs/extensions/develop/security-privacy/stay-secure#permissions) in _Stay secure_.
+* [chrome.i18n](https://developer.chrome.com/docs/extensions/reference/api/i18n) - API Reference.
 * [Remove remotely hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code) in _Improve extension security_.
