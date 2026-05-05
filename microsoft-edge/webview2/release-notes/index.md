@@ -97,6 +97,14 @@ The WebView2 Worker APIs allow host applications to interact with Web Workers to
 These APIs provide:
 * **Lifecycle Events:** Monitor creation and destruction of workers.
 * **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`.
+<!-- todo: re: "PostMessage": what is the actual method name(s)?
+* CoreWebView2ServiceWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
+* CoreWebView2ServiceWorker.PostWebMessageAsString
+* CoreWebView2DedicatedWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
+* CoreWebView2DedicatedWorker.PostWebMessageAsString
+* chrome.webview.postMessage  https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1)
+* chrome.webview.postMessageWithAdditionalObjects
+-->
 * **Worker Management:** Query and retrieve worker registrations and instances.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -410,7 +418,15 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed double character in UWP.
 * Fixed Caption controls background color setting API.  After this change, apps will also have to intercept the close call and handle themselves to close the app.
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
-* Improved error handling when `postMessage`<!-- https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1) --> (or `postMessageWithAdditionalObjects`) is called on a service worker.
+* Improved error handling when Post Message is called on a service worker.
+<!-- todo: re: "Post Message": what is the actual method name(s)?
+* CoreWebView2ServiceWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
+* CoreWebView2ServiceWorker.PostWebMessageAsString
+* CoreWebView2DedicatedWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
+* CoreWebView2DedicatedWorker.PostWebMessageAsString
+* chrome.webview.postMessage  https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1)
+* chrome.webview.postMessageWithAdditionalObjects
+-->
 * Reduced string allocations in `GetDefaultHostAppExeName`.
 * Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
