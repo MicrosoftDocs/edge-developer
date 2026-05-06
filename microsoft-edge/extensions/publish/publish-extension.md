@@ -140,7 +140,7 @@ See also:
 
    The **Upload package (.zip file)** page opens:
 
-   ![The "Upload package" page](./publish-extension-images/upload-package-zip-file.png)
+   ![The "Upload package" page](./publish-extension-images/upload-package-zip-file.png)<!-- todo: replace png, to show Privacy in left nav -->
 
 
 <!-- ========================================================================== -->
@@ -243,6 +243,19 @@ Define the specific markets in which you plan to offer your extension.  The defa
    
    The properties are displayed to users at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  Your developer/organization name, **Website** URL, and **Support contact detail** that you submitted during registration are displayed to users at the Microsoft Edge Add-ons site.
 
+   <!-- start of temp content: -->
+
+1. If the following text boxes are in the **Properties** page, fill them in as follows.
+
+   | Property name | Required? | Description |
+   |---|---|---|
+   | **Privacy policy requirements** | Required | Specify whether the extension accesses, collects, or transmits any personal information.  If you select **No** but it's later determined that the extension does handle personal information, the certification process might fail.  If you select **Yes**, you must provide a Privacy policy URL, because this is a required field and submitting the extension won't be allowed without it. |
+   | **Privacy policy URL** | Required if the extension collects any privacy information | A valid privacy policy URL to communicate how the extension follows privacy laws and regulations.  You're responsible for ensuring that the extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by the extension.  To determine if the extension requires a privacy policy, see [Microsoft Store App Developer Agreement](https://go.microsoft.com/fwlink/?linkid=528905) and [Developer policies for the Microsoft Edge Add-ons store](/legal/microsoft-edge/extensions/developer-policies). |
+
+   Note: At Partner Center, privacy information is now entered in a dedicated **Privacy** page in the flow for submitting an extension, rather than as a **Privacy policy requirements** text box and a **Privacy policy URL** text box in the **Properties** page.  This update is being rolled out in phases, and is planned to be available to all developers by the end of May 2026.
+
+   <!-- / end of temp content -->
+
    You have now filled in the **Policies** page for the extension at Partner Center.
 
 1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
@@ -252,6 +265,10 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 <!-- ========================================================================== -->
 ## Step 6: Enter privacy information
+
+<!-- start of temp content: -->
+Note: At Partner Center, privacy information is now entered in a dedicated **Privacy** page in the flow for submitting an extension, rather than as a **Privacy policy requirements** text box and a **Privacy policy URL** text box in the **Properties** page.  This update is being rolled out in phases, and is planned to be available to all developers by the end of May 2026.
+<!-- / end of temp content -->
 
 In the extension's **Privacy** page at Partner Center, declare the extension's purpose, permissions, and data practices:
 
