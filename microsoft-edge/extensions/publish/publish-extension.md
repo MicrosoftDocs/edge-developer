@@ -262,6 +262,12 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    The **Privacy** page opens.
 
+   <!-- start of temp content: -->
+
+   Or, if you don't yet have the new UI that shows **Privacy** in the sequence on the left, the **Store listings** page opens.  In that case, make sure the **Privacy** fields are filled in as appropriate in the **Properties** page, and then proceed to [Step 7: Enter store listing details for each language](#step-7-enter-store-listing-details-for-each-language), below.
+
+   <!-- / end of temp content -->
+
 
 <!-- ========================================================================== -->
 ## Step 6: Enter privacy information
