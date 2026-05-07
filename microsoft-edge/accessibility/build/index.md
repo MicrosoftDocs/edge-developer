@@ -24,8 +24,8 @@ Visit [HTML5Accessibility](https://html5accessibility.com) for information on wh
 Assistive technologies add capabilities that computers don't usually have.  For example, a user who has low vision might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen.  
 
 For applications on Microsoft platforms and on the web, the assistive technology interacts with any combination of:
-*  Microsoft [UI Automation](/windows/win32/winauto/uiauto-specandcommunitypromise).
-*  An application-specific object model such as the Document Object Model (DOM) in Microsoft Edge.
+* Microsoft [UI Automation](/windows/win32/winauto/uiauto-specandcommunitypromise).
+* An application-specific object model such as the Document Object Model (DOM) in Microsoft Edge.
 
 For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements.  While developing your website, you usually only need to make sure that the API is correctly written to, or that the appropriate element is specified, for the application to be accessible.
 
@@ -77,8 +77,8 @@ Verifying that the website you are building works with real assistive technologi
 
 Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.  This testing can uncover issues in the following:
 
-*   Your HTML, ARIA, and CSS.
-*   The level of support of an assistive technology for a feature or technique.
+* Your HTML, ARIA, and CSS.
+* The level of support of an assistive technology for a feature or technique.
 
 Different browsers might map elements to the platform accessibility APIs differently than Microsoft Edge maps them.  While building your interface, it's important to consider each difference.
 
@@ -116,7 +116,7 @@ Under macOS, if you want to test with an assistive technology only available for
 
 If an assistive technology isn't available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
 
-*  [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
+* [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
 
 See also [Cloud-based emulators and simulators](../../devtools/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
 

@@ -16,9 +16,9 @@ Extensions that use native messaging are installed in Microsoft Edge similar to 
 
 To acquire the extension and native app host, there are two different distribution models:
 
-*  Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
+* Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
 
-*  Or, install your extension from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), and your extension prompts users to install the host.
+* Or, install your extension from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, do the following steps.
 
@@ -81,11 +81,11 @@ The following is an example **manifest.json** file:
 
 Native apps must provide a native messaging host manifest file.  A native messaging host manifest file contains the following information:
 
-*  The path to the native messaging host runtime.
+* The path to the native messaging host runtime.
 
-*  The method of communication with the extension.
+* The method of communication with the extension.
 
-*  A list of allowed extensions to which it communicates.
+* A list of allowed extensions to which it communicates.
 
 The browser reads and validates the native messaging host manifest.  The browser doesn't install or manage the native messaging host manifest file.
 
@@ -138,8 +138,8 @@ When you're ready to distribute your extension to users, publish your extension 
 The final step involves copying the native messaging host manifest file to your computer, and making sure that this manifest file is correctly configured.  To ensure your native messaging host manifest file is placed in the expected location, do the following steps.  The location varies by platform.
 
 On Linux and macOS:
-*  Make sure that you provide **read** permissions on the native messaging host manifest file. 
-*  Make sure that you provide **run** permissions on the host runtime.
+* Make sure that you provide **read** permissions on the native messaging host manifest file. 
+* Make sure that you provide **run** permissions on the host runtime.
 
 ##### [Windows](#tab/windows/)
 
@@ -155,13 +155,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 
 To add a registry key to the directory with the manifest key, do either of the following:
 
-*  Run a command in the command prompt:
+* Run a command in the command prompt:
 
    ```console
    REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
    ```
 
-*  Or, create a `.reg` file and run it, as follows:
+* Or, create a `.reg` file and run it, as follows:
 
     1. Copy the following command into a `.reg` file:
 
@@ -209,13 +209,13 @@ This is required because only the native messaging host manifest file that corre
 
 To store the native messaging host manifest file:
 
-*  System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the native messaging host manifest file must be stored in the following location:
+* System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_app.json
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  For example, the native messaging host manifest file must be stored in the following location:
+* User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  For example, the native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_app.json
@@ -237,13 +237,13 @@ See:
 
 To store the native messaging host manifest file:
 
-*  System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  The native messaging host manifest file must be stored in the following location:
+* System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  The native messaging host manifest file must be stored in the following location:
 
    ```bash
    /etc/opt/edge/native-messaging-hosts
    ```
 
-*  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  The native messaging host manifest file must be stored in the following location:
+* User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user data directory.  The native messaging host manifest file must be stored in the following location:
 
    ```bash
    ~/.config/microsoft-edge/NativeMessagingHosts

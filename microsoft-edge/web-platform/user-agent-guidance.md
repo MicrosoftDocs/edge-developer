@@ -21,9 +21,9 @@ user agent string
 
 Microsoft Edge enables your website to retrieve user agent information.  You use the user agent information to present webpages correctly for each user's browser.  Browsers provide mechanisms for websites to detect browser information such as brand, version number, and host operating system.
 
-*  **User-Agent Client Hints** are the best way to retrieve browser information.  See [User-Agent Client Hints](#user-agent-client-hints), below.
+* **User-Agent Client Hints** are the best way to retrieve browser information.  See [User-Agent Client Hints](#user-agent-client-hints), below.
 
-*  **User-Agent strings** are a legacy way to retrieve browser information. They are outdated and have a history of causing website compatibility problems.  See [User-Agent strings](#user-agent-strings), below.
+* **User-Agent strings** are a legacy way to retrieve browser information. They are outdated and have a history of causing website compatibility problems.  See [User-Agent strings](#user-agent-strings), below.
 
 You may want to provide different experiences to users based on their browser.  For example, if you include steps about how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
 
@@ -291,13 +291,13 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 Legacy browser considerations:
 
-*  The Microsoft Edge Legacy browser is no longer supported.  See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224).
+* The Microsoft Edge Legacy browser is no longer supported.  See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224).
 
-*  Microsoft Edge Legacy was only available on Windows 10.
+* Microsoft Edge Legacy was only available on Windows 10.
 
-*  Of all the User-Agent mechanisms described in this article, the only supported browser-specific mechanism for Microsoft Edge Legacy is User-Agent string.
+* Of all the User-Agent mechanisms described in this article, the only supported browser-specific mechanism for Microsoft Edge Legacy is User-Agent string.
 
-*  The User-Agent string for Microsoft Edge Legacy includes the `Edge` token.
+* The User-Agent string for Microsoft Edge Legacy includes the `Edge` token.
 
     A fully formed example of a Microsoft Edge Legacy User-Agent string: `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582`
 

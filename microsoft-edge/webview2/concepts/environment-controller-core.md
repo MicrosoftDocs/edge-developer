@@ -17,11 +17,11 @@ ms.date: 06/24/2022
 
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
-*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+* The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
 
-*  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+* The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
 
-*  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+* The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 <!-- / end of keep sync'd -->
 
@@ -66,13 +66,13 @@ or, equivalently:
 * `ICoreWebView2Controller`
 
 `CoreWebView2Environment` represents a group of WebView2 controls that all share the following:
-*  They share the same WebView2 browser process.
-*  They share the same user data folder.
-*  They potentially share WebView2 renderer and other WebView2 processes.
+* They share the same WebView2 browser process.
+* They share the same user data folder.
+* They potentially share WebView2 renderer and other WebView2 processes.
 
 From the `CoreWebView2Environment`, you create `CoreWebView2Controller` and `CoreWebView2` pairs.  They always come together as a `CoreWebView2Controller` and a corresponding `CoreWebView2`.
-*  The `CoreWebView2Controller` is responsible for all hosting-related functionality such as focus, visibility, size, and input.
-*  The `CoreWebView2` is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+* The `CoreWebView2Controller` is responsible for all hosting-related functionality such as focus, visibility, size, and input.
+* The `CoreWebView2` is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 
 <!-- ====================================================================== -->

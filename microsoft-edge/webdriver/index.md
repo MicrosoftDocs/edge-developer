@@ -12,13 +12,13 @@ ms.date: 12/12/2024
 
 WebDriver allows you to automate Microsoft Edge by simulating user interaction.  Tests that use WebDriver have some advantages over JavaScript unit tests that run in the browser:
 
-*   WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
+* WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
 
-*   WebDriver simulates user events or OS-level events more accurately than JavaScript unit tests.
+* WebDriver simulates user events or OS-level events more accurately than JavaScript unit tests.
 
-*   WebDriver manages multiple windows, tabs, and webpages in a single test session.
+* WebDriver manages multiple windows, tabs, and webpages in a single test session.
 
-*   WebDriver runs multiple sessions of Microsoft Edge on a specific machine.
+* WebDriver runs multiple sessions of Microsoft Edge on a specific machine.
 
 This article provides raw code samples, and not complete tests.  This article doesn't provide a complete how-to for getting started with Selenium WebDriver, but covers only the Microsoft Edge-specific portions of the process.  This includes obtaining Microsoft Edge WebDriver and setting Microsoft Edge-specific options in code.
 
@@ -28,9 +28,9 @@ This article provides raw code samples, and not complete tests.  This article do
 
 To automate Microsoft Edge with WebDriver to simulate user interaction, you need three components:
 
-*  Microsoft Edge.
-*  Microsoft Edge WebDriver.
-*  A WebDriver testing framework.
+* Microsoft Edge.
+* Microsoft Edge WebDriver.
+* A WebDriver testing framework.
 
 The functional relationship between these components is as follows:
 
@@ -52,23 +52,23 @@ To begin writing automated tests, make sure the Microsoft Edge WebDriver version
 
 Download and install a version of Microsoft Edge WebDriver that matches your browser version, as follows:
 
-1.  Go to `edge://settings/help` and note your version of Microsoft Edge, a four-part number:
+1. Go to `edge://settings/help` and note your version of Microsoft Edge, a four-part number:
 
-    ![The build number for Microsoft Edge on Sep. 28, 2024](./index-images/microsoft-edge-version.png)
+   ![The build number for Microsoft Edge on Sep. 28, 2024](./index-images/microsoft-edge-version.png)
 
-1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
+1. Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
 
-1.  In the **Downloads** section of the page, click a platform button (such as **x64**) under a version number that matches your version number of Microsoft Edge:
+1. In the **Downloads** section of the page, click a platform button (such as **x64**) under a version number that matches your version number of Microsoft Edge:
 
-    ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](./index-images/microsoft-edge-driver-install.png)
+   ![The `Get the latest version` section of the Microsoft Edge WebDriver webpage](./index-images/microsoft-edge-driver-install.png)
 
-    The first three parts of the four-part version number must match, between Microsoft Edge and Microsoft Edge WebDriver.  For example, the following versions of Microsoft Edge and Microsoft Edge WebDriver will work together, because the first three numbers are the same:
-    * 128.0.2739.79
-    * 128.0.2739.84
+   The first three parts of the four-part version number must match, between Microsoft Edge and Microsoft Edge WebDriver.  For example, the following versions of Microsoft Edge and Microsoft Edge WebDriver will work together, because the first three numbers are the same:
+   * 128.0.2739.79
+   * 128.0.2739.84
 
-    To download older versions, click the **Go to full directory** button below the **Recent versions** section.
+   To download older versions, click the **Go to full directory** button below the **Recent versions** section.
 
-1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
+1. After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
 You must install both a browser driver (Microsoft Edge WebDriver), and a WebDriver testing framework (such as Selenium WebDriver), as described in [Choose a WebDriver testing framework](#choose-a-webdriver-testing-framework) below.  These are separate components.
 
@@ -404,8 +404,8 @@ Your enterprise administrator defines what are trusted sites, including cloud re
 
 For more information about Application Guard, see:
 
-*  [Microsoft Edge support for Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard).
-*  [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview).
+* [Microsoft Edge support for Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard).
+* [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview).
 
 
 <!-- ====================================================================== -->
@@ -439,8 +439,8 @@ If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-
 
 If you're using the Microsoft Edge WebDriver template that's provided with Visual Studio, which creates a simple test project, make sure you've done the following:
 
-*  Download Microsoft Edge WebDriver and make sure it's available in the PATH.
-*  Add the WebDriver framework (such as the **Selenium.WebDriver** NuGet package) to the project.
+* Download Microsoft Edge WebDriver and make sure it's available in the PATH.
+* Add the WebDriver framework (such as the **Selenium.WebDriver** NuGet package) to the project.
 
 After you do these steps, the example test that navigates to Bing should complete successfully.
 

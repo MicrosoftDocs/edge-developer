@@ -20,7 +20,7 @@ The present documentation is for extension developers, rather than end-users of 
 <!-- omit See Also children at end -->
 **Detailed contents:**
 * [Introduction](#introduction)
-* [Sites for extensions for various browsers](#sites-for-extensions-for-various-browsers)
+* [Creating an extension for various browsers](#creating-an-extension-for-various-browsers)
 * [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
    * [Browser-specific APIs](#browser-specific-apis)
@@ -50,9 +50,12 @@ An extension should include at least the following features:
 * A JavaScript file that defines the function.
 * HTML and CSS files that define the user interface.
 
+See also:
+* [Get started developing an extension](./getting-started/index.md)
+
 
 <!-- ====================================================================== -->
-## Sites for extensions for various browsers
+## Creating an extension for various browsers
 
 Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.
 
@@ -122,7 +125,7 @@ Some browser extension stores allow you to download listed extensions from other
 
 To make sure your users find your extension in Microsoft Edge, publish your extension on the Microsoft Edge Add-ons site.  See [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons), below.
 
-Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
+Users might need to install your extension in different browsers.  In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
 
 <!-- ------------------------------ -->
@@ -206,9 +209,7 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- all links in the article -->
-
-<!-- todo: update local toc -->
+<!--all links in article -->
 
 
 <!-- ------------------------------ -->
@@ -236,8 +237,9 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 ###### Development
 
 <!-- toc order -->
-* [Extension concepts and architecture](./getting-started/index.md)<!-- link not in article --><!-- toc bucket 2.1 -->
-* [Sideload an extension to install and test it locally](./getting-started/extension-sideloading.md)<!-- toc bucket 2.2 -->
+* [Get started developing an extension](./getting-started/index.md)<!-- toc bucket 2.1 -->
+* [Extension concepts and architecture](./getting-started/architecture.md)<!-- link not in article --><!-- toc bucket 2.2 -->
+* [Sideload an extension to install and test it locally](./getting-started/extension-sideloading.md)<!-- toc bucket 2.3 -->
 * [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md)<!-- toc bucket 4 -->
 * [Publish a Microsoft Edge extension](./publish/publish-extension.md)<!-- toc bucket 7 -->
 * [Best practices for extensions](./developer-guide/best-practices.md)<!-- toc bucket 10 -->

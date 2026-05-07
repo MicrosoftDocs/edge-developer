@@ -15,9 +15,9 @@ ms.date: 07/20/2022
 
 This WebView2 sample demonstrates how to use the WebView2 CDP extension to use the Chrome DevTools Protocol (CDP) in a WPF app.
 
-*  Sample name: **WV2CDPExtensionWPFSample**
-*  Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
-*  Solution file: `WV2CDPExtensionWPFSample.sln`
+* Sample name: **WV2CDPExtensionWPFSample**
+* Repo directory: [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample)
+* Solution file: `WV2CDPExtensionWPFSample.sln`
 
 This sample, **WV2CDPExtensionWPFSample**, is built with the WebView2 CDP Extension (the **Microsoft.Web.WebView2.DevToolsProtocolExtension** NuGet package).  This sample calls Chrome DevTools Protocol methods on a `DevToolsProtocolHelper` object in WebView2.
 
@@ -57,11 +57,11 @@ Microsoft Visual Studio (with .NET support) is required.  Microsoft Visual Studi
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
 
 If you want to use Visual Studio 2017, in Visual Studio, change the project's Platform Toolset in **Project Properties > Configuration properties > General > Platform Toolset**.
 To use Visual Studio 2017, you might also need to install a recent Windows SDK.

@@ -14,7 +14,7 @@ Use the extensions demos to learn how to develop extensions for Microsoft Edge.
 
 
 <!-- ====================================================================== -->
-## MicrosoftEdge-Extensions repo
+## microsoft / MicrosoftEdge-Extensions repo
 <!-- sync:
 https://learn.microsoft.com/microsoft-edge/extensions/samples#microsoftedge-extensions-repo
 https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code
@@ -26,9 +26,11 @@ sync'd Jul. 30, 2025
 | Picture viewer pop-up webpage | A browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab. | [/picture-viewer-popup-webpage/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-viewer-popup-webpage) | [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md) |
 | Picture inserter using content script | Uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element. | [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-inserter-content-script) | [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md) |
 
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [GoogleChrome / chrome-extensions-samples repo](#googlechrome--chrome-extensions-samples-repo), below.
+
 
 <!-- ====================================================================== -->
-## MicrosoftEdge/Demos repo
+## MicrosoftEdge / Demos repo
 <!-- sync:
 https://learn.microsoft.com/microsoft-edge/extensions/samples#microsoftedgedemos-repo
 https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-extensions
@@ -37,11 +39,28 @@ sync'd Jul. 30, 2025
 
 | Demo name | Description | Source code & Readme | Docs |
 |---|---|---|---|
-| DevTools extension | Includes the following demos. | [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension) | [Create a DevTools extension, adding a custom tool tab and panel](../developer-guide/devtools-extension.md) |
-| Basic | A basic DevTools extension. | [/devtools-extension/sample 1/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%201) in **MicrosoftEdge / Demos** repo | [Step 1: Create a basic Microsoft Edge extension that has a DevTools webpage](../developer-guide/devtools-extension.md#step-1-create-a-basic-microsoft-edge-extension-that-has-a-devtools-webpage) in _Create a DevTools extension, adding a custom tool tab and panel_. |
-| Panel | A basic DevTools extension with a panel. | [/devtools-extension/sample 2/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%202) in **MicrosoftEdge / Demos** repo | [Step 2: Add a custom tool in DevTools](../developer-guide/devtools-extension.md#step-2-add-a-custom-tool-in-devtools) in _Create a DevTools extension, adding a custom tool tab and panel_. |
-| CDP | A basic DevTools extension invoking Chrome Developer Protocol (CDP) APIs. | [/devtools-extension/sample 3/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%203) in **MicrosoftEdge / Demos** repo | [Step 3: Display memory information by calling extension APIs](../developer-guide/devtools-extension.md#step-3-display-memory-information-by-calling-extension-apis) in _Create a DevTools extension, adding a custom tool tab and panel_. |
-| Inspect | A basic DevTools extension that interacts with the Inspected page. | [/devtools-extension/sample 4/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension/sample%204) in **MicrosoftEdge / Demos** repo | [Step 4: Interact between the webpage and DevTools](../developer-guide/devtools-extension.md#step-4-interact-between-the-webpage-and-devtools) in _Create a DevTools extension, adding a custom tool tab and panel_. |
+| Custom DevTools tool | A Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools. | [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension) | [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md) |
+
+
+<!-- ====================================================================== -->
+## GoogleChrome / chrome-extensions-samples repo
+
+* [GoogleChrome / chrome-extensions-samples](https://github.com/GoogleChrome/chrome-extensions-samples) repo.
+   * [README.md](https://github.com/GoogleChrome/chrome-extensions-samples/blob/main/README.md)
+   * [Samples](https://developer.chrome.com/docs/extensions/samples/) - UI to explore the Chrome Extension samples repo.
+
+
+<!-- ------------------------------ -->
+#### Sidebar samples
+
+* [Dictionary side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/sample.sidepanel-dictionary)
+* [Global side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-global)
+* [Multiple side panels example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-multiple)
+* [Opening the side panel through a user interaction](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-open)
+* [Site-specific side panel example](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific)
+
+See also:
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md)
 
 
 <!-- ====================================================================== -->

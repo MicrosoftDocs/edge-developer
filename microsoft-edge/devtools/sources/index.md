@@ -148,10 +148,10 @@ To load a file into a new tab of the browser, or to display other actions, right
 ###### Icons in the Page tab
 
 The **Page** tab uses the following icons:
-*  The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html): ![The window icon](./index-images/window-icon.png)
-*  The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin): ![The cloud icon](./index-images/cloud-icon.png)
-*  The **folder** icon represents a directory: ![The folder icon](./index-images/folder-icon.png)
-*  The **page** icon represents a resource: ![The page icon](./index-images/file-icon.png)
+* The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html): ![The window icon](./index-images/window-icon.png)
+* The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin): ![The cloud icon](./index-images/cloud-icon.png)
+* The **folder** icon represents a directory: ![The folder icon](./index-images/folder-icon.png)
+* The **page** icon represents a resource: ![The page icon](./index-images/file-icon.png)
 
 
 <!-- ---------- -->
@@ -268,8 +268,8 @@ document.head.appendChild(script);
 Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, click the **Run** (![The Run button](./index-images/run-snippet-icon.png)) button.
-*  When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
+* In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, click the **Run** (![The Run button](./index-images/run-snippet-icon.png)) button.
+* When DevTools has focus, press **Ctrl+P** (Windows, Linux) or **Command+P** (macOS) to open the [Command Menu](../command-menu/index.md), and then type **!**.
 
 Snippets are similar to bookmarklets.
 
@@ -282,8 +282,8 @@ See also:
 
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the **Command Menu** from anywhere within DevTools.
 
-*  From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The **Command Menu** appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
-*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, click the **More options** (**...**) button, and then select **Open File**.
+* From anywhere in DevTools, press **Ctrl+P** on Windows/Linux or **Command+P** on macOS.  The **Command Menu** appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
+* Or, next to the tabs of the **Navigator** pane in the **Sources** tool, click the **More options** (**...**) button, and then select **Open File**.
 
 To display and pick from a list of all .js files, type **.js**.
 
@@ -355,8 +355,8 @@ See also:
 For JavaScript changes to take effect, press **Ctrl+S** (Windows, Linux) or **Command+S** (macOS).
 
 If you change a file, an asterisk appears next to the file name.
-*  To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
-*  To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
+* To save changes, press **Ctrl+S** on Windows/Linux or **Command+S** on macOS.
+* To undo a change, press **Ctrl+Z** on Windows/Linux or **Command+Z** on macOS.
 
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md).
 
@@ -393,8 +393,8 @@ See also:
 When you define a Workspace, changes inside a JavaScript function body take effect.
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
-*  We added the statement `console.log('A')` outside of any function.
-*  We added the statement `console.log('B')` inside an `onClick` function.
+* We added the statement `console.log('A')` outside of any function.
+* We added the statement `console.log('B')` inside an `onClick` function.
 We then saved the changes, entered numbers into the form, and then selected the form button to send the form.
 
 After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the **Console**:
@@ -478,8 +478,8 @@ See also:
 #### Editing an HTML file
 
 There are two ways to edit HTML in DevTools:
-*  In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
-*  In the **Sources** tool, you use a text editor.
+* In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
+* In the **Sources** tool, you use a text editor.
 
 ![The HTML editor of the Sources tool](./index-images/sources-html-editor.png)
 
@@ -548,11 +548,11 @@ With the debugger, you step through the code, while watching any JavaScript expr
 ![The Debugger pane of the Sources tool  ](./index-images/sources-paused-breakpoint-highlight-debug-pane.png)
 
 The debugger supports standard debugging actions, such as:
-*  Setting breakpoints, to pause code.
-*  Stepping through code.
-*  Viewing and editing properties and variables.
-*  Watching the values of JavaScript expressions.
-*  Viewing the call stack (the sequence of function calls so far).
+* Setting breakpoints, to pause code.
+* Stepping through code.
+* Viewing and editing properties and variables.
+* Watching the values of JavaScript expressions.
+* Viewing the call stack (the sequence of function calls so far).
 
 The debugger in DevTools is designed to look, feel, and work like [the debugger in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging) and [the debugger in Visual Studio](/visualstudio/debugger/navigating-through-code-with-the-debugger).
 
@@ -627,11 +627,11 @@ See also:
 
 These three approaches are equivalent:
 
-*  Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
+* Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
 
-*  Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
+* Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
 
-*  Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
+* Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.  So you probably wouldn't need to define a Watch expression for `sum`.
 

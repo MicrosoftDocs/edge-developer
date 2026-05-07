@@ -32,27 +32,27 @@ To submit your app to the [Microsoft Store](https://apps.microsoft.com), you use
 
 To create an app reservation:
 
-1.  Before you can create an app reservation, you must have a **personal** Microsoft account (not a work Microsoft account or a school Microsoft account) that is enrolled in the Windows Developer Program.
-    1.  If you don't already have one, create a personal Microsoft account at [account.microsoft.com](https://account.microsoft.com/).
-    1.  Enroll in the Windows Developer program, by following the steps in [Open a developer account in Partner Center](/windows/apps/publish/partner-center/open-a-developer-account).
+1. Before you can create an app reservation, you must have a **personal** Microsoft account (not a work Microsoft account or a school Microsoft account) that is enrolled in the Windows Developer Program.
+   1. If you don't already have one, create a personal Microsoft account at [account.microsoft.com](https://account.microsoft.com/).
+   1. Enroll in the Windows Developer program, by following the steps in [Open a developer account in Partner Center](/windows/apps/publish/partner-center/open-a-developer-account).
 
-1.  Once your account is enrolled in the app developer program, follow these steps to create an app reservation:
-    1.  Go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home). Sign in with the account you enrolled.
-    1.  Under **Workspaces**, select **Apps and games**.  The **Apps and games | Overview** page appears.
-    1.  Select **New product** > **MSIX or PWA app**.
-    1.  When prompted, enter a name for your reservation, and then select **Reserve product name**.
+1. Once your account is enrolled in the app developer program, follow these steps to create an app reservation:
+   1. Go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home). Sign in with the account you enrolled.
+   1. Under **Workspaces**, select **Apps and games**.  The **Apps and games | Overview** page appears.
+   1. Select **New product** > **MSIX or PWA app**.
+   1. When prompted, enter a name for your reservation, and then select **Reserve product name**.
 
-    ![Create an app reservation on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-new-product.png)
+   ![Create an app reservation on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-new-product.png)
 
-1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
+1. To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    ![Copy your publisher information from Microsoft Partner Center](./microsoft-store-images/windows-partner-center-publisher-info.png)
-    <!-- lightbox justified because large detailed image -->
+   ![Copy your publisher information from Microsoft Partner Center](./microsoft-store-images/windows-partner-center-publisher-info.png)
+   <!-- lightbox justified because large detailed image -->
 
-1.  Copy and save the following values.
-    *   **Package ID**
-    *   **Publisher ID**
-    *   **Publisher display name**
+1. Copy and save the following values.
+   * **Package ID**
+   * **Publisher ID**
+   * **Publisher display name**
 
 
 <!-- ====================================================================== -->
@@ -62,33 +62,32 @@ Now that you've gathered the publishing information about your app, generate a W
 
 To generate an app package:
 
-1.  Go to [PWA Builder](https://www.pwabuilder.com).
+1. Go to [PWA Builder](https://www.pwabuilder.com).
 
-1.  Under **Ship your PWA to app stores**, enter the URL of your PWA in the text box, and then click the **Start** button.
+1. Under **Ship your PWA to app stores**, enter the URL of your PWA in the text box, and then click the **Start** button.
 
-    Your PWA is evaluated to ensure it is store-ready.
+   Your PWA is evaluated to ensure it is store-ready.
 
-1.  If the evaluation in the PWABuilder report card page indicates that your PWA is ready to be packaged, continue to the next step.  If the evaluation indicates that your PWA is not ready to be packaged, examine the **Action Items** section to see how to improve your PWA:
+1. If the evaluation in the PWABuilder report card page indicates that your PWA is ready to be packaged, continue to the next step.  If the evaluation indicates that your PWA is not ready to be packaged, examine the **Action Items** section to see how to improve your PWA:
 
-    ![Report card page](./microsoft-store-images/report-card.png)
+   ![Report card page](./microsoft-store-images/report-card.png)
 
-1.  Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button. A dialog opens, showing the message **Awesome! Your PWA is store ready!**.
+1. Once your PWA is ready to be packaged, in the upper-right corner of the PWABuilder report card page, click the **Package For Stores** button. A dialog opens, showing the message **Awesome! Your PWA is store ready!**.
 
-1.  Under **Windows**, click the **Generate Package** button. The **Windows Package Options** dialog opens.
+1. Under **Windows**, click the **Generate Package** button. The **Windows Package Options** dialog opens.
 
-1.  Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section above:
-    *  **Package ID**
-    *  **Publisher display name**
-    *  **Publisher ID**
+1. Paste the following values, which you saved in the [Create an app reservation](#create-an-app-reservation) section above:
+   * **Package ID**
+   * **Publisher display name**
+   * **Publisher ID**
 
-    ![Pasting publisher information into the Windows Package Options page](./microsoft-store-images/pwabuilder-windows-package-options.png)
+   ![Pasting publisher information into the Windows Package Options page](./microsoft-store-images/pwabuilder-windows-package-options.png)
 
-1.  Click the **Download Package** button to download your Windows package.
+1. Click the **Download Package** button to download your Windows package.
 
 Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.
 
 See also:
-
 * [What is a classic package?](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)<!-- changing "master" to "main" in that URL doesn't work, as of Aug. 11, 2023 -->
 * [Bundling MSIX packages](/windows/msix/package/bundling-overview).
 
@@ -98,15 +97,17 @@ See also:
 
 To submit your app to the [Microsoft Store](https://apps.microsoft.com):
 
-1.  Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
-1.  Select your app.
-1.  Click the **Start your submission** button.
+1. Go to [Microsoft Partner Center](https://partner.microsoft.com/dashboard/windows/overview).
 
-    ![Start a new app submission on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-start-submission.png)
+1. Select your app.
 
-1.  When you're prompted, provide information about your app, such as pricing and age rating.
+1. Click the **Start your submission** button.
 
-1.  On the **Packages** prompt, select the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.
+   ![Start a new app submission on Microsoft Partner Center](./microsoft-store-images/windows-partner-center-start-submission.png)
+
+1. When you're prompted, provide information about your app, such as pricing and age rating.
+
+1. On the **Packages** prompt, select the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.
 
 After you submit the app, the app is reviewed, typically within 24 to 48 hours.  After the app is approved, your PWA is available in the Microsoft Store.
 

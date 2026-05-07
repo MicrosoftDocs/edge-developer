@@ -61,9 +61,9 @@ See also:
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
 
 <!-- todo: update for Focus Mode -->
-*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
-*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
+* Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+* Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
+* [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:
 
@@ -89,9 +89,9 @@ Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.
 
 In Microsoft Edge version 91 or later, if you're a Progressive Web App or service worker developer, display the update lifecycle of your service workers as a timeline in the **Application** tool.  This feature helps you understand the time your service worker spends in each of the following stages:
 
-*  **Install**
-*  **Wait**
-*  **Activate**
+* **Install**
+* **Wait**
+* **Activate**
 
 ![View the Timeline in the Update Cycle for your service worker](./devtools-images/application-service-workers-update-cycle-version-73-focus.png)
 
@@ -108,7 +108,7 @@ See also:
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->
 <!--  Subtitle: As long as square icons are included in the app manifest, non-square icons no longer produce warnings  -->
 
-In [Microsoft Edge version 90](../02/devtools.md) or earlier, if the Web App Manifest of your PWA included a non-square icon, a warning was displayed in the **Errors and Warnings**  section for each non-square icon.  In Microsoft Edge version 91 or later, the **Manifest** section in the **Application** tool displays no warnings if you provide at least one square icon.  If you don't provide any square icons, the following warning message appears:
+In [Microsoft Edge version 90](../02/devtools.md) or earlier, if the Web App Manifest of your PWA included a non-square icon, a warning was displayed in the **Errors and Warnings** section for each non-square icon.  In Microsoft Edge version 91 or later, the **Manifest** section in the **Application** tool displays no warnings if you provide at least one square icon.  If you don't provide any square icons, the following warning message appears:
 
 ```console
 Most operating systems require square icons.  Please include at least one square icon in the array.
@@ -191,13 +191,13 @@ The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.
 
 Version 1.1.7 includes the following bug fixes and improvements:
 
-*  Updated the reliability of target closure.
+* Updated the reliability of target closure.
 
-*  Updated the side panel to automatically refreshes when you debug targets that are created or destroyed.
+* Updated the side panel to automatically refreshes when you debug targets that are created or destroyed.
 
-*  Added a new right-click menu that gives you faster access to the extension settings and the latest Changelog.
+* Added a new right-click menu that gives you faster access to the extension settings and the latest Changelog.
 
-*  Updated and simplified the release of extension documentation including the newest features.
+* Updated and simplified the release of extension documentation including the newest features.
 
 To manually update to version 1.1.7, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
@@ -269,11 +269,11 @@ See also:
 
 In the **Elements** tool, image previews have been enhanced to display more information, including the following details:
 
-*  Rendered size
-*  Rendered aspect ratio
-*  Intrinsic size
-*  Intrinsic aspect ratio
-*  File size
+* Rendered size
+* Rendered aspect ratio
+* Intrinsic size
+* Intrinsic aspect ratio
+* File size
 
 ![Image preview with aspect ratio information in the Element tool](./devtools-images/elements-inspect-image-src-hover-preview.png)
 

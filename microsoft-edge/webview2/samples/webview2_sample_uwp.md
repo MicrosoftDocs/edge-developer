@@ -12,9 +12,9 @@ ms.date: 07/13/2022
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
-*  Sample name: **webview2_sample_uwp**
-*  Repo directory: [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
-*  Solution file: `webview2_sample_uwp.sln`
+* Sample name: **webview2_sample_uwp**
+* Repo directory: [webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp)
+* Solution file: `webview2_sample_uwp.sln`
 
 
 <!-- ------------------------------ -->
@@ -22,8 +22,8 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 
 This sample includes the following NuGet packages:
 
-*  **Microsoft.NETCore.UniversalWindowsPlatform**
-*  **Microsoft.UI.Xaml - Prerelease** - includes Microsoft.Web.WebView2 SDK as a dependency.
+* **Microsoft.NETCore.UniversalWindowsPlatform**
+* **Microsoft.UI.Xaml - Prerelease** - includes Microsoft.Web.WebView2 SDK as a dependency.
 
 To demonstrate the latest features, this sample in the WebView2Samples repo is set up to use a prerelease version of the WinUI 2 SDK (listed as **Microsoft.UI.Xaml** in NuGet Package Manager), rather than a Stable version.  The WinUI 2 SDK includes a compatible version of the WebView2 SDK, as a dependency of **Microsoft.UI.Xaml**.
 <!-- After you update the packages, the resulting WebView2 SDK might be a stable or prerelease SDK.  Per screenshots below; appears to have switched from prerelease (per repo) to stable (after local update) -->
@@ -50,11 +50,11 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
 
 <!-- ====================================================================== -->
@@ -152,8 +152,8 @@ Update the project's NuGet packages:
 
 1. In NuGet Package Manager, click the **Installed** tab, and inspect the updated packages:
 
-   *  **Microsoft.NETCore.UniversalWindowsPlatform**
-   *  **Microsoft.UI.Xaml - Prerelease**
+   * **Microsoft.NETCore.UniversalWindowsPlatform**
+   * **Microsoft.UI.Xaml - Prerelease**
 
    ![The updated installed packages](./webview2_sample_uwp-images/webview2_sample_uwp-installed-pkgs.png)
 

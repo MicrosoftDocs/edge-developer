@@ -36,9 +36,9 @@ To try this feature:
 ![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token](./devtools-images/ado-pat-devtools.png)
 
 See also:
-*  [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
-*  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
-*  [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
+* [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
+* [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 
 
 <!-- ====================================================================== -->
@@ -153,7 +153,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
 
 See also:
-* [Using the Page tab to explore resources that construct the current webpage]() in _Sources tool overview_.
+* [Using the Page tab to explore resources that construct the current webpage](../../../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->

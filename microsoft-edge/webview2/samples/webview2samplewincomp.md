@@ -12,9 +12,9 @@ ms.date: 06/14/2022
 
 This WebView2 sample embeds a WebView2 control within a Win32 native application.
 
-*  Sample name: **WebView2SampleWinComp**
-*  Repo directory: [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp)
-*  Solution file: `WebView2SampleWinComp.sln`
+* Sample name: **WebView2SampleWinComp**
+* Repo directory: [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp)
+* Solution file: `WebView2SampleWinComp.sln`
 
 This sample is built as a Win32 Visual Studio 2019 project.  It uses C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
@@ -71,7 +71,7 @@ This sample is built as a Win32 Visual Studio 2019 project.
 
 If the solution is already open, you can change the target as follows:
 
-*  In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
+* In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
 
 
 <!-- ====================================================================== -->
@@ -84,8 +84,8 @@ To install a Windows 10 SDK:
 1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/windows/downloads/sdk-archive/).
 
 1. On one of the following rows, click the **Install SDK** link:
-   *  Windows 10 SDK version 2104 (10.0.20348.0) (or later)
-   *  Windows 10 SDK, version 1903 (10.0.18362.1)
+   * Windows 10 SDK version 2104 (10.0.20348.0) (or later)
+   * Windows 10 SDK, version 1903 (10.0.18362.1)
 
    A version-specific copy of `winsdksetup.exe` is downloaded to your `Downloads` directory.
 
@@ -107,7 +107,7 @@ Do the previous step, "Open the Solution and set the Windows SDK target".  Or, i
 <!-- ====================================================================== -->
 ## Step 5 - Install workloads if prompted
 
-*  If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+* If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
@@ -140,8 +140,8 @@ At the top of Visual Studio, set the build target, as follows:
 ## Step 7 - Update the installed packages
 
 This step is optional.  The sample has preinstalled:
-*  A version of the WebView2 prerelease SDK.
-*  A version of the Windows Implementation Libraries (WIL).
+* A version of the WebView2 prerelease SDK.
+* A version of the Windows Implementation Libraries (WIL).
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
 
