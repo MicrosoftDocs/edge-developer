@@ -169,7 +169,7 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. Navigate to the `/Demos-main/devtools-extension/` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir, a working branch, which has latest version of sample -->
 
-   A dialog opens, asking whether to open the repo in the parent folder.
+   A dialog opens, asking whether to open the repo in the parent folder.<!-- todo: does the dialog open even if when working from the downloaded zip?  doesn't this dialog only appear when working off of the cloned repo? -->
 
 1. Click the **Yes** button.
 

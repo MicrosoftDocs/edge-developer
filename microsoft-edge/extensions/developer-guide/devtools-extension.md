@@ -22,11 +22,7 @@ Like a regular extension, a DevTools extension has a manifest file.  That's desc
 
 An extension that extends DevTools additionally includes:
 * A rendered HTML file to display in the tool's panel in DevTools.
-* A non-rendered HTML file that's run when DevTools is opened, that just loads a DevTools .js file.
-
-The present article explains the code in [Sample: Custom DevTools tool](./devtools-extension-sample.md).
-
-To add a custom tool in Microsoft Edge DevTools, create a Microsoft Edge extension that adds a custom tool in Microsoft Edge DevTools, including a tool tab and panel.
+* A non-rendered HTML file that runs when DevTools is opened, and which typically handles communication between the custom DevTools tool and the inspected webpage.
 
 This DevTools extension sample communicates between DevTools and the inspected webpage, and calls DevTools APIs.
 
@@ -53,7 +49,7 @@ The DevTools extension sample has the following files:
 | `devtools.html` | A non-rendered HTML file that's run when DevTools is opened, to load the extension's JavaScript files. |
 | `devtools.js` | Main logic for the custom DevTools page. |
 | `service-worker.js` | A service worker that sets up event listeners for communications between the inspected page and DevTools. |
-| `content_script.js` | Code which the custom DevTools tool injects in the inspected webpage.  Prints a message<!-- todo: what message? --> to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
+| `content_script.js` | Code which the extension injects in the inspected webpage.  Prints a message<!-- todo: what message? --> to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
 | `icon.png` | Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu. |
 | `README.md` | Basic information for developers about how to use the sample. |
 
@@ -65,23 +61,13 @@ Details are below.
 <!-- ====================================================================== -->
 ## Interact between the webpage and DevTools
 
-Code<!-- todo: which file of sample? --> that interacts with the inspected webpage does the following:
+Multiple files are needed to enable interaction between the inspected webpage and DevTools.  These files run in different contexts:
 
-1. Listens to click events that happen on the webpage and log them into the DevTools **Console** tool.
+* `devtools.js` runs in the context of the custom tool panel, in DevTools.
 
-1. Displays the mouse-click coordinates in the Custom DevTools tool.
+* `content_script.js` is a _content script_, which means that it runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has access to the DOM and can change it.
 
-1. When the user clicks a button in the Custom DevTools tool, a greeting alert is displayed in the inspected webpage.
-
-The Custom DevTools tool has direct access to the inspected webpage, and runs when DevTools is opened.  The sample uses a content script (`content_script.js`) and a background service worker (`service-worker.js`), as well as the main JS file, `devtools.js`:<!-- todo: why are the content script `content_script.js` and the service worker script and the main js file broken out this way? -->
-
-* A _content script_ (such as `content_script.js`) runs in the context of the inspected webpage.  In the same way that other scripts are loaded by the webpage, a content script has access to the DOM and can change it.
-
-* A _background service worker_ (such as `service-worker.js`) is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
-
-
-<!-- ====================================================================== -->
-## Architecture
+* `service-worker.js` is a _background service worker_. It runs in a separate thread and has access to extension APIs.
 
 The DevTools page, inspected page, content script, and background service worker fit together in an extension:
 
@@ -90,11 +76,13 @@ The DevTools page, inspected page, content script, and background service worker
 The `content_script.js` detects where the user clicks on the inspected webpage:
 
 ```javascript
-document.addEventListener("click", (event) => {
+document.addEventListener("click", event => {
   chrome.runtime.sendMessage({
-      click: true,
-      xPosition: event.clientX + document.body.scrollLeft,
-      yPosition: event.clientY + document.body.scrollTop
+    click: true,
+    xPosition: event.clientX + document.body.scrollLeft,
+    yPosition: event.clientY + document.body.scrollTop
+  });
+});
 ```
 
 The content script relays this info to the `devtools.js` file, where the data is displayed in DevTools in the **Custom** tool and in the **Console** tool.
@@ -231,13 +219,11 @@ See also:
 <!-- ====================================================================== -->
 ## `devtools.html`
 
-A non-rendered HTML file that's run when DevTools is opened, to load the extension's JavaScript files.
+A non-rendered HTML file that's run when DevTools is opened. This file is required.
 
-This is a non-rendered HTML file that's run when DevTools is opened, to load the extension's `devtools.js` file.  Such a file is required.
+The file name `devtools.html` must match the value of the `devtools_page` member in the manifest file.
 
-The file name `devtools.html` matches the `devtools_page` member in the manifest file:
-
-A `<script>` element loads the main JavaScript file that's used directly by `panel.html`.  This `devtools.html` file isn't displayed in DevTools; only the `panel.html` file is displayed in DevTools.
+`devtools.html` contains a `<script>` element which loads `devtools.js`:
 
 `devtools.html`:
 
@@ -253,8 +239,6 @@ A `<script>` element loads the main JavaScript file that's used directly by `pan
 </html>
 ```
 
-In the manifest file (`manifest.json`), the `devtools_page` field specifies the above file (`devtools.html`).  `devtools.html`, above, contains a `<script>` element that loads `devtools.js`.
-
 See also:
 * [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html) - source file in repo.
 
@@ -264,7 +248,7 @@ See also:
 
 `devtools.js` contains the main logic for the custom DevTools page.  `devtools.js` does the following:
 
-1. Creates a new **Custom** tool tab and panel in DevTools.
+1. Creates a new **Custom** tool tab and panel in DevTools by using `chrome.devtools.panels.create()`.
 
 1. When the tool is displayed (`panel.onShown` listener), the `availableMemoryCapacity` and `totalMemoryCapacity` elements are retrieved from the DOM.
 
@@ -353,7 +337,7 @@ chrome.devtools.panels.create(
 )
 ```
 
-`devtools.js` does the following:
+To communicate with the inspected webpage, `devtools.js` does the following:
 
 1. Uses the `chrome.runtime.connect` method to create a connection to the background service worker.
 
@@ -361,7 +345,7 @@ chrome.devtools.panels.create(
 
 1. Adds event listeners to the `sayHello` button and `youClickedOn` label that's defined in the `panel.html` file.
 
-When the user clicks the `sayHello` button, the DevTools extension runs a code snippet of `alert("Hello from the DevTools Extension");` in the inspected window by invoking the `eval()` method of the inspected window `chrome.devtools.inspectedWindow`.
+When the user clicks the `sayHello` button, `devtools.js` runs code directly in the inspected window, by using the `chrome.devtools.inspectedWindow.eval()` method.
 
 When the user clicks anywhere in the inspected window, the DevTools extension will receive a message, from the background service worker, with `request.click == true` and the mouse position information.
 
@@ -375,9 +359,7 @@ See also:
 <!-- ====================================================================== -->
 ## `service-worker.js`
 
-A background service worker that sets up event listeners for communications between the inspected page and DevTools.
-
-A _background service worker_ is a script that the browser runs in a separate thread.  This script has access to the Microsoft Edge extension APIs.
+A _background service worker_ is a script that the browser runs in a separate thread.  This script has access to the extension APIs, and sets up event listeners for communications between the inspected page and DevTools.
 
 `service-worker.js`:
 
@@ -411,7 +393,7 @@ This is useful when your background service worker is collecting data or perform
 
 See also:
 * [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js) - source file in repo.
-* [Content scripts](https://developer.chrome.com/docs/extensions/mv3/content_scripts/) in the Chrome Extensions docs.
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) - Chrome Extensions docs.
 
 
 <!-- ====================================================================== -->
@@ -466,4 +448,28 @@ See also:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+<!-- toc order, except promoted 1st item: -->
+* [Sample: Custom DevTools tool](./devtools-extension-sample.md)<!-- toc bucket 5 -->
+* [Overview of DevTools](../../devtools/overview.md)<!-- top of whole toc -->
+* [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md)<!-- toc bucket 5, much higher than present article -->
+* [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)<!-- toc bucket 5, slightly higher than present article -->
+* [Get started developing an extension](../getting-started/index.md)<!-- toc bucket 2 -->
+* [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)<!-- toc bucket 3 -->
+
+Chrome Extensions docs:
+* [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
+* [About extension service workers](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers)
+* [Extensions API reference](https://developer.chrome.com/docs/extensions/reference/)
+   * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)
+      * [create()](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels#method-create)
+
+Source files in repo:
+* [content_script.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/content_script.js)
+* [devtools.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.html)
+* [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js)
+* [icon.png](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/icon.png)
+* [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/manifest.json)
+* [panel.html](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/panel.html)
+* [service-worker.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/service-worker.js)
