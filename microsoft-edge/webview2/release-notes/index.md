@@ -12,17 +12,18 @@ ms.date: 05/11/2026
 <!--
 https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
 https://aka.ms/webviewrelease
+-->
 
-./includes/templates.md
+<!-- maintenance:
+copy from ./includes/templates.md
 
 move sections older than 1 year from ./index.md to ./archive.md, & enter work item: update links in announcements
 https://github.com/MicrosoftEdge/WebView2Announcements/issues?q=is%3Aissue%20state%3Aopen%20SDK%20Release
-but keep Release 123 with Prerelease 123, favoring index.md being longer
+but keep Release 123 together with Prerelease 123, favoring index.md being longer
 
-if change h2 headings pattern, enter work item: update links in announcements
+when change an h2 heading or move h2 sections from index.md to archive.md, enter a work item: update link in announcements
+todo: update links in announcements, since the Prerelease headings & Release headings in index.md & archive.md changed; AB#62191954
 -->
-
-<!-- todo: update links in announcements -->
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
@@ -41,24 +42,28 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Breaking changes
 
 
-##### `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
+<!-- ---------- -->
+###### `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
 
-The `EnhancedSecurityModeLevel` property on `CoreWebView2Profile` controls whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances associated with a profile. This property has been renamed to `EnhancedSecurityModeState` to more clearly communicate the state of Enhanced Security Mode.
+The `EnhancedSecurityModeLevel` property and `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated and will be removed in a future release.  Replace all usage of `EnhancedSecurityModeLevel` with `EnhancedSecurityModeState` in your WebView2 application, as follows.
 
-**Before this change:** The `CoreWebView2Profile.EnhancedSecurityModeLevel` property used the `CoreWebView2EnhancedSecurityModeLevel` enum with values `Off` and `Strict` to control Enhanced Security Mode.
+The old API, the `EnhancedSecurityModeLevel` property on `CoreWebView2Profile`, controlled whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances associated with a profile.  This property has been renamed to `EnhancedSecurityModeState`, to more clearly communicate the state of Enhanced Security Mode.
+
+**Before this change:** The `CoreWebView2Profile.EnhancedSecurityModeLevel` property used the `CoreWebView2EnhancedSecurityModeLevel` enum with values `Off` and `Strict`.
 
 **After this change:** The `CoreWebView2Profile.EnhancedSecurityModeState` property uses the `CoreWebView2EnhancedSecurityModeState` enum with values `Disabled` and `Enabled`:
 
-- `Disabled` — Enhanced Security Mode is disabled (replaces `Off`).
+* `CoreWebView2EnhancedSecurityModeState.Disabled` — Enhanced Security Mode is disabled.
+   * Replaces `CoreWebView2EnhancedSecurityModeLevel.Off`.
 
-- `Enabled` — Enhanced Security Mode is enabled. Disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections (replaces `Strict`).
-
-The `EnhancedSecurityModeLevel` property and `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated. Replace all usage of `EnhancedSecurityModeLevel` with `EnhancedSecurityModeState` in your WebView2 application.
+* `CoreWebView2EnhancedSecurityModeState.Enabled` — Enhanced Security Mode is enabled.
+   * Disables JavaScript Just-in-Time (JIT) compilation.
+   * Enables additional operating system protections.
+   * Replaces `CoreWebView2EnhancedSecurityModeLevel.Strict`.
 
 See also:
 
-- [[Breaking Change] `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState` (Issue #132)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/132)
-
+* [[Breaking Change] `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState` (Issue #132)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/132)
 
 
 <!-- ------------------------------ -->
@@ -70,11 +75,13 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 <!-- ---------- -->
 ###### Enhanced security mode state
 
+The `EnhancedSecurityModeState` property on `CoreWebView2Profile` controls whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances that are associated with a profile.
 
-The EnhancedSecurityModeState property on CoreWebView2Profile controls whether Enhanced Security Mode is enabled or disabled for all WebView2 instances associated with a profile.
-When enabled, Enhanced Security Mode disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections, reducing attack surface at the cost of some JavaScript performance.
-The default value is `Disabled`. Changes apply immediately to new navigations; existing pages require a reload.
-This setting does not persist and resets when the profile is destroyed and recreated..
+When enabled, Enhanced Security Mode disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections, reducing the attack surface, at the cost of some JavaScript performance.
+
+The default value is `Disabled`.  Changes apply immediately to new navigations; existing pages require a reload.
+
+This setting does not persist, and resets when the profile is destroyed and recreated.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -86,7 +93,6 @@ This setting does not persist and resets when the profile is destroyed and recre
    * [CoreWebView2Profile.EnhancedSecurityModeState Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.enhancedsecuritymodestate?view=webview2-dotnet-1.0.4015-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
-
 
 * [CoreWebView2EnhancedSecurityModeState Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2enhancedsecuritymodestate?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true)
    * `Disabled`
@@ -121,15 +127,15 @@ The WebView2 Worker APIs allow host applications to interact with Web Workers to
 
 These APIs provide:
 * **Lifecycle Events:** Monitor creation and destruction of workers.
-* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`.
-<!-- todo: re: "PostMessage": what is the actual method name(s)?
-* CoreWebView2ServiceWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
-* CoreWebView2ServiceWorker.PostWebMessageAsString
-* CoreWebView2DedicatedWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
-* CoreWebView2DedicatedWorker.PostWebMessageAsString
-* chrome.webview.postMessage  https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1)
-* chrome.webview.postMessageWithAdditionalObjects
--->
+* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`; specifically:
+   * `CoreWebView2ServiceWorker.PostWebMessageAsJson`
+   * `CoreWebView2ServiceWorker.PostWebMessageAsString`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsJson`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsString`
+   * `CoreWebView2ServiceWorker.WebMessageReceived`
+   * `CoreWebView2DedicatedWorker.WebMessageReceived`
+   * `chrome.webview.postMessage`
+   * Not: `chrome.webview.postMessageWithAdditionalObjects`
 * **Worker Management:** Query and retrieve worker registrations and instances.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
@@ -443,15 +449,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed double character in UWP.
 * Fixed Caption controls background color setting API.  After this change, apps will also have to intercept the close call and handle themselves to close the app.
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
-* Improved error handling when Post Message is called on a service worker.
-<!-- todo: re: "Post Message": what is the actual method name(s)?
-* CoreWebView2ServiceWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
-* CoreWebView2ServiceWorker.PostWebMessageAsString
-* CoreWebView2DedicatedWorker.PostWebMessageAsJson https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.3908-prerelease#postwebmessageasjson
-* CoreWebView2DedicatedWorker.PostWebMessageAsString
-* chrome.webview.postMessage  https://learn.microsoft.com/en-us/microsoft-edge/webview2/reference/javascript/webview#webview2script-webview-postmessage-member(1)
-* chrome.webview.postMessageWithAdditionalObjects
--->
+* Improved error handling when Post Message (such as `CoreWebView2ServiceWorker.PostWebMessageAsJson` or `chrome.webview.postMessage`) is called on a service worker.
 * Reduced string allocations in `GetDefaultHostAppExeName`.
 * Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
@@ -1733,7 +1731,15 @@ The WebView2 Worker APIs allow host applications to interact with Web Workers to
 
 These APIs provide:
 * **Lifecycle Events:** Monitor creation and destruction of workers.
-* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`.
+* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`; specifically:
+   * `CoreWebView2ServiceWorker.PostWebMessageAsJson`
+   * `CoreWebView2ServiceWorker.PostWebMessageAsString`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsJson`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsString`
+   * `CoreWebView2ServiceWorker.WebMessageReceived`
+   * `CoreWebView2DedicatedWorker.WebMessageReceived`
+   * `chrome.webview.postMessage`
+   * Not: `chrome.webview.postMessageWithAdditionalObjects`
 * **Worker Management:** Query and retrieve worker registrations and instances.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
