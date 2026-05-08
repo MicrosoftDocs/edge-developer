@@ -38,6 +38,30 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### Breaking changes
+
+
+##### `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
+
+The `EnhancedSecurityModeLevel` property on `CoreWebView2Profile` controls whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances associated with a profile. This property has been renamed to `EnhancedSecurityModeState` to more clearly communicate the state of Enhanced Security Mode.
+
+**Before this change:** The `CoreWebView2Profile.EnhancedSecurityModeLevel` property used the `CoreWebView2EnhancedSecurityModeLevel` enum with values `Off` and `Strict` to control Enhanced Security Mode.
+
+**After this change:** The `CoreWebView2Profile.EnhancedSecurityModeState` property uses the `CoreWebView2EnhancedSecurityModeState` enum with values `Disabled` and `Enabled`:
+
+- `Disabled` — Enhanced Security Mode is disabled (replaces `Off`).
+
+- `Enabled` — Enhanced Security Mode is enabled. Disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections (replaces `Strict`).
+
+The `EnhancedSecurityModeLevel` property and `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated. Replace all usage of `EnhancedSecurityModeLevel` with `EnhancedSecurityModeState` in your WebView2 application.
+
+See also:
+
+- [[Breaking Change] `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState` (Issue #132)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/132)
+
+
+
+<!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
@@ -46,7 +70,6 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 <!-- ---------- -->
 ###### Enhanced security mode state
 
-<!-- todo: real lead-in -->
 
 The EnhancedSecurityModeState property on CoreWebView2Profile controls whether Enhanced Security Mode is enabled or disabled for all WebView2 instances associated with a profile.
 When enabled, Enhanced Security Mode disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections, reducing attack surface at the cost of some JavaScript performance.
