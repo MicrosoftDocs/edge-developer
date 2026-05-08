@@ -62,7 +62,7 @@ The old API, the `EnhancedSecurityModeLevel` property on `CoreWebView2Profile`, 
    * Replaces `CoreWebView2EnhancedSecurityModeLevel.Strict`.
 
 See also:
-
+* [Enhanced security mode state](#enhanced-security-mode-state), below.
 * [[Breaking Change] `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState` (Issue #132)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/132)
 
 
