@@ -21,6 +21,21 @@ By using this article along with the Temperature converter sample, which is made
 See also:
 * [Temperature converter sample](../samples/temperature-converter.md)
 
+**Detailed contents:**
+* [The architecture of a Progressive Web App](#the-architecture-of-a-progressive-web-app)
+* [Deploying a PWA on a production web server](#deploying-a-pwa-on-a-production-web-server)
+   * [Example web server hosts](#example-web-server-hosts)
+   * [About localhost (http) vs. production server (https)](#about-localhost-http-vs-production-server-https)
+* [Front-end code files (UI code)](#front-end-code-files-ui-code)
+* [Back-end code, files, endpoints, and data (server-side code)](#back-end-code-files-endpoints-and-data-server-side-code)
+* [The web app manifest (manifest.json)](#the-web-app-manifest-manifestjson)
+* [The service worker to cache the app's files on the local device (sw.js)](#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs)
+   * [Listening for the install event](#listening-for-the-install-event)
+   * [Listening for the fetch event](#listening-for-the-fetch-event)
+   * [A service worker is optional](#a-service-worker-is-optional)
+* [Next steps](#next-steps)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## The architecture of a Progressive Web App
