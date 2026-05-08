@@ -45,9 +45,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ---------- -->
 ###### `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
 
-The `EnhancedSecurityModeLevel` property and `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated and will be removed in a future release.  Replace all usage of `EnhancedSecurityModeLevel` with `EnhancedSecurityModeState` in your WebView2 application, as follows.
+The `CoreWebView2Profile.EnhancedSecurityModeLevel` property and the `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated and will be removed in a future release.  Replace all usage of these APIs in your WebView2 application, as follows.
 
-The old API, the `EnhancedSecurityModeLevel` property on `CoreWebView2Profile`, controlled whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances associated with a profile.  This property has been renamed to `EnhancedSecurityModeState`, to more clearly communicate the state of Enhanced Security Mode.
+The old property, `CoreWebView2Profile.EnhancedSecurityModeLevel`, controlled whether Enhanced Security Mode (ESM) is enabled or disabled for all WebView2 instances associated with a profile.  This property has been renamed to `EnhancedSecurityModeState`, to more clearly communicate the state of Enhanced Security Mode.
 
 **Before this change:** The `CoreWebView2Profile.EnhancedSecurityModeLevel` property used the `CoreWebView2EnhancedSecurityModeLevel` enum with values `Off` and `Strict`.
 
