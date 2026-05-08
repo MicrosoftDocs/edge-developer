@@ -47,7 +47,11 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 ###### Enhanced security mode state
 
 <!-- todo: real lead-in -->
-An enhanced security mode state, as an enum, and a property on the `Profile` class.
+
+The EnhancedSecurityModeState property on CoreWebView2Profile controls whether Enhanced Security Mode is enabled or disabled for all WebView2 instances associated with a profile.
+When enabled, Enhanced Security Mode disables JavaScript Just-in-Time (JIT) compilation and enables additional operating system protections, reducing attack surface at the cost of some JavaScript performance.
+The default value is `Disabled`. Changes apply immediately to new navigations; existing pages require a reload.
+This setting does not persist and resets when the profile is destroyed and recreated..
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -60,8 +64,6 @@ An enhanced security mode state, as an enum, and a property on the `Profile` cla
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-<!-- todo: big existing class, is there a member to link? why listed? check win32 -->
-* [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true)
 
 * [CoreWebView2EnhancedSecurityModeState Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2enhancedsecuritymodestate?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true)
    * `Disabled`
