@@ -107,7 +107,7 @@ This setting does not persist, and resets when the profile is destroyed and recr
   * [ICoreWebView2ExperimentalProfile17::get_EnhancedSecurityModeState](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile17?view=webview2-1.0.4015-prerelease&preserve-view=true#get_enhancedsecuritymodestate)
   * [ICoreWebView2ExperimentalProfile17::put_EnhancedSecurityModeState](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile17?view=webview2-1.0.4015-prerelease&preserve-view=true#put_enhancedsecuritymodestate)
 
-* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4015-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_state)
+* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_STATE enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4015-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_state)
   * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_STATE_DISABLED`
   * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_STATE_ENABLED`
 
@@ -1104,7 +1104,7 @@ To control the ESM level for all WebView2 instances that share the same profile,
    * [ICoreWebView2ExperimentalProfile9::get_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#get_enhancedsecuritymodelevel)
    * [ICoreWebView2ExperimentalProfile9::put_EnhancedSecurityModeLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile9?view=webview2-1.0.3796-prerelease&preserve-view=true#put_enhancedsecuritymodelevel)
 
-* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3796-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_level)
+* [COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3796-prerelease&preserve-view=true#corewebview2_enhanced_security_mode_level)
    * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_OFF`
    * `COREWEBVIEW2_ENHANCED_SECURITY_MODE_LEVEL_STRICT`
 
@@ -1278,7 +1278,7 @@ N/A
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_DEFAULT`
   * `COREWEBVIEW2_ALLOWED_PORT_RANGE_SCOPE_WEB_RTC`
 
-* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
+* [COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3712-prerelease&preserve-view=true#corewebview2_transport_protocol_kind)
   * `COREWEBVIEW2_TRANSPORT_PROTOCOL_KIND_UDP`
 
 ---
@@ -1510,13 +1510,10 @@ Pending.
   * [ICoreWebView2ExperimentalSensitivityLabelCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsensitivitylabelcollectionview?view=webview2-1.0.3590-prerelease&preserve-view=true#get_count)
   * [ICoreWebView2ExperimentalSensitivityLabelCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsensitivitylabelcollectionview?view=webview2-1.0.3590-prerelease&preserve-view=true#getvalueatindex)
 
-<!-- enums -->
-<!-- CoreWebView2SensitivityLabelKind -->
-* [COREWEBVIEW2_SENSITIVITY_LABEL_KIND Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_label_kind)
+* [COREWEBVIEW2_SENSITIVITY_LABEL_KIND enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_label_kind)
   * `COREWEBVIEW2_SENSITIVITY_LABEL_KIND_MIP`
 
-<!-- CoreWebView2SensitivityLabelState -->
-* [COREWEBVIEW2_SENSITIVITY_LABELS_STATE Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_labels_state)
+* [COREWEBVIEW2_SENSITIVITY_LABELS_STATE enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.3590-prerelease&preserve-view=true#corewebview2_sensitivity_labels_state)
   * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_NOT_APPLICABLE`
   * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_PENDING`
   * `COREWEBVIEW2_SENSITIVITY_LABELS_STATE_AVAILABLE`
