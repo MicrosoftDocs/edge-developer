@@ -254,7 +254,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
    <!-- / end of temp content -->
 
-   You have now filled in the **Policies** page for the extension at Partner Center.
+   You have now filled in the **Properties** page for the extension at Partner Center.
 
 1. Click ![Save & Continue icon](./publish-extension-images/save-icon.png) **Save & Continue** in the upper right.
 
