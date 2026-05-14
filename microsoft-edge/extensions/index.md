@@ -183,6 +183,14 @@ The **Featured** badge indicates that:
 
 The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status. 
 
+The Featured badge on the Microsoft Edge Add-ons Store is intended to help users discover extensions that meet a high bar for quality, reliability, security, privacy, and user experience at the time of evaluation.
+
+Badging decisions are based on a combination of objective signals and automated checks, and are refreshed periodically as part of Microsoft's ongoing efforts to maintain a healthy and trustworthy extensions ecosystem.
+
+While we continuously evolve our detection systems, quality signals, and review mechanisms to respond to emerging threats and bad actor behavior, no automated or manual review system can guarantee that issues will never arise post-publication.  As such, the presence of a Featured badge does not represent a permanent designation or an absolute guarantee of future behavior.
+
+Microsoft regularly re-evaluates badged extensions and may update, revoke, or refine badge assignments as new signals, learnings, or enforcement actions emerge.  Our badging criteria and validation measures will continue to evolve over time to reflect changes in the threat landscape, ecosystem learnings, and platform standards.
+
 
 <!-- ------------------------------ -->
 #### Reasons why the Featured badge could be revoked
