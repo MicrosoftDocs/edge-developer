@@ -410,7 +410,7 @@ To view the `@scope` rule:
 
 1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
 
-1. In a new window or tab, go to a page that uses the `@scope` at-rule, such as [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-scope/):
+1. In a new window or tab, go to a page that uses the `@scope` at-rule, such as the [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-scope/) demo:
 
    ![Result of HTML & CSS for @scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
 
@@ -469,63 +469,96 @@ To view the `@scope` rule:
 ###### View `@font-palette-values` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#font-palette-values -->
 
-<!-- todo: format, link, pngs -->
+The [@font-palette-values CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/@font-palette-values) lets you customize (override) the default values of the `font-palette` property.  In the **Elements** tool, the **Styles** tab shows this at-rule in a dedicated section.
 
-The [@font-palette-values CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/@font-palette-values) lets you customize the default values of the `font-palette` property.  In the **Elements** tool, the **Styles** tab shows this at-rule in a dedicated section.
+To view the `@font-palette-values` CSS rule:
 
-View the `@font-palette-values` section in the next preview:  todo: Demos repo: create sample/dir like previous section
+1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
 
-![Inspect the second line of text in the preview] <!-- todo: embedded frame -->
+1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/)<!-- todo: uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700 --> demo:
 
-In the **Elements** tool, in the **Styles** tab, find the `@font-palette-values` rule section:
+   ![Result of HTML & CSS for @font-palette-values at-rule](./reference-images/at-font-palette-values-at-rule-rendered.png)
 
-![The @font-palette-values rule] todo at-font-palette-values.png
+1. Right-click "new colors", and then select **Inspect**.
 
-In this example, the `--New` font palette values override the default ones of the colored font.
+   DevTools opens, with the **Elements** tool selected.
 
-To edit your custom values, double-click them.
+1. In the **Styles** tab, find the `@font-palette-values` CSS rule:
+
+   ![The @font-palette-values rule in the Styles tab](./reference-images/font-palette-values-rule-in-styles-tab.png)
+
+   In this example, the `--New` font palette values override the default values of the colored font.
+
+   To edit a custom value, double-click it, as follows:
+
+1. In the `@font-palette-values` CSS rule, in the `override-colors` property, double-click `0 gold, 1 red`, and enter `0 blue, 1 red`.
+
+   In the inspected webpage, "new colors" is rendered as blue and red.
 
 
 <!-- ---------- -->
 ###### View `@position-try` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+<!-- upstream: the imported codepen code changed from using position-try-options to instead using position-try-fallbacks, but upstream article still says & shows position-try-options -->
 
-<!-- todo: format, link, pngs -->
+<!-- todo: when open these 5 at-rules samples, Console shows error: GET http://localhost:8080/favicon.ico 404 (Not Found), have to Clear Console to make screenshots -->
 
-The `@position-try` CSS rule along with the `position-try-options` property lets you define alternative anchor positions for elements.  To learn more, see [Introducing the CSS anchor positioning API] https://developer.chrome.com/blog/anchor-positioning-api .   todolink: non-Chrome link
-
-See also:
-* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
+The `@position-try` CSS rule along with the `position-try-fallbacks` property lets you define alternative anchor positions for elements.
 
 In the **Elements** tool, the **Styles** tab resolves and links the following:
 
-* `position-try-options` property values to a dedicated `@position-try --name` section.
+* The `position-try-fallbacks` property values (or `position-try-options` property values) link to a dedicated `@position-try --name` CSS rule section.
 
-* `position-anchor` property values and `anchor()` arguments to the corresponding elements with `popovertarget` attributes.
+* The `position-anchor` property values and `anchor()` arguments link to the corresponding elements that have `popovertarget` attributes.
 
-Inspect the `position-try-options` values and `@position-try` sections in the next preview (demo):
+For example, inspect the `position-try-fallbacks` values and `@position-try` CSS rules, as follows:
 
-todo: Demos repo: create sample/dir
+1. In a new window or tab, go to a page that uses the  `position-try-fallbacks` values and `@position-try` at-rule, such as the [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/)<!-- todo: uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700 --> demo:
 
-todo: image: Demo using anchor with popover
+1. In the rendered webpage, open the submenu; that is, click **YOUR ACCOUNT**, and then click **STOREFRONT**.
 
-1. In the preview (demo), open the submenu; that is, click **YOUR ACCOUNT**, and then click **STOREFRONT**.
+   The submenu is displayed, showing a list of commands: **LISTINGS**, **SPECIAL OFFERS**, **SIGN OUT**.
 
-1. Right-click the element that has `id="submenu"`, and then select **Inspect**.
+1. In the submenu, right-click above **LISTINGS**, and then select **Inspect**.
 
-   DevTools opens.
+   DevTools opens, with the **Elements** tool selected.  The submenu element `<ul id="submenu">` is selected in the DOM tree:
 
-1. In the **Styles** tab, find the `position-try-options` property, and click its `--bottom` value.
+   ![Result of HTML & CSS for @position-try at-rule](./reference-images/at-position-try-at-rule-rendered.png)
 
-   The **Styles** tab takes you to the corresponding `@position-try` section.
+1. In the DOM tree, select the `<ul id="submenu">` element.
 
-1. Click the `position-anchor` value link or the same `anchor()` arguments.
+1. In the **Styles** tab, in the `#submenu` CSS rule, find the `position-try-fallbacks` property, and click its `--bottom` value.
 
-   The **Elements** tool selects the element with the corresponding `popovertarget` attribute, and the **Styles** tab shows the element's CSS:
+   <!-- todo: devtools bug? hovering any --submenu value skips back & forth showing layout or not -->
 
-   ![The position-try-options property, the @position-try section, and the element with the popover target attribute] todo at-position-try.png
+   The **Styles** tab scrolls down to the corresponding `@position-try` section:
+
+   ![The @position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
+
+1. In the **Styles** tab, in the `#submenu` CSS rule, click the `--submenu` link in any of the following properties:
+
+   ```css
+   position-anchor: --submenu;
+   left: anchor(--submenu right);
+   top: anchor(--submenu top);
+   ```
+
+1. Similarly, in the `@position-try` section (lower down), click the `--submenu` link in any of the following properties:
+
+   ```css
+   left: anchor(--submenu right);
+   top: anchor(--submenu top);
+   ```
+
+   The DOM tree selects the element (`<button popovertarget="submenu">`) that has the corresponding `popovertarget` attribute (`popovertarget="submenu"`), and the **Styles** tab shows the element's CSS:
+
+   ![The position-try-fallbacks property, the @position-try section, and the element with the popover target attribute](./reference-images/at-position-try-popovertarget.png)
 
 To edit a value, double-click the value.
+
+See also:
+* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
+* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api) todolink: non-Chrome link
 
 
 <!-- ------------------------------ -->
