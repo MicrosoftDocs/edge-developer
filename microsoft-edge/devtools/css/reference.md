@@ -543,16 +543,9 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
    top: anchor(--submenu top);
    ```
 
-1. Similarly, in the `@position-try` section (lower down), click the `--submenu` link in any of the following properties:
+   The DOM tree selects the element (`<button popovertarget="submenu">`) that has the corresponding `popovertarget` attribute value (`popovertarget="submenu"`), and the **Styles** tab shows the element's CSS:
 
-   ```css
-   left: anchor(--submenu right);
-   top: anchor(--submenu top);
-   ```
-
-   The DOM tree selects the element (`<button popovertarget="submenu">`) that has the corresponding `popovertarget` attribute (`popovertarget="submenu"`), and the **Styles** tab shows the element's CSS:
-
-   ![The position-try-fallbacks property, the @position-try section, and the element with the popover target attribute](./reference-images/at-position-try-popovertarget.png)
+   ![The button element selected in the DOM tree, and its CSS](./reference-images/at-position-try-popovertarget.png)
 
 To edit a value, double-click the value.
 
