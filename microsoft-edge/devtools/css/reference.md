@@ -24,11 +24,9 @@ ms.date: 04/10/2026
 # CSS features reference
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
 
-<!-- todo:
-clean up incoming links
-   change from https://developer.chrome.com/docs/ links to local links
-incoming CodePen demos or other demos' screenshots: create Demos repo sample/dir
--->
+_todolink: clean up incoming links; change from https://developer.chrome.com/docs/ links to local links_
+
+_todopng: the remaining incoming CodePen demos or other demos' screenshots: create Demos repo sample/dir_
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
@@ -274,7 +272,7 @@ In the following figure, after you click
 The **Styles** tab recognizes many kinds of CSS issues and highlights them in different ways.
 
 See:
-* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles)<!-- todo: local link not found --> in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.
+* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link not found_
 
 
 <!-- ------------------------------ -->
@@ -302,7 +300,7 @@ For example:
 1. To display all properties, select the **Show all** checkbox.
 
 See:
-* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed)<!-- todo: local link not found --> in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.
+* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link not found_
 
 
 <!-- ------------------------------ -->
@@ -347,7 +345,8 @@ Hover over the name of such a property in the **Styles** tab, to see a tooltip t
 
 For example:
 
-<!-- todo: maybe replace this code that's from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*#basic_example -->
+_todo: maybe replace this code that's from `https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*#basic_example`_
+
 1. Go to a page that uses the `@property` at-rule, such as [View `@property` at-rules](https://microsoftedge.github.io/Demos/at-rules-property/), in a new window or tab.
 
 1. Right-click the **Item three** paragraph, and then click **Inspect**.
@@ -386,7 +385,9 @@ For example, to view the `@supports` rule:
 
 1. In a new window or tab, go to a page that uses the `@supports` at-rule, such as [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/):
 
-   ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)<!-- todo: png should show https://microsoftedge.github.io/Demos/at-rules-supports/ not localhost:8080 -->
+   ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)
+
+   _todopng: address bar in png should show https://microsoftedge.github.io/Demos/at-rules-supports/ not localhost:8080_
 
 * If your browser supports the `lab()` function, the element is green.
 
@@ -475,9 +476,13 @@ To view the `@font-palette-values` CSS rule:
 
 1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
 
-1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/)<!-- todo: uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700 --> demo:
+1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/) demo:
+
+   _todo: the demo uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700_
 
    ![Result of HTML & CSS for @font-palette-values at-rule](./reference-images/at-font-palette-values-at-rule-rendered.png)
+
+   _todopng: create the above png_
 
 1. Right-click "new colors", and then select **Inspect**.
 
@@ -486,6 +491,8 @@ To view the `@font-palette-values` CSS rule:
 1. In the **Styles** tab, find the `@font-palette-values` CSS rule:
 
    ![The @font-palette-values rule in the Styles tab](./reference-images/font-palette-values-rule-in-styles-tab.png)
+
+   _todopng: fix tab title & localhost in Address bar_
 
    In this example, the `--New` font palette values override the default values of the colored font.
 
@@ -501,7 +508,7 @@ To view the `@font-palette-values` CSS rule:
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
 <!-- upstream: the imported codepen code changed from using position-try-options to instead using position-try-fallbacks, but upstream article still says & shows position-try-options -->
 
-<!-- todo: when open these 5 at-rules samples, Console shows error: GET http://localhost:8080/favicon.ico 404 (Not Found), have to Clear Console to make screenshots -->
+_todo: when open these 5 at-rules samples, Console shows error: GET http://localhost:8080/favicon.ico 404 (Not Found), have to Clear Console to make screenshots_
 
 The `@position-try` CSS rule along with the `position-try-fallbacks` property lets you define alternative anchor positions for elements.
 
@@ -513,7 +520,9 @@ In the **Elements** tool, the **Styles** tab resolves and links the following:
 
 For example, inspect the `position-try-fallbacks` values and `@position-try` CSS rules, as follows:
 
-1. In a new window or tab, go to a page that uses the  `position-try-fallbacks` values and `@position-try` at-rule, such as the [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/)<!-- todo: uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700 --> demo:
+1. In a new window or tab, go to a page that uses the  `position-try-fallbacks` values and `@position-try` at-rule, such as the [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/) demo:
+
+   _todo: uses a google font, `https://fonts.googleapis.com/css2?family=Foldit:wght@700`_ 
 
 1. In the rendered webpage, open the submenu; that is, click **YOUR ACCOUNT**, and then click **STOREFRONT**.
 
@@ -525,11 +534,13 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 
    ![Result of HTML & CSS for @position-try at-rule](./reference-images/at-position-try-at-rule-rendered.png)
 
+   _todopng: fix tab title and Addr bar_
+
 1. In the DOM tree, select the `<ul id="submenu">` element.
 
 1. In the **Styles** tab, in the `#submenu` CSS rule, find the `position-try-fallbacks` property, and click its `--bottom` value.
 
-   <!-- todo: devtools bug? hovering any --submenu value skips back & forth showing layout or not -->
+   _todo: devtools bug? hovering any --submenu value skips back & forth showing layout or not_
 
    The **Styles** tab scrolls down to the corresponding `@position-try` section:
 
@@ -551,7 +562,7 @@ To edit a value, double-click the value.
 
 See also:
 * [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
-* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api) todolink: non-Chrome link
+* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)  _todolink: non-Chrome link_
 
 
 <!-- ------------------------------ -->
@@ -588,38 +599,47 @@ In the following figure, the **Computed** pane is filtered to only show declarat
 #### Emulate a focused page
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#focus -->
 
-<!-- todo: format, link, pngs -->
-
-If you switch focus from the webpage to DevTools, some overlay elements automatically hide, if they are triggered by focus.  For example:
+If you switch focus from the inspected webpage to DevTools, some overlay elements automatically hide, if they are triggered by focus.  For example:
 * Dropdown lists.
 * Menus.
 * Date pickers.
 
-To debug such an element as if the page has focus, select the **Emulate a focused page** checkbox.
+To debug such an element as if the page has focus, do either of the following:
+* In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then select the **Emulate a focused page** checkbox.
+* In the **Rendering** tool, select the **Emulate a focused page** checkbox.
 
 **Caution:** When this option is on, the `document.visibilityState` is set to `visible` and the `visibilitychange` event doesn't fire.  See [Page Visibility API](https://developer.mozilla.org/docs/Web/API/Page_Visibility_API) at MDN.
 
-Try emulating a focused page on this [demo page (todo)] https://jec.fish/demo/disappearing-pop-up:
+To try emulating a focused page:
 
-1. Focus the input element.
+1. Go to [disappearing-pop-up](https://jec.fish/demo/disappearing-pop-up) (at jec.fish) in a new window or tab.
 
-   Another element appears under it.
+   _todo: sample in Demos repo?  PR 135: new dir started: \Demos\focus\index.html_
 
-1. Right-click the webpage, and then select **Inspect**.
+1. Click the input text box, or press **Tab** to focus it.
 
-   DevTools opens.
+   Another element appears under the input text box, saying "disappearing popup - try to inspect & debug me in DevTools."
 
-   The DevTools window is now in focus, instead of the inspected webpage, so the element disappears again.
+1. Right-click the input text box, and then select **Inspect**.
 
-1. In the **Elements** tool, in the **Styles** tab, click `:hov`, select the **Emulate a focused page** checkbox, and then make sure the input element is selected (per  [Select an element](#select-an-element), above).
+   DevTools opens, and the "disappearing popup" element disappears.  The DevTools window is now in focus, instead of the inspected webpage, so the "disappearing popup" element disappears.
 
-   You can now inspect the element under it.<!-- todo: specify "it" -->
+1. In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then select the **Emulate a focused page** checkbox.
 
-   ![Before and after turning on the 'Emulate a focused page' option] todo emulate-focused-page.png
+1. Make sure the input text box element `<input id="query" type="text">` is still selected.
 
-You can also find the same option<!-- todo: which option? --> on the Rendering tool.  See [Emulate a focused page](https://developer.chrome.com/docs/devtools/rendering/apply-effects#emulate_a_focused_page)<!-- todo: local link --> in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in the Chrome docs.
+   Under the input text box, the element reappears, saying "disappearing popup - try to inspect & debug me in DevTools."
 
-To discover more ways to freeze an element, see [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  todo: local link
+   You can now inspect and debug (in the **Sources** tool) the "disappearing popup" element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
+
+   ![The Emulate a focused page checkbox selected](./reference-images/emulate-focused-page.png)
+
+An **Emulate a focused page** checkbox also appears in the **Rendering** tool.
+
+See also:
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
+* [Emulate a focused page](https://developer.chrome.com/docs/devtools/rendering/apply-effects#emulate_a_focused_page) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in the Chrome docs.  _todolink: local link_
+* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  _todolink: local link_
 
 
 <!-- ------------------------------ -->
@@ -671,7 +691,7 @@ For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md
 #### View inherited highlight pseudo-elements
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements -->
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
 [Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements) let you style specific parts of elements.  Highlight pseudo-elements are document portions with a "selected" status and they are styled as "highlighted" to indicate this status to the user.
 
@@ -681,33 +701,45 @@ For example, such pseudo-elements are:
 * `::grammar-error`
 * `::highlight`
 
-When multiple styles conflict, cascade determines the winning style.  See [3.5. Cascading and Per-Element Highlight Styles](https://drafts.csswg.org/css-pseudo-4/#highlight-cascade) in _CSS Pseudo-Elements Module Level 4_ at W3C.
+When multiple styles conflict, cascade determines the winning style; see [3.5. Cascading and Per-Element Highlight Styles](https://drafts.csswg.org/css-pseudo-4/#highlight-cascade) in _CSS Pseudo-Elements Module Level 4_ at W3C.
 
 To enable this feature, run Microsoft Edge with the `--enable-blink-features=HighlightInheritance` flag.
 
-To better understand the inheritance and priority of the rules, you can view the inherited highlight pseudo-elements:
+To better understand the inheritance and priority of the rules, view the inherited highlight pseudo-element in the following demo.
 
-todo: create Demos repo sample like in https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements
+To view the inherited highlight pseudo-elements:
 
-1. In the webpage, right-click the text "I inherited the style of my parent's highlight pseudo-element. Select me!"
+1. Run Microsoft Edge with the `--enable-blink-features=HighlightInheritance` flag.
 
-1. In the webpage, select a portion of the text above.
+   _todo: delete the above step?  not needed, to do steps for inline code in upstream article_
 
-1. In the **Elements** tool, in the **Styles** tab, scroll down to find the `Inherited from ::selection pseudo of...` section:
+1. Go to [Highlight pseudo-elements](https://microsoftedge.github.io/Demos/highlight-pseudo-elements/) in a new window or tab.
 
-   ![View the Inherited section of the Styles tab] todo view-inherited-section.png
+1. Select a portion of the text "I inherited the style of my parent's highlight pseudo-element. Select me!"
+
+   The selected text changes to red text on yellow background.
+
+1. Right-click the text "I inherited the style of my parent's highlight pseudo-element. Select me!", and then select **Inspect**.
+
+   DevTools opens.
+
+1. In the **Elements** tool, in the **Styles** tab, scroll down to find the section **Inherited from ::selection pseudo of div.text-parent**, near the bottom:
+
+   ![View the Inherited section of the Styles tab]
+
+   _todopng: create view-inherited-section.png_
 
 
 <!-- ------------------------------ -->
 #### View cascade layers
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#cascade-layers -->
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
 Cascade layers enable more explicit control of your CSS files to prevent style-specificity conflicts.  This is useful for large codebases, design systems, and when managing third-party styles in applications.
 
 See also:
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  todo: local link?
+* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
 
 To view cascade layers:
 
@@ -717,11 +749,13 @@ To view cascade layers:
 
 1. In the **Elements** tool, select the **Styles** tab.
 
-   todo: create demo containing: My styles are layered!
+   _todo: create demo containing: My styles are layered!_
 
 1. In the **Styles** tab, view the three cascade layers and their styles: `page`, `component` and `base`:
 
-   ![Cascade layers] todo cascade-layers.png
+   ![Cascade layers]
+
+   _todopng: create cascade-layers.png_
 
 1. To view the layer order, click the layer name or the ![the "Toggle CSS layers view" icon todo] **Toggle CSS layers view** button.
 
@@ -795,7 +829,7 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 ## Copy CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css -->
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
 From a single dropdown menu in the **Styles** tab, you can copy separate CSS rules, declarations, properties, or values; see [CSS syntax basics](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/What_is_CSS#css_syntax_basics) in _What is CSS?_ at MDN.
 
@@ -807,7 +841,9 @@ To copy CSS:
 
 1. In the **Styles** tab, right-click a CSS property:
 
-   ![Copy CSS dropdown menu] todo copy-css-dropdown-menu.png
+   ![Copy CSS dropdown menu]
+
+   _todopng: create copy-css-dropdown-menu.png_
 
 1. Select one of the following options from the dropdown menu:
 
@@ -927,13 +963,15 @@ To decrement, press **DownArrow** instead of **UpArrow**.
 #### Change length values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
 
-<!-- todo: is "length" correct?  seems any size measurement -->
+_todo: is "length" correct?  seems any size measurement_
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
-<!-- todo: delete this h4 section?  you can accomp the task by double-click get "50rem" and enter new value / unit -->
+_todo: delete this h4 section?  you can accomp the task by double-click get "50rem" and enter new value / unit_
 
-Deprecated: This feature is deprecated in Microsoft Edge 123.  To temporarily turn this feature on, select **Customize and control DevTools** > **Settings** > **Experiments**, and then clear the checkbox **Deprecate CSS `<length>` authoring tool in the Styles tab**<!-- todo: no such experiment anymore -->.  You can leave feedback in [crbug/1522657] https://issues.chromium.org/issues/41495618.
+Deprecated: This feature is deprecated in Microsoft Edge 123.  To temporarily turn this feature on, select **Customize and control DevTools** > **Settings** > **Experiments**, and then clear the checkbox **Deprecate CSS `<length>` authoring tool in the Styles tab**.  You can leave feedback in [crbug/1522657] https://issues.chromium.org/issues/41495618.
+
+_todo: no such experiment checkbox anymore, above: **Deprecate CSS `<length>` authoring tool in the Styles tab**_
 
 You can use your pointer to change any property that has a length value, such as `width`, `height`, `padding`, `margin`, or `border`.
 
@@ -949,7 +987,9 @@ To change the length unit:
 
 1. Click the unit name to select a unit from the dropdown list:
 
-   ![Units in dropdown list] todo
+   ![Units in dropdown list]
+
+   _todopng: create png_
 
 To change the length value:
 
@@ -957,8 +997,9 @@ To change the length value:
 
 1. Drag horizontally to increase or decrease the value:
 
-   ![Dragging horizontally] todo
+   ![Dragging horizontally]
 
+   _todopng: create png_
 
 To adjust the value by 10:
 
@@ -1021,7 +1062,7 @@ This dropdown list is a shortcut for **Emulate CSS media feature `prefers-color-
 See also:
 * [Emulating dark or light mode using the Rendering tool](../accessibility/preferred-color-scheme-simulation.md#emulating-dark-or-light-mode-using-the-rendering-tool) in _Emulate dark or light schemes in the rendered page_.
 * [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
-* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme) in Chrome blog.<!-- todo: link ok? -->
+* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme) in Chrome blog.  _todolink: link ok?_
 * [prefers-color-scheme: Hello darkness, my old friend](https://web.dev/articles/prefers-color-scheme) at web.dev.
 
 
@@ -1068,7 +1109,9 @@ To instead add the rule in an existing stylesheet:
 
 <!-- ---------- -->
 ###### Add a style rule to a specific location
-<!-- not upstream - todo: merge w/ above section? -->
+<!-- not upstream -->
+
+_todo: merge this section (not upstream) w/ above section?_
 
 By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
@@ -1103,8 +1146,8 @@ To toggle a single declaration on or off:
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-transition -->
 
 See:
-* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  todo: non-Chrome link?
-* [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.  todo: non-Chrome link?
+* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  _todolink: is there a non-Chrome link instead?_
+* [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.  _todolink: change to a non-Chrome link?_
 
 
 <!-- ------------------------------ -->
@@ -1118,7 +1161,7 @@ See:
 <!-- ------------------------------ -->
 #### Change colors with the Color Picker
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#color-picker -->
-<!-- todo: replace content by a link to https://developer.chrome.com/docs/devtools/css/color -->
+<!-- todo: replace content by equiv of a link to https://developer.chrome.com/docs/devtools/css/color -->
 
 The **Color Picker** provides a user interface for changing `color` and `background-color` declarations.
 
@@ -1221,10 +1264,6 @@ Use the **Shadow Editor** to change the value of the `box-shadow` or `text-shado
    | **Y offset** | Specify a value in the text box, or drag the blue dot. |
    | **Blur** | Specify a value in the text box, or drag the slider. |
    | **Spread** | Specify a value in the text box, or drag the slider.  Only for `box-shadow`. |
-   <!-- todo: explain the meaning of each property, not only how to change the value.  change column heading to:
-   | Property | Description |
-   | Property | Description and how to change |
-   -->
 
    The changes are applied to the element in the rendered webpage in real time:
 
@@ -1249,7 +1288,9 @@ To open the **Easing Editor**:
 
    The red and green boxes on this demo page are two different CSS animations.  Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
 
-1. In the **Styles** tab, in the `.bad .spinner`<!-- todo: why bad, do we want Good? --> CSS rule, in the `animation` declaration, to the left of `ease-in-out`, click the **Open cubic bezier editor** (![Cubic bezier editor icon](./reference-images/easing-editor-icon.png)) button.
+1. In the **Styles** tab, in the `.bad .spinner` CSS rule, in the `animation` declaration, to the left of `ease-in-out`, click the **Open cubic bezier editor** (![Cubic bezier editor icon](./reference-images/easing-editor-icon.png)) button.
+
+   _todo: why use the bad spinner, do we want the good spinner instead?_
 
    The **Easing Editor** opens:
 
@@ -1260,7 +1301,7 @@ To open the **Easing Editor**:
 ###### Use presets to adjust timings
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#presets -->
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
 To adjust timings by a simple mouse-click, use the presets in the **Easing Editor**:
 
@@ -1283,30 +1324,32 @@ To adjust timings by a simple mouse-click, use the presets in the **Easing Edito
 
    * Cubic Bezier presets:
 
-| Timing keyword | Preset<!-- todo: Presets? | Cubic Bezier |
-|---|---|---|
-| ease-in-out | In Out, Sine | `cubic-bezier(0.45, 0.05, 0.55, 0.95)` |
-| ease-in-out | In Out, Quadratic | `cubic-bezier(0.46, 0.03, 0.52, 0.96)` |
-| ease-in-out | In Out, Cubic | `cubic-bezier(0.65, 0.05, 0.36, 1)` |
-| ease-in-out | Fast Out, Slow In | `cubic-bezier(0.4, 0, 0.2, 1)` |
-| ease-in-out | In Out, Back | `cubic-bezier(0.68, -0.55, 0.27, 1.55)` |
+   _todo: change col heading from Preset to Presets? (3x)_
 
-| Timing keyword | Preset<!-- todo: Presets? | Cubic Bezier |
-|---|---|---|
-| ease-in | In, Sine | `cubic-bezier(0.47, 0, 0.75, 0.72)` |
-| ease-in | In, Quadratic | `cubic-bezier(0.55, 0.09, 0.68, 0.53)` |
-| ease-in | In, Cubic | `cubic-bezier(0.55, 0.06, 0.68, 0.19)` |
-| ease-in | In, Back | `cubic-bezier(0.6, -0.28, 0.74, 0.05)` |
-| ease-in | Fast Out, Linear In | `cubic-bezier(0.4, 0, 1, 1)` |
+   | Timing keyword | Preset | Cubic Bezier |
+   |---|---|---|
+   | ease-in-out | In Out, Sine | `cubic-bezier(0.45, 0.05, 0.55, 0.95)` |
+   | ease-in-out | In Out, Quadratic | `cubic-bezier(0.46, 0.03, 0.52, 0.96)` |
+   | ease-in-out | In Out, Cubic | `cubic-bezier(0.65, 0.05, 0.36, 1)` |
+   | ease-in-out | Fast Out, Slow In | `cubic-bezier(0.4, 0, 0.2, 1)` |
+   | ease-in-out | In Out, Back | `cubic-bezier(0.68, -0.55, 0.27, 1.55)` |
 
-| Timing keyword | Preset<!-- todo: Presets? | Cubic Bezier |
-|---|---|---|
-| ease-out | Out, Sine | `cubic-bezier(0.39, 0.58, 0.57, 1)` |
-| ease-out | Out, Quadratic | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
-| ease-out | Out, Cubic | `cubic-bezier(0.22, 0.61, 0.36, 1)` |
-| ease-out | Linear Out, Slow In | `cubic-bezier(0, 0, 0.2, 1)` |
-| ease-out | Out, Back | `cubic-bezier(0.18, 0.89, 0.32, 1.28)` |
+   | Timing keyword | Preset | Cubic Bezier |
+   |---|---|---|
+   | ease-in | In, Sine | `cubic-bezier(0.47, 0, 0.75, 0.72)` |
+   | ease-in | In, Quadratic | `cubic-bezier(0.55, 0.09, 0.68, 0.53)` |
+   | ease-in | In, Cubic | `cubic-bezier(0.55, 0.06, 0.68, 0.19)` |
+   | ease-in | In, Back | `cubic-bezier(0.6, -0.28, 0.74, 0.05)` |
+   | ease-in | Fast Out, Linear In | `cubic-bezier(0.4, 0, 1, 1)` |
 
+   | Timing keyword | Preset | Cubic Bezier |
+   |---|---|---|
+   | ease-out | Out, Sine | `cubic-bezier(0.39, 0.58, 0.57, 1)` |
+   | ease-out | Out, Quadratic | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` |
+   | ease-out | Out, Cubic | `cubic-bezier(0.22, 0.61, 0.36, 1)` |
+   | ease-out | Linear Out, Slow In | `cubic-bezier(0, 0, 0.2, 1)` |
+   | ease-out | Out, Back | `cubic-bezier(0.18, 0.89, 0.32, 1.28)` |
+   
 See also:
 * [Bézier curve](https://developer.mozilla.org/docs/Glossary/Bezier_curve) at MDN.
 
@@ -1332,28 +1375,35 @@ Any change triggers a ball animation in the **Preview** at the top of the **Easi
 ## Copy CSS changes
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
 
-<!-- todo: format, link, pngs -->
+_todo: format, link, pngs_
 
 The **Styles** tab in the **Elements** tool highlights your CSS changes in green.
 
 To copy a single CSS declaration change:
 
-* Hover over the highlighted declaration and click the [todo: Copy icon] **Copy** button:
+* Hover over the highlighted declaration and click the **Copy** button:
 
-  ![Copy a CSS declaration change]() todo copy-css-declaration-change.png
+   _todopng: create/insert Copy icon above mid-sentence_
+
+   ![Copy a CSS declaration change]()
+
+   _todopng: create copy-css-declaration-change.png_
 
 To copy all CSS changes across declarations at once:
 
 * Right-click on any declaration and then select **Copy all CSS changes**:
 
-   ![Copy all CSS changes]() todo copy-css-changes.png
+   ![Copy all CSS changes]()
+
+   _todopng: create copy-css-changes.png_
 
 You can additionally track changes that you make, by using the **Changes** tool.  See [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes) in Chrome docs.
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+
+_todo: all links in article_
 
 Demos repo:
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
