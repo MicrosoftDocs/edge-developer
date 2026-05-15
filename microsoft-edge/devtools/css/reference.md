@@ -25,8 +25,8 @@ ms.date: 04/10/2026
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
 
 <!-- todo:
-change from https://developer.chrome.com/docs/ links to local links
 clean up incoming links
+   change from https://developer.chrome.com/docs/ links to local links
 incoming CodePen demos or other demos' screenshots: create Demos repo sample/dir
 -->
 
@@ -123,27 +123,33 @@ Use the **Elements** > **Styles** and **Computed** tabs to view CSS rules and di
 #### Navigate with links
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#links -->
 
-<!-- todo: format, link, pngs -->
-
 The **Styles** tab displays links in various places to various other places, including but not limited to:
 
-* Next to CSS rules, to style sheets and CSS sources.  Such links open the **Sources** tool.  If the style sheet is minified, see [Make a minified file readable]. todo:  https://developer.chrome.com/docs/devtools/javascript/reference#format
+* Next to CSS rules, to style sheets and CSS sources.  Such links open the **Sources** tool.  If the style sheet is minified, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
 
 * In the **Inherited from** sections, to parent elements.
 
-* In `var()` calls, to custom property declarations.
+* In `var()` calls, to custom property declarations.  See [Using CSS custom properties (variables)](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) at MDN.
 
-* In animation shorthand properties, to @keyframes.
+* In `animation` shorthand properties, to `@keyframes`.
 
-* Learn more links in documentation tooltips.
-
-* And more.
-
-Here are some of them highlighted:
-
-![Various links highlighted] todo  various-links-highlighted.png
+* **Learn more** links in documentation tooltips.
 
 Links may be styled differently.  If you're not sure if something is a link, try clicking it to find out.
+
+For example:
+
+1. Go to [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) in a new window or tab.
+
+1. Right-click white space above the string "Add a task", and then click **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. Select the **Styles** tab.
+
+   Various types of links are displayed:
+
+   ![Various links highlighted](./reference-images/various-links-highlighted.png)
 
 
 <!-- ------------------------------ -->
@@ -157,29 +163,35 @@ In the **Elements** tool, the **Styles** tab shows tooltips with useful informat
 ###### View CSS documentation
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-docs -->
 
-<!-- todo: format, link, pngs -->
+To display the description of a CSS property, in a tooltip:
 
-To see a tooltip that contains a CSS description:
+1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
-1. In DevTools, in the **Elements** tool, select the **Styles** tab.
+1. Right-click white space above the string "Add a task", and then click **Inspect**.
 
-1. Hover over the property name.
+   DevTools opens, with the **Elements** tool selected.
+
+1. Select the **Styles** tab.
+
+1. Hover over a CSS property name, such as `padding:`.
+
+   A tooltip is displayed:
+
+   ![The tooltip with documentation on a CSS property](./reference-images/the-tooltip-documentation.png)
 
    DevTools pulls the descriptions for tooltips from the [VS Code Custom Data](https://github.com/microsoft/vscode-custom-data) repo.
 
-   ![The tooltip with documentation on a CSS property] todo the-tooltip-documentation.png
-
 1. In the tooltip, click the **Learn more** link.
 
-   The [CSS reference](https://developer.mozilla.org/docs/Web/CSS/Reference) page at MDN is displayed for this property.
+   The CSS reference page for the property at MDN is displayed, such as [padding CSS property](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/padding).
 
 
-To turn the tooltips off:
+To turn the CSS tooltips off:
 
 * In the tooltip, select the **Don't show** checkbox.
 
 
-To turn the tooltips on again:
+To turn CSS tooltips on again:
 
 1. In DevTools, select **Customize and control DevTools**, and then select **Settings**.
 
@@ -192,11 +204,23 @@ To turn the tooltips on again:
 ###### View selector specificity
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#selector-specificity -->
 
-<!-- todo: format, link, pngs -->
+Hover over a CSS selector, to display a tooltip that shows the selector's specificity weight, such as: **Specificity: (0,0,1)**:
 
-Hover over a selector to see a tooltip that shows the selector's specificity weight, such as: **Specificity: (0,0,1)**:
+For example:
 
-![The tooltip with specificity weight of a matched selector] the-tooltip-specificity.png todo
+1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
+
+1. Right-click the webpage, and then click **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. In the DOM tree, select the `<body>` element.
+
+1. In the **Styles** tab, hover over the `body` CSS selector.
+
+   A tooltip is displayed, showing **Specificity: (0,0,1)**:
+
+   ![The tooltip with specificity weight of a matched selector](./reference-images/the-tooltip-specificity.png)
 
 See also:
 * [Specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity) - MDN.
@@ -206,11 +230,23 @@ See also:
 ###### View the values of custom properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-css -->
 
-<!-- todo: format, link, pngs -->
-
 Hover over a `--custom-property` to see its value in a tooltip.
 
-![The value of a custom property in a tooltip] the-value-a-custom-property.png todo
+For example:
+
+1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
+
+1. Right-click the webpage, and then click **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. In the DOM tree, select the `<body>` element.
+
+1. In the **Styles** tab, in the `body` CSS rule, hover over `--spacing`.
+
+   The value `.3rem` is displayed in a tooltip:
+
+   ![The value of a custom property in a tooltip](./reference-images/the-value-a-custom-property.png)
 
 See also:
 * [Custom properties (--*): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*) - MDN.
@@ -235,12 +271,10 @@ In the following figure, after you click
 #### View invalid, overridden, inactive, and other CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#css-issues -->
 
-<!-- todo: format, link, pngs -->
-
 The **Styles** tab recognizes many kinds of CSS issues and highlights them in different ways.
 
-See also:
-* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles)<!-- todo: local link? --> in _Find invalid, overridden, inactive, and other CSS_.
+See:
+* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles)<!-- todo: local link not found --> in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.
 
 
 <!-- ------------------------------ -->
@@ -249,22 +283,26 @@ See also:
 
 The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
 
-1. [Select an element](#select-an-element).
+For example:
 
-1. Go to the **Computed** pane in the **Elements** tool.
+1. Go to a webpage, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
-   On a wide DevTools window, the **Computed** pane doesn't exist.  The contents of the **Computed** pane are shown on the **Styles** pane.
+1. Right-click the heading **My tasks**, and then click **Inspect**.
 
-   Inherited properties are opaque.
+   DevTools opens, with the **Elements** tool selected, with the `<h1>` element selected in the DOM tree.
 
-1. To display all inherited values, select the **Show All** checkbox.
+1. In the **Elements** tool, select the **Computed** tab.
 
-   In the following figure, the **Computed** pane shows the CSS properties being applied to the currently selected `h1` element:
+   The CSS properties that are applied to the selected element are displayed:
 
    ![The Computed panel](./reference-images/css-elements-computed-h1.png)
 
-See also:
-* [Understand CSS in the Computed tab]<!-- todo: link --> in _Find invalid, overridden, inactive, and other CSS_.
+   A property name and value in italics indicates a value that's calculated at runtime.
+
+1. To display all properties, select the **Show all** checkbox.
+
+See:
+* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed)<!-- todo: local link not found --> in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.
 
 
 <!-- ------------------------------ -->
@@ -300,44 +338,61 @@ In the **Elements** tool, the **Styles** tab shows the following at-rules in ded
 ###### View `@property` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#property -->
 
-<!-- todo: format, link, pngs -->
-
 The `@property` CSS at-rule lets you define CSS custom properties explicitly and register them in a style sheet without running any JavaScript.
+
+Hover over the name of such a property in the **Styles** tab, to see a tooltip that contains:
+* The property's value, such as `20%`.
+* The property's descriptors, such as: `initial value: 40%`
+* A **View registered property** link to its registration in the collapsible `@property` section at the bottom of the **Styles** tab.
+
+For example:
+
+<!-- todo: maybe replace this code that's from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*#basic_example -->
+1. Go to a page that uses the `@property` at-rule, such as [View `@property` at-rules](https://microsoftedge.github.io/Demos/at-rules-property/), in a new window or tab.
+
+1. Right-click the **Item three** paragraph, and then click **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. In the **Styles** tab, hover over the name of a CSS custom property that's defined by the `@property` CSS at-rule:
+
+   ![Tooltip for the @property CSS at-rule](./reference-images/at-property-tooltip.png)
+
+   The tooltip contains:
+   * The property's value, such as `100px`.
+   * The property's descriptors, such as initial value.
+   * A **View registered property** link.
+
+1. Click the **View registered property** link.
+
+   The expanded **@property** section is displayed, further down in the **Styles** tab:
+
+   ![--itemSize in @property section](./reference-images/at-property-itemsize.png)
+
+To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
 See also:
 * [@property: giving superpowers to CSS variables](https://web.dev/articles/at-property) at Web.dev.
 * [Custom properties (--*): CSS variables](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/--*) at MDN.
-
-Hover over the name of such property in the **Styles** tab, to see a tooltip with the property's value, descriptors, and a link to its registration in the collapsible `@property` section at the bottom of the **Styles** tab.
-
-![] todo
-
-To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
 
 <!-- ---------- -->
 ###### View `@supports` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#supports -->
 
-<!-- todo: format, link, pngs -->
-
 The **Styles** tab shows you the `@supports` CSS at-rules, if they are applied to an element.
 
-For example, inspect the following element:
+For example, to view the `@supports` rule:
 
-todo: inline element in article like in https://developer.chrome.com/docs/devtools/css/reference/#supports :
+1. In a new window or tab, go to a page that uses the `@supports` at-rule, such as [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/):
 
-"I support CIE LAB color space!" (green background)
-
-![View @supports at-rules] view-supports-rules.png todo
-<!-- png shows localhost:8080/docs/devtools/css/reference -->
+   ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)<!-- todo: png should show https://microsoftedge.github.io/Demos/at-rules-supports/ not localhost:8080 -->
 
 * If your browser supports the `lab()` function, the element is green.
 
 * If your browser doesn't support the `lab()` function, the element is purple.
 
 To see which browser versions support the CIE LAB color space, [search Caniuse.com for "lab"](https://caniuse.com/?search=lab).
-<!-- upstream:  Note: At the time of writing, only Safari supports the CIELAB color space. -->
 
 
 <!-- ---------- -->
@@ -355,15 +410,15 @@ To view the `@scope` rule:
 
 1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
 
-1. In a new window or tab, go to a page that uses the `@scope` at-rule, such as [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-at-scope/):
+1. In a new window or tab, go to a page that uses the `@scope` at-rule, such as [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-scope/):
 
    ![Result of HTML & CSS for @scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
 
 1. Right-click "I'm the text that lives on a card", and then select **Inspect**.
 
-   DevTools opens.
+   DevTools opens, with the **Elements** tool selected.
 
-1. Select the **Elements** tool, and then select the **Styles** tab.
+1. Select the **Styles** tab.
 
 1. Examine the `@scope` rule:
 
