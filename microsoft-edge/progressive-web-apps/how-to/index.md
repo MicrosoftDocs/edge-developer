@@ -58,7 +58,7 @@ To update your Progressive Web App, you deploy the new version to your web serve
 
 When your Progressive Web App (PWA) goes live, you must publish it to an HTTPS URL.  Many hosts use HTTPS by default, but if your host doesn't offer HTTPS, [Let's Encrypt](https://letsencrypt.org/) offers a free alternative for creating the necessary certificates.
 
-For example, you can create an [Azure free account](https://azure.microsoft.com/free).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
+For example, you can create an [Azure free account](azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).  If you host your website on the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web), it's served over HTTPS by default.
 
 You can also host your website on GitHub Pages (`pages.github.com`), which supports HTTPS.  See [GitHub Pages documentation](https://docs.github.com/pages).
 
@@ -282,7 +282,7 @@ MDN:
 Hosting:
 * [GitHub Pages documentation](https://docs.github.com/pages)
 * [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web)
-   * [Azure free account](https://azure.microsoft.com/free)
+   * [Azure free account](azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 * [Let's Encrypt](https://letsencrypt.org)
 
 Sample:
