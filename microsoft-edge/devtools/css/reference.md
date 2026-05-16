@@ -24,10 +24,6 @@ ms.date: 04/10/2026
 # CSS features reference
 <!-- https://developer.chrome.com/docs/devtools/css/reference/ -->
 
-_todolink: clean up incoming links; change from https://developer.chrome.com/docs/ links to local links_
-
-_todopng: the remaining incoming CodePen demos or other demos' screenshots: create Demos repo sample/dir_
-
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
 To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
@@ -476,13 +472,7 @@ To view the `@font-palette-values` CSS rule:
 
 1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
 
-1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/) demo:
-
-   _todo: the demo uses google font https://fonts.googleapis.com/css2?family=Foldit:wght@700_
-
-   ![Result of HTML & CSS for @font-palette-values at-rule](./reference-images/at-font-palette-values-at-rule-rendered.png)
-
-   _todopng: create the above png_
+1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/) demo.
 
 1. Right-click "new colors", and then select **Inspect**.
 
@@ -490,7 +480,7 @@ To view the `@font-palette-values` CSS rule:
 
 1. In the **Styles** tab, find the `@font-palette-values` CSS rule:
 
-   ![The @font-palette-values rule in the Styles tab](./reference-images/font-palette-values-rule-in-styles-tab.png)
+   ![The @font-palette-values rule in the Styles tab](./reference-images/at-font-palette-values-at-rule-rendered.png)
 
    _todopng: fix tab title & localhost in Address bar_
 
@@ -500,7 +490,7 @@ To view the `@font-palette-values` CSS rule:
 
 1. In the `@font-palette-values` CSS rule, in the `override-colors` property, double-click `0 gold, 1 red`, and enter `0 blue, 1 red`.
 
-   In the inspected webpage, "new colors" is rendered as blue and red.
+   In the inspected webpage, "new colors" is now rendered as blue and red.
 
 
 <!-- ---------- -->
