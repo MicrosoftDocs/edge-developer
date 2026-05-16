@@ -95,6 +95,8 @@ In the following figure, the `h1` element that is highlighted in the **DOM Tree*
 
 ![An example of a selected element](./reference-images/css-elements-styles-h1.png)
 
+_todo: redo w/ demo-to-do not LMC_
+
 There are many ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
@@ -259,6 +261,8 @@ In the following figure, after you click
 `https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- /master/ works but lines concated.  /main/ doesn't work -->
 
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
+
+_todo: redo w/ demo-to-do not LMC_
 
 
 <!-- ------------------------------ -->
@@ -563,9 +567,11 @@ To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introductio
 
 To change a value, double-click it.
 
-In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element.
+In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element:
 
 ![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
+
+_todo: redo w/ demo-to-do not LMC_
 
 
 <!-- ------------------------------ -->
