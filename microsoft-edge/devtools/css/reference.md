@@ -634,6 +634,8 @@ To try emulating a focused page:
 
    ![The Emulate a focused page checkbox selected](./reference-images/emulate-focused-page.png)
 
+1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
+
 An **Emulate a focused page** checkbox also appears in the **Rendering** tool.
 
 See also:
@@ -691,9 +693,7 @@ For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md
 #### View inherited highlight pseudo-elements
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-inherited-highlight-pseudo-elements -->
 
-_todo: format, link, pngs_
-
-[Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements) let you style specific parts of elements.  Highlight pseudo-elements are document portions with a "selected" status and they are styled as "highlighted" to indicate this status to the user.
+Pseudo-elements let you style specific parts of elements.  Highlight pseudo-elements are document portions with a "selected" status and they are styled as "highlighted" to indicate this status to the user.
 
 For example, such pseudo-elements are:
 * `::selection`
@@ -703,15 +703,9 @@ For example, such pseudo-elements are:
 
 When multiple styles conflict, cascade determines the winning style; see [3.5. Cascading and Per-Element Highlight Styles](https://drafts.csswg.org/css-pseudo-4/#highlight-cascade) in _CSS Pseudo-Elements Module Level 4_ at W3C.
 
-To enable this feature, run Microsoft Edge with the `--enable-blink-features=HighlightInheritance` flag.
-
 To better understand the inheritance and priority of the rules, view the inherited highlight pseudo-element in the following demo.
 
 To view the inherited highlight pseudo-elements:
-
-1. Run Microsoft Edge with the `--enable-blink-features=HighlightInheritance` flag.
-
-   _todo: delete the above step?  not needed, to do steps for inline code in upstream article_
 
 1. Go to [Highlight pseudo-elements](https://microsoftedge.github.io/Demos/highlight-pseudo-elements/) in a new window or tab.
 
@@ -721,27 +715,46 @@ To view the inherited highlight pseudo-elements:
 
 1. Right-click the text "I inherited the style of my parent's highlight pseudo-element. Select me!", and then select **Inspect**.
 
-   DevTools opens.
+   DevTools opens.  In the **Elements** tool, in the **Styles** tab, the section is displayed: **Inherited from ::selection pseudo of div.text-parent**:
 
-1. In the **Elements** tool, in the **Styles** tab, scroll down to find the section **Inherited from ::selection pseudo of div.text-parent**, near the bottom:
+   ![View the Inherited section in the Styles tab](./reference-images/view-inherited-section.png)
 
-   ![View the Inherited section of the Styles tab]
+1. In the DOM tree, select the `<div class="text-parent">` element.
 
-   _todopng: create view-inherited-section.png_
+   In the **Styles** tab, the section is displayed: **Pseudo ::selection element**:
+
+   ![View the Pseudo section in the Styles tab](./reference-images/view-pseudo-section.png)
+
+From `index.html`:
+
+```html
+<div class="text-parent">
+  <div class="highlighted-text">I inherited the style of my parent's highlight pseudo-element.  Select me!</div>
+</div>
+<style>
+  .text-parent::selection {
+    background: #ff0;
+    color: #ff1493;
+  }
+</style>
+```
+
+See also:
+* [Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements) at MDN.
 
 
 <!-- ------------------------------ -->
 #### View cascade layers
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#cascade-layers -->
 
-_todo: format, link, pngs_
-
-Cascade layers enable more explicit control of your CSS files to prevent style-specificity conflicts.  This is useful for large codebases, design systems, and when managing third-party styles in applications.
-
-See also:
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
+Cascade layers enable more explicit control of your CSS files, to prevent style-specificity conflicts.  This is useful for:
+* Large codebases.
+* System design.
+* Managing third-party styles.
 
 To view cascade layers:
+
+1. Go to a webpage that uses cascade layers, such as the [Cascade layers](https://microsoftedge.github.io/Demos/cascade-layers/) demo.
 
 1. Right-click the "My styles are layered!" element, and then select **Inspect**.
 
@@ -749,17 +762,16 @@ To view cascade layers:
 
 1. In the **Elements** tool, select the **Styles** tab.
 
-   _todo: create demo containing: My styles are layered!_
-
 1. In the **Styles** tab, view the three cascade layers and their styles: `page`, `component` and `base`:
 
-   ![Cascade layers]
+   ![Cascade layers](./reference-images/cascade-layers.png)
 
-   _todopng: create cascade-layers.png_
-
-1. To view the layer order, click the layer name or the ![the "Toggle CSS layers view" icon todo] **Toggle CSS layers view** button.
+1. To view the layer order, click the layer name (**page**, **component**, or **base**).  Or, click the ![Toggle CSS Layers view icon](./reference-images/toggle-css-layers-view-icon.png) **Toggle CSS Layers view** button.
 
    The `page` layer has the highest specificity, therefore the element's background is green.
+
+See also:
+* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
 
 
 <!-- ------------------------------ -->
@@ -837,15 +849,19 @@ Additionally, you can copy CSS properties in JavaScript syntax.  This option is 
 
 To copy CSS:
 
-1. In DevTools, in the **Elements** tool, in the DOM tree, [select an element](#select-an-element), per above.
+1. Go to a webpage that uses CSS, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
-1. In the **Styles** tab, right-click a CSS property:
+1. Right-click the webpage, and then click **Inspect**.
 
-   ![Copy CSS dropdown menu]
+   DevTools opens, with the **Elements** tool selected.
 
-   _todopng: create copy-css-dropdown-menu.png_
+1. In the DOM tree, select an element, such as `<h1>`.
 
-1. Select one of the following options from the dropdown menu:
+1. In the **Styles** tab, within a CSS rule, right-click a CSS property, such as `text-align: center`:
+
+   ![Copy CSS dropdown menu](./reference-images/copy-css-dropdown-menu.png)
+
+   The right-click menu contains the following menuitems:
 
    * **Copy declaration**. Copies the property and its value in CSS syntax: `css property: value;`
 
@@ -861,9 +877,11 @@ To copy CSS:
 
    * **Copy all declarations as JS**. Copies all properties and their values in JavaScript syntax: `js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
 
-   * **Copy all CSS changes**. Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.
+   * **Copy all CSS changes**. Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.  This menuitem conditionally appears.
 
    * **View computed value**. Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+
+1. Select a right-click menuitem.
 
 
 <!-- ====================================================================== -->
@@ -963,47 +981,43 @@ To decrement, press **DownArrow** instead of **UpArrow**.
 #### Change length values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
 
-_todo: is "length" correct?  seems any size measurement_
-
 _todo: format, link, pngs_
 
-_todo: delete this h4 section?  you can accomp the task by double-click get "50rem" and enter new value / unit_
-
-Deprecated: This feature is deprecated in Microsoft Edge 123.  To temporarily turn this feature on, select **Customize and control DevTools** > **Settings** > **Experiments**, and then clear the checkbox **Deprecate CSS `<length>` authoring tool in the Styles tab**.  You can leave feedback in [crbug/1522657] https://issues.chromium.org/issues/41495618.
-
-_todo: no such experiment checkbox anymore, above: **Deprecate CSS `<length>` authoring tool in the Styles tab**_
-
 You can use your pointer to change any property that has a length value, such as `width`, `height`, `padding`, `margin`, or `border`.
+
+_todo: is "length" correct?  any size measurement?_
 
 To change the length unit:
 
 1. Open a webpage that uses CSS, such as [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/), in a new window or tab.
 
-1. Right-click the text "Add a task", and then select **Inspect**.
+1. Right-click the text **Add a task**, and then select **Inspect**.
 
-   DevTools opens, displaying the **Elements** tool and its **Styles** tab.  The `<label>` element is selected in the DOM tree.
+   DevTools opens, displaying the **Elements** tool.  The `<label>` element is selected in the DOM tree.
 
-1. In the **Styles** tab, hover over a unit name, such as **max-width: 50rem**.
+1. In the **Styles** tab, in the `.new-task-form` CSS rule, in the `max-width:` property, hover over `50rem`.
 
-1. Click the unit name to select a unit from the dropdown list:
+   A tooltip appears, showing the equivalent value and units: `800px`.
 
-   ![Units in dropdown list]
+1. Click the value `50rem`.
 
-   _todopng: create png_
+   A tooltip appears: "Increment/decrement with mousewheel or up/down keys.  Ctrl: +/-100, Shift: +/-10, Alt: +/-0.1"
 
-To change the length value:
+1. Move the mousewheel, or press **UpArrow** and **DownArrow** keys, while pressing a key:
 
-1. Hover over the unit value and notice that your pointer changes to a horizontal double-headed arrow.
+   **Ctrl**: Increment by 100.
+   **Shift**: Increment by 10.
+   **Alt**: Increment by 0.1.
 
-1. Drag horizontally to increase or decrease the value:
+   In the inspected webpage, the **Add a task** input text box changes width as you change the value.
 
-   ![Dragging horizontally]
+1. In the max-width property's value field, make the value `200px` (changing from `rem` units to `px` units).
 
-   _todopng: create png_
+1. Again move the mousewheel, or press **UpArrow** and **DownArrow** keys, while holding the **Ctrl** (+/-100), **Shift** (+/-10), or **Alt** (+/-0.1) key.
 
-To adjust the value by 10:
+   In the inspected webpage, the **Add a task** input text box changes width as you change the value:
 
-* Press and hold **Shift** when dragging.
+   ![Changing the max-width of the input text box](./reference-images/change-length-values.png)
 
 
 <!-- ------------------------------ -->
@@ -1280,17 +1294,17 @@ To open the **Easing Editor**:
 
 1. In DevTools, in the **Elements** tool, in the DOM tree, select an element that has a CSS animation or transition applied.
 
-   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the page, and then select **Inspect**.
+   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the red box containing an animation, and then select **Inspect**.
 
    DevTools opens, displaying the **Elements** tool.
 
 1. Press **Ctrl+F** and find "spinner", and then select the `<div class="spinner">` element that's inside `<div class="animation-demo bad">`.
 
+   _todo: why use the bad spinner, do we want the good spinner instead?_
+
    The red and green boxes on this demo page are two different CSS animations.  Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
 
 1. In the **Styles** tab, in the `.bad .spinner` CSS rule, in the `animation` declaration, to the left of `ease-in-out`, click the **Open cubic bezier editor** (![Cubic bezier editor icon](./reference-images/easing-editor-icon.png)) button.
-
-   _todo: why use the bad spinner, do we want the good spinner instead?_
 
    The **Easing Editor** opens:
 
@@ -1300,8 +1314,6 @@ To open the **Easing Editor**:
 <!-- ---------- -->
 ###### Use presets to adjust timings
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#presets -->
-
-_todo: format, link, pngs_
 
 To adjust timings by a simple mouse-click, use the presets in the **Easing Editor**:
 
@@ -1373,13 +1385,15 @@ Any change triggers a ball animation in the **Preview** at the top of the **Easi
 
 <!-- ====================================================================== -->
 ## Copy CSS changes
-<!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
+<!-- (Experimental) Copy CSS changes  https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
 
-_todo: format, link, pngs_
+_todo: delete section?  no such experiment in Chrome or Edge.  changing max-width: 50rem doesn't cause a green highlight or a Copy button on right, see upstream [(Experimental) Copy CSS changes](https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes)_
 
-The **Styles** tab in the **Elements** tool highlights your CSS changes in green.
+The **Styles** tab in the **Elements** tool highlights your CSS changes with a light green background.
 
 To copy a single CSS declaration change:
+
+_todo: build on the use of demo-to-do that's in [Change length values](#change-length-values) section above_
 
 * Hover over the highlighted declaration and click the **Copy** button:
 
@@ -1397,7 +1411,8 @@ To copy all CSS changes across declarations at once:
 
    _todopng: create copy-css-changes.png_
 
-You can additionally track changes that you make, by using the **Changes** tool.  See [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes) in Chrome docs.
+See also:
+* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->
