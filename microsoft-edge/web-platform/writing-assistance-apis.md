@@ -48,7 +48,9 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 <!-- ====================================================================== -->
 ## Availability of the Writing Assistance APIs
 
-The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2.
+The Writer API and the Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2.
+
+The Summarizer API has been enabled by default since Microsoft Edge 138.
 
 The Writing Assistance APIs are optimized for tasks specific to generating, modifying, and summarizing text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -119,7 +121,7 @@ An initial download of the model will be required the first time a website calls
 <!-- ====================================================================== -->
 ## Enable the Writing Assistance APIs
 
-To use any of the Writing Assistance APIs in Microsoft Edge:
+To use the Writer API or the Rewriter API in Microsoft Edge:
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -127,11 +129,12 @@ To use any of the Writing Assistance APIs in Microsoft Edge:
 
 1. In the search box, at the top of the page:
 
-   * To enable the Summarizer API, enter **Summarization API for Phi mini**.
    * To enable the Writer API, enter **Writer API for Phi mini**.
    * To enable the Rewriter API, enter **Rewriter API for Phi mini**.
 
    The page is filtered to show the matching flag.
+
+   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enable the Summarizer API by entering **Summarization API for Phi mini** here.)
 
 1. Select **Enabled** next to the flag for the API you want to enable:
 
