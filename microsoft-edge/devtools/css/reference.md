@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/10/2026
+ms.date: 05/18/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -345,8 +345,6 @@ Hover over the name of such a property in the **Styles** tab, to see a tooltip t
 
 For example:
 
-_todo: maybe replace this code that's from `https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/--*#basic_example`_
-
 1. Go to a page that uses the `@property` at-rule, such as [View `@property` at-rules](https://microsoftedge.github.io/Demos/at-rules-property/), in a new window or tab.
 
 1. Right-click the **Item three** paragraph, and then click **Inspect**.
@@ -356,6 +354,8 @@ _todo: maybe replace this code that's from `https://developer.mozilla.org/en-US/
 1. In the **Styles** tab, hover over the name of a CSS custom property that's defined by the `@property` CSS at-rule:
 
    ![Tooltip for the @property CSS at-rule](./reference-images/at-property-tooltip.png)
+
+   _todopng: Address bar: don't show localhost_
 
    The tooltip contains:
    * The property's value, such as `100px`.
@@ -367,6 +367,8 @@ _todo: maybe replace this code that's from `https://developer.mozilla.org/en-US/
    The expanded **@property** section is displayed, further down in the **Styles** tab:
 
    ![--itemSize in @property section](./reference-images/at-property-itemsize.png)
+
+   _todopng: Address bar: don't show localhost_
 
 To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
@@ -387,7 +389,7 @@ For example, to view the `@supports` rule:
 
    ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)
 
-   _todopng: address bar in png should show https://microsoftedge.github.io/Demos/at-rules-supports/ not localhost:8080_
+   _todopng: address bar in png should show `https://microsoftedge.github.io/Demos/at-rules-supports/` not localhost:8080_
 
 * If your browser supports the `lab()` function, the element is green.
 
@@ -415,6 +417,8 @@ To view the `@scope` rule:
 
    ![Result of HTML & CSS for @scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
 
+   _todopng: Address bar: don't show localhost_
+
 1. Right-click "I'm the text that lives on a card", and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
@@ -424,6 +428,8 @@ To view the `@scope` rule:
 1. Examine the `@scope` rule:
 
    ![The @scope rule in the Styles tab](./reference-images/scope-rule-in-styles-tab.png)
+
+   _todopng: Address bar: don't show localhost_
 
    In this example, the `@scope` rule (background color = plum) overrides the global CSS `background-color` declaration (aquamarine), for any `<p>` element that's inside an element (such as a `<div>`) that has a `card` class.
 
@@ -540,6 +546,8 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 
    ![The @position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
 
+   _todopng: Address bar: don't show localhost_
+
 1. In the **Styles** tab, in the `#submenu` CSS rule, click the `--submenu` link in any of the following properties:
 
    ```css
@@ -551,6 +559,8 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
    The DOM tree selects the element (`<button popovertarget="submenu">`) that has the corresponding `popovertarget` attribute value (`popovertarget="submenu"`), and the **Styles** tab shows the element's CSS:
 
    ![The button element selected in the DOM tree, and its CSS](./reference-images/at-position-try-popovertarget.png)
+
+   _todopng: Address bar: don't show localhost_
 
 To edit a value, double-click the value.
 
@@ -629,6 +639,8 @@ To try emulating a focused page:
    You can now inspect and debug (in the **Sources** tool) the "disappearing popup" element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
 
    ![The Emulate a focused page checkbox selected](./reference-images/emulate-focused-page.png)
+
+   _todopng: redo png to show revised demo per planned work in PR 135_
 
 1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
 
@@ -715,11 +727,15 @@ To view the inherited highlight pseudo-elements:
 
    ![View the Inherited section in the Styles tab](./reference-images/view-inherited-section.png)
 
+   _todopng: Address bar: don't show localhost_
+
 1. In the DOM tree, select the `<div class="text-parent">` element.
 
    In the **Styles** tab, the section is displayed: **Pseudo ::selection element**:
 
    ![View the Pseudo section in the Styles tab](./reference-images/view-pseudo-section.png)
+
+   _todopng: Address bar: don't show localhost_
 
 From `index.html`:
 
@@ -761,6 +777,8 @@ To view cascade layers:
 1. In the **Styles** tab, view the three cascade layers and their styles: `page`, `component` and `base`:
 
    ![Cascade layers](./reference-images/cascade-layers.png)
+
+   _todopng: Address bar: don't show localhost_
 
 1. To view the layer order, click the layer name (**page**, **component**, or **base**).  Or, click the ![Toggle CSS Layers view icon](./reference-images/toggle-css-layers-view-icon.png) **Toggle CSS Layers view** button.
 
