@@ -4,7 +4,7 @@ title: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% 
 description: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: conceptual
+ms.topic: article
 ms.service: microsoft-edge
 ms.date: 
 ---
@@ -34,10 +34,6 @@ To stay up-to-date and get the latest web platform features, download a preview 
   * [{{ feature.name }}](#{{ feature.name | slugify }})
   {% endfor %}
 * [Origin trials](#origin-trials)
-  {% for trial in data.edgeOTs %}
-  * [{{ trial.title }}](#{{ trial.title | slugify }})
-  {% endfor %}
-
 
 <!-- ====================================================================== -->
 ## Edge DevTools
@@ -109,19 +105,10 @@ Origin trials let you try experimental APIs on your own live website for a limit
 
 For the full list of available origin trials, see [Microsoft Edge Origin Trials](https://developer.microsoft.com/microsoft-edge/origin-trials/).
 
+| Name | Description | Register |
+|---|---|---|
 {% for trial in data.edgeOTs %}
-
-<!-- ------------------------------ -->
-#### {{ trial.title }}
-
-Expires on {{ trial.expiration }}.
-
-{{ trial.description }}
-
-* [Explainer]({{ trial.explainer }})
-* [Feedback]({{ trial.feedback }})
-* [Register]({{ trial.registration }})
-
+| {{ trial.title }} | {{ trial.description }} | [Register]({{ trial.registration }}) |
 {% endfor %}
 
 
