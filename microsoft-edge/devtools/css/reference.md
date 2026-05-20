@@ -299,8 +299,10 @@ For example:
 
 1. To display all properties, select the **Show all** checkbox.
 
-See:
-* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link not found_
+<!-- 
+See also:
+* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link when exists_
+-->
 
 
 <!-- ------------------------------ -->

@@ -134,7 +134,7 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
 
    The page is filtered to show the matching flag.
 
-   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enable the Summarizer API by entering **Summarization API for Phi mini** here.)
+   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here.)
 
 1. Select **Enabled** next to the flag for the API you want to enable:
 
