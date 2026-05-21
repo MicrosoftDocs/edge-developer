@@ -620,29 +620,25 @@ To debug such an element as if the page has focus, do either of the following:
 
 To try emulating a focused page:
 
-1. Go to [disappearing-pop-up](https://jec.fish/demo/disappearing-pop-up) (at jec.fish) in a new window or tab.
+1. Open the [Emulate a focused page](https://microsoftedge.github.io/Demos/emulate-focused-page/) demo in a new window or tab.
 
-   _todo: sample in Demos repo?  PR 135: new dir started: \Demos\focus\index.html_
+1. Click the input text box.  Or, press **Tab** to put focus on the input text box.
 
-1. Click the input text box, or press **Tab** to focus it.
-
-   Another element appears under the input text box, saying "disappearing popup - try to inspect & debug me in DevTools."
+   Another element appears under the input text box, saying "This message only appears when the text box is focused."
 
 1. Right-click the input text box, and then select **Inspect**.
 
-   DevTools opens, and the "disappearing popup" element disappears.  The DevTools window is now in focus, instead of the inspected webpage, so the "disappearing popup" element disappears.
+   DevTools opens, and the message element disappears.  The DevTools window is now in focus, instead of the inspected webpage, so the message element disappears.
 
 1. In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then select the **Emulate a focused page** checkbox.
 
-1. Make sure the input text box element `<input id="query" type="text">` is still selected.
+1. Make sure the input text box element `<input id="textBox" type="text">` is still selected.
 
-   Under the input text box, the element reappears, saying "disappearing popup - try to inspect & debug me in DevTools."
+   Under the input text box, the message element reappears below the input text box.
 
-   You can now inspect and debug (in the **Sources** tool) the "disappearing popup" element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
+   You can now inspect and debug (in the **Sources** tool) the message element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
 
    ![The Emulate a focused page checkbox selected](./reference-images/emulate-focused-page.png)
-
-   _todopng: redo png to show revised demo per planned work in PR 135_
 
 1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
 
