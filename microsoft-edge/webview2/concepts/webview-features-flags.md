@@ -124,7 +124,8 @@ If the flag takes a value other than true|false, give an example. -->
 | `long-animation-frame-timing` |  Provides detailed timing for long animation frames, which are frames exceeding the standard 16.67ms duration (60fps).  This helps during debugging and performance analysis, to identify and optimize performance bottlenecks for animation-heavy applications. |
 | `msAbydos` | Enables the "handwriting-to-text" experience. |
 | `msAbydosGestureSupport` | Allows users to use gestures (such as the scratchout gesture) to delete text by using a pen.  Valid only if the `msAbydos` flag is enabled. |
-| `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled. |
+| `msAbydosHandwritingAttr` | Whether the "handwriting-to-text" experience is enabled for input elements at the DOM level.  Valid only if the `msAbydos` flag is enabled.|
+| `msAbydosForWindowlessWV2` | Enables ShellHandwriting (Windows Shell Handwriting) functionality in Window to Visual hosting mode.  See also [Windowed vs. Visual hosting of WebView2](./windowed-vs-visual-hosting.md). |
 | `msAllowAmbientAuthInPrivateWebView2` | This flag is to be used along with the `msSingleSignOnForInPrivateWebView2` browser flag, to enable single sign-on (SSO) with default credential flow or ambient authentication flow. |
 | `msEdgeDesignerDriverFix` | Enables getting content and automatically showing the Designer feature.  The Designer feature is not supported in WebView2. |
 | `msEdgeDesignerUI` | Enables the Designer Shoreline App.  The Designer Shoreline App is not supported in WebView2. |

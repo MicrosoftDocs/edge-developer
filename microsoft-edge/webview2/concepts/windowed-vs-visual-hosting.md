@@ -101,6 +101,7 @@ In Window-to-Visual hosting and Visual hosting, a _Visual_ is a basic graphical 
 #### Disadvantages
 
 Enabling Window to Visual hosting mode removes support for Windows Shell Handwriting within the WebView2.
+<!-- todo: true, given new flag msAbydosForWindowlessWV2? -->
 
 See also:
 * [Ink input](/windows/win32/input_ink/input-ink-portal) - Windows App Development > User Interaction.
