@@ -47,4 +47,4 @@ sync'd Jul. 30, 2025
 <!-- ====================================================================== -->
 ## See also
 
-* [Clone the Edge Demos repo to your drive](../../devtools/samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+* [Clone the "MicrosoftEdge / Demos" repo to your drive](../../devtools/samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.

@@ -169,7 +169,7 @@ This is the source code repo and its directory which stores the files for this d
 
 
 <!-- ====================================================================== -->
-## Clone the Edge Demos repo to your drive
+## Clone the "MicrosoftEdge / Demos" repo to your drive
 
 The **Microsoft Edge / Demos** repo is useful for following the various DevTools documentation.  You can clone the repo, start a localhost web server within a folder of the cloned repo, and then edit the demo files directly within DevTools, or within an editor such as VS Code.
 
@@ -207,7 +207,7 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Clone the Edge Demos repo to your drive by using VS Code
+#### Clone the "MicrosoftEdge / Demos" repo to your drive by using VS Code
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
@@ -283,7 +283,7 @@ See also:
 <!-- ====================================================================== -->
 ## Open a demo folder from the Workspace tab in the Sources tool
 
-To use this section, first do [Clone the Edge Demos repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
+To use this section, first do the steps in [Clone the "MicrosoftEdge / Demos" repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
 
 See also:
 * [Workspace tutorial (Sources tool Workspace tab)](../workspaces/workspace-tutorial.md)
