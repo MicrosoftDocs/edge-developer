@@ -40,7 +40,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new window or tab.  (To open a link in a new window or tab, right-click the link.  Or, press and hold **Ctrl** (Windows, Linux) or **Command** (macOS) and then click the link.)
 
-<!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
+<!-- You can view the source files for the DOM Examples demo in the [MicrosoftEdge / Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
 1. In the rendered webpage, under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**:
 

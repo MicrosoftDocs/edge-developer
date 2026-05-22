@@ -25,7 +25,7 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 <!-- ====================================================================== -->
 ## List of DevTools samples
 
-The following demos demonstrate DevTools features.
+The following samples demonstrate DevTools features.
 
 | Demo name | Description and docs | Source code & Readme | Live demo page |
 |---|---|---|---|
@@ -113,7 +113,7 @@ These articles walk you through using this demo webpage:
 
 This is the source code repo and its directory which stores the files for this demo webpage:
 
-* [MicrosoftEdge/Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) - Contains files including:
+* [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) - Contains files including:
 
    * `index.html` - The demo webpage, including page sections and input forms that send data to the `buttons.js` JavaScript file.  To view the rendered webpage, use the demo webpage link above.
 
@@ -153,7 +153,7 @@ These articles or article sections walk you through using this demo webpage:
 
 This is the source code repo and its directory which stores the files for this demo webpage:
 
-* [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) - Contains the files:
+* [MicrosoftEdge / Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) - Contains the files:
 
    *  `README.md` - Contains links to the rendered demo webpage and the in-depth tutorial article about using the demo webpage.
 
@@ -175,7 +175,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
 
@@ -205,7 +205,7 @@ Continue with the next section.
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** dropdown button, and then click **Open with Visual Studio** if it appears.  A list of **Handler Selector** items is offered, one per Visual Studio instance installed.  This option appears only if you're logged in.
 

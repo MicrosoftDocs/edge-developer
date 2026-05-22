@@ -31,7 +31,7 @@ To learn the basics of using DevTools to view and change the CSS for a page, fol
 
 1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab. (To open a link in a new window or tab, right-click the link. Or, press and hold **Ctrl** (for Windows, Linux) or **Command** (for macOS) and then click the link.)
 
-   <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
+   <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge / Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 

@@ -39,7 +39,7 @@ Clone the **MicrosoftEdge / Demos** repo to your local drive, including the `/wo
 
 1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
 

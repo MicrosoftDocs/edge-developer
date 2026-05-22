@@ -10,15 +10,15 @@ ms.date: 10/01/2025
 ---
 # Progressive Web App samples
 
-These demo PWAs show how to use features and APIs that can progressively enhance your apps when installed on devices.
+These sample Progressive Web Apps (PWAs) show how to use features and APIs that can progressively enhance your app when installed on a device.
 
 The first sample to use when getting started is the [Temperature converter sample](./temperature-converter.md).
 
-See the Readme file for the sample; some samples require setup and don't work if you just click the app's link below.
+See the Readme file for a sample.  Some samples require setup and don't work if you just click the app's link below.
 
-Most of these PWA demos are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas) repo.
+Most of these samples are in the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
-<!-- sort h2's by repo then by dir name, to match https://github.com/MicrosoftEdge/Demos?tab=readme-ov-file#progressive-web-apps-pwas -->
+<!-- the below sections are sorted first by repo, then by dir name -->
 
 
 <!-- ====================================================================== -->

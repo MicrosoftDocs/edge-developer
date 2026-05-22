@@ -62,7 +62,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
 
 1. If not done already, install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button.
 
