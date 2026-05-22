@@ -29,11 +29,6 @@ sync'd Jul. 30, 2025
 
 <!-- ====================================================================== -->
 ## MicrosoftEdge/Demos repo
-<!-- sync:
-https://learn.microsoft.com/microsoft-edge/extensions/samples#microsoftedgedemos-repo
-https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-extensions
-sync'd Jul. 30, 2025
--->
 
 | Demo name | Description | Source code & Readme | Docs |
 |---|---|---|---|

@@ -9,11 +9,6 @@ ms.subservice: pwa
 ms.date: 10/01/2025
 ---
 # Progressive Web App samples
-<!-- sync:
-https://learn.microsoft.com/microsoft-edge/progressive-web-apps/samples/index
-https://github.com/MicrosoftEdge/Demos/blob/main/README.md#progressive-web-apps-pwas
-sync'd Oct. 17, 2025
--->
 
 These demo PWAs show how to use features and APIs that can progressively enhance your apps when installed on devices.
 

@@ -8,13 +8,6 @@ ms.service: microsoft-edge
 ms.date: 07/30/2025
 ---
 # Cross-browser API samples
-<!-- sync:
-https://learn.microsoft.com/microsoft-edge/web-platform/samples.md
-https://github.com/MicrosoftEdge/Demos/blob/main/README.md#cross-browser-api-samples
-sync'd Jul. 30, 2025
--->
-
-<!-- todo: delete table and link to https://github.com/MicrosoftEdge/Demos/blob/main/README.md#cross-browser-api-samples ? -->
 
 | Demo name | Description and docs | Source code & Readme | Live demo page |
 |---|---|---|---|
