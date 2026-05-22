@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/18/2026
+ms.date: 05/21/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -357,8 +357,6 @@ For example:
 
    ![Tooltip for the @property CSS at-rule](./reference-images/at-property-tooltip.png)
 
-   _todopng: Address bar: don't show localhost_
-
    The tooltip contains:
    * The property's value, such as `100px`.
    * The property's descriptors, such as initial value.
@@ -369,8 +367,6 @@ For example:
    The expanded **@property** section is displayed, further down in the **Styles** tab:
 
    ![--itemSize in @property section](./reference-images/at-property-itemsize.png)
-
-   _todopng: Address bar: don't show localhost_
 
 To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
@@ -390,8 +386,6 @@ For example, to view the `@supports` rule:
 1. In a new window or tab, go to a page that uses the `@supports` at-rule, such as [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/):
 
    ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)
-
-   _todopng: address bar in png should show `https://microsoftedge.github.io/Demos/at-rules-supports/` not localhost:8080_
 
 * If your browser supports the `lab()` function, the element is green.
 
@@ -419,8 +413,6 @@ To view the `@scope` rule:
 
    ![Result of HTML & CSS for @scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
 
-   _todopng: Address bar: don't show localhost_
-
 1. Right-click "I'm the text that lives on a card", and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
@@ -430,8 +422,6 @@ To view the `@scope` rule:
 1. Examine the `@scope` rule:
 
    ![The @scope rule in the Styles tab](./reference-images/scope-rule-in-styles-tab.png)
-
-   _todopng: Address bar: don't show localhost_
 
    In this example, the `@scope` rule (background color = plum) overrides the global CSS `background-color` declaration (aquamarine), for any `<p>` element that's inside an element (such as a `<div>`) that has a `card` class.
 
@@ -494,8 +484,6 @@ To view the `@font-palette-values` CSS rule:
 
    ![The @font-palette-values rule in the Styles tab](./reference-images/at-font-palette-values-at-rule-rendered.png)
 
-   _todopng: fix tab title & localhost in Address bar_
-
    In this example, the `--New` font palette values override the default values of the colored font.
 
    To edit a custom value, double-click it, as follows:
@@ -510,8 +498,6 @@ To view the `@font-palette-values` CSS rule:
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
 <!-- upstream: the imported codepen code changed from using position-try-options to instead using position-try-fallbacks, but upstream article still says & shows position-try-options -->
 
-_todo: when open these 5 at-rules samples, Console shows error: GET http://localhost:8080/favicon.ico 404 (Not Found), have to Clear Console to make screenshots_
-
 The `@position-try` CSS rule along with the `position-try-fallbacks` property lets you define alternative anchor positions for elements.
 
 In the **Elements** tool, the **Styles** tab resolves and links the following:
@@ -522,9 +508,7 @@ In the **Elements** tool, the **Styles** tab resolves and links the following:
 
 For example, inspect the `position-try-fallbacks` values and `@position-try` CSS rules, as follows:
 
-1. In a new window or tab, go to a page that uses the  `position-try-fallbacks` values and `@position-try` at-rule, such as the [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/) demo:
-
-   _todo: uses a google font, `https://fonts.googleapis.com/css2?family=Foldit:wght@700`_ 
+1. In a new window or tab, go to a page that uses the  `position-try-fallbacks` values and `@position-try` at-rule, such as the [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/) demo.
 
 1. In the rendered webpage, open the submenu; that is, click **YOUR ACCOUNT**, and then click **STOREFRONT**.
 
@@ -536,19 +520,13 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 
    ![Result of HTML & CSS for @position-try at-rule](./reference-images/at-position-try-at-rule-rendered.png)
 
-   _todopng: fix tab title and Addr bar_
-
-1. In the DOM tree, select the `<ul id="submenu">` element.
-
 1. In the **Styles** tab, in the `#submenu` CSS rule, find the `position-try-fallbacks` property, and click its `--bottom` value.
 
-   _todo: devtools bug? hovering any --submenu value skips back & forth showing layout or not_
+   _todo: probably should do something other than click --bottom.  symptom of perhaps inconsistent code: hovering any --submenu value skips back & forth showing layout or not_
 
    The **Styles** tab scrolls down to the corresponding `@position-try` section:
 
    ![The @position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
-
-   _todopng: Address bar: don't show localhost_
 
 1. In the **Styles** tab, in the `#submenu` CSS rule, click the `--submenu` link in any of the following properties:
 
@@ -561,8 +539,6 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
    The DOM tree selects the element (`<button popovertarget="submenu">`) that has the corresponding `popovertarget` attribute value (`popovertarget="submenu"`), and the **Styles** tab shows the element's CSS:
 
    ![The button element selected in the DOM tree, and its CSS](./reference-images/at-position-try-popovertarget.png)
-
-   _todopng: Address bar: don't show localhost_
 
 To edit a value, double-click the value.
 
@@ -713,7 +689,7 @@ To better understand the inheritance and priority of the rules, view the inherit
 
 To view the inherited highlight pseudo-elements:
 
-1. Go to [Highlight pseudo-elements](https://microsoftedge.github.io/Demos/highlight-pseudo-elements/) in a new window or tab.
+1. Go to the [Highlight pseudo-elements](https://microsoftedge.github.io/Demos/highlight-pseudo-elements/) demo in a new window or tab.
 
 1. Select a portion of the text "I inherited the style of my parent's highlight pseudo-element. Select me!"
 
@@ -725,15 +701,11 @@ To view the inherited highlight pseudo-elements:
 
    ![View the Inherited section in the Styles tab](./reference-images/view-inherited-section.png)
 
-   _todopng: Address bar: don't show localhost_
-
 1. In the DOM tree, select the `<div class="text-parent">` element.
 
    In the **Styles** tab, the section is displayed: **Pseudo ::selection element**:
 
    ![View the Pseudo section in the Styles tab](./reference-images/view-pseudo-section.png)
-
-   _todopng: Address bar: don't show localhost_
 
 From `index.html`:
 
@@ -775,8 +747,6 @@ To view cascade layers:
 1. In the **Styles** tab, view the three cascade layers and their styles: `page`, `component` and `base`:
 
    ![Cascade layers](./reference-images/cascade-layers.png)
-
-   _todopng: Address bar: don't show localhost_
 
 1. To view the layer order, click the layer name (**page**, **component**, or **base**).  Or, click the ![Toggle CSS Layers view icon](./reference-images/toggle-css-layers-view-icon.png) **Toggle CSS Layers view** button.
 
