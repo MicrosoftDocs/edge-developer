@@ -24,7 +24,7 @@ The different approaches for hosting the WebView2 control in your app are simila
 | Approach | Description | Optimized for |
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a Visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that the Windows Shell Handwriting experience is unsupported. |
+| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a Visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over control composition.  The app needs to do specific handling of window management and rendering APIs. |
 
 These approaches have different requirements, constraints, and benefits.
@@ -80,13 +80,13 @@ In Window to Visual hosting and Visual hosting, a _Visual_ is a basic graphical 
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) in the Windows App Development > DirectComposition docs.
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) in the Windows App Development > UWP docs.
 
-Window to Visual hosting doesn't require you to use the WebView2 Visual hosting APIs.
-
 To enable Window to Visual hosting, the environment variable `COREWEBVIEW2_FORCED_HOSTING_MODE` must be set to the value `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL` before initializing your WebView2.
 
 
 <!-- ------------------------------ -->
 #### Capabilities and benefits of Window to Visual hosting
+
+* Window to Visual hosting doesn't require you to use the WebView2 Visual hosting APIs.
 
 * Different apps that share a WebView2 user data folder can have different DPI awareness.
 
@@ -176,6 +176,7 @@ See also:
 <!-- all links in article, except api ref docs -->
 
 * [Overview of WebView2 APIs](./overview-features-apis.md)
+* [WebView2 browser flags](./webview-features-flags.md) - covers `msAbydosForWindowlessWV2`.
 <!-- omit:
 * [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition) - Windows App Development. -->
 
