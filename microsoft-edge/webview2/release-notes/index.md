@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/11/2026
+ms.date: 06/08/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -26,6 +26,180 @@ todo: update links in announcements, since the Prerelease headings & Release hea
 -->
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.nnnn-prerelease, for Runtime 150 (Mmm. dd, yyyy)
+
+Release Date: Mmm. dd, yyyy
+
+[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Prerelease SDK.
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime 150 (Mmm. dd, yyyy) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy)
+
+Release Date: Mmm. dd, yyyy
+
+[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### General changes
+<!-- omit section if empty; usually empty -->
+
+
+<!-- ---------- -->
+###### heading
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### heading
+
+description
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+##### [Win32/C++](#tab/win32cpp)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed behavior.  ([Issue #]())
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed behavior.  ([Issue #]())
+
+<!-- end of Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy) -->
 
 
 <!-- ====================================================================== -->
@@ -2451,119 +2625,6 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 * Fixed the margins in the printed PDF.
 
 <!-- end of Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025) -->
-
-
-<!-- ====================================================================== -->
-## Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025)
-
-Release Date: Jun. 3, 2025
-
-[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
-
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the margins in the printed PDF.
-
-<!-- end of Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025) -->
-
-
-<!-- ====================================================================== -->
-## Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
-
-Release Date: May 12, 2025
-
-[NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 137.0.3296.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
-
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296-prerelease&preserve-view=true#defaultbackgroundcolor)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#put_defaultbackgroundcolor)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the **Find** bar no longer appearing after the window is shifted.
-* Fixed a bug where the app wasn't able to cancel navigation to login pages via the `NavigationStarting` event.
-* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
-
-<!-- end of Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025) -->
 
 
 <!-- ====================================================================== -->
