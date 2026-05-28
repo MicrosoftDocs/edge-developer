@@ -1076,6 +1076,18 @@
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
 # -----------------------------------------------------------------------------
+# DevTools for agents
+        - name: DevTools for agents
+          items:
+            - name: Index
+              href: ./devtools/agents/index.md
+              displayName: 
+
+            - name: Using Microsoft Edge and WebView2 with Chrome DevTools MCP
+              href: ./devtools/agents/mcp.md
+              displayName: 
+# /DevTools for agents
+# -----------------------------------------------------------------------------
         - name: Use DevTools in Internet Explorer mode (IE mode)
           href: ./devtools/ie-mode/index.md
           displayName: IE mode
