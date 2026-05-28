@@ -18,6 +18,31 @@ This guide covers three scenarios:
 1. [Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
 1. [Auto-connecting to WebView2](#3-auto-connecting-to-webview2) — the MCP server connects to a running WebView2 host app.
 
+**Detailed contents:**
+* [Prerequisites](#prerequisites)
+* [1. Launching Edge](#1-launching-edge)
+* [Additional flags](#additional-flags)
+* [Edge executable paths for other channels](#edge-executable-paths-for-other-channels)
+* [2. Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance)
+   * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
+   * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
+   * [Step 3: Test your setup](#step-3-test-your-setup)
+   * [Edge user data directories for other channels](#edge-user-data-directories-for-other-channels)
+* [3. Auto-connecting to WebView2](#3-auto-connecting-to-webview2)
+   * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
+   * [Step 2: Find the WebView2 user data directory](#step-2-find-the-webview2-user-data-directory)
+   * [Step 3: Configure the MCP server](#step-3-configure-the-mcp-server)
+   * [Step 4: Test your setup](#step-4-test-your-setup)
+* [How it works](#how-it-works)
+* [Configuring other MCP clients](#configuring-other-mcp-clients)
+   * [Copilot CLI](#copilot-cli)
+   * [Other MCP clients (Claude Code, Cursor, Gemini CLI, etc.)](#other-mcp-clients-claude-code-cursor-gemini-cli-etc)
+* [Troubleshooting](#troubleshooting)
+   * ["Could not connect to Chrome" error with auto-connect](#could-not-connect-to-chrome-error-with-auto-connect)
+   * [Edge not found at executablePath](#edge-not-found-at-executablepath)
+   * [WebView2 won't connect](#webview2-wont-connect)
+* [Further reading](#further-reading)
+
 
 <!-- ====================================================================== -->
 ## Prerequisites
