@@ -55,8 +55,6 @@ This guide covers three scenarios:
 > [!NOTE]
 > The examples in this guide use the VS Code `mcp.json` format.  If you're using a different MCP client, see [Configuring other MCP clients](#configuring-other-mcp-clients) at the end of this guide.
 
-todo: a test link not within a Note: [Configuring other MCP clients](#configuring-other-mcp-clients)
-
 
 <!-- ====================================================================== -->
 ## 1. Launching Edge
