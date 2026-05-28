@@ -312,6 +312,8 @@ If you're not using Edge Stable, replace the `--user-data-dir` value with the ap
 | Beta | `~/.config/microsoft-edge-beta` |
 | Dev | `~/.config/microsoft-edge-dev` |
 
+---
+
 > [!NOTE]
 > These are default locations.  Paths may vary based on user configuration, version, or group policies.  Linux does not have a Canary channel.
 
