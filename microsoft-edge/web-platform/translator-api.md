@@ -10,7 +10,7 @@ ms.date: 05/29/2026
 # Translate text with the Translator API
 <!-- https://aka.ms/translatorapi -->
 
-The Translator API allows you<!-- todo: Use the Translator API - https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/allow-allows --> to translate text between different languages from JavaScript code in your website or browser extension.  The Translator API is powered by a task-specific model that's built into Microsoft Edge.
+Use the Translator API to translate text between different languages from JavaScript code in your website or browser extension.  The Translator API is powered by a task-specific model that's built into Microsoft Edge.
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
@@ -56,7 +56,7 @@ To learn about the Language Detector API see: [Detect languages with the Languag
 <!-- ====================================================================== -->
 ## Availability of the Translator API
 
-The Translator API is available in Microsoft Edge 148 or higher.
+The Translator API is available in Microsoft Edge 148 or later.
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ An initial download of the on-device translation model is required the first tim
 
 To see the Translator API in action, and review existing code that uses the API:
 
-1. In Microsoft Edge 148 or higher, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
+1. In Microsoft Edge 148 or later, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable.  The model for a specified language pair will be downloaded the first time the API is used.**
 
