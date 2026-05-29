@@ -9,7 +9,7 @@ ms.date: 05/29/2026
 ---
 # Detect languages with the Language Detector API
 
-The Language Detector API allows you to detect the language of text from JavaScript code in your website or browser extension.  The API uses a task-specific model that is built into Microsoft Edge.
+Use the Language Detector API to detect the language of text from JavaScript code in your website or browser extension.  The API uses a task-specific model that is built into Microsoft Edge.
 
 **Detailed contents:**
 
@@ -179,8 +179,8 @@ The available options are:
 
 | **Option** | **Description** |
 | --- | --- |
-| `expectedInputLanguages` | An array of language codes. If there are certain languages you need to be able to detect for your use case, include them in the `expectedInputLanguages` option. This allows Microsoft Edge to download additional resources, if necessary, for better accuracy. The language codes should be in BCP 47 format (for example, `"en"` for English, `"es"` for Spanish, or `"fr"` for French). |
-| `monitor` | A function that's used to monitor the progress of the model download. See [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below. |
+| `expectedInputLanguages` | An array of language codes.  If there are certain languages that you need to be able to detect for your use case, include those languages in the `expectedInputLanguages` option.  This allows Microsoft Edge to download additional resources, if necessary, for better accuracy.  The language codes should be in BCP 47 format (for example, `"en"` for English, `"es"` for Spanish, or `"fr"` for French). |
+| `monitor` | A function that's used to monitor the progress of the model download.  See [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below. |
 
 
 <!-- ====================================================================== -->
@@ -234,7 +234,7 @@ The `detect()` method returns a promise that resolves to an array of language de
 | **Property** | **Description** |
 | --- | --- |
 | `detectedLanguage` | The BCP 47 language tag of the detected language (for example, `"en"` for English, `"es"` for Spanish, or `"und"` for undetermined). |
-| `confidence` | A number between 0.0 and 1.0, indicating the confidence level of the detection. Higher values indicate higher confidence. |
+| `confidence` | A number between 0.0 and 1.0, indicating the confidence level of the detection.  Higher values indicate higher confidence. |
 
 The results are sorted by confidence in descending order, with the most likely language first.  The last entry in the results array is always the _undetermined_ language (`"und"`).  The `undetermined` member in the array represents the percent confidence that the text is not in any of the languages that the model knows.
 
