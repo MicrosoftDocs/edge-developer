@@ -10,12 +10,12 @@ ms.date: 05/29/2026
 # Translate text with the Translator API
 <!-- https://aka.ms/translatorapi -->
 
-The Translator API is a web API that allows you to translate text between different languages by using an expert model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
+The Translator API allows you<!-- todo: Use the Translator API - https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/allow-allows --> to translate text between different languages from JavaScript code in your website or browser extension.  The Translator API is powered by a task-specific model that's built into Microsoft Edge.
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [Introduction](#introduction)
+* [Use the Language Detector API with the Translator API](#use-the-language-detector-api-with-the-translator-api)
 * [Benefits of the Translator API](#benefits-of-the-translator-api)
 * [Alternatives to the Translator API](#alternatives-to-the-translator-api)
 * [Disclaimer](#disclaimer)
@@ -54,9 +54,15 @@ To learn about the Language Detector API see: [Detect languages with the Languag
 
 
 <!-- ====================================================================== -->
+## Availability of the Translator API
+
+The Translator API is available in Microsoft Edge 148 or higher.
+
+
+<!-- ====================================================================== -->
 ## Benefits of the Translator API
 
-The Translator API uses an expert model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
+The Translator API uses a task-specific model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally). This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud translation service.
 
@@ -72,19 +78,19 @@ The translation models for specified language pairs are downloaded the first tim
 
 You can send network requests to cloud-based translation services with more sophisticated capabilities, including neural translation; see [Azure AI Translator documentation](/azure/ai-services/translator/).
 
-As an on-device alternative, the Prompt API serves more custom, multi-language prompting scenarios, with a small language model that's built into Microsoft Edge; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+As an on-device alternative, the Prompt API can also serve more custom, multi-lingual prompting scenarios, with a small language model that's built into Microsoft Edge; see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 
 <!-- ====================================================================== -->
 ## Disclaimer
 
-Like other machine translation models, the expert models in Microsft Edge can potentially produce translations that are unfair, unreliable, or offensive.  To learn more about the limitations of these machine translation models, see [Limitations](/azure/ai-foundry/responsible-ai/translator/transparency-note#limitations) in _Azure AI Translator Transparency Note_.
+Like other machine translation models, the task-specific models in Microsoft Edge can potentially produce translations that are unfair, unreliable, or offensive.  To learn more about the limitations of these machine translation models, see [Limitations](/azure/ai-foundry/responsible-ai/translator/transparency-note#limitations) in _Azure AI Translator Transparency Note_.
 
 
 <!-- ====================================================================== -->
 ## Model availability
 
-An initial download of the model is required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
+An initial download of the on-device translation model is required the first time a website calls the Translator API.  You can monitor the model download by using the monitor option when creating a new Translator API session; see [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor), below.
 
 
 <!-- ====================================================================== -->
@@ -92,9 +98,9 @@ An initial download of the model is required the first time a website calls a bu
 
 To see the Translator API in action, and review existing code that uses the API:
 
-1. In Microsoft Edge, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
+1. In Microsoft Edge 148 or higher, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
-1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable. The model for a specified language pair will be downloaded the first time the API is used.**
+1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable.  The model for a specified language pair will be downloaded the first time the API is used.**
 
 1. In the **Text to translate** text box, enter text to translate, and optionally change the **Source language** and **Target language** values.
 
