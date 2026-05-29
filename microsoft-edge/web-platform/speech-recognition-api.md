@@ -9,9 +9,7 @@ ms.date: 05/29/2026
 ---
 # Convert speech to text with the SpeechRecognition API
 
-The SpeechRecognition API is a standard web API that allows you to convert speech from an audio source, such as a video file, audio file, or the user microphone, into text, from your website's JavaScript code.
-
-This article covers using the SpeechRecognition API in Microsoft Edge to convert speech to text by using a local speech recognition model that's built into the browser.
+The SpeechRecognition API is a standard web API that allows you to convert speech from a media file or the device microphone, into text, from your website's JavaScript code. This article focuses on using the SpeechRecognition API with an on-device (or local) speech recognition model that's built into Microsoft Edge.
 
 For more information about the API itself, see [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API), at MDN.
 
@@ -23,34 +21,13 @@ For more information about the API itself, see [Web Speech API](https://develope
 <!-- ====================================================================== -->
 ## Availability of the local speech recognition model
 
-The SpeechRecognition API can be used with cloud recognition services. This article focuses on using the SpeechRecognition API with a local speech recognition model that's built into Microsoft Edge.
-
-The local model is available in Microsoft Edge version ... TODO (version, flag, hardware requirements, etc.) ...
+The local speech recognition model is available in Microsoft Edge Canary or Dev, starting with version 150.x.y.z <!-- todo add correct version and potential flag and hardware requirements -->
 
 
 <!-- ====================================================================== -->
 ## Alternatives to and benefits of the local speech recognition model
 
-To leverage AI capabilities in websites and browser extensions, you can also use the following methods:
-
-* Send network requests to cloud-based AI services, such as [Azure AI solutions](https://azure.microsoft.com/solutions/ai).
-
-* Run local AI models using the [Web Neural Network (WebNN) API](https://webmachinelearning.github.io/webnn-intro/) or [ONNX Runtime for Web](https://onnxruntime.ai/docs/tutorials/web/).
-
-
-The Writing Assistance APIs use a small language model (SLM) that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
-
-* **Reduced cost:** There's no cost associated with using a cloud AI service.
-
-* **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
-
-* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
-
-The Writing Assistance APIs use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
-
-* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
-
-* **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+<!-- todo -->
 
 
 <!-- ------------------------------ -->
@@ -154,6 +131,11 @@ recognition.lang = "en-US";
 recognition.processLocally = true;
 ```
 
+As of Microsoft Edge 150.x.y.z, the following input languages are supported for local speech recognition:
+* <!-- todo -->
+
+Language support is expected to expand in future versions.
+
 Also set the `continuous` and `interimResults` options to `true` to receive interim results and transcribe long audio sessions without stopping:
 
 ```js
@@ -254,10 +236,10 @@ See also:
 <!-- ====================================================================== -->
 ## Send feedback
 
-... TODO: Sohum: what kind of feedback are we looking for, and where should it be sent? ...
+We're very interested in hearing your feedback about the local speech recognition model, its performance, or any other improvements you'd like to see for your use-cases.  Please send feedback by adding a comment to [the SpeechRecognition API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/xyz). <!-- todo -->
 
 
 <!-- ====================================================================== -->
 ## See also
 
-... TODO ...
+<!-- todo -->
