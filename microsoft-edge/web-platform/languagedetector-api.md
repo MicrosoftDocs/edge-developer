@@ -9,7 +9,7 @@ ms.date: 06/01/2026
 ---
 # Detect languages with the Language Detector API
 
-Use the Language Detector API to detect the language of text from JavaScript code in your website or browser extension.  The API uses a task-specific model that is built into Microsoft Edge.
+Use the Language Detector API to detect the language of text from JavaScript code in your website or browser extension.  The API uses a task-specific model that's built into Microsoft Edge.
 
 **Detailed contents:**
 
@@ -89,7 +89,7 @@ An initial download of the model is required the first time a website calls the 
 
 To see the Language Detector API in action, and view existing code that uses this API:
 
-1. In Microsoft Edge 148 or later, go to the [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/languagedetector-api/) in a new window or tab.
+1. In Microsoft Edge 148 or later, go to [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/languagedetector-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model available.**
 
@@ -303,7 +303,7 @@ controller.abort();
 ## Send feedback
 
 We're interested in learning about:
-* The range of scenarios for which you are using the Language Detector API.
+* The range of scenarios for which you're using the Language Detector API.
 * Any issues you encounter with the API or language detection model.
 * Whether other task-specific, built-in APIs would be useful.
 

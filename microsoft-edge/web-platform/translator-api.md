@@ -29,7 +29,7 @@ Use the Translator API to translate text between different languages from JavaSc
 * [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor)
 * [Run the Translator API](#run-the-translator-api)
   * [Wait for the text to be translated (translate())](#wait-for-the-text-to-be-translated-translate)
-  * [Display tokens as they are generated (translateStreaming())](#display-tokens-as-they-are-generated-translatestreaming)
+  * [Display tokens as they're generated (translateStreaming())](#display-tokens-as-theyre-generated-translatestreaming)
 * [Stop translating text (abortController.signal)](#stop-translating-text-abortcontrollersignal)
 * [Destroy a session (destroy())](#destroy-a-session-destroy)
   * [Destroy a session by calling destroy()](#destroy-a-session-by-calling-destroy)
@@ -63,7 +63,7 @@ The Translator API is available in Microsoft Edge 148 or later.
 <!-- ====================================================================== -->
 ## Benefits of the Translator API
 
-The Translator API uses a task-specific model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally). This approach has the following benefits compared to cloud-based solutions:
+The Translator API uses a task-specific model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud translation service.
 
@@ -99,7 +99,7 @@ An initial download of the on-device translation model is required the first tim
 
 To see the Translator API in action, and review existing code that uses the API:
 
-1. In Microsoft Edge 148 or later, go to the [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
+1. In Microsoft Edge 148 or later, go to [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable.  The model for a specified language pair will be downloaded the first time the API is used.**
 
@@ -135,7 +135,7 @@ The next sections are about using the Translator API.
 <!-- ====================================================================== -->
 ## Check if the Translator API is enabled
 
-Before using the Translator API in your website's code, check that the API is available by testing the presence of the `Translator` object:
+Before using the Translator API in your website's code, check that the API is available, by testing the presence of the `Translator` object:
 
 ```javascript
 if (!Translator) {
@@ -154,7 +154,7 @@ The Translator API has the following requirements:
 * Translating from the specified source language to the specified target language must be supported.
 * The translation model for the language pair and the model runtime must already have been downloaded by Microsoft Edge.
 
-To check if the API can be used, call `Translator.availability()`:
+To check whether the Translator API can be used, call `Translator.availability()`:
 
 ```javascript
 const availability = await Translator.availability({
@@ -227,7 +227,7 @@ const session = await Translator.create({
 After you have created a model session, you can translate text.  The Translation API provides two methods to translate text:
 
 * `session.translate()` returns a promise, which resolves after the text has been translated.
-* `session.translateStreaming()` immediately returns a stream object, which you can use to display the translated text, token-by-token, as it is being generated.
+* `session.translateStreaming()` immediately returns a stream object, which you can use to display the translated text, token-by-token, as it's being generated.
 
 Details are below.
 
@@ -255,11 +255,11 @@ console.log(translatedText);
 
 
 <!-- ------------------------------ -->
-#### Display tokens as they are generated (`translateStreaming()`)
+#### Display tokens as they're generated (`translateStreaming()`)
 
 Translates text.  Immediately returns a stream object, which you can use to display the translated text, token-by-token, as it is being generated.
 
-To display the tokens as they are being generated, use this streaming method.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they are being generated:
+To display the tokens as they're being generated, use this streaming method.  The `translateStreaming()` method returns a stream object immediately.  Use the returned stream object to display the response tokens as they're being generated:
 
 ```javascript
 // Create a Translator session.
@@ -360,7 +360,10 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you use the Translator API, any issues with the API or expert model, and whether other task-specific, built-in APIs would be useful.
+We're interested in learning about:
+* The range of scenarios for which you use the Translator API.
+* Any issues with the API or expert model.
+* Whether other task-specific, built-in APIs would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1157).
 
