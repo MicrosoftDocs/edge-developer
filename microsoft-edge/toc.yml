@@ -134,11 +134,6 @@
 
             - name: Convert speech to text with the SpeechRecognition API
               href: ./web-platform/speech-recognition-api.md
-
-        - name: DevTools for agents  # the open PR 3811
-          items:
-            - name: Using Edge and WebView2 with Chrome DevTools MCP
-              href: ./devtools/agents/mcp.md
 # /AI for the web
 # =============================================================================
 # -----------------------------------------------------------------------------
