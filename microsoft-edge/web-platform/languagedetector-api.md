@@ -9,7 +9,7 @@ ms.date: 05/29/2026
 ---
 # Detect languages with the Language Detector API
 
-The Language Detector API is a web API that allows you to detect the language of text by using a model that's built into Microsoft Edge, from JavaScript code in your website or browser extension.
+The Language Detector API allows you to detect the language of text from JavaScript code in your website or browser extension. The API uses a task-specific model that is built into Microsoft Edge.
 
 **Detailed contents:**
 
