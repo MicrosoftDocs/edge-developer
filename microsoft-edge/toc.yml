@@ -105,31 +105,33 @@
           href: ./web-platform/site-impacting-changes.md
 # /Release notes
 # =============================================================================
-# Experimental APIs for Microsoft Edge
-    - name: Experimental APIs for Microsoft Edge
+# AI for the web
+    - name: AI for the web
       items:
-        - name: Test experimental APIs and features by using origin trials
-          href: ./origin-trials/index.md
-          displayName: Experimental web platform features  # standard term eg in edge://flags
+        - name: Developer APIs
+          items:
+            - name: Test experimental APIs and features by using origin trials
+              href: ./origin-trials/index.md
+              displayName: Experimental web platform features  # standard term eg in edge://flags
 
-        - name: Provide user-relevant ads with the Ad Selection API
-          href: ./web-platform/ad-selection-api.md
+            - name: Provide user-relevant ads with the Ad Selection API
+              href: ./web-platform/ad-selection-api.md
 
-        - name: Prompt a built-in language model with the Prompt API
-          href: ./web-platform/prompt-api.md
+            - name: Prompt a built-in language model with the Prompt API
+              href: ./web-platform/prompt-api.md
 
-        - name: Summarize, write, and rewrite text with the Writing Assistance APIs
-          href: ./web-platform/writing-assistance-apis.md
+            - name: Summarize, write, and rewrite text with the Writing Assistance APIs
+              href: ./web-platform/writing-assistance-apis.md
 
-        - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
-          href: ./web-platform/proofreader-api.md
+            - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+              href: ./web-platform/proofreader-api.md
 
-        - name: Translate text with the Translator API
-          href: ./web-platform/translator-api.md
+            - name: Translate text with the Translator API
+              href: ./web-platform/translator-api.md
 
-        - name: Detect languages with the Language Detector API
-          href: ./web-platform/languagedetector-api.md
-# /Experimental APIs for Microsoft Edge
+            - name: Detect languages with the Language Detector API
+              href: ./web-platform/languagedetector-api.md
+# /AI for the web
 # =============================================================================
 # -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
