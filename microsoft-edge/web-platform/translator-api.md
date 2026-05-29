@@ -26,7 +26,7 @@ The Translator API is a web API that allows you to translate text between differ
 * [Check if the model can be used (availability())](#check-if-the-model-can-be-used-availability)
 * [Create a new session (create())](#create-a-new-session-create)
 * [Monitor the progress of the model download (monitor)](#monitor-the-progress-of-the-model-download-monitor)
-* [Run the Translator API (translate())](#run-the-translator-api-translate)
+* [Run the Translator API](#run-the-translator-api)
   * [Wait for the text to be translated (translate())](#wait-for-the-text-to-be-translated-translate)
   * [Display tokens as they are generated (translateStreaming())](#display-tokens-as-they-are-generated-translatestreaming)
 * [Stop translating text (abortController.signal)](#stop-translating-text-abortcontrollersignal)
