@@ -481,6 +481,10 @@
                   href: ./devtools/elements-tool/elements-tool.md
                   displayName: Elements tool
 
+                - name: Find invalid, overridden, inactive, and other CSS
+                  href: ./devtools/css/issues.md
+                  displayName: Elements tool
+
                 - name: CSS features reference
                   href: ./devtools/css/reference.md
                   displayName: Elements tool
