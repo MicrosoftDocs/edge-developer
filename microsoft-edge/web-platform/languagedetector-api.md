@@ -47,7 +47,7 @@ For introductory information about the Language Detector API, see:
 
 To facilitate translating user-provided text to another language, use the Language Detector API in conjunction with the Translator API.
 
-To learn about the Translator API see: [Translate text with the Translator API](./translator-api.md).
+To learn about the Translator API, see [Translate text with the Translator API](./translator-api.md).
 
 
 <!-- ====================================================================== -->
