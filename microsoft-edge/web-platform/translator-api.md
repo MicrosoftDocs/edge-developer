@@ -10,7 +10,7 @@ ms.date: 05/29/2026
 # Translate text with the Translator API
 <!-- https://aka.ms/translatorapi -->
 
-The Translator API allows you<!-- todo: Use the Translator API - https://learn.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/allow-allows --> to translate text between different languages from JavaScript code in your website or browser extension.  The Translator API is powered by a task-specific model that's built into Microsoft Edge.
+Use the Translator API to translate text between different languages from JavaScript code in your website or browser extension.  The Translator API is powered by a task-specific model that's built into Microsoft Edge.
 
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
