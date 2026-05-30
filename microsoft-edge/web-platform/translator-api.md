@@ -360,9 +360,10 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're interested in learning about:
+We're interested in learning about the following:
 * The range of scenarios for which you use the Translator API.
-* Any issues with the API or expert model.
+* Any issues with the Translator API.
+* Any issues with the on-device translation models.
 * Whether other task-specific, built-in APIs would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Translator API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1157).
