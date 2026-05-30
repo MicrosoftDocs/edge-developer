@@ -14,8 +14,19 @@ The SpeechRecognition API is a standard web API that allows you to convert speec
 For more information about the API itself, see [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API), at MDN.
 
 **Detailed contents:**
-
-* ... TODO ...
+* [Availability of the local speech recognition model](#availability-of-the-local-speech-recognition-model)
+* [Alternatives to and benefits of the local speech recognition model](#alternatives-to-and-benefits-of-the-local-speech-recognition-model)
+   * [Model availability](#model-availability)
+* [Enable local speech recognition in Microsoft Edge](#enable-local-speech-recognition-in-microsoft-edge)
+* [See a working example](#see-a-working-example)
+* [Use the SpeechRecognition API with local recognition in your website](#use-the-speechrecognition-api-with-local-recognition-in-your-website)
+   * [Check if the API is supported and instantiate a SpeechRecognition object](#check-if-the-api-is-supported-and-instantiate-a-speechrecognition-object)
+   * [Choose an input language and opt-in to local recognition](#choose-an-input-language-and-opt-in-to-local-recognition)
+   * [Check whether the local model is already installed](#check-whether-the-local-model-is-already-installed)
+   * [Start speech recognition](#start-speech-recognition)
+   * [Stop recognition explicitly and on media end](#stop-recognition-explicitly-and-on-media-end)
+* [Send feedback](#send-feedback)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
