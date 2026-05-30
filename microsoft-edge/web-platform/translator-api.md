@@ -360,7 +360,7 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're interested in learning about the following:
+We're interested in learning about:
 * The range of scenarios for which you use the Translator API.
 * Any issues with the Translator API.
 * Any issues with the on-device translation models.
