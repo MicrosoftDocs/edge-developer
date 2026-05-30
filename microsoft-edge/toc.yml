@@ -136,12 +136,9 @@
             - name: Detect languages with the Language Detector API
               href: ./web-platform/languagedetector-api.md
 
-            - name: Convert speech to text with the SpeechRecognition API
-              href: ./web-platform/speech-recognition-api.md
-
         - name: DevTools for agents
           items:
-            - name: Index
+            - name: DevTools for agents
               href: ./devtools/agents/index.md
               displayName: 
 
