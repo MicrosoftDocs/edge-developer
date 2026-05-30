@@ -105,18 +105,22 @@
           href: ./web-platform/site-impacting-changes.md
 # /Release notes
 # =============================================================================
+# Experimental APIs for Microsoft Edge
+    - name: Experimental APIs for Microsoft Edge
+      items:
+        - name: Test experimental APIs and features by using origin trials
+          href: ./origin-trials/index.md
+          displayName: Experimental web platform features  # standard term eg in edge://flags
+
+        - name: Provide user-relevant ads with the Ad Selection API
+          href: ./web-platform/ad-selection-api.md
+# /Experimental APIs for Microsoft Edge
+# =============================================================================
 # AI for the web
     - name: AI for the web
       items:
         - name: Developer APIs
           items:
-            - name: Test experimental APIs and features by using origin trials
-              href: ./origin-trials/index.md
-              displayName: Experimental web platform features  # standard term eg in edge://flags
-
-            - name: Provide user-relevant ads with the Ad Selection API
-              href: ./web-platform/ad-selection-api.md
-
             - name: Prompt a built-in language model with the Prompt API
               href: ./web-platform/prompt-api.md
 
