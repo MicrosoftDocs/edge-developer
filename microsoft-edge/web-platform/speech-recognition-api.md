@@ -15,7 +15,7 @@ For more information about the API itself, see [Web Speech API](https://develope
 
 **Detailed contents:**
 * [Availability of the local speech recognition model](#availability-of-the-local-speech-recognition-model)
-* [Benefits of the local speech recognition model](#alternatives-to-and-benefits-of-the-local-speech-recognition-model)
+* [Benefits of the local speech recognition model](#benefits-of-the-local-speech-recognition-model)
    * [Model availability](#model-availability)
 * [Enable local speech recognition in Microsoft Edge](#enable-local-speech-recognition-in-microsoft-edge)
 * [See a working example](#see-a-working-example)
