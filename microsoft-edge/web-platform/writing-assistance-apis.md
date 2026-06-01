@@ -25,7 +25,7 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
     * [Hardware requirements](#hardware-requirements)
     * [Model availability](#model-availability)
 * [The Aion-1.0-Instruct model](#the-aion-10-instruct-model)
-  * [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-10-instruct-for-the-prompt-api)
+  * [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-10-instruct-for-the-writing-assistance-apis)
   * [Disclaimer](#disclaimer-1)
   * [Model availability](#model-availability-1)
 * [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis)
@@ -144,9 +144,9 @@ Aion-1.0-Instruct is expected to be made available as an open source model in Ju
 
 
 <!-- ------------------------------ -->
-#### Enable Aion-1.0-Instruct for the Prompt API
+#### Enable Aion-1.0-Instruct for the Writing Assistance APIs
 
-By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1.0-Instruct in Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Prompt API.
+By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1.0-Instruct in Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Writing Assistance APIs.
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -207,7 +207,7 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
 
    If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.
 
-   If your device performance class is **Medium** or **Low**, the Writing Assistance APIs are only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.X<!-- todo -->.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-1.0-instruct-for-the-prompt-api), above.
+   If your device performance class is **Medium** or **Low**, the Writing Assistance APIs are only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.X<!-- todo -->.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-1.0-instruct-for-the-writing-assistance-apis), above.
 
   If you notice issues with these models, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md) in the MSEdgeExplainers repo.
 
