@@ -62,9 +62,9 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 
 1. Make sure you're using Microsoft Edge Canary or Dev (version 150.x.y.z or newer)<!-- todo: add correct version -->.  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
+1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
-1. In the search box, at the top of the page, enter **Speech Recognition with on-device model**.
+1. In the search box at the top of the page, enter **Speech Recognition with on-device model**.
 
 1. In the **Speech Recognition with on-device model** drop-down list, select **Enabled**, and then click the **Restart** button in the lower right:
 
@@ -74,7 +74,7 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 <!-- ====================================================================== -->
 ## See a working example
 
-To see the SpeechRecognition API in action, and review existing code:
+To see the SpeechRecognition API in action and view the demo code:
 
 1. [Enable local speech recognition in Microsoft Edge](#enable-local-speech-recognition-in-microsoft-edge), as described above.
 
@@ -97,7 +97,7 @@ To see the SpeechRecognition API in action, and review existing code:
 
    ![Installation of the on-device speech recognition model](./speech-recognition-api-images/installing.png)
 
-   Once the model is installed, the text transcription is displayed in the page:
+   After the model is installed, the text transcription is displayed in the page:
 
    ![Conversion of speech to text](./speech-recognition-api-images/speaking.png)
 
