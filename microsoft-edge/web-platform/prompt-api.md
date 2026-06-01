@@ -92,7 +92,7 @@ In Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2, th
 
 Starting with version 150.X <!-- todo -->, the Prompt API can also be used with the prerelease Aion-1.0-Instruct model, also built into Microsoft Edge. Aion-1.0-Instruct is a smaller, faster, and more efficient model than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing. If the performance class of your device is not high enough to support Phi-4-mini, you can test the prerelease Aion-1.0-Instruct model.
 
-Both models, and how to enable Aion-1.0-Instruct, are described in more detail below.
+To learn more about both models, and how to enable Aion-1.0-Instruct, read the sections below.
 
 
 <!-- ====================================================================== -->
@@ -198,9 +198,11 @@ To use the Prompt API in Microsoft Edge:
 
 1. To check if your device meets the hardware requirements for the Prompt API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Prompt API should be supported on your device.  If you continue to notice issues, please [Create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) in the MSEdgeExplainers repo.
+   If your device performance class is **High** or greater, the Prompt API should be supported on your device.
 
    If your device performance class is **Medium** or **Low**, the Prompt API is only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.X<!-- todo -->.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-1.0-instruct-for-the-prompt-api), above.
+
+   If you notice issues with these models, please [Create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) in the MSEdgeExplainers repo.
 
 
 <!-- ====================================================================== -->
