@@ -146,7 +146,7 @@ Aion-1.0-Instruct is expected to be made available as an open source model in Ju
 
 By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct in Microsoft Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Prompt API.
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
@@ -176,7 +176,7 @@ An initial download of the Aion-1.0-Instruct model is required the first time th
 
 To use the Prompt API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 

@@ -148,7 +148,7 @@ Aion-1.0-Instruct is expected to be made available as an open source model in Ju
 
 By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1.0-Instruct in Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Writing Assistance APIs.
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
@@ -178,7 +178,7 @@ An initial download of the model will be required the first time that a website 
 
 To use the Writer API or the Rewriter API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
 
