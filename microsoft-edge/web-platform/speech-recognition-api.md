@@ -70,9 +70,9 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 
 1. Select **Enabled** next to the flag for the API you want to enable:
 
-   ![Flags page of browser](./speech-recognition-api-images/flag.png)
-
 1. Restart Microsoft Edge Canary or Dev.
+
+   ![Flags page of browser](./speech-recognition-api-images/flag.png)
 
 
 <!-- ====================================================================== -->
@@ -82,7 +82,7 @@ To see the SpeechRecognition API in action, and review existing code:
 
 1. [Enable local speech recognition in Microsoft Edge](#enable-local-speech-recognition-in-microsoft-edge), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to [SpeechRecognition API](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/speechrecognition-api/).
+1. In Microsoft Edge Canary or Dev, open a tab or window and go to [SpeechRecognition API](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/speechrecognition-api/).
 
 1. In the information banner at the top, check the status: it initially reads **SpeechRecognition API ready. Click Start to begin**.
 
@@ -129,9 +129,13 @@ if (!window.SpeechRecognition) {
   console.log("The SpeechRecognition API is not available in this browser.");
 } else {
   console.log("The SpeechRecognition API is available.");
-
-  const recognition = new SpeechRecognition();
 }
+```
+
+If the API is supported, create a new `SpeechRecognition` instance to start using the API:
+
+```js
+const recognition = new SpeechRecognition();
 ```
 
 See also:
@@ -158,7 +162,7 @@ As of Microsoft Edge 150.x.y.z, the following input languages are supported for 
 
 Language support is expected to expand in future versions.
 
-Also set the `continuous` and `interimResults` options to `true` to receive interim results and transcribe long audio sessions without stopping:
+Also set the `continuous` and `interimResults` options to `true` to transcribe long audio sessions without stopping and receive interim results:
 
 ```js
 recognition.continuous = true;
@@ -175,19 +179,26 @@ See also:
 <!-- ------------------------------ -->
 #### Check whether the local model is already installed
 
-Before starting recognition, check model availability for your selected language. If the model is not yet installed, trigger the installation and wait for it to complete before starting recognition:
+Before starting recognition, check if the local model is available for your selected language by using the `SpeechRecognition.available()` method.
+
+If the model is not yet installed, trigger the installation by using the `SpeechRecognition.install()` method and wait for the model to complete before starting recognition:
 
 ```js
 async function ensureModelReady(lang) {
+  // Check if the model is already available.
   const availability = await SpeechRecognition.available({
     langs: [lang],
     processLocally: true,
   });
 
+  // If the model is already available, proceed to recognition.
   if (availability === "available") {
     return true;
   }
 
+  // If the model is not available but can be downloaded,
+  // trigger the installation and wait for it to complete
+  // before proceeding to recognition.
   if (availability === "downloadable" || availability === "downloading") {
     const installed = await SpeechRecognition.install({
       langs: [lang],
