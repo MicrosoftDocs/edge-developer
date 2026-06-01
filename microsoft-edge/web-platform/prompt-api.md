@@ -57,7 +57,7 @@ The Prompt API is available as a developer preview in Microsoft Edge Canary or D
 The Prompt API is intended to help discover use cases and understand challenges for built-in SLMs.  This API is expected to be succeeded by other experimental APIs for specific AI-powered tasks such as writing assistance and text translation.  To learn more about these other APIs, see:
 
 * [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
-* [Translate text with the Translator API](./translator-apis.md)
+* [Translate text with the Translator API](./translator-api.md)
 * [Detect languages with the Language Detector API](./languagedetector-api.md)
 
 
@@ -200,7 +200,7 @@ To use the Prompt API in Microsoft Edge:
 
    If your device performance class is **High** or greater, the Prompt API should be supported on your device.
 
-   If your device performance class is **Medium** or **Low**, the Prompt API is only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.X<!-- todo -->.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-1.0-instruct-for-the-prompt-api), above.
+   If your device performance class is **Medium** or **Low**, the Prompt API is only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.X<!-- todo -->.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-10-instruct-for-the-prompt-api), above.
 
    If you notice issues with these models, please [Create a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) in the MSEdgeExplainers repo.
 
