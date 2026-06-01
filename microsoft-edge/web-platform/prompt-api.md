@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 05/19/2025
+ms.date: 06/02/2025
 ---
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
@@ -21,11 +21,11 @@ The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experim
 * [The Phi-4-mini model](#the-phi-4-mini-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
-    * [Model availability](#model-availability)
+    * [Availability of the Phi-4-mini model](#availability-of-the-phi-4-mini-model)
 * [The Aion-1.0-Instruct model](#the-aion-10-instruct-model)
   * [Enable Aion-1.0-Instruct for the Prompt API](#enable-aion-10-instruct-for-the-prompt-api)
   * [Disclaimer](#disclaimer-1)
-  * [Model availability](#model-availability-1)
+  * [Availability of the Aion-1.0-Instruct model](#availability-of-the-aion-10-instruct-model)
 * [Enable the Prompt API](#enable-the-prompt-api)
 * [See a working example](#see-a-working-example)
 * [Use the Prompt API](#use-the-prompt-api)
@@ -76,7 +76,7 @@ The Prompt API uses an SLM that runs on the same device where the inputs to and 
 
 * **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
 
-* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
+* **Improved privacy:** The data input to the model never leaves the device, and isn't collected to train AI models.
 
 The Prompt API uses a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
@@ -88,9 +88,9 @@ The Prompt API uses a model that's provided by Microsoft Edge and built into the
 <!-- ====================================================================== -->
 ## Small language models built into Microsoft Edge
 
-In Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2, the Prompt API uses the Phi-4-mini model, built into Microsoft Edge.
+In Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2, the Prompt API uses the Phi-4-mini model, which is built into Microsoft Edge.
 
-Starting with version 150.X <!-- todo -->, the Prompt API can also be used with the prerelease Aion-1.0-Instruct model, also built into Microsoft Edge. Aion-1.0-Instruct is a smaller, faster, and more efficient model than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing. If the performance class of your device is not high enough to support Phi-4-mini, you can test the prerelease Aion-1.0-Instruct model.
+Starting with version 150.X <!-- todo -->, the Prompt API can also be used with the prerelease Aion-1.0-Instruct model, which is also built into Microsoft Edge.  Aion-1.0-Instruct is a smaller, faster, and more efficient model than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing.  If the performance class of your device isn't high enough to support Phi-4-mini, you can test the prerelease Aion-1.0-Instruct model.
 
 To learn more about both models, and how to enable Aion-1.0-Instruct, read the sections below.
 
@@ -98,7 +98,7 @@ To learn more about both models, and how to enable Aion-1.0-Instruct, read the s
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Prompt API allows you to prompt Phi-4-mini — a powerful small language model that excels at text-based tasks — built into Microsoft Edge.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+The Prompt API allows you to prompt Phi-4-mini, which is built into Microsoft Edge.  Phi-4-mini is a powerful small language model that excels at text-based tasks.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->
@@ -118,7 +118,7 @@ The Prompt API developer preview is intended to work on devices with hardware ca
 
 * **GPU:** 5.5 GB of VRAM or more.
 
-* **Network:** Unlimited data plan or unmetered connection.  The model is not downloaded if using a metered connection.
+* **Network:** Unlimited data plan or unmetered connection.  The model isn't downloaded if using a metered connection.
 
 To check if your device supports the Prompt API developer preview, see [Enable the Prompt API](#enable-the-prompt-api) below and check your device performance class.
 
@@ -126,15 +126,15 @@ Due to the experimental nature of the Prompt API, you might observe issues on sp
 
 
 <!-- ------------------------------ -->
-#### Model availability
+#### Availability of the Phi-4-mini model
 
-An initial download of the model will be required the first time a website calls an API that requires an on-device model.  You can monitor the model download by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Phi-4-mini model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the Phi-4-mini model by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
 ## The Aion-1.0-Instruct model
 
-In Microsoft Edge Canary or Dev, starting with version 150.X<!-- todo -->, the Prompt API can also be used with the prerelease Aion-1.0-Instruct model, built into Microsoft Edge.
+In Microsoft Edge Canary or Dev, starting with version 150.X<!-- todo -->, the Prompt API can also be used with the prerelease Aion-1.0-Instruct model, which is built into Microsoft Edge.
 
 This Aion-1.0-Instruct model is significantly smaller, faster, and more efficient than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing.
 
@@ -144,21 +144,17 @@ Aion-1.0-Instruct is expected to be made available as an open source model in Ju
 <!-- ------------------------------ -->
 #### Enable Aion-1.0-Instruct for the Prompt API
 
-By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct in Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Prompt API.
+By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct in Microsoft Edge Canary or Dev, enable the **Enable prerelease on-device language model** flag, as described in the steps below.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Prompt API.
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 150.X <!-- todo --> or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
+1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
-1. In the search box, at the top of the page, enter **Enable prerelease on-device language model**.
+1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
   
-   The page is filtered to show the matching flag.
-
-1. Under **Enable prerelease on-device language model**, select **Enabled**:
+1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./prompt-api-images/prerelease-model-flag-for-prompt-api.png)
-
-1. Restart Microsoft Edge Canary or Dev.
 
 1. To check that Aion-1.0-Instruct is being used as the on-device language model, go to `edge://on-device-internals`, click **Model Status**, and check that **Model Name** is set to **Muffin**.
 
@@ -166,13 +162,13 @@ By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-The Aion-1.0-Instruct model is made available in Edge 150.X<!-- todo --> for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, please note that, given its prerelease state, model behaviors and capabilities are subject to change.
+The Aion-1.0-Instruct model is made available in Microsoft Edge 150.X<!-- todo --> for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
 
 
 <!-- ------------------------------ -->
-#### Model availability
+#### Availability of the Aion-1.0-Instruct model
 
-An initial download of the model will be required the first time a website calls an API that requires an on-device model.  You can monitor the model download by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion-1.0-Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the Aion-1.0-Instruct model by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
@@ -610,7 +606,13 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.  We're very interested in learning about the range of scenarios for which you intend to use the Prompt API, any issues with the API or language models, and whether new task-specific APIs, such as for proofreading or translation, would be useful.
+The Prompt API developer preview is intended to help discover use-cases for browser-provided language models.
+
+We're interested in learning about:
+* The range of scenarios for which you intend to use the Prompt API.
+* Any issues with the Prompt API.
+* Any issues with the language models.
+* Whether new task-specific APIs, such as for proofreading or translation, would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 
