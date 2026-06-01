@@ -5,13 +5,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 05/29/2026
+ms.date: 06/01/2026
 ---
 # Convert speech to text with the SpeechRecognition API
 
-The SpeechRecognition API is a standard web API that enables converting speech, from an audio source such as a media file or device microphone, into text, directly from a website's or browser extensions's JavaScript code. This article focuses on using the SpeechRecognition API with the on‑device (or local) speech recognition model that is built into Microsoft Edge.
+The SpeechRecognition API is a standard web API that enables converting speech, from an audio source such as a media file or device microphone, into text, directly from a website's or browser extensions's JavaScript code.  This article focuses on using the SpeechRecognition API with the on‑device (or local) speech recognition model that is built into Microsoft Edge.
 
-For more information about the API itself, see [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API), at MDN.
+For more information about the API, see [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API), at MDN.
 
 **Detailed contents:**
 * [Availability of the local speech recognition model](#availability-of-the-local-speech-recognition-model)
@@ -32,13 +32,13 @@ For more information about the API itself, see [Web Speech API](https://develope
 <!-- ====================================================================== -->
 ## Availability of the local speech recognition model
 
-The local speech recognition model is available in Microsoft Edge Canary or Dev (version 150.x.y.z or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).<!-- todo add correct version and potential flag and hardware requirements -->
+The local speech recognition model is available in Microsoft Edge Canary or Dev (version 150.x.y.z or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).<!-- todo add correct version and potential flag and hardware requirements -->
 
 
 <!-- ====================================================================== -->
 ## Benefits of the local speech recognition model
 
-When using the SpeechRecognition API with the local model in Edge, speech recognition happens on the same device where the speech is captured. This approach has the following benefits compared to cloud-based solutions:
+When using the SpeechRecognition API with the local model in Microsoft Edge, speech recognition happens on the same device where the speech is captured.  This approach has the following benefits compared to cloud-based solutions:
 
 * **Reduced cost:** There's no cost associated with using a cloud recognition service.
 
@@ -50,15 +50,15 @@ When using the SpeechRecognition API with the local model in Edge, speech recogn
 <!-- ------------------------------ -->
 #### Model availability
 
-An initial download of the model will be required the first time a website uses the local speech recognition model with the SpeechRecognition API.
+An initial download of the model is required the first time that a website uses the local speech recognition model with the SpeechRecognition API.
 
-You can monitor the model download by using the promise that's returned by the SpeechRecognition API `install()` method.  To learn more, see [Check whether the local model is already installed](#check-whether-the-local-model-is-already-installed), below.
+You can monitor the model download by using the promise that's returned by the SpeechRecognition API `install()` method.  See [Check whether the local model is already installed](#check-whether-the-local-model-is-already-installed), below.
 
 
 <!-- ====================================================================== -->
 ## Enable local speech recognition in Microsoft Edge
 
-To use the local speech recognition model with the SpeechRecognition API, you need to enable the feature in Microsoft Edge Canary or Dev.  To enable the feature:
+To use the local speech recognition model with the SpeechRecognition API, you need to enable the feature in Microsoft Edge Canary or Dev.  To enable speech recognition using the on-device model:
 
 1. Make sure you're using Microsoft Edge Canary or Dev (version 150.x.y.z or newer)<!-- todo: add correct version -->.  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -66,11 +66,7 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 
 1. In the search box, at the top of the page, enter **Speech Recognition with on-device model**.
 
-   The page is filtered to show the matching flag.
-
-1. Select **Enabled** next to the flag for the API you want to enable:
-
-1. Restart Microsoft Edge Canary or Dev.
+1. In the **Speech Recognition with on-device model** drop-down list, select **Enabled**, and then click the **Restart** button in the lower right:
 
    ![Flags page of browser](./speech-recognition-api-images/flag.png)
 
@@ -82,22 +78,22 @@ To see the SpeechRecognition API in action, and review existing code:
 
 1. [Enable local speech recognition in Microsoft Edge](#enable-local-speech-recognition-in-microsoft-edge), as described above.
 
-1. In Microsoft Edge Canary or Dev, open a tab or window and go to [SpeechRecognition API](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/speechrecognition-api/).
+1. In Microsoft Edge Canary or Dev, open a tab or window and go to [SpeechRecognition API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/speechrecognition-api/).
 
-1. In the information banner at the top, check the status: it initially reads **SpeechRecognition API ready. Click Start to begin**.
+1. In the information banner at the top, check the status: it initially reads **SpeechRecognition API ready.  Click Start to begin.**
 
-1. Under **Input language**, choose the language you want to use for speech recognition.
+1. In the **Input language** drop-down list, select the language that you want to use for speech recognition.
 
-1. Under **Audio source**, use the dropdown menu to select the audi to use for speech recognition:
+1. In the **Audio source** drop-down list, select an audio source for speech recognition:
 
-   * Choose **Microphone** to use your device microphone as the audio source.
-   * Choose **File** to use an audio or video file from your device as the audio source.
+   * Select **Microphone** to use your device microphone as the audio source.
+   * Select **File** to use an audio or video file from your device as the audio source.
 
-1. If you chose **File** as the audio source, click **Choose file** under the **Media file** section, and select an audio or video file from your device.
+1. If you selected **File** as the audio source, a **Media file** section is displayed.  Click the **Choose File** button, and then select an audio or video file from your device.
 
-1. Click **Start**.
+1. Click the **Start** button.
 
-   If you have not already downloaded the local speech recognition model for the selected language, the download starts and the information banner reads **Installing on-device model for en-US...**.
+   If you haven't already downloaded the local speech recognition model for the selected language, the download starts and the information banner reads **Installing on-device model for en-US...**:
 
    ![Installation of the on-device speech recognition model](./speech-recognition-api-images/installing.png)
 
@@ -145,14 +141,14 @@ See also:
 <!-- ------------------------------ -->
 #### Choose an input language and opt-in to local recognition
 
-To configure speech recognition by using a local model, choose an input language and set the `processLocally` option: 
+To configure speech recognition by using a local model, specify an input language and set the `processLocally` option:
 
 ```js
 recognition.lang = "en-US";
 recognition.processLocally = true;
 ```
 
-As of Microsoft Edge 150.x.y.z, the following input languages are supported for local speech recognition:
+As of Microsoft Edge 150.x.y.z TODO, the following input languages are supported for local speech recognition:
 * English (en-US)
 * German (de-DE)
 * Italian (it-IT)
@@ -234,7 +230,7 @@ When called without a parameter, the `start()` method recognizes audio from the 
 recognition.start();
 ```
 
-To recognize audio from a media file instead, pass a `MediaStreamTrack` instance as an argument to the `start()` method.  For example, you can create a `MediaStreamTrack` instance by creating a `MediaStreamDestinationNode` instance by using the WebAudio API:
+To recognize audio from a media file instead of from the user's microphone, pass a `MediaStreamTrack` instance as an argument to the `start()` method.  For example, you can create a `MediaStreamTrack` instance by creating a `MediaStreamDestinationNode` instance by using the WebAudio API:
 
 ```js
 const audioContext = new AudioContext();
@@ -256,7 +252,7 @@ To stop recognition, use the `stop()` method:
 recognition.stop();
 ```
 
-You can also choose to stop recognition when the media input ends, by using the `onended` event handler of the media element that you're using as input.  For example, if you're using a `HTMLAudioElement` or `HTMLVideoElement` as the audio source, you can set up the event handler like this:
+You can also choose to stop recognition when the media input ends, by using the `onended` event handler of the media element that you're using as input.  For example, if you're using a `HTMLAudioElement` or `HTMLVideoElement` as the audio source, you can set up the event handler as follows:
 
 ```js
 mediaElement.onended = () => recognition.stop();
@@ -269,10 +265,35 @@ See also:
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in hearing your feedback about the local speech recognition model, its performance, or any other improvements you'd like to see for your use-cases.  Please send feedback by adding a comment to [the SpeechRecognition API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1333).
+We're interested in hearing your feedback about:
+* The local speech recognition model.
+* The performance of the local speech recognition model.
+* Any other improvements you'd like to see for your use-cases.
+
+Please send feedback, by adding a comment to the [SpeechRecognition API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1333).
 
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links from article body -->
 
-<!-- todo add links from the article -->
+Microsoft:
+* [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
+MDN:
+* [SpeechRecognition](https://developer.mozilla.org/docs/Web/API/SpeechRecognition)
+   * [SpeechRecognition: available() static method](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/available_static)
+   * [SpeechRecognition: continuous property](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/continuous)
+   * [SpeechRecognition: install() static method](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/install_static)
+   * [SpeechRecognition: interimResults property](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/interimResults)
+   * [SpeechRecognition: lang property](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/lang)
+   * [SpeechRecognition: processLocally property](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/processLocally)
+   * [SpeechRecognition: start() method](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/start)
+   * [SpeechRecognition: stop() method](https://developer.mozilla.org/docs/Web/API/SpeechRecognition/stop)
+* [Web Audio API](https://developer.mozilla.org/docs/Web/API/Web_Audio_API)
+* [Web Speech API](https://developer.mozilla.org/docs/Web/API/Web_Speech_API)
+
+GitHub:
+* [SpeechRecognition API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/speechrecognition-api/)
+   * [/built-in-ai/playgrounds/speechrecognition-api/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/playgrounds/speechrecognition-api) - Source code.
+* [SpeechRecognition API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1333)
