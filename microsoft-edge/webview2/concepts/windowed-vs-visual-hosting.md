@@ -24,7 +24,7 @@ The different approaches for hosting the WebView2 control in your app are simila
 | Approach | Description | Optimized for |
 |---|---|---|
 | Windowed hosting | The WebView2 control takes input from the operating system (OS).  The OS sends the input to the WebView2. | Displaying web content quickly and easily, without having to include features for inputs, outputs, and accessibility. |
-| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a Visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling and the caveat that the Windows Shell Handwriting experience is unsupported. |
+| Window to Visual hosting | A combination of Windowed and Visual hosting. Similar to Windowed hosting except that WebView2 content is output to a Visual that is hosted in a window rather having content output to the window directly. | A developer experience nearly identical to Windowed hosting, but with improved DPI/scaling handling. |
 | Visual hosting | Your host app takes spatial input (such as mouse or touch input) from the user.  Your app sends this input to the WebView2 control. | More granular control over control composition.  The app needs to do specific handling of window management and rendering APIs. |
 
 These approaches have different requirements, constraints, and benefits.
@@ -72,21 +72,21 @@ For a list of APIs that can be used when configuring WebView2 for Windowed hosti
 
 
 <!-- ====================================================================== -->
-## Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits and tradeoff
+## Window to Visual hosting: For a similar experience as Windowed hosting, with added benefits
 
-_Window-to-Visual hosting_ means that the WebView2 content is outputted to a Visual that is hosted in an HWND, rather than outputting content to a window directly or to a Visual directly.  By hosting content in an HWND, Window to Visual hosting is easy to use, in the same ways as Windowed hosting.  But by displaying content by using a Visual, Window-to-Visual hosting avoids some DPI and input issues that can result when using Windowed hosting.
+_Window to Visual hosting_ means that the WebView2 content is outputted to a Visual that is hosted in an HWND, rather than outputting content to a window directly or to a Visual directly.  By hosting content in an HWND, Window to Visual hosting is easy to use, in the same ways as Windowed hosting.  But by displaying content by using a Visual, Window to Visual hosting avoids some DPI and input issues that can result when using Windowed hosting.
 
-Window to Visual hosting doesn't require you to use the WebView2 Visual hosting APIs.
-
-To enable Window to Visual hosting, the environment variable `COREWEBVIEW2_FORCED_HOSTING_MODE` must be set to the value `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL` before initializing your WebView2.
-
-In Window-to-Visual hosting and Visual hosting, a _Visual_ is a basic graphical unit that can be used to compose graphical experiences on Windows. The Windows graphics APIs that expose this functionality and are relevant to WebView2 are `DirectComposition` and `Windows.UI.Composition`. The "Visual" in "Visual hosting" can be any one of `IDCompositionVisual`, `IDCompositionTarget`, or `Windows.UI.Composition.Visual`, which are Visuals that are exposed through the `DirectComposition` and `Windows.UI.Composition` APIs.  (Window to Visual hosting uses `IDCompositionVisual` specifically.)  See:
+In Window to Visual hosting and Visual hosting, a _Visual_ is a basic graphical unit that can be used to compose graphical experiences on Windows. The Windows graphics APIs that expose this functionality and are relevant to WebView2 are `DirectComposition` and `Windows.UI.Composition`. The "Visual" in "Visual hosting" can be any one of `IDCompositionVisual`, `IDCompositionTarget`, or `Windows.UI.Composition.Visual`, which are Visuals that are exposed through the `DirectComposition` and `Windows.UI.Composition` APIs.  (Window to Visual hosting uses `IDCompositionVisual` specifically.)  See:
 * [Basic concepts](/windows/win32/directcomp/basic-concepts) in the Windows App Development > DirectComposition docs.
 * [Composition visual](/windows/uwp/composition/composition-visual-tree) in the Windows App Development > UWP docs.
 
+To enable Window to Visual hosting, the environment variable `COREWEBVIEW2_FORCED_HOSTING_MODE` must be set to the value `COREWEBVIEW2_HOSTING_MODE_WINDOW_TO_VISUAL` before initializing your WebView2.
+
 
 <!-- ------------------------------ -->
-#### Advantages
+#### Capabilities and benefits of Window to Visual hosting
+
+* Window to Visual hosting doesn't require you to use the WebView2 Visual hosting APIs.
 
 * Different apps that share a WebView2 user data folder can have different DPI awareness.
 
@@ -96,15 +96,10 @@ In Window-to-Visual hosting and Visual hosting, a _Visual_ is a basic graphical 
 
 * When hosting a WebView2 in a VSTO Add-in, changing monitor scale won't potentially cause the app to hang. See [VSTO Add-ins](/visualstudio/vsto/office-solutions-development-overview-vsto#vsto-add-ins) in _Office solutions development overview (VSTO)_.
 
-
-<!-- ------------------------------ -->
-#### Disadvantages
-
-Enabling Window to Visual hosting mode removes support for Windows Shell Handwriting within the WebView2.
-
-See also:
-* [Ink input](/windows/win32/input_ink/input-ink-portal) - Windows App Development > User Interaction.
-* [shellhandwriting.h header](/windows/win32/api/shellhandwriting/) - Win32 API.
+* Window to Visual hosting mode supports Windows Shell Handwriting within the WebView2, by setting the `msAbydosForWindowlessWV2` flag.  See also:
+   * [WebView2 browser flags](./webview-features-flags.md)
+   * [Ink input](/windows/win32/input_ink/input-ink-portal) - Windows App Development > User Interaction.
+   * [shellhandwriting.h header](/windows/win32/api/shellhandwriting/) - Win32 API.
 
 
 <!-- ------------------------------ -->
@@ -181,6 +176,7 @@ See also:
 <!-- all links in article, except api ref docs -->
 
 * [Overview of WebView2 APIs](./overview-features-apis.md)
+* [WebView2 browser flags](./webview-features-flags.md) - covers `msAbydosForWindowlessWV2`.
 <!-- omit:
 * [Enhance UI with the Visual layer (Windows App SDK/WinUI 3)](https://learn.microsoft.com/windows/apps/windows-app-sdk/composition) - Windows App Development. -->
 

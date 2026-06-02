@@ -153,7 +153,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
 
 See also:
-* [Using the Page tab to explore resources that construct the current webpage]() in _Sources tool overview_.
+* [Using the Page tab to explore resources that construct the current webpage](../../../sources/index.md#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->

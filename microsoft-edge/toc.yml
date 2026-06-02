@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 149
+          href: ./web-platform/release-notes/149.md
+          displayName: Microsoft Edge 149 web platform release notes (Jun. 2026)  # page title
+
         - name: Microsoft Edge 148
           href: ./web-platform/release-notes/148.md
           displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
@@ -66,13 +70,13 @@
           href: ./web-platform/release-notes/140.md
           displayName: Microsoft Edge 140 web platform release notes (Sep. 2025)  # page title
 
-        - name: Microsoft Edge 139
-          href: ./web-platform/release-notes/139.md
-          displayName: Microsoft Edge 139 web platform release notes (Aug. 2025)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 139
+              href: ./web-platform/release-notes/139.md
+              displayName: Microsoft Edge 139 web platform release notes (Aug. 2025)  # page title
+
             - name: Microsoft Edge 138
               href: ./web-platform/release-notes/138.md
               displayName: Microsoft Edge 138 web platform release notes (Jun. 2025)  # page title
@@ -110,22 +114,31 @@
 
         - name: Provide user-relevant ads with the Ad Selection API
           href: ./web-platform/ad-selection-api.md
-
-        - name: Prompt a built-in language model with the Prompt API
-          href: ./web-platform/prompt-api.md
-
-        - name: Summarize, write, and rewrite text with the Writing Assistance APIs
-          href: ./web-platform/writing-assistance-apis.md
-
-        - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
-          href: ./web-platform/proofreader-api.md
-
-        - name: Translate text with the Translator API
-          href: ./web-platform/translator-api.md
-
-        - name: Detect languages with the Language Detector API
-          href: ./web-platform/languagedetector-api.md
 # /Experimental APIs for Microsoft Edge
+# =============================================================================
+# AI for the web
+    - name: AI for the web
+      items:
+        - name: Developer APIs
+          items:
+            - name: Prompt a built-in language model with the Prompt API
+              href: ./web-platform/prompt-api.md
+
+            - name: Summarize, write, and rewrite text with the Writing Assistance APIs
+              href: ./web-platform/writing-assistance-apis.md
+
+            - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
+              href: ./web-platform/proofreader-api.md
+
+            - name: Translate text with the Translator API
+              href: ./web-platform/translator-api.md
+
+            - name: Detect languages with the Language Detector API
+              href: ./web-platform/languagedetector-api.md
+
+            - name: Convert speech to text with the SpeechRecognition API
+              href: ./web-platform/speech-recognition-api.md
+# /AI for the web
 # =============================================================================
 # -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
@@ -143,6 +156,14 @@
               href: ./devtools/whats-new/index.md
               displayName: release notes, announcements
 # latest 10 What's new
+            - name: Microsoft Edge 148
+              href: ./devtools/whats-new/148.md
+              displayName: What's new in DevTools (Microsoft Edge 148)  # page title
+
+            - name: Microsoft Edge 147
+              href: ./devtools/whats-new/147.md
+              displayName: What's new in DevTools (Microsoft Edge 147)  # page title
+
             - name: Microsoft Edge 146
               href: ./devtools/whats-new/146.md
               displayName: What's new in DevTools (Microsoft Edge 146)  # page title
@@ -174,18 +195,18 @@
             - name: Microsoft Edge 139
               href: ./devtools/whats-new/2025/08/devtools-139.md
               displayName: What's new in DevTools (Microsoft Edge 139)  # page title
-
-            - name: Microsoft Edge 138
-              href: ./devtools/whats-new/2025/06/devtools-138.md
-              displayName: What's new in DevTools (Microsoft Edge 138)  # page title
-
-            - name: Microsoft Edge 137
-              href: ./devtools/whats-new/2025/06/devtools-137.md
-              displayName: What's new in DevTools (Microsoft Edge 137)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 138
+                  href: ./devtools/whats-new/2025/06/devtools-138.md
+                  displayName: What's new in DevTools (Microsoft Edge 138)  # page title
+
+                - name: Microsoft Edge 137
+                  href: ./devtools/whats-new/2025/06/devtools-137.md
+                  displayName: What's new in DevTools (Microsoft Edge 137)  # page title
+
                 - name: Microsoft Edge 136
                   href: ./devtools/whats-new/2025/05/devtools-136.md
                   displayName: What's new in DevTools (Microsoft Edge 136)  # page title
