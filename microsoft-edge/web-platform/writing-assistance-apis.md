@@ -170,7 +170,7 @@ The Aion-1.0-Instruct model is made available in Microsoft Edge 150.X<!-- todo -
 <!-- ------------------------------ -->
 #### Availability of the Aion-1.0-Instruct model
 
-An initial download of the model will be required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the Aion-1.0-Instruct model by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion-1.0-Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the Aion-1.0-Instruct model by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
