@@ -612,7 +612,7 @@ We're interested in learning about:
 * The range of scenarios for which you intend to use the Prompt API.
 * Any issues with the Prompt API.
 * Any issues with the language models.
-* Whether new task-specific APIs, such as for proofreading or translation, would be useful.
+* Whether new task-specific APIs would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Prompt API feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1012).
 
