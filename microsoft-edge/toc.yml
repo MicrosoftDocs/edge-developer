@@ -136,11 +136,13 @@
             - name: Detect languages with the Language Detector API
               href: ./web-platform/languagedetector-api.md
 
+            - name: Convert speech to text with the SpeechRecognition API
+              href: ./web-platform/speech-recognition-api.md
+
         - name: DevTools for agents
           items:
             - name: DevTools for agents
               href: ./devtools/agents/index.md
-              displayName: 
 
             - name: Using Edge and WebView2 with Chrome DevTools MCP
               href: ./devtools/agents/mcp.md
