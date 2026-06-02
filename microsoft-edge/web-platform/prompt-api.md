@@ -156,7 +156,7 @@ By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct 
 
    ![Flags page showing the prerelease on-device language model flag](./prompt-api-images/prerelease-model-flag-for-prompt-api.png)
 
-1. To check that Aion-1.0-Instruct is being used as the on-device language model, go to `edge://on-device-internals`, click **Model Status**, and check that **Model Name** is set to **Muffin**.
+1. To check that Aion-1.0-Instruct is being used as the on-device language model, go to `edge://on-device-internals`, click **Model Status**, and check that **Model Name** is set to **Aion-1.0-Instruct**.
 
 
 <!-- ------------------------------ -->
