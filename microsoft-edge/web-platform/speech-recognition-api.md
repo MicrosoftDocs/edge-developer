@@ -32,7 +32,7 @@ For more information about the API, see [Web Speech API](https://developer.mozil
 <!-- ====================================================================== -->
 ## Availability of the local speech recognition model
 
-The local speech recognition model is available in Microsoft Edge Canary or Dev (version 150.x.y.z or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).<!-- todo add correct version and potential flag and hardware requirements -->
+The local speech recognition model is available in Microsoft Edge Canary or Dev (version 150.0.4076 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 
 <!-- ====================================================================== -->
@@ -60,7 +60,7 @@ You can monitor the model download by using the promise that's returned by the S
 
 To use the local speech recognition model with the SpeechRecognition API, you need to enable the feature in Microsoft Edge Canary or Dev.  To enable speech recognition using the on-device model:
 
-1. Make sure you're using Microsoft Edge Canary or Dev (version 150.x.y.z or newer)<!-- todo: add correct version -->.  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using Microsoft Edge Canary or Dev (version 150.0.4076 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
 
@@ -148,7 +148,7 @@ recognition.lang = "en-US";
 recognition.processLocally = true;
 ```
 
-As of Microsoft Edge 150.x.y.z TODO, the following input languages are supported for local speech recognition:
+As of Microsoft Edge 150.0.4076, the following input languages are supported for local speech recognition:
 * English (en-US)
 * German (de-DE)
 * Italian (it-IT)
