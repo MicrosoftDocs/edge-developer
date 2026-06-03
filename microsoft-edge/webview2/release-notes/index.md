@@ -74,7 +74,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the **Print** dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
 * Reduced redundant map lookups in WebView2 URL request manager, for improved performance.
 * Eliminated unnecessary string allocations in WebView2 cookie layer, for improved performance.
-* Fixed Window to Visual UIA tree.
+* Fixed the Window to Visual UIA tree.
 
 
 <!-- ---------- -->
