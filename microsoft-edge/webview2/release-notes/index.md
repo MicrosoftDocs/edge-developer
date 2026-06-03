@@ -29,126 +29,72 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.nnnn-prerelease, for Runtime 150 (Mmm. dd, yyyy)
+## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (June. 08, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: June 08, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.4071-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4071-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 150.0.4071.0 or higher
 
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
+
 
 
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Fixed behavior.  ([Issue #]())
-
+* Adds total-count histograms for WebView2 environment and controller creation attempts (SDK and Runtime)
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Map TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY to kLaunchFailed 
+* Failure reason classification updated to OOM for process killed to reclaim memory.
+* Adding system memory snapshot at OOM detection time for analysis
+* Fix the popup would be silently closed when the host expected it to remain open .
+* Added trusted origin check during host object access 
+* Migrated deprecated base::Value APIs to modern base::DictValue API
+* Fix print dialog pop option not selecting in CompositionControl .([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
+* Reduced redundant map lookups in WebView2 URL request manager for improved performance 
+* Eliminated unnecessary string allocations in WebView2 cookie layer for improved performance 
+* Fix window to Visual UIA tree
 
 
 <!-- ---------- -->
 ###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
+* Fix container safety issues in WebView2 frame and listener code
+* WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
 
 <!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime 150 (Mmm. dd, yyyy) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy)
+## Release SDK 1.0.nnnn.nn, for Runtime 149 (june. 08, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: June 08, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.4022.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4022.49)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or higher.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 149.0.4022.49 or higher.
 
 <!-- ---------- -->
 ###### heading
@@ -158,46 +104,21 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Map TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY to kLaunchFailed.
+* Failure reason classification updated to OOM for process killed to reclaim memory.
+* Added trusted origin check during host object access.
+* Fix print dialog pop option not selecting in CompositionControl.([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
 
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
 
 <!-- end of Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy) -->
 
