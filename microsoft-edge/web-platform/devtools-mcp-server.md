@@ -1,6 +1,6 @@
 ---
-title: Using Microsoft Edge and WebView2 with Chrome DevTools MCP
-description: Using Microsoft Edge and WebView2 with Chrome DevTools MCP.
+title: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
+description: Let agents inspect your site and WebView2 app with Chrome DevTools MCP.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,27 +8,32 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/27/2026
 ---
-# Using Microsoft Edge and WebView2 with Chrome DevTools MCP
+# Let agents inspect your site and WebView2 app with Chrome DevTools MCP
 
-The [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) server supports connecting to any Chromium-based browser, including Microsoft Edge and WebView2.  Because the server is built for Chrome, you need to provide extra configuration to point the server at Microsoft Edge or a WebView2 instance.
+Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser.  Chrome DevTools for agents acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Microsoft Edge DevTools for reliable automation, in-depth debugging, and performance analysis. 
+
+The Chrome DevTools MCP server supports connecting to any Chromium-based browser, including Microsoft Edge and WebView2.  Because the server is built for Chrome, you need to provide extra configuration to point the server at Microsoft Edge or a WebView2 instance.
+
+See also:
+* [Chrome DevTools for agents](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md) - the "ChromeDevTools / chrome-devtools-mcp" repo.
 
 This guide covers three scenarios:
 
-1. [Launching Edge](#1-launching-edge) — the MCP server starts Edge for you.
-1. [Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
-1. [Auto-connecting to WebView2](#3-auto-connecting-to-webview2) — the MCP server connects to a running WebView2 host app.
+* [Launching Edge](#1-launching-edge) — the MCP server starts Edge for you.
+* [Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
+* [Auto-connecting to WebView2](#3-auto-connecting-to-webview2) — the MCP server connects to a running WebView2 host app.
 
 **Detailed contents:**
 * [Prerequisites](#prerequisites)
-* [1. Launching Edge](#1-launching-edge)
-* [Additional flags](#additional-flags)
-* [Edge executable paths for other channels](#edge-executable-paths-for-other-channels)
-* [2. Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance)
+* [Launching Edge](#launching-edge)
+   * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
+   * [Edge executable paths for other channels](#edge-executable-paths-for-other-channels)
+* [Auto-connecting to a running Edge instance](auto-connecting-to-a-running-edge-instance)
    * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
    * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
    * [Step 3: Test your setup](#step-3-test-your-setup)
    * [Edge user data directories for other channels](#edge-user-data-directories-for-other-channels)
-* [3. Auto-connecting to WebView2](#3-auto-connecting-to-webview2)
+* [Auto-connecting to WebView2](auto-connecting-to-webview2)
    * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
    * [Step 2: Find the WebView2 user data directory](#step-2-find-the-webview2-user-data-directory)
    * [Step 3: Configure the MCP server](#step-3-configure-the-mcp-server)
@@ -47,19 +52,20 @@ This guide covers three scenarios:
 <!-- ====================================================================== -->
 ## Prerequisites
 
-* [Node.js](https://nodejs.org) LTS version
-* [npm](https://www.npmjs.com)
-* Microsoft Edge installed (any channel: Stable, Beta, Dev, or Canary)
-* An MCP client such as VS Code (with GitHub Copilot), Copilot CLI, Claude Code, Cursor, etc.
+* [Node.js](https://nodejs.org), the latest Long-Term Support (LTS) release.
+* [npm](https://www.npmjs.com).
+* Microsoft Edge installed (any channel: Stable, Beta, Dev, or Canary).
+* A coding agent with MCP support such as VS Code (with GitHub Copilot), Copilot CLI, Claude Code, or Cursor.
 
-> [!NOTE]
-> The examples in this guide use the VS Code `mcp.json` format.  If you're using a different MCP client, see [Configuring other MCP clients](#configuring-other-mcp-clients) at the end of this guide.
+The examples in this guide use the VS Code `mcp.json` format.  If you're using a different MCP client, see [Configuring other MCP clients](#configuring-other-mcp-clients) at the end of this guide.
 
 
 <!-- ====================================================================== -->
-## 1. Launching Edge
+## Launching Edge
 
-In this mode, the MCP server launches Edge directly using the `--executablePath` flag pointed at your Edge binary.
+Use this configuration to let your coding agent launch Edge directly for you.
+   
+With this configuration, the MCP server, which your agent connects to, launches Edge directly by using the `--executablePath` flag pointing to where the Edge binary is located.
 
 Copy and paste the configuration snippet for your platform into your VS Code `mcp.json`.  These examples use Edge Stable.
 
@@ -120,8 +126,8 @@ Copy and paste the configuration snippet for your platform into your VS Code `mc
 ---
 
 
-<!-- ====================================================================== -->
-## Additional flags
+<!-- ------------------------------ -->
+#### Additional flags for launching Edge
 
 You can combine `--executablePath` with other flags:
 
@@ -142,10 +148,12 @@ Example with headless and isolated (Windows):
 ```
 
 
-<!-- ====================================================================== -->
-## Edge executable paths for other channels
+<!-- ------------------------------ -->
+#### Edge executable paths for other channels
 
 If you're not using Edge Stable, replace the `--executablePath` value with the appropriate path for your channel.
+
+These are default install locations.  Paths may vary based on user configuration, version, or group policies.  Linux doesn't have a Canary channel.
 
 ##### [Windows](#tab/windows/)
 
@@ -154,7 +162,7 @@ If you're not using Edge Stable, replace the `--executablePath` value with the a
 | Stable | `%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe` |
 | Beta | `%ProgramFiles(x86)%\Microsoft\Edge Beta\Application\msedge.exe` |
 | Dev | `%ProgramFiles(x86)%\Microsoft\Edge Dev\Application\msedge.exe` |
-| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\Application\msedge.exe` |
+| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\Application\msedge.exe` |  
 
 ##### [macOS](#tab/macos/)
    
@@ -175,14 +183,11 @@ If you're not using Edge Stable, replace the `--executablePath` value with the a
 
 ---
 
-> [!NOTE]
-> These are default install locations.  Paths may vary based on user configuration, version, or group policies.  Linux does not have a Canary channel.
-
 
 <!-- ====================================================================== -->
-## 2. Auto-connecting to a running Edge instance
+## Auto-connecting to a running Edge instance
 
-In this mode, you start Edge yourself (or it's already running), and the MCP server connects to it.  This is useful when:
+Use the configuration below to connect to an already running Edge instance.  This is useful when:
 
 * You want to maintain browser state between manual testing and agent-driven testing.
 * You need to be signed into a website that blocks automated browser launches.
@@ -284,6 +289,8 @@ The MCP server should connect to your running Edge instance and execute the comm
 
 If you're not using Edge Stable, replace the `--user-data-dir` value with the appropriate path for your channel.
 
+These are default locations.  Paths may vary based on user configuration, version, or group policies.  Linux doesn't have a Canary channel.
+
 ##### [Windows](#tab/windows/)
 
 | Channel | Default Path |
@@ -312,12 +319,9 @@ If you're not using Edge Stable, replace the `--user-data-dir` value with the ap
 
 ---
 
-> [!NOTE]
-> These are default locations.  Paths may vary based on user configuration, version, or group policies.  Linux does not have a Canary channel.
-
 
 <!-- ====================================================================== -->
-## 3. Auto-connecting to WebView2
+## Auto-connecting to WebView2
 
 WebView2 doesn't have a "launch" scenario — the host application creates the WebView2 instance.  The MCP server connects to it via auto-connect, similar to the Edge scenario above.
 

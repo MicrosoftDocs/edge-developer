@@ -119,7 +119,10 @@
 # AI for the web
     - name: AI for the web
       items:
-        - name: Developer APIs
+        - name: AI for the web
+          href: ./web-platform/index.md
+
+        - name: AI web APIs for sites
           items:
             - name: Prompt a built-in language model with the Prompt API
               href: ./web-platform/prompt-api.md
@@ -139,13 +142,10 @@
             - name: Convert speech to text with the SpeechRecognition API
               href: ./web-platform/speech-recognition-api.md
 
-        - name: DevTools for agents
+        - name: Expose sites to agents
           items:
-            - name: DevTools for agents
-              href: ./devtools/agents/index.md
-
-            - name: Using Edge and WebView2 with Chrome DevTools MCP
-              href: ./devtools/agents/mcp.md
+            - name: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
+              href: ./web-platform/devtools-mcp-server.md
 # /AI for the web
 # =============================================================================
 # -----------------------------------------------------------------------------
