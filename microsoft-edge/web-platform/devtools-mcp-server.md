@@ -1,21 +1,56 @@
 ---
 title: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
-description: Let agents inspect your site and WebView2 app with Chrome DevTools MCP.
+description: Let agents inspect your site and WebView2 app with Chrome DevTools Model-Context-Protocol (MCP).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/27/2026
+ms.date: 06/04/2026
 ---
 # Let agents inspect your site and WebView2 app with Chrome DevTools MCP
 
-Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser.  Chrome DevTools for agents acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Microsoft Edge DevTools for reliable automation, in-depth debugging, and performance analysis. 
+Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser, including Microsoft Edge and WebView2.
 
-The Chrome DevTools MCP server supports connecting to any Chromium-based browser, including Microsoft Edge and WebView2.  Because the server is built for Chrome, you need to provide extra configuration to point the server at Microsoft Edge or a WebView2 instance.
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Prerequisites](#prerequisites)
+* [Launch Edge](#launch-edge)
+   * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
+   * [Executable path for each Edge channel](#executable-path-for-each-edge-channel)
+* [Auto-connect to a running Edge instance](auto-connect-to-a-running-edge-instance)
+   * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
+   * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
+   * [Step 3: Test your setup](#step-3-test-your-setup)
+   * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
+* [Auto-connect to a WebView2 instance](#auto-connect-to-a-webview2-instance)
+   * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
+      * [By using WebView2Utilities](#by-using-webview2utilities)
+      * [By using the Windows Registry](#by-using-the-windows-registry)
+   * [Step 2: Find the WebView2 user data directory](#step-2-find-the-webview2-user-data-directory)
+   * [Step 3: Configure the MCP server](#step-3-configure-the-mcp-server)
+   * [Step 4: Test your setup](#step-4-test-your-setup)
+* [How it works](#how-it-works)
+* [Configuring other MCP clients](#configuring-other-mcp-clients)
+   * [Copilot CLI](#copilot-cli)
+   * [Other MCP clients, such as Claude Code, Cursor, or Gemini CLI](#other-mcp-clients-such-as-claude-code-cursor-or-gemini-cli)
+* [Troubleshooting](#troubleshooting)
+   * ["Could not connect to Chrome" error with auto-connect](#could-not-connect-to-chrome-error-with-auto-connect)
+   * [Edge not found at executablePath](#edge-not-found-at-executablepath)
+   * [WebView2 won't connect](#webview2-wont-connect)
+* [See also](#see-also)
 
-See also:
-* [Chrome DevTools for agents](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md) - the "ChromeDevTools / chrome-devtools-mcp" repo.
+
+<!-- ====================================================================== -->
+## Introduction
+
+<!-- copied to top of article: -->
+Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser, including Microsoft Edge and WebView2.
+<!-- / end of copied to top of article -->
+
+Chrome DevTools for agents acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Microsoft Edge DevTools for reliable automation, in-depth debugging, and performance analysis. 
+
+The Chrome DevTools MCP server supports connecting to any Chromium-based browser, including Microsoft Edge and WebView2.  Because the server is built for the Google Chrome browser, you need to provide extra configuration to point the server at Microsoft Edge or a WebView2 instance.
 
 This guide covers three scenarios:
 
@@ -23,30 +58,8 @@ This guide covers three scenarios:
 * [Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
 * [Auto-connecting to WebView2](#3-auto-connecting-to-webview2) — the MCP server connects to a running WebView2 host app.
 
-**Detailed contents:**
-* [Prerequisites](#prerequisites)
-* [Launching Edge](#launching-edge)
-   * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
-   * [Edge executable paths for other channels](#edge-executable-paths-for-other-channels)
-* [Auto-connecting to a running Edge instance](auto-connecting-to-a-running-edge-instance)
-   * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
-   * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
-   * [Step 3: Test your setup](#step-3-test-your-setup)
-   * [Edge user data directories for other channels](#edge-user-data-directories-for-other-channels)
-* [Auto-connecting to WebView2](auto-connecting-to-webview2)
-   * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
-   * [Step 2: Find the WebView2 user data directory](#step-2-find-the-webview2-user-data-directory)
-   * [Step 3: Configure the MCP server](#step-3-configure-the-mcp-server)
-   * [Step 4: Test your setup](#step-4-test-your-setup)
-* [How it works](#how-it-works)
-* [Configuring other MCP clients](#configuring-other-mcp-clients)
-   * [Copilot CLI](#copilot-cli)
-   * [Other MCP clients (Claude Code, Cursor, Gemini CLI, etc.)](#other-mcp-clients-claude-code-cursor-gemini-cli-etc)
-* [Troubleshooting](#troubleshooting)
-   * ["Could not connect to Chrome" error with auto-connect](#could-not-connect-to-chrome-error-with-auto-connect)
-   * [Edge not found at executablePath](#edge-not-found-at-executablepath)
-   * [WebView2 won't connect](#webview2-wont-connect)
-* [Further reading](#further-reading)
+See also:
+* [Chrome DevTools for agents](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md) - the "ChromeDevTools / chrome-devtools-mcp" repo.
 
 
 <!-- ====================================================================== -->
@@ -55,17 +68,17 @@ This guide covers three scenarios:
 * [Node.js](https://nodejs.org), the latest Long-Term Support (LTS) release.
 * [npm](https://www.npmjs.com).
 * Microsoft Edge installed (any channel: Stable, Beta, Dev, or Canary).
-* A coding agent with MCP support such as VS Code (with GitHub Copilot), Copilot CLI, Claude Code, or Cursor.
+* A coding agent with Model-Context-Protocol (MCP) support, such as Microsoft Visual Studio Code (with GitHub Copilot), Copilot CLI, Claude Code, or Cursor.
 
-The examples in this guide use the VS Code `mcp.json` format.  If you're using a different MCP client, see [Configuring other MCP clients](#configuring-other-mcp-clients) at the end of this guide.
+The examples in this guide use the VS Code `mcp.json` format.  If you're using a different MCP client, see [Configuring other MCP clients](#configuring-other-mcp-clients), below.
 
 
 <!-- ====================================================================== -->
-## Launching Edge
+## Launch Edge
 
-Use this configuration to let your coding agent launch Edge directly for you.
+Use this configuration to let your coding agent launch Microsoft Edge for you.
    
-With this configuration, the MCP server, which your agent connects to, launches Edge directly by using the `--executablePath` flag pointing to where the Edge binary is located.
+With this configuration, the Model-Context-Protocol (MCP) server, which your agent connects to, launches Edge, by using the `--executablePath` flag pointing to the Edge binary.
 
 Copy and paste the configuration snippet for your platform into your VS Code `mcp.json`.  These examples use Edge Stable.
 
@@ -129,7 +142,7 @@ Copy and paste the configuration snippet for your platform into your VS Code `mc
 <!-- ------------------------------ -->
 #### Additional flags for launching Edge
 
-You can combine `--executablePath` with other flags:
+You can combine `--executablePath` with the following flags:
 
 * `--headless` — run without a visible browser window
 * `--isolated` — use a temporary profile directory (cleaned up on close)
@@ -149,11 +162,11 @@ Example with headless and isolated (Windows):
 
 
 <!-- ------------------------------ -->
-#### Edge executable paths for other channels
+#### Executable path for each Edge channel
 
-If you're not using Edge Stable, replace the `--executablePath` value with the appropriate path for your channel.
+Use the appropriate `--executablePath` value for your channel of Edge.
 
-These are default install locations.  Paths may vary based on user configuration, version, or group policies.  Linux doesn't have a Canary channel.
+These are default install locations.  Paths may vary based on user configuration, version, or group policies.
 
 ##### [Windows](#tab/windows/)
 
@@ -180,12 +193,13 @@ These are default install locations.  Paths may vary based on user configuration
 | Stable | `/usr/bin/microsoft-edge` |
 | Beta | `/usr/bin/microsoft-edge-beta` |
 | Dev | `/usr/bin/microsoft-edge-dev` |
+| Canary | n/a; there isn't a Canary channel for Linux. |
 
 ---
 
 
 <!-- ====================================================================== -->
-## Auto-connecting to a running Edge instance
+## Auto-connect to a running Edge instance
 
 Use the configuration below to connect to an already running Edge instance.  This is useful when:
 
@@ -200,7 +214,7 @@ Use the configuration below to connect to an already running Edge instance.  Thi
 <!-- ------------------------------ -->
 #### Step 1: Enable remote debugging in Edge
 
-You have two options:
+There are have two options:
 
 **Option A:** Start Edge with the remote debugging flag:
 
@@ -212,7 +226,7 @@ You have two options:
 <!-- ------------------------------ -->
 #### Step 2: Configure the MCP server
 
-Use `--autoConnect` combined with `--user-data-dir` pointing to your Edge user data directory.  These examples use Edge Stable.
+To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to your Microsoft Edge user data directory.  These examples use the Edge Stable channel.
 
 ##### [Windows](#tab/windows/)
 
@@ -277,19 +291,19 @@ Use `--autoConnect` combined with `--user-data-dir` pointing to your Edge user d
 <!-- ------------------------------ -->
 #### Step 3: Test your setup
 
-Make sure Edge is running, then enter the following prompt in your MCP client:
+Make sure Microsoft Edge is running, then enter the following prompt in your Model-Context-Protocol (MCP) client:
 
-`Navigate to https://example.com and take a screenshot`
+`Navigate to https://contoso.com and take a screenshot`
 
 The MCP server should connect to your running Edge instance and execute the command.
 
 
 <!-- ------------------------------ -->
-#### Edge user data directories for other channels
+#### User data directory for each Edge channel
 
-If you're not using Edge Stable, replace the `--user-data-dir` value with the appropriate path for your channel.
+Use the appropriate `--user-data-dir` value for your channel.
 
-These are default locations.  Paths may vary based on user configuration, version, or group policies.  Linux doesn't have a Canary channel.
+These are default locations.  Paths may vary based on user configuration, version, or group policies.
 
 ##### [Windows](#tab/windows/)
 
@@ -316,28 +330,36 @@ These are default locations.  Paths may vary based on user configuration, versio
 | Stable | `~/.config/microsoft-edge` |
 | Beta | `~/.config/microsoft-edge-beta` |
 | Dev | `~/.config/microsoft-edge-dev` |
+| Canary | n/a; there isn't a Canary channel for Linux. |
+
 
 ---
 
 
 <!-- ====================================================================== -->
-## Auto-connecting to WebView2
+## Auto-connect to a WebView2 instance
 
-WebView2 doesn't have a "launch" scenario — the host application creates the WebView2 instance.  The MCP server connects to it via auto-connect, similar to the Edge scenario above.
+WebView2 doesn't have a "launch" scenario; instead, the host app creates the WebView2 instance.
+
+The MCP server connects to the WebView2 instance via auto-connect, similar to [Auto-connecting to a running Edge instance](#auto-connecting-to-a-running-edge-instance), above.  
 
 
 <!-- ------------------------------ -->
 #### Step 1: Enable remote debugging for WebView2
 
-You need to configure the WebView2 runtime to start with `--remote-debugging-port=0`.  There are two ways to do this:
+You need to configure the WebView2 runtime to start with `--remote-debugging-port=0`.  There are two ways to do this: WebView2Utilities, or Windows Registry.
 
-**Option A: Using WebView2Utilities**
 
-Use WebView2Utilities and follow the How to: Auto open DevTools guide.  Instead of checking the "Auto open DevTools" checkbox, type `--remote-debugging-port=0` in the Arguments textbox.
+<!-- ---------- -->
+###### By using WebView2Utilities
 
-**Option B: Via the Windows Registry**
+In this approach, you use WebView2Utilities and follow the steps in [How to: Auto open DevTools](https://github.com/david-risney/WebView2Utilities/wiki/How-to:-Auto-open-DevTools).  But instead of selecting the **Auto open DevTools** checkbox, in the **Arguments** textbox, enter `--remote-debugging-port=0`.
 
-Create a registry value to set `AdditionalBrowserArguments`.  Replace `appname.exe` with the name of your WebView2 host executable:
+
+<!-- ---------- -->
+###### By using the Windows Registry
+
+In this approach, you create a registry value to set `AdditionalBrowserArguments`.  Replace `appname.exe` with the name of your WebView2 host executable:
 
 ```
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments]
@@ -348,12 +370,11 @@ Create a registry value to set `AdditionalBrowserArguments`.  Replace `appname.e
 <!-- ------------------------------ -->
 #### Step 2: Find the WebView2 user data directory
 
-You need to discover the user data directory of the host app.  The path should end with `EBWebView` — this suffix is automatically added by the WebView2 runtime.
+You need to discover the user data directory of the host app.
 
-You can find this path using WebView2Utilities: go to the **Host Apps** tab, select your running host app, and look at the **User data folder** row.
+The path for the user data directory ends with `\EBWebView`.  The `\EBWebView` suffix is automatically added by the WebView2 Runtime.  If you're copying the user data path from source code, you might need to append `\EBWebView`.
 
-> [!NOTE]
-> If you're copying the user data path from source code, you may need to append `\EBWebView` yourself since the runtime adds this automatically at runtime.
+You can find the path for the user data directory by using WebView2Utilities: In the **Host Apps** tab, select your running host app, and examine the **User data folder** row.
 
 
 <!-- ------------------------------ -->
@@ -382,23 +403,25 @@ Replace `<APP_PACKAGE>` with the package name of your host app.
 <!-- ------------------------------ -->
 #### Step 4: Test your setup
 
-Launch your WebView2 host app, then use your MCP client to interact with it:
+Launch your WebView2 host app, then use your MCP client to interact with your WebView2 host app:
 
-`Take a snapshot of the current page`
+`Take a snapshot of the current page`<!-- todo: what is this? -->
 
 
 <!-- ====================================================================== -->
 ## How it works
 
-Under the hood, the Chrome DevTools MCP server uses [Puppeteer](https://github.com/puppeteer/puppeteer) to control the browser.  When you provide `--executablePath`, Puppeteer launches that binary directly instead of searching for Chrome.  When you provide `--autoConnect` with `--user-data-dir`, the server reads the `DevToolsActivePort` file from that directory to discover the WebSocket endpoint of the running browser and connects to it.
+Under the hood, the Chrome DevTools MCP server uses [Puppeteer](https://github.com/puppeteer/puppeteer) to control the browser.  When you provide `--executablePath`, Puppeteer launches that binary directly, instead of searching for the browser.
 
-Since Edge and WebView2 are Chromium-based, the DevTools Protocol is compatible and the MCP tools work as expected.
+When you provide `--autoConnect` with `--user-data-dir`, the server reads the `DevToolsActivePort` file from that directory to discover the WebSocket endpoint of the running browser and connects to it.
+
+Because Microsoft Edge and WebView2 are based on the Chromium browser engine, the DevTools Protocol is compatible with Microsoft Edge and WebView2, and the MCP tools work as expected.
 
 
 <!-- ====================================================================== -->
 ## Configuring other MCP clients
 
-The examples above use the VS Code `mcp.json` format.  Here's how to adapt them for other clients:
+The examples above use the Visual Studio Code `mcp.json` format.  Here's how to adapt the above examples for other Model-Context-Protocol (MCP) clients:
 
 
 <!-- ------------------------------ -->
@@ -426,9 +449,9 @@ You can also add an MCP server interactively by running `copilot` and then `/mcp
 
 
 <!-- ------------------------------ -->
-#### Other MCP clients (Claude Code, Cursor, Gemini CLI, etc.)
+#### Other MCP clients, such as Claude Code, Cursor, or Gemini CLI
 
-Most MCP clients use the generic mcpServers format without a `type` field:
+Most Model-Context-Protocol (MCP) clients use the generic `mcpServers` format without a `type` field:
 
 ```json
 {
@@ -445,7 +468,7 @@ Most MCP clients use the generic mcpServers format without a `type` field:
 }
 ```
 
-The `args` array is the same across all clients — only the wrapper format differs.  Refer to your MCP client's documentation for the exact config file location and format.
+The `args` array is the same across all clients; only the wrapper format differs.  See your MCP client's documentation for the exact config file location and format.
 
 
 <!-- ====================================================================== -->
@@ -455,30 +478,37 @@ The `args` array is the same across all clients — only the wrapper format diff
 <!-- ------------------------------ -->
 #### "Could not connect to Chrome" error with auto-connect
 
-* Ensure Edge is running and remote debugging is enabled.
-* Verify the `--user-data-dir` path is correct for your Edge channel.
-* Check that DevToolsActivePort exists in the user data directory (it's created when remote debugging is active).
+If you are using auto-connect and get an error such as "Could not connect to Chrome"<!-- todo: with Microsoft Edge? -->:
+
+* Make sure Microsoft Edge is running, and remote debugging is enabled.
+* Make sure the `--user-data-dir` path is correct for your channel of Microsoft Edge.
+* Make sure the `DevToolsActivePort` file exists in the user data directory.  The `DevToolsActivePort` file is created when remote debugging is active.
 
 
 <!-- ------------------------------ -->
-#### Edge not found at executablePath
+#### Edge not found at `executablePath`
 
-* Verify the path exists on disk.  Edge Canary on Windows installs per-user under `%LOCALAPPDATA%`, not in `Program Files`.
+* Make sure that the `executablePath` for the channel of Microsoft Edge exists on disk.  For example, Edge Canary on Windows installs per-user under `%LOCALAPPDATA%`, not under `\Program Files\`.
 * On Windows, use double backslashes (`\\`) in JSON strings.
 
 
 <!-- ------------------------------ -->
 #### WebView2 won't connect
 
-* Confirm the registry key matches your host app's executable name exactly.
-* Restart the host app after adding the registry key — the argument is only read at WebView2 creation time.
-* Ensure the `--user-data-dir` path ends with `EBWebView`.
+* Make sure the registry key matches your host app's executable name exactly.
+* Restart the host app after adding the registry key.  The argument<!-- todo: which argument? The registry key argument? --> is only read at WebView2 creation time.
+* Make sure the `--user-data-dir` path ends with `\EBWebView`.
 
 
 <!-- ====================================================================== -->
-## Further reading
+## See also
 
-* [Chrome DevTools MCP README](https://github.com/ChromeDevTools/chrome-devtools-mcp)
-* [Edge and WebView2 in Chrome DevTools MCP](https://deletethis.net/dave/2026-03/edge-and-webview2-in-chrome-devtools-mcp/) — original blog post by David Risney
-* [WebView2Utilities](https://github.com/david-risney/WebView2Utilities) — tool for managing WebView2 debugging
-* [Chrome DevTools remote debugging documentation](https://developer.chrome.com/docs/devtools/remote-debugging/)
+* [Remotely debug Android devices](../devtools/remote-debugging/index.md)<!-- upstream: https://developer.chrome.com/docs/devtools/remote-debugging/ -->
+
+GitHub:
+* [Chrome DevTools for agents](https://github.com/ChromeDevTools/chrome-devtools-mcp) - the README of the "ChromeDevTools / chrome-devtools-mcp" repo.
+* [WebView2Utilities](https://github.com/david-risney/WebView2Utilities) — tool for managing WebView2 debugging; the "david-risney / WebView2Utilities" repo.
+   * [How to: Auto open DevTools](https://github.com/david-risney/WebView2Utilities/wiki/How-to:-Auto-open-DevTools)
+
+Blogs:
+* [Edge and WebView2 in Chrome DevTools MCP](https://deletethis.net/dave/2026-03/edge-and-webview2-in-chrome-devtools-mcp/)
