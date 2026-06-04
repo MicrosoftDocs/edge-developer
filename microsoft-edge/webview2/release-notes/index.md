@@ -59,7 +59,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime and SDK
 
-* Adds total-count histograms for WebView2 environment and controller creation attempts.
+* Added total-count histograms for WebView2 environment and controller creation attempts.
 
 
 <!-- ---------- -->
