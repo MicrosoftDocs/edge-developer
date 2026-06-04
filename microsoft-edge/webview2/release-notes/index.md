@@ -71,7 +71,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the silent closing of a popup, when the host expects the popup to remain open.
 * Added trusted origin check during host object access.
 * Migrated deprecated `base::Value` APIs to the modern `base::DictValue` API.
-* Fixed the **Print** dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
+* Fixed the **Print** dialog's dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
 * Reduced redundant map lookups in WebView2 URL request manager, for improved performance.
 * Eliminated unnecessary string allocations in WebView2 cookie layer, for improved performance.
 * Fixed the Window to Visual UI Automation (UIA) tree.
@@ -114,7 +114,7 @@ This Release SDK includes the following bug fixes.
 * Mapped `TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY` to `kLaunchFailed`.
 * Updated the failure reason classification to `OOM`, for a process that's been killed to reclaim memory.
 * Added trusted origin check during host object access.
-* Fixed the **Print** dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
+* Fixed the **Print** dialog's dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
 
 <!-- end of Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy) -->
 
