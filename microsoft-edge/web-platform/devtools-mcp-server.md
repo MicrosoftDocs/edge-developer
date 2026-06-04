@@ -18,7 +18,7 @@ Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such 
 * [Launch Edge](#launch-edge)
    * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
    * [Executable path for each Edge channel](#executable-path-for-each-edge-channel)
-* [Auto-connect to a running Edge instance](auto-connect-to-a-running-edge-instance)
+* [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance)
    * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
    * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
    * [Step 3: Test your setup](#step-3-test-your-setup)
@@ -54,9 +54,9 @@ The Chrome DevTools MCP server supports connecting to any Chromium-based browser
 
 This guide covers three scenarios:
 
-* [Launching Edge](#1-launching-edge) — the MCP server starts Edge for you.
-* [Auto-connecting to a running Edge instance](#2-auto-connecting-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
-* [Auto-connecting to WebView2](#3-auto-connecting-to-webview2) — the MCP server connects to a running WebView2 host app.
+* [Launch Edge](#launch-edge) — the MCP server starts Microsoft Edge for you.
+* [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance) — you start Edge yourself and the MCP server connects to it.
+* [Auto-connect to a WebView2 instance](#auto-connect-to-a-webview2-instance) — the MCP server connects to a running WebView2 host app.
 
 See also:
 * [Chrome DevTools for agents](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md) - the "ChromeDevTools / chrome-devtools-mcp" repo.
@@ -341,7 +341,7 @@ These are default locations.  Paths may vary based on user configuration, versio
 
 WebView2 doesn't have a "launch" scenario; instead, the host app creates the WebView2 instance.
 
-The MCP server connects to the WebView2 instance via auto-connect, similar to [Auto-connecting to a running Edge instance](#auto-connecting-to-a-running-edge-instance), above.  
+The MCP server connects to the WebView2 instance via auto-connect, similar to [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance), above.  
 
 
 <!-- ------------------------------ -->
