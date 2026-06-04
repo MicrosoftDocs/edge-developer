@@ -36,7 +36,7 @@ Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such 
    * [Other MCP clients, such as Claude Code, Cursor, or Gemini CLI](#other-mcp-clients-such-as-claude-code-cursor-or-gemini-cli)
 * [Troubleshooting](#troubleshooting)
    * ["Could not connect to Chrome" error with auto-connect](#could-not-connect-to-chrome-error-with-auto-connect)
-   * [Edge not found at executablePath](#edge-not-found-at-executablepath)
+   * [Edge not found at `executablePath`](#edge-not-found-at-executablepath)
    * [WebView2 won't connect](#webview2-wont-connect)
 * [See also](#see-also)
 
@@ -476,12 +476,14 @@ The `args` array is the same across all clients; only the wrapper format differs
 
 
 <!-- ------------------------------ -->
-#### "Could not connect to Chrome" error with auto-connect
+#### "Could not connect to Chrome"<!-- todo: to Microsoft Edge? --> error with auto-connect
 
-If you are using auto-connect and get an error such as "Could not connect to Chrome"<!-- todo: with Microsoft Edge? -->:
+If you are using auto-connect and get an error such as "Could not connect to Chrome"<!-- todo: to Microsoft Edge? -->:
 
 * Make sure Microsoft Edge is running, and remote debugging is enabled.
+
 * Make sure the `--user-data-dir` path is correct for your channel of Microsoft Edge.
+
 * Make sure the `DevToolsActivePort` file exists in the user data directory.  The `DevToolsActivePort` file is created when remote debugging is active.
 
 
@@ -489,6 +491,7 @@ If you are using auto-connect and get an error such as "Could not connect to Chr
 #### Edge not found at `executablePath`
 
 * Make sure that the `executablePath` for the channel of Microsoft Edge exists on disk.  For example, Edge Canary on Windows installs per-user under `%LOCALAPPDATA%`, not under `\Program Files\`.
+
 * On Windows, use double backslashes (`\\`) in JSON strings.
 
 
@@ -496,7 +499,9 @@ If you are using auto-connect and get an error such as "Could not connect to Chr
 #### WebView2 won't connect
 
 * Make sure the registry key matches your host app's executable name exactly.
-* Restart the host app after adding the registry key.  The argument<!-- todo: which argument? The registry key argument? --> is only read at WebView2 creation time.
+
+* After adding the `AdditionalBrowserArguments` registry key, restart the host app.  The app name `.exe` argument is only read at WebView2 creation time.
+
 * Make sure the `--user-data-dir` path ends with `\EBWebView`.
 
 
