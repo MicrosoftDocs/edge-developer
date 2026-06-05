@@ -64,7 +64,6 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
    * [Change a declaration name or value](#change-a-declaration-name-or-value)
    * [Change enumerable values with keyboard shortcuts](#change-enumerable-values-with-keyboard-shortcuts)
    * [Change length values](#change-length-values)
-   * [Increment numerical declaration values](#increment-numerical-declaration-values)
    * [Add a class to an element](#add-a-class-to-an-element)
    * [Emulate light and dark theme preferences and enable automatic dark mode](#emulate-light-and-dark-theme-preferences-and-enable-automatic-dark-mode)
    * [Toggle a class](#toggle-a-class)
@@ -121,7 +120,7 @@ Use the **Elements** > **Styles** and **Computed** tabs to view CSS rules and di
 
 The **Styles** tab displays links in various places to various other places, including but not limited to:
 
-* Next to CSS rules, to style sheets and CSS sources.  Such links open the **Sources** tool.  If the style sheet is minified, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
+* Next to CSS rules, to stylesheets and CSS sources.  Such links open the **Sources** tool.  If the stylesheet is minified, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
 
 * In the **Inherited from** sections, to parent elements.
 
@@ -179,7 +178,7 @@ To display the description of a CSS property, in a tooltip:
 
 1. In the tooltip, click the **Learn more** link.
 
-   The CSS reference page for the property at MDN is displayed, such as [padding CSS property](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/padding).
+   The CSS reference page for the property at MDN is displayed, such as [`padding` CSS property](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/padding).
 
 
 To turn the CSS tooltips off:
@@ -226,7 +225,7 @@ See also:
 ###### View the values of custom properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#custom-css -->
 
-Hover over a `--custom-property` to see its value in a tooltip.
+Hover over a `var(--custom-property)` function to see the value of the custom property in a tooltip.
 
 For example:
 
@@ -245,7 +244,7 @@ For example:
    ![The value of a custom property in a tooltip](./reference-images/the-value-a-custom-property.png)
 
 See also:
-* [Custom properties (--*): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*) - MDN.
+* [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*) - MDN.
 
 
 <!-- ------------------------------ -->
@@ -254,7 +253,7 @@ See also:
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, click the **Format** (![Format](./reference-images/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
+If the stylesheet is minified, click the **Format** (![Format](./reference-images/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
 
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 
@@ -309,14 +308,14 @@ See:
 #### View CSS properties in alphabetical order
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#alphabetical -->
 
-Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
 #### View inherited CSS properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#inherited -->
 
-Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).
+Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
@@ -338,7 +337,7 @@ In the **Elements** tool, the **Styles** tab shows the following at-rules in ded
 ###### View `@property` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#property -->
 
-The `@property` CSS at-rule lets you define CSS custom properties explicitly and register them in a style sheet without running any JavaScript.
+The `@property` CSS at-rule lets you define CSS custom properties of specific types in a stylesheet.
 
 Hover over the name of such a property in the **Styles** tab, to see a tooltip that contains:
 * The property's value, such as `20%`.
@@ -353,9 +352,9 @@ For example:
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the **Styles** tab, hover over the name of a CSS custom property that's defined by the `@property` CSS at-rule:
+1. In the **Styles** tab, hover over that `var(--itemSize)` function:
 
-   ![Tooltip for the @property CSS at-rule](./reference-images/at-property-tooltip.png)
+   ![Tooltip for the at-property CSS at-rule](./reference-images/at-property-tooltip.png)
 
    The tooltip contains:
    * The property's value, such as `100px`.
@@ -366,13 +365,13 @@ For example:
 
    The expanded **@property** section is displayed, further down in the **Styles** tab:
 
-   ![--itemSize in @property section](./reference-images/at-property-itemsize.png)
+   ![--itemSize in the at-property section](./reference-images/at-property-itemsize.png)
 
 To edit an `@property` rule, double-click its name or value.  See [Change a declaration name or value](#change-a-declaration-name-or-value), below.
 
 See also:
 * [@property: giving superpowers to CSS variables](https://web.dev/articles/at-property) at Web.dev.
-* [Custom properties (--*): CSS variables](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/--*) at MDN.
+* [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/--*) at MDN.
 
 
 <!-- ---------- -->
@@ -383,9 +382,13 @@ The **Styles** tab shows you the `@supports` CSS at-rules, if they are applied t
 
 For example, to view the `@supports` rule:
 
-1. In a new window or tab, go to a page that uses the `@supports` at-rule, such as [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/):
+1. In a new window or tab, go to a page that uses the `@supports` at-rule, such as [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/).
 
-   ![Result of HTML for @supports at-rule](./reference-images/view-supports-rules.png)
+1. Right-click "I support CIE LAB color space!", and then select **Inspect**.
+
+   DevTools opens.  In the **Elements** tool, in the DOM tree, the `<div class="box">` element is selected.  In the **Styles** tab, `@supports` CSS declarations are listed:
+
+   ![Result of HTML for the at-supports at-rule](./reference-images/view-supports-rules.png)
 
 * If your browser supports the `lab()` function, the element is green.
 
@@ -398,20 +401,15 @@ To see which browser versions support the CIE LAB color space, [search Caniuse.c
 ###### View `@scope` at-rules
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#scope -->
 
-The **Styles** tab displays CSS @scope at-rules if they are applied to an element.
+The **Styles** tab displays CSS `@scope` at-rules if they are applied to an element.
 
-See also:
-* [Scoping Styles: the @scope rule](https://drafts.csswg.org/css-cascade-6/#scope-atrule) at W3C.
-
-The `@scope` at-rules are a part of the [CSS Cascading and Inheritance Module Level 6](https://drafts.csswg.org/css-cascade-6/) specification at W3C.  These rules allow you to scope CSS styles; that is, explicitly apply styles to specific elements.
+The `@scope` at-rules allow you to scope CSS styles; that is, explicitly apply styles to specific elements.  See [`@scope` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@scope) at MDN.
 
 To view the `@scope` rule:
 
-1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
-
 1. In a new window or tab, go to a page that uses the `@scope` at-rule, such as the [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-scope/) demo:
 
-   ![Result of HTML & CSS for @scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
+   ![Result of HTML & CSS for the at-scope at-rule](./reference-images/at-scope-at-rule-rendered.png)
 
 1. Right-click "I'm the text that lives on a card", and then select **Inspect**.
 
@@ -421,47 +419,15 @@ To view the `@scope` rule:
 
 1. Examine the `@scope` rule:
 
-   ![The @scope rule in the Styles tab](./reference-images/scope-rule-in-styles-tab.png)
+   ![The at-scope rule in the Styles tab](./reference-images/scope-rule-in-styles-tab.png)
 
    In this example, the `@scope` rule (background color = plum) overrides the global CSS `background-color` declaration (aquamarine), for any `<p>` element that's inside an element (such as a `<div>`) that has a `card` class.
-
-   From `index.html`:
-
-   ```html
-   <p>I'm just a piece of text.</p>
-   <div class="card">
-     <p>I'm the text that lives on a card.</p>
-   </div>
-   ```
-   
-   From `styles.css`:
-   
-   ```css
-   @scope (.card) {
-     p {
-       background-color: plum;
-     }
-   }
-   p {
-     width: max-content;
-     background-color: aquamarine;
-   }
-   .card {
-     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
-     border-style: groove;
-     transition: 0.3s;
-     border-radius: 10px;
-     padding: 0px 16px;
-   }
-   ```
 
    To edit the `@scope` rule, you double-click in the rule:
 
 1. In the **Styles** tab, double-click **plum**, press **Delete**, and then select **beige**.
 
    The text in the card in the demo webpage changes from plum background to beige background.
-
-1. Cleanup: In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then disable the **Experimental Web Platform features** flag.
 
 
 <!-- ---------- -->
@@ -472,8 +438,6 @@ The [@font-palette-values CSS at-rule](https://developer.mozilla.org/docs/Web/CS
 
 To view the `@font-palette-values` CSS rule:
 
-1. In a new window or tab, go to `edge://flags/#enable-experimental-web-platform-features`, and then enable the **Experimental Web Platform features** flag.
-
 1. In a new window or tab, go to a page that uses the `@font-palette-values` at-rule, such as the [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/) demo.
 
 1. Right-click "new colors", and then select **Inspect**.
@@ -482,7 +446,7 @@ To view the `@font-palette-values` CSS rule:
 
 1. In the **Styles** tab, find the `@font-palette-values` CSS rule:
 
-   ![The @font-palette-values rule in the Styles tab](./reference-images/at-font-palette-values-at-rule-rendered.png)
+   ![The at-font-palette-values rule in the Styles tab](./reference-images/at-font-palette-values-at-rule-rendered.png)
 
    In this example, the `--New` font palette values override the default values of the colored font.
 
@@ -518,13 +482,13 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 
    DevTools opens, with the **Elements** tool selected.  The submenu element `<ul id="submenu">` is selected in the DOM tree:
 
-   ![Result of HTML & CSS for @position-try at-rule](./reference-images/at-position-try-at-rule-rendered.png)
+   ![Result of HTML & CSS for the at-position-try at-rule](./reference-images/at-position-try-at-rule-rendered.png)
 
 1. In the **Styles** tab, in the `#submenu` CSS rule, find the `position-try-fallbacks` property, and click its `--bottom` value.
 
    The **Styles** tab scrolls down to the corresponding `@position-try` section:
 
-   ![The @position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
+   ![The at-position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
 
 1. In the **Styles** tab, in the `#submenu` CSS rule, click the `--submenu` link in any of the following properties:
 
@@ -549,13 +513,16 @@ See also:
 #### View an element's box model
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#box-model -->
 
-To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane, and scroll down.
+To view the box model of an element, go to the **Styles** pane, and scroll down.
 
 To change a value, double-click the value.
 
 In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element:
 
 ![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
+
+See also:
+* [The box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) at MDN.
 
 
 <!-- ------------------------------ -->
@@ -570,7 +537,7 @@ In the following figure, the **Styles** pane is filtered to only show rules that
 
 ![Filter the Styles panel](./reference-images/css-elements-styles-filter-color.png)
 
-In the following figure, the **Computed** pane is filtered to only show declarations that include the search query `100%`.
+In the following figure, the **Computed** pane is filtered to only show declarations that include the search query `100%`:
 
 ![Filter the Computed panel](./reference-images/css-elements-computed-filter-100.png)
 
@@ -608,7 +575,7 @@ To try emulating a focused page:
 
    Under the input text box, the message element reappears below the input text box.
 
-   You can now inspect and debug (in the **Sources** tool) the message element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
+   You can now inspect the message element that's below the input text box, even though DevTools, rather than the inspected page, has focus:
 
    ![The Emulate a focused page checkbox selected](./reference-images/emulate-focused-page.png)
 
@@ -677,7 +644,7 @@ For example, such pseudo-elements are:
 * `::grammar-error`
 * `::highlight`
 
-When multiple styles conflict, cascade determines the winning style; see [3.5. Cascading and Per-Element Highlight Styles](https://drafts.csswg.org/css-pseudo-4/#highlight-cascade) in _CSS Pseudo-Elements Module Level 4_ at W3C.
+When multiple styles conflict, the CSS cascade determines the winning style.  See [Introduction to the CSS cascade](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction) at MDN.
 
 To better understand the inheritance and priority of the rules, view the inherited highlight pseudo-element in the following demo.
 
@@ -700,20 +667,6 @@ To view the inherited highlight pseudo-elements:
    In the **Styles** tab, the section is displayed: **Pseudo ::selection element**:
 
    ![View the Pseudo section in the Styles tab](./reference-images/view-pseudo-section.png)
-
-From `index.html`:
-
-```html
-<div class="text-parent">
-  <div class="highlighted-text">I inherited the style of my parent's highlight pseudo-element.  Select me!</div>
-</div>
-<style>
-  .text-parent::selection {
-    background: #ff0;
-    color: #ff1493;
-  }
-</style>
-```
 
 See also:
 * [Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements) at MDN.
@@ -837,19 +790,19 @@ To copy CSS:
 
 1. Select a right-click menuitem:
 
-   * **Copy declaration**.  Copies the property and its value in CSS syntax: `css property: value;`
+   * **Copy declaration**.  Copies the property and its value in CSS syntax: `property: value;`
 
    * **Copy property**.  Copies only the `property` name.
 
    * **Copy value**.  Copies only the `value`.
 
-   * **Copy rule**.  Copies the entire CSS rule: `css selector[, selector] { property: value; property: value; ... }`
+   * **Copy rule**.  Copies the entire CSS rule: `selector[, selector] { property: value; property: value; ... }`
 
-   * **Copy declaration as JS**.  Copies the property and its value in JavaScript syntax: `js propertyInCamelCase: 'value'`
+   * **Copy declaration as JS**.  Copies the property and its value in JavaScript syntax: `propertyInCamelCase: 'value'`
 
-   * **Copy all declarations**.  Copies all properties and their values in the CSS rule: `css property: value; property: value; ...`
+   * **Copy all declarations**.  Copies all properties and their values in the CSS syntax: `property: value; property: value; ...`
 
-   * **Copy all declarations as JS**.  Copies all properties and their values in JavaScript syntax: `js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
+   * **Copy all declarations as JS**.  Copies all properties and their values in JavaScript syntax: `propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
 
    * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.  This menuitem conditionally appears.
 
@@ -882,7 +835,7 @@ The order of declarations affects how an element is styled.  You can add declara
 
 Adding a inline declaration is equivalent to adding a `style` attribute to the HTML of an element.  For most scenarios, you probably want to use inline declarations.
 
-Inline declarations have higher specificity than external declarations, so using inline declarations ensures that the changes take effect in your specific, expected element.  For more information about specificity, see [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types).
+Inline declarations have higher specificity than external declarations, so using inline declarations ensures that the changes take effect in your specific, expected element.  For more information about specificity, see [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types) in _Specificity_ at MDN.
 
 To add an inline declaration:
 
@@ -937,16 +890,16 @@ To change a numerical value, type in the value, or use the arrow keys, per the n
 #### Change enumerable values with keyboard shortcuts
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#values-shortcuts -->
 
-While editing an enumerable value of a declaration, for example, `font-size`, you can use the following keyboard shortcuts to increment the value by a fixed amount:
+To change a numerical value of a CSS declaration, type in the value, or use the arrow keys to increment the value by a specific amount.  While editing an enumerable value of a declaration, for example, `font-size`, you can use the following keyboard shortcuts to increment the value by a fixed amount:
 
 | Key combination | Action |
 |---|---|
-| **Alt+UpArrow** (Windows, Linux), **Option+UpArrow** (macOS) | Increment by 0.1. |
-| **UpArrow** | Increment by 1, or by 0.1 if the current value is between -1 and 1. |
-| **Shift+UpArrow** | Increment by 10. |
+| **Alt+Up Arrow** (Windows, Linux), **Option+UpArrow** (macOS) | Increment by 0.1. |
+| **Up Arrow** | Increment by 1, or by 0.1 if the current value is between -1 and 1. |
+| **Shift+Up Arrow** | Increment by 10. |
 | **Ctrl+Shift+PgUp** (Windows, Linux), **Shift+Command+UpArrow** (macOS) | Increment by 100. |
 
-To decrement, press **DownArrow** instead of **UpArrow**.
+To decrement, press the **Down Arrow** (or **Page Down**) key instead of the **Up Arrow** (or **Page Up**) key.
 
 
 <!-- ------------------------------ -->
@@ -954,8 +907,6 @@ To decrement, press **DownArrow** instead of **UpArrow**.
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
 
 You can use your pointer to change any property that has a length value, such as `width`, `height`, `padding`, `margin`, or `border`.
-
-_todo: is "length" correct?  any size measurement?_
 
 To change the length unit:
 
@@ -991,22 +942,6 @@ To change the length unit:
 
 
 <!-- ------------------------------ -->
-#### Increment numerical declaration values
-<!-- not upstream -->
-
-To change a numerical value of a CSS declaration, type in the value, or use the arrow keys to increment the value by a specific amount:
-
-| Keyboard shortcut | Increments by |
-|---|---|
-| **Alt+Up Arrow** (Windows, Linux) or **Option+Up Arrow** (macOS) | 0.1 |
-| **Up Arrow** | 1 (or 0.1, if the current value is between -1 and 1) |
-| **Shift+Up Arrow** | 10 |
-| **Shift+Page Up** (Windows, Linux) or **Shift+Command+Up Arrow** (macOS) | 100 |
-
-To decrement, press the **Down Arrow** (or **Page Down**) key instead of the **Up Arrow** (or **Page Up**) key.
-
-
-<!-- ------------------------------ -->
 #### Add a class to an element
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#add-class -->
 
@@ -1029,7 +964,7 @@ To add a class to an element:
 
 To toggle automatic dark mode, or emulate the user's preference of light or dark themes:
 
-1. In the **Elements** tool, in the **Styles** tab, click [Paintbrush icon](./reference-images/toggle-common-rendering-emulations-icon.png) **Toggle common rendering emulations** in the upper right:
+1. In the **Elements** tool, in the **Styles** tab, click the **Toggle common rendering emulations** (![Paintbrush icon](./reference-images/toggle-common-rendering-emulations-icon.png)) button in the upper right:
 
    ![Toggle common rendering emulations](./reference-images/toggle-common-rendering-emulations.png)
 
@@ -1131,7 +1066,7 @@ To toggle a single declaration on or off:
 
 See:
 * [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  _todolink: is there a non-Chrome link instead?_
-* [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.  _todolink: change to a non-Chrome link?_
+* [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.<!-- todo: change to a local link after create article per AB#62591100 -->
 
 
 <!-- ------------------------------ -->
@@ -1177,7 +1112,10 @@ The following figure and list describes of each of the UI elements of the **Colo
 | 6 | **Hue** |  |
 | 7 | **Opacity** |  |
 | 8 | **Display Value Switcher** | Toggle between the RGBA, HSLA, and Hex representations of the current color. |
-| 9 | **Color Palette Switcher** | Toggle between the [Material Design palette](https://material.io/guidelines/style/color.html#color-color-palette), a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets. |
+| 9 | **Color Palette Switcher** | Toggle between the Material Design palette, a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets. |
+
+See also:
+* [Color usage and palettes](https://m2.material.io/design/color/the-color-system.html#color-usage-and-palettes) in _The color system_ at material.io: the Material Design palette.
 
 
 <!-- ------------------------------ -->
@@ -1351,19 +1289,87 @@ Any change triggers a ball animation in the **Preview** at the top of the **Easi
 
 <!-- ====================================================================== -->
 ## See also
+<!-- all links in article -->
 
-_todo: all links in article_
+<!-- Local: -->
+* [Get started viewing and changing CSS](../css/index.md).
+* [View the CSS for an element](../css/index.md#view-the-css-for-an-element).
+* [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
+* [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
+* [Command Menu](../command-menu/index.md)
+* [Force DevTools into Print Preview mode](../css/print-preview.md).
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md).
+* [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md).
+* [Emulating dark or light mode using the Rendering tool](../accessibility/preferred-color-scheme-simulation.md#emulating-dark-or-light-mode-using-the-rendering-tool) in _Emulate dark or light schemes in the rendered page_.
+* [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
+* [Align grid items and their content: the grid editor popup](./grid.md#align-grid-items-and-their-content-the-grid-editor-popup) in _Inspect CSS Grid layouts_.
+* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
+* [Styles pane keyboard shortcuts](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
+<!-- todo: after https://github.com/MicrosoftDocs/edge-developer/pull/3814 is merged, un-comment link
+* [Understand CSS in the Styles pane](https://learn.microsoft.com/microsoft-edge/devtools/css/issues#understand-css-in-the-styles-pane) in _Find invalid, overridden, inactive, and other CSS_.
+-->
+<!-- todo: after https://github.com/MicrosoftDocs/edge-developer/pull/3814 is merged, un-comment link
+* [Understand CSS in the Computed pane](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools/css/issues?branch=pr-en-us-3814#understand-css-in-the-computed-pane) in _Find invalid, overridden, inactive, and other CSS_.
+-->
 
-Demos repo:
+Demos:
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/)
-   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do/) - Readme and source code.
-* [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/) - Window Controls Overlay demo.
-   * [/1DIV/](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV/) - Readme and source code.
-* [Animated CSS Property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/)
-   * [/devtools-animated-property-issue/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-animated-property-issue/) - Readme and source code.
+* [View `@property` at-rules](https://microsoftedge.github.io/Demos/at-rules-property/)
+* [View `@supports` at-rules](https://microsoftedge.github.io/Demos/at-rules-supports/)
+* [View `@scope` at-rules](https://microsoftedge.github.io/Demos/at-rules-scope/)
+* [View `@font-palette-values` at-rules](https://microsoftedge.github.io/Demos/at-rules-font-palette-values/)
+* [View `@position-try` at-rules](https://microsoftedge.github.io/Demos/at-rules-position-try/)
+* [Emulate a focused page](https://microsoftedge.github.io/Demos/emulate-focused-page/)
+* [Highlight pseudo-elements](https://microsoftedge.github.io/Demos/highlight-pseudo-elements/)
+* [Cascade layers](https://microsoftedge.github.io/Demos/cascade-layers/)
+* [1DIV](https://microsoftedge.github.io/Demos/1DIV/dist/)
+* [Animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/)
+
+MDN:
+* [Using CSS custom properties (variables)](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties)
+* [`padding` CSS property](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/padding)
+* [Specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity)
+* [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*)
+   * [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/--*)
+* [`@scope` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@scope)
+* [@font-palette-values CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/@font-palette-values)
+* [The box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model)
+* [Page Visibility API](https://developer.mozilla.org/docs/Web/API/Page_Visibility_API)
+* [`:active`](https://developer.mozilla.org/docs/Web/CSS/:active)
+* [`:focus`](https://developer.mozilla.org/docs/Web/CSS/:focus)
+* [`:focus-within`](https://developer.mozilla.org/docs/Web/CSS/:focus-within)
+* [`:target`](https://developer.mozilla.org/docs/Web/CSS/:target)
+* [`:hover`](https://developer.mozilla.org/docs/Web/CSS/:hover)
+* [`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible)
+* [Introduction to the CSS cascade](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction)
+* [Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements)
+* [CSS syntax basics](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/What_is_CSS#css_syntax_basics) in _What is CSS?_
+* [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types) in _Specificity_.
+* [animation-timing-function](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function)
+* [transition-timing-function](https://developer.mozilla.org/docs/Web/CSS/transition-timing-function)
+* [Bézier curve](https://developer.mozilla.org/docs/Glossary/Bezier_curve)
+
+GitHub:
+* [VS Code Custom Data](https://github.com/microsoft/vscode-custom-data) - the "microsoft / vscode-custom-data" repo.
+
+Web.dev:
+* [@property: giving superpowers to CSS variables](https://web.dev/articles/at-property)
+* [prefers-color-scheme: Hello darkness, my old friend](https://web.dev/articles/prefers-color-scheme)
 
 W3C:
-* [Scoping Styles: the @scope rule](https://drafts.csswg.org/css-cascade-6/#scope-atrule) at W3C.
+* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
+
+Chrome docs:
+* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)  _todolink: non-Chrome link_
+* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  _todolink: local link_
+* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
+* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme) in Chrome blog.  _todolink: link ok?_
+* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  _todolink: is there a non-Chrome link instead?_
+* [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.<!-- todo: change to a local link after create article per AB#62591100 -->
+
+material.io:
+* [Color usage and palettes](https://m2.material.io/design/color/the-color-system.html#color-usage-and-palettes) in _The color system_: the Material Design palette.
 
 
 <!-- ====================================================================== -->
