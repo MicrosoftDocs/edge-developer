@@ -374,11 +374,13 @@ You need to discover the user data directory of the host app.
 
 The path for the user data directory ends with `\EBWebView`.  The `\EBWebView` suffix is automatically added by the WebView2 Runtime.  If you're copying the user data path from source code, you might need to append `\EBWebView`.
 
-You can find the path for the user data directory by using WebView2Utilities: In the **Host Apps** tab, select your running host app, and examine the **User data folder** row.
+You can find the path for the user data directory by using WebView2Utilities: in the **Host Apps** tab, select your running host app, and examine the **User data folder** row.
 
 
 <!-- ------------------------------ -->
 #### Step 3: Configure the MCP server
+
+To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to the WebView2 user data directory:
 
 ```json
 {
@@ -403,9 +405,9 @@ Replace `<APP_PACKAGE>` with the package name of your host app.
 <!-- ------------------------------ -->
 #### Step 4: Test your setup
 
-Launch your WebView2 host app, then use your MCP client to interact with your WebView2 host app:
+Launch your WebView2 host app, then use your MCP client to interact with your WebView2 host app.
 
-`Take a snapshot of the current page`<!-- todo: what is this? -->
+For example, prompt your AI coding agent: `Take a snapshot of the current page`
 
 
 <!-- ====================================================================== -->
