@@ -70,7 +70,7 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
    * [Toggle a class](#toggle-a-class)
    * [Add a style rule](#add-a-style-rule)
       * [Select a stylesheet to add a rule to](#select-a-stylesheet-to-add-a-rule-to)
-      * [Add a style rule to a specific location](#add-a-style-rule-to-a-specific-location)
+      * [Add a style rule to a specific location in a stylesheet](#add-a-style-rule-to-a-specific-location-in-a-stylesheet)
    * [Toggle a declaration](#toggle-a-declaration)
    * [Edit the `::view-transition` pseudo-elements during an animation](#edit-the-view-transition-pseudo-elements-during-an-animation)
    * [Align grid items and their content with the Grid Editor](#align-grid-items-and-their-content-with-the-grid-editor)
@@ -81,7 +81,6 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
    * [Edit animation and transition timings with the Easing Editor](#edit-animation-and-transition-timings-with-the-easing-editor)
       * [Use presets to adjust timings](#use-presets-to-adjust-timings)
       * [Configure custom timings](#configure-custom-timings)
-* [Copy CSS changes](#copy-css-changes)
 * [See also](#see-also)
 
 
@@ -91,13 +90,14 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
 
 The **Elements** tool in DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, see [View the CSS for an element](../css/index.md#view-the-css-for-an-element).
 
-In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**:
-
 ![An example of a selected element](./reference-images/css-elements-styles-h1.png)
 
-_todo: redo w/ demo-to-do not LMC_
+In the above figure:
+* The `h1` element that is highlighted in the **DOM Tree** is the selected element.
+* On the right, the styles of the element are shown in the **Styles** pane.
+* On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**:
 
-There are many ways to select an element:
+There are multiple ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
 
@@ -256,13 +256,9 @@ In the **Styles** pane, click the link next to a CSS rule to open the external s
 
 If the stylesheet is minified, click the **Format** (![Format](./reference-images/format-icon.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
-In the following figure, after you click
-`https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --><!--keep /en-us--> you are taken to line 2 of
-`https://learn.microsoft.com/_themes/docs.theme/master/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- /master/ works but lines concated.  /main/ doesn't work -->
-
 ![Viewing the stylesheet where a rule is defined](./reference-images/css-elements-styles-h1-highlight.png)
 
-_todo: redo w/ demo-to-do not LMC_
+In the above figure, after you click `to-do-styles.css:5`, you are taken to line 5 of `to-do-styles.css`, where the `h1` CSS rule is defined.
 
 
 <!-- ------------------------------ -->
@@ -271,8 +267,11 @@ _todo: redo w/ demo-to-do not LMC_
 
 The **Styles** tab recognizes many kinds of CSS issues and highlights them in different ways.
 
+<!-- todo: after https://github.com/MicrosoftDocs/edge-developer/pull/3814 is merged, un-comment link
+upstream: https://developer.chrome.com/docs/devtools/css/issues#css-in-styles
 See:
-* [Understand CSS in the Styles tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-styles) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link not found_
+* [Understand CSS in the Styles pane](https://learn.microsoft.com/microsoft-edge/devtools/css/issues#understand-css-in-the-styles-pane) in _Find invalid, overridden, inactive, and other CSS_.
+-->
 
 
 <!-- ------------------------------ -->
@@ -299,9 +298,10 @@ For example:
 
 1. To display all properties, select the **Show all** checkbox.
 
-<!-- 
-See also:
-* [Understand CSS in the Computed tab](https://developer.chrome.com/docs/devtools/css/issues#css-in-computed) in _Find invalid, overridden, inactive, and other CSS_ in Chrome docs.  _todolink: local link when exists_
+<!-- todo: after https://github.com/MicrosoftDocs/edge-developer/pull/3814 is merged, un-comment link
+upstream: https://developer.chrome.com/docs/devtools/css/issues#css-in-computed
+See:
+* [Understand CSS in the Computed pane](https://review.learn.microsoft.com/en-us/microsoft-edge/devtools/css/issues?branch=pr-en-us-3814#understand-css-in-the-computed-pane) in _Find invalid, overridden, inactive, and other CSS_.
 -->
 
 
@@ -522,8 +522,6 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 
 1. In the **Styles** tab, in the `#submenu` CSS rule, find the `position-try-fallbacks` property, and click its `--bottom` value.
 
-   _todo: probably should do something other than click --bottom.  symptom of perhaps inconsistent code: hovering any --submenu value skips back & forth showing layout or not_
-
    The **Styles** tab scrolls down to the corresponding `@position-try` section:
 
    ![The @position-try section in the Styles tab](./reference-images/position-try-rule-in-styles-tab.png)
@@ -551,15 +549,13 @@ See also:
 #### View an element's box model
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#box-model -->
 
-To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
+To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, go to the **Styles** pane, and scroll down.
 
-To change a value, double-click it.
+To change a value, double-click the value.
 
 In the following figure, the **Box Model** diagram in the **Styles** pane shows the box model for the currently selected `h1` element:
 
 ![The Box Model diagram](./reference-images/css-elements-styles-h1-2.png)
-
-_todo: redo w/ demo-to-do not LMC_
 
 
 <!-- ------------------------------ -->
@@ -618,11 +614,9 @@ To try emulating a focused page:
 
 1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
 
-An **Emulate a focused page** checkbox also appears in the **Rendering** tool.
+An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
-* [Emulate a focused page](https://developer.chrome.com/docs/devtools/rendering/apply-effects#emulate_a_focused_page) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in the Chrome docs.  _todolink: local link_
 * [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  _todolink: local link_
 
 
@@ -823,8 +817,6 @@ See [Force DevTools into Print Preview mode](../css/print-preview.md).
 ## Copy CSS
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#copy-css -->
 
-_todo: format, link, pngs_
-
 From a single dropdown menu in the **Styles** tab, you can copy separate CSS rules, declarations, properties, or values; see [CSS syntax basics](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/What_is_CSS#css_syntax_basics) in _What is CSS?_ at MDN.
 
 Additionally, you can copy CSS properties in JavaScript syntax.  This option is handy if you're using CSS-in-JS libraries; see [Style editing for CSS-in-JS frameworks](./css-in-js.md).
@@ -843,27 +835,25 @@ To copy CSS:
 
    ![Copy CSS dropdown menu](./reference-images/copy-css-dropdown-menu.png)
 
-   The right-click menu contains the following menuitems:
+1. Select a right-click menuitem:
 
-   * **Copy declaration**. Copies the property and its value in CSS syntax: `css property: value;`
+   * **Copy declaration**.  Copies the property and its value in CSS syntax: `css property: value;`
 
-   * **Copy property**. Copies only the `property` name.
+   * **Copy property**.  Copies only the `property` name.
 
-   * **Copy value**. Copies only the `value`.
+   * **Copy value**.  Copies only the `value`.
 
-   * **Copy rule**. Copies the entire CSS rule: `css selector[, selector] { property: value; property: value; ... }`
+   * **Copy rule**.  Copies the entire CSS rule: `css selector[, selector] { property: value; property: value; ... }`
 
-   * **Copy declaration as JS**. Copies the property and its value in JavaScript syntax: `js propertyInCamelCase: 'value'`
+   * **Copy declaration as JS**.  Copies the property and its value in JavaScript syntax: `js propertyInCamelCase: 'value'`
 
-   * **Copy all declarations**. Copies all properties and their values in the CSS rule: `css property: value; property: value; ...`
+   * **Copy all declarations**.  Copies all properties and their values in the CSS rule: `css property: value; property: value; ...`
 
-   * **Copy all declarations as JS**. Copies all properties and their values in JavaScript syntax: `js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
+   * **Copy all declarations as JS**.  Copies all properties and their values in JavaScript syntax: `js propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
 
-   * **Copy all CSS changes**. Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.  This menuitem conditionally appears.
+   * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.  This menuitem conditionally appears.
 
-   * **View computed value**. Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
-
-1. Select a right-click menuitem.
+   * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
 
 
 <!-- ====================================================================== -->
@@ -962,8 +952,6 @@ To decrement, press **DownArrow** instead of **UpArrow**.
 <!-- ------------------------------ -->
 #### Change length values
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#change-length-value -->
-
-_todo: format, link, pngs_
 
 You can use your pointer to change any property that has a length value, such as `width`, `height`, `padding`, `margin`, or `border`.
 
@@ -1104,20 +1092,20 @@ To instead add the rule in an existing stylesheet:
 
 
 <!-- ---------- -->
-###### Add a style rule to a specific location
+###### Add a style rule to a specific location in a stylesheet
 <!-- not upstream -->
 
-_todo: merge this section (not upstream) w/ above section?_
+By default, adding a style rule by clicking the **New Style Rule** (![New Style Rule icon](./reference-images/new-style-rule-icon.png)) button inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
 
-By default, adding a style rule by clicking on **New Style Rule** inserts the new rule beneath the **element.style** rule in the `inspector-stylesheet` stylesheet.
+To add a style rule in a specific location of a particular stylesheet by starting from the **Styles** pane:
 
-To add a style rule in a specific location of the **Styles** pane instead:
+1. In the **Elements** tool, in the **Styles** tab, hover over the style rule that's directly above where you want to add your new style rule.
 
-1. Hover on the style rule that is directly above where you want to add your new style rule.
+   An **Insert style rule below** (![Insert style rule below icon](./reference-images/insert-style-rule-below-icon.png)) button appears on the right side of the CSS rule.
 
-1. Click **Insert Style Rule Below** (![Insert Style Rule Below icon](./reference-images/new-style-rule-icon.png)).
+1. Click the **Insert style rule below** (![Insert style rule below icon](./reference-images/insert-style-rule-below-icon.png)) button:
 
-![Insert Style Rule Below](./reference-images/css-elements-styles-insert-style-rule-below.png)
+   ![Insert style rule below](./reference-images/css-elements-styles-insert-style-rule-below.png)
 
 
 <!-- ------------------------------ -->
@@ -1276,17 +1264,15 @@ To open the **Easing Editor**:
 
 1. In DevTools, in the **Elements** tool, in the DOM tree, select an element that has a CSS animation or transition applied.
 
-   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the red box containing an animation, and then select **Inspect**.
+   For example, open the [animated property demo page](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) in a new tab or window, right-click the green box that contains an animation, and then select **Inspect**.
 
    DevTools opens, displaying the **Elements** tool.
 
-1. Press **Ctrl+F** and find "spinner", and then select the `<div class="spinner">` element that's inside `<div class="animation-demo bad">`.
+1. Press **Ctrl+F** and find "spinner", and then select the `<div class="spinner">` element that's inside `<div class="animation-demo good">`.
 
-   _todo: why use the bad spinner, do we want the good spinner instead?_
+   The red (bad) and green (good) boxes on this demo page are two different CSS animations.  Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
 
-   The red and green boxes on this demo page are two different CSS animations.  Both animations run with CSS by using the `animation` CSS property, and define an `ease-in-out` timing function.
-
-1. In the **Styles** tab, in the `.bad .spinner` CSS rule, in the `animation` declaration, to the left of `ease-in-out`, click the **Open cubic bezier editor** (![Cubic bezier editor icon](./reference-images/easing-editor-icon.png)) button.
+1. In the **Styles** tab, in the `.good .spinner` CSS rule, in the `animation` declaration, to the left of `ease-in-out`, click the **Open cubic bezier editor** (![Cubic bezier editor icon](./reference-images/easing-editor-icon.png)) button.
 
    The **Easing Editor** opens:
 
@@ -1317,8 +1303,6 @@ To adjust timings by a simple mouse-click, use the presets in the **Easing Edito
    * Linear presets: `elastic`, `bounce`, or `emphasized`.
 
    * Cubic Bezier presets:
-
-   _todo: change col heading from Preset to Presets? (3x)_
 
    | Timing keyword | Preset | Cubic Bezier |
    |---|---|---|
@@ -1363,38 +1347,6 @@ To set custom values for timing functions, use the control points on the lines:
    ![Dragging the control points of a Cubic Bezier function](./reference-images/dragging-control-points.png)
 
 Any change triggers a ball animation in the **Preview** at the top of the **Easing Editor**.
-
-
-<!-- ====================================================================== -->
-## Copy CSS changes
-<!-- (Experimental) Copy CSS changes  https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes -->
-
-_todo: delete section?  no such experiment in Chrome or Edge.  changing max-width: 50rem doesn't cause a green highlight or a Copy button on right, see upstream [(Experimental) Copy CSS changes](https://developer.chrome.com/docs/devtools/css/reference/#copy-css-changes)_
-
-The **Styles** tab in the **Elements** tool highlights your CSS changes with a light green background.
-
-To copy a single CSS declaration change:
-
-_todo: build on the use of demo-to-do that's in [Change length values](#change-length-values) section above_
-
-* Hover over the highlighted declaration and click the **Copy** button:
-
-   _todopng: create/insert Copy icon above mid-sentence_
-
-   ![Copy a CSS declaration change]()
-
-   _todopng: create copy-css-declaration-change.png_
-
-To copy all CSS changes across declarations at once:
-
-* Right-click on any declaration and then select **Copy all CSS changes**:
-
-   ![Copy all CSS changes]()
-
-   _todopng: create copy-css-changes.png_
-
-See also:
-* [Track changes to files using the Changes tool](../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->
