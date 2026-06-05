@@ -28,4 +28,4 @@ See [Microsoft Edge extensions](https://github.com/MicrosoftEdge/Demos/blob/main
 <!-- ====================================================================== -->
 ## See also
 
-* [Clone the "MicrosoftEdge / Demos" repo to your drive](../../devtools/samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+* [Clone the "MicrosoftEdge / Demos" repo to your drive](../../devtools/samples/index.md#clone-the-microsoftedge--demos-repo-to-your-drive) in _Sample code for DevTools_.

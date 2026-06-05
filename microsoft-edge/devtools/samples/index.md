@@ -236,7 +236,7 @@ See also:
 <!-- ====================================================================== -->
 ## Open a demo folder from the Workspace tab in the Sources tool
 
-To use this section, first do the steps in [Clone the "MicrosoftEdge / Demos" repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
+To use this section, first do the steps in [Clone the "MicrosoftEdge / Demos" repo to your drive](#clone-the-microsoftedge--demos-repo-to-your-drive), above.
 
 See also:
 * [Workspace tutorial (Sources tool Workspace tab)](../workspaces/workspace-tutorial.md)

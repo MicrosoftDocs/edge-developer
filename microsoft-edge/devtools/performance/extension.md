@@ -225,7 +225,7 @@ To record a profile and view the custom performance data of the Photo Gallery de
 1. Open the [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo webpage in a new window or tab.
 
    Or, to be able to modify the sample code:
-   1. Clone the Demos repo, per [Clone the "MicrosoftEdge / Demos" repo to your drive](../samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+   1. Clone the Demos repo, per [Clone the "MicrosoftEdge / Demos" repo to your drive](../samples/index.md#clone-the-microsoftedge--demos-repo-to-your-drive) in _Sample code for DevTools_.
    1. Start a localhost server in the cloned `/demos/` directory, per [Start the localhost server](../samples/index.md#start-the-localhost-server), in _Sample code for DevTools_.
    1. In the browser, go to `http://localhost:8080/photo-gallery/` or equivalent, in a new window or tab.
 
