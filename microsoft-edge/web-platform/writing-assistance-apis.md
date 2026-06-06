@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 05/19/2025
+ms.date: 06/02/2025
 ---
 # Summarize, write, and rewrite text with the Writing Assistance APIs
 <!-- https://aka.ms/edge-writing-assistance-api-docs -->
@@ -19,10 +19,15 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 
 * [Availability of the Writing Assistance APIs](#availability-of-the-writing-assistance-apis)
 * [Alternatives to and benefits of the Writing Assistance APIs](#alternatives-to-and-benefits-of-the-writing-assistance-apis)
+* [Small language models built into Microsoft Edge](#small-language-models-built-into-microsoft-edge)
 * [The Phi-4-mini model](#the-phi-4-mini-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
-    * [Model availability](#model-availability)
+    * [Availability of the Phi-4-mini model](#availability-of-the-phi-4-mini-model)
+* [The Aion-1.0-Instruct model](#the-aion-10-instruct-model)
+  * [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-10-instruct-for-the-writing-assistance-apis)
+  * [Disclaimer](#disclaimer-1)
+  * [Availability of the Aion-1.0-Instruct model](#availability-of-the-aion-10-instruct-model)
 * [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis)
 * [See working examples](#see-working-examples)
 * [Use the Writing Assistance APIs](#use-the-writing-assistance-apis)
@@ -48,7 +53,9 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 <!-- ====================================================================== -->
 ## Availability of the Writing Assistance APIs
 
-The Summarizer, Writer, and Rewriter APIs are available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 138.0.3309.2.
+The Writer API and the Rewriter APIs are available as a developer preview in the Microsoft Edge Canary and Edge Dev channels, starting with version 138.0.3309.2.
+
+The Summarizer API has been enabled by default since Microsoft Edge 138.
 
 The Writing Assistance APIs are optimized for tasks specific to generating, modifying, and summarizing text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -69,13 +76,23 @@ The Writing Assistance APIs use a small language model (SLM) that runs on the sa
 
 * **Network independence:** Beyond the initial model download, there's no network latency when prompting the model, and may also be used when the device is offline.
 
-* **Improved privacy:** The data input to the model never leaves the device and is not collected to train AI models.
+* **Improved privacy:** The data input to the model never leaves the device, and isn't collected to train AI models.
 
 The Writing Assistance APIs use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
 * **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
+
+
+<!-- ====================================================================== -->
+## Small language models built into Microsoft Edge
+
+In Microsoft Edge Canary and Edge Dev channels, starting with version 138.0.3309.2, the Writing Assistance APIs use the Phi-4-mini model, which is built into Microsoft Edge.
+
+Starting with version 150.0.4070, the Writing Assistance APIs can also be used with the prerelease Aion-1.0-Instruct model, which is also built into Microsoft Edge.  Aion-1.0-Instruct is a smaller, faster, and more efficient model than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing.  If the performance class of your device isn't high enough to support Phi-4-mini, you can test the prerelease Aion-1.0-Instruct model.
+
+To learn more about both models, and how to enable Aion-1.0-Instruct, read the sections below.
 
 
 <!-- ====================================================================== -->
@@ -103,7 +120,7 @@ The Writing Assistance APIs are currently limited to:
 
 * **GPU:** 5.5 GB of VRAM or more.
 
-* **Network:** Unlimited data plan or unmetered connection.  The model is not downloaded if using a metered connection.
+* **Network:** Unlimited data plan or unmetered connection.  The model isn't downloaded if using a metered connection.
 
 To check if your device supports the Writing Assistance APIs developer preview, see [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis) below and check your device performance class.
 
@@ -111,27 +128,68 @@ Due to the experimental nature of the Writing Assistance APIs, you might observe
 
 
 <!-- ------------------------------ -->
-#### Model availability
+#### Availability of the Phi-4-mini model
 
-An initial download of the model will be required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Phi-4-mini model is required the first time that a website calls a built-in AI API.  You can monitor the downloading of the Phi-4-mini model by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+
+
+<!-- ====================================================================== -->
+## The Aion-1.0-Instruct model
+
+In Microsoft Edge Canary or Edge Dev, starting with version 150.0.4070, the Writing Assistance APIs can also be used with the prerelease Aion-1.0-Instruct model, built into Microsoft Edge.
+
+This Aion-1.0-Instruct model is significantly smaller, faster, and more efficient than Phi-4-mini, and is supported on devices with less capable GPUs or no GPU, via CPU-inferencing.
+
+Aion-1.0-Instruct is expected to be made available as an open source model in July 2026.
+
+
+<!-- ------------------------------ -->
+#### Enable Aion-1.0-Instruct for the Writing Assistance APIs
+
+By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1.0-Instruct in Microsoft Edge Canary or Edge Dev, enable the **Enable prerelease on-device language model** flag, as follows.  When this flag is enable, Aion-1.0-Instruct overrides Phi-4-mini as the default model for the Writing Assistance APIs.
+
+1. Make sure you're using the latest version of Edge Canary or Edge Dev (version 150.0.4070 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+
+1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags`.
+
+1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
+  
+1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
+
+   ![Flags page showing the prerelease on-device language model flag](./writing-assistance-apis-images/prerelease-model-flag-for-wa-apis.png)
+
+1. To check that Aion-1.0-Instruct is being used as the on-device language model, go to `edge://on-device-internals`, click **Model Status**, and check that **Model Name** is set to **Aion-1.0-Instruct**.
+
+
+<!-- ------------------------------ -->
+#### Disclaimer
+
+The Aion-1.0-Instruct model is made available in Microsoft Edge 150.0.4070 for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
+
+
+<!-- ------------------------------ -->
+#### Availability of the Aion-1.0-Instruct model
+
+An initial download of the Aion-1.0-Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the Aion-1.0-Instruct model by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 
 <!-- ====================================================================== -->
 ## Enable the Writing Assistance APIs
 
-To use any of the Writing Assistance APIs in Microsoft Edge:
+To use the Writer API or the Rewriter API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 138.0.3309.2 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using the latest version of Microsoft Edge Canary or Edge Dev (version 138.0.3309.2 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags/`.
+1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags/`.
 
 1. In the search box, at the top of the page:
 
-   * To enable the Summarizer API, enter **Summarization API for Phi mini**.
    * To enable the Writer API, enter **Writer API for Phi mini**.
    * To enable the Rewriter API, enter **Rewriter API for Phi mini**.
 
    The page is filtered to show the matching flag.
+
+   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enable the Summarizer API by entering **Summarization API for Phi mini** here.)
 
 1. Select **Enabled** next to the flag for the API you want to enable:
 
@@ -139,11 +197,15 @@ To use any of the Writing Assistance APIs in Microsoft Edge:
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
-1. Restart Microsoft Edge Canary or Dev.
+1. Restart Edge Canary or Edge Dev.
 
 1. To check if your device meets the hardware requirements for the Writing Assistance APIs developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md).
+   If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.
+
+   If your device performance class is **Medium** or **Low**, the Writing Assistance APIs are only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.0.4070.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-10-instruct-for-the-writing-assistance-apis), above.
+                                                       
+  If you notice issues with these models, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md) in the MSEdgeExplainers repo.
 
 
 <!-- ====================================================================== -->
@@ -153,7 +215,7 @@ To see the Writing Assistance APIs in action, and review existing code that uses
 
 1. [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Summarizer API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/summarizer-api/).
+1. In Microsoft Edge Canary or Edge Dev, open a tab or window and go to the [Summarizer API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/summarizer-api/).
 
 1. In the **Built-in AI playgrounds** navigation on the left:
 
@@ -537,7 +599,11 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Writing Assistance APIs, any issues with the APIs or language models, and whether new task-specific APIs, such as for translation, would be useful.
+We're interested in learning about:
+* The range of scenarios for which you intend to use the Writing Assistance APIs.
+* Any issues with the Writing Assistance APIs.
+* Any issues with the language models.
+* Whether new task-specific APIs would be useful.
 
 To send feedback about your scenarios and the tasks you want to achieve, please add a comment to [the Writing Assistance APIs feedback issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/1031).
 
