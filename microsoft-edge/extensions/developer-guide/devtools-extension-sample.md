@@ -147,8 +147,6 @@ Download the "main" branch of the Demos repo, as follows:
 
 1. In DevTools, in the **Activity Bar**, select the **Console** (![Console icon](./devtools-extension-sample-images/console-icon.png)) tool.
 
-   The message "Connected!" is displayed in the **Console** tool.<!-- todo: true?  how can we view that message? -->
-
 1. In the inspected webpage, click various spots.
 
    The clicked coordinates are displayed in the **Console**:
@@ -168,10 +166,6 @@ Download the "main" branch of the Demos repo, as follows:
    The **Open Folder** dialog opens.
 
 1. Navigate to the `/Demos-main/devtools-extension/` folder, such as `C:\Users\localAccount\GitHub\Demos-main\devtools-extension\`, and then click the **Select Folder** button.<!-- actually used forked cloned /Demos/ dir, a working branch, which has latest version of sample -->
-
-   A dialog opens, asking whether to open the repo in the parent folder.<!-- todo: does the dialog open even if when working from the downloaded zip?  doesn't this dialog only appear when working off of the cloned repo? -->
-
-1. Click the **Yes** button.
 
    In the **Explorer** pane, the `/devtools-extension/` folder is displayed.
 

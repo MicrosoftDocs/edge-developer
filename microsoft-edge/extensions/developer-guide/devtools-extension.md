@@ -48,7 +48,7 @@ The DevTools extension sample has the following files:
 | `panel.html` | Webpage to display in the custom panel in DevTools. |
 | `devtools.html` | A non-rendered HTML file that's run when DevTools is opened, to load the extension's JavaScript files. |
 | `devtools.js` | Main logic for the custom DevTools page. |
-| `content_script.js` | Code which the extension injects in the inspected webpage.  Prints a message<!-- todo: what message? --> to the console when the script is injected in the page.  Adds a click event listener to the page that will send a message with mouse-click position in the inspected page. |
+| `content_script.js` | Code which the extension injects in the inspected webpage.  Adds a click event listener to the page that will send a message with the mouse-click position.  `devtools.js` listens to this message and displays the position in the custom panel. |
 | `icon.png` | Icon to display on the tool's tab in the Activity bar of DevTools and in the **More tools** menu. |
 | `README.md` | Basic information for developers about how to use the sample. |
 
@@ -339,10 +339,8 @@ Code which the custom DevTools tool injects in the inspected webpage.
 Contains JavaScript that's injected into the inspected webpage (any webpage).
 
 This file does the following:
-* Prints a message<!-- todo: what message? --> to the DevTools **Console** when the page is clicked.
 * Adds a click event listener to the inspected webpage, that sends a message containing the mouse-click position, by calling `chrome.runtime.sendMessage`.
-   * Listens for the page click event via an event listener.
-* Adds a click event listener to the inspected webpage; clicking the page sends an event, caught by the event listener, which then sends a message to the WebView2 Runtime.
+* Listens for the page click event via an event listener.
 
 The content script relays the mouse-click coordinates to the `devtools.js` file, where the coordinates are displayed in both the **Console** tool and the **Custom** tool in DevTools.
 
