@@ -68,7 +68,7 @@ Multiple files are needed to enable interaction between the inspected webpage an
 
 The DevTools page, inspected page, and content script fit together in an extension:
 
-![Diagram showing the anatomy of a DevTools extension](./devtools-extension-images/architecture.png)<!-- todo: omit SW -->
+![Diagram showing the anatomy of a DevTools extension](./devtools-extension-images/architecture.png)
 
 The `content_script.js` detects where the user clicks on the inspected webpage:
 
