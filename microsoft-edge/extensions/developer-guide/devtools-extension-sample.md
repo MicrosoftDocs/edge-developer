@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 04/20/2026
+ms.date: 05/06/2026
 ---
 # Sample: Custom DevTools tool
 <!-- https://learn.microsoft.com/microsoft-edge/extensions/developer-guide/devtools-extension-sample -->
