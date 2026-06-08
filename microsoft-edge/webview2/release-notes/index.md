@@ -11,7 +11,7 @@ ms.date: 06/09/2026
 # Release notes for the WebView2 SDK
 <!--
 https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
-https://aka.ms/webviewrelease
+https://aka.ms/webviewrelease 
 -->
 
 <!-- maintenance:
