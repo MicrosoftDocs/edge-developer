@@ -144,6 +144,9 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 The `Microsoft.Web.WebView2.DevToolsProtocolExtension` NuGet package is being deprecated, and no further versions of this package will be published.  This deprecation is not linked to any WebView2 Release SDK or Prerelease SDK.
  
 The DevToolsProtocolExtension package provides a strongly-typed .NET wrapper over the Chrome DevTools Protocol (CDP) for use in WebView2 apps.  The existing published versions (`1.0.824`, `1.0.2271`, and `1.0.2901`) remain available on NuGet Gallery and are not being removed.
+
+See also:
+* todo: create an Issue at https://github.com/MicrosoftEdge/WebView2Announcements/issues & link to that here
  
 **Recommended alternative:**
  
