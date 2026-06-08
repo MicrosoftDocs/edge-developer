@@ -354,11 +354,6 @@ These APIs provide:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-todo: change from:
-?view=webview2-1.0.4015-prerelease
-to:
-?view=webview2-1.0.4022.49
-
 <!-- 1 -->
 * [ICoreWebView2_29](/microsoft-edge/webview2/reference/win32/icorewebview2_29?view=webview2-1.0.4022.49&preserve-view=true)
   * [ICoreWebView2_29::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_29?view=webview2-1.0.4022.49&preserve-view=true#add_dedicatedworkercreated)
