@@ -39,6 +39,41 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ------------------------------ -->
+#### Breaking changes
+
+WebView2 is introducing support for Windows shell handwriting (pen handwriting-to-text) for edit fields inside WebView2 instances that are hosted in WindowToVisual mode on Windows.
+
+This change affects only WindowToVisual hosting mode. WindowToWindow hosting mode already supports Windows shell handwriting, and VisualToVisual hosting mode isn't supported by this change.
+
+Before this change: WebView2 in WindowToVisual mode doesn't register an ITfHandwritingSink on the Text Services Framework (TSF) thread. Windows shell handwriting can still work, but handwriting target determination uses the OS UI Automation (UIA)-based path.
+
+After this change: If the msAbydosForWindowlessWV2 feature flag is disabled, the behavior remains the same as before this change, including the UIA-based handwriting target determination path.
+
+If the msAbydosForWindowlessWV2 feature flag is enabled, WebView2 in WindowToVisual mode registers a per-instance ITfHandwritingSink on the TSF thread. This enables Windows shell handwriting for edit fields inside WebView2, and changes how TSF handwriting events are routed on the shared TSF thread.
+
+If your app already registers its own ITfHandwritingSink on its TSF thread, pen handwriting will continue to work for your app's native edit fields, and pen handwriting will also work inside WebView2 edit fields.
+
+If your app doesn't register its own ITfHandwritingSink, pen handwriting may stop working for your app's native edit fields after this change is enabled by default. This occurs because WebView2 returns E_NOTIMPL for HWNDs that it doesn't own, expecting TSF to chain to another registered sink. If no host sink is registered, TSF doesn't fall back to the default UIA-based handwriting target resolution.
+
+To preserve pen handwriting support for your app's native edit fields, register your own ITfHandwritingSink on the TSF thread. Pen handwriting inside WebView2 edit fields is enabled automatically by this change.
+
+You can proactively validate your WebView2 app's behavior by enabling the following feature flag before launching your app:
+
+set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msAbydosForWindowlessWV2
+In releases 149 and 150, the msAbydosForWindowlessWV2 feature flag is disabled by default, giving apps time to proactively test. Starting in release 151, the feature is planned to be enabled by default.
+
+By testing your WebView2 app with this feature flag enabled, you can identify whether any native edit-field handwriting workflows in your app depend on registering a host ITfHandwritingSink.
+
+See also:
+
+[Breaking Change] Enabling Windows ShellHandwriting Support for WebView2 in WindowToVisual Mode (Issue #134)
+
+<!-- ---------- -->
+###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
+
+
+
+<!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
 No Experimental APIs have been added in this Prerelease SDK.
