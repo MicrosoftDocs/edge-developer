@@ -41,6 +41,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
+<!-- ---------- -->
+###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
+
 WebView2 is introducing support for Windows shell handwriting (pen handwriting-to-text) for edit fields inside WebView2 instances that are hosted in WindowToVisual mode on Windows.
 
 This change affects only WindowToVisual hosting mode. WindowToWindow hosting mode already supports Windows shell handwriting, and VisualToVisual hosting mode isn't supported by this change.
@@ -68,8 +71,7 @@ See also:
 
 [Breaking Change] Enabling Windows ShellHandwriting Support for WebView2 in WindowToVisual Mode (Issue #134)
 
-<!-- ---------- -->
-###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
+
 
 
 
