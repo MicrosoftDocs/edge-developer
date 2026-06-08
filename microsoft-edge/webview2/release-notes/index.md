@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/08/2026
+ms.date: 06/09/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -29,9 +29,9 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 8, 2026)
+## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 9, 2026)
 
-Release Date: Jun. 8, 2026
+Release Date: Jun. 9, 2026
 
 [NuGet package for WebView2 SDK 1.0.4071-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4071-prerelease)
 
@@ -41,38 +41,39 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
+
 <!-- ---------- -->
 ###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
 
-WebView2 is introducing support for Windows shell handwriting (pen handwriting-to-text) for edit fields inside WebView2 instances that are hosted in WindowToVisual mode on Windows.
+WebView2 is introducing support for Windows shell handwriting (pen handwriting-to-text) for edit fields inside WebView2 instances that are hosted in Window to Visual (`WindowToVisual`) mode on Windows.
 
-This change affects only WindowToVisual hosting mode. WindowToWindow hosting mode already supports Windows shell handwriting, and VisualToVisual hosting mode isn't supported by this change.
+This change affects only `WindowToVisual` hosting mode.  `WindowToWindow` hosting mode already supports Windows shell handwriting, and `VisualToVisual` hosting mode isn't supported by this change.
 
-Before this change: WebView2 in WindowToVisual mode doesn't register an ITfHandwritingSink on the Text Services Framework (TSF) thread. Windows shell handwriting can still work, but handwriting target determination uses the OS UI Automation (UIA)-based path.
+Before this change: WebView2 in `WindowToVisual` mode doesn't register an `ITfHandwritingSink` on the Text Services Framework (TSF) thread.  Windows shell handwriting can still work, but handwriting target determination uses the OS UI Automation (UIA)-based path.
 
-After this change: If the msAbydosForWindowlessWV2 feature flag is disabled, the behavior remains the same as before this change, including the UIA-based handwriting target determination path.
+After this change: If the `msAbydosForWindowlessWV2` feature flag is disabled, the behavior remains the same as before this change, including the UIA-based handwriting target determination path.
 
-If the msAbydosForWindowlessWV2 feature flag is enabled, WebView2 in WindowToVisual mode registers a per-instance ITfHandwritingSink on the TSF thread. This enables Windows shell handwriting for edit fields inside WebView2, and changes how TSF handwriting events are routed on the shared TSF thread.
+If the `msAbydosForWindowlessWV2` feature flag is enabled, WebView2 in `WindowToVisual` mode registers a per-instance `ITfHandwritingSink` on the TSF thread.  This enables Windows shell handwriting for edit fields inside WebView2, and changes how TSF handwriting events are routed on the shared TSF thread.
 
-If your app already registers its own ITfHandwritingSink on its TSF thread, pen handwriting will continue to work for your app's native edit fields, and pen handwriting will also work inside WebView2 edit fields.
+If your app already registers its own `ITfHandwritingSink` on its TSF thread, pen handwriting will continue to work for your app's native edit fields, and pen handwriting will also work inside WebView2 edit fields.
 
-If your app doesn't register its own ITfHandwritingSink, pen handwriting may stop working for your app's native edit fields after this change is enabled by default. This occurs because WebView2 returns E_NOTIMPL for HWNDs that it doesn't own, expecting TSF to chain to another registered sink. If no host sink is registered, TSF doesn't fall back to the default UIA-based handwriting target resolution.
+If your app doesn't register its own `ITfHandwritingSink`, pen handwriting may stop working for your app's native edit fields after this change is enabled by default.  This occurs because WebView2 returns `E_NOTIMPL` for HWNDs that it doesn't own, expecting TSF to chain to another registered sink.  If no host sink is registered, TSF doesn't fall back to the default UIA-based handwriting target resolution.
 
-To preserve pen handwriting support for your app's native edit fields, register your own ITfHandwritingSink on the TSF thread. Pen handwriting inside WebView2 edit fields is enabled automatically by this change.
+To preserve pen handwriting support for your app's native edit fields, register your own `ITfHandwritingSink` on the TSF thread.  Pen handwriting inside WebView2 edit fields is enabled automatically by this change.
 
 You can proactively validate your WebView2 app's behavior by enabling the following feature flag before launching your app:
 
+```cmd
 set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msAbydosForWindowlessWV2
-In releases 149 and 150, the msAbydosForWindowlessWV2 feature flag is disabled by default, giving apps time to proactively test. Starting in release 151, the feature is planned to be enabled by default.
+```
 
-By testing your WebView2 app with this feature flag enabled, you can identify whether any native edit-field handwriting workflows in your app depend on registering a host ITfHandwritingSink.
+In releases 149 and 150, the `msAbydosForWindowlessWV2` feature flag is disabled by default, giving apps time to proactively test.  Starting in release 151, the feature is planned to be enabled by default.
+
+By testing your WebView2 app with this feature flag enabled, you can identify whether any native edit-field handwriting workflows in your app depend on registering a host `ITfHandwritingSink`.
 
 See also:
-
-[Breaking Change] Enabling Windows ShellHandwriting Support for WebView2 in WindowToVisual Mode (Issue #134)
-
-
-
+* [[Breaking Change] Enabling Windows ShellHandwriting Support for WebView2 in WindowToVisual Mode (Issue #134)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/134)
+* [Windowed vs. Visual hosting of WebView2](../concepts/windowed-vs-visual-hosting.md)
 
 
 <!-- ------------------------------ -->
@@ -120,13 +121,13 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed container safety issues in WebView2 frame and listener code.
 * WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
 
-<!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime 150 (Mmm. dd, yyyy) -->
+<!-- end of Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 9, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.4022.49, for Runtime 149 (Jun. 8, 2026)
+## Release SDK 1.0.4022.49, for Runtime 149 (Jun. 9, 2026)
 
-Release Date: Jun. 8, 2026
+Release Date: Jun. 9, 2026
 
 [NuGet package for WebView2 SDK 1.0.4022.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4022.49)
 
@@ -153,7 +154,7 @@ This Release SDK includes the following bug fixes.
 * Added trusted origin check during host object access.
 * Fixed the **Print** dialog's dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
 
-<!-- end of Release SDK 1.0.nnnn.nn, for Runtime 149 (Mmm. dd, yyyy) -->
+<!-- end of Release SDK 1.0.4022.49, for Runtime 149 (Jun. 9, 2026) -->
 
 
 <!-- ====================================================================== -->
