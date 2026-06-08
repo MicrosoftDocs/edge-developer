@@ -201,14 +201,16 @@ These are default install locations.  Paths may vary based on user configuration
 <!-- ====================================================================== -->
 ## Auto-connect to a running Edge instance
 
-Use the configuration below to connect to an already running Edge instance.  This is useful when:
+Use the configuration below to automatically connect to an instance of Microsoft Edge that's already running.
 
-* You want to maintain browser state between manual testing and agent-driven testing.
-* You need to be signed into a website that blocks automated browser launches.
-* You want to inspect an existing session.
+Auto-connecting to an already running Edge instance is useful:
+* When you want to maintain browser state between manual testing and agent-driven testing.
+* When you need to be signed into a website.
+   * For example, when you need to be signed into a website that has a complex authentication flow that's hard to accomplish with traditional web automation.
+* When you want to inspect an existing session.
 
 > [!WARNING]
-> When using auto-connect, your agent inherits your active session, including logged-in accounts, cookies, and other data surfaced through JavaScript APIs.  This may expose Personally Identifiable Information (PII) to the agent.  Only use this mode with agents you trust and be careful with your prompts.
+> When using auto-connect, your agent inherits your active session, including logged-in accounts, cookies, and other data that's surfaced through JavaScript APIs.  This may expose Personally Identifiable Information (PII) to the agent.  Only use this mode with agents that you trust, and be careful with your prompts.
 
 
 <!-- ------------------------------ -->
@@ -216,11 +218,23 @@ Use the configuration below to connect to an already running Edge instance.  Thi
 
 There are have two options:
 
-**Option A:** Start Edge with the remote debugging flag:
+**Option A:** Start Microsoft Edge with the remote debugging flag:
 
 `msedge.exe --remote-debugging-port=9222`
 
-**Option B:** In a running Edge instance, navigate to `edge://inspect/#remote-debugging` and enable remote debugging from that page.
+**Option B:** In the **Inspect with Edge Developer Tools** special page, enable remote debugging, as follows:
+
+1. In a running instance of Microsoft Edge, go to `edge://inspect`.
+
+   The **Inspect with Edge Developer Tools** page opens, initially showing the **Devices** page.
+
+1. On the left, click **Remote debugging**.
+
+   The **Remote debugging** page opens.
+
+1. Select the **Allow remote debugging for this browser instance** checkbox:
+
+   ![The Inspect page](./devtools-mcp-server-images/allow-remote-debugging.png)
 
 
 <!-- ------------------------------ -->
@@ -353,7 +367,28 @@ You need to configure the WebView2 runtime to start with `--remote-debugging-por
 <!-- ---------- -->
 ###### By using WebView2Utilities
 
-In this approach, you use WebView2Utilities and follow the steps in [How to: Auto open DevTools](https://github.com/david-risney/WebView2Utilities/wiki/How-to:-Auto-open-DevTools).  But instead of selecting the **Auto open DevTools** checkbox, in the **Arguments** textbox, enter `--remote-debugging-port=0`.
+Many apps will block the end user from opening DevTools.  As a developer, you can use WebView2Utilities to auto-open DevTools when a WebView2 is created, as follows.
+
+1. [Install and run WebView2Utilities](https://github.com/david-risney/WebView2Utilities#install--run).
+
+1. In WebView2Utilities, select the **Overrides** tab.
+
+1. Click the **Add New** button in the lower left.
+
+1. Select the newly added entry in the list.
+
+1. Change the Host app exe textbox to be the name of the executable file of your host app, such as `OUTLOOK.EXE`.
+
+1. In the **Browser arguments** section, in the **Arguments** textbox, enter: `--remote-debugging-port=0`<!-- orig step at https://github.com/david-risney/WebView2Utilities/wiki/How-to:-Auto-open-DevTools has instead: In the **Browser arguments** section, select the **Auto open DevTools** checkbox. -->
+
+1. If your host app is running, close your host app.
+
+1. Restart your host app.
+
+   When the host app creates a WebView2, it now automatically opens DevTools.
+
+See also:
+* [How to: Auto open DevTools](https://github.com/david-risney/WebView2Utilities/wiki/How-to:-Auto-open-DevTools)
 
 
 <!-- ---------- -->
@@ -365,6 +400,8 @@ In this approach, you create a registry value to set `AdditionalBrowserArguments
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments]
 "appname.exe"="--remote-debugging-port=0"
 ```
+
+For information about `additionalBrowserArguments` and `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS`, see [Globals](/microsoft-edge/webview2/reference/win32/webwebview2-idl) in _WebView2 Win32 API Reference_.
 
 
 <!-- ------------------------------ -->
