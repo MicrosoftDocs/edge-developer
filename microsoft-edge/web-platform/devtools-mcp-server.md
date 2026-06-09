@@ -515,9 +515,9 @@ The `args` array is the same across all clients; only the wrapper format differs
 
 
 <!-- ------------------------------ -->
-#### "Could not connect to Chrome"<!-- todo: to Microsoft Edge? --> error with auto-connect
+#### "Could not connect to Chrome" error with auto-connect
 
-If you are using auto-connect and get an error such as "Could not connect to Chrome"<!-- todo: to Microsoft Edge? -->:
+If you are using auto-connect and get an error such as "Could not connect to Chrome":
 
 * Make sure Microsoft Edge is running, and remote debugging is enabled.
 

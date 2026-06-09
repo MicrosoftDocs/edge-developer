@@ -142,7 +142,7 @@
             - name: Convert speech to text with the SpeechRecognition API
               href: ./web-platform/speech-recognition-api.md
 
-        - name: Expose sites to agents
+        - name: DevTools for agents
           items:
             - name: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
               href: ./web-platform/devtools-mcp-server.md
