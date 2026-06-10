@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/10/2026
+ms.date: 06/11/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -29,9 +29,9 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 10, 2026)
+## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
 
-Release Date: Jun. 10, 2026
+Release Date: Jun. 11, 2026
 
 [NuGet package for WebView2 SDK 1.0.4071-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4071-prerelease)
 
@@ -161,13 +161,13 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed container safety issues in WebView2 frame and listener code.
 * WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
 
-<!-- end of Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 10, 2026) -->
+<!-- end of Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.4022.49, for Runtime 149 (Jun. 10, 2026)
+## Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
 
-Release Date: Jun. 10, 2026
+Release Date: Jun. 11, 2026
 
 [NuGet package for WebView2 SDK 1.0.4022.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4022.49)
 
@@ -517,7 +517,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed container safety issues in WebView2 frame and listener code.
 
-<!-- end of Release SDK 1.0.4022.49, for Runtime 149 (Jun. 10, 2026) -->
+<!-- end of Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026) -->
 
 
 <!-- ====================================================================== -->
