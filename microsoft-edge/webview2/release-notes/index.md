@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 05/11/2026
+ms.date: 06/11/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
 https://learn.microsoft.com/microsoft-edge/webview2/release-notes/
-https://aka.ms/webviewrelease
+https://aka.ms/webviewrelease 
 -->
 
 <!-- maintenance:
@@ -29,13 +29,505 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
+## Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
+
+Release Date: Jun. 11, 2026
+
+[NuGet package for WebView2 SDK 1.0.4071-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4071-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 150.0.4071.0 or later.
+
+
+<!-- ------------------------------ -->
+#### Breaking changes
+
+ 
+<!-- ---------- -->
+###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
+
+WebView2 is introducing support for Windows shell handwriting (pen handwriting-to-text) for edit fields inside WebView2 instances that are hosted in Window to Visual (`WindowToVisual`) mode on Windows.
+
+This change affects only `WindowToVisual` hosting mode.  `WindowToWindow` hosting mode already supports Windows shell handwriting, and `VisualToVisual` hosting mode isn't supported by this change.
+
+Before this change: WebView2 in `WindowToVisual` mode doesn't register an `ITfHandwritingSink` on the Text Services Framework (TSF) thread.  Windows shell handwriting can still work, but handwriting target determination uses the OS UI Automation (UIA)-based path.
+
+After this change: If the `msAbydosForWindowlessWV2` feature flag is disabled, the behavior remains the same as before this change, including the UIA-based handwriting target determination path.
+
+If the `msAbydosForWindowlessWV2` feature flag is enabled, WebView2 in `WindowToVisual` mode registers a per-instance `ITfHandwritingSink` on the TSF thread.  This enables Windows shell handwriting for edit fields inside WebView2, and changes how TSF handwriting events are routed on the shared TSF thread.
+
+If your app already registers its own `ITfHandwritingSink` on its TSF thread, pen handwriting will continue to work for your app's native edit fields, and pen handwriting will also work inside WebView2 edit fields.
+
+If your app doesn't register its own `ITfHandwritingSink`, pen handwriting may stop working for your app's native edit fields after this change is enabled by default.  This occurs because WebView2 returns `E_NOTIMPL` for HWNDs that it doesn't own, expecting TSF to chain to another registered sink.  If no host sink is registered, TSF doesn't fall back to the default UIA-based handwriting target resolution.
+
+To preserve pen handwriting support for your app's native edit fields, register your own `ITfHandwritingSink` on the TSF thread.  Pen handwriting inside WebView2 edit fields is enabled automatically by this change.
+
+You can proactively validate your WebView2 app's behavior by enabling the following feature flag before launching your app:
+
+```cmd
+set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msAbydosForWindowlessWV2
+```
+
+In releases 149 and 150, the `msAbydosForWindowlessWV2` feature flag is disabled by default, giving apps time to proactively test.  Starting in release 151, the feature is planned to be enabled by default.
+
+By testing your WebView2 app with this feature flag enabled, you can identify whether any native edit-field handwriting workflows in your app depend on registering a host `ITfHandwritingSink`.
+
+See also:
+* [[Breaking Change] Enabling Windows ShellHandwriting Support for WebView2 in WindowToVisual Mode (Issue #134)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/134)
+* [Windowed vs. Visual hosting of WebView2](../concepts/windowed-vs-visual-hosting.md)
+* [WebView2 browser flags](../concepts/webview-features-flags.md) - the `msAbydosForWindowlessWV2` feature flag.
+
+
+<!-- ------------------------------ -->
+#### General changes
+
+
+<!-- ---------- -->
+###### Deprecation of DevToolsProtocolExtension NuGet package
+
+[NuGet package for DevToolsProtocolExtension 1.0.2901](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension)
+ 
+The `Microsoft.Web.WebView2.DevToolsProtocolExtension` NuGet package is being deprecated, and no further versions of this package will be published.  This deprecation is not linked to any WebView2 Release SDK or Prerelease SDK.
+ 
+The DevToolsProtocolExtension package provides a strongly-typed .NET wrapper over the Chrome DevTools Protocol (CDP) for use in WebView2 apps.  The existing published versions (`1.0.824`, `1.0.2271`, and `1.0.2901`) remain available on NuGet Gallery and are not being removed.
+
+See also:
+* [[Deprecation] Microsoft.Web.WebView2.DevToolsProtocolExtension NuGet package](https://github.com/MicrosoftEdge/WebView2Announcements/issues/135)
+ 
+**Recommended alternative:**
+ 
+All CDP calls can be made directly via the WebView2 CDP APIs, without using the extension package.  See [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md) and the following:
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync)
+   * [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2` Class:
+   * [CoreWebView2.CallDevToolsProtocolMethodAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodasync)
+   * [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#calldevtoolsprotocolmethodforsessionasync)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* `ICoreWebView2` interface:
+   * [ICoreWebView2::CallDevToolsProtocolMethod method](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod)
+* `ICoreWebView2_11` interface:
+   * [ICoreWebView2_11::CallDevToolsProtocolMethodForSession method](/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolspotocolmethodforsession)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Prerelease SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime and SDK
+
+* Added total-count histograms for WebView2 environment and controller creation attempts.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Mapped `TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY` to `kLaunchFailed`.
+* Updated the failure reason classification to `OOM`, for a process that's been killed to reclaim memory.
+* Added a system memory snapshot at out-of-memory (OOM) detection time for analysis.
+* Fixed the silent closing of a popup, when the host expects the popup to remain open.
+* Added trusted origin check during host object access.
+* Reduced redundant map lookups in WebView2 URL request manager, for improved performance.
+* Eliminated unnecessary string allocations in WebView2 cookie layer, for improved performance.
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed container safety issues in WebView2 frame and listener code.
+* WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
+
+<!-- end of Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026) -->
+
+
+<!-- ====================================================================== -->
+## Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
+
+Release Date: Jun. 11, 2026
+
+[NuGet package for WebView2 SDK 1.0.4022.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4022.49)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 149.0.4022.49 or later.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+
+<!-- ---------- -->
+###### Enable background processing and offline support (WebView2 Worker APIs)
+
+The WebView2 Worker APIs allow host applications to interact with Web Workers to offload tasks from the main thread, improve responsiveness, and support background operations.  These Web Workers include Dedicated Workers, Shared Workers, and Service Workers.
+
+These APIs provide:
+* **Lifecycle Events:** Monitor creation and destruction of workers.
+* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`; specifically:
+   * `CoreWebView2ServiceWorker.PostWebMessageAsJson`
+   * `CoreWebView2ServiceWorker.PostWebMessageAsString`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsJson`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsString`
+   * `CoreWebView2ServiceWorker.WebMessageReceived`
+   * `CoreWebView2DedicatedWorker.WebMessageReceived`
+   * `chrome.webview.postMessage`
+   * Not: `chrome.webview.postMessageWithAdditionalObjects`
+* **Worker Management:** Query and retrieve worker registrations and instances.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+<!-- 1 -->
+* `CoreWebView2` Class:
+   * [CoreWebView2.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.dedicatedworkercreated?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 2 -->
+* [CoreWebView2DedicatedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.dedicatedworkercreated?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.destroying?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.postwebmessageasjson?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.postwebmessageasstring?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.scripturi?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.webmessagereceived?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 3 -->
+* [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.originalsourceframeinfo?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.worker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 4 -->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.dedicatedworkercreated?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 5 -->
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2Profile.ServiceWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.serviceworkermanager?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2Profile.SharedWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.sharedworkermanager?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 6 -->
+* [CoreWebView2ServiceWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.destroying?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.postwebmessageasjson?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.postwebmessageasstring?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.scripturi?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.webmessagereceived?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 7 -->
+* [CoreWebView2ServiceWorkerActivatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs.activeserviceworker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 8 -->
+* [CoreWebView2ServiceWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 9 -->
+* [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs.serviceworkerregistration?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 10 -->
+* [CoreWebView2ServiceWorkerRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.activeserviceworker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.origin?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.ScopeUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.scopeuri?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.ServiceWorkerActivated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.serviceworkeractivated?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.TopLevelOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.toplevelorigin?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.unregistering?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 11 -->
+* [CoreWebView2SharedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.destroying?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorker.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.origin?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.scripturi?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorker.TopLevelOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.toplevelorigin?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 12 -->
+* [CoreWebView2SharedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs.worker?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+<!-- 13 -->
+* [CoreWebView2SharedWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.getsharedworkersasync?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.sharedworkercreated?view=webview2-dotnet-1.0.4022.49&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+<!-- 1 -->
+* `CoreWebView2` Class:
+   * [CoreWebView2.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.4022.49&preserve-view=true#dedicatedworkercreated)
+
+<!-- 2 -->
+* [CoreWebView2DedicatedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#dedicatedworkercreated)
+   * [CoreWebView2DedicatedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#destroying)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#postwebmessageasjson)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsString Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#postwebmessageasstring)
+   * [CoreWebView2DedicatedWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#scripturi)
+   * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#webmessagereceived)
+
+<!-- 3 -->
+* [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true#worker)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true#originalsourceframeinfo)
+
+<!-- 4 -->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4022.49&preserve-view=true#dedicatedworkercreated)
+
+<!-- 5 -->
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4022.49&preserve-view=true#arewebviewscriptapisenabledforserviceworkers)
+   * [CoreWebView2Profile.ServiceWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4022.49&preserve-view=true#serviceworkermanager)
+   * [CoreWebView2Profile.SharedWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4022.49&preserve-view=true#sharedworkermanager)
+
+<!-- 6 -->
+* [CoreWebView2ServiceWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#destroying)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#postwebmessageasjson)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsString Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#postwebmessageasstring)
+   * [CoreWebView2ServiceWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4015-prerelease&preserve-view=true#scripturi)
+   * [CoreWebView2ServiceWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#webmessagereceived)
+
+<!-- 7 -->
+* [CoreWebView2ServiceWorkerActivatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true#activeserviceworker)
+
+<!-- 8 -->
+* [CoreWebView2ServiceWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true#getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true#getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true#serviceworkerregistered)
+
+<!-- 9 -->
+* [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true#serviceworkerregistration)
+
+<!-- 10 -->
+* [CoreWebView2ServiceWorkerRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#activeserviceworker)
+   * [CoreWebView2ServiceWorkerRegistration.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#origin)
+   * [CoreWebView2ServiceWorkerRegistration.ScopeUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#scopeuri)
+   * [CoreWebView2ServiceWorkerRegistration.ServiceWorkerActivated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#serviceworkeractivated)
+   * [CoreWebView2ServiceWorkerRegistration.TopLevelOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#toplevelorigin)
+   * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration?view=webview2-winrt-1.0.4022.49&preserve-view=true#unregistering)
+
+<!-- 11 -->
+* [CoreWebView2SharedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#destroying)
+   * [CoreWebView2SharedWorker.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#origin)
+   * [CoreWebView2SharedWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#scripturi)
+   * [CoreWebView2SharedWorker.TopLevelOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker?view=webview2-winrt-1.0.4022.49&preserve-view=true#toplevelorigin)
+
+<!-- 12 -->
+* [CoreWebView2SharedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs?view=webview2-winrt-1.0.4022.49&preserve-view=true#worker)
+
+<!-- 13 -->
+* [CoreWebView2SharedWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true)
+   * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true#getsharedworkersasync)
+   * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager?view=webview2-winrt-1.0.4022.49&preserve-view=true#sharedworkercreated)
+
+##### [Win32/C++](#tab/win32cpp)
+
+<!-- 1 -->
+* [ICoreWebView2_29](/microsoft-edge/webview2/reference/win32/icorewebview2_29?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2_29::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_29?view=webview2-1.0.4022.49&preserve-view=true#add_dedicatedworkercreated)
+  * [ICoreWebView2_29::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_29?view=webview2-1.0.4022.49&preserve-view=true#remove_dedicatedworkercreated)
+
+<!-- 2 -->
+* [ICoreWebView2DedicatedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2DedicatedWorker::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#add_dedicatedworkercreated)
+  * [ICoreWebView2DedicatedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#add_destroying)
+  * [ICoreWebView2DedicatedWorker::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#add_webmessagereceived)
+  * [ICoreWebView2DedicatedWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#get_scripturi)
+  * [ICoreWebView2DedicatedWorker::PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#postwebmessageasjson)
+  * [ICoreWebView2DedicatedWorker::PostWebMessageAsString](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#postwebmessageasstring)
+  * [ICoreWebView2DedicatedWorker::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#remove_dedicatedworkercreated)
+  * [ICoreWebView2DedicatedWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#remove_destroying)
+  * [ICoreWebView2DedicatedWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker?view=webview2-1.0.4022.49&preserve-view=true#remove_webmessagereceived)
+
+<!-- 3 -->
+* [ICoreWebView2DedicatedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2DedicatedWorkerCreatedEventArgs::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs?view=webview2-1.0.4022.49&preserve-view=true#get_originalsourceframeinfo)
+  * [ICoreWebView2DedicatedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs?view=webview2-1.0.4022.49&preserve-view=true#get_worker)
+
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerdedicatedworkercreatedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerdestroyingeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerwebmessagereceivedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 4 -->
+* [ICoreWebView2Frame8](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2Frame8::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.4022.49&preserve-view=true#add_dedicatedworkercreated)
+  * [ICoreWebView2Frame8::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8?view=webview2-1.0.4022.49&preserve-view=true#remove_dedicatedworkercreated)
+
+<!-- win32 only -->
+* [ICoreWebView2FrameDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framededicatedworkercreatedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2GetServiceWorkerRegistrationsCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getserviceworkerregistrationscompletedhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2GetSharedWorkersCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getsharedworkerscompletedhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 5 -->
+* [ICoreWebView2Profile9](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2Profile9::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4022.49&preserve-view=true#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2Profile9::get_ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4022.49&preserve-view=true#get_serviceworkermanager)
+  * [ICoreWebView2Profile9::get_SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4022.49&preserve-view=true#get_sharedworkermanager)
+  * [ICoreWebView2Profile9::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9?view=webview2-1.0.4022.49&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
+
+<!-- 6 -->
+* [ICoreWebView2ServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#add_destroying)
+  * [ICoreWebView2ServiceWorker::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#add_webmessagereceived)
+  * [ICoreWebView2ServiceWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#get_scripturi)
+  * [ICoreWebView2ServiceWorker::PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#postwebmessageasjson)
+  * [ICoreWebView2ServiceWorker::PostWebMessageAsString](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#postwebmessageasstring)
+  * [ICoreWebView2ServiceWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#remove_destroying)
+  * [ICoreWebView2ServiceWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker?view=webview2-1.0.4022.49&preserve-view=true#remove_webmessagereceived)
+
+<!-- 7 -->
+* [ICoreWebView2ServiceWorkerActivatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventargs?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorkerActivatedEventArgs::get_ActiveServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventargs?view=webview2-1.0.4022.49&preserve-view=true#get_activeserviceworker)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerActivatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerdestroyingeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 8 -->
+* [ICoreWebView2ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager?view=webview2-1.0.4022.49&preserve-view=true#add_serviceworkerregistered)
+  * [ICoreWebView2ServiceWorkerManager::GetServiceWorkerRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager?view=webview2-1.0.4022.49&preserve-view=true#getserviceworkerregistrations)
+  * [ICoreWebView2ServiceWorkerManager::GetServiceWorkerRegistrationsForScope](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager?view=webview2-1.0.4022.49&preserve-view=true#getserviceworkerregistrationsforscope)
+  * [ICoreWebView2ServiceWorkerManager::remove_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager?view=webview2-1.0.4022.49&preserve-view=true#remove_serviceworkerregistered)
+
+<!-- 9 -->
+* [ICoreWebView2ServiceWorkerRegisteredEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventargs?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorkerRegisteredEventArgs::get_ServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventargs?view=webview2-1.0.4022.49&preserve-view=true#get_serviceworkerregistration)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegisteredEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 10 -->
+* [ICoreWebView2ServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorkerRegistration::add_ServiceWorkerActivated](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#add_serviceworkeractivated)
+  * [ICoreWebView2ServiceWorkerRegistration::add_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#add_unregistering)
+  * [ICoreWebView2ServiceWorkerRegistration::get_ActiveServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#get_activeserviceworker)
+  * [ICoreWebView2ServiceWorkerRegistration::get_Origin](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#get_origin)
+  * [ICoreWebView2ServiceWorkerRegistration::get_ScopeUri](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#get_scopeuri)
+  * [ICoreWebView2ServiceWorkerRegistration::get_TopLevelOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#get_toplevelorigin)
+  * [ICoreWebView2ServiceWorkerRegistration::remove_ServiceWorkerActivated](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#remove_serviceworkeractivated)
+  * [ICoreWebView2ServiceWorkerRegistration::remove_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration?view=webview2-1.0.4022.49&preserve-view=true#remove_unregistering)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegistrationCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2ServiceWorkerRegistrationCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview?view=webview2-1.0.4022.49&preserve-view=true#get_count)
+  * [ICoreWebView2ServiceWorkerRegistrationCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview?view=webview2-1.0.4022.49&preserve-view=true#getvalueatindex)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegistrationUnregisteringEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationunregisteringeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerwebmessagereceivedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 11 -->
+* [ICoreWebView2SharedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2SharedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true#add_destroying)
+  * [ICoreWebView2SharedWorker::get_Origin](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true#get_origin)
+  * [ICoreWebView2SharedWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true#get_scripturi)
+  * [ICoreWebView2SharedWorker::get_TopLevelOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true#get_toplevelorigin)
+  * [ICoreWebView2SharedWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker?view=webview2-1.0.4022.49&preserve-view=true#remove_destroying)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2SharedWorkerCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview?view=webview2-1.0.4022.49&preserve-view=true#get_count)
+  * [ICoreWebView2SharedWorkerCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview?view=webview2-1.0.4022.49&preserve-view=true#getvalueatindex)
+
+<!-- 12 -->
+* [ICoreWebView2SharedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventargs?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2SharedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventargs?view=webview2-1.0.4022.49&preserve-view=true#get_worker)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkerdestroyingeventhandler?view=webview2-1.0.4022.49&preserve-view=true)
+
+<!-- 13 -->
+* [ICoreWebView2SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager?view=webview2-1.0.4022.49&preserve-view=true)
+  * [ICoreWebView2SharedWorkerManager::add_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager?view=webview2-1.0.4022.49&preserve-view=true#add_sharedworkercreated)
+  * [ICoreWebView2SharedWorkerManager::GetSharedWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager?view=webview2-1.0.4022.49&preserve-view=true#getsharedworkers)
+  * [ICoreWebView2SharedWorkerManager::remove_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager?view=webview2-1.0.4022.49&preserve-view=true#remove_sharedworkercreated)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+This Release SDK includes the following bug fixes.
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Mapped `TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY` to `kLaunchFailed`.
+* Updated the failure reason classification to `OOM`, for a process that's been killed to reclaim memory.
+* Added trusted origin check during host object access.
+* Fixed the **Print** dialog's dropdown lists not being selected in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
+
+
+<!-- ---------- -->
+###### SDK-only
+
+* Fixed container safety issues in WebView2 frame and listener code.
+
+<!-- end of Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026) -->
+
+
+<!-- ====================================================================== -->
 ## Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
 
 Release Date: May 11, 2026
 
 [NuGet package for WebView2 SDK 1.0.4015-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4015-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 149.0.4015.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 149.0.4015.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -463,7 +955,7 @@ Release Date: May 11, 2026
 
 [NuGet package for WebView2 SDK 1.0.3967.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3967.48)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 148.0.3967.48 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 148.0.3967.48 or later.
 
 
 <!-- ------------------------------ -->
@@ -493,7 +985,7 @@ Release Date: April 13, 2026
 
 [NuGet package for WebView2 SDK 1.0.3965-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3965-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 148.0.3965.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 148.0.3965.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -706,7 +1198,7 @@ Release Date: Apr. 13, 2026
 
 [NuGet package for WebView2 SDK 1.0.3912.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3912.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 147.0.3912.50 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 147.0.3912.50 or later.
 
 
 <!-- ------------------------------ -->
@@ -738,7 +1230,7 @@ Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3908-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3908-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -811,7 +1303,7 @@ Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3856.49](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3856.49)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 146.0.3856.49 or later.
 
 
 <!-- ------------------------------ -->
@@ -841,7 +1333,7 @@ Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1026,7 +1518,7 @@ Release Date: Feb. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or later.
 
 
 <!-- ------------------------------ -->
@@ -1060,7 +1552,7 @@ Release Date: Jan. 19, 2026
 
 [NuGet package for WebView2 SDK 1.0.3796-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3796-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 145.0.3796.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 145.0.3796.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1145,7 +1637,7 @@ Release Date: Jan. 27, 2026
 
 [NuGet package for WebView2 SDK 1.0.3719.77](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3719.77)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 144.0.3719.77 or later.
 
 
 <!-- ------------------------------ -->
@@ -1223,7 +1715,7 @@ Release Date: Dec. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3712-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3712-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 144.0.3712.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 144.0.3712.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1353,7 +1845,7 @@ Release Date: Dec. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650.58](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650.58)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 143.0.3650.58 or later.
 
 
 <!-- ------------------------------ -->
@@ -1379,7 +1871,7 @@ Release Date: Nov. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3650-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3650-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 143.0.3650.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 143.0.3650.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1416,7 +1908,7 @@ Release Date: Nov. 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3595.46](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3595.46)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 142.0.3595.46 or later.
 
 
 <!-- ------------------------------ -->
@@ -1446,7 +1938,7 @@ Release Date: Oct. 7, 2025
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 142.0.3590.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 142.0.3590.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1558,7 +2050,7 @@ Release Date: Oct. 6, 2025
 
 [NuGet package for WebView2 SDK 1.0.3537.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3537.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 141.0.3537.50 or later.
 
 
 <!-- ------------------------------ -->
@@ -1594,7 +2086,7 @@ Release Date: Sep. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3530-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3530-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 141.0.3530.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 141.0.3530.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1640,7 +2132,7 @@ Release Date: Sep. 8, 2025
 
 [NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or later.
 
 
 <!-- ------------------------------ -->
@@ -1674,7 +2166,7 @@ Release Date: Aug. 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -1712,7 +2204,7 @@ Release Date: Jul. 14, 2025
 
 [NuGet package for WebView2 SDK 1.0.3415-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3415-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3415.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3415.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -2213,7 +2705,7 @@ Release Date: Aug. 11, 2025
 
 [NuGet package for WebView2 SDK 1.0.3405.78](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3405.78)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 139.0.3405.78 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 139.0.3405.78 or later.
 
 
 <!-- ------------------------------ -->
@@ -2346,7 +2838,7 @@ Release Date: Jul. 1, 2025
 
 [NuGet package for WebView2 SDK 1.0.3351.48](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3351.48)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or higher.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 138.0.3351.48 or later.
 
 
 <!-- ------------------------------ -->
@@ -2398,7 +2890,7 @@ Release Date: Jun. 3, 2025
 
 [NuGet package for WebView2 SDK 1.0.3344-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3344-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 138.0.3344.0 or higher.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 138.0.3344.0 or later.
 
 
 <!-- ------------------------------ -->
@@ -2451,119 +2943,6 @@ The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` 
 * Fixed the margins in the printed PDF.
 
 <!-- end of Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025) -->
-
-
-<!-- ====================================================================== -->
-## Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025)
-
-Release Date: Jun. 3, 2025
-
-[NuGet package for WebView2 SDK 1.0.3296.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296.44)
-
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 137.0.3296.44 or higher.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 3 (Stable in Release)
-
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
-
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296.44&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296.44&preserve-view=true#defaultbackgroundcolor)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296.44&preserve-view=true#put_defaultbackgroundcolor)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the margins in the printed PDF.
-
-<!-- end of Release SDK 1.0.3296.44, for Runtime 137 (Jun. 3, 2025) -->
-
-
-<!-- ====================================================================== -->
-## Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
-
-Release Date: May 12, 2025
-
-[NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
-
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 137.0.3296.0 or higher.
-
-
-<!-- ------------------------------ -->
-#### Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### Promotions to Phase 2 (Stable in Prerelease)
-
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
-
-The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296-prerelease&preserve-view=true)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2ControllerOptions` Class:
-   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296-prerelease&preserve-view=true#defaultbackgroundcolor)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true)
-   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#get_defaultbackgroundcolor)
-   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#put_defaultbackgroundcolor)
-
----
-
-
-<!-- ------------------------------ -->
-#### Bug fixes
-
-
-<!-- ---------- -->
-###### Runtime-only
-
-* Fixed the **Find** bar no longer appearing after the window is shifted.
-* Fixed a bug where the app wasn't able to cancel navigation to login pages via the `NavigationStarting` event.
-* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
-
-<!-- end of Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025) -->
 
 
 <!-- ====================================================================== -->
