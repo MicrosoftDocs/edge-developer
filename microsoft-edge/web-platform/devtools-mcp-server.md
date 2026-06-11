@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/04/2026
+ms.date: 06/10/2026
 ---
 # Let agents inspect your site and WebView2 app with Chrome DevTools MCP
 
