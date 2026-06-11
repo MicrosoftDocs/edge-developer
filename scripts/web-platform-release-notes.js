@@ -292,6 +292,7 @@ async function main() {
         const dtf = new Intl.DateTimeFormat("en-US", { month: "short" });
         const shortMonth = dtf.format(date);
         const shortMonthWithDot = shortMonth === "May" ? shortMonth : shortMonth + ".";
+
         return `${shortMonthWithDot} ${date.getFullYear()}`;
       });
 
