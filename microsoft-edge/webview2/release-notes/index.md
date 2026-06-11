@@ -41,7 +41,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ------------------------------ -->
 #### Breaking changes
 
-
+ 
 <!-- ---------- -->
 ###### Enable Windows shell handwriting support for WebView2 in WindowToVisual mode
 
