@@ -401,7 +401,7 @@ In this approach, you create a registry value to set `AdditionalBrowserArguments
 "appname.exe"="--remote-debugging-port=0"
 ```
 
-For information about `additionalBrowserArguments` and `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS`, see [Globals](/microsoft-edge/webview2/reference/win32/webwebview2-idl) in _WebView2 Win32 API Reference_.
+For information about `additionalBrowserArguments` and `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS`, see [Globals](/microsoft-edge/webview2/reference/win32/webview2-idl) in _WebView2 Win32 API Reference_.
 
 
 <!-- ------------------------------ -->
