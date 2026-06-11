@@ -35,6 +35,7 @@ To stay up-to-date and get the latest web platform features, download a preview 
   {% endfor %}
 * [Origin trials](#origin-trials)
 
+
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools
 
@@ -62,9 +63,10 @@ The following new Cascading Style Sheets (CSS) features are included in Microsof
 
 The following new Web API features are included in Microsoft Edge.
 
-**TODO: MOVE THE BELOW FEATURES IN THE CORRECT H2 HEADINGS ABOVE.**
+**TODO: MOVE THE BELOW FEATURE SECTIONS INTO THE CORRECT H2 SECTIONS ABOVE**
 
 {% for feature in data.csFeatures["Enabled by default"] %}
+
 
 <!-- ------------------------------ -->
 #### {{ feature.name }}
@@ -72,15 +74,17 @@ The following new Web API features are included in Microsoft Edge.
 {{ feature.summary | safe }}
 
 See also:
-* []()
+* []
 {% endfor %}
+
 
 <!-- ------------------------------ -->
 #### Deprecated or removed features
 
-**TODO: CHECK THE FEATURES LISTED BELOW AND ADD THEM TO THE SITE-COMPAT-IMPACTING-CHANGES ARTICLE.**
+**TODO: CHECK THE FEATURES LISTED BELOW, AND ADD THEM TO [Site compatibility-impacting changes coming to Microsoft Edge](../site-impacting-changes.md)**
 
 {% for feature in data.csFeatures["Deprecated"] %}
+
 
 <!-- ------------------------------ -->
 #### {{ feature.name }}
@@ -88,6 +92,7 @@ See also:
 {{ feature.summary | safe }}
 {% endfor %}
 {% for feature in data.csFeatures["Removed"] %}
+
 
 <!-- ------------------------------ -->
 #### {{ feature.name }}
