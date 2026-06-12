@@ -14,13 +14,13 @@ The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protoco
 
 To use the Chrome DevTools Protocol API in a WebView2 app, do either of the following:
 
-*  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
+* Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
 
-*  Or, run one of the following methods:
+* Or, run one of the following methods:
 
-   *  .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
+   * .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
 
-   *  Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
+   * Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
 
 
 <!-- ====================================================================== -->

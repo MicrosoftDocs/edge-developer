@@ -12,9 +12,9 @@ ms.date: 02/21/2023
 
 Your web-side JavaScript code can access native-side WinRT methods and properties, with the help of the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).  The **wv2winrt** tool generates needed code files for your JavaScript code, and enables using methods and properties of any WinRT APIs, including:
 
-*  Your WebView2 host app's WinRT APIs.
-*  Windows WinRT APIs.
-*  Third-party WinRT APIs.
+* Your WebView2 host app's WinRT APIs.
+* Windows WinRT APIs.
+* Third-party WinRT APIs.
 
 For more information about why you'd want to have your web-side JavaScript code access the methods and properties of your WinRT host app, see the introduction of [Call native-side code from web-side code](hostobject.md).
 
@@ -27,8 +27,8 @@ This article is for WinRT WebView2 APIs, not for .NET WebView2 APIs.  The C# cod
 The **wv2winrt** tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT doesn't support `IDispatch` or any other mechanism to dynamically inspect and interact with WinRT objects, which WebView2's Win32 and .NET platforms support.  For .NET use of `AddHostObjectToScript`, see [Call native-side code from web-side code](hostobject.md) instead of this article.
 <!--
 `IDispatch` is a way to:
-*  Dynamically inspect COM objects, to discover methods, properties, and events.
-*  Interact with COM objects, to call methods, get or set properties, and subscribe to and receive events.
+* Dynamically inspect COM objects, to discover methods, properties, and events.
+* Interact with COM objects, to call methods, get or set properties, and subscribe to and receive events.
 -->
 
 
@@ -37,18 +37,18 @@ The **wv2winrt** tool (the WebView2 WinRT JS Projection tool) is needed when pro
 
 If your WinRT WebView2 app targets WinUI 3 (Windows App SDK) rather than WinUI 2 (UWP), here's an overview of the WinUI 3-specific steps that are provided further below:
 
-*  In a non-packaged app, you have to do additional steps that are in the article "Enhancing Non-packaged Desktop Apps using Windows Runtime Components".
+* In a non-packaged app, you have to do additional steps that are in the article "Enhancing Non-packaged Desktop Apps using Windows Runtime Components".
 
-*  Add `WinRTAdapter` to `CsWinRTIncludes`.
+* Add `WinRTAdapter` to `CsWinRTIncludes`.
 
-*  For WinUI 3 (Windows App SDK) apps, the main app project has a reference to WinAppSDK which directly includes its own copy of the WebView2 SDK files, so you cannot include a reference to the WebView2 SDK in the main app project without producing error messages.
+* For WinUI 3 (Windows App SDK) apps, the main app project has a reference to WinAppSDK which directly includes its own copy of the WebView2 SDK files, so you cannot include a reference to the WebView2 SDK in the main app project without producing error messages.
 
-*  The project adapter version doesn't have to match.
+* The project adapter version doesn't have to match.
 
 <!-- todo: add these steps in detailed section for WinUI 3? -->
-*  After installing "default" options for Visual Studio 2022 Community edition, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
+* After installing "default" options for Visual Studio 2022 Community edition, in Visual Studio Installer, click the **.NET** card, then on the right, select the checkbox **Windows App SDK C# Templates**.
 
-*  If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
+* If the correct project template still doesn't appear: in the Visual Studio Installer, click the **UWP** card to select it, select the **v143 C++ tools** checkbox on the right, and then click the **Modify** button.
 
 
 <!-- ====================================================================== -->
@@ -146,16 +146,16 @@ Let's get started!
 
 1. Do any of the following approaches to obtain a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control:
 
-   * **Use the provided baseline sample solution:**  If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.  This approach uses your local copy of https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln.
+   * **Use the provided baseline sample solution:** If not done already, clone or download the `WebView2Samples` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.  This approach uses your local copy of https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln.
 
-   * **Use a project template in Visual Studio to create a basic UWP app and add a WebView2 control:**  Do the steps in [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) to create a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control.
+   * **Use a project template in Visual Studio to create a basic UWP app and add a WebView2 control:** Do the steps in [Get started with WebView2 in WinUI 2 (UWP) apps](../get-started/winui2.md) to create a baseline starter project that contains a couple lines of WebView2 code that embeds the WebView2 control.
 
-   * **Use your existing code base:**  If you have your own app code base already, you can open that project in Visual Studio.
+   * **Use your existing code base:** If you have your own app code base already, you can open that project in Visual Studio.
 
 1. On your local drive, open the `.sln` file that you obtained above, such as the Samples repo solution:
 
-   *  `<your-repos-directory>/WebView2Samples-main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
-   *  `<your-repos-directory>/WebView2Samples/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
+   * `<your-repos-directory>/WebView2Samples-main/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
+   * `<your-repos-directory>/WebView2Samples/GettingStartedGuides/WinUI2_GettingStarted/MyUWPGetStartApp.sln`
 
    The sample solution opens in Visual Studio:
 
@@ -404,9 +404,9 @@ The WebView2 prerelease SDK is now installed for the main project.
 
 If your app targets WinUI 3 (Windows App SDK), skip this step, because:
 
-*  WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.
+* WinUI 3 bundles the WebView2 SDK, so there isn't a need to download the WebView2 SDK separately.
 
-*  WinUI 3 doesn't support prerelease WebView2 SDKs.
+* WinUI 3 doesn't support prerelease WebView2 SDKs.
 
 ---
 
@@ -505,8 +505,8 @@ Next, generate the API code:
 1. Right-click the **WinRTAdapter** project, and then select **Build**.
 
    Source code is generated for namespaces or classes that you specified in the **Include filters** dialog of the **wv2winrt** tool (the WebView2 WinRT JS Projection tool):
-   *  `Windows.System.UserProfile` namespace
-   *  `Windows.Globalization.Language` class
+   * `Windows.System.UserProfile` namespace
+   * `Windows.Globalization.Language` class
 
 1. After building is complete, select **File** > **Save All** (**Ctrl+Shift+S**).
 
@@ -834,7 +834,7 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
 
-*  The following Visual Studio dialogs might appear.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close these dialogs:
+* The following Visual Studio dialogs might appear.  These debugger dialogs are a known bug.  Click the **OK** button, and then click the **Cancel** button to close these dialogs:
 
    ![Debugger not configured](./winrt-from-js-images/debugger-not-configd.png)
 
@@ -966,8 +966,8 @@ To make the `AddHostObjectToScript` JavaScript proxies act more like other JavaS
 * `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` - If you attempt to get the value of a property of a proxy, and the property doesn't exist on the corresponding native class, you'll get an exception - unless you set this property to `true`, in which case the behavior will match Chakra WinRT projection behavior (and general JavaScript behavior) and return `undefined` with no error.
 
 Chakra WinRT projection puts the WinRT namespaces directly on the root object.  In contrast:
-*  `AddHostObjectToScript` places async root proxies on `chrome.webview.hostObjects`.
-*  `AddHostObjectToScript` places sync root proxies on `chrome.webview.hostObjects.sync`.
+* `AddHostObjectToScript` places async root proxies on `chrome.webview.hostObjects`.
+* `AddHostObjectToScript` places sync root proxies on `chrome.webview.hostObjects.sync`.
 
 To access root proxies where Chakra WinRT projection code would expect, you can assign the root proxy WinRT namespace locations over to the root object. For example:
 
@@ -1019,8 +1019,8 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
 ## Get information about WebView2 properties
 
 Information about WebView2 properties is available in two places:
-*  The WinRTAdapter project's Property Pages.
-*  `wv2winrt.exe` command-line help.  This is the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).
+* The WinRTAdapter project's Property Pages.
+* `wv2winrt.exe` command-line help.  This is the **wv2winrt** tool (the WebView2 WinRT JS Projection tool).
 
 
 <!-- ------------------------------ -->

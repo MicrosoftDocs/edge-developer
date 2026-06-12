@@ -137,9 +137,9 @@ App sync is available on desktop devices only, at this stage.  To keep your apps
 #### Redesigned Apps menu
 
 In Microsoft Edge, the **Apps** command in the **Settings and more** menu is being redesigned:
-*  The **Apps** menu icon can be added to the toolbar, for quick access.
-*  The popup menu can be pinned open as a sidebar to show your apps alongside web content.
-*  Customizable view and sort options have been added, along with a **My available apps** section to support the App Sync feature.
+* The **Apps** menu icon can be added to the toolbar, for quick access.
+* The popup menu can be pinned open as a sidebar to show your apps alongside web content.
+* Customizable view and sort options have been added, along with a **My available apps** section to support the App Sync feature.
 
 Users can show the **Apps** menu icon on the toolbar, for quick access:
 
@@ -184,8 +184,8 @@ Store-installed PWAs that are participating in the [URL Handlers origin trial](#
 The origin trial has been concluded.  The URL Protocol Handlers capability is now shipping in Microsoft Edge 96 Stable.
 
 See also:
-*  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
-*  [Handle protocols in a PWA](../how-to/handle-protocols.md)
+* [Protocol handlers origin trial](#protocol-handlers-origin-trial)
+* [Handle protocols in a PWA](../how-to/handle-protocols.md)
 
 
 <!-- ------------------------------ -->
@@ -198,9 +198,9 @@ Microsoft Edge Canary reached version 96 on Oct. 5, 2021.  With a subset of our 
 ###### Sort order
 
 You can sort your apps by any of the following:
-*  Recently used.
-*  Alphabetically, based on title.
-*  Date of installation.
+* Recently used.
+* Alphabetically, based on title.
+* Date of installation.
 
 
 <!-- ---------- -->
@@ -223,8 +223,8 @@ You can easily pin apps to the taskbar or **Start** menu.  You can create a shor
 ###### App details page
 
 There's now an app details page, which provides way to easily access the following:
-*  Permissions and privacy details for the associated origin.
-*  More details about the application.
+* Permissions and privacy details for the associated origin.
+* More details about the application.
 
 The app details page:
 
@@ -235,8 +235,8 @@ The app details page:
 ## What's new in Microsoft Edge 95
 
 Microsoft Edge version 95 moved to Beta channel on Sep. 28, 2021.  The origin trials remain active for the following features:
-*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
-*  [URL Handlers](#url-handlers-origin-trial).
+* [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
+* [URL Handlers](#url-handlers-origin-trial).
 
 We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end on Oct. 21, 2021.
 
@@ -249,8 +249,8 @@ Microsoft Edge version 94 moved to Stable on Sep. 23, 2021. This release cycle w
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
 The origin trials remain active for the following features:
-*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
-*  [URL Handlers](#url-handlers-origin-trial).
+* [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
+* [URL Handlers](#url-handlers-origin-trial).
 
 We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end with Microsoft Edge version 94 as we take final feedback and get ready to move the protocol handlers feature to Stable.  In case you are enrolled in the origin trial for protocol handlers, we plan to end the trial period after Microsoft Edge version 94.  We'll then determine when this feature will become Stable.
 
@@ -321,15 +321,15 @@ _2023 update: This feature is no longer an origin trial, and is available to all
 
 When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
 
-*  Moved the app **Publisher** information to the top level and made it the first thing a user sees:
+* Moved the app **Publisher** information to the top level and made it the first thing a user sees:
 
    ![The new, streamlined App Info menu](./pwa-images/app-info.png)
 
-*  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu:
+* Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu:
 
    ![Privacy controls in the dedicated Privacy menu](./pwa-images/privacy-menu.png)
 
-*  Moved content-related tools into a dedicated 2nd-level **More tools** menu:
+* Moved content-related tools into a dedicated 2nd-level **More tools** menu:
 
    ![Content-related tools are now found in the More Tools menu](./pwa-images/more-tools.png)
 
@@ -338,10 +338,10 @@ When a user selects the ellipses (**...**) button in the app's title bar, the **
 #### Post-install flyout dialog
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps:
-*  **Pin to taskbar**
-*  **Pin to Start**
-*  **Create Desktop shortcut**
-*  **Auto-start on device login**
+* **Pin to taskbar**
+* **Pin to Start**
+* **Create Desktop shortcut**
+* **Auto-start on device login**
 
 For convenience, this flyout dialog is shown the first time the app is launched:
 

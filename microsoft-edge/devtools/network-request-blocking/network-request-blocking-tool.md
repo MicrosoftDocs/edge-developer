@@ -65,13 +65,13 @@ See also:
 
 To delete a specific network blocking request pattern:
 
-*  In the **Network request blocking** table, hover over a network blocking request pattern, and then click the **Remove** (![Remove blocked request icon](./network-request-blocking-tool-images/remove-blocked-request-icon.png)) button:
+* In the **Network request blocking** table, hover over a network blocking request pattern, and then click the **Remove** (![Remove blocked request icon](./network-request-blocking-tool-images/remove-blocked-request-icon.png)) button:
 
    ![Removing a blocked request](./network-request-blocking-tool-images/remove-blocked-request.png)
 
 To delete all network blocking requests at once:
 
-*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./network-request-blocking-tool-images/remove-all-blocked-requests-icon.png)) button.
+* In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./network-request-blocking-tool-images/remove-all-blocked-requests-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-*  In the **Network request blocking** table, hover over a blocked network request, and then click **Edit** (![edit blocked request icon](./network-request-blocking-tool-images/edit-blocked-request-icon.png)):
+* In the **Network request blocking** table, hover over a blocked network request, and then click **Edit** (![edit blocked request icon](./network-request-blocking-tool-images/edit-blocked-request-icon.png)):
 
    ![Editing a blocked request](./network-request-blocking-tool-images/edit-blocked-request.png)
 
@@ -89,7 +89,7 @@ To change an existing blocked network request:
 
 To toggle network request blocking without having to delete and re-create all of the blocked network requests:
 
-*  In the toolbar, select or clear the **Enable network request blocking** checkbox:
+* In the toolbar, select or clear the **Enable network request blocking** checkbox:
 
    ![Toggling network request blocking](./network-request-blocking-tool-images/toggle-request-blocking.png)
 

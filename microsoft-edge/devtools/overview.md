@@ -69,15 +69,15 @@ DevTools provides a powerful way to inspect and debug webpages and web apps.  Yo
 
 With DevTools, you can do the following:
 
-*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
+* Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your website behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
+* Emulate how your website behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
-*  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
+* Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
-*  Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
+* Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
 
-*  Use a development environment to sync changes in DevTools with the file system and from the web.
+* Use a development environment to sync changes in DevTools with the file system and from the web.
 
 <!-- /end of "keep sync'd", at top of file -->
 
@@ -130,9 +130,9 @@ hit counts:
 **Ctrl+Shift+I** 21 (in 11)
 **Ctrl+Shift+C** 7 (in 6)
 
-**Command+Option+J**  21  (in 12)
+**Command+Option+J** 21  (in 12)
 **Command+Option+I** 15    (in 6)
-**Command+Option+C**  3   (in 2)
+**Command+Option+C** 3   (in 2)
  -->
 
 
@@ -247,9 +247,9 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 1. Click the **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**.
 1. In the **Command Menu**, start typing **zoom**, and then select a zoom command:
-   *  **Reset zoom level**
-   *  **Zoom in**
-   *  **Zoom out**
+   * **Reset zoom level**
+   * **Zoom in**
+   * **Zoom out**
 
 
 <!-- ====================================================================== -->
@@ -267,31 +267,31 @@ The DevTools user interface has the following main areas:
 
 By default, the **Activity Bar** contains the following tools:
 
-*  **Inspect** tool (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
+* **Inspect** tool (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
 
-*  **Device Emulation** tool (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
+* **Device Emulation** tool (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
 
-*  **Welcome** tool (![Welcome tool icon](./overview-images/welcome.png)).
+* **Welcome** tool (![Welcome tool icon](./overview-images/welcome.png)).
 
-*  **Elements** tool (![Elements tool icon](./overview-images/elements.png)).
+* **Elements** tool (![Elements tool icon](./overview-images/elements.png)).
 
-*  **Console** tool (![Console tool icon](./overview-images/console.png)).
+* **Console** tool (![Console tool icon](./overview-images/console.png)).
 
-*  **Sources** tool (![Sources tool icon](./overview-images/sources.png)).
+* **Sources** tool (![Sources tool icon](./overview-images/sources.png)).
 
-*  **Network** tool (![Network tool icon](./overview-images/network.png)).
+* **Network** tool (![Network tool icon](./overview-images/network.png)).
 
-*  **Performance** tool (![Performance tool icon](./overview-images/performance.png)).
+* **Performance** tool (![Performance tool icon](./overview-images/performance.png)).
 
-*  **Memory** tool (![Memory tool icon](./overview-images/memory.png)).
+* **Memory** tool (![Memory tool icon](./overview-images/memory.png)).
 
-*  **Application** tool (![Application tool icon](./overview-images/application.png)).
+* **Application** tool (![Application tool icon](./overview-images/application.png)).
 
 By default, the **Quick View** toolbar contains the following tools:
 
-*  **Console** tool (![Console tool icon](./overview-images/console.png)).
+* **Console** tool (![Console tool icon](./overview-images/console.png)).
 
-*  **Issues** tool (![Issues tool icon](./overview-images/issues.png)).
+* **Issues** tool (![Issues tool icon](./overview-images/issues.png)).
 
 In the **Activity Bar**, tool tabs either contain the tool name and icon, or just the tool icon, depending on the width of the DevTools window. If the window is wide enough, the tool name and icon appear. If the window is too narrow, only the tool icon appears and the tool name appears when you hover over the tool icon.
 
@@ -336,28 +336,28 @@ There are two toolbars: the **Activity Bar** at the top of DevTools, and the **Q
 The **Activity Bar** contains the following features:
 
 * Icon tools:
-   *  **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
-   *  **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
+   * **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
+   * **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
 
 <!--
 * **Automatically emulate Microsoft-recommended device baselines**
 Present if Experiments > "Emulate Microsoft-recommended hardware and network performance presets" checkbox is selected -->
 
 * Tool tabs:
-   *  **Welcome** tool.
-   *  **Elements** tool.  Permanent.
-   *  **Console** tool.  Permanent.
-   *  **Sources** tool.  Permanent.
-   *  **Network** tool.
-   *  **Performance** tool.
-   *  **Memory** tool.
-   *  **Application** tool.
+   * **Welcome** tool.
+   * **Elements** tool.  Permanent.
+   * **Console** tool.  Permanent.
+   * **Sources** tool.  Permanent.
+   * **Network** tool.
+   * **Performance** tool.
+   * **Memory** tool.
+   * **Application** tool.
 
 * Icons:
-   *  **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
-   *  **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
-   *  **Help** (![Help icon](./overview-images/help-icon.png)) button.
-   *  **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
+   * **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
+   * **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
+   * **Help** (![Help icon](./overview-images/help-icon.png)) button.
+   * **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
 
 ![The Activity Bar, with labels that identify its features](./overview-images/menu-bar.png)
 
@@ -421,8 +421,8 @@ The **Elements** tool is always present on the **Activity Bar**.
 
 In the **Console** tool, you can:
 
-*  View and filter logged messages from network requests or from JavaScript log statements.
-*  Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
+* View and filter logged messages from network requests or from JavaScript log statements.
+* Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
 
 The **Console** tool is always present on the **Activity Bar** and on the **Quick View** toolbar.
 
@@ -549,9 +549,9 @@ The **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) b
 
 In addition to **Activity Bar** and **Quick View** tools, DevTools includes the following tools:
 
-*  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
-*  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
-*  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
+* The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
+* The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+* The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
 
 
 <!-- ------------------------------ -->
@@ -571,8 +571,8 @@ In the **Command Menu**, the tools are called "panels"; for example, the **Eleme
 
 1. To open the **Command Menu**, do either of the following:
 
-   *  Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
-   *  Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+   * Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
+   * Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
    The **Command Menu** allows you to type commands to display, hide, or run features in DevTools.
 
@@ -601,12 +601,12 @@ In the **Settings** > **Preferences** page, you can change several parts of DevT
 You can also change the settings of advanced features, such as:
 <!-- todo: how/where, for each item in this list?-->
 
-*  Add local files to a [Workspace](workspaces/index.md).
-*  Filter library code by using the **Ignore List**.
-*  Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
-*  Select a network **Throttling** profile.
-*  Define simulated **Locations**.
-*  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
+* Add local files to a [Workspace](workspaces/index.md).
+* Filter library code by using the **Ignore List**.
+* Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+* Select a network **Throttling** profile.
+* Define simulated **Locations**.
+* Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
 ![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/match-keys.png)
 

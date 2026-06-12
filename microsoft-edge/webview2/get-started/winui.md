@@ -37,9 +37,9 @@ In this tutorial, you do the following:
 
 A completed version of this tutorial project is available in the **WebView2Samples** repo:
 
-*  Sample name: **WinUI3GetStarted**
-*  Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
-*  Solution file: **WinUI3GetStarted.sln**
+* Sample name: **WinUI3GetStarted**
+* Repo directory: [WinUI3_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted)
+* Solution file: **WinUI3GetStarted.sln**
 
 
 <!-- ====================================================================== -->
@@ -469,9 +469,9 @@ To handle navigation events:
 
 You can use the host app to inject JavaScript code into the WebView2 control at runtime.  You can task WebView2 to run arbitrary JavaScript, or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames, until the JavaScript is removed.  The injected JavaScript is run with specific timing, to either:
 
-*  Run the injected JavaScript after the creation of the global object.
+* Run the injected JavaScript after the creation of the global object.
 
-*  Run the injected JavaScript before running any other script that's included in the HTML document.
+* Run the injected JavaScript before running any other script that's included in the HTML document.
 
 Below, you add JavaScript that displays an alert when a user tries to open a non-HTTPS site.  To do this, you inject a script into the web content that uses
 [ExecuteScriptAsync](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2.executescriptasync).

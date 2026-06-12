@@ -23,10 +23,10 @@ This sample uses JavaScript code to insert the `stars.jpeg` image at the top of 
 
 This sample demonstrates the following extension features:
 
-*  Injecting JavaScript libraries into an extension.
-*  Exposing extension assets to browser tabs.
-*  Including content webpages in existing browser tabs.
-*  Having content webpages listen for messages from pop-ups and respond.
+* Injecting JavaScript libraries into an extension.
+* Exposing extension assets to browser tabs.
+* Including content webpages in existing browser tabs.
+* Having content webpages listen for messages from pop-ups and respond.
 
 
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Install the sample locally
+## Install the sample locally (sideloading)
 
 Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 

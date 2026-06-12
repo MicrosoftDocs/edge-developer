@@ -109,8 +109,8 @@ Also, you can now press **Ctrl** to hide the Inspect tool's overlay while you mo
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
 See also:
-*  [Persisting the Inspect tool's tooltip and grid color overlay](../../../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
-*  [Persisting the Inspect tool's tooltip and grid color overlay](../../../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_.
+* [Persisting the Inspect tool's tooltip and grid color overlay](../../../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
+* [Persisting the Inspect tool's tooltip and grid color overlay](../../../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_.
 
 
 <!-- ====================================================================== -->
@@ -120,9 +120,9 @@ See also:
 <!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the Activity Bar in Focus Mode now display better in high contrast. -->
 
 In previous versions of Microsoft Edge, the following items didn't render correctly in high-contrast mode:
-*  Dropdown menus in the **Issues** tool.
-*  Buttons in the **Detached Elements** tool.
-*  The **Activity Bar** in Focus Mode.
+* Dropdown menus in the **Issues** tool.
+* Buttons in the **Detached Elements** tool.
+* The **Activity Bar** in Focus Mode.
 
 In Microsoft Edge 102, these issues have been fixed.
 

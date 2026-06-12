@@ -14,15 +14,15 @@ Using a service worker, a Progressive Web App (PWA) can do work in the backgroun
 
 Consider the following use cases:
 
-*  An email app that lets users compose messages and send them at any time, even when offline.
-*  A news app that fetches new articles every day, for the user to read later when they open the app.
-*  A music app that lets users download songs for listening offline.
+* An email app that lets users compose messages and send them at any time, even when offline.
+* A news app that fetches new articles every day, for the user to read later when they open the app.
+* A music app that lets users download songs for listening offline.
 
 All three of these use cases are possible with PWAs, by using the following APIs:
 
-*  Background Sync API
-*  Periodic Background Sync API
-*  Background Fetch API
+* Background Sync API
+* Periodic Background Sync API
+* Background Fetch API
 
 Although these APIs have similar names, they are different in nature.
 
@@ -83,8 +83,8 @@ To learn more about the `ServiceWorkerRegistration` interface, see [ServiceWorke
 
 The first thing to do is to request a sync. This can be done by your app frontend or your service worker.
 
-*  Requesting the sync from the frontend is good when you want to leave the user in charge of synchronizing later or not.
-*  Requesting the sync from the service worker is good when you want this to be transparent to the user. In this case, the service worker can detect the failed fetch request and request the sync right away.
+* Requesting the sync from the frontend is good when you want to leave the user in charge of synchronizing later or not.
+* Requesting the sync from the service worker is good when you want this to be transparent to the user. In this case, the service worker can detect the failed fetch request and request the sync right away.
 
 To request a sync, you need a `ServiceWorkerRegistration` and a tag name. From the app frontend code, do the following:
 

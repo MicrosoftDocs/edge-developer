@@ -20,14 +20,14 @@ user agent information
 Websites can differentiate between users on Windows 11 and Windows 10, and detect the CPU architecture of the device, by using User-Agent Client Hints (UA-CH).  The User-Agent Client Hints format is used by browsers to provide user agent information to websites.
 
 Websites can also use the user agent information that's sent from the browser to detect information such as:
-*  The browser brand.
-*  The browser version number.
-*  The device platform on which the browser is running.
+* The browser brand.
+* The browser version number.
+* The device platform on which the browser is running.
 
 There are two approaches for sites to access user agent information:
 
-*  User-Agent strings (legacy).
-*  User-Agent Client Hints (recommended).
+* User-Agent strings (legacy).
+* User-Agent Client Hints (recommended).
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 

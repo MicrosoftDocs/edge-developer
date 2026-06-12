@@ -60,11 +60,11 @@ See [Debug Microsoft Edge in Visual Studio Code](debugger-for-edge.md).
 
 Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
-*   Accessibility.
-*   Performance.
-*   Cross-browser compatibility.
-*   PWA compatibility.
-*   Security.
+* Accessibility.
+* Performance.
+* Cross-browser compatibility.
+* PWA compatibility.
+* Security.
 
 webhint checks your code for best practices and common errors.  Identify and fix problems in your files, including HTML, CSS, JavaScript, and TypeScript.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
 
@@ -78,9 +78,9 @@ Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrate
 
 In addition to the standard editor and debugger that most IDEs provide, Visual Studio includes features to ease your development process, including:
 
-*   Compilers.
-*   Code completion tools.
-*   Graphical designers.
-*   And many more features.
+* Compilers.
+* Code completion tools.
+* Graphical designers.
+* And many more features.
 
 See [Visual Studio for web development](../visual-studio/index.md).

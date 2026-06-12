@@ -115,11 +115,11 @@ You can check verification status at Partner Center in **[Account Settings | Leg
 
 There are three possible results when you check your verification status:
 
-*   **Authorized/Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
+* **Authorized/Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
 
-*   **Pending**: The verification process has started but isn't complete. If you've completed the email verification step, no further action is required on your part. Verification usually takes three to five business days. You can monitor verification status at **Account Settings | Legal Info**.
+* **Pending**: The verification process has started but isn't complete. If you've completed the email verification step, no further action is required on your part. Verification usually takes three to five business days. You can monitor verification status at **Account Settings | Legal Info**.
 
-*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application) in the next section. 
+* **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application) in the next section. 
 
 
 <!-- ====================================================================== -->
@@ -144,9 +144,9 @@ Switching back to an individual account from an enterprise account isn't possibl
 
 To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  You can continue to build and test the extension and prepare it to be submitted, while you wait for the verification process to finish.  See the following extension documents:
 
-*  [Extension concepts and architecture](../getting-started/index.md) - Gives an overview of extensions and basic publishing information.
+* [Extension concepts and architecture](../getting-started/architecture.md) - Gives an overview of extensions and basic publishing information.
 
-*  [Publish an extension](publish-extension.md) - Provides detailed information and steps for publishing an extension.
+* [Publish an extension](publish-extension.md) - Provides detailed information and steps for publishing an extension.
 
-*  [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
+* [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
 

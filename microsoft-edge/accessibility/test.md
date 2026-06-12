@@ -58,20 +58,20 @@ You can also use the assessment feature of [Accessibility Insights](https://acce
 <!-- ====================================================================== -->
 ## External articles and websites
 
-*  [Assistive technology compatibility tests](http://www.powermapper.com/tests) - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers.
+* [Assistive technology compatibility tests](http://www.powermapper.com/tests) - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers.
 
-*  [HTML5Accessibility](https://html5accessibility.com) - This site tests which new HTML5 features are accessibly supported by major browsers.
+* [HTML5Accessibility](https://html5accessibility.com) - This site tests which new HTML5 features are accessibly supported by major browsers.
 
-*  [webhint](https://webhint.io) - Use webhint to check for out-of-date libraries, security improvements, performance problems, and accessibility issues.
+* [webhint](https://webhint.io) - Use webhint to check for out-of-date libraries, security improvements, performance problems, and accessibility issues.
 
-*  [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
+* [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
 
 
 <!-- ====================================================================== -->
 ## The Web Accessibility Initiative (WAI)
 
-*  [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html) - Approaches for evaluating websites for accessibility.
+* [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html) - Approaches for evaluating websites for accessibility.
 
-*  [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a webpage.
+* [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a webpage.
 
-*  [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - A quick reference to Web Content Accessibility Guidelines (WCAG), requirements, success criteria, and techniques.
+* [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - A quick reference to Web Content Accessibility Guidelines (WCAG), requirements, success criteria, and techniques.

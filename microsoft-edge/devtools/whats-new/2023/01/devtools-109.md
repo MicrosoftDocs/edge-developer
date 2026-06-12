@@ -27,9 +27,9 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- Subtitle: Use enhanced traces to preserve Console messages, DOM snapshots, and the JavaScript running on the page when exporting a heap snapshot or performance trace. -->
 
 In Microsoft Edge 109, you can turn on new settings to export enhanced traces from the **Performance** and **Memory** tools.  These enhanced traces include more information, such as:
-*  Messages logged to the Console.
-*  The JavaScript that was running on the page at the time of recording.
-*  Snapshots of the DOM.
+* Messages logged to the Console.
+* The JavaScript that was running on the page at the time of recording.
+* Snapshots of the DOM.
 
 When saving performance profiles, heap snapshots, allocation timelines, or allocation sampling, you can now export a new `.devtools` file format.  When you then import the `.devtools` file, a new instance of DevTools opens, with the state of your **Elements**, **Console**, and **Sources** tools preserved.  These enhanced traces offer a powerful new way to collaborate and share the information in your DevTools.
 
@@ -105,9 +105,9 @@ See also:
 
 In Microsoft Edge 109, the **Allocation sampling** profiling type in the **Memory** tool now has two new options:
 
-*  **Include objects discarded by major GC**.
+* **Include objects discarded by major GC**.
 
-*  **Include objects discarded by minor GC**.
+* **Include objects discarded by minor GC**.
 
 Without selecting these options, the **Memory** tool will continue to work as it did before, reporting allocations that are still alive at the end of the profiling session.  In this mode, objects that are generated and garbage-collected (GC'd) and then disappear aren't tracked by allocation sampling.
 

@@ -68,9 +68,9 @@ For the URL `https://a.subdomain.of.a.known.tracker.test/some/path`, the tested 
 
 To provide protection from tracking actions on the web, Microsoft Edge takes two enforcement actions against classified trackers:
 
-*  **Restrict storage access** - If a known tracking resource tries to access any web storage where it may try to persist data about the user, Microsoft Edge blocks that access.  This includes restricting the ability for that tracker to get or set cookies as well as access storage APIs such as `IndexedDB` and `localStorage`.
+* **Restrict storage access** - If a known tracking resource tries to access any web storage where it may try to persist data about the user, Microsoft Edge blocks that access.  This includes restricting the ability for that tracker to get or set cookies as well as access storage APIs such as `IndexedDB` and `localStorage`.
 
-*  **Block resource loads** - If a known tracking resource is being loaded on a website, Microsoft Edge may block that load before the request reaches the network depending on compatibility impact of the load and the tracking prevention setting a user has set.  Blocked loads may include tracking scripts, pixels, iframes, and more.  This prevents any data potentially being sent to the tracking domain and may even improve load times and page performance as a side effect.
+* **Block resource loads** - If a known tracking resource is being loaded on a website, Microsoft Edge may block that load before the request reaches the network depending on compatibility impact of the load and the tracking prevention setting a user has set.  Blocked loads may include tracking scripts, pixels, iframes, and more.  This prevents any data potentially being sent to the tracking domain and may even improve load times and page performance as a side effect.
 
 A user may choose the page info flyout icon on the left side of the Address bar to find out which trackers were blocked on a specific page:
 
@@ -149,11 +149,11 @@ The following are the enforcement actions and mitigations that are applied to ea
 | **Strict** | B | B | S | B | B | B | B | Enabled | Disabled |
 
 About the table:
-*  The column headers are the categories of trackers as defined by the tracking protection list categories that are listed in disconnect.me [services.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json).
-*  The left column lists the three levels of tracking prevention in Microsoft Edge (Basic, Balanced, and Strict).
-*  `S` indicates that storage access is blocked.
-*  `B` indicates that both storage access and resource loads (such as network requests) are blocked.
-*  A hyphen (`-`) indicates that no block is applied to either storage access or resource loads.
+* The column headers are the categories of trackers as defined by the tracking protection list categories that are listed in disconnect.me [services.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json).
+* The left column lists the three levels of tracking prevention in Microsoft Edge (Basic, Balanced, and Strict).
+* `S` indicates that storage access is blocked.
+* `B` indicates that both storage access and resource loads (such as network requests) are blocked.
+* A hyphen (`-`) indicates that no block is applied to either storage access or resource loads.
 
 The Org Engagement mitigation doesn't apply to the Cryptomining or Fingerprinting categories.
 

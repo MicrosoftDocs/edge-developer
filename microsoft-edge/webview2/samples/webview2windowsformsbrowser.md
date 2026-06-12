@@ -14,15 +14,15 @@ ms.date: 04/27/2022
 
 This sample, **WebView2WindowsFormsBrowser**, demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
-*  Sample name: **WebView2WindowsFormsBrowser**
-*  Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
-*  Solution file: `WebView2WindowsFormsBrowser.sln`
+* Sample name: **WebView2WindowsFormsBrowser**
+* Repo directory: [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser)
+* Solution file: `WebView2WindowsFormsBrowser.sln`
 
 ![WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
-*  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
-*  The **View** menu has **Zoom** and **Background Color** submenus.
-*  The **Events** button opens the **EventMonitor** window.
+* The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
+* The **View** menu has **Zoom** and **Background Color** submenus.
+* The **Events** button opens the **EventMonitor** window.
 
 
 <!-- ====================================================================== -->
@@ -44,11 +44,11 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 <!-- ====================================================================== -->
 ## Step 4 - Install workloads if prompted
@@ -134,11 +134,11 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 1. If you just now installed .NET Framework 4.6.2 Developer Pack above, close Visual Studio, and then open the solution file in Visual Studio again, from the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -156,9 +156,9 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2WindowsFormsBrowser app window](./webview2windowsformsbrowser-images/webview2windowsformsbrowser-app-window.png)
 
-   *  The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
-   *  The **View** menu has **Zoom** and **Background Color** submenus.
-   *  The **Events** button opens the **EventMonitor** window.
+   * The **Control** menu has toggle menuitems for **Accelerator Keys** and **Allow External Drop**.
+   * The **View** menu has **Zoom** and **Background Color** submenus.
+   * The **Events** button opens the **EventMonitor** window.
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

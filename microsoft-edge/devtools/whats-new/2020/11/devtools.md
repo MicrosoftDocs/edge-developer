@@ -61,9 +61,9 @@ You can now filter out third-party issues using a new checkbox.  The filter func
 
 To help you see issues that are found by [webhint](https://webhint.io), the **Issues** tool now displays the following information:
 
-*  Improved code snippets.
-*  Links to other relevant panels.
-*  Links to documentation to help you fix problems in your website.
+* Improved code snippets.
+* Links to other relevant panels.
+* Links to documentation to help you fix problems in your website.
 
 ![Issues tool](./devtools-images/issues-webhints.png)
 
@@ -160,10 +160,10 @@ See also:
 
 In the **Network** tool, you can debug network requests that are run by service workers.  (You can also open network requests from within the **Application** tool, instead of the **Network** tool.)  In the **Timing** pane of the **Network** tool, for each request, DevTools displays the following information:
 
-*  The start of a request and duration of the bootstrap.
-*  Changes to service worker registration.
-*  The runtime of a `fetch` event handler.
-*  The runtime of all `fetch` events for loading a client.
+* The start of a request and duration of the bootstrap.
+* Changes to service worker registration.
+* The runtime of a `fetch` event handler.
+* The runtime of all `fetch` events for loading a client.
 
 ![Timing pane of the Network tool](./devtools-images/network-timing-service-worker.png)
 
@@ -196,8 +196,8 @@ See also:
 
 In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions:
 
-*  Highlight the entire text and copy it.
-*  Store the value as global variable, as applicable, and copy it from the DevTools **Console**.
+* Highlight the entire text and copy it.
+* Store the value as global variable, as applicable, and copy it from the DevTools **Console**.
 
 To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard) in _Network features reference_.
 
@@ -227,7 +227,7 @@ For example, the red highlight below shows a custom multi-press keyboard shortcu
 
 ![Chords keyboard shortcuts](./devtools-images/multi-press-keyboard-shortcuts.png)
 
-Update: This feature has been released and is no longer experimental.<!-- To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and select the checkbox next to **Enable keyboard shortcut editor**. -->
+Update: This feature has been released and is no longer experimental.<!-- To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable keyboard shortcut editor**. -->
 
 See also:
 * [Edit the keyboard shortcut for a DevTools action](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
@@ -409,8 +409,8 @@ See also:
 
 DevTools now consistently uses `kB` for displaying sizes of files and memory.  Previously, DevTools mixed `kB` and `KiB`.
 
-*  `kB` or kilobyte (10^3 or 1000 bytes)
-*  `KiB` or kibibyte (2^10 or 1024 bytes)
+* `kB` or kilobyte (10^3 or 1000 bytes)
+* `KiB` or kibibyte (2^10 or 1024 bytes)
 
 For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.
 

@@ -13,18 +13,18 @@ ms.date: 10/31/2023
 This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article, such as [WinUI 2 (UWP) sample app](../samples/webview2_sample_uwp.md).
 
 In this tutorial, you:
-*  Set up your development tools for creating UWP apps that use WebView2 to display web content.
-*  Create an initial WinUI 2 (UWP) app.
-*  Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
-*  Add a WebView2 control that displays webpage content.
-*  Learn about WebView2 concepts along the way.
+* Set up your development tools for creating UWP apps that use WebView2 to display web content.
+* Create an initial WinUI 2 (UWP) app.
+* Install the **Microsoft.UI.Xaml** package (WinUI 2) for the project.
+* Add a WebView2 control that displays webpage content.
+* Learn about WebView2 concepts along the way.
 
 You use the **C# Blank App (Universal Windows)** project template, then install the **Microsoft.UI.Xaml** package (WinUI 2) for this project.  Installing that package installs the **Microsoft.Web.WebView2** package (the WebView2 SDK) as a dependency.
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
-*  UWP XAML controls.
-*  Dense control styles.
-*  Fluent styles and materials.
+* UWP XAML controls.
+* Dense control styles.
+* Fluent styles and materials.
 
 
 <!-- ------------------------------ -->
@@ -44,9 +44,9 @@ See also:
 A completed version of this Getting Started project (solution) is in the WebView2Samples repo.  You can use the completed solution (from the repo or from doing the below steps) as a baseline to add more WebView2 code and other features.
 
 A completed version of this tutorial project is available in the **WebView2Samples** repo:
-*  Sample name: **WinUI2_Sample**
-*  Repo directory: [WinUI2_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted)
-*  Solution file: **MyUWPGetStartApp.sln**
+* Sample name: **WinUI2_Sample**
+* Repo directory: [WinUI2_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI2_GettingStarted)
+* Solution file: **MyUWPGetStartApp.sln**
 
 
 Follow the major Step sections in sequence, below.
@@ -166,7 +166,7 @@ This article shows steps and screenshots for Visual Studio 2022 Community Editio
 1. Accept the defaults, and click the **OK** button.
 
 1. If the **Developer Mode** window section appears, in that section, click **On**.  If you haven't already set your machine to Developer Mode, the **Use developer features** dialog opens, to confirm turning on developer mode.
-   *  Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
+   * Click **Yes** to turn on Developer Mode for your machine, and then close the **Settings** window.
 
    Visual Studio displays the newly created solution and project:
 

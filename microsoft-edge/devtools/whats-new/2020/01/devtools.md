@@ -228,7 +228,7 @@ Click [Show Device Frame](../../../device-mode/index.md#show-device-frame) to sh
 
 Related features:
 
-*  Open the [Command Menu](../../../command-menu/index.md) and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).
+* Open the [Command Menu](../../../command-menu/index.md) and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).
 * [Throttle the network and CPU](../../../device-mode/index.md#throttle-the-network-and-cpu) to more accurately simulate a mobile user's web browsing conditions.
 
 Chromium issue [#924693](https://crbug.com/924693)
