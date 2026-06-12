@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+        - name: Microsoft Edge 150
+          href: ./web-platform/release-notes/150.md
+          displayName: Microsoft Edge 150 web platform release notes (Jul. 2026)  # page title
+
         - name: Microsoft Edge 149
           href: ./web-platform/release-notes/149.md
           displayName: Microsoft Edge 149 web platform release notes (Jun. 2026)  # page title
@@ -65,14 +69,13 @@
         - name: Microsoft Edge 141
           href: ./web-platform/release-notes/141.md
           displayName: Microsoft Edge 141 web platform release notes (Oct. 2025)  # page title
-
-        - name: Microsoft Edge 140
-          href: ./web-platform/release-notes/140.md
-          displayName: Microsoft Edge 140 web platform release notes (Sep. 2025)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 140
+              href: ./web-platform/release-notes/140.md
+              displayName: Microsoft Edge 140 web platform release notes (Sep. 2025)  # page title
+
             - name: Microsoft Edge 139
               href: ./web-platform/release-notes/139.md
               displayName: Microsoft Edge 139 web platform release notes (Aug. 2025)  # page title
@@ -119,7 +122,10 @@
 # AI for the web
     - name: AI for the web
       items:
-        - name: Developer APIs
+        - name: AI for the web
+          href: ./web-platform/index.md
+
+        - name: AI web APIs for sites
           items:
             - name: Prompt a built-in language model with the Prompt API
               href: ./web-platform/prompt-api.md
@@ -138,6 +144,11 @@
 
             - name: Convert speech to text with the SpeechRecognition API
               href: ./web-platform/speech-recognition-api.md
+
+        - name: DevTools for agents
+          items:
+            - name: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
+              href: ./web-platform/devtools-mcp-server.md
 # /AI for the web
 # =============================================================================
 # -----------------------------------------------------------------------------
