@@ -178,8 +178,7 @@ The following sections are tips for using the Microsoft Learn website.
 <!-- ====================================================================== -->
 ## View end-user docs about Microsoft Edge
 
-Microsoft Edge Developer docs are at the present, Microsoft Learn website (learn.microsoft.com).  Microsoft Edge end-user docs are at the following, other websites:
-
+The present website (learn.microsoft.com) is for developer documentation.  For Microsoft Edge end-user docs, see:
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - support.microsoft.com.
 * [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - Learning center at Microsoft.com.
 
