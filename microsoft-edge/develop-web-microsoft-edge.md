@@ -46,15 +46,15 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
 
 With DevTools, you can do the following:
 
-*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
+* Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your webpage behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
+* Emulate how your webpage behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
-*  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
+* Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
-*  Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
+* Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
 
-*  Use a development environment to sync changes in DevTools with the file system and from the web.
+* Use a development environment to sync changes in DevTools with the file system and from the web.
 
 <!-- /keep sync'd -->
 
@@ -70,9 +70,9 @@ You can create a Microsoft Edge extension if you have an idea or product that is
 
 A Microsoft Edge extension is structured similarly to a regular web app, and usually includes:
 
-*  An app manifest JSON file that contains basic platform information.
-*  A JavaScript file that defines the behavior of the browser extension.
-*  HTML and CSS files that define the user interface.
+* An app manifest JSON file that contains basic platform information.
+* A JavaScript file that defines the behavior of the browser extension.
+* HTML and CSS files that define the user interface.
 
 See [Overview of Microsoft Edge extensions](./extensions/index.md).
 
@@ -111,12 +111,12 @@ See [Introduction to Microsoft Edge WebView2](./webview2/index.md).
 
 The following are tools to automate testing in Microsoft Edge:
 
-*  **DevTools Protocol** is used to instrument, inspect, debug, and profile browsers.
-*  Use **origin trials** to try experimental APIs.
-*  **Playwright** provides cross-browser automation through a single API.
-*  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.
-*  **WebDriver** simulates user interaction with Microsoft Edge.
-*  **webhint** linting checks code for errors and best practices.
+* **DevTools Protocol** is used to instrument, inspect, debug, and profile browsers.
+* Use **origin trials** to try experimental APIs.
+* **Playwright** provides cross-browser automation through a single API.
+* **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.
+* **WebDriver** simulates user interaction with Microsoft Edge.
+* **webhint** linting checks code for errors and best practices.
 
 See [Test and automation in Microsoft Edge](./test-and-automation/test-and-automation.md).
 

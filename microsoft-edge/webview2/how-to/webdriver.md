@@ -39,9 +39,9 @@ Follow the instructions to install [Microsoft Edge WebDriver](../../webdriver/in
 
 Make sure the version of Microsoft Edge WebDriver matches the version of the WebView2 Runtime that your app uses.  For the WebView2API Sample to work, make sure your version of the WebView2 Runtime is greater than or equal to the supported version of the latest WebView2 SDK release.
 
-*  To locate the latest WebView2 SDK release, see [Release notes for the WebView2 SDK](../release-notes/index.md).
+* To locate the latest WebView2 SDK release, see [Release notes for the WebView2 SDK](../release-notes/index.md).
 
-*  To find out which version of the WebView2 Runtime you currently have, go to `edge://settings/help`.
+* To find out which version of the WebView2 Runtime you currently have, go to `edge://settings/help`.
 
 
 <!-- ====================================================================== -->
@@ -99,10 +99,10 @@ You've now set up an empty Visual Studio project that's suitable for Selenium te
 
 Decide whether to configure Selenium to drive WebView2 by using the "launch" or "attach" approach.
 
-*  The "launch" approach: In some scenarios, it's appropriate to let Microsoft Edge WebDriver handle launching your WebView2 app.
+* The "launch" approach: In some scenarios, it's appropriate to let Microsoft Edge WebDriver handle launching your WebView2 app.
 Microsoft Edge WebDriver launches your WebView2 app and automatically attaches to the first available WebView2 instance that your app creates.
 
-*  The "attach" approach: In other scenarios, it's appropriate to attach Microsoft Edge WebDriver to a running WebView2 instance.  You launch your app outside of Microsoft Edge WebDriver, and then attach Microsoft Edge WebDriver to a running WebView2 instance.  This "attach" approach is for a WebView2 app that's not compatible with the "launch" approach.
+* The "attach" approach: In other scenarios, it's appropriate to attach Microsoft Edge WebDriver to a running WebView2 instance.  You launch your app outside of Microsoft Edge WebDriver, and then attach Microsoft Edge WebDriver to a running WebView2 instance.  This "attach" approach is for a WebView2 app that's not compatible with the "launch" approach.
 
 
 <!-- ------------------------------ -->
@@ -121,8 +121,8 @@ In this scenario, there's one WebView2 instance, and it's available upon launch,
 If you have any situation that doesn't fit the "launch" scenario above, you should attach Microsoft Edge WebDriver to a running WebView2 instance (instead of letting Microsoft Edge WebDriver handle the WebView2 launch); use [Step 4b: Attaching Microsoft Edge WebDriver to a running WebView2 app](#step-4b-attaching-microsoft-edge-webdriver-to-a-running-webview2-app).
 
 Some examples of scenarios that don't fit the "launch" scenario are:
-*  You need to navigate through some native UI before the WebView2 instance is created.
-*  Your app creates multiple WebView2 instances, and you want to attach to a specific instance.
+* You need to navigate through some native UI before the WebView2 instance is created.
+* Your app creates multiple WebView2 instances, and you want to attach to a specific instance.
 
 In such scenarios, we recommend attaching to a specific instance of WebView2, because having Microsoft Edge WebDriver launch your WebView2 app is for relatively simple scenarios only.  When Microsoft Edge WebDriver launches your app, it automatically attaches to the first WebView2 instance that is created, and will fail if no WebView2 instance is found.
 
@@ -149,9 +149,9 @@ To drive WebView2 with Selenium and Microsoft Edge WebDriver:
 
    Next, we'll add code that does the following:
 
-   *  Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
-   *  Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
-   *  Create an `EdgeDriver` object using the `EdgeOptions` instance.
+   * Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
+   * Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
+   * Create an `EdgeDriver` object using the `EdgeOptions` instance.
 
 1. Copy the following code and paste it below the `eo` declaration line:
 
@@ -198,9 +198,9 @@ In this scenario, where you have some native UI to navigate, you launch your app
 
 Microsoft Edge WebDriver doesn't handle native UI automation, but here are some other approaches to navigate the native UI and display the WebView2 instance that you are automating:
 
-*  Windows Application Driver ([WinAppDriver](https://github.com/Microsoft/WinAppDriver)) is a service to support Selenium-like UI Test Automation on Windows Applications.  This service supports testing Universal Windows Platform (UWP), Windows Forms (WinForms), Windows Presentation Foundation (WPF), and Classic Windows (Win32) apps on Windows 10 PCs.
+* Windows Application Driver ([WinAppDriver](https://github.com/Microsoft/WinAppDriver)) is a service to support Selenium-like UI Test Automation on Windows Applications.  This service supports testing Universal Windows Platform (UWP), Windows Forms (WinForms), Windows Presentation Foundation (WPF), and Classic Windows (Win32) apps on Windows 10 PCs.
 
-*  Using Microsoft Native UI automation directly.  The [Microsoft UI Automation](/windows/win32/winauto/entry-uiauto-win32) framework allows automated test scripts to interact with the UI.  Microsoft UI Automation enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by standard input and by means other than standard input. <!-- condense that; 1st para -->
+* Using Microsoft Native UI automation directly.  The [Microsoft UI Automation](/windows/win32/winauto/entry-uiauto-win32) framework allows automated test scripts to interact with the UI.  Microsoft UI Automation enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by standard input and by means other than standard input. <!-- condense that; 1st para -->
 
 * Use a flag such as a command-line parameter or an environment variable to tell your app to launch directly to the WebView2 instance, to avoid the need for navigating native UI.  Depending on your scenario, this might make it possible to use the "launch" approach described in [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-webdriver-launch-your-webview2-app).  <!-- create a special test mode that displays x. -->
 

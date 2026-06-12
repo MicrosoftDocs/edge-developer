@@ -15,9 +15,9 @@ WebView2 is based on the Microsoft Edge browser.  You have the opportunity to ex
 
 This article covers:
 
-*  The modified browser features and supporting information.
-*  The ability to turn on or off the feature.
-*  Guidance on keyboard shortcuts.
+* The modified browser features and supporting information.
+* The ability to turn on or off the feature.
+* Guidance on keyboard shortcuts.
 
 
 <!-- ====================================================================== -->
@@ -25,9 +25,9 @@ This article covers:
 
 In the context of WebView2, browser features adhere to the following design guidelines:
 
-*  Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off.
+* Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off.
 
-*  WebView2 features don't include Microsoft Edge branding.
+* WebView2 features don't include Microsoft Edge branding.
 
 
 <!-- ====================================================================== -->
@@ -35,9 +35,9 @@ In the context of WebView2, browser features adhere to the following design guid
 
 The following table displays the WebView2 features that differ from the Microsoft Edge browser:
 
-*  **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.
+* **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.
 
-*  **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
+* **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
    * This article doesn't cover turning a feature on or off by using a command-line switch.  See [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
@@ -86,21 +86,21 @@ The following WebView2 platform features are currently unavailable:
 
 The following Microsoft Edge and Google Chrome settings webpages aren't available in WebView2:
 
-*  `chrome-search://local-ntp/local-ntp.html`
-*  `edge://application-guard-internals`
-*  `edge://apps`
-*  `edge://compat`
-*  `edge://extensions`
-*  `edge://favorites`
-*  `edge://help`
-*  `edge://management`
-*  `edge://network-error`
-*  `edge://new-tab-page`
-*  `edge://newtab`
-*  `edge://omnibox`
-*  `edge://settings`
-*  `edge://supervised-user-internals`
-*  `edge://version`
+* `chrome-search://local-ntp/local-ntp.html`
+* `edge://application-guard-internals`
+* `edge://apps`
+* `edge://compat`
+* `edge://extensions`
+* `edge://favorites`
+* `edge://help`
+* `edge://management`
+* `edge://network-error`
+* `edge://new-tab-page`
+* `edge://newtab`
+* `edge://omnibox`
+* `edge://settings`
+* `edge://supervised-user-internals`
+* `edge://version`
 
 <!-- ====================================================================== -->
 ## Google Authentication

@@ -48,9 +48,9 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 <!-- todo: update for Focus Mode -->
-*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
-*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
+* Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+* Press **Ctrl+Shift+H** (Windows, Linux) or **Command+Shift+H** (macOS).
+* [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type **tooltips**.
 
 Then hover over each outlined region of DevTools:
 
@@ -60,9 +60,9 @@ To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 <!-- To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:
-*  **Focus Mode**
-*  **DevTools Tooltips**
-*  **Enable + button tab menus to open more tools**
+* **Focus Mode**
+* **DevTools Tooltips**
+* **Enable + button tab menus to open more tools**
 -->
 
 Note: As of May 2022, tooltips aren't supported from the **Activity Bar**.

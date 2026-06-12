@@ -124,6 +124,6 @@ Be sure to include the topic title and the URL for the page.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Getting started with writing and formatting on GitHub](https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-*  [Docs Contributor Guide](https://learn.microsoft.com/contribute/)
-*  [README](README.md)
+* [Getting started with writing and formatting on GitHub](https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+* [Docs Contributor Guide](https://learn.microsoft.com/contribute/)
+* [README](README.md)

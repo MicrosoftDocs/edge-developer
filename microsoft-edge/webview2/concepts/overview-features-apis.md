@@ -139,11 +139,11 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
-*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+* The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
 
-*  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+* The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
 
-*  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+* The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 <!-- / end of keep sync'd -->
 
@@ -177,9 +177,9 @@ See also:
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can communicate between native code and web code using simple messages, JavaScript code, and native objects.  The following are the main APIs for communicating between web and native code.
 
 Common use cases for web/native interop:
-*  Update the native host window title after navigating to a different website.
-*  Send a native camera object and use its methods from a web app.
-*  Run a dedicated JavaScript file on the web side of an application.
+* Update the native host window title after navigating to a different website.
+* Send a native camera object and use its methods from a web app.
+* Run a dedicated JavaScript file on the web side of an application.
 
 See also:
 * [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
@@ -845,10 +845,10 @@ We're actively investigating these issues, and we encourage you to report any pr
 #### Downloads
 
 Your app can manage the download experience in WebView2.  Your app can:
-*  Allow or block downloads based on different metadata.
-*  Change the download location.
-*  Configure a custom download UI.
-*  Customize the default UI.
+* Allow or block downloads based on different metadata.
+* Change the download location.
+* Configure a custom download UI.
+* Customize the default UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1563,8 +1563,8 @@ Provides hit-testing results on the regions that a WebView2 contains.  Useful fo
 #### Swipe gesture navigation
 
 By hosting the WebView2 control, your app can enable or disable swiping gesture navigation on touch input-enabled devices. This gesture allows end users to:
-*  Swipe left/right (swipe horizontally) to navigate to the previous or next page in the navigation history.
-*  Pull to refresh (swipe vertically) the current page.
+* Swipe left/right (swipe horizontally) to navigate to the previous or next page in the navigation history.
+* Pull to refresh (swipe vertically) the current page.
 
 This feature is currently disabled by default in the browser.  To enable this feature in WebView2, set the `AdditionalBrowserArguments` property, specifying the `--pull-to-refresh` switch.
 
@@ -1924,8 +1924,8 @@ See also:
 ###### Custom crash reporting
 
 If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
-*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
-*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
+* To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
+* To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
 
 See also:
 * [Custom crash reporting](./data-privacy.md#custom-crash-reporting) in _Data and privacy in WebView2_.
@@ -2233,10 +2233,10 @@ Through the WebView2 control, your app can manage navigation to webpages and man
 #### Manage content loaded into WebView2
 
 These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
-*  Content from a URL.
-*  A string of HTML.
-*  Local content via virtual host name to local folder mapping.
-*  Content from a constructed network request.
+* Content from a URL.
+* A string of HTML.
+* Local content via virtual host name to local folder mapping.
+* Content from a constructed network request.
 
 See also:
 * [Using local content in WebView2 apps](./working-with-local-content.md)
@@ -2558,10 +2558,10 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 #### Client certificates
 
 In WebView2, you can use the Client Certificate API to select the client certificate at the application level.  This API allows you to:
-*  Display a UI to the user, if desired.
-*  Replace the default client certificate dialog prompt.
-*  Programmatically query the certificates.
-*  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication.
+* Display a UI to the user, if desired.
+* Replace the default client certificate dialog prompt.
+* Programmatically query the certificates.
+* Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2664,9 +2664,9 @@ Launch a URI scheme that is registered with the OS.
 ## iframes
 
 iframes allow you to embed other webpages into your own webpage.  In WebView2, you can:
-*  Find out when iframes are created.
-*  Find out when iframes are navigating.
-*  Allow bypassing x-frame options.
+* Find out when iframes are created.
+* Find out when iframes are navigating.
+* Allow bypassing x-frame options.
 
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above

@@ -31,11 +31,11 @@ For the latest implementation status and future plans for web platform features 
 
 ### File names and directories
 
-*  When adding a webpage (an article implemented as a .md file), you must add an entry for the new webpage in [toc.yml](microsoft-edge/toc.yml), for the article to appear in the Table of Contents.
+* When adding a webpage (an article implemented as a .md file), you must add an entry for the new webpage in [toc.yml](microsoft-edge/toc.yml), for the article to appear in the Table of Contents.
 
-*  A directory can contain more directories or `readme.md` files.
+* A directory can contain more directories or `readme.md` files.
 
-*  Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `learn.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
+* Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `learn.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
 
 
 <!-- ====================================================================== -->

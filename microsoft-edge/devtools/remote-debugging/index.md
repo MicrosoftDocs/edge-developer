@@ -25,11 +25,11 @@ ms.date: 05/04/2021
 
 Remote debug live content on an Android device from your Windows or macOS computer.  The following tutorial page teaches you how to:
 
-*  Set up your Android device for remote debugging, and discover it from your development machine.
+* Set up your Android device for remote debugging, and discover it from your development machine.
 
-*  Inspect and debug live content on your Android device from your development machine.
+* Inspect and debug live content on your Android device from your development machine.
 
-*  Screencast content from your Android device onto a DevTools instance on your development machine.
+* Screencast content from your Android device onto a DevTools instance on your development machine.
 
 <!--
 ![Remote Debugging lets you inspect a page running on an Android device from your development machine](../media/remote-debugging--remote-debugging.png)
@@ -71,21 +71,21 @@ The workflow below works for most users.  For more help, see [Troubleshooting: D
 
 Use the following tips to help you troubleshoot the correct settings for your hardware.
 
-*  If you are using a USB hub, try connecting your Android device directly to your development machine.
-*  Try unplugging the USB cable between your Android device and development machine, and then re-plugging your USB cable.  Complete the task while your Android and development machine screens are unlocked.
-*  Make sure that your USB cable works.  You should be able to inspect files on your Android device from your development machine.
+* If you are using a USB hub, try connecting your Android device directly to your development machine.
+* Try unplugging the USB cable between your Android device and development machine, and then re-plugging your USB cable.  Complete the task while your Android and development machine screens are unlocked.
+* Make sure that your USB cable works.  You should be able to inspect files on your Android device from your development machine.
 
 Use the following tips to help you verify that your software is set up correctly.
 
-*  If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, see [Install OEM USB Drivers](https://developer.android.com/tools/extras/oem-usb.html).
-*  Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, see [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992).
+* If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, see [Install OEM USB Drivers](https://developer.android.com/tools/extras/oem-usb.html).
+* Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, see [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992).
 
 If the **Allow USB Debugging** prompt isn't displayed on your Android device, try:
 
-*  Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  Sometimes the prompt isn't displayed when your Android or development machine screens are locked.
-*  Updating the display settings for your Android device and development machine so that they never go to sleep.
-*  Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog](https://android.stackexchange.com/questions/101933).
-*  Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.
+* Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  Sometimes the prompt isn't displayed when your Android or development machine screens are locked.
+* Updating the display settings for your Android device and development machine so that they never go to sleep.
+* Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog](https://android.stackexchange.com/questions/101933).
+* Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.
 
 If you find a solution that isn't mentioned on this page or in [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992) on Stack Overflow, please add your solution to that Stack Overflow question<!--, or [open an issue in the webfundamentals repository](https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging]) -->.
 
@@ -133,16 +133,16 @@ Click the **Toggle Screencast** (![Toggle Screencast](./index-images/toggle-scre
 
 You can interact with the screencast in multiple ways:
 
-*  Clicks are translated into taps, firing proper touch events on the device.
-*  Keystrokes on your computer are sent to the device.
-*  To simulate a pinch gesture, hold **Shift** while dragging.
-*  To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
+* Clicks are translated into taps, firing proper touch events on the device.
+* Keystrokes on your computer are sent to the device.
+* To simulate a pinch gesture, hold **Shift** while dragging.
+* To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
 Use the following tips to help you screencast:
 
-*  Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge Address bar, the Android status bar, or the Android keyboard.
-*  Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
-*  If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.
+* Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge Address bar, the Android status bar, or the Android keyboard.
+* Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
+* If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.
 
 
 <!-- ====================================================================== -->

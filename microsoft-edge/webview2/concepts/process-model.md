@@ -20,9 +20,9 @@ The WebView2 Runtime uses the same process model as the Microsoft Edge browser. 
 ## Processes in the WebView2 Runtime
 
 A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A WebView2 process group includes the following:
-*  A single browser process.
-*  One or more renderer processes.
-*  Other helper processes, such as the GPU process and the Audio service process.
+* A single browser process.
+* One or more renderer processes.
+* Other helper processes, such as the GPU process and the Audio service process.
 
 ![Process 1](./process-model-images/process-model-1.png)
 
@@ -30,9 +30,9 @@ The number and presence of processes in a WebView2 process group can change as a
 
 The number of renderer processes can vary based on the following conditions:
 
-*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation).
+* Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developer.chrome.com/blog/inside-browser-part1/#site-isolation).
 
-*  The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
+* The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
 
 The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
 

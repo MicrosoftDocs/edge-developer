@@ -10,9 +10,9 @@ ms.date: 11/05/2024
 ---
 # WinUI 3 (Windows App SDK) sample app
 
-*  Sample name: **WebView2_WinUI3_Sample**
-*  Repo directory: [WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample)
-*  Solution file: `WebView2_WinUI3_Sample.sln`
+* Sample name: **WebView2_WinUI3_Sample**
+* Repo directory: [WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample)
+* Solution file: `WebView2_WinUI3_Sample.sln`
 
 This sample demonstrates using a WebView2 control in a WinUI 3 (Windows App SDK) Packaged application.
 

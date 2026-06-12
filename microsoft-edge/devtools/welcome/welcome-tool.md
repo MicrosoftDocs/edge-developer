@@ -12,10 +12,10 @@ ms.date: 02/15/2022
 
 The **Welcome** tool opens when you first open DevTools.  It displays:
 
-*  Links to developer docs.
-*  Latest features.
-*  Release notes.
-*  Option to contact the Microsoft Edge DevTools team.
+* Links to developer docs.
+* Latest features.
+* Release notes.
+* Option to contact the Microsoft Edge DevTools team.
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.
 

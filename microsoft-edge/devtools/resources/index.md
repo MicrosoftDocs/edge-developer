@@ -24,19 +24,19 @@ ms.date: 10/30/2023
 # View the resource files that make up a webpage
 
 You can view the resources that make up a webpage from within several tools (or _panels_) in Microsoft Edge DevTools, including:
-*  **Network** tool
-*  **Sources** tool
-*  **Application** tool
+* **Network** tool
+* **Sources** tool
+* **Application** tool
 
 Resources are the files that make up a webpage.  Examples of resources include:
-*  CSS files
-*  JavaScript files
-*  HTML files
-*  Image files
+* CSS files
+* JavaScript files
+* HTML files
+* Image files
 
 See also:
-*  [Learn web development](https://developer.mozilla.org/docs/Learn) at Mozilla.org
-*  [Overview of DevTools](../../devtools/overview.md)
+* [Learn web development](https://developer.mozilla.org/docs/Learn) at Mozilla.org
+* [Overview of DevTools](../../devtools/overview.md)
 
 
 <!-- ====================================================================== -->

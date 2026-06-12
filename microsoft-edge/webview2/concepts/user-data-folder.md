@@ -436,9 +436,9 @@ To find out what the user data folder (UDF) location was set to, use the `CoreWe
 
 Reasons you might want to read the UDF location:
 
-*  If you want to clear browsing data from the UDF folder, such as at the end of a session.
+* If you want to clear browsing data from the UDF folder, such as at the end of a session.
 
-*  If you want to delete the UDF.
+* If you want to delete the UDF.
 
 
 <!-- ====================================================================== -->
@@ -562,8 +562,8 @@ If the user data folder (UDF) doesn't have Write permissions, the following erro
 The above is true regardless of whether the location of the user data folder was the default UDF location or a custom UDF location.
 
 If there's insufficient memory, or the Microsoft Edge runtime is unable to start, or the WebView2 Runtime is not found, error message strings similar to the following may be returned:
-*  `Microsoft Edge runtime unable to start`
-*  `Failed to create WebView2 environment`
+* `Microsoft Edge runtime unable to start`
+* `Failed to create WebView2 environment`
 
 Add code, such as `try/catch` code, to handle these errors.  These errors tend to be fatal errors that you can't recover from, so `try/catch` will prevent the app from crashing.  You'll then be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.
 
@@ -599,11 +599,11 @@ If your host app is for multiple users, you should probably create one UDF per u
 If you launch two copies of your host app, they will use the same UDF.  
 <!-- cover this in advanced whitepaper article -->
 
-*  For Win32 host apps, the UDF is not automatically removed.
-*  For .NET (WPF & WinForms) host apps, the UDF is not automatically removed.
-*  For ClickOnce host apps, the UDF is automatically removed.
-*  For WinUI 2 (UWP) host apps, the UDF is not automatically removed.
-*  For WinUI 3 host apps, the UDF is not automatically removed.
+* For Win32 host apps, the UDF is not automatically removed.
+* For .NET (WPF & WinForms) host apps, the UDF is not automatically removed.
+* For ClickOnce host apps, the UDF is automatically removed.
+* For WinUI 2 (UWP) host apps, the UDF is not automatically removed.
+* For WinUI 3 host apps, the UDF is not automatically removed.
 
 
 <!-- ====================================================================== -->
@@ -631,15 +631,15 @@ In this scenario, create a new user data folder (UDF) for each user, and delete 
 
 Your host app or the uninstaller can delete the user data folder (UDF).  You might need to delete UDFs for any of the following reasons:
 
-*  If you want to uninstall a packaged Windows Store app.  In this case, Windows deletes UDFs automatically.
+* If you want to uninstall a packaged Windows Store app.  In this case, Windows deletes UDFs automatically.
 
-*  If you want to clean up all browsing data history.  However, see the _clear browsing data_ methods first, as an easier, more flexible approach.
+* If you want to clean up all browsing data history.  However, see the _clear browsing data_ methods first, as an easier, more flexible approach.
 
-*  If you want to recover from data corruption.
+* If you want to recover from data corruption.
 
-*  If you want to remove previous session data.
+* If you want to remove previous session data.
 
-*  If you want to change the UDF location.  If you change the UDF location, the previous UDF will not be automatically cleaned up.
+* If you want to change the UDF location.  If you change the UDF location, the previous UDF will not be automatically cleaned up.
 
 
 <!-- ------------------------------ -->
@@ -663,13 +663,13 @@ Files in UDFs might still be in use after the WebView2 app is closed.  In this s
 
 WebView2 control instances can share the same user data folders (UDFs), to do the following:
 
-*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
+* Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
-*  Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
+* Have WebView2 controls with different profiles, to separate browser data storage such as cookies, permissions, and cached resources under the same UDF.  See [Support multiple profiles under a single user data folder](../concepts/multi-profile-support.md).
 
 Consider the following when sharing UDFs:
 
-*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same UDF.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
+* When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same UDF.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
 
 <!-- ====================================================================== -->

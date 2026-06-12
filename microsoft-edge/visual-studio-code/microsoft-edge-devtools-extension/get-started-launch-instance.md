@@ -13,11 +13,11 @@ Use this tutorial to learn how to open and close DevTools by clicking the **Laun
 
 This way of opening DevTools is useful for these simple scenarios:
 
-*  If you want to experiment with editing the default, Success page by using DevTools.
+* If you want to experiment with editing the default, Success page by using DevTools.
 
-*  If you want to inspect a page that's specified by using a URL, and don't need Debug mode.  To open a different webpage, you can paste a URL or file path, in the Address bar.
+* If you want to inspect a page that's specified by using a URL, and don't need Debug mode.  To open a different webpage, you can paste a URL or file path, in the Address bar.
 
-*  If you don't have a folder open and you want to experiment with changing CSS on a page that's specified by using a URL, without editing a local source file.
+* If you don't have a folder open and you want to experiment with changing CSS on a page that's specified by using a URL, without editing a local source file.
 
 <!-- outline:
 * Step 1: Install DevTools and prerequisites
@@ -113,10 +113,10 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 1. Along the top of Visual Studio Code, right-click the tabs and arrange them to show the various tabs at the same time: 
 
-   *  The Side Bar, showing **Microsoft Edge Tools** > **Targets**.
-   *  The `index.html` editor.
-   *  The **Edge DevTools** tab.
-   *  The **Edge DevTools: Browser** tab.
+   * The Side Bar, showing **Microsoft Edge Tools** > **Targets**.
+   * The `index.html` editor.
+   * The **Edge DevTools** tab.
+   * The **Edge DevTools: Browser** tab.
 
    ![Success page editing h2 CSS size](./get-started-launch-instance-images/success-page-edit-h2-css.png)
 

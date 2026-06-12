@@ -40,8 +40,8 @@ To enable the Command Palette experiment:
 
    Note the keyboard shortcut, which is shown in the **Command Palette** section on the `edge://flags` page.
    <!--
-   *  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is **Ctrl+Shift+Spacebar**.
-   *  In Microsoft Edge 108 and later, the shortcut is **Ctrl+Q**. -->
+   * In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is **Ctrl+Shift+Spacebar**.
+   * In Microsoft Edge 108 and later, the shortcut is **Ctrl+Q**. -->
 
 1. Click the **Restart** button, which appears in the lower right when you select **Enabled**.
 

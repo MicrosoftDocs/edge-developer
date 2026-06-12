@@ -12,14 +12,14 @@ ms.date: 06/16/2023
 
 Progressive Web Apps (PWAs) are able to do work when the app isn't running, such as updating data in the cache, or sending messages when the device regains connectivity.  To do this, use the following APIs, which are described in [Synchronize and update a PWA in the background](background-syncs.md):
 
-*  Background Sync API
-*  Periodic Background Sync API
-*  Background Fetch API
+* Background Sync API
+* Periodic Background Sync API
+* Background Fetch API
 
 To re-engage the user with the app after a background task has been completed, you can use notifications and badges.  To do this, use the following APIs:
 
-*  App Badging API
-*  Notifications API
+* App Badging API
+* Notifications API
 
 Badges are user-friendly, and can be used frequently.  Badges don't interrupt the user's workflow, and are useful for displaying a small amount of information, such as the number of messages received.
 

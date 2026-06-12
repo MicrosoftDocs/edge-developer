@@ -16,7 +16,7 @@ Supported platforms: Win32.
 <!-- ====================================================================== -->
 ## Prerequisites
 
-*  Experience using the Win32 API.
+* Experience using the Win32 API.
 
 
 <!-- ====================================================================== -->
@@ -24,9 +24,9 @@ Supported platforms: Win32.
 
 Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to contact you for any of the following reasons:
 
-*  The async method has completed.
-*  The success or failure code.
-*  The result of the asynchronous method.
+* The async method has completed.
+* The success or failure code.
+* The result of the asynchronous method.
 
 The final parameter for all asynchronous methods is a pointer to a delegate interface, of which you provide an implementation.
 
@@ -89,14 +89,14 @@ For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreW
 
 When the `NavigationCompleted` event runs, your `Invoke` method is requested:
 
-*  The first parameter runs the `NavigationCompleted` event.
-*  The second parameter contains information about whether the navigation completed successfully, and so on.
+* The first parameter runs the `NavigationCompleted` event.
+* The second parameter contains information about whether the navigation completed successfully, and so on.
 
 Similar to the async method completed handler delegate interface, use one of the following actions to set it up:
 
-*  Implement it directly.
+* Implement it directly.
 
-*  Use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) function that is used in the following WebView2 code:
+* Use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) function that is used in the following WebView2 code:
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->
 

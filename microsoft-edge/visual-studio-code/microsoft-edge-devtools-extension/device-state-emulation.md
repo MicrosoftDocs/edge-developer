@@ -52,10 +52,10 @@ Click the **Rotate** button (![The Rotate button](./device-state-emulation-image
 <!-- toolbar item 5. Emulate CSS media features -->
 
 Use the **Emulate CSS media features** button (![Emulate CSS media features](./device-state-emulation-images/emulate-css-media-features-button.png)) to: 
-*  Emulate CSS media queries.
-*  Test how your product looks in print mode.
-*  Switch between dark and light mode.
-*  Emulate forced colors.
+* Emulate CSS media queries.
+* Test how your product looks in print mode.
+* Switch between dark and light mode.
+* Emulate forced colors.
 
 ![Browser preview in the extension showing the web product in forced color mode](./device-state-emulation-images/edge-for-code-forced-colours.png)
 

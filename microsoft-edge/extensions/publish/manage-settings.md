@@ -18,9 +18,9 @@ Manage your account settings and profile details for your Microsoft Edge Develop
 
 To display your account settings, select the gear icon (Settings) in the upper right-hand corner of [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Developer settings**.  In **Developer settings**, you can review and update the following information.
 
-*   Review information about your account.
-*   Links to other pages to review information.
-*   Edit your account information.
+* Review information about your account.
+* Links to other pages to review information.
+* Edit your account information.
 
 In the **Account details** section, review the type of your account and its status.  Your Seller ID and other publisher ID information is also displayed in the **Account details** section.  These values are assigned by Microsoft to uniquely identify your developer account and are read-only.
 

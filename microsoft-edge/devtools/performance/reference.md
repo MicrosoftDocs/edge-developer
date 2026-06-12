@@ -704,11 +704,11 @@ The chart collapses ignored scripts, marks them as **On ignore list**, and adds 
 
 After recording a page, in addition to the **Main** section to analyze activities, DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*  To view the activities where the most time was directly spent, use the [Bottom-up](#the-bottom-up-tab) tab.
+* To view the activities where the most time was directly spent, use the [Bottom-up](#the-bottom-up-tab) tab.
 
-*  To view the root activities that cause the most work, use the [Call tree](#the-call-tree-tab) tab.
+* To view the root activities that cause the most work, use the [Call tree](#the-call-tree-tab) tab.
 
-*  To view the activities in the order in which they occurred during the recording, use the [Event log](#the-event-log-tab) tab.
+* To view the activities in the order in which they occurred during the recording, use the [Event log](#the-event-log-tab) tab.
 
 To help you find what you are looking for faster, all three tabs have buttons for advanced filtering next to the **Filter** bar:
 
@@ -909,9 +909,9 @@ View raster activity in the **Thread Pool** section.
 
 DevTools provides two ways to analyze frames per second:
 
-*  Use the **Frames** section to view how long a particular frame took.  See [The Frames section](#the-frames-section), below.
+* Use the **Frames** section to view how long a particular frame took.  See [The Frames section](#the-frames-section), below.
 
-*  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter), below.
+* Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter), below.
 
 
 <!-- ---------- -->
@@ -1062,7 +1062,7 @@ To view advanced information about a paint event:
 
 To view statistics about the selectors of the CSS rules that got recalculated during a performance recording:
 
-*  In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
+* In the **Performance** tool, click the **Capture settings** (![Capture settings](./reference-images/capture-settings-icon.png)) button, and then select the **Enable advanced rendering instrumentation (slow)** checkbox.
 
    DevTools displays aggregate information about the selectors of the CSS rules that were recalculated during the recording in the **Selector Stats** tab:
 
@@ -1274,13 +1274,13 @@ When **Disable local fonts** is selected, DevTools ignores the `local()` fonts a
 ![Emulate missing local fonts](./reference-images/disable-local-fonts.png)
 
 This feature is useful if you use two different copies of the same font during development, such as:
-*  A local font for your design tools.
-*  A web font for your code.
+* A local font for your design tools.
+* A web font for your code.
 
 Use **Disable local fonts** to make it easier to:
-*  Debug and measure loading performance and optimization of web fonts.
-*  Verify accuracy of your CSS `@font-face` rules.
-*  Discover differences between local versions installed on your device and a web font.
+* Debug and measure loading performance and optimization of web fonts.
+* Verify accuracy of your CSS `@font-face` rules.
+* Discover differences between local versions installed on your device and a web font.
 
 
 <!-- ====================================================================== -->

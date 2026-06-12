@@ -116,9 +116,9 @@ For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequ
 #### Why would you want to intercept requests that are sent from WebView2?  
 
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
-*  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
-*  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
-*  You want to upload local file content to the request server via a POST request.
+* You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
+* You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
+* You want to upload local file content to the request server via a POST request.
 
 
 <!-- ------------------------------ -->

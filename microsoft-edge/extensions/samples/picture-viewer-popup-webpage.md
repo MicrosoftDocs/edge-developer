@@ -146,7 +146,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Install the sample locally
+## Install the sample locally (sideloading)
 
 Instead of installing the sample from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), you'll install the sample locally, so that you can possibly modify it and quickly test the changes.  Installing locally is sometimes called _sideloading_ an extension.
 
