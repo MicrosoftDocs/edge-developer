@@ -18,7 +18,7 @@ Use the extensions demos to learn how to develop extensions for Microsoft Edge.
 
 See [Code](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code) in the Readme for the "microsoft / MicrosoftEdge-Extensions" repo.
 
-* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [GoogleChrome / chrome-extensions-samples repo](#googlechrome--chrome-extensions-samples-repo), below.
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [Samples in the "GoogleChrome / chrome-extensions-samples" repo](#samples-in-the-googlechrome--chrome-extensions-samples-repo), below.
 
 
 <!-- ====================================================================== -->

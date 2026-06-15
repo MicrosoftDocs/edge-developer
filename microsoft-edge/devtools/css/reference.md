@@ -804,7 +804,7 @@ To copy CSS:
 
    * **Copy all declarations as JS**.  Copies all properties and their values in JavaScript syntax: `propertyInCamelCase: 'value', propertyInCamelCase: 'value', ...`
 
-   * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  See [Copy CSS changes](#copy-css-changes), below.  This menuitem conditionally appears.
+   * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  This menuitem conditionally appears.
 
    * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
 
