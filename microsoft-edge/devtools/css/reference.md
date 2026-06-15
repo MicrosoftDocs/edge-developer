@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/21/2026
+ms.date: 06/15/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -506,7 +506,7 @@ To edit a value, double-click the value.
 
 See also:
 * [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
-* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)  _todolink: non-Chrome link_
+* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api), in the Chrome for Developers blog.
 
 
 <!-- ------------------------------ -->
@@ -584,7 +584,7 @@ To try emulating a focused page:
 An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
 
 See also:
-* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  _todolink: local link_
+* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.
 
 
 <!-- ------------------------------ -->
@@ -700,7 +700,7 @@ To view cascade layers:
    The `page` layer has the highest specificity, therefore the element's background is green.
 
 See also:
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
+* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers), in the Chrome for Developers blog.
 
 
 <!-- ------------------------------ -->
@@ -981,7 +981,7 @@ This dropdown list is a shortcut for **Emulate CSS media feature `prefers-color-
 See also:
 * [Emulating dark or light mode using the Rendering tool](../accessibility/preferred-color-scheme-simulation.md#emulating-dark-or-light-mode-using-the-rendering-tool) in _Emulate dark or light schemes in the rendered page_.
 * [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
-* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme) in Chrome blog.  _todolink: link ok?_
+* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme), in the Chrome for Developers blog.
 * [prefers-color-scheme: Hello darkness, my old friend](https://web.dev/articles/prefers-color-scheme) at web.dev.
 
 
@@ -1065,7 +1065,7 @@ To toggle a single declaration on or off:
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#view-transition -->
 
 See:
-* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  _todolink: is there a non-Chrome link instead?_
+* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.<!-- todo: create local article and link to it -->
 * [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.<!-- todo: change to a local link after create article per AB#62591100 -->
 
 
@@ -1360,12 +1360,14 @@ Web.dev:
 W3C:
 * [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
 
+Chrome for Developers blog:
+* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)
+* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35)
+* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers)
+* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme)
+
 Chrome docs:
-* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)  _todolink: non-Chrome link_
-* [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.  _todolink: local link_
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers) in the Chrome blog.  _todolink: local link?_
-* [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme) in Chrome blog.  _todolink: link ok?_
-* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.  _todolink: is there a non-Chrome link instead?_
+* [Edit the ::view-transition pseudo-elements during an animation](https://developer.chrome.com/docs/devtools/css/animations#view-transition) in _Animations: Inspect and modify CSS animation effects_, in Chrome docs.<!-- todo: create local article and link to it -->
 * [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions) in Chrome docs.<!-- todo: change to a local link after create article per AB#62591100 -->
 
 material.io:
