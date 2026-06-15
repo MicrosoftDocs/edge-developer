@@ -57,14 +57,14 @@ Instead of fully removing the control, you can instead modify the styling of the
 
 Keep the following things in mind when you style the **password reveal** button:
 
-*  The eye icon implements as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.
+* The eye icon implements as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.
 
-*  You can adjust the size and scale of the **password reveal** button.
+* You can adjust the size and scale of the **password reveal** button.
 
    > [!NOTE]
    > The browser hides any overflow outside of the bounds of the password input control.
 
-*  Currently, no state selectors are available to style the toggled state of the **password reveal** button.
+* Currently, no state selectors are available to style the toggled state of the **password reveal** button.
 
 
 <!-- ====================================================================== -->
@@ -72,9 +72,9 @@ Keep the following things in mind when you style the **password reveal** button:
 
 The **password reveal** button is unavailable until the user enters text into the **password** field.  To help keep the user's password entry secure, the browser suppresses the button in the following scenarios:
 
-*   If focus moves away from the **password** field, the browser removes the **password reveal** button.
+* If focus moves away from the **password** field, the browser removes the **password reveal** button.
 
-*   If scripts modify the **password** field, the browser removes the **password reveal** button.
+* If scripts modify the **password** field, the browser removes the **password reveal** button.
 
 If the **password reveal** button is removed, the user must delete the contents of the **password** field to make the **password reveal** button appear again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
 

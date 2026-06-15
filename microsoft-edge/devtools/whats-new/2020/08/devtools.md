@@ -55,14 +55,14 @@ To help enhance your website or app for the dual-screen and foldable devices, us
 
 * [Rendering the seam](/dual-screen/introduction#how-to-work-with-the-seam), which is the space between the two screens.
 
-*  Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments).
+* Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments).
 
 ![Device emulation for Surface Duo](./devtools-images/surface-duo-device-emulation.png)
 
 Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**. -->
 
 See also:
-*  [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md)
+* [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md)
 
 Chromium issue: [#1054281](https://crbug.com/1054281)
 
@@ -186,8 +186,8 @@ To open the new **Media** tool, select **Customize and control DevTools** (`...`
 Before the new **Media** tool in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and then select the **Players** tool.
 
 View live content and inspect potential issues more quickly, such as investigating:
-*  Why frames are dropped.
-*  Why JavaScript is interacting with the player in an unexpected way.
+* Why frames are dropped.
+* Why JavaScript is interacting with the player in an unexpected way.
 
 
 <!-- ------------------------------ -->
@@ -244,13 +244,13 @@ When **Disable local fonts** is selected, DevTools ignores the `local()` fonts a
 ![Emulate missing local fonts](./devtools-images/disable-font.png)
 
 This feature is useful if you use two different copies of the same font during development, such as:
-*  A local font for your design tools.
-*  A web font for your code.
+* A local font for your design tools.
+* A web font for your code.
 
 Use **Disable local fonts** to make it easier to:
-*  Debug and measure loading performance and optimization of web fonts.
-*  Verify accuracy of your CSS `@font-face` rules.
-*  Discover differences between local versions installed on your device and a web font.
+* Debug and measure loading performance and optimization of web fonts.
+* Verify accuracy of your CSS `@font-face` rules.
+* Discover differences between local versions installed on your device and a web font.
 
 Chromium issue: [#384968](https://crbug.com/384968)
 
@@ -482,8 +482,8 @@ See also:
 
 The following text boxes now have **Clear** buttons:
 
-*  The filter text boxes in the **Styles** pane and **Network** tool.
-*  The DOM search text box in the **Elements** tool.
+* The filter text boxes in the **Styles** pane and **Network** tool.
+* The DOM search text box in the **Elements** tool.
 
 Click the **Clear** button to remove any inputted text.
 

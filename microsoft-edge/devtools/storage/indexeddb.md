@@ -67,9 +67,9 @@ To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/Indexe
 
 IndexedDB values in the **Application** tool don't update in real-time.
 
-*  To refresh the data, view an object store and then click the **Refresh** (![Refresh](./indexeddb-images/reload-icon.png)) button.
+* To refresh the data, view an object store and then click the **Refresh** (![Refresh](./indexeddb-images/reload-icon.png)) button.
 
-*  To refresh all data in an IndexedDB database, view a database and then click **Refresh database**:
+* To refresh all data in an IndexedDB database, view a database and then click **Refresh database**:
 
    ![The database view, with the refresh button](./indexeddb-images/refresh-db.png)
 

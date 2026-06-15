@@ -37,8 +37,8 @@ The WebView2 WinRT JS Projection tool (**wv2winrt**) converts from WinRT to Java
 | Class constructor | JavaScript constructor and function | See below. |
 
 When passing JavaScript objects to host objects:
-*  If JavaScript `Date` objects need to be passed to host objects as `VT_DATE`, set the host object's `shouldSerializeDates` property to `true`. By default, `Date` objects are passed to the host as `string`, by using `JSON.stringify`.
-*  If JavaScript typed arrays need to be passed to host objects as `array`, set the host object's `shouldPassTypedArraysAsArrays` property to `true`. By default, typed arrays are passed to the host as `IDispatch`.
+* If JavaScript `Date` objects need to be passed to host objects as `VT_DATE`, set the host object's `shouldSerializeDates` property to `true`. By default, `Date` objects are passed to the host as `string`, by using `JSON.stringify`.
+* If JavaScript typed arrays need to be passed to host objects as `array`, set the host object's `shouldPassTypedArraysAsArrays` property to `true`. By default, typed arrays are passed to the host as `IDispatch`.
 
 See also:
 * [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
@@ -50,13 +50,13 @@ See also:
 A runtime class that has static properties, static methods, or static events is represented as a property of the namespace. Each static property, static method, and static event is represented as a property on that JavaScript object of the runtimeclass.
 
 For example, for the WinRT API static method `Windows.Foundation.Uri.EscapeComponent`:
-*  `Windows.Foundation` is the namespace.
-*  `Uri` is the runtimeclass.
-*  `EscapeComponent` is the static method.
+* `Windows.Foundation` is the namespace.
+* `Uri` is the runtimeclass.
+* `EscapeComponent` is the static method.
 
 In JavaScript, the representation looks similar: `chrome.webview.hostObjects.Windows.Foundation.Uri.EscapeComponent`:
-*  `EscapeComponent` is a JavaScript method that's a property on the JavaScript object for the `Uri` runtimeclass.
-*  The `Uri` runtimeclass is a property on the JavaScript object for the `Foundation` namespace.
+* `EscapeComponent` is a JavaScript method that's a property on the JavaScript object for the `Uri` runtimeclass.
+* The `Uri` runtimeclass is a property on the JavaScript object for the `Foundation` namespace.
 
 For example, to call the static method `Windows.Foundation.Uri.EscapeComponent`, call:
 
@@ -71,8 +71,8 @@ The JavaScript namespace object here is `chrome.webview.hostObjects.Windows.Foun
 #### Class constructors
 
 A constructor for a `RuntimeClass` class is represented as a single property on a JavaScript object that can be called two ways:
-*  As a constructor on the JavaScript namespace object.
-*  As a function on the JavaScript namespace object.
+* As a constructor on the JavaScript namespace object.
+* As a function on the JavaScript namespace object.
 
 For example, to create a new `Windows.Foundation.Uri` object, you can either call it as a constructor, using `new`:
 

@@ -72,9 +72,9 @@ To register for the Microsoft Edge program, you need a Microsoft account (MSA). 
 
 If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't an MSA, you must either:
 
-*  Use an existing MSA to register with the Microsoft Edge program.
+* Use an existing MSA to register with the Microsoft Edge program.
 
-*  Create a new MSA.
+* Create a new MSA.
 
 
 If you don't have an MSA:

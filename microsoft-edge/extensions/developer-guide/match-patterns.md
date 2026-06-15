@@ -29,10 +29,10 @@ For Microsoft Edge extension, host permission and content script pattern matchin
 
 Host permissions and content script matching are based on a set of URLs defined by match patterns.  A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`, `file`, or `ftp`, and that can contain '`*`' characters.  The special pattern `<all_urls>` matches any URL that starts with a permitted scheme.  Each match pattern has 3 parts:
 
-*   _scheme_ — for example, `http` or `file` or `*`
+* _scheme_ — for example, `http` or `file` or `*`
 
-*   `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.
-*   `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.
+* `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.
+* `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.
 
 
 <!-- ====================================================================== -->

@@ -15,9 +15,9 @@ WebView2 collects a set of optional and required diagnostic data to keep WebView
 Additionally, WebView2 follows the standards that are outlined in [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy).  WebView2 has mechanisms to ensure privacy.  WebView2 data collection follows the same strict standards as Microsoft Edge.  For more information, see [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 The main diagnostic data sources are:
-*  Chromium and Microsoft Edge telemetry infrastructure.
-*  Windows data reporting.
-*  Watson (Microsoft Internal) infrastructure to collect crash dumps.
+* Chromium and Microsoft Edge telemetry infrastructure.
+* Windows data reporting.
+* Watson (Microsoft Internal) infrastructure to collect crash dumps.
 
 This article is for WebView2 developers.
 
@@ -38,14 +38,14 @@ Here's an example of diagnostic data settings, for a Windows 11 machine that has
 ![Settings on Windows 11 for Diagnostic data](./data-privacy-images/diagnostic-data-settings.png)
 
 When the Windows **Diagnostic data** setting is on:
-*  WebView2-related data is collected, including API usage, SDK usage, and creation failure.
-*  Browser diagnostic data is collected.  Only browser events that are relevant to WebView2 are collected.
+* WebView2-related data is collected, including API usage, SDK usage, and creation failure.
+* Browser diagnostic data is collected.  Only browser events that are relevant to WebView2 are collected.
 
 Regardless of the Windows **Diagnostic data** setting, WebView2 collects required data that's necessary to maintain performance and reliability; see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 
 Although you don't have control of overall diagnostic data collection, WebView2 offers APIs to control the behavior of the following features that generate data:
-*  SmartScreen.
-*  Custom crash reporting.
+* SmartScreen.
+* Custom crash reporting.
 
 These features are described below.
 

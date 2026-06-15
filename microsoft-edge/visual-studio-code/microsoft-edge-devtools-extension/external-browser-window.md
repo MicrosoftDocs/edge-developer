@@ -36,11 +36,11 @@ By default, DevTools opens the **Edge DevTools: Browser** tab in Visual Studio C
 ![Embedded browser](./external-browser-window-images/embedded-browser.png)
 
 This tab is also called:
-*  The _headless browser_, in **Settings**.
-*  The _screencast_, in tooltips.
-*  The _embedded browser_.
-*  The _DevTools browser_.
-*  The _embedded DevTools browser_.
+* The _headless browser_, in **Settings**.
+* The _screencast_, in tooltips.
+* The _embedded browser_.
+* The _DevTools browser_.
+* The _embedded DevTools browser_.
 
 
 <!-- ------------------------------ -->

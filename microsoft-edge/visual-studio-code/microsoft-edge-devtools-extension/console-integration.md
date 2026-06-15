@@ -14,9 +14,9 @@ In the **Edge DevTools** tab's **Console** tool in Visual Studio Code with this 
 ![The DevTools Console inside the extension as an own tab](./console-integration-images/console-full.png)
 
 You can:
-*  View [log messages](../../devtools/console/console-log.md).
-*  Access the `window` object and use the [DOM interaction convenience methods](../../devtools/console/console-dom-interaction.md).
-*  [Filter the Console](../../devtools/console/console-filters.md) and set [live expressions](../../devtools/console/live-expressions.md).
+* View [log messages](../../devtools/console/console-log.md).
+* Access the `window` object and use the [DOM interaction convenience methods](../../devtools/console/console-dom-interaction.md).
+* [Filter the Console](../../devtools/console/console-filters.md) and set [live expressions](../../devtools/console/live-expressions.md).
 
 
 <!-- ====================================================================== -->

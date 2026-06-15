@@ -24,13 +24,13 @@ See also:
 
 The following programming environments are supported:
 
-*  Win32 C/C++
+* Win32 C/C++
 
 DualEngine APIs can be used on the following versions of Windows:
 
-*  Windows 11
-*  Windows 10
-*  Windows Server 2022
+* Windows 11
+* Windows 10
+* Windows Server 2022
 
 
 <!-- ====================================================================== -->

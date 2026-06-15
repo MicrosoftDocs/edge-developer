@@ -39,11 +39,11 @@ See [Search the web for a Console error message string](../../../console/index.m
 <!-- Subtitle: The Microsoft Edge DevTools extension for Visual Studio Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
 In the latest version of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features:
-*  Shares the same codebase that's used for the browser-based DevTools.
-*  Supports themes that ship with Visual Studio Code.
-*  Adds a **Helpful Links** section in the **Microsoft Edge Tools** sidebar, with buttons for **Documentation**, **Report a Bug**, and **Request a Feature**.
-*  Adds a **Close instance** (`X`) button in the **Microsoft Edge Tools** > **Targets** pane, to close the browser that was opened by the extension.
-*  Adds support for JavaScript Debugger connections to remote workspaces.
+* Shares the same codebase that's used for the browser-based DevTools.
+* Supports themes that ship with Visual Studio Code.
+* Adds a **Helpful Links** section in the **Microsoft Edge Tools** sidebar, with buttons for **Documentation**, **Report a Bug**, and **Request a Feature**.
+* Adds a **Close instance** (`X`) button in the **Microsoft Edge Tools** > **Targets** pane, to close the browser that was opened by the extension.
+* Adds support for JavaScript Debugger connections to remote workspaces.
 
 The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar:
 

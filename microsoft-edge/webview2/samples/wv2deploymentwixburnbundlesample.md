@@ -13,17 +13,17 @@ ms.date: 04/27/2022
 
 This sample, **WV2DeploymentWiXBurnBundleSample**, demonstrates how to use a WiX Burn Bundle to deploy the WebView2 Runtime.  Do the steps in this article to create a WiX installer that chain-installs the Evergreen WebView2 Runtime through Burn Bundle.
 
-*  Sample name: **WV2DeploymentWiXBurnBundleSample**
-*  Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
-*  Project file: `WV2DeploymentWiXBurnBundleSample.wixproj`
+* Sample name: **WV2DeploymentWiXBurnBundleSample**
+* Repo directory: [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentWiXBurnBundleSample)
+* Project file: `WV2DeploymentWiXBurnBundleSample.wixproj`
 
 This sample creates a [WiX](https://wixtoolset.org/) installer for the [Win32 sample app](webview2apissample.md).  This sample uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.
 
 <!-- todo: screenshot representing the success state -->
 
 This sample demonstrates these two different distribution approaches to distribute the WebView2 Runtime for your app:
-*  Downloading the Evergreen WebView2 Runtime Bootstrapper through a link stored in your app.
-*  Packaging the Evergreen WebView2 Runtime Bootstrapper with your app.
+* Downloading the Evergreen WebView2 Runtime Bootstrapper through a link stored in your app.
+* Packaging the Evergreen WebView2 Runtime Bootstrapper with your app.
 
 The other approach, not demonstrated in this sample, is packaging the Evergreen WebView2 Runtime Standalone Installer with your app.  That approach is very similar to packaging the Evergreen WebView2 Runtime Bootstrapper with your app.
 
@@ -144,10 +144,10 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 1. Open `Bundle.wxs` under the `WV2DeploymentWiXBurnBundleSample` project.  Edit `Bundle.wxs` depending on which workflow you want to use:
 
    **To package the Evergreen WebView2 Runtime Bootstrapper with your app:**
-   *  Uncomment the `<ExePackage Id="InvokeBootstrapper" ...>` element below `<!-- [Package Bootstrapper] ... -->`, and comment out other `<ExePackage>` elements.
+   * Uncomment the `<ExePackage Id="InvokeBootstrapper" ...>` element below `<!-- [Package Bootstrapper] ... -->`, and comment out other `<ExePackage>` elements.
 
    **To download the Evergreen WebView2 Runtime Bootstrapper through a link in your app:**
-   *  Uncomment the `<ExePackage Id="DownloadAndInvokeBootstrapper" ...>` element below `<!-- [Download Bootstrapper] ... -->`, and comment out other `<ExePackage>` elements.
+   * Uncomment the `<ExePackage Id="DownloadAndInvokeBootstrapper" ...>` element below `<!-- [Download Bootstrapper] ... -->`, and comment out other `<ExePackage>` elements.
 
 1. If you are packaging the Evergreen WebView2 Runtime Bootstrapper with your app, [download](https://developer.microsoft.com/microsoft-edge/webview2/) the Bootstrapper and place it under the enclosing `SampleApps` folder.
 

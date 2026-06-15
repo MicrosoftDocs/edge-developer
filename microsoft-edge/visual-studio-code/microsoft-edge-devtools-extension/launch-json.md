@@ -87,9 +87,9 @@ The `"name"` string of each debug configuration populates dropdown lists in seve
 
 1. In Visual Studio Code's **Explorer** pane, the `launch.json` file is placed in a `.vscode` folder at the root of the folder that you opened.
 
-   *  For a repo, such as the Demos repo, if you open the entire repo folder, the **Generate launch.json** button creates a `\.vscode\launch.json` file near the root, for the entire repo directory.
+   * For a repo, such as the Demos repo, if you open the entire repo folder, the **Generate launch.json** button creates a `\.vscode\launch.json` file near the root, for the entire repo directory.
 
-   *  If you open a particular, smaller folder, such as `\Demos\demo-to-do\`, the **Generate launch.json** button puts a `launch.json` file in that folder only.
+   * If you open a particular, smaller folder, such as `\Demos\demo-to-do\`, the **Generate launch.json** button puts a `launch.json` file in that folder only.
 
 Visual Studio Code uses a `launch.json` file to configure and customize the debugger.  `launch.json` is a debugger configuration file.  This file also controls which web browser to use in conjunction with the debugger.  For example, when you test your webpage by clicking a button in the webpage to cause your JavaScript code to run, the Visual Studio Code debugger listens to the browser and steps through the JavaScript code of the webpage.
 
@@ -97,7 +97,7 @@ The following is a copy of the `launch.json` after clicking the **Create launch.
 
 There are three _configurations_ and two _compounds_ initially defined by default:
 
-*  `configurations` - in the Visual Studio Code UI, these configuration names appear in Debugger UI:
+* `configurations` - in the Visual Studio Code UI, these configuration names appear in Debugger UI:
 
    * **Launch Microsoft Edge** - this is a "launch"-type configuration.
 
@@ -105,7 +105,7 @@ There are three _configurations_ and two _compounds_ initially defined by defaul
 
    * **Open Edge DevTools** - this is a "debug"-type (or "attach"-type) configuration.
 
-*  `compounds` - in the Visual Studio Code UI, these appear in the Debug toolbar:
+* `compounds` - in the Visual Studio Code UI, these appear in the Debug toolbar:
 
    * **Launch Edge Headless and attach DevTools**
 
@@ -218,9 +218,9 @@ In the **Microsoft Edge Tools** pane, in the **Targets** section, on the right s
 
 This compound configuration launches the following components:
 
-*  The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge in headless mode", above.
+* The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge in headless mode", above.
 
-*  The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
+* The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
 
 
 ```json
@@ -240,11 +240,11 @@ The name of this compound configuration, **Launch Edge Headless and attach DevTo
 
 This compound configuration launches the following components:
 
-*  The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
+* The **Edge DevTools: Browser** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
 
-*  The Microsoft Edge browser window.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
+* The Microsoft Edge browser window.  This is defined by the configuration that has the `name` "Launch Microsoft Edge", above.
 
-*  The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
+* The **Edge DevTools** tab (pane) in Visual Studio Code.  This is defined by the configuration that has the `name` "Open Edge DevTools", above.
 
 ```json
         {

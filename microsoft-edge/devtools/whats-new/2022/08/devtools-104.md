@@ -82,8 +82,8 @@ See also:
 <!-- Subtitle: Arrows representing messages from the server or client now display correctly in the Network tool. -->
 
 In previous versions of Microsoft Edge, when inspecting web socket traffic in the Network tool, the arrows representing whether a message was sent from the client or server were not rendering correctly.  In Microsoft Edge 104, this issue has been fixed.  Thank you for sending us your feedback about this issue!
-*  Green up-arrows (![Green up arrow](./devtools-104-images/green-up-arrow.png)) represent messages sent by the client.
-*  Red down-arrows (![Red down arrow](./devtools-104-images/red-down-arrow.png)) represent messages sent by the server.
+* Green up-arrows (![Green up arrow](./devtools-104-images/green-up-arrow.png)) represent messages sent by the client.
+* Red down-arrows (![Red down arrow](./devtools-104-images/red-down-arrow.png)) represent messages sent by the server.
 
 ![Network tool](./devtools-104-images/network-tool-ws-arrows.png)
 

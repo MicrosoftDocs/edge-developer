@@ -16,9 +16,9 @@ Instead of debugging Web Authentication in your website or app with physical aut
 
 By using the **WebAuthn** tool, you can do the following without relying on physical authenticators:
 
-*  Emulate authenticators.
-*  Customize attributes of authenticators.
-*  Inspect states of authenticators.
+* Emulate authenticators.
+* Customize attributes of authenticators.
+* Inspect states of authenticators.
 
 You can emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn) by using the **WebAuthn** tool.
 

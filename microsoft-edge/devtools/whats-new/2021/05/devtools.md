@@ -57,11 +57,11 @@ See also:
 <!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
 
 Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the **Drawer** (now **Quick View** panel), the following have been added:
-*  Spacing around the tab.
-*  Spacing around the close (`x`) button in the tab.
-*  A background color when hovering over the tab.
-*  A tooltip for the close (`x`) button of the tab.
-*  Higher contrast for the close (`x`) button of the tab.
+* Spacing around the tab.
+* Spacing around the close (`x`) button in the tab.
+* A background color when hovering over the tab.
+* A tooltip for the close (`x`) button of the tab.
+* Higher contrast for the close (`x`) button of the tab.
 
 For example, when you are in the **Performance** tool and you hover over the **Network** tool's tab, these improvements help prevent accidentally closing the **Network** tool.
 
@@ -151,11 +151,11 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 
 Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension now features a simpler way to start a new instance of Microsoft Edge, by presenting instructions, buttons, links, and a documentation page to guide you.
 
-*  When you select the **Microsoft Edge Tools** button in the **Activity Bar** of Visual Studio Code, the **Microsoft Edge Tools: Targets** panel now presents explanatory text, buttons, and links to guide you, instead of a blank panel.
+* When you select the **Microsoft Edge Tools** button in the **Activity Bar** of Visual Studio Code, the **Microsoft Edge Tools: Targets** panel now presents explanatory text, buttons, and links to guide you, instead of a blank panel.
 
-*  When you open a new instance of Microsoft Edge from within Visual Studio Code, Microsoft Edge now shows a start page that explains how to use the Developer Tools extension, instead of a blank page.
+* When you open a new instance of Microsoft Edge from within Visual Studio Code, Microsoft Edge now shows a start page that explains how to use the Developer Tools extension, instead of a blank page.
 
-*  The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
+* The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
 
 See also:
 * [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
@@ -191,8 +191,8 @@ The Console now supports redeclaration of `const` variables across separate REPL
 
 Refer to the example below. `const` redeclaration is supported across separate REPL scripts (refer to variable `a`).  Note that the following scenarios aren't supported, by design:
 
-*  `const` redeclaration of page scripts isn't allowed in REPL scripts.
-*  `const` redeclaration within the same REPL script isn't allowed (refer to variable `b`).
+* `const` redeclaration of page scripts isn't allowed in REPL scripts.
+* `const` redeclaration within the same REPL script isn't allowed (refer to variable `b`).
 
 ![Redeclaring a const variable is allowed in the console](./devtools-images/support-for-const-redeclaration.png)
 

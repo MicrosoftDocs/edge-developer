@@ -26,13 +26,13 @@ Visual Studio Code is a lightweight but powerful source code editor for Windows,
 
 The DevTools extension for Visual Studio Code enables you to:
 
-*  Develop webpages and use DevTools without leaving Visual Studio Code.  This extension gives you an alternative to using DevTools for webpage development within the browser window.
+* Develop webpages and use DevTools without leaving Visual Studio Code.  This extension gives you an alternative to using DevTools for webpage development within the browser window.
 
-*  Emulate devices, such as displaying your webpage in various viewport sizes during development.
+* Emulate devices, such as displaying your webpage in various viewport sizes during development.
 
-*  Test the accessibility of your webpages from within Visual Studio Code.
+* Test the accessibility of your webpages from within Visual Studio Code.
 
-*  Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  CSS mirror editing allows you to control whether to save changes to your `.css` file.  DevTools opens and edits your `.css` files, but without automatically saving the files, so that you can decide and control whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
+* Live-edit CSS and SASS and see your changes reflected immediately in a browser instance while editing your actual source files.  CSS mirror editing allows you to control whether to save changes to your `.css` file.  DevTools opens and edits your `.css` files, but without automatically saving the files, so that you can decide and control whether to save the changes that you made within the **Styles** tab of the **Elements** tool.
 
 
 <!-- ====================================================================== -->
