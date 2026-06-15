@@ -104,9 +104,9 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 1. If the green **Code** button isn't shown, click **Demos** in the path **Microsoft Edge** / **Demos** in the upper left to go to the main page of the repo.
 
 1. Click the green **Code** button, and then select the **Copy** button.  This article assumes you're using the **Source Control** features within Visual Studio Code.  Or, you can use one of the other methods that are provided, if you know that you want to use that approach instead:
-   *  **Open with GitHub Desktop**
-   *  **Open with Visual Studio**
-   *  **Download ZIP**
+   * **Open with GitHub Desktop**
+   * **Open with Visual Studio**
+   * **Download ZIP**
 
    ![Cloning the MicrosoftEdge/Demos repo](./install-images/clone-repo.png)
 
@@ -145,9 +145,9 @@ To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 If you installed Node.js and npm, as described above, `npx http-server` is a simple way to start a local web server.  You can skip to the steps below, or read this background information first.
 
 In many cases, you don't need to enter a URL or run a localhost server.  For example, you can:
-*  Open a folder that contains webpage source files, and then right-click an `.html` file.
-*  Enter a local file path in the Address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
-*  Enter a remote server URL in the Address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
+* Open a folder that contains webpage source files, and then right-click an `.html` file.
+* Enter a local file path in the Address bar, such as `C:/Users/username/.vscode/extensions/ms-edgedevtools.vscode-edge-devtools-2.1.1/out/startpage/index.html` (the default, Success page).
+* Enter a remote server URL in the Address bar of the **Edge DevTools: Browser** tab, such as [https://microsoftedge.github.io/Demos/demo-to-do/](https://microsoftedge.github.io/Demos/demo-to-do/).
 
 If your webpage uses certain APIs that require the webpage to be running on a web server, to use DevTools, you must start a local web server for testing.  If you don't serve out your project on a webserver, but only instead, you use local files, you can still use DevTools, with debugging ability, by right-clicking a local `.html` file.  Functionality of your app which specifically requires your app to be on a server won't work, and DevTools will have limited utility.
 
@@ -160,9 +160,9 @@ For information about http-server, see [http-server: a simple static HTTP server
 1. In Visual Studio Code, select **File** > **Open Folder** > open the directory that contains the `.html`, `.css`, and `.js` files for a webpage, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`.
 
    In the above example path:
-   *  `\Documents\GitHub\` is where the `Demos` repo was cloned to.
-   *  `\Demos\` is the GitHub repo that's used for examples in the Microsoft Edge Developer documentation.
-   *  `\demo-to-do\` is one of the sample directories in the repo.
+   * `\Documents\GitHub\` is where the `Demos` repo was cloned to.
+   * `\Demos\` is the GitHub repo that's used for examples in the Microsoft Edge Developer documentation.
+   * `\demo-to-do\` is one of the sample directories in the repo.
 
 1. In Visual Studio Code, select **View** > **Terminal**.  Or, to keep the web server running regardless of Visual Studio's state, open a command prompt outside of Visual Studio Code, such as `git bash`.
 

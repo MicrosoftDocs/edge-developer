@@ -58,13 +58,13 @@ For general information about this extension, see [Microsoft Edge DevTools exten
 
 The current version of the Microsoft Edge DevTools extension for Visual Studio Code fixes several issues that were reported by the community:
 
-*  The list of emulated devices in the screencast is now the same as the list of emulated devices in the browser.
+* The list of emulated devices in the screencast is now the same as the list of emulated devices in the browser.
 
-*  Device emulation now adds the correct user agent string, to trigger the correct display.
+* Device emulation now adds the correct user agent string, to trigger the correct display.
 
-*  You now get a warning when you use a deprecated launch version of Microsoft Edge, indicating that you'd miss out on features.
+* You now get a warning when you use a deprecated launch version of Microsoft Edge, indicating that you'd miss out on features.
 
-*  You can now provide arguments for the launched browser instance, in case you need to have a special setup:
+* You can now provide arguments for the launched browser instance, in case you need to have a special setup:
 
 ![Extension settings to specify launch arguments for Microsoft Edge](./devtools-images/extension-settings-launch-arguments.png)
 

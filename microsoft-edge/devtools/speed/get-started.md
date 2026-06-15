@@ -82,9 +82,9 @@ Whenever you set out to improve the load performance of a site, always start wit
 
 The audit has two important functions:
 
-*  It creates a **baseline** for you to measure subsequent changes against.
+* It creates a **baseline** for you to measure subsequent changes against.
 
-*  It gives you **actionable tips** on what changes improve performance the most.
+* It gives you **actionable tips** on what changes improve performance the most.
 
 
 <!-- ------------------------------ -->
@@ -99,11 +99,11 @@ The baseline is a record of how the site performed before you made any performan
 
 1. Select the **Performance** category, and clear all the other categories. For now, keep the other default options. The options are:
 
-   *  **Mode**: To run tests during the load of the webpage, set this option to **Navigation (default)**. To run tests during a period of time, set the option to **Timespan**. To run tests on the webpage as it appears now, set the option to **Snapshot**.
+   * **Mode**: To run tests during the load of the webpage, set this option to **Navigation (default)**. To run tests during a period of time, set the option to **Timespan**. To run tests on the webpage as it appears now, set the option to **Snapshot**.
 
-   *  **Device**: To simulate a mobile user agent string and a mobile viewport, set this option to **Mobile**.  To test the webpage without any simulation, set this option to **Desktop**.
+   * **Device**: To simulate a mobile user agent string and a mobile viewport, set this option to **Mobile**.  To test the webpage without any simulation, set this option to **Desktop**.
 
-   *  **Categories**: this option allows you to run only a subset of the tests available in **Lighthouse**.
+   * **Categories**: this option allows you to run only a subset of the tests available in **Lighthouse**.
 
 1. Click **Analyze page load**:
 
@@ -156,8 +156,8 @@ The **Metrics** section provides quantitative measurements of the performance of
 
 Each metric provides insight into a different aspect of the performance.  For example:
 
-*  **First Contentful Paint** indicates when content first appears on the screen.  This is an important milestone in the user's perception of the page load.
-*  **Time To Interactive** marks the point at which the rendered page is ready to handle user interactions.
+* **First Contentful Paint** indicates when content first appears on the screen.  This is an important milestone in the user's perception of the page load.
+* **Time To Interactive** marks the point at which the rendered page is ready to handle user interactions.
 
 Click **Expand view** to display a description for each metric.  Then click **Learn More** to read documentation about it:
 
@@ -282,13 +282,13 @@ Now, the images on the webpage only require transferring 360 KB of data, instead
 
 For a small app, doing a one-off resize like this might be good enough. But for a large app, consider these strategies for managing images:
 
-*  Automatically resize images during your build process.
+* Automatically resize images during your build process.
 
-*  Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.
+* Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.
 
-*  Use an image CDN that lets you dynamically resize an image when you request it.
+* Use an image CDN that lets you dynamically resize an image when you request it.
 
-*  At least, optimize each image.  This can often create huge savings.
+* At least, optimize each image.  This can often create huge savings.
 
    _Optimization_ means running an image through a program that reduces the size of the image file.
 
@@ -451,7 +451,7 @@ See also:
 #### Reduce layout shift by setting explicit width and height on images
 <!-- not in upstream -->
 
-In your **Lighthouse** report, the **Diagnostics** section suggests defining explicit `width` and `height` for image elements. Click on **Image elements do not have explicit width and height**  to display more information:
+In your **Lighthouse** report, the **Diagnostics** section suggests defining explicit `width` and `height` for image elements. Click on **Image elements do not have explicit width and height** to display more information:
 
 ![The Lighthouse diagnostics section about setting explicit width and height for images](./get-started-images/explicit-image-size.png)
 

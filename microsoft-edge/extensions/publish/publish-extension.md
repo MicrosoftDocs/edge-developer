@@ -79,7 +79,7 @@ To prepare an extension to be submitted via Partner Center, to be published at [
 <!-- ---------------------------------- -->
 #### Have a working prototype of the extension
 
-Before publishing your extension, you must have a working prototype of the extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
+Before publishing your extension, you must have a working prototype of the extension ready.  See [Get started developing an extension](../getting-started/index.md).
 
 
 <!-- ---------------------------------- -->

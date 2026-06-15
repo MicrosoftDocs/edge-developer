@@ -118,7 +118,7 @@ To see what's happening in the rendered page while the user interactions are bei
 
 To slow down the replay speed:
 
-*  Click the dropdown arrow next to **Replay** in the top-right corner of the **Recorder** tool, and then select a speed from the dropdown menu, such as **Slow**, **Very slow**, or **Extremely slow**:
+* Click the dropdown arrow next to **Replay** in the top-right corner of the **Recorder** tool, and then select a speed from the dropdown menu, such as **Slow**, **Very slow**, or **Extremely slow**:
 
    ![The Replay button and the Speed dropdown menu](./index-images/replay-slow.png)
 

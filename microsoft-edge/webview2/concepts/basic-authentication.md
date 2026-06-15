@@ -49,11 +49,11 @@ For more information, see [Navigation events for WebView2 apps](navigation-event
 <!-- ====================================================================== -->
 ## Communication between the HTTP server, WebView2 control, and host app
 
-*  The **HTTP server** checks authentication (username and password credentials) and returns either an error document or the requested webpage.
+* The **HTTP server** checks authentication (username and password credentials) and returns either an error document or the requested webpage.
 
-*  The **WebView2 control** instance raises the events.  The WebView2 control sits between the HTTP server and the host app.  The WebView2 control serves as an intermediary for communication between the host app and the HTTP server.
+* The **WebView2 control** instance raises the events.  The WebView2 control sits between the HTTP server and the host app.  The WebView2 control serves as an intermediary for communication between the host app and the HTTP server.
 
-*  You write the **host app**.  The host app sets the user name and password on the event's arguments (`EventArgs`) response objects.
+* You write the **host app**.  The host app sets the user name and password on the event's arguments (`EventArgs`) response objects.
 
 `BasicAuthenticationRequestedEventArgs` has a `Response` property.  The `Response` property is an object that contains the username and password properties.
 
@@ -113,8 +113,8 @@ The following simplified example shows the host app providing credentials (user 
 
 This example isn't realistic, because:
 
-*  In practice, you'd prompt the user for the username and password rather than hardcoding them like `"user"` and `"pass"`.
-*  This code is synchronous, but you'd probably use asynchronous code instead.
+* In practice, you'd prompt the user for the username and password rather than hardcoding them like `"user"` and `"pass"`.
+* This code is synchronous, but you'd probably use asynchronous code instead.
 
 For more realistic code, see the subsequent section.
 
@@ -185,8 +185,8 @@ else
 This example demonstrates a host app prompting the user for credentials (user name and password), and uses async code.
 
 This example builds upon the above sample, by adding the following features:
-*  Displays a dialog to prompt the user for their username and password.
-*  Calls the `GetDeferral` method on the `event` argument.
+* Displays a dialog to prompt the user for their username and password.
+* Calls the `GetDeferral` method on the `event` argument.
 
 ##### [C#](#tab/csharp)
 
@@ -396,8 +396,8 @@ For more information, see [Navigation events for WebView2 apps](navigation-event
 #### Navigations for basic authentication
 
 There are two kinds of navigations in the flow:
-*  A "server requested authentication" navigation.
-*  A "server gave the WebView2 control a document" navigation.
+* A "server requested authentication" navigation.
+* A "server gave the WebView2 control a document" navigation.
 
 After the first type of navigation, the server has asked for authentication and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
 
@@ -438,4 +438,4 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 <!-- ====================================================================== -->
 ## See also
 
-*  [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN.
+* [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN.

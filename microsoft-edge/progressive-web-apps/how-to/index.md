@@ -211,7 +211,7 @@ self.addEventListener('fetch', event => {
 
 This service worker explicitly caches three files:
 * `./` means `index.html`
-*  `./converter.js`
+* `./converter.js`
 * `./converter.css`
 
 Two additional files are are cached automatically by the browser: 

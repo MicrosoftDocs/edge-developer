@@ -34,9 +34,9 @@ Use this tutorial to learn how to open and close DevTools by right-clicking an `
 
 Right-clicking an `.html` file in Visual Studio Code's **Explorer** is the main way to open DevTools when your webpage doesn't require running on a web server.
 
-*  Unlike the **Launch Instance** button, this approach opens DevTools in Debug mode.
+* Unlike the **Launch Instance** button, this approach opens DevTools in Debug mode.
 
-*  Unlike the **Launch Project** button that we'll use later, this approach doesn't require you to generate a `launch.json` file.
+* Unlike the **Launch Project** button that we'll use later, this approach doesn't require you to generate a `launch.json` file.
 
 
 We'll demonstrate by opening the **demo-to-do** web app:
@@ -51,11 +51,11 @@ We'll demonstrate by opening the **demo-to-do** web app:
 
    ![Right-click > Open Browser with DevTools](./get-started-right-click-html-images/open-browser-with-devtools.png)
 
-   *  The **Edge DevTools** tab opens.
+   * The **Edge DevTools** tab opens.
 
-   *  The **Edge DevTools: Browser** tab opens, displaying the webpage you right-clicked.
+   * The **Edge DevTools: Browser** tab opens, displaying the webpage you right-clicked.
 
-   *  The Debug toolbar of Visual Studio Code opens, the **Debug Console** opens at the bottom, and the **Run** pane opens.  These features indicate that Visual Studio Code is in Debug mode:
+   * The Debug toolbar of Visual Studio Code opens, the **Debug Console** opens at the bottom, and the **Run** pane opens.  These features indicate that Visual Studio Code is in Debug mode:
 
    ![The two Edge DevTools tabs and the Debug toolbar](./get-started-right-click-html-images/devtools-extension-v211.png)
 

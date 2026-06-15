@@ -13,9 +13,9 @@ ms.date: 2/24/2022
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can use WebView2 in different ways, depending on what you need to accomplish.  This article describes how to communicate using simple messages, JavaScript code, and native objects.
 
 Some common use cases include:
-*  Update the native host window title after navigating to a different website.
-*  Send a native camera object and use its methods from a web app.
-*  Run a dedicated JavaScript file on the web side of an application.
+* Update the native host window title after navigating to a different website.
+* Send a native camera object and use its methods from a web app.
+* Run a dedicated JavaScript file on the web side of an application.
 
 
 <!-- ====================================================================== -->

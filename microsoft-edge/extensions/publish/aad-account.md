@@ -26,13 +26,13 @@ After your Partner Center account is able to publish Microsoft Edge extensions, 
 
 Different programs on Partner Center require different types of accounts:
 
-*  The Microsoft Edge program (like the Windows developer program) requires a Partner Center _developer_ account.  A Partner Center developer account has a Primary Owner that's a Microsoft account (MSA).
+* The Microsoft Edge program (like the Windows developer program) requires a Partner Center _developer_ account.  A Partner Center developer account has a Primary Owner that's a Microsoft account (MSA).
 
-*  In contrast, Azure marketplace requires a Partner Center _commercial_ account.  (To enroll, the user has to log in with their work account.)
+* In contrast, Azure marketplace requires a Partner Center _commercial_ account.  (To enroll, the user has to log in with their work account.)
 
 Also see these articles in the Partner Center documentation:
-*  [Manage your Partner Center account](/partner-center/partner-center-account-setup)
-*  [Microsoft Partner Network membership benefits](/partner-center/mpn-overview)
+* [Manage your Partner Center account](/partner-center/partner-center-account-setup)
+* [Microsoft Partner Network membership benefits](/partner-center/mpn-overview)
 
 
 <!-- ====================================================================== -->
@@ -125,5 +125,5 @@ If you need help or assistance with associating your Microsoft Entra ID account 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Microsoft Entra tenants in the Microsoft Entra ID documentation.
+* [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Microsoft Entra tenants in the Microsoft Entra ID documentation.
 <!-- contrasts "Work and school accounts, or personal Microsoft accounts" -->

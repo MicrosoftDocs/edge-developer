@@ -12,10 +12,10 @@ ms.date: 01/20/2025
 
 The **WebView2APISample** app demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.  This is the main Win32 sample, and has test webpages for the latest features and APIs, and hundreds of menuitems to test various APIs.
 
-*  Sample name: **WebView2APISample**
-*  Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
-*  Solution file: `WebView2Samples.sln` (located in the parent directory, `\SampleApps\`)
-*  Project name in Solution Explorer: **WebView2APISample**
+* Sample name: **WebView2APISample**
+* Repo directory: [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample)
+* Solution file: `WebView2Samples.sln` (located in the parent directory, `\SampleApps\`)
+* Project name in Solution Explorer: **WebView2APISample**
 
 **WebView2APISample** embeds a WebView2 control within a Win32 native application.
 
@@ -395,9 +395,9 @@ The **WebView2APISample** app is an example of a hybrid application, with a Win3
 
 ![Hybrid app](./webview2apissample-images/sample-app-layout-diagram.png)
 
-*  The Win32 part can directly access native Windows APIs.  The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
+* The Win32 part can directly access native Windows APIs.  The top part of the **WebView2APISample** app is a Win32 component written in C++. This part of the application takes in UI inputs from the user and uses them to control the WebView.
 
-*  The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).  The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  The WebView can be navigated to websites or local content.
+* The WebView is a container for standard web technologies (HTML, CSS, and JavaScript).  The main part of the **WebView2APISample** app is a WebView that can be repurposed using standard web technologies (HTML/CSS/JavaScript).  The WebView can be navigated to websites or local content.
 
 This hybrid approach allows you to create and iterate faster using web technologies, while still being able to take advantage of native functionality.  The **WebView2APISample** app demonstrates how the Win32 component and the WebView component can interact with each other.
 

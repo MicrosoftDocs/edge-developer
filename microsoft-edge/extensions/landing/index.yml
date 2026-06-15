@@ -55,8 +55,11 @@ landingContent:
           - text: User docs about Microsoft Edge extensions
             url: ../getting-started/user-docs.md
 
-          - text: Extension concepts and architecture
+          - text: Get started developing an extension
             url: ../getting-started/index.md
+
+          - text: Extension concepts and architecture
+            url: ../getting-started/architecture.md
 
           - text: Sideload an extension to install and test it locally
             url: ../getting-started/extension-sideloading.md
@@ -117,7 +120,7 @@ landingContent:
  
       - linkListType: concept
         links:
-          - text: Create a DevTools extension, adding a custom tool tab and panel
+          - text: Add a custom tool in Microsoft Edge DevTools
             url: ../developer-guide/devtools-extension.md
 
           - text: Develop an extension for the Microsoft Edge sidebar

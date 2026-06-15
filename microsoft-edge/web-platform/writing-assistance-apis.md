@@ -180,28 +180,28 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
 
 1. Make sure you're using the latest version of Microsoft Edge Canary or Edge Dev (version 138.0.3309.2 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags/`.
+1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags`.
 
-1. In the search box, at the top of the page:
+1. In the **Search flags** text box at the top of the page, enter **Writer API**.
 
-   * To enable the Writer API, enter **Writer API for Phi mini**.
-   * To enable the Rewriter API, enter **Rewriter API for Phi mini**.
+   The following two flags are listed:
 
-   The page is filtered to show the matching flag.
+   * **Writer API for on-device language model**.  (Through Edge 149, this flag's label was **Writer API for Phi mini**.)
+   * **Rewriter API for on-device language model**.  (Through Edge 149, this flag's label was **Rewriter API for Phi mini**.)
 
-   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here.)
+   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here, and then enable that flag.)
 
-1. Select **Enabled** next to the flag for the API you want to enable:
+1. Next to the flag for the API, select **Enabled**:
 
    ![Flags page of browser](./writing-assistance-apis-images/flags-rewriter-api.png)
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
-1. Restart Edge Canary or Edge Dev.
+1. Click the **Restart** button.
 
 1. To check if your device meets the hardware requirements for the Writing Assistance APIs developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Writing Assistance APIs should be supported on your device.
+   If your device performance class is **High** or greater, the Writing Assistance APIs are supported on your device.
 
    If your device performance class is **Medium** or **Low**, the Writing Assistance APIs are only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.0.4070.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-10-instruct-for-the-writing-assistance-apis), above.
                                                        

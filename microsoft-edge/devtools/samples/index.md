@@ -11,9 +11,9 @@ ms.date: 05/22/2026
 # Sample code for DevTools
 
 Use the [Demos](https://github.com/MicrosoftEdge/Demos#readme) repo to learn how to use Microsoft Edge to develop webpages and web apps.  There are various ways to view, download, and modify these demo webpages, including:
-*  DevTools in Microsoft Edge.
-*  Visual Studio Code, with optional DevTools.
-*  Visual Studio, with optional DevTools.
+* DevTools in Microsoft Edge.
+* Visual Studio Code, with optional DevTools.
+* Visual Studio, with optional DevTools.
 
 To view the source code for a rendered demo webpage in DevTools in Microsoft Edge:
 
@@ -114,11 +114,11 @@ This is the source code repo and its directory which stores the files for this d
 
 * [MicrosoftEdge / Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) - Contains the files:
 
-   *  `README.md` - Contains links to the rendered demo webpage and the in-depth tutorial article about using the demo webpage.
+   * `README.md` - Contains links to the rendered demo webpage and the in-depth tutorial article about using the demo webpage.
 
-   *  `index.html` - The webpage with an input form that sends data to the JavaScript file, and that displays the result of the JavaScript.
+   * `index.html` - The webpage with an input form that sends data to the JavaScript file, and that displays the result of the JavaScript.
 
-   *  `get-started.js` - The JavaScript file that's used by the form in the demo webpage.
+   * `get-started.js` - The JavaScript file that's used by the form in the demo webpage.
 
 
 <!-- ====================================================================== -->
@@ -403,9 +403,9 @@ In contrast, the desired GitHub.io URL pattern is:
 * `https://[org].github.io/[repo]/[path]`
 
 To fill in that GitHub.io URL pattern, in this example:
-*  [org] is `MicrosoftEdge`.
-*  [repo] is `Demos`.
-*  [path] is `demo-to-do`.
+* [org] is `MicrosoftEdge`.
+* [repo] is `Demos`.
+* [path] is `demo-to-do`.
 
 Therefore, the resulting GitHub.io server URL for the rendered demo webpage is:
 * `https://MicrosoftEdge.github.io/Demos/demo-to-do/`

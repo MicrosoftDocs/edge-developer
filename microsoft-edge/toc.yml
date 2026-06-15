@@ -167,6 +167,10 @@
               href: ./devtools/whats-new/index.md
               displayName: release notes, announcements
 # latest 10 What's new
+            - name: Microsoft Edge 149
+              href: ./devtools/whats-new/149.md
+              displayName: What's new in DevTools (Microsoft Edge 149)  # page title
+
             - name: Microsoft Edge 148
               href: ./devtools/whats-new/148.md
               displayName: What's new in DevTools (Microsoft Edge 148)  # page title
@@ -202,14 +206,14 @@
             - name: Microsoft Edge 140
               href: ./devtools/whats-new/2025/09/devtools-140.md
               displayName: What's new in DevTools (Microsoft Edge 140)  # page title
-
-            - name: Microsoft Edge 139
-              href: ./devtools/whats-new/2025/08/devtools-139.md
-              displayName: What's new in DevTools (Microsoft Edge 139)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 139
+                  href: ./devtools/whats-new/2025/08/devtools-139.md
+                  displayName: What's new in DevTools (Microsoft Edge 139)  # page title
+
                 - name: Microsoft Edge 138
                   href: ./devtools/whats-new/2025/06/devtools-138.md
                   displayName: What's new in DevTools (Microsoft Edge 138)  # page title
@@ -1207,12 +1211,14 @@
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
-            - name: Extension concepts and architecture
+            - name: Get started developing an extension
               href: ./extensions/getting-started/index.md
+
+            - name: Extension concepts and architecture
+              href: ./extensions/getting-started/architecture.md
 
             - name: Sideload an extension to install and test it locally
               href: ./extensions/getting-started/extension-sideloading.md
-
 # -----------------------------------------------------------------------------
         - name: Samples
           items:
@@ -1259,13 +1265,20 @@
 
                 - name: Declare API permissions in the manifest
                   href: ./extensions/developer-guide/declare-permissions.md
-# -------------------------------------
-            - name: Create a DevTools extension, adding a custom tool tab and panel
-              href: ./extensions/developer-guide/devtools-extension.md
+
+          # - name: Develop a regular extension  # see "Get started developing an extension"
 
             - name: Develop an extension for the Microsoft Edge sidebar
               href: ./extensions/developer-guide/sidebar.md
               displayName: sidebar extensions, sidepanel, side panel
+
+            - name: Add a custom tool in Microsoft Edge DevTools
+              items:
+                - name: Add a custom tool in Microsoft Edge DevTools
+                  href: ./extensions/developer-guide/devtools-extension.md
+
+                - name: "Sample: Custom DevTools tool"
+                  href: ./extensions/developer-guide/devtools-extension-sample.md
 
             - name: Native messaging
               href: ./extensions/developer-guide/native-messaging.md

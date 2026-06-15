@@ -14,14 +14,14 @@ This article is to learn to write your own WebView2 code.  If you want to run a 
 
 <!--
 todo: errors experienced with vs2022 by following these instructions:
-*  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
+* The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
 -->
 
 This tutorial helps you:
-*  Set up your development tools.
-*  Use the **C# Windows Forms App (.NET Framework)** Visual Studio project template to create a WinForms project.
-*  Install the **Microsoft.Web.WebView2** SDK package for the WinForms project.
-*  Learn about WebView2 concepts along the way.
+* Set up your development tools.
+* Use the **C# Windows Forms App (.NET Framework)** Visual Studio project template to create a WinForms project.
+* Install the **Microsoft.Web.WebView2** SDK package for the WinForms project.
+* Learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -29,12 +29,12 @@ This tutorial helps you:
 
 Do either of the following:
 
-*  Create a new project in Visual Studio starting from a project template, using the steps in the sections below.  This will give you the latest code and project structure.
+* Create a new project in Visual Studio starting from a project template, using the steps in the sections below.  This will give you the latest code and project structure.
 
-*  Clone or download the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
-   *  Sample name: **Win32_GettingStarted**
-   *  Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
-   *  Solution file: **WebView2GettingStarted.sln**
+* Clone or download the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.  See [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  A completed version of this tutorial project is available in the WebView2Samples repo directory [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted).
+   * Sample name: **Win32_GettingStarted**
+   * Repo directory: [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted)
+   * Solution file: **WebView2GettingStarted.sln**
 
 The sample in the repo might not be as up-to-date as a project that you create by using the latest Visual Studio project templates.
 
@@ -364,11 +364,11 @@ maintenance link (keep)
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
-*  `NavigationStarting`
-*  `SourceChanged`
-*  `ContentLoading`
-*  `HistoryChanged`
-*  `NavigationCompleted`
+* `NavigationStarting`
+* `SourceChanged`
+* `ContentLoading`
+* `HistoryChanged`
+* `NavigationCompleted`
 
 For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
@@ -376,9 +376,9 @@ For more information, see [Navigation events for WebView2 apps](../concepts/navi
 
 When an error occurs, the following events are raised and may depend on navigation to an error webpage:
 
-*  `SourceChanged`
-*  `ContentLoading`
-*  `HistoryChanged`
+* `SourceChanged`
+* `ContentLoading`
+* `HistoryChanged`
 
 > [!NOTE]
 > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
@@ -431,9 +431,9 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript runs with specific timing.
 
-*  Run the injected JavaScript after the creation of the global object.
+* Run the injected JavaScript after the creation of the global object.
 
-*  Run the injected JavaScript before any other script included in the HTML document is run.
+* Run the injected JavaScript before any other script included in the HTML document is run.
 
 For example, add a script that sends an alert when a user navigates to a non-HTTPS site, as follows:
 
@@ -473,9 +473,9 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
 The host and web content can use `postMessage` to communicate with each other as follows:
 
-*  Web content in a WebView2 control can use `window.chrome.webview.postMessage` to post a message to the host.  The host handles the message using any registered `WebMessageReceived` on the host.
+* Web content in a WebView2 control can use `window.chrome.webview.postMessage` to post a message to the host.  The host handles the message using any registered `WebMessageReceived` on the host.
 
-*  Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.
+* Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.
 
 The communication mechanism passes messages from web content to the host using native capabilities.
 
@@ -521,9 +521,9 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    Next, for WebView2 to send and respond to the web message, after `CoreWebView2` is initialized, the host will inject a script in the web content to:
  
-   *  Send the URL to the host using `postMessage`.
+   * Send the URL to the host using `postMessage`.
 
-   *  Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.
+   * Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.
 
 1. In `Form1.cs`, update `InitializeAsync` to match the following code:
 
