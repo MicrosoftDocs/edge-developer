@@ -19,9 +19,9 @@ By default, the **CSS mirror editing** checkbox is selected, in the **Styles** t
 
 If you are changing CSS in DevTools, either:
 
-   *  Select the **CSS mirror editing** checkbox and open a folder that contains source files that match the webpage that you are inspecting with DevTools.
+   * Select the **CSS mirror editing** checkbox and open a folder that contains source files that match the webpage that you are inspecting with DevTools.
 
-   *  Or, clear the **CSS mirror editing** checkbox, to prevent such error messages.
+   * Or, clear the **CSS mirror editing** checkbox, to prevent such error messages.
 
 See also:
 * [The CSS Mirror Editing checkbox](./css-mirror-editing-styles-tab.md#the-css-mirror-editing-checkbox) in _Update .css files from within the Styles tab (CSS mirror editing)_
@@ -67,17 +67,17 @@ If you enter a different URL or file path in the Address bar of the DevTools bro
 
 Suppose you click the **Launch Instance** button, then paste a localhost URL into the Address bar, such as `http://localhost:8080`, but you don't have the local source files folder open.  Then in the **Styles** tab of the Elements tool, try to change a CSS value.  Error messages might appear, such as:
 
-*  **Error while mirroring css content to document.  Could not mirror css changes to document.  No workspace mapping was found.**
+* **Error while mirroring css content to document.  Could not mirror css changes to document.  No workspace mapping was found.**
 
-*  **Unable to open file in editor.**
+* **Unable to open file in editor.**
 
-*  **Error while opening file in editor.**
+* **Error while opening file in editor.**
 
-*  **Error while fetching.**
+* **Error while fetching.**
 
-*  **Could not attach to main target.**
+* **Could not attach to main target.**
 
-*  **Error while fetching list of available targets.  No available targets to attach.**
+* **Error while fetching list of available targets.  No available targets to attach.**
 
 ![No workspace mapping](./troubleshooting-images/no-workspace-mapping.png)
 

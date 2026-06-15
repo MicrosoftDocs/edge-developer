@@ -107,8 +107,8 @@ After doing a search, click a result line to open the corresponding file.  The *
 A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel might become outdated after a while.
 
 To update the search results, do either of the following:
-*  Click the **Refresh** (![Refresh search button](./search-tool-images/search-tool-refresh.png)) button in the toolbar.
-*  Search again by typing a term in the search input field.
+* Click the **Refresh** (![Refresh search button](./search-tool-images/search-tool-refresh.png)) button in the toolbar.
+* Search again by typing a term in the search input field.
 
 
 <!-- ====================================================================== -->

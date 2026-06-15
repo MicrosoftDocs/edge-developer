@@ -30,13 +30,13 @@ Users who are blind or who have low vision rely on screen readers to interpret a
 
 Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
-*  Moving focus among elements by pressing the **Tab** key or **Shift+Tab** keys.
+* Moving focus among elements by pressing the **Tab** key or **Shift+Tab** keys.
 
-*  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
+* Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Invoking actions by pressing the **Enter** key or **Spacebar**.
+* Invoking actions by pressing the **Enter** key or **Spacebar**.
 
-*  Using shortcut keys to efficiently access other app functionality.
+* Using shortcut keys to efficiently access other app functionality.
 
 
 <!-- ====================================================================== -->
@@ -50,10 +50,10 @@ Many common accessibility issues on the web can be solved through good coding pr
 <!-- ====================================================================== -->
 ## Resources
 
-*  [Designing for Inclusion](https://w3.org/WAI/users/Overview.html) - Designing for Inclusion by the W3C Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
+* [Designing for Inclusion](https://w3.org/WAI/users/Overview.html) - Designing for Inclusion by the W3C Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
 
-*  [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software) - Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
+* [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software) - Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
 
-*  [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html) - This resource by the W3C introduces how people with disabilities, including people with age-related impairments, use the Web.
+* [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html) - This resource by the W3C introduces how people with disabilities, including people with age-related impairments, use the Web.
 
-*  [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft developed the Inclusive Design Toolkit to show how human diversity can create better design constraints and how to connect seemingly niche solutions to broader markets.
+* [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section) - Microsoft developed the Inclusive Design Toolkit to show how human diversity can create better design constraints and how to connect seemingly niche solutions to broader markets.

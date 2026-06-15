@@ -37,19 +37,19 @@ The WebView2 control provides a default context menu, and you can create your ow
 
 For example, you can do any of the following:
 
-*  Add a custom context menu.
+* Add a custom context menu.
 
    Instead of using the default context menu, your host app can draw its own context menu by using the information that's sent from the WebView2 context menu.  Your app handles the `ContextMenuRequested` event.  You can use the data provided in the Event arguments of `ContextMenuRequested` to display a custom context menu with entries of your choice.  For this case, you handle the event and request a deferral.
 
    You can add default menu items and/or custom menu items to a custom context menu.
 
-*  Add default menu items to a custom context menu.
+* Add default menu items to a custom context menu.
 
-*  Add custom menu items to a default context menu.
+* Add custom menu items to a default context menu.
 
-*  Remove default or custom menu items from the default context menu.
+* Remove default or custom menu items from the default context menu.
 
-*  Disable context menus.
+* Disable context menus.
 
 
 **Terminology:**
@@ -393,9 +393,9 @@ void ContextMenu::AddMenuItems(
 
 You can:
 
-*  Add default menu items to a custom context menu, as shown above in "Adding a custom context menu".
+* Add default menu items to a custom context menu, as shown above in "Adding a custom context menu".
 
-*  Add custom menu items to a default context menu, as shown below in "Adding custom menu items to a default context menu".
+* Add custom menu items to a default context menu, as shown below in "Adding custom menu items to a default context menu".
 
 
 <!-- ------------------------------ -->
@@ -659,9 +659,9 @@ This section explains how to detect when the user requests opening a context men
 When a user requests opening a context menu (such as by right-clicking), your app needs to listen for the `ContextMenuRequested` event.
 
 When your app detects this event, your app should do some combination of the following:
-*  Add custom menu items to the default context menu.
-*  Remove custom menu items from the default context menu.
-*  Open a custom context menu.
+* Add custom menu items to the default context menu.
+* Remove custom menu items from the default context menu.
+* Open a custom context menu.
 
 The `ContextMenuRequested` event indicates that the user requested opening a context menu.
 
@@ -671,16 +671,16 @@ The WebView2 control only raises the `ContextMenuRequested` event if the current
 
 The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs) contains the following information: 
 
-*  An ordered list of `ContextMenuItem` objects to populate the custom context menu.  The ordered list includes the following:
-   *  The internal name of the menu item.
-   *  The UI label of the menu item, displayed to the user in the UI.
-   *  The kind of menu item.
-   *  A keyboard shortcut Description, if any, such as **Alt+C**.
-   *  Any other properties of the custom menu item.
+* An ordered list of `ContextMenuItem` objects to populate the custom context menu.  The ordered list includes the following:
+   * The internal name of the menu item.
+   * The UI label of the menu item, displayed to the user in the UI.
+   * The kind of menu item.
+   * A keyboard shortcut Description, if any, such as **Alt+C**.
+   * Any other properties of the custom menu item.
 
-*  The coordinates where the context menu was requested, so your app can detect which UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.
+* The coordinates where the context menu was requested, so your app can detect which UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.
 
-*  A selection object that will include the kind of context selected<!--such as?--> and the appropriate context menu parameter data.<!--what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?-->
+* A selection object that will include the kind of context selected<!--such as?--> and the appropriate context menu parameter data.<!--what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?-->
 
 When the user selects a custom menu item on a context menu, the WebView2 control fires a `CustomItemSelected` event.
 
@@ -720,9 +720,9 @@ The WebView2 control raises this event to indicate that the user selected a cust
 
 If the user selects a custom menu item, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
 
-*  The app adds custom menu items, but defers the context menu UI to the WebView2 platform.
+* The app adds custom menu items, but defers the context menu UI to the WebView2 platform.
 
-*  The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
+* The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
 
 
 <!-- ====================================================================== -->

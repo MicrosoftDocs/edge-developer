@@ -44,13 +44,13 @@ Use the `PostWebMessageAsJson` method to send messages to the WebView2 control. 
 
 Restrict web content functionality, if it's not needed.  Update the WebView2 properties in `CoreWebView2Settings` to restrict the functionality of the web content, as follows:
 
-*  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
+* Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
 
-*  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
+* Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
 
-*  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
+* Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
 
-*  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
+* Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialogs.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)

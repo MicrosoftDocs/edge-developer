@@ -11,9 +11,9 @@ ms.date: 10/06/2022
 
 In the **Elements** tool:
 
-*  The **Styles** tab indicates which source file is used to apply styles to the selected node in the DOM tree.
+* The **Styles** tab indicates which source file is used to apply styles to the selected node in the DOM tree.
 
-*  The **Event Listeners** tab indicates which source file is used to define event handlers for the selected node in the DOM tree.
+* The **Event Listeners** tab indicates which source file is used to define event handlers for the selected node in the DOM tree.
 
 The source file name and line number are shown as a clickable link.  Clicking a file name link opens that file in the Visual Studio Code editor:
 

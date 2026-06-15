@@ -29,9 +29,9 @@ WebView2 is available for the following frameworks or platforms:
 
 * [Microsoft.Web.WebView2.Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index) - Common to all WinRT frameworks.
 * [COM Interop/C++](/microsoft-edge/webview2/reference/winrt/interop/index) - Common to all WinRT frameworks.
-*  WinUI 2 (UWP)
+* WinUI 2 (UWP)
    * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/winui/api/microsoft.ui.xaml.controls.webview2)
-*  WinUI 3 (Windows App SDK)
+* WinUI 3 (Windows App SDK)
    * [Microsoft.UI.Xaml.Controls.WebView2 Class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.webview2)
 
 

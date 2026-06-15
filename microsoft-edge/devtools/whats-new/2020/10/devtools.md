@@ -31,10 +31,10 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.  Starting in Microsoft Edge version 87, several strings and terms are locked and don't change, even when the rest of the DevTools are displayed in other languages.  The list of affected strings and terms include the following:
 
-*  The strings in the **Lighthouse** tool.
-*  The term `service worker`.
-*  Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.
-*  The [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4) Console Utilities API.
+* The strings in the **Lighthouse** tool.
+* The term `service worker`.
+* Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.
+* The [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4) Console Utilities API.
 
 [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object-0-4) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
 
@@ -72,8 +72,8 @@ The **Network Console** tool now has improved compatibility with the [Postman v2
 
 The **Network Console** tool now supports the following actions:
 
-*  Save and export Collections and Environments.
-*  Edit and export sets of environment variables within the **Network Console** tool.
+* Save and export Collections and Environments.
+* Edit and export sets of environment variables within the **Network Console** tool.
 
 Entering a name for the new environment:
 
@@ -96,13 +96,13 @@ For history, in the Chromium open-source project, see Issue [#1093687](https://c
 
 The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.
 
-*  Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.
+* Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.
 
-*  To enable persistent grid overlays, click the grid icon next to a grid container element in the **Elements** tool, or click the grid in the **Layout** tool.
+* To enable persistent grid overlays, click the grid icon next to a grid container element in the **Elements** tool, or click the grid in the **Layout** tool.
 
-*  You can enable persistent overlays for multiple grids.
+* You can enable persistent overlays for multiple grids.
 
-*  The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.
+* The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.
 
 The features are turned on by default.
 
@@ -138,9 +138,9 @@ For history, in the Chromium open-source project, see Issue [#174309](https://cr
 
 The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension.  Use the Microsoft Edge DevTools for the following activities without leaving Microsoft Visual Studio Code.
 
-*  Debug the DOM
-*  Edit CSS
-*  Inspect network traffic
+* Debug the DOM
+* Edit CSS
+* Inspect network traffic
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  To start contributing and filing issues with your feedback about this extension, see the [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/Microsoft/vscode-edge-devtools) repo on GitHub.
 
@@ -166,9 +166,9 @@ The following sections announce additional features available in Microsoft Edge 
 
 In earlier versions of Microsoft Edge, there was no native WebAuthn debugging support.  You needed physical authenticators to test your web application with the [Web Authentication API](https://w3c.github.io/webauthn).  With the new **WebAuthn** tool, you can do the following without the use of any physical authenticators:
 
-*  Emulate authenticators.
-*  Customize attributes of authenticators.
-*  Inspect states of authenticators.
+* Emulate authenticators.
+* Customize attributes of authenticators.
+* Inspect states of authenticators.
 
 You can emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn) with the new **WebAuthn** tool.  To open the **WebAuthn** tool, click **the Customize and control DevTools** (`...`) icon > **More tools** > **WebAuthn**.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1034663](https://crbug.com/1034663).
 

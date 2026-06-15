@@ -168,9 +168,9 @@ Hover on a function to display the name and timing data:
 | **Self size** | The size of the current invocation of the function, including only the statements in the function.  |
 | **Total size** | The size of the current invocation of this function and any functions that it called.  |
 | **URL** | The location of the function definition in the form of `base.js:261` where `base.js` is the name of the file where the function is defined and `261` is the line number of the definition.  |
-<!--*  **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->
-<!--*  **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
-<!--*  **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
+<!--* **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->
+<!--* **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
+<!--* **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
 ![View functions details in the profiles chart](./js-runtime-images/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.png)
 

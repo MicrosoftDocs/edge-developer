@@ -26,8 +26,8 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 <!-- Subtitle: When taking a heap snapshot, you can now filter to new node types representing hidden classes and descriptor arrays in V8, the JavaScript engine of Microsoft Edge. -->
 
 In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there are two new node types:
-*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
-*  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays) in _Fast properties in V8_.
+* **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
+* **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays) in _Fast properties in V8_.
 
 ![BigInt and Object Shape memory node types](devtools-103-images/memory-node-types.png)
 
@@ -63,12 +63,12 @@ See also:
 <!-- Subtitle: Various bugs impacting DevTools controls and keyboard shortcuts were fixed in the new Focus Mode UI. -->
 
 In the new **Focus Mode** DevTools UI, various bugs affecting controls and keyboard shortcuts for DevTools have been resolved:
-*  Improved behavior of collapsible panes such as **Styles** in the **Elements** tool.
-*  Fixed some instances in which the name of an open tool wasn't visible.
-*  Improved reliability of **Quick View** controls.
-*  Improved behavior of opening DevTools by using keyboard shortcuts.
-*  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the keyboard shortcut to open **Search** in the **Quick View** panel, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
+* Improved behavior of collapsible panes such as **Styles** in the **Elements** tool.
+* Fixed some instances in which the name of an open tool wasn't visible.
+* Improved reliability of **Quick View** controls.
+* Improved behavior of opening DevTools by using keyboard shortcuts.
+* Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
+* Restored the keyboard shortcut to open **Search** in the **Quick View** panel, which is **Ctrl+Shift+F** (Windows, Linux) or **Command+Option+F** (macOS):
 
 ![The Search keyboard shortcut opens the Search tool in the Quick View panel](devtools-103-images/focus-mode-search-shortcut.png)
 
@@ -110,11 +110,11 @@ See also:
 
 In Microsoft Edge 103, the **Welcome** tool has a new, modern design with improved and expanded content.  It's easier than ever to find documentation, videos, and information about new features and bug fixes.
 
-*  In the **Learn** section, use the links to quickly jump to documentation for common tasks in DevTools.
+* In the **Learn** section, use the links to quickly jump to documentation for common tasks in DevTools.
 
-*  In the **What's New** section, find out about the latest changes, new features, and bug fixes.
+* In the **What's New** section, find out about the latest changes, new features, and bug fixes.
 
-*  In both sections, learn about existing and new web development features through our new video series, [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md).
+* In both sections, learn about existing and new web development features through our new video series, [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md).
 
 ![The redesigned Welcome tool](devtools-103-images/welcome-tool.png)
 

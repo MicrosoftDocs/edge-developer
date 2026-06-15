@@ -14,9 +14,9 @@ ms.date: 04/27/2022
 
 This sample, **WebView2WpfBrowser**, is a WPF .NET app that demonstrates how to embed the WebView2 control and use WebView2 APIs to implement a web browser.
 
-*  Sample name: **WebView2WpfBrowser**
-*  Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
-*  Solution file: `WebView2WpfBrowser.sln`
+* Sample name: **WebView2WpfBrowser**
+* Repo directory: [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser)
+* Solution file: `WebView2WpfBrowser.sln`
 
 This sample is built as a WPF Visual Studio 2019 project.  It uses C# and HTML/CSS/JavaScript in the WebView2 environment.
 
@@ -25,10 +25,10 @@ This sample showcases a selection of WebView2's event handlers and API methods t
 ![WebView2WpfBrowser sample app](./webview2wpfbrowser-images/webview2wpfbrowser-sample-app.png)
 
 The **WebView2WpfBrowser** sample app has the following menus, containing many useful menuitems:
-*  **File**
-*  **View**
-*  **Settings**
-*  **Scenario**
+* **File**
+* **View**
+* **Settings**
+* **Scenario**
 
 If this is your first time using WebView2, we recommend first following the Getting Started tutorial, which goes over how to create a WebView2 and walks through some basic WebView2 functionality.  See [Get started with WebView2 in WPF apps](../get-started/wpf.md).
 
@@ -55,11 +55,11 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
 
 
 <!-- ====================================================================== -->
@@ -106,10 +106,10 @@ At the top of Visual Studio, set the build target, as follows:
 ## Step 7 - Explore the menus and inspect the code
 
 1. Explore the **WebView2WpfBrowser** sample app's menus, containing many useful menuitems:
-   *  **File**
-   *  **View**
-   *  **Settings**
-   *  **Scenario**
+   * **File**
+   * **View**
+   * **Settings**
+   * **Scenario**
    
 1. In the Visual Studio code editor, inspect the code:
 

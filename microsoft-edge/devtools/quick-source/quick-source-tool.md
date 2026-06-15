@@ -187,7 +187,7 @@ Continue with the next section.
 
 Suppose you want to continue viewing the **Elements** tool, but you want to simultaneously view and edit the source files that were opened via the **Sources** tool.
 
-1. Continuing from above, in the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements**  (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
+1. Continuing from above, in the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements** (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
 
 1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
 

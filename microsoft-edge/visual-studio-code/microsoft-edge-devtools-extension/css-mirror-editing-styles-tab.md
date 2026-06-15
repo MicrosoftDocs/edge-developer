@@ -11,9 +11,9 @@ ms.date: 10/06/2022
 
 CSS mirror editing provides two-way interaction so that you can change the CSS either way:
 
-*  In the code editor, edit the `.css` file, your changes are mirrored in the **Elements** tool in the **Edge DevTools** tab.
+* In the code editor, edit the `.css` file, your changes are mirrored in the **Elements** tool in the **Edge DevTools** tab.
 
-*  In the **Elements** tool in the **Edge DevTools** tab, your changes are mirrored in the `.css` file in the code editor.
+* In the **Elements** tool in the **Edge DevTools** tab, your changes are mirrored in the `.css` file in the code editor.
 
 CSS mirror editing is enabled by default in the extension.  As a result, in the DevTools extension, in the **Styles** tab in the **Elements** tool, when you change CSS selectors, rules, or values, the local `.css` file is automatically edited as you change values.
 

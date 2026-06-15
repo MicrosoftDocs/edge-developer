@@ -41,19 +41,19 @@ With WebView2, you can embed web code in different parts of your native app, or 
 
 Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power:
 
-*  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
+* Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 
-*  To access all the powerful capabilities of a native platform, use a native app.
+* To access all the powerful capabilities of a native platform, use a native app.
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
 ![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-hybrid-native.png)
 
-*  Wide **reach** includes websites and Progressive Web Apps.
+* Wide **reach** includes websites and Progressive Web Apps.
 
 *  In the middle are hybrid apps, such as WebViews and [Electron](https://en.wikipedia.org/wiki/Electron_(software_framework)).
 
-*  Maximum **power** is native apps.
+* Maximum **power** is native apps.
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 
@@ -61,23 +61,23 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 <!-- ====================================================================== -->
 ## WebView2 benefits
 
-*  **Web ecosystem and skill set**.  Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
+* **Web ecosystem and skill set**.  Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
 
-*  **Rapid innovation**.  Web development allows for faster deployment and iteration.
+* **Rapid innovation**.  Web development allows for faster deployment and iteration.
 
-*  **Windows 10 and 11 support**.  Support for a consistent user experience across Windows 10 and Windows 11.
+* **Windows 10 and 11 support**.  Support for a consistent user experience across Windows 10 and Windows 11.
 
-*  **Native capabilities**.  Access the full set of Native APIs.
+* **Native capabilities**.  Access the full set of Native APIs.
 
-*  **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
+* **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
 
-*  **Microsoft support**.  Microsoft provides support and adds new feature requests on supported platforms.
+* **Microsoft support**.  Microsoft provides support and adds new feature requests on supported platforms.
 
-*  **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
+* **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
 
-*  **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
+* **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
 
-*  **Incremental adoption**.  Add web components piece-by-piece to your app.
+* **Incremental adoption**.  Add web components piece-by-piece to your app.
 
 
 <!-- ====================================================================== -->
@@ -146,16 +146,16 @@ For details, see [Windows Server](/deployedge/microsoft-edge-supported-operating
 
 The following programming environments are supported for WebView2:
 
-*  Win32 C/C++
-*  .NET Framework 4.6.2 or later
-*  .NET Core 3.1 or later
-*  .NET 5 or later
-*  [WinUI 2.0](/windows/apps/winui/winui2/)
-*  [WinUI 3.0](/windows/apps/winui/winui3/)
+* Win32 C/C++
+* .NET Framework 4.6.2 or later
+* .NET Core 3.1 or later
+* .NET 5 or later
+* [WinUI 2.0](/windows/apps/winui/winui2/)
+* [WinUI 3.0](/windows/apps/winui/winui3/)
 
 In addition to Windows devices, WebView2 is also supported on the following devices:
-*  Xbox
-*  HoloLens 2
+* Xbox
+* HoloLens 2
 
 
 <!-- ====================================================================== -->

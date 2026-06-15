@@ -36,9 +36,9 @@ In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` head
 
 When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge: 
 
-*   Incorporate bug and security fixes.
-*   Add new features or performance enhancements.
-*   Improve the user interface.
+* Incorporate bug and security fixes.
+* Add new features or performance enhancements.
+* Improve the user interface.
 
 Your extensions are hosted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com), and you can update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.
 
@@ -99,8 +99,8 @@ Microsoft Edge automatically checks for updates of extensions every few hours.  
 
 The basic mechanism to update using parameters is simple.  To automatically update your extension:
 
-1.  Upload your static XML file on your web server, such as Apache.
-1.  Update the XML file as you release new versions of your extensions.
+1. Upload your static XML file on your web server, such as Apache.
+1. Update the XML file as you release new versions of your extensions.
 
 Take advantage of the fact that some parameters added to the update manifest request indicate the extension `ID` and `version`.  You can use the same `update URL` for all your extensions, instead of a static XML file.  To use the same `update URL` for all your extensions, point to a URL that runs dynamic server-side code that tests the parameters.
 
@@ -118,15 +118,14 @@ id={id}&v={version}
 
 For example, the following two extensions both point to the same update URL `http://contoso.com/extension_updates.php`.
 
-*   Extension 1
-    *   ID: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
-    *   update URL: `http://contoso.com/extension_updates.php`
-    *   Version: `1.1`
-*   Extension 2
-    *   ID: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`
-    *   update URL: `http://contoso.com/extension_updates.php`
-    *   Version: `0.4`
-
+* Extension 1
+   * ID: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`
+   * update URL: `http://contoso.com/extension_updates.php`
+   * Version: `1.1`
+* Extension 2
+   * ID: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`
+   * update URL: `http://contoso.com/extension_updates.php`
+   * Version: `0.4`
 
 The following examples are requests to update each extension.
 

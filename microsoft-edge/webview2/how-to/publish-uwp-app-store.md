@@ -152,11 +152,11 @@ If your app failed the **Supported API** test, update the Windows SDK to version
 <!-- ====================================================================== -->
 ## Step 6: Upload the app package
 
-*  After all of the Windows App Certification Kit (WACK) tests have passed, upload your app package to the Windows Store, by using either of the following approaches:
+* After all of the Windows App Certification Kit (WACK) tests have passed, upload your app package to the Windows Store, by using either of the following approaches:
 
-   *  Approach 1: In Windows App Certification Kit (WACK), select **Project** > **Publish** > **Upload App Packages**.
+   * Approach 1: In Windows App Certification Kit (WACK), select **Project** > **Publish** > **Upload App Packages**.
 
-   *  Approach 2: Go to Partner Center and upload your app package to the Windows Store through Partner Center. 
+   * Approach 2: Go to Partner Center and upload your app package to the Windows Store through Partner Center. 
 
 
 <!-- ====================================================================== -->

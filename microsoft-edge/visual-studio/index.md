@@ -13,10 +13,10 @@ Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrate
 
 In addition to the standard editor and debugger that most IDEs provide, Visual Studio includes features to ease your development process, including:
 
-*   Compilers.
-*   Code completion tools.
-*   Graphical designers.
-*   And many more features.
+* Compilers.
+* Code completion tools.
+* Graphical designers.
+* And many more features.
 
 If you aren't already using Visual Studio, go to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
 
@@ -28,10 +28,10 @@ Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge fo
 
 Follow the steps in this section to use Visual Studio to do the following:
 
-*  Build your ASP.NET and ASP.NET Core app.
-*  Start a web server.
-*  Launch Microsoft Edge.
-*  Connect the Visual Studio debugger with a single button.
+* Build your ASP.NET and ASP.NET Core app.
+* Start a web server.
+* Launch Microsoft Edge.
+* Connect the Visual Studio debugger with a single button.
 
 The simplified workflow allows you to debug JavaScript that runs in Microsoft Edge directly from your IDE.
 

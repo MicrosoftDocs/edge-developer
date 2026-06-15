@@ -19,9 +19,9 @@ when adding an h2 heading, add row in table
 when adding an h4 heading, add nav link below the h2
 -->
 
+
 **Detailed contents:**
 <!-- https://github.com/captainbrosset/WebToc -->
-
 * [Overview of top-level feature areas](#overview-of-top-level-feature-areas)
 * [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core)
 * [Web/native interop](#webnative-interop)
@@ -64,7 +64,8 @@ when adding an h4 heading, add nav link below the h2
       * [Custom crash reporting](#custom-crash-reporting)
    * [Browser extensions](#browser-extensions)
 * [Process management](#process-management)
-   * [Frame process info](#frame-process-info)<!-- * [Service workers](#service-workers) -->
+   * [Frame process info](#frame-process-info)
+* [Enable background processing and offline support (WebView2 Worker APIs)](#enable-background-processing-and-offline-support-webview2-worker-apis)
 * [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content)
    * [Manage content loaded into WebView2](#manage-content-loaded-into-webview2)
    * [Navigation history](#navigation-history)
@@ -139,11 +140,11 @@ This page only lists APIs that are in Release SDKs; it doesn't list Experimental
 
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
 
-*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+* The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer processes.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
 
-*  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+* The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
 
-*  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+* The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 <!-- / end of keep sync'd -->
 
@@ -177,9 +178,9 @@ See also:
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can communicate between native code and web code using simple messages, JavaScript code, and native objects.  The following are the main APIs for communicating between web and native code.
 
 Common use cases for web/native interop:
-*  Update the native host window title after navigating to a different website.
-*  Send a native camera object and use its methods from a web app.
-*  Run a dedicated JavaScript file on the web side of an application.
+* Update the native host window title after navigating to a different website.
+* Send a native camera object and use its methods from a web app.
+* Run a dedicated JavaScript file on the web side of an application.
 
 See also:
 * [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
@@ -845,10 +846,10 @@ We're actively investigating these issues, and we encourage you to report any pr
 #### Downloads
 
 Your app can manage the download experience in WebView2.  Your app can:
-*  Allow or block downloads based on different metadata.
-*  Change the download location.
-*  Configure a custom download UI.
-*  Customize the default UI.
+* Allow or block downloads based on different metadata.
+* Change the download location.
+* Configure a custom download UI.
+* Customize the default UI.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -1563,8 +1564,8 @@ Provides hit-testing results on the regions that a WebView2 contains.  Useful fo
 #### Swipe gesture navigation
 
 By hosting the WebView2 control, your app can enable or disable swiping gesture navigation on touch input-enabled devices. This gesture allows end users to:
-*  Swipe left/right (swipe horizontally) to navigate to the previous or next page in the navigation history.
-*  Pull to refresh (swipe vertically) the current page.
+* Swipe left/right (swipe horizontally) to navigate to the previous or next page in the navigation history.
+* Pull to refresh (swipe vertically) the current page.
 
 This feature is currently disabled by default in the browser.  To enable this feature in WebView2, set the `AdditionalBrowserArguments` property, specifying the `--pull-to-refresh` switch.
 
@@ -1924,8 +1925,8 @@ See also:
 ###### Custom crash reporting
 
 If any WebView2 process crashes, one or more minidump files are created and sent to Microsoft for diagnosis.  Use this API to customize crash reporting when running diagnostics and doing analysis.
-*  To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
-*  To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
+* To prevent crash dumps from being sent to Microsoft, set the `IsCustomCrashReportingEnabled` property to `false`.
+* To locate crash dumps and do customization with them, use the `CrashDumpFolderPath` property.
 
 See also:
 * [Custom crash reporting](./data-privacy.md#custom-crash-reporting) in _Data and privacy in WebView2_.
@@ -2167,60 +2168,321 @@ The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snap
 ---
 
 
-<!-- todo: un-comment & update when reaches Stable in Release
-<!-- ====================================================================== --
-## Service workers
+<!-- ====================================================================== -->
+## Enable background processing and offline support (WebView2 Worker APIs)
+
+The WebView2 Worker APIs allow host applications to interact with Web Workers to offload tasks from the main thread, improve responsiveness, and support background operations.  These Web Workers include Dedicated Workers, Shared Workers, and Service Workers.
+
+These APIs provide:
+* **Lifecycle Events:** Monitor creation and destruction of workers.
+* **Messaging Interfaces:** Communicate with workers using `PostMessage` and `WebMessageReceived`; specifically:
+   * `CoreWebView2ServiceWorker.PostWebMessageAsJson`
+   * `CoreWebView2ServiceWorker.PostWebMessageAsString`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsJson`
+   * `CoreWebView2DedicatedWorker.PostWebMessageAsString`
+   * `CoreWebView2ServiceWorker.WebMessageReceived`
+   * `CoreWebView2DedicatedWorker.WebMessageReceived`
+   * `chrome.webview.postMessage`
+   * Not: `chrome.webview.postMessageWithAdditionalObjects`
+* **Worker Management:** Query and retrieve worker registrations and instances.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+<!-- 1 -->
+* `CoreWebView2` Class:
+   * [CoreWebView2.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.dedicatedworkercreated)
+
+<!-- 2 -->
+* [CoreWebView2DedicatedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker)
+   * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.dedicatedworkercreated)
+   * [CoreWebView2DedicatedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.destroying)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.postwebmessageasjson)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.postwebmessageasstring)
+   * [CoreWebView2DedicatedWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.scripturi)
+   * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworker.webmessagereceived)
+
+<!-- 3 -->
+* [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.originalsourceframeinfo)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2dedicatedworkercreatedeventargs.worker)
+
+<!-- 4 -->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.DedicatedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.dedicatedworkercreated)
+
+<!-- 5 -->
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.arewebviewscriptapisenabledforserviceworkers)
+   * [CoreWebView2Profile.ServiceWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.serviceworkermanager)
+   * [CoreWebView2Profile.SharedWorkerManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.sharedworkermanager)
+
+<!-- 6 -->
 * [CoreWebView2ServiceWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker)
+   * [CoreWebView2ServiceWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.destroying)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.postwebmessageasjson)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.postwebmessageasstring)
+   * [CoreWebView2ServiceWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.scripturi)
+   * [CoreWebView2ServiceWorker.WebMessageReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworker.webmessagereceived)
 
+<!-- 7 -->
 * [CoreWebView2ServiceWorkerActivatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs)
+   * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkeractivatedeventargs.activeserviceworker)
 
+<!-- 8 -->
 * [CoreWebView2ServiceWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered)
 
+<!-- 9 -->
 * [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs)
+   * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregisteredeventargs.serviceworkerregistration)
 
+<!-- 10 -->
 * [CoreWebView2ServiceWorkerRegistration Class](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration)
+   * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.activeserviceworker)
+   * [CoreWebView2ServiceWorkerRegistration.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.origin)
+   * [CoreWebView2ServiceWorkerRegistration.ScopeUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.scopeuri)
+   * [CoreWebView2ServiceWorkerRegistration.ServiceWorkerActivated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.serviceworkeractivated)
+   * [CoreWebView2ServiceWorkerRegistration.TopLevelOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.toplevelorigin)
+   * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkerregistration.unregistering)
+
+<!-- 11 -->
+* [CoreWebView2SharedWorker Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker)
+   * [CoreWebView2SharedWorker.Destroying Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.destroying)
+   * [CoreWebView2SharedWorker.Origin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.origin)
+   * [CoreWebView2SharedWorker.ScriptUri Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.scripturi)
+   * [CoreWebView2SharedWorker.TopLevelOrigin Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworker.toplevelorigin)
+
+<!-- 12 -->
+* [CoreWebView2SharedWorkerCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs)
+   * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkercreatedeventargs.worker)
+
+<!-- 13 -->
+* [CoreWebView2SharedWorkerManager Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager)
+   * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.getsharedworkersasync)
+   * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedworkermanager.sharedworkercreated)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- 1 -->
+* `CoreWebView2` Class:
+   * [CoreWebView2.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#dedicatedworkercreated)
+
+<!-- 2 -->
+* [CoreWebView2DedicatedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker)
+   * [CoreWebView2DedicatedWorker.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#dedicatedworkercreated)
+   * [CoreWebView2DedicatedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#destroying)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#postwebmessageasjson)
+   * [CoreWebView2DedicatedWorker.PostWebMessageAsString Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#postwebmessageasstring)
+   * [CoreWebView2DedicatedWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#scripturi)
+   * [CoreWebView2DedicatedWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworker#webmessagereceived)
+
+<!-- 3 -->
+* [CoreWebView2DedicatedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs#worker)
+   * [CoreWebView2DedicatedWorkerCreatedEventArgs.OriginalSourceFrameInfo Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2dedicatedworkercreatedeventargs#originalsourceframeinfo)
+
+<!-- 4 -->
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.DedicatedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame#dedicatedworkercreated)
+
+<!-- 5 -->
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.AreWebViewScriptApisEnabledForServiceWorkers Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#arewebviewscriptapisenabledforserviceworkers)
+   * [CoreWebView2Profile.ServiceWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#serviceworkermanager)
+   * [CoreWebView2Profile.SharedWorkerManager Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#sharedworkermanager)
+
+<!-- 6 -->
 * [CoreWebView2ServiceWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker)
+   * [CoreWebView2ServiceWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker#destroying)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker#postwebmessageasjson)
+   * [CoreWebView2ServiceWorker.PostWebMessageAsString Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker#postwebmessageasstring)
+   * [CoreWebView2ServiceWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker#scripturi)
+   * [CoreWebView2ServiceWorker.WebMessageReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworker#webmessagereceived)
 
+<!-- 7 -->
 * [CoreWebView2ServiceWorkerActivatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs)
+   * [CoreWebView2ServiceWorkerActivatedEventArgs.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkeractivatedeventargs#activeserviceworker)
 
+<!-- 8 -->
 * [CoreWebView2ServiceWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.GetServiceWorkerRegistrationsAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#getserviceworkerregistrationsasync)
+   * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager#serviceworkerregistered)
 
+<!-- 9 -->
 * [CoreWebView2ServiceWorkerRegisteredEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs)
+   * [CoreWebView2ServiceWorkerRegisteredEventArgs.ServiceWorkerRegistration Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregisteredeventargs#serviceworkerregistration)
 
+<!-- 10 -->
 * [CoreWebView2ServiceWorkerRegistration Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration)
+   * [CoreWebView2ServiceWorkerRegistration.ActiveServiceWorker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#activeserviceworker)
+   * [CoreWebView2ServiceWorkerRegistration.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#origin)
+   * [CoreWebView2ServiceWorkerRegistration.ScopeUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#scopeuri)
+   * [CoreWebView2ServiceWorkerRegistration.ServiceWorkerActivated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#serviceworkeractivated)
+   * [CoreWebView2ServiceWorkerRegistration.TopLevelOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#toplevelorigin)
+   * [CoreWebView2ServiceWorkerRegistration.Unregistering Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkerregistration#unregistering)
+
+<!-- 11 -->
+* [CoreWebView2SharedWorker Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker)
+   * [CoreWebView2SharedWorker.Destroying Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker#destroying)
+   * [CoreWebView2SharedWorker.Origin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker#origin)
+   * [CoreWebView2SharedWorker.ScriptUri Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker#scripturi)
+   * [CoreWebView2SharedWorker.TopLevelOrigin Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworker#toplevelorigin)
+
+<!-- 12 -->
+* [CoreWebView2SharedWorkerCreatedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs)
+   * [CoreWebView2SharedWorkerCreatedEventArgs.Worker Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkercreatedeventargs#worker)
+
+<!-- 13 -->
+* [CoreWebView2SharedWorkerManager Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager)
+   * [CoreWebView2SharedWorkerManager.GetSharedWorkersAsync Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager#getsharedworkersasync)
+   * [CoreWebView2SharedWorkerManager.SharedWorkerCreated Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedworkermanager#sharedworkercreated)
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworker)
+<!-- 1 -->
+* [ICoreWebView2_29](/microsoft-edge/webview2/reference/win32/icorewebview2_29)
+  * [ICoreWebView2_29::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_29#add_dedicatedworkercreated)
+  * [ICoreWebView2_29::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_29#remove_dedicatedworkercreated)
 
-* [ICoreWebView2ExperimentalServiceWorkerActivatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventargs)
+<!-- 2 -->
+* [ICoreWebView2DedicatedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker)
+  * [ICoreWebView2DedicatedWorker::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#add_dedicatedworkercreated)
+  * [ICoreWebView2DedicatedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#add_destroying)
+  * [ICoreWebView2DedicatedWorker::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#add_webmessagereceived)
+  * [ICoreWebView2DedicatedWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#get_scripturi)
+  * [ICoreWebView2DedicatedWorker::PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#postwebmessageasjson)
+  * [ICoreWebView2DedicatedWorker::PostWebMessageAsString](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#postwebmessageasstring)
+  * [ICoreWebView2DedicatedWorker::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#remove_dedicatedworkercreated)
+  * [ICoreWebView2DedicatedWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#remove_destroying)
+  * [ICoreWebView2DedicatedWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworker#remove_webmessagereceived)
 
-   * [ICoreWebView2ExperimentalServiceWorkerActivatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkeractivatedeventhandler)
+<!-- 3 -->
+* [ICoreWebView2DedicatedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs)
+  * [ICoreWebView2DedicatedWorkerCreatedEventArgs::get_OriginalSourceFrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs#get_originalsourceframeinfo)
+  * [ICoreWebView2DedicatedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventargs#get_worker)
 
-   * [ICoreWebView2ExperimentalServiceWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerdestroyingeventhandler)
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkercreatedeventhandler)
 
-* [ICoreWebView2ExperimentalServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager)
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerdedicatedworkercreatedeventhandler)
 
-* [interface ICoreWebView2ExperimentalServiceWorkerRegisteredEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventargs)
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerdestroyingeventhandler)
 
-* [ICoreWebView2ExperimentalServiceWorkerRegisteredEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregisteredeventhandler)
+<!-- win32 only -->
+* [ICoreWebView2DedicatedWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dedicatedworkerwebmessagereceivedeventhandler)
 
-* [ICoreWebView2ExperimentalServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistration)
+<!-- 4 -->
+* [ICoreWebView2Frame8](/microsoft-edge/webview2/reference/win32/icorewebview2frame8)
+  * [ICoreWebView2Frame8::add_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8#add_dedicatedworkercreated)
+  * [ICoreWebView2Frame8::remove_DedicatedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2frame8#remove_dedicatedworkercreated)
 
-   * [ICoreWebView2ExperimentalServiceWorkerRegistrationCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationcollectionview)
+<!-- win32 only -->
+* [ICoreWebView2FrameDedicatedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2framededicatedworkercreatedeventhandler)
 
-   * [ICoreWebView2ExperimentalServiceWorkerRegistrationUnregisteringEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerregistrationunregisteringeventhandler)
+<!-- win32 only -->
+* [ICoreWebView2GetServiceWorkerRegistrationsCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getserviceworkerregistrationscompletedhandler)
 
-* [ICoreWebView2ExperimentalServiceWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkerwebmessagereceivedeventhandler)
+<!-- win32 only -->
+* [ICoreWebView2GetSharedWorkersCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2getsharedworkerscompletedhandler)
+
+<!-- 5 -->
+* [ICoreWebView2Profile9](/microsoft-edge/webview2/reference/win32/icorewebview2profile9)
+  * [ICoreWebView2Profile9::get_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9#get_arewebviewscriptapisenabledforserviceworkers)
+  * [ICoreWebView2Profile9::get_ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9#get_serviceworkermanager)
+  * [ICoreWebView2Profile9::get_SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2profile9#get_sharedworkermanager)
+  * [ICoreWebView2Profile9::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2profile9#put_arewebviewscriptapisenabledforserviceworkers)
+
+<!-- 6 -->
+* [ICoreWebView2ServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker)
+  * [ICoreWebView2ServiceWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#add_destroying)
+  * [ICoreWebView2ServiceWorker::add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#add_webmessagereceived)
+  * [ICoreWebView2ServiceWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#get_scripturi)
+  * [ICoreWebView2ServiceWorker::PostWebMessageAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#postwebmessageasjson)
+  * [ICoreWebView2ServiceWorker::PostWebMessageAsString](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#postwebmessageasstring)
+  * [ICoreWebView2ServiceWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#remove_destroying)
+  * [ICoreWebView2ServiceWorker::remove_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworker#remove_webmessagereceived)
+
+<!-- 7 -->
+* [ICoreWebView2ServiceWorkerActivatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventargs)
+  * [ICoreWebView2ServiceWorkerActivatedEventArgs::get_ActiveServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventargs#get_activeserviceworker)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerActivatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkeractivatedeventhandler)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerdestroyingeventhandler)
+
+<!-- 8 -->
+* [ICoreWebView2ServiceWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager)
+  * [ICoreWebView2ServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager#add_serviceworkerregistered)
+  * [ICoreWebView2ServiceWorkerManager::GetServiceWorkerRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager#getserviceworkerregistrations)
+  * [ICoreWebView2ServiceWorkerManager::GetServiceWorkerRegistrationsForScope](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager#getserviceworkerregistrationsforscope)
+  * [ICoreWebView2ServiceWorkerManager::remove_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkermanager#remove_serviceworkerregistered)
+
+<!-- 9 -->
+* [ICoreWebView2ServiceWorkerRegisteredEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventargs)
+  * [ICoreWebView2ServiceWorkerRegisteredEventArgs::get_ServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventargs#get_serviceworkerregistration)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegisteredEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregisteredeventhandler)
+
+<!-- 10 -->
+* [ICoreWebView2ServiceWorkerRegistration](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration)
+  * [ICoreWebView2ServiceWorkerRegistration::add_ServiceWorkerActivated](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#add_serviceworkeractivated)
+  * [ICoreWebView2ServiceWorkerRegistration::add_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#add_unregistering)
+  * [ICoreWebView2ServiceWorkerRegistration::get_ActiveServiceWorker](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#get_activeserviceworker)
+  * [ICoreWebView2ServiceWorkerRegistration::get_Origin](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#get_origin)
+  * [ICoreWebView2ServiceWorkerRegistration::get_ScopeUri](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#get_scopeuri)
+  * [ICoreWebView2ServiceWorkerRegistration::get_TopLevelOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#get_toplevelorigin)
+  * [ICoreWebView2ServiceWorkerRegistration::remove_ServiceWorkerActivated](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#remove_serviceworkeractivated)
+  * [ICoreWebView2ServiceWorkerRegistration::remove_Unregistering](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistration#remove_unregistering)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegistrationCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview)
+  * [ICoreWebView2ServiceWorkerRegistrationCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview#get_count)
+  * [ICoreWebView2ServiceWorkerRegistrationCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationcollectionview#getvalueatindex)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerRegistrationUnregisteringEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerregistrationunregisteringeventhandler)
+
+<!-- win32 only -->
+* [ICoreWebView2ServiceWorkerWebMessageReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2serviceworkerwebmessagereceivedeventhandler)
+
+<!-- 11 -->
+* [ICoreWebView2SharedWorker](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker)
+  * [ICoreWebView2SharedWorker::add_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker#add_destroying)
+  * [ICoreWebView2SharedWorker::get_Origin](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker#get_origin)
+  * [ICoreWebView2SharedWorker::get_ScriptUri](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker#get_scripturi)
+  * [ICoreWebView2SharedWorker::get_TopLevelOrigin](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker#get_toplevelorigin)
+  * [ICoreWebView2SharedWorker::remove_Destroying](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworker#remove_destroying)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview)
+  * [ICoreWebView2SharedWorkerCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview#get_count)
+  * [ICoreWebView2SharedWorkerCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercollectionview#getvalueatindex)
+
+<!-- 12 -->
+* [ICoreWebView2SharedWorkerCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventargs)
+  * [ICoreWebView2SharedWorkerCreatedEventArgs::get_Worker](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventargs#get_worker)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerCreatedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkercreatedeventhandler)
+
+<!-- win32 only -->
+* [ICoreWebView2SharedWorkerDestroyingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkerdestroyingeventhandler)
+
+<!-- 13 -->
+* [ICoreWebView2SharedWorkerManager](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager)
+  * [ICoreWebView2SharedWorkerManager::add_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager#add_sharedworkercreated)
+  * [ICoreWebView2SharedWorkerManager::GetSharedWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager#getsharedworkers)
+  * [ICoreWebView2SharedWorkerManager::remove_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager#remove_sharedworkercreated)
 
 ---
--->
 
 
 <!-- ====================================================================== -->
@@ -2233,10 +2495,10 @@ Through the WebView2 control, your app can manage navigation to webpages and man
 #### Manage content loaded into WebView2
 
 These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
-*  Content from a URL.
-*  A string of HTML.
-*  Local content via virtual host name to local folder mapping.
-*  Content from a constructed network request.
+* Content from a URL.
+* A string of HTML.
+* Local content via virtual host name to local folder mapping.
+* Content from a constructed network request.
 
 See also:
 * [Using local content in WebView2 apps](./working-with-local-content.md)
@@ -2558,10 +2820,10 @@ The `CustomSchemeRegistration` allows registration of custom schemes in WebView2
 #### Client certificates
 
 In WebView2, you can use the Client Certificate API to select the client certificate at the application level.  This API allows you to:
-*  Display a UI to the user, if desired.
-*  Replace the default client certificate dialog prompt.
-*  Programmatically query the certificates.
-*  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication.
+* Display a UI to the user, if desired.
+* Replace the default client certificate dialog prompt.
+* Programmatically query the certificates.
+* Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -2664,9 +2926,9 @@ Launch a URI scheme that is registered with the OS.
 ## iframes
 
 iframes allow you to embed other webpages into your own webpage.  In WebView2, you can:
-*  Find out when iframes are created.
-*  Find out when iframes are navigating.
-*  Allow bypassing x-frame options.
+* Find out when iframes are created.
+* Find out when iframes are navigating.
+* Allow bypassing x-frame options.
 
 See also:
 * [Host/web object sharing](#hostweb-object-sharing), above

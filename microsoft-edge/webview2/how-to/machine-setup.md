@@ -27,8 +27,8 @@ This article covers general-purpose setup of your development environment for We
 ## Install a preview channel of Microsoft Edge
 
 Install any Microsoft Edge preview channel (Beta, Dev, or Canary) on a supported operating system:
-   *  Windows 10
-   *  Windows 11
+   * Windows 10
+   * Windows 11
 
 To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -42,14 +42,14 @@ The preview channels of Microsoft Edge are required in order to use a prerelease
 ## Download the WebView2Samples repo
 
 There are two repos containing WebView2 samples:
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-*  [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser)
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
+* [WebView2Browser repo](https://github.com/MicrosoftEdge/WebView2Browser)
 
 You can download a repo as a `.zip` file, or clone the repo.
 
-*  If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
+* If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
 
-*  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
+* If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
 
 To download the repo (as a `.zip` file):
@@ -89,9 +89,9 @@ To download the repo (as a `.zip` file):
 
 You can download the repo as a `.zip` file, or clone the repo.
 
-*  If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
+* If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
 
-*  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
+* If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
 
 To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must first install git.  You can download the repo, as described above, or clone it.
@@ -113,9 +113,9 @@ To clone the `WebView2Samples` repo (or the `WebView2Browser` repo), you must fi
    ![Cloning the WebView2Samples repo](./machine-setup-images/clone-the-webview2-samples-repo.png)
 
 1. Decide which tool you want to use to locally clone the repo:
-   *  Visual Studio
-   *  GitHub Desktop
-   *  Git Bash shell or command prompt
+   * Visual Studio
+   * GitHub Desktop
+   * Git Bash shell or command prompt
 
 Next, clone the GitHub repo to your local drive.  To do that, follow the appropriate steps below, for the tool you want to use.
 
@@ -198,11 +198,11 @@ After you clone or download the `WebView2Samples` repo, open a `.sln` file in Vi
 
 For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
 
-*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Getting Started tutorials and are completed examples that demonstrate a couple API features.
+* A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Getting Started tutorials and are completed examples that demonstrate a couple API features.
 
-*  The Win32 `.sln` file containing multiple platform projects, in the `SampleApps` directory.  This is a comprehensive API demonstration.
+* The Win32 `.sln` file containing multiple platform projects, in the `SampleApps` directory.  This is a comprehensive API demonstration.
 
-*  A platform-specific `.sln` file in a subdirectory of the `SampleApps` directory.  These are comprehensive API demonstrations.
+* A platform-specific `.sln` file in a subdirectory of the `SampleApps` directory.  These are comprehensive API demonstrations.
 
 
 <!-- ====================================================================== -->

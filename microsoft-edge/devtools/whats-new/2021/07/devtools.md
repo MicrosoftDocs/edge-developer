@@ -36,17 +36,17 @@ In addition to the existing light and dark themes, Microsoft Edge DevTools now s
 The supported Visual Studio Code themes are:
 
 Light themes:
-*  Solarized Light
-*  Quiet Light
+* Solarized Light
+* Quiet Light
 
 Dark themes:
-*  Abyss
-*  Kimbie Dark
-*  Monokai
-*  Monokai Dimmed
-*  Solarized Dark
-*  Red
-*  Tomorrow Night Blue
+* Abyss
+* Kimbie Dark
+* Monokai
+* Monokai Dimmed
+* Solarized Dark
+* Red
+* Tomorrow Night Blue
 
 
 <!-- ====================================================================== -->
@@ -82,9 +82,9 @@ If you use JavaScript debugging in Visual Studio Code, you can now launch the **
 This feature integrates DOM and CSS debugging with JavaScript debugging in Visual Studio Code. If you don't have the DevTools extension installed, when you select the **Inspect** button, Visual Studio Code prompts you to install the extension.
 
 Other new features are:
-*  The tools refresh automatically when you switch between different debugging targets.
-*  Several bug fixes.
-*  More detailed documentation of the extension.
+* The tools refresh automatically when you switch between different debugging targets.
+* Several bug fixes.
+* More detailed documentation of the extension.
 
 For more details about improvements and fixes, check the [changelog file](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) in the `vscode-edge-devtools` repo.
 

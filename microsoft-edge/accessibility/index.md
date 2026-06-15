@@ -26,11 +26,11 @@ The articles in this Accessibility section present some best practices, code sam
 
 Microsoft Edge DevTools is built into the Microsoft Edge browser, and includes many accessibility-testing features, to test aspects of webpages including:
 
-*  Alt-text for images, and screen reader support.
-*  Keyboard support.
-*  Text contrast.
-*  Usability with vision deficiencies.
-*  Usability when the browser is narrow.
+* Alt-text for images, and screen reader support.
+* Keyboard support.
+* Text contrast.
+* Usability with vision deficiencies.
+* Usability when the browser is narrow.
 
 See:
 

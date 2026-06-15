@@ -13,9 +13,9 @@ ms.date: 05/22/2024
 A Progressive Web App (PWA) that's installed on the desktop can display content where the title bar normally is, to make the PWA feel more native, by using the Window Controls Overlay API.
 
 The Window Controls Overlay API does the following:
-*  Allows you to display web content over the entire surface area of the app.
-*  Moves the critical system-required window controls into an overlay.
-*  Makes it possible for your content to stay clear of this overlay.
+* Allows you to display web content over the entire surface area of the app.
+* Moves the critical system-required window controls into an overlay.
+* Makes it possible for your content to stay clear of this overlay.
 
 A Progressive Web App (PWA) can define how it should be displayed on mobile platforms, by using the [display](https://developer.mozilla.org/docs/Web/Manifest/display) member in the web app manifest file.  However, to create an immersive, native-like experience, _desktop_ PWAs can use another approach.
 
@@ -53,8 +53,8 @@ When the Window Controls Overlay feature is enabled, the user can choose to have
 ![Select the title bar toggle button](./window-controls-overlay-images/wco-toggle-button.png)
 
 Your code can't assume that the window controls overlay is displayed, because:
-*  The user can choose whether to display the title bar.
-*  Your app can also run in a web browser or on a mobile device, as well as running as a desktop app.
+* The user can choose whether to display the title bar.
+* Your app can also run in a web browser or on a mobile device, as well as running as a desktop app.
 
 Therefore, your code needs to react to title bar geometry changes.  To learn more, see [React to overlay changes](#react-to-overlay-changes).
 

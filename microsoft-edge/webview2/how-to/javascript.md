@@ -60,9 +60,9 @@ When executing script via `ExecuteScriptAsync`, that script is run in the global
 
 For example:
 
-*  If you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception, because `example` was defined the first time you ran it. 
+* If you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception, because `example` was defined the first time you ran it. 
 
-*  If you instead run the script `(() => { const example = 10; })();` the `example` variable is defined in the context of that anonymous function.  That way, it's not polluting the global context, and can be run more than once.
+* If you instead run the script `(() => { const example = 10; })();` the `example` variable is defined in the context of that anonymous function.  That way, it's not polluting the global context, and can be run more than once.
 
 
 <!-- ====================================================================== -->
