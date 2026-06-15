@@ -186,10 +186,10 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
 
    The following two flags are listed:
 
-   * **Writer API for on-device language model**.  (Through Edge 149, this flag's label was **Writer API for Phi mini**).
-   * **Rewriter API for on-device language model**.  (Through Edge 149, this flag's label was **Rewriter API for Phi mini**).
+   * **Writer API for on-device language model**.  (Through Edge 149, this flag's label was **Writer API for Phi mini**.)
+   * **Rewriter API for on-device language model**.  (Through Edge 149, this flag's label was **Rewriter API for Phi mini**.)
 
-   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enable the Summarizer API by entering **Summarization API for Phi mini** here.)
+   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here, and then enable that flag.)
 
 1. Next to the flag for the API, select **Enabled**:
 
