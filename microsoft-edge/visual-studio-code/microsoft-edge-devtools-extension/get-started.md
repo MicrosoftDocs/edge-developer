@@ -28,4 +28,4 @@ These tutorials walk you through several ways of opening and closing DevTools, a
 
 * [demo-to-do](https://microsoftedge.github.io/Demos/demo-to-do/) - the demo web app running on the `github.io` server.
 * [Source code for demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do)
-* [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos)
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.

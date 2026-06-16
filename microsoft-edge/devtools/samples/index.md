@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/17/2025
+ms.date: 05/22/2026
 ---
 # Sample code for DevTools
 
@@ -24,50 +24,11 @@ To view the source code for a rendered demo webpage in DevTools in Microsoft Edg
 
 <!-- ====================================================================== -->
 ## List of DevTools samples
-<!-- 
-sync:
-https://learn.microsoft.com/microsoft-edge/devtools/sample-code/sample-code#list-of-devtools-samples
-https://github.com/MicrosoftEdge/Demos#readme
-sync'd Jul. 30, 2025
--->
 
-The following demos demonstrate DevTools features.
+See:
+* [Microsoft Edge DevTools](https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-devtools) in the Readme for the "MicrosoftEdge / Demos" repo.
 
-| Demo name | Description and docs | Source code & Readme | Live demo page |
-|---|---|---|---|
-| CSS mirroring sourcemaps | Used for [Update .css files from within the Styles tab (CSS mirror editing)](../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md) for the DevTools extension for Visual Studio Code. | [/css-mirroring-sourcemaps-demo/](https://github.com/MicrosoftEdge/Demos/tree/main/css-mirroring-sourcemaps-demo) | n/a |
-| To Do app | Simple To Do app with vanilla JavaScript.  Used for various articles in the [Microsoft Edge DevTools documentation](../landing/index.yml). | [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) | [My tasks](https://microsoftedge.github.io/Demos/demo-to-do/) demo |
-| Detached DOM elements | Chat-like demo.  Used for [Debug DOM memory leaks ("Detached elements" profiling type)](../memory-problems/dom-leaks-memory-tool-detached-elements.md). | [/detached-elements/](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) | [Detached DOM elements](https://microsoftedge.github.io/Demos/detached-elements/) demo |
-| 3D View tool | Used for [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md). | [/devtools-3d/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-3d) | [3D View tool demo](https://microsoftedge.github.io/Demos/devtools-3d/) |
-| Accessibility testing | Used for [Accessibility-testing features](../accessibility/reference.md). | [/devtools-a11y-testing/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) | [Animal Shelter](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) demo |
-| Warning when animating a CSS property that requires layout | Illustrates the **Issues** and **Elements** tools warning when CSS properties that require layout are animated.  Used for [Edit animation and transition timings with the Easing Editor](../css/reference.md#edit-animation-and-transition-timings-with-the-easing-editor) in _CSS features reference_. | [/devtools-animated-property-issue/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-animated-property-issue) | [Animated CSS property demo](https://microsoftedge.github.io/Demos/devtools-animated-property-issue/) |
-| Console panel demo pages | Used for [Console overview](../console/index.md), [Log messages in the Console tool](../console/console-log.md), and [Fix JavaScript errors reported in the Console](../console/console-debug-javascript.md). | [/devtools-console/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console) | [DevTools Console panel demo pages](https://microsoftedge.github.io/Demos/devtools-console/) |
-| Interact with the DOM using the Console | Used for [Interact with the DOM using the Console](../console/console-dom-interaction.md). | [/devtools-console-dom-interactions/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-console-dom-interactions) | [Interact with the DOM using the Console](https://microsoftedge.github.io/Demos/devtools-console-dom-interactions/) demo |
-| Contrast bug fix | Used for [Improving contrast in Microsoft Edge DevTools: A bugfix case study](https://blogs.windows.com/msedgedev/2021/06/15/improving-contrast-in-microsoft-edge-devtools-a-bugfix-case-study/). | [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix) | [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) demo |
-| Crash Analyzer tool demo | Used for [Enter a stack trace in the Crash analyzer tool](../crash-analyzer/index.md#enter-a-stack-trace-in-the-crash-analyzer-tool) in _Crash analyzer tool_. | [/devtools-crash-analyzer/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-crash-analyzer) | [Readme](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-crash-analyzer/README.md) |
-| CSS Examples | Used for [Get started viewing and changing CSS](../css/index.md). | [/devtools-css-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) | [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo |
-| DOM Examples | Used for [Get started viewing and changing the DOM](../dom/index.md). | [/devtools-dom-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) | [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo |
-| Explain Console errors and warnings in Copilot in Edge | Generates errors in the Console that can then be explained by using Copilot in Edge. | [/devtools-explain-error/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-explain-error) | [Explain Console errors and warnings in Copilot in Edge](https://microsoftedge.github.io/Demos/devtools-explain-error/) demo |
-| Inspect tool | Used for [Analyze pages using the Inspect tool](../css/inspect.md). | [/devtools-inspect/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-inspect) | [Inspect tool demo](https://microsoftedge.github.io/Demos/devtools-inspect/) |
-| Inspect CSS Grid | Used for [Inspect CSS Grid layouts](../css/grid.md). | [/devtools-grid/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-grid) | [Inspect CSS Grid layouts](https://microsoftedge.github.io/Demos/devtools-grid/) demo |
-| Debugging JavaScript that adds two numbers | Used for [Get started debugging JavaScript](../javascript/index.md). | [/devtools-js-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) | [Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) demo |
-| Memory heap snapshot | Used for [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](../memory-problems/heap-snapshots.md). | [/devtools-memory-heap-snapshot/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) | n/a |
-| **Performance** tool Activity Tabs | Used for [View activities in a table](../performance/reference.md#view-activities-in-a-table) in _Performance features reference_, about the **Performance** tool's **Bottom-up**, **Call tree**, and **Event log** tabs. | [/devtools-performance-activitytabs/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) | [Activity Tabs demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) |
-| Sluggish Animation | Used for [Analyze runtime performance (tutorial)](../performance/index.md). | [/devtools-performance-get-started/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) | [Sluggish Animation](https://microsoftedge.github.io/Demos/devtools-performance-get-started/) demo |
-| postMessage Trace Events | Tests `postMessage` trace events in the **Performance** tool.  Used for [View messages between windows, iframes, and dedicated workers](../performance/reference.md#view-messages-between-windows-iframes-and-dedicated-workers) in _Performance features reference_. | [/devtools-postmessage-perf-timeline/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-postmessage-perf-timeline) | [postMessage Trace Events demo](https://microsoftedge.github.io/Demos/devtools-postmessage-perf-timeline/) |
-| CSS :target pseudo-class | Used for [Support forcing the :target CSS state](../whats-new/2021/01/devtools.md#support-forcing-the-target-css-state) in _What's new in DevTools (Microsoft Edge 89)_. | [/devtools-target-pseudo/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-target-pseudo) | [CSS :target pseudo-class demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/) |
-| Exploring the universe | Used for [Monitor Core Web Vitals metrics](../performance/overview.md#monitor-core-web-vitals-metrics) in _Performance tool: Analyze your website's performance_. | [/exploring-the-universe/](https://github.com/MicrosoftEdge/Demos/tree/main/exploring-the-universe) | [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo |
-| Heap Snapshot Visualizer | Used for [Heap Snapshot visualizer extension for DevTools](../whats-new/2023/01/devtools-109.md#heap-snapshot-visualizer-extension-for-devtools) in _What's new in DevTools (Microsoft Edge 109)_. | [/heap-snapshot-visualizer/](https://github.com/MicrosoftEdge/Demos/tree/main/heap-snapshot-visualizer) | n/a |
-| JSON dummy data | Simple JSON files.  Used for [View a JSON file or server response with formatting](../../web-platform/json-viewer.md). | [/json-dummy-data/](https://github.com/MicrosoftEdge/Demos/tree/main/json-dummy-data) | [JSON dummy data](https://microsoftedge.github.io/Demos/json-dummy-data/) (Readme) |
-| Inspect Network Activity | Used for [Inspect network activity](../network/index.md). | [/network-tutorial/](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) | [Inspect Network Activity demo](https://microsoftedge.github.io/Demos/network-tutorial/) |
-| Network tool reference | Used for [Network features reference](../network/reference.md). | [/devtools-network-reference/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-network-reference) | [Network tool reference demo](https://microsoftedge.github.io/Demos/devtools-network-reference/) |
-| Photo gallery | Used for [View your custom data in the performance profile](../performance/extension.md#view-your-custom-data-in-the-performance-profile) in _Customize performance profile with extensibility APIs_, and [The truth about CSS selector performance](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/). | [/photo-gallery/](https://github.com/MicrosoftEdge/Demos/tree/main/photo-gallery) | [Photo Gallery](https://microsoftedge.github.io/Demos/photo-gallery/) demo |
-| Slow Calendar | Simple calendar demo app to test DevTools features such as the **Performance** tool and source map support.  Used for [Added source map support in the Coverage tool](../whats-new/2024/01/devtools-121.md#added-source-map-support-in-the-coverage-tool) in _What's new in DevTools (Microsoft Edge 121)_. | [/slow-calendar/](https://github.com/MicrosoftEdge/Demos/tree/main/slow-calendar) | [Slow Calendar](https://microsoftedge.github.io/Demos/slow-calendar/public/) demo |
-| Margie's Travel | Demonstrates how to optimize a webpage's resources to make it load, appear, and be interactive faster.  Used for [Optimize website speed using Lighthouse](../speed/get-started.md). | [/travel-site/](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site) | [Margie's Travel](https://microsoftedge.github.io/Demos/travel-site/) demo |
-| Workspaces | Used for [Edit and save files in a workspace (Sources tool Workspace tab)](../workspaces/index.md). | [/workspaces/](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces) | [DevTools Workspaces demo](https://microsoftedge.github.io/Demos/workspaces/) |
-| Idle detection | Used for [Emulate idle detector state](../sensors/index.md#emulate-idle-detector-state) in _Emulate device sensors_. | [/idle-detection/](https://github.com/MicrosoftEdge/Demos/tree/main/idle-detection) | [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/) |
-
-A few of these samples are shown below.
+Some of the samples are shown below.
 
 
 <!-- ====================================================================== -->
@@ -111,7 +72,7 @@ These articles walk you through using this demo webpage:
 
 This is the source code repo and its directory which stores the files for this demo webpage:
 
-* [MicrosoftEdge/Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) - Contains files including:
+* [MicrosoftEdge / Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) - Contains files including:
 
    * `index.html` - The demo webpage, including page sections and input forms that send data to the `buttons.js` JavaScript file.  To view the rendered webpage, use the demo webpage link above.
 
@@ -151,7 +112,7 @@ These articles or article sections walk you through using this demo webpage:
 
 This is the source code repo and its directory which stores the files for this demo webpage:
 
-* [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) - Contains the files:
+* [MicrosoftEdge / Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) - Contains the files:
 
    * `README.md` - Contains links to the rendered demo webpage and the in-depth tutorial article about using the demo webpage.
 
@@ -161,7 +122,7 @@ This is the source code repo and its directory which stores the files for this d
 
 
 <!-- ====================================================================== -->
-## Clone the Edge Demos repo to your drive
+## Clone the "MicrosoftEdge / Demos" repo to your drive
 
 The **Microsoft Edge / Demos** repo is useful for following the various DevTools documentation.  You can clone the repo, start a localhost web server within a folder of the cloned repo, and then edit the demo files directly within DevTools, or within an editor such as VS Code.
 
@@ -173,7 +134,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. If not done already, [Download git](https://git-scm.com/downloads) and install it.
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
 
@@ -199,11 +160,11 @@ Continue with the next section.
 
 
 <!-- ------------------------------ -->
-#### Clone the Edge Demos repo to your drive by using VS Code
+#### Clone the "MicrosoftEdge / Demos" repo to your drive by using VS Code
 
 To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** dropdown button, and then click **Open with Visual Studio** if it appears.  A list of **Handler Selector** items is offered, one per Visual Studio instance installed.  This option appears only if you're logged in.
 
@@ -275,7 +236,7 @@ See also:
 <!-- ====================================================================== -->
 ## Open a demo folder from the Workspace tab in the Sources tool
 
-To use this section, first do [Clone the Edge Demos repo to your drive](#clone-the-edge-demos-repo-to-your-drive), above.
+To use this section, first do the steps in [Clone the "MicrosoftEdge / Demos" repo to your drive](#clone-the-microsoftedge--demos-repo-to-your-drive), above.
 
 See also:
 * [Workspace tutorial (Sources tool Workspace tab)](../workspaces/workspace-tutorial.md)
