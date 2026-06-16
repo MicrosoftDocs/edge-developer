@@ -62,7 +62,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
 
 1. If not done already, install an up-to-date version of Node.js and npm from [Node.js](https://nodejs.org).
 
-1. Go to [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) in a new window or tab.
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
 1. Click the **Code** drop-down button.
 
@@ -87,7 +87,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
    ```
 
    For details about cloning a repo, see:
-   * [Clone the Edge Demos repo to your drive](../samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+   * [Clone the "MicrosoftEdge / Demos" repo to your drive](../samples/index.md#clone-the-microsoftedge--demos-repo-to-your-drive) in _Sample code for DevTools_.
    * [Clone the WebView2Samples repo](../../webview2/how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Shows a different sample repo, but shows steps for several tools.
    * [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) - GitHub docs.
 
