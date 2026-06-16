@@ -505,8 +505,7 @@ For example, inspect the `position-try-fallbacks` values and `@position-try` CSS
 To edit a value, double-click the value.
 
 See also:
-* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
-* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api), in the Chrome for Developers blog.
+* [@position-try CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@position-try), at MDN.
 
 
 <!-- ------------------------------ -->
@@ -700,7 +699,7 @@ To view cascade layers:
    The `page` layer has the highest specificity, therefore the element's background is green.
 
 See also:
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers), in the Chrome for Developers blog.
+* [Cascade layers](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/Cascade_layers), at MDN.
 
 
 <!-- ------------------------------ -->
@@ -1333,6 +1332,7 @@ MDN:
 * [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/--*)
    * [Custom properties (`--*`): CSS variables](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/--*)
 * [`@scope` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@scope)
+* [@position-try CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@position-try)
 * [@font-palette-values CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/@font-palette-values)
 * [The box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 * [Page Visibility API](https://developer.mozilla.org/docs/Web/API/Page_Visibility_API)
@@ -1344,6 +1344,7 @@ MDN:
 * [`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible)
 * [Introduction to the CSS cascade](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction)
 * [Pseudo-elements](https://developer.mozilla.org/docs/Web/CSS/Pseudo-elements)
+* [Cascade layers](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/Cascade_layers).
 * [CSS syntax basics](https://developer.mozilla.org/docs/Learn_web_development/Core/Styling_basics/What_is_CSS#css_syntax_basics) in _What is CSS?_
 * [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types) in _Specificity_.
 * [animation-timing-function](https://developer.mozilla.org/docs/Web/CSS/animation-timing-function)
@@ -1357,13 +1358,8 @@ Web.dev:
 * [@property: giving superpowers to CSS variables](https://web.dev/articles/at-property)
 * [prefers-color-scheme: Hello darkness, my old friend](https://web.dev/articles/prefers-color-scheme)
 
-W3C:
-* [The @position-try Rule](https://www.w3.org/TR/css-anchor-position-1/#fallback-rule) in _CSS Anchor Positioning Module Level 1_ at w3.org.
-
 Chrome for Developers blog:
-* [Introducing the CSS anchor positioning API](https://developer.chrome.com/blog/anchor-positioning-api)
 * [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35)
-* [Cascade layers are coming to your browser](https://developer.chrome.com/blog/cascade-layers)
 * [Auto Dark Theme](https://developer.chrome.com/blog/auto-dark-theme)
 
 Chrome docs:
