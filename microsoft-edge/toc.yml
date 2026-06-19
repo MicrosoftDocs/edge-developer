@@ -647,7 +647,7 @@
                   href: ./devtools/network/issues.md
                   displayName: Network tool
 
-                - name: View page resources
+                - name: View the resource files that make up a webpage
                   href: ./devtools/resources/index.md
                   displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
 # -----------------------------------------------------------------------------
