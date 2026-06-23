@@ -169,87 +169,121 @@ The **Add to home screen** button on the **App Manifest** pane lets you simulate
 #### View and check maskable icons
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#icons -->
 
-todo: format, links, pngs
+The **Icons** section of the **Manifest** page of the **Application** tool displays all the icons of your application.  In the **Icons** section, you can also check safe areas for maskable icons, which is the format of icons that adapt to platforms.
 
-The **Icons** section of the Manifest tab displays all the icons of your application. In this section, you can also check safe areas for maskable icons, the format of icons that adapt to platforms.
+To trim the icons so that only the minimum safe area is visible, select the **Show only the minimum safe area for maskable icons** checkbox:
 
-To trim the icons so that only the minimum safe area is visible, check Checkbox. Show only the minimum safe area for maskable icons.
+![Viewing the minimum safe areas for maskable icons](./index-images/viewing-minimum-safe-area.png)
+<!-- https://microsoftedge.github.io/Demos/pwamp/ -->
 
-Viewing the minimum safe areas for maskable icons.
+If your entire logo is visible in the safe area, the formatting is valid.
 
-If your entire logo is visible in the safe area, you're good to go.
+See also:
+* [Adaptive icon support in PWAs with maskable icons](https://web.dev/articles/maskable-icon) at web.dev.
 
 
 <!-- ------------------------------ -->
 #### Trigger installation
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#trigger-installation -->
 
-todo: format, links, pngs
+Microsoft Edge makes it possible for you to enable and promote the installation of your PWA directly within its user interface.
 
-Chrome makes it possible for you to enable and promote the installation of your PWA directly within its user interface. Learn How to provide your own in-app installation experience.
+See also:
+* [How to provide your own in-app installation experience](https://web.dev/customize-install/) at web.dev.
 
 To trigger the installation flow of your PWA:
 
-Open the PWA's landing page in Chrome.
-On the right side of the address bar at the top, click Install. Install.
+1. Open the PWA's landing page in Microsoft Edge.  For example, open the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo in a new window or tab.
 
-The Install button.
+1. On the right side of the Address bar at the top, click the **App available.  Install PWAmp music player** button.
 
-Follow the on-screen instructions.
+   The **Install PWAmp music player app** dialog opens: 
 
-Key point: Keep the Console drawer open when you trigger installation. The Console tells you if your manifest has any issues and logs other information about the installation lifecycle.
-The Install app feature cannot simulate the workflow for mobile devices. Notice how the desktop Chrome browser displays the installation button in the address bar, even though DevTools is in Device Mode. However, if you can successfully add your app to your desktop, then it'll work for mobile, too.
+   ![The "App available, Install" button](./index-images/app-available-install-button.png)
 
-If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via remote debugging. To trigger the installation on the connected mobile device, open the Three-dot menu. three-dot menu and click Install app. Install app.
+1. Click the **Install** button.
+
+
+<!-- ---------- -->
+###### Monitor the Console tool in the Quick view panel
+
+It's recommended that you keep the DevTools **Console** tool open in the **Quick view** panel when you trigger installation.  The **Console** tells you if your manifest has any issues, and logs other information about the installation lifecycle.
+
+The **Install app** feature cannot simulate the workflow for mobile devices.  The desktop Microsoft Edge browser displays the installation button in the Address bar, even though<!-- todo: even when? --> DevTools is in [Device Mode](https://developer.chrome.com/docs/devtools/device-mode)<!-- todo: true? is DevTools in Device Mode? --><!-- todo: local link -->.  However, if you can successfully add your app to your desktop, then the app will work for mobile, too.
+
+
+<!-- ---------- -->
+###### Test a mobile device
+
+If you want to test out the actual mobile experience, you can connect a mobile device to DevTools via [remote debugging](https://developer.chrome.com/docs/devtools/remote-debugging)<!-- todo: local link -->.  To trigger the installation on the connected mobile device, open the three-dot menu (![The three-dot menu icon](./index-images/three-dot-menu.png)), and then click **Install app**.
 
 
 <!-- ------------------------------ -->
 #### Inspect shortcuts
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#shortcut -->
 
-todo: format, links, pngs
-
 App shortcuts let you to provide quick access to a handful of common actions that users need frequently.
 
-To inspect the shortcuts you defined in your manifest file, scroll to the Shortcut #N sections of the Manifest tab.
+To inspect the shortcuts that you defined in your [manifest file](https://web.dev/articles/app-shortcuts#define_app_shortcuts_in_the_web_app_manifest), scroll to the **Shortcut #N** sections of the **Manifest** page of the **Application** tool.  The **Shortcut #N** sections are below the **Windows Control Overlay** section of the **Manifest** page:
 
-Shortcut section in the Manifest tab.
+![Shortcut section in the Manifest tab](./index-images/shortcut-sections.png)<!-- todo: pwamp -->
 
-Note: Note: This screenshot is taken from this demo page. Inspect it for more examples.
+The above screenshot is from the [Rowsie](https://rowsie.app)<!-- todo: pwamp --> demo page.  For more examples of shortcuts, inspect the demo page.
+
+See also:
+* [App shortcuts](https://web.dev/articles/app-shortcuts) at web.dev.
 
 
 <!-- ------------------------------ -->
 #### Inspect screenshots for a richer installation UI
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#screenshot -->
 
-todo: format, links, pngs
-
 When you add a description and a set of screenshots to your manifest file, your app gets a richer installation dialog.
 
-To inspect the screenshots, scroll to the Screenshot #N sections of the Manifest tab.
+To inspect the screenshots, scroll down to the **Screenshot #N** sections of the **Manifest** page of the **Application** tool:
 
-The installation dialog and screenshots in the Manifest tab.
+![The installation dialog, and screenshots in the Manifest page](./index-images/screenshots-populating-the-installation-dialog.png)<!-- todo: pwamp -->
+<!-- https://airhorner.com -->
+
+See also:
+* [screenshots](https://web.dev/add-manifest#screenshots) in _Add a web app manifest_ at web.dev.
 
 
 <!-- ------------------------------ -->
 #### Test URL protocol handler registration
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler -->
 
-todo: format, links, pngs
+todo: format, links, pngs - https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler
 
-PWAs can handle links that use a specific protocol for a more integrated experience. To learn how to create a handler, see URL protocol handler registration for PWAs.
+A PWA can handle links that use a specific protocol, for a more integrated experience.  To learn how to create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: local link or mdn -->.
 
 To test your handler:
 
-1. Open DevTools on the landing page of your PWA. For example, check out this demo PWA.
+1. [Open DevTools](https://developer.chrome.com/docs/devtools/open)<!-- todo: inline steps, or local link --> on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo PWA.
 
-1. From the demo page, install the PWA and reload the app after the installation. The browser has now registered the PWA as a handler for the web+coffee protocol.
+1. From the demo page, install the PWA.<!-- todo: but there is no "app available, install" button in address bar for https://chrome.dev/devtools-protocol-handler/ -->
 
-1. In the Application > Manifest > Protocol Handler section, enter the URL you want the handler to test and click Test protocol. Testing the handler. In this example, the handler can process americano, chai, and latte-macchiato.
+1. Reload the app.
 
-1. When Chrome asks you if it can open the app, confirm by clicking Open Protocol Handler. Open the app.
+   The browser has now registered the PWA as a handler for the `web+coffee` protocol.
 
-1. In the next dialog, allow the app to handle web+coffee links. Allow to handle links.
+1. In the **Application** > **Manifest** > **Protocol Handlers** section, enter the URL<!-- todo: portion?  suffix?  path? --> that you want the handler to test, and then click the **Test protocol** button:
+
+   ![Testing the handler] ./index-images/testing-handler.png todo
+
+   In this example, the handler can process `americano`, `chai`, and `latte-macchiato`.
+
+   Microsoft Edge asks you if it can open the app.
+
+1. Click the **Open Protocol Handler** button:
+
+   ![Open the app] open-protocol-handler.png todo
+
+   The **Allow app to open web+coffee links?** dialog opens:
+
+   ![Allow to handle links] allow-handle-links.png todo
+
+1. Click the **Allow** button.
 
    The handler processes the link.  An image of a coffee cup is displayed in the app.
 
