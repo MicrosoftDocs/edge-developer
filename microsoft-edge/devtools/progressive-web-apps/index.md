@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 04/02/2026
+ms.date: 06/23/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,16 +22,54 @@ ms.date: 04/02/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Debug a Progressive Web App (PWA)
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/progressive-web-apps/ -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
 
 Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Summary](#summary)
+* [Web app manifest](#web-app-manifest)
+   * [View and check maskable icons](#view-and-check-maskable-icons)
+   * [Trigger installation](#trigger-installation)
+   * [Inspect shortcuts](#inspect-shortcuts)
+   * [Inspect screenshots for a richer installation UI](#inspect-screenshots-for-a-richer-installation-ui)
+   * [Test URL protocol handler registration](#test-url-protocol-handler-registration)
+* [Service workers](#service-workers)
+* [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker)
+* [Service worker caches](#service-worker-caches)
+* [Quota usage](#quota-usage)
+* [Clear storage](#clear-storage)
+* [Other Application tool guides](#other-application-tool-guides)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
-<!-- ## Summary -->
+## Introduction
+<!-- heading not upstream; content = top of https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
+
+Progressive Web Apps (PWAs) are modern, high-quality applications built using web technology.  PWAs offer similar capabilities to apps on iOS, Android, and desktop:
+
+* Reliable even in unstable network conditions.
+* Installable to launch surfaces of operating systems, such as the Applications folder on Mac OS X, the Start menu on Windows, and the home screen on Android and iOS.
+* Show up in activity switchers, device search engines such as Spotlight, and in content sharing sheets.
+
+The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
+* [Other Application tool guides](#other-application-tool-guides), below.
+* [View the resource files that make up a webpage](../resources/index.md)
+* [View and edit local storage](../storage/localstorage.md)
+
+See also:
+* [Progressive Web Apps](https://web.dev/progressive-web-apps) at web.dev.
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
+
+
+<!-- ====================================================================== -->
+## Summary
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
-The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes for PWA features:
+The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes (accessed via the tree on the left) that cover PWA features:
 
 * Use the **Manifest** pane to inspect your web app manifest.
 
@@ -41,23 +79,21 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
   * Going offline.
   * Stopping a service worker.
 
-* Use the **Cache Storage** pane to view your service worker cache.
-
 * Use the **Storage** pane to view how much data your app is storing on the device, and clear the stored data.
 
-The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
-* [View the resource files that make up a webpage](../resources/index.md)
-* [View and edit local storage](../storage/localstorage.md)
+* Use the **Cache storage** pane to view your service worker cache.
 
-See also:
-* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
+<!-- todo: png showing these tree items of interest -->
 
 
 <!-- ====================================================================== -->
 ## Web app manifest
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#manifest -->
 
-If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.
+If you want your users to be able to add your app to their mobile home screen, you need a web app manifest.  The web app manifest defines:
+* How the app appears on the home screen.<!-- todo: clarify "the home screen" -->
+* Where to direct the user when launching from the home screen
+* What the app looks like when launched.
 
 <!--Related Guides:
 
@@ -80,7 +116,7 @@ To inspect a manifest:
 
    The **App Manifest** pane is displayed, where you can inspect the manifest:
 
-![The App Manifest Pane](./index-images/manifest-pane.png)
+![The App Manifest Pane](./index-images/manifest-pane.png)<!-- todo: from airhorn to pwamp -->
 
 The **App Manifest** pane contains the following sections:
 * Top section, containing the manifest link
@@ -93,21 +129,24 @@ The **App Manifest** pane contains the following sections:
 * **Screenshot #2**
 
 * To view the manifest source file, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`<!-- todo: PWAmp -->, for [Airhorner.com](https://airhorner.com).
-<!-- * Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
+<!-- * Click the **Add to home screen** button to simulate an Add to home screen event.  Check out the next section for more information.  -->
 
 * The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
 
 * The **Icons** section displays every icon that's been specified in the manifest.
 
+See also:
+* [Add a web app manifest](https://web.dev/add-manifest/) at web.dev.
+
 
 <!-- ------------------------------ --
-#### Simulate Add to Homescreen events
--->
+#### Simulate Add to home screen events -->
+<!-- not upstream, upstream article has 0 hits on "home screen" -->
 
-<!--A web app may only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, the criteria is potentially inconvenient.
-The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
+<!--A web app may only be added to a home screen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to home screen workflow, the criteria is potentially inconvenient.
+The **Add to home screen** button on the **App Manifest** pane lets you simulate Add to home screen events whenever you want.  -->
 
-<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
+<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to home screen.  Choosing on **Add to home screen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to home screen" banner for mobile devices.  -->
 
 <!--
 ![Add to desktop shelf](../media/io.png)
@@ -115,50 +154,104 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--
 > [!Tip]
-> Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
+> Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to home screen events.  The Console tells you if your manifest has any issues and logs other information about the Add to home screen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
+<!--The **Add to home screen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: rework content after sample app is created -->
 
-<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to home screen** button (on DevTools) to trigger the "add to home screen" prompt on the connected mobile device.  -->
 
 <!--TODO: link to "remote debugging" sections when available -->
 
 
-<!-- ------------------------------ --
-#### View and check maskable icons -->
+<!-- ------------------------------ -->
+#### View and check maskable icons
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#icons -->
 
-<!-- todo -->
+todo: format, links, pngs
+
+The **Icons** section of the Manifest tab displays all the icons of your application. In this section, you can also check safe areas for maskable icons, the format of icons that adapt to platforms.
+
+To trim the icons so that only the minimum safe area is visible, check Checkbox. Show only the minimum safe area for maskable icons.
+
+Viewing the minimum safe areas for maskable icons.
+
+If your entire logo is visible in the safe area, you're good to go.
 
 
-<!-- ------------------------------ --
-#### Trigger installation -->
+<!-- ------------------------------ -->
+#### Trigger installation
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#trigger-installation -->
 
-<!-- todo -->
+todo: format, links, pngs
+
+Chrome makes it possible for you to enable and promote the installation of your PWA directly within its user interface. Learn How to provide your own in-app installation experience.
+
+To trigger the installation flow of your PWA:
+
+Open the PWA's landing page in Chrome.
+On the right side of the address bar at the top, click Install. Install.
+
+The Install button.
+
+Follow the on-screen instructions.
+
+Key point: Keep the Console drawer open when you trigger installation. The Console tells you if your manifest has any issues and logs other information about the installation lifecycle.
+The Install app feature cannot simulate the workflow for mobile devices. Notice how the desktop Chrome browser displays the installation button in the address bar, even though DevTools is in Device Mode. However, if you can successfully add your app to your desktop, then it'll work for mobile, too.
+
+If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via remote debugging. To trigger the installation on the connected mobile device, open the Three-dot menu. three-dot menu and click Install app. Install app.
 
 
-<!-- ------------------------------ --
-#### Inspect shortcuts -->
+<!-- ------------------------------ -->
+#### Inspect shortcuts
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#shortcut -->
 
-<!-- todo -->
+todo: format, links, pngs
+
+App shortcuts let you to provide quick access to a handful of common actions that users need frequently.
+
+To inspect the shortcuts you defined in your manifest file, scroll to the Shortcut #N sections of the Manifest tab.
+
+Shortcut section in the Manifest tab.
+
+Note: Note: This screenshot is taken from this demo page. Inspect it for more examples.
 
 
-<!-- ------------------------------ --
-#### Inspect screenshots for a richer installation UI -->
+<!-- ------------------------------ -->
+#### Inspect screenshots for a richer installation UI
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#screenshot -->
 
-<!-- todo -->
+todo: format, links, pngs
+
+When you add a description and a set of screenshots to your manifest file, your app gets a richer installation dialog.
+
+To inspect the screenshots, scroll to the Screenshot #N sections of the Manifest tab.
+
+The installation dialog and screenshots in the Manifest tab.
 
 
-<!-- ------------------------------ --
-#### Test URL protocol handler registration -->
+<!-- ------------------------------ -->
+#### Test URL protocol handler registration
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler -->
 
-<!-- todo -->
+todo: format, links, pngs
+
+PWAs can handle links that use a specific protocol for a more integrated experience. To learn how to create a handler, see URL protocol handler registration for PWAs.
+
+To test your handler:
+
+1. Open DevTools on the landing page of your PWA. For example, check out this demo PWA.
+
+1. From the demo page, install the PWA and reload the app after the installation. The browser has now registered the PWA as a handler for the web+coffee protocol.
+
+1. In the Application > Manifest > Protocol Handler section, enter the URL you want the handler to test and click Test protocol. Testing the handler. In this example, the handler can process americano, chai, and latte-macchiato.
+
+1. When Chrome asks you if it can open the app, confirm by clicking Open Protocol Handler. Open the app.
+
+1. In the next dialog, allow the app to handle web+coffee links. Allow to handle links.
+
+   The handler processes the link.  An image of a coffee cup is displayed in the app.
 
 
 <!-- ====================================================================== -->
@@ -322,12 +415,14 @@ Related Guides:
 ## Clear storage
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
 
+todo: there's no longer a "Clear Storage" tab/pane, though upstream outdated section mentions it and links to an article about it, but that linked upstream article no longer says "the Clear Storage tab/pane"
+
 The **Clear Storage** tab is useful when developing a progressive web app.  Use the **Clear Storage** pane to unregister service workers and clear all caches and storage, with a single button-click.
 
 
-<!-- ====================================================================== --
+<!-- ====================================================================== -->
 ## Other Application tool guides
-<!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other --
+<!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other -->
 
 For the other panes of the ![Application icon](./index-images/application-icon.png) **Application** tool, see:
 * [Inspect page resources](/iterate/manage-data/page-resources)
