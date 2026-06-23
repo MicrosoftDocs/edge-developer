@@ -51,9 +51,15 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 
 Progressive Web Apps (PWAs) are modern, high-quality applications built using web technology.  PWAs offer similar capabilities to apps on iOS, Android, and desktop:
 
-* Reliable even in unstable network conditions.
-* Installable to launch surfaces of operating systems, such as the Applications folder on Mac OS X, the Start menu on Windows, and the home screen on Android and iOS.
-* Show up in activity switchers, device search engines such as Spotlight, and in content sharing sheets.
+* PWAs are reliable even in unstable network conditions.
+* PWAs are installable to launch-surfaces of operating systems, such as:
+   * The **Applications** folder on Mac OS X.
+   * The **Start** menu on Windows.
+   * The home screen on Android and iOS.
+* PWAs show up in:
+   * Activity switchers.
+   * Device search engines such as Spotlight.
+   * In content sharing sheets<!-- todo: clarify -->.
 
 The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
 * [Other Application tool guides](#other-application-tool-guides), below.
@@ -91,8 +97,8 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#manifest -->
 
 If you want your users to be able to add your app to their mobile home screen, you need a web app manifest.  The web app manifest defines:
-* How the app appears on the home screen.<!-- todo: clarify "the home screen" -->
-* Where to direct the user when launching from the home screen
+* How the app appears on the home screen of a mobile device.
+* Where to direct the user when launching from the home screen.
 * What the app looks like when launched.
 
 <!--Related Guides:
@@ -100,7 +106,7 @@ If you want your users to be able to add your app to their mobile home screen, y
 * [Improve user experiences with a Web App Manifest](/web/fundamentals/web-app-manifest)
 * [Using App Install Banners](/web/fundamentals/app-install-banners)  -->
 
-<!--TODO: link to sections when available -->
+<!-- todo: link to sections when available -->
 
 To inspect a manifest:
 
@@ -158,11 +164,11 @@ The **Add to home screen** button on the **App Manifest** pane lets you simulate
 
 <!--The **Add to home screen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
-<!-- TODO: rework content after sample app is created -->
+<!-- todo: rework content after sample app is created -->
 
 <!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to home screen** button (on DevTools) to trigger the "add to home screen" prompt on the connected mobile device.  -->
 
-<!--TODO: link to "remote debugging" sections when available -->
+<!--todo: link to "remote debugging" sections when available -->
 
 
 <!-- ------------------------------ -->
@@ -301,7 +307,7 @@ Service workers are a fundamental technology in the web platform.  Service worke
 
 <!-- [How Push Works](/web/fundamentals/push-notifications/how-push-works) -->
 
-<!--TODO: link to sections when available -->
+<!--todo: link to sections when available -->
 
 The main place in DevTools to inspect and debug service workers is the **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
@@ -361,9 +367,9 @@ If the service worker causes any errors, an **Errors** label is displayed.
 ![Service worker with errors](../media/sw-error.png)
 -->
 
-<!--TODO: capture "Service Worker Errors" sample when available -->
+<!--todo: capture "Service Worker Errors" sample when available -->
 
-<!--TODO: link Web "How tickle works" sections when available -->
+<!--todo: link Web "How tickle works" sections when available -->
 
 See also:
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
@@ -425,13 +431,13 @@ All open caches are listed under the **Cache Storage** expander.
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  This refers to a response retrieved from a different origin, like from a **CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) isn't enabled.
 
-<!--TODO: link Web "CDN" section when available -->
+<!--todo: link Web "CDN" section when available -->
 
-<!--TODO: link Web "opaque" section when available -->
+<!--todo: link Web "opaque" section when available -->
 
 In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
 
-<!--TODO: link Estimating "`navigator.storage` API" sections when available -->
+<!--todo: link Estimating "`navigator.storage` API" sections when available -->
 <!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
 
 The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17).  Remember the padding when determining how many opaque responses you want to cache, since you may easily exceed storage quota limitations much sooner than you otherwise expect based on the actual size of the opaque resources.
@@ -442,7 +448,7 @@ Related Guides:
 * [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)
 -->
 
-<!--TODO: link Work container storage quota for opaque responses section when available -->
+<!--todo: link Work container storage quota for opaque responses section when available -->
 
 
 <!-- ====================================================================== -->
@@ -461,7 +467,7 @@ The **Clear Storage** tab is useful when developing a progressive web app.  Use 
 For the other panes of the ![Application icon](./index-images/application-icon.png) **Application** tool, see:
 * [Inspect page resources](/iterate/manage-data/page-resources)
 * [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)
-<!--TODO: link to sections when available -->
+<!--todo: link to sections when available -->
 
 
 <!-- ====================================================================== -->
