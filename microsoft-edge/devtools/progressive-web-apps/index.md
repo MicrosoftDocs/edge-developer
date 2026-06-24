@@ -59,7 +59,7 @@ Progressive Web Apps (PWAs) are modern, high-quality applications built using we
 * PWAs show up in:
    * Activity switchers.
    * Device search engines such as Spotlight.
-   * In content sharing sheets<!-- todo: clarify -->.
+   * In content sharing sheets (todo: clarify).
 
 The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
 * [Other Application tool guides](#other-application-tool-guides), below.
@@ -89,7 +89,7 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
 
 * Use the **Cache storage** pane to view your service worker cache.
 
-<!-- todo: png showing these tree items of interest -->
+todo: create an added png showing these tree items of interest
 
 
 <!-- ====================================================================== -->
@@ -101,16 +101,15 @@ If you want your users to be able to add your app to their mobile home screen, y
 * Where to direct the user when launching from the home screen.
 * What the app looks like when launched.
 
-<!--Related Guides:
+Related guides:
+* [Improve user experiences with a Web App Manifest] /web/fundamentals/web-app-manifest
+* [Using App Install Banners] /web/fundamentals/app-install-banners
 
-* [Improve user experiences with a Web App Manifest](/web/fundamentals/web-app-manifest)
-* [Using App Install Banners](/web/fundamentals/app-install-banners)  -->
-
-<!-- todo: link to sections when available -->
+todo: link to sections when available
 
 To inspect a manifest:
 
-1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
+1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -122,7 +121,7 @@ To inspect a manifest:
 
    The **App Manifest** pane is displayed, where you can inspect the manifest:
 
-![The App Manifest Pane](./index-images/manifest-pane.png)<!-- todo: from airhorn to pwamp -->
+![The App Manifest Pane](./index-images/manifest-pane.png) todo: from airhorn to pwamp
 
 The **App Manifest** pane contains the following sections:
 * Top section, containing the manifest link
@@ -134,8 +133,9 @@ The **App Manifest** pane contains the following sections:
 * **Screenshot #1**
 * **Screenshot #2**
 
-* To view the manifest source file, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json`<!-- todo: PWAmp -->, for [Airhorner.com](https://airhorner.com).
-<!-- * Click the **Add to home screen** button to simulate an Add to home screen event.  Check out the next section for more information.  -->
+* To view the manifest source file, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json` (todo: PWAmp), for [Airhorner.com](https://airhorner.com).
+
+* To simulate an "Add to home screen" event, click the **Add to home screen** button.  Check out the next section for more information. 
 
 * The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
 
@@ -145,30 +145,35 @@ See also:
 * [Add a web app manifest](https://web.dev/add-manifest/) at web.dev.
 
 
-<!-- ------------------------------ --
-#### Simulate Add to home screen events -->
+<!-- ------------------------------ -->
+#### Simulate Add to home screen events
 <!-- not upstream, upstream article has 0 hits on "home screen" -->
 
-<!--A web app may only be added to a home screen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to home screen workflow, the criteria is potentially inconvenient.
-The **Add to home screen** button on the **App Manifest** pane lets you simulate Add to home screen events whenever you want.  -->
+todo: is this section semi-dup w/ [Trigger installation](#trigger-installation) below?
 
-<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to home screen.  Choosing on **Add to home screen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to home screen" banner for mobile devices.  -->
+A web app can only be added to a home screen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to home screen workflow, the criteria is potentially inconvenient.
+The **Add to home screen** button on the **App Manifest** pane lets you simulate Add to home screen events whenever you want.
 
-<!--
-![Add to desktop shelf](../media/io.png)
--->
+You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to home screen.  Clicking **Add to home screen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to home screen" banner for mobile devices.
 
-<!--
+![Add to desktop shelf] todo: io.png
+
+todo: this para is dup w/ below:
+
 > [!Tip]
 > Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to home screen events.  The Console tells you if your manifest has any issues and logs other information about the Add to home screen lifecycle.  -->
 
-<!--The **Add to home screen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
+todo: this para is dup w/ below:
 
-<!-- todo: rework content after sample app is created -->
+The **Add to home screen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
-<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to home screen** button (on DevTools) to trigger the "add to home screen" prompt on the connected mobile device.  -->
+todo: rework content after sample app is created
 
-<!--todo: link to "remote debugging" sections when available -->
+todo: this para is dup w/ below:
+
+If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to home screen** button (on DevTools) to trigger the "add to home screen" prompt on the connected mobile device.
+
+todo: link to "remote debugging" sections when available
 
 
 <!-- ------------------------------ -->
@@ -215,13 +220,13 @@ To trigger the installation flow of your PWA:
 
 It's recommended that you keep the DevTools **Console** tool open in the **Quick view** panel when you trigger installation.  The **Console** tells you if your manifest has any issues, and logs other information about the installation lifecycle.
 
-The **Install app** feature cannot simulate the workflow for mobile devices.  The desktop Microsoft Edge browser displays the installation button in the Address bar, even though<!-- todo: even when? --> DevTools is in [Device Mode](https://developer.chrome.com/docs/devtools/device-mode)<!-- todo: true? is DevTools in Device Mode? --><!-- todo: local link -->.  However, if you can successfully add your app to your desktop, then the app will work for mobile, too.
+The **Install app** feature cannot simulate the workflow for mobile devices.  The desktop Microsoft Edge browser displays the installation button in the Address bar, even though (todo: even when?) DevTools is in [Device Mode](https://developer.chrome.com/docs/devtools/device-mode) (todo: true? is DevTools in Device Mode?) (todo: local link).  However, if you can successfully add your app to your desktop, then the app will work for mobile, too.
 
 
 <!-- ---------- -->
 ###### Test a mobile device
 
-If you want to test out the actual mobile experience, you can connect a mobile device to DevTools via [remote debugging](https://developer.chrome.com/docs/devtools/remote-debugging)<!-- todo: local link -->.  To trigger the installation on the connected mobile device, open the three-dot menu (![The three-dot menu icon](./index-images/three-dot-menu.png)), and then click **Install app**.
+If you want to test out the actual mobile experience, you can connect a mobile device to DevTools via [remote debugging](https://developer.chrome.com/docs/devtools/remote-debugging) (todo: local link).  To trigger the installation on the connected mobile device, open the three-dot menu (![The three-dot menu icon](./index-images/three-dot-menu.png)), and then click **Install app**.
 
 
 <!-- ------------------------------ -->
@@ -232,9 +237,9 @@ App shortcuts let you to provide quick access to a handful of common actions tha
 
 To inspect the shortcuts that you defined in your [manifest file](https://web.dev/articles/app-shortcuts#define_app_shortcuts_in_the_web_app_manifest), scroll to the **Shortcut #N** sections of the **Manifest** page of the **Application** tool.  The **Shortcut #N** sections are below the **Windows Control Overlay** section of the **Manifest** page:
 
-![Shortcut section in the Manifest tab](./index-images/shortcut-sections.png)<!-- todo: pwamp -->
+![Shortcut section in the Manifest tab](./index-images/shortcut-sections.png) todo: pwamp
 
-The above screenshot is from the [Rowsie](https://rowsie.app)<!-- todo: pwamp --> demo page.  For more examples of shortcuts, inspect the demo page.
+The above screenshot is from the [Rowsie](https://rowsie.app) (todo: pwamp) demo page.  For more examples of shortcuts, inspect the demo page.
 
 See also:
 * [App shortcuts](https://web.dev/articles/app-shortcuts) at web.dev.
@@ -248,7 +253,7 @@ When you add a description and a set of screenshots to your manifest file, your 
 
 To inspect the screenshots, scroll down to the **Screenshot #N** sections of the **Manifest** page of the **Application** tool:
 
-![The installation dialog, and screenshots in the Manifest page](./index-images/screenshots-populating-the-installation-dialog.png)<!-- todo: pwamp -->
+![The installation dialog, and screenshots in the Manifest page](./index-images/screenshots-populating-the-installation-dialog.png) (todo: pwamp)
 <!-- https://airhorner.com -->
 
 See also:
@@ -261,19 +266,19 @@ See also:
 
 todo: format, links, pngs - https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler
 
-A PWA can handle links that use a specific protocol, for a more integrated experience.  To learn how to create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler)<!-- todo: local link or mdn -->.
+A PWA can handle links that use a specific protocol, for a more integrated experience.  To learn how to create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
 
 To test your handler:
 
-1. [Open DevTools](https://developer.chrome.com/docs/devtools/open)<!-- todo: inline steps, or local link --> on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo PWA.
+1. [Open DevTools](https://developer.chrome.com/docs/devtools/open) (todo: give inline steps, or local link) on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo PWA.
 
-1. From the demo page, install the PWA.<!-- todo: but there is no "app available, install" button in address bar for https://chrome.dev/devtools-protocol-handler/ -->
+1. From the demo page, install the PWA.  (todo: but there is no "app available, install" button in address bar for https://chrome.dev/devtools-protocol-handler/ )
 
 1. Reload the app.
 
    The browser has now registered the PWA as a handler for the `web+coffee` protocol.
 
-1. In the **Application** > **Manifest** > **Protocol Handlers** section, enter the URL<!-- todo: portion?  suffix?  path? --> that you want the handler to test, and then click the **Test protocol** button:
+1. In the **Application** > **Manifest** > **Protocol Handlers** section, enter the URL (todo: URL portion?  URL suffix?  URL path?) that you want the handler to test, and then click the **Test protocol** button:
 
    ![Testing the handler] ./index-images/testing-handler.png todo
 
@@ -300,20 +305,18 @@ To test your handler:
 
 Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  Service worker scripts enable your app to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
 
-<!--Related Guides:
+Related guides:
+* [Intro to Service Workers] /web/fundamentals/primers/service-worker
+* [Push Notifications: Timely, Relevant, and Precise] /web/fundamentals/push-notifications
+* [How Push Works] /web/fundamentals/push-notifications/how-push-works
 
-* [Intro to Service Workers](/web/fundamentals/primers/service-worker) - not found: https://learn.microsoft.com/web/fundamentals/primers/service-worker
-* [Push Notifications: Timely, Relevant, and Precise](/web/fundamentals/push-notifications)  -->
-
-<!-- [How Push Works](/web/fundamentals/push-notifications/how-push-works) -->
-
-<!--todo: link to sections when available -->
+todo: link to sections when available
 
 The main place in DevTools to inspect and debug service workers is the **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
 To view service workers:
 
-1. Go to a webpage, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
+1. Go to a webpage, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -325,9 +328,9 @@ To view service workers:
 
    The **Service workers** pane is displayed:
 
-![The Service workers pane](./index-images/service-workers-pane.png)<!-- todo: latest ui has 'w' -->
+![The Service workers pane](./index-images/service-workers-pane.png) (todo: latest ui has 'w'; can redo png)
 
-* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.<!-- todo: update when use PWAmp instead of Airhorner -->
+* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  (todo: update when use PWAmp instead of Airhorner)
 
 * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the ![Network icon](./index-images/network-icon.png) **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
 
@@ -361,15 +364,13 @@ To view service workers:
 
 * The **Update Cycle** table displays the service worker's activities and their elapsed times, such as **Install**, **Wait**, and **Activate**.  To see the exact timestamp of each activity, click the **Expand** (![Expander triangle](./index-images/expander-icon.png)) buttons.
 
-If the service worker causes any errors, an **Errors** label is displayed.
+If the service worker causes any errors, an **Errors** label is displayed:
 
-<!--
-![Service worker with errors](../media/sw-error.png)
--->
+![Service worker with errors] todo sw-error.png
 
-<!--todo: capture "Service Worker Errors" sample when available -->
+todo: capture "Service Worker Errors" sample when available
 
-<!--todo: link Web "How tickle works" sections when available -->
+todo: link Web "How tickle works" sections when available
 
 See also:
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
@@ -383,7 +384,7 @@ From the **Service workers** pane of the **Application** tool, you can quickly a
 
 To display the network requests that are handled by a service worker:
 
-1. Go to a webpage, such as [Airhorner.com](https://airhorner.com)<!-- todo: PWAmp -->, in a new window or tab.
+1. Go to a webpage, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -431,24 +432,23 @@ All open caches are listed under the **Cache Storage** expander.
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  This refers to a response retrieved from a different origin, like from a **CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) isn't enabled.
 
-<!--todo: link Web "CDN" section when available -->
+todo: link Web "CDN" section when available
 
-<!--todo: link Web "opaque" section when available -->
+todo: link Web "opaque" section when available
 
 In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
 
-<!--todo: link Estimating "`navigator.storage` API" sections when available -->
-<!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
+todo: link to Estimating "`navigator.storage` API" sections when available:  
+See also:
+* [Estimating available storage space] whats-new/2017/08/estimating-available-storage-space
 
 The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17).  Remember the padding when determining how many opaque responses you want to cache, since you may easily exceed storage quota limitations much sooner than you otherwise expect based on the actual size of the opaque resources.
 
 Related Guides:
 * [Stack Overflow: What limitations apply to opaque responses?](https://stackoverflow.com/q/39109789/385997)
-<!--
-* [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)
--->
+* [Alphabet work container: Understanding Storage Quota] /web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses - todo
 
-<!--todo: link Work container storage quota for opaque responses section when available -->
+todo: link Work container storage quota for opaque responses section when available
 
 
 <!-- ====================================================================== -->
@@ -467,7 +467,8 @@ The **Clear Storage** tab is useful when developing a progressive web app.  Use 
 For the other panes of the ![Application icon](./index-images/application-icon.png) **Application** tool, see:
 * [Inspect page resources](/iterate/manage-data/page-resources)
 * [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)
-<!--todo: link to sections when available -->
+
+todo: link to the above sections when available
 
 
 <!-- ====================================================================== -->
