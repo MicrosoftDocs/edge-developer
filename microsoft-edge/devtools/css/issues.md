@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 05/29/2026
+ms.date: 06/25/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -23,25 +23,29 @@ ms.date: 05/29/2026
    limitations under the License.  -->
 # Find invalid, overridden, inactive, and other CSS
 
-This guide assumes that you're familiar with inspecting CSS in Chrome DevTools.  See [View and change CSS](https://developer.chrome.com/docs/devtools/css) to learn the basics.
+todo: replace developer.chrome.com links, 11x
+
+26 todo's
+
+This guide assumes that you're familiar with inspecting CSS in Chrome DevTools.  To learn the basics, see [View and change CSS](https://developer.chrome.com/docs/devtools/css).  todo: non-Chrome link
 
 **Detailed contents:**
-* [Inspect the CSS you author](#styles)
-* [Understand CSS in the Styles pane](#css-in-styles)
-   * [Matched and unmatched selectors](#selectors)
-   * [Invalid values and declarations](#invalid)
+* [Inspect the CSS you author](#inspect-the-css-you-author)
+* [Understand CSS in the Styles pane](#understand-css-in-the-styles-pane)
+   * [Matched and unmatched selectors](#matched-and-unmatched-selectors)
+   * [Invalid values and declarations](#invalid-values-and-declarations)
    * [Overridden](#overridden)
    * [Inactive](#inactive)
    * [Inherited and non-inherited](#inherited-and-non-inherited)
    * [Shorthand](#shorthand)
    * [Non-editable](#non-editable)
-* [Inspect an element that still isn't styled the way you think](#computed)
-* [Understand CSS in the Computed pane](#css-in-computed)
-   * [Declared and inherited](#declared)
+* [Inspect an element that still isn't styled the way you think](#inspect-an-element-that-still-isnt-styled-the-way-you-think)
+* [Understand CSS in the Computed pane](#understand-css-in-the-computed-pane)
+   * [Declared and inherited](#declared-and-inherited)
    * [Runtime](#runtime)
-   * [Non-inherited and custom](#inherited-and-default)
-* [Search for duplicates](#filter)
-* [Find unused CSS](#coverage)
+   * [Non-inherited and custom](#non-inherited-and-custom)
+* [Search for duplicates](#search-for-duplicates)
+* [Find unused CSS](#find-unused-css)
 
 
 <!-- ====================================================================== -->
