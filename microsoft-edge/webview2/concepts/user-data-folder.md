@@ -12,10 +12,6 @@ ms.date: 06/26/2026
 
 The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
-**Detailed contents:**
-
-todo
-
 
 <!-- ------------------------------ -->
 #### Terminology
