@@ -297,7 +297,6 @@ _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
 
 For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser).
 
-
 <!-- neither specific to custom nor default -->
 **Where browser data gets stored within the UDF:**
 
@@ -320,7 +319,6 @@ Settings.cs
 WebView2Extensions.cs
 -->
 
-
 ##### [WinUI 3](#tab/winui3)
 
 <!-- todo: review -->
@@ -334,7 +332,7 @@ try {
     // The default user data folder is next to the executable; however, the install dir (that is, /Program Files/) is protected.
     var userDataFolder = Path.Combine(
       Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-      "YOURAPPNAME", "WebView2"); // Decide whether you want to leave this after uninstall or clean it up from the uninstaller.
+      "YOURAPPNAME", "WebView2"); // Decide whether you want to keep this dir after uninstall, or clean it up from the uninstaller.  TODO: clarify "clean it up", ie delete the dir?
     Log.Info($"WebView2 user data folder: {userDataFolder}");
     var env = await CoreWebView2Environment.CreateWithOptionsAsync(
         null, userDataFolder, new CoreWebView2EnvironmentOptions());
