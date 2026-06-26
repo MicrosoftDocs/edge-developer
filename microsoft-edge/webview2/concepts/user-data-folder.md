@@ -48,7 +48,7 @@ WebView2 apps use user data folders (UDFs) to store browser data, such as cookie
 |---|---|
 | `AllDomStorage` | DOM storage data, now and future. This browsing data kind is inclusive of `FileSystems`, `IndexedDb`, `WebSql`, `CacheStorage`. |
 | `AllProfile` | All profile data, now and future.  This is profile data that should be wiped to make it look like a new profile.  This doesn't delete account-scoped data, such as passwords, but removes access to account-scoped data by signing the user out.  New profile data types may be added to this data kind in the future.  This browsing data kind includes the data kinds `AllSite`, `DiskCache`, `DownloadHistory`, `GeneralAutofill`, `PasswordAutosave`, `BrowsingHistory`, and `Settings`. |
-| `AllSite` | All site data, now and future.  This browsing data kind includes the data kinds `AllDomStorage` and `Cookies`.  In the future, new site data types might be added to this data kind. |
+| `AllSite` | All site data, now and future.  This browsing data kind includes the data kinds `AllDomStorage` and `Cookies`. |
 | `BrowsingHistory` | Browsing history data. |
 | `CacheStorage` | Data stored by the CacheStorage DOM API. |
 | `Cookies` | HTTP cookies data. |
