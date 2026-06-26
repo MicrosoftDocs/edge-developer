@@ -232,7 +232,7 @@ On this platform, the default UDF location is the `ApplicationData\LocalFolder` 
 
 **Should you use default or custom UDF location?**
 
-On this platform, use the default UDF location.
+On this platform, use the default UDF location if distributing as packaged. If distributing as unpackaged, in scenarios where the install directory is protected, you must specify a custom UDF location.
 
 
 **Packaging:**
@@ -408,16 +408,28 @@ For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > w
 
 ##### [WinUI 3](#tab/winui3)
 
-<!--
-**Should you use default or custom UDF location?**
--->
-On this platform, use the default UDF location.
+On this platform, if distributing unpackaged to a protected install directory, you will need to specify a custom UDF location.
 
 
 **Example code:**
 
-For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted).
-
+```csharp
+try {
+    // The default user data folder is next to the executable, however the install dir (i.e. Program Files) is protected
+    var userDataFolder = Path.Combine(
+      Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+      "Obscura", "WebView2");
+    Log.Info($"WebView2 user data folder: {userDataFolder}");
+    var env = await CoreWebView2Environment.CreateWithOptionsAsync(
+        null, userDataFolder, new CoreWebView2EnvironmentOptions());
+    await WebView.EnsureCoreWebView2Async(env);
+} catch (Exception ex) {
+        Log.Error($"WebView.EnsureCoreWebView2Async failed: {ex.Message}");
+        // Implementation of fallback error UI is not provided
+        NativeUiError = ex.ToString();
+        return;
+}
+```
 
 **Where browser data gets stored within the UDF:**
 
