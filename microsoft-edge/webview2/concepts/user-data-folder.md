@@ -9,12 +9,15 @@ ms.subservice: webview
 ms.date: 11/14/2025
 ---
 # Manage user data folders
-<!-- # old title: Manage the user data folder -->
 
 The user data folder (UDF) is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
+**Detailed contents:**
+todo
 
-**Terminology:**
+
+<!-- ------------------------------ -->
+#### Terminology
 
 | Term | Definition |
 |---|---|
@@ -47,15 +50,15 @@ WebView2 apps use user data folders (UDFs) to store browser data, such as cookie
 | Type of data | Description |
 |---|---|
 | `AllDomStorage` | DOM storage data, now and future. This browsing data kind is inclusive of `FileSystems`, `IndexedDb`, `WebSql`, `CacheStorage`. |
-| `AllProfile` | Profile data that should be wiped to make it look like a new profile. This does not delete account-scoped data like passwords but will remove access to account-scoped data by signing the user out.  All profile data, now and future. New profile data types may be added to this data kind in the future. This browsing data kind includes the data kinds `AllSite`, `DiskCache`, `DownloadHistory`, `GeneralAutofill`, `PasswordAutosave`, `BrowsingHistory`, and `Settings`. |
-| `AllSite` | All site data, now and future. This browsing data kind includes the data kinds `AllDomStorage` and `Cookies`. New site data types may be added to this data kind in the future. |
+| `AllProfile` | All profile data, now and future.  This is profile data that should be wiped to make it look like a new profile.  This doesn't delete account-scoped data, such as passwords, but removes access to account-scoped data by signing the user out.  New profile data types may be added to this data kind in the future.  This browsing data kind includes the data kinds `AllSite`, `DiskCache`, `DownloadHistory`, `GeneralAutofill`, `PasswordAutosave`, `BrowsingHistory`, and `Settings`. |
+| `AllSite` | All site data, now and future.  This browsing data kind includes the data kinds `AllDomStorage` and `Cookies`.  In the future, new site data types might be added to this data kind. |
 | `BrowsingHistory` | Browsing history data. |
 | `CacheStorage` | Data stored by the CacheStorage DOM API. |
 | `Cookies` | HTTP cookies data. |
 | `DiskCache` | Disk cache. |
 | `DownloadHistory` | Download history data. |
 | `FileSystems` | File systems data. |
-| `GeneralAutofill` | General autofill form data. This excludes password information and includes information such as names, street and email addresses, phone numbers, and arbitrary input. Includes payment data. |
+| `GeneralAutofill` | General autofill form data.  This excludes password information, and includes information such as names, street and email addresses, phone numbers, arbitrary input, and payment data. |
 | `IndexedDb` | Data stored by the IndexedDB DOM feature. |
 | `LocalStorage` | Data stored by the localStorage DOM API. |
 | `PasswordAutosave` | Password autosave data. |
@@ -85,6 +88,7 @@ Each instance of a WebView2 control is associated with a WebView2 session.
 
 A WebView2 control shares its WebView2 session with any other WebView2 control that uses the same UDF. This is true whether the WebView2 controls are in the same host app or different host apps. However, a UDF may only be shared among host apps that are in the same logon session (more specifically, only one HDESKTOP). See [Process model for WebView2 apps](../concepts/process-model.md).
 
+
 <!-- ====================================================================== -->
 ## How to move the UDF
 
@@ -102,104 +106,86 @@ To move a user data folder (UDF):
 
 The default user data folder (UDF) location varies per platform.
 
-
-<!-- ====================================================================== -->
-<!-- default UDF location -->
-
 ##### [Win32](#tab/win32)
 
-<!--
-**What is the default UDF location?**
--->
 On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
 
-**Should you use default or custom UDF location?**
+<!-- ------------------------------ -->
+#### Should you use default or custom UDF location?
 
-In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See [Specifying a custom UDF location](#specifying-a-custom-udf-location), below.
 
 
-**Packaging:**
+<!-- ------------------------------ -->
+#### Packaging
 
 Win32 MSIX packaging is a standalone `.exe`.
 
-
-<!-- ====================================================================== -->
-<!-- default UDF location -->
-
 ##### [.NET (WPF/WinForms)](#tab/dotnet)
 
-<!--
-**What is the default UDF location?**
--->
 On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The file name of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
 
-**Should you use default or custom UDF location?**
+<!-- ------------------------------ -->
+#### Should you use default or custom UDF location?
 
 In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
 
 
-
-<!-- ====================================================================== -->
-<!-- default UDF location -->
-
 ##### [ClickOnce](#tab/clickonce)
 
-<!--
-**What is the default UDF location?**
--->
 On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in (or a subdirectory of it).
 
 
-**Should you use default or custom UDF location?**
+<!-- ------------------------------ -->
+#### Should you use default or custom UDF location?
 
 In most cases, you should use the default UDF location.  The default location where the UDF will be created will have appropriate permissions at runtime; the default UDF location is a writeable location.
 
 
-**Why the default location is writeable:**
+<!-- ------------------------------ -->
+#### Why the default location is writeable
 
 At run time, ClickOnce automatically installs your host app in a location that WebView2 has Write permission for.  ClickOnce can use the default UDF location and guarantee that WebView2 has Write permissions to be able to create the UDF there.
 
 However, your host app might not be able to use that location to write data to.  If your host app can't write to the default UDF location, see the section "Specifying a custom UDF location" below.
 
 
-**Cleanup:**
+<!-- ------------------------------ -->
+#### Cleanup
 
 At the end of the session, ClickOnce automatically cleans up.  
 
 
-**Packaging:**
+<!-- ------------------------------ -->
+#### Packaging
 
 ClickOnce is a deployment method for lightweight transient apps; it's a hybrid model.  It's possible to persist a ClickOnce app, but that's not standard, typical practice.  
 
 
-**What type of platform app a ClickOnce app wraps:**
+<!-- ------------------------------ -->
+#### What type of platform app a ClickOnce app wraps
 
 A ClickOnce app usually contains a .NET app.
 
-
-<!-- ====================================================================== -->
-<!-- default UDF location -->
-
 ##### [WinUI 2 (UWP)](#tab/uwp)
 
-<!--
-**What is the default UDF location?**
--->
 On this platform, the default UDF location is the `ApplicationData\LocalFolder` subfolder in the package's folder.
 
 
-**Should you use default or custom UDF location?**
+<!-- ------------------------------ -->
+#### Should you use default or custom UDF location?
 
 On this platform, use the default UDF location.
 
 
-**Why the default location is writeable:**
+<!-- ------------------------------ -->
+#### Why the default location is writeable
 
 WinUI 2 (UWP) is a packaged platform; it runs in the sandbox and is packaged to run in the sandbox, not usually as separate files, but as an app bundle.
 
@@ -212,36 +198,31 @@ At run time, during the session only, your WebView2 host app is given access to 
 WebView2 checks for that runtime, and creates the UDF in that writeable location.
 
 
-**Packaging:**
+<!-- ------------------------------ -->
+#### Packaging
 
 A WinUI 2 (UWP) app is self-contained regarding dependencies and for deployment (DLLs), although it's not packaged into a single file.
 
 A WinUI 2 (UWP) app is per-user, and has Write access under the installed location.
 
-
-<!-- ====================================================================== -->
-<!-- default UDF location -->
-
 ##### [WinUI 3](#tab/winui3)
 
-<!--
-**What is the default UDF location?**
--->
 On this platform, the default UDF location is the `ApplicationData\LocalFolder` subfolder in the package's folder.
 
 
-**Should you use default or custom UDF location?**
+<!-- ------------------------------ -->
+#### Should you use default or custom UDF location?
 
-On this platform, use the default UDF location if distributing as packaged. If distributing as unpackaged, in scenarios where the install directory is protected, you must specify a custom UDF location.
+<!-- todo: review -->
+On this platform, use the default UDF location if distributing as packaged.  If distributing as unpackaged, in scenarios where the install directory is protected, you must specify a custom UDF location.
 
 
-**Packaging:**
+<!-- ------------------------------ -->
+#### Packaging
 
 WinUI 3 is a "packaged" platform; it runs in the sandbox and is packaged to run in the sandbox, not usually as separate files, but as an app bundle.
 
 ---
-
-<!-- end of "default location" tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -249,24 +230,17 @@ WinUI 3 is a "packaged" platform; it runs in the sandbox and is packaged to run 
 
 How to specify a custom user data folder (UDF) location varies per platform.
 
-
-<!-- ====================================================================== -->
-<!-- custom UDF location -->
-
 ##### [Win32](#tab/win32)
 
-<!--
-**Should you use default or custom UDF location?**
--->
 On this platform, in most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
 
 You should specify the same folder where all other app data is stored.
 
 
-**How to specify a custom UDF location:**
+<!-- ------------------------------ -->
+#### How to specify a custom UDF location
 
 Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) and the `userDataFolder` parameter.  But use the code below, which is from the `WebView2Samples` repo.<!-- this api ref contains incorrect content but use the code listing below -->
-
 
 **Example code:**
 
@@ -284,38 +258,29 @@ HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
 
 For example code, see the Win32-appropriate, `.cpp` or `.cs` file, near [WebView2Samples repo > WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample).
 
-
 <!-- neither specific to custom nor default -->
 **Where browser data gets stored within the UDF:**
 
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
 
-**Why you should use a custom UDF location on this platform:**
+<!-- ------------------------------ -->
+#### Why you should use a custom UDF location on this platform
 
 If you don't specify a custom UDF location, the default location can produce a run-time failure, if using installer technologies, because installer technologies put the app and thus the UDF in a protected area of the filesystem, where WebView2 isn't able to create the UDF, and thus UDF creation will usually fail.  WebView2 will throw an error to let your host app know that the UDF can't be created at that location.
 
 If the host app is running from a location that the user doesn't have Write access to, WebView2 isn't able to create the UDF, and you will receive a runtime error during WebView2 startup.
 
-
-
-<!-- ====================================================================== -->
-<!-- custom UDF location -->
-
 ##### [.NET (WPF/WinForms)](#tab/dotnet)
 
-<!--
-**Should you use default or custom UDF location?**
--->
 On this platform, in most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
 
-
-**How to specify a custom UDF location:**
+<!-- ------------------------------ -->
+#### How to specify a custom UDF location
 
 You should specify the same folder where all other app data is stored.
 
 Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
-
 
 **Example code:**
 
@@ -330,37 +295,30 @@ _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
 For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, near [WebView2Samples repo > WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WpfBrowser).
 
 
-**Why you need to specify a custom UDF on this platform:**
+<!-- ------------------------------ -->
+#### Why you need to specify a custom UDF on this platform
 
 If you don't specify a custom UDF location, the default location can produce a run-time failure, if using installer technologies.  This is because installer technologies put the app and thus the UDF in a protected area of the filesystem, where WebView2 isn't able to create the UDF, and thus UDF creation will usually fail.
 
 WebView2 will throw an error to let your host app know that the UDF can't be created at that location.
 
-
 <!-- neither focused on default nor custom -->
 **Where data is stored within the UDF:**
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
-
-<!-- ====================================================================== -->
-<!-- custom UDF location -->
-
 ##### [ClickOnce](#tab/clickonce)
 
-<!--
-**Should you use default or custom UDF location?**
--->
 On this platform, in most cases, you should use the default UDF location.
 
 If you specify a custom UDF location, make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
 
 
-**How to specify a custom UDF location:**
+<!-- ------------------------------ -->
+#### How to specify a custom UDF location
 
 Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
 
 You should specify the same folder where all other app data is stored.
-
 
 **Example code:**
 
@@ -376,69 +334,62 @@ For example code, see the .NET (WPF & WinForms)-appropriate, .cpp or .cs file, n
 
 
 <!-- neither specific to custom nor default -->
-**Where browser data gets stored within the UDF:**
+<!-- ------------------------------ -->
+#### Where browser data gets stored within the UDF
 
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
-
-
-<!-- ====================================================================== -->
-<!-- custom UDF location -->
 
 ##### [WinUI 2 (UWP)](#tab/uwp)
 
-<!--
-**Should you use default or custom UDF location?**
--->
 On this platform, use the default UDF location.
 
 
-**Where browser data gets stored within the UDF:**
+<!-- ------------------------------ -->
+#### Where browser data gets stored within the UDF
 
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
 
-**Example code:**
+<!-- ------------------------------ -->
+#### Example code
 
 For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
 
-
-
-<!-- ====================================================================== -->
-<!-- custom UDF location -->
-
 ##### [WinUI 3](#tab/winui3)
 
-On this platform, if distributing unpackaged to a protected install directory, you will need to specify a custom UDF location.
+<!-- todo: review -->
+On this platform, if distributing unpackaged to a protected install directory, you must specify a custom UDF location.
 
 
-**Example code:**
+<!-- ------------------------------ -->
+#### Example code
 
+<!-- todo: review -->
 ```csharp
 try {
-    // The default user data folder is next to the executable, however the install dir (i.e. Program Files) is protected
+    // The default user data folder is next to the executable; however, the install dir (that is, /Program Files/) is protected.
     var userDataFolder = Path.Combine(
       Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-      "YOURAPPNAME", "WebView2"); // Decide whether you want to leave this after uninstall or clean it up from the uninstaller
+      "YOURAPPNAME", "WebView2"); // Decide whether you want to leave this after uninstall or clean it up from the uninstaller.
     Log.Info($"WebView2 user data folder: {userDataFolder}");
     var env = await CoreWebView2Environment.CreateWithOptionsAsync(
         null, userDataFolder, new CoreWebView2EnvironmentOptions());
     await WebView.EnsureCoreWebView2Async(env);
 } catch (Exception ex) {
         Log.Error($"WebView.EnsureCoreWebView2Async failed: {ex.Message}");
-        // Implementation of fallback error UI is not provided
+        // Implementation of fallback error UI is not provided.
         NativeUiError = ex.ToString();
         return;
 }
 ```
 
-**Where browser data gets stored within the UDF:**
+
+<!-- ------------------------------ -->
+#### Where browser data gets stored within the UDF
 
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
-
 ---
-
-<!-- end of "custom UDF location" tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -447,21 +398,16 @@ After creation of the session and UDF, browser data from your WebView2 control i
 To find out what the user data folder (UDF) location was set to, use the `CoreWebView2Environment.UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 session.
 
 Reasons you might want to read the UDF location:
-
 * If you want to clear browsing data from the UDF folder, such as at the end of a session.
-
 * If you want to delete the UDF.
-
-
-<!-- ====================================================================== -->
-<!-- retrieving UDF location -->
 
 ##### [Win32](#tab/win32)
 
 Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
 
-**Example code:**
+<!-- ------------------------------ -->
+#### Example code
 
 ```cpp
 auto environment7 = m_webViewEnvironment.try_query<ICoreWebView2Environment7>();
@@ -472,88 +418,74 @@ environment7->get_UserDataFolder(&userDataFolder);
 
 For examples of reading the `UserDataFolder` property, see the Win32 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
-
-<!-- ====================================================================== -->
-<!-- retrieving UDF location -->
-
 ##### [.NET (WPF/WinForms)](#tab/dotnet)
 
 <!-- Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 
 <!-- dev: add example code to https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
-
-**Example code:**
+<!-- #### Example code -->
 
 <!-- ```csharp -->
-<!-- // ADO work item "[wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location" - then copy lines to here
+<!-- todo: AB#? // ADO work item "[wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location" - then copy lines to here
 <!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
-
-
-<!-- ====================================================================== -->
-<!-- retrieving UDF location -->
 
 ##### [ClickOnce](#tab/clickonce)
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
-
-**Example code:**
+<!-- #### Example code -->
 
 <!-- ```csharp -->
-<!-- // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
+<!-- todo: AB#? // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
 <!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
-
-
-<!-- ====================================================================== -->
-<!-- retrieving UDF location -->
 
 ##### [WinUI 2 (UWP)](#tab/uwp)
 
 Use the WinRT [CoreWebView2Environment.UserDataFolder Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
 
 
-**Example code:**
+<!-- ------------------------------ -->
+#### Example code
 
 ```csharp
 private void OnGetUDFClick(object sender, RoutedEventArgs e)
 {
-    // This property can be used after WebView2 creation to find the actual location of the User Data Folder
+    // This property can be used after WebView2 creation to find the actual location of the User Data Folder.
     UserDataFolder.Text = WebView2.CoreWebView2.Environment.UserDataFolder;
 }
 ```
 
 For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) samples in the [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
 
-
-<!-- ====================================================================== -->
-<!-- retrieving UDF location -->
-
 ##### [WinUI 3](#tab/winui3)
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 
-**Example code:**
+<!-- ------------------------------ -->
+#### Example code
 
 ```csharp
 private void OnGetUDFClick(object sender, RoutedEventArgs e)
 {
-    // This property can be used after WebView2 creation to find the actual location of the User Data Folder
+    // This property can be used after WebView2 creation to find the actual location of the User Data Folder.
     UserDataFolder.Text = WebView2.CoreWebView2.Environment.UserDataFolder;
 }
 ```
 
-<!-- For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample). -->
-
+<!--
+For example code, in [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample), see:
+* [App.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2_WinUI3_Sample/WebView2_WinUI3_Sample/App.xaml.cs)
+* [MainWindow.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2_WinUI3_Sample/WebView2_WinUI3_Sample/MainWindow.xaml.cs)
+todo: which?  delete or reveal this comment?
+-->
 
 ---
-
-<!-- end of "retrieving location" tab-set -->
 
 
 <!-- ====================================================================== -->
