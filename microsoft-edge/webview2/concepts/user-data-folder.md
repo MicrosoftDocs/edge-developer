@@ -418,7 +418,7 @@ try {
     // The default user data folder is next to the executable, however the install dir (i.e. Program Files) is protected
     var userDataFolder = Path.Combine(
       Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-      "Obscura", "WebView2");
+      "YOURAPPNAME", "WebView2"); // Decide whether you want to leave this after uninstall or clean it up from the uninstaller
     Log.Info($"WebView2 user data folder: {userDataFolder}");
     var env = await CoreWebView2Environment.CreateWithOptionsAsync(
         null, userDataFolder, new CoreWebView2EnvironmentOptions());
