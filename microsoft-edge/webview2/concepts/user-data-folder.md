@@ -139,7 +139,7 @@ On this platform, the default UDF location is the directory that the app executa
 
 In most cases, you should use the default UDF location.  The default location where the UDF will be created will have appropriate permissions at runtime; the default UDF location is a writeable location.
 
-**Why the default location is writeable**
+**Why the default location is writeable:**
 
 At run time, ClickOnce automatically installs your host app in a location that WebView2 has Write permission for.  ClickOnce can use the default UDF location and guarantee that WebView2 has Write permissions to be able to create the UDF there.
 
@@ -382,7 +382,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 
 <!-- dev: add example code to https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
-<!-- **Example code:** -->
+**Example code:**
 
 <!-- ```csharp -->
 <!-- todo: AB#? // ADO work item "[wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location" - then copy lines to here
@@ -394,7 +394,7 @@ For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForm
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
-<!-- **Example code:** -->
+**Example code:**
 
 <!-- ```csharp -->
 <!-- todo: AB#? // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
