@@ -185,7 +185,6 @@ On this platform, the default UDF location is the `ApplicationData\LocalFolder` 
 
 **Should you use default or custom UDF location?**
 
-<!-- todo: review -->
 On this platform, use the default UDF location if distributing as packaged.  If distributing as unpackaged, in scenarios where the install directory is protected, you must specify a custom UDF location.
 
 **Packaging:**
@@ -317,12 +316,10 @@ WebView2Extensions.cs
 
 ##### [WinUI 3](#tab/winui3)
 
-<!-- todo: review -->
 On this platform, if distributing unpackaged to a protected install directory, you must specify a custom UDF location.
 
 **Example code:**
 
-<!-- todo: review -->
 ```csharp
 try {
     // The default user data folder is next to the executable; however, the install dir (that is, /Program Files/) is protected.
@@ -381,7 +378,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 **Example code:**
 
 <!-- ```csharp -->
-<!-- todo: AB#? // ADO work item "[wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location" - then copy lines to here
+<!-- todo: when AB#38572893 ([wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location) is fixed, copy code to here, add "additional" below
 <!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
@@ -393,7 +390,7 @@ Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/micro
 **Example code:**
 
 <!-- ```csharp -->
-<!-- todo: AB#? // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
+<!-- todo: when AB#38572793 ([wv2] Update ClickOnce sample to add code to retrieve UDF location) is fixed, copy code to here, add "additional" below
 <!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
