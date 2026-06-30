@@ -311,7 +311,7 @@ For example code, see line 161 in [/webview2_sample_uwp/Pages/SettingsPage.xaml.
 
 ##### [WinUI 3](#tab/winui3)
 
-On this platform, if distributing unpackaged to a protected install directory, you must specify a custom UDF location.
+On this platform, if distributing as unpackaged to a protected install directory, you must specify a custom UDF location.
 
 **Example code:**
 
