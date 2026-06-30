@@ -307,12 +307,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 **Example code:**
 
-For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp).
-<!-- todo: what file name?
-App.xaml.cs
-Settings.cs
-WebView2Extensions.cs
--->
+For example code, see line 161 in [/webview2_sample_uwp/Pages/SettingsPage.xaml.cs](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/webview2_sample_uwp/Pages/SettingsPage.xaml.cs#L161).  This sample app doesn't set a custom user data folder.  This code shows what the user data folder turned out to be.
 
 ##### [WinUI 3](#tab/winui3)
 
@@ -322,19 +317,21 @@ On this platform, if distributing unpackaged to a protected install directory, y
 
 ```csharp
 try {
-    // The default user data folder is next to the executable; however, the install dir (that is, /Program Files/) is protected.
+    // The default user data folder is next to the executable; however, the install
+    // dir (that is, /Program Files/) is protected.
     var userDataFolder = Path.Combine(
       Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-      "YOURAPPNAME", "WebView2"); // Decide whether you want to keep this folder after uninstall, or delete the folder by using the uninstaller.
+      "YOURAPPNAME", "WebView2"); // You need to decide if you want to keep this 
+      // folder during uninstall, or add uninstall code that removes this folder.
     Log.Info($"WebView2 user data folder: {userDataFolder}");
     var env = await CoreWebView2Environment.CreateWithOptionsAsync(
         null, userDataFolder, new CoreWebView2EnvironmentOptions());
     await WebView.EnsureCoreWebView2Async(env);
 } catch (Exception ex) {
-        Log.Error($"WebView.EnsureCoreWebView2Async failed: {ex.Message}");
-        // Implementation of fallback error UI is not provided.
-        NativeUiError = ex.ToString();
-        return;
+    Log.Error($"WebView.EnsureCoreWebView2Async failed: {ex.Message}");
+    // Implementation of fallback error UI is not provided.
+    NativeUiError = ex.ToString();
+    return;
 }
 ```
 
