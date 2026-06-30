@@ -30,6 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
+          # latest 10
+          # maint:
+          # toc.yml - add new relnotes page, move a relnotes page to archive
+          # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page -->
         - name: Microsoft Edge 150
           href: ./web-platform/release-notes/150.md
           displayName: Microsoft Edge 150 web platform release notes (Jul. 2026)  # page title
@@ -166,7 +170,11 @@
             - name: What's new in Microsoft Edge DevTools
               href: ./devtools/whats-new/index.md
               displayName: release notes, announcements
-# latest 10 What's new
+
+              # latest 10
+              # maint:
+              # toc.yml - add new what's new page, move a what's new page to archive
+              # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page -->
             - name: Microsoft Edge 149
               href: ./devtools/whats-new/149.md
               displayName: What's new in DevTools (Microsoft Edge 149)  # page title
