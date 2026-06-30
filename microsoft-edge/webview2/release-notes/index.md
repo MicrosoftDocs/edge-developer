@@ -29,50 +29,72 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.nnnn-prerelease, for Runtime 151 (Jul. 6, 2026)
+## Prerelease SDK 1.0.4126-prerelease, for Runtime 150 (Jul. 6, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: July 06, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.4126-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4126-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or later.
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 151.0.4126.0 or higher.
 
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
 <!-- ---------- -->
-###### heading
+###### CoreWebView2CrashReport
 
-description
+<!-- description need to updated -->
+
+description 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2CrashReport Class](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.BucketId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.bucketid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.CrashReportId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.crashreportid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.ExceptionCode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.exceptioncode?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.FaultingModuleName Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmodulename?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.FaultingModuleVersion Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmoduleversion?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.FaultOffset Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultoffset?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.ReportTime Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.reporttime?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+
+* [CoreWebView2OriginFeature.ReputationChecking Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeature?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+<!-- todo : yet to confirm the enum as CoreWebView2OriginFeature is allready seen in the experimental -->
+* [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2CrashReport Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2CrashReport.BucketId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#bucketid)
+* [CoreWebView2CrashReport.CrashReportId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreportid)
+* [CoreWebView2CrashReport.ExceptionCode Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#exceptioncode)
+* [CoreWebView2CrashReport.FaultingModuleName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmodulename)
+* [CoreWebView2CrashReport.FaultingModuleVersion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmoduleversion)
+* [CoreWebView2CrashReport.FaultOffset Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultoffset)
+* [CoreWebView2CrashReport.ReportTime Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#reporttime)
+* [CoreWebView2ProcessFailedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
+* [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreport)
+
+
 ##### [Win32/C++](#tab/win32cpp)
+
+  * `COREWEBVIEW2_ORIGIN_FEATURE_REPUTATION_CHECKING`
+* [ICoreWebView2ExperimentalCrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalCrashReport::get_BucketId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_bucketid)
+  * [ICoreWebView2ExperimentalCrashReport::get_CrashReportId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreportid)
+  * [ICoreWebView2ExperimentalCrashReport::get_ExceptionCode](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_exceptioncode)
+  * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmodulename)
+  * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleVersion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmoduleversion)
+  * [ICoreWebView2ExperimentalCrashReport::get_FaultOffset](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultoffset)
+  * [ICoreWebView2ExperimentalCrashReport::get_ReportTime](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_reporttime)
+* [ICoreWebView2ExperimentalProcessFailedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalProcessFailedEventArgs2::get_CrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreport)
+
 
 ---
 
@@ -81,123 +103,65 @@ description
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
 
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Added fix for reentrancy for frame deletion 
+* Fixed object wrapper access related UAF 
+* Stamp browser-authoritative origin on Host pipe to fix WebMessageReceivedEventArgs.Source spoof 
+* Restricting access to singleton host pipe in deprecated webview2 
+* Removed origin parameter from the methods accessing native object 
+* Harden WebView2 virtual-host kDeny enforcement against renderer spoofing and NTFS-junction escapes.  
+* Fix window to Visual UIA tree 
+* Fixed regression in AddScriptToExecuteOnDocumentCreated API.
+* Implement OnRendererResponsive for hang outcome tracking 
 
 
-<!-- ---------- -->
-###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
 
-<!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime 151 (Jul. 6, 2026) -->
+<!-- end of Prerelease SDK 1.0.4126-prerelease, for Runtime 150 (Jul. 6, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.nnnn.nn, for Runtime 150 (Jul. 6, 2026)
+## Release SDK 1.0.4078.44, for Runtime 150 (Jul. 6, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: July 06, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.4078.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4078.44)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or later.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 150.0.4078.44 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Added fix for reentrancy for frame deletion
+* Fixed object wrapper access related UAF
+* Stamp browser-authoritative origin on Host pipe to fix WebMessageReceivedEventArgs.Source spoof
+* Restricting access to singleton host pipe in deprecated webview2
+* Removed origin parameter from the methods accessing native object
+* Harden WebView2 virtual-host kDeny enforcement against renderer spoofing and NTFS-junction escapes. 
+* Fix window to Visual UIA tree
 
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
 
 <!-- end of Release SDK 1.0.nnnn.nn, for Runtime 150 (Jul. 6, 2026) -->
 
