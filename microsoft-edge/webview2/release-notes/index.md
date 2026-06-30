@@ -29,7 +29,7 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.4126-prerelease, for Runtime 150 (Jul. 6, 2026)
+## Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026)
 
 Release Date: Jul. 6, 2026
 
@@ -128,7 +128,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
 * Implemented `OnRendererResponsive` for hang outcome tracking.
 
-<!-- end of Prerelease SDK 1.0.4126-prerelease, for Runtime 150 (Jul. 6, 2026) -->
+<!-- end of Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026) -->
 
 
 <!-- ====================================================================== -->
