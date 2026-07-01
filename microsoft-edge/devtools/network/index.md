@@ -67,7 +67,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
    ![The demo](./index-images/demo-page.png)
 
-   <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
+   <!-- You can view the source files for this demo in the [MicrosoftEdge / Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder: -->
 
    <!--
    ![The demo in one window and this tutorial in a different window](../media/network-tutorial/windows.png)

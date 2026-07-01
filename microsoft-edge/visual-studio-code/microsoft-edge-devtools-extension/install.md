@@ -97,10 +97,9 @@ As another alternative, instead of cloning the entire directory, you can downloa
 
 `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`
 
-
 To clone the **Demos** repo to use the **demo-to-do** sample for this tutorial:
 
-1. Go to [MicrosoftEdge/Demos repo](https://github.com/MicrosoftEdge/Demos/).
+1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos/) repo.
 
 1. If the green **Code** button isn't shown, click **Demos** in the path **Microsoft Edge** / **Demos** in the upper left to go to the main page of the repo.
 

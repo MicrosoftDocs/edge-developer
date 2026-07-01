@@ -35,7 +35,7 @@ The first step in debugging is to find a sequence of actions that consistently r
 
    Tip: Open Microsoft Edge in InPrivate Mode, to ensure that Microsoft Edge runs in a clean state. For more information, see [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/microsoft-edge/browse-inprivate-in-microsoft-edge-cd2c9a48-0bc4-b98e-5e46-ac40c84e27e2)
 
-   <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
+   <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge / Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
 1. Enter **5** in the **Number 1** text box.
 

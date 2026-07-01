@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 07/03/2025
+ms.date: 05/22/2026
 ---
 # Samples for Microsoft Edge extensions
 
@@ -14,36 +14,21 @@ Use the extensions demos to learn how to develop extensions for Microsoft Edge.
 
 
 <!-- ====================================================================== -->
-## microsoft / MicrosoftEdge-Extensions repo
-<!-- sync:
-https://learn.microsoft.com/microsoft-edge/extensions/samples#microsoftedge-extensions-repo
-https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code
-sync'd Jul. 30, 2025
--->
+## Samples in the "microsoft / MicrosoftEdge-Extensions" repo
 
-| Demo name | Description | Source code & Readme | Docs |
-|---|---|---|---|
-| Picture viewer pop-up webpage | A browser extension, without JavaScript, that displays the `stars.jpeg` image in a small webpage in a pop-up in any Microsoft Edge tab. | [/picture-viewer-popup-webpage/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-viewer-popup-webpage) | [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md) |
-| Picture inserter using content script | Uses JavaScript code to insert the `stars.jpeg` image at the top of the current webpage, inside the `<body>` element. | [/picture-inserter-content-script/](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension-samples/picture-inserter-content-script) | [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md) |
+See [Code](https://github.com/microsoft/MicrosoftEdge-Extensions/blob/main/README.md#code) in the Readme for the "microsoft / MicrosoftEdge-Extensions" repo.
 
-* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [GoogleChrome / chrome-extensions-samples repo](#googlechrome--chrome-extensions-samples-repo), below.
+* [Develop an extension for the Microsoft Edge sidebar](../developer-guide/sidebar.md) - For more Sidebar API extensions demos, see [Samples in the "GoogleChrome / chrome-extensions-samples" repo](#samples-in-the-googlechrome--chrome-extensions-samples-repo), below.
 
 
 <!-- ====================================================================== -->
-## MicrosoftEdge / Demos repo
-<!-- sync:
-https://learn.microsoft.com/microsoft-edge/extensions/samples#microsoftedgedemos-repo
-https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-extensions
-sync'd Jul. 30, 2025
--->
+## Samples in the "MicrosoftEdge / Demos" repo
 
-| Demo name | Description | Source code & Readme | Docs |
-|---|---|---|---|
-| Custom DevTools tool | A Microsoft Edge extension that adds a **Custom** tool in Microsoft Edge DevTools. | [/devtools-extension/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-extension) | [Add a custom tool in Microsoft Edge DevTools](../developer-guide/devtools-extension.md) |
+See [Microsoft Edge extensions](https://github.com/MicrosoftEdge/Demos/blob/main/README.md#microsoft-edge-devtools) in the Readme for the "MicrosoftEdge / Demos" repo.
 
 
 <!-- ====================================================================== -->
-## GoogleChrome / chrome-extensions-samples repo
+## Samples in the "GoogleChrome / chrome-extensions-samples" repo
 
 * [GoogleChrome / chrome-extensions-samples](https://github.com/GoogleChrome/chrome-extensions-samples) repo.
    * [README.md](https://github.com/GoogleChrome/chrome-extensions-samples/blob/main/README.md)
@@ -66,4 +51,4 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Clone the Edge Demos repo to your drive](../../devtools/samples/index.md#clone-the-edge-demos-repo-to-your-drive) in _Sample code for DevTools_.
+* [Clone the "MicrosoftEdge / Demos" repo to your drive](../../devtools/samples/index.md#clone-the-microsoftedge--demos-repo-to-your-drive) in _Sample code for DevTools_.
