@@ -11,6 +11,32 @@ ms.date: 03/25/2025
 # Debug WebView2 apps with Visual Studio Code
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Create a launch.json file](#create-a-launchjson-file)
+   * [Using a registry value](#using-a-registry-value)
+   * [Command-line URL parameter passed in](#command-line-url-parameter-passed-in)
+* [Debug your code](#debug-your-code)
+* [Targeted WebView2 debugging](#targeted-webview2-debugging)
+   * [Cannot debug two WebView2 controls at the same time](#cannot-debug-two-webview2-controls-at-the-same-time)
+* [Debug running processes](#debug-running-processes)
+   * [Using an environment variable](#using-an-environment-variable)
+* [Debug tracing options](#debug-tracing-options)
+* [Debug Office Add-ins](#debug-office-add-ins)
+* [Debug WebView2 WinUI 2 (UWP) apps](#debug-webview2-winui-2-uwp-apps)
+* [Source maps with the WebResourceRequested event or virtual host name mapping](#source-maps-with-the-webresourcerequested-event-or-virtual-host-name-mapping)
+* [Troubleshoot the debugger](#troubleshoot-the-debugger)
+   * [Doesn't stop at breakpoint](#doesnt-stop-at-breakpoint)
+   * [Can't attach to running process](#cant-attach-to-running-process)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
+
 Visual Studio Code has a built-in debugger for browser debugging.  See [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging).
 
 
@@ -99,7 +125,7 @@ Open `launch.json` and complete the following actions to use targeted WebView2 d
 When debugging your app, you might need to step through the code from the beginning of the rendering process.  If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Cannot debug two WebView2 controls at the same time
 
 After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time, because the CDP port is shared by all WebView2 controls, and uses a single port number.
@@ -257,7 +283,7 @@ WebView2 doesn't load source maps that are referenced by content which was loade
 You might encounter these scenarios when using the debugger.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Doesn't stop at breakpoint
 
 If the debugger doesn't stop at the breakpoint, and you have debug output: 
@@ -265,7 +291,7 @@ If the debugger doesn't stop at the breakpoint, and you have debug output:
 To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
 
 
-<!-- ---------------------------------- -->
+<!-- ------------------------------ -->
 #### Can't attach to running process
 
 If you can't attach to a running process, and you get a timeout error:
