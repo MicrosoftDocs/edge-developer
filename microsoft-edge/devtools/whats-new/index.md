@@ -14,6 +14,22 @@ To check out the latest features of Microsoft Edge DevTools and the Microsoft Ed
 
 What's new articles correspond to historical releases of Microsoft Edge, and are not updated over time.  References to "new features" and "experiments" might become outdated as new versions of Microsoft Edge are released.
 
+<!-- maint:
+toc.yml - add new what's new page, move a what's new page to archive
+/devtools/whats-new/index.md - add new what's new page, remove earliest what's new page -->
+* [What's new in DevTools (Microsoft Edge 149)](./149.md)
+* [What's new in DevTools (Microsoft Edge 148)](./148.md)
+* [What's new in DevTools (Microsoft Edge 147)](./147.md)
+* [What's new in DevTools (Microsoft Edge 146)](./146.md)
+* [What's new in DevTools (Microsoft Edge 145)](./145.md)
+* [What's new in DevTools (Microsoft Edge 144)](./144.md)
+* [What's new in DevTools (Microsoft Edge 143)](./143.md)
+* [What's new in DevTools (Microsoft Edge 142)](./2025/10/devtools-142.md)
+* [What's new in DevTools (Microsoft Edge 141)](./2025/10/devtools-141.md)
+* [What's new in DevTools (Microsoft Edge 140)](./2025/09/devtools-140.md)
+
+For earlier What's new pages, see **Archive** in the table of contents.
+
 
 <!-- ====================================================================== -->
 ## Download the preview channels
