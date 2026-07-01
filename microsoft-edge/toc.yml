@@ -36,7 +36,7 @@
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
         - name: Microsoft Edge 151
           href: ./web-platform/release-notes/151.md
-          displayName: Microsoft Edge 151 web platform release notes (Aug. 2026)  # page title
+          displayName: Microsoft Edge 151 web platform release notes (Jul. 2026)  # page title
 
         - name: Microsoft Edge 150
           href: ./web-platform/release-notes/150.md
