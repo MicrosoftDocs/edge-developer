@@ -201,8 +201,8 @@ The **Computed** tab lists property values calculated at runtime in pale text.
 ![Property values calculated at runtime] todo: property-values-calculated.png
 
 In this example, Microsoft Edge calculated the following for the `<ul>` element:
-* The `width` relative its parent, `<div>`
-* The `height` relative to its children, the two `<li>` elements
+* The `width` relative its parent, a `<div>`.
+* The `height` relative to its children, the two `<li>` elements.
 
 
 <!-- ------------------------------ -->
