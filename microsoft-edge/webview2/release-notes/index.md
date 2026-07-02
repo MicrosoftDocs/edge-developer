@@ -37,10 +37,16 @@ Release Date: Jul. 6, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 151.0.4126.0 or higher.
 
+
+<!-- ------------------------------ -->
 #### Upcoming release cadence change
 
-The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
-[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
+Starting with version 152 (Aug. 24, 2026), the WebView2 Runtime moves to a 2-week cadence.  This is aligned with Microsoft Edge.  WebView2 Runtime version 151 is the final release that's on a 4-week cadence.
+
+The WebView2 SDK continues on its monthly cadence.
+
+See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting v152)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137).
+
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
@@ -49,16 +55,35 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### Crash Report in ProcessFailed event
+###### Crash Report in `ProcessFailed` event
 
-The CrashReport API provides crash diagnostic data when a WebView2 process fails with a crash. When a ProcessFailed event is raised, the host application can access the CrashReport property on the ProcessFailedEventArgs to retrieve crash signature details including the exception code, faulting module name and version, fault offset, crash report ID, bucket ID, and the time the crash was reported.
+The CrashReport API provides crash diagnostic data when a WebView2 process fails with a crash.  When a `ProcessFailed` event is raised, the host application can access the `CrashReport` property on the `ProcessFailedEventArgs` to retrieve crash signature details, including:
+* The exception code.
+* The faulting module name and version.
+* The fault offset.
+* The crash report ID.
+* The bucket ID.
+* The time the crash was reported.
 
-CrashReport is null when the failure did not produce a crash report (normal exit, external kill, launch failure, hang), and may also be null for certain crash-type failures where no report was produced. Host apps should always check for null before accessing properties.
+`ProcessFailedEventArgs.CrashReport` is `null` when the failure didn't produce a crash report, such as in these scenarios:
+* A normal exit.
+* An external kill of the process.
+* A launch failure.
+* A hang.
 
+`ProcessFailedEventArgs.CrashReport` may also be `null` for certain crash-type failures where no report was produced.  Host apps should always check for `null` before accessing properties.
+
+
+<!-- ---------- -->
 ###### Configure per-origin reputation checking (SmartScreen) settings
 
-The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins. The `ReputationChecking` feature is an `enum` member in the `CoreWebView2OriginFeature` enum.
-When this feature is set to `Disabled` for an origin, phishing and malware reputation checks are bypassed for that origin. If not configured for an origin, the global `IsReputationCheckingRequired` setting applies. If `IsReputationCheckingRequired` is set to `false`, setting this feature to `Enabled` for a specific origin will not re-enable reputation checks for that origin. `IsReputationCheckingRequired` takes precedence.
+The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins.  The `ReputationChecking` feature is an `enum` member in the `CoreWebView2OriginFeature` enum.
+
+When this feature is set to `Disabled` for an origin (todo: where/how do you set this feature to Disabled?  in edge://flags?), phishing and malware reputation checks are bypassed for that origin.  If this feature isn't configured for an origin, the global `IsReputationCheckingRequired` setting applies.  todo: maybe change to: the `IsReputationCheckingRequired` setting, which is global, applies.
+
+If `IsReputationCheckingRequired` is set to `false`, setting this feature to `Enabled` for an origin (todo: where/how do you set this feature to Enabled for an origin?  in edge://flags?) will not re-enable reputation checks for that origin.  `IsReputationCheckingRequired` takes precedence.
+
+todo: link to IsReputationCheckingRequired; where is this?  on what type?
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -119,6 +144,7 @@ When this feature is set to `Disabled` for an origin, phishing and malware reput
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
+
 <!-- ------------------------------ -->
 #### Bug fixes
 
@@ -130,7 +156,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed the reentrancy for frame deletion.
 * Fixed object wrapper access for a User Authorization File (UAF).
-* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs`.Source spoof
+* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs.Source` spoof.
 * Restricted the access to a singleton host pipe, in a deprecated WebView2.
 * Removed the `origin` parameter from methods that access a native object.
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
@@ -150,10 +176,16 @@ Release Date: Jul. 6, 2026
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 150.0.4078.44 or higher.
 
+
+<!-- ------------------------------ -->
 #### Upcoming release cadence change
 
-The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
-[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
+Starting with version 152 (Aug. 24, 2026), the WebView2 Runtime moves to a 2-week cadence.  This is aligned with Microsoft Edge.  WebView2 Runtime version 151 is the final release that's on a 4-week cadence.
+
+The WebView2 SDK continues on its monthly cadence.
+
+See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting v152)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137).
+
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
@@ -172,7 +204,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed the reentrancy for frame deletion.
 * Fixed object wrapper access for a User Authorization File (UAF).
-* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs`.Source spoof
+* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs.Source` spoof.
 * Restricted the access to a singleton host pipe, in a deprecated WebView2.
 * Removed the `origin` parameter from methods that access a native object.
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
