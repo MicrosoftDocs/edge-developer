@@ -27,11 +27,6 @@ todo: update links in announcements, since the Prerelease headings & Release hea
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
-#### Upcoming release cadence change
-
-The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
-[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
-
 
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026)
@@ -42,6 +37,10 @@ Release Date: Jul. 6, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 151.0.4126.0 or higher.
 
+#### Upcoming release cadence change
+
+The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
+[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
@@ -151,6 +150,10 @@ Release Date: Jul. 6, 2026
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 150.0.4078.44 or higher.
 
+#### Upcoming release cadence change
+
+The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
+[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
@@ -174,6 +177,7 @@ This Release SDK includes the following bug fixes.
 * Removed the `origin` parameter from methods that access a native object.
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
 * Fixed the window-to-visual UI Automation (UIA) tree.
+* Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
 
 <!-- end of Release SDK 1.0.4078.44, for Runtime 150 (Jul. 6, 2026) -->
 
