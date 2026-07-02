@@ -29,10 +29,13 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 
 **Detailed contents:**
 * [Introduction](#introduction)
-* [Summary](#summary)
+* [PWA-related panes in the Application tool](#pwa-related-panes-in-the-application-tool)
 * [Web app manifest](#web-app-manifest)
    * [View and check maskable icons](#view-and-check-maskable-icons)
    * [Trigger installation](#trigger-installation)
+      * [Monitor the Console tool in the Quick view panel](#monitor-the-console-tool-in-the-quick-view-panel)
+      * [Test a mobile device](#test-a-mobile-device)
+   * [Simulate an "Add to home screen" event](#simulate-an-add-to-home-screen-event)
    * [Inspect shortcuts](#inspect-shortcuts)
    * [Inspect screenshots for a richer installation UI](#inspect-screenshots-for-a-richer-installation-ui)
    * [Test URL protocol handler registration](#test-url-protocol-handler-registration)
@@ -72,8 +75,8 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Summary
-<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
+## PWA-related panes in the Application tool 
+<!-- Summary  https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
 The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes (accessed via the tree on the left) that cover PWA features:
 
@@ -96,20 +99,23 @@ todo: create an added png showing these tree items of interest
 ## Web app manifest
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#manifest -->
 
-If you want your users to be able to add your app to their mobile home screen, you need a web app manifest.  The web app manifest defines:
+If you want your users to be able to add your app to the following, you need a web app manifest:
+* The **Applications** folder, on Mac OS X.
+* The **Start** menu, on Windows.
+* The home screen, on Android and iOS.
+
+The web app manifest defines:
 * How the app appears on the home screen of a mobile device.
-* Where to direct the user when launching from the home screen.
+* Where to direct the user when launching the app from the home screen.
 * What the app looks like when launched.
 
 Related guides:
-* [Improve user experiences with a Web App Manifest] /web/fundamentals/web-app-manifest
-* [Using App Install Banners] /web/fundamentals/app-install-banners
-
-todo: link to sections when available
+* [Improve user experiences with a Web App Manifest] /web/fundamentals/web-app-manifest  (todo: link to section when available)
+* [Using App Install Banners] /web/fundamentals/app-install-banners (todo: link to section when available)
 
 To inspect a manifest:
 
-1. Go to the webpage that uses the manifest, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
+1. Go to the webpage that uses the manifest, such as [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -119,61 +125,30 @@ To inspect a manifest:
 
 1. In the outline on the left, in the **Application** section, select **Manifest**.
 
-   The **App Manifest** pane is displayed, where you can inspect the manifest:
+   The **Manifest** pane is displayed:
 
-![The App Manifest Pane](./index-images/manifest-pane.png) todo: from airhorn to pwamp
+   ![The Manifest Pane](./index-images/manifest-pane.png)
 
-The **App Manifest** pane contains the following sections:
-* Top section, containing the manifest link
-* **Identity**
-* **Presentation**
-* **Protocol Handlers**
-* **Icons**
-* **Window Controls Overlay**
-* **Screenshot #1**
-* **Screenshot #2**
+   The **Manifest** pane contains the following sections:
+   * **Manifest** - contains the manifest link.
+   * **Errors and warnings**
+   * **Identity** - displays fields from the manifest source file in a user-friendly display.
+   * **Presentation** - displays fields from the manifest source file in a user-friendly display.
+   * **Protocol Handlers**
+   * **Icons** - displays every icon that's been specified in the manifest.
+   * **Window Controls Overlay**
+   * **Screenshot #1**
+   * **Screenshot #2**
+   * **Screenshot #3**
+   
+1. Click the link below the **App Manifest** label, such as `manifest.json`.
 
-* To view the manifest source file, click the link below the **App Manifest** label.  In the previous figure, that link is `manifest.json`, which opens `https://airhorner.com/manifest.json` (todo: PWAmp), for [Airhorner.com](https://airhorner.com).
+   The manifest file opens, such as [/pwamp/manifest.json](https://microsoftedge.github.io/Demos/pwamp/manifest.json).
 
-* To simulate an "Add to home screen" event, click the **Add to home screen** button.  Check out the next section for more information. 
-
-* The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
-
-* The **Icons** section displays every icon that's been specified in the manifest.
+To simulate an "Add to home screen" event, click the **Add to home screen** button (todo: where?).  See [Simulate an "Add to home screen" event](#simulate-an-add-to-home-screen-event), below.
 
 See also:
 * [Add a web app manifest](https://web.dev/add-manifest/) at web.dev.
-
-
-<!-- ------------------------------ -->
-#### Simulate Add to home screen events
-<!-- not upstream, upstream article has 0 hits on "home screen" -->
-
-todo: is this section semi-dup w/ [Trigger installation](#trigger-installation) below?
-
-A web app can only be added to a home screen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to home screen workflow, the criteria is potentially inconvenient.
-The **Add to home screen** button on the **App Manifest** pane lets you simulate Add to home screen events whenever you want.
-
-You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to home screen.  Clicking **Add to home screen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to home screen" banner for mobile devices.
-
-![Add to desktop shelf] todo: io.png
-
-todo: this para is dup w/ below:
-
-> [!Tip]
-> Keep the **Console** open in the **Quick View** panel at the bottom of DevTools while simulating Add to home screen events.  The Console tells you if your manifest has any issues and logs other information about the Add to home screen lifecycle.  -->
-
-todo: this para is dup w/ below:
-
-The **Add to home screen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.  -->
-
-todo: rework content after sample app is created
-
-todo: this para is dup w/ below:
-
-If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then click the **Add to home screen** button (on DevTools) to trigger the "add to home screen" prompt on the connected mobile device.
-
-todo: link to "remote debugging" sections when available
 
 
 <!-- ------------------------------ -->
@@ -184,8 +159,7 @@ The **Icons** section of the **Manifest** page of the **Application** tool displ
 
 To trim the icons so that only the minimum safe area is visible, select the **Show only the minimum safe area for maskable icons** checkbox:
 
-![Viewing the minimum safe areas for maskable icons](./index-images/viewing-minimum-safe-area.png)
-<!-- https://microsoftedge.github.io/Demos/pwamp/ -->
+![Viewing the minimum safe areas for maskable icons](./index-images/viewing-minimum-safe-area.png)<!-- https://microsoftedge.github.io/Demos/pwamp/ -->
 
 If your entire logo is visible in the safe area, the formatting is valid.
 
@@ -217,16 +191,53 @@ To trigger the installation flow of your PWA:
 
 <!-- ---------- -->
 ###### Monitor the Console tool in the Quick view panel
+<!-- heading not upstream; content is upstream -->
 
-It's recommended that you keep the DevTools **Console** tool open in the **Quick view** panel when you trigger installation.  The **Console** tells you if your manifest has any issues, and logs other information about the installation lifecycle.
+It's recommended that you keep the DevTools **Console** tool open in the **Quick view** panel when you trigger installation of your app; that is, while simulating an "Add to home screen event.  The **Console** tells you if your manifest has any issues, and logs other information about the installation lifecycle; that is, about the "Add to home screen" lifecycle.
 
-The **Install app** feature cannot simulate the workflow for mobile devices.  The desktop Microsoft Edge browser displays the installation button in the Address bar, even though (todo: even when?) DevTools is in [Device Mode](https://developer.chrome.com/docs/devtools/device-mode) (todo: true? is DevTools in Device Mode?) (todo: local link).  However, if you can successfully add your app to your desktop, then the app will work for mobile, too.
+The **Install app** feature (todo: The "Add to home screen" feature?) cannot simulate the workflow for mobile devices.  The desktop Microsoft Edge browser displays the installation button in the Address bar, even though (todo: even when?) DevTools is in Device Mode (todo: true? is DevTools in Device Mode? is this describing a png?) (todo: local link).  However, if you can successfully add your app to your desktop, then the app will work for mobile, too.
+
+todo: global: maybe the old ui was **Add to home screen** and the new ui is **Install app**.
+
+The **Add to home screen** feature cannot simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above (todo: what screenshot?), even though DevTools (in the screenshot) is in Device Mode (Device Emulation).  However, if you can successfully add your app to your desktop shelf, then it works for mobile, too.
+
+See also:
+* [Emulate mobile devices (Device Emulation)](../device-mode/index.md)
 
 
 <!-- ---------- -->
 ###### Test a mobile device
+<!-- heading not upstream; content is upstream -->
 
-If you want to test out the actual mobile experience, you can connect a mobile device to DevTools via [remote debugging](https://developer.chrome.com/docs/devtools/remote-debugging) (todo: local link).  To trigger the installation on the connected mobile device, open the three-dot menu (![The three-dot menu icon](./index-images/three-dot-menu.png)), and then click **Install app**.
+To test out the actual mobile experience:
+
+1. Connect a mobile device to DevTools via remote debugging.  See [Remotely debug Android devices](../remote-debugging/index.md).
+
+1. To trigger the installation on the connected mobile device, open the three-dot menu (![The three-dot menu icon](./index-images/three-dot-menu.png)) (todo: where, in the app on the device?  in devtools on the device?  is there a tooltip showing name of three-dot menu, on some platform?), and then click **Install app**.
+
+
+<!-- ------------------------------ -->
+#### Simulate an "Add to home screen" event
+<!-- section not upstream; upstream article has 0 hits on "home screen" -->
+
+To simulate an "Add to home screen" event, you can click the **Add to home screen** button on the **App Manifest** pane at any time, regardless of how many times a site was visited.
+
+A web app can only be added to a home screen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your "Add to home screen" workflow, that restriction is potentially inconvenient.  Thus, you can use the **Add to home screen** button anytime.
+
+You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which supports "Add to home screen".  When you click the **Add to home screen** button, Microsoft Edge displays the "add this site to your shelf" banner, which is the desktop equivalent of the "add to home screen" banner for mobile devices.
+
+![Add to desktop shelf] todo: io.png
+
+To test the actual mobile experience:
+
+1. Connect an actual mobile device to DevTools via remote debugging.
+
+1. Click the **Add to home screen** button (in DevTools) to trigger the "add to home screen" prompt on the connected mobile device.
+
+See also:
+* [Remotely debug Android devices](../remote-debugging/index.md)
+* [Remotely debug Android WebViews](../remote-debugging/webviews.md)
+* [Remotely debug Windows devices](../remote-debugging/windows.md)
 
 
 <!-- ------------------------------ -->
@@ -268,11 +279,45 @@ todo: format, links, pngs - https://developer.chrome.com/docs/devtools/progressi
 
 A PWA can handle links that use a specific protocol, for a more integrated experience.  To learn how to create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
 
+
+_upstream:_
+
 To test your handler:
 
-1. [Open DevTools](https://developer.chrome.com/docs/devtools/open) (todo: give inline steps, or local link) on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo PWA.
+1. Open DevTools on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo.
 
-1. From the demo page, install the PWA.  (todo: but there is no "app available, install" button in address bar for https://chrome.dev/devtools-protocol-handler/ )
+1. From the demo page, install the PWA and reload the app after the installation.
+
+   The browser has now registered the PWA as a handler for the web+coffee protocol.
+
+_end of excerpt from upstream_
+
+
+To test a handler:
+
+1. Go to the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo in a new window or tab.
+
+   todo: does pwamp cover URL protocol handler registration?  which demo to use?  
+
+1. On the right side of the Address bar, click the **App available.  Install PWAmp music player** (![The "App available, Install" icon](./index-images/app-available-install-icon.png)) button.
+
+   The **Install PWAmp music player app** dialog opens.
+
+1. Click the **Install** button.
+
+   The PWAmp demo opens in a window, and the **App installed** dialog opens.
+
+1. Click the **Allow** button.
+
+   The **Apps** dialog opens, asking "Would you like to pin PWAmp music player to your taskbar?"
+
+1. Click the **Yes** button.
+
+1. Right-click in the app window, and then select **Inspect**.
+
+   DevTools opens in a dedicated window.
+
+   todo: resume here rewriting steps
 
 1. Reload the app.
 
