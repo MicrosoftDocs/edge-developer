@@ -56,7 +56,7 @@ The CrashReport API provides crash diagnostic data when a WebView2 process fails
 
 CrashReport is null when the failure did not produce a crash report (normal exit, external kill, launch failure, hang), and may also be null for certain crash-type failures where no report was produced. Host apps should always check for null before accessing properties.
 
-#### Configure per-origin reputation checking (SmartScreen) settings
+###### Configure per-origin reputation checking (SmartScreen) settings
 
 The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins. The `ReputationChecking` feature is an `enum` member in the `CoreWebView2OriginFeature` enum.
 When this feature is set to `Disabled` for an origin, phishing and malware reputation checks are bypassed for that origin. If not configured for an origin, the global `IsReputationCheckingRequired` setting applies. If `IsReputationCheckingRequired` is set to `false`, setting this feature to `Enabled` for a specific origin will not re-enable reputation checks for that origin. `IsReputationCheckingRequired` takes precedence.
