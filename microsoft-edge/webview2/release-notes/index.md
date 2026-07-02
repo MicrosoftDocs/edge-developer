@@ -27,6 +27,11 @@ todo: update links in announcements, since the Prerelease headings & Release hea
 
 The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
 
+#### Upcoming release cadence change
+
+The next major version, 151, is the last release on the 4-week cadence. Starting with version 152 (Aug 24, 2026), the WebView2 Runtime moves to a 2-week cadence, aligned with Microsoft Edge (the WebView2 SDK continues on its monthly cadence). See the announcement for details.
+[WebView2 Runtime moves to a 2-week release cadence](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137)
+
 
 <!-- ====================================================================== -->
 ## Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026)
@@ -45,9 +50,16 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ---------- -->
-###### CoreWebView2CrashReport
+###### Crash Report in ProcessFailed event
 
-Provides a crash report.  todo: real description
+The CrashReport API provides crash diagnostic data when a WebView2 process fails with a crash. When a ProcessFailed event is raised, the host application can access the CrashReport property on the ProcessFailedEventArgs to retrieve crash signature details including the exception code, faulting module name and version, fault offset, crash report ID, bucket ID, and the time the crash was reported.
+
+CrashReport is null when the failure did not produce a crash report (normal exit, external kill, launch failure, hang), and may also be null for certain crash-type failures where no report was produced. Host apps should always check for null before accessing properties.
+
+#### Configure per-origin reputation checking (SmartScreen) settings
+
+The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins. The `ReputationChecking` feature is an `enum` member in the `CoreWebView2OriginFeature` enum.
+When this feature is set to `Disabled` for an origin, phishing and malware reputation checks are bypassed for that origin. If not configured for an origin, the global `IsReputationCheckingRequired` setting applies. If `IsReputationCheckingRequired` is set to `false`, setting this feature to `Enabled` for a specific origin will not re-enable reputation checks for that origin. `IsReputationCheckingRequired` takes precedence.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -78,7 +90,7 @@ Provides a crash report.  todo: real description
    * [CoreWebView2CrashReport.ReportTime Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#reporttime)
 
 * `CoreWebView2OriginFeature` Enum:
-   * [ReputationChecking](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeature?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true) - todo: add this link, like in .NET?
+   * [ReputationChecking](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeature?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
 
 * `CoreWebView2ProcessFailedEventArgs` Class:
    * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreport)
@@ -108,7 +120,6 @@ Provides a crash report.  todo: real description
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
-
 <!-- ------------------------------ -->
 #### Bug fixes
 
@@ -120,7 +131,7 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed the reentrancy for frame deletion.
 * Fixed object wrapper access for a User Authorization File (UAF).
-* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs.Source` spoof.
+* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs`.Source spoof
 * Restricted the access to a singleton host pipe, in a deprecated WebView2.
 * Removed the `origin` parameter from methods that access a native object.
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
@@ -158,7 +169,7 @@ This Release SDK includes the following bug fixes.
 
 * Fixed the reentrancy for frame deletion.
 * Fixed object wrapper access for a User Authorization File (UAF).
-* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs.Source` spoof.
+* Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs`.Source spoof
 * Restricted the access to a singleton host pipe, in a deprecated WebView2.
 * Removed the `origin` parameter from methods that access a native object.
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
