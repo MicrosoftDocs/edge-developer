@@ -346,20 +346,20 @@ To test a handler:
 ## Service workers
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#service-workers -->
 
-Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a webpage.  Service worker scripts enable your app to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
+Service workers are a fundamental technology in the web platform.  A _service worker_ is a script that the browser runs in the background, separate from a webpage.  Service worker scripts enable your app to access features that don't need a webpage or user interaction, such as:
+* Push notifications.
+* Background sync.
+* Offline experiences.
 
-Related guides:
-* [Intro to Service Workers] /web/fundamentals/primers/service-worker
-* [Push Notifications: Timely, Relevant, and Precise] /web/fundamentals/push-notifications
-* [How Push Works] /web/fundamentals/push-notifications/how-push-works
-
-todo: link to sections when available
+See also:
+* [Service worker overview](https://developer.chrome.com/docs/workbox/service-worker-overview) at `developer.chrome.com`.
+* [Push notifications overview](https://web.dev/push-notifications-overview/) at `web.dev`.
 
 The main place in DevTools to inspect and debug service workers is the **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
 To view service workers:
 
-1. Go to a webpage, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
+1. Go to a webpage that uses service workers, such as the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo, in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
@@ -371,11 +371,15 @@ To view service workers:
 
    The **Service workers** pane is displayed:
 
-![The Service workers pane](./index-images/service-workers-pane.png) (todo: latest ui has 'w'; can redo png)
+   ![The Service workers pane](./index-images/service-workers-pane.png)
 
-* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  (todo: update when use PWAmp instead of Airhorner)
+   todo: why does "Application > Service workers" for PWAmp demo list SWs for /pwa-timer/, /wami/, /pwa-to-do/, & /1DIV/, as well as /pwamp/?
 
-* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the ![Network icon](./index-images/network-icon.png) **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
+* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  (todo: update for PWAmp instead of Airhorner)
+
+* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
+   * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
+   * The `Go offline` option in the [Command Menu](../command-menu/index.md).
 
 * The **Update on reload** checkbox forces the service worker to update on every page load.
 
