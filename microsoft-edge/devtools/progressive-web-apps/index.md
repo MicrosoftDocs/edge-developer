@@ -279,19 +279,17 @@ todo: format, links, pngs - https://developer.chrome.com/docs/devtools/progressi
 
 A PWA can handle links that use a specific protocol, for a more integrated experience.  To learn how to create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
 
-
 _upstream:_
 
 To test your handler:
 
-1. Open DevTools on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo.
+1. Open DevTools on the landing page of your PWA.  For example, check out the [URL protocol handler](https://chrome.dev/devtools-protocol-handler/) demo at `chrome.dev`.
 
 1. From the demo page, install the PWA and reload the app after the installation.
 
    The browser has now registered the PWA as a handler for the web+coffee protocol.
 
 _end of excerpt from upstream_
-
 
 To test a handler:
 
