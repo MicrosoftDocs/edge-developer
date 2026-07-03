@@ -77,6 +77,50 @@ The CrashReport API provides crash diagnostic data when a WebView2 process fails
 
 `ProcessFailedEventArgs.CrashReport` may also be `null` for certain crash-type failures where no report was produced.  Host apps should always check for `null` before accessing properties.
 
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* [CoreWebView2CrashReport Class](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.BucketId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.bucketid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.CrashReportId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.crashreportid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.ExceptionCode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.exceptioncode?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.FaultingModuleName Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmodulename?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.FaultingModuleVersion Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmoduleversion?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.FaultOffset Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultoffset?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.ReportTime Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.reporttime?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+
+* `CoreWebView2ProcessFailedEventArgs` Class:
+   * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2CrashReport Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
+   * [CoreWebView2CrashReport.BucketId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#bucketid)
+   * [CoreWebView2CrashReport.CrashReportId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreportid)
+   * [CoreWebView2CrashReport.ExceptionCode Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#exceptioncode)
+   * [CoreWebView2CrashReport.FaultingModuleName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmodulename)
+   * [CoreWebView2CrashReport.FaultingModuleVersion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmoduleversion)
+   * [CoreWebView2CrashReport.FaultOffset Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultoffset)
+   * [CoreWebView2CrashReport.ReportTime Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#reporttime)
+
+* `CoreWebView2ProcessFailedEventArgs` Class:
+   * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreport)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalCrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalCrashReport::get_BucketId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_bucketid)
+   * [ICoreWebView2ExperimentalCrashReport::get_CrashReportId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreportid)
+   * [ICoreWebView2ExperimentalCrashReport::get_ExceptionCode](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_exceptioncode)
+   * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmodulename)
+   * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleVersion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmoduleversion)
+   * [ICoreWebView2ExperimentalCrashReport::get_FaultOffset](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultoffset)
+   * [ICoreWebView2ExperimentalCrashReport::get_ReportTime](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_reporttime)
+
+* [ICoreWebView2ExperimentalProcessFailedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalProcessFailedEventArgs2::get_CrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreport)
+
+---
+
 
 <!-- ---------- -->
 ###### Configure per-origin reputation checking (SmartScreen) settings
@@ -89,20 +133,8 @@ If `CoreWebView2Settings.IsReputationCheckingRequired` is set to `false`, settin
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-* [CoreWebView2CrashReport Class](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.BucketId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.bucketid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.CrashReportId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.crashreportid?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.ExceptionCode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.exceptioncode?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.FaultingModuleName Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmodulename?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.FaultingModuleVersion Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultingmoduleversion?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.FaultOffset Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.faultoffset?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.ReportTime Property](/dotnet/api/microsoft.web.webview2.core.corewebview2crashreport.reporttime?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-
 * `CoreWebView2OriginFeature` Enum:
    * [ReputationChecking](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeature?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
-
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
 
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures)
@@ -121,20 +153,8 @@ Older supporting APIs:
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setoriginfeatures)
 
-* [CoreWebView2CrashReport Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
-   * [CoreWebView2CrashReport.BucketId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#bucketid)
-   * [CoreWebView2CrashReport.CrashReportId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreportid)
-   * [CoreWebView2CrashReport.ExceptionCode Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#exceptioncode)
-   * [CoreWebView2CrashReport.FaultingModuleName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmodulename)
-   * [CoreWebView2CrashReport.FaultingModuleVersion Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultingmoduleversion)
-   * [CoreWebView2CrashReport.FaultOffset Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#faultoffset)
-   * [CoreWebView2CrashReport.ReportTime Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#reporttime)
-
 * `CoreWebView2OriginFeature` Enum:
    * [ReputationChecking](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeature?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
-
-* `CoreWebView2ProcessFailedEventArgs` Class:
-   * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreport)
 
 Older supporting APIs:
 
@@ -146,18 +166,6 @@ Older supporting APIs:
    * [CoreWebView2Settings.IsReputationCheckingRequired](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
 
 ##### [Win32/C++](#tab/win32cpp)
-
-* [ICoreWebView2ExperimentalCrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalCrashReport::get_BucketId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_bucketid)
-   * [ICoreWebView2ExperimentalCrashReport::get_CrashReportId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreportid)
-   * [ICoreWebView2ExperimentalCrashReport::get_ExceptionCode](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_exceptioncode)
-   * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmodulename)
-   * [ICoreWebView2ExperimentalCrashReport::get_FaultingModuleVersion](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultingmoduleversion)
-   * [ICoreWebView2ExperimentalCrashReport::get_FaultOffset](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_faultoffset)
-   * [ICoreWebView2ExperimentalCrashReport::get_ReportTime](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true#get_reporttime)
-
-* [ICoreWebView2ExperimentalProcessFailedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalProcessFailedEventArgs2::get_CrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreport)
 
 * `ICoreWebView2Profile`:
    * [ICoreWebView2Profile::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.4126-prerelease&preserve-view=true#setoriginfeatures)
