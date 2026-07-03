@@ -77,13 +77,11 @@ The CrashReport API provides crash diagnostic data when a WebView2 process fails
 <!-- ---------- -->
 ###### Configure per-origin reputation checking (SmartScreen) settings
 
-The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins.  The `ReputationChecking` feature is an `enum` member in the `CoreWebView2OriginFeature` enum.
+The `ReputationChecking` feature allows a WebView2 app to skip SmartScreen reputation checks for navigations and downloads from specific trusted origins.  `ReputationChecking` is a member of the `CoreWebView2OriginFeature` enum.
 
-When this feature is set to `Disabled` for an origin (todo: where/how do you set this feature to Disabled?  in edge://flags?), phishing and malware reputation checks are bypassed for that origin.  If this feature isn't configured for an origin, the global `IsReputationCheckingRequired` setting applies.  todo: maybe change to: the `IsReputationCheckingRequired` setting, which is global, applies.
+When this feature is set to `CoreWebView2OriginFeatureState.Disabled` for an origin, phishing and malware reputation checks are bypassed for that origin.  If this feature isn't configured for an origin, the `CoreWebView2Settings.IsReputationCheckingRequired` setting, which is global, applies; the preference at the browser-process level is applied for all the processes utilizing it.
 
-If `IsReputationCheckingRequired` is set to `false`, setting this feature to `Enabled` for an origin (todo: where/how do you set this feature to Enabled for an origin?  in edge://flags?) will not re-enable reputation checks for that origin.  `IsReputationCheckingRequired` takes precedence.
-
-todo: link to IsReputationCheckingRequired; where is this?  on what type?
+If `CoreWebView2Settings.IsReputationCheckingRequired` is set to `false`, setting `CoreWebView2OriginFeatureState.Enabled` for an origin doesn't re-enable reputation checks for that origin; `CoreWebView2Settings.IsReputationCheckingRequired` takes precedence.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -102,7 +100,22 @@ todo: link to IsReputationCheckingRequired; where is this?  on what type?
 * `CoreWebView2ProcessFailedEventArgs` Class:
    * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs.crashreport?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
 
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures)
+
+Older supporting APIs:
+
+* [CoreWebView2OriginFeatureState` Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturestate)
+   * `Enabled`
+   * `Disabled`
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsReputationCheckingRequired](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setoriginfeatures)
 
 * [CoreWebView2CrashReport Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
    * [CoreWebView2CrashReport.BucketId Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2crashreport?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#bucketid)
@@ -119,6 +132,15 @@ todo: link to IsReputationCheckingRequired; where is this?  on what type?
 * `CoreWebView2ProcessFailedEventArgs` Class:
    * [CoreWebView2ProcessFailedEventArgs.CrashReport Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2processfailedeventargs?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#crashreport)
 
+Older supporting APIs:
+
+* [CoreWebView2OriginFeatureState` Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturestate)
+   * `Enabled`
+   * `Disabled`
+
+* `CoreWebView2Settings` Class:
+   * [CoreWebView2Settings.IsReputationCheckingRequired](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
+
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalCrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcrashreport?view=webview2-1.0.4126-prerelease&preserve-view=true)
@@ -133,8 +155,21 @@ todo: link to IsReputationCheckingRequired; where is this?  on what type?
 * [ICoreWebView2ExperimentalProcessFailedEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true)
    * [ICoreWebView2ExperimentalProcessFailedEventArgs2::get_CrashReport](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs2?view=webview2-1.0.4126-prerelease&preserve-view=true#get_crashreport)
 
+* `ICoreWebView2Profile`:
+   * [ICoreWebView2Profile::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.4126-prerelease&preserve-view=true#setoriginfeatures)
+
 * `COREWEBVIEW2_ORIGIN_FEATURE` enum:
    * [COREWEBVIEW2_ORIGIN_FEATURE_REPUTATION_CHECKING](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4126-prerelease&preserve-view=true#corewebview2_origin_feature_reputation_checking)
+
+Older supporting APIs:
+
+* `ICoreWebView2Settings8`:
+   * [ICoreWebView2Settings8::get_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#get_isreputationcheckingrequired)
+   * [ICoreWebView2Settings8::put_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2settings8#put_isreputationcheckingrequired)
+
+* [COREWEBVIEW2_ORIGIN_FEATURE_STATE enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl#corewebview2_origin_feature_state)
+   * `COREWEBVIEW2_ORIGIN_FEATURE_STATE_ENABLED`
+   * `COREWEBVIEW2_ORIGIN_FEATURE_STATE_DISABLED`
 
 ---
 
