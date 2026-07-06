@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/06/2026
+ms.date: 07/07/2026
 ---
 # Release notes for the WebView2 SDK
 <!--
@@ -29,9 +29,9 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026)
+## Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
 
-Release Date: Jul. 6, 2026
+Release Date: Jul. 7, 2026
 
 [NuGet package for WebView2 SDK 1.0.4126-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4126-prerelease)
 
@@ -146,7 +146,7 @@ Older supporting APIs:
    * `Disabled`
 
 * `CoreWebView2Settings` Class:
-   * [CoreWebView2Settings.IsReputationCheckingRequired](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isreputationcheckingrequired)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -163,7 +163,7 @@ Older supporting APIs:
    * `Disabled`
 
 * `CoreWebView2Settings` Class:
-   * [CoreWebView2Settings.IsReputationCheckingRequired](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
+   * [CoreWebView2Settings.IsReputationCheckingRequired Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#isreputationcheckingrequired)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -211,13 +211,13 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
 * Implemented `OnRendererResponsive` for hang outcome tracking.
 
-<!-- end of Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 6, 2026) -->
+<!-- end of Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.4078.44, for Runtime 150 (Jul. 6, 2026)
+## Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)
 
-Release Date: Jul. 6, 2026
+Release Date: Jul. 7, 2026
 
 [NuGet package for WebView2 SDK 1.0.4078.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4078.44)
 
@@ -262,7 +262,7 @@ This Release SDK includes the following bug fixes.
 * Fixed the window-to-visual UI Automation (UIA) tree.
 * Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
 
-<!-- end of Release SDK 1.0.4078.44, for Runtime 150 (Jul. 6, 2026) -->
+<!-- end of Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026) -->
 
 
 <!-- ====================================================================== -->

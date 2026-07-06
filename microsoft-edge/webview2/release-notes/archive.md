@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/06/2026
+ms.date: 07/07/2026
 ---
 # Archived release notes for the WebView2 SDK
 <!--
