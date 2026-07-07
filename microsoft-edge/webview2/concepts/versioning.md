@@ -89,14 +89,31 @@ For more information about automatic updating of the Evergreen Runtime, see:
 <!-- ====================================================================== -->
 ## Release cadence
 
-New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge browser.
 
-todo: say two-week release cadence?
+<!-- ------------------------------ -->
+#### WebView2 SDK
 
-For the release cadence of the WebView2 Runtime, see [Distribute your app and the WebView2 Runtime](./distribution.md).
+The WebView2 Prerelease SDK & the WebView2 Release SDK have a monthly release cadence.  See [WebView2 Runtime is changing to a 2-week release cadence](../release-notes/index.md#webview2-runtime-is-changing-to-a-2-week-release-cadence) in _Release notes for the WebView2 SDK_.
 
-See also:
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
+<!-- ------------------------------ -->
+#### WebView2 release notes
+
+The WebView2 Release notes have a 2-week release cadence.  See [WebView2 Runtime is changing to a 2-week release cadence](../release-notes/index.md#webview2-runtime-is-changing-to-a-2-week-release-cadence) in _Release notes for the WebView2 SDK_.
+
+
+<!-- ------------------------------ -->
+#### WebView2 Runtime
+
+The WebView2 Runtime has a 2-week release cadence.  See:
+* [Distribute your app and the WebView2 Runtime](./distribution.md)
+* [WebView2 Runtime is changing to a 2-week release cadence](../release-notes/index.md#webview2-runtime-is-changing-to-a-2-week-release-cadence) in _Release notes for the WebView2 SDK_.
+
+
+<!-- ------------------------------ -->
+#### Microsoft Edge
+
+The Microsoft Edge browser (Stable version) has a 4-week release cadence.  See [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).
 
 
 <!-- ====================================================================== -->
