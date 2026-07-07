@@ -113,7 +113,7 @@ The WebView2 Runtime has a 2-week release cadence.  See:
 <!-- ------------------------------ -->
 #### Microsoft Edge
 
-The Microsoft Edge browser (Stable version) has a 4-week release cadence.  See [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).
+The Microsoft Edge browser (Stable version) has a 2-week release cadence.  See [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).
 
 
 <!-- ====================================================================== -->
