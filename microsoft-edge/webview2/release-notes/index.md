@@ -25,7 +25,7 @@ when change an h2 heading or move h2 sections from index.md to archive.md, enter
 todo: update links in announcements, since the Prerelease headings & Release headings in index.md & archive.md changed; AB#62191954
 -->
 
-The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK.
 
 
 <!-- ====================================================================== -->
