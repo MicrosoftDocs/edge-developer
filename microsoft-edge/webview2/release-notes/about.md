@@ -23,7 +23,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Cadence of WebView2 release notes
+## Cadence of WebView2 release notes: 2 weeks
 
 The WebView2 Release notes have a 2-week release cadence.
 
@@ -36,7 +36,7 @@ See:
 
 
 <!-- ====================================================================== -->
-## Release cadence of WebView2 SDK
+## Release cadence of WebView2 SDK: monthly
 
 The WebView2 Prerelease SDK & the WebView2 Release SDK have a monthly release cadence.
 
@@ -45,7 +45,7 @@ See:
 
 
 <!-- ====================================================================== -->
-## Release cadence of WebView2 Runtime
+## Release cadence of WebView2 Runtime: 2 weeks
 
 The WebView2 Runtime has a 2-week release cadence.
 
@@ -55,7 +55,7 @@ See:
 
 
 <!-- ====================================================================== -->
-## Release cadence of Microsoft Edge
+## Release cadence of Microsoft Edge: 2 weeks
 
 The Microsoft Edge browser (Stable version) has a 2-week release cadence.
 
