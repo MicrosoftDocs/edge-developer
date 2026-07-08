@@ -338,7 +338,7 @@ To view service workers:
 
      Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
 
-   * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox (todo: there is no **show all** checkbox).  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
+   * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you have multiple registered service workers.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
    * The **Push** button emulates a push notification without a payload (also known as a _tickle_).  See [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
 
@@ -353,6 +353,7 @@ If the service worker causes any errors, the service worker's section in the **S
 To see information about all service workers, click the **See all registrations** link at the bottom of the **Service workers** page.  This link opens `edge://serviceworker-internals`, where you can further debug the service workers.
 
 See also:
+* [The service worker lifecycle](https://web.dev/articles/service-worker-lifecycle) - at web.dev.
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
 
 
@@ -364,7 +365,7 @@ From the **Service workers** pane of the **Application** tool, you can quickly a
 
 To display the network requests that are handled by a service worker:
 
-1. Go to a webpage, such as [Airhorner.com](https://airhorner.com) (todo: PWAmp), in a new window or tab.
+1. Go to a webpage that uses a service worker, such as [PWAmp](https://microsoftedge.github.io/Demos/pwamp/), in a new window or tab.
 
 1. Right-click the webpage, and then select **Inspect**.
 
