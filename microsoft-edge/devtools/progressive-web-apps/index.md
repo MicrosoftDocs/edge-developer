@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/23/2026
+ms.date: 07/08/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -81,17 +81,18 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
 
 * Use the **Manifest** pane to inspect your web app manifest.
 
-* Use the **Service workers** pane for service-worker-related tasks, such as:
+* Use the **Service workers** page for service-worker-related tasks, such as:
   * Unregistering or updating a service.
   * Emulating push events.
   * Going offline.
   * Stopping a service worker.
+  * Unregistering or updating a service worker.
 
 * Use the **Storage** pane to view how much data your app is storing on the device, and clear the stored data.
 
 * Use the **Cache storage** pane to view your service worker cache.
 
-todo: create an added png showing these tree items of interest
+![PWA-related panes](./index-images/pwa-related-panes.png)
 
 
 <!-- ====================================================================== -->
@@ -280,7 +281,7 @@ See also:
 * [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
 * [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)
 
-The main place in DevTools to inspect and debug service workers is the **Service workers** pane in the ![Application icon](./index-images/application-icon.png) **Application** tool.
+The main place in DevTools to inspect and debug service workers is the **Service workers** page in the ![Application icon](./index-images/application-icon.png) **Application** tool.
 
 To view service workers:
 
@@ -294,55 +295,62 @@ To view service workers:
 
 1. In the outline on the left, in the **Application** section, select **Service workers**.
 
-   The **Service workers** pane is displayed:
+   The **Service workers** page is displayed:
 
-   ![The Service workers pane](./index-images/service-workers-pane.png)
+   ![The Service workers page](./index-images/service-workers-page.png)
 
-   todo: "Application > Service workers" for PWAmp demo list SWs for /pwa-timer/, /wami/, /pwa-to-do/, & /1DIV/, as well as /pwamp/ - get rid of them by uninstalling these other apps before png.  These SWs appear because they're all part of the same domain name, i.e. https://microsoftedge.github.io/  If we had custom domains for each of our demos (e.g. www.pwamp.com), this would not happen.
+   The **Service workers** pane lists the service worker for this PWA and also the service workers for other demos: `/pwa-timer/`, `/wami/`, `/pwa-to-do/`, and `/1DIV/`.  These other service workers are listed because they're part of the same domain name, `microsoftedge.github.io`.  If the demos had separate domains, such as `pwamp.com`, only the PWAmp service worker would be listed.
 
-* If a service worker is installed to the currently open page, then the service worker is listed in the **Service workers** pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  (todo: update for PWAmp instead of Airhorner)
 
-* The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
-   * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
-   * The `Go offline` option in the [Command Menu](../command-menu/index.md).
+<!-- ------------------------------ -->
+#### UI controls in the Service Workers pane
+<!-- heading is not upstream, content is upstream (but not in ui order) -->
 
-* The **Update on reload** checkbox forces the service worker to update on every page load.
+* Checkboxes
 
-* The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
+   * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
+      * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
+      * The `Go offline` option in the [Command Menu](../command-menu/index.md).
 
-* The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).  See [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker), below.
+   * The **Update on reload** checkbox forces the service worker to update on every page load.
 
-* The **Update** button performs a one-time update of the specified service worker.
+   * The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 
-* The **Push** button emulates a push notification without a payload (also known as a _tickle_).
+* Links in the upper right
 
-* The **Sync** button emulates a background sync event.
+   * The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).  See [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker), below.
 
-* The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage](#clear-storage), below.
+   * The **Update** button performs a one-time update of the specified service worker.
 
-* The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
+   * The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage](#clear-storage), below.
 
-* The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in the previous figure) is for the currently active service worker.
+* Lines in the service worker's section
 
-  Next to the status:
-  * If the service worker is stopped, a **start** button is displayed.
-  * If the service worker is running, a **stop** button is displayed.
+   * The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
 
-  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
+   * The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in the previous figure) is for the currently active service worker.
 
-  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+     Next to the status:
+     * If the service worker is stopped, a **Start** button is displayed.
+     * If the service worker is running, a **Stop** button is displayed.
 
-* The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
+     Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
 
-* The **Update Cycle** table displays the service worker's activities and their elapsed times, such as **Install**, **Wait**, and **Activate**.  To see the exact timestamp of each activity, click the **Expand** (![Expander triangle](./index-images/expander-icon.png)) buttons.
+     Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
 
-If the service worker causes any errors, an **Errors** label is displayed:
+   * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox (todo: there is no **show all** checkbox).  When that checkbox is enabled, all registered service workers are listed.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
-![Service worker with errors] todo sw-error.png
+   * The **Push** button emulates a push notification without a payload (also known as a _tickle_).  See [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
 
-todo: capture "Service Worker Errors" sample when available
+   * The **Sync** button emulates a background sync event.
 
-todo: link Web "How tickle works" sections when available
+   * The **Periodic sync** section has a **Periodic sync** button.  todo: state purpose
+
+   * The **Update Cycle** table displays the service worker's activities and their elapsed times, such as **Install**, **Wait**, and **Activate**.  To see the exact timestamp of each activity, click the **Expand** (![Expander triangle](./index-images/expander-icon.png)) buttons.
+
+If the service worker causes any errors, the service worker's section in the **Service workers** page shows an ![Error icon](./index-images/error-icon.png) error icon with the number of errors next to the **Source** line (section).  The link with the number opens the **Console** tool in the **Quick view** panel, which displays all the logged errors.
+
+To see information about all service workers, click the **See all registrations** link at the bottom of the **Service workers** page.  This link opens `edge://serviceworker-internals`, where you can further debug the service workers.
 
 See also:
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
@@ -399,37 +407,34 @@ All open caches are listed under the **Cache Storage** expander.
 
 
 <!-- ====================================================================== -->
-## Quota usage
+<!-- ## Quota usage -->
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#opaque-responses -->
-
-Some responses within the **Cache Storage** pane may be flagged as being "opaque".<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  This refers to a response retrieved from a different origin, like from a **CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) isn't enabled.
-
-todo: link Web "CDN" section when available
-
-todo: link Web "opaque" section when available
-
-In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
-
-todo: link to Estimating "`navigator.storage` API" sections when available:  
-See also:
-* [Estimating available storage space] whats-new/2017/08/estimating-available-storage-space
-
-The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17).  Remember the padding when determining how many opaque responses you want to cache, since you may easily exceed storage quota limitations much sooner than you otherwise expect based on the actual size of the opaque resources.
-
-Related Guides:
-* [Stack Overflow: What limitations apply to opaque responses?](https://stackoverflow.com/q/39109789/385997)
-* [Alphabet work container: Understanding Storage Quota] /web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses - todo
-
-todo: link Work container storage quota for opaque responses section when available
+<!-- omitted section b/c article is how to debug PWA via DevTools, not explain how storage & quotas work in PWAs -->
 
 
 <!-- ====================================================================== -->
 ## Clear storage
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
 
-todo: there's no longer a "Clear Storage" tab/pane, though upstream outdated section mentions it and links to an article about it, but that linked upstream article no longer says "the Clear Storage tab/pane"
+Clearing storage is useful when developing a progressive web app.  Clear storage, to unregister service workers and clear all caches and storage.
 
-The **Clear Storage** tab is useful when developing a progressive web app.  Use the **Clear Storage** pane to unregister service workers and clear all caches and storage, with a single button-click.
+To clear storage:
+
+1. Open a PWA, such as the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo, in a new window or tab.
+
+1. Right-click the PWA (todo: installed, or not?) and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+
+1. In the tree on the left, select **Application** > **Storage**.
+
+   The **Storage** pane opens:
+
+   ![The "Clear site data" button](./index-images/clear-site-data-button.png)
+
+1. Click the **Clear site data** button.
 
 
 <!-- ====================================================================== -->
@@ -437,8 +442,7 @@ The **Clear Storage** tab is useful when developing a progressive web app.  Use 
 <!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other -->
 <!-- todo: all links in article -->
 
-* [Inspect page resources](/iterate/manage-data/page-resources) - todo: link to section when available
-* [Inspect and manage local storage and caches](/iterate/manage-data/local-storage) - todo: link to section when available
+* [Application tool, to manage storage](../storage/application-tool.md)
 * [Inspect network activity](../network/index.md)
 * [Remotely debug Android devices](../remote-debugging/index.md)
 * [Remotely debug Android WebViews](../remote-debugging/webviews.md)
