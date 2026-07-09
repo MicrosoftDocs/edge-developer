@@ -36,9 +36,9 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
    * [Test URL protocol handler registration](#test-url-protocol-handler-registration)
 * [Service workers](#service-workers)
    * [UI controls in the Service Workers page](#ui-controls-in-the-service-workers-page)
-* [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker)
-* [Service worker caches](#service-worker-caches)
-* [Clear storage](#clear-storage)
+   * [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker)
+* [Service worker caches (Cache storage page)](#service-worker-caches-cache-storage-page)
+* [Clear storage (Storage page)](#clear-storage-storage-page)
 * [See also](#see-also)
 
 
@@ -73,7 +73,9 @@ See also:
 
 The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following pages (accessed via the tree on the left) that cover PWA features:
 
-* Use the **Manifest** page to inspect your web app manifest.
+![PWA-related pages](./index-images/pwa-related-pages.png)
+
+* Use the **Manifest** page to inspect your web app manifest.  See [Web app manifest](#web-app-manifest), below.
 
 * Use the **Service workers** page for service-worker-related tasks, such as:
   * Unregistering or updating a service.
@@ -82,11 +84,11 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
   * Stopping a service worker.
   * Unregistering or updating a service worker.
 
-* Use the **Storage** page to view how much data your app is storing on the device, and clear the stored data.
+  See [Service workers](#service-workers), below.
 
-* Use the **Cache storage** page to view your service worker cache.
+* Use the **Storage** page to view how much data your app is storing on the device, and clear the stored data.  See [Clear storage (Storage page)](#clear-storage-storage-page), below.
 
-![PWA-related pages](./index-images/pwa-related-pages.png)
+* Use the **Cache storage** page to view your service worker cache.  See [Service worker caches (Cache storage page)](#service-worker-caches-cache-storage-page), below.
 
 
 <!-- ====================================================================== -->
@@ -351,8 +353,8 @@ See also:
 * [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
 
 
-<!-- ====================================================================== -->
-## Display network requests handled by a service worker
+<!-- ------------------------------ -->
+#### Display network requests handled by a service worker
 <!-- not in upstream -->
 
 In the **Service workers** page of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
@@ -389,10 +391,10 @@ To display the network requests that are handled by a service worker:
 
 
 <!-- ====================================================================== -->
-## Service worker caches
-<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#caches -->
+## Service worker caches (Cache storage page)
+<!-- Service worker caches  https://developer.chrome.com/docs/devtools/progressive-web-apps/#caches -->
 
-The **Cache Storage** page provides a read-only list of resources that have been cached using the (service worker) Cache API.
+The **Cache storage** page provides a read-only list of resources that have been cached using the (service worker) Cache API.
 
 To view cache storage information for a service worker:
 
@@ -425,8 +427,8 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Clear storage
-<!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
+## Clear storage (Storage page)
+<!-- Clear storage  https://developer.chrome.com/docs/devtools/progressive-web-apps/#clear-storage -->
 
 Clearing storage is useful when developing a progressive web app.  Clear storage, to unregister service workers and clear all caches and storage.
 
