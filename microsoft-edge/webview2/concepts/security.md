@@ -103,7 +103,7 @@ _how do you use this section's info to "Develop secure WebView2 apps", per "foll
 
 _("elevated" is in this section of this article, not in other sections in this article)_
 
-To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.  (Non-elevated WebView2 apps honor all of the supported override mechanisms.)
+To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
 
 When the host process is running elevated:
 
@@ -114,6 +114,8 @@ When the host process is running elevated:
 * `HKEY_CURRENT_USER` (HKCU) policy overrides are ignored.
 
 * `HKEY_LOCAL_MACHINE` (HKLM) policy overrides are honored.
+
+Non-elevated WebView2 apps honor all of the supported override mechanisms.
 
 See also:
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Find "elevated".
