@@ -94,24 +94,26 @@ WebView2 cannot be run as a system user.  This restriction blocks scenarios such
 ## Security hardening for elevated WebView2 hosts
 
 _todo: can heading be a task/verb?_
-_what's the recommended Dev action here?_
-_this is system-describing docs; need task-oriented docs_
-_how do you use this section's info to "Develop secure WebView2 apps", per "follow the below practices to improve the security of your WebView2 application"?_
-_"elevated" is in this section of this article, not in other sections in this article_
 
-To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
+_what's the recommended Dev action here?_
+
+_this is system-describing docs; need task-oriented docs_
+
+_how do you use this section's info to "Develop secure WebView2 apps", per "follow the below practices to improve the security of your WebView2 application"?_
+
+_("elevated" is in this section of this article, not in other sections in this article)_
+
+To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.  (Non-elevated WebView2 apps honor all of the supported override mechanisms.)
 
 When the host is running elevated:
 
 * `WEBVIEW2_*` environment variable overrides are ignored.  See [Setting browser flags in your local device environment](./webview-features-flags.md#setting-browser-flags-in-your-local-device-environment) in _WebView2 browser flags_.
 
-* Configuration that's passed directly by the WebView2 application through the WebView2 API continues to be honored.  See [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
+* Configuration that's passed directly by the WebView2 application through the WebView2 API are honored.  See [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
 
 * `HKEY_CURRENT_USER` (HKCU) policy overrides are ignored.
 
-* `HKEY_LOCAL_MACHINE` (HKLM) policy overrides continue to be honored.
-
-This change only affects elevated processes.  Non-elevated applications continue to use all supported override mechanisms as before.
+* `HKEY_LOCAL_MACHINE` (HKLM) policy overrides are honored.
 
 See also:
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Find "elevated".
