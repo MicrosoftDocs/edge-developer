@@ -33,7 +33,7 @@ You can set browser flags in your local device environment, or set browser flags
 
 To test forthcoming features or to diagnose issues, we recommend using browser flags in your local device environment, via setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable or via registry keys.  For more information, see the following Win32 API Reference: [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
-Elevated apps ignore flags that are set via the local device environment; see [For elevated host app, use appropriate override flags](./security.md#for-elevated-host-app-use-appropriate-override-flags) in _Develop secure WebView2 apps_.
+Elevated apps ignore flags that are set via the local device environment; see [For an elevated host app, use appropriate override flags](./security.md#for-an-elevated-host-app-use-appropriate-override-flags) in _Develop secure WebView2 apps_.
 
 
 <!-- ====================================================================== -->
@@ -41,7 +41,7 @@ Elevated apps ignore flags that are set via the local device environment; see [F
 
 Instead of setting browser flags in your local device environment, an alternative approach is to set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `CoreWebView2EnvironmentOptions`.  If you set browser flags programmatically, be sure to remove the flags in code before shipping your app, to avoid accidentally shipping the flags in production.
 
-Elevated apps honor flags that are set via code; see [For elevated host app, use appropriate override flags](./security.md#for-elevated-host-app-use-appropriate-override-flags) in _Develop secure WebView2 apps_.
+Elevated apps honor flags that are set via code; see [For an elevated host app, use appropriate override flags](./security.md#for-an-elevated-host-app-use-appropriate-override-flags) in _Develop secure WebView2 apps_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
