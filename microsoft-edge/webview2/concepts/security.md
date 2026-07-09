@@ -105,7 +105,7 @@ _("elevated" is in this section of this article, not in other sections in this a
 
 To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.  (Non-elevated WebView2 apps honor all of the supported override mechanisms.)
 
-When the host is running elevated:
+When the host process is running elevated:
 
 * `WEBVIEW2_*` environment variable overrides are ignored.  See [Setting browser flags in your local device environment](./webview-features-flags.md#setting-browser-flags-in-your-local-device-environment) in _WebView2 browser flags_.
 
