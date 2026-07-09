@@ -59,7 +59,7 @@ Progressive Web Apps (PWAs) are modern, high-quality applications built using we
    * Content sharing sheets.  For example, when you view a photo on your mobile device, you can share that photo with other apps, such as your messaging app.  A PWA can trigger share dialogs, and can also appear in share dialogs.  See [Share content with other apps](../../progressive-web-apps/how-to/share.md).
 
 The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and pages in the **Application** tool, see:
-* [Other Application tool guides](#other-application-tool-guides), below.
+* [See also](#see-also), below.
 * [View the resource files that make up a webpage](../resources/index.md)
 * [View and edit local storage](../storage/localstorage.md)
 
@@ -306,7 +306,7 @@ To view service workers:
 
    * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
       * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
-      * The `Go offline` option in the [Command Menu](../command-menu/index.md).
+      * Selecting `Go offline` in the Command Menu.  See [Run commands in the Command Menu](../command-menu/index.md).
 
    * The **Update on reload** checkbox forces the service worker to update on every page load.
 
@@ -318,7 +318,7 @@ To view service workers:
 
    * The **Update** button performs a one-time update of the specified service worker.
 
-   * The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage](#clear-storage), below.
+   * The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage (Storage page)](#clear-storage-storage-page), below.
 
 * Lines in the service worker's section
 
@@ -457,7 +457,7 @@ To clear storage:
 <!-- all links in article -->
 
 <!-- local: (todo: in toc order) -->
-* [Share content with other apps](../../progressive-web-apps/how-to/share.md).
+* [Share content with other apps](../../progressive-web-apps/how-to/share.md)
 * [View the resource files that make up a webpage](../resources/index.md)
 * [View and edit local storage](../storage/localstorage.md)
 * [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
@@ -468,7 +468,7 @@ To clear storage:
 * [Debug background services](../javascript/background-services.md) - debugging service workers from DevTools.
 * [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
 * [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)
-* [Command Menu](../command-menu/index.md).
+* [Run commands in the Command Menu](../command-menu/index.md)
 * [Application tool, to manage storage](../storage/application-tool.md)<!-- link not in article -->
 * [Inspect network activity](../network/index.md)<!-- link not in article -->
 * [Remotely debug Android devices](../remote-debugging/index.md)<!-- link not in article -->
