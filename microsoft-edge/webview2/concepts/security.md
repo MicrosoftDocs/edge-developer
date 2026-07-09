@@ -91,19 +91,9 @@ WebView2 cannot be run as a system user.  This restriction blocks scenarios such
 
 
 <!-- ====================================================================== -->
-## Overrides for elevated WebView2 host apps
+## For elevated host app, use appropriate override flags
 
-_todo: can heading be a task/verb?_
-
-_what's the recommended Dev action here?_
-
-_this is system-describing docs; need task-oriented docs_
-
-_how do you use this section's info to "Develop secure WebView2 apps", per "follow the below practices to improve the security of your WebView2 application"?_
-
-_("elevated" is in this section of this article, not in other sections in this article)_
-
-To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
+For an elevated WebView2 host app process during development, use the appropriate type of override flags.  To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
 
 When the host process is running elevated:
 
