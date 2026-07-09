@@ -28,7 +28,7 @@ ms.date: 07/08/2026
 Use the **Application** tool to inspect, modify, and debug a PWA's web app manifests, service workers, and service worker caches.
 
 **Detailed contents:**
-* [Introduction](#introduction)
+* [About Progressive Web Apps (PWAs)](#about-progressive-web-apps-pwas)
 * [PWA-related pages in the Application tool](#pwa-related-pages-in-the-application-tool)
 * [Web app manifest](#web-app-manifest)
    * [View and check maskable icons](#view-and-check-maskable-icons)
@@ -40,14 +40,6 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 * [Service worker caches](#service-worker-caches)
 * [Clear storage](#clear-storage)
 * [See also](#see-also)
-
-
-<!-- ====================================================================== -->
-## Introduction
-<!-- heading not upstream; content = top of https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
-
-<!-- added yaml description: field: -->
-Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 
 
 <!-- ------------------------------ -->
