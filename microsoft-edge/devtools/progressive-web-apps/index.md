@@ -1,6 +1,6 @@
 ---
 title: Debug a Progressive Web App (PWA)
-description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
+description: Use the Application tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -29,13 +29,13 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 
 **Detailed contents:**
 * [Introduction](#introduction)
-* [PWA-related panes in the Application tool](#pwa-related-panes-in-the-application-tool)
+* [PWA-related pages in the Application tool](#pwa-related-pages-in-the-application-tool)
 * [Web app manifest](#web-app-manifest)
    * [View and check maskable icons](#view-and-check-maskable-icons)
    * [Inspect shortcuts](#inspect-shortcuts)
    * [Test URL protocol handler registration](#test-url-protocol-handler-registration)
 * [Service workers](#service-workers)
-   * [UI controls in the Service Workers pane](#ui-controls-in-the-service-workers-pane)
+   * [UI controls in the Service Workers page](#ui-controls-in-the-service-workers-page)
 * [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker)
 * [Service worker caches](#service-worker-caches)
 * [Clear storage](#clear-storage)
@@ -45,6 +45,14 @@ Use the **Application** tool to inspect, modify, and debug a PWA's web app manif
 <!-- ====================================================================== -->
 ## Introduction
 <!-- heading not upstream; content = top of https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
+
+<!-- added yaml description: field: -->
+Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.
+
+
+<!-- ------------------------------ -->
+#### About Progressive Web Apps (PWAs)
+<!-- heading not upstream; content from https://developer.chrome.com/docs/devtools/progressive-web-apps/ -->
 
 Progressive Web Apps (PWAs) are modern, high-quality applications built using web technology.  PWAs offer similar capabilities to apps on iOS, Android, and desktop:
 
@@ -58,7 +66,7 @@ Progressive Web Apps (PWAs) are modern, high-quality applications built using we
    * Device search engines such as Spotlight.
    * Content sharing sheets.  For example, when you view a photo on your mobile device, you can share that photo with other apps, such as your messaging app.  A PWA can trigger share dialogs, and can also appear in share dialogs.  See [Share content with other apps](../../progressive-web-apps/how-to/share.md).
 
-The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and panes in the **Application** tool, see:
+The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and pages in the **Application** tool, see:
 * [Other Application tool guides](#other-application-tool-guides), below.
 * [View the resource files that make up a webpage](../resources/index.md)
 * [View and edit local storage](../storage/localstorage.md)
@@ -68,12 +76,12 @@ See also:
 
 
 <!-- ====================================================================== -->
-## PWA-related panes in the Application tool 
+## PWA-related pages in the Application tool
 <!-- Summary  https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
-The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following panes (accessed via the tree on the left) that cover PWA features:
+The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following pages (accessed via the tree on the left) that cover PWA features:
 
-* Use the **Manifest** pane to inspect your web app manifest.
+* Use the **Manifest** page to inspect your web app manifest.
 
 * Use the **Service workers** page for service-worker-related tasks, such as:
   * Unregistering or updating a service.
@@ -82,11 +90,11 @@ The ![Application icon](./index-images/application-icon.png) **Application** too
   * Stopping a service worker.
   * Unregistering or updating a service worker.
 
-* Use the **Storage** pane to view how much data your app is storing on the device, and clear the stored data.
+* Use the **Storage** page to view how much data your app is storing on the device, and clear the stored data.
 
-* Use the **Cache storage** pane to view your service worker cache.
+* Use the **Cache storage** page to view your service worker cache.
 
-![PWA-related panes](./index-images/pwa-related-panes.png)
+![PWA-related pages](./index-images/pwa-related-pages.png)
 
 
 <!-- ====================================================================== -->
@@ -112,11 +120,11 @@ To inspect a manifest:
 
 1. In the outline on the left, in the **Application** section, select **Manifest**.
 
-   The **Manifest** pane is displayed:
+   The **Manifest** page is displayed:
 
-   ![The Manifest Pane](./index-images/manifest-pane.png)
+   ![The Manifest page](./index-images/manifest-page.png)
 
-   The **Manifest** pane contains the following sections:
+   The **Manifest** page contains the following sections:
    * **Manifest** - contains the manifest link.
    * **Errors and warnings**
    * **Identity** - displays fields from the manifest source file in a user-friendly display.
@@ -125,7 +133,7 @@ To inspect a manifest:
    * **Icons** - displays every icon that's been specified in the manifest.
    * **Window Controls Overlay**
    * Optionally, screenshot sections, such as **Screenshot #1** and **Screenshot #2**.
-   
+
 1. Click the link below the **App Manifest** label, such as `manifest.json`.
 
    The manifest file opens, such as [/pwamp/manifest.json](https://microsoftedge.github.io/Demos/pwamp/manifest.json).
@@ -293,11 +301,11 @@ To view service workers:
 
    ![The Service workers page](./index-images/service-workers-page.png)
 
-   The **Service workers** pane lists the service worker for this PWA and also the service workers for other demos: `/pwa-timer/`, `/wami/`, `/pwa-to-do/`, and `/1DIV/`.  These other service workers are listed because they're part of the same domain name, `microsoftedge.github.io`.  If the demos had separate domains, such as `pwamp.com`, only the PWAmp service worker would be listed.
+   The **Service workers** page lists the service worker for this PWA (`/pwamp/sw.js`), and also the service workers for other demos: `/pwa-timer/`, `/wami/`, `/pwa-to-do/`, and `/1DIV/`.  These other service workers are listed because they're part of the same domain name, `microsoftedge.github.io`.  If the demos had separate domains, such as `pwamp.com`, only the PWAmp service worker would be listed.
 
 
 <!-- ------------------------------ -->
-#### UI controls in the Service Workers pane
+#### UI controls in the Service workers page
 <!-- heading is not upstream, content is upstream (but not in ui order) -->
 
 * Checkboxes
@@ -355,7 +363,7 @@ See also:
 ## Display network requests handled by a service worker
 <!-- not in upstream -->
 
-From the **Service workers** pane of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
+In the **Service workers** page of the **Application** tool, you can quickly access the list of network requests that are handled by a service worker, through the **Network** tool.
 
 To display the network requests that are handled by a service worker:
 
@@ -369,9 +377,9 @@ To display the network requests that are handled by a service worker:
 
 1. In the outline on the left, in the **Application** section, select **Service workers**.
 
-   The **Service workers** pane is displayed.
+   The **Service workers** page is displayed.
 
-1. In the upper right of the **Service workers** pane, click the **Network requests** button.
+1. In the upper right of the **Service workers** page, click the **Network requests** button.
 
    The ![Network icon](./index-images/network-icon.png) **Network** tool opens.
 
@@ -392,13 +400,30 @@ To display the network requests that are handled by a service worker:
 ## Service worker caches
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#caches -->
 
-The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache):
+The **Cache Storage** page provides a read-only list of resources that have been cached using the (service worker) Cache API.
 
-![The Cache Storage Pane](./index-images/cache-pane-cache-storage-resources.png)
+To view cache storage information for a service worker:
+
+1. Go to a page that uses a service worker cache and cache storage, such as the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo, in a new window or tab.
+
+1. Right-click the page, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+
+1. In the outline on the left, select **Cache storage**.
+
+   The **Cache storage** page is displayed:
+
+   ![The Cache storage page](./index-images/cache-page-cache-storage-resources.png)
 
 The first time you open a cache and add a resource to it, DevTools might not detect the change.  Refresh the page to display the cache.
 
-All open caches are listed under the **Cache Storage** expander.
+All open caches are listed under the **Cache storage** expander.
+
+See also:
+* [Cache](https://developer.mozilla.org/docs/Web/API/Cache) at MDN > Web APIs.
 
 
 <!-- ====================================================================== -->
@@ -425,7 +450,7 @@ To clear storage:
 
 1. In the tree on the left, select **Application** > **Storage**.
 
-   The **Storage** pane opens:
+   The **Storage** page opens:
 
    ![The "Clear site data" button](./index-images/clear-site-data-button.png)
 
@@ -435,13 +460,43 @@ To clear storage:
 <!-- ====================================================================== -->
 ## See also
 <!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other -->
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
-* [Application tool, to manage storage](../storage/application-tool.md)
-* [Inspect network activity](../network/index.md)
-* [Remotely debug Android devices](../remote-debugging/index.md)
-* [Remotely debug Android WebViews](../remote-debugging/webviews.md)
-* [Remotely debug Windows devices](../remote-debugging/windows.md)
+<!-- local: (todo: in toc order) -->
+* [Share content with other apps](../../progressive-web-apps/how-to/share.md).
+* [View the resource files that make up a webpage](../resources/index.md)
+* [View and edit local storage](../storage/localstorage.md)
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
+* [Use Progressive Web Apps (PWAs) in Microsoft Edge](../../progressive-web-apps/ux.md)
+* [The web app manifest (`manifest.json`)](../../progressive-web-apps/how-to/index.md#the-web-app-manifest-manifestjson) in _Get started developing a PWA_.
+* [Define app shortcuts (long-press or right-click menus)](../../progressive-web-apps/how-to/shortcuts.md)
+* [Test Progressive Web App (PWA) protocol handling](./protocol-handlers.md)
+* [Debug background services](../javascript/background-services.md) - debugging service workers from DevTools.
+* [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
+* [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)
+* [Command Menu](../command-menu/index.md).
+* [Application tool, to manage storage](../storage/application-tool.md)<!-- link not in article -->
+* [Inspect network activity](../network/index.md)<!-- link not in article -->
+* [Remotely debug Android devices](../remote-debugging/index.md)<!-- link not in article -->
+* [Remotely debug Android WebViews](../remote-debugging/webviews.md)<!-- link not in article -->
+* [Remotely debug Windows devices](../remote-debugging/windows.md)<!-- link not in article -->
+
+GitHub:
+* [PWAmp](https://microsoftedge.github.io/Demos/pwamp/)
+   * [`manifest.json`, lines 100-105](https://github.com/MicrosoftEdge/Demos/blob/402867e2fc0cd625e6c2a2504664064d3cd36ea9/pwamp/manifest.json#L100-L105)
+* [PWA manifest localization demo](https://microsoftedge.github.io/Demos/pwa-manifest-localization/) - defines a shortcut in its manifest file.
+
+MDN:
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
+* [Cache](https://developer.mozilla.org/docs/Web/API/Cache) at MDN > Web APIs.
+
+web.dev:
+* [Adaptive icon support in PWAs with maskable icons](https://web.dev/articles/maskable-icon) at web.dev.
+* [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
+* [The service worker lifecycle](https://web.dev/articles/service-worker-lifecycle) - at web.dev.
+
+developer.chrome.com:
+* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
 
 
 <!-- ====================================================================== -->
