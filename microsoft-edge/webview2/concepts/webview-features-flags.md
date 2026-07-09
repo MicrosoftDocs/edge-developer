@@ -33,11 +33,15 @@ You can set browser flags in your local device environment, or set browser flags
 
 To test forthcoming features or to diagnose issues, we recommend using browser flags in your local device environment, via setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable or via registry keys.  For more information, see the following Win32 API Reference: [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
+Flags that are set via the local device environment are ignored for elevated apps; see [Overrides for elevated WebView2 host apps](./security.md#overrides-for-elevated-webview2-host-apps) in _Develop secure WebView2 apps_.
+
 
 <!-- ====================================================================== -->
 ## Setting browser flags programmatically through code
 
 Instead of setting browser flags in your local device environment, an alternative approach is to set browser flags programmatically, by passing the browser flags as the `AdditionalBrowserArguments` property of `CoreWebView2EnvironmentOptions`.  If you set browser flags programmatically, be sure to remove the flags in code before shipping your app, to avoid accidentally shipping the flags in production.
+
+Flags that are set via code are honored for elevated apps; see [Overrides for elevated WebView2 host apps](./security.md#overrides-for-elevated-webview2-host-apps) in _Develop secure WebView2 apps_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
