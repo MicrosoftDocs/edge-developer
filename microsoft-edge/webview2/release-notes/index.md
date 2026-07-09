@@ -47,8 +47,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 Starting with version 152 (Aug. 24, 2026), the WebView2 Runtime moves to a 2-week release cadence.  This is aligned with Microsoft Edge.  WebView2 Runtime version 151 is the final release that's on a 4-week release cadence.
 
-The WebView2 SDK continues on its monthly release cadence.
-
 See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting v152)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137).
 
 
@@ -231,11 +229,7 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ---------- -->
 ###### WebView2 Runtime is changing to a 2-week release cadence
 
-Starting with version 152 (Aug. 24, 2026), the WebView2 Runtime moves to a 2-week release cadence.  This is aligned with Microsoft Edge.  WebView2 Runtime version 151 is the final release that's on a 4-week release cadence.
-
-The WebView2 SDK continues on its monthly release cadence.
-
-See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting v152)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137).
+See [WebView2 Runtime is changing to a 2-week release cadence](#webview2-runtime-is-changing-to-a-2-week-release-cadence), in the Prerelease section above.
 
 
 <!-- ------------------------------ -->
