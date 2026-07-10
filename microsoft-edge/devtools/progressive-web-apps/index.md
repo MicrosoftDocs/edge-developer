@@ -514,13 +514,13 @@ GitHub:
 * [PWA manifest localization demo](https://microsoftedge.github.io/Demos/pwa-manifest-localization/) - defines a shortcut in its manifest file.
 
 MDN:
-* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) - at MDN, about service workers.
+* [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API)
 * [Cache](https://developer.mozilla.org/docs/Web/API/Cache) at MDN > Web APIs.
 
 web.dev:
-* [Adaptive icon support in PWAs with maskable icons](https://web.dev/articles/maskable-icon) at web.dev.
-* [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
-* [The service worker lifecycle](https://web.dev/articles/service-worker-lifecycle) - at web.dev.
+* [Adaptive icon support in PWAs with maskable icons](https://web.dev/articles/maskable-icon)
+* [How push works](https://web.dev/push-notifications-how-push-works/)
+* [The service worker lifecycle](https://web.dev/articles/service-worker-lifecycle)
 
 
 <!-- ====================================================================== -->
