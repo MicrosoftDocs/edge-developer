@@ -55,10 +55,10 @@ Progressive Web Apps (PWAs) are modern, high-quality applications built using we
    * The home screen on Android and iOS.
 * PWAs show up in:
    * Activity switchers.
-   * Device search engines such as Spotlight.
-   * Content sharing sheets.  For example, when you view a photo on your mobile device, you can share that photo with other apps, such as your messaging app.  A PWA can trigger share dialogs, and can also appear in share dialogs.  See [Share content with other apps](../../progressive-web-apps/how-to/share.md).
+   * Device search engines such as the Windows Start menu.
+   * Sharing dialogs, such as when sharing files between apps.  A PWA can trigger share dialogs, and can also appear in share dialogs.  See [Share content with other apps](../../progressive-web-apps/how-to/share.md).
 
-The features that are discussed below are features of the **Application** tool are relevant for PWAs.  For help on the other features and pages in the **Application** tool, see:
+The features that are discussed below are features of the **Application** tool that are relevant for PWAs.  For help on the other features and pages in the **Application** tool, see:
 * [See also](#see-also), below.
 * [View the resource files that make up a webpage](../resources/index.md)
 * [View and edit local storage](../storage/localstorage.md)
@@ -197,15 +197,17 @@ See also:
 #### Test URL protocol handler registration
 <!-- https://developer.chrome.com/docs/devtools/progressive-web-apps/#test-protocol-handler -->
 
-A PWA can handle links that use a specific protocol, for a more integrated experience.  To create a handler, see [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
+A PWA can handle links that use a specific protocol, for a more integrated experience.  To create a handler, see [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md).
 
 The PWAmp demo supports protocol handling, in [`manifest.json`, lines 100-105](https://github.com/MicrosoftEdge/Demos/blob/402867e2fc0cd625e6c2a2504664064d3cd36ea9/pwamp/manifest.json#L100-L105)
 
-To test protocol handling:
+To test protocol handling, install the app, and then test in one of two ways, as follows.
 
-1. Go to the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo in a new window or tab.
 
-   **Install the PWA:**
+<!-- ---------- -->
+###### Install the PWA
+
+1. Go to a PWA webpage, such as the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo, in a new window or tab.
 
 1. On the right side of the Address bar, click the **App available.  Install PWAmp music player** (![The "App available, Install" icon](./index-images/app-available-install-icon.png)) button.
 
@@ -221,7 +223,15 @@ To test protocol handling:
 
 1. Click the **Yes** button.
 
-   **Test the protocol, in DevTools:**
+Next, test URL protocol handler registration, using one of the following ways.
+
+
+<!-- ---------- -->
+###### Test URL protocol handler registration by using DevTools
+
+To test URL protocol handler registration by using DevTools:
+
+1. Install the PWA, per [Install the PWA](#install-the-pwa), above.
 
 1. Right-click the app, and then select **Inspect**.
 
@@ -237,9 +247,17 @@ To test protocol handling:
 
    ![The Test protocol button](./index-images/test-protocol.png)
 
-1. Click the **Test protocol** button.  todo: doesn't seem to work, opens new tab in Edge
+1. Click the **Test protocol** button.
 
-   **Test the protocol (non-DevTools way):**
+   The installed PWA opens, demonstrating that the URL protocol handler registration works.
+
+
+<!-- ---------- -->
+###### Test URL protocol handler registration by using the Run app
+
+To test URL protocol handler registration by using the Run app:
+
+1. Install the PWA, per [Install the PWA](#install-the-pwa), above.
 
 1. Open the **Start** menu.
 
@@ -295,14 +313,14 @@ To view service workers:
 
    ![The Service workers page](./index-images/service-workers-page.png)
 
-   The **Service workers** page lists the service worker for this PWA (`/pwamp/sw.js`), and also the service workers for other demos: `/pwa-timer/`, `/wami/`, `/pwa-to-do/`, and `/1DIV/`.  These other service workers are listed because they're part of the same domain name, `microsoftedge.github.io`.  If the demos had separate domains, such as `pwamp.com`, only the PWAmp service worker would be listed.
+   The **Service workers** page lists the service worker for this PWA (`/pwamp/sw.js`).  If you previously used other demos that are hosted at `microsoftedge.github.io`, the **Service workers** page also lists the service workers for these demos, such as `/pwa-timer/`, `/wami/`, or `/pwa-to-do/`.  These other service workers are listed because they're part of the same domain name, `microsoftedge.github.io`.  If the demos had separate domains, such as `pwamp.com`, only the PWAmp service worker would be listed.
 
 
 <!-- ------------------------------ -->
 #### UI controls in the Service workers page
 <!-- heading is not upstream, content is upstream (but not in ui order) -->
 
-* Checkboxes
+* Checkboxes:
 
    * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
       * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
@@ -312,7 +330,7 @@ To view service workers:
 
    * The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 
-* Links in the upper right
+* Links in the upper right:
 
    * The **Network requests** link takes you to the **Network** tool with a list of intercepted requests related to the service worker (the `is:service-worker-intercepted` filter).  See [Display network requests handled by a service worker](#display-network-requests-handled-by-a-service-worker), below.
 
@@ -320,27 +338,21 @@ To view service workers:
 
    * The **Unregister** link unregisters the specified service worker.  To unregister a service worker and wipe storage and caches with a single button-click, see [Clear storage (Storage page)](#clear-storage-storage-page), below.
 
-* Lines in the service worker's section
+* Lines in the service worker's section:
 
-   * The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
+   * The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Clicking the link opens the source code of the service worker in the **Sources** tool.
 
-   * The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in the previous figure) is for the currently active service worker.
-
-     Next to the status:
-     * If the service worker is stopped, a **Start** button is displayed.
-     * If the service worker is running, a **Stop** button is displayed.
-
-     Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.
-
-     Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+   * The **Status** line tells you the status of the service worker.
+      * The number on this line (`#292` in the previous screenshot) indicates how many times the service worker has been updated.  If you select the **Update on reload** checkbox, the number increments on every page load.
+      * Next to the status is a **Start** button (if the service worker is stopped) or a **Stop** button (if the service worker is running).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker by using the **Stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  Stopping your service worker frequently reveals bugs due to faulty assumptions about persistent global state.
 
    * The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you have multiple registered service workers.  If you click the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
    * The **Push** button emulates a push notification without a payload (also known as a _tickle_).  See [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
 
-   * The **Sync** button emulates a background sync event.
+   * The **Sync** button emulates a background sync event, to test code that uses the Background Sync API.  See [Use the Background Sync API to synchronize data with the server](../../progressive-web-apps/how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server) in _Synchronize and update a PWA in the background_.
 
-   * The **Periodic sync** section has a **Periodic sync** button.  todo: state purpose
+   * The **Periodic sync** button emulates a periodic sync event, to test code that uses the Periodic Background Sync API.  See [Use the Periodic Background Sync API to regularly get fresh content](../../progressive-web-apps/how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content) in _Synchronize and update a PWA in the background_.
 
    * The **Update Cycle** table displays the service worker's activities and their elapsed times, such as **Install**, **Wait**, and **Activate**.  To see the exact timestamp of each activity, click the **Expand** (![Expander triangle](./index-images/expander-icon.png)) buttons.
 
@@ -436,7 +448,9 @@ To clear storage:
 
 1. Open a PWA, such as the [PWAmp](https://microsoftedge.github.io/Demos/pwamp/) demo, in a new window or tab.
 
-1. Right-click the PWA (todo: installed, or not?) and then select **Inspect**.
+1. Right-click the PWA, and then select **Inspect**.
+
+   The PWA doesn't need to have been installed.  A PWA can use a service worker and store data in the cache without being installed.
 
    DevTools opens.
 
