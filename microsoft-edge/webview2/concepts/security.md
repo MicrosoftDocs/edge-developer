@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/09/2026
+ms.date: 07/10/2026
 ---
 # Develop secure WebView2 apps
 
@@ -103,13 +103,19 @@ When the host process is running elevated:
 * Configuration flags that are specified within the WebView2 app via the WebView2 API are honored.  See:
    * [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
 
-* `HKEY_CURRENT_USER` (HKCU) policy overrides are ignored.  See:
-   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) (and other sections) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+* `HKEY_CURRENT_USER` (`HKCU`) policy overrides are ignored.  See:
+   * _Test upcoming APIs and features_
+      * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+      * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+      * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
    * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_ - Find `HKEY_CURRENT_USER`.
    * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md) - Find `HKEY_CURRENT_USER`.
 
-* `HKEY_LOCAL_MACHINE` (HKLM) policy overrides are honored.  See:
-   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) (and other sections) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+* `HKEY_LOCAL_MACHINE` (`HKLM`) policy overrides are honored.  See:
+   * _Test upcoming APIs and features_
+      * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+      * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+      * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
    * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_ - Find `HKEY_LOCAL_MACHINE`.
 
 Non-elevated WebView2 apps honor all of the supported override mechanisms.
