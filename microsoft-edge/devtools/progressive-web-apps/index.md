@@ -226,7 +226,7 @@ To test protocol handling, install the app, and then test in one of two ways, as
 
 1. Click the **Yes** button.
 
-Next, test URL protocol handler registration, using one of the following ways.
+Next, test URL protocol handler registration, using either of the following ways.
 
 
 <!-- ---------- -->
@@ -246,7 +246,7 @@ To test URL protocol handler registration by using DevTools:
 
    The **Manifest** page scrolls down to the **Protocol Handlers** section.
 
-1. In the **Enter URL** text box, enter the following:
+1. In the **Enter URL** text box to the right of `web+amp://`, enter the following:
 
    ```
    remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3
