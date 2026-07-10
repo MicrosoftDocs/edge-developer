@@ -104,13 +104,13 @@ When the host process is running elevated:
    * [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
 
 * `HKEY_CURRENT_USER` (HKCU) policy overrides are ignored.  See:
-   * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
-   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
-   * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md)
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_ - Find `HKEY_CURRENT_USER`.
+   * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md) - Find `HKEY_CURRENT_USER`.
 
 * `HKEY_LOCAL_MACHINE` (HKLM) policy overrides are honored.  See:
-   * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
-   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_ - Find `HKEY_LOCAL_MACHINE`.
 
 Non-elevated WebView2 apps honor all of the supported override mechanisms.
 
