@@ -104,13 +104,13 @@ When the host process is running elevated:
    * [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
 
 * `HKEY_CURRENT_USER` (HKCU) policy overrides are ignored.  See:
-   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
    * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
    * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md)
 
 * `HKEY_LOCAL_MACHINE` (HKLM) policy overrides are honored.  See:
-   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
    * [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+   * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_.
 
 Non-elevated WebView2 apps honor all of the supported override mechanisms.
 
