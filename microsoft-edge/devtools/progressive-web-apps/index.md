@@ -483,24 +483,30 @@ To clear storage:
 <!-- Other Application panel guides  https://developer.chrome.com/docs/devtools/progressive-web-apps/#other -->
 <!-- all links in article -->
 
-<!-- local: (todo: in toc order) -->
-* [Share content with other apps](../../progressive-web-apps/how-to/share.md)
-* [View the resource files that make up a webpage](../resources/index.md)
-* [View and edit local storage](../storage/localstorage.md)
-* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)
-* [Use Progressive Web Apps (PWAs) in Microsoft Edge](../../progressive-web-apps/ux.md)
-* [The web app manifest (`manifest.json`)](../../progressive-web-apps/how-to/index.md#the-web-app-manifest-manifestjson) in _Get started developing a PWA_.
-* [Define app shortcuts (long-press or right-click menus)](../../progressive-web-apps/how-to/shortcuts.md)
-* [Test Progressive Web App (PWA) protocol handling](./protocol-handlers.md)
-* [Debug background services](../javascript/background-services.md) - debugging service workers from DevTools.
-* [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
-* [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)
-* [Run commands in the Command Menu](../command-menu/index.md)
-* [Application tool, to manage storage](../storage/application-tool.md)<!-- link not in article -->
-* [Inspect network activity](../network/index.md)<!-- link not in article -->
-* [Remotely debug Android devices](../remote-debugging/index.md)<!-- link not in article -->
-* [Remotely debug Android WebViews](../remote-debugging/webviews.md)<!-- link not in article -->
-* [Remotely debug Windows devices](../remote-debugging/windows.md)<!-- link not in article -->
+DevTools:
+* **Network** tool:
+   * [Inspect network activity](../network/index.md)<!-- link not in article --><!-- toc bucket: devtools > network, child 1 -->
+   * [View the resource files that make up a webpage](../resources/index.md)<!-- toc bucket: devtools > network -->
+* **Application** tool:
+   * [Application tool, to manage storage](../storage/application-tool.md)<!-- link not in article --><!-- toc bucket: ~ -->
+   * [View and edit local storage](../storage/localstorage.md)<!-- toc bucket: devtools > application -->
+   * [Test Progressive Web App (PWA) protocol handling](./protocol-handlers.md)<!-- toc bucket: devtools > application -->
+   * [Debug background services](../javascript/background-services.md) - debugging service workers from DevTools.<!-- toc bucket: devtools > application -->
+* **Command Menu**:
+   * [Run commands in the Command Menu](../command-menu/index.md)<!-- toc bucket: devtools bucket 5 -->
+* Remote debugging:
+   * [Remotely debug Android devices](../remote-debugging/index.md)<!-- link not in article --><!-- toc bucket: devtools bucket 7 -->
+   * [Remotely debug Android WebViews](../remote-debugging/webviews.md)<!-- link not in article --><!-- toc bucket: devtools bucket 7 -->
+   * [Remotely debug Windows devices](../remote-debugging/windows.md)<!-- link not in article --><!-- toc bucket: devtools bucket 7 -->
+
+Progressive Web Apps (PWAs):
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps/index.md)<!-- toc bucket 0.2 -->
+* [Use Progressive Web Apps (PWAs) in Microsoft Edge](../../progressive-web-apps/ux.md)<!-- toc bucket 1.1 -->
+* [The web app manifest (`manifest.json`)](../../progressive-web-apps/how-to/index.md#the-web-app-manifest-manifestjson) in _Get started developing a PWA_.<!-- toc bucket 1.2, h2 #5 -->
+* [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.<!-- toc bucket 1.2, h2 #6 -->
+* [Share content with other apps](../../progressive-web-apps/how-to/share.md)<!-- toc bucket 3.2 -->
+* [Define app shortcuts (long-press or right-click menus)](../../progressive-web-apps/how-to/shortcuts.md)<!-- toc bucket 3.3 -->
+* [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)<!-- toc bucket 5.3 -->
 
 GitHub:
 * [PWAmp](https://microsoftedge.github.io/Demos/pwamp/)
