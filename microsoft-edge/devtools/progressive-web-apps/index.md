@@ -252,7 +252,7 @@ To test URL protocol handler registration by using DevTools:
    remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3
    ```
 
-   ![The Test protocol button](./index-images/test-protocol.png) _todo: show string in text box_
+   ![The Test protocol button](./index-images/test-protocol.png)
 
 1. Click the **Test protocol** button.
 
@@ -515,9 +515,6 @@ web.dev:
 * [Adaptive icon support in PWAs with maskable icons](https://web.dev/articles/maskable-icon) at web.dev.
 * [How push works](https://web.dev/push-notifications-how-push-works/) at web.dev.
 * [The service worker lifecycle](https://web.dev/articles/service-worker-lifecycle) - at web.dev.
-
-developer.chrome.com:
-* [URL protocol handler registration for PWAs](https://developer.chrome.com/docs/web-platform/best-practices/url-protocol-handler) (todo: local link or mdn)
 
 
 <!-- ====================================================================== -->
