@@ -248,15 +248,11 @@ To test URL protocol handler registration by using DevTools:
 
 1. In the **Enter URL** text box, enter the following:
 
-   _todo: single or triple backticks?_
-
-   `remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3`
-
    ```
    remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3
    ```
 
-   ![The Test protocol button](./index-images/test-protocol.png)
+   ![The Test protocol button](./index-images/test-protocol.png) _todo: show string in text box_
 
 1. Click the **Test protocol** button.
 
@@ -277,10 +273,6 @@ To test URL protocol handler registration by using the Run app:
    The **Run** dialog opens.
 
 1. Enter the following:
-
-   _todo: single or triple backticks?_
-
-   `web+amp:remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3`
 
    ```
    web+amp:remote-song:https://microsoftedge.github.io/Demos/pwamp/songs/OverTheStargates.mp3
