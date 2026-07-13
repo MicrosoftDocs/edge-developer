@@ -91,7 +91,15 @@ WebView2 cannot be run as a system user.  This restriction blocks scenarios such
 
 
 <!-- ====================================================================== -->
-## For an elevated host app, use appropriate override flags
+## Recommended privilege level for WebView2 host applications
+
+As a security best practice, we recommend hosting WebView2 in a process that runs at standard (non-elevated) user integrity.  Following the principle of least privilege, applications should avoid running the WebView2-hosting component with elevated (administrator) privileges.
+
+If your application requires elevated privileges for certain operations, we recommend isolating that work in a separate, dedicated process and keeping the WebView2 host component de-elevated.  This keeps the browser-hosting surface at the lowest privilege level necessary, and aligns with recommended Windows application security practices.
+
+
+<!-- ------------------------------ -->
+#### For an elevated host app, use appropriate override flags
 
 For an elevated WebView2 host app process, use the appropriate type of override flags.  To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
 
