@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 03/20/2024
+ms.date: 07/14/2026
 ---
 # About release notes for the WebView2 SDK
 
@@ -26,7 +26,6 @@ The following have a 2-week release cadence:
 * WebView2 Release notes.
 * WebView2 Release SDK.
 * WebView2 Prerelease SDK.
-* Microsoft Edge.
 * WebView2 Runtime.
 
 See:
