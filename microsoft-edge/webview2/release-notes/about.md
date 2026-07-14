@@ -50,7 +50,7 @@ See:
 The WebView2 Runtime has a 2-week release cadence.
 
 See:
-* [Distribute your app and the WebView2 Runtime](./distribution.md)
+* [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)
 * [WebView2 Runtime is changing to a 2-week release cadence](../release-notes/index.md#webview2-runtime-is-changing-to-a-2-week-release-cadence) in _Release notes for the WebView2 SDK_.
 
 
