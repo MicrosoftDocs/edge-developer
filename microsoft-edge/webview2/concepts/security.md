@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/10/2026
+ms.date: 07/14/2026
 ---
 # Develop secure WebView2 apps
 
@@ -105,7 +105,7 @@ For an elevated WebView2 host app process, use the appropriate type of override 
 
 When the host process is running elevated:
 
-* `WEBVIEW2_*` environment variable overrides (flags) are ignored.  See:
+* `WEBVIEW2_*` environment variable overrides (flags) are ignored, including `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS`.  See:
    * [Setting browser flags in your local device environment](./webview-features-flags.md#setting-browser-flags-in-your-local-device-environment) in _WebView2 browser flags_.
 
 * Configuration flags that are specified within the WebView2 app via the WebView2 API are honored.  See:
@@ -118,6 +118,8 @@ When the host process is running elevated:
       * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
    * [Detect if a WebView2 Runtime is already installed](./distribution.md#detect-if-a-webview2-runtime-is-already-installed) in _Distribute your app and the WebView2 Runtime_ - Find `HKEY_CURRENT_USER`.
    * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md) - Find `HKEY_CURRENT_USER`.
+
+* `AdditionalBrowserArguments` registry overrides that are under `HKCU` are ignored.
 
 * `HKEY_LOCAL_MACHINE` (`HKLM`) policy overrides are honored.  See:
    * _Test upcoming APIs and features_
