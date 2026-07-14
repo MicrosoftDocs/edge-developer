@@ -101,7 +101,7 @@ If your application requires elevated privileges for certain operations, we reco
 <!-- ------------------------------ -->
 #### For an elevated host app, use appropriate override flags
 
-For an elevated WebView2 host app process, use the appropriate type of override flags.  To help protect elevated (High Integrity) processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
+For an elevated WebView2 host app process, use the appropriate type of override flags.  An elevated process is a High Integrity Level (High IL) process.  To help protect elevated processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
 
 When the host process is running elevated:
 
