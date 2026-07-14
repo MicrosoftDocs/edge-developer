@@ -2605,8 +2605,8 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 <!-- ====================================================================== -->
 ## See also
 
-* [About release notes for the WebView2 SDK](./about.md)
 * [Archived release notes for the WebView2 SDK](./archive.md)
+* [About release notes for the WebView2 SDK](./about.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md) - outlines many of the APIs, by feature area, that are in Release SDK packages.
 * [Contacting the Microsoft Edge WebView2 team](../contact.md)
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
