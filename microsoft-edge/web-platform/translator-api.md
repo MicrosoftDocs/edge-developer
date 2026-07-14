@@ -55,12 +55,6 @@ To learn about the Language Detector API, see [Detect languages with the Languag
 
 
 <!-- ====================================================================== -->
-## Availability of the Translator API
-
-The Translator API is available in Microsoft Edge 148 or later.
-
-
-<!-- ====================================================================== -->
 ## Benefits of the Translator API
 
 The Translator API uses a task-specific model for machine translation that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This approach has the following benefits compared to cloud-based solutions:
@@ -99,7 +93,7 @@ An initial download of the on-device translation model is required the first tim
 
 To see the Translator API in action, and review existing code that uses the API:
 
-1. In Microsoft Edge 148 or later, go to [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
+1. Go to [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable.  The model for a specified language pair will be downloaded the first time the API is used.**
 
