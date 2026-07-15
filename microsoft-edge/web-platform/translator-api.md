@@ -16,7 +16,6 @@ Use the Translator API to translate text between different languages from JavaSc
 <!-- https://github.com/captainbrosset/WebToc -->
 * [Introduction](#introduction)
 * [Use the Language Detector API with the Translator API](#use-the-language-detector-api-with-the-translator-api)
-* [Availability of the Translator API](#availability-of-the-translator-api)
 * [Benefits of the Translator API](#benefits-of-the-translator-api)
 * [Alternatives to the Translator API](#alternatives-to-the-translator-api)
 * [Disclaimer](#disclaimer)
