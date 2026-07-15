@@ -22,26 +22,28 @@ ms.date: 07/15/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # View the properties of DOM objects
+<!-- https://developer.chrome.com/docs/devtools/dom/properties -->
 
 Use the **Properties** tab in the **Elements** tool to browse and filter properties of DOM objects.
 
 Detailed contents:
-  * [Open the Properties tab](#open-the-properties-tab)
-  * [Spot own properties](#spot-own-properties)
-  * [Find the origin of an inherited property](#find-the-origin-of-an-inherited-property)
-  * [Filter properties](#filter-properties)
-  * [Show all properties](#show-all-properties)
-  * [Understand properties](#understand-properties)
-    * [Simple properties](#simple-properties)
-    * [Objects and arrays](#objects-and-arrays)
-    * [Properties that correspond to DOM nodes](#properties-that-correspond-to-dom-nodes)
-    * [Own and inherited properties](#own-and-inherited-properties)
-    * [Enumerable and non-enumerable properties](#enumerable-and-non-enumerable-properties)
-    * [Methods](#methods)
+* [Open the Properties tab](#open-the-properties-tab)
+* [Spot own properties](#spot-own-properties)
+* [Find the origin of an inherited property](#find-the-origin-of-an-inherited-property)
+* [Filter properties](#filter-properties)
+* [Show all properties](#show-all-properties)
+* [Understand properties](#understand-properties)
+   * [Simple properties](#simple-properties)
+   * [Objects and arrays](#objects-and-arrays)
+   * [Properties that correspond to DOM nodes](#properties-that-correspond-to-dom-nodes)
+   * [Own and inherited properties](#own-and-inherited-properties)
+   * [Enumerable and non-enumerable properties](#enumerable-and-non-enumerable-properties)
+   * [Methods](#methods)
 
 
 <!-- ====================================================================== -->
 ## Open the Properties tab
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#view-properties -->
 
 To open the **Properties** tab:
 
@@ -56,6 +58,7 @@ To open the **Properties** tab:
 
 <!-- ====================================================================== -->
 ## Spot own properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#spot-own-properties -->
 
 The **Properties** tab sorts and displays the object's own properties first and in bold font.
 
@@ -64,6 +67,7 @@ The **Properties** tab sorts and displays the object's own properties first and 
 
 <!-- ====================================================================== -->
 ## Find the origin of an inherited property
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#origin-of-inherited-property -->
 
 The **Properties** tab evaluates accessors on built-in elements and displays them on the object as inherited and in regular font.
 
@@ -80,6 +84,7 @@ Additionally, prototype-specific properties are shown only on prototypes, not on
 
 <!-- ====================================================================== -->
 ## Filter properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#filter-properties -->
 
 To quickly find a property, start typing its name or value in the Filter input box.
 
@@ -88,6 +93,7 @@ To quickly find a property, start typing its name or value in the Filter input b
 
 <!-- ====================================================================== -->
 ## Show all properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#show-all -->
 
 By default, the **Properties** tab doesn't show properties with null and undefined values.
 
@@ -98,38 +104,43 @@ To see all properties, select the **Show all** checkbox.
 
 <!-- ====================================================================== -->
 ## Understand properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#understand-properties -->
 
 The **Properties** tab in the **Elements** tool shows various kinds of properties.
 
 
 <!-- ------------------------------ -->
 #### Simple properties
+https://developer.chrome.com/docs/devtools/dom/properties#simple-properties
 
-Simple properties are pairs of <name>: <value>.
+Simple properties are pairs of `<name>: <value>`.
 
 ![Simple properties] todo png
 
 
 <!-- ------------------------------ -->
 #### Objects and arrays
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#objects-and-arrays -->
 
 Collapsible (arrow_right) properties are objects {} or arrays [].
 
 ![Collapsible properties] todo png
 
-For more information on inspecting JavaScript objects, see [Inspect object properties](~).
+For more information on inspecting JavaScript objects, see [Inspect object properties] todo link.
 
 
 <!-- ------------------------------ -->
 #### Properties that correspond to DOM nodes
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#dom-nodes -->
 
 Properties that correspond to DOM nodes are links.  To select the relevant node in the DOM tree, click a link.
 
-!Link to the head DOM node] todo png
+![Link to the head DOM node] todo png
 
 
 <!-- ------------------------------ -->
 #### Own and inherited properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#own-and-inherited -->
 
 Properties in bold font are the object's own properties; they are defined directly on the object.
 
@@ -142,18 +153,20 @@ DevTools lists own properties first, to make them easier to spot.
 
 <!-- ------------------------------ -->
 #### Enumerable and non-enumerable properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#enumerable-and-non-enumerable -->
 
 Enumerable properties are bright in color.
 
 Non-enumerable properties are muted.
 
-Enumerable and non-enumerable properties.
+![Enumerable and non-enumerable properties] todo png
 
-You can iterate over the enumerable properties with the for … in loop or Object.keys() method.
+You can iterate over the enumerable properties by using a `for … in` loop or the `Object.keys()` method.
 
 
 <!-- ------------------------------ -->
 #### Methods
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#methods -->
 
 Methods are marked with an _f ()_.
 
@@ -165,7 +178,7 @@ For more information on functions, see [Inspect functions](https://developer.chr
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/docs/devtools/dom/) and is authored by Sofia Emelianova.
+> The original page is found [here](https://developer.chrome.com/docs/devtools/dom/properties) and is authored by Sofia Emelianova.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
