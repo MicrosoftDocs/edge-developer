@@ -89,7 +89,9 @@ For more information about automatic updating of the Evergreen Runtime, see:
 <!-- ====================================================================== -->
 ## Release cadence
 
-New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge browser, which is approximately every four weeks.
+See:
+* [Release cadence](../release-notes/about.md#release-cadence) in _About release notes for the WebView2 SDK_.
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 
 <!-- ====================================================================== -->
@@ -219,7 +221,7 @@ If your code determines that an API is unavailable in the client's installed Web
 * [Release SDK 1.0.622.22, for Runtime 86 (Oct. 19, 2020)](../release-notes/archive.md#release-sdk-1062222-for-runtime-86-oct-19-2020) in _Archived release notes for the WebView2 SDK_.<!-- bucket 12 -->
 
 Microsoft Edge Enterprise documentation:
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- not in article body -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 Downloads:
 * [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) - SDK.

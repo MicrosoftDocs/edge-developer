@@ -25,7 +25,7 @@ when change an h2 heading or move h2 sections from index.md to archive.md, enter
 todo: update links in announcements, since the Prerelease headings & Release headings in index.md & archive.md changed; AB#62191954
 -->
 
-The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs during the past year.
+The following new features and bug fixes are in the WebView2 Release SDK and Prerelease SDK.
 
 
 <!-- ====================================================================== -->
@@ -135,11 +135,11 @@ If `CoreWebView2Settings.IsReputationCheckingRequired` is set to `false`, settin
    * [ReputationChecking](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeature?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
 
 * `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures)
+   * [CoreWebView2Profile.SetOriginFeatures Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setoriginfeatures?view=webview2-dotnet-1.0.4126-prerelease&preserve-view=true)
 
 Older supporting APIs:
 
-* [CoreWebView2OriginFeatureState` Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturestate)
+* [CoreWebView2OriginFeatureState Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2originfeaturestate)
    * `Enabled`
    * `Disabled`
 
@@ -148,15 +148,15 @@ Older supporting APIs:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* `CoreWebView2Profile` Class:
-   * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile#setoriginfeatures)
-
 * `CoreWebView2OriginFeature` Enum:
    * [ReputationChecking](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeature?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true)
 
+* `CoreWebView2Profile` Class:
+   * [CoreWebView2Profile.SetOriginFeatures Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4126-prerelease&preserve-view=true#setoriginfeatures)
+
 Older supporting APIs:
 
-* [CoreWebView2OriginFeatureState` Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturestate)
+* [CoreWebView2OriginFeatureState Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2originfeaturestate)
    * `Enabled`
    * `Disabled`
 
@@ -165,11 +165,11 @@ Older supporting APIs:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `ICoreWebView2Profile`:
-   * [ICoreWebView2Profile::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.4126-prerelease&preserve-view=true#setoriginfeatures)
+* `ICoreWebView2ExperimentalProfile16`:
+   * [ICoreWebView2ExperimentalProfile16::SetOriginFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile16?view=webview2-1.0.4126-prerelease&preserve-view=true#setoriginfeatures)
 
 * `COREWEBVIEW2_ORIGIN_FEATURE` enum:
-   * [COREWEBVIEW2_ORIGIN_FEATURE_REPUTATION_CHECKING](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4126-prerelease&preserve-view=true#corewebview2_origin_feature_reputation_checking)
+   * [COREWEBVIEW2_ORIGIN_FEATURE_REPUTATION_CHECKING](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4126-prerelease&preserve-view=true#corewebview2_origin_feature)
 
 Older supporting APIs:
 

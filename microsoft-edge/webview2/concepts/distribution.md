@@ -31,7 +31,7 @@ See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-updat
 
 During development and testing, a WebView2 app can use either option as the backing web platform:
 
-* The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update cadence as the Stable channel of the Microsoft Edge browser.  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
+* The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update release cadence as the Stable channel of the Microsoft Edge browser; see [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
 
 * A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 

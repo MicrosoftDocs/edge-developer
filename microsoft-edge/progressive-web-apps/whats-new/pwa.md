@@ -244,15 +244,17 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's new in Microsoft Edge 94
 
-Microsoft Edge version 94 moved to Stable on Sep. 23, 2021. This release cycle was short — just 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
-
-Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
+Microsoft Edge version 94 moved to Stable on Sep. 23, 2021.  This release cycle was 3 weeks, from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable.  Due to the 3-week release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
 The origin trials remain active for the following features:
 * [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
 * [URL Handlers](#url-handlers-origin-trial).
 
 We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end with Microsoft Edge version 94 as we take final feedback and get ready to move the protocol handlers feature to Stable.  In case you are enrolled in the origin trial for protocol handlers, we plan to end the trial period after Microsoft Edge version 94.  We'll then determine when this feature will become Stable.
+
+See also:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+* [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html)
 
 
 <!-- ====================================================================== -->
