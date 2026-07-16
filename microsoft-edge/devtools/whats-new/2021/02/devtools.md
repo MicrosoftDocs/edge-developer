@@ -138,7 +138,7 @@ In addition, the **Flexbox** section in the **Layout** pane displays all of the 
 For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 * [Update .css files from within the Styles tab (CSS mirror editing)](../../../../visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md)<!-- eg "flex-direction" is only mentioned in this extension article -->
 <!-- todo: copy section content to regular docs -->
 

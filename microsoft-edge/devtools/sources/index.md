@@ -469,7 +469,7 @@ CSS changes take effect immediately; you don't need to manually save the changes
 
 See also:
 * [Get started viewing and changing CSS](../css/index.md).
-* [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../inspect-styles/edit-fonts.md)
 * [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 * [Open a demo folder from the Workspace tab in the Sources tool](../../devtools/samples/index.md#open-a-demo-folder-from-the-workspace-tab-in-the-sources-tool) in _Sample code for DevTools_.
 

@@ -69,7 +69,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 See also:
 * [Enable new font editor within the Styles tab](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) in _Experimental features in Microsoft Edge DevTools_.
-* [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
+* [Edit CSS font styles and settings in the Styles tab in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
 <!-- ====================================================================== -->

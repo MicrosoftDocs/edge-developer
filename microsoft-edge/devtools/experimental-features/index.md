@@ -262,7 +262,7 @@ To use the visual **Font Editor**:
 Some browser channels have the checkbox label **Enable new Font Editor tool within the Styles pane.**
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../inspect-styles/edit-fonts.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.

@@ -107,7 +107,7 @@ For example, to display the variable definition for the `--theme-body-background
 ![Viewing the definition of a CSS style that's used by a CSS variable](./devtools-images/css-variable-support-target.png)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 * [CSS features reference](../../../css/reference.md)
 
 

@@ -458,7 +458,7 @@ For example, if `monospace` is a custom font installed on the local machine, it 
 Chromium issue: [#1106221](https://crbug.com/1106221)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 * [CSS features reference](../../../css/reference.md)
 
 
