@@ -157,7 +157,7 @@ To inspect a name-only container query in DevTools:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![] todo png
+   ![Name-only container query](./container-queries-images/name-only-container-query.png)
 
    In the DOM tree, the `<div class="card">` element is selected, within `<div id="name-only-container">`.
 
@@ -167,11 +167,15 @@ To inspect a name-only container query in DevTools:
 
 1. Click the `→named-container-a` link.
 
-   The element `<div id="name-only-container">` is selected in the DOM tree.
+   In the DOM tree, the element `<div id="name-only-container">` is selected.
 
 
 <!-- ------------------------------ -->
 #### Inspect an inline-size container query
+
+In this demo, the `<div>` element with the black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
+
+The card element that's within the inline-size CSS container uses a `@container` query to change its background to different colors depending on the size of its container.  You can resize the container by using the handle in the bottom-right corner of the container, and observe the card's background color change.
 
 To inspect an inline-size container query in DevTools:
 
@@ -181,7 +185,7 @@ To inspect an inline-size container query in DevTools:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![] todo png
+   ![Inline-size container query](./container-queries-images/inline-size-container-query.png)
 
    In the DOM tree, the `<div class="card">` element is selected, within `<div id="inline-size-container">`.
 
@@ -191,15 +195,17 @@ To inspect an inline-size container query in DevTools:
 
 1. Click the `→div#inline-size-container` link.
 
-   The element `<div id="name-only-container">` is selected in the DOM tree.
+   In the DOM tree, the element `<div id="inline-size-container">` is selected, and an **inline-size** container badge is displayed next to it.
 
-   In the DOM tree, the element with ID inline-size-container is selected, and an inline-size badge is displayed next to it.
-
-1. Click the **inline-size** badge.
+1. Click the **inline-size** container badge.
 
    A dashed border is displayed around the content area of the container.
 
-   A dashed border is also displayed around all children elements which use the container's inline-size to apply different styles.  In this case, that's the card element.
+   A dashed border is also displayed around all children elements which use the container's inline-size to apply different styles.  In this case, that's the `<div class="card">` element.
+
+1. In the demo page, in the **Inline size container** section, resize the **Card** container by using the handle in the bottom-right corner of the container.
+
+   The card's background color changes.
 
 
 <!-- ------------------------------ -->
@@ -213,7 +219,7 @@ To inspect a style container query in DevTools:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![] todo png
+   ![Style container query](./container-queries-images/style-container-query.png) todo png
 
    In the DOM tree, the `<div class="card">` element is selected, within `<div id="style-container">`.
 
