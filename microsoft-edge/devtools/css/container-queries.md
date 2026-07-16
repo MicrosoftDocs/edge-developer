@@ -131,6 +131,10 @@ To inspect the first `@container` declaration:
 <!-- ====================================================================== -->
 ## Inspect a name-only container query
 
+In this section of the demo, the `<div id="name-only-container">` element with a black border is a CSS container that uses the `container-name: named-container-a;` CSS property.
+
+The `<div class="card">` element that's within that CSS named-container uses a `@container` query to change its background to green when it's inside a container named `named-container-a`.
+
 To inspect a name-only container query in DevTools:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
@@ -155,9 +159,9 @@ To inspect a name-only container query in DevTools:
 <!-- ====================================================================== -->
 ## Inspect an inline-size container query
 
-In this demo, the `<div>` element with the black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
+In this section of the demo, the `<div id="inline-size-container">` element with a black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
 
-The card element that's within the inline-size CSS container uses a `@container` query to change its background to different colors depending on the size of its container.  You can resize the container by using the handle in the bottom-right corner of the container, and observe the card's background color change.
+The `<div class="card">` element that's within the inline-size CSS container uses a `@container` query to change its background to different colors depending on the size of its container.  You can resize the container by using the handle in the bottom-right corner of the container, and observe the card's background color change.
 
 To inspect an inline-size container query in DevTools:
 
@@ -192,6 +196,12 @@ To inspect an inline-size container query in DevTools:
 
 <!-- ====================================================================== -->
 ## Inspect a style container query
+
+In this section of the demo, the `<div id="style-container">` element with a black border is a CSS container that uses the `container-name: named-container-b;` CSS property.
+
+The `<div class="card">` element that's within that CSS container uses a `@container style()` query to change its background to a different color, depending on the value of its container's `--foo` custom property.
+
+The container changes the value of `--foo</code> over time by using a CSS animation. Observe the card's background change.
 
 To inspect a style container query in DevTools:
 
