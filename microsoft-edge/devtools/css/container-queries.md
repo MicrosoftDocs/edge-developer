@@ -28,24 +28,6 @@ ms.date: 07/16/2026
 
 You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
-**Detailed contents:**
-* [Introduction](#introduction)
-* [Discover a container and its descendants](#discover-a-container-and-its-descendants)
-* [Inspect a container query](#inspect-a-container-query)
-   * [OLD: Coffee demo procedure](#old-coffee-demo-procedure)
-   * [OLD: Inspect the first @container declaration](#old-inspect-the-first-container-declaration)
-   * [Inspect a name-only container query](#inspect-a-name-only-container-query)
-   * [Inspect an inline-size container query](#inspect-an-inline-size-container-query)
-   * [Inspect a style container query](#inspect-a-style-container-query)
-* [Find a container element](#find-a-container-element)
-* [Modify a container query](#modify-a-container-query)
-
-
-<!-- ====================================================================== -->
-## Introduction
-
-You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
-
 CSS container queries allow you to manipulate the element's styles based on its parent container properties.  This capability shifts the concept of responsive web design from page-based to container-based.
 
 See also:
@@ -146,8 +128,8 @@ To inspect the first `@container` declaration:
    ![More @container declarations] todo png
 
 
-<!-- ------------------------------ -->
-#### Inspect a name-only container query
+<!-- ====================================================================== -->
+## Inspect a name-only container query
 
 To inspect a name-only container query in DevTools:
 
@@ -170,8 +152,8 @@ To inspect a name-only container query in DevTools:
    In the DOM tree, the element `<div id="name-only-container">` is selected.
 
 
-<!-- ------------------------------ -->
-#### Inspect an inline-size container query
+<!-- ====================================================================== -->
+## Inspect an inline-size container query
 
 In this demo, the `<div>` element with the black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
 
@@ -208,8 +190,8 @@ To inspect an inline-size container query in DevTools:
    The card's background color changes.
 
 
-<!-- ------------------------------ -->
-#### Inspect a style container query
+<!-- ====================================================================== -->
+## Inspect a style container query
 
 To inspect a style container query in DevTools:
 
