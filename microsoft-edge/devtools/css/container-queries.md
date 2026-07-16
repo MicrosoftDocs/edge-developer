@@ -211,7 +211,7 @@ To inspect a style container query in DevTools:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![Style container query](./container-queries-images/style-container-query.png) todo png
+   ![Style container query](./container-queries-images/style-container-query.png)
 
    In the DOM tree, the `<div class="card">` element is selected, within `<div id="style-container">`.
 
