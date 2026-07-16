@@ -514,7 +514,7 @@
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
-                  href: ./devtools/elements-tool/elements-tool.md
+                  href: ./devtools/elements/elements-tool.md
                   displayName: Elements tool
 
                 - name: DOM

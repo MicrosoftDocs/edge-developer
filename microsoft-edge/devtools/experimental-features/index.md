@@ -461,7 +461,7 @@ Enables using Copilot in the Microsoft Edge Sidebar to explain HTML elements and
 This experiment is not available when the Sidebar is turned off.
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
