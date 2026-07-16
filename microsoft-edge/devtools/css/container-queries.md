@@ -54,9 +54,7 @@ To display the dotted-line overlay of the container and its descendants:
 
    In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** badge: ![inline-size badge](./container-queries-images/inline-size-badge.png)
 
-   In the **Styles** tab, the CSS rule `div#inline-size-container` is displayed.
-
-   The `container-type: inline-size` CSS property defines the container element.  A contained descendant element can query the container's inline dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
+   In the **Styles** tab, the CSS rule `div#inline-size-container` is displayed.  Within that CSS rule, the CSS property `container-type: inline-size` defines the container element.  A contained descendant element can query this container's `inline-size` dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
 
 1. In the DOM tree, click the **inline-size** badge ![the inline-size badge](./container-queries-images/inline-size-badge.png) that's next to the element that's defined as an `inline-size-container`:
 
