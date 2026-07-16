@@ -40,6 +40,8 @@ See also:
 ## Discover a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
+todo: https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants
+
 An element that's defined as a query container has a **container** badge next to it in the **Elements** tool.  Clicking the **container** badge toggles a dotted-line overlay of the container and its descendants.
 
 To display the dotted-line overlay of the container and its descendants:
@@ -48,7 +50,7 @@ To display the dotted-line overlay of the container and its descendants:
 
 1. In the **Elements** tool, click the **container** badge that's next to an element that's defined as a container:
 
-   ![Container badge] todo png
+   ![Container badge](./container-queries-images/container-badge-discover.png) todo png
 
    In the above example, the `container-type: inline-size` property defines the container element.  The descendants can query its inline dimension (horizontal axis) and change their styles based on the width of the container.
 
@@ -154,6 +156,8 @@ To inspect a style container query in DevTools:
 ## Find a container element
 <!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
 
+todo: https://developer.chrome.com/docs/devtools/css/container-queries#find-containers
+
 To find and select a container element that caused the query to take effect:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
@@ -176,6 +180,8 @@ To find and select a container element that caused the query to take effect:
 <!-- ====================================================================== -->
 ## Modify a container query
 <!-- Modify container queries  https://developer.chrome.com/docs/devtools/css/container-queries#modify -->
+
+todo: https://developer.chrome.com/docs/devtools/css/container-queries#modify
 
 To debug a query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
 
