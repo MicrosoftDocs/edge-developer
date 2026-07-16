@@ -60,7 +60,6 @@ To display the dotted-line overlay of the container and its descendants:
 The **Elements** tool shows `@container` query declarations when they are applied to a descendant element; that is, when the container fulfills the query's condition.
 
 
-
 <!-- ====================================================================== -->
 ## Inspect a name-only container query
 
@@ -155,13 +154,23 @@ To inspect a style container query in DevTools:
 ## Find a container element
 <!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
 
-To find and select a container element that caused the query to take effect, hover over and click the element name above the `@container` declaration.
+To find and select a container element that caused the query to take effect:
 
-![Hovering over the element name] todo png
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
-When hovered over:
-* The name turns into a link to the element in the **Elements** tool.
-* The **Styles** tab displays the queried property and its current value.
+1. In the **Style container** section (todo: which section/demo?), right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![Hovering over the element name](./container-queries-images/hovering-the-element-name.png) todo png
+
+1. Hover over and click the element name (todo: specific element in dom) that's above the `@container` declaration:
+
+   ![alt text](./container-queries-images/foo.png) todo png
+
+   The name turns into a link to the element in the **Elements** tool. (todo: clarify specifics)
+ 
+   The **Styles** tab displays the queried property and its current value. (todo: clarify specifics)
 
 
 <!-- ====================================================================== -->
@@ -170,21 +179,27 @@ When hovered over:
 
 To debug a query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
 
-![png] todo png of video
-
-In the above example, the container's width is `500px`.  The paragraph (`p`) element is displayed in the rendered webpage.
+OLD: In the above example, the container's width is `500px`.  The paragraph (`p`) element is displayed in the rendered webpage.
 
 To modify a container query:
 
-1. todo: missing step for context
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
-1. In the **Styles** tab of the **Elements** tool, select the `p` element.
+1. In the **Style container** section (todo: which section/demo?), right-click the **Card** element, and then select **Inspect**.
 
-   The `@container (inline-size > 400px)` declaration is displayed.
+   DevTools opens, with the **Elements** tool selected:
 
-1. Change the `inline-size` from `400px` to `520px`.
+   ![alt text](./container-queries-images/foo.png) todo png
 
-   The paragraph (`<p>`) element disappears from the rendered webpage, because the element didn't fulfill the container criteria.
+   todo: resume updating steps:
+
+1. OLD: In the **Styles** tab, select the `p` element.
+
+   OLD: The `@container (inline-size > 400px)` declaration is displayed.
+
+1. OLD: Change the `inline-size` from `400px` to `520px`.
+
+   OLD: The paragraph (`<p>`) element disappears from the rendered webpage, because the element didn't fulfill the container criteria.
 
 
 <!-- ====================================================================== -->
