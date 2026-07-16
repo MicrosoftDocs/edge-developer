@@ -517,29 +517,37 @@
                   href: ./devtools/elements-tool/elements-tool.md
                   displayName: Elements tool
 
-                - name: CSS features reference
-                  href: ./devtools/css/reference.md
-                  displayName: Elements tool
+                - name: DOM
+                  items:
+                    - name: Get started viewing and changing the DOM
+                      href: ./devtools/dom/index.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing CSS
-                  href: ./devtools/css/index.md
-                  displayName: Elements tool
+                - name: CSS
+                  items:
+                    - name: Get started viewing and changing CSS
+                      href: ./devtools/css/index.md
+                      displayName: Elements tool
 
-                - name: Inspect CSS Grid layouts
-                  href: ./devtools/css/grid.md
-                  displayName: Elements tool
+                    - name: Inspect CSS Grid layouts
+                      href: ./devtools/css/grid.md
+                      displayName: Elements tool
 
-                - name: Edit CSS font styles and settings in the Styles pane
-                  href: ./devtools/inspect-styles/edit-fonts.md
-                  displayName: Elements tool
+                    - name: Edit CSS font styles and settings in the Styles pane
+                      href: ./devtools/inspect-styles/edit-fonts.md
+                      displayName: Elements tool
 
-                - name: Style editing for CSS-in-JS frameworks
-                  href: ./devtools/css/css-in-js.md
-                  displayName: Elements tool
+                    - name: Style editing for CSS-in-JS frameworks
+                      href: ./devtools/css/css-in-js.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing the DOM
-                  href: ./devtools/dom/index.md
-                  displayName: Elements tool
+                    - name: Inspect and debug CSS container queries
+                      href: ./devtools/css/container-queries.md
+                      displayName: Elements tool
+
+                    - name: CSS features reference
+                      href: ./devtools/css/reference.md
+                      displayName: Elements tool
 # -----------------------------------------------------------------------------
             - name: Console tool
               items:
