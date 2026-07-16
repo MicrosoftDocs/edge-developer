@@ -52,17 +52,21 @@ To display the dotted-line overlay of the container and its descendants:
 
    ![inline-size badge in the DOM tree](./container-queries-images/dom-inline-size-badge.png)
 
-   In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** badge: ![inline-size badge in the DOM tree](./container-queries-images/inline-size-badge.png)
+   In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** badge: ![inline-size badge](./container-queries-images/inline-size-badge.png)
 
    In the **Styles** tab, the CSS rule `div#inline-size-container` is displayed.
 
-   The `container-type: inline-size` property defines the container element.  A contained descendant element can query the container's inline dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
+   The `container-type: inline-size` CSS property defines the container element.  A contained descendant element can query the container's inline dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
 
-1. In the DOM tree, click the **inline-size** badge ![inline-size badge in the DOM tree](./container-queries-images/inline-size-badge.png) that's next to the element that's defined as an `inline-size-container`:
+1. In the DOM tree, click the **inline-size** badge ![the inline-size badge](./container-queries-images/inline-size-badge.png) that's next to the element that's defined as an `inline-size-container`:
 
    ![Dotted-line box displayed around the contained element](./container-queries-images/dotted-line-box.png)
 
-   A dotted-line box is displayed around the contained element, or is hidden.
+   A dotted-line box is displayed around the contained element, and the **inline-size** badge has inverted foreground text color and background color.
+
+1. Click the **inline-size** badge again.
+
+   The dotted-line box is hidden, and the **inline-size** badge has its original foreground text color and background color.
 
 
 <!-- ====================================================================== -->
@@ -176,11 +180,11 @@ To find and select a container element that caused the query to take effect:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![Hovering over the element name](./container-queries-images/hovering-the-element-name.png) todo png
+   ![Hovering over the element name] todo ./container-queries-images/hovering-the-element-name.png
 
 1. Hover over and click the element name (todo: specific element in dom) that's above the `@container` declaration:
 
-   ![alt text](./container-queries-images/foo.png) todo png
+   ![alt text] todo ./container-queries-images/foo.png
 
    The name turns into a link to the element in the **Elements** tool. (todo: clarify specifics)
  
@@ -205,7 +209,7 @@ To modify a container query:
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![alt text](./container-queries-images/foo.png) todo png
+   ![alt text] todo ./container-queries-images/foo.png
 
    todo: resume updating steps:
 
