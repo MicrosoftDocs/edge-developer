@@ -29,8 +29,16 @@ ms.date: 07/16/2026
 You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
 **Detailed contents:**
-
-todo
+* [Introduction](#introduction)
+* [Discover a container and its descendants](#discover-a-container-and-its-descendants)
+* [Inspect a container query](#inspect-a-container-query)
+   * [OLD: Coffee demo procedure](#old-coffee-demo-procedure)
+   * [OLD: Inspect the first @container declaration](#old-inspect-the-first-container-declaration)
+   * [Inspect a name-only container query](#inspect-a-name-only-container-query)
+   * [Inspect an inline-size container query](#inspect-an-inline-size-container-query)
+   * [Inspect a style container query](#inspect-a-style-container-query)
+* [Find a container element](#find-a-container-element)
+* [Modify a container query](#modify-a-container-query)
 
 
 <!-- ====================================================================== -->
