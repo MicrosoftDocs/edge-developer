@@ -60,6 +60,8 @@ To display the dotted-line overlay of the container and its descendants:
 
 The **Elements** tool shows `@container` query declarations when they are applied to a descendant element; that is, when the container fulfills the query's condition.
 
+todo: delete the below 400/600 content?
+
 To understand when you can inspect `@container` declarations on [this demo page](https://jec.fish/demo/css-cq-coffee), examine the following code sample:
 
 ```css
@@ -90,11 +92,45 @@ In this example, if the container's width exceeds the following number of pixels
 
 * More than `600px`: descendants adopt a horizontal grid layout with the title (`h1`) on the top, and image (`img`) on the left.
 
-To inspect the first `@container` declaration:
+/ todo: end of possible deletion
 
-1. In the **Elements** tool, set the container's width to `500px`.
 
-  The `p` element appears.  todo: in the rendered webpage, or in DevTools > DOM tree?
+To inspect a name-only container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Name-only container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![] todo png
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="name-only-container">`.
+
+   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
+
+   At the top of the CSS rule is a link to the container element: `→named-container-a`.
+
+1. Click the `→named-container-a` link.
+
+   The element `<div id="name-only-container">` is selected in the DOM tree.
+
+
+OLD: To inspect the first `@container` declaration: (todo: see if any add'l info is here, then delete procedure)
+
+1. Go to the [Container Queries coffee](https://jec.fish/demo/css-cq-coffee) demo in a new window or tab.
+
+1. Click the **Container = 500px** button.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Select the **Elements** tool.
+
+1. In the DOM tree, set the container's width to `500px`.  todo: how, concretely?
+
+  The `<p>` element is displayed in the rendered webpage.
 
 1. Select the `p` element. todo: in the rendered webpage, or in DevTools > DOM tree?  In the **Styles** tab, you can see the `@container` declaration along with a link to the parent container `article.card`:
 
@@ -105,6 +141,50 @@ To inspect the first `@container` declaration:
    `@container` declarations that implement a horizontal layout are displayed:
 
    ![More @container declarations] todo png
+
+
+To inspect an inline-size container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Inline size container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![] todo png
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="inline-size-container">`.
+
+   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
+
+   At the top of the CSS rule is a link to the container element: `→div#inline-size-container`.
+
+1. Click the `→div#inline-size-container` link.
+
+   The element `<div id="name-only-container">` is selected in the DOM tree.
+
+   In the DOM tree, the element with ID inline-size-container is selected, and an inline-size badge is displayed next to it.
+
+1. Click the **inline-size** badge.
+
+   A dashed border is displayed around the content area of the container.
+
+   A dashed border is also displayed around all children elements which use the container's inline-size to apply different styles.  In this case, that's the card element.
+
+
+To inspect a style container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Style container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![] todo png
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="style-container">`.
+
+   In the **Styles** tab, the `@container style()` query shows the CSS rule that's applying the current background color.
 
 
 <!-- ====================================================================== -->
