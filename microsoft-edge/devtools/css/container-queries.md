@@ -26,25 +26,28 @@ ms.date: 02/26/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
 This guide shows you how to inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
-[CSS container queries](https://web.dev/new-responsive/#responsive-to-the-container) allow you to manipulate the element's styles based on its parent container properties.  This capability shifts the concept of [responsive web design](https://web.dev/learn/design/intro/) from page-based to [container-based](https://web.dev/articles/new-responsive).
+CSS container queries allow you to manipulate the element's styles based on its parent container properties.  This capability shifts the concept of responsive web design from page-based to container-based.
 
 The screenshots in this guide are taken from [this demo page](https://jec.fish/demo/css-cq-coffee).
 
+See also:
+* [Introduction](https://web.dev/learn/design/intro/) for Responsive Design, at web.dev.
+* [Responsive to the container](https://web.dev/articles/new-responsive#responsive_to_the_container) in _The new responsive: Web design in a component-driven world_ at web.dev.
+
 
 <!-- ====================================================================== -->
-## Discover containers and their descendants
-<!-- https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
+## Discover a container and its descendants
+<!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-Every element that's defined as a query container has a **container** badge next to it in the **Elements** tool.  Clicking the **container** badge toggles a dotted-line overlay of the container and its descendants.
+An element that's defined as a query container has a **container** badge next to it in the **Elements** tool.  Clicking the **container** badge toggles a dotted-line overlay of the container and its descendants.
 
-To toggle the overlay:
+To display the dotted-line overlay of the container and its descendants:
 
-1. Open DevTools.
+1. [Open DevTools](https://developer.chrome.com/docs/devtools/open).
 
-1. In the **Elements** tool, click the **container** badge that's next to the element that's defined as a container:
+1. In the **Elements** tool, click the **container** badge that's next to an element that's defined as a container:
 
    ![Container badge] todo png
 
@@ -52,14 +55,14 @@ To toggle the overlay:
 
 
 <!-- ====================================================================== -->
-## Inspect container queries
-<!-- https://developer.chrome.com/docs/devtools/css/container-queries#inspect-container-queries -->
+## Inspect a container query
+<!-- Inspect container queries  https://developer.chrome.com/docs/devtools/css/container-queries#inspect-container-queries -->
 
 The **Elements** tool shows `@container` query declarations when they are applied to a descendant element; that is, when the container fulfills the query's condition.
 
 To understand when you can inspect `@container` declarations on [this demo page](https://jec.fish/demo/css-cq-coffee), examine the following code sample:
 
-```
+```css
 @container (inline-size > 400px) {
   .coffee p {
     display: block;
@@ -87,24 +90,26 @@ In this example, if the container's width exceeds the following number of pixels
 
 * More than `600px`: descendants adopt a horizontal grid layout with the title (`h1`) on the top, and image (`img`) on the left.
 
-To inspect the first @container declaration:
+To inspect the first `@container` declaration:
 
 1. In the **Elements** tool, set the container's width to `500px`.
 
-  The `p` element appears.
+  The `p` element appears.  todo: in the rendered webpage, or in DevTools > DOM tree?
 
-1. Select the `p` element.  In the **Styles** tab, you can see the `@container` declaration along with a link to the parent container `article.card`:
+1. Select the `p` element. todo: in the rendered webpage, or in DevTools > DOM tree?  In the **Styles** tab, you can see the `@container` declaration along with a link to the parent container `article.card`:
 
    ![@container declaration] todo png
 
-1. Set the width to more than `600px`, then select any of the affected elements.  Observe `@container` declarations that implement a horizontal layout:
+1. Set the width to more than `600px`, and then select any of the affected elements.
+
+   `@container` declarations that implement a horizontal layout are displayed:
 
    ![More @container declarations] todo png
 
 
 <!-- ====================================================================== -->
-## Find container elements
-<!-- https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
+## Find a container element
+<!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
 
 To find and select a container element that caused the query to take effect, hover over and click the element name above the `@container` declaration.
 
@@ -116,20 +121,26 @@ When hovered over:
 
 
 <!-- ====================================================================== -->
-## Modify container queries
-<!-- https://developer.chrome.com/docs/devtools/css/container-queries#modify -->
+## Modify a container query
+<!-- Modify container queries  https://developer.chrome.com/docs/devtools/css/container-queries#modify -->
 
-To debug a query, you can modify it as any other CSS declaration in the **Styles** tab as described in [View and change CSS](https://developer.chrome.com/docs/devtools/css).
+To debug a query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
 
 ![png] todo png of video
 
-In the above example, the container's width is `500px`.  The paragraph (`<p>`) element appears on the page.
+In the above example, the container's width is `500px`.  The paragraph (`p`) element is displayed in the rendered webpage.
 
-1. Select the `<p>` element.  In the **Styles** tab.  You can see the `@container (inline-size > 400px)` declaration.
+To modify a container query:
+
+1. todo: missing step for context
+
+1. In the **Styles** tab of the **Elements** tool, select the `p` element.
+
+   The `@container (inline-size > 400px)` declaration is displayed.
 
 1. Change the `inline-size` from `400px` to `520px`.
 
-1. The paragraph (`<p>`) element disappears from the page, because it didn't fulfill the query criteria.
+   The paragraph (`<p>`) element disappears from the rendered webpage, because the element didn't fulfill the container criteria.
 
 
 <!-- ====================================================================== -->
