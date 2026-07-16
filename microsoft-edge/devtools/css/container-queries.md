@@ -40,7 +40,7 @@ See also:
 ## Discover a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-An element that's defined as a query container has a **inline-size** badge next to it in the **Elements** tool (todo: always true?).  Clicking the **inline-size** badge displays or hides a dotted-line overlay of the container and its descendants.
+An element that's defined as a query container has a **inline-size** badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) next to it in the DOM tree in the **Elements** tool (todo: true for all types of query containers?).  Clicking the **inline-size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
 
 To display the dotted-line overlay of the container and its descendants:
 
