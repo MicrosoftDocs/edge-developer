@@ -40,19 +40,29 @@ See also:
 ## Discover a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-todo: https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants
-
-An element that's defined as a query container has a **container** badge next to it in the **Elements** tool.  Clicking the **container** badge toggles a dotted-line overlay of the container and its descendants.
+An element that's defined as a query container has a **inline-size** badge next to it in the **Elements** tool (todo: always true?).  Clicking the **inline-size** badge displays or hides a dotted-line overlay of the container and its descendants.
 
 To display the dotted-line overlay of the container and its descendants:
 
-1. [Open DevTools](https://developer.chrome.com/docs/devtools/open).
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
-1. In the **Elements** tool, click the **container** badge that's next to an element that's defined as a container:
+1. In the **Inline size container** section, right-click to the left of the **Card** element, within the black box, and then select **Inspect**.
 
-   ![Container badge](./container-queries-images/container-badge-discover.png) todo png
+   DevTools opens, with the **Elements** tool selected:
 
-   In the above example, the `container-type: inline-size` property defines the container element.  The descendants can query its inline dimension (horizontal axis) and change their styles based on the width of the container.
+   ![inline-size badge in the DOM tree](./container-queries-images/dom-inline-size-badge.png)
+
+   In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** badge: ![inline-size badge in the DOM tree](./container-queries-images/inline-size-badge.png)
+
+   In the **Styles** tab, the CSS rule `div#inline-size-container` is displayed.
+
+   The `container-type: inline-size` property defines the container element.  A contained descendant element can query the container's inline dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
+
+1. In the DOM tree, click the **inline-size** badge ![inline-size badge in the DOM tree](./container-queries-images/inline-size-badge.png) that's next to the element that's defined as an `inline-size-container`:
+
+   ![Dotted-line box displayed around the contained element](./container-queries-images/dotted-line-box.png)
+
+   A dotted-line box is displayed around the contained element, or is hidden.
 
 
 <!-- ====================================================================== -->
