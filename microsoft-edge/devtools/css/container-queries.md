@@ -8,10 +8,6 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 07/17/2026
 ---
-# Inspect and debug CSS container queries
-<!-- https://developer.chrome.com/docs/devtools/css/container-queries -->
-
-<!-- https://developer.chrome.com/docs/devtools/css/grid/ -->
 <!-- Copyright Sofia Emelianova and Jecelyn Yeen
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,6 +21,9 @@ ms.date: 07/17/2026
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# Inspect and debug CSS container queries
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/css/container-queries -->
+<!-- https://developer.chrome.com/docs/devtools/css/container-queries -->
 
 You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
@@ -40,7 +39,9 @@ See also:
 ## Highlight a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-An element that's defined as a CSS container query can have no badge, or either of the following badges, next to it in the DOM tree in the **Elements** tool:
+An element that's defined as a CSS container query can have any of the following badges next to it in the DOM tree in the **Elements** tool:
+* No container badge, for a name-only container, such as `container-name: named-container-a;`.
+* No container badge, for a style container, where the contained element has a `@container style()` CSS container query.
 * The **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png), for `container-type: inline-size`.
 * The **size** container badge ![size badge](./container-queries-images/size-badge.png), for `container-type: size`.
 
