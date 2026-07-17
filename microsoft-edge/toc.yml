@@ -1497,14 +1497,34 @@
         - name: Introduction to Microsoft Edge WebView2
           href: ./webview2/index.md
 # -----------------------------------------------------------------------------
-        - name: Release notes
+        - name: Release notes  # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2
           items:
-            - name: Release notes for the WebView2 SDK
+            - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
+              href: ./webview2/release-notes/1.0.4126-prerelease.md
+
+            - name: Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)
+              href: ./webview2/release-notes/1.0.4078.44.md
+
+            - name: Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
+              href: ./webview2/release-notes/1.0.4071-prerelease.md
+
+#           - name: 
+#             href: ./webview2/release-notes/~.md
+
+#           - name: 
+#             href: ./webview2/release-notes/~.md
+
+#           - name: 
+#             href: ./webview2/release-notes/~.md
+
+            - name: Release notes for the WebView2 SDK  # todo: dissolve into the above pages
               href: ./webview2/release-notes/index.md
               displayName: what's new, announcements
 
-            - name: Archived release notes for the WebView2 SDK
-              href: ./webview2/release-notes/archive.md
+            - name: Archive
+              items:
+                - name: Archived release notes for the WebView2 SDK
+                  href: ./webview2/release-notes/archive.md
 
             - name: About release notes for the WebView2 SDK
               href: ./webview2/release-notes/about.md

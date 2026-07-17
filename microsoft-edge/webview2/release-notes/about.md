@@ -135,9 +135,16 @@ Async methods:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
-* [Archived release notes for the WebView2 SDK](./archive.md)
-* [Overview of WebView2 APIs](../concepts/overview-features-apis.md)
-* [Contacting the Microsoft Edge WebView2 team](../contact.md)
-* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+<!-- todo: toc order: -->
+* [Release notes for the WebView2 SDK](./index.md)<!-- toc bucket 1.1 -->
+* [Archived release notes for the WebView2 SDK](./archive.md)<!-- toc bucket 1.2 -->
+* [Overview of WebView2 APIs](../concepts/overview-features-apis.md)<!-- toc bucket 2.1 -->
+* [Contact the Microsoft Edge WebView2 team](../contact.md)<!-- toc bucket __ -->
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)<!-- toc bucket __ -->
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- toc bucket __ -->
+
+API Reference:
+* [WebView2 API Reference](../webview2-api-reference.md)
+   * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
+   * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
+   * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->
