@@ -28,11 +28,11 @@ ms.date: 07/17/2026
 
 You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
-CSS container queries allow you to manipulate the element's styles based on its parent container properties.  This capability shifts the concept of responsive web design from page-based to container-based.
+CSS container queries allow you to manipulate an element's styles based on its parent container's CSS properties.  This capability shifts the concept of responsive web design from page-based to container-based.
 
 See also:
-* [Introduction](https://web.dev/learn/design/intro/) for Responsive Design, at web.dev.
-* [Responsive to the container](https://web.dev/articles/new-responsive#responsive_to_the_container) in _The new responsive: Web design in a component-driven world_ at web.dev.
+* [Responsive web design](https://developer.mozilla.org/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) at MDN.
+* [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries) at MDN.
 * [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo.
 
 
@@ -40,7 +40,11 @@ See also:
 ## Discover a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-An element that's defined as a CSS query container has an **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) next to it in the DOM tree in the **Elements** tool (todo: true for all types of CSS query containers?).  Clicking the **inline-size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
+An element that's defined as a CSS container query can have no badge, or either of the following badges, next to it in the DOM tree in the **Elements** tool:
+* The **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) (`container-type: inline-size`).
+* The **size** container badge ![size badge](./container-queries-images/size-badge.png) (`container-type: size`).
+
+Clicking the **inline-size** badge or **size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
 
 To display the dotted-line overlay of the container and its descendants:
 
@@ -67,106 +71,11 @@ To display the dotted-line overlay of the container and its descendants:
    The dotted-line box is hidden, and the **inline-size** badge has its original foreground text color and background color.
 
 
-<!-- ====================================================================== -->
-## Inspect a container query
-<!-- Inspect container queries  https://developer.chrome.com/docs/devtools/css/container-queries#inspect-container-queries -->
-
-The **Elements** tool shows `@container` query declarations when they are applied to a descendant element; that is, when the container fulfills the query's condition.
-
-
-<!-- ====================================================================== -->
-## Inspect a name-only container query
-
-In this section of the demo, the `<div id="name-only-container">` element with a black border is a CSS container that uses the `container-name: named-container-a;` CSS property.
-
-The `<div class="card">` element that's within that CSS named-container uses a `@container` query to change its background to green when it's inside a container named `named-container-a`.
-
-To inspect a name-only container query in DevTools:
-
-1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
-
-1. In the **Name-only container** section, right-click the **Card** element, and then select **Inspect**.
-
-   DevTools opens, with the **Elements** tool selected:
-
-   ![Name-only container query](./container-queries-images/name-only-container-query.png)
-
-   In the DOM tree, the `<div class="card">` element is selected, within `<div id="name-only-container">`.
-
-   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
-
-   At the top of the CSS rule is a link to the container element: `→named-container-a`.
-
-1. Click the `→named-container-a` link.
-
-   In the DOM tree, the element `<div id="name-only-container">` is selected.
-
-
-<!-- ====================================================================== -->
-## Inspect an inline-size container query
-
-In this section of the demo, the `<div id="inline-size-container">` element with a black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
-
-The `<div class="card">` element that's within the inline-size CSS container uses a `@container` query to change its background to different colors depending on the size of its container.  You can resize the container by using the handle in the bottom-right corner of the container, and observe the card's background color change.
-
-To inspect an inline-size container query in DevTools:
-
-1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
-
-1. In the **Inline size container** section, right-click the **Card** element, and then select **Inspect**.
-
-   DevTools opens, with the **Elements** tool selected:
-
-   ![Inline-size container query](./container-queries-images/inline-size-container-query.png)
-
-   In the DOM tree, the `<div class="card">` element is selected, within `<div id="inline-size-container">`.
-
-   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
-
-   At the top of the CSS rule is a link to the container element: `→div#inline-size-container`.
-
-1. Click the `→div#inline-size-container` link.
-
-   In the DOM tree, the element `<div id="inline-size-container">` is selected, and an **inline-size** container badge is displayed next to it.
-
-1. Click the **inline-size** container badge.
-
-   A dashed border is displayed around the content area of the container.
-
-   A dashed border is also displayed around all children elements which use the container's inline-size to apply different styles.  In this case, that's the `<div class="card">` element.
-
-1. In the demo page, in the **Inline size container** section, resize the **Card** container by using the handle in the bottom-right corner of the container.
-
-   The card's background color changes.
-
-
-<!-- ====================================================================== -->
-## Inspect a style container query
-
-In this section of the demo, the `<div id="style-container">` element with a black border is a CSS container that uses the `container-name: named-container-b;` CSS property.
-
-The `<div class="card">` element that's within that CSS container uses a `@container style()` query to change its background to a different color, depending on the value of its container's `--foo` custom property.
-
-The container changes the value of `--foo</code> over time by using a CSS animation. Observe the card's background change.
-
-To inspect a style container query in DevTools:
-
-1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
-
-1. In the **Style container** section, right-click the **Card** element, and then select **Inspect**.
-
-   DevTools opens, with the **Elements** tool selected:
-
-   ![Style container query](./container-queries-images/style-container-query.png)
-
-   In the DOM tree, the `<div class="card">` element is selected, within `<div id="style-container">`.
-
-   In the **Styles** tab, the `@container style()` query shows the CSS rule that's applying the current background color.
-
-
-<!-- ====================================================================== -->
-## Find a container element
+<!-- ------------------------------ -->
+#### Find a container element
 <!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
+
+todo: merge w/ above section?
 
 To find and select the container element that caused the CSS container query to take effect:
 
@@ -194,12 +103,117 @@ To find and select the container element that caused the CSS container query to 
 
 
 <!-- ====================================================================== -->
-## Modify a container query
+## Inspect a CSS container query
+<!-- Inspect container queries  https://developer.chrome.com/docs/devtools/css/container-queries#inspect-container-queries -->
+
+The **Elements** tool shows the CSS properties that apply to the descendent element and that are defined inside of an `@container` query.
+
+
+<!-- ====================================================================== -->
+## Inspect a name-only CSS container query
+
+In this section of the demo, the `<div id="name-only-container">` element with a black border is a CSS container that uses the `container-name: named-container-a;` CSS property.
+
+The `<div class="card">` element that's within that CSS named-container uses a `@container` query to change its background to green when it's inside a container named `named-container-a`.
+
+To inspect a name-only CSS container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Name-only container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![Name-only CSS container query](./container-queries-images/name-only-container-query.png)
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="name-only-container">`.
+
+   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
+
+   At the top of the CSS rule is a link to the container element: `→named-container-a`.
+
+1. Click the `→named-container-a` link.
+
+   In the DOM tree, the element `<div id="name-only-container">` is selected.
+
+
+<!-- ====================================================================== -->
+## Inspect an inline-size CSS container query
+
+In this section of the demo, the `<div id="inline-size-container">` element with a black border is a CSS container of type inline-size, because it uses the `container-type: inline-size;` CSS property.
+
+The `<div class="card">` element that's within the inline-size CSS container uses a `@container` query to change its background to different colors depending on the size of its container.  You can resize the container by using the handle in the bottom-right corner of the container, and observe the card's background color change.
+
+To inspect an inline-size CSS container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Inline size container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![Inline-size CSS container query](./container-queries-images/inline-size-container-query.png)
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="inline-size-container">`.
+
+   In the **Styles** tab, the `@container` query `named-container-a` shows the CSS rule that's applying the green background.
+
+   At the top of the CSS rule is a link to the container element: `→div#inline-size-container`.
+
+1. Click the `→div#inline-size-container` link.
+
+   In the DOM tree, the element `<div id="inline-size-container">` is selected, and an **inline-size** container badge is displayed next to it.
+
+1. Click the **inline-size** container badge !["inline-size" badge](./container-queries-images/inline-size-badge.png).
+
+   In the demo page, a dashed border is added around the content area of the container:
+
+   ![Dashed border](./container-queries-images/dashed-border.png)
+
+   The **inline-size** container badge has inverted foreground text color and background color.
+
+   A dashed border is also displayed around all children elements which use the container's inline-size to apply different styles.  In this case, that's the `<div class="card">` element (the inner dashed border).
+
+1. Click the **inline-size** container badge !["inline-size" badge](./container-queries-images/inline-size-badge.png) again.
+
+   In the demo page, the dashed border is removed.
+
+1. In the demo page, in the **Inline size container** section, resize the **Card** container by dragging the handle that's in the bottom-right corner of the container.
+
+   The card's background color changes.
+
+
+<!-- ====================================================================== -->
+## Inspect a style CSS container query
+
+In this section of the demo, the `<div id="style-container">` element with a black border is a CSS container that uses the `container-name: named-container-b;` CSS property.
+
+The `<div class="card">` element that's within that CSS container uses a `@container style()` query to change its background to a different color, depending on the value of its container's `--foo` custom CSS property.
+
+The container changes the value of `--foo` over time by using a CSS animation.  Observe the card's background change over time.
+
+To inspect a style CSS container query in DevTools:
+
+1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
+
+1. In the **Style container** section, right-click the **Card** element, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected:
+
+   ![Style CSS container query](./container-queries-images/style-container-query.png)
+
+   In the DOM tree, the `<div class="card">` element is selected, within `<div id="style-container">`.
+
+   In the **Styles** tab, the `@container style()` query shows the CSS rule that's applying the current background color.
+
+
+<!-- ====================================================================== -->
+## Modify a CSS container query
 <!-- Modify container queries  https://developer.chrome.com/docs/devtools/css/container-queries#modify -->
 
-To debug a CSS container query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
+To debug a CSS container query, you can modify the CSS container query in the same way as modifying any other CSS property in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
 
-To modify a container query:
+To modify a CSS container query:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
