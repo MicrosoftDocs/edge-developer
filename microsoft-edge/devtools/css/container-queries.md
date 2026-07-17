@@ -37,12 +37,12 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Discover a container and its descendants
+## Highlight a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
 An element that's defined as a CSS container query can have no badge, or either of the following badges, next to it in the DOM tree in the **Elements** tool:
-* The **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) (`container-type: inline-size`).
-* The **size** container badge ![size badge](./container-queries-images/size-badge.png) (`container-type: size`).
+* The **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png), for `container-type: inline-size`.
+* The **size** container badge ![size badge](./container-queries-images/size-badge.png), for `container-type: size`.
 
 Clicking the **inline-size** badge or **size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
 
@@ -71,13 +71,11 @@ To display the dotted-line overlay of the container and its descendants:
    The dotted-line box is hidden, and the **inline-size** badge has its original foreground text color and background color.
 
 
-<!-- ------------------------------ -->
-#### Find a container element
+<!-- ====================================================================== -->
+## Select an element's container element in the DOM tree
 <!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
 
-todo: merge w/ above section?
-
-To find and select the container element that caused the CSS container query to take effect:
+To find and select the container element that caused a contained element's CSS container query to take effect:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
