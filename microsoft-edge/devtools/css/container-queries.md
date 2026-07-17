@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/16/2026
+ms.date: 07/17/2026
 ---
 # Inspect and debug CSS container queries
 <!-- https://developer.chrome.com/docs/devtools/css/container-queries -->
@@ -40,7 +40,7 @@ See also:
 ## Discover a container and its descendants
 <!-- Discover containers and their descendants  https://developer.chrome.com/docs/devtools/css/container-queries#discover-descendants -->
 
-An element that's defined as a query container has a **inline-size** badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) next to it in the DOM tree in the **Elements** tool (todo: true for all types of query containers?).  Clicking the **inline-size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
+An element that's defined as a CSS query container has an **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png) next to it in the DOM tree in the **Elements** tool (todo: true for all types of CSS query containers?).  Clicking the **inline-size** badge displays (or hides) a dotted-line overlay of the container and its descendants.
 
 To display the dotted-line overlay of the container and its descendants:
 
@@ -52,7 +52,7 @@ To display the dotted-line overlay of the container and its descendants:
 
    ![inline-size badge in the DOM tree](./container-queries-images/dom-inline-size-badge.png)
 
-   In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** badge: ![inline-size badge](./container-queries-images/inline-size-badge.png)
+   In the DOM tree, the element `<div id-"inline-size-container">` is selected, and has an **inline-size** container badge: ![inline-size badge](./container-queries-images/inline-size-badge.png)
 
    In the **Styles** tab, the CSS rule `div#inline-size-container` is displayed.  Within that CSS rule, the CSS property `container-type: inline-size` defines the container element.  A contained descendant element can query this container's `inline-size` dimension (horizontal axis) and change the contained descendant element's styles based on the width of the container.
 
@@ -168,56 +168,56 @@ To inspect a style container query in DevTools:
 ## Find a container element
 <!-- Find container elements  https://developer.chrome.com/docs/devtools/css/container-queries#find-containers -->
 
-todo: https://developer.chrome.com/docs/devtools/css/container-queries#find-containers
-
-To find and select a container element that caused the query to take effect:
+To find and select the container element that caused the CSS container query to take effect:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
-1. In the **Style container** section (todo: which section/demo?), right-click the **Card** element, and then select **Inspect**.
+1. In the **Name-only container** section, right-click the **Card** element, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![Hovering over the element name] todo ./container-queries-images/hovering-the-element-name.png
+   ![DOM tree for card in named container](./container-queries-images/dom-tree-card-in-named-container.png)
 
-1. Hover over and click the element name (todo: specific element in dom) that's above the `@container` declaration:
+   In the DOM tree, the `<div class="card">` element is selected, within the `<div id="name=only-container">` element.
 
-   ![alt text] todo ./container-queries-images/foo.png
+   In the **Styles** tab, the `@container named-container-a` CSS rule is displayed, defining the `background` color for a `card`.
 
-   The name turns into a link to the element in the **Elements** tool. (todo: clarify specifics)
- 
-   The **Styles** tab displays the queried property and its current value. (todo: clarify specifics)
+1. In the **Styles** tab, at the top of the `@container named-container-a` CSS rule, click the **→named-container-a** link.
+
+   DevTools finds and selects the container element that caused the CSS container query to take effect:
+
+   ![Container element](./container-queries-images/container-element.png)
+
+   In the DOM tree, the `<div id="name=only-container">` element is selected.
+
+   In the **Styles** tab, the `div#name-only-container` CSS rule is displayed, defining the CSS property `container-name: named-container-a;`.
 
 
 <!-- ====================================================================== -->
 ## Modify a container query
 <!-- Modify container queries  https://developer.chrome.com/docs/devtools/css/container-queries#modify -->
 
-todo: https://developer.chrome.com/docs/devtools/css/container-queries#modify
-
-To debug a query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
-
-OLD: In the above example, the container's width is `500px`.  The paragraph (`p`) element is displayed in the rendered webpage.
+To debug a CSS container query, you can modify the query the same way as modifying any other CSS declaration in the **Styles** tab, as described in [Get started viewing and changing CSS](./index.md).
 
 To modify a container query:
 
 1. Go to the [Debug CSS container queries](https://microsoftedge.github.io/Demos/devtools-container-queries/) demo in a new window or tab.
 
-1. In the **Style container** section (todo: which section/demo?), right-click the **Card** element, and then select **Inspect**.
+1. In the **Inline size container** section, right-click the **Card** element, which is initially blue, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected:
 
-   ![alt text] todo ./container-queries-images/foo.png
+   ![Blue card](./container-queries-images/blue-card.png)
 
-   todo: resume updating steps:
+   In the DOM tree, the `<div class="card">` element is selected, within the `<div id="inline-size-container">` element, which has an **inline-size** container badge ![The inline-size badge.](./container-queries-images/inline-size-badge.png) next to it.
 
-1. OLD: In the **Styles** tab, select the `p` element.
+   In the **Styles** tab, the `@container (inline size > 100px)` CSS rule is displayed, defining the `background` color for a `card`.
 
-   OLD: The `@container (inline-size > 400px)` declaration is displayed.
+1. In the **Styles** tab, click `(inline size > 100px)`, edit the value to `200px`, and then press **Enter**.
 
-1. OLD: Change the `inline-size` from `400px` to `520px`.
+  The card turns red, because the container is smaller than 200px (it's 150px by default):
 
-   OLD: The paragraph (`<p>`) element disappears from the rendered webpage, because the element didn't fulfill the container criteria.
+   ![Red card](./container-queries-images/red-card.png)
 
 
 <!-- ====================================================================== -->
