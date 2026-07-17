@@ -68,7 +68,7 @@ To display the dotted-line overlay of the container and its descendants:
 
 1. Click the **inline-size** badge again.
 
-   The dotted-line box is hidden, and the **inline-size** badge has its original foreground text color and background color.
+   The dotted-line boxes are hidden, and the **inline-size** badge has its original foreground text color and background color.
 
 
 <!-- ====================================================================== -->
