@@ -1553,8 +1553,44 @@
             - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
               href: ./webview2/release-notes/1.0.3650-prerelease.md
 
-#            - name: 
-#              href: ./webview2/release-notes/~.md
+            - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
+              href: ./webview2/release-notes/1.0.3595.46.md
+
+            - name: Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
+              href: ./webview2/release-notes/1.0.3590-prerelease.md
+
+            - name: Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)
+              href: ./webview2/release-notes/1.0.3537.50.md
+
+            - name: Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)
+              href: ./webview2/release-notes/1.0.3530-prerelease.md
+
+            - name: Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
+              href: ./webview2/release-notes/1.0.3485.44.md
+
+            - name: Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
+              href: ./webview2/release-notes/1.0.3477-prerelease.md
+
+            - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)  # group as 139, imagine as below 3405.78
+              href: ./webview2/release-notes/1.0.3415-prerelease.md
+
+            - name: Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
+              href: ./webview2/release-notes/1.0.3405.78.md
+
+            - name: Archive  # > 1 year old, but keep Runtime nnn together
+              items:
+                - name: Release SDK 1.0.3351.48, for Runtime 138 (Jul. 1, 2025)
+                  href: ./webview2/release-notes/1.0.3351.48.md
+
+                - name: Prerelease SDK 1.0.3344-prerelease, for Runtime 138 (Jun. 3, 2025)
+                  href: ./webview2/release-notes/1.0.3344-prerelease.md
+
+# todo: add in-between versions
+#                - name: 
+#                  href: ./webview2/release-notes/~.md
+
+                - name: Release SDK 0.8.149, for Runtime 76 (May 6, 2019)
+                  href: ./webview2/release-notes/0.8.149.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
