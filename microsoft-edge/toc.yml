@@ -1499,6 +1499,9 @@
 # -----------------------------------------------------------------------------
         - name: Release notes  # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2
           items:
+            - name: About release notes for the WebView2 SDK
+              href: ./webview2/release-notes/about.md
+
             - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
               href: ./webview2/release-notes/1.0.4126-prerelease.md
 
@@ -1508,26 +1511,50 @@
             - name: Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
               href: ./webview2/release-notes/1.0.4071-prerelease.md
 
-#           - name: 
-#             href: ./webview2/release-notes/~.md
+            - name: Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
+              href: ./webview2/release-notes/1.0.4022.49.md
 
-#           - name: 
-#             href: ./webview2/release-notes/~.md
+            - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
+              href: ./webview2/release-notes/1.0.4015-prerelease.md
 
-#           - name: 
-#             href: ./webview2/release-notes/~.md
+            - name: Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
+              href: ./webview2/release-notes/1.0.3967.48.md
 
-            - name: Release notes for the WebView2 SDK  # todo: dissolve into the above pages
-              href: ./webview2/release-notes/index.md
-              displayName: what's new, announcements
+            - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
+              href: ./webview2/release-notes/1.0.3965-prerelease.md
 
-            - name: Archive
-              items:
-                - name: Archived release notes for the WebView2 SDK
-                  href: ./webview2/release-notes/archive.md
+            - name: Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
+              href: ./webview2/release-notes/1.0.3912.50.md
 
-            - name: About release notes for the WebView2 SDK
-              href: ./webview2/release-notes/about.md
+            - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+              href: ./webview2/release-notes/1.0.3908-prerelease.md
+
+            - name: Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+              href: ./webview2/release-notes/1.0.3856.49.md
+
+            - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+              href: ./webview2/release-notes/1.0.3848-prerelease.md
+
+            - name: Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
+              href: ./webview2/release-notes/1.0.3800.47.md
+
+            - name: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+              href: ./webview2/release-notes/1.0.3796-prerelease.md
+
+            - name: Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
+              href: ./webview2/release-notes/1.0.3719.77.md
+
+            - name: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+              href: ./webview2/release-notes/1.0.3712-prerelease.md
+
+            - name: Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
+              href: ./webview2/release-notes/1.0.3650.58.md
+
+            - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
+              href: ./webview2/release-notes/1.0.3650-prerelease.md
+
+#            - name: 
+#              href: ./webview2/release-notes/~.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
