@@ -91,7 +91,7 @@ The `DragStarting` API overrides the default drag and drop behavior when running
    * Use the `GetDeferral` method to execute any async drag logic and call back into the WebView at a later time.
    * Use the `Handled` property to let the WebView2 know whether to use its own drag logic.
 
-Previous phase: [Customize the drag and drop behavior (DragStarting API)](./1.0.3079-prerelease.md#customize-the-drag-and-drop-behavior-dragstarting-api) in _Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)_.
+Previous phase: [Customize the drag and drop behavior (DragStarting API)](./1-0-3079-prerelease.md#customize-the-drag-and-drop-behavior-dragstarting-api) in _Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
