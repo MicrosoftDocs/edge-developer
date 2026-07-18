@@ -1499,8 +1499,8 @@
 # -----------------------------------------------------------------------------
         - name: Release notes  # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2
           items:
-            - name: About release notes for the WebView2 SDK
-              href: ./webview2/release-notes/about.md
+            - name: Release notes for the WebView2 SDK
+              href: ./webview2/release-notes/index.md
 
             - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
               href: ./webview2/release-notes/1.0.4126-prerelease.md
