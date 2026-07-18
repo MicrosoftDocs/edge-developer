@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1083-prerelease, for Runtime 97 (Nov. 29, 2021)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1083-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

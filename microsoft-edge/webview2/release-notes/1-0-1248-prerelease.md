@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1248-prerelease, for Runtime 102 (May 9, 2022)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1248-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

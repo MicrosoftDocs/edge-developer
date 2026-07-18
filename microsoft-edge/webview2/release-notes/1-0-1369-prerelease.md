@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1369-prerelease, for Runtime 106 (Sep. 6, 2022)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1369-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -49,7 +49,6 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 <!-- ====================================================================== -->
 ## Bug fixes for 1.0.1369-prerelease
-<!-- another section links to here -->
 
 * Fixed a bug where WPF apps would crash when windows with WebView2 were closed.  ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 
@@ -60,5 +59,3 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 * Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time.  ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 
 * Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
-
-<!-- end of Prerelease SDK 1.0.1369-prerelease, for Runtime 106 (Sep. 6, 2022) -->

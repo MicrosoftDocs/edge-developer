@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1619-prerelease, for Runtime 111 (Jan. 19, 2023)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1619-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

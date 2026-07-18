@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1414-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -115,7 +115,6 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 <!-- ====================================================================== -->
 ## Bug fixes for 1.0.1414-prerelease
-<!-- another section links to here -->
 
 * Removed three-dot menu with a broken link from the downloads page.  (Runtime-only)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 
@@ -124,5 +123,3 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event.  (SDK-only)
 
 * Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window.  (Runtime-only)
-
-<!-- end of Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022) -->

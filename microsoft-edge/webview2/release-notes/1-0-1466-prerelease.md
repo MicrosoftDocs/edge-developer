@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.1466-prerelease, for Runtime 109 (Oct. 31, 2022)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.1466-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -108,7 +108,6 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 <!-- ====================================================================== -->
 ## Bug fixes for 1.0.1466-prerelease
-<!-- another section links to here -->
 
 * Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 
@@ -121,5 +120,3 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * Fixed a bug that reports navigation failure when redirecting to a server that has been configured with Client Certificate Authentication and when the `WebResourceRequested` event is subscribed to.  (Runtime-only)
 
 * Fixed an `AddHostObjectToScript` bug in which, when JavaScript calls an async method and then a synchronous method, the async method call might fail.
-
-<!-- end of Prerelease SDK 1.0.1466-prerelease, for Runtime 109 (Oct. 31, 2022) -->
