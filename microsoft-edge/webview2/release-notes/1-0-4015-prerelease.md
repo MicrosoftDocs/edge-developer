@@ -117,10 +117,7 @@ These APIs provide:
    * Not: `chrome.webview.postMessageWithAdditionalObjects`
 * **Worker Management:** Query and retrieve worker registrations and instances.
 
-Phases of introducing these APIs:
-* Phase 3 (Stable in Release) - [Enable background processing and offline support (WebView2 Worker APIs)](./1.0.4022.49.md#enable-background-processing-and-offline-support-webview2-worker-apis) in _Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)_.
-* Phase 2 (Stable in Prerelease) - [Enable background processing and offline support (WebView2 Worker APIs)](./1.0.4015-prerelease.md#enable-background-processing-and-offline-support-webview2-worker-apis) in _Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)_.
-* Phase 1 (Experimental in Prerelease) - [Enable background processing and offline support (WebView2 Worker APIs)](./1.0.3415-prerelease.md#enable-background-processing-and-offline-support-webview2-worker-apis) in _Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)_.
+Previous phase: [Enable background processing and offline support (WebView2 Worker APIs)](./1-0-3415-prerelease.md#enable-background-processing-and-offline-support-webview2-worker-apis) in _Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)_.
 
 
 ##### [.NET/C#](#tab/dotnetcsharp)
