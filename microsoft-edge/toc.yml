@@ -1663,64 +1663,67 @@
                 - name: Prerelease SDK 1.0.2526-prerelease, for Runtime 125 (Apr. 22, 2024)
                   href: ./webview2/release-notes/1.0.2526-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.2478.35, for Runtime 124 (Apr. 22, 2024)
                   href: ./webview2/release-notes/1.0.2478.35.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2470-prerelease, for Runtime 124 (Mar. 25, 2024)
                   href: ./webview2/release-notes/1.0.2470-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.2420.47, for Runtime 123 (Mar. 25, 2024)
                   href: ./webview2/release-notes/1.0.2420.47.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2415-prerelease, for Runtime 123 (Feb. 26, 2024)
                   href: ./webview2/release-notes/1.0.2415-prerelease.md
 
-                - name: title
+
+                - name: Release SDK 1.0.2365.46, for Runtime 122 (Feb. 26, 2024)
                   href: ./webview2/release-notes/1.0.2365.46.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2357-prerelease, for Runtime 122 (Jan. 30, 2024)
                   href: ./webview2/release-notes/1.0.2357-prerelease.md
 
-                - name: title
+# exception order for 120 & 121
+                - name: Release SDK 1.0.2277.86, for Runtime 121 (Feb. 5, 2024)
                   href: ./webview2/release-notes/1.0.2277.86.md
 
-                - name: title
+                - name: Release SDK 1.0.2210.55, for Runtime 120 (Dec. 11, 2023)
                   href: ./webview2/release-notes/1.0.2210.55.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2194-prerelease, for Runtime 120 (Nov. 6, 2023)
                   href: ./webview2/release-notes/1.0.2194-prerelease.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2164-prerelease, for Runtime 120 (Oct. 18, 2023)
                   href: ./webview2/release-notes/1.0.2164-prerelease.md
+# end of exception order for 120 & 121
 
-                - name: title
+                - name: Release SDK 1.0.2151.40, for Runtime 119 (Nov. 6, 2023)
                   href: ./webview2/release-notes/1.0.2151.40.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2106-prerelease, for Runtime 119 (Sep. 20, 2023)
                   href: ./webview2/release-notes/1.0.2106-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.2088.41, for Runtime 118 (Oct. 16, 2023)
                   href: ./webview2/release-notes/1.0.2088.41.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.2065-prerelease, for Runtime 118 (Aug. 30, 2023)
                   href: ./webview2/release-notes/1.0.2065-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.2045.28, for Runtime 117 (Sep. 18, 2023)
                   href: ./webview2/release-notes/1.0.2045.28.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.1988-prerelease, for Runtime 117 (Jul. 24, 2023)
                   href: ./webview2/release-notes/1.0.1988-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.1938.49, for Runtime 116 (Aug. 28, 2023)
                   href: ./webview2/release-notes/1.0.1938.49.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.1905-prerelease, for Runtime 116 (Jun. 12, 2023)
                   href: ./webview2/release-notes/1.0.1905-prerelease.md
 
-                - name: title
+                - name: Release SDK 1.0.1901.177, for Runtime 115 (Jul. 24, 2023)
                   href: ./webview2/release-notes/1.0.1901.177.md
 
-                - name: title
+                - name: Prerelease SDK 1.0.1829-prerelease, for Runtime 115 (May 8, 2023)
                   href: ./webview2/release-notes/1.0.1829-prerelease.md
 
                 - name: title
