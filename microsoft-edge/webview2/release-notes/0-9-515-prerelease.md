@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 0.9.515-prerelease, for Runtime 84 (May 14, 2020)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 0.9.515-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

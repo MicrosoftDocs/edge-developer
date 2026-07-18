@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3796-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

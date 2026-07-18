@@ -63,7 +63,6 @@ The following have a 2-week release cadence:
 
 See:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
-* [WebView2 Runtime is changing to a 2-week release cadence](../release-notes/index.md#webview2-runtime-is-changing-to-a-2-week-release-cadence) in _Release notes for the WebView2 SDK_.
 
 
 <!-- ====================================================================== -->

@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 0.9.488-prerelease, for Runtime 83 (Apr. 20, 2020)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 0.9.488-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
