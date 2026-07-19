@@ -30,10 +30,10 @@
           href: ./web-platform/release-notes/index.md
           displayName: what's new, announcements
 
-          # latest 10
           # maint:
-          # toc.yml - add new relnotes page, move a relnotes page to archive
-          # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+          # latest 10
+          # in toc.yml, add new relnotes page, move a relnotes page to archive
+          # in /web-platform/release-notes/index.md, add new relnotes page, remove earliest relnotes page
         - name: Microsoft Edge 151
           href: ./web-platform/release-notes/151.md
           displayName: Microsoft Edge 151 web platform release notes (Jul. 2026)  # page title
@@ -1502,6 +1502,11 @@
             - name: Release notes for the WebView2 SDK
               href: ./webview2/release-notes/index.md
 
+              # maint:
+              # <= 1 year old
+              # in toc.yml, add new relnotes page, move a relnotes page to archive
+              # in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
+              # keep release nnn & prerelease nnn together
             - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
               href: ./webview2/release-notes/1-0-4126-prerelease.md
 

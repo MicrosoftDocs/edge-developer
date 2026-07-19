@@ -12,8 +12,20 @@ ms.date: 07/14/2026
 
 The WebView2 team periodically updates the WebView2 Release SDK and the WebView2 Prerelease SDK.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
-<!--
+
+
+              # maint:
+              # <= 1 year old
+              # toc.yml - add new relnotes page, move a relnotes page to archive
+              # keep release nnn & prerelease nnn together
+              # /webview2/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+
+
+
+<!-- maint:
 <= 1 year old
+in toc.yml, add new relnotes page, move a relnotes page to archive
+in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
 keep release nnn & prerelease nnn together
 -->
 Release notes for recent SDKs:

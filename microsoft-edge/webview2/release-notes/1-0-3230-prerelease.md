@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3230-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

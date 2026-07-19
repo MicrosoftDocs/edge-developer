@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3079-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

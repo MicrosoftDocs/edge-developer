@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.nnnn-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

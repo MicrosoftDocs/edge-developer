@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.2470-prerelease, for Runtime 124 (Mar. 25, 2024)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.2470-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

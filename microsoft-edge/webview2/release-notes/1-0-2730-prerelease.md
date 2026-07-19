@@ -1,6 +1,6 @@
 ---
 title: Prerelease SDK 1.0.2730-prerelease, for Runtime 128 (Aug. 7, 2024)
-description: Release notes for Microsoft Edge WebView2.
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.2730-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
