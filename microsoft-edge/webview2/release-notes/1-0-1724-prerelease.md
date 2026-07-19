@@ -24,7 +24,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Added `AdditionalObjects` for WebMessage received:
+#### todo
+
+Added `AdditionalObjects` for WebMessage received.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -42,7 +44,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Added Window Management permission type:
+#### Window Management permission type
+
+Added Window Management permission type.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -59,8 +63,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ---
 
 
+
 <!-- ------------------------------ -->
-* Added support for launching external URIs:
+#### Launch external URIs
+
+Added support for launching external URIs.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -105,7 +112,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Added support for texture streaming:
+#### Texture streaming
+
+Added support for texture streaming.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -271,7 +280,9 @@ The received `WebTexture` interface that the Renderer writes to so that the host
 
 
 <!-- ------------------------------ -->
-* Added support for profile management: custom data partition, cookie manager and profile deletion:
+#### Profile management: custom data partition, cookie manager, and profile deletion
+
+Added support for profile management: custom data partition, cookie manager, and profile deletion.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -330,7 +341,9 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* Managing smartscreen API:
+#### Smartscreen API
+
+Managing smartscreen API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

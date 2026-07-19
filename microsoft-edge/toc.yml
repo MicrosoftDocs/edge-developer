@@ -1507,6 +1507,7 @@
               # in toc.yml, add new relnotes page, move a relnotes page to archive
               # in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
               # keep release nnn & prerelease nnn together
+
             - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
               href: ./webview2/release-notes/1-0-4126-prerelease.md
 
@@ -1693,6 +1694,7 @@
                 - name: Release SDK 1.0.2210.55, for Runtime 120 (Dec. 11, 2023)
                   href: ./webview2/release-notes/1-0-2210-55.md
 
+                # todo: check each below page for phase 2 or phase 3, link to previous phase:
                 - name: Prerelease SDK 1.0.2194-prerelease, for Runtime 120 (Nov. 6, 2023)
                   href: ./webview2/release-notes/1-0-2194-prerelease.md
 

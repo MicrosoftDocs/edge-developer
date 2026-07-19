@@ -34,7 +34,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### `SaveAs` APIs
+#### `SaveAs` APIs to programmatically perform Save as
 
 Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.
 
@@ -148,6 +148,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 #### Fluent Style Overlay Scrollbar
 
 Support for the Fluent Style Overlay Scrollbar.
+
+Previous phase: [Fluent Style Overlay Scrollbar](./1-0-2470-prerelease.md#fluent-style-overlay-scrollbar) in _Prerelease SDK 1.0.2470-prerelease, for Runtime 124 (Mar. 25, 2024)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

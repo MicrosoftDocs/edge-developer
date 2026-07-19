@@ -17,10 +17,14 @@ Release Date: May 28, 2024
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 126.0.2584.0 or later.
 
 
-<!-- ------------------------------ -->
-#### Experimental features
+<!-- ====================================================================== -->
+## Experimental features
 
-* Introduced an option to cancel the initial navigation in WebView2, to improve startup performance.  This change is disabled by default, and can be enabled by using the `msWebView2CancelInitialNavigation` feature flag.
+
+<!-- ------------------------------ -->
+#### Cancel initial navigation
+
+Introduced an option to cancel the initial navigation in WebView2, to improve startup performance.  This change is disabled by default, and can be enabled by using the `msWebView2CancelInitialNavigation` feature flag.
 
 
 <!-- ====================================================================== -->

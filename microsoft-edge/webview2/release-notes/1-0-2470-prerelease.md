@@ -152,6 +152,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
+Previous phase: [Runtime selection](./1-0-2357-prerelease.md#runtime-selection) in _Prerelease SDK 1.0.2357-prerelease, for Runtime 122 (Jan. 30, 2024)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2EnvironmentOptions` Class:
@@ -212,6 +214,8 @@ Added the Runtime selection feature to support more prerelease testing and fligh
 #### `FailureSourceModulePath` property
 
 Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` type, to specify the full path of the module that caused the crash in cases of Windows code integrity failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`.
+
+Previous phase: [`FailureSourceModulePath` property](./1-0-2164-prerelease.md#failuresourcemodulepath-property) in _Prerelease SDK 1.0.2164-prerelease, for Runtime 120 (Oct. 18, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

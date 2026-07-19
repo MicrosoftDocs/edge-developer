@@ -24,7 +24,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Added source frame info to `NewWindowRequested`, to support identifying the source:
+#### Added source frame info to the `NewWindowRequested` event
+
+Added source frame info to `NewWindowRequested`, to support identifying the source.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

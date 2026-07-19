@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` type, to specify the full path of the module that caused the crash in cases of Windows code integrity failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`.
+<!-- ------------------------------ -->
+#### `FailureSourceModulePath` property
+
+Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` type, to specify the full path of the module that caused the crash in cases of Windows code integrity failures - that is, when a process exited with `STATUS_INVALID_IMAGE_HASH`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

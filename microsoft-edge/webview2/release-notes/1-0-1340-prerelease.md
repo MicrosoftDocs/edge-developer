@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added support for `WebResourceRequested` for workers which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
+<!-- ------------------------------ -->
+#### `WebResourceRequested` for workers
+
+Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -46,7 +48,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ---
 
-* Added support for custom scheme registration which allows WebView2 apps to be able to handle `WebResourceRequested` event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme.
+
+<!-- ------------------------------ -->
+#### Custom scheme registration
+
+Added support for custom scheme registration which allows WebView2 apps to be able to handle `WebResourceRequested` event for requests with the specified scheme and be able to navigate the WebView2 control to the custom scheme.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

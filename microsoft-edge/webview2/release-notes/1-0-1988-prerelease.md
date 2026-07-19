@@ -24,7 +24,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Supports desktop notifications through WebView2:
+#### Desktop notifications through WebView2
+
+Supports desktop notifications through WebView2:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -54,7 +56,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Supports monitoring iframe's runtime memory usage by getting process info details of iframes.
+#### Monitoring iframe's runtime memory usage
+
+Supports monitoring iframe's runtime memory usage by getting process info details of iframes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -124,7 +128,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Supports extensions in WebView2.
+#### Support for browser extensions in WebView2
+
+Supports browser extensions in WebView2.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -164,7 +170,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* The `TextDirectionKind` enum specifies the text direction as left to right or right to left.
+#### Specifying the text direction
+
+The `TextDirectionKind` enum specifies the text direction as left to right or right to left.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

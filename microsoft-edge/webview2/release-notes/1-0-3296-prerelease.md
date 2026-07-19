@@ -34,6 +34,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
 
+Previous phase: [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](./1-0-3079-prerelease.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ControllerOptions` Class:

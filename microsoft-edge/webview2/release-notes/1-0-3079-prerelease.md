@@ -239,6 +239,11 @@ Background: If you're building a Windows Presentation Foundation (WPF) app and u
 
 This issue occurs because the WPF control uses the WPF `HwndHost` to host the Win32 WebView2 control, and `HwndHost` has an issue with airspace.
 
+The previous phase is not in release notes.
+<!-- not found:
+Previous phase: [~](./~.md#~) in _~_.
+-->
+
 See also:
 * [Mitigating Airspace Issues In WPF Applications](https://dwayneneed.github.io/wpf/2013/02/26/mitigating-airspace-issues-in-wpf-applications.html)
 * [WPF Airspace - WebView2CompositionControl](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WPF_WebView2CompositionControl.md) - Spec.

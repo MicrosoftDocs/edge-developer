@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  Developers can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
+<!-- ------------------------------ -->
+#### Runtime selection
+
+Added the Runtime selection feature to support more prerelease testing and flighting scenarios.  You can specify `ReleaseChannels` to choose which channels are searched for during environment creation, and `ChannelSearchKind` to select a search order.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -61,8 +63,10 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ---
 
 
-<!-- ---------- -->
-* Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+<!-- ------------------------------ -->
+#### Hit-testing results on regions
+
+Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -122,7 +126,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* `CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
+#### `IsBrowserAcceleratorKeyEnabled` property
+
+`CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -144,7 +152,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage:
+#### Frame Process Info API
+
+The Frame Process Info API, including `GetProcessExtendedInfos`, provides a snapshot collection of all frames that are actively running in the associated renderer process.  This API enables the host application to detect which part of WebView2 is consuming resources such as memory or CPU usage.
+
+Previous phase: [Frame Process Info API](./1-0-2106-prerelease.md#frame-process-info-api) in _Prerelease SDK 1.0.2106-prerelease, for Runtime 119 (Sep. 20, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -220,7 +232,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
+#### `ExecuteScriptWithResult` provides exception info, and `TryGetResultAsString`
+
+`ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -282,7 +298,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* `CreateFromComICoreWebView2` wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to allow .NET devs to interact with an control that was created in C++.
+#### `CreateFromComICoreWebView2` to allow .NET to interact with a C++ control
+
+`CreateFromComICoreWebView2` wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to allow .NET devs to interact with an control that was created in C++.
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -301,7 +321,11 @@ N/A
 
 
 <!-- ------------------------------ -->
-* To support browser extensions in WebView2, added `GetBrowserExtensions` for WinRT:
+#### Support for browser extensions in WebView2, for WinRT
+
+To support browser extensions in WebView2, added `GetBrowserExtensions` for WinRT:
+
+Previous phase: [Support for browser extensions in WebView2](./1-0-1988-prerelease.md#support-for-browser-extensions-in-webview2) in _Prerelease SDK 1.0.1988-prerelease, for Runtime 117 (Jul. 24, 2023)_ - multi-platform.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -320,7 +344,11 @@ N/A
 
 
 <!-- ------------------------------ -->
-* Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
+#### `WebResourceRequested` for workers
+
+Added support for `WebResourceRequested` for workers, which allows setting filters in order to receive `WebResourceRequested` events for service workers, shared workers, and different origin iframes.
+
+Previous phase: [`WebResourceRequested` for workers](./1-0-1340-prerelease.md#webresourcerequested-for-workers) in _Prerelease SDK 1.0.1340-prerelease, for Runtime 105 (Aug. 8, 2022)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

@@ -82,6 +82,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
 
+Previous phase: [Control whether the screen capture UI is shown (`ScreenCaptureStarting` event)](./1-0-2646-prerelease.md#control-whether-the-screen-capture-ui-is-shown-screencapturestarting-event) in _Prerelease SDK 1.0.2646-prerelease, for Runtime 128 (Jun. 19, 2024)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2` Class:
@@ -138,15 +140,12 @@ Added a new `ScreenCaptureStarting` event.  This event is raised whenever the We
 <!-- ------------------------------ -->
 #### Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)
 
-<!--
-promoted to Stable in Oct Release SDK
-promoted from Experimental to Stable in Oct Prerelease SDK
--->
-
 Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a handler on this event to get the file path, filename extension, and document origin URI information.  You can then apply your own rules to do actions such as the following:
-   * Allow saving the file without presenting a default security-warning UI about the file-type policy.
-   * Cancel the saving.
-   * Create your own UI to manage runtime file-type policies.
+* Allow saving the file without presenting a default security-warning UI about the file-type policy.
+* Cancel the saving.
+* Create your own UI to manage runtime file-type policies.
+
+Previous phase: [Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)](./1-0-2646-prerelease.md#configure-the-security-warning-when-saving-a-file-savefilesecuritycheckstarting-event) in _Prerelease SDK 1.0.2646-prerelease, for Runtime 128 (Jun. 19, 2024)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

@@ -82,7 +82,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ------------------------------ -->
 #### `SaveAs` APIs to programmatically perform Save as
 
-Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.  These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
+Added `SaveAs` APIs that allow you to programmatically perform the **Save as** operation.  You can use these APIs to block the default **Save as** dialog, and then either save silently, or build your own UI for **Save as**.
+
+These APIs pertain only to the **Save as** dialog, not the **Download** dialog, which continues to use the existing Download APIs.
+
+Previous phase: [`SaveAs` APIs to programmatically perform Save as](./1-0-2526-prerelease.md#saveas-apis-to-programmatically-perform-save-as) in _Prerelease SDK 1.0.2526-prerelease, for Runtime 125 (Apr. 22, 2024)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -182,9 +186,11 @@ Added `SaveAs` APIs that allow you to programmatically perform the **Save as** o
 
 
 <!-- ------------------------------ -->
-#### Web Notification, for non-persistent notifications
+#### Web notification handling, for non-persistent notifications
 
 Added support for Web Notification, for non-persistent notifications.  The `NotificationReceived` event for `CoreWebView2` controls web notification handling, allowing customization or suppression by the host app.  Unhandled notifications default to WebView2's UI.
+
+Previous phase: [Desktop notifications through WebView2](./1-0-1988-prerelease.md#desktop-notifications-through-webview2) in _Prerelease SDK 1.0.1988-prerelease, for Runtime 117 (Jul. 24, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

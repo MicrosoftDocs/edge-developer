@@ -183,6 +183,10 @@ Supplemented the `CoreWebView2ProcessFailedReason.Unexpected` enum member by add
 
 This is a breaking change; see [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
+<!-- n/a:
+Previous phase: [~](./~.md#~) in _~_.
+-->
+
 
 <!-- ====================================================================== -->
 ## Bug fixes

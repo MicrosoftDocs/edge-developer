@@ -119,7 +119,6 @@ These APIs provide:
 
 Previous phase: [Enable background processing and offline support (WebView2 Worker APIs)](./1-0-3415-prerelease.md#enable-background-processing-and-offline-support-webview2-worker-apis) in _Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)_.
 
-
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 <!-- 1 -->

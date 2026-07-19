@@ -40,6 +40,8 @@ Use this API to manage iframe tracking on a page that contains multiple levels o
 * A partial WebView2 frames tree with specific iframes of interest.
 * The full WebView2 frames tree.
 
+Previous phase: [Track navigation history for nested iframes (FrameCreatedEvent API)](./1-0-3079-prerelease.md#track-navigation-history-for-nested-iframes-framecreatedevent-api) in _Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2Frame` Class:

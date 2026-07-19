@@ -34,6 +34,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input event messages (keyboard, mouse, touch, or pen) to pass through the browser window, to be received by an app process window.
 
+Previous phase: [Allow input event messages to pass through the browser window](./1-0-2415-prerelease.md#allow-input-event-messages-to-pass-through-the-browser-window) in _Prerelease SDK 1.0.2415-prerelease, for Runtime 123 (Feb. 26, 2024)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * `CoreWebView2ControllerOptions` Class:

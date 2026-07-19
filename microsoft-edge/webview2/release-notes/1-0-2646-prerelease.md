@@ -36,11 +36,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### `SaveFileSecurityCheckStarting` event
+#### Configure the security warning when saving a file (`SaveFileSecurityCheckStarting` event)
 
-Added a new `SaveFileSecurityCheckStarting` event.  As a developer, you can register a handler on this event to get the file path, filename extension, and document origin URI information.
-
-Then you can apply your own rules to do actions such as the following:
+Added a new `SaveFileSecurityCheckStarting` event.  Your app can register a handler on this event to get the file path, filename extension, and document origin URI information.  You can then apply your own rules to do actions such as the following:
 * Allow saving the file without presenting a default security-warning UI about the file-type policy.
 * Cancel the saving.
 * Create your own UI to manage runtime file-type policies.
@@ -93,11 +91,9 @@ Then you can apply your own rules to do actions such as the following:
 
 
 <!-- ------------------------------ -->
-#### `ScreenCaptureStarting` event
+#### Control whether the screen capture UI is shown (`ScreenCaptureStarting` event)
 
-Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.
-
-As a developer, you can then choose to block the UI from being displayed, or allow the UI to be displayed.
+Added a new `ScreenCaptureStarting` event.  This event is raised whenever the WebView2 and/or iframe that corresponds to the `CoreWebView2Frame` (or to any of its descendant iframes) requests permission to use the Screen Capture API before the UI is shown.  The app can then block the UI from being displayed, or allow the UI to be displayed.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -188,6 +184,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 Updated the WebMessageObjects API to allow injecting DOM objects into WebView2 content that's constructed via the app, and via the `CoreWebView2.PostWebMessage` API in the other direction.
 
 Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file system handle that can be posted to the web content to provide it with file system access.
+
+Previous phase: [WebMessageObjects API: Inject DOM objects; file system handle](./1-0-2470-prerelease.md#webmessageobjects-api-inject-dom-objects-file-system-handle) in _Prerelease SDK 1.0.2470-prerelease, for Runtime 124 (Mar. 25, 2024)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

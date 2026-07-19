@@ -21,8 +21,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ## Breaking changes
 
 
-<!-- ---------- -->
-* The behavior of the `InitiatingOrigin` property of `CoreWebView2LaunchingExternalUriSchemeEventArgs` has changed.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque), the `InitiatingOrigin` that's reported in the event args is its precursor origin.  The _precursor origin_ is the origin that created the opaque origin.  For example, if a frame that's at `example.com` opens a subframe that has a different opaque origin, the subframe's precursor origin is `example.com`.
+<!-- ------------------------------ -->
+#### Behavior of `InitiatingOrigin` property for launching external URI scheme
+
+The behavior of the `InitiatingOrigin` property of `CoreWebView2LaunchingExternalUriSchemeEventArgs` has changed.  If the `InitiatingOrigin` is an [opaque origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque), the `InitiatingOrigin` that's reported in the event args is its precursor origin.  The _precursor origin_ is the origin that created the opaque origin.  For example, if a frame that's at `example.com` opens a subframe that has a different opaque origin, the subframe's precursor origin is `example.com`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -42,8 +44,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ---
 
 
-<!-- ---------- -->
-* The members of the `CoreWebView2TextureStreamErrorKind` enum have been renamed:
+<!-- ------------------------------ -->
+#### Renamed members of `TextureStreamErrorKind` enum
+
+The members of the `CoreWebView2TextureStreamErrorKind` enum have been renamed:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -95,7 +99,11 @@ New member names:
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input messages (keyboard, mouse, touch, and pen) to pass through the browser window to be received by an app process window.
+
+<!-- ------------------------------ -->
+#### Allow input event messages to pass through the browser window
+
+The `CoreWebView2ControllerOptions` class now has an `AllowHostInputProcessing` property, which allows user input messages (keyboard, mouse, touch, and pen) to pass through the browser window to be received by an app process window.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -123,7 +131,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+#### Hit-testing results on regions
+
+Added a new API to provide hit-testing results on the regions that a WebView2 contains.  This API is useful for visually hosted applications that want to handle mouse events on the non-client area of the WebView2 window.
+
+Previous phase: [Hit-testing results on regions](./1-0-2357-prerelease.md#hit-testing-results-on-regions) in _Prerelease SDK 1.0.2357-prerelease, for Runtime 122 (Jan. 30, 2024)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

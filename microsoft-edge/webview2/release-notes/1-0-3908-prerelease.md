@@ -36,8 +36,8 @@ The `PersistentStorage` permission allows a WebView2 app to handle requests from
 
 When this permission is granted, the browser doesn't evict stored data during low-disk-space scenarios.  This ensures reliable offline and caching behavior for the site.
 
-<!-- not found
-Previous phase: []() in __.
+<!-- not found:
+Previous phase: [~](./~.md#~) in _~_.
 -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)

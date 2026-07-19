@@ -22,7 +22,13 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-* Support for browser extensions in WebView2:
+
+<!-- ------------------------------ -->
+#### Support for browser extensions in WebView2
+
+Supports browser extensions in WebView2.
+
+Previous phase: [Support for browser extensions in WebView2](./1-0-1988-prerelease.md#support-for-browser-extensions-in-webview2) in _Prerelease SDK 1.0.1988-prerelease, for Runtime 117 (Jul. 24, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

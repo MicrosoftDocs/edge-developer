@@ -24,7 +24,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-* Added support for the Permission management API:
+#### Permission management API
+
+Added support for the Permission management API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -88,8 +90,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ---
 
 
+
 <!-- ------------------------------ -->
-* Added support for API to disable back and forward navigation:
+#### Disable back and forward navigation
+
+Added support for API to disable back and forward navigation.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -113,7 +118,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The Custom Scheme Registration API:
+#### Custom Scheme Registration API
+
+The Custom Scheme Registration API.
+
+Previous phase: [~](./~.md#~) in _~_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -142,7 +151,9 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The Tracking Prevention API:
+#### Tracking Prevention API
+
+The Tracking Prevention API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
