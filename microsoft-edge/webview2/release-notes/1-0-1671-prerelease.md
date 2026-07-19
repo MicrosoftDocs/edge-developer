@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added support for the Experimental File API:
+<!-- ------------------------------ -->
+#### Experimental File API
+
+Added support for the Experimental File API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -64,7 +66,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The SharedBuffer API:
+#### SharedBuffer API
+
+The SharedBuffer API.
+
+Previous phase: [Access shared buffer from script of main frame or `iframe`](./1-0-1466-prerelease.md#access-shared-buffer-from-script-of-main-frame-or-iframe) in _Prerelease SDK 1.0.1466-prerelease, for Runtime 109 (Oct. 31, 2022)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -113,8 +119,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 ---
 
 
+
 <!-- ------------------------------ -->
-* The Permission API:
+#### Permission API
+
+The Permission API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -155,7 +164,9 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The ScriptLocale API:
+#### ScriptLocale API
+
+The ScriptLocale API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

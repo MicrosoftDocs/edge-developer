@@ -24,7 +24,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
+#### Enhanced support for multiple profiles: Configure General Autofill and Password Autosave
+
+Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -32,13 +36,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.isgeneralautofillenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.ispasswordautosaveenabled?view=webview2-dotnet-1.0.1829-prerelease&preserve-view=true)
 
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * `CoreWebView2Profile` Class:
    * [CoreWebView2Profile.IsGeneralAutofillEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#isgeneralautofillenabled)
    * [CoreWebView2Profile.IsPasswordAutosaveEnabled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.1829-prerelease&preserve-view=true#ispasswordautosaveenabled)
-
 
 ##### [Win32/C++](#tab/win32cpp)
 

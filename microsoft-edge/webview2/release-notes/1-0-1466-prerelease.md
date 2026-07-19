@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added support for creating a shared memory based buffer with a specified size:
+<!-- ------------------------------ -->
+#### Creating shared memory buffer with specified size
+
+Added support for creating a shared memory based buffer with a specified size.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -55,7 +57,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ---
 
-* Added support for accessing a shared buffer object from the script of the main frame or `iframe`:
+
+<!-- ------------------------------ -->
+#### Access shared buffer from script of main frame or `iframe`
+
+Added support for accessing a shared buffer object from the script of the main frame or `iframe`.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -74,7 +80,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ---
 
-* Added support for running JavaScript code from the `JavaScript` parameter in the current top-level document:
+
+<!-- ------------------------------ -->
+#### Run JavaScript via `JavaScript` parameter in current document
+
+Added support for running JavaScript code from the `JavaScript` parameter in the current top-level document:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

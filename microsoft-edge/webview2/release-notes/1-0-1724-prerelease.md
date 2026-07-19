@@ -24,7 +24,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
-#### todo
+#### Added `AdditionalObjects` for WebMessage received
 
 Added `AdditionalObjects` for WebMessage received.
 
@@ -63,11 +63,10 @@ Added Window Management permission type.
 ---
 
 
-
 <!-- ------------------------------ -->
-#### Launch external URIs
+#### `LaunchingExternalUriScheme` event when launch a URI scheme that's registered with the OS
 
-Added support for launching external URIs.
+Added support for launching external URIs.  The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (an external URI scheme).
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -341,9 +340,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-#### Smartscreen API
+#### SmartScreen API
 
-Managing smartscreen API.
+The Managing SmartScreen API controls whether SmartScreen is enabled.
+
+Previous phase: [SmartScreen API](./1-0-1414-prerelease.md#smartscreen-api) in _Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

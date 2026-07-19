@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added support for the Locale Region API:
+<!-- ------------------------------ -->
+#### Locale Region API
+
+Added support for the Locale Region API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -42,8 +44,10 @@ The following Experimental APIs have been added in this Prerelease SDK.
 ---
 
 
-<!-- ---------- -->
-* Added support for the tracking prevention API:
+<!-- ------------------------------ -->
+#### Tracking Prevention API
+
+Added support for the tracking prevention API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -72,7 +76,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* Added support for the Print API:
+#### Print API
+
+Added support for the Print API.
+
+Previous phase: [Print API](./1-0-1414-prerelease.md#print-api) in _Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -124,7 +132,13 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 ---
 
-* Added support for Custom Crash Reporting API:
+
+<!-- ------------------------------ -->
+#### Custom Crash Reporting API
+
+Added support for Custom Crash Reporting API.
+
+Previous phase: [Custom Crash Reporting API](./1-0-1414-prerelease.md#custom-crash-reporting-api) in _Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

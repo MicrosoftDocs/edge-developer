@@ -23,8 +23,10 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following Experimental APIs have been added in this Prerelease SDK.
 
 
-<!-- ---------- -->
-* Added support for the Print API:
+<!-- ------------------------------ -->
+#### Print API
+
+Added support for the Print API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -75,7 +77,11 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ---
 
-* Added support for SmartScreen API:
+
+<!-- ------------------------------ -->
+#### SmartScreen API
+
+Added support for SmartScreen API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -87,11 +93,17 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [ICoreWebView2ExperimentalSettings7::IsReputationCheckingRequired property (get](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#get_isreputationcheckingrequired), [put)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#put_isreputationcheckingrequired)
+* `ICoreWebView2ExperimentalSettings7`:
+   * [ICoreWebView2ExperimentalSettings7::get_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#get_isreputationcheckingrequired)
+   * [ICoreWebView2ExperimentalSettings7::put_IsReputationCheckingRequired](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings7?view=webview2-1.0.1414-prerelease&preserve-view=true#put_isreputationcheckingrequired)
 
 ---
 
-* Added support for Custom Crash Reporting API:
+
+<!-- ------------------------------ -->
+#### Custom Crash Reporting API
+
+Added support for Custom Crash Reporting API.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

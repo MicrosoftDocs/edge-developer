@@ -34,6 +34,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 The File API allows accessing a DOM `File` object passed via `WebMessage`.
 
+Previous phase: [Added `AdditionalObjects` for WebMessage received](./1-0-1724-prerelease.md#added-additionalobjects-for-webmessage-received) in _Prerelease SDK 1.0.1724-prerelease, for Runtime 113 (Mar. 20, 2023)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2File](/dotnet/api/microsoft.web.webview2.core.corewebview2file?view=webview2-dotnet-1.0.1777-prerelease&preserve-view=true)
@@ -69,6 +71,8 @@ The File API allows accessing a DOM `File` object passed via `WebMessage`.
 #### Profile Cookie Manager API `CookieManager` property
 
 The Profile Cookie Manager API supports profile management.  The `CookieManager` property enables the host app to get the cookie manager for the profile.
+
+Previous phase: [Profile management: custom data partition, cookie manager, and profile deletion](./1-0-1724-prerelease.md#profile-management-custom-data-partition-cookie-manager-and-profile-deletion) in _Prerelease SDK 1.0.1724-prerelease, for Runtime 113 (Mar. 20, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

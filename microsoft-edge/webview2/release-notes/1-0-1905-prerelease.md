@@ -30,7 +30,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* `NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document.
+#### `NavigationKind`: Back/Forward, Reload, or navigation to a new page
+
+`NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document.
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -54,7 +58,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
+#### `ServiceWorkers` in `BrowsingDataKinds` enum
+
+The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -75,7 +83,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (an external URI scheme).
+#### `LaunchingExternalUriScheme` event when launch URI scheme registered with the OS
+
+Added support for launching external URIs.  The `LaunchingExternalUriScheme` event is raised when there's an attempt to launch a URI scheme that is registered with the OS (an external URI scheme).
+
+Previous phase: [`LaunchingExternalUriScheme` event when launch a URI scheme that's registered with the OS](./1-0-1724-prerelease.md#launchingexternalurischeme-event-when-launch-a-uri-scheme-thats-registered-with-the-os) in _Prerelease SDK 1.0.1724-prerelease, for Runtime 113 (Mar. 20, 2023)_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -117,7 +129,11 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 
 <!-- ------------------------------ -->
-* `MemoryUsageTargetLevel` specifies memory consumption levels, such as `low` or `normal`.
+#### `MemoryUsageTargetLevel` specifies memory consumption levels
+
+`MemoryUsageTargetLevel` specifies memory consumption levels, such as `low` or `normal`.
+
+The previous phase is not in release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

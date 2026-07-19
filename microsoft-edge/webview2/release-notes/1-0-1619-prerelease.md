@@ -155,6 +155,8 @@ Previous phase: [~](./~.md#~) in _~_.
 
 The Tracking Prevention API.
 
+Previous phase: [Tracking Prevention API](./1-0-1549-prerelease.md#tracking-prevention-api) in _Prerelease SDK 1.0.1549-prerelease, for Runtime 110 (Dec. 12, 2022)_.
+
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions?view=webview2-dotnet-1.0.1619-prerelease&preserve-view=true)
