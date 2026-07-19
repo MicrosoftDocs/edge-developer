@@ -242,4 +242,8 @@ Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` typ
 
 * Ensured that the WebView2 temporary download folder is unique per user data folder, and doesn't interfere with other apps or the browser.
 
-<!-- end of Prerelease SDK 1.0.2470-prerelease, for Runtime 124 (Mar. 25, 2024) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

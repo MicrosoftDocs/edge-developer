@@ -59,4 +59,8 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 ---
 
-<!-- end of Prerelease SDK 1.0.3116-prerelease, for Runtime 134 (Feb. 10, 2025) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

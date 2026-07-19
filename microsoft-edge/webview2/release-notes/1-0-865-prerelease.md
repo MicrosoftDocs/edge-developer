@@ -78,4 +78,8 @@ The following Experimental APIs for .NET have been added in this Prerelease SDK.
 
 * Improved .NET browser process crash error handling.  You can now recreate controls after you handle a `ProcessFailed` event, without a crash.  ([Issue #996](https://github.com/MicrosoftEdge/WebViewFeedback/issues/996))
 
-<!-- end of Prerelease SDK 1.0.865-prerelease, for Runtime 91 (Apr. 26, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

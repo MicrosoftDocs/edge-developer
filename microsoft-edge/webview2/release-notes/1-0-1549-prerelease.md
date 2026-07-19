@@ -165,4 +165,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed an issue where context menu shows unexpected items in WebView2 popup window.
 
-<!-- end of Prerelease SDK 1.0.1549-prerelease, for Runtime 110 (Dec. 12, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

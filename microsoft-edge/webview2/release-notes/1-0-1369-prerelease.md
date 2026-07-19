@@ -59,3 +59,9 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 * Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time.  ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 
 * Fixed a bug in the **wv2winrt** tool where a WinMD file wasn't referenced in some projects.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

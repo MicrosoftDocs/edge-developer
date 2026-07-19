@@ -41,3 +41,9 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Removed browser process tracking after calling `remove_BrowserProcessExited`.
 * Fixed a memory leak issue in `hostObject` async function calls.
 * Fixed touch not working in visual hosting after a long tap.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

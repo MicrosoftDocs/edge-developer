@@ -209,4 +209,8 @@ Previous name in 1619-prerelease:
 
 * Fixed a bug where owned windows were not appearing for UWP.
 
-<!-- end of Prerelease SDK 1.0.1671-prerelease, for Runtime 112 (Feb. 15, 2023) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

@@ -105,4 +105,8 @@ The Profile Cookie Manager API supports profile management.  The `CookieManager`
 
 * Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime-only)
 
-<!-- end of Prerelease SDK 1.0.1777-prerelease, for Runtime 114 (Apr. 10, 2023) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

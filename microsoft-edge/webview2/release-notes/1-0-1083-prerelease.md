@@ -58,4 +58,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed an error that was causing "Microsoft Edge" branding to appear in the accessibility tree.
 
-<!-- end of Prerelease SDK 1.0.1083-prerelease, for Runtime 97 (Nov. 29, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

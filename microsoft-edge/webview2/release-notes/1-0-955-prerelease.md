@@ -83,4 +83,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed a bug that crashed WebView2 on forms with child forms. The child form, with the find in page bar open, caused WebView2 to crash when the child form was closed. ([Issue #1097](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1097))
 
-<!-- end of Prerelease SDK 1.0.955-prerelease, for Runtime 93 (Jul. 26, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

@@ -49,4 +49,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Added the ability to toggle WebView2 mute state, even when there is no audio playing.
 
-<!-- end of Prerelease SDK 1.0.1158-prerelease, for Runtime 100 (Feb. 6, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

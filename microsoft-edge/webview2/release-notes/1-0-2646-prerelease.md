@@ -272,4 +272,8 @@ Added a new web object type (`CoreWebView2FileSystemHandle`) to represent a file
 
 * Fixed a bug in owned-window activation logic for visual hosting.
 
-<!-- end of Prerelease SDK 1.0.2646-prerelease, for Runtime 128 (Jun. 19, 2024) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

@@ -193,3 +193,9 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the window-to-visual UI Automation (UIA) tree.
 * Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
 * Implemented `OnRendererResponsive` for hang outcome tracking.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

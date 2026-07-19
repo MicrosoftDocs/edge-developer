@@ -51,4 +51,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.
 
-<!-- end of Prerelease SDK 1.0.1189-prerelease, for Runtime 100 (Mar. 10, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

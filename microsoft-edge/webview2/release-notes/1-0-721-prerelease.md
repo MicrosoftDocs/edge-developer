@@ -76,4 +76,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Improved host object API.  ([Issue #335](https://github.com/MicrosoftEdge/WebViewFeedback/issues/335) and [Issue #525](https://github.com/MicrosoftEdge/WebViewFeedback/issues/525)).
 
-<!-- end of Prerelease SDK 1.0.721-prerelease, for Runtime 86 (Dec. 8, 2020) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

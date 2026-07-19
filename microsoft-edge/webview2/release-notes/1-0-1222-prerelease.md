@@ -59,4 +59,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update. ([Issue #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267))
 
-<!-- end of Prerelease SDK 1.0.1222-prerelease, for Runtime 102 (Apr. 12, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

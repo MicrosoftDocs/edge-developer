@@ -504,3 +504,9 @@ We're actively investigating these issues, and we encourage you to report any pr
 * Fixed a blackbox issue on dialogs in visual hosting.
 * Fixed `put_UserAgent` not working for service workers.
 * Fixed crash in DevTools on Windows Server and Windows 10.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

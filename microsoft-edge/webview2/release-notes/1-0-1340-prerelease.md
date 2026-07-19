@@ -91,4 +91,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Fixed a bug where focus is not returned to the application after closing the find bar for windowed mode. ([Issue #1225](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1225))
 
-<!-- end of Prerelease SDK 1.0.1340-prerelease, for Runtime 105 (Aug. 8, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

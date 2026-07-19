@@ -64,4 +64,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible. ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
 
-<!-- end of Prerelease SDK 1.0.1305-prerelease, for Runtime 105 (Jul. 4, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

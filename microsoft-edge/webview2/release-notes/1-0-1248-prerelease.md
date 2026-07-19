@@ -50,4 +50,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed a bug where changes from Chromium broke WebView2 background color.
 
-<!-- end of Prerelease SDK 1.0.1248-prerelease, for Runtime 102 (May 9, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

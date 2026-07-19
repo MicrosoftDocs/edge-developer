@@ -19,3 +19,9 @@ feb 20 Release was 82
 This SDK was last updated Apr. 20, 2020.
 
 [NuGet package for WebView2 SDK 0.9.488-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488-prerelease)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

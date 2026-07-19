@@ -90,4 +90,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed a bug in WebView2 WPF control that Source property binding in WPF OneWay binding mode isn't working properly.  ([Issue #619](https://github.com/MicrosoftEdge/WebViewFeedback/issues/619) and [Issue #608](https://github.com/MicrosoftEdge/WebViewFeedback/issues/608))
 
-<!-- end of Prerelease SDK 1.0.902-prerelease, for Runtime 92 (Jun. 1, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

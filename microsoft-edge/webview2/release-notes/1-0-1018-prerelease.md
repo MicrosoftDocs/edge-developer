@@ -36,4 +36,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Fixed a build/initialization error when PlatformTarget isn't set in the user's .NET project.  ([Issue #730](https://github.com/MicrosoftEdge/WebViewFeedback/issues/730) and [Issue #1548](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548))
 
-<!-- end of Prerelease SDK 1.0.1018-prerelease, for Runtime 95 (Sep. 20, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

@@ -66,4 +66,8 @@ handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues
 
 * Fixed bug where focus returns to wrong location after switching apps in WinForms.
 
-<!-- end of Prerelease SDK 1.0.1133-prerelease, for Runtime 99 (Jan. 13, 2022) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

@@ -216,3 +216,9 @@ This Prerelease SDK includes the following bug fixes.
 #### SDK-only
 
 * Enabled histogram logging for browser process crashes in WebView2.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

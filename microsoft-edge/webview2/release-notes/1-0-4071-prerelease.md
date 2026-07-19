@@ -139,3 +139,9 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed container safety issues in WebView2 frame and listener code.
 * WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

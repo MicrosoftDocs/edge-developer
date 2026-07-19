@@ -123,3 +123,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 * Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event.  (SDK-only)
 
 * Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window.  (Runtime-only)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

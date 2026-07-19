@@ -80,3 +80,9 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed WebView2 transparency.
 
 * Fixed the API for setting the background color of the **Caption** control.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

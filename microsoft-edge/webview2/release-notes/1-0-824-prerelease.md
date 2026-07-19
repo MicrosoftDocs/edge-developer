@@ -52,4 +52,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode.
 
-<!-- end of Prerelease SDK 1.0.824-prerelease, for Runtime 91 (Mar. 8, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

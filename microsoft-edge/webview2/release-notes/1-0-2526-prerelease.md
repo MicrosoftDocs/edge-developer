@@ -225,4 +225,8 @@ Support for the Fluent Style Overlay Scrollbar.
 
 * Fixed missing `AreBrowserExtensionsEnabled` API in WinRT projection.
 
-<!-- end of Prerelease SDK 1.0.2526-prerelease, for Runtime 125 (Apr. 22, 2024) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

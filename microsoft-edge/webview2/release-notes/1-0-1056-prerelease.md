@@ -47,4 +47,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue #1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577))
 
-<!-- end of Prerelease SDK 1.0.1056-prerelease, for Runtime 97 (Oct. 29, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

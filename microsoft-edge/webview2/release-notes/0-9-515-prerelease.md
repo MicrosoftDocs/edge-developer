@@ -28,4 +28,8 @@ This Prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
    > * **DPI Awareness**:  WebView2 for WPF is currently not DPI aware.  When initializing WebView2 on high DPI monitors, there is a known issue where the WebView2 control at first initializes as a fraction of the window until the window is resized.
    > * **WPF Designer**:  The WPF designer isn't currently supported.  Add the WebView2 control in your app by directly modifying the appropriate XAML in a text editor.
 
-<!-- end of Prerelease SDK 0.9.515-prerelease, for Runtime 84 (May 14, 2020) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

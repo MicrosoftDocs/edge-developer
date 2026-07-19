@@ -82,4 +82,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Fixed bugs where an `IDispatch` objects were returned as `IUnknown`.
 
-<!-- end of Prerelease SDK 1.0.1010-prerelease, for Runtime 95 (Sep. 14, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

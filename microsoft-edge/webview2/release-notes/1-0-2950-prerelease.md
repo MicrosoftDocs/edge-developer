@@ -47,4 +47,8 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 * Added Arm64ec support.
 * Fixed an issue where WebView2 running in "Window to Visual" mode couldn't receive accelerator input.
 
-<!-- end of Prerelease SDK 1.0.2950-prerelease, for Runtime 132 (Nov. 18, 2024) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

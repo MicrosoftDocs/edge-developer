@@ -53,4 +53,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
 
-<!-- end of Prerelease SDK 1.0.2065-prerelease, for Runtime 118 (Aug. 30, 2023) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

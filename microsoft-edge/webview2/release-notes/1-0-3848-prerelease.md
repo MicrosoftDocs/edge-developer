@@ -188,3 +188,9 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed WebView2 transparency.
 
 * Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

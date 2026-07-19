@@ -221,4 +221,8 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Removed the **Show all saved passwords** context menu item.  (Runtime-only)
 
-<!-- end of Prerelease SDK 1.0.1988-prerelease, for Runtime 117 (Jul. 24, 2023) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

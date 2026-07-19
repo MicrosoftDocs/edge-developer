@@ -115,3 +115,9 @@ This Prerelease SDK includes the following bug fixes.
 #### SDK-only
 
 * Fixed a BinSkim error for `WebView2Loader.dll`.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)

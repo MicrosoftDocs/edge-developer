@@ -97,4 +97,8 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * The WebView2 initialization screen is now transparent, instead of gray.  ([Issue #196](https://github.com/MicrosoftEdge/WebViewFeedback/issues/196)).
 
-<!-- end of Prerelease SDK 1.0.790-prerelease, for Runtime 86 (Feb. 10, 2021) -->
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)
