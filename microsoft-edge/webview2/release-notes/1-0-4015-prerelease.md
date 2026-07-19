@@ -16,6 +16,17 @@ Release Date: May 11, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 149.0.4015.0 or later.
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [EnhancedSecurityModeLevel replaced by EnhancedSecurityModeState](#enhancedsecuritymodelevel-replaced-by-enhancedsecuritymodestate)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Enhanced security mode state](#enhanced-security-mode-state)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Enable background processing and offline support (WebView2 Worker APIs)](#enable-background-processing-and-offline-support-webview2-worker-apis)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes

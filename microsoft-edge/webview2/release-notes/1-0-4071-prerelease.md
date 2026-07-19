@@ -16,6 +16,19 @@ Release Date: Jun. 11, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 150.0.4071.0 or later.
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Enable Windows shell handwriting support for WebView2 in WindowToVisual mode](#enable-windows-shell-handwriting-support-for-webview2-in-windowtovisual-mode)
+* [General changes](#general-changes)
+   * [Deprecation of DevToolsProtocolExtension NuGet package](#deprecation-of-devtoolsprotocolextension-nuget-package)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+* [Bug fixes](#bug-fixes)
+   * [Runtime and SDK](#runtime-and-sdk)
+   * [Runtime-only](#runtime-only)
+   * [SDK-only](#sdk-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
