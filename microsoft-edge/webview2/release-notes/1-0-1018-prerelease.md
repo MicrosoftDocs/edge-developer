@@ -22,9 +22,17 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added a [media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 
-* Added support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true) with WebView2.
+<!-- ------------------------------ -->
+#### Media API
+
+Added a [media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
+
+
+<!-- ------------------------------ -->
+#### Multiple user profiles
+
+Added support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true) with WebView2.
 
 
 <!-- ====================================================================== -->

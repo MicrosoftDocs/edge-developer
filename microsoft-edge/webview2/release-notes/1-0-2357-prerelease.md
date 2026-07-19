@@ -130,7 +130,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 `CoreWebView2AcceleratorKeyPressedEventArgs` has a new `IsBrowserAcceleratorKeyEnabled` property to allow you to control whether the browser handles accelerator keys (shortcut keys), such as **Ctrl+P** or **F3**:
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -236,7 +236,7 @@ Previous phase: [Frame Process Info API](./1-0-2106-prerelease.md#frame-process-
 
 `ExecuteScriptWithResult` provides exception information if the script failed.  `TryGetResultAsString` gets the script execution result as a string rather than as JSON, to make it more convenient to interact with string results:
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -302,7 +302,7 @@ The previous phase is not in release notes.
 
 `CreateFromComICoreWebView2` wraps an existing `ICoreWebView2` object in a `CoreWebView2` instance, to allow .NET devs to interact with an control that was created in C++.
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

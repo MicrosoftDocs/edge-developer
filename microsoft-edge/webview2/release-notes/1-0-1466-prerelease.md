@@ -84,7 +84,7 @@ Added support for accessing a shared buffer object from the script of the main f
 <!-- ------------------------------ -->
 #### Run JavaScript via `JavaScript` parameter in current document
 
-Added support for running JavaScript code from the `JavaScript` parameter in the current top-level document:
+Added support for running JavaScript code from the `JavaScript` parameter in the current top-level document.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

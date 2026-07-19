@@ -17,17 +17,22 @@ Release Date: Apr. 12, 2022
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 102.0.1222.0 or later.
 
 
-<!-- ------------------------------ -->
-#### Experimental APIs for 1.0.1222-prerelease
-<!-- another section links to here -->
-<!-- todo: use this unique heading instead, and update where the other section(s) links to here:
-#### Experimental APIs (Phase 1: Experimental in Prerelease) for 1.0.1222-prerelease -->
+<!-- ====================================================================== -->
+## Experimental APIs
 
 The following Experimental APIs have been added in this Prerelease SDK.
 
-* Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-* Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides a way to get the favicon when it changes or is set at a website.
+<!-- ------------------------------ -->
+#### Server Certificate API
+
+Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
+
+
+<!-- ------------------------------ -->
+#### Favicon API
+
+Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides a way to get the favicon when it changes or is set at a website.
 
 
 <!-- ====================================================================== -->
@@ -35,11 +40,29 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-* Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
 
-* [Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+<!-- ------------------------------ -->
+#### Multiple user profiles
 
-* [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the default download location.
+Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
+
+Previous phase: [Multiple user profiles](./1-0-1018-prerelease.md#multiple-user-profiles) in _Prerelease SDK 1.0.1018-prerelease, for Runtime 95 (Sep. 20, 2021)_.
+
+
+<!-- ------------------------------ -->
+#### Theming API
+
+[Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true)<!-- todo: fix fallback --> which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+
+The previous phase isn't in the release notes.
+
+
+<!-- ------------------------------ -->
+#### Default Download API
+
+[Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the default download location.
+
+The previous phase isn't in the release notes.
 
 
 <!-- ====================================================================== -->

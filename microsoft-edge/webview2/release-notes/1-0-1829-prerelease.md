@@ -28,7 +28,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 Enhanced support for multiple profiles, to allow configuring General Autofill and Password Autosave settings for different profiles.
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

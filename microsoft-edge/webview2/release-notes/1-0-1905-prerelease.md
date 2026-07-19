@@ -34,7 +34,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 `NavigationKind` gets the navigation kind of each navigation, such as Back/Forward, Reload, or navigation to a new document.
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -62,7 +62,7 @@ The previous phase is not in release notes.
 
 The `ServiceWorkers` enum value in the `BrowsingDataKinds` enum specifies service workers that are registered for an origin.
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -133,7 +133,7 @@ Previous phase: [`LaunchingExternalUriScheme` event when launch a URI scheme tha
 
 `MemoryUsageTargetLevel` specifies memory consumption levels, such as `low` or `normal`.
 
-The previous phase is not in release notes.
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

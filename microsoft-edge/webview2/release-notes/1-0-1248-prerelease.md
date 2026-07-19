@@ -28,11 +28,23 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
-* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-* The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) which allows developers to programmatically clear specific data types for a duration:
-   * `clearBrowsingDataInTimeRange`
-   * `clearBrowsingDataAll`
+<!-- ------------------------------ -->
+#### Server Certificate API
+
+The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
+
+Previous phase: [Server Certificate API](./1-0-1222-prerelease.md#server-certificate-api) in _Prerelease SDK 1.0.1222-prerelease, for Runtime 102 (Apr. 12, 2022)_.
+
+
+<!-- ------------------------------ -->
+#### ClearBrowsingData API
+
+Use the [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) to programmatically clear specific data types for a duration:
+* `clearBrowsingDataInTimeRange`
+* `clearBrowsingDataAll`
+
+Previous phase: [~](./~.md#~) in _~_.
 
 
 <!-- ====================================================================== -->

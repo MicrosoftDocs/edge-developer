@@ -23,7 +23,12 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
-* The Favicon API:
+<!-- ------------------------------ -->
+#### Favicon API
+
+The Favicon API.
+
+The previous phase isn't in the release notes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
