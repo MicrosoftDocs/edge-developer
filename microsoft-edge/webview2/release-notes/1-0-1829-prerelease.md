@@ -16,6 +16,12 @@ Release Date: May 8, 2023
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 115.0.1829.0 or later.
 
+**Detailed contents:**
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Enhanced support for multiple profiles: Configure General Autofill and Password Autosave](#enhanced-support-for-multiple-profiles-configure-general-autofill-and-password-autosave)
+* [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Promotions to Phase 2 (Stable in Prerelease)

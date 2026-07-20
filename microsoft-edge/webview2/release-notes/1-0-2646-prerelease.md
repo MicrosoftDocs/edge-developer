@@ -16,6 +16,19 @@ Release Date: Jun. 19, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 128.0.2646.0 or later.
 
+**Detailed contents:**
+* [General features](#general-features)
+* [Experimental features](#experimental-features)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Configure the security warning when saving a file (SaveFileSecurityCheckStarting event)](#configure-the-security-warning-when-saving-a-file-savefilesecuritycheckstarting-event)
+   * [Control whether the screen capture UI is shown (ScreenCaptureStarting event)](#control-whether-the-screen-capture-ui-is-shown-screencapturestarting-event)
+   * [GetComICoreWebView2 method](#getcomicorewebview2-method)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [WebMessageObjects API: Inject DOM objects; file system handle](#webmessageobjects-api-inject-dom-objects-file-system-handle)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## General features

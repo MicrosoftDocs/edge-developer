@@ -16,6 +16,19 @@ Release Date: Jan. 24, 2025
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 134.0.3079.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Customize the Find behavior (Find API)](#customize-the-find-behavior-find-api)
+   * [Customize the drag and drop behavior (DragStarting API)](#customize-the-drag-and-drop-behavior-dragstarting-api)
+   * [Track navigation history for nested iframes (FrameCreatedEvent API)](#track-navigation-history-for-nested-iframes-framecreatedevent-api)
+   * [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)](#show-wpf-elements-on-top-of-the-webview2-layer-webview2compositioncontrol)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+   * [SDK-only](#sdk-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)

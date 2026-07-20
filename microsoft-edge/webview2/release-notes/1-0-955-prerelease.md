@@ -21,8 +21,11 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ## General features
 
 * WebView2 performance improvements.
+
 * Added partial Event Tracing for Windows (ETW) support.
+
 * Removed Microsoft branding from `edge://history`.
+
 * New default Download UI.
 
 

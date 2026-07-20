@@ -16,6 +16,17 @@ Release Date: Feb. 10, 2021
 
 This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or later.
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Prerelease package 1.0.781 is deprecated](#prerelease-package-10781-is-deprecated)
+   * [Prerelease package 0.9.430 is deprecated](#prerelease-package-09430-is-deprecated)
+* [Features](#features)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+* [Bug fixes](#bug-fixes)
+   * [.NET](#net)
+      * [Bug fixes](#bug-fixes-1)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes

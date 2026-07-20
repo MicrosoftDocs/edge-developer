@@ -16,6 +16,16 @@ Release Date: Mar. 25, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires WebView2 Runtime version 124.0.2470.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Fluent Style Overlay Scrollbar](#fluent-style-overlay-scrollbar)
+   * [WebMessageObjects API: Inject DOM objects; file system handle](#webmessageobjects-api-inject-dom-objects-file-system-handle)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Runtime selection](#runtime-selection)
+   * [FailureSourceModulePath property](#failuresourcemodulepath-property)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->

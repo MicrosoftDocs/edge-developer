@@ -16,6 +16,14 @@ Release Date: Oct. 31, 2022
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 109.0.1466.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Creating shared memory buffer with specified size](#creating-shared-memory-buffer-with-specified-size)
+   * [Access shared buffer from script of main frame or iframe](#access-shared-buffer-from-script-of-main-frame-or-iframe)
+   * [Run JavaScript via JavaScript parameter in current document](#run-javascript-via-javascript-parameter-in-current-document)
+* [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)
@@ -31,29 +39,29 @@ Added support for creating a shared memory based buffer with a specified size.
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 * [CoreWebView2SharedBuffer Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sharedbuffer?view=webview2-dotnet-1.0.1466-prerelease&preserve-view=true)
-    * `Buffer`
-    * `FileMappingHandle`
-    * `Size`
-    * `Close`
-    * `Dispose`
-    * `OpenStream`
+   * `Buffer`
+   * `FileMappingHandle`
+   * `Size`
+   * `Close`
+   * `Dispose`
+   * `OpenStream`
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 * [CoreWebView2SharedBuffer Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2sharedbuffer?view=webview2-winrt-1.0.1466-prerelease&preserve-view=true)
-    * `Buffer`
-    * `Size`
-    * `Close`
-    * `OpenStream`
+   * `Buffer`
+   * `Size`
+   * `Close`
+   * `OpenStream`
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [ICoreWebView2ExperimentalSharedBuffer](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsharedbuffer?view=webview2-1.0.1466-prerelease&preserve-view=true)
-    * `Close`
-    * `get_Buffer`
-    * `get_FileMappingHandle`
-    * `get_Size`
-    * `OpenStream`
+   * `Close`
+   * `get_Buffer`
+   * `get_FileMappingHandle`
+   * `get_Size`
+   * `OpenStream`
 
 ---
 

@@ -16,6 +16,19 @@ Release Date: Apr. 22, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 125.0.2526.0 or later.
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Minimum .NET Framework version](#minimum-net-framework-version)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [SaveAs APIs to programmatically perform Save as](#saveas-apis-to-programmatically-perform-save-as)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Fluent Style Overlay Scrollbar](#fluent-style-overlay-scrollbar)
+* [Bug fixes](#bug-fixes)
+   * [Runtime and SDK](#runtime-and-sdk)
+   * [Runtime-only](#runtime-only)
+   * [SDK-only](#sdk-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes

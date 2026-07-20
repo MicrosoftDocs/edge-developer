@@ -16,6 +16,17 @@ Release Date: Aug. 7, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 128.0.2730.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Throttling Controls APIs](#throttling-controls-apis)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [SaveAs APIs to programmatically perform Save as](#saveas-apis-to-programmatically-perform-save-as)
+   * [Web notification handling, for non-persistent notifications](#web-notification-handling-for-non-persistent-notifications)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+   * [SDK-only](#sdk-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)

@@ -16,6 +16,14 @@ Release Date: Jun. 3, 2025
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 138.0.3344.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)

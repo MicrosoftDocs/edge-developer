@@ -21,7 +21,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ## General features
 
 * WebView2 performance improvements.
+
 * Reliability fixes.  ([Issue #1605](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1605) and [Issue #1678](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1678))
+
 * Added performance improvements during startup and when the host app is in the foreground.
 
 
@@ -54,8 +56,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK:
 * `IsSwipeNavigationEnabled`
 * `BrowserProcessExited`
 * `OpenBrowserTaskManager`

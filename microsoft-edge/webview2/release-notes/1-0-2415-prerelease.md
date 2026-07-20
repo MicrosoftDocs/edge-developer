@@ -16,6 +16,18 @@ Release Date: Feb. 26, 2024
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 123.0.2415.0 or later.
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Behavior of InitiatingOrigin property for launching external URI scheme](#behavior-of-initiatingorigin-property-for-launching-external-uri-scheme)
+   * [Renamed members of TextureStreamErrorKind enum](#renamed-members-of-texturestreamerrorkind-enum)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Hit-testing results on regions](#hit-testing-results-on-regions)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes

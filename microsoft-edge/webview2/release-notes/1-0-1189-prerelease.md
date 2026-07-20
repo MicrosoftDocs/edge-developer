@@ -16,6 +16,18 @@ Release Date: Mar. 10, 2022
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 100.0.1189.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Context menu (right-click menu)](#context-menu-right-click-menu)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [CallDevToolsProtocolMethodForSession API](#calldevtoolsprotocolmethodforsession-api)
+   * [StatusBarText API](#statusbartext-api)
+   * [AllowExternalDrop API](#allowexternaldrop-api)
+   * [HiddenPdfToolbarItems API](#hiddenpdftoolbaritems-api)
+   * [ExclusiveUserDataFolderAccess API](#exclusiveuserdatafolderaccess-api)
+* [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)

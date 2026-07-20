@@ -16,6 +16,16 @@ Release Date: Jul. 14, 2025
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3415.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Enable background processing and offline support (WebView2 Worker APIs)](#enable-background-processing-and-offline-support-webview2-worker-apis)
+   * [Render custom title bars (Window Controls Overlay API)](#render-custom-title-bars-window-controls-overlay-api)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Customize the Find behavior (Find API)](#customize-the-find-behavior-find-api)
+* [Bug fixes](#bug-fixes)
+   * [Runtime-only](#runtime-only)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)

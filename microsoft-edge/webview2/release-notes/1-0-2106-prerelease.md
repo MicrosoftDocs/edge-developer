@@ -16,6 +16,18 @@ Release Date: Sep. 20, 2023
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 119.0.2106.0 or later.
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Frame Process Info API](#frame-process-info-api)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Manage custom scheme registration when creating a CoreWebView2Environment](#manage-custom-scheme-registration-when-creating-a-corewebview2environment)
+   * [Added source frame info to the NewWindowRequested event](#added-source-frame-info-to-the-newwindowrequested-event)
+* [Bug fixes](#bug-fixes)
+   * [Runtime](#runtime)
+   * [SDK](#sdk)
+   * [Runtime and SDK](#runtime-and-sdk)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)
