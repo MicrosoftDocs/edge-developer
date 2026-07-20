@@ -1160,9 +1160,6 @@
                 - name: Opening source files from the Elements tool
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
 
-                - name: Inline and live issue analysis
-                  href: ./visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
-
                 - name: Device emulation
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
 

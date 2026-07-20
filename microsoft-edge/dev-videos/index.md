@@ -455,7 +455,6 @@ Released products can have issues. Based on your feedback, we added useful ways 
 
 See also:
 * [Find and fix problems using the Issues tool](../devtools/issues/index.md)<!-- has Video section -->
-* [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
