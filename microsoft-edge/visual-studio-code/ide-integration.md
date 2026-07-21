@@ -58,6 +58,9 @@ See [Debug Microsoft Edge in Visual Studio Code](debugger-for-edge.md).
 [The webhint extension for Visual Studio Code]() in _Visual Studio Code for web development_.
 -->
 
+<!-- todo: delete article?  or add: Update Jul. 2026: webhint was removed in Microsoft Edge 151.
+-->
+
 Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
 * Accessibility.

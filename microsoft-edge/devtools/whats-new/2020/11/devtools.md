@@ -48,6 +48,8 @@ See also:
 <!-- Title: Improvements to Issues tool and webhint integration  -->
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->
 
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
+
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85](../06/devtools.md#webhint-feedback-in-the-issues-panel), see webhint feedback in the [Issues](../../../issues/index.md) tool.  Issues that appear in the **Issues** tool are now easier to see with the addition of the following categories.
 
 * [Accessibility](https://webhint.io/docs/user-guide/hints/accessibility)

@@ -154,7 +154,7 @@ Chromium issue [#1068116](https://crbug.com/1068116)
 #### View accessibility information in the Inspect Mode tooltip
 
 The **Inspect Mode** tooltip now indicates whether the element has an accessible
-[name and role](https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/) and is [keyboard-focusable](https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/).
+name and role and is keyboard-focusable.
 
 <!--todo:  add link inspect mode tooltip (WebdevCls) when section is live  -->
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->
@@ -166,6 +166,8 @@ Chromium issue [#1040025](https://crbug.com/1040025)
 
 See also:
 * [Analyze pages using the Inspect tool](../../../css/inspect.md)
+* [Axe: Name Role Value](https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/)<!-- todo: delete link? --> - about accessible name and role, at webhint.io.
+* [Axe: Keyboard](https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/)<!-- todo: delete link? --> - about keyboard-focusable, at webhint.io.
 
 
 <!-- ---------------------------------- -->

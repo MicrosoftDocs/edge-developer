@@ -63,6 +63,10 @@ If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.
 
 > [!TIP]
 > The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
+> Update Jul. 2026: webhint was removed in Microsoft Edge 151.
+
+<!-- todo: delete tip? -->
+
 
 #### Mixed content
 
