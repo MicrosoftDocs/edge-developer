@@ -86,8 +86,8 @@ See [Use WebDriver to automate Microsoft Edge](../webdriver/index.md).
 <!-- ====================================================================== -->
 ## webhint extension for Visual Studio Code
 
-<!-- todo: delete section? -->
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
 
 Use webhint, a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The webhint extension checks your code for best practices and common errors.
 
-See [webhint extension for Visual Studio Code](webhint.md).
+See [webhint extension for Visual Studio Code](./webhint.md).

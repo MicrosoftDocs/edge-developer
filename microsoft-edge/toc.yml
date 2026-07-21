@@ -1915,7 +1915,7 @@
             - name: Contact the Microsoft Edge WebDriver team
               href: ./webdriver/contact.md
 # -------------------------------------
-        - name: webhint extension for Visual Studio Code  # todo: delete?
+        - name: webhint extension for Visual Studio Code
           href: ./test-and-automation/webhint.md
 # /Test and automation
 # =============================================================================

@@ -238,7 +238,7 @@ landingContent:
           - text: Use WebDriver to automate Microsoft Edge
             url: ../webdriver/index.md
 
-          - text: webhint extension for Visual Studio Code  # todo: delete?
+          - text: webhint extension for Visual Studio Code
             url: ../visual-studio-code/webhint.md
 
 # =============================================================================
