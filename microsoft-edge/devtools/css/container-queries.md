@@ -27,7 +27,7 @@ ms.date: 07/17/2026
 
 You can inspect and debug CSS container queries in the **Elements** tool in DevTools.
 
-CSS container queries allow you to manipulate an element's styles based on its parent container's CSS properties.  This capability shifts the concept of responsive web design from page-based to container-based.
+A CSS container query allows you to manipulate an element's styles based on its parent container's CSS properties.  A CSS container query uses code to query some aspect of an element's parent container element.  This capability shifts the concept of responsive web design from page-based to container-based.
 
 See also:
 * [Responsive web design](https://developer.mozilla.org/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) at MDN.
