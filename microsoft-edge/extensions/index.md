@@ -237,7 +237,7 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 ###### End-user docs
 
 * [User docs about Microsoft Edge extensions](./getting-started/user-docs.md)<!-- toc bucket 0 -->
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf)<!-- link not in article -->
+* [Everything to know about browser extensions](https://www.microsoft.com/en-us/edge/learning-center/everything-to-know-about-browser-extensions)<!-- requires /en-us/ --><!-- link not in article -->
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- link not in article -->
 
 

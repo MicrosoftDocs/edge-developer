@@ -166,7 +166,7 @@ The following sections are tips for using the Microsoft Learn website.
 
 The present website (learn.microsoft.com) is for developer documentation.  For Microsoft Edge end-user docs, see:
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - support.microsoft.com.
-* [Do More with Edge](https://www.microsoft.com/edge/learning-center/)<!-- todo: 404 2026/07/22 --> - Learning center at Microsoft.com.
+* [Do More with Edge](https://www.microsoft.com/en-us/edge/learning-center/)<!-- requires /en-us/ --> - Learning center at Microsoft.com.
 
 See also:
 * [User docs about Microsoft Edge extensions](./extensions/getting-started/user-docs.md)
