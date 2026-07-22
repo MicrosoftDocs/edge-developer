@@ -155,19 +155,6 @@ See [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy).
 -->
 
 
-<!-- leaf node (article; omit per PR review) -->
-<!-- ====================================================================== -->
-<!-- ## The Web We Want initiative
-
-The Web We Want initiative is a cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform.
-
-If you build for the web, you inevitably run into problems.  Perhaps there's no way to achieve an aspect of your design with CSS, or it may require an incredible amount of experimenting with CSS.  Maybe there's a device feature you want to tap into using JavaScript, or there's a needed Developer Tools feature that can make your job easier.
-
-See [The Web We Want initiative](./web-we-want/index.md).
--->
-
-
-<!-- ============================================================================================================================================ -->
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
