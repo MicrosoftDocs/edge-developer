@@ -129,17 +129,17 @@ See also:
 <!-- Title: Open source files directly in Visual Studio Code from DevTools -->
 <!-- Subtitle: The "Open source files in Visual Studio Code" experiment now works more intuitively with the Sources tool. -->
 
-Update July 2026: This experiment has been removed.
+Update Jul. 2026: This experiment has been removed.<!-- todo: in what version is this checkbox removed from DevTools > Settings > Experiments? -->
 
-In previous versions of Microsoft Edge, turning on the **Open source files in Visual Studio Code** experiment<!-- todo: no longer exists? --> had unexpected behavior when you had already been using the **Sources** tool in DevTools.  Setting breakpoints would direct you to Visual Studio Code or to documentation to configure the experiment correctly.
+In previous versions of Microsoft Edge, turning on the **Open source files in Visual Studio Code** experiment had unexpected behavior when you had already been using the **Sources** tool in DevTools.  Setting breakpoints would direct you to Visual Studio Code or to documentation to configure the experiment correctly.
 
-In Microsoft Edge version 96, the **Open source files in Visual Studio Code** experiment<!-- todo: no longer exists? --> now integrates better with the **Sources** tool.
+In Microsoft Edge version 96, the **Open source files in Visual Studio Code** experiment now integrates better with the **Sources** tool.
 
-* If the **Sources** tool is open and you then turn on the **Open source files in Visual Studio Code** experiment<!-- todo: no longer exists? -->, setting breakpoints or opening files now opens the **Sources** tool, rather than directing you to Visual Studio Code or to documentation to configure the experiment correctly.
+* If the **Sources** tool is open and you then turn on the **Open source files in Visual Studio Code** experiment, setting breakpoints or opening files now opens the **Sources** tool, rather than directing you to Visual Studio Code or to documentation to configure the experiment correctly.
 
    ![If the Sources tool is open, setting breakpoints or opening files opens the Sources tool, even if you then turn on the 'Open source files in Visual Studio Code' experiment](./devtools-images/sources-tool-versus-open-in-vs-code.png)
 
-* As with earlier versions of Microsoft Edge, if the **Sources** tool isn't open in DevTools and you then turn on the **Open source files in Visual Studio Code** experiment<!-- todo: no longer exists? -->, setting breakpoints or opening files from tools other than the **Sources** tool opens the file in Visual Studio Code.
+* As with earlier versions of Microsoft Edge, if the **Sources** tool isn't open in DevTools and you then turn on the **Open source files in Visual Studio Code** experiment, setting breakpoints or opening files from tools other than the **Sources** tool opens the file in Visual Studio Code.
 
 
 <!-- ====================================================================== -->
