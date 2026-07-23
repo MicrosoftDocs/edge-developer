@@ -1425,10 +1425,10 @@
 # -----------------------------------------------------------------------------
         - name: Integrate a PWA into Windows
           items:
-            - name: Display content in the title bar area using Window Controls Overlay  # todo: add "Share dialog" to title
+            - name: Display content in the title bar area using Window Controls Overlay
               href: ./progressive-web-apps/how-to/window-controls-overlay.md
 
-            - name: Share content with other apps  # todo: add "jump lists" to title
+            - name: Share content with other apps
               href: ./progressive-web-apps/how-to/share.md
 
             - name: Define app shortcuts (long-press or right-click menus)
