@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 11/10/2025
+ms.date: 07/23/2026
 ---
 # Experimental features in Microsoft Edge DevTools
 
