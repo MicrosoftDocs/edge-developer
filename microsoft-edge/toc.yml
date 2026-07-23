@@ -1971,9 +1971,6 @@
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md
 
-        - name: Opening source files in Visual Studio Code
-          href: ./devtools/sources/opening-sources-in-vscode.md
-
         - name: Debug Microsoft Edge in Visual Studio Code
           href: ./visual-studio-code/debugger-for-edge.md
 

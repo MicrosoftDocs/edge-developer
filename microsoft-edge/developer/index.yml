@@ -293,9 +293,6 @@ landingContent:
             url: ../visual-studio-code/debugger-for-edge.md
       - linkListType: how-to-guide
         links:
-          - text: Opening source files in Visual Studio Code
-            url: ../devtools/sources/opening-sources-in-vscode.md
-
           - text: Visual Studio for web development
             url: ../visual-studio/index.md
 

@@ -218,8 +218,5 @@ landingContent:
             - text: Microsoft Edge DevTools extension for Visual Studio Code
               url: ../../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
 
-            - text: Opening source files in Visual Studio Code
-              url: ../sources/opening-sources-in-vscode.md
-
             - text: Visual Studio for web development
               url: ../../visual-studio-code/index.md

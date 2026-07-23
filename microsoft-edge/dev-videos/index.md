@@ -651,7 +651,7 @@ Covers:
 * The **Console** tool can be in both the top and bottom panels of DevTools.
 * The **Sources** tool notifies you when sourcemaps can't be loaded.
 * Clicking a dropdown's triangle icon opens the menu.
-* Opening source files in Visual Studio Code integrates with the **Sources** tool.
+* Opening source files in Visual Studio Code integrates with the **Sources** tool.  Update July 2026: This experiment has been removed.
 
 See also:
 * [What's New in DevTools 96](../devtools/whats-new/2021/11/devtools.md)<!-- has Video section -->

@@ -30,17 +30,6 @@ See [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-de
 
 
 <!-- ====================================================================== -->
-## Open source files in Visual Studio Code
-
-The **Open source files in Visual Studio Code** experiment allows you to use Microsoft Edge DevTools, but then edit your files in Visual Studio Code instead of in the code editor of the DevTools **Sources** tool.
-
-When you use this experiment, if you use Visual Studio Code and you use DevTools to change your CSS rules, you no longer have to use the code editor in the Sources tool of DevTools.  You can simply use the code editor in Visual Studio Code.  When you turn on this experiment,
-local files will get a different treatment.<!--TODO: be specific-->
-
-See [Opening source files in Visual Studio Code](../devtools/sources/opening-sources-in-vscode.md).
-
-
-<!-- ====================================================================== -->
 ## Debug Microsoft Edge in Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com) includes a built-in debugger for Microsoft Edge, which can launch the browser or attach to an already running browser.

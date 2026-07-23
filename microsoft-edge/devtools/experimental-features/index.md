@@ -440,9 +440,6 @@ When you select a folder to use as your Workspace, selecting any link to a file 
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code.
 
-See also:
-* [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md) - setting up your workspace.
-
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
 * This checkbox is present in Microsoft Edge Stable 142.

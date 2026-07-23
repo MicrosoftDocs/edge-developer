@@ -1186,9 +1186,14 @@
     // devtools articles outside of devtools toc bucket
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/sources/opening-sources-in-vscode.md",
-      "redirect_url": "/microsoft-edge/devtools/sources/opening-sources-in-vscode",
+      "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
       "redirect_document_id": false
     },
+/*  {
+     "source_path": "../microsoft-edge/devtools/sources/opening-sources-in-vscode.md",
+      "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
+      "redirect_document_id": false
+    }, */
     {
       "source_path": "../microsoft-edge/devtools-protocol-chromium/index.md",
       "redirect_url": "/microsoft-edge/devtools/protocol/index",
