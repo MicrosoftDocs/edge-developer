@@ -157,12 +157,14 @@ For more information, check out [Microsoft Edge DevTools extension for Visual St
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
+Update Jul. 2026: The built-in debugger for Microsoft Edge in Visual Studio Code has been removed.
+
 With the Debugger for Microsoft Edge Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
 <!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
 
 ![The Debugger for Microsoft Edge Extension in Visual Studio Code](./devtools-images/vscode-debugger.png)
 
-Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
+Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.
 
 
 <!-- ---------- -->

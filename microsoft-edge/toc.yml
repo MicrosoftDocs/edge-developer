@@ -1974,9 +1974,6 @@
         - name: Opening source files in Visual Studio Code
           href: ./devtools/sources/opening-sources-in-vscode.md
 
-        - name: Debug Microsoft Edge in Visual Studio Code
-          href: ./visual-studio-code/debugger-for-edge.md
-
         - name: Visual Studio for web development
           href: ./visual-studio/index.md
 # /Microsoft Edge IDE integration

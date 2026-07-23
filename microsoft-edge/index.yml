@@ -467,10 +467,6 @@ conceptualContent:
               url: ./devtools/sources/opening-sources-in-vscode.md
               itemType: how-to-guide
 
-            - text: Debug Microsoft Edge in Visual Studio Code
-              url: ./visual-studio-code/debugger-for-edge.md
-              itemType: overview
-
             - text: Visual Studio for web development
               url: ./visual-studio-code/index.md
               itemType: how-to-guide

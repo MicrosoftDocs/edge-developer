@@ -210,9 +210,6 @@ landingContent:
             - text: Microsoft Edge IDE integration
               url: ../../visual-studio-code/ide-integration.md
 
-            - text: Debug Microsoft Edge in Visual Studio Code
-              url: ../../visual-studio-code/debugger-for-edge.md
-
       - linkListType: how-to-guide
         links:
             - text: Microsoft Edge DevTools extension for Visual Studio Code

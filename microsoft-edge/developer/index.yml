@@ -288,9 +288,6 @@ landingContent:
 
           - text: Microsoft Edge DevTools extension for Visual Studio Code
             url: ../visual-studio-code/microsoft-edge-devtools-extension.md  # goes directly to main page, in DevTools
-
-          - text: Debug Microsoft Edge in Visual Studio Code
-            url: ../visual-studio-code/debugger-for-edge.md
       - linkListType: how-to-guide
         links:
           - text: Opening source files in Visual Studio Code

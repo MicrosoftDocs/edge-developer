@@ -40,16 +40,6 @@ local files will get a different treatment.<!--TODO: be specific-->
 See [Opening source files in Visual Studio Code](../devtools/sources/opening-sources-in-vscode.md).
 
 
-<!-- ====================================================================== -->
-## Debug Microsoft Edge in Visual Studio Code
-
-[Visual Studio Code](https://code.visualstudio.com) includes a built-in debugger for Microsoft Edge, which can launch the browser or attach to an already running browser.
-
-This built-in debugger lets you debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from Visual Studio Code.
-
-See [Debug Microsoft Edge in Visual Studio Code](debugger-for-edge.md).
-
-
 <!-- what to do with this section?  present page is supposed to have h2 for each child page of TOC node, where h2 contains only 1 paragraph and link to child page -->
 <!-- ====================================================================== -->
 ## The webhint extension for Visual Studio Code
