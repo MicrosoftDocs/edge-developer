@@ -15,26 +15,25 @@ Policies to keep this page comprehensive and maintainable:
 
 First, inspect latest Canary and update sections: 
    * This checkbox is present in Microsoft Edge Canary 123.
-b/c that may add new sections.
+b/c that might add new sections.
 After that, inspect latest Stable and update sections: 
    * This checkbox is present in Microsoft Edge Stable 123.
 
 *  Favor Canary over Stable re: sequencing.
 *  Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.  Add as needed, each month.
-*  Keep h2 sections in same order as DevTools > Settings > Experiments.
+*  Keep h2 sections in same order as DevTools > Settings > Experiments, in Canary.
 *  In the heading and UI steps, keep the checkbox label UI string as it appears in the UI; do not revise or "fix" it.
-*  Don't change h2 text, that might break a link from UI.
-*  When a checkbox is removed from all the channels, remove its h2 section.
+*  Don't change h2 text, b/c that might break a link from UI.
+*  When a checkbox is removed from Stable & Canary, remove its h2 section.
 
 Steps to maintain this page monthly: For latest Canary, and for latest Stable:
-1. Go to edge://settings/help, update if needed.
-2. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
-3. In DevTools, go to Settings > Experiments.
-4. Make sure the article has an h2 for each checkbox.
-5. In each h2 section, update the presence or absence of "not present", and update the version #:
-This checkbox is|is not present in Microsoft Edge Canary 140.
-This checkbox is|is not present in Microsoft Edge Stable 138.
-6. Find old version #'s, inspect.
+1. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
+2. In DevTools, go to Settings > Experiments.
+3. Make sure the article has an h2 for each checkbox.
+4. In each h2 section, update the presence or absence of "not present", and update the version #:
+This checkbox is|is not present in Microsoft Edge Canary 123.
+This checkbox is|is not present in Microsoft Edge Stable 121.
+5. Find old version #'s, inspect.
 -->
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features that are in either:
