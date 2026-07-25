@@ -333,6 +333,16 @@ Due to a current limitation, media files that are accessed using a virtual host 
 
 
 <!-- ---------- -->
+###### Choosing a virtual host name
+
+The virtual host name is resolved by the network stack before the mapping is applied, so mapping a name that doesn't resolve can add a DNS timeout to every navigation.  The delay falls between the main document being handed to the WebView2 control and the renderer requesting the first subresource.
+
+Reserved top-level domains such as `.example`, `.test`, or `.invalid` don't avoid this.  Those are reserved so that nobody registers them, but the resolver still queries the network and waits for the answer.
+
+Use a name under `.localhost` instead, such as `demo.localhost`.  [RFC 6761](https://www.rfc-editor.org/rfc/rfc6761#section-6.3) reserves `.localhost` as always resolving to the loopback interface, so the resolver answers it without a network query.  The resulting origin is still HTTPS and still a secure context, so the considerations below continue to apply.
+
+
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 Local content loaded via virtual host name mapping results in a document that has an HTTP or HTTPS URL and a corresponding origin. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, and other documents that belong to the same origin will be able to use the stored data. For more information, see [Same-origin policy](https://developer.mozilla.org/docs/Web/Security/Same-origin_policy) on MDN.
@@ -453,6 +463,12 @@ If you want to use a custom scheme to make the Web Resource Request that generat
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by handling the `WebResourceRequested` event
+
+
+<!-- ---------- -->
+###### Choosing a host name for the origin
+
+The host name of the origin you serve is resolved by the network stack even though your event handler answers the request in your app process.  A name that does not resolve therefore adds the same per-navigation DNS timeout that is described in [Choosing a virtual host name](#choosing-a-virtual-host-name), above.  Use a name under `.localhost`.
 
 
 <!-- ---------- -->
