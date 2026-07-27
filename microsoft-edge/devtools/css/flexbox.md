@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/15/2026
+ms.date: 07/27/2026
 ---
 # Inspect and debug CSS flexbox layouts
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox -->
@@ -26,16 +26,32 @@ ms.date: 07/15/2026
 
 This guide shows you how to discover flexbox elements on a page, as well as inspect and modify the flexbox layouts in the **Elements** tool.
 
-The screenshots appearing in this article are from this web page: [Centering a text element with Flexbox](http://jec.fish/demo/css-flexbox). todo Demos repo demo(s)
+The screenshots appearing in this article are from this webpage: [Centering a text element with Flexbox](http://jec.fish/demo/css-flexbox). todo Demos repo demo(s) 
+
+todo:
+* \Demos\css-gap-decorations\README.md
+   * CSS Gap Decorations demos -- Draws line decorations within gaps in CSS Grid, **Flexbox**, and Multi-column layouts.
+   * [/css-gap-decorations/]( https://github.com/MicrosoftEdge/Demos/tree/main/css-gap-decorations )
+   * [CSS Gap Decorations demos]( https://microsoftedge.github.io/Demos/css-gap-decorations/ )
+
+todo:
+1. dup the article using upstream demos, links, pngs
+1. convert demos to local
+1. convert pngs to local
+1. convert links to local
 
 
 <!-- ====================================================================== -->
-## Discover CSS flexbox
-<!-- https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
+## The flex badge in the DOM tree
+<!-- Discover CSS flexbox  https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
 
-When an HTML element on your page has `display: flex` or `display: inline-flex` applied to it, you can see a `flex` badge next to it in the [Elements](https://developer.chrome.com/docs/devtools/open) tool.
+When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge is displayed next to the element in the DOM tree in the **Elements** tool:
 
-![Discover flexbox] todo png
+![Discover flexbox](./flexbox-images/discover-flexbox.png)
+
+See also: (todo: local links)
+* [Elements] 
+* [DOM]
 
 
 <!-- ====================================================================== -->
