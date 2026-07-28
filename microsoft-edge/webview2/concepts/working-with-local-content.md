@@ -516,7 +516,7 @@ If you want to use a custom scheme to make the Web Resource Request that generat
 <!-- ---------- -->
 ###### Choosing a host name for the origin
 
-The host name of the origin you serve is resolved by the network stack even though your event handler answers the request in your app process.  A name that does not resolve therefore adds the same per-navigation DNS timeout that is described in [Choosing a virtual host name](#choosing-a-virtual-host-name), above.  Use a name under `.localhost`.
+The host name of the origin you serve is resolved by the network stack, even though your event handler answers the request in your app process.  A name that doesn't resolve therefore adds the same per-navigation DNS timeout that's described in [Choosing a virtual host name](#choosing-a-virtual-host-name), above.  Use a name under `.localhost`.
 
 
 <!-- ---------- -->
