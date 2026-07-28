@@ -29,177 +29,152 @@ The following new features and bug fixes are in the WebView2 Release SDK and Pre
 
 
 <!-- ====================================================================== -->
-## Prerelease SDK 1.0.nnnn-prerelease, for Runtime 152 (Mmm. dd, yyyy)
+## Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 03, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: Aug. 03, 2026
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####-prerelease)
+[NuGet package for WebView2 SDK 1.0.4181-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4181-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or later.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 152.0.4181.0 or higher.
 
 
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
-
 <!-- ---------- -->
-###### heading
+###### Diagnostic Monitor API
 
-description
+The `DiagnosticMonitor` API provides an observation-only logging surface that lets a host application collect detailed diagnostic signals from WebView2. A monitor observes signals from all WebViews, profiles, and the environment through a single `DiagnosticReceived` event. The event is for offline analysis or telemetry forwarding; it cannot be intercepted, modified, or deferred.
+ 
+A host app creates a monitor by calling `CoreWebView2Environment.CreateDiagnosticMonitor`. A newly created monitor is inert and delivers no events until the app opts in per category by calling `SetDiagnosticFilter` with a diagnostic category (for example, `NetworkRequest`) and a JSON filter string. Passing `"{}"` receives all events in that category; a non-empty JSON object applies field-level matching, for example filtering network requests to specific `errorCode` or `httpMethod` values. Calling `SetDiagnosticFilter` again for the same category replaces the previous filter.
+ 
+Each `DiagnosticReceived` event exposes the `Category`, `Scope`, `Timestamp`, and a `DetailsAsJson` payload whose schema is defined per category with a set of guaranteed fields. The API is JSON-in / JSON-out by design, so new categories and fields can ship without breaking the API contract; consumers must ignore unknown keys. Releasing or closing the monitor stops all events and clears all filters.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
+* [CoreWebView2DiagnosticCategory Class](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticcategory?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticCategory.NetworkRequest Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticcategory?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor Class](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticmonitor?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor.Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticmonitor.close?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor.DiagnosticReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticmonitor.diagnosticreceived?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor.RemoveDiagnosticFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticmonitor.removediagnosticfilter?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor.SetDiagnosticFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticmonitor.setdiagnosticfilter?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs.Category Property](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs.category?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs.DetailsAsJson Property](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs.detailsasjson?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs.Scope Property](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs.scope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs.Timestamp Property](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs.timestamp?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticScope Class](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticscope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticScope.Environment Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticscope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticScope.Profile Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticscope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticScope.Webview Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticscope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2Environment.CreateDiagnosticMonitor Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.creatediagnosticmonitor?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
+
+
 ##### [WinRT/C#](#tab/winrtcsharp)
+
+* [CoreWebView2DiagnosticCategory Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticcategory?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticmonitor?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticMonitor.Close Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticmonitor?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#close)
+* [CoreWebView2DiagnosticMonitor.DiagnosticReceived Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticmonitor?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#diagnosticreceived)
+* [CoreWebView2DiagnosticMonitor.RemoveDiagnosticFilter Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticmonitor?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#removediagnosticfilter)
+* [CoreWebView2DiagnosticMonitor.SetDiagnosticFilter Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticmonitor?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#setdiagnosticfilter)
+* [CoreWebView2DiagnosticReceivedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2DiagnosticReceivedEventArgs.Category Property](/microsoft-
+edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#category)
+* [CoreWebView2DiagnosticReceivedEventArgs.DetailsAsJson Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#detailsasjson)
+* [CoreWebView2DiagnosticReceivedEventArgs.Scope Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#scope)
+* [CoreWebView2DiagnosticReceivedEventArgs.Timestamp Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#timestamp)
+* [CoreWebView2DiagnosticScope Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticscope?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2Environment Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
+* [CoreWebView2Environment.CreateDiagnosticMonitor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#creatediagnosticmonitor)
+
 
 ##### [Win32/C++](#tab/win32cpp)
 
----
+* [COREWEBVIEW2_DIAGNOSTIC_CATEGORY Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.4181-prerelease&preserve-view=true#corewebview2_diagnostic_category)
+  * `COREWEBVIEW2_DIAGNOSTIC_CATEGORY_NETWORK_REQUEST`
+* [COREWEBVIEW2_DIAGNOSTIC_SCOPE Enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.4181-prerelease&preserve-view=true#corewebview2_diagnostic_scope)
+  * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_ENVIRONMENT`
+  * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_PROFILE`
+  * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_WEBVIEW`
+* [ICoreWebView2ExperimentalDiagnosticMonitor](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalDiagnosticMonitor::add_DiagnosticReceived](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true#add_diagnosticreceived)
+  * [ICoreWebView2ExperimentalDiagnosticMonitor::Close](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true#close)
+  * [ICoreWebView2ExperimentalDiagnosticMonitor::remove_DiagnosticReceived](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true#remove_diagnosticreceived)
+  * [ICoreWebView2ExperimentalDiagnosticMonitor::RemoveDiagnosticFilter](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true#removediagnosticfilter)
+  * [ICoreWebView2ExperimentalDiagnosticMonitor::SetDiagnosticFilter](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticmonitor?view=webview2-1.0.4181-prerelease&preserve-view=true#setdiagnosticfilter)
+* [ICoreWebView2ExperimentalDiagnosticReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventargs?view=webview2-1.0.4181-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalDiagnosticReceivedEventArgs::get_Category](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventargs?view=webview2-1.0.4181-prerelease&preserve-view=true#get_category)
+  * [ICoreWebView2ExperimentalDiagnosticReceivedEventArgs::get_DetailsAsJson](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventargs?view=webview2-1.0.4181-prerelease&preserve-view=true#get_detailsasjson)
+  * [ICoreWebView2ExperimentalDiagnosticReceivedEventArgs::get_Scope](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventargs?view=webview2-1.0.4181-prerelease&preserve-view=true#get_scope)
+  * [ICoreWebView2ExperimentalDiagnosticReceivedEventArgs::get_Timestamp](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventargs?view=webview2-1.0.4181-prerelease&preserve-view=true#get_timestamp)
+* [ICoreWebView2ExperimentalDiagnosticReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentaldiagnosticreceivedeventhandler?view=webview2-1.0.4181-prerelease&preserve-view=true)
+* [ICoreWebView2ExperimentalEnvironment16](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment16?view=webview2-1.0.4181-prerelease&preserve-view=true)
+  * [ICoreWebView2ExperimentalEnvironment16::CreateDiagnosticMonitor](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment16?view=webview2-1.0.4181-prerelease&preserve-view=true#creatediagnosticmonitor)
 
+---
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 2 (Stable in Prerelease)
 
 No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+* Rewrite the test case for PrintSandboxIframeCompareWithExpected.
+* Fixes Caption controls background color setting API. After this change, apps will also have to intercept the close call and handle themselves to close the app.
+* Restricting access to singleton host pipe in deprecated webview2
+* Remove implcit window.gc addition on webviews
+* Fix download shortcut announcement by screen readers
+* Fix Min/Max/Close flicker issue in Windows Control Overlay
+* Fix honoring custom scale factor for PDF printing.
+* Fix minimal window download pop correct anchoring logic
 
-
-<!-- ---------- -->
 ###### SDK-only
 
-* Fixed behavior.  ([Issue #]())
+* Fix WPF crash in display topology change in composition controlled apps
+* Fix WebView2/CEF window class collision with module-unique suffixes
 
 <!-- end of Prerelease SDK 1.0.nnnn-prerelease, for Runtime 152 (Mmm. dd, yyyy) -->
 
 
 <!-- ====================================================================== -->
-## Release SDK 1.0.nnnn.nn, for Runtime 151 (Mmm. dd, yyyy)
+## Release SDK 1.0.4129.50, for Runtime 151 (Aug. 03, 2026)
 
-Release Date: Mmm. dd, yyyy
+Release Date: Aug 03, 2026
 
-[NuGet package for WebView2 SDK 1.0.####.##](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.####.##)
+[NuGet package for WebView2 SDK 1.0.4129.50](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4129.50)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or later.
-
-
-<!-- ------------------------------ -->
-#### Breaking changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
-
-
-<!-- ------------------------------ -->
-#### General changes
-<!-- omit section if empty; usually empty -->
-
-
-<!-- ---------- -->
-###### heading
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 151.0.4129.50 or higher.
 
 
 <!-- ------------------------------ -->
 #### Promotions to Phase 3 (Stable in Release)
 
 No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
-The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
-
-
-<!-- ---------- -->
-###### heading
-
-description
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
 
 
 <!-- ------------------------------ -->
 #### Bug fixes
 
 There are no bug fixes in this Release SDK.
-This Release SDK includes the following bug fixes.
-
-
-<!-- ---------- -->
-###### Runtime and SDK
-
-* Fixed behavior.  ([Issue #]())
-
 
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed behavior.  ([Issue #]())
+Restricting access to singleton host pipe in deprecated webview2
 
-
-<!-- ---------- -->
-###### SDK-only
-
-* Fixed behavior.  ([Issue #]())
-
-<!-- end of Release SDK 1.0.nnnn.nn, for Runtime 151 (Mmm. dd, yyyy) -->
+<!-- end of Release SDK 1.0.4129.50, for Runtime 151 (Aug. 03, 2026) -->
 
 
 <!-- ====================================================================== -->
