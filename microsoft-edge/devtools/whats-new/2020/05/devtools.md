@@ -166,8 +166,8 @@ Chromium issue [#1040025](https://crbug.com/1040025)
 
 See also:
 * [Analyze pages using the Inspect tool](../../../css/inspect.md)
-* [Axe: Name Role Value](https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/)<!-- todo: delete link? --> - about accessible name and role, at webhint.io.
-* [Axe: Keyboard](https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/)<!-- todo: delete link? --> - about keyboard-focusable, at webhint.io.
+* [Axe: Name Role Value](https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/) - about accessible name and role, at webhint.io.
+* [Axe: Keyboard](https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/) - about keyboard-focusable, at webhint.io.
 
 
 <!-- ---------------------------------- -->
