@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/21/2025
+ms.date: 07/27/2026
 ---
 # Using local content in WebView2 apps
 
@@ -17,6 +17,54 @@ In addition to loading remote content, content can also be loaded locally into W
 * Handling the `WebResourceRequested` event.
 
 These approaches are described below.
+
+**Detailed contents:**
+* [Selecting an approach](#selecting-an-approach)
+* [Loading local content by navigating to a file URL](#loading-local-content-by-navigating-to-a-file-url)
+   * [Considerations for loading local content by navigating to a file URL](#considerations-for-loading-local-content-by-navigating-to-a-file-url)
+      * [Cross-origin resources](#cross-origin-resources)
+      * [Origin-based DOM APIs](#origin-based-dom-apis)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context)
+      * [Dynamic content](#dynamic-content)
+      * [Additional web resources](#additional-web-resources)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process)
+   * [APIs for loading local content by navigating to a file URL](#apis-for-loading-local-content-by-navigating-to-a-file-url)
+   * [Example of a file URL](#example-of-a-file-url)
+   * [Example of navigating to a file URL](#example-of-navigating-to-a-file-url)
+* [Loading local content by navigating to an HTML string](#loading-local-content-by-navigating-to-an-html-string)
+   * [Considerations for loading local content by navigating to an HTML string](#considerations-for-loading-local-content-by-navigating-to-an-html-string)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-1)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-1)
+      * [Dynamic content](#dynamic-content-1)
+      * [Additional web resources](#additional-web-resources-1)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-1)
+   * [APIs for loading local content by navigating to an HTML string](#apis-for-loading-local-content-by-navigating-to-an-html-string)
+   * [Example string representation of a webpage](#example-string-representation-of-a-webpage)
+   * [Example of navigating to an HTML string](#example-of-navigating-to-an-html-string)
+* [Loading local content by using virtual host name mapping](#loading-local-content-by-using-virtual-host-name-mapping)
+   * [Considerations for loading local content by using virtual host name mapping](#considerations-for-loading-local-content-by-using-virtual-host-name-mapping)
+      * [Choosing a virtual host name](#choosing-a-virtual-host-name)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-2)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-2)
+      * [Dynamic content](#dynamic-content-2)
+      * [Additional web resources](#additional-web-resources-2)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-2)
+      * [Source maps with virtual host name mapping](#source-maps-with-virtual-host-name-mapping)
+   * [APIs for loading local content by using virtual host name mapping](#apis-for-loading-local-content-by-using-virtual-host-name-mapping)
+   * [Example of virtual host name mapping](#example-of-virtual-host-name-mapping)
+* [Loading local content by handling the WebResourceRequested event](#loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Custom scheme registration](#custom-scheme-registration)
+   * [Considerations for loading local content by handling the WebResourceRequested event](#considerations-for-loading-local-content-by-handling-the-webresourcerequested-event)
+      * [Choosing a host name for the origin](#choosing-a-host-name-for-the-origin)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-3)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-3)
+      * [Dynamic content](#dynamic-content-3)
+      * [Additional web resources](#additional-web-resources-3)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-3)
+      * [Source maps with the WebResourceRequested event](#source-maps-with-the-webresourcerequested-event)
+   * [APIs for loading local content by handling the WebResourceRequested event](#apis-for-loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Example of handling the WebResourceRequested event](#example-of-handling-the-webresourcerequested-event)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
