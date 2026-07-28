@@ -74,7 +74,7 @@ See also:
 ## PWA-related pages in the Application tool
 <!-- Summary  https://developer.chrome.com/docs/devtools/progressive-web-apps/#summary -->
 
-The ![Application icon](./index-images/application-icon.png) **Application** tool includes the following pages (accessed via the tree on the left) that cover PWA features:
+The **Application** tool includes the following pages (accessed via the tree on the left) that cover PWA features:
 
 ![PWA-related pages](./index-images/pwa-related-pages.png)
 
@@ -113,7 +113,7 @@ To inspect a manifest:
 
    DevTools opens.
 
-1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+1. In DevTools, select the **Application** tool.
 
 1. In the outline on the left, in the **Application** section, select **Manifest**.
 
@@ -240,7 +240,7 @@ To test URL protocol handler registration by using DevTools:
 
    DevTools opens in a dedicated window.
 
-1. Select the ![Application tool](./index-images/application-icon.png) **Application** tool.
+1. Select the **Application** tool.
 
 1. In the tree on the left, expand **Manifest**, and then select **Protocol Handlers**.
 
@@ -308,7 +308,7 @@ See also:
 * [The service worker to cache the app's files on the local device (`sw.js`)](../../progressive-web-apps/how-to/index.md#the-service-worker-to-cache-the-apps-files-on-the-local-device-swjs) in _Get started developing a PWA_.
 * [Re-engage users with push messages](../../progressive-web-apps/how-to/push.md)
 
-The main place in DevTools to inspect and debug service workers is the **Service workers** page in the ![Application icon](./index-images/application-icon.png) **Application** tool.
+The main place in DevTools to inspect and debug service workers is the **Service workers** page in the **Application** tool.
 
 To view service workers:
 
@@ -318,7 +318,7 @@ To view service workers:
 
    DevTools opens.
 
-1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+1. In DevTools, select the **Application** tool.
 
 1. In the outline on the left, in the **Application** section, select **Service workers**.
 
@@ -336,7 +336,7 @@ To view service workers:
 * Checkboxes:
 
    * The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to:
-      * The offline mode that's available from the ![Network icon](./index-images/network-icon.png) **Network** tool.
+      * The offline mode that's available from the **Network** tool.
       * Selecting `Go offline` in the Command Menu.  See [Run commands in the Command Menu](../command-menu/index.md).
 
    * The **Update on reload** checkbox forces the service worker to update on every page load.
@@ -392,7 +392,7 @@ To display the network requests that are handled by a service worker:
 
    DevTools opens.
 
-1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+1. In DevTools, select the **Application** tool.
 
 1. In the outline on the left, in the **Application** section, select **Service workers**.
 
@@ -400,7 +400,7 @@ To display the network requests that are handled by a service worker:
 
 1. In the upper right of the **Service workers** page, click the **Network requests** button.
 
-   The ![Network icon](./index-images/network-icon.png) **Network** tool opens.
+   The **Network** tool opens.
 
    The **Filter** text box contains `is:service-worker-intercepted`.  This filter only displays the requests that were handled by this service worker.
 
@@ -429,7 +429,7 @@ To view cache storage information for a service worker:
 
    DevTools opens.
 
-1. In DevTools, select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+1. In DevTools, select the **Application** tool.
 
 1. In the outline on the left, select **Cache storage**.
 
@@ -467,7 +467,7 @@ To clear storage:
 
    DevTools opens.
 
-1. Select the ![Application icon](./index-images/application-icon.png) **Application** tool.
+1. Select the **Application** tool.
 
 1. In the tree on the left, select **Application** > **Storage**.
 

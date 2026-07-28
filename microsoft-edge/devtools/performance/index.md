@@ -63,7 +63,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 Throttle your desktop machine's CPU to simulate a mobile CPU, as follows:
 
-1. In DevTools, open the **Performance** (![Performance icon](./index-images/performance-tool-icon.png)) tool.
+1. In DevTools, open the **Performance** tool.
 
 1. Click the **Capture settings** (![Capture settings](./index-images/capture-settings-icon.png)) button.
 

@@ -26,7 +26,7 @@ To use the **Detached elements** profiling type to analyze a webpage's detached 
 
    DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./dom-leaks-memory-tool-detached-elements-images/memory-tool-icon.png)) tool.
+1. In DevTools, in the **Activity Bar**, select the **Memory** tool.
 
    If that tab isn't visible, click the **More Tools** (![More Tools icon](./dom-leaks-memory-tool-detached-elements-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
 

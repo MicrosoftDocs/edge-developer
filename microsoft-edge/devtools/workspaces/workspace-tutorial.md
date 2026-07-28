@@ -148,7 +148,7 @@ Next, define a Workspace in DevTools:
 
    DevTools opens.
 
-1. Click the **Sources** (![Sources tool icon](./workspace-tutorial-images/sources-tool-icon.png)) tab.
+1. Click the **Sources** tab.
 
 1. In the **Navigator** pane (on the left), click the **Workspace** tab (which is grouped with the **Page** tab):
 
@@ -185,7 +185,7 @@ To make a change in the CSS file and save it to disk by using the **Elements** t
 
    ![View styles.css in a text editor](./workspace-tutorial-images/sources-workspace-css.png)
 
-1. Select the **Elements** (![Elements tool icon](./workspace-tutorial-images/elements-tool-icon.png)) tool; then in the DOM tree, expand the `<body>` element; and then select the `<h1>` element.
+1. Select the **Elements** tool; then in the DOM tree, expand the `<body>` element; and then select the `<h1>` element.
 
    The **Styles** pane displays the CSS rules that are applied to the `<h1>` element.  The **mapped file** (![Mapped file icon](./workspace-tutorial-images/mapped-file-icon.png)) icon next to `styles.css:1` is a page with a green "mapped" dot.  The green "mapped" dot means that any changes that you make to this CSS rule are mapped to `styles.css` in your `/Demos/workspace/` directory:
 
@@ -220,7 +220,7 @@ Next, edit HTML and save changes to the source file.  To save changes to the web
 
 The DevTools **Workspace** tab is similar to using an editor to edit the HTML source file, but enables editing the HTML source file directly within DevTools.
 
-1. Continuing from above, in DevTools, click the **Sources** (![Sources tool icon.](./workspace-tutorial-images/sources-tool-icon.png)) tab.
+1. Continuing from above, in DevTools, click the **Sources** tab.
 
 1. In the **Navigator** pane on the left, in the **Workspace** tab (grouped with the **Page** tab), select `index.html`.
 

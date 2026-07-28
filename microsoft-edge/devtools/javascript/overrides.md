@@ -30,7 +30,7 @@ When you set up a folder for local overrides the first time, that folder should 
 
 1. Right-click a webpage, such as https://microsoftedge.github.io/Demos/demo-to-do/, and then select **Inspect**.  DevTools opens.
 
-1. Select the **Sources** (![Sources icon](./overrides-images/sources-tool-icon.png)) tool.
+1. Select the **Sources** tool.
 
 1. In the **Navigator** pane (on the left), click the **Overrides** tab (grouped with the **Page** tab); if needed, click the **More tabs** (**v**) button:
 
@@ -92,7 +92,7 @@ Next, add files to your Overrides folder, as follows.  This example will add a C
 
 Continuing from above, you can now change the styles of the webpage by using your local override CSS file (in this example, `to-do-styles.css`).  Add a thick red border around the rendered webpage body, as follows:
 
-1. In DevTools, select the **Elements** (![Elements tool icon](./overrides-images/elements-tool-icon.png)) tool, and then make sure the **Styles** tab is selected.
+1. In DevTools, select the **Elements** tool, and then make sure the **Styles** tab is selected.
 
 1. Copy the following CSS style property, and then paste it into the existing `body` element CSS rule that's in your CSS override file, such as `to-do-styles.css`:
 
@@ -112,7 +112,7 @@ Continuing from above, you can now change the styles of the webpage by using you
 <!-- ====================================================================== -->
 ## Adding files to Overrides from within other tabs or tools
 
-1. Continuing from above, select the **Sources** (![Sources icon.](./overrides-images/sources-tool-icon.png)) tool, and then on the left, select the **Page** tab (grouped with the **Overrides** tab).
+1. Continuing from above, select the **Sources** tool, and then on the left, select the **Page** tab (grouped with the **Overrides** tab).
 
 1. In the tree of resource files for the page, expand the **styles** folder.  Files that are already placed in your overrides folder (by using the **Overrides** tab), such as `to-do-styles.css`, have a purple dot on the icon.
 
@@ -122,7 +122,7 @@ Continuing from above, you can now change the styles of the webpage by using you
 
    In the **Page** tab and **Overrides** tab in the **Sources** tool, the file's icon changes to a page icon with a purple dot (such as for `index.html`), and the file is added to your local drive's Overrides directory.
 
-1. Select the **Network** (![Network tool icon](./overrides-images/network-tool-icon.png)) tool, right-click a resource file for the webpage, such as **to-do.js**, and then select **Override content**:
+1. Select the **Network** tool, right-click a resource file for the webpage, such as **to-do.js**, and then select **Override content**:
 
    ![Selecting a file from the Network tool for overrides](./overrides-images/javascript-overrides-network.png)
 

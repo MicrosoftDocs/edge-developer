@@ -40,7 +40,7 @@ To edit source files in the **Quick source** tool, you'll do the following:
 
 1. Have access to the webpage source files locally, such as a cloned repo.
 
-1. In the **Workspace** tab in the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, add a local folder of source files.
+1. In the **Workspace** tab in the **Sources** tool, add a local folder of source files.
 
 1. In the **Workspace** tab, open a file, such as a `.js` file.
 
@@ -163,7 +163,7 @@ Continue with the next section.
 
    DevTools opens.
 
-1. In the **Activity Bar** at the top of DevTools, select the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
+1. In the **Activity Bar** at the top of DevTools, select the **Sources** tool, select the **Workspace** tab (grouped with the **Page** tab), and then in the **Workspace** tab, click the **Add folder** button.
 
    The **Select Folder** dialog opens.
 
@@ -187,7 +187,7 @@ Continue with the next section.
 
 Suppose you want to continue viewing the **Elements** tool, but you want to simultaneously view and edit the source files that were opened via the **Sources** tool.
 
-1. Continuing from above, in the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** (![The Sources tool icon](./quick-source-tool-images/sources-icon.png)) tool, such as the **Elements** (![The Elements tool icon](./quick-source-tool-images/elements-tool-icon.png)) tool.
+1. Continuing from above, in the **Activity Bar** at the top of DevTools, select a tool other than the **Sources** tool, such as the **Elements** tool.
 
 1. If the **Quick View** toolbar isn't shown at the bottom of DevTools, press **Esc**.
 

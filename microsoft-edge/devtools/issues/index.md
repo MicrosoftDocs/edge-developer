@@ -152,7 +152,7 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press **F12**.  DevTools opens next to the webpage.
 
-1. In DevTools, select the **Elements** (![Elements tool icon](./index-images/elements-tool-icon.png)) tab.
+1. In DevTools, select the **Elements** tab.
 
 1. In the DOM tree, expand `<body>` > `<section>` > `<main>` > `<article id="cats">` > `<img>`.  The `<img>` element start-tag has a wavy underline:
 
