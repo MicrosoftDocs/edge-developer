@@ -613,7 +613,7 @@ To preview the latest features coming to DevTools, download [Microsoft Edge Cana
 
 See also:
 * [Experimental features](experimental-features/index.md)
-* [What's new in Microsoft Edge DevTools](./whats-new/whats-new.md)
+* [What's new in Microsoft Edge DevTools](./whats-new/index.md)
 
 
 <!-- ====================================================================== -->
