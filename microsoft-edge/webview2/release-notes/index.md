@@ -157,9 +157,8 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Rewrote the test case for `PrintSandboxIframeCompareWithExpected`.
-* Fixed the `Caption` controls background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
-* Restricted access to a singleton host pipe in deprecated WebView2.  todo: clarify latter
+* Fixed the `Caption controls` background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
+* Restricted access to a singleton host pipe in legacy WebView2 clients.
 * Removed implicit `window.gc` addition on WebViews.
 * Fixed the "download shortcut" announcement by screen readers.
 * Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
@@ -199,7 +198,7 @@ This Release SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Restricted access to a singleton host pipe in deprecated WebView2.  todo: clarify latter
+* Restricted access to a singleton host pipe in legacy WebView2 clients.
 
 <!-- end of Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026) -->
 
@@ -1346,7 +1345,7 @@ This Prerelease SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Fixed double character in UWP.
-* Fixed Caption controls background color setting API.  After this change, apps will also have to intercept the close call and handle themselves to close the app.
+* Fixed the `Caption controls` background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
 * Improved error handling when Post Message (such as `CoreWebView2ServiceWorker.PostWebMessageAsJson` or `chrome.webview.postMessage`) is called on a service worker.
 * Reduced string allocations in `GetDefaultHostAppExeName`.
