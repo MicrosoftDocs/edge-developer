@@ -163,7 +163,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the "download shortcut" announcement by screen readers.
 * Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
 * Fixed honoring a custom scale factor for PDF printing.
-* Fixed the anchoring logic for the minimal window download popup.
+* Fixed the anchoring logic for the minimal-window **Download** popup.
 * Fixed the inability to drag a window via the top border of a custom title bar.
 
 ###### SDK-only
