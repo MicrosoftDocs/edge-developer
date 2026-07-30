@@ -169,7 +169,6 @@ This Prerelease SDK includes the following bug fixes.
 ###### SDK-only
 
 * Fixed a WPF crash when changing display topology in composition-controlled apps.
-* Fixed a WebView2/CEF window class collision by using module-unique suffixes.
 
 <!-- end of Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026) -->
 
