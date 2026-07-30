@@ -84,9 +84,6 @@ The DevTools extension shows a popup suggestion to install Node.js and npm.  The
    ```
    <!-- Apr. 9, 2025 -->
 
-See also:
-* [Inline and live issue analysis](./inline-live-issue-analysis.md)
-
 
 <!-- ====================================================================== -->
 ## Step 5: Clone the Demos repo
