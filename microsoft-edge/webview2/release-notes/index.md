@@ -1691,7 +1691,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
 * Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
 * Fixed WebView2 transparency.
-* Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
+* Fixed the API for setting the background color of the **Caption** control.
 
 <!-- end of Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) -->
 
