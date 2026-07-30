@@ -50,13 +50,13 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 The `DiagnosticMonitor` API provides an observation-only logging surface that lets a host application collect detailed diagnostic signals from WebView2.  A monitor observes signals from all WebViews, profiles, and the environment through a single `DiagnosticReceived` event.
 
 The event is for offline analysis or telemetry forwarding; it cannot be intercepted, modified, or deferred.
- 
-A host app creates a monitor by calling `CoreWebView2Environment.CreateDiagnosticMonitor`.  A newly created monitor is inert and delivers no events until the app opts in per category by calling `SetDiagnosticFilter` with a diagnostic category (such as `NetworkRequest`) and a JSON filter string. 
+
+A host app creates a monitor by calling `CoreWebView2Environment.CreateDiagnosticMonitor`.  A newly created monitor is inert and delivers no events until the app opts in per category by calling `SetDiagnosticFilter` with a diagnostic category (such as `NetworkRequest`) and a JSON filter string.
 
 Passing `"{}"` to `SetDiagnosticFilter` receives all events in that category.  A non-empty JSON object applies field-level matching (such as for filtering network requests) to specific `errorCode` or `httpMethod` values.
 
 Calling `SetDiagnosticFilter` again for the same category replaces the previous filter.
- 
+
 Each `DiagnosticReceived` event exposes the `Category`, `Scope`, `Timestamp`, and a `DetailsAsJson` payload whose schema is defined per category with a set of guaranteed fields.  The API is JSON-in/JSON-out by design, so new categories and fields can ship without breaking the API contract; consumers must ignore unknown keys.
 
 Releasing or closing the monitor stops all events and clears all filters.
@@ -157,7 +157,7 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ---------- -->
 ###### Runtime-only
 
-* Fixed the `Caption controls` background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
+* Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
 * Restricted access to a singleton host pipe in legacy WebView2 clients.
 * Removed implicit `window.gc` addition on WebViews.
 * Fixed the "download shortcut" announcement by screen readers.
@@ -1687,21 +1687,12 @@ This Prerelease SDK includes the following bug fixes.
 ###### Runtime-only
 
 * Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
-
 * Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
-
 * Disabled the domain actions component for WebView2.
-
 * Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
 * Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
-
 * Fixed WebView2 transparency.
-
-* Fixed the API for setting the background color of the **Caption** control.
-<!-- later wording:
-* Fixed the `Caption controls` background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
--->
+* Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
 
 <!-- end of Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) -->
 
