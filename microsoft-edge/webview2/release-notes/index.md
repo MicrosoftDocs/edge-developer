@@ -79,9 +79,9 @@ Releasing or closing the monitor stops all events and clears all filters.
    * [CoreWebView2DiagnosticReceivedEventArgs.Timestamp Property](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticreceivedeventargs.timestamp?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
 
 * [CoreWebView2DiagnosticScope Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2diagnosticscope?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
-   * `Environment`
-   * `Profile`
    * `Webview`
+   * `Profile`
+   * `Environment`
 
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateDiagnosticMonitor Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.creatediagnosticmonitor?view=webview2-dotnet-1.0.4181-prerelease&preserve-view=true)
@@ -104,9 +104,9 @@ Releasing or closing the monitor stops all events and clears all filters.
    * [CoreWebView2DiagnosticReceivedEventArgs.Timestamp Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticreceivedeventargs?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#timestamp)
 
 * [CoreWebView2DiagnosticScope Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2diagnosticscope?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true)
-   * `Environment`
-   * `Profile`
    * `Webview`
+   * `Profile`
+   * `Environment`
 
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateDiagnosticMonitor Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4181-prerelease&preserve-view=true#creatediagnosticmonitor)
