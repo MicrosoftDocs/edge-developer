@@ -135,9 +135,9 @@ Releasing or closing the monitor stops all events and clears all filters.
    * `COREWEBVIEW2_DIAGNOSTIC_CATEGORY_NETWORK_REQUEST`
 
 * [COREWEBVIEW2_DIAGNOSTIC_SCOPE enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4181-prerelease&preserve-view=true#corewebview2_diagnostic_scope)
-   * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_ENVIRONMENT`
-   * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_PROFILE`
    * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_WEBVIEW`
+   * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_PROFILE`
+   * `COREWEBVIEW2_DIAGNOSTIC_SCOPE_ENVIRONMENT`
 
 ---
 
