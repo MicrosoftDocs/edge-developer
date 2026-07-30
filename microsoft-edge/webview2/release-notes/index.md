@@ -164,6 +164,7 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
 * Fixed honoring a custom scale factor for PDF printing.
 * Fixed the anchoring logic for the minimal window download popup.
+* Fixed the inability to drag a window from the top border of a custom title bar.
 
 ###### SDK-only
 
@@ -1698,6 +1699,9 @@ This Prerelease SDK includes the following bug fixes.
 * Fixed WebView2 transparency.
 
 * Fixed the API for setting the background color of the **Caption** control.
+<!-- later wording:
+* Fixed the `Caption controls` background color setting API.  After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
+-->
 
 <!-- end of Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026) -->
 
