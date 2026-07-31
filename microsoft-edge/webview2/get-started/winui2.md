@@ -35,7 +35,7 @@ This article applies to Windows and XBOX.
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 See also:
-* [Media App Samples for XBOX](https://github.com/microsoft/Media-App-Samples-for-Xbox)
+* [Media App Samples for XBOX](https://github.com/microsoft/Media-App-Samples-for-XBOX)
 
 
 <!-- ------------------------------ -->
@@ -314,7 +314,7 @@ GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - the WinUI 2 (UWP) WebView2 sample.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-* [Media App Samples for XBOX](https://github.com/microsoft/Media-App-Samples-for-Xbox)
+* [Media App Samples for XBOX](https://github.com/microsoft/Media-App-Samples-for-XBOX)
 
 NuGet:
 * [Microsoft.UI.Xaml NuGet package](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
