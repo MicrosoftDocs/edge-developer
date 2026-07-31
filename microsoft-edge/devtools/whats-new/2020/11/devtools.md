@@ -34,7 +34,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site](https://www.microsoft.com/edge/download/insider?platform=linux) or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Recent versions](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads) at the Microsoft Edge WebDriver page.  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver/index.md).
+If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see the **Recent versions** section at [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver/index.md).
 
 ![DevTools in Microsoft Edge on Linux](./devtools-images/edge-on-linux.png)
 
@@ -47,6 +47,8 @@ See also:
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->
+
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85](../06/devtools.md#webhint-feedback-in-the-issues-panel), see webhint feedback in the [Issues](../../../issues/index.md) tool.  Issues that appear in the **Issues** tool are now easier to see with the addition of the following categories.
 

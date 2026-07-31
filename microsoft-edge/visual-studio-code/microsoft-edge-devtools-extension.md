@@ -79,7 +79,6 @@ The DevTools extension for Visual Studio Code allows you to:
 
 | Task | Article |
 |---|---|
-| Get live analysis of problems in your source code. | [Inline and live issue analysis](./microsoft-edge-devtools-extension/inline-live-issue-analysis.md) |
 | Start a new browser instance with DevTools for your project. | [Opening DevTools and the DevTools browser](./microsoft-edge-devtools-extension/open-devtools-and-embedded-browser.md) |
 | Emulate different devices and see your project in different display modes. | [Device emulation](./microsoft-edge-devtools-extension/device-state-emulation.md) |
 | View the runtime DOM structure and layout of your page using the **Elements** tool. | [Opening source files from the Elements tool](./microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md) |

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-no-loc: ["Enable webhint"]
 ms.date: 11/10/2025
 ---
 # Experimental features in Microsoft Edge DevTools
@@ -377,33 +376,6 @@ Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 
 See also:
 * [Console overview](../console/index.md)
-
-Status:
-* This checkbox is present in Microsoft Edge Canary 144.
-* This checkbox is present in Microsoft Edge Stable 142.
-
-
-<!-- ====================================================================== -->
-## Enable webhint
-<!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-webhint
-pointing to this anchor wording -->
-
-[webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
-
-*  Accessibility
-*  Cross-browser compatibility
-*  Security
-*  Performance
-*  Progressive Web Apps (PWAs)
-*  Other common web development issues
-
-The [webhint](https://webhint.io) experiment displays webhint feedback in the **Issues** tool.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
-
-![webhint feedback in the Issues tool](./index-images/experiments-webhint.png)
-
-See also:
-* [Find and fix problems using the Issues tool](../issues/index.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 144.
