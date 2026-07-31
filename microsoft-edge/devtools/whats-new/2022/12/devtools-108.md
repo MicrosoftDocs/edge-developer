@@ -30,7 +30,7 @@ To download Microsoft Edge WebDriver on Apple M1 devices:
 
 1. In Microsoft Edge, go to `edge://version`, and note the full version number.
 
-1. Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/).
+1. Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1. Find the version of Microsoft Edge WebDriver that matches your specific version of Microsoft Edge, and then click the **Mac M1** download link:
 
@@ -40,7 +40,7 @@ Thank you for your feedback on this issue!
 
 See also:
 * [Use WebDriver to automate Microsoft Edge](../../../../webdriver/index.md)
-* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
+* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver)
 * [Issue #17: Support for Apple silicon](https://github.com/MicrosoftEdge/EdgeWebDriver/issues/17)
 
 
