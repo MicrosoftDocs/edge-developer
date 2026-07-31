@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/27/2024
+ms.date: 07/14/2026
 ---
 # Develop secure WebView2 apps
 
@@ -88,3 +88,49 @@ When navigating to a new document, use the `ContentLoading` event and `RemoveHos
 ## WebView2 cannot be run as a system user
 
 WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.
+
+
+<!-- ====================================================================== -->
+## Recommended privilege level for WebView2 host applications
+
+As a security best practice, we recommend hosting WebView2 in a process that runs at standard (non-elevated) user integrity.  Following the principle of least privilege, applications should avoid running the WebView2-hosting component with elevated (administrator) privileges.
+
+If your application requires elevated privileges for certain operations, we recommend isolating that work in a separate, dedicated process and keeping the WebView2 host component de-elevated.  This keeps the browser-hosting surface at the lowest privilege level necessary, and aligns with recommended Windows application security practices.
+
+
+<!-- ------------------------------ -->
+#### For an elevated host app, use appropriate override flags
+
+For an elevated WebView2 host app process, use the appropriate type of override flags.  An elevated process is a High Integrity Level (High IL) process.  To help protect elevated processes from configuration that can be modified by standard users, WebView2 ignores certain user-scoped override mechanisms when the host process is running elevated.
+
+When the host process is running elevated:
+
+* `WEBVIEW2_*` environment variable overrides (flags) are ignored, including `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS`.  See:
+   * [Setting browser flags in your local device environment](./webview-features-flags.md#setting-browser-flags-in-your-local-device-environment) in _WebView2 browser flags_.
+
+* Configuration flags that are specified within the WebView2 app via the WebView2 API are honored.  See:
+   * [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
+
+* `HKEY_CURRENT_USER` (`HKCU`) policy overrides are ignored.  See:
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md) - Find `HKEY_CURRENT_USER`.
+
+* `AdditionalBrowserArguments` registry overrides that are under `HKCU` are ignored.
+
+* `HKEY_LOCAL_MACHINE` (`HKLM`) policy overrides are honored.  See:
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+
+Non-elevated WebView2 apps honor all of the supported override mechanisms.
+
+See also:
+* [Distribute your app and the WebView2 Runtime](./distribution.md) - Find "elevated".
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Development best practices for WebView2 apps](./developer-guide.md)
