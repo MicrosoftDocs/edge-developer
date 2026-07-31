@@ -16,7 +16,6 @@ Use the Translator API to translate text between different languages from JavaSc
 <!-- https://github.com/captainbrosset/WebToc -->
 * [Introduction](#introduction)
 * [Use the Language Detector API with the Translator API](#use-the-language-detector-api-with-the-translator-api)
-* [Availability of the Translator API](#availability-of-the-translator-api)
 * [Benefits of the Translator API](#benefits-of-the-translator-api)
 * [Alternatives to the Translator API](#alternatives-to-the-translator-api)
 * [Disclaimer](#disclaimer)
@@ -52,12 +51,6 @@ For introductory information about the Translator API, see:
 To facilitate translating user-provided text to another language, use the Translator API in conjunction with the Language Detector API.
 
 To learn about the Language Detector API, see [Detect languages with the Language Detector API](./languagedetector-api.md).
-
-
-<!-- ====================================================================== -->
-## Availability of the Translator API
-
-The Translator API is available in Microsoft Edge 148 or later.
 
 
 <!-- ====================================================================== -->
@@ -99,7 +92,7 @@ An initial download of the on-device translation model is required the first tim
 
 To see the Translator API in action, and review existing code that uses the API:
 
-1. In Microsoft Edge 148 or later, go to [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
+1. Go to [Translator API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/translator-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model downloadable.  The model for a specified language pair will be downloaded the first time the API is used.**
 
