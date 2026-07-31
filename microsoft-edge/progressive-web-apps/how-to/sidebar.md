@@ -6,9 +6,21 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 02/20/2024
+ms.date: 07/22/2026
 ---
 # Build a PWA for the sidebar in Microsoft Edge
+
+
+<!-- ====================================================================== -->
+## This feature is being deprecated
+
+Update July 2026: This feature is being deprecated; it will soon no longer be supported.
+
+For information about the Sidebar, see [Streamline access to your favorite sites and apps with Sidebar in Microsoft Edge](https://support.microsoft.com/edge/streamline-access-to-your-favorite-sites-and-apps-with-sidebar-in-microsoft-edge) at Microsoft Support.
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 Progressive Web Apps (PWAs) can opt-in to be pinned to the sidebar in Microsoft Edge.
 
