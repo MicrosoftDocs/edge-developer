@@ -61,8 +61,6 @@ If you already set up HTTPS on your server, all you need to do to fix this probl
 
 If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.org) provides a free and relatively easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.
 
-> [!TIP]
-> The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
 
 #### Mixed content
 
