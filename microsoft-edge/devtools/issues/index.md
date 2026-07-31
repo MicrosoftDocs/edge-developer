@@ -33,10 +33,9 @@ The **Issues** tool provides feedback in the following categories:
 *  Security.
 *  Other.
 
-Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, see:
+Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, and MDN browser compatibility data.  For information about these sources of feedback that populate the **Issues** tool, see:
 *  [axe Tools Overview](https://www.deque.com/axe)
 *  [browser-compat-data repo](https://github.com/mdn/browser-compat-data)
-*  [webhint](https://webhint.io)
 
 
 <!-- ------------------------------ -->

@@ -39,7 +39,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 ![The Performance tool in the DevTools with keyboard navigation and screen reader improvements](./devtools-images/a11y-performance-tool.png)
 
-Want to learn how to make your webpage accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
+Want to learn how to make your webpage accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started (update Jul. 2026: webhint was removed in Microsoft Edge 151).
 
 If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting](https://aka.ms/tweet/edgedevtools) at us or selecting the [Send Feedback](../../../contact.md) icon!
 
@@ -94,6 +94,8 @@ See also:
 #### webhint Microsoft Edge extension
 
 <!-- dup entries: 2019/12, 2020/01 -->
+
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
 
 The webhint Microsoft Edge extension allows you to easily scan your webpage and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://aka.ms/webhint).
 
@@ -161,6 +163,8 @@ Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extensi
 ###### webhint
 
 <!-- dup entries: 2019/12, 2020/01 -->
+
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
 
 The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `webhint` to improve your webpage while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
 
