@@ -10,9 +10,12 @@ ms.date: 08/23/2022
 ---
 # Test Progressive Web App (PWA) protocol handling
 
-This article assumes that you have already defined protocol handlers in your PWA web app manifest and are debugging your app with the DevTools. To learn about how to define and register protocols in your PWA, see [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md).  
+This article assumes that you have already defined protocol handlers in your PWA web app manifest and are debugging your app with the DevTools.  To learn about how to define and register protocols in your PWA, see [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md).  
 
 Use the **Application** tool to verify and test that Microsoft Edge has successfully registered your app as a handler for protocols defined in your web app manifest.
+
+See also:
+* [Test URL protocol handler registration](./index.md#test-url-protocol-handler-registration) in _Debug a Progressive Web App (PWA)_.
 
 
 <!-- ====================================================================== -->
@@ -68,7 +71,7 @@ In the following screenshot, the URI `web+amp://files.freemusicarchive.org/stora
 <!-- ====================================================================== -->
 ## See also
 
-* [Debug a Progressive Web App (PWA)](./index.md)
+* [Test URL protocol handler registration](./index.md#test-url-protocol-handler-registration) in _Debug a Progressive Web App (PWA)_.
 * [Handle protocols in a PWA](../../progressive-web-apps/how-to/handle-protocols.md)
 
 Windows blog:

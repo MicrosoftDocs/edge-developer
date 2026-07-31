@@ -45,7 +45,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 <!-- ---------------------------------- -->
 #### Using a registry value
 
-Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+Instead of setting the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable, you can add a new registry value named `<myApp.exe>` with data `--remote-debugging-port=9222` to the registry under registry key `Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge\WebView2\AdditionalBrowserArguments`, so that the debugger can find the proper port.  For more information, see [WebView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ---------------------------------- -->
@@ -155,7 +155,7 @@ You also need to add a new REGKEY `<myApp.exe> = --remote-debugging-port=9222` u
 <!-- ---------------------------------- -->
 #### Using an environment variable
 
-Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WewbView2 browser flags](../concepts/webview-features-flags.md).
+Instead of adding the above registry key, you can set the `WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS` environment variable to `--remote-debugging-port=9222`.  Make sure that your application is started after the environment variable is set, and make sure that your application inherits the environment variable.  For more information, see [WebView2 browser flags](../concepts/webview-features-flags.md).
 
 
 <!-- ====================================================================== -->

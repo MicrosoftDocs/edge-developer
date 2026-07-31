@@ -1,5 +1,5 @@
 ---
-title: View Cache data
+title: View cache data
 description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,9 @@ ms.date: 07/21/2023
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View Cache data
+# View cache data
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/storage/cache -->
+<!-- https://developer.chrome.com/docs/devtools/storage/cache/ -->
 
 This guide shows you how to use DevTools to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 
@@ -53,7 +55,7 @@ To inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) dat
 
    ![Viewing the content of a resource](./cache-images/domain-js-preview.png)
 
-To learn more about cache data storage quota, see [Quota usage](../progressive-web-apps/index.md#quota-usage) in _Debug a Progressive Web App (PWA)_.
+To learn more about cache data storage quota, see [Storage quotas and eviction criteria](https://developer.mozilla.org/docs/Web/API/Storage_API/Storage_quotas_and_eviction_criteria) at MDN.
 
 
 <!-- ====================================================================== -->

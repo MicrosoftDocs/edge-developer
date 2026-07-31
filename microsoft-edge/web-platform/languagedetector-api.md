@@ -89,7 +89,7 @@ An initial download of the model is required the first time a website calls the 
 
 To see the Language Detector API in action, and view existing code that uses this API:
 
-1. In Microsoft Edge 148 or later, go to [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/languagedetector-api/) in a new window or tab.
+1. Go to [Language Detector API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/languagedetector-api/) in a new window or tab.
 
 1. In the information banner at the top, check the status: it initially reads: **On-device API and model available.**
 

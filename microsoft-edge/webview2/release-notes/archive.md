@@ -20,7 +20,7 @@ if change h2 headings pattern, enter work item: update links in announcements
 
 <!-- todo: update links in announcements -->
 
-The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for SDKs over one year old.
+The following features and bug fixes are in the WebView2 Release SDK and Prerelease SDK, for earlier SDKs.
 
 
 <!-- ====================================================================== -->
