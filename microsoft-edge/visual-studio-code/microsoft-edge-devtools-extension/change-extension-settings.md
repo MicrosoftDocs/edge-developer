@@ -41,7 +41,6 @@ The **Settings** page of DevTools v2.1.1 contains these settings.  For more info
 * **Timeout**
 * **Use Https**
 * **User Data Dir**
-* **Webhint**
 * **Web Root**
 * **Bottom**
 * **Top**
