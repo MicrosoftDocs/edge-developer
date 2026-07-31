@@ -16,4 +16,4 @@ To use [Microsoft Edge DevTools](/microsoft-edge/devtools/landing/) to debug a W
 |---|---|
 | Desktop | [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](./remote-debugging-desktop.md) |
 | HoloLens 2 | [Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps](./remote-debugging-hololens.md) |
-| Xbox | [Remote debugging Xbox WebView2 WinUI 2 (UWP) apps](./remote-debugging-xbox.md) |
+| XBOX | [Remote debugging XBOX WebView2 WinUI 2 (UWP) apps](./remote-debugging-xbox.md) |

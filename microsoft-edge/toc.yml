@@ -1791,7 +1791,7 @@
                   href: ./webview2/how-to/remote-debugging-hololens.md
                   displayName: remotely debug, Remote Tools for Microsoft Edge
 
-                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                - name: Remote debugging XBOX WebView2 WinUI 2 (UWP) apps
                   href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: remotely debug
 # -----------------------------------------------------------------------------
