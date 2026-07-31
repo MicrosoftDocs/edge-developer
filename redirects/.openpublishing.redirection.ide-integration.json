@@ -19,6 +19,11 @@
       "source_path": "../microsoft-edge/visual-studio-code/debugger-for-edge.md",
       "redirect_url": "/microsoft-edge/visual-studio-code/ide-integration",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md",
+      "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
+      "redirect_document_id": false
     }
   ]
 }
