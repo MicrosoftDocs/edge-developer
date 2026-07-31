@@ -1933,9 +1933,6 @@
         - name: Edge-specific web development tips
           href: ./web-platform/web-platform.md
 
-        - name: Move users to Microsoft Edge from Internet Explorer
-          href: ./web-platform/ie-to-microsoft-edge-redirection.md
-
         - name: Tracking prevention in Microsoft Edge
           href: ./web-platform/tracking-prevention.md
 
