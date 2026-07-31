@@ -88,6 +88,8 @@ See also:
 <!-- ------------------------------ -->
 #### webhint feedback in the Issues panel
 
+Update Jul. 2026: webhint was removed in Microsoft Edge 151.
+
 ![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/13/2022 -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You can view webhint feedback in the [Issues](../../../issues/index.md) panel.
@@ -100,7 +102,6 @@ Chromium issue [#1070378](https://crbug.com/1070378)
 
 See also:
 * [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
-* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_
 
 
 <!-- ------------------------------ -->
