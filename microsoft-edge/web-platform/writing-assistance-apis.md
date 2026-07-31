@@ -53,9 +53,7 @@ For introductory information about the Summarizer API, Writer API, and Rewriter 
 <!-- ====================================================================== -->
 ## Availability of the Writing Assistance APIs
 
-The Writer API and the Rewriter APIs are available as a developer preview in the Microsoft Edge Canary and Edge Dev channels, starting with version 138.0.3309.2.
-
-The Summarizer API has been enabled by default since Microsoft Edge 138.
+The Writer API and the Rewriter APIs are available as a developer preview in the Microsoft Edge Canary and Edge Dev channels, starting with version 138.0.3309.2.  The Summarizer API has been enabled by default since that version.
 
 The Writing Assistance APIs are optimized for tasks specific to generating, modifying, and summarizing text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -189,7 +187,7 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
    * **Writer API for on-device language model**.  (Through Edge 149, this flag's label was **Writer API for Phi mini**.)
    * **Rewriter API for on-device language model**.  (Through Edge 149, this flag's label was **Rewriter API for Phi mini**.)
 
-   (Starting with Microsoft Edge 138, the Summarizer API is enabled by default.  Prior to Microsoft Edge 138, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here, and then enable that flag.)
+   (The Summarizer API is enabled by default.  In earlier versions of Microsoft Edge, to enable the Summarizer API, you had to enter **Summarization API for Phi mini** here, and then enable that flag.)
 
 1. Next to the flag for the API, select **Enabled**:
 
