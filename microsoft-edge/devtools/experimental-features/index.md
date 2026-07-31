@@ -5,8 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-no-loc: ["Enable webhint"]
-ms.date: 07/23/2026
+ms.date: 07/31/2026
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -161,6 +160,21 @@ See also:
 Status:
 * This checkbox is present in Microsoft Edge Canary 152.
 * This checkbox is present in Microsoft Edge Stable 150.
+
+
+<!-- ====================================================================== -->
+## Enable symbol server extension support
+<!-- checkbox has a "(?)" link
+end up at: https://www.bing.com/?ref=aka&shorturl=edge-devtools-symbol-server-extension - todo: bug -->
+
+todo: desc
+
+See also:
+* [todo]
+
+Status:
+* This checkbox is present in Microsoft Edge Canary 152.
+* This checkbox is not present in Microsoft Edge Stable 150.
 
 
 <!-- ====================================================================== -->

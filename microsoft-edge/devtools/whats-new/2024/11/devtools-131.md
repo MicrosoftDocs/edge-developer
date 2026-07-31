@@ -32,14 +32,13 @@ See also:
 <!-- Go to Settings > Experiments to enable or disable any experiments you choose. -->
 
 Previously, the following experiments that were enabled by default couldn't be disabled, even after clearing their checkboxes in the **Settings > Experiments** page and reloading DevTools:
-* **Enable webhint**
+* **Enable webhint** (update Jul. 2026: webhint was removed in Microsoft Edge 151).
 * **Show issues in Elements**
 * **Open source files in Visual Studio Code**
 
 This is now fixed, and you can disable these experiments.
 
 See also:
-* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features in Microsoft Edge DevTools_.
 * [Show issues in Elements](../../../experimental-features/index.md#show-issues-in-elements) in _Experimental features in Microsoft Edge DevTools_.
 * [Open source files in Visual Studio Code](../../../experimental-features/index.md#open-source-files-in-visual-studio-code) in _Experimental features in Microsoft Edge DevTools_.
 
