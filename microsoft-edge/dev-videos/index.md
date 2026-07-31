@@ -211,7 +211,7 @@ See also:
 * [What's new in DevTools (Microsoft Edge 108)](../devtools/whats-new/2022/12/devtools-108.md)<!-- has Video section -->
 * [Create a DevTools extension, adding a custom tool tab and panel](../extensions/developer-guide/devtools-extension.md)
 * [The heap snapshot file format](../devtools/memory-problems/heap-snapshot-schema.md)
-* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/?form=MA13LH) - download Edge WebDriver.
+* [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) - download Edge WebDriver.
 
 <!-- The [initial, Dec. 6 video](https://www.youtube.com/watch?v=2fuTHag4EOw) is cut off at the end.  Use the above video instead. -->
 
@@ -455,7 +455,6 @@ Released products can have issues. Based on your feedback, we added useful ways 
 
 See also:
 * [Find and fix problems using the Issues tool](../devtools/issues/index.md)<!-- has Video section -->
-* [Inline and live issue analysis](../visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md) in the DevTools extension for VS Code<!-- has Video section -->
 
 
 <!-- ====================================================================== -->
