@@ -50,6 +50,12 @@ Starting with version 152 (Aug. 24, 2026), the WebView2 Runtime moves to a 2-wee
 See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting v152)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/137).
 
 
+<!-- ---------- -->
+###### Run your WebView2 host application at standard user integrity rather than elevated
+
+Run your WebView2 host application at standard user integrity rather than elevated.  See [Recommended privilege level for WebView2 host applications](../concepts/security.md#recommended-privilege-level-for-webview2-host-applications) in _Develop secure WebView2 apps_.
+
+
 <!-- ------------------------------ -->
 #### Experimental APIs (Phase 1: Experimental in Prerelease)
 
