@@ -237,7 +237,7 @@ See also:
 #### Styles pane updates
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ---------- -->
@@ -250,7 +250,7 @@ The autocomplete UI of the **Styles** pane now detects the [revert](https://deve
 Chromium issue [#1075437](https://crbug.com/1075437)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ---------- -->
@@ -263,7 +263,7 @@ Hover on a `background-image` value in the **Styles** pane to display a preview 
 Chromium issue [#1040019](https://crbug.com/1040019)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ---------- -->

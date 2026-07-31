@@ -43,7 +43,7 @@ The DevTools extension for Visual Studio Code is one of several different ways t
 
 | Approach | Pros and Cons | Article |
 |---|---|---|
-| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements-tool/elements-tool.md)| 
+| Browser > DevTools > **Elements** tool | You have to manually copy changes from DevTools into your source files. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements/elements-tool.md)| 
 | Browser > DevTools > **Sources** tool > **Workspace** tab to define a **Workspace** | Always saves the changes, which could discourage experimenting | [Select a local Workspace, to use DevTools to edit files and save changes to disk](../devtools/sources/index.md) in _Sources tool overview_ |
 | Browser > DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code** | Always saves the changes, which could discourage experimenting | Experiments > [Opening source files in Visual Studio Code](../devtools/sources/opening-sources-in-vscode.md). |
 | Microsoft Edge DevTools extension for Visual Studio Code | Automatically opens and edits the CSS source file but doesn't automatically save the file, so you get to choose whether to save the edits. | The present article. |
@@ -96,7 +96,7 @@ The following tools are included in the DevTools extension for Visual Studio Cod
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
-| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements-tool/elements-tool.md) |
+| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](../devtools/elements/elements-tool.md) |
 | **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](../devtools/console/index.md) |
 | **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](../devtools/network/index.md) |
 | **Application** tool | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](../devtools/storage/application-tool.md) |

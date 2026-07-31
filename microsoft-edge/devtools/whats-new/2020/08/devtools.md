@@ -397,7 +397,7 @@ See also:
 #### Updates to Elements tool and Network tool
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
 
 
@@ -427,7 +427,7 @@ In the **Elements** tool, the **Properties** pane is back.  The **Properties** p
 Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ---------- 
@@ -458,7 +458,7 @@ For example, if `monospace` is a custom font installed on the local machine, it 
 Chromium issue: [#1106221](https://crbug.com/1106221)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 * [CSS features reference](../../../css/reference.md)
 
 
@@ -498,7 +498,7 @@ Click the **Clear** button to remove any inputted text.
 Chromium issue: [#1067184](https://crbug.com/1067184)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
 
 
