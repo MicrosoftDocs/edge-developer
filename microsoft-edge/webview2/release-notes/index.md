@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 07/14/2026
+ms.date: 08/03/2026
 ---
 # Release notes for the WebView2 SDK
 
@@ -169,13 +169,12 @@ Async methods:
 <!-- ====================================================================== -->
 ## See also
 
-<!-- todo: toc order: -->
 * [Release notes for the WebView2 SDK](./index.md)<!-- toc bucket 1.1 -->
 * [Archived release notes for the WebView2 SDK](./archive.md)<!-- toc bucket 1.2 -->
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)<!-- toc bucket 2.1 -->
-* [Contact the Microsoft Edge WebView2 team](../contact.md)<!-- toc bucket __ -->
-* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)<!-- toc bucket __ -->
-* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- toc bucket __ -->
+* [Contact the WebView2 team](../contact.md)<!-- toc bucket: bottom -->
+* [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 API Reference:
 * [WebView2 API Reference](../webview2-api-reference.md)

@@ -334,5 +334,5 @@ landingContent:
           - text: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
             url: ../how-to/remote-debugging-hololens.md
 
-          - text: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+          - text: Remote debugging XBOX WebView2 WinUI 2 (UWP) apps
             url: ../how-to/remote-debugging-xbox.md
