@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 07/31/2026
+ms.date: 08/03/2026
 ---
 # Experimental features in Microsoft Edge DevTools
 
@@ -121,11 +121,11 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 todo: need desc
 
 See also:
-* [] todo
+* [todo]
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -135,11 +135,11 @@ Status:
 todo: need desc
 
 See also:
-* [] todo
+* [todo]
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -158,8 +158,8 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -173,35 +173,8 @@ See also:
 * [todo]
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is not present in Microsoft Edge Stable 150.
-
-
-<!-- ====================================================================== -->
-## Enable webhint
-<!-- checkbox has an exclamation-in-triangle link, about removal -->
-
-webhint will be removed in Microsoft Edge 151.
-
-[webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
-
-*  Accessibility
-*  Cross-browser compatibility
-*  Security
-*  Performance
-*  Progressive Web Apps (PWAs)
-*  Other common web development issues
-
-The [webhint](https://webhint.io) experiment displays webhint feedback in the **Issues** tool.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant tool, such as **Network**, **Sources**, or **Elements**:
-
-![webhint feedback in the Issues tool](./index-images/experiments-webhint.png)
-
-See also:
-* [Find and fix problems using the Issues tool](../issues/index.md)
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is not present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -215,8 +188,8 @@ See also:
 * [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -224,11 +197,12 @@ Status:
 
 todo: desc
 
-todo: see also
+See also:
+* [todo]
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -244,8 +218,8 @@ See also:
 * [Console overview](../console/index.md)
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -266,8 +240,8 @@ See also:
 * [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md) - setting up your workspace.
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
@@ -302,55 +276,8 @@ See also:
 -->
 
 Status:
-* This checkbox is present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
-
-
-<!-- ====================================================================== -->
-## Show "+" button on the tab strip for adding tools
-
-todo: desc
-
-See also:
-* [] todo
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
-
-
-<!-- ====================================================================== -->
-## Show issues in Elements
-<!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#show-issues-in-elements
-pointing to this anchor wording -->
-
-Displays syntax errors as wavy underlines under DOM nodes in the **Elements** tool.
-
-See also:
-* [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool) in _What's new in DevTools (Microsoft Edge 91)_.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
-
-
-<!-- ====================================================================== -->
-## Use scope information from source maps
-<!-- checkbox has no "(?)" link pointing to this anchor wording -->
-
-_new as of Microsoft Edge 118_
-
-Whether to use scope information from source maps.
-<!-- todo old: need text -->
-
-See also:
-* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
-* [Mapping minified code to your source code to show readable code](../sources/index.md#mapping-minified-code-to-your-source-code-to-show-readable-code) in _Sources tool overview_.
-
-Status:
-* This checkbox is not present in Microsoft Edge Canary 152.
-* This checkbox is present in Microsoft Edge Stable 150.
+* This checkbox is present in Microsoft Edge Canary 153.
+* This checkbox is present in Microsoft Edge Stable 151.
 
 
 <!-- ====================================================================== -->
