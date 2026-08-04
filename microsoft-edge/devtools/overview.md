@@ -631,7 +631,6 @@ See also:
 * [About the list of tools](./about-tools.md)<!--keep link-->
 * [Inspect and change the current webpage](./dom/index.md)<!--keep link?-->
 * [Emulate how your product behaves on different devices](./device-mode/index.md)<!--keep link?-->
-* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)<!--keep link?-->
 * [Debug your JavaScript](./javascript/index.md)<!--keep link?-->
 * [Live console](./console/index.md)<!--keep link?-->
 * [Accessibility, performance, compatibility, and security issues](./issues/index.md)<!--keep link?-->
