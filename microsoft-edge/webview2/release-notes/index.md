@@ -14,8 +14,8 @@ The WebView2 team periodically updates the WebView2 Release SDK and the WebView2
 
 <!-- maint:
 list past 10 releases, per pairs below
-in toc.yml, add new relnotes page, move a relnotes page to archive
-in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
+in toc.yml, add new relnotes page x2, move relnotes page x2 to archive
+in /webview2/release-notes/index.md, add new relnotes link pair, remove earliest relnotes link pair
 keep release nnn & prerelease nnn together
 -->
 Release notes for recent SDKs:
