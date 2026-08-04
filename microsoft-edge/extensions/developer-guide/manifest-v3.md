@@ -59,8 +59,8 @@ For enterprise customers, extensions that use Manifest Version 2 will continue t
 | Date | Changes |
 |---|---|
 | Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest Version 2 extensions with visibility set to `Public` or `Hidden`.  <br/>To publish a new extension, use Manifest Version 3. |
-| Aug. 2026 | If your extension uses Manifest Version 2:  <br/>At Partner Center, a Manifest Version 2 deprecation warning is displayed.  <br/>At the Edge Add-ons store, on the extension's product detail page, a Manifest Version 2 deprecation warning is displayed, for some end-users.  <br/>In Microsoft Edge, on the **Manage extensions** page, a Manifest Version 2 deprecation warning is displayed, for some end-users. |
-| TBD | For enterprise users, in Microsoft Edge, support for Manifest Version 2 will be removed.  <br/>The `ExtensionManifestV2Availability` policy will be removed.  <br/>Extensions that use Manifest Version 2 will no longer work, even on enterprise-managed devices. |
+| Aug. 2026 | If your extension uses Manifest Version 2:  <br/>At Partner Center, a Manifest Version 2 deprecation warning is displayed.  <br/>At the Edge Add-ons store, on the extension's product detail page, a Manifest Version 2 deprecation warning is displayed, for some end-users (and later, for everyone).  <br/>In Microsoft Edge, on the **Manage extensions** page, a Manifest Version 2 deprecation warning is displayed, for some end-users (and later, for everyone). |
+| TBD | For enterprise users, in Microsoft Edge, support for Manifest Version 2 will be removed:  <br/>The `ExtensionManifestV2Availability` policy will be removed.  <br/>Extensions that use Manifest Version 2 will no longer work, even on enterprise-managed devices. |
 | TBD | Microsoft Partner Center (and thus the Edge Add-ons store) no longer accepts updates to extensions that continue to use Manifest Version 2.  <br/>You can submit an update that migrates a Manifest Version 2 extension to Manifest Version 3. |
 
 
