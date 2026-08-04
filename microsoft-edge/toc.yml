@@ -183,6 +183,14 @@
               # maint:
               # toc.yml - add new what's new page, move a what's new page to archive
               # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page
+            - name: Microsoft Edge 151
+              href: ./devtools/whats-new/151.md
+              displayName: What's new in DevTools (Microsoft Edge 151)  # page title
+
+            - name: Microsoft Edge 150
+              href: ./devtools/whats-new/150.md
+              displayName: What's new in DevTools (Microsoft Edge 150)  # page title
+
             - name: Microsoft Edge 149
               href: ./devtools/whats-new/149.md
               displayName: What's new in DevTools (Microsoft Edge 149)  # page title
@@ -214,18 +222,18 @@
             - name: Microsoft Edge 142
               href: ./devtools/whats-new/2025/10/devtools-142.md
               displayName: What's new in DevTools (Microsoft Edge 142)  # page title
-
-            - name: Microsoft Edge 141
-              href: ./devtools/whats-new/2025/10/devtools-141.md
-              displayName: What's new in DevTools (Microsoft Edge 141)  # page title
-
-            - name: Microsoft Edge 140
-              href: ./devtools/whats-new/2025/09/devtools-140.md
-              displayName: What's new in DevTools (Microsoft Edge 140)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 141
+                  href: ./devtools/whats-new/2025/10/devtools-141.md
+                  displayName: What's new in DevTools (Microsoft Edge 141)  # page title
+
+                - name: Microsoft Edge 140
+                  href: ./devtools/whats-new/2025/09/devtools-140.md
+                  displayName: What's new in DevTools (Microsoft Edge 140)  # page title
+
                 - name: Microsoft Edge 139
                   href: ./devtools/whats-new/2025/08/devtools-139.md
                   displayName: What's new in DevTools (Microsoft Edge 139)  # page title
@@ -521,29 +529,37 @@
                   href: ./devtools/elements-tool/elements-tool.md
                   displayName: Elements tool
 
-                - name: CSS features reference
-                  href: ./devtools/css/reference.md
-                  displayName: Elements tool
+                - name: DOM
+                  items:
+                    - name: Get started viewing and changing the DOM
+                      href: ./devtools/dom/index.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing CSS
-                  href: ./devtools/css/index.md
-                  displayName: Elements tool
+                - name: CSS
+                  items:
+                    - name: Get started viewing and changing CSS
+                      href: ./devtools/css/index.md
+                      displayName: Elements tool
 
-                - name: Inspect CSS Grid layouts
-                  href: ./devtools/css/grid.md
-                  displayName: Elements tool
+                    - name: Inspect CSS Grid layouts
+                      href: ./devtools/css/grid.md
+                      displayName: Elements tool
 
-                - name: Edit CSS font styles and settings in the Styles pane
-                  href: ./devtools/inspect-styles/edit-fonts.md
-                  displayName: Elements tool
+                    - name: Edit CSS font styles and settings in the Styles pane
+                      href: ./devtools/inspect-styles/edit-fonts.md
+                      displayName: Elements tool
 
-                - name: Style editing for CSS-in-JS frameworks
-                  href: ./devtools/css/css-in-js.md
-                  displayName: Elements tool
+                    - name: Style editing for CSS-in-JS frameworks
+                      href: ./devtools/css/css-in-js.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing the DOM
-                  href: ./devtools/dom/index.md
-                  displayName: Elements tool
+                    - name: Inspect and debug CSS container queries
+                      href: ./devtools/css/container-queries.md
+                      displayName: Elements tool
+
+                    - name: CSS features reference
+                      href: ./devtools/css/reference.md
+                      displayName: Elements tool
 # -----------------------------------------------------------------------------
             - name: Console tool
               items:
@@ -1163,9 +1179,6 @@
 
                 - name: Opening source files from the Elements tool
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/opening-source-files-from-elements-tool.md
-
-                - name: Inline and live issue analysis
-                  href: ./visual-studio-code/microsoft-edge-devtools-extension/inline-live-issue-analysis.md
 
                 - name: Device emulation
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/device-state-emulation.md
@@ -1790,7 +1803,7 @@
                   href: ./webview2/how-to/remote-debugging-hololens.md
                   displayName: remotely debug, Remote Tools for Microsoft Edge
 
-                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                - name: Remote debugging XBOX WebView2 WinUI 2 (UWP) apps
                   href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: remotely debug
 # -----------------------------------------------------------------------------
