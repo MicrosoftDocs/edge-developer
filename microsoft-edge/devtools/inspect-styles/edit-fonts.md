@@ -10,9 +10,9 @@ ms.date: 03/11/2021
 ---
 # Edit CSS font styles and settings in the Styles pane
 
-![This feature is experimental](./edit-fonts-images/experimental-tag.png)
+<!-- todo: does this formerly experimental feature appear in devtools?  delete article? -->
 
-To make it easier when working with typography, a visual **Font Editor** is now available in the **Styles** pane.  Using the **Font Editor**, you can change your font settings, and the changes are rendered immediately in the browser - all without in-depth knowledge of CSS.  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**, which consists of two parts:
+To make it easier when working with typography, a visual **Font Editor** is available in the **Styles** pane.  Using the **Font Editor**, you can change your font settings, and the changes are rendered immediately in the browser - all without in-depth knowledge of CSS.  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**, which consists of two parts:
 
 *  The **Font Family** selector.
 *  The **CSS Properties** editor.
@@ -23,9 +23,7 @@ For situations when specific fonts aren't available on a user device, you should
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
-Currently the [Enable new font editor within the Styles tab](../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
-
-Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
+Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon:
 
 ![The icon in the Styles pane to edit font settings](./edit-fonts-images/font-editor-icon.png)
 
