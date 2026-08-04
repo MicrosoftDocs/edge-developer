@@ -54,7 +54,7 @@ To help you plan the migration of your extension from Manifest Version 2 to Mani
 
 If your extension still uses Manifest Version 2, migrate to Manifest Version 3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest Version 3 version of your extension is ready, submit the update through Microsoft Partner Center.
 
-For enterprise customers, extensions that use Manifest Version 2 will continue to be supported until further notice.  Deprecation of Manifest Version 2 extensions for enterprise customers is expected to begin in early 2027.
+For enterprise customers, extensions that use Manifest Version 2 will continue to be supported until further notice. Deprecation of Manifest Version 2 extensions for enterprise customers is expected to begin in early 2027.
 
 | Date | Changes |
 |---|---|
