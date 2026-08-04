@@ -21,22 +21,12 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 ## General changes
 
 This Prerelease SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+
 * The testing infrastructure has been strengthened.
+
 * The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
 
 These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
-
-
-<!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ====================================================================== -->

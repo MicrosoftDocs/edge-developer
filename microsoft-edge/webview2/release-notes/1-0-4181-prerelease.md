@@ -129,12 +129,6 @@ Releasing or closing the monitor stops all events and clears all filters.
 
 
 <!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
@@ -144,12 +138,19 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
+
 * Restricted access to a singleton host pipe in legacy WebView2 clients.
+
 * Removed implicit `window.gc` addition on WebViews.
+
 * Fixed the "download shortcut" announcement by screen readers.
+
 * Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
+
 * Fixed honoring a custom scale factor for PDF printing.
+
 * Fixed the anchoring logic for the minimal-window **Download** popup.
+
 * Fixed the inability to drag a window via the top border of a custom title bar.
 
 

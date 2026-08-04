@@ -18,18 +18,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 

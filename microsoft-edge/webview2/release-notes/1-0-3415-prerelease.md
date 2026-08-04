@@ -513,8 +513,10 @@ Previous phase: [Customize the Find behavior (Find API)](./1-0-3079-prerelease.m
 <!-- ------------------------------ -->
 #### Runtime-only
 
-* Fixed a blackbox issue on dialogs in visual hosting.
+* Fixed a black-box issue on dialogs in visual hosting.
+
 * Fixed `put_UserAgent` not working for service workers.
+
 * Fixed crash in DevTools on Windows Server and Windows 10.
 
 

@@ -28,18 +28,6 @@ Introduced an option to cancel the initial navigation in WebView2, to improve st
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 

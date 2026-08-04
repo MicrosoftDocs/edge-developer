@@ -22,7 +22,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Local Network Access (LNA) in WebView2](#local-network-access-lna-in-webview2)
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Control whether WebView Script APIs are enabled for service workers](#control-whether-webview-script-apis-are-enabled-for-service-workers)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
 * [Bug fixes](#bug-fixes)
    * [Runtime-only](#runtime-only)
 * [See also](#see-also)
@@ -173,12 +172,6 @@ See also [Enable WebView2-specific Javascript APIs for service workers](#enable-
   * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 
 
 <!-- ====================================================================== -->

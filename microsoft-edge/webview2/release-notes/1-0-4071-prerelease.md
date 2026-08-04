@@ -21,8 +21,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Enable Windows shell handwriting support for WebView2 in WindowToVisual mode](#enable-windows-shell-handwriting-support-for-webview2-in-windowtovisual-mode)
 * [General changes](#general-changes)
    * [Deprecation of DevToolsProtocolExtension NuGet package](#deprecation-of-devtoolsprotocolextension-nuget-package)
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
 * [Bug fixes](#bug-fixes)
    * [Runtime and SDK](#runtime-and-sdk)
    * [Runtime-only](#runtime-only)
@@ -112,18 +110,6 @@ All CDP calls can be made directly via the WebView2 CDP APIs, without using the 
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
@@ -139,11 +125,17 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Mapped `TERMINATION_STATUS_LAUNCH_FAILED_OS_POLICY` to `kLaunchFailed`.
+
 * Updated the failure reason classification to `OOM`, for a process that's been killed to reclaim memory.
+
 * Added a system memory snapshot at out-of-memory (OOM) detection time for analysis.
+
 * Fixed the silent closing of a popup, when the host expects the popup to remain open.
+
 * Added trusted origin check during host object access.
+
 * Reduced redundant map lookups in WebView2 URL request manager, for improved performance.
+
 * Eliminated unnecessary string allocations in WebView2 cookie layer, for improved performance.
 
 
@@ -151,6 +143,7 @@ This Prerelease SDK includes the following bug fixes.
 #### SDK-only
 
 * Fixed container safety issues in WebView2 frame and listener code.
+
 * WinRT event subscription now keeps the projection wrapper alive until the handler is unsubscribed.
 
 

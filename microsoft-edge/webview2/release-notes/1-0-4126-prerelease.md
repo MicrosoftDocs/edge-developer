@@ -23,7 +23,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Crash Report in ProcessFailed event](#crash-report-in-processfailed-event)
    * [Configure per-origin reputation checking (SmartScreen) settings](#configure-per-origin-reputation-checking-smartscreen-settings)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
 * [Bug fixes](#bug-fixes)
    * [Runtime-only](#runtime-only)
 * [See also](#see-also)
@@ -182,12 +181,6 @@ Older supporting APIs:
 
 
 <!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
@@ -197,13 +190,21 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Fixed the reentrancy for frame deletion.
+
 * Fixed object wrapper access for a User Authorization File (UAF).
+
 * Stamped the browser-authoritative origin on the host pipe, to prevent a `WebMessageReceivedEventArgs.Source` spoof.
+
 * Restricted the access to a singleton host pipe, in a deprecated WebView2.
+
 * Removed the `origin` parameter from methods that access a native object.
+
 * Hardened WebView2 virtual-host `kDeny` enforcement against renderer spoofing and New Technology File System (NTFS)-junction escapes.
+
 * Fixed the window-to-visual UI Automation (UIA) tree.
+
 * Fixed a regression in the `AddScriptToExecuteOnDocumentCreated` API.
+
 * Implemented `OnRendererResponsive` for hang outcome tracking.
 
 

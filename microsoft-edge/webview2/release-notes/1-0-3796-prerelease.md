@@ -19,7 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Enhanced Security Mode Level](#enhanced-security-mode-level)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
 * [Bug fixes](#bug-fixes)
    * [Runtime-only](#runtime-only)
    * [SDK-only](#sdk-only)
@@ -75,12 +74,6 @@ To control the ESM level for all WebView2 instances that share the same profile,
 
 
 <!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
@@ -90,6 +83,7 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Fixed `chrome.webview` unavailability.
+
 * Disabled background update of network time.
 
 

@@ -17,19 +17,12 @@ Release Date: Apr. 7, 2025, Runtime 136
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 136.0.3230.0 or later.
 
 **Detailed contents:**
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Track navigation history for nested iframes (FrameCreatedEvent API)](#track-navigation-history-for-nested-iframes-framecreatedevent-api)
 * [Bug fixes](#bug-fixes)
    * [Runtime-only](#runtime-only)
    * [SDK-only](#sdk-only)
 * [See also](#see-also)
-
-
-<!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
 
 
 <!-- ====================================================================== -->
@@ -80,10 +73,15 @@ Previous phase: [Track navigation history for nested iframes (FrameCreatedEvent 
 #### Runtime-only
 
 * Fixed an issue in WPF where the \<datalist\> dropdown closed when the mouse moved outside the WebView2 control bounds.
+
 * Fixed navigation of `edge://crashes` within a WebView2 control.
+
 * Fixed the HTML Select element (\<select\>) to make it selectable, in WPF apps.
+
 * Fixed potential crash and UI issues when invoking the Windows Credentials UI from a WebView2 instance.<!-- https://www.bing.com/search?q=Windows+Credential+UI -->
+
 * Fixed bug where users unable to type in input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
+
 * Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
 
 

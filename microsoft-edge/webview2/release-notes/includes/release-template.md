@@ -16,10 +16,11 @@ Release Date: Mmm. dd, yyyy
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version ###.0.####.## or later.
 
+<!-- if a section is empty, omit the section heading -->
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -28,7 +29,6 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 <!-- ====================================================================== -->
 ## General changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -38,7 +38,6 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 <!-- ====================================================================== -->
 ## Promotions to Phase 3 (Stable in Release)
 
-No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
 The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
 
 
@@ -61,12 +60,13 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-There are no bug fixes in this Release SDK.
 This Release SDK includes the following bug fixes.
 
 
 <!-- ------------------------------ -->
 #### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
 
 * Fixed behavior.  ([Issue #]())
 
@@ -76,9 +76,13 @@ This Release SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
+* Fixed behavior.  ([Issue #]())
+
 
 <!-- ------------------------------ -->
 #### SDK-only
+
+* Fixed behavior.  ([Issue #]())
 
 * Fixed behavior.  ([Issue #]())
 

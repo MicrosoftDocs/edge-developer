@@ -437,10 +437,15 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Fixed double character in UWP.
+
 * Fixed the `Caption controls` background color setting API. After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
+
 * Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
+
 * Improved error handling when Post Message (such as `CoreWebView2ServiceWorker.PostWebMessageAsJson` or `chrome.webview.postMessage`) is called on a service worker.
+
 * Reduced string allocations in `GetDefaultHostAppExeName`.
+
 * Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
 

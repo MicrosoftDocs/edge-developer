@@ -18,18 +18,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 
@@ -37,10 +25,15 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 #### Runtime-only
 
 * Fixed an issue where focusing on a WebView2 control in WinAppSDK with the Windows "Scroll inactive windows" setting disabled caused scrolling to fail.
+
 * Blocked `edge://wallet` in WebView2.  ([Issue #4710](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4710))
+
 * Cleared the environment variable for default background color in .NET WebView2 controls after the controller has finished creation.
+
 * Enabled accessibility support for Webview2 in visual hosting mode.
+
 * Fixed a bug with removing a "web resource requested" filter for multiple sources when one of them is Document.
+
 * Fixed a regression where `DataList` was not visible in WinUI or in other visually hosted WebView2 instances.
 
 
@@ -48,8 +41,11 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 #### SDK-only
 
 * Fixed an SDK dependency for .NET projects.  ([Issue #4743](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4743))
+
 * Fixed a compatibility issue when calling `GetAvailableBrowserVersionString()` with an older `WebView2Loader.dll`.  ([Issue #4395](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4395))
+
 * Fixed issues when compiling wv2winrt-generated code with the `cpp20` and `/permissive-` options.
+
 * Added the .NET 8 `TargetFramework` for C# WinRT, enabled AOT (ahead-of-time) compatibility, and disabled runtime marshalling.
 
 

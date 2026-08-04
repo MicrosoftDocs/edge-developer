@@ -18,18 +18,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 
@@ -37,7 +25,9 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 #### Runtime-only
 
 * Allowed the **Download** dialog to receive initial focus on launch.
+
 * Fixed a crash while cancelling navigation to certain sites in `FrameNavigationStarting`.  ([Issue #4843](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4843))
+
 * Postponed customizing the context menu when the touch selection menu is being displayed.  ([Issue #4737](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4737))
 
 
@@ -45,6 +35,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 #### SDK-only
 
 * Added Arm64ec support.
+
 * Fixed an issue where WebView2 running in "Window to Visual" mode couldn't receive accelerator input.
 
 

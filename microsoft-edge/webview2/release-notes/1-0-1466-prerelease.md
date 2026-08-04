@@ -125,7 +125,7 @@ Added support for running JavaScript code from the `JavaScript` parameter in the
 
 
 <!-- ====================================================================== -->
-## Bug fixes for 1.0.1466-prerelease
+## Bug fixes
 
 * Fixed a bug in which the custom header title in print settings could be wrong. ([Issue #2093](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2093))
 

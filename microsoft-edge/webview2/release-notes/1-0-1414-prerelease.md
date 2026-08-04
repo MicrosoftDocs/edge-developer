@@ -134,7 +134,7 @@ Added support for Custom Crash Reporting API.
 
 
 <!-- ====================================================================== -->
-## Bug fixes for 1.0.1414-prerelease
+## Bug fixes
 
 * Removed three-dot menu with a broken link from the downloads page.  (Runtime-only)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
 

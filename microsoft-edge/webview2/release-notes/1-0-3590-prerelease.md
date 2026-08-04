@@ -19,7 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
     * [Sensitivity label support](#sensitivity-label-support)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
 * [Bug fixes](#bug-fixes)
     * [Runtime-only](#runtime-only)
     * [SDK-only](#sdk-only)
@@ -99,12 +98,6 @@ Pending.
 
 
 <!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 This Prerelease SDK includes the following bug fixes.
@@ -114,9 +107,13 @@ This Prerelease SDK includes the following bug fixes.
 #### Runtime-only
 
 * Fixed a dangling pointer in file system access permission context.
+
 * Fixed the UI hanging during drag-and-drop in WinUI3.
+
 * Fixed local network access triggering a permission alert pop-up window.
+
 * Resolved an issue where an extra region was appearing in the accessibility tree.
+
 * Fixed an issue where downloads in the default browser frame didn't work.
 
 

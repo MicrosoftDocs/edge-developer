@@ -284,10 +284,15 @@ n/a
 #### Runtime-only
 
 * Fixed a regression where display changes can cause WebView2 to render smaller than app window.
+
 * Enabled the `IsolateSandboxedIframes` upstream feature for WebView2.
+
 * Prevented deleting a service worker when the version changes.
+
 * The `CleanUpSome` API in `Hostobject` now only does garbage collection for the full heap.  `CleanUpSome` has been removed from the V8 engine.
+
 * Fixed a regression of `AreBrowserAcceleratorKeysEnabled`.  ([Issue #5033](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5033))
+
 * Fixed a bug where `IsDefaultDownloadDialogOpenChanged` wasn't triggered when a dialog is closed by using the keyboard.  ([Issue #4807](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4807))
 
 

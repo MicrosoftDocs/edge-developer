@@ -16,10 +16,11 @@ Release Date: Mmm. dd, yyyy
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version ###.0.####.0 or later.
 
+<!-- if a section is empty, omit the section heading -->
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -28,7 +29,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ====================================================================== -->
 ## General changes
-<!-- omit section if empty; usually empty -->
 
 
 <!-- ------------------------------ -->
@@ -38,7 +38,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)
 
-No Experimental APIs have been added in this Prerelease SDK.
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
 
@@ -59,7 +58,6 @@ description
 <!-- ====================================================================== -->
 ## Promotions to Phase 2 (Stable in Prerelease)
 
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
 The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
@@ -83,12 +81,13 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-There are no bug fixes in this Prerelease SDK.
 This Prerelease SDK includes the following bug fixes.
 
 
 <!-- ------------------------------ -->
 #### Runtime and SDK
+
+* Fixed behavior.  ([Issue #]())
 
 * Fixed behavior.  ([Issue #]())
 
@@ -98,9 +97,13 @@ This Prerelease SDK includes the following bug fixes.
 
 * Fixed behavior.  ([Issue #]())
 
+* Fixed behavior.  ([Issue #]())
+
 
 <!-- ------------------------------ -->
 #### SDK-only
+
+* Fixed behavior.  ([Issue #]())
 
 * Fixed behavior.  ([Issue #]())
 

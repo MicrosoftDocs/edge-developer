@@ -18,18 +18,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
-
-No Experimental APIs have been added in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
-
-
-<!-- ====================================================================== -->
 ## Bug fixes
 
 
@@ -37,9 +25,13 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 #### Runtime-only
 
 * Fixed `put_UserAgent` not working for service workers.
+
 * Fixed a crash in Devtools on Windows Server and Windows 10.
+
 * Removed browser process tracking after calling `remove_BrowserProcessExited`.
+
 * Fixed a memory leak issue in `hostObject` async function calls.
+
 * Fixed touch not working in visual hosting after a long tap.
 
 

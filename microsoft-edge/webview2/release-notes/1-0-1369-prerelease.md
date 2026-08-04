@@ -59,7 +59,7 @@ The previous phase isn't in the release notes.
 
 
 <!-- ====================================================================== -->
-## Bug fixes for 1.0.1369-prerelease
+## Bug fixes
 
 * Fixed a bug where WPF apps would crash when windows with WebView2 were closed.  ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
 

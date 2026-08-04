@@ -211,7 +211,9 @@ Previous phase: [Configure the security warning when saving a file (`SaveFileSec
 #### SDK-only
 
 * Fixed Arm64 incompatibility with WindowsAppSDK 1.6.
+
 * Removed extra `WebView2Loader.dll` in WinAppSDK case.
+
 * Using `CoreWebView2.AddWebResourceRequestedFilter` without a `CoreWebView2WebResourceRequestSourceKinds` parameter is now deprecated.  See the .NET [CoreWebView2.AddWebResourceRequestedFilter Method](https://go.microsoft.com/fwlink/?linkid=2286319).<!-- points to WebView2Announcements -->
 
 
