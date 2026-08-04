@@ -60,7 +60,7 @@ In the **Memory** tool, there are several improvements for heap snapshots:
 
 * HTML elements are grouped by tag name, such as `<body>`, `<div>`, or `<img>`.
 
-* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects (unless you select the [Show option to expose internals in heap snapshots](../../../experimental-features/index.md#show-option-to-expose-internals-in-heap-snapshots) experiment checkbox and then, before taking a snapshot, select the **Expose internals (includes additional implementation-specific details)** checkbox).
+* Shallow sizes now match JavaScript semantics better, by showing fewer internal objects.
 
 * The **Include numerical values in capture** checkbox (shown before you take a heap snapshot) has been removed, and heap snapshots now always show numeric values.
 

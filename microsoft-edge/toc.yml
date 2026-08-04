@@ -541,10 +541,6 @@
                       href: ./devtools/css/grid.md
                       displayName: Elements tool
 
-                    - name: Edit CSS font styles and settings in the Styles pane
-                      href: ./devtools/inspect-styles/edit-fonts.md
-                      displayName: Elements tool
-
                     - name: Style editing for CSS-in-JS frameworks
                       href: ./devtools/css/css-in-js.md
                       displayName: Elements tool
