@@ -132,7 +132,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 The Custom Scheme Registration API.
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

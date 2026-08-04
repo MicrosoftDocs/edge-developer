@@ -44,7 +44,7 @@ Use the [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewe
 * `clearBrowsingDataInTimeRange`
 * `clearBrowsingDataAll`
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 
 <!-- ====================================================================== -->

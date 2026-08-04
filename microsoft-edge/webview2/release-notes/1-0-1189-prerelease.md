@@ -66,7 +66,7 @@ The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_1
 * `get_StatusBarText`
 * `remove_StatusBarTextChanged`
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 
 <!-- ------------------------------ -->
@@ -74,7 +74,7 @@ Previous phase: [~](./~.md#~) in _~_.
 
 The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 
 <!-- ------------------------------ -->
@@ -82,7 +82,7 @@ Previous phase: [~](./~.md#~) in _~_.
 
 The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 
 <!-- ------------------------------ -->
@@ -90,7 +90,7 @@ Previous phase: [~](./~.md#~) in _~_.
 
 The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
 
-Previous phase: [~](./~.md#~) in _~_.
+<!-- Previous phase: -->
 
 
 <!-- ====================================================================== -->
