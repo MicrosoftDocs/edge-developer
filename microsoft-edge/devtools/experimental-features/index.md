@@ -8,9 +8,10 @@ ms.service: microsoft-edge
 ms.date: 08/03/2026
 ---
 # Experimental features in Microsoft Edge DevTools
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/ -->
 
 <!-- 
-Policies to keep this page comprehensive and maintainable:
+Maintenance:
 
 First, inspect latest Canary and update sections: 
    * This checkbox is present in Microsoft Edge Canary 123.
@@ -118,10 +119,10 @@ The experiments checkboxes that appear in the latest version of the Canary previ
 ## AI Explain Console Error
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
-todo: need desc
+Controls whether the **Explain console** feature is on or off.  When the **Explain console** feature is on, clicking the Copilot icon opens the sidebar chat and explains the error.
 
 See also:
-* [todo]
+* [Explain Console errors and warnings using Copilot in Edge](../console/copilot-explain-console.md)
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 153.
@@ -132,10 +133,14 @@ Status:
 ## Durable Messages
 <!-- checkbox has no "(?)" link pointing to this anchor wording -->
 
-todo: need desc
+The **Durable Messages** experiment is an enhancement to the **Network** tool's **Preserve log** feature.
+
+When the **Durable Messages** checkbox is selected, DevTools tells the browser to buffer network response bodies outside of the renderer process, so that requests and response bodies survive cross-process navigations.  This feature only takes effect when the **Preserve log** setting is enabled in the **Network** tool.
+
+When the **Durable Messages** checkbox is cleared, the default behavior results: response bodies live in the renderer process, and are lost after cross-process navigation.
 
 See also:
-* [todo]
+* [Save requests across page loads](../network/reference.md#save-requests-across-page-loads) in _Network features reference_.
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 153.
@@ -144,9 +149,9 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable CSS Copilot
-<!-- checkbox has a "(?)" link
-https://go.microsoft.com/fwlink/?linkid=2274445
-pointing to this anchor wording -->
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-css-copilot -->
+<!-- https://go.microsoft.com/fwlink/?linkid=2274445 -->
+<!-- checkbox has a "(?)" link pointing to this section heading -->
 
 Enables using Copilot in the Microsoft Edge Sidebar to explain HTML elements and CSS styles to help you better understand a particular element or style rule that's displayed in the **Elements** tool.  To ask Copilot about an element or style rule, click the **Copilot** button next to it, and then ask follow-up questions.
 
@@ -164,13 +169,18 @@ Status:
 
 <!-- ====================================================================== -->
 ## Enable symbol server extension support
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-symbol-server-extension-support -->
 <!-- checkbox has a "(?)" link
-end up at: https://www.bing.com/?ref=aka&shorturl=edge-devtools-symbol-server-extension - todo: bug -->
+end up at: https://www.bing.com/?ref=aka&shorturl=edge-devtools-symbol-server-extension  instead of present section - todo: bug -->
 
-todo: desc
+If this checkbox is selected, the [Edge DevTools Symbol Server Extension Test](https://microsoftedge.microsoft.com/addons/detail/edgedevtoolssymbolservere/cjfmbiajhehnmfdjnlmdmceolcdcblcp) extension is supported, giving the new experience for **Symbol Server** in an extension.  This extension is still in beta/test.  
+
+If this checkbox is cleared, use DevTools > **Settings** > **Symbol Server** page. 
 
 See also:
-* [todo]
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
+* [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)
+<!-- todo: create new article after testing is complete with the new experience in the extension, and a stable production version of the extension is available -->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 153.
@@ -195,10 +205,12 @@ Status:
 <!-- ====================================================================== -->
 ## JPEG XL support
 
-todo: desc
+When this checkbox is selected, the **Rendering** tool has a **Disable JPEG XL image format** checkbox.
 
+<!--
 See also:
-* [todo]
+* []
+-->
 
 Status:
 * This checkbox is present in Microsoft Edge Canary 153.
@@ -207,9 +219,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Log DevTools uncaught exceptions to Console
-<!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#log-devtools-uncaught-exceptions-to-console
-pointing to this anchor wording -->
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#log-devtools-uncaught-exceptions-to-console -->
+<!-- checkbox has a "(?)" link pointing to this anchor heading -->
 
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- todo old: need text -->
@@ -224,9 +235,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
-<!-- checkbox has a "(?)" link
-https://docs.microsoft.com/microsoft-edge/devtools/experimental-features/#open-source-files-in-visual-studio-code
-pointing to this anchor wording -->
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#open-source-files-in-visual-studio-code -->
+<!-- checkbox has a "(?)" link pointing to this anchor heading -->
 
 The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
@@ -246,11 +256,8 @@ Status:
 
 <!-- ====================================================================== -->
 ## Protocol Monitor
-<!-- checkbox has a "(?)" link, the link should point to this anchor wording, but is 404, end up at: 
-https://permanently-removed.invalid/blog/new-in-devtools-92/#protocol-monitor
-it should instead link to:
-https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#protocol-monitor
--->
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#protocol-monitor -->
+<!-- checkbox has a "(?)" link, the link should point to the present section heading -->
 
 Makes the **Protocol monitor** tool available in DevTools:
 
