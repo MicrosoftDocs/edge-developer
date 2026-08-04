@@ -164,6 +164,8 @@ if ('windowControlsOverlay' in navigator) {
 
    ![The top area of the map can be used to move the window](./window-controls-overlay-images/wco-draggable-titlebar.png)
 
+   todo: delete chevron from png?
+
    The top area of the app is a drag handle, to let users move the window.
 
 The source code for this demo app is in the [1DIV](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV) repo.
