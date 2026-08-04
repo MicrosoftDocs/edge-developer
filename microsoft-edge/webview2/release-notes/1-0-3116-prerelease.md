@@ -51,7 +51,7 @@ No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
-* [CoreWebView2Find.FindNext Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
+* [CoreWebView2Find.FindNext Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2find?view=webview2-winrt-1.0.3116-prerelease&preserve-view=true#findnext)
 
 ##### [Win32/C++](#tab/win32cpp)
 

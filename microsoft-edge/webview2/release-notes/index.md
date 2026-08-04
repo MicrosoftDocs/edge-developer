@@ -171,7 +171,6 @@ Async methods:
 ## See also
 
 * [Release notes for the WebView2 SDK](./index.md)<!-- toc bucket 1.1 -->
-* [Archived release notes for the WebView2 SDK](./archive.md)<!-- toc bucket 1.2 -->
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)<!-- toc bucket 2.1 -->
 * [Contact the WebView2 team](../contact.md)<!-- toc bucket: bottom -->
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)
