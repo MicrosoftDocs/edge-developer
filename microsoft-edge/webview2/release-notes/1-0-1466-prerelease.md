@@ -21,7 +21,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Creating shared memory buffer with specified size](#creating-shared-memory-buffer-with-specified-size)
    * [Access shared buffer from script of main frame or iframe](#access-shared-buffer-from-script-of-main-frame-or-iframe)
    * [Run JavaScript via JavaScript parameter in current document](#run-javascript-via-javascript-parameter-in-current-document)
-* [Bug fixes for 1.0.1466-prerelease](#bug-fixes-for-101466-prerelease)
+* [Bug fixes](#bug-fixes)
 * [See also](#see-also)
 
 

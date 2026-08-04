@@ -21,7 +21,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Print API](#print-api)
    * [SmartScreen API](#smartscreen-api)
    * [Custom Crash Reporting API](#custom-crash-reporting-api)
-* [Bug fixes for 1.0.1414-prerelease](#bug-fixes-for-101414-prerelease)
+* [Bug fixes](#bug-fixes)
 * [See also](#see-also)
 
 

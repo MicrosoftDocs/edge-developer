@@ -17,7 +17,6 @@ Release Date: Apr. 10, 2023
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 114.0.1777.0 or later.
 
 **Detailed contents:**
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [File API allows accessing a DOM File object passed via WebMessage](#file-api-allows-accessing-a-dom-file-object-passed-via-webmessage)
    * [Profile Cookie Manager API CookieManager property](#profile-cookie-manager-api-cookiemanager-property)
