@@ -1520,6 +1520,11 @@
               # in toc.yml, add new relnotes page, move a relnotes page to archive
               # in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
               # keep release nnn & prerelease nnn together
+            - name: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+              href: ./webview2/release-notes/1-0-4181-prerelease.md
+
+            - name: Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)
+              href: ./webview2/release-notes/1-0-4129-50.md
 
             - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
               href: ./webview2/release-notes/1-0-4126-prerelease.md
@@ -1590,14 +1595,14 @@
             - name: Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
               href: ./webview2/release-notes/1-0-3477-prerelease.md
 
-            - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)  # group as 139, imagine as below 3405.78
-              href: ./webview2/release-notes/1-0-3415-prerelease.md
-
-            - name: Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
-              href: ./webview2/release-notes/1-0-3405-78.md
-
             - name: Archive  # > 1 year old, but keep Runtime nnn together
               items:
+                - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)  # group as 139, imagine as below 3405.78
+                  href: ./webview2/release-notes/1-0-3415-prerelease.md
+
+                - name: Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
+                  href: ./webview2/release-notes/1-0-3405-78.md
+
                 - name: Release SDK 1.0.3351.48, for Runtime 138 (Jul. 1, 2025)
                   href: ./webview2/release-notes/1-0-3351-48.md
 

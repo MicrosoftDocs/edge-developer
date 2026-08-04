@@ -19,6 +19,9 @@ in /webview2/release-notes/index.md, add new relnotes page, remove earliest reln
 keep release nnn & prerelease nnn together
 -->
 Release notes for recent SDKs:
+
+* [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
+* [Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
 * [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
 * [Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
 * [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
@@ -42,8 +45,6 @@ Release notes for recent SDKs:
 * [Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)](./1-0-3530-prerelease.md)
 * [Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)](./1-0-3485-44.md)
 * [Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)](./1-0-3477-prerelease.md)
-* [Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)](./1-0-3415-prerelease.md)<!-- group as 139, imagine as below 3405.78 -->
-* [Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)](./1-0-3405-78.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
