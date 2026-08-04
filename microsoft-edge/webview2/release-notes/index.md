@@ -13,7 +13,7 @@ ms.date: 08/03/2026
 The WebView2 team periodically updates the WebView2 Release SDK and the WebView2 Prerelease SDK.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 <!-- maint:
-<= 1 year old
+list past 10 releases, per pairs below
 in toc.yml, add new relnotes page, move a relnotes page to archive
 in /webview2/release-notes/index.md, add new relnotes page, remove earliest relnotes page
 keep release nnn & prerelease nnn together
@@ -22,29 +22,23 @@ Release notes for recent SDKs:
 
 * [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
 * [Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
-* [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
+   * [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
 * [Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
-* [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
+   * [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
 * [Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)](./1-0-4022-49.md)
-* [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
+   * [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
 * [Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
-* [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
+   * [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
 * [Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
-* [Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
+   * [Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
 * [Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)
-* [Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
+   * [Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
 * [Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)](./1-0-3800-47.md)
-* [Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)](./1-0-3796-prerelease.md)
+   * [Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)](./1-0-3796-prerelease.md)
 * [Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)](./1-0-3719-77.md)
-* [Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)](./1-0-3712-prerelease.md)
+   * [Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)](./1-0-3712-prerelease.md)
 * [Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)](./1-0-3650-58.md)
-* [Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)](./1-0-3650-prerelease.md)
-* [Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)](./1-0-3595-46.md)
-* [Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)](./1-0-3590-prerelease.md)
-* [Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)](./1-0-3537-50.md)
-* [Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)](./1-0-3530-prerelease.md)
-* [Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)](./1-0-3485-44.md)
-* [Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)](./1-0-3477-prerelease.md)
+   * [Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)](./1-0-3650-prerelease.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 

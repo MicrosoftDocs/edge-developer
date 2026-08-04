@@ -1577,26 +1577,26 @@
             - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
               href: ./webview2/release-notes/1-0-3650-prerelease.md
 
-            - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
-              href: ./webview2/release-notes/1-0-3595-46.md
-
-            - name: Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
-              href: ./webview2/release-notes/1-0-3590-prerelease.md
-
-            - name: Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)
-              href: ./webview2/release-notes/1-0-3537-50.md
-
-            - name: Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)
-              href: ./webview2/release-notes/1-0-3530-prerelease.md
-
-            - name: Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
-              href: ./webview2/release-notes/1-0-3485-44.md
-
-            - name: Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
-              href: ./webview2/release-notes/1-0-3477-prerelease.md
-
-            - name: Archive  # > 1 year old, but keep Runtime nnn together
+            - name: Archive  # keep Runtime nnn pair together
               items:
+                - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
+                  href: ./webview2/release-notes/1-0-3595-46.md
+
+                - name: Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
+                  href: ./webview2/release-notes/1-0-3590-prerelease.md
+
+                - name: Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)
+                  href: ./webview2/release-notes/1-0-3537-50.md
+
+                - name: Prerelease SDK 1.0.3530-prerelease, for Runtime 141 (Sep. 8, 2025)
+                  href: ./webview2/release-notes/1-0-3530-prerelease.md
+
+                - name: Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
+                  href: ./webview2/release-notes/1-0-3485-44.md
+
+                - name: Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
+                  href: ./webview2/release-notes/1-0-3477-prerelease.md
+
                 - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)  # group as 139, imagine as below 3405.78
                   href: ./webview2/release-notes/1-0-3415-prerelease.md
 
