@@ -65,9 +65,6 @@ The **Font Editor** helps you to:
 
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
-See also:
-* [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md)
-
 
 <!-- ====================================================================== -->
 ## CSS Flexbox debugging tools

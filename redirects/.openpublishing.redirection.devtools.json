@@ -536,6 +536,11 @@
       "redirect_url": "/microsoft-edge/devtools/inspect-styles/edit-fonts",
       "redirect_document_id": false
     },
+    // {
+    //   "source_path": "../microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts.md",
+    //   "redirect_url": "/microsoft-edge/devtools/inspect-styles/edit-fonts",
+    //   "redirect_document_id": false
+    // },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/css/css-in-js.md",
       "redirect_url": "/microsoft-edge/devtools/css/css-in-js",
