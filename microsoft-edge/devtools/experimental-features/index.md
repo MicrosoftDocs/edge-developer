@@ -170,8 +170,7 @@ Status:
 <!-- ====================================================================== -->
 ## Enable symbol server extension support
 <!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-symbol-server-extension-support -->
-<!-- checkbox has a "(?)" link
-end up at: https://www.bing.com/?ref=aka&shorturl=edge-devtools-symbol-server-extension  instead of present section - todo: bug -->
+<!-- checkbox has a "(?)" link, that should point to the present section heading -->
 
 If this checkbox is selected, the [Edge DevTools Symbol Server Extension Test](https://microsoftedge.microsoft.com/addons/detail/edgedevtoolssymbolservere/cjfmbiajhehnmfdjnlmdmceolcdcblcp) extension is supported, giving the new experience for **Symbol Server** in an extension.  This extension is still in beta/test.  
 
@@ -223,7 +222,7 @@ Status:
 <!-- checkbox has a "(?)" link pointing to this anchor heading -->
 
 Controls whether to log DevTools uncaught exceptions in the **Console** tool.
-<!-- todo old: need text -->
+<!-- todo old: details -->
 
 See also:
 * [Console overview](../console/index.md)
