@@ -12,6 +12,8 @@ ms.date: 08/07/2026
 
 To plan the migration of your extension from Manifest V2 to Manifest V3, the following timeline shows the planned support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and in Microsoft Edge.
 
+If your extension still uses Manifest V2, migrate to Manifest V3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
+
 In Oct. 2020, Microsoft announced the decision to embrace Manifest V3, to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.  See [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/).
 
 Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
@@ -30,8 +32,6 @@ Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/
 For enterprise customers:
 * Extensions that use Manifest V2 will continue to be supported until further notice.
 * Deprecation of Manifest V2 extensions is expected to begin in early 2027.
-
-If your extension still uses Manifest V2, migrate to Manifest V3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
 
 
 <!-- ====================================================================== -->
