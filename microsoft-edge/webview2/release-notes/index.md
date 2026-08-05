@@ -10,13 +10,6 @@ ms.date: 08/04/2026
 ---
 # Release notes for the WebView2 SDK
 
-todo: 
-* separate all runtime relnotes & sdk relnotes into dedicated articles
-   * combining both in a single relnote page doesn't work; the bugfix section says "this release **sdk** includes the following bug fixes", but then lists "**runtime**-only" fixes, which have nothing to do with the sdk 
-   * relnotes about a specific sdk specify the minimum runtime version that the sdk requires
-
-The WebView2 team periodically updates the WebView2 Release SDK and the WebView2 Prerelease SDK.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
-
 <!-- maint:
 list past 10 releases, per pairs below
 in toc.yml, add new relnotes page x2, move relnotes page x2 to archive
@@ -39,10 +32,11 @@ Release notes for recent SDKs:
 * [Release SDK 1.0.4022.49, for Runtime 149 - SDK (Jun. 11, 2026)](./1-0-4022-49-sdk.md)
 * [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - Runtime (May 11, 2026)](./1-0-4015-prerelease-runtime.md)
 * [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)](./1-0-4015-prerelease-sdk.md)
+* [Release SDK 1.0.3967.48, for Runtime 148 - Runtime (May 11, 2026)](./1-0-3967-48-runtime.md)
+* [Release SDK 1.0.3967.48, for Runtime 148 - SDK (May 11, 2026)](./1-0-3967-48-sdk.md)
 
 todo: not split yet:
-* [Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
-   * [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
+* [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
 * [Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
    * [Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
 * [Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)

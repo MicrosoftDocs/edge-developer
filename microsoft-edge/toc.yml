@@ -1555,9 +1555,12 @@
             - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)
               href: ./webview2/release-notes/1-0-4015-prerelease-sdk.md
 
+            - name: Release SDK 1.0.3967.48, for Runtime 148 - Runtime (May 11, 2026)
+              href: ./webview2/release-notes/1-0-3967-48-runtime.md
+            - name: Release SDK 1.0.3967.48, for Runtime 148 - SDK (May 11, 2026)
+              href: ./webview2/release-notes/1-0-3967-48-sdk.md
+
 # resume here, doubling:
-            - name: Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
-              href: ./webview2/release-notes/1-0-3967-48.md
             - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
               href: ./webview2/release-notes/1-0-3965-prerelease.md
 
