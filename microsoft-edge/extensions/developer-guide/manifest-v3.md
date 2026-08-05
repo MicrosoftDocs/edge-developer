@@ -25,16 +25,16 @@ Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/
 <!-- ---------------------------------------------------------------------- -->
 ## Manifest timeline for Partner Center and Microsoft Edge
 
+For enterprise customers:
+* Extensions that use Manifest V2 will continue to be supported until further notice.
+* Deprecation of Manifest V2 extensions is expected to begin in early 2027.
+
 | Date | Changes |
 |---|---|
 | Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest V2 extensions that have `Public` or `Hidden` visibility.  <br/>* To publish a new extension, use Manifest V3. |
 | Aug. 2026 | If your extension uses Manifest V2:  <br/>* At Partner Center, a Manifest V2 deprecation warning is displayed.  <br/>* At the Edge Add-ons store, on the extension's product detail page, a Manifest V2 deprecation warning is displayed, for some end-users (and later, for everyone).  <br/>* In Microsoft Edge, on the **Manage extensions** page, a Manifest V2 deprecation warning is displayed, for some end-users (and later, for everyone). |
 | TBD | For enterprise users, in Microsoft Edge, support for Manifest V2 will be removed:  <br/>* The [ExtensionManifestV2Availability](/deployedge/microsoft-edge-policies/extensionmanifestv2availability) policy will be removed.  <br/>* Extensions that use Manifest V2 will no longer work, even on enterprise-managed devices. |
 | TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest V2.  <br/>* You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
-
-For enterprise customers:
-* Extensions that use Manifest V2 will continue to be supported until further notice.
-* Deprecation of Manifest V2 extensions is expected to begin in early 2027.
 
 
 <!-- ====================================================================== -->
