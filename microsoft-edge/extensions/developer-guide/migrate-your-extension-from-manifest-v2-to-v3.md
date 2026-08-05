@@ -15,7 +15,7 @@ ms.date: 05/26/2021
 This article lists important aspects of Manifest V3, which is the current version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
 
 See also:
-* [Overview of changes in Manifest V3](./manifest-v3.md) in _Timeline for migrating to Manifest V3_.
+* [Overview of changes in Manifest V3](./manifest-v3.md#overview-of-changes-in-manifest-v3) in _Timeline for migrating to Manifest V3_.
 
 
 <!-- ====================================================================== -->
