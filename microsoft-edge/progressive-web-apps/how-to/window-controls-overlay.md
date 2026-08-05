@@ -152,19 +152,14 @@ if ('windowControlsOverlay' in navigator) {
 
    | Icon | Tooltip |
    | --- | --- |
-   | ![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png) | **Hide title bar** |
    | ![The "Settings and more" icon](./window-controls-overlay-images/settings-and-more-icon.png) | **Settings and more** |
    | ![The "Minimize" icon](./window-controls-overlay-images/minimize-icon.png) | **Minimize** |
    | ![The "Restore" icon](./window-controls-overlay-images/restore-icon.png) | **Restore** |
    | ![The "Close" icon](./window-controls-overlay-images/close-icon.png) | **Close** |
 
-1. In the title bar, click the **Hide title bar** (![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png)) button.
-
    The app now displays content all the way to the top of the window frame, where the title bar used to be:
 
    ![The top area of the map can be used to move the window](./window-controls-overlay-images/wco-draggable-titlebar.png)
-
-   todo: delete chevron from png?
 
    The top area of the app is a drag handle, to let users move the window.
 
