@@ -364,7 +364,7 @@ If the extension executes remote code:
 The extension should avoid the use of remote code unless absolutely necessary.  Remote code requires additional review, and might increase certification time.
 
 See also:
-* [Overview of changes in Manifest V3](../developer-guide/manifest-v3.md#overview-of-changes-in-manifest-v3), in _Timeline for migrating to Manifest V3_.
+* [Overview of changes in Manifest V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md#overview-of-changes-in-manifest-v3) in _Migrate an extension from Manifest V2 to V3_.
 * [Remove remotely hosted code](https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code) in _Improve extension security_, in Chrome docs.
 
 
@@ -802,7 +802,7 @@ If you experience issues when registering as an extension developer or when subm
 * [Extension concepts and architecture](../getting-started/index.md)<!-- bucket 2 -->
 * [Port a Chrome extension to Microsoft Edge](../developer-guide/port-chrome-extension.md)<!-- bucket 4 -->
 * [Manifest file format for extensions](../getting-started/manifest-format.md)<!-- bucket 5 top -->
-   * [Overview of changes in Manifest V3](../developer-guide/manifest-v3.md#overview-of-changes-in-manifest-v3), in _Timeline for migrating to Manifest V3_.<!-- bucket 5 -->
+* [Overview of changes in Manifest V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md#overview-of-changes-in-manifest-v3) in _Migrate an extension from Manifest V2 to V3_.<!-- bucket 5 -->
 * [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- bucket 6 -->
 * [Best practices for extensions](../developer-guide/best-practices.md)<!-- bucket 10 -->
 * [Contact the Microsoft Edge extensions team](../contact.md)<!-- bottom -->
