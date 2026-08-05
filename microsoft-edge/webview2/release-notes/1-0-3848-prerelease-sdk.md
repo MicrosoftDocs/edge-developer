@@ -146,7 +146,7 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 Use the `AreWebViewScriptApisEnabledForServiceWorkers` property on `CoreWebView2Profile` to control whether WebView Script APIs are enabled for service workers.
 
-See also [Enable WebView2-specific Javascript APIs for service workers](#enable-webview2-specific-javascript-apis-for-service-workers), above.
+See also [Breaking change: Enable WebView2-specific Javascript APIs for service workers](#breaking-change-enable-webview2-specific-javascript-apis-for-service-workers), above.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
