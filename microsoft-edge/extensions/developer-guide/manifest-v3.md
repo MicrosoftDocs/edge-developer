@@ -50,20 +50,20 @@ See:
 <!-- ---------------------------------------------------------------------- -->
 ## Manifest timeline for Partner Center and Microsoft Edge
 
-To plan the migration of your extension from Manifest Version 2 to Manifest Version 3, the following schedule shows the planned support for Manifest Version 2 at Microsoft Partner Center, at the Microsoft Edge Add-ons store, and in Microsoft Edge.
+To plan the migration of your extension from Manifest V2 to Manifest V3, the following schedule shows the planned support for Manifest V2 at Microsoft Partner Center, at the Microsoft Edge Add-ons store, and in Microsoft Edge.
 
-If your extension still uses Manifest Version 2, migrate to Manifest Version 3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest Version 3 version of your extension is ready, submit the update through Partner Center.
+If your extension still uses Manifest V2, migrate to Manifest V3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
 
 | Date | Changes |
 |---|---|
-| Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest Version 2 extensions that have `Public` or `Hidden` visibility.  <br/>* To publish a new extension, use Manifest Version 3. |
-| Aug. 2026 | If your extension uses Manifest Version 2:  <br/>* At Partner Center, a Manifest Version 2 deprecation warning is displayed.  <br/>* At the Edge Add-ons store, on the extension's product detail page, a Manifest Version 2 deprecation warning is displayed, for some end-users (and later, for everyone).  <br/>* In Microsoft Edge, on the **Manage extensions** page, a Manifest Version 2 deprecation warning is displayed, for some end-users (and later, for everyone). |
-| TBD | For enterprise users, in Microsoft Edge, support for Manifest Version 2 will be removed:  <br/>* The [ExtensionManifestV2Availability](/deployedge/microsoft-edge-policies/extensionmanifestv2availability) policy will be removed.  <br/>* Extensions that use Manifest Version 2 will no longer work, even on enterprise-managed devices. |
-| TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest Version 2.  <br/>* You can submit an update that migrates a Manifest Version 2 extension to Manifest Version 3. |
+| Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest V2 extensions that have `Public` or `Hidden` visibility.  <br/>* To publish a new extension, use Manifest V3. |
+| Aug. 2026 | If your extension uses Manifest V2:  <br/>* At Partner Center, a Manifest V2 deprecation warning is displayed.  <br/>* At the Edge Add-ons store, on the extension's product detail page, a Manifest V2 deprecation warning is displayed, for some end-users (and later, for everyone).  <br/>* In Microsoft Edge, on the **Manage extensions** page, a Manifest V2 deprecation warning is displayed, for some end-users (and later, for everyone). |
+| TBD | For enterprise users, in Microsoft Edge, support for Manifest V2 will be removed:  <br/>* The [ExtensionManifestV2Availability](/deployedge/microsoft-edge-policies/extensionmanifestv2availability) policy will be removed.  <br/>* Extensions that use Manifest V2 will no longer work, even on enterprise-managed devices. |
+| TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest V2.  <br/>* You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
 
 For enterprise customers:
-* Extensions that use Manifest Version 2 will continue to be supported until further notice.
-* Deprecation of Manifest Version 2 extensions is expected to begin in early 2027.
+* Extensions that use Manifest V2 will continue to be supported until further notice.
+* Deprecation of Manifest V2 extensions is expected to begin in early 2027.
 
 
 <!-- ---------------------------------------------------------------------- -->
