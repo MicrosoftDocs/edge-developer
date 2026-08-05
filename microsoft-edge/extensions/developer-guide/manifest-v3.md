@@ -31,9 +31,9 @@ For enterprise customers:
 
 | Date | Changes |
 |---|---|
-| Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest V2 extensions that have **Visibility** set to **Public** or **Hidden**.  <br/>* To publish a new extension, use Manifest V3. |
+| Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest V2 extensions that have **Visibility** set to **Public** or **Hidden**.  To publish a new extension, use Manifest V3. |
 | Aug. 2026 | If your extension uses Manifest V2, at Partner Center, a Manifest V2 deprecation warning is displayed. |
-| TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest V2.  <br/>* You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
+| TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest V2.  You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
 
 
 <!-- ====================================================================== -->
