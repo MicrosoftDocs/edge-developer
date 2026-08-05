@@ -14,6 +14,9 @@ ms.date: 05/26/2021
 
 This article lists important aspects of Manifest V3, which is the current version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
 
+See also:
+* [Overview of changes in Manifest V3](./manifest-v3.md) in _Timeline for migrating to Manifest V3_.
+
 
 <!-- ====================================================================== -->
 ## Remotely hosted code
@@ -74,3 +77,23 @@ The Microsoft Edge extensions team publishes updates at our blog.  You can provi
 | removed | `"persistent": false,` |
 | If `background` is included, `service_ worker` is required | If `background` is included, `service_ worker` is optional |
 | Separated into two different keys: `"permissions": [...], "host_permissions": [...],` | `"permissions": [...],` |
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Overview of changes in Manifest V3](./manifest-v3.md) in _Timeline for migrating to Manifest V3_.
+
+External:
+* [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) - blog post.
+* [Extensions](/deployedge/microsoft-edge-policies#extensions) in _Microsoft Edge – Policies_.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
+
+Chromium docs:
+* [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->
+* [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval)<!-- chrome link ok, extension ref docs are there -->
+* [Changes to Cross-Origin Requests in Chrome Extension Content Scripts](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches).
+* [Web Request API](https://developer.chrome.com/docs/extensions/reference/webRequest)<!-- chrome link ok, extension ref docs are there -->
+* [Declarative Net Request API](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest)<!-- chrome link ok, extension ref docs are there -->
+* [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->

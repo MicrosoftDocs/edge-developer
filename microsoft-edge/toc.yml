@@ -1274,7 +1274,7 @@
 
                 - name: Migrating to V3
                   items:
-                    - name: Overview and timelines for migrating to Manifest V3
+                    - name: Timeline for migrating to Manifest V3
                       href: ./extensions/developer-guide/manifest-v3.md
 
                     - name: Migrate an extension from Manifest V2 to V3

@@ -1,5 +1,5 @@
 ---
-title: Overview and timelines for migrating to Manifest V3
+title: Timeline for migrating to Manifest V3
 description: Timelines for migration from Manifest V2 to V3, and overview of V3, which reduces fragmentation of the web for developers and enhances privacy, security, and performance for end users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,23 +8,19 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 08/07/2026
 ---
-# Overview and timelines for migrating to Manifest V3
+# Timeline for migrating to Manifest V3
 
-A _manifest file_ is the blueprint of an extension.  A manifest file for an extension includes information such as the version number of the extension, the title of the extension, and permissions needed to run the extension.  The manifest file follows the format specified by Manifest V2 or Manifest V3.
-
-Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
-
-
-<!-- ---------------------------------------------------------------------- -->
-## Overview of changes in Manifest V3
-
-Migrating from Manifest V2 to Manifest V3 brings several structural changes to how extensions are handled by the browser.
+Migrating an extension from using Manifest V2 to using Manifest V3 brings several structural changes to how extensions are handled by the browser.
 
 In Oct. 2020, Microsoft announced the decision to embrace Manifest V3, to help reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.  See [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/).
 
 Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
-An overview of the changes involved, as described in [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md):
+
+<!-- ====================================================================== -->
+## Overview of changes in Manifest V3
+
+When moving from Manifest V2 to Manifest V3:
 
 * Background pages have been replaced by service workers.
 
@@ -36,8 +32,11 @@ An overview of the changes involved, as described in [Migrate an extension from 
 
 * Various minor feature improvements.
 
+See also:
+* [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
 
-<!-- ---------------------------------------------------------------------- -->
+
+<!-- ====================================================================== -->
 ## Manifest timeline for the Chromium browser engine
 
 Chromium has revised the timelines for ending support for Manifest V2.
@@ -50,7 +49,7 @@ See:
 <!-- ---------------------------------------------------------------------- -->
 ## Manifest timeline for Partner Center and Microsoft Edge
 
-To plan the migration of your extension from Manifest V2 to Manifest V3, the following schedule shows the planned support for Manifest V2 at Microsoft Partner Center, at the Microsoft Edge Add-ons store, and in Microsoft Edge.
+To plan the migration of your extension from Manifest V2 to Manifest V3, the following schedule shows the planned support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and in Microsoft Edge.
 
 If your extension still uses Manifest V2, migrate to Manifest V3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
 
