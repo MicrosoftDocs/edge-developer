@@ -53,6 +53,7 @@ See:
 
 <!-- local: -->
 * [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
+* [Contact the Microsoft Edge extensions team](../contact.md)<!-- link not in article -->
 
 Chromium docs: 
 * [Chromium project](https://www.chromium.org/Home/)
