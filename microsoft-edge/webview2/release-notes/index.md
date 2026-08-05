@@ -10,6 +10,11 @@ ms.date: 08/04/2026
 ---
 # Release notes for the WebView2 SDK
 
+todo: 
+* separate all runtime relnotes & sdk relnotes into dedicated articles
+   * combining both in a single relnote page doesn't work; the bugfix section says "this release **sdk** includes the following bug fixes", but then lists "**runtime**-only" fixes, which have nothing to do with the sdk 
+   * relnotes about a specific sdk specify the minimum runtime version that the sdk requires
+
 The WebView2 team periodically updates the WebView2 Release SDK and the WebView2 Prerelease SDK.  These release notes contain the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 <!-- maint:
@@ -53,10 +58,13 @@ Release notes entries correspond to historical releases of WebView2, and are not
 ## Release cadence
 
 The following have a 2-week release cadence:
-* WebView2 Release notes.
-* WebView2 Release SDK.
-* WebView2 Prerelease SDK.
-* WebView2 Runtime.
+* The WebView2 Runtime.
+* Release notes about the WebView2 Runtime.
+
+The following have a variable release cadence, as needed based on new features and bug fixes:
+* The WebView2 Release SDK.
+* The WebView2 Prerelease SDK.
+* Release notes about the WebView2 SDKs.
 
 See:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
