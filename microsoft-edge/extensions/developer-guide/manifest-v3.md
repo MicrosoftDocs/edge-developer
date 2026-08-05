@@ -50,7 +50,7 @@ See:
 <!-- ---------------------------------------------------------------------- -->
 ## Manifest timeline for Partner Center and Microsoft Edge
 
-To plan the migration of your extension from Manifest Version 2 to Manifest Version 3, the following schedule shows the planned support for Manifest Version 2 at Microsoft Partner Center (and the Microsoft Edge Add-ons store), and in Microsoft Edge.
+To plan the migration of your extension from Manifest Version 2 to Manifest Version 3, the following schedule shows the planned support for Manifest Version 2 at Microsoft Partner Center, at the Microsoft Edge Add-ons store, and in Microsoft Edge.
 
 If your extension still uses Manifest Version 2, migrate to Manifest Version 3 now; see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).  After the Manifest Version 3 version of your extension is ready, submit the update through Partner Center.
 
