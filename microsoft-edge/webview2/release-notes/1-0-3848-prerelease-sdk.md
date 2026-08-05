@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3848-prerelease.
+title: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 - SDK (Feb. 16, 2026)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3848-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+# Prerelease SDK 1.0.3848-prerelease, for Runtime 146 - SDK (Feb. 16, 2026)
 
 Release Date: Feb. 16, 2026
 
@@ -17,22 +17,15 @@ Release Date: Feb. 16, 2026
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 146.0.3848.0 or later.
 
 **Detailed contents:**
-* [Breaking changes](#breaking-changes)
-   * [Enable WebView2-specific Javascript APIs for service workers](#enable-webview2-specific-javascript-apis-for-service-workers)
-   * [Local Network Access (LNA) in WebView2](#local-network-access-lna-in-webview2)
+* [Breaking change: Enable WebView2-specific Javascript APIs for service workers](#breaking-change-enable-webview2-specific-javascript-apis-for-service-workers)
+* [Breaking change: Local Network Access (LNA) in WebView2](#breaking-change-local-network-access-lna-in-webview2)
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Control whether WebView Script APIs are enabled for service workers](#control-whether-webview-script-apis-are-enabled-for-service-workers)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
-## Breaking changes
-
-
-<!-- ------------------------------ -->
-#### Enable WebView2-specific Javascript APIs for service workers
+## Breaking change: Enable WebView2-specific Javascript APIs for service workers
 
 The new `AreWebViewScriptApisEnabledForServiceWorkers` setting provides an explicit and reliable way to control the availability of WebView2‑specific JavaScript APIs (`chrome.webview`) within service worker scripts.
 
@@ -93,8 +86,8 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 ---
 
 
-<!-- ------------------------------ -->
-#### Local Network Access (LNA) in WebView2
+<!-- ====================================================================== -->
+## Breaking change: Local Network Access (LNA) in WebView2
 
 The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents webpages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
 

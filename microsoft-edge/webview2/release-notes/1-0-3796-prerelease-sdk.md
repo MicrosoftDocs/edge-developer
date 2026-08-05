@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3796-prerelease.
+title: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 - SDK (Jan. 19, 2026)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3796-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+# Prerelease SDK 1.0.3796-prerelease, for Runtime 145 - SDK (Jan. 19, 2026)
 
 Release Date: Jan. 19, 2026
 
@@ -20,8 +20,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Enhanced Security Mode Level](#enhanced-security-mode-level)
 * [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -75,20 +73,6 @@ To control the ESM level for all WebView2 instances that share the same profile,
 
 <!-- ====================================================================== -->
 ## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed `chrome.webview` unavailability.
-
-* Disabled background update of network time.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 

@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3908-prerelease.
+title: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 - SDK (Mar. 16, 2026)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3908-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,20 +8,13 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+# Prerelease SDK 1.0.3908-prerelease, for Runtime 147 - SDK (Mar. 16, 2026)
 
 Release Date: Mar. 16, 2026
 
 [NuGet package for WebView2 SDK 1.0.3908-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3908-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 147.0.3908.0 or later.
-
-**Detailed contents:**
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
-   * [Manage persistent storage permissions for web content](#manage-persistent-storage-permissions-for-web-content)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -57,30 +50,6 @@ Previous phase: [~](./~.md#~) in _~_.
    * `COREWEBVIEW2_PERMISSION_KIND_PERSISTENT_STORAGE`
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
-
-* Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
-
-* Disabled the domain actions component for WebView2.
-
-* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
-
-* Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
-
-* Fixed WebView2 transparency.
-
-* Fixed the API for setting the background color of the **Caption** control.
 
 
 <!-- ====================================================================== -->

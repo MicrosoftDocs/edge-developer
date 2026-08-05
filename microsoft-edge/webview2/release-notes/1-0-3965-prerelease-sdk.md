@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3965-prerelease.
+title: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 - SDK (Apr. 13, 2026)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3965-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
+# Prerelease SDK 1.0.3965-prerelease, for Runtime 148 - SDK (Apr. 13, 2026)
 
 Release Date: April 13, 2026
 
@@ -16,26 +16,9 @@ Release Date: April 13, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 148.0.3965.0 or later.
 
-**Detailed contents:**
-* [Breaking changes](#breaking-changes)
-   * [Granular process failure reasons for the ProcessFailed event](#granular-process-failure-reasons-for-the-processfailed-event)
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
-   * [Origin Configuration API for WebView2](#origin-configuration-api-for-webview2)
-* [Phase 2 (Stable in Prerelease)](#phase-2-stable-in-prerelease)
-   * [Granular process failure reasons for the ProcessFailed event](#granular-process-failure-reasons-for-the-processfailed-event-1)
-* [Bug fixes](#bug-fixes)
-   * [Runtime and SDK](#runtime-and-sdk)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
-* [See also](#see-also)
-
 
 <!-- ====================================================================== -->
-## Breaking changes
-
-
-<!-- ------------------------------ -->
-#### Granular process failure reasons for the `ProcessFailed` event
+## Breaking change: Granular process failure reasons for the `ProcessFailed` event
 
 The `ProcessFailed` event fires when a WebView2-associated process (such as a renderer or GPU process) exits unexpectedly, allowing apps to respond with recovery logic or diagnostics.
 
@@ -204,33 +187,7 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime and SDK
-
-* Supplemented the `CoreWebView2ProcessFailedReason.Unexpected` enum member by adding more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.  This is a breaking change.  See [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed **Print** dialog dropdown selection issues in `WebView2CompositionControl`.  ([Issue #5195](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5195))
-
-* Disabled the Domain Actions component for WebView2.
-
-* Disabled `WebUSBDetector` notification for WebView2.
-
-* Fixed stale `ICoreWebView2Profile3::get_PreferredTrackingPreventionLevel`.
-
-* Fixed WDP clients being unable to connect to a remote debugging server.
-
-* Fixed an issue for the WPF sample app, where closing the window left a lingering WPF process.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
+* Breaking change: Supplemented the `CoreWebView2ProcessFailedReason.Unexpected` enum member by adding more granular values, for the `CoreWebView2ProcessFailedReason` enum that's returned by the `CoreWebView2ProcessFailedEventArgs.Reason` property.  See [Granular process failure reasons for the `ProcessFailed` event](#granular-process-failure-reasons-for-the-processfailed-event), above.
 
 * Enabled histogram logging for browser process crashes in WebView2.
 

@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3712-prerelease.
+title: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 - SDK (Dec. 8, 2025)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3712-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+# Prerelease SDK 1.0.3712-prerelease, for Runtime 144 - SDK (Dec. 8, 2025)
 
 Release Date: Dec. 8, 2025
 
@@ -21,8 +21,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Customize port range behavior](#customize-port-range-behavior)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Customize the drag and drop behavior (DragStarting API)](#customize-the-drag-and-drop-behavior-dragstarting-api)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -132,22 +130,6 @@ N/A
 * [ICoreWebView2DragStartingEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2dragstartingeventhandler?view=webview2-1.0.3712-prerelease&preserve-view=true)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed local network access triggering a permission alert pop-up window.<!-- fixed regression; this fix was listed previously -->
-
-* Fixed a regression of the `setColorScheme` API.
-
-* Fixed deferred initialization for `ICoreWebView2NewWindowRequestedEventArgs` for the command-line switch `enable-new-window-requested-deferred-initialization`.
 
 
 <!-- ====================================================================== -->
