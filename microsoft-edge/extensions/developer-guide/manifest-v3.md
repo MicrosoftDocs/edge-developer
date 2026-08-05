@@ -64,7 +64,7 @@ When moving from Manifest V2 to Manifest V3:
 
 * Various minor feature improvements.
 
-For more details, see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).
+For details, see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ---------------------------------------------------------------------- -->
