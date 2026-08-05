@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
-description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.4015-prerelease.
+title: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.4015-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 06/11/2026
 ---
-# Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
+# Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)
 
 Release Date: May 11, 2026
 
@@ -16,24 +16,9 @@ Release Date: May 11, 2026
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 149.0.4015.0 or later.
 
-**Detailed contents:**
-* [Breaking changes](#breaking-changes)
-   * [EnhancedSecurityModeLevel replaced by EnhancedSecurityModeState](#enhancedsecuritymodelevel-replaced-by-enhancedsecuritymodestate)
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
-   * [Enhanced security mode state](#enhanced-security-mode-state)
-* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
-   * [Enable background processing and offline support (WebView2 Worker APIs)](#enable-background-processing-and-offline-support-webview2-worker-apis)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-* [See also](#see-also)
-
 
 <!-- ====================================================================== -->
-## Breaking changes
-
-
-<!-- ------------------------------ -->
-#### `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
+## Breaking change: `EnhancedSecurityModeLevel` replaced by `EnhancedSecurityModeState`
 
 The `CoreWebView2Profile.EnhancedSecurityModeLevel` property and the `CoreWebView2EnhancedSecurityModeLevel` enum are deprecated and will be removed in a future release.  Replace all usage of these APIs in your WebView2 application, as follows.
 
@@ -425,28 +410,6 @@ Previous phase: [Enable background processing and offline support (WebView2 Work
   * [ICoreWebView2SharedWorkerManager::remove_SharedWorkerCreated](/microsoft-edge/webview2/reference/win32/icorewebview2sharedworkermanager?view=webview2-1.0.4015-prerelease&preserve-view=true#remove_sharedworkercreated)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed double character in UWP.
-
-* Fixed the `Caption controls` background color setting API. After this change, to close your app, the app will also need to intercept the `Close` call and handle the call itself.
-
-* Fixed forwarding of network events for iframe, where the iframe had its own isolated CDP session.
-
-* Improved error handling when Post Message (such as `CoreWebView2ServiceWorker.PostWebMessageAsJson` or `chrome.webview.postMessage`) is called on a service worker.
-
-* Reduced string allocations in `GetDefaultHostAppExeName`.
-
-* Fixed an updater issue where the currently used WebView2 Runtime is deleted after installing a new version, causing a crash during new controller creation in an already running app.
 
 
 <!-- ====================================================================== -->

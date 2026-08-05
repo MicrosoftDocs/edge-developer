@@ -1,6 +1,6 @@
 ---
-title: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
-description: Release notes for Microsoft Edge WebView2, Prerelease SDK 1.0.4181-prerelease.
+title: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - SDK (Aug. 3, 2026)
+description: Release notes for Microsoft Edge WebView2, Prerelease SDK 1.0.4181-prerelease - SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,20 +8,13 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/03/2026
 ---
-# Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+# Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - SDK (Aug. 3, 2026)
 
 Release Date: Aug. 3, 2026
 
 [NuGet package for WebView2 SDK 1.0.4181-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4181-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 152.0.4181.0 or higher.
-
-**Detailed contents:**
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
-   * [Diagnostic Monitor API](#diagnostic-monitor-api)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 
 
 <!-- ====================================================================== -->
@@ -130,32 +123,6 @@ Releasing or closing the monitor stops all events and clears all filters.
 
 <!-- ====================================================================== -->
 ## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
-
-* Restricted access to a singleton host pipe in legacy WebView2 clients.
-
-* Removed implicit `window.gc` addition on WebViews.
-
-* Fixed the "download shortcut" announcement by screen readers.
-
-* Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
-
-* Fixed honoring a custom scale factor for PDF printing.
-
-* Fixed the anchoring logic for the minimal-window **Download** popup.
-
-* Fixed the inability to drag a window via the top border of a custom title bar.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Fixed a WPF crash when changing display topology in composition-controlled apps.
 
