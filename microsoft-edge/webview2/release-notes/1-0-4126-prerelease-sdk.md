@@ -17,14 +17,9 @@ Release Date: Jul. 7, 2026
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 151.0.4126.0 or higher.
 
 **Detailed contents:**
-* [General changes](#general-changes)
-   * [WebView2 Runtime is changing to a 2-week release cadence](#webview2-runtime-is-changing-to-a-2-week-release-cadence)
-   * [Run your WebView2 host application at standard user integrity rather than elevated](#run-your-webview2-host-application-at-standard-user-integrity-rather-than-elevated)
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [Crash Report in ProcessFailed event](#crash-report-in-processfailed-event)
    * [Configure per-origin reputation checking (SmartScreen) settings](#configure-per-origin-reputation-checking-smartscreen-settings)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 

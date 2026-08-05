@@ -25,13 +25,22 @@ keep release nnn & prerelease nnn together
 -->
 Release notes for recent SDKs:
 
-* [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
-* [Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
-   * [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
-* [Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
-   * [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
-* [Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)](./1-0-4022-49.md)
-   * [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
+* [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - Runtime (Aug. 3, 2026)](./1-0-4181-prerelease-runtime.md)
+* [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - SDK (Aug. 3, 2026)](./1-0-4181-prerelease-sdk.md)
+* [Release SDK 1.0.4129.50, for Runtime 151 - Runtime (Aug. 3, 2026)](./1-0-4129-50-runtime.md)
+* [Release SDK 1.0.4129.50, for Runtime 151 - SDK (Aug. 3, 2026)](./1-0-4129-50-sdk.md)
+* [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 - Runtime (Jul. 7, 2026)](./1-0-4126-prerelease-runtime.md)
+* [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 - SDK (Jul. 7, 2026)](./1-0-4126-prerelease-sdk.md)
+* [Release SDK 1.0.4078.44, for Runtime 150 - Runtime (Jul. 7, 2026)](./1-0-4078-44-runtime.md)
+* [Release SDK 1.0.4078.44, for Runtime 150 - SDK (Jul. 7, 2026)](./1-0-4078-44-sdk.md)
+* [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 - Runtime (Jun. 11, 2026)](./1-0-4071-prerelease-runtime.md)
+* [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 - SDK (Jun. 11, 2026)](./1-0-4071-prerelease-sdk.md)
+* [Release SDK 1.0.4022.49, for Runtime 149 - Runtime (Jun. 11, 2026)](./1-0-4022-49-runtime.md)
+* [Release SDK 1.0.4022.49, for Runtime 149 - SDK (Jun. 11, 2026)](./1-0-4022-49-sdk.md)
+* [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - Runtime (May 11, 2026)](./1-0-4015-prerelease-runtime.md)
+* [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)](./1-0-4015-prerelease-sdk.md)
+
+todo: not split yet:
 * [Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
    * [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
 * [Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
