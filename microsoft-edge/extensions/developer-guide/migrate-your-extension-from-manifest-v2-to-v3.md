@@ -14,8 +14,25 @@ ms.date: 05/26/2021
 
 This article lists important aspects of Manifest V3, which is the current version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3 from the Chromium project, see [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->.
 
-See also:
-* [Overview of changes in Manifest V3](./manifest-v3.md#overview-of-changes-in-manifest-v3) in _Timeline for migrating to Manifest V3_.
+
+<!-- ====================================================================== -->
+## Overview of changes in Manifest V3
+
+Migrating an extension from using Manifest V2 to using Manifest V3 brings several structural changes to how extensions are handled by the browser:
+
+* Remotely hosted code is no longer allowed.  An extension can only run JavaScript that's included within its own package.  See [Remotely hosted code](#remotely-hosted-code), below.
+
+* Edge extensions can use controls that enable you to allow or restrict access to websites at runtime.  See [Run-time host permissions](#run-time-host-permissions), below.
+
+* Content scripts are required to have the same permissions as the webpage into which the scripts are injected.  See [Cross-origin requests in content scripts](#cross-origin-requests-in-content-scripts), below.
+
+* Network request modifications are now handled by the new `declarativeNetRequest` API.  See [Web Request API](#web-request-api), below.
+
+* Background pages have been replaced by service workers.  See [Background service workers](#background-service-workers), below.
+
+* Support for Promises has been added to many methods.  Callbacks are still supported, as an alternative.
+
+* Various minor feature improvements.
 
 
 <!-- ====================================================================== -->
@@ -25,13 +42,15 @@ Today, some parts of the extensions code are hosted remotely, and aren't include
 
 To ensure that the extensions at Microsoft Edge Add-ons are validated, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
-Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a sandboxed iframe. See [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval)<!-- chrome link ok, extension ref docs are there -->.
+You'll need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a sandboxed iframe. See [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval)<!-- chrome link ok, extension ref docs are there -->.
 
 
 <!-- ====================================================================== -->
 ## Run-time host permissions
 
-At installation time, it's possible for extensions to request blanket permissions to access all sites and content.  These permissions allow extensions to operate with minimum intervention, and so present a risk for user privacy and security.  To improve transparency, the Microsoft Edge extensions team provides controls that enable users to allow or restrict access to websites at runtime.
+At installation time, it's possible for extensions to request blanket permissions to access all sites and content.  These permissions allow extensions to operate with minimum intervention, and so present a risk for user privacy and security.
+
+To improve transparency, the Microsoft Edge extensions team provides controls that enable users to allow or restrict access to websites at runtime.
 
 
 <!-- ====================================================================== -->

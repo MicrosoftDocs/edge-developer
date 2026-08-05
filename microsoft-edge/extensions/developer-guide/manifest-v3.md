@@ -47,26 +47,6 @@ See:
 * [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- chrome link ok here --> in _Resuming the transition to Manifest V3_.
 
 
-<!-- ====================================================================== -->
-## Overview of changes in Manifest V3
-
-Migrating an extension from using Manifest V2 to using Manifest V3 brings several structural changes to how extensions are handled by the browser.
-
-When moving from Manifest V2 to Manifest V3:
-
-* Background pages have been replaced by service workers.
-
-* Network request modifications are now handled by the new `declarativeNetRequest` API.
-
-* Remotely hosted code is no longer allowed.  An extension can only run JavaScript that's included within its own package.
-
-* Support for Promises has been added to many methods.  Callbacks are still supported, as an alternative.
-
-* Various minor feature improvements.
-
-For details, see [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).
-
-
 <!-- ---------------------------------------------------------------------- -->
 ## See also
 <!-- all links in article -->
