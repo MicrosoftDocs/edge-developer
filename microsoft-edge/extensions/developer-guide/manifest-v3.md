@@ -10,7 +10,7 @@ ms.date: 08/07/2026
 ---
 # Timeline for migrating to Manifest V3
 
-To plan the migration of your extension from Manifest V2 to Manifest V3, the following timeline shows the planned support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and in Microsoft Edge.
+To plan the migration of your extension from Manifest V2 to Manifest V3, the following timeline shows the planned end of support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and in Microsoft Edge.
 
 | Date | Changes |
 |---|---|
