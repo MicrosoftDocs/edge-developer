@@ -1,0 +1,57 @@
+---
+title: Prerelease SDK 1.0.2783-prerelease, for Runtime 129 (Aug. 26, 2024)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.2783-prerelease.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 06/11/2026
+---
+# Prerelease SDK 1.0.2783-prerelease, for Runtime 129 (Aug. 26, 2024)
+
+Release Date: Aug. 26, 2024
+
+[NuGet package for WebView2 SDK 1.0.2783-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2783-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 129.0.2783.0 or later.
+
+
+<!-- ====================================================================== -->
+## Bug fixes
+
+
+<!-- ------------------------------ -->
+#### Runtime and SDK
+
+* Re-enabled the default behavior of `SetUserAgent`: by default, `SetUserAgent` is effective for cross-origin iframes.
+
+
+<!-- ------------------------------ -->
+#### Runtime-only
+
+* Enabled the interactive dragging feature by default.  See `edge-webview-interactive-dragging` in [WebView2 browser flags](../concepts/webview-features-flags.md).
+
+* Disabled `IsolateSandboxedIframes` for WebView2.
+
+* Fixed an issue where WebView creation fails when multiple instances are launched at the same time.  ([Issue #4731](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4731))
+
+* Fixed a bug in WinRT JavaScript projection where caching existing properties in objects whose name contains `Proxy` or `Function` caused an error due to name collision.
+
+* Fixed a bug where the WebView2 control became the wrong size after disconnecting and reconnecting a monitor.
+
+* Fixed an issue where "mailto:" links leave an untitled popup window open, instead of automatically closing the popup window.
+
+
+<!-- ------------------------------ -->
+#### SDK-only
+
+* C# WinRT projection now works on UWP.
+
+* Fixed an issue to ensure that `GeneratedFilesDir` no longer appears in Visual Studio for C# WinRT projection.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for the WebView2 SDK](./index.md)
