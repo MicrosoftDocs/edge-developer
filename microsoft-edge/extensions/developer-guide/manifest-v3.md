@@ -39,7 +39,7 @@ See [Manifest V3 changes are now available to test in Microsoft Edge](https://bl
 <!-- ====================================================================== -->
 ## Timeline for Chromium changes
 
-Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
+Microsoft Edge is based on the Chromium browser engine.  Manifest V3 is an initiative of the [Chromium project](https://www.chromium.org/Home/).
 
 For information about end of support for Manifest V2 extensions in the Chromium browser engine project, see:
 * [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- chrome link ok here -->
