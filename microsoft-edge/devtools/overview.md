@@ -58,7 +58,6 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
 * [About Activity Bar and Quick View tools](#about-activity-bar-and-quick-view-tools)
    * [See also](#see-also)
 * [Power tip: Use the Command Menu](#power-tip-use-the-command-menu)
-* [Customizing DevTools](#customizing-devtools)
 * [Trying experimental features](#trying-experimental-features)
 * [See also](#see-also-1)
 
