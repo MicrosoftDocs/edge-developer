@@ -23,12 +23,9 @@ To plan the migration of your extension from Manifest V2 to Manifest V3, the fol
 <!-- ====================================================================== -->
 ## Migrate your extension to Manifest V3
 
-If your extension still uses Manifest V2, migrate to Manifest V3 now.
+If your extension still uses Manifest V2, migrate to Manifest V3 now.  After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
 
-After the Manifest V3 version of your extension is ready, submit the update through Partner Center.
-
-See:
-* [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
+See [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
@@ -36,8 +33,7 @@ See:
 
 In Oct. 2020, Microsoft announced the decision to embrace Manifest V3.  Manifest V3 helps reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
 
-See:
-* [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/)
+See [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/).
 
 
 <!-- ====================================================================== -->
