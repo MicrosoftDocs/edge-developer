@@ -34,6 +34,10 @@
           # maint:
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+        - name: Microsoft Edge 152
+          href: ./web-platform/release-notes/152.md
+          displayName: Microsoft Edge 152 web platform release notes (Aug. 2026)  # page title
+
         - name: Microsoft Edge 151
           href: ./web-platform/release-notes/151.md
           displayName: Microsoft Edge 151 web platform release notes (Jul. 2026)  # page title
@@ -69,13 +73,13 @@
         - name: Microsoft Edge 143
           href: ./web-platform/release-notes/143.md
           displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
-
-        - name: Microsoft Edge 142
-          href: ./web-platform/release-notes/142.md
-          displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 142
+              href: ./web-platform/release-notes/142.md
+              displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
+
             - name: Microsoft Edge 141
               href: ./web-platform/release-notes/141.md
               displayName: Microsoft Edge 141 web platform release notes (Oct. 2025)  # page title
@@ -525,29 +529,33 @@
                   href: ./devtools/elements-tool/elements-tool.md
                   displayName: Elements tool
 
-                - name: CSS features reference
-                  href: ./devtools/css/reference.md
-                  displayName: Elements tool
+                - name: DOM
+                  items:
+                    - name: Get started viewing and changing the DOM
+                      href: ./devtools/dom/index.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing CSS
-                  href: ./devtools/css/index.md
-                  displayName: Elements tool
+                - name: CSS
+                  items:
+                    - name: Get started viewing and changing CSS
+                      href: ./devtools/css/index.md
+                      displayName: Elements tool
 
-                - name: Inspect CSS Grid layouts
-                  href: ./devtools/css/grid.md
-                  displayName: Elements tool
+                    - name: Inspect CSS Grid layouts
+                      href: ./devtools/css/grid.md
+                      displayName: Elements tool
 
-                - name: Edit CSS font styles and settings in the Styles pane
-                  href: ./devtools/inspect-styles/edit-fonts.md
-                  displayName: Elements tool
+                    - name: Style editing for CSS-in-JS frameworks
+                      href: ./devtools/css/css-in-js.md
+                      displayName: Elements tool
 
-                - name: Style editing for CSS-in-JS frameworks
-                  href: ./devtools/css/css-in-js.md
-                  displayName: Elements tool
+                    - name: Inspect and debug CSS container queries
+                      href: ./devtools/css/container-queries.md
+                      displayName: Elements tool
 
-                - name: Get started viewing and changing the DOM
-                  href: ./devtools/dom/index.md
-                  displayName: Elements tool
+                    - name: CSS features reference
+                      href: ./devtools/css/reference.md
+                      displayName: Elements tool
 # -----------------------------------------------------------------------------
             - name: Console tool
               items:
@@ -1791,7 +1799,7 @@
                   href: ./webview2/how-to/remote-debugging-hololens.md
                   displayName: remotely debug, Remote Tools for Microsoft Edge
 
-                - name: Remote debugging Xbox WebView2 WinUI 2 (UWP) apps
+                - name: Remote debugging XBOX WebView2 WinUI 2 (UWP) apps
                   href: ./webview2/how-to/remote-debugging-xbox.md
                   displayName: remotely debug
 # -----------------------------------------------------------------------------
@@ -2033,7 +2041,4 @@
 
     - name: User data and privacy in Microsoft Edge
       href: /legal/microsoft-edge/privacy
-
-    - name: The Web We Want initiative
-      href: ./web-we-want/index.md
 # /bottom leaf nodes
