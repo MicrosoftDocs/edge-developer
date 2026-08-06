@@ -31,7 +31,9 @@ See [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-
 <!-- ====================================================================== -->
 ## Background
 
-In Oct. 2020, Microsoft announced the decision to embrace Manifest V3.  Manifest V3 helps reduce fragmentation of the web for all developers and enhance privacy, security, and performance for end users.
+In Oct. 2020, Microsoft announced the decision to embrace Manifest V3, which:
+* Reduces fragmentation of the web, for developers.
+* Enhances privacy, security, and performance, for end users.
 
 See [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/).
 
