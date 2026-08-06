@@ -11,13 +11,12 @@ ms.date: 08/05/2026
 # Release notes for the WebView2 SDK
 
 <!-- maint:
-list past 10 releases, per pairs below
-in toc.yml, add new relnotes page x2, move relnotes page x2 to archive
-in /webview2/release-notes/index.md, add new relnotes link pair, remove earliest relnotes link pair
+list past 10 releases (runtimes)
+in toc.yml, add new relnotes pages, move relnotes pages to archive
+in /webview2/release-notes/index.md, add new relnotes links, remove earliest relnotes links
 keep release nnn & prerelease nnn together
--->
+152-143: -->
 Release notes for recent SDKs:
-
 * [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - Runtime (Aug. 3, 2026)](./1-0-4181-prerelease-runtime.md)
 * [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - SDK (Aug. 3, 2026)](./1-0-4181-prerelease-sdk.md)
 * [Release SDK 1.0.4129.50, for Runtime 151 - Runtime (Aug. 3, 2026)](./1-0-4129-50-runtime.md)
