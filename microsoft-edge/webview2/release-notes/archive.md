@@ -24,6 +24,78 @@ The following features and bug fixes are in the WebView2 Release SDK and Prerele
 
 
 <!-- ====================================================================== -->
+## Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)
+
+Release Date: Sep. 8, 2025
+
+[NuGet package for WebView2 SDK 1.0.3485.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3485.44)
+
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 140.0.3485.44 or later.
+
+
+<!-- ------------------------------ -->
+#### General changes
+
+This Release SDK focuses on making WebView2 work better, through behind-the-scenes improvements.
+* The testing infrastructure has been strengthened.
+* The validation of APIs has been enhanced, to ensure that the APIs perform reliably across different scenarios.
+
+These foundational improvements provide stable, thoroughly tested functionality for building WebView2 apps.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 3 (Stable in Release)
+
+No additional APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, in this Release SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+There are no bug fixes in this Release SDK.
+
+<!-- end of Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025) -->
+
+
+<!-- ====================================================================== -->
+## Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
+
+Release Date: Aug. 11, 2025
+
+[NuGet package for WebView2 SDK 1.0.3477-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3477-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 140.0.3477.0 or later.
+
+
+<!-- ------------------------------ -->
+#### Experimental APIs (Phase 1: Experimental in Prerelease)
+
+No Experimental APIs have been added in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Promotions to Phase 2 (Stable in Prerelease)
+
+No APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes
+
+
+<!-- ---------- -->
+###### Runtime-only
+
+* Fixed `put_UserAgent` not working for service workers.
+* Fixed a crash in Devtools on Windows Server and Windows 10.
+* Removed browser process tracking after calling `remove_BrowserProcessExited`.
+* Fixed a memory leak issue in `hostObject` async function calls.
+* Fixed touch not working in visual hosting after a long tap.
+
+<!-- end of Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025) -->
+
+
+<!-- ====================================================================== -->
 ## Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)<!-- exception: not 139 -->
 
 Release Date: Jul. 14, 2025
