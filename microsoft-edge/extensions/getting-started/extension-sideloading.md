@@ -10,9 +10,9 @@ ms.date: 01/16/2025
 ---
 # Sideload an extension to install and test it locally
 
-To test an extension quickly and safely, sideload the extension in your own copy of Microsoft Edge, which means locally installing the extension.  You can then run and test your extension without having to publish the extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) and then install the extension from there.
+To test an extension quickly and safely, sideload the extension in your own copy of Microsoft Edge, which means locally installing the extension.  You can then run and test your extension without having to publish the extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and then install the extension from there.
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+Users browse and install extensions for Microsoft Edge from the Microsoft Edge Add-ons store.
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ To sideload an extension into Microsoft Edge, so that it's locally installed in 
 
    The **Select the extension directory** dialog closes.
 
-   The extension is installed in your browser, similar to extensions that are installed from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com):
+   The extension is installed in your browser, similar to extensions that are installed from the Microsoft Edge Add-ons store:
 
    ![Installed extensions page, showing a sideloaded extension](./extension-sideloading-images/installed-extension.png)
 
@@ -138,4 +138,4 @@ If running an extension causes an error, in some cases, an **Error** link is add
 
 * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
 * [Sample: Picture inserter using content script](../samples/picture-inserter-content-script.md)
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Users install Edge Extensions
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store

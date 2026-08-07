@@ -11,13 +11,13 @@ ms.date: 05/05/2023
 # Alternative ways to distribute an extension
 <!-- ~= Use alternative installation methods  https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions -->
 
-Generally, a Microsoft Edge extension is distributed by publishing it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
+Generally, a Microsoft Edge extension is distributed by publishing it at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  There are some scenarios where you might need to distribute an extension by using alternate methods.  For example:
 
 1. The extension is associated with other software, and it should be installed together with the rest of the bundled software.
 
 1. Network administrators want to distribute an extension throughout their organization.
 
-Extensions that aren't loaded from Microsoft Edge Add-ons are called _externally installed extensions_.  The following are alternate methods of distributing externally installed extensions:
+Extensions that aren't loaded from the Microsoft Edge Add-ons store are called _externally installed extensions_.  The following are alternate methods of distributing externally installed extensions:
 
 * Use the Windows registry (Windows only).
 * Use a preferences JSON file (macOS and Linux).
@@ -32,7 +32,7 @@ See also:
 ## Gather initial information
 <!-- ~= https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions#prereqs -->
 
-Make sure that you publish your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)<!-- todo: but Intro says other scenarios -->, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
+Make sure that you publish your extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store<!-- todo: but Intro says other scenarios -->, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_url`, make sure you can go to your extension at that URL.
 
 Also, make sure that you have the following information:
 
@@ -57,7 +57,7 @@ To distribute your extension using the Windows registry:
 
 1.  Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaabbbbbbbbccccccccdddddddd`.
 
-1.  In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+1.  In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
 
     ```json
     {
@@ -122,7 +122,7 @@ To distribute your extension by using a preferences JSON file:
       }
       ```
 
-   * Copy the following code to your preferences JSON file when installing from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) on macOS and Linux:
+   * Copy the following code to your preferences JSON file when installing from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store on macOS and Linux:
 
       ```json
       {

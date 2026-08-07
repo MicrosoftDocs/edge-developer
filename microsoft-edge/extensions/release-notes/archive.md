@@ -1,6 +1,6 @@
 ---
 title: Archived release notes for Microsoft Edge extensions
-description: Previous enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons site.
+description: Previous enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -11,7 +11,7 @@ ms.date: 01/01/2026
 # Archived release notes for Microsoft Edge extensions
 <!-- Edge versions and dates: https://learn.microsoft.com/en-us/deployedge/microsoft-edge-release-schedule#microsoft-edge-releases -->
 
-The following updates have been deployed to production, addressing key issues and enhancements for the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and Microsoft Edge Add-ons experience.
+The following updates have been deployed to production, addressing key issues and enhancements for [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
 
 **Detailed contents:**
 * [Feb. 2025](#feb-2025)
@@ -136,7 +136,7 @@ As an extension developer, you can now seamlessly transfer ownership of your Mic
 
 v1.1 of this REST API provides increased security.
 
-You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) without using Partner Center.  For more information, see [Use the REST API to update an extension at Microsoft Edge Add-ons](../update/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store without using Partner Center.  See [Use the REST API to update an extension](../update/api/using-addons-api.md).
 
 See also:
 * [Update an extension by using the Microsoft Edge Add-ons API](#update-an-extension-by-using-the-microsoft-edge-add-ons-api), below.
@@ -299,7 +299,7 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 <!-- ------------------------------ -->
 #### You can respond to user reviews about your Microsoft Edge extension
 
-At Partner Center, you can reply to user reviews and feedback about your extension that's posted at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com). 
+At Partner Center, you can reply to user reviews and feedback about your extension that's published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store. 
 
 To share your feedback and comments about this feature, see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
 
@@ -317,7 +317,7 @@ To share your feedback and comments about this feature, see [You can now respond
 <!-- ------------------------------ -->
 #### Update an extension by using the Microsoft Edge Add-ons API
 
-You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) without using Partner Center.  For more information, see [Use the REST API to update an extension at Microsoft Edge Add-ons](../update/api/using-addons-api.md).
+You can integrate REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store without using Partner Center.  See [Use the REST API to update an extension](../update/api/using-addons-api.md).
 
 Update Sep. 2024: v1.1 of this REST API provides increased security; see [Microsoft Edge Add-ons Update API, v1.1](#microsoft-edge-add-ons-update-api-v11), above.
 
@@ -435,9 +435,9 @@ Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest 
 
 
 <!-- ------------------------------ -->
-#### Localization of extension listings at Microsoft Edge Add-ons
+#### Localization of extension listings at the Microsoft Edge Add-ons store
 
-You can control localization of extension listings that are at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  You can choose a subset of languages, instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.
+You can control localization of extension listings that are at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  You can choose a subset of languages, instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.
 
 See [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981).
 

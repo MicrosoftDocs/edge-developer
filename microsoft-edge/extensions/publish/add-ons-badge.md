@@ -1,5 +1,5 @@
 ---
-title: Use the Microsoft Edge Add-ons badge to promote your add-on
+title: Use the Microsoft Edge Add-ons badge to promote your extension
 description: Use this badge in your websites, documentation, or tutorials, to promote your extension (or theme) that's at the Microsoft Edge Add-ons site.  # key words before col 158
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,13 +7,13 @@ ms.topic: article
 ms.service: microsoft-edge
 ms.date: 09/15/2025
 ---
-# Use the Microsoft Edge Add-ons badge to promote your add-on
+# Use the Microsoft Edge Add-ons badge to promote your extension
 
 To promote your Microsoft Edge extension (or theme), use the Microsoft Edge Add-ons badge in your websites, documentation, tutorials, and other services or integrations.  This ensures consistent, accessible, and compliant representation of the Microsoft Edge Add-ons brand.
 
-The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge add-on and build user trust.
+The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge extension and build user trust.
 
-The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**, and shows the Microsoft Edge logo:
+The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**<!-- **Get it from Microsoft Edge Add-ons** -->, and shows the Microsoft Edge logo:
 
 ![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/microsoft-edge-add-ons-badge.png)
 
@@ -53,11 +53,11 @@ For example, the PDF includes the following guidelines:
 
 * Do not use the badge as a decorative element in any context.
 
-* The badge must always be an active, clickable link that directs users to your product detail page at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+* The badge must always be an active, clickable link that directs users to your product detail page at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
 
 * Do not use the badge in static marketing materials, such as posters, flyers, or non-clickable images in presentations or videos.
 
-* The badge is intended solely to facilitate direct access to your add-ons at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+* The badge is intended solely to facilitate direct access to your add-ons at the Microsoft Edge Add-ons store.
 
 
 <!-- ------------------------------ -->
@@ -71,4 +71,4 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store
