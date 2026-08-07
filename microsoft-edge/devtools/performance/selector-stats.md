@@ -40,7 +40,7 @@ To record a performance trace with selector statistics:
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance tool icon](./selector-stats-images/performance-tool-icon.png)) tab.  If that tab isn't visible, select **More tools** (![More tools icon](./selector-stats-images/more-tools-icon.png)) > **Performance**.
+1. In DevTools, on the **Activity Bar**, select the **Performance** tab.  If that tab isn't visible, select **More tools** (![More tools icon](./selector-stats-images/more-tools-icon.png)) > **Performance**.
 
 1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button.
 

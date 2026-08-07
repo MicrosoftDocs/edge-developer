@@ -48,8 +48,9 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
    * [Memory tool](#memory-tool)
    * [Application tool](#application-tool)
    * [More Tools button](#more-tools-button)
+   * [Send Feedback button](#send-feedback-button)
+   * [Settings button](#settings-button)
    * [Customize and control DevTools menu](#customize-and-control-devtools-menu)
-   * [Help button](#help-button)
    * [Close DevTools button](#close-devtools-button)
 * [Features of the Quick View toolbar](#features-of-the-quick-view-toolbar)
 * [Overview of all tools](#overview-of-all-tools)
@@ -57,7 +58,6 @@ The Microsoft Edge browser comes with built-in web development tools, called Mic
 * [About Activity Bar and Quick View tools](#about-activity-bar-and-quick-view-tools)
    * [See also](#see-also)
 * [Power tip: Use the Command Menu](#power-tip-use-the-command-menu)
-* [Customizing DevTools](#customizing-devtools)
 * [Trying experimental features](#trying-experimental-features)
 * [See also](#see-also-1)
 
@@ -245,7 +245,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 **To zoom DevTools by using the Command Menu:**
 
-1. Click the **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**.
+1. Click the **Customize and control DevTools** menu button, and then select **Run command**.
 1. In the **Command Menu**, start typing **zoom**, and then select a zoom command:
    * **Reset zoom level**
    * **Zoom in**
@@ -257,7 +257,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 The DevTools user interface has the following main areas:
 
-* The **Activity Bar** at the top which contains icons used to access tools, settings, documentation, and more.
+* The **Activity Bar** at the top which contains tabs used to access tools, settings, documentation, and more.
    * The current tool area, where the tool that's currently selected in the **Activity Bar** appears.
 
 * The **Quick View** toolbar, at the bottom, which contains tabs used to access tools.
@@ -267,33 +267,31 @@ The DevTools user interface has the following main areas:
 
 By default, the **Activity Bar** contains the following tools:
 
-* **Inspect** tool (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
+* **Inspect** tool toggle button.
 
-* **Device Emulation** tool (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
+* **Device Emulation** tool button.
 
-* **Welcome** tool (![Welcome tool icon](./overview-images/welcome.png)).
+* **Welcome** tool.
 
-* **Elements** tool (![Elements tool icon](./overview-images/elements.png)).
+* **Elements** tool.
 
-* **Console** tool (![Console tool icon](./overview-images/console.png)).
+* **Console** tool.
 
-* **Sources** tool (![Sources tool icon](./overview-images/sources.png)).
+* **Sources** tool.
 
-* **Network** tool (![Network tool icon](./overview-images/network.png)).
+* **Network** tool.
 
-* **Performance** tool (![Performance tool icon](./overview-images/performance.png)).
+* **Performance** tool.
 
-* **Memory** tool (![Memory tool icon](./overview-images/memory.png)).
+* **Memory** tool.
 
-* **Application** tool (![Application tool icon](./overview-images/application.png)).
+* **Application** tool.
 
 By default, the **Quick View** toolbar contains the following tools:
 
-* **Console** tool (![Console tool icon](./overview-images/console.png)).
+* **Console** tool.
 
-* **Issues** tool (![Issues tool icon](./overview-images/issues.png)).
-
-In the **Activity Bar**, tool tabs either contain the tool name and icon, or just the tool icon, depending on the width of the DevTools window. If the window is wide enough, the tool name and icon appear. If the window is too narrow, only the tool icon appears and the tool name appears when you hover over the tool icon.
+* **Issues** tool.
 
 
 <!-- ------------------------------ -->
@@ -303,7 +301,7 @@ By default, the **Quick View** panel is at the bottom of DevTools.  You can also
 
 To display the **Quick View** panel, press **Esc**.
 
-To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** (![The "Dock Quick View to the right" icon](./overview-images/move-quickview-icon.png)) button or the **Dock Quick View to the bottom** button:
+To change the location of the **Quick View** panel, in the **Quick View** toolbar, click the **Dock Quick View to the right** button or the **Dock Quick View to the bottom** button:
 
 ![The Dock Quick View icon, displayed in the Quick View toolbar, at the bottom of DevTool](./overview-images/move-quickview.png)
 
@@ -336,8 +334,8 @@ There are two toolbars: the **Activity Bar** at the top of DevTools, and the **Q
 The **Activity Bar** contains the following features:
 
 * Icon tools:
-   * **Inspect tool** (![Inspect tool icon](./overview-images/inspect-tool-icon-light-theme.png)) toggle button.
-   * **Device Emulation** (![Device Emulation icon](./overview-images/device-emulation-icon-light-theme.png)) button.
+   * **Inspect tool** toggle button.
+   * **Device Emulation** button.
 
 <!--
 * **Automatically emulate Microsoft-recommended device baselines**
@@ -354,10 +352,11 @@ Present if Experiments > "Emulate Microsoft-recommended hardware and network per
    * **Application** tool.
 
 * Icons:
-   * **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button.
-   * **Customize and control DevTools** (![Customize icon](./overview-images/customize-devtools-icon-light-theme.png)) menu button.
-   * **Help** (![Help icon](./overview-images/help-icon.png)) button.
-   * **Close** DevTools (![Close DevTools icon](./overview-images/close-devtools-icon-light-theme.png)) button.
+   * **More tools** button.
+   * **Send feedback** button.
+   * **Settings** button.
+   * **Customize and control DevTools** menu button.
+   * **Close** DevTools button.
 
 ![The Activity Bar, with labels that identify its features](./overview-images/menu-bar.png)
 
@@ -369,7 +368,7 @@ The **Activity Bar** features are described below.
 
 Besides the permanent **Elements**, **Console**, and **Sources** tools, you can control which tools appear in the **Activity Bar**, to customize DevTools to focus on your current activities.
 
-1. Click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button to list all the available tools:
+1. Click the **More tools** button to list all the available tools:
 
    ![The More tools menu in the Activity Bar, with the expanded list of all tools](./overview-images/more-tools.png)<!-- todo: update png -->
 
@@ -470,32 +469,47 @@ To add a tool to the **Activity Bar**, click the **More tools** (![More tools ic
 
 
 <!-- ------------------------------ -->
-#### Customize and control DevTools menu
+#### Send Feedback button
 
-The **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu to:
-
-* Dock DevTools.
-* Dock the **Activity Bar**.
-* Select a theme.
-* Show keyboard shortcuts.
-* Change DevTools settings.
-* Open Device Emulation.
-* Toggle the **Quick View** panel.
-* Run a command.
-* Search for code.
-* Open a file.
+Opens the **Send feedback** dialog.  To connect with the Microsoft Edge DevTools team to report a problem or issue (or to suggest an idea), describe what happened, and include a screenshot.  See [Contact the Microsoft Edge DevTools team](contact.md).
 
 
 <!-- ------------------------------ -->
-#### Help button
+#### Settings button
 
-The **Help** (![Help icon](./overview-images/help-icon.png)) button opens a dropdown menu that has the following items:
+You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Settings** button, or press **F1**.
 
-* **Documentation** - Opens [Microsoft Edge DevTools documentation](./landing/index.yml).
+In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Browser UI language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-* **Release notes** - Opens [What's new in Microsoft Edge DevTools](./whats-new/whats-new.md).
+![All the settings in DevTools](./overview-images/all-settings.png)
 
-* **Feedback** (![Send Feedback icon](./overview-images/send-feedback-icon-light-theme.png)) - Opens the **Send feedback** dialog.  To connect with the Microsoft Edge DevTools team to report a problem or issue (or to suggest an idea), describe what happened, and include a screenshot.  See [Contact the Microsoft Edge DevTools team](contact.md).
+You can also change the settings of advanced features, such as:
+<!-- todo: how/where, for each item in this list?-->
+
+* Add local files to a [Workspace](workspaces/index.md).
+* Filter library code by using the **Ignore List**.
+* Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+* Select a network **Throttling** profile.
+* Define simulated **Locations**.
+* Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
+
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/match-keys.png)
+
+
+<!-- ------------------------------ -->
+#### Customize and control DevTools menu
+
+The **Customize and control DevTools** button opens a dropdown menu to:
+
+* Dock DevTools.
+* Device Emulation.
+* Show Console drawer.
+* Search.
+* Run command.
+* Open file.
+* More tools.
+* Show shortcuts.
+* Help.
 
 
 <!-- ------------------------------ -->
@@ -541,8 +555,8 @@ The **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) b
 
 | Task | Steps |
 | --- | --- |
-| Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) and then select a tool. |
-| Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** (![More tools icon](./overview-images/more-tools-icon.png)) button, and then select a tool. |
+| Open a tool in the **Activity Bar** at the top of DevTools | In the **Activity Bar** at the top of DevTools, click **More tools** and then select a tool. |
+| Open a tool on the **Quick View** toolbar | When DevTools has focus, press **Esc** to show the **Quick View** toolbar if it's not shown yet.  In the **Quick View** toolbar, click the **More tools** button, and then select a tool. |
 | Move a tool from the **Quick View** toolbar to the **Activity Bar** | When DevTools has focus, press **Esc** to show the **Quick View**.  In the **Quick View** toolbar, right-click the tool's tab, and then select **Move to top Activity Bar**. |
 | Move a tool from the **Activity Bar** to the **Quick View** toolbar | In the **Activity Bar**, right-click the tool's tab, and then select **Move to bottom Quick View** or **Move to side Quick View**. |
 | Open a tool in its default toolbar (**Activity Bar** or **Quick View**) | When DevTools has focus, open the **Command Menu** by pressing **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Type the name of the tool, and then select a **Show \<tool\>** command. |
@@ -571,7 +585,7 @@ In the **Command Menu**, the tools are called "panels"; for example, the **Eleme
 
 1. To open the **Command Menu**, do either of the following:
 
-   * Click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
+   * Click the **Customize and control DevTools** button, and then select **Run command**.
    * Press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
 
    The **Command Menu** allows you to type commands to display, hide, or run features in DevTools.
@@ -590,28 +604,6 @@ See also [Run commands with the Microsoft Edge DevTools Command menu](command-me
 
 
 <!-- ====================================================================== -->
-## Customizing DevTools
-
-You can customize DevTools to meet your needs for the way you work.  To change settings, click the **Customize and control DevTools** (![Customize and control DevTools](./overview-images/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), or press **F1**.
-
-In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Browser UI language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
-
-![All the settings in DevTools](./overview-images/all-settings.png)
-
-You can also change the settings of advanced features, such as:
-<!-- todo: how/where, for each item in this list?-->
-
-* Add local files to a [Workspace](workspaces/index.md).
-* Filter library code by using the **Ignore List**.
-* Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
-* Select a network **Throttling** profile.
-* Define simulated **Locations**.
-* Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
-
-![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code](./overview-images/match-keys.png)
-
-
-<!-- ====================================================================== -->
 ## Trying experimental features
 
 The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features in Microsoft Edge DevTools](experimental-features/index.md), in DevTools, select **Settings** (![Settings icon](./overview-images/settings-gear-icon-light-theme.png)), and then select **Experiments**.
@@ -620,7 +612,7 @@ To preview the latest features coming to DevTools, download [Microsoft Edge Cana
 
 See also:
 * [Experimental features](experimental-features/index.md)
-* [What's new in Microsoft Edge DevTools](./whats-new/whats-new.md)
+* [What's new in Microsoft Edge DevTools](./whats-new/index.md)
 
 
 <!-- ====================================================================== -->

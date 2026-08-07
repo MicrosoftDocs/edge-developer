@@ -72,9 +72,9 @@ To open the **Performance** tool:
 
    DevTools opens.
 
-1. In the **Activity Bar** at top, click the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+1. In the **Activity Bar** at top, click the **Performance** tool.
 
-   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+   If the **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
 
 
 <!-- ---------- -->
@@ -180,9 +180,9 @@ To produce a **poor** or **needs improvement** metric on the **LCP**, **CLS**, a
 
    DevTools opens.
 
-1. In the **Activity Bar** at top, select the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool.
+1. In the **Activity Bar** at top, select the **Performance** tool.
 
-   If the ![Performance icon](./overview-images/performance-icon.png) **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
+   If the **Performance** tool isn't shown in the **Activity Bar**, click the **More tools** (![The More tools icon](./overview-images/more-tools-icon.png)) button and then select the **Performance** tool.
 
 1. Maximize the window, and make the demo page pane wide, such as 60% of the width of the window.
 
