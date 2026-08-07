@@ -579,6 +579,10 @@
                   href: ./devtools/console/copilot-explain-console.md
                   displayName: Console tool, Copilot in Edge, Copilot, Explain error
 
+                - name: Format and style messages in the Console
+                  href: ./devtools/console/format-style.md
+                  displayName: Console tool
+
                 - name: Console object API Reference
                   href: ./devtools/console/api.md
                   displayName: Console tool, API Reference
