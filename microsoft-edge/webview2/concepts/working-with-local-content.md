@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 02/21/2025
+ms.date: 07/27/2026
 ---
 # Using local content in WebView2 apps
 
@@ -17,6 +17,54 @@ In addition to loading remote content, content can also be loaded locally into W
 * Handling the `WebResourceRequested` event.
 
 These approaches are described below.
+
+**Detailed contents:**
+* [Selecting an approach](#selecting-an-approach)
+* [Loading local content by navigating to a file URL](#loading-local-content-by-navigating-to-a-file-url)
+   * [Considerations for loading local content by navigating to a file URL](#considerations-for-loading-local-content-by-navigating-to-a-file-url)
+      * [Cross-origin resources](#cross-origin-resources)
+      * [Origin-based DOM APIs](#origin-based-dom-apis)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context)
+      * [Dynamic content](#dynamic-content)
+      * [Additional web resources](#additional-web-resources)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process)
+   * [APIs for loading local content by navigating to a file URL](#apis-for-loading-local-content-by-navigating-to-a-file-url)
+   * [Example of a file URL](#example-of-a-file-url)
+   * [Example of navigating to a file URL](#example-of-navigating-to-a-file-url)
+* [Loading local content by navigating to an HTML string](#loading-local-content-by-navigating-to-an-html-string)
+   * [Considerations for loading local content by navigating to an HTML string](#considerations-for-loading-local-content-by-navigating-to-an-html-string)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-1)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-1)
+      * [Dynamic content](#dynamic-content-1)
+      * [Additional web resources](#additional-web-resources-1)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-1)
+   * [APIs for loading local content by navigating to an HTML string](#apis-for-loading-local-content-by-navigating-to-an-html-string)
+   * [Example string representation of a webpage](#example-string-representation-of-a-webpage)
+   * [Example of navigating to an HTML string](#example-of-navigating-to-an-html-string)
+* [Loading local content by using virtual host name mapping](#loading-local-content-by-using-virtual-host-name-mapping)
+   * [Considerations for loading local content by using virtual host name mapping](#considerations-for-loading-local-content-by-using-virtual-host-name-mapping)
+      * [Choosing a virtual host name](#choosing-a-virtual-host-name)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-2)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-2)
+      * [Dynamic content](#dynamic-content-2)
+      * [Additional web resources](#additional-web-resources-2)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-2)
+      * [Source maps with virtual host name mapping](#source-maps-with-virtual-host-name-mapping)
+   * [APIs for loading local content by using virtual host name mapping](#apis-for-loading-local-content-by-using-virtual-host-name-mapping)
+   * [Example of virtual host name mapping](#example-of-virtual-host-name-mapping)
+* [Loading local content by handling the WebResourceRequested event](#loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Custom scheme registration](#custom-scheme-registration)
+   * [Considerations for loading local content by handling the WebResourceRequested event](#considerations-for-loading-local-content-by-handling-the-webresourcerequested-event)
+      * [Choosing a host name for the origin](#choosing-a-host-name-for-the-origin)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-3)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-3)
+      * [Dynamic content](#dynamic-content-3)
+      * [Additional web resources](#additional-web-resources-3)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-3)
+      * [Source maps with the WebResourceRequested event](#source-maps-with-the-webresourcerequested-event)
+   * [APIs for loading local content by handling the WebResourceRequested event](#apis-for-loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Example of handling the WebResourceRequested event](#example-of-handling-the-webresourcerequested-event)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -333,6 +381,16 @@ Due to a current limitation, media files that are accessed using a virtual host 
 
 
 <!-- ---------- -->
+###### Choosing a virtual host name
+
+The virtual host name is resolved by the network stack before the mapping is applied, so mapping a name that doesn't resolve can add a DNS timeout to every navigation.  The delay falls between the main document being handed to the WebView2 control and the renderer requesting the first subresource.
+
+Reserved top-level domains such as `.example`, `.test`, or `.invalid` don't avoid this.  Those are reserved so that nobody registers them, but the resolver still queries the network and waits for the answer.
+
+Use a name under `.localhost` instead, such as `demo.localhost`.  [RFC 6761](https://www.rfc-editor.org/rfc/rfc6761#section-6.3) reserves `.localhost` as always resolving to the loopback interface, so the resolver answers it without a network query.  The resulting origin is still HTTPS and still a secure context, so the considerations below continue to apply.
+
+
+<!-- ---------- -->
 ###### Origin-based DOM APIs
 
 Local content loaded via virtual host name mapping results in a document that has an HTTP or HTTPS URL and a corresponding origin. This means that web APIs that require an origin such as `localStorage` or `indexedDB` will work, and other documents that belong to the same origin will be able to use the stored data. For more information, see [Same-origin policy](https://developer.mozilla.org/docs/Web/Security/Same-origin_policy) on MDN.
@@ -453,6 +511,12 @@ If you want to use a custom scheme to make the Web Resource Request that generat
 
 <!-- ------------------------------ -->
 #### Considerations for loading local content by handling the `WebResourceRequested` event
+
+
+<!-- ---------- -->
+###### Choosing a host name for the origin
+
+The host name of the origin you serve is resolved by the network stack, even though your event handler answers the request in your app process.  A name that doesn't resolve therefore adds the same per-navigation DNS timeout that's described in [Choosing a virtual host name](#choosing-a-virtual-host-name), above.  Use a name under `.localhost`.
 
 
 <!-- ---------- -->
