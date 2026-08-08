@@ -44,7 +44,7 @@ See also:
 Prior to Microsoft Edge 116, if you were in Focus Mode while using the React Developer Tools extension, the state of a tool in DevTools wasn't maintained when you switched to another tool and then switched back.  This issue has been fixed.
 
 See also:
-* [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+* [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
 * [What's New entries about Focus Mode](/search/?scope=Microsoft%20Edge&terms=focus%20mode)
 
 
@@ -55,7 +55,7 @@ In the **Memory** tool, when there's more than one heap snapshot, a **Containmen
 
 ![The Containment Diff view in the Memory tool](./devtools-116-images/containment-diff.png)
 
-The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The dot symbol • means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
+The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The dot symbol * means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
 For example: 
 
