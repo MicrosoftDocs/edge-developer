@@ -39,7 +39,7 @@ The following updates have been deployed to production, addressing key issues an
 * [Apr. 2021](#apr-2021)
    * [Support for Manifest V3 extensions](#support-for-manifest-v3-extensions)
 * [Feb. 2021](#feb-2021)
-   * [Localization of extension listings at Microsoft Edge Add-ons](#localization-of-extension-listings-at-microsoft-edge-add-ons)
+   * [Localization of extension listings](#localization-of-extension-listings)
 * [Jan. 2021](#jan-2021)
    * [Extension certification report link](#extension-certification-report-link)
 * [See also](#see-also)
@@ -435,7 +435,7 @@ Microsoft Edge extensions now support Manifest V3.  See the blog post [Manifest 
 
 
 <!-- ------------------------------ -->
-#### Localization of extension listings at the Microsoft Edge Add-ons store
+#### Localization of extension listings
 
 You can control localization of extension listings that are at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  You can choose a subset of languages, instead of manually entering each language in the listing details on Microsoft Partner Center.  You can also elect to use the same marketing assets across all marketplaces.
 
