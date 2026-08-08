@@ -28,7 +28,7 @@ To update an extension that's at the Microsoft Edge Add-ons store:
 
 1.  After the `Status` column displays `In the store`, the extension update is available at the Microsoft Edge Add-ons store.
 
-After your extension has been created initially, you can update your extension by [Use the REST API to update an extension](./api/using-addons-api.md).
+After your extension has been published, you can update the extension via the REST API; see [Use the REST API to update an extension](./api/using-addons-api.md).
 
 
 <!-- ====================================================================== -->
