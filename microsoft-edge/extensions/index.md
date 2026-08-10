@@ -24,7 +24,7 @@ The present documentation is for extension developers, rather than end-users of 
    * [Browser-specific APIs](#browser-specific-apis)
 * [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
    * [Migrate an existing extension to Microsoft Edge](#migrate-an-existing-extension-to-microsoft-edge)
-   * [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-store)
+   * [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website)
 * [The Featured badge](#the-featured-badge)
    * [What the Featured badge represents](#what-the-featured-badge-represents)
    * [Reasons why the Featured badge could be revoked](#reasons-why-the-featured-badge-could-be-revoked)
@@ -125,7 +125,7 @@ You can submit and seek browser extensions in the following browser extension st
 
 Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
-To make sure your users find your extension in Microsoft Edge, publish the extension at the Microsoft Edge Add-ons website.  See [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-store), below.
+To make sure your users find your extension in Microsoft Edge, publish the extension at the Microsoft Edge Add-ons website.  See [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website), below.
 
 Users might need to install your extension in different browsers.  In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
