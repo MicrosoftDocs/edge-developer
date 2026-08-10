@@ -38,9 +38,9 @@ Migrating an extension from using Manifest V2 to using Manifest V3 brings severa
 <!-- ====================================================================== -->
 ## Remotely hosted code
 
-Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  Although this offers the flexibility to change code without resubmitting the extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, it's possible to exploit the code after installation.
+Today, some parts of the extensions code are hosted remotely, and aren't included as part of the extension package during the validation process.  Although this offers the flexibility to change code without resubmitting the extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, it's possible to exploit the code after installation.
 
-To ensure that the extensions at the Microsoft Edge Add-ons store are validated, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
+To ensure that the extensions at the Microsoft Edge Add-ons website are validated, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
 You'll need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a sandboxed iframe. See [Use eval() in sandboxed iframes](https://developer.chrome.com/docs/extensions/how-to/security/sandboxing-eval)<!-- chrome link ok, extension ref docs are there -->.
 
@@ -107,7 +107,7 @@ The Microsoft Edge extensions team publishes updates at our blog.  You can provi
 External:
 * [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) - blog post.
 * [Extensions](/deployedge/microsoft-edge-policies#extensions) in _Microsoft Edge – Policies_.
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website
 
 Chromium docs:
 * [Migrate to Manifest V3](https://developer.chrome.com/docs/extensions/develop/migrate)<!-- chrome link ok -->

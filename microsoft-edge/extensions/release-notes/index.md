@@ -1,6 +1,6 @@
 ---
 title: Release notes for Microsoft Edge extensions
-description: Enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons store.
+description: Enhancements and issues for the user experience (UX) at Partner Center and the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -17,7 +17,7 @@ ms.date: 01/01/2026
 ## Jan. 2026
 <!-- Edge 144 = Jan. 15, 2026 -->
 
-The following updates have been deployed to production, addressing key issues and enhancements for [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
+The following updates have been deployed to production, addressing key issues and enhancements for [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) and the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
 
 <!-- ====================================================================== -->

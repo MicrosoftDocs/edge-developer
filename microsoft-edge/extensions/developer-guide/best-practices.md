@@ -10,7 +10,7 @@ ms.date: 09/22/2025
 ---
 # Best practices for extensions
 
-Follow these best practices to implement your extension and list it at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  Build an extension that conforms to Microsoft's standards for security, privacy, performance, and user experience.  These principles help ensure your extension is safe, reliable, and valuable to users.
+Follow these best practices to implement your extension and list it at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Build an extension that conforms to Microsoft's standards for security, privacy, performance, and user experience.  These principles help ensure your extension is safe, reliable, and valuable to users.
 
 The Microsoft Edge extensions team continues to gather feedback from developers and users to evolve these best practices.  To ensure that your extension remains compliant and competitive, review this guidance regularly.
 
@@ -89,4 +89,4 @@ Follow these best practices, to improve the quality, reliability, and user exper
 * [Minimize an extension's impact on page load time](./minimize-page-load-time-impact.md)
 
 External:
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website

@@ -53,11 +53,11 @@ For example, the PDF includes the following guidelines:
 
 * Do not use the badge as a decorative element in any context.
 
-* The badge must always be an active, clickable link that directs users to your product detail page at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
+* The badge must always be an active, clickable link that directs users to your product detail page at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
 * Do not use the badge in static marketing materials, such as posters, flyers, or non-clickable images in presentations or videos.
 
-* The badge is intended solely to facilitate direct access to your add-ons at the Microsoft Edge Add-ons store.
+* The badge is intended solely to facilitate direct access to your add-ons at the Microsoft Edge Add-ons website.
 
 
 <!-- ------------------------------ -->
@@ -71,4 +71,4 @@ When scaling the badge, always maintain its aspect ratio; do not stretch or comp
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website

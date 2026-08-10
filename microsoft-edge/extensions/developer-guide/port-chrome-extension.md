@@ -38,7 +38,7 @@ If your extension exchanges messages with a native app by using `chrome.runtime.
 <!-- ====================================================================== -->
 ## Publish the extension
 
-After your extension package is ready to publish at the Microsoft Edge Add-ons store:
+After your extension package is ready to publish at the Microsoft Edge Add-ons website:
 
 1. [Register as a Microsoft Edge extension developer](../publish/create-dev-account.md).
 

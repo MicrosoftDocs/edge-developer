@@ -1,6 +1,6 @@
 ---
 title: View Microsoft Edge extensions analytics dashboard
-description: View extension metrics from your Partner Center dashboard and evaluate an extension's performance at the Microsoft Edge Add-ons store.
+description: View extension metrics from your Partner Center dashboard and evaluate an extension's performance at the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 11/07/2022
 
 Microsoft announced the launch of the Extensions Analytics Dashboard on Sep. 8, 2021.  See [Track your add-on's performance: extension analytics now available on Partner center](https://techcommunity.microsoft.com/t5/articles/track-your-add-on-s-performance-extension-analytics-now/m-p/2733351).
 
-You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
+You can view extension metrics from your [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview) and evaluate an extension's performance at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
 For example, you can identify regions in which the number of installations for your extension has increased in the past three months. You can also export this report as a CSV file.
 
@@ -26,7 +26,7 @@ Follow these steps to view your extension's analytics dashboard:
 <!-- ====================================================================== -->
 ## Analytics dashboard metrics
 
-From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension was published at the Microsoft Edge Add-ons store).
+From the analytics dashboard you can view metrics for the **Last month**, **3 months**, **6 months**, or **All time** (the period since your extension was published at the Microsoft Edge Add-ons website).
 
 
 <!-- ------------------------------ -->
@@ -53,7 +53,7 @@ The following screenshot shows the **Weekly users** who have enabled and disable
 <!-- ------------------------------ -->
 #### Installs
 
-The **Installs** metric displays the total number of successful installs of your extensions per day at the Microsoft Edge Add-ons store.
+The **Installs** metric displays the total number of successful installs of your extensions per day at the Microsoft Edge Add-ons website.
 
 The following example shows daily successful installations for the last month:
 
@@ -63,7 +63,7 @@ The following example shows daily successful installations for the last month:
 <!-- ------------------------------ -->
 #### Impressions
 
-The **Impressions** metric captures the total number of page views and user visits to your extension product page at the Microsoft Edge Add-ons store.  The data points are based on weekly or daily totals depending on the selected time range.
+The **Impressions** metric captures the total number of page views and user visits to your extension product page at the Microsoft Edge Add-ons website.  The data points are based on weekly or daily totals depending on the selected time range.
 
 The following example shows **Impressions** for an extension page over a three-month period:
 

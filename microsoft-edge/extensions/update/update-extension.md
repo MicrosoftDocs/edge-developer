@@ -1,6 +1,6 @@
 ---
 title: Update a Microsoft Edge extension
-description: How to update or remove an extension that's at the Microsoft Edge Add-ons store.
+description: How to update or remove an extension that's at the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,15 +10,15 @@ ms.date: 11/04/2022
 ---
 # Update a Microsoft Edge extension
 
-You can update or remove a published extension listing that's at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store at any time.
+You can update or remove a published extension listing that's at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website at any time.
 
-For an extension that doesn't use Partner Center and isn't at the Microsoft Edge Add-ons store, see [Set an externally installed extension to automatically update](./auto-update.md).
+For an extension that doesn't use Partner Center and isn't at the Microsoft Edge Add-ons website, see [Set an externally installed extension to automatically update](./auto-update.md).
 
 
 <!-- ====================================================================== -->
-## Update an existing extension at the Microsoft Edge Add-ons store
+## Update an existing extension at the Microsoft Edge Add-ons website
 
-To update an extension that's at the Microsoft Edge Add-ons store:
+To update an extension that's at the Microsoft Edge Add-ons website:
 
 1.  Go to your [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.
 
@@ -26,7 +26,7 @@ To update an extension that's at the Microsoft Edge Add-ons store:
 
 1.  After you make the changes, click **Publish** to update your extension listing and start the certification process.  The certification process for an update to an extension can take up to 7 business days.
 
-1.  After the `Status` column displays `In the store`, the extension update is available at the Microsoft Edge Add-ons store.
+1.  After the `Status` column displays `In the store`, the extension update is available at the Microsoft Edge Add-ons website.
 
 After your extension has been published, you can update the extension via the REST API; see [Use the REST API to update an extension](./api/using-addons-api.md).
 
@@ -34,7 +34,7 @@ After your extension has been published, you can update the extension via the RE
 <!-- ====================================================================== -->
 ## Update your extension during the certification step
 
-While your extension is in the certification stage, and before it gets published at the Microsoft Edge Add-ons store, you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
+While your extension is in the certification stage, and before it gets published at the Microsoft Edge Add-ons website, you can update your submitted extension. You might also need to update your extension if your extension fails the certification process.
 
 To check the status of your extension:
 
@@ -69,7 +69,7 @@ To edit your extension:
 
 
 <!-- ====================================================================== -->
-## Remove an extension that's at the Microsoft Edge Add-ons store
+## Remove an extension that's at the Microsoft Edge Add-ons website
 
 To remove an extension:
 
@@ -79,7 +79,7 @@ To remove an extension:
 
 1. Select **Unpublish** to remove the listing.
 
-The extension is now removed and is no longer present at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
+The extension is now removed and is no longer present at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Users who already installed your extension can continue to use it, but the extension isn't available to new users.
 
 
 <!-- ====================================================================== -->
@@ -90,5 +90,5 @@ The extension is now removed and is no longer present at the [Microsoft Edge Add
 * [Use the REST API to update an extension](./api/using-addons-api.md)
 
 External:
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website
 * [Partner Center developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd)

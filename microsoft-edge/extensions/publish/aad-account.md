@@ -20,7 +20,7 @@ A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.  
 <!-- ====================================================================== -->
 ## Making sure you have a Partner Center account with a Microsoft account (MSA) as the Primary Owner
 
-To create a Partner Center account that can publish Microsoft Edge extensions at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, you must have a Microsoft account (MSA), either by creating one directly or by using your personal GitHub account credentials.
+To create a Partner Center account that can publish Microsoft Edge extensions at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, you must have a Microsoft account (MSA), either by creating one directly or by using your personal GitHub account credentials.
 
 After your Partner Center account is able to publish Microsoft Edge extensions, you can link the Partner Center account to an Microsoft Entra tenant.  A linked Microsoft Entra tenant enables the added users to sign in to your Partner Center developer account by using their work accounts.
 

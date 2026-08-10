@@ -1,6 +1,6 @@
 ---
 title: Use the REST API to update an extension
-description: REST endpoints to automate updating an extension that's been published at the Microsoft Edge Add-ons store.
+description: REST endpoints to automate updating an extension that's been published at the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 09/19/2024
 ---
 # Use the REST API to update an extension
 
-Use this REST API to programmatically update an extension (or a theme) that's been published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the Microsoft Edge Add-ons store without using Partner Center. 
+Use this REST API to programmatically update an extension (or a theme) that's been published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the Microsoft Edge Add-ons website without using Partner Center. 
 
 This REST API exposes endpoints for:
 * [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
@@ -97,7 +97,7 @@ Details are below.
 | _operation_ | A REST operation such as GET or POST. |
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge extension. |
-| _product_, _add-on_ | A Microsoft Edge extension or theme that's published at the Microsoft Edge Add-ons store. |
+| _product_, _add-on_ | A Microsoft Edge extension or theme that's published at the Microsoft Edge Add-ons website. |
 | _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 128-bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
@@ -414,7 +414,7 @@ See also:
 ## Publishing the submission
 <!-- endpoint 3: POST /submissions -->
 
-Use this API to publish the current draft of the product at the Microsoft Edge Add-ons store.
+Use this API to publish the current draft of the product at the Microsoft Edge Add-ons website.
 
 See also [Publish the product draft submission](./addons-api-reference.md#publish-the-product-draft-submission) in _REST API Reference for updating an extension_.
 

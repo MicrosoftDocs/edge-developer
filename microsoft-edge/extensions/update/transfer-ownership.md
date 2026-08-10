@@ -65,7 +65,7 @@ For questions about this process, contact [ext_dev_support@microsoft.com](mailto
 
 After the ownership transfer, the new owner should publish an update of the extension promptly, to ensure that accurate and up-to-date information is displayed.
 
-Changes to the following fields of the extension's listing don't automatically appear at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store when the ownership is transferred:
+Changes to the following fields of the extension's listing don't automatically appear at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website when the ownership is transferred:
 * Description.
 * Screenshots.
 * Privacy policy URL.

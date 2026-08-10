@@ -137,7 +137,7 @@ landingContent:
           - text: App Developer Agreement Addendum for Microsoft Edge program users
             url: /legal/microsoft-edge/extensions/ada-addendum
 
-          - text: Developer policies for the Microsoft Edge Add-ons store
+          - text: Developer policies for the Microsoft Edge Add-ons website
             url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
@@ -238,7 +238,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge Add-ons store
+          - text: Microsoft Edge Add-ons website
             url: https://microsoftedge.microsoft.com
 
           - text: Everything to know about browser extensions  # introduction for users
