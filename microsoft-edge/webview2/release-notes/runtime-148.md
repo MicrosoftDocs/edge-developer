@@ -12,6 +12,8 @@ ms.date: 06/11/2026
 
 Release Date: May 11, 2026
 
+This release includes the changes listed in [Prerelease Runtime 148 (Apr. 13, 2026)](./runtime-148-prerelease.md).
+
 
 <!-- ====================================================================== -->
 ## Bug fixes

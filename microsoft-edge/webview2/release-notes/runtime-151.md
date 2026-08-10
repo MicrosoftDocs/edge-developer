@@ -12,6 +12,8 @@ ms.date: 08/03/2026
 
 Release Date: Aug. 3, 2026
 
+This release includes the changes listed in [Prerelease Runtime 151 (Jul. 7, 2026)](./runtime-151-prerelease.md).
+
 
 <!-- ====================================================================== -->
 ## Bug fixes

@@ -12,6 +12,8 @@ ms.date: 06/11/2026
 
 Release Date: Dec. 8, 2025
 
+This release includes the changes listed in [Prerelease Runtime 143 (Nov. 7, 2025)](./runtime-143-prerelease.md).
+
 
 <!-- ====================================================================== -->
 ## Bug fixes

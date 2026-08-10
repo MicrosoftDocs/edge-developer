@@ -12,6 +12,8 @@ ms.date: 07/07/2026
 
 Release Date: Jul. 7, 2026
 
+This release includes the changes listed in [Prerelease Runtime 150 (Jun. 11, 2026)](./runtime-150-prerelease.md).
+
 
 <!-- ====================================================================== -->
 ## WebView2 Runtime is changing to a 2-week release cadence
