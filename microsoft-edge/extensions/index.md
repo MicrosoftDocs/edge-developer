@@ -40,7 +40,7 @@ Microsoft Edge add-ons include extensions and themes.  As an extension developer
 
 To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result.  
 
-The product detail page for the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) appears:
+The product detail page for the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension appears:
 
 ![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
 
