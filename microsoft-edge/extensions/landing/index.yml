@@ -89,7 +89,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Overview and timelines for migrating to Manifest V3
+          - text: Timeline for migrating to Manifest V3
             url: ../developer-guide/manifest-v3.md
 
           - text: Migrate an extension from Manifest V2 to V3
@@ -242,7 +242,7 @@ landingContent:
             url: https://microsoftedge.microsoft.com
 
           - text: Everything to know about browser extensions  # introduction for users
-            url: https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions
+            url: https://www.microsoft.com/en-us/edge/learning-center/everything-to-know-about-browser-extensions  # requires /en-us/
 
           - text: Add, turn off, or remove extensions in Microsoft Edge  # support steps for users
             url: https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026

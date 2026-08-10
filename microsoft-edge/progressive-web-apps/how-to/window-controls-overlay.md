@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 05/22/2024
+ms.date: 08/04/2026
 ---
 # Display content in the title bar area using Window Controls Overlay
 
@@ -43,20 +43,6 @@ See also:
 * [display_override](https://developer.mozilla.org/docs/Web/Manifest/display_override) at MDN > References > Web app manifests.
 * [Web app manifests](https://developer.mozilla.org/docs/Web/Manifest) at MDN > References.
 * [The web app manifest](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest) in _Making PWAs installable_ at MDN > References > Progressive web apps > Guides.
-
-
-<!-- ====================================================================== -->
-## Toggle the title bar
-
-When the Window Controls Overlay feature is enabled, the user can choose to have the title bar or not, by clicking the title bar toggle button:
-
-![Select the title bar toggle button](./window-controls-overlay-images/wco-toggle-button.png)
-
-Your code can't assume that the window controls overlay is displayed, because:
-* The user can choose whether to display the title bar.
-* Your app can also run in a web browser or on a mobile device, as well as running as a desktop app.
-
-Therefore, your code needs to react to title bar geometry changes.  To learn more, see [React to overlay changes](#react-to-overlay-changes).
 
 
 <!-- ====================================================================== -->
@@ -166,13 +152,10 @@ if ('windowControlsOverlay' in navigator) {
 
    | Icon | Tooltip |
    | --- | --- |
-   | ![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png) | **Hide title bar** |
    | ![The "Settings and more" icon](./window-controls-overlay-images/settings-and-more-icon.png) | **Settings and more** |
    | ![The "Minimize" icon](./window-controls-overlay-images/minimize-icon.png) | **Minimize** |
    | ![The "Restore" icon](./window-controls-overlay-images/restore-icon.png) | **Restore** |
    | ![The "Close" icon](./window-controls-overlay-images/close-icon.png) | **Close** |
-
-1. In the title bar, click the **Hide title bar** (![The "Hide title bar" icon](./window-controls-overlay-images/hide-title-bar-icon.png)) button.
 
    The app now displays content all the way to the top of the window frame, where the title bar used to be:
 

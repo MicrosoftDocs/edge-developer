@@ -45,21 +45,6 @@ Use the DevTools repo to have longer conversations, especially when you need to 
 
 
 <!-- ====================================================================== -->
-## Submit a cross-browser suggestion to the Web We Want
-
-To make a feature request across browser teams or standards bodies, submit a request at [The Web We Want initiative](../web-we-want/index.md).
-
-The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
-
-*  Submit web platform or developer tool features.
-*  View the list of submitted Wants, and vote on them.
-*  Participate in discussions.
-*  Use the links to resources.
-
-You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
-
-
-<!-- ====================================================================== -->
 ## File a documentation issue
 
 To enter a GitHub issue from within a documentation article, in the **Feedback** section at the bottom of an article, select the **This page** button.

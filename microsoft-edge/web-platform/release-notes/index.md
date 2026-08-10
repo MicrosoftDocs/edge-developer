@@ -14,9 +14,9 @@ These release notes cover the new web platform features and updates in Microsoft
 To stay up-to-date and get the latest web platform features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
 <!-- maint:
-latest 10
-in toc.yml, add new relnotes page, move a relnotes page to archive
-in /web-platform/release-notes/index.md, add new relnotes page, remove earliest relnotes page -->
+toc.yml - add new relnotes page, move a relnotes page to archive
+/web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page -->
+* [Microsoft Edge 152 web platform release notes (Aug. 2026)](./152.md)
 * [Microsoft Edge 151 web platform release notes (Jul. 2026)](./151.md)
 * [Microsoft Edge 150 web platform release notes (Jul. 2026)](./150.md)
 * [Microsoft Edge 149 web platform release notes (Jun. 2026)](./149.md)
@@ -26,7 +26,6 @@ in /web-platform/release-notes/index.md, add new relnotes page, remove earliest 
 * [Microsoft Edge 145 web platform release notes (Feb. 2026)](./145.md)
 * [Microsoft Edge 144 web platform release notes (Jan. 2026)](./144.md)
 * [Microsoft Edge 143 web platform release notes (Dec. 2025)](./143.md)
-* [Microsoft Edge 142 web platform release notes (Oct. 2025)](./142.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
