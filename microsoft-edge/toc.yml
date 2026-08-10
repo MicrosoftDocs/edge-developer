@@ -1521,91 +1521,105 @@
               # in /webview2/release-notes/index.md, add new relnotes links, remove earliest relnotes links
               # keep release nnn & prerelease nnn together
               # 152-143
-            - name: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - Runtime (Aug. 3, 2026)
-              href: ./webview2/release-notes/1-0-4181-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 - SDK (Aug. 3, 2026)
-              href: ./webview2/release-notes/1-0-4181-prerelease-sdk.md
+            - name: Runtime release notes
+              items:
+                - name: Prerelease Runtime 152 (Aug. 3, 2026)
+                  href: ./webview2/release-notes/runtime-152-prerelease.md
 
-            - name: Release SDK 1.0.4129.50, for Runtime 151 - Runtime (Aug. 3, 2026)
-              href: ./webview2/release-notes/1-0-4129-50-runtime.md
-            - name: Release SDK 1.0.4129.50, for Runtime 151 - SDK (Aug. 3, 2026)
-              href: ./webview2/release-notes/1-0-4129-50-sdk.md
-            - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 - Runtime (Jul. 7, 2026)
-              href: ./webview2/release-notes/1-0-4126-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 - SDK (Jul. 7, 2026)
-              href: ./webview2/release-notes/1-0-4126-prerelease-sdk.md
+                - name: Runtime 151 (Aug. 3, 2026)
+                  href: ./webview2/release-notes/runtime-151.md
+                - name: Prerelease Runtime 151 (Jul. 7, 2026)
+                  href: ./webview2/release-notes/runtime-151-prerelease.md
 
-            - name: Release SDK 1.0.4078.44, for Runtime 150 - Runtime (Jul. 7, 2026)
-              href: ./webview2/release-notes/1-0-4078-44-runtime.md
-            - name: Release SDK 1.0.4078.44, for Runtime 150 - SDK (Jul. 7, 2026)
-              href: ./webview2/release-notes/1-0-4078-44-sdk.md
-            - name: Prerelease SDK 1.0.4071-prerelease, for Runtime 150 - Runtime (Jun. 11, 2026)
-              href: ./webview2/release-notes/1-0-4071-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.4071-prerelease, for Runtime 150 - SDK (Jun. 11, 2026)
-              href: ./webview2/release-notes/1-0-4071-prerelease-sdk.md
+                - name: Runtime 150 (Jul. 7, 2026)
+                  href: ./webview2/release-notes/runtime-150.md
+                - name: Prerelease Runtime 150 (Jun. 11, 2026)
+                  href: ./webview2/release-notes/runtime-150-prerelease.md
 
-            - name: Release SDK 1.0.4022.49, for Runtime 149 - Runtime (Jun. 11, 2026)
-              href: ./webview2/release-notes/1-0-4022-49-runtime.md
-            - name: Release SDK 1.0.4022.49, for Runtime 149 - SDK (Jun. 11, 2026)
-              href: ./webview2/release-notes/1-0-4022-49-sdk.md
-            - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - Runtime (May 11, 2026)
-              href: ./webview2/release-notes/1-0-4015-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 - SDK (May 11, 2026)
-              href: ./webview2/release-notes/1-0-4015-prerelease-sdk.md
+                - name: Runtime 149 (Jun. 11, 2026)
+                  href: ./webview2/release-notes/runtime-149.md
+                - name: Prerelease Runtime 149 (May 11, 2026)
+                  href: ./webview2/release-notes/runtime-149-prerelease.md
 
-            - name: Release SDK 1.0.3967.48, for Runtime 148 - Runtime (May 11, 2026)
-              href: ./webview2/release-notes/1-0-3967-48-runtime.md
-            - name: Release SDK 1.0.3967.48, for Runtime 148 - SDK (May 11, 2026)
-              href: ./webview2/release-notes/1-0-3967-48-sdk.md
-            - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 - Runtime (Apr. 13, 2026)
-              href: ./webview2/release-notes/1-0-3965-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 - SDK (Apr. 13, 2026)
-              href: ./webview2/release-notes/1-0-3965-prerelease-sdk.md
+                - name: Runtime 148 (May 11, 2026)
+                  href: ./webview2/release-notes/runtime-148.md
+                - name: Prerelease Runtime 148 (Apr. 13, 2026)
+                  href: ./webview2/release-notes/runtime-148-prerelease.md
 
-            - name: Release SDK 1.0.3912.50, for Runtime 147 - Runtime (Apr. 13, 2026)
-              href: ./webview2/release-notes/1-0-3912-50-runtime.md
-            - name: Release SDK 1.0.3912.50, for Runtime 147 - SDK (Apr. 13, 2026)
-              href: ./webview2/release-notes/1-0-3912-50-sdk.md
-            - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 - Runtime (Mar. 16, 2026)
-              href: ./webview2/release-notes/1-0-3908-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 - SDK (Mar. 16, 2026)
-              href: ./webview2/release-notes/1-0-3908-prerelease-sdk.md
+                - name: Runtime 147 (Apr. 13, 2026)
+                  href: ./webview2/release-notes/runtime-147.md
+                - name: Prerelease Runtime 147 (Mar. 16, 2026)
+                  href: ./webview2/release-notes/runtime-147-prerelease.md
 
-            - name: Release SDK 1.0.3856.49, for Runtime 146 - Runtime (Mar. 16, 2026)
-              href: ./webview2/release-notes/1-0-3856-49-runtime.md
-            - name: Release SDK 1.0.3856.49, for Runtime 146 - SDK (Mar. 16, 2026)
-              href: ./webview2/release-notes/1-0-3856-49-sdk.md
-            - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 - Runtime (Feb. 16, 2026)
-              href: ./webview2/release-notes/1-0-3848-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 - SDK (Feb. 16, 2026)
-              href: ./webview2/release-notes/1-0-3848-prerelease-sdk.md
+                - name: Runtime 146 (Mar. 16, 2026)
+                  href: ./webview2/release-notes/runtime-146.md
+                - name: Prerelease Runtime 146 (Feb. 16, 2026)
+                  href: ./webview2/release-notes/runtime-146-prerelease.md
 
-            - name: Release SDK 1.0.3800.47, for Runtime 145 - Runtime (Feb. 16, 2026)
-              href: ./webview2/release-notes/1-0-3800-47-runtime.md
-            - name: Release SDK 1.0.3800.47, for Runtime 145 - SDK (Feb. 16, 2026)
-              href: ./webview2/release-notes/1-0-3800-47-sdk.md
-            - name: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 - Runtime (Jan. 19, 2026)
-              href: ./webview2/release-notes/1-0-3796-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 - SDK (Jan. 19, 2026)
-              href: ./webview2/release-notes/1-0-3796-prerelease-sdk.md
+                - name: Runtime 145 (Feb. 16, 2026)
+                  href: ./webview2/release-notes/runtime-145.md
+                - name: Prerelease Runtime 145 (Jan. 19, 2026)
+                  href: ./webview2/release-notes/runtime-145-prerelease.md
 
-            - name: Release SDK 1.0.3719.77, for Runtime 144 - Runtime (Jan. 27, 2026)
-              href: ./webview2/release-notes/1-0-3719-77-runtime.md
-            - name: Release SDK 1.0.3719.77, for Runtime 144 - SDK (Jan. 27, 2026)
-              href: ./webview2/release-notes/1-0-3719-77-sdk.md
-            - name: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 - Runtime (Dec. 8, 2025)
-              href: ./webview2/release-notes/1-0-3712-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 - SDK (Dec. 8, 2025)
-              href: ./webview2/release-notes/1-0-3712-prerelease-sdk.md
+                - name: Runtime 144 (Jan. 27, 2026)
+                  href: ./webview2/release-notes/runtime-144.md
+                - name: Prerelease Runtime 144 (Dec. 8, 2025)
+                  href: ./webview2/release-notes/runtime-144-prerelease.md
 
-            - name: Release SDK 1.0.3650.58, for Runtime 143 - Runtime (Dec. 8, 2025)
-              href: ./webview2/release-notes/1-0-3650-58-runtime.md
-            - name: Release SDK 1.0.3650.58, for Runtime 143 - SDK (Dec. 8, 2025)
-              href: ./webview2/release-notes/1-0-3650-58-sdk.md
-            - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 - Runtime (Nov. 7, 2025)
-              href: ./webview2/release-notes/1-0-3650-prerelease-runtime.md
-            - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 - SDK (Nov. 7, 2025)
-              href: ./webview2/release-notes/1-0-3650-prerelease-sdk.md
+                - name: Runtime 143 (Dec. 8, 2025)
+                  href: ./webview2/release-notes/runtime-143.md
+                - name: Prerelease Runtime 143 (Nov. 7, 2025)
+                  href: ./webview2/release-notes/runtime-143-prerelease.md
+
+            - name: SDK release notes
+              items:
+                - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+                  href: ./webview2/release-notes/1-0-4181-prerelease.md
+
+                - name: SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)
+                  href: ./webview2/release-notes/1-0-4129-50.md
+                - name: SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
+                  href: ./webview2/release-notes/1-0-4126-prerelease.md
+
+                - name: SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)
+                  href: ./webview2/release-notes/1-0-4078-44.md
+                - name: SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
+                  href: ./webview2/release-notes/1-0-4071-prerelease.md
+
+                - name: SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
+                  href: ./webview2/release-notes/1-0-4022-49.md
+                - name: SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
+                  href: ./webview2/release-notes/1-0-4015-prerelease.md
+
+                - name: SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
+                  href: ./webview2/release-notes/1-0-3967-48.md
+                - name: SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
+                  href: ./webview2/release-notes/1-0-3965-prerelease.md
+
+                - name: SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
+                  href: ./webview2/release-notes/1-0-3912-50.md
+                - name: SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+                  href: ./webview2/release-notes/1-0-3908-prerelease.md
+
+                - name: SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+                  href: ./webview2/release-notes/1-0-3856-49.md
+                - name: SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+                  href: ./webview2/release-notes/1-0-3848-prerelease.md
+
+                - name: SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
+                  href: ./webview2/release-notes/1-0-3800-47.md
+                - name: SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+                  href: ./webview2/release-notes/1-0-3796-prerelease.md
+
+                - name: SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
+                  href: ./webview2/release-notes/1-0-3719-77.md
+                - name: SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+                  href: ./webview2/release-notes/1-0-3712-prerelease.md
+
+                - name: SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
+                  href: ./webview2/release-notes/1-0-3650-58.md
+                - name: SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
+                  href: ./webview2/release-notes/1-0-3650-prerelease.md
 
             - name: Archive  # keep Runtime nnn pair together
               items:
