@@ -44,8 +44,11 @@ Your extensions are hosted at the [Microsoft Edge Add-ons](https://microsoftedge
 
 (Previously, non-store-based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.)
 
-> [!IMPORTANT]
-> Be careful when you update extensions that have a dependency on native binaries.
+
+<!-- ------------------------------ -->
+#### Updating an extension that has a dependency on native binaries
+
+Be careful when you update an extension that has a dependency on native binaries.
 
 
 <!-- ====================================================================== -->

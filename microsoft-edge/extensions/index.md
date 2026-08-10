@@ -22,7 +22,7 @@ The present documentation is for extension developers, rather than end-users of 
 * [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
    * [Browser-specific APIs](#browser-specific-apis)
-* [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
+* [Publish your extension to browser extension stores](#publish-your-extension-to-browser-extension-stores)
    * [Migrate an existing extension to Microsoft Edge](#migrate-an-existing-extension-to-microsoft-edge)
    * [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website)
 * [The Featured badge](#the-featured-badge)
@@ -113,9 +113,9 @@ Some tutorials for browser-specific extension store sites use browser-specific A
 
 
 <!-- ====================================================================== -->
-## Publish your extension to browser stores
+## Publish your extension to browser extension stores
 
-You can submit and seek browser extensions in the following browser extension stores.
+You can submit your extension at multiple browser extension stores, including:
 
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
 * [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
@@ -123,7 +123,7 @@ You can submit and seek browser extensions in the following browser extension st
 * [Apple App Store](https://apps.apple.com)
 * [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 
-Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
+Some browser extension stores allow you to download listed extensions for other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
 To make sure your users find your extension in Microsoft Edge, publish the extension at the Microsoft Edge Add-ons website.  See [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website), below.
 
@@ -154,7 +154,7 @@ To submit an extension at the Microsoft Edge Add-ons website, you need to provid
 * Optional promotional media, such as screenshots, promotional tiles, and a video URL.
 * Information that describes your extension such as the name, short description, and a privacy policy link.
 
-Different stores might have different submission requirements.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
+Different browser extension stores might have different requirements for submitting extensions.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  You're notified of the outcome and given next steps as required.  If you submit an extension _update_ at the Microsoft Edge Add-ons website, that begins a new review process.
 

@@ -199,6 +199,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 
 The `HKEY_CURRENT_USER\SOFTWARE\WOW6432Node` registry node is not searched on 64-bit machines, due to the way the registry works on them. For more information, see [Registry Keys Affected by Windows Installations That Include Windows on Windows (WOW) Support For Multiple Processor Architectures](/windows/win32/winprog64/shared-registry-keys).
 
+
+<!-- ------------------------------ -->
 #### Extension IDs required for both stores
 
 If you have an extension both at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website and the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions), you must add the extension IDs that correspond to both of the stores, in the `allowed_origins` of the native messaging host manifest file.
