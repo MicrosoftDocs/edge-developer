@@ -13,8 +13,6 @@ ms.date: 04/17/2026
 
 A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to extend the user experience (UX) for end-users in a specialized way.  An extension provides a niche experience or function that's important to a target audience.
 
-Microsoft Edge add-ons include extensions and themes.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
-
 The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 <!-- omit See Also children at end -->
@@ -36,11 +34,13 @@ The present documentation is for extension developers, rather than end-users of 
 <!-- ====================================================================== -->
 ## Introduction
 
-As a browser extension developer, you publish a Microsoft Edge extension (or theme) at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
+Microsoft Edge add-ons include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
 
-At the Microsoft Edge Add-ons website, you can enter various search terms in the **Search extensions, themes, and more** text box to find extensions and themes, such as the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
+![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
+
+To find an extension, you use the **Search extensions, themes, and more** text box, such as to find the [LinkedIn](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
    
-![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
+![The LinkedIn extension](./index-images/example-extension.png)
 
 You can create a Microsoft Edge extension to add features to the browser, or improve the features of specific webpages by defining a companion experience.  _Companion experiences_ include ad blockers and password managers.
 
