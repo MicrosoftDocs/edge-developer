@@ -38,7 +38,9 @@ Microsoft Edge add-ons include extensions and themes.  As an extension developer
 
 ![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
 
-To find an extension, you use the **Search extensions, themes, and more** text box, such as to find the [LinkedIn](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
+To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find the LinkedIn extension, enter "LinkedIn", and then click a result.  
+
+The product detail page for the [LinkedIn Extension](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) appears:
    
 ![The LinkedIn extension](./index-images/example-extension.png)
 
