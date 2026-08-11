@@ -34,7 +34,7 @@ To install a Microsoft Edge extension that extends DevTools:
 
    For example, go to the [React Developer Tools](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil) extension, which is the example used for the steps below:
 
-   ![The React Developer Tools page at the Add-ons store](./extensions-images/react-add-on-listing.png)
+   ![The React Developer Tools page at the Add-ons website](./extensions-images/react-add-on-listing.png)
 
 1. Click the **Get** button.  An installation dialog opens, **Add \<extension name\> to Microsoft Edge?**
 
