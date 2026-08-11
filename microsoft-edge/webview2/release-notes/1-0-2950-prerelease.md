@@ -42,4 +42,4 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

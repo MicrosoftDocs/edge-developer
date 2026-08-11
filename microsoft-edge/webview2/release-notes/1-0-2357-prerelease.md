@@ -431,4 +431,4 @@ Previous phase: [`WebResourceRequested` for workers](./1-0-1340-prerelease.md#we
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

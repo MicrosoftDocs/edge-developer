@@ -1522,6 +1522,9 @@
               # 152-143
             - name: Runtime release notes
               items:
+                - name: Release notes for the WebView2 Runtime
+                  href: ./webview2/release-notes/index-runtime.md
+
                 - name: Prerelease Runtime 152 (Aug. 3, 2026)
                   href: ./webview2/release-notes/runtime-152-prerelease.md
 
@@ -1572,6 +1575,9 @@
 
             - name: SDK release notes
               items:
+                - name: Release notes for WebView2 SDKs
+                  href: ./webview2/release-notes/index-sdk.md
+
                 - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
                   href: ./webview2/release-notes/1-0-4181-prerelease.md
 

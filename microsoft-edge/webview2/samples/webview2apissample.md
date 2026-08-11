@@ -307,7 +307,7 @@ The repo version of this sample has a Prerelease version of the WebView2 SDK ins
    <package id="Microsoft.Windows.ImplementationLibrary" version="1.0.220201.1" targetFramework="native" />
    ```
 
-1. Check what's the latest Prerelease version number, at [Release notes for the WebView2 SDK](../release-notes/index.md).
+1. Check what's the latest Prerelease version number, at [Release notes for WebView2](../release-notes/index.md).
 
 1. In Visual Studio, in **Solution Explorer**, right-click the **WebView2APISample** project (not the solution node above it), and then select **Manage NuGet Packages**.
 

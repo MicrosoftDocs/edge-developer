@@ -32,4 +32,4 @@ This Prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

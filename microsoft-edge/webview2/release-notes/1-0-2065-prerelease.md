@@ -59,4 +59,4 @@ Added source frame info to `NewWindowRequested`, to support identifying the sour
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

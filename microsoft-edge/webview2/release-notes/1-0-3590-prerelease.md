@@ -126,4 +126,4 @@ This Prerelease SDK includes the following bug fixes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

@@ -51,4 +51,4 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

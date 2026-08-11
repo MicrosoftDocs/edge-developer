@@ -46,4 +46,4 @@ See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

@@ -48,4 +48,4 @@ Added support for [multiple user profiles](/microsoft-edge/webview2/reference/wi
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

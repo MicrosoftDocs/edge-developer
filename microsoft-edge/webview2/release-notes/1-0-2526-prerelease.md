@@ -244,4 +244,4 @@ Previous phase: [Fluent Style Overlay Scrollbar](./1-0-2470-prerelease.md#fluent
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

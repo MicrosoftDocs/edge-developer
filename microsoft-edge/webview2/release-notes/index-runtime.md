@@ -1,6 +1,6 @@
 ---
-title: Release notes for WebView2
-description: Release notes for Microsoft Edge WebView2 cover new features, APIs, and fixes for Win32, WPF, and WinForms.
+title: Release notes for the WebView2 Runtime
+description: Microsoft Edge WebView2 Runtime new features, APIs, and fixes for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,11 +8,36 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/05/2026
 ---
-# Release notes for WebView2
+# Release notes for the WebView2 Runtime
 
-See:
-* [Release notes for the WebView2 Runtime](./index-runtime.md)
-* [Release notes for WebView2 SDKs](./index-sdk.md)
+<!-- maint:
+list past 10 releases (runtimes)
+in toc.yml, add new relnotes pages, move relnotes pages to archive
+in /webview2/release-notes/index.md, add new relnotes links, remove earliest relnotes links
+keep release nnn & prerelease nnn together
+152-143: -->
+Release notes for recent Runtimes:
+* [Prerelease Runtime 152 (Aug. 3, 2026)](./runtime-152-prerelease.md)
+* [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
+* [Prerelease Runtime 151 (Jul. 7, 2026)](./runtime-151-prerelease.md)
+* [Runtime 150 (Jul. 7, 2026)](./runtime-150.md)
+* [Prerelease Runtime 150 (Jun. 11, 2026)](./runtime-150-prerelease.md)
+* [Runtime 149 (Jun. 11, 2026)](./runtime-149.md)
+* [Prerelease Runtime 149 (May 11, 2026)](./runtime-149-prerelease.md)
+* [Runtime 148 (May 11, 2026)](./runtime-148.md)
+* [Prerelease Runtime 148 (Apr. 13, 2026)](./runtime-148-prerelease.md)
+* [Runtime 147 (Apr. 13, 2026)](./runtime-147.md)
+* [Prerelease Runtime 147 (Mar. 16, 2026)](./runtime-147-prerelease.md)
+* [Runtime 146 (Mar. 16, 2026)](./runtime-146.md)
+* [Prerelease Runtime 146 (Feb. 16, 2026)](./runtime-146-prerelease.md)
+* [Runtime 145 (Feb. 16, 2026)](./runtime-145.md)
+* [Prerelease Runtime 145 (Jan. 19, 2026)](./runtime-145-prerelease.md)
+* [Runtime 144 (Jan. 27, 2026)](./runtime-144.md)
+* [Prerelease Runtime 144 (Dec. 8, 2025)](./runtime-144-prerelease.md)
+* [Runtime 143 (Dec. 8, 2025)](./runtime-143.md)
+* [Prerelease Runtime 143 (Nov. 7, 2025)](./runtime-143-prerelease.md)
+
+For earlier release notes, see **Archive** in the table of contents.
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 

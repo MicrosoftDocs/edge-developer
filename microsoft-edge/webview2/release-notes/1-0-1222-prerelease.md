@@ -97,4 +97,4 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

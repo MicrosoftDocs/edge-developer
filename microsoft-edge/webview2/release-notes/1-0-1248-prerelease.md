@@ -66,4 +66,4 @@ Use the [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewe
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

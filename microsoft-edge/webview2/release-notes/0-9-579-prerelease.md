@@ -23,4 +23,4 @@ This SDK was last updated Jul. 20, 2020.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

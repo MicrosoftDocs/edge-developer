@@ -24,4 +24,4 @@ Release Date: Nov. 7, 2025
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

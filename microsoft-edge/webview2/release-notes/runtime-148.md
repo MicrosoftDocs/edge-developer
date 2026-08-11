@@ -24,4 +24,4 @@ This release includes the changes listed in [Prerelease Runtime 148 (Apr. 13, 20
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

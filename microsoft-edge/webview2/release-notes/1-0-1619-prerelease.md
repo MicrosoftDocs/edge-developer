@@ -214,4 +214,4 @@ Previous phase: [Tracking Prevention API](./1-0-1549-prerelease.md#tracking-prev
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

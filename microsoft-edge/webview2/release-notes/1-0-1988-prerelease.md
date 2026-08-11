@@ -242,4 +242,4 @@ The `TextDirectionKind` enum specifies the text direction as left to right or ri
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

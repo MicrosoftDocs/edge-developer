@@ -36,4 +36,6 @@ Release Date: Aug. 3, 2026
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for the WebView2 Runtime](./index-runtime.md)
+* [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](./index.md)

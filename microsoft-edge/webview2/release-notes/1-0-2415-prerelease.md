@@ -230,4 +230,4 @@ Previous phase: [Hit-testing results on regions](./1-0-2357-prerelease.md#hit-te
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

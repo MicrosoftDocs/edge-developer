@@ -77,4 +77,4 @@ Previous phase: [Allow input event messages to pass through the browser window](
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

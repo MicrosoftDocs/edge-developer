@@ -260,4 +260,4 @@ Previous phase: [`FailureSourceModulePath` property](./1-0-2164-prerelease.md#fa
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)

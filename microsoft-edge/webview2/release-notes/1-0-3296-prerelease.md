@@ -75,4 +75,4 @@ Previous phase: [Set default background color on WebView2 initialization (Defaul
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 SDK](./index.md)
+* [Release notes for WebView2](./index.md)
