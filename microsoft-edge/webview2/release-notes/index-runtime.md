@@ -154,6 +154,34 @@ Async methods:
 - .NET/WinRT: XYZAsync
 -->
 
+Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+
+
+<!-- ====================================================================== -->
+## Release cadence
+
+The following have a 2-week release cadence:
+* The WebView2 Runtime.
+* Release notes about the WebView2 Runtime.
+
+See also:
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
+
+<!-- ====================================================================== -->
+## Updating the Runtime
+
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
+
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
+
+* For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+
+* To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
+
+See also:
+* [Updating the SDK](./index-sdk.md#updating-the-sdk) in _Release notes for WebView2 SDKs_.
+
 
 <!-- ====================================================================== -->
 ## See also
