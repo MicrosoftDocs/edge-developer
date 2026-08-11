@@ -1511,7 +1511,7 @@
 # -----------------------------------------------------------------------------
         - name: Release notes  # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2
           items:
-            - name: Release notes for the WebView2 SDK
+            - name: Release notes for WebView2
               href: ./webview2/release-notes/index.md
 
               # maint:
