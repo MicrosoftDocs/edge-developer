@@ -1526,12 +1526,10 @@
                   href: ./webview2/release-notes/index-runtime.md
 
                 - name: Prerelease Runtime 152 (Aug. 3, 2026)
-                  href: ./webview2/release-notes/runtime-152-prerelease.md
+                  href: ./webview2/release-notes/runtime-152.md
 
                 - name: Runtime 151 (Aug. 3, 2026)
                   href: ./webview2/release-notes/runtime-151.md
-                - name: Prerelease Runtime 151 (Jul. 7, 2026)
-                  href: ./webview2/release-notes/runtime-151-prerelease.md
 
                 - name: Runtime 150 (Jul. 7, 2026)
                   href: ./webview2/release-notes/runtime-150.md
