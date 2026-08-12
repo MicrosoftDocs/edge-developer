@@ -1533,8 +1533,6 @@
 
                 - name: Runtime 150 (Jul. 7, 2026)
                   href: ./webview2/release-notes/runtime-150.md
-                - name: Prerelease Runtime 150 (Jun. 11, 2026)
-                  href: ./webview2/release-notes/runtime-150-prerelease.md
 
                 - name: Runtime 149 (Jun. 11, 2026)
                   href: ./webview2/release-notes/runtime-149.md

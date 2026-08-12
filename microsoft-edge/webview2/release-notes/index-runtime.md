@@ -20,7 +20,6 @@ Release notes for recent Runtimes:
 * [Prerelease Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
 * [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
 * [Runtime 150 (Jul. 7, 2026)](./runtime-150.md)
-   * [Prerelease Runtime 150 (Jun. 11, 2026)](./runtime-150-prerelease.md)
 * [Runtime 149 (Jun. 11, 2026)](./runtime-149.md)
    * [Prerelease Runtime 149 (May 11, 2026)](./runtime-149-prerelease.md)
 * [Runtime 148 (May 11, 2026)](./runtime-148.md)
