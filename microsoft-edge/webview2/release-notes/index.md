@@ -11,8 +11,8 @@ ms.date: 08/05/2026
 # Release notes for WebView2
 
 See:
-* [Release notes for the WebView2 Runtime](./index-runtime.md)
-* [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for the WebView2 Runtime](./runtime/index.md)
+* [Release notes for WebView2 SDKs](./sdk/index.md)
 
 
 <!-- ====================================================================== -->
