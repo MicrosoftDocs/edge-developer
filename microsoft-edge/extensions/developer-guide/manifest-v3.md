@@ -10,14 +10,14 @@ ms.date: 08/07/2026
 ---
 # Timeline for migrating to Manifest V3
 
-To plan the migration of your extension from Manifest V2 to Manifest V3, the following timeline shows the planned end of support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store, and in Microsoft Edge.
+To plan the migration of your extension from Manifest V2 to Manifest V3, the following timeline shows the planned end of support for Manifest V2 at Microsoft Partner Center, at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, and in Microsoft Edge.
 
 | Date | Changes |
 |---|---|
-| Jul. 2022 | Partner Center (and the Edge Add-ons store) no longer accepts new Manifest V2 extensions.  To publish a new extension, use Manifest V3. |
+| Jul. 2022 | Partner Center (and the Microsoft Edge Add-ons website) no longer accepts new Manifest V2 extensions.  To publish a new extension, use Manifest V3. |
 | Aug. 2026 | At Partner Center, if your extension uses Manifest V2, a Manifest V2 deprecation warning is displayed. |
 | Early 2027 | For enterprise customers, deprecation of Manifest V2 extensions is expected to begin. |
-| TBD | Partner Center (and the Edge Add-ons store) will no longer accept updates to extensions that continue to use Manifest V2.  You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
+| TBD | Partner Center (and the Microsoft Edge Add-ons website) will no longer accept updates to extensions that continue to use Manifest V2.  You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
 
 
 <!-- ====================================================================== -->
@@ -53,8 +53,8 @@ For information about end of support for Manifest V2 extensions in the Chromium 
 <!-- all links in article -->
 
 * [Migrate an extension from Manifest V2 to V3](./migrate-your-extension-from-manifest-v2-to-v3.md)
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) store.
-* [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) - blog post.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website
+* [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) blog post
 
 Chromium docs: 
 * [Chromium project](https://www.chromium.org/Home/)

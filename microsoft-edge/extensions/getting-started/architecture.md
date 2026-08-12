@@ -15,7 +15,7 @@ This article introduces Developer concepts about building a Microsoft Edge exten
 
 A Microsoft Edge *extension* is a small app that users can opt into that adds or modifies features of Microsoft Edge to provide a specialized experience or function that is important to a target audience. For an introduction, see [Overview of Microsoft Edge extensions](../index.md).
 
-Users browse and install extensions for Microsoft Edge from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
 **Detailed contents:**
 * [Understand how browsers work](#understand-how-browsers-work)
@@ -105,4 +105,4 @@ An extension provides opt-in permissions at install time.  You specify the exten
 ## See also
 
 * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)
-* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) - Browse and install extensions for Microsoft Edge.
+* [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website
