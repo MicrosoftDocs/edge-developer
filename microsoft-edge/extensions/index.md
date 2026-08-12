@@ -20,6 +20,7 @@ The present documentation is for extension developers, rather than end-users of 
 <!-- omit See Also children at end -->
 **Detailed contents:**
 * [Introduction](#introduction)
+* [The Microsoft Edge Add-ons website](#the-microsoft-edge-add-ons-website)
 * [Creating an extension for various browsers](#creating-an-extension-for-various-browsers)
 * [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
@@ -36,16 +37,6 @@ The present documentation is for extension developers, rather than end-users of 
 <!-- ====================================================================== -->
 ## Introduction
 
-Add-ons for Microsoft Edge include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
-
-![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
-
-To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result.  
-
-The product detail page for the [Microsoft Bing Homepage](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage/cjmjijnpnollocennnapedpaeecninea) extension appears:
-
-![The Microsoft Bing Homepage extension](./index-images/example-extension.png)
-
 You can create a Microsoft Edge extension to add features to the browser, or improve the features of specific webpages by defining a companion experience.  _Companion experiences_ include ad blockers and password managers.
 
 An extension should include at least the following features:
@@ -56,6 +47,20 @@ An extension should include at least the following features:
 
 See also:
 * [Get started developing an extension](./getting-started/index.md)
+
+
+<!-- ====================================================================== -->
+## The Microsoft Edge Add-ons website
+
+Add-ons for Microsoft Edge include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
+
+![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
+
+To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result.  
+
+The product detail page for the [Microsoft Bing Homepage](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage/cjmjijnpnollocennnapedpaeecninea) extension appears:
+
+![The Microsoft Bing Homepage extension](./index-images/example-extension.png)
 
 
 <!-- ====================================================================== -->
