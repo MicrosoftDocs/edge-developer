@@ -118,7 +118,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-For more information, see [Matching the Runtime version with the SDK version](../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
+For more information, see [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ For more information, see [Matching the Runtime version with the SDK version](..
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
@@ -154,7 +154,7 @@ Async methods:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 API Reference:
-* [WebView2 API Reference](../webview2-api-reference.md)
+* [WebView2 API Reference](../../webview2-api-reference.md)
    * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
    * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
    * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->

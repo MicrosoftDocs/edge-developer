@@ -81,7 +81,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 
 * [WebView class](../../reference/javascript/webview.yml) in the JavaScript Reference.
 
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ---
 
@@ -91,7 +91,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 
 The Chromium browser engine has introduced Local Network Access (LNA).  LNA is a security feature that prevents webpages from making requests to private or local network resources, unless the webpage has explicit permission to access the private or local network resources.  Examples of such resources are `localhost`, `192.168.*`, or `10.*`.
 
-LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
+LNA is currently disabled by default for WebView2 apps, but you can enable LNA support via the `msWebViewAllowLocalNetworkAccessChecks` flag.  For WebView2 apps, no action is required at this time.  For information about the flag, see [Available WebView2 browser flags](../../concepts/webview-features-flags.md#available-webview2-browser-flags) in _WebView2 browser flags_.
 
 After the upstream, Chromium code base stabilizes, we plan to add additional enum values in the `CoreWebView2PermissionKind` enum, to support LNA via the `SetPermissionState` method.  These new enum values will be used by the UWP `WebView.PermissionRequested` event, to give your WebView2 app explicit control over the Local Network Access (LNA) feature.
 
