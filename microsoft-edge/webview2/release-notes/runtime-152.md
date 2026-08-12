@@ -10,7 +10,7 @@ ms.date: 08/03/2026
 ---
 # Prerelease Runtime 152 (Aug. 3, 2026)
 
-Release Date: Aug. 3, 2026
+Release notes for Microsoft Edge WebView2 Prerelease Runtime 152, release date: Aug. 3, 2026.
 
 
 <!-- ====================================================================== -->
@@ -36,6 +36,6 @@ Release Date: Aug. 3, 2026
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for the WebView2 Runtime](./index-runtime.md)
-* [Release notes for WebView2 SDKs](./index-sdk.md)
 * [Release notes for WebView2](./index.md)
+   * [Release notes for the WebView2 Runtime](./index-runtime.md)
+   * [Release notes for WebView2 SDKs](./index-sdk.md)

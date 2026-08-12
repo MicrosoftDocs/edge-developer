@@ -75,3 +75,5 @@ Run your WebView2 host application at standard user integrity rather than elevat
 ## See also
 
 * [Release notes for WebView2](./index.md)
+   * [Release notes for the WebView2 Runtime](./index-runtime.md)
+   * [Release notes for WebView2 SDKs](./index-sdk.md)
