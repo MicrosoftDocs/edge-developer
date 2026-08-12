@@ -36,7 +36,7 @@ The present documentation is for extension developers, rather than end-users of 
 <!-- ====================================================================== -->
 ## Introduction
 
-Microsoft Edge add-ons include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
+Add-ons for Microsoft Edge include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
 
 ![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
 
