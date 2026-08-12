@@ -15,16 +15,16 @@ list past 10 releases (runtimes)
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
-* [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
-* [Runtime 150 (Jul. 7, 2026)](./runtime-150.md)
-* [Runtime 149 (Jun. 11, 2026)](./runtime-149.md)
-* [Runtime 148 (May 11, 2026)](./runtime-148.md)
-* [Runtime 147 (Apr. 13, 2026)](./runtime-147.md)
-* [Runtime 146 (Mar. 16, 2026)](./runtime-146.md)
-* [Runtime 145 (Feb. 16, 2026)](./runtime-145.md)
-* [Runtime 144 (Jan. 27, 2026)](./runtime-144.md)
-* [Runtime 143 (Dec. 8, 2025)](./runtime-143.md)
+* [Preview Runtime 152 (Aug. 3, 2026)](./152.md)
+* [Runtime 151 (Aug. 3, 2026)](./151.md)
+* [Runtime 150 (Jul. 7, 2026)](./150.md)
+* [Runtime 149 (Jun. 11, 2026)](./149.md)
+* [Runtime 148 (May 11, 2026)](./148.md)
+* [Runtime 147 (Apr. 13, 2026)](./147.md)
+* [Runtime 146 (Mar. 16, 2026)](./146.md)
+* [Runtime 145 (Feb. 16, 2026)](./145.md)
+* [Runtime 144 (Jan. 27, 2026)](./144.md)
+* [Runtime 143 (Dec. 8, 2025)](./143.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
