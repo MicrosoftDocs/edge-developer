@@ -12,8 +12,6 @@ ms.date: 06/11/2026
 
 Release notes for Microsoft Edge WebView2 Runtime 145, release date: Feb. 16, 2026
 
-This release includes the changes listed in [Prerelease Runtime 145 (Jan. 19, 2026)](./runtime-145-prerelease.md).
-
 [NuGet package for WebView2 SDK 1.0.3800.47](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3800.47)
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version 145.0.3800.47 or later.
