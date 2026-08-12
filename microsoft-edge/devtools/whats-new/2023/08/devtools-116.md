@@ -55,7 +55,7 @@ In the **Memory** tool, when there's more than one heap snapshot, a **Containmen
 
 ![The Containment Diff view in the Memory tool](./devtools-116-images/containment-diff.png)
 
-The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The dot symbol (![Dot](./devtools-116-images/dot.png)) means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
+The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The dot symbol (![Dot symbol](./devtools-116-images/dot.png)) means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
 For example: 
 
