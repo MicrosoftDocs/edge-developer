@@ -52,6 +52,8 @@ See [[Announcement] WebView2 Runtime moves to a 2-week release cadence (starting
 <!-- ====================================================================== -->
 ## Prerelease Runtime 150 (Jun. 11, 2026)
 
+Release notes for Microsoft Edge WebView2 Prerelease Runtime 150, release date: Jun. 11, 2026
+
 Runtime 150 (Jul. 7, 2026) includes these changes.
 
 

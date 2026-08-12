@@ -30,7 +30,7 @@ Release notes for Microsoft Edge WebView2 Runtime 151, release date: Aug. 3, 202
 <!-- ====================================================================== -->
 ## Prerelease Runtime 151 (Jul. 7, 2026)
 
-Release Date: Jul. 7, 2026
+Release notes for Microsoft Edge WebView2 Prerelease Runtime 151, release date: Jul. 7, 2026
 
 Runtime 151 (Aug. 3, 2026) includes these changes.
 

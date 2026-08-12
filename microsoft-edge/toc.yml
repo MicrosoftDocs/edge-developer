@@ -1536,38 +1536,24 @@
 
                 - name: Runtime 149 (Jun. 11, 2026)
                   href: ./webview2/release-notes/runtime-149.md
-                - name: Prerelease Runtime 149 (May 11, 2026)
-                  href: ./webview2/release-notes/runtime-149-prerelease.md
 
                 - name: Runtime 148 (May 11, 2026)
                   href: ./webview2/release-notes/runtime-148.md
-                - name: Prerelease Runtime 148 (Apr. 13, 2026)
-                  href: ./webview2/release-notes/runtime-148-prerelease.md
 
                 - name: Runtime 147 (Apr. 13, 2026)
                   href: ./webview2/release-notes/runtime-147.md
-                - name: Prerelease Runtime 147 (Mar. 16, 2026)
-                  href: ./webview2/release-notes/runtime-147-prerelease.md
 
                 - name: Runtime 146 (Mar. 16, 2026)
                   href: ./webview2/release-notes/runtime-146.md
-                - name: Prerelease Runtime 146 (Feb. 16, 2026)
-                  href: ./webview2/release-notes/runtime-146-prerelease.md
 
                 - name: Runtime 145 (Feb. 16, 2026)
                   href: ./webview2/release-notes/runtime-145.md
-                - name: Prerelease Runtime 145 (Jan. 19, 2026)
-                  href: ./webview2/release-notes/runtime-145-prerelease.md
 
                 - name: Runtime 144 (Jan. 27, 2026)
                   href: ./webview2/release-notes/runtime-144.md
-                - name: Prerelease Runtime 144 (Dec. 8, 2025)
-                  href: ./webview2/release-notes/runtime-144-prerelease.md
 
                 - name: Runtime 143 (Dec. 8, 2025)
                   href: ./webview2/release-notes/runtime-143.md
-                - name: Prerelease Runtime 143 (Nov. 7, 2025)
-                  href: ./webview2/release-notes/runtime-143-prerelease.md
 
             - name: SDK release notes
               items:

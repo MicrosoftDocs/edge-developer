@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Runtime 146 (Mar. 16, 2026)
 
-Release Date: Mar. 16, 2026
+Release notes for Microsoft Edge WebView2 Runtime 146, release date: Mar. 16, 2026
 
 This release includes the changes listed in [Prerelease Runtime 146 (Feb. 16, 2026)](./runtime-146-prerelease.md).
 
@@ -22,6 +22,30 @@ This release includes the changes listed in [Prerelease Runtime 146 (Feb. 16, 20
 
 
 <!-- ====================================================================== -->
+## Prerelease Runtime 146 (Feb. 16, 2026)
+
+Release notes for Microsoft Edge WebView2 Prerelease Runtime 146, release date: Feb. 16, 2026
+
+Runtime 146 (Mar. 16, 2026) includes these changes.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes in prerelease
+
+* Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
+
+* Fixed a white flash that occurred when Windows Search became visible after being hidden.
+
+* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
+
+* Fixed WebView2 transparency.
+
+* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Release notes for WebView2](./index.md)
+   * [Release notes for the WebView2 Runtime](./index-runtime.md)
+   * [Release notes for WebView2 SDKs](./index-sdk.md)

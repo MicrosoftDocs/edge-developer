@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease Runtime 152, release date: 
 
 
 <!-- ====================================================================== -->
-## Bug fixes
+## Bug fixes in prerelease
 
 * Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
 

@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Runtime 147 (Apr. 13, 2026)
 
-Release Date: Apr. 13, 2026
+Release notes for Microsoft Edge WebView2 Runtime 147, release date: Apr. 13, 2026
 
 This release includes the changes listed in [Prerelease Runtime 147 (Mar. 16, 2026)](./runtime-147-prerelease.md).
 
@@ -24,6 +24,34 @@ This release includes the changes listed in [Prerelease Runtime 147 (Mar. 16, 20
 
 
 <!-- ====================================================================== -->
+## Prerelease Runtime 147 (Mar. 16, 2026)
+
+Release notes for Microsoft Edge WebView2 Prerelease Runtime 147, release date: Mar. 16, 2026
+
+Runtime 147 (Apr. 13, 2026) includes these changes.
+
+
+<!-- ------------------------------ -->
+#### Bug fixes in prerelease
+
+* Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
+
+* Fixed per-monitor DPI in `window.getScreenDetails()`.  ([Issue #4826](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4826))
+
+* Disabled the domain actions component for WebView2.
+
+* Fixed Print-to-PDF API failure when printing PDFs.  ([Issue #5499](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5499))
+
+* Fixed an issue causing Narrator to announce the structural `HWND`, which doesn't have any UI.
+
+* Fixed WebView2 transparency.
+
+* Fixed the API for setting the background color of the **Caption** control.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Release notes for WebView2](./index.md)
+   * [Release notes for the WebView2 Runtime](./index-runtime.md)
+   * [Release notes for WebView2 SDKs](./index-sdk.md)
