@@ -69,3 +69,5 @@ All CDP calls can be made directly via the WebView2 CDP APIs, without using the 
 ## See also
 
 * [Release notes for WebView2](./index.md)
+   * [Release notes for the WebView2 Runtime](./index-runtime.md)
+   * [Release notes for WebView2 SDKs](./index-sdk.md)
