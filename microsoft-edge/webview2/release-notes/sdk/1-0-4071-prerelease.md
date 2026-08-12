@@ -31,7 +31,7 @@ See also:
 
 **Recommended alternative:**
 
-All CDP calls can be made directly via the WebView2 CDP APIs, without using the extension package.  See [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../how-to/chromium-devtools-protocol.md) and the following:
+All CDP calls can be made directly via the WebView2 CDP APIs, without using the extension package.  See [Use the Chrome DevTools Protocol (CDP) in WebView2 apps](../../how-to/chromium-devtools-protocol.md) and the following:
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 

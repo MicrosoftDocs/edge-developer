@@ -19,8 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 

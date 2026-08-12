@@ -20,8 +20,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
     * [Sensitivity label support](#sensitivity-label-support)
 * [Bug fixes](#bug-fixes)
-    * [Runtime-only](#runtime-only)
-    * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 

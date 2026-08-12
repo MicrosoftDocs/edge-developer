@@ -82,7 +82,7 @@ Previous phase: [Track navigation history for nested iframes (FrameCreatedEvent 
 
 * Fixed bug where users unable to type in input field with autofill info.  ([Issue #5144](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5144))
 
-* Fixed a regression in the [Status bar](../concepts/overview-features-apis.md#status-bar) APIs.
+* Fixed a regression in the [Status bar](../../concepts/overview-features-apis.md#status-bar) APIs.
 
 
 <!-- ------------------------------ -->

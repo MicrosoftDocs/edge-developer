@@ -113,7 +113,7 @@ See also:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
 
 API Reference:
-* [WebView2 API Reference](../webview2-api-reference.md)
+* [WebView2 API Reference](../../webview2-api-reference.md)
    * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
    * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
    * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->

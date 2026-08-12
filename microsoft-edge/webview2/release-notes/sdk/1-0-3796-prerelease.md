@@ -74,7 +74,7 @@ To control the ESM level for all WebView2 instances that share the same profile,
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Added the article [Performance best practices for WebView2 apps](../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
+* Added the article [Performance best practices for WebView2 apps](../../concepts/performance.md), about how to improve the startup speed, memory usage, and responsiveness of a WebView2 app.
 
 
 <!-- ====================================================================== -->

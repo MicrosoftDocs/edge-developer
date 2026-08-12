@@ -54,9 +54,9 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/dotnet/api/microsoft.web.webview2.core.corewebview2serviceworkermanager.serviceworkerregistered?view=webview2-dotnet-1.0.3848-prerelease&preserve-view=true)
 
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+* [WebView class](../../reference/javascript/webview.yml) in the JavaScript Reference.
 
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -66,9 +66,9 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 * `CoreWebView2ServiceWorkerManager` Class:
    * [CoreWebView2ServiceWorkerManager.ServiceWorkerRegistered Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2serviceworkermanager?view=webview2-winrt-1.0.3848-prerelease&preserve-view=true#serviceworkerregistered)
 
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+* [WebView class](../../reference/javascript/webview.yml) in the JavaScript Reference.
 
-* [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
+* [`chrome.webview.postMessage`](../../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -79,7 +79,7 @@ See also [Control whether WebView Script APIs are enabled for service workers](#
 * `ICoreWebView2ExperimentalServiceWorkerManager`
    * [ICoreWebView2ExperimentalServiceWorkerManager::add_ServiceWorkerRegistered](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalserviceworkermanager?view=webview2-1.0.3848-prerelease&preserve-view=true#add_serviceworkerregistered)
 
-* [WebView class](../reference/javascript/webview.yml) in the JavaScript Reference.
+* [WebView class](../../reference/javascript/webview.yml) in the JavaScript Reference.
 
 * [`chrome.webview.postMessage`](../reference/javascript/webview.yml#webview2script-webview-postmessage-member(1)) in the JavaScript Reference.
 
