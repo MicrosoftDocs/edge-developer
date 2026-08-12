@@ -20,15 +20,15 @@ Release notes for Microsoft Edge WebView2 Runtime 146, release date: Mar. 16, 20
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 146 (Feb. 16, 2026)
+## Preview Runtime 146 (Feb. 16, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 146, release date: Feb. 16, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 146, release date: Feb. 16, 2026
 
 Runtime 146 (Mar. 16, 2026) includes these changes.
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
 
@@ -44,6 +44,6 @@ Runtime 146 (Mar. 16, 2026) includes these changes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)

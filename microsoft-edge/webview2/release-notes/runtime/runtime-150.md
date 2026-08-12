@@ -93,7 +93,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Added total-count histograms for WebView2 environment and controller creation attempts.
 
@@ -115,6 +115,6 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)

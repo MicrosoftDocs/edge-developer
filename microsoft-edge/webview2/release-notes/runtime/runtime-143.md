@@ -20,15 +20,15 @@ Release notes for Microsoft Edge WebView2 Runtime 143, release date: Dec. 8, 202
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 143 (Nov. 7, 2025)
+## Preview Runtime 143 (Nov. 7, 2025)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 143, release date: Nov. 7, 2025
+Release notes for Microsoft Edge WebView2 Preview Runtime 143, release date: Nov. 7, 2025
 
 Runtime 143 (Dec. 8, 2025) includes these changes.
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Disabled creation of a "Speculative Renderer" process.
 
@@ -38,6 +38,6 @@ Runtime 143 (Dec. 8, 2025) includes these changes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)

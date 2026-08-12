@@ -18,15 +18,15 @@ For full API compatibility, this Release version of the WebView2 SDK requires We
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 145 (Jan. 19, 2026)
+## Preview Runtime 145 (Jan. 19, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 145, release date: Jan. 19, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 145, release date: Jan. 19, 2026
 
 Runtime 145 (Feb. 16, 2026) includes these changes.
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Fixed `chrome.webview` unavailability.
 
@@ -36,6 +36,6 @@ Runtime 145 (Feb. 16, 2026) includes these changes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)

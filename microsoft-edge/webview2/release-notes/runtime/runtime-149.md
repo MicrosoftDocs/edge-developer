@@ -34,7 +34,7 @@ Runtime 149 (Jun. 11, 2026) includes these changes.
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Fixed double character in UWP.
 
@@ -52,6 +52,6 @@ Runtime 149 (Jun. 11, 2026) includes these changes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)

@@ -17,7 +17,7 @@ in /webview2/release-notes/index.md, add new relnotes links, remove earliest rel
 keep release nnn & prerelease nnn together
 152-143: -->
 Release notes for recent Runtimes:
-* [Prerelease Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
+* [Preview Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
 * [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
 * [Runtime 150 (Jul. 7, 2026)](./runtime-150.md)
 * [Runtime 149 (Jun. 11, 2026)](./runtime-149.md)
@@ -95,7 +95,7 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 * To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
-To obtain a Prerelease Runtime, use the following combination:
+To obtain a preview Runtime, use the following combination:
 * A Prerelease version of the WebView2 SDK.
 * A preview channel of Microsoft Edge on your development client.
 
@@ -107,8 +107,8 @@ See also:
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)<!-- toc bucket 1.1 -->
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)<!-- toc bucket 1.1 -->
+   * [Release notes for WebView2 SDKs](../sdk/index.md)
 * [Overview of WebView2 APIs](../concepts/overview-features-apis.md)<!-- toc bucket 2.1 -->
 * [Contact the WebView2 team](../contact.md)<!-- toc bucket: bottom -->
 * [Release notes for Microsoft Edge web platform](../../web-platform/release-notes/index.md)

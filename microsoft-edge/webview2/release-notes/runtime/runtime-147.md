@@ -22,15 +22,15 @@ Release notes for Microsoft Edge WebView2 Runtime 147, release date: Apr. 13, 20
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 147 (Mar. 16, 2026)
+## Preview Runtime 147 (Mar. 16, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 147, release date: Mar. 16, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 147, release date: Mar. 16, 2026
 
 Runtime 147 (Apr. 13, 2026) includes these changes.
 
 
 <!-- ------------------------------ -->
-#### Bug fixes in prerelease
+#### Bug fixes in the preview Runtime
 
 * Fixed a bug where disconnecting a screen didn't change the screen resolution correctly.
 
@@ -50,6 +50,6 @@ Runtime 147 (Apr. 13, 2026) includes these changes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
-   * [Release notes for the WebView2 Runtime](./index-runtime.md)
-   * [Release notes for WebView2 SDKs](./index-sdk.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](./index.md)
+   * [Release notes for WebView2 SDKs](../sdk/index.md)
