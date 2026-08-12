@@ -13,7 +13,7 @@ To promote your Microsoft Edge extension (or theme), use the Microsoft Edge Add-
 
 The Microsoft Edge Add-ons badge is a visual asset designed to help you promote your Microsoft Edge extension and build user trust.
 
-The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**<!-- **Get it from Microsoft Edge Add-ons** -->, and shows the Microsoft Edge logo:
+The Microsoft Edge Add-ons badge reads **Get it from Microsoft Edge**<!-- **Get it from the Microsoft Edge Add-ons website** -->, and shows the Microsoft Edge logo:
 
 ![The "Microsoft Edge Add-ons" badge](./add-ons-badge-images/microsoft-edge-add-ons-badge.png)
 
