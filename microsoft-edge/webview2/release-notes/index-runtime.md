@@ -95,7 +95,12 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 * To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
+To obtain a Prerelease Runtime, use the following combination:
+* A Prerelease version of the WebView2 SDK.
+* A preview channel of Microsoft Edge on your development client.
+
 See also:
+* [Prerelease and Release SDKs for WebView2](../concepts/versioning.md)
 * [Updating the SDK](./index-sdk.md#updating-the-sdk) in _Release notes for WebView2 SDKs_.
 
 
