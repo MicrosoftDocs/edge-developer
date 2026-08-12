@@ -10,10 +10,15 @@ ms.date: 07/07/2026
 ---
 # Runtime 150 (Jul. 7, 2026)
 
-Release Date: Jul. 7, 2026
+Release notes for Microsoft Edge WebView2 Runtime 150, release date: Jul. 7, 2026.
 
 **Detailed contents:**
-* todo
+* [WebView2 Runtime is changing to a 2-week release cadence](#webview2-runtime-is-changing-to-a-2-week-release-cadence)
+* [Bug fixes](#bug-fixes)
+* [Prerelease Runtime 150 (Jun. 11, 2026)](#prerelease-runtime-150-jun-11-2026)
+   * [Breaking change: Enable Windows shell handwriting support for WebView2 in WindowToVisual mode](#breaking-change-enable-windows-shell-handwriting-support-for-webview2-in-windowtovisual-mode)
+   * [Bug fixes in prerelease](#bug-fixes-in-prerelease)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
