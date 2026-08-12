@@ -1,5 +1,5 @@
 ---
-title: Prerelease Runtime 152 (Aug. 3, 2026)
+title: Preview Runtime 152 (Aug. 3, 2026)
 description: Release notes for Microsoft Edge WebView2 Runtime 152 Beta.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/03/2026
 ---
-# Prerelease Runtime 152 (Aug. 3, 2026)
+# Preview Runtime 152 (Aug. 3, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 152, release date: Aug. 3, 2026.
+Release notes for Microsoft Edge WebView2 Preview Runtime 152, release date: Aug. 3, 2026.
 
 
 <!-- ====================================================================== -->

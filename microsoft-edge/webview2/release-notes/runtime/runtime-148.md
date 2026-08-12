@@ -12,6 +12,13 @@ ms.date: 06/11/2026
 
 Release notes for Microsoft Edge WebView2 Runtime 148, release date: May 11, 2026
 
+**Detailed contents:**
+* [Bug fixes](#bug-fixes)
+* [Preview Runtime 148 (Apr. 13, 2026)](#preview-runtime-148-apr-13-2026)
+   * [Breaking change: Granular process failure reasons for the ProcessFailed event](#breaking-change-granular-process-failure-reasons-for-the-processfailed-event)
+   * [Bug fixes in the preview Runtime](#bug-fixes-in-the-preview-runtime)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Bug fixes
@@ -20,9 +27,9 @@ Release notes for Microsoft Edge WebView2 Runtime 148, release date: May 11, 202
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 148 (Apr. 13, 2026)
+## Preview Runtime 148 (Apr. 13, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 148, release date: Apr. 13, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 148, release date: Apr. 13, 2026
 
 Runtime 148 (May 11, 2026) includes these changes.
 
@@ -46,7 +53,7 @@ The `msWebView2GranularProcessFailedReason` feature flag is disabled by default 
 
 `set WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS=--enable-features=msWebView2GranularProcessFailedReason`
 
-This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing stable API, and are available as part of this Prerelease SDK.
+This is a bug fix for the Runtime and SDK.  These enum members are a modification of an existing stable API, and are available as part of this<!-- todo --> Prerelease SDK.
 
 See also:
 * [[Breaking Change] Granular process failure reasons for the ProcessFailed event (Issue #131)](https://github.com/MicrosoftEdge/WebView2Announcements/issues/131)

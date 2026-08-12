@@ -12,6 +12,12 @@ ms.date: 06/11/2026
 
 Release notes for Microsoft Edge WebView2 Runtime 144, release date: Jan. 27, 2026
 
+**Detailed contents:**
+* [Bug fixes](#bug-fixes)
+* [Preview Runtime 144 (Dec. 8, 2025)](#preview-runtime-144-dec-8-2025)
+   * [Bug fixes in the preview Runtime](#bug-fixes-in-the-preview-runtime)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Bug fixes

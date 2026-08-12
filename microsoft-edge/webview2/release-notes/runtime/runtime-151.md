@@ -14,10 +14,10 @@ Release notes for Microsoft Edge WebView2 Runtime 151, release date: Aug. 3, 202
 
 **Detailed contents:**
 * [Bug fixes](#bug-fixes)
-* [Prerelease Runtime 151 (Jul. 7, 2026)](#prerelease-runtime-151-jul-7-2026)
+* [Preview Runtime 151 (Jul. 7, 2026)](#preview-runtime-151-jul-7-2026)
    * [WebView2 Runtime is changing to a 2-week release cadence](#webview2-runtime-is-changing-to-a-2-week-release-cadence)
    * [Run your WebView2 host application at standard user integrity rather than elevated](#run-your-webview2-host-application-at-standard-user-integrity-rather-than-elevated)
-   * [Bug fixes in prerelease](#bug-fixes-in-prerelease)
+   * [Bug fixes in the preview Runtime](#bug-fixes-in-the-preview-runtime)
 * [See also](#see-also)
 
 
@@ -28,9 +28,9 @@ Release notes for Microsoft Edge WebView2 Runtime 151, release date: Aug. 3, 202
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 151 (Jul. 7, 2026)
+## Preview Runtime 151 (Jul. 7, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 151, release date: Jul. 7, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 151, release date: Jul. 7, 2026
 
 Runtime 151 (Aug. 3, 2026) includes these changes.
 

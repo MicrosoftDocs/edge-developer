@@ -13,9 +13,7 @@ ms.date: 08/05/2026
 <!-- maint:
 list past 10 releases (runtimes)
 in toc.yml, add new relnotes pages, move relnotes pages to archive
-in /webview2/release-notes/index.md, add new relnotes links, remove earliest relnotes links
-keep release nnn & prerelease nnn together
-152-143: -->
+in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
 * [Preview Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
 * [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
@@ -65,7 +63,7 @@ For more information, see [Matching the Runtime version with the SDK version](..
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel (containing a WebView2 preview Runtime), see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
@@ -97,7 +95,7 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 To obtain a preview Runtime, use the following combination:
 * A Prerelease version of the WebView2 SDK.
-* A preview channel of Microsoft Edge on your development client.
+* A preview channel of Microsoft Edge (containing a WebView2 preview Runtime) on your development client.
 
 See also:
 * [Prerelease and Release SDKs for WebView2](../concepts/versioning.md)

@@ -12,6 +12,12 @@ ms.date: 06/11/2026
 
 Release notes for Microsoft Edge WebView2 Runtime 149, release date: Jun. 11, 2026
 
+**Detailed contents:**
+* [Bug fixes](#bug-fixes)
+* [Preview Runtime 149 (May 11, 2026)](#preview-runtime-149-may-11-2026)
+   * [Bug fixes in the preview Runtime](#bug-fixes-in-the-preview-runtime)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Bug fixes
@@ -26,9 +32,9 @@ Release notes for Microsoft Edge WebView2 Runtime 149, release date: Jun. 11, 20
 
 
 <!-- ====================================================================== -->
-## Prerelease Runtime 149 (May 11, 2026)
+## Preview Runtime 149 (May 11, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease Runtime 149, release date: May 11, 2026
+Release notes for Microsoft Edge WebView2 Preview Runtime 149, release date: May 11, 2026
 
 Runtime 149 (Jun. 11, 2026) includes these changes.
 
