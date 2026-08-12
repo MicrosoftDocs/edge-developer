@@ -17,7 +17,7 @@ in /webview2/release-notes/index.md, add new relnotes links, remove earliest rel
 keep release nnn & prerelease nnn together
 152-143: -->
 Release notes for recent Runtimes:
-* [Prerelease Runtime 152 (Aug. 3, 2026)](./runtime-152-prerelease.md)
+* [Prerelease Runtime 152 (Aug. 3, 2026)](./runtime-152.md)
 * [Runtime 151 (Aug. 3, 2026)](./runtime-151.md)
 * [Runtime 150 (Jul. 7, 2026)](./runtime-150.md)
    * [Prerelease Runtime 150 (Jun. 11, 2026)](./runtime-150-prerelease.md)
