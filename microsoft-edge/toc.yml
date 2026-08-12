@@ -2159,50 +2159,50 @@
                       href: ./webview2/release-notes/sdk/1-0-622-22.md
 
                     - name: Release SDK 0.9.622.11, for Runtime 86 (Sep. 10, 2020)
-                      href: ./webview2/release-notes/0-9-622-11.md
+                      href: ./webview2/release-notes/sdk/0-9-622-11.md
 
                     - name: Prerelease SDK 0.9.579-prerelease, for Runtime 85 (Jul. 20, 2020)
-                      href: ./webview2/release-notes/0-9-579-prerelease.md
+                      href: ./webview2/release-notes/sdk/0-9-579-prerelease.md
 
                     - name: Release SDK 0.9.579, for Runtime 86 (Jul. 20, 2020)
-                      href: ./webview2/release-notes/0-9-579.md
+                      href: ./webview2/release-notes/sdk/0-9-579.md
 
                     - name: Prerelease SDK 0.9.538-prerelease, for Runtime 85 (Jun. 8, 2020)
-                      href: ./webview2/release-notes/0-9-538-prerelease.md
+                      href: ./webview2/release-notes/sdk/0-9-538-prerelease.md
 
                     - name: Release SDK 0.9.538, for Runtime 85 (Jun. 8, 2020)
-                      href: ./webview2/release-notes/0-9-538.md
+                      href: ./webview2/release-notes/sdk/0-9-538.md
                     # end of 86 & 85
 
                     - name: Prerelease SDK 0.9.515-prerelease, for Runtime 84 (May 14, 2020)
-                      href: ./webview2/release-notes/0-9-515-prerelease.md
+                      href: ./webview2/release-notes/sdk/0-9-515-prerelease.md
 
                     - name: Prerelease SDK 0.9.488-prerelease, for Runtime 83 (Apr. 20, 2020)
-                      href: ./webview2/release-notes/0-9-488-prerelease.md
+                      href: ./webview2/release-notes/sdk/0-9-488-prerelease.md
 
                     - name: Release SDK 0.9.488, for Runtime 84 (Apr. 20, 2020)
-                      href: ./webview2/release-notes/0-9-488.md
+                      href: ./webview2/release-notes/sdk/0-9-488.md
 
                     - name: Release SDK 0.9.430, for Runtime 82 (Feb. 24, 2020)
-                      href: ./webview2/release-notes/0-9-430.md
+                      href: ./webview2/release-notes/sdk/0-9-430.md
 
                     - name: Release SDK 0.8.355, for Runtime 80 (Dec. 9, 2019)
-                      href: ./webview2/release-notes/0-8-355.md
+                      href: ./webview2/release-notes/sdk/0-8-355.md
 
                     - name: Release SDK 0.8.314, for Runtime 80 (Oct. 28, 2019)
-                      href: ./webview2/release-notes/0-8-314.md
+                      href: ./webview2/release-notes/sdk/0-8-314.md
 
                     - name: Release SDK 0.8.270, for Runtime 78 (Sep. 10, 2019)
-                      href: ./webview2/release-notes/0-8-270.md
+                      href: ./webview2/release-notes/sdk/0-8-270.md
 
                     - name: Release SDK 0.8.230, for Runtime 77 (Jul. 29, 2019)
-                      href: ./webview2/release-notes/0-8-230.md
+                      href: ./webview2/release-notes/sdk/0-8-230.md
 
                     - name: Release SDK 0.8.190, for Runtime 77 (Jun. 17, 2019)
-                      href: ./webview2/release-notes/0-8-190.md
+                      href: ./webview2/release-notes/sdk/0-8-190.md
 
                     - name: Release SDK 0.8.149, for Runtime 76 (May 6, 2019)
-                      href: ./webview2/release-notes/0-8-149.md
+                      href: ./webview2/release-notes/sdk/0-8-149.md
 # -----------------------------------------------------------------------------
         - name: Get started
           items:
