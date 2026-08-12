@@ -108,4 +108,6 @@ Added support for custom scheme registration which allows WebView2 apps to be ab
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

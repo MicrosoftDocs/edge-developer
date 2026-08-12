@@ -82,4 +82,6 @@ The following Experimental APIs for .NET have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

@@ -19,8 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -57,24 +55,8 @@ Previous phase: [Allow input event messages to pass through the browser window](
 
 
 <!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a bug where a mouse event doesn't fire after a touch event.
-
-* Disabled Web capture on the WebView2 control.
-
-* Fixed the **Downloads** dialog.
-
-* Fixed an issue with downloads in the default browser frame.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-
-* Fixed the margins in the printed PDF.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

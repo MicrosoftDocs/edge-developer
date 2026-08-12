@@ -25,4 +25,6 @@ This package has been deprecated, because it has critical bugs.  See [Issue 2414
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

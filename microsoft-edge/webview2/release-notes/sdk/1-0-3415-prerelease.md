@@ -24,8 +24,6 @@ This SDK version is an exception: it's a later fix for the WebView2 SDK for Runt
    * [Render custom title bars (Window Controls Overlay API)](#render-custom-title-bars-window-controls-overlay-api)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Customize the Find behavior (Find API)](#customize-the-find-behavior-find-api)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -507,20 +505,8 @@ Previous phase: [Customize the Find behavior (Find API)](./1-0-3079-prerelease.m
 
 
 <!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a black-box issue on dialogs in visual hosting.
-
-* Fixed `put_UserAgent` not working for service workers.
-
-* Fixed crash in DevTools on Windows Server and Windows 10.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

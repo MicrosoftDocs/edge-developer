@@ -209,4 +209,6 @@ Previous phase: [Custom Crash Reporting API](./1-0-1414-prerelease.md#custom-cra
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

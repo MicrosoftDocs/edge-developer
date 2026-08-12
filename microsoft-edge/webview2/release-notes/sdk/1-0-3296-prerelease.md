@@ -57,22 +57,8 @@ Previous phase: [Set default background color on WebView2 initialization (Defaul
 
 
 <!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed the **Find** bar no longer appearing after the window is shifted.
-
-* Fixed a bug where the app wasn't able to cancel navigation to login pages via the `NavigationStarting` event.
-
-* Fixed an issue where downloads from within the default browser frame didn't complete.  ([Issue #5196](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5196))
-
-* Fixed an issue where the pipe name was incorrectly returned, leading to a crash in some UWP apps.
-
-
-<!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

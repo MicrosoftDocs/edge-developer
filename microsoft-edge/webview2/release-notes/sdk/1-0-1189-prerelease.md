@@ -108,4 +108,6 @@ The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

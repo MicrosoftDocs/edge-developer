@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
 
-Release Date: Oct. 7, 2025
+Release Date: 
 
 [NuGet package for WebView2 SDK 1.0.3590-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3590-prerelease)
 
@@ -100,30 +100,12 @@ Pending.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a dangling pointer in file system access permission context.
-
-* Fixed the UI hanging during drag-and-drop in WinUI3.
-
-* Fixed local network access triggering a permission alert pop-up window.
-
-* Resolved an issue where an extra region was appearing in the accessibility tree.
-
-* Fixed an issue where downloads in the default browser frame didn't work.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
-
 * Fixed a BinSkim error for `WebView2Loader.dll`.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

@@ -32,16 +32,12 @@ These foundational improvements provide stable, thoroughly tested functionality 
 <!-- ====================================================================== -->
 ## Bug fixes
 
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
-
 * Fixed a memory leak in WPF Composition Controller.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Release notes for WebView2](./index.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)
