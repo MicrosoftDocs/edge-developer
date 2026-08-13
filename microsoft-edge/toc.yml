@@ -1509,7 +1509,7 @@
         - name: Introduction to Microsoft Edge WebView2
           href: ./webview2/index.md
 # -----------------------------------------------------------------------------
-        - name: Release notes  # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2
+        - name: Release notes
           items:
             - name: Release notes for WebView2
               href: ./webview2/release-notes/index.md
@@ -1553,7 +1553,7 @@
                 - name: Runtime 143 (Dec. 8, 2025)
                   href: ./webview2/release-notes/runtime/143.md
 
-                - name: Runtime archive  # keep Runtime nnn pair together
+                - name: Runtime archive
                   items:
                     - name: Runtime 142 (Nov. 3, 2025)
                       href: ./webview2/release-notes/runtime/142.md
@@ -1756,6 +1756,7 @@
               # list past 10 releases
               # in toc.yml, add new relnotes pages, move relnotes pages to sdk archive
               # in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links
+              # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2 > Load more
             - name: SDK release notes
               items:
                 - name: Release notes for WebView2 SDKs
@@ -1809,7 +1810,7 @@
                 - name: SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
                   href: ./webview2/release-notes/sdk/1-0-3650-prerelease.md
 
-                - name: SDK archive  # keep Runtime nnn pair together
+                - name: SDK archive  # keep Runtime nnn pair together when moving to archive
                   items:
                     - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3595-46.md
@@ -2082,12 +2083,16 @@
                     - name: Release SDK 1.0.818.41, for Runtime 90 (Apr. 21, 2021)
                       href: ./webview2/release-notes/sdk/1-0-818-41.md
 
-                    # 86 & 85:
+                    # a later 86
                     - name: Prerelease SDK 1.0.790-prerelease, for Runtime 86 (Feb. 10, 2021)
                       href: ./webview2/release-notes/sdk/1-0-790-prerelease.md
 
                     - name: Release SDK 1.0.774.44, for Runtime 89 (Mar. 8, 2021)
                       href: ./webview2/release-notes/sdk/1-0-774-44.md
+
+                  # - name: Release SDK for Runtime 88
+
+                  # - name: Release SDK for Runtime 87
 
                     - name: Prerelease SDK 1.0.721-prerelease, for Runtime 86 (Dec. 8, 2020)
                       href: ./webview2/release-notes/sdk/1-0-721-prerelease.md
@@ -2120,6 +2125,7 @@
                       href: ./webview2/release-notes/sdk/0-9-538.md
                     # end of 86 & 85
 
+                    # 84 & 83
                     - name: Prerelease SDK 0.9.515-prerelease, for Runtime 84 (May 14, 2020)
                       href: ./webview2/release-notes/sdk/0-9-515-prerelease.md
 
@@ -2128,14 +2134,19 @@
 
                     - name: Release SDK 0.9.488, for Runtime 84 (Apr. 20, 2020)
                       href: ./webview2/release-notes/sdk/0-9-488.md
+                    # end of 84 & 83
 
                     - name: Release SDK 0.9.430, for Runtime 82 (Feb. 24, 2020)
                       href: ./webview2/release-notes/sdk/0-9-430.md
+
+                  # - name: Release SDK for Runtime 81
 
                     - name: Release SDK 0.8.355, for Runtime 80 (Dec. 9, 2019)
                       href: ./webview2/release-notes/sdk/0-8-355.md
                     - name: Release SDK 0.8.314, for Runtime 80 (Oct. 28, 2019)
                       href: ./webview2/release-notes/sdk/0-8-314.md
+
+                  # - name: Release SDK for Runtime 79
 
                     - name: Release SDK 0.8.270, for Runtime 78 (Sep. 10, 2019)
                       href: ./webview2/release-notes/sdk/0-8-270.md
