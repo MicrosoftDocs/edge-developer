@@ -48,7 +48,7 @@ Added support for [multiple user profiles](/microsoft-edge/webview2/reference/wi
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 95 (Oct. 25, 2021)](../runtime/95.md)
+* [Runtime 95.0.1020.30 (Oct. 25, 2021)](../runtime/95.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

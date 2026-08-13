@@ -1690,67 +1690,66 @@
                     - name: Runtime 98.0.1108.44 (Feb. 6, 2022)
                       href: ./webview2/release-notes/runtime/98.md
 
-# todo: resume here, globally updating title to long version number:
-                    - name: Runtime 97 (Jan. 13, 2022)
+                    - name: Runtime 97.0.1072.54 (Jan. 13, 2022)
                       href: ./webview2/release-notes/runtime/97.md
 
-                    - name: Runtime 96 (Nov. 29, 2021)
+                    - name: Runtime 96.0.1054.31 (Nov. 29, 2021)
                       href: ./webview2/release-notes/runtime/96.md
 
-                    - name: Runtime 95 (Oct. 25, 2021)
+                    - name: Runtime 95.0.1020.30 (Oct. 25, 2021)
                       href: ./webview2/release-notes/runtime/95.md
 
-                    - name: Runtime 94 (Sep. 27, 2021)
+                    - name: Runtime 94.0.992.28 (Sep. 27, 2021)
                       href: ./webview2/release-notes/runtime/94.md
 
-                    - name: Runtime 93 (Sep. 8, 2021)
+                    - name: Runtime 93.0.961.33 (Sep. 8, 2021)
                       href: ./webview2/release-notes/runtime/93.md
 
-                    - name: Runtime 92 (Jul. 26, 2021)
+                    - name: Runtime 92.0.902.49 (Jul. 26, 2021)
                       href: ./webview2/release-notes/runtime/92.md
 
-                    - name: Runtime 91 (May 31, 2021)
+                    - name: Runtime 91.0.864.35 (May 31, 2021)
                       href: ./webview2/release-notes/runtime/91.md
 
-                    - name: Runtime 90 (Apr. 21, 2021)
+                    - name: Runtime 90.0.818.41 (Apr. 21, 2021)
                       href: ./webview2/release-notes/runtime/90.md
 
-                    - name: Runtime 89 (Mar. 8, 2021)
+                    - name: Runtime 89.0.774.44 (Mar. 8, 2021)
                       href: ./webview2/release-notes/runtime/89.md
 
                   # - name: Runtime 88
 
                   # - name: Runtime 87
 
-                    - name: Runtime 86 (Jan. 25, 2021)
+                    - name: Runtime 86.0.705.50 (Jan. 25, 2021)
                       href: ./webview2/release-notes/runtime/86.md
 
-                    - name: Runtime 85 (Jun. 8, 2020)
+                    - name: Runtime 85.9.538 (Jun. 8, 2020)
                       href: ./webview2/release-notes/runtime/85.md
 
-                    - name: Runtime 84 (Apr. 20, 2020)
+                    - name: Runtime 84.9.488 (Apr. 20, 2020)
                       href: ./webview2/release-notes/runtime/84.md
 
-                    - name: Runtime 83 (Apr. 20, 2020)  # no Release 83; date is from Prerelease 83
+                    - name: Runtime 83.9.488.0 (Apr. 20, 2020)  # no Release 83; date is from Prerelease 83
                       href: ./webview2/release-notes/runtime/83.md
 
-                    - name: Runtime 82 (Feb. 24, 2020)
+                    - name: Runtime 82.9.430 (Feb. 24, 2020)
                       href: ./webview2/release-notes/runtime/82.md
 
                   # - name: Runtime 81
 
-                    - name: Runtime 80 (Dec. 9, 2019)  # date from newer Release sdk
+                    - name: Runtime 80.8.355 (Dec. 9, 2019)  # date from newer Release sdk
                       href: ./webview2/release-notes/runtime/80.md
 
                   # - name: Runtime 79
 
-                    - name: Runtime 78 (Sep. 10, 2019)
+                    - name: Runtime 78.8.270 (Sep. 10, 2019)
                       href: ./webview2/release-notes/runtime/78.md
 
-                    - name: Runtime 77 (Jul. 29, 2019)  # date from newer Release sdk
+                    - name: Runtime 77.8.230 (Jul. 29, 2019)  # date from newer Release sdk
                       href: ./webview2/release-notes/runtime/77.md
 
-                    - name: Runtime 76 (May 6, 2019)
+                    - name: Runtime 76.8.149 (May 6, 2019)
                       href: ./webview2/release-notes/runtime/76.md
 
               # maint:

@@ -51,7 +51,7 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 97 (Jan. 13, 2022)](../runtime/97.md)
+* [Runtime 97.0.1072.54 (Jan. 13, 2022)](../runtime/97.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

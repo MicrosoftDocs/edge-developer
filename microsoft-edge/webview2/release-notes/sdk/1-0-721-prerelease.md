@@ -92,7 +92,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 86 (Jan. 25, 2021)](../runtime/86.md)
+* [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
