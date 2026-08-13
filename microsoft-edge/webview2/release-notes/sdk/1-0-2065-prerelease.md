@@ -59,6 +59,7 @@ Added source frame info to `NewWindowRequested`, to support identifying the sour
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 118 (Oct. 16, 2023)](../runtime/118.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

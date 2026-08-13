@@ -260,6 +260,7 @@ Previous phase: [`FailureSourceModulePath` property](./1-0-2164-prerelease.md#fa
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 124 (Apr. 22, 2024)](../runtime/124.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

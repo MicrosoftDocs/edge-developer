@@ -108,6 +108,7 @@ The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 100 (Apr. 12, 2022)](../runtime/100.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

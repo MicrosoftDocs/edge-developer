@@ -108,6 +108,7 @@ Added support for custom scheme registration which allows WebView2 apps to be ab
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 105 (Sep. 6, 2022)](../runtime/105.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

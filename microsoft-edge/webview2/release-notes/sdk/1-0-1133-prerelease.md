@@ -70,6 +70,7 @@ handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 99 (Mar. 10, 2022)](../runtime/99.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

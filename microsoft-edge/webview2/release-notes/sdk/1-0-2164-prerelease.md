@@ -73,6 +73,7 @@ Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` typ
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 120 (Dec. 11, 2023)](../runtime/120.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

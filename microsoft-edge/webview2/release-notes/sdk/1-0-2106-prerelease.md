@@ -198,6 +198,7 @@ Previous phase: [Added source frame info to the `NewWindowRequested` event](./1-
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 119 (Nov. 6, 2023)](../runtime/119.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

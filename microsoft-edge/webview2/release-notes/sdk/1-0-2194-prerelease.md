@@ -93,6 +93,7 @@ Previous phase: [Support for browser extensions in WebView2](./1-0-1988-prerelea
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 120 (Dec. 11, 2023)](../runtime/120.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

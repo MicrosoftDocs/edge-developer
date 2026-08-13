@@ -287,6 +287,7 @@ Previous phase: [WebMessageObjects API: Inject DOM objects; file system handle](
 <!-- ====================================================================== -->
 ## See also
 
+* [Runtime 128 (Aug. 26, 2024)](../runtime/128.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
