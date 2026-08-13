@@ -22,7 +22,7 @@ Conduct both automated and manual testing:
 
 Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
-To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the preview WebView2 Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the WebView2 Preview Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).
 
 To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -32,7 +32,7 @@ To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [B
 
 Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
-Start with automated testing against the preview WebView2 Runtime in the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
+Start with automated testing against the WebView2 Preview Runtime in the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
 To do automated testing:
 
