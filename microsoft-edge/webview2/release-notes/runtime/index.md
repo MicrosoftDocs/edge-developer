@@ -12,7 +12,7 @@ ms.date: 08/05/2026
 
 <!-- maint:
 list past 10 releases (runtimes)
-in toc.yml, add new relnotes pages, move relnotes pages to archive
+in toc.yml, add new relnotes pages, move relnotes pages to runtime archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
 * [Preview Runtime 152 (Aug. 3, 2026)](./152.md)
@@ -26,7 +26,7 @@ Release notes for recent Runtimes:
 * [Runtime 144 (Jan. 27, 2026)](./144.md)
 * [Runtime 143 (Dec. 8, 2025)](./143.md)
 
-For earlier release notes, see **Archive** in the table of contents.
+For earlier release notes, see **Runtime archive** in the table of contents.
 
 You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
 
