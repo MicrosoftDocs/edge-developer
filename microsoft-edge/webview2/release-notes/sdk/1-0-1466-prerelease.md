@@ -143,7 +143,7 @@ Added support for running JavaScript code from the `JavaScript` parameter in the
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 109 (Jan. 17, 2023)](../runtime/109.md)
+* [Runtime 109.0.1518.46 (Jan. 17, 2023)](../runtime/109.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

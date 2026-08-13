@@ -130,7 +130,7 @@ Releasing or closing the monitor stops all events and clears all filters.
 <!-- ====================================================================== -->
 ## See also
 
-* [Preview Runtime 152 (Aug. 3, 2026)](../runtime/152.md)
+* [Preview Runtime 152.0.4181.0 (Aug. 3, 2026)](../runtime/152.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

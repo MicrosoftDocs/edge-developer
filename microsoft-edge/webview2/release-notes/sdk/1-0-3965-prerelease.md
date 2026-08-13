@@ -195,7 +195,7 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 148 (May 11, 2026)](../runtime/148.md)
+* [Runtime 148.0.3967.48 (May 11, 2026)](../runtime/148.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

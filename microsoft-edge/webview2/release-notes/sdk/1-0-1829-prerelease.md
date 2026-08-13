@@ -97,7 +97,7 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 115 (Jul. 24, 2023)](../runtime/115.md)
+* [Runtime 115.0.1901.177 (Jul. 24, 2023)](../runtime/115.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

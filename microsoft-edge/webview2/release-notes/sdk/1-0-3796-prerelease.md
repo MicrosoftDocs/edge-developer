@@ -80,7 +80,7 @@ To control the ESM level for all WebView2 instances that share the same profile,
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 145 (Feb. 16, 2026)](../runtime/145.md)
+* [Runtime 145.0.3800.47 (Feb. 16, 2026)](../runtime/145.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

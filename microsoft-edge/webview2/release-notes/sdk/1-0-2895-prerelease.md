@@ -220,7 +220,7 @@ Previous phase: [Configure the security warning when saving a file (`SaveFileSec
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 131 (Nov. 18, 2024)](../runtime/131.md)
+* [Runtime 131.0.2903.40 (Nov. 18, 2024)](../runtime/131.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

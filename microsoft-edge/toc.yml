@@ -1523,173 +1523,174 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 152 (Aug. 3, 2026)
+                - name: Preview Runtime 152.0.4181.0 (Aug. 3, 2026)
                   href: ./webview2/release-notes/runtime/152.md
 
-                - name: Runtime 151 (Aug. 3, 2026)
+                - name: Runtime 151.0.4129.50 (Aug. 3, 2026)
                   href: ./webview2/release-notes/runtime/151.md
 
-                - name: Runtime 150 (Jul. 7, 2026)
+                - name: Runtime 150.0.4078.44 (Jul. 7, 2026)
                   href: ./webview2/release-notes/runtime/150.md
 
-                - name: Runtime 149 (Jun. 11, 2026)
+                - name: Runtime 149.0.4022.49 (Jun. 11, 2026)
                   href: ./webview2/release-notes/runtime/149.md
 
-                - name: Runtime 148 (May 11, 2026)
+                - name: Runtime 148.0.3967.48 (May 11, 2026)
                   href: ./webview2/release-notes/runtime/148.md
 
-                - name: Runtime 147 (Apr. 13, 2026)
+                - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
                   href: ./webview2/release-notes/runtime/147.md
 
-                - name: Runtime 146 (Mar. 16, 2026)
+                - name: Runtime 146.0.3856.49 (Mar. 16, 2026)
                   href: ./webview2/release-notes/runtime/146.md
 
-                - name: Runtime 145 (Feb. 16, 2026)
+                - name: Runtime 145.0.3800.47 (Feb. 16, 2026)
                   href: ./webview2/release-notes/runtime/145.md
 
-                - name: Runtime 144 (Jan. 27, 2026)
+                - name: Runtime 144.0.3719.77 (Jan. 27, 2026)
                   href: ./webview2/release-notes/runtime/144.md
 
-                - name: Runtime 143 (Dec. 8, 2025)
+                - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
                   href: ./webview2/release-notes/runtime/143.md
 
                 - name: Archive
                   items:
-                    - name: Runtime 142 (Nov. 3, 2025)
+                    - name: Runtime 142.0.3595.46 (Nov. 3, 2025)
                       href: ./webview2/release-notes/runtime/142.md
 
-                    - name: Runtime 141 (Oct. 6, 2025)
+                    - name: Runtime 141.0.3537.50 (Oct. 6, 2025)
                       href: ./webview2/release-notes/runtime/141.md
 
-                    - name: Runtime 140 (Sep. 8, 2025)
+                    - name: Runtime 140.0.3485.44 (Sep. 8, 2025)
                       href: ./webview2/release-notes/runtime/140.md
 
-                    - name: Runtime 139 (Aug. 11, 2025)
+                    - name: Runtime 139.0.3405.78 (Aug. 11, 2025)
                       href: ./webview2/release-notes/runtime/139.md
 
-                    - name: Runtime 138 (Jul. 1, 2025)
+                    - name: Runtime 138.0.3351.48 (Jul. 1, 2025)
                       href: ./webview2/release-notes/runtime/138.md
 
-                    - name: Runtime 137 (Jun. 3, 2025)
+                    - name: Runtime 137.0.3296.44 (Jun. 3, 2025)
                       href: ./webview2/release-notes/runtime/137.md
 
-                    - name: Runtime 136 (May 5, 2025)
+                    - name: Runtime 136.0.3240.44 (May 5, 2025)
                       href: ./webview2/release-notes/runtime/136.md
 
-                    - name: Runtime 135 (Apr. 7, 2025)
+                    - name: Runtime 135.0.3179.45 (Apr. 7, 2025)
                       href: ./webview2/release-notes/runtime/135.md
 
-                    - name: Runtime 134 (Mar. 10, 2025)
+                    - name: Runtime 134.0.3124.44 (Mar. 10, 2025)
                       href: ./webview2/release-notes/runtime/134.md
 
-                    - name: Runtime 133 (Feb. 10, 2025)
+                    - name: Runtime 133.0.3065.39 (Feb. 10, 2025)
                       href: ./webview2/release-notes/runtime/133.md
 
-                    - name: Runtime 132 (Jan. 20, 2025)
+                    - name: Runtime 132.0.2957.106 (Jan. 20, 2025)
                       href: ./webview2/release-notes/runtime/132.md
 
-                    - name: Runtime 131 (Nov. 18, 2024)
+                    - name: Runtime 131.0.2903.40 (Nov. 18, 2024)
                       href: ./webview2/release-notes/runtime/131.md
 
-                    - name: Runtime 130 (Oct. 21, 2024)
+                    - name: Runtime 130.0.2849.39 (Oct. 21, 2024)
                       href: ./webview2/release-notes/runtime/130.md
 
-                    - name: Runtime 129 (Sep. 23, 2024)
+                    - name: Runtime 129.0.2792.45 (Sep. 23, 2024)
                       href: ./webview2/release-notes/runtime/129.md
 
-                    - name: Runtime 128 (Aug. 26, 2024)
+                    - name: Runtime 128.0.2739.15 (Aug. 26, 2024)
                       href: ./webview2/release-notes/runtime/128.md
 
-                    - name: Runtime 127 (Aug. 13, 2024)
+                    - name: Runtime 127.0.2651.64 (Aug. 13, 2024)
                       href: ./webview2/release-notes/runtime/127.md
 
-                    - name: Runtime 126 (Jun. 19, 2024)
+                    - name: Runtime 126.0.2592.51 (Jun. 19, 2024)
                       href: ./webview2/release-notes/runtime/126.md
 
-                    - name: Runtime 125 (May 28, 2024)
+                    - name: Runtime 125.0.2535.41 (May 28, 2024)
                       href: ./webview2/release-notes/runtime/125.md
 
-                    - name: Runtime 124 (Apr. 22, 2024)
+                    - name: Runtime 124.0.2478.35 (Apr. 22, 2024)
                       href: ./webview2/release-notes/runtime/124.md
 
-                    - name: Runtime 123 (Mar. 25, 2024)
+                    - name: Runtime 123.0.2420.47 (Mar. 25, 2024)
                       href: ./webview2/release-notes/runtime/123.md
 
-                    - name: Runtime 122 (Feb. 26, 2024)
+                    - name: Runtime 122.0.2365.46 (Feb. 26, 2024)
                       href: ./webview2/release-notes/runtime/122.md
 
-                    - name: Runtime 121 (Feb. 5, 2024)
+                    - name: Runtime 121.0.2277.86 (Feb. 5, 2024)
                       href: ./webview2/release-notes/runtime/121.md
 
-                    - name: Runtime 120 (Dec. 11, 2023)
+                    - name: Runtime 120.0.2210.55 (Dec. 11, 2023)
                       href: ./webview2/release-notes/runtime/120.md
 
-                    - name: Runtime 119 (Nov. 6, 2023)
+                    - name: Runtime 119.0.2151.40 (Nov. 6, 2023)
                       href: ./webview2/release-notes/runtime/119.md
 
-                    - name: Runtime 118 (Oct. 16, 2023)
+                    - name: Runtime 118.0.2088.41 (Oct. 16, 2023)
                       href: ./webview2/release-notes/runtime/118.md
 
-                    - name: Runtime 117 (Sep. 18, 2023)
+                    - name: Runtime 117.0.2045.28 (Sep. 18, 2023)
                       href: ./webview2/release-notes/runtime/117.md
 
-                    - name: Runtime 116 (Aug. 28, 2023)
+                    - name: Runtime 116.0.1938.49 (Aug. 28, 2023)
                       href: ./webview2/release-notes/runtime/116.md
 
-                    - name: Runtime 115 (Jul. 24, 2023)
+                    - name: Runtime 115.0.1901.177 (Jul. 24, 2023)
                       href: ./webview2/release-notes/runtime/115.md
 
-                    - name: Runtime 114 (Jun. 5, 2023)
+                    - name: Runtime 114.0.1823.32 (Jun. 5, 2023)
                       href: ./webview2/release-notes/runtime/114.md
 
-                    - name: Runtime 113 (May 8, 2023)
+                    - name: Runtime 113.0.1774.30 (May 8, 2023)
                       href: ./webview2/release-notes/runtime/113.md
 
-                    - name: Runtime 112 (Apr. 13, 2023)
+                    - name: Runtime 112.0.1722.45 (Apr. 13, 2023)
                       href: ./webview2/release-notes/runtime/112.md
 
-                    - name: Runtime 111 (Mar. 20, 2023)
+                    - name: Runtime 111.0.1661.34 (Mar. 20, 2023)
                       href: ./webview2/release-notes/runtime/111.md
 
-                    - name: Runtime 110 (Feb. 15, 2023)
+                    - name: Runtime 110.0.1587.40 (Feb. 15, 2023)
                       href: ./webview2/release-notes/runtime/110.md
 
-                    - name: Runtime 109 (Jan. 17, 2023)
+                    - name: Runtime 109.0.1518.46 (Jan. 17, 2023)
                       href: ./webview2/release-notes/runtime/109.md
 
-                    - name: Runtime 108 (Dec. 12, 2022)
+                    - name: Runtime 108.0.1462.37 (Dec. 12, 2022)
                       href: ./webview2/release-notes/runtime/108.md
 
-                    - name: Runtime 107 (Oct. 31, 2022)
+                    - name: Runtime 107.0.1418.22 (Oct. 31, 2022)
                       href: ./webview2/release-notes/runtime/107.md
 
-                    - name: Runtime 106 (Oct. 11, 2022)
+                    - name: Runtime 106.0.1370.28 (Oct. 11, 2022)
                       href: ./webview2/release-notes/runtime/106.md
 
-                    - name: Runtime 105 (Sep. 6, 2022)
+                    - name: Runtime 105.0.1343.22 (Sep. 6, 2022)
                       href: ./webview2/release-notes/runtime/105.md
 
-                    - name: Runtime 104 (Aug. 8, 2022)
+                    - name: Runtime 104.0.1293.44 (Aug. 8, 2022)
                       href: ./webview2/release-notes/runtime/104.md
 
-                    - name: Runtime 103 (Jul. 4, 2022)
+                    - name: Runtime 103.0.1264.42 (Jul. 4, 2022)
                       href: ./webview2/release-notes/runtime/103.md
 
-                    - name: Runtime 102 (Jun. 14, 2022)
+                    - name: Runtime 102.0.1245.22 (Jun. 14, 2022)
                       href: ./webview2/release-notes/runtime/102.md
 
-                    - name: Runtime 101 (May 9, 2022)
+                    - name: Runtime 101.0.1210.39 (May 9, 2022)
                       href: ./webview2/release-notes/runtime/101.md
 
-                    - name: Runtime 100 (Apr. 12, 2022)
+                    - name: Runtime 100.0.1185.39 (Apr. 12, 2022)
                       href: ./webview2/release-notes/runtime/100.md
 
-                    - name: Runtime 99 (Mar. 10, 2022)
+                    - name: Runtime 99.0.1150.38 (Mar. 10, 2022)
                       href: ./webview2/release-notes/runtime/99.md
 
-                    - name: Runtime 98 (Feb. 6, 2022)
+                    - name: Runtime 98.0.1108.44 (Feb. 6, 2022)
                       href: ./webview2/release-notes/runtime/98.md
 
+# todo: resume here, globally updating title to long version number:
                     - name: Runtime 97 (Jan. 13, 2022)
                       href: ./webview2/release-notes/runtime/97.md
 

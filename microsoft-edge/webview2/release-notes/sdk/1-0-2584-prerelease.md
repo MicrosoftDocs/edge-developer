@@ -54,7 +54,7 @@ Introduced an option to cancel the initial navigation in WebView2, to improve st
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 126 (Jun. 19, 2024)](../runtime/126.md)
+* [Runtime 126.0.2592.51 (Jun. 19, 2024)](../runtime/126.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

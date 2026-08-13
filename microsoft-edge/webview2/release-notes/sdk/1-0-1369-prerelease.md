@@ -75,7 +75,7 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 106 (Oct. 11, 2022)](../runtime/106.md)
+* [Runtime 106.0.1370.28 (Oct. 11, 2022)](../runtime/106.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)

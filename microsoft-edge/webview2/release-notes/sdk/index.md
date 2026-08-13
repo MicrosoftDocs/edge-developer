@@ -47,10 +47,18 @@ Release notes entries correspond to historical releases of WebView2, and are not
 <!-- ====================================================================== -->
 ## Release cadence
 
-The following have a variable release cadence, as-needed based on new features and bug fixes:
+The following have a variable release cadence:
 * The WebView2 Release SDK.
 * The WebView2 Prerelease SDK.
 * Release notes about the WebView2 SDKs.
+
+WebView2 SDK releases use a variable, as-needed cadence.  A WebView2 SDK release doesn't accompany every WebView2 Runtime release.  When a WebView2 SDK is published, it aligns with the corresponding WebView2 Runtime version.
+
+A WebView2 SDK release is published on an as-needed basis when the following changes warrant a release:
+* New APIs or features.
+* Bug fixes.
+* Security fixes.
+* Other SDK changes.
 
 
 <!-- ====================================================================== -->
