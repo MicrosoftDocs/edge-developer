@@ -1516,7 +1516,7 @@
 
               # maint:
               # list past 10 releases (runtimes)
-              # in toc.yml, add new relnotes pages, move relnotes pages to runtime archive
+              # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link
             - name: Runtime release notes
               items:
@@ -1553,7 +1553,7 @@
                 - name: Runtime 143 (Dec. 8, 2025)
                   href: ./webview2/release-notes/runtime/143.md
 
-                - name: Runtime archive
+                - name: Archive
                   items:
                     - name: Runtime 142 (Nov. 3, 2025)
                       href: ./webview2/release-notes/runtime/142.md
@@ -1754,7 +1754,7 @@
 
               # maint:
               # list past 10 releases
-              # in toc.yml, add new relnotes pages, move relnotes pages to sdk archive
+              # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links
               # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2 > Load more
             - name: SDK release notes
@@ -1810,7 +1810,7 @@
                 - name: SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
                   href: ./webview2/release-notes/sdk/1-0-3650-prerelease.md
 
-                - name: SDK archive  # keep Runtime nnn pair together when moving to archive
+                - name: Archive  # keep Runtime nnn pair together when moving to archive
                   items:
                     - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3595-46.md
