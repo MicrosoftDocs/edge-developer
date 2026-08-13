@@ -69,7 +69,7 @@ You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [usi
 
 If you set the environment variable globally, it changes the WebView2 channel for all apps that use WebView2 on the machine.
 
-If you are using the API, then we recommend building UI in your app that allows your users to change between using the Stable Runtime or a preview Runtime.
+If you are using the API, then we recommend building UI in your app that allows your users to change between using the Stable WebView2 Runtime or a WebView2 Preview Runtime.
 
 
 <!-- ------------------------------ -->

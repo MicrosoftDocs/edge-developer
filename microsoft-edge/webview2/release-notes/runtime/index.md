@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/05/2026
+ms.date: 08/12/2026
 ---
 # Release notes for the WebView2 Runtime
 
@@ -51,11 +51,16 @@ See also:
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
-* Use the Canary preview channel of Microsoft Edge when you develop using a Prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+* Use the Canary preview channel of Microsoft Edge (which includes the WebView2 Preview Runtime) when you do early testing and development using a Prerelease version of the WebView2 SDK package.
+
+  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.  
+
+  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-For more information, see [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
+See also:
+* [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
 
 
 <!-- ====================================================================== -->
@@ -63,7 +68,7 @@ For more information, see [Matching the Runtime version with the SDK version](..
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel (containing a WebView2 preview Runtime), see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
@@ -85,7 +90,7 @@ Release notes entries correspond to historical releases of WebView2, and are not
 <!-- ====================================================================== -->
 ## Updating the Runtime
 
-WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
+WebView2 changes may require an update to the WebView2 Runtime, the WebView2 SDK, or both.  Most new APIs require both Runtime and SDK updates.
 
 WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
 
@@ -93,9 +98,9 @@ WebView2 shares code and binaries with the Microsoft Edge browser, and is releas
 
 * To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
 
-To obtain a preview Runtime, use the following combination:
+To obtain a WebView2 Preview Runtime, use the following combination:
 * A Prerelease version of the WebView2 SDK.
-* A preview channel of Microsoft Edge (containing a WebView2 preview Runtime) on your development client.
+* A preview channel of Microsoft Edge (containing the WebView2 Preview Runtime) on your development client.
 
 See also:
 * [Prerelease and Release SDKs for WebView2](../../concepts/versioning.md)
