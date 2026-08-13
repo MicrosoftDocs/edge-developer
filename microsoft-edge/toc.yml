@@ -1319,7 +1319,7 @@
                   href: /legal/microsoft-edge/extensions/ada-addendum
                   displayName: policy, policies
 
-                - name: Developer policies for the Microsoft Edge Add-ons store
+                - name: Developer policies for the Microsoft Edge Add-ons website
                   href: /legal/microsoft-edge/extensions/developer-policies
                   displayName: policy
 # -----------------------------------------------------------------------------
@@ -1350,16 +1350,16 @@
             - name: Extension hosting
               href: ./extensions/publish/hosting-and-updating.md
 
-            - name: Submission states for extensions at Microsoft Edge Add-ons
+            - name: Status for submitted extensions
               href: ./extensions/publish/submission-states.md
 
             - name: Alternative ways to distribute an extension
               href: ./extensions/developer-guide/alternate-distribution-options.md
 
-            - name: Curation and review process for extensions at Microsoft Edge Add-ons
+            - name: Curation and review process for extensions
               href: ./extensions/publish/add-ons-curation.md
 
-            - name: Use the Microsoft Edge Add-ons badge to promote your add-on
+            - name: Use the Microsoft Edge Add-ons badge to promote your extension
               href: ./extensions/publish/add-ons-badge.md
 # -------------------------------------
         - name: Update an extension
@@ -1369,10 +1369,10 @@
 # -------------------------------------
             - name: REST API for updating an extension
               items:
-                - name: Use the REST API to update an extension at Microsoft Edge Add-ons
+                - name: Use the REST API to update an extension
                   href: ./extensions/update/api/using-addons-api.md
 
-                - name: REST API Reference for updating an extension at Microsoft Edge Add-ons
+                - name: REST API Reference for updating an extension
                   href: ./extensions/update/api/addons-api-reference.md
 # -------------------------------------
             - name: Set an externally installed extension to automatically update
