@@ -1842,7 +1842,7 @@
                     - name: Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3296-prerelease.md
 
-                    # todo: resume here, moving Runtime content from SDK page to Runtime page
+                    # todo: resume here, moving runtime content from sdk pages to runtime page
                     - name: Release SDK 1.0.3240.44, for Runtime 136 (May 5, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3240-44.md
                     - name: Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
