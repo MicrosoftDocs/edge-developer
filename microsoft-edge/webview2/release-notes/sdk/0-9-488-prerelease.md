@@ -16,6 +16,8 @@ no earlier prerelease
 feb 20 Release was 82
 -->
 
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Apr. 20, 2020.
+
 This SDK was last updated Apr. 20, 2020.
 
 [NuGet package for WebView2 SDK 0.9.488-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488-prerelease)

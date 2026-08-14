@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)
 
-Release Date: Oct. 11, 2022
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Oct. 11, 2022.
 
 [NuGet package for WebView2 SDK 1.0.1414-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1414-prerelease)
 
@@ -136,13 +136,9 @@ Added support for Custom Crash Reporting API.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Removed three-dot menu with a broken link from the downloads page.  (Runtime-only)  ([Issue #2753](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2753))
-
 * Fixed a bug in the WebView2 WinRT JS Projection tool (wv2winrt) where C++20 projects failed to compile.  ([Issue #2768](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2768))
 
-* Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event.  (SDK-only)
-
-* Fixed a bug where it wasn't possible to dismiss the download popup after minimizing the window.  (Runtime-only)
+* Fixed a crash which could occur with the WebView2 WinRT API while closing down WebView2 if you subscribed to any events, especially the `CoreWebView2.GetDevToolsEventReceiver` event.
 
 
 <!-- ====================================================================== -->

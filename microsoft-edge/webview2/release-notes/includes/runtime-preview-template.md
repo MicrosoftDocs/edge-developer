@@ -1,17 +1,17 @@
 ---
-title: Preview Runtime 152.0.4181.0 (Aug. 3, 2026)
-description: Release notes for Microsoft Edge WebView2 Preview Runtime 152.0.4181.0.
+title: Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
+description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.n.nnnn.nn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/03/2026
+ms.date: 01/01/2026
 ---
-# Preview Runtime 152.0.4181.0 (Aug. 3, 2026)
+# Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
 <!-- todo: when this runtime gets released as a stable runtime, remove "preview" from title, update version number, update date, update lead-in sentence; same format as regular sibling .md -->
 
-Release notes for Microsoft Edge WebView2 Preview Runtime, release date: Aug. 3, 2026.
+Release notes for Microsoft Edge WebView2 Preview Runtime, release date: Mmm. dd, yyyy.
 
 <!-- todo: remove paragraph when this runtime gets released as a stable runtime -->
 This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
@@ -20,27 +20,14 @@ This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SD
 <!-- ====================================================================== -->
 #### Bug fixes
 
-* Fixed invisible caption button glyphs on dark Window Controls Overlay backgrounds.
-
-* Restricted access to a singleton host pipe in legacy WebView2 clients.
-
-* Removed implicit `window.gc` addition on WebViews.
-
-* Fixed the "download shortcut" announcement by screen readers.
-
-* Fixed the Min/Max/Close flicker issue in Windows Control Overlay.
-
-* Fixed honoring a custom scale factor for PDF printing.
-
-* Fixed the anchoring logic for the minimal-window **Download** popup.
-
-* Fixed the inability to drag a window via the top border of a custom title bar.
+* Fixed behavior.  ([Issue #]())
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](../sdk/1-0-4181-prerelease.md)
+* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-prerelease.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](./index.md)
    * [Release notes for WebView2 SDKs](../sdk/index.md)
+

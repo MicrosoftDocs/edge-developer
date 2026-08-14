@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Prerelease SDK 1.0.1248-prerelease, for Runtime 102 (May 9, 2022)
 
-Release Date: May 9, 2022
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: May 9, 2022.
 
 [NuGet package for WebView2 SDK 1.0.1248-prelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)
 

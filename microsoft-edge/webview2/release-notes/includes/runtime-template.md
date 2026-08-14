@@ -1,28 +1,29 @@
 ---
-title: Runtime 139.0.3405.78 (Aug. 11, 2025)
-description: Release notes for Microsoft Edge WebView2 Runtime 139.
+title: Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
+description: Release notes for Microsoft Edge WebView2 Runtime nnn.n.nnnn.nn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/11/2025
+ms.date: 01/01/2026
 ---
-# Runtime 139.0.3405.78 (Aug. 11, 2025)
+# Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
 
-Release notes for Microsoft Edge WebView2 Runtime, release date: Aug. 11, 2025.
+Release notes for Microsoft Edge WebView2 Runtime, release date: Mmm. dd, yyyy.
 
 
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed a crash in Devtools on Windows Server and Windows 10.
+* Fixed behavior.  ([Issue #]())
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)](../sdk/1-0-3405-78.md)
+* [SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-nn.md)
+* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-prerelease.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](./index.md)
    * [Release notes for WebView2 SDKs](../sdk/index.md)

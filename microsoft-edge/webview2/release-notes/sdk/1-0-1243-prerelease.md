@@ -15,6 +15,8 @@ May 2 was therefore probably 102
 Apr 12 was 102
 -->
 
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: May 2, 2022.
+
 This SDK was last updated May 2, 2022.
 
 [NuGet package for WebView2 SDK 1.0.1243-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1243-prerelease)

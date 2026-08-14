@@ -15,6 +15,8 @@ June 8 was therefore likely 85
 May 14 was 84
 -->
 
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Jun. 8, 2020.
+
 This SDK was last updated Jun. 8, 2020.
 
 [NuGet package for WebView2 SDK 0.9.538-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538-prerelease)

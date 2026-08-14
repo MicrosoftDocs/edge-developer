@@ -10,7 +10,7 @@ ms.date: 06/11/2026
 ---
 # Prerelease SDK 1.0.1369-prerelease, for Runtime 106 (Sep. 6, 2022)
 
-Release Date: Sep. 6, 2022
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Sep. 6, 2022.
 
 [NuGet package for WebView2 SDK 1.0.1369-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1369-prerelease)
 
@@ -62,10 +62,6 @@ The previous phase isn't in the release notes.
 ## Bug fixes
 
 * Fixed a bug where WPF apps would crash when windows with WebView2 were closed.  ([Issue #640](https://github.com/MicrosoftEdge/WebView2Feedback/issues/640))
-
-* Fixed a bug that produced simultaneous WebView creation failure.  (Runtime-only)  ([Issue #2703](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2703))
-
-* Fixed print settings paper size to support dimensions as small as 0.01 inches.  (Runtime-only)
 
 * Fixed a bug where the WebView2 print dialog reset the **Scale** setting to **Fit to printable area** every time.  ([Issue #2523](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2523))
 

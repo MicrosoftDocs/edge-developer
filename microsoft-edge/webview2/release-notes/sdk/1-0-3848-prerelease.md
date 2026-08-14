@@ -10,7 +10,7 @@ ms.date: 02/16/2026
 ---
 # SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
 
-Release Date: Feb. 16, 2026
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Feb. 16, 2026.
 
 [NuGet package for WebView2 SDK 1.0.3848-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3848-prerelease)
 
@@ -165,26 +165,6 @@ See also [Breaking change: Enable WebView2-specific Javascript APIs for service 
   * [ICoreWebView2ExperimentalProfile15::put_AreWebViewScriptApisEnabledForServiceWorkers](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile15?view=webview2-1.0.3848-prerelease&preserve-view=true#put_arewebviewscriptapisenabledforserviceworkers)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-This Prerelease SDK includes the following bug fixes.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed the PDF toolbar disappearing when all options in a region are removed.  ([Issue #4738](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4738))
-
-* Fixed a white flash that occurred when Windows Search became visible after being hidden.
-
-* Fixed the title bar shadow so that it's not displayed in a transparent WebView2 control.  ([Issue #5492](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5492))
-
-* Fixed WebView2 transparency.
-
-* Fixed a Local Network Access (LNA) prompts issue, by disabling LNA checks in WebView2.
 
 
 <!-- ====================================================================== -->

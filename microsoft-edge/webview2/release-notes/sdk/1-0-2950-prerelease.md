@@ -10,7 +10,7 @@ ms.date: 11/18/2024
 ---
 # Prerelease SDK 1.0.2950-prerelease, for Runtime 132 (Nov. 18, 2024)
 
-Release Date: Nov. 18, 2024
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Nov. 18, 2024.
 
 [NuGet package for WebView2 SDK 1.0.2950-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.2950-prerelease)
 
@@ -19,15 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 <!-- ====================================================================== -->
 ## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Added Arm64ec support.
 
