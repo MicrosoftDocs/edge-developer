@@ -19,11 +19,11 @@ For end-user documentation about how to use extensions for Microsoft Edge, see t
 ## Microsoft Learning Center
 <!-- /learning-center/ -->
 
-* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - searching for "extensions"<!-- or "extension" --> returns articles such as the following:
+* [Do More with Edge](https://www.microsoft.com/en-us/edge/learning-center/)<!-- requires /en-us/ --> - searching for "extensions"<!-- or "extension" --> returns articles such as the following:
 
-  * [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions)
+  * [Everything to know about browser extensions](https://www.microsoft.com/en-us/edge/learning-center/everything-to-know-about-browser-extensions)<!-- requires /en-us/ -->
 
-  * [The best browser extensions for daily life](https://www.microsoft.com/edge/learning-center/browser-extensions)
+  * [The best browser extensions for daily life](https://www.microsoft.com/en-us/edge/learning-center/browser-extensions)<!-- requires /en-us/ -->
 
 
 <!-- ====================================================================== -->

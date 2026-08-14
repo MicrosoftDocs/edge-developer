@@ -8,7 +8,6 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 05/26/2022
 ---
-
 # Securely debug original code by publishing source maps to the Azure Artifacts symbol server
 
 To securely<!-- add sentence to define "securely", what are we making not happen?  what's the UX/end-result motivation for "securely"? --> see and work with your original development source code in DevTools rather than the compiled, minified, and bundled production code that's returned by the web server, use source maps served by the Azure Artifacts symbol server.

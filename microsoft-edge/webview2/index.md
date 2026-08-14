@@ -118,7 +118,7 @@ The following programming environments are supported for WebView2:
 * [WinUI 3.0](/windows/apps/winui/winui3/)
 
 In addition to Windows devices, WebView2 is also supported on the following devices:
-* Xbox
+* XBOX
 * HoloLens 2
 
 

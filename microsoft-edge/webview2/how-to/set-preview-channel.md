@@ -56,7 +56,7 @@ We recommend that you test upcoming changes using preview channels to ensure you
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-Preview channels of Microsoft Edge include the preview WebView2 Runtime.  Preview channels are also called _Insider channels_.  After being installed, the preview channels stay up-to-date; the latest version of each preview channel is automatically installed.  For example, this means the Canary channel will update itself almost daily.
+Preview channels of Microsoft Edge include the WebView2 Preview Runtime.  Preview channels are also called _Insider channels_.  After being installed, the preview channels stay up-to-date; the latest version of each preview channel is automatically installed.  For example, this means the Canary channel will update itself almost daily.
 
 To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
