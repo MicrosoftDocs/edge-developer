@@ -98,17 +98,6 @@ SDKs/packages are Prerelease or Release
 
 
 <!-- ====================================================================== -->
-## Updating the SDK
-
-WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
-
-To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
-
-See also:
-* [Updating the Runtime](../runtime/index.md#updating-the-runtime) in _Release notes for the WebView2 Runtime_.
-
-
-<!-- ====================================================================== -->
 ## Recommended browser channel and Runtime
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
@@ -118,6 +107,17 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
 For more information, see [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
+
+
+<!-- ====================================================================== -->
+## Updating the SDK
+
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
+
+To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+
+See also:
+* [Updating the Runtime](../runtime/index.md#updating-the-runtime) in _Release notes for the WebView2 Runtime_.
 
 
 <!-- ====================================================================== -->
