@@ -156,19 +156,6 @@ See [User data and privacy in Microsoft Edge](/legal/microsoft-edge/privacy).
 -->
 
 
-<!-- leaf node (article; omit per PR review) -->
-<!-- ====================================================================== -->
-<!-- ## The Web We Want initiative
-
-The Web We Want initiative is a cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform.
-
-If you build for the web, you inevitably run into problems.  Perhaps there's no way to achieve an aspect of your design with CSS, or it may require an incredible amount of experimenting with CSS.  Maybe there's a device feature you want to tap into using JavaScript, or there's a needed Developer Tools feature that can make your job easier.
-
-See [The Web We Want initiative](./web-we-want/index.md).
--->
-
-
-<!-- ============================================================================================================================================ -->
 <!-- ============================================================================================================================================ -->
 ## How to use this documentation
 
@@ -180,7 +167,7 @@ The following sections are tips for using the Microsoft Learn website.
 
 The present website (learn.microsoft.com) is for developer documentation.  For Microsoft Edge end-user docs, see:
 * [Microsoft Edge help & learning](https://support.microsoft.com/microsoft-edge) - support.microsoft.com.
-* [Do More with Edge](https://www.microsoft.com/edge/learning-center/) - Learning center at Microsoft.com.
+* [Do More with Edge](https://www.microsoft.com/en-us/edge/learning-center/)<!-- requires /en-us/ --> - Learning center at Microsoft.com.
 
 See also:
 * [User docs about Microsoft Edge extensions](./extensions/getting-started/user-docs.md)
@@ -199,25 +186,27 @@ To see details of a screenshot or diagram:
 
 
 <!-- ====================================================================== -->
-## Look up key words and terms in "Filter by title" text box
+## Search for text in the "Find by title" text box
 
-The multi-purpose **Filter by title** text box supports:
+The multi-purpose **Find by title** text box supports:
 
 * Navigating the table of contents (TOC).
 * Index term lookup of key words.
 * Full-text search of the documentation.
 
-In the **Filter by title** box in the upper left, enter a term or key word to find:
+In the **Find by title** box in the upper left, enter a term or key word to find:
 
-![The multi-purpose "Filter by title" text box for navigating the table of contents, searching the documentation, and index term lookup of key words](./develop-web-microsoft-edge-images/filter-by-title-ui.png)
+![The "Find by title" text box](./develop-web-microsoft-edge-images/filter-by-title-ui.png)
 
-If the desired article isn't found, select **Search for "_search-term_" in all Microsoft Edge documentation**:
+To restrict and narrow the search, wrap the search string in double-quotes.
 
-![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation](./develop-web-microsoft-edge-images/full-text-search-fallback.png)
+If the desired article isn't found, select **Search for "_search-term_" in all Microsoft Edge Developer documentation**:
+
+![Full-text search](./develop-web-microsoft-edge-images/full-text-search-fallback.png)
 
 The full-text search page initially searches all _Microsoft Edge_ documentation.  Or, click the **View all results** link for a broader search:
 
-![The full-text search page initially searches all Microsoft Edge documentation, or you can click the link 'View all results' for a broader search](./develop-web-microsoft-edge-images/full-text-search-page.png)
+![View all results](./develop-web-microsoft-edge-images/full-text-search-page.png)
 
 
 <!-- ====================================================================== -->

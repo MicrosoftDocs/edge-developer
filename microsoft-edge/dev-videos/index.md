@@ -132,7 +132,7 @@ Mar. 28, 2023
 [![Thumbnail image for video "What's new in DevTools 111"](./index-images/devtools-whatsnew-111.png)](https://www.youtube.com/watch?v=-0pWQsqlHAg)
 
 Covers:
-* Remotely debug web content on Xbox and HoloLens devices.
+* Remotely debug web content on XBOX and HoloLens devices.
 * Unminified file and function names in the **Performance** tool.
 * Can copy the CSS **Selector Stats** table to Excel.
 * Rendering emulation features in the Device Mode toolbar.

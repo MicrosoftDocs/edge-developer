@@ -197,7 +197,7 @@ In the Evergreen distribution approach, the client's WebView2 Runtime automatica
 
 In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the WebView2 Runtime that's required by your app.  To view or get the latest WebView2 Runtime versions, use the [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) section of the _Microsoft Edge WebView2_ page at developer.microsoft.com.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.  The latest Runtime supports all APIs that are in the latest Release SDK.
 
-To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for the WebView2 SDK](../release-notes/index.md).
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for WebView2](../release-notes/index.md).
 
 
 <!-- ====================================================================== -->
@@ -241,7 +241,7 @@ If your code determines that an API is unavailable in the client's installed Web
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- bucket 8 very bottom -->
 * [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.<!-- bucket 12 -->
-* [Release notes for the WebView2 SDK](../release-notes/index.md)<!-- bucket 12 -->
+* [Release notes for WebView2](../release-notes/index.md)<!-- bucket 12 -->
 * [WebView2 API Reference](../webview2-api-reference.md)<!-- bucket 13 -->
 * [Release SDK 1.0.622.22, for Runtime 86 (Oct. 19, 2020)](../release-notes/archive.md#release-sdk-1062222-for-runtime-86-oct-19-2020) in _Archived release notes for the WebView2 SDK_.<!-- bucket 12 -->
 

@@ -89,7 +89,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Overview and timelines for migrating to Manifest V3
+          - text: Timeline for migrating to Manifest V3
             url: ../developer-guide/manifest-v3.md
 
           - text: Migrate an extension from Manifest V2 to V3
@@ -137,7 +137,7 @@ landingContent:
           - text: App Developer Agreement Addendum for Microsoft Edge program users
             url: /legal/microsoft-edge/extensions/ada-addendum
 
-          - text: Developer policies for the Microsoft Edge Add-ons store
+          - text: Developer policies for the Microsoft Edge Add-ons website
             url: /legal/microsoft-edge/extensions/developer-policies
 
 # =============================================================================
@@ -172,7 +172,7 @@ landingContent:
           - text: Extension hosting
             url: ../publish/hosting-and-updating.md
 
-          - text: Submission states for extensions at Microsoft Edge Add-ons
+          - text: Status for submitted extensions
             url: ../publish/submission-states.md
 
           - text: Manage account settings
@@ -183,7 +183,7 @@ landingContent:
 
       - linkListType: concept
         links:
-          - text: Curation and review process for extensions at Microsoft Edge Add-ons
+          - text: Curation and review process for extensions
             url: ../publish/add-ons-curation.md
 
 # -----------------------------------------------------------------------------
@@ -198,12 +198,12 @@ landingContent:
           - text: Set an externally installed extension to automatically update
             url: ../update/auto-update.md
 
-          - text: Use the REST API to update an extension at Microsoft Edge Add-ons
+          - text: Use the REST API to update an extension
             url: ../update/api/using-addons-api.md
 
       - linkListType: reference
         links:
-          - text: REST API Reference for updating an extension at Microsoft Edge Add-ons
+          - text: REST API Reference for updating an extension
             url: ../update/api/addons-api-reference.md
 
 # =============================================================================
@@ -238,11 +238,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge Add-ons site  # store
+          - text: Microsoft Edge Add-ons website
             url: https://microsoftedge.microsoft.com
 
           - text: Everything to know about browser extensions  # introduction for users
-            url: https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions
+            url: https://www.microsoft.com/en-us/edge/learning-center/everything-to-know-about-browser-extensions  # requires /en-us/
 
           - text: Add, turn off, or remove extensions in Microsoft Edge  # support steps for users
             url: https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026
