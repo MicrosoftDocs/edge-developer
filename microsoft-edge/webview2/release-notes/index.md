@@ -11,7 +11,7 @@ ms.date: 08/05/2026
 # Release notes for WebView2
 
 Release notes for the WebView2 Runtime and for WebView2 SDKs.
-
+ 
 
 <!-- ====================================================================== -->
 ## See also
