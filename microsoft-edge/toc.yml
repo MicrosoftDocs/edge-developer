@@ -2029,7 +2029,7 @@
 
                     - name: Prerelease SDK 1.0.1189-prerelease, for Runtime 100 (Mar. 10, 2022)
                       href: ./webview2/release-notes/sdk/1-0-1189-prerelease.md
-                    # todo: check each sdk page below re: link to previous phase:
+                    # todo: resume here, checking re: link to previous phase
                     - name: Release SDK 1.0.1185.39, for Runtime 100 (Apr. 12, 2022)
                       href: ./webview2/release-notes/sdk/1-0-1185-39.md
                     - name: Prerelease SDK 1.0.1158-prerelease, for Runtime 100 (Feb. 6, 2022)
