@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Oct. 19,
 
 [NuGet package for WebView2 SDK 1.0.674-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease)
 
-This Prerelease version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or later.
+This Prerelease version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or later; see [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md).
 
 
 <!-- ====================================================================== -->

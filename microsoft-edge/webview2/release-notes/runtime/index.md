@@ -28,19 +28,17 @@ Release notes for recent Runtimes:
 
 For earlier release notes, see **Archive** in the table of contents.
 
-You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+To learn more about the WebView2 Runtime and decide how to distribute the Runtime with your app, see [Evergreen vs. fixed version of the WebView2 Runtime](../../concepts/evergreen-vs-fixed-version.md).
 
-Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../../concepts/overview-features-apis.md).
+You can download the WebView2 Evergreen Runtime or a Fixed Version Runtime at [Microsoft Edge WebView2](developer.microsoft.com/microsoft-edge/webview2).
 
-Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+Release notes entries correspond to historical releases of the WebView2 Runtime, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of the WebView2 Runtime are released.
 
 
 <!-- ====================================================================== -->
 ## Release cadence
 
-The following have a 2-week release cadence:
-* The WebView2 Runtime.
-* Release notes about the WebView2 Runtime.
+The WebView2 Runtime has a 2-week release cadence, in sync with Microsoft Edge.
 
 See also:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)

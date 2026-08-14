@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: May 14, 
 
 [NuGet package for WebView2 SDK 0.9.515-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease)
 
-This Prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0.515.0 or later.
+This Prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0.515.0 or later; see [Runtime 84.9.488 (Apr. 20, 2020)](../runtime/84.md).
 
 * > [!IMPORTANT]
    > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.
