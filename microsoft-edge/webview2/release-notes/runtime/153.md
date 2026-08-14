@@ -20,13 +20,13 @@ This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SD
 <!-- ====================================================================== -->
 #### Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-prerelease.md)
+* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (../sdk/n-n-nnnn-prerelease.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](./index.md)
    * [Release notes for WebView2 SDKs](../sdk/index.md)
