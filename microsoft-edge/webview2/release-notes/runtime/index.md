@@ -17,7 +17,7 @@ in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earli
 Release notes for recent Runtimes:
 
 * [Preview Runtime 153.0.nnnn.nn (Mmm. dd, 2026)](./153.md)
-* [Runtime 152.0.nnnn.nn (Mmm. dd, 2026)](./152.md)
+* [Runtime 152.0.nnnn.nn (Mmm. dd, yyyy)](./152.md)
 * [Runtime 151.0.4129.50 (Aug. 3, 2026)](./151.md)
 * [Runtime 150.0.4078.44 (Jul. 7, 2026)](./150.md)
 * [Runtime 149.0.4022.49 (Jun. 11, 2026)](./149.md)

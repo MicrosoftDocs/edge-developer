@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Aug. 3, 
 
 [NuGet package for WebView2 SDK 1.0.4181-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4181-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 152.0.4181.0 or later; see [Runtime 152.0.nnnn.nn (Mmm. dd, 2026)](../runtime/152.md).
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 152.0.4181.0 or later; see [Runtime 152.0.nnnn.nn (Mmm. dd, yyyy)](../runtime/152.md).
 
 
 <!-- ====================================================================== -->
@@ -130,7 +130,7 @@ Releasing or closing the monitor stops all events and clears all filters.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 152.0.nnnn.nn (Mmm. dd, 2026)](../runtime/152.md)
+* [Runtime 152.0.nnnn.nn (Mmm. dd, yyyy)](../runtime/152.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
