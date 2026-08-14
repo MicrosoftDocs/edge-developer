@@ -1523,10 +1523,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 153.0.nnnn.nn (Mmm. dd, yyyy)
+                - name: Preview Runtime 153.n.nnnn.nn (Mmm. dd, yyyy)
                   href: ./webview2/release-notes/runtime/153.md
 
-                - name: Runtime 152.0.nnnn.nn (Mmm. dd, yyyy)
+                - name: Runtime 152.n.nnnn.nn (Mmm. dd, yyyy)
                   href: ./webview2/release-notes/runtime/152.md
 
                 - name: Runtime 151.0.4129.50 (Aug. 3, 2026)
