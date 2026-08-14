@@ -46,7 +46,7 @@ The following APIs have been promoted from Phase 2: Stable in Prerelease, to Pha
 
 description
 
-Previous phase: [~](./~.md#~) in _~_.
+Previous phase: [~] (./~.md#~) in _~_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -60,7 +60,7 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->

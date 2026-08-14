@@ -67,7 +67,7 @@ The following APIs skipped Phase 1: Experimental in Prerelease, and have been di
 
 description
 
-Previous phase: [~](./~.md#~) in _~_.
+Previous phase: [~] (./~.md#~) in _~_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -81,7 +81,7 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->
