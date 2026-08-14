@@ -125,6 +125,16 @@
       "redirect_url": "/microsoft-edge/webview2/release-notes/index",
       "redirect_document_id": false
     },
+    {
+      "source_path": "../microsoft-edge/webview2/release-notes/about.md",
+      "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/webview2/release-notes/archive.md",
+      "redirect_url": "/microsoft-edge/webview2/release-notes/index",
+      "redirect_document_id": false
+    },
     // /Release notes
     // ======================================================================
     // Reference

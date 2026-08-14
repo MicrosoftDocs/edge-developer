@@ -5,7 +5,7 @@ summary: Documentation, references, and code samples to help IT administrators d
 brand: m365
 metadata:
   title: Microsoft Edge documentation
-  description: Microsoft Edge information for developers, IT administrators, and browser users; including DevTools, Edge Add-ons (such as extensions), PWAs, WebDriver, and more.
+  description: Microsoft Edge information for developers, IT administrators, and browser users; including DevTools, Edge Add-ons (extensions), PWAs, WebDriver, and more.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -359,7 +359,7 @@ conceptualContent:
               url: ./webview2/index.md
               itemType: overview
 
-            - text: Release notes for the WebView2 SDK
+            - text: Release notes for WebView2
               url: ./webview2/release-notes/index.md
               itemType: whats-new
 

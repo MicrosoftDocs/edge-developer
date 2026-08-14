@@ -13,8 +13,8 @@ ms.date: 04/22/2024
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime.  This helps catch any bugs before they degrade the app experience for end users.
 
 Conduct both automated and manual testing:
-* For **automated testing**, do **prerelease testing**, which means testing with a preview version of the WebView2 Runtime.  Covered by the present article.
-* For **manual testing**, use **self-hosting**, which means deploying a preview version of the WebView2 Runtime with your app, to use daily by your team.  See [Self-host by deploying preview channels](./self-hosting.md).
+* For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  Covered by the present article.
+* For **manual testing**, use **self-hosting**, which means deploying a WebView2 Preview Runtime with your app, to use daily by your team.  See [Self-host by deploying preview channels](./self-hosting.md).
 
 
 <!-- ====================================================================== -->
@@ -22,7 +22,7 @@ Conduct both automated and manual testing:
 
 Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.
 
-To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the preview WebView2 Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).
+To catch app-specific regressions before WebView2 changes ship in Edge Stable, test your WebView2 app against the WebView2 Preview Runtime that's shipped with the preview channels of Microsoft Edge (Canary, Dev, and Beta).
 
 To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -32,7 +32,7 @@ To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [B
 
 Start with automated testing against the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
-Start with automated testing against the preview WebView2 Runtime in the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
+Start with automated testing against the WebView2 Preview Runtime in the Microsoft Edge **Canary** channel, which ships daily.  This enables you to catch issues as early as possible.  The Microsoft Edge **Dev** channel ships weekly, and is also a good option.
 
 To do automated testing:
 
