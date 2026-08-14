@@ -127,7 +127,7 @@ When hosting the WebView2 control, your app has access to the following features
 
 <!-- maintenance notes: add table rows for any new h2 sections -->
 
-This page only lists APIs that are in Release SDKs; it doesn't list Experimental APIs, or Stable APIs that are not yet available in Release SDKs.  For a comprehensive list of APIs including Experimental APIs, see [Release notes for the WebView2 SDK](../release-notes/index.md).
+This page only lists APIs that are in Release SDKs; it doesn't list Experimental APIs, or Stable APIs that are not yet available in Release SDKs.  For a comprehensive list of APIs including Experimental APIs, see [Release notes for WebView2](../release-notes/index.md).
 
 
 <!-- ====================================================================== -->

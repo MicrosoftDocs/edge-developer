@@ -1,0 +1,159 @@
+---
+title: Release notes for WebView2 SDKs
+description: Microsoft Edge WebView2 SDKs new features, APIs, and fixes for Win32, WPF, and WinForms.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 08/05/2026
+---
+# Release notes for WebView2 SDKs
+
+<!-- maint:
+list past 10 releases
+in toc.yml, add new relnotes pages, move relnotes pages to archive
+in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
+Release notes for recent SDKs:
+* [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
+* [SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
+* [SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
+* [SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
+* [SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
+* [SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)](./1-0-4022-49.md)
+* [SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
+* [SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
+* [SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
+* [SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
+* [SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
+* [SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)
+* [SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
+* [SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)](./1-0-3800-47.md)
+* [SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)](./1-0-3796-prerelease.md)
+* [SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)](./1-0-3719-77.md)
+* [SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)](./1-0-3712-prerelease.md)
+* [SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)](./1-0-3650-58.md)
+* [SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)](./1-0-3650-prerelease.md)
+
+For earlier release notes, see **Archive** in the table of contents.
+
+You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2) SDK packages at the NuGet site.
+
+Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../../concepts/overview-features-apis.md).
+
+Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+
+
+<!-- ====================================================================== -->
+## Release cadence
+
+WebView2 SDKs and WebView2 Prerelease SDKs are released when there are bug fixes, security fixes, new APIs or features, or other SDK changes that warrant a release.
+
+When a WebView2 SDK is published, it aligns with the corresponding WebView2 Runtime version.
+
+
+<!-- ====================================================================== -->
+## Phases of adding APIs
+
+New APIs are added in three phases, as follows:
+
+<!-- apis are first promoted from Staging (Phase 0) to Experimental (Phase 1)  -->
+
+1. APIs are initially introduced as Experimental APIs in a Prerelease SDK package.  In Win32, the type name includes the word "Experimental".
+
+   * Sometimes, APIs skip the Experimental phase and are added directly into a Stable in Prerelease SDK.
+
+1. Then the APIs become Stable APIs in a Prerelease SDK package.  In Win32, the type name omits the word "Experimental".
+
+1. Soon after, the APIs become Stable APIs in a Release SDK package.
+
+   * Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
+
+![Diagram of phases of introducing new APIs](./../about-images/phases-of-adding-apis.png)
+<!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
+
+Shorthand names of the phases:
+
+1. Experimental in Prerelease
+1. Stable in Prerelease
+1. Stable in Release
+
+Release notes sections use this wording for the phases:
+
+* The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+
+* The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+* The following APIs have been promoted from Phase 2: Stable in Prerelease, to Phase 3: Stable in Release, and are now included in this Release SDK.
+
+See also:
+* [Prerelease and Release SDKs for WebView2](../../concepts/versioning.md#phases-of-introducing-apis)
+   * [Moving from Experimental APIs to Stable APIs](../../concepts/versioning.md#moving-from-experimental-apis-to-stable-apis) in _Prerelease and Release SDKs for WebView2_.
+   * [Phases of introducing APIs](../../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
+
+<!-- terminology:
+APIs are Experimental or Stable
+SDKs/packages are Prerelease or Release
+-->
+
+
+<!-- ====================================================================== -->
+## Updating the SDK
+
+WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
+
+To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+
+See also:
+* [Updating the Runtime](../runtime/index.md#updating-the-runtime) in _Release notes for the WebView2 Runtime_.
+
+
+<!-- ====================================================================== -->
+## Recommended browser channel and Runtime
+
+Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
+
+* Use the Canary preview channel of Microsoft Edge when you develop using a Prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+
+* Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
+
+For more information, see [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
+
+
+<!-- ====================================================================== -->
+## Minimum version of the browser or Runtime to load WebView2
+
+To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
+
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+
+<!--
+Cross-framework API conventions
+
+Events:
+No EventHandler or CompletedHandler in .NET or WinRT.
+General event pattern:
+- Win32: add/remove_XYZ + XYZEventHandler
+- .NET/WinRT: XYZ event
+
+Async methods:
+- Win32: XYZ method + XYZCompletedHandler
+- .NET/WinRT: XYZAsync
+-->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Release notes for WebView2](../index.md)<!-- toc bucket 1.1 -->
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+* [Overview of WebView2 APIs](../../concepts/overview-features-apis.md)<!-- toc bucket 2.1 -->
+* [Contact the WebView2 team](../../contact.md)<!-- toc bucket: bottom -->
+* [Release notes for Microsoft Edge web platform](../../../web-platform/release-notes/index.md)
+* [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
+
+API Reference:
+* [WebView2 API Reference](../../webview2-api-reference.md)
+   * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
+   * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
+   * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->

@@ -113,7 +113,7 @@ This file is required, for an extension.  The manifest contains the following in
 | `name` | The name of the extension that will appear under `edge://extensions/`. |
 | `description` | The description of the extension that will be displayed under the name of the extension. |
 | `version` | The version of the extension that will appear next to the name of the extension. |
-| `manifest_version` | Determines the set of features that the extension will be using, such as network request modification.  The current version is version `3`.  To learn more about this version and the differences with version `2`, see [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md). |
+| `manifest_version` | Determines the set of features that the extension will be using, such as network request modification.  The current version is version `3`.  To learn more about this version and the differences with version `2`, see [Timeline for migrating to Manifest V3](../developer-guide/manifest-v3.md). |
 | `devtools_page` | The path to an HTML file that's run every time DevTools is opened, and loads the extension's JavaScript files.  This page isn't rendered in DevTools. |
 | `content_scripts` | The JavaScript or CSS files to use when the user opens specified webpages.  See [Content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts) in the Chrome docs. |
 | `permissions` | The local device requires permissions to view its system memory capacity, since the script calls API for that. |
@@ -387,7 +387,7 @@ See also:
 <!-- toc order, except promoted 1st item: -->
 * [Sample: Custom DevTools tool](./devtools-extension-sample.md)<!-- toc bucket 5 -->
 * [Overview of DevTools](../../devtools/overview.md)<!-- top of whole toc -->
-* [Overview and timelines for migrating to Manifest V3](../developer-guide/manifest-v3.md)<!-- toc bucket 5, much higher than present article -->
+* [Timeline for migrating to Manifest V3](../developer-guide/manifest-v3.md)<!-- toc bucket 5, much higher than present article -->
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)<!-- toc bucket 5, slightly higher than present article -->
 * [Get started developing an extension](../getting-started/index.md)<!-- toc bucket 2 -->
 * [Sample: Picture viewer pop-up webpage](../samples/picture-viewer-popup-webpage.md)<!-- toc bucket 3 -->

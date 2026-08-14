@@ -236,8 +236,7 @@ See also:
 <!-- ---------------------------------- -->
 #### Styles pane updates
 
-See also:
-* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
+Update Aug. 2026: The article "Edit CSS font styles and settings in the Styles pane" and its experiment checkbox have been removed.
 
 
 <!-- ---------- -->
@@ -249,9 +248,6 @@ The autocomplete UI of the **Styles** pane now detects the [revert](https://deve
 
 Chromium issue [#1075437](https://crbug.com/1075437)
 
-See also:
-* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
-
 
 <!-- ---------- -->
 ###### Image previews
@@ -261,9 +257,6 @@ Hover on a `background-image` value in the **Styles** pane to display a preview 
 ![Hovering over a background-image value](./devtools-images/image-preview.png)
 
 Chromium issue [#1040019](https://crbug.com/1040019)
-
-See also:
-* [Edit CSS font styles and settings in the Styles tab](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ---------- -->

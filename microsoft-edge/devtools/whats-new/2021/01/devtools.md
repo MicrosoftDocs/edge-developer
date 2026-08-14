@@ -50,7 +50,7 @@ See also:
 <!--  Title: Visual font editor in the Styles pane  -->
 <!--  Subtitle: Visual font editor in the Styles pane -->
 
-![Experimental feature](./devtools-images/experimental-tag.png)<!-- valid 05/13/2022 -->
+Update Aug. 2026: This experimental feature has been removed.
 
 When you work with fonts in CSS, use the new visual Font Editor.  You can define fallback fonts, and use sliders to define font weight, size, line-height, and spacing:
 
@@ -63,13 +63,7 @@ The **Font Editor** helps you to:
 * Convert units.
 * Generate accurate CSS code.
 
-To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable new Font Editor tools within Styles pane**.
-
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
-
-See also:
-* [Enable new font editor within the Styles tab](../../../experimental-features/index.md#enable-new-font-editor-within-the-styles-tab) in _Experimental features in Microsoft Edge DevTools_.
-* [Edit CSS font styles and settings in the Styles tab in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
 <!-- ====================================================================== -->
@@ -508,8 +502,6 @@ To turn on this experiment, select **Settings** > **Experiments** and then selec
 ![APCA in the Color Picker](./devtools-images/advanced-perceptual-contrast-algorithm.png)
 
 See also:
-* [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../../../experimental-features/index.md#enable-new-advanced-perceptual-contrast-algorithm-apca-replacing-previous-contrast-ratio-and-aaaaa-guidelines) in _Experimental features in Microsoft Edge DevTools_.
-Edge 89)_.
 * [Change colors with the Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 * [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 
