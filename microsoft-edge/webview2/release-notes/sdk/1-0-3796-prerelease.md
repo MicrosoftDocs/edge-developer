@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/11/2026
+ms.date: 01/19/2026
 ---
 # SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
 

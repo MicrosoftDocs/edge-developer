@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/11/2026
+ms.date: 04/07/2025
 ---
 # Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
 
@@ -20,8 +20,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Track navigation history for nested iframes (FrameCreatedEvent API)](#track-navigation-history-for-nested-iframes-framecreatedevent-api)
 * [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
