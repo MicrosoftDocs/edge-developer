@@ -28,8 +28,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Support for browser extensions in WebView2, for WinRT](#support-for-browser-extensions-in-webview2-for-winrt)
    * [WebResourceRequested for workers](#webresourcerequested-for-workers)
 * [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -405,27 +403,9 @@ Previous phase: [`WebResourceRequested` for workers](./1-0-1340-prerelease.md#we
 <!-- ====================================================================== -->
 ## Bug fixes
 
+* Fixed an issue where the WebView2 control in .NET was failing to find the `WebView2Loader.dll` on UNC paths.  ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
 
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a bug where closing a WebView control that has an embedded PDF viewer could lead to a crash.  (Runtime-only)  ([Issue #3832](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3832))
-
-* Fixed issues with stacking of child-process taskbar icons.  (Runtime-only)  ([Issue #3245](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3245))
-
-* Fixed a bug that sent an unnecessary network request for Edge Cloud Config Service.  (Runtime-only)  ([Issue #4180](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4180))
-
-* Updated the behavior of the `app-region` CSS property so that changes to its value trigger a page re-layout.  (Runtime-only)
-
-* Fixed an issue where `put_AreBrowserAcceleratorKeysEnabled` wasn't able to update settings for WebView2 when no `AcceleratorKeyPressed` event handler is registered. (Runtime-only)  ([Issue #4278](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4278))
-
-
-<!-- ------------------------------ -->
-#### SDK-only
-
-* Fixed an issue where the WebView2 control in .NET was failing to find the `WebView2Loader.dll` on UNC paths.  (SDK-only)  ([Issue #4081](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4081))
-
-* Fixed some issues causing instances of `InvalidOperationException` in .NET controls, that weren't helpful to developers.  (SDK-only)  ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
+* Fixed some issues causing instances of `InvalidOperationException` in .NET controls, that weren't helpful to developers.  ([Issue #4272](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4272))
 
 
 <!-- ====================================================================== -->

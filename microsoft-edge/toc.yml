@@ -1826,9 +1826,9 @@
                       href: ./webview2/release-notes/sdk/1-0-3485-44.md
                     - name: Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3477-prerelease.md
-
-                    - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)  # group as 139, imagine as below 3405.78
+                    - name: Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3415-prerelease.md
+
                     - name: Release SDK 1.0.3405.78, for Runtime 139 (Aug. 11, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3405-78.md
 
@@ -1842,7 +1842,6 @@
                     - name: Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3296-prerelease.md
 
-                    # todo: resume here, moving runtime content from sdk pages to runtime page
                     - name: Release SDK 1.0.3240.44, for Runtime 136 (May 5, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3240-44.md
                     - name: Prerelease SDK 1.0.3230-prerelease, for Runtime 136 (Apr. 7, 2025)
@@ -1857,9 +1856,9 @@
                       href: ./webview2/release-notes/sdk/1-0-3124-44.md
                     - name: Prerelease SDK 1.0.3116-prerelease, for Runtime 134 (Feb. 10, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3116-prerelease.md
-
-                    - name: Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)  # probably exception, group as if 133
+                    - name: Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3079-prerelease.md
+
                     - name: Release SDK 1.0.3065.39, for Runtime 133 (Feb. 10, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3065-39.md
 
@@ -1918,19 +1917,15 @@
                     - name: Prerelease SDK 1.0.2357-prerelease, for Runtime 122 (Jan. 30, 2024)
                       href: ./webview2/release-notes/sdk/1-0-2357-prerelease.md
 
-                    # exception order for 120 & 121:
                     - name: Release SDK 1.0.2277.86, for Runtime 121 (Feb. 5, 2024)
                       href: ./webview2/release-notes/sdk/1-0-2277-86.md
 
                     - name: Release SDK 1.0.2210.55, for Runtime 120 (Dec. 11, 2023)
                       href: ./webview2/release-notes/sdk/1-0-2210-55.md
-
                     - name: Prerelease SDK 1.0.2194-prerelease, for Runtime 120 (Nov. 6, 2023)
                       href: ./webview2/release-notes/sdk/1-0-2194-prerelease.md
-
                     - name: Prerelease SDK 1.0.2164-prerelease, for Runtime 120 (Oct. 18, 2023)
                       href: ./webview2/release-notes/sdk/1-0-2164-prerelease.md
-                    # end of 120/121
 
                     - name: Release SDK 1.0.2151.40, for Runtime 119 (Nov. 6, 2023)
                       href: ./webview2/release-notes/sdk/1-0-2151-40.md
@@ -1990,6 +1985,7 @@
                     - name: Release SDK 1.0.1462.37, for Runtime 108 (Dec. 12, 2022)  # no paired Prerelease 108
                       href: ./webview2/release-notes/sdk/1-0-1462-37.md
 
+                    # todo: resume here, moving runtime content from sdk pages to runtime page
                     - name: Release SDK 1.0.1418.22, for Runtime 107 (Oct. 31, 2022)
                       href: ./webview2/release-notes/sdk/1-0-1418-22.md
                     - name: Prerelease SDK 1.0.1414-prerelease, for Runtime 107 (Oct. 11, 2022)

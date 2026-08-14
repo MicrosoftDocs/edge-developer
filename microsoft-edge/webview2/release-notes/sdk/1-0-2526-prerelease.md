@@ -24,9 +24,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Fluent Style Overlay Scrollbar](#fluent-style-overlay-scrollbar)
 * [Bug fixes](#bug-fixes)
-   * [Runtime and SDK](#runtime-and-sdk)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -198,45 +195,9 @@ Previous phase: [Fluent Style Overlay Scrollbar](./1-0-2470-prerelease.md#fluent
 <!-- ====================================================================== -->
 ## Bug fixes
 
+* Fixed a bug in WinRT JavaScript projection where passing in a typed array resulted in an "Interface Not Supported" error.  (Runtime and SDK)  ([Issue #3486](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3486))
 
-<!-- ------------------------------ -->
-#### Runtime and SDK
-
-* Fixed a bug in WinRT JavaScript projection where passing in a typed array resulted in an "Interface Not Supported" error.  ([Issue #3486](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3486))
-
-* Added support for handling `out` array parameters in WinRT JavaScript projection.
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a bug where the Image Auto-captioning feature was enabled by default.
-
-* Fixed a bug where if the `LaunchingExternalURIScheme` event handler is attached, if the **always remember** checkbox is enabled and the user selects this checkbox, the dialog will incorrectly be shown again.
-
-* Fixed `GetNonClientRegionAtPoint` incorrectly returning `Nowhere` for some points.
-
-* Fixed a bug where the Text Services Framework would disconnect upon dropping a file onto a WebView2 region.
-
-* Fixed a bug where the View Source **Ctrl+U** keyboard shortcut remained enabled when the `AreDevToolsEnabled` setting was `false`.
-
-* Fixed a bug where a composable IME was duplicated upon regaining focus.  ([Issue #1610](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1610))
-
-* Ensured that `devicePixelRatio` is synchronized with custom rasterization scales.  ([Issue #3060](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3060))
-
-* Fixed a race condition when using `CallDevToolsProtocolMethod` events in `NewWindowRequested`.  ([Issue #4181](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4181))
-
-* Fixed a crash that can occur in WPF `TabIntoCore` when the `Controller` has been destroyed but the user tries to tab into the control (pressing the **Tab** key).  ([Issue #4452](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4452))
-
-* Ensured that spellcheck takes input language with case-insensitive format.
-
-* Made the Language API more robust regarding user input.
-
-* Fixed a bug where the **Save password?** prompt is not displayed.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
+* Added support for handling `out` array parameters in WinRT JavaScript projection.  (Runtime and SDK)
 
 * Fixed missing `AreBrowserExtensionsEnabled` API in WinRT projection.
 

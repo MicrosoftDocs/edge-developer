@@ -30,25 +30,7 @@ Introduced an option to cancel the initial navigation in WebView2, to improve st
 <!-- ====================================================================== -->
 ## Bug fixes
 
-
-<!-- ------------------------------ -->
-#### Runtime and SDK
-
-* Fixed a crash when .NET host object async methods return a null result.  ([Issue #4509](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4509))
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a WebView2 memory leak issue when the window is closed.  ([Issue #4286](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4286))
-
-* Fixed an issue where `ignoreMemberNotFoundError` wasn't working for .NET objects.  ([Issue #4497](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4497))
-
-* Now returns a proper error code when `CreateSharedBuffer` is called with 0 buffer size.  ([Issue #4554](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4554))
-
-* Fixed an activation issue for the caret browsing dialog.
-
-* Fixed an issue where the WebView2 Visual Hosting `CursorChanged` event wasn't firing for custom cursors.
+* Fixed a crash when .NET host object async methods return a null result.  (Runtime and SDK)  ([Issue #4509](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4509))
 
 
 <!-- ====================================================================== -->

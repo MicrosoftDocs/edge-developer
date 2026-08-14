@@ -23,8 +23,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [SaveAs APIs to programmatically perform Save as](#saveas-apis-to-programmatically-perform-save-as)
    * [Web notification handling, for non-persistent notifications](#web-notification-handling-for-non-persistent-notifications)
 * [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -240,18 +238,6 @@ Previous phase: [Desktop notifications through WebView2](./1-0-1988-prerelease.m
 
 <!-- ====================================================================== -->
 ## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed an issue where the app window couldn't be controlled via system commands (such as **Alt+F4** or **Alt+Spacebar**) when the focus was in WebView2 for Visual hosting mode.  ([Issue #2961](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2961))
-
-* Fixed a bug in WebView2 UWP where the Find bar couldn't be clicked into from the host app.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Adding the missing WinRT `CoreWebView2Notification.VibrationPattern` API.  This WinRT API can be combined with the stable notification API promotion release notes; see "Web Notification" and `NotificationReceived` for WinRT, immediately above.
 

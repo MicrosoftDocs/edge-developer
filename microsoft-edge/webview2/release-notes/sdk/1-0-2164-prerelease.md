@@ -19,7 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
    * [FailureSourceModulePath property](#failuresourcemodulepath-property)
-* [Bug fixes](#bug-fixes)
 * [See also](#see-also)
 
 
@@ -50,24 +49,6 @@ Added the `FailureSourceModulePath` property to the `ProcessFailedEventArgs` typ
    * [ICoreWebView2ExperimentalProcessFailedEventArgs::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessfailedeventargs?view=webview2-1.0.2164-prerelease&preserve-view=true#get_failuresourcemodulepath)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-* Added support for additional page settings (`PageRange` and `PagesPerSheet`) in the PrintToPDF API.  (Runtime-only)  ([Issue #3719](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3719))
-
-* Navigation to an Extension Resource file was not handled correctly, and has now been fixed with the correct handling method.  (Runtime-only)  ([Issue #3728](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3728))
-
-* Fixed an issue causing some UWP apps to be unable to input text.  (Runtime-only)  ([Issue #3805](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3805))
-
-* Fixed an initialization failure for apps that were using the Windows `PerProcessSystemDPIForceOff` compatibility setting.  (Runtime-only)  ([Issue #3692](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3692))
-
-* Removed monitors that were collecting data when the system default browser setting changes.  (Runtime-only)
-
-* Fixed a Dialog Position Offset bug in WebView2.  (Runtime-only)  ([Issue #3763](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3763))
-
-* Fixed a crash in the `NewWindowRequested` event if the `NewWindow` is set to `null`.  (Runtime-only)
 
 
 <!-- ====================================================================== -->

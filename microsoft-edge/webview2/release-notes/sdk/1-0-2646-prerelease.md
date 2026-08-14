@@ -25,8 +25,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [GetComICoreWebView2 method](#getcomicorewebview2-method)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [WebMessageObjects API: Inject DOM objects; file system handle](#webmessageobjects-api-inject-dom-objects-file-system-handle)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -272,16 +270,6 @@ Previous phase: [WebMessageObjects API: Inject DOM objects; file system handle](
    * `COREWEBVIEW2_FILE_SYSTEM_HANDLE_PERMISSION_READ_WRITE`
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a bug in owned-window activation logic for visual hosting.
 
 
 <!-- ====================================================================== -->

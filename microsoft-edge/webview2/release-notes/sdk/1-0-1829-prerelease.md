@@ -62,36 +62,17 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## Bug fixes
 
+<!-- assume items for both runtime & sdk: -->
+
 * Disabled the Chrome Web Store info banner that displays the option to allow extensions installation. ([Issue #3312](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3312))
 
 * Fixed an issue where a custom menu item wasn't firing. ([Issue #3300](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3300))
 
 * Fixed a crash during initialization when creating a WebView2 using WPF and SDK version 1.0.1722.32, which is now deprecated (see [SDK 1.0.1722.32 is deprecated](./1-0-1722-45.md#sdk-10172232-is-deprecated) in _Release SDK 1.0.1722.45, for Runtime 112 (Apr. 13, 2023)_).  ([Issue #3375](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3375))
 
-* Fixed a bug in `PostSharedBufferToScript` that stops after about 32000x1MB buffers are posted.  (Runtime-only)  ([Issue #3360](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3360))
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.PostSharedBufferToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postsharedbuffertoscript)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-* `CoreWebView2` Class:
-   * [CoreWebView2.PostSharedBufferToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#postsharedbuffertoscript)
-
-##### [Win32/C++](#tab/win32cpp)
-
-* `ICoreWebView2_17` interface:
-   * [ICoreWebView2_17::PostSharedBufferToScript](/microsoft-edge/webview2/reference/win32/icorewebview2_17#postsharedbuffertoscript)
-
----
-
-* Fixed an issue where navigation will always take place within a `ScriptDialogOpening` event callback.  (Runtime-only)  ([Issue #3355](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3355))
-
-* Fixed an issue to support the `BackForwardCache` flag.  (Runtime-only)
-
 * Fixed an issue with visual hosted owned windows, where clicking into the Find bar from outside the window didn't activate the Find bar.
+
+<!-- end both -->
 
 
 <!-- ====================================================================== -->

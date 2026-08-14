@@ -24,8 +24,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Allow input event messages to pass through the browser window](#allow-input-event-messages-to-pass-through-the-browser-window)
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Hit-testing results on regions](#hit-testing-results-on-regions)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -201,30 +199,6 @@ Previous phase: [Hit-testing results on regions](./1-0-2357-prerelease.md#hit-te
 * [COREWEBVIEW2_NON_CLIENT_REGION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.2415-prerelease&preserve-view=true#corewebview2_non_client_region_kind)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed the camera or mic not being able to open in Google Meet or Microsoft Teams meetings when the permission request is set to "not persisted" (that is, `SavesInProfile = false`).  ([Issue #3592](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3592))
-
-* Fixed appending an empty `--edge-webview-custom-scheme` command-line switch in a WebView2 browser process.
-
-* Disabled the global `UserDataFolder` registry key, so that this registry key can only be applied per-app.
-
-* Fixed the `NewWindowRequested` event not being fired when opened by a browser extension. ([Issue #3841](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3841))
-
-* Fixed the `NewWindowRequested` event not being fired when opening a view source. ([Issue #4162](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4162))
-
-* Fixed an issue to fire `StateChanged` and `BytesReceivedChanged` events when a download involves navigation.
-
-* Fixed a bug where the `BeforeUnload` dialog caused the WebView2 window to unexpectedly jump position. ([Issue #4350](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4350))
-
-* Fixed an issue where `PrintAsync` prints a blank page if it is called too soon, before the PDF is fully loaded.  ([Issue #3779](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3779))
 
 
 <!-- ====================================================================== -->

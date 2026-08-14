@@ -382,11 +382,7 @@ Previous phase: [SmartScreen API](./1-0-1414-prerelease.md#smartscreen-api) in _
 
 * Fixed a bug in `PrintAsync` and `PrintToPdfStreamAsync` that throws an exception when print settings are null.
 
-* Improved handling of apps running elevated.  (Runtime-only)
-
 * Added support for window management permission kind.  (Runtime and SDK)
-
-* Reliability improvement.  (Runtime-only)
 
 
 <!-- ====================================================================== -->

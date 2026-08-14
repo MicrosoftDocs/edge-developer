@@ -20,18 +20,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## Bug fixes
 
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Added the missing **Close** button in the **Download** flyout.
-
-* Fixed a race condition that occurred when the Web Request Response event never occurs.
-
-
-<!-- ------------------------------ -->
-#### SDK-only
-
 * Fixed .NET and Win32 documentation of the `CoreWebView2Find.FindNext` method that incorrectly mentioned `FindPrevious`.  The method summary now mentions `FindNext` instead.  ([Issue #5059](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5059))
 
 ##### [.NET/C#](#tab/dotnetcsharp)

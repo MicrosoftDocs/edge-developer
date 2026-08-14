@@ -25,8 +25,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Show WPF elements on top of the WebView2 layer (WebView2CompositionControl)](#show-wpf-elements-on-top-of-the-webview2-layer-webview2compositioncontrol)
 * [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -278,26 +276,6 @@ n/a
 
 <!-- ====================================================================== -->
 ## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a regression where display changes can cause WebView2 to render smaller than app window.
-
-* Enabled the `IsolateSandboxedIframes` upstream feature for WebView2.
-
-* Prevented deleting a service worker when the version changes.
-
-* The `CleanUpSome` API in `Hostobject` now only does garbage collection for the full heap.  `CleanUpSome` has been removed from the V8 engine.
-
-* Fixed a regression of `AreBrowserAcceleratorKeysEnabled`.  ([Issue #5033](https://github.com/MicrosoftEdge/WebView2Feedback/issues/5033))
-
-* Fixed a bug where `IsDefaultDownloadDialogOpenChanged` wasn't triggered when a dialog is closed by using the keyboard.  ([Issue #4807](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4807))
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Fixed an issue in the WPF `WebView2CompositionControl` where it's not displayed if it's initialized with size (0,0), such as when it's initialized in a `TabItem` of a `TabControl`.  ([Issue #4941](https://github.com/MicrosoftEdge/WebView2Feedback/issues/4941))
 

@@ -23,7 +23,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Control whether the screen capture UI is shown (ScreenCaptureStarting event)](#control-whether-the-screen-capture-ui-is-shown-screencapturestarting-event)
    * [Configure the security warning when saving a file (SaveFileSecurityCheckStarting event)](#configure-the-security-warning-when-saving-a-file-savefilesecuritycheckstarting-event)
 * [Bug fixes](#bug-fixes)
-   * [SDK-only](#sdk-only)
 * [See also](#see-also)
 
 
@@ -203,12 +202,9 @@ Previous phase: [Configure the security warning when saving a file (`SaveFileSec
 
 ---
 
+
 <!-- ====================================================================== -->
 ## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### SDK-only
 
 * Fixed Arm64 incompatibility with WindowsAppSDK 1.6.
 

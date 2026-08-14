@@ -47,16 +47,6 @@ Added source frame info to `NewWindowRequested`, to support identifying the sour
 
 
 <!-- ====================================================================== -->
-## Bug fixes
-
-* Disabled installing CRX in WebView2.  (Runtime-only)
-
-* Fixed an initialization failure when the app has a DPI awareness compatibility setting applied.  (Runtime-only)  ([Issue #3008](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3008))
-
-* Fixed a bug where visual hosted owned windows couldn't take character input.  (Runtime-only)
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Runtime 118.0.2088.41 (Oct. 16, 2023)](../runtime/118.md)

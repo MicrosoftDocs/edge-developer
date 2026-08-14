@@ -23,8 +23,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Runtime selection](#runtime-selection)
    * [FailureSourceModulePath property](#failuresourcemodulepath-property)
-* [Bug fixes](#bug-fixes)
-   * [Runtime-only](#runtime-only)
 * [See also](#see-also)
 
 
@@ -243,18 +241,6 @@ Previous phase: [`FailureSourceModulePath` property](./1-0-2164-prerelease.md#fa
    * [ICoreWebView2ProcessFailedEventArgs3::get_FailureSourceModulePath](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs3?view=webview2-1.0.2470-prerelease&preserve-view=true#get_failuresourcemodulepath)<!--no put-->
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-
-<!-- ------------------------------ -->
-#### Runtime-only
-
-* Fixed a reliability regression that could crash the application process when an old version of WebView2 client DLL is unloaded.
-
-* Ensured that the WebView2 temporary download folder is unique per user data folder, and doesn't interfere with other apps or the browser.
 
 
 <!-- ====================================================================== -->

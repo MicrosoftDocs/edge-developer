@@ -96,7 +96,7 @@ Previous phase: [Profile management: custom data partition, cookie manager, and 
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed a crash when releasing the WebView from a different thread.  (Runtime-only)  ([Issue #3062](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3062))
+<!-- items not marked runtime-only; assume runtime & sdk: -->
 
 * Fixed a bug where focus was trapped inside the WebView2 control when wrapped in a `ContainerControl`.  ([Issue #2835](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2835))
 
@@ -108,7 +108,7 @@ Previous phase: [Profile management: custom data partition, cookie manager, and 
 
 * Fixed a bug where visual hosted owned windows didn't map mouse pointer input correctly.
 
-* Fixed a bug where `DownloadStarting` was getting raised for a canceled **Save As** dialog.  (Runtime-only)
+<!-- end items -->
 
 
 <!-- ====================================================================== -->
