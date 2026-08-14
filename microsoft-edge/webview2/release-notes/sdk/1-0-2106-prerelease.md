@@ -163,11 +163,11 @@ Previous phase: [Added source frame info to the `NewWindowRequested` event](./1-
 
 * Fixed a bug where the Runtime exits unexpectedly when calling `SetPermissionState` with an invalid enum value.  (Runtime and SDK)
 
-* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  (SDK-only)  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
+* Fixed a bug where the `CoreWebView2EnvironmentOptions.Language` property doesn't change the `accept-language` HTTP header.  ([Issue #3635](https://github.com/MicrosoftEdge/WebView2Feedback/issues/3635))
 
-* Added support for longer runtime installation paths.  (SDK-only)
+* Added support for longer runtime installation paths.
 
-* The custom URI scheme registration API now works in WinRT.  For API names and links, in the **Promotions** section above, see the "custom scheme registration" entry.  (SDK-only)
+* The custom URI scheme registration API now works in WinRT.  For API names and links, in the **Promotions** section above, see the "custom scheme registration" entry.
 
 
 <!-- ====================================================================== -->
