@@ -31,7 +31,7 @@ Most people will see WebView2 used by Widgets, Teams, Office, Outlook, Weather, 
 <!-- ====================================================================== -->
 ## What are the WebView2 processes that are running?
 
-WebView2 follows the process model that's used in the Chromium browser engine of Microsoft Edge, described in [Process Model and Site Isolation](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md).  Having functionality broken up into multiple processes help reliability, security, and performance.  Each process performs a certain responsibility, and can do that work uninterrupted, even if one of the other processes hits a problem.
+WebView2 follows the process model that's used in the Chromium browser engine of Microsoft Edge, described in [Process Model and Site Isolation](https://chromium.googlesource.com/chromium/src/+/main/docs/process_model_and_site_isolation.md).  Having functionality broken up into multiple processes helps reliability, security, and performance.  Each process performs a certain responsibility, and can do that work uninterrupted, even if one of the other processes hits a problem.
 
 There are normally a few processes:
 * The WebView2 manager.

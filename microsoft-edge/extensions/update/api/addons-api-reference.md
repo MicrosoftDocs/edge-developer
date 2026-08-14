@@ -1,6 +1,6 @@
 ---
-title: REST API Reference for updating an extension at Microsoft Edge Add-ons
-description: The Add-ons API Reference, for REST endpoints to automate updating an extension that's at Microsoft Edge Add-ons.
+title: REST API Reference for updating an extension
+description: The Add-ons API Reference, for REST endpoints to automate updating an extension that's at the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,11 +8,11 @@ ms.service: microsoft-edge
 ms.subservice: extensions
 ms.date: 09/05/2024
 ---
-# REST API Reference for updating an extension at Microsoft Edge Add-ons
+# REST API Reference for updating an extension
 
-This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to an extension that's at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+This article is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to an extension that's at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
-For an overview, see [Use the REST API to update an extension at Microsoft Edge Add-ons](./using-addons-api.md).
+For an overview, see [Use the REST API to update an extension](./using-addons-api.md).
 
 
 <!-- ------------------------------ -->
@@ -27,7 +27,7 @@ As of Sep. 6, 2024, both v1.1 and v1 of this Update REST API are supported.  Sup
 
 Uploads a package to update an existing draft submission of an extension.
 
-See also [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+See also [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Use the REST API to update an extension_.
 
 
 <!-- ------------------------------ -->
@@ -96,7 +96,7 @@ This API has the following expected status codes.
 
 
 See also:
-* [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+* [Uploading a package to update an existing submission](./using-addons-api.md#uploading-a-package-to-update-an-existing-submission) in _Use the REST API to update an extension_.
 
 
 <!-- ====================================================================== -->
@@ -105,7 +105,7 @@ See also:
 
 Gets the status of the package upload.
 
-See also [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+See also [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Use the REST API to update an extension_.
 
 
 <!-- ------------------------------ -->
@@ -220,16 +220,16 @@ This API has the following expected status codes.
 
 
 See also:
-* [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+* [Checking the status of a package upload](./using-addons-api.md#checking-the-status-of-a-package-upload) in _Use the REST API to update an extension_.
 
 
 <!-- ====================================================================== -->
 ## Publish the product draft submission
 <!-- endpoint 3: POST /submissions -->
 
-Publishes the current draft of the product at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+Publishes the current draft of the product at the Microsoft Edge Add-ons website.
 
-See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+See also [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension_.
 
 
 <!-- ------------------------------ -->
@@ -296,7 +296,7 @@ This API has the following expected status codes.
 
 
 See also:
-* [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+* [Publishing the submission](./using-addons-api.md#publishing-the-submission) in _Use the REST API to update an extension_.
 
 
 <!-- ====================================================================== -->
@@ -305,7 +305,7 @@ See also:
 
 Checks the status of the publish operation.
 
-See also [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+See also [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Use the REST API to update an extension_.
 
 
 <!-- ------------------------------ -->
@@ -515,7 +515,7 @@ This API has the following expected status codes.
 
 
 See also:
-* [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Use the REST API to update an extension at Microsoft Edge Add-ons_.
+* [Checking the publishing status](using-addons-api.md#checking-the-publishing-status) in _Use the REST API to update an extension_.
 
 
 <!-- ====================================================================== -->
@@ -548,6 +548,6 @@ Here's a list of common error codes and possible reasons.  For a full list, see 
 ## See also
 
 <!-- all article-level links in article body: -->
-* [Use the REST API to update an extension at Microsoft Edge Add-ons](./using-addons-api.md)
+* [Use the REST API to update an extension](./using-addons-api.md)
 * [Partner Center REST error codes](/partner-center/develop/error-codes) in Partner Center docs.
 * [List of HTTP status codes](https://wikipedia.org/wiki/List_of_HTTP_status_codes) at Wikipedia.

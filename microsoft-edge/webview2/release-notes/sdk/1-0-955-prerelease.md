@@ -1,0 +1,88 @@
+---
+title: Prerelease SDK 1.0.955-prerelease, for Runtime 93 (Jul. 26, 2021)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.955-prerelease.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 06/11/2026
+---
+# Prerelease SDK 1.0.955-prerelease, for Runtime 93 (Jul. 26, 2021)
+
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Jul. 26, 2021.
+
+[NuGet package for WebView2 SDK 1.0.955-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires Microsoft Edge version 93.0.967.0 or later; see [Runtime 93.0.961.33 (Sep. 8, 2021)](../runtime/93.md).
+
+
+<!-- ====================================================================== -->
+## General features
+
+* WebView2 performance improvements.
+
+* Added partial Event Tracing for Windows (ETW) support.
+
+* Removed Microsoft branding from `edge://history`.
+
+* New default Download UI.
+
+
+<!-- ====================================================================== -->
+## Experimental APIs (Phase 1: Experimental in Prerelease)
+
+* Added [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow) to launch a WebView2 browser task manager.
+
+* Added [NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-1.0.955-prerelease&preserve-view=true#get_name).
+
+* Added support for virtual host name mapping to work with service workers.
+
+* Added [HiddenPdfToolbarItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems) to customize the PDF toolbar items.
+
+
+<!-- ====================================================================== -->
+## Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+* [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested)
+
+
+<!-- ====================================================================== -->
+## Bug fixes
+
+* Fixed bugs to improve reliability in the WebView2Loader.dll.
+
+* Fixed bug in which `NewWindowRequested` event handler launched two windows when handling links that use `target=_blank`.
+
+* Fixed a bug in WebView2 visual hosting that flickered before startup.
+
+* Fixed bug when `add_WebResourceRequested` didn't work on WebView2 controls created using `add_NewWindowRequested`. ([Issue #616](https://github.com/MicrosoftEdge/WebViewFeedback/issues/616))
+
+* Allow the host app to set foreground on a different application in response to events including `NavigationStarting`, `AddHostObjectToScript` methods, `WebMessageReceived`, and `NewWindowRequested`. ([Issue #1092](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1092))
+
+* Fixed bug preventing non-ASCII file names from being used in `ResultFilePath` in `DownloadStartingEventArgs`. ([Issue #1428](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1428))
+
+
+<!-- ------------------------------ -->
+#### .NET
+
+
+<!-- ---------- -->
+###### Bug fixes
+
+* Fixed an issue in WebView2 .NET API reference documentation that caused only the first exception to be displayed.
+
+* .NET core libraries are now built in release mode. To debug, ensure you clear the **Just my code** checkbox.
+
+* Fixed a bug that crashed WebView2 on forms with child forms. The child form, with the find in page bar open, caused WebView2 to crash when the child form was closed. ([Issue #1097](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1097))
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Runtime 93.0.961.33 (Sep. 8, 2021)](../runtime/93.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)
