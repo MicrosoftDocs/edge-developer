@@ -39,9 +39,9 @@ For some frameworks or platforms, the samples repo contains both a completed Get
 
 
 <!-- ====================================================================== -->
-## Xbox WebView2 samples
+## XBOX WebView2 samples
 
-* [Media App Samples for Xbox](https://github.com/microsoft/Media-App-Samples-for-Xbox)
+* [Media App Samples for XBOX](https://github.com/microsoft/Media-App-Samples-for-XBOX)<!-- xbox allcaps per policheck -->
 
 
 <!-- ====================================================================== -->
