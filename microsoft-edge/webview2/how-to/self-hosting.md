@@ -10,19 +10,19 @@ ms.date: 04/22/2024
 ---
 # Self-host by deploying preview channels
 
-_Self-hosting_ means deploying a preview WebView2 Runtime with your app.  This allows you and your development team to use your app daily with the preview version of the WebView2 Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Evergreen WebView2 Runtime (Stable).
+_Self-hosting_ means deploying a WebView2 Preview Runtime with your app.  This allows you and your development team to use your app daily with a WebView2 Preview Runtime, to find issues that will affect your particular WebView2 app, before the forthcoming changes reach the Evergreen WebView2 Runtime (Stable).
 
-The self-hosting approach provides real-world usage of your app with the latest preview WebView2 Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
+The self-hosting approach provides real-world usage of your app with the latest WebView2 Preview Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 Conduct both automated and manual testing:
-* For **automated testing**, do **prerelease testing**, which means testing with a preview version of the WebView2 Runtime.  See [Prerelease testing using preview channels](./prerelease-testing.md).
-* For **manual testing**, use **self-hosting**, which means deploying a preview version of the WebView2 Runtime with your app, to use daily by your team.  Covered by the present article.
+* For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  See [Prerelease testing using preview channels](./prerelease-testing.md).
+* For **manual testing**, use **self-hosting**, which means deploying a WebView2 Preview Runtime with your app, to use daily by your team.  Covered by the present article.
 
 
 <!-- ====================================================================== -->
 ## How to self-host a preview channel of WebView2
 
-We recommend that you self-host using the preview WebView2 Runtime in the Dev channel of the Edge browser.  The Dev channel is updated weekly, so it allows you to catch issues early while having sufficient stability for daily use.
+We recommend that you self-host using the WebView2 Preview Runtime in the Dev channel of the Edge browser.  The Dev channel is updated weekly, so it allows you to catch issues early while having sufficient stability for daily use.
 
 The Canary channel is also suitable, but it might be less stable for daily use.  The Beta channel allows you to test against the version of the runtime that is about to ship to stable, but you might not be able to catch issues early enough for your application.
 
@@ -47,7 +47,7 @@ Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedb
 <!-- ====================================================================== -->
 ## Diagnose potential issues with the WebView2 Runtime
 
-To diagnose or troubleshoot potential preview WebView2 Runtime issues that are revealed by your app, do the following:
+To diagnose or troubleshoot potential WebView2 Preview Runtime issues that are revealed by your app, do the following:
 
 
 <!-- ------------------------------ -->
@@ -69,7 +69,7 @@ You can easily switch to the stable channel (Evergreen WebView2 Runtime) by [usi
 
 If you set the environment variable globally, it changes the WebView2 channel for all apps that use WebView2 on the machine.
 
-If you are using the API, then we recommend building UI in your app that allows your users to change between using the Stable Runtime or a preview Runtime.
+If you are using the API, then we recommend building UI in your app that allows your users to change between using the Stable WebView2 Runtime or a WebView2 Preview Runtime.
 
 
 <!-- ------------------------------ -->

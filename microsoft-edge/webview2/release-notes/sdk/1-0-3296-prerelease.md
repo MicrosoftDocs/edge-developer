@@ -1,0 +1,63 @@
+---
+title: Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 1.0.3296-prerelease.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 05/12/2025
+---
+# Prerelease SDK 1.0.3296-prerelease, for Runtime 137 (May. 12, 2025)
+
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: May 12, 2025.
+
+[NuGet package for WebView2 SDK 1.0.3296-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.3296-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 137.0.3296.0 or later; see [Runtime 137.0.3296.44 (Jun. 3, 2025)](../runtime/137.md).
+
+**Detailed contents:**
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Promotions to Phase 2 (Stable in Prerelease)
+
+The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
+
+
+<!-- ------------------------------ -->
+#### Set default background color on WebView2 initialization (DefaultBackgroundColor API)
+
+The DefaultBackgroundColor API allows users to set the `DefaultBackgroundColor` property at initialization.  This prevents a disruptive white flash during the WebView2 loading process.
+
+Previous phase: [Set default background color on WebView2 initialization (DefaultBackgroundColor API)](./1-0-3079-prerelease.md#set-default-background-color-on-webview2-initialization-defaultbackgroundcolor-api) in _Prerelease SDK 1.0.3079-prerelease, for Runtime 134 (Jan. 24, 2025)_.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controlleroptions.defaultbackgroundcolor?view=webview2-dotnet-1.0.3296-prerelease&preserve-view=true)
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2ControllerOptions` Class:
+   * [CoreWebView2ControllerOptions.DefaultBackgroundColor Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2controlleroptions?view=webview2-winrt-1.0.3296-prerelease&preserve-view=true#defaultbackgroundcolor)
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ControllerOptions3](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true)
+   * [ICoreWebView2ControllerOptions3::get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#get_defaultbackgroundcolor)
+   * [ICoreWebView2ControllerOptions3::put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controlleroptions3?view=webview2-1.0.3296-prerelease&preserve-view=true#put_defaultbackgroundcolor)
+
+---
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Runtime 137.0.3296.44 (Jun. 3, 2025)](../runtime/137.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)

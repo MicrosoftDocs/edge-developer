@@ -14,6 +14,11 @@
       "source_path": "../microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
       "redirect_url": "https://ortc.org",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/web-we-want/index.md",    
+      "redirect_url": "/microsoft-edge/developer/",
+      "redirect_document_id": false
     }
   ]
 }

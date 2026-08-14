@@ -13,20 +13,21 @@ ms.date: 04/17/2026
 
 A Microsoft Edge _extension_ is a small app that a developer creates to add or modify features of Microsoft Edge, to extend the user experience (UX) for end-users in a specialized way.  An extension provides a niche experience or function that's important to a target audience.
 
-Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site.  _Add-ons_ include extensions and themes.
+Users browse and install extensions for Microsoft Edge from the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  _Add-ons_ include extensions and themes.
 
 The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
 <!-- omit See Also children at end -->
 **Detailed contents:**
 * [Introduction](#introduction)
+* [The Microsoft Edge Add-ons website](#the-microsoft-edge-add-ons-website)
 * [Creating an extension for various browsers](#creating-an-extension-for-various-browsers)
 * [Benefits of Chromium-based extensions](#benefits-of-chromium-based-extensions)
 * [Browser compatibility and extension testing](#browser-compatibility-and-extension-testing)
    * [Browser-specific APIs](#browser-specific-apis)
-* [Publish your extension to browser stores](#publish-your-extension-to-browser-stores)
+* [Publish your extension to browser extension stores](#publish-your-extension-to-browser-extension-stores)
    * [Migrate an existing extension to Microsoft Edge](#migrate-an-existing-extension-to-microsoft-edge)
-   * [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons)
+   * [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website)
 * [The Featured badge](#the-featured-badge)
    * [What the Featured badge represents](#what-the-featured-badge-represents)
    * [Reasons why the Featured badge could be revoked](#reasons-why-the-featured-badge-could-be-revoked)
@@ -35,12 +36,6 @@ The present documentation is for extension developers, rather than end-users of 
 
 <!-- ====================================================================== -->
 ## Introduction
-
-As a browser extension developer, you publish a Microsoft Edge extension (or theme) at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  In articles about Microsoft Edge extensions, and at Partner Center, the word _store_ includes the Microsoft Edge Add-ons site.
-
-On the Microsoft Edge Add-ons site, you can enter various search terms in the **Search extensions, themes, and more** text box to find extensions and themes, such as the [Microsoft Bing Homepage and Search Engine](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage-a/hcfdaddfkgbmekbgcepcnpfiopaigpnn) extension:
-   
-![The Microsoft Bing Homepage and Search Engine extension](./index-images/example-extension.png)
 
 You can create a Microsoft Edge extension to add features to the browser, or improve the features of specific webpages by defining a companion experience.  _Companion experiences_ include ad blockers and password managers.
 
@@ -52,6 +47,20 @@ An extension should include at least the following features:
 
 See also:
 * [Get started developing an extension](./getting-started/index.md)
+
+
+<!-- ====================================================================== -->
+## The Microsoft Edge Add-ons website
+
+Add-ons for Microsoft Edge include extensions and themes.  As an extension developer, you publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  Microsoft Edge users browse and install Microsoft Edge add-ons (extensions or themes) from the Microsoft Edge Add-ons website:
+
+![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
+
+To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result.  
+
+The product detail page for the [Microsoft Bing Homepage](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage/cjmjijnpnollocennnapedpaeecninea) extension appears:
+
+![The Microsoft Bing Homepage extension](./index-images/example-extension.png)
 
 
 <!-- ====================================================================== -->
@@ -111,9 +120,9 @@ Some tutorials for browser-specific extension store sites use browser-specific A
 
 
 <!-- ====================================================================== -->
-## Publish your extension to browser stores
+## Publish your extension to browser extension stores
 
-You can submit and seek browser extensions in the following browser extension stores.
+You can submit your extension at multiple browser extension stores, including:
 
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com)
 * [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)
@@ -121,9 +130,9 @@ You can submit and seek browser extensions in the following browser extension st
 * [Apple App Store](https://apps.apple.com)
 * [Firefox Browser Add-ons](https://addons.mozilla.org/firefox/extensions)
 
-Some browser extension stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
+Some browser extension stores allow you to download listed extensions for other browsers.  However, cross-browser access isn't guaranteed by every store.  To make sure your users find your extension in different browsers, you should maintain a listing on each store.
 
-To make sure your users find your extension in Microsoft Edge, publish your extension on the Microsoft Edge Add-ons site.  See [Publish an extension at Microsoft Edge Add-ons](#publish-an-extension-at-microsoft-edge-add-ons), below.
+To make sure your users find your extension in Microsoft Edge, publish the extension at the Microsoft Edge Add-ons website.  See [Publish an extension at the Microsoft Edge Add-ons website](#publish-an-extension-at-the-microsoft-edge-add-ons-website), below.
 
 Users might need to install your extension in different browsers.  In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
@@ -131,38 +140,38 @@ Users might need to install your extension in different browsers.  In this scena
 <!-- ------------------------------ -->
 #### Migrate an existing extension to Microsoft Edge
 
-If you've already developed an extension for another Chromium-based browser, you can submit it at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).  You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
+If you've already developed an extension for another Chromium-based browser, you can submit it at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.  You don't need to rewrite your extension or verify that it works in Microsoft Edge.  However, when you migrate an existing Chromium extension to other Chromium browsers, make certain the same APIs or alternatives are available for your target browser.
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port a Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md).  After you port your extension to the target browser, the next step is to publish it.
 
 
 <!-- ------------------------------ -->
-#### Publish an extension at Microsoft Edge Add-ons
+#### Publish an extension at the Microsoft Edge Add-ons website
 
-You publish a Microsoft Edge extension at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com).
+You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
-To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing at Microsoft Edge Add-ons.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  
+To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing at the Microsoft Edge Add-ons website.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  
 
 When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can submit an extension listing.
 
-To submit an extension at Microsoft Edge Add-ons, you need to provide the following items:
+To submit an extension at the Microsoft Edge Add-ons website, you need to provide the following items:
 
 * An archive (`.zip`) file that contains your code files.
 * All required visual assets, which include a logo and small promotional tile.
 * Optional promotional media, such as screenshots, promotional tiles, and a video URL.
 * Information that describes your extension such as the name, short description, and a privacy policy link.
 
-Different stores might have different submission requirements.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
+Different browser extension stores might have different requirements for submitting extensions.  The above list summarizes the requirements for publishing an extension for Microsoft Edge; for details, see [Publish a Microsoft Edge extension](./publish/publish-extension.md).
 
-After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  You're notified of the outcome and given next steps as required.  If you submit an extension _update_ at Microsoft Edge Add-ons, that begins a new review process.
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  You're notified of the outcome and given next steps as required.  If you submit an extension _update_ at the Microsoft Edge Add-ons website, that begins a new review process.
 
 
 <!-- ====================================================================== -->
 ## The Featured badge
 
-At the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) site, the **Featured** badge links to this section.  The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
+At the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, the **Featured** badge links to the present article section.  The present documentation is for extension developers, rather than end-users of Microsoft Edge extensions.  To use extensions for Microsoft Edge, see [User docs about Microsoft Edge extensions](./getting-started/user-docs.md).
 
-Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) highlights extensions that meet a high bar of quality, security, and user experience.
+Extensions are curated to help users discover trustworthy and high-performing extensions.  The **Featured** badge at the Microsoft Edge Add-ons website highlights extensions that meet a high bar of quality, security, and user experience.
 
 ![The Featured badge](./index-images/featured-badge.png)
 
@@ -186,7 +195,7 @@ The **Featured** badge indicates that:
 
 The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status. 
 
-The **Featured** badge on the Microsoft Edge Add-ons Store is intended to help users discover extensions that meet a high bar for quality, reliability, security, privacy, and user experience at the time of evaluation.
+The **Featured** badge at the Microsoft Edge Add-ons website is intended to help users discover extensions that meet a high bar for quality, reliability, security, privacy, and user experience at the time of evaluation.
 
 Badging decisions are based on a combination of objective signals and automated checks, and are refreshed periodically as part of Microsoft's ongoing efforts to maintain a healthy and trustworthy extensions ecosystem.
 
@@ -237,7 +246,7 @@ To improve your extension's quality and eligibility for the **Featured** badge, 
 ###### End-user docs
 
 * [User docs about Microsoft Edge extensions](./getting-started/user-docs.md)<!-- toc bucket 0 -->
-* [Everything to know about browser extensions](https://www.microsoft.com/edge/learning-center/everything-to-know-about-browser-extensions?form=MA13I2&msockid=3078d2dac55660f53e4ec6a8c4ec61bf)<!-- link not in article -->
+* [Everything to know about browser extensions](https://www.microsoft.com/en-us/edge/learning-center/everything-to-know-about-browser-extensions)<!-- requires /en-us/ --><!-- link not in article -->
 * [Add, turn off, or remove extensions in Microsoft Edge](https://support.microsoft.com/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026)<!-- link not in article -->
 
 
