@@ -1,0 +1,31 @@
+---
+title: Prerelease SDK 0.9.538-prerelease, for Runtime 85 (Jun. 8, 2020)
+description: Release notes for Microsoft Edge WebView2, for Prerelease SDK 0.9.538-prerelease.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 06/11/2026
+---
+# Prerelease SDK 0.9.538-prerelease, for Runtime 85 (Jun. 8, 2020)
+<!--
+Oct 19 was 86
+June 8 was therefore likely 85
+May 14 was 84
+-->
+
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Jun. 8, 2020.
+
+This SDK was last updated Jun. 8, 2020.
+
+[NuGet package for WebView2 SDK 0.9.538-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538-prerelease)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Runtime 85.9.538 (Jun. 8, 2020)](../runtime/85.md)
+* [Release notes for WebView2](../index.md)
+   * [Release notes for the WebView2 Runtime](../runtime/index.md)
+   * [Release notes for WebView2 SDKs](./index.md)
