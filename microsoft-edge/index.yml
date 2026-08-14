@@ -359,7 +359,7 @@ conceptualContent:
               url: ./webview2/index.md
               itemType: overview
 
-            - text: Release notes for the WebView2 SDK
+            - text: Release notes for WebView2
               url: ./webview2/release-notes/index.md
               itemType: whats-new
 
