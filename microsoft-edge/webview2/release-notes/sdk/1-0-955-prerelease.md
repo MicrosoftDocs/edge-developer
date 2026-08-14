@@ -52,8 +52,6 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed bug that broke the `edge://downloads` and `edge://history` pages. This change is Runtime-specific.
-
 * Fixed bugs to improve reliability in the WebView2Loader.dll.
 
 * Fixed bug in which `NewWindowRequested` event handler launched two windows when handling links that use `target=_blank`.
@@ -64,13 +62,7 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 
 * Allow the host app to set foreground on a different application in response to events including `NavigationStarting`, `AddHostObjectToScript` methods, `WebMessageReceived`, and `NewWindowRequested`. ([Issue #1092](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1092))
 
-* Fix bug to trigger the `PermissionRequested` event for the microphone. This change is Runtime-specific.([Issue #1462](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1462))
-
-* Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. ([Issue #1348](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1348))
-
 * Fixed bug preventing non-ASCII file names from being used in `ResultFilePath` in `DownloadStartingEventArgs`. ([Issue #1428](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1428))
-
-* Fixed bug where the title bar on the default pop-up wasn't displayed completely. This change is Runtime-specific. ([Issue #1016](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1016))
 
 
 <!-- ------------------------------ -->

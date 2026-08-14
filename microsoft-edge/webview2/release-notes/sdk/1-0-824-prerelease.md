@@ -21,7 +21,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 #### Features
 
 * Extended the `ProcessFailed` event.  It now raises for non-renderer child processes and frame renderers.
+
 * Added experimental [AreBrowserAcceleratorKeysEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings2?view=webview2-1.0.824&preserve-view=true#get_arebrowseracceleratorkeysenabled) setting.  You can prevent the browser from responding to keyboard shortcuts related to navigation, printing, saving, and other browser-specific functions.
+
 * Added `iframe` element support for `AddScriptToExecuteOnDocumentCreated`.
 
 
@@ -43,8 +45,6 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 ## Bug fixes
 
 * Expanded supported C++ and .NET project types such as MFC and ATL.  ([Issue #506](https://github.com/MicrosoftEdge/WebViewFeedback/issues/506), [Issue #669](https://github.com/MicrosoftEdge/WebViewFeedback/issues/669), and [Issue #851](https://github.com/MicrosoftEdge/WebViewFeedback/issues/851)).
-
-* Fixed a bug that Evergreen WebView2 Runtime leaks Inbound firewall entry.
 
 * Fixed setting Response during `WebResourceRequested` event.  ([Issue #568](https://github.com/MicrosoftEdge/WebViewFeedback/issues/568)).
 

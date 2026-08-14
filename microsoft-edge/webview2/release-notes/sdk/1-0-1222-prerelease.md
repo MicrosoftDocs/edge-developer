@@ -89,8 +89,6 @@ The previous phase isn't in the release notes.
 
 * Fixed a failure caused when a user opens a new app window and the webpage does not have a navigation entry assigned.
 
-* Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
-
 * Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update. ([Issue #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267))
 
 

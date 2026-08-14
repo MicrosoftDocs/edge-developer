@@ -46,8 +46,6 @@ The following Experimental APIs have been added in this Prerelease SDK.
 
 * Fixed bug for composition hosting where mouse input stopped working if any pen input was sent to WebView2.
 
-* Fixed bug that broke mouse input after any pen input.  This change is Runtime-specific.
-
 
 <!-- ------------------------------ -->
 #### .NET
@@ -65,10 +63,6 @@ The following Experimental APIs for .NET have been added in this Prerelease SDK.
 
 <!-- ---------- -->
 ###### Bug fixes
-
-* Improved COM Exception descriptions by wrapping each in a more detailed .NET exception.  ([Issue #338](https://github.com/MicrosoftEdge/WebViewFeedback/issues/338)).  This change is Runtime-specific.
-
-* Fixed bug caused when you select **Tab** to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  ([Issue #589](https://github.com/MicrosoftEdge/WebViewFeedback/issues/589) and [Issue #933](https://github.com/MicrosoftEdge/WebViewFeedback/issues/933)).  This change is Runtime-specific.
 
 * Improved .NET framework loader down level to be more robust.  ([Issue #946](https://github.com/MicrosoftEdge/WebViewFeedback/issues/946))
 

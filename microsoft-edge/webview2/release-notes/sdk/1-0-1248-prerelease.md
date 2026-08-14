@@ -54,8 +54,6 @@ Use the [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewe
 
 * Fixed the issue with `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` not working properly in .NET SDK. ([Issue #2363](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2363))
 
-* Fixed a runtime regression that caused some Office Add-ins which use host objects to crash during operations that previously worked. ([Issue #2337](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2337))
-
 * Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling.
 
 * Fixed a regression to make sure that WebView2 creation fails quickly with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` instead of time out.

@@ -65,29 +65,17 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fix a bug where mouse left click doesn't dismiss context menu. This change is Runtime-specific.
-
 * Fixed a bug where WebView2 creation fails when exe files for apps sharing the same user data folder have inconsistent version info.
-
-* Fixed a bug where special browser keys such as `Refresh`, `Home`, and `Back` can't be disabled by `AreBrowserAcceleratorKeysEnabled`. This change is Runtime-specific.
 
 * Fixed a bug in WebView2 .NET controls, where WebView2 windows are blank when created in the background.  ([Issue #1077](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077))
 
 * Dismissing a file picker dialog by pressing **Enter** or **Esc** no longer crashes WPF applications using WebView2 control.  ([Issue #1099](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1099))
-
-* Fixed a bug that [AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount) doesn't work properly with WebView2 when a `WebResourceRequested` event handler is attached. This change is Runtime-specific.  ([Issue #1183](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1183))
-
-* Downloading a file no longer breaks WebView2 `DefaultBackgroundColor` transparency. This change is Runtime-specific.  ([Issue #1108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1108))
 
 * Removed screen sharing media picker message that contains Microsoft branding.  ([Issue #940](https://github.com/MicrosoftEdge/WebViewFeedback/issues/940))
 
 * Fixed a bug in WebView2 WinForm control where hiding the parent form doesn't hide the WebView2 control.  ([Issue #828](https://github.com/MicrosoftEdge/WebViewFeedback/issues/828) and [Issue #1079](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1079))
 
 * Added static WS_CLIPCHILDREN style to WebView2's WPF windows. ([Issue #1013](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1013)).
-
-* Fixed a bug where right-clicking a link crashes the WebView2 host app. This change is Runtime-specific.
-
-* Fixed a reliability bug that could crash the host app process when moving to a newer Edge WebView2 Runtime version.
 
 * **DEPRECATION**: Officially deprecated the `DefaultBackgroundColor` API for Windows 7.
 
