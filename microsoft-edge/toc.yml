@@ -2002,7 +2002,6 @@
                     - name: Prerelease SDK 1.0.1305-prerelease, for Runtime 105 (Jul. 4, 2022)
                       href: ./webview2/release-notes/sdk/1-0-1305-prerelease.md
 
-                    # todo: resume here, moving runtime content from sdk pages to runtime page
                     - name: Release SDK 1.0.1293.44, for Runtime 104 (Aug. 8, 2022)
                       href: ./webview2/release-notes/sdk/1-0-1293-44.md
 
