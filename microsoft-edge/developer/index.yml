@@ -210,7 +210,7 @@ landingContent:
             url: ../webview2/samples/index.md
       - linkListType: whats-new
         links:
-          - text: Release notes for the WebView2 SDK
+          - text: Release notes for WebView2
             url: ../webview2/release-notes/index.md
       - linkListType: reference
         links:
