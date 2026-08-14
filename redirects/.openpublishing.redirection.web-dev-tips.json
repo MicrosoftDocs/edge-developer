@@ -19,6 +19,11 @@
       "source_path": "../microsoft-edge/web-platform/ie-to-microsoft-edge-redirection.md",
       "redirect_url": "/microsoft-edge/web-platform/web-platform",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/web-we-want/index.md",    
+      "redirect_url": "/microsoft-edge/developer/",
+      "redirect_document_id": false
     }
   ]
 }
