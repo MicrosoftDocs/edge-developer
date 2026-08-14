@@ -30,7 +30,7 @@ For earlier release notes, see **Archive** in the table of contents.
 
 To learn more about the WebView2 Runtime and decide how to distribute the Runtime with your app, see [Evergreen vs. fixed version of the WebView2 Runtime](../../concepts/evergreen-vs-fixed-version.md).
 
-You can download the WebView2 Evergreen Runtime or a Fixed Version Runtime at [Microsoft Edge WebView2](developer.microsoft.com/microsoft-edge/webview2).
+You can download the WebView2 Evergreen Runtime or a Fixed Version Runtime at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
 Release notes entries correspond to historical releases of the WebView2 Runtime, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of the WebView2 Runtime are released.
 
