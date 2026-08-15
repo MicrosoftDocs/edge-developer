@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 130)
-description: "Detached Elements profile in Memory tool. Improved names of JavaScript objects in heap snapshots. Create collection or environment in Network Console.  Fixed icon bugs. Performance tab icon when throttled. High-contrast Warning count. And more."
+description: Detached Elements profile in Memory tool. Improved names of JavaScript objects in heap snapshots. Create collection or environment in Network Console.  Fixed icon bugs. Performance tab icon when throttled. High-contrast Warning count. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

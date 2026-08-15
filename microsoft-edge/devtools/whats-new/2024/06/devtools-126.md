@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 126)
-description: "Icons for browser extensions are displayed instead of blank squares. The DevTools UI in Chinese has changed back to the original font. And more."
+description: Icons for browser extensions are displayed instead of blank squares. The DevTools UI in Chinese has changed back to the original font. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

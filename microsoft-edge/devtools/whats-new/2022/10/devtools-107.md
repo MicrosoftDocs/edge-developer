@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 107)
-description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
+description: Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

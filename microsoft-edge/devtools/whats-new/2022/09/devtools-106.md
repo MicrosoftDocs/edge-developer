@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 106)
-description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
+description: Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
