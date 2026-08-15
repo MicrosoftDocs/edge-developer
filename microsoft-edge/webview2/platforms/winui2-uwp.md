@@ -12,6 +12,31 @@ ms.date: 01/27/2025
 
 The following considerations apply to WebView2 in WinUI 2 (UWP) apps.  The WebView2 WinUI 2 (UWP) control is in development.
 
+**Detailed contents:**
+* [Autofill UI](#autofill-ui)
+* [Print to PDF](#print-to-pdf)
+* [Default printing](#default-printing)
+* [SmartScreen](#smartscreen)
+* [Downloading files](#downloading-files)
+   * [Save As](#save-as)
+   * [Which folder the files are downloaded to](#which-folder-the-files-are-downloaded-to)
+   * [Downloads Hub](#downloads-hub)
+* [XAML limitation](#xaml-limitation)
+* [Setting DefaultBackgroundColor](#setting-defaultbackgroundcolor)
+* [Setting transparency](#setting-transparency)
+* [CSS cursors](#css-cursors)
+   * [Image URLs](#image-urls)
+   * [Predefined CSS cursors](#predefined-css-cursors)
+      * [General](#general)
+      * [Links and status](#links-and-status)
+      * [Selection](#selection)
+      * [Drag and drop](#drag-and-drop)
+      * [Resizing and scrolling](#resizing-and-scrolling)
+      * [Zooming](#zooming)
+* [Microsoft Edge Developer Tools](#microsoft-edge-developer-tools)
+* [API limitations](#api-limitations)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Autofill UI
@@ -127,56 +152,88 @@ The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/
 <!-- ------------------------------ -->
 #### Predefined CSS cursors
 
-On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
-
-| Keyword | Supported? |
-|---|---|
-| **General** |  |
-| auto | ✔️ |
-| default | ✔️ |
-| none | ❌ |
-| **Links & status** |  |
-| context-menu | ✔️ |
-| help | ✔️ |
-| pointer | ✔️ |
-| progress | ❌ |
-| wait | ✔️ |
-| **Selection** |  |
-| cell | ❌ |
-| crosshair | ✔️ |
-| text | ✔️ |
-| vertical-text | ❌ |
-| **Drag & drop** |  |
-| alias | ❌ |
-| copy | ❌ |
-| move | ✔️ |
-| no-drop | ✔️ |
-| not-allowed | ✔️ |
-| grab | ❌ |
-| grabbing | ❌ |
-| **Resizing & scrolling** |  |
-| all-scroll | ✔️ |
-| col-resize | ❌ |
-| row-resize | ❌ |
-| n-resize | ✔️ |
-| e-resize | ✔️ |
-| s-resize | ✔️ |
-| w-resize | ✔️ |
-| ne-resize | ✔️ |
-| nw-resize | ✔️ |
-| se-resize | ✔️ |
-| sw-resize | ✔️ |
-| ew-resize | ✔️ |
-| ns-resize | ✔️ |
-| nesw-resize | ✔️ |
-| nwse-resize | ✔️ |
-| **Zooming** |  |
-| zoom-in | ❌ |
-| zoom-out | ❌ |
+On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.  See the tables below.
 
 See also:
 * [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
-<!-- known limitation: destination page doesn't scroll to anchor -->
+
+
+<!-- ---------- -->
+###### General
+
+| Keyword | Supported? |
+|---|:---:|
+| `auto` | ✔️ |
+| `default` | ✔️ |
+| `none` | ❌ |
+
+
+<!-- ---------- -->
+###### Links and status
+
+| Keyword | Supported? |
+|---|:---:|
+| `context-menu` | ✔️ |
+| `help` | ✔️ |
+| `pointer` | ✔️ |
+| `progress` | ❌ |
+| `wait` | ✔️ |
+
+
+<!-- ---------- -->
+###### Selection
+
+| Keyword | Supported? |
+|---|:---:|
+| `cell` | ❌ |
+| `crosshair` | ✔️ |
+| `text` | ✔️ |
+| `vertical-text` | ❌ |
+
+
+<!-- ---------- -->
+###### Drag and drop
+
+| Keyword | Supported? |
+|---|:---:|
+| `alias` | ❌ |
+| `copy` | ❌ |
+| `move` | ✔️ |
+| `no-drop` | ✔️ |
+| `not-allowed` | ✔️ |
+| `grab` | ❌ |
+| `grabbing` | ❌ |
+
+
+<!-- ---------- -->
+###### Resizing and scrolling
+
+| Keyword | Supported? |
+|---|:---:|
+| `all-scroll` | ✔️ |
+| `col-resize` | ❌ |
+| `row-resize` | ❌ |
+| `n-resize` | ✔️ |
+| `e-resize` | ✔️ |
+| `s-resize` | ✔️ |
+| `w-resize` | ✔️ |
+| `ne-resize` | ✔️ |
+| `nw-resize` | ✔️ |
+| `se-resize` | ✔️ |
+| `sw-resize` | ✔️ |
+| `ew-resize` | ✔️ |
+| `ns-resize` | ✔️ |
+| `nesw-resize` | ✔️ |
+| `nwse-resize` | ✔️ |
+
+
+<!-- ---------- -->
+###### Zooming
+
+| Keyword | Supported? |
+|---|:---:|
+| `zoom-in` | ❌ |
+| `zoom-out` | ❌ |
 
 
 <!-- ====================================================================== -->
