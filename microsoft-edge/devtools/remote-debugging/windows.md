@@ -36,7 +36,7 @@ To set up the host (debuggee) machine, use the following sub-sections, in order.
 
 1. If you're using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
-1. Go to `edge://flags` in Microsoft Edge. 
+1. Go to `edge://flags` in Microsoft Edge.
 
 1. In **Search flags**, type in **Enable remote debugging through Windows Device Portal**. Set that flag to **Enabled**. Then, click the **Restart** button to restart Microsoft Edge.
 
@@ -80,7 +80,7 @@ To set up the host (debuggee) machine, use the following sub-sections, in order.
 
    ![Note the IP address and connection port in the Settings](./windows-images/remote-debugging-windows-media-host-settings-ip-address.png)
 
-   You enter the information on the client (debugger) device in the next section, "Step 2: Set up the client (debugger machine)".  
+   You enter the information on the client (debugger) device in the next section, "Step 2: Set up the client (debugger machine)".
 
 1. Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)](../progressive-web-apps/index.md) on the host (debuggee) machine that you want to debug from the client (debugger) machine.
 
@@ -132,7 +132,7 @@ To see the default ports that are used by Device Portal, see the table in [Setup
 <!-- ---------- -->
 ###### Default ports
 
-The default port for `http` is `50080` and the default port for `https` is `50043`, but this isn't always the case, because Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.  
+The default port for `http` is `50080` and the default port for `https` is `50043`, but this isn't always the case, because Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.
 
 To see the default ports that are used by Device Portal, see the table in [Setup](/windows/uwp/debug-test-perf/device-portal#setup) in _Windows Device Portal overview_.
 

@@ -52,7 +52,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 * Use the Canary preview channel of Microsoft Edge (which includes the WebView2 Preview Runtime) when you do early testing and development using a Prerelease version of the WebView2 SDK package.
 
-  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.  
+  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs. 
 
   Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
 

@@ -171,7 +171,7 @@ In the **Contact info** section, enter contact information that Microsoft will u
 
 For a company account, you must use the registered email address that's associated with your organization.
 
-After registration is complete, you receive a confirmation email.  
+After registration is complete, you receive a confirmation email. 
 
 
 <!-- ------------------------------ -->
@@ -217,7 +217,7 @@ Ensure that all documents (such as utility bills, DUNS ID, or government records
 * Clear, complete, and match your legal business profile.
 * Uploaded in the correct section at Partner Center, under [Account settings | Legal info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo).
 
-If your application was rejected: 
+If your application was rejected:
 * In the **Legal Info** tab, click **Fix now**.
 * Re-upload documents with comments explaining your appeal.
 

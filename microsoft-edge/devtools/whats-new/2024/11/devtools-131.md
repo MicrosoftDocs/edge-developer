@@ -74,7 +74,7 @@ See also:
 
 Pressing the **Tab** key after auto-completion now exits the edit field and focuses on the next focus point.  Before, pressing **Tab** would just indent the text.
 
-<!-- todo 
+<!-- todo
 See also:
 * []()
 -->

@@ -13,7 +13,7 @@ ms.date: 08/18/2023
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 

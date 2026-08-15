@@ -70,7 +70,7 @@ Next, run and debug the ASP.NET Core web app project in Visual Studio, as follow
    ![Turn on script debugging in Visual Studio](./index-images/enable-script-debugging.png)
 
 1. In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.
- 
+
    ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](./index-images/set-web-browser.png)
 
    To download a preview channel of Microsoft Edge (Beta, Dev, or Canary), go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
@@ -119,7 +119,7 @@ To attach the Visual Studio debugger to an instance of Microsoft Edge that's alr
    ```console
    start msedge --remote-debugging-port=9222
    ```
-    
+   
 1. In Visual Studio, select **Debug** > **Attach to Process** or **Ctrl+Alt+P**.
 
    ![Selecting 'Debug > Attach to Process' in Visual Studio](./index-images/attach-to-process.png)

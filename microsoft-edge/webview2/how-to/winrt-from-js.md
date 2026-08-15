@@ -172,7 +172,7 @@ Let's get started!
 
 ##### [WinUI 3 (Windows App SDK)](#tab/winui3)
 
-1. Use the Visual Studio project template to create a fresh new solution and project.  To do this, do the steps in [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](../get-started/winui.md) and then continue below. 
+1. Use the Visual Studio project template to create a fresh new solution and project.  To do this, do the steps in [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](../get-started/winui.md) and then continue below.
 
    Or, if you have your own app code base already, you can open that project in Visual Studio, and add a **WinRTAdapter** project as shown below.
 
@@ -567,7 +567,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 
 <!-- edit .csproj: -->
-1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens. 
+1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens.
 
 1. Open the `.csproj` file, such as `MyWebView2WinUI3.csproj`.
 
@@ -575,7 +575,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 1. In the `.csproj` file, update the version number in the line `<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>` to be the same as the WinRT Adapter version you obtained above.
 
-   For example, change the line from: 
+   For example, change the line from:
 
    ```xml
    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
@@ -599,7 +599,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 Add the CsWinRT and WinRTAdapter packages in the project file:
 
-1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens. 
+1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens.
 
 1. Open the `.csproj` file, such as `MyWebView2WinUI3.csproj`.
 
@@ -638,7 +638,7 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 1. Select **View** > **Error List**.
 
-   You might get the following error: 
+   You might get the following error:
 
    "WinRTAdapter.winmd cannot be referenced.  Referencing a Windows Metadata NETSDK1component directly when targeting .NET 5 or higher is not supported."
 
@@ -784,7 +784,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 <!-- ------------------------------ -->
 #### Access projected APIs via DevTools Console
 
-Next, use the DevTools Console to demonstrate that web-side code can call the host-side APIs that were specified in the **wv2winrt** tool (the WebView2 WinRT JS Projection tool): 
+Next, use the DevTools Console to demonstrate that web-side code can call the host-side APIs that were specified in the **wv2winrt** tool (the WebView2 WinRT JS Projection tool):
 * [Windows.System.UserProfile Namespace](/uwp/api/windows.system.userprofile)
 * [Windows.Globalization.Language Class](/uwp/api/windows.globalization.language)
 
@@ -916,7 +916,7 @@ For more information, see the `forceAsyncMethodMatches` row in [CoreWebView2.Add
 <!-- ====================================================================== -->
 ## Subscribing to WinRT events
 
-WinRT events are also exposed via the script proxies. You can add and remove event handlers of instance WinRT events and static WinRT events by using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods. 
+WinRT events are also exposed via the script proxies. You can add and remove event handlers of instance WinRT events and static WinRT events by using the `addEventListener(string eventName, function handler)` and `removeEventListener(string eventName, function handler)` methods.
 
 These methods work similarly to the DOM methods of the same name. Call `addEventListener` with a string name of the WinRT event you want to subscribe as the first parameter, and a function callback to be called whenever the event is raised. Calling `removeEventListener` with the same parameters unsubscribes from that event. For example:
 

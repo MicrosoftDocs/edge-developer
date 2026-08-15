@@ -81,7 +81,7 @@ The most popular use case for the **Console** is logging information from your s
 console.log('This is a log message');
 
 // prints the text to the console as an informational message
-console.info('This is some information'); 
+console.info('This is some information');
 
 // prints the text to the console as an error message
 console.error('This is an error');
@@ -219,7 +219,7 @@ To change the rendered webpage:
 
 
 <!-- ------------------------------ -->
-#### Using the $$ Console utility method to 
+#### Using the $$ Console utility method
 
 The **Console Utility** methods make it easy to access and manipulate the current webpage.
 

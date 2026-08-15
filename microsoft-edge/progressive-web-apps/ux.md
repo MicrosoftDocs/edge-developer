@@ -208,7 +208,7 @@ The **App info** menu contains the following:
    * **Extensions** - List of extensions that Microsoft Edge has installed.
 
    * **More tools**
-    
+   
 
 <!-- ====================================================================== -->
 ## Limitations

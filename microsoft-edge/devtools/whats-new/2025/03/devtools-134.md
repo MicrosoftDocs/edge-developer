@@ -24,7 +24,7 @@ The **Performance Insights** sidebar includes a new section called **Forced Refl
 
 
 <!-- ====================================================================== -->
-## Heap snapshot statistics account for every byte  
+## Heap snapshot statistics account for every byte
 
 <!-- Subtitle: View a memory allocation pie chart of your heap snapshot under Statistics-->
 

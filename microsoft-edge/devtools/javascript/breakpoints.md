@@ -248,7 +248,7 @@ When you're calling `debug()` from the **Console** tool, here's a technique to e
 <!-- ====================================================================== -->
 ## Logpoints
 
-A Logpoint is a breakpoint variant that doesn't "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint. 
+A Logpoint is a breakpoint variant that doesn't "break" in the debugger, but instead logs a message directly to the console.  You insert a logpoint via DevTools the same way you would any other breakpoint.
 
 To set a logpoint:
 

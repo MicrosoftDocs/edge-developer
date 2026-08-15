@@ -23,8 +23,8 @@ ms.date: 11/04/2022
    limitations under the License.  -->
 # Set an externally installed extension to automatically update
 
-<!-- todo: 
-update article per https://developer.chrome.com/docs/apps/autoupdate 
+<!-- todo:
+update article per https://developer.chrome.com/docs/apps/autoupdate
 improve intro lead-in sequencing
 -->
 
@@ -34,7 +34,7 @@ Every few hours, Microsoft Edge checks whether each installed extension or app h
 
 In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
 
-When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge: 
+When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge:
 
 * Incorporate bug and security fixes.
 * Add new features or performance enhancements.
@@ -156,7 +156,7 @@ In a future release, instead of issuing multiple `GET` requests, a single `POST`
 
 As new APIs are released for the Microsoft Edge extensions system, you might want to release an updated version of your extension or app that only works with newer versions of Microsoft Edge.  When Microsoft Edge is automatically updated, it can take a few days before most of your users update to that new release.
 
-To ensure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest.  
+To ensure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest. 
 
 For example, in the following code, the `prodversionmin` attribute value of `3.0.193.0` specifies that your app is automatically updated to version `2.0` only when the user is running Microsoft Edge `3.0.193.0` or newer:
 

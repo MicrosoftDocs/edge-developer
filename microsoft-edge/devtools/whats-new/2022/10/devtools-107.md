@@ -91,7 +91,7 @@ See also:
 In previous versions of Microsoft Edge, links in the **Application** tool didn't render correctly in high contrast mode.  The links weren't visible, and they weren't the same color as defined in the high contrast setting.  In Microsoft Edge 107, this issue has been fixed.  Links in the **Application** tool now match the color that's defined in the high contrast setting:
 
 ![Links in High Contrast mode](./devtools-107-images/high-contrast-links.png)
- 
+
 See also:
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
 * [Debug a Progressive Web App (PWA)](../../../progressive-web-apps/index.md)

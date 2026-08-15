@@ -396,7 +396,7 @@ The response includes an operation ID, to send to other endpoints.
     "status": "Failed",
     "message": "Can't publish extension as your extension submission is in progress. Please try again later.",
     "errorCode": "InProgressSubmission",
-    "errors": null    
+    "errors": null   
 }
 ```
 
@@ -412,7 +412,7 @@ The response includes an operation ID, to send to other endpoints.
     "status": "Failed",
     "message": "Can't publish extension as your extension is being unpublished. Please try after you've unpublished.",
     "errorCode": "UnpublishInProgress",
-    "errors": null    
+    "errors": null   
 }
 ```
 

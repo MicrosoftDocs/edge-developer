@@ -224,7 +224,7 @@ To show line names in the grid overlay:
 
 See also:
 * [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) at MDN.
-   
+
 
 <!-- ------------------------------ -->
 #### Show track sizes

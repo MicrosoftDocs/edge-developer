@@ -164,25 +164,25 @@ To have DevTools automatically open whenever you open a new tab in the browser:
 1. At the command line, open Microsoft Edge, passing in the `--auto-open-devtools-for-tabs` flag, as follows:
 
    Windows command prompt:
-   
+
    ```cmd
    start msedge --auto-open-devtools-for-tabs
    ```
-   
+
    Windows PowerShell:
-   
+
    ```powershell
    Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
    ```
-   
+
    macOS Terminal:
-   
+
    ```bash
    /Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge --auto-open-devtools-for-tabs
    ```
-   
+
    bash shell on Linux:
-   
+
    ```bash
    microsoft-edge --auto-open-devtools-for-tabs
    ```

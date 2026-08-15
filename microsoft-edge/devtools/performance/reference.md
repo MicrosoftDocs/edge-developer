@@ -1123,7 +1123,7 @@ To view WebSocket messages in the **Performance** tool:
    At the bottom of the chat form, a message is displayed, such as "John:v8g... connected."
 
 1. In the **Send a message** text box, enter a message, such as "Hello", and then click the **Send** button.
- 
+
    In the chat app, the message is displayed, such as "Hello":
 
    ![WebSocket messages in the Performance tool](./reference-images/websocket-messages.png)

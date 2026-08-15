@@ -129,7 +129,7 @@ WebView2Browser has a multi-WebView approach to integrate web content and applic
 The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown list) use the UI environment, while web content WebViews (one per tab) use the content environment.
 
 ![Browser layout](./webview2browser-images/layout.png)
-<!-- todo: remove png from other repo, in PR 140: 
+<!-- todo: remove png from other repo, in PR 140:
 ![Browser layout](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/layout.png)
 -->
 

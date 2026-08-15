@@ -323,7 +323,7 @@ See also:
 <!-- ------------------------------ -->
 #### Manage process priority
 
-* If the app has a heavy native workload, assign thread priorities carefully, to avoid starving WebView2 threads.  WebView2 creates separate renderer processes.  
+* If the app has a heavy native workload, assign thread priorities carefully, to avoid starving WebView2 threads.  WebView2 creates separate renderer processes. 
 
 See also:
 * [Process model for WebView2 apps](./process-model.md)

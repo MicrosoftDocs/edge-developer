@@ -18,7 +18,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 <!-- Subtitle: DOM elements with semantic errors are highlighted with a wavy line and a tooltip with a link. -->
 
-You can now easily identify semantic issues in the DOM tree of the **Elements** tool, such as: 
+You can now easily identify semantic issues in the DOM tree of the **Elements** tool, such as:
 * An invalid descendant of `<select>`.
 * Mismatched ARIA definitions.
 * Missing ARIA attributes.

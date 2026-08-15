@@ -64,7 +64,7 @@ To start recording a new user flow:
 <!-- ====================================================================== -->
 ## Record other user flows
 
-To record a new user flow, after you've stopped the recording of the previous user flow: 
+To record a new user flow, after you've stopped the recording of the previous user flow:
 
 1. Click the **Create a new recording** (![Create a new recording button](./index-images/new-recording-icon.png)) button in the top-left corner of the **Recorder** tool:
 

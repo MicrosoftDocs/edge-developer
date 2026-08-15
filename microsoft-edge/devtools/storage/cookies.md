@@ -86,7 +86,7 @@ The **Cookies** table contains the following fields:
 
 * **Partition Key Site**. The _partition key_ of a cookie only exists when the cookie is set in partitioned storage and corresponds to the top-level site where the cookie was initially created. See [Cookies Having Independent Partitioned State (CHIPS)](https://developer.mozilla.org/docs/Web/Privacy/Guides/Privacy_sandbox/Partitioned_cookies) at MDN.
 
-* **Cross Site**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts. 
+* **Cross Site**. This attribute provides web developers a means to annotate cookies that are allowed to be set or sent in same-party, cross-site contexts.
 
 * **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [Cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.
 
@@ -208,7 +208,7 @@ To view third-party cookies in the **Application** tool:
    A tooltip reads **This attempt to set a cookie via a Set-Cookie header was blocked due to user preferences.**
 
    ![Cookies in Application tool that are blocked have an info icon](./cookies-images/cookie-blocked-application-tool.png)
-  
+
    **Stop blocking third-party cookies:**
 
 1. In Microsoft Edge, select **Settings and more** (![Settings and more icon](./cookies-images/settings-and-more-icon.png)) > **Settings** > **Privacy, search, and services**<!-- edge://settings/privacy -->.
@@ -238,7 +238,7 @@ To view blocked third-party cookies in the **Network** tool:
 
    DevTools opens.
 
-1. Select the **Network** tool. 
+1. Select the **Network** tool.
 
 1. Refresh the page.
 

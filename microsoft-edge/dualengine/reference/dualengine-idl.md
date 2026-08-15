@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html
-topic_type: 
+topic_type:
 - APIRef
 api_name:
 - DualEngineInitialize
@@ -22,8 +22,7 @@ api_loction:
 # Globals
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
-> to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
 
 ## Summary
 
@@ -289,7 +288,7 @@ Flags that indicate the type of navigation that occurred.
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
-NAVIGATIONFLAGS_NONE            | 
+NAVIGATIONFLAGS_NONE            |
 NAVIGATIONFLAGS_MAINFRAME            | Indicates that the top level page navigated, e.g.
 NAVIGATIONFLAGS_SAMEDOCUMENT            | Indicates that the navigation is within the same document, e.g. local anchor navigations.
 NAVIGATIONFLAGS_NEWPAGE            | Indicates that the navigation was to a new page, e.g.

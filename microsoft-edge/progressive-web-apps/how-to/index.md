@@ -119,7 +119,7 @@ The remaining sections explain the files that make up the PWA sample.
 
 A regular web app only runs in the browser.  By adding a web app manifest, the web app becomes a Progressive Web App (PWA).  The web app manifest enables browsers that support PWAs to install the web app as a Progressive Web App on the device.
 
-A _web app manifest_ is a JSON file containing metadata about the Progressive Web App, such as its name, description, icons, and the various operating system features it uses.  The JSON code describes the app to the host operating system.  The manifest file provides basic information about the Progressive Web App, for the device's operating system to use.  
+A _web app manifest_ is a JSON file containing metadata about the Progressive Web App, such as its name, description, icons, and the various operating system features it uses.  The JSON code describes the app to the host operating system.  The manifest file provides basic information about the Progressive Web App, for the device's operating system to use. 
 
 The file name `manifest.json` is a common convention, not a strict requirement.
 
@@ -172,7 +172,7 @@ This sample [sw.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature
 
 ```javascript
 const CACHE_NAME = `temperature-converter-v1`;
-    
+   
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -197,7 +197,7 @@ self.addEventListener('fetch', event => {
         try {
           // If the resource was not in the cache, try the network.
           const fetchResponse = await fetch(event.request);
-    
+   
           // Save the resource in the cache and return it.
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
@@ -214,7 +214,7 @@ This service worker explicitly caches three files:
 * `./converter.js`
 * `./converter.css`
 
-Two additional files are are cached automatically by the browser: 
+Two additional files are are cached automatically by the browser:
 * The icon file (`.png`).
 * The manifest file (`.json`).
 

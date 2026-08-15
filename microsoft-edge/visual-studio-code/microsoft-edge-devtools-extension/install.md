@@ -215,7 +215,7 @@ These steps start the server for the first time.
 
    ```console
    Starting up http-server, serving ./
-   
+  
    Available on:
    http://10.0.1.8:8080
    http://127.0.0.1:8080

@@ -100,7 +100,7 @@ To see the Language Detector API in action, and view existing code that uses thi
    The model starts detecting the language of the text.
 
    The output is generated in the response section of the page.
-   
+  
    The output displays:
    * The name of the detected language.
    * The percent certainty of which language.
@@ -193,7 +193,7 @@ You can follow the progress of the model download by using the `monitor` option.
 // to monitor the model download.
 const session = await LanguageDetector.create({
   monitor: m => {
-    // Use the monitor object argument to add a listener for the 
+    // Use the monitor object argument to add a listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
@@ -287,7 +287,7 @@ To destroy a session by creating an `AbortController` object, create a `Language
 // Create an AbortController object.
 const controller = new AbortController();
 
-// Create a Language Detector session and pass the 
+// Create a Language Detector session and pass the
 // AbortController object by using the signal option.
 const session = await LanguageDetector.create({
   signal: controller.signal

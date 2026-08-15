@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20BrowserSession
-topic_type: 
+topic_type:
 - APIRef
 api_name:
 - IDualEngine20BrowserSession
@@ -38,7 +38,7 @@ api_location:
 # interface IDualEngine20BrowserSession
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or
 > to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
 
 ```cpp
@@ -86,9 +86,9 @@ Duplicates an active tab's recovery data.
 > public HRESULT [CloneActiveTabRecoveryData](#cloneactivetabrecoverydata)(HWND hwndBrowser, REFGUID guidSrcFile, REFGUID guidDestFile)
 
 ###### Parameters
-* `hwndBrowser` The HWND of the hosted browser window. 
+* `hwndBrowser` The HWND of the hosted browser window.
 
-* `guidSrcFile` The GUID for the source recovery data file to copy. 
+* `guidSrcFile` The GUID for the source recovery data file to copy.
 
 * `guidDestFile` The GUID to associate with the new tab recovery data file.
 
@@ -99,7 +99,7 @@ Duplicates an inactive tab's recovery data.
 > public HRESULT [CloneInactiveTabRecoveryData](#cloneinactivetabrecoverydata)(REFGUID guidSrcFile, REFGUID guidDestFile)
 
 ###### Parameters
-* `guidSrcFile` The GUID for the source recovery data file to copy. 
+* `guidSrcFile` The GUID for the source recovery data file to copy.
 
 * `guidDestFile` The GUID to associate with the new tab recovery data file.
 
@@ -119,7 +119,7 @@ Deletes all but the provided tab recovery data files.
 > public HRESULT [DeleteAllButRecoverableRecoveryFiles](#deleteallbutrecoverablerecoveryfiles)(int cRecoverableGUIDs, LPCWSTR * rgpszRecoverableGUIDs)
 
 ###### Parameters
-* `cRecoverableGUIDs` The number of GUIDs in `rgpszRecoverableGUIDs`. 
+* `cRecoverableGUIDs` The number of GUIDs in `rgpszRecoverableGUIDs`.
 
 * `rgpszRecoverableGUIDs` An array of GUIDs representing tab recovery data files that are not to be deleted.
 
@@ -139,7 +139,7 @@ Returns a list of keyboard accelerators that should be forwarded from the Host.
 > public HRESULT [GetRequestedHostForwardedAccelerators](#getrequestedhostforwardedaccelerators)(DWORD * pcAccels, [ACCELERATOR](accelerator.md) ** prgAccels)
 
 ###### Parameters
-* `pcAccels` The number of accelerators in `prgAccels`. 
+* `pcAccels` The number of accelerators in `prgAccels`.
 
 * `prgAccels` A list of keyboard accelerators that should be forwarded. When finished the caller must free the memory allocated for the list with `CoTaskMemFree`.
 
@@ -150,13 +150,13 @@ Initializes the session.
 > public HRESULT [Initialize](#initialize)(DWORD cAccels, [ACCELERATOR](accelerator.md) * rgHostPriorityAccels, [IDualEngine20BrowserSessionObserver](idualengine20browsersessionobserver.md) * pSessionObserver, LPCWSTR pszProfilePath, LPCWSTR pszProfileId)
 
 ###### Parameters
-* `cAccels` The number of accelerators in `rgHostPriorityAccels`. 
+* `cAccels` The number of accelerators in `rgHostPriorityAccels`.
 
-* `rgHostPriorityAccels` A list of keyboard accelerators to have the session forward to the host. 
+* `rgHostPriorityAccels` A list of keyboard accelerators to have the session forward to the host.
 
-* `pSessionObserver` An observer for events from this session. 
+* `pSessionObserver` An observer for events from this session.
 
-* `pszProfilePath` The path to host's profile path where the session will store relevant files. 
+* `pszProfilePath` The path to host's profile path where the session will store relevant files.
 
 * `pszProfileId` The host's profile ID to associate with this session.
 
@@ -185,7 +185,7 @@ Sets hang detection messages that will be sent to the session by the host to det
 > public HRESULT [SetHangDetectionMessages](#sethangdetectionmessages)(UINT uiSyncHungCheckMsg, UINT uiAsyncHungCheckMsg)
 
 ###### Parameters
-* `uiSyncHungCheckMsg` The window message ID of the message that the host will synchronously wait on to be handled. 
+* `uiSyncHungCheckMsg` The window message ID of the message that the host will synchronously wait on to be handled.
 
 * `uiAsyncHungCheckMsg` The window message ID of the message that the host will asynchronously wait on. Browsers signal the host by calling [IDualEngine20BrowserObserver::OnAsyncHungCheckReply()](idualengine20browserobserver.md#onasynchungcheckreply).
 
@@ -226,7 +226,7 @@ Sets site permissions for the session.
 <!-- ---------- -->
 ###### Parameters
 
-* `sitePermissionKind` The type of site permission that is being set. 
+* `sitePermissionKind` The type of site permission that is being set.
 
 * `pszPermissionData` A serialized string of the permission data to set.
 
@@ -305,6 +305,6 @@ Sends cookie data to the session process.
 > public HRESULT [SyncCookies](#synccookies)(const [DualEngineCookie](dualenginecookie.md) * pCookies, DWORD cCookies)
 
 ###### Parameters
-* `pCookies` An array of cookies to be sent to the session. 
+* `pCookies` An array of cookies to be sent to the session.
 
 * `cCookies` The number of items in `pCookies`.

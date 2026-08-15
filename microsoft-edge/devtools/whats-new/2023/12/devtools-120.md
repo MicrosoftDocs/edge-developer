@@ -13,7 +13,7 @@ ms.date: 12/07/2023
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 
@@ -67,7 +67,7 @@ If you have any questions, comments, or feedback about the feature, please leave
 
 <!-- Subtitle: Debug and share common user journeys by recording them. You can generate a performance trace, and then analyze it by using the Performance tool. -->
 
-Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
+Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting.
 
 The initial view in the **Recorder** tool gives an overview of how to use the tool:
 
