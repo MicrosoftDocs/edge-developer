@@ -35,7 +35,7 @@ To enable the Command Palette experiment:
 
 1. In the **Command Palette** dropdown menu, select **Enabled**:
 
-   <!-- screenshot directly in What's New, to show where to see the keyboard shortcut along with version:-->
+   <!-- screenshot directly in What's New, to show where to see the keyboard shortcut along with version: -->
    ![The keyboard shortcut for Command Palette in the flags page for version 106](./devtools-106-images/command-palette-flags-shortcut-106.png)
 
    Note the keyboard shortcut, which is shown in the **Command Palette** section on the `edge://flags` page.

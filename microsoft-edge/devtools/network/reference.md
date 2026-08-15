@@ -598,7 +598,7 @@ You can use multiple properties simultaneously by separating each property with 
 The complete list of supported properties:
 
 | Property | Details |
-|:--- | :--- |
+|---|---|
 | `cookie-domain` | Show the resources that set a specific cookie domain. |
 | `cookie-name` | Show the resources that set a specific cookie name. |
 | `cookie-path` | Show the resources that set a specific cookie path. |
@@ -1685,7 +1685,7 @@ To copy the formatted JSON data of a JSON response:
 
 1. In the sidebar, select the **Preview** tab.
 
-1. Right-click the first line of the formatted JSON response preview and then select **Copy value**:
+1. Right-click the first line of the formatted JSON response preview, and then select **Copy value**:
 
    ![The Copy Value right-click command](./reference-images/copy-json-value.png)
 

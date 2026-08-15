@@ -53,7 +53,7 @@ The [`env()`](https://developer.mozilla.org/docs/Web/CSS/env) CSS function can b
 Four environment variables are added by the Window Controls Overlay feature:
 
 | Variable | Description |
-|:--- |:---
+|---|---|
 | `titlebar-area-x` | Distance, in `px`, of the area normally occupied by the title bar from the left side of the window |
 | `titlebar-area-y` | Distance, in `px`, of the area normally occupied by the title bar from the top side of the window |
 | `titlebar-area-width` | Width of the title bar area, in `px` |

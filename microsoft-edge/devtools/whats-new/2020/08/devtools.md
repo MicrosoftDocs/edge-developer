@@ -296,7 +296,7 @@ See also:
 DevTools now has better support for the following JavaScript language features:
 
 | JavaScript language feature | Details |
-|:--- |:--- |
+|---|---|
 | [Logical assignment operators](https://v8.dev/features/logical-assignment) | DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.  |
 | Pretty-print [numeric separators](https://v8.dev/features/numeric-separators) | DevTools now properly pretty-prints the numeric separators in the **Sources** tool.  |
 

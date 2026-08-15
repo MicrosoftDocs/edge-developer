@@ -34,7 +34,7 @@ For an introductory tutorial using an existing webpage, see [Get started debuggi
 The most well-known type of breakpoint is line-of-code.  But line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if you are working with a large codebase.  You can save yourself time when debugging by knowing how and when to use the other types of breakpoints.
 
 | Breakpoint type | Use this when you want to pause... |
-|:--- |:--- |
+|---|---|
 | [Line-of-code](#line-of-code-breakpoints) | On an exact region of code.  |
 | [Conditional line-of-code](#conditional-line-of-code-breakpoints) | On an exact region of code, but only when some other condition is true.  |
 | [DOM](#dom-change-breakpoints) | On the code that changes or removes a specific DOM node, or the children.  |

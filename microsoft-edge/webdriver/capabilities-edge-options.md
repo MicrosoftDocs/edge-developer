@@ -47,7 +47,7 @@ For standard capabilities that `EdgeDriver` accepts, see [Selenium documentation
 Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` object.  In some languages, the capabilities are implemented by the `EdgeOptions` class.  In other languages, the capabilities are stored under the `ms:edgeOptions` dictionary in `DesiredCapabilities`.
 
 | Capability | Type | Details |
-|:--- |:--- |:--- |
+|---|---|---|
 | `args` | list of strings | List of command-line arguments to pass to the Microsoft Edge process on launch. Arguments with an associated value should be separated by an `=` sign (for example, `['start-maximized', 'user-data-dir=/tmp/temp_profile']`). If you're launching a WebView2 app, then these arguments are passed to your app instead of the underlying Microsoft Edge browser process. To pass arguments to the browser process when launching a WebView2 app, use [webviewOptions.additionalBrowserArguments](#webviewoptions-object) instead. |
 | `binary` | string | Path to the Microsoft Edge binary to use (on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`). |
 | `debuggerAddress` | string | An address of a debugger server to which to connect, in the form of `hostname/ip:port`, for example `127.0.0.1:38947`. |
@@ -74,7 +74,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 The `perfLoggingPrefs` dictionary has the following format. All keys are optional.
 
 | Key | Type | Default value | Details |
-|:--- |:--- |:--- |:--- |
+|---|---|---|---|
 | `bufferUsageReportingInterval` | positive integer | 1000 | The requested number of milliseconds between DevTools trace buffer usage events.  For example, if 1000, then once per second, DevTools reports how full the trace buffer is.  If a report indicates the buffer usage is 100%, a warning is issued. |
 | `enableNetwork` | boolean | true | To collect (or not collect) events from Network domain. |
 | `enablePage` | boolean | true | To collect (or not collect) events from Page domain. |
@@ -87,7 +87,7 @@ The `perfLoggingPrefs` dictionary has the following format. All keys are optiona
 The `webviewOptions` dictionary is used to configure the WebView2 environment when launching a WebView2 app. It has the following format. All keys are optional.
 
 | Key | Type | Default value | Details |
-|:--- |:--- |:--- |:--- |
+|---|---|---|---|
 | `browserExecutableFolder` | string | (empty) | Path to a folder containing a fixed version WebView2 runtime to use. For more information about using a fixed version runtime distribution with WebView2, see [Distribute a WebView2 app and the WebView2 Runtime](../webview2/concepts/distribution.md#the-fixed-version-runtime-distribution-mode). |
 | `userDataFolder` | string | (empty) | Path to the user data folder that WebView2 will use. If `userDataFolder` isn't specified, Microsoft Edge WebDriver will create a temporary user data folder. For more information about managing the user data folder with WebView2, see [Manage the user data folder](../webview2/concepts/user-data-folder.md). |
 | `additionalBrowserArguments` | list of strings |  | List of command-line arguments that WebView2 will pass to the browser process on launch. Arguments with an associated value should be separated by an `=` sign (for example, `['start-maximized', 'log-level=0']`). |
@@ -99,6 +99,6 @@ The `webviewOptions` dictionary is used to configure the WebView2 environment wh
 The following list contains all of the Microsoft Edge-specific capabilities that `EdgeDriver` returns when you create a new session.
 
 | Capability | Type | Details |
-|:--- |:--- |:--- |
+|---|---|---|
 | `msedge.msedgedriverVersion` | string | The version of EdgeDriver. |
 | `msedge.userDataDir` | string | The path to the user data folder used by the Microsoft Edge instance. |

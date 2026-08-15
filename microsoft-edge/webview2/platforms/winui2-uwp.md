@@ -130,7 +130,7 @@ The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/
 On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
 
 | Keyword | Supported? |
-|---|:---:|
+|---|---|
 | **General** |  |
 | auto | ✔️ |
 | default | ✔️ |

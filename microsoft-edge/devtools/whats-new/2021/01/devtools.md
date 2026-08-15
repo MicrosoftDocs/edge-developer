@@ -302,7 +302,7 @@ You can now copy CSS properties quicker with a few new options in the right-clic
 Copy options for a CSS class in the right-click menu:
 
 | Option | Details |
-|:--- |:--- |
+|---|---|
 | **Copy selector** | Copy the current selector name. |
 | **Copy rule** | Copy the rule of the current selector. |
 | **Copy all declarations** | Copy all declarations under the current rule, including non-valid and prefixed properties. |
@@ -312,7 +312,7 @@ Copy options for a CSS class in the right-click menu:
 Copy options for a CSS property in the right-click menu:
 
 | Option | Details |
-|:--- |:--- |
+|---|---|
 | **Copy declaration** | Copy the declaration of the current line. |
 | **Copy property** | Copy the property of the current line. |
 | **Copy value** | Copy the value of the current line. |

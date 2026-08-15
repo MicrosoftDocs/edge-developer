@@ -52,7 +52,7 @@ In the web app manifest file, app icons are defined with the `icons` member:
 Each icon in the `icons` array should come with at least the `src` and `sizes` properties.  An icon can also have the `type` and `purpose` properties.
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | `src` | The path to the image file, which can be a relative path from the app root folder, or an absolute URL. |
 | `sizes` | A space-separated list of sizes that the corresponding image can be used for. |
 | `type` | An optional hint for the OS to quickly detect the image type. |

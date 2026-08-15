@@ -170,7 +170,7 @@ If the **Device Type** list isn't displayed, select **More options** > **Add dev
 The **Device Type** list contains the following device types:
 
 | Device type | Rendering method | Cursor icon | Events triggered |
-|:--- |:--- |:--- |:--- |
+|---|---|---|---|
 | **Mobile** | Mobile | Circle | `touch` |
 | **Mobile (no touch)** | Mobile | Normal | `click` |
 | **Desktop** | Desktop | Normal | `click` |

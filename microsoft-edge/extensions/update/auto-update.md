@@ -83,7 +83,7 @@ The updated manifest returned by the server should be an XML document; for examp
 The updated manifest XML file defines the following attributes:
 
 | Attribute | Details |
-|:--- |:--- |
+|---|---|
 | `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and see `edge://extensions`. |
 | `codebase` | A URL to the `.crx` file. |
 | `version` | This attribute value is used by Microsoft Edge to determine whether it should download the `.crx` file specified by `codebase`.  It should match the value of `version` in the `manifest.json` file of the `.crx` file. |

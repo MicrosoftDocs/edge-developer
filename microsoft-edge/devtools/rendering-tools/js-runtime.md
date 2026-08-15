@@ -136,9 +136,9 @@ After you record a memory allocation sampling profile, view the recording as a f
 The flame chart is split into two parts:
 
 | index | Part | Description |
-| --- |:--- |:--- |
-| 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack.  |
-| 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on.  |
+|---|---|---|
+| 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack. |
+| 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on. |
 
 Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations, so that you can observe patterns in each runtime.
 
@@ -163,11 +163,11 @@ Click a function, to view it in the **Sources** tool.
 Hover on a function to display the name and timing data:
 
 | Detail | Description |
-|:--- |:--- |
-| **Name** | The name of the function.  |
-| **Self size** | The size of the current invocation of the function, including only the statements in the function.  |
-| **Total size** | The size of the current invocation of this function and any functions that it called.  |
-| **URL** | The location of the function definition in the form of `base.js:261` where `base.js` is the name of the file where the function is defined and `261` is the line number of the definition.  |
+|---|---|
+| **Name** | The name of the function. |
+| **Self size** | The size of the current invocation of the function, including only the statements in the function. |
+| **Total size** | The size of the current invocation of this function and any functions that it called. |
+| **URL** | The location of the function definition in the form of `base.js:261` where `base.js` is the name of the file where the function is defined and `261` is the line number of the definition. |
 <!--* **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->
 <!--* **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
 <!--* **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
