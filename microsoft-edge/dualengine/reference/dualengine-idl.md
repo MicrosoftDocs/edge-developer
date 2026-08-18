@@ -26,6 +26,8 @@ api_loction:
 
 ## Summary
 
+<!-- gen'd .md; can keep table tagging as-is -->
+
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [ACCELERATOREVENTTYPE](#acceleratoreventtype) | Specifies the type of accelerator event.

@@ -54,10 +54,10 @@ Four environment variables are added by the Window Controls Overlay feature:
 
 | Variable | Description |
 |---|---|
-| `titlebar-area-x` | Distance, in `px`, of the area normally occupied by the title bar from the left side of the window |
-| `titlebar-area-y` | Distance, in `px`, of the area normally occupied by the title bar from the top side of the window |
-| `titlebar-area-width` | Width of the title bar area, in `px` |
-| `titlebar-area-height` | Height of the title bar area, in `px` |
+| `titlebar-area-x` | The distance, in `px`, of the area normally occupied by the title bar from the left side of the window. |
+| `titlebar-area-y` | The distance, in `px`, of the area normally occupied by the title bar from the top side of the window. |
+| `titlebar-area-width` | The width of the title bar area, in `px`. |
+| `titlebar-area-height` | The height of the title bar area, in `px`. |
 
 You can use these environment variables to position and size your own content where the title bar would normally appear, when the window controls overlay feature is disabled:
 

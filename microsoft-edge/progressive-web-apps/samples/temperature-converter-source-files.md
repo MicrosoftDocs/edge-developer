@@ -10,7 +10,7 @@ ms.date: 10/17/2025
 ---
 # Temperature converter source files
 
-The sample Temperature converter Progressive Web App (PWA)
+Source files for the Temperature converter Progressive Web App (PWA) sample.
 
 See also:
 * [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/) - source code directory.

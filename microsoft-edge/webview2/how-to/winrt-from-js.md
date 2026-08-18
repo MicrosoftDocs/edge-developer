@@ -599,11 +599,13 @@ This section is for WinUI 3 (Windows App SDK) only.
 
 Add the CsWinRT and WinRTAdapter packages in the project file:
 
-1. In Visual Studio, select **File** > **Open** > **File**.  The **Open File** dialog opens.
+1. In Visual Studio, select **File** > **Open** > **File**.
+
+   The **Open File** dialog opens.
 
 1. Open the `.csproj` file, such as `MyWebView2WinUI3.csproj`.
 
-1. Add the following `<PackageReference>` element within the `<ItemGroup>` element that already contains some `<PackageReference>` elements.  You can add it below the other `<PackageReference>` elements:
+1. Within the `<ItemGroup>` element that already contains some `<PackageReference>` elements, add the following `<PackageReference>` element below the other `<PackageReference>` elements:
 
    ```xml
    <ItemGroup>

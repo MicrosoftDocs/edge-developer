@@ -55,38 +55,42 @@ See also:
 
 <!-- dup entries: 2019/12, 2020/01 -->
 
-Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
+Many developers use other developer tools, such as Visual Studio Code and StackOverflow, in their native language, not just in English.  We're excited to announce localization for DevTools, which you can now use in one of 10 languages besides English:
 
-* Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-* Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
-* French – fran&#231;ais
-* German - deutsch
-* Italian - italiano
-* Japanese - &#26085;&#26412;&#35486;
-* Korean - &#54620;&#44397;&#50612;
-* Portuguese - portugu&#234;s
-* Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
-* Spanish - espa&#241;ol
+* Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;<!-- 中文（简体) -->
+* Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;<!-- 中文（繁體) -->
+* French – fran&#231;ais<!-- français -->
+* German - deutsch<!-- deutsch -->
+* Italian - italiano<!-- italiano -->
+* Japanese - &#26085;&#26412;&#35486;<!-- 日本語 -->
+* Korean - &#54620;&#44397;&#50612;<!-- 한국어 -->
+* Portuguese - portugu&#234;s<!-- português -->
+* Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;<!-- русский -->
+* Spanish - espa&#241;ol<!-- español -->
 
-<!--
-|  |  |
-|---|---|
-| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|
-| French – français | German - deutsch |
-| Italian - italiano | Portuguese - português |
-| Korean - 한국어 | Japanese - 日本語 |
-| Russian – русский | Spanish - español |
--->
+To have the DevTools UI automatically match the language that you use for Microsoft Edge:
 
-The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.
+1. Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.
 
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, press **F1** in DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
+   Update 2026: These two flags no longer appear.
 
-![The DevTools in German](./devtools-images/localized-devtools.png)
+1. Set the **Developer Tools experiments** flag to **Enabled**.
+
+1. Restart Microsoft Edge.
+
+1. Open DevTools.
+
+1. Go to **Settings** > **Preferences**, and then in the **Language** dropdown list, select **Browser UI language**.
+
+   The DevTools UI automatically matches the language that you use for Microsoft Edge in `edge://settings/languages`, such as German:
+
+   ![DevTools in German](./devtools-images/localized-devtools.png)
+
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, in DevTools > **Settings** (**F1**) > **Preferences**, and then select a language (such as **English - English**), rather than selecting **Browser UI language**.
 
 **Console** messages aren't localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or click the **Send Feedback** icon.
+If you want to use DevTools in a different language than the ones that are available, [tweet](https://aka.ms/tweet/edgedevtools) at the Microsoft Edge DevTools team, or click the [Send Feedback](../../../contact.md) icon.
 
 Chromium issue [#941561](https://crbug.com/941561)
 

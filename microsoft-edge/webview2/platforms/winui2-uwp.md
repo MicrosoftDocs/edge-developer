@@ -9,6 +9,7 @@ ms.subservice: webview
 ms.date: 01/27/2025
 ---
 # WebView2 in WinUI 2 (UWP) apps
+<!-- https://learn.microsoft.com/en-us/microsoft-edge/webview2/platforms/winui2-uwp -->
 
 The following considerations apply to WebView2 in WinUI 2 (UWP) apps.  The WebView2 WinUI 2 (UWP) control is in development.
 
@@ -27,12 +28,6 @@ The following considerations apply to WebView2 in WinUI 2 (UWP) apps.  The WebVi
 * [CSS cursors](#css-cursors)
    * [Image URLs](#image-urls)
    * [Predefined CSS cursors](#predefined-css-cursors)
-      * [General](#general)
-      * [Links and status](#links-and-status)
-      * [Selection](#selection)
-      * [Drag and drop](#drag-and-drop)
-      * [Resizing and scrolling](#resizing-and-scrolling)
-      * [Zooming](#zooming)
 * [Microsoft Edge Developer Tools](#microsoft-edge-developer-tools)
 * [API limitations](#api-limitations)
 * [See also](#see-also)
@@ -157,45 +152,24 @@ On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can
 See also:
 * [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
 
-
-<!-- ---------- -->
-###### General
-
 | Keyword | Supported? |
 |---|:---:|
+| **General:** | |
 | `auto` | ✔️ |
 | `default` | ✔️ |
 | `none` | ❌ |
-
-
-<!-- ---------- -->
-###### Links and status
-
-| Keyword | Supported? |
-|---|:---:|
+| **Links and status:** | |
 | `context-menu` | ✔️ |
 | `help` | ✔️ |
 | `pointer` | ✔️ |
 | `progress` | ❌ |
 | `wait` | ✔️ |
-
-
-<!-- ---------- -->
-###### Selection
-
-| Keyword | Supported? |
-|---|:---:|
+| **Selection:** | |
 | `cell` | ❌ |
 | `crosshair` | ✔️ |
 | `text` | ✔️ |
 | `vertical-text` | ❌ |
-
-
-<!-- ---------- -->
-###### Drag and drop
-
-| Keyword | Supported? |
-|---|:---:|
+| **Drag and drop:** | |
 | `alias` | ❌ |
 | `copy` | ❌ |
 | `move` | ✔️ |
@@ -203,13 +177,7 @@ See also:
 | `not-allowed` | ✔️ |
 | `grab` | ❌ |
 | `grabbing` | ❌ |
-
-
-<!-- ---------- -->
-###### Resizing and scrolling
-
-| Keyword | Supported? |
-|---|:---:|
+| **Resizing and scrolling:** | |
 | `all-scroll` | ✔️ |
 | `col-resize` | ❌ |
 | `row-resize` | ❌ |
@@ -225,13 +193,7 @@ See also:
 | `ns-resize` | ✔️ |
 | `nesw-resize` | ✔️ |
 | `nwse-resize` | ✔️ |
-
-
-<!-- ---------- -->
-###### Zooming
-
-| Keyword | Supported? |
-|---|:---:|
+| **Zooming:** | |
 | `zoom-in` | ❌ |
 | `zoom-out` | ❌ |
 

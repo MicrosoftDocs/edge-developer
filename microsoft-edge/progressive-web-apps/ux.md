@@ -24,11 +24,13 @@ See also:
 
 When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon appears in the Address bar.
 
-1.  Click the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon:
+1. Click the **App available** (![The "App available" icon](./ux-images/app-available-icon.png)) icon:
 
-    ![The installation prompt in Microsoft Edge](./ux-images/edge-app-install-flyout.png)
+   ![The installation prompt in Microsoft Edge](./ux-images/edge-app-install-flyout.png)
 
-1.  Click the **Install** button to complete the installation and run the PWA in Windows.
+1. Click the **Install** button.
+
+   The installation completes, and the PWA runs in Windows.
 
 Many PWAs are also present on the [Microsoft Store](https://apps.microsoft.com), and can be installed directly from there, without needing to open Microsoft Edge.
 

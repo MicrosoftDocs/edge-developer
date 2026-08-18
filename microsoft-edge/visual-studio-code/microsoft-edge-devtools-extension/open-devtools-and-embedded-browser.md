@@ -220,7 +220,6 @@ If DevTools can't map the files in the **Edge DevTools: Browser** tab to the fil
 
 * Grant trust to a folder by opening it in Visual Studio Code.
 
-
 For example:
 
 1. Open a folder that's in your local copy of the Demos repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`, as described in [Get started using the DevTools extension for Visual Studio Code](./get-started.md).
@@ -238,6 +237,7 @@ For example:
    The above image shows using the **Styles** tab with **CSS mirror editing** checkbox selected, used to enlarge the body text to **24pt**.  The **Edge DevTools: Browser** tab renders the page as you change the value.  The tab's Address bar contains a URL rather than a file path.  Because **CSS mirror editing** checkbox selected and the corresponding `.css` file is found in a writeable local folder, the `.css` file on the local drive is automatically edited to `24pt;`.
 
 
+<!-- ------------------------------ -->
 #### Avoiding error messages about mirroring or mapping
 
 Next, try changing CSS without a matching folder opened:
@@ -270,6 +270,7 @@ See also:
 * [Troubleshooting the DevTools extension](./troubleshooting.md)
 
 
+<!-- ------------------------------ -->
 #### URLs, file paths, and opening a matching folder
 
 In some cases, behavior of DevTools is different for file paths than for URLs.
