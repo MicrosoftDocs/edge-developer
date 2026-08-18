@@ -147,10 +147,7 @@ The CSS cursor cannot be an image URL, such as `cursor: url(https://contoso.com/
 <!-- ------------------------------ -->
 #### Predefined CSS cursors
 
-On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.  See the tables below.
-
-See also:
-* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
+On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can use CSS cursors to change the cursor to some of the predefined cursors, such as `cursor: wait;` or `cursor: crosshair;`, but not to others, such as `cursor: progress` or `cursor: none`.
 
 | Keyword | Supported? |
 |---|:---:|
@@ -196,6 +193,9 @@ See also:
 | **Zooming:** | |
 | `zoom-in` | ❌ |
 | `zoom-out` | ❌ |
+
+See also:
+* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - The **Values** section describes the above keyword values.
 
 
 <!-- ====================================================================== -->
