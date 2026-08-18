@@ -20,7 +20,7 @@ Feedback from IT admins and developers is welcome, through the [WebView2Feedback
 * [Group policies for WebView2](#group-policies-for-webview2)
    * [Update policies](#update-policies)
    * [Suppressing WebView2 Runtime updates](#suppressing-webview2-runtime-updates)
-         * [Enterprise management of WebView2 Runtimes](#enterprise-management-of-webview2-runtimes)
+         * [Enterprise downgrade of Runtime to previous version](#enterprise-downgrade-of-runtime-to-previous-version)
          * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
          * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
          * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
