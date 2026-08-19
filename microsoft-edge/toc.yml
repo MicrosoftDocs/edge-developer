@@ -2360,6 +2360,9 @@
                   href: ./webview2/concepts/enterprise.md
                   displayName: Manage WebView2 applications  # old title
 
+                - name: WebView2 Enterprise Downgrade Guide
+                  href: ./webview2/how-to/enterprise-downgrade.md
+
                 - name: Distribute an app as a single executable file
                   href: ./webview2/how-to/static.md
                   displayName: Statically link the WebView2 loader library, single-file app  # old title
