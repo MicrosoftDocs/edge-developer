@@ -10,13 +10,14 @@ ms.date: 08/19/2026
 ---
 # Enterprise downgrade of the WebView Runtime to a previous version
 
-In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure.
+<!-- dup Summary para 1: -->
+In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
 
 **Detailed contents:**
-* [Overview](#overview)
-   * [What enterprise downgrade solves](#what-enterprise-downgrade-solves)
+* [Overview of enterprise downgrade](#overview-of-enterprise-downgrade)
+   * [How enterprise downgrade works](#how-enterprise-downgrade-works)
    * [Why enterprise downgrade exists](#why-enterprise-downgrade-exists)
-   * [Applicable applications](#applicable-applications)
+   * [Applicable WebView2 apps](#applicable-webview2-apps)
    * [Policy configuration and precedence](#policy-configuration-and-precedence)
    * [Core design principles](#core-design-principles)
 * [Temporarily downgrading the WebView2 Runtime](#temporarily-downgrading-the-webview2-runtime)
@@ -31,7 +32,7 @@ In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous v
 * [Risks of downgrading the WebView2 Runtime](#risks-of-downgrading-the-webview2-runtime)
    * [Security risks](#security-risks)
    * [Data integrity risks](#data-integrity-risks)
-   * [Application compatibility risks](#application-compatibility-risks)
+   * [App compatibility risks](#app-compatibility-risks)
    * [Operational risks](#operational-risks)
 * [Testing and troubleshooting downgrading of the Runtime](#testing-and-troubleshooting-downgrading-of-the-runtime)
    * [Verifying that the Runtime downgrade was applied](#verifying-that-the-runtime-downgrade-was-applied)
@@ -49,49 +50,46 @@ In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous v
 * [Escalating and contacting the WebView2 team](#escalating-and-contacting-the-webview2-team)
 * [See also](#see-also)
 
-Policy documentation: [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
-
 
 <!-- ====================================================================== -->
-## Overview
+## Overview of enterprise downgrade
 
-**WebView2** is a browser control that allows Windows applications (such as Microsoft Teams, Outlook, and third-party enterprise software) to embed web content using the Microsoft Edge rendering engine.  The **Evergreen** distribution model means the WebView2 Runtime updates automatically alongside Edge — applications always run on the latest version without manual intervention.
+<!-- dup Summary para 1: -->
+In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
 
-While Evergreen ensures applications get security patches and feature improvements automatically, it also means that if a new Runtime version introduces a regression, each application and Windows component that uses them is likely to be impacted.  Although enterprise IT Admins cannot uninstall the impacting update, Enterprise Downgrade offers a short-term mitigation approach to restore impacted productivity.
+See [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.  The `DowngradeVersion` policy is a controlled version downgrade capability that allows an enterprise IT Admin to temporarily revert a specific WebView2 application (WebView2 app) to use a previous version of the WebView2 Runtime via Group Policy when a critical regression disrupts business operations.
+
+The **Evergreen** distribution model means that the WebView2 Runtime updates automatically alongside Microsoft Edge, so that the WebView2 app always runs on the latest version of the WebView2 Runtime, without manual intervention.  The Evergreen WebView2 Runtime ensures that the WebView2 app gets security patches and feature improvements automatically.  The enterprise IT Admin cannot uninstall the impacting WebView2 Runtime update.
+
+**WebView2** is a browser control that allows Windows applications (such as Microsoft Teams, Outlook, and third-party enterprise software) to embed web content by using the Microsoft Edge rendering engine.
 
 
 <!-- ------------------------------ -->
-#### What enterprise downgrade solves
+#### How enterprise downgrade works
 
-The [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) policy is a controlled version downgrade capability that allows an enterprise IT Admin to temporarily revert specific WebView2 applications to a previous Runtime version via Group Policy when a critical regression disrupts business operations.
+1. The IT Admin identifies that a new WebView2 Runtime version has broken a specific WebView2 app.
 
-How enterprise downgrade works:
+1. The IT Admin sets a Group Policy that specifies that for this WebView2 app, use a specific previous version of the WebView2 Runtime, instead of the latest WebView2 Runtime.
 
-1. The IT Admin identifies that a new WebView2 version has broken a specific application.
+   Only WebView2 Runtime version N-1 or N-2 relative to the current Evergreen WebView2 Runtime version is supported.  Downgrading to a version of the WebView2 Runtime that's earlier than version N-2 is rejected.
 
-1. The IT Admin sets a Group Policy specifying: "For this application, use version X instead of the latest."
+1. The Edge Updater downloads and installs the older WebView2 Runtime version _side-by-side_ with the current WebView2 Runtime.
 
-   Only N-1 or N-2 relative to the current Evergreen version is supported.  Downgrades to versions beyond N-2 are rejected.
+1. The WebView2 Loader redirects only the targeted WebView2 app to the older WebView2 Runtime.
 
-1. The Edge Updater downloads and installs the older WebView2 Runtime version **side-by-side** with the current WebView2 Runtime.
+1. All other WebView2 apps on the device continue using the latest WebView2 Runtime version; they are unaffected by the downgrade.
 
-1. The WebView2 Loader redirects only the targeted application to the older WebView2 Runtime.
-
-1. All other applications on the device continue using the latest version unaffected.
-
-1. The downgrade automatically expires once the pinned version is no longer within the two most recent previous versions.
+1. The downgrade automatically expires after the pinned version is no longer within the two most recent previous versions of the WebView2 Runtime.
 
 
 <!-- ------------------------------ -->
 #### Why enterprise downgrade exists
 
-In mission-critical enterprise environments, unexpected regressions in the WebView2 Runtime can halt business workflows with no immediate remedy.  Even brief outages result in lost revenue, missed SLAs, and increased operational costs.
+Enterprise Downgrade is a last-resort recovery tool.  Enterprise Downgrade is targeted, time-bound, and managed by the enterprise IT Admin in partnership with WebView2 app owners.  Enterprise Downgrade is not a version-pinning mechanism.
 
-Enterprise Downgrade provides a **temporary, Admin-controlled version downgrade** for the specific application affected, while the platform team prepares a proper fix.
+Enterprise Downgrade provides a temporary, Admin-controlled version downgrade for the specific WebView2 app that's affected, while the platform team prepares a proper fix.  Enterprise Downgrade should only be used as a last-resort recovery measure, when a critical regression is actively disrupting business operations and no other mitigation (such as a hotfix, feature flag, or update pause) can resolve the issue in a timely manner.  The downgrade buys time for the platform team to ship a proper fix; the downgrade is not a substitute for shipping a proper fix.
 
-🔑 Key Principle: Enterprise Downgrade is a last-resort recovery tool — targeted, time-bound, and managed by the enterprise IT Admin in partnership with application owners.  Enterprise Downgrade is not a version-pinning mechanism.
-
-Mission-critical enterprise environments include, for example:
+In mission-critical enterprise environments, unexpected regressions in the WebView2 Runtime can halt business workflows with no immediate remedy.  Even brief outages result in lost revenue, missed SLAs, and increased operational costs.  Mission-critical enterprise environments include, for example:
 * Healthcare systems
 * Financial trading platforms
 * Retail point-of-sale
@@ -99,37 +97,39 @@ Mission-critical enterprise environments include, for example:
 
 
 <!-- ------------------------------ -->
-#### Applicable applications
+#### Applicable WebView2 apps
 
-Enterprise Downgrade does **not** automatically affect any application.  It is a policy that an IT Admin must explicitly configure for specific applications.  Only then does it apply.
+Enterprise Downgrade of the WebView2 Runtime doesn't automatically affect any WebView2 app.  The IT Admin must explicitly configure the `DowngradeVersion` policy for a specific WebView2 app.  The policy then applies only to that specific WebView2 app.
 
-**Which apps can be targeted:**
+The following types of WebView2 apps can be targeted:
 
-*  Any WebView2 Evergreen application running on enterprise-managed Windows devices.
+* Any WebView2 Evergreen-Runtime app running on enterprise-managed Windows devices.
 
-*  The IT Admin specifies the target by **executable** name (such as `teams.exe`) or **AUMID** (Application User Model ID, for packaged/MSIX apps).
+   * The IT Admin specifies the target by either:
+      * The Application User Model ID (AUMID), for packaged/MSIX apps.
+      * The executable name (such as `teams.exe`).
 
-*  If both an AUMID and exe name entry exist for the same application, the AUMID entry takes precedence.
+   * If both an AUMID and `.exe` name entry exist for the same WebView2 app, the AUMID entry takes precedence.
 
-**Which apps are NOT affected:**
+The following types of WebView2 apps are not affected by the `DowngradeVersion` policy:
 
-*  Applications that are not named in the policy continue to use the latest Evergreen Runtime.
+* WebView2 apps that aren't specified in the `DowngradeVersion` policy.
+   * Such apps continue to use the latest WebView2 Evergreen Runtime.
 
-*  Consumer or unmanaged devices are entirely out of scope.
+* WebView2 apps on consumer devices or unmanaged devices.
 
-*  App-bundled (Fixed Version) WebView2 Runtimes are out of scope.
+* WebView2 apps that use an app-bundled (Fixed Version) WebView2 Runtime.
 
 
 <!-- ------------------------------ -->
 #### Policy configuration and precedence
 
+HKEY_CURRENT_USER (HKCU) is not supported; this is a machine-level enterprise policy only (HKEY_LOCAL_MACHINE (HKLM)).
 
 | Location | Path |
 |---|---|
-| **Group Policy (recommended)** | Computer Configuration > Administrative Templates > Microsoft Edge WebView2 > Configure per-application WebView2 downgrade version. |
+| **Group Policy (recommended)** | **Computer Configuration** > **Administrative Templates** > **Microsoft Edge WebView2** > **Configure per-application WebView2 downgrade version** |
 | **Registry** | `HKLM\Software\Policies\Microsoft\Edge\WebView2\DowngradeVersion` |
-
-📄 Note: HKCU is not supported — this is a machine-level enterprise policy only.
 
 **Precedence when multiple policies exist (highest to lowest):**
 
@@ -151,7 +151,7 @@ If both `DowngradeVersion` and `BrowserExecutableFolder` are independently confi
 
 * **Automatic Expiry:** A downgraded version remains valid only as long as it is within the two most recent previous versions (N-1 or N-2).  Once two subsequent new major versions release beyond the downgraded version, the downgrade expires and the app automatically reverts to the latest Runtime.  Microsoft recommends that the IT Admin should remove the stale policy after it auto-expires.
 
-* **Per-App Targeting:** Downgrade is applied per-application, not device-wide.  Each application must be individually specified.
+* **Per-App Targeting:** Downgrade is applied per-app, not device-wide.  Each WebView2 app must be individually specified in the policy.
 
 
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ This is the recommended approach for enterprise environments.  Group Policy ensu
 
 1. Enable the policy, and enter this information:
 
-   * **Name:** The application identifier (AUMID or exe name, such as `teams.exe`).
+   * **Name:** The application identifier (AUMID).  Or, the `.exe` name, such as `teams.exe`.
 
    * **Value:** The target four-part version number (such as 151.0.2178.0).
 
@@ -201,7 +201,7 @@ For targeted configuration on individual machines.  Requires local administrator
          * Name: `teams.exe`, Value: `151.0.2178.0`
          * Name: `outlook.exe`, Value: `152.0.2164.0`
 
-1. Restart the WebView2 application, for the policy to take effect.
+1. Restart the WebView2 app, for the policy to take effect.
 
 **Example:**
 
@@ -226,13 +226,13 @@ Value: outlook.exe = "146"
 
   If no exact matching folder is found, the policy has no effect, and the Runtime defaults to the `BrowserExecutableFolder` policy or the Evergreen Runtime (the default auto-updating Runtime).
 
-* The updater will **automatically download** the required version if it satisfies N-1/N-2 conditions.  The IT Admin doesn't need to pre-stage version folders on disk.
+* The updater<!-- todo: Edge Updater? --> will **automatically download** the required version if it satisfies the N-1 and/or N-2 conditions.  The IT Admin doesn't need to pre-stage version folders on disk.
 
 * No restart of the machine is needed, but the WebView2 app must be restarted, and it might take up to 1 hour for the downgrade to take effect.
 
-* Policy application latency: Changes take effect within **1 hour** of deployment.  This is aligned with the Microsoft Edge and WebView2 update task cadence.  To trigger a force update, see [Triggering a force update](#triggering-a-force-update), below.
+* Policy latency for the WebView2 app: Changes take effect within **1 hour** of deployment.  This is aligned with the Microsoft Edge and WebView2 update task cadence.  To trigger a force update, see [Triggering a force update](#triggering-a-force-update), below.
 
-* Downgrade policy enforcement overrides the following:
+* Runtime downgrade policy enforcement overrides the following:
    * Maintenance windows.
    * Extended update intervals.
    * Cached last-check timestamps.
@@ -243,17 +243,17 @@ Value: outlook.exe = "146"
 
 1. The IT Admin sets policy by using Group Policy, specifying the `AppId` and `TargetVersion`.
 
-1. The Updater reads the policy, and validates that `TargetVersion` is within N-1 or N-2.
+1. The Updater<!-- todo: Edge Updater? --> reads the policy, and validates that `TargetVersion` is within N-1 or N-2.
 
-1. Downloads the downgraded version if needed (side-by-side install).
+1. Downloads<!-- todo: who is the actor? the WebView2 app? --> the downgraded version of the WebView2 Runtime, if needed, as a side-by-side install.
 
-1. Sets `BrowserExecutableFolder` policy for the target app to redirect it to the specified Runtime version.
+1. Sets<!-- todo: who is the actor? --> `BrowserExecutableFolder` policy for the target app to redirect it to the specified Runtime version.
 
-1. Maintains mapping as long as the downgraded version stays within the supported range.
+1. Maintains<!-- todo: who is the actor? --> mapping as long as the downgraded version stays within the supported range.
 
-1. Cleans up and reverts the app to the latest Runtime version when the pinned Runtime version falls outside of the supported range or the policy is removed.
+1. Cleans up<!-- todo: who is the actor? --> and reverts the app to the latest Runtime version when the pinned Runtime version falls outside of the supported range or the policy is removed.
 
-📄 Note: If a downgrade policy is active but the target Runtime version is not yet downloaded (such as due to network or disk constraints), applications will continue running on the currently available Runtime until the downgraded bits are present.  Applications will NOT fail to launch solely because downgraded bits are pending download.
+If a WebView2 Runtime downgrade policy is active but the target WebView2 Runtime version is not yet downloaded (such as due to network or disk constraints), the WebView2 app continues running on the currently available WebView2 Runtime until the earlier WebView2 Runtime is present.  The WebView2 app will _not_ fail to launch solely because the downgraded version of the WebView2 Runtime is pending download.
 
 
 <!-- ====================================================================== -->
@@ -265,10 +265,10 @@ Value: outlook.exe = "146"
 
 | Limitation | Detail |
 |---|---|
-| **Version range** | Only N-1 or N-2 relative to the current Evergreen version.  Downgrades beyond two versions are rejected. |
+| **Version range** | Only version N-1 or N-2 of the WebView2 Runtime relative to the current Evergreen Runtime version is supported.  Downgrading to an WebView2 Runtime that's earlier than the two previous Runtime versions is rejected. |
 | **Version format** | Only major version numbers (digits only).  Full version strings, dots, or wildcards are invalid. |
-| **Automatic expiry** | A downgraded version remains active only while it is within the two most recent previous versions.  Once two subsequent new versions release beyond the pinned version, the downgrade automatically expires and the app reverts to the latest Runtime. |
-| **Availability** | Feature available from version 150 onwards only. |
+| **Automatic expiry** | A downgraded version of the WebView2 Runtime remains active only while it is within the two most recent previous versions.  After two subsequent new versions of the Runtime release beyond the pinned version, the downgrade automatically expires, and the app reverts to the latest WebView2 Runtime. |
+| **Availability** | The downgrade feature is available for Microsoft Edge WebView2 version 150 or later, only. |
 
 
 <!-- ------------------------------ -->
@@ -277,24 +277,20 @@ Value: outlook.exe = "146"
 | Limitation | Detail |
 |---|---|
 | **Enterprise-only** | Not supported on consumer or unmanaged devices. |
-| **Machine-level only** | Policy set at HKLM only.  HKCU is not supported.  No user-level policy or individual user control. |
-| **Per-app targeting** | Cannot perform enterprise-wide downgrade across all apps.  Each app must be individually targeted. |
-| **No developer control** | Only IT Admins can initiate downgrade.  Developers cannot trigger downgrade via APIs. |
+| **Machine-level only** | Policy can only be set at the level of the local machine (HKEY_LOCAL_MACHINE (HKLM)).  Setting the downgrade policy for the current user (HKEY_CURRENT_USER (HKCU)) is not supported; there's no user-level policy, or individual user-level control. |
+| **Per-app targeting** | Cannot perform enterprise-wide downgrade across all WebView2 apps.  Each WebView2 app must be individually targeted. |
+| **No developer control** | Only an IT Admin can initiate downgrading the WebView2 Runtime.  A Developer cannot trigger downgrade of the WebView2 Runtime, such as via an API. |
 | **No indefinite pinning** | The solution does NOT support long-term or permanent version pinning. |
 
 
 <!-- ------------------------------ -->
 #### Shared User Data Folder (UDF) constraints
 
-Applications may share a WebView2 User Data Folder (UDF) to reuse browser state.  Accessing the same UDF from different WebView2 Runtime versions is **unsafe** and will result in failures:
+The IT Admin must downgrade all WebView2 apps that share the same User Data Folder (UDF), to use the same WebView2 Runtime version.
 
-**If App A is downgraded and App B shares the same UDF but is not downgraded:**
+WebView2 apps can share a WebView2 User Data Folder (UDF) to reuse browser state.  Very few apps share a User Data Folder (UDF); the only known apps that share a UDF are the Office Suite apps: Excel, Word, and PowerPoint.
 
-* Both App A and App B will fail fast on launch.
-
-* The IT Admin must downgrade all apps that share the same UDF to the same Runtime version.
-
-📄 Note: Very few apps share a User Data Folder (UDF).  The only known apps that share a UDF are the Office Suite apps: Excel, Word, and PowerPoint.
+Accessing the same UDF from different WebView2 Runtime versions is unsafe.  If WebView2 app A is downgraded, and WebView2 app B shares the same UDF but is not downgraded, both WebView2 app A and WebView2 app B will fail fast on launch.
 
 
 <!-- ====================================================================== -->
@@ -322,13 +318,13 @@ Applications may share a WebView2 User Data Folder (UDF) to reuse browser state.
 
 
 <!-- ------------------------------ -->
-#### Application compatibility risks
+#### App compatibility risks
 
 | Risk | Description |
 |---|---|
-| **Feature dependency breaks** | Applications using newer WebView2 APIs or behaviours may fail or behave unpredictably after downgrade. |
-| **Performance regressions** | Older versions may introduce slower page loads, higher memory usage, and degraded experiences. |
-| **App malfunction** | Downgrades can cause applications to malfunction due to reliance on recently introduced features or rendering changes. |
+| **Feature dependency breaks** | A WebView2 app that uses newer WebView2 APIs or behaviors might fail or behave unpredictably after downgrading the WebView2 Runtime. |
+| **Performance regressions** | Older versions of the WebView2 Runtime might introduce slower page loads, higher memory usage, and degraded experiences. |
+| **App malfunction** | Downgrading the WebView2 Runtime can cause a WebView2 app to malfunction, due to reliance on recently introduced features or rendering changes. |
 
 
 <!-- ------------------------------ -->
@@ -338,10 +334,8 @@ Applications may share a WebView2 User Data Folder (UDF) to reuse browser state.
 |---|---|
 | **Version fragmentation** | Supporting downgrade at the app level can lead to version drift across apps on the same device. |
 | **Sedimentation** | Multiple older versions accumulate on devices over time, increasing complexity. |
-| **Increased disk usage** | An additional WebView2 Runtime version is installed side-by-side with the current Evergreen version, consuming extra disk space on each device. |
-| **Coordination complexity** | Downgrade requires careful coordination between IT Admins, application owners, and platform teams. |
-
-⚠️ Given these risks, Enterprise Downgrade should only be used as a last-resort recovery measure — when a critical regression is actively disrupting business operations and no other mitigation (hotfix, feature flag, update pause) can resolve the issue in a timely manner.  The downgrade buys time for the platform team to ship a proper fix; the downgrade is not a substitute for shipping a proper fix.
+| **Increased disk usage** | An additional WebView2 Runtime version is installed side-by-side with the current Evergreen WebView2 Runtime version, consuming extra disk space on each device. |
+| **Coordination complexity** | Downgrade requires careful coordination between the IT Admin, the WebView2 app owner, and the platform team. |
 
 
 <!-- ====================================================================== -->
@@ -351,7 +345,7 @@ Applications may share a WebView2 User Data Folder (UDF) to reuse browser state.
 <!-- ------------------------------ -->
 #### Verifying that the Runtime downgrade was applied
 
-After setting the policy and restarting the target WebView2 application:
+After setting the WebView2 Runtime downgrade policy and restarting the target WebView2 app, do the following.
 
 
 <!-- ---------- -->
@@ -361,7 +355,7 @@ After setting the policy and restarting the target WebView2 application:
 
 1. Confirm that a new folder appears, matching the downgraded version (such as `145.x.xxxx.xx`).
 
-   The presence of this versioned folder indicates that the updater has fetched and staged the downgraded Runtime.
+   The presence of this versioned folder indicates that the updater has fetched and staged the downgraded WebView2 Runtime.
 
 
 <!-- ---------- -->
@@ -381,7 +375,9 @@ After setting the policy and restarting the target WebView2 application:
 <!-- ------------------------------ -->
 #### Triggering a force-update
 
-After setting the `DowngradeVersion` policy, the Edge Updater needs to download the target version.  By default, this happens within ~1 hour (aligned with the Edge/WebView2 update task cadence).  To trigger an immediate update, follow the below steps:
+After setting the `DowngradeVersion` policy, the Edge Updater needs to download the target version.  By default, this happens within approximately 1 hour (aligned with the Edge/WebView2 update task cadence).
+
+To trigger an immediate update:
 
 1. Open PowerShell as Administrator.
 
@@ -395,7 +391,7 @@ After setting the `DowngradeVersion` policy, the Edge Updater needs to download 
 
 1. Wait a few minutes for the download to complete.
 
-1. Restart the WebView2 application.
+1. Restart the WebView2 app.
 
 
 <!-- ------------------------------ -->
@@ -415,12 +411,12 @@ The following tools are for **troubleshooting issues** — they are not required
 
 | Symptom | Likely Cause | Resolution |
 |---|---|---|
-| App still running on latest version | App not restarted | Restart the WebView2 application (not the machine). |
-| Downgraded folder not appearing | Version outside N-1/N-2 range | Verify the target version is within the two most recent previous versions |
-| App fails fast on launch (all apps sharing UDF) | Shared UDF version mismatch | Downgrade ALL apps using the same User Data Folder to the same version |
-| Policy not taking effect | Incorrect key path or value format | Verify HKLM path, value name format (AUMID or exe), and 4 part value |
-| Multiple apps impacted unexpectedly | Shared User Data Folder | Identify UDF sharing and ensure all affected apps are aligned |
-| Downgrade auto-reverted unexpectedly | Pinned version fell outside supported range | Expected behavior — downgrade expires once the version is no longer within N-1/N-2 |
+| App still running on latest version | App not restarted. | Restart the WebView2 app (not the machine). |
+| Downgraded folder not appearing | Version is outside the "N-1 or N-2" range. | Verify that the target version is within the two most recent previous versions. |
+| App fails fast on launch (all apps sharing a User Data Folder (UDF)). | Shared UDF version mismatch. | Downgrade all apps that use the same UDF to the same version. |
+| Policy not taking effect. | Incorrect key path or value format. | Verify the HKLM path, the value name format (AUMID or `exe`), and four-part numeric format (such as 151.0.2178.0). |
+| Multiple apps are impacted unexpectedly. | Shared User Data Folder | Identify User Data Folder (UDF) sharing, and make sure all affected apps are aligned. |
+| The downgrade auto-reverted unexpectedly. | Pinned version fell outside supported range | Expected behavior — downgrade expires once the version is no longer within N-1/N-2 |
 
 
 <!-- ====================================================================== -->
@@ -430,6 +426,8 @@ The following tools are for **troubleshooting issues** — they are not required
 <!-- ------------------------------ -->
 #### Option 1: Disable group policy (recommended)
 
+Important: Do not delete registry keys directly.  Always use Group Policy (GPO) to disable the policy, to ensure clean removal and avoid orphaned configuration.
+
 If GPO was used to configure downgrade:
 
 1. Open the Group Policy Editor (`gpedit.msc`).
@@ -438,15 +436,15 @@ If GPO was used to configure downgrade:
 
 1. Set "**Configure per-application WebView2 downgrade version**" to **Disabled** or **Not Configured**.
 
-1. Restart the WebView2 application.
+1. Restart the WebView2 app.
 
    The app will revert to the latest Evergreen Runtime on next launch.
-
-📄 Important: Do NOT delete registry keys directly.  Always use Group Policy (GPO) to disable the policy, to ensure clean removal and avoid orphaned configuration.
 
 
 <!-- ------------------------------ -->
 #### Option 2: Remove the policy via the registry
+
+Caution: Direct registry manipulation should only be used if the original policy was set via Registry Editor.  If Group Policy (GPO) was used, always revert by using GPO, to ensure consistency.
 
 If the policy was originally set directly via Registry (not recommended in production):
 
@@ -456,9 +454,7 @@ If the policy was originally set directly via Registry (not recommended in produ
 
 1. Delete the specific value (such as`teams.exe`).
 
-1. Restart the WebView2 application.
-
-⚠️ Caution: Direct registry manipulation should only be used if the original policy was set via Registry Editor.  If GPO was used, always revert using GPO to ensure consistency.
+1. Restart the WebView2 app.
 
 
 <!-- ------------------------------ -->
@@ -480,8 +476,8 @@ The downgrade expires automatically when the pinned version is no longer within 
 
 | Action | What Happens |
 |---|---|
-| **Application restart** | App picks up the latest Runtime on next launch. |
-| **BrowserExecutableFolder** | Automatically removed; app returns to default Runtime path. |
+| **Application restart** | The WebView2 app picks up the latest WebView Runtime during the next launch of the app. |
+| **BrowserExecutableFolder** | Automatically removed; the WebView2 app returns to using the default WebView2 Runtime path. |
 | **Downgraded Runtime bits** | Cleaned up by the updater on a scheduled cadence. |
 | **User data** | Remains in place; no automatic data migration occurs. |
 
