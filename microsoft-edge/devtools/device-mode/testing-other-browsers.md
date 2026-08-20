@@ -25,6 +25,18 @@ ms.date: 07/17/2024
 
 To make sure your website works for all your users, test your website on other browsers and devices. Not all of your users will be using the browser and device that you used when developing. We encourage you to check out solutions for emulation provided by other browsers, in addition to using the **Device Emulation** tool in Microsoft Edge DevTools.
 
+**Detailed contents:**
+* [Summary](#summary)
+* [Browser emulators](#browser-emulators)
+* [Device emulators and simulators](#device-emulators-and-simulators)
+   * [Android emulator](#android-emulator)
+         * [Chromium content shell on Android](#chromium-content-shell-on-android)
+         * [Firefox on Android](#firefox-on-android)
+   * [iOS simulator](#ios-simulator)
+   * [Virtual machines](#virtual-machines)
+* [Cloud-based emulators and simulators](#cloud-based-emulators-and-simulators)
+* [See also](#see-also)
+
 
 <!-- ------------------------------ -->
 #### Summary
