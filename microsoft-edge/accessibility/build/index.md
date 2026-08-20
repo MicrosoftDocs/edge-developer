@@ -11,6 +11,55 @@ ms.date: 05/11/2021
 ---
 # Resources about building accessible websites
 
+<!-- dup sent 1: -->
+Best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+* [How accessibility works](#how-accessibility-works)
+* [ARIA](#aria)
+   * [Roles, properties, and states](#roles-properties-and-states)
+* [Assistive technology compatibility testing](#assistive-technology-compatibility-testing)
+   * [Learning how to test](#learning-how-to-test)
+   * [Testing locally](#testing-locally)
+   * [Testing in virtual machines and emulators](#testing-in-virtual-machines-and-emulators)
+   * [Cloud-based testing tools](#cloud-based-testing-tools)
+* [Resources for accessibility basics](#resources-for-accessibility-basics)
+   * [The A11Y project](#the-a11y-project)
+   * [Web Accessibility Initiative (WAI)](#web-accessibility-initiative-wai)
+* [Accessibility blogs](#accessibility-blogs)
+   * [TPGi, LLC](#tpgi-llc)
+   * [Level Access](#level-access)
+* [Accessible examples](#accessible-examples)
+   * [ally.js - Tutorials](#allyjs---tutorials)
+   * [OpenAjax examples](#openajax-examples)
+   * [Patterns](#patterns)
+* [Accessibility techniques and tools](#accessibility-techniques-and-tools)
+   * [Accessibility: Creating accessible extension icons for Microsoft Edge](#accessibility-creating-accessible-extension-icons-for-microsoft-edge)
+   * [Accessible Name and Description: Computation and Mappings 1.1](#accessible-name-and-description-computation-and-mappings-11)
+   * [Accessibility Evaluation Resources](#accessibility-evaluation-resources)
+   * [Assistive technology compatibility tests](#assistive-technology-compatibility-tests)
+   * [Building accessible websites just got a lot easier](#building-accessible-websites-just-got-a-lot-easier)
+   * [Core Accessibility API Mappings 1.1](#core-accessibility-api-mappings-11)
+   * [Easy Checks – A First Review of Web Accessibility](#easy-checks--a-first-review-of-web-accessibility)
+   * [How to Meet WCAG 2.0](#how-to-meet-wcag-20)
+   * [HTML Accessibility API Mappings 1.0](#html-accessibility-api-mappings-10)
+   * [Quick Tips](#quick-tips)
+   * [Site Scan](#site-scan)
+   * [Techniques for WCAG 2.0](#techniques-for-wcag-20)
+   * [Tips on Developing for Web Accessibility](#tips-on-developing-for-web-accessibility)
+   * [WAI-ARIA Authoring Practices 1.1](#wai-aria-authoring-practices-11)
+   * [WAI Guidelines and Techniques](#wai-guidelines-and-techniques)
+   * [Web Accessibility Evaluation Tools List](#web-accessibility-evaluation-tools-list)
+   * [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](#web-accessibility-perspectives-explore-the-impact-and-benefits-for-everyone)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+<!-- dup sent 1: -->
+Best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
+
 The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.  However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](https://webaim.org/articles/motor/assistive) to browse the web.
 
 Building websites that are accessible to people with disabilities requires semantic information about the user interface.  Accessible websites allow assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.
