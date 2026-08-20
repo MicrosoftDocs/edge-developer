@@ -1,6 +1,6 @@
 ---
 title: Downgrade the WebView Runtime to an earlier version
-description: If a new version of the WebView2 Runtime version introduces a regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime to a previous version, by using the DowngradeVersion policy, as a temporary solution.
+description: If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the DowngradeVersion policy, as a temporary solution.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 08/19/2026
 ---
 # Downgrade the WebView Runtime to an earlier version
 
-If a new version of the WebView2 Runtime version introduces a regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime to a previous version, by using the `DowngradeVersion` policy, as a temporary solution.
+If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the `DowngradeVersion` policy, as a temporary solution.
 
 **Detailed contents:**
 * [Overview of enterprise downgrade](#overview-of-enterprise-downgrade)
@@ -53,9 +53,9 @@ If a new version of the WebView2 Runtime version introduces a regression in a sp
 <!-- ====================================================================== -->
 ## Overview of enterprise downgrade
 
-In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
+In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a critical regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
 
-See [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.  The `DowngradeVersion` policy is a controlled version downgrade capability that allows an enterprise IT Admin to temporarily revert a specific WebView2 application (WebView2 app) to use a previous version of the WebView2 Runtime via Group Policy when a critical regression disrupts business operations.
+The `DowngradeVersion` policy is a controlled version downgrade capability that allows an enterprise IT Admin to temporarily revert a specific WebView2 application (WebView2 app) to use a previous version of the WebView2 Runtime via Group Policy when a critical regression disrupts business operations.  See [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
 
 The **Evergreen** distribution model means that the WebView2 Runtime updates automatically alongside Microsoft Edge, so that the WebView2 app always runs on the latest version of the WebView2 Runtime, without manual intervention.  The Evergreen WebView2 Runtime ensures that the WebView2 app gets security patches and feature improvements automatically.  The enterprise IT Admin cannot uninstall the impacting WebView2 Runtime update.
 

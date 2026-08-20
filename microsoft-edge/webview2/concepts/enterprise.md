@@ -20,8 +20,8 @@ Feedback from IT Admins and developers is welcome, through the [WebView2Feedback
 * [Group policies for WebView2](#group-policies-for-webview2)
    * [Update policies](#update-policies)
    * [Suppressing WebView2 Runtime updates](#suppressing-webview2-runtime-updates)
-      * [Enterprise downgrade of Runtime to previous version](#enterprise-downgrade-of-runtime-to-previous-version)
       * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
+      * [Downgrading the WebView Runtime to an earlier version](#downgrading-the-webview-runtime-to-an-earlier-version)
       * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
       * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
    * [Browser policies](#browser-policies)
@@ -54,16 +54,6 @@ However, users should not stop updating their WebView2 Runtime; users should not
 
 
 <!-- ---------- -->
-###### Enterprise downgrade of Runtime to previous version
-
-With the WebView2 152 release, the Enterprise Downgrade feature is generally available.
-
-Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 application to revert to a previous runtime version in the event of a critical regression.
-
-See [WebView2 Enterprise Downgrade Guide] (todo).
-
-
-<!-- ---------- -->
 ###### Evergreen Runtime is recommended, rather than a fixed version
 
 Using the Evergreen WebView2 Runtime is recommended, unless business-critical requirements necessitate using a fixed version of the WebView2 Runtime.  Using the Evergreen WebView2 Runtime:
@@ -75,6 +65,14 @@ For details about security fixes in Microsoft Edge (which apply to WebView2 as w
 
 See also:
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+
+
+<!-- ---------- -->
+###### Downgrading the WebView Runtime to an earlier version
+
+Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 application to revert to a previous runtime version in the event of a critical regression.
+
+See [Downgrade the WebView Runtime to an earlier version](../how-to/enterprise-downgrade.md).
 
 
 <!-- ---------- -->
