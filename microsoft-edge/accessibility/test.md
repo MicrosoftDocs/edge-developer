@@ -62,6 +62,8 @@ You can also use the assessment feature of [Accessibility Insights](https://acce
 
 * [HTML5Accessibility](https://html5accessibility.com) - This site tests which new HTML5 features are accessibly supported by major browsers.
 
+* [Modal opens visually but fails screen-reader users](https://frontendatlas.com/incidents/modal-screen-reader-failure) - A guided React debugging scenario covering dialog naming, keyboard focus containment, background isolation, focus restoration, and behavior-based regression testing.
+
 * [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
 
 
