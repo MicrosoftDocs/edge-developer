@@ -70,7 +70,7 @@ See also:
 <!-- ---------- -->
 ###### Downgrading the WebView Runtime to an earlier version
 
-Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 application to revert to a previous runtime version in the event of a critical regression.
+Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 app to revert to using an earlier version of the WebView2 Runtime, in the event of a critical regression in the WebView2 app when using the latest version of the WebView2 Runtime.
 
 See [Downgrade the WebView Runtime to an earlier version](../how-to/enterprise-downgrade.md).
 
