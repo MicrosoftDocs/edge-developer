@@ -137,7 +137,7 @@ See [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update
 <!-- all links in article -->
 
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Evergreen vs. fixed version of the WebView2 Runtime.
-* [Enterprise downgrade of the WebView Runtime to a previous version](../how-to/enterprise-downgrade.md)
+* [Enterprise downgrade of the WebView Runtime to an earlier version](../how-to/enterprise-downgrade.md)
 
 <!-- toc order -->
 Microsoft Edge Enterprise documentation:
