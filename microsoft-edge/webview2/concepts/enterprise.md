@@ -21,11 +21,11 @@ Feedback from IT Admins and developers is welcome, through the [WebView2Feedback
    * [Update policies](#update-policies)
    * [Suppressing WebView2 Runtime updates](#suppressing-webview2-runtime-updates)
       * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
-      * [Downgrading the WebView Runtime to an earlier version](#downgrading-the-webview-runtime-to-an-earlier-version)
       * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
       * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
    * [Browser policies](#browser-policies)
    * [WebView2-specific policies](#webview2-specific-policies)
+      * [Downgrading the WebView Runtime to an earlier version](#downgrading-the-webview-runtime-to-an-earlier-version)
 * [Windows Server Update Services (WSUS)](#windows-server-update-services-wsus)
    * [WebView2 deployment and update using Configuration Manager](#webview2-deployment-and-update-using-configuration-manager)
 * [See also](#see-also)
@@ -68,14 +68,6 @@ See also:
 
 
 <!-- ---------- -->
-###### Downgrading the WebView Runtime to an earlier version
-
-Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 app to revert to using an earlier version of the WebView2 Runtime, in the event of a critical regression in the WebView2 app when using the latest version of the WebView2 Runtime.
-
-See [Downgrade the WebView2 Runtime to an earlier version](/deployedge/webview2-downgrade-runtime).
-
-
-<!-- ---------- -->
 ###### Rapid Response to Chromium vulnerabilities
 
 To help maintain a secure browsing environment, Microsoft Edge addresses Chromium engine-level vulnerabilities soon after the vulnerabilities are disclosed.
@@ -109,6 +101,14 @@ Applying browser policies on WebView2 would have unintended consequences.  For e
 #### WebView2-specific policies
 
 [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies) are available to for you<!--dev, or admin?--> to manage WebView2 directly.  However, we recommend that WebView2 app developers implement their own group policies to manage the use of WebView2, because it's easier for IT Admins to manage the app instead of managing WebView2 directly.
+
+
+<!-- ---------- -->
+###### Downgrading the WebView Runtime to an earlier version
+
+The Enterprise Downgrade feature is controlled via the `DowngradeVersion` policy.  Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 app to revert to using an earlier version of the WebView2 Runtime.  This policy is useful if there's a critical regression in the WebView2 app when using the latest version of the WebView2 Runtime.
+
+See [Downgrade the WebView2 Runtime to an earlier version](/deployedge/webview2-downgrade-runtime).
 
 
 <!-- ====================================================================== -->
