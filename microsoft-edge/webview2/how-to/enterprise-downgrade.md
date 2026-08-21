@@ -413,7 +413,7 @@ The following tools are for **troubleshooting issues** — they are not required
 | App still running on latest version | App not restarted. | Restart the WebView2 app (not the machine). |
 | Downgraded folder not appearing | Version is outside the "N-1 or N-2" range. | Verify that the target version is within the two most recent previous versions. |
 | App fails fast on launch (all apps sharing a User Data Folder (UDF)). | Shared UDF version mismatch. | Downgrade all apps that use the same UDF to the same version. |
-| Policy not taking effect. | Incorrect key path or value format. | Verify the HKLM path, the value name format (AUMID or `exe`), and four-part numeric format (such as 151.0.2178.0). |
+| Policy not taking effect. | Incorrect key path or value format. | Verify the HKEY_LOCAL_MACHINE (HKLM) path, the value name format (AUMID or `exe`), and the four-part numeric format (such as 151.0.2178.0). |
 | Multiple apps are impacted unexpectedly. | Shared User Data Folder | Identify User Data Folder (UDF) sharing, and make sure all affected apps are aligned. |
 | The downgrade auto-reverted unexpectedly. | Pinned version fell outside supported range | It is expected behavior, that the downgrade of the WebView2 Runtime expires after the Runtime version is no longer within version N-1 or N-2 (the two earlier versions of the Runtime). |
 
@@ -427,7 +427,7 @@ The following tools are for **troubleshooting issues** — they are not required
 
 Important: Do not delete registry keys directly.  Always use Group Policy (GPO) to disable the policy, to ensure clean removal and avoid orphaned configuration.
 
-If GPO was used to configure downgrade:
+If GPO was used to configure the downgrade:
 
 1. Open the Group Policy Editor (`gpedit.msc`).
 
