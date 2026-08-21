@@ -1,6 +1,6 @@
 ---
 title: Downgrade the WebView2 Runtime to an earlier version
-description: If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the DowngradeVersion policy, as a temporary solution.
+description: If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView2 Runtime for that app to a previous version, by using the DowngradeVersion policy, as a temporary solution.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -9,8 +9,9 @@ ms.subservice: webview
 ms.date: 08/19/2026
 ---
 # Downgrade the WebView2 Runtime to an earlier version
+<!-- https://learn.microsoft.com/microsoft-edge/webview2/how-to/enterprise-downgrade -->
 
-If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the `DowngradeVersion` policy, as a temporary solution.
+If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView2 Runtime for that app to a previous version, by using the `DowngradeVersion` policy, as a temporary solution.
 
 **Detailed contents:**
 * [Overview of enterprise downgrade](#overview-of-enterprise-downgrade)
@@ -41,7 +42,7 @@ If a new version of the WebView2 Runtime introduces a critical regression in a s
    * [Triggering a force-update](#triggering-a-force-update)
    * [Diagnostics tools for deeper troubleshooting](#diagnostics-tools-for-deeper-troubleshooting)
    * [Common issues and resolution](#common-issues-and-resolution)
-* [Reverting downgrading the WebView Runtime](#reverting-downgrading-the-webview-runtime)
+* [Reverting downgrading the WebView2 Runtime](#reverting-downgrading-the-webview2-runtime)
    * [Option 1: Disable group policy (recommended)](#option-1-disable-group-policy-recommended)
    * [Option 2: Remove the policy via the registry](#option-2-remove-the-policy-via-the-registry)
    * [Option 3: Automatic expiry](#option-3-automatic-expiry)
@@ -53,7 +54,7 @@ If a new version of the WebView2 Runtime introduces a critical regression in a s
 <!-- ====================================================================== -->
 ## Overview of enterprise downgrade
 
-In an enterprise, the IT Admin can downgrade the WebView Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a critical regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
+In an enterprise, the IT Admin can downgrade the WebView2 Runtime to a previous version, as a temporary measure, by using the `DowngradeVersion` policy.  When using the Evergreen Runtime, if a new Runtime version introduces a critical regression, each WebView2 app and each Windows component that uses the WebView2 Runtime is likely to be impacted.  Enterprise Downgrade offers a short-term mitigation approach for the IT Admin to restore impacted productivity.
 
 The `DowngradeVersion` policy is a controlled version downgrade capability that allows an enterprise IT Admin to temporarily revert a specific WebView2 application (WebView2 app) to use a previous version of the WebView2 Runtime via Group Policy when a critical regression disrupts business operations.  See [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
 
@@ -193,7 +194,7 @@ For targeted configuration on individual machines.  Requires local administrator
 
       * Set the value to the target full version string using the four-part numeric format (such as 151.0.2178.0).
 
-      * The IT Admin can find the exact four-part version number in the [Microsoft Edge release notes for Stable and Extended Stable Channels](/deployedge/microsoft-edge-relnote-stable-channel)
+      * The IT Admin can find the exact four-part version number in the [Microsoft Edge release notes for Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel).
 
       * **Example values:**
          * Name: `teams.exe`, Value: `151.0.2178.0`
@@ -418,7 +419,7 @@ The following tools are for **troubleshooting issues** — they are not required
 
 
 <!-- ====================================================================== -->
-## Reverting downgrading the WebView Runtime
+## Reverting downgrading the WebView2 Runtime
 
 
 <!-- ------------------------------ -->
@@ -474,7 +475,7 @@ The downgrade expires automatically when the pinned version is no longer within 
 
 | Action | What Happens |
 |---|---|
-| **Application restart** | The WebView2 app picks up the latest WebView Runtime during the next launch of the app. |
+| **Application restart** | The WebView2 app picks up the latest WebView2 Runtime during the next launch of the app. |
 | **BrowserExecutableFolder** | Automatically removed; the WebView2 app returns to using the default WebView2 Runtime path. |
 | **Downgraded Runtime bits** | Cleaned up by the updater on a scheduled cadence. |
 | **User data** | Remains in place; no automatic data migration occurs. |
@@ -486,15 +487,15 @@ The downgrade expires automatically when the pinned version is no longer within 
 | Aspect | Value |
 |---|---|
 | **Area Path:** | Edge\Web Experience\WebView2\Distribution |
-| **DL:** | [wv2addr@microsoft.com](mailto:wv2addr@microsoft.com) |
+| **DL:** | [wv2addr@microsoft.com](mailto:wv2addr@microsoft.com)<!-- todo: scrub email --> |
 
 **Escalation Path:**
 
-1. Enterprise Admin contacts Microsoft CSS.
+1. The Enterprise Admin contacts Microsoft CSS<!-- todo: expand css eg Customer Support and Service (CSS) -->.
 
-1. CSS troubleshoots using this guide.
+1. CSS troubleshoots the issue by using this article.
 
-1. If unresolved → CSS escalates to WebView2 Platform team ICM.
+1. If unresolved, CSS escalates the issue to the WebView2 Platform team ICM<!-- todo: expand ICM -->.
 
    Owning Service: Edge Browser customer incidents.
 
@@ -508,7 +509,10 @@ See also:
 ## See also
 <!-- all links in article -->
 
+<!-- Local: -->
 * [Enterprise management of WebView2 Runtimes](../concepts/enterprise.md)
-* [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
-* [Microsoft Edge release notes for Stable and Extended Stable Channels](/deployedge/microsoft-edge-relnote-stable-channel)
 * [Contact the WebView2 team](../contact.md)
+
+External:
+* [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
+* [Microsoft Edge release notes for Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel)
