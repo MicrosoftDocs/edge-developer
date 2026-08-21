@@ -42,7 +42,7 @@ If a new version of the WebView2 Runtime introduces a critical regression in a s
    * [Triggering a force-update](#triggering-a-force-update)
    * [Diagnostics tools for deeper troubleshooting](#diagnostics-tools-for-deeper-troubleshooting)
    * [Common issues and resolution](#common-issues-and-resolution)
-* [Reverting downgrading the WebView2 Runtime](#reverting-downgrading-the-webview2-runtime)
+* [Removing the downgrading of the WebView2 Runtime](#removing-the-downgrading-of-the-webview2-runtime)
    * [Option 1: Disable group policy (recommended)](#option-1-disable-group-policy-recommended)
    * [Option 2: Remove the policy via the registry](#option-2-remove-the-policy-via-the-registry)
    * [Option 3: Automatic expiry](#option-3-automatic-expiry)
@@ -486,7 +486,7 @@ The following tools are for **troubleshooting issues** — they are not required
 
 
 <!-- ====================================================================== -->
-## Reverting downgrading the WebView2 Runtime
+## Removing the downgrading of the WebView2 Runtime
 
 
 <!-- ------------------------------ -->
