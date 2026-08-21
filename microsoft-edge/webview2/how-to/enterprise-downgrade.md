@@ -214,7 +214,7 @@ Value: outlook.exe = "146"
 <!-- ------------------------------ -->
 #### Important notes
 
-* Only **HKLM** is supported (HKCU is ignored).
+* Only `HKEY_LOCAL_MACHINE` (HKLM) is supported; `HKEY_CURRENT_USER` (HKCU) is ignored.
 
 * The following values are not supported:
    * Major-only values (such as 151).
