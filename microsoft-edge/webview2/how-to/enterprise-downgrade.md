@@ -551,18 +551,15 @@ The downgrade expires automatically when the pinned version is no longer within 
 <!-- ====================================================================== -->
 ## Escalating and contacting the WebView2 team
 
-| Aspect | Value |
-|---|---|
-| **Area Path:** | Edge\Web Experience\WebView2\Distribution |
-| **DL:** | [wv2addr@microsoft.com](mailto:wv2addr@microsoft.com)<!-- todo: scrub email --> |
-
-**Escalation Path:**
+Escalation path:
 
 1. The Enterprise Admin contacts Microsoft CSS<!-- todo: expand css eg Customer Support and Service (CSS) -->.
 
 1. CSS troubleshoots the issue by using this article.
 
 1. If unresolved, CSS escalates the issue to the WebView2 Platform team ICM<!-- todo: expand ICM -->.
+
+   Area Path: `Edge\Web Experience\WebView2\Distribution`
 
    Owning Service: Edge Browser customer incidents.
 
