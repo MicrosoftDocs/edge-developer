@@ -6,39 +6,34 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/18/2026
+ms.date: 08/21/2026
 ---
 # Enterprise management of WebView2 Runtimes
 <!-- old title: # Manage WebView2 applications -->
 <!-- https://learn.microsoft.com/microsoft-edge/webview2/concepts/enterprise -->
 
-This article discusses how IT Administrators can manage<!-- todo: define --> WebView2 applications and the WebView2 Runtime.  A developer can integrate the WebView2 component into their app, and then deploy the self-updating Evergreen WebView2 Runtime (along with the app) onto user devices, to power the latest WebView2 features of the app and get the latest security improvements.
+IT Admins can use group policy objects (GPO) to configure policy settings for WebView2, to manage WebView2 applications and the WebView2 Runtime.  The following policies are relevant to WebView2.
+
+Many policies are about updating the WebView2 Runtime.  A developer can integrate the WebView2 component into their app, and then deploy the self-updating Evergreen WebView2 Runtime (along with the app) onto user devices, to power the latest WebView2 features of the app and get the latest security improvements.
 
 Feedback from IT Admins and developers is welcome, through the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 **Detailed contents:**
-* [Group policies for WebView2](#group-policies-for-webview2)
-   * [Update policies](#update-policies)
+* [Update policies](#update-policies)
    * [Suppressing WebView2 Runtime updates](#suppressing-webview2-runtime-updates)
       * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
       * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
       * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
-   * [Browser policies](#browser-policies)
-   * [WebView2-specific policies](#webview2-specific-policies)
-      * [Downgrading the WebView Runtime to an earlier version](#downgrading-the-webview-runtime-to-an-earlier-version)
+* [WebView2-specific policies](#webview2-specific-policies)
+   * [Downgrading the WebView Runtime to an earlier version](#downgrading-the-webview-runtime-to-an-earlier-version)
+* [Browser policies](#browser-policies)
 * [Windows Server Update Services (WSUS)](#windows-server-update-services-wsus)
    * [WebView2 deployment and update using Configuration Manager](#webview2-deployment-and-update-using-configuration-manager)
 * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
-## Group policies for WebView2
-
-IT Admins can use group policy objects (GPO) to configure policy settings for WebView2.  The following policies are relevant to WebView2.
-
-
-<!-- ------------------------------ -->
-#### Update policies
+## Update policies
 
 [Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies) are available for IT Admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  The policy applies to both Microsoft Edge and the WebView2 Runtime, unless the policy is channel-specific, such as [Update](/deployedge/microsoft-edge-update-policies#update) and [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview).
 
@@ -89,26 +84,26 @@ See:
 * [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle), in the Microsoft Edge Enterprise documentation.
 
 
-<!-- ------------------------------ -->
-#### Browser policies
+<!-- ====================================================================== -->
+## WebView2-specific policies
 
-[Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT Admins might not be aware of what applications use WebView2.  
-
-Applying browser policies on WebView2 would have unintended consequences.  For example, IT Admins can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
+[Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies) are available to IT Admins, to manage WebView2 directly.  Generally, we recommend that WebView2 app developers implement their own group policies to manage the use of WebView2, because it's easier for IT Admins to manage the app instead of managing WebView2 directly.
 
 
 <!-- ------------------------------ -->
-#### WebView2-specific policies
-
-[Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies) are available to for you<!--dev, or admin?--> to manage WebView2 directly.  However, we recommend that WebView2 app developers implement their own group policies to manage the use of WebView2, because it's easier for IT Admins to manage the app instead of managing WebView2 directly.
-
-
-<!-- ---------- -->
-###### Downgrading the WebView Runtime to an earlier version
+#### Downgrading the WebView Runtime to an earlier version
 
 The Enterprise Downgrade feature is controlled via the `DowngradeVersion` policy.  Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows a specific WebView2 app to revert to using an earlier version of the WebView2 Runtime.  This policy is useful if there's a critical regression in the WebView2 app when using the latest version of the WebView2 Runtime.
 
 See [Downgrade the WebView2 Runtime to an earlier version](/deployedge/webview2-downgrade-runtime).
+
+
+<!-- ====================================================================== -->
+## Browser policies
+
+[Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT Admins might not be aware of what applications use WebView2.  
+
+Applying browser policies on WebView2 would have unintended consequences.  For example, IT Admins can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
 
 
 <!-- ====================================================================== -->
