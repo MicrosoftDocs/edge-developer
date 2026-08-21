@@ -1,5 +1,5 @@
 ---
-title: Downgrade the WebView Runtime to an earlier version
+title: Downgrade the WebView2 Runtime to an earlier version
 description: If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the DowngradeVersion policy, as a temporary solution.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/19/2026
 ---
-# Downgrade the WebView Runtime to an earlier version
+# Downgrade the WebView2 Runtime to an earlier version
 
 If a new version of the WebView2 Runtime introduces a critical regression in a specific WebView2 app, an IT Admin can downgrade the WebView Runtime for that app to a previous version, by using the `DowngradeVersion` policy, as a temporary solution.
 

@@ -2360,7 +2360,7 @@
                   href: ./webview2/concepts/enterprise.md
                   displayName: Manage WebView2 applications  # old title
 
-                - name: Downgrade the WebView Runtime to an earlier version
+                - name: Downgrade the WebView2 Runtime to an earlier version
                   href: ./webview2/how-to/enterprise-downgrade.md
 
                 - name: Distribute an app as a single executable file
