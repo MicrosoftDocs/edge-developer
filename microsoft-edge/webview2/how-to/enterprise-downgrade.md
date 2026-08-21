@@ -106,9 +106,17 @@ The following types of WebView2 apps can be targeted:
 
    * The IT Admin specifies the target by either:
       * The Application User Model ID (AUMID), for packaged/MSIX apps.
-      * The executable name (such as `teams.exe`).
+      * The executable name (such as `ms-teams.exe`).
 
    * If both an AUMID and `.exe` name entry exist for the same WebView2 app, the AUMID entry takes precedence.
+
+To find the `.exe` name:
+
+1. Open Task Manager, and then on the left, select **Details**.
+
+1. Find the running WebView2 app.
+
+1. Examine the **Name** column for the WebView2 app, such as `ms-teams.exe` or `olk.exe`.
 
 The following types of WebView2 apps are not affected by the `DowngradeVersion` policy:
 
@@ -158,6 +166,65 @@ If both `DowngradeVersion` and `BrowserExecutableFolder` are independently confi
 
 
 <!-- ------------------------------ -->
+#### Updating the policy template
+
+To update the policy template:
+
+1. Go to [Download and deploy Microsoft Edge for Business](https://explore.microsoft.com/edge/business/download).
+
+1. In the **Download the latest** section, click one of the following buttons:
+
+   * Windows
+   * macOS
+   * Linux
+
+1. Click a **Download ... Policy** link, such as:
+
+   * **Download Windows 64-bit Policy**
+   * **Download Windows 32-bit Policy**
+   * **Download Windows ARM64 Policy**
+   * **Download macOS Universal Policy**
+   * **Download Linux (.rpm) Policy**
+   * **Download Linux (.deb) Policy**
+
+   The **Download Microsoft Edge Policy File** dialog opens.
+
+1. Click the **Accept and download** button.
+
+   A file is downloaded, such as `MicrosoftEdgePolicyTemplates.cab`.
+
+1. In Microsoft Edge, select **Settings and more** (**...**), select **Downloads**, and then for the downloaded file, click **Open containing folder**.
+
+   On Windows, File Explorer opens, with the file `MicrosoftEdgePolicyTemplates.cab` selected.
+
+1. Right-click `MicrosoftEdgePolicyTemplates.cab`, and then select **Open**.
+
+   `MicrosoftEdgePolicyTemplates.zip` appears.
+
+1. Right-click `MicrosoftEdgePolicyTemplates.zip`, and then select **Extract**.
+
+   The **Select a Destination** dialog opens.
+
+1. Select the directory such as `C:\Users\local-account\Downloads`, and then click the **Extract** button.
+
+   A folder is created, such as: `C:\Users\local-account\Downloads\MicrosoftEdgePolicyTemplates.zip`
+
+1. On the left, select `MicrosoftEdgePolicyTemplates.zip`, and then on the right, open the `/windows/` directory.
+
+   The folders `/adm/` and `/admx/` are listed.
+
+1. Copy the folders `/adm/` and `/admx/` to a `/PolicyDefinitions/` directory.  For example, for Windows, copy the `/adm/` and `/admx/` folders to `C:\Windows\PolicyDefinitions\`.
+
+   The **Destination Folder Access Denies** dialog opens, saying "You'll need to provide administrator permission to copy to this folder".
+
+1. Click the **Continue** button.
+
+   The **User Account Control** dialog opens.
+
+1. Enter admin credentials.
+
+
+<!-- ------------------------------ -->
 #### Option 1: Group Policy (GPO)
 
 This is the recommended approach for enterprise environments.  Group Policy ensures centralized, auditable management across managed devices.
@@ -170,7 +237,7 @@ This is the recommended approach for enterprise environments.  Group Policy ensu
 
 1. Enable the policy, and enter this information:
 
-   * **Name:** The application identifier (AUMID).  Or, the `.exe` name, such as `teams.exe`.
+   * **Name:** The application identifier (AUMID).  Or, the `.exe` name, such as `ms-teams.exe`.
 
    * **Value:** The target four-part version number (such as 151.0.2178.0).
 
@@ -188,7 +255,7 @@ For targeted configuration on individual machines.  Requires local administrator
 
 1. Inside the `DowngradeVersion` key, create a new `String Value (REG_SZ)`:
 
-   * **Value name:** The AUMID or executable name (such as `teams.exe`).
+   * **Value name:** The AUMID or executable name (such as `ms-teams.exe`).
 
    * **Value data:** The target major version number.
 
@@ -197,8 +264,8 @@ For targeted configuration on individual machines.  Requires local administrator
       * The IT Admin can find the exact four-part version number in the [Microsoft Edge release notes for Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel).
 
       * **Example values:**
-         * Name: `teams.exe`, Value: `151.0.2178.0`
-         * Name: `outlook.exe`, Value: `152.0.2164.0`
+         * Name: `ms-teams.exe`, Value: `151.0.2178.0`
+         * Name: `olk.exe`, Value: `152.0.2164.0`
 
 1. Restart the WebView2 app, for the policy to take effect.
 
@@ -206,8 +273,8 @@ For targeted configuration on individual machines.  Requires local administrator
 
 ```
 Key:   HKLM\Software\Policies\Microsoft\Edge\WebView2\DowngradeVersion
-Value: teams.exe = "145"
-Value: outlook.exe = "146"
+Value: ms-teams.exe = "151.0.2178.0"
+Value: olk.exe = "152.0.2164.0"
 ```
 
 
@@ -225,7 +292,7 @@ Value: outlook.exe = "146"
 
   If no exact matching folder is found, the policy has no effect, and the Runtime defaults to the `BrowserExecutableFolder` policy or the Evergreen Runtime (the default auto-updating Runtime).
 
-* The updater<!-- todo: Edge Updater? --> will **automatically download** the required version if it satisfies the N-1 and/or N-2 conditions.  The IT Admin doesn't need to pre-stage version folders on disk.
+* The Edge Updater will **automatically download** the required version if it satisfies the N-1 and/or N-2 conditions.  The IT Admin doesn't need to pre-stage version folders on disk.
 
 * No restart of the machine is needed, but the WebView2 app must be restarted, and it might take up to 1 hour for the downgrade to take effect.
 
@@ -242,17 +309,17 @@ Value: outlook.exe = "146"
 
 1. The IT Admin sets policy by using Group Policy, specifying the `AppId` and `TargetVersion`.
 
-1. The Updater<!-- todo: Edge Updater? --> reads the policy, and validates that `TargetVersion` is within N-1 or N-2.
+1. The Edge Updater reads the policy, and validates that `TargetVersion` is within N-1 or N-2.
 
-1. Downloads<!-- todo: who is the actor? the WebView2 app? --> the downgraded version of the WebView2 Runtime, if needed, as a side-by-side install.
+1. The Edge Updater downloads the downgraded version of the WebView2 Runtime, if needed, as a side-by-side install.
 
-1. Sets<!-- todo: who is the actor? --> `BrowserExecutableFolder` policy for the target app to redirect it to the specified Runtime version.
+1. The Edge Updater sets `BrowserExecutableFolder` policy for the target app, to redirect it to the specified version of the WebView2 Runtime.
 
-1. Maintains<!-- todo: who is the actor? --> mapping as long as the downgraded version stays within the supported range.
+1. The Edge Updater maintains the mapping as long as the downgraded version of the WebView2 Runtime stays within the supported range.
 
-1. Cleans up<!-- todo: who is the actor? --> and reverts the app to the latest Runtime version when the pinned Runtime version falls outside of the supported range or the policy is removed.
+1. When the pinned version of the WebView2 Runtime falls outside of the supported range, or the policy is removed, the Edge Updater cleans up and reverts the WebView2 app to using the latest version of the WebView2 Runtime.
 
-If a WebView2 Runtime downgrade policy is active but the target WebView2 Runtime version is not yet downloaded (such as due to network or disk constraints), the WebView2 app continues running on the currently available WebView2 Runtime until the earlier WebView2 Runtime is present.  The WebView2 app will _not_ fail to launch solely because the downgraded version of the WebView2 Runtime is pending download.
+If a WebView2 Runtime downgrade policy is active, but the target WebView2 Runtime version is not yet downloaded (such as due to network or disk constraints), the WebView2 app continues using the latest WebView2 Runtime, until the earlier WebView2 Runtime is present.  The WebView2 app will _not_ fail to launch solely because the downgraded version of the WebView2 Runtime is pending download.
 
 
 <!-- ====================================================================== -->
@@ -352,9 +419,9 @@ After setting the WebView2 Runtime downgrade policy and restarting the target We
 
 1. In File Explorer, navigate to: `C:\Program Files (x86)\Microsoft\EdgeWebView\Application\`
 
-1. Confirm that a new folder appears, matching the downgraded version (such as `145.x.xxxx.xx`).
+1. Confirm that a new folder appears, matching the downgraded version (such as `150.0.2178.0`).
 
-   The presence of this versioned folder indicates that the updater has fetched and staged the downgraded WebView2 Runtime.
+   The presence of this versioned folder indicates that the Edge Updater has fetched and staged the downgraded WebView2 Runtime.
 
 
 <!-- ---------- -->
@@ -413,7 +480,7 @@ The following tools are for **troubleshooting issues** — they are not required
 | App still running on latest version | App not restarted. | Restart the WebView2 app (not the machine). |
 | Downgraded folder not appearing | Version is outside the "N-1 or N-2" range. | Verify that the target version is within the two most recent previous versions. |
 | App fails fast on launch (all apps sharing a User Data Folder (UDF)). | Shared UDF version mismatch. | Downgrade all apps that use the same UDF to the same version. |
-| Policy not taking effect. | Incorrect key path or value format. | Verify the HKEY_LOCAL_MACHINE (HKLM) path, the value name format (AUMID or `exe`), and the four-part numeric format (such as 151.0.2178.0). |
+| Policy not taking effect. | Incorrect key path or value format. | Verify the HKEY_LOCAL_MACHINE (HKLM) path, the value name format (AUMID or `.exe`), and the four-part numeric format (such as 151.0.2178.0). |
 | Multiple apps are impacted unexpectedly. | Shared User Data Folder | Identify User Data Folder (UDF) sharing, and make sure all affected apps are aligned. |
 | The downgrade auto-reverted unexpectedly. | Pinned version fell outside supported range | It is expected behavior, that the downgrade of the WebView2 Runtime expires after the Runtime version is no longer within version N-1 or N-2 (the two earlier versions of the Runtime). |
 
@@ -451,7 +518,7 @@ If the policy was originally set directly via Registry (not recommended in produ
 
 1. Navigate to: `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\WebView2\DowngradeVersion`
 
-1. Delete the specific value (such as`teams.exe`).
+1. Delete the specific value (such as`ms-teams.exe`).
 
 1. Restart the WebView2 app.
 
@@ -463,7 +530,7 @@ The downgrade expires automatically when the pinned version is no longer within 
 
 * **Trigger:** Two subsequent new Evergreen versions release beyond the pinned version.
 
-* **Behavior:** The updater automatically reverts applicable apps to the latest Runtime.
+* **Behavior:** The Edge Updater automatically reverts applicable apps to the latest Runtime.
 
 * **Admin action required:** Remove the stale policy once it auto-expires.
 
@@ -477,7 +544,7 @@ The downgrade expires automatically when the pinned version is no longer within 
 |---|---|
 | **Application restart** | The WebView2 app picks up the latest WebView2 Runtime during the next launch of the app. |
 | **BrowserExecutableFolder** | Automatically removed; the WebView2 app returns to using the default WebView2 Runtime path. |
-| **Downgraded Runtime bits** | Cleaned up by the updater on a scheduled cadence. |
+| **Downgraded Runtime bits** | Cleaned up by the Edge Updater on a scheduled cadence. |
 | **User data** | Remains in place; no automatic data migration occurs. |
 
 
