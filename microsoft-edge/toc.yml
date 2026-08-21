@@ -2357,11 +2357,8 @@
                   href: ./webview2/concepts/distribution.md
 
                 - name: Enterprise management of WebView2 Runtimes
-                  href: ./webview2/concepts/enterprise.md
+                  href: ./webview2/concepts/enterprise.md  # todo: move to Admin docs repo per AB#63688884
                   displayName: Manage WebView2 applications  # old title
-
-                - name: Downgrade the WebView2 Runtime to an earlier version
-                  href: ./webview2/how-to/enterprise-downgrade.md
 
                 - name: Distribute an app as a single executable file
                   href: ./webview2/how-to/static.md
