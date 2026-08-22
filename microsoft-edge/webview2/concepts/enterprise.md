@@ -19,7 +19,7 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
 **Detailed contents:**
 * [Update policies](#update-policies)
    * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
-   * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
+   * [Rapid response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
    * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
    * [Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)](#suppressing-webview2-runtime-updates-updatessuppressed)
 * [WebView2-specific policies](#webview2-specific-policies)
@@ -63,12 +63,11 @@ For details about security fixes in Microsoft Edge (which also apply to WebView2
 
 
 <!-- ------------------------------ -->
-#### Rapid Response to Chromium vulnerabilities
+#### Rapid response to Chromium vulnerabilities
 
 To help maintain a secure browsing environment, Microsoft Edge addresses vulnerabilities in the Chromium browser engine soon after the vulnerabilities are disclosed.
 
 Security fixes in the Chromium browser engine address vulnerabilities such as:
-
 * **Remote code execution** – Mitigates risks of arbitrary code execution via malicious content.
 * **Privilege escalation** – Reduces chances of unauthorized system access.
 * **Information disclosure and spoofing** – Protects sensitive data, and helps prevent phishing attacks.
