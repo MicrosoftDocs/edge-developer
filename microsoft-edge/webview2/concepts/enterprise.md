@@ -18,10 +18,10 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
 
 **Detailed contents:**
 * [Update policies](#update-policies)
-   * [Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)](#suppressing-webview2-runtime-updates-updatessuppressed)
    * [Evergreen Runtime is recommended, rather than a fixed version](#evergreen-runtime-is-recommended-rather-than-a-fixed-version)
    * [Rapid Response to Chromium vulnerabilities](#rapid-response-to-chromium-vulnerabilities)
    * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
+   * [Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)](#suppressing-webview2-runtime-updates-updatessuppressed)
 * [WebView2-specific policies](#webview2-specific-policies)
    * [Downgrading the WebView Runtime to an earlier version (`DowngradeVersion`)](#downgrading-the-webview-runtime-to-an-earlier-version-downgradeversion)
 * [Browser policies vs. WebView2 policies](#browser-policies-vs-webview2-policies)
@@ -37,14 +37,6 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
 [Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies) are available for IT Admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  The policy applies to both Microsoft Edge and the WebView2 Runtime, unless the policy is channel-specific, such as [Update](/deployedge/microsoft-edge-update-policies#update) and [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview).
 
 To configure update policies for Microsoft Edge (and the WebView2 Runtime), see [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge), in the Microsoft Edge Enterprise documentation.
-
-
-<!-- ------------------------------ -->
-#### Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)
-
-An IT Admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT Admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT Admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
-
-However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
 
 
 <!-- ------------------------------ -->
@@ -81,6 +73,14 @@ Microsoft WebView2 follows the Modern Lifecycle Policy.
 See also:
 * [Modern Lifecycle Policy](/lifecycle/policies/modern), in the Modern Lifecycle Policy documentation.
 * [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle), in the Microsoft Edge Enterprise documentation.
+
+
+<!-- ------------------------------ -->
+#### Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)
+
+An IT Admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT Admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT Admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
+
+However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
 
 
 <!-- ====================================================================== -->
