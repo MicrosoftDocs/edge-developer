@@ -34,9 +34,17 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
 <!-- ====================================================================== -->
 ## Update policies
 
-[Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies) are available for IT Admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  The policy applies to both Microsoft Edge and the WebView2 Runtime, unless the policy is channel-specific, such as [Update](/deployedge/microsoft-edge-update-policies#update) and [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview).
+Microsoft Edge update policies are available for IT Admins to manage the installing and updating aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.
 
-To configure update policies for Microsoft Edge (and the WebView2 Runtime), see [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge), in the Microsoft Edge Enterprise documentation.
+A Microsoft Edge update policy applies to both Microsoft Edge and the WebView2 Runtime, unless the policy is channel-specific, such as:
+* [Update](/deployedge/microsoft-edge-update-policies#update), in _Microsoft Edge - Update policies_.
+* [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview), in _Microsoft Edge - Update policies_.
+
+To configure update policies for Microsoft Edge and the WebView2 Runtime, see:
+* [Configure Microsoft Edge policy settings on Windows devices](/deployedge/configure-microsoft-edge), in the Microsoft Edge Enterprise documentation.
+
+See:
+* [Microsoft Edge - Update policies](/deployedge/microsoft-edge-update-policies), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
@@ -47,9 +55,10 @@ Using the Evergreen WebView2 Runtime is recommended, unless business-critical re
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
 
-For details about security fixes in Microsoft Edge (which apply to WebView2 as well), see [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
+For details about security fixes in Microsoft Edge (which also apply to WebView2), see:
+* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
 
-See also:
+See:
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 
 
@@ -70,7 +79,7 @@ Security fixes in the Chromium browser engine address vulnerabilities such as:
 
 Microsoft WebView2 follows the Modern Lifecycle Policy.
 
-See also:
+See:
 * [Modern Lifecycle Policy](/lifecycle/policies/modern), in the Modern Lifecycle Policy documentation.
 * [Microsoft Edge Lifecycle Policy](/deployedge/microsoft-edge-support-lifecycle), in the Microsoft Edge Enterprise documentation.
 
@@ -78,9 +87,12 @@ See also:
 <!-- ------------------------------ -->
 #### Suppressing WebView2 Runtime updates (`UpdatesSuppressed`)
 
-An IT Admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed) policy allows an IT Admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT Admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
+An IT Admin can suppress updating of the WebView2 Runtime, if auto-updating needs to be suppressed for a short time.  After the time period, updating of the WebView2 Runtime resumes.  The `UpdatesSuppressed` policy allows an IT Admin to set the time during each day at which to suppress auto-update for both Microsoft Edge and the WebView2 Runtime.  This enables an IT Admin to configure preferences and proxies once for both the browser and the WebView2 Runtime, to control their network bandwidth and traffic, or for other purposes.
 
 However, users should not stop updating their WebView2 Runtime; users should not remain on an older version of the WebView2 Runtime.  Using older versions of the WebView2 Runtime isn't recommended.  Security updates and servicing updates are only available on the latest Stable channel release (Edge Stable) and the latest Beta channel release (Edge Beta).  If you use older releases of the Microsoft WebView2 Runtime, you won't receive the latest quality and security updates.
+
+See:
+* [UpdatesSuppressed](/deployedge/microsoft-edge-update-policies#updatessuppressed), in _Microsoft Edge - Update policies_.
 
 
 <!-- ====================================================================== -->
@@ -88,7 +100,7 @@ However, users should not stop updating their WebView2 Runtime; users should not
 
 Policies that are specific to the WebView2 Runtime are available to the IT Admin, to manage the WebView2 Runtime directly.  However, we recommend that the WebView2 app developer implement their own group policies to manage the use of the WebView2 Runtime, because it's easier for the IT Admin to manage a WebView2 app, rather than managing the WebView2 Runtime directly.
 
-See also:
+See:
 * [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies), in the Microsoft Edge Enterprise documentation.
 
 
@@ -99,7 +111,7 @@ Enterprise Downgrade is a temporary, IT Admin-controlled capability that allows 
 
 The Enterprise Downgrade feature is controlled via the `DowngradeVersion` policy.
 
-See also:
+See:
 * [Downgrade the WebView2 Runtime to an earlier version](/deployedge/webview2-downgrade-runtime), in the Microsoft Edge Enterprise documentation.
 * [DowngradeVersion](/deployedge/microsoft-edge-webview-policies#downgradeversion) in _Microsoft Edge WebView2 - Policies_.
 
@@ -111,7 +123,7 @@ Browser policies are separate from WebView2 policies.  Policies for Microsoft Ed
 
 Applying browser policies on the WebView2 Runtime would have unintended consequences.  For example, the IT Admin can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
 
-See also:
+See:
 * [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies), in the Microsoft Edge Enterprise documentation.
 * [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies), in the Microsoft Edge Enterprise documentation.
 
@@ -121,7 +133,8 @@ See also:
 
 Windows Server Update Services (WSUS) enables IT Admins to deploy the latest Microsoft product updates. You can use WSUS to fully manage the distribution of updates of WebView2 that are released through Microsoft Update<!-- todo: "Microsoft Update" vs. "Microsoft Edge updater" --> to computers on your network.
 
-See [Windows Server Update Services (WSUS) overview](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
+See:
+* [Windows Server Update Services (WSUS) overview](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 
 The recommended way of receiving WebView2 updates is by using the default Microsoft Edge updater<!-- todo: "Microsoft Update" vs. "Microsoft Edge updater" -->.  Any modification of update and servicing paths should be done with caution.
 
@@ -132,7 +145,8 @@ The recommended way of receiving WebView2 updates is by using the default Micros
 
 In Configuration Manager, WebView2 options exist under the **Microsoft Edge Management** node.
 
-See [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update-microsoft-edge) in _Microsoft Edge Management_, in the App management documentation.
+See:
+* [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update-microsoft-edge) in _Microsoft Edge Management_, in the App management documentation.
 
 
 <!-- ====================================================================== -->
