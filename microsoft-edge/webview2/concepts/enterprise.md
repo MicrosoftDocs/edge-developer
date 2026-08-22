@@ -24,7 +24,7 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
    * [Microsoft Edge Lifecycle Policy](#microsoft-edge-lifecycle-policy)
 * [WebView2-specific policies](#webview2-specific-policies)
    * [Downgrading the WebView Runtime to an earlier version (`DowngradeVersion`)](#downgrading-the-webview-runtime-to-an-earlier-version-downgradeversion)
-* [Browser policies](#browser-policies)
+* [Browser policies vs. WebView2 policies](#browser-policies-vs-webview2-policies)
 * [Windows Server Update Services (WSUS)](#windows-server-update-services-wsus)
    * [WebView2 deployment and update using Configuration Manager](#webview2-deployment-and-update-using-configuration-manager)
 * [Feedback](#feedback)
@@ -105,11 +105,15 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Browser policies
+## Browser policies vs. WebView2 policies
 
-[Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT Admins might not be aware of what applications use WebView2.  
+Browser policies are separate from WebView2 policies.  Policies for Microsoft Edge don't apply to the WebView2 Runtime and WebView2 apps.  This is by design, because apps and browsers have different use cases, and an IT Admin might not know which apps use WebView2.
 
-Applying browser policies on WebView2 would have unintended consequences.  For example, IT Admins can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
+Applying browser policies on the WebView2 Runtime would have unintended consequences.  For example, the IT Admin can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
+
+See also:
+* [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies), in the Microsoft Edge Enterprise documentation.
+* [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ====================================================================== -->
