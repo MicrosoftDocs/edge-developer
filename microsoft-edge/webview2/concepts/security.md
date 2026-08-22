@@ -134,3 +134,6 @@ See also:
 ## See also
 
 * [Development best practices for WebView2 apps](./developer-guide.md)
+
+Microsoft Edge Enterprise documentation:
+* [Prevent security tools from blocking WebView2-hosted apps](/deployedge/webview2-security-tools)

@@ -2374,9 +2374,6 @@
 
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
-
-            - name: Prevent security tools from blocking WebView2-hosted apps
-              href: ./webview2/concepts/measures.md
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps
           items:
