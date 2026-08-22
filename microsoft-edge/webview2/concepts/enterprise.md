@@ -55,11 +55,11 @@ Using the Evergreen WebView2 Runtime is recommended, unless business-critical re
 * Ensures timely security improvements.
 * Ensures that WebView2 benefits from continuous security updates that are delivered through Microsoft Edge releases.
 
-For details about security fixes in Microsoft Edge (which also apply to WebView2), see:
-* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
-
 See:
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
+
+For details about security fixes in Microsoft Edge (which also apply to WebView2), see:
+* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
@@ -72,6 +72,9 @@ Security fixes in the Chromium browser engine address vulnerabilities such as:
 * **Remote code execution** – Mitigates risks of arbitrary code execution via malicious content.
 * **Privilege escalation** – Reduces chances of unauthorized system access.
 * **Information disclosure and spoofing** – Protects sensitive data, and helps prevent phishing attacks.
+
+For details about security fixes in Microsoft Edge (which also apply to WebView2), see:
+* [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security), in the Microsoft Edge Enterprise documentation.
 
 
 <!-- ------------------------------ -->
