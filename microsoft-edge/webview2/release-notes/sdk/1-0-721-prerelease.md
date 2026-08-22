@@ -27,7 +27,7 @@ This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 <!-- ------------------------------ -->
 #### Features
 
-* Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [Enterprise management of WebView2 Runtimes](/deployedge/webview2-enterprise.md), in the Microsoft Edge Enterprise documentation.
+* Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [Enterprise management of WebView2](/deployedge/webview2-enterprise.md), in the Microsoft Edge Enterprise documentation.
 
 * > [!IMPORTANT]
    > **Breaking Change**: Deprecated the old registry location.

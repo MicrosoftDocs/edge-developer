@@ -23,7 +23,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 <!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-See [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -368,7 +368,7 @@ Microsoft Edge Enterprise documentation:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- link not in article body -->
 * [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel)
 * [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security)
-* [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+* [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 developer.microsoft.com:
 * [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - Developers.
