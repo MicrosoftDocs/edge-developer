@@ -23,7 +23,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 <!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 
 
 <!-- ------------------------------ -->
@@ -359,16 +359,16 @@ Example managed app folder structure:
 * [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
-* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
 * [Distribute a WebView2 app as a single executable file](../how-to/static.md) - statically linking the WebView2 loader library.
 
-Enterprise docs:
+Microsoft Edge Enterprise documentation:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- link not in article body -->
 * [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel)
 * [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security)
+* [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 
 developer.microsoft.com:
 * [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - Developers.
