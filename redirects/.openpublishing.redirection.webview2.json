@@ -41,6 +41,11 @@
       "redirect_url": "/deployedge/webview2-enterprise",
       "redirect_document_id": false
     },
+    {
+      "source_path": "../microsoft-edge/webview2/concepts/measures.md",
+      "redirect_url": "/deployedge/webview2-security-tools",
+      "redirect_document_id": false
+    },
     // /Concepts
     // ======================================================================
     // Getting started
