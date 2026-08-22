@@ -27,7 +27,7 @@ Many policies are about updating the WebView2 Runtime.  A developer can integrat
 * [Browser policies vs. WebView2 policies](#browser-policies-vs-webview2-policies)
 * [Windows Server Update Services (WSUS)](#windows-server-update-services-wsus)
    * [WebView2 deployment and update using Configuration Manager](#webview2-deployment-and-update-using-configuration-manager)
-* [Feedback](#feedback)
+* [Providing feedback](#providing-feedback)
 * [See also](#see-also)
 
 
@@ -136,7 +136,7 @@ See [Update Microsoft Edge](/intune/configmgr/apps/deploy-use/deploy-edge#update
 
 
 <!-- ====================================================================== -->
-## Feedback
+## Providing feedback
 
 Feedback from IT Admins and developers is welcome, through the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
@@ -149,7 +149,6 @@ See also:
 <!-- all links in article -->
 
 * [Distribute your app and the WebView2 Runtime](./distribution.md) - Evergreen vs. fixed version of the WebView2 Runtime.
-* [Downgrade the WebView2 Runtime to an earlier version](../how-to/enterprise-downgrade.md)
 * [Contact the WebView2 team](../contact.md)
 
 <!-- toc order -->
