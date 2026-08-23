@@ -2357,7 +2357,7 @@
                   href: ./webview2/concepts/distribution.md
 
                 - name: Enterprise management of WebView2 Runtimes
-                  href: ./webview2/concepts/enterprise.md  # todo: move to Admin docs repo per AB#63688884
+                  href: ./webview2/concepts/enterprise.md
                   displayName: Manage WebView2 applications  # old title
 
                 - name: Distribute an app as a single executable file
