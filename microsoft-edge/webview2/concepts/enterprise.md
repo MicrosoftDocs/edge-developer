@@ -1,5 +1,5 @@
 ---
-title: Enterprise management of WebView2 Runtimes
+title: Enterprise management of WebView2
 description: How IT Administrators can manage WebView2 applications and the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/21/2026
 ---
-# Enterprise management of WebView2 Runtimes
+# Enterprise management of WebView2
 <!-- old title: # Manage WebView2 applications -->
 <!-- https://learn.microsoft.com/microsoft-edge/webview2/concepts/enterprise -->
 
@@ -100,7 +100,7 @@ See:
 <!-- ====================================================================== -->
 ## WebView2-specific policies
 
-Policies that are specific to the WebView2 Runtime are available to the IT Admin, to manage the WebView2 Runtime directly.  However, we recommend that the WebView2 app developer implement their own group policies to manage the use of the WebView2 Runtime, because it's easier for the IT Admin to manage a WebView2 app, rather than managing the WebView2 Runtime directly.
+Policies that are specific to the WebView2 Runtime are available to the IT Admin, to manage the WebView2 Runtime directly.  In most cases, we recommend that the WebView2 app developer implement their own group policies to manage the use of the WebView2 Runtime, because it's easier for the IT Admin to manage a WebView2 _app_, rather than managing the WebView2 _Runtime_ directly.
 
 See:
 * [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies), in the Microsoft Edge Enterprise documentation.

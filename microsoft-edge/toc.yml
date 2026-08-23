@@ -2356,7 +2356,7 @@
                 - name: Distribute your app and the WebView2 Runtime
                   href: ./webview2/concepts/distribution.md
 
-                - name: Enterprise management of WebView2 Runtimes
+                - name: Enterprise management of WebView2
                   href: ./webview2/concepts/enterprise.md
                   displayName: Manage WebView2 applications  # old title
 
