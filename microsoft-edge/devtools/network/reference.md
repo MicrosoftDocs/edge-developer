@@ -387,7 +387,7 @@ To create a custom throttling profile:
    A warning (![Throttling warning icon](./reference-images/throttling-warning-icon.png)) icon is displayed in the **Network** tab, to remind you that throttling is enabled.
 
 See also:
-* [Set up custom network throttling profile](../settings/throttling.md#set-up-a-custom-network-throttling-profile) in _Throttling_.
+* [Set up custom network throttling profile](../settings/throttling.md#set-up-a-custom-network-throttling-profile) in _Throttling the CPU or network_.
 
 
 <!-- ---------- -->

@@ -1,5 +1,5 @@
 ---
-title: Throttling
+title: Throttling the CPU or network
 description: The Throttling page of DevTools Settings, to control and customize network and CPU speed settings.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,8 +21,8 @@ ms.date: 06/12/2025
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Throttling
-<!-- https://developer.chrome.com/docs/devtools/settings/throttling -->
+# Throttling the CPU or network
+<!-- Throttling  https://developer.chrome.com/docs/devtools/settings/throttling -->
 
 In the **Throttling** page of **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) > **Settings**, you can:
 
