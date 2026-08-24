@@ -38,6 +38,7 @@ For a step-by-step walkthrough and introduction to the **Network** tool, see [In
    * [Save requests across page loads](#save-requests-across-page-loads)
    * [Capture screenshots during page load](#capture-screenshots-during-page-load)
    * [Resend a request](#resend-a-request)
+   * [Edit and resend a request as a fetch call](#edit-and-resend-a-request-as-a-fetch-call)
 * [Change loading behavior](#change-loading-behavior)
    * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
       * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
@@ -245,6 +246,32 @@ For information about initiators, see:
 DevTools resends XHR requests as XHR.  DevTools converts other supported request types to Fetch requests before sending them.
 
 After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+
+
+<!-- ------------------------------ -->
+#### Edit and resend a request as a fetch call
+
+Use the **Edit and resend as fetch** command to copy a network request as a `fetch()` call into the **Console** tool, where you can modify and send it:
+
+The command is available for XHR, Fetch, document, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, source map, prefetch, and ping requests.
+
+1. In the **Network** tool's **Requests** table, right-click the request that you want to modify, and then select **Edit and resend as fetch**.
+
+   The **Console** tool opens in the **Drawer**.  An editable `fetch()` call that reproduces the request is added to the Console prompt.  The generated code includes comments that identify the original request and its execution context.  A message above the generated code links to the original request in the **Network** tool.
+
+   > [!NOTE]
+   > Only one request can be pending in the Console prompt at a time.  If you select **Edit and resend as fetch** for another request, the new `fetch()` call replaces the current Console prompt without displaying a warning.
+
+1. If the generated comment directs you to select an execution context, use the execution context dropdown list in the **Console** toolbar to select the original context.
+
+1. Modify the URL, method, headers, or body in the generated `fetch()` call.
+
+   Some request headers that a `fetch()` call isn't allowed to set are preserved as comments.
+
+1. Press **Enter** to send the modified request.
+
+The new request is displayed in the **Network** tool's **Requests** table.  A terminal icon in the **Name** column identifies the request as originating from the Console.
+
 
 <!-- ====================================================================== -->
 ## Change loading behavior
