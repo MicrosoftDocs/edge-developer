@@ -898,6 +898,8 @@ Right-click the header of the **Requests** table and select a column name to hid
 
 ![Adding a column to the **Requests** table](./reference-images/requests-add-column.png)
 
+The **Execution context** column shows the execution context from which each request was sent.
+
 
 <!-- ---------- -->
 ###### Add custom columns for response headers
