@@ -255,6 +255,8 @@ Use the **Edit and resend as fetch** command to copy a network request as a `fet
 
 The command is available for XHR, Fetch, document, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, source map, prefetch, and ping requests.
 
+The optional **Execution context** column in the **Requests** table shows the execution context from which each request was sent.
+
 1. In the **Network** tool's **Requests** table, right-click the request that you want to modify, and then select **Edit and resend as fetch**.
 
    The **Console** tool opens in the **Drawer**.  An editable `fetch()` call that reproduces the request is added to the Console prompt.  The generated code includes comments that identify the original request and its execution context.  A message above the generated code links to the original request in the **Network** tool.
@@ -897,9 +899,6 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 Right-click the header of the **Requests** table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
 ![Adding a column to the **Requests** table](./reference-images/requests-add-column.png)
-
-The **Execution context** column shows the execution context from which each request was sent.
-
 
 <!-- ---------- -->
 ###### Add custom columns for response headers
