@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/25/2026
+ms.date: 08/24/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -37,7 +37,7 @@ For a step-by-step walkthrough and introduction to the **Network** tool, see [In
    * [Clear requests](#clear-requests)
    * [Save requests across page loads](#save-requests-across-page-loads)
    * [Capture screenshots during page load](#capture-screenshots-during-page-load)
-   * [Replay XHR request](#replay-xhr-request)
+   * [Resend a request](#resend-a-request)
 * [Change loading behavior](#change-loading-behavior)
    * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
       * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
@@ -207,10 +207,11 @@ To capture a screenshot:
 
 
 <!-- ------------------------------ -->
-#### Replay XHR request
-<!-- https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
+#### Resend a request
 
-To replay an XHR request:
+Use the **Resend** command to send a network request again without reloading the webpage.  You can resend XHR requests and other supported request types, including Fetch, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, and source map requests.
+
+To resend a request:
 
 1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
@@ -231,20 +232,19 @@ To replay an XHR request:
 
    In the **Network** tool's **Requests** table, a `data.json` row is added.  The **Initiator** column reads `script.js:20`.
 
-1. In the **Requests** table, right-click the `data.json` request, and then select **Replay XHR**.<!-- no "Replay fetch" menuitem -->
+1. In the **Requests** table, right-click the `data.json` request, and then select **Resend**.
 
    Or, select the request, and then press **R**.
 
    In the **Network** tool's **Requests** table, a second `data.json` row is added.  The **Initiator** column reads **Other**:
 
-   ![Click Replay XHR](./reference-images/selecting-replay-xhr.png)
-
 For information about initiators, see:
 * [Display initiators and dependencies](#display-initiators-and-dependencies), below.
 * [Log network activity](./index.md#log-network-activity) in _Inspect network activity_.
 
-After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+DevTools resends XHR requests as XHR.  DevTools converts other supported request types to Fetch requests before sending them.
 
+After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
 
 <!-- ====================================================================== -->
 ## Change loading behavior
@@ -1639,7 +1639,7 @@ To copy a single request, its response, or its stack trace:
 | **Copy as fetch** | Copy the request as a fetch call. |
 | **Copy as fetch (Node.js)** | Copy the request as a Node.js fetch call. |
 | **Copy response** | Copy the response body to the clipboard. |
-| **Copy stack trace** | Copy the request's stack trace to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests.  See [Replay XHR request](#replay-xhr-request), above. |
+| **Copy stack trace** | Copy the request's stack trace to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests.  See [Resend a request](#resend-a-request), above. |
 
 To copy all requests:
 
