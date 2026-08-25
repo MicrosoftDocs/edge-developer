@@ -10,10 +10,10 @@ import { execSync } from 'child_process';
 // If the number of days before the next Beta is lower or equal to DAYS_NUMBER_BEFORE_RELNOTES_NOTICE
 // then we start generating the Beta release notes.
 // This gives us time to edit, review, and publish the Beta release notes before Beta comes out.
-// This number used to be 15, which was too much because features were still moving in and out of
-// the next Beta milestone on chromestatus.com.
-// The number is now set to 7 days, which should reduce the number of last-minute changes we need to do.
-const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 7;
+// This number is currently set to 5, which doesn't give us a lot of time to review the new Beta
+// release notes, but setting it to a higher number would mean generating the release notes very
+// early within the Beta cycle.
+const DAYS_NUMBER_BEFORE_RELNOTES_NOTICE = 5;
 
 // Where to find Edge-only origin trials info.
 const EDGE_OT_ROOT = "https://developer.microsoft.com/en-us";
