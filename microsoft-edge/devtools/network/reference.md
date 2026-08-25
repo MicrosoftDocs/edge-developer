@@ -255,6 +255,8 @@ Use the **Edit and resend as fetch** command to copy a network request as a `fet
 
 The command is available for XHR, Fetch, document, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, source map, prefetch, and ping requests.
 
+Unlike the **Resend** command, which resends an XHR request as XHR, **Edit and resend as fetch** converts XHR and all other supported request types to `fetch()` calls.
+
 The optional **Execution context** column in the **Requests** table shows the execution context from which each request was sent.
 
 1. In the **Network** tool's **Requests** table, right-click the request that you want to modify, and then select **Edit and resend as fetch**.
