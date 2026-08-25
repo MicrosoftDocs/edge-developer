@@ -239,6 +239,8 @@ To resend a request:
 
    In the **Network** tool's **Requests** table, a second `data.json` row is added.  The **Initiator** column reads **Other**:
 
+   ![The resent XHR request in the Requests table](./reference-images/selecting-replay-xhr.png)
+
 For information about initiators, see:
 * [Display initiators and dependencies](#display-initiators-and-dependencies), below.
 * [Log network activity](./index.md#log-network-activity) in _Inspect network activity_.
