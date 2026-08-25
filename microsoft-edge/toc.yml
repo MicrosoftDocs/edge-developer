@@ -33,6 +33,11 @@
           # maint:
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+
+        - name: Microsoft Edge 153
+          href: ./web-platform/release-notes/153.md
+          displayName: Microsoft Edge 153 web platform release notes (Sep. 2026)  # page title
+
         - name: Microsoft Edge 152
           href: ./web-platform/release-notes/152.md
           displayName: Microsoft Edge 152 web platform release notes (Aug. 2026)  # page title
@@ -69,12 +74,13 @@
           href: ./web-platform/release-notes/144.md
           displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
 
-        - name: Microsoft Edge 143
-          href: ./web-platform/release-notes/143.md
-          displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 143
+              href: ./web-platform/release-notes/143.md
+              displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
+
             - name: Microsoft Edge 142
               href: ./web-platform/release-notes/142.md
               displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
