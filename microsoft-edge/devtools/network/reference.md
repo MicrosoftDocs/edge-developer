@@ -253,7 +253,7 @@ After you click the demo's **Send an XHR request** button (which causes JavaScri
 <!-- ------------------------------ -->
 #### Edit and resend a request as a fetch call
 
-Use the **Edit and resend as fetch** command to copy a network request as a `fetch()` call into the **Console** tool, where you can modify and send it:
+Use the **Edit and resend as fetch** command to edit a network request before resending it.  This command causes DevTools to copy the network request as a fetch() call in the **Console** tool, where you can modify and send it:
 
 The command is available for XHR, Fetch, document, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, source map, prefetch, and ping requests.
 
