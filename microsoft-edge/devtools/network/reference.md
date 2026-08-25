@@ -247,7 +247,7 @@ For information about initiators, see:
 
 DevTools resends XHR requests as XHR.  DevTools converts other supported request types to Fetch requests before sending them.
 
-After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menu item appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
 
 
 <!-- ------------------------------ -->
