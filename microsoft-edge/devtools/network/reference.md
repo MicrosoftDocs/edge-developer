@@ -268,11 +268,11 @@ The optional **Execution context** column in the **Requests** table shows the ex
    > [!NOTE]
    > Only one request can be pending in the Console prompt at a time.  If you select **Edit and resend as fetch** for another request, the new `fetch()` call replaces the current Console prompt without displaying a warning.
 
-1. If the generated comment directs you to select an execution context, use the execution context dropdown list in the **Console** toolbar to select the original context.
+1. If the generated comment directs you to select an execution context, use the execution context dropdown list in the **Console** toolbar to select the context in which the network request is resent as a fetch call.
 
 1. Modify the URL, method, headers, or body in the generated `fetch()` call.
 
-   Some request headers that a `fetch()` call isn't allowed to set are preserved as comments.
+   Some request headers that a `fetch()` call isn't allowed to set are preserved as informational comments.
 
 1. Press **Enter** to send the modified request.
 
