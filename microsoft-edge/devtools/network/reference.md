@@ -214,11 +214,9 @@ To capture a screenshot:
 
 Use the **Resend** command to send a network request again without reloading the webpage.
 
-<!-- todo: add 3 missing items from subseq section? -->
 You can resend any of the supported request types, including:
 * XHR
 * Fetch
-<!-- * document -->
 * JavaScript
 * CSS
 * image
@@ -228,8 +226,6 @@ You can resend any of the supported request types, including:
 * manifest
 * text track
 * source map
-<!-- * prefetch -->
-<!-- * ping requests -->
 
 To resend a request:
 
@@ -282,7 +278,6 @@ For a list of request types that are supported by the **Edit and resend as fetch
 The **Edit and resend as fetch** command is available for the following request types:
 * XHR
 * Fetch
-* document
 * JavaScript
 * CSS
 * image
@@ -292,6 +287,7 @@ The **Edit and resend as fetch** command is available for the following request 
 * manifest
 * text track
 * source map
+* document
 * prefetch
 * ping requests
 
