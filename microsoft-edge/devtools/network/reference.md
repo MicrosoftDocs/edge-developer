@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 08/24/2026
+ms.date: 08/26/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +22,10 @@ ms.date: 08/24/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Network features reference
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/network/reference -->
 <!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
 
-<!-- for each png, decide whether to create screenshot -->
+<!-- for each upstream png, decide whether to create screenshot -->
 
 The **Network** tool has the following features, to inspect network activity for a webpage.
 
@@ -209,8 +210,26 @@ To capture a screenshot:
 
 <!-- ------------------------------ -->
 #### Resend a request
+<!-- Replay XHR request  https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
 
-Use the **Resend** command to send a network request again without reloading the webpage.  You can resend XHR requests and other supported request types, including Fetch, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, and source map requests.
+Use the **Resend** command to send a network request again without reloading the webpage.
+
+<!-- todo: add 3 missing items from subseq section? -->
+You can resend any of the supported request types, including:
+* XHR
+* Fetch
+<!-- * document -->
+* JavaScript
+* CSS
+* image
+* media
+* font
+* WebAssembly
+* manifest
+* text track
+* source map
+<!-- * prefetch -->
+<!-- * ping requests -->
 
 To resend a request:
 
@@ -252,23 +271,43 @@ After you click the demo's **Send an XHR request** button (which causes JavaScri
 
 <!-- ------------------------------ -->
 #### Edit and resend a request as a fetch call
+<!-- Replay XHR request  https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
 
-Use the **Edit and resend as fetch** command to edit a network request before resending it.  This command causes DevTools to copy the network request as a fetch() call in the **Console** tool, where you can modify and send it:
+To edit a network request before resending it, use the **Edit and resend as fetch** command.  This command causes DevTools to copy the network request as a `fetch()` call in the **Console** tool, where you can modify and send it.
 
-The command is available for XHR, Fetch, document, JavaScript, CSS, image, media, font, WebAssembly, manifest, text track, source map, prefetch, and ping requests.
+<!-- todo:
+replace the following dup list by: 
+For a list of request types that are supported by the **Edit and resend as fetch** command, see [Resend a request](#resend-a-request), above.
+-->
+The **Edit and resend as fetch** command is available for the following request types:
+* XHR
+* Fetch
+* document
+* JavaScript
+* CSS
+* image
+* media
+* font
+* WebAssembly
+* manifest
+* text track
+* source map
+* prefetch
+* ping requests
 
 Unlike the **Resend** command, which resends an XHR request as XHR, **Edit and resend as fetch** converts XHR and all other supported request types to `fetch()` calls.
 
 The optional **Execution context** column in the **Requests** table shows the execution context from which each request was sent.
 
+To edit and resend a request as a fetch call:
+
 1. In the **Network** tool's **Requests** table, right-click the request that you want to modify, and then select **Edit and resend as fetch**.
 
-   The **Console** tool opens in the **Drawer**.  An editable `fetch()` call that reproduces the request is added to the Console prompt.  The generated code includes comments that identify the original request and its execution context.  A message above the generated code links to the original request in the **Network** tool.
+   The **Console** tool opens in the **Drawer** at the bottom of DevTools.  An editable `fetch()` call that reproduces the request is added to the Console prompt.  The generated code includes comments that identify the original request and its execution context.  A message above the generated code links to the original request in the **Network** tool.
 
-   > [!NOTE]
-   > Only one request can be pending in the Console prompt at a time.  If you select **Edit and resend as fetch** for another request, the new `fetch()` call replaces the current Console prompt without displaying a warning.
+   **Note:** Only one request can be pending in the Console prompt at a time.  If you select **Edit and resend as fetch** for another request, the new `fetch()` call replaces the current Console prompt, without displaying a warning.
 
-1. If the generated comment directs you to select an execution context, use the execution context dropdown list in the **Console** toolbar to select the context in which the network request is resent as a fetch call.
+1. If the generated comment directs you to select an execution context, use the **JavaScript context** dropdown list in the **Console** toolbar to select the execution context (such as **top**) in which the network request is resent as a fetch call.
 
 1. Modify the URL, method, headers, or body in the generated `fetch()` call.
 
@@ -276,7 +315,7 @@ The optional **Execution context** column in the **Requests** table shows the ex
 
 1. Press **Enter** to send the modified request.
 
-The new request is displayed in the **Network** tool's **Requests** table.  A terminal icon in the **Name** column identifies the request as originating from the Console.
+The new request is displayed in the **Network** tool's **Requests** table.  A terminal icon in the **Name** column identifies the request as originating from the **Console**.
 
 
 <!-- ====================================================================== -->
@@ -903,6 +942,7 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 Right-click the header of the **Requests** table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
 
 ![Adding a column to the **Requests** table](./reference-images/requests-add-column.png)
+
 
 <!-- ---------- -->
 ###### Add custom columns for response headers
