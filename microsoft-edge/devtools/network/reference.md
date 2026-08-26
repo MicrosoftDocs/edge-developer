@@ -318,7 +318,7 @@ To edit and resend a request as a fetch call:
 
    An editable `fetch()` call that reproduces the request is added to the **Console** prompt.  The generated code includes comments that identify the original request and its execution context.
 
-   A message above the generated code, such as **Resendable copy of GET request to data.json***, has a link (![Click to open the Network panel and show request for URL](./reference-images/open-network-panel-show-request-icon.png)) to the original request in the **Network** tool:
+   A message above the generated code, such as **Resendable copy of GET request to data.json**, has a link (![Click to open the Network panel and show request for URL](./reference-images/open-network-panel-show-request-icon.png)) to the original request in the **Network** tool:
 
    ![Editable fetch() method](./reference-images/edit-resend-fetch.png)
 
