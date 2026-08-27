@@ -24,6 +24,7 @@ Release notes for recent Runtimes:
 * [Runtime 146.0.3856.49 (Mar. 16, 2026)](./146.md)
 * [Runtime 145.0.3800.47 (Feb. 16, 2026)](./145.md)
 * [Runtime 144.0.3719.77 (Jan. 27, 2026)](./144.md)
+* [Runtime 143.0.3650.58 (Dec. 8, 2025)](./143.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
