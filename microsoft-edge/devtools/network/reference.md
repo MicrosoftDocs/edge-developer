@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 03/25/2026
+ms.date: 08/25/2026
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,9 +22,10 @@ ms.date: 03/25/2026
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Network features reference
+<!-- https://learn.microsoft.com/microsoft-edge/devtools/network/reference -->
 <!-- https://developer.chrome.com/docs/devtools/network/reference/ -->
 
-<!-- for each png, decide whether to create screenshot -->
+<!-- for each upstream png, decide whether to create screenshot -->
 
 The **Network** tool has the following features, to inspect network activity for a webpage.
 
@@ -37,7 +38,8 @@ For a step-by-step walkthrough and introduction to the **Network** tool, see [In
    * [Clear requests](#clear-requests)
    * [Save requests across page loads](#save-requests-across-page-loads)
    * [Capture screenshots during page load](#capture-screenshots-during-page-load)
-   * [Replay XHR request](#replay-xhr-request)
+   * [Resend a request](#resend-a-request)
+   * [Edit and resend a request as a fetch call](#edit-and-resend-a-request-as-a-fetch-call)
 * [Change loading behavior](#change-loading-behavior)
    * [Emulate a first-time visitor by disabling the browser cache](#emulate-a-first-time-visitor-by-disabling-the-browser-cache)
       * [Disable the browser cache from the Network conditions tool](#disable-the-browser-cache-from-the-network-conditions-tool)
@@ -207,10 +209,25 @@ To capture a screenshot:
 
 
 <!-- ------------------------------ -->
-#### Replay XHR request
-<!-- https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
+#### Resend a request
+<!-- Replay XHR request  https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
 
-To replay an XHR request:
+To send a network request again without reloading the webpage, use the **Resend** command in the **Network** tool's **Requests** table.
+
+The **Resend** command is available for the following request types:
+* XHR
+* Fetch
+* JavaScript
+* CSS
+* image
+* media
+* font
+* WebAssembly
+* manifest
+* text track
+* source map
+
+To resend a request:
 
 1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
 
@@ -231,19 +248,91 @@ To replay an XHR request:
 
    In the **Network** tool's **Requests** table, a `data.json` row is added.  The **Initiator** column reads `script.js:20`.
 
-1. In the **Requests** table, right-click the `data.json` request, and then select **Replay XHR**.<!-- no "Replay fetch" menuitem -->
+1. In the **Requests** table, right-click the `data.json` request, and then select **Resend**.
 
    Or, select the request, and then press **R**.
 
    In the **Network** tool's **Requests** table, a second `data.json` row is added.  The **Initiator** column reads **Other**:
 
-   ![Click Replay XHR](./reference-images/selecting-replay-xhr.png)
+   ![The resent XHR request in the Requests table](./reference-images/selecting-replay-xhr.png)
 
 For information about initiators, see:
 * [Display initiators and dependencies](#display-initiators-and-dependencies), below.
 * [Log network activity](./index.md#log-network-activity) in _Inspect network activity_.
 
-After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menuitem appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+DevTools resends XHR requests as XHR.  DevTools converts other supported request types to Fetch requests before sending them.
+
+After you click the demo's **Send an XHR request** button (which causes JavaScript to send a request), the **Copy stack trace** menu item appears in the right-click > **Copy** menu for requests.  See [Copy network requests to the clipboard](#copy-network-requests-to-the-clipboard), below.
+
+
+<!-- ------------------------------ -->
+#### Edit and resend a request as a fetch call
+<!-- Replay XHR request  https://developer.chrome.com/docs/devtools/network/reference/#replay-xhr -->
+
+To edit a network request before resending it, use the **Edit and resend as fetch** command in the **Network** tool's **Requests** table.  This command causes DevTools to copy the network request as a `fetch()` call in the **Console** tool, where you can modify and send it.
+
+The **Edit and resend as fetch** command is available for the following request types:
+* XHR
+* Fetch
+* JavaScript
+* CSS
+* image
+* media
+* font
+* WebAssembly
+* manifest
+* text track
+* source map
+* document
+* prefetch
+* ping requests
+
+Unlike the **Resend** command, which resends an XHR request as XHR, **Edit and resend as fetch** converts XHR and all other supported request types to `fetch()` calls.
+
+The optional **Execution context** column in the **Requests** table shows the execution context from which each request was sent.
+
+To edit and resend a request as a fetch call:
+
+1. Go to a webpage, such as the [Network tool reference Demo](https://microsoftedge.github.io/Demos/devtools-network-reference/), in a new window or tab.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Network** tool.
+
+1. Refresh the webpage.
+
+   In the **Network** tool's **Requests** table, rows appear for:
+   * `devtools-network-reference/` (`index.html`)
+   * `style.css`
+   * `script.js`
+
+1. In the demo webpage, click the **Send an XHR request** button.
+
+   In the **Network** tool's **Requests** table, a `data.json` row is added.
+
+1. In the **Requests** table, right-click the request that you want to modify, such as the `data.json` request, and then select **Edit and resend as fetch**.
+
+   The **Console** tool opens in the **Drawer** at the bottom of DevTools.
+
+   An editable `fetch()` call that reproduces the request is added to the **Console** prompt.  The generated code includes comments that identify the original request and its execution context.
+
+   A message above the generated code, such as **Resendable copy of GET request to data.json**, has a link (![Click to open the Network panel and show request for URL](./reference-images/open-network-panel-show-request-icon.png)) to the original request in the **Network** tool:
+
+   ![Editable fetch() method](./reference-images/edit-resend-fetch.png)
+
+   **Note:** Only one request can be pending in the **Console** prompt at a time.  If you select **Edit and resend as fetch** for another request, the new `fetch()` call replaces the current **Console** prompt, without displaying a warning.
+
+1. If the generated comment directs you to select an execution context, use the **JavaScript context** dropdown list in the **Console** toolbar to select the execution context (such as **top**) in which the network request is resent as a fetch call.
+
+1. Modify the URL, method, headers, or body in the generated `fetch()` call.
+
+   Some request headers that a `fetch()` call isn't allowed to set are preserved as informational comments.
+
+1. Press **Enter** to send the modified request.
+
+The new request is displayed in the **Network** tool's **Requests** table.  A terminal icon in the **Name** column identifies the request as originating from the **Console**.
 
 
 <!-- ====================================================================== -->
@@ -268,7 +357,7 @@ The **Disable Cache** checkbox:
 
 From the **Network** tool, you can open the **Network conditions** tool in the **Quick View** panel at the bottom of DevTools, and then disable the browser cache from there:
 
-1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
+1. In the **Network** tool, click the **More network conditions** (![More network conditions icon](./reference-images/more-network-conditions-icon.png)) button.  The **Network conditions** tool opens in the **Quick View** panel at the bottom of DevTools.
 
 1. In the **Network conditions** tool, select the **Disable cache** checkbox:
 
@@ -1639,7 +1728,7 @@ To copy a single request, its response, or its stack trace:
 | **Copy as fetch** | Copy the request as a fetch call. |
 | **Copy as fetch (Node.js)** | Copy the request as a Node.js fetch call. |
 | **Copy response** | Copy the response body to the clipboard. |
-| **Copy stack trace** | Copy the request's stack trace to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests.  See [Replay XHR request](#replay-xhr-request), above. |
+| **Copy stack trace** | Copy the request's stack trace to the clipboard.  This menuitem only appears for requests that are triggered by JavaScript code, such as Fetch or XHR requests.  See [Resend a request](#resend-a-request), above. |
 
 To copy all requests:
 
