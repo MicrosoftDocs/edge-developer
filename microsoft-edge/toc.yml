@@ -1771,6 +1771,9 @@
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
 
+                - name: SDK n.n.nnnn-prerelease, for Runtime 153 (Mmm. dd, yyyy)
+                  href: ./webview2/release-notes/sdk/n-n-nnnn-prerelease.md
+
                 - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 24, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4191-47.md
 
