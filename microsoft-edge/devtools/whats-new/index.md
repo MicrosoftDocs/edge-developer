@@ -32,7 +32,7 @@ For earlier What's new pages, see **Archive** in the table of contents.
 
 
 <!-- ====================================================================== -->
-## Download the preview channels
+## Download the preview channels of Microsoft Edge
 
 To stay up to date and get the latest DevTools features, download an Insider channel (preview version) of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
 
