@@ -10,7 +10,7 @@ ms.date: 11/14/2024
 ---
 # What's new in DevTools (Microsoft Edge 131)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->

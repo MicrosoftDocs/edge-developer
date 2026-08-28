@@ -23,7 +23,7 @@ ms.date: 12/13/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 84)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
