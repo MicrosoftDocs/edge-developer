@@ -1529,10 +1529,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 153.n.nnnn.nn (Mmm. dd, yyyy)
+                - name: Preview Runtime 153.0.4234.6 (Aug. 28, 2026)
                   href: ./webview2/release-notes/runtime/153.md
 
-                - name: Runtime 152.0.4191.47 (Aug. 24, 2026)
+                - name: Runtime 152.0.4191.53 (Aug. 28, 2026)
                   href: ./webview2/release-notes/runtime/152.md
 
                 - name: Runtime 151.0.4129.50 (Aug. 3, 2026)
@@ -1771,10 +1771,7 @@
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
 
-                - name: SDK n.n.nnnn-prerelease, for Runtime 153 (Mmm. dd, yyyy)
-                  href: ./webview2/release-notes/sdk/n-n-nnnn-prerelease.md
-
-                - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 24, 2026)
+                - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4191-47.md
 
                 - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
