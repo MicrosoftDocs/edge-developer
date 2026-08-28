@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/30/2026
+ms.date: 08/28/2026
 ---
 # What's new in Microsoft Edge DevTools
 
