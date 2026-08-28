@@ -46,6 +46,9 @@ For the latest announcements, [follow the Microsoft Edge team on Twitter](https:
 
 To report a problem with DevTools or ask for a new feature, file an issue in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
+See also:
+* [Contact the Microsoft Edge DevTools team](../contact.md)
+
 
 <!-- ====================================================================== -->
 ## See also
