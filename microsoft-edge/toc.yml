@@ -540,6 +540,10 @@
                       href: ./devtools/dom/index.md
                       displayName: Elements tool
 
+                    - name: Badges reference
+                      href: ./devtools/elements/badges.md
+                      displayName: Elements tool
+
                 - name: CSS
                   items:
                     - name: Get started viewing and changing CSS
