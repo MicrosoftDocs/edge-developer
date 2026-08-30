@@ -397,7 +397,7 @@ See also:
 #### Updates to Elements tool and Network tool
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
 
 
@@ -427,7 +427,7 @@ In the **Elements** tool, the **Properties** pane is back.  The **Properties** p
 Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ---------- 
@@ -497,7 +497,7 @@ Click the **Clear** button to remove any inputted text.
 Chromium issue: [#1067184](https://crbug.com/1067184)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
 
 

@@ -531,7 +531,7 @@
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
-                  href: ./devtools/elements-tool/elements-tool.md
+                  href: ./devtools/elements/elements-tool.md
                   displayName: Elements tool
 
                 - name: DOM
@@ -548,6 +548,14 @@
 
                     - name: Inspect CSS Grid layouts
                       href: ./devtools/css/grid.md
+                      displayName: Elements tool
+
+                    - name: Inspect and debug CSS flexbox layouts
+                      href: ./devtools/css/flexbox.md
+                      displayName: Elements tool
+
+                    - name: Edit CSS font styles and settings in the Styles tab
+                      href: ./devtools/inspect-styles/edit-fonts.md
                       displayName: Elements tool
 
                     - name: Style editing for CSS-in-JS frameworks

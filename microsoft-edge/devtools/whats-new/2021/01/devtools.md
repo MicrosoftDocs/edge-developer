@@ -277,7 +277,7 @@ Use the new **Duplicate element** shortcut to clone an element.  In the **Elemen
 For the history of this feature in the Chromium open-source project, see Issue [1150797](https://crbug.com/1150797).
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 ###### Color pickers for custom CSS properties
@@ -438,7 +438,7 @@ For the history of this feature in the Chromium open-source project, see Issues 
 
 See also:
 * [Sources tool overview](../../../sources/index.md)
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 <!-- 0 hits on "Copy file name" -->
 
 

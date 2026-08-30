@@ -130,7 +130,7 @@ In the **Properties** pane of the **Elements** tool, the list of properties is n
 ![Flattened list of properties](./devtools-images/flattened-list-of-properties.png)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 <!-- todo: link to an Elements > Properties ui doc'n?  try FTS repo **Properties** - not really found -->
 
 For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
