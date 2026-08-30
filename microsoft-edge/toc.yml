@@ -540,6 +540,10 @@
                       href: ./devtools/dom/index.md
                       displayName: Elements tool
 
+                    - name: View the properties of DOM objects
+                      href: ./devtools/dom/properties.md
+                      displayName: Elements tool
+
                 - name: CSS
                   items:
                     - name: Get started viewing and changing CSS
