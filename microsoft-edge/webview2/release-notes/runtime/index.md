@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/12/2026
+ms.date: 08/24/2026
 ---
 # Release notes for the WebView2 Runtime
 
@@ -15,7 +15,8 @@ list past 10 releases (runtimes)
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 152.0.4181.0 (Aug. 3, 2026)](./152.md)
+* [Preview Runtime 153.0.4234.6 (Aug. 28, 2026)](./153.md)
+* [Runtime 152.0.4191.53 (Aug. 28, 2026)](./152.md)
 * [Runtime 151.0.4129.50 (Aug. 3, 2026)](./151.md)
 * [Runtime 150.0.4078.44 (Jul. 7, 2026)](./150.md)
 * [Runtime 149.0.4022.49 (Jun. 11, 2026)](./149.md)
@@ -24,7 +25,6 @@ Release notes for recent Runtimes:
 * [Runtime 146.0.3856.49 (Mar. 16, 2026)](./146.md)
 * [Runtime 145.0.3800.47 (Feb. 16, 2026)](./145.md)
 * [Runtime 144.0.3719.77 (Jan. 27, 2026)](./144.md)
-* [Runtime 143.0.3650.58 (Dec. 8, 2025)](./143.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
@@ -51,7 +51,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 * Use the Canary preview channel of Microsoft Edge (which includes the WebView2 Preview Runtime) when you do early testing and development using a Prerelease version of the WebView2 SDK package.
 
-  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.  
+  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
   Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
 
@@ -59,30 +59,6 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 See also:
 * [Matching the Runtime version with the SDK version](../../concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version) in _Prerelease and Release SDKs for WebView2_.
-
-
-<!-- ====================================================================== -->
-## Minimum version of the browser or Runtime to load WebView2
-
-To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
-
-To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
-
-<!--
-Cross-framework API conventions
-
-Events:
-No EventHandler or CompletedHandler in .NET or WinRT.
-General event pattern:
-- Win32: add/remove_XYZ + XYZEventHandler
-- .NET/WinRT: XYZ event
-
-Async methods:
-- Win32: XYZ method + XYZCompletedHandler
-- .NET/WinRT: XYZAsync
--->
-
-Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
 
 <!-- ====================================================================== -->
@@ -106,6 +82,30 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Minimum version of the browser or Runtime to load WebView2
+
+To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0; see [Runtime 86.0.705.50 (Jan. 25, 2021)](./86.md).  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
+
+To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+
+<!--
+Cross-framework API conventions
+
+Events:
+No EventHandler or CompletedHandler in .NET or WinRT.
+General event pattern:
+- Win32: add/remove_XYZ + XYZEventHandler
+- .NET/WinRT: XYZ event
+
+Async methods:
+- Win32: XYZ method + XYZCompletedHandler
+- .NET/WinRT: XYZAsync
+-->
+
+Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 * [Release notes for WebView2](../index.md)<!-- toc bucket 1.1 -->
@@ -114,9 +114,3 @@ See also:
 * [Contact the WebView2 team](../../contact.md)<!-- toc bucket: bottom -->
 * [Release notes for Microsoft Edge web platform](../../../web-platform/release-notes/index.md)
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
-
-API Reference:
-* [WebView2 API Reference](../../webview2-api-reference.md)
-   * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
-   * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
-   * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->

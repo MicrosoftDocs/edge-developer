@@ -1264,7 +1264,7 @@ To adjust timings by a simple mouse-click, use the presets in the **Easing Edito
    | ease-out | Out, Cubic | `cubic-bezier(0.22, 0.61, 0.36, 1)` |
    | ease-out | Linear Out, Slow In | `cubic-bezier(0, 0, 0.2, 1)` |
    | ease-out | Out, Back | `cubic-bezier(0.18, 0.89, 0.32, 1.28)` |
-   
+
 See also:
 * [Bézier curve](https://developer.mozilla.org/docs/Glossary/Bezier_curve) at MDN.
 

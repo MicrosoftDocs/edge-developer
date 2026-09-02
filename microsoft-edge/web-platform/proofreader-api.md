@@ -243,7 +243,7 @@ You can follow the progress of the model download by using the `monitor` option.
 // download.
 const session = await Proofreader.create({
   monitor: m => {
-    // Use the monitor object argument to add an listener for the 
+    // Use the monitor object argument to add an listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
@@ -346,7 +346,7 @@ Alternatively, you can create an `AbortController` object, create a `Proofreader
 // Create an AbortController object.
 const controller = new AbortController();
 
-// Create a Proofreader session and pass the 
+// Create a Proofreader session and pass the
 // AbortController signal object by using the signal option.
 const session = await Proofreader.create({ signal: controller.signal });
 

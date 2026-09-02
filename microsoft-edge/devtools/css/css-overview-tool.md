@@ -190,7 +190,7 @@ To find color contrast issues:
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing a list of elements with a color contrast issue](./css-overview-tool-images/css-overview-tool-contrast-issues-elements.png)
 
 1. To open the corresponding element in the **Elements** tool, click an element in the list.
-  
+
    ![Microsoft Edge, with the TODO list demo app and DevTools, showing the Elements tool, with the color-contrast issue element selected](./css-overview-tool-images/css-overview-tool-contrast-issues-elements-tool.png)
 
 To help fix contrast issues, check out the [Text contrast](../accessibility/reference.md#text-contrast) section of the accessibility-testing DevTools features.

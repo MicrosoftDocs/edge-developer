@@ -14,7 +14,7 @@ Use the **Rendering** tool to see what your webpage looks like with different di
 
 Many operating systems have a way to display any application in darker or lighter colors.  Having a website that has a light scheme in a dark-mode operating system can be hard to read and can be an accessibility issue for some users.
 
-To test how a webpage will render when the user has selected dark or light mode, instead of changing your own machine's dark-mode or light-mode setting, you can select **Emulate CSS prefers-color-scheme: dark** or **light** in Microsoft Edge DevTools.  Or, you can make your webpage automatically select dark or light mode based on your own preferred settings on your machine, by selecting **No emulation**, which is the default. 
+To test how a webpage will render when the user has selected dark or light mode, instead of changing your own machine's dark-mode or light-mode setting, you can select **Emulate CSS prefers-color-scheme: dark** or **light** in Microsoft Edge DevTools.  Or, you can make your webpage automatically select dark or light mode based on your own preferred settings on your machine, by selecting **No emulation**, which is the default.
 
 You can select these settings from the **Rendering** tool or from the **Command Menu**, as described below.
 

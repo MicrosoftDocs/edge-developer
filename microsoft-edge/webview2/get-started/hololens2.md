@@ -17,7 +17,7 @@ This article is to learn to write your own WebView2 code.  If you want to run a 
 > [!IMPORTANT]
 > WebView2 on Hololens 2 continues to be available.  However, support for WebView2 on Hololens 2 is discontinued; there are no planned bug fixes or content updates, and technical support has ended.  Applications that use WebView2 on Hololens 2 are not guaranteed to continue to work.
 
-WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability. 
 
 WebView2 only works on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
@@ -109,11 +109,11 @@ Before you can start developing a HoloLens 2 app with WebView2, you will need to
 <!-- ====================================================================== -->
 ## Step 3 - Configure the Unity project for Mixed Reality development
 
-Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit in your project.  
+Once you have your tools installed, you're ready to create and configure your project.  The easiest way to get started with HoloLens 2 development is to use the Mixed Reality Toolkit in your project. 
 
 The Mixed Reality Feature Tool simplifies the process of discovering, installing, and managing mixed reality features, including the Mixed Reality Toolkit, and packages for your Unity project. For more guidance on installing the Mixed Reality Feature Tool, see [Welcome to the Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
-1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.   
+1. First, [Download the Mixed Reality Feature Tool](https://www.microsoft.com/download/details.aspx?id=102778) from the Microsoft Download Center.  
 
 1. Run the downloaded Mixed Reality Feature Tool executable, and follow the prompts to install the Mixed Reality Toolkit and any additional required packages for HoloLens 2 development.
 
@@ -209,7 +209,7 @@ Then continue with the next steps below.
 <!-- ====================================================================== -->
 ## Step 7 - Extending WebView2 functionality
 
-Although the prefab exposes just a single property, there's additional functionality exposed on the `WebView` script. Let's take a look at exposing some of this functionality in our project.  First, inspect the `WebView` script to get an idea of what's available.  
+Although the prefab exposes just a single property, there's additional functionality exposed on the `WebView` script. Let's take a look at exposing some of this functionality in our project.  First, inspect the `WebView` script to get an idea of what's available. 
 
 > [!TIP]
 > To view the contents of a script in your default code editor, double-click the name of the script in the **Inspector** window.
@@ -372,9 +372,9 @@ Continue with the next steps below.
 <!-- ====================================================================== -->
 ## Step 8 - Learn about WebView2 events and interactions in Unity
 
-The Microsoft Mixed Reality WebView plugin for Unity provides events for working with the webview. 
+The Microsoft Mixed Reality WebView plugin for Unity provides events for working with the webview.
 
-One important event is `IWithPostMessage.MessageReceived`, which is raised when a message is sent from the webview to the Unity app. The `MessageReceived` event is defined in the `Microsoft.MixedReality.WebView.IWithPostMessage` interface. 
+One important event is `IWithPostMessage.MessageReceived`, which is raised when a message is sent from the webview to the Unity app. The `MessageReceived` event is defined in the `Microsoft.MixedReality.WebView.IWithPostMessage` interface.
 
 `IWithPostMessage` also defines the `PostMessage()` method, which can be used to send a message from the Unity app to the webview.
 

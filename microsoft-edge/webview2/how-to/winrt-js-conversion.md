@@ -96,7 +96,7 @@ If a WinRT method name is overloaded for more than one method, then calling that
 
 If there is more than one overload that has a matching number of parameters, the first overload that's found in the metadata will be called.
 
- 
+
 <!-- ====================================================================== -->
 ## Method out parameters
 
@@ -105,16 +105,16 @@ If a WinRT method has `out` parameters, when calling that method from JavaScript
 When calling a WinRT method that has `out` parameters, any `out` parameters are skipped in the parameter list in the method call (unless they are array type).  For example, suppose a WinRT method that has `out` parameters and a non-`void` return type is defined as follows, using MIDL3:
 
 ```cpp
-String MethodWithOutParams(String stringParam1, 
-                           out Int32 intParam2, 
-                           out Int32 intParam3, 
+String MethodWithOutParams(String stringParam1,
+                           out Int32 intParam2,
+                           out Int32 intParam3,
                            String stringParam4);
 ```
 
 When you call that method from JavaScript, omit the `out` arguments:
 
 ```javascript
-let result = object.MethodWithOutParams("stringParam1", 
+let result = object.MethodWithOutParams("stringParam1",
                                         "stringParam4");
 ```
 
@@ -152,7 +152,7 @@ console.assert(result2 == [0, 1, 2]);
 ```
 
 If passing typed arrays as array `out` parameters, `chrome.webview.hostObjects.options.shouldPassTypedArraysAsArrays` needs to be set to `true`.
- 
+
 See also:
 * [Issue #2788](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2788) about WebView2 SDK and Windows App SDK (WinUI3) in C++ WinRT
 

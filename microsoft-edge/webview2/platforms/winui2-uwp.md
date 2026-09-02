@@ -9,8 +9,28 @@ ms.subservice: webview
 ms.date: 01/27/2025
 ---
 # WebView2 in WinUI 2 (UWP) apps
+<!-- https://learn.microsoft.com/en-us/microsoft-edge/webview2/platforms/winui2-uwp -->
 
 The following considerations apply to WebView2 in WinUI 2 (UWP) apps.  The WebView2 WinUI 2 (UWP) control is in development.
+
+**Detailed contents:**
+* [Autofill UI](#autofill-ui)
+* [Print to PDF](#print-to-pdf)
+* [Default printing](#default-printing)
+* [SmartScreen](#smartscreen)
+* [Downloading files](#downloading-files)
+   * [Save As](#save-as)
+   * [Which folder the files are downloaded to](#which-folder-the-files-are-downloaded-to)
+   * [Downloads Hub](#downloads-hub)
+* [XAML limitation](#xaml-limitation)
+* [Setting DefaultBackgroundColor](#setting-defaultbackgroundcolor)
+* [Setting transparency](#setting-transparency)
+* [CSS cursors](#css-cursors)
+   * [Image URLs](#image-urls)
+   * [Predefined CSS cursors](#predefined-css-cursors)
+* [Microsoft Edge Developer Tools](#microsoft-edge-developer-tools)
+* [API limitations](#api-limitations)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -131,52 +151,51 @@ On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can
 
 | Keyword | Supported? |
 |---|:---:|
-| **General** |  |
-| auto | ✔️ |
-| default | ✔️ |
-| none | ❌ |
-| **Links & status** |  |
-| context-menu | ✔️ |
-| help | ✔️ |
-| pointer | ✔️ |
-| progress | ❌ |
-| wait | ✔️ |
-| **Selection** |  |
-| cell | ❌ |
-| crosshair | ✔️ |
-| text | ✔️ |
-| vertical-text | ❌ |
-| **Drag & drop** |  |
-| alias | ❌ |
-| copy | ❌ |
-| move | ✔️ |
-| no-drop | ✔️ |
-| not-allowed | ✔️ |
-| grab | ❌ |
-| grabbing | ❌ |
-| **Resizing & scrolling** |  |
-| all-scroll | ✔️ |
-| col-resize | ❌ |
-| row-resize | ❌ |
-| n-resize | ✔️ |
-| e-resize | ✔️ |
-| s-resize | ✔️ |
-| w-resize | ✔️ |
-| ne-resize | ✔️ |
-| nw-resize | ✔️ |
-| se-resize | ✔️ |
-| sw-resize | ✔️ |
-| ew-resize | ✔️ |
-| ns-resize | ✔️ |
-| nesw-resize | ✔️ |
-| nwse-resize | ✔️ |
-| **Zooming** |  |
-| zoom-in | ❌ |
-| zoom-out | ❌ |
+| **General:** | |
+| `auto` | Yes ✔️ |
+| `default` | Yes ✔️ |
+| `none` | No ❌ |
+| **Links and status:** | |
+| `context-menu` | Yes ✔️ |
+| `help` | Yes ✔️ |
+| `pointer` | Yes ✔️ |
+| `progress` | No ❌ |
+| `wait` | Yes ✔️ |
+| **Selection:** | |
+| `cell` | No ❌ |
+| `crosshair` | Yes ✔️ |
+| `text` | Yes ✔️ |
+| `vertical-text` | No ❌ |
+| **Drag and drop:** | |
+| `alias` | No ❌ |
+| `copy` | No ❌ |
+| `move` | Yes ✔️ |
+| `no-drop` | Yes ✔️ |
+| `not-allowed` | Yes ✔️ |
+| `grab` | No ❌ |
+| `grabbing` | No ❌ |
+| **Resizing and scrolling:** | |
+| `all-scroll` | Yes ✔️ |
+| `col-resize` | No ❌ |
+| `row-resize` | No ❌ |
+| `n-resize` | Yes ✔️ |
+| `e-resize` | Yes ✔️ |
+| `s-resize` | Yes ✔️ |
+| `w-resize` | Yes ✔️ |
+| `ne-resize` | Yes ✔️ |
+| `nw-resize` | Yes ✔️ |
+| `se-resize` | Yes ✔️ |
+| `sw-resize` | Yes ✔️ |
+| `ew-resize` | Yes ✔️ |
+| `ns-resize` | Yes ✔️ |
+| `nesw-resize` | Yes ✔️ |
+| `nwse-resize` | Yes ✔️ |
+| **Zooming:** | |
+| `zoom-in` | No ❌ |
+| `zoom-out` | No ❌ |
 
 See also:
-* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - the **Values** section describes the above keyword values.
-<!-- known limitation: destination page doesn't scroll to anchor -->
+* [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - The **Values** section describes the above keyword values.
 
 
 <!-- ====================================================================== -->

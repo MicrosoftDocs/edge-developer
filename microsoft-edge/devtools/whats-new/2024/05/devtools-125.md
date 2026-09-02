@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 125)
-description: "New dedicated setting for CSS Selector Stats in Performance tool. The Edit and Resend function has been restored in the Network tool. And more."
+description: New dedicated setting for CSS Selector Stats in Performance tool. The Edit and Resend function has been restored in the Network tool. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -13,7 +13,7 @@ ms.date: 05/16/2024
 These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 

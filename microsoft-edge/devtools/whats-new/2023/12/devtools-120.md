@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 120)
-description: "Edge DevTools has a new user interface. Explain with Copilot in DevTools is generally available. New Recorder tool to record and replay common user flows and measure performance. And more."
+description: Edge DevTools has a new user interface. Explain with Copilot in DevTools is generally available. New Recorder tool to record and replay common user flows and measure performance. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -13,7 +13,7 @@ ms.date: 12/07/2023
 These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 
@@ -67,7 +67,7 @@ If you have any questions, comments, or feedback about the feature, please leave
 
 <!-- Subtitle: Debug and share common user journeys by recording them. You can generate a performance trace, and then analyze it by using the Performance tool. -->
 
-Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting. 
+Use the **Recorder** tool to help you record and replay common user flows and measure performance.  You can edit your recordings and share them by importing and exporting.
 
 The initial view in the **Recorder** tool gives an overview of how to use the tool:
 

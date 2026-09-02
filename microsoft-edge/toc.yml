@@ -505,7 +505,7 @@
             - name: About the list of tools
               href: ./devtools/about-tools.md
 # =============================================================================
-# Default tools 
+# Default tools
 # -----------------------------------------------------------------------------
             - name: Inspect tool
               items:
@@ -691,7 +691,7 @@
 # -----------------------------------------------------------------------------
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
-                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
+                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview
                   href: ./devtools/performance/overview.md
                   displayName: Performance tool
 
@@ -746,7 +746,7 @@
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
                   href: ./devtools/memory-problems/heap-snapshots.md
-                  displayName: Memory tool 
+                  displayName: Memory tool
 
                 - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
                   href: ./devtools/memory-problems/allocation-profiler.md
@@ -1534,7 +1534,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 152.0.4181.0 (Aug. 3, 2026)
+                - name: Preview Runtime 153.0.4234.6 (Aug. 28, 2026)
+                  href: ./webview2/release-notes/runtime/153.md
+
+                - name: Runtime 152.0.4191.53 (Aug. 28, 2026)
                   href: ./webview2/release-notes/runtime/152.md
 
                 - name: Runtime 151.0.4129.50 (Aug. 3, 2026)
@@ -1561,11 +1564,11 @@
                 - name: Runtime 144.0.3719.77 (Jan. 27, 2026)
                   href: ./webview2/release-notes/runtime/144.md
 
-                - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
-                  href: ./webview2/release-notes/runtime/143.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
+                      href: ./webview2/release-notes/runtime/143.md
+
                     - name: Runtime 142.0.3595.46 (Nov. 3, 2025)
                       href: ./webview2/release-notes/runtime/142.md
 
@@ -1772,6 +1775,9 @@
               items:
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
+
+                - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4191-47.md
 
                 - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4181-prerelease.md
@@ -2623,7 +2629,7 @@
           href: ./visual-studio-code/ide-integration.md
 
       # - name: Use DevTools as an IDE
-      #   href: 
+      #   href:
 
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md

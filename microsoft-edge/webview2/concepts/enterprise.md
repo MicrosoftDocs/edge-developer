@@ -77,7 +77,7 @@ See:
 <!-- ------------------------------ -->
 #### Browser policies
 
-[Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT admins might not be aware of what applications use WebView2.  
+[Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) doesn't apply to WebView2 applications.  This is by design, because apps and browsers have different use cases, and IT admins might not be aware of what applications use WebView2. 
 
 Applying browser policies on WebView2 would have unintended consequences.  For example, IT admins can block JavaScript in the browser, and that would break WebView2 apps that use JavaScript.  To prevent that, browser policies are separate from WebView2 policies.
 

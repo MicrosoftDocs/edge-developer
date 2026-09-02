@@ -117,7 +117,7 @@ landingContent:
         links:
           - text: Port a Chrome extension to Microsoft Edge
             url: ../developer-guide/port-chrome-extension.md
- 
+
       - linkListType: concept
         links:
           - text: Add a custom tool in Microsoft Edge DevTools

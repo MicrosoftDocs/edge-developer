@@ -42,7 +42,7 @@ The `WebResourceRequested` event is a low-level API that gives more control, but
 
 Instead of using the WebResourceRequested APIs, it's preferable to use these other approaches when feasible:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
-* [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
+* [General navigation](/microsoft-edge/webview2/concepts/navigation-events)
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 * Setting the user agent string.  See [UserAgent Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#useragent).
 
@@ -64,7 +64,7 @@ the host app
 <!-- ====================================================================== -->
 ## Intercepting a request, to monitor or modify it
 
-Your host app can _intercept_ a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). 
+Your host app can _intercept_ a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server).
 
 Intercepting the request allows you to customize the header content, URL, or the GET/POST method.  The host app may want to intercept a request to provide optional POST content as part of the request.
 
@@ -84,7 +84,7 @@ The host app can change the properties of a request by using this API:
 <!-- ------------------------------ -->
 #### What you can do with headers
 
-A HTTP header provides important information and metadata about a request or response.  Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. 
+A HTTP header provides important information and metadata about a request or response.  Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network.
 
 A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (such as the `Accept-*` headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, and so on.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the response.
 
@@ -113,10 +113,10 @@ For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequ
 
 
 <!-- ------------------------------ -->
-#### Why would you want to intercept requests that are sent from WebView2?  
+#### Why would you want to intercept requests that are sent from WebView2? 
 
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
-* You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
+* You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials. 
 * You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
 * You want to upload local file content to the request server via a POST request.
 
@@ -147,7 +147,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- this example doesn't exist in the sample repo -->
 
 <!-- the below intro is based on copying the main h2's Sentence 1 from above: -->
-In the following example, the host app _intercepts_ the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request.  
+In the following example, the host app _intercepts_ the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request. 
 
 ##### [.NET](#tab/dotnet)
 
@@ -197,7 +197,7 @@ m_webView->add_WebResourceRequested(
          })
          .Get(),
       &m_webResourceRequestedToken);
-```  
+``` 
 
 ---
 
@@ -238,7 +238,7 @@ webView.CoreWebView2.AddWebResourceRequestedFilter(
       "*", CoreWebView2WebResourceContext.Image);
 webView.CoreWebView2.WebResourceRequested += delegate (
    object sender, CoreWebView2WebResourceRequestedEventArgs args) {
-    
+   
    // Replace the remote image resource with a local one specified at the path customImagePath.
    // If response is not set, the request will continue as it is.
    FileStream fs = File.Open(customImagePath, FileMode.Open);
@@ -321,7 +321,7 @@ from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateW
 ```csharp
 // This code posts text input=Hello to the POST form page in W3Schools.
 
-// Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type 
+// Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type
 UTF8Encoding utfEncoding = new UTF8Encoding();
 byte[] postData = utfEncoding.GetBytes("input=Hello");
 
@@ -330,7 +330,7 @@ postDataStream.Write(postData, 0, postData.Length);
 postDataStream.Seek(0, SeekOrigin.Begin);
 
 // This acts as a HTML form submit to https://www.w3schools.com/action_page.php
-CoreWebView2WebResourceRequest webResourceRequest = 
+CoreWebView2WebResourceRequest webResourceRequest =
 environment.CreateWebResourceRequest("https://www.w3schools.com/action_page.php",
                                      "POST",
                                      postDataStream,
@@ -345,7 +345,7 @@ webView.CoreWebView2.NavigateWithWebResourceRequest(webResourceRequest);
 ```cpp
 // This code posts text input=Hello to the POST form page in W3Schools.
 
-// Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type 
+// Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type
 std::wstring postData = std::wstring(L"input=Hello");
 int sizeNeededForMultiByte = WideCharToMultiByte(
    CP_UTF8, 0, postData.c_str(), postData.size(), nullptr,
@@ -450,7 +450,7 @@ m_webView->add_WebResourceResponseReceived(
             // The response object as received
             wil::com_ptr<ICoreWebView2WebResourceResponseView> webResourceResponse;
             args->get_Response(&webResourceResponse);
-            
+           
             // Get body content for the response
             webResourceResponse->GetContent(
                 Callback<
@@ -463,7 +463,7 @@ m_webView->add_WebResourceResponseReceived(
                         if (content) {
                             DoSomethingWithContent(content);
                         }
-                        
+                       
                         return S_OK;
                     })
                     .Get());
@@ -534,7 +534,7 @@ m_webView->add_WebResourceResponseReceived(
    * `remove_WebResourceRequested`
    * `RemoveWebResourceRequestedFilter`
 * [ICoreWebView2Environment2](/microsoft-edge/webview2/reference/win32/icorewebview2environment2)
-   * `CreateWebResourceRequest`   
+   * `CreateWebResourceRequest`  
 * [ICoreWebView2WebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
    * `get_Content`
    * `get_Headers`
@@ -590,6 +590,6 @@ m_webView->add_WebResourceResponseReceived(
 * [Call native-side code from web-side code](hostobject.md)
 * [Web/native interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 APIs_.
 
-<!-- 
+<!--
 * [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)
 * [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md) -->

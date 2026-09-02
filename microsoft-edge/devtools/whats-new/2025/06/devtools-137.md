@@ -32,7 +32,7 @@ To enable DevTools **Settings** sync:
 
    Your signed-in Microsoft Edge profile is displayed.
 
-1. In DevTools **Settings**, click the **Close** (![Close button](./devtools-137-images/close-button.png)) button. 
+1. In DevTools **Settings**, click the **Close** (![Close button](./devtools-137-images/close-button.png)) button.
 
 
 <!-- ====================================================================== -->

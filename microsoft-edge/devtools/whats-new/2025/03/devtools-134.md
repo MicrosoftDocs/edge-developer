@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 134)
-description: "Forced reflow in the Performance Insights sidebar. Heap snapshot statistics account for every byte. Simplified DevTools Themes menu. And more."
+description: Forced reflow in the Performance Insights sidebar. Heap snapshot statistics account for every byte. Simplified DevTools Themes menu. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -24,7 +24,7 @@ The **Performance Insights** sidebar includes a new section called **Forced Refl
 
 
 <!-- ====================================================================== -->
-## Heap snapshot statistics account for every byte  
+## Heap snapshot statistics account for every byte
 
 <!-- Subtitle: View a memory allocation pie chart of your heap snapshot under Statistics-->
 

@@ -127,7 +127,7 @@ Currently, website servers must send the `Accept-CH` response header to the brow
 <!-- To edit SVG go to link: http://www.plantuml.com/plantuml/uml/LOrDIWD144RtVOeogpZGSu11Gc8sMIlYnasbyvaqz4zRLQtNTsH0CgiFwZtgxTLOhEVa7ko63CfiaCY-TaknmBKPnn0R5wFDCKNCktsM-gEGnmsnKbWxhv1l26tVSTPeM1nrWVoETA9XUC5NXngTm1U83WDz5EeAyNn5iOcUtWwa9h5STtz84Nou-SuJZUEuklXSpp7X7ypZrC-Xi8IqrQ9ObmuXe9a_dgQxFosnVLR9RezowJdz0W00 -->
 ![Requests using only Accept-CH header](./how-to-detect-win11-images/acceptCH.svg)
 
-During this initial request, the client will record the `Accept-CH` preferences and on subsequent requests include `sec-ch-ua-platform` by default. 
+During this initial request, the client will record the `Accept-CH` preferences and on subsequent requests include `sec-ch-ua-platform` by default.
 
 To further optimize this flow, the new `Critical-CH` header can be used in addition to the `Accept-CH` header to reissue the request header immediately, without the need for a page reload. The following diagram shows the browser sending request headers to the server including `user agent: <UA string>` and receiving response headers including `Accept-CH: sec-ch-ua-platform` and `Critical-CH: sec-ch-ua-platform`. The browser then sends request headers to the server immediately.
 

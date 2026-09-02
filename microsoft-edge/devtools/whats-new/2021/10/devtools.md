@@ -164,7 +164,7 @@ The **Command Menu** has been enhanced to make it easier to search for a file.  
 See also:
 * [Command Menu](../../../command-menu/index.md)
 
-For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
+For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997).
 
 
 <!-- ====================================================================== -->

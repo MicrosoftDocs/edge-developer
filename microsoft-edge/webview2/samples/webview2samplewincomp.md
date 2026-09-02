@@ -77,7 +77,7 @@ If the solution is already open, you can change the target as follows:
 <!-- ====================================================================== -->
 ## Step 4 - Install the Windows SDK
 
-By default, this sample app uses the latest Window 10 SDK version you have installed.  There's an issue with Windows 10 SDK, version 2004 (10.0.**19041**.0) that will stop this sample app from building.  If you run into this issue, either install (and retarget this project to use) a later version, such as Windows 10 SDK version 2104 (10.0.**20348**.0), or an earlier version, such as 10.0.**18362**.1.  
+By default, this sample app uses the latest Window 10 SDK version you have installed.  There's an issue with Windows 10 SDK, version 2004 (10.0.**19041**.0) that will stop this sample app from building.  If you run into this issue, either install (and retarget this project to use) a later version, such as Windows 10 SDK version 2104 (10.0.**20348**.0), or an earlier version, such as 10.0.**18362**.1. 
 
 To install a Windows 10 SDK:
 

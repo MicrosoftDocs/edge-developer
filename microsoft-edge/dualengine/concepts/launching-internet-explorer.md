@@ -73,22 +73,22 @@ Contains a DWORD that indicates the location of the failure in the DualEngine st
 
 The DWORD maps to the following reasons:
 
-| DWORD | Reason                                                                                              |
-|:-----:|-----------------------------------------------------------------------------------------------------|
-|   0   | No failure.                                                                                         |
-|   1   | Unused.                                                                                             |
-|   2   | Unused.                                                                                             |
-|   3   | The version specified by the `DualEngineVersion` argument was 0.                                    |
-|   4   | Failed to canonicalize the path passed in via `DualEngineAdapter`; see the `StartupFailureHresult`. |
-|   5   | Unused.                                                                                             |
-|   6   | Unused.                                                                                             |
-|   7   | `LoadLibrary` failed for the provided adapter DLL; see the `StartupFailureHresult`.                 |
-|   8   | Could not find `DualEngineInitialize` in the adapter DLL.                                           |
-|   9   | The call to `DualEngineInitialize` failed; see the `StartupFailureHresult`.                         |
-|   10  | Failed to set the provided Application User Model ID; see the `StartupFailureHresult`.              |
-|   11  | DLL failed signature check.                                                                         |
-|   12  | Unused.                                                                                             |
-|   13  | DLL did not have IDENTITY LIMITEDACCESSFEATURE resource.                                            |
+| DWORD | Reason |
+|---|---|
+| 0 | No failure. |
+| 1 | Unused. |
+| 2 | Unused. |
+| 3 | The version specified by the `DualEngineVersion` argument was 0. |
+| 4 | Failed to canonicalize the path passed in via `DualEngineAdapter`; see the `StartupFailureHresult`. |
+| 5 | Unused. |
+| 6 | Unused. |
+| 7 | `LoadLibrary` failed for the provided adapter DLL; see the `StartupFailureHresult`.|
+| 8 | Could not find `DualEngineInitialize` in the adapter DLL.|
+| 9 | The call to `DualEngineInitialize` failed; see the `StartupFailureHresult`. |
+| 10 | Failed to set the provided Application User Model ID; see the `StartupFailureHresult`.|
+| 11 | DLL failed signature check. |
+| 12 | Unused. |
+| 13 | DLL did not have IDENTITY LIMITEDACCESSFEATURE resource. |
 
 
 <!-- ------------------------------ -->

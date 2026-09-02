@@ -10,13 +10,57 @@ ms.date: 02/21/2025
 ---
 # Using local content in WebView2 apps
 
-In addition to loading remote content, content can also be loaded locally into WebView2.  There are several approaches that can be used to load local content into a WebView2 control, including: 
+In addition to loading remote content, content can also be loaded locally into WebView2.  There are several approaches that can be used to load local content into a WebView2 control, including:
 * Navigating to a file URL.
 * Navigating to an HTML string.
 * Virtual host name mapping.
 * Handling the `WebResourceRequested` event.
 
-These approaches are described below.
+**Detailed contents:**
+* [Selecting an approach](#selecting-an-approach)
+* [Loading local content by navigating to a file URL](#loading-local-content-by-navigating-to-a-file-url)
+   * [Considerations for loading local content by navigating to a file URL](#considerations-for-loading-local-content-by-navigating-to-a-file-url)
+      * [Cross-origin resources](#cross-origin-resources)
+      * [Origin-based DOM APIs](#origin-based-dom-apis)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context)
+      * [Dynamic content](#dynamic-content)
+      * [Additional web resources](#additional-web-resources)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process)
+   * [APIs for loading local content by navigating to a file URL](#apis-for-loading-local-content-by-navigating-to-a-file-url)
+   * [Example of a file URL](#example-of-a-file-url)
+   * [Example of navigating to a file URL](#example-of-navigating-to-a-file-url)
+* [Loading local content by navigating to an HTML string](#loading-local-content-by-navigating-to-an-html-string)
+   * [Considerations for loading local content by navigating to an HTML string](#considerations-for-loading-local-content-by-navigating-to-an-html-string)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-1)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-1)
+      * [Dynamic content](#dynamic-content-1)
+      * [Additional web resources](#additional-web-resources-1)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-1)
+   * [APIs for loading local content by navigating to an HTML string](#apis-for-loading-local-content-by-navigating-to-an-html-string)
+   * [Example string representation of a webpage](#example-string-representation-of-a-webpage)
+   * [Example of navigating to an HTML string](#example-of-navigating-to-an-html-string)
+* [Loading local content by using virtual host name mapping](#loading-local-content-by-using-virtual-host-name-mapping)
+   * [Considerations for loading local content by using virtual host name mapping](#considerations-for-loading-local-content-by-using-virtual-host-name-mapping)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-2)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-2)
+      * [Dynamic content](#dynamic-content-2)
+      * [Additional web resources](#additional-web-resources-2)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-2)
+      * [Source maps with virtual host name mapping](#source-maps-with-virtual-host-name-mapping)
+   * [APIs for loading local content by using virtual host name mapping](#apis-for-loading-local-content-by-using-virtual-host-name-mapping)
+   * [Example of virtual host name mapping](#example-of-virtual-host-name-mapping)
+* [Loading local content by handling the WebResourceRequested event](#loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Custom scheme registration](#custom-scheme-registration)
+   * [Considerations for loading local content by handling the WebResourceRequested event](#considerations-for-loading-local-content-by-handling-the-webresourcerequested-event)
+      * [Origin-based DOM APIs](#origin-based-dom-apis-3)
+      * [DOM APIs requiring secure context](#dom-apis-requiring-secure-context-3)
+      * [Dynamic content](#dynamic-content-3)
+      * [Additional web resources](#additional-web-resources-3)
+      * [Additional web resources resolved in WebView2 process](#additional-web-resources-resolved-in-webview2-process-3)
+      * [Source maps with the WebResourceRequested event](#source-maps-with-the-webresourcerequested-event)
+   * [APIs for loading local content by handling the WebResourceRequested event](#apis-for-loading-local-content-by-handling-the-webresourcerequested-event)
+   * [Example of handling the WebResourceRequested event](#example-of-handling-the-webresourcerequested-event)
+* [See also](#see-also)
 
 
 <!-- ====================================================================== -->
@@ -25,15 +69,14 @@ These approaches are described below.
 The various ways of loading local content into a WebView2 control support the following scenarios:
 
 | Scenario | By navigating to a file URL | By navigating to an HTML string | By using virtual host name mapping | By using `WebResourceRequested` |
-| --- |:---:|:---:|:---:|:---:|
-| Origin-based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
-| DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
-| Dynamic content | ❌ | ✔️ | ❌ | ✔️ |
-| Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
-| Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
+|---|:---:|:---:|:---:|:---:|
+| Origin-based DOM APIs | Yes ✔️ | No ❌ | Yes ✔️ | Yes ✔️ |
+| DOM APIs requiring secure context | No ❌ | No ❌ | Yes ✔️ | Yes ✔️ |
+| Dynamic content | No ❌ | Yes ✔️ | No ❌ | Yes ✔️ |
+| Additional web resources | Yes ✔️ | No ❌ | Yes ✔️  | Yes ✔️ |
+| Additional web resources resolved in WebView2 process | Yes ✔️ | No ❌ | Yes ✔️ | No ❌ |
 
-
-These scenarios are described in more detail below.
+These scenarios are described below.
 
 
 <!-- ====================================================================== -->
@@ -254,26 +297,26 @@ Loading local content by using the `NavigateToString` method doesn't make it pos
 The following is the string representation of the **Demo To Do** webpage.  The listing below has added line wrapping for readability.  In practice, these lines are concatenated into a single long line:
 
 ```html
-`<html lang="en"><head>\n    
-<meta charset="UTF-8">\n    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\n    
-<title>TODO app</title>\n    
-<link rel="stylesheet" href="styles/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">\n    
-<link rel="stylesheet" href="styles/dark-theme.css" media="(prefers-color-scheme: dark)">\n    
-<link rel="stylesheet" href="styles/base.css">\n    
-<link rel="stylesheet" href="styles/to-do-styles.css">\n    
+`<html lang="en"><head>\n   
+<meta charset="UTF-8">\n   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\n   
+<title>TODO app</title>\n   
+<link rel="stylesheet" href="styles/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">\n   
+<link rel="stylesheet" href="styles/dark-theme.css" media="(prefers-color-scheme: dark)">\n   
+<link rel="stylesheet" href="styles/base.css">\n   
+<link rel="stylesheet" href="styles/to-do-styles.css">\n   
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋
-</text></svg>">\n  
-</head>\n\n  
-<body>\n    
-<h1>📋 My tasks</h1>\n    
-<form>\n      
-<div class="new-task-form" tabindex="0">\n        
-<label for="new-task">➕ Add a task</label>\n        
-<input id="new-task" autocomplete="off" type="text" placeholder="Try typing 'Buy milk'" title="Click to start adding a task">\n        
-<input type="submit" value="➡️">\n      
-</div>\n      
-<ul id="tasks"><li class="divider">No tasks defined</li></ul>\n    
+</text></svg>">\n 
+</head>\n\n 
+<body>\n   
+<h1>📋 My tasks</h1>\n   
+<form>\n     
+<div class="new-task-form" tabindex="0">\n       
+<label for="new-task">➕ Add a task</label>\n       
+<input id="new-task" autocomplete="off" type="text" placeholder="Try typing 'Buy milk'" title="Click to start adding a task">\n       
+<input type="submit" value="➡️">\n     
+</div>\n     
+<ul id="tasks"><li class="divider">No tasks defined</li></ul>\n   
 </form>\n\n    \x3Cscript src="to-do.js">\x3C/script>\n  \n\n
 </body>
 </html>`
@@ -321,7 +364,7 @@ webView->NavigateToString(htmlString);
 <!-- ====================================================================== -->
 ## Loading local content by using virtual host name mapping
 
-Another way to load local content in a WebView2 control is to use virtual host name mapping.  This involves mapping a local domain name to a local folder, so that when the WebView2 control attempts to load a resource for that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name. 
+Another way to load local content in a WebView2 control is to use virtual host name mapping.  This involves mapping a local domain name to a local folder, so that when the WebView2 control attempts to load a resource for that domain, it will load the content from the specified local folder location instead. The origin of the document will also be the virtual host name.
 
 This approach lets you specify the cross-origin access, by using the `CoreWebView2HostResourceAccessKind` enum.
 
@@ -369,7 +412,7 @@ Source maps are needed to debug the source code of compiled content, including:
 * Transpiled JavaScript, such as TypeScript or minified JavaScript.
 * Compiled CSS, such as SASS or SCSS.
 
-WebView2 doesn't load source maps that are referenced by content which was loaded by using virtual host name mapping.  
+WebView2 doesn't load source maps that are referenced by content which was loaded by using virtual host name mapping. 
 
 For example, suppose WebView2 loads `main.js` via virtual host name mapping.  If `main.js` references `main.js.map` as its source map, `main.js.map` will not be loaded automatically.
 
@@ -408,7 +451,7 @@ To use source maps along with virtual host name mapping, generate inline source 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", 
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo",
          "C:\Github\Demos\demo-to-do", CoreWebView2HostResourceAccessKind.DenyCors);
 webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
@@ -416,10 +459,10 @@ webView.CoreWebView2.Navigate("https://demo/index.html");
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 ```csharp
-Windows.Storage.StorageFolder storageFolder = 
+Windows.Storage.StorageFolder storageFolder =
                               Windows.Storage.ApplicationData.Current.LocalFolder;
 Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
-webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", demo.Path, 
+webView.CoreWebView2.SetVirtualHostNameToFolderMapping("demo", demo.Path,
                                      CoreWebView2HostResourceAccessKind.DenyCors);
 webView.CoreWebView2.Navigate("https://demo/index.html");
 ```
@@ -427,7 +470,7 @@ webView.CoreWebView2.Navigate("https://demo/index.html");
 ##### [Win32/C++](#tab/win32cpp)
 
 ```cpp
-webView->SetVirtualHostNameToFolderMapping(L"demo", L"C:\\Github\\Demos\\demo-to-do", 
+webView->SetVirtualHostNameToFolderMapping(L"demo", L"C:\\Github\\Demos\\demo-to-do",
                                   COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND_DENY_CORS);
 webView->Navigate(L"https://demo/index.html");
 ```
@@ -440,7 +483,7 @@ webView->Navigate(L"https://demo/index.html");
 
 Another way you can host local content in a WebView2 control is by relying on the `WebResourceRequested` event.  This event is triggered when the control attempts to load a resource.  You can use this event to intercept the request and provide the local content, as described in [Custom management of network requests](../how-to/webresourcerequested.md).
 
-`WebResourceRequested` allows you to customize the behavior of local content on a per-request basis. This means you can decide which requests to intercept and provide your own content for, and which requests to let the WebView2 control handle normally.  However, customizing the behavior requires more code, such as virtual host mapping, and requires knowledge of HTTP, to be able to construct a proper response. 
+`WebResourceRequested` allows you to customize the behavior of local content on a per-request basis. This means you can decide which requests to intercept and provide your own content for, and which requests to let the WebView2 control handle normally.  However, customizing the behavior requires more code, such as virtual host mapping, and requires knowledge of HTTP, to be able to construct a proper response.
 
 From WebView2's perspective, the resource will have come via the network, and WebView2 will adhere to the headers that are set by the app as part of the response. Using the `WebResourceRequested` event is also slower than other approaches, due to the cross-process communication and processing that's needed for each request.
 
@@ -543,7 +586,7 @@ To use source maps along with `WebResourceRequested`, use one of the following a
 ##### [.NET/C#](#tab/dotnetcsharp)
 
 ```csharp
-// Reading of response content stream happens asynchronously, and WebView2 does not 
+// Reading of response content stream happens asynchronously, and WebView2 does not
 // directly dispose the stream once it read.  Therefore, use the following stream
 // class, which properly disposes when WebView2 has read all data.  For details, see
 // [CoreWebView2 does not close stream content](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2513).
@@ -588,7 +631,7 @@ class ManagedStream : Stream {
             {
                 s_.Dispose();
             }
-        } 
+        }
         catch
         {
             s_.Dispose();
@@ -604,12 +647,12 @@ class ManagedStream : Stream {
 
    private Stream s_;
 }
-webView.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", 
+webView.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*",
                                                 CoreWebView2WebResourceContext.All);
-webView.CoreWebView2.WebResourceRequested += delegate (object sender, 
+webView.CoreWebView2.WebResourceRequested += delegate (object sender,
                                      CoreWebView2WebResourceRequestedEventArgs args)
 {
-    string assetsFilePath = "C:\\Demo\\" + 
+    string assetsFilePath = "C:\\Demo\\" +
                             args.Request.Uri.Substring("https://demo/*".Length - 1);
     try
     {
@@ -663,7 +706,7 @@ class ManagedStream : IRandomAccessStream
 
     public override bool CanWrite => s_.CanWrite;
 
-    ulong IRandomAccessStream.Position => 
+    ulong IRandomAccessStream.Position =>
                                  { get => s_.Position; set => s_.Position = value; }
 
     public ulong Size => s_.Size;
@@ -688,7 +731,7 @@ class ManagedStream : IRandomAccessStream
         throw new NotImplementedException();
     }
 
-    public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer, 
+    public IAsyncOperationWithProgress<IBuffer, uint> ReadAsync(IBuffer buffer,
                                              uint count, InputStreamOptions options)
     {
         IAsyncOperationWithProgress<IBuffer, uint> result;
@@ -698,7 +741,7 @@ class ManagedStream : IRandomAccessStream
             // Once read is complete if no data was read, dispose the underlying
             // stream.
             result.Completed += new AsyncOperationWithProgressCompletedHandler<IBuffer, uint>(
-                     delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo, 
+                     delegate (IAsyncOperationWithProgress<IBuffer, uint> asyncInfo,
                                AsyncStatus asyncStatus)
             {
                 if (asyncInfo.GetResults().Length == 0)
@@ -733,19 +776,19 @@ class ManagedStream : IRandomAccessStream
     private IRandomAccessStream s_;
 }
 
-WebView2.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*", 
+WebView2.CoreWebView2.AddWebResourceRequestedFilter("https://demo/*",
                                                 CoreWebView2WebResourceContext.All);
-WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sender, 
+WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sender,
                                      CoreWebView2WebResourceRequestedEventArgs args)
 {
     string filename = args.Request.Uri.Substring("https://demo/*".Length - 1);
     try
     {
-        Windows.Storage.StorageFolder storageFolder = 
+        Windows.Storage.StorageFolder storageFolder =
                                 Windows.Storage.ApplicationData.Current.LocalFolder;
         Windows.Storage.StorageFolder demo = await storageFolder.GetFolderAsync("Demo");
         Windows.Storage.StorageFile asset = await demo.GetFileAsync(filename);
-        
+       
         ManagedStream ms = new ManagedStream(await asset.OpenReadAsync());
         string headers = "";
         if (filename.EndsWith(".html"))
@@ -769,12 +812,12 @@ WebView2.CoreWebView2.WebResourceRequested += async delegate (CoreWebView2 sende
             headers = "Content-Type: application/javascript";
         }
 
-        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(ms, 
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(ms,
                                                                 200, "OK", headers);
     }
     catch (Exception)
     {
-        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(null, 
+        args.Response = WebView2.CoreWebView2.Environment.CreateWebResourceResponse(null,
                                                               404, "Not found", "");
     }
 };
@@ -797,7 +840,7 @@ HRESULT AppWindow::WebResourceRequestedEventHandler(
     wil::com_ptr<ICoreWebView2WebResourceRequest> request;
     wil::com_ptr<ICoreWebView2WebResourceResponse> response;
     wil::com_ptr<IStream> stream;
-    
+   
     CHECK_FAILURE(args->get_Request(&request));
     wil::unique_cotaskmem_string uri;
     CHECK_FAILURE(request->get_Uri(&uri));

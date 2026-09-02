@@ -9,7 +9,7 @@ ms.subservice: extensions
 ms.date: 01/16/2025
 ---
 # Sample: Picture inserter using content script
-<!-- 
+<!--
 longer name would get truncated in Extensions pop-up:
 "name": "Picture inserter using a content scr...",
 -->
@@ -133,7 +133,7 @@ You are now free to modify the code in your working branch, without altering the
 
    GitHub Desktop opens, with the **MicrosoftEdge-Extensions** repo selected in the upper left dropdown list.
 
-   Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
+   Or, in GitHub Desktop, the **Clone a repository** dialog opens:
 
    ![The "Clone a repository" dialog in GitHub Desktop](./picture-viewer-popup-webpage-images/clone-a-repo-dbox-ghd.png)
 
@@ -396,7 +396,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 In `content.js`, the `addListener` method takes a single parameter that's a function.  That function's first parameter, `request`, contains the details of the message that's being passed in.
 
-In `content.js`, when an event is processed by the listener, the listener function that's passed into `addListener` is run.  The first parameter of the passed-in listener function is a `request` object that has attributes as assigned by `sendMessage`.  
+In `content.js`, when an event is processed by the listener, the listener function that's passed into `addListener` is run.  The first parameter of the passed-in listener function is a `request` object that has attributes as assigned by `sendMessage`. 
 
 In `popup.js`, for the `chrome.tabs.sendMessage` method call, the attributes of the second parameter for `sendMessage` are `url`, `imageDivId`, and `tabId`.
 

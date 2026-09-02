@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 122)
-description: "Copilot's explanation of Console errors includes a suggested fix. Keyboard shortcut to move through the open tools is working correctly. Icons are displayed correctly in high-contrast mode. And more." 
+description: Copilot's explanation of Console errors includes a suggested fix. Keyboard shortcut to move through the open tools is working correctly. Icons are displayed correctly in high-contrast mode. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -13,7 +13,7 @@ ms.date: 02/23/2024
 These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 

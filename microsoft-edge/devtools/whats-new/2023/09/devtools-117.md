@@ -13,7 +13,7 @@ ms.date: 09/14/2023
 These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 
@@ -51,7 +51,7 @@ Before Microsoft Edge 117, the Console was blank after closing and then re-openi
 
 
 <!-- ====================================================================== -->
-## Accessibility fixes 
+## Accessibility fixes
 
 In Microsoft Edge 117, the following accessibility issues have been addressed:
 

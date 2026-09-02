@@ -311,7 +311,7 @@ See also:
 <!-- ------------------------------ -->
 #### Frame details view updates
 
-In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  
+In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)

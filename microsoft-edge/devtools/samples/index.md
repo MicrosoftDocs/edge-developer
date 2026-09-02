@@ -225,7 +225,7 @@ If you want to just download the Demos repo instead of cloning it:
 
 To download a single directory of the Demos repo:
 
-1. Go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).  
+1. Go to [https://download-directory.github.io/](https://download-directory.github.io/) and then paste the URL [https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do).
 
    The `.zip` file is placed in your download directory.  Unzip these webpage source files into a suitable location.
 
