@@ -132,7 +132,7 @@ To create a WebView2 app for WinUI 3 (Windows App SDK):
 
     The project templates that were installed in the previous major step are listed.
 
-1.  Click the **Blank App, Packaged (WinUI 3 in Desktop)** card to select it, and then click the **Next** button.  
+1.  Click the **Blank App, Packaged (WinUI 3 in Desktop)** card to select it, and then click the **Next** button. 
 
     The **Configure your new project** dialog appears.
 
@@ -276,7 +276,7 @@ To add a WebView2 control that initially navigates to the Microsoft home page:
         </Grid.ColumnDefinitions>
 
         <controls:WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2"
-            Source="https://www.microsoft.com" HorizontalAlignment="Stretch" 
+            Source="https://www.microsoft.com" HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"/>
     </Grid>
     ```
@@ -335,11 +335,11 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
         <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
 
         <controls:WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2"
-            Source="https://www.microsoft.com" HorizontalAlignment="Stretch" 
+            Source="https://www.microsoft.com" HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"/>
     </Grid>
     ```
-    
+   
 1.  In `MainWindow.xaml.cs`, paste the following `try/catch` block into the body of the `myButton_Click` method:
 
     ```csharp
@@ -358,7 +358,7 @@ To allow users to control which webpage is displayed in the WebView2 control, ad
     ```
 
     This code navigates the WebView2 control to the URL that the user enters in the Address bar, when the user clicks the **Go** button, by re-setting the value of the `MyWebView.Source` property, which is equivalent to the `Source` attribute of the `<controls:WebView2 x:Name="MyWebView">` element.
-    
+   
 1.  Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 1.  Press **F5**.
@@ -496,7 +496,7 @@ To display an alert when the user tries to navigate to a non-HTTPS site:
         }
     }
     ```
-    
+   
 1.  Select **File** > **Save All** (**Ctrl+Shift+S**).
 
 1.  Press **F5**.

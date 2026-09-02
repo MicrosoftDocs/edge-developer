@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 131)
-description: "Can disable Edge experiment settings. View CSS selector stats information in Insights tab of sidebar panel in Performance tool. Fixed edit field to exit after pressing tab after auto-completion. Removed Visual Studio Code themes. And more."
+description: Can disable Edge experiment settings. View CSS selector stats information in Insights tab of sidebar panel in Performance tool. Fixed edit field to exit after pressing tab after auto-completion. Removed Visual Studio Code themes. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -74,7 +74,7 @@ See also:
 
 Pressing the **Tab** key after auto-completion now exits the edit field and focuses on the next focus point.  Before, pressing **Tab** would just indent the text.
 
-<!-- todo 
+<!-- todo
 See also:
 * []()
 -->

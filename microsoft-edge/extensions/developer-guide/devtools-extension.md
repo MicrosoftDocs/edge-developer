@@ -325,7 +325,7 @@ When the user clicks the `sayHello` button, `devtools.js` runs code directly in 
 
 When the user clicks anywhere in the inspected window, the DevTools extensions receive a message with `request.click == true` and the mouse position information.
 
-See also: 
+See also:
 * [devtools.js](https://github.com/MicrosoftEdge/Demos/blob/main/devtools-extension/devtools.js) - source file in repo.
 * [Supported APIs for Microsoft Edge extensions](../developer-guide/api-support.md)
    * [chrome.devtools.panels](https://developer.chrome.com/docs/extensions/reference/api/devtools/panels)

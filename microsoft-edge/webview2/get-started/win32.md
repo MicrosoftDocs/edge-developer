@@ -375,10 +375,10 @@ Now to do the above, in the callback, you'll:
 
    ```cpp
       UpdateWindow(hWnd);
-   
+  
       // <-- WebView2 sample code starts here -->
    ```
-   
+  
 1. If the following code isn't already present, paste the following code into `HelloWebView.cpp`.  Paste the code in between the lines `// <-- WebView2 sample code starts here -->` and `// <-- WebView2 sample code ends here -->`:
 
    ```cpp

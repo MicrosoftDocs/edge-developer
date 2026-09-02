@@ -236,7 +236,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. Try out the demo with different values.  The demo now calculates correctly.
 
-1. When debugging your own project, after you identify the fix, you then fix your actual source code on the server, such as by editing your local source code and then re-deploying your fixed code to the server.  The previous steps only apply a fix to a temporary local copy of the code that's sent from the server.   
+1. When debugging your own project, after you identify the fix, you then fix your actual source code on the server, such as by editing your local source code and then re-deploying your fixed code to the server.  The previous steps only apply a fix to a temporary local copy of the code that's sent from the server.
 
 
 <!-- ====================================================================== -->

@@ -61,7 +61,7 @@ To try autocompletion while writing multi-part expressions:
 <!-- ====================================================================== -->
 ## Console history
 
-As with many other command-line environments, a history of the commands that you entered is available for reuse.  Press **Up Arrow** to display the commands that you entered previously.  
+As with many other command-line environments, a history of the commands that you entered is available for reuse.  Press **Up Arrow** to display the commands that you entered previously.
 
 Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a text box.
 
@@ -164,7 +164,7 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
    )).json())
    ```
-   
+
 The **Console** is a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
 

@@ -267,7 +267,7 @@ After you verified that the animation isn't performing well, the next step is to
    Or, press **W**.
 
    You can now see the events that occur when a single frame of the animation is rendered. The **update** function is called, which, in turn, calls the **updateSlow** function, which triggers many **Recalculate Style** and **Layout** events:
-   
+
    ![The Animation Frame Fired event and its child events](./index-images/animation-frame-children.png)
 
 1. Click one of the purple **Layout** events.
@@ -355,7 +355,7 @@ Finally, we read `element.offsetTop` again, to adjust the direction of the icon.
 <!-- ====================================================================== -->
 ## Step 11: Analyze the optimized code
 
-The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app: 
+The optimized code uses a different sequence of actions to do less work. Here is the same snippet of JavaScript from the optimized version of the app:
 
 ```javascript
 // Read the current position.
@@ -412,7 +412,7 @@ See also:
 To get more comfortable with the **Performance** tool, practice profiling your webpages and analyzing the results.
 
 If you have any questions about your results, in the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar](./index-images/help-icon.png)) > **Feedback**.  Or, press **Alt+Shift+I** (Windows, Linux) or **Option+Shift+I** (macOS).
- 
+
 Or, [file an issue on the MicrosoftEdge / DevTools repo](https://github.com/MicrosoftEdge/DevTools/issues).
 
 In your feedback, include screenshots or links to reproducible webpages, if possible.
@@ -422,7 +422,7 @@ There are many ways to improve runtime performance.  This article focused on one
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/performance) and is authored by Kayce Basques.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)

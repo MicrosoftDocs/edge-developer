@@ -12,7 +12,7 @@ ms.date: 09/15/2021
 <!--
 previously contained a single, article-scoped tabset; converted the 3 tabs to 3 .md files/articles
 todo: delete .md & define a redirect?
-needed as a generic landing page to link to?  
+needed as a generic landing page to link to? 
 articles don't link to here
 -->
 

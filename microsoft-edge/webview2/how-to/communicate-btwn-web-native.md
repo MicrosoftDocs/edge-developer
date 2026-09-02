@@ -84,7 +84,7 @@ To see messaging in action:
    ```javascript
    window.chrome.webview.addEventListener('message', arg => {
       if ("SetColor" in arg.data) {
-         document.getElementById("colorable").style.color = 
+         document.getElementById("colorable").style.color =
          arg.data.SetColor;
       }
    });
@@ -96,15 +96,15 @@ To see messaging in action:
 
    ```html
    <h1>WebMessage sample page</h1>
-   <p>This page demonstrates basic interaction between the host app 
+   <p>This page demonstrates basic interaction between the host app
    and the webview by means of Web Messages.</p>
 
    <h2>Posting Messages</h2>
-   <p id="colorable">Messages can be posted from the host app to the 
+   <p id="colorable">Messages can be posted from the host app to the
    webview using the functions
    <code>ICoreWebView2::PostWebMessageAsJson</code> and
-   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting 
-   the menu item "Script > Post Message JSON" to send the message 
+   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting
+   the menu item "Script > Post Message JSON" to send the message
    <code>{"SetColor":"blue"}</code>.
    It should change the text color of this paragraph.</p>
    ```
@@ -146,9 +146,9 @@ The C++ file handles the title text and communicates it to the host app as a str
 
    ```html
    <h2>Receiving Messages</h2>
-   <p>The host app can receive messages by registering an event handler 
-   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you 
-   enter text and click "Send", this page will send a message to the 
+   <p>The host app can receive messages by registering an event handler
+   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you
+   enter text and click "Send", this page will send a message to the
    host app which will change the text of the title bar.</p>
    <input type="text" id="title-text"/>
    <button onclick="SetTitleText()">Send</button>
@@ -206,9 +206,9 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
    ```html
    <h2>Round trip</h2>
-   <p>The host app can send messages back in response to received 
-   messages. If you click the <b>Get window bounds</b> button, the 
-   host app reports back the bounds of its window, which are 
+   <p>The host app can send messages back in response to received
+   messages. If you click the <b>Get window bounds</b> button, the
+   host app reports back the bounds of its window, which are
    displayed in the text box.</p>
    <button onclick="GetWindowBounds()">Get window bounds</button><br>
    <textarea id="window-bounds" rows="4" readonly></textarea>

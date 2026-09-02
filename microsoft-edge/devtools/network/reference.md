@@ -112,7 +112,7 @@ For a step-by-step walkthrough and introduction to the **Network** tool, see [In
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
-For example: 
+For example:
 
 1. Go to a webpage, such as the [Inspect Network Activity](https://microsoftedge.github.io/Demos/network-tutorial/) demo page, in a new window or tab.
 
@@ -204,7 +204,7 @@ To capture a screenshot:
 1. Click the thumbnail of a screenshot to filter out any requests that occurred after the screenshot was captured.
 
 1. Double-click a screenshot thumbnail to zoom-in and view the screenshot.
- 
+
 1. Press **Esc** to close the screenshot viewer.
 
 
@@ -493,7 +493,7 @@ To observe WebSocket throttling:
 1. Go to a page that uses WebSockets, such as [Online WebSocket Tester](https://www.piesocket.com/websocket-tester), in a new window or tab.
 
 1. On the page, establish the WebSocket connection.
-    
+
    If you use the **Online WebSocket Tester** webpage, click the **Connect** button.
 
    If you don't create a PieSocket account to get an API Token, the webpage displays "Connection Established - {"error":"Unknown api key"}".
@@ -515,7 +515,7 @@ To observe WebSocket throttling:
    The console within the **Online WebSocket Tester** webpage displays **DevTools with throttling**.
 
 1. At the top of the **Network** tool, select the **Socket** filter button (shown below).
-    
+
 1. In the table, click your connection name, such as **channel_123?api_key=...**.
 
    Tabs appear.
@@ -687,7 +687,7 @@ You can use multiple properties simultaneously by separating each property with 
 The complete list of supported properties:
 
 | Property | Details |
-|:--- | :--- |
+|---|---|
 | `cookie-domain` | Show the resources that set a specific cookie domain. |
 | `cookie-name` | Show the resources that set a specific cookie name. |
 | `cookie-path` | Show the resources that set a specific cookie path. |
@@ -904,15 +904,15 @@ To change how the **Waterfall** column sorts requests:
 * Right-click the header of the **Requests** table, click **Waterfall**, and then select one of the following options:
 
    * **Start Time** - The first request that was initiated is placed at the top.
-   
+
    * **Response Time** - The first request that started downloading is placed at the top.
-   
+
    * **End Time** - The first request that finished is placed at the top.
-   
+
    * **Total Duration** - The request with the shortest connection settings and request or response is placed at the top.
-   
+
    * **Latency** - The request that waited the shortest time for a response is placed at the top.
-      
+
 These descriptions assume that each respective option is ranked from shortest to longest.  Click the header of the **Waterfall** column to reverse the order.
 
 The following shows sorting the Waterfall by total duration.  The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes:
@@ -956,7 +956,7 @@ The **Waterfall** column is off by default.  To turn on the **Waterfall** column
 ###### Add or remove columns
 <!-- https://developer.chrome.com/docs/devtools/network/reference/#columns -->
 
-Right-click the header of the **Requests** table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them.
+Right-click the header of the **Requests** table and select a column name to hide or show it.  The currently displayed columns have checkmarks next to them:
 
 ![Adding a column to the **Requests** table](./reference-images/requests-add-column.png)
 
@@ -969,11 +969,11 @@ To add a custom column to the **Requests** table:
 
 1. Right-click the header of the **Requests** table and then select **Response Headers** > **Manage Header Columns**.
 
-   The **Manage Header Columns** popup window opens.
-
-1. Click the **Add custom header** button, enter the custom header name, and then click **Add**. 
+   The **Manage Header Columns** popup window opens:
 
    ![Adding a custom column to the **Requests** table](./reference-images/requests-add-custom-column.png)
+
+1. Click the **Add custom header** button, enter the custom header name, and then click the **Add** button.<!-- todo: show Add button like https://developer.chrome.com/static/docs/devtools/network/reference/image/adding-custom-column-th-19867e5fa8081_856.png -->
 
 
 <!-- ------------------------------ -->
@@ -1104,7 +1104,7 @@ To refresh the **Requests** table, in the **Name** pane, click the name of the W
 
 The **Requests** table contains the following three columns:
 
-*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: 
+*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported:
    * Continuation Frame
    * Binary Frame
    * Connection Close Frame
@@ -1774,7 +1774,7 @@ To copy the formatted JSON data of a JSON response:
 
 1. In the sidebar, select the **Preview** tab.
 
-1. Right-click the first line of the formatted JSON response preview and then select **Copy value**. 
+1. Right-click the first line of the formatted JSON response preview, and then select **Copy value**:
 
    ![The Copy Value right-click command](./reference-images/copy-json-value.png)
 

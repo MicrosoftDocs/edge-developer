@@ -58,14 +58,14 @@ These steps explain how to start http-server by using the cross-platform git bas
    ```bash
    npx http-server
    ```
-   
+  
    ![Starting the server](./get-started-launch-project-images/git-bash-starting-server-2nd-time.png)
 
    Information about the server and localhost URL is displayed, such as:
 
    ```bash
    Starting up http-server, serving ./
-   
+  
    Available on:
    http://10.0.1.8:8080
    http://127.0.0.1:8080
@@ -81,7 +81,7 @@ These steps explain how to start http-server by using the cross-platform git bas
 This section is in support of clicking the **Launch Project** button.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.  Select your project directory that contains `index.html` for the cloned **demo-to-do** sample in the Demos repo, such as `C:\Users\username\Documents\GitHub\Demos\demo-to-do\`.
-   
+  
    ![The demo-to-do sample folder opened in Visual Studio Code](./get-started-launch-project-images/demo-todo-folder-opened.png)
 
    Just like in the repo's [demo-to-do](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) folder, initially there's no `.vscode` folder, and no `launch.json` file in that folder.
@@ -97,7 +97,7 @@ This section is in support of clicking the **Launch Project** button.
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right , and note the comment, "Provide your project's url":
 
    ```javascript
-   "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
+   "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html",
    // Provide your project's url to finish configuring
    ```
 

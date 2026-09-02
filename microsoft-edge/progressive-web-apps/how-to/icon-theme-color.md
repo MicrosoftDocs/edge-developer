@@ -52,7 +52,7 @@ In the web app manifest file, app icons are defined with the `icons` member:
 Each icon in the `icons` array should come with at least the `src` and `sizes` properties.  An icon can also have the `type` and `purpose` properties.
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | `src` | The path to the image file, which can be a relative path from the app root folder, or an absolute URL. |
 | `sizes` | A space-separated list of sizes that the corresponding image can be used for. |
 | `type` | An optional hint for the OS to quickly detect the image type. |
@@ -111,7 +111,7 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
     * 100x100 - store tile 2x display scale
     * 200x200 - store tile 4x display scale
     * 620x300 - splash screen
-    * 775x375 - splash screen 1.25x display scale  
+    * 775x375 - splash screen 1.25x display scale 
     * 930x450 - splash screen 1.5x display scale
     * 1240x600 - splash screen 2x display scale
     * 2480x1200 - splash screen 4x display scale
@@ -175,19 +175,19 @@ Your PWA can be enhanced on Windows by supplying the images with specific dimens
 
 Consider, for example, how your app icon might show different content depending on the available surface area:
 
-* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo: 
+* Small surface: App icon (44x44) in taskbar, showing a small, abbreviated logo:
 
-![The small size icon](./icon-theme-color-images/windows-image-app-icon.png) 
+![The small size icon](./icon-theme-color-images/windows-image-app-icon.png)
 
-* Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app:  
+* Larger surface: Medium tile (150x150) in start menu, showing the full logo of the app: 
 
-![The medium size icon](./icon-theme-color-images/windows-image-small-tile.png) 
+![The medium size icon](./icon-theme-color-images/windows-image-small-tile.png)
 
-* Wide surface: Wide tile in start menu, showing a more articulated app icon: 
+* Wide surface: Wide tile in start menu, showing a more articulated app icon:
 
-![The wide size icon](./icon-theme-color-images/windows-image-wide-tile.png) 
+![The wide size icon](./icon-theme-color-images/windows-image-wide-tile.png)
 
-Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users.  
+Notice how the content of the icon changed. This is possible only through the use of higher levels of icon support. We recommend developers choose higher levels to give the best experience for your Windows users. 
 
 
 <!-- ------------------------------ -->
@@ -197,7 +197,7 @@ Below you'll find a description of each app icon and where they show up in Windo
 
 The normal app icon that's shown in the start menu, task bar, or task manager.
 
-![App Icon](./icon-theme-color-images/windows-image-app-icon.png) 
+![App Icon](./icon-theme-color-images/windows-image-app-icon.png)
 
 * 44x44
 * 55x55 (1.25x scale)
@@ -207,7 +207,7 @@ The normal app icon that's shown in the start menu, task bar, or task manager.
 
 The small tile is shown in the start menu when the user set your app's tile to small size.
 
-![Small tile](./icon-theme-color-images/windows-image-small-tile.png) 
+![Small tile](./icon-theme-color-images/windows-image-small-tile.png)
 
 * 71x71
 * 89x89 (1.25x scale)
@@ -240,7 +240,7 @@ The large tile icon is in the start menu when the user sets your app's tile to l
 ![Large tile](./icon-theme-color-images/windows-image-large-tile.png)
 
 * 310x310
-* 388x388 (1.25x scale)  
+* 388x388 (1.25x scale) 
 * 465x465 (1.5x scale)
 * 620x620 (2x scale)
 * 1240x1240 (4x scale)
@@ -269,7 +269,7 @@ The splash screen asset is shown as the splash screen for your app. Currently su
 <!-- ------------------------------ -->
 #### Target sized images
 
-In addition to the standard scale factor sizes described above, we also recommend creating "target-size" assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don't use the scaling plateau system. 
+In addition to the standard scale factor sizes described above, we also recommend creating "target-size" assets. We call these assets target-size because they target specific sizes, such as 16 pixels, rather than specific scale factors, such as 400. Target-size assets are for Windows surfaces that don't use the scaling plateau system.
 
 For example, the **Apps & features** Windows setting uses app icons with specific sizes
 

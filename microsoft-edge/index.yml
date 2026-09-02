@@ -502,15 +502,15 @@ conceptualContent:
 #             - text: Introduction to the Microsoft DualEngine API
 #               url: ./dualengine/intro.md
 #               itemType: overview
- 
+
 #             - text: Getting started with the DualEngine API
 #               url: ./dualengine/get-started.md
 #               itemType: get-started
- 
+
 #             - text: Creating a DualEngine adapter plugin DLL
 #               url: ./dualengine/concepts/adapter-dll.md
 #               itemType: how-to-guide
- 
+
 #             - text: Launching Internet Explorer
 #               url: ./dualengine/concepts/launching-internet-explorer.md
 #               itemType: how-to-guide

@@ -337,7 +337,7 @@ string GetPrinterName()
 }
 
 // Gets the print settings for the selected printer.
-// You can also get the capabilities from the native printer API, and display them 
+// You can also get the capabilities from the native printer API, and display them
 // to the user to get the print settings for the current webpage and for the selected printer.
 CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 {
@@ -401,7 +401,7 @@ async void PrintToPrinter(object sender, RoutedEventArgs e)
   await dialog.ShowAsync();
 }
 
-// Gets the printer name by displaying the list of installed printers to the user, 
+// Gets the printer name by displaying the list of installed printers to the user,
 // and returns the user-selected printer.
 string GetPrinterName()
 {
@@ -412,7 +412,7 @@ string GetPrinterName()
 }
 
 // Gets print settings for the selected printer.
-// You can also get the capabilities from the printer APIs, and display them to the 
+// You can also get the capabilities from the printer APIs, and display them to the
 // user to get the print settings for the current webpage and for the selected printer.
 CoreWebView2PrintSettings GetSelectedPrinterPrintSettings(string printerName)
 {
@@ -457,7 +457,7 @@ struct SamplePrintSettings
   std::wstring FooterUri = L"";
 };
 
-// Gets the printer name by displaying the list of installed printers to the user, 
+// Gets the printer name by displaying the list of installed printers to the user,
 // and returns the user-selected printer.
 std::wstring AppWindow::GetPrinterName()
 {
@@ -467,8 +467,8 @@ std::wstring AppWindow::GetPrinterName()
 }
 
 // Gets the print settings for the selected printer.
-// You can also get the capabilities from the native printer API, and display them 
-// to the user to get the print settings for the current webpage and for the 
+// You can also get the capabilities from the native printer API, and display them
+// to the user to get the print settings for the current webpage and for the
 // selected printer.
 SamplePrintSettings AppWindow::GetSelectedPrinterPrintSettings(std::wstring printerName)
 {

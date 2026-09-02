@@ -45,7 +45,7 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 <!-- Title: DevTools Tooltips  -->
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following:
 
 <!-- todo: update for Focus Mode -->
 * Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
@@ -56,7 +56,7 @@ Then hover over each outlined region of DevTools:
 
 ![DevTools Tooltips mode](./devtools-images/tooltips.png)
 
-To turn off Tooltips, press **Esc**.  
+To turn off Tooltips, press **Esc**.
 
 Update: This feature has been released and is no longer experimental.<!-- valid. -->
 <!-- To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:

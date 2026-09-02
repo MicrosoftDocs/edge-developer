@@ -86,7 +86,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 1. In DevTools, on the **Activity Bar**, select the **Console** tab.
 
 1. In the **Console** tool, run JavaScript code to edit the IndexedDB data. For example, to add a new value to the `keyval` object store, run the following code:
-   
+
    ```javascript
    let connection = indexedDB.open("keyval-store", 1);
 

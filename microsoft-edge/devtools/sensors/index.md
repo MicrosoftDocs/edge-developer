@@ -98,9 +98,9 @@ To override your geolocation, [open the Sensors tool](#open-the-sensors-tool) an
 <!-- https://developer.chrome.com/docs/devtools/sensors#orientation -->
 
 Mobile devices have sensors which can detect their physical orientation.  Websites such as web-based games or mapping applications can make use of the device orientation to provide a better experience.  To learn about how to detect the device orientation, see [Device orientation events](https://developer.mozilla.org/docs/Web/API/Device_orientation_events), at MDN.
-    
+
 If you're building a UI that changes depending on the orientation of the user's device, you need to test your UI under different device orientations.
-    
+
 To simulate different device orientations, [open the Sensors tool](#open-the-sensors-tool), and then, from the **Orientation** list, select one of the following:
 
 * One of the preset orientations, like **Portrait upside down**:
@@ -242,7 +242,7 @@ To emulate CPU pressure on your website:
 
    The **Sensors** tool opens in the **Quick View** panel at the bottom of DevTools.
 
-1. In the **Sensors** tool, scroll down to the **CPU pressure** section, and then select one of the [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states): 
+1. In the **Sensors** tool, scroll down to the **CPU pressure** section, and then select one of the [human-readable pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states):
 
    * **No override**
    * **Nominal**
@@ -272,7 +272,7 @@ MDN:
    * [Pressure states](https://developer.mozilla.org/docs/Web/API/Compute_Pressure_API#pressure_states) in _Compute Pressure API_.
 
 Demos:
-* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/) 
+* [TODO app](https://microsoftedge.github.io/Demos/demo-to-do/)
 * [Idle detection demo](https://microsoftedge.github.io/Demos/idle-detection/)
 
 Emscripten:

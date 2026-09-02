@@ -98,7 +98,7 @@ later, check:  Teams > Team > channel > Files > dir > file name -->
 
 1. The WebView2 control renders the error page that's returned by the HTTP server.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
    <!-- "10. Renders the error page (DOMContentLoaded, NavigationCompleted)" -->
-   
+  
 1. The HTTP server might accept the authentication credentials and return the requested document.
    <!-- "11. Accepts authentication and returns the requested document" -->
 
@@ -121,10 +121,10 @@ For more realistic code, see the subsequent section.
 ##### [C#](#tab/csharp)
 
 ```csharp
-// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS
 // for sending credentials" in this article.
     webView.CoreWebView2.BasicAuthenticationRequested += delegate (
-       object sender, 
+       object sender,
        CoreWebView2BasicAuthenticationRequestedEventArgs args)
     {
         args.Response.UserName = "user";
@@ -140,7 +140,7 @@ For more realistic code, see the subsequent section.
 ##### [C++](#tab/cpp)
 
 ```cpp
-// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS
 // for sending credentials" in this article.
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
@@ -191,10 +191,10 @@ This example builds upon the above sample, by adding the following features:
 ##### [C#](#tab/csharp)
 
 ```csharp
-// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS
 // for sending credentials" in this article.
 webView.CoreWebView2.BasicAuthenticationRequested += delegate (
-    object sender, 
+    object sender,
     CoreWebView2BasicAuthenticationRequestedEventArgs args)
 {
     // We need to show UI asynchronously so we obtain a deferral.
@@ -265,7 +265,7 @@ webView.CoreWebView2.BasicAuthenticationRequested += delegate (
 ##### [C++](#tab/cpp)
 
 ```cpp
-// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS
 // for sending credentials" in this article.
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
@@ -312,11 +312,11 @@ if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
                         // as it may have important site specific information for the
                         // end user to provide the correct username and password.
                         prompt += L"\r\nChallenge: ";
-                        prompt += challenge.get(); 
+                        prompt += challenge.get();
 
                         // Use an app or UI framework method to get input from the end user.
                         TextInputDialog dialog(
-                            mainWindowHwnd, 
+                            mainWindowHwnd,
                             L"Authentication Request",
                             L"User name and password",
                             prompt.c_str(),

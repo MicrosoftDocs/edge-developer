@@ -170,7 +170,7 @@ If the **Device Type** list isn't displayed, select **More options** > **Add dev
 The **Device Type** list contains the following device types:
 
 | Device type | Rendering method | Cursor icon | Events triggered |
-|:--- |:--- |:--- |:--- |
+|---|---|---|---|
 | **Mobile** | Mobile | Circle | `touch` |
 | **Mobile (no touch)** | Mobile | Normal | `click` |
 | **Desktop** | Desktop | Normal | `click` |
@@ -250,7 +250,7 @@ The device frame for the iPhone 6/7/8:
 #### Add a custom mobile device
 <!-- https://developer.chrome.com/docs/devtools/device-mode/#custom -->
 
-If the mobile device option that you need isn't included on the default list, you can add a custom device.  
+If the mobile device option that you need isn't included on the default list, you can add a custom device.
 
 To add a custom device:
 

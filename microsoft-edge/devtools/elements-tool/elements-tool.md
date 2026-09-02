@@ -10,7 +10,7 @@ ms.date: 02/15/2022
 ---
 # Inspect, edit, and debug HTML and CSS with the Elements tool
 
-Use the **Elements** tool to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  
+Use the **Elements** tool to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 
 Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage.
 

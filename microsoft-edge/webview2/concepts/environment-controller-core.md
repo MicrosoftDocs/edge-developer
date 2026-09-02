@@ -78,7 +78,7 @@ From the `CoreWebView2Environment`, you create `CoreWebView2Controller` and `Cor
 <!-- ====================================================================== -->
 ## UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
 
-It's different if you are using a UI framework-specific WebView2 element class such as the WPF, WinForms, or WinUI WebView2 classes. 
+It's different if you are using a UI framework-specific WebView2 element class such as the WPF, WinForms, or WinUI WebView2 classes.
 
 Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use; otherwise, it creates a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.
 

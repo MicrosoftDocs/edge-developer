@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 123)
-description: "Memory tool reports backing store sizes as part of an object's shallow size. Crash analyzer tool is available by default. Command Palette experimental feature has been removed. Undocked DevTools window is kept focused as the topmost window while inspecting a page. And more."
+description: Memory tool reports backing store sizes as part of an object's shallow size. Crash analyzer tool is available by default. Command Palette experimental feature has been removed. Undocked DevTools window is kept focused as the topmost window while inspecting a page. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -13,7 +13,7 @@ ms.date: 03/21/2024
 These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 

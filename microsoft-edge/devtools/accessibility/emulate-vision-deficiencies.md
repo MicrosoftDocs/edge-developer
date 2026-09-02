@@ -13,7 +13,7 @@ ms.date: 12/04/2023
 To better meet the needs of users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, Microsoft Edge DevTools allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
 
 | Color vision deficiency | Details |
-|:--- |:--- |
+|---|---|
 | Blurred vision | The user has difficulty focusing on fine details. |
 | Protanopia | The user is unable to perceive any red light. |
 | Deuteranopia | The user is unable to perceive any green light. |
