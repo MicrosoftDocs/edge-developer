@@ -70,11 +70,11 @@ The various ways of loading local content into a WebView2 control support the fo
 
 | Scenario | By navigating to a file URL | By navigating to an HTML string | By using virtual host name mapping | By using `WebResourceRequested` |
 |---|:---:|:---:|:---:|:---:|
-| Origin-based DOM APIs | ✔️ | ❌ | ✔️ | ✔️ |
-| DOM APIs requiring secure context | ❌ | ❌ | ✔️ | ✔️ |
-| Dynamic content | ❌ | ✔️ | ❌ | ✔️ |
-| Additional web resources | ✔️ | ❌ | ✔️  | ✔️ |
-| Additional web resources resolved in WebView2 process | ✔️ | ❌ | ✔️ | ❌ |
+| Origin-based DOM APIs | Yes ✔️ | No ❌ | Yes ✔️ | Yes ✔️ |
+| DOM APIs requiring secure context | No ❌ | No ❌ | Yes ✔️ | Yes ✔️ |
+| Dynamic content | No ❌ | Yes ✔️ | No ❌ | Yes ✔️ |
+| Additional web resources | Yes ✔️ | No ❌ | Yes ✔️  | Yes ✔️ |
+| Additional web resources resolved in WebView2 process | Yes ✔️ | No ❌ | Yes ✔️ | No ❌ |
 
 These scenarios are described below.
 

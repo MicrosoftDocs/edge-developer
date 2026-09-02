@@ -152,47 +152,47 @@ On WinUI 2 (UWP), some of the predefined CSS cursors are not supported.  You can
 | Keyword | Supported? |
 |---|:---:|
 | **General:** | |
-| `auto` | ✔️ |
-| `default` | ✔️ |
-| `none` | ❌ |
+| `auto` | Yes ✔️ |
+| `default` | Yes ✔️ |
+| `none` | No ❌ |
 | **Links and status:** | |
-| `context-menu` | ✔️ |
-| `help` | ✔️ |
-| `pointer` | ✔️ |
-| `progress` | ❌ |
-| `wait` | ✔️ |
+| `context-menu` | Yes ✔️ |
+| `help` | Yes ✔️ |
+| `pointer` | Yes ✔️ |
+| `progress` | No ❌ |
+| `wait` | Yes ✔️ |
 | **Selection:** | |
-| `cell` | ❌ |
-| `crosshair` | ✔️ |
-| `text` | ✔️ |
-| `vertical-text` | ❌ |
+| `cell` | No ❌ |
+| `crosshair` | Yes ✔️ |
+| `text` | Yes ✔️ |
+| `vertical-text` | No ❌ |
 | **Drag and drop:** | |
-| `alias` | ❌ |
-| `copy` | ❌ |
-| `move` | ✔️ |
-| `no-drop` | ✔️ |
-| `not-allowed` | ✔️ |
-| `grab` | ❌ |
-| `grabbing` | ❌ |
+| `alias` | No ❌ |
+| `copy` | No ❌ |
+| `move` | Yes ✔️ |
+| `no-drop` | Yes ✔️ |
+| `not-allowed` | Yes ✔️ |
+| `grab` | No ❌ |
+| `grabbing` | No ❌ |
 | **Resizing and scrolling:** | |
-| `all-scroll` | ✔️ |
-| `col-resize` | ❌ |
-| `row-resize` | ❌ |
-| `n-resize` | ✔️ |
-| `e-resize` | ✔️ |
-| `s-resize` | ✔️ |
-| `w-resize` | ✔️ |
-| `ne-resize` | ✔️ |
-| `nw-resize` | ✔️ |
-| `se-resize` | ✔️ |
-| `sw-resize` | ✔️ |
-| `ew-resize` | ✔️ |
-| `ns-resize` | ✔️ |
-| `nesw-resize` | ✔️ |
-| `nwse-resize` | ✔️ |
+| `all-scroll` | Yes ✔️ |
+| `col-resize` | No ❌ |
+| `row-resize` | No ❌ |
+| `n-resize` | Yes ✔️ |
+| `e-resize` | Yes ✔️ |
+| `s-resize` | Yes ✔️ |
+| `w-resize` | Yes ✔️ |
+| `ne-resize` | Yes ✔️ |
+| `nw-resize` | Yes ✔️ |
+| `se-resize` | Yes ✔️ |
+| `sw-resize` | Yes ✔️ |
+| `ew-resize` | Yes ✔️ |
+| `ns-resize` | Yes ✔️ |
+| `nesw-resize` | Yes ✔️ |
+| `nwse-resize` | Yes ✔️ |
 | **Zooming:** | |
-| `zoom-in` | ❌ |
-| `zoom-out` | ❌ |
+| `zoom-in` | No ❌ |
+| `zoom-out` | No ❌ |
 
 See also:
 * [CSS cursors](https://developer.mozilla.org/docs/Web/CSS/cursor#values) - The **Values** section describes the above keyword values.
