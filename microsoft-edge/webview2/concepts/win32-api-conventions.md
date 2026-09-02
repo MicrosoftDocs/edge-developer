@@ -81,7 +81,7 @@ Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventNa
 <!-- ------------------------------ -->
 #### Event handler delegate interfaces
 
-Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event runs.  
+Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event runs. 
 
 Every event handler delegate interface has a single `Invoke` method that has a sender parameter followed by an event args parameter.  The sender is the instance of the object on which you subscribed for events.  The event args parameter is an interface that contains information about the currently firing event.
 

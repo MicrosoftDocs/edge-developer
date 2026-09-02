@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 133)
-description: "Move a tab left or right within the Elements or Sources tool. Screen reader improvements. And more."
+description: Move a tab left or right within the Elements or Sources tool. Screen reader improvements. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

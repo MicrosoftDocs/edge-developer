@@ -71,7 +71,7 @@ skinparam useBetaStyle false
 	network {
 			FontColor #2196F3
 	BorderColor #2196F3
-	BackgroundColor transparent    
+	BackgroundColor transparent   
 		LineColor #2196F3
 		LineThickness 1.0
 		FontColor #1a78c2
@@ -136,7 +136,7 @@ skinparam shadowing             true
 skinparam roundcorner           8
 skinparam ParticipantPadding    40
 skinparam BoxPadding            40
-skinparam Padding               10 
+skinparam Padding               10
 skinparam TitleFontColor	    #222
 skinparam TitleFontSize	    	20
 skinparam TitleBorderThickness 	0

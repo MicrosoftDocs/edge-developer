@@ -500,7 +500,7 @@
             - name: About the list of tools
               href: ./devtools/about-tools.md
 # =============================================================================
-# Default tools 
+# Default tools
 # -----------------------------------------------------------------------------
             - name: Inspect tool
               items:
@@ -686,7 +686,7 @@
 # -----------------------------------------------------------------------------
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
-                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
+                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview
                   href: ./devtools/performance/overview.md
                   displayName: Performance tool
 
@@ -741,7 +741,7 @@
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
                   href: ./devtools/memory-problems/heap-snapshots.md
-                  displayName: Memory tool 
+                  displayName: Memory tool
 
                 - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
                   href: ./devtools/memory-problems/allocation-profiler.md
@@ -2624,7 +2624,7 @@
           href: ./visual-studio-code/ide-integration.md
 
       # - name: Use DevTools as an IDE
-      #   href: 
+      #   href:
 
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md

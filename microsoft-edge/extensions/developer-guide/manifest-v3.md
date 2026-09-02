@@ -56,7 +56,7 @@ For information about end of support for Manifest V2 extensions in the Chromium 
 * [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website
 * [Manifest V3 changes are now available to test in Microsoft Edge](https://blogs.windows.com/msedgedev/2020/10/14/extension-manifest-chromium-edge/) blog post
 
-Chromium docs: 
+Chromium docs:
 * [Chromium project](https://www.chromium.org/Home/)
 * [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/develop/migrate/mv2-deprecation-timeline)<!-- chrome link ok here -->
 * [The phase-out timeline](https://developer.chrome.com/blog/resuming-the-transition-to-mv3#the_phase-out_timeline)<!-- chrome link ok here --> in _Resuming the transition to Manifest V3_.

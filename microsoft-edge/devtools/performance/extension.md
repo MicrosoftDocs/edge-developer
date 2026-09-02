@@ -49,7 +49,7 @@ The **Performance** tool can display your own performance data, in addition to t
 * Building a framework and you need to visualize internal processes.
 * Developing a library and you want to track the impact of your code.
 * Building a complex web application with a lot of client-side processing.
-    
+
 The performance extensibility APIs make it possible to understand what's happening in your code.
 
 By injecting custom measurements and events, you can create tailored visualizations within the **Performance** tool.
@@ -126,11 +126,11 @@ The `console.timeStamp()` API is extended to allow for the creation of custom ti
 Syntax:
 
 ```javascript
-console.timeStamp(label: string, 
-                  start?: string|number, 
-                  end?: string|number, 
-                  trackName?: string, 
-                  trackGroup?: string, 
+console.timeStamp(label: string,
+                  start?: string|number,
+                  end?: string|number,
+                  trackName?: string,
+                  trackGroup?: string,
                   color?: DevToolsColor);
 ```
 
@@ -327,7 +327,7 @@ function loadPhoto(fileName) {
 }
 ```
 
-To view the resulting profile: 
+To view the resulting profile:
 
 1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
@@ -407,7 +407,7 @@ function populateGallery(images) {
 }
 ```
 
-To view the resulting profile: 
+To view the resulting profile:
 
 1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
@@ -517,7 +517,7 @@ addEventListener('click', e => {
 });
 ```
 
-To view the resulting profile: 
+To view the resulting profile:
 
 1. Do the steps in [View your custom data in the performance profile](#view-your-custom-data-in-the-performance-profile), above.
 
@@ -555,7 +555,7 @@ Demos:
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/performance/extension) and is authored by Andrés Olivares and Sofia Emelianova.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)

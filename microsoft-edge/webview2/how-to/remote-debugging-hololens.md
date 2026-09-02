@@ -1,6 +1,6 @@
 ---
 title: Remote debugging HoloLens 2 WebView2 WinUI 2 (UWP) apps
-description: How to remotely debug HoloLens 2 WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge. 
+description: How to remotely debug HoloLens 2 WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 09/27/2023
 
 To use [Microsoft Edge DevTools](/microsoft-edge/devtools/landing/) to debug a WebView2 WinUI 2 (UWP) app, use remote debugging.  Remote debugging is necessary for WebView2 WinUI 2 (UWP) apps because currently, the built-in DevTools can't be launched inside a store-signed WebView2 WinUI 2 (UWP) app.
 
-WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability. 
 
 WebView2 and the WebView2 plugin are only supported on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
@@ -57,9 +57,9 @@ Attach Microsoft Edge DevTools remotely to a HoloLens 2 WebView2 WinUI 2 (UWP) a
     ```
     "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging"
     ```
-    
+   
     For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set the environment variable by adding the following line in the `Browser.xaml.cs` file:
-    
+   
     ```csharp
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging");
     ```

@@ -56,7 +56,7 @@ Add-ons for Microsoft Edge include extensions and themes.  As an extension devel
 
 ![The Microsoft Edge Add-ons website](./index-images/edge-add-ons-website.png)
 
-To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result.  
+To find an extension, you use the **Search extensions, themes, and more** text box.  For example, to find extensions about Bing, enter "Bing", and then click a result. 
 
 The product detail page for the [Microsoft Bing Homepage](https://microsoftedge.microsoft.com/addons/detail/microsoft-bing-homepage/cjmjijnpnollocennnapedpaeecninea) extension appears:
 
@@ -150,7 +150,7 @@ For more information on porting your Chrome extension to Microsoft Edge, see [Po
 
 You publish a Microsoft Edge extension at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
-To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing at the Microsoft Edge Add-ons website.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`.  
+To start publishing a Microsoft Edge extension, you must [register for a developer account](https://developer.microsoft.com/registration) with a Microsoft account (MSA) email account to submit your extension listing at the Microsoft Edge Add-ons website.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or `@hotmail.com`. 
 
 When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can submit an extension listing.
 
@@ -191,9 +191,9 @@ The **Featured** badge indicates that:
 
 * The extension has been reviewed and selected through an automated system.
 
-* The extension offers a reliable and high-quality experience for Microsoft Edge users. 
+* The extension offers a reliable and high-quality experience for Microsoft Edge users.
 
-The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status. 
+The **Featured** badge is not a judgment of safety.  An extension that doesn't have the **Featured** badge is not necessarily unsafe; the extension simply doesn't meet the current threshold for Featured status.
 
 The **Featured** badge at the Microsoft Edge Add-ons website is intended to help users discover extensions that meet a high bar for quality, reliability, security, privacy, and user experience at the time of evaluation.
 
@@ -207,19 +207,19 @@ Microsoft regularly re-evaluates badged extensions and may update, revoke, or re
 <!-- ------------------------------ -->
 #### Reasons why the Featured badge could be revoked
 
-The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meets the evolving standards, or if the extension's quality signals degrade over time. 
+The **Featured** badge isn't permanent.  An extension might lose the **Featured** badge if the extension no longer meets the evolving standards, or if the extension's quality signals degrade over time.
 
-To maintain a high-quality ecosystem, Microsoft periodically re-evaluates all badged extensions.  A **Featured** badge might be removed due to: 
+To maintain a high-quality ecosystem, Microsoft periodically re-evaluates all badged extensions.  A **Featured** badge might be removed due to:
 
-* Decline in user experience or performance metrics. 
+* Decline in user experience or performance metrics.
 
-* Outdated or incomplete store listing information. 
+* Outdated or incomplete store listing information.
 
-* Security or privacy concerns. 
+* Security or privacy concerns.
 
-* Changes in Microsoft's evaluation criteria. 
+* Changes in Microsoft's evaluation criteria.
 
-All decisions about the **Featured** badge are final and not subject to individual review.  There is no manual application or appeal process.  The **Featured** badge is awarded and revoked based on internal evaluation criteria and tooling. 
+All decisions about the **Featured** badge are final and not subject to individual review.  There is no manual application or appeal process.  The **Featured** badge is awarded and revoked based on internal evaluation criteria and tooling.
 
 To improve your extension's quality and eligibility for the **Featured** badge, see [Best practices for extensions](./developer-guide/best-practices.md).
 

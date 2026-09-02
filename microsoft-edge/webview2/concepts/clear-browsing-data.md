@@ -132,7 +132,7 @@ private void ClearAutofillData()
         // Offset the current time by one hour to clear the browsing data from the
         // last hour.
         CoreWebView2BrowsingDataKinds dataKinds = (CoreWebView2BrowsingDataKinds)
-                                 (CoreWebView2BrowsingDataKinds.GeneralAutofill | 
+                                 (CoreWebView2BrowsingDataKinds.GeneralAutofill |
                                   CoreWebView2BrowsingDataKinds.PasswordAutosave);
         await profile.ClearBrowsingDataAsync(dataKinds, startTime, endTime);
     }
@@ -164,10 +164,10 @@ void ClearAutofillData()
         double endTime = (double)std::time(nullptr);
         double startTime = endTime - 3600;
         // Get the current time and offset the current time by 3600 seconds to clear
-        // the data from the start time (one hour ago), until the end time (present 
+        // the data from the start time (one hour ago), until the end time (present
         // time).
         // This clears the data for the last hour.
-        COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds = 
+        COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds =
             (COREWEBVIEW2_BROWSING_DATA_KINDS)
             (COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL |
             COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE);

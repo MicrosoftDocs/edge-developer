@@ -47,7 +47,7 @@ To record a performance trace with selector statistics:
 1. Select the **Enable CSS selector stats (slow)** checkbox:
 
    ![The "Enable CSS selector stats" checkbox in the Performance tool](./selector-stats-images/enable-feature.png)
- 
+
 1. Click the **Record** (![The Record icon](./selector-stats-images/record-icon.png)) button, and then run the scenario that you want to improve for your website or app.
 
 1. Click the **Stop** button.
@@ -81,7 +81,7 @@ The **Selector Stats** tab in the **Performance** tool contains a table of CSS s
 | **Match Count** | The number of elements the browser engine matched with this CSS selector. |
 | **% of slow-path non-matches** | The ratio of elements that didn't match with this CSS selector, to the elements that the browser engine attempted to match, and which required the browser engine to use less optimized code to match. |
 | **Selector** | The CSS selector that was matched. |
-| **Style Sheet** | The CSS style sheet that contains the CSS selector. | 
+| **Style Sheet** | The CSS style sheet that contains the CSS selector. |
 
 When finished, in the **Performance** tool, click the **Capture settings** (![Capture settings icon](./selector-stats-images/capture-settings-icon.png)) button, and then clear the **Enable CSS selector stats (slow)** checkbox.
 

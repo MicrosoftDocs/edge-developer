@@ -23,7 +23,7 @@ ms.date: 04/22/2025
    limitations under the License.  -->
 # Workspace tutorial (Sources tool Workspace tab)
 
-Use the following steps to use DevTools as an IDE, such as making webpage edits in the **Sources** tool's **Workspace** tab, saving changes to the source files on disk. 
+Use the following steps to use DevTools as an IDE, such as making webpage edits in the **Sources** tool's **Workspace** tab, saving changes to the source files on disk.
 
 You can read or follow these steps that show how to set up and using a workspace in DevTools.  After you set up a workspace, the changes that you make to the files in the workspace, by using DevTools, are saved on your local computer.
 
@@ -112,7 +112,7 @@ Continue with the next section.
    cd ~/GitHub/demos/workspaces
    python -m SimpleHTTPServer
    ```
-  
+
    ``` bash
    # Python 3 option
    cd ~/GitHub/demos/workspaces

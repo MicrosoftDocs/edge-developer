@@ -177,7 +177,7 @@ See:
 <!-- ====================================================================== -->
 ## Preserve Low Integrity Level (LowIL) on Runtime folders
 
-Don't modify the Low Integrity Level (LowIL) settings on WebView2 Runtime folders.  WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources. 
+Don't modify the Low Integrity Level (LowIL) settings on WebView2 Runtime folders.  WebView2 runs renderer processes at a Low Integrity Level, to limit their access to system resources.
 
 A Low Integrity Level process (LowIL) must be able to Read and Execute the WebView2 Runtime binaries.
 
@@ -410,7 +410,7 @@ Symptoms:
 
 Align Transport Layer Security (TLS) inspection and proxy configuration with Chromium-based browser requirements.
 
-If your environment uses TLS inspection, ensure that the inspection certificates are trusted by the operating system's certificate store. 
+If your environment uses TLS inspection, ensure that the inspection certificates are trusted by the operating system's certificate store.
 
 
 <!-- ------------------------------ -->
@@ -498,7 +498,7 @@ The System32-based WebView2 Runtime's default Access Control Lists (ACLs) must b
 ## Don't apply Edge browser–only group policies
 
 Most group policies that apply to Microsoft Edge don't affect WebView2, and unsupported policies can break WebView2 features.
-    
+   
 Don't use Microsoft Edge–only group policies to affect WebView2.
 
 

@@ -15,4 +15,4 @@ As of Apr. 2022, the webhint extension for Visual Studio Code is no longer being
 
 [Webhint Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) at Visual Studio Marketplace.
 
-[webhint](https://webhint.io) is a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The webhint extension checks your code for best practices and common errors. 
+[webhint](https://webhint.io) is a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The webhint extension checks your code for best practices and common errors.

@@ -55,7 +55,7 @@ The [Microsoft Store](https://apps.microsoft.com) requires submitting a packaged
 1. In the dialog, note where the package bundle was placed.  This information is also shown in the build window.
 
 1. Click the **Close** button.
- 
+
 
 <!-- ====================================================================== -->
 ## Step 4: Test the package
@@ -134,7 +134,7 @@ If your app failed the **Supported API** test, update the Windows SDK to version
 
    * Approach 1: In Windows App Certification Kit (WACK), select **Project** > **Publish** > **Upload App Packages**.
 
-   * Approach 2: Go to Partner Center and upload your app package to the Windows Store through Partner Center. 
+   * Approach 2: Go to Partner Center and upload your app package to the Windows Store through Partner Center.
 
 
 <!-- ====================================================================== -->

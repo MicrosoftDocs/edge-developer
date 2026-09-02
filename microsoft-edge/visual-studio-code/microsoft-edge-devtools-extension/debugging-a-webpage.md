@@ -94,7 +94,7 @@ To start the Visual Studio Code debugger along with DevTools, by using the usual
    * On the **Activity Bar**, click the **Run and Debug** icon (![Run and Debug icon](./debugging-a-webpage-images/run-and-debug-icon.png)), and then in the **Run and Debug** Side Bar, click the **Run and Debug** button, as shown below.
 
    * Open the Visual Studio Code command palette, start typing the word **debug**, and then select **Debug: Open Link**.
-    
+   
    ![Start Microsoft Edge DevTools from the JavaScript debugger](./debugging-a-webpage-images/start-session.png)
 
    **Microsoft Edge Tools** doesn't appear in the above screenshot, because for this screenshot, DevTools was uninstalled.

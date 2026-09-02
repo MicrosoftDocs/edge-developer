@@ -14,7 +14,7 @@ This article is to learn to write your own WebView2 code.  If you want to run a 
 
 <!--
 todo: errors experienced with vs2022 by following these instructions:
-* The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
+* The addressbar text box & Go button shift to the right when alt+tab to the Form1 window.
 -->
 
 This tutorial helps you:
@@ -95,7 +95,7 @@ Start with a basic desktop project that contains a single main window.
 1. Select **Debug** > **Start Debugging** (**F5**).
 
    An empty **Form1** window opens, from the fresh WinForms project:
-   
+  
    <!-- used at end of 2 sections: -->
    ![The empty Form1 window from the fresh WinForms project](./winforms-images/form1-empty-window-fresh-winforms-project.png)
 
@@ -194,7 +194,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
    ![Properties of the WebView2 control](./winforms-images/winforms-properties.png)
 
-1. In the **Properties** panel, in the **Misc** section, set the **Source** property to `https://www.microsoft.com`.  The **Source** property sets the initial URL that will be displayed in the WebView2 control.  
+1. In the **Properties** panel, in the **Misc** section, set the **Source** property to `https://www.microsoft.com`.  The **Source** property sets the initial URL that will be displayed in the WebView2 control. 
 
 1. Select **File** > **Save All** (**Ctrl+Shift+S**) to save the project.
 
@@ -268,7 +268,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
       InitializeComponent();
    }
    ```
-    
+   
 1. Paste this code in the same location:
 
    ```csharp
@@ -393,10 +393,10 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
    {
       InitializeComponent();
       this.Resize += new System.EventHandler(this.Form_Resize);
-   
+  
       webView.NavigationStarting += EnsureHttps;
    }
-   
+  
    void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
    {
       String uri = args.Uri;
@@ -456,7 +456,7 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
    ```javascript
    alert('{uri} is not safe, try an https link')
    ```
-   
+  
 1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
 1. Press **F5** to build and run the project.
@@ -520,7 +520,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
    ```
 
    Next, for WebView2 to send and respond to the web message, after `CoreWebView2` is initialized, the host will inject a script in the web content to:
- 
+
    * Send the URL to the host using `postMessage`.
 
    * Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.

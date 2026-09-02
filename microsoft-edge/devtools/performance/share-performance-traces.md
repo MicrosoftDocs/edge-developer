@@ -150,7 +150,7 @@ See also:
 <!-- ====================================================================== -->
 ## Compress with gzip
 
-In the **Save performance trace** dialog within the **Performance** tool, the **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools. 
+In the **Save performance trace** dialog within the **Performance** tool, the **Compress with gzip** checkbox is selected by default.  This option helps compress large performance traces to save disk space, and makes the importing and processing of trace files faster in DevTools.
 
 * If this checkbox is selected, the default file name extension is `.gz`.
 * If this checkbox is cleared, the default file name extension is `.json`.
@@ -195,7 +195,7 @@ To open a saved trace file in DevTools:
    * **Rendering**
    * **Search**
    * **Sensors**
-    
+
 See also:
 * [Performance tool: Analyze your website's performance](./overview.md)
 * [Sources tool overview](../sources/index.md)

@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 106)
-description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
+description: Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -35,7 +35,7 @@ To enable the Command Palette experiment:
 
 1. In the **Command Palette** dropdown menu, select **Enabled**:
 
-   <!-- screenshot directly in What's New, to show where to see the keyboard shortcut along with version:-->
+   <!-- screenshot directly in What's New, to show where to see the keyboard shortcut along with version: -->
    ![The keyboard shortcut for Command Palette in the flags page for version 106](./devtools-106-images/command-palette-flags-shortcut-106.png)
 
    Note the keyboard shortcut, which is shown in the **Command Palette** section on the `edge://flags` page.
@@ -65,7 +65,7 @@ Let us know what commands you'd like to see in future versions of Microsoft Edge
 ## Filter and automatically fix code issues in DevTools for Visual Studio Code
 
 <!-- Subtitle: Let Visual Studio Code fix web issues for you or tell it never to bother you about them again. -->
- 
+
 The Microsoft Edge DevTools extension for Visual Studio Code now provides **Quick Fix** options, allowing you to fix issues automatically.
 
 To access the **Quick Fix** options:
@@ -114,7 +114,7 @@ See also:
 
 To improve reliability, the **Chromium Light** and **Chromium Dark** themes have been deprecated.  Users who previously had these themes selected will be automatically migrated to the **Light+** or **Dark+** theme, respectively:
 
-DevTools in **Light+** theme: 
+DevTools in **Light+** theme:
 
 ![DevTools in Light+ theme](./devtools-106-images/light-plus-theme.png)
 
@@ -149,7 +149,7 @@ See also:
 #### Computed styles are easier to see in high contrast mode
 
 In high contrast mode, in previous versions of Microsoft Edge, the expand and collapse buttons for computed styles didn't render correctly, in the **Computed** tab in the **Elements** tool.  In Microsoft Edge 106, this issue has been fixed.  The expand and collapse buttons are now visible in high contrast mode:
- 
+
 ![Computed styles in high contrast mode](./devtools-106-images/computed-styles-high-contrast-mode.png)
 
 See also:

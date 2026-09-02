@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/11/2026
+ms.date: 04/20/2020
 ---
 # Prerelease SDK 0.9.488-prerelease, for Runtime 83 (Apr. 20, 2020)
 <!--

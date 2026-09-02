@@ -170,7 +170,7 @@ To change how resources are grouped:
 
 Use the **Workspace** tab in the **Sources** tool to view and edit local files in DevTools.  The **Workspace** tab is useful when used in conjunction with a local web server as you can then load your local website in Edge, and edit its source files in DevTools.
 
-When you add a folder to the **Workspace** tab, the files and subfolders in that folder are displayed in the tab, and you can open files to view and edit them. 
+When you add a folder to the **Workspace** tab, the files and subfolders in that folder are displayed in the tab, and you can open files to view and edit them.
 
 The **Workspace** tab does not show the resources that the browser downloaded to display the webpage; the **Workspace** tab only shows the folders and files that are inside the local folders that you added.
 
@@ -407,7 +407,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 
 Minified files are automatically reformatted when you open them in the Editor pane.
 
-To revert the file to its original minified state, click the **Pretty print** button (![Format](./index-images/format-icon.png)), which is shown as braces, at the bottom of the Editor pane. 
+To revert the file to its original minified state, click the **Pretty print** button (![Format](./index-images/format-icon.png)), which is shown as braces, at the bottom of the Editor pane.
 
 ![The Pretty print button](./index-images/minified.png)
 

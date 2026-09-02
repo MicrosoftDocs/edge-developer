@@ -10,7 +10,7 @@ ms.date: 10/24/2023
 ---
 # What's new in PWAs
 
-The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements.  
+The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from the Microsoft Edge Web Apps team.  To try new features, read these announcements. 
 
 To stay up to date with the latest and greatest features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
@@ -169,7 +169,7 @@ Microsoft Edge version 96 is scheduled to become the Stable release on Nov. 18, 
 
 
 <!-- ------------------------------ -->
-#### Store apps registered as URL handlers hide custom tab UI 
+#### Store apps registered as URL handlers hide custom tab UI
 
 Store-installed PWAs that are participating in the [URL Handlers origin trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada.
 
