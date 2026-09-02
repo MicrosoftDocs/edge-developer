@@ -10,7 +10,7 @@ ms.date: 10/20/2021
 ---
 # What's new in DevTools (Microsoft Edge 95)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ------------------------------ -->

@@ -10,7 +10,7 @@ ms.date: 05/16/2024
 ---
 # What's new in DevTools (Microsoft Edge 125)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ------------------------------
