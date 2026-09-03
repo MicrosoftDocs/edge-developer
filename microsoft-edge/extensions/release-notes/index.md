@@ -47,7 +47,7 @@ The following updates have been deployed to production, addressing key issues an
 <!-- ====================================================================== -->
 ## URL validation and security
 
-* URL-related error messages have clearer wording. 
+* URL-related error messages have clearer wording.
 
 * Unreachable URLs are now detected in the following fields:
 

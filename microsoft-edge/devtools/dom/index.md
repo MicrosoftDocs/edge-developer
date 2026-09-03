@@ -34,6 +34,7 @@ To understand the difference between the DOM and HTML, see [Appendix: HTML versu
 The DOM Tree of the **Elements** tool is where you do all DOM-related activities in DevTools.
 
 
+<!-- ------------------------------ -->
 #### Inspect a node
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.
@@ -59,6 +60,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 Inspecting a node is also the first step towards viewing and changing the styles of a node.  See [Get started viewing and changing CSS](../css/index.md).
 
 
+<!-- ------------------------------ -->
 #### Navigate the DOM Tree with a keyboard
 
 Once you have selected a node in the DOM Tree, you can navigate the DOM Tree with your keyboard.
@@ -84,6 +86,7 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 1. Press the **Right Arrow** key.  The list expands.
 
 
+<!-- ------------------------------ -->
 #### Scroll into view
 
 When viewing the DOM Tree, you may find yourself interested in a DOM node that isn't currently visible in the rendered webpage.  For example, suppose that you scrolled to the bottom of the page, and you're interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can see the node.
@@ -99,10 +102,11 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 1. Right-click the `<p>Magritte</p>` node, and then select **Scroll into view**:
 
    ![Scroll into view](./index-images/scroll-into-view-dropdown.png)
-   
+
    Your viewport scrolls back up to display the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if the **Scroll into view** option isn't displayed.
 
 
+<!-- ------------------------------ -->
 #### Search for nodes
 
 You can search the DOM Tree by string, CSS selector, or XPath selector.
@@ -123,6 +127,8 @@ The Search bar also supports CSS and XPath selectors.
 
 You can edit the DOM in DevTools and view how the changes affect the page in real time.
 
+
+<!-- ------------------------------ -->
 #### Edit text content
 
 To edit the text content of a node, double-click the content in the DOM Tree, as follows:
@@ -137,6 +143,8 @@ To edit the text content of a node, double-click the content in the DOM Tree, as
 
 1. Delete `Michelle`, type `Leela`, then press **Enter** to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.
 
+
+<!-- ------------------------------ -->
 #### Edit or add attributes
 
 To edit an existing attribute, double-click the attribute name or value.
@@ -155,6 +163,8 @@ To add a new attribute, double-click the element for which to add an attribute, 
 
    ![Add a style attribute to the node](./index-images/edit-attributes-inline-css.png)
 
+
+<!-- ------------------------------ -->
 #### Edit node tag name
 
 To edit the tag name of a node, double-click the tag name and then type in the new tag name.
@@ -169,7 +179,9 @@ To edit the tag name of a node, double-click the tag name and then type in the n
 
    ![Change the node type to button](./index-images/edit-node-type-button.png)
 
-#### Edit multiple nodes, text, and attributes 
+
+<!-- ------------------------------ -->
+#### Edit multiple nodes, text, and attributes
 
 To change the tag name, text content, or attributes of multiple nodes at once, you can edit part of the DOM by using the DOM tree's HTML text editor, as follows:
 
@@ -193,6 +205,8 @@ To change the tag name, text content, or attributes of multiple nodes at once, y
 
    ![The new DOM tree, with the an extra <p> node, after the HTML editor closed](./index-images/edit-html-editor-closed.png)
 
+
+<!-- ------------------------------ -->
 #### Reorder DOM nodes
 
 To reorder nodes in the DOM tree, drag the nodes, as follows:
@@ -205,6 +219,8 @@ To reorder nodes in the DOM tree, drag the nodes, as follows:
 
    ![Drag the node to the top of the list](./index-images/reorder-dom-nodes.png)
 
+
+<!-- ------------------------------ -->
 #### Force state
 
 You can force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`, as follows:
@@ -217,6 +233,8 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Right-click `<p class="demo--hover">The Lord of the Flies</p>`, and then select **Force State** > **:hover**.  If that option isn't displayed, see [Appendix: Missing options](#appendix-missing-options), below.  The background color remains orange, even though you aren't actually hovering over the node.
 
+
+<!-- ------------------------------ -->
 #### Hide a node
 
 Press `H` to hide a node, as follows:
@@ -231,6 +249,8 @@ Press `H` to hide a node, as follows:
 
 1. Press the **H** key again.  The node is shown again.
 
+
+<!-- ------------------------------ -->
 #### Delete a node
 
 Press **Delete** to delete a node, as follows:
@@ -249,6 +269,8 @@ Press **Delete** to delete a node, as follows:
 
 DevTools provides a few shortcuts for accessing DOM nodes from the **Console** tool, or getting JavaScript references to each one.
 
+
+<!-- ------------------------------ -->
 #### Reference the currently-selected node with $0
 
 When you inspect a node, the `== $0` text next to the node means that you can reference this node in the Console with the variable `$0`.
@@ -269,6 +291,8 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
    ![The result of the second $0 expression in the Console](./index-images/reference-currently-selected-node-console-2.png)
 
+
+<!-- ------------------------------ -->
 #### Store as global variable
 
 If you need to refer back to a node many times, store it as a global variable.
@@ -283,6 +307,8 @@ If you need to refer back to a node many times, store it as a global variable.
 
    ![The result of the temp1 expression](./index-images/store-global-variable-console-temp1.png)
 
+
+<!-- ------------------------------ -->
 #### Copy JS path
 
 Copy the JavaScript path to a node when you need to reference it in an automated test.
@@ -305,6 +331,8 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 DevTools enables you to pause the JavaScript of a page when the JavaScript modifies the DOM.
 
+
+<!-- ------------------------------ -->
 #### Break on attribute modifications
 
 Use attribute modification breakpoints when you want to pause the JavaScript that causes any attribute of a node to change.
@@ -325,6 +353,8 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. Click **Resume Script** (![Resume Script](./index-images/resume-script-icon.png)) to resume the JavaScript execution.
 
+
+<!-- ------------------------------ -->
 #### Break on node removal
 
 If you want to pause when a particular node is removed, use node removal breakpoints.
@@ -339,6 +369,8 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Select **Resume Script** (![Resume Script](./index-images/resume-script-icon.png)).
 
+
+<!-- ------------------------------ -->
 #### Break on subtree modifications
 
 After you put a subtree modification breakpoint on a node, DevTools pauses the page when any of the descendants of the node are added or removed.

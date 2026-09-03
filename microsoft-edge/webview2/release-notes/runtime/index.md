@@ -63,9 +63,29 @@ See also:
 
 
 <!-- ====================================================================== -->
+## Updating the Runtime
+
+WebView2 changes may require an update to the WebView2 Runtime, the WebView2 SDK, or both.  Most new APIs require both Runtime and SDK updates.
+
+WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
+
+* For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
+
+* To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
+
+To obtain a WebView2 Preview Runtime, use the following combination:
+* A Prerelease version of the WebView2 SDK.
+* A preview channel of Microsoft Edge (containing the WebView2 Preview Runtime) on your development client.
+
+See also:
+* [Prerelease and Release SDKs for WebView2](../../concepts/versioning.md)
+* [Updating the SDK](../sdk/index.md#updating-the-sdk) in _Release notes for WebView2 SDKs_.
+
+
+<!-- ====================================================================== -->
 ## Minimum version of the browser or Runtime to load WebView2
 
-To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
+To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0; see [Runtime 86.0.705.50 (Jan. 25, 2021)](./86.md).  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
 To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Switch to a preview channel to test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
@@ -87,26 +107,6 @@ Release notes entries correspond to historical releases of WebView2, and are not
 
 
 <!-- ====================================================================== -->
-## Updating the Runtime
-
-WebView2 changes may require an update to the WebView2 Runtime, the WebView2 SDK, or both.  Most new APIs require both Runtime and SDK updates.
-
-WebView2 shares code and binaries with the Microsoft Edge browser, and is released around the same time.  As a result, WebView2 Runtime releases generally also include Microsoft Edge updates.
-
-* For Microsoft Edge updates, see [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel) and [Release notes for Microsoft Edge Beta Channel](/deployedge/microsoft-edge-relnote-beta-channel).
-
-* To update the WebView2 Runtime on your development machine and on user machines, see [Distribute your app and the WebView2 Runtime](../../concepts/distribution.md).  To view or get the latest WebView2 Runtime versions, see [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-the-webview2-runtime) in the _Microsoft Edge WebView2_ page at developer.microsoft.com.
-
-To obtain a WebView2 Preview Runtime, use the following combination:
-* A Prerelease version of the WebView2 SDK.
-* A preview channel of Microsoft Edge (containing the WebView2 Preview Runtime) on your development client.
-
-See also:
-* [Prerelease and Release SDKs for WebView2](../../concepts/versioning.md)
-* [Updating the SDK](../sdk/index.md#updating-the-sdk) in _Release notes for WebView2 SDKs_.
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Release notes for WebView2](../index.md)<!-- toc bucket 1.1 -->
@@ -115,9 +115,3 @@ See also:
 * [Contact the WebView2 team](../../contact.md)<!-- toc bucket: bottom -->
 * [Release notes for Microsoft Edge web platform](../../../web-platform/release-notes/index.md)
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)
-
-API Reference:
-* [WebView2 API Reference](../../webview2-api-reference.md)
-   * .NET: [Microsoft.Web.WebView2.Core Namespace](/dotnet/api/microsoft.web.webview2.core)<!-- https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core -->
-   * WinRT: [Microsoft.Web.WebView2.Core Namespace](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/ -->
-   * Win32: [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32/)<!-- https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/ -->

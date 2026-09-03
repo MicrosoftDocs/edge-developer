@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 127)
-description: "Use Copilot to explain HTML and CSS in the Elements tool. And more."
+description: Use Copilot to explain HTML and CSS in the Elements tool. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 07/26/2024
 ---
 # What's new in DevTools (Microsoft Edge 127)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->

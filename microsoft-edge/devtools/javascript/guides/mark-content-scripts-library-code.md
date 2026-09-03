@@ -46,7 +46,7 @@ To avoid pausing on extension code:
 
 * [Step 4: Step through the code](../index.md#step-4-step-through-the-code) in _Get started debugging JavaScript_
 * [Content scripts](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_scripts) at MDN.
-<!-- 
+<!--
 * [Sample: Picture inserter using content script](../../../extensions/getting-started/picture-inserter-content-script.md)
 -->
 

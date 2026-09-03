@@ -88,7 +88,7 @@ To learn more about cache data storage quota, see [Storage quotas and eviction c
 1. Click the resource that you want to delete.  DevTools highlights it to indicate that it is selected.
 
 1. Click **Delete Selected** (![Delete Selected](./cache-images/delete-icon.png)):
-   
+
    ![Selecting a resource to delete](./cache-images/delete-selected.png)
 
 

@@ -15,7 +15,7 @@ This article is for developers using WebView2 in immersive HoloLens 2 Unity appl
 > [!IMPORTANT]
 > WebView2 on Hololens 2 continues to be available.  However, support for WebView2 on Hololens 2 is discontinued; there are no planned bug fixes or content updates, and technical support has ended.  Applications that use WebView2 on Hololens 2 are not guaranteed to continue to work.
 
-WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability.  
+WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability. 
 
 WebView2 only works on HoloLens 2 devices running the Windows 11 update.  For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 

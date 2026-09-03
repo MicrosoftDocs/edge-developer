@@ -23,7 +23,7 @@ ms.date: 05/06/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 91)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ See also:
 <!--  Title: Learn more about DevTools with DevTools Tooltips  -->
 <!--  Subtitle: Informative overlays are now available in the default DevTools interface.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following: 
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do any of the following:
 
 <!-- todo: update for Focus Mode -->
 * Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.

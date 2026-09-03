@@ -1,6 +1,6 @@
 ---
 title: Win32 sample WebView2Browser
-description: "A web browser built with the Microsoft Edge WebView2 control."
+description: A web browser built with the Microsoft Edge WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -129,7 +129,7 @@ WebView2Browser has a multi-WebView approach to integrate web content and applic
 The multi-WebView approach involves using two separate WebView environments (each with its own user data directory): one for the UI WebViews and the other for all content WebViews. UI WebViews (controls and options dropdown list) use the UI environment, while web content WebViews (one per tab) use the content environment.
 
 ![Browser layout](./webview2browser-images/layout.png)
-<!-- todo: remove png from other repo, in PR 140: 
+<!-- todo: remove png from other repo, in PR 140:
 ![Browser layout](https://raw.githubusercontent.com/MicrosoftEdge/WebView2Browser/master/screenshots/layout.png)
 -->
 
@@ -156,36 +156,36 @@ The **WebView2Browser** sample implements the following features:
 
 WebView2Browser makes use of a handful of the APIs available in WebView2. For the APIs not used here, you can find more about them in the [Microsoft Edge WebView2 Reference](/microsoft-edge/webview2/reference/win32). The following is a list of the most interesting APIs WebView2Browser uses and the features they enable.
 
-API | Features
-:--- | :---
-`CreateCoreWebView2EnvironmentWithOptions` | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
-`ICoreWebView2` | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used.
-`ICoreWebView2DevToolsProtocolEventReceivedEventHandler` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2DevToolsProtocolEventReceiver` | Used along with `add_DevToolsProtocolEventReceived` to listen for CDP security events to update the lock icon in the browser UI. |
-`ICoreWebView2ExecuteScriptCompletedHandler` | Used along with `ExecuteScript` to get the title and favicon from the visited page. |
-`ICoreWebView2FocusChangedEventHandler` | Used along with `add_LostFocus` to hide the browser options dropdown list when it loses focus.
-`ICoreWebView2HistoryChangedEventHandler` | Used along with `add_HistoryChanged` to update the navigation buttons in the browser UI. |
-`ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them.
-`ICoreWebView2NavigationCompletedEventHandler` | Used along with `add_NavigationCompleted` to update the reload button in the browser UI.
-`ICoreWebView2Settings` | Used to disable DevTools in the browser UI.
-`ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the Address bar in the browser UI. |
-`ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this.
+| API | Features |
+|---|---|
+| `CreateCoreWebView2EnvironmentWithOptions` | Used to create the environments for UI and content WebViews. Different user data directories are passed to isolate UI from web content. |
+| `ICoreWebView2` | There are several WebViews in WebView2Browser and most features make use of members in this interface, the table below shows how they're used. |
+| `ICoreWebView2DevToolsProtocolEventReceivedEventHandler` | Used along with add_DevToolsProtocolEventReceived to listen for CDP security events to update the lock icon in the browser UI. |
+| `ICoreWebView2DevToolsProtocolEventReceiver` | Used along with `add_DevToolsProtocolEventReceived` to listen for CDP security events to update the lock icon in the browser UI. |
+| `ICoreWebView2ExecuteScriptCompletedHandler` | Used along with `ExecuteScript` to get the title and favicon from the visited page. |
+| `ICoreWebView2FocusChangedEventHandler` | Used along with `add_LostFocus` to hide the browser options dropdown list when it loses focus. |
+| `ICoreWebView2HistoryChangedEventHandler` | Used along with `add_HistoryChanged` to update the navigation buttons in the browser UI. |
+| `ICoreWebView2Controller` | There are several WebViewControllers in WebView2Browser and we fetch the associated WebViews from them. |
+| `ICoreWebView2NavigationCompletedEventHandler` | Used along with `add_NavigationCompleted` to update the reload button in the browser UI. |
+| `ICoreWebView2Settings` | Used to disable DevTools in the browser UI. |
+| `ICoreWebView2SourceChangedEventHandler` | Used along with `add_SourceChanged` to update the Address bar in the browser UI. |
+| `ICoreWebView2WebMessageReceivedEventHandler` | This is one of the most important APIs to WebView2Browser. Most functionalities involving communication across WebViews use this. |
 
-ICoreWebView2 API | Features
-:--- | :---
-`add_NavigationStarting` | Used to display the cancel navigation button in the controls WebView.
-`add_SourceChanged` | Used to update the Address bar.
-`add_HistoryChanged` | Used to update go back/forward buttons.
-`add_NavigationCompleted` | Used to display the reload button once a navigation completes.
-`ExecuteScript` | Used to get the title and favicon of a visited page.
-`PostWebMessageAsJson` | Used to communicate WebViews. All messages use JSON to pass parameters needed.
-`add_WebMessageReceived` | Used to handle web messages posted to the WebView.
-`CallDevToolsProtocolMethod` | Used to enable listening for security events, which will notify of security status changes in a document.
+| `ICoreWebView2` API | Features |
+|---|---|
+| `add_NavigationStarting` | Used to display the cancel navigation button in the controls WebView. |
+| `add_SourceChanged` | Used to update the Address bar. |
+| `add_HistoryChanged` | Used to update go back/forward buttons. |
+| `add_NavigationCompleted` | Used to display the reload button once a navigation completes. |
+| `ExecuteScript` | Used to get the title and favicon of a visited page. |
+| `PostWebMessageAsJson` | Used to communicate WebViews. All messages use JSON to pass parameters needed. |
+| `add_WebMessageReceived` | Used to handle web messages posted to the WebView. |
+| `CallDevToolsProtocolMethod` | Used to enable listening for security events, which will notify of security status changes in a document. |
 
-ICoreWebView2Controller API | Feature(s)
-:--- | :---
-`get_CoreWebView2` | Used to get the CoreWebView2 associated with this CoreWebView2Controller.
-`add_LostFocus` | Used to hide the options dropdown list when the user clicks away from it.
+| `ICoreWebView2Controller` API | Features |
+|---|---|
+| `get_CoreWebView2` | Used to get the CoreWebView2 associated with this `CoreWebView2Controller`. |
+| `add_LostFocus` | Used to hide the options dropdown list when the user clicks away from it. |
 
 
 <!-- ====================================================================== -->

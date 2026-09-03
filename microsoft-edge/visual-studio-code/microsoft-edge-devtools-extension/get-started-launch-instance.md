@@ -111,7 +111,7 @@ Opening a folder gives you the opportunity to grant trust to the folder, so that
 
 1. In the **Edge DevTools: Browser** tab, click the **Close DevTools** or **Open DevTools** button a couple times.  The other **DevTools** tab opens and closes, saving space.
 
-1. Along the top of Visual Studio Code, right-click the tabs and arrange them to show the various tabs at the same time: 
+1. Along the top of Visual Studio Code, right-click the tabs and arrange them to show the various tabs at the same time:
 
    * The Side Bar, showing **Microsoft Edge Tools** > **Targets**.
    * The `index.html` editor.

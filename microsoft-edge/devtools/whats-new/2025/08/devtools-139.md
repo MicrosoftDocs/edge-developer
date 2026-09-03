@@ -10,7 +10,7 @@ ms.date: 08/07/2025
 ---
 # What's new in DevTools (Microsoft Edge 139)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 139 includes the following updates from the Chromium project:
+These are the latest DevTools features in the Stable release of Microsoft Edge.  Microsoft Edge 139 includes the following updates from the Chromium project:
 
 * [Add request headers to the table in Network](https://developer.chrome.com/blog/new-in-devtools-139#request-headers)
 * [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-139#misc)

@@ -10,7 +10,7 @@ ms.date: 10/20/2021
 ---
 # What's new in DevTools (Microsoft Edge 95)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ------------------------------ -->
@@ -164,7 +164,7 @@ The **Command Menu** has been enhanced to make it easier to search for a file.  
 See also:
 * [Command Menu](../../../command-menu/index.md)
 
-For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
+For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997).
 
 
 <!-- ====================================================================== -->

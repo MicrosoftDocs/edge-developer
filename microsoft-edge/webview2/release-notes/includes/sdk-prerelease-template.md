@@ -12,7 +12,7 @@ ms.date: 01/01/2026
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Mmm. dd, yyyy.
 
-[NuGet package for WebView2 SDK 1.0.####-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/n.n.nnnn-prerelease)
+[NuGet package for WebView2 SDK n.n.nnnn-prerelease] (https://www.nuget.org/packages/Microsoft.Web.WebView2/n.n.nnnn-prerelease)
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version nnn.n.nnnn.n or later; see [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md).
 
@@ -67,7 +67,7 @@ The following APIs skipped Phase 1: Experimental in Prerelease, and have been di
 
 description
 
-Previous phase: [~](./~.md#~) in _~_.
+Previous phase: [~] (./~.md#~) in _~_.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -81,7 +81,7 @@ Previous phase: [~](./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->

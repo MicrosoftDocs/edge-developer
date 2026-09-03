@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 114)
-description: "Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more."
+description: Aggregate Selector Stats in Performance tool. Issues tool warns when CSS properties trigger Layout. Memory tool loads enhanced traces larger than 1 GB. Memory tool accurately compares heap snapshots. CSS overview accessibility improvements. Debugging Microsoft Edge in VS Code supports high contrast. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 06/15/2023
 ---
 # What's new in DevTools (Microsoft Edge 114)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 > [!TIP]
 > The **Microsoft Build 2023** conference was on May 23-25, 2023.  Learn more about new features for memory, performance, and production debugging in DevTools, as well as new capabilities for PWAs in the sidebar, WebView2, and Chat Plugins, in the following videos:

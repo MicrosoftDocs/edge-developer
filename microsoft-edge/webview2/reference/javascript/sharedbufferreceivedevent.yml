@@ -43,7 +43,7 @@ remarks: |-
   ```
 
   In the HTML document, subscribe to and handle sharedbufferreceived event.
-  
+ 
   Next, in the HTML document, subscribe to and then handle the `sharedbufferreceived` event:
 
   ```html

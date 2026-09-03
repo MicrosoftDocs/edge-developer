@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 129)
-description: "Unique breakpoint icons. Fixed CSS selector stats Copy table. Added Activity Bar icons. Fixed Security tool icons and device emulation. And more."
+description: Unique breakpoint icons. Fixed CSS selector stats Copy table. Added Activity Bar icons. Fixed Security tool icons and device emulation. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 09/20/2024
 ---
 # What's new in DevTools (Microsoft Edge 129)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->

@@ -1,7 +1,7 @@
 ---
 title: Track which element has focus
 description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
-author: MSEdgeTeam 
+author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
@@ -78,7 +78,7 @@ The result of the `document.activeElement` Live Expression is only a preview of 
 
    ![The focused element, highlighted in the rendered webpage](./focus-images/highlighted-focused-element.png)
 
-1. Right-click the result of the Live Expression, and then select **Reveal in Elements panel**. 
+1. Right-click the result of the Live Expression, and then select **Reveal in Elements panel**.
 
    In the **Elements** tool, the DOM tree automatically expands and selects the DOM node that's currently focused:
 

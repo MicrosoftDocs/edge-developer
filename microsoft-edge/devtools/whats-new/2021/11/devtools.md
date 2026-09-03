@@ -10,7 +10,7 @@ ms.date: 11/16/2021
 ---
 # What's new in DevTools (Microsoft Edge 96)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ------------------------------ -->
@@ -74,7 +74,7 @@ See also:
 For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 <!-- Title: Dockable browser screencast, device emulation, and live issue reporting, and in Microsoft Edge DevTools for Visual Studio Code -->
-<!-- Subtitle: Display your web project inside the editor, simulate different devices, and get notified about issues with your code while you develop it. --> 
+<!-- Subtitle: Display your web project inside the editor, simulate different devices, and get notified about issues with your code while you develop it. -->
 
 
 <!-- ------------------------------ -->
@@ -107,7 +107,7 @@ For details, see [Inline and live issue analysis](../../../../visual-studio-code
 <!-- Title: Get notified when DevTools cannot load your sourcemaps correctly -->
 <!-- Subtitle: The Sources tool now provides several places in the UI when DevTools can't fetch or parse your sourcemaps. -->
 
-In Microsoft Edge version 96, the **Sources** tool now provides several indications in the UI when DevTools cannot load your sourcemaps.  In the **Page** tab in the **Navigator** pane in the **Sources** tool, files that DevTools can't load sourcemaps for have a warning icon in place of the file icon.  
+In Microsoft Edge version 96, the **Sources** tool now provides several indications in the UI when DevTools cannot load your sourcemaps.  In the **Page** tab in the **Navigator** pane in the **Sources** tool, files that DevTools can't load sourcemaps for have a warning icon in place of the file icon.
 
 Selecting a file with the warning icon opens the file in the Sources tool with an infobar indicating that DevTools either couldn't fetch the sourcemap correctly from the server or couldn't parse the sourcemap correctly:
 

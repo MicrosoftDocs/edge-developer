@@ -216,7 +216,7 @@ To install the **Windows 10 SDK** component of the **Windows application develop
    ![Sample app](./webview2-winui3-sample-images/sample-app.png)
 
    The message "Navigation complete" is displayed at the bottom.
- 
+
 1. In the Address bar (a text box), enter `https://bing.com` (a complete HTTPS URL), and then press **Enter** (equivalent to clicking the **Go** button).
 
    The WebView2 control navigates to Bing and then displays "Navigation complete" at the bottom.
@@ -424,7 +424,7 @@ public MainWindow()
         if (WebView2 != null)
         {
             // Ensure that WebView2 resources are released when
-            // the MainWindow is closed. 
+            // the MainWindow is closed.
             // WebView2 lifecycle in WinUI3 and the Close() method:
             // https://github.com/microsoft/microsoft-ui-xaml/issues/4752#issuecomment-819687363
             WebView2.Close();

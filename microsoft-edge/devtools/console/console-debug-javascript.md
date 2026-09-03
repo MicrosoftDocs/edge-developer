@@ -144,7 +144,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
       return response;
    };
    ```
-   
+
 
 <!-- ====================================================================== -->
 ## Create errors and traces in the Console
@@ -184,7 +184,7 @@ To display two created error messages in the **Console**:
     first('Console');
     first('Microsoft Edge Canary');
     ```
-    
+
    There are three functions that request each other in succession:
 
    *  `first()`
@@ -237,7 +237,7 @@ To display the trace in the **Console**:
    here();
    there();
    ```
-    
+
    The result is a trace to display that `here()` is named `there()` and then `everywhere()`, and in the second example to display that it's named `everywhere()`.
 
    Here's the trace that's produced, in the **Console**:

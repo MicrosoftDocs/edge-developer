@@ -229,6 +229,6 @@ Downloads:
 
 GitHub:
 * [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
-<!-- 
+<!--
 * [AppWindow.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622)
 -->

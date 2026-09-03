@@ -1,6 +1,6 @@
 ---
 title: Remote debugging desktop WebView2 WinUI 2 (UWP) apps
-description: How to remotely debug desktop WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge. 
+description: How to remotely debug desktop WebView2 WinUI 2 (UWP) apps by using Remote Tools for Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -65,9 +65,9 @@ Attach Microsoft Edge DevTools remotely to a desktop WebView2 WinUI 2 (UWP) app 
     ```
     "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging"
     ```
-    
+   
     For example, if you're using the [WebView2 Sample UWP app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp), you can set the environment variable by adding the following line in the `Browser.xaml.cs` file:
-    
+   
     ```csharp
     Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--enable-features=msEdgeDevToolsWdpRemoteDebugging");
     ```

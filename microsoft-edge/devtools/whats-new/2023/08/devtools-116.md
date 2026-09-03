@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 116)
-description: "Activity Bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more."
+description: Activity Bar has a Move Activity Bar button.  React Developer Tools extension works in Focus Mode.  A Containment Diff view in the Memory tool when multiple heap snapshots.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,10 +10,10 @@ ms.date: 08/17/2023
 ---
 # What's new in DevTools (Microsoft Edge 116)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 
@@ -57,7 +57,7 @@ In the **Memory** tool, when there's more than one heap snapshot, a **Containmen
 
 The **Containment Diff** view shows only the new objects, deleted objects, or objects in the retaining chain that will eventually lead to either a new or deleted node.  The dot symbol (![Dot symbol](./devtools-116-images/dot.png)) means that it's a node in the retaining chain.  Expanding the view displays the node that's new or deleted.
 
-For example: 
+For example:
 
 1. Open the example webpage [Example 9: DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html) in a new window or tab.
 

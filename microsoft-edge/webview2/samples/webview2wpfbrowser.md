@@ -110,7 +110,7 @@ At the top of Visual Studio, set the build target, as follows:
    * **View**
    * **Settings**
    * **Scenario**
-   
+  
 1. In the Visual Studio code editor, inspect the code:
 
    ![WebView2WpfBrowser project's code in Visual Studio](./webview2wpfbrowser-images/webview2wpfbrowser-code.png)

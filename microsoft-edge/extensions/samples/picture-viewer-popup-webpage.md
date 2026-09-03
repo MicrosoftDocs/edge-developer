@@ -108,7 +108,7 @@ You are now free to modify the code in your working branch, without altering the
 
    GitHub Desktop opens, with the **MicrosoftEdge-Extensions** repo selected in the upper left dropdown list.
 
-   Or, in GitHub Desktop, the **Clone a repository** dialog opens: 
+   Or, in GitHub Desktop, the **Clone a repository** dialog opens:
 
    ![The "Clone a repository" dialog in GitHub Desktop](./picture-viewer-popup-webpage-images/clone-a-repo-dbox-ghd.png)
 

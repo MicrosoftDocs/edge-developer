@@ -161,7 +161,7 @@ Continue below.
 1. In several places in the `launch.json` file, on each of the `"url"` lines, scroll to the right, and note the comment, "Provide your project's url to finish configuring":
 
    ```javascript
-   "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html", 
+   "url": "c:\\Users\\username\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.1\\out\\startpage\\index.html",
    // Provide your project's url to finish configuring
    ```
 
@@ -212,14 +212,13 @@ See also:
 
 If DevTools is able to correlate and establish the workspace mapping between the files downloaded from the server and the files in the folder that you opened, DevTools provides its full functionality, including CSS mirror editing of your local source files when you change CSS in DevTools.
 
-If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, and you can change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.  In this case, though, you can't use CSS mirror editing though, to have DevTools automatically edit your source files.  Options include: 
+If DevTools can't map the files in the **Edge DevTools: Browser** tab to the files in the folder that you opened in Visual Studio Code's Explorer, you can inspect webpages, and you can change them, such as changing CSS values in the **Sources** tab of the **Elements** tool in the **Edge DevTools** tab.  In this case, though, you can't use CSS mirror editing though, to have DevTools automatically edit your source files.  Options include:
 
 * Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes.
 
 * Open a folder that contains source files that match the webpage.
 
 * Grant trust to a folder by opening it in Visual Studio Code.
-
 
 For example:
 
@@ -238,6 +237,7 @@ For example:
    The above image shows using the **Styles** tab with **CSS mirror editing** checkbox selected, used to enlarge the body text to **24pt**.  The **Edge DevTools: Browser** tab renders the page as you change the value.  The tab's Address bar contains a URL rather than a file path.  Because **CSS mirror editing** checkbox selected and the corresponding `.css` file is found in a writeable local folder, the `.css` file on the local drive is automatically edited to `24pt;`.
 
 
+<!-- ------------------------------ -->
 #### Avoiding error messages about mirroring or mapping
 
 Next, try changing CSS without a matching folder opened:
@@ -258,7 +258,7 @@ Next, try changing CSS without a matching folder opened:
 
    ![The Microsoft Edge Tools Side Bar when viewing a URL](./open-devtools-and-embedded-browser-images/limited-css-edit-ability-for-remote-url.png)
 
-Options in this case include: 
+Options in this case include:
 
 * Clear the **CSS mirror editing** checkbox in **Styles** tab and continue experimenting with CSS changes (without automatic editing of CSS in source files).  This prevents further error messages about mapping to source files for CSS mirror editing.
 
@@ -270,6 +270,7 @@ See also:
 * [Troubleshooting the DevTools extension](./troubleshooting.md)
 
 
+<!-- ------------------------------ -->
 #### URLs, file paths, and opening a matching folder
 
 In some cases, behavior of DevTools is different for file paths than for URLs.

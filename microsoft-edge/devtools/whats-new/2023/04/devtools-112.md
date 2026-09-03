@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 112)
-description: "The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS overview tool displays a list of non-simple selectors for quick performance wins, and more."
+description: The Performance tool can now unminify JavaScript running in out-of-process iframes, the CSS overview tool displays a list of non-simple selectors for quick performance wins, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 04/11/2023
 ---
 # What's new in DevTools (Microsoft Edge 112)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ------------------------------ -->

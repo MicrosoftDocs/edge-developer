@@ -20,7 +20,7 @@ To view your extension's **Reviews** page:
 
    Or, on the **Home** > **Edge** breadcrumb path, click the star rating of an extension on the **Overview** page.
 
-![Microsoft Partner Center reviews feature](./reply-user-reviews-images/user-reviews.png) 
+![Microsoft Partner Center reviews feature](./reply-user-reviews-images/user-reviews.png)
 
 
 <!-- ====================================================================== -->

@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 132)
-description: "CSS selector costs include links in Insights sidebar. Right-click a tab to move it left or right in Quick View. Heap snapshot objects categorized by constructor names and source locations in Memory tool. And more."
+description: CSS selector costs include links in Insights sidebar. Right-click a tab to move it left or right in Quick View. Heap snapshot objects categorized by constructor names and source locations in Memory tool. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,7 +10,7 @@ ms.date: 1/16/2025
 ---
 # What's new in DevTools (Microsoft Edge 132)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -20,7 +20,7 @@ These are the latest features in the Stable release of Microsoft Edge DevTools.
 
 The left sidebar in the **Performance** tool displays the costs of CSS selectors in the **Insights** tab when the **Enable CSS selector stats (slow)** checkbox is enabled.  Now, the selectors have links to the stylesheets that contain them.
 
-Some selectors might have more than one link when they are defined in multiple locations in a stylesheet or defined in multiple stylesheets.  For example, two links will be shown as **[1], [2]**. Selectors from user agent stylesheets or dynamically created stylesheets won't have links. 
+Some selectors might have more than one link when they are defined in multiple locations in a stylesheet or defined in multiple stylesheets.  For example, two links will be shown as **[1], [2]**. Selectors from user agent stylesheets or dynamically created stylesheets won't have links.
 
 ![CSS selector costs links](./devtools-132-images/selector-stats-links.png)
 
