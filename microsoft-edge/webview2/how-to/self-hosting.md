@@ -15,7 +15,7 @@ _Self-hosting_ means deploying a WebView2 Preview Runtime with your app.  This a
 The self-hosting approach provides real-world usage of your app with the latest WebView2 Preview Runtime to catch any issues that may arise.  You should self-host your app in tandem with doing prerelease testing on your app, to provide a structured approach to testing your app with the latest version of the WebView2 Runtime.
 
 Conduct both automated and manual testing:
-* For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  See [Prerelease testing using preview channels](./prerelease-testing.md).
+* For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  See [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md).
 * For **manual testing**, use **self-hosting**, which means deploying a WebView2 Preview Runtime with your app, to use daily by your team.  Covered by the present article.
 
 
@@ -84,7 +84,7 @@ If you are using the API, then we recommend building UI in your app that allows 
 ## See also
 
 * [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)
 * [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 
 External:

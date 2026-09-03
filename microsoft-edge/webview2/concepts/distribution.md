@@ -224,7 +224,7 @@ To use the new version of the WebView2 Runtime, you need to either release all r
 
 In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
-For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
 <!-- ------------------------------ -->
@@ -361,7 +361,7 @@ Example managed app folder structure:
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
 * [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
 * [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
-* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
+* [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
 * [Distribute a WebView2 app as a single executable file](../how-to/static.md) - statically linking the WebView2 loader library.
 

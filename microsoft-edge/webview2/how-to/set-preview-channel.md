@@ -32,7 +32,7 @@ This article explains how to switch to a preview channel of Microsoft Edge, to t
 * [See also](#see-also)
 
 See also:
-* [Prerelease testing using preview channels](./prerelease-testing.md)<!-- todo: explicitly relate/ compare/ contrast the two articles -->
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)<!-- todo: explicitly relate/ compare/ contrast the two articles -->
 
 To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the stable WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates can include APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
 
@@ -66,7 +66,7 @@ For more information about how SDK versions interact with the WebView2 Runtime a
 
 We recommend that you test upcoming changes using preview channels to ensure your app's forward compatibility, by following these best practices:
 
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)
 * [Self-host by deploying preview channels](./self-hosting.md)
 
 
@@ -445,7 +445,7 @@ In your app's code, write your own custom logic to deploy the latest version of 
 ## See also
 <!-- all links in article body -->
 
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)
 * [Self-host by deploying preview channels](./self-hosting.md)
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)

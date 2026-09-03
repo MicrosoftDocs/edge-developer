@@ -1,5 +1,5 @@
 ---
-title: Prerelease testing using preview channels
+title: Prerelease testing using preview channels of Microsoft Edge
 description: How to test your WebView2 app by using the preview channels of Microsoft Edge (Edge Canary, Edge Dev, or Edge Beta) to find issues that will affect your particular WebView2 app, before WebView2 changes reach  the Evergreen WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/22/2024
 ---
-# Prerelease testing using preview channels
+# Prerelease testing using preview channels of Microsoft Edge
 <!-- short article -->
 
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime.  This helps catch any bugs before they degrade the app experience for end users.
