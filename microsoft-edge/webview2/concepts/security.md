@@ -112,17 +112,17 @@ When the host process is running elevated:
    * [Setting browser flags programmatically through code](./webview-features-flags.md#setting-browser-flags-programmatically-through-code) in _WebView2 browser flags_.
 
 * `HKEY_CURRENT_USER` (`HKCU`) policy overrides are ignored.  See:
-   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
-   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
-   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
+   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKCU`.
    * [Debug WebView2 apps with Visual Studio Code](../how-to/debug-visual-studio-code.md) - Find `HKEY_CURRENT_USER`.
 
 * `AdditionalBrowserArguments` registry overrides that are under `HKCU` are ignored.
 
 * `HKEY_LOCAL_MACHINE` (`HKLM`) policy overrides are honored.  See:
-   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
-   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
-   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [Switching the channel search order (recommended)](../how-to/set-preview-channel.md#switching-the-channel-search-order-recommended) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [How to use `ChannelSearchKind` to ensure that a particular channel is used](../how-to/set-preview-channel.md#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
+   * [Setting the browser executable folder (for local testing)](../how-to/set-preview-channel.md#setting-the-browser-executable-folder-for-local-testing) in _Switch to a preview channel to test upcoming APIs and features_ - Select the **Registry key** tab, and then Find `HKLM`.
 
 Non-elevated WebView2 apps honor all of the supported override mechanisms.
 

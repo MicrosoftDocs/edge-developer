@@ -2402,11 +2402,11 @@
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps
           items:
-            - name: Test upcoming APIs and features
-              href: ./webview2/how-to/set-preview-channel.md
-
-            - name: Prerelease testing using preview channels
+            - name: Prerelease testing using preview channels  # short article
               href: ./webview2/how-to/prerelease-testing.md
+
+            - name: Switch to a preview channel to test upcoming APIs and features  # long article
+              href: ./webview2/how-to/set-preview-channel.md
 
             - name: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
               href: ./webview2/how-to/chromium-devtools-protocol.md

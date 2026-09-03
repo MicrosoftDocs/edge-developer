@@ -33,7 +33,7 @@ During development and testing, a WebView2 app can use either option as the back
 
 * The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update release cadence as the Stable channel of the Microsoft Edge browser; see [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
 
-* A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+* A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
 
@@ -360,7 +360,7 @@ Example managed app folder structure:
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
 * [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
-* [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
+* [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
 * [Distribute a WebView2 app as a single executable file](../how-to/static.md) - statically linking the WebView2 loader library.

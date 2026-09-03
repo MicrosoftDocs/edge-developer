@@ -9,11 +9,12 @@ ms.subservice: webview
 ms.date: 04/22/2024
 ---
 # Prerelease testing using preview channels
+<!-- short article -->
 
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime.  This helps catch any bugs before they degrade the app experience for end users.
 
 See also:
-* [Test upcoming APIs and features](./set-preview-channel.md)
+* [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)<!-- todo: explicitly relate/ compare/ contrast the two articles -->
 
 Conduct both automated and manual testing:
 * For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  Covered by the present article.
@@ -41,12 +42,12 @@ To do automated testing:
 
 1. **Set the preview channel for your app.**
 
-   You can set the preview channel by using `ChannelSearchKind`, so that your WebView2 app uses the least-stable channel (Canary, then Dev).  To do this, see [Switching the channel search order (recommended)](./set-preview-channel.md#switching-the-channel-search-order-recommended) in _Test upcoming APIs and features_.
+   You can set the preview channel by using `ChannelSearchKind`, so that your WebView2 app uses the least-stable channel (Canary, then Dev).  To do this, see [Switching the channel search order (recommended)](./set-preview-channel.md#switching-the-channel-search-order-recommended) in _Switch to a preview channel to test upcoming APIs and features_.
 
 1. **Install or deploy the preview channel.**
 
    * If you choose to install preview channels manually, install them from the page [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
-   * If you instead choose to deploy preview channels to devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Test upcoming APIs and features_.
+   * If you instead choose to deploy preview channels to devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Switch to a preview channel to test upcoming APIs and features_.
 
 1. **Conduct automated testing on your app running against the preview channels.**
 
@@ -63,7 +64,7 @@ Upon finding issues, you can report them via the [Microsoft Edge / WebView2Feedb
 ## See also
 
 * [Self-host by deploying preview channels](./self-hosting.md)
-* [Test upcoming APIs and features](./set-preview-channel.md)
+* [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)
 * [Automate and test WebView2 apps with Microsoft Edge WebDriver](./webdriver.md)
 * [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 * [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback)

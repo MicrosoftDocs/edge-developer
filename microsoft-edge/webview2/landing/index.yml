@@ -200,7 +200,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Test upcoming APIs and features
+          - text: Switch to a preview channel to test upcoming APIs and features
             url: ../how-to/set-preview-channel.md
 
           - text: Use the Chrome DevTools Protocol (CDP) in WebView2 apps

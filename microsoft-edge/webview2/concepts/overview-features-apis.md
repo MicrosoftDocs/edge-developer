@@ -3681,7 +3681,7 @@ Runtime selection supports prerelease testing and self-hosting.  When creating a
 * To specify which browser preview channels are searched for, use the `CoreWebView2EnvironmentOptions.ReleaseChannels` property.
 
 See also:
-* [Test upcoming APIs and features](../how-to/set-preview-channel.md)
+* [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md)
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)
 

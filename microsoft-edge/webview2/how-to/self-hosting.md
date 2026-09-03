@@ -35,7 +35,7 @@ To self-host a preview channel of WebView2:
 
 1. **Install the preview channel on your team's machines.**
 
-   To install preview channels on a small number of devices, you can download and install them manually from the page [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  To deploy preview channels to a large number of devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Test upcoming APIs and features_.
+   To install preview channels on a small number of devices, you can download and install them manually from the page [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).  To deploy preview channels to a large number of devices, see [How to deploy preview channels](./set-preview-channel.md#how-to-deploy-preview-channels) in _Switch to a preview channel to test upcoming APIs and features_.
 
 1. **Use your app daily with the preview channel of WebView2, and diagnose potential issues with the WebView2 Runtime.**
 
@@ -83,7 +83,7 @@ If you are using the API, then we recommend building UI in your app that allows 
 <!-- ====================================================================== -->
 ## See also
 
-* [Test upcoming APIs and features](./set-preview-channel.md)
+* [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)
 * [Prerelease testing using preview channels](./prerelease-testing.md)
 * [Site compatibility-impacting changes coming to Microsoft Edge](../../web-platform/site-impacting-changes.md)
 
