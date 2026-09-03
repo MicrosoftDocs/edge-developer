@@ -15,6 +15,9 @@ ms.date: 04/22/2024
 
 This article explains how to switch to a preview channel of Microsoft Edge, to test experimental APIs that are in a WebView2 Prerelease SDK package.
 
+See also:
+* [Prerelease testing using preview channels](./prerelease-testing.md)
+
 To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the stable WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates can include APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
 
 We recommend that you test the Experimental APIs ahead of time, before they are promoted to Stable in the WebView2 Release SDK, by switching to a preview channel of Microsoft Edge (which includes WebView2), to ensure that your app is forward-compatible.

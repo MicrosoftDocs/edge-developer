@@ -1,5 +1,5 @@
 ---
-title: Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
+title: Preview Runtime 154.0.4255.0 (Sep. 3, 2026)
 description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.n.nnnn.nn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/01/2026
 ---
-# Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
+# Preview Runtime 154.0.4255.0 (Sep. 3, 2026)
 <!-- todo: when this runtime gets released as a stable runtime, remove "preview" from title, update version number, update date, update lead-in sentence; per /release-notes/includes/runtime-template.md -->
 
 Release notes for Microsoft Edge WebView2 Preview Runtime, release date: Mmm. dd, yyyy.
