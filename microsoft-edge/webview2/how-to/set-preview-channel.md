@@ -1,5 +1,5 @@
 ---
-title: Test upcoming APIs and features
+title: Switch to a preview channel to test upcoming APIs and features
 description: How to specify a Microsoft Edge preview channel to use, to test experimental APIs in a prerelease package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,12 +8,31 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 04/22/2024
 ---
-# Test upcoming APIs and features
-<!-- old title:
 # Switch to a preview channel to test upcoming APIs and features
--->
+<!-- long article -->
 
 This article explains how to switch to a preview channel of Microsoft Edge, to test experimental APIs that are in a WebView2 Prerelease SDK package.
+
+**Detailed contents:**
+* [Use a preview channel of WebView2 to test your app against the most recent experimental WebView2 APIs](#use-a-preview-channel-of-webview2-to-test-your-app-against-the-most-recent-experimental-webview2-apis)
+   * [Interplay between the WebView2 Prerelease SDK and Microsoft Edge Preview Channels](#interplay-between-the-webview2-prerelease-sdk-and-microsoft-edge-preview-channels)
+   * [Forward-compatibility testing by using the preview channel](#forward-compatibility-testing-by-using-the-preview-channel)
+* [Downloading the prerelease SDK and a preview channel](#downloading-the-prerelease-sdk-and-a-preview-channel)
+* [Approaches to making your app use a specific browser channel](#approaches-to-making-your-app-use-a-specific-browser-channel)
+   * [Switching the channel search order (recommended)](#switching-the-channel-search-order-recommended)
+      * [How to use ChannelSearchKind to ensure that a particular channel is used](#how-to-use-channelsearchkind-to-ensure-that-a-particular-channel-is-used)
+   * [Setting the browser executable folder (for local testing)](#setting-the-browser-executable-folder-for-local-testing)
+* [When the new runtime gets picked up](#when-the-new-runtime-gets-picked-up)
+* [How to set an environment variable](#how-to-set-an-environment-variable)
+   * [Setting environmental variables by using APIs, for a specific app](#setting-environmental-variables-by-using-apis-for-a-specific-app)
+   * [Setting environmental variables globally, for all apps](#setting-environmental-variables-globally-for-all-apps)
+* [How to deploy preview channels](#how-to-deploy-preview-channels)
+   * [Option 1: Manually install preview channels on machines](#option-1-manually-install-preview-channels-on-machines)
+   * [Option 2: Programmatically deploy preview channels via API endpoints](#option-2-programmatically-deploy-preview-channels-via-api-endpoints)
+* [See also](#see-also)
+
+See also:
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)<!-- todo: explicitly relate/ compare/ contrast the two articles -->
 
 To test new or forthcoming APIs and features, switch to a Microsoft Edge preview channel rather than using the stable WebView2 Runtime.  The Evergreen WebView2 Runtime is updated frequently to add new APIs and functionalities. These updates can include APIs have been promoted from `Experimental` in a Prerelease WebView2 SDK to `Stable` in the WebView2 Release SDK.  Some of the updates in the Evergreen WebView2 Runtime could potentially break your WebView2 app.
 
@@ -25,7 +44,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Use a preview channel of WebView2 to test your app against the most recent experimental WebView2 APIs
+## Use a preview channel of WebView2 to test your app against the most recent experimental WebView2 APIs
 
 The Evergreen WebView2 Runtime doesn't include experimental WebView2 APIs.  Instead, to use these experimental features in your WebView2 code, have your app use the version of WebView2 that is in a Microsoft Edge preview channel (Edge Beta, Edge Dev, or Edge Canary).
 
@@ -47,7 +66,7 @@ For more information about how SDK versions interact with the WebView2 Runtime a
 
 We recommend that you test upcoming changes using preview channels to ensure your app's forward compatibility, by following these best practices:
 
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)
 * [Self-host by deploying preview channels](./self-hosting.md)
 
 
@@ -70,15 +89,13 @@ When a WebView2 is initialized, it will attempt to find a valid runtime on the m
 
 There are two ways to make your WebView2 app use a specific preview channel of Microsoft Edge:
 
-* [Switching the channel search order (recommended)](#switching-the-channel-search-order-recommended).
+* [Switching the channel search order (recommended)](#switching-the-channel-search-order-recommended), below.
 
-* [Setting the browser executable folder (for local testing)](#setting-the-browser-executable-folder-for-local-testing).
-
-These approaches are described below.
+* [Setting the browser executable folder (for local testing)](#setting-the-browser-executable-folder-for-local-testing), below.
 
 
-<!-- ====================================================================== -->
-## Switching the channel search order (recommended)
+<!-- ------------------------------ -->
+#### Switching the channel search order (recommended)
 
 This section applies to using an API, registry override, environment variable, or group policy.
 
@@ -165,8 +182,8 @@ Do either of the following:
 ---
 
 
-<!-- ====================================================================== -->
-## How to use `ChannelSearchKind` to ensure that a particular channel is used
+<!-- ---------- -->
+###### How to use `ChannelSearchKind` to ensure that a particular channel is used
 
 When using `ChannelSearchKind`, here's how you can make sure that a certain preview browser channel is used when you have multiple preview browser channels installed.
 
@@ -244,10 +261,10 @@ Do either of the following:
 ---
 
 
-<!-- ====================================================================== -->
-## Setting the browser executable folder (for local testing)
+<!-- ------------------------------ -->
+#### Setting the browser executable folder (for local testing)
 
-An alternative approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries.  This folder can be any of the following locations:
+An alternative approach instead of [Switching the channel search order (recommended)](#switching-the-channel-search-order-recommended), above, is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries.  This folder can be any of the following locations:
 * The installed location of the WebView2 Runtime.
 * A preview channel of Microsoft Edge.
 * A folder containing Fixed Version binaries that you have deployed to the machine yourself.
@@ -428,7 +445,7 @@ In your app's code, write your own custom logic to deploy the latest version of 
 ## See also
 <!-- all links in article body -->
 
-* [Prerelease testing using preview channels](./prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](./prerelease-testing.md)
 * [Self-host by deploying preview channels](./self-hosting.md)
 * [Phases of introducing APIs](../concepts/versioning.md#phases-of-introducing-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Distribute your app and the WebView2 Runtime](../concepts/distribution.md)

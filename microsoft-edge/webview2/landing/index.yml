@@ -200,7 +200,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Test upcoming APIs and features
+          - text: Switch to a preview channel to test upcoming APIs and features
             url: ../how-to/set-preview-channel.md
 
           - text: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
@@ -212,7 +212,7 @@ landingContent:
           - text: Automate and test WebView2 apps with Microsoft Edge WebDriver
             url: ../how-to/webdriver.md
 
-          - text: Prerelease testing using preview channels
+          - text: Prerelease testing using preview channels of Microsoft Edge
             url: ../how-to/prerelease-testing.md
 
           - text: Self-host by deploying preview channels

@@ -14,7 +14,7 @@ ms.date: 01/01/2026
 Release notes for Microsoft Edge WebView2 Preview Runtime, release date: Mmm. dd, yyyy.
 
 <!-- todo: remove paragraph when this runtime gets released as a stable runtime -->
-This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
+This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels of Microsoft Edge](../../how-to/prerelease-testing.md).
 
 
 <!-- ====================================================================== -->

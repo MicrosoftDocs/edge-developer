@@ -15,6 +15,8 @@ list past 10 releases
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
 Release notes for recent SDKs:
+* [SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 3, 2026)](./1-0-4255-prerelease.md)
+* [SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)](./n-n-nnnn-nn.md)
 * [SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
 * [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
 * [SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
@@ -126,7 +128,7 @@ See also:
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0; see [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md).  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Switch to a preview channel to test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions

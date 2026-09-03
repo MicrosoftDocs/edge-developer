@@ -15,7 +15,8 @@ list past 10 releases (runtimes)
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 153.0.4234.6 (Aug. 28, 2026)](./153.md)
+* [Preview Runtime 154.0.4255.0 (Sep. 3, 2026)](./154.md)
+* [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)](./153.md)
 * [Runtime 152.0.4191.53 (Aug. 28, 2026)](./152.md)
 * [Runtime 151.0.4129.50 (Aug. 3, 2026)](./151.md)
 * [Runtime 150.0.4078.44 (Jul. 7, 2026)](./150.md)
@@ -53,7 +54,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
   Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
-  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels](../../how-to/prerelease-testing.md).
+  Prerelease testing of WebView2 SDKs uses a preview channel of Microsoft Edge (Beta, Dev, or Canary), which includes the WebView2 Preview Runtime.  See [Prerelease testing using preview channels of Microsoft Edge](../../how-to/prerelease-testing.md).
 
 * Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
@@ -86,7 +87,7 @@ See also:
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0; see [Runtime 86.0.705.50 (Jan. 25, 2021)](./86.md).  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel (containing the WebView2 Preview Runtime), see [Switch to a preview channel to test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions
