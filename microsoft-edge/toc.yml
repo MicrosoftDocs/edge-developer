@@ -551,6 +551,10 @@
                       href: ./devtools/css/index.md
                       displayName: Elements tool
 
+                    - name: Find invalid, overridden, inactive, and other CSS
+                      href: ./devtools/css/issues.md
+                      displayName: Elements tool
+
                     - name: Inspect CSS Grid layouts
                       href: ./devtools/css/grid.md
                       displayName: Elements tool
