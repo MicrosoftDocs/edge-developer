@@ -18,16 +18,16 @@ DevTools provides more than 30 tools, consisting of _Default tools_ and _More to
 
 By default, the following tools are listed in the **Activity Bar** at the top of DevTools:
 
-* ![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png) **Inspect tool**
-* ![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png) **Device Emulation**
-* ![Welcome icon](./about-tools-images/welcome-icon.png) **Welcome**
-* ![Elements icon](./about-tools-images/elements-icon.png) **Elements**
-* ![Console icon](./about-tools-images/console-icon.png) **Console**
-* ![Sources icon](./about-tools-images/sources-icon.png) **Sources**
-* ![Network icon](./about-tools-images/network-icon.png) **Network**
-* ![Performance icon](./about-tools-images/performance-icon.png) **Performance**
-* ![Memory icon](./about-tools-images/memory-icon.png) **Memory**
-* ![Application icon](./about-tools-images/application-icon.png) **Application**
+* **Inspect tool**
+* **Device Emulation**
+* **Welcome**
+* **Elements**
+* **Console**
+* **Sources**
+* **Network**
+* **Performance**
+* **Memory**
+* **Application**
 
 ![The default tools, including two icons and eight tabs in the Activity Bar](./about-tools-images/all-default-tools.png)
 
@@ -37,16 +37,16 @@ By default, the following tools are listed in the **Activity Bar** at the top of
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
-| ![Inspect tool icon](./about-tools-images/inspect-tool-icon-light-theme.png) **Inspect** | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](css/inspect.md) |
-| ![Device Emulation icon](./about-tools-images/device-emulation-icon-light-theme.png) **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
-| ![Welcome icon](./about-tools-images/welcome-icon.png) **Welcome** | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, release notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
-| ![Elements icon](./about-tools-images/elements-icon.png) **Elements** | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |
-| ![Console icon](./about-tools-images/console-icon.png) **Console** | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
-| ![Sources icon](./about-tools-images/sources-icon.png) **Sources** | Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and inspect and edit the HTML and CSS files that make up the current webpage. | [Sources tool overview](sources/index.md) |
-| ![Network icon](./about-tools-images/network-icon.png) **Network** | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](network/index.md) |
-| ![Performance icon](./about-tools-images/performance-icon.png) **Performance** | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Analyze runtime performance (tutorial)](./performance/index.md) |
-| ![Memory icon](./about-tools-images/memory-icon.png) **Memory** | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
-| ![Application icon](./about-tools-images/application-icon.png) **Application** | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](storage/application-tool.md) |
+| **Inspect** | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](css/inspect.md) |
+| **Device Emulation** | Use the **Device Emulation** tool, also called _Device Simulation Mode_ or _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
+| **Welcome** | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, release notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
+| **Elements** | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |
+| **Console** | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
+| **Sources** | Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and inspect and edit the HTML and CSS files that make up the current webpage. | [Sources tool overview](sources/index.md) |
+| **Network** | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](network/index.md) |
+| **Performance** | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Analyze runtime performance (tutorial)](./performance/index.md) |
+| **Memory** | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
+| **Application** | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](storage/application-tool.md) |
 
 The **Elements**, **Console**, and **Sources** tools (tabs) are permanent, in the **Activity Bar**.  The other tool tabs can be removed, or moved down to the **Quick View** toolbar.
 
@@ -128,7 +128,7 @@ To move a tool to the other toolbar, right-click the tool's tab and then select 
 
 ![The right-click menu for a tool in the Quick View toolbar, including the 'Move to top Activity Bar' command](./about-tools-images/move-from-quickview-to-activitybar.png)
 
-To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** (![Customize icon](./about-tools-images/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
+To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).  Or, click the **Customize and control DevTools** button and then select **Run command**.
 
 
 <!-- ====================================================================== -->
@@ -148,7 +148,7 @@ The **Console** tool is also a permanent tab on the **Quick View** toolbar.  In 
 
 To restore all of the default tool tabs in the **Activity Bar** and **Quick View**:
 
-1. In DevTools, select **Customize and control DevTools** (![Customize and control DevTools icon](./about-tools-images/customize-devtools-icon-light-theme.png)) > **Settings** (![Settings icon](./about-tools-images/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, select **Customize and control DevTools** > **Settings** > **Preferences**.
 
 1. Click the **Restore defaults and refresh** button.  DevTools restarts, and the default tabs appear in both toolbars.
 

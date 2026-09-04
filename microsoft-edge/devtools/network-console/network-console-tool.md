@@ -57,7 +57,7 @@ To get to the **Network Console** tool by starting from the **Network** tool:
 
 1. To open DevTools, right-click a webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-1. On the main toolbar, select the **Network** (![Network tool icon](./network-console-tool-images/network-tool-icon.png)) tab.  If that tab isn't visible, click the **More tools** (![More tools icon.](./network-console-tool-images/more-tools-icon.png)) button, and then select **Network**.
+1. On the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tools** (![More tools icon.](./network-console-tool-images/more-tools-icon.png)) button, and then select **Network**.
 
 1. Refresh the webpage.  The **Network** tool displays the resources that are used to construct the webpage.
 

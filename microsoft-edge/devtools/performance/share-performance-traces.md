@@ -41,7 +41,7 @@ To record performance for aspects of a webpage, and then export a performance re
 
    DevTools opens.
 
-1. In DevTools, open the **Performance** (![Performance icon](./share-performance-traces-images/performance-icon.png)) tool.
+1. In DevTools, open the **Performance** tool.
 
 1. Click the **Record** (![Record icon](./share-performance-traces-images/record-icon.png)) button.
 
@@ -169,7 +169,7 @@ To open a saved trace file in DevTools:
 
    DevTools opens.
 
-1. In DevTools, select the **Performance** (![Performance icon](./share-performance-traces-images/performance-icon.png)) tool.
+1. In DevTools, select the **Performance** tool.
 
 1. Click the **Load trace** (![Load trace icon](./share-performance-traces-images/load-trace-icon.png)) button.
 

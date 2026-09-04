@@ -45,7 +45,7 @@ To use the **Allocation sampling** profiling type to view memory allocation by J
 
    Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./js-runtime-images/memory-tool-icon.png)) tool:
+1. In DevTools, in the **Activity Bar**, select the **Memory** tool:
 
    ![The "Allocation sampling" option button in the Memory tool](./js-runtime-images/allocation-sampling-option-button.png)
 

@@ -53,7 +53,7 @@ See also:
 
    DevTools opens.
 
-1. In the **Activity Bar**, select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
+1. In the **Activity Bar**, select the **Application** tool.
 
 1. In the outline on the left, in the major **Storage** section, expand **Cookies**, then select an origin, such as **https://<span>www.bing.com</span>**:
 
@@ -160,7 +160,7 @@ To view third-party cookies:
 
    DevTools opens.
 
-1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
+1. Select the **Application** tool.
 
 1. On the left, under the major **Storage** section, expand **Cookies**, and then select a website URL, such as **https://<span>www.bing.com</span>**.
 
@@ -193,7 +193,7 @@ To view third-party cookies in the **Application** tool:
 
    DevTools opens.
 
-1. Select the **Application** (![Application icon](./cookies-images/application-icon.png)) tool.
+1. Select the **Application** tool.
 
 1. Switch to the webpage window, such as Bing.com.
 

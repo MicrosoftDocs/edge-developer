@@ -55,7 +55,7 @@ To begin using **Allocations on timeline**:
 
    DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./allocation-profiler-images/memory-tool-icon.png)) tool.
+1. In DevTools, in the **Activity Bar**, select the **Memory** tool.
 
    If that tab isn't visible, click the **More Tools** (![More Tools icon](./allocation-profiler-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
 

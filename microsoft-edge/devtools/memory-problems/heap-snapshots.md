@@ -460,7 +460,7 @@ To use the **Heap snapshot** profiling type to find detached elements:
 
    DevTools opens.
 
-1. In DevTools, in the **Activity Bar**, select the **Memory** (![Memory tool icon](./heap-snapshots-images/memory-tool-icon.png)) tool.
+1. In DevTools, in the **Activity Bar**, select the **Memory** tool.
 
    If that tab isn't visible, click the **More Tools** (![More Tools icon](./heap-snapshots-images/more-tools-icon.png)) button, and then select **Memory**.  The **Memory** tool opens:
 

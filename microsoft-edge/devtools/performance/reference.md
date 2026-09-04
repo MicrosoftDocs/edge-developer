@@ -111,7 +111,7 @@ To open the **Performance** tool in DevTools:
 
    DevTools opens.
 
-1. In DevTools, on the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tab.
+1. In DevTools, on the **Activity Bar**, select the **Performance** tab.
 
    If that tab isn't visible, click the **More tools** (![More tools icon](./reference-images/more-tools-icon.png)) button.
 
@@ -133,7 +133,7 @@ To analyze the performance of a webpage while it's running (rather than while it
 
    DevTools opens.
 
-1. On the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
+1. On the **Activity Bar**, select the **Performance** tool.
 
 1. Click the **Record** (![Record icon](./reference-images/record-icon.png)) button.
 
@@ -157,7 +157,7 @@ To analyze the performance of a webpage while it's loading (rather than while it
 
    DevTools opens.
 
-1. On the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
+1. On the **Activity Bar**, select the **Performance** tool.
 
 1. Click the **Refresh page** (![Refresh Page](./reference-images/refresh-page-icon.png)) button:
 
@@ -1114,7 +1114,7 @@ To view WebSocket messages in the **Performance** tool:
 
    DevTools opens.
 
-1. In the **Activity Bar**, select the **Performance** (![Performance icon](./reference-images/performance-icon.png)) tool.
+1. In the **Activity Bar**, select the **Performance** tool.
 
 1. In the upper left of the **Performance** tool, click the **Record** (![Record icon](./reference-images/record-icon.png)) button.
 

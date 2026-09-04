@@ -233,7 +233,7 @@ To record a profile and view the custom performance data of the Photo Gallery de
 
    DevTools opens.
 
-1. In DevTools, select the **Performance** (![Performance icon](./extension-images/performance-icon.png)) tool.
+1. In DevTools, select the **Performance** tool.
 
 1. In the **Performance** tool, click the **Capture settings** (![Capture settings icon](./extension-images/capture-settings-icon.png)) button, and then make sure that the **Show custom tracks** checkbox is selected:
 
