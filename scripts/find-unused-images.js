@@ -2,37 +2,37 @@
 /**
  * find-unused-images.js
  *
- * Scans the repository for "*-images" folders (each one holding the
- * screenshots/pictures used by the article that shares its base name,
- * e.g. "focus.md" -> "focus-images/") and detects image files inside
- * them that are not referenced from any Markdown (*.md) file in the repo.
+ * Scans the "microsoft-edge" folder for "*-images" folders (each one holding
+ * the screenshots/pictures used by the article that shares its base name,
+ * e.g. "focus.md" -> "focus-images/") and detects image files inside them
+ * that are not referenced from their matching sibling article.
  *
  * By default this runs in "dry run" mode and only prints a report of
  * the unused images it finds. Pass --delete to actually delete them.
  *
  * Usage:
- *   node scripts/find-unused-images.js [rootDir] [--delete] [--json] [--verbose]
+ *   node scripts/find-unused-images.js [--delete] [--json] [--verbose]
+ *
+ * This script only ever scans the "microsoft-edge" top-level folder of the
+ * repository (sibling of "scripts"); nothing outside of it is walked.
  *
  * Arguments:
- *   rootDir     Optional path to scan. Defaults to the repository root
- *               (parent directory of this script's "scripts" folder).
  *   --delete    Actually delete the unused image files (otherwise dry run).
  *   --json      Print the report as JSON instead of human-readable text.
  *   --verbose   Also print every image file that IS in use.
  *
  * Notes / assumptions:
- *   - Images are only ever referenced via relative paths from Markdown
- *     files using the pattern "<something>-images/<filename>" (Markdown
- *     image syntax `![alt](./name-images/pic.png)` or plain HTML
- *     `<img src="./name-images/pic.png">`). This matches the convention
- *     used throughout this repository.
- *   - An image is considered "used" if its filename (case-insensitive)
- *     appears anywhere in any .md file, within a path segment ending in
- *     "-images/". This is intentionally a bit loose (matches by
- *     filename, not by requiring the exact relative path) so that
- *     images shared across articles, or referenced with different
- *     relative path prefixes (./, ../, etc.), are still correctly
- *     detected as used.
+ *   - Every "<name>-images" folder is expected to sit right next to its
+ *     matching "<name>.md" article, in the same directory
+ *     (e.g. "focus.md" and "focus-images/" are siblings).
+ *   - An image is considered "used" only if its filename (case-insensitive)
+ *     is referenced from that one matching article file. A reference to an
+ *     image of the same name from a *different* article does NOT count as
+ *     "used" - each images folder is checked strictly against its own
+ *     sibling article.
+ *   - If no matching "<name>.md" article exists next to a "<name>-images"
+ *     folder, every image inside that folder is reported as unused (there
+ *     is no article that could be using them).
  */
 
 import fs from 'fs';
@@ -46,13 +46,8 @@ const IMAGE_EXTENSIONS = new Set([
   '.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.ico'
 ]);
 
-const IGNORED_DIR_NAMES = new Set([
-  '.git', 'node_modules', '.vs', '.vscode'
-]);
-
 function parseArgs(argv) {
   const args = {
-    rootDir: null,
     delete: false,
     json: false,
     verbose: false,
@@ -65,8 +60,6 @@ function parseArgs(argv) {
       args.json = true;
     } else if (arg === '--verbose') {
       args.verbose = true;
-    } else if (!arg.startsWith('--')) {
-      args.rootDir = arg;
     }
   }
 
@@ -74,9 +67,10 @@ function parseArgs(argv) {
 }
 
 /**
- * Recursively walks a directory, invoking callbacks for files/directories found.
+ * Recursively walks a directory, invoking a callback for every "*-images"
+ * directory found.
  */
-function walk(dir, { onFile, onImagesDir }) {
+function walk(dir, onImagesDir) {
   let entries;
   try {
     entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -85,40 +79,24 @@ function walk(dir, { onFile, onImagesDir }) {
   }
 
   for (const entry of entries) {
-    if (IGNORED_DIR_NAMES.has(entry.name)) continue;
+    if (!entry.isDirectory()) continue;
 
     const fullPath = path.join(dir, entry.name);
 
-    if (entry.isDirectory()) {
-      if (/-images$/i.test(entry.name)) {
-        onImagesDir(fullPath);
-      }
-      walk(fullPath, { onFile, onImagesDir });
-    } else if (entry.isFile()) {
-      onFile(fullPath);
+    if (/-images$/i.test(entry.name)) {
+      onImagesDir(fullPath);
     }
+    walk(fullPath, onImagesDir);
   }
 }
 
 /**
- * Collects all "*-images" directories and all Markdown file paths under root.
+ * Collects all "*-images" directories under root.
  */
-function collectImagesDirsAndMarkdownFiles(rootDir) {
+function collectImagesDirs(rootDir) {
   const imagesDirs = [];
-  const markdownFiles = [];
-
-  walk(rootDir, {
-    onFile(filePath) {
-      if (path.extname(filePath).toLowerCase() === '.md') {
-        markdownFiles.push(filePath);
-      }
-    },
-    onImagesDir(dirPath) {
-      imagesDirs.push(dirPath);
-    },
-  });
-
-  return { imagesDirs, markdownFiles };
+  walk(rootDir, (dirPath) => imagesDirs.push(dirPath));
+  return imagesDirs;
 }
 
 /**
@@ -152,10 +130,11 @@ function listImageFiles(imagesDir) {
 }
 
 /**
- * Builds a lowercase Set of every referenced image filename found across all
- * Markdown files, by scanning for the "-images/<filename>" pattern.
+ * Builds a lowercase Set of every image filename referenced from a single
+ * article's Markdown content, by scanning for the "<images-folder>/<filename>"
+ * pattern.
  */
-function buildUsedImageNameSet(markdownFiles) {
+function buildUsedImageNameSetForArticle(articleFilePath) {
   // Matches things like:  something-images/some-file.name.png
   // Captures the filename portion after the last "-images/" segment,
   // stopping at a closing paren, quote, whitespace, or `#`/`?` (anchors/query).
@@ -163,27 +142,25 @@ function buildUsedImageNameSet(markdownFiles) {
 
   const used = new Set();
 
-  for (const mdFile of markdownFiles) {
-    let content;
-    try {
-      content = fs.readFileSync(mdFile, 'utf8');
-    } catch (err) {
-      continue;
-    }
+  let content;
+  try {
+    content = fs.readFileSync(articleFilePath, 'utf8');
+  } catch (err) {
+    return used;
+  }
 
-    let match;
-    while ((match = referencePattern.exec(content)) !== null) {
-      const rawName = match[1];
-      // Strip any trailing markdown title syntax like `pic.png "title"`,
-      // and decode simple URL-encoding (e.g. %20 -> space).
-      let fileName = rawName.split(/["']/)[0];
-      try {
-        fileName = decodeURIComponent(fileName);
-      } catch (err) {
-        // Ignore malformed percent-encoding, use raw value.
-      }
-      used.add(fileName.toLowerCase());
+  let match;
+  while ((match = referencePattern.exec(content)) !== null) {
+    const rawName = match[1];
+    // Strip any trailing markdown title syntax like `pic.png "title"`,
+    // and decode simple URL-encoding (e.g. %20 -> space).
+    let fileName = rawName.split(/["']/)[0];
+    try {
+      fileName = decodeURIComponent(fileName);
+    } catch (err) {
+      // Ignore malformed percent-encoding, use raw value.
     }
+    used.add(fileName.toLowerCase());
   }
 
   return used;
@@ -198,32 +175,42 @@ function formatBytes(bytes) {
 
 function main() {
   const args = parseArgs(process.argv.slice(2));
-  const rootDir = path.resolve(args.rootDir || path.join(__dirname, '..'));
+  const rootDir = path.resolve(__dirname, '..', 'microsoft-edge');
 
   if (!fs.existsSync(rootDir)) {
     console.error(`Error: root directory does not exist: ${rootDir}`);
     process.exit(1);
   }
 
-  console.error(`Scanning "${rootDir}" for "*-images" folders and Markdown files...`);
-  const { imagesDirs, markdownFiles } = collectImagesDirsAndMarkdownFiles(rootDir);
-  console.error(`Found ${imagesDirs.length} images folder(s) and ${markdownFiles.length} Markdown file(s).`);
-
-  console.error('Building the set of referenced image filenames from Markdown content...');
-  const usedNames = buildUsedImageNameSet(markdownFiles);
+  console.error(`Scanning "${rootDir}" for "*-images" folders...`);
+  const imagesDirs = collectImagesDirs(rootDir);
+  console.error(`Found ${imagesDirs.length} images folder(s).`);
 
   const report = {
     rootDir,
     imagesDirCount: imagesDirs.length,
-    markdownFileCount: markdownFiles.length,
     unusedFiles: [],
     usedFiles: [],
     unexpectedSubDirs: [],
+    missingArticles: [],
   };
 
   let totalUnusedBytes = 0;
 
   for (const imagesDir of imagesDirs) {
+    const folderName = path.basename(imagesDir);
+    const articleBaseName = folderName.replace(/-images$/i, '');
+    const articleFilePath = path.join(path.dirname(imagesDir), `${articleBaseName}.md`);
+    const articleExists = fs.existsSync(articleFilePath);
+
+    if (!articleExists) {
+      report.missingArticles.push({ imagesDir, articleFilePath });
+    }
+
+    const usedNames = articleExists
+      ? buildUsedImageNameSetForArticle(articleFilePath)
+      : new Set();
+
     const { files, subDirs } = listImageFiles(imagesDir);
 
     for (const dir of subDirs) {
@@ -259,10 +246,17 @@ function main() {
     console.log('Unused image report');
     console.log('='.repeat(70));
     console.log(`Images folders scanned : ${report.imagesDirCount}`);
-    console.log(`Markdown files scanned : ${report.markdownFileCount}`);
     console.log(`Used images            : ${report.usedFiles.length}`);
     console.log(`Unused images          : ${report.unusedFiles.length}`);
     console.log(`Reclaimable size       : ${formatBytes(report.totalUnusedBytes)}`);
+
+    if (report.missingArticles.length) {
+      console.log('');
+      console.log(`Note: found ${report.missingArticles.length} images folder(s) with no matching sibling article (all their images are reported unused):`);
+      for (const { imagesDir, articleFilePath } of report.missingArticles) {
+        console.log(`  - ${path.relative(rootDir, imagesDir)} (expected ${path.relative(rootDir, articleFilePath)})`);
+      }
+    }
 
     if (report.unexpectedSubDirs.length) {
       console.log('');
@@ -309,3 +303,4 @@ function main() {
 }
 
 main();
+
