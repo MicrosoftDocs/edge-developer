@@ -22,9 +22,30 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
 
-todo: sync list in 3 tabs:
+
+<!-- ------------------------------ -->
+#### Shared Cluster Environment API
+
+The Shared Cluster Environment API lets cooperating host applications explicitly share a WebView2 environment, including one browser process and one user data folder, by agreeing on a `ClusterName`.  Applications don't supply a user data folder path; the WebView2 Runtime derives it from the cluster name.
+
+A host app calls `CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync` with a `CoreWebView2ClusterEnvironmentOptions` instance.  The first host to establish the cluster determines its process-wide options. Later hosts join when their options match. These options remain authoritative for as long as the shared browser process is running; after it exits, the next host can establish the cluster with different options.
+
+The above operation returns a `CoreWebView2ClusterEnvironmentCreateResult` containing a `Status` and, on success, the shared `Environment`.  Possible values of `Status`:
+* `Success` indicates success.  A shared `Environment` is created and returned.
+* `OptionsMismatch` indicates that a running cluster has different options.  A shared `Environment` isn't created and returned.
+* `NotSupported` indicates that the host cannot use cluster environments, such as a sandboxed `AppContainer` process.  A shared `Environment` isn't created and returned.
+
+Failures to start or complete the operation are reported separately as exceptions in .NET and WinRT, or failing `HRESULT` return values in Win32.
+
+Call `CoreWebView2Environment.GetClusterEnvironmentOptions` to read a running cluster's options without launching a browser.  It returns `null` when no cluster is running or the host cannot use cluster environments.  The recommended flow is to read the current options, reuse them if available, and then create or join.  Because another host can establish a cluster between these calls, applications must still handle `OptionsMismatch` by reading the options again and retrying, or by using a private environment.
+
+`PerHostProfileIsolation` is enabled by default and namespaces profile names per host application to prevent accidental profile sharing.  This isn't a security boundary: cluster members must trust one another.  Sharing is supported within the same user and logon session, with hosts using the same integrity level, elevation state, and resolved WebView2 Runtime.  Applications should check runtime support and fall back to a private environment when the API is unavailable.
+
+See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/SharedClusterEnvironment.md) API specification.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
+
+todo: sync list in 3 tabs
 
 * [CoreWebView2ClusterEnvironmentCreateResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentcreateresult?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentCreateResult.Environment Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentcreateresult.environment?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
@@ -131,6 +152,8 @@ todo: sync list in 3 tabs:
   * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_SUCCEEDED`
 
 ---
+
+
 
 
 <!-- ====================================================================== -->
