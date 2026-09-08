@@ -14,7 +14,7 @@ ms.date: 04/22/2024
 _Prerelease testing_ means testing your WebView2 app by using the preview channels of Microsoft Edge to find issues that will affect your particular WebView2 app, before any changes ship in the Stable Evergreen WebView2 Runtime.  This helps catch any bugs before they degrade the app experience for end users.
 
 See also:
-* [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)<!-- todo: explicitly relate/ compare/ contrast the two articles -->
+* [Switch to a preview channel to test upcoming APIs and features](./set-preview-channel.md)<!-- long article -->
 
 Conduct both automated and manual testing:
 * For **automated testing**, do **prerelease testing**, which means testing with a WebView2 Preview Runtime.  Covered by the present article.
