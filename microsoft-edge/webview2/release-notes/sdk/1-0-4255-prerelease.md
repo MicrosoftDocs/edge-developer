@@ -45,14 +45,13 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
-todo: sync list in 3 tabs
-
+<!-- 1 -->
 * [CoreWebView2ClusterEnvironmentCreateResult Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentcreateresult?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentCreateResult.Environment Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentcreateresult.environment?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentCreateResult.Status Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentcreateresult.status?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
+<!-- 2 -->
 * [CoreWebView2ClusterEnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
-   * [CoreWebView2ClusterEnvironmentOptions. Method](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.additionalbrowserarguments?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.allowsinglesignonusingosprimaryaccount?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentOptions.AreBrowserExtensionsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.arebrowserextensionsenabled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
@@ -64,27 +63,33 @@ todo: sync list in 3 tabs
    * [CoreWebView2ClusterEnvironmentOptions.PerHostProfileIsolation Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.perhostprofileisolation?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentOptions.ReleaseChannels Property](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentoptions.releasechannels?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
-* [CoreWebView2ClusterEnvironmentStatus Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentstatus?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
-   * [CoreWebView2ClusterEnvironmentStatus.NotSupported Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentstatus?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
-   * [CoreWebView2ClusterEnvironmentStatus.OptionsMismatch Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentstatus?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
-   * [CoreWebView2ClusterEnvironmentStatus.Succeeded Enum Value](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentstatus?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
+<!-- 3 -->
+* [CoreWebView2ClusterEnvironmentStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2clusterenvironmentstatus?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
+   * `NotSupported`
+   * `OptionsMismatch`
+   * `Succeeded`
 
-* CoreWebView2Environment:
+<!-- 4 -->
+* `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createorjoinclusterenvironmentasync?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getclusterenvironmentoptions?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
-* CoreWebView2Frame:
+<!-- 5 -->
+* `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.launchingexternalurischeme?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
-* CoreWebView2LaunchingExternalUriSchemeEventArgs:
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
+<!-- 6 -->
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true) _todo: script emitted this member for .net & win32 lists only; delete, or add to winrt tab?_
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+<!-- 1 -->
 * [CoreWebView2ClusterEnvironmentCreateResult Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentcreateresult?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentCreateResult.Environment Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentcreateresult?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#environment)
    * [CoreWebView2ClusterEnvironmentCreateResult.Status Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentcreateresult?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#status)
 
+<!-- 2 -->
 * [CoreWebView2ClusterEnvironmentOptions Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true)
    * [CoreWebView2ClusterEnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#additionalbrowserarguments)
    * [CoreWebView2ClusterEnvironmentOptions.AllowSingleSignOnUsingOSPrimaryAccount Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#allowsinglesignonusingosprimaryaccount)
@@ -93,67 +98,89 @@ todo: sync list in 3 tabs
    * [CoreWebView2ClusterEnvironmentOptions.ClusterName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#clustername)
    * [CoreWebView2ClusterEnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#customschemeregistrations)
    * [CoreWebView2ClusterEnvironmentOptions.EnableTrackingPrevention Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#enabletrackingprevention)
-   * [CoreWebView2ClusterEnvironmentOptions.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#handled)
+   * [CoreWebView2ClusterEnvironmentOptions.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#handled) - _todo: script emitted for rt only; delete, or add to .net & win32?_
    * [CoreWebView2ClusterEnvironmentOptions.Language Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#language)
    * [CoreWebView2ClusterEnvironmentOptions.PerHostProfileIsolation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#perhostprofileisolation)
    * [CoreWebView2ClusterEnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#releasechannels)
 
+<!-- 3 -->
 * [CoreWebView2ClusterEnvironmentStatus Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentstatus?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true)
+   * `NotSupported`
+   * `OptionsMismatch`
+   * `Succeeded`
 
-* [CoreWebView2Frame Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true)
+<!-- 4 -->
+* `CoreWebView2Environment` Class:
+   * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#createorjoinclusterenvironmentasync)
+   * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#getclusterenvironmentoptions)
+
+<!-- 5 -->
+* `CoreWebView2Frame` Class:
    * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#launchingexternalurischeme)
 
-* [CoreWebView2LaunchingExternalUriSchemeEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true)
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IAsyncOperation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#iasyncoperation)
+<!-- 6 -->
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IAsyncOperation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#iasyncoperation)  _todo: script emitted this member for winrt list only; delete, or add to .net & win32 tabs?_
 
 ##### [Win32/C++](#tab/win32cpp)
 
+<!-- 1 -->
 * [ICoreWebView2ExperimentalClusterEnvironmentCreateResult](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentcreateresult?view=webview2-1.0.4255-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalClusterEnvironmentCreateResult::get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentcreateresult?view=webview2-1.0.4255-prerelease&preserve-view=true#get_environment)
-  * [ICoreWebView2ExperimentalClusterEnvironmentCreateResult::get_Status](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentcreateresult?view=webview2-1.0.4255-prerelease&preserve-view=true#get_status)
+   * [ICoreWebView2ExperimentalClusterEnvironmentCreateResult::get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentcreateresult?view=webview2-1.0.4255-prerelease&preserve-view=true#get_environment)
+   * [ICoreWebView2ExperimentalClusterEnvironmentCreateResult::get_Status](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentcreateresult?view=webview2-1.0.4255-prerelease&preserve-view=true#get_status)
 
+<!-- 2 -->
 * [ICoreWebView2ExperimentalClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_additionalbrowserarguments)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_allowsinglesignonusingosprimaryaccount)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AreBrowserExtensionsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_arebrowserextensionsenabled)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_channelsearchkind)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ClusterName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_clustername)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_EnableTrackingPrevention](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_enabletrackingprevention)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_Language](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_language)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_PerHostProfileIsolation](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_perhostprofileisolation)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_releasechannels)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::GetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#getcustomschemeregistrations)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_additionalbrowserarguments)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_allowsinglesignonusingosprimaryaccount)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AreBrowserExtensionsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_arebrowserextensionsenabled)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_channelsearchkind)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ClusterName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_clustername)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_EnableTrackingPrevention](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_enabletrackingprevention)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_Language](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_language)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_PerHostProfileIsolation](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_perhostprofileisolation)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_releasechannels)
-  * [ICoreWebView2ExperimentalClusterEnvironmentOptions::SetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#setcustomschemeregistrations)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_additionalbrowserarguments)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_allowsinglesignonusingosprimaryaccount)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_AreBrowserExtensionsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_arebrowserextensionsenabled)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_channelsearchkind)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ClusterName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_clustername)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_EnableTrackingPrevention](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_enabletrackingprevention)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_Language](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_language)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_PerHostProfileIsolation](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_perhostprofileisolation)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::get_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#get_releasechannels)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::GetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#getcustomschemeregistrations)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_additionalbrowserarguments)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AllowSingleSignOnUsingOSPrimaryAccount](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_allowsinglesignonusingosprimaryaccount)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_AreBrowserExtensionsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_arebrowserextensionsenabled)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ChannelSearchKind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_channelsearchkind)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ClusterName](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_clustername)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_EnableTrackingPrevention](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_enabletrackingprevention)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_Language](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_language)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_PerHostProfileIsolation](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_perhostprofileisolation)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::put_ReleaseChannels](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#put_releasechannels)
+   * [ICoreWebView2ExperimentalClusterEnvironmentOptions::SetCustomSchemeRegistrations](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclusterenvironmentoptions?view=webview2-1.0.4255-prerelease&preserve-view=true#setcustomschemeregistrations)
 
+<!-- win32-only -->
 * [ICoreWebView2ExperimentalCreateOrJoinClusterEnvironmentCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcreateorjoinclusterenvironmentcompletedhandler?view=webview2-1.0.4255-prerelease&preserve-view=true)
 
-* [ICoreWebView2ExperimentalFrame10](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalFrame10::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#add_launchingexternalurischeme)
-  * [ICoreWebView2ExperimentalFrame10::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#remove_launchingexternalurischeme)
+<!-- 4 -->
+_todo: add # suffix? confirm iface name and method names_
+* `ICoreWebView2ExperimentalEnvironment`:
+   * [ICoreWebView2ExperimentalEnvironment::CreateOrJoinClusterEnvironmentAsync](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoinclusterenvironmentasync)
+   * [ICoreWebView2ExperimentalEnvironment::GetClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#getclusterenvironmentoptions)
 
+<!-- 5 -->
+* [ICoreWebView2ExperimentalFrame10](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalFrame10::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#add_launchingexternalurischeme)
+   * [ICoreWebView2ExperimentalFrame10::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#remove_launchingexternalurischeme)
+
+<!-- win32-only -->
 * [ICoreWebView2ExperimentalFrameLaunchingExternalUriSchemeEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframelaunchingexternalurischemeeventhandler?view=webview2-1.0.4255-prerelease&preserve-view=true)
 
+<!-- 6 -->
 * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true)
-  * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#get_handled)
-  * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#put_handled)
+   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#get_handled)
+   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#put_handled)
 
+<!-- 3 -->
 * [COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS Enum](/microsoft-edge/webview2/reference/win32/webview2-idl-experimental?view=webview2-1.0.4255-prerelease&preserve-view=true#corewebview2_cluster_environment_status)
-  * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_NOT_SUPPORTED`
-  * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_OPTIONS_MISMATCH`
-  * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_SUCCEEDED`
+   * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_NOT_SUPPORTED`
+   * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_OPTIONS_MISMATCH`
+   * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_SUCCEEDED`
 
 ---
-
-
 
 
 <!-- ====================================================================== -->
