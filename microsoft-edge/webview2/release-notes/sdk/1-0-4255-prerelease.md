@@ -30,10 +30,10 @@ The Shared Cluster Environment API lets cooperating host applications explicitly
 
 A host app calls `CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync` with a `CoreWebView2ClusterEnvironmentOptions` instance.  The first host to establish the cluster determines its process-wide options. Later hosts join when their options match. These options remain authoritative for as long as the shared browser process is running; after it exits, the next host can establish the cluster with different options.
 
-The above operation returns a `CoreWebView2ClusterEnvironmentCreateResult` containing a `Status` and, on success, the shared `Environment`.  Possible values of `Status`:
-* `Success` indicates success.  A shared `Environment` is created and returned.
-* `OptionsMismatch` indicates that a running cluster has different options.  A shared `Environment` isn't created and returned.
-* `NotSupported` indicates that the host cannot use cluster environments, such as a sandboxed `AppContainer` process.  A shared `Environment` isn't created and returned.
+The above operation returns a `CoreWebView2ClusterEnvironmentCreateResult` containing a `Status` and, on success, the shared `CoreWebView2Environment`.  Possible values of `Status`:
+* `Success` indicates success.  A shared `CoreWebView2Environment` is created and returned.
+* `OptionsMismatch` indicates that a running cluster has different options.  A shared `CoreWebView2Environment` isn't created and returned.
+* `NotSupported` indicates that the host cannot use cluster environments, such as a sandboxed `AppContainer` process.  A shared `CoreWebView2Environment` isn't created and returned.
 
 Failures to start or complete the operation are reported separately as exceptions in .NET and WinRT, or failing `HRESULT` return values in Win32.
 
