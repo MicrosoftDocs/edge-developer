@@ -24,6 +24,47 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ------------------------------ -->
+#### Frame-level LaunchingExternalUriScheme API
+ 
+The `LaunchingExternalUriScheme` event is now also raised on `CoreWebView2Frame`, in addition to `CoreWebView2`.  This lets a host attribute an external-URI-scheme launch (such as  `mailto:`, `tel:`, or a custom protocol) to the specific `iframe` that initiated it.  This is useful when multiple sub-apps are hosted in iframes, including when iframes share the same origin.
+
+The `LaunchingExternalUriScheme` event is raised when content in a `frame`, or in an `iframe` nested within it, attempts to launch an external URI scheme.  When the launch originates from a nested `iframe`, the event bubbles outward through the tracked `CoreWebView2Frame` ancestors — starting with the closest (innermost) tracked frame, and proceeding toward the top-level frame — and finally to `CoreWebView2`. The event sender for each invocation is the `CoreWebView2Frame` receiving the event.
+ 
+The event args add a `Handled` property.  Frame-level handlers are invoked before the `CoreWebView2`-level handlers; if a frame-level handler sets `Handled` to `TRUE`, the event is not raised on the remaining ancestor frames or on `CoreWebView2`.  `Cancel` continues to control whether the URI is launched, while `Handled` controls whether the remaining handlers are invoked.  Args (including `Cancel` and `Handled`) are shared across tiers; to suppress the WebView-level handlers when taking a `Deferral`, set `Handled` before taking the deferral.
+
+##### [.NET/C#](#tab/dotnetcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.launchingexternalurischeme?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
+
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true) _todo: script emitted this member for .net & win32 lists only; delete, or add to winrt tab?_<!-- bug: script emitted this member for .net & win32, not for winrt -->
+
+##### [WinRT/C#](#tab/winrtcsharp)
+
+* `CoreWebView2Frame` Class:
+   * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#launchingexternalurischeme)
+
+* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IAsyncOperation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#iasyncoperation)  _todo: script emitted this member for winrt list only; delete, or add to .net & win32 tabs?_<!-- bug: script emitted this member for winrt, not for .net, not for win32 -->
+
+##### [Win32/C++](#tab/win32cpp)
+
+* [ICoreWebView2ExperimentalFrame10](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalFrame10::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#add_launchingexternalurischeme)
+   * [ICoreWebView2ExperimentalFrame10::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#remove_launchingexternalurischeme)
+
+<!-- win32-only -->
+* [ICoreWebView2ExperimentalFrameLaunchingExternalUriSchemeEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframelaunchingexternalurischemeeventhandler?view=webview2-1.0.4255-prerelease&preserve-view=true)
+
+* [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true)
+   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#get_handled)
+   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#put_handled)
+
+---
+
+
+<!-- ------------------------------ -->
 #### Shared Cluster Environment API
 
 The Shared Cluster Environment API lets cooperating host applications explicitly share a WebView2 environment, including one browser process and one user data folder, by agreeing on a `ClusterName`.  Applications don't supply a user data folder path; the WebView2 Runtime derives it from the cluster name.
@@ -31,8 +72,11 @@ The Shared Cluster Environment API lets cooperating host applications explicitly
 A host app calls `CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync` with a `CoreWebView2ClusterEnvironmentOptions` instance.  The first host to establish the cluster determines its process-wide options.  Later hosts join when their options match.  These options remain authoritative for as long as the shared browser process is running; after it exits, the next host can establish the cluster with different options.
 
 The above operation returns a `CoreWebView2ClusterEnvironmentCreateResult` containing a `Status` and, on success, the shared `CoreWebView2Environment`.  Possible values of `Status`:
-* `Success` indicates success.  A shared `CoreWebView2Environment` is created and returned.
+
+* `Succeeded` indicates success.  A shared `CoreWebView2Environment` is created and returned.
+
 * `OptionsMismatch` indicates that a running cluster has different options.  A shared `CoreWebView2Environment` isn't created and returned.
+
 * `NotSupported` indicates that the host cannot use cluster environments, such as a sandboxed `AppContainer` process.  A shared `CoreWebView2Environment` isn't created and returned.
 
 Failures to start or complete the operation are reported separately as exceptions in .NET and WinRT, or failing `HRESULT` return values in Win32.
@@ -74,14 +118,6 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
    * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createorjoinclusterenvironmentasync?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)<!-- bug: the script emitted this member for .net only, not for rt or win32 -->
    * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getclusterenvironmentoptions?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)<!-- bug: the script emitted this member for .net only, not for rt or win32 -->
 
-<!-- 5 -->
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.launchingexternalurischeme?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
-
-<!-- 6 -->
-* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true) _todo: script emitted this member for .net & win32 lists only; delete, or add to winrt tab?_<!-- bug: script emitted this member for .net & win32, not for winrt -->
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 <!-- 1 -->
@@ -113,14 +149,6 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
 * `CoreWebView2Environment` Class:
    * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#createorjoinclusterenvironmentasync)
    * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#getclusterenvironmentoptions)
-
-<!-- 5 -->
-* `CoreWebView2Frame` Class:
-   * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#launchingexternalurischeme)
-
-<!-- 6 -->
-* `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IAsyncOperation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#iasyncoperation)  _todo: script emitted this member for winrt list only; delete, or add to .net & win32 tabs?_<!-- bug: script emitted this member for winrt, not for .net, not for win32 -->
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -160,19 +188,6 @@ _todo: add # suffix? confirm iface name and method names_
 * `ICoreWebView2ExperimentalEnvironment`:
    * [ICoreWebView2ExperimentalEnvironment::CreateOrJoinClusterEnvironmentAsync](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoinclusterenvironmentasync)
    * [ICoreWebView2ExperimentalEnvironment::GetClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#getclusterenvironmentoptions)
-
-<!-- 5 -->
-* [ICoreWebView2ExperimentalFrame10](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalFrame10::add_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#add_launchingexternalurischeme)
-   * [ICoreWebView2ExperimentalFrame10::remove_LaunchingExternalUriScheme](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe10?view=webview2-1.0.4255-prerelease&preserve-view=true#remove_launchingexternalurischeme)
-
-<!-- win32-only -->
-* [ICoreWebView2ExperimentalFrameLaunchingExternalUriSchemeEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframelaunchingexternalurischemeeventhandler?view=webview2-1.0.4255-prerelease&preserve-view=true)
-
-<!-- 6 -->
-* [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true)
-   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#get_handled)
-   * [ICoreWebView2ExperimentalLaunchingExternalUriSchemeEventArgs2::put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentallaunchingexternalurischemeeventargs2?view=webview2-1.0.4255-prerelease&preserve-view=true#put_handled)
 
 <!-- 3 -->
 * [COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS Enum](/microsoft-edge/webview2/reference/win32/webview2-idl-experimental?view=webview2-1.0.4255-prerelease&preserve-view=true#corewebview2_cluster_environment_status)<!-- bug: script emitted webview2-idl in url, but should emit webview2-idl-experimental -->
