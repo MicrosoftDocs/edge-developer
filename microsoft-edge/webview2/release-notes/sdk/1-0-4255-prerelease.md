@@ -29,8 +29,8 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 The `LaunchingExternalUriScheme` event is now also raised on `CoreWebView2Frame`, in addition to `CoreWebView2`.  This lets a host attribute an external-URI-scheme launch (such as  `mailto:`, `tel:`, or a custom protocol) to the specific `iframe` that initiated it.  This is useful when multiple sub-apps are hosted in iframes, including when iframes share the same origin.
 
 The `LaunchingExternalUriScheme` event is raised when content in a `frame`, or in an `iframe` nested within it, attempts to launch an external URI scheme.  When the launch originates from a nested `iframe`, the event bubbles outward through the tracked `CoreWebView2Frame` ancestors — starting with the closest (innermost) tracked frame, and proceeding toward the top-level frame — and finally to `CoreWebView2`. The event sender for each invocation is the `CoreWebView2Frame` receiving the event.
- 
-The event args add a `Handled` property.  Frame-level handlers are invoked before the `CoreWebView2`-level handlers; if a frame-level handler sets `Handled` to `TRUE`, the event is not raised on the remaining ancestor frames or on `CoreWebView2`.  `Cancel` continues to control whether the URI is launched, while `Handled` controls whether the remaining handlers are invoked.  Args (including `Cancel` and `Handled`) are shared across tiers; to suppress the WebView-level handlers when taking a `Deferral`, set `Handled` before taking the deferral.
+
+`CoreWebView2LaunchingExternalUriSchemeEventArgs` has a new `Handled` property.  Frame-level handlers are invoked before the `CoreWebView2`-level handlers; if a frame-level handler sets `Handled` to `TRUE`, the event is not raised on the remaining ancestor frames or on `CoreWebView2`.  `Cancel` continues to control whether the URI is launched, while `Handled` controls whether the remaining handlers are invoked.  Args (including `Cancel` and `Handled`) are shared across tiers; to suppress the WebView-level handlers when taking a `Deferral`, set `Handled` before taking the deferral.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
