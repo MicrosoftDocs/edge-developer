@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, CryptDataBlob
-topic_type: 
+topic_type:
 - APIRef
 api_name:
 - CryptDataBlob
@@ -23,8 +23,7 @@ api_location:
 # struct CryptDataBlob
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
-> to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
 
 Represents an SSL Certificate.
 

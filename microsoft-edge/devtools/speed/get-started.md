@@ -45,7 +45,7 @@ The **Lighthouse** tool provides links to content that's hosted on third-party w
 
 In this tutorial, you improve the performance of [Margie's travel](https://microsoftedge.github.io/Demos/travel-site/), a fictitious travel website that contains travel images, text descriptions, a few JavaScript-based user interactions, and an interactive map.
 
-The source files for the website are at [MicrosoftEdge / Demos > travel-site](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site). 
+The source files for the website are at [MicrosoftEdge / Demos > travel-site](https://github.com/MicrosoftEdge/Demos/tree/main/travel-site).
 
 
 <!-- next two sections are reverse order vs upstream -->
@@ -342,18 +342,18 @@ Use the Intersection Observer API to detect when the map becomes visible to the 
 
     const mapElIntersectionObserver = new IntersectionObserver(loadMapOnDemand);
     mapElIntersectionObserver.observe(MAP_CONTAINER_EL);
- 
+
     let map = null;
-   
+
     function loadMapOnDemand(entries) {
        if (map) {
          return;
        }
-   
+
        if (!entries.some(entry => entry.isIntersecting)) {
          return;
        }
-   
+
        const script = document.createElement('script');
        script.type = 'text/javascript';
        script.src = 'https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ap_eazGgpq5468v9MXr7Wu0zh30LQActgaT-tI_QxZQSm-Bd5qJxVKs_2B7NsqR4';
@@ -406,7 +406,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
    ![The contact-form.css file in the Sources tool, with red bars next to the unused lines](./get-started-images/unused-css-source.png)
 
-   Only red bars are displayed in this source file, which means that the webpage doesn't need this file at all. 
+   Only red bars are displayed in this source file, which means that the webpage doesn't need this file at all.
 
 Now, remove the references to these files from the code:
 
@@ -519,7 +519,7 @@ Your latest report shows high **Time to Interactive** and **Total Blocking Time*
 Scroll down to the **Diagnostics** section which says to **Minimize main-thread work** and **Reduce JavaScript execution time**. The main thread is where the browser does most of the work that's needed to display a page, such as:
 
 * Parsing and running HTML.
-* Parsing and applying CSS to DOM elements. 
+* Parsing and applying CSS to DOM elements.
 * Running JavaScript.
 
 In this case, it looks like the biggest bottleneck is that the page runs too much JavaScript code on page load.

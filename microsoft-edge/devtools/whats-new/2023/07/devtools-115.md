@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 115)
-description: "Improvements for connecting DevTools to Azure Artifacts symbol server. Snapshotting improvements for the Memory tool. Refreshing the DevTools icons and buttons. And more."
+description: Improvements for connecting DevTools to Azure Artifacts symbol server. Snapshotting improvements for the Memory tool. Refreshing the DevTools icons and buttons. And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -10,10 +10,10 @@ ms.date: 08/18/2023
 ---
 # What's new in DevTools (Microsoft Edge 115)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 todo video
 #### Video: What's new in DevTools 115-125
 

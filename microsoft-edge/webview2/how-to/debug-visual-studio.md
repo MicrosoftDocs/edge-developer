@@ -16,7 +16,7 @@ Microsoft Visual Studio provides various debugging tools for web and native code
 <!-- ------------------------------ -->
 #### Summary of high-level steps
 
-To debug JavaScript code in a WebView2 control: 
+To debug JavaScript code in a WebView2 control:
 
 1. Install the **JavaScript diagnostics** component in the **Desktop development with C++** workload of Visual Studio, or in another platform's workload.
 
@@ -110,18 +110,18 @@ After doing the above setup, debug your WebView2 app, as follows.
 
    ![Running the Local Windows Debugger in Visual Studio](./debug-visual-studio-images/run-local-windows-debugger.png)
 
-   When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping.  
+   When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping. 
 
    The breakpoint will be triggered when this section of the code is executed.  This breakpoint is triggered upon clicking the **Add a new item** button in the sample app, in a later step below.
 
 1. Select the bit size of the platform, such as **x64**.
 
-1. To run the debugger, do any of the following: 
+1. To run the debugger, do any of the following:
 
    * In the menu bar, select **Debug** > **Start Debugging (F5)**.
    * In Solution Explorer, right-click the project > **Debug** > **Start New Instance** or **Step Into New Instance**.
    * Click the green Play button to the left of **Local Windows Debugger**.
-    
+   
    The WebView2APISample app (or your own app) runs and opens, and the debugger connects to the first WebView2 process that's created.  In **Properties** > **Debugging** for the project, **Local Windows Debugger** was set to **JavaScript (WebView2)**.
 
 1. In Visual Studio, click the **Output** tab, in the lower right.
@@ -196,7 +196,7 @@ To open DevTools, press **Ctrl+Shift+I**.  Or, right-click the page in the runni
 
 If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.
 
-When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping.  
+When setting a breakpoint, you must open the file that's in the exact same path that's associated with your WebView2 control, because the JS/TS debug adapter doesn't perform source path mapping. 
 
 Virtual source path mapping is supported by the debugger in Visual Studio Code.
 

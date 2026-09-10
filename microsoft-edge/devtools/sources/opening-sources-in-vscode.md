@@ -26,7 +26,7 @@ With this experiment enabled, suppose that in Microsoft Edge, you go to a local 
 ![Microsoft Edge with a local file open](./opening-sources-in-vscode-images/local-project.png)
 
 <!-- todo:
-instead of using 
+instead of using:
 https://github.com/codepo8/simple-to-do
 use:
 https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do

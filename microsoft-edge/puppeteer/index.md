@@ -48,7 +48,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
     ```javascript
     const puppeteer = require('puppeteer-core');
-    
+   
     (async () => {
       const browser = await puppeteer.launch({
         executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
@@ -56,11 +56,11 @@ To use `puppeteer-core` to launch Microsoft Edge:
       const page = await browser.newPage();
       await page.goto('https://www.microsoft.com/edge/download/insider');
       await page.screenshot({path: 'example.png'});
-    
+   
       await browser.close();
     })();
     ```
-    
+   
 1.  Follow the next steps to find the executable path and then change `executablePath` to point to your installation of Microsoft Edge.  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.
 
 1.  To find the `executablePath`, a simple manual approach is to go to `edge://version` and copy the **Executable path** on that page.
@@ -70,19 +70,19 @@ To use `puppeteer-core` to launch Microsoft Edge:
     ```console
     npm i edge-paths
     ```
-    
+   
     ```console
     yarn add edge-paths
     ```
-    
+   
 1.  Then, if you're using `edge-paths` to find the executable path, run code like the following sample. It uses the [edge-paths](https://www.npmjs.com/package/edge-paths) package to programmatically find the path to your installation of Microsoft Edge on your OS:
 
     ```javascript
     const edgePaths = require("edge-paths");
-    
+   
     const EDGE_PATH = edgePaths.getEdgePath();
     ```
-    
+   
 1.  Now that you've found the executable path (either manually or programmatically), in `example.js`, set `executablePath: EDGE_PATH`.  Save your changes.
 
 1.  Run `example.js` from the command line:

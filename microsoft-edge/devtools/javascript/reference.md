@@ -409,7 +409,7 @@ Use the `# sourceURL` pragma to give a virtual file name to code blocks that are
   }
 
   console.log(sum(1, 2));
-  
+
   //# sourceURL=math-utilities.js
   ```
 
@@ -420,7 +420,7 @@ Use the `# sourceURL` pragma to give a virtual file name to code blocks that are
     padding: 1rem;
     border-radius: 0.5rem;
   }
-  
+
   /*# sourceURL=card-styles.css*/
   ```
 
