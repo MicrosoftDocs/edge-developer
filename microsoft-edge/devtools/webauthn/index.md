@@ -47,11 +47,11 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 1. In the **New authenticator** section, configure the following options:
 
     | Option | Value | Details |
-    |:--- |:--- |:--- |
-    | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) or [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | The protocol the virtual authenticator uses for encoding and decoding |
-    | `Transport` |   `usb`, `nfc`, `ble`, or `internal` | The virtual authenticator simulates the selected transport for communicating with clients in order to obtain an assertion for a specific credential.  See [Authenticator Transport Enumeration](https://w3c.github.io/webauthn#enum-transport) |
+    |---|---|---|
+    | `Protocol` | [ctap2](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) or [u2f](https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html) | The protocol the virtual authenticator uses for encoding and decoding. |
+    | `Transport` |   `usb`, `nfc`, `ble`, or `internal` | The virtual authenticator simulates the selected transport for communicating with clients in order to obtain an assertion for a specific credential.  See [Authenticator Transport Enumeration](https://w3c.github.io/webauthn#enum-transport). |
     |  `Supports resident keys` | Turn on (or off) using the checkbox | Turn on if your web app relies on resident keys (also known as client-side discoverable credentials).  See [Resident Key Requirement Enumeration](https://w3c.github.io/webauthn#enum-residentKeyRequirement). |
-    | `Supports user verification` | Turn on (or off) using the checkbox | Turn on if your web app relies on local authorization using gesture modalities like touch plus pin code, password entry, or biometric recognition.  See [User Verification](https://w3c.github.io/webauthn#user-verification) |
+    | `Supports user verification` | Turn on (or off) using the checkbox | Turn on if your web app relies on local authorization using gesture modalities like touch plus pin code, password entry, or biometric recognition.  See [User Verification](https://w3c.github.io/webauthn#user-verification). |
 
 1. Click the **Add** button.
 

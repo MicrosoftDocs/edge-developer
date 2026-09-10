@@ -30,7 +30,7 @@ The following code demonstrates launching the app from Visual Studio Code (rathe
 "env": {
    // The following variable is needed when the "runtimeExecutable" property is set.
    // The port number below must match the value of the "port" property above.
-   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222" 
+   "WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS": "--remote-debugging-port=9222"
    // Customize for your app location.
    "Path": "%path%;e:/path/to/your/app/location; "
 },
@@ -181,7 +181,7 @@ To enable debug tracing, add the `trace` parameter to `launch.json` , as follows
 Saving debug output to a log file:
 
 ![ Save debug output to a log file](./debug-visual-studio-code-images/trace-log.png)
-      
+     
 ```json
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
 ```
@@ -260,7 +260,7 @@ You might encounter these scenarios when using the debugger.
 <!-- ---------------------------------- -->
 #### Doesn't stop at breakpoint
 
-If the debugger doesn't stop at the breakpoint, and you have debug output: 
+If the debugger doesn't stop at the breakpoint, and you have debug output:
 
 To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
 

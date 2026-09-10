@@ -4,7 +4,7 @@
 participant "Client (Browser)" as c
 participant "Server (Website)" as s
 c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n ...
-s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform \n Critical-CH: sec-ch-ua-platform 
+s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform \n Critical-CH: sec-ch-ua-platform
 c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n sec-ch-ua-platform: ... \n...
 @enduml
 
@@ -72,7 +72,7 @@ skinparam useBetaStyle false
 	network {
 			FontColor #2196F3
 	BorderColor #2196F3
-	BackgroundColor transparent    
+	BackgroundColor transparent   
 		LineColor #2196F3
 		LineThickness 1.0
 		FontColor #1a78c2
@@ -137,7 +137,7 @@ skinparam shadowing             true
 skinparam roundcorner           8
 skinparam ParticipantPadding    40
 skinparam BoxPadding            40
-skinparam Padding               10 
+skinparam Padding               10
 skinparam TitleFontColor	    #222
 skinparam TitleFontSize	    	20
 skinparam TitleBorderThickness 	0
@@ -446,7 +446,7 @@ skinparam stack {
 participant "Client (Browser)" as c
 participant "Server (Website)" as s
 c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n ...
-s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform \n Critical-CH: sec-ch-ua-platform 
+s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform \n Critical-CH: sec-ch-ua-platform
 c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n sec-ch-ua-platform: ... \n...
 @enduml
 

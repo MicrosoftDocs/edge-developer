@@ -10,13 +10,13 @@ ms.date: 08/03/2026
 # Experimental features in Microsoft Edge DevTools
 <!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/ -->
 
-<!-- 
+<!--
 Maintenance:
 
-First, inspect latest Canary and update sections: 
+First, inspect latest Canary and update sections:
    * This checkbox is present in Microsoft Edge Canary 123.
 b/c that might add new sections.
-After that, inspect latest Stable and update sections: 
+After that, inspect latest Stable and update sections:
    * This checkbox is present in Microsoft Edge Stable 123.
 
 *  Favor Canary over Stable re: sequencing.
@@ -172,9 +172,9 @@ Status:
 <!-- https://learn.microsoft.com/microsoft-edge/devtools/experimental-features/#enable-symbol-server-extension-support -->
 <!-- checkbox has a "(?)" link, that should point to the present section heading -->
 
-If this checkbox is selected, the [Edge DevTools Symbol Server Extension Test](https://microsoftedge.microsoft.com/addons/detail/edgedevtoolssymbolservere/cjfmbiajhehnmfdjnlmdmceolcdcblcp) extension is supported, giving the new experience for **Symbol Server** in an extension.  This extension is still in beta/test.  
+If this checkbox is selected, the [Edge DevTools Symbol Server Extension Test](https://microsoftedge.microsoft.com/addons/detail/edgedevtoolssymbolservere/cjfmbiajhehnmfdjnlmdmceolcdcblcp) extension is supported, giving the new experience for **Symbol Server** in an extension.  This extension is still in beta/test.
 
-If this checkbox is cleared, use DevTools > **Settings** > **Symbol Server** page. 
+If this checkbox is cleared, use DevTools > **Settings** > **Symbol Server** page.
 
 See also:
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
@@ -270,7 +270,7 @@ To select this checkbox and then open the **Protocol monitor** tool:
 
 1. In **Quick View** at the bottom of DevTools, click the **More tools** (+) button, and then select **Protocol monitor**.
 
-   Or, open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.  Then select **Show Protocol monitor**.  
+   Or, open the **Command Menu**, such as by pressing **Ctrl+Shift+P** (Windows/Linux) or **Command+Shift+P** (macOS), and then type **protocol** in the text box.  Then select **Show Protocol monitor**.
 
    The **Protocol monitor** tool is displayed in the **Quick View** panel at the bottom of DevTools.
 

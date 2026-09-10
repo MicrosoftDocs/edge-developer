@@ -141,7 +141,7 @@ You can detect when your app runs in the sidebar by using User-Agent Client Hint
 To detect when your app runs in the sidebar, do either of the following:
 
 * On your web server, read the `Sec-CH-UA` HTTPS request header and look for the `Edge Side Panel` brand. For example:
-    
+   
     ```https
     Sec-CH-UA: "Microsoft Edge";v="112", "Edge Side Panel";v="1", "Placeholder;Browser Brand";v="99"
     ```

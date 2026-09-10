@@ -11,9 +11,9 @@ ms.date: 03/08/2022
 # Display original function names in performance profiles
 
 If your build process compiles and minifies your code and combines it into a single file, the names of the functions displayed in a performance profile might be hard to understand.  Source maps map your compiled, minified code to your original source code files.  The **Performance** tool can use source maps to map minified function names after a recording has been made, back to their original names found in your original code.
-   
+
 To learn more about how DevTools uses source maps, see [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
-   
+
 To see your original function names in the flame chart in the **Performance** tool, use the **Unminify** (![The Unminify button icon](./unminify-images/unminify-icon.png)) button.
 
 Source mapping is used in DevTools to keep your client-side code readable and debuggable.  By clicking the **Unminify** button in the Performance tool, you can use source maps to create an unminified version of the performance profile you recorded.
@@ -26,7 +26,7 @@ An example of a performance profile flame chart, with some more meaningful funct
 
 ![The unminified flame chart in the performance profile, with meaningful function names restored](./unminify-images/unminified-perf-profile.png)
 
-When recording a performance profile in the **Performance** tool, the **Main** section of the profile displays detailed flame charts of JavaScript functions that were called during the recording.  
+When recording a performance profile in the **Performance** tool, the **Main** section of the profile displays detailed flame charts of JavaScript functions that were called during the recording.
 
 Ideally, in this flame chart view, you want to see the meaningful function names that are shown in your original source code.  However, if your production code is compiled, minified, or bundled, the **Performance** tool initially displays the function names that are extracted from your transformed, _production_ code.  These production function names might be obscure and might not easily map to function names in your original source code.
 

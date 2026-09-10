@@ -37,7 +37,7 @@ This article mainly covers Win32/C++, and also covers some aspects of .NET/C# wi
 
 #### Why use `AddHostObjectToScript`?
 
-  * When developing a WebView2 app, you may encounter a native object whose methods or properties you find useful. You might want to trigger these native object methods from web-side code, as a result of user interaction on the web side of your app. In addition, you might not want to re-implement your native objects' methods in your web-side code.  The `AddHostObjectToScript` API enables re-use of native-side code by web-side code. 
+  * When developing a WebView2 app, you may encounter a native object whose methods or properties you find useful. You might want to trigger these native object methods from web-side code, as a result of user interaction on the web side of your app. In addition, you might not want to re-implement your native objects' methods in your web-side code.  The `AddHostObjectToScript` API enables re-use of native-side code by web-side code.
 
   * For example, there might be a native webcam API, which would require re-writing a large amount of code on the web side. Having the ability to call the native object's methods is quicker and more efficient than re-coding the object's methods on the web side of your app. In this case, your native-side code can pass the object to your app's web-side, JavaScript code, so that your JavaScript code can reuse the native API's methods.
 
@@ -76,7 +76,7 @@ First, use interface definition language (IDL) to define the host object's COM i
     ```csharp
     import "oaidl.idl";
     import "ocidl.idl";
-    
+   
     [uuid(0a7a4655-5660-47d0-8a37-98ae21399e57), version(0.1)]
     library HostObjectSampleLibrary
     {
@@ -85,24 +85,24 @@ First, use interface definition language (IDL) to define the host object's COM i
         {
             // Demonstrates a basic method call with some parameters and a return value.
             HRESULT MethodWithParametersAndReturnValue([in] BSTR stringParameter, [in] INT integerParameter, [out, retval] BSTR* stringResult);
-    
+   
             // Demonstrate getting and setting a property.
             [propget] HRESULT Property([out, retval] BSTR* stringResult);
             [propput] HRESULT Property([in] BSTR stringValue);
-    
+   
             [propget] HRESULT IndexedProperty(INT index, [out, retval] BSTR * stringResult);
             [propput] HRESULT IndexedProperty(INT index, [in] BSTR stringValue);
-    
+   
             // Demonstrate native calling back into JavaScript.
             HRESULT CallCallbackAsynchronously([in] IDispatch* callbackParameter);
-    
+   
             // Demonstrates a property which uses Date types.
             [propget] HRESULT DateProperty([out, retval] DATE * dateResult);
             [propput] HRESULT DateProperty([in] DATE dateValue);
-    
+   
             // Creates a date object on the native side and sets the DateProperty to it.
             HRESULT CreateNativeDate();
-    
+   
         };
     ```
 
@@ -141,7 +141,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
 1.  In Visual Studio **Solution Explorer**, expand **WebView2APISample** > **Source Files**, and then double-click **HostObjectSampleImpl.cpp** to open it.
 
 1.  Examine the property *declarations* in [HostObjectSample.idl](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/HostObjectSample.idl):
- 
+
     ```csharp
     // Demonstrate getting and setting a property.
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
@@ -163,7 +163,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
         *stringResult = SysAllocString(m_propertyValue.c_str());
         return S_OK;
     }
-    
+   
     STDMETHODIMP HostObjectSample::put_Property(BSTR stringValue)
     {
         m_propertyValue = stringValue;
@@ -176,7 +176,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
         *dateResult = m_date;
         return S_OK;
     }
-    
+   
     STDMETHODIMP HostObjectSample::put_DateProperty(DATE dateValue)
     {
         m_date = dateValue;
@@ -184,7 +184,7 @@ Next, we examine two specific properties that were defined in the IDL, to show h
         if (VariantTimeToSystemTime(dateValue, &systemTime))
     ...
     }
-    
+   
     STDMETHODIMP HostObjectSample::CreateNativeDate()
     {
         SYSTEMTIME systemTime;
@@ -212,12 +212,12 @@ The host object must implement `IDispatch` so that WebView2 can project the nati
 * `GetTypeInfoCount`
 * `Invoke`
 
-Implement `IDispatch` as described in [Type Libraries and the Object Description Language](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language).  For more information about `IDispatch` inheritance and methods, see [IDispatch interface (oaidl.h)](/windows/win32/api/oaidl/nn-oaidl-idispatch). 
+Implement `IDispatch` as described in [Type Libraries and the Object Description Language](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language).  For more information about `IDispatch` inheritance and methods, see [IDispatch interface (oaidl.h)](/windows/win32/api/oaidl/nn-oaidl-idispatch).
 
 If the object you want to add to JavaScript doesn't already implement `IDispatch`, you need to write an `IDispatch` class wrapper for the object that you want to expose.
 
 There might be libraries to do this automatically.  To learn more about the steps that are needed to write an `IDispatch` class wrapper for the object that you want to expose, see [Automation](/previous-versions/windows/desktop/automat/automation-programming-reference).
-    
+   
 1.  Next, save any changes you made in the project.
 
 1.  In Solution Explorer, right-click the **WebView2APISample** (which is the Win32 sample app), and then select **Build**.  This creates a COM type library `.tlb` file.  You need to reference the `.tlb` file from the C++ source code.  For more information, see [Type Library](/windows/win32/midl/com-dcom-and-type-libraries#type-library) in _COM, DCOM, and Type Libraries_.
@@ -250,7 +250,7 @@ So far, we've built our interface and implemented our native host object.  Now w
         : m_appWindow(appWindow), m_webView(appWindow->GetWebView())
     {
         std::wstring sampleUri = m_appWindow->GetLocalUri(L"ScenarioAddHostObject.html");
-    
+   
         m_hostObject = Microsoft::WRL::Make<HostObjectSample>(
             [appWindow = m_appWindow](std::function<void(void)> callback)
         {
@@ -272,10 +272,10 @@ So far, we've built our interface and implemented our native host object.  Now w
             std::wstring uriTarget(navigationTargetUri.get());
     ```
 
-1.  In the `NavigationStarting` event handler, the `query_to` line (below) casts the newly created COM object to an `IDispatch` type and then converts the object to a `VARIANT`. `VARIANT` types allow you to use data structures such as integers and arrays as well as more complex types such as `IDispatch`. 
+1.  In the `NavigationStarting` event handler, the `query_to` line (below) casts the newly created COM object to an `IDispatch` type and then converts the object to a `VARIANT`. `VARIANT` types allow you to use data structures such as integers and arrays as well as more complex types such as `IDispatch`.
 
     For a full list of supported data types, see [VARIANT structure (oaidl.h)](/windows/win32/api/oaidl/ns-oaidl-variant).  Not all types in the `VARIANT` union are supported by `AddHostObjectToScript`.  For details, see [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript).
-    
+   
     ```cpp
             if (AreFileUrisEqual(sampleUri, uriTarget))
             {
@@ -344,7 +344,7 @@ To add the host object to an iframe, we'll use `ICoreWebView2Frame::AddHostObjec
 This Win32/C++ sample code is condensed from [ScenarioAddHostObject.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/ScenarioAddHostObject.cpp#L83-L133) in the **WebView2APISample** project (which is the Win32 sample app).
 
 This sample code demonstrates these APIs:
-* `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins` 
+* `ICoreWebView2Frame::AddHostObjectToScriptWithOrigins`
 * `ICoreWebView2FrameCreatedEventHandler`
    * `ICoreWebView2FrameCreatedEventArgs::get_Frame`
 
@@ -421,7 +421,7 @@ The web-side code of the Win32 sample app is now able to access the properties a
     ```
     sample.dateProperty: Tue Nov 01 2022 12:45:25 GMT-0700 (Pacific Daylight Time)
     ```
-    
+   
 1.  Explore properties and methods by clicking the buttons in the demo webpage and entering values, to see how the sample code behaves.  The buttons demonstrate accessing properties and methods of the host object from the app's web-side code.
 
 1.  To gain insight into what's happening in JavaScript, examine the following code in [ScenarioAddHostObject.html](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/assets/ScenarioAddHostObject.html).
@@ -431,14 +431,14 @@ The web-side code of the Win32 sample app is now able to access the properties a
     ```javascript
     <h2>Date Objects</h2>
     <button id="setDateButton">Set Date to Now</button>
-    <label for="setDateButton">Sets <code>chrome.webview.hostObjects.options.shouldSerializeDates = true</code> 
+    <label for="setDateButton">Sets <code>chrome.webview.hostObjects.options.shouldSerializeDates = true</code>
         and then runs <code>chrome.webview.hostObjects.sample.dateProperty = new Date()</code></label>
     <br />
     <button id="createRemoteDateButton">Set Remote Date</button>
-    <label for="createRemoteDateButton">Calls <code>chrome.webview.hostObjects.sample.createNativeDate()</code> 
+    <label for="createRemoteDateButton">Calls <code>chrome.webview.hostObjects.sample.createNativeDate()</code>
         to have the native object create and set the current time to the DateProperty</label>
     <code><pre><span id="dateOutput"></span></pre></code>
-    
+   
     <div id="div_iframe" style="display: none;">
         <h2>IFrame</h2>
     </div>
@@ -450,17 +450,17 @@ The web-side code of the Win32 sample app is now able to access the properties a
     <!-- todo: relate to the above code, why do the buttons appear dup'd in frame -->
 
     ```javascript
-    // Date property 
-    document.getElementById("setDateButton").addEventListener("click", () => { 
-        chrome.webview.hostObjects.options.shouldSerializeDates = true; 
-        chrome.webview.hostObjects.sync.sample.dateProperty = new Date(); 
-        document.getElementById("dateOutput").textContent = 
+    // Date property
+    document.getElementById("setDateButton").addEventListener("click", () => {
+        chrome.webview.hostObjects.options.shouldSerializeDates = true;
+        chrome.webview.hostObjects.sync.sample.dateProperty = new Date();
+        document.getElementById("dateOutput").textContent =
             "sample.dateProperty: " + chrome.webview.hostObjects.sync.sample.dateProperty;
-    }); 
-    document.getElementById("createRemoteDateButton").addEventListener("click", () => { 
-        chrome.webview.hostObjects.sync.sample.createNativeDate(); 
-        document.getElementById("dateOutput").textContent = 
-            "sample.dateProperty: " + chrome.webview.hostObjects.sync.sample.dateProperty; 
+    });
+    document.getElementById("createRemoteDateButton").addEventListener("click", () => {
+        chrome.webview.hostObjects.sync.sample.createNativeDate();
+        document.getElementById("dateOutput").textContent =
+            "sample.dateProperty: " + chrome.webview.hostObjects.sync.sample.dateProperty;
     });
     ```
 

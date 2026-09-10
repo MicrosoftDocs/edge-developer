@@ -10,7 +10,7 @@ ms.date: 11/16/2022
 ---
 # Using frames in WebView2 apps
 
-Frames allow you to embed other webpages into your own webpage.  A _frame_ is a sub-page or area within a webpage, like a webpage within a webpage.  
+Frames allow you to embed other webpages into your own webpage.  A _frame_ is a sub-page or area within a webpage, like a webpage within a webpage. 
 
 An iframe is one type of frame.  Other types of frames are `frameset`, `portal`, `embed`, `fencedFrame`, and `object`.  The main WebView2 type for frames is `CoreWebView2Frame`, which is currently enabled for top-level iframes.  Support for other types of frames is planned.
 
@@ -253,7 +253,7 @@ See also:
 * [Web messaging](./overview-features-apis.md#web-messaging) in _Overview of WebView2 APIs_.
 
 
-<!-- 
+<!--
 #### JavaScript API Reference
 
 TODO: link when exists.
@@ -338,7 +338,7 @@ See the latest prerelease APIs.  The following links contain `1.0.1466-prereleas
 * [ICoreWebView2Experimental16.RemoveWebResourceRequestedFilterWithRequestSourceKinds method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental16#removewebresourcerequestedfilterwithrequestsourcekinds)
 * [ICoreWebView2ExperimentalWebResourceRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourcerequestedeventargs)
 
-<!-- 
+<!--
 todo: at next SDK release early Dec. 2022, update enum link when it changes to a Globals page section/anchor eg:
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.1418.22
 https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.1418.22
@@ -388,7 +388,7 @@ This sample code is condensed from [MainWindow.xaml.cs](https://github.com/Micro
 ```csharp
         void DOMContentLoadedCmdExecuted(object target, ExecutedRoutedEventArgs e)
         {
-            // Subscribe to the FrameCreated event to obtain the frame object when 
+            // Subscribe to the FrameCreated event to obtain the frame object when
             // it's created.
             webView.CoreWebView2.FrameCreated += WebView_FrameCreatedDOMContentLoaded;
             webView.NavigateToString(@"<!DOCTYPE html>" +
@@ -399,8 +399,8 @@ This sample code is condensed from [MainWindow.xaml.cs](https://github.com/Micro
 
         void WebView_FrameCreatedDOMContentLoaded(object sender, CoreWebView2FrameCreatedEventArgs args)
         {
-            // In order for ExecuteScriptAsync to successfully run inside the iframe, 
-            // subscribe to the ContentLoading or DOMContentLoaded event.  Once these 
+            // In order for ExecuteScriptAsync to successfully run inside the iframe,
+            // subscribe to the ContentLoading or DOMContentLoaded event.  Once these
             // events are raised, you can call ExecuteScriptAsync.
             args.Frame.DOMContentLoaded += (frameSender, DOMContentLoadedArgs) =>
             {

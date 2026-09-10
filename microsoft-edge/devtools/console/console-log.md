@@ -34,13 +34,13 @@ The `console` object has methods to log various levels of messages:
 console.log('This is a log message')
 
 // prints the text to the console as an informational message
-console.info('This is some information') 
+console.info('This is some information')
 
 // prints the text to the console as an error message
 console.error('This is an error')
 
 // prints the text to the console as a warning
-console.warn('This is a warning') 
+console.warn('This is a warning')
 ```
 
 
@@ -60,7 +60,7 @@ To try using the logging functions in the **Console**:
    ![The Console shows the messages from different log APIs](./console-log-images/console-log-examples.png)
 
    The `log()` and `info()` methods seem to do the same thing.  Use `info()` and `log()` for different log tasks, because that allows you to [filter Console messages](console-filters.md), to display only a subset of log entries.
-  
+
    The `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://wikipedia.org/wiki/Stack_trace) of the message.
 
 1. Copy and paste any of the examples into the **Console**, and then press **Enter**.
@@ -84,9 +84,9 @@ let x = 2;
 console.log(x);
 
 // logs the name x and value of x
-console.log({x})   
+console.log({x})
 
-// logs a DOM reference  
+// logs a DOM reference
 console.log(document.querySelector('body'));
 
 // logs an Object
@@ -151,16 +151,16 @@ Use format specifiers to log certain values in different formats, and to convert
 console.log('%ix %s developer', 10, 'console');
 
 // logs PI => 3.141592653589793
-console.log(Math.PI); 
+console.log(Math.PI);
 
 // logs PI as an integer = 3
-console.log('%i', Math.PI); 
+console.log('%i', Math.PI);
 
 // logs the document body as a DOM node
-console.log('%o', document.body); 
+console.log('%o', document.body);
 
 // logs the body of the document as a JavaScript object with all properties
-console.log('%O', document.body); 
+console.log('%O', document.body);
 
 // shows the message as red and big
 console.log('%cImportant message follows','color:red;font-size:40px')
@@ -183,7 +183,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
    ```javascript
    console.log('%ix %s developer', 10, 'console'); // logs "10x console developer"
    ```
-   
+
 1. Click the expander triangles in the output results, to expand the data that's output by the above `log` statements that are in the webpage.
 
 1. If necessary, press **F5** to reload the page and re-populate the **Console** output.
