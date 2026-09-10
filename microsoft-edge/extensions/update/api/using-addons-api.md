@@ -10,7 +10,7 @@ ms.date: 09/19/2024
 ---
 # Use the REST API to update an extension
 
-Use this REST API to programmatically update an extension (or a theme) that's been published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the Microsoft Edge Add-ons website without using Partner Center. 
+Use this REST API to programmatically update an extension (or a theme) that's been published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website, to automate the process of uploading and publishing new versions of your extension.  You can integrate these REST API endpoints directly into your continuous integration/continuous delivery (CI/CD) pipeline, to publish extension package updates at the Microsoft Edge Add-ons website without using Partner Center.
 
 This REST API exposes endpoints for:
 * [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission)
@@ -170,7 +170,7 @@ You can generate multiple client secrets for your Client ID.  For example, you c
 
 You obtain an access token by sending a POST message to an access token URL.  The Partner Center UI shows the access token URL, which is the same as in this article.  You then include the access token in the header when using an API endpoint, such as the endpoint for [Uploading a package to update an existing submission](#uploading-a-package-to-update-an-existing-submission), below.
 
-<!-- 
+<!--
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token (an OAuth token) by using the client credentials grant, send a POST request to the access token URL.  The tenant information is available in the access token URL that you received at Partner Center.
 "acquired the necessary authorization" - not casual per corp style
 "get access tokens" - plural or singular?  one token per endpoint?
@@ -289,7 +289,7 @@ Body content: the package file to upload
 
 ---
 
-`$productID` is the product ID of the Microsoft Edge extension that you want to update. 
+`$productID` is the product ID of the Microsoft Edge extension that you want to update.
 
 To get the product ID:
 
@@ -300,7 +300,7 @@ To get the product ID:
 1. Select the extension for which you want the product ID.
 
    The **Extension overview** page opens.  The product ID is shown in the page.  (The product ID is also shown as the GUID in the URL in the Address bar, between `microsoftedge/` and `/packages`.)
- 
+
 1. In the **Extension identity** section (or from the Address bar), select and copy the **Product ID**.
 
 

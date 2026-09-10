@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, IDualEngine20Browser
-topic_type: 
+topic_type:
 - APIRef
 api_name:
 - IDualEngine20Browser
@@ -56,8 +56,7 @@ api_location:
 # interface IDualEngine20Browser
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
-> to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
 
 ```cpp
 interface IDualEngine20Browser
@@ -155,7 +154,7 @@ Enables or disables Caret Browsing mode.
 > public HRESULT [DualEngineEnableCaretMode](#dualengineenablecaretmode)(BOOL fEnable)
 
 ###### Parameters
-* `fEnable` Specifies whether caret browsing should be enabled. 
+* `fEnable` Specifies whether caret browsing should be enabled.
 
 #### DualEngineExecNavigationCommand
 
@@ -173,11 +172,11 @@ Finds an instance of text on the page.
 > public HRESULT [DualEngineFindOnPage](#dualenginefindonpage)(int iRequestID, LPCWSTR pszFindText, BOOL fFindNext, BOOL fForward)
 
 ###### Parameters
-* `iRequestID` An ID to use correlate find on page requests and events. 
+* `iRequestID` An ID to use correlate find on page requests and events.
 
-* `pszFindText` The text to find on the page. 
+* `pszFindText` The text to find on the page.
 
-* `fFindNext` Indicates whether the selection should move to the next instance the find text, true advances the selection and false does not. 
+* `fFindNext` Indicates whether the selection should move to the next instance the find text, true advances the selection and false does not.
 
 * `fForward` Indicates the direction the selection should me, true moves forward and false moves backwards.
 
@@ -194,7 +193,7 @@ Provides a response to a geolocation permission request.
 > public HRESULT [DualEngineGeolocationPermissionResponse](#dualenginegeolocationpermissionresponse)(LPCWSTR pszUri, SITE_PERMISSION_RESPONSE response)
 
 ###### Parameters
-* `pszUri` The URI the geolocation request was from. 
+* `pszUri` The URI the geolocation request was from.
 
 * `response` The response to the request.
 
@@ -214,17 +213,17 @@ Initializes the browser object with an URL.
 > public HRESULT [DualEngineInitialize](#dualengineinitialize)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 ###### Parameters
-* `pDualEngineObserver` A pointer to the observer for this browser. 
+* `pDualEngineObserver` A pointer to the observer for this browser.
 
-* `config` Configuration flags for the desired browser behavior. 
+* `config` Configuration flags for the desired browser behavior.
 
-* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled. 
+* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled.
 
-* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance. 
+* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance.
 
-* `pszUrl` The inital URL to navigate to. 
+* `pszUrl` The inital URL to navigate to.
 
-* `hwndHost` The HWND of the host window that the browser window will be parented to. 
+* `hwndHost` The HWND of the host window that the browser window will be parented to.
 
 * `phwnd` The HWND of the browser window.
 
@@ -235,23 +234,23 @@ Initializes the browser object with an URL; this version allows for additional i
 > public HRESULT [DualEngineInitialize2](#dualengineinitialize2)([IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 ###### Parameters
-* `pDualEngineObserver` A pointer to the observer for this browser. 
+* `pDualEngineObserver` A pointer to the observer for this browser.
 
-* `config` Configuration flags for the desired browser behavior. 
+* `config` Configuration flags for the desired browser behavior.
 
-* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled. 
+* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled.
 
-* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance. 
+* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance.
 
-* `pszUrl` The inital URL to navigate to. 
+* `pszUrl` The inital URL to navigate to.
 
-* `hwndHost` The HWND of the host window that the browser window will be parented to. 
+* `hwndHost` The HWND of the host window that the browser window will be parented to.
 
-* `phwnd` The HWND of the browser window. 
+* `phwnd` The HWND of the browser window.
 
-* `pszReferrer` The HTTP Referer request header for the initial navigation. 
+* `pszReferrer` The HTTP Referer request header for the initial navigation.
 
-* `pszHeaders` Additional headers to send to the server for the initial navigation. 
+* `pszHeaders` Additional headers to send to the server for the initial navigation.
 
 * `postData` Data to be sent to the server as part of a HTTP POST transaction for the initial navigation.
 
@@ -262,21 +261,21 @@ Initializes the browser object using tab recovery data.
 > public HRESULT [DualEngineInitializeWithRecoveryData](#dualengineinitializewithrecoverydata)(REFGUID guidTabId, ULONG ulEntryId, [IDualEngine20BrowserObserver](idualengine20browserobserver.md) * pDualEngineObserver, DUALENGINECONFIGURATION config, EngineSwitchingPolicyFlags engineSwitchingPolicyFlags, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo, LPCWSTR pszUrl, HWND hwndHost, HWND * phwnd)
 
 ###### Parameters
-* `guidTabId` The GUID for the source recovery data file to initialize this instance with. 
+* `guidTabId` The GUID for the source recovery data file to initialize this instance with.
 
-* `ulEntryId` The ID of the entry in the travel log to navigate to after recovery. 
+* `ulEntryId` The ID of the entry in the travel log to navigate to after recovery.
 
-* `pDualEngineObserver` A pointer to the observer for this browser. 
+* `pDualEngineObserver` A pointer to the observer for this browser.
 
-* `config` Configuration flags for the desired browser behavior. 
+* `config` Configuration flags for the desired browser behavior.
 
-* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled. 
+* `engineSwitchingPolicyFlags` Flags that determine how engine switching is handled.
 
-* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance. 
+* `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance.
 
-* `pszUrl` The inital URL to navigate to. 
+* `pszUrl` The inital URL to navigate to.
 
-* `hwndHost` The HWND of the host window that the browser window will be parented to. 
+* `hwndHost` The HWND of the host window that the browser window will be parented to.
 
 * `phwnd` The HWND of the browser window.
 
@@ -296,7 +295,7 @@ Navigates to a URL.
 > public HRESULT [DualEngineNavigate](#dualenginenavigate)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload)
 
 ###### Parameters
-* `pszUrl` The URL to navigate to. 
+* `pszUrl` The URL to navigate to.
 
 * `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling.
 
@@ -307,13 +306,13 @@ Navigates to a URL, with additional information about the navigation.
 > public HRESULT [DualEngineNavigate2](#dualenginenavigate2)(LPCWSTR pszUrl, BOOL fSkipOnBeforeUnload, LPCWSTR pszReferrer, LPCWSTR pszHeaders, VARIANT * postData)
 
 ###### Parameters
-* `pszUrl` The URL to navigate to. 
+* `pszUrl` The URL to navigate to.
 
-* `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling. 
+* `fSkipOnBeforeUnload` Whether to skip the `onBeforeUnload` handling.
 
-* `pszReferrer` The HTTP Referer request header for this navigation. 
+* `pszReferrer` The HTTP Referer request header for this navigation.
 
-* `pszHeaders` Additional headers to send to the server for this navigation. 
+* `pszHeaders` Additional headers to send to the server for this navigation.
 
 * `postData` Data to be sent to the server as part of a HTTP POST transaction for this navigation.
 
@@ -324,7 +323,7 @@ Notifies that navigation entries have been deleted.
 > public HRESULT [DualEngineNotifyNavigationEntriesDeleted](#dualenginenotifynavigationentriesdeleted)(BOOL fShouldDeleteEntries, [SentinelEntryInfo](tagsentinelentryinfo.md) sentinelEntryInfo)
 
 ###### Parameters
-* `fShouldDeleteEntries` Indicates whether the browser should delete all the entries in it's list. 
+* `fShouldDeleteEntries` Indicates whether the browser should delete all the entries in it's list.
 
 * `sentinelEntryInfo` The number of history items before and after the initial navigation for this instance.
 
@@ -395,11 +394,11 @@ Sets the size and position of the browser window.
 > public HRESULT [DualEngineSetPosition](#dualenginesetposition)(int x, int y, int iWidth, int iHeight)
 
 ###### Parameters
-* `x` The new position of the left side of the window, in client coordinates. 
+* `x` The new position of the left side of the window, in client coordinates.
 
-* `y` The new position of the top of the window, in client coordinates. 
+* `y` The new position of the top of the window, in client coordinates.
 
-* `iWidth` The new width of the window, in pixels. 
+* `iWidth` The new width of the window, in pixels.
 
 * `iHeight` The new height of the window, in pixels.
 
@@ -409,7 +408,7 @@ Changes the Theater mode state of the browser.
 
 > public HRESULT [DualEngineSetTheaterFullscreen](#dualenginesettheaterfullscreen)(BOOL fFullscreen)
 
-In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigation buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode. 
+In theater mode, the browsers window fills the entire screen and displays a toolbar that has a minimal set of navigation buttons. A status bar is also provided in the upper-right corner of the screen. Explorer bars, such as History and Favorites, are displayed as an autohide pane on the left edge of the screen in theater mode.
 ###### Parameters
 * `fFullscreen` If `true` and not currently in theater mode, the browser will enter theater mode; if `false` and currently in theater mode, the browser will exit theater mode.
 
@@ -420,7 +419,7 @@ Adjusts the top margin of the browser window when it is being displayed in theat
 > public HRESULT [DualEngineSetTheaterMargins](#dualenginesettheatermargins)(BOOL fTheaterShowing, int yTheaterThreshold)
 
 ###### Parameters
-* `fTheaterShowing` Indicates whether the host is currently in theater mode. 
+* `fTheaterShowing` Indicates whether the host is currently in theater mode.
 
 * `yTheaterThreshold` The size in pixels of the margin between the top of the screen and the fullscreen browser window.
 
@@ -440,7 +439,7 @@ Changes the style of the browser window.
 > public HRESULT [DualEngineSetWindowStyle](#dualenginesetwindowstyle)(int wlStyle, int wlExStyle)
 
 ###### Parameters
-* `wlStyle` The Window Style value to set. 
+* `wlStyle` The Window Style value to set.
 
 * `wlExStyle` The Extended Windows Style value to set.
 
@@ -460,7 +459,7 @@ Sends a simulated key input.
 > public HRESULT [DualEngineSimulateKeyInput](#dualenginesimulatekeyinput)(DWORD vKey, KEYACTION keyAction)
 
 ###### Parameters
-* `vKey` The virtual keycode to simulate. 
+* `vKey` The virtual keycode to simulate.
 
 * `keyAction` The key action to simulate.
 
@@ -471,9 +470,9 @@ Sends a simulated mouse input.
 > public HRESULT [DualEngineSimulateMouseInput](#dualenginesimulatemouseinput)(DWORD x, DWORD y, MOUSEACTION mouseAction)
 
 ###### Parameters
-* `x` The x coordinate. 
+* `x` The x coordinate.
 
-* `y` The y coordinate. 
+* `y` The y coordinate.
 
 * `mouseAction` The mouse action to simulate.
 

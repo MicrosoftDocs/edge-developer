@@ -143,11 +143,11 @@ However, your host app might not be able to use that location to write data to. 
 
 **Cleanup:**
 
-At the end of the session, ClickOnce automatically cleans up.  
+At the end of the session, ClickOnce automatically cleans up. 
 
 **Packaging:**
 
-ClickOnce is a deployment method for lightweight transient apps; it's a hybrid model.  It's possible to persist a ClickOnce app, but that's not standard, typical practice.  
+ClickOnce is a deployment method for lightweight transient apps; it's a hybrid model.  It's possible to persist a ClickOnce app, but that's not standard, typical practice. 
 
 **What type of platform app a ClickOnce app wraps:**
 
@@ -251,8 +251,8 @@ Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.w
 ```csharp
 string UserDataFolder;
 UserDataFolder = "C:\\MyAppUserDataFolder";
-_task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
-                                            UserDataFolder, 
+_task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
+                                            UserDataFolder,
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
 ```
 
@@ -285,8 +285,8 @@ You should specify the same folder where all other app data is stored.
 ```csharp
 string UserDataFolder;
 UserDataFolder = "C:\\MyAppUserDataFolder";
-_task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
-                                            UserDataFolder, 
+_task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder,
+                                            UserDataFolder,
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
 ```
 
@@ -321,7 +321,7 @@ try {
     // dir (that is, /Program Files/) is protected.
     var userDataFolder = Path.Combine(
       Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-      "YOURAPPNAME", "WebView2"); // You need to decide if you want to keep this 
+      "YOURAPPNAME", "WebView2"); // You need to decide if you want to keep this
       // folder during uninstall, or add uninstall code that removes this folder.
     Log.Info($"WebView2 user data folder: {userDataFolder}");
     var env = await CoreWebView2Environment.CreateWithOptionsAsync(
@@ -479,12 +479,12 @@ If multiple users use your app repeatedly, you should create a new user data fol
 
 The WebView2 control creates a new UDF for each new user.  The WebView2 control creates one UDF per session.  If there are multiple WebView2 sessions, the WebView2 control creates multiple UDFs.  Usually if the host app has more than one WebView2 control instance, the host app should point all instances of WebView2 to the same UDF.
 
-Each host app that has a WebView2 control instance will have its own UDF.  Your host app can have each UDF point to the same place.  
+Each host app that has a WebView2 control instance will have its own UDF.  Your host app can have each UDF point to the same place. 
 
 If your host app is for multiple users, you should probably create one UDF per user.  If your app was installed per-user, this is how it works.
 <!-- in a more detailed article, cover this: how does your host app cause WebView2 to create one UDF per user vs. causing WebView2 to create one UDF per X or Y or Z instead? -->
 
-If you launch two copies of your host app, they will use the same UDF.  
+If you launch two copies of your host app, they will use the same UDF. 
 <!-- cover this in advanced whitepaper article -->
 
 * For Win32 host apps, the UDF is not automatically removed.

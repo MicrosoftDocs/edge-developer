@@ -93,7 +93,7 @@ The form's functionality is created by using JavaScript, and you can test this b
       }
     })
     ```
-    
+
 Using a `click` event listener to run code when a button is used is a good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, the **Donate** button is implemented by using a `<div>` HTML element, which can't be focused with the keyboard.  The `click` event only runs when you use a mouse or another source of a `click` event, such as a special button that's available on some keyboards.
 
 This is a classic example where JavaScript was added to recreate the functionality that `<button>` elements provide natively.  Simulating the functionality of buttons by using `<div>` elements ended up producing an inaccessible experience.
