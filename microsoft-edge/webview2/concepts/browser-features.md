@@ -75,7 +75,7 @@ The following table displays the WebView2 features that differ from the Microsof
 The following WebView2 platform features are currently unavailable:
 
 | Feature | Details |
-|:--- | :--- |
+|---|---|
 | Push Notifications | This feature isn't implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
 | Periodic Background Sync | Periodic Background Sync events will never trigger. |
@@ -128,7 +128,7 @@ To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceler
 The following shortcuts are always turned off in WebView2, or are effectively turned off.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
 
 | Action | Shortcut |
-|:--- |:--- |
+|---|---|
 | Add to Favorites | **Ctrl+D** |
 | Add All Tabs to Favorites | **Ctrl+Shift+D** |
 | Focus Location | **Ctrl+L**, **Alt+D** |
@@ -175,7 +175,7 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled:
 
 | Action | Shortcut |
-|:--- |:--- |
+|---|---|
 | Close Tab | **Ctrl+W**, **Ctrl+F4** |
 | Close Window | **Ctrl+Shift+W** |
 | Fullscreen | **F11** |
@@ -187,7 +187,7 @@ The following keyboard shortcuts are always turned off, except in windows that d
 If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off:
 
 | Action | Shortcut |
-|:--- |:--- |
+|---|---|
 | Stop | **Esc** |
 | Find on Page | **Ctrl+F** |
 | Find Next | **Ctrl+G** |

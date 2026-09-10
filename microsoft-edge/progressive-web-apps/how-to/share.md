@@ -271,7 +271,7 @@ Apps can also handle shared files. To handle files in your PWA, you must use the
             "files": [
                 {
                     "name": "textFile",
-                    "accept": ["text/plain", "text/html", "text/css", 
+                    "accept": ["text/plain", "text/html", "text/css",
                                "text/javascript"]
                 }
             ]

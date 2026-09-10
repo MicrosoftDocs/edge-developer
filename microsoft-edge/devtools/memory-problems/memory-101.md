@@ -184,7 +184,7 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 * **Arrays**: An _array_ is an object that has numeric keys. Arrays are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs that are used like dictionaries are implemented as arrays.
 
   A typical JavaScript object is stored as only one of two array types:
-  
+
   * An array for storing named properties.
   * An array for storing numeric elements.
 

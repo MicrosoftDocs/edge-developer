@@ -101,9 +101,9 @@ To see the Translator API in action, and review existing code that uses the API:
 1. Click the **Translate** button.
 
    If the model for the specified language pair hasn't been downloaded before, the download starts.
-   
+  
    ![Status indicator showing model downloading progress](./translator-api-images/model-downloading.png)
-   
+  
    If the model download doesn't start, restart Microsoft Edge and try again.
 
    After the model has downloaded, the model starts generating a translation of the text from the source language into the target language.
@@ -198,7 +198,7 @@ const session = await Translator.create({
   sourceLanguage: "en",
   targetLanguage: "es",
   monitor: m => {
-    // Use the monitor object argument to add an listener for the 
+    // Use the monitor object argument to add an listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
@@ -336,7 +336,7 @@ To destroy a session by creating an `AbortController` object, create a `Translat
 // Create an AbortController object.
 const controller = new AbortController();
 
-// Create a Translator session and pass the 
+// Create a Translator session and pass the
 // AbortController object by using the signal option.
 const session = await Translator.create({
   sourceLanguage: "en",

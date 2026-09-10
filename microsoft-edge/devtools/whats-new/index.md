@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/30/2026
+ms.date: 08/28/2026
 ---
 # What's new in Microsoft Edge DevTools
 
@@ -17,6 +17,7 @@ What's new articles correspond to historical releases of Microsoft Edge, and are
 <!-- maint:
 toc.yml - add new what's new page, move a what's new page to archive
 /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page -->
+* [What's new in DevTools (Microsoft Edge 152)](./152.md)
 * [What's new in DevTools (Microsoft Edge 151)](./151.md)
 * [What's new in DevTools (Microsoft Edge 150)](./150.md)
 * [What's new in DevTools (Microsoft Edge 149)](./149.md)
@@ -26,13 +27,12 @@ toc.yml - add new what's new page, move a what's new page to archive
 * [What's new in DevTools (Microsoft Edge 145)](./145.md)
 * [What's new in DevTools (Microsoft Edge 144)](./144.md)
 * [What's new in DevTools (Microsoft Edge 143)](./143.md)
-* [What's new in DevTools (Microsoft Edge 142)](./2025/10/devtools-142.md)
 
 For earlier What's new pages, see **Archive** in the table of contents.
 
 
 <!-- ====================================================================== -->
-## Download the preview channels
+## Download the preview channels of Microsoft Edge
 
 To stay up to date and get the latest DevTools features, download an Insider channel (preview version) of Microsoft Edge.  Whether you're on Windows, Linux, or macOS, consider using Canary (or another preview channel) as your default development browser.
 
@@ -45,6 +45,9 @@ The preview versions of Microsoft Edge run as separate apps, side-by-side with t
 For the latest announcements, [follow the Microsoft Edge team on Twitter](https://twitter.com/MSEdgeDev).
 
 To report a problem with DevTools or ask for a new feature, file an issue in the [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+
+See also:
+* [Contact the Microsoft Edge DevTools team](../contact.md)
 
 
 <!-- ====================================================================== -->

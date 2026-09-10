@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: windows-integration
 ms.date: 05/21/2024
 keywords: dual engine, dualengine, iemode, win32 apps, win32, edge, ie mode, edge html, DualEngineSessionFactory
-topic_type: 
+topic_type:
 - APIRef
 api_name:
 - DualEngineSessionFactory
@@ -24,8 +24,7 @@ api_location:
 # interface DualEngineSessionFactory
 
 > [!IMPORTANT]
-> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or 
-> to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
+> The DualEngine API is part of a Limited Access Feature (see [LimitedAccessFeatures class](/uwp/api/windows.applicationmodel.limitedaccessfeatures)). For more information or to request an unlock token, contact [Microsoft Support](https://go.microsoft.com/fwlink/?linkid=2271232).
 
 Factory object for DualEngine interfaces.
 
@@ -46,7 +45,7 @@ Returns the known DualEngine interface version, if there is one.
 > public STDMETHOD([GetSpecifiedVersion](#getspecifiedversion))(__out UINT * version) const
 
 ###### Parameters
-* `version` A pointer to a UINT where the version will be stored if there is one. 
+* `version` A pointer to a UINT where the version will be stored if there is one.
 
 ###### Returns
 S_OK if a known version was found, E_FAIL if it was not.
@@ -58,11 +57,12 @@ Gets a DualEngine Session object of the requested version.
 > public STDMETHOD([GetVersionedBrowserSession](#getversionedbrowsersession))(__in UINT version, __out IUnknown ** ppSession)
 
 > [!IMPORTANT]
-> This method must be called after Internet Explorer calls the export on DualEngineReady. See [Creating a DualEngine adapter plugin DLL](../concepts/adapter-dll.md). 
-###### Parameters
-* `version` The version of the Session object to get. 
+> This method must be called after Internet Explorer calls the export on DualEngineReady. See [Creating a DualEngine adapter plugin DLL](../concepts/adapter-dll.md).
 
-* `ppSession` The Session object, if the version requested is supported. 
+###### Parameters
+* `version` The version of the Session object to get.
+
+* `ppSession` The Session object, if the version requested is supported.
 
 ###### Returns
 An HRESULT that indicates whether session creation was successful.
@@ -76,11 +76,12 @@ Called to unlock the DualEngine interface.
 > [!IMPORTANT]
 > This MUST be called successfully before any other methods on this interface can be called.
 
-Equivalent to `Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature` except it checks the adapter dll for the identity resource instead of the process .exe. 
-###### Parameters
-* `token` The LAF token provided by Microsoft. 
+Equivalent to `Windows::ApplicationModel::LimitedAccessFeatures::TryUnlockFeature` except it checks the adapter dll for the identity resource instead of the process .exe.
 
-* `attestation` The attestation string provided by Microsoft. 
+###### Parameters
+* `token` The LAF token provided by Microsoft.
+
+* `attestation` The attestation string provided by Microsoft.
 
 ###### Returns
 An HRESULT that indicates whether unlocking was successful.

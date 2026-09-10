@@ -151,7 +151,7 @@ By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct 
 1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags`.
 
 1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
-  
+ 
 1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./prompt-api-images/prerelease-model-flag-for-prompt-api.png)
@@ -320,7 +320,7 @@ You can follow the progress of the model download by using the `monitor` option.
 // download.
 const session = await LanguageModel.create({
   monitor: m => {
-    // Use the monitor object argument to add an listener for the 
+    // Use the monitor object argument to add an listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
