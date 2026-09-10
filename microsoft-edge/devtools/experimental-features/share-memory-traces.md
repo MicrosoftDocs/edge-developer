@@ -118,10 +118,10 @@ To export memory information from the **Memory** tool:
 
    <!-- todo: expect the File type dropdown to have not just 1 item, but 2
 
-   when DevTools Settings > **Export .devtools memory traces** checkbox is cleared, **Save as type**'s lone item is 
+   when DevTools Settings > **Export .devtools memory traces** checkbox is cleared, **Save as type**'s lone item is
    **Performance traces (*.devtools; *.json; *.heapsnapshot)**
 
-   when DevTools Settings > **Export .devtools memory traces** checkbox is selected, **Save as type**'s lone item is 
+   when DevTools Settings > **Export .devtools memory traces** checkbox is selected, **Save as type**'s lone item is
    **Performance traces (*.devtools; *.json; *.devtools)**
    -->
 

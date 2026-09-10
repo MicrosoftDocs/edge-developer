@@ -10,7 +10,7 @@ ms.date: 04/03/2025
 ---
 # What's new in DevTools (Microsoft Edge 135)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 135 includes the following updates from the Chromium project:
+These are the latest DevTools features in the Stable release of Microsoft Edge.  Microsoft Edge 135 includes the following updates from the Chromium project:
 
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-135#perf)
    * [Origin and script links for profile and function calls in Performance](https://developer.chrome.com/blog/new-in-devtools-135#perf-script-origin)

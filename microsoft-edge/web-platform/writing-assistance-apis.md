@@ -151,7 +151,7 @@ By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1
 1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags`.
 
 1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
-  
+ 
 1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./writing-assistance-apis-images/prerelease-model-flag-for-wa-apis.png)
@@ -202,7 +202,7 @@ To use the Writer API or the Rewriter API in Microsoft Edge:
    If your device performance class is **High** or greater, the Writing Assistance APIs are supported on your device.
 
    If your device performance class is **Medium** or **Low**, the Writing Assistance APIs are only supported through the prerelease Aion-1.0-Instruct model, which is available starting with Edge version 150.0.4070.  To test the Aion-1.0-Instruct model, see [Enable Aion-1.0-Instruct for the Writing Assistance APIs](#enable-aion-10-instruct-for-the-writing-assistance-apis), above.
-                                                       
+                                                      
   If you notice issues with these models, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=writing-assistance-api.md) in the MSEdgeExplainers repo.
 
 
@@ -345,7 +345,7 @@ You can follow the progress of the model download by using the `monitor` option.
 // download.
 const session = await Summarizer.create({
   monitor: m => {
-    // Use the monitor object argument to add an listener for the 
+    // Use the monitor object argument to add an listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
@@ -584,7 +584,7 @@ Example using a `Writer` session:
 // Create an AbortController object.
 const controller = new AbortController();
 
-// Create a Summarizer, Writer, or Rewriter session and pass the 
+// Create a Summarizer, Writer, or Rewriter session and pass the
 // AbortController object by using the signal option.
 const session = await Writer.create({ signal: controller.signal });
 

@@ -10,7 +10,7 @@ ms.date: 05/24/2022
 ---
 # What's new in DevTools (Microsoft Edge 102)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 > [!TIP]
 > The **Microsoft Build 2022** conference was on May 24-26.  Learn more about new features for memory, performance, and production debugging in DevTools and new capabilities in the web platform for PWAs in the following videos:

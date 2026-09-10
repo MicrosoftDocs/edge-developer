@@ -31,7 +31,7 @@ The Microsoft Edge Add-ons badge is not the same as the Microsoft brand logo, an
 <!-- ====================================================================== -->
 ## Download the badge image files
 
-Download the complete set of `.png` files: 
+Download the complete set of `.png` files:
 
 * [Microsoft_Edge_Add-ons_badge_image_files.zip](https://raw.githubusercontent.com/microsoft/MicrosoftEdge-Extensions/refs/heads/main/assets/Microsoft_Edge_Add-ons_badge_image_files.zip) (from the [MicrosoftEdge-Extensions](https://github.com/microsoft/MicrosoftEdge-Extensions) repo).
 

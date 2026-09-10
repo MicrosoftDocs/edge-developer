@@ -59,9 +59,9 @@ To check whether input fields have labels connected to them, use the **Issues** 
 1. Click the **Open in Elements** link.
 
    ![Elements tool showing the problematic HTML after clicking the link in the Issues tool](./test-issues-tool-images/a11y-testing-inspect-problematic-element.png)
-    
+
    The **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** pane displays the applied CSS rules for the element.
-  
+
    The following code is now displayed:
 
    ```html

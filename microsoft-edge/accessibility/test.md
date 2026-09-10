@@ -56,16 +56,6 @@ You can also use the assessment feature of [Accessibility Insights](https://acce
 
 
 <!-- ====================================================================== -->
-## External articles and websites
-
-* [Assistive technology compatibility tests](http://www.powermapper.com/tests) - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers.
-
-* [HTML5Accessibility](https://html5accessibility.com) - This site tests which new HTML5 features are accessibly supported by major browsers.
-
-* [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
-
-
-<!-- ====================================================================== -->
 ## The Web Accessibility Initiative (WAI)
 
 * [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html) - Approaches for evaluating websites for accessibility.
