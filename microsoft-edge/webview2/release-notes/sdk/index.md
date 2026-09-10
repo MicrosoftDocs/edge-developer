@@ -72,7 +72,7 @@ New APIs are added in three phases, as follows:
 
    * Sometimes, APIs are simultaneously promoted to Stable in a Prerelease SDK and Stable in a Release SDK.
 
-![Diagram of phases of introducing new APIs](./../about-images/phases-of-adding-apis.png)
+![Diagram of phases of introducing new APIs](./index-images/phases-of-adding-apis.png)
 <!-- .png is used by webview2/release-notes/about.md and webview2/concepts/versioning.md -->
 
 Shorthand names of the phases:

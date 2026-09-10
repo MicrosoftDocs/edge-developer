@@ -23,7 +23,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 <!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 
 <!-- ------------------------------ -->
