@@ -216,7 +216,7 @@ This displays the details about the `iframe` in the **Application** tool.  In th
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 

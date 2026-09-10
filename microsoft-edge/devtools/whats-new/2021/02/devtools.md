@@ -348,7 +348,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 See also:
 * [Test accessibility using the Accessibility tab](../../../accessibility/accessibility-tab.md)
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ====================================================================== -->

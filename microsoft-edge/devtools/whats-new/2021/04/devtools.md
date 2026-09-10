@@ -260,7 +260,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 -->
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 <!-- todo: create regular docs for Elements > Badge settings.  FTS 0 hits except this section. -->
 
 
@@ -284,7 +284,7 @@ This information helps you better understand your images and apply optimization.
 For the history of this feature in the Chromium open-source project, see Issues [1149832](https://crbug.com/1149832) and [1170656](https://crbug.com/1170656).
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 * [Inspect network activity](../../../network/index.md)
 
 

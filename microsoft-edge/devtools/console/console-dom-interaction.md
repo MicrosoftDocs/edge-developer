@@ -14,7 +14,7 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 
 The **Console** tool can also be used to interact with the DOM by using JavaScript code. For example, you can find elements in the DOM tree and manipulate them by using DOM APIs.
 
-To learn more about the **Inspect** tool, see [Analyze pages using the Inspect tool](../css/inspect.md). To learn more about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements-tool/elements-tool.md).
+To learn more about the **Inspect** tool, see [Analyze pages using the Inspect tool](../css/inspect.md). To learn more about the **Elements** tool, see [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md).
 
 
 <!-- ====================================================================== -->
