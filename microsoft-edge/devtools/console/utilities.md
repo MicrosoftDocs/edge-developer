@@ -28,10 +28,10 @@ ms.date: 11/20/2023
 
 The Console Utilities API contains a collection of convenience variables and functions for performing common tasks, such as:
 
-*  Selecting and inspecting DOM elements.
-*  Displaying data in a readable format.
-*  Stopping and starting the profiler.
-*  Monitoring DOM events.
+* Selecting and inspecting DOM elements via CSS selectors.
+* Displaying data in a readable format.
+* Stopping and starting the profiler.
+* Monitoring DOM events.
 
 These variables and functions only work by entering them directly into the DevTools **Console**; you can't use the variables and call the functions from scripts.
 
