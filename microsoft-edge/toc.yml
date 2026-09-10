@@ -2399,10 +2399,10 @@
 
             - name: Prerelease testing using preview channels of Microsoft Edge
               items:
-                - name: Prerelease testing using preview channels of Microsoft Edge  # short article
+                - name: Prerelease testing using preview channels of Microsoft Edge
                   href: ./webview2/how-to/prerelease-testing.md
 
-                - name: Switch to a preview channel to test upcoming APIs and features  # long article
+                - name: Switch to a preview channel to test upcoming APIs and features
                   href: ./webview2/how-to/set-preview-channel.md
 
                 - name: Self-host by deploying preview channels

@@ -44,7 +44,7 @@ The `LaunchingExternalUriScheme` event is raised when content in a `frame`, or i
    * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/dotnet/api/microsoft.web.webview2.core.corewebview2frame.launchingexternalurischeme?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
 * `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true) _todo: script emitted this member for .net & win32 lists only; delete, or add to winrt tab?_<!-- bug: script emitted this member for .net & win32, not for winrt -->
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2launchingexternalurischemeeventargs.handled?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -52,7 +52,7 @@ The `LaunchingExternalUriScheme` event is raised when content in a `frame`, or i
    * [CoreWebView2Frame.LaunchingExternalUriScheme Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2frame?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#launchingexternalurischeme)
 
 * `CoreWebView2LaunchingExternalUriSchemeEventArgs` Class:
-   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.IAsyncOperation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#iasyncoperation)  _todo: script emitted this member for winrt list only; delete, or add to .net & win32 tabs?_<!-- bug: script emitted this member for winrt, not for .net, not for win32 -->
+   * [CoreWebView2LaunchingExternalUriSchemeEventArgs.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2launchingexternalurischemeeventargs?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#handled)
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -121,8 +121,8 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
 
 <!-- 4 -->
 * `CoreWebView2Environment` Class:
-   * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createorjoinclusterenvironmentasync?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)<!-- bug: the script emitted this member for .net only, not for rt or win32 -->
-   * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getclusterenvironmentoptions?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)<!-- bug: the script emitted this member for .net only, not for rt or win32 -->
+   * [CoreWebView2Environment.CreateOrJoinClusterEnvironmentAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createorjoinclusterenvironmentasync?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
+   * [CoreWebView2Environment.GetClusterEnvironmentOptions Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getclusterenvironmentoptions?view=webview2-dotnet-1.0.4255-prerelease&preserve-view=true)
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -140,7 +140,6 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
    * [CoreWebView2ClusterEnvironmentOptions.ClusterName Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#clustername)
    * [CoreWebView2ClusterEnvironmentOptions.CustomSchemeRegistrations Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#customschemeregistrations)
    * [CoreWebView2ClusterEnvironmentOptions.EnableTrackingPrevention Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#enabletrackingprevention)
-   * [CoreWebView2ClusterEnvironmentOptions.Handled Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#handled) - _todo: script emitted for rt only; delete, or add to .net & win32?_<!-- bug: script emitted this member for winrt, not for .net, not for win32 -->
    * [CoreWebView2ClusterEnvironmentOptions.Language Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#language)
    * [CoreWebView2ClusterEnvironmentOptions.PerHostProfileIsolation Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#perhostprofileisolation)
    * [CoreWebView2ClusterEnvironmentOptions.ReleaseChannels Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2clusterenvironmentoptions?view=webview2-winrt-1.0.4255-prerelease&preserve-view=true#releasechannels)
@@ -192,11 +191,11 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
 <!-- 4 -->
 _todo: add # suffix? confirm iface name and method names_
 * `ICoreWebView2ExperimentalEnvironment`:
-   * [ICoreWebView2ExperimentalEnvironment::CreateOrJoinClusterEnvironmentAsync](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoinclusterenvironmentasync)
-   * [ICoreWebView2ExperimentalEnvironment::GetClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#getclusterenvironmentoptions)
+   * [ICoreWebView2ExperimentalEnvironment::CreateOrJoinCoreWebView2ClusterEnvironment](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoincorewebview2clusterenvironment)
+   * [ICoreWebView2ExperimentalEnvironment::GetCoreWebView2ClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-1.0.4255-prerelease&preserve-view=true#getcorewebview2clusterenvironmentoptions)
 
 <!-- 3 -->
-* [COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS Enum](/microsoft-edge/webview2/reference/win32/webview2-idl-experimental?view=webview2-1.0.4255-prerelease&preserve-view=true#corewebview2_cluster_environment_status)<!-- bug: script emitted webview2-idl in url, but should emit webview2-idl-experimental -->
+* [COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS Enum](/microsoft-edge/webview2/reference/win32/webview2-idl-experimental?view=webview2-1.0.4255-prerelease&preserve-view=true#corewebview2_cluster_environment_status)
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_NOT_SUPPORTED`
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_OPTIONS_MISMATCH`
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_SUCCEEDED`
