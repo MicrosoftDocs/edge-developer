@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 88)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -311,7 +311,7 @@ See also:
 <!-- ------------------------------ -->
 #### Frame details view updates
 
-In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  
+In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)

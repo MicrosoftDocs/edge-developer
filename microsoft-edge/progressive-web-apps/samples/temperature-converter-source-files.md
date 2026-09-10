@@ -10,7 +10,7 @@ ms.date: 10/17/2025
 ---
 # Temperature converter source files
 
-The sample Temperature converter Progressive Web App (PWA) 
+Source files for the Temperature converter Progressive Web App (PWA) sample.
 
 See also:
 * [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/) - source code directory.
@@ -259,7 +259,7 @@ See also:
 
 ```javascript
 const CACHE_NAME = `temperature-converter-v1`;
-    
+   
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -284,7 +284,7 @@ self.addEventListener('fetch', event => {
         try {
           // If the resource was not in the cache, try the network.
           const fetchResponse = await fetch(event.request);
-    
+   
           // Save the resource in the cache and return it.
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
@@ -323,7 +323,7 @@ The main directory for a Progressive Web App (PWA)'s source code can contain a R
 
 Source code:
 * [/temperature-converter/](https://github.com/MicrosoftEdge/Demos/tree/main/temperature-converter/)
-   * [index.html](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/index.html) 
+   * [index.html](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/index.html)
    * [converter.css](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.css)
    * [converter.js](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/converter.js)
    * [manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/temperature-converter/manifest.json)

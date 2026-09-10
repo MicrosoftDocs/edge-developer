@@ -326,7 +326,7 @@ For more information, see [Monitor changes in JavaScript using Live Expressions]
 
 By default, the **Console** tool displays a preview of the value of an expression, as you type the JavaScript expression in the **Console**.
 
-To turn off the live preview as you type: 
+To turn off the live preview as you type:
 
 1. Click the **Console Settings** (![Console Settings icon](./reference-images/settings-button-icon.png)) button.
 

@@ -106,8 +106,8 @@ Each entry in the `widgets` array contains several fields, as shown below:
 
 In the above example, a music player application defines a mini player widget. A widget definition in the web app manifest has the following required and optional fields:
 
-| Field | Description | Required |
-|:--- |:--- |:--- |
+| Field | Description | Required? |
+|---|---|---|
 | `name` | The title of the widget, presented to users. | Yes |
 | `short_name` | An alternative short version of the name. | No |
 | `description` | A description of what the widget does. | Yes |
@@ -440,7 +440,7 @@ The PWAmp widget displays the current song and buttons to play the previous or n
 The service worker global object (or [ServiceWorkerGlobalScope](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope)) contains a `widgets` attribute that exposes the following Promise-based methods:
 
 | Method | Description | Parameters | Return value |
-|:--- |:--- |:--- |:--- |
+|---|---|---|---|
 | `getByTag(tag)` | Gets a widget by tag. | The widget tag | A Promise that resolves to the [widget object](#widget-object) that matches the tag, or `undefined`. |
 | `getByInstanceId(id)` | Gets a widget by instance ID. | The widget instance ID | A Promise that resolves to the corresponding [widget object](#widget-object), or `undefined`. |
 | `getByHostId(id)` | Gets widgets by host ID. | The host ID | An array of [widget objects](#widget-object) found in that host. |
@@ -514,7 +514,7 @@ This object is passed as an argument to listeners of service worker widget event
 For the `widgetinstall`, `widgetuninstall`, and `widgetresume` event types, the `widgetEvent` object has the following properties:
 
 | Property | Description | Type |
-|:--- |:--- |:--- |
+|---|---|---|
 | `widget` | The widget instance that triggered the event. | [widget](#widget-object) |
 | `instanceId` | The widget instance ID. | `String` |
 | `hostId` | The widget host ID. | `String` |
@@ -528,7 +528,7 @@ This object is passed as an argument to listeners of service worker widget event
 The `widgetClickEvent` object has the following properties:
 
 | Property | Description | Type |
-|:--- |:--- |:--- |
+|---|---|---|
 | `action` | The action that triggered the event, as defined in the `actions.verb` fields of the widget template. See [Define widget actions](#define-widget-actions). | `String` |
 | `widget` | The widget instance that triggered the event. | [widgetInstance](#widgetinstance-object) |
 | `hostId` | The widget host ID. | `String` |

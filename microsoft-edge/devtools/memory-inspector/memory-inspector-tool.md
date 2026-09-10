@@ -66,7 +66,7 @@ For example:
 1. From the `buffer` line you can open Memory inspector using one of the following methods:
 
     * Click on the **Reveal in Memory inspector panel** icon (![Reveal in Memory inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `buffer` property line, or
- 
+
     * From the context menu. Right click the `buffer` property and select **Reveal in Memory inspector panel**.
 
     ![Open Memory inspector from the buffer property line context menu](./memory-inspector-tool-images/memory-inspector-open-from-buffer.png)
@@ -102,7 +102,7 @@ The Memory inspector panel includes three types of content:
 #### Navigation bar
 
 ![Memory inspector panel Navigation bar](./memory-inspector-tool-images/memory-inspector-panel-navigation-bar.png)
- 
+
 The **Enter address** text box shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to `0x00000008`. The Memory buffer immediately jumps to that byte address.
 
 Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate **Previous page** (**<**) and **Next page** (**>**), respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
@@ -116,7 +116,7 @@ If the Memory buffer does not automatically update when stepping through values,
 #### Memory buffer
 
 ![Memory inspector panel Memory buffer](./memory-inspector-tool-images/memory-inspector-panel-memory-buffer.png)
- 
+
 Reading from the left side of the panel, the **address** is displayed in hex format. The currently selected address is bold.
 
 The **memory** is also shown in hex format, each byte separated by a space. The currently selected byte is highlighted. You can click on any byte or navigate using the arrow keys (left, right, up, and down).
@@ -128,7 +128,7 @@ The **ASCII representation** of the memory is shown on the right side of the pan
 #### Value inspector
 
 ![Memory inspector panel Value inspector](./memory-inspector-tool-images/memory-inspector-panel-value-inspector.png)
- 
+
 Click the current Endian type to switch between **Big endian** and **Little endian**.
 
 The main area shows each value and interpretation based on the settings. By default, all values are shown.
@@ -154,21 +154,21 @@ Complete the following steps to debug a webpage in Memory inspector.
 1. Click **Resume script execution** (![Resume script execution](./memory-inspector-tool-images/memory-inspector-resume-script-execution.png)) or press **F8** or **Ctrl +\\** to step through the code.
 
     The ASCII representation and the value interpretations are updated.
-    
+
     ![Memory inspector address values updated](./memory-inspector-tool-images/memory-inspector-address-values-updated.png)
 
 1. Click the **Jump to address** button (![Jump to address button](./memory-inspector-tool-images/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** as needed to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](./memory-inspector-tool-images/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
 
 1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](./memory-inspector-tool-images/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating point** values.
-    
+
     ![Value type settings float](./memory-inspector-tool-images/memory-inspector-panel-value-type-settings-float.png)
 
 1. Click **Toggle value type settings** (![Toggle value type settings blue](./memory-inspector-tool-images/memory-inspector-value-type-settings-toggle-back.png)) to close the value type settings.
 
 1. Use the dropdown lists to change the encoding from `dec` to `sci`. The value representations are updated.
-    
+
     ![Memory inspector address values updated view](./memory-inspector-tool-images/memory-inspector-address-values-updated-sci.png)
-    
+
 1. Explore the memory buffer using the keyboard or navigation bar.
 
 1. Repeat steps **3** and **4** to observe value changes.
@@ -195,10 +195,10 @@ For example:
 
     ![Memory inspector set breakpoint in Wasm file](./memory-inspector-tool-images/memory-inspector-wasm-breakpoint.png)
 
-1. Click on the **Reveal in Memory inspector panel** icon (![Reveal in Memory inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
+1. Click on the **Reveal in Memory inspector panel** icon (![Reveal in Memory inspector panel icon](./memory-inspector-tool-images/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line.
 
     The Wasm ArrayBuffer opens in **Memory inspector**.
-    
+
     ![Memory inspector panel Wasm](./memory-inspector-tool-images/memory-inspector-panel-wasm.png)
 
 
