@@ -31,7 +31,7 @@ npm i -D @playwright/test
 To install browsers, run the following command, which downloads [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org):
 
 ```console
-npx playwright install 
+npx playwright install
 ```
 
 
@@ -125,13 +125,13 @@ const playwright = require('playwright');
 
 `example.js` is a simple demonstration of the automation and testing scenarios that are enabled by Playwright.  To take screenshots in other web browsers, change the above code from `await playwright.chromium.launch` to the following code:
 
-Firefox: 
+Firefox:
 
 ```javascript
   const browser = await playwright.firefox.launch({
 ```
 
-WebKit: 
+WebKit:
 
 ```javascript
   const browser = await playwright.webkit.launch({

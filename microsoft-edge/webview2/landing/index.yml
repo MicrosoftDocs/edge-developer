@@ -245,7 +245,7 @@ landingContent:
           - text: Distribute your app and the WebView2 Runtime
             url: ../concepts/distribution.md
 
-          - text: Enterprise management of WebView2 Runtimes
+          - text: Enterprise management of WebView2
             url: ../concepts/enterprise.md
 
           - text: Distribute an app as a single executable file

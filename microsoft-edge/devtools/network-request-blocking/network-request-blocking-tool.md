@@ -36,15 +36,13 @@ To block a network request:
    * Type the full URL.
    * Type only the domain name, to block all requests from this domain.
    * Replace parts of the URL with `*`, for wildcard pattern matching.
-   
-   For example, `contoso.com` matches URLs like:
 
+   For example, `contoso.com` matches URLs like:
    * `https://contoso.com`
    * `https://subdomain.contoso.com`
    * `https://subdomain.contoso.com/path/to/resource`
 
    And `*.jpg` matches URLs like:
-   
    * `https://www.contoso.com/resource.jpg`
    * `http://third-party.com/6469272/163348534-b90ea1a3-c33cbeb1aed8.jpg`
 

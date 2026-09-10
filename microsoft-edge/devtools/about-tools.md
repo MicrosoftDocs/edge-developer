@@ -155,5 +155,5 @@ To restore all of the default tool tabs in the **Activity Bar** and **Quick View
 
 <!-- ====================================================================== -->
 ## See also
- 
+
 * [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction to DevTools.

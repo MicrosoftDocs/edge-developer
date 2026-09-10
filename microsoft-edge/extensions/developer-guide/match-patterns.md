@@ -54,7 +54,7 @@ The meaning of `*` depends on whether it is in the scheme, host, or path part.  
 ## Examples of valid patterns
 
 | Pattern | What it does | Examples of matching URLs |
-|:--- |:--- |:--- |
+|---|---|---|
 | `http://*/*` | Matches any URL that uses the http scheme | `http://www.google.com` `http://example.org/foo/bar.html` |
 | `http://*/foo*` | Matches any URL that uses the http scheme, on any host, as long as the path starts with `/foo` | `http://example.com/foo/bar.html` `http://www.google.com/foo` |
 | `https://*.google.com/foo*bar` | Matches any URL that uses the https scheme, is on a `google.com` host (such as `www.google.com`, `docs.google.com`, or `google.com`), as long as the path starts with `/foo` and ends with `bar` | `https://www.google.com/foo/baz/bar` `https://docs.google.com/foobar` |
@@ -71,7 +71,7 @@ The meaning of `*` depends on whether it is in the scheme, host, or path part.  
 Here are some examples of `_invalid_` pattern matches:
 
 | Bad pattern | Why it is bad |
-|:--- |:--- |
+|---|---|
 | `http://www.foo.com` | No `_path_` |
 | `http://*foo/bar` | '`*`' in the host can be followed only by a '`.`' or '`/`' |
 | `http://foo.*.bar/baz` | If '`*`' is in the `_host_`, it must be the first character |
