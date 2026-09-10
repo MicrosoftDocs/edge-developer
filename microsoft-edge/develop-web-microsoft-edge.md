@@ -63,7 +63,7 @@ See [Overview of DevTools](./devtools/overview.md).
 
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions
-   
+
 Create an extension for Microsoft Edge, to add to or modify the browser's features.  Extensions improve the browser experience, to provide a specialized function that's important to a target audience.
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages. Examples of companion experiences include ad blockers and password managers.

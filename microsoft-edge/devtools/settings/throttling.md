@@ -1,6 +1,6 @@
 ---
-title: Throttling
-description: The Throttling page of DevTools Settings, to control and customize network and CPU speed settings.
+title: Throttling the CPU or network
+description: Use the Throttling page of DevTools Settings to test a webpage as if using a slower CPU or network.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -21,10 +21,10 @@ ms.date: 06/12/2025
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Throttling
-<!-- https://developer.chrome.com/docs/devtools/settings/throttling -->
+# Throttling the CPU or network
+<!-- Throttling  https://developer.chrome.com/docs/devtools/settings/throttling -->
 
-In the **Throttling** page of **Customize and control DevTools** (![Customize and control DevTools icon](./throttling-images/customize-and-control-devtools-icon.png)) > **Settings**, you can:
+Use the **Throttling** page of DevTools **Settings** to test a webpage as if using a slower CPU or network.  In the **Throttling** page of DevTools **Settings**, you can:
 
 * Calibrate CPU throttling presets to approximate the typical performance of low- and mid-tier mobile devices.
 

@@ -42,7 +42,7 @@ To open the **Changes** tool using the **Command Menu**:
    ![The Show Changes command in the Command Menu](changes-tool-images/changes-tool-command-menu.png)
 
 1. Press **Enter**.  The **Changes** tool opens in the **Quick View** panel:
-   
+
    ![The Changes tool in the Quick View panel](changes-tool-images/changes-tool-in-quick-view.png)
 
 See also:
@@ -98,7 +98,7 @@ If green circles stop appearing on files in DevTools, such as in the **Workspace
 
 * With DevTools displayed, long-click or right-click the **Refresh** button in Microsoft Edge, and then select **Empty cache and hard refresh**.
 
-<!-- 
+<!--
 * In DevTools, select **Customize and Control DevTools** (**...**) > **Restore defaults and refresh**. -->
 
 

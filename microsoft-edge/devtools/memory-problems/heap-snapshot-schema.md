@@ -101,7 +101,7 @@ The `.heapsnapshot` JSON data contains a root object that has the following prop
 
 ```json
 {
-    "snapshot": {     
+    "snapshot": {
         "meta": {},
         "node_count": 123,
         "edge_count": 456,
@@ -276,7 +276,7 @@ Similar to the `nodes` array, the `edges` top-level array contains all of the el
 
 Also similar to nodes, the total number of edges can be calculated by multiplying `snapshot.edge_count` by `snapshot.meta.edge_fields.length`. Edges are also stored as a sequence of numbers, which you will need to iterate on by groups of size `snapshot.meta.edge_fields.length`.
 
-However, to read the `edges` array correctly, you first need to read the `nodes` array, because each node knows how many edges it has. 
+However, to read the `edges` array correctly, you first need to read the `nodes` array, because each node knows how many edges it has.
 
 To re-create an edge, you need three pieces of information:
 
