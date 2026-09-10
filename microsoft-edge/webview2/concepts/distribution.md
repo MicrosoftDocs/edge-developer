@@ -23,7 +23,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 <!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
 
-See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -359,7 +359,7 @@ Example managed app folder structure:
 * [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
-* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
+* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.<!-- toc bucket 6 leaf 4 -->
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
