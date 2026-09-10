@@ -127,7 +127,7 @@ Each constructor in the list can be expanded to show the objects that were insta
 For each constructor in the list, the **Summary** view also shows a number such as **×123**, indicating the total number of objects created with the constructor. The **Summary** view also shows the following columns:
 
 | Column name | Description |
-|:--- |:--- |
+|---|---|
 | **Distance** | Displays the distance to the root using the shortest simple path of nodes.  See [Distance](./memory-101.md#distance) in _Memory terminology_. |
 | **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The _shallow size_ is the size of the JavaScript heap that's _directly_ held by an object. The shallow size of an object is usually small, because a JavaScript object often only stores its description of the object, not the values, in the object's directly held memory. Most JavaScript objects store their values in a _backing store_ that's elsewhere in the JavaScript heap, and only expose a small wrapper object on the portion of the JavaScript heap that's directly owned by the object. See [Shallow size](./memory-101.md#shallow-size) in _Memory terminology_. |
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Retained size](./memory-101.md#retained-size) in _Memory terminology_. |
@@ -155,7 +155,7 @@ To reveal the list of objects that were instantiated by a given constructor, exp
 The **Summary** view in the **Memory** tool includes the following special category names, which aren't based on constructors.  Most of these category names are displayed in parentheses.
 
 | Category name | Description |
-|:--- |:--- |
+|---|---|
 | **(array)** | Various internal array-like objects that don't directly correspond to objects visible from JavaScript, such as the contents of JavaScript arrays, or the named properties of JavaScript objects. |
 | **(compiled code)** | Internal data that V8 (Microsoft Edge's JavaScript engine) needs to run functions defined by JavaScript or WebAssembly. V8 automatically manages memory usage in this category: if a function runs many times, V8 uses more memory for that function so that the function runs faster. If a function hasn't run in a while, V8 might delete the internal data for that function. |
 | **(concatenated string)** | When two strings are concatenated together, such as when using the JavaScript `+` operator, V8 might choose to represent the result internally as a _concatenated string_. Rather than copying all of the characters of the two strings into a new string, V8 creates a small object which points to the two strings. |
@@ -203,7 +203,7 @@ The **Containment** view allows you to peek inside function closures, to observe
 The **Containment** view shows the following types of objects:
 
 | Containment view entry points | Description |
-|:--- |:--- |
+|---|---|
 | **DOMWindow objects** | Global objects for JavaScript code.  |
 | **GC roots** | The GC roots used by the garbage collector of the JavaScript virtual machine.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
 | **Native objects** | Objects created by the browser such as DOM nodes and CSS rules, which are shown in the JavaScript virtual machine to allow automation. |

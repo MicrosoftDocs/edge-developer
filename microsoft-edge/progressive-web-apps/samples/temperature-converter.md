@@ -384,7 +384,7 @@ Confirm that the service worker (`sw.js`) is running when you open the PWA as a 
 ## Step 10: Use DevTools to turn off the internet connection and test the PWA offline
 
 Try the Progressive Web App (PWA) as an offline app, as follows:
- 
+
 1. In the DevTools window, open the **Network** (![The Network icon](./temperature-converter-images/network-icon.png)) tool.
 
 1. Near the top, in the **Throttling**<!-- no tooltip --> menu to the right of the **Disable cache** checkbox, change from **No throttling** to **Offline**:
@@ -548,7 +548,7 @@ Create a working branch and switch to it, as follows:
 1. In the **Explorer** pane, open `/temperature-converter/manifest.json`.
 
 1. In `manifest.json`, change the app's name in two lines from "Temperature converter" to "TC", as follows:
-   
+  
    Change from:
 
    ```json

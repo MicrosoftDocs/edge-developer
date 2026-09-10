@@ -17,7 +17,7 @@ There are several ways in which a PWA can store data on a device, such as local 
 The following table describes the different options, and the rest of this article goes into more details and usage scenarios for each option.
 
 | Storage option | Description |
-|:--- |:--- |
+|---|---|
 | Web Storage | Web Storage has two types: session and local.  Web Storage is useful to store small amounts of data from your app's front-end code.  The data is structured as key-value pairs and is only available to the current app origin.  In the case of session storage, the data is cleared when the session ends, for example when the app is closed, or when the user browses to another origin in the same window or tab.  Local storage persists until the app removes the data. |
 | IndexedDB | IndexedDB is an API for storing larger amounts of structured data.  The API is asynchronous and can be used both from your app's front-end code and service worker code.  Use the IndexedDB API to store a significant amount of structured data on the client, or binary data, such as encrypted media objects or files. |
 | Cache | The Cache API can be used to manage cached resources.  The Cache API is Promise-based and allows developers to store and retrieve many web resources — HTML, CSS, JavaScript, images, JSON, and so on.  Usually, the Cache API is used within the context of a service worker, but it's also available to your app's front-end code. |

@@ -64,7 +64,7 @@ The **Performance** tool displays local metrics for page interactions, and lets 
 #### Open the Performance tool
 <!-- https://developer.chrome.com/docs/devtools/performance/overview#open_the_performance_panel -->
 
-To open the **Performance** tool: 
+To open the **Performance** tool:
 
 1. Go to a webpage, such as the [Exploring the universe](https://microsoftedge.github.io/Demos/exploring-the-universe/) demo, in a new window or tab.
 
@@ -120,7 +120,7 @@ When you initially open the **Performance** tool, Core Web Vitals metrics are di
 <!-- ------------------------------ -->
 #### Recorded profile timeline
 
-Also use the **Performance** tool to view a recorded performance trace, including: 
+Also use the **Performance** tool to view a recorded performance trace, including:
 * Record a performance profile.
 * Change capture settings.
 * Analyze a performance report.  Shows information about the performance of the page over the period of time where the recording occurred, such as:
@@ -129,7 +129,7 @@ Also use the **Performance** tool to view a recorded performance trace, includin
    * The styling and layout operations that occurred.
    * Other performance metrics over time, such as network requests and layout shifts.
 
-After you record a performance trace, the performance trace is displayed instead of **Local metrics**.  
+After you record a performance trace, the performance trace is displayed instead of **Local metrics**.
 
 
 <!-- ------------------------------ -->
@@ -301,7 +301,7 @@ Select the following options from the **Capture settings** menu:
 
 * Select the **Enable CSS selector stats (slow)** checkbox: Captures CSS selector statistics.  Significantly hinders performance.  See [View CSS selector costs in the Performance tool sidebar](../whats-new/2024/11/devtools-131.md#view-css-selector-costs-in-the-performance-tool-sidebar) in _What's new in DevTools (Microsoft Edge 131)_.
 
-* CPU throttling: Simulate slower CPU speeds.  See [Throttle the CPU while recording](../performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.  
+* CPU throttling: Simulate slower CPU speeds.  See [Throttle the CPU while recording](../performance/reference.md#throttle-the-cpu-while-recording) in _Performance features reference_.
 
 * Network throttling: Simulate slower network speeds.  See [Throttle the network while recording](../performance/reference.md#throttle-the-network-while-recording) in _Performance features reference_.
 
@@ -371,7 +371,7 @@ Discover other tools that can help you improve your website's performance:
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). 
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/devtools/performance/overview) and is authored by Dale St. Marthe and Sofia Emelianova.
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)

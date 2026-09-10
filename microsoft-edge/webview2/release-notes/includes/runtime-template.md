@@ -16,14 +16,14 @@ Release notes for Microsoft Edge WebView2 Runtime, release date: Mmm. dd, yyyy.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-nn.md)
-* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-prerelease.md)
+* [SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)] (../sdk/n-n-nnnn-nn.md)
+* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (../sdk/n-n-nnnn-prerelease.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](./index.md)
    * [Release notes for WebView2 SDKs](../sdk/index.md)

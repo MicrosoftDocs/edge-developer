@@ -299,7 +299,7 @@ Microsoft Partner Center only accepts new Manifest V3 Microsoft Edge extension s
 <!-- ------------------------------ -->
 #### You can respond to user reviews about your Microsoft Edge extension
 
-At Partner Center, you can reply to user reviews and feedback about your extension that's published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website. 
+At Partner Center, you can reply to user reviews and feedback about your extension that's published at the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com) website.
 
 To share your feedback and comments about this feature, see [You can now respond to user reviews on your Microsoft Edge Add-ons page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18) in **Discussions** in the MicrosoftEdge-Extensions repo.
 

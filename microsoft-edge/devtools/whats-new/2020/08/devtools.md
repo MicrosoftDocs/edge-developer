@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 86)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -129,7 +129,7 @@ See also:
 Chromium issue: [#1094406](https://crbug.com/1094406)
 
 
-<!-- ------------------------------ 
+<!-- ------------------------------
 #### DevTools language enhancements
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.
@@ -296,7 +296,7 @@ See also:
 DevTools now has better support for the following JavaScript language features:
 
 | JavaScript language feature | Details |
-|:--- |:--- |
+|---|---|
 | [Logical assignment operators](https://v8.dev/features/logical-assignment) | DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.  |
 | Pretty-print [numeric separators](https://v8.dev/features/numeric-separators) | DevTools now properly pretty-prints the numeric separators in the **Sources** tool.  |
 
@@ -430,7 +430,7 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- ---------- 
+<!-- ----------
 ###### Human-readable X-Client-Data header values in the Network panel
 
 When inspecting a network resource in the Network panel, DevTools now formats any `X-Client-Data` header values in **Headers** pane as code.

@@ -15,7 +15,7 @@ This article highlights:
 * High-impact web platform changes, which might impact browser compatibility on your site, and which the Microsoft Edge team is tracking especially closely.
 
 For more information about other changes in Microsoft Edge, see [Release notes for Microsoft Edge web platform](./release-notes/index.md).
-  
+ 
 The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, these changes may affect the functionality of existing webpages.
 
 For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  However, Microsoft retains full control of the Microsoft Edge browser and may defer or reject changes. The Microsoft Edge team decides if the change benefits browser users.
@@ -36,6 +36,7 @@ This table lists high-impact changes which the Microsoft Edge team is tracking c
 | --- | --- | --- |
 | Insecure downloads over HTTP | Future release (TBD) | When a user tries to download potentially dangerous content from an HTTP site, the user will receive a UI warning, such as "Insecure download blocked."  The user will still have an option to proceed and download the item.  Admins can use the `InsecureContentAllowedForUrls` policy to specify HTTP sites for which the warning will be suppressed.  Admins can use the `InsecureDownloadWarnings` feature flag to test the impact of this upcoming feature. |
 | Deprecation of XSLT | Future release (TBD) | XSLT support represents a disproportionate attack surface, and the Chromium project which Microsoft Edge is based on has announced plans to disable and ultimately remove XSLT in a future release. See [Removing XSLT for a more secure browser](https://developer.chrome.com/docs/web-platform/deprecating-xslt). As a result, you should treat reliance on client‑side XSLT as technical debt and plan migration accordingly. Microsoft Edge version 147 introduces the XSLTEnabled feature policy to support testing and transition scenarios while the Chromium project works toward deprecating and removing XSLT support. We encourage organizations to proactively test setting `XSLTEnabled = Disabled` to identify application dependencies and remediation requirements ahead of any future default changes or removal of the feature. |
+| Remove `_current` link target | v153 | The non-standard `_current` link target, which is used to specify that a link should open in the current browsing context, is removed.  See [Removed `_current` link target](./release-notes/153.md#removed-_current-link-target) in _Microsoft Edge 153 web platform release notes (Sep. 2026)_. |
 | Deprecate unload event | v152-v155 | Edge 152 will introduce the new `unload` Permission-Policy, to allow creating unload event listeners.  The default value is initially `allow`, but between Edge 152 and Edge 155, the default value will gradually be migrated to `deny`, such that unload handlers stop firing on pages, unless a page explicitly opts in to re-enable them.  To explicitly enable unload event handlers, use the `allow` value.  <br/>Edge 152: Unload handlers will stop firing by default for 60% of page loads, unless the site explicitly enables unload handlers via the `unload` Permission-Policy.  <br/>Edge 154: Increases to 80% of page loads.  <br/>Edge 155: Increases to 100% of page loads.  <br/>This change is happening in the Chromium project, on which Microsoft Edge is based.  See [Planned deprecation of the unload event](./release-notes/152.md#planned-deprecation-of-the-unload-event) in _Microsoft Edge 152 web platform release notes (Aug. 2026)_, and [Intent to Deprecate: Deprecate unload event](https://groups.google.com/a/chromium.org/g/blink-dev/c/dvusqw9-IhI/m/SBkm_u1RAQAJ). |
 | Remove inline XSLT for production of SVG | v147 | Support for using XSLT stylesheets to transform XML data into SVG files has been removed.  See [Remove inline XSLT for production of SVG](./release-notes/147.md#remove-inline-xslt-for-production-of-svg) in _Microsoft Edge 147 web platform release notes (Apr. 2026)_. |
 | JPEG or PNG embedded in BMP | v145 | Support for embedding JPEG or PNG image data in a Bitmap image format is nonstandard, and has been removed.  See [Remove support for Bitmap extension to embed JPEG or PNG](./release-notes/145.md#remove-support-for-bitmap-extension-to-embed-jpeg-or-png) in _Microsoft Edge 145 web platform release notes (Feb. 2026)_. |
@@ -98,9 +99,9 @@ This article uses the following notation for browser release numbers.
 | v123 | The feature or change ships in Microsoft Edge version 123. |
 | v123 (Chrome+1) | The feature or change ships in Microsoft Edge version 123, which is one release after the feature or change ships in Chrome version 122. |
 | v123 (Chrome+2) | The feature or change ships in Microsoft Edge version 123, which is two releases after the feature or change ships in Chrome version 121. |
-| Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. | 
-| Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. | 
-| Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. | 
+| Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. |
+| Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. |
+| Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. |
 
 
 <!-- ====================================================================== -->

@@ -79,7 +79,7 @@ Next, add files to your Overrides folder, as follows.  This example will add a C
    In this example, the file is listed as: `microsoftedge.github.io/Demos/demo-to-do/styles > to-do-styles.css`
 
    The file is stored in a new directory that's in your overrides folder (such as in `C:\Users\myusername\overrides`).
- 
+
 1. In File Explorer or Finder, verify that DevTools created a subfolder that is named using the URL of the file (such as **microsoftedge.github.io**) and contains the correct directory structure, such as `C:\Users\myusername\overrides\microsoftedge.github.io\Demos\demo-to-do\styles`.  The overriding file is stored in this directory.
 
    In the editor pane of the **Sources** tool, a page icon with a purple dot is added to the file's tab. The purple dot indicates that the file is a local file that overrides the file that's returned from the web server:

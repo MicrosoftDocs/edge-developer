@@ -75,7 +75,7 @@ By default, the **Animations** tool opens in the **Quick View** panel at the bot
 The Animation Inspector is grouped into four main sections (or panes).  This guide refers to each pane as follows:
 
 | Index | Pane | Description |
-|:--- |:--- |:--- |
+|---|---|---|
 | 1 | **Controls** | From here you can clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |
 | 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |
 | 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |

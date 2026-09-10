@@ -16,7 +16,7 @@ You can view extension metrics from your [Partner Center dashboard](https://part
 
 For example, you can identify regions in which the number of installations for your extension has increased in the past three months. You can also export this report as a CSV file.
 
-Follow these steps to view your extension's analytics dashboard:  
+Follow these steps to view your extension's analytics dashboard: 
 
 1. Go to your Partner Center account and select an extension.
 

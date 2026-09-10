@@ -133,7 +133,7 @@ Continue with the next section.
    cd ~/GitHub/demos/demo-to-do
    python -m SimpleHTTPServer  # Python 2
    ```
-  
+
    ``` bash
    # Python 3 option
    cd ~/GitHub/demos/demo-to-do

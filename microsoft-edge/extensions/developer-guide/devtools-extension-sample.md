@@ -181,7 +181,7 @@ Download the "main" branch of the Demos repo, as follows:
    <h2>Custom DevTools Tool</h2>
    ```
 
-   to:  
+   to: 
 
    ```html
    <h2>My Custom DevTools Tool</h2>
@@ -199,7 +199,7 @@ Download the "main" branch of the Demos repo, as follows:
    "name": "Custom DevTools Tool",
    ```
 
-   to:  
+   to: 
 
    ```json
    "name": "My Custom DevTools Tool",

@@ -48,7 +48,7 @@ Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such 
 Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser, including Microsoft Edge and WebView2.
 <!-- / end of copied to top of article -->
 
-Chrome DevTools for agents acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Microsoft Edge DevTools for reliable automation, in-depth debugging, and performance analysis. 
+Chrome DevTools for agents acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Microsoft Edge DevTools for reliable automation, in-depth debugging, and performance analysis.
 
 The Chrome DevTools MCP server supports connecting to any Chromium-based browser, including Microsoft Edge and WebView2.  Because the server is built for the Google Chrome browser, you need to provide extra configuration to point the server at Microsoft Edge or a WebView2 instance.
 
@@ -77,7 +77,7 @@ The examples in this guide use the VS Code `mcp.json` format.  If you're using a
 ## Launch Edge
 
 Use this configuration to let your coding agent launch Microsoft Edge for you.
-   
+  
 With this configuration, the Model-Context-Protocol (MCP) server, which your agent connects to, launches Edge, by using the `--executablePath` flag pointing to the Edge binary.
 
 Copy and paste the configuration snippet for your platform into your VS Code `mcp.json`.  These examples use Edge Stable.
@@ -175,10 +175,10 @@ These are default install locations.  Paths may vary based on user configuration
 | Stable | `%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe` |
 | Beta | `%ProgramFiles(x86)%\Microsoft\Edge Beta\Application\msedge.exe` |
 | Dev | `%ProgramFiles(x86)%\Microsoft\Edge Dev\Application\msedge.exe` |
-| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\Application\msedge.exe` |  
+| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\Application\msedge.exe` | 
 
 ##### [macOS](#tab/macos/)
-   
+  
 | Channel | Default Path |
 |---|---|
 | Stable | `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge` |
@@ -355,7 +355,7 @@ These are default locations.  Paths may vary based on user configuration, versio
 
 WebView2 doesn't have a "launch" scenario; instead, the host app creates the WebView2 instance.
 
-The MCP server connects to the WebView2 instance via auto-connect, similar to [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance), above.  
+The MCP server connects to the WebView2 instance via auto-connect, similar to [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance), above. 
 
 
 <!-- ------------------------------ -->

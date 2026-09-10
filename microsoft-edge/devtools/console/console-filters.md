@@ -12,7 +12,7 @@ ms.date: 04/13/2021
 
 Use the filter options of the DevTools **Console** to reduce the noise from excessive console log messages, to better see the type of log messages that you're looking for.
 
-When you go to various webpages, you may find that the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you, such as information about the page that another developer logged.  Or you might see logged information about violations and warnings about the performance of the current site, that you aren't able to change.  
+When you go to various webpages, you may find that the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you, such as information about the page that another developer logged.  Or you might see logged information about violations and warnings about the performance of the current site, that you aren't able to change.
 
 You can filter console log messages in various ways:
 *  Filter by log level.
