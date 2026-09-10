@@ -36,7 +36,7 @@ The current owner of the extension must send an email, as follows:
    * The target publisher's seller ID and name (the new owner).
    * The MSA email address for the source publisher extension owner (the current owner).
    * The MSA email address for the target publisher extension owner (the new owner).
- 
+
 1. Send the email.
 
 

@@ -28,10 +28,10 @@ ms.date: 11/20/2023
 
 The Console Utilities API contains a collection of convenience variables and functions for performing common tasks, such as:
 
-*  Selecting and inspecting DOM elements.
-*  Displaying data in a readable format.
-*  Stopping and starting the profiler.
-*  Monitoring DOM events.
+* Selecting and inspecting DOM elements via CSS selectors.
+* Displaying data in a readable format.
+* Stopping and starting the profiler.
+* Monitoring DOM events.
 
 These variables and functions only work by entering them directly into the DevTools **Console**; you can't use the variables and call the functions from scripts.
 
@@ -604,7 +604,7 @@ To monitor multiple events:
 You can also specify a collection of events by using one of the predefined sets of events.  The following table shows the available event types and the associated event mappings:
 
 | Event type | Corresponding mapped events |
-|:--- |:--- |
+|---|---|
 | `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |
 | `key` | "keydown", "keypress", "keyup", "textInput" |
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |

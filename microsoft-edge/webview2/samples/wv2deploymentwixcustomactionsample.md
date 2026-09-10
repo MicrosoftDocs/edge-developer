@@ -119,7 +119,7 @@ If not done yet, install WiX Toolset Visual Studio 2019 Extension:
 <!-- ====================================================================== -->
 ## Step 6 - Edit Product.wxs to configure how to distribute the WebView2 Runtime
 
-1. Open `Product.wxs` under the `WV2DeploymentWiXCustomActionSample` project. 
+1. Open `Product.wxs` under the `WV2DeploymentWiXCustomActionSample` project.
 
 1. Edit `Product.wxs` depending on which approach you want to use:
 
@@ -144,7 +144,7 @@ If you want to package the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEd
 1. Under `<!-- Step 4: Config Custom Action to download/install Bootstrapper -->`, uncomment the `<Binary Id="MicrosoftEdgeWebview2Setup.exe" ...>` and `<CustomAction Id='InvokeBootstrapper' ...>` elements below `<!-- [Package Bootstrapper] ... -->`.
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
-        
+       
 1. Under `<!-- Step 5: Config execute sequence of custom action -->`, uncomment the `<Custom Action='InvokeBootstrapper' ...>` element below `<!-- [Package Bootstrapper] ...-->`.
 
 1. Comment out other `<Custom>` elements under `Step 5`.
@@ -154,7 +154,7 @@ If you want to package the Evergreen WebView2 Runtime Bootstrapper (`MicrosoftEd
 
 If you want to package the Evergreen WebView2 Runtime Standalone Installer with the app:
 
-1. Under `<!-- Step 4: Config Custom Action to download/install Bootstrapper -->`, uncomment the `<Binary Id="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" ...>` and `<CustomAction Id='InvokeStandalone' ...>` elements below `<!-- [Package Standalone Installer] ... -->`. 
+1. Under `<!-- Step 4: Config Custom Action to download/install Bootstrapper -->`, uncomment the `<Binary Id="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" ...>` and `<CustomAction Id='InvokeStandalone' ...>` elements below `<!-- [Package Standalone Installer] ... -->`.
 
 1. Comment out other `<Binary>` and `<CustomAction>` elements under `Step 4`.
 
