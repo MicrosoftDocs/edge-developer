@@ -253,9 +253,6 @@ landingContent:
 #           url: ../web-platform/web-platform.md
       - linkListType: how-to-guide
         links:
-          - text: Move users to Microsoft Edge from Internet Explorer
-            url: ../web-platform/ie-to-microsoft-edge-redirection.md
-
           - text: Tracking prevention in Microsoft Edge
             url: ../web-platform/tracking-prevention.md
 
