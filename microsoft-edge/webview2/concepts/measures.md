@@ -160,7 +160,7 @@ See:
 Restore default Access Control Lists (ACLs).
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ Don't modify the default Access Control Lists (ACLs) that Windows sets on the We
 If security tools modify the ACLs on WebView2 Runtime folders, these sandboxed processes might lose the permissions they need to read and execute the Runtime binaries, which can cause blank screens, initialization failures, or crashes.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ A Low Integrity Level process (LowIL) must be able to Read and Execute the WebVi
 _Low Integrity Level (LowIL)_ is a Windows security mechanism that restricts a process's ability to write to higher-integrity objects (such as most user-profile and system locations).  WebView2 renderer processes run at Low IL to reduce the impact of a compromised process.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -357,7 +357,7 @@ Tune scanning with scoped exclusions for the WebView2 Runtime directory and user
 Avoid broad, global exclusions.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 * [Manage user data folders](./user-data-folder.md)
 
 
@@ -445,7 +445,7 @@ Ensure that authentication endpoints and Content Delivery Network (CDN) endpoint
 Validate authentication endpoints and Content Delivery Network (CDN) endpoints.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 
 
 <!-- ====================================================================== -->
@@ -460,7 +460,7 @@ Microsoft Edge servicing updates the following versioned subfolders:
 `C:\Program Files (x86)\Microsoft\EdgeWebView\Application\<version>\`
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
 * [Distribute your app and the WebView2 Runtime](./distribution.md)
 
@@ -483,7 +483,7 @@ Issue: The app works only at higher privilege.  The app fails in the following e
 Keep default `ALL APPLICATION PACKAGES` permissions on WebView2 Runtime directories; a Low integrity level process (LowIL) must **read/execute**.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 
 This includes the Evergreen WebView2 Runtime path under `C:\Program Files (x86)\Microsoft\EdgeWebView\Application\<version>\`, which must retain `ALL APPLICATION PACKAGES` Read/Execute permissions.
 
@@ -655,7 +655,7 @@ Child processes include:
 Do not end Crashpad or Graphics Processing Unit (GPU) processes, because they're crucial for stability and rendering.
 
 See:
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)
+* [Enterprise management of WebView2](./enterprise.md)
 * [Handling process-related events in WebView2](./process-related-events.md)
 
 
@@ -683,7 +683,7 @@ See:
 * [Handling process-related events in WebView2](./process-related-events.md)<!-- toc bucket 6 -->
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 7 node 1 -->
 * [Distribute your app and the WebView2 Runtime](./distribution.md)<!-- toc bucket 7 node 2 -->
-* [Enterprise management of WebView2 Runtimes](./enterprise.md)<!-- toc bucket 7 node 3 -->
+* [Enterprise management of WebView2](./enterprise.md)<!-- toc bucket 7 node 3 -->
 * [Process model for WebView2 apps](./process-model.md)<!-- toc bucket 11 -->
 * [Manage user data folders](./user-data-folder.md)<!-- toc bucket 12 -->
 
