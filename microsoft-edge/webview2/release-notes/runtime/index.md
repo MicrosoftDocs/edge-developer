@@ -15,8 +15,8 @@ list past 10 releases (runtimes)
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 154.0.4255.0 (Sep. 3, 2026)](./154.md)
-* [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)](./153.md)
+* [Preview Runtime 154.0.4258.9 (Sep. 10, 2026)](./154.md)
+* [Runtime 153.n.nnnn.nn (Mmm. dd, yyyy)](./153.md)
 * [Runtime 152.0.4191.53 (Aug. 28, 2026)](./152.md)
 * [Runtime 151.0.4129.50 (Aug. 3, 2026)](./151.md)
 * [Runtime 150.0.4078.44 (Jul. 7, 2026)](./150.md)
