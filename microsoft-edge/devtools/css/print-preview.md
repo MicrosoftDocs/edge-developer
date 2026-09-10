@@ -41,9 +41,9 @@ To force a page into print preview mode:
    <!-- the Command Menu way:
    1. In DevTools, open the **Command Menu**. To open the **Command Menu**, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
    1. Start typing **rendering**, select **Show Rendering**, and then press **Enter**. -->
-    
+
    The **Rendering** tool opens in the **Quick View** panel:
-   
+
    ![The Rendering tool, in the Quick View panel](./print-preview-images/rendering-tool.png)
 
 1. Scroll down to the **Emulate CSS media type** section, and then in the dropdown list, select **print** rather than **No emulation**:

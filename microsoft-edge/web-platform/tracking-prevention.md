@@ -224,7 +224,7 @@ The **Block** and **Allow** options on the `edge://settings/content/cookies` pag
 * [Storage Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md)
 
 disconnect.me:
-* [disconnect.me](https://disconnect.me) 
+* [disconnect.me](https://disconnect.me)
 * [Tracker Protection lists](https://github.com/disconnectme/disconnect-tracking-protection)
 * [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) list - defines groups of URLs that are owned by the same parent organization/company.
 * [services.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json) - tracking protection list categories.

@@ -36,7 +36,7 @@ In the **Performance** tool, the **Main** section displays all events that are t
 The following properties are common to all event types in the **Performance** tool's **Main** section.  Additional properties that are specific to certain event types are listed in the subsequent sections below.
 
 | Property | When is it shown |
-|:--- |:--- |
+|---|---|
 | Aggregated time | For events with **nested events**, the time taken by each category of events. |
 | Call Stack | For events with **child events**, the time taken by each category of events. |
 | CPU time | How much CPU time the recorded event took. |
@@ -54,7 +54,7 @@ The following properties are common to all event types in the **Performance** to
 The following events are in the **Loading** category.
 
 | Event | Description |
-|:--- |:--- |
+|---|---|
 | Parse HTML |  Microsoft Edge ran the HTML parsing algorithm. |
 | Finish Loading |  A network request completed. |
 | Receive Data |  Data for a request was received.  There are one or more Receive Data events. |
@@ -66,7 +66,7 @@ The following events are in the **Loading** category.
 #### Additional properties for Loading events
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | Resource | The URL of the requested resource. |
 | Preview | Preview of the requested resource (images only). |
 | Request Method | HTTP method used for the request (`GET` or `POST`, for example). |
@@ -83,7 +83,7 @@ See also [Properties common to all events](#properties-common-to-all-events), ab
 The following events are in the **Scripting** category.
 
 | Event | Description |
-|:--- |:--- |
+|---|---|
 | Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |
 | Cancel Animation Frame |  A scheduled animation frame was canceled. |
 | GC Event |  Garbage collection occurred. |
@@ -105,7 +105,7 @@ The following events are in the **Scripting** category.
 #### Additional properties for Scripting events
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | Timer ID | The timer ID. |
 | Timeout | The timeout specified by the timer. |
 | Repeats | Boolean that specifies if the timer repeats. |
@@ -120,7 +120,7 @@ See also [Properties common to all events](#properties-common-to-all-events), ab
 The following events are in the **Rendering** category.
 
 | Event | Description |
-|:--- |:--- |
+|---|---|
 | Invalidate layout | The page layout was invalidated by a DOM change. |
 | Layout | A page layout was completed. |
 | Recalculate style | Microsoft Edge recalculated element styles. |
@@ -131,7 +131,7 @@ The following events are in the **Rendering** category.
 #### Additional properties for Rendering events
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |
 | Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |
 | Layout tree size | For Layout records, the total number of nodes under the relayout root (the node that Microsoft Edge starts the relayout). |
@@ -148,7 +148,7 @@ See also [Properties common to all events](#properties-common-to-all-events), ab
 The following events are in the **Painting** category.
 
 | Event | Description |
-|:--- |:--- |
+|---|---|
 | Composite Layers | The composited image layers for the Microsoft Edge rendering engine. |
 | Image Decode | An image resource was decoded. |
 | Image Resize | An image was resized from its native dimensions. |
@@ -159,7 +159,7 @@ The following events are in the **Painting** category.
 #### Additional properties for Painting events
 
 | Property | Description |
-|:--- |:--- |
+|---|---|
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |
 | Dimensions | For Paint events, the height and width of the painted region. |
 

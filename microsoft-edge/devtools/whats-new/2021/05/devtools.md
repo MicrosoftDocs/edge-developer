@@ -10,7 +10,7 @@ ms.date: 06/02/2021
 ---
 # What's new in DevTools (Microsoft Edge 92)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.
+These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools:

@@ -132,7 +132,7 @@ In this example, you use the `$$()` utility function to list all links on the we
    ```javascript
    $$('a');
    ```
-   
+
    ![The result of the $$('a') function in the Console, which is an array of <a> elements](./console-dom-interaction-images/list-of-links.png)
 
    `$$('a')` is short for `document.querySelectorAll('a')`.
@@ -205,7 +205,7 @@ In this example, you get all the headings on the webpage that have an `id` attri
    });
    console.log(headings.join("\n"));
    ```
-   
+
    The result is text that contains content for each section heading, followed by the full URL for the section heading:
 
    ![The Console tool, showing the list of all headings on the page, along with their URLs](./console-dom-interaction-images/heading-links.png)
@@ -335,7 +335,7 @@ unmonitorEvents(document.querySelector('img'));
 unmonitorEvents(document.querySelector('img'), ['mousedown', 'mouseup', 'click']);
 unmonitorEvents(window, ['resize', 'scroll']);
 ```
-   
+
 
 <!-- ====================================================================== -->
 ## Save DOM interaction scripts as snippets

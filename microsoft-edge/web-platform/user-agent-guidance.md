@@ -30,7 +30,7 @@ You may want to provide different experiences to users based on their browser.  
 Mechanisms for browser detection:
 
 | Mechanism | Server-side | Client-side |
-|:--- |:--- |:--- |
+|---|---|---|
 | **User-Agent Client Hints** (recommended) | `Sec-CH-UA` HTTPS header | `navigator.userAgentData` JavaScript method |
 | **User-Agent string** (legacy) | `User-Agent` HTTPS header | `navigator.userAgent` JavaScript method |
 
@@ -78,7 +78,7 @@ Sec-CH-UA-Platform: "Windows"
 The following table shows all available hints request headers with sample values.
 
 | User-Agent request header | Example User-Agent response value |
-|:--- |:--- |
+|---|---|
 | `Sec-CH-UA` | `"Not_A Brand";v="8", "Chromium";v="120", "Microsoft Edge";v="120"` |
 | `Sec-CH-UA-Mobile` | `?0` |
 | `Sec-CH-UA-Full-Version` | `120.0.2210.91` |
@@ -240,7 +240,7 @@ Platform identifiers change based on the operating system, and version numbers i
 On desktop operating systems, Microsoft Edge is commonly identified by the `Edg` token in the User-Agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
 
 | Platform | Identifier token |
-|:--- |:--- |
+|---|---|
 | Desktop (Windows/Mac/Linux) | `Edg` |
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|

@@ -203,7 +203,7 @@ In Visual Studio, use NuGet Package Manager to add the WebView2 SDK to the proje
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** package.
 
    The NuGet package manager dialog displays search results, including a **Microsoft.Web.WebView2** package.  The dialog has a version number and **Install** button.
-   
+  
    ![NuGet package manager dialog displays the Microsoft.Web.WebView2 package](./wpf-images/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
@@ -323,7 +323,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
    ```
 
 1. Paste the code directly after the `Public MainWIndow` declaration, as shown in the following code:
-    
+   
    ```csharp
    namespace WpfApp1
    {
@@ -426,7 +426,7 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
         InitializeComponent();
         webView.NavigationStarting += EnsureHttps;
     }
-    
+   
     void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
     {
         String uri = args.Uri;
@@ -436,7 +436,7 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
         }
     }
     ```
-    
+   
    In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.
 
 1. Select **File** > **Save All** to save the project.

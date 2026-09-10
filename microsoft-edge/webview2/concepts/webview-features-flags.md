@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/24/2026
+ms.date: 08/28/2026
 ---
 # WebView2 browser flags
 <!-- lexicon:
@@ -111,6 +111,7 @@ If the flag takes a value other than true|false, give an example. -->
 | `edge-webview-unique-window-class` | Makes WebView2 register module-specific window classes by automatically appending a suffix that's derived from the client module's file name, without path or extension details.  For example, for the file name `EmbeddedBrowserWebView.dll`, a suffix of `EmbeddedBrowserWebView` is appended to `Chrome_WidgetWin_0`, forming `Chrome_WidgetWin_0_EmbeddedBrowserWebView`.  Enable this flag, to avoid a crash that can occur when different versions of WebView2 and Chromium Embedded Framework (CEF) coexist in the same process and attempt to interact with windows that share the same class. |
 | `embedded-browser-webview-dpi-awareness` | Sets the DPI awareness level of the server-side processes. |
 | `enable-aggressive-domstorage-flushing` | Enables aggressive flushing of DOM Storage, to minimize data loss. |
+| `enable-blink-features` | `enable-blink-features=DragAndDropJSFileObjects` enables dragging JavaScript-constructed `File` objects from the WebView2 control to native Windows applications and to other applications that are based on the Chromium browser engine.  Currently limited to image MIME types.  Without this flag, the file bytes are discarded and only the file name is delivered as plain text.  Files that are delivered through this path don't receive a `Mark` of the Web marking. |
 | `enable-experimental-web-platform-features` | Enables Web Platform features that are in development. |
 | `enable-logging` | Enable logging at the error level. |
 | `force-color-profile` | Force all monitors to be treated as though they have the specified color profile.  Valid values: `srgb`, `generic-rgb`. |

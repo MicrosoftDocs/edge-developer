@@ -129,7 +129,7 @@ Use this feature to measure distinct traffic from your PWA that was installed fr
 
 By default, a PWA that's installed from the [Microsoft Store](https://apps.microsoft.com) displays an additional UI when the app is redirected to a locale-specific domain.  The added UI shows the URL and page title.  This UI is added because navigation to the locale-specific domain is considered _out of scope_.
 
-The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
+When a user moves outside the scope of a PWA, the following UI is introduced:
 
 ![The additional UI with URL and page title when the app is redirected to another domain](./microsoft-store-images/locale-redirection-additional-ui.png)
 
