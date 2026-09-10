@@ -81,7 +81,7 @@ To connect to the symbol server by using a Personal Access Token (PAT), first ge
 1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
 
 1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
-    
+
    ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](./consume-source-maps-from-azure-images/ado-pat-settings.png)
 
    The **Personal Access Tokens** page appears:

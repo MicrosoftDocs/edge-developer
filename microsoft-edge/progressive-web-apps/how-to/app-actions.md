@@ -158,7 +158,7 @@ For a PWA to use App Actions, the `share_target` field must be present in the PW
 
 * The method must be "POST".
 * The `enctype` must be `multipart/form-data`.
-* `text` and `url` in `params` are required to support App Actions. 
+* `text` and `url` in `params` are required to support App Actions.
 * `files` is optional.  You can omit `files` if you don't want your PWA to support the normal _share target_ feature.
 
 Example `share_target` declaration, from [Demos/wami/manifest.json](https://github.com/MicrosoftEdge/Demos/blob/main/wami/manifest.json):
@@ -185,7 +185,7 @@ See also:
 
 The entity of an App Action is passed to the PWA through POST share data.  To handle POST share data, you can use or combine the following approaches:
 
-* Handle POST share data by using server-side code. 
+* Handle POST share data by using server-side code.
 
 * In a service worker, use a fetch event listener to intercept the HTTP POST request.  This provides a better experience for offline users.  See:
 
@@ -209,7 +209,7 @@ Explanation of the `formData` keys:
 
 * **url:** The protocol URI (for example, `web+wami://paint` in the sample) that identifies which App Action triggered the launch.  The input parameter value must be identical to the value that you set in the PWA's web app manifest `share_target.params.url`.
 
-* **files:** File objects attached to the App Action invocation. 
+* **files:** File objects attached to the App Action invocation.
 
 
 <!-- ------------------------------ -->
@@ -394,7 +394,7 @@ To test App Actions for your PWA:
 <!-- all links in file -->
 
 * [Receiving shared content](./share.md#receiving-shared-content)
-* [Publish a PWA to the Microsoft Store](./microsoft-store.md) 
+* [Publish a PWA to the Microsoft Store](./microsoft-store.md)
    * [Package your PWA for the Store](./microsoft-store.md#package-your-pwa-for-the-store) in _Publish a PWA to the Microsoft Store_.
 
 Windows articles:
@@ -413,7 +413,7 @@ Sites:
 * [PWABuilder.Windows.Chromium tester](https://pwabuilder-windows-docker.azurewebsites.net/)
 
 MDN:
-* [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler) 
+* [launch_handler](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/launch_handler)
 * [share_target](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target)
    * [Receiving share data using POST](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_share_data_using_post) in _share_target_.
    * [Receiving shared files](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/share_target#receiving_shared_files) in _share_target_.

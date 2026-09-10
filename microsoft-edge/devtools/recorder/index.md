@@ -64,7 +64,7 @@ To start recording a new user flow:
 <!-- ====================================================================== -->
 ## Record other user flows
 
-To record a new user flow, after you've stopped the recording of the previous user flow: 
+To record a new user flow, after you've stopped the recording of the previous user flow:
 
 1. Click the **Create a new recording** (![Create a new recording button](./index-images/new-recording-icon.png)) button in the top-left corner of the **Recorder** tool:
 
@@ -205,7 +205,7 @@ To change the type of step when editing the details of a step:
 You can use the following types of steps when editing a step in a user flow.  Each step type has a list of properties that apply to the step.
 
 | Step type | Description | Properties |
-|:--- |:--- |:--- |
+|---|---|---|
 | `change` | Change the value of a form input field. | **selectors**: Ways to find the element that this step applies to. <br/>**value**: The value to set the form input field to. |
 | `click` | Click an element. | **selectors**: Ways to find the element this step applies to. <br/>**offsetX**/**offsetY**: How far from the top left corner of the element to click. |
 | `close` | Close the browser window. | None. |
@@ -313,7 +313,7 @@ To generate a test script and run it automatically with a test automation framew
    ![The Export button dropdown menu and the various test automation formats](./index-images/export-for-test.png)
 
    | Export format | Test automation framework |
-   |:--- |:--- |
+   |---|---|
    | `@puppeteer/replay` | Exports the user flow as a test script for the **Replay** library.  See the [puppeteer / replay](https://github.com/puppeteer/replay) repo. |
    | Puppeteer | Exports the user flow as a test script for the Puppeteer test automation framework.  See [Puppeteer](https://pptr.dev). |
    | Puppeteer (including Lighthouse analysis) | Exports the user flow as a test script for the Puppeteer test automation framework, and includes a Lighthouse analysis of the performance of the website. |

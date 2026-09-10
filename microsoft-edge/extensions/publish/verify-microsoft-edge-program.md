@@ -119,7 +119,7 @@ There are three possible results when you check your verification status:
 
 * **Pending**: The verification process has started but isn't complete. If you've completed the email verification step, no further action is required on your part. Verification usually takes three to five business days. You can monitor verification status at **Account Settings | Legal Info**.
 
-* **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application) in the next section. 
+* **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application) in the next section.
 
 
 <!-- ====================================================================== -->

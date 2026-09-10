@@ -64,7 +64,7 @@ If you notice quite a bit of jank (interruptions of rendering) in your JavaScrip
 The following are common JavaScript problems and potential solutions.
 
 | Problem | Example | Solution |
-|:--- |:--- |:--- |
+|---|---|---|
 | Expensive input handlers affecting response or animation. | Touch, parallax scrolling. | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/#7_expensive_input_handlers) in _The Runtime Performance Checklist_ by Paul Lewis. |
 | Badly timed JavaScript affecting response, animation, load. | User scrolls right after page load, setTimeout / setInterval. | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers). |
 | Long-running JavaScript affecting response. | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Document/DOMContentLoaded_event) stalls, because it's swamped with JavaScript work. | Move pure computational work to Web Workers; see [Using Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!-- See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution). --> |
@@ -108,7 +108,7 @@ To reduce the impact of `Recalculate Style` events, minimize use of CSS properti
 The following table describes some common style problems and potential solutions.
 
 | Problem | Example | Solution |
-|:--- |:--- |:--- |
+|---|---|---|
 | Expensive style calculations affecting response or animation. | Any CSS property that changes the geometry of an element, like the width, height, or position; the browser checks all other elements and recalculates the layout. | Avoid CSS that triggers layouts. |
 | Complex selectors affecting response or animation. | Nested selectors force the browser to know everything about all the other elements, including parents and children. | Reference an element in your CSS with just a class. |
 
@@ -155,7 +155,7 @@ The **Performance** pane identifies when a page causes forced synchronous layout
 The following table describes some common layout problems and potential solutions.
 
 | Problem | Example | Solution |
-|:--- |:--- |:--- |
+|---|---|---|
 | Forced synchronous layout affecting response or animation. | Forcing the browser to perform layout earlier in the pixel pipeline, resulting in repeating steps in the rendering process. | Batch your style reads first, then do any writes.  <!-- See [Avoid large, complex layouts and layout thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing). --> |
 | Layout thrashing affecting response or animation. | A loop that puts the browser into a read-write-read-write cycle, forcing the browser to recalculate layout over and over again. | Automatically batch read-write operations using [FastDom library](https://github.com/wilsonpage/fastdom). |
 
@@ -200,7 +200,7 @@ The Timeline Tool page is deprecated.
 The following table describes some common paint and composite problems and potential solutions.
 
 | Problem | Example | Solution |
-|:--- |:--- |:--- |
+|---|---|---|
 | Paint storms affecting response or animation. | Big paint areas or expensive paints affecting response or animation. | Avoid paint, promote elements that are moving to their own layer, use transforms and opacity.  <!-- See [Simplify paint complexity and reduce paint areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas). --> |
 | Layer explosions affecting animations. | Overpromotion of too many elements with `translateZ(0)` greatly affects animation performance. | Promote to layers sparingly, and only when you know it offers tangible improvements.  <!-- See [Stick to composite-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count). --> |
 

@@ -604,7 +604,7 @@ To monitor multiple events:
 You can also specify a collection of events by using one of the predefined sets of events.  The following table shows the available event types and the associated event mappings:
 
 | Event type | Corresponding mapped events |
-|:--- |:--- |
+|---|---|
 | `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |
 | `key` | "keydown", "keypress", "keyup", "textInput" |
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |

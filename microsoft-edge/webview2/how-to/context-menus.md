@@ -48,7 +48,7 @@ You can add default menu items and/or custom menu items to a custom context menu
 
 ##### [C#](#tab/csharp)
 
-To display a custom context menu that contains your desired menu items, use the data provided in the `CoreWebView2ContextMenuRequestedEventArgs` of the `CoreWebView2` [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested).  For this case, you specify `Handled` to be `true`, and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in the `CoreWebView2ContextMenuRequestedEventArgs` of the `CoreWebView2` [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested).  For this case, you specify `Handled` to be `true`, and request a deferral.
 
 On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
 
@@ -91,7 +91,7 @@ The `MenuItems` property of `CoreWebView2ContextMenuRequestedEventArgs` provides
 
 ##### [C++](#tab/cpp)
 
-To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral.
 
 On a `ContextMenuRequested` event, add an event listener that has an `ICoreWebView2ContextMenuRequestedEventArgs`.
 
@@ -128,7 +128,7 @@ Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICore
 * [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
-   
+  
 * [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_target_kind)
 
 ---
@@ -143,7 +143,7 @@ The following sample presents the WebView2 context menu in the Win32/WPF context
 ##### [C#](#tab/csharp)
 
 ```csharp
-webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
+webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
                                     CoreWebView2ContextMenuRequestedEventArgs args)
 {
     IList<CoreWebView2ContextMenuItem> menuList = args.MenuItems;
@@ -154,7 +154,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
     PopulateContextMenu(args, menuList, cm);
     cm.IsOpen = true;
 };
-void PopulateContextMenu(CoreWebView2ContextMenuRequestedEventArgs args, 
+void PopulateContextMenu(CoreWebView2ContextMenuRequestedEventArgs args,
 IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 {
     for (int i = 0; i < menuList.Count; i++)
@@ -205,7 +205,7 @@ webview2_4->add_ContextMenuRequested(
             ICoreWebView2* sender,
             ICoreWebView2ContextMenuRequestedEventArgs* args)
         {
-            auto showMenu = [this, args = 
+            auto showMenu = [this, args =
             wil::com_ptr<ICoreWebView2ContextMenuRequestedEventArgs>(args)]
             {
                 wil::com_ptr<ICoreWebView2ContextMenuItemCollection> items;
@@ -219,17 +219,17 @@ webview2_4->add_ContextMenuRequested(
                 POINT locationInScreenCoordinates;
                 CHECK_FAILURE(args->get_Location(&locationInControlCoordinates));
                 // get_Location returns coordinates in relation to upper left Bounds
-                // of the WebView2.Controller. Will need to convert to Screen 
+                // of the WebView2.Controller. Will need to convert to Screen
                 // coordinates to display the popup menu in the correct location.
-                ConvertToScreenCoordinates(locationInControlCoordinates, 
+                ConvertToScreenCoordinates(locationInControlCoordinates,
                                            locationInScreenCoordinates);
                 UINT32 selectedCommandId = TrackPopupMenu(
-                                       hPopupMenu, 
+                                       hPopupMenu,
                                        TPM_TOPALIGN | TPM_LEFTALIGN | TPM_RETURNCMD,
-                                       locationInScreenCoordinates.x, 
-                                       locationInScreenCoordinates.y, 
-                                       0, 
-                                       hWnd, 
+                                       locationInScreenCoordinates.x,
+                                       locationInScreenCoordinates.y,
+                                       0,
+                                       hWnd,
                                        NULL);
                 if (selectedCommandId != 0) {
                     CHECK_FAILURE(args->put_SelectedCommandId(selectedCommandId));
@@ -288,15 +288,15 @@ void ContextMenu::AddMenuItems(
                 {
                     AddMenuItems(newMenu, submenuItems);
                     CHECK_BOOL(AppendMenu(hPopupMenu,
-                                          MF_POPUP, 
-                                          (UINT_PTR)newMenu, 
+                                          MF_POPUP,
+                                          (UINT_PTR)newMenu,
                                           labelString.c_str()));
                 }
                 else
                 {
-                    CHECK_BOOL(AppendMenu(hPopupMenu, 
-                                          MF_POPUP | MF_GRAYED, 
-                                          (UINT_PTR)newMenu, 
+                    CHECK_BOOL(AppendMenu(hPopupMenu,
+                                          MF_POPUP | MF_GRAYED,
+                                          (UINT_PTR)newMenu,
                                           labelString.c_str()));
                 }
             }
@@ -308,16 +308,16 @@ void ContextMenu::AddMenuItems(
                 {
                     if (isChecked)
                     {
-                        CHECK_BOOL(AppendMenu(hPopupMenu, 
-                                              MF_CHECKED | MF_STRING, 
-                                              commandId, 
+                        CHECK_BOOL(AppendMenu(hPopupMenu,
+                                              MF_CHECKED | MF_STRING,
+                                              commandId,
                                               labelString.c_str()));
                     }
                     else
                     {
-                        CHECK_BOOL(AppendMenu(hPopupMenu, 
+                        CHECK_BOOL(AppendMenu(hPopupMenu,
                                               MF_BYPOSITION | MF_STRING,
-                                              commandId, 
+                                              commandId,
                                               labelString.c_str()));
                     }
                 }
@@ -325,16 +325,16 @@ void ContextMenu::AddMenuItems(
                 {
                     if (isChecked)
                     {
-                        CHECK_BOOL(AppendMenu(hPopupMenu, 
-                                              MF_CHECKED | MF_GRAYED | MF_STRING, 
-                                              commandId, 
+                        CHECK_BOOL(AppendMenu(hPopupMenu,
+                                              MF_CHECKED | MF_GRAYED | MF_STRING,
+                                              commandId,
                                               labelString.c_str()));
                     }
                     else
                     {
-                        CHECK_BOOL(AppendMenu(hPopupMenu, 
-                                              MF_GRAYED | MF_STRING, 
-                                              commandId, 
+                        CHECK_BOOL(AppendMenu(hPopupMenu,
+                                              MF_GRAYED | MF_STRING,
+                                              commandId,
                                               labelString.c_str()));
                     }
                 }
@@ -344,15 +344,15 @@ void ContextMenu::AddMenuItems(
                 if (isEnabled)
                 {
                     CHECK_BOOL(AppendMenu(hPopupMenu,
-                                          MF_BYPOSITION | MF_STRING, 
-                                          commandId, 
+                                          MF_BYPOSITION | MF_STRING,
+                                          commandId,
                                           labelString.c_str()));
                 }
                 else
                 {
-                    CHECK_BOOL(AppendMenu(hPopupMenu, 
-                                          MF_GRAYED | MF_STRING, 
-                                          commandId, 
+                    CHECK_BOOL(AppendMenu(hPopupMenu,
+                                          MF_GRAYED | MF_STRING,
+                                          commandId,
                                           labelString.c_str()));
                 }
             }
@@ -435,11 +435,11 @@ The following example adds a **Display Page Uri** command to the WebView2 contex
 ##### [C#](#tab/csharp)
 
 ```csharp
-webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
+webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
                                     CoreWebView2ContextMenuRequestedEventArgs args)
 {
     // add new item to end of collection
-    CoreWebView2ContextMenuItem newItem = 
+    CoreWebView2ContextMenuItem newItem =
                         webView.CoreWebView2.Environment.CreateContextMenuItem(
         "Display Page Uri", null, CoreWebView2ContextMenuItemKind.Command);
         newItem.CustomItemSelected += delegate (object send, Object ex)
@@ -452,7 +452,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
         };
     menuList.Insert(menuList.Count, newItem);
 };
-``` 
+```
 
 
 ##### [C++](#tab/cpp)
@@ -475,8 +475,8 @@ webview2_4->add_ContextMenuRequested(
                 IID_PPV_ARGS(&webviewEnvironment)));
             wil::com_ptr<ICoreWebView2ContextMenuItem> newMenuItem;
             CHECK_FAILURE(webviewEnvironment->CreateContextMenuItem(
-                    L"Display page Uri", 
-                    nullptr, 
+                    L"Display page Uri",
+                    nullptr,
                     COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND, &newMenuItem));
             newMenuItem->add_CustomItemSelected(
                         Callback<ICoreWebView2CustomItemSelectedEventHandler>(
@@ -565,7 +565,7 @@ The following example removes the **Save image as** command from the WebView2 co
 ##### [C#](#tab/csharp)
 
 ```csharp
-webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
+webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
                                     CoreWebView2ContextMenuRequestedEventArgs args)
 {
     IList<CoreWebView2ContextMenuItem> menuList = args.MenuItems;
@@ -582,7 +582,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
         }
     }
 };
-``` 
+```
 
 
 ##### [C++](#tab/cpp)
@@ -607,7 +607,7 @@ webview2_4->add_ContextMenuRequested(
             if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE)
             {
                 wil::com_ptr<ICoreWebView2ContextMenuItem> current;
-                for(UINT32 i = 0; i < itemsCount; i++) 
+                for(UINT32 i = 0; i < itemsCount; i++)
                 {
                     CHECK_FAILURE(items->GetValueAtIndex(i, &current));
                     wil::unique_cotaskmem_string name;
@@ -644,7 +644,7 @@ The WebView2 control raises this event to indicate that the user requested openi
 
 The WebView2 control only raises the `ContextMenuRequested` event if the current webpage allows the context menu to appear; that is, if the `AreDefaultContextMenusEnabled` property is `true`.
 
-The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs) contains the following information: 
+The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs) contains the following information:
 
 * An ordered list of `ContextMenuItem` objects to populate the custom context menu.  The ordered list includes the following:
    * The internal name of the menu item.
@@ -842,7 +842,7 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
    * [put_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#put_ischecked)
    * [put_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#put_isenabled)
    * [remove_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#remove_customitemselected)
-   
+  
 * **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)**
    * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#get_count)
    * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#getvalueatindex)
@@ -876,7 +876,7 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 * **[ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)**
    * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
    * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
-   
+  
 * [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`

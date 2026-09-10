@@ -36,7 +36,7 @@ This demo is in the [webmaxru / bpm-counter](https://github.com/webmaxru/bpm-cou
 BPM Techno uses the following features:
 
 | Feature | Description | Documentation |
-|:--- |:--- |:--- |
+|---|---|---|
 | Shortcuts | BPM Techno defines a shortcut that lets users upload an audio file in the app. | [Define app shortcuts (long-press or right-click menus)](../how-to/shortcuts.md) |
 | File Handling | BPM Techno natively handles `*.mp3` files. | [Handle files in a PWA](../how-to/handle-files.md) |
 | Share Target | Other apps can share audio files with BPM Techno, through the operating system sharing dialog. | [Receiving shared content](../how-to/share.md#receiving-shared-content) |
@@ -58,7 +58,7 @@ This demo is in the [pwa-builder / web-whiteboard](https://github.com/pwa-builde
 Webboard uses the following features:
 
 | Feature | Description | Documentation |
-|:--- |:--- |:--- |
+|---|---|---|
 | Web Share | Drawings can be shared with other apps through the operating system sharing dialog. | [Sharing content](../how-to/share.md#sharing-content) |
 
 

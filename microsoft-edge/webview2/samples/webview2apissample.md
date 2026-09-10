@@ -74,7 +74,7 @@ This sample was created with Visual Studio 2019, as a Visual Studio 2019 project
 <!-- ---------- -->
 ###### Visual Studio 2017
 
-If you want to open this sample by using Visual Studio 2017: 
+If you want to open this sample by using Visual Studio 2017:
 
 1. Open the solution in Visual Studio 2017.
 
@@ -284,7 +284,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
-1. Select **Debug** > **Start Debugging** (**F5**).  
+1. Select **Debug** > **Start Debugging** (**F5**). 
 
    The **WebView2APISample** app window opens:
 
@@ -346,7 +346,7 @@ Assuming you updated the Prerelease version of the WebView2 SDK, build and run t
 
 1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
-1. Select **Debug** > **Start Debugging** (**F5**).  
+1. Select **Debug** > **Start Debugging** (**F5**). 
 
    The **WebView2APISample** app window opens:
 
@@ -702,7 +702,7 @@ The following steps show how the WebView can modify the Win32 Host App by changi
    {
       wil::unique_cotaskmem_string uri;
       CHECK_FAILURE(args->get_Source(&uri));
-   
+  
       // Always validate that the origin of the message is what you expect.
       if (uri.get() != m_sampleUri)
       {
@@ -711,7 +711,7 @@ The following steps show how the WebView can modify the Win32 Host App by changi
       wil::unique_cotaskmem_string messageRaw;
       CHECK_FAILURE(args->TryGetWebMessageAsString(&messageRaw));
       std::wstring message = messageRaw.get();
-   
+  
       if (message.compare(0, 13, L"SetTitleText ") == 0)
       {
          m_appWindow->SetTitleText(message.substr(13).c_str());

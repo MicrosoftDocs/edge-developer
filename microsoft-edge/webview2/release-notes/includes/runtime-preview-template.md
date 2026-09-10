@@ -9,7 +9,7 @@ ms.subservice: webview
 ms.date: 01/01/2026
 ---
 # Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
-<!-- todo: when this runtime gets released as a stable runtime, remove "preview" from title, update version number, update date, update lead-in sentence; same format as regular sibling .md -->
+<!-- todo: when this runtime gets released as a stable runtime, remove "preview" from title, update version number, update date, update lead-in sentence; per /release-notes/includes/runtime-template.md -->
 
 Release notes for Microsoft Edge WebView2 Preview Runtime, release date: Mmm. dd, yyyy.
 
@@ -20,13 +20,13 @@ This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SD
 <!-- ====================================================================== -->
 #### Bug fixes
 
-* Fixed behavior.  ([Issue #]())
+* Fixed behavior.  ([Issue #] ())
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)](../sdk/n-n-nnnn-prerelease.md)
+* [SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (../sdk/n-n-nnnn-prerelease.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](./index.md)
    * [Release notes for WebView2 SDKs](../sdk/index.md)

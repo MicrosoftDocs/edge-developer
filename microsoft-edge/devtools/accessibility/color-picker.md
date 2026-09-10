@@ -47,7 +47,7 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
    ![The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97](./color-picker-images/accessibility-elements-styles-paragraph-highlight-color-picker.png)
 
    The **Contrast ratio** section shows a score for the contrast ratio between the text and the background and an icon that indicates whether the contrast ratio meets recommendations:
-   
+
    * A red crossed-out circle means that the element doesn't meet the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).
    * One check mark means that the element meets the minimum recommendation.
    * Two check marks means that the element meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
