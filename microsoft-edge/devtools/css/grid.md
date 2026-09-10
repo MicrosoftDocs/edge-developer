@@ -224,7 +224,7 @@ To show line names in the grid overlay:
 
 See also:
 * [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) at MDN.
-   
+
 
 <!-- ------------------------------ -->
 #### Show track sizes
@@ -245,7 +245,7 @@ To show track sizes in the grid overlay:
 Each line label shows the `authored size` (if defined in the CSS) and the `computed size`:
 
 | Size | Details |
-|:--- |:--- |
+|---|---|
 | `authored size` | The size defined in the CSS stylesheet.  Omitted from the label, if not defined. |
 | `computed size` | The actual size on screen. |
 
@@ -270,7 +270,7 @@ In the demo, the column sizes are defined as follows, in the CSS property `grid-
 The following track-size line labels are displayed on the grid columns, for the demo's element `<div class="snack-box">`:
 
 | Track size | Authored size | Computed size |
-|:--- |:--- |:--- |
+|---|---|---|
 | **1fr** &#x2022; **96.66px** | 1fr | 96.66px |
 | **2fr** &#x2022; **193.34px** | 2fr | 193.34px |
 
@@ -283,7 +283,7 @@ The line label on each grid column displays the `authored size` in addition to t
 The following track-size line labels are displayed on the grid rows, for the demo's element `<div class="snack-box">`:
 
 | Track size | Authored size | Computed size |
-|:--- |:--- |:--- |
+|---|---|---|
 | **80px** | n/a | 80px |
 | **80px** | n/a | 80px |
 

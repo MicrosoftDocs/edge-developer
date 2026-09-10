@@ -16,8 +16,9 @@
 # bottom leaf nodes
 # =============================================================================
 # top leaf nodes
-- name: Microsoft Edge Developer documentation
+- name: Microsoft Edge Developer documentation  # docset landing page
   href: developer/index.yml
+  displayName: landing
   items:
     - name: Develop for the web with Microsoft Edge
       href: ./develop-web-microsoft-edge.md
@@ -33,6 +34,11 @@
           # maint:
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+
+        - name: Microsoft Edge 153
+          href: ./web-platform/release-notes/153.md
+          displayName: Microsoft Edge 153 web platform release notes (Sep. 2026)  # page title
+
         - name: Microsoft Edge 152
           href: ./web-platform/release-notes/152.md
           displayName: Microsoft Edge 152 web platform release notes (Aug. 2026)  # page title
@@ -69,12 +75,13 @@
           href: ./web-platform/release-notes/144.md
           displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
 
-        - name: Microsoft Edge 143
-          href: ./web-platform/release-notes/143.md
-          displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 143
+              href: ./web-platform/release-notes/143.md
+              displayName: Microsoft Edge 143 web platform release notes (Dec. 2025)  # page title
+
             - name: Microsoft Edge 142
               href: ./web-platform/release-notes/142.md
               displayName: Microsoft Edge 142 web platform release notes (Oct. 2025)  # page title
@@ -162,12 +169,14 @@
               href: ./web-platform/devtools-mcp-server.md
 # /AI for the web
 # =============================================================================
+# Microsoft Edge DevTools
 # -----------------------------------------------------------------------------
     - name: Microsoft Edge DevTools
       items:
 # -----------------------------------------------------------------------------
-        - name: Microsoft Edge DevTools documentation
-          href: ./devtools/landing/index.yml  # landing page
+        - name: Microsoft Edge DevTools documentation  # landing page
+          href: ./devtools/landing/index.yml
+          displayName: landing
 # -----------------------------------------------------------------------------
         - name: Overview of DevTools
           href: ./devtools/overview.md
@@ -182,6 +191,10 @@
               # maint:
               # toc.yml - add new what's new page, move a what's new page to archive
               # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page
+            - name: Microsoft Edge 152
+              href: ./devtools/whats-new/152.md
+              displayName: What's new in DevTools (Microsoft Edge 152)  # page title
+
             - name: Microsoft Edge 151
               href: ./devtools/whats-new/151.md
               displayName: What's new in DevTools (Microsoft Edge 151)  # page title
@@ -217,14 +230,14 @@
             - name: Microsoft Edge 143
               href: ./devtools/whats-new/143.md
               displayName: What's new in DevTools (Microsoft Edge 143)  # page title
-
-            - name: Microsoft Edge 142
-              href: ./devtools/whats-new/2025/10/devtools-142.md
-              displayName: What's new in DevTools (Microsoft Edge 142)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 142
+                  href: ./devtools/whats-new/2025/10/devtools-142.md
+                  displayName: What's new in DevTools (Microsoft Edge 142)  # page title
+
                 - name: Microsoft Edge 141
                   href: ./devtools/whats-new/2025/10/devtools-141.md
                   displayName: What's new in DevTools (Microsoft Edge 141)  # page title
@@ -477,7 +490,7 @@
           items:
             - name: Experimental features in Microsoft Edge DevTools
               href: ./devtools/experimental-features/index.md
-              displayName: Experimental features, settings
+              displayName: settings
 
             - name: Share a memory trace with more data
               href: ./devtools/experimental-features/share-memory-traces.md
@@ -487,20 +500,19 @@
           items:
             - name: Sample code for DevTools
               href: ./devtools/samples/index.md
-              displayName: sample code, demo
+              displayName: demo
 # TOOLS =======================================================================
         - name: Tools
           items:
             - name: About the list of tools
               href: ./devtools/about-tools.md
 # =============================================================================
-# Default tools 
+# Default tools
 # -----------------------------------------------------------------------------
             - name: Inspect tool
               items:
                 - name: Analyze pages using the Inspect tool
                   href: ./devtools/css/inspect.md
-                  displayName: Inspect tool
 # -----------------------------------------------------------------------------
             - name: Device Emulation
               items:
@@ -520,13 +532,11 @@
               items:
                 - name: Welcome tool
                   href: ./devtools/welcome/welcome-tool.md
-                  displayName: Welcome tool
 # -----------------------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
                   href: ./devtools/elements-tool/elements-tool.md
-                  displayName: Elements tool
 
                 - name: DOM
                   items:
@@ -568,7 +578,6 @@
 
                 - name: Log messages in the Console tool
                   href: ./devtools/console/console-log.md
-                  displayName: Console tool
 
                 - name: Run JavaScript in the Console
                   href: ./devtools/console/console-javascript.md
@@ -576,15 +585,15 @@
 
                 - name: Explain Console errors and warnings using Copilot in Edge
                   href: ./devtools/console/copilot-explain-console.md
-                  displayName: Console tool, Copilot in Edge, Copilot, Explain error
+                  displayName: Console tool
 
                 - name: Console object API Reference
                   href: ./devtools/console/api.md
-                  displayName: Console tool, API Reference
+                  displayName: Console tool
 
                 - name: Console tool utility functions and selectors
                   href: ./devtools/console/utilities.md
-                  displayName: Console tool, API Reference, DOM selectors
+                  displayName: API Reference, DOM selectors
 
                 - name: Monitor changes in JavaScript using Live Expressions
                   href: ./devtools/console/live-expressions.md
@@ -606,7 +615,7 @@
               items:
                 - name: Sources tool overview
                   href: ./devtools/sources/index.md
-                  displayName: Quick source tool, Sources tool  # Quick source tool is covered in section "Displaying source files when using a different tool"
+                  displayName: Quick source tool  # Quick source tool is covered in section "Displaying source files when using a different tool"
 
                 - name: Get started debugging JavaScript
                   href: ./devtools/javascript/index.md
@@ -680,7 +689,7 @@
 # -----------------------------------------------------------------------------
             - name: Performance tool  # = upstream TOC bucket "Performance"
               items:
-                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview 
+                - name: "Performance tool: Analyze your website's performance"  # = Performance > Overview
                   href: ./devtools/performance/overview.md
                   displayName: Performance tool
 
@@ -735,7 +744,7 @@
 
                 - name: Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)
                   href: ./devtools/memory-problems/heap-snapshots.md
-                  displayName: Memory tool 
+                  displayName: Memory tool
 
                 - name: Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)
                   href: ./devtools/memory-problems/allocation-profiler.md
@@ -757,7 +766,6 @@
               items:
                 - name: Application tool, to manage storage
                   href: ./devtools/storage/application-tool.md
-                  displayName: Application tool
 
                 - name: View, edit, and delete cookies
                   href: ./devtools/storage/cookies.md
@@ -808,7 +816,7 @@
                   items:
                     - name: Navigate webpage layers, z-index, and DOM using the 3D View tool
                       href: ./devtools/3d-view/index.md
-                      displayName: 3D View tool, composited layers
+                      displayName: composited layers
 # -----------------------------------------------------------------------------
                 - name: Animations tool
                   items:
@@ -820,13 +828,11 @@
                   items:
                     - name: Track changes to files using the Changes tool
                       href: ./devtools/changes/changes-tool.md
-                      displayName: Changes tool
 # -----------------------------------------------------------------------------
                 - name: Coverage tool
                   items:
                     - name: Find unused JavaScript and CSS code with the Coverage tool
                       href: ./devtools/coverage/index.md
-                      displayName: Coverage tool
 # -----------------------------------------------------------------------------
                 - name: Crash analyzer tool
                   items:
@@ -837,25 +843,21 @@
                   items:
                     - name: Optimize CSS styles with the CSS overview tool
                       href: ./devtools/css/css-overview-tool.md
-                      displayName: CSS overview tool
 # -----------------------------------------------------------------------------
                 - name: Developer resources tool
                   items:
                     - name: Developer resources tool
                       href: ./devtools/developer-resources/developer-resources.md
-                      displayName: Developer resources tool
 # -----------------------------------------------------------------------------
                 - name: Issues tool
                   items:
                     - name: Find and fix problems using the Issues tool
                       href: ./devtools/issues/index.md
-                      displayName: Issues tool
 # -----------------------------------------------------------------------------
                 - name: Lighthouse tool  # jump page; main article is in Accessibility
                   items:
                     - name: Lighthouse tool
                       href: ./devtools/lighthouse/lighthouse-tool.md
-                      displayName: Lighthouse tool
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
@@ -867,13 +869,11 @@
                   items:
                     - name: Inspect a JavaScript ArrayBuffer with the Memory inspector tool  # real content pending
                       href: ./devtools/memory-inspector/memory-inspector-tool.md
-                      displayName: Memory inspector tool
 # -----------------------------------------------------------------------------
                 - name: Network conditions tool
                   items:
                     - name: Network conditions tool  # starter page w/ png and links
                       href: ./devtools/network-conditions/network-conditions-tool.md
-                      displayName: Network conditions tool
 
                     - name: Override the user agent string
                       href: ./devtools/device-mode/override-user-agent.md
@@ -894,13 +894,11 @@
                   items:
                     - name: Measure runtime performance of a page using the Performance monitor tool
                       href: ./devtools/performance-monitor/performance-monitor-tool.md
-                      displayName: Performance monitor tool
 # -----------------------------------------------------------------------------
                 - name: Quick source tool
                   items:
                     - name: Display or edit source files using the Quick source tool
                       href: ./devtools/quick-source/quick-source-tool.md
-                      displayName: Quick source tool  # also indexed in "Sources tool overview"
 # -----------------------------------------------------------------------------
                 - name: Recorder tool
                   items:
@@ -913,7 +911,6 @@
                   items:
                     - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
                       href: ./devtools/rendering-tools/rendering-tool.md
-                      displayName: Rendering tool
 
                     - name: Emulate dark or light schemes in the rendered page
                       href: ./devtools/accessibility/preferred-color-scheme-simulation.md
@@ -927,31 +924,27 @@
                   items:
                     - name: Find source files for a page using the Search tool
                       href: ./devtools/search/search-tool.md
-                      displayName: Search tool
 # -----------------------------------------------------------------------------
                 - name: Security tool
                   items:
                     - name: Understand security issues using the Security tool
                       href: ./devtools/security/index.md
-                      displayName: Security tool
 # -----------------------------------------------------------------------------
                 - name: Sensors tool
                   items:
                     - name: Emulate device sensors
                       href: ./devtools/sensors/index.md
-                      displayName: Device Emulation
+                      displayName: device emulation, device emulator, geolocation, device orientation
 # -----------------------------------------------------------------------------
                 - name: Source Maps Monitor tool
                   items:
                     - name: Source Maps Monitor tool
                       href: ./devtools/source-maps-monitor/source-maps-monitor-tool.md
-                      displayName: Source maps monitor tool
 # -----------------------------------------------------------------------------
                 - name: WebAudio tool
                   items:
                     - name: WebAudio tool
                       href: ./devtools/webaudio/webaudio-tool.md
-                      displayName: WebAudio tool
 # -----------------------------------------------------------------------------
                 - name: WebAuthn tool
                   items:
@@ -965,11 +958,9 @@
           items:
             - name: Run commands in the Command Menu
               href: ./devtools/command-menu/index.md
-              displayName: Command Menu
 # -----------------------------------------------------------------------------
             - name: Keyboard shortcuts
               href: ./devtools/shortcuts/index.md
-              displayName: Keyboard shortcuts
 # -----------------------------------------------------------------------------
         - name: Settings and customization UI
           items:
@@ -983,19 +974,18 @@
 
             - name: Change DevTools language settings
               href: ./devtools/customize/localization.md
-              displayName: Settings, Preferences
+              displayName: preferences
 
             - name: Customize keyboard shortcuts
               href: ./devtools/customize/shortcuts.md
-              displayName: Settings, Shortcuts
+              displayName: settings
 
             - name: Add custom UI to DevTools using extensions
               href: ./devtools/customize/extensions.md
-              displayName: Extensions
 
-            - name: Throttling
+            - name: Throttling the CPU or network
               href: ./devtools/settings/throttling.md
-              displayName: Settings
+              displayName: settings
 # -----------------------------------------------------------------------------
         - name: Remote debugging
           items:
@@ -1028,7 +1018,6 @@
 # Inspect tool (distinct from Tools > Inspect tool bucket)
             - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
               href: ./devtools/accessibility/test-inspect-tool.md
-              displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast
 # -------------------------------------
 # Lighthouse tool (distinct from Tools > Lighthouse tool bucket)
             - name: Test accessibility using Lighthouse  # was part of "Accessibility features reference"
@@ -1054,15 +1043,12 @@
               items:
                 - name: Check for keyboard support by using the Tab and Enter keys
                   href: ./devtools/accessibility/test-tab-enter-keys.md
-                  displayName: keyboard support
 
                 - name: Analyze the lack of indication of keyboard focus
                   href: ./devtools/accessibility/test-analyze-no-focus-indicator.md
-                  displayName: keyboard focus
 
                 - name: Analyze keyboard support on forms
                   href: ./devtools/accessibility/test-analyze-no-keyboard-support.md
-                  displayName: keyboard support
 
                 - name: Test keyboard support using the Source Order Viewer
                   href: ./devtools/accessibility/test-tab-key-source-order-viewer.md
@@ -1072,11 +1058,10 @@
               items:
                 - name: Test text-color contrast using the Color Picker  # was part of "Accessibility features reference"
                   href: ./devtools/accessibility/color-picker.md
-                  displayName: Elements tool, Styles tab, Color Picker
+                  displayName: Elements tool, Styles tab
 
                 - name: Check text-color contrast in the default state using the Inspect tool
                   href: ./devtools/accessibility/test-inspect-text-contrast.md
-                  displayName: Inspect tool
 
                 - name: Verify accessibility of all states of elements
                   href: ./devtools/accessibility/test-inspect-states.md
@@ -1090,11 +1075,11 @@
               items:
                 - name: Test accessibility using the Accessibility tab  # was part of "Accessibility features reference"
                   href: ./devtools/accessibility/accessibility-tab.md
-                  displayName: Elements tool, Accessibility tab, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
+                  displayName: Elements tool, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
 
                 - name: Check the Accessibility Tree for keyboard and screen reader support
                   href: ./devtools/accessibility/test-accessibility-tree.md
-                  displayName: Elements tool, Accessibility tab, screen readers
+                  displayName: Elements tool, Accessibility tab
 # -------------------------------------
 # Rendering tool (distinct from Tools > Rendering tool)
             - name: Vision deficiencies (Rendering tool)
@@ -1133,7 +1118,6 @@
 
         - name: Microsoft Edge DevTools Protocol
           href: ./devtools/protocol/index.md
-          displayName: DevTools Protocol
 
         - name: Contact the Microsoft Edge DevTools team
           href: ./devtools/contact.md
@@ -1149,7 +1133,7 @@
               items:
                 - name: Installing the DevTools extension for Visual Studio Code
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/install.md
-                  displayName: installing, setup
+                  displayName: setup
 
                 - name: Get started using the DevTools extension for Visual Studio Code
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/get-started.md
@@ -1180,7 +1164,7 @@
 
                 - name: Update .css files from within the Styles tab (CSS mirror editing)
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/css-mirror-editing-styles-tab.md
-                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing  # previous title
+                  displayName: Syncing live changes from the Styles tool by using CSS mirror editing  # old title
 
                 - name: Network tool integration
                   href: ./visual-studio-code/microsoft-edge-devtools-extension/network-tool-integration.md
@@ -1214,9 +1198,9 @@
 # Microsoft Edge extensions
     - name: Microsoft Edge extensions
       items:
-        - name: Microsoft Edge extensions documentation
+        - name: Microsoft Edge extensions documentation  # landing page
           href: ./extensions/landing/index.yml
-          displayName: add-ons, landing
+          displayName: add-ons, themes, landing
 
         - name: Overview of Microsoft Edge extensions
           href: ./extensions/index.md
@@ -1405,7 +1389,7 @@
 # Progressive Web Apps
     - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps (PWAs) documentation
+        - name: Progressive Web Apps (PWAs) documentation  # landing page
           href: ./progressive-web-apps/landing/index.yml
           displayName: landing
 
@@ -1502,7 +1486,7 @@
 # WebView2
     - name: WebView2
       items:
-        - name: WebView2 documentation
+        - name: WebView2 documentation  # landing page
           href: ./webview2/landing/index.yml
           displayName: landing
 
@@ -1523,7 +1507,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 152.0.4181.0 (Aug. 3, 2026)
+                - name: Preview Runtime 153.0.4234.6 (Aug. 28, 2026)
+                  href: ./webview2/release-notes/runtime/153.md
+
+                - name: Runtime 152.0.4191.53 (Aug. 28, 2026)
                   href: ./webview2/release-notes/runtime/152.md
 
                 - name: Runtime 151.0.4129.50 (Aug. 3, 2026)
@@ -1550,11 +1537,11 @@
                 - name: Runtime 144.0.3719.77 (Jan. 27, 2026)
                   href: ./webview2/release-notes/runtime/144.md
 
-                - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
-                  href: ./webview2/release-notes/runtime/143.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
+                      href: ./webview2/release-notes/runtime/143.md
+
                     - name: Runtime 142.0.3595.46 (Nov. 3, 2025)
                       href: ./webview2/release-notes/runtime/142.md
 
@@ -1761,6 +1748,9 @@
               items:
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
+
+                - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4191-47.md
 
                 - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4181-prerelease.md
@@ -2358,7 +2348,7 @@
                 - name: Distribute your app and the WebView2 Runtime
                   href: ./webview2/concepts/distribution.md
 
-                - name: Enterprise management of WebView2 Runtimes
+                - name: Enterprise management of WebView2
                   href: ./webview2/concepts/enterprise.md
                   displayName: Manage WebView2 applications  # old title
 
@@ -2368,7 +2358,7 @@
 
             - name: Publish a UWP WebView2 app to the Microsoft Store
               href: ./webview2/how-to/publish-uwp-app-store.md
-              displayName: Partner Center, Microsoft Store
+              displayName: Partner Center
 # -----------------------------------------------------------------------------
         - name: Best practices
           items:
@@ -2601,7 +2591,7 @@
 
         - name: View a JSON file or server response with formatting
           href: ./web-platform/json-viewer.md
-          displayName: JSON viewer, view JSON
+          displayName: JSON viewer
 
         - name: Cross-browser API samples
           href: ./web-platform/samples.md
@@ -2614,7 +2604,7 @@
           href: ./visual-studio-code/ide-integration.md
 
       # - name: Use DevTools as an IDE
-      #   href: 
+      #   href:
 
         - name: DevTools extension for Visual Studio Code # aux jump page
           href: ./visual-studio-code/microsoft-edge-devtools-extension/devtools-extension.md

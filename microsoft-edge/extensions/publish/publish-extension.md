@@ -110,7 +110,7 @@ The following fields in the manifest file are automatically included in your ext
 *  The `Name` field, which populates the **Extension name** on the **Details for \<language\>** page.
 
 *  The `Description` field, which populates the **Description** on the **Details for \<language\>** page.
-   
+  
    Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for the extension.
 
    * If you include a `short description` in the extension manifest file, that short description is displayed in your store listing.
@@ -241,7 +241,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
    | **Website** | Optional | A webpage that provides additional information about the extension.  The website URL must point to a webpage on your own website, not the web listing for the extension at the Microsoft Edge Add-ons website.  The **Website** URL helps users learn more about the extension, its features, and any other relevant information. |
    | **Support contact detail** | Optional | The URL to your support webpage, or the email address to contact your support team. |
    | **Mature content** | Optional | Checkbox to specify whether the extension includes mature content.  This extension rating helps determine the appropriate age group of the target audience of the extension.  To help determine whether the extension has _mature content_, see [Developer policies for the Microsoft Edge Add-ons website](/legal/microsoft-edge/extensions/developer-policies). |
-   
+  
    The properties (your developer/organization name, **Website** URL, and **Support contact detail**) that you submitted during registration are displayed to users at the Microsoft Edge Add-ons website.
 
    You have now filled in the **Properties** page for the extension at Partner Center.
@@ -512,7 +512,7 @@ You can generate descriptions up to 10 times per hour.  If you exceed this limit
 ![The Provide inputs text box with a limit message](./publish-extension-images/generation-limit.png)
 
 If generation fails, an error message is displayed, such as "Something went wrong while generating your description.  Try again":
- 
+
 ![The Provide inputs text box with an error message](./publish-extension-images/generation-error.png)
 
 
@@ -798,7 +798,7 @@ Developer Agreement & Legal:
 * [Developer policies for the Microsoft Edge Add-ons website](/legal/microsoft-edge/extensions/developer-policies)
 
 Support.microsoft.com:
-* [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) 
+* [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4)
 
 Support.google.com:
 * [YouTube advertising formats](https://support.google.com/youtube/answer/2467968?ref_topic=7072227)

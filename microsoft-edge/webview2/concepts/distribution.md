@@ -47,7 +47,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 <!-- ------------------------------ -->
 #### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated; modify? -->
 
-See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
+See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 
 <!-- ------------------------------ -->
@@ -223,7 +223,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 New versions of the Evergreen WebView2 Runtime are automatically downloaded to the client.  The client uses the new version of the WebView2 Runtime when your WebView2 app is restarted.  However, if your app runs continuously, your app will continue to use the previous version of the WebView2 Runtime.  This has security implications, because the previous version of the WebView2 Runtime might have security vulnerabilities that are fixed in the new version.  You should consider whether it is important for your app to adopt the latest version of the WebView2 Runtime as soon as possible, based on your app's threat model.  For example, if your WebView2 app accesses third-party content, that content should be considered untrusted, so your app would need to use the latest version of the WebView2 Runtime.
 
-To use the new version of the WebView2 Runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the WebView2 Runtime.  To accomplish this, you can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits. 
+To use the new version of the WebView2 Runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the WebView2 Runtime.  To accomplish this, you can have an event handler for the `NewBrowserVersionAvailable` event, to have your app automatically notify the user to restart the app.  If your app handles restarting the app, consider saving the user state before the WebView2 app exits.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -298,7 +298,7 @@ To use the Fixed Version distribution mode:
       * Alternatively, use `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) to indicate the path to the Fixed Version binaries.
 
    * For WinUI, make sure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.  One way to do this is by adding the following C# code to your app:
-        
+       
       ```csharp
       StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
       String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\(version number)");
@@ -306,7 +306,7 @@ To use the Fixed Version distribution mode:
       Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
       Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
       ```
-   
+  
 1. Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
 
    * For WinUI, this might include opening the project file (`.csproj`) in a code editor, and then add the following code within the project tags:
@@ -390,7 +390,7 @@ Example managed app folder structure:
 * [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
-* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.<!-- toc bucket 6 leaf 4 -->
+* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.<!-- toc bucket 6 leaf 4 -->
 * [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
 * [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->

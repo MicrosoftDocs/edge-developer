@@ -10,7 +10,7 @@ ms.date: 07/01/2025
 ---
 # What's new in DevTools (Microsoft Edge 138)
 
-These are the latest features in the Stable release of Microsoft Edge DevTools.  Microsoft Edge 138 includes the following updates from the Chromium project:
+These are the latest DevTools features in the Stable release of Microsoft Edge.  Microsoft Edge 138 includes the following updates from the Chromium project:
 
 * [Performance panel improvements](https://developer.chrome.com/blog/new-in-devtools-138#perf)
    * [Server response and redirection times in 'Document request latency' insight](https://developer.chrome.com/blog/new-in-devtools-138#doc-req-latency-times)

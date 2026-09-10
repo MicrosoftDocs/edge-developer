@@ -37,7 +37,7 @@ To generate a PAT in Azure DevOps:
 1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
 
 1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
-    
+
    ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command](./publish-source-maps-to-azure-images/ado-pat-settings.png)
 
    The **Personal Access Tokens** page appears:

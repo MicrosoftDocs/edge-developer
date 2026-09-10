@@ -52,20 +52,20 @@ To create an `HTML file` to find your geolocation, complete following the action
       <button id="display">Display Location</button>
       <div id="message"></div>
    </body>
-   
+  
    <script>
       const btn = document.getElementById('display');
       // Find the user location.
       btn.addEventListener('click', function () {
          navigator.geolocation.getCurrentPosition(onSuccess, onError);
       });
-   
+  
       // Update message to display the latitude and longitude coordinates.
       function onSuccess(position) {
          const {latitude, longitude} = position.coords;
          message.textContent = `Your location: (${latitude},${longitude})`;
       }
-   
+  
       function onError() {
          message.textContent = `Operation Failed`;
       }

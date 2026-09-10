@@ -117,7 +117,7 @@ To use Live Expressions to avoid excessive Console log messages:
 1. Press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around.
-   
+
    The values of the `x` and `y` variables are updated, but no log messages are displayed.
 
 1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](./live-expressions-images/live-expression-icon.png)) icon next to the **Filter** text box, and then enter the JavaScript expression `x`.
