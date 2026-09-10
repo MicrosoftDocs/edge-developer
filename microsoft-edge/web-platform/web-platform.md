@@ -109,6 +109,6 @@ See [View a JSON file or server response with formatting](./json-viewer.md).
 ## See also
 
 * [Web technology for developers](https://developer.mozilla.org/docs/Web) at MDN.
-<!-- 
+<!--
 * [Web Platform](https://developer.chrome.com/docs/web-platform) - Chrome docs.
 -->

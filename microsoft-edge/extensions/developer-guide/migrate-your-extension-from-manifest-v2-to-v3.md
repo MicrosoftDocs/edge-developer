@@ -74,7 +74,7 @@ Enterprises can continue to use the blocking behavior of the Web Request API for
 <!-- ====================================================================== -->
 ## Background service workers
 
-To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->.  
+To migrate your extensions from background pages to service workers, see [Migrate to a service worker](https://developer.chrome.com/docs/extensions/develop/migrate/to-service-workers)<!-- chrome link ok -->. 
 
 
 <!-- ====================================================================== -->

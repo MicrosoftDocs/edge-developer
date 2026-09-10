@@ -191,7 +191,7 @@ One way to view webpage resources grouped by file type is by using the **Frames*
 1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More Tools** (![The More Tools icon](./index-images/more-tools-icon-light-theme.png)) button.
 
    The **Application** tool opens and by default shows the **Manifest** pane first:
-   
+
    ![The Application tool](./index-images/application-mainfest.png)
 
 1. Scroll down to the **Frames** pane and then expand the folder that you're interested in:

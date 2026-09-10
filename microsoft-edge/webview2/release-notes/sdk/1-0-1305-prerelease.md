@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 06/11/2026
+ms.date: 07/04/2022
 ---
 # Prerelease SDK 1.0.1305-prerelease, for Runtime 105 (Jul. 4, 2022)
 
