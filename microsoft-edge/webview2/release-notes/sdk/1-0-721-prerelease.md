@@ -16,6 +16,15 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Dec. 8, 
 
 This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or later; see [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md).
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Features](#features)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [.NET](#net)
+      * [Features](#features-1)
+      * [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
@@ -27,7 +36,7 @@ This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 <!-- ------------------------------ -->
 #### Features
 
-* Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices for using group policies, see [Enterprise management of WebView2](../../concepts/enterprise.md).
+* Added [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [Enterprise management of WebView2](/deployedge/webview2-enterprise), in the Microsoft Edge Enterprise documentation.
 
 * > [!IMPORTANT]
    > **Breaking Change**: Deprecated the old registry location.
