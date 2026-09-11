@@ -63,11 +63,11 @@ The Prerelease SDK package is a superset of the Release SDK package.  A Prerelea
 
 Preview channels of Microsoft Edge provide the implementations of Experimental WebView2 APIs and of Stable APIs.  The Experimental APIs are subject to change based on feedback.  Avoid using a Prerelease SDK package to build production apps.
 
-For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 See also:
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)
-* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)
+* [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md)
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)
 
 
@@ -212,8 +212,8 @@ If your code determines that an API is unavailable in the client's installed Web
 * [WebView2 deployment samples](../samples/deployment-samples.md)<!-- link not in article --><!-- bucket 2 -->
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- bucket 6 -->
 * [Distribute your app and the WebView2 Runtime](./distribution.md)<!-- bucket 6 -->
-* [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- bucket 8 top -->
-* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
+* [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- bucket 8 top -->
+* [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- bucket 8 very bottom -->
 * [Phases of adding APIs](../release-notes/about.md#phases-of-adding-apis) in _About Release notes for the WebView2 SDK_.<!-- bucket 12 -->
 * [Release notes for WebView2](../release-notes/index.md)<!-- bucket 12 -->
