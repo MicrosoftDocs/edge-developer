@@ -188,15 +188,16 @@ See the [Shared WebView2 Cluster Environment](https://github.com/MicrosoftEdge/W
 <!-- win32-only -->
 * [ICoreWebView2ExperimentalCreateOrJoinClusterEnvironmentCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcreateorjoinclusterenvironmentcompletedhandler?view=webview2-1.0.4255-prerelease&preserve-view=true)
 
-<!-- 4 -->
-* [CreateOrJoinCoreWebView2ClusterEnvironment](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoincorewebview2clusterenvironment)
-* [GetCoreWebView2ClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4255-prerelease&preserve-view=true#getcorewebview2clusterenvironmentoptions)
-
 <!-- 3 -->
 * [COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS Enum](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4255-prerelease&preserve-view=true#corewebview2_cluster_environment_status)
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_NOT_SUPPORTED`
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_OPTIONS_MISMATCH`
    * `COREWEBVIEW2_CLUSTER_ENVIRONMENT_STATUS_SUCCEEDED`
+
+<!-- 4 -->
+* Global functions:
+   * [CreateOrJoinCoreWebView2ClusterEnvironment](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4255-prerelease&preserve-view=true#createorjoincorewebview2clusterenvironment)
+   * [GetCoreWebView2ClusterEnvironmentOptions](/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4255-prerelease&preserve-view=true#getcorewebview2clusterenvironmentoptions)
 
 ---
 
