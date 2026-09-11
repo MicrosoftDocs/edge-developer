@@ -1,14 +1,14 @@
 ---
-title: SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 3, 2026)
+title: SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)
 description: Release notes for Microsoft Edge WebView2 SDK 1.0.4255-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/03/2026
+ms.date: 09/11/2026
 ---
-# SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 3, 2026)
+# SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Sep. 3, 2026.
 
