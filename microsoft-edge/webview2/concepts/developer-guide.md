@@ -52,7 +52,7 @@ When using the Evergreen WebView2 Runtime, run forward-compatibility tests by us
 
 Because the Evergreen Runtime updates automatically, you should regularly run compatibility tests to ensure that your WebView2 app will continue to work as expected on the new Runtime version.  This can be done by testing your web content in the WebView2 control against the Microsoft Edge preview channels.
 
-Follow the guidance in [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+Follow the guidance in [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
 <!-- ------------------------------ -->
@@ -146,7 +146,7 @@ Follow the guidance in [Develop secure WebView2 apps](./security.md).
    * [The Fixed Version runtime distribution mode](./distribution.md#the-fixed-version-runtime-distribution-mode) in _Distribute your app and the WebView2 Runtime_.
    * [Handle Evergreen WebView2 Runtime updates](./distribution.md#handle-evergreen-webview2-runtime-updates) in _Distribute your app and the WebView2 Runtime_.
 * [Develop secure WebView2 apps](./security.md)<!-- bucket 7 -->
-* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
+* [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md)<!-- bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- bucket 8 very bottom -->
 * [Manage user data folders](./user-data-folder.md)<!-- bucket 11 -->
 
