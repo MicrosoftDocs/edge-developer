@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/30/2023
+ms.date: 09/16/2026
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool
 
@@ -64,6 +64,28 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 
    ![The 3D View tool, displayed in the Quick View panel](./index-images/tool-in-quick-view.png)
 
+
+<!-- ------------------------------ -->
+### Enable WebGPU for development on machines without a hardware GPU
+
+The following workaround is only for development on machines without a hardware GPU.  These flags aren't routine prerequisites for opening the **3D View** tool.  If the tool works on your machine, leave the flags at their default settings.
+
+> [!WARNING]
+> The `enable-unsafe-webgpu` flag enables best-effort WebGPU support on unsupported configurations and could expose security issues to websites.  Use it only for your own development.  The `ignore-gpu-blocklist` flag overrides the browser's built-in software rendering list, enabling GPU acceleration on unsupported system configurations.  These flags affect the browser, not just the **3D View** tool.
+
+To try this workaround:
+
+1. In Microsoft Edge, go to `edge://flags`.
+
+1. Search for `ignore-gpu-blocklist`, and then set the flag to **Enabled**.  You can also go directly to `edge://flags/#ignore-gpu-blocklist`.
+
+1. Search for `enable-unsafe-webgpu`, and then set the flag to **Enabled**.  You can also go directly to `edge://flags/#enable-unsafe-webgpu`.
+
+1. Save any work in your open tabs, and then restart Microsoft Edge to apply both changes.
+
+1. Return to the webpage you want to visualize, reopen DevTools, and then open the **3D View** tool again.
+
+When you're finished debugging, reset both flags to **Default** in `edge://flags`, and then restart Microsoft Edge again.
 
 <!-- ====================================================================== -->
 ## Zoom, pan, and rotate the 3D canvas
