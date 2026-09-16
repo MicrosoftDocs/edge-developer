@@ -68,7 +68,9 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 <!-- ------------------------------ -->
 ### Enable WebGPU for development on machines without a hardware GPU
 
-The following workaround is only for development on machines without a hardware GPU.  These flags aren't routine prerequisites for opening the **3D View** tool.  If the tool works on your machine, leave the flags at their default settings.
+The **3D View** tool relies on the WebGPU API to access the high-performance hardware GPU.  On machines without a hardware GPU, the workaround is to enable the following flags only in a development environment.
+
+These flags aren't routine prerequisites for opening the **3D View** tool.  If the tool works on your machine, leave the flags at their default settings.
 
 > [!WARNING]
 > The `enable-unsafe-webgpu` flag enables best-effort WebGPU support on unsupported configurations and could expose security issues to websites.  Use it only for your own development.  The `ignore-gpu-blocklist` flag overrides the browser's built-in software rendering list, enabling GPU acceleration on unsupported system configurations.  These flags affect the browser, not just the **3D View** tool.
