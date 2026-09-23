@@ -37,7 +37,7 @@
 
         - name: Microsoft Edge 155
           href: ./web-platform/release-notes/155.md
-          displayName: Microsoft Edge 155 web platform release notes (Oct. 2026)  # page title
+          displayName: Microsoft Edge 155 web platform release notes (Oct. 8, 2026)  # page title
 
         - name: Microsoft Edge 154
           href: ./web-platform/release-notes/154.md
