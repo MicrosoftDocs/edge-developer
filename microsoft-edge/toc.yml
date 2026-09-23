@@ -1,7 +1,7 @@
 # =============================================================================
 # TOC sections:
 # top leaf nodes
-# Release notes
+# Release notes [web platform]
 # Experimental APIs for Microsoft Edge
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
@@ -24,7 +24,7 @@
       href: ./develop-web-microsoft-edge.md
 # /top leaf nodes
 # =============================================================================
-# Release notes
+# Release notes [web platform]
     - name: Release notes
       items:
         - name: Release notes for Microsoft Edge web platform
@@ -34,6 +34,10 @@
           # maint:
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
+
+        - name: Microsoft Edge 155
+          href: ./web-platform/release-notes/155.md
+          displayName: Microsoft Edge 155 web platform release notes (Oct. 2026)  # page title
 
         - name: Microsoft Edge 154
           href: ./web-platform/release-notes/154.md
@@ -71,13 +75,13 @@
           href: ./web-platform/release-notes/146.md
           displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
 
-        - name: Microsoft Edge 145
-          href: ./web-platform/release-notes/145.md
-          displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 145
+              href: ./web-platform/release-notes/145.md
+              displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
+
             - name: Microsoft Edge 144
               href: ./web-platform/release-notes/144.md
               displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
