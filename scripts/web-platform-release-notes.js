@@ -286,16 +286,6 @@ async function main() {
 
   const eleventy = new Eleventy(".", "_site", {
     config: function (eleventyConfig) {
-      eleventyConfig.addShortcode("monthYear", function (releaseDate) {
-        const date = new Date(releaseDate);
-
-        const dtf = new Intl.DateTimeFormat("en-US", { month: "short" });
-        const shortMonth = dtf.format(date);
-        const shortMonthWithDot = shortMonth === "May" ? shortMonth : shortMonth + ".";
-
-        return `${shortMonthWithDot} ${date.getFullYear()}`;
-      });
-
       eleventyConfig.addShortcode("monthDayYear", longDate);
 
       return {
