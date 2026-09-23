@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 03/03/2025
+ms.date: 10/08/2026
 ---
 # Release notes for Microsoft Edge web platform
 
