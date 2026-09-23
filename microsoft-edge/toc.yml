@@ -195,6 +195,10 @@
               # maint:
               # toc.yml - add new what's new page, move a what's new page to archive
               # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page
+            - name: Microsoft Edge 153
+              href: ./devtools/whats-new/153.md
+              displayName: What's new in DevTools (Microsoft Edge 153)  # page title
+
             - name: Microsoft Edge 152
               href: ./devtools/whats-new/152.md
               displayName: What's new in DevTools (Microsoft Edge 152)  # page title
@@ -230,14 +234,14 @@
             - name: Microsoft Edge 144
               href: ./devtools/whats-new/144.md
               displayName: What's new in DevTools (Microsoft Edge 144)  # page title
-
-            - name: Microsoft Edge 143
-              href: ./devtools/whats-new/143.md
-              displayName: What's new in DevTools (Microsoft Edge 143)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 143
+                  href: ./devtools/whats-new/143.md
+                  displayName: What's new in DevTools (Microsoft Edge 143)  # page title
+
                 - name: Microsoft Edge 142
                   href: ./devtools/whats-new/2025/10/devtools-142.md
                   displayName: What's new in DevTools (Microsoft Edge 142)  # page title
