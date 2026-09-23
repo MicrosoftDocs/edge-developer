@@ -17,11 +17,11 @@ To stay up-to-date and get the latest web platform features, download a preview 
 toc.yml - add new relnotes page, move a relnotes page to archive
 /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page -->
 * [Microsoft Edge 155 web platform release notes (Oct. 8, 2026)](./155.md)
-* [Microsoft Edge 154 web platform release notes (Sep. 2026)](./154.md)
-* [Microsoft Edge 153 web platform release notes (Sep. 2026)](./153.md)
-* [Microsoft Edge 152 web platform release notes (Aug. 2026)](./152.md)
-* [Microsoft Edge 151 web platform release notes (Jul. 2026)](./151.md)
-* [Microsoft Edge 150 web platform release notes (Jul. 2026)](./150.md)
+* [Microsoft Edge 154 web platform release notes (Sep. 24, 2026)](./154.md)
+* [Microsoft Edge 153 web platform release notes (Sep. 10, 2026)](./153.md)
+* [Microsoft Edge 152 web platform release notes (Aug. 27, 2026)](./152.md)
+* [Microsoft Edge 151 web platform release notes (Jul. 30, 2026)](./151.md)
+* [Microsoft Edge 150 web platform release notes (Jul. 2, 2026)](./150.md)
 * [Microsoft Edge 149 web platform release notes (Jun. 2026)](./149.md)
 * [Microsoft Edge 148 web platform release notes (May 2026)](./148.md)
 * [Microsoft Edge 147 web platform release notes (Apr. 2026)](./147.md)
