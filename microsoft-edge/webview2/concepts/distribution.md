@@ -35,7 +35,7 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 * [The Fixed Version runtime distribution mode](#the-fixed-version-runtime-distribution-mode)
    * [Known issues for Fixed Version](#known-issues-for-fixed-version)
 * [Files to ship with the app](#files-to-ship-with-the-app)
-* [Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)](#servicing-the-webview2-runtime-through-windows-server-update-services-wsus)
+* [Servicing the WebView2 Runtime through Windows Server Update Services (WSUS](#servicing-the-webview2-runtime-through-windows-server-update-services-wsus)
 * [See also](#see-also)
 
 
@@ -236,6 +236,13 @@ To use the new version of the WebView2 Runtime, you need to either release all r
 #### Test your app for forward-compatibility
 
 In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
+
+Microsoft Edge preview channels (Beta, Dev, and Canary) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a Microsoft Edge preview channel, and update your app or [report issues](https://github.com/MicrosoftEdge/WebViewFeedback) if issues arise.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+
+To help you decide which channel is right, see [Overview of the Microsoft Edge channels](/deployedge/microsoft-edge-channels).  You can [Download Microsoft Edge Insider Channels](https://www.microsoft.com/edge/download/insider) on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
+
+See [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).  You can also use WebDriver to automate WebView2 testing, as described in [Automate, and test WebView2 with Microsoft Edge WebDriver](../how-to/webdriver.md).
 
 For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
