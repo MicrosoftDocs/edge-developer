@@ -20,10 +20,8 @@ When distributing your WebView2 app, make sure that the WebView2 Runtime is pres
 For introductory information, see [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md).
 
 **Detailed contents:**
-* [Introductory notes](#introductory-notes)
-   * [Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)](#servicing-the-webview2-runtime-through-windows-server-update-services-wsus)
-   * [Runtime or browser support during development or production](#runtime-or-browser-support-during-development-or-production)
-      * [Microsoft Edge Stable channel isn't supported for WebView2](#microsoft-edge-stable-channel-isnt-supported-for-webview2)
+* [Runtime or browser support during development or production](#runtime-or-browser-support-during-development-or-production)
+   * [Microsoft Edge Stable channel isn't supported for WebView2](#microsoft-edge-stable-channel-isnt-supported-for-webview2)
 * [The Evergreen Runtime distribution mode](#the-evergreen-runtime-distribution-mode)
    * [Windows 11 devices and Windows 10 devices (details)](#windows-11-devices-and-windows-10-devices-details)
    * [Deploying the Evergreen WebView2 Runtime](#deploying-the-evergreen-webview2-runtime)
@@ -37,39 +35,30 @@ For introductory information, see [Evergreen vs. fixed version of the WebView2 R
 * [The Fixed Version runtime distribution mode](#the-fixed-version-runtime-distribution-mode)
    * [Known issues for Fixed Version](#known-issues-for-fixed-version)
 * [Files to ship with the app](#files-to-ship-with-the-app)
+* [Servicing the WebView2 Runtime through Windows Server Update Services (WSUS](#servicing-the-webview2-runtime-through-windows-server-update-services-wsus)
 * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
-## Introductory notes
-
-
-<!-- ------------------------------ -->
-#### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated; modify? -->
-
-See [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
-
-
-<!-- ------------------------------ -->
-#### Runtime or browser support during development or production
+## Runtime or browser support during development or production
 
 During development and testing, a WebView2 app can use either option as the backing web platform:
 
 * The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update release cadence as the Stable channel of the Microsoft Edge browser; see [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule).  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
 
-* A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
+* A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
 
 
-<!-- ---------- -->
-###### Microsoft Edge Stable channel isn't supported for WebView2
+<!-- ------------------------------ -->
+#### Microsoft Edge Stable channel isn't supported for WebView2
 
 WebView2 apps aren't permitted to use the Stable channel of Microsoft Edge as the backing web platform.  This restriction prevents a production release of a WebView2 app from taking a dependency on the browser.  A WebView2 app cannot take a dependency on the browser during production, for the following reasons:
 
 * Microsoft Edge isn't guaranteed to be present on all user devices.  Many devices in enterprises and in education are disconnected from Windows Update or aren't managed by Microsoft directly.  Such devices might not have Microsoft Edge installed.  Requiring the production version of WebView2 apps to use the WebView2 Runtime rather than Microsoft Edge avoids making Microsoft Edge a prerequisite for running a WebView2 app.
 
-* Browsers and apps have different use cases.  If a WebView2 app required the presence of Microsoft Edge on the client, that would potentially have unintended side-effects on the WebView2 app.  For example, an IT admin can prevent the browser from being updated from a specific version, to keep the browser compatible with an internal website.  Requiring the production version of a WebView2 app to use the WebView2 Runtime rather than the browser allows the WebView2 app to stay evergreen even if browser updates are prevented by the clients' admin.
+* Browsers and apps have different use cases.  If a WebView2 app required the presence of Microsoft Edge on the client, that would potentially have unintended side-effects on the WebView2 app.  For example, an IT Admin can prevent the browser from being updated from a specific version, to keep the browser compatible with an internal website.  Requiring the production version of a WebView2 app to use the WebView2 Runtime rather than the browser allows the WebView2 app to stay evergreen even if browser updates are prevented by the clients' admin.
 
 * As opposed to the browser, the WebView2 Runtime is developed and tested for app scenarios, and in some cases the WebView2 Runtime might include bug fixes that aren't yet available in the browser.
 
@@ -255,7 +244,7 @@ To help you decide which channel is right, see [Overview of the Microsoft Edge c
 
 See [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).  You can also use WebDriver to automate WebView2 testing, as described in [Automate, and test WebView2 with Microsoft Edge WebDriver](../how-to/webdriver.md).
 
-For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
+For best practices about how to test your app for forward-compatibility, see [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md) and [Self-host by deploying preview channels](../how-to/self-hosting.md).
 
 
 <!-- ------------------------------ -->
@@ -382,6 +371,12 @@ Example managed app folder structure:
 
 
 <!-- ====================================================================== -->
+## Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)<!-- todo: deprecated -->
+
+See [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
+
+
+<!-- ====================================================================== -->
 ## See also
 <!-- all links in the article -->
 
@@ -390,16 +385,16 @@ Example managed app folder structure:
 * [Prerelease and Release SDKs for WebView2](./versioning.md)<!-- toc bucket 6 leaf 2 -->
    * [Feature-detecting to test whether the installed Runtime supports recently added APIs](./versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis) in _Prerelease and Release SDKs for WebView2_.
 * [Evergreen vs. fixed version of the WebView2 Runtime](./evergreen-vs-fixed-version.md)<!-- toc bucket 6 leaf 3 -->
-* [Windows Server Update Services (WSUS)](./enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2_.<!-- toc bucket 6 leaf 4 -->
-* [Test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
-* [Prerelease testing using preview channels](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
+* [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md)<!-- toc bucket 8 top -->
+* [Prerelease testing using preview channels of Microsoft Edge](../how-to/prerelease-testing.md)<!-- toc bucket 8 bottom -->
 * [Self-host by deploying preview channels](../how-to/self-hosting.md)<!-- toc bucket 8 very bottom -->
 * [Distribute a WebView2 app as a single executable file](../how-to/static.md) - statically linking the WebView2 loader library.
 
-Enterprise docs:
+Microsoft Edge Enterprise documentation:
 * [Microsoft Edge release schedule](/deployedge/microsoft-edge-release-schedule)<!-- link not in article body -->
 * [Release notes for Microsoft Edge Stable Channel](/deployedge/microsoft-edge-relnote-stable-channel)
 * [Release notes for Microsoft Edge Security Updates](/deployedge/microsoft-edge-relnotes-security)
+* [Windows Server Update Services (WSUS)](/deployedge/webview2-enterprise#windows-server-update-services-wsus) in _Enterprise management of WebView2_.
 
 developer.microsoft.com:
 * [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download) - Developers.

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: extensions
-ms.date: 08/07/2026
+ms.date: 08/27/2026
 ---
 # Timeline for migrating to Manifest V3
 
@@ -16,6 +16,7 @@ To plan the migration of your extension from Manifest V2 to Manifest V3, the fol
 |---|---|
 | Jul. 2022 | Partner Center (and the Microsoft Edge Add-ons website) no longer accepts new Manifest V2 extensions.  To publish a new extension, use Manifest V3. |
 | Aug. 2026 | At Partner Center, if your extension uses Manifest V2, a Manifest V2 deprecation warning is displayed. |
+| Mid-Sep. 2026 | Deprecation warnings will be displayed to some users, for extensions that continue to use Manifest V2, in the **Manage extensions** page of Microsoft Edge, and at the Microsoft Edge Add-ons website. |
 | Early 2027 | For enterprise customers, deprecation of Manifest V2 extensions is expected to begin. |
 | TBD | Partner Center (and the Microsoft Edge Add-ons website) will no longer accept updates to extensions that continue to use Manifest V2.  You can submit an update that migrates a Manifest V2 extension to Manifest V3. |
 

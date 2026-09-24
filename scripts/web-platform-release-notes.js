@@ -42,6 +42,18 @@ function longDate(dateString) {
   return month === "May" ? `${month} ${day}, ${year}` : `${month}. ${day}, ${year}`;
 }
 
+// Format a date string as "MM/DD/YYYY".
+function msDate(dateString) {
+  const date = new Date(dateString);
+  
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  const year = date.getFullYear();
+  
+  return `${month}/${day}/${year}`;
+}
+
+
 // Execute a shell command and return the stdout as a string.
 async function execute(cmd) {
   try {
@@ -286,17 +298,8 @@ async function main() {
 
   const eleventy = new Eleventy(".", "_site", {
     config: function (eleventyConfig) {
-      eleventyConfig.addShortcode("monthYear", function (releaseDate) {
-        const date = new Date(releaseDate);
-
-        const dtf = new Intl.DateTimeFormat("en-US", { month: "short" });
-        const shortMonth = dtf.format(date);
-        const shortMonthWithDot = shortMonth === "May" ? shortMonth : shortMonth + ".";
-
-        return `${shortMonthWithDot} ${date.getFullYear()}`;
-      });
-
       eleventyConfig.addShortcode("monthDayYear", longDate);
+      eleventyConfig.addShortCode("msDate", msDate);
 
       return {
         dir: {
