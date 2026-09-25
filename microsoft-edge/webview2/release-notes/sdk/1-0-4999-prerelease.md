@@ -1,20 +1,22 @@
 ---
-title: SDK n.n.nnnn-prerelease, for Runtime 155 (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2 SDK n.n.nnnn-prerelease.
+title: SDK 1.0.4283-prerelease, for Runtime 155 (Sep. 24, 2026)
+description: Release notes for Microsoft Edge WebView2 SDK 1.0.4283-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 01/01/2026
+ms.date: 09/24/2026
 ---
-# SDK n.n.nnnn-prerelease, for Runtime 155 (Mmm. dd, yyyy)
+# SDK 1.0.4283-prerelease, for Runtime 155 (Sep. 24, 2026)
 
-Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Mmm. dd, yyyy.
+_todo: expect to delete this placeholder page_
 
-[NuGet package for WebView2 SDK n.n.nnnn-prerelease] (`https://www.nuget.org/packages/Microsoft.Web.WebView2/n.n.nnnn-prerelease`)
+Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Sep. 24, 2026.
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version nnn.n.nnnn.n or later; see [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md).
+[NuGet package for WebView2 SDK 1.0.4283-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4283-prerelease)
+
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 155.0.4283.0<!-- todo: update last # --> or later; see [Preview Runtime 155.0.4283.13 (Sep. 24, 2026)](../runtime/155.md).
 
 <!-- if a section is empty, omit the section heading -->
 
@@ -87,7 +89,7 @@ Previous phase: [~] (./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md)
+* [Preview Runtime 155.0.4283.13 (Sep. 24, 2026)](../runtime/155.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
