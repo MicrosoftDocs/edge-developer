@@ -6,9 +6,53 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/30/2023
+ms.date: 09/17/2026
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool
+
+Use the **3D View** tool to debug DOM, z-index, and composited layer problems in a webpage by rotating the page in 3D space.  The 3D visualization helps you understand the DOM tree hierarchy, the z-index stacking context tree hierarchy, and the composited layers created on the page.
+
+**Detailed contents:**
+* [Introduction](#introduction)
+   * [Video: Debug the web in 3D](#video-debug-the-web-in-3d)
+* [Open the 3D View tool](#open-the-3d-view-tool)
+   * [Open the 3D View tool in the Activity Bar](#open-the-3d-view-tool-in-the-activity-bar)
+   * [Open the 3D View tool in the Quick View panel](#open-the-3d-view-tool-in-the-quick-view-panel)
+   * [Enable WebGPU for development on machines without a hardware GPU](#enable-webgpu-for-development-on-machines-without-a-hardware-gpu)
+* [Zoom, pan, and rotate the 3D canvas](#zoom-pan-and-rotate-the-3d-canvas)
+   * [Zoom the page in or out](#zoom-the-page-in-or-out)
+   * [Pan view (button)](#pan-view-button)
+   * [Rotate view (button)](#rotate-view-button)
+* [The Composited Layers tab](#the-composited-layers-tab)
+   * [Slow scroll rects (checkbox)](#slow-scroll-rects-checkbox)
+   * [Paints (checkbox)](#paints-checkbox)
+   * [Layers expander tree](#layers-expander-tree)
+   * [Details (info pane)](#details-info-pane)
+      * [Size](#size)
+      * [Compositing Reasons](#compositing-reasons)
+      * [Memory estimate](#memory-estimate)
+      * [Paint count](#paint-count)
+* [The Z-index tab](#the-z-index-tab)
+   * [Show Elements type (section)](#show-elements-type-section)
+   * [Color type (section)](#color-type-section)
+* [The DOM tab](#the-dom-tab)
+   * [Nesting level for page (slider)](#nesting-level-for-page-slider)
+      * [Reset button](#reset-button)
+   * [Color type (section)](#color-type-section-1)
+* [Toolbar above the 3D canvas](#toolbar-above-the-3d-canvas)
+   * [Retake snapshot (button)](#retake-snapshot-button)
+   * [Reset view (button)](#reset-view-button)
+   * [Pan view (button)](#pan-view-button-1)
+   * [Rotate view (button)](#rotate-view-button-1)
+   * [Isolate selected element (button and section)](#isolate-selected-element-button-and-section)
+      * [Include parents (checkbox)](#include-parents-checkbox)
+      * [Include children (checkbox)](#include-children-checkbox)
+* [Movement controls in lower right](#movement-controls-in-lower-right)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
 
 Use the **3D View** tool to debug DOM, z-index, and composited layer problems in a webpage by rotating the page in 3D space.  The 3D visualization helps you understand the DOM tree hierarchy, the z-index stacking context tree hierarchy, and the composited layers created on the page.
 
@@ -17,7 +61,9 @@ Use the **3D View** tool to debug DOM, z-index, and composited layer problems in
 On the left, the **3D View** tool has 3 tabs:
 
 *  The **Composited Layers** tab shows the composited layers that are created by the browser for your webpage. Each layer includes a realistic rendering of the content in the layer, for a comprehensive experience as you move the page around in 3D space.
+
 *  The **Z-index** tab shows a 3D representation of the stacking context tree.  Use this tab to debug z-index stacking issues on your webpage.
+
 *  The **DOM** tab shows a 3D representation of the DOM tree.  Use this tab to explore the DOM as a whole, with all of the elements easily accessible.
 
 On the right, the 3D canvas represents the webpage according to which tab and options you select.
@@ -63,6 +109,44 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 1. In the **Quick View** toolbar, select the **3D View** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./index-images/more-tools-icon.png)) button. The **3D View** tab opens in the **Quick View** panel:
 
    ![The 3D View tool, displayed in the Quick View panel](./index-images/tool-in-quick-view.png)
+
+
+<!-- ------------------------------ -->
+### Enable WebGPU for development on machines without a hardware GPU
+
+The **3D View** tool relies on the WebGPU API to access the high-performance hardware GPU.  On machines without a hardware GPU, the workaround is to enable the following flags only in a development environment.
+
+These flags aren't routine prerequisites for opening the **3D View** tool.  If the tool works on your machine, keep the flags at their default settings.
+
+**Caution:** Use caution when enabling these flags.  The `enable-unsafe-webgpu` flag enables best-effort WebGPU support on unsupported configurations and could expose security issues to websites.  Use that flag only for your own development.  The `ignore-gpu-blocklist` flag overrides the browser's built-in software rendering list, enabling GPU acceleration on unsupported system configurations.  These flags affect the browser, not just the **3D View** tool.
+
+To try this workaround:
+
+1. In Microsoft Edge, save any work in your open tabs.
+
+1. Go to `edge://flags`.
+
+1. Search for `ignore-gpu-blocklist`, and then set the flag to **Enabled**.  You can also go directly to `edge://flags/#ignore-gpu-blocklist`.
+
+1. Search for `enable-unsafe-webgpu`, and then set the flag to **Enabled**.  You can also go directly to `edge://flags/#enable-unsafe-webgpu`.
+
+   A **Restart** button appears in the lower right.
+
+1. Click the **Restart** button.
+
+   Microsoft Edge restarts.
+
+1. Go to the webpage that you want to visualize.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. Open the **3D View** tool.
+
+1. Debug the webpage.
+
+1. When finished debugging, in `edge://flags`, set the `ignore-gpu-blocklist` flag and the `enable-unsafe-webgpu` flag to **Default** (or **Disabled**), and then click the **Restart** button in the lower right.
 
 
 <!-- ====================================================================== -->
