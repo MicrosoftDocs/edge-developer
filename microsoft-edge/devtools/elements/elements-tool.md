@@ -36,6 +36,7 @@ The **Elements** tool contains the following tabs:
 * [CSS features reference](../css/reference.md)
 * [Get started viewing and changing CSS](../css/index.md)
 * [Inspect CSS Grid layouts](../css/grid.md)
+* [Edit CSS font styles and settings in the Styles tab](../inspect-styles/edit-fonts.md)
 * [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
 * [Get started viewing and changing the DOM](../dom/index.md)
 * [Your first website](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web) (MDN) - How to use HTML, CSS, and JavaScript to build a webpage.
