@@ -12,4 +12,6 @@ ms.date: 02/15/2022
 
 Use the **Developer resources** tool to view resource URLs for the webpage.
 
-![The Developer resources tool](./developer-resources-images/developer-resources-tool.png)
+![The Developer resources tool](./developer-resources-images/developer-resources-tool.png)<!-- todo: redo, 'r', show a Demos repo demo -->
+
+<!-- todo: https://developer.chrome.com/docs/devtools/developer-resources -->
