@@ -1,7 +1,7 @@
 # =============================================================================
 # TOC sections:
 # top leaf nodes
-# Release notes
+# Release notes [web platform]
 # Experimental APIs for Microsoft Edge
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
@@ -24,7 +24,7 @@
       href: ./develop-web-microsoft-edge.md
 # /top leaf nodes
 # =============================================================================
-# Release notes
+# Release notes [web platform]
     - name: Release notes
       items:
         - name: Release notes for Microsoft Edge web platform
@@ -35,25 +35,29 @@
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
 
+        - name: Microsoft Edge 155
+          href: ./web-platform/release-notes/155.md
+          displayName: Microsoft Edge 155 web platform release notes (Oct. 8, 2026)  # page title
+
         - name: Microsoft Edge 154
           href: ./web-platform/release-notes/154.md
-          displayName: Microsoft Edge 154 web platform release notes (Sep. 2026)  # page title
+          displayName: Microsoft Edge 154 web platform release notes (Sep. 24, 2026)  # page title
 
         - name: Microsoft Edge 153
           href: ./web-platform/release-notes/153.md
-          displayName: Microsoft Edge 153 web platform release notes (Sep. 2026)  # page title
+          displayName: Microsoft Edge 153 web platform release notes (Sep. 10, 2026)  # page title
 
         - name: Microsoft Edge 152
           href: ./web-platform/release-notes/152.md
-          displayName: Microsoft Edge 152 web platform release notes (Aug. 2026)  # page title
+          displayName: Microsoft Edge 152 web platform release notes (Aug. 27, 2026)  # page title
 
         - name: Microsoft Edge 151
           href: ./web-platform/release-notes/151.md
-          displayName: Microsoft Edge 151 web platform release notes (Jul. 2026)  # page title
+          displayName: Microsoft Edge 151 web platform release notes (Jul. 30, 2026)  # page title
 
         - name: Microsoft Edge 150
           href: ./web-platform/release-notes/150.md
-          displayName: Microsoft Edge 150 web platform release notes (Jul. 2026)  # page title
+          displayName: Microsoft Edge 150 web platform release notes (Jul. 2, 2026)  # page title
 
         - name: Microsoft Edge 149
           href: ./web-platform/release-notes/149.md
@@ -71,13 +75,13 @@
           href: ./web-platform/release-notes/146.md
           displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
 
-        - name: Microsoft Edge 145
-          href: ./web-platform/release-notes/145.md
-          displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 145
+              href: ./web-platform/release-notes/145.md
+              displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
+
             - name: Microsoft Edge 144
               href: ./web-platform/release-notes/144.md
               displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
@@ -195,6 +199,10 @@
               # maint:
               # toc.yml - add new what's new page, move a what's new page to archive
               # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page
+            - name: Microsoft Edge 153
+              href: ./devtools/whats-new/153.md
+              displayName: What's new in DevTools (Microsoft Edge 153)  # page title
+
             - name: Microsoft Edge 152
               href: ./devtools/whats-new/152.md
               displayName: What's new in DevTools (Microsoft Edge 152)  # page title
@@ -230,14 +238,14 @@
             - name: Microsoft Edge 144
               href: ./devtools/whats-new/144.md
               displayName: What's new in DevTools (Microsoft Edge 144)  # page title
-
-            - name: Microsoft Edge 143
-              href: ./devtools/whats-new/143.md
-              displayName: What's new in DevTools (Microsoft Edge 143)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 143
+                  href: ./devtools/whats-new/143.md
+                  displayName: What's new in DevTools (Microsoft Edge 143)  # page title
+
                 - name: Microsoft Edge 142
                   href: ./devtools/whats-new/2025/10/devtools-142.md
                   displayName: What's new in DevTools (Microsoft Edge 142)  # page title
@@ -2365,10 +2373,6 @@
                 - name: Distribute your app and the WebView2 Runtime
                   href: ./webview2/concepts/distribution.md
 
-                - name: Enterprise management of WebView2
-                  href: ./webview2/concepts/enterprise.md
-                  displayName: Manage WebView2 applications  # old title
-
                 - name: Distribute an app as a single executable file
                   href: ./webview2/how-to/static.md
                   displayName: Statically link the WebView2 loader library, single-file app  # old title
@@ -2387,9 +2391,6 @@
 
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
-
-            - name: Prevent security tools from blocking WebView2-hosted apps
-              href: ./webview2/concepts/measures.md
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps
           items:
