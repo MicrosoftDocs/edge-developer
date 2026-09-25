@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/11/2026
+ms.date: 09/24/2026
 ---
 # Release notes for WebView2 SDKs
 
@@ -15,6 +15,8 @@ list past 10 releases
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
 Release notes for recent SDKs:
+* [SDK 1.0.4283-prerelease, for Runtime 155 (Sep. 24, 2026)](./1-0-4283-prerelease.md)
+* [SDK n.n.nnnn.nn, for Runtime 154 (Mmm. dd, yyyy)](./1-0-4999-nn.md)
 * [SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)](./1-0-4255-prerelease.md)
 * [SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
 * [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
