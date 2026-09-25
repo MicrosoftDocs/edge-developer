@@ -17,6 +17,7 @@ What's new articles correspond to historical releases of Microsoft Edge, and are
 <!-- maint:
 toc.yml - add new what's new page, move a what's new page to archive
 /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page -->
+* [What's new in DevTools (Microsoft Edge 154)](./154.md)
 * [What's new in DevTools (Microsoft Edge 153)](./153.md)
 * [What's new in DevTools (Microsoft Edge 152)](./152.md)
 * [What's new in DevTools (Microsoft Edge 151)](./151.md)
@@ -26,7 +27,6 @@ toc.yml - add new what's new page, move a what's new page to archive
 * [What's new in DevTools (Microsoft Edge 147)](./147.md)
 * [What's new in DevTools (Microsoft Edge 146)](./146.md)
 * [What's new in DevTools (Microsoft Edge 145)](./145.md)
-* [What's new in DevTools (Microsoft Edge 144)](./144.md)
 
 For earlier What's new pages, see **Archive** in the table of contents.
 
