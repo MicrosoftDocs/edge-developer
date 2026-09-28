@@ -6,17 +6,16 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/24/2026
+ms.date: 09/28/2026
 ---
 # Release notes for WebView2 SDKs
 
 <!-- maint:
-list past 10 releases
+list past 10 potential releases eg 154-145
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
 Release notes for recent SDKs:
-* [SDK 1.0.4283-prerelease, for Runtime 155 (Sep. 24, 2026)](./1-0-4283-prerelease.md)
-* [SDK n.n.nnnn.nn, for Runtime 154 (Mmm. dd, yyyy)](./1-0-4999-nn.md)
+* [SDK 1.0.4258.31, for Runtime 154 (Sep. 28, 2026)](./1-0-4258-31.md)
 * [SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)](./1-0-4255-prerelease.md)
 * [SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
 * [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
@@ -34,10 +33,6 @@ Release notes for recent SDKs:
 * [SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
 * [SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)](./1-0-3800-47.md)
 * [SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)](./1-0-3796-prerelease.md)
-* [SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)](./1-0-3719-77.md)
-* [SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)](./1-0-3712-prerelease.md)
-* [SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)](./1-0-3650-58.md)
-* [SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)](./1-0-3650-prerelease.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
