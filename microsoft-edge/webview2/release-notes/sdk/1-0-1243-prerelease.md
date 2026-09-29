@@ -27,6 +27,10 @@ This package has been deprecated, because it has critical bugs.  See [Issue 2414
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Prerelease SDK 1.0.1248-prerelease, for Runtime 102 (May 9, 2022)](./1-0-1248-prerelease.md)
+* [Release SDK 1.0.1245.22, for Runtime 102 (Jun. 14, 2022)](./1-0-1245-22.md)
+* [Prerelease SDK 1.0.1222-prerelease, for Runtime 102 (Apr. 12, 2022)](./1-0-1222-prerelease.md)
 * [Runtime 102.0.1245.22 (Jun. 14, 2022)](../runtime/102.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

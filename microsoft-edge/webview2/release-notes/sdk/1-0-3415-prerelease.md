@@ -507,6 +507,9 @@ Previous phase: [Customize the Find behavior (Find API)](./1-0-3079-prerelease.m
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)](./1-0-3485-44.md)
+* [Prerelease SDK 1.0.3477-prerelease, for Runtime 140 (Aug. 11, 2025)](./1-0-3477-prerelease.md)
 * [Runtime 140.0.3485.44 (Sep. 8, 2025)](../runtime/140.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

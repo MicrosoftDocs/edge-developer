@@ -1,5 +1,5 @@
 ---
-title: SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+title: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
 description: Release notes for Microsoft Edge WebView2 SDK 1.0.3796-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/19/2026
 ---
-# SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+# Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Jan. 19, 2026.
 
@@ -80,6 +80,7 @@ To control the ESM level for all WebView2 instances that share the same profile,
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)](./1-0-3800-47.md)
 * [Runtime 145.0.3800.47 (Feb. 16, 2026)](../runtime/145.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

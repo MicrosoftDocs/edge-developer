@@ -171,6 +171,7 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1938.49, for Runtime 116 (Aug. 28, 2023)](./1-0-1938-49.md)
 * [Runtime 116.0.1938.49 (Aug. 28, 2023)](../runtime/116.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
