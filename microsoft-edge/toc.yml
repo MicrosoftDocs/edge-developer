@@ -1777,7 +1777,7 @@
 
                 - name: Prerelease SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4255-prerelease.md
-a
+
                 - name: Release SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4191-47.md
 
