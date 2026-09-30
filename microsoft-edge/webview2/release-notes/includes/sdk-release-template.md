@@ -16,6 +16,8 @@ Release notes for Microsoft Edge WebView2 SDK, release date: Mmm. dd, yyyy.
 
 For full API compatibility, this Release version of the WebView2 SDK requires WebView2 [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md) or later.
 
+This Release SDK includes the same improvements as [SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (./1-0-nnnn-prerelease.md).
+
 <!-- if a section is empty, omit the section heading -->
 
 
@@ -66,6 +68,7 @@ Previous phase: [~] (./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
+* [SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (./1-0-nnnn-prerelease.md)
 * [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

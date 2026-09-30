@@ -20,6 +20,9 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Release SDK 1.0.3485.44, for Runtime 140 (Sep. 8, 2025)](./1-0-3485-44.md)
+* [Prerelease SDK 1.0.3415-prerelease, for Runtime 140 (Jul. 14, 2025)](./1-0-3415-prerelease.md)
 * [Runtime 140.0.3485.44 (Sep. 8, 2025)](../runtime/140.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

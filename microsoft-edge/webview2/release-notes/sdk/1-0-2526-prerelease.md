@@ -205,6 +205,7 @@ Previous phase: [Fluent Style Overlay Scrollbar](./1-0-2470-prerelease.md#fluent
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.2535.41, for Runtime 125 (May 28, 2024)](./1-0-2535-41.md)
 * [Runtime 125.0.2535.41 (May 28, 2024)](../runtime/125.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
