@@ -204,6 +204,7 @@ Previous phase: [Hit-testing results on regions](./1-0-2357-prerelease.md#hit-te
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.2420.47, for Runtime 123 (Mar. 25, 2024)](./1-0-2420-47.md)
 * [Runtime 123.0.2420.47 (Mar. 25, 2024)](../runtime/123.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
