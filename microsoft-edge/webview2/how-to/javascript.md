@@ -45,7 +45,7 @@ string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
 Debug.Assert(result == "\"example\"");
 ```
 
-The script returns a string that `ExecuteScript` JSON-encodes for you.  If you call `JSON.stringify` from your script (in your web-side code), then the result is doubly encoded, as a JSON string the value of which is a JSON string.
+The script returns a string that `ExecuteScript` JSON-encodes for you.  If your web-side code calls `JSON.stringify` already, then the result is doubly encoded as a JSON string, the value of which is a JSON string.
 
 Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties aren't included in the JSON-encoded object.  Most DOM objects inherit all properties, so your web-side code must explicitly copy the properties' values into another object and return that object to your native-side code.  For example:
 

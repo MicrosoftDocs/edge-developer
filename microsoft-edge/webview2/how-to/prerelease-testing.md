@@ -22,6 +22,12 @@ Conduct both automated and manual testing:
 
 
 <!-- ====================================================================== -->
+## Relationship between the WebView2 control, SDK, and Runtime
+
+![Diagram: Relationship between the WebView2 control, SDK, and Runtime](./prerelease-testing-images/control-sdk-runtime.png)
+
+
+<!-- ====================================================================== -->
 ## Importance of prerelease testing
 
 Evergreen WebView2 is based on the evergreen Chromium platform, which receives monthly major updates.  Regressions in WebView2 apps tend to be application-specific, rather than affecting all WebView2 apps.  WebView2 is tested in a variety of general scenarios, but it's possible that some of the specific scenarios of your app are not covered.

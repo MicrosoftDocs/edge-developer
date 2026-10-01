@@ -32,8 +32,6 @@ WebView2 is based on the Microsoft Edge browser.  You have the opportunity to ex
 <!-- ====================================================================== -->
 ## Introduction
 
-WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
-
 This article covers:
 
 * The modified browser features and supporting information.

@@ -35,8 +35,6 @@ The WebView2 SDK is provided as a Prerelease or Release version of the **Microso
 <!-- ====================================================================== -->
 ## Introduction
 
-The WebView2 SDK is provided as a Prerelease or Release version of the **Microsoft.Web.WebView2** NuGet package.  Either use a Prerelease SDK with a preview channel of Microsoft Edge, or use a Release SDK with the WebView2 Runtime.
-
 _Prerelease_ SDK packages are for use during development if you want to test the latest WebView2 APIs, including the Experimental APIs, before support for those APIs is added to the Runtime.  The Canary channel is recommended, because it has the implementations of the latest APIs.  When you want to test and use Experimental WebView2 APIs, use the following combination:
 * A _Prerelease_ version of the WebView2 SDK.
 * A _preview channel_ of Microsoft Edge on your development client.
