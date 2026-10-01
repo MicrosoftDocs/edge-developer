@@ -209,6 +209,7 @@ Previous phase: [Custom Crash Reporting API](./1-0-1414-prerelease.md#custom-cra
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1587.40, for Runtime 110 (Feb. 15, 2023)](./1-0-1587-40.md)
 * [Runtime 110.0.1587.40 (Feb. 15, 2023)](../runtime/110.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

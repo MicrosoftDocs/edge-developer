@@ -1,5 +1,5 @@
 ---
-title: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+title: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
 description: Release notes for Microsoft Edge WebView2 SDK 1.0.4181-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 08/03/2026
 ---
-# SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+# Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Aug. 3, 2026.
 
@@ -124,12 +124,13 @@ Releasing or closing the monitor stops all events and clears all filters.
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Fixed a WPF crash when changing display topology in composition-controlled apps.
+* Fixed a WPF crash when changing the display topology in composition-controlled apps.
 
 
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
 * [Runtime 152.0.4191.53 (Aug. 28, 2026)](../runtime/152.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

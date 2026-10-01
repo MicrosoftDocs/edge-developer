@@ -388,6 +388,7 @@ Previous phase: [SmartScreen API](./1-0-1414-prerelease.md#smartscreen-api) in _
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1774.30, for Runtime 113 (May 8, 2023)](./1-0-1774-30.md)
 * [Runtime 113.0.1774.30 (May 8, 2023)](../runtime/113.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
