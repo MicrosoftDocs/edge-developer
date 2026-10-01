@@ -72,17 +72,17 @@ The Dev machine for developing a WebView2 app consists of the following componen
 
       * Native control instances - Native controls and panes of your app.
 
-   * The WebView2 SDK.<!-- todo: in diagram, change from "SDK" to "WebView2 SDK" -->
+   * The WebView2 SDK.
 
-      * Per-platform WebView2 APIs, including `CoreWebView2`, `CoreWebView2Controller`, and `CoreWebView2Environment`.  Primarily called by native-side code.<!-- todo: in diagram, change "Platform APIs" to "Per-platform WebView2 APIs" -->
+      * Per-platform WebView2 APIs, including `CoreWebView2`, `CoreWebView2Controller`, and `CoreWebView2Environment`.  Primarily called by native-side code.
 
       * `AddHostObjectToScript` - Enables exposing platform APIs and WebView2 APIs to JavaScript code.  See [Interop of native and web code](../how-to/communicate-btwn-web-native.md)
 
       * [JavaScript APIs](../webview2-api-reference.md#javascript) (WebView2Script package) - Called by web-side code to communicate with the host application.
 
-   * Platform APIs - Non-WebView2 APIs provided by the platform; can be exposed to web-side code.<!-- todo: add to diagram, as a 3rd box within the "Visual Studio project" box -->
+   * Platform APIs - Non-WebView2 APIs provided by the platform; can be exposed to web-side code.
 
-* WebView2 Runtime - A browser component that contains WebView2 APIs.<!-- todo: in diagram, change "Runtime" to "WebView2 Runtime" -->
+* WebView2 Runtime - A browser component that contains WebView2 APIs.
 
 
 <!-- ------------------------------ -->
@@ -127,7 +127,7 @@ On the end-user machine are the following components that are involved in runnin
 
    * Native control instances.
 
-* The WebView2 Runtime.<!-- todo: in diagram, change "Runtime" to "WebView2 Runtime" -->
+* The WebView2 Runtime.
 
 
 <!-- ------------------------------ -->
