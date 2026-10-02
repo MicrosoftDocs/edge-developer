@@ -11,11 +11,12 @@ ms.date: 09/28/2026
 # Release notes for the WebView2 Runtime
 
 <!-- maint:
-list past 10 releases eg 155-146
+list past 10 releases eg 156-147
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 155.0.4283.13 (Sep. 24, 2026)](./155.md)
+* [Preview Runtime 156.n.nnnn.nn (Mmm. dd, yyyy)](./156.md)
+* [Runtime 155.0.nnnn.nn (Mmm. dd, 2026)](./155.md)
 * [Runtime 154.0.4258.31 (Sep. 28, 2026)](./154.md)
 * [Runtime 153.0.4234.32 (Sep. 11, 2026)](./153.md)
 * [Runtime 152.0.4191.53 (Aug. 28, 2026)](./152.md)
@@ -24,7 +25,6 @@ Release notes for recent Runtimes:
 * [Runtime 149.0.4022.49 (Jun. 11, 2026)](./149.md)
 * [Runtime 148.0.3967.48 (May 11, 2026)](./148.md)
 * [Runtime 147.0.3912.50 (Apr. 13, 2026)](./147.md)
-* [Runtime 146.0.3856.49 (Mar. 16, 2026)](./146.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
