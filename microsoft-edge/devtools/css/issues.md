@@ -41,7 +41,7 @@ This guide assumes that you're familiar with inspecting CSS in Chrome DevTools. 
    * [Declared and inherited](#declared-and-inherited)
    * [Runtime](#runtime)
    * [Non-inherited and custom](#non-inherited-and-custom)
-* [Search for duplicate CSS properties](#search-for-duplicate-css-properties)
+* [Search for duplicates](#search-for-duplicates)
 * [Find unused CSS](#find-unused-css)
 
 
@@ -246,12 +246,19 @@ This example shows the initial values for non-inherited properties under **Anima
 
 
 <!-- ====================================================================== -->
-## Search for duplicate CSS properties
-<!-- Search for duplicates  https://developer.chrome.com/docs/devtools/css/issues#filter -->
+## Search for duplicates
+<!-- https://developer.chrome.com/docs/devtools/css/issues#filter -->
 
 To investigate a specific CSS property and its potential duplicates, type that CSS property name in the **Filter** textbox.  You can do this both in the **Styles** and **Computed** tabs.
 
-![The Filter text boxes on the Styles tab and Computed tab](./issues-images/the-filter-textboxes-styles.png) todo
+The **Filter** text box in the **Styles** tab:
+
+![Filter styles](./issues-images/styles-tab-filter-text-box.png) todo
+
+The **Filter** text box in the **Computed** tab:
+
+![Filter computed css](./issues-images/computed-tab-filter-text-box.png) todo
+
 
 See [Search and filter an element's CSS](./reference.md#search-and-filter-an-elements-css) in _CSS features reference_.
 
