@@ -257,7 +257,7 @@ See [Search and filter an element's CSS](./reference.md#search-and-filter-an-ele
 
 
 <!-- ====================================================================== -->
-## Find unused CSS code
+## Find unused CSS
 <!-- https://developer.chrome.com/docs/devtools/css/issues#coverage -->
 
 See [Find unused JavaScript and CSS code with the Coverage tool](../coverage/index.md).
