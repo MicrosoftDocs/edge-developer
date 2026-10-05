@@ -67,18 +67,16 @@ The **Styles** tab recognizes many kinds of CSS issues and highlights them in di
 #### Matched and unmatched selectors
 <!-- https://developer.chrome.com/docs/devtools/css/issues#selectors -->
 
-The **Styles** tab shows matched selectors in regular text and unmatched ones in pale text.
+The **Styles** tab shows matched selectors in regular text, and unmatched selectors in pale text:
 
 ![Matched selector in regular text and unmatched selectors in pale text](./issues-images/matched-selector-regular.png) todo
-
-_strategy: quickly create pngs showing chrome, then redo w edge_
 
 
 <!-- ------------------------------ -->
 #### Invalid values and declarations
 <!-- https://developer.chrome.com/docs/devtools/css/issues#invalid -->
 
-The **Styles** tab crosses out and displays Warning. ![Warning icon](./issues-images/warning-icon.png) todo warning icons next to the following:
+The **Styles** tab crosses out and displays a ![Warning icon](./issues-images/warning-icon.png) todo Warning icon next to the following:
 
 * An entire CSS declaration (property and value) when the CSS property is invalid or unknown.
 * Just the value when the CSS property is valid but the value is invalid.
@@ -101,7 +99,7 @@ In this example, the `width: 300px;` style attribute on the element overrides `w
 #### Inactive
 <!-- https://developer.chrome.com/docs/devtools/css/issues#inactive -->
 
-The **Styles** tab displays in pale text and puts ![Information](./issues-images/information-icon.png) todo information icons next to properties that are valid but have no effect because of other properties.
+The **Styles** tab displays in pale text and puts an ![Information](./issues-images/information-icon.png) todo information icon next to properties that are valid but have no effect because of other properties.
 
 These pale properties are inactive because of CSS logic, not the cascading order.  See also [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Cascade#cascading_order) in _Introduction to the CSS cascade_ at MDN.
 
@@ -129,7 +127,7 @@ See [Inheritance](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Inhe
 
 * Overriding default inheritance doesn't affect the way the **Styles** tab displays the properties: pale or not.
 
-![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/the-inherited-body-sec.png) todo
+![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/inherited-body-section.png) todo
 
 See also:
 * [Overriding inheritance, an example](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Inheritance#overriding_inheritance_an_example) in _Inheritance_ at MDN.
@@ -146,7 +144,7 @@ See also:
 
 The **Styles** tab displays shorthand properties as ![Drop-down icon](./issues-images/drop-down-icon.png) todo drop-down lists that contain all the properties that are shortened.
 
-![The shorthand property with a drop-down list](./issues-images/the-shorthand-property.png) todo
+![The shorthand property with a drop-down list](./issues-images/shorthand-property.png) todo
 
 In this example, two of four shortened properties are actually overridden.
 
@@ -159,7 +157,7 @@ The **Styles** tab displays properties that can't be edited in _italic text_.  F
 
 * `user agent stylesheet`—Microsoft Edge's default stylesheet.
 
-   ![The CSS from user agent stylesheet](./issues-images/the-css-user-agent-style.png) todo
+   ![The CSS from user agent stylesheet](./issues-images/css-user-agent-style.png) todo
 
 * Style-related HTML attributes on the element, such as height, width, or color.  You can edit them in the DOM tree and this updates the CSS in the **Styles** tab, but not the other way around.
 
@@ -202,17 +200,17 @@ The **Computed** tab lists the properties declared in any stylesheet in regular 
 
 ![Declared CSS properties](./issues-images/declared-properties.png) todo
 
-To see the declaration in the **Styles** tab, hover over the expanded property and click the ![Arrow-right icon](./issues-images/arrow-right-icon.png) todo arrow button.
+To see the declaration in the **Styles** tab, hover over the expanded property and click the ![Expand icon](./issues-images/expand-icon.png) todo arrow button:
 
-![The arrow button next to the property](./issues-images/the-arrow-button-next.png) todo
+![The arrow button next to the property](./issues-images/arrow-button-next-to-property.png) todo
 
 To see the declaration in the **Sources** pane, click the link to the source file.
 
-![The link to the source file](./issues-images/the-link-the-source-file.png) todo
+![The link to the source file](./issues-images/link-to-source-file.png) todo
 
 For properties with multiple sources, the **Computed** tab shows the cascade winner first.  See also [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Cascade#cascading_order) in _Introduction to the CSS cascade_ at MDN.
 
-![A property with multiple sources](./issues-images/a-property-multiple-sources.png) todo
+![A property with multiple sources](./issues-images/property-with-multiple-sources.png) todo
 
 
 <!-- ------------------------------ -->
@@ -258,7 +256,6 @@ The **Filter** text box in the **Styles** tab:
 The **Filter** text box in the **Computed** tab:
 
 ![Filter computed css](./issues-images/computed-tab-filter-text-box.png) todo
-
 
 See [Search and filter an element's CSS](./reference.md#search-and-filter-an-elements-css) in _CSS features reference_.
 
