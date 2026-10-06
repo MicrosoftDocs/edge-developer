@@ -162,7 +162,7 @@ By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-The Aion-1.0-Instruct model is made available in Microsoft Edge 150.0.4070 for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
+The Aion-1.0-Instruct model is available in Microsoft Edge for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
 
 
 <!-- ------------------------------ -->
