@@ -1,6 +1,6 @@
 ---
-title: SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2 SDK n.n.nnnn-prerelease.
+title: SDK 1-0-4999-prerelease, for Runtime 156 (Mmm. dd, yyyy)
+description: Release notes for Microsoft Edge WebView2 SDK 1-0-4999-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/01/2026
 ---
-# Prerelease SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
+# SDK 1-0-4999-prerelease, for Runtime 156 (Mmm. dd, yyyy)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Mmm. dd, yyyy.
 
@@ -87,7 +87,7 @@ Previous phase: [~] (./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md)
+* [Preview Runtime 156.n.nnnn.nn (Mmm. dd, yyyy)](../runtime/156.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
