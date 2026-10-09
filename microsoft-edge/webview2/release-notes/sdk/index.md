@@ -110,6 +110,8 @@ For more information, see [Matching the Runtime version with the SDK version](..
 <!-- ====================================================================== -->
 ## Updating the SDK
 
+<!-- todo: why exactly to update to latest sdk, where the sdk relnotes page is "empty"?  are some of the improvements that are in a linked relnotes page, included in the sdk? -->
+
 WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
 
 To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
