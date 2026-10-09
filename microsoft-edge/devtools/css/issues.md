@@ -112,7 +112,7 @@ The pale inactive properties differ from pale non-inherited properties; see [Inh
 
 Inactive properties have an **Information** button (![Information icon](./issues-images/information-icon.png)).  To get a hint about what went wrong, hover over the **Information** button:
 
-![Inactive CSS declaration with a hint](./issues-images/inactive-css-declaration.png) _todo: redo cleanup .png_
+![Inactive CSS declaration with a hint](./issues-images/inactive-css-declaration.png)
 
 In this example, the `display: block;` property disables `justify-content` and `align-items` that control flex or grid layouts.
 
@@ -129,7 +129,7 @@ The **Styles** tab lists properties in `Inherited from <element-name>` sections 
 * Inherited by default are in regular text.
 * Non-inherited by default are in pale text.
 
-![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/inherited-body-section.png)  _todo: redo cleanup .png_
+![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/inherited-body-section.png)
 
 The pale non-inherited properties differ from pale inactive properties; see [Inactive](#inactive), above.  Non-inherited properties don't have an **Information** button (![Information icon](./issues-images/information-icon.png)), and are shown in the corresponding sections.
 
@@ -148,9 +148,7 @@ Shorthand (concise) properties let you set multiple CSS properties at once and c
 
 The **Styles** tab displays shorthand properties as drop-down lists (![Drop-down icon](./issues-images/drop-down-icon.png)) that contain all the properties that are shortened:
 
-![The shorthand property with a drop-down list](./issues-images/shorthand-property.png)  _todo: redo cleanup .png_
-
-In this example, two of four shortened properties are actually overridden.
+![The "background" property with a drop-down list](./issues-images/shorthand-property.png)
 
 See also:
 * [Shorthand properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Shorthand_properties) at MDN.
@@ -168,7 +166,7 @@ The **Styles** tab displays properties that can't be edited in _italic text_.  F
 
 * Style-related HTML attributes on the element, such as height, width, or color.  You can edit them in the DOM tree and this updates the CSS in the **Styles** tab, but not the other way around.
 
-   ![CSS properties that can't be edited](./issues-images/non-editable-properties.png) _todo: redo cleanup .png_
+   ![CSS properties that can't be edited](./issues-images/non-editable-properties.png)
 
    In the above example, the `height="48"` attribute on an `<svg>` element is set to `50`.  This updates the corresponding property under `svg[Attributes Style]` in the **Styles** tab.
 
@@ -205,19 +203,19 @@ The **Computed** tab displays various properties differently, as follows.
 
 The **Computed** tab lists the properties declared in any stylesheet in regular font, both element's own and inherited.  To see the source of a CSS property, click the Expand button (![Expand icon](./issues-images/expand-icon.png)) next to a CSS property:
 
-![Declared CSS properties](./issues-images/declared-properties.png) _todo: redo cleanup .png_
+![Declared CSS properties](./issues-images/declared-properties.png)
 
 To see the declaration in the **Styles** tab, hover over the expanded property and click the **Expand** button (![Expand icon](./issues-images/expand-icon.png)):
 
-![The Expand button next to the property](./issues-images/arrow-button-next-to-property.png) _todo: redo cleanup .png_
+![The Expand button next to the property](./issues-images/arrow-button-next-to-property.png)
 
 To see the declaration in the **Sources** pane, click the link to the source file:
 
-![The link to the source file](./issues-images/link-to-source-file.png) _todo: redo cleanup .png_
+![The link to the source file](./issues-images/link-to-source-file.png)
 
 For properties with multiple sources, the **Computed** tab shows the cascade winner first:
 
-![A property with multiple sources](./issues-images/property-with-multiple-sources.png) _todo: redo cleanup .png_
+![A property with multiple sources](./issues-images/property-with-multiple-sources.png)
 
 See also:
 * [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction#cascading_order) in _Introduction to the CSS cascade_ at MDN.
