@@ -419,10 +419,6 @@ conceptualContent:
 #             url: ./web-platform/web-platform.md
 #             itemType: overview
 
-            - text: Move users to Microsoft Edge from Internet Explorer
-              url: ./web-platform/ie-to-microsoft-edge-redirection.md
-              itemType: how-to-guide
-
             - text: Tracking prevention in Microsoft Edge
               url: ./web-platform/tracking-prevention.md
               itemType: how-to-guide
