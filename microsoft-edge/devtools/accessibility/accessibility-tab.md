@@ -68,7 +68,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 
 ![The 'Computed Properties' section of the Accessibility tab](./accessibility-tab-images/accessibility-elements-accessibility-computed-properties.png)
 
-Computed accessibility properties are different than computed CSS properties. To learn more about how to view computed CSS properties, see [View only the CSS that is actually applied to an element](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_.
+Computed accessibility properties are different than computed CSS properties. To learn more about how to view computed CSS properties, see [View only the CSS that's actually applied to an element](../css/reference.md#view-only-the-css-thats-actually-applied-to-an-element) in _CSS features reference_.
 
 
 <!-- ====================================================================== -->
