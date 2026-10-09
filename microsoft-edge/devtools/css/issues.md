@@ -72,19 +72,18 @@ The **Styles** tab recognizes many kinds of CSS issues and highlights them in di
 
 The **Styles** tab shows matched selectors in regular text, and unmatched selectors in pale text:
 
-![Matched selector in regular text and unmatched selectors in pale text](./issues-images/matched-selector-regular.png) _todo: redo cleanup .png_
+![Matched selector in regular text and unmatched selectors in pale text](./issues-images/matched-selector-regular.png)
 
 
 <!-- ------------------------------ -->
 #### Invalid values and declarations
 <!-- https://developer.chrome.com/docs/devtools/css/issues#invalid -->
 
-The **Styles** tab crosses out and displays a **Warning** button (![Warning icon](./issues-images/warning-icon.png) todo) next to the following:
-
+The **Styles** tab crosses out and displays a **Warning** icon (![Warning icon](./issues-images/warning-icon.png)) next to the following:
 * An entire CSS declaration (property and value), when the CSS property is invalid or unknown.
 * Just the value, when the CSS property is valid but the value is invalid.
 
-![Invalid property name and invalid property value](./issues-images/invalid-property-name.png) _todo: redo cleanup .png_
+![Invalid property name and invalid property value](./issues-images/invalid-property-name.png)
 
 
 <!-- ------------------------------ -->
@@ -93,7 +92,7 @@ The **Styles** tab crosses out and displays a **Warning** button (![Warning icon
 
 The **Styles** tab crosses out properties that are overridden by other properties according to the cascading order:
 
-![Overridden CSS](./issues-images/overridden.png) _todo: redo cleanup .png_
+![Overridden CSS](./issues-images/overridden.png)
 
 In this example, the `width: 300px;` style attribute on the element overrides `width: 100%` on the `.youtube` class.
 
@@ -105,7 +104,7 @@ See also:
 #### Inactive
 <!-- https://developer.chrome.com/docs/devtools/css/issues#inactive -->
 
-The **Styles** tab displays in pale text and puts an **Information** button (![Information icon](./issues-images/information-icon.png) _todo_) next to a property that's valid but has no effect because of other properties.
+The **Styles** tab displays in pale text and puts an **Information** button (![Information icon](./issues-images/information-icon.png)) next to a property that's valid but has no effect because of other properties.
 
 These pale properties are inactive because of CSS logic, not because of the cascading order.
 
@@ -147,7 +146,7 @@ See also:
 
 Shorthand (concise) properties let you set multiple CSS properties at once and can make your stylesheet more readable.  However, due to the short nature of such properties, you might miss a longhand (precise) property that overrides a property implied by the shorthand.
 
-The **Styles** tab displays shorthand properties as drop-down lists (![Drop-down icon](./issues-images/drop-down-icon.png) todo) that contain all the properties that are shortened:
+The **Styles** tab displays shorthand properties as drop-down lists (![Drop-down icon](./issues-images/drop-down-icon.png)) that contain all the properties that are shortened:
 
 ![The shorthand property with a drop-down list](./issues-images/shorthand-property.png)  _todo: redo cleanup .png_
 
@@ -204,11 +203,11 @@ The **Computed** tab displays various properties differently, as follows.
 #### Declared and inherited
 <!-- https://developer.chrome.com/docs/devtools/css/issues#declared -->
 
-The **Computed** tab lists the properties declared in any stylesheet in regular font, both element's own and inherited.  To see the source of a CSS property, click the Expand button (![Expand icon](./issues-images/expand-icon.png) todo) next to a CSS property:
+The **Computed** tab lists the properties declared in any stylesheet in regular font, both element's own and inherited.  To see the source of a CSS property, click the Expand button (![Expand icon](./issues-images/expand-icon.png)) next to a CSS property:
 
 ![Declared CSS properties](./issues-images/declared-properties.png) _todo: redo cleanup .png_
 
-To see the declaration in the **Styles** tab, hover over the expanded property and click the **Expand** button (![Expand icon](./issues-images/expand-icon.png) _todo_):
+To see the declaration in the **Styles** tab, hover over the expanded property and click the **Expand** button (![Expand icon](./issues-images/expand-icon.png)):
 
 ![The Expand button next to the property](./issues-images/arrow-button-next-to-property.png) _todo: redo cleanup .png_
 
