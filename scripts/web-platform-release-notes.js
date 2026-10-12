@@ -208,7 +208,7 @@ async function main() {
   let nextBetaReleaseDateMonth = null;
   let nextBetaVersion = null;
 
-  // Optionally, force the version to generate the notes for, ignoring the date window.
+  // Optionally, force the version for which to generate notes, ignoring the date window.
   // Usage: --version=156
   const versionArg = process.argv.find(arg => arg.startsWith('--version='));
   const forcedVersion = versionArg ? versionArg.split('=')[1].trim() : null;
