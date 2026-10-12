@@ -208,7 +208,25 @@ async function main() {
   let nextBetaReleaseDateMonth = null;
   let nextBetaVersion = null;
 
-  for (let i = 0; i < releasesAsArray.length; i++) {
+  // Optionally, force the version to generate the notes for, ignoring the date window.
+  // Usage: --version=156
+  const versionArg = process.argv.find(arg => arg.startsWith('--version='));
+  const forcedVersion = versionArg ? versionArg.split('=')[1].trim() : null;
+
+  if (forcedVersion) {
+    const release = releasesAsArray.find(r => r.engine_version === forcedVersion);
+    if (!release) {
+      console.error(`Version ${forcedVersion} not found in the browser-compat-data Edge releases.`);
+      process.exit(1);
+    }
+    nextBetaVersion = release.engine_version;
+    nextBetaReleaseDate = release.release_date;
+    nextBetaReleaseDateYear = nextBetaReleaseDate?.split("-")[0];
+    nextBetaReleaseDateMonth = nextBetaReleaseDate?.split("-")[1];
+    console.log(`Forced version ${nextBetaVersion} (${nextBetaReleaseDate}).`);
+  }
+
+  for (let i = 0; !forcedVersion && i < releasesAsArray.length; i++) {
     const release = releasesAsArray[i];
     const date = new Date(release.release_date);
 
@@ -299,7 +317,7 @@ async function main() {
   const eleventy = new Eleventy(".", "_site", {
     config: function (eleventyConfig) {
       eleventyConfig.addShortcode("monthDayYear", longDate);
-      eleventyConfig.addShortCode("msDate", msDate);
+      eleventyConfig.addShortcode("msDate", msDate);
 
       return {
         dir: {
