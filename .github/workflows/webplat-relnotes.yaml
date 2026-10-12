@@ -5,6 +5,11 @@ name: Generate beta relnotes
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Force generating the notes for this version (e.g. 156), ignoring the date window'
+        required: false
+        type: string
   schedule:
     # once a day
     - cron: '0 0 * * *'
@@ -35,4 +40,4 @@ jobs:
       - name: Generate release notes
         run: |
           cd scripts
-          actor=${{ github.actor }} token=${{ secrets.GITHUB_TOKEN }} node web-platform-release-notes.js
+          actor=${{ github.actor }} token=${{ secrets.GITHUB_TOKEN }} node web-platform-release-notes.js ${{ inputs.version && format('--version={0}', inputs.version) || '' }}
