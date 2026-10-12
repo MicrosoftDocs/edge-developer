@@ -90,35 +90,6 @@ Previous phase: [Crash Report in ProcessFailed event](./1-0-4126-prerelease.md#c
 
 
 <!-- ====================================================================== -->
-## Promotions to Phase 2 (Stable in Prerelease)
-
-The following APIs have been promoted from Phase 1: Experimental in Prerelease, to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
-
-
-<!-- ------------------------------ -->
-#### heading
-
-description
-
-Previous phase: [~] (./~.md#~) in _~_.
-
-##### [.NET/C#](#tab/dotnetcsharp)
-
-##### [WinRT/C#](#tab/winrtcsharp)
-
-##### [Win32/C++](#tab/win32cpp)
-
----
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-* Fixed behavior.  ([Issue #] ())
-
-
-<!-- ====================================================================== -->
 ## See also
 
 * [Preview Runtime 156.0.4314.8 (Oct. 12, 2026)](../runtime/156.md)
