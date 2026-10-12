@@ -227,7 +227,7 @@ See also:
 
 The **Computed** tab lists property values calculated at runtime in pale text:
 
-![Property values calculated at runtime](./issues-images/property-values-calculated.png) _todo: redo cleanup .png_
+![Property values calculated at runtime](./issues-images/property-values-calculated.png)
 
 In this example, Microsoft Edge calculated the following for the `<ul>` element:
 * The `width` relative its parent, a `<div>`.
@@ -249,7 +249,7 @@ See also:
 
 To break this long list into categories, select the **Group** checkbox:
 
-![All properties grouped](./issues-images/all-properties-grouped.png) _todo: redo cleanup .png_
+![All properties grouped](./issues-images/all-properties-grouped.png)
 
 This example shows the initial values for non-inherited properties under **Animation** and custom properties under **CSS Variables**.
 
