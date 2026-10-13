@@ -24,6 +24,8 @@ ms.date: 10/08/2026
 # Find invalid, overridden, inactive, and other CSS
 <!-- https://developer.chrome.com/docs/devtools/css/issues -->
 
+_todo: update text below pngs that describes the png_
+
 This guide assumes that you're familiar with inspecting CSS in Microsoft Edge DevTools.  To learn the basics, see [Get started viewing and changing CSS](./index.md).
 
 **Detailed contents:**
@@ -262,11 +264,11 @@ To investigate a specific CSS property and its potential duplicates, type that C
 
 The **Filter** text box in the **Styles** tab:
 
-![Filter styles](./issues-images/styles-tab-filter-text-box.png) _todo: redo cleanup .png_
+![Filter styles](./issues-images/styles-tab-filter-text-box.png)
 
 The **Filter** text box in the **Computed** tab:
 
-![Filter computed css](./issues-images/computed-tab-filter-text-box.png) _todo: redo cleanup .png_
+![Filter computed css](./issues-images/computed-tab-filter-text-box.png)
 
 See also:
 * [Search and filter an element's CSS](./reference.md#search-and-filter-an-elements-css) in _CSS features reference_.
