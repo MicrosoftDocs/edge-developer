@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Oct. 12,
 
 [NuGet package for WebView2 SDK 1.0.4312-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4312-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 156.0.4312.0 or later; see [Preview Runtime 156.0.4314.8 (Oct. 12, 2026)](../runtime/156.md).
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 156.0.4312.0 or later; see [Runtime 156.n.nnnn.nn (Mmm. dd, yyyy)](../runtime/156.md).
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ Previous phase: [Crash Report in ProcessFailed event](./1-0-4126-prerelease.md#c
 <!-- ====================================================================== -->
 ## See also
 
-* [Preview Runtime 156.0.4314.8 (Oct. 12, 2026)](../runtime/156.md)
+* [Runtime 156.n.nnnn.nn (Mmm. dd, yyyy)](../runtime/156.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
