@@ -218,9 +218,9 @@ Auto-connecting to an already running Edge instance is useful:
 
 There are have two options:
 
-**Option A:** Start Microsoft Edge with the remote debugging flag:
+**Option A:** Start Microsoft Edge with the remote debugging flag and a non-default user data directory:
 
-`msedge.exe --remote-debugging-port=9222`
+`msedge.exe --remote-debugging-port=9222 --user-data-dir="C:\temp\edge-debug"`
 
 **Option B:** In the **Inspect with Edge Developer Tools** special page, enable remote debugging, as follows:
 
@@ -254,7 +254,7 @@ To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combin
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=%LocalAppData%\\Microsoft\\Edge\\User Data"
+        "--user-data-dir=C:\\temp\\edge-debug"
       ]
     }
   }
