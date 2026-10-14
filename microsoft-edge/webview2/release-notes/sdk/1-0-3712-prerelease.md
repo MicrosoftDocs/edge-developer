@@ -1,5 +1,5 @@
 ---
-title: SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+title: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
 description: Release notes for Microsoft Edge WebView2 SDK 1.0.3712-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 12/08/2025
 ---
-# SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+# Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Dec. 8, 2025.
 
@@ -135,6 +135,7 @@ N/A
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)](./1-0-3719-77.md)
 * [Runtime 144.0.3719.77 (Jan. 27, 2026)](../runtime/144.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

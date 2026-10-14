@@ -1,5 +1,5 @@
 ---
-title: SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+title: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
 description: Release notes for Microsoft Edge WebView2 SDK 1.0.3848-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 02/16/2026
 ---
-# SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+# Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Feb. 16, 2026.
 
@@ -170,6 +170,7 @@ See also [Breaking change: Enable WebView2-specific Javascript APIs for service 
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)
 * [Runtime 146.0.3856.49 (Mar. 16, 2026)](../runtime/146.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

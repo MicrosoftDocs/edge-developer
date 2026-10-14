@@ -148,7 +148,7 @@ recognition.lang = "en-US";
 recognition.processLocally = true;
 ```
 
-As of Microsoft Edge 150.0.4076, the following input languages are supported for local speech recognition:
+The following input languages are supported for local speech recognition:
 * English (en-US)
 * German (de-DE)
 * Italian (it-IT)
