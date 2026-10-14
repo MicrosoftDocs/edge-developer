@@ -47,22 +47,26 @@ Detailed contents:
 
 To open the **Properties** tab:
 
-1. Open DevTools. By default, the Elements panel opens.
+1. Open DevTools. By default, the **Elements** tool opens.
 
 1. In the DOM tree, select a node.
 
-1. Click the **Properties** tab.  If the tab isn't displayed, click ![More double_arrow] todo png, and then select **Properties** from the dropdown menu.
+1. Click the **Properties** tab.  If the tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
 
-   ![The Properties tab in the Elements tool] todo png
+   The **Properties** tab opens:
+
+   ![The Properties tab in the Elements tool](./properties-images/properties-tab.png)
+
+   This screenshot shows the [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo, from the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
 
 <!-- ====================================================================== -->
 ## Spot own properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#spot-own-properties -->
 
-The **Properties** tab sorts and displays the object's own properties first and in bold font.
+The **Properties** tab in the **Elements** tool sorts and displays the object's own properties first, and in bold font:
 
-![alt text] todo png
+![Own properties](./properties-images/own-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ====================================================================== -->
@@ -73,22 +77,22 @@ The **Properties** tab evaluates accessors on built-in elements and displays the
 
 To find the origin of an inherited property, expand an object, then its [[Prototype]], then the nested [[Prototype]], and so on.
 
-![Tracing the size property up to its getter on the prototype chain] todo png
+![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png.png) _todo: replace by edge screenshot_
 
 In this example, you can trace where the inherited size property came from by locating the original own (bold) property on the prototype chain together with the corresponding getter.
 
 Additionally, prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
 
-![Prototype-specific properties] todo png
+![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ====================================================================== -->
 ## Filter properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#filter-properties -->
 
-To quickly find a property, start typing its name or value in the Filter input box.
+To quickly find a property, start typing its name or value in the **Filter** input box:
 
-![Filter] todo png
+![Filtering the properties](./properties-images/filter-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ====================================================================== -->
@@ -97,9 +101,9 @@ To quickly find a property, start typing its name or value in the Filter input b
 
 By default, the **Properties** tab doesn't show properties with null and undefined values.
 
-To see all properties, select the **Show all** checkbox.
+To see all properties, select the **Show all** checkbox:
 
-![Properties with null values] todo png
+![Properties with null values](./properties-images/show-all-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ====================================================================== -->
@@ -111,31 +115,31 @@ The **Properties** tab in the **Elements** tool shows various kinds of propertie
 
 <!-- ------------------------------ -->
 #### Simple properties
-https://developer.chrome.com/docs/devtools/dom/properties#simple-properties
+<!-- https://developer.chrome.com/docs/devtools/dom/properties#simple-properties -->
 
-Simple properties are pairs of `<name>: <value>`.
+Simple properties are `<name>: <value>` pairs:
 
-![Simple properties] todo png
+![Simple properties](./properties-images/simple-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ------------------------------ -->
 #### Objects and arrays
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#objects-and-arrays -->
 
-Collapsible (arrow_right) properties are objects {} or arrays [].
+Collapsible properties have an expander button (![Expander icon](./properties-images/expander-icon.png)) and are objects (`{}`) or arrays (`[]`):
 
-![Collapsible properties] todo png
+![Collapsible properties](./properties-images/collapsible-properties.png) _todo: replace by edge screenshot_
 
-For more information on inspecting JavaScript objects, see [Inspect object properties] todo link.
+For more information on inspecting JavaScript objects, see [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_ in the Chrome docs.<!--todo: update downstream article, link to local -->
 
 
 <!-- ------------------------------ -->
 #### Properties that correspond to DOM nodes
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#dom-nodes -->
 
-Properties that correspond to DOM nodes are links.  To select the relevant node in the DOM tree, click a link.
+Properties that correspond to DOM nodes are links.  To select the relevant node in the DOM tree, click a link:
 
-![Link to the head DOM node] todo png
+![Link to the head DOM node](./properties-images/head-dom-node-link.png) _todo: replace by edge screenshot_
 
 
 <!-- ------------------------------ -->
@@ -146,7 +150,7 @@ Properties in bold font are the object's own properties; they are defined direct
 
 Properties in regular font are inherited from the prototype chain.  To display inherited properties, DevTools evaluates relevant accessors on built-in HTML elements.
 
-![Own and inherited properties] todo png
+![Own and inherited properties](./properties-images/own-and-inherited-properties.png) _todo: replace by edge screenshot_
 
 DevTools lists own properties first, to make them easier to spot.
 
@@ -159,7 +163,7 @@ Enumerable properties are bright in color.
 
 Non-enumerable properties are muted.
 
-![Enumerable and non-enumerable properties] todo png
+![Enumerable and non-enumerable properties](./properties-images/enumerable-and-non-enumerable-properties.png) _todo: replace by edge screenshot_
 
 You can iterate over the enumerable properties by using a `for … in` loop or the `Object.keys()` method.
 
@@ -168,11 +172,11 @@ You can iterate over the enumerable properties by using a `for … in` loop or t
 #### Methods
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#methods -->
 
-Methods are marked with an _f ()_.
+Methods are indicated by _f ()_:
 
-![Method] todo png
+![Method](./properties-images/method.png) _todo: replace by edge screenshot_
 
-For more information on functions, see [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) (todo: add destination section downstream, link to it) in _Console features reference_.
+For more information on functions, see [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_ in the Chrome docs.<!--todo: update downstream article, link to local -->
 
 
 <!-- ====================================================================== -->
