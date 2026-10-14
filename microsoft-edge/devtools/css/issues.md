@@ -24,8 +24,6 @@ ms.date: 10/14/2026
 # Find invalid, overridden, inactive, and other CSS
 <!-- https://developer.chrome.com/docs/devtools/css/issues -->
 
-_todo: update text below pngs that describes the png_
-
 This guide assumes that you're familiar with inspecting CSS in Microsoft Edge DevTools.  To learn the basics, see [Get started viewing and changing CSS](./index.md).
 
 **Detailed contents:**
