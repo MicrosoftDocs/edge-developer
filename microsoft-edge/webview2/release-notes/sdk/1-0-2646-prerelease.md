@@ -275,6 +275,9 @@ Previous phase: [WebMessageObjects API: Inject DOM objects; file system handle](
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Release SDK 1.0.2739.15, for Runtime 128 (Aug. 26, 2024)](./1-0-2739-15.md)
+* [Prerelease SDK 1.0.2730-prerelease, for Runtime 128 (Aug. 7, 2024)](./1-0-2730-prerelease.md)
 * [Runtime 128.0.2739.15 (Aug. 26, 2024)](../runtime/128.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

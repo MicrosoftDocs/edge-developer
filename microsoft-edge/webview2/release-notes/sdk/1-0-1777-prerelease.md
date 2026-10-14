@@ -114,6 +114,7 @@ Previous phase: [Profile management: custom data partition, cookie manager, and 
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1823.32, for Runtime 114 (Jun. 5, 2023)](./1-0-1823-32.md)
 * [Runtime 114.0.1823.32 (Jun. 5, 2023)](../runtime/114.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

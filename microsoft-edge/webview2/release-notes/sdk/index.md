@@ -6,35 +6,32 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 08/24/2026
+ms.date: 09/28/2026
 ---
 # Release notes for WebView2 SDKs
 
 <!-- maint:
-list past 10 releases
+list past 10 potential Release SDK releases eg 155-146
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
 Release notes for recent SDKs:
-* [SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
-* [SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
-* [SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
-* [SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
-* [SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
-* [SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
-* [SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)](./1-0-4022-49.md)
-* [SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
-* [SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
-* [SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
-* [SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
-* [SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
-* [SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)
-* [SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
-* [SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)](./1-0-3800-47.md)
-* [SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)](./1-0-3796-prerelease.md)
-* [SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)](./1-0-3719-77.md)
-* [SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)](./1-0-3712-prerelease.md)
-* [SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)](./1-0-3650-58.md)
-* [SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)](./1-0-3650-prerelease.md)
+* [Prerelease SDK 1.0.4312-prerelease, for Runtime 156 (Oct. 12, 2026)](./1-0-4312-prerelease.md)
+* [Release SDK 1.0.4258.31, for Runtime 154 (Sep. 28, 2026)](./1-0-4258-31.md)
+* [Prerelease SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)](./1-0-4255-prerelease.md)
+* [Release SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)](./1-0-4191-47.md)
+* [Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)](./1-0-4181-prerelease.md)
+* [Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)](./1-0-4129-50.md)
+* [Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)](./1-0-4126-prerelease.md)
+* [Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)](./1-0-4078-44.md)
+* [Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)](./1-0-4071-prerelease.md)
+* [Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)](./1-0-4022-49.md)
+* [Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)](./1-0-4015-prerelease.md)
+* [Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)](./1-0-3967-48.md)
+* [Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)](./1-0-3965-prerelease.md)
+* [Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)](./1-0-3912-50.md)
+* [Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)](./1-0-3908-prerelease.md)
+* [Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)](./1-0-3856-49.md)
+* [Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)](./1-0-3848-prerelease.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
@@ -113,6 +110,8 @@ For more information, see [Matching the Runtime version with the SDK version](..
 <!-- ====================================================================== -->
 ## Updating the SDK
 
+<!-- todo: why exactly to update to latest sdk, where the sdk relnotes page is "empty"?  are some of the improvements that are in a linked relnotes page, included in the sdk? -->
+
 WebView2 changes may require an update to the Runtime, SDK, or both.  Most new APIs require both Runtime and SDK updates.
 
 To install or update the WebView2 SDK, see [Install or update the WebView2 SDK](../../how-to/machine-setup.md#install-or-update-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
@@ -126,7 +125,7 @@ See also:
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0; see [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md).  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](../../how-to/set-preview-channel.md).
+To use a Prerelease SDK along with a Microsoft Edge preview channel, see [Switch to a preview channel to test upcoming APIs and features](../../how-to/set-preview-channel.md).
 
 <!--
 Cross-framework API conventions

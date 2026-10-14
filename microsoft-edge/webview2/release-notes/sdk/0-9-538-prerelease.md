@@ -25,6 +25,9 @@ This SDK was last updated Jun. 8, 2020.
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Prerelease SDK 0.9.579-prerelease, for Runtime 85 (Jul. 20, 2020)](./0-9-579-prerelease.md)
+* [Release SDK 0.9.538, for Runtime 85 (Jun. 8, 2020)](./0-9-538.md)
 * [Runtime 85.9.538 (Jun. 8, 2020)](../runtime/85.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

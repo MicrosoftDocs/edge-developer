@@ -32,6 +32,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.2849.39, for Runtime 130 (Oct. 21, 2024)](./1-0-2849-39.md)
 * [Runtime 130.0.2849.39 (Oct. 21, 2024)](../runtime/130.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
