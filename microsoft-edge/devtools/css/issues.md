@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/08/2026
+ms.date: 10/14/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -56,7 +56,7 @@ Suppose that you added some CSS to an element and want to make sure the new styl
 
 The first thing to do is inspect the element and make sure that your new CSS is actually applied to the element.  See [Select an element](./reference.md#select-an-element) in _CSS features reference_.
 
-Sometimes, you'll see your new CSS in the **Elements** > **Styles** tab but your new CSS is in pale font, non-editable, crossed out, or has a **Warning** or **Hint** button next to it.
+Sometimes, you'll see your new CSS in the **Elements** > **Styles** tab but your new CSS is in dimmed font, non-editable, crossed out, or has a **Warning** or **Hint** button next to it.
 
 The examples in this article are from the [Find CSS issues](https://microsoftedge.github.io/Demos/devtools-css-issues/) demo.  Source code: [/devtools-css-issues/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-issues/).
 
@@ -72,9 +72,9 @@ The **Styles** tab recognizes many kinds of CSS issues and highlights them in di
 #### Matched and unmatched selectors
 <!-- https://developer.chrome.com/docs/devtools/css/issues#selectors -->
 
-The **Styles** tab shows matched selectors in regular text, and unmatched selectors in pale text:
+The **Styles** tab shows matched selectors in regular text, and unmatched selectors in dimmed text:
 
-![Matched selector in regular text and unmatched selectors in pale text](./issues-images/matched-selector-regular.png)
+![Matched selector in regular text and unmatched selectors in dimmed text](./issues-images/matched-selector-regular.png)
 
 
 <!-- ------------------------------ -->
@@ -96,7 +96,9 @@ The **Styles** tab crosses out properties that are overridden by other propertie
 
 ![Overridden CSS](./issues-images/overridden.png)
 
-In this example, the `width: 300px;` style attribute on the element overrides `width: 100%` on the `.youtube` class.
+In this example, the `font-weight: 500;` style attribute overrides `font-weight: normal;`.
+
+The class name `.overridden` is arbitrary; this specific class name is not required.
 
 See also:
 * [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction#cascading_order) in _Introduction to the CSS cascade_ at MDN.
@@ -106,17 +108,17 @@ See also:
 #### Inactive
 <!-- https://developer.chrome.com/docs/devtools/css/issues#inactive -->
 
-The **Styles** tab displays in pale text and puts an **Information** button (![Information icon](./issues-images/information-icon.png)) next to a property that's valid but has no effect because of other properties.
+The **Styles** tab displays in dimmed text and puts an **Information** button (![Information icon](./issues-images/information-icon.png)) next to a property that's valid but has no effect because of other properties.
 
-These pale properties are inactive because of CSS logic, not because of the cascading order.
+These dimmed properties are inactive because of CSS logic, not because of the cascading order.
 
-The pale inactive properties differ from pale non-inherited properties; see [Inherited and non-inherited](#inherited-and-non-inherited), below.
+The dimmed inactive properties differ from dimmed non-inherited properties; see [Inherited and non-inherited](#inherited-and-non-inherited), below.
 
 Inactive properties have an **Information** button (![Information icon](./issues-images/information-icon.png)).  To get a hint about what went wrong, hover over the **Information** button:
 
 ![Inactive CSS declaration with a hint](./issues-images/inactive-css-declaration.png)
 
-In this example, the `display: block;` property disables `justify-content` and `align-items` that control flex or grid layouts.
+In this example, the `display: block;` property disables the `justify-content` property that controls flex or grid layouts.
 
 See also:
 * [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction#cascading_order) in _Introduction to the CSS cascade_ at MDN.
@@ -129,13 +131,13 @@ See also:
 The **Styles** tab lists properties in `Inherited from <element-name>` sections depending on their default inheritance:
 
 * Inherited by default are in regular text.
-* Non-inherited by default are in pale text.
+* Non-inherited by default are in dimmed text.
 
 ![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/inherited-body-section.png)
 
-The pale non-inherited properties differ from pale inactive properties; see [Inactive](#inactive), above.  Non-inherited properties don't have an **Information** button (![Information icon](./issues-images/information-icon.png)), and are shown in the corresponding sections.
+The dimmed non-inherited properties differ from dimmed inactive properties; see [Inactive](#inactive), above.  Non-inherited properties don't have an **Information** button (![Information icon](./issues-images/information-icon.png)), and are shown in the corresponding sections.
 
-Overriding default inheritance doesn't affect the way the **Styles** tab displays the properties: pale or not.
+Overriding default inheritance doesn't affect the way the **Styles** tab displays the properties: dimmed or not.
 
 See also:
 * [Inheritance](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Inheritance) at MDN.
@@ -148,9 +150,9 @@ See also:
 
 Shorthand (concise) properties let you set multiple CSS properties at once and can make your stylesheet more readable.  However, due to the short nature of such properties, you might miss a longhand (precise) property that overrides a property implied by the shorthand.
 
-The **Styles** tab displays shorthand properties as drop-down lists (![Drop-down icon](./issues-images/drop-down-icon.png)) that contain all the properties that are shortened:
+The **Styles** tab displays shorthand properties as dropdown lists (![Dropdown icon](./issues-images/dropdown-icon.png)) that contain all the properties that are shortened:
 
-![The "background" property with a drop-down list](./issues-images/shorthand-property.png)
+![The "background" property with a dropdown list](./issues-images/shorthand-property.png)
 
 See also:
 * [Shorthand properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Shorthand_properties) at MDN.
@@ -170,7 +172,7 @@ The **Styles** tab displays properties that can't be edited in _italic text_.  F
 
    ![CSS properties that can't be edited](./issues-images/non-editable-properties.png)
 
-   In the above example, the `height="48"` attribute on an `<svg>` element is set to `50`.  This updates the corresponding property under `svg[Attributes Style]` in the **Styles** tab.
+   In the above example, the `text-align` attribute on an `<h2>` element is set to `center`.  This updates the corresponding property under `h2[Attributes Style]` in the **Styles** tab.
 
 
 <!-- ====================================================================== -->
@@ -207,9 +209,9 @@ The **Computed** tab lists the properties declared in any stylesheet in regular 
 
 ![Declared CSS properties](./issues-images/declared-properties.png)
 
-To see the declaration in the **Styles** tab, hover over the expanded property and click the **Expand** button (![Expand icon](./issues-images/expand-icon.png)):
+To see the declaration in the **Styles** tab, hover over the expanded property and click the right-arrow button (![Right-arrow icon](./issues-images/right-arrow-icon.png)):
 
-![The Expand button next to the property](./issues-images/arrow-button-next-to-property.png)
+![The right-arrow button next to a property](./issues-images/arrow-button-next-to-property.png)
 
 To see the declaration in the **Sources** pane, click the link to the source file:
 
@@ -227,13 +229,12 @@ See also:
 #### Runtime
 <!-- https://developer.chrome.com/docs/devtools/css/issues#runtime -->
 
-The **Computed** tab lists property values calculated at runtime in pale text:
+The **Computed** tab lists property values that are calculated at runtime in dimmed text:
 
 ![Property values calculated at runtime](./issues-images/property-values-calculated.png)
 
-In this example, Microsoft Edge calculated the following for the `<ul>` element:
-* The `width` relative its parent, a `<div>`.
-* The `height` relative to its children, the two `<li>` elements.
+In this example, Microsoft Edge calculated the following for the `<h2>` element:
+* The `height` relative to its parent, a `<section>` element.<!-- todo: review -->
 
 
 <!-- ------------------------------ -->
@@ -241,10 +242,10 @@ In this example, Microsoft Edge calculated the following for the `<ul>` element:
 <!-- https://developer.chrome.com/docs/devtools/css/issues#inherited-and-default -->
 
 To make the **Computed** tab show _all_ properties and their values, select the **Show all** checkbox.  Showing all properties includes:
-* Initial values for non-inherited properties in pale text.
+* Initial values for non-inherited properties in dimmed text.
 * Custom properties—with a -- prefix in regular text.  Such properties are inherited by default.
 
-Overriding default inheritance doesn't affect whether the **Computed** tab displays the properties as pale or regular text.
+Overriding default inheritance doesn't affect whether the **Computed** tab displays the properties as dimmed or regular text.
 
 See also:
 * [Overriding inheritance, an example](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Inheritance#overriding_inheritance_an_example) in _Inheritance_ at MDN.
@@ -253,7 +254,9 @@ To break this long list into categories, select the **Group** checkbox:
 
 ![All properties grouped](./issues-images/all-properties-grouped.png)
 
-This example shows the initial values for non-inherited properties under **Animation** and custom properties under **CSS Variables**.
+This example shows:
+* The initial values for non-inherited properties, under **Animation**.  _todo: in png, expand Animation section & add red box?  revise list item?  upstream:_ https://developer.chrome.com/docs/devtools/css/issues#inherited-and-default
+* The initial values for custom properties, under **CSS Variables**.
 
 
 <!-- ====================================================================== -->
