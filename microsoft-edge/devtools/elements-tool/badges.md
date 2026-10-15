@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/15/2026
+ms.date: 10/14/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -24,6 +24,13 @@ ms.date: 07/15/2026
 # Badges reference
 <!-- https://developer.chrome.com/docs/devtools/elements/badges -->
 
+_todo in each section:_
+* format text
+* add links
+* create chrome pngs
+* change pngs to show edge
+* convert inline code examples to demos in Demos repo
+
 Toggle various overlays and speed up DOM tree navigation with this comprehensive reference of badges in the **Elements** tool.
 
 
@@ -33,62 +40,80 @@ Toggle various overlays and speed up DOM tree navigation with this comprehensive
 
 To show or hide certain badges:
 
-1. Open DevTools.
+1. [Open DevTools](https://developer.chrome.com/docs/devtools/open#elements).
 
-1. Right-click an element in the DOM tree and check one or several badges in the Badge settings sub-menu.
+1. Right-click an element in the DOM tree, and then select one or several badges in the **Badge settings** submenu, so that checkmarks appear in the submenu:
 
-   ![The 'Badge settings' menu] todo png
+   ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png) todo edge
 
-The Elements panel shows the selected badges next to the appropriate elements in the DOM tree. The next sections explain every badge.
+The **Elements** tool shows the selected badges next to the appropriate elements in the DOM tree.  The following sections explain each badge.
 
 
 <!-- ====================================================================== -->
 ## View-source
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#view-source -->
 
-The view-source badge is next to the `<html>` tag at the root of the HTML page. Click it to view the source of your page in the Sources panel.
+The `view-source` badge is next to the `<html>` tag at the root of the HTML page.  To view the source of your page in the **Sources** tool, click the `view-source` badge:
 
-The 'view source' badge.
+![The 'view source' badge](./badges-images/view-source-badge.png) todo edge
 
-This badge provides an alternative workflow to the View Page Source option in Chrome's page context (right-click) menu:
+The `view-source` badge provides an alternative workflow to the **View page source** menuitem in the webpage's context menu (right-click menu), as follows:
 
-In Chrome, right-click > Inspect a page.
-In the Elements panel, click the view-source badge next to the `<html>` tag.
-Inspect the page source in the Sources panel.
+1. In Microsoft Edge, right-click a webpage, and then select **Inspect**.
+
+   DevTools opens.
+
+1. In DevTools, select the **Elements** tool.
+
+1. In the DOM tree, next to the `<html>` tag, click the `view-source` badge.
+
+   The **Sources** tool opens.
+
+1. Inspect the page source.
 
 
 <!-- ====================================================================== -->
 ## Grid
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#grid -->
 
-An HTML element is a grid container if its display CSS property is set to grid or inline-grid. Such elements have grid badges next to them that toggle the corresponding overlays.
+An HTML element is a _grid container_ if its `display` CSS property is set to `grid` or `inline-grid`.  Such an element has a `grid` badge next to it that toggles the corresponding overlay.
+
+See also:
+* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
 
 Toggle the overlay on the following preview:
 
 todo: convert inline code to Demos repo dir
 
-Inspect the element in the preview.
-In the DOM tree, click the grid badge next to the element and observe the overlay.
-Grid overlay.
+1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
-The overlay shows columns, rows, their numbers, and gaps.
+1. In the DOM tree, click the `grid` badge next to the element and observe the overlay:
 
-To learn how to debug grid layout, see Inspect CSS grid.
+   ![Grid overlay](./badges-images/grid-overlay.png) todo edge
+
+   The overlay shows columns, rows, their numbers, and gaps.
+
+To learn how to debug grid layout, see [Inspect CSS Grid layouts](../css/grid.md).
 
 
 <!-- ====================================================================== -->
 ## Subgrid
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#subgrid -->
 
-A subgrid is a nested grid that uses the same tracks as its parent grid. An element is a subgrid container if one or both of its grid-template-columns, grid-template-rows properties are set to subgrid. Such elements have subgrid badges next to them that toggle the corresponding overlays.
+A _subgrid_ is a nested grid that uses the same tracks as its parent grid.  An element is a _subgrid container_ if one or both of its `grid-template-columns`, `grid-template-rows` properties are set to `subgrid`.  Such an element has a `subgrid` badge next to it that toggles the corresponding overlay.
+
+See also:
+* [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.
 
 Toggle the overlay on the following preview:
 
 todo: convert inline code to Demos repo dir
 
-Inspect the element in the preview.
-In the DOM tree, click the subgrid badge next to the element and observe the overlay.
-Subgrid overlay.
+1. Inspect the element in the preview.
+
+1. In the DOM tree, click the subgrid badge next to the element and observe the overlay:
+
+   ![Subgrid overlay](./badges-images/subgrid-overlay.png) todo edge
 
 The overlay shows columns, rows, their numbers, and gaps of a subgrid.
 
@@ -97,19 +122,24 @@ The overlay shows columns, rows, their numbers, and gaps of a subgrid.
 ## Flex
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#flex -->
 
-An HTML element is a flex container if its display CSS property is set to flex or inline-flex. Such elements have flex badges next to them that toggle the corresponding overlays.
+An HTML element is a _flex container_ if its `display` CSS property is set to `flex` or `inline-flex`.  Such an element has a `flex` badge next to it that toggles the corresponding overlay.
+
+See also:
+* [CSS flexible box layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout) at MDN.
 
 Toggle the overlay on the following preview:
 
 todo: convert inline code to Demos repo dir
 
-Inspect the element in the preview.
-In the DOM tree, click the flex badge next to the element and observe the overlay.
-Flex overlay.
+1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
-The overlay shows child element positions.
+1. In the DOM tree, click the flex badge next to the element and observe the overlay:
 
-To learn how to debug flex layouts, see Inspect and debug CSS flexbox.
+   ![Flex overlay](./badges-images/flex-overlay.png) todo edge
+
+   The overlay shows child element positions.
+
+To learn how to debug flex layouts, see [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox).
 
 
 <!-- ====================================================================== -->
@@ -211,7 +241,7 @@ Get back to the slot's content by clicking the ink_selectionreveal badge.
 
 This badge helps you understand the concept of the top layer and visualize it. The top layer renders content on top of all other layers, regardless of z-index. When you open a `<dialog>` element using the .showModal() method, the browser puts it into the top layer.
 
-To help you visualize top layer elements, the Elements panel adds a #top-layer container to the DOM tree after the closing `</html>` tag.
+To help you visualize top layer elements, the **Elements** tool adds a #top-layer container to the DOM tree after the closing `</html>` tag.
 
 Top layer elements have ink_selectiontop-layer (N) badges next to them, where N is the element's index number. The badges are links to the corresponding elements in the #top-layer container.
 
@@ -221,7 +251,7 @@ todo: convert inline code to Demos repo dir
 
 In the preview, click Open dialog.
 Inspect the dialog.
-In the DOM tree, click the ink_selectiontop-layer (1) badge next to the `<dialog>` element. The Elements panel takes you to the corresponding element in the #top-layer container after the closing `</html>` tag. The top-layer container and badge.
+In the DOM tree, click the ink_selectiontop-layer (1) badge next to the `<dialog>` element. The **Elements** tool takes you to the corresponding element in the #top-layer container after the closing `</html>` tag. The top-layer container and badge.
 Key point: The ink_selectiontop-layer (N) badge has a paired ink_selectionreveal badge that takes you back.
 Get back to the `<dialog>` element by clicking the ink_selectionreveal badge next to the element or its ::backdrop.
 
@@ -230,11 +260,11 @@ Get back to the `<dialog>` element by clicking the ink_selectionreveal badge nex
 ## Media
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#media -->
 
-The media badge is turned off by default. When turned on, it appears next to `<audio>` and `<video>` elements.  Click this badge to open the Media panel and debug your media.
+The media badge is turned off by default. When turned on, it appears next to `<audio>` and `<video>` elements.  Click this badge to open the **Media** tool and debug your media.
 
 The media badge turned on in badge settings and displayed next to the video element.
 
-For more information, see Debug media players with the Media panel.
+For more information, see Debug media players with the **Media** tool.
 
 
 <!-- ====================================================================== -->
@@ -251,7 +281,7 @@ todo: convert inline code to Demos repo dir
 
 In the preview, click TOGGLE POPOVER.
 Inspect the popover that appears.
-In the DOM tree, click the popover badge next to the `<div popover>` element. The Elements panel shows you top-layer badge.
+In the DOM tree, click the popover badge next to the `<div popover>` element. The **Elements** tool shows you top-layer badge.
 
 The popover badge next to the element with a popover attribute.
 
@@ -285,6 +315,14 @@ todo: convert inline code to Demos repo dir
 
 See also:
 * [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article -->
+
+* [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) - demo.<!-- link not in article -->
+   * [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix/) - source code.<!-- link not in article -->
 
 
 <!-- ====================================================================== -->
