@@ -549,7 +549,7 @@
                       displayName: Elements tool
 
                     - name: Badges reference
-                      href: ./devtools/elements/badges.md
+                      href: ./devtools/elements-tool/badges.md
                       displayName: Elements tool
 
                 - name: CSS

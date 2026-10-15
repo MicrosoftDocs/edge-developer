@@ -208,7 +208,7 @@ todo: convert preview to demos repo
 
    The scroll-snap overlay is displayed:
 
-   ![Scroll-snap overlay] () todo edge
+   ![Scroll-snap overlay](./badges-images/scroll-snap-overlay.png) todo edge
 
 The overlay shows element positions and snap points.
 
