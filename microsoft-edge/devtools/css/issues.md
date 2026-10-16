@@ -93,7 +93,7 @@ The **Styles** tab displays in dimmed text and puts an **Information** button (!
 
 These dimmed properties are inactive because of CSS logic, not because of the cascading order.
 
-The dimmed inactive properties differ from dimmed non-inherited properties; see [Inherited and non-inherited](#inherited-and-non-inherited), below.
+The dimmed inactive properties differ from dimmed non-inherited properties; see [Differentiate inherited and non-inherited CSS properties](#differentiate-inherited-and-non-inherited-css-properties), below.
 
 Inactive properties have an **Information** button (![Information icon](./issues-images/information-icon.png)).  To get a hint about what went wrong, hover over the **Information** button:
 
@@ -112,7 +112,7 @@ In the **Styles** tab, under an **Inherited from \<element-name\>** section, the
 
 ![The 'Inherited from body' section listing inherited and non-inherited CSS](./issues-images/inherited-body-section.png)
 
-The dimmed non-inherited properties differ from dimmed inactive properties; see [Inactive](#inactive), above.  Non-inherited properties don't have an **Information** button (![Information icon](./issues-images/information-icon.png)), and are shown in the corresponding sections.
+The dimmed non-inherited properties differ from dimmed inactive properties; see [Detect inactive CSS properties](#detect-inactive-css-properties), above.  Non-inherited properties don't have an **Information** button (![Information icon](./issues-images/information-icon.png)), and are shown in the corresponding sections.
 
 Overriding default inheritance doesn't affect the way the **Styles** tab displays the properties: dimmed or not.
 
