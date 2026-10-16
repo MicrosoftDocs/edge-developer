@@ -26,6 +26,10 @@ ms.date: 10/15/2026
 
 This guide assumes that you're familiar with inspecting CSS in Microsoft Edge DevTools.  To learn the basics, see [Get started viewing and changing CSS](./index.md).
 
+**Detailed contents:**
+
+_todo_
+
 
 <!-- ====================================================================== -->
 ## Inspect the CSS you author
@@ -49,8 +53,8 @@ The examples in this article are from the [Find CSS issues](https://microsoftedg
 The **Styles** tab recognizes many kinds of CSS issues and highlights them in different ways.  The following sections describe these CSS issues.
 
 
-<!-- ====================================================================== -->
-## Find the CSS selectors which matched and didn't match the element
+<!-- ------------------------------ -->
+#### Find the CSS selectors which matched and didn't match the element
 <!-- Matched and unmatched selectors  https://developer.chrome.com/docs/devtools/css/issues#selectors -->
 
 The **Styles** tab shows matched selectors in regular text, and unmatched selectors in dimmed text:
@@ -58,8 +62,8 @@ The **Styles** tab shows matched selectors in regular text, and unmatched select
 ![Matched selector in regular text and unmatched selectors in dimmed text](./issues-images/matched-selector-regular.png)
 
 
-<!-- ====================================================================== -->
-## Detect invalid CSS declarations and values
+<!-- ------------------------------ -->
+#### Detect invalid CSS declarations and values
 <!-- Invalid values and declarations  https://developer.chrome.com/docs/devtools/css/issues#invalid -->
 
 The **Styles** tab crosses out and displays a **Warning** icon (![Warning icon](./issues-images/warning-icon.png)) next to the following:
@@ -69,8 +73,8 @@ The **Styles** tab crosses out and displays a **Warning** icon (![Warning icon](
 ![Invalid property name and invalid property value](./issues-images/invalid-property-name.png)
 
 
-<!-- ====================================================================== -->
-## Detect overridden CSS properties
+<!-- ------------------------------ -->
+#### Detect overridden CSS properties
 <!-- Overridden  https://developer.chrome.com/docs/devtools/css/issues#overridden -->
 
 The **Styles** tab crosses out properties that are overridden by other properties according to the cascading order:
@@ -85,8 +89,8 @@ See also:
 * [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction#cascading_order) in _Introduction to the CSS cascade_ at MDN.
 
 
-<!-- ====================================================================== -->
-## Detect inactive CSS properties
+<!-- ------------------------------ -->
+#### Detect inactive CSS properties
 <!-- Inactive  https://developer.chrome.com/docs/devtools/css/issues#inactive -->
 
 The **Styles** tab displays in dimmed text and puts an **Information** button (![Information icon](./issues-images/information-icon.png)) next to a property that's valid but has no effect because of other properties.
@@ -102,8 +106,8 @@ Inactive properties have an **Information** button (![Information icon](./issues
 In this example, the `display: block;` property disables the `justify-content` property that controls flex or grid layouts.
 
 
-<!-- ====================================================================== -->
-## Differentiate inherited and non-inherited CSS properties
+<!-- ------------------------------ -->
+#### Differentiate inherited and non-inherited CSS properties
 <!-- Inherited and non-inherited  https://developer.chrome.com/docs/devtools/css/issues#inherited-and-non-inherited -->
 
 In the **Styles** tab, under an **Inherited from \<element-name\>** section, the way that CSS properties are displayed depends on their default inheritance mechanism:
@@ -121,8 +125,8 @@ See also:
    * [Overriding inheritance, an example](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Inheritance#overriding_inheritance_an_example) in _Inheritance_ at MDN.
 
 
-<!-- ====================================================================== -->
-## Reveal individual longhand CSS property values
+<!-- ------------------------------ -->
+#### Reveal individual longhand CSS property values
 <!-- Shorthand  https://developer.chrome.com/docs/devtools/css/issues#shorthand -->
 
 Shorthand (concise) properties let you set multiple CSS properties at once and can make your stylesheet more readable.  However, due to the short nature of such properties, you might miss a longhand (precise) property that overrides a property implied by the shorthand.
@@ -135,8 +139,8 @@ See also:
 * [Shorthand properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Shorthand_properties) at MDN.
 
 
-<!-- ====================================================================== -->
-## View CSS properties that can't be edited
+<!-- ------------------------------ -->
+#### View CSS properties that can't be edited
 <!-- Non-editable  https://developer.chrome.com/docs/devtools/css/issues#non-editable -->
 
 The **Styles** tab displays properties that can't be edited in _italic text_.  For example, the CSS from the following sources can't be edited:
@@ -152,8 +156,8 @@ The **Styles** tab displays properties that can't be edited in _italic text_.  F
    In the above example, the `align` HTML attribute on an `<h2>` element is set to `center`.  This updates the corresponding property under `h2[Attributes Style]` in the **Styles** tab.
 
 
-<!-- ====================================================================== -->
-## Inspect an element that isn't styled the way you expect
+<!-- ------------------------------ -->
+#### Inspect an element that isn't styled the way you expect
 <!-- Inspect an element that still isn't styled the way you think  https://developer.chrome.com/docs/devtools/css/issues#computed -->
 
 To try to find what goes wrong, you may want to check:
@@ -178,8 +182,8 @@ The **Styles** tab in the **Elements** tool displays the exact set of CSS rules 
 Use the **Computed** tab to understand where the final values of an element's CSS properties come from, as explained in the following sections.
 
 
-<!-- ====================================================================== -->
-## See final and inherited CSS values and where they are declared
+<!-- ------------------------------ -->
+#### See final and inherited CSS values and where they are declared
 <!-- Declared and inherited  https://developer.chrome.com/docs/devtools/css/issues#declared -->
 
 The **Computed** tab lists the properties declared in any stylesheet in regular font, both element's own and inherited.  To see the source of a CSS property, click the Expand button (![Expand icon](./issues-images/expand-icon.png)) next to a CSS property:
@@ -202,8 +206,8 @@ See also:
 * [Cascading order](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascade/Introduction#cascading_order) in _Introduction to the CSS cascade_ at MDN.
 
 
-<!-- ====================================================================== -->
-## See CSS values calculated at runtime
+<!-- ------------------------------ -->
+#### See CSS values calculated at runtime
 <!-- Runtime  https://developer.chrome.com/docs/devtools/css/issues#runtime -->
 
 The **Computed** tab lists property values that are calculated at runtime in dimmed text:
@@ -215,8 +219,8 @@ In this example, Microsoft Edge calculated the following for the `<h2>` element:
 * `width`: The element's width, in pixels, based on the element's content and internal padding.
 
 
-<!-- ====================================================================== -->
-## Display non-inherited and custom properties
+<!-- ------------------------------ -->
+#### Display non-inherited and custom properties
 <!-- Non-inherited and custom  https://developer.chrome.com/docs/devtools/css/issues#inherited-and-default -->
 
 To make the **Computed** tab show _all_ properties and their values, select the **Show all** checkbox.  Showing all properties includes:
