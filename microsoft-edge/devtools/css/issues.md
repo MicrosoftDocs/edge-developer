@@ -36,7 +36,7 @@ This guide assumes that you're familiar with inspecting CSS in Microsoft Edge De
    * [Differentiate inherited and non-inherited CSS properties](#differentiate-inherited-and-non-inherited-css-properties)
    * [Reveal individual longhand CSS property values](#reveal-individual-longhand-css-property-values)
    * [View CSS properties that can't be edited](#view-css-properties-that-cant-be-edited)
-   * [Inspect an element that isn't styled the way you expect](#inspect-an-element-that-isnt-styled-the-way-you-expect)
+* [Inspect an element that isn't styled the way you expect](#inspect-an-element-that-isnt-styled-the-way-you-expect)
 * [Understand CSS in the Computed tab](#understand-css-in-the-computed-tab)
    * [See final and inherited CSS values and where they are declared](#see-final-and-inherited-css-values-and-where-they-are-declared)
    * [See CSS values calculated at runtime](#see-css-values-calculated-at-runtime)
@@ -171,8 +171,8 @@ The **Styles** tab displays properties that can't be edited in _italic text_.  F
    In the above example, the `align` HTML attribute on an `<h2>` element is set to `center`.  This updates the corresponding property under `h2[Attributes Style]` in the **Styles** tab.
 
 
-<!-- ------------------------------ -->
-#### Inspect an element that isn't styled the way you expect
+<!-- ====================================================================== -->
+## Inspect an element that isn't styled the way you expect
 <!-- Inspect an element that still isn't styled the way you think  https://developer.chrome.com/docs/devtools/css/issues#computed -->
 
 To try to find what goes wrong, you may want to check:
