@@ -26,25 +26,6 @@ ms.date: 10/15/2026
 
 This guide assumes that you're familiar with inspecting CSS in Microsoft Edge DevTools.  To learn the basics, see [Get started viewing and changing CSS](./index.md).
 
-**Detailed contents:**
-* [Inspect the CSS you author](#inspect-the-css-you-author)
-* [Understand CSS in the Styles tab](#understand-css-in-the-styles-tab)
-* [Find the CSS selectors which matched and didn't match the element](#find-the-css-selectors-which-matched-and-didnt-match-the-element)
-* [Detect invalid CSS declarations and values](#detect-invalid-css-declarations-and-values)
-* [Detect overridden CSS properties](#detect-overridden-css-properties)
-* [Detect inactive CSS properties](#detect-inactive-css-properties)
-* [Differentiate inherited and non-inherited CSS properties](#differentiate-inherited-and-non-inherited-css-properties)
-* [Reveal individual longhand CSS property values](#reveal-individual-longhand-css-property-values)
-* [View CSS properties that can't be edited](#view-css-properties-that-cant-be-edited)
-* [Inspect an element that isn't styled the way you expect](#inspect-an-element-that-isnt-styled-the-way-you-expect)
-* [Understand CSS in the Computed tab](#understand-css-in-the-computed-tab)
-* [See final and inherited CSS values and where they are declared](#see-final-and-inherited-css-values-and-where-they-are-declared)
-* [See CSS values calculated at runtime](#see-css-values-calculated-at-runtime)
-* [Display non-inherited and custom properties](#display-non-inherited-and-custom-properties)
-* [Search for duplicates](#search-for-duplicates)
-* [Find unused CSS](#find-unused-css)
-* [See also](#see-also)
-
 
 <!-- ====================================================================== -->
 ## Inspect the CSS you author
