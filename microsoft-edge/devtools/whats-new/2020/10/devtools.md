@@ -207,7 +207,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 <!-- lacks the new feature: -->
 See also:
-* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that's actually applied to an element](../../../css/reference.md#view-only-the-css-thats-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ---------- -->
@@ -221,7 +221,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 <!-- probably lacks the new feature: -->
 See also:
-* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that's actually applied to an element](../../../css/reference.md#view-only-the-css-thats-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ------------------------------ -->

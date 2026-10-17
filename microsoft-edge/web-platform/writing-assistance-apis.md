@@ -152,7 +152,7 @@ By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1
 
 1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
  
-1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
+1. In the **Enable prerelease on-device language model** dropdown list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./writing-assistance-apis-images/prerelease-model-flag-for-wa-apis.png)
 
