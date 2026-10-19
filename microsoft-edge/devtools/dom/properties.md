@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/15/2026
+ms.date: 10/19/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -24,10 +24,9 @@ ms.date: 07/15/2026
 # View the properties of DOM objects
 <!-- https://developer.chrome.com/docs/devtools/dom/properties -->
 
-**todo:**
-* change pngs to show edge not chrome 11x; find: _todo: replace by edge screenshot_
-* h2 see also: 1x; find: <!-- todo: all links in article -->
-* later pr: link to local doc 2x; find: <!--todo in later pr: update downstream article, link to local doc -->
+_todo: change pngs to show edge not chrome 11x; find: todo: replace by edge screenshot_
+
+<!-- todo in later pr: link to local doc 2x; find: todo in later pr: update downstream article, link to local doc -->
 
 Use the **Properties** tab in the **Elements** tool to browse and filter properties of DOM objects.
 
@@ -83,11 +82,11 @@ The **Properties** tab in the **Elements** tool sorts and displays the object's 
 
 The **Properties** tab evaluates accessors on built-in elements and displays them on the object as inherited and in regular font.
 
-To find the origin of an inherited property, expand an object, then its [[Prototype]], then the nested [[Prototype]], and so on.
+To find the origin of an inherited property, expand an object, then its `[[Prototype]]`, then the nested `[[Prototype]]`, and so on.
 
 ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png.png) _todo: replace by edge screenshot_
 
-In this example, you can trace where the inherited size property came from by locating the original own (bold) property on the prototype chain together with the corresponding getter.
+In this example, you can trace where the inherited `size` property came from, by locating the original own (bold) property on the prototype chain together with the corresponding getter.
 
 Additionally, prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
 
@@ -107,7 +106,7 @@ To quickly find a property, start typing its name or value in the **Filter** inp
 ## Show all properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#show-all -->
 
-By default, the **Properties** tab doesn't show properties with null and undefined values.
+By default, the **Properties** tab doesn't show properties with `null` and `undefined` values.
 
 To see all properties, select the **Show all** checkbox:
 
@@ -167,9 +166,7 @@ DevTools lists own properties first, to make them easier to spot.
 #### Enumerable and non-enumerable properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#enumerable-and-non-enumerable -->
 
-Enumerable properties are bright in color.
-
-Non-enumerable properties are muted.
+Enumerable properties are bright in color.  Non-enumerable properties are dimmed.
 
 ![Enumerable and non-enumerable properties](./properties-images/enumerable-and-non-enumerable-properties.png) _todo: replace by edge screenshot_
 
@@ -189,7 +186,11 @@ For more information on functions, see [Inspect functions](https://developer.chr
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
+
+Chrome docs:
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_.<!--todo in later pr: update downstream article, link to local doc -->
+* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo in later pr: update downstream article, link to local doc -->
 
 GitHub:
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
@@ -204,3 +205,4 @@ GitHub:
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
