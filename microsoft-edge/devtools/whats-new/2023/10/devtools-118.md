@@ -54,7 +54,7 @@ The chat prompt now includes the error message and stack information.
 
 To enable the "explain Console errors using Copilot" feature, do either of the following:
 
-* In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the drop-down menu, and then click the **Restart** button.
+* In Microsoft Edge, go to `edge://flags/`, find the **Explain DevTools with AI** section, select **Enabled** in the dropdown menu, and then click the **Restart** button.
 
 * Start Microsoft Edge from the command line using the feature flag `msEdgeAIExplainConsoleError`.
 

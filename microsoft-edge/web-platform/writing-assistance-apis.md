@@ -152,7 +152,7 @@ By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1
 
 1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
  
-1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
+1. In the **Enable prerelease on-device language model** dropdown list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./writing-assistance-apis-images/prerelease-model-flag-for-wa-apis.png)
 
@@ -162,7 +162,7 @@ By default, the Writing Assistance APIs use the Phi-4-mini model.  To use Aion-1
 <!-- ------------------------------ -->
 #### Disclaimer
 
-The Aion-1.0-Instruct model is made available in Microsoft Edge 150.0.4070 for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
+The Aion-1.0-Instruct model is available in Microsoft Edge for early developer testing and feedback.  In addition to the Responsible AI considerations listed above, note that, given its prerelease state, model behaviors and capabilities are subject to change.
 
 
 <!-- ------------------------------ -->
