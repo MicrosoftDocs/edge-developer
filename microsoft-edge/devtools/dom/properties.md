@@ -24,6 +24,11 @@ ms.date: 07/15/2026
 # View the properties of DOM objects
 <!-- https://developer.chrome.com/docs/devtools/dom/properties -->
 
+**todo:**
+* change pngs to show edge not chrome 11x; find: _todo: replace by edge screenshot_
+* h2 see also: 1x; find: <!-- todo: all links in article -->
+* later pr: link to local doc 2x; find: <!--todo in later pr: update downstream article, link to local doc -->
+
 Use the **Properties** tab in the **Elements** tool to browse and filter properties of DOM objects.
 
 Detailed contents:
@@ -57,7 +62,10 @@ To open the **Properties** tab:
 
    ![The Properties tab in the Elements tool](./properties-images/properties-tab.png)
 
-   This screenshot shows the [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo, from the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+This screenshot uses:
+* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
+   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - source code.
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
 
 <!-- ====================================================================== -->
@@ -130,7 +138,7 @@ Collapsible properties have an expander button (![Expander icon](./properties-im
 
 ![Collapsible properties](./properties-images/collapsible-properties.png) _todo: replace by edge screenshot_
 
-For more information on inspecting JavaScript objects, see [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_ in the Chrome docs.<!--todo: update downstream article, link to local -->
+For more information on inspecting JavaScript objects, see [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_ in the Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
 
 
 <!-- ------------------------------ -->
@@ -176,7 +184,17 @@ Methods are indicated by _f ()_:
 
 ![Method](./properties-images/method.png) _todo: replace by edge screenshot_
 
-For more information on functions, see [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_ in the Chrome docs.<!--todo: update downstream article, link to local -->
+For more information on functions, see [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_ in the Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- todo: all links in article -->
+
+GitHub:
+* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
+   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - source code.
+* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
 
 <!-- ====================================================================== -->
