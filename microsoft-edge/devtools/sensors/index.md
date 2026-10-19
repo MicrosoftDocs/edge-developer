@@ -172,7 +172,7 @@ To emulate idle states:
 
    The demo page is granted the idle detection permission.
 
-1. In DevTools, in the **Sensors** tool, scroll down to the **Emulate Idle Detector state** drop-down, and then select an option:
+1. In DevTools, in the **Sensors** tool, scroll down to the **Emulate Idle Detector state** dropdown list, and then select an option:
 
    * **No idle emulation**
    * **User active, screen unlocked**

@@ -38,7 +38,7 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
       * [View the values of custom properties](#view-the-values-of-custom-properties)
    * [View the external stylesheet where a rule is defined](#view-the-external-stylesheet-where-a-rule-is-defined)
    * [View invalid, overridden, inactive, and other CSS](#view-invalid-overridden-inactive-and-other-css)
-   * [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element)
+   * [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element)
    * [View CSS properties in alphabetical order](#view-css-properties-in-alphabetical-order)
    * [View inherited CSS properties](#view-inherited-css-properties)
    * [View CSS at-rules](#view-css-at-rules)
@@ -48,7 +48,7 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
       * [View `@font-palette-values` at-rules](#view-font-palette-values-at-rules)
       * [View `@position-try` at-rules](#view-position-try-at-rules)
    * [View an element's box model](#view-an-elements-box-model)
-   * [Search and filter the CSS of an element](#search-and-filter-the-css-of-an-element)
+   * [Search and filter an element's CSS](#search-and-filter-an-elements-css)
    * [Emulate a focused page](#emulate-a-focused-page)
    * [Toggle a pseudo-class](#toggle-a-pseudo-class)
    * [View inherited highlight pseudo-elements](#view-inherited-highlight-pseudo-elements)
@@ -274,7 +274,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### View only the CSS that is actually applied to an element
+#### View only the CSS that's actually applied to an element
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#computed -->
 
 The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
@@ -308,14 +308,14 @@ See:
 #### View CSS properties in alphabetical order
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#alphabetical -->
 
-Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+Use the **Computed** pane.  See [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
 #### View inherited CSS properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#inherited -->
 
-Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
@@ -525,8 +525,8 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Search and filter the CSS of an element
-<!-- Search and filter an element's CSS  https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+#### Search and filter an element's CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
 
 Use the **Filter** text box on the **Styles** and **Computed** panes to search for specific CSS properties or values.
 
@@ -805,7 +805,7 @@ To copy CSS:
 
    * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  This menuitem conditionally appears.
 
-   * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+   * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ====================================================================== -->
