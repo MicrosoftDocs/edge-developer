@@ -1182,7 +1182,7 @@ To open the **Rendering** tool:
    ![The Rendering tool](./reference-images/rendering-tool.png)
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
 
 
 <!-- ------------------------------ -->

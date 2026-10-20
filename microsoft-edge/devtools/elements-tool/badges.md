@@ -175,7 +175,7 @@ Possible content of the tooltip:
 
 * **Filter list rules:** The specific rule from a filter list (for example, `EasyList`) that matched the element or the resource it loaded.
 
-You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering-tools/rendering-tool -->
+You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
 
 
 <!-- ====================================================================== -->
@@ -223,7 +223,7 @@ The overlay shows element positions and snap points.
 An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a `container` badge next to it that displays or hides the corresponding overlay.
 
 See also:
-* [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries)
+* [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries) at MDN.
 
 _todo: no such flag - Note: CSS container queries is an experimental feature. To enable its support in DevTools, under chrome://flags, set the Enable CSS Container Queries experiment to Enabled. Otherwise, the next preview doesn't work._
 
@@ -252,7 +252,7 @@ See also:
 The `<slot>` HTML element is a placeholder that you can fill with your own content.  Together with the `<template>` element, `<slot>` lets you create separate DOM trees and present them together.
 
 See also:
-* [<slot> HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
+* [`<slot>` HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
 
 A slot content element has a ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `slot` badge next to it that serves as a link to the corresponding `<slot>` element.
 
@@ -287,7 +287,7 @@ The `top-layer` badge helps you understand the concept of the _top layer_ and vi
 See also:
 * [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
 * [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index) at MDN.
-* [`<dialog>` element](https://web.dev/articles/building/a-dialog-component) at web.dev.
+* [Building a dialog component](https://web.dev/articles/building/a-dialog-component) at web.dev.
 * [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal) at MDN.
 
 To help you visualize top layer elements, the **Elements** tool adds a `#top-layer` container to the DOM tree after the closing `</html>` tag.
@@ -412,41 +412,33 @@ Click the `custom-element` badge to go to the relevant code in the **Sources** t
 ## See also
 <!-- todo: all links in article -->
 
-Local:
 * [Inspect CSS Grid layouts](../css/grid.md)
 * [Inspect and debug CSS container queries](../css/container-queries.md)
 * [View and debug media players information (Media tool)](../media/index.md)
 
 Chrome docs:
-* [Open DevTools](https://developer.chrome.com/docs/devtools/open#elements)
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect)
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect)
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
-* [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
-* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
-* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering-tools/rendering-tool -->
-* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
-* [Inspect the dialog](https://developer.chrome.com/docs/devtools/open#inspect).
+* [Open the Elements panel to inspect the DOM or CSS](https://developer.chrome.com/docs/devtools/open#inspect) in _Open Chrome DevTools_.
+* [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox)<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
+* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
+* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer)
 
 web.dev:
-* [`<dialog>` element](https://web.dev/articles/building/a-dialog-component) at web.dev.
-* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog) at web.dev.
-* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
-* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+* [Building a dialog component](https://web.dev/articles/building/a-dialog-component)
+* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog)
+* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_.
+* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_.
 
 MDN:
-* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
-* [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.
-* [CSS flexible box layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout) at MDN.
-* [Scroll container](https://developer.mozilla.org/docs/Glossary/Scroll_container) at MDN.
-* [CSS scroll snap](https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_snap) at MDN.
+* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
+* [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid)
+* [CSS flexible box layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [Scroll container](https://developer.mozilla.org/docs/Glossary/Scroll_container)
+* [CSS scroll snap](https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_snap)
 * [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries)
-* [<slot> HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
-* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index) at MDN.
-* [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal) at MDN.
-* [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements) at MDN.
+* [`<slot>` HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot)
+* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index)
+* [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal)
+* [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements)
 
 Chromium:
 * [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)

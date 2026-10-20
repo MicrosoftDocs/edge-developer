@@ -898,7 +898,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/media-panel/index.md",
-      "redirect_url": "/microsoft-edge/devtools/media-panel/index",
+      "redirect_url": "/microsoft-edge/devtools/media/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/media-panel/index.md",
+      "redirect_url": "/microsoft-edge/devtools/media/index",
       "redirect_document_id": false
     },
     {
