@@ -35,6 +35,10 @@
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
 
+        - name: Microsoft Edge 157
+          href: ./web-platform/release-notes/157.md
+          displayName: Microsoft Edge 157 web platform release notes (Nov. 5, 2026)  # page title
+
         - name: Microsoft Edge 156
           href: ./web-platform/release-notes/156.md
           displayName: Microsoft Edge 156 web platform release notes (Oct. 22, 2026)  # page title
