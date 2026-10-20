@@ -787,11 +787,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime.md",
-      "redirect_url": "/microsoft-edge/devtools/rendering-tools/js-runtime",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "../microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks-memory-tool-detached-elements.md",
       "redirect_url": "/microsoft-edge/devtools/memory-problems/dom-leaks-memory-tool-detached-elements",
       "redirect_document_id": false
@@ -954,11 +949,6 @@
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/recorder/index.md",
       "redirect_url": "/microsoft-edge/devtools/recorder/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/rendering-tool.md",
-      "redirect_url": "/microsoft-edge/devtools/rendering-tools/rendering-tool",
       "redirect_document_id": false
     },
     {
