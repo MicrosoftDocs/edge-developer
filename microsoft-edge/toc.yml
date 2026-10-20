@@ -75,13 +75,13 @@
           href: ./web-platform/release-notes/148.md
           displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
 
-        - name: Microsoft Edge 147
-          href: ./web-platform/release-notes/147.md
-          displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 147
+              href: ./web-platform/release-notes/147.md
+              displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
+
             - name: Microsoft Edge 146
               href: ./web-platform/release-notes/146.md
               displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
