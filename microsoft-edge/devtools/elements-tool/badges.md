@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/14/2026
+ms.date: 10/19/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -27,9 +27,9 @@ ms.date: 10/14/2026
 _todo in each section:_
 * format text
 * add links
-* create chrome pngs
-* change pngs to show edge
+* update developer.chrome.com links
 * convert inline code examples to demos in Demos repo
+* change pngs to show edge
 
 Toggle various overlays and speed up DOM tree navigation with this comprehensive reference of badges in the **Elements** tool.
 
@@ -44,7 +44,7 @@ To show or hide certain badges:
 
 1. Right-click an element in the DOM tree, and then select one or several badges in the **Badge settings** submenu, so that checkmarks appear in the submenu:
 
-   ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png) todo edge
+   ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png) _todo edge_
 
 The **Elements** tool shows the selected badges next to the appropriate elements in the DOM tree.  The following sections explain each badge.
 
@@ -55,7 +55,7 @@ The **Elements** tool shows the selected badges next to the appropriate elements
 
 The `view-source` badge is next to the `<html>` tag at the root of the HTML page.  To view the source of your page in the **Sources** tool, click the `view-source` badge:
 
-![The 'view source' badge](./badges-images/view-source-badge.png) todo edge
+![The 'view source' badge](./badges-images/view-source-badge.png) _todo edge_
 
 The `view-source` badge provides an alternative workflow to the **View page source** menuitem in the webpage's context menu (right-click menu), as follows:
 
@@ -89,7 +89,7 @@ todo: convert inline code to Demos repo dir
 
 1. In the DOM tree, click the `grid` badge next to the element and observe the overlay:
 
-   ![Grid overlay](./badges-images/grid-overlay.png) todo edge
+   ![Grid overlay](./badges-images/grid-overlay.png) _todo edge_
 
    The overlay shows columns, rows, their numbers, and gaps.
 
@@ -111,9 +111,9 @@ todo: convert inline code to Demos repo dir
 
 1. Inspect the element in the preview.
 
-1. In the DOM tree, click the subgrid badge next to the element and observe the overlay:
+1. In the DOM tree, click the `subgrid` badge next to the element and observe the overlay:
 
-   ![Subgrid overlay](./badges-images/subgrid-overlay.png) todo edge
+   ![Subgrid overlay](./badges-images/subgrid-overlay.png) _todo edge_
 
 The overlay shows columns, rows, their numbers, and gaps of a subgrid.
 
@@ -135,18 +135,18 @@ todo: convert inline code to Demos repo dir
 
 1. In the DOM tree, click the flex badge next to the element and observe the overlay:
 
-   ![Flex overlay](./badges-images/flex-overlay.png) todo edge
+   ![Flex overlay](./badges-images/flex-overlay.png) _todo edge_
 
    The overlay shows child element positions.
 
-To learn how to debug flex layouts, see [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox).
+To learn how to debug flex layouts, see [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
 
 
 <!-- ====================================================================== -->
 ## Ad
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#ad -->
 
-DevTools can detect some [ad frames and tag them](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md). Such a frame has an `ad` badge next to it.
+DevTools can detect some ad frames and tag them.  Such a frame has an `ad` badge next to it.
 
 A tooltip provides context on why the element was identified as an ad.  The `ad` badge is not clickable.
 
@@ -161,13 +161,13 @@ todo: convert preview to demos repo
 
 1. In the DOM tree, find an element with the `ad` badge next to it:
 
-   ![Ad badge](./badges-images/ad-badge.png) todo edge
+   ![Ad badge](./badges-images/ad-badge.png) _todo edge_
 
 1. Hover over the `ad` badge.
 
    A tooltip provides context on why the element was identified as an ad, such as:
 
-   ![Ad badge's tooltip](./badges-images/ad-badge-tooltip.png) todo edge
+   ![Ad badge's tooltip](./badges-images/ad-badge-tooltip.png) _todo edge_
 
 Possible content of the tooltip:
 
@@ -175,16 +175,19 @@ Possible content of the tooltip:
 
 * **Filter list rules:** The specific rule from a filter list (for example, `EasyList`) that matched the element or the resource it loaded.
 
-You can also use the **Rendering** tab to [highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in red.
+You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering-tools/rendering-tool -->
 
 
 <!-- ====================================================================== -->
 ## Scroll
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#scroll -->
 
-An HTML element is a scroll container if its overflow CSS property is set to scroll, or auto when there's enough content to cause overflow. Such elements have scroll badges next to them.
+An HTML element is a _scroll container_ if its `overflow` CSS property is set to `scroll`, or `auto` when there's enough content to cause overflow.  Such an element has a `scroll` badge next to it.
 
-Scroll badge on a DOM tree node.
+![Scroll badge on a DOM tree node](./badges-images/scroll-badge.png) _todo edge_
+
+See also:
+* [Scroll container](https://developer.mozilla.org/docs/Glossary/Scroll_container) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -208,7 +211,7 @@ todo: convert preview to demos repo
 
    The scroll-snap overlay is displayed:
 
-   ![Scroll-snap overlay](./badges-images/scroll-snap-overlay.png) todo edge
+   ![Scroll-snap overlay](./badges-images/scroll-snap-overlay.png) _todo edge_
 
 The overlay shows element positions and snap points.
 
@@ -217,29 +220,29 @@ The overlay shows element positions and snap points.
 ## Container
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#container -->
 
-An HTML element is a [container](https://developer.mozilla.org/docs/Web/CSS/CSS_Container_Queries) if it has the container-type CSS property.  Such an element has a `container` badge next to it that displays or hides the corresponding overlay.
+An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a `container` badge next to it that displays or hides the corresponding overlay.
 
 See also:
 * [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries)
 
-<!-- todo: no such flag
-Note: CSS container queries is an experimental feature. To enable its support in DevTools, under chrome://flags, set the Enable CSS Container Queries experiment to Enabled. Otherwise, the next preview doesn't work. -->
+_todo: no such flag - Note: CSS container queries is an experimental feature. To enable its support in DevTools, under chrome://flags, set the Enable CSS Container Queries experiment to Enabled. Otherwise, the next preview doesn't work._
 
-todo: convert preview code to demos repo
+_todo: convert preview code to demos repo_
 
-1. Toggle the overlay on the preview.<!-- 1. Go to `edge://flags`, and then set the **Enable CSS Container Queries** experiment to **Enabled**.  _todo: no such flag_ -->
+1. Toggle the overlay on the preview.  1. Go to `edge://flags`, and then set the **Enable CSS Container Queries** experiment to **Enabled**.  _todo: no such flag_
 
-1. Inspect the element in the preview.
+1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
-1. In the DOM tree, click the container badge next to the element.
+1. In the DOM tree, click the `container` badge next to the element.
 
-1. Try resizing the element by dragging its bottom-right corner and observe the layout change and overlay.
+1. Resize the element by dragging its bottom-right corner and observe the layout change and overlay:
 
-   ![Container overlay](./badges-images/container-overlay.png) todo png
+   ![Container overlay](./badges-images/container-overlay.png) _todo edge_
 
    The overlay shows child element positions.
 
-To learn how to debug container queries, see [Inspect and debug CSS container queries] todo link.
+See also:
+* [Inspect and debug CSS container queries](https://learn.microsoft.com/en-us/microsoft-edge/devtools/css/container-queries)
 
 
 <!-- ====================================================================== -->
@@ -247,6 +250,9 @@ To learn how to debug container queries, see [Inspect and debug CSS container qu
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#slot -->
 
 The `<slot>` HTML element is a placeholder that you can fill with your own content.  Together with the `<template>` element, `<slot>` lets you create separate DOM trees and present them together.
+
+See also:
+* [<slot> HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
 
 A slot content element has a ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `slot` badge next to it that serves as a link to the corresponding `<slot>` element.
 
@@ -259,13 +265,13 @@ Discover the ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `sl
 
 todo: convert inline code to Demos repo dir
 
-1. Inspect the element in the preview.
+1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
 1. In the DOM tree, click the ![Link on badge](./badges-images/link-on-badge.png) `slot` badge next to the element.
 
    The corresponding `<slot>` element is highlighted:
 
-   ![Slot and reveal badges](./badges-images/slot-reveal-badges.png)
+   ![Slot and reveal badges](./badges-images/slot-reveal-badges.png) _todo edge_
 
 1. Click the ![Link on badge](./badges-images/link-on-badge.png) `reveal` badge.
 
@@ -276,21 +282,32 @@ todo: convert inline code to Demos repo dir
 ## Top-layer
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#top-layer -->
 
-The `top-layer` badge helps you understand the concept of the top layer and visualize it. The top layer renders content on top of all other layers, regardless of z-index. When you open a `<dialog>` element using the .showModal() method, the browser puts it into the top layer.
+_todo: resume here matching upstream format/links_
+
+The `top-layer` badge helps you understand the concept of the top layer and visualize it.  The top layer renders content on top of all other layers, regardless of z-index.  When you open a `<dialog>` element using the .showModal() method, the browser puts it into the top layer.
 
 To help you visualize top layer elements, the **Elements** tool adds a #top-layer container to the DOM tree after the closing `</html>` tag.
 
-Top layer elements have ink_selectiontop-layer (N) badges next to them, where N is the element's index number. The badges are links to the corresponding elements in the #top-layer container.
+A top layer element has a `top-layer (N)` badge next to it, where N is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
 
-Discover the ink_selectiontop-layer (N) badge in the following preview:
+<!-- moved "key point" up -->
+The `top-layer (N)` badge has a paired `reveal` badge that takes you back.
+
+Discover the `top-layer (N)` badge in the following preview:
 
 todo: convert inline code to Demos repo dir
 
-In the preview, click Open dialog.
-Inspect the dialog.
-In the DOM tree, click the ink_selectiontop-layer (1) badge next to the `<dialog>` element. The **Elements** tool takes you to the corresponding element in the #top-layer container after the closing `</html>` tag. The top-layer container and badge.
-Key point: The ink_selectiontop-layer (N) badge has a paired ink_selectionreveal badge that takes you back.
-Get back to the `<dialog>` element by clicking the ink_selectionreveal badge next to the element or its ::backdrop.
+1. In the preview, click Open dialog.
+
+1. [Inspect the dialog]().
+
+1. In the DOM tree, click the `top-layer (1)` badge next to the `<dialog>` element.  The **Elements** tool takes you to the corresponding element in the `#top-layer` container after the closing `</html>` tag:
+
+   ![The top-layer container and badge](./badges-images/top-layer-container.png) _todo edge_
+
+1. Click the `reveal` badge next to the element or its `::backdrop`.
+
+   You are returned to the `<dialog>` element.
 
 
 <!-- ====================================================================== -->
@@ -384,7 +401,7 @@ A custom HTML element has a `custom-element` badge next to it in the DOM tree.
 
 1. Click the badge to go to the relevant code in the Sources panel.
 
-   ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png) todo edge
+   ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png) _todo edge_
 
 
 <!-- ====================================================================== -->
