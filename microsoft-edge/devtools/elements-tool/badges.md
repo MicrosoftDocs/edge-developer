@@ -83,7 +83,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -107,7 +107,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. Inspect the element in the preview.
 
@@ -129,7 +129,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -242,7 +242,7 @@ _todo: convert preview code to demos repo_
    The overlay shows child element positions.
 
 See also:
-* [Inspect and debug CSS container queries](https://learn.microsoft.com/en-us/microsoft-edge/devtools/css/container-queries)
+* [Inspect and debug CSS container queries](../css/container-queries.md)
 
 
 <!-- ====================================================================== -->
@@ -263,7 +263,7 @@ The ![Link on badge](./badges-images/link-on-badge.png) `slot` badge has a paire
 
 Discover the ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `slot` badge in the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -282,30 +282,34 @@ todo: convert inline code to Demos repo dir
 ## Top-layer
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#top-layer -->
 
-_todo: resume here matching upstream format/links_
+The `top-layer` badge helps you understand the concept of the _top layer_ and visualize it.  The top layer renders content on top of all other layers, regardless of `z-index`.  When you open a `<dialog>` element by using the `.showModal()` method, the browser puts it into the top layer.
 
-The `top-layer` badge helps you understand the concept of the top layer and visualize it.  The top layer renders content on top of all other layers, regardless of z-index.  When you open a `<dialog>` element using the .showModal() method, the browser puts it into the top layer.
+See also:
+* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
+* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index) at MDN.
+* [`<dialog>` element](https://web.dev/articles/building/a-dialog-component) at web.dev.
+* [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal) at MDN.
 
-To help you visualize top layer elements, the **Elements** tool adds a #top-layer container to the DOM tree after the closing `</html>` tag.
+To help you visualize top layer elements, the **Elements** tool adds a `#top-layer` container to the DOM tree after the closing `</html>` tag.
 
-A top layer element has a `top-layer (N)` badge next to it, where N is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
+A top layer element has a ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge next to it, where `N` is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
 
 <!-- moved "key point" up -->
-The `top-layer (N)` badge has a paired `reveal` badge that takes you back.
+The ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge has a paired `reveal` badge that takes you back.
 
-Discover the `top-layer (N)` badge in the following preview:
+Discover the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge in the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. In the preview, click Open dialog.
 
-1. [Inspect the dialog]().
+1. [Inspect the dialog](https://developer.chrome.com/docs/devtools/open#inspect).
 
-1. In the DOM tree, click the `top-layer (1)` badge next to the `<dialog>` element.  The **Elements** tool takes you to the corresponding element in the `#top-layer` container after the closing `</html>` tag:
+1. In the DOM tree, click the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge next to the `<dialog>` element.  The **Elements** tool takes you to the corresponding element in the `#top-layer` container after the closing `</html>` tag:
 
    ![The top-layer container and badge](./badges-images/top-layer-container.png) _todo edge_
 
-1. Click the `reveal` badge next to the element or its `::backdrop`.
+1. Click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to the element or its `::backdrop`.
 
    You are returned to the `<dialog>` element.
 
@@ -314,18 +318,21 @@ todo: convert inline code to Demos repo dir
 ## Media
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#media -->
 
-The media badge is turned off by default. When turned on, it appears next to `<audio>` and `<video>` elements.  Click this badge to open the **Media** tool and debug your media.
+Click the `media` badge to open the **Media** tool and debug your media.  The `media` badge is turned off by default.  When turned on, the `media` badge appears next to `<audio>` and `<video>` elements:
 
-The media badge turned on in badge settings and displayed next to the video element.
+![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png) _todo edge_
 
-For more information, see Debug media players with the **Media** tool.
+To turn on the `media` badge, see [Show or hide badges](#show-or-hide-badges), above.
+
+See also:
+* [View and debug media players information (Media tool)](../media-panel/index.md).
 
 
 <!-- ====================================================================== -->
 ## Popover
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#popover -->
 
-A popover is any element with a popover attribute.  A popover is useful for a wide range of interactive patterns, including:
+A _popover_ is any element that has a `popover` attribute.  A popover is useful for a wide range of interactive patterns, including:
 * Tooltips
 * Alerts
 * Toasts
@@ -333,49 +340,53 @@ A popover is any element with a popover attribute.  A popover is useful for a wi
 
 A popover element has a `popover` badge next to it.
 
-The `popover` badge toggles a `top-layer` badge next to it that links to the corresponding elements in the `#top-layer` container.  See [Top-layer](https://developer.chrome.com/docs/devtools/elements/badges#top-layer), above.
-
-todo: convert preview to demos repo
+The `popover` badge toggles a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.  See [Top-layer](#top-layer), above.
 
 Discover the `popover` badge in the following preview:
 
-1. In the preview, click TOGGLE POPOVER.
+_todo: convert inline code to Demos repo dir_
 
-1. Inspect the popover that appears.
+1. In the preview, click **TOGGLE POPOVER**.
+
+1. [Inspect the popover](https://developer.chrome.com/docs/devtools/open#inspect) that appears.
 
 1. In the DOM tree, click the `popover` badge next to the `<div popover>` element.
 
-   The **Elements** tool displays the `top-layer` badge.
+   The **Elements** tool displays the `top-layer` badge:
 
-   ![The "popover" badge next to the element with a "popover" attribute] 
+   ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png) _todo edge_
 
-Follow the steps in the `Top layer section.
+1. Follow the steps in the [Top-layer](#top-layer) section, above.
 
 See also:
- https://web.dev/learn/css/popover-and-dialog.
+* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog) at web.dev.
 
 
 <!-- ====================================================================== -->
 ## Starting-style
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#starting-style -->
 
-The [`@starting-style` rule](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) defines the initial styles on an element before it's rendered on the page.  This is required for elements that animate in from display: none, because such elements need a state from which to animate in.  Such elements have `starting-style` badges next to them.
+The `@starting-style` rule defines the initial styles on an element before it's rendered on the page.  This is required for elements that animate-in from `display: none`, because such elements need a state from which to animate in.  Such an element has a `starting-style` badge next to it.
 
-This badge toggles the styles in the `@starting-style` rule, so you can see the animation in action.
+See also:
+* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
+* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+
+The `starting-style` badge toggles the styles in the `@starting-style` rule, so you can see the animation in action.
 
 Discover the `starting-style` badge in the following preview:
 
-todo: convert inline code to Demos repo dir
+_todo: convert inline code to Demos repo dir_
 
 1. In the preview, click OPEN POPOVER.
 
 1. [Inspect the popover](https://developer.chrome.com/docs/devtools/open#inspect) that appears.
 
-1. In the DOM tree, toggle the starting-style badge next to the `<div popover>` element.
+1. In the DOM tree, toggle the `starting-style` badge next to the `<div popover>` element:
 
-   ![The starting-style badge next to the element with the `@starting-style` rule] todo png
+   ![The starting-style badge next to the element with the `@starting-style` rule](./badges-images/starting-style-badge.png) _todo edge_
 
-   Observe the animation in action and the styles being applied in the **Styles** tab of the **Elements** tool.
+   The animation is shown in action, and the styles are applied in the **Styles** tab of the **Elements** tool.
 
 See also:
 * [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
@@ -385,29 +396,62 @@ See also:
 ## Custom-element
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#custom-element -->
 
-For a customized built-in element, a custom HTML element is identified by a hyphenated tag name or an `is="..."` attribute, .
-<!-- todo: clarify upstream, orig:
-Custom HTML elements 
-identified by hyphenated tag names or is="..." attributes 
-for customized built-in elements 
-have custom-element badges next to them in the DOM tree.
--->
+Custom HTML elements identified by hyphenated tag names or `is="..."` attributes for customized built-in elements have `custom-element` badges next to them in the DOM tree.
 
 See also:
-* [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements)
+* [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements) at MDN.
 
-A custom HTML element has a `custom-element` badge next to it in the DOM tree.
+A custom HTML element has a `custom-element` badge next to it in the DOM tree:
 
+![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png) _todo edge_
 
-1. Click the badge to go to the relevant code in the Sources panel.
-
-   ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png) _todo edge_
+Click the `custom-element` badge to go to the relevant code in the **Sources** tool.
 
 
 <!-- ====================================================================== -->
 ## See also
 <!-- todo: all links in article -->
 
+Local:
+* [Inspect CSS Grid layouts](../css/grid.md)
+* [Inspect and debug CSS container queries](../css/container-queries.md)
+* [View and debug media players information (Media tool)](../media-panel/index.md)
+
+Chrome docs:
+* [Open DevTools](https://developer.chrome.com/docs/devtools/open#elements)
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect)
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect)
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
+* [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
+* [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
+* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering-tools/rendering-tool -->
+* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
+* [Inspect the dialog](https://developer.chrome.com/docs/devtools/open#inspect).
+
+web.dev:
+* [`<dialog>` element](https://web.dev/articles/building/a-dialog-component) at web.dev.
+* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog) at web.dev.
+* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
+* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+
+MDN:
+* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
+* [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid) at MDN.
+* [CSS flexible box layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout) at MDN.
+* [Scroll container](https://developer.mozilla.org/docs/Glossary/Scroll_container) at MDN.
+* [CSS scroll snap](https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_snap) at MDN.
+* [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries)
+* [<slot> HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
+* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index) at MDN.
+* [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal) at MDN.
+* [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements) at MDN.
+
+Chromium:
+* [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
+
+GitHub:
 * [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) - demo.<!-- link not in article -->
    * [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix/) - source code.<!-- link not in article -->
 

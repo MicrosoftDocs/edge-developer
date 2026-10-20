@@ -890,7 +890,7 @@
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
-                    - name: View and debug media players information
+                    - name: View and debug media players information (Media tool)
                       href: ./devtools/media-panel/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------

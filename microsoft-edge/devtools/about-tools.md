@@ -73,7 +73,7 @@ There's also a **More tools** (![More Tools icon](./about-tools-images/more-tool
 | **Developer resources** | Shows resource URLs for the webpage. | [Developer resources tool](developer-resources/developer-resources.md) |
 | **Issues** | The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues. | [Find and fix problems using the Issues tool](issues/index.md) |
 | **Lighthouse** | Use the Lighthouse tool to identify and fix common problems that affect your site's performance, accessibility, and user experience. | [Lighthouse tool](lighthouse/lighthouse-tool.md) |
-| **Media** | Use this tool to view information and debug the media players per browser tab. | [View and debug media players information](media-panel/index.md) |
+| **Media** | Use this tool to view information and debug the media players per browser tab. | [View and debug media players information (Media tool)](media-panel/index.md) |
 | **Memory inspector** | Inspect JavaScript ArrayBuffer with the Memory inspector. | [Inspect a JavaScript ArrayBuffer with the Memory inspector tool](memory-inspector/memory-inspector-tool.md) |
 | **Network conditions** | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](network-conditions/network-conditions-tool.md) |
 | **Network Console** | Use the **Network Console** tool to make changes to network requests (network calls) to see why they fail.  Change and replay any of the network requests, and make detailed network API calls.  | [Network Console tool](network-console/network-console-tool.md) |
