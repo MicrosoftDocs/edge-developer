@@ -891,7 +891,7 @@
                 - name: Media tool
                   items:
                     - name: View and debug media players information (Media tool)
-                      href: ./devtools/media-panel/index.md
+                      href: ./devtools/media/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------
                 - name: Memory inspector tool

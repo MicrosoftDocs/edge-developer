@@ -325,7 +325,7 @@ Click the `media` badge to open the **Media** tool and debug your media.  The `m
 To turn on the `media` badge, see [Show or hide badges](#show-or-hide-badges), above.
 
 See also:
-* [View and debug media players information (Media tool)](../media-panel/index.md).
+* [View and debug media players information (Media tool)](../media/index.md).
 
 
 <!-- ====================================================================== -->
@@ -415,7 +415,7 @@ Click the `custom-element` badge to go to the relevant code in the **Sources** t
 Local:
 * [Inspect CSS Grid layouts](../css/grid.md)
 * [Inspect and debug CSS container queries](../css/container-queries.md)
-* [View and debug media players information (Media tool)](../media-panel/index.md)
+* [View and debug media players information (Media tool)](../media/index.md)
 
 Chrome docs:
 * [Open DevTools](https://developer.chrome.com/docs/devtools/open#elements)
