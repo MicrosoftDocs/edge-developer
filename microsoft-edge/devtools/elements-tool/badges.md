@@ -44,9 +44,13 @@ To show or hide certain badges:
 
 1. Right-click an element in the DOM tree, and then select one or several badges in the **Badge settings** submenu, so that checkmarks appear in the submenu:
 
-   ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png) _todo edge_
+   ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png)
 
 The **Elements** tool shows the selected badges next to the appropriate elements in the DOM tree.  The following sections explain each badge.
+
+See also:
+* [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
+   * [/devtools-badges/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-badges/) - source code.
 
 
 <!-- ====================================================================== -->
@@ -67,9 +71,17 @@ The `view-source` badge provides an alternative workflow to the **View page sour
 
 1. In the DOM tree, next to the `<html>` tag, click the `view-source` badge.
 
-   The **Sources** tool opens.
+   The **Sources** tool opens, displaying the source file:
+
+   ![Source code file](./badges-images/view-source-result.png)
+
+   The example shows `index.html`.
 
 1. Inspect the page source.
+
+See also:
+* [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
+   * [/devtools-badges/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-badges/) - source code.
 
 
 <!-- ====================================================================== -->
@@ -444,8 +456,8 @@ Chromium:
 * [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
 
 GitHub:
-* [Testing all badges in DevTools for contrast issues](https://microsoftedge.github.io/Demos/devtools-contrast-bugfix/) - demo.<!-- link not in article -->
-   * [/devtools-contrast-bugfix/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-contrast-bugfix/) - source code.<!-- link not in article -->
+* [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
+   * [/devtools-badges/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-badges/) - source code.
 
 
 <!-- ====================================================================== -->
