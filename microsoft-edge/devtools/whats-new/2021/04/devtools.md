@@ -321,7 +321,7 @@ Now, to display the computed CSS value in the **Styles** tab in the **Elements**
    ![New shortcut to display computed value](./devtools-images/elements-styles-highlight-view-computed-value.png)
 
 See also:
-* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_.
+* [View only the CSS that's actually applied to an element](../../../css/reference.md#view-only-the-css-thats-actually-applied-to-an-element) in _CSS features reference_.
 * [View the Computed sidebar pane in the Styles pane](../../2020/10/devtools.md#view-the-computed-sidebar-pane-in-the-styles-pane) in _What's new in DevTools (Microsoft Edge 87)_.
 * [Explore all computed styles](../../../accessibility/navigation.md#explore-all-computed-styles) in _Navigate DevTools with assistive technology_.
 
