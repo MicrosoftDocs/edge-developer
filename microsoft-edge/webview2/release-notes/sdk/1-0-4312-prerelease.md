@@ -92,6 +92,7 @@ Previous phase: [Crash Report in ProcessFailed event](./1-0-4126-prerelease.md#c
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.4314.35, for Runtime 156 (Oct. 23, 2026)](./1-0-4314-35.md)
 * [Runtime 156.0.4314.42 (Oct. 23, 2026)](../runtime/156.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

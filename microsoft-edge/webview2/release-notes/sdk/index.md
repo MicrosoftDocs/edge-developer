@@ -15,6 +15,7 @@ list past 10 potential Release SDK releases eg 156-147
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links -->
 Release notes for recent SDKs:
+* [Release SDK 1.0.4314.35, for Runtime 156 (Oct. 23, 2026)](./1-0-4314-35.md)
 * [Prerelease SDK 1.0.4312-prerelease, for Runtime 156 (Oct. 12, 2026)](./1-0-4312-prerelease.md)
 * [Release SDK 1.0.4258.31, for Runtime 154 (Sep. 28, 2026)](./1-0-4258-31.md)
 * [Prerelease SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)](./1-0-4255-prerelease.md)

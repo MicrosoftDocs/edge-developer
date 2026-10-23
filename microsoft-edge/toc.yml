@@ -1790,6 +1790,8 @@
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
 
+                - name: Release SDK 1.0.4314.35, for Runtime 156 (Oct. 23, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4314-35.md
                 - name: Prerelease SDK 1.0.4312-prerelease, for Runtime 156 (Oct. 12, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4312-prerelease.md
 
