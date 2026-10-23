@@ -330,11 +330,11 @@ _todo: convert inline code to Demos repo dir_
 ## Media
 <!-- https://developer.chrome.com/docs/devtools/elements/badges#media -->
 
-Click the `media` badge to open the **Media** tool and debug your media.  The `media` badge is turned off by default.  When turned on, the `media` badge appears next to `<audio>` and `<video>` elements:
+Click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to open the **Media** tool and debug your media.  The `media`![Link on badge](./badges-images/link-on-badge.png) badge is turned off by default.  When turned on, the `media`![Link on badge](./badges-images/link-on-badge.png) badge appears next to `<audio>` and `<video>` elements:
 
-![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png) _todo edge_
+![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png)
 
-To turn on the `media` badge, see [Show or hide badges](#show-or-hide-badges), above.
+To turn on the `media`![Link on badge](./badges-images/link-on-badge.png) badge, right-click the DOM tree, and then in the **Badge settings** submenu, select the **Media** menuitem.
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -366,7 +366,7 @@ _todo: convert inline code to Demos repo dir_
 
    The **Elements** tool displays the `top-layer` badge:
 
-   ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png) _todo edge_
+   ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png)
 
 1. Follow the steps in the [Top-layer](#top-layer) section, above.
 
