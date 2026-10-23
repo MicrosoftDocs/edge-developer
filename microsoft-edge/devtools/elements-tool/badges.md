@@ -59,7 +59,7 @@ See also:
 
 The `view-source` badge is next to the `<html>` tag at the root of the HTML page.  To view the source of your page in the **Sources** tool, click the `view-source` badge:
 
-![The 'view source' badge](./badges-images/view-source-badge.png) _todo edge_
+![The 'view source' badge](./badges-images/view-source-badge.png)
 
 The `view-source` badge provides an alternative workflow to the **View page source** menuitem in the webpage's context menu (right-click menu), as follows:
 
@@ -101,7 +101,7 @@ _todo: convert inline code to Demos repo dir_
 
 1. In the DOM tree, click the `grid` badge next to the element and observe the overlay:
 
-   ![Grid overlay](./badges-images/grid-overlay.png) _todo edge_
+   ![Grid overlay](./badges-images/grid-overlay.png)
 
    The overlay shows columns, rows, their numbers, and gaps.
 
@@ -125,7 +125,7 @@ _todo: convert inline code to Demos repo dir_
 
 1. In the DOM tree, click the `subgrid` badge next to the element and observe the overlay:
 
-   ![Subgrid overlay](./badges-images/subgrid-overlay.png) _todo edge_
+   ![Subgrid overlay](./badges-images/subgrid-overlay.png)
 
 The overlay shows columns, rows, their numbers, and gaps of a subgrid.
 
@@ -147,7 +147,7 @@ _todo: convert inline code to Demos repo dir_
 
 1. In the DOM tree, click the flex badge next to the element and observe the overlay:
 
-   ![Flex overlay](./badges-images/flex-overlay.png) _todo edge_
+   ![Flex overlay](./badges-images/flex-overlay.png)
 
    The overlay shows child element positions.
 
@@ -173,13 +173,13 @@ todo: convert preview to demos repo
 
 1. In the DOM tree, find an element with the `ad` badge next to it:
 
-   ![Ad badge](./badges-images/ad-badge.png) _todo edge_
+   ![Ad badge](./badges-images/ad-badge.png)
 
 1. Hover over the `ad` badge.
 
    A tooltip provides context on why the element was identified as an ad, such as:
 
-   ![Ad badge's tooltip](./badges-images/ad-badge-tooltip.png) _todo edge_
+   ![Ad badge's tooltip](./badges-images/ad-badge-tooltip.png)
 
 Possible content of the tooltip:
 
@@ -196,7 +196,7 @@ You can also use the **Rendering** tab to highlight ad frames in red.  See [High
 
 An HTML element is a _scroll container_ if its `overflow` CSS property is set to `scroll`, or `auto` when there's enough content to cause overflow.  Such an element has a `scroll` badge next to it.
 
-![Scroll badge on a DOM tree node](./badges-images/scroll-badge.png) _todo edge_
+![Scroll badge on a DOM tree node](./badges-images/scroll-badge.png)
 
 See also:
 * [Scroll container](https://developer.mozilla.org/docs/Glossary/Scroll_container) at MDN.
@@ -223,7 +223,7 @@ todo: convert preview to demos repo
 
    The scroll-snap overlay is displayed:
 
-   ![Scroll-snap overlay](./badges-images/scroll-snap-overlay.png) _todo edge_
+   ![Scroll-snap overlay](./badges-images/scroll-snap-overlay.png)
 
 The overlay shows element positions and snap points.
 
@@ -249,7 +249,7 @@ _todo: convert preview code to demos repo_
 
 1. Resize the element by dragging its bottom-right corner and observe the layout change and overlay:
 
-   ![Container overlay](./badges-images/container-overlay.png) _todo edge_
+   ![Container overlay](./badges-images/container-overlay.png)
 
    The overlay shows child element positions.
 
@@ -266,14 +266,14 @@ The `<slot>` HTML element is a placeholder that you can fill with your own conte
 See also:
 * [`<slot>` HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot) at MDN.
 
-A slot content element has a ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `slot` badge next to it that serves as a link to the corresponding `<slot>` element.
+A slot content element has a ![Link on badge](./badges-images/link-on-badge.png) `slot` badge next to it that serves as a link to the corresponding `<slot>` element.
 
 _todo: define slot vs slot content_
 
 <!-- moved "key point" up -->
 The ![Link on badge](./badges-images/link-on-badge.png) `slot` badge has a paired ![Link on badge](./badges-images/link-on-badge.png) `reveal` badge that takes you back.
 
-Discover the ![Link on badge](./badges-images/link-on-badge.png) _todo edge_ `slot` badge in the following preview:
+Discover the ![Link on badge](./badges-images/link-on-badge.png) `slot` badge in the following preview:
 
 _todo: convert inline code to Demos repo dir_
 
@@ -283,7 +283,7 @@ _todo: convert inline code to Demos repo dir_
 
    The corresponding `<slot>` element is highlighted:
 
-   ![Slot and reveal badges](./badges-images/slot-reveal-badges.png) _todo edge_
+   ![Slot and reveal badges](./badges-images/slot-reveal-badges.png)
 
 1. Click the ![Link on badge](./badges-images/link-on-badge.png) `reveal` badge.
 
@@ -304,12 +304,12 @@ See also:
 
 To help you visualize top layer elements, the **Elements** tool adds a `#top-layer` container to the DOM tree after the closing `</html>` tag.
 
-A top layer element has a ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge next to it, where `N` is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
+A top-layer element has a `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge next to it, where `N` is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
 
 <!-- moved "key point" up -->
-The ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge has a paired `reveal` badge that takes you back.
+The `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge has a paired `reveal` badge that takes you back.
 
-Discover the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (N)` badge in the following preview:
+Discover the `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge in the following preview:
 
 _todo: convert inline code to Demos repo dir_
 
@@ -319,7 +319,7 @@ _todo: convert inline code to Demos repo dir_
 
 1. In the DOM tree, click the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge next to the `<dialog>` element.  The **Elements** tool takes you to the corresponding element in the `#top-layer` container after the closing `</html>` tag:
 
-   ![The top-layer container and badge](./badges-images/top-layer-container.png) _todo edge_
+   ![The top-layer container and badge](./badges-images/top-layer-container.png)
 
 1. Click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to the element or its `::backdrop`.
 
