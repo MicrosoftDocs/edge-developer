@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/19/2026
+ms.date: 10/23/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -24,12 +24,9 @@ ms.date: 10/19/2026
 # Badges reference
 <!-- https://developer.chrome.com/docs/devtools/elements/badges -->
 
-_todo in each section:_
-* format text
-* add links
+_todo:_
 * update developer.chrome.com links
-* convert inline code examples to demos in Demos repo
-* change pngs to show edge
+* convert from inline code examples to steps for using the demo
 
 Toggle various overlays and speed up DOM tree navigation with this comprehensive reference of badges in the **Elements** tool.
 
@@ -42,7 +39,7 @@ To show or hide certain badges:
 
 1. [Open DevTools](https://developer.chrome.com/docs/devtools/open#elements).
 
-1. Right-click an element in the DOM tree, and then select one or several badges in the **Badge settings** submenu, so that checkmarks appear in the submenu:
+1. Right-click anywhere in the DOM tree, and then select one or several badges in the **Badge settings** submenu, so that checkmarks appear in the submenu:
 
    ![The 'Badge settings' menu](./badges-images/badge-settings-submenu.png)
 
@@ -396,7 +393,7 @@ _todo: convert inline code to Demos repo dir_
 
 1. In the DOM tree, toggle the `starting-style` badge next to the `<div popover>` element:
 
-   ![The starting-style badge next to the element with the `@starting-style` rule](./badges-images/starting-style-badge.png) _todo edge_
+   ![The starting-style badge next to the element with the `@starting-style` rule](./badges-images/starting-style-badge.png)
 
    The animation is shown in action, and the styles are applied in the **Styles** tab of the **Elements** tool.
 
@@ -415,7 +412,7 @@ See also:
 
 A custom HTML element has a `custom-element` badge next to it in the DOM tree:
 
-![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png) _todo edge_
+![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png)
 
 Click the `custom-element` badge to go to the relevant code in the **Sources** tool.
 
