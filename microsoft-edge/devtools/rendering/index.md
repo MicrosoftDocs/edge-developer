@@ -131,7 +131,7 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 <!--
 Related Guides:
 * [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-* [Diagnose Forced Synchronous Layouts](./rendering-tools/forced-synchronous-layouts.md)
+* [Diagnose Forced Synchronous Layouts](./rendering/forced-synchronous-layouts.md)
 -->
 
 <!-- todo: add section "Avoid CSS that triggers layouts (Avoid Layout Thrashing)" when available -->
