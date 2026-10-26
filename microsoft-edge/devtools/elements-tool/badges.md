@@ -87,12 +87,9 @@ See also:
 
 An HTML element is a _grid container_ if its `display` CSS property is set to `grid` or `inline-grid`.  Such an element has a `grid` badge next to it that toggles the corresponding overlay.
 
-See also:
-* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
-
 Toggle the overlay on the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -103,6 +100,9 @@ _todo: convert inline code to Demos repo dir_
    The overlay shows columns, rows, their numbers, and gaps.
 
 To learn how to debug grid layout, see [Inspect CSS Grid layouts](../css/grid.md).
+
+See also:
+* [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -116,7 +116,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. Inspect the element in the preview.
 
@@ -138,7 +138,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -148,7 +148,7 @@ _todo: convert inline code to Demos repo dir_
 
    The overlay shows child element positions.
 
-To learn how to debug flex layouts, see [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
+To learn how to debug flex layouts, see [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo later: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ Possible content of the tooltip:
 
 * **Filter list rules:** The specific rule from a filter list (for example, `EasyList`) that matched the element or the resource it loaded.
 
-You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
+You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo later: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
 
 
 <!-- ====================================================================== -->
@@ -210,7 +210,7 @@ See also:
 
 Toggle the overlay on the following preview:
 
-todo: convert preview to demos repo
+_todo: steps to reproduce png_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -236,7 +236,7 @@ See also:
 
 _todo: no such flag - Note: CSS container queries is an experimental feature. To enable its support in DevTools, under chrome://flags, set the Enable CSS Container Queries experiment to Enabled. Otherwise, the next preview doesn't work._
 
-_todo: convert preview code to demos repo_
+_todo: steps to reproduce png_
 
 1. Toggle the overlay on the preview.  1. Go to `edge://flags`, and then set the **Enable CSS Container Queries** experiment to **Enabled**.  _todo: no such flag_
 
@@ -272,7 +272,7 @@ The ![Link on badge](./badges-images/link-on-badge.png) `slot` badge has a paire
 
 Discover the ![Link on badge](./badges-images/link-on-badge.png) `slot` badge in the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. [Inspect the element](https://developer.chrome.com/docs/devtools/open#inspect) in the preview.
 
@@ -308,7 +308,7 @@ The `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge has
 
 Discover the `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge in the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. In the preview, click Open dialog.
 
@@ -353,7 +353,7 @@ The `popover` badge toggles a `top-layer` badge next to it that links to the cor
 
 Discover the `popover` badge in the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. In the preview, click **TOGGLE POPOVER**.
 
@@ -385,7 +385,7 @@ The `starting-style` badge toggles the styles in the `@starting-style` rule, so 
 
 Discover the `starting-style` badge in the following preview:
 
-_todo: convert inline code to Demos repo dir_
+_todo: steps to reproduce png_
 
 1. In the preview, click OPEN POPOVER.
 
