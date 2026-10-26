@@ -94,7 +94,7 @@ To use the `grid` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **grid** box in the webpage, and then select **Inspect**.
+1. Right-click the **grid** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -126,7 +126,7 @@ To use the `subgrid` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **subgrid** box in the webpage, and then select **Inspect**.
+1. Right-click the **subgrid** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -151,7 +151,7 @@ To use the `flex` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **flex** box in the webpage, and then select **Inspect**.
+1. Right-click the **flex** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -183,7 +183,7 @@ To use the `ad` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **ad** box in the webpage, and then select **Inspect**.
+1. Right-click the **ad** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -215,7 +215,7 @@ To view the `scroll` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **scroll** box in the webpage, and then select **Inspect**.
+1. Right-click the **scroll** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -241,7 +241,7 @@ To use the `scroll-snap` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **scroll-snap** box in the webpage, and then select **Inspect**.
+1. Right-click the **scroll-snap** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -275,7 +275,7 @@ To use the container badge, such as the `inline-size` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **container** box in the webpage, and then select **Inspect**.
+1. Right-click the **container** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
@@ -310,11 +310,11 @@ To use the `slot` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. Right-click the **slot** box in the webpage, and then select **Inspect**.
+1. Right-click the **slot** box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<span slot="content"` element, and then click the ![Link on badge](./badges-images/link-on-badge.png)`slot` badge.
+1. In the DOM tree, expand the tree to show the `<span slot="content">` element, and then click the ![Link on badge](./badges-images/link-on-badge.png)`slot` badge.
 
    The corresponding `<slot>` element is highlighted in the DOM tree:
 
@@ -340,25 +340,43 @@ A top-layer element has a `top-layer (N)`![Link on badge](./badges-images/link-o
 
 The `top-layer (N)`![Link on badge](./badges-images/link-on-badge.png) badge has a paired `reveal` badge that takes you back.
 
-_todo: resume here updating steps_
+To use the `top-layer` badge:
 
-OLD:
-1. In the preview, click Open dialog.
+1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. [Inspect the dialog](https://developer.chrome.com/docs/devtools/open#inspect).
+1. In the **top-layer** box, click the **Open dialog** button.
 
-1. In the DOM tree, click the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge next to the `<dialog>` element.  The **Elements** tool takes you to the corresponding element in the `#top-layer` container after the closing `</html>` tag:
+   A dialog opens in the top layer, displaying the message **This dialog is in the top layer.**
+
+1. Right-click the dialog, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  Next to the `<dialog>` element is a ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge.
+
+1. In the DOM tree, expand the `<dialog>` element.
+
+1. In the DOM tree, next to the `<dialog>` element, click the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge.
+
+   At the bottom of the DOM tree, the corresponding `#top-layer` container node is expanded to show the `dialog` node, which has a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
+
+1. Fully expand the `#top-layer` container node.
+
+   Child nodes are displayed:
+   * A `dialog` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
+      * A `::backdrop` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
 
    ![The top-layer container and badge](./badges-images/top-layer-container.png)
 
-1. Click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to the element or its `::backdrop`.
+1. Next to the `#top-layer` node's `dialog` node, click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
 
-   You are returned to the `<dialog>` element.
+   The DOM tree highlights the corresponding `<dialog>` element.
 
-NEW:
+1. Next to the `#top-layer` node's child `::backdrop` node, click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
 
-_copy/paste/modify previous section's list_
+   The DOM tree highlights the corresponding `::backdrop` node within the `<form>` element within the `<dialog>` element.
 
+1. In the rendered webpage, in the **This dialog is in the top layer** dialog, click the **Close** button.
+
+   In the DOM tree, the node changes from `<dialog id="dialog" open>` with a ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge next to it, to a `<dialog id="dialog">` element without a ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge next to it.
 
 See also:
 * [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
@@ -371,11 +389,25 @@ See also:
 ## The `media` badge
 <!-- Media  https://developer.chrome.com/docs/devtools/elements/badges#media -->
 
-Click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to open the **Media** tool and debug your media.  The `media`![Link on badge](./badges-images/link-on-badge.png) badge is turned off by default.  When turned on, the `media`![Link on badge](./badges-images/link-on-badge.png) badge appears next to `<audio>` and `<video>` elements:
-
-![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png)
+Click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to open the **Media** tool and debug your media.  The `media`![Link on badge](./badges-images/link-on-badge.png) badge is turned off by default.  When turned on, the `media`![Link on badge](./badges-images/link-on-badge.png) badge appears next to `<audio>` and `<video>` elements.
 
 To turn on the `media`![Link on badge](./badges-images/link-on-badge.png) badge, right-click the DOM tree, and then in the **Badge settings** submenu, select the **Media** menuitem.
+
+To use the `media` badge:
+
+1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
+
+1. In the **media** box, right-click the media player and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected, with the `<video>` element selected.
+
+1. Right-click the DOM tree, and then in the **Badge settings** submenu, select the **media** menuitem.
+
+   In the DOM tree, the `media`![Link on badge](./badges-images/link-on-badge.png) badge is added next to the `<video>` element:
+
+   ![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png)
+
+   If media player details have been specified in the webpage (unlike this demo page), you can click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to display the details.  _todo: make media badge when clicked show info_
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -393,25 +425,32 @@ A _popover_ is any element that has a `popover` attribute.  A popover is useful 
 
 A popover element has a `popover` badge next to it.
 
-The `popover` badge toggles a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.  See [Top-layer](#top-layer), above.
+Clicking the `popover` badge shows or hides a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.
 
-Discover the `popover` badge in the following preview:
+To use the `popover` badge:
 
-_todo: steps to reproduce png_
+1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. In the preview, click **TOGGLE POPOVER**.
+1. In the **popover** box, click the **Toggle popover** button.
 
-1. [Inspect the popover](https://developer.chrome.com/docs/devtools/open#inspect) that appears.
+   A popover dialog opens.  _todo: clicking the "toggle popover" button has no effect, since 156_
 
-1. In the DOM tree, click the `popover` badge next to the `<div popover>` element.
+   _todo: resume here updating steps_
 
-   The **Elements** tool displays the `top-layer` badge:
+1. Right-click the popover dialog, and then select **Inspect**.
+
+   DevTools opens, with the `<div id="popover" popover>` element selected.  Next to the element is a `popover` badge.
+
+1. In the DOM tree, next to the `<div id="popover" popover>` element, click the `popover` badge.
+
+   The **Elements** tool displays ___:
 
    ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png)
 
-1. Follow the steps in the [Top-layer](#top-layer) section, above.
+1. Follow the steps in [The `top-layer` badge](#the-top-layer-badge), above.
 
 See also:
+* [The `top-layer` badge](#the-top-layer-badge), above.
 * [Popover and dialog](https://web.dev/learn/css/popover-and-dialog) at web.dev.
 
 
