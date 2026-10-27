@@ -496,7 +496,7 @@ A _custom HTML element_ is identified by either:
 * A hyphenated element name, such as `<hello-world>`.
 * An `is` attribute added to a built-in element, such as `<p is="fancy-paragraph">`.
 
-A custom HTML element has a `custom-element` badge next to it in the DOM tree.
+A custom HTML element has a `custom-element` badge next to it in the DOM tree.  Clicking the `custom-element` badge displays the source code for the element.
 
 To use the `custom-element` badge:
 
