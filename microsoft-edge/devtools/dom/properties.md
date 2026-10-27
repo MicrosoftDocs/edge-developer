@@ -24,9 +24,7 @@ ms.date: 10/19/2026
 # View the properties of DOM objects
 <!-- https://developer.chrome.com/docs/devtools/dom/properties -->
 
-_todo: change pngs to show edge not chrome 11x; find: todo: replace by edge screenshot_
-
-<!-- todo in later pr: link to local doc 2x; find: todo in later pr: update downstream article, link to local doc -->
+<!-- find: todo later: -->
 
 Use the **Properties** tab in the **Elements** tool to browse and filter properties of DOM objects.
 
@@ -216,68 +214,130 @@ To display details of a collapsible property (an object or array):
 
    Collapsible properties are shown in bold text, and have an expander triangle:
 
-   ![Collapsible properties](./properties-images/collapsible-properties.png) _todo: replace by edge screenshot_
+   ![Collapsible properties](./properties-images/collapsible-properties.png) _todo: show expanded, after expanders work_
+
+   ![Collapsible properties, in Chrome](./properties-images/collapsible-properties-chrome-temp.png) _todo: remove_
+
+1. Click the expander triangle.
 
 See also:
-* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_, in Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_, in Chrome docs.<!-- todo later: update downstream article, link to local doc -->
 
 
 <!-- ------------------------------ -->
 #### Properties that correspond to DOM nodes
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#dom-nodes -->
 
-Properties that correspond to DOM nodes are links.  To select the relevant node in the DOM tree, click a link:
+Properties that correspond to DOM nodes are links.  To select the relevant node in the DOM tree, click a link.
 
-![Link to the head DOM node](./properties-images/head-dom-node-link.png) _todo: replace by edge screenshot_
+To select the DOM tree node that corresponds to a property that has a link:
+
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Simple properties** box, right-click the **I have simple properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="objects">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   Collapsible properties are shown in bold text, and have an expander triangle:
+
+   ![Link to the head DOM node](./properties-images/head-dom-node-link.png) _todo: show expanded, when expander works_
+
+   ![Link to the head DOM node, in Chrome](./properties-images/head-dom-node-link-chrome-temp.png) _todo: remove_
+
+1. Click the expander triangle, and then click a node.
+
+   The relevant node is selected in the DOM tree.
+
+   _todo: update steps, after expander works_
 
 
 <!-- ------------------------------ -->
 #### Own and inherited properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#own-and-inherited -->
 
-Properties in bold font are the object's own properties; they are defined directly on the object.
+Properties in bold font are the object's own properties; they are defined directly on the object.  Own properties are listed first, to make them easier to spot.
 
 Properties in regular font are inherited from the prototype chain.  To display inherited properties, DevTools evaluates relevant accessors on built-in HTML elements.
 
-![Own and inherited properties](./properties-images/own-and-inherited-properties.png) _todo: replace by edge screenshot_
+To view an element's own and inherited properties:
 
-DevTools lists own properties first, to make them easier to spot.
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Own and inherited properties** box, right-click the **I have own and inherited properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="own-inherited">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The element's own properties are shown in bold text:
+
+   ![Own and inherited properties](./properties-images/own-and-inherited-properties.png)
 
 
 <!-- ------------------------------ -->
 #### Enumerable and non-enumerable properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#enumerable-and-non-enumerable -->
 
-Enumerable properties are bright in color.  Non-enumerable properties are dimmed.
-
-![Enumerable and non-enumerable properties](./properties-images/enumerable-and-non-enumerable-properties.png) _todo: replace by edge screenshot_
+* Enumerable properties are displayed as colored, bold text.
+* Non-enumerable properties are displayed as gray, bold text.
 
 You can iterate over the enumerable properties by using a `for … in` loop or the `Object.keys()` method.
+
+To view an element's enumerable and non-enumerable properties:
+
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Enumerable and non-enumerable properties** box, right-click the **I have enumerable and non-enumerable properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="own-inherited">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The element's properties are displayed:
+
+   ![Enumerable and non-enumerable properties](./properties-images/enumerable-and-non-enumerable-properties.png)
+
+   * Enumerable properties are displayed as colored, bold text.
+   * Non-enumerable properties are displayed as gray, bold text.
 
 
 <!-- ------------------------------ -->
 #### Methods
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#methods -->
 
-Methods are indicated by _f ()_:
+Methods are indicated by _f ()_.
 
-![Method](./properties-images/method.png) _todo: replace by edge screenshot_
+To view an element's methods:
 
-For more information on functions, see [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_ in the Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Methods** box, right-click the **I have a method** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="methods">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The element's methods are displayed, indicated by _f ()_:
+
+   ![Method](./properties-images/method.png)
+
+See also:
+* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_, in Chrome docs.<!--todo later: update downstream article, link to local doc -->
 
 
 <!-- ====================================================================== -->
 ## See also
-<!-- all links in article -->
+<!-- todo: all links in article -->
 
 Chrome docs:
-* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_.<!--todo in later pr: update downstream article, link to local doc -->
-* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo in later pr: update downstream article, link to local doc -->
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_.<!--todo later: update downstream article, link to local doc -->
+* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo later: update downstream article, link to local doc -->
 
 GitHub:
 * [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) - demo.
    * [/devtools-properties/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-properties/) - source code.
-* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
 
 <!-- ====================================================================== -->
