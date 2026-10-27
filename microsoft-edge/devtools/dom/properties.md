@@ -49,31 +49,44 @@ Detailed contents:
 ## Open the Properties tab
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#view-properties -->
 
-To open the **Properties** tab:
+To open the **Properties** tab in the **Elements** tool:
 
-1. Open DevTools. By default, the **Elements** tool opens.
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
 
-1. In the DOM tree, select a node.
+1. In the **Open the properties tab** box, right-click the **Select me** text box, and then select **Inspect**.
 
-1. Click the **Properties** tab.  If the tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+   DevTools opens, with the **Elements** tool selected.
 
-   The **Properties** tab opens:
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The **Properties** tab opens, displaying properties for the `<div class="box" id="open">` element:
 
    ![The Properties tab in the Elements tool](./properties-images/properties-tab.png)
 
-This screenshot uses:
-* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
-   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - source code.
-* [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
+See also:
+* [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) - demo.
+   * [/devtools-properties/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-properties/) - source code.
 
 
 <!-- ====================================================================== -->
 ## Spot own properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#spot-own-properties -->
 
-The **Properties** tab in the **Elements** tool sorts and displays the object's own properties first, and in bold font:
+The **Properties** tab in the **Elements** tool sorts and displays the object's own properties first, and in bold font.
 
-![Own properties](./properties-images/own-properties.png) _todo: replace by edge screenshot_
+To view an element's own properties:
+
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Spot own properties** box, right-click the **I have own properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The **Properties** tab opens, displaying properties for the `<div class="box" id="own">` element:
+
+   ![Own properties](./properties-images/own-properties.png)
 
 
 <!-- ====================================================================== -->
@@ -84,33 +97,77 @@ The **Properties** tab evaluates accessors on built-in elements and displays the
 
 To find the origin of an inherited property, expand an object, then its `[[Prototype]]`, then the nested `[[Prototype]]`, and so on.
 
-![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png.png) _todo: replace by edge screenshot_
+_todo: selecting the `<html>` node or `<input>` node and then clicking the right-pointing expander triangle doesn't expand to show subnodes_
 
-In this example, you can trace where the inherited `size` property came from, by locating the original own (bold) property on the prototype chain together with the corresponding getter.
+To find the origin of an inherited property:
 
-Additionally, prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
 
-![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: replace by edge screenshot_
+1. In the **Find the origin of an inherited property** box, right-click the **size is inherited** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   The **Properties** tab opens, displaying properties for the element `<input class="box" id="inherited" size="10" value="size is inherited">`.
+
+1. Click a right-pointing expander triangle.
+
+1. In the DOM tree, select the `<html>` element.
+
+1. In the **Properties** tab, click a right-pointing expander triangle.
+
+   ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png.png) _todo: replace by edge screenshot_
+
+   In this example, you can trace where the inherited `size` property came from, by locating the original own (bold) property on the prototype chain together with the corresponding getter.
+
+   Prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
+
+   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: replace by edge screenshot_
 
 
 <!-- ====================================================================== -->
 ## Filter properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#filter-properties -->
 
-To quickly find a property, start typing its name or value in the **Filter** input box:
+To quickly find a property of an element that's selected in the DOM tree, start typing its name or value in the **Filter** input box.
 
-![Filtering the properties](./properties-images/filter-properties.png) _todo: replace by edge screenshot_
+To filter properties of an element that's selected in the DOM tree:
+
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Filter properties** box, right-click the **Filter my properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<a class="box" id="filter" href="#filter" title="A link">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+1. In the **Properties** tab, in the **Filter** text box, enter text, such as **false**.
+
+   A list of matching properties of the selected element is displayed:
+
+   ![Filtering the properties](./properties-images/filter-properties.png)
 
 
 <!-- ====================================================================== -->
 ## Show all properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#show-all -->
 
-By default, the **Properties** tab doesn't show properties with `null` and `undefined` values.
+By default, the **Properties** tab doesn't show properties with `null` and `undefined` values.  To display all properties of a DOM tree node, select the **Show all** checkbox.
 
-To see all properties, select the **Show all** checkbox:
+To display all properties of an element, including properties that have a `null` or `undefined` value:
 
-![Properties with null values](./properties-images/show-all-properties.png) _todo: replace by edge screenshot_
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Show all properties** box, right-click the **I have null and undefined properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<a class="box" id="filter" href="#filter" title="A link">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+1. In the **Properties** tab, select the **Show all** checkbox:
+
+   ![Properties with null values](./properties-images/show-all-properties.png)
 
 
 <!-- ====================================================================== -->
@@ -124,9 +181,21 @@ The **Properties** tab in the **Elements** tool shows various kinds of propertie
 #### Simple properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#simple-properties -->
 
-Simple properties are `<name>: <value>` pairs:
+Simple properties are `<name>: <value>` pairs.
 
-![Simple properties](./properties-images/simple-properties.png) _todo: replace by edge screenshot_
+To display an element's simple properties:
+
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Simple properties** box, right-click the **I have simple properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="simple">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   Simple properties are shown in bold text:
+
+   ![Simple properties](./properties-images/simple-properties.png)
 
 
 <!-- ------------------------------ -->
@@ -135,9 +204,22 @@ Simple properties are `<name>: <value>` pairs:
 
 Collapsible properties have an expander button (![Expander icon](./properties-images/expander-icon.png)) and are objects (`{}`) or arrays (`[]`):
 
-![Collapsible properties](./properties-images/collapsible-properties.png) _todo: replace by edge screenshot_
+To display details of a collapsible property (an object or array):
 
-For more information on inspecting JavaScript objects, see [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_ in the Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
+1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
+
+1. In the **Simple properties** box, right-click the **I have simple properties** text box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="objects">` is selected.
+
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+
+   Collapsible properties are shown in bold text, and have an expander triangle:
+
+   ![Collapsible properties](./properties-images/collapsible-properties.png) _todo: replace by edge screenshot_
+
+See also:
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_, in Chrome docs.<!--todo in later pr: update downstream article, link to local doc -->
 
 
 <!-- ------------------------------ -->
@@ -193,8 +275,8 @@ Chrome docs:
 * [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo in later pr: update downstream article, link to local doc -->
 
 GitHub:
-* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
-   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do) - source code.
+* [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) - demo.
+   * [/devtools-properties/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-properties/) - source code.
 * [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo.
 
 
