@@ -494,7 +494,7 @@ See also:
 
 A _custom HTML element_ is identified by either:
 * A hyphenated element name, such as `<hello-world>`.
-* An `is="..."` attribute for a customized built-in element, such as `<p is="fancy-paragraph">`.
+* An `is` attribute added to a built-in element, such as `<p is="fancy-paragraph">`.
 
 A custom HTML element has a `custom-element` badge next to it in the DOM tree.
 
@@ -504,7 +504,7 @@ To use the `custom-element` badge:
 
 1. Right-click the **custom-element** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p>` element selected in the DOM tree.  The `<hello-world>` element and the `<p is="fancy-paragraph">` element have a `custom-element` badge next to them:
+   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p is="fancy-paragraph">` element selected in the DOM tree.  The `<hello-world>` element and the `<p is="fancy-paragraph">` element have a `custom-element` badge next to them:
 
    ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png)
 
