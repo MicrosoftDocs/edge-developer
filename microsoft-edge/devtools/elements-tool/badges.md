@@ -435,9 +435,9 @@ To use the `popover` badge:
 
    A popover dialog opens.  _todo: clicking the "toggle popover" button has no effect, since 156_
 
-   _todo: resume here updating steps_
-
 1. Right-click the popover dialog, and then select **Inspect**.
+
+   _todo: resume here updating steps_ _and details of ux_
 
    DevTools opens, with the `<div id="popover" popover>` element selected.  Next to the element is a `popover` badge.
 
@@ -447,7 +447,7 @@ To use the `popover` badge:
 
    ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png)
 
-1. Follow the steps in [The `top-layer` badge](#the-top-layer-badge), above.
+1. Follow the steps in [The `top-layer` badge](#the-top-layer-badge), above.  _todo: inline the steps here instead_
 
 See also:
 * [The `top-layer` badge](#the-top-layer-badge), above.
@@ -466,9 +466,9 @@ See also:
 
 The `starting-style` badge toggles the styles in the `@starting-style` rule, so you can see the animation in action.
 
-Discover the `starting-style` badge in the following preview:
-
 _todo: steps to reproduce png_
+
+OLD:
 
 1. In the preview, click OPEN POPOVER.
 
@@ -480,6 +480,10 @@ _todo: steps to reproduce png_
 
    The animation is shown in action, and the styles are applied in the **Styles** tab of the **Elements** tool.
 
+NEW:
+
+todo
+
 See also:
 * [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
 
@@ -488,16 +492,26 @@ See also:
 ## The `custom-element` badge
 <!-- Custom-element  https://developer.chrome.com/docs/devtools/elements/badges#custom-element -->
 
-Custom HTML elements identified by hyphenated tag names or `is="..."` attributes for customized built-in elements have `custom-element` badges next to them in the DOM tree.
+A _custom HTML element_ is identified by a hyphenated tag name, or by an `is="..."` attribute for a customized built-in element.  A custom HTML element has a `custom-element` badges next to it in the DOM tree.
+
+To use the `custom-element` badge:
+
+1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
+
+1. Right-click the **custom-element** box, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p>` element selected.  The `<hello-world>` and `<p>` elements have a `custom-element` badge next to them:
+
+   ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png)
+
+1. Next to the `<hello-world>` element or `<p>` element, click the `custom-element` badge.
+
+   The **Sources** tool opens, showing the relevant code:
+
+   ![Source code for custom elements](./badges-images/custom-element-source.png)
 
 See also:
 * [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements) at MDN.
-
-A custom HTML element has a `custom-element` badge next to it in the DOM tree:
-
-![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png)
-
-Click the `custom-element` badge to go to the relevant code in the **Sources** tool.
 
 
 <!-- ====================================================================== -->
