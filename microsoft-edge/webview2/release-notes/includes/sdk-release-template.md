@@ -1,5 +1,5 @@
 ---
-title: SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
+title: Release SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
 description: Release notes for Microsoft Edge WebView2, for Release SDK n.n.nnnn.nn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -66,7 +66,7 @@ Previous phase: [~] (./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
-* [SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (./1-0-nnnn-prerelease.md)
+* [Prerelease SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (./1-0-nnnn-prerelease.md)
 * [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
