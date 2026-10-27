@@ -492,7 +492,11 @@ See also:
 ## The `custom-element` badge
 <!-- Custom-element  https://developer.chrome.com/docs/devtools/elements/badges#custom-element -->
 
-A _custom HTML element_ is identified by a hyphenated tag name, or by an `is="..."` attribute for a customized built-in element.  A custom HTML element has a `custom-element` badges next to it in the DOM tree.
+A _custom HTML element_ is identified by either:
+* A hyphenated element name, such as `<hello-world>`.
+* An `is="..."` attribute for a customized built-in element, such as `<p is="fancy-paragraph">`.
+
+A custom HTML element has a `custom-element` badge next to it in the DOM tree.
 
 To use the `custom-element` badge:
 
