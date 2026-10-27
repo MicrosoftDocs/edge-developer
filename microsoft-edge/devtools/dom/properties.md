@@ -103,11 +103,11 @@ To find the origin of an inherited property:
 
 1. In the **Find the origin of an inherited property** box, right-click the **size is inherited** text box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<input class="box" id="inherited" size="10" value="size is inherited">` is selected.
 
 1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
 
-   The **Properties** tab opens, displaying properties for the element `<input class="box" id="inherited" size="10" value="size is inherited">`.
+   The **Properties** tab opens, displaying properties for the element.
 
 1. Click a right-pointing expander triangle.
 
@@ -115,13 +115,17 @@ To find the origin of an inherited property:
 
 1. In the **Properties** tab, click a right-pointing expander triangle.
 
-   ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png.png) _todo: replace by edge screenshot_
+   ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png) _todo: show expanded_
+
+   ![Tracing the size property up to its getter on the prototype chain, in Chrome](./properties-images/find-origin-inherited-property-chrome-temp.png) _todo: remove_
 
    In this example, you can trace where the inherited `size` property came from, by locating the original own (bold) property on the prototype chain together with the corresponding getter.
 
    Prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
 
-   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: replace by edge screenshot_
+   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: show expanded_
+
+   ![Prototype-specific properties, in Chrome](./properties-images/prototype-specific-properties-chrome-temp.png) _todo: remove_
 
 
 <!-- ====================================================================== -->
@@ -321,7 +325,7 @@ To view an element's methods:
 
    The element's methods are displayed, indicated by _f ()_:
 
-   ![Method](./properties-images/method.png)
+   ![Element's method](./properties-images/method.png)
 
 See also:
 * [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_, in Chrome docs.<!--todo later: update downstream article, link to local doc -->
