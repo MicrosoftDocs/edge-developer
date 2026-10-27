@@ -204,23 +204,23 @@ To display an element's simple properties:
 #### Objects and arrays
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#objects-and-arrays -->
 
-Collapsible properties have an expander button (![Expander icon](./properties-images/expander-icon.png)) and are objects (`{}`) or arrays (`[]`):
+Collapsible properties have an expander button (![Expander icon](./properties-images/expander-icon.png)) and are objects (indicated by `{}`) or arrays (indicated by `[]`).
 
 To display details of a collapsible property (an object or array):
 
 1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
 
-1. In the **Simple properties** box, right-click the **I have simple properties** text box, and then select **Inspect**.
+1. In the **Objects and arrays** box, right-click the **I have object and array properties** text box, and then select **Inspect**.
 
    DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="objects">` is selected.
 
 1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
 
-   Collapsible properties are shown in bold text, and have an expander triangle:
+   Collapsible properties (objects or arrays) have an expander triangle:
 
    ![Collapsible properties](./properties-images/collapsible-properties.png) _todo: show expanded, after expanders work_
 
-   ![Collapsible properties, in Chrome](./properties-images/collapsible-properties-chrome-temp.png) _todo: remove_
+   ![Collapsible properties, in Chrome](./properties-images/collapsible-properties-chrome-temp.png) _todo: remove; upstream has this seemingly wrong png; https://developer.chrome.com/docs/devtools/dom/properties#objects-and-arrays_
 
 1. Click the expander triangle.
 
