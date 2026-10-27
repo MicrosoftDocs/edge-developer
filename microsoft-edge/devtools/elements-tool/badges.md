@@ -1,6 +1,6 @@
 ---
 title: Badges reference
-description: Badges reference.
+description: Badges in the DOM tree to show or hide various overlays and speed up DOM tree navigation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -24,10 +24,9 @@ ms.date: 10/26/2026
 # Badges reference
 <!-- https://developer.chrome.com/docs/devtools/elements/badges -->
 
-_todo: convert from inline code examples to steps for using the demo_
 <!-- todo later: update from developer.chrome.com links to local links -->
 
-Toggle various overlays and speed up DOM tree navigation with this comprehensive reference of badges in the **Elements** tool.
+In the **Elements** tool, use badges in the DOM tree to show or hide various overlays and speed up DOM tree navigation.
 
 
 <!-- ====================================================================== -->
@@ -269,7 +268,7 @@ See also:
 
 An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, such as `inline-size`, that displays or hides the corresponding overlay.
 
-_todo: the badge is no longer labeled "container", now labeled more specifically eg "inline-size" - what other labels (container types) are there?_
+_todo: the badge is no longer labeled "container", now labeled more specifically eg "inline-size" - what other labels (container types) are there, if any?_
 
 To use the container badge, such as the `inline-size` badge:
 
@@ -361,8 +360,8 @@ To use the `top-layer` badge:
 1. Fully expand the `#top-layer` container node.
 
    Child nodes are displayed:
-   * A `dialog` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
-      * A `::backdrop` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
+   * A `dialog` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
+      * A `::backdrop` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
 
    ![The top-layer container and badge](./badges-images/top-layer-container.png)
 
@@ -407,7 +406,7 @@ To use the `media` badge:
 
    ![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge.png)
 
-   If media player details have been specified in the webpage (unlike this demo page), you can click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to display the details.  _todo: make media badge when clicked show info_
+   If media player details have been specified in the webpage (unlike this demo page), you can click the `media`![Link on badge](./badges-images/link-on-badge.png) badge to display the details.  _todo: make the "media" badge show info when clicked_
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -423,31 +422,45 @@ A _popover_ is any element that has a `popover` attribute.  A popover is useful 
 * Toasts
 * And more.
 
-A popover element has a `popover` badge next to it.
-
-Clicking the `popover` badge shows or hides a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.
+A popover element has a `popover` badge next to it.  Clicking the `popover` badge shows or hides a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.
 
 To use the `popover` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. In the **popover** box, click the **Toggle popover** button.
+   _todo: in Edge Stable 156, clicking the "toggle popover" button in the rendered webpage does nothing - selecting the popover badge in the DOM tree causes the popover to be displayed_
 
-   A popover dialog opens.  _todo: clicking the "toggle popover" button has no effect, since 156_
+1. In the **popover** box, right-click the **Toggle popover** button, and then select **Inspect**.
 
-1. Right-click the popover dialog, and then select **Inspect**.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="popover" popover>` element is displayed, with a `popover` badge next to the element.
 
-   _todo: resume here updating steps_ _and details of ux_
+1. Click the `popover` badge, and then move the mouse pointer away from the `<div id="popover" popover>` element.
 
-   DevTools opens, with the `<div id="popover" popover>` element selected.  Next to the element is a `popover` badge.
-
-1. In the DOM tree, next to the `<div id="popover" popover>` element, click the `popover` badge.
-
-   The **Elements** tool displays ___:
+   The `popover` badge changes color to indicate that it's selected.  At the bottom of the DOM tree, the `#top-layer` container is displayed:
 
    ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge.png)
 
-1. Follow the steps in [The `top-layer` badge](#the-top-layer-badge), above.  _todo: inline the steps here instead_
+1. In the DOM tree, next to the `popover` badge, click the ![Link on badge](./badges-images/link-on-badge.png)`top-layer (1)` badge.
+
+   At the bottom of the DOM tree, the corresponding `#top-layer` container node is expanded to show the `div` node, which has a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
+
+1. Fully expand the `#top-layer` container node.
+
+   Child nodes are displayed:
+   * A `div` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
+      * A `::backdrop` node, with a ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge next to it.
+
+1. Next to the `#top-layer` node's `div` node, click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
+
+   The DOM tree highlights the corresponding `<div id="popover" popover>` element.
+
+1. Next to the `#top-layer` node's child `::backdrop` node, click the ![Link on badge](./badges-images/link-on-badge.png)`reveal` badge.
+
+   The DOM tree highlights the corresponding `::backdrop` node within the `<div id="popover" popover>` element.
+
+1. Next to the `<div id="popover" popover>` element, click the `popover` badge, and then move the mouse pointer away from the element.
+
+   The popover changes color to indicate that it's not selected.  In the rendered webpage, the popover disappears.
 
 See also:
 * [The `top-layer` badge](#the-top-layer-badge), above.
@@ -460,31 +473,36 @@ See also:
 
 The `@starting-style` rule defines the initial styles on an element before it's rendered on the page.  This is required for elements that animate-in from `display: none`, because such elements need a state from which to animate in.  Such an element has a `starting-style` badge next to it.
 
-See also:
-* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
-* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+The `starting-style` badge toggles the styles in the `@starting-style` rule, so that you can see the animation in action.
 
-The `starting-style` badge toggles the styles in the `@starting-style` rule, so you can see the animation in action.
+To use the `starting-style` badge:
 
-_todo: steps to reproduce png_
+1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-OLD:
+1. In the **starting-style** box, click the **Toggle animated popover** button.
 
-1. In the preview, click OPEN POPOVER.
+   A popover dialog fades-in over the course of 1 second, reading: "This popover fades in."
 
-1. [Inspect the popover](https://developer.chrome.com/docs/devtools/open#inspect) that appears.
+1. Right-click the popover dialog, and then select **Inspect**.
 
-1. In the DOM tree, toggle the `starting-style` badge next to the `<div popover>` element:
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="animated-popover" popover>` element is selected.  Next to the element is a `starting-style` badge.
+
+1. Click the `starting-style` badge.
+
+   The animated popover fades out.  The `starting-style` badge changes color to indicate that it is selected.  In the **Styles** tab, the `@starting-style` CSS selector is displayed:
 
    ![The starting-style badge next to the element with the `@starting-style` rule](./badges-images/starting-style-badge.png)
 
-   The animation is shown in action, and the styles are applied in the **Styles** tab of the **Elements** tool.
+1. Click the `starting-style` badge again.
 
-NEW:
+   The `starting-style` badge changes color to indicate that it is not selected, and in the **Styles** tab, the `@starting-style` CSS selector is no longer displayed.
 
-todo
+1. In the rendered page, click the **Toggle animated popover** button.
+
+   The popover fades out.
 
 See also:
+* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
 * [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
 
 
@@ -520,7 +538,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo: all links in article -->
+<!-- all links in article -->
 
 * [Inspect CSS Grid layouts](../css/grid.md)
 * [Inspect and debug CSS container queries](../css/container-queries.md)
