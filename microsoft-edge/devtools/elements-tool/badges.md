@@ -504,11 +504,11 @@ To use the `custom-element` badge:
 
 1. Right-click the **custom-element** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p>` element selected.  The `<hello-world>` and `<p>` elements have a `custom-element` badge next to them:
+   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p>` element selected in the DOM tree.  The `<hello-world>` element and the `<p is="fancy-paragraph">` element have a `custom-element` badge next to them:
 
    ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge.png)
 
-1. Next to the `<hello-world>` element or `<p>` element, click the `custom-element` badge.
+1. Next to the `<hello-world>` element or the `<p is="fancy-paragraph">` element, click the `custom-element` badge.
 
    The **Sources** tool opens, showing the relevant code:
 
