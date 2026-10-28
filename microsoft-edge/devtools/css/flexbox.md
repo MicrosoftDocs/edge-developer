@@ -42,81 +42,130 @@ todo:
 
 
 <!-- ====================================================================== -->
-## The flex badge in the DOM tree
+## The `flex` badge in the DOM tree
 <!-- Discover CSS flexbox  https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
 
-When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge is displayed next to the element in the DOM tree in the **Elements** tool:
+When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge is displayed next to the element in the DOM tree in the **Elements** tool.
 
-![Discover flexbox](./flexbox-images/discover-flexbox.png)
+To view the `flex` badge:
 
-See also: (todo: local links)
-* [Elements] 
-* [DOM]
+1. Open a webpage, such as the [foo] demo.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+
+   ![Discover flexbox](./flexbox-images/discover-flexbox.png)
+
+See also:
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md)
 
 
 <!-- ====================================================================== -->
-## Modify layouts with the flexbox editor
-<!-- https://developer.chrome.com/docs/devtools/css/flexbox#modify -->
+## Modify layout by using the flexbox editor
+<!-- Modify layouts with the flexbox editor  https://developer.chrome.com/docs/devtools/css/flexbox#modify -->
 
-You can modify flexbox layouts visually with the **flexbox editor**.  For example, here is how you can center the text `<h1>` of this [demo page](http://jec.fish/demo/css-flexbox) within its container `<div class="container">`.
+You can modify a flexbox layout visually by using the **flexbox editor**.
+
+For example, you can center the text `<h1>` of the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo within its container, `<div class="container">`.
+
+To modify layout by using the **flexbox editor**:
+
+1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
+
+1. Right-click the webpage, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
 
 1. Inspect the container element.
 
-1. In the **Styles** tab of the **Elements** tool, you can see the flexbox editor button next to the display: flex declaration:
+   In the **Styles** tab of the **Elements** tool, the **flexbox editor** button is shown next to the `display: flex` declaration:
 
-   ![flexbox editor button] todo png
+   ![flexbox editor button](./flexbox-images/flexbox-editor-button.png) _todo show edge_
 
-1. Click the **flexbox editor** button to open the flexbox editor.
+1. Click the **flexbox editor** button.
 
-   The editor displays a list of flexbox properties.  Each property's value options are displayed as icon buttons.
+   The **flexbox editor** opens, displaying a list of flexbox properties.  Each property's value options are displayed as icon buttons:
 
-   ![flexbox editor] todo png
+   ![flexbox editor](./flexbox-images/flexbox-editor.png) _todo show edge_
 
-1. To center the text on the screen, you can click the `justify-content: center` and `align-items: center` buttons.
+1. Click the `justify-content: center` button.
 
-   ![Center the text in its container] todo png
+1. Click the `align-items: center` button.
 
-   The text are centered now.  The `justify-content: center` and `align-items: center` declarations are added in the **Styles** tab.
+   The text is now centered on the screen:
+
+   ![Center the text in its container](./flexbox-images/center-text-in-container.png) _todo show edge_
+
+   In the **Styles** tab, the `justify-content: center` and `align-items: center` declarations are added.
 
 
 <!-- ====================================================================== -->
 ## Examine the flexbox layout
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox#examine -->
 
-You can hover over the flexbox element in the **Elements** tool to visualize the layout.  The overlay appears over the element, laid out with dotted lines to show the position of its content and items.
+To visualize the layout, hover over the flexbox element in the **Elements** tool.  To toggle the display of the flexbox overlay, click the **flex** badge.
 
-hover over a flexbox element
+To examine a flexbox layout:
 
-Alternatively, you can click the **flex** badge to toggle the display of the flexbox overlay:
+1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
 
-![change justify-content to flex-end] todo png
+1. Right-click the webpage, and then select **Inspect**.
 
-Try changing the value to `justify-content: flex-end`.  The overlay is changed accordingly:
+   DevTools opens, with the **Elements** tool selected.
 
-![justify-content: flex-end] todo png
+   The overlay appears over the element, laid out with dotted lines to show the position of its content and items:
 
-The icons in the **flex editor** are context-aware.  It will change according to the layout direction.  For example, when you change the `flex-direction` to `column`, the icons in the **flex editor** are rotated accordingly.  The overlay is updated immediately too:
+   ![Hover over a flexbox element](./flexbox-images/hover-a-flexbox-element.png) _todo show edge_
 
-![video] todo png for video
+1. Click the **flex** badge.
+
+   The flexbox overlay is displayed (or hidden):
+
+   ![Change justify-content to flex-end](./flexbox-images/change-justify-content-flex-end.png) _todo show edge_
+
+1. Change the value to `justify-content: flex-end`.
+
+   The overlay is changed accordingly:  _todo: specify_
+
+   ![justify-content: flex-end](./flexbox-images/justify-content-flex-end.png) _todo show edge_
+
+   The icons in the **flex editor** are context-aware.  It _todo: what is "it"?_ changes according to the layout direction.  For example, when you change the `flex-direction` to `column`, the icons in the **flex editor** are rotated accordingly, and the overlay is updated:
+
+   ![Change flex-direction to column](./flexbox-images/change-flex-direction-to-column.png) _todo png for video_
 
 
 <!-- ====================================================================== -->
 ## Adjust the flexbox overlay color
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
 
-Click the **Layout** tab in the **Elements** tool, and then scroll down to the **Flexbox** section.  You can view all the flexbox elements of the page here:
+To adjust the flexbox overlay color:
 
-![Layout pane] todo png
+1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
 
-You can toggle the overlay of each flexbox element with the checkbox next to it.  It is the same as you click on the badge in the **DOM tree**.
+1. Right-click the webpage, and then select **Inspect**.
 
-Apart from that, you can change the color of the overlay by clicking on the color icon next to it.  For example, the color of the `container` overlay is changed to black.
+   DevTools opens, with the **Elements** tool selected.
 
-![change overlay color] todo png
+1. Click the **Layout** tab in the **Elements** tool, and then scroll down to the **Flexbox** section.
 
-To navigate to a flexbox element in the DOM tree, you can click on the selector icon next to it:
+   All of the flexbox elements are displayed:
 
-![video] todo png for video
+   ![Layout pane](./flexbox-images/layout-pane.png) _todo show edge_
+
+1. You can toggle the overlay of each flexbox element by selecting the checkbox next to it.  It is the same as you click on the badge in the **DOM tree**.
+
+1. You can change the color of the overlay, by clicking on the color icon next to it.
+
+   The color of the `container` overlay changes to black:
+
+   ![Change overlay color](./flexbox-images/change-overlay-color.png) _todo show edge_
+
+1. Click the selector icon next to it.
+
+   The DOM tree navigates to the flexbox element:
+
+   ![Navigate to a flexbox element](./flexbox-images/nav-flexbox-element.png) _todo png for video_
 
 
 <!-- ====================================================================== -->
