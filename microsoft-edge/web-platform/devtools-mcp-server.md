@@ -296,7 +296,7 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/Library/Application Support/Microsoft Edge"
+        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per options A/B
       ]
     }
   }
@@ -315,7 +315,7 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/.config/microsoft-edge"
+        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per options A/B
       ]
     }
   }
