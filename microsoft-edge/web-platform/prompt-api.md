@@ -152,7 +152,7 @@ By default, the Prompt API uses the Phi-4-mini model.  To use Aion-1.0-Instruct 
 
 1. In the search box at the top of the page, enter **Enable prerelease on-device language model**.
  
-1. In the **Enable prerelease on-device language model** drop-down list, select **Enabled**, and then click the **Restart** button:
+1. In the **Enable prerelease on-device language model** dropdown list, select **Enabled**, and then click the **Restart** button:
 
    ![Flags page showing the prerelease on-device language model flag](./prompt-api-images/prerelease-model-flag-for-prompt-api.png)
 

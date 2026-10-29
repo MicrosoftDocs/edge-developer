@@ -1,5 +1,5 @@
 ---
-title: SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
+title: Prerelease SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
 description: Release notes for Microsoft Edge WebView2 SDK n.n.nnnn-prerelease.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/01/2026
 ---
-# SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
+# Prerelease SDK n.n.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)
 
 Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Mmm. dd, yyyy.
 
