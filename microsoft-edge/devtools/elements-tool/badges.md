@@ -26,8 +26,6 @@ ms.date: 10/26/2026
 
 <!-- todo later: update from developer.chrome.com links to local links -->
 
-_todo: change from ![Link on badge](./badges-images/link-on-badge.png) to screenshot of badge; for badges that have the link icon_
-
 In the **Elements** tool, use badges in the DOM tree to show or hide various overlays and speed up DOM tree navigation.
 
 Some badges include a link icon (![Link on badge](./badges-images/link-on-badge.png)), indicating that clicking the badge navigates in the DOM.
@@ -572,8 +570,8 @@ See also:
 
 Chrome docs:
 * [Open the Elements panel to inspect the DOM or CSS](https://developer.chrome.com/docs/devtools/open#inspect) in _Open Chrome DevTools_.
-* [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox)<!-- todo: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
-* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_.<!-- todo: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
+* [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox)<!-- todo later: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
+* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_.<!-- todo later: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
 * [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer)
 
 web.dev:
