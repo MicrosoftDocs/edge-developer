@@ -266,7 +266,7 @@ See also:
 ## The `size` badge
 <!-- Container  https://developer.chrome.com/docs/devtools/elements/badges#container -->
 
-_todo: add `size` badge to demo?_
+<!-- todo: add `size` badge to demo -->
 
 The `size` badge (![size badge](./badges-images/size-badge.png)) is one type of container badge, for `container-type: size`.
 
@@ -428,9 +428,7 @@ To use the `media` badge (![media badge](./badges-images/media-badge.png)):
 
    ![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge-in-dom.png)
 
-1. Click the `media` badge (![media badge](./badges-images/media-badge.png)).
-
-   Media player details are displayed, if media player details have been specified in the webpage.
+   If you click the `media` badge (![media badge](./badges-images/media-badge.png)), and media player details have been specified in the webpage (unlike in this demo), media player details are displayed.
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -448,11 +446,11 @@ A _popover_ is any element that has a `popover` attribute.  A popover is useful 
 
 A popover element has a `popover` badge (![popover badge](./badges-images/popover-badge.png)) next to it.  Clicking the `popover` badge shows or hides a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.
 
+<!-- todo: in Edge Stable 156, clicking the "toggle popover" button in the rendered demo webpage does nothing - selecting the popover badge in the DOM tree causes the popover to be displayed -->
+
 To use the `popover` badge (![popover badge](./badges-images/popover-badge.png)):
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
-
-   _todo: in Edge Stable 156, clicking the "toggle popover" button in the rendered webpage does nothing - selecting the popover badge in the DOM tree causes the popover to be displayed_
 
 1. In the **popover** box, right-click the **Toggle popover** button, and then select **Inspect**.
 
