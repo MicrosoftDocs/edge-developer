@@ -263,14 +263,18 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Container badges, such as the `inline-size` badge
+## Container badges: the `inline-size` badge and the `size` badge
 <!-- Container  https://developer.chrome.com/docs/devtools/elements/badges#container -->
 
-An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, such as `inline-size`, that displays or hides the corresponding overlay.
+An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, that displays or hides the corresponding overlay.
 
-_todo: the badge is no longer labeled "container", now labeled more specifically eg "inline-size" - what other labels (container types) are there, if any?_
+There are two container badges:
+* The **inline-size** container badge ![inline-size badge.](./badges-images/inline-size-badge.png), for `container-type: inline-size`.
+* The **size** container badge ![size badge](./badges-images/size-badge.png), for `container-type: size`.
 
-To use the container badge, such as the `inline-size` badge:
+_todo: add `size` badge to demo?_
+
+To use the `inline-size` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -292,6 +296,7 @@ To use the container badge, such as the `inline-size` badge:
 
 See also:
 * [Inspect and debug CSS container queries](../css/container-queries.md)
+   * [Highlight a container and its descendants](../css/container-queries.md#highlight-a-container-and-its-descendants) in _Inspect and debug CSS container queries_.
 * [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries) at MDN.
 
 
