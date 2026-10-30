@@ -268,7 +268,7 @@ See also:
 
 <!-- todo: add `size` badge to demo -->
 
-The `size` badge (![size badge](./badges-images/size-badge.png)) is one type of container badge, for `container-type: size`.
+The `size` badge (![size badge](./badges-images/size-badge.png)) is one type of container badge, used for `container-type: size`.
 
 See [The `inline-size` badge](#the-inline-size-badge), below.
 
@@ -279,9 +279,9 @@ See [The `inline-size` badge](#the-inline-size-badge), below.
 
 An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, that displays or hides the corresponding overlay.
 
-There are two container badges:
-* The **inline-size** container badge (![inline-size badge](./badges-images/inline-size-badge.png)), for `container-type: inline-size`.
-* The **size** container badge (![size badge](./badges-images/size-badge.png)), for `container-type: size`.
+There are two types of container badges:
+* The **inline-size** container badge (![inline-size badge](./badges-images/inline-size-badge.png)), used for `container-type: inline-size`.
+* The **size** container badge (![size badge](./badges-images/size-badge.png)), used for `container-type: size`.
 
 To use the `inline-size` badge:
 
@@ -316,7 +316,7 @@ See also:
 The `<slot>` HTML element is a placeholder that you can fill with your own content.  Together with the `<template>` element, `<slot>` lets you create separate DOM trees and present them together.
 
 * A slot content element has a `slot` badge (![slot badge](./badges-images/slot-badge.png)) next to it that serves as a link to the corresponding `<slot>` element.
-* The `slot` badge (![slot badge](./badges-images/slot-badge.png)) has a paired `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) that takes you back.
+* The `slot` badge has a paired `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) that takes you back.
 
 To use the `slot` badge:
 
@@ -346,7 +346,7 @@ See also:
 
 The `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) is paired with the following badges:
 * The `slot` badge (![slot badge](./badges-images/slot-badge.png)).  See [The slot badge](#the-slot-badge), above.
-* The `top-layer` (![top-layer badge](./badges-images/top-layer-badge.png)) badge.  See [The `top-layer` badge](#the-top-layer-badge), below.
+* The `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).  See [The `top-layer` badge](#the-top-layer-badge), below.
 
 
 <!-- ====================================================================== -->
@@ -377,7 +377,9 @@ To use the `top-layer` badge:
 
 1. In the DOM tree, next to the `<dialog>` element, click the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).
 
-   At the bottom of the DOM tree, the corresponding `#top-layer` container node is expanded to show the `dialog` node, which has a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
+   At the bottom of the DOM tree, the corresponding `#top-layer` container node is expanded to show the `dialog` node, which has a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it:
+
+   ![The top-layer container and badge](./badges-images/top-layer-badge-in-dom.png)
 
 1. Fully expand the `#top-layer` container node.
 
@@ -385,9 +387,7 @@ To use the `top-layer` badge:
    * A `dialog` node, with a `reveal` badge next to it.
       * A `::backdrop` node, with a `reveal` badge next to it.
 
-   ![The top-layer container and badge](./badges-images/top-layer-badge-in-dom.png)
-
-1. Next to the `#top-layer` node's `dialog` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
+1. Next to the `#top-layer` node's child `dialog` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
 
    The DOM tree highlights the corresponding `<dialog>` element.
 
