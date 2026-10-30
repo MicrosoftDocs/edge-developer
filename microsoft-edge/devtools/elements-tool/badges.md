@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/26/2026
+ms.date: 10/30/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -75,10 +75,6 @@ To use the `view-source` badge:
    The **Sources** tool opens, displaying the source file, such as `index.html`:
 
    ![Source code file](./badges-images/view-source-result.png)
-
-See also:
-* [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
-   * [/devtools-badges/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-badges/) - source code.
 
 
 <!-- ====================================================================== -->
