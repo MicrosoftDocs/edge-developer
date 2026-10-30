@@ -51,10 +51,6 @@ To show or hide badges:
 
 The following sections explain each badge.
 
-See also:
-* [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
-   * [/devtools-badges/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-badges/) - source code.
-
 
 <!-- ====================================================================== -->
 ## The `view-source` badge
