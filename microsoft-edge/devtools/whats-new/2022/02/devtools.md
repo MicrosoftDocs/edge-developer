@@ -68,7 +68,7 @@ With forced-colors emulation turned on in the **Rendering** tool, the webpage ch
 ![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background](./devtools-images/emulate-forced-colors-applied.png)
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering/rendering-tool.md)
 
 
 <!-- ====================================================================== -->

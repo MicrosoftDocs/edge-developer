@@ -718,7 +718,32 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/index.md",
-      "redirect_url": "/microsoft-edge/devtools/rendering-tools/index",
+      "redirect_url": "/microsoft-edge/devtools/rendering/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/rendering-tools/index.md",
+      "redirect_url": "/microsoft-edge/devtools/rendering/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime.md",
+      "redirect_url": "/microsoft-edge/devtools/rendering/js-runtime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/rendering-tools/js-runtime.md",
+      "redirect_url": "/microsoft-edge/devtools/rendering/js-runtime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/rendering-tool.md",
+      "redirect_url": "/microsoft-edge/devtools/rendering/rendering-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/rendering-tools/rendering-tool.md",
+      "redirect_url": "/microsoft-edge/devtools/rendering/rendering-tool",
       "redirect_document_id": false
     },
     {
@@ -774,11 +799,6 @@
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/memory-problems/allocation-profiler.md",
       "redirect_url": "/microsoft-edge/devtools/memory-problems/allocation-profiler",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime.md",
-      "redirect_url": "/microsoft-edge/devtools/rendering-tools/js-runtime",
       "redirect_document_id": false
     },
     {
@@ -898,7 +918,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/media-panel/index.md",
-      "redirect_url": "/microsoft-edge/devtools/media-panel/index",
+      "redirect_url": "/microsoft-edge/devtools/media/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/media-panel/index.md",
+      "redirect_url": "/microsoft-edge/devtools/media/index",
       "redirect_document_id": false
     },
     {
@@ -939,11 +964,6 @@
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/recorder/index.md",
       "redirect_url": "/microsoft-edge/devtools/recorder/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "../microsoft-edge/devtools-guide-chromium/rendering-tools/rendering-tool.md",
-      "redirect_url": "/microsoft-edge/devtools/rendering-tools/rendering-tool",
       "redirect_document_id": false
     },
     {

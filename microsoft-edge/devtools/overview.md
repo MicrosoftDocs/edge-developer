@@ -638,7 +638,7 @@ See also:
 * [Inspect where the browser stored content](./storage/sessionstorage.md)<!--keep link?-->
 * [Evaluate the performance](./performance/index.md)<!--keep link?-->
 * [Memory problems](./memory-problems/index.md)<!--keep link?-->
-* [Rendering issues](./rendering-tools/index.md)<!--keep link?-->
+* [Rendering issues](./rendering/index.md)<!--keep link?-->
 * [Use a development environment](./sources/index.md)<!--keep link?-->
 * [Sync changes in DevTools with the file system](./workspaces/index.md)<!--keep link?-->
 * [Override files from the web](./javascript/overrides.md)<!--keep link?-->

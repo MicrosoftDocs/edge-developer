@@ -146,7 +146,7 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You can view memory allocation by JavaScript function.  See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md).
+You can view memory allocation by JavaScript function.  See [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering/js-runtime.md).
 
 
 <!-- ====================================================================== -->

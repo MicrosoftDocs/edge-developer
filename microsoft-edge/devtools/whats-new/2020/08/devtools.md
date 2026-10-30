@@ -177,7 +177,7 @@ The following sections announce additional features available in Microsoft Edge 
 <!-- ------------------------------ -->
 #### New Media tool
 
-DevTools now displays media players information in the [Media](../../../media-panel/index.md) tool.
+DevTools now displays media players information in the [Media](../../../media/index.md) tool.
 
 To open the new **Media** tool, select **Customize and control DevTools** (`...`) > **More tools** > **Media**.
 
