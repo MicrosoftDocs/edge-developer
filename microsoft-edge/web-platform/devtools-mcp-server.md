@@ -13,18 +13,29 @@ ms.date: 06/10/2026
 Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser, including Microsoft Edge and WebView2.
 
 **Detailed contents:**
+
+_todo: update_
+
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
 * [Launch Edge](#launch-edge)
    * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
    * [Executable path for each Edge channel](#executable-path-for-each-edge-channel)
 * [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance)
-   * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
-      * [Option A: Start Edge with the remote debugging flag and a non-default user data directory](#option-a-start-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
-      * [Option B: In `edge://inspect`, enable remote debugging](#option-b-in-edgeinspect-enable-remote-debugging)
-   * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
-   * [Step 3: Test your setup](#step-3-test-your-setup)
-   * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
+   * [Auto-connect to a running Edge instance, if starting Edge with the remote debugging flag and a non-default user data directory](#auto-connect-to-a-running-edge-instance-if-starting-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
+      * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
+         * [Option A: Start Edge with the remote debugging flag and a non-default user data directory](#option-a-start-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
+         * [Option B: In `edge://inspect`, enable remote debugging](#option-b-in-edgeinspect-enable-remote-debugging)
+      * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
+      * [Step 3: Test your setup](#step-3-test-your-setup)
+      * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
+   * [Auto-connect to a running Edge instance, if using edge://inspect to enable remote debugging](#auto-connect-to-a-running-edge-instance-if-using-edgeinspect-to-enable-remote-debugging)
+      * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
+         * [Option A: Start Edge with the remote debugging flag and a non-default user data directory](#option-a-start-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
+         * [Option B: In `edge://inspect`, enable remote debugging](#option-b-in-edgeinspect-enable-remote-debugging)
+      * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
+      * [Step 3: Test your setup](#step-3-test-your-setup)
+      * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
 * [Auto-connect to a WebView2 instance](#auto-connect-to-a-webview2-instance)
    * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
       * [By using WebView2Utilities](#by-using-webview2utilities)
@@ -214,23 +225,23 @@ Auto-connecting to an already running Edge instance is useful:
 > [!WARNING]
 > When using auto-connect, your agent inherits your active session, including logged-in accounts, cookies, and other data that's surfaced through JavaScript APIs.  This may expose Personally Identifiable Information (PII) to the agent.  Only use this mode with agents that you trust, and be careful with your prompts.
 
+To auto-connect to a running Edge instance, there are two options:
+* Option A: Start Edge with the remote debugging flag
+* Option B: In `edge://inspect`, enable remote debugging, along with the default user data directory
+
+Details are below.
+
 
 <!-- ------------------------------ -->
-#### Step 1: Enable remote debugging in Edge
+#### Option A: Start Edge with the remote debugging flag
 
-To enable remote debugging in Microsoft Edge, there are two options.
+To auto-connect to a running Edge instance, if you're starting Edge with the remote debugging flag, use these steps.
 
-
-<!-- ---------- -->
-###### Option A: Start Edge with the remote debugging flag and a non-default user data directory
-
-Start Microsoft Edge with the remote debugging flag and a non-default user data directory:
-
-`msedge.exe --remote-debugging-port=9222 --user-data-dir="C:\temp\edge-debug"`
+This approach requires using a non-default user data directory.
 
 
 <!-- ---------- -->
-###### Option B: In `edge://inspect`, enable remote debugging
+###### Step A1: Enable remote debugging in Edge
 
 In the **Inspect with Edge Developer Tools** special page, enable remote debugging in your default browser, as follows:
 
@@ -247,18 +258,12 @@ In the **Inspect with Edge Developer Tools** special page, enable remote debuggi
    ![The Inspect page](./devtools-mcp-server-images/allow-remote-debugging.png)
 
 
-<!-- ------------------------------ -->
-#### Step 2: Configure the MCP server
+<!-- ---------- -->
+###### Step A2: Configure the MCP server
 
 To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to your Microsoft Edge user data directory.  These examples use the Edge Stable channel.
 
-If you used Option A in Step 1 (start Edge with the remote debugging flag and a non-default user data directory):
-
-* For `--user-data-dir`, use the same, non-default user data directory that you used when launching the browser.
-
-If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
-
-* For `--user-data-dir`, use the default `user-data-dir`.  This is required, for `autoConnect` to work.
+For `--user-data-dir`, use the same, non-default user data directory that you used when launching the browser.
 
 ##### [Windows](#tab/windows/)
 
@@ -272,11 +277,146 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        // If using Option A (start Edge with the remote debugging flag and a 
-        // non-default user data directory), use a non-default user data directory:
         "--user-data-dir=C:\\temp\\edge-debug"
-        // If using Option B (in `edge://inspect`, enable remote debugging), use 
-        // the default user data directory:
+      ]
+    }
+  }
+}
+```
+
+##### [macOS](#tab/macos/)
+
+```json
+{
+  "servers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--autoConnect",
+        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per option A
+      ]
+    }
+  }
+}
+```
+
+##### [Linux](#tab/linux/)
+
+```json
+{
+  "servers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--autoConnect",
+        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per option A
+      ]
+    }
+  }
+}
+```
+
+---
+
+
+<!-- ---------- -->
+###### Step A3: Test your setup
+
+Make sure Microsoft Edge is running, then enter the following prompt in your Model-Context-Protocol (MCP) client:
+
+`Navigate to https://contoso.com and take a screenshot`
+
+The MCP server should connect to your running Edge instance and execute the command.
+
+
+<!-- ------------------------------ -->
+#### User data directory for each Edge channel
+
+Use the appropriate `--user-data-dir` value for your channel.
+
+These are default locations.  Paths may vary based on user configuration, version, or group policies.
+
+##### [Windows](#tab/windows/)
+
+| Channel | Default Path |
+|---|---|
+| Stable | `%LOCALAPPDATA%\Microsoft\Edge\User Data` |
+| Beta | `%LOCALAPPDATA%\Microsoft\Edge Beta\User Data` |
+| Dev | `%LOCALAPPDATA%\Microsoft\Edge Dev\User Data` |
+| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\User Data` |
+
+##### [macOS](#tab/macos/)
+
+| Channel | Default Path |
+|---|---|
+| Stable | `~/Library/Application Support/Microsoft Edge` |
+| Beta | `~/Library/Application Support/Microsoft Edge Beta` |
+| Dev | `~/Library/Application Support/Microsoft Edge Dev` |
+| Canary | `~/Library/Application Support/Microsoft Edge Canary` |
+
+##### [Linux](#tab/linux/)
+
+| Channel | Default Path |
+|---|---|
+| Stable | `~/.config/microsoft-edge` |
+| Beta | `~/.config/microsoft-edge-beta` |
+| Dev | `~/.config/microsoft-edge-dev` |
+| Canary | n/a; there isn't a Canary channel for Linux. |
+
+---
+
+
+<!-- ------------------------------ -->
+#### Option B: Use edge://inspect to enable remote debugging
+
+To auto-connect to a running Edge instance, if you're using `edge://inspect` to enable remote debugging, use these steps.
+
+This approach requires using the default user data directory.
+
+
+<!-- ---------- -->
+###### Step B1: Enable remote debugging in Edge
+
+In the **Inspect with Edge Developer Tools** special page, enable remote debugging in your default browser, as follows, along with the default user data directory:
+
+1. In a running instance of Microsoft Edge, go to `edge://inspect`.
+
+   The **Inspect with Edge Developer Tools** page opens, initially showing the **Devices** page.
+
+1. On the left, click **Remote debugging**.
+
+   The **Remote debugging** page opens.
+
+1. Select the **Allow remote debugging for this browser instance** checkbox:
+
+   ![The Inspect page](./devtools-mcp-server-images/allow-remote-debugging.png)
+
+
+<!-- ---------- -->
+###### Step B2: Configure the MCP server
+
+To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to your Microsoft Edge user data directory.  These examples use the Edge Stable channel.
+
+For `--user-data-dir`, use the default `user-data-dir`.  This is required, for `autoConnect` to work.
+
+##### [Windows](#tab/windows/)
+
+```json
+{
+  "servers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--autoConnect",
         "--user-data-dir=%LocalAppData%\\Microsoft\\Edge\\User Data"
       ]
     }
@@ -296,7 +436,7 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per options A/B
+        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per option B
       ]
     }
   }
@@ -315,7 +455,7 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per options A/B
+        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per option B
       ]
     }
   }
@@ -325,8 +465,8 @@ If you used Option B in Step 1 (in `edge://inspect`, enable remote debugging):
 ---
 
 
-<!-- ------------------------------ -->
-#### Step 3: Test your setup
+<!-- ---------- -->
+###### Step B3: Test your setup
 
 Make sure Microsoft Edge is running, then enter the following prompt in your Model-Context-Protocol (MCP) client:
 
