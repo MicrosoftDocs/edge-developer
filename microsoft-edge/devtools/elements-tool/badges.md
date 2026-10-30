@@ -64,7 +64,7 @@ To view the source of your page in the **Sources** tool, click the `view-source`
 
 The `view-source` badge provides an alternative to selecting the **View page source** menuitem in the webpage's right-click menu (context menu).
 
-To use the `view-source` badge (![view-source badge](./badges-images/view-source-badge.png)):
+To use the `view-source` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -72,7 +72,7 @@ To use the `view-source` badge (![view-source badge](./badges-images/view-source
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, next to the `<html>` tag, click the `view-source` badge:
+1. In the DOM tree, next to the `<html>` tag, click the `view-source` badge (![view-source badge](./badges-images/view-source-badge.png)):
 
    ![The 'view source' badge](./badges-images/view-source-badge-in-dom.png)
 
@@ -91,7 +91,7 @@ See also:
 
 An HTML element is a _grid container_ if its `display` CSS property is set to `grid` or `inline-grid`.  Such an element has a `grid` badge (![grid badge](./badges-images/grid-badge.png)) next to it that toggles the corresponding overlay.
 
-To use the `grid` badge (![grid badge](./badges-images/grid-badge.png)):
+To use the `grid` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -99,7 +99,7 @@ To use the `grid` badge (![grid badge](./badges-images/grid-badge.png)):
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, next to the `<div class="grid">` element, click the `grid` badge.
+1. In the DOM tree, next to the `<div class="grid">` element, click the `grid` badge (![grid badge](./badges-images/grid-badge.png)).
 
    The `grid` badge changes color, and a grid overlay is displayed on the rendered webpage, showing columns, rows, their numbers, and gaps:
 
@@ -120,7 +120,7 @@ See also:
 
 A _subgrid_ is a nested grid that uses the same tracks as its parent grid.  An element is a _subgrid container_ if one or both of its `grid-template-columns`, `grid-template-rows` properties are set to `subgrid`.  Such an element has a `subgrid` badge (![subgrid badge](./badges-images/subgrid-badge.png)) next to it that toggles the corresponding overlay.
 
-To use the `subgrid` badge (![subgrid badge](./badges-images/subgrid-badge.png)):
+To use the `subgrid` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -128,7 +128,7 @@ To use the `subgrid` badge (![subgrid badge](./badges-images/subgrid-badge.png))
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<div class="subgrid">` element, and then click the `subgrid` badge.
+1. In the DOM tree, expand the tree to show the `<div class="subgrid">` element, and then click the `subgrid` badge (![subgrid badge](./badges-images/subgrid-badge.png)).
 
    The `subgrid` badge changes color, and a subgrid overlay is displayed on the rendered webpage, showing columns, rows, their numbers, and gaps:
 
@@ -148,7 +148,7 @@ See also:
 
 An HTML element is a _flex container_ if its `display` CSS property is set to `flex` or `inline-flex`.  Such an element has a `flex` badge (![flex badge](./badges-images/flex-badge.png)) next to it that toggles the corresponding overlay.
 
-To use the `flex` badge (![flex badge](./badges-images/flex-badge.png)):
+To use the `flex` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -156,7 +156,7 @@ To use the `flex` badge (![flex badge](./badges-images/flex-badge.png)):
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<div class="flex">` element, and then click the `flex` badge.
+1. In the DOM tree, expand the tree to show the `<div class="flex">` element, and then click the `flex` badge (![flex badge](./badges-images/flex-badge.png)).
 
    The `flex` badge changes color, and a flexbox overlay is displayed on the rendered webpage, showing child element positions:
 
@@ -180,7 +180,7 @@ DevTools can detect some ad frames and tag them.  Such a frame has an `ad` badge
 
 A tooltip provides context on why the element was identified as an ad.  The `ad` badge is not clickable.
 
-To use the `ad` badge (![ad badge](./badges-images/ad-badge.png)):
+To use the `ad` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -188,7 +188,7 @@ To use the `ad` badge (![ad badge](./badges-images/ad-badge.png)):
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<iframe>` element, and then hover over the `ad` badge.
+1. In the DOM tree, expand the tree to show the `<iframe>` element, and then hover over the `ad` badge (![ad badge](./badges-images/ad-badge.png)).
 
    ![Ad badge](./badges-images/ad-badge-in-dom.png)
 
@@ -210,7 +210,7 @@ See also:
 
 An HTML element is a _scroll container_ if its `overflow` CSS property is set to `scroll`, or `auto` when there's enough content to cause overflow.  Such an element has a `scroll` badge (![scroll badge](./badges-images/scroll-badge.png)) next to it.
 
-To view the `scroll` badge (![scroll badge](./badges-images/scroll-badge.png)):
+To view the `scroll` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -220,7 +220,7 @@ To view the `scroll` badge (![scroll badge](./badges-images/scroll-badge.png)):
 
 1. In the DOM tree, expand the tree to show the `<div class="flex">` element.
 
-   The `scroll` badge is shown next to the element:
+   The `scroll` badge (![scroll badge](./badges-images/scroll-badge.png)) is shown next to the element:
 
    ![Scroll badge on a DOM tree node](./badges-images/scroll-badge-in-dom.png)
 
@@ -236,7 +236,7 @@ See also:
 
 _Scroll containers_ can have CSS properties that configure snap points.  A scroll container element has a `scroll-snap` badge (![scroll-snap badge](./badges-images/scroll-snap-badge.png)) next to it that displays or hides the corresponding overlay.
 
-To use the `scroll-snap` badge (![scroll-snap badge](./badges-images/scroll-snap-badge.png)):
+To use the `scroll-snap` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -244,7 +244,7 @@ To use the `scroll-snap` badge (![scroll-snap badge](./badges-images/scroll-snap
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<div class="scroll-snap">` element, and then click the `scroll-snap` badge.
+1. In the DOM tree, expand the tree to show the `<div class="scroll-snap">` element, and then click the `scroll-snap` badge (![scroll-snap badge](./badges-images/scroll-snap-badge.png)).
 
    The `scroll-snap` badge changes color, and a scroll-snap overlay shows element positions and snap points:
 
@@ -280,10 +280,10 @@ See [The `inline-size` badge](#the-inline-size-badge), below.
 An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, that displays or hides the corresponding overlay.
 
 There are two container badges:
-* The **inline-size** container badge ![inline-size badge](./badges-images/inline-size-badge.png), for `container-type: inline-size`.
-* The **size** container badge ![size badge](./badges-images/size-badge.png), for `container-type: size`.
+* The **inline-size** container badge (![inline-size badge](./badges-images/inline-size-badge.png)), for `container-type: inline-size`.
+* The **size** container badge (![size badge](./badges-images/size-badge.png)), for `container-type: size`.
 
-To use the `inline-size` badge (![inline-size badge](./badges-images/inline-size-badge.png)):
+To use the `inline-size` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -291,7 +291,7 @@ To use the `inline-size` badge (![inline-size badge](./badges-images/inline-size
 
    DevTools opens, with the **Elements** tool selected.
 
-1. In the DOM tree, expand the tree to show the `<div class="container">` element, and then click the `inline-size` badge.
+1. In the DOM tree, expand the tree to show the `<div class="container">` element, and then click the `inline-size` badge (![inline-size badge](./badges-images/inline-size-badge.png)).
 
 1. In the rendered webpage, within the **container** box, resize the box by dragging its bottom-right corner left or right.
 
@@ -318,7 +318,7 @@ The `<slot>` HTML element is a placeholder that you can fill with your own conte
 * A slot content element has a `slot` badge (![slot badge](./badges-images/slot-badge.png)) next to it that serves as a link to the corresponding `<slot>` element.
 * The `slot` badge (![slot badge](./badges-images/slot-badge.png)) has a paired `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) that takes you back.
 
-To use the `slot` badge (![slot badge](./badges-images/slot-badge.png)):
+To use the `slot` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -344,7 +344,7 @@ See also:
 ## The `reveal` badge
 <!-- Slot  https://developer.chrome.com/docs/devtools/elements/badges#slot -->
 
-The `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) is paired with:
+The `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) is paired with the following badges:
 * The `slot` badge (![slot badge](./badges-images/slot-badge.png)).  See [The slot badge](#the-slot-badge), above.
 * The `top-layer` (![top-layer badge](./badges-images/top-layer-badge.png)) badge.  See [The `top-layer` badge](#the-top-layer-badge), below.
 
@@ -359,9 +359,9 @@ To help you visualize top layer elements, the **Elements** tool adds a `#top-lay
 
 A top-layer element has a `top-layer (N)` badge (![top-layer badge](./badges-images/top-layer-badge.png)) next to it, where `N` is the element's index number.  The badge is a link to the corresponding element in the `#top-layer` container.
 
-The `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)) has a paired `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) that takes you back.
+The `top-layer` badge has a paired `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) that takes you back.
 
-To use the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)):
+To use the `top-layer` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -371,7 +371,7 @@ To use the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge
 
 1. Right-click the dialog, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.  Next to the `<dialog>` element is a `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).
+   DevTools opens, with the **Elements** tool selected.  Next to the `<dialog>` element is a `top-layer` badge.
 
 1. In the DOM tree, expand the `<dialog>` element.
 
@@ -382,8 +382,8 @@ To use the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge
 1. Fully expand the `#top-layer` container node.
 
    Child nodes are displayed:
-   * A `dialog` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
-      * A `::backdrop` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
+   * A `dialog` node, with a `reveal` badge next to it.
+      * A `::backdrop` node, with a `reveal` badge next to it.
 
    ![The top-layer container and badge](./badges-images/top-layer-badge-in-dom.png)
 
@@ -391,13 +391,13 @@ To use the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge
 
    The DOM tree highlights the corresponding `<dialog>` element.
 
-1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
+1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge.
 
    The DOM tree highlights the corresponding `::backdrop` node within the `<form>` element within the `<dialog>` element.
 
 1. In the rendered webpage, in the **This dialog is in the top layer** dialog, click the **Close** button.
 
-   In the DOM tree, the node changes from `<dialog id="dialog" open>` with a `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)) next to it, to a `<dialog id="dialog">` element without a `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)) next to it.
+   In the DOM tree, the node changes from `<dialog id="dialog" open>` with a `top-layer` badge next to it, to a `<dialog id="dialog">` element without a `top-layer` badge  next to it.
 
 See also:
 * [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
@@ -412,9 +412,9 @@ See also:
 
 Click the `media` badge (![media badge](./badges-images/media-badge.png)) to open the **Media** tool and debug your media.  The `media` badge is turned off by default.  When turned on, the `media` badge appears next to `<audio>` and `<video>` elements.
 
-To turn on the `media` badge (![media badge](./badges-images/media-badge.png)), right-click the DOM tree, and then in the **Badge settings** submenu, select the **Media** menuitem.
+To turn on the `media` badge, right-click the DOM tree, and then in the **Badge settings** submenu, select the **Media** menuitem.
 
-To use the `media` badge (![media badge](./badges-images/media-badge.png)):
+To use the `media` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -428,7 +428,7 @@ To use the `media` badge (![media badge](./badges-images/media-badge.png)):
 
    ![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge-in-dom.png)
 
-   If you click the `media` badge (![media badge](./badges-images/media-badge.png)), and media player details have been specified in the webpage (unlike in this demo), media player details are displayed.
+   If you click the `media` badge, and media player details have been specified in the webpage (unlike in this demo), media player details are displayed.
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -448,39 +448,39 @@ A popover element has a `popover` badge (![popover badge](./badges-images/popove
 
 <!-- todo: in Edge Stable 156, clicking the "toggle popover" button in the rendered demo webpage does nothing - selecting the popover badge in the DOM tree causes the popover to be displayed -->
 
-To use the `popover` badge (![popover badge](./badges-images/popover-badge.png)):
+To use the `popover` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
 1. In the **popover** box, right-click the **Toggle popover** button, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="popover" popover>` element is displayed, with a `popover` badge (![popover badge](./badges-images/popover-badge.png)) next to the element.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="popover" popover>` element is displayed, with a `popover` badge next to the element.
 
 1. Click the `popover` badge (![popover badge](./badges-images/popover-badge.png)), and then move the mouse pointer away from the `<div id="popover" popover>` element.
 
-   The `popover` badge (![popover badge](./badges-images/popover-badge.png)) changes color to indicate that it's selected.  At the bottom of the DOM tree, the `#top-layer` container is displayed:
+   The `popover` badge changes color to indicate that it's selected.  At the bottom of the DOM tree, the `#top-layer` container is displayed:
 
    ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge-in-dom.png)
 
-1. In the DOM tree, next to the `popover` badge (![popover badge](./badges-images/popover-badge.png)), click the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).
+1. In the DOM tree, next to the `popover` badge, click the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).
 
    At the bottom of the DOM tree, the corresponding `#top-layer` container node is expanded to show the `div` node, which has a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
 
 1. Fully expand the `#top-layer` container node.
 
    Child nodes are displayed:
-   * A `div` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
-      * A `::backdrop` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
+   * A `div` node, with a `reveal` badge next to it.
+      * A `::backdrop` node, with a `reveal` badge next to it.
 
 1. Next to the `#top-layer` node's `div` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
 
    The DOM tree highlights the corresponding `<div id="popover" popover>` element.
 
-1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
+1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge.
 
    The DOM tree highlights the corresponding `::backdrop` node within the `<div id="popover" popover>` element.
 
-1. Next to the `<div id="popover" popover>` element, click the `popover` badge (![popover badge](./badges-images/popover-badge.png)), and then move the mouse pointer away from the element.
+1. Next to the `<div id="popover" popover>` element, click the `popover` badge, and then move the mouse pointer away from the element.
 
    The popover changes color to indicate that it's not selected.  In the rendered webpage, the popover disappears.
 
@@ -497,7 +497,7 @@ The `@starting-style` rule defines the initial styles on an element before it's 
 
 The `starting-style` badge toggles the styles in the `@starting-style` rule, so that you can see the animation in action.
 
-To use the `starting-style` badge (![starting-style badge](./badges-images/starting-style-badge.png)):
+To use the `starting-style` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
@@ -509,7 +509,7 @@ To use the `starting-style` badge (![starting-style badge](./badges-images/start
 
    DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="animated-popover" popover>` element is selected.  Next to the element is a `starting-style` badge.
 
-1. Click the `starting-style` badge.
+1. Click the `starting-style` badge (![starting-style badge](./badges-images/starting-style-badge.png)).
 
    The animated popover fades out.  The `starting-style` badge changes color to indicate that it is selected.  In the **Styles** tab, the `@starting-style` CSS selector is displayed:
 
@@ -538,13 +538,13 @@ A _custom HTML element_ is identified by either:
 
 A custom HTML element has a `custom-element` badge (![custom-element badge](./badges-images/custom-element-badge.png)) next to it in the DOM tree.  Clicking the `custom-element` badge displays the source code for the element.
 
-To use the `custom-element` badge (![custom-element badge](./badges-images/custom-element-badge.png)):
+To use the `custom-element` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
 1. Right-click the **custom-element** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p is="fancy-paragraph">` element selected in the DOM tree.  The `<hello-world>` element and the `<p is="fancy-paragraph">` element have a `custom-element` badge next to them:
+   DevTools opens, with the **Elements** tool selected, with the `<hello-world>` or `<p is="fancy-paragraph">` element selected in the DOM tree.  The `<hello-world>` element and the `<p is="fancy-paragraph">` element have a `custom-element` badge (![custom-element badge](./badges-images/custom-element-badge.png)) next to them:
 
    ![The custom-element badge next to custom HTML elements in the DOM tree](./badges-images/custom-element-badge-in-dom.png)
 
