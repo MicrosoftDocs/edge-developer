@@ -161,7 +161,6 @@ To use the `flex` badge:
 See also:
 * [CSS flexible box layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout) at MDN.
 * [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox) in Chrome docs.<!-- todo later: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
-See also:
 
 
 <!-- ====================================================================== -->
