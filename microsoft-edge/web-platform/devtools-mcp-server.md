@@ -219,8 +219,8 @@ Auto-connecting to an already running Edge instance is useful:
 > When using auto-connect, your agent inherits your active session, including logged-in accounts, cookies, and other data that's surfaced through JavaScript APIs.  This may expose Personally Identifiable Information (PII) to the agent.  Only use this mode with agents that you trust, and be careful with your prompts.
 
 To auto-connect to a running Edge instance, there are two options:
-* Option A: Start Edge with the remote debugging flag.
-* Option B: In `edge://inspect`, enable remote debugging, along with the default user data directory.
+* Option A: Start Edge with the remote debugging flag.  Use a non-default user data directory.
+* Option B: In `edge://inspect`, enable remote debugging.  Use the default user data directory.
 
 Details are below.
 
@@ -228,7 +228,7 @@ Details are below.
 <!-- ------------------------------ -->
 #### Option A: Start Edge with the remote debugging flag
 
-To auto-connect to a running Edge instance, if you're starting Edge with the remote debugging flag, use these steps.
+To auto-connect to a running Edge instance when starting Edge with the remote debugging flag, use these steps.
 
 This approach requires using a non-default user data directory.
 
@@ -358,7 +358,7 @@ These are default locations.  Paths may vary based on user configuration, versio
 <!-- ------------------------------ -->
 #### Option B: Use edge://inspect to enable remote debugging
 
-To auto-connect to a running Edge instance, if you're using `edge://inspect` to enable remote debugging, use these steps.
+To auto-connect to a running Edge instance when using `edge://inspect` to enable remote debugging, use these steps.
 
 This approach requires using the default user data directory.
 
