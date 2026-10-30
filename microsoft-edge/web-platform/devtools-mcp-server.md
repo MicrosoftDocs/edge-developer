@@ -219,8 +219,8 @@ Auto-connecting to an already running Edge instance is useful:
 > When using auto-connect, your agent inherits your active session, including logged-in accounts, cookies, and other data that's surfaced through JavaScript APIs.  This may expose Personally Identifiable Information (PII) to the agent.  Only use this mode with agents that you trust, and be careful with your prompts.
 
 To auto-connect to a running Edge instance, there are two options:
-* Option A: Start Edge with the remote debugging flag
-* Option B: In `edge://inspect`, enable remote debugging, along with the default user data directory
+* Option A: Start Edge with the remote debugging flag.
+* Option B: In `edge://inspect`, enable remote debugging, along with the default user data directory.
 
 Details are below.
 
@@ -236,19 +236,9 @@ This approach requires using a non-default user data directory.
 <!-- ---------- -->
 ###### Step A1: Enable remote debugging in Edge
 
-In the **Inspect with Edge Developer Tools** special page, enable remote debugging in your default browser, as follows:
+To enable remote debugging in Edge, start Microsoft Edge with the remote debugging flag:
 
-1. In a running instance of Microsoft Edge, go to `edge://inspect`.
-
-   The **Inspect with Edge Developer Tools** page opens, initially showing the **Devices** page.
-
-1. On the left, click **Remote debugging**.
-
-   The **Remote debugging** page opens.
-
-1. Select the **Allow remote debugging for this browser instance** checkbox:
-
-   ![The Inspect page](./devtools-mcp-server-images/allow-remote-debugging.png)
+`msedge.exe --remote-debugging-port=9222`
 
 
 <!-- ---------- -->
@@ -376,7 +366,7 @@ This approach requires using the default user data directory.
 <!-- ---------- -->
 ###### Step B1: Enable remote debugging in Edge
 
-In the **Inspect with Edge Developer Tools** special page, enable remote debugging in your default browser, as follows, along with the default user data directory:
+In the **Inspect with Edge Developer Tools** special page, enable remote debugging in your default browser, as follows:
 
 1. In a running instance of Microsoft Edge, go to `edge://inspect`.
 
