@@ -13,29 +13,22 @@ ms.date: 06/10/2026
 Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Copilot, Antigravity, Claude, or Cursor) control and inspect a live Chromium-based browser, including Microsoft Edge and WebView2.
 
 **Detailed contents:**
-
-_todo: update_
-
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
 * [Launch Edge](#launch-edge)
    * [Additional flags for launching Edge](#additional-flags-for-launching-edge)
    * [Executable path for each Edge channel](#executable-path-for-each-edge-channel)
 * [Auto-connect to a running Edge instance](#auto-connect-to-a-running-edge-instance)
-   * [Auto-connect to a running Edge instance, if starting Edge with the remote debugging flag and a non-default user data directory](#auto-connect-to-a-running-edge-instance-if-starting-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
-      * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
-         * [Option A: Start Edge with the remote debugging flag and a non-default user data directory](#option-a-start-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
-         * [Option B: In `edge://inspect`, enable remote debugging](#option-b-in-edgeinspect-enable-remote-debugging)
-      * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
-      * [Step 3: Test your setup](#step-3-test-your-setup)
+   * [Option A: Start Edge with the remote debugging flag](#option-a-start-edge-with-the-remote-debugging-flag)
+      * [Step A1: Enable remote debugging in Edge](#step-a1-enable-remote-debugging-in-edge)
+      * [Step A2: Configure the MCP server](#step-a2-configure-the-mcp-server)
+      * [Step A3: Test your setup](#step-a3-test-your-setup)
       * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
-   * [Auto-connect to a running Edge instance, if using edge://inspect to enable remote debugging](#auto-connect-to-a-running-edge-instance-if-using-edgeinspect-to-enable-remote-debugging)
-      * [Step 1: Enable remote debugging in Edge](#step-1-enable-remote-debugging-in-edge)
-         * [Option A: Start Edge with the remote debugging flag and a non-default user data directory](#option-a-start-edge-with-the-remote-debugging-flag-and-a-non-default-user-data-directory)
-         * [Option B: In `edge://inspect`, enable remote debugging](#option-b-in-edgeinspect-enable-remote-debugging)
-      * [Step 2: Configure the MCP server](#step-2-configure-the-mcp-server)
-      * [Step 3: Test your setup](#step-3-test-your-setup)
-      * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel)
+   * [Option B: Use edge://inspect to enable remote debugging](#option-b-use-edgeinspect-to-enable-remote-debugging)
+      * [Step B1: Enable remote debugging in Edge](#step-b1-enable-remote-debugging-in-edge)
+      * [Step B2: Configure the MCP server](#step-b2-configure-the-mcp-server)
+      * [Step B3: Test your setup](#step-b3-test-your-setup)
+      * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel-1)
 * [Auto-connect to a WebView2 instance](#auto-connect-to-a-webview2-instance)
    * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
       * [By using WebView2Utilities](#by-using-webview2utilities)
@@ -49,7 +42,7 @@ _todo: update_
    * [Other MCP clients, such as Claude Code, Cursor, or Gemini CLI](#other-mcp-clients-such-as-claude-code-cursor-or-gemini-cli)
 * [Troubleshooting](#troubleshooting)
    * ["Could not connect to Chrome" error with auto-connect](#could-not-connect-to-chrome-error-with-auto-connect)
-   * [Edge not found at `executablePath`](#edge-not-found-at-executablepath)
+   * [Edge not found at executablePath](#edge-not-found-at-executablepath)
    * [WebView2 won't connect](#webview2-wont-connect)
 * [See also](#see-also)
 
@@ -335,8 +328,8 @@ Make sure Microsoft Edge is running, then enter the following prompt in your Mod
 The MCP server should connect to your running Edge instance and execute the command.
 
 
-<!-- ------------------------------ -->
-#### User data directory for each Edge channel
+<!-- ---------- -->
+###### User data directory for each Edge channel
 
 Use the appropriate `--user-data-dir` value for your channel.
 
@@ -475,8 +468,8 @@ Make sure Microsoft Edge is running, then enter the following prompt in your Mod
 The MCP server should connect to your running Edge instance and execute the command.
 
 
-<!-- ------------------------------ -->
-#### User data directory for each Edge channel
+<!-- ---------- -->
+###### User data directory for each Edge channel
 
 Use the appropriate `--user-data-dir` value for your channel.
 
