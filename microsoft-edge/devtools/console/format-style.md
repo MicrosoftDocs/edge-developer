@@ -300,14 +300,14 @@ Example of formatting console messages by using ANSI escape sequences:
 
 DevTools supports the following color codes:
 
-_todo: check format of rendered first row: add backticks?_
+_todo: check format of rendered first row, other rows: add backticks?_
 
 | Foreground | Background | Light theme | Dark theme |
 |---|---|---|---|
 | 30 | 40 | #00000 | #00000 |
 | 31 | 41 | #AA0000 | #ed4e4c |
 | 32 | 42 | #00AA00 | #01c800 |
-| 33 | 43 | #AA5500 | #d2c057 |
+| 33 | 43 | `#AA5500` | `#d2c057` |
 | 34 | 44 | #0000AA | #2774f0 |
 | 35 | 45 | #AA00AA | #a142f4 |
 | 36 | 46 | #00AAAA | #12b5cb |
