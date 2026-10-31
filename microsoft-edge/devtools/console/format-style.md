@@ -24,11 +24,6 @@ ms.date: 10/30/2026
 # Format and style messages in the Console
 <!-- https://developer.chrome.com/docs/devtools/console/format-style -->
 
-todo: in each section:
-* check formatting
-* make sure all links are present
-* make sure pngs show edge
-
 You can use the **Console** tool to format and style messages by using JavaScript commands.
 
 To learn how to log messages to the Console, see [Log messages in the Console tool](./console-log.md).
@@ -374,7 +369,7 @@ Here's a more complex example of formatting console messages by using ANSI escap
 
    The console command produces a `Hello World` message that has three different styles:
 
-   ![Hello World](./format-style-images/hello-world.png) todo show edge
+   ![Hello World](./format-style-images/hello-world.png)
 
 
 <!-- ====================================================================== -->
