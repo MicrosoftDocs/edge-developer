@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 08/29/2025
+ms.date: 08/04/2026
 ---
 # Handle links to a PWA
 
@@ -26,6 +26,8 @@ The PWA URL handlers feature was removed from Chromium.
 
 <!-- ====================================================================== -->
 ## Automatic link handling
+
+todo
 
 The operating system that your PWA is installed on automatically launches your PWA for any link that refers to content that's within the scope of the PWA, when either of the following conditions are met:
 
