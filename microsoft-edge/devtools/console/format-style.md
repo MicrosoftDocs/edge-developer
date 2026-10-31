@@ -300,26 +300,24 @@ Example of formatting console messages by using ANSI escape sequences:
 
 DevTools supports the following color codes:
 
-_todo: check format of rendered first row, other rows: add backticks?_
-
 | Foreground | Background | Light theme | Dark theme |
 |---|---|---|---|
-| 30 | 40 | #00000 | #00000 |
-| 31 | 41 | #AA0000 | #ed4e4c |
-| 32 | 42 | #00AA00 | #01c800 |
+| 30 | 40 | `#00000` | `#00000` |
+| 31 | 41 | `#AA0000` | `#ed4e4c` |
+| 32 | 42 | `#00AA00` | `#01c800` |
 | 33 | 43 | `#AA5500` | `#d2c057` |
-| 34 | 44 | #0000AA | #2774f0 |
-| 35 | 45 | #AA00AA | #a142f4 |
-| 36 | 46 | #00AAAA | #12b5cb |
-| 37 | 47 | #AAAAAA | #cfd0d0 |
-| 90 | 100 | #555555 | #898989 |
-| 91 | 101 | #FF5555 | #f28b82 |
-| 92 | 102 | #55FF55 | #01c801 |
-| 93 | 103 | #FFFF55 | #ddfb55 |
-| 94 | 104 | #5555FF | #669df6 |
-| 95 | 105 | #FF55FF | #d670d6 |
-| 96 | 106 | #55FFFF | #84f0ff |
-| 97 | 107 | #FFFFFF | #FFFFFF |
+| 34 | 44 | `#0000AA` | `#2774f0` |
+| 35 | 45 | `#AA00AA` | `#a142f4` |
+| 36 | 46 | `#00AAAA` | `#12b5cb` |
+| 37 | 47 | `#AAAAAA` | `#cfd0d0` |
+| 90 | 100 | `#555555` | `#898989` |
+| 91 | 101 | `#FF5555` | `#f28b82` |
+| 92 | 102 | `#55FF55` | `#01c801` |
+| 93 | 103 | `#FFFF55` | `#ddfb55` |
+| 94 | 104 | `#5555FF` | `#669df6` |
+| 95 | 105 | `#FF55FF` | `#d670d6` |
+| 96 | 106 | `#55FFFF` | `#84f0ff` |
+| 97 | 107 | `#FFFFFF` | `#FFFFFF` |
 
 
 <!-- ---------- -->
@@ -389,7 +387,7 @@ Spec:
 * [2.2.1. Summary of formatting specifiers](https://console.spec.whatwg.org/#formatting-specifiers) in _Console: Living Standard_.
 
 MDN:
-* [data: URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) at MDN.
+* [data: URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URLs)
 
 Node.js:
 * [Node.js](https://nodejs.org)
