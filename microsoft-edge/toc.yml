@@ -1544,7 +1544,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 157.0.4341.10 (Oct. 22, 2026)
+                - name: Preview Runtime 158.n.nnnn.nn (Mmm. dd, yyyy)
+                  href: ./webview2/release-notes/runtime/158.md
+
+                - name: Runtime 157.0.nnnn.nn (Mmm. dd, yyyy)
                   href: ./webview2/release-notes/runtime/157.md
 
                 - name: Runtime 156.0.4314.42 (Oct. 23, 2026)
@@ -1571,14 +1574,14 @@
                 - name: Runtime 149.0.4022.49 (Jun. 11, 2026)
                   href: ./webview2/release-notes/runtime/149.md
 
-                - name: Runtime 148.0.3967.48 (May 11, 2026)
-                  href: ./webview2/release-notes/runtime/148.md
-
-                - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
-                  href: ./webview2/release-notes/runtime/147.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 148.0.3967.48 (May 11, 2026)
+                      href: ./webview2/release-notes/runtime/148.md
+
+                    - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
+                      href: ./webview2/release-notes/runtime/147.md
+
                     - name: Runtime 146.0.3856.49 (Mar. 16, 2026)
                       href: ./webview2/release-notes/runtime/146.md
 
