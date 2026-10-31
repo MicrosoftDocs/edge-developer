@@ -250,7 +250,7 @@ where:
 * Any of the parameters `𝘗1` to `𝘗n` can be omitted, in which case its value is assumed to be zero.
 * `\x1B[m` is the shorthand for `\x1B[0m`, in which the display attribute will be reset.
 
-Node.js developers often colorize log messages by using ANSI escape sequences, often with the help of some Node.js styling libraries, such as:
+Node.js developers often colorize log messages by using ANSI escape sequences, often with the help of some NPM styling libraries, such as:
 * [chalk](https://www.npmjs.com/package/chalk)
 * [colors](https://www.npmjs.com/package/colors)
 * [ansi-colors](https://www.npmjs.com/package/ansi-colors)
@@ -378,6 +378,10 @@ Here's a more complex example of formatting console messages by using ANSI escap
 
 * [Log messages in the Console tool](./console-log.md)
 
+Wikipedia:
+* [ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code)
+   * [Select Graphic Rendition parameters](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters) in _ANSI escape code_.
+
 Spec:
 * [2.2.1. Summary of formatting specifiers](https://console.spec.whatwg.org/#formatting-specifiers) in _Console: Living Standard_.
 
@@ -386,14 +390,12 @@ MDN:
 
 Node.js:
 * [Node.js](https://nodejs.org)
+
+NPM:
 * [chalk](https://www.npmjs.com/package/chalk)
 * [colors](https://www.npmjs.com/package/colors)
 * [ansi-colors](https://www.npmjs.com/package/ansi-colors)
 * [kleur](https://www.npmjs.com/package/kleur)
-
-Wikipedia:
-* [ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code)
-   * [Select Graphic Rendition parameters](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters) in _ANSI escape code_.
 
 GitHub:
 * [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
