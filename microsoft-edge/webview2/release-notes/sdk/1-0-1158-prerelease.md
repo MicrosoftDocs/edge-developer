@@ -53,6 +53,9 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget -->
+* [Prerelease SDK 1.0.1189-prerelease, for Runtime 100 (Mar. 10, 2022)](./1-0-1189-prerelease.md)
+* [Release SDK 1.0.1185.39, for Runtime 100 (Apr. 12, 2022)](./1-0-1185-39.md)
 * [Runtime 100.0.1185.39 (Apr. 12, 2022)](../runtime/100.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

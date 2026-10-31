@@ -1,7 +1,7 @@
 # =============================================================================
 # TOC sections:
 # top leaf nodes
-# Release notes
+# Release notes [web platform]
 # Experimental APIs for Microsoft Edge
 # Microsoft Edge DevTools
 #   DevTools for Visual Studio Code
@@ -24,7 +24,7 @@
       href: ./develop-web-microsoft-edge.md
 # /top leaf nodes
 # =============================================================================
-# Release notes
+# Release notes [web platform]
     - name: Release notes
       items:
         - name: Release notes for Microsoft Edge web platform
@@ -35,25 +35,37 @@
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
 
+        - name: Microsoft Edge 157
+          href: ./web-platform/release-notes/157.md
+          displayName: Microsoft Edge 157 web platform release notes (Nov. 5, 2026)  # page title
+
+        - name: Microsoft Edge 156
+          href: ./web-platform/release-notes/156.md
+          displayName: Microsoft Edge 156 web platform release notes (Oct. 22, 2026)  # page title
+
+        - name: Microsoft Edge 155
+          href: ./web-platform/release-notes/155.md
+          displayName: Microsoft Edge 155 web platform release notes (Oct. 8, 2026)  # page title
+
         - name: Microsoft Edge 154
           href: ./web-platform/release-notes/154.md
-          displayName: Microsoft Edge 154 web platform release notes (Sep. 2026)  # page title
+          displayName: Microsoft Edge 154 web platform release notes (Sep. 24, 2026)  # page title
 
         - name: Microsoft Edge 153
           href: ./web-platform/release-notes/153.md
-          displayName: Microsoft Edge 153 web platform release notes (Sep. 2026)  # page title
+          displayName: Microsoft Edge 153 web platform release notes (Sep. 10, 2026)  # page title
 
         - name: Microsoft Edge 152
           href: ./web-platform/release-notes/152.md
-          displayName: Microsoft Edge 152 web platform release notes (Aug. 2026)  # page title
+          displayName: Microsoft Edge 152 web platform release notes (Aug. 27, 2026)  # page title
 
         - name: Microsoft Edge 151
           href: ./web-platform/release-notes/151.md
-          displayName: Microsoft Edge 151 web platform release notes (Jul. 2026)  # page title
+          displayName: Microsoft Edge 151 web platform release notes (Jul. 30, 2026)  # page title
 
         - name: Microsoft Edge 150
           href: ./web-platform/release-notes/150.md
-          displayName: Microsoft Edge 150 web platform release notes (Jul. 2026)  # page title
+          displayName: Microsoft Edge 150 web platform release notes (Jul. 2, 2026)  # page title
 
         - name: Microsoft Edge 149
           href: ./web-platform/release-notes/149.md
@@ -63,21 +75,21 @@
           href: ./web-platform/release-notes/148.md
           displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
 
-        - name: Microsoft Edge 147
-          href: ./web-platform/release-notes/147.md
-          displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
-
-        - name: Microsoft Edge 146
-          href: ./web-platform/release-notes/146.md
-          displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
-
-        - name: Microsoft Edge 145
-          href: ./web-platform/release-notes/145.md
-          displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 147
+              href: ./web-platform/release-notes/147.md
+              displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
+
+            - name: Microsoft Edge 146
+              href: ./web-platform/release-notes/146.md
+              displayName: Microsoft Edge 146 web platform release notes (Mar. 2026)  # page title
+
+            - name: Microsoft Edge 145
+              href: ./web-platform/release-notes/145.md
+              displayName: Microsoft Edge 145 web platform release notes (Feb. 2026)  # page title
+
             - name: Microsoft Edge 144
               href: ./web-platform/release-notes/144.md
               displayName: Microsoft Edge 144 web platform release notes (Jan. 2026)  # page title
@@ -195,6 +207,22 @@
               # maint:
               # toc.yml - add new what's new page, move a what's new page to archive
               # /devtools/whats-new/index.md - add new what's new page, remove earliest what's new page
+            - name: Microsoft Edge 156
+              href: ./devtools/whats-new/156.md
+              displayName: What's new in DevTools (Microsoft Edge 156)  # page title
+
+            - name: Microsoft Edge 155
+              href: ./devtools/whats-new/155.md
+              displayName: What's new in DevTools (Microsoft Edge 155)  # page title
+
+            - name: Microsoft Edge 154
+              href: ./devtools/whats-new/154.md
+              displayName: What's new in DevTools (Microsoft Edge 154)  # page title
+
+            - name: Microsoft Edge 153
+              href: ./devtools/whats-new/153.md
+              displayName: What's new in DevTools (Microsoft Edge 153)  # page title
+
             - name: Microsoft Edge 152
               href: ./devtools/whats-new/152.md
               displayName: What's new in DevTools (Microsoft Edge 152)  # page title
@@ -219,25 +247,26 @@
               href: ./devtools/whats-new/147.md
               displayName: What's new in DevTools (Microsoft Edge 147)  # page title
 
-            - name: Microsoft Edge 146
-              href: ./devtools/whats-new/146.md
-              displayName: What's new in DevTools (Microsoft Edge 146)  # page title
-
-            - name: Microsoft Edge 145
-              href: ./devtools/whats-new/145.md
-              displayName: What's new in DevTools (Microsoft Edge 145)  # page title
-
-            - name: Microsoft Edge 144
-              href: ./devtools/whats-new/144.md
-              displayName: What's new in DevTools (Microsoft Edge 144)  # page title
-
-            - name: Microsoft Edge 143
-              href: ./devtools/whats-new/143.md
-              displayName: What's new in DevTools (Microsoft Edge 143)  # page title
             # keep 10 items above
 # -------------------------------------
             - name: Archive
               items:
+                - name: Microsoft Edge 146
+                  href: ./devtools/whats-new/146.md
+                  displayName: What's new in DevTools (Microsoft Edge 146)  # page title
+
+                - name: Microsoft Edge 145
+                  href: ./devtools/whats-new/145.md
+                  displayName: What's new in DevTools (Microsoft Edge 145)  # page title
+
+                - name: Microsoft Edge 144
+                  href: ./devtools/whats-new/144.md
+                  displayName: What's new in DevTools (Microsoft Edge 144)  # page title
+
+                - name: Microsoft Edge 143
+                  href: ./devtools/whats-new/143.md
+                  displayName: What's new in DevTools (Microsoft Edge 143)  # page title
+
                 - name: Microsoft Edge 142
                   href: ./devtools/whats-new/2025/10/devtools-142.md
                   displayName: What's new in DevTools (Microsoft Edge 142)  # page title
@@ -552,6 +581,10 @@
                   items:
                     - name: Get started viewing and changing CSS
                       href: ./devtools/css/index.md
+                      displayName: Elements tool
+
+                    - name: Find invalid, overridden, inactive, and other CSS
+                      href: ./devtools/css/issues.md
                       displayName: Elements tool
 
                     - name: Inspect CSS Grid layouts
@@ -1507,7 +1540,7 @@
               href: ./webview2/release-notes/index.md
 
               # maint:
-              # list past 10 releases (runtimes)
+              # list past 10 releases eg 156-147
               # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link
             - name: Runtime release notes
@@ -1515,7 +1548,19 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 153.0.4234.6 (Aug. 28, 2026)
+                - name: Preview Runtime 157.0.4341.10 (Oct. 22, 2026)
+                  href: ./webview2/release-notes/runtime/157.md
+
+                - name: Runtime 156.0.4314.42 (Oct. 23, 2026)
+                  href: ./webview2/release-notes/runtime/156.md
+
+                - name: Runtime 155.0.4283.45 (Oct. 12, 2026)
+                  href: ./webview2/release-notes/runtime/155.md
+
+                - name: Runtime 154.0.4258.31 (Sep. 28, 2026)
+                  href: ./webview2/release-notes/runtime/154.md
+
+                - name: Runtime 153.0.4234.32 (Sep. 11, 2026)
                   href: ./webview2/release-notes/runtime/153.md
 
                 - name: Runtime 152.0.4191.53 (Aug. 28, 2026)
@@ -1536,17 +1581,17 @@
                 - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
                   href: ./webview2/release-notes/runtime/147.md
 
-                - name: Runtime 146.0.3856.49 (Mar. 16, 2026)
-                  href: ./webview2/release-notes/runtime/146.md
-
-                - name: Runtime 145.0.3800.47 (Feb. 16, 2026)
-                  href: ./webview2/release-notes/runtime/145.md
-
-                - name: Runtime 144.0.3719.77 (Jan. 27, 2026)
-                  href: ./webview2/release-notes/runtime/144.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 146.0.3856.49 (Mar. 16, 2026)
+                      href: ./webview2/release-notes/runtime/146.md
+
+                    - name: Runtime 145.0.3800.47 (Feb. 16, 2026)
+                      href: ./webview2/release-notes/runtime/145.md
+
+                    - name: Runtime 144.0.3719.77 (Jan. 27, 2026)
+                      href: ./webview2/release-notes/runtime/144.md
+
                     - name: Runtime 143.0.3650.58 (Dec. 8, 2025)
                       href: ./webview2/release-notes/runtime/143.md
 
@@ -1748,7 +1793,7 @@
                       href: ./webview2/release-notes/runtime/76.md
 
               # maint:
-              # list past 10 releases
+              # list past 10 potential Release SDK releases eg 155-146
               # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links
               # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2 > Load more
@@ -1757,59 +1802,68 @@
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
 
-                - name: SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-4191-47.md
+                - name: Release SDK 1.0.4314.35, for Runtime 156 (Oct. 23, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4314-35.md
+                - name: Prerelease SDK 1.0.4312-prerelease, for Runtime 156 (Oct. 12, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4312-prerelease.md
 
-                - name: SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
+                - name: Release SDK 1.0.4258.31, for Runtime 154 (Sep. 28, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4258-31.md
+                - name: Prerelease SDK 1.0.4255-prerelease, for Runtime 154 (Sep. 11, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4255-prerelease.md
+
+                - name: Release SDK 1.0.4191.47, for Runtime 152 (Aug. 28, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4191-47.md
+                - name: Prerelease SDK 1.0.4181-prerelease, for Runtime 152 (Aug. 3, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4181-prerelease.md
 
-                - name: SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)
+                - name: Release SDK 1.0.4129.50, for Runtime 151 (Aug. 3, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4129-50.md
-                - name: SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
+                - name: Prerelease SDK 1.0.4126-prerelease, for Runtime 151 (Jul. 7, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4126-prerelease.md
 
-                - name: SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)
+                - name: Release SDK 1.0.4078.44, for Runtime 150 (Jul. 7, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4078-44.md
-                - name: SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
+                - name: Prerelease SDK 1.0.4071-prerelease, for Runtime 150 (Jun. 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4071-prerelease.md
 
-                - name: SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
+                - name: Release SDK 1.0.4022.49, for Runtime 149 (Jun. 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4022-49.md
-                - name: SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
+                - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4015-prerelease.md
 
-                - name: SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
+                - name: Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3967-48.md
-                - name: SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
+                - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3965-prerelease.md
 
-                - name: SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
+                - name: Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3912-50.md
-                - name: SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+                - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3908-prerelease.md
 
-                - name: SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+                - name: Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3856-49.md
-                - name: SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+                - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
                   href: ./webview2/release-notes/sdk/1-0-3848-prerelease.md
-
-                - name: SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3800-47.md
-                - name: SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3796-prerelease.md
-
-                - name: SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3719-77.md
-                - name: SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
-                  href: ./webview2/release-notes/sdk/1-0-3712-prerelease.md
-
-                - name: SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
-                  href: ./webview2/release-notes/sdk/1-0-3650-58.md
-                - name: SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
-                  href: ./webview2/release-notes/sdk/1-0-3650-prerelease.md
 
                 - name: Archive  # keep Runtime nnn pair together when moving to archive
                   items:
+                    - name: Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3800-47.md
+                    - name: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3796-prerelease.md
+
+                    - name: Release SDK 1.0.3719.77, for Runtime 144 (Jan. 27, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3719-77.md
+                    - name: Prerelease SDK 1.0.3712-prerelease, for Runtime 144 (Dec. 8, 2025)
+                      href: ./webview2/release-notes/sdk/1-0-3712-prerelease.md
+
+                    - name: Release SDK 1.0.3650.58, for Runtime 143 (Dec. 8, 2025)
+                      href: ./webview2/release-notes/sdk/1-0-3650-58.md
+                    - name: Prerelease SDK 1.0.3650-prerelease, for Runtime 143 (Nov. 7, 2025)
+                      href: ./webview2/release-notes/sdk/1-0-3650-prerelease.md
+
                     - name: Release SDK 1.0.3595.46, for Runtime 142 (Nov. 3, 2025)
                       href: ./webview2/release-notes/sdk/1-0-3595-46.md
                     - name: Prerelease SDK 1.0.3590-prerelease, for Runtime 142 (Oct. 7, 2025)
@@ -2158,6 +2212,9 @@
             - name: Overview of WebView2 APIs
               href: ./webview2/concepts/overview-features-apis.md
 
+            - name: Components of the WebView2 platform
+              href: webview2/concepts/platform-components.md
+
             - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: ./webview2/concepts/environment-controller-core.md
 
@@ -2344,7 +2401,6 @@
           items:
             - name: Prerelease and Release SDKs for WebView2
               href: ./webview2/concepts/versioning.md
-              displayName: experimental APIs, Understand WebView2 SDK versions, Understand the different WebView2 SDK versions  # old titles
 
             - name: Distribute the app and Runtime
               items:
@@ -2353,10 +2409,6 @@
 
                 - name: Distribute your app and the WebView2 Runtime
                   href: ./webview2/concepts/distribution.md
-
-                - name: Enterprise management of WebView2
-                  href: ./webview2/concepts/enterprise.md
-                  displayName: Manage WebView2 applications  # old title
 
                 - name: Distribute an app as a single executable file
                   href: ./webview2/how-to/static.md
@@ -2376,15 +2428,9 @@
 
             - name: Develop secure WebView2 apps
               href: ./webview2/concepts/security.md
-
-            - name: Prevent security tools from blocking WebView2-hosted apps
-              href: ./webview2/concepts/measures.md
 # -----------------------------------------------------------------------------
         - name: Test and automation for WebView2 apps
           items:
-            - name: Test upcoming APIs and features
-              href: ./webview2/how-to/set-preview-channel.md
-
             - name: Use the Chrome DevTools Protocol (CDP) in WebView2 apps
               href: ./webview2/how-to/chromium-devtools-protocol.md
               displayName: chrome developer protocol  # catch mis-expansion
@@ -2395,12 +2441,17 @@
             - name: Automate and test WebView2 apps with Microsoft Edge WebDriver
               href: ./webview2/how-to/webdriver.md
 
-            - name: Prerelease testing using preview channels
-              href: ./webview2/how-to/prerelease-testing.md
+            - name: Prerelease testing using preview channels of Microsoft Edge
+              items:
+                - name: Prerelease testing using preview channels of Microsoft Edge
+                  href: ./webview2/how-to/prerelease-testing.md
 
-            - name: Self-host by deploying preview channels
-              href: ./webview2/how-to/self-hosting.md
-              displayName: self-hosting
+                - name: Switch to a preview channel to test upcoming APIs and features
+                  href: ./webview2/how-to/set-preview-channel.md
+
+                - name: Self-host by deploying preview channels
+                  href: ./webview2/how-to/self-hosting.md
+                  displayName: self-hosting
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items:

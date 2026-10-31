@@ -66,7 +66,7 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 
 1. In the search box at the top of the page, enter **Speech Recognition with on-device model**.
 
-1. In the **Speech Recognition with on-device model** drop-down list, select **Enabled**, and then click the **Restart** button in the lower right:
+1. In the **Speech Recognition with on-device model** dropdown list, select **Enabled**, and then click the **Restart** button in the lower right:
 
    ![Flags page of browser](./speech-recognition-api-images/flag.png)
 
@@ -82,9 +82,9 @@ To see the SpeechRecognition API in action and view the demo code:
 
 1. In the information banner at the top, check the status: it initially reads **SpeechRecognition API ready.  Click Start to begin.**
 
-1. In the **Input language** drop-down list, select the language that you want to use for speech recognition.
+1. In the **Input language** dropdown list, select the language that you want to use for speech recognition.
 
-1. In the **Audio source** drop-down list, select an audio source for speech recognition:
+1. In the **Audio source** dropdown list, select an audio source for speech recognition:
 
    * Select **Microphone** to use your device microphone as the audio source.
    * Select **File** to use an audio or video file from your device as the audio source.
@@ -148,7 +148,7 @@ recognition.lang = "en-US";
 recognition.processLocally = true;
 ```
 
-As of Microsoft Edge 150.0.4076, the following input languages are supported for local speech recognition:
+The following input languages are supported for local speech recognition:
 * English (en-US)
 * German (de-DE)
 * Italian (it-IT)

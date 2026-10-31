@@ -64,7 +64,7 @@ For example, if not done already, clone the **MicrosoftEdge / Demos** repo to yo
 
 1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
-1. Click the **Code** drop-down button.
+1. Click the **Code** dropdown button.
 
 1. Click the **Copy url to clipboard** button.
 

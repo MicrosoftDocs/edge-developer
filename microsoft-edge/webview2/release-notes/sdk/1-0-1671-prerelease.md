@@ -222,6 +222,7 @@ Previous name in 1619-prerelease:
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1722.45, for Runtime 112 (Apr. 13, 2023)](./1-0-1722-45.md)
 * [Runtime 112.0.1722.45 (Apr. 13, 2023)](../runtime/112.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
