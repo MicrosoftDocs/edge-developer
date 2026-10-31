@@ -29,9 +29,9 @@ todo: in each section:
 * make sure all links are present
 * make sure pngs show edge
 
-You can use the [Chrome DevTools Console](https://developer.chrome.com/docs/devtools) to format and style messages.
+You can use the **Console** tool to format and style messages by using JavaScript commands.
 
-To learn how to log messages to the Console, see [Get Started With Logging Messages](https://developer.chrome.com/docs/devtools/console/log).
+To learn how to log messages to the Console, see [Log messages in the Console tool](./console-log.md).
 
 This guide assumes that you understand the fundamentals of web development, such as how to use JavaScript to add interactivity to a page.
 
@@ -55,8 +55,6 @@ This guide assumes that you understand the fundamentals of web development, such
 <!-- ====================================================================== -->
 ## Format console messages
 <!-- https://developer.chrome.com/docs/devtools/console/format-style#format -->
-
-<!-- todo: format, links, pngs -->
 
 You can use format specifiers to format the console messages.  Format specifiers begin with a percent character (`%`) and terminate with a "type character" (such as `s`), which indicates the type of data (such as integer or float).
 
@@ -109,8 +107,6 @@ See also:
 #### Apply multiple format specifiers
 <!-- https://developer.chrome.com/docs/devtools/console/format-style#multiple-specifiers -->
 
-<!-- todo: format, links, pngs -->
-
 You can use more than one format specifier in a message.
 
 For example:
@@ -137,8 +133,6 @@ For example:
 <!-- ------------------------------ -->
 #### Understand type conversions
 <!-- https://developer.chrome.com/docs/devtools/console/format-style#conversion -->
-
-<!-- todo: format, links, pngs -->
 
 The output message is converted according to the format specifier.
 
@@ -199,8 +193,6 @@ For example:
 ## Style console messages
 <!-- https://developer.chrome.com/docs/devtools/console/format-style#style_console_messages -->
 
-<!-- todo: format, links, pngs -->
-
 There are two ways to style console messages in DevTools:
 * By using CSS `%c` format specifiers.
 * By using ANSI escape sequences.
@@ -209,8 +201,6 @@ There are two ways to style console messages in DevTools:
 <!-- ------------------------------ -->
 #### Style console messages by using CSS `%c` format specifiers
 <!-- Style with format specifier  https://developer.chrome.com/docs/devtools/console/format-style#style-specifier -->
-
-<!-- todo: format, links, pngs -->
 
 You can use the %c format specifier to style the console messages with CSS.
 
@@ -256,14 +246,12 @@ See also:
 #### Style console messages by using ANSI escape sequences
 <!-- Style with ANSI escape sequences  https://developer.chrome.com/docs/devtools/console/format-style#style-ansi -->
 
-<!-- todo: format, links, pngs -->
-
 You can style console messages by using ANSI escape sequences (without having to use any Node.js libraries), by using the syntax:
 
 `\x1B[𝘗1;…;𝘗nm`
 
 where:
-* 𝘗1 to 𝘗n are valid subsequences of [SGR (Select Graphic Rendition)]() parameters.
+* 𝘗1 to 𝘗n are valid subsequences of Select Graphic Rendition (SGR) parameters.
 * Any of the parameters `𝘗1` to `𝘗n` can be omitted, in which case its value is assumed to be zero.
 * `\x1B[m` is the shorthand for `\x1B[0m`, in which the display attribute will be reset.
 
@@ -275,6 +263,7 @@ Node.js developers often colorize log messages by using ANSI escape sequences, o
 
 See also:
 * [ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code) at Wikipedia.
+   * [Select Graphic Rendition parameters](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters) in _ANSI escape code_ at Wikipedia.
 * [Node.js](https://nodejs.org)
 
 
@@ -301,7 +290,7 @@ Example of formatting console messages by using ANSI escape sequences:
 
    The console command produces a `Hello` message with red background, yellow text, underlined:
 
-   ![Hello](./format-style-images/hello.png)
+   ![Styled Hello message](./format-style-images/hello.png)
 
 
 <!-- ---------- -->
@@ -365,8 +354,6 @@ DevTools supports the following styling codes:
 <!-- heading not upstream; content is upstream -->
 <!-- Style with ANSI escape sequences  https://developer.chrome.com/docs/devtools/console/format-style#style-ansi -->
 
-<!-- todo: format, links, pngs -->
-
 Here's a more complex example of formatting console messages by using ANSI escape sequences, with multiple stylings:
 
 1. Go to a webpage, such as the [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
@@ -394,7 +381,30 @@ Here's a more complex example of formatting console messages by using ANSI escap
 
 <!-- ====================================================================== -->
 ## See also
-<!-- todo - all links in article -->
+<!-- all links in article -->
+
+* [Log messages in the Console tool](./console-log.md)
+
+Spec:
+* [2.2.1. Summary of formatting specifiers](https://console.spec.whatwg.org/#formatting-specifiers) in _Console: Living Standard_.
+
+MDN:
+* [data: URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) at MDN.
+
+Node.js:
+* [Node.js](https://nodejs.org)
+* [chalk](https://www.npmjs.com/package/chalk)
+* [colors](https://www.npmjs.com/package/colors)
+* [ansi-colors](https://www.npmjs.com/package/ansi-colors)
+* [kleur](https://www.npmjs.com/package/kleur)
+
+Wikipedia:
+* [ANSI escape code](https://en.wikipedia.org/wiki/ANSI_escape_code)
+   * [Select Graphic Rendition parameters](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters) in _ANSI escape code_.
+
+GitHub:
+* [To Do app](https://microsoftedge.github.io/Demos/demo-to-do/) demo.
+   * [/demo-to-do/](https://github.com/MicrosoftEdge/Demos/tree/main/demo-to-do/) - source code.
 
 
 <!-- ====================================================================== -->
