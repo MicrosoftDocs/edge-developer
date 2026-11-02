@@ -187,7 +187,7 @@ For more information, see [Emulate authenticators and debug WebAuthn](../../../w
 #### Elements tool updates
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ---------- -->

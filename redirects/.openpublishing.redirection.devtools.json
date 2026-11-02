@@ -513,7 +513,12 @@
     },
     {
       "source_path": "../microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool.md",
-      "redirect_url": "/microsoft-edge/devtools/elements-tool/elements-tool",
+      "redirect_url": "/microsoft-edge/devtools/elements/elements-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "../microsoft-edge/devtools/elements-tool/elements-tool.md",
+      "redirect_url": "/microsoft-edge/devtools/elements/elements-tool",
       "redirect_document_id": false
     },
     {
