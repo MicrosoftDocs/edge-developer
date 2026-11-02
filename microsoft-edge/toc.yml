@@ -577,6 +577,10 @@
                       href: ./devtools/dom/index.md
                       displayName: Elements tool
 
+                    - name: Badges reference
+                      href: ./devtools/elements-tool/badges.md
+                      displayName: Elements tool
+
                 - name: CSS
                   items:
                     - name: Get started viewing and changing CSS
@@ -735,7 +739,7 @@
                   displayName: Performance tool, Get started analyzing runtime performance  # old title
 
                 - name: Troubleshooting common performance issues  # no longer found
-                  href: ./devtools/rendering-tools/index.md
+                  href: ./devtools/rendering/index.md
                   displayName: Performance tool, Analyze runtime performance  # old title
 
                 - name: Optimize website speed using Lighthouse  # = Lighthouse > Optimize web speed
@@ -788,7 +792,7 @@
                   displayName: Memory tool
 
                 - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
-                  href: ./devtools/rendering-tools/js-runtime.md
+                  href: ./devtools/rendering/js-runtime.md
                   displayName: Memory tool
 
                 - name: Debug DOM memory leaks ("Detached elements" profiling type)
@@ -898,8 +902,8 @@
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
-                    - name: View and debug media players information
-                      href: ./devtools/media-panel/index.md
+                    - name: View and debug media players information (Media tool)
+                      href: ./devtools/media/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------
                 - name: Memory inspector tool
@@ -947,7 +951,7 @@
                 - name: Rendering tool
                   items:
                     - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
-                      href: ./devtools/rendering-tools/rendering-tool.md
+                      href: ./devtools/rendering/rendering-tool.md
 
                     - name: Emulate dark or light schemes in the rendered page
                       href: ./devtools/accessibility/preferred-color-scheme-simulation.md

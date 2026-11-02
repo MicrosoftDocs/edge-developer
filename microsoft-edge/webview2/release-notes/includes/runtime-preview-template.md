@@ -32,7 +32,7 @@ In addition to the following WebView2 Runtime improvements, you can also use the
 
 
 <!-- ====================================================================== -->
-#### Bug fixes
+## Bug fixes
 
 * Fixed behavior.  ([Issue #] ())
 

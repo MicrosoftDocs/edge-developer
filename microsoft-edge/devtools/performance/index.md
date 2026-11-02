@@ -207,7 +207,7 @@ Another handy tool is the **Frame Rendering Stats** overlay, sometimes called th
    The **Quick View** panel is hidden.
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md)
 
 
 <!-- ====================================================================== -->

@@ -70,7 +70,7 @@ To force a page into print preview mode:
 <!-- ====================================================================== -->
 ## See also
 
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md)
 
 
 <!-- ====================================================================== -->
