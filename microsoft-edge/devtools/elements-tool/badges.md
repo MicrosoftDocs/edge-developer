@@ -551,6 +551,9 @@ Chrome docs:
 * [Open the Elements panel to inspect the DOM or CSS](https://developer.chrome.com/docs/devtools/open#inspect) in _Open Chrome DevTools_.
 * [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox)<!-- todo later: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
 
+Chromium:
+* [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
+
 MDN:
 * [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
 * [Subgrid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout/Subgrid)
@@ -566,9 +569,6 @@ MDN:
 * [Using the Popover API](https://developer.mozilla.org/docs/Web/API/Popover_API/Using) at MDN.
 * [`@starting-style` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@starting-style) at MDN.
 * [Transitioning a popover](https://developer.mozilla.org/docs/Web/API/Popover_API/Using#transitioning_a_popover) in _Using the Popover API_ at MDN.
-
-Chromium:
-* [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
 
 GitHub:
 * [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) - demo.
