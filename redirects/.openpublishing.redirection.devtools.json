@@ -522,6 +522,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "../microsoft-edge/devtools/elements-tool/badges.md",
+      "redirect_url": "/microsoft-edge/devtools/elements/badges",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "../microsoft-edge/devtools-guide-chromium/css/reference.md",
       "redirect_url": "/microsoft-edge/devtools/css/reference",
       "redirect_document_id": false
