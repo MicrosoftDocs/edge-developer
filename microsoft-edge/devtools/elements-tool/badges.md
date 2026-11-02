@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/30/2026
+ms.date: 11/02/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -189,8 +189,6 @@ To use the `ad` badge:
 
    * **Filter list rules:** The specific rule from a filter list (for example, `EasyList`) that matched the element or the resource it loaded.
 
-You can also use the **Rendering** tab to highlight ad frames in red.  See [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_, in Chrome docs.<!-- todo later: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
-
 See also:
 * [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
 
@@ -254,18 +252,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The `size` badge
-<!-- Container  https://developer.chrome.com/docs/devtools/elements/badges#container -->
-
-<!-- todo: add `size` badge to demo -->
-
-The `size` badge (![size badge](./badges-images/size-badge.png)) is one type of container badge, used for `container-type: size`.
-
-See [The `inline-size` badge](#the-inline-size-badge), below.
-
-
-<!-- ====================================================================== -->
-## The `inline-size` badge
+## The `size` and `inline-size` badges
 <!-- Container  https://developer.chrome.com/docs/devtools/elements/badges#container -->
 
 An HTML element is a _container_ if it has the `container-type` CSS property.  Such an element has a specific type of container badge next to it, that displays or hides the corresponding overlay.
@@ -382,7 +369,7 @@ To use the `top-layer` badge:
 
    The DOM tree highlights the corresponding `<dialog>` element.
 
-1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge.
+1. Next to the `#top-layer` node's child `::backdrop` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
 
    The DOM tree highlights the corresponding `::backdrop` node within the `<form>` element within the `<dialog>` element.
 
@@ -391,9 +378,8 @@ To use the `top-layer` badge:
    In the DOM tree, the node changes from `<dialog id="dialog" open>` with a `top-layer` badge next to it, to a `<dialog id="dialog">` element without a `top-layer` badge  next to it.
 
 See also:
-* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer) in the Chrome blog.
-* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index) at MDN.
-* [Building a dialog component](https://web.dev/articles/building/a-dialog-component) at web.dev.
+* [Top layer](https://developer.mozilla.org/docs/Glossary/Top_layer) at MDN.
+* [`<dialog>` HTML dialog element](https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/dialog) at MDN.
 * [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal) at MDN.
 
 
@@ -419,7 +405,7 @@ To use the `media` badge:
 
    ![The media badge turned on in badge settings and displayed next to the video element](./badges-images/media-badge-in-dom.png)
 
-   If you click the `media` badge, and media player details have been specified in the webpage (unlike in this demo), media player details are displayed.
+   If you click the `media` badge, the **Media** tool opens, displaying details.  In this demo, the **Media** tool is empty, because the demo includes an empty `<video>` element.
 
 See also:
 * [View and debug media players information (Media tool)](../media/index.md).
@@ -437,21 +423,25 @@ A _popover_ is any element that has a `popover` attribute.  A popover is useful 
 
 A popover element has a `popover` badge (![popover badge](./badges-images/popover-badge.png)) next to it.  Clicking the `popover` badge shows or hides a `top-layer` badge next to it that links to the corresponding element in the `#top-layer` container.
 
-<!-- todo: in Edge Stable 156, clicking the "toggle popover" button in the rendered demo webpage does nothing - selecting the popover badge in the DOM tree causes the popover to be displayed -->
-
 To use the `popover` badge:
 
 1. Go to a webpage, such as the [Badges in the Elements tool](https://microsoftedge.github.io/Demos/devtools-badges/) demo.
 
-1. In the **popover** box, right-click the **Toggle popover** button, and then select **Inspect**.
+1. In the **popover** box, click the **Toggle popover** button.
 
-   DevTools opens, with the **Elements** tool selected.  In the DOM tree, the `<div id="popover" popover>` element is displayed, with a `popover` badge next to the element.
+   A popover opens, showing the message "This is a popover."
+
+1. Right-click the popover opens, and then select **Inspect**.
+
+   DevTools opens, with the **Elements** tool selected.
+   * In the DOM tree, the `<div id="popover" popover>` element is displayed, with a `popover` badge next to the element.
+   * At the bottom of the DOM tree, the `#top-layer` container is displayed:
+
+   ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge-in-dom.png)
 
 1. Click the `popover` badge (![popover badge](./badges-images/popover-badge.png)), and then move the mouse pointer away from the `<div id="popover" popover>` element.
 
-   The `popover` badge changes color to indicate that it's selected.  At the bottom of the DOM tree, the `#top-layer` container is displayed:
-
-   ![The "popover" badge next to the element with a "popover" attribute](./badges-images/popover-badge-in-dom.png)
+   The `popover` badge changes color to indicate that it's selected.
 
 1. In the DOM tree, next to the `popover` badge, click the `top-layer` badge (![top-layer badge](./badges-images/top-layer-badge.png)).
 
@@ -460,8 +450,8 @@ To use the `popover` badge:
 1. Fully expand the `#top-layer` container node.
 
    Child nodes are displayed:
-   * A `div` node, with a `reveal` badge next to it.
-      * A `::backdrop` node, with a `reveal` badge next to it.
+   * A `div` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
+   * A `::backdrop` node, with a `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)) next to it.
 
 1. Next to the `#top-layer` node's `div` node, click the `reveal` badge (![reveal badge](./badges-images/reveal-badge.png)).
 
@@ -477,7 +467,7 @@ To use the `popover` badge:
 
 See also:
 * [The `top-layer` badge](#the-top-layer-badge), above.
-* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog) at web.dev.
+* [Using the Popover API](https://developer.mozilla.org/docs/Web/API/Popover_API/Using) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -515,8 +505,8 @@ To use the `starting-style` badge:
    The popover fades out.
 
 See also:
-* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_ at web.dev.
-* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_ at web.dev.
+* [`@starting-style` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@starting-style) at MDN.
+* [Transitioning a popover](https://developer.mozilla.org/docs/Web/API/Popover_API/Using#transitioning_a_popover) in _Using the Popover API_ at MDN.
 
 
 <!-- ====================================================================== -->
@@ -560,14 +550,6 @@ See also:
 Chrome docs:
 * [Open the Elements panel to inspect the DOM or CSS](https://developer.chrome.com/docs/devtools/open#inspect) in _Open Chrome DevTools_.
 * [Inspect and debug CSS flexbox](https://developer.chrome.com/docs/devtools/css/flexbox)<!-- todo later: update link after https://github.com/MicrosoftDocs/edge-developer/pull/3859 -->
-* [Highlight ad frames](https://developer.chrome.com/docs/devtools/rendering/apply-effects#highlight_ad_frames) in _Apply other effects: enable automatic dark theme, emulate focus, and more_.<!-- todo later: update link to anchor in https://learn.microsoft.com/microsoft-edge/devtools/rendering/rendering-tool -->
-* [Meet the top layer: a solution to z-index:10000](https://developer.chrome.com/blog/what-is-the-top-layer)
-
-web.dev:
-* [Building a dialog component](https://web.dev/articles/building/a-dialog-component)
-* [Popover and dialog](https://web.dev/learn/css/popover-and-dialog)
-* [Setting up entry effects with @starting-style](https://web.dev/blog/baseline-entry-animations#setting_up_entry_effects_with_starting-style) in _Now in Baseline: animating entry effects_.
-* [Animating popovers](https://web.dev/learn/css/popover-and-dialog#animating_popovers) in _Popover and dialog_.
 
 MDN:
 * [CSS grid layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
@@ -577,9 +559,13 @@ MDN:
 * [CSS scroll snap](https://developer.mozilla.org/docs/Web/CSS/Guides/Scroll_snap)
 * [CSS container queries](https://developer.mozilla.org/docs/Web/CSS/Guides/Containment/Container_queries)
 * [`<slot>` HTML web component slot element](https://developer.mozilla.org/docs/Web/HTML/Element/slot)
-* [Using z-index](https://developer.mozilla.org/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index)
+* [Top layer](https://developer.mozilla.org/docs/Glossary/Top_layer)
+* [`<dialog>` HTML dialog element](https://developer.mozilla.org/docs/Web/HTML/Reference/Elements/dialog)
 * [HTMLDialogElement: showModal() method](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/showModal)
 * [Using custom elements](https://developer.mozilla.org/docs/Web/API/Web_components/Using_custom_elements)
+* [Using the Popover API](https://developer.mozilla.org/docs/Web/API/Popover_API/Using) at MDN.
+* [`@starting-style` CSS at-rule](https://developer.mozilla.org/docs/Web/CSS/Reference/At-rules/@starting-style) at MDN.
+* [Transitioning a popover](https://developer.mozilla.org/docs/Web/API/Popover_API/Using#transitioning_a_popover) in _Using the Popover API_ at MDN.
 
 Chromium:
 * [Ad Tagging in Chromium](https://chromium.googlesource.com/chromium/src/+/master/docs/ad_tagging.md)
