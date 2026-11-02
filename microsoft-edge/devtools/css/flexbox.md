@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 07/27/2026
+ms.date: 11/02/2026
 ---
 # Inspect and debug CSS flexbox layouts
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox -->
@@ -26,36 +26,28 @@ ms.date: 07/27/2026
 
 This guide shows you how to discover flexbox elements on a page, as well as inspect and modify the flexbox layouts in the **Elements** tool.
 
-The screenshots appearing in this article are from this webpage: [Centering a text element with Flexbox](http://jec.fish/demo/css-flexbox). todo Demos repo demo(s) 
-
-todo:
-* \Demos\css-gap-decorations\README.md
-   * CSS Gap Decorations demos -- Draws line decorations within gaps in CSS Grid, **Flexbox**, and Multi-column layouts.
-   * [/css-gap-decorations/]( https://github.com/MicrosoftEdge/Demos/tree/main/css-gap-decorations )
-   * [CSS Gap Decorations demos]( https://microsoftedge.github.io/Demos/css-gap-decorations/ )
-
-todo:
-1. dup the article using upstream demos, links, pngs
-1. convert demos to local
-1. convert pngs to local
-1. convert links to local
-
 
 <!-- ====================================================================== -->
 ## The `flex` badge in the DOM tree
 <!-- Discover CSS flexbox  https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
 
-When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge is displayed next to the element in the DOM tree in the **Elements** tool.
+When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed next to the element in the DOM tree in the **Elements** tool.
 
 To view the `flex` badge:
 
-1. Open a webpage, such as the [foo] demo.
+1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
-1. Right-click the webpage, and then select **Inspect**.
+1. Right-click the **Flexbox** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.
+   DevTools opens, with the **Elements** tool selected.  Next to the `<div class="container">` element is the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)):
 
-   ![Discover flexbox](./flexbox-images/discover-flexbox.png)
+   ![Flex badge in the DOM](./flexbox-images/flex-badge-in-dom.png)
+
+1. Click the `flex` badge.
+
+   The flexbox overlay is displayed in the webpage:
+
+   ![flex badge selected, and flexbox overlay](./flexbox-images/flex-badge-selected-in-dom.png)
 
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md)
@@ -71,101 +63,146 @@ For example, you can center the text `<h1>` of the [Center text with CSS Flexbox
 
 To modify layout by using the **flexbox editor**:
 
-1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
+1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
-1. Right-click the webpage, and then select **Inspect**.
+1. Right-click the **Flexbox** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, next to the `<div class="container">` element, the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed.
 
-1. Inspect the container element.
+1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-   In the **Styles** tab of the **Elements** tool, the **flexbox editor** button is shown next to the `display: flex` declaration:
+   The flexbox overlay is displayed in the webpage.
 
-   ![flexbox editor button](./flexbox-images/flexbox-editor-button.png) _todo show edge_
+1. In the **Styles** tab of the **Elements** tool, in the `.container` rule, next to the `display: flex;` CSS property, click the **Open flexbox editor** button (![Open flexbox editor button](./flexbox-images/flexbox-editor-button.png)).
 
-1. Click the **flexbox editor** button.
-
-   The **flexbox editor** opens, displaying a list of flexbox properties.  Each property's value options are displayed as icon buttons:
-
-   ![flexbox editor](./flexbox-images/flexbox-editor.png) _todo show edge_
+   The **flexbox editor** opens, displaying a list of flexbox properties.  Each property's value option is displayed as an icon button.
 
 1. Click the `justify-content: center` button.
 
 1. Click the `align-items: center` button.
 
-   The text is now centered on the screen:
+1. Click away from the flexbox editor.
 
-   ![Center the text in its container](./flexbox-images/center-text-in-container.png) _todo show edge_
+   The flexbox editor closes, and the **Flexbox** text is now centered within its container:
 
-   In the **Styles** tab, the `justify-content: center` and `align-items: center` declarations are added.
+   ![Text centered in its container](./flexbox-images/flexbox-editor.png)
+
+   In the **Styles** tab, the `justify-content: center` and `align-items: center` declarations are added:
+
+   ![Added declarations](./flexbox-images/added-properties.png)
+
+1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) again.
+
+   The flexbox overlay is removed from the webpage.
+
+See also:
+* [Select an element](./reference.md#select-an-element) in _CSS features reference_.
 
 
 <!-- ====================================================================== -->
 ## Examine the flexbox layout
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox#examine -->
 
-To visualize the layout, hover over the flexbox element in the **Elements** tool.  To toggle the display of the flexbox overlay, click the **flex** badge.
+To momentarily visualize the layout, hover over the flexbox element in the **Elements** tool.  Or, to show or hide the flexbox overlay, click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
+
+In the webpage, the flexbox overlay is displayed over the page element, laid out with dotted lines to show the positions of the element's content.
 
 To examine a flexbox layout:
 
-1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
+1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
-1. Right-click the webpage, and then select **Inspect**.
+1. Right-click the **Flexbox** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, next to the `<div class="container">` element, the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed.
 
-   The overlay appears over the element, laid out with dotted lines to show the position of its content and items:
+1. In the DOM tree, hover over the `<div class="container">` element.
 
-   ![Hover over a flexbox element](./flexbox-images/hover-a-flexbox-element.png) _todo show edge_
+   In the webpage, the flexbox overlay appears over the page element (as long as you hover), laid out with dotted lines to show the positions of the element's content:
 
-1. Click the **flex** badge.
+   ![Hover over a flexbox element](./flexbox-images/hover-flexbox-element.png)
 
-   The flexbox overlay is displayed (or hidden):
+1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-   ![Change justify-content to flex-end](./flexbox-images/change-justify-content-flex-end.png) _todo show edge_
+   The flexbox overlay is displayed in the webpage:
 
-1. Change the value to `justify-content: flex-end`.
+   ![The flex badge selected, and the flexbox overlay](./flexbox-images/flex-badge-selected-in-dom.png)
 
-   The overlay is changed accordingly:  _todo: specify_
+1. In the **Styles** tab of the **Elements** tool, in the `.container` rule, next to the `display: flex;` CSS property, click the **Open flexbox editor** button (![Open flexbox editor button](./flexbox-images/flexbox-editor-button.png)).
 
-   ![justify-content: flex-end](./flexbox-images/justify-content-flex-end.png) _todo show edge_
+   The **flexbox editor** opens.
 
-   The icons in the **flex editor** are context-aware.  It _todo: what is "it"?_ changes according to the layout direction.  For example, when you change the `flex-direction` to `column`, the icons in the **flex editor** are rotated accordingly, and the overlay is updated:
+1. In the `justify-content` section, select the `flex-end` button.
 
-   ![Change flex-direction to column](./flexbox-images/change-flex-direction-to-column.png) _todo png for video_
+   In the webpage, the flexbox overlay is changed accordingly:
+
+   ![Change justify-content to flex-end](./flexbox-images/justify-content-flex-end.png)
+
+1. In the `align-items` section, select the `center` button:
+
+   In the webpage, the flexbox overlay is changed accordingly:
+
+   ![align-items: center](./flexbox-images/align-items-center.png)
+
+1. In the `flex-direction` section, select the `column` button.
+
+   The icons in the **flexbox editor** are context-aware.  The flexbox editor's icons change according to the layout direction.
+
+   The icons in the **flex editor** are rotated accordingly.  In the webpage, the flexbox overlay is updated:
+
+   ![Change flex-direction to column](./flexbox-images/flex-direction-column.png)
+
+1. Click the `flex` badge again.
+
+   The flexbox overlay is removed from the webpage.
 
 
 <!-- ====================================================================== -->
 ## Adjust the flexbox overlay color
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
 
-To adjust the flexbox overlay color:
+To adjust the color of the flexbox overlay:
 
-1. Open a webpage, such as the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo.
+1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
-1. Right-click the webpage, and then select **Inspect**.
+1. Right-click the **Flexbox** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.
+   DevTools opens, with the **Elements** tool selected.  Next to the `<div class="container">` element is the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-1. Click the **Layout** tab in the **Elements** tool, and then scroll down to the **Flexbox** section.
+1. In the **Elements** tool, click the **Layout** tab, and then scroll down to the **Flexbox** section.
 
-   All of the flexbox elements are displayed:
+   Each flexbox element of the page is displayed, with a checkbox next to it:
 
-   ![Layout pane](./flexbox-images/layout-pane.png) _todo show edge_
+   ![Layout tab](./flexbox-images/layout-tab.png)
 
-1. You can toggle the overlay of each flexbox element by selecting the checkbox next to it.  It is the same as you click on the badge in the **DOM tree**.
+1. Select the `div.container` checkbox.
 
-1. You can change the color of the overlay, by clicking on the color icon next to it.
+   In the DOM tree, the `flex` badge changes color, to indicate that it's selected.  In the webpage, the flexbox overlay is displayed.
 
-   The color of the `container` overlay changes to black:
+1. Next to the `div.container` checkbox, click the **Choose the overlay color for this element** button.
 
-   ![Change overlay color](./flexbox-images/change-overlay-color.png) _todo show edge_
+   The color editor opens.
 
-1. Click the selector icon next to it.
+1. Select a color, such as dark blue.
 
-   The DOM tree navigates to the flexbox element:
+   The color of the `container` overlay changes to the selected color:
 
-   ![Navigate to a flexbox element](./flexbox-images/nav-flexbox-element.png) _todo png for video_
+   ![Change overlay color](./flexbox-images/overlay-color.png)
+
+1. Next to the **Overlay color** button of `div.container`, select the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
+
+   In the DOM tree, the container element is selected.
+
+
+<!-- ====================================================================== -->
+## See also
+<!-- all links in article -->
+
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md)
+* [Select an element](./reference.md#select-an-element) in _CSS features reference_.
+
+GitHub:
+* [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) - demo.
+   * [/devtools-flexbox/](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-flexbox/) - source code.
 
 
 <!-- ====================================================================== -->
