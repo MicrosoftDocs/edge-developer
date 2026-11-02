@@ -580,7 +580,7 @@ To try emulating a focused page:
 
 1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
 
-An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
+An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md).
 
 See also:
 * [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.
@@ -1294,7 +1294,7 @@ Any change triggers a ball animation in the **Preview** at the top of the **Easi
 * [Get started viewing and changing CSS](../css/index.md).
 * [View the CSS for an element](../css/index.md#view-the-css-for-an-element).
 * [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md).
 * [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 * [Command Menu](../command-menu/index.md)
 * [Force DevTools into Print Preview mode](../css/print-preview.md).

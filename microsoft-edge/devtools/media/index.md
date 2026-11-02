@@ -1,5 +1,5 @@
 ---
-title: View and debug media players information
+title: View and debug media players information (Media tool)
 description: Use the Media tool to view information and debug the media players per browser tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View and debug media players information
+# View and debug media players information (Media tool)
 
 Use the **Media** tool to view information and debug the media players per browser tab.
 
