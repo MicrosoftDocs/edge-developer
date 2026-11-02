@@ -411,6 +411,7 @@ Previous phase: [`WebResourceRequested` for workers](./1-0-1340-prerelease.md#we
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.2365.46, for Runtime 122 (Feb. 26, 2024)](./1-0-2365-46.md)
 * [Runtime 122.0.2365.46 (Feb. 26, 2024)](../runtime/122.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

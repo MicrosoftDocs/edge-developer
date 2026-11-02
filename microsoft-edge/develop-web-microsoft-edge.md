@@ -11,6 +11,8 @@ ms.date: 02/06/2025
 
 Develop for the web with Microsoft Edge by using standards-based web platform features, Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
+<!-- no **Detailed contents:**, b/c flat h2s outline -->
+
 For end-user documentation about how to use Microsoft Edge, see:
 
 * [Get to know Microsoft Edge](https://www.microsoft.com/edge/)
@@ -99,7 +101,6 @@ The WebView2 control is powered by Microsoft Edge, and enables you to embed web 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
 ![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./develop-web-microsoft-edge-images/web-hybrid-native.png)
-<!-- png copy used in main article is named "web-native.png" -->
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 

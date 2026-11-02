@@ -144,6 +144,7 @@ Added support for Custom Crash Reporting API.
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.1418.22, for Runtime 107 (Oct. 31, 2022)](./1-0-1418-22.md)
 * [Runtime 107.0.1418.22 (Oct. 31, 2022)](../runtime/107.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

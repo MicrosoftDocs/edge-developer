@@ -13,6 +13,24 @@ ms.date: 06/10/2025
 
 The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+* [Hybrid app approach](#hybrid-app-approach)
+* [WebView2 benefits](#webview2-benefits)
+* [Components of the WebView2 platform](#components-of-the-webview2-platform)
+* [Supported Windows versions](#supported-windows-versions)
+   * [Windows Client](#windows-client)
+   * [Windows Server](#windows-server)
+* [Supported programming environments and devices](#supported-programming-environments-and-devices)
+* [Sequence of samples to install and run](#sequence-of-samples-to-install-and-run)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses Microsoft Edge as the rendering engine to display the web content in native apps.
+
 With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
 ![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom](./index-images/what-webview.png)
@@ -29,11 +47,11 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach](./index-images/web-hybrid-native.png)
 
 * Wide **reach** includes websites and Progressive Web Apps.
 
-* In the middle are hybrid apps, such as WebViews and Electron.
+*  In the middle are hybrid apps, such as WebViews and [Electron](https://en.wikipedia.org/wiki/Electron_(software_framework)).
 
 * Maximum **power** is native apps.
 
@@ -60,6 +78,16 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 * **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
 
 * **Incremental adoption**.  Add web components piece-by-piece to your app.
+
+
+<!-- ====================================================================== -->
+## Components of the WebView2 platform
+
+To add WebView2 to your app, you use the WebView2 SDK on your development machine, and distribute the WebView2 Runtime to user machines.  The following diagram shows the high-level WebView2 components on your development machine and user machines.
+
+![App on the Development machine and user machine](./index-images/dev-side-user-side.png)
+
+For details, see [Components of the WebView2 platform](./concepts/platform-components.md).
 
 
 <!-- ====================================================================== -->
@@ -141,6 +169,7 @@ After your environment is set up and the samples build and run on your machine, 
 <!-- ====================================================================== -->
 ## See also
 
+* [Components of the WebView2 platform](./concepts/platform-components.md)
 * [Overview of WebView2 APIs](concepts/overview-features-apis.md)
 * [Distribute your app and the WebView2 Runtime](concepts/distribution.md)
 

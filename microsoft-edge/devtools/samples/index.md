@@ -136,7 +136,7 @@ To clone the **MicrosoftEdge / Demos** repo to your local drive:
 
 1. Go to the [MicrosoftEdge / Demos](https://github.com/MicrosoftEdge/Demos) repo in a new window or tab.
 
-1. Click the **Code** drop-down button, and then click the **Copy url to clipboard** button.
+1. Click the **Code** dropdown button, and then click the **Copy url to clipboard** button.
 
    The URL is copied to the clipboard: `https://github.com/MicrosoftEdge/Demos.git`
 

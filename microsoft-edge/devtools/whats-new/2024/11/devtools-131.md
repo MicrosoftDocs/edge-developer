@@ -18,7 +18,7 @@ These are the latest DevTools features in the Stable release of Microsoft Edge.
 
 <!-- Subtitle: The Visual Studio Code themes are removed and themes will revert to the default themes: Light+ or Dark+.-->
 
-The Visual Studio Code themes feature is now deprecated.  These themes will revert to the **System preference** theme by default.  The **Light+** and **Dark+** themes continue to be supported.  To select a theme, select **Customize and control DevTools** > **Preferences** > **Theme** drop-down menu:
+The Visual Studio Code themes feature is now deprecated.  These themes will revert to the **System preference** theme by default.  The **Light+** and **Dark+** themes continue to be supported.  To select a theme, select **Customize and control DevTools** > **Preferences** > **Theme** dropdown menu:
 
 ![The Theme menu in DevTools Preferences](./devtools-131-images/themes-preferences.png)
 

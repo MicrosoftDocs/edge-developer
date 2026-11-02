@@ -42,6 +42,18 @@ function longDate(dateString) {
   return month === "May" ? `${month} ${day}, ${year}` : `${month}. ${day}, ${year}`;
 }
 
+// Format a date string as "MM/DD/YYYY".
+function msDate(dateString) {
+  const date = new Date(dateString);
+  
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const day = date.getDate().toString().padStart(2, "0");
+  const year = date.getFullYear();
+  
+  return `${month}/${day}/${year}`;
+}
+
+
 // Execute a shell command and return the stdout as a string.
 async function execute(cmd) {
   try {
@@ -196,7 +208,25 @@ async function main() {
   let nextBetaReleaseDateMonth = null;
   let nextBetaVersion = null;
 
-  for (let i = 0; i < releasesAsArray.length; i++) {
+  // Optionally, force the version for which to generate notes, ignoring the date window.
+  // Usage: --version=156
+  const versionArg = process.argv.find(arg => arg.startsWith('--version='));
+  const forcedVersion = versionArg ? versionArg.split('=')[1].trim() : null;
+
+  if (forcedVersion) {
+    const release = releasesAsArray.find(r => r.engine_version === forcedVersion);
+    if (!release) {
+      console.error(`Version ${forcedVersion} not found in the browser-compat-data Edge releases.`);
+      process.exit(1);
+    }
+    nextBetaVersion = release.engine_version;
+    nextBetaReleaseDate = release.release_date;
+    nextBetaReleaseDateYear = nextBetaReleaseDate?.split("-")[0];
+    nextBetaReleaseDateMonth = nextBetaReleaseDate?.split("-")[1];
+    console.log(`Forced version ${nextBetaVersion} (${nextBetaReleaseDate}).`);
+  }
+
+  for (let i = 0; !forcedVersion && i < releasesAsArray.length; i++) {
     const release = releasesAsArray[i];
     const date = new Date(release.release_date);
 
@@ -286,17 +316,8 @@ async function main() {
 
   const eleventy = new Eleventy(".", "_site", {
     config: function (eleventyConfig) {
-      eleventyConfig.addShortcode("monthYear", function (releaseDate) {
-        const date = new Date(releaseDate);
-
-        const dtf = new Intl.DateTimeFormat("en-US", { month: "short" });
-        const shortMonth = dtf.format(date);
-        const shortMonthWithDot = shortMonth === "May" ? shortMonth : shortMonth + ".";
-
-        return `${shortMonthWithDot} ${date.getFullYear()}`;
-      });
-
       eleventyConfig.addShortcode("monthDayYear", longDate);
+      eleventyConfig.addShortcode("msDate", msDate);
 
       return {
         dir: {

@@ -676,11 +676,11 @@ To declutter the flame chart in the **Main** thread, you can hide selected funct
 
    <!-- ![The context menu with options to hide the selected function or its children](todo: hide-func-menu.png) -->
 
-   A **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button appears next to the function name with hidden children.
+   A **number hidden** dropdown (![The number hidden dropdown](./reference-images/number-hidden-drop-down-arrow.png)) button appears next to the function name with hidden children.
 
-1. To see the number of hidden children, hover over the **number hidden** drop-down (![The number hidden drop-down](./reference-images/number-hidden-drop-down-arrow.png)) button.
+1. To see the number of hidden children, hover over the **number hidden** dropdown (![The number hidden dropdown](./reference-images/number-hidden-drop-down-arrow.png)) button.
 
-   <!-- ![The tooltip over the drop-down button with the number of hidden children](todo: hidden-children.png) -->
+   <!-- ![The tooltip over the dropdown button with the number of hidden children](todo: hidden-children.png) -->
 
 1. To reset a function with hidden children or the whole flame chart, select the function and press **U** or right-click any function and select **Reset trace** respectively.
 
@@ -1182,7 +1182,7 @@ To open the **Rendering** tool:
    ![The Rendering tool](./reference-images/rendering-tool.png)
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md)<!-- https://developer.chrome.com/docs/devtools/rendering#open-rendering -->
 
 
 <!-- ------------------------------ -->

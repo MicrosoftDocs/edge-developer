@@ -171,7 +171,7 @@ landingContent:
             url: ../security/index.md
 
           - text: Troubleshooting common performance issues
-            url: ../rendering-tools/index.md
+            url: ../rendering/index.md
 
 # -----------------------------------------------------------------------------
 # Card r2c3

@@ -38,6 +38,7 @@ These foundational improvements provide stable, thoroughly tested functionality 
 <!-- ====================================================================== -->
 ## See also
 
+* [Release SDK 1.0.3537.50, for Runtime 141 (Oct. 6, 2025)](./1-0-3537-50.md)
 * [Runtime 141.0.3537.50 (Oct. 6, 2025)](../runtime/141.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

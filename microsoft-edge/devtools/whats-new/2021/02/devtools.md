@@ -222,7 +222,7 @@ To learn more about the `color-gamut` feature, see [Color Display Quality: the '
 For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
 See also:
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering/rendering-tool.md)
 
 
 <!-- ------------------------------ -->

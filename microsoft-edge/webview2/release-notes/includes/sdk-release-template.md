@@ -1,5 +1,5 @@
 ---
-title: SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
+title: Release SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
 description: Release notes for Microsoft Edge WebView2, for Release SDK n.n.nnnn.nn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,13 +8,13 @@ ms.service: microsoft-edge
 ms.subservice: webview
 ms.date: 01/01/2026
 ---
-# SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
+# Release SDK n.n.nnnn.nn, for Runtime nnn (Mmm. dd, yyyy)
 
 Release notes for Microsoft Edge WebView2 SDK, release date: Mmm. dd, yyyy.
 
-[NuGet package for WebView2 SDK n.n.nnnn.nn] (https://www.nuget.org/packages/Microsoft.Web.WebView2/n.n.nnnn.nn)
+[NuGet package for WebView2 SDK n.n.nnnn.nn] (`https://www.nuget.org/packages/Microsoft.Web.WebView2/n.n.nnnn.nn`)
 
-For full API compatibility, this Release version of the WebView2 SDK requires WebView2 Runtime version nnn.n.nnnn.nn or later.
+For full API compatibility, this Release version of the WebView2 SDK requires WebView2 [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md) or later.
 
 <!-- if a section is empty, omit the section heading -->
 
@@ -66,6 +66,7 @@ Previous phase: [~] (./~.md#~) in _~_.
 <!-- ====================================================================== -->
 ## See also
 
+* [Prerelease SDK 1.0.nnnn-prerelease, for Runtime nnn (Mmm. dd, yyyy)] (./1-0-nnnn-prerelease.md)
 * [Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)] (../runtime/nnn.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

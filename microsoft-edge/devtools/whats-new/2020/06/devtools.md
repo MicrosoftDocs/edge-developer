@@ -232,7 +232,7 @@ The **Computed** pane in the **Elements** tool is now displayed consistently as 
 Chromium issue [#1073899](https://crbug.com/1073899)
 
 See also:
-* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that's actually applied to an element](../../../css/reference.md#view-only-the-css-thats-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ------------------------------ -->

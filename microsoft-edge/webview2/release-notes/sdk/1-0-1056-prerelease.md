@@ -51,6 +51,9 @@ The following Experimental APIs have been added in this Prerelease SDK.
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget -->
+* [Prerelease SDK 1.0.1083-prerelease, for Runtime 97 (Nov. 29, 2021)](./1-0-1083-prerelease.md)
+* [Release SDK 1.0.1072.54, for Runtime 97 (Jan. 13, 2022)](./1-0-1072-54.md)
 * [Runtime 97.0.1072.54 (Jan. 13, 2022)](../runtime/97.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

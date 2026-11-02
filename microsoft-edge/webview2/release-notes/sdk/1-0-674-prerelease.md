@@ -64,6 +64,14 @@ This Prerelease version of the WebView2 SDK requires WebView2 Runtime version 86
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget:  https://www.nuget.org/packages/Microsoft.Web.WebView2 -->
+* [Prerelease SDK 1.0.790-prerelease, for Runtime 86 (Feb. 10, 2021)](./1-0-790-prerelease.md)
+* [Prerelease SDK 1.0.721-prerelease, for Runtime 86 (Dec. 8, 2020)](./1-0-721-prerelease.md)
+* [Release SDK 1.0.705.50, for Runtime 86 (Jan. 25, 2021)](./1-0-705-50.md)
+* [Release SDK 1.0.664.37, for Runtime 86 (Nov. 20, 2020)](./1-0-664-37.md)
+* [Release SDK 1.0.622.22, for Runtime 86 (Oct. 19, 2020)](./1-0-622-22.md)
+* [Release SDK 0.9.622.11, for Runtime 86 (Sep. 10, 2020)](./0-9-622-11.md)
+* [Release SDK 0.9.579, for Runtime 86 (Jul. 20, 2020)](./0-9-579.md)
 * [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

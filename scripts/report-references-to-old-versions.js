@@ -48,8 +48,7 @@ const FILES_TO_IGNORE = [
   '../microsoft-edge/progressive-web-apps/whats-new/*.md',
 
   // WebView2
-  '../microsoft-edge/webview2/release-notes/index.md',
-  '../microsoft-edge/webview2/release-notes/archive.md',
+  '../microsoft-edge/webview2/release-notes/**/*.md',
   
   // Test and automation
   // -- No files to ignore yet --

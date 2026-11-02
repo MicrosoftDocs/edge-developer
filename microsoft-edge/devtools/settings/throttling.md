@@ -86,7 +86,7 @@ To use your calibrated CPU throttling rates:
 
    The calibrated factors are displayed next to the **Low-tier mobile** and **Mid-tier mobile** menuitems:
 
-   ![Calibrated rates next in drop-down menus in the Performance panel](./throttling-images/calibrated-presets.png)
+   ![Calibrated rates next in dropdown menus in the Performance panel](./throttling-images/calibrated-presets.png)
 
 
 <!-- ====================================================================== -->

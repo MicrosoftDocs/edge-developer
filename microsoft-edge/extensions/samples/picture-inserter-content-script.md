@@ -147,9 +147,9 @@ You are now free to modify the code in your working branch, without altering the
 
 1. In GitHub Desktop, make sure that in the upper left of GitHub desktop, **Current repository** is **MicrosoftEdge-Extensions**.
 
-   In the **Current branch** drop-down list, it says **main**.
+   In the **Current branch** dropdown list, it says **main**.
 
-1. In the **Current branch** drop-down list, click the **Branches** tab, and then click the **New branch** button.
+1. In the **Current branch** dropdown list, click the **Branches** tab, and then click the **New branch** button.
 
    The **Create a branch** dialog opens.
 

@@ -1,18 +1,14 @@
 
 ---
-title: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
-description: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
+title: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthDayYear data.nextBetaReleaseDate %})
+description: Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthDayYear data.nextBetaReleaseDate %})
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 
+ms.date: {% msDate data.nextBetaReleaseDate %}
 ---
-# Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthYear data.nextBetaReleaseDate %})
-<!-- todo: update date: field to:
-ms.date: 
-per build report, must be < 30 days in future
--->
+# Microsoft Edge {{ data.nextBetaVersion }} web platform release notes ({% monthDayYear data.nextBetaReleaseDate %})
 
 The following are the new web platform features and updates in Microsoft Edge {{ data.nextBetaVersion }}, which releases on {% monthDayYear data.nextBetaReleaseDate %}.
 
@@ -80,8 +76,8 @@ See also:
 {% endfor %}
 
 
-<!-- ------------------------------ -->
-#### Deprecated or removed features
+<!-- ====================================================================== -->
+## Deprecated or removed features
 
 **TODO: CHECK THE FEATURES LISTED BELOW, AND ADD THEM TO [Site compatibility-impacting changes coming to Microsoft Edge](../site-impacting-changes.md)**
 

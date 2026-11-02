@@ -16,6 +16,15 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Dec. 8, 
 
 This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or later; see [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md).
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+   * [Features](#features)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
+   * [.NET](#net)
+      * [Features](#features-1)
+      * [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
@@ -27,7 +36,7 @@ This Prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 <!-- ------------------------------ -->
 #### Features
 
-* Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices for using group policies, see [Enterprise management of WebView2](../../concepts/enterprise.md).
+* Added [Microsoft Edge WebView2 - Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [Enterprise management of WebView2](/deployedge/webview2-enterprise), in the Microsoft Edge Enterprise documentation.
 
 * > [!IMPORTANT]
    > **Breaking Change**: Deprecated the old registry location.
@@ -92,6 +101,14 @@ The following APIs have been promoted from Phase 1: Experimental in Prerelease, 
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget:  https://www.nuget.org/packages/Microsoft.Web.WebView2 -->
+* [Prerelease SDK 1.0.790-prerelease, for Runtime 86 (Feb. 10, 2021)](./1-0-790-prerelease.md)
+* [Release SDK 1.0.705.50, for Runtime 86 (Jan. 25, 2021)](./1-0-705-50.md)
+* [Prerelease SDK 1.0.674-prerelease, for Runtime 86 (Oct. 19, 2020)](./1-0-674-prerelease.md)
+* [Release SDK 1.0.664.37, for Runtime 86 (Nov. 20, 2020)](./1-0-664-37.md)
+* [Release SDK 1.0.622.22, for Runtime 86 (Oct. 19, 2020)](./1-0-622-22.md)
+* [Release SDK 0.9.622.11, for Runtime 86 (Sep. 10, 2020)](./0-9-622-11.md)
+* [Release SDK 0.9.579, for Runtime 86 (Jul. 20, 2020)](./0-9-579.md)
 * [Runtime 86.0.705.50 (Jan. 25, 2021)](../runtime/86.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)

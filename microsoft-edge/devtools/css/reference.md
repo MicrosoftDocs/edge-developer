@@ -38,7 +38,7 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
       * [View the values of custom properties](#view-the-values-of-custom-properties)
    * [View the external stylesheet where a rule is defined](#view-the-external-stylesheet-where-a-rule-is-defined)
    * [View invalid, overridden, inactive, and other CSS](#view-invalid-overridden-inactive-and-other-css)
-   * [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element)
+   * [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element)
    * [View CSS properties in alphabetical order](#view-css-properties-in-alphabetical-order)
    * [View inherited CSS properties](#view-inherited-css-properties)
    * [View CSS at-rules](#view-css-at-rules)
@@ -48,7 +48,7 @@ To learn the basics, see [Get started viewing and changing CSS](../css/index.md)
       * [View `@font-palette-values` at-rules](#view-font-palette-values-at-rules)
       * [View `@position-try` at-rules](#view-position-try-at-rules)
    * [View an element's box model](#view-an-elements-box-model)
-   * [Search and filter the CSS of an element](#search-and-filter-the-css-of-an-element)
+   * [Search and filter an element's CSS](#search-and-filter-an-elements-css)
    * [Emulate a focused page](#emulate-a-focused-page)
    * [Toggle a pseudo-class](#toggle-a-pseudo-class)
    * [View inherited highlight pseudo-elements](#view-inherited-highlight-pseudo-elements)
@@ -274,7 +274,7 @@ See:
 
 
 <!-- ------------------------------ -->
-#### View only the CSS that is actually applied to an element
+#### View only the CSS that's actually applied to an element
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#computed -->
 
 The **Styles** pane shows you all of the rules that apply to an element, including declarations that have been overridden.  When you aren't interested in overridden declarations, use the **Computed** pane to view only the CSS that is actually being applied to an element.
@@ -308,14 +308,14 @@ See:
 #### View CSS properties in alphabetical order
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#alphabetical -->
 
-Use the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+Use the **Computed** pane.  See [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
 #### View inherited CSS properties
 <!-- https://developer.chrome.com/docs/devtools/css/reference/#inherited -->
 
-Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+Check the **Show All** checkbox in the **Computed** pane.  See [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ------------------------------ -->
@@ -525,8 +525,8 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Search and filter the CSS of an element
-<!-- Search and filter an element's CSS  https://developer.chrome.com/docs/devtools/css/reference/#filter -->
+#### Search and filter an element's CSS
+<!-- https://developer.chrome.com/docs/devtools/css/reference/#filter -->
 
 Use the **Filter** text box on the **Styles** and **Computed** panes to search for specific CSS properties or values.
 
@@ -580,7 +580,7 @@ To try emulating a focused page:
 
 1. Cleanup: In the **Elements** tool, in the **Styles** tab, click `:hov` (**Toggle Element State**), and then clear the **Emulate a focused page** checkbox.
 
-An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
+An **Emulate a focused page** checkbox also appears in the **Rendering** tool; see [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md).
 
 See also:
 * [Freeze screen & inspect disappearing elements](https://developer.chrome.com/blog/devtools-tips-35), in the Chrome for Developers blog.
@@ -805,7 +805,7 @@ To copy CSS:
 
    * **Copy all CSS changes**.  Copies the changes that you make in the **Styles** tab across all declarations.  This menuitem conditionally appears.
 
-   * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element), above.
+   * **View computed value**.  Takes you to the **Computed** tab; see [View only the CSS that's actually applied to an element](#view-only-the-css-thats-actually-applied-to-an-element), above.
 
 
 <!-- ====================================================================== -->
@@ -1294,7 +1294,7 @@ Any change triggers a ball animation in the **Preview** at the top of the **Easi
 * [Get started viewing and changing CSS](../css/index.md).
 * [View the CSS for an element](../css/index.md#view-the-css-for-an-element).
 * [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print) in _JavaScript debugging features_.
-* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md).
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md).
 * [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 * [Command Menu](../command-menu/index.md)
 * [Force DevTools into Print Preview mode](../css/print-preview.md).

@@ -95,6 +95,10 @@ The previous phase isn't in the release notes.
 <!-- ====================================================================== -->
 ## See also
 
+<!-- sdks same order as toc & nuget: -->
+* [Prerelease SDK 1.0.1248-prerelease, for Runtime 102 (May 9, 2022)](./1-0-1248-prerelease.md)
+* [Release SDK 1.0.1245.22, for Runtime 102 (Jun. 14, 2022)](./1-0-1245-22.md)
+* [Prerelease SDK 1.0.1243-prerelease, for Runtime 102 (May 2, 2022)](./1-0-1243-prerelease.md)
 * [Runtime 102.0.1245.22 (Jun. 14, 2022)](../runtime/102.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
