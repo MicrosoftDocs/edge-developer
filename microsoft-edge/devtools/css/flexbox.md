@@ -178,7 +178,8 @@ To adjust the color of the flexbox overlay:
 
 1. Select the `div.container` checkbox.
 
-   In the DOM tree, the `flex` badge changes color, to indicate that it's selected.  In the webpage, the flexbox overlay is displayed.
+   * In the DOM tree, the `flex` badge changes color, to indicate that it's selected; selecting this checkbox is the same as selecting the `flex` badge in the DOM.
+   * In the webpage, the flexbox overlay is displayed.
 
 1. Next to `div.container`, click the **Choose the overlay color for this element** (color swatch) button.
 
