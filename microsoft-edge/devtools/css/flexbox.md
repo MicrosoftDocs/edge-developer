@@ -1,6 +1,6 @@
 ---
 title: Inspect and debug CSS flexbox layout
-description: Inspect and debug CSS flexbox layout.
+description: Inspect and debug CSS flexbox layout by using the flexbox overlay, flex badge in the DOM, and flexbox editor.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -9,7 +9,7 @@ ms.subservice: devtools
 ms.date: 11/02/2026
 ---
 # Inspect and debug CSS flexbox layout
-<!-- https://developer.chrome.com/docs/devtools/css/flexbox -->
+<!-- Inspect and debug CSS flexbox layouts  https://developer.chrome.com/docs/devtools/css/flexbox -->
 <!-- Copyright Jecelyn Yeen
 
    Licensed under the Apache License, Version 2.0 (the "License");
