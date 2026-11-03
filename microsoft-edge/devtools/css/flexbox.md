@@ -57,9 +57,9 @@ See also:
 ## Modify layout by using the flexbox editor
 <!-- Modify layouts with the flexbox editor  https://developer.chrome.com/docs/devtools/css/flexbox#modify -->
 
-You can modify a flexbox layout visually by using the **flexbox editor**.
+You can modify a flexbox layout visually, rather than through code, by using the **flexbox editor**.
 
-For example, you can center the text `<h1>` of the [Center text with CSS Flexbox](http://jec.fish/demo/css-flexbox) demo within its container, `<div class="container">`.
+For example, you can center a flexbox element within its container, as follows.
 
 To modify layout by using the **flexbox editor**:
 
@@ -67,7 +67,7 @@ To modify layout by using the **flexbox editor**:
 
 1. Right-click the **Flexbox** box, and then select **Inspect**.
 
-   DevTools opens, with the **Elements** tool selected.  In the DOM tree, next to the `<div class="container">` element, the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed.
+   DevTools opens, with the **Elements** tool selected.  In the DOM tree, next to the `<div class="container">` element, the `flex` badge is displayed.
 
 1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
@@ -77,13 +77,13 @@ To modify layout by using the **flexbox editor**:
 
    The **flexbox editor** opens, displaying a list of flexbox properties.  Each property's value option is displayed as an icon button.
 
-1. Click the `justify-content: center` button.
+1. In the `justify-content:` section, click the **Add justify-content: center** button.
 
 1. Click the `align-items: center` button.
 
 1. Click away from the flexbox editor.
 
-   The flexbox editor closes, and the **Flexbox** text is now centered within its container:
+   The flexbox editor closes, and the **Flexbox** box is now centered within its container:
 
    ![Text centered in its container](./flexbox-images/flexbox-editor.png)
 
@@ -91,7 +91,7 @@ To modify layout by using the **flexbox editor**:
 
    ![Added declarations](./flexbox-images/added-properties.png)
 
-1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) again.
+1. In the DOM tree, click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) again.
 
    The flexbox overlay is removed from the webpage.
 
@@ -123,7 +123,7 @@ To examine a flexbox layout:
 
 1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-   The flexbox overlay is displayed in the webpage:
+   The flexbox overlay is displayed in the webpage, without having to hover over the DOM tree:
 
    ![The flex badge selected, and the flexbox overlay](./flexbox-images/flex-badge-selected-in-dom.png)
 
@@ -131,23 +131,23 @@ To examine a flexbox layout:
 
    The **flexbox editor** opens.
 
-1. In the `justify-content` section, select the `flex-end` button.
+1. In the `justify-content:` section, click the **Add justify-content: flex-end** button.
 
-   In the webpage, the flexbox overlay is changed accordingly:
+   In the webpage, the flexbox layout and flexbox overlay now show the flexbox horizontally aligned to the right side of its container:
 
    ![Change justify-content to flex-end](./flexbox-images/justify-content-flex-end.png)
 
-1. In the `align-items` section, select the `center` button:
+1. In the `align-items:` section, click the **Add align-items: center** button.
 
-   In the webpage, the flexbox overlay is changed accordingly:
+   In the webpage, the flexbox layout and flexbox overlay now show the flexbox vertically aligned in the center of its container:
 
    ![align-items: center](./flexbox-images/align-items-center.png)
 
-1. In the `flex-direction` section, select the `column` button.
+1. In the `flex-direction:` section, select the `column` button.
 
-   The icons in the **flexbox editor** are context-aware.  The flexbox editor's icons change according to the layout direction.
+   The icons in the **flexbox editor** are context-aware; the icons in the flexbox editor rotate according to the layout direction.
 
-   The icons in the **flex editor** are rotated accordingly.  In the webpage, the flexbox overlay is updated:
+   In the webpage, the flexbox is now aligned to the bottom of its container, and the flexbox overlay is updated:
 
    ![Change flex-direction to column](./flexbox-images/flex-direction-column.png)
 
@@ -170,7 +170,7 @@ To adjust the color of the flexbox overlay:
 
 1. In the **Elements** tool, click the **Layout** tab, and then scroll down to the **Flexbox** section.
 
-   Each flexbox element of the page is displayed, with a checkbox next to it:
+   Each flexbox element of the page is listed, with a checkbox, color swatch, and **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)) next to it:
 
    ![Layout tab](./flexbox-images/layout-tab.png)
 
@@ -178,7 +178,7 @@ To adjust the color of the flexbox overlay:
 
    In the DOM tree, the `flex` badge changes color, to indicate that it's selected.  In the webpage, the flexbox overlay is displayed.
 
-1. Next to the `div.container` checkbox, click the **Choose the overlay color for this element** button.
+1. Next to `div.container`, click the **Choose the overlay color for this element** (color swatch) button.
 
    The color editor opens.
 
@@ -188,7 +188,7 @@ To adjust the color of the flexbox overlay:
 
    ![Change overlay color](./flexbox-images/overlay-color.png)
 
-1. Next to the **Overlay color** button of `div.container`, select the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
+1. Next to `div.container`, select the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
 
    In the DOM tree, the container element is selected.
 
