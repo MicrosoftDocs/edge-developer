@@ -31,7 +31,9 @@ This guide shows you how to discover flexbox elements on a page, as well as insp
 ## Use the `flex` badge to display the flexbox overlay
 <!-- Discover CSS flexbox  https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
 
-When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed next to the element in the DOM tree in the **Elements** tool.  Clicking the `flex` badge displays the flexbox overlay in the webpage.
+When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed next to the element in the DOM tree in the **Elements** tool.
+
+Clicking the `flex` badge displays the flexbox overlay in the webpage.  In the webpage, the flexbox overlay is displayed over the page element, laid out with dotted lines to show the positions of the element's content.
 
 To display the flexbox overlay:
 
@@ -57,9 +59,7 @@ See also:
 ## Modify layout visually by using the flexbox editor
 <!-- Modify layouts with the flexbox editor  https://developer.chrome.com/docs/devtools/css/flexbox#modify -->
 
-You can modify a flexbox layout visually, rather than through code, by using the **flexbox editor**.
-
-For example, you can center a flexbox element within its container, as follows.
+You can modify a flexbox layout visually, rather than through code, by using the **flexbox editor**.  For example, you can center a flexbox element within its container, as follows.
 
 To modify layout by using the **flexbox editor**:
 
@@ -105,9 +105,9 @@ See also:
 
 To momentarily visualize the layout, hover over the flexbox element in the **Elements** tool.  Or, to show or hide the flexbox overlay, click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-In the webpage, the flexbox overlay is displayed over the page element, laid out with dotted lines to show the positions of the element's content.
+The icons in the **flexbox editor** are context-aware; the icons in the flexbox editor rotate according to the layout direction.
 
-To examine a flexbox layout:
+To examine and modify a flexbox layout:
 
 1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
@@ -162,6 +162,8 @@ To examine a flexbox layout:
 
 You can adjust the color of the flexbox overlay, by using a streamlined version of the **Color Picker**.
 
+Selecting (or clearing) the checkbox next to a flexbox element in the **Layout** tab is the same as selecting (or unselecting) the `flex` badge in the DOM tree: it displays or hides the flexbox overlay in the webpage.
+
 To adjust the color of the flexbox overlay:
 
 1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
@@ -178,7 +180,7 @@ To adjust the color of the flexbox overlay:
 
 1. Select the `div.container` checkbox.
 
-   * In the DOM tree, the `flex` badge changes color, to indicate that it's selected; selecting this checkbox is the same as selecting the `flex` badge in the DOM.
+   * In the DOM tree, the `flex` badge changes color, to indicate that it's selected; selecting this checkbox is the same as selecting the `flex` badge in the DOM tree.
    * In the webpage, the flexbox overlay is displayed.
 
 1. Next to `div.container`, click the **Choose the overlay color for this element** (color swatch) button.
