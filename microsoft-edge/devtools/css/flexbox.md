@@ -28,12 +28,12 @@ This guide shows you how to discover flexbox elements on a page, as well as insp
 
 
 <!-- ====================================================================== -->
-## The `flex` badge in the DOM tree
+## Use the `flex` badge to display the flexbox overlay
 <!-- Discover CSS flexbox  https://developer.chrome.com/docs/devtools/css/flexbox#discover -->
 
-When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a **flex** badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed next to the element in the DOM tree in the **Elements** tool.
+When an HTML element on a page has `display: flex` or `display: inline-flex` applied to it, a `flex` badge (![flex badge](./flexbox-images/flex-badge.png)) is displayed next to the element in the DOM tree in the **Elements** tool.  Clicking the `flex` badge displays the flexbox overlay in the webpage.
 
-To view the `flex` badge:
+To display the flexbox overlay:
 
 1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
 
@@ -54,7 +54,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Modify layout by using the flexbox editor
+## Modify layout visually by using the flexbox editor
 <!-- Modify layouts with the flexbox editor  https://developer.chrome.com/docs/devtools/css/flexbox#modify -->
 
 You can modify a flexbox layout visually, rather than through code, by using the **flexbox editor**.
@@ -101,7 +101,7 @@ See also:
 
 <!-- ====================================================================== -->
 ## Examine the flexbox layout
-<!-- https://developer.chrome.com/docs/devtools/css/flexbox#examine -->
+<!-- Examine the flexbox layout  https://developer.chrome.com/docs/devtools/css/flexbox#examine -->
 
 To momentarily visualize the layout, hover over the flexbox element in the **Elements** tool.  Or, to show or hide the flexbox overlay, click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
@@ -157,8 +157,8 @@ To examine a flexbox layout:
 
 
 <!-- ====================================================================== -->
-## Adjust the flexbox overlay color
-<!-- https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
+## Adjust the color of the flexbox overlay
+<!-- Adjust the flexbox overlay color  https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
 
 To adjust the color of the flexbox overlay:
 
