@@ -162,7 +162,7 @@ To examine and modify a flexbox layout:
 
 You can adjust the color of the flexbox overlay, by using a streamlined version of the **Color Picker**.
 
-Selecting (or clearing) the checkbox next to a flexbox element in the **Layout** tab is the same as selecting (or unselecting) the `flex` badge in the DOM tree: it displays or hides the flexbox overlay in the webpage.
+Selecting (or clearing) the checkbox next to a flexbox element in the **Layout** tab is the same as selecting (or unselecting) the `flex` badge in the DOM tree: it displays (or hides) the flexbox overlay in the webpage.
 
 To adjust the color of the flexbox overlay:
 
