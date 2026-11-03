@@ -100,7 +100,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Examine the flexbox layout
+## Additional aspects of the flexbox editor
 <!-- Examine the flexbox layout  https://developer.chrome.com/docs/devtools/css/flexbox#examine -->
 
 To momentarily visualize the layout, hover over the flexbox element in the **Elements** tool.  Or, to show or hide the flexbox overlay, click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
