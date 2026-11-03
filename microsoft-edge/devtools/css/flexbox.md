@@ -160,6 +160,8 @@ To examine a flexbox layout:
 ## Adjust the color of the flexbox overlay
 <!-- Adjust the flexbox overlay color  https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
 
+You can adjust the color of the flexbox overlay, by using a streamlined version of the **Color Picker**.
+
 To adjust the color of the flexbox overlay:
 
 1. Open a webpage, such as the [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) demo.
@@ -180,7 +182,7 @@ To adjust the color of the flexbox overlay:
 
 1. Next to `div.container`, click the **Choose the overlay color for this element** (color swatch) button.
 
-   The color editor opens.
+   A streamlined version of the **Color Picker** opens.
 
 1. Select a color, such as dark blue.
 
@@ -192,6 +194,9 @@ To adjust the color of the flexbox overlay:
 
    In the DOM tree, the container element is selected.
 
+See also:
+* [Change colors with the Color Picker](./reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
+
 
 <!-- ====================================================================== -->
 ## See also
@@ -199,6 +204,7 @@ To adjust the color of the flexbox overlay:
 
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../elements/elements-tool.md)
 * [Select an element](./reference.md#select-an-element) in _CSS features reference_.
+* [Change colors with the Color Picker](./reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 
 GitHub:
 * [Inspect and debug CSS flexbox](https://microsoftedge.github.io/Demos/devtools-flexbox/) - demo.
