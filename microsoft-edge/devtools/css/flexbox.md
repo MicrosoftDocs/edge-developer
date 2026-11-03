@@ -1,6 +1,6 @@
 ---
-title: Inspect and debug CSS flexbox layouts
-description: Inspect and debug CSS flexbox layouts.
+title: Inspect and debug CSS flexbox layout
+description: Inspect and debug CSS flexbox layout.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -8,7 +8,7 @@ ms.service: microsoft-edge
 ms.subservice: devtools
 ms.date: 11/02/2026
 ---
-# Inspect and debug CSS flexbox layouts
+# Inspect and debug CSS flexbox layout
 <!-- https://developer.chrome.com/docs/devtools/css/flexbox -->
 <!-- Copyright Jecelyn Yeen
 

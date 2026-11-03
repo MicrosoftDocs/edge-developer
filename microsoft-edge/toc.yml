@@ -595,7 +595,7 @@
                       href: ./devtools/css/grid.md
                       displayName: Elements tool
 
-                    - name: Inspect and debug CSS flexbox layouts
+                    - name: Inspect and debug CSS flexbox layout
                       href: ./devtools/css/flexbox.md
                       displayName: Elements tool
 
@@ -906,7 +906,7 @@
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
-                    - name: View and debug media players information (Media tool)
+                    - name: View and debug media player information (Media tool)
                       href: ./devtools/media/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------
