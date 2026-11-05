@@ -8,7 +8,7 @@
     "@octokit/auth-action": "^5.1.1",
     "@octokit/request": "^9.2.1",
     "dotenv": "^16.4.5",
-    "glob": "^13.0.0",
+    "glob": "^14.0.3",
     "playwright": "^1.55.1"
   }
 }
