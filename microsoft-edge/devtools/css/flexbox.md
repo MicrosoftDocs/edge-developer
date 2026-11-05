@@ -143,7 +143,6 @@ To examine and modify a flexbox layout:
 
    ![align-items: center](./flexbox-images/align-items-center.png)
 
-
 1. In the `flex-direction:` section, select the **Add flex-direction: column** button.
 
    The icons in the **flexbox editor** are context-aware; the icons in the flexbox editor rotate according to the layout direction.
@@ -152,10 +151,18 @@ To examine and modify a flexbox layout:
 
    ![Change flex-direction to column](./flexbox-images/flex-direction-column.png)
 
+   In the `.container` rule, the following properties have been added:
+
+   ```css
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: column;
+   ```
+
 1. Click the `flex` badge again.
 
-   The flexbox overlay is removed from the webpage.
-
+   The `flex` badge changes color, to indicate that it's not selected.  The flexbox overlay is removed from the webpage.
+   
 
 <!-- ====================================================================== -->
 ## Adjust the color of the flexbox overlay
