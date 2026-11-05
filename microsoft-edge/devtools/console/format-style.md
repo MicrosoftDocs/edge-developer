@@ -74,9 +74,6 @@ For example:
 
    ![format string value](./format-style-images/format-string-value.png)
 
-See also:
-* [2.2.1. Summary of formatting specifiers](https://console.spec.whatwg.org/#formatting-specifiers) in _Console: Living Standard_.
-
 
 <!-- ------------------------------ -->
 #### Format specifiers
