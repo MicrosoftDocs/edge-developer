@@ -408,7 +408,7 @@ To use the `media` badge:
    If you click the `media` badge, the **Media** tool opens, displaying details.  In this demo, the **Media** tool is empty, because the demo includes an empty `<video>` element.
 
 See also:
-* [View and debug media players information (Media tool)](../media/index.md).
+* [View and debug media player information (Media tool)](../media/index.md).
 
 
 <!-- ====================================================================== -->
@@ -545,7 +545,7 @@ See also:
 
 * [Inspect CSS Grid layouts](../css/grid.md)
 * [Inspect and debug CSS container queries](../css/container-queries.md)
-* [View and debug media players information (Media tool)](../media/index.md)
+* [View and debug media player information (Media tool)](../media/index.md)
 
 Chrome docs:
 * [Open the Elements panel to inspect the DOM or CSS](https://developer.chrome.com/docs/devtools/open#inspect) in _Open Chrome DevTools_.

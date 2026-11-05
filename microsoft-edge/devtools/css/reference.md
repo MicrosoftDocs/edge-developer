@@ -1093,7 +1093,7 @@ To open the **Color Picker**:
 
    ![Color preview](./reference-images/css-elements-styles-rule-overlay-color-box.png)
 
-1. Click the preview to open the **Color Picker**.
+1. Click the preview to open the **Color Picker**:
 
    ![The Color Picker](./reference-images/css-elements-styles-rule-color-picker.png)
 

@@ -569,7 +569,7 @@
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
-                  href: ./devtools/elements-tool/elements-tool.md
+                  href: ./devtools/elements/elements-tool.md
 
                 - name: DOM
                   items:
@@ -578,7 +578,7 @@
                       displayName: Elements tool
 
                     - name: Badges reference
-                      href: ./devtools/elements-tool/badges.md
+                      href: ./devtools/elements/badges.md
                       displayName: Elements tool
 
                 - name: CSS
@@ -593,6 +593,10 @@
 
                     - name: Inspect CSS Grid layouts
                       href: ./devtools/css/grid.md
+                      displayName: Elements tool
+
+                    - name: Inspect and debug CSS flexbox layout
+                      href: ./devtools/css/flexbox.md
                       displayName: Elements tool
 
                     - name: Style editing for CSS-in-JS frameworks
@@ -902,7 +906,7 @@
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
-                    - name: View and debug media players information (Media tool)
+                    - name: View and debug media player information (Media tool)
                       href: ./devtools/media/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------
