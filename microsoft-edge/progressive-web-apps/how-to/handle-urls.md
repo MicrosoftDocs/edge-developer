@@ -18,8 +18,7 @@ This link handling is like how native apps handle links on many operating system
 **Detailed contents:**
 * [Handle links from other origins by using scope extensions](#handle-links-from-other-origins-by-using-scope-extensions)
     * [PWA scope when not using scope extensions](#pwa-scope-when-not-using-scope-extensions)
-    * [Extending scope to other domains, subdomains, or paths](#extending-scope-to-other-domains-subdomains-or-paths)
-    * [The scope_extensions web app manifest member](#the-scope_extensions-web-app-manifest-member)
+* [The edge://apps toggle](#the-edgeapps-toggle-todo-which-toggle-where)
 * [See also](#see-also)
 
 <!--
