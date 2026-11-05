@@ -70,7 +70,7 @@ _todo: add desc, maybe reword heading_
   * [ICoreWebView2ExperimentalSpellCheckSuggestion::get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestion?view=webview2-1.0.4365-prerelease&preserve-view=true#get_commandid)
   * [ICoreWebView2ExperimentalSpellCheckSuggestion::get_SuggestionText](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestion?view=webview2-1.0.4365-prerelease&preserve-view=true#get_suggestiontext)
 
-* [ICoreWebView2ExperimentalSpellCheckSuggestionCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestioncollectionview?view=webview2-1.0.4365-prerelease&preserve-view=true)<!-- todo: if not new, unlink --><!-- win32 only -->
+* [ICoreWebView2ExperimentalSpellCheckSuggestionCollectionView](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestioncollectionview?view=webview2-1.0.4365-prerelease&preserve-view=true)<!-- win32 only -->
   * [ICoreWebView2ExperimentalSpellCheckSuggestionCollectionView::get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestioncollectionview?view=webview2-1.0.4365-prerelease&preserve-view=true#get_count)
   * [ICoreWebView2ExperimentalSpellCheckSuggestionCollectionView::GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalspellchecksuggestioncollectionview?view=webview2-1.0.4365-prerelease&preserve-view=true#getvalueatindex)
 
