@@ -123,7 +123,7 @@ To examine and modify a flexbox layout:
 
 1. Click the `flex` badge (![flex badge](./flexbox-images/flex-badge.png)).
 
-   The flexbox overlay is displayed in the webpage, without having to hover over the DOM tree:
+   The `flex` badge changes color, to indicate that it's selected.  In the webpage, the flexbox overlay is displayed, without having to hover over the DOM tree:
 
    ![The flex badge selected, and the flexbox overlay](./flexbox-images/flex-badge-selected-in-dom.png)
 
@@ -143,7 +143,8 @@ To examine and modify a flexbox layout:
 
    ![align-items: center](./flexbox-images/align-items-center.png)
 
-1. In the `flex-direction:` section, select the `column` button.
+
+1. In the `flex-direction:` section, select the **Add flex-direction: column** button.
 
    The icons in the **flexbox editor** are context-aware; the icons in the flexbox editor rotate according to the layout direction.
 
@@ -160,9 +161,7 @@ To examine and modify a flexbox layout:
 ## Adjust the color of the flexbox overlay
 <!-- Adjust the flexbox overlay color  https://developer.chrome.com/docs/devtools/css/flexbox#layout -->
 
-You can adjust the color of the flexbox overlay, by using a streamlined version of the **Color Picker**.
-
-Selecting (or clearing) the checkbox next to a flexbox element in the **Layout** tab is the same as selecting (or unselecting) the `flex` badge in the DOM tree: it displays (or hides) the flexbox overlay in the webpage.
+You can adjust the color of the flexbox overlay, such as to make the flexbox overlay easier to see when the flexbox container uses a colored background.
 
 To adjust the color of the flexbox overlay:
 
@@ -185,7 +184,7 @@ To adjust the color of the flexbox overlay:
 
 1. Next to `div.container`, click the **Choose the overlay color for this element** (color swatch) button.
 
-   A streamlined version of the **Color Picker** opens.
+   A color picker opens.
 
 1. Select a color, such as dark blue.
 
@@ -196,9 +195,6 @@ To adjust the color of the flexbox overlay:
 1. Next to `div.container`, select the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
 
    In the DOM tree, the container element is selected.
-
-See also:
-* [Change colors with the Color Picker](./reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 
 
 <!-- ====================================================================== -->
