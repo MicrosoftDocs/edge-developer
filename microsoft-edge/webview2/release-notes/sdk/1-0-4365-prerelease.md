@@ -23,8 +23,8 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 Breaking changes are planned for v159, regarding the WebView2 Runtime.
 
 See:
-* [Upcoming breaking change: Removing the `msAbydosHandwritingAttr` WebView2 browser flag](./156.md#upcoming-breaking-change-removing-the-msabydoshandwritingattr-webview2-browser-flag)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
-* [Upcoming breaking change: Required ACL setup for app-managed WebView2 Fixed Version runtimes on Windows](./156.md#upcoming-breaking-change-required-acl-setup-for-app-managed-webview2-fixed-version-runtimes-on-windows)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
+* [Upcoming breaking change: Removing the `msAbydosHandwritingAttr` WebView2 browser flag](../runtime/156.md#upcoming-breaking-change-removing-the-msabydoshandwritingattr-webview2-browser-flag)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
+* [Upcoming breaking change: Required ACL setup for app-managed WebView2 Fixed Version runtimes on Windows](../runtime/156.md#upcoming-breaking-change-required-acl-setup-for-app-managed-webview2-fixed-version-runtimes-on-windows)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
 
 
 <!-- ====================================================================== -->
