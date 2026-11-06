@@ -93,7 +93,7 @@ Apply the selected correction by assigning its `CommandId` to `SelectedCommandId
 <!-- ====================================================================== -->
 ## Bug fixes
 
-* Deprecated the PPAPI process-kind and process-failure enum values.  The values remain available for compatibility, but are no longer emitted, because WebView2 no longer creates PPAPI processes.<!-- from relnotes script output file Prerelease_SDK_release_notes_158.0.4365.0.md; SDK and Runtime -->
+* Deprecated the PPAPI process-kind and process-failure enum values.  The values remain available for compatibility, but are no longer emitted, because WebView2 no longer creates PPAPI processes.
 
 
 <!-- ====================================================================== -->
