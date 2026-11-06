@@ -358,7 +358,7 @@ Discover other tools that can help you improve your website's performance:
 | **Lighthouse** tool | [Optimize website speed using Lighthouse](../speed/get-started.md) |
 | **Memory** tool | [Fix memory problems](../memory-problems/index.md) |
 | **Performance** tool > **Insights** tab | [Get actionable insights](./reference.md#get-actionable-insights) in _Performance features reference_. |
-| **Rendering** tool | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering-tools/rendering-tool.md) |
+| **Rendering** tool | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../rendering/rendering-tool.md) |
 | **Issues** tool | [Find and fix problems using the Issues tool](../issues/index.md) |
 | **Performance** tool | [View layers information](../performance/reference.md#view-layers-information) in _Performance features reference_ |
 
