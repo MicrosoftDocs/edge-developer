@@ -16,6 +16,13 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Oct. 28,
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 158.0.4365.0 or later; see [Preview Runtime 158.0.4370.1 (Nov. 5, 2026)](../runtime/158.md).
 
+**Detailed contents:**
+* [Breaking changes](#breaking-changes)
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Spell-check suggestions for custom context menus](#spell-check-suggestions-for-custom-context-menus)
+* [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Breaking changes
@@ -34,9 +41,15 @@ The following APIs are in Phase 1: Experimental in Prerelease, and have been add
 
 
 <!-- ------------------------------ -->
-#### `CoreWebView2ContextMenuTarget` class adds members `GetSpellCheckSuggestions` and `HasSpellingError`
+#### Spell-check suggestions for custom context menus
 
-_todo: add desc, maybe reword heading_
+Use these APIs to detect misspelled words, and display spelling corrections in custom WebView2 context menus.
+
+Use the `CoreWebView2ContextMenuTarget.HasSpellingError` property to detect a spelling error.
+
+Use the `CoreWebView2ContextMenuTarget.GetSpellCheckSuggestions` method to asynchronously retrieve a read-only collection of spelling suggestions.  Each spelling suggestion exposes `SuggestionText` and `CommandId`.  When handling `ContextMenuRequested`, set `Handled` to `true` and obtain a deferral before retrieving suggestions asynchronously.
+
+Apply the selected correction by assigning its `CommandId` to `SelectedCommandId` before completing the deferral when the custom menu closes.
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
