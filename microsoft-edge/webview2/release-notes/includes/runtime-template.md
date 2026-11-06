@@ -12,7 +12,7 @@ ms.date: 01/01/2026
 
 Release notes for Microsoft Edge WebView2 Runtime, release date: Mmm. dd, yyyy.
 
-In addition to the following WebView2 Runtime improvements, you can also use the new web platform features from Microsoft Edge nnn; see [Microsoft Edge nnn web platform release notes (Mmm. yyyy)] (../../../web-platform/release-notes/nnn.md).
+In addition to the following WebView2 Runtime improvements, you can also use the new web platform features from Microsoft Edge nnn; see [Microsoft Edge nnn web platform release notes (Mmm. dd, yyyy)] (../../../web-platform/release-notes/nnn.md).
 
 
 <!-- ====================================================================== -->

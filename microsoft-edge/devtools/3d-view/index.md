@@ -112,7 +112,7 @@ You can open the **3D View** tool either in the **Activity Bar** or in the **Qui
 
 
 <!-- ------------------------------ -->
-### Enable WebGPU for development on machines without a hardware GPU
+#### Enable WebGPU for development on machines without a hardware GPU
 
 The **3D View** tool relies on the WebGPU API to access the high-performance hardware GPU.  On machines without a hardware GPU, the workaround is to enable the following flags only in a development environment.
 
