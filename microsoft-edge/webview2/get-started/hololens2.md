@@ -10,7 +10,7 @@ ms.date: 11/09/2026
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
-_snippet from [PR 4007](https://github.com/MicrosoftDocs/edge-developer/pull/4007/changes/e8912e9286b6efd52f3a05f9fc6d7ef2acd820e1) to replace some snippet below:_
+_snippet from [PR 4007](https://github.com/MicrosoftDocs/edge-developer/pull/4007/changes/e8912e9286b6efd52f3a05f9fc6d7ef2acd820e1) to possibly replace some snippet below:_
 
 ```csharp
 using Microsoft.Web.WebView2.Core;
@@ -23,8 +23,8 @@ public async void InitializeWebView(WebView2 webView)
     webView.CoreWebView2.Navigate("https://www.microsoft.com");
 ```
 
-_there are 2 snippets below.  no keywords match._
-* [Add code to hook up the buttons](#add-code-to-hook-up-the-buttons)
+_there are 2 snippets below.  no keywords match:_
+* [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality) > [Add code to hook up the buttons](#add-code-to-hook-up-the-buttons)
 * [Step 8 - Learn about WebView2 events and interactions in Unity](#step-8---learn-about-webview2-events-and-interactions-in-unity)
 
 
@@ -37,12 +37,36 @@ This article is to learn to write your own WebView2 code.  If you want to run a 
 > [!IMPORTANT]
 > WebView2 on Hololens 2 continues to be available.  However, support for WebView2 on Hololens 2 is discontinued; there are no planned bug fixes or content updates, and technical support has ended.  Applications that use WebView2 on Hololens 2 are not guaranteed to continue to work.
 
+**Detailed contents:**
+* [Introduction](#introduction)
+   * [Completed project](#completed-project)
+   * [About HoloLens 2, Unity, Mixed Reality Feature Tool, Mixed Reality Toolkit, and the WebView plugin](#about-hololens-2-unity-mixed-reality-feature-tool-mixed-reality-toolkit-and-the-webview-plugin)
+      * [HoloLens 2](#hololens-2)
+      * [Unity](#unity)
+      * [Mixed Reality Feature Tool (MRFT)](#mixed-reality-feature-tool-mrft)
+      * [Mixed Reality Toolkit (MRTK)](#mixed-reality-toolkit-mrtk)
+      * [The Microsoft Mixed Reality WebView plugin for Unity](#the-microsoft-mixed-reality-webview-plugin-for-unity)
+* [Step 1 - Install Visual Studio](#step-1---install-visual-studio)
+* [Step 2 - Install Unity for HoloLens 2 development](#step-2---install-unity-for-hololens-2-development)
+* [Step 3 - Configure the Unity project for Mixed Reality development](#step-3---configure-the-unity-project-for-mixed-reality-development)
+* [Step 4 - Install the WebView plugin for Unity by using the Mixed Reality Feature Tool](#step-4---install-the-webview-plugin-for-unity-by-using-the-mixed-reality-feature-tool)
+* [Step 5 - Set up the WebView prefab in Unity scene](#step-5---set-up-the-webview-prefab-in-unity-scene)
+* [Step 6 - Test the project](#step-6---test-the-project)
+* [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality)
+   * [Add the input field and buttons](#add-the-input-field-and-buttons)
+   * [Add code to hook up the buttons](#add-code-to-hook-up-the-buttons)
+* [Step 8 - Learn about WebView2 events and interactions in Unity](#step-8---learn-about-webview2-events-and-interactions-in-unity)
+* [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
 WebView2 on HoloLens 2 and the WebView plugin for Unity are both in Preview and are subject to change before general availability. 
 
 WebView2 only works on HoloLens 2 devices running the Windows 11 update. For more information, see [Update HoloLens 2](/hololens/hololens-update-hololens).
 
 For WebView2-enabled 2D applications on HoloLens 2, see [Get started with WebView2 in WinUI 2 (UWP) apps](./winui2.md).
-
 
 In this tutorial, you:
 
