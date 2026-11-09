@@ -10,27 +10,9 @@ ms.date: 11/09/2026
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
-_snippet from [PR 4007](https://github.com/MicrosoftDocs/edge-developer/pull/4007/changes/e8912e9286b6efd52f3a05f9fc6d7ef2acd820e1) to possibly replace some snippet below:_
-
-```csharp
-using Microsoft.Web.WebView2.Core;
-using Microsoft.Web.WebView2.UWP;
-
-public async void InitializeWebView(WebView2 webView)
-{
-    await webView.EnsureCoreWebView2Async();
-    webView.CoreWebView2.Settings.IsScriptEnabled = true;
-    webView.CoreWebView2.Navigate("https://www.microsoft.com");
-```
-
-_there are 2 snippets below.  no keywords match:_
-* [Step 7 - Extending WebView2 functionality](#step-7---extending-webview2-functionality) > [Add code to hook up the buttons](#add-code-to-hook-up-the-buttons)
-* [Step 8 - Learn about WebView2 events and interactions in Unity](#step-8---learn-about-webview2-events-and-interactions-in-unity)
-
-
----
-
 This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.
+
+**Note:** The MR dev experience was deprecated in early 2026.  HL2 will end support on Feb. 28, 2028.
 
 This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
 
@@ -328,11 +310,14 @@ Now that you've reviewed the `WebView` code, let's extend the functionality of t
 
 Now that we have our UI designed, we will now create the code to hook up the buttons.  To do that, we'll create a new script that derives from `Microsoft.MixedReality.WebView`.
 
+<!-- code block copied from (entire file):
+https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/HoloLens2_GettingStarted/HoloLens2GetStartedApp/Assets/WebViewBrowser.cs -->
+
 1. In the **Inspector** window for WebView, click **Add Component**, select **New script**, type **WebViewBrowser**, and then click **Create and add**. Your new component is added to the **Inspector** window.
 
 1. In the **Inspector** window, double-click the `WebViewBrowser` script, to edit the script.
 
-1. Replace the contents of that file with the following code:
+1. Replace the contents of that file (`WebViewBrowser.cs`) with the following code:
 
    ```csharp
    using Microsoft.MixedReality.WebView;
@@ -340,55 +325,112 @@ Now that we have our UI designed, we will now create the code to hook up the but
    using UnityEngine;
    using TMPro;
    using System;
-
-   public class WebViewBrowser : MonoBehaviour
+   
+   using Microsoft.MixedReality.Toolkit.Input;
+   
+   public class WebViewBrowser : MonoBehaviour, IMixedRealityPointerHandler
    {
-      // Declare UI elements: Back button, Go button, and URL input field
-      public Button BackButton;
-      public Button GoButton;
-      public TMP_InputField URLField;
-
-      private void Start()
-      {
-         // Get the WebView component attached to the game object
-         var webViewComponent = gameObject.GetComponent<WebView>();
-         webViewComponent.GetWebViewWhenReady((IWebView webView) =>
-         {
-               // If the WebView supports browser history, enable the Back button
+       // Declare UI elements: back button, go button, and URL input field
+       public Button BackButton;
+       public Button GoButton;
+       public TMP_InputField URLField;
+       public MeshCollider Collider;
+       private IWebView _webView;
+   
+       private void Start()
+       {
+           // Get the WebView component attached to the game object
+           var webViewComponent = gameObject.GetComponent<WebView>();
+           webViewComponent.GetWebViewWhenReady((IWebView webView) =>
+           {
+               _webView = webView;
+   
+               // If the WebView supports browser history, enable the back button
                if (webView is IWithBrowserHistory history)
                {
-                  // Add an event listener for the Back button to navigate back in history
-                  BackButton.onClick.AddListener(() => history.GoBack());
-
-                  // Update the Back button's enabled state based on whether there's any history to go back to
-                  history.CanGoBackUpdated += CanGoBack;
+                   // Add an event listener for the back button to navigate back in history
+                   BackButton.onClick.AddListener(() => history.GoBack());
+   
+                   // Update the back button's enabled state based on whether there's any history to go back to
+                   history.CanGoBackUpdated += CanGoBack;
                }
-
-               // Add an event listener for the Go button to load the URL that was entered in the input field
+   
+               // Add an event listener for the go button to load the URL entered in the input field
                GoButton.onClick.AddListener(() => webView.Load(new Uri(URLField.text)));
-
+   
                // Subscribe to the Navigated event to update the URL input field whenever a navigation occurs
                webView.Navigated += OnNavigated;
-
+   
                // Set the initial value of the URL input field to the current URL of the WebView
                if (webView.Page != null)
                {
-                  URLField.text = webView.Page.AbsoluteUri;
+                   URLField.text = webView.Page.AbsoluteUri;
                }
-         });
-      }
-
-      // Update the URL input field with the new path after navigation
-      private void OnNavigated(string path)
-      {
-         URLField.text = path;
-      }
-
-      // Enable or disable the Back button based on whether there's any history to go back to
-      private void CanGoBack(bool value)
-      {
-         BackButton.enabled = value;
-      }
+           });
+       }
+   
+       // Update the URL input field with the new path after navigation
+       private void OnNavigated(string path)
+       {
+           URLField.text = path;
+       }
+   
+       // Enable or disable the back button based on whether there's any history to go back to
+       private void CanGoBack(bool value)
+       {
+           BackButton.enabled = value;
+       }
+   
+       public void OnPointerDown(MixedRealityPointerEventData eventData)
+       {
+           TranslateToWebViewMouseEvent(eventData, WebViewMouseEventData.EventType.MouseDown);
+       }
+   
+       public void OnPointerUp(MixedRealityPointerEventData eventData)
+       {
+           TranslateToWebViewMouseEvent(eventData, WebViewMouseEventData.EventType.MouseUp);
+       }
+   
+       private void TranslateToWebViewMouseEvent(MixedRealityPointerEventData eventData, WebViewMouseEventData.EventType evenType)
+       {
+           var hitCoord = NormalizeWorldPoint(eventData.Pointer.Result.Details.Point);
+   
+           hitCoord.x *= _webView.Width;
+           hitCoord.y *= _webView.Height;
+   
+           var mouseEventsWebView = _webView as IWithMouseEvents;
+           WebViewMouseEventData mouseEvent = new WebViewMouseEventData
+           {
+               X = (int)hitCoord.x,
+               Y = (int)hitCoord.y,
+               Device = WebViewMouseEventData.DeviceType.Pointer,
+               Type = evenType,
+               Button = WebViewMouseEventData.MouseButton.ButtonLeft,
+               TertiaryAxisDeviceType = WebViewMouseEventData.TertiaryAxisDevice.PointingDevice
+           };
+   
+           mouseEventsWebView.MouseEvent(mouseEvent);
+       }
+   
+       private Vector2 NormalizeWorldPoint(Vector3 worldPoint)
+       {
+           // Convert the world point to our control's local space.
+           Vector3 localPoint = transform.InverseTransformPoint(worldPoint);
+   
+           var boundsSize = Collider.sharedMesh.bounds.size;
+           var boundsExtents = Collider.sharedMesh.bounds.max;
+   
+           // Adjust the point to be based on a 0,0 origin.
+           var uvTouchPoint = new Vector2((localPoint.x + boundsExtents.x), -1.0f * (localPoint.y - boundsExtents.y));
+   
+           // Normalize the point so it can be mapped to the WebView's texture.
+           var normalizedPoint = new Vector2(uvTouchPoint.x / boundsSize.x, uvTouchPoint.y / boundsSize.y);
+   
+           return normalizedPoint;
+       }
+   
+       public void OnPointerClicked(MixedRealityPointerEventData eventData) { }
+       public void OnPointerDragged(MixedRealityPointerEventData eventData) { }
    }
    ```
 
@@ -415,6 +457,8 @@ Continue with the next steps below.
 
 <!-- ====================================================================== -->
 ## Step 8 - Learn about WebView2 events and interactions in Unity
+
+The code in this section is not in the finished Getting Started project in the WebView2Samples repo.
 
 The Microsoft Mixed Reality WebView plugin for Unity provides events for working with the webview.
 
