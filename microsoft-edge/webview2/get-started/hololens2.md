@@ -10,6 +10,26 @@ ms.date: 11/09/2026
 ---
 # Get started with WebView2 in HoloLens 2 Unity apps (Preview)
 
+_snippet from [PR 4007](https://github.com/MicrosoftDocs/edge-developer/pull/4007/changes/e8912e9286b6efd52f3a05f9fc6d7ef2acd820e1) to replace some snippet below:_
+
+```csharp
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.UWP;
+
+public async void InitializeWebView(WebView2 webView)
+{
+    await webView.EnsureCoreWebView2Async();
+    webView.CoreWebView2.Settings.IsScriptEnabled = true;
+    webView.CoreWebView2.Navigate("https://www.microsoft.com");
+```
+
+_there are 2 snippets below.  no keywords match._
+* [Add code to hook up the buttons](#add-code-to-hook-up-the-buttons)
+* [Step 8 - Learn about WebView2 events and interactions in Unity](#step-8---learn-about-webview2-events-and-interactions-in-unity)
+
+
+---
+
 This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.
 
 This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
