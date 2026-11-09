@@ -1,3 +1,13 @@
+---
+title: Get started with WebView2 on HoloLens 2
+description: Get started with WebView2 in HoloLens 2 Unity apps.
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.service: microsoft-edge
+ms.subservice: webview
+ms.date: 11/09/2026
+---
 # Get started with WebView2 on HoloLens 2
 
 To integrate WebView2 into your HoloLens 2 application, follow these steps to ensure your project is configured correctly for the UWP platform.
