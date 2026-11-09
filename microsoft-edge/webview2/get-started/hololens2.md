@@ -12,11 +12,11 @@ ms.date: 11/09/2026
 
 This tutorial is for developers using WebView2 in immersive HoloLens 2 Unity applications.
 
-**Note:** The MR dev experience was deprecated in early 2026.  HL2 will end support on Feb. 28, 2028.
-
 This article is to learn to write your own WebView2 code.  If you want to run a sample first, see [Win32 sample app](../samples/webview2apissample.md) or another sample app article.
 
 > [!IMPORTANT]
+> The Mixed Reality dev experience was deprecated in early 2026.  Support for HoloLens 2 will end on Feb. 28, 2028.
+>
 > WebView2 on Hololens 2 continues to be available.  However, support for WebView2 on Hololens 2 is discontinued; there are no planned bug fixes or content updates, and technical support has ended.  Applications that use WebView2 on Hololens 2 are not guaranteed to continue to work.
 
 **Detailed contents:**
