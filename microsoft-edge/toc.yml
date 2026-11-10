@@ -1548,7 +1548,7 @@
               href: ./webview2/release-notes/index.md
 
               # maint:
-              # list past 10 releases eg 158-149
+              # list past 10 releases eg 159-150
               # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link
             - name: Runtime release notes
@@ -1556,7 +1556,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 158.0.4370.1 (Nov. 5, 2026)
+                - name: Preview Runtime 159.n.nnnn.nn (Mmm. dd, yyyy)
+                  href: ./webview2/release-notes/runtime/159.md
+
+                - name: Runtime 158.n.nnnn.nn (Mmm. dd, yyyy)
                   href: ./webview2/release-notes/runtime/158.md
 
                 - name: Runtime 157.0.4341.42 (Nov. 6, 2026)
@@ -1583,11 +1586,11 @@
                 - name: Runtime 150.0.4078.44 (Jul. 7, 2026)
                   href: ./webview2/release-notes/runtime/150.md
 
-                - name: Runtime 149.0.4022.49 (Jun. 11, 2026)
-                  href: ./webview2/release-notes/runtime/149.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 149.0.4022.49 (Jun. 11, 2026)
+                      href: ./webview2/release-notes/runtime/149.md
+
                     - name: Runtime 148.0.3967.48 (May 11, 2026)
                       href: ./webview2/release-notes/runtime/148.md
 
