@@ -6,16 +6,17 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: webview
-ms.date: 09/28/2026
+ms.date: 11/15/2026
 ---
 # Release notes for the WebView2 Runtime
 
 <!-- maint:
-list past 10 releases eg 158-149
+list past 10 releases eg 159-150
 in toc.yml, add new relnotes pages, move relnotes pages to archive
 in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link -->
 Release notes for recent Runtimes:
-* [Preview Runtime 158.0.4370.1 (Nov. 5, 2026)](./158.md)
+* [Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)](./159.md)
+* [Runtime 158.n.nnnn.nn (Mmm. dd, yyyy)](./158.md)
 * [Runtime 157.0.4341.42 (Nov. 6, 2026)](./157.md)
 * [Runtime 156.0.4314.42 (Oct. 23, 2026)](./156.md)
 * [Runtime 155.0.4283.45 (Oct. 12, 2026)](./155.md)
@@ -24,7 +25,6 @@ Release notes for recent Runtimes:
 * [Runtime 152.0.4191.53 (Aug. 28, 2026)](./152.md)
 * [Runtime 151.0.4129.50 (Aug. 3, 2026)](./151.md)
 * [Runtime 150.0.4078.44 (Jul. 7, 2026)](./150.md)
-* [Runtime 149.0.4022.49 (Jun. 11, 2026)](./149.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
