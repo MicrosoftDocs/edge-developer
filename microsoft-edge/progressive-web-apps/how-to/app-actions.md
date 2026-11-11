@@ -6,22 +6,16 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: pwa
-ms.date: 06/24/2025
+ms.date: 10/27/2026
 ---
 # Enable App Actions on Windows for a PWA
 
 You can author and test an App Action for the App Actions on Windows framework, for a Progressive Web App (PWA) that you've created.  An App Action on Windows is an individual unit of behavior that a Windows app can implement and register.  The App Action can then be accessed from other apps and experiences, seamlessly integrating into user workflows.
 
-An app builds and registers each App Action, and then Windows apps and experiences can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
-
-You can build Windows App Actions to increase discoverability and engagement of your app's features.
-
-See also:
-* [App Actions on Windows Overview](/windows/ai/app-actions/)
-
 **Detailed contents:**
 
-* [Recommended scenarios](#recommended-scenarios)
+* [Introduction](#introduction)
+   * [Recommended scenarios](#recommended-scenarios)
 * [Define App Actions in the action definition manifest](#define-app-actions-in-the-action-definition-manifest)
    * [Properties supported in an action definition manifest](#properties-supported-in-an-action-definition-manifest)
    * [Supported Entity types for App Actions for PWAs](#supported-entity-types-for-app-actions-for-pwas)
@@ -37,6 +31,17 @@ See also:
 * [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary)
 * [Test App Actions for a PWA](#test-app-actions-for-a-pwa)
 * [See also](#see-also)
+
+
+<!-- ====================================================================== -->
+## Introduction
+
+An app builds and registers each App Action, and then Windows apps and experiences can recommend registered App Actions to the user at contextually relevant times and locations within the user's workflow.
+
+You can build Windows App Actions to increase discoverability and engagement of your app's features.
+
+See also:
+* [App Actions on Windows Overview](/windows/ai/app-actions/)
 
 
 <!-- ------------------------------ -->
@@ -284,12 +289,6 @@ To package your PWA as a Microsoft Store PWA:
 
 1. Set the initial availability of each of the app actions to `false`, as described in [Set initial availability](/windows/ai/app-actions/actions-availability#set-initial-availability) in _Toggle availability of an App Action for Windows_.
 
-   Before publishing your package, we recommend the above step.  If you don't set the initial availability of the app action to `false`, your action will only work if the user manually goes to `edge://flags` in Microsoft Edge and then enables the feature flag `#edge-app-actions-on-windows-for-web-apps`.
-
-   Setting the initial availability to `false` is needed because Microsoft Edge's support of App Actions on Windows in PWAs is controlled by the feature flag `#edge-app-actions-on-windows-for-web-apps`, and is disabled by default, because this feature is currently in Developer Trial.
-
-   When the feature flag `#edge-app-actions-on-windows-for-web-apps` is officially rolled out (later in 2025),<!-- todo: update after rolled out --> Microsoft Edge will automatically switch the actions that you defined in the action definition manifest file from `Disabled` to `Enabled`, allowing end users to utilize your app's actions without requiring any further changes on your part.
-
 1. Publish your PWA, as described in [Publish a PWA to the Microsoft Store](/microsoft-edge/progressive-web-apps-chromium/how-to/microsoft-store).
 
 
@@ -373,10 +372,6 @@ To test App Actions for your PWA:
 1. Make sure Microsoft Edge is updated to the latest version, and install your PWA successfully; see [Package a store PWA in Edge Stable](#package-a-store-pwa-in-edge-stable) or [Package a store PWA in Edge Canary](#package-a-store-pwa-in-edge-canary), above.
 
 1. Launch Edge Canary or Edge Stable (whichever channel you installed the PWA on).
-
-1. Go to `edge://flags`, search for **App Actions**, and locate the entry **Enable App Actions on Windows for web apps**.  (The flag name is `#edge-app-actions-on-windows-for-web-apps`.)
-
-1. Change the status to **Enabled**, and then click the **Restart** button in the lower right.
 
 1. Launch your PWA.
 

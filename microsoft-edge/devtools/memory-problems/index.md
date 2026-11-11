@@ -39,7 +39,7 @@ To find memory issues that affect page performance, including memory leaks, memo
 | Spot frequent garbage collections. | Microsoft Edge Browser Task Manager, or **Performance** tool > **Memory** checkbox | [Spot frequent garbage collections (Microsoft Edge Browser Task Manager, Performance tool's Memory checkbox)](#spot-frequent-garbage-collections-microsoft-edge-browser-task-manager-performance-tools-memory-checkbox), below. |
 | Inspect the contents of the memory used by a webpage. | **Memory** tool > **Heap snapshot** | [Record heap snapshots using the Memory tool ("Heap snapshot" profiling type)](./heap-snapshots.md) |
 | Find out which JavaScript objects get created over a period of time, to isolate memory leaks. | **Memory** tool > **Allocations on timeline** | [Use Allocation instrumentation on timeline ("Allocations on timeline" profiling type)](./allocation-profiler.md) |
-| Find out which JavaScript functions allocate memory over a period of time. This profile type has minimal performance overhead and can be used for long-running operations. | **Memory** tool > **Allocation sampling** | [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering-tools/js-runtime.md) |
+| Find out which JavaScript functions allocate memory over a period of time. This profile type has minimal performance overhead and can be used for long-running operations. | **Memory** tool > **Allocation sampling** | [Speed up JavaScript runtime ("Allocation sampling" profiling type)](../rendering/js-runtime.md) |
 | Find DOM tree memory leaks. | **Memory** tool > **Detached elements** | [Debug DOM memory leaks ("Detached elements" profiling type)](./dom-leaks-memory-tool-detached-elements.md) |
 
 

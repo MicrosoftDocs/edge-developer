@@ -216,7 +216,7 @@ Auto-connecting to an already running Edge instance is useful:
 <!-- ------------------------------ -->
 #### Step 1: Enable remote debugging in Edge
 
-There are have two options:
+There are two options:
 
 **Option A:** Start Microsoft Edge with the remote debugging flag:
 
