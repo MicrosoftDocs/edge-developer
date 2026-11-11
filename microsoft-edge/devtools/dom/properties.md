@@ -82,7 +82,7 @@ To view an element's own properties:
 
 1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
 
-   The **Properties** tab opens, displaying properties for the `<div class="box" id="own">` element:
+   The **Properties** tab opens, displaying properties for the `<div class="box" id="own">` element.  The element's own properties are displayed first in the list, in bold font:
 
    ![Own properties](./properties-images/own-properties.png)
 
@@ -95,9 +95,11 @@ The **Properties** tab evaluates accessors on built-in elements and displays the
 
 To find the origin of an inherited property, expand an object, then its `[[Prototype]]`, then the nested `[[Prototype]]`, and so on.
 
-_todo: selecting the `<html>` node or `<input>` node and then clicking the right-pointing expander triangle doesn't expand to show subnodes_
+_todo: re-test steps & create pngs; selecting the `<html>` node or `<input>` node and then clicking the right-pointing expander triangle didn't expand to show subnodes_
 
 To find the origin of an inherited property:
+
+_todo: resume here, testing steps/pngs:_
 
 1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
 
@@ -109,11 +111,7 @@ To find the origin of an inherited property:
 
    The **Properties** tab opens, displaying properties for the element.
 
-1. Click a right-pointing expander triangle.
-
-1. In the DOM tree, select the `<html>` element.
-
-1. In the **Properties** tab, click a right-pointing expander triangle.
+1. Click the right-pointing expander triangle next to the `attributeStyleMap` property.<!-- todo: system result, colon -->
 
    ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png) _todo: show expanded_
 
@@ -123,7 +121,7 @@ To find the origin of an inherited property:
 
    Prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
 
-   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: show expanded_
+   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: show expanded - maybe remove the temp upstream png & edge png_
 
    ![Prototype-specific properties, in Chrome](./properties-images/prototype-specific-properties-chrome-temp.png) _todo: remove_
 
@@ -183,7 +181,7 @@ The **Properties** tab in the **Elements** tool shows various kinds of propertie
 #### Simple properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#simple-properties -->
 
-Simple properties are `<name>: <value>` pairs.
+Simple properties have primitive values, such as strings, booleans, or numbers.
 
 To display an element's simple properties:
 
@@ -195,9 +193,7 @@ To display an element's simple properties:
 
 1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
 
-   Simple properties are shown in bold text:
-
-   ![Simple properties](./properties-images/simple-properties.png)
+   ![Simple properties](./properties-images/simple-properties.png) _todo: there are many more simple properties in this screenshot, highlight more per [cmt](https://github.com/MicrosoftDocs/edge-developer/pull/3857/changes#paneldiscussion_r4456566052)_
 
 
 <!-- ------------------------------ -->
@@ -225,7 +221,7 @@ To display details of a collapsible property (an object or array):
 1. Click the expander triangle.
 
 See also:
-* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_, in Chrome docs.<!-- todo later: update downstream article, link to local doc -->
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_, in Chrome docs.<!--todo later: update downstream article, link to local doc, ab#65219458 -->
 
 
 <!-- ------------------------------ -->
@@ -243,8 +239,6 @@ To select the DOM tree node that corresponds to a property that has a link:
    DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<div class="box" id="objects">` is selected.
 
 1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
-
-   Collapsible properties are shown in bold text, and have an expander triangle:
 
    ![Link to the head DOM node](./properties-images/head-dom-node-link.png) _todo: show expanded, when expander works_
 
@@ -284,8 +278,8 @@ To view an element's own and inherited properties:
 #### Enumerable and non-enumerable properties
 <!-- https://developer.chrome.com/docs/devtools/dom/properties#enumerable-and-non-enumerable -->
 
-* Enumerable properties are displayed as colored, bold text.
-* Non-enumerable properties are displayed as gray, bold text.
+* Enumerable properties are displayed as colored text.
+* Non-enumerable properties are displayed as gray text.
 
 You can iterate over the enumerable properties by using a `for … in` loop or the `Object.keys()` method.
 
@@ -303,8 +297,8 @@ To view an element's enumerable and non-enumerable properties:
 
    ![Enumerable and non-enumerable properties](./properties-images/enumerable-and-non-enumerable-properties.png)
 
-   * Enumerable properties are displayed as colored, bold text.
-   * Non-enumerable properties are displayed as gray, bold text.
+   * Enumerable properties are displayed as colored text.
+   * Non-enumerable properties are displayed as gray text.
 
 
 <!-- ------------------------------ -->
@@ -328,7 +322,7 @@ To view an element's methods:
    ![Element's method](./properties-images/method.png)
 
 See also:
-* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_, in Chrome docs.<!--todo later: update downstream article, link to local doc -->
+* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_, in Chrome docs.<!--todo later: update downstream article, link to local doc, ab#65219398 -->
 
 
 <!-- ====================================================================== -->
@@ -336,8 +330,8 @@ See also:
 <!-- todo: all links in article -->
 
 Chrome docs:
-* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_.<!--todo later: update downstream article, link to local doc -->
-* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo later: update downstream article, link to local doc -->
+* [Inspect object properties](https://developer.chrome.com/docs/devtools/console/reference#inspect-object-properties) in _Console features reference_.<!--todo later: update downstream article, link to local doc, ab#65219458 -->
+* [Inspect functions](https://developer.chrome.com/docs/devtools/console/reference#inspect-functions) in _Console features reference_.<!--todo later: update downstream article, link to local doc, ab#65219398 -->
 
 GitHub:
 * [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) - demo.
