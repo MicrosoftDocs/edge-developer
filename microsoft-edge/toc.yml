@@ -581,6 +581,9 @@
                       href: ./devtools/dom/index.md
                       displayName: Elements tool
 
+                    - name: View the properties of DOM objects
+                      href: ./devtools/dom/properties.md
+
                     - name: Badges reference
                       href: ./devtools/elements/badges.md
                       displayName: Elements tool
