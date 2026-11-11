@@ -236,19 +236,15 @@ This approach requires using a non-default user data directory.
 <!-- ---------- -->
 ###### Step A1: Enable remote debugging in Edge
 
-To enable remote debugging in Edge, start Microsoft Edge with the remote debugging flag:
+To enable remote debugging in Edge, start Microsoft Edge with the remote debugging flag, and a non-default user data directory:
 
-`msedge.exe --remote-debugging-port=9222`
+`msedge.exe --remote-debugging-port=9222 --user-data-dir="C:\temp\edge-debug"`
 
 
 <!-- ---------- -->
 ###### Step A2: Configure the MCP server
 
-To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to your Microsoft Edge user data directory.  These examples use the Edge Stable channel.
-
-For `--user-data-dir`, use the same, non-default user data directory that you used when launching the browser.
-
-##### [Windows](#tab/windows/)
+To configure the Model-Context-Protocol (MCP) server, use `--autoConnect` combined with `--user-data-dir` pointing to the directory that you specified in the previous step.  For `--user-data-dir`, use the same, non-default user data directory that you used when launching the browser.
 
 ```json
 {
@@ -267,46 +263,6 @@ For `--user-data-dir`, use the same, non-default user data directory that you us
 }
 ```
 
-##### [macOS](#tab/macos/)
-
-```json
-{
-  "servers": {
-    "chrome-devtools": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest",
-        "--autoConnect",
-        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per option A
-      ]
-    }
-  }
-}
-```
-
-##### [Linux](#tab/linux/)
-
-```json
-{
-  "servers": {
-    "chrome-devtools": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest",
-        "--autoConnect",
-        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per option A
-      ]
-    }
-  }
-}
-```
-
----
-
 
 <!-- ---------- -->
 ###### Step A3: Test your setup
@@ -316,43 +272,6 @@ Make sure Microsoft Edge is running, then enter the following prompt in your Mod
 `Navigate to https://contoso.com and take a screenshot`
 
 The MCP server should connect to your running Edge instance and execute the command.
-
-
-<!-- ---------- -->
-###### User data directory for each Edge channel
-
-Use the appropriate `--user-data-dir` value for your channel.
-
-These are default locations.  Paths may vary based on user configuration, version, or group policies.
-
-##### [Windows](#tab/windows/)
-
-| Channel | Default Path |
-|---|---|
-| Stable | `%LOCALAPPDATA%\Microsoft\Edge\User Data` |
-| Beta | `%LOCALAPPDATA%\Microsoft\Edge Beta\User Data` |
-| Dev | `%LOCALAPPDATA%\Microsoft\Edge Dev\User Data` |
-| Canary | `%LOCALAPPDATA%\Microsoft\Edge SxS\User Data` |
-
-##### [macOS](#tab/macos/)
-
-| Channel | Default Path |
-|---|---|
-| Stable | `~/Library/Application Support/Microsoft Edge` |
-| Beta | `~/Library/Application Support/Microsoft Edge Beta` |
-| Dev | `~/Library/Application Support/Microsoft Edge Dev` |
-| Canary | `~/Library/Application Support/Microsoft Edge Canary` |
-
-##### [Linux](#tab/linux/)
-
-| Channel | Default Path |
-|---|---|
-| Stable | `~/.config/microsoft-edge` |
-| Beta | `~/.config/microsoft-edge-beta` |
-| Dev | `~/.config/microsoft-edge-dev` |
-| Canary | n/a; there isn't a Canary channel for Linux. |
-
----
 
 
 <!-- ------------------------------ -->
@@ -419,7 +338,7 @@ For `--user-data-dir`, use the default `user-data-dir`.  This is required, for `
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/Library/Application Support/Microsoft Edge"  // todo: review per option B
+        "--user-data-dir=~/Library/Application Support/Microsoft Edge"
       ]
     }
   }
@@ -438,7 +357,7 @@ For `--user-data-dir`, use the default `user-data-dir`.  This is required, for `
         "-y",
         "chrome-devtools-mcp@latest",
         "--autoConnect",
-        "--user-data-dir=~/.config/microsoft-edge"  // todo: review per option B
+        "--user-data-dir=~/.config/microsoft-edge"
       ]
     }
   }
