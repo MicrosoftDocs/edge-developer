@@ -28,11 +28,11 @@ See [Prerelease testing using preview channels of Microsoft Edge](../../how-to/p
 
 <!-- / end of remove paragraphs -->
 
-In addition to the following WebView2 Runtime improvements, you can also use the new web platform features from Microsoft Edge nnn; see [Microsoft Edge nnn web platform release notes (Mmm. yyyy)] (../../../web-platform/release-notes/nnn.md).
+In addition to the following WebView2 Runtime improvements, you can also use the new web platform features from Microsoft Edge nnn; see [Microsoft Edge nnn web platform release notes (Mmm. dd, yyyy)] (../../../web-platform/release-notes/nnn.md).
 
 
 <!-- ====================================================================== -->
-#### Bug fixes
+## Bug fixes
 
 * Fixed behavior.  ([Issue #] ())
 

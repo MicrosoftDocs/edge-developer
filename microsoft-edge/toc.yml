@@ -35,6 +35,10 @@
           # toc.yml - add new relnotes page, move a relnotes page to archive
           # /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page
 
+        - name: Microsoft Edge 158
+          href: ./web-platform/release-notes/158.md
+          displayName: Microsoft Edge 158 web platform release notes (Nov. 19, 2026)  # page title
+
         - name: Microsoft Edge 157
           href: ./web-platform/release-notes/157.md
           displayName: Microsoft Edge 157 web platform release notes (Nov. 5, 2026)  # page title
@@ -71,13 +75,13 @@
           href: ./web-platform/release-notes/149.md
           displayName: Microsoft Edge 149 web platform release notes (Jun. 2026)  # page title
 
-        - name: Microsoft Edge 148
-          href: ./web-platform/release-notes/148.md
-          displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
-
         # keep 10 items above
         - name: Archive
           items:
+            - name: Microsoft Edge 148
+              href: ./web-platform/release-notes/148.md
+              displayName: Microsoft Edge 148 web platform release notes (May 2026)  # page title
+
             - name: Microsoft Edge 147
               href: ./web-platform/release-notes/147.md
               displayName: Microsoft Edge 147 web platform release notes (Apr. 2026)  # page title
@@ -569,12 +573,16 @@
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: Inspect, edit, and debug HTML and CSS with the Elements tool
-                  href: ./devtools/elements-tool/elements-tool.md
+                  href: ./devtools/elements/elements-tool.md
 
                 - name: DOM
                   items:
                     - name: Get started viewing and changing the DOM
                       href: ./devtools/dom/index.md
+                      displayName: Elements tool
+
+                    - name: Badges reference
+                      href: ./devtools/elements/badges.md
                       displayName: Elements tool
 
                 - name: CSS
@@ -589,6 +597,10 @@
 
                     - name: Inspect CSS Grid layouts
                       href: ./devtools/css/grid.md
+                      displayName: Elements tool
+
+                    - name: Inspect and debug CSS flexbox layout
+                      href: ./devtools/css/flexbox.md
                       displayName: Elements tool
 
                     - name: Style editing for CSS-in-JS frameworks
@@ -735,7 +747,7 @@
                   displayName: Performance tool, Get started analyzing runtime performance  # old title
 
                 - name: Troubleshooting common performance issues  # no longer found
-                  href: ./devtools/rendering-tools/index.md
+                  href: ./devtools/rendering/index.md
                   displayName: Performance tool, Analyze runtime performance  # old title
 
                 - name: Optimize website speed using Lighthouse  # = Lighthouse > Optimize web speed
@@ -788,7 +800,7 @@
                   displayName: Memory tool
 
                 - name: Speed up JavaScript runtime ("Allocation sampling" profiling type)
-                  href: ./devtools/rendering-tools/js-runtime.md
+                  href: ./devtools/rendering/js-runtime.md
                   displayName: Memory tool
 
                 - name: Debug DOM memory leaks ("Detached elements" profiling type)
@@ -898,8 +910,8 @@
 # -----------------------------------------------------------------------------
                 - name: Media tool
                   items:
-                    - name: View and debug media players information
-                      href: ./devtools/media-panel/index.md
+                    - name: View and debug media player information (Media tool)
+                      href: ./devtools/media/index.md
                       displayName: Media tool
 # -----------------------------------------------------------------------------
                 - name: Memory inspector tool
@@ -947,7 +959,7 @@
                 - name: Rendering tool
                   items:
                     - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
-                      href: ./devtools/rendering-tools/rendering-tool.md
+                      href: ./devtools/rendering/rendering-tool.md
 
                     - name: Emulate dark or light schemes in the rendered page
                       href: ./devtools/accessibility/preferred-color-scheme-simulation.md
@@ -1536,7 +1548,7 @@
               href: ./webview2/release-notes/index.md
 
               # maint:
-              # list past 10 releases eg 156-147
+              # list past 10 releases eg 158-149
               # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/runtime/index.md, add new relnotes link, remove earliest relnotes link
             - name: Runtime release notes
@@ -1544,7 +1556,10 @@
                 - name: Release notes for the WebView2 Runtime
                   href: ./webview2/release-notes/runtime/index.md
 
-                - name: Preview Runtime 157.0.4341.10 (Oct. 22, 2026)
+                - name: Preview Runtime 158.0.4370.1 (Nov. 5, 2026)
+                  href: ./webview2/release-notes/runtime/158.md
+
+                - name: Runtime 157.0.4341.42 (Nov. 6, 2026)
                   href: ./webview2/release-notes/runtime/157.md
 
                 - name: Runtime 156.0.4314.42 (Oct. 23, 2026)
@@ -1571,14 +1586,14 @@
                 - name: Runtime 149.0.4022.49 (Jun. 11, 2026)
                   href: ./webview2/release-notes/runtime/149.md
 
-                - name: Runtime 148.0.3967.48 (May 11, 2026)
-                  href: ./webview2/release-notes/runtime/148.md
-
-                - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
-                  href: ./webview2/release-notes/runtime/147.md
-
                 - name: Archive
                   items:
+                    - name: Runtime 148.0.3967.48 (May 11, 2026)
+                      href: ./webview2/release-notes/runtime/148.md
+
+                    - name: Runtime 147.0.3912.50 (Apr. 13, 2026)
+                      href: ./webview2/release-notes/runtime/147.md
+
                     - name: Runtime 146.0.3856.49 (Mar. 16, 2026)
                       href: ./webview2/release-notes/runtime/146.md
 
@@ -1789,7 +1804,7 @@
                       href: ./webview2/release-notes/runtime/76.md
 
               # maint:
-              # list past 10 potential Release SDK releases eg 155-146
+              # list past 10 potential Release SDK releases eg 158-149
               # in toc.yml, add new relnotes pages, move relnotes pages to archive
               # in /webview2/release-notes/sdk/index.md, add new relnotes links, remove earliest relnotes links
               # same order as https://www.nuget.org/packages/Microsoft.Web.WebView2 > Load more
@@ -1797,6 +1812,11 @@
               items:
                 - name: Release notes for WebView2 SDKs
                   href: ./webview2/release-notes/sdk/index.md
+
+                - name: Prerelease SDK 1.0.4365-prerelease, for Runtime 158 (Oct. 28, 2026)
+                  href: ./webview2/release-notes/sdk/1-0-4365-prerelease.md
+
+                  # 157
 
                 - name: Release SDK 1.0.4314.35, for Runtime 156 (Oct. 23, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4314-35.md
@@ -1828,23 +1848,23 @@
                 - name: Prerelease SDK 1.0.4015-prerelease, for Runtime 149 (May 11, 2026)
                   href: ./webview2/release-notes/sdk/1-0-4015-prerelease.md
 
-                - name: Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3967-48.md
-                - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3965-prerelease.md
-
-                - name: Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3912-50.md
-                - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3908-prerelease.md
-
-                - name: Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3856-49.md
-                - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
-                  href: ./webview2/release-notes/sdk/1-0-3848-prerelease.md
-
                 - name: Archive  # keep Runtime nnn pair together when moving to archive
                   items:
+                    - name: Release SDK 1.0.3967.48, for Runtime 148 (May 11, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3967-48.md
+                    - name: Prerelease SDK 1.0.3965-prerelease, for Runtime 148 (Apr. 13, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3965-prerelease.md
+
+                    - name: Release SDK 1.0.3912.50, for Runtime 147 (Apr. 13, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3912-50.md
+                    - name: Prerelease SDK 1.0.3908-prerelease, for Runtime 147 (Mar. 16, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3908-prerelease.md
+
+                    - name: Release SDK 1.0.3856.49, for Runtime 146 (Mar. 16, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3856-49.md
+                    - name: Prerelease SDK 1.0.3848-prerelease, for Runtime 146 (Feb. 16, 2026)
+                      href: ./webview2/release-notes/sdk/1-0-3848-prerelease.md
+
                     - name: Release SDK 1.0.3800.47, for Runtime 145 (Feb. 16, 2026)
                       href: ./webview2/release-notes/sdk/1-0-3800-47.md
                     - name: Prerelease SDK 1.0.3796-prerelease, for Runtime 145 (Jan. 19, 2026)

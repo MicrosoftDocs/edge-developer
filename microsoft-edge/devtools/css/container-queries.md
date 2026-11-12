@@ -42,7 +42,7 @@ See also:
 An element that's defined as a CSS container query can have any of the following badges next to it in the DOM tree in the **Elements** tool:
 * No container badge, for a name-only container, such as `container-name: named-container-a;`.
 * No container badge, for a style container, where the contained element has a `@container style()` CSS container query.
-* The **inline-size** container badge ![inline-size badge.](./container-queries-images/inline-size-badge.png), for `container-type: inline-size`.
+* The **inline-size** container badge ![inline-size badge](./container-queries-images/inline-size-badge.png), for `container-type: inline-size`.
 * The **size** container badge ![size badge](./container-queries-images/size-badge.png), for `container-type: size`.
 
 Clicking the **inline-size** badge or **size** badge displays (or hides) a dotted-line overlay of the container and its descendants.

@@ -308,7 +308,7 @@ Optimize pages by using the following techniques:
 See also:
 * [Performance tool: Analyze your website's performance](../../devtools/performance/overview.md)
 * [Analyze runtime performance (tutorial)](../../devtools/performance/index.md)
-* [Troubleshooting common performance issues](../../devtools/rendering-tools/index.md)
+* [Troubleshooting common performance issues](../../devtools/rendering/index.md)
 * [Optimize website speed using Lighthouse](../../devtools/speed/get-started.md)
 
 

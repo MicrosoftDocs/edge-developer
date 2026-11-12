@@ -82,7 +82,7 @@ The Color Picker is a GUI in the **Elements** panel for changing `color` and `ba
 Chromium issue [#963183](https://crbug.com/963183)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ------------------------------ -->
@@ -99,7 +99,7 @@ In Microsoft Edge 83, you can now display the properties of the currently select
 Chromium issue [#1050999](https://crbug.com/1050999)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements/elements-tool.md)
 
 
 <!-- ------------------------------ -->
