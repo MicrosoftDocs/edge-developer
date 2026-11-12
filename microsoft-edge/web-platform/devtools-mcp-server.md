@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 06/10/2026
+ms.date: 11/11/2026
 ---
 # Let agents inspect your site and WebView2 app with Chrome DevTools MCP
 
@@ -28,7 +28,6 @@ Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such 
       * [Step B1: Enable remote debugging in Edge](#step-b1-enable-remote-debugging-in-edge)
       * [Step B2: Configure the MCP server](#step-b2-configure-the-mcp-server)
       * [Step B3: Test your setup](#step-b3-test-your-setup)
-      * [User data directory for each Edge channel](#user-data-directory-for-each-edge-channel-1)
 * [Auto-connect to a WebView2 instance](#auto-connect-to-a-webview2-instance)
    * [Step 1: Enable remote debugging for WebView2](#step-1-enable-remote-debugging-for-webview2)
       * [By using WebView2Utilities](#by-using-webview2utilities)
