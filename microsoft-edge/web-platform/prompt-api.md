@@ -126,8 +126,11 @@ _todo: possibly add a section about watermarking here_
 
 An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the model by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
-The model is unavailable if the **On-device AI** option is disabled under **Settings** > **Copilot and AI** or if an enterprise policy blocks the model download _todo: can we link to the relevant policy_.
+The model is unavailable in the following conditions:
 
+* The **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
+* The [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
+* The device doesn't meet hardware, disk space, or network requirements.
 
 <!-- ------------------------------ -->
 #### Consideration for Edge Canary, Dev, and Beta
