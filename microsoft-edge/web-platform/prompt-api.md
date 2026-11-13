@@ -155,13 +155,15 @@ To test the Prompt API locally in Edge Canary or Dev:
 
 1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags/`.
 
-1. In the search box, at the top of the page, enter **Prompt API for on-device language model**.
+1. In the search box, at the top of the page, enter **Prompt API**.
 
    The page is filtered to show the matching flag.
 
-1. Under **Prompt API for on-device language model**, select **Enabled**:
+1. Under **Prompt API**, select **Enabled**:
 
    ![Flags page of browser](./prompt-api-images/flags-prompt-api.png)
+
+   _todo: update image, the flag name has changed_
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
