@@ -177,7 +177,7 @@ To use the Decisions API, first define the questions that you want the model to 
 | `id` | A string that identifies the question.  The result of the API is keyed by question `id`, so each `id` must be unique. |
 | `prompt` | A string that describes the question to answer. |
 | `type` | The type of the question: `"boolean"`, `"choice"`, or `"score"`. |
-| `options` | An array of the possible answers.  Each option is an object that has a `label` string and a `description` string.  Required for `"choice"` questions, optional for `"score"` questions _todo: verify if this is strictly required_, and not used for `"boolean"` questions. |
+| `options` | An array of the possible answers.  Each option is an object that has a `label` string and a `description` string.  Required for `"choice"` questions, optional for `"score"` questions (which default to a scale of 1 through 5 with built-in descriptions), and not used for `"boolean"` questions. |
 
 The `options` descriptions help the model understand what each option means.
 
@@ -227,7 +227,7 @@ The Decisions API works best with a limited number of options per question.  To 
 <!-- ---------- -->
 ###### Score questions
 
-Use a `score` question to rate the text along an ordered scale.  Provide the scale by using the `options` property, ordered from the lowest to the highest value:
+Use a `score` question to rate the text along an ordered scale.  Provide the scale by using the `options` property, ordered from the lowest to the highest value.  The `options` property is optional: when you omit it, the scale defaults to 1 through 5, with built-in descriptions.  The following example provides a custom scale:
 
 ```javascript
 const questions = [
@@ -246,7 +246,7 @@ const questions = [
 ];
 ```
 
-When all of the option labels are numbers, the resulting score is calculated from the numeric labels.  Otherwise, the resulting score is calculated from the position of the options on the scale, starting at 1._todo: verify if options is optional or mandatory_
+When all of the option labels are numbers, the resulting score is calculated from the numeric labels.  Otherwise, the resulting score is calculated from the position of the options on the scale, starting at 1.
 
 
 <!-- ------------------------------ -->
@@ -254,10 +254,10 @@ When all of the option labels are numbers, the resulting score is calculated fro
 
 The Decisions API can only be used if the device supports running the model, and after the model and model runtime have been downloaded by Microsoft Edge.
 
-To check if the API can be used, use the `availability()` method:
+To check if the API can be used, use the `availability()` method.  Pass the `questions` option to also validate the schema of your questions.  You can also call `availability()` with no arguments:
 
 ```javascript
-const availability = await DecisionModel.availability({ questions });`todo:verify if {questions} can be used here.`
+const availability = await DecisionModel.availability({ questions });
 
 if (availability == "unavailable") {
   // The model is not available.
@@ -290,7 +290,7 @@ The available options are listed below:
 | `questions` | An array of questions that the model answers about the text.  See [Define the questions](#define-the-questions), above. |
 | `context` | A string that contains instructions that apply to all of the questions.  See [Provide the model with context](#provide-the-model-with-context), below. |
 | `monitor` | A function that's used to monitor the progress of the model download.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below. |
-| `signal` | An `AbortSignal` that's used to destroy the session.  See [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller), below._todo:verify if API supports signal_ |
+| `signal` | An `AbortSignal` that's used to cancel the creation of the session, or to destroy the session after it's created.  See [Destroy a session by using an AbortController](#destroy-a-session-by-using-an-abortcontroller), below. |
 
 
 <!-- ---------- -->
@@ -351,6 +351,17 @@ const result = await session.decide(
 
 // Use the result.
 console.log(result);
+```
+
+To cancel a decision call that's in progress, pass an `AbortSignal` by using the `signal` option of the `decide()` method.  Cancelling a decision call doesn't destroy the session:
+
+```javascript
+const controller = new AbortController();
+
+const resultPromise = session.decide(ticketText, { signal: controller.signal });
+
+// Later, cancel this decision call only.
+controller.abort();
 ```
 
 
@@ -421,7 +432,7 @@ Destroy the session to let the browser know that you don't need the model anymor
 
 You can destroy a session in two different ways:
 * By using the `destroy()` method.
-* By using an `AbortController`._todo: verify if the API supports this_
+* By using an `AbortController`.
 
 
 <!-- ---------- -->
@@ -455,6 +466,17 @@ const session = await DecisionModel.create({
 
 // Later, such as when the user interacts with the UI, destroy the session by
 // calling the abort() function of the AbortController object.
+controller.abort();
+```
+
+The `signal` option is also supported by the `session.decide()` method, to cancel a single decision call without destroying the session:
+
+```javascript
+const controller = new AbortController();
+
+const resultPromise = session.decide(ticketText, { signal: controller.signal });
+
+// Later, cancel this decision call only.
 controller.abort();
 ```
 
