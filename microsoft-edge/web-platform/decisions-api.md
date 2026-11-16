@@ -177,7 +177,7 @@ To use the Decisions API, first define the questions that you want the model to 
 | `id` | A string that identifies the question.  The result of the API is keyed by question `id`, so each `id` must be unique. |
 | `prompt` | A string that describes the question to answer. |
 | `type` | The type of the question: `"boolean"`, `"choice"`, or `"score"`. |
-| `options` | An array of the possible answers.  Each option is an object that has a `label` string and a `description` string.  Required for `"choice"` questions, optional for `"score"` questions (which default to a scale of 1 through 5 with built-in descriptions), and not used for `"boolean"` questions. |
+| `options` | An array of the possible answers.  Each option is an object that has a `label` string and an optional `description` string.  Required for `"choice"` questions, optional for `"score"` questions (which default to a scale of 1 through 5 with built-in descriptions), and not used for `"boolean"` questions. |
 
 The `options` descriptions help the model understand what each option means.
 
@@ -304,7 +304,7 @@ You can follow the progress of the model download by using the `monitor` option.
 const session = await DecisionModel.create({
   questions,
   monitor: m => {
-    // Use the monitor object argument to add an listener for the
+    // Use the monitor object argument to add a listener for the
     // downloadprogress event.
     m.addEventListener("downloadprogress", event => {
       // The event is an object with the loaded and total properties.
