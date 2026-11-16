@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 10/19/2026
+ms.date: 11/13/2026
 ---
 <!-- Copyright Sofia Emelianova
 
@@ -95,11 +95,7 @@ The **Properties** tab evaluates accessors on built-in elements and displays the
 
 To find the origin of an inherited property, expand an object, then its `[[Prototype]]`, then the nested `[[Prototype]]`, and so on.
 
-_todo: re-test steps & create pngs; selecting the `<html>` node or `<input>` node and then clicking the right-pointing expander triangle didn't expand to show subnodes_
-
 To find the origin of an inherited property:
-
-_todo: resume here, testing steps/pngs:_
 
 1. Open a webpage, such as the [Properties tab in the Elements tool](https://microsoftedge.github.io/Demos/devtools-properties/) demo.
 
@@ -107,23 +103,17 @@ _todo: resume here, testing steps/pngs:_
 
    DevTools opens, with the **Elements** tool selected.  In the DOM tree, the element `<input class="box" id="inherited" size="10" value="size is inherited">` is selected.
 
-1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select **Properties** from the dropdown menu.
+1. Next to the **Styles** tab, click the **Properties** tab.  If the **Properties** tab isn't displayed, click the **More tabs** (![More tabs icon](./properties-images/more-tabs-icon.png)) button, and then select the **Properties** menu item.
 
    The **Properties** tab opens, displaying properties for the element.
 
-1. Click the right-pointing expander triangle next to the `attributeStyleMap` property.<!-- todo: system result, colon -->
+1. Next to the `attributeStyleMap` property, click the right-pointing expander triangle:
 
-   ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png) _todo: show expanded_
-
-   ![Tracing the size property up to its getter on the prototype chain, in Chrome](./properties-images/find-origin-inherited-property-chrome-temp.png) _todo: remove_
+   ![Tracing the size property up to its getter on the prototype chain](./properties-images/find-origin-inherited-property.png)
 
    In this example, you can trace where the inherited `size` property came from, by locating the original own (bold) property on the prototype chain together with the corresponding getter.
 
    Prototype-specific properties are shown only on prototypes, not on objects.  This makes it easier to diagnose objects.
-
-   ![Prototype-specific properties](./properties-images/prototype-specific-properties.png) _todo: show expanded - maybe remove the temp upstream png & edge png_
-
-   ![Prototype-specific properties, in Chrome](./properties-images/prototype-specific-properties-chrome-temp.png) _todo: remove_
 
 
 <!-- ====================================================================== -->
