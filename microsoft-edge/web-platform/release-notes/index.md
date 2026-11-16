@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 11/19/2026
+ms.date: 12/10/2026
 ---
 # Release notes for Microsoft Edge web platform
 
@@ -16,6 +16,7 @@ To stay up-to-date and get the latest web platform features, download a preview 
 <!-- maint:
 toc.yml - add new relnotes page, move a relnotes page to archive
 /web-platform/release-notes/index.md - add new relnotes page, remove earliest relnotes page -->
+* [Microsoft Edge 159 web platform release notes (Dec. 10, 2026)](./159.md)
 * [Microsoft Edge 158 web platform release notes (Nov. 19, 2026)](./158.md)
 * [Microsoft Edge 157 web platform release notes (Nov. 5, 2026)](./157.md)
 * [Microsoft Edge 156 web platform release notes (Oct. 22, 2026)](./156.md)
@@ -25,7 +26,6 @@ toc.yml - add new relnotes page, move a relnotes page to archive
 * [Microsoft Edge 152 web platform release notes (Aug. 27, 2026)](./152.md)
 * [Microsoft Edge 151 web platform release notes (Jul. 30, 2026)](./151.md)
 * [Microsoft Edge 150 web platform release notes (Jul. 2, 2026)](./150.md)
-* [Microsoft Edge 149 web platform release notes (Jun. 2026)](./149.md)
 
 For earlier release notes, see **Archive** in the table of contents.
 
