@@ -252,7 +252,7 @@ The `options` property and the option descriptions are both optional for `score`
 
 * If you omit `options`, the browser creates a 5-point scale, labeled `"1"` through `"5"`, which goes from "very low, strongly negative" (`"1"`), through "moderate, medium, neutral" (`"3"`), to "very high, strongly positive" (`"5"`).
 
-* If you provide `options` without `description` values, the browser assigns a built-in description to each option, based on the position of the option on the scale.  The descriptions go from low and negative to high and positive, and scales that have an odd number of options get a neutral midpoint.  For example, for a 7-point scale, the descriptions go from "very low, strongly negative" for the first option, to "moderate, medium, neutral" for the fourth option, to "very high, strongly positive" for the last option.  Built-in descriptions are available for scales of 2 to 11 options.
+* If you provide `options` with numerical labels but no `description` values, the browser assigns a built-in description to each option, based on the position of the option on the scale.  The descriptions go from low and negative to high and positive, and scales that have an odd number of options get a neutral midpoint.  For example, for a 7-point scale, the descriptions go from "very low, strongly negative" for the first option, to "moderate, medium, neutral" for the fourth option, to "very high, strongly positive" for the last option.  Built-in descriptions are available for scales of 2 to 11 options.
 
 To control how the model interprets each value of the scale, provide your own descriptions.
 
