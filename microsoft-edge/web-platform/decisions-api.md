@@ -308,8 +308,6 @@ The following options are available:
 
 To follow the progress of the model download, use the `monitor` option of the `DecisionModel.create()` method.  This is useful when the model hasn't yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
 
-Example of the `monitor` option
-
 ```javascript
 // Create a DecisionModel session with the monitor option to monitor the model
 // download.
