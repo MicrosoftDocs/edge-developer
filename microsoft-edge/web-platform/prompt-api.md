@@ -93,7 +93,7 @@ The Prompt API uses a language model that's provided by Microsoft Edge and built
 <!-- ====================================================================== -->
 ## The Aion Instruct model
 
-In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at _todo: add link to model card_.
+In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the [model card at huggingface.co](https://aka.ms/aion-instruct-hugging-face).
 
 
 <!-- ------------------------------ -->
