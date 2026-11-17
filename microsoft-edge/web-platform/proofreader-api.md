@@ -74,7 +74,9 @@ The Proofreader API use a model that's provided by Microsoft Edge and built into
 <!-- ====================================================================== -->
 ## The Phi-4-mini model
 
-The Proofreader API uses the Phi-4-mini model built into Microsoft Edge. Phi-4-mini is a powerful small language model that excels at text-based tasks.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+<!-- todo: scrub article for Phi -->
+
+The Proofreader API uses the Phi-4-mini model built into Microsoft Edge.  Phi-4-mini is a powerful small language model that excels at text-based tasks.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
 
 
 <!-- ------------------------------ -->

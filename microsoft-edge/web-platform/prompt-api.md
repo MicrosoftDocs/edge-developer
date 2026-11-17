@@ -50,14 +50,14 @@ The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experim
 <!-- ====================================================================== -->
 ## Availability of the Prompt API
 
-The Prompt API is available as a developer preview in the Microsoft Edge. You can test it in two ways:
+The Prompt API is available as a developer preview in Microsoft Edge.  You can test the Prompt API in either of the following ways:
 
-* Either locally by using Microsoft Edge Canary or Dev, starting with version 138.0.3309.2.
-* Or on your production website, by registering for an origin trial, starting with Microsoft Edge 158.
+* Locally, by using the Microsoft Edge Canary or Dev preview channel (version 138.0.3309.2 or later).
+* On your production website, by registering for an origin trial, using Microsoft Edge 158 or later.
 
 See [Enable the Prompt API](#enable-the-prompt-api), below.
 
-The Prompt API is intended to help discover use cases and understand challenges for built-in SLMs.  The Prompt API provides general-purpose prompting capabilities, while related experimental APIs are designed for specific AI-powered tasks, such as summarization, writing assistance, decision-making, and translation. To learn more about these APIs, see
+The Prompt API is intended to help discover use cases and understand challenges for built-in SLMs.  The Prompt API provides general-purpose prompting capabilities, while related experimental APIs are designed for specific AI-powered tasks, such as summarization, writing assistance, decision-making, and translation. To learn more about these APIs, see:
 
 * [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
 * [Classify text with the Decisions API](./decisions-api.md)
@@ -92,13 +92,13 @@ The Prompt API uses a language model that's provided by Microsoft Edge and built
 <!-- ====================================================================== -->
 ## The Aion Instruct model
 
-In the Microsoft Edge the Prompt API uses the Aion Instruct model, which is built into Microsoft Edge. Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks. To learn more about the model, see the model card at _todo: add link to model card_.
+In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into Microsoft Edge.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at _todo: add link to model card_.
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive. Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input. To learn more about the model's Responsible AI considerations, see _todo: add RAI link_.
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input.  To learn more about the model's Responsible AI considerations, see _todo: add RAI link_.
 
 
 <!-- ------------------------------ -->
@@ -143,7 +143,7 @@ To test the model in Canary, Dev, or Beta, enable the **On-device AI** option to
 <!-- ====================================================================== -->
 ## Enable the Prompt API
 
-To use the Prompt API in Microsoft Edge, you can either test is locally or register for an origin trial to enable it on your production website. The sections below provide instructions for both approaches.
+To use the Prompt API in Microsoft Edge, you can either test it locally or register for an origin trial to enable it on your production website. The sections below provide instructions for both approaches.
 
 
 <!-- ------------------------------ -->
