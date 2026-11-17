@@ -177,7 +177,7 @@ To use the Decisions API, first define the questions that you want the model to 
 | `id` | A string that identifies the question.  The result of the API is keyed by question `id`, so each `id` must be unique. |
 | `prompt` | A string that describes the question to answer. |
 | `type` | The type of the question: `"boolean"`, `"choice"`, or `"score"`. |
-| `options` | An array of the possible answers.  Each option is an object that has a `label` string and an optional `description` string.  Required for `"choice"` questions, optional for `"score"` questions (which default to a scale of 1 through 5 with built-in descriptions), and not used for `"boolean"` questions. |
+| `options` | An array of the possible answers.  Each option is an object that has a `label` string and an optional `description` string.  Required for `"choice"` questions, optional for `"score"` questions (see [Score questions](#score-questions)), and not used for `"boolean"` questions. |
 
 The `options` descriptions help the model understand what each option means.
 
@@ -227,7 +227,7 @@ The Decisions API works best with a limited number of options per question.  To 
 <!-- ---------- -->
 ###### Score questions
 
-Use a `score` question to rate the text along an ordered scale.  Provide the scale by using the `options` property, ordered from the lowest to the highest value.  The `options` property is optional: when you omit it, the scale defaults to 1 through 5, with built-in descriptions.  The following example provides a custom scale:
+Use a `score` question to rate the text along an ordered scale.  Provide the scale by using the `options` property, ordered from the lowest to the highest value.  The following example provides a custom scale:
 
 ```javascript
 const questions = [
@@ -247,6 +247,14 @@ const questions = [
 ```
 
 When all of the option labels are numbers, the resulting score is calculated from the numeric labels.  Otherwise, the resulting score is calculated from the position of the options on the scale, starting at 1.
+
+The `options` property and the option descriptions are both optional for `score` questions.  The browser fills in what's missing:
+
+* If you omit `options`, the browser creates a 5-point scale, labeled `"1"` through `"5"`, which goes from "very low, strongly negative" (`"1"`), through "moderate, medium, neutral" (`"3"`), to "very high, strongly positive" (`"5"`).
+
+* If you provide `options` without `description` values, the browser assigns a built-in description to each option, based on the position of the option on the scale.  The descriptions go from low and negative to high and positive, and scales that have an odd number of options get a neutral midpoint.  For example, for a 7-point scale, the descriptions go from "very low, strongly negative" for the first option, to "moderate, medium, neutral" for the fourth option, to "very high, strongly positive" for the last option.  Built-in descriptions are available for scales of 2 to 11 options.
+
+To control how the model interprets each value of the scale, provide your own descriptions.
 
 
 <!-- ------------------------------ -->
