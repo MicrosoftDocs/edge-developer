@@ -136,7 +136,9 @@ The model is unavailable in the following conditions:
 
 In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI** to avoid downloading the model separately for each channel.
 
-To test the model in Canary, Dev, or Beta, enable the **On-device AI** option to download the model.
+If you enable the **Prompt API** flag in `edge://flags`, the **On-device AI** option is automatically enabled in Canary, Dev, and Beta.  See [Test the Prompt API locally](#test-the-prompt-api-locally), below.
+
+If you're testing by using an origin trial token in Canary, Dev, or Beta, without the flag enabled, manually enable the **On-device AI** option under **Settings** > **Copilot and AI** to download the model.  See [Enable the Prompt API for your users by registering for an origin trial](#enable-the-prompt-api-for-your-users-by-registering-for-an-origin-trial), below.
 
 
 <!-- ====================================================================== -->
