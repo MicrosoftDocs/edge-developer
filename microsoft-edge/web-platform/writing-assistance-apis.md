@@ -116,9 +116,9 @@ The Writing Assistance APIs are currently limited to:
 
 * **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
 
-* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 10 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
+* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 5 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
 
-* **GPU:** 5.5 GB of VRAM or more.
+* **GPU:** 3 GB of VRAM or more.
 
 * **Network:** Unlimited data plan or unmetered connection.  The model isn't downloaded if using a metered connection.
 

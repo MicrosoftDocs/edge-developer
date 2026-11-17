@@ -23,7 +23,7 @@ The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experim
     * [Availability of the Aion Instruct model](#availability-of-the-aion-instruct-model)
     * [Consideration for Edge Canary, Dev, and Beta](#consideration-for-edge-canary-dev-and-beta)
 * [Enable the Prompt API](#enable-the-prompt-api)
-    * [Test the Prompt API locally in Edge Canary or Dev](#test-the-prompt-api-locally-in-edge-canary-or-dev)
+    * [Test the Prompt API locally](#test-the-prompt-api-locally)
     * [Enable the Prompt API for your users by registering for an origin trial](#enable-the-prompt-api-for-your-users-by-registering-for-an-origin-trial)
 * [See a working example](#see-a-working-example)
 * [Use the Prompt API](#use-the-prompt-api)
@@ -53,8 +53,8 @@ The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experim
 
 The Prompt API is available as a developer preview in Microsoft Edge.  You can test the Prompt API in either of the following ways:
 
-* Locally, by using the Microsoft Edge Canary or Dev preview channel (version 138.0.3309.2 or later).
-* On your production website, by registering for an origin trial, using Microsoft Edge 158 or later.
+* Locally in Microsoft Edge, on your device only.
+* On your production website, by registering for an origin trial.
 
 See [Enable the Prompt API](#enable-the-prompt-api), below.
 
@@ -93,7 +93,7 @@ The Prompt API uses a language model that's provided by Microsoft Edge and built
 <!-- ====================================================================== -->
 ## The Aion Instruct model
 
-In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into Microsoft Edge.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at _todo: add link to model card_.
+In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at _todo: add link to model card_.
 
 
 <!-- ------------------------------ -->
@@ -109,17 +109,15 @@ The Prompt API developer preview is intended to work on devices with hardware ca
 
 * **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
 
-* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 10 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
+* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 5 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
 
-* **GPU:** 5.5 GB of VRAM or more.
+* **GPU:** 3 GB of VRAM or more.
 
 * **Network:** Unlimited data plan or unmetered connection.  The model isn't downloaded if using a metered connection.
 
 To check if your device supports the Prompt API developer preview, see [Enable the Prompt API](#enable-the-prompt-api) below and check your device performance class.
 
 Due to the experimental nature of the Prompt API, you might observe issues on specific hardware configurations.  If you see issues on specific hardware configurations, please provide feedback by [opening a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=prompt-api.md) at the MSEdgeExplainers repository.
-
-_todo: possibly add a section about watermarking here_
 
 
 <!-- ------------------------------ -->
@@ -148,13 +146,13 @@ To use the Prompt API in Microsoft Edge, you can either test it locally or regis
 
 
 <!-- ------------------------------ -->
-#### Test the Prompt API locally in Edge Canary or Dev
+#### Test the Prompt API locally
 
-To test the Prompt API locally in Edge Canary or Dev:
+To test the Prompt API on your devce only:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Edge Dev (version 138.0.3309.2 or later).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider)._todo: update to 158? Remove Canary and Dev requirement?_
+1. Make sure you're using Microsoft Edge version 158 or later.
 
-1. In Edge Canary or Edge Dev, open a new tab or window and go to `edge://flags/`.
+1. In Edge, open a new tab or window and go to `edge://flags/`.
 
 1. In the search box, at the top of the page, enter **Prompt API**.
 
@@ -168,7 +166,7 @@ To test the Prompt API locally in Edge Canary or Dev:
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
-1. Restart Edge Canary or Edge Dev.
+1. Restart Edge.
 
 1. To check if your device meets the hardware requirements for the Prompt API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
@@ -194,7 +192,7 @@ To see the Prompt API in action, and review existing code that uses the API:
 
 1. [Enable the Prompt API](#enable-the-prompt-api), as described above.
 
-1. In Edge Canary or Edge Dev _Todo: is is still restricted to insiders channels?_, open a tab or window and go to the [Prompt API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/prompt-api/).
+1. In Edge, open a tab or window and go to the [Prompt API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/prompt-api/).
 
    In the **Built-in AI playgrounds** navigation on the left, **Prompt** is selected.
 
@@ -626,7 +624,7 @@ You can also contribute to the discussion about the design of the Prompt API at 
 * [Prompt API draft specification](https://webmachinelearning.github.io/prompt-api/)
 * [webmachinelearning/prompt-api GitHub repo](https://webmachinelearning.github.io/prompt-api/)
 * [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)
-* _todo: add link to decisions API docs_.
+* [Classify text with the Decisions API](./decisions-api.md)
 * [Correct grammar, spelling, and punctuation errors in text with the Proofreader API](./proofreader-api.md)
 * [Translate text with the Translator API](./translator-api.md)
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
