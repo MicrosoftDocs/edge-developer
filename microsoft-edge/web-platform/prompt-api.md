@@ -62,8 +62,9 @@ The Prompt API is intended to help discover use cases and understand challenges 
 
 * [Summarize, write, and rewrite text with the writing assistance APIs](./writing-assistance-apis.md)
 * [Classify text with the Decisions API](./decisions-api.md)
-* [Translate text with the Translator API](./translator-api.md)
+* [Correct grammar, spelling, and punctuation errors in text with the Proofreader API](./proofreader-api.md)
 * [Detect languages with the Language Detector API](./languagedetector-api.md)
+* [Translate text with the Translator API](./translator-api.md)
 
 
 <!-- ====================================================================== -->
@@ -625,8 +626,9 @@ You can also contribute to the discussion about the design of the Prompt API at 
 
 * [Prompt API draft specification](https://webmachinelearning.github.io/prompt-api/)
 * [webmachinelearning/prompt-api GitHub repo](https://webmachinelearning.github.io/prompt-api/)
-* [Write, rewrite, and summarize text with the Writing Assistance APIs](./writing-assistance-apis.md)
+* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
+* [Summarize, write, and rewrite text with the Writing Assistance APIs](./writing-assistance-apis.md)
 * [Classify text with the Decisions API](./decisions-api.md)
 * [Correct grammar, spelling, and punctuation errors in text with the Proofreader API](./proofreader-api.md)
+* [Detect languages with the Language Detector API](./languagedetector-api.md)
 * [Translate text with the Translator API](./translator-api.md)
-* [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Source code and Readme for Built-in AI playgrounds, including the Prompt API playground.
