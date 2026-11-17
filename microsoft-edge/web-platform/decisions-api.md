@@ -286,14 +286,14 @@ You can also call `availability()` with no arguments.
 <!-- ------------------------------ -->
 #### Create a new session
 
-Creating a session instructs the browser to load the model in memory, so that it can be used.  Before you can make decisions about text, create a new session by using the `DecisionModel.create()` method, passing the questions that you defined:
+Creating a session instructs the browser to load the model in memory, so that it can be used.  Before you can make decisions about text, create a new session by using the `DecisionModel.create()` method, using the `questions` option to pass in the questions that you defined:
 
 ```javascript
 // Create a DecisionModel session.
 const session = await DecisionModel.create({ questions });
 ```
 
-The following options are available:
+The `DecisionModel.create()` method takes the following options:
 
 | **Option** | **Description** |
 | --- | --- |
