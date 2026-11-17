@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 06/02/2025
+ms.date: 11/17/2026
 ---
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
@@ -151,7 +151,7 @@ To use the Prompt API in Microsoft Edge, you can either test it locally or regis
 <!-- ------------------------------ -->
 #### Test the Prompt API locally
 
-To test the Prompt API on your devce only:
+To test the Prompt API on your device only:
 
 1. Make sure you're using Microsoft Edge version 158 or later.
 
@@ -375,10 +375,10 @@ Cloning a session is useful when you want to use the options from a previous ses
 ```javascript
 // Create a first LanguageModel session.
 const firstSession = await LanguageModel.create({
-  initialPrompts: [
+  initialPrompts: [{
     role: "system",
     content: "You are a helpful assistant."
-  ]
+  }]
 });
 
 // Later, create a new session by cloning the first session to start a new
@@ -446,8 +446,15 @@ The `responseConstraint` option accepts a JSON schema or a regular expression:
 The following example shows how to make the model respond to a prompt with a JSON object that follows a given schema:
 
 ```javascript
-// Create a LanguageModel session.
-const session = await LanguageModel.create();
+// Create a LanguageModel session, with a system prompt.
+const session = await LanguageModel.create({
+  initialPrompts: [
+    {
+      role: "system",
+      content: "You are an AI model designed to analyze the sentiment of user-provided text. Your goal is to classify the sentiment into predefined categories and provide a confidence score. Follow these guidelines:\n\n- Identify whether the sentiment is positive, negative, or neutral.\n- Provide a confidence score (0-1) reflecting the certainty of the classification.\n- Ensure the sentiment classification is contextually accurate.\n- If the sentiment is unclear or highly ambiguous, default to neutral.\n\nYour responses should be structured and concise, adhering to the defined output schema."
+    }
+  ]
+});
 
 // Define a JSON schema for the Prompt API to constrain the generated response.
 const schema = {
@@ -470,19 +477,11 @@ const schema = {
 }
 ;
 
-// Prompt the model, by providing a system prompt and the JSON schema in the
-// responseConstraints option.
+// Prompt the model, by providing the JSON schema in the responseConstraint
+// option.
 const response = await session.prompt(
   "Ordered a Philly cheesesteak, and it was not edible. Their milkshake is just milk with cheap syrup. Horrible place!",
-  {
-    initialPrompts: [
-      {
-        role: "system",
-        content: "You are an AI model designed to analyze the sentiment of user-provided text. Your goal is to classify the sentiment into predefined categories and provide a confidence score. Follow these guidelines:\n\n- Identify whether the sentiment is positive, negative, or neutral.\n- Provide a confidence score (0-1) reflecting the certainty of the classification.\n- Ensure the sentiment classification is contextually accurate.\n- If the sentiment is unclear or highly ambiguous, default to neutral.\n\nYour responses should be structured and concise, adhering to the defined output schema."
-      },
-    ],
-    responseConstraint: schema
-  }
+  { responseConstraint: schema }
 );
 ```
 
