@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 11/13/2026
+ms.date: 11/17/2026
 ---
 # Classify text with the Decisions API
 
-The Decisions API is an experimental web API that allows you to classify text, by asking questions about the text and getting structured answers, from your website's or browser extension's JavaScript code.  The API uses a model that is built into Microsoft Edge and that runs on the device.
+The Decisions API is an experimental web API that allows you to classify text, by asking questions about the text and getting structured answers, from your website's or browser extension's JavaScript code.  The API uses a model that's built into Microsoft Edge and that runs on the device.
 
 Use the Decisions API to quickly make decisions about unstructured text, such as:
 * Does this support ticket require urgent escalation?
@@ -30,12 +30,12 @@ For introductory information about the Decisions API, see [Explainer for the Dec
 * [Enable the Decisions API](#enable-the-decisions-api)
 * [See a working example](#see-a-working-example)
 * [Use the Decisions API](#use-the-decisions-api)
-    * [Check if the API is enabled](#check-if-the-api-is-enabled)
+    * [Check whether the API is enabled](#check-whether-the-api-is-enabled)
     * [Define the questions](#define-the-questions)
         * [Boolean questions](#boolean-questions)
         * [Choice questions](#choice-questions)
         * [Score questions](#score-questions)
-    * [Check if the model can be used](#check-if-the-model-can-be-used)
+    * [Check whether the model can be used](#check-whether-the-model-can-be-used)
     * [Create a new session](#create-a-new-session)
         * [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download)
         * [Provide the model with context](#provide-the-model-with-context)
@@ -156,7 +156,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Check if the API is enabled
+#### Check whether the API is enabled
 
 Before using the Decisions API in your website's code, check that the API is enabled, by testing for the presence of the `DecisionModel` object:
 
@@ -181,7 +181,7 @@ To use the Decisions API, first define the questions that you want the model to 
 
 The `options` descriptions help the model understand what each option means.
 
-Pass an array of questions to the API when checking availability and when creating a session, by using the `questions` option.
+Pass an array of questions to the API when checking availability and when creating a session, by using the `questions` option of the `create()` method.
 
 
 <!-- ---------- -->
@@ -258,11 +258,11 @@ To control how the model interprets each value of the scale, provide your own de
 
 
 <!-- ------------------------------ -->
-#### Check if the model can be used
+#### Check whether the model can be used
 
 The Decisions API can only be used if the device supports running the model, and after the model and model runtime have been downloaded by Microsoft Edge.
 
-To check if the API can be used, use the `availability()` method.  Pass the `questions` option to also validate the schema of your questions.  You can also call `availability()` with no arguments:
+To check if the API can be used, use the `DecisionModel.availability()` method.  To also validate the schema of your questions, pass the `questions` option:
 
 ```javascript
 const availability = await DecisionModel.availability({ questions });
@@ -280,18 +280,20 @@ if (availability == "available") {
 }
 ```
 
+You can also call `availability()` with no arguments.
+
 
 <!-- ------------------------------ -->
 #### Create a new session
 
-Creating a session instructs the browser to load the model in memory, so that it can be used.  Before you can make decisions about text, create a new session by using the `create()` method, and pass the questions that you defined:
+Creating a session instructs the browser to load the model in memory, so that it can be used.  Before you can make decisions about text, create a new session by using the `DecisionModel.create()` method, passing the questions that you defined:
 
 ```javascript
 // Create a DecisionModel session.
 const session = await DecisionModel.create({ questions });
 ```
 
-The available options are listed below:
+The following options are available:
 
 | **Option** | **Description** |
 | --- | --- |
@@ -304,7 +306,9 @@ The available options are listed below:
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+To follow the progress of the model download, use the `monitor` option of the `DecisionModel.create()` method.  This is useful when the model hasn't yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+
+Example of the `monitor` option
 
 ```javascript
 // Create a DecisionModel session with the monitor option to monitor the model
@@ -331,7 +335,7 @@ const session = await DecisionModel.create({
 <!-- ---------- -->
 ###### Provide the model with context
 
-To give the model instructions to use when answering all of the questions, use the `context` option.  This is useful to explain the situation in which the text is evaluated, or to define what the options mean for your use case:
+To give the model instructions to use when answering all of the questions, use the `context` option of the `DecisionModel.create()` method.  This is useful to explain the situation in which the text is evaluated, or to define what the options mean for your use case:
 
 ```javascript
 const session = await DecisionModel.create({
@@ -361,7 +365,7 @@ const result = await session.decide(
 console.log(result);
 ```
 
-To cancel a decision call that's in progress, pass an `AbortSignal` by using the `signal` option of the `decide()` method.  Cancelling a decision call doesn't destroy the session:
+To cancel a decision call that's in progress, pass an `AbortSignal` by using the `signal` option of the `session.decide()` method.  Cancelling a decision call doesn't destroy the session:
 
 ```javascript
 const controller = new AbortController();
@@ -436,17 +440,19 @@ if (category.confidence > 0.85) {
 <!-- ------------------------------ -->
 #### Destroy a session
 
-Destroy the session to let the browser know that you don't need the model anymore, so that the model can be unloaded from memory.
+To let the browser know that the model isn't needed anymore and can be unloaded from memory, destroy the session.
 
-You can destroy a session in two different ways:
-* By using the `destroy()` method.
-* By using an `AbortController`.
+You can destroy a session by using either of the following ways:
+* By using the `session.destroy()` method.
+* By using an `AbortController` object.
+
+Details are below.
 
 
 <!-- ---------- -->
 ###### Destroy a session by using the destroy() method
 
-You can use the `session.destroy()` method to destroy a `DecisionModel` session:
+To destroy a `DecisionModel` session, you can use the `session.destroy()` method:
 
 ```javascript
 const session = await DecisionModel.create({ questions });
@@ -459,7 +465,7 @@ session.destroy();
 <!-- ---------- -->
 ###### Destroy a session by using an AbortController
 
-Alternatively, you can create an `AbortController` object, create a `DecisionModel` session, and then call `abort()`:
+Alternatively, to destroy a `DecisionModel` session, you can create an `AbortController` object, create a `DecisionModel` session, and then call `abort()`:
 
 ```javascript
 // Create an AbortController object.
@@ -477,7 +483,7 @@ const session = await DecisionModel.create({
 controller.abort();
 ```
 
-The `signal` option is also supported by the `session.decide()` method, to cancel a single decision call without destroying the session:
+To cancel a single decision call without destroying the session, use the `signal` option of the `session.decide()` method:
 
 ```javascript
 const controller = new AbortController();
@@ -492,7 +498,11 @@ controller.abort();
 <!-- ====================================================================== -->
 ## Send feedback
 
-We're very interested in learning about the range of scenarios for which you intend to use the Decisions API, any issues with the API or the model, and whether the API shape meets your needs.
+We're interested in learning about:
+* Scenarios for which you want to use the Decisions API.
+* Whether the API design meets your needs.
+* Issues with the API.
+* Issues with the model.
 
 If you notice any issues when using the API, please [report them on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues).
 
