@@ -94,13 +94,13 @@ The Prompt API uses a language model that's provided by Microsoft Edge and built
 <!-- ====================================================================== -->
 ## The Aion Instruct model
 
-In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at [TODO add link text](https://aka.ms/aion-instruct-hugging-face).
+In Microsoft Edge, the Prompt API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at [microsoft/Aion-1.0-Instruct](https://aka.ms/aion-instruct-hugging-face), at Hugging Face.
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input.  To learn more about the model's Responsible AI considerations, see [TODO add link text](https://aka.ms/aion-instruct-hugging-face-disclaimers).
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
 
 
 <!-- ------------------------------ -->
@@ -165,8 +165,6 @@ To test the Prompt API on your devce only:
 
    ![Flags page of browser](./prompt-api-images/flags-prompt-api.png)
 
-   _todo: update image, the flag name has changed_
-
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
 1. Restart Edge.
@@ -181,11 +179,11 @@ To test the Prompt API on your devce only:
 <!-- ------------------------------ -->
 #### Enable the Prompt API for your users by registering for an origin trial
 
-You can try the Prompt API on your own live site for a limited period of time by using an origin trial. When using the origin trial, users of Microsoft Edge that visit your site can run code that uses the Prompt API.
+You can try the Prompt API on your own live site for a limited period of time by using an origin trial. When using the Prompt API origin trial, users of Microsoft Edge that visit your site can run code that uses the Prompt API.
 
 To learn more about origin trials in Microsoft Edge, see [Test experimental APIs and features by using origin trials](../origin-trials/index.md).
 
-_todo: list steps to register and enable the OT token on the site._
+To register for the Prompt API origin trial, follow the steps at [Registering for an origin trial](../origin-trials/index.md#registering-for-an-origin-trial) and select the Prompt API origin trial.
 
 
 <!-- ====================================================================== -->
