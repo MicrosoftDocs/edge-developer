@@ -5,25 +5,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 11/17/2026
+ms.date: 11/18/2026
 ---
 # Classify text with the Decisions API
 
 The Decisions API is an experimental web API that allows you to classify text, by asking questions about the text and getting structured answers, from your website's or browser extension's JavaScript code.  The API uses a model that's built into Microsoft Edge and that runs on the device.
 
-Use the Decisions API to quickly make decisions about unstructured text, such as:
-* Understanding user intent: Does this search mean the user wants to buy something? Which feature is the user trying to find?
-* Sorting and routing content: Which team should handle this request? What topic is this article about? Is this message a question, a complaint or feedback?
-* Scoring and ranking: How relevant is this result to the user's search? How urgent is this message? How positive is this review?
-* Checking content quality: Does this bug report include steps to reproduce? Is this review about the product or the delivery? Is this form entry missing key details?
-
-Unlike language models that generate text, the Decisions API scores the answers that you provide, and returns the most likely answer along with the probability of each answer and a confidence value.  The result always matches the structure of the questions that you defined.
-
-For introductory information about the Decisions API, see [Explainer for the Decisions API](https://github.com/explainers-by-googlers/decisions-api).
-
-
 **Detailed contents:**
-
+* [Introduction](#introduction)
 * [Availability of the Decisions API](#availability-of-the-decisions-api)
 * [Alternatives to and benefits of the Decisions API](#alternatives-to-and-benefits-of-the-decisions-api)
 * [Decisions API model](#decisions-api-model)
@@ -51,11 +40,40 @@ For introductory information about the Decisions API, see [Explainer for the Dec
 
 
 <!-- ====================================================================== -->
+## Introduction
+
+Use the Decisions API to quickly make decisions about unstructured text, such as:
+
+* Understanding user intent:
+   * Does this search mean the user wants to buy something?
+   * Which feature is the user trying to find?
+
+* Sorting and routing content:
+   * Which team should handle this request?
+   * What topic is this article about?
+   * Is this message a question, a complaint or feedback?
+
+* Scoring and ranking:
+   * How relevant is this result to the user's search?
+   * How urgent is this message?
+   * How positive is this review?
+
+* Checking content quality:
+   * Does this bug report include steps to reproduce the bug?
+   * Is this review about the product, or the delivery of the product?
+   * Is this form entry missing key details?
+
+Unlike language models that generate text, the Decisions API scores the answers that you provide, and returns the most likely answer along with the probability of each answer and a confidence value.  The result always matches the structure of the questions that you defined.
+
+For introductory information about the Decisions API, see [Explainer for the Decisions API](https://github.com/explainers-by-googlers/decisions-api).
+
+
+<!-- ====================================================================== -->
 ## Availability of the Decisions API
 
-The Decisions API is available as a developer preview in Microsoft Edge Canary, behind a flag.
+The Decisions API is available as a developer preview in Microsoft Edge Canary, by setting a flag.
 
-The Decisions API is optimized to make structured decisions about text, with a predefined set of possible answers.  To learn more about alternatives for more custom prompt engineering scenarios that may not be served by this API, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
+The Decisions API is optimized to make structured decisions about text, with a predefined set of possible answers.  To learn more about alternatives for more custom prompt engineering scenarios that might not be served by this API, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
 The design of the Decisions API is still evolving, and the API may change before it ships.
 
@@ -71,9 +89,9 @@ To leverage AI capabilities in websites and browser extensions, you can also use
 
 * Prompt a built-in language model to generate a classification, by using the [Prompt API](./prompt-api.md) and its `responseConstraint` option.
 
-The Decisions API uses a model that runs on the same device where the inputs to and outputs of the model are used (that is, locally).  This has the following benefits compared to cloud-based solutions:
+The Decisions API uses a model that runs locally, on the same device where the inputs to, and the outputs of, the model are used.  This has the following benefits compared to cloud-based solutions:
 
-* **Reduced cost:** There's no cost associated with using a cloud AI service.
+* **Reduced cost:** There's no cost that's associated with using a cloud AI service.
 
 * **Network independence:** Beyond the initial model download, there's no network latency when making decisions, and the API can also be used when the device is offline.
 
@@ -81,7 +99,7 @@ The Decisions API uses a model that runs on the same device where the inputs to 
 
 The Decisions API uses a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded when the API is used for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded when the API is used for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for developers and users.
 
 * **Simplified usage for web developers:** The built-in model can be run by using a straightforward web API, and doesn't require AI/ML expertise or using third-party frameworks.
 
@@ -111,7 +129,7 @@ Don't rely on the model alone to make high-consequence decisions or to perform s
 <!-- ====================================================================== -->
 ## Model availability
 
-An initial download of the model is required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Decisions API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the model is required the first time a website calls a built-in AI API.  To monitor the downloading of the model, use the `monitor` option when creating a new Decisions API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 Due to the experimental nature of the Decisions API, you might observe issues on specific hardware configurations.  If you notice any issues, please [report them on the repo](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues).
 
@@ -123,7 +141,7 @@ To use the Decisions API in Microsoft Edge:
 
 1. Make sure you're using the latest version of Microsoft Edge Canary.  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary, open a new tab or window and go to `edge://flags`.
+1. In Microsoft Edge Canary, open a new tab or window, and then go to `edge://flags`.
 
 1. In the search box, at the top of the page, enter **Decisions API**.
 
@@ -143,19 +161,23 @@ To see the Decisions API in action, and review existing code that uses the API:
 
 1. [Enable the Decisions API](#enable-the-decisions-api), as described above.
 
-1. In Microsoft Edge Canary, open a tab or window and go to the [Decisions API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/decisions-api/).
+1. In Microsoft Edge Canary, open a new tab or window, and then go to the [Decisions API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/decisions-api/).
 
 1. In the information banner at the top, check the status.  If the model hasn't been downloaded yet, the banner indicates that the model will be downloaded the first time the API is used.
 
    If the model doesn't start downloading, restart Microsoft Edge and try again.
 
-1. Optionally change the **Text to classify**, **Context**, or **Questions (JSON)** values.
+1. Optionally change the content in the **Text to classify**, **Context**, or **Questions (JSON)** text boxes.
 
 1. Click the **Decide** button, at the bottom of the page.
 
    For each question, the output lists the answer, with the probability of each option.  To see the full result object, expand **Raw JSON**.
 
-   ![The Decisions API playground demo. The Text to classify, Context, and Questions text input fields are filled in, the Decide button is highlighted, and the output section shows the results, including the raw JSON data returned by the API.](./decisions-api-images/decisions-api-playground-response.png)
+   ![The response](./decisions-api-images/decisions-api-playground-response.png)
+
+   * The **Text to classify**, **Context**, and **Questions** input text boxes are filled in.
+   * The **Decide** button is highlighted.
+   * The output section (on the right) shows the results, including the raw JSON data that's returned by the API.
 
 See also:
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Readme and source code for the Built-in AI playgrounds demo.
@@ -168,7 +190,7 @@ See also:
 <!-- ------------------------------ -->
 #### Check whether the API is enabled
 
-Before using the Decisions API in your website's code, check that the API is enabled, by testing for the presence of the `DecisionModel` object:
+Before using the Decisions API in your website's code, confirm that the API is enabled, by testing for the presence of the `DecisionModel` object:
 
 ```javascript
 if (!window.DecisionModel) {
@@ -262,7 +284,7 @@ The `options` property and the option descriptions are both optional for `score`
 
 * If you omit `options`, the browser creates a 5-point scale, labeled `"1"` through `"5"`, which goes from "very low, strongly negative" (`"1"`), through "moderate, medium, neutral" (`"3"`), to "very high, strongly positive" (`"5"`).
 
-* If you provide `options` with numerical labels but no `description` values, the browser assigns a built-in description to each option, based on the position of the option on the scale.  The descriptions go from low and negative to high and positive, and scales that have an odd number of options get a neutral midpoint.  For example, for a 7-point scale, the descriptions go from "very low, strongly negative" for the first option, to "moderate, medium, neutral" for the fourth option, to "very high, strongly positive" for the last option.  Built-in descriptions are available for scales of 2 to 11 options.
+* If you provide `options` with numerical labels but no `description` values, the browser assigns a built-in description to each option, based on the position of the option on the scale.  The descriptions go from low and negative to high and positive.  Scales that have an odd number of options get a neutral midpoint.  For example, for a 7-point scale, the descriptions go from "very low, strongly negative" for the first option, to "moderate, medium, neutral" for the fourth option, to "very high, strongly positive" for the last option.  Built-in descriptions are available for scales of 2 to 11 options.
 
 To control how the model interprets each value of the scale, provide your own descriptions.
 
@@ -316,7 +338,7 @@ The `DecisionModel.create()` method takes the following options:
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-To follow the progress of the model download, use the `monitor` option of the `DecisionModel.create()` method.  This is useful when the model hasn't yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+To follow the progress of the model download, use the `monitor` option of the `DecisionModel.create()` method.  This is useful when the model hasn't yet been fully downloaded onto the device on which it will be used, to inform users of your website that they need to wait.
 
 ```javascript
 // Create a DecisionModel session with the monitor option to monitor the model
@@ -373,7 +395,7 @@ const result = await session.decide(
 console.log(result);
 ```
 
-To cancel a decision call that's in progress, pass an `AbortSignal` by using the `signal` option of the `session.decide()` method.  Cancelling a decision call doesn't destroy the session:
+To cancel a decision call that's in progress, pass an `AbortSignal` by using the `signal` option of the `session.decide()` method.  Cancelling a decision call doesn't destroy the session.
 
 ```javascript
 const controller = new AbortController();
@@ -426,7 +448,9 @@ For example, the result for the above questions might be:
 
 The values above are only illustrative.
 
-The following example shows how to use the result to act on confident decisions, and to ask the user when the model isn't confident:
+The following example:
+* Uses the result to act on confident decisions.
+* Asks the user, when the model isn't confident.
 
 ```javascript
 const { urgent, category } = await session.decide(ticketText);
@@ -450,7 +474,7 @@ if (category.confidence > 0.85) {
 
 To let the browser know that the model isn't needed anymore and can be unloaded from memory, destroy the session.
 
-You can destroy a session by using either of the following ways:
+You can destroy a session either of the following ways:
 * By using the `session.destroy()` method.
 * By using an `AbortController` object.
 
