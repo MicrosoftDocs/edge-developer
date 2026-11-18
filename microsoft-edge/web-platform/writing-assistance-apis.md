@@ -98,7 +98,10 @@ The Writing Assistance APIs developer preview is intended to work on devices wit
 
 The Writing Assistance APIs are currently limited to:
 
-* **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
+* **Operating systems:**
+   * Windows 10 or 11.
+   * macOS 13.3 or later.
+   * 64-bit (x64) Linux with Vulkan GPU drivers and Microsoft Edge 159 or later.
 
 * **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 5 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
 
