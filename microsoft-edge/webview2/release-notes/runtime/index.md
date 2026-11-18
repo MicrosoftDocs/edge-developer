@@ -32,7 +32,7 @@ To learn more about the WebView2 Runtime and decide how to distribute the Runtim
 
 You can download the WebView2 Evergreen Runtime or a Fixed Version Runtime at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
-Release notes entries correspond to historical releases of the WebView2 Runtime, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of the WebView2 Runtime are released.
+Release notes entries correspond to historical releases of the WebView2 Runtime, and are not updated over time.  For example, references to "new features" or "experimental APIs" might become outdated as new versions of the WebView2 Runtime are released.
 
 
 <!-- ====================================================================== -->
@@ -101,8 +101,6 @@ Async methods:
 - Win32: XYZ method + XYZCompletedHandler
 - .NET/WinRT: XYZAsync
 -->
-
-Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
 
 
 <!-- ====================================================================== -->

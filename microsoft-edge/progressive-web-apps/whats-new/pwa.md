@@ -14,7 +14,7 @@ The following are the updates to Progressive Web Apps (PWAs) and Web Apps, from 
 
 To stay up to date with the latest and greatest features, download a preview channel of Microsoft Edge (Beta, Dev, or Canary); go to [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-Sections of this document correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references below to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
+"What's new" entries correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
 
 
 <!-- ====================================================================== -->

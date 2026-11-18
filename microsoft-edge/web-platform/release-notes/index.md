@@ -29,6 +29,8 @@ toc.yml - add new relnotes page, move a relnotes page to archive
 
 For earlier release notes, see **Archive** in the table of contents.
 
+Release notes correspond to historical releases of Microsoft Edge, and are not updated over time.  For example, references to "new features" or "origin trials" might become outdated as new versions of Microsoft Edge are released.
+
 
 <!-- ====================================================================== -->
 ## See also
