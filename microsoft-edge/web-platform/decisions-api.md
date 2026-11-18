@@ -25,7 +25,8 @@ For introductory information about the Decisions API, see [Explainer for the Dec
 **Detailed contents:**
 
 * [Availability of the Decisions API](#availability-of-the-decisions-api)
-* [Decide which API to use](#decide-which-api-to-use)
+* [Alternatives to and benefits of the Decisions API](#alternatives-to-and-benefits-of-the-decisions-api)
+* [Decisions API model](#decisions-api-model)
 * [Disclaimer](#disclaimer)
 * [Model availability](#model-availability)
 * [Enable the Decisions API](#enable-the-decisions-api)
@@ -60,7 +61,7 @@ The design of the Decisions API is still evolving, and the API may change before
 
 
 <!-- ====================================================================== -->
-## Decide which API to use
+## Alternatives to and benefits of the Decisions API
 
 To leverage AI capabilities in websites and browser extensions, you can also use the following methods:
 
@@ -91,6 +92,12 @@ Compared to using the Prompt API to classify text, the Decisions API has the fol
 * **Probabilities and confidence:** The result includes the probability of each possible answer, and a confidence value, so your code can act automatically when the model is confident, and ask the user when it isn't.
 
 * **Speed:** The model answers all of the questions about an input in a single pass, instead of generating text token by token.
+
+
+<!-- ====================================================================== -->
+## Decisions API model
+
+The Decisions API uses the Aion-1.0-Instruct small language model. To learn more about Aion-1.0-Instruct and hardware requirements, see [The Aion Instruct model](./prompt-api.md#the-aion-instruct-model) in _Prompt a built-in language model with the Prompt API_.
 
 
 <!-- ====================================================================== -->
