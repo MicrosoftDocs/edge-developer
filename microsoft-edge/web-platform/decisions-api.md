@@ -115,7 +115,7 @@ Compared to using the Prompt API to classify text, the Decisions API has the fol
 <!-- ====================================================================== -->
 ## Decisions API model
 
-The Decisions API uses the Aion-1.0-Instruct small language model. To learn more about Aion-1.0-Instruct and hardware requirements, see [The Aion Instruct model](./prompt-api.md#the-aion-instruct-model) in _Prompt a built-in language model with the Prompt API_.
+The Decisions API uses the Aion Instruct small language model.  To learn more about Aion Instruct and hardware requirements, see [The Aion Instruct model](./prompt-api.md#the-aion-instruct-model) in _Prompt a built-in language model with the Prompt API_.
 
 
 <!-- ====================================================================== -->
