@@ -35,7 +35,7 @@ You can view the list of [Microsoft.Web.WebView2](https://www.nuget.org/packages
 
 Generally, release notes apply across the supported platforms, which are listed in [WebView2 API Reference](../../webview2-api-reference.md).  For an outline of APIs that are in Release SDK packages, see [Overview of WebView2 APIs](../../concepts/overview-features-apis.md).
 
-Release notes entries correspond to historical releases of WebView2, and are not updated over time.  References to "new features" and "experimental APIs" might become outdated as new versions of WebView2 are released.
+Release notes entries correspond to historical releases of the WebView2 SDK, and are not updated over time.  For example, references to "new features" or "experimental APIs" might become outdated as new versions of the WebView2 SDK are released.
 
 
 <!-- ====================================================================== -->
