@@ -12,9 +12,10 @@ ms.date: 11/17/2026
 The Decisions API is an experimental web API that allows you to classify text, by asking questions about the text and getting structured answers, from your website's or browser extension's JavaScript code.  The API uses a model that's built into Microsoft Edge and that runs on the device.
 
 Use the Decisions API to quickly make decisions about unstructured text, such as:
-* Does this support ticket require urgent escalation?
-* Which category best describes this issue?
-* How satisfied is this customer?
+* Understanding user intent: Does this search mean the user wants to buy something? Which feature is the user trying to find?
+* Sorting and routing content: Which team should handle this request? What topic is this article about? Is this message a question, a complaint or feedback?
+* Scoring and ranking: How relevant is this result to the user's search? How urgent is this message? How positive is this review?
+* Checking content quality: Does this bug report include steps to reproduce? Is this review about the product or the delivery? Is this form entry missing key details?
 
 Unlike language models that generate text, the Decisions API scores the answers that you provide, and returns the most likely answer along with the probability of each answer and a confidence value.  The result always matches the structure of the questions that you defined.
 
@@ -125,6 +126,8 @@ To use the Decisions API in Microsoft Edge:
 
 1. Restart Microsoft Edge Canary.
 
+   ![The edge://flags page showing the Decisions API flag enabled.](./decisions-api-images/edge-flag.png)
+
 
 <!-- ====================================================================== -->
 ## See a working example
@@ -139,13 +142,13 @@ To see the Decisions API in action, and review existing code that uses the API:
 
    If the model doesn't start downloading, restart Microsoft Edge and try again.
 
-1. In the **Preset scenario** dropdown list, select a scenario, such as **Support triage**.  This fills in the text to classify, the context, and the questions.
-
 1. Optionally change the **Text to classify**, **Context**, or **Questions (JSON)** values.
 
 1. Click the **Decide** button, at the bottom of the page.
 
    For each question, the output lists the answer, with the probability of each option.  To see the full result object, expand **Raw JSON**.
+
+   ![The Decisions API playground demo. The Text to classify, Context, and Questions text input fields are filled in, the Decide button is highlighted, and the output section shows the results, including the raw JSON data returned by the API.](./decisions-api-images/decisions-api-playground-response.png)
 
 See also:
 * [/built-in-ai/](https://github.com/MicrosoftEdge/Demos/tree/main/built-in-ai/) - Readme and source code for the Built-in AI playgrounds demo.
