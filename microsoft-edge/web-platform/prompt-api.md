@@ -10,7 +10,7 @@ ms.date: 11/17/2026
 # Prompt a built-in language model with the Prompt API
 <!-- https://aka.ms/edge-prompt-api-docs -->
 
-The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input, and discover innovative ways to integrate prompt engineering capabilities into your web application.
+The [Prompt API](https://webmachinelearning.github.io/prompt-api/) is an experimental web API that allows you to prompt a small language model (SLM) that is built into Microsoft Edge, from your website's or browser extension's JavaScript code.  Use the Prompt API to generate and analyze text or create application logic based on user input, and discover innovative ways to integrate SLM capabilities into your web application.
 
 
 **Detailed contents:**
@@ -108,7 +108,7 @@ Like other language models of this size, Aion Instruct can potentially behave in
 
 The Prompt API developer preview is intended to work on devices with hardware capabilities that produce SLM outputs with predictable quality and latency. The Prompt API is currently limited to:
 
-* **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
+* **Operating system:** Windows 10 or 11, macOS 13.3, and Linux.
 
 * **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 5 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
 
@@ -124,7 +124,7 @@ Due to the experimental nature of the Prompt API, you might observe issues on sp
 <!-- ------------------------------ -->
 #### Availability of the Aion Instruct model
 
-An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the model by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the download of the model by using the monitor option when creating a new Prompt API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 The model is unavailable in the following conditions:
 

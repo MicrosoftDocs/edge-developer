@@ -107,7 +107,7 @@ Due to the experimental nature of the Proofreader API, you might observe issues 
 <!-- ------------------------------ -->
 #### Availability of the Aion Instruct model
 
-An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the downloading of the model by using the monitor option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the download of the model by using the monitor option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 The model is unavailable in the following conditions:
 
