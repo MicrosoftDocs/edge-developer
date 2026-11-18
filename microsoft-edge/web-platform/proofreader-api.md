@@ -67,7 +67,7 @@ The Proofreader API uses a small language model (SLM) that runs on the same devi
 
 The Proofreader API use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for developers and users.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require AI/ML expertise or using third-party frameworks.
 
@@ -81,7 +81,7 @@ In Microsoft Edge, the Proofreader API uses the Aion Instruct model, which is bu
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  You should consider the risks of passing untrusted content to the model, and validate the source and integrity of content before using the content as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
 
 
 <!-- ------------------------------ -->
@@ -107,19 +107,19 @@ Due to the experimental nature of the Proofreader API, you might observe issues 
 <!-- ------------------------------ -->
 #### Availability of the Aion Instruct model
 
-An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the download of the model by using the monitor option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  To monitor the downloading of the model, use the `monitor` option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 The model is unavailable in the following conditions:
 
-* The **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
-* The [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
-* The device doesn't meet hardware, disk space, or network requirements.
+* If the **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
+* If the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
+* If the device doesn't meet hardware, disk space, or network requirements.
 
 
 <!-- ------------------------------ -->
 #### Consideration for Edge Canary, Dev, and Beta
 
-In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI** to avoid downloading the model separately for each channel.
+In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI**, to avoid downloading the model separately for each channel.
 
 If you enable the **Proofreader API** flag in `edge://flags`, the **On-device AI** option is automatically enabled in Canary, Dev, and Beta.  See [Enable the Proofreader API](#enable-the-proofreader-api), below.
 
@@ -131,7 +131,7 @@ To use the Proofreader API in Microsoft Edge:
 
 1. Make sure you're using Microsoft Edge version 158 or later.
 
-1. Open a new tab or window and go to `edge://flags`.
+1. In Microsoft Edge, open a new tab or window, and then go to `edge://flags`.
 
 1. In the search box, at the top of the page, enter **Proofreader API**.
 
@@ -251,7 +251,7 @@ The available options are listed below:
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users to wait.
+To follow the progress of the downloading of the model, use the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device on which the model will be used, to inform users of your website that they need to wait.
 
 ```javascript
 // Create a Proofreader session with the monitor option to monitor the model

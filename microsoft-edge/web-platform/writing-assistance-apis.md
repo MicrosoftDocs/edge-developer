@@ -74,7 +74,7 @@ The Writing Assistance APIs use a small language model (SLM) that runs on the sa
 
 The Writing Assistance APIs use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded the very first time the API is called and shared across all websites that run in the browser, reducing network costs for developers and users.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs and doesn't require AI/ML expertise or using third-party frameworks.
 
@@ -88,7 +88,7 @@ In Microsoft Edge, the Writing Assistance APIs use the Aion Instruct model, whic
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  Developers should consider the risks of passing untrusted content to the model and validate the source and integrity of content before using it as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  You should consider the risks of passing untrusted content to the model, and validate the source and integrity of content before using the content as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
 
 
 <!-- ------------------------------ -->
@@ -114,19 +114,19 @@ Due to the experimental nature of the Writing Assistance APIs, you might observe
 <!-- ------------------------------ -->
 #### Availability of the Aion Instruct model
 
-An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  You can monitor the download of the model by using the monitor option when creating a new Summarizer, Writer, or Rewriter API session.  To learn more, see [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  To monitor the downloading of the model, use the `monitor` option when creating a new Summarizer, Writer, or Rewriter API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
 
 The model is unavailable in the following conditions:
 
-* The **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
-* The [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
-* The device doesn't meet hardware, disk space, or network requirements.
+* If the **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
+* If the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
+* If the device doesn't meet hardware, disk space, or network requirements.
 
 
 <!-- ------------------------------ -->
 #### Consideration for Edge Canary, Dev, and Beta
 
-In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI** to avoid downloading the model separately for each channel.
+In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI**, to avoid downloading the model separately for each channel.
 
 If you enable the **Summarizer API**, **Writer API**, or **Rewriter API** flag in `edge://flags`, the **On-device AI** option is automatically enabled in Canary, Dev, and Beta.  See [Enable the Writing Assistance APIs](#enable-the-writing-assistance-apis), below.
 
@@ -138,7 +138,7 @@ To use the Summarizer API, Writer API, or Rewriter API in Microsoft Edge:
 
 1. Make sure you're using Microsoft Edge version 158 or later.
 
-1. Open a new tab or window and go to `edge://flags`.
+1. In Microsoft Edge, open a new tab or window, and then go to `edge://flags`.
 
 1. In the **Search flags** text box at the top of the page, enter **API**, or the name of the API that you want to use.
 
@@ -295,7 +295,7 @@ These options are documented below.
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+To follow the progress of the downloading of the model, use the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device on which the model will be used, to inform users of your website that they need to wait.
 
 ```javascript
 // Create a Summarizer session with the monitor option to monitor the model
@@ -558,7 +558,7 @@ Starting with Microsoft Edge version 158, text generated by the Writing Assistan
 
 To learn more about the watermarking scheme, see [Watermarking scheme](/windows/ai/apis/text-watermarking#watermarking-scheme) in _Watermarking in Windows AI text APIs_.
 
-You are responsible for making sure that your website or extension meets all applicable requirements for marking AI-generated content. Consider these requirements before you remove the automatically inserted watermark.
+Before you remove the automatically inserted watermark, consider these requirements: you are responsible for making sure that your website or extension meets all applicable requirements for marking AI-generated content.
 
 
 <!-- ====================================================================== -->

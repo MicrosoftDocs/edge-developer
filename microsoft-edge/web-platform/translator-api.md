@@ -190,7 +190,7 @@ You can monitor the model download by using the `monitor` option, as follows.
 <!-- ====================================================================== -->
 ## Monitor the progress of the model download (`monitor`)
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users of your website that they should wait.
+You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device on which the model will be used, to inform users of your website that they need to wait.
 
 ```javascript
 // Use the monitor option to monitor the model download.
