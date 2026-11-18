@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 01/30/2026
+ms.date: 11/18/2026
 ---
 # Correct grammar and spelling with the Proofreader API
 
@@ -18,10 +18,11 @@ For introductory information about the Proofreader API, see [Proofreader API Exp
 
 * [Availability of the Proofreader API](#availability-of-the-proofreader-api)
 * [Decide which API to use](#decide-which-api-to-use)
-* [The Phi-4-mini model](#the-phi-4-mini-model)
+* [The Aion Instruct model](#the-aion-instruct-model)
     * [Disclaimer](#disclaimer)
     * [Hardware requirements](#hardware-requirements)
-    * [Model availability](#model-availability)
+    * [Availability of the Aion Instruct model](#availability-of-the-aion-instruct-model)
+    * [Consideration for Edge Canary, Dev, and Beta](#consideration-for-edge-canary-dev-and-beta)
 * [Enable the Proofreader API](#enable-the-proofreader-api)
 * [See a working example](#see-a-working-example)
 * [Use the Proofreader API](#use-the-proofreader-api)
@@ -41,7 +42,7 @@ For introductory information about the Proofreader API, see [Proofreader API Exp
 <!-- ====================================================================== -->
 ## Availability of the Proofreader API
 
-The Proofreader API is available as a developer preview in Microsoft Edge Canary or Dev channels, starting with version 142.
+The Proofreader API is available as a developer preview in Microsoft Edge, starting with version 158.  You can test the Proofreader API locally in Microsoft Edge, on your device only.  See [Enable the Proofreader API](#enable-the-proofreader-api), below.
 
 The Proofreader API is optimized to correct grammar, spelling, and punctuation errors in text content.  To learn more about an alternative for more custom prompt engineering scenarios that may not be served by these APIs, see [Prompt a built-in language model with the Prompt API](./prompt-api.md).
 
@@ -66,21 +67,21 @@ The Proofreader API uses a small language model (SLM) that runs on the same devi
 
 The Proofreader API use a model that's provided by Microsoft Edge and built into the browser, which comes with the additional benefits over custom local solutions such as those based on WebGPU, WebNN, or WebAssembly:
 
-* **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for the user and developer.
+* **Shared one-time cost:** The browser-provided model is downloaded when the API is called for the first time, and then the model is shared across all websites that run in the browser, reducing network costs for developers and users.
 
 * **Simplified usage for web developers:** The built-in model can be run by using straightforward web APIs, and doesn't require AI/ML expertise or using third-party frameworks.
 
 
 <!-- ====================================================================== -->
-## The Phi-4-mini model
+## The Aion Instruct model
 
-The Proofreader API uses the Phi-4-mini model built into Microsoft Edge. Phi-4-mini is a powerful small language model that excels at text-based tasks.  To learn more about Phi-4-mini and its capabilities, see the model card at [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct).
+In Microsoft Edge, the Proofreader API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at [microsoft/Aion-1.0-Instruct](https://aka.ms/aion-instruct-hugging-face), at Hugging Face.
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models, the Phi family of models can potentially behave in ways that are unfair, unreliable, or offensive.  To learn more, see [Responsible AI Considerations](https://huggingface.co/microsoft/Phi-4-mini-instruct#responsible-ai-considerations).
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  You should consider the risks of passing untrusted content to the model, and validate the source and integrity of content before using the content as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
 
 
 <!-- ------------------------------ -->
@@ -90,11 +91,14 @@ The Proofreader API developer preview is intended to work on devices that have h
 
 The Proofreader API has the following requirements:
 
-* **Operating system:** Windows 10 or 11 and macOS 13.3 or later.
+* **Operating systems:**
+   * Windows 10 or 11.
+   * macOS 13.3 or later.
+   * 64-bit (x64) Linux with Vulkan GPU drivers and Microsoft Edge 159 or later.
 
-* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 10 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
+* **Storage:** At least 20 GB available on the volume that contains your Edge profile.  If the available storage drops below 5 GB, the model will be deleted to ensure that other browser features have sufficient space to function.
 
-* **GPU:** 5.5 GB of VRAM or more.
+* **GPU:** 3 GB of VRAM or more.
 
 * **Network:** Unlimited data plan or unmetered connection.  The model is not downloaded if using a metered connection.
 
@@ -104,35 +108,49 @@ Due to the experimental nature of the Proofreader API, you might observe issues 
 
 
 <!-- ------------------------------ -->
-#### Model availability
+#### Availability of the Aion Instruct model
 
-An initial download of the model is required the first time a website calls a built-in AI API.  You can monitor the model download by using the monitor option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+An initial download of the Aion Instruct model is required the first time that a website calls an API that requires an on-device model.  To monitor the downloading of the model, use the `monitor` option when creating a new Proofreader API session.  See [Monitor the progress of the model download](#monitor-the-progress-of-the-model-download), below.
+
+The model is unavailable in the following conditions:
+
+* If the **On-device AI** option is disabled under **Settings** > **Copilot and AI**.
+* If the [GenAILocalFoundationalModelSettings](/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings) or [ComponentUpdatesEnabled](/deployedge/microsoft-edge-policies/ComponentUpdatesEnabled) enterprise policies are configured to block the model download.
+* If the device doesn't meet hardware, disk space, or network requirements.
+
+
+<!-- ------------------------------ -->
+#### Consideration for Edge Canary, Dev, and Beta
+
+In Microsoft Edge Canary, Dev, and Beta, the **On-device AI** option is disabled by default under **Settings** > **Copilot and AI**, to avoid downloading the model separately for each channel.
+
+If you enable the **Proofreader API** flag in `edge://flags`, the **On-device AI** option is automatically enabled in Canary, Dev, and Beta.  See [Enable the Proofreader API](#enable-the-proofreader-api), below.
 
 
 <!-- ====================================================================== -->
 ## Enable the Proofreader API
 
-To use any of the Proofreader API in Microsoft Edge:
+To use the Proofreader API in Microsoft Edge:
 
-1. Make sure you're using the latest version of Microsoft Edge Canary or Dev (version 142 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
+1. Make sure you're using Microsoft Edge version 158 or later.
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
+1. In Microsoft Edge, open a new tab or window, and then go to `edge://flags`.
 
-1. In the search box, at the top of the page, enter **Proofreader API for Phi mini**.
+1. In the search box, at the top of the page, enter **Proofreader API**.
 
    The page is filtered to show the matching flag.
 
-1. Select **Enabled** next to the **Proofreader API for Phi mini** flag:
+1. Select **Enabled** next to the **Proofreader API** flag:
 
    ![Flags page of browser](./proofreader-api-images/flags-proofreader-api.png)
 
 1. Optionally, to log information locally that may be useful for debugging issues, also enable the **Enable on device AI model debug logs** flag.
 
-1. Restart Microsoft Edge Canary or Dev.
+1. Restart Microsoft Edge.
 
 1. To check if your device meets the hardware requirements for the Proofreader API developer preview, open a new tab, go to `edge://on-device-internals`, and check the **Device performance class** value.
 
-   If your device performance class is **High** or greater, the Proofreader API is expected to be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md).
+   If your device performance class is **Medium** or greater, the Proofreader API is expected to be supported on your device.  If you continue to notice issues, please [file a new issue](https://github.com/MicrosoftEdge/MSEdgeExplainers/issues/new?template=proofreader-api.md).
 
 
 <!-- ====================================================================== -->
@@ -142,7 +160,7 @@ To see the Proofreader API in action, and examine existing code that uses these 
 
 1. [Enable the Proofreader API](#enable-the-proofreader-api), as described above.
 
-1. In Microsoft Edge Canary or Dev browser, open a tab or window and go to the [Proofreader API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/proofreader-api/).
+1. In Microsoft Edge, open a tab or window and go to the [Proofreader API playground](https://microsoftedge.github.io/Demos/built-in-ai/playgrounds/proofreader-api/).
 
 1. In the information banner at the top, check the status.  The status initially reads **On-device API and model downloading**:
 
@@ -236,7 +254,7 @@ The available options are listed below:
 <!-- ---------- -->
 ###### Monitor the progress of the model download
 
-You can follow the progress of the model download by using the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device where it will be used, to inform users to wait.
+To follow the progress of the downloading of the model, use the `monitor` option.  This is useful when the model has not yet been fully downloaded onto the device on which the model will be used, to inform users of your website that they need to wait.
 
 ```javascript
 // Create a Proofreader session with the monitor option to monitor the model
