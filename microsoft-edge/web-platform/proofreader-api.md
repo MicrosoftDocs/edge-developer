@@ -75,13 +75,13 @@ The Proofreader API use a model that's provided by Microsoft Edge and built into
 <!-- ====================================================================== -->
 ## The Aion Instruct model
 
-In Microsoft Edge, the Proofreader API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the model card at [microsoft/Aion-1.0-Instruct](https://aka.ms/aion-instruct-hugging-face), at Hugging Face.
+In Microsoft Edge, the Proofreader API uses the Aion Instruct model, which is built into the browser.  Aion Instruct is a capable 2.3B parameter small language model which excels at text-based tasks.  To learn more about the model, see the [microsoft/Aion-1.0-Instruct-2.3B](https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B) model card, at Hugging Face.
 
 
 <!-- ------------------------------ -->
 #### Disclaimer
 
-Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  You should consider the risks of passing untrusted content to the model, and validate the source and integrity of content before using the content as model input.  To learn more about the model's Responsible AI considerations, see [Responsible AI Considerations](https://aka.ms/aion-instruct-hugging-face-disclaimers), in _microsoft/Aion-1.0-Instruct_, at Hugging Face.
+Like other language models of this size, Aion Instruct can potentially behave in ways that are unreliable, inaccurate, unfair, or offensive.  You should consider the risks of passing untrusted content to the model, and validate the source and integrity of content before using the content as model input.  To learn more, see [Bias, Risks, and Limitations](https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B#bias-risks-and-limitations), in _microsoft/Aion-1.0-Instruct-2.3B_, at Hugging Face.
 
 
 <!-- ------------------------------ -->
