@@ -190,6 +190,9 @@
             - name: Classify text with the Decisions API
               href: ./web-platform/decisions-api.md
 
+        - name: Expose site actions to AI agents with WebMCP
+          href: ./web-platform/webmcp.md
+
         - name: DevTools for agents
           items:
             - name: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
