@@ -259,7 +259,7 @@ To install Modern Web Guidance and enable its WebMCP guidance:
    npx modern-web-guidance@latest set-allow-origin-trials
    ```
 
-   For more information, see [Enable guidance for features in origin trial](https://developer.chrome.com/docs/modern-web-guidance/get-started#enable-guidance-for-features-in-origin-trial).
+   For more information, see [Enable guidance for features in origin trial](https://developer.chrome.com/docs/modern-web-guidance/get-started#enable_guidance_for_features_in_origin_trial).
 
 This opt-in enables guidance for the AI coding tool only.  It doesn't enable WebMCP in Microsoft Edge or register the site for the origin trial.
 
