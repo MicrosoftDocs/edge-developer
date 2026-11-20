@@ -120,7 +120,7 @@ To enable WebMCP on a development device:
 
 1. Restart Microsoft Edge.
 
-This flag enables WebMCP only on the device where the flag is set.  To enable WebMCP for end users of a live site, see [Register for the WebMCP origin trial](#register-for-the-webmcp-origin-trial), below.
+This flag enables WebMCP only on the device where the flag is set.  To enable WebMCP for end users of a live site, see [Enable WebMCP on your live site by registering for the WebMCP origin trial](#enable-webmcp-on-your-live-site-by-registering-for-the-webmcp-origin-trial), below.
 
 
 <!-- ====================================================================== -->
