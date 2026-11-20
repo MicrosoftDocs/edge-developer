@@ -61,16 +61,16 @@ landingContent:
             url: ../web-platform/ad-selection-api.md
 
           - text: Prompt a built-in language model with the Prompt API
-            url: ../web-platform/prompt-api.md
+            url: ../web-ai/prompt-api.md
 
           - text: Summarize, write, and rewrite text with the Writing Assistance APIs
-            url: ../web-platform/writing-assistance-apis.md
+            url: ../web-ai/writing-assistance-apis.md
 
           - text: Translate text with the Translator API
-            url: ../web-platform/translator-api.md
+            url: ../web-ai/translator-api.md
 
           - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
-            url: ../web-platform/proofreader-api.md
+            url: ../web-ai/proofreader-api.md
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
