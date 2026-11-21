@@ -13,7 +13,7 @@ Use WebMCP to expose a webpage's actions as tools that AI agents can use to comp
 
 WebMCP is a web API, but it doesn't run an AI model for the site.  Instead, it connects the site's existing functionality to agents that interact with the site through the browser.  This is different from AI web APIs for sites, which run AI models from the site's JavaScript code.  See [AI for the web](./index.md).
 
-WebMCP is a proposed web standard in the W3C Web Machine Learning Community Group.  The API is experimental, and its design and implementation might change.
+[WebMCP](https://webmachinelearning.github.io/webmcp/) is a proposed web standard in the W3C Web Machine Learning Community Group.  The API is experimental, and its design and implementation might change.
 
 **Detailed contents:**
 
