@@ -179,15 +179,15 @@ You can inspect, debug, and manually run WebMCP tools directly in Microsoft Edge
 
 1. Open DevTools on a page that uses WebMCP tools (`F12`, or **Ctrl+Shift+I** on Windows/Linux, **Command+Option+I** on macOS).
 
-1. Select the **Application** tool, and then select **WebMCP** in the sidebar.
+1. Select the **Application** tool, and then select **WebMCP** in the sidebar:
 
-<!-- TODO: Add screenshot of the Microsoft Edge DevTools Application > WebMCP pane. -->
+   ![Microsoft Edge DevTools with the Application tool and WebMCP pane open, showing invoked tools, available tools, and the Run tool panel.](./webmcp-images/devtools-webmcp.png)
 
 In the **WebMCP** pane, you can:
 
 * **Inspect available tools:** View all declarative and imperative tools currently registered on the page, including their descriptions and invocation counts.
 * **Review invoked tools:** Inspect a log of tool calls, including status (`Completed`, `Canceled`, `In Progress`, or `Error`), input parameters, return values, and schema validation errors.
-* **Run tools manually:** Select a tool from **Available Tools** (or select the play button on a previous invocation), enter input parameters, and select **Run tool** to test your tool logic directly.
+* **Run tools manually:** Select a tool from **Available tools** (or select the play button on a previous invocation), enter input parameters, and select **Run tool** to test your tool logic directly.
 
 
 <!-- ====================================================================== -->
