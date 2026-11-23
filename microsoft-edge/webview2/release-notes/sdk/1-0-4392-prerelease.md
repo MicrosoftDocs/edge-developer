@@ -16,6 +16,12 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Nov. 11,
 
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 159.0.4392.0 or later; see [Preview Runtime 159.0.4402.13 (Nov. 21, 2026)](../runtime/159.md).
 
+**Detailed contents:**
+* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+   * [Permission kind: new enum members: LocalNetwork and LoopbackNetwork](#permission-kind-new-enum-members-localnetwork-and-loopbacknetwork)
+* [Bug fixes](#bug-fixes)
+* [See also](#see-also)
+
 
 <!-- ====================================================================== -->
 ## Experimental APIs (Phase 1: Experimental in Prerelease)
@@ -44,7 +50,7 @@ _todo - fill in tab like .net tab?  "No WinRT API diffs."_
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* `COREWEBVIEW2_PERMISSION_KIND` enum: _todo: link_
+* [COREWEBVIEW2_PERMISSION_KIND enum](/webview2/reference/win32/webview2-idl?view=webview2-1.0.4392-prerelease&preserve-view=true#corewebview2_permission_kind)<!-- not at https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4392-prerelease b/c adding new members to existing enum -->
    * `COREWEBVIEW2_PERMISSION_KIND_LOCAL_NETWORK` - new enum member.
    * `COREWEBVIEW2_PERMISSION_KIND_LOOPBACK_NETWORK` - new enum member.
 
