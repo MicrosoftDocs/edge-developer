@@ -165,38 +165,38 @@
     - name: AI for the web
       items:
         - name: AI for the web
-          href: ./web-platform/index.md
+          href: ./web-ai/index.md
 
         - name: AI web APIs for sites
           items:
             - name: Prompt a built-in language model with the Prompt API
-              href: ./web-platform/prompt-api.md
+              href: ./web-ai/prompt-api.md
 
             - name: Summarize, write, and rewrite text with the Writing Assistance APIs
-              href: ./web-platform/writing-assistance-apis.md
+              href: ./web-ai/writing-assistance-apis.md
 
             - name: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
-              href: ./web-platform/proofreader-api.md
+              href: ./web-ai/proofreader-api.md
 
             - name: Translate text with the Translator API
-              href: ./web-platform/translator-api.md
+              href: ./web-ai/translator-api.md
 
             - name: Detect languages with the Language Detector API
-              href: ./web-platform/languagedetector-api.md
+              href: ./web-ai/languagedetector-api.md
 
             - name: Convert speech to text with the SpeechRecognition API
-              href: ./web-platform/speech-recognition-api.md
+              href: ./web-ai/speech-recognition-api.md
 
             - name: Classify text with the Decisions API
-              href: ./web-platform/decisions-api.md
+              href: ./web-ai/decisions-api.md
 
         - name: Expose site actions to AI agents with WebMCP
-          href: ./web-platform/webmcp.md
+          href: ./web-ai/webmcp.md
 
         - name: DevTools for agents
           items:
             - name: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
-              href: ./web-platform/devtools-mcp-server.md
+              href: ./web-ai/devtools-mcp-server.md
 # /AI for the web
 # =============================================================================
 # Microsoft Edge DevTools
