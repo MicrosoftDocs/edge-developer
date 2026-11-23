@@ -42,8 +42,6 @@ _todo: add desc_
    * `LocalNetwork` - new enum member.
    * `LoopbackNetwork` - new enum member.
 
-* [ManagedIStream Class](/dotnet/api/microsoft.web.webview2.core.managedistream?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true)
-
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 _todo - fill in tab like .net tab?  "No WinRT API diffs."_
@@ -55,12 +53,6 @@ _todo - fill in tab like .net tab?  "No WinRT API diffs."_
    * `COREWEBVIEW2_PERMISSION_KIND_LOOPBACK_NETWORK` - new enum member.
 
 ---
-
-
-<!-- ====================================================================== -->
-## Bug fixes
-
-* Fixed an initialization dependency in fixed-version WebView2 Runtime identity detection, so that updater registry-path lookups no longer require `InstallDetails` to be initialized.
 
 
 <!-- ====================================================================== -->
