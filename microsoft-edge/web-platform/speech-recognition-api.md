@@ -62,7 +62,7 @@ To use the local speech recognition model with the SpeechRecognition API, you ne
 
 1. Make sure you're using Microsoft Edge Canary or Dev (version 150.0.4076 or newer).  See [Become a Microsoft Edge Insider](https://www.microsoft.com/edge/download/insider).
 
-1. In Microsoft Edge Canary or Dev, open a new tab or window and go to `edge://flags`.
+1. In Microsoft Edge Canary or Dev, open a new tab or window, and then go to `edge://flags`.
 
 1. In the search box at the top of the page, enter **Speech Recognition with on-device model**.
 
