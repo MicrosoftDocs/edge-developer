@@ -17,16 +17,16 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Nov. 11,
 For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 159.0.4392.0 or later; see [Preview Runtime 159.0.4402.13 (Nov. 21, 2026)](../runtime/159.md).
 
 **Detailed contents:**
-* [Experimental APIs (Phase 1: Experimental in Prerelease)](#experimental-apis-phase-1-experimental-in-prerelease)
+* [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Permission kind: new enum members: LocalNetwork and LoopbackNetwork](#permission-kind-new-enum-members-localnetwork-and-loopbacknetwork)
 * [Bug fixes](#bug-fixes)
 * [See also](#see-also)
 
 
 <!-- ====================================================================== -->
-## Experimental APIs (Phase 1: Experimental in Prerelease)
+## Promotions to Phase 2 (Stable in Prerelease)
 
-The following APIs are in Phase 1: Experimental in Prerelease, and have been added in this Prerelease SDK.
+The following APIs skipped Phase 1: Experimental in Prerelease, and have been directly added to Phase 2: Stable in Prerelease, and are included in this Prerelease SDK.
 
 
 <!-- ------------------------------ -->
