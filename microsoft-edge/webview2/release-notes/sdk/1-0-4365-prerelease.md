@@ -14,7 +14,7 @@ Release notes for Microsoft Edge WebView2 Prerelease SDK, release date: Oct. 28,
 
 [NuGet package for WebView2 SDK 1.0.4365-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.4365-prerelease)
 
-For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 158.0.4365.0 or later; see [Runtime 158.n.nnnn.nn (Mmm. dd, yyyy)](../runtime/158.md).
+For full API compatibility, this Prerelease version of the WebView2 SDK requires the WebView2 Runtime that ships with Microsoft Edge version 158.0.4365.0 or later; see [Runtime 158.0.4370.33 (Nov. 21, 2026)](../runtime/158.md).
 
 **Detailed contents:**
 * [Breaking changes](#breaking-changes)
@@ -22,16 +22,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
    * [Spell-check suggestions for custom context menus](#spell-check-suggestions-for-custom-context-menus)
 * [Bug fixes](#bug-fixes)
 * [See also](#see-also)
-
-
-<!-- ====================================================================== -->
-## Breaking changes
-
-Breaking changes are planned for v159, regarding the WebView2 Runtime.
-
-See:
-* [Upcoming breaking change: Removing the `msAbydosHandwritingAttr` WebView2 browser flag](../runtime/156.md#upcoming-breaking-change-removing-the-msabydoshandwritingattr-webview2-browser-flag)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
-* [Upcoming breaking change: Required ACL setup for app-managed WebView2 Fixed Version runtimes on Windows](../runtime/156.md#upcoming-breaking-change-required-acl-setup-for-app-managed-webview2-fixed-version-runtimes-on-windows)<!-- todo later: when 159.md exists, change link from 156 to 159 --> in _Runtime 156.0.4314.42 (Oct. 23, 2026)_.
 
 
 <!-- ====================================================================== -->
@@ -99,7 +89,7 @@ Apply the selected correction by assigning its `CommandId` to `SelectedCommandId
 <!-- ====================================================================== -->
 ## See also
 
-* [Runtime 158.n.nnnn.nn (Mmm. dd, yyyy)](../runtime/158.md)
+* [Runtime 158.0.4370.33 (Nov. 21, 2026)](../runtime/158.md)
 * [Release notes for WebView2](../index.md)
    * [Release notes for the WebView2 Runtime](../runtime/index.md)
    * [Release notes for WebView2 SDKs](./index.md)
