@@ -60,7 +60,7 @@ landingContent:
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - rncn
-  - title: Web AI APIs
+  - title: AI web APIs for sites
     linkLists:
       - linkListType: how-to-guide
         links:

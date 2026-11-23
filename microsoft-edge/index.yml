@@ -215,7 +215,7 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
-        - title: Web AI APIs
+        - title: AI web APIs for sites
           links:
             - text: Prompt a built-in language model with the Prompt API
               url: ./web-ai/prompt-api.md
