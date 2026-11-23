@@ -57,10 +57,9 @@ landingContent:
           - text: Test experimental APIs and features by using origin trials
             url: ../origin-trials/index.md
 
-
 # -----------------------------------------------------------------------------
-# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - rncn
-  - title: AI web APIs for sites
+# Card for toc bucket 3 - r_c_
+  - title: AI for the web
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -85,9 +84,11 @@ landingContent:
           - text: Classify text with the Decisions API
             url: ../web-ai/decisions-api.md
 
+          - text: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
+            url: ../web-ai/devtools-mcp-server.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 3 - r1c2
+# Card for toc bucket 4 - r1c2
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
@@ -117,7 +118,7 @@ landingContent:
             url: ../devtools/shortcuts/index.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 4 - r1c3
+# Card for toc bucket 5 - r1c3
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
@@ -159,7 +160,7 @@ landingContent:
 # =============================================================================
 # Row 2
 # -----------------------------------------------------------------------------
-# Card for toc bucket 5 - r2c1
+# Card for toc bucket 6 - r2c1
   - title: Progressive Web Apps (PWAs)
     linkLists:
       - linkListType: overview
@@ -197,7 +198,7 @@ landingContent:
             url: ../progressive-web-apps/how-to/offline.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 6 - r2c2
+# Card for toc bucket 7 - r2c2
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -232,7 +233,7 @@ landingContent:
             url: ../webview2/webview2-api-reference.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 7 - r2c3
+# Card for toc bucket 8 - r2c3
   - title: Test and automation
     linkLists:
       - linkListType: how-to-guide
@@ -258,7 +259,7 @@ landingContent:
 # =============================================================================
 # Row 3
 # -----------------------------------------------------------------------------
-# Card for toc bucket 8 - r3c1
+# Card for toc bucket 9 - r3c1
   - title: Edge-specific web development tips
     linkLists:
 #     - linkListType: overview
@@ -292,7 +293,7 @@ landingContent:
             url: ../web-platform/json-viewer.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 9 - r3c2
+# Card for toc bucket 10 - r3c2
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
@@ -314,7 +315,7 @@ landingContent:
             url: ../visual-studio/index.md
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 10 - r3c3
+# Card for toc bucket 11 - r3c3
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
@@ -332,7 +333,7 @@ landingContent:
 # =============================================================================
 # Row 4
 # -----------------------------------------------------------------------------
-# Card for toc bucket 11 - r4c1
+# Card for toc bucket 12 - r4c1
   - title: DualEngine
     linkLists:
       - linkListType: overview

@@ -215,7 +215,7 @@ conceptualContent:
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
-        - title: AI web APIs for sites
+        - title: AI for the web
           links:
             - text: Prompt a built-in language model with the Prompt API
               url: ./web-ai/prompt-api.md
@@ -245,8 +245,12 @@ conceptualContent:
               url: ./web-ai/decisions-api.md
               itemType: how-to-guide
 
+            - text: Let agents inspect your site and WebView2 app with Chrome DevTools MCP
+              url: ./web-ai/devtools-mcp-server.md
+              itemType: how-to-guide
+
 # -----------------------------------------------------------------------------
-# Card for toc bucket 3 - r1c2
+# Card for toc bucket 4 - r1c2
         - title: Microsoft Edge DevTools
           links:
             - text: Microsoft Edge Developer documentation  # docset landing page (link is in hub page only)
@@ -278,7 +282,7 @@ conceptualContent:
               itemType: reference
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 4 - r1c3
+# Card for toc bucket 5 - r1c3
         - title: Microsoft Edge extensions
           links:
             - text: Microsoft Edge extensions documentation  # extensions landing page
@@ -322,7 +326,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 5 - r1c4
+# Card for toc bucket 6 - r1c4
         - title: Progressive Web Apps (PWAs)
           links:
             - text: Progressive Web Apps (PWAs) documentation  # pwa landing page
@@ -360,7 +364,7 @@ conceptualContent:
 # =============================================================================
 # Row 2 (4 cards)
 # -----------------------------------------------------------------------------
-# Card for toc bucket 6 - r2c1
+# Card for toc bucket 7 - r2c1
         - title: WebView2
           links:
             - text: WebView2 documentation  # wv2 landing page
@@ -396,7 +400,7 @@ conceptualContent:
               itemType: reference
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 7 - r2c2
+# Card for toc bucket 8 - r2c2
         - title: Test and automation
           links:
             - text: Test and automation in Microsoft Edge
@@ -424,7 +428,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 8 - r2c3
+# Card for toc bucket 9 - r2c3
         - title: Edge-specific web development tips
           links:
 #           - text: Edge-specific web development tips  # jump page for overview of bucket, omit bc 10 max
@@ -464,7 +468,7 @@ conceptualContent:
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 9 - r2c4
+# Card for toc bucket 10 - r2c4
         - title: Microsoft Edge IDE integration
           links:
             - text: Microsoft Edge IDE integration
@@ -490,7 +494,7 @@ conceptualContent:
 # =============================================================================
 # Row 3 (4 cards max) - hid b/c adding cards changes layout to 3 per row instead of 4 per row
 # -----------------------------------------------------------------------------
-# Card for toc bucket 10 - r_c_
+# Card for toc bucket 11 - r_c_
 # Card r2c4
 #       - title: Accessibility in Microsoft Edge
 #         links:
@@ -507,7 +511,7 @@ conceptualContent:
 #             itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
-# Card for toc bucket 11 - r_c_
+# Card for toc bucket 12 - r_c_
 # Card r3c1
 #         - title: DualEngine
 #           links:
