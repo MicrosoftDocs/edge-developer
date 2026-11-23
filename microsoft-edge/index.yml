@@ -198,7 +198,7 @@ conceptualContent:
 # =============================================================================
 # Row 1 (4 cards)
 # -----------------------------------------------------------------------------
-# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
+# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - rncn
         - title: Web platform updates
           links:
             - text: Release notes for Microsoft Edge web platform
@@ -213,25 +213,37 @@ conceptualContent:
               url: ./origin-trials/index.md
               itemType: whats-new
 
-            - text: Provide user-relevant ads with the Ad Selection API
-              url: ./web-platform/ad-selection-api.md
-              itemType: whats-new
-
+# -----------------------------------------------------------------------------
+# Card for toc bucket 1 (Release notes) & 2 (Experimental APIs for Microsoft Edge) - r1c1
+        - title: Web AI APIs
+          links:
             - text: Prompt a built-in language model with the Prompt API
               url: ./web-ai/prompt-api.md
-              itemType: whats-new
+              itemType: how-to-guide
 
             - text: Summarize, write, and rewrite text with the Writing Assistance APIs
               url: ./web-ai/writing-assistance-apis.md
-              itemType: whats-new
+              itemType: how-to-guide
 
             - text: Translate text with the Translator API
               url: ./web-ai/translator-api.md
-              itemType: whats-new
+              itemType: how-to-guide
 
             - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
               url: ./web-ai/proofreader-api.md
-              itemType: whats-new
+              itemType: how-to-guide
+
+            - text: Detect languages with the Language Detector API
+              url: ../web-ai/languagedetector-api.md
+              itemType: how-to-guide
+
+            - text: Convert speech to text with the SpeechRecognition API
+              url: ../web-ai/speech-recognition-api.md
+              itemType: how-to-guide
+
+            - text: Classify text with the Decisions API
+              url: ../web-ai/decisions-api.md
+              itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
 # Card for toc bucket 3 - r1c2
