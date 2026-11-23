@@ -329,9 +329,9 @@ The complete schema generation rules are still evolving.  Use the **Tools** tab 
 <!-- ------------------------------ -->
 #### Control form submission by an agent
 
-When an agent invokes a declarative tool, Microsoft Edge fills the form with the agent's input values and brings the form's submit button into focus.
+When an agent invokes a declarative tool, Microsoft Edge fills the form with the agent's input values.
 
-By default, the end user must review and submit the form.  To submit automatically after the agent fills the form, add the boolean `toolautosubmit` attribute:
+By default, Edge focuses the submit button so the end user can review and submit the form.  To submit automatically instead, add the boolean `toolautosubmit` attribute:
 
 ```html
 <form toolname="search-flights"
