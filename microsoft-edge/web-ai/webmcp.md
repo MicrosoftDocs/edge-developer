@@ -23,6 +23,7 @@ WebMCP is a web API, but it doesn't run an AI model for the site.  Instead, it c
 * [Availability of WebMCP](#availability-of-webmcp)
 * [Enable WebMCP locally](#enable-webmcp-locally)
 * [Enable WebMCP on your live site by registering for the WebMCP origin trial](#enable-webmcp-on-your-live-site-by-registering-for-the-webmcp-origin-trial)
+* [Inspect and test tools in Microsoft Edge DevTools](#inspect-and-test-tools-in-microsoft-edge-devtools)
 * [Test tools with WebMCP Explorer](#test-tools-with-webmcp-explorer)
 * [Choose a WebMCP API](#choose-a-webmcp-api)
 * [Generate tool definitions by using your AI coding tool](#generate-tool-definitions-by-using-your-ai-coding-tool)
@@ -36,7 +37,11 @@ WebMCP is a web API, but it doesn't run an AI model for the site.  Instead, it c
     * [Describe tool behavior with annotations](#describe-tool-behavior-with-annotations)
     * [Unregister a JavaScript tool](#unregister-a-javascript-tool)
     * [Handle cancellation of a tool call](#handle-cancellation-of-a-tool-call)
-* [Security considerations for WebMCP](#security-considerations-for-webmcp)
+    * [Share, discover, and execute tools across origins](#share-discover-and-execute-tools-across-origins)
+* [Security best practices for WebMCP tools](#security-best-practices-for-webmcp-tools)
+    * [Protect user actions and sessions](#protect-user-actions-and-sessions)
+    * [Help agents defend against prompt injection](#help-agents-defend-against-prompt-injection)
+    * [Control data and origin boundaries](#control-data-and-origin-boundaries)
 * [Send feedback](#send-feedback)
 * [See also](#see-also)
 
@@ -499,7 +504,7 @@ The tool definition includes the following properties:
 | `execute` | Yes | A synchronous or asynchronous function that runs the action.  It receives the input parameters and an execution options object that contains a `signal`.  The result is serialized as JSON and returned to the agent. |
 | `annotations` | No | Hints about the tool's behavior, as described below. |
 
-Treat tool input as untrusted.  A schema describes the input but doesn't replace validation in the tool or on the server.  For more information, see [Security considerations for WebMCP](#security-considerations-for-webmcp), below.
+Treat tool input as untrusted.  A schema describes the input but doesn't replace validation in the tool or on the server.  For more information, see [Security best practices for WebMCP tools](#security-best-practices-for-webmcp-tools), below.
 
 For the current API definition, see [WebMCP](https://webmachinelearning.github.io/webmcp/).
 
@@ -624,7 +629,7 @@ Only expose tools to origins that you trust to read user data or take actions on
 
 
 <!-- ====================================================================== -->
-## Security considerations for WebMCP
+## Security best practices for WebMCP tools
 
 Tools run with the page's client-side access, so an agent can trigger actions in the end user's signed-in session.  Treat every tool call as untrusted input, because an agent calling your tool could be influenced by prompt injection from another webpage or untrusted content.
 
@@ -644,7 +649,7 @@ Tools run with the page's client-side access, so an agent can trigger actions in
 While the agent is responsible for defending against prompt injection, your site can reduce the attack surface:
 
 * Don't interpolate user-generated or untrusted content into tool names, descriptions (`description` or `tooldescription`), or parameter descriptions.
-* Return minimal, structured JSON rather than raw HTML or large freeform text blocks.
+* Return structured data with only the fields needed, rather than raw HTML or large freeform text blocks that can carry hidden instructions or unrelated user-generated content.
 * Set `untrustedContentHint: true` when a tool returns user-generated or external content, without relying on the hint alone to prevent prompt injection.
 
 
