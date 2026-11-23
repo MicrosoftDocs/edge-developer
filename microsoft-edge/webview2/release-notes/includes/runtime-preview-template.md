@@ -1,6 +1,6 @@
 ---
 title: Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.n.nnnn.nn.
+description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -11,6 +11,7 @@ ms.date: 01/01/2026
 # Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
 <!-- todo: when this runtime gets released as a stable runtime, follow /release-notes/includes/runtime-template.md:
 remove "preview" from title
+remove "preview" from description: yaml field
 update version number
 update date
 update lead-in sentence
