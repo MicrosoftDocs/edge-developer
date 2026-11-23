@@ -225,24 +225,24 @@ conceptualContent:
               url: ./web-ai/writing-assistance-apis.md
               itemType: how-to-guide
 
-            - text: Translate text with the Translator API
-              url: ./web-ai/translator-api.md
-              itemType: how-to-guide
-
             - text: Correct grammar, spelling, and punctuation errors in text with the Proofreader API
               url: ./web-ai/proofreader-api.md
               itemType: how-to-guide
 
+            - text: Translate text with the Translator API
+              url: ./web-ai/translator-api.md
+              itemType: how-to-guide
+
             - text: Detect languages with the Language Detector API
-              url: ../web-ai/languagedetector-api.md
+              url: ./web-ai/languagedetector-api.md
               itemType: how-to-guide
 
             - text: Convert speech to text with the SpeechRecognition API
-              url: ../web-ai/speech-recognition-api.md
+              url: ./web-ai/speech-recognition-api.md
               itemType: how-to-guide
 
             - text: Classify text with the Decisions API
-              url: ../web-ai/decisions-api.md
+              url: ./web-ai/decisions-api.md
               itemType: how-to-guide
 
 # -----------------------------------------------------------------------------
