@@ -634,7 +634,7 @@ Tools run with the page's client-side access, so an agent can trigger actions in
 
 * Don't register tools for actions that aren't available to the end user in the current page or authentication state.
 * Validate all tool inputs in both client-side code and server-side handlers, and keep all existing authentication and authorization checks.
-* Set `consequentialHint: true` on JavaScript tools that execute high-stakes or irreversible actions so the browser or agent can request user confirmation.  Because annotations are advisory hints, omit `toolautosubmit` on consequential HTML forms and require server-side verification for the highest-risk actions.
+* Set `consequentialHint: true` on JavaScript tools that execute high-stakes or irreversible actions so the browser or agent can request user confirmation.  Because annotations are advisory hints, require server-side verification for the highest-risk actions.
 * Enforce rate limits, make mutating tools idempotent or bound to fresh state tokens, and check `signal.aborted` before committing irreversible work.
 
 
