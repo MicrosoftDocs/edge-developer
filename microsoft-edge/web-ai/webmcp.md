@@ -91,7 +91,7 @@ Only delegate access to trusted embedded content.  The iframe permission doesn't
 <!-- ====================================================================== -->
 ## Availability of WebMCP
 
-WebMCP is available for testing in Microsoft Edge version 150 or later:
+WebMCP is available for testing in Microsoft Edge version 159 or later:
 
 * For local development, enable the **WebMCP for testing** flag on the development device.
 * For a live site, register for the WebMCP origin trial and add its token to the site.
@@ -106,7 +106,7 @@ Keep the site's normal controls available, so that the site works without WebMCP
 
 To enable WebMCP on a development device:
 
-1. Make sure you're using Microsoft Edge version 150 or later.
+1. Make sure you're using Microsoft Edge version 159 or later.
 
 1. In Microsoft Edge, open a new tab or window, and then go to `edge://flags`.
 
@@ -165,6 +165,26 @@ To register a site:
 When a supported version of Microsoft Edge finds a valid token, it enables WebMCP for that page.
 
 These registration steps follow [Registering for an origin trial](../origin-trials/index.md#registering-for-an-origin-trial).  For token configuration, expiration, and renewal, see [Test experimental APIs and features by using origin trials](../origin-trials/index.md).
+
+
+<!-- ====================================================================== -->
+## Inspect and test tools in Microsoft Edge DevTools
+
+You can inspect, debug, and manually run WebMCP tools directly in Microsoft Edge DevTools, without installing an extension or configuring an LLM provider:
+
+1. Open DevTools on a page that uses WebMCP tools (`F12`, or **Ctrl+Shift+I** on Windows/Linux, **Command+Option+I** on macOS).
+
+1. Select the **Application** tool, and then select **WebMCP** in the sidebar.
+
+<!-- TODO: Add screenshot of the Microsoft Edge DevTools Application > WebMCP pane. -->
+
+In the **WebMCP** pane, you can:
+
+* **Inspect available tools:** View all declarative and imperative tools currently registered on the page, including their descriptions and invocation counts.
+* **Review invoked tools:** Inspect a log of tool calls, including status (`Completed`, `Canceled`, `In Progress`, or `Error`), input parameters, return values, and schema validation errors.
+* **Run tools manually:** Select a tool from **Available Tools** (or select the play button on a previous invocation), enter input parameters, and select **Run tool** to test your tool logic directly.
+
+If you use Chrome DevTools MCP with coding agents, you can also enable experimental WebMCP inspection tools (`list_webmcp_tools` and `execute_webmcp_tool`) by passing `--categoryExperimentalWebmcp` in the server arguments.  See [Let agents inspect your site and WebView2 app with Chrome DevTools MCP](./devtools-mcp-server.md).
 
 
 <!-- ====================================================================== -->
@@ -323,7 +343,7 @@ Microsoft Edge generates a tool input schema from the form's controls:
 * The `required` attribute identifies required parameters.
 * A `<select>` element's option values provide the allowed values.
 
-The complete schema generation rules are still evolving.  Use the **Tools** tab in WebMCP Explorer to inspect how Microsoft Edge exposes the form.
+The complete schema generation rules are still evolving.  Use the **Tools** tab in WebMCP Explorer to inspect how Microsoft Edge exposes the form.  To unregister a declarative tool, remove the `toolname` or `tooldescription` attribute from the `<form>` element.
 
 
 <!-- ------------------------------ -->
@@ -345,7 +365,29 @@ By default, Edge focuses the submit button so the end user can review and submit
 
 Don't use automatic submission as a replacement for confirmation of a purchase, payment, or other consequential action.
 
-While the tool is active, its form matches the `:tool-form-active` CSS pseudo-class, and its submit button matches `:tool-submit-active`.  Use these pseudo-classes to highlight the form.  The `toolactivated` and `toolcancel` events on `document.modelContext` also let the page respond to tool activity.
+While the tool is active, its form matches the `:tool-form-active` CSS pseudo-class, and its submit button matches `:tool-submit-active`.  Use these pseudo-classes to highlight the form:
+
+```css
+form:tool-form-active {
+  outline: 2px dashed blue;
+}
+
+button:tool-submit-active {
+  outline: 2px dashed red;
+}
+```
+
+The `toolactivated` and `toolcancel` events on `document.modelContext` also let the page respond to tool activity:
+
+```javascript
+document.modelContext.addEventListener("toolactivated", ({ toolName }) => {
+  console.log(`Tool activated: ${toolName}`);
+});
+
+document.modelContext.addEventListener("toolcancel", ({ toolName }) => {
+  console.log(`Tool canceled: ${toolName}`);
+});
+```
 
 
 <!-- ------------------------------ -->
@@ -453,6 +495,7 @@ The tool definition includes the following properties:
 | `title` | No | A short label that the browser can display in its UI.  Localize the label for the end user's language. |
 | `description` | Yes | A description of what the tool does. |
 | `inputSchema` | No | A JSON Schema object that describes the input parameters.  Omit this property if the tool takes no input. |
+| `outputSchema` | No | A JSON Schema object that describes the structure of the tool's return value.  Useful for tools that return structured data or IDs for follow-up calls; omit it for simple actions to save context tokens. |
 | `execute` | Yes | A synchronous or asynchronous function that runs the action.  It receives the input parameters and an execution options object that contains a `signal`.  The result is serialized as JSON and returned to the agent. |
 | `annotations` | No | Hints about the tool's behavior, as described below. |
 
@@ -542,19 +585,75 @@ WebMCP uses signals for two different purposes:
 After cancellation, the agent doesn't receive the tool's return value.  Cancellation doesn't undo work that's already completed.  For a payment, booking, or other irreversible action, check `signal.aborted` before committing the action, and keep the site's normal confirmation and server-side checks.
 
 
+<!-- ------------------------------ -->
+#### Share, discover, and execute tools across origins
+
+By default, tools are only visible to same-origin documents.  To expose a tool to a trusted cross-origin document (such as a parent page or embedded iframe), pass secure origins in the `exposedTo` option of `registerTool()`:
+
+```javascript
+await document.modelContext.registerTool(toolDefinition, {
+  exposedTo: ["https://example.com"]
+});
+```
+
+An in-page agent can discover available tools with `document.modelContext.getTools()`, execute a tool with `executeTool()`, and listen for changes with the `toolchange` event.  Cross-origin tools are included only when both sides opt in: the registering page lists the caller in `exposedTo`, and the caller requests that origin in `fromOrigins`:
+
+```javascript
+// Retrieve same-origin tools and opted-in tools from a partner origin:
+const tools = await document.modelContext.getTools({
+  fromOrigins: ["https://partner.example"]
+});
+
+const flightTool = tools.find(tool => tool.name === "search-flights");
+if (flightTool) {
+  const controller = new AbortController();
+  const result = await document.modelContext.executeTool(
+    flightTool,
+    { origin: "SEA", destination: "JFK", departureDate: "2026-06-15" },
+    { signal: controller.signal }
+  );
+}
+
+// Listen for tool registration or unregistration changes:
+document.modelContext.addEventListener("toolchange", () => {
+  // Refresh the agent's tool list.
+});
+```
+
+Only expose tools to origins that you trust to read user data or take actions on behalf of the end user.
+
+
 <!-- ====================================================================== -->
 ## Security considerations for WebMCP
 
-Tools run with the page's client-side access.  An agent can therefore trigger actions in the end user's signed-in session.
+Tools run with the page's client-side access, so an agent can trigger actions in the end user's signed-in session.  Treat every tool call as untrusted input, because an agent calling your tool could be influenced by prompt injection from another webpage or untrusted content.
 
-When exposing an action as a tool:
 
-* Validate input in the tool and on the server.  Don't assume that an agent provides valid or safe values.
-* Keep the site's authentication, authorization, and other server-side checks.
-* Require confirmation for consequential actions.  An annotation alone doesn't enforce confirmation.
-* Return only the information that the agent needs.  Tool results can be sent to the agent's model provider.
-* Treat end-user content and other external content in tool results as untrusted.  Set `untrustedContentHint` when appropriate, but don't rely on the hint to prevent prompt injection.
-* Don't expose debugging tools or sensitive actions to production agents unless they're needed and have suitable access controls.
+<!-- ------------------------------ -->
+#### Protect user actions and sessions
+
+* Don't register tools for actions that aren't available to the end user in the current page or authentication state.
+* Validate all tool inputs in both client-side code and server-side handlers, and keep all existing authentication and authorization checks.
+* Set `consequentialHint: true` as a hint for consequential actions, and pair it with site-enforced confirmation (for example, omit `toolautosubmit` on consequential forms, or require an explicit user confirmation step that another tool can't bypass).
+* Enforce rate limits, make mutating tools idempotent or bound to fresh state tokens, and check `signal.aborted` before committing irreversible work.
+
+
+<!-- ------------------------------ -->
+#### Help agents defend against prompt injection
+
+While the agent is responsible for defending against prompt injection, your site can reduce the attack surface:
+
+* Don't interpolate user-generated or untrusted content into tool names, descriptions (`description` or `tooldescription`), or parameter descriptions.
+* Return minimal, structured JSON rather than raw HTML or large freeform text blocks.
+* Set `untrustedContentHint: true` when a tool returns user-generated or external content, without relying on the hint alone to prevent prompt injection.
+
+
+<!-- ------------------------------ -->
+#### Control data and origin boundaries
+
+* Request only the input parameters the tool actually needs, and return only the information the agent needs (tool results can be sent to the agent's model provider).
+* Only expose tools via `exposedTo` or delegate `allow="tools"` to origins you trust to read that user data or act on the user's behalf.  Browser extensions with host permissions can still inspect and invoke a page's tools.
+* Don't expose `debugging: true` tools or sensitive internal actions in production unless they're needed and protected by suitable access controls.
 
 For the community's current discussion, see [Security and Privacy Considerations](https://github.com/webmachinelearning/webmcp#security-and-privacy-considerations) in the _WebMCP_ repo.
 
@@ -577,3 +676,5 @@ For issues with WebMCP Explorer or the demos, use the [Issues](https://github.co
 * [WebMCP Labs](https://github.com/MicrosoftEdge/webmcp-labs).
 * [Test experimental APIs and features by using origin trials](../origin-trials/index.md).
 * [Let agents inspect your site and WebView2 app with Chrome DevTools MCP](./devtools-mcp-server.md).
+* [webmcp-types](https://www.npmjs.com/package/webmcp-types) on npm, for TypeScript typings.
+* Experimental framework integrations: [React (`use-webmcp-tool`)](https://www.npmjs.com/package/use-webmcp-tool), [Angular](https://angular.dev/ai/webmcp), and [Vue (`useWebMCP`)](https://vueuse.org/core/usewebmcp).
