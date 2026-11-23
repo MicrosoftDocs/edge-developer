@@ -79,7 +79,7 @@ Registering tools doesn't install or configure an agent.  To test the tools with
 
 WebMCP tools belong to the webpage that registers them:
 
-* Tools don't persist when the end user goes to another page.  Each page must register its own tools.
+* Tools are scoped to the registering document, so each new page must register its own tools.
 * A page can update its registered tools when its application state changes.  For example, a single-page application can register and unregister tools when the displayed content changes.
 * Tools have the same access as the page's other client-side code.  They don't bypass the site's authentication or authorization checks.
 * WebMCP requires a secure context, such as HTTPS or localhost.
