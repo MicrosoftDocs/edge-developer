@@ -1,0 +1,49 @@
+{
+  "redirections": [
+    {
+      "source_path": "../microsoft-edge/web-platform/index.md",
+      "redirect_url": "/microsoft-edge/web-ai/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/prompt-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/prompt-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/writing-assistance-apis.md",
+      "redirect_url": "/microsoft-edge/web-ai/writing-assistance-apis",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/proofreader-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/proofreader-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/translator-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/translator-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/languagedetector-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/languagedetector-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/speech-recognition-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/speech-recognition-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/decisions-api.md",
+      "redirect_url": "/microsoft-edge/web-ai/decisions-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "../microsoft-edge/web-platform/devtools-mcp-server.md",
+      "redirect_url": "/microsoft-edge/web-ai/devtools-mcp-server",
+      "redirect_document_id": true
+    }
+  ]
+}
