@@ -189,8 +189,6 @@ In the **WebMCP** pane, you can:
 * **Review invoked tools:** Inspect a log of tool calls, including status (`Completed`, `Canceled`, `In Progress`, or `Error`), input parameters, return values, and schema validation errors.
 * **Run tools manually:** Select a tool from **Available Tools** (or select the play button on a previous invocation), enter input parameters, and select **Run tool** to test your tool logic directly.
 
-If you use Chrome DevTools MCP with coding agents, you can also enable experimental WebMCP inspection tools (`list_webmcp_tools` and `execute_webmcp_tool`) by passing `--categoryExperimentalWebmcp` in the server arguments.  See [Let agents inspect your site and WebView2 app with Chrome DevTools MCP](./devtools-mcp-server.md).
-
 
 <!-- ====================================================================== -->
 ## Test tools with WebMCP Explorer
