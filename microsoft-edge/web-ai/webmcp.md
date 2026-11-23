@@ -25,19 +25,18 @@ WebMCP is a web API, but it doesn't run an AI model for the site.  Instead, it c
 * [Enable WebMCP on your live site by registering for the WebMCP origin trial](#enable-webmcp-on-your-live-site-by-registering-for-the-webmcp-origin-trial)
 * [Inspect and test tools in Microsoft Edge DevTools](#inspect-and-test-tools-in-microsoft-edge-devtools)
 * [Test tools with WebMCP Explorer](#test-tools-with-webmcp-explorer)
-* [Choose a WebMCP API](#choose-a-webmcp-api)
 * [Generate tool definitions by using your AI coding tool](#generate-tool-definitions-by-using-your-ai-coding-tool)
-* [Define WebMCP tools by using the HTML form API](#define-webmcp-tools-by-using-the-html-form-api)
-    * [Register an HTML form as a tool](#register-an-html-form-as-a-tool)
-    * [How form controls become tool parameters](#how-form-controls-become-tool-parameters)
-    * [Control form submission by an agent](#control-form-submission-by-an-agent)
-    * [Customize a form tool's return value](#customize-a-form-tools-return-value)
 * [Define WebMCP tools by using the JavaScript API](#define-webmcp-tools-by-using-the-javascript-api)
     * [Register a JavaScript tool](#register-a-javascript-tool)
     * [Describe tool behavior with annotations](#describe-tool-behavior-with-annotations)
     * [Unregister a JavaScript tool](#unregister-a-javascript-tool)
     * [Handle cancellation of a tool call](#handle-cancellation-of-a-tool-call)
     * [Share, discover, and execute tools across origins](#share-discover-and-execute-tools-across-origins)
+* [Define WebMCP tools by using the HTML form API](#define-webmcp-tools-by-using-the-html-form-api)
+    * [Register an HTML form as a tool](#register-an-html-form-as-a-tool)
+    * [How form controls become tool parameters](#how-form-controls-become-tool-parameters)
+    * [Control form submission by an agent](#control-form-submission-by-an-agent)
+    * [Customize a form tool's return value](#customize-a-form-tools-return-value)
 * [Security best practices for WebMCP tools](#security-best-practices-for-webmcp-tools)
     * [Protect user actions and sessions](#protect-user-actions-and-sessions)
     * [Help agents defend against prompt injection](#help-agents-defend-against-prompt-injection)
@@ -249,17 +248,6 @@ To update the extension, pull the latest changes in the cloned repo, and then re
 
 
 <!-- ====================================================================== -->
-## Choose a WebMCP API
-
-You can expose site actions to agents by using two different APIs:
-
-| API | Use when | How to register a tool |
-|---|---|---|
-| HTML form attributes | Use when your site handles actions through HTML forms. | Add WebMCP HTML attributes to forms and input elements. |
-| JavaScript web API | Use when the site handles actions through JavaScript code. | Call `document.modelContext.registerTool()` with a tool definition and an execution function. |
-
-
-<!-- ====================================================================== -->
 ## Generate tool definitions by using your AI coding tool
 
 If you use an AI coding tool to build your site, [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance) can help that tool define WebMCP tools for you.  Modern Web Guidance is a set of skills that provides current web platform guidance and browser compatibility information to AI coding tools.
@@ -285,146 +273,6 @@ To install Modern Web Guidance and enable its WebMCP guidance:
    For more information, see [Enable guidance for features in origin trial](https://developer.chrome.com/docs/modern-web-guidance/get-started#enable_guidance_for_features_in_origin_trial).
 
 This opt-in enables guidance for the AI coding tool only.  It doesn't enable WebMCP in Microsoft Edge or register the site for the origin trial.
-
-
-<!-- ====================================================================== -->
-## Define WebMCP tools by using the HTML form API
-
-If your site uses HTML forms to handle the actions which you want to expose as WebMCP tools, you can declare those forms as tools using the HTML form API.
-
-
-<!-- ------------------------------ -->
-#### Register an HTML form as a tool
-
-Use the declarative API to expose an existing HTML form.  Add `toolname` and `tooldescription` to the `<form>`, and describe its input parameters by using `toolparamdescription`:
-
-```html
-<form toolname="search-flights"
-      tooldescription="Searches for one-way or round-trip flights."
-      action="/search"
-      method="post">
-  <label for="origin">Origin</label>
-  <input id="origin" name="origin" required
-         toolparamdescription="Departure airport or city">
-
-  <label for="destination">Destination</label>
-  <input id="destination" name="destination" required
-         toolparamdescription="Arrival airport or city">
-
-  <label for="departureDate">Departure date</label>
-  <input type="date" id="departureDate" name="departureDate" required
-         toolparamdescription="Departure date">
-
-  <label for="returnDate">Return date</label>
-  <input type="date" id="returnDate" name="returnDate"
-         toolparamdescription="Return date, for round-trip flights">
-
-  <button type="submit">Search</button>
-</form>
-```
-
-The example assumes that the site handles flight searches at `/search`.  Browsers that don't support WebMCP ignore the tool attributes and use the form normally.
-
-The declarative API supports these attributes:
-
-| Attribute | Applies to | Required | Description |
-|---|---|---|---|
-| `toolname` | `<form>` | Yes | A unique tool name, with the same character and length limits as a JavaScript tool name. |
-| `tooldescription` | `<form>` | Yes | A description of what the form does. |
-| `toolautosubmit` | `<form>` | No | Allows the browser to submit the form automatically when an agent invokes the tool. |
-| `toolparamdescription` | Form controls, such as `<input>`, `<select>`, and `<textarea>` | No | Describes a tool input parameter.  If omitted, Microsoft Edge uses the control's label text or, if no label is available, its `aria-description`. |
-
-Keep the form's labels and other accessibility information.  Tool descriptions don't replace labels for end users.
-
-
-<!-- ------------------------------ -->
-#### How form controls become tool parameters
-
-Microsoft Edge generates a tool input schema from the form's controls:
-
-* A control's `name` provides the parameter name.
-* The `required` attribute identifies required parameters.
-* A `<select>` element's option values provide the allowed values.
-
-The complete schema generation rules are still evolving.  Use the **Tools** tab in WebMCP Explorer to inspect how Microsoft Edge exposes the form.  To unregister a declarative tool, remove the `toolname` or `tooldescription` attribute from the `<form>` element.
-
-
-<!-- ------------------------------ -->
-#### Control form submission by an agent
-
-When an agent invokes a declarative tool, Microsoft Edge fills the form with the agent's input values.
-
-By default, Edge focuses the submit button so the end user can review and submit the form.  To submit automatically instead, add the boolean `toolautosubmit` attribute:
-
-```html
-<form toolname="search-flights"
-      tooldescription="Searches for one-way or round-trip flights."
-      toolautosubmit
-      action="/search"
-      method="post">
-  <!-- Keep the form's labeled controls and submit button here. -->
-</form>
-```
-
-Don't use automatic submission as a replacement for confirmation of a purchase, payment, or other consequential action.
-
-While the tool is active, its form matches the `:tool-form-active` CSS pseudo-class, and its submit button matches `:tool-submit-active`.  Use these pseudo-classes to highlight the form:
-
-```css
-form:tool-form-active {
-  outline: 2px dashed blue;
-}
-
-button:tool-submit-active {
-  outline: 2px dashed red;
-}
-```
-
-The `toolactivated` and `toolcancel` events on `document.modelContext` also let the page respond to tool activity:
-
-```javascript
-document.modelContext.addEventListener("toolactivated", ({ toolName }) => {
-  console.log(`Tool activated: ${toolName}`);
-});
-
-document.modelContext.addEventListener("toolcancel", ({ toolName }) => {
-  console.log(`Tool canceled: ${toolName}`);
-});
-```
-
-
-<!-- ------------------------------ -->
-#### Customize a form tool's return value
-
-The declarative API adds two members to `SubmitEvent`:
-
-| Member | Description |
-|---|---|
-| `agentInvoked` | A boolean that indicates whether an agent triggered the form submission. |
-| `respondWith()` | A method that accepts a promise for the tool's return value.  Call `preventDefault()` before calling this method. |
-
-If the form already handles submission in JavaScript, reuse that handler to return results to the agent.  For example, the following handler uses the same `getAndDisplayFlights()` function as the JavaScript tool:
-
-```javascript
-const form = document.querySelector('form[toolname="search-flights"]');
-
-form.addEventListener("submit", event => {
-  if (!event.agentInvoked) {
-    return;
-  }
-
-  event.preventDefault();
-
-  const input = Object.fromEntries(new FormData(form));
-  event.respondWith(getAndDisplayFlights(input));
-});
-```
-
-This example assumes that `getAndDisplayFlights()` validates the input, displays results or errors on the page, and returns a promise for a JSON-serializable result.  If the search fails, the function must reject the promise instead of reporting success.
-
-For an end-user submission, the handler leaves the form's normal submission behavior unchanged.  For an agent submission, it prevents navigation and returns the function's result to the agent.
-
-The design of responses from forms that navigate to another page is still under discussion.  See [Getting the form response to the agent](https://github.com/webmachinelearning/webmcp/blob/main/declarative-api-explainer.md#getting-the-form-response-to-the-agent) in _WebMCP declarative API_.
 
 
 <!-- ====================================================================== -->
@@ -624,6 +472,146 @@ document.modelContext.addEventListener("toolchange", () => {
 ```
 
 Only expose tools to origins that you trust to read user data or take actions on behalf of the end user.
+
+
+<!-- ====================================================================== -->
+## Define WebMCP tools by using the HTML form API
+
+If your site uses HTML forms to handle the actions which you want to expose as WebMCP tools, you can declare those forms as tools using the HTML form API.
+
+
+<!-- ------------------------------ -->
+#### Register an HTML form as a tool
+
+Use the declarative API to expose an existing HTML form.  Add `toolname` and `tooldescription` to the `<form>`, and describe its input parameters by using `toolparamdescription`:
+
+```html
+<form toolname="search-flights"
+      tooldescription="Searches for one-way or round-trip flights."
+      action="/search"
+      method="post">
+  <label for="origin">Origin</label>
+  <input id="origin" name="origin" required
+         toolparamdescription="Departure airport or city">
+
+  <label for="destination">Destination</label>
+  <input id="destination" name="destination" required
+         toolparamdescription="Arrival airport or city">
+
+  <label for="departureDate">Departure date</label>
+  <input type="date" id="departureDate" name="departureDate" required
+         toolparamdescription="Departure date">
+
+  <label for="returnDate">Return date</label>
+  <input type="date" id="returnDate" name="returnDate"
+         toolparamdescription="Return date, for round-trip flights">
+
+  <button type="submit">Search</button>
+</form>
+```
+
+The example assumes that the site handles flight searches at `/search`.  Browsers that don't support WebMCP ignore the tool attributes and use the form normally.
+
+The declarative API supports these attributes:
+
+| Attribute | Applies to | Required | Description |
+|---|---|---|---|
+| `toolname` | `<form>` | Yes | A unique tool name, with the same character and length limits as a JavaScript tool name. |
+| `tooldescription` | `<form>` | Yes | A description of what the form does. |
+| `toolautosubmit` | `<form>` | No | Allows the browser to submit the form automatically when an agent invokes the tool. |
+| `toolparamdescription` | Form controls, such as `<input>`, `<select>`, and `<textarea>` | No | Describes a tool input parameter.  If omitted, Microsoft Edge uses the control's label text or, if no label is available, its `aria-description`. |
+
+Keep the form's labels and other accessibility information.  Tool descriptions don't replace labels for end users.
+
+
+<!-- ------------------------------ -->
+#### How form controls become tool parameters
+
+Microsoft Edge generates a tool input schema from the form's controls:
+
+* A control's `name` provides the parameter name.
+* The `required` attribute identifies required parameters.
+* A `<select>` element's option values provide the allowed values.
+
+The complete schema generation rules are still evolving.  Use the **Tools** tab in WebMCP Explorer to inspect how Microsoft Edge exposes the form.  To unregister a declarative tool, remove the `toolname` or `tooldescription` attribute from the `<form>` element.
+
+
+<!-- ------------------------------ -->
+#### Control form submission by an agent
+
+When an agent invokes a declarative tool, Microsoft Edge fills the form with the agent's input values.
+
+By default, Edge focuses the submit button so the end user can review and submit the form.  To submit automatically instead, add the boolean `toolautosubmit` attribute:
+
+```html
+<form toolname="search-flights"
+      tooldescription="Searches for one-way or round-trip flights."
+      toolautosubmit
+      action="/search"
+      method="post">
+  <!-- Keep the form's labeled controls and submit button here. -->
+</form>
+```
+
+Don't use automatic submission as a replacement for confirmation of a purchase, payment, or other consequential action.
+
+While the tool is active, its form matches the `:tool-form-active` CSS pseudo-class, and its submit button matches `:tool-submit-active`.  Use these pseudo-classes to highlight the form:
+
+```css
+form:tool-form-active {
+  outline: 2px dashed blue;
+}
+
+button:tool-submit-active {
+  outline: 2px dashed red;
+}
+```
+
+The `toolactivated` and `toolcancel` events on `document.modelContext` also let the page respond to tool activity:
+
+```javascript
+document.modelContext.addEventListener("toolactivated", ({ toolName }) => {
+  console.log(`Tool activated: ${toolName}`);
+});
+
+document.modelContext.addEventListener("toolcancel", ({ toolName }) => {
+  console.log(`Tool canceled: ${toolName}`);
+});
+```
+
+
+<!-- ------------------------------ -->
+#### Customize a form tool's return value
+
+The declarative API adds two members to `SubmitEvent`:
+
+| Member | Description |
+|---|---|
+| `agentInvoked` | A boolean that indicates whether an agent triggered the form submission. |
+| `respondWith()` | A method that accepts a promise for the tool's return value.  Call `preventDefault()` before calling this method. |
+
+If the form already handles submission in JavaScript, reuse that handler to return results to the agent.  For example, the following handler uses the same `getAndDisplayFlights()` function as the JavaScript tool:
+
+```javascript
+const form = document.querySelector('form[toolname="search-flights"]');
+
+form.addEventListener("submit", event => {
+  if (!event.agentInvoked) {
+    return;
+  }
+
+  event.preventDefault();
+
+  const input = Object.fromEntries(new FormData(form));
+  event.respondWith(getAndDisplayFlights(input));
+});
+```
+
+This example assumes that `getAndDisplayFlights()` validates the input, displays results or errors on the page, and returns a promise for a JSON-serializable result.  If the search fails, the function must reject the promise instead of reporting success.
+
+For an end-user submission, the handler leaves the form's normal submission behavior unchanged.  For an agent submission, it prevents navigation and returns the function's result to the agent.
+
+The design of responses from forms that navigate to another page is still under discussion.  See [Getting the form response to the agent](https://github.com/webmachinelearning/webmcp/blob/main/declarative-api-explainer.md#getting-the-form-response-to-the-agent) in _WebMCP declarative API_.
 
 
 <!-- ====================================================================== -->
