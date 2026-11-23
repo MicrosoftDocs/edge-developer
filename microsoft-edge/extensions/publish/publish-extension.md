@@ -770,7 +770,7 @@ The following safeguards are in place for the AI-generated description:
 
 If you experience issues when registering as an extension developer or when submitting an extension, you can:
 
-* Enter a support ticket through [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4).
+* Enter a support ticket through [Extensions New Support Request](https://aka.ms/DevCenterSupportMSA).
 
 * [Contact the Microsoft Edge extensions team](../contact.md).
 
