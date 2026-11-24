@@ -32,9 +32,15 @@ The following APIs skipped Phase 1: Experimental in Prerelease, and have been di
 <!-- ------------------------------ -->
 #### Permission kind: new enum members: LocalNetwork and LoopbackNetwork
 
-_todo: finalize heading_
+WebView2 adds separate permissions for accessing local-network devices (such as printers), and services running on the same computer (such as localhost).  An app can allow one type of access while blocking the other, by using the new members of the `CoreWebView2PermissionKind` enum: `LocalNetwork` and `LoopbackNetwork`.
 
-_todo: add desc_
+When web content requests access, the app receives a `PermissionRequested` event.  Use the event arguments' `CoreWebView2PermissionKind` to identify the type of access, then set `CoreWebView2PermissionState` (enum) to either `Allow` or `Deny`.  An app can also use `SetPermissionState` to save a permission for a website's origin, such as `https://example.com`.  Service workers and shared workers require a stored grant; they do not raise a `PermissionRequested` event.
+
+To use `LocalNetwork` and `LoopbackNetwork`, set `AdditionalBrowserArguments` to `--enable-features=msWebViewAllowLocalNetworkAccessChecks` in the environment options, before creating the WebView2 environment.  The feature remains off by default, while we gather feedback during the initial rollout.  We plan to enable this feature by default, after feedback and validation demonstrate its readiness.
+
+_todo: above, make sure the .net api names are accurate_
+
+_todo: in the 3 tabs, make api names accurate, & link them_
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -42,15 +48,47 @@ _todo: add desc_
    * `LocalNetwork` - new enum member.
    * `LoopbackNetwork` - new enum member.
 
+Use the above new enum members along with the following APIs:
+
+* `CoreWebView2EnvironmentOptions.AdditionalBrowserArguments` property — Enables LNA checks.
+
+* `CoreWebView2.PermissionRequested` event - Registers the app's permission handler.
+
+* `CoreWebView2PermissionRequestedEventArgs.PermissionKind` and `CoreWebView2PermissionRequestedEventArgs.PermissionKind.State` — Identify the requested access and allow or deny it.
+
+* `CoreWebView2Profile.SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
+
+<!-- todo: completion of what? 3x -->
+
 ##### [WinRT/C#](#tab/winrtcsharp)
 
 _todo - fill in tab like .net tab?  "No WinRT API diffs."_
+
+Use the above new enum members along with the following APIs:
+
+* `CoreWebView2EnvironmentOptions.AdditionalBrowserArguments` property — Enables LNA checks.
+
+* `CoreWebView2.PermissionRequested` event - Registers the app's permission handler.
+
+* `CoreWebView2PermissionRequestedEventArgs.PermissionKind` and `CoreWebView2PermissionRequestedEventArgs.PermissionKind.State` — Identify the requested access and allow or deny it.
+
+* `CoreWebView2Profile.SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
 ##### [Win32/C++](#tab/win32cpp)
 
 * [COREWEBVIEW2_PERMISSION_KIND enum](/webview2/reference/win32/webview2-idl?view=webview2-1.0.4392-prerelease&preserve-view=true#corewebview2_permission_kind)<!-- not at https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4392-prerelease b/c adding new members to existing enum -->
    * `COREWEBVIEW2_PERMISSION_KIND_LOCAL_NETWORK` - new enum member.
    * `COREWEBVIEW2_PERMISSION_KIND_LOOPBACK_NETWORK` - new enum member.
+
+Use the above new enum members along with the following APIs:
+
+* `ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments` property — Enables LNA checks.
+
+* `ICoreWebView2::add_PermissionRequested` event - Registers the app's permission handler.
+
+* `ICoreWebView2PermissionRequestedEventArgs::get_PermissionKind` and `put_State` — Identify the requested access and allow or deny it.
+
+* `ICoreWebView2Profile4::SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
 ---
 
