@@ -57,6 +57,10 @@ Use the above new enum members along with the following APIs:
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
+* [CoreWebView2PermissionKind Enum](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionkind?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true)
+   * `LocalNetwork` - new enum member.
+   * `LoopbackNetwork` - new enum member.
+
 Use the above new enum members along with the following APIs:
 
 * `CoreWebView2EnvironmentOptions.AdditionalBrowserArguments` property — Enables LNA checks.
