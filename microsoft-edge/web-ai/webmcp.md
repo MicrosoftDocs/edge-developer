@@ -23,8 +23,8 @@ WebMCP is a web API, but it doesn't run an AI model for the site.  Instead, it c
 * [Availability of WebMCP](#availability-of-webmcp)
 * [Enable WebMCP locally](#enable-webmcp-locally)
 * [Enable WebMCP on your live site by registering for the WebMCP origin trial](#enable-webmcp-on-your-live-site-by-registering-for-the-webmcp-origin-trial)
-* [Inspect and test tools in Microsoft Edge DevTools](#inspect-and-test-tools-in-microsoft-edge-devtools)
-* [Test tools with WebMCP Explorer](#test-tools-with-webmcp-explorer)
+* [Inspect and debug tools in DevTools](#inspect-and-debug-tools-in-devtools)
+* [Test end-to-end agent interactions with WebMCP Explorer](#test-end-to-end-agent-interactions-with-webmcp-explorer)
 * [Generate tool definitions by using your AI coding tool](#generate-tool-definitions-by-using-your-ai-coding-tool)
 * [Define WebMCP tools by using the JavaScript API](#define-webmcp-tools-by-using-the-javascript-api)
     * [Register a JavaScript tool](#register-a-javascript-tool)
@@ -75,7 +75,7 @@ The following diagram shows how the agent and webpage communicate through the br
 
 An agent can be built into the browser, provided by a browser extension, or hosted in a webpage, such as a chat widget.  By default, an in-page agent can access tools from its own origin, not tools from other origins.
 
-Registering tools doesn't install or configure an agent.  To test the tools with an agent, use [WebMCP Explorer](#test-tools-with-webmcp-explorer), as described below.
+Registering tools doesn't install or configure an agent.  To test the tools with an agent, use [WebMCP Explorer](#test-end-to-end-agent-interactions-with-webmcp-explorer), as described below.
 
 
 <!-- ====================================================================== -->
@@ -172,7 +172,7 @@ These registration steps follow [Registering for an origin trial](../origin-tria
 
 
 <!-- ====================================================================== -->
-## Inspect and test tools in Microsoft Edge DevTools
+## Inspect and debug tools in DevTools
 
 You can inspect, debug, and manually run WebMCP tools directly in Microsoft Edge DevTools, without installing an extension or configuring an LLM provider:
 
@@ -190,9 +190,9 @@ In the **WebMCP** pane, you can:
 
 
 <!-- ====================================================================== -->
-## Test tools with WebMCP Explorer
+## Test end-to-end agent interactions with WebMCP Explorer
 
-WebMCP Explorer is a browser extension for inspecting and running WebMCP tools.  It also provides an agent that uses a configured large language model (LLM) provider.
+To test how an LLM actually discovers, selects, and chains your tools in an end-to-end agentic loop, use WebMCP Explorer.  WebMCP Explorer is a browser extension that provides an agent powered by your configured large language model (LLM) provider, along with a view for inspecting and running tools.
 
 Use WebMCP Explorer only on sites that you own, control, or trust.  The extension sends the page's tool descriptions and results to the configured model as-is.  A page could use that content to manipulate the model.  Don't use sensitive data in test prompts or tool results.
 
