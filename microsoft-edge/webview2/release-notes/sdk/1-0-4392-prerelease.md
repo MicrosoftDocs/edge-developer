@@ -43,16 +43,16 @@ To use `LocalNetwork` and `LoopbackNetwork`, set `AdditionalBrowserArguments` to
    * `LocalNetwork` - new enum member.
    * `LoopbackNetwork` - new enum member.
 
-Use the above new enum members along with the following, established APIs:
+Use the above, new enum members along with the following, established APIs:
 
-* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) — Enable local network access (LNA) checks.
+* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) - Enable local network access (LNA) checks.
 
-* [CoreWebView2.PermissionRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) — Register the app's permission handler.
+* [CoreWebView2.PermissionRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) - Register the app's permission handler.
 
-* [CoreWebView2PermissionRequestedEventArgs.PermissionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.permissionkind?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) — Identify the requested access.
-* [CoreWebView2PermissionRequestedEventArgs.State Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.state?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) — Allow or deny the requested access.
+* [CoreWebView2PermissionRequestedEventArgs.PermissionKind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.permissionkind?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) - Identify the requested access.
+* [CoreWebView2PermissionRequestedEventArgs.State Property](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs.state?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) - Allow or deny the requested access.
 
-* [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) — Configure a permission by passing in the permission kind, website origin, and desired state.
+* [CoreWebView2Profile.SetPermissionStateAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.setpermissionstateasync?view=webview2-dotnet-1.0.4392-prerelease&preserve-view=true) - Configure a permission by passing in the permission kind, website origin, and desired state.
 
 ##### [WinRT/C#](#tab/winrtcsharp)
 
@@ -60,16 +60,16 @@ Use the above new enum members along with the following, established APIs:
    * `LocalNetwork` - new enum member.
    * `LoopbackNetwork` - new enum member.
 
-Use the above new enum members along with the following, established APIs:
+Use the above, new enum members along with the following, established APIs:
 
-* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#additionalbrowserarguments) — Enable local network access (LNA) checks.
+* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environmentoptions?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#additionalbrowserarguments) - Enable local network access (LNA) checks.
 
-* [CoreWebView2.PermissionRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#permissionrequested) — Register the app's permission handler.
+* [CoreWebView2.PermissionRequested Event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#permissionrequested) - Register the app's permission handler.
 
-* [CoreWebView2PermissionRequestedEventArgs.PermissionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#permissionkind) — Identify the requested access.
-* [CoreWebView2PermissionRequestedEventArgs.State Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#state) — Allow or deny the requested access.
+* [CoreWebView2PermissionRequestedEventArgs.PermissionKind Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#permissionkind) - Identify the requested access.
+* [CoreWebView2PermissionRequestedEventArgs.State Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2permissionrequestedeventargs?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#state) - Allow or deny the requested access.
 
-* [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#setpermissionstateasync) — Configure a permission by passing in the permission kind, website origin, and desired state.
+* [CoreWebView2Profile.SetPermissionStateAsync Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2profile?view=webview2-winrt-1.0.4392-prerelease&preserve-view=true#setpermissionstateasync) - Configure a permission by passing in the permission kind, website origin, and desired state.
 
 ##### [Win32/C++](#tab/win32cpp)
 
@@ -77,16 +77,16 @@ Use the above new enum members along with the following, established APIs:
    * `COREWEBVIEW2_PERMISSION_KIND_LOCAL_NETWORK` - new enum member.
    * `COREWEBVIEW2_PERMISSION_KIND_LOOPBACK_NETWORK` - new enum member.
 
-Use the above new enum members along with the following, established APIs:
+Use the above, new enum members along with the following, established APIs:
 
-* [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-1.0.4392-prerelease&preserve-view=true#put_additionalbrowserarguments) — Enable local network access (LNA) checks.
+* [ICoreWebView2EnvironmentOptions::put_AdditionalBrowserArguments](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-1.0.4392-prerelease&preserve-view=true#put_additionalbrowserarguments) - Enable local network access (LNA) checks.
 
-* [ICoreWebView2::add_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.4392-prerelease&preserve-view=true#add_permissionrequested) — Register the app's permission handler.
+* [ICoreWebView2::add_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.4392-prerelease&preserve-view=true#add_permissionrequested) - Register the app's permission handler.
 
-* [ICoreWebView2PermissionRequestedEventArgs::get_PermissionKind](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs?view=webview2-1.0.4392-prerelease&preserve-view=true#get_permissionkind) — Identify the requested access.
-* [ICoreWebView2PermissionRequestedEventArgs::put_State](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs?view=webview2-1.0.4392-prerelease&preserve-view=true#put_state) — Allow or deny the requested access.
+* [ICoreWebView2PermissionRequestedEventArgs::get_PermissionKind](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs?view=webview2-1.0.4392-prerelease&preserve-view=true#get_permissionkind) - Identify the requested access.
+* [ICoreWebView2PermissionRequestedEventArgs::put_State](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs?view=webview2-1.0.4392-prerelease&preserve-view=true#put_state) - Allow or deny the requested access.
 
-* [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.4392-prerelease&preserve-view=true#setpermissionstate) — Configure a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
+* [ICoreWebView2Profile4::SetPermissionState](/microsoft-edge/webview2/reference/win32/icorewebview2profile4?view=webview2-1.0.4392-prerelease&preserve-view=true#setpermissionstate) - Configure a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
 ---
 
