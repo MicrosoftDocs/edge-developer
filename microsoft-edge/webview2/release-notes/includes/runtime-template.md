@@ -1,6 +1,6 @@
 ---
 title: Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2 Runtime nnn.n.nnnn.nn.
+description: Release notes for Microsoft Edge WebView2 Runtime nnn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article

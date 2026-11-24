@@ -1,6 +1,6 @@
 ---
 title: Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
-description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.n.nnnn.nn.
+description: Release notes for Microsoft Edge WebView2 Preview Runtime nnn.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
@@ -11,9 +11,11 @@ ms.date: 01/01/2026
 # Preview Runtime nnn.n.nnnn.nn (Mmm. dd, yyyy)
 <!-- todo: when this runtime gets released as a stable runtime, follow /release-notes/includes/runtime-template.md:
 remove "preview" from title
+remove "preview" from description: yaml field
 update version number
 update date
 update lead-in sentence
+remove group of paras at top
 del See Also link [Prerelease testing using preview channels of Microsoft Edge]
 -->
 
@@ -25,7 +27,6 @@ This is a Preview Runtime, for early testing.  Prerelease testing of WebView2 SD
 These release notes are for the WebView2 Preview Runtime, which corresponds to the Beta preview channel of Microsoft Edge.  We recommend testing your app using the Beta preview channel of Microsoft Edge, before these changes are promoted to Stable.  If you want to test even earlier, you can test against Edge Dev or Edge Canary.
 
 See [Prerelease testing using preview channels of Microsoft Edge](../../how-to/prerelease-testing.md).
-
 <!-- / end of remove paragraphs -->
 
 In addition to the following WebView2 Runtime improvements, you can also use the new web platform features from Microsoft Edge nnn; see [Microsoft Edge nnn web platform release notes (Mmm. dd, yyyy)] (../../../web-platform/release-notes/nnn.md).
