@@ -176,17 +176,31 @@ These registration steps follow [Registering for an origin trial](../origin-tria
 
 You can inspect, debug, and manually run WebMCP tools directly in Microsoft Edge DevTools, without installing an extension or configuring an LLM provider:
 
-1. Open DevTools on a page that uses WebMCP tools (`F12`, or **Ctrl+Shift+I** on Windows/Linux, **Command+Option+I** on macOS).
+1. Open a webpage that uses WebMCP, such as [Idea Board - Imperative WebMCP API Playground](https://microsoftedge.github.io/webmcp-labs/idea-board/).
 
-1. Select the **Application** tool, and then select **WebMCP** in the sidebar:
+1. Open DevTools by pressing **F12** or **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).
 
-   ![Microsoft Edge DevTools with the Application tool and WebMCP pane open, showing invoked tools, available tools, and the Run tool panel.](./webmcp-images/devtools-webmcp.png)
+1. In DevTools, on the **Activity Bar**, select the **Application** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./webmcp-images/more-tools-icon.png)) button, and then click **Application**.
 
-In the **WebMCP** pane, you can:
+1. On the left, click **WebMCP**.
 
-* **Inspect available tools:** View all declarative and imperative tools currently registered on the page, including their descriptions and invocation counts.
-* **Review invoked tools:** Inspect a log of tool calls, including status (`Completed`, `Canceled`, `In Progress`, or `Error`), input parameters, return values, and schema validation errors.
-* **Run tools manually:** Select a tool from **Available tools** (or select the play button on a previous invocation), enter input parameters, and select **Run tool** to test your tool logic directly.
+   **Tool activity** is displayed at the top, showing which tools have been invoked, and **Available tools** is displayed below, showing which tools are currently registered on the page:
+
+   ![Microsoft Edge DevTools with the Application tool and the WebMCP pane open, showing the list of available tools.](./webmcp-images/devtools-webmcp.png)
+
+   All currently registed tools are displayed under **Available tool**, whether they are declarative or imperative tools.
+
+1. Under **Available tools**, select a tool such as **add-sticky**.
+
+1. Review the selected tool's details in the **Details** pane.
+
+1. To run the selected tool, enter the required input parameters in the **Run tool** pane, and then click the **Run tool** button:
+
+   The webpage runs its `add-sticky` tool, and a new sticky note appears in the demo page, containing the text you entered in the input parameters.
+
+   In the **WebMCP** pane, in the **Tool activity** section at the top, the list is updated to show the latest tool call.
+
+   ![Microsoft Edge DevTools showing the WebMCP pane, with the details of the add-sticky tool.](./webmcp-images/devtools-webmcp-run-tool.png)
 
 
 <!-- ====================================================================== -->
