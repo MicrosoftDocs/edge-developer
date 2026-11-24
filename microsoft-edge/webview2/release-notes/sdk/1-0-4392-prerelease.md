@@ -18,7 +18,7 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 
 **Detailed contents:**
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
-   * [Permission kind: new enum members: LocalNetwork and LoopbackNetwork](#permission-kind-new-enum-members-localnetwork-and-loopbacknetwork)
+   * [Separate permissions for accessing local-network devices vs. services running on the same computer](#separate-permissions-for-accessing-local-network-devices-vs-services-running-on-the-same-computer)
 * [See also](#see-also)
 
 
