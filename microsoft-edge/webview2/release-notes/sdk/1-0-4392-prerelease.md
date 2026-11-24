@@ -49,15 +49,13 @@ Use the above new enum members along with the following APIs:
 
 * `CoreWebView2.PermissionRequested` event - Registers the app's permission handler.
 
-* `CoreWebView2PermissionRequestedEventArgs.PermissionKind` and `CoreWebView2PermissionRequestedEventArgs.PermissionKind.State` — Identify the requested access and allow or deny it.
+* `CoreWebView2PermissionRequestedEventArgs`:
+   * `CoreWebView2PermissionRequestedEventArgs.PermissionKind` — Identify the requested access.
+   * `CoreWebView2PermissionRequestedEventArgs.State` — Allow or deny the requested access.
 
 * `CoreWebView2Profile.SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
-<!-- todo: completion of what? 3x -->
-
 ##### [WinRT/C#](#tab/winrtcsharp)
-
-_todo - fill in tab like .net tab?  "No WinRT API diffs."_
 
 Use the above new enum members along with the following APIs:
 
@@ -65,7 +63,9 @@ Use the above new enum members along with the following APIs:
 
 * `CoreWebView2.PermissionRequested` event - Registers the app's permission handler.
 
-* `CoreWebView2PermissionRequestedEventArgs.PermissionKind` and `CoreWebView2PermissionRequestedEventArgs.PermissionKind.State` — Identify the requested access and allow or deny it.
+* `CoreWebView2PermissionRequestedEventArgs`:
+   * `CoreWebView2PermissionRequestedEventArgs.PermissionKind` — Identify the requested access.
+   * `CoreWebView2PermissionRequestedEventArgs.State` — Allow or deny the requested access.
 
 * `CoreWebView2Profile.SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
@@ -81,7 +81,9 @@ Use the above new enum members along with the following APIs:
 
 * `ICoreWebView2::add_PermissionRequested` event - Registers the app's permission handler.
 
-* `ICoreWebView2PermissionRequestedEventArgs::get_PermissionKind` and `put_State` — Identify the requested access and allow or deny it.
+* `ICoreWebView2PermissionRequestedEventArgs`:
+   * `ICoreWebView2PermissionRequestedEventArgs::get_PermissionKind` — Identify the requested access.
+   * `ICoreWebView2PermissionRequestedEventArgs::put_State` — Allow or deny the requested access.
 
 * `ICoreWebView2Profile4::SetPermissionState` — Configures a permission by passing in the permission kind, website origin, desired state, and completion handler.  Wait for completion before starting network requests.
 
