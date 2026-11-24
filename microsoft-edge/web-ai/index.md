@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
 ms.subservice: devtools
-ms.date: 11/20/2026
+ms.date: 11/24/2026
 ---
 # AI for the web
 

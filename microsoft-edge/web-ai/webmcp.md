@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.service: microsoft-edge
-ms.date: 11/20/2026
+ms.date: 11/24/2026
 ---
 # Expose site actions to AI agents with WebMCP
 
@@ -188,13 +188,13 @@ You can inspect, debug, and manually run WebMCP tools directly in Microsoft Edge
 
    ![Microsoft Edge DevTools with the Application tool and the WebMCP pane open, showing the list of available tools.](./webmcp-images/devtools-webmcp.png)
 
-   All currently registed tools are displayed under **Available tool**, whether they are declarative or imperative tools.
+   All currently registered tools are displayed under **Available tools**, whether they are declarative or imperative tools.
 
 1. Under **Available tools**, select a tool such as **add-sticky**.
 
 1. Review the selected tool's details in the **Details** pane.
 
-1. To run the selected tool, enter the required input parameters in the **Run tool** pane, and then click the **Run tool** button:
+1. To run the selected tool, enter the required input parameters in the **Run tool** pane, and then click the **Run tool** button.
 
    The webpage runs its `add-sticky` tool, and a new sticky note appears in the demo page, containing the text you entered in the input parameters.
 
@@ -296,7 +296,7 @@ If your site uses JavaScript functions to handle actions that you want to expose
 
 
 <!-- ------------------------------ -->
-#### Register a JavaScript tool
+### Register a JavaScript tool
 
 Use `document.modelContext.registerTool()` to expose an existing JavaScript function as a tool.  The method returns a promise.  Registration can fail, for example, if the tool name isn't valid, the description is empty, or another tool with the same name is already registered.
 
@@ -370,7 +370,7 @@ For the current API definition, see [WebMCP](https://webmachinelearning.github.i
 
 
 <!-- ------------------------------ -->
-#### Describe tool behavior with annotations
+### Describe tool behavior with annotations
 
 Use the tool's `annotations` property to give agents hints about its behavior:
 
@@ -385,7 +385,7 @@ These hints default to `false`.  An agent can use them to decide whether to requ
 
 
 <!-- ------------------------------ -->
-#### Unregister a JavaScript tool
+### Unregister a JavaScript tool
 
 To unregister a tool later, pass an `AbortSignal` in the second argument to `registerTool()`.  Then call the corresponding controller's `abort()` method:
 
@@ -436,7 +436,7 @@ Unregistering a tool doesn't cancel an execution that's already running.
 
 
 <!-- ------------------------------ -->
-#### Handle cancellation of a tool call
+### Handle cancellation of a tool call
 
 The browser passes an execution options object to the tool's `execute` function.  When an agent cancels a tool call, the browser aborts the object's `signal`.
 
@@ -451,7 +451,7 @@ After cancellation, the agent doesn't receive the tool's return value.  Cancella
 
 
 <!-- ------------------------------ -->
-#### Share, discover, and execute tools across origins
+### Share, discover, and execute tools across origins
 
 By default, tools are only visible to same-origin documents.  To expose a tool to a trusted cross-origin document (such as a parent page or embedded iframe), pass secure origins in the `exposedTo` option of `registerTool()`:
 
@@ -485,17 +485,19 @@ document.modelContext.addEventListener("toolchange", () => {
 });
 ```
 
+Pass a `Tool` object returned by `getTools()` to `executeTool()`.  If that registration is removed, `executeTool()` rejects with `NotFoundError` and you must call `getTools()` again.
+
 Only expose tools to origins that you trust to read user data or take actions on behalf of the end user.
 
 
 <!-- ====================================================================== -->
 ## Define WebMCP tools by using the HTML form API
 
-If your site uses HTML forms to handle the actions which you want to expose as WebMCP tools, you can declare those forms as tools using the HTML form API.
+If your site uses HTML forms to handle actions that you want to expose as WebMCP tools, you can declare those forms as tools using the HTML form API.
 
 
 <!-- ------------------------------ -->
-#### Register an HTML form as a tool
+### Register an HTML form as a tool
 
 Use the declarative API to expose an existing HTML form.  Add `toolname` and `tooldescription` to the `<form>`, and describe its input parameters by using `toolparamdescription`:
 
@@ -539,7 +541,7 @@ Keep the form's labels and other accessibility information.  Tool descriptions d
 
 
 <!-- ------------------------------ -->
-#### How form controls become tool parameters
+### How form controls become tool parameters
 
 Microsoft Edge generates a tool input schema from the form's controls:
 
@@ -547,11 +549,11 @@ Microsoft Edge generates a tool input schema from the form's controls:
 * The `required` attribute identifies required parameters.
 * A `<select>` element's option values provide the allowed values.
 
-The complete schema generation rules are still evolving.  Use the **Tools** tab in WebMCP Explorer to inspect how Microsoft Edge exposes the form.  To unregister a declarative tool, remove the `toolname` or `tooldescription` attribute from the `<form>` element.
+The complete schema generation rules are still evolving.  Use the **WebMCP** pane in DevTools (or the **Tools** tab in WebMCP Explorer) to inspect how Microsoft Edge exposes the form.  To unregister a declarative tool, remove the `toolname` or `tooldescription` attribute from the `<form>` element.
 
 
 <!-- ------------------------------ -->
-#### Control form submission by an agent
+### Control form submission by an agent
 
 When an agent invokes a declarative tool, Microsoft Edge fills the form with the agent's input values.
 
@@ -595,7 +597,7 @@ document.modelContext.addEventListener("toolcancel", ({ toolName }) => {
 
 
 <!-- ------------------------------ -->
-#### Customize a form tool's return value
+### Customize a form tool's return value
 
 The declarative API adds two members to `SubmitEvent`:
 
@@ -635,7 +637,7 @@ Tools run with the page's client-side access, so an agent can trigger actions in
 
 
 <!-- ------------------------------ -->
-#### Protect user actions and sessions
+### Protect user actions and sessions
 
 * Don't register tools for actions that aren't available to the end user in the current page or authentication state.
 * Validate all tool inputs in both client-side code and server-side handlers, and keep all existing authentication and authorization checks.
@@ -644,7 +646,7 @@ Tools run with the page's client-side access, so an agent can trigger actions in
 
 
 <!-- ------------------------------ -->
-#### Help agents defend against prompt injection
+### Help agents defend against prompt injection
 
 While the agent is responsible for defending against prompt injection, your site can reduce the attack surface:
 
@@ -654,7 +656,7 @@ While the agent is responsible for defending against prompt injection, your site
 
 
 <!-- ------------------------------ -->
-#### Control data and origin boundaries
+### Control data and origin boundaries
 
 * Request only the input parameters the tool actually needs, and return only the information the agent needs (tool results can be sent to the agent's model provider).
 * Only expose tools via `exposedTo` or delegate `allow="tools"` to origins you trust to read that user data or act on the user's behalf.  Browser extensions with host permissions can still inspect and invoke a page's tools.
