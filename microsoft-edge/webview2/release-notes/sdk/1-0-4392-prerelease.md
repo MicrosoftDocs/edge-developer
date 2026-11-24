@@ -31,7 +31,7 @@ The following APIs skipped Phase 1: Experimental in Prerelease, and have been di
 <!-- ------------------------------ -->
 #### Permission kind: new enum members: LocalNetwork and LoopbackNetwork
 
-WebView2 adds separate permissions for accessing local-network devices (such as printers), and services running on the same computer (such as localhost).  An app can allow one type of access while blocking the other, by using the new members of the `CoreWebView2PermissionKind` enum: `LocalNetwork` and `LoopbackNetwork`.
+There are now separate permissions for accessing local-network devices (such as printers), and services running on the same computer (such as localhost).  To allow one type of access while blocking the other type of access, use the new members of the `CoreWebView2PermissionKind` enum: `LocalNetwork` and `LoopbackNetwork`, as follows.
 
 When web content requests access, the app receives a `PermissionRequested` event.  Use the event arguments' `CoreWebView2PermissionKind` to identify the type of access, then set `CoreWebView2PermissionState` (enum) to either `Allow` or `Deny`.  An app can also use `SetPermissionState` to save a permission for a website's origin, such as `https://example.com`.  Service workers and shared workers require a stored grant; they do not raise a `PermissionRequested` event.
 
