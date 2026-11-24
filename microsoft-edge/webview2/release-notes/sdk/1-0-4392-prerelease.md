@@ -19,7 +19,6 @@ For full API compatibility, this Prerelease version of the WebView2 SDK requires
 **Detailed contents:**
 * [Promotions to Phase 2 (Stable in Prerelease)](#promotions-to-phase-2-stable-in-prerelease)
    * [Permission kind: new enum members: LocalNetwork and LoopbackNetwork](#permission-kind-new-enum-members-localnetwork-and-loopbacknetwork)
-* [Bug fixes](#bug-fixes)
 * [See also](#see-also)
 
 
@@ -37,10 +36,6 @@ WebView2 adds separate permissions for accessing local-network devices (such as 
 When web content requests access, the app receives a `PermissionRequested` event.  Use the event arguments' `CoreWebView2PermissionKind` to identify the type of access, then set `CoreWebView2PermissionState` (enum) to either `Allow` or `Deny`.  An app can also use `SetPermissionState` to save a permission for a website's origin, such as `https://example.com`.  Service workers and shared workers require a stored grant; they do not raise a `PermissionRequested` event.
 
 To use `LocalNetwork` and `LoopbackNetwork`, set `AdditionalBrowserArguments` to `--enable-features=msWebViewAllowLocalNetworkAccessChecks` in the environment options, before creating the WebView2 environment.  The feature remains off by default, while we gather feedback during the initial rollout.  We plan to enable this feature by default, after feedback and validation demonstrate its readiness.
-
-_todo: above, make sure the .net api names are accurate_
-
-_todo: in the 3 tabs, make api names accurate, & link them_
 
 ##### [.NET/C#](#tab/dotnetcsharp)
 
@@ -76,7 +71,7 @@ Use the above new enum members along with the following APIs:
 
 ##### [Win32/C++](#tab/win32cpp)
 
-* [COREWEBVIEW2_PERMISSION_KIND enum](/webview2/reference/win32/webview2-idl?view=webview2-1.0.4392-prerelease&preserve-view=true#corewebview2_permission_kind)<!-- not at https://learn.microsoft.com/microsoft-edge/webview2/reference/win32/webview2experimental-idl?view=webview2-1.0.4392-prerelease b/c adding new members to existing enum -->
+* [COREWEBVIEW2_PERMISSION_KIND enum](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.4392-prerelease&preserve-view=true#corewebview2_permission_kind)
    * `COREWEBVIEW2_PERMISSION_KIND_LOCAL_NETWORK` - new enum member.
    * `COREWEBVIEW2_PERMISSION_KIND_LOOPBACK_NETWORK` - new enum member.
 
