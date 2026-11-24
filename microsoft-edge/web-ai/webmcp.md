@@ -394,34 +394,7 @@ const registrationController = new AbortController();
 
 await document.modelContext.registerTool({
   name: "search-flights",
-  description: "Searches for one-way or round-trip flights.",
-  inputSchema: {
-    type: "object",
-    properties: {
-      origin: {
-        type: "string",
-        description: "Departure airport or city"
-      },
-      destination: {
-        type: "string",
-        description: "Arrival airport or city"
-      },
-      departureDate: {
-        type: "string",
-        format: "date",
-        description: "Departure date"
-      },
-      returnDate: {
-        type: "string",
-        format: "date",
-        description: "Return date, for round-trip flights"
-      }
-    },
-    required: ["origin", "destination", "departureDate"]
-  },
-  async execute(input, { signal }) {
-    return await getAndDisplayFlights({ ...input, signal });
-  }
+  // ...description, inputSchema, and execute
 }, {
   signal: registrationController.signal
 });
@@ -430,9 +403,7 @@ await document.modelContext.registerTool({
 registrationController.abort();
 ```
 
-This example registers `search-flights` with its `inputSchema`, uses the site's existing `getAndDisplayFlights()` function, and assumes that WebMCP is available.  Unregister the previous tool before registering another tool with the same name.
-
-Unregistering a tool doesn't cancel an execution that's already running.
+Unregister the previous tool before registering another tool with the same name.  Unregistering a tool doesn't cancel an execution that's already running.
 
 
 <!-- ------------------------------ -->
@@ -471,11 +442,9 @@ const tools = await document.modelContext.getTools({
 
 const flightTool = tools.find(tool => tool.name === "search-flights");
 if (flightTool) {
-  const controller = new AbortController();
   const result = await document.modelContext.executeTool(
     flightTool,
-    { origin: "SEA", destination: "JFK", departureDate: "2026-06-15" },
-    { signal: controller.signal }
+    { origin: "SEA", destination: "JFK", departureDate: "2026-06-15" }
   );
 }
 
