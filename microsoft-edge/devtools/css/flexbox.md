@@ -143,7 +143,7 @@ To examine and modify a flexbox layout:
 
    ![align-items: center](./flexbox-images/align-items-center.png)
 
-1. In the `flex-direction:` section, select the **Add flex-direction: column** button.
+1. In the `flex-direction:` section, click the **Add flex-direction: column** button.
 
    The icons in the **flexbox editor** are context-aware; the icons in the flexbox editor rotate according to the layout direction.
 
@@ -199,7 +199,7 @@ To adjust the color of the flexbox overlay:
 
    ![Change overlay color](./flexbox-images/overlay-color.png)
 
-1. Next to `div.container`, select the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
+1. Next to `div.container`, click the **Show element in the Elements panel** button (![Show element icon](./flexbox-images/show-element-icon.png)).
 
    In the DOM tree, the container element is selected.
 
